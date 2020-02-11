@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
+source-git-commit: c7521a076418d8f162d241cd883d10b1ed543d35
 
 ---
 
@@ -25,6 +25,10 @@ Läs om alla de senaste uppdateringarna av dokumentationen för Adobe Campaign C
 På den här sidan visas alla nya funktioner och dokumentationsuppdateringar för varje version av Adobe Campaign Classic.
 
 Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Februari 2020 {#february-2020}
+
+AMP för e-post stöds nu av tre e-postleverantörer (Gmail, Outlook och Mail.ru), och avsnittet som beskriver hur du definierar interaktivt innehåll med AMP har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
 
 ## Januari 2020 {#january-2020}
 
