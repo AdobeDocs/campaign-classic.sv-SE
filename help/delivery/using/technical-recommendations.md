@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ DKIM kommer från en kombination av DomainKeys, Yahoo! och Cisco identifierade a
 
 DKIM ersatte **DomainKeys** -autentisering.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >För värdbaserade eller hybridbaserade installationer, om du har uppgraderat till Enhanced MTA, signerar DKIM e-postautentisering av Förbättrat MTA. DKIM-signering av den inbyggda Campaign MTA inaktiveras i **[!UICONTROL Domain management]** tabellen som en del av den förbättrade MTA-uppgraderingen.
 >
