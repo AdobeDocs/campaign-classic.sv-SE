@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 ## Rekommendationer och begränsningar {#recommendations-and-limitations}
 
 * Funktionen för e-postarkivering är valfri. Kontrollera licensavtalet.
-* Kontakta er kontoansvarige för att aktivera värdbaserade och hybridbaserade arkitekturer. För lokala installationer följer du riktlinjerna nedan - se avsnitten [Aktivera e-postarkivering (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-) för BCC.
-* När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via **[!UICONTROL Archive emails]** alternativet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* Kontakta er kontoansvarige för att aktivera **hostingarkitekturer och hybridarkitekturer**. Den valfria BCC-adressen måste skickas till Adobe-teamet som konfigurerar den åt dig.
+* För **lokala installationer** följer du riktlinjerna nedan för att aktivera den - se avsnitten [Aktivera e-postarkivering (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-) för BCC.
 * Du kan bara använda en e-postadress för hemlig kopia.
+* När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via **[!UICONTROL Archive emails]** alternativet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
 * E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har använt e-postarkivering måste du uppgradera manuellt till det nya systemet för e-postarkivering. Mer information finns i avsnittet [Uppdaterat arkiveringssystem för e-post (BCC)](#updated-email-archiving-system--bcc-) .
 
