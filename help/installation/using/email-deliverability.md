@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -28,10 +28,11 @@ I följande avsnitt ges en översikt över konfigurationen som krävs för att s
 
 >[!NOTE]
 >
->Alla tekniska rekommendationer om hur man effektivt skickar och tar emot meddelanden från en Adobe Campaign-plattform finns i **Deliverability** Technical Note.
->
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Se guiden [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Komma igång som beskriver koncept och bästa praxis för slutbarhet.
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+
+Mer information om koncept och bästa metoder för att leverera finns i det här [avsnittet](../../delivery/using/about-deliverability.md).
+
+Alla tekniska rekommendationer om hur man effektivt skickar och tar emot meddelanden från en Adobe Campaign-plattform finns i det här [avsnittet](../../delivery/using/technical-recommendations.md).
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -139,7 +140,7 @@ Som standard avlyssnar statistikservern port 7777. Den här porten kan ändras i
 
 MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en sändande server och en mottagande server.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Om du har uppgraderat till Förbättrat MTA används inte längre leveransregler för värdbaserade eller hybridinstallationer. **[!UICONTROL MX management]** Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
 >
