@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48969956922cf11aa208c23d985cc13b300bab05
+source-git-commit: 0237aafd79753db1bc1ca54853b7c51b65492eb2
 
 ---
 
@@ -41,9 +41,9 @@ source-git-commit: 48969956922cf11aa208c23d985cc13b300bab05
 
 Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032) för att visa den **senaste stabila versionen** (GA).
 
-## ![](assets/orange2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
-7 februari 2020
+_7 februari 2020_
 
 **Förbättringar**
 
