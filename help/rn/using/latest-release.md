@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e795cd352aed2f2fc51bf52342d611913265d590
+source-git-commit: 03cba38dc2c9e10396feddc38cca6a6073e932d5
 
 ---
 
@@ -41,7 +41,16 @@ source-git-commit: e795cd352aed2f2fc51bf52342d611913265d590
 
 Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032) för att visa den **senaste stabila versionen** (GA).
 
-## ![](assets/blue2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/orange2.png) Version 19.2.2 - build 9081 {#release-19-2-2-build-9081}
+
+7 februari 2020
+
+**Förbättringar**
+
+* Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
+* Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
+
+## ![](assets/orange2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
