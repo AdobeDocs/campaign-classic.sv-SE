@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -178,6 +178,11 @@ Stegen för installation av den första servern är:
    * För Windows: Tillgänglighet [för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md).
 
 1. Starta Adobe Campaign-servern (**starta nlserver6** i Windows, **/etc/init.d/nlserver6 i Linux) och kör kommandot** nlserver pdump **** en gång till för att kontrollera om alla aktiverade moduler finns.
+
+   >[!NOTE]
+   >
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
