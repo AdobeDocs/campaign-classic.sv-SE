@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ---
 
@@ -32,13 +32,12 @@ Kontrollera även avsnittet [Databasåtkomstlager](../../installation/using/prer
 
 Den interna klienten måste vara installerad på Adobe Campaign-programservrarna.
 
-Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel, under **SQL Native Client** (för Microsoft SQL Server 2005-klienter) eller **SQL Server Native Client 10.0** (för Microsoft SQL Server 2008 och 2008 R2-klienter) eller **SQL Server Native Client 11.0** (för Microsoft SQL Server 2012-klienter).
+Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel, under **SQL Server Native Client 10.0** (för Microsoft SQL Server 2008 och 2008 R2-klienter) eller **SQL Server Native Client 11.0** (för Microsoft SQL Server 2012, 2014, 2 16 och 2017 klienter).
 
 Följande DLL-filer för åtkomst måste finnas:
 
-* **sqlncli.dll** för Microsoft SQL Server 2005-klient,
 * **sqlncli10.dll** för Microsoft SQL Server 2008- och 2008 R2-klienter,
-* **sqlncli11.dll** för Microsoft SQL Server 2012-klienten.
+* **sqlncli11.dll** för Microsoft SQL Server 2012-, 2014-, 2016- och 2017-klienter.
 
    Åtkomst-DLL:er finns på Microsofts webbplats.
 
