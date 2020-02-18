@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -81,7 +81,7 @@ Klicka på **[!UICONTROL Preview]** och välj en mottagare för att visa det vil
 
 ## Skapa flerspråkig e-post {#creating-multilingual-email}
 
-I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande. Innehållet visas på det ena språket eller det andra beroende på mottagarens språk.
+I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
 1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa en version eller den andra på **språkvärdet** för mottagarens profil. I det här exemplet är dessa värden inställda på **EN**, **FR** och **ES**.
 1. Klicka på fliken och klistra in följande kod i HTML-innehåll för e-post **[!UICONTROL Source]** :
