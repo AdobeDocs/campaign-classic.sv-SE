@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## Skapa en fråga {#creating-a-query}
 
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
+Mer information om frågeexempel finns i det här [avsnittet](../../workflow/using/querying-recipient-table.md).
 
 >[!NOTE]
 >
->Frågeexempel visas i [det här avsnittet](../../workflow/using/querying-recipient-table.md).
+>Frågeaktiviteter är inte kompatibla med CLOB-fält när Oracle används.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -112,7 +113,7 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
    * Om ett enskilt element i samlingen sammanfaller med filtervillkoren för den här samlingen väljer du **[!UICONTROL Single row]** i **[!UICONTROL Data collected]** fältet.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >I det här läget optimeras den SQL-fråga som genereras tack vare en direkt överlappning av samlingselementen.
       >
