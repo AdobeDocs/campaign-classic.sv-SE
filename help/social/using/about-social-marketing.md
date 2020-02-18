@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -35,7 +35,7 @@ Programmet **Hantera sociala nätverk** (social marknadsföring) som är utforma
 
    Adobe Campaign Social Marketing gör det också enkelt att skaffa nya kontakter via Facebook: kontakta användare och fråga dem om de vill dela sin profilinformation. Om de godkänner det återhämtar Adobe Campaign automatiskt data, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera strategier för flera kanaler.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Facebook och Twitter gör regelbundna ändringar i sina skärmar och processer. Det här dokumentet kommer att uppdateras i enlighet med detta.
 >
