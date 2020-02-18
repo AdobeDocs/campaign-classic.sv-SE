@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ I webbgränssnittet för **formulärtypen** Per används ett **webbprogram**. Be
 >[!NOTE]
 >
 >API:er finns detaljerade i ett dedikerat dokument, som du har åtkomst till beroende av ditt kontrakt. Se [API](../../configuration/using/about-web-services.md).
-
->[!NOTE]
 >
 >Webbprogrammet som används i det här exemplet är inte ett webbprogram som medföljer Adobe Campaign. Om du vill använda ett formulär i en kampanj måste du skapa det dedikerade webbprogrammet.
 
@@ -159,7 +157,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
    * det meddelandeinnehåll som ska skickas till de lokala enheterna i meddelandet,
    * påminnelsen om godkännande,
-   * den förväntade bearbetningen för kampanjen
+   * den förväntade bearbetningen för kampanjen.
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Spara ditt material.
