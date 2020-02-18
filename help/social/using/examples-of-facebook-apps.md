@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ När en användare klickar på fliken för ett Facebook-program visas den i ett 
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Följ konfigurationsstegen som beskrivs i [Skapa ett Facebook-program](../../social/using/creating-a-facebook-application.md).
 
@@ -44,7 +44,7 @@ De exempel på webbapplikationer av Facebook-typ som beskrivs här är:
 * Så här vidarebefordrar du inställningar till ett Facebook-program. Se [Så här vidarebefordrar du inställningar till ett Facebook-program?](#how-to-forward-settings-to-a-facebook-application-).
 * Så här hämtar du fläktdata. Se [Så här hämtar du fläktdata?](#how-to-acquire-fan-data-).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dessa enkla användningsexempel finns som exempel som illustrerar funktionerna i webbapplikationer av Facebook-typ.
 
@@ -97,7 +97,7 @@ Kontrollera att fliken i **App01** -programmet visas på din Facebook-sida. Om d
 
 ## Hur man vidarebefordrar inställningar till ett Facebook-program? {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Följ konfigurationsstegen som beskrivs i [Skapa ett Facebook-program](../../social/using/creating-a-facebook-application.md).
 
