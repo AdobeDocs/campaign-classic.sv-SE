@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -100,7 +100,7 @@ Spårningskonfigurationen är densamma som för en e-postleverans. Mer informati
 >
 >Spårning är aktiverat som standard i leveransmallen. **[!UICONTROL Tweet]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vi kan inte skilja på robotar som analyserar tweets och användare som faktiskt klickar.
 
@@ -134,7 +134,7 @@ Arbetsflödet **[!UICONTROL Synchronize Twitter accounts]** (se [Synkronisera Tw
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >För att arbetsflödet ska kunna återskapa listan med Twitter-följare måste du markera **[!UICONTROL Synchronize Twitter accounts]** rutan i fönstret Redigera för den tjänst som är länkad till kontot. Mer information finns i: Delegera [skrivåtkomst till Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
@@ -181,7 +181,7 @@ Välj de följare som du vill skicka ditt direktmeddelande till.
 
    * Välj **[!UICONTROL Twitter subscribers]** att skicka ett direktmeddelande till alla kontoföljare.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Du kan inte skicka mer än 250 meddelanden per dag. Om ditt Twitter-konto har fler än 250 följare rekommenderar vi att du levererar i vågor. Detta innebär samma process som för e-postleveranser. Se [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
