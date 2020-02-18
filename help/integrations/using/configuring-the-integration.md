@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
 
 ---
 
@@ -95,7 +95,7 @@ Följ stegen nedan för att konfigurera det externa AEM-kontot:
 
 ### Konfigurera AEM-resursfiltrering {#configure-aem-resources-filtering}
 
-Alternativet **AEMResourceTypeFilter **används för att filtrera typer av Experience Manager-resurser som kan användas i Adobe Campaign. Detta gör att Adobe Campaign kan hämta Experience Manager-innehåll som är specifikt utformat för att endast användas i Adobe Campaign.
+Alternativet **AEMResourceTypeFilter** används för att filtrera typer av Experience Manager-resurser som kan användas i Adobe Campaign. Detta gör att Adobe Campaign kan hämta Experience Manager-innehåll som är specifikt utformat för att endast användas i Adobe Campaign.
 
 Så här kontrollerar du om **[!UICONTROL AEMResourceTypeFilter]** alternativet är konfigurerat:
 
@@ -122,7 +122,7 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 
 1. Konfigurera **replikeringen** som ska replikeras från AEM-redigeringsinstansen till AEM-publiceringsinstansen.
 
-   Mer information om hur du konfigurerar replikering finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/replication.html).
+   Mer information om hur du konfigurerar replikering finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
 
 1. Installera integreringen **FeaturePack** på redigeringsinstansen och replikera sedan installationen på publiceringsinstansen. (Endast för AEM-versionerna 5.6.1 och 6.0).
 
@@ -130,9 +130,9 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 
 1. Koppla Adobe Experience Manager till Adobe Campaign genom att konfigurera en dedikerad **molntjänst**.
 
-   Om du vill veta hur du ansluter båda lösningarna via molntjänster kan du läsa [dokumentationen](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) för Adobe Experience Manager.
+   Om du vill veta hur du ansluter båda lösningarna via molntjänster kan du läsa [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) för Adobe Experience Manager.
 
 1. Konfigurera **tjänsten** Externalizer.
 
-   Mer information om hur du konfigurerar programmet finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/externalizer.html).
+   Mer information om hur du konfigurerar programmet finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
 
