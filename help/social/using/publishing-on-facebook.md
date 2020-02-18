@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ Men det är också möjligt att använda målgruppsfiltren som används av Faceb
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Använd den här funktionen med försiktighet. I leveransrapporter tar indikatorn inte hänsyn till dessa Facebook-filter **[!UICONTROL Number of fans]** .
 >
@@ -115,7 +115,7 @@ En statustyp som levereras med en länk kan innehålla text, bilder och en länk
 
 Ange de olika fälten:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alla URL-adresser måste börja med **&quot;http://&quot;** eller **&quot;https://&quot;**.
 
@@ -136,7 +136,7 @@ Ange de olika fälten:
 
 1. I **[!UICONTROL Image]** fältet anger du URL-adressen till bilden som ska visas till vänster om publikationen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Bilden måste lagras på en offentlig webbplats för att Facebook ska kunna överföra den.
 
