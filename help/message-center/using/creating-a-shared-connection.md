@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -75,11 +75,15 @@ Så här skapar du ett externt konto av instanstypen körning:
 
    Datainsamling sker antingen via en webbtjänst som använder HTTP/HTTPS-åtkomst eller via FDA-modulen (Federated Data Access).
 
+   >[!NOTE]
+   >
+   >Observera att när du använder FDA över HTTP stöds bara körningsinstanser som använder en Postgres-databas. MSSQL- eller Oracle-databaser stöds inte.
+
    Den andra metoden rekommenderas om kontrollinstansen har direktåtkomst till databasen för körningsinstanserna. Välj i annat fall webbtjänståtkomst. Det FDA-konto som ska anges sammanfaller med anslutningen till databaserna för de olika körningsinstanserna som skapas i kontrollinstansen.
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Mer information om FDA (Federated Data Access) finns i [Åtkomst till en extern databas](../../platform/using/accessing-an-external-database.md).
+   Mer information om FDA (Federated Data Access) finns i [Åtkomst till en extern databas](../../platform/using/about-fda.md).
 
 1. Klicka **[!UICONTROL Test the connection]** för att kontrollera att kontrollinstansen och körningsinstansen är länkade till varandra.
 
