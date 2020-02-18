@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -55,7 +55,7 @@ Dessa två informationsdelar måste sammanfogas med den spårade sidans identifi
 tagid=<identifier>|<type>|<foldername>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Kom ihåg att koda värdet för **tagid** -parametern när den används som en URL-parameter.
 
