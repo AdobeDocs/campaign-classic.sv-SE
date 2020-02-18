@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d7cbe5f2407deb8fd2e00a60bf9e3789101e6ff
+source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
 
 ---
 
@@ -1555,6 +1555,12 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
    <td> Om värdet är odefinierat används den senaste versionen. <br /> </td> 
   </tr> 
   <tr> 
+   <td> useMomentum<br /> </td> 
+   <td> Om värdet är "true" använder din instans <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> <br /> </td>b 
+  </tr>
+  <tr> 
    <td> verifyMode<br /> </td> 
    <td> Verifieringsläge: aktiverar kontrollläget (ingen fysisk överföring av meddelanden), används för simulering och tester).<br /> </td> 
    <td> Boolean<br /> </td> 
@@ -1571,7 +1577,7 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
    <td> X-postlådefält: värdet för fältet X-Mailer i SMTP-e-posthuvudet.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
-  </tr> 
+  </tr>  
  </tbody> 
 </table>
 
