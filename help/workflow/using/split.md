@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
 
@@ -45,7 +45,7 @@ Så här skapar du en delmängd:
 
    Processen är densamma som för en aktivitet av **frågetyp**.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Du kan filtrera data i högst två externa databaser (FDA).
 
@@ -59,7 +59,7 @@ Så här skapar du en delmängd:
 
    ![](assets/s_user_segmentation_partage_add.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Om **[!UICONTROL Enable overlapping of output populations]** alternativet inte är markerat skapas delmängder i tabbordningen. Använd pilarna i fönstrets övre högra del för att flytta dem. Om den första delmängden återställer 70 % av den ursprungliga populationen kommer nästa delmängd endast att tillämpa sina urvalskriterier på de återstående 30 % och så vidare.
 
@@ -135,7 +135,7 @@ Ett exempel på **[!UICONTROL Local approval]** aktiviteten med en distributions
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du vill använda den här funktionen måste du köpa modulen Distribuerad marknadsföring, som är ett kampanjalternativ. Kontrollera licensavtalet.
 
@@ -200,7 +200,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
 
       Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Group or operator]** fältet.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Se till att operatorerna har tilldelats rätt behörighet.
 
