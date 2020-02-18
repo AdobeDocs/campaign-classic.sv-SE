@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -33,8 +33,7 @@ Du kan sedan kontrollera strukturen för det genererade schemat på flikarna Fö
 >[!NOTE]
 >
 >Om du behöver tvinga fram en omgenerering av alla scheman, till exempel för att lösa vissa beroendeproblem i de omvända länkarna, kan du starta följande kommando från Adobe Campaign-programservern:
-
+>
 >**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
-
+>
 >Du måste sedan starta om Adobe Campaign-programservern och koppla från/återansluta till klientkonsolen.
-
