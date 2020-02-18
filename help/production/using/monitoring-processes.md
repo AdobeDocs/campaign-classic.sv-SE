@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
 
 ---
 
@@ -417,7 +417,7 @@ Operatornamnet och inloggningen måste tidigare konfigureras i Adobe Campaign-kl
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Detta är ett test för att kontrollera att en operatör har tillgång till Adobe Campaign-servern via en webbsida. samma webbsida som den som öppnas via klientkonsolmenyerna. Vi rekommenderar att du inkluderar det i dina övervakningsverktyg (Tivoli, Nagios, etc.).
+Detta är ett test för att kontrollera att en operatör har tillgång till Adobe Campaign-servern via en webbsida. samma webbsida som den som öppnas via klientkonsolmenyerna. Du kan ringa upp den här sidan från dina övervakningsverktyg (Tivoli, Nagios, etc.).
 
 ![](assets/ncs_monitoring_web.png)
 
