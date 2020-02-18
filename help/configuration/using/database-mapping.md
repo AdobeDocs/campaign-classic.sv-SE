@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ I källschemat kan du ange namnet på den sekvens som ska användas med **pkSequ
 
 Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i de körklara scheman. Du kan nu skapa ett schema eller utöka ett befintligt schema med en dedikerad sekvens.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
@@ -346,7 +346,7 @@ Schemat som genererats:
 
 Förutom definitionen av nyckeln och dess index har ett numeriskt fält med namnet&quot;id&quot; lagts till i det utökade schemat för att innehålla den automatiskt genererade primärnyckeln.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >När tabellen skapas infogas automatiskt en post med primärnyckeln 0. Den här posten används för att undvika yttre kopplingar, som inte gäller för volymtabeller. Som standard initieras alla sekundärnycklar med värdet 0 så att ett resultat alltid kan returneras vid kopplingen när dataobjektet inte fylls i.
 
@@ -373,7 +373,7 @@ För anslutningsrelationer med Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/join_fda_1m.png) : Kardinalitet 1-N
 
-Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../platform/using/accessing-an-external-database.md).
+Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../platform/using/about-fda.md).
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 
