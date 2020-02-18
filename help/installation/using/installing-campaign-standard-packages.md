@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -210,7 +210,7 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Inkorgsåtergivning (IR)<br /> </td> 
    <td> Gör att du kan förhandsgranska meddelandet som skickas i olika sammanhang där det kan tas emot och kontrollera kompatibiliteten i de flesta datorer och program. Du behöver ett Litmus-konto.<br /> </td> 
    <td> Marknadsföring<br /> </td> 
-   <td> Valfritt, <a href="../../delivery/using/about-deliverability.md#inbox-rendering">Läs mer</a> </td> 
+   <td> Valfritt, <a href="../../delivery/using/inbox-rendering.md">Läs mer</a> </td> 
   </tr> 
   <tr> 
    <td> Central/lokal marknadsföring (distribuerad marknadsföring)<br /> </td> 
@@ -250,9 +250,9 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
   </tr> 
   <tr> 
    <td> Skyddsförordningen för personuppgifter<br /> </td> 
-   <td> Innehåller ytterligare funktioner som hjälper projekt att bli GDPR-kompatibla i Campaign Classic.<br /> </td> 
+   <td> Innehåller ytterligare funktionalitet som kan hjälpa dig att uppfylla kraven för sekretess i Campaign Classic.<br /> </td> 
    <td> Alla</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html">Läs mer</a> </td> 
+   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Läs mer</a> </td> 
   </tr> 
   <tr> 
    <td> Överföring till medelkälla <br /> </td> 
