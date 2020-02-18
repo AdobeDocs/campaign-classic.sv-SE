@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f46b499e4b81cf500baa84cf683a6e0273f802a7
+source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ---
 
@@ -74,58 +74,3 @@ Adobe tar hänsyn till DNS (Domain Name System) för e-postleverans, som gör at
 
 [Klicka här om du vill veta mer](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
-Som administratör kan du konfigurera fullständig domändelegering till Adobe via Campaign-kontrollpanelen. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html).
-
-## 10. Hur får jag e-post i mottagarens inkorg? {#how-to-get-emails-in-the-recipient-s-inbox-}
-
-Läs mer [Konfigurera e-postleverans](https://helpx.adobe.com/campaign/kb/acc-deliverability.html) för att komma igång och lära dig mer om koncept och bästa praxis för leveransbarhet samt verktyg för optimering av utskick av e-postmeddelanden.
-
-## Mer som detta {#more-faq}
-
-Läs mer om vanliga frågor om specifika ämnen.
-
-<table>
-<tr>
-<td>
-        <a href="../../platform/using/faq-key-concepts.md"><img alt="villkor" src="assets/icon_start.png"/></a>
-        <div><a href="../../platform/using/faq-key-concepts.md"><strong>Viktiga begrepp</strong></a></div>
-        <em>Vanliga frågor och svar</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-audiences.md"><img alt="villkor" src="assets/icon_audience.png"/></a>
-        <div><a href="../../platform/using/faq-audiences.md"><strong>Mottagare</strong></a></div>
-        <em>Vanliga frågor om målgrupper</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-designing.md"><img alt="villkor" src="assets/icon_content.png"/></a>
-        <div><a href="../../platform/using/faq-designing.md"><strong>Design</strong></a></div>
-        <em>Design av meddelanden - frågor och svar</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-messages.md"><img alt="villkor" src="assets/icon_delivery.png"/></a>
-        <div><a href="../../platform/using/faq-messages.md"><strong>Skicka</strong></a></div>
-        <br/><em>Testa och skicka vanliga frågor och svar</em>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="../../platform/using/faq-workflows.md"><img alt="villkor" src="assets/icon_process.png"/></a>
-        <div><a href="../../platform/using/faq-workflows.md"><strong>Arbetsflöden</strong></a></div>
-        <em>Vanliga frågor om automatisering av processer</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-reporting.md"><img alt="villkor" src="assets/icon_report.png"/></a>
-        <div><a href="../../platform/using/faq-reporting.md"><strong>Rapportering</strong></a></div>
-        <em>Vanliga frågor om kampanjrapporter</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-campaign-config.md"><img alt="villkor" src="assets/icon_config.png"/></a>
-        <div><a href="../../platform/using/faq-campaign-config.md"><strong>Konfiguration</strong></a></div>
-        <em>Vanliga frågor om instansinställningar</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-developers.md"><img alt="villkor" src="assets/icon_server.png"/></a>
-        <div><a href="../../platform/using/faq-developers.md"><strong>Utveckling</strong></a></div>
-        <br/><em>Utvecklare - frågor och svar</em>
-    </td>
-    </tr></table>
