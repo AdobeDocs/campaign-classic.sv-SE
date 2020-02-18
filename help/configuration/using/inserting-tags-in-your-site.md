@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
 
 Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga en **`<img>`** HTML-tagg i HTML-källkoden för den webbsida som du vill spåra.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Den här metoden använder de cookies som skickas av webbläsaren för att identifiera mottagaren, och är inte helt tillförlitlig.
 
