@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
 
 ---
 
@@ -28,7 +28,8 @@ I följande avsnitt ges en översikt över konfigurationen som krävs för att s
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
+>Se guiden [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Komma igång som beskriver koncept och bästa praxis för slutbarhet.
 
 Mer information om koncept och bästa metoder för att leverera finns i det här [avsnittet](../../delivery/using/about-deliverability.md).
 
@@ -379,19 +380,24 @@ Parametrarna är följande:
 
 * **adress**: Detta är IP-adressen till den MTA-värddator som ska användas.
 * **heloHost**: den här identifieraren representerar IP-adressen så som den kommer att ses av SMTP-servern.
+
 * **publicId**: Den här informationen är användbar när en IP-adress delas av flera Adobe Campaign- **datorer** bakom en NAT-router. Statistikservern använder den här identifieraren för att memorera anslutningen och skicka statistik mellan den här startpunkten och målservern.
 * **vikt**: Här kan du definiera den relativa användningsfrekvensen för adressen. Som standard har alla adresser en vikt som är lika med 1.
 
-   I det föregående exemplet, med normala villkor, distribueras adresserna enligt följande:
+>[!NOTE]
+>
+>I filen serverConf.xml måste du verifiera att en IP-adress motsvarar en enda hjälpvärd med en unik identifierare (public_id). Den kan inte mappas till flera olika värddatorer, vilket kan leda till leveransproblem.
 
-   * &quot;1&quot;: 5 / (5+5+1) = 45%
-   * &quot;2&quot;: 5 / (5+5+1) = 45%
-   * &quot;3&quot;: 1 / (5+5+1) = 10%
-   Om till exempel den första adressen inte kan användas för ett givet MX, skickas meddelanden enligt följande:
+I det föregående exemplet, med normala villkor, distribueras adresserna enligt följande:
 
-   * &quot;2&quot;: 5 / (5+1) = 83%
-   * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
+Om till exempel den första adressen inte kan användas för ett givet MX, skickas meddelanden enligt följande:
+
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**: Med kan du reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;*&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
 
