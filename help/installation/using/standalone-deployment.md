@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -181,7 +181,7 @@ Använd följande steg:
    * För Linux: Integrering [med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * För Windows: Integrering [med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Starta webbplatsen och testa omdirigering med URL:en: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
+1. Starta webbplatsen och testa omdirigering med URL:en: https://tracking.campaign.net/r/test.
 
    Webbläsaren måste visa följande meddelande:
 
@@ -196,6 +196,10 @@ Använd följande steg:
 
 1. Starta Adobe Campaign-servern (**starta nlserver6** i Windows, **/etc/init.d/nlserver6 i Linux) och kör kommandot** nlserver pdump **** en gång till för att kontrollera om alla aktiverade moduler finns.
 
+   >[!NOTE]
+   >
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
@@ -209,7 +213,7 @@ Använd följande steg:
 
    Med det här kommandot kan du även se version och versionsnummer för Adobe Campaign-servern som är installerad på datorn.
 
-1. Testa webbmodulen **på** servern med URL-adressen: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)
+1. Testa webbmodulen **på** servern med URL-adressen: https://console.campaign.net/nl/jsp/logon.jsp
 
    Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet.
 
@@ -222,7 +226,7 @@ Använd följande steg:
    * För Linux: Tillgänglighet [för klientkonsol för Linux](../../installation/using/client-console-availability-for-linux.md)
    * För Windows: Tillgänglighet [för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md)
 
-1. Starta Adobe Campaign-klientkonsolen (från föregående hämtningssida eller direkt från servern för en Windows-installation), ange serveranslutningens URL till [https://console.campaign.net](https://console.campaign.net) och anslut med den **interna** inloggningen.
+1. Starta Adobe Campaign-klientkonsolen (från föregående hämtningssida eller direkt från servern för en Windows-installation), ange serveranslutningens URL till https://console.campaign.net och ansluta med den **interna** inloggningen.
 
    Se [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md) och [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
