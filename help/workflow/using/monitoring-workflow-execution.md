@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -259,26 +259,23 @@ Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista anv
 
 ## Filtrera arbetsflöden utifrån deras status{#filtering-workflows-status}
 
-Med gränssnittet Campaign Classic kan du övervaka körningsstatusen för alla arbetsflöden på instansen med hjälp av fördefinierade **vyer**. Öppna noden **Administration**/**Granskning**/**Arbetsflödesstatus** för att få åtkomst till dessa vyer.
+Med gränssnittet Campaign Classic kan du övervaka körningsstatusen för alla arbetsflöden på instansen med hjälp av fördefinierade **vyer**. Öppna **[!UICONTROL Administration]**//**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**-noden för att komma åt dessa vyer.
 
 Följande vyer är tillgängliga:
 
-* **Körs**: visar alla arbetsflöden som körs.
-* **Pausad**: visar alla pausade arbetsflöden.
-* **Misslyckades**: visar alla misslyckade arbetsflöden.
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**: visar alla arbetsflöden som körs.
+* **[!UICONTROL Paused]**: visar alla pausade arbetsflöden.
+* **[!UICONTROL Failed]**: visar alla misslyckade arbetsflöden.
+* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med **marknadsföringskampanjpaketet**(se [Installera Campaign-standardpaket](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-Som standard är dessa vyer tillgängliga i mappen **Granskning**. Du kan dock återskapa dem på valfri plats i mappträdet. På så sätt blir de tillgängliga för standardanvändare utan administrationsbehörighet.
+Dessa vyer är som standard tillgängliga i **[!UICONTROL Audit]** mappen. Du kan dock återskapa dem på valfri plats i mappträdet. På så sätt blir de tillgängliga för standardanvändare utan administrationsbehörighet.
 
 Så här gör du:
 
 1. Högerklicka på den mapp där du vill lägga till vyn.
-1. I **Lägg till ny mapp**/**administration** väljer du den vy som du vill lägga till.
+1. I **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]** väljer du den vy som du vill lägga till.
 1. När mappen har lagts till i trädet måste du konfigurera den som en vy, så att alla arbetsflöden visas, oavsett ursprungsmapp.Mer information om hur du konfigurerar vyer finns i [det här avsnittet](../../platform/using/access-management.md#adding-folders-and-creating-views).
 
 Utöver dessa vyer kan du skapa filtermappar så att du kan filtrera listan med arbetsflöden utifrån deras körningsstatus. Så här gör du:
@@ -293,6 +290,3 @@ Mer information finns i följande avsnitt:
 
 * [Skapa avancerade filter](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [Spara filter](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
