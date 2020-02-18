@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -141,7 +141,7 @@ Följande parametrar är tillgängliga som standard:
 * **origo** för att ange den svarande personens ursprung.
 * **_uuid** aktiverar formulärvisning före publicering och felspårning. Den här parametern är avsedd för internt bruk (skapande och felsökning): När du öppnar webbformuläret via den här URL:en, beaktas inte de poster som skapas i spårningen (rapporter). Ursprunget tvingas till **[!UICONTROL Adobe Campaign]** värdet.
 
-   Den används med **_preview** -parametrarna och/eller **_debug**:
+   Den används med parametrarna **_preview** och/eller **_debug**:
 
    **_förhandsgranskning** för att visa den senast sparade versionen. Denna parameter får endast användas i testfasen.
 
