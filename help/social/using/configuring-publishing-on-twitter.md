@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -90,7 +90,7 @@ Det här steget kräver samtidig åtkomst till Adobe Campaign-konsolen och en we
 
    ![](assets/social_twitter_service_009.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Tjänstens namn måste vara identiskt **[!UICONTROL Internal name]** med namnet på Twitter-kontot. Följ stegen nedan för att vara säker på att det inte finns några inmatningsfel.
 
@@ -124,7 +124,7 @@ I arbetsflödet synkroniseras Twitter-konton i Adobe Campaign. **[!UICONTROL Twi
 
 ## Synkroniserar Twitter-konton {#synchronizing-twitter-accounts}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >För att arbetsflödet ska kunna återställa listan över Twitter-prenumeranter måste **[!UICONTROL Twitter account synchronization]** kryssrutan vara markerad i redigeringsavsnittet för den tjänst som är länkad till kontot. Mer information finns i [Delegera skrivåtkomst till Adobe Campaign](#delegating-write-access-to-adobe-campaign).
 
