@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -46,7 +46,7 @@ Om du har ändrat dessa webbprogram och vill fortsätta använda dem i v7 måste
 
 ## Användarvänlighet: Hemsida och navigering {#user-friendliness--home-page-and-navigation}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du vill fortsätta använda webbprogram av översiktstyp v6.02 måste du aktivera alternativet **allowSQLInjection** i dina olika säkerhetszoner innan du utför efteruppgraderingen. Se [webbprogrammen](#web-applications).
 
