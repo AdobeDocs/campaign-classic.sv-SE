@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3946d97e786423bf831d17e486186660db403709
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -103,7 +103,7 @@ När operatörens profil har skapats kan du lägga till eller uppdatera informat
 
 >[!NOTE]
 >
->I **[!UICONTROL Session timeout]** fältet kan du justera fördröjningen innan tidsgränsen för FDA-sessionen har nåtts. Mer information finns i [Om åtkomst till](../../platform/using/accessing-an-external-database.md#about-federated-data-access)federerade data.
+>I **[!UICONTROL Session timeout]** fältet kan du justera fördröjningen innan tidsgränsen för FDA-sessionen har nåtts. Mer information finns i [Om åtkomst till](../../platform/using/about-fda.md)federerade data.
 
 ### Operatorns tidszon {#time-zone-of-the-operator}
 
