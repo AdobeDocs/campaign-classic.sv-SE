@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ Med **SQL Data Management** -aktiviteten kan du skriva egna SQL-skript för att 
 
 Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är uppfyllda:
 
-* Aktiviteten är endast tillgänglig för fjärrdatakällor. Paketet **[!UICONTROL FDA]** (Federated Data Access) måste därför installeras på din instans (se [det här avsnittet](../../platform/using/accessing-an-external-database.md)).
+* Aktiviteten är endast tillgänglig för fjärrdatakällor. Paketet **[!UICONTROL FDA]** (Federated Data Access) måste därför installeras på din instans (se [det här avsnittet](../../platform/using/about-fda.md)).
 * Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas (mer information om datamodeller finns i [det här avsnittet](../../configuration/using/about-schema-reference.md)).
 * Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven behörighet. Mer information om namngivna rättigheter finns i [det här avsnittet](../../platform/using/access-management.md#named-rights).
 
