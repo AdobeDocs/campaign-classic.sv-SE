@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -26,9 +26,9 @@ I det här avsnittet beskrivs stegen som ska utföras i Adobe Campaign för att 
 
 Du måste utföra följande åtgärder i Adobe Target i förväg:
 
-* Skapa ett eller flera [omdirigeringserbjudanden](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Redirect_Offer.html), där du måste ange webbadressen till bilden som du vill använda.
+* Skapa ett eller flera [omdirigeringserbjudanden](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html), där du måste ange webbadressen till bilden som du vill använda.
 * Skapa en eller flera [målgrupper](https://marketing.adobe.com/resources/help/en_US/target/target/t_create-audience.html)för att definiera målet för din aktivitet.
-* Skapa en [formulärbaserad upplevelsedispositionsaktivitet](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_an_A_B_Test.html) , där du måste välja en ruta och ange flera upplevelser, beroende på hur många omdirigeringserbjudanden som skapas. För varje upplevelse måste du välja ett av de omdirigeringserbjudanden som skapas.
+* Skapa en [formulärbaserad upplevelsedispositionsaktivitet](https://docs.adobe.com/content/help/en/target/using/activities/abtest/create/test-create-ab.html) , där du måste välja en ruta och ange flera upplevelser, beroende på hur många omdirigeringserbjudanden som skapas. För varje upplevelse måste du välja ett av de omdirigeringserbjudanden som skapas.
 
    För att specificera dessa upplevelser kan ni skapa segment med hjälp av information från Adobe Campaign. Om du vill använda data från Adobe Campaign i erbjudandets urvalsregler måste du ange data i rutan i Adobe Target.
 
