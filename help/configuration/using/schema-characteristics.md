@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Egenskaperna för ett schema som refererar till en befintlig tabell är följand
 * Namnen på tabeller och kolumner måste anges explicit.
 * Index måste deklareras.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ta inte bort fält i standardmottagartabellen, även om de är oanvändbara. Detta kan orsaka beteendefel i Adobe Campaign-databasen.
 
