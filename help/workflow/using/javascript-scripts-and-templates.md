@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
 
 ---
 
@@ -74,11 +74,11 @@ Variablerna är de kostnadsfria egenskaperna för objekten **[!UICONTROL instanc
 
 ### Förekomstvariabler {#instance-variables}
 
-Förekomstvariablerna (**[!UICONTROL instance.vars.xxx]**) är jämförbara med globala variabler: De delas av alla aktiviteter.
+Instansvariablerna (**[!UICONTROL instance.vars.xxx]**) är jämförbara med globala variabler.  De delas av alla aktiviteter.
 
 ### Uppgiftsvariabler {#task-variables}
 
-Uppgiftsvariablerna (**[!UICONTROL task.vars.xxx]**) är jämförbara med lokala variabler: De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
+Aktivitetsvariablerna (**[!UICONTROL task.vars.xxx]**) är jämförbara med lokala variabler.  De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
 
 ### Händelsevariabler {#event-variables}
 
