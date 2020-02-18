@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -82,7 +82,7 @@ På den här fliken finns följande alternativ:
 
 * **[!UICONTROL Label and code of the delivery]** : Alternativen för detta avsnitt på skärmen används för att beräkna värdena för dessa fält under leveransanalysfasen. Fältet **[!UICONTROL Calculate the execution folder during the delivery analysis]** beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
 * **[!UICONTROL Approval mode]** : I det här fältet kan du välja typ av leveransgodkännande. Godkännandelägena visas i [valideringsprocessen med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde. Det gör det möjligt att avsevärt förbättra resultatet för leveransanalysen när mycket data bearbetas, särskilt om personaliseringsdata kommer från en extern tabell via FDA. Se avsnittet [Åtkomst till en extern databas (FDA)](../../platform/using/accessing-an-external-database.md#optimizing-email-personalization-with-external-data) .
+* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde. Det gör det möjligt att avsevärt förbättra resultatet för leveransanalysen när mycket data bearbetas, särskilt om personaliseringsdata kommer från en extern tabell via FDA. Se avsnittet [Åtkomst till en extern databas (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
 * **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du påbörja leveransanalysen i en separat process. Analysfunktionen använder Adobe Campaign-programserverprocessen (webbservern) som standard. Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Med det här alternativet läggs SQL-frågeloggarna till i leveransjournalen under analysfasen.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv har introducerats med taggen **&lt;%=** ).
