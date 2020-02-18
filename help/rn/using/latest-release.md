@@ -1,6 +1,6 @@
 ---
 title: Senaste versionen
-description: Versionsinformation om Campaign Classic 19.2
+description: Senaste versionen
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,14 +13,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
+source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
 
 ---
 
 
 # Senaste versionen{#latest-release}
 
-[Bygg uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Bygg uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-2.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,34 +41,23 @@ source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
 
 Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032) för att visa den **senaste stabila versionen** (GA).
 
-## ![](assets/blue-2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue-2.png) Version 20.1 - build 9122 {#release-20-1-build-XXXX}
 
-_7 februari 2020_
-
-**Förbättringar**
-
-* Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
-* Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
-
-## ![](assets/orange-2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
-
-_2 december 2019_
+_17 februari 2020_
 
 **Vad är nytt?**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>California Consumer Privacy Act (CCPA)</strong><br /> </th> 
+   <th> <strong>Snöflake FDA Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA är delstaten Kaliforniens nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 1 januari 2020. CCPA gäller Adobe Campaign-kunder som lagrar data för registrerade i Kalifornien.</p>
-    <p>Förutom de sekretessfunktioner som redan finns (inklusive samtyckeshantering, datalagringsinställningar och användarroller) hjälper Adobe Campaign dig att bli redo för CCPA:</p>
-    <ul>
-      <li>Rätt till åtkomst och rätt att ta bort: vi utnyttjar de funktioner som tillkommit för GDPR. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Läs mer</a></li>
-      <li>Ni kan spåra om en konsument har valt att sälja personuppgifter. Därför måste du utöka profiltabellen och lägga till ett <strong>avanmäl för CCPA</strong> -fältet. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Läs mer</a></li></td> 
+   <td> <p>Snowflake är ett helt hanterat molndatalager som är byggt för skalning på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja kraften i Snowflake för att utföra Big Data Segmentation. Den här kopplingen är tillgänglig för alla kunder, inklusive Adobe som värd.</p>
+    <p>Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detaljerade dokumentationen</a>.</p>
+   </td> 
   </tr> 
  </tbody> 
 </table>
@@ -76,110 +65,146 @@ _2 december 2019_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Övervakning av direktarbetsflöde</strong><br /> </th> 
+   <th> <strong>Förbättringar av Hadoop FDA Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Nu kan du övervaka körningsstatusen för alla arbetsflöden på instansen med fördefinierade vyer.</p>
-   <p>Mer information finns i den <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">detaljerade dokumentationen</a>.</p></td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Interaktivt material med AMP</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-<td> <p>Med Adobe Campaign kan ni testa den nya interaktiva <a href="https://amp.dev/about/email/">AMP för e-postformat</a> , som gör att marknadsförarna kan inkludera AMP-komponenter i meddelanden för att förbättra e-postupplevelsen med avancerat, dynamiskt och interaktivt innehåll som kan användas direkt i själva meddelandet.</p>
-   <p>Den här funktionen lanseras som en betaversion.</p>
-   <p>Mer information finns i den <a href="../../delivery/using/defining-interactive-content.md">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">självstudievideon</a>.</p><br /></td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Säkra SMS-meddelanden (TLS)</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
+   <td> <p>Hadoop FDA Connector har förbättrats med stöd för både Hadoop 3.0 och Cloudera.</p>
+    <p>Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">detaljerade dokumentationen</a>.</p>
+   </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Säkerhetsförbättringar**
 
-* Korrigerade säkerhetsluckor med cross site scripting i Campaign-gränssnittet - validering av indata och utdatakodning. (NEO-16810)
-* Ett säkerhetsproblem i profilauktoriseringen som kunde ge åtkomst till obehöriga data har åtgärdats genom att principen för begränsning av inloggning förstärks. (NEO-14445)
+* Förbättrad säkerhet i rapportkonfigurationen som skyddar mot clickjacking. Detta gäller nya rapporter. För gamla rapporter måste du publicera om dem för att ändringarna ska gälla. (NEO-13282)
+
+* Åtgärda ett litet minnesproblem i cryptString. (NEO-20071)
+
+* Förbättrad JSP-övervakare för att åtgärda intern IP-exponering. (NEO-16821)
+
+* Ett problem där stackspårningsinformation kunde visas för icke-adminanvändare har korrigerats. (NEO-12388)
+
+* Förbättrad hantering av cachelagrade data från tidigare sessioner. (NEO-17039)
+
+* Korrigerade ett problem som förhindrade filen logins.log från att registrera lyckade inloggningsförsök via IMS. (NEO-11004)
 
 **Förbättringar**
 
-* Optimering av minnesförbrukning för push-meddelanden.
-* Hanteringen av filen **logins.log** har förbättrats för optimering av prestanda och lagring. Filen delas nu upp i flera filer, en gång om dagen med högst 365 filer bevarade. [Läs mer](../../production/using/log-files.md)
-* Det externa Microsoft Dynamics CRM-kontot kan nu konfigureras med hjälp av lösenordsautentiseringsuppgifter (lösenord + användarnamn) eller certifikat (privat nyckel). [Läs mer](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Vissa förbättringar har lagts till i Hadoop FDA-kontakten för att förbättra tillförlitligheten
-* En särskild skyddsmodul har lagts till för att kontrollera diskutrymmet innan offentliga resurser kan överföras till servern.
-* Nya [kampanjalternativ](../../installation/using/configuring-campaign-options.md) har lagts till:
-   * Med konfigurationsalternativet **WdbcKillSessionPolicy** kan du påverka beteendet **Ovillkorligt stopp** för alla arbetsflöden och PostgreSQL-databasfrågor.
-   * Med alternativet **NmsOperation_DeliveryPreparationWindow** kan du definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.
-   * Med alternativet **WdbcOptions_TempDbName** kan du konfigurera en separat databas för fungerande tabeller på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering. [Läs mer](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * Alternativet **XtkCleanup_NoStats** har förbättrats för PostgreSQL för att bättre styra beteendet för lagringsoptimeringssteget i arbetsflödet för databasrensning. [Läs mer](../../production/using/database-cleanup-workflow.md#statistics-update)
-* En mekanism för kontoutelåsning har lagts till i API:t **logon()** . Det förhindrar ytterligare inloggningsförsök efter ett visst antal misslyckade inloggningsförsök i följd inom en angiven tidsram.
-* Med det nya alternativet **Maximal körtid** för personalisering i leveransegenskaperna kan du definiera en timeout-period för personaliseringen, för att förhindra att personaliseringsfasen körs för länge. [Läs mer](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* Alternativet **ftp-protokoll** har lagts till så att du kan använda en proxykonfiguration för SFTP-anslutningar. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
-* Nytt stöd för proxyåtkomst till en extern SFTP-server för lokala miljöer.
-* Ett specifikt skyddsutkast har lagts till för att förhindra installation av paket som inte är kompatibla med Campaign-instansen. [Läs mer](../../installation/using/installing-campaign-standard-packages.md)
+* iOS 13 stöds nu med HTTP2-anslutningen.
 
-_Föråldrade system_
+* Förbättrad karantänhantering och rensning av tabeller som används av funktionen för push-meddelanden (nms:address och nms:appSubscriptionRcp). I iOS (endast HTTP2-anslutning) hanteras nu inaktiverade tokens på samma sätt som för Android. Inaktiveringsflaggan har nu angetts i tabellen NmsAppSubscriptionRcp. [Läs mer](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-Följande system är nu [föråldrade](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) för Campaign Classic-implementeringar:
-* Apache 2.2
-* Centrum 6
+* Ett nytt alternativ har lagts till i arbetsflödesaktiviteterna för **JavaScript-kod** och **avancerad JavaScript-kod** för att definiera en timeout-period. Detta förhindrar att javascript-körningsfasen körs för länge. Om tidsgränsen överskrids stoppas arbetsflödet. Standardtidsgränsen är 1 timme. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md)
 
-Kontrollera att du har de versioner av alla system som stöds och som finns i den senaste kampanjkompatibilitetsmatrisen. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* Leveransanalysen stoppas nu när ingen matchande tillhörighet hittas på mittkällservern, med motsvarande felmeddelande.
 
-_Campaign Mobile SDK_
+* Databasredundans för Postgres stöds nu: när databasservern kraschar och startas om kopplas Campaign nu automatiskt tillbaka till den.
 
-Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta Adobes kundtjänst för att få SDK.
+* Vyn **Starta väntande** har lagts till i noden Administration > Granskning > Status för arbetsflöden. Detta gör att du kan övervaka alla arbetsflöden på instansen som väntar på att startas av **operationMgt** -processen. Den här vyn levereras med paketet med marknadsföringskampanjer. [Läs mer](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+
+**Andra ändringar**
+
+* I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar 20.1-paketet. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
+
+* De vanligaste anpassade tabellerna har flyttats från **xtkNewId** -sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+
+* Förbättrade frågeprestanda som kan påverkas av onödiga databasanslutningar.
+
+* Förbättrade prestanda för guiden Databasuppdatering.
+
+* Hanteringen av databasposter har förbättrats.
+
+* Anslutningspoolens tillförlitlighet har förbättrats, vilket kan förhindra att oväntade anslutningsfel inträffar för ofta.
+
+* Verifieringsreglerna för e-postadresser som skickar en adress till karantän om ett mjukt fel uppstår har förbättrats. [Läs mer](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+
+* För Debian använder Campaign nu system PCRE-bibliotek när de blir tillgängliga.
+
+* Campaign tillåter nu användning av ett nyare ODBC-systembibliotek.
+
+* En timeout har lagts till i LINE-serverleten när en anslutning öppnas för att läsa in en rik bild. Om det tar för lång tid att läsa in bilden avbryts anslutningen för att undvika flaskhalsar.
 
 **Patchar**
 
-* En konsolkrasch som kan inträffa när en tom länkad tabell läggs till i arbetsflödesaktiviteten **Datainläsning (RDBMS)** har åtgärdats. (NEO-12213)
-* Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
-* Ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata har korrigerats. (NEO-12399)
-* Ett problem som påverkade leveransanalysen med typologiregeln inklusive domänen ne.jp har korrigerats. (NEO-12609)
-* Korrigerade ett problem relaterat till SMS över TLS-uppdateringar som innebar en mer restriktiv certifikatprincip. Uppdateringarna kan leda till ett anslutningsfel mellan marknadsförings- och mellanleverantörsservrar om certifikatet är inaktuellt. (NEO-17698)
-* Ett problem har korrigerats när du använde knappen för att **testa anslutning** på ett externt konto i en miljö med flera källor och vaultautentisering användes. (NEO-12722)
-* Korrigerade ett problem med frågor som använder datumfunktioner med en FDA Hadoop-anslutning. (NEO-12847)
-* Korrigerade ett problem när en bild skulle ersättas i e-postredigeraren. (NEO-13098)
-* Korrigerade ett problem som kan leda till fel efter uppgraderingen i mappar som har tagits bort eller flyttats till en annan plats. (NEO-13118)
-* Korrigerade ett problem vid bildvisning när alternativet **Definiera bild per enhetsskärmstorlek** användes i LINE-meddelanden. (NEO-13228)
-* Korrigerade ett leveransförberedelseproblem när alternativet **Uteslut dubblettadress under leverans** inte har valts. (NEO-13240)
-* Korrigerade ett problem i arbetsflöden när **filöverföringsaktiviteten** användes för att hämta filer med alternativet **Ta bort källfilerna efter överföring** , med ett namn som innehåller ett blanksteg. (NEO-13411)
-* Ett problem med rensning av Tomcat-cachen som kan leda till minnesproblem har åtgärdats. (NEO-13456)
-* Ett problem har korrigerats när **Control of offer-motorn installerades med det inbyggda paketet för körningsinstansen** på en befintlig kontrollinstans som körs i Microsoft SQL 2017. (NEO-13539)
-* En krasch som kan inträffa när spårade URL:er avmarkeras i ett e-postmeddelande från fliken **Textinnehåll** har åtgärdats. (NEO-13545)
-* Korrigerade ett kodningsproblem för det kinesiska avsändarnamnet. (NEO-13837)
-* Korrigerade ett fel som kunde uppstå när undersökningssvarsdata från Utforskaren visades. (NEO-14590)
-* Korrigerade ett problem som kunde leda till diskrepans mellan leveransloggklassificeringen och karantäntabellen. (NEO-16547)
-* Ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden har korrigerats. (NEO-16804)
-* Korrigerade ett problem som visade fel felkod när en ogiltig sessionstoken användes i kontexten för API-anrop för att utlösa händelser. Felkoden var HTTP 200 OK i stället för HTTP 403 Forbidden. (NEO-16826)
-* Ett problem som orsakade att leveransrapporter visades via webbåtkomst har korrigerats. (NEO-17015)
-* Ett IMS-autentiseringsproblem när du loggade in på Adobe Campaign har korrigerats. (NEO-17312)
-* Korrigerade ett problem som förhindrade att e-postmeddelanden i karantän togs bort av sekretesshanteringsprocessen. (NEO-17314)
-* Problem med genomströmning har korrigerats efter uppgradering till 9031 med SQL-databas. (NEO-17558)
-* Ett problem som påverkade CRM Connector med Salesforce har korrigerats. (NEO-17712)
-* Ett timeout-problem vid import av data från en extern SFTP har korrigerats. (NEO-19723)
-* Ett problem har korrigerats vid åtkomst till prediktiva modeller. (NEO-19713)
-* Korrigerade ett problem som påverkade slumpmässig sampling i **delad** arbetsflödesaktivitet med Hadoop FDA-databasen. (NEO-16636)
+* Ett krypteringsfel för kontonycklar har korrigerats när Hadoop-kopplingen användes.
 
+* Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
+
+* Ett problem med den inkrementella frågeaktiviteten vid negativa arbetsflödes-ID:n har korrigerats. (NEO-19779)
+
+* Korrigerade ett kodningsproblem när frågor kördes via Netezza FDA-anslutningen. (NEO-19594)
+
+* Korrigerade ett problem som orsakade ett fel när metoden POST användes i händelseaktiviteten för **webbhämtningen** .
+
+* Ett problem med generering av erbjudandeförslag har korrigerats. (NEO-18176)
+
+* Korrigerade ett sidfotsvisningsproblem när webbformulärmallen för hämtning användes.
+
+* Ett problem som orsakade att URL:er i innehållet i kontinuerliga leveranser tolkades har åtgärdats. (NEO-16910)
+
+* Korrigerade ett problem med att fälten **Start** och **End** inte beräknades när en ny kampanj skapades.
+
+* Ett problem med arbetsflödesaktiviteten för **filhämtning** när en URL används har korrigerats.
+
+* Ett problem har korrigerats vid förhandsgranskning av en importerad lista i en frågeaktivitet i en rapport. (NEO-13119)
+
+* Korrigerade ett problem som visade en föråldrad bild när du valde **anpassningsblocket Powered by Campaign** i e-postredigeraren.
+
+* Nätverkskommunikationen mellan klienten och servern har förbättrats.
+
+* Ett problem har korrigerats när för många arbetsflöden skapades i samma kampanj. Nu kan du inte skapa fler än 28 arbetsflöden. En varning visas.
+
+* Ett problem har korrigerats när **ett urval av kolumnavstämningsalternativ** i en **unionsarbetsflödesaktivitet** användes.
+
+* Korrigerade ett kraschproblem i konsolen som kan inträffa när en skadad anrikningslista används i ett arbetsflöde. (NEO-18096)
+
+* Åtgärdade olika kraschproblem i konsolen som kan uppstå i arbetsflöden (NEO-18010, NEO-18032)
+
+* Ett problem som gjorde att en arbetsflödesaktivitet för **extern signal** kunde köras har korrigerats även när den inaktiverades. (NEO-17524)
+
+* Ett problem har korrigerats när ett nytt schema skapades.
+
+* Korrigerade ett spårningsproblem när SMS-meddelanden skickades. (NEO-19595)
+
+* Korrigerade ett problem som visade felaktigt målgruppsnummer i leveransindikatorer.
+
+* Korrigerade ett problem som visade felaktiga procentvärden när en beskrivande rapport genererades via en arbetsflödesaktivitet. (NEO-14314)
+
+* Korrigerade ett problem som gjorde att leveransgenomströmningsrapporten visade olika nummer när tidsvyparametern användes. (NEO-11783)
+
+* Ett problem som förhindrade att spårningsindikatorerna för transaktionsmeddelanden uppdaterades i arbetsflödet för spårning har åtgärdats. (NEO-17770)
+
+* Korrigerade ett regressionsproblem som gjorde att webbprocessen kraschade och startades om när ett erbjudande begärdes via SOAP. (NEO-19482)
+
+* Korrigerade ett problem som förhindrade överföring av data till offentliga resurser om överföringskatalogen var en delad fjärrplats. (NEO-19361)
+
+* Ett problem som orsakade att det tekniska arbetsflödet **Importera målgrupper från Adobe Experience Cloud** ständigt misslyckades har åtgärdats. (NEO-18463)
+
+* Korrigerade ett problem som förhindrade att leveranser skickades när mallar som importerats från Experience Manager användes. (NEO-17540)
+
+* Korrigerade ett fel som uppstod efter uppgraderingen till build 9032 och förhindrade instansen från att ansluta till FTP-servern via SSL-protokollet. (NEO-20498)
+
+* Ett problem som uppstod när en stor mängd data skulle tas bort, infogas eller uppdateras med aktiviteten **Uppdatera data** i ett arbetsflöde med ett FDA-schema som måldimension har åtgärdats. (NEO-13280)
+
+* Korrigerade ett problem som förhindrade att e-post skickades när if-satsen användes utanför `body` -taggen.
+
+* Korrigerade ett fel som uppstod när spegelsidan skulle visas från leveransloggarna för ett skickat meddelande. (NEO-17976)
+
+* Ett problem som gjorde att **Link to mirror page page** personalization block inte kunde visas på fliken **Text content** efter att du klickat på **Import HTML** in a delivery har åtgärdats. (NEO-17568)
+
+* Felmeddelandet som visas när du klickar på en länk till en spegelsida som har gått ut har klargjorts. (NEO-17340)
+
+* Ett problem som gjorde att vissa knappar inte kunde användas när skärmen **Datadistribution** skapades har åtgärdats.
+
+* Ett problem som uppstod när en leveransaktivitet schemalades i en instans med Asien/Kolkata som tidszon har åtgärdats. (NEO-20001)
+
+* Ett fel visas nu när en leverans har ett tillhörighetskonfigurationsproblem.
+
+* Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
+
+* Korrigerade ett problem som uppstod när routningskontot skulle uppdateras från egenskaperna för en återkommande leverans i ett arbetsflöde. (NEO-18684)
+
+* Korrigerade ett fel som uppstod vid anslutning till instansen via omdirigeringsmodulen, vilket förhindrade att anslutningen rensades korrekt när den stängdes.
