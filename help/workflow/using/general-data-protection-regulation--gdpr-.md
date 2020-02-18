@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: aa941e4f8803f65ce9d5f7567206b1fcc20a6dc6
 
 ---
 
 
-# Allmänna dataskyddsförordningen (GDPR){#general-data-protection-regulation-gdpr}
+# Skyddsförordningen för personuppgifter{#general-data-protection-regulation-gdpr}
 
-De arbetsflöden som beskrivs nedan installeras som standard med modulen **allmänna dataskyddsförordningen (GDPR)** . Mer information om den här modulen finns i det här [avsnittet](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
+De arbetsflöden som beskrivs nedan installeras som standard tillsammans med modulen **Sekretessdataskyddsförordningen** . Mer information om den här modulen finns i den här [artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
