@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ Anpassningsblock och fält kan bara infogas i textblock.
 >För varje typ av länk kan du konfigurera öppningsläget: välj målfönstret i listrutan **Mål** . Detta värde motsvarar **`<target>`** HTML-taggen.
 >
 >Listan över tillgängliga **mål** är följande:
-
+>
 >* Annat (IFrame)
 >* Övre fönster (_top)
-* Överordnat fönster (_parent)
-* Nytt fönster (_blank)
-* Aktuellt fönster (_self)
-* Standardwebbläsarbeteende
+>* Överordnat fönster (_parent)
+>* Nytt fönster (_blank)
+>* Aktuellt fönster (_self)
+>* Standardwebbläsarbeteende
+>
 
 
 
@@ -170,7 +171,8 @@ Med **Länk som definierar ett åtgärdsalternativ** kan du konfigurera en åtg�
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-Tillgängliga åtgärder beskrivs i avsnittet [Lägga till en åtgärd för en knapp](#adding-an-action-to-a-button) .
+>
+>Tillgängliga åtgärder beskrivs i avsnittet [Lägga till en åtgärd för en knapp](#adding-an-action-to-a-button) .
 
 ### Ta bort en länk {#delete-a-link}
 
@@ -180,7 +182,8 @@ När en länk har infogats finns det två nya ikoner i verktygsfältet: **Redige
 * **[!UICONTROL Break the link]** Med kan du ta bort länken och alla relaterade parametrar efter att du har bekräftat.
 
 >[!NOTE]
-Om länken tas bort behålls innehållet fortfarande.
+>
+>Om länken tas bort behålls innehållet fortfarande.
 
 ## Ändra teckensnittsattribut {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ De tillgängliga alternativen är följande:
 * **Ikon för att ändra textfärg** : gör att du kan ändra textfärgen i det markerade blocket eller bara den markerade texten (`<span style="color: #CODE">`)
 
 >[!NOTE]
-* **Ta bort** ikon: tar bort blocket och allt dess innehåll.
-
+>
+>* **Ta bort** ikon: tar bort blocket och allt dess innehåll.
+   >
+   >
 * **Duplicera** ikon: duplicerar blocket samt alla format som hör till blocket.
 
 
@@ -223,7 +228,8 @@ För att vara kompatibelt med DCE måste animeringar **av typen** &quot;Flash&qu
 ```
 
 >[!CAUTION]
-Du får inte anropa externa filer i en **script** -tagg på HTML-sidan. Dessa filer importeras inte till Adobe Campaign-servern.
+>
+>Du får inte anropa externa filer i en **script** -tagg på HTML-sidan. Dessa filer importeras inte till Adobe Campaign-servern.
 
 ### Lägga till/ta bort/duplicera en bild {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ Ikonen **Ta bort** tar bort ![]() taggen som innehåller bilden.
 Ikonen **Duplicera** duplicerar ![]() -taggen och dess innehåll.
 
 >[!CAUTION]
-När du duplicerar en bild tas de identifierare som hör till den nya bilden bort.
+>
+>När du duplicerar en bild tas de identifierare som hör till den nya bilden bort.
 
 ### Redigera bildegenskaper {#editing-image-properties}
 
