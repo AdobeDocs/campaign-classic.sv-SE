@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
 
 # Utöka ett schema{#extending-a-schema}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vissa inbyggda scheman får inte utökas: huvudsakligen de för vilka följande inställningar har definierats:\
 >**dataSource=&quot;file&quot;** och **mappingType=&quot;xmlFile&quot;**.\
@@ -38,7 +38,7 @@ Det finns två metoder för att utöka ett befintligt schema:
 
    Ett tilläggsschema har inte ett eget schema: schemat som genereras från källschemat fylls i med fälten i tilläggsschemat.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras vid tidpunkten för framtida uppgraderingar av programmet. Detta kan leda till fel i användningen av Adobe Campaign.
 
@@ -66,7 +66,7 @@ Det finns två metoder för att utöka ett befintligt schema:
 
    Attributet **tillhörTo** i fältet fyller i det schema där det deklareras.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >För att ändringarna ska kunna beaktas måste du generera om scheman. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md) .\
 >Om ändringarna påverkar databasens struktur måste du köra en uppdatering. Mer information finns i avsnittet [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md) .
