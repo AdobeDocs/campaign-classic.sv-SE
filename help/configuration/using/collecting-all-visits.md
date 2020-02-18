@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Du kan dock konfigurera plattformen så att den samlar in alla besök på sidor 
 
 En användare som är känd för plattformen är en mottagare som redan har fått målet av en leverans och som har klickat i ett mottaget meddelande minst en gång. En permanent cookie används för att identifiera den här mottagaren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign-plattformen är inte avsedd att användas som ett verktyg för webbplatsspårning, förutom när man besöker webbplatsen efter ett klick i ett meddelande. När det här alternativet är aktiverat kan det leda till mycket hög användning av resurser på de datorer som är värdar för dina servrar (omdirigering, program och databas). Vi rekommenderar att du ser till att maskinvaruarkitekturen kan hantera den här inläsningen och undviker att placera webbspårningstaggar på de mest besökta sidorna, till exempel hemsidan.
 
