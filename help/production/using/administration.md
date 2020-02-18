@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ Följande kommandon används för att starta och stänga av Adobe Campaign-tjän
 
    * **/etc/init.d/nlserver6 - start**
    * **/etc/init.d/nlserver6 stop**
+
+>[!NOTE]
+>
+>Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver** / **systemctl stop nlserver**
 
 Här är en lista med vanliga administrationskommandon som är tillgängliga i Linux (som **Adobe Campaign**):
 
@@ -76,24 +80,22 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    **omstart av webbserver**
 
    >[!NOTE]
-
-   >* Om instansen inte anges används standardinstansen.
-   >    
-   >    
+   > 
+   >    * Om instansen inte anges används standardinstansen.
    >    * I en nödsituation använder du alternativet **-omedelbar** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **Kill -9**).
-   * Använd alternativet **-noconsole** för att se till att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via **systemmodulen** .
-   * Använd alternativet **-utförlig** om du vill visa ytterligare information om processåtgärder.
-
-
+   >    * Använd alternativet **-noconsole** för att se till att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via **systemmodulen** .
+   >    * Använd alternativet **-utförlig** om du vill visa ytterligare information om processåtgärder.
+      >    
+      >      
       Exempel:
-
-
+      >    
+      >      
       **webbverbose för omstart av nlserver**
-
-
+      >    
+      >      
       **nlserver start mta@myinstance -verbose**
-
-
+      >    
+      >      
       Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan det **-exakta** alternativet när du har hittat den önskade informationen, så att du undviker överlagring av loggar.
 
 
@@ -110,5 +112,6 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    **nlserver config -reload**
 
    >[!NOTE]
-   Vissa konfigurationsändringar beaktas inte dynamiskt. Adobe Campaign måste avslutas och sedan startas om.
+   >
+   >Vissa konfigurationsändringar beaktas inte dynamiskt. Adobe Campaign måste avslutas och sedan startas om.
 
