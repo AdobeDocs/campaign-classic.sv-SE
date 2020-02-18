@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c7521a076418d8f162d241cd883d10b1ed543d35
+source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
 
 ---
 
@@ -26,9 +26,53 @@ På den här sidan visas alla nya funktioner och dokumentationsuppdateringar fö
 
 Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md)Adobe Campaign Classic.
 
+## 20.1 - 17/02/2020{#release-20-1}
+
+**Nya funktioner i releasen**
+
+Snöflake FDA Connector - [Läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+
+Förbättringar av Hadoop FDA Connector - [Läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+
+**Andra dokumentationsuppdateringar som följer med releasen**
+
+Guiderna för [installation](../../installation/using/before-reading.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används av servertjänstens start. Du kan fortfarande använda /etc/init.d/nlserver6, men vi rekommenderar att du nu använder kommandot systemctl för att interagera med nlserver-tjänsten.
+
+Installationsguiden har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Nya system som stöds har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/before-reading.md)
+
+Kompatibilitetsmatrisen har uppdaterats med Hadoop 3.0- och Snowflake FDA-anslutningarna. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+
+Ett tips om IP-tillhörighet har lagts till i installationsguiden. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+
+Arbetsflödesavsnittet för databasrensning har uppdaterats. De angivna batchsiffrorna återspeglar nu kodimplementeringen. [Läs mer](../../production/using/database-cleanup-workflow.md)
+
+En begränsning för FDA över HTTP har lagts till i handboken för transaktionsmeddelanden. [Läs mer](../../production/using/database-cleanup-workflow.md)
+
+Information har lagts till om det nya alternativet som gör att du kan definiera en timeout-period för **[!UICONTROL JavaScript code]** - och **[!UICONTROL Advanced JavaScript code]** arbetsflödesaktiviteterna. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md)
+
+Information har lagts till i den nya **[!UICONTROL Start Pending]** vyn som är tillgänglig i **[!UICONTROL Administration]** > **[!UICONTROL Audit]** > **[!UICONTROL Workflows Status]** -noden. [Läs mer](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+
+Guiden [Skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) har flyttats, omorganiserats och förbättrats med tydlig information.
+
+Den nya parametern för konfigurationen av URL-adresser har dokumenterats [här](../../reporting/using/properties-of-the-report.md#defining-additional-settings).
+
+Matrissidan för **Campaign Classic On-lokalt- och värdfunktioner** har uppdaterats med de nya FDA-anslutningarna. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+
+Matrissidan **Kampanjklassiska funktioner** har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+
+Det nya **[!UICONTROL Cleanup of Nmsaddress]** arbetsflödet har dokumenterats [här](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
+
+En begränsning har lagts till när en frågeaktivitet används i ett arbetsflöde. [Läs mer](../../workflow/using/query.md).
+
+Ett nytt avsnitt har lagts till för att detaljgranska de förbättrade verifieringsreglerna för e-postadresser för att skicka en adress till karantänen om fel uppstår. [Läs mer](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+
+Parametern från konfigurationsfilen som anger att en instans använder Förbättrad MTA eller inte dokumenteras nu. [Läs mer](../../installation/using/the-server-configuration-file.md#mta)
+
 ## Februari 2020 {#february-2020}
 
 AMP för e-post stöds nu av tre e-postleverantörer (Gmail, Outlook och Mail.ru), och avsnittet som beskriver hur du definierar interaktivt innehåll med AMP har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
+
+Avsnittet för e-postarkivering har klargjorts. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## Januari 2020 {#january-2020}
 
@@ -154,7 +198,7 @@ Ett avsnitt har lagts till som beskriver installations- och konfigurationsstegen
 
 Ett avsnitt har lagts till som beskriver avinstallationsstegen för Campaign-servern. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
 
-Guiderna för att komma igång med [säkerhet](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), [leverans](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och [GDPR](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html) har uppdaterats.
+Guiderna för att komma igång med [säkerhet](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), [leverans](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och [sekretess](https://helpx.adobe.com/campaign/kb/acc-privacy.html) har uppdaterats.
 
 Beskrivningen av förprocessarbetsflödesalternativet har uppdaterats för att återspegla produktändringar. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
 
@@ -221,7 +265,7 @@ Ett nytt avsnitt lades till i installationshandboken med alternativ från noden 
 
 Information har lagts till om användningen av dirigerade adresser för att skydda din sändlista. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
-De viktigaste stegen när du skapar och skickar en leverans har grupperats om till ett nytt avsnitt, med referenser till de olika kanalerna vid behov. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_About_deliveries_and_channels_Key_steps_when_creating_a_delivery.html)
+De viktigaste stegen när du skapar och skickar en leverans har grupperats om till ett nytt avsnitt, med referenser till de olika kanalerna vid behov. [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 Avsnittet [E-postarkivering](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html) har flyttats, omorganiserats och förbättrats med tydlig information:
 
@@ -265,11 +309,11 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](https://helpx.adobe.com/camp
 
 Sidan Borttagna och borttagna funktioner i Campaign Classic har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-I [versionsinformationen](https://docs.campaign.adobe.com/doc/AC/en/RN.html) och [äldre versionsinformation](http://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)har en varning lagts till för byggen som har återkallats. Kumulativa byggen för 17.9, 18.4 och 18.6 har också lagts till.
+I [versionsinformationen](https://docs.campaign.adobe.com/doc/AC/en/RN.html) och [äldre versionsinformation](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)har en varning lagts till för byggen som har återkallats. Kumulativa byggen för 17.9, 18.4 och 18.6 har också lagts till.
 
 Guiderna för att komma igång med [säkerhet](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), [leverans](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och [bygguppgraderingar](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) har uppdaterats.
 
-Guiden Komma igång med [GDPR](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html) har uppdaterats med information om hur du anropar API externt och hur du använder queryDef för att fråga efter status och hämta GDPR-filen.
+Guiden Komma igång med [sekretess](https://helpx.adobe.com/campaign/kb/acc-privacy.html) har uppdaterats med information om hur du anropar API externt och hur du använder queryDef för att fråga efter status och hämta GDPR-filen.
 
 Lagt till ett användningsfall för transaktionsmeddelanden för att lägga till e-postbilagor direkt till utgående utskick. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Use_case_Purpose.html)
 
@@ -311,17 +355,17 @@ Ett exempel har lagts till om hur du skapar en fråga för att filtrera mottagar
 
 Uppdaterade integreringsguiden för Dela målgrupper med Adobe Experience Cloud. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Sharing_audiences_with_Adobe_Experience_Cloud.html)
 
-Hjälpsidan för vanliga frågor innehåller nu information om Campaign-tillgängliga språk, webbformuläröversättning och flerspråkiga e-postmeddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Common_questions.html)
+Hjälpsidan för vanliga frågor innehåller nu information om Campaign-tillgängliga språk, webbformuläröversättning och flerspråkiga e-postmeddelanden. [Läs mer](../../platform/using/common-questions.md)
 
 Skillnaden mellan engelska i USA och engelska finns nu i ett särskilt avsnitt. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Formats_and_units)
 
-Hjälpsidan [Vanliga frågor](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Common_questions.html) länkar nu till felmeddelandesidan.
+Hjälpsidan [Vanliga frågor](../../platform/using/common-questions.md) länkar nu till felmeddelandesidan.
 
 Information om Open-spårningsläget har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Tracking_messages_Personalizing_URL_tracking.html)
 
 Lägg till information om lägsta upplösning för webbprogram och webbformulär. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WEB_Web_forms_About_web_forms.html)
 
-Integreringsguiden för Campaign och Adobe Experience Cloud-lösningar har uppdaterats och omorganiserats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/ITG_Campaign_integrations_About_Campaign_integrations.html)
+Integreringsguiden för Campaign och Adobe Experience Cloud-lösningar har uppdaterats och omorganiserats. [Läs mer](../../integrations/using/about-campaign-integrations.md)
 
 Ett avsnitt om hur textvariabeln används i webbformulär har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WEB_Web_forms_Static_elements_in_a_web_form.html#Using_text_variables)
 
@@ -373,7 +417,7 @@ Ett nytt avsnitt med självstudiekurser har lagts till, med länkar till steg-f�
 
 En ny TechNote om SMS-anslutningsprotokoll och inställningar har skapats. [Läs mer](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)
 
-Guiden Komma igång med god leveranspraxis har uppdaterats. [Läs mer](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+Guiden Komma igång med god leveranspraxis har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
 Kontokonfigurationen för Microsoft Dynamics 365 med Web API-distribution har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_CRM_Connectors.html#Example_for_Microsoft_Dynamics)
 
@@ -387,13 +431,13 @@ En ny Technote om prestandaförbättring och bästa praxis finns tillgänglig. [
 
 A/B-testexemplet har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
-Sidan med vanliga frågor och svar om Campaign Classic har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Common_questions.html)
+Sidan med vanliga frågor och svar om Campaign Classic har uppdaterats. [Läs mer](../../platform/using/common-questions.md)
 
 ## 18.4 - 24/04/2018{#release-18-4}
 
 **Nya funktioner i releasen**
 
-EU:s allmänna dataskyddsförordning (GDPR) - [Läs mer](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)
+EU:s allmänna dataskyddsförordning (GDPR) - [Läs mer](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
 Aktiva profiler - [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Profile_management_About_profiles.html#Active_profiles)
 
@@ -403,7 +447,7 @@ Förbättrad push-koppling för Android - [läs mer](https://docs.campaign.adobe
 
 Versionsinformationen har förbättrats för att ge en bättre användarupplevelse och innehåller nu alla korrigeringsfiler som hör till kundförfrågningar.  [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/RN.html)
 
-En ny sida har lagts till med de vanligaste frågorna om Campaign Classic. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Common_questions.html)
+En ny sida har lagts till med de vanligaste frågorna om Campaign Classic. [Läs mer](../../platform/using/common-questions.md)
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
@@ -419,11 +463,11 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](https://helpx.adobe.com/camp
 
 Nu finns en ny sida med föråldrade funktioner och versioner. [Läs mer](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-Vissa kända begränsningar och bästa metoder för RDBMS har lagts till. [Läs mer](http://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html)
+Vissa kända begränsningar och bästa metoder för RDBMS har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html)
 
 Lär dig de bästa sätten att använda SFTP. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
 
-Listan över tekniska arbetsflöden har uppdaterats. [Läs mer](http://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
+Listan över tekniska arbetsflöden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
 Förteckningen över kunskapsbasartiklar (tidigare kallade&quot;tekniker&quot;) finns nu här. [Läs mer](https://helpx.adobe.com/campaign/kb/article-list.html)
 
@@ -431,7 +475,7 @@ Videorna [](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) Instru
 
 Raddokumentationen har uppdaterats efter att LINE-paketet har avskrivits. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
 
-Rapportindikatorns beräkningsdokumentation har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/RPT_Accessing_built-in_reports_Reports_on_deliveries.html#Indicator_calculation)
+Rapportindikatorns beräkningsdokumentation har uppdaterats. [Läs mer](../../reporting/using/indicator-calculation.md)
 
 Lagt till information om justering av tidszonsfiler med Oracle. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MIG_Configuration_General_configurations.html#Oracle)
 
@@ -486,9 +530,9 @@ LINE-kanal: Meddelandeförbättringar - [läs mer](https://docs.campaign.adobe.c
 
 **Andra dokumentationsuppdateringar som följer med releasen**
 
-Nya frågeexempel har lagts till. [Läs mer](http://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Filtering_duplicated_recipients)
+Nya frågeexempel har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Filtering_duplicated_recipients)
 
-Guide för bästa leveranssätt har uppdaterats. [Läs mer](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+Guide för bästa leveranssätt har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
 Ett A/B-prov har uppdaterats med instruktioner som saknas. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
@@ -498,9 +542,9 @@ Uppdatera avsnittet för e-postarkivering. [Läs mer](https://docs.campaign.adob
 
 Klargör schemaläggarens användning i ett arbetsflöde. [Läs mer](../../workflow/using/scheduler.md)
 
-Bästa praxis för att lägga till pausat arbetsflöde. [Läs mer](http://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
+Bästa praxis för att lägga till pausat arbetsflöde. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
 
-Ny procedur för förbearbetning av filer vid import och efterbearbetning när data exporteras i ett arbetsflöde. Läs [här](http://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html).
+Ny procedur för förbearbetning av filer vid import och efterbearbetning när data exporteras i ett arbetsflöde. Läs [här](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html).
 
 Karantänmekanismen för dokumentationen för SMS-meddelanden har uppdaterats för att återspegla särdragen i felhanteringen för den utökade generiska SMPP-anslutningen. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines).
 
@@ -516,7 +560,7 @@ Dokumentationen för social marknadsföring har uppdaterats. [Läs mer](../../so
 
 En ny teknik för IP-uppvärmning har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_Deliverability_IP_Warming_overview.pdf).
 
-Ett nytt sätt att komma igång med uppgraderingen av bygget har lagts till. [Läs mer](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html).
+Ett nytt sätt att komma igång med uppgraderingen av bygget har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html).
 
 ## Maj 2017{#release-doc-30-05-2017}
 
@@ -528,13 +572,13 @@ Dokumentationen [&quot;Arkivera e-post&quot;&quot;](https://docs.campaign.adobe.
 
 Vissa videoklipp har lagts till och uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html)
 
-Lär dig hur du skickar en leverans till mottagare som har lästs in från en extern fil utan att uppdatera databasen. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Identifying_target_populations.html#Selecting_external_recipients)
+Lär dig hur du skickar en leverans till mottagare som har lästs in från en extern fil utan att uppdatera databasen. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)
 
 Exemplet med dubbel anmälan har uppdaterats. [Läs mer](../../web/using/use-cases--web-forms.md)
 
 ## Mars 2017{#release-doc-31-03-2017}
 
-Leverans: guiden [Komma](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) igång har uppdaterats. Leveransdokumentationen innehåller nu en mer detaljerad [översikt](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) och en beskrivning av [implementeringsprocessen och de viktigaste stegen](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Implementation.html).
+Leverans: guiden [Komma](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) igång har uppdaterats. Leveransdokumentationen innehåller nu en mer detaljerad [översikt](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) och en beskrivning av [implementeringsprocessen och de viktigaste stegen](../../delivery/using/deliverability-key-points.md).
 
 Avsnittet&quot;Skicka med vågformer&quot; har flyttats och förbättrats med detaljerade exempel, rekommendationer och användningsexempel.    [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Sending_using_multiple_waves)
 
