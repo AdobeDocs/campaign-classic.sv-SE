@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4437d2ea4e4044245a2b9a5a870267cd1f1c0bc9
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -30,7 +30,7 @@ Att utföra en migrering kan vara en chans att uppdatera miljön (databasmotorer
 
 I v6.02 var läget &quot;multi timezone&quot; bara tillgängligt för PostgreSQL-databasmotorer. Det erbjuds nu oavsett vilken typ av databasmotor som används. Vi rekommenderar att du omvandlar din bas till en&quot;multi-timezone&quot;-bas. Mer information finns i avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vissa programversioner som stöds i Adobe Campaign 5.11 och 6.02 stöds inte längre i Adobe Campaign v7.
 >
