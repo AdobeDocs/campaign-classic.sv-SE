@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ Neobank-sajten vill visa ett erbjudande på sin webbplats som riktar sig till oi
 
 För att lägga upp den här interaktionen kommer vi att:
 
-1. [Skapa en anonym miljö](#creating-an-anonymous-environment).
-1. [Skapa anonyma erbjudanden](#creating-anonymous-offer-spaces).
-1. [Skapa en erbjudandekategori och ett tema.](#creating-an-offer-category-and-a-theme).
-1. [Skapa anonyma erbjudanden.](#creating-anonymous-offers).
-1. [Konfigurera webbplatsens](#configure-the-web-offer-space-on-the-website)webberbjudanden.
+1. [Skapa en anonym miljö](#creating-an-anonymous-environment)
+1. [Skapa anonyma erbjudanden](#creating-anonymous-offer-spaces)
+1. [Skapa en erbjudandekategori och ett tema](#creating-an-offer-category-and-a-theme)
+1. [Skapa anonyma erbjudanden.](#creating-anonymous-offers)
+1. [Konfigurera webbplatsens erbjudanden](#configure-the-web-offer-space-on-the-website)
 
 ### Skapa en anonym miljö {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ Du får en trädstruktur som innehåller din nya miljö:
    * Titel
    * HTML-innehåll
    * Bild-URL
-   * Mål-URL.
+   * Mål-URL
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Redigera HTML-återgivningsfunktionen enligt följande:
