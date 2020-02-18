@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Den här mekanismen kan också användas om du vill använda en nyligen använd 
 
 När dessa funktioner har lagts till visas de i uttrycksredigeraren precis som andra fördefinierade funktioner.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >SQL-funktionsanrop i konsolen skickas inte längre naturligt till servern. Den mekanism som beskrivs här blir därför **det enda sättet att anropa** den oplanerade SQL-funktionsservern.
 
@@ -40,7 +40,7 @@ De funktioner som ska läggas till finns i en **&quot;paketfil&quot; i XML-forma
 
 Om du vill installera det från konsolen väljer du alternativen för **Verktyg/Avancerat/Importera paket** på menyn, sedan **[!UICONTROL Install from file]** , och följer sedan instruktionerna i importguiden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Varning: Även om listan med importerade funktioner visas direkt i funktionsredigeraren kommer de inte att kunna användas förrän Adobe Campaign har startats om.
 
@@ -92,7 +92,7 @@ De funktioner som ska läggas till finns i **&quot;paketfilen** &quot; i XML-for
      name="window"          ( label="Windowing functions" )
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se till att du slutför attributet @label: det här namnet visas i listan över tillgängliga funktioner. Om du inte anger något får gruppen inget namn. Om du anger ett annat namn än det befintliga, ändras dock namnet på hela gruppen.
 
