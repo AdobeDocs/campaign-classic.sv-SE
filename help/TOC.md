@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -17,6 +17,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
 + Versionsinformation {#release-notes}
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
+      + [Version 19.2](rn/using/release--19-2.md)
       + [Version 19.1](rn/using/release--19-1.md)
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
@@ -64,9 +65,17 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Arbeta med datapaket](platform/using/working-with-data-packages.md)
       + [Hantera uppräkningar](platform/using/managing-enumerations.md)
       + [Externa konton](platform/using/external-accounts.md)
+   + Åtkomst till en extern databas (FDA){#accessing-external-database}
+      + [Om FDA](platform/using/about-fda.md)
+      + [Specifika konfigurationer efter databastyp](platform/using/specific-configuration-database.md)
+      + [Åtkomsträttigheter till fjärrdatabas](platform/using/remote-database-access-rights.md)
+      + [Ansluta till databasen](platform/using/connecting-to-database.md)
+      + [Skapa dataschemat](platform/using/creating-data-schema.md)
+      + [Definiera datamappning](platform/using/defining-data-mapping.md)
+      + [Ytterligare alternativ](platform/using/additional-options.md)
+      + [Använda data från en extern databas i ett arbetsflöde](platform/using/data-external-database-workflow.md)
    + Kopplingar {#connectors}
       + [Om kopplingar](platform/using/about-connectors.md)
-      + [Åtkomst till en extern databas](platform/using/accessing-an-external-database.md)
       + [CRM Connectors](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
@@ -92,7 +101,8 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [LINE-kanal](delivery/using/line-channel.md)
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Om mobilappskanal](delivery/using/about-mobile-app-channel.md)
-      + [Konfigurera mobilappskanal](delivery/using/setting-up-mobile-app-channel.md)
+      + [Integrera Campaign SDK i mobilapplikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [Konfigurera mobilprogrammet i Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
       + [Skapa meddelanden](delivery/using/creating-notifications.md)
       + [Felsökning](delivery/using/troubleshooting.md)
    + Skickar direktutskick {#sending-direct-mail}
@@ -213,7 +223,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
    + Analyserar populationer {#analyzing-populations}
       + [Beskrivande analys](reporting/using/about-descriptive-analysis.md)
       + [Använda guiden för beskrivande analys](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [Använda en analysrapport](reporting/using/processing-a-report.md)
+      + [Bearbeta en rapport](reporting/using/processing-a-report.md)
       + [Användningsexempel](reporting/using/use-cases.md)
    + Skapa nya rapporter {#creating-new-reports}
       + [Om att skapa rapporter i Campaign](reporting/using/about-reports-creation-in-campaign.md)
@@ -427,7 +437,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Marknadsföringsresurser](workflow/using/marketing-resources--mrm-.md)
       + [Social marknadsföring](workflow/using/social-marketing.md)
       + [Integrering med Adobe Experience Cloud-lösningar](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Allmänna dataskyddsförordningen (GDPR)](workflow/using/general-data-protection-regulation--gdpr-.md)
+      + [Skyddsförordningen för personuppgifter](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [Överföring till Mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Plattform för mellanleverantörer](workflow/using/mid-sourcing-platform.md)
 + Hantera erbjudanden {#managing-offers}
