@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -105,7 +105,7 @@ Gör så här:
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Adobe Campaign har inte stöd för flera mottagarscheman, som kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns på sidan [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md) .
 
