@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,10 +26,10 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Migreringsstegen i Linux är följande:
 
-1. Stoppa tjänster: se [Tjänststopp](#service-stop),
-1. Spara databasen: Se [Säkerhetskopiera databasen och den befintliga installationen](#back-up-the-database-and-the-existing-installation).
-1. Avinstallera tidigare versionspaket för Adobe Campaign: se [Avinstallera tidigare versionspaket](#uninstalling-adobe-campaign-previous-version-packages)för Adobe Campaign,
-1. Migrera plattformen: se [distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7),
+1. Stoppa tjänster: se [Tjänststopp](#service-stop).
+1. Spara databasen: se [Säkerhetskopiera databasen och den befintliga installationen](#back-up-the-database-and-the-existing-installation).
+1. Avinstallera tidigare versionspaket för Adobe Campaign: se [Avinstallera paket](#uninstalling-adobe-campaign-previous-version-packages)för tidigare versioner av Adobe Campaign.
+1. Migrera plattformen: se [Distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7).
 1. Starta om tjänsten: se [Omstarttjänster](#re-starting-services).
 
 ## Tjänststopp {#service-stop}
@@ -90,7 +90,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    mv nl5 nl5.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **nl5.back** och sparar den på en annan säker plats än servern.
 
@@ -125,7 +125,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **nl6.back** och sparar den på en annan säker plats än servern.
 
@@ -160,7 +160,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **nl6.back** och sparar den på en annan säker plats än servern.
 
@@ -264,15 +264,15 @@ Så här distribuerar du Adobe Campaign:
    * I **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
+      dpkg -i nlserver6-XXXX-linux-2.6-intel.deb
       ```
 
    * I **Red Hat**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+      rpm -Uvh nlserver6-XXXX-0.x86_64.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du måste installera paketen utan problem innan du går vidare till nästa steg.
 
@@ -308,13 +308,13 @@ Så här distribuerar du Adobe Campaign:
 1. Logga in som **rot** och förbered instansen med följande kommandon:
 
    ```
-   /etc/init.d/nlserver6-v7 start   
-   Starting nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 start   
+   Starting nlserver6: [  OK  ]
    ```
 
    ```
-   /etc/init.d/nlserver6-v7 stop
-   Stopping nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 stop
+   Stopping nlserver6: [  OK  ]
    ```
 
    >[!NOTE]
@@ -323,7 +323,7 @@ Så här distribuerar du Adobe Campaign:
 
 1. Gå till säkerhetskopieringsmappen **nl5.back** och kopiera (skriv över) konfigurationsfilerna och undermapparna för varje instans. Logga in som **neolane** och kör följande kommando:
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Kopiera inte filen **config-default.xml** för det första kommandot nedan.
 
@@ -348,7 +348,7 @@ Så här distribuerar du Adobe Campaign:
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Om **spårningsloggtjänsten** inte har startats på spårningsservern vidarebefordras ingen spårningsinformation.
 
@@ -365,7 +365,7 @@ Så här distribuerar du Adobe Campaign:
    nlserver config -timezone:<time zone> -postupgrade -instance:<instance name>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du måste ange vilken tidszon som ska användas som referens under efteruppgraderingen (med alternativet **-timezone** ). I det här fallet använder vi tidszonen Europa/Paris **: &quot;Europa/Paris&quot;**.
 
@@ -373,7 +373,7 @@ Så här distribuerar du Adobe Campaign:
    >
    >Vi rekommenderar starkt att du uppgraderar din bas till&quot;multi-timezone&quot;. Mer information om tidszonsalternativ finns i avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Starta inte Adobe Campaign-tjänsterna än: Ändringar måste fortfarande göras i Apache.
 
@@ -391,15 +391,15 @@ Så här distribuerar du Adobe Campaign:
    * I **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * I **Red Hat**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du måste installera paketen utan problem innan du går vidare till nästa steg.
 
@@ -423,7 +423,7 @@ Så här distribuerar du Adobe Campaign:
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Om **spårningsloggtjänsten** inte har startats på spårningsservern vidarebefordras ingen spårningsinformation.
 
@@ -469,15 +469,15 @@ Så här distribuerar du Adobe Campaign:
    * I **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * I **Red Hat**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du måste installera paketen utan problem innan du går vidare till nästa steg.
 
@@ -563,13 +563,6 @@ I det här skedet måste Apache stoppas. Se: Stoppa [tjänsten](#service-stop).
    * I **Red Hat**:
 
       Gå till katalogen **/usr/local/apache2/conf** , redigera filen **http.conf** och ersätt **nl5** med **nl6** på följande rader.
-
-      I **RHEL 6/Debian 7**:
-
-      ```
-      LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
-      Include /usr/local/neolane/nl6/tomcat-6/conf/apache_neolane.conf
-      ```
 
       I **RHEL 7/Debian 8**:
 
