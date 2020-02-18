@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ---
 
@@ -24,13 +24,21 @@ source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
 
 ## Om sekretess och samtycke {#about-privacy-and-consent}
 
-Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket stora mängder data, inklusive personuppgifter. Vi uppmuntrar alla användare av Adobe Campaign att arbeta inom lagstiftning (DPA, CAN-SPAM, European Directive on Privacy and Electronic Communications, European GDPR, osv.), att göra ansvarsfull och etisk användning av personuppgifter och att avstå från att skicka oönskade e-postmeddelanden, push-meddelanden och SMS-meddelanden (&quot;spam&quot;). Vi tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och vi förbjuder därför strikt användning av Adobe Campaign när det gäller att skicka oönskade meddelanden.
+Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket stora mängder data, inklusive personuppgifter. Vi uppmuntrar alla användare av Adobe Campaign att arbeta inom lagstiftning (DPA, CAN-SPAM, European Directive on Privacy and Electronic Communications, European GDPR, CCPA osv.), att göra ansvarsfull och etisk användning av personuppgifter och att avstå från att skicka oönskade e-postmeddelanden, push-meddelanden och SMS-meddelanden (&quot;spam&quot;). Vi tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och vi förbjuder därför strikt användning av Adobe Campaign när det gäller att skicka oönskade meddelanden.
 
 Mer information finns i [Adobe Experience Cloud-sekretess](https://www.adobe.com/privacy/marketing-cloud.html).
 
-Adobe Campaign innehåller de verktyg och funktioner, samt bästa praxis, som hjälper er att uppfylla er GDPR-policy när ni använder vår tjänst. Se [det här dokumentet](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
-
 Ta dig tid att gå igenom checklistan [för](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html) säkerhet och integritet för att lära dig grunderna för att kontrollera säkerhet och integritet.
+
+## Integritetshantering {#privacy-management}
+
+GDPR (General Data Protection Regulation) är EU:s integritetslagstiftning som harmoniserar och moderniserar kraven på skydd av personuppgifter. GDPR gäller för Adobe Campaign-kunder som lagrar data för registrerade i EU.
+
+CCPA (California Consumer Privacy Act) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger vissa företag som bedriver verksamhet i Kalifornien dataskyddsansvar.
+
+Förutom samtyckeshantering, inställningar för datalagring och behörighetshantering erbjuder vi, i vår roll som dataprocessor, ytterligare funktioner som underlättar din beredskap som datastyrenhet för vissa sekretessförfrågningar.
+
+I den här [artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html)får du lära dig hur Adobe Campaign hjälper dig att hantera de olika sekretessnyckelfunktionerna: Rätt till åtkomst, rätt att bli glömd, samtycke, datalagring och användarroller. Du hittar också bästa praxis som hjälper dig att följa din sekretesspraxis när du använder vår tjänst.
 
 ## Cookies och spårningsfunktioner {#cookies-and-tracking-capabilities}
 
