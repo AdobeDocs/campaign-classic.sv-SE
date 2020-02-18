@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ---
 
@@ -267,7 +267,7 @@ Länka till en tabell och ett samlingselement:
 >* Använd **[!UICONTROL Add]** knappen (ovanför sidikonfältet) för att lägga till en utdatakolumn där vi vill redigera uttrycket. Mer information om hur du redigerar ett uttryck finns i [Skapa uttryck](#building-expressions).
 >* Ta bort en utdatakolumn genom att klicka på den röda x (**Delete**).
 >* Ändra ordningen på utdatakolumnerna med hjälp av pilarna.
->* Det **[!UICONTROL Distribution of values]** är ett sätt att visa fördelningen av värdena för det valda fältet (t.ex. distributioner kopplade till mottagarorter, mottagarspråk osv.).
+>* Den **[!UICONTROL Distribution of values]** används som ett sätt att visa fördelningen av värdena för det valda fältet (t.ex. distributioner kopplade till mottagarorter, mottagarspråk osv.).
 
 
 ## Skapa beräknade fält {#creating-calculated-fields}
