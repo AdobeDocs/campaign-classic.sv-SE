@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -37,7 +37,7 @@ I v6.02 var läget &quot;multi time zone&quot; bara tillgängligt för PostgreSQ
 
 Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till alternativet **-userTimestamptz:1** på kommandoraden efter uppgradering.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om parametern **-usetimestamptz:1** används med en inkompatibel databasmotor kommer databasen att vara skadad och du måste återställa en säkerhetskopia av databasen och köra kommandot ovan igen.
 
@@ -87,7 +87,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
 
 ### Säkerhetszoner {#security-zones}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: måste du konfigurera säkerhetszonerna och därför samla in operatörens IP-adresser.
 
@@ -107,7 +107,7 @@ I v7 måste **intern** anslutning och **administratörsanslutning** skyddas av e
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det **interna** lösenordet måste vara identiskt för alla spårningsservrar. Mer information finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier) och i [det här avsnittet](../../platform/using/access-management.md#about-permissions).
 
@@ -170,7 +170,7 @@ Ny länk med anslutningssidan:
 /nl/jsp/logon.jsp?login=<trusted login>&action=submit&target=/view/recipientOverview
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du använder en operator som är länkad till en betrodd IP-mask, kontrollerar du att den har de lägsta rättigheterna och att den finns i en säkerhetszon i **sessionTokenOnly** -läge.
 
@@ -178,7 +178,7 @@ Ny länk med anslutningssidan:
 
 Okända SQL-funktionsanrop skickas inte längre naturligt till servern. För närvarande måste alla SQL-funktioner läggas till i schemat **xtk:funcList** (mer information finns i [det här avsnittet](../../configuration/using/adding-additional-sql-functions.md)). När du migrerar läggs ett alternativ till under efteruppgraderingen som gör att du kan bibehålla kompatibiliteten med gamla odeklarerade SQL-funktioner. Om du vill fortsätta använda de här funktionerna kontrollerar du att alternativet **XtkPassUnknownSQLFunactionsToRDBMS** verkligen är definierat på **[!UICONTROL Administration > Platform > Options]** nodnivå.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vi rekommenderar starkt att du inte använder det här alternativet på grund av de säkerhetsrisker det medför.
 
@@ -460,7 +460,7 @@ Det finns tre möjliga sätt att lösa en konflikt:
 * **[!UICONTROL Accept the new version]**: rekommenderas om resurserna i Adobe Campaign inte har ändrats av användaren.
 * **[!UICONTROL Keep the current version]**: betyder att uppdateringen inte godkänns.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
 
 Om du väljer att lösa konflikten manuellt gör du så här:
@@ -506,7 +506,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje representationsschema (**nms:emailOfferView**). I v7 finns innehållet nu i erbjudandeschemat. Efter uppgraderingen visas därför inte innehållet i gränssnittet. Efter uppgraderingen måste du återskapa erbjudandeinnehållet eller utveckla ett skript som automatiskt flyttar innehållet från det publiceringsschema som visas till erbjudandeschemat.
 
->[!CAUTION]
+>[!IMPORTANT]
 Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kan utnyttja alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
 Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i mappen Adobe Campaign v7. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** fälten och **[!UICONTROL textSource]** fälten). Innehållet som fanns i **tabellen NmsEmailOfferView** har flyttats till erbjudandetabellen.
