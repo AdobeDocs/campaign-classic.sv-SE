@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[i
 
 För att undvika bindning av en parameter måste attributet noSqlBind fyllas i med värdet true.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om frågan innehåller instruktioner för &quot;order-by&quot; eller &quot;grupp-för&quot;, kommer databasmotorerna inte att kunna &quot;binda&quot; värden. Du måste placera attributet @noSqlBind=&quot;true&quot; i instruktionerna &quot;select&quot; och/eller &quot;where&quot; för frågan.
 
