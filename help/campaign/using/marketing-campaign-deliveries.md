@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ Huvudmålet för en leverans kan också definieras i målarbetsflödet: I den gr
 
 Handboken [Automatisera med arbetsflöden](../../workflow/using/executing-a-workflow.md#architecture) innehåller en detaljerad beskrivning av hur arbetsflödesmodulen fungerar.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >I samma kampanj kan du inte konfigurera fler än 28 arbetsflöden. Tidigare är ytterligare arbetsflöden inte synliga i gränssnittet och kan generera fel.
 
@@ -233,7 +233,7 @@ Som standard gäller den kontrollgruppskonfiguration som definieras på kampanjn
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Klicka på **[!UICONTROL Control group]** fliken och välj sedan **[!UICONTROL Enable and edit control group configuration]**.
-1. Klicka **[!UICONTROL Edit...]** för att konfigurera kontrollgruppen
+1. Klicka **[!UICONTROL Edit...]** för att konfigurera kontrollgruppen.
 
 Konfigurationsproceduren presenteras i [Extrahera kontrollgruppen från huvudmålet](#extracting-the-control-group-from-the-main-target) och [lägga till en population](#adding-a-population).
 
@@ -353,7 +353,7 @@ Filextraheringen startar två åtgärder: budgetberäkning och lagerberäkning. 
 
 Du kan koppla olika dokument till en kampanj: rapport, foto, webbsida, diagram osv. Dessa dokument kan vara i vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF osv.). Mer information om hur du länkar dokument med en kampanj finns i [Lägga till dokument](#adding-documents).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det här läget är reserverat för små dokument.
 
