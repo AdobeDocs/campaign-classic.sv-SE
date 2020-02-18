@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -37,4 +37,4 @@ HTTP/2-anslutning: du måste tillåta kommunikation till och från följande ser
 
 >[!NOTE]
 >
->Mer information om de två kontakterna finns i [Kopplingar](../../delivery/using/setting-up-mobile-app-channel.md#connectors).
+>Mer information om de två anslutningarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
