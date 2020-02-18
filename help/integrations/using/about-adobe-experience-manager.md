@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 4a71d93e7e3284eaeb36b3536204474947d695f5
 
 ---
 
@@ -36,7 +36,11 @@ Du måste ha följande element:
 * En **publiceringsinstans för** Adobe Experience Manager.
 * En Adobe Campaign-instans.
 
-Adobe Campaign är kompatibelt med Adobe Experience Manager 6.1, 6.2, 6.3 och 6.4. I följande avsnitt visas en översikt över integreringen.
+Adobe Campaign är kompatibelt med Adobe Experience Manager 6.1, 6.2, 6.3, 6.4 och 6.5. I följande avsnitt visas en översikt över integreringen.
+
+>[!NOTE]
+>
+>Adobe Campaign Classic-mallar är inte längre tillgängliga med Adobe Experience Manager 6.5.
 
 Mer information finns i dokumentationen för din version av Adobe Experience Manager:
 
@@ -44,4 +48,4 @@ Mer information finns i dokumentationen för din version av Adobe Experience Man
 * [Klicka här för Adobe Experience Manager 6.2](https://docs.adobe.com/docs/en/aem/6-2/administer/integration/marketing-cloud/campaign/campaignonpremise.html)
 * [Klicka här för Adobe Experience Manager 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/campaignonpremise.html)
 * [Klicka här för Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaignonpremise.html)
-
+* [Klicka här för Adobe Experience Manager 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)
