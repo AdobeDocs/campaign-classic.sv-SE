@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -53,7 +53,7 @@ Du kan visa parametrarnas värden genom att konfigurera spårningslogglistan (f�
 
 I serverkonfigurationen kan du definiera det maximala antal tecken som ska beaktas för spårningsparametrarna för webben.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du ökar det maximala antalet tecken som ska beaktas kan det påverka plattformens webbspårningsprestanda.
 
@@ -76,15 +76,25 @@ När konfigurationen har ändrats måste du:
 
 * Stoppa webbservern som är värd för omdirigeringsmodulen (Apache, IIS osv.),
 * Stoppa Adobe Campaign-servern: **net stop nlserver6** i Windows, **/etc/init.d/nlserver6 stop** i Linux,
+
+   >[!NOTE]
+   >
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): stoppserver **systemctl**
+
 * I Linux tar du bort de delade minnessegmenten med **kommandot ipcrm** ,
 * Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 start** i Linux,
+
+   >[!NOTE]
+   >
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+
 * Starta om webbservern.
 
 **Exempel**: med hänsyn till konfigurationen under Linux.
 
 ```
-adobe@selma:~$ /etc/init.d/nlserver6 stop
-adobe@selma:~$ /etc/init.d/apache stop
+adobe@selma:~$ systemctl stop nlserver
+adobe@selma:~$ systemctl stop apache2
 adobe@selma:~$ ipcs shm
 
 ------ Shared Memory Segments --------
@@ -100,8 +110,8 @@ key        msqid      owner      perms      used-bytes   messages
 
 adobe@selma:~$ ipcrm shm 2097153                             
 1 resource(s) deleted
-adobe@selma:~$ /etc/init.d/nlserver6 start
-adobe@selma:~$ /etc/init.d/apache start
+adobe@selma:~$ systemctl start nlserver
+adobe@selma:~$ systemctl start apache2
 ```
 
 >[!NOTE]
