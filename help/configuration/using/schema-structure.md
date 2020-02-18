@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -123,7 +123,7 @@ Följande regler måste följas:
 
 * Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via **name** -attributet.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tillåtna tecken i enlighet med XML-reglerna för namngivning.
 
