@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -51,7 +51,7 @@ Den här informationen visas också i **[!UICONTROL Campaign orders]** vyn med a
 
 Den centrala operatorn kan redigera ordern. Det finns två sätt att göra detta:
 
-1. Operatorn kan klicka på ordningens namn för att redigera den: Här visas orderdetaljerna.
+1. Operatorn kan klicka på ordningens namn för att redigera den: Här visas orderinformationen.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
