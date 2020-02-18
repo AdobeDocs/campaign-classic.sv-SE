@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ Dessa databaser kallas för RBL (BlackHill Lists i realtid) och söks igenom via
 * Efter avsändardomän: listar avsändardomäner (den fullständiga domänen för den studsande e-postadressen) som skickar skräppost eller felaktigt konfigurerad.
 * Efter webbdomän: listar de domäner (högnivådomäner som är registrerade hos registratorerna) som finns i URL:erna för länkarna och bilderna i skräppostinnehållet. I Adobe Campaign är den domän som ska beaktas vanligtvis den adress som används för spårning.
 
-Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns i [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) eller [https://www.dnsstuff.com/](https://www.dnsstuff.com/) (&quot;IP-verktyg&quot;,&quot;Spam Database Lookup&quot;-formulär).
+Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns i [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) (&quot;Skräppost Blacklist Lookup&quot;).
 
 * **Spamhaus**
 
