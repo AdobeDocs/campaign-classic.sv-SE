@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -59,7 +59,7 @@ För att Adobe Campaign ska kunna publicera på era sidor måste ni skapa ett Fa
 1. Logga in på det Facebook-konto som du använder för att administrera sidor.
 1. Ange följande adress i webbläsaren: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Beroende på vilken typ av konto du har kan en eller flera auktoriseringar vara nödvändiga.
    >
@@ -87,7 +87,7 @@ Om du vill delegera skrivåtkomst till Adobe Campaign för publicering på sidor
 
 Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbläsare som är inloggad på det Facebook-konto som du använder för sidadministration:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign-operatorn måste ha administrationsbehörighet för att kunna utföra den här konfigurationen.
 
@@ -107,7 +107,7 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du får inte använda den osäkra URL:en under några omständigheter.
 
