@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -31,4 +31,4 @@ Med flera aktiviteter kan du interagera med data från en extern databas:
 * Berikning
 * Datainläsning
 
-Användningen av FDA-alternativet beror på din Adobe Campaign-licens. I det här [avsnittet](../../platform/using/accessing-an-external-database.md)beskrivs hur du konfigurerar det här alternativet samt de bästa metoderna och begränsningar som är kopplade till användningen av det.
+Användningen av FDA-alternativet beror på din Adobe Campaign-licens. I det här [avsnittet](../../platform/using/about-fda.md)beskrivs hur du konfigurerar det här alternativet samt de bästa metoderna och begränsningar som är kopplade till användningen av det.
