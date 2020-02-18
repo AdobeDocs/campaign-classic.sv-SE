@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ---
 
@@ -116,15 +116,23 @@ Adobe Campaign hanterar karantän utifrån typ av leveransfel och orsaken som ti
 
 * **Ignorerat fel**: ignorerade fel skickar ingen adress till karantän.
 * **Hårt fel**: motsvarande e-postadress omedelbart skickas till karantänen.
-* **Mjukt fel**: Mjuka fel skickar inte en adress till karantän omedelbart, men de ökar en felräknare. När felräknaren når gränsvärdet sätts adressen i karantän. I standardkonfigurationen anges tröskelvärdet till fem fel, där två fel är viktiga om de inträffar med minst 24 timmars mellanrum. Adressen sätts i karantän vid det sjätte felet. Tröskelvärdet för felräknare kan ändras. Mer information finns i [Försök igen efter ett tillfälligt leveransfel](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
-
-   När en leverans lyckas efter ett nytt försök initieras felräknaren för den adress som var före den karantänen om. Adressstatusen ändras till **Giltig** och tas bort från listan över karantäner efter två dagar i **databasrensningsarbetsflödet** .
+* **Mjukt fel**: Mjuka fel skickar inte en adress till karantän omedelbart, men de ökar en felräknare. Mer information finns i [Mjuk felhantering](#soft-error-management).
 
 Om en användare kvalificerar ett e-postmeddelande som en skräppost (**Feedback-slinga**) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
 
 I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet varför den valda adressen placerades i karantän. Karantän i Adobe Campaign är skiftlägeskänsligt. Se till att importera e-postadresser i gemener så att de inte återdirigeras senare.
 
 ![](assets/tech_quarant_error_reasons.png)
+
+### Mjuk felhantering {#soft-error-management}
+
+I motsats till hårda fel skickar inte mjuka fel en adress direkt till karantän, utan i stället ökar de en felräknare.
+
+* När felräknaren når gränsvärdet sätts adressen i karantän.
+* I standardkonfigurationen anges tröskelvärdet till fem fel, där två fel är viktiga om de inträffar med minst 24 timmars mellanrum. Adressen sätts i karantän vid det sjätte felet.
+* Tröskelvärdet för felräknare kan ändras. Mer information finns i [Försök igen efter ett tillfälligt leveransfel](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+
+Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **Giltig** och tas bort från listan över karantäner i **databasrensningsarbetsflödet** .
 
 ## Kantlinjer för push-meddelanden {#push-notification-quarantines}
 
