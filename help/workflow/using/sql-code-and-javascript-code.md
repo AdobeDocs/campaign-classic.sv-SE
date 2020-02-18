@@ -15,14 +15,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
 ---
 
 
 # SQL-kod och JavaScript-kod{#sql-code-and-javascript-code}
 
-En **SQL-kodaktivitet** kör ett SQL-skript. Skriptet är en JST-mall.
+## SQL-kod {#sql-code}
+
+En **[!UICONTROL SQL code*]* -aktivitet kör ett SQL-skript. Skriptet är en JST-mall.
+
+![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
@@ -32,31 +36,28 @@ En **SQL-kodaktivitet** kör ett SQL-skript. Skriptet är en JST-mall.
 
    Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
-**JavaScript-kodtypsaktiviteter** kör ett JavaScript-skript i ett arbetsflödes kontext. Mer information om skript finns i avsnittet [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md) .
+## JavaScript-kod och avancerad JavaScript-kod {#javascript-code}
 
-* **[!UICONTROL Script]**
+**[!UICONTROL JavaScript code]** och **[!UICONTROL Advanced JavaScript code]** aktiviteter kör ett JavaScript-skript i ett arbetsflödes kontext. Mer information om skript finns i avsnittet [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md) .
 
-   Redigerarens centrala del innehåller skriptet som ska köras.
+>[!NOTE]
+>
+>Som standard får körningsfasen för **[!UICONTROL JavaScript code]** och **[!UICONTROL Advanced JavaScript code]** aktiviteter inte överskrida 1 timme. Efter den här fördröjningen avbryts processen med ett felmeddelande och aktivitetskörningen misslyckas.
+>
+>Du kan ändra den här fördröjningen i det **[!UICONTROL Stop execution after]** fält som är tillgängligt i aktivitetens egenskaper.
 
-* **[!UICONTROL Processing errors]**
+* **[!UICONTROL JavaScript code]**
 
-   Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   ![](assets/javascript_code.png)
 
-En **avancerad JavaScript-kodaktivitet** kör ett JavaScript-skript i ett arbetsflödes sammanhang. Mer information om skript finns i [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md).
+   * **[!UICONTROL Script]**:Redigerarens centrala del innehåller skriptet som ska köras.
+   * **[!UICONTROL Processing errors]**:Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
-* **[!UICONTROL First call]**
+* **[!UICONTROL Advanced JavaScript code]**
 
-   Den första zonen i redigeraren innehåller skriptet som ska köras under det första anropet.
+   ![](assets/advanced_javascript_code.png)
 
-* **[!UICONTROL Next calls]**
-
-   Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
-
-* **[!UICONTROL Transitions]**
-
-   Du kan definiera flera aktivitetsutdatagränser.
-
-* **[!UICONTROL Schedule]**
-
-   På fliken **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
-
+   * **[!UICONTROL First call]**:Den första zonen i redigeraren innehåller skriptet som ska köras under det första anropet.
+   * **[!UICONTROL Next calls]**:Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
+   * **[!UICONTROL Transitions]**:Du kan definiera flera aktivitetsutdatagränser.
+   * **[!UICONTROL Schedule]**:På fliken **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
