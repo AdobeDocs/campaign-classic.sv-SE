@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -28,11 +28,10 @@ Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste 
 
 Migreringen måste testas i utvecklingsmiljön i förväg för att se till att den fungerar smidigt och utan fel. Migrering av produktionsmiljön får endast ske när den migrerade utvecklingsmiljön har godkänts fullständigt.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Innan du startar migreringen måste du läsa den här guiden **i sin helhet**.
 
 >[!NOTE]
 >
 >Nya funktioner och lösningar för Adobe Campaign v7 finns på [den här sidan](https://docs.campaign.adobe.com/doc/AC/en/RN.html).
-
