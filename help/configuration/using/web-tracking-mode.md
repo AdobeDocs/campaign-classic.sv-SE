@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Det finns tre tillgängliga spårningslägen: **&quot;Sessionsspårning&quot;**,
 
 Varje läge har specifika egenskaper. Det &quot;permanenta&quot; läget för webbspårning omfattar egenskaperna för webbspårningsläget &quot;session&quot;, medan läget &quot;anonym&quot; omfattar egenskaperna för lägena &quot;permanent&quot; och &quot;session&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Läget för anonym webbspårning är aktiverat som standard om paketet Leads är aktiverat. I alla andra fall är webbspårningsläget &quot;session&quot; aktiverat som standard.
 >
