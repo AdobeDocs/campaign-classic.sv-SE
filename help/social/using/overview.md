@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
 Med Social Marketing kan ni skicka leveranser till olika Facebook-sidor och Twitter-konton i stället för till mottagarprofiler. På Facebook visas leveransinnehåll i form av publikationer på sidväggar och visas även i nyhetsflödet för alla sidfans. På Twitter visas leveransinnehåll som tweets och visas på kontoföljarnas hemsida. Du kan också skicka direktmeddelanden till de kontoföljare som du samlar in.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign ber er att följa de användarvillkor som Facebook och Twitter meddelat när det gäller meddelandeleverans.
 >
