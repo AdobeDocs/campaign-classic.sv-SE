@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
 
 ---
 
@@ -59,7 +59,7 @@ Med Campaign kan ni skapa godkännandeprocesser för de viktigaste stegen i mark
 
 I Adobe Campaign finns alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser: kan ni få åtkomst till externa data utan att ändra strukturen på Adobe Campaign-data.
 
-[Klicka här om du vill veta mer](../../platform/using/accessing-an-external-database.md).
+[Klicka här om du vill veta mer](../../platform/using/connecting-to-database.md).
 
 ## Vilka externa databaser kan jag ansluta Campaign till? {#which-external-databases-can-i-connect-campaign-to-}
 
