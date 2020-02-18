@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
 
 ---
 
@@ -45,8 +45,6 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
    Om du vill använda läget &quot;multitidszon&quot;, se avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones) .
 
    Om du använder Oracle som en databas kontrollerar du att Oracles tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. Mer information finns i avsnittet [Oracle](../../migration/using/general-configurations.md#oracle) .
-
-   Under en migrering från en v.5.11-plattform i MySQL måste du dessutom utföra ytterligare konfigurationer. Mer information finns i avsnittet [MySQL](../../migration/using/specific-configurations-in-v5-11.md#mysql) .
 
 * Säkerhetszoner
 
