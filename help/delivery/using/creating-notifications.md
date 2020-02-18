@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -59,7 +59,7 @@ Börja med att skapa en ny leverans.
    >Läget **tyst överföring** är tillgängligt från iOS 7. Detta gör att ett tyst meddelande kan skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
 
 1. I **[!UICONTROL Title]** fältet anger du etiketten för titeln som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet på **title** -parametern för iOS-meddelandenyttolasten.
-1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **undertitle** -parametern i iOS-meddelandenyttolasten). Se avsnittet [Kopplingar](../../delivery/using/setting-up-mobile-app-channel.md#connectors) .
+1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **undertitle** -parametern i iOS-meddelandenyttolasten). Mer information finns i [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 1. Ange sedan **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
 
    ![](assets/nmac_delivery_ios_5.png)
@@ -77,13 +77,13 @@ Börja med att skapa en ny leverans.
 
    >[!NOTE]
    >
-   >Ljud måste inkluderas i programmet och definieras när tjänsten skapas. Se [Programljud](../../delivery/using/setting-up-mobile-app-channel.md#application-sounds).
+   >Ljud måste inkluderas i programmet och definieras när tjänsten skapas. Se [Konfigurera ett externt iOS-konto](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
 
 1. I **[!UICONTROL Application variables]** fältet anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
    >[!NOTE]
    >
-   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: [Allmän information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: Konfigurera [ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Klicka på fliken för att förhandsgranska meddelandet när meddelandet har konfigurerats **[!UICONTROL Preview]** .
 
@@ -129,7 +129,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
    >[!NOTE]
    >
-   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: [Allmän information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: Konfigurera [ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Klicka på fliken för att förhandsgranska meddelandet när meddelandet har konfigurerats **[!UICONTROL Preview]** .
 
