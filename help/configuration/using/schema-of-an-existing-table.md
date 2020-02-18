@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -68,4 +68,4 @@ Om du vill skapa motsvarande schema använder du följande steg:
 
 Med alternativet **Federated Data Access - FDA** får du åtkomst till data som lagras i en extern databas.
 
-Hur scheman ska konfigureras för att få åtkomst till data i en extern databas beskrivs på [den här sidan](../../platform/using/accessing-an-external-database.md#creating-the-data-schema).
+Hur scheman ska konfigureras för att få åtkomst till data i en extern databas beskrivs på [den här sidan](../../platform/using/creating-data-schema.md).
