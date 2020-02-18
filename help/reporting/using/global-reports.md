@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 ---
 
@@ -30,7 +30,7 @@ Om du vill visa rapporter klickar du på deras namn. Följande rapporter är til
 
 ![](assets/s_ncs_user_report_global_list.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >I det här avsnittet visas endast rapporter som är länkade till leveranser.
 
@@ -104,7 +104,7 @@ Följande indikatorer används:
    >
    >Denna indikator gäller endast leveranser i mobilkanaler. Mer information finns i [det här avsnittet](../../delivery/using/sms-channel.md).
 
-   Du kan öppna varje rad i värdetabellen genom att klicka på [+] -symbolen. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
+   Du kan öppna varje rad i värdetabellen genom att klicka på `[+]` symbolen. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
