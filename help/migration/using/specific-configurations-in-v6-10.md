@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 305906f001203f1922266ab370fcc942458f9e8d
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,7 +26,7 @@ Vissa förbättringar har gjorts i Adobe Campaign v7 för att optimera säkerhet
 
 Om du migrerar från en 6.10-plattform och klientkonsolen är äldre än 8104-versionen måste du uppdatera den. Om detta inte görs innan du migrerar uppmanas du att uppdatera klientkonsolen när du återansluter. Klicka **[!UICONTROL Yes]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du avvisar uppdateringen kan du inte ansluta.
 
