@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,11 +26,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 För Windows är migreringsstegen följande:
 
-1. Stoppa tjänster: se [servicestopp](#service-stop),
-1. Säkerhetskopiera databasen: se [Säkerhetskopiera databasen och den aktuella installationen](#back-up-the-database-and-the-current-installation),
-1. Migrera plattformen: se [distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7),
-1. Migrera omdirigeringsservern (IIS): se [Migrating the redirection server (IIS)](#migrating-the-redirection-server--iis-),
-1. Starta om tjänsten: hänvisa till att [starta om tjänsterna](#re-starting-the-services),
+1. Stoppa tjänster: se [Tjänststopp](#service-stop).
+1. Säkerhetskopiera databasen: se [Säkerhetskopiera databasen och den aktuella installationen](#back-up-the-database-and-the-current-installation).
+1. Migrera plattformen: se [Distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7).
+1. Migrera omdirigeringsservern (IIS): se [Migrera omdirigeringsservern (IIS)](#migrating-the-redirection-server--iis-).
+1. Starta om tjänsten: se [Starta om tjänsterna](#re-starting-the-services).
 1. Ta bort och rensa tidigare Adobe Campaign-version: se Ta [bort och rensa tidigare versioner](#deleting-and-cleansing-adobe-campaign-previous-version)av Adobe Campaign.
 
 ## Tjänststopp {#service-stop}
@@ -101,7 +101,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    ren "Neolane v5" "Neolane v5.back"
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Neolane v5.back** och sparar den någon annanstans på en säker plats som inte finns på servern.
 
@@ -141,7 +141,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    ren "Neolane v6" "Neolane v6.back"
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Neolane v6.back** och sparar den någon annanstans på en säker plats som inte är servern.
 
@@ -181,7 +181,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    ren "Adobe Campaign v6" "Adobe Campaign v6.back"
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Adobe Campaign v6.back** och sparar den någon annanstans på en säker plats som inte är servern.
 
@@ -246,7 +246,7 @@ Så här distribuerar du Adobe Campaign:
    copy "Adobe Campaign v6.back"/var/* "Adobe Campaign v7"/var/
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >För det första kommandot ovan ska du inte kopiera filen **config-default.xml** .
 
@@ -268,7 +268,7 @@ Så här distribuerar du Adobe Campaign:
    nlserver config -postupgrade -instance:<instance name>
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Starta inte Adobe Campaign-tjänsterna än: vissa ändringar måste göras i IIS.
 
