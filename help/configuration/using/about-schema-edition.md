@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ Exempel:
 
 Attributet **xpath** pekar på det fält i schemat som du vill indexera.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det är viktigt att komma ihåg att prestandavinster för läsning av SQL-frågor som tillhandahålls av index även har en prestandaförsämring när du skriver poster. Index bör därför användas med försiktighet.
 
@@ -112,7 +112,7 @@ Exempel:
 
 I det här exemplet anger vi vår egen primärnyckel,&quot;houseId&quot;, i stället för att låta attributet **@autopk** skapa en standardprimärnyckel med namnet&quot;id&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
@@ -171,7 +171,7 @@ Exempel på ett XML-fält som också lagras i ett SQL-fält och som har attribut
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Även om de flesta attribut är länkade enligt en 1-1-kardinalitet till ett fysiskt fält i databasen är detta inte fallet för XML-fälten eller de beräknade fälten.\
 >Ett XML-fält sparas i ett PM-fält (&quot;mData&quot;) i tabellen.\
