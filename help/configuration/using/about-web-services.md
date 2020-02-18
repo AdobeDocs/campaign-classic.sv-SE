@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Programservern Adobe Campaign är utformad för öppenhet och enkel integrering 
 
 Adobe Campaign-API:er används i JavaScript i programmet och i SOAP utanför det. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP-metoder](../../configuration/using/implementing-soap-methods.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
 >En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
@@ -154,7 +154,7 @@ Elementet `<soap-env:fault>` i SOAP-meddelandets brödtext används för att fö
 
 Om serviceanropet lyckades eller misslyckades identifieras när `<faultcode>` elementet verifieras.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alla Adobe Campaign-webbtjänster hanterar fel. Vi rekommenderar därför att du testar varje anrop för att kunna hantera returnerade fel.
 
