@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -30,7 +30,7 @@ Här följer de installations- och konfigurationssteg som gäller för hybridvä
 * Installerar paket: se det här [avsnittet](../../installation/using/installing-campaign-standard-packages.md).
 * Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om verktygen för slutprodukter och de effektivaste strategierna i [guiden](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Komma igång och [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
 * Konfigurerar kampanjalternativ: se det här [avsnittet](../../installation/using/configuring-campaign-options.md).
-* Konfigurera en extern databas (FDA): se det här [avsnittet](../../platform/using/accessing-an-external-database.md).
+* Konfigurera en extern databas (FDA): se det här [avsnittet](../../platform/using/about-fda.md).
 * Konfigurerar CRM-anslutningar: se det här [avsnittet](../../platform/using/crm-connectors.md).
 * Om du vill veta mer om principer för användning på mellanleverantörer kan du läsa det här [avsnittet](../../installation/using/mid-sourcing-deployment.md).
 
