@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ Om du vill utöka mottagartabellen för **nms:mottagande** schema gör du så h�
 
    I det här exemplet läggs ett indexerat fält (**följsamhet**) till och **location** -elementet (som redan fanns i **schemat nms:** mottagare **) kompletteras med ett uppräknat fält (** område).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Kom ihåg att lägga till attributet **extendedSchema** för att referera till tilläggsschemat.
 
