@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9662e88578747a519df2e68e5a7d7987cc3ffdd4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -368,7 +368,7 @@ Kontakta din databasadministratör för att ta reda på vilka procedurer som pas
 
 >[!NOTE]
 >
->För Microsoft SQL Server kan du använda underhållsplanen som beskrivs [på den här sidan](http://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>För Microsoft SQL Server kan du använda underhållsplanen som beskrivs [på den här sidan](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan version kontaktar du databasadministratören för att få reda på mer om underhållsrutiner.
 
