@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ Business API är specifikt för varje typ av objekt. De har en effekt på:
 
 I det här avsnittet beskrivs användningen av tjänsterna &quot;Subscribe&quot;, &quot;Unsubscribe&quot; och &quot;SubmitDelivery&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[Kampanjens JSAPI-dokumentation](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
 
