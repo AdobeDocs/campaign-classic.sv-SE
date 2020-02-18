@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 93a19c765e8d3de0fcbc29e27202fcbd2da6d32f
+source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
 
@@ -221,8 +221,8 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Giltiga tecken för en e-postadress.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td> 
-   <td> Tillåter att en maximal period (uttryckt i timmar) anges som för att begränsa antalet utsändning som återställs varje gång synkroniseringsarbetsflödet körs. Se <a href="../../platform/using/accessing-an-external-database.md#cloud-messaging---fda-synchronization">det här avsnittet</a>.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td>
+   <td> Tillåter att en maximal period (uttryckt i timmar) anges som för att begränsa antalet utsändning som återställs varje gång synkroniseringsarbetsflödet körs.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span><br /> </td> 
