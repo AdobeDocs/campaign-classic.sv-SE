@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -148,14 +148,14 @@ Du kan använda guiden Skapa schema för att fylla i alla körningsdatum automat
 
 Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. Mer information finns i [det här avsnittet](../../workflow/using/executing-a-workflow.md#architecture).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Konfigurationen av körningsschemat måste utföras noggrant för att undvika överbelastning av databasen. Återkommande kampanjer duplicerar arbetsflödet eller arbetsflödena i mallen beroende på angivet schema. Implementeringen av alltför ofta förekommande arbetsflöden kan hindra databasens funktion.
 
 1. Ange ett värde i **[!UICONTROL Create in advance for]** fältet för att skapa motsvarande arbetsflöden för den angivna perioden.
 1. Skapa arbetsflödesmallen som ska användas i kampanjer baserade på den här mallen, med målparametrar och en eller flera generiska leveranser.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Det här arbetsflödet måste sparas som en mall för återkommande arbetsflöde. Det gör du genom att redigera arbetsflödesegenskaperna och välja **[!UICONTROL Recurring workflow template]** alternativet på **[!UICONTROL Execution]** fliken.
 
@@ -174,7 +174,7 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
 
    För varje rad kan du lägga till följande alternativ:
 
-   * **[!UICONTROL To be approved]** : gör att du kan framtvinga begäranden om godkännande av leverans i arbetsflödet
+   * **[!UICONTROL To be approved]** : gör att du kan framtvinga begäranden om leveransgodkännande i arbetsflödet.
    * **[!UICONTROL To be started]** : Med kan du starta arbetsflödet när startdatumet har nåtts.
    I **[!UICONTROL Create in advance for]** fältet kan du skapa alla arbetsflöden som täcker den angivna perioden.
 
@@ -211,7 +211,7 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
 
 1. Ange mallens egenskaper.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Operatorn som mallen tilldelas måste ha rätt behörighet för att skapa kampanjer i det valda programmet.
 
@@ -227,7 +227,7 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Periodiska kampanjmallar skapar nya kampanjer enligt det schema som definieras ovan. Den måste därför slutföras noggrant för att undvika att Adobe Campaign-databasen överbelastas.
 
