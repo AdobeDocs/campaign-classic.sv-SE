@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 Kom igång med Adobe Campaign genom att läsa våra intuitiva stegvisa guider.
 
 * [Redigera e-postinnehåll med Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): Lär dig grunderna för att komma igång med integrationen mellan Adobe Campaign och Experience Manager.
-* [Allmänna dataskyddsförordningen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html): Upptäck vad Adobe Campaign Classic erbjuder för att hjälpa er med er GDPR-efterlevnad när ni använder vår tjänst.
+* [Sekretesshantering](https://helpx.adobe.com/campaign/kb/acc-privacy.html): Upptäck vad Adobe Campaign Classic erbjuder för att hjälpa er att uppfylla kraven på sekretess när ni använder vår tjänst.
 * [Integrera dynamiskt innehåll i ett e-postmeddelande](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html): Upptäck grunderna för att komma igång med integrationen mellan Campaign Classic och Target Standard.
 * [Leveranshantering](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): Lär dig mer om koncept och bästa metoder för att leverera samt de verktyg som Adobe Campaign Classic erbjuder för att optimera leveransen.
 * [Bästa praxis](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html): Lär dig mer om de bästa metoderna för leveransdesign och sändning med Adobe Campaign Classic.
