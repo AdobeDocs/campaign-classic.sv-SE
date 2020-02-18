@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
     <ul> 
      <li> <p>Åtkomst: ger den registrerade möjlighet att få en kopia av sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive data som lagrats i Adobe Campaign.</p> </li> 
      <li> <p>Höger att ta bort: ger den registrerade rätt att radera sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive data som lagrats i Adobe Campaign.</p> </li> 
-    </ul> Mer information finns i den <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html">detaljerade dokumentationen</a>.<br /> </td> 
+    </ul> Mer information finns i den <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">detaljerade dokumentationen</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aktiva profiler<br /> </td> 
@@ -119,7 +119,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
   </tr> 
   <tr> 
    <td> Förbättrad push-koppling för Android<br /> </td> 
-   <td> <p>Android-anslutningen har förbättrats med stöd för högre genomströmning. </p> <p>Mer information finns i den <a href="../../delivery/using/setting-up-mobile-app-channel.md#android-connectors">detaljerade dokumentationen</a>.</p> </td> 
+   <td> <p>Android-anslutningen har förbättrats med stöd för högre genomströmning. </p> <p>Mer information finns i den <a href="../../delivery/using/configuring-the-mobile-application.md">detaljerade dokumentationen</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -141,7 +141,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
 * Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket tillåter cirkulära beroenden (rekommenderas inte för stora paket). Mer information finns i avsnittet&quot;Tekniska lösningar&quot;. (NEO-8979)
 * Förbättrade prestanda för stor datainläsning i Teradata och åtgärdade ett problem som hindrade från att visa rätt värde för data som bearbetats i loggen. (NEO-10429)
 * Det går nu att importera målgrupper från Audience Manager med delade filer. Tidigare importerades bara den sista filen i segmentet av det tekniska arbetsflödet importSharedAudience. (NEO-10156)
-* I Windows har standardinstallationssökvägen för Campaign-servern ändrats. När du startar 64-bitarsversionen är standardinstallationssökvägen nu: **C:Program FilesAdobe Campaign Classic v7** i stället för **C:Program Files (x86)AdobeAdobe Campaign Classic v7**
+* I Windows har standardinstallationssökvägen för Campaign-servern ändrats. När du startar 64-bitarsversionen är standardinstallationssökvägen nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** i stället för **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * MX-standardreglerna har förbättrats så att fler domäner inkluderas och genomströmningen optimeras.
 * Tvingade åtkomstbegränsningar för distributionsguidens SOAP-anrop (xtk:serverOptions#SaveOptions).
 * Det föråldrade biblioteket weka.jar har tagits bort och OpenSSL-biblioteket har uppdaterats för säkerhetsoptimering.
