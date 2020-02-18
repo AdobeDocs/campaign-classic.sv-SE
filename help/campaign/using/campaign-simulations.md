@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -78,11 +78,11 @@ Så här skapar du en simulering:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Om det behövs kan du använda ett dynamiskt villkor via **[!UICONTROL Edit the dynamic condition...]** länken
+   Om det behövs kan du använda ett dynamiskt villkor via **[!UICONTROL Edit the dynamic condition...]** länken.
 
    Klicka **[!UICONTROL Save]** för att godkänna konfigurationen.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Endast leveranser vars mål har beräknats beaktas vid beräkning av simuleringar (status: **Target ready** or **Ready to deliver**).
 
@@ -215,13 +215,13 @@ I exemplet nedan vill vi skapa ytterligare en rapporteringsaxel baserat på mott
 
    * **[!UICONTROL Generate target overlap statistics]** Med kan du återställa all överlappande statistik i simuleringsrapporten. Överlappningar är mottagare som används för minst två leveranser inom en simulering.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Om du väljer det här alternativet ökar simuleringskörningstiden avsevärt.
 
    * **[!UICONTROL Keep the simulation work table]** I kan du behålla simuleringsspår.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Det automatiska sparandet av dessa tabeller kräver en betydande lagringskapacitet: kontrollera att databasen är tillräckligt stor.
 
