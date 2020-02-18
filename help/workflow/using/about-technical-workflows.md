@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -47,6 +47,6 @@ Detta avsnitt innehåller information om tekniska arbetsflöden som omfattar fö
 * [Marknadsföringsresurser](../../workflow/using/marketing-resources--mrm-.md)
 * [Social marknadsföring](../../workflow/using/social-marketing.md)
 * [Integrering med Adobe Experience Cloud-lösningar](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Allmänna dataskyddsförordningen (GDPR)](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [Skyddsförordningen för personuppgifter](../../workflow/using/general-data-protection-regulation--gdpr-.md)
 * [Överföring till Mid-sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
 * [Plattform för mellanleverantörer](../../workflow/using/mid-sourcing-platform.md)
