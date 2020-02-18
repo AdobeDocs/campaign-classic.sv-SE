@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -171,7 +171,7 @@ Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverk
 * **userEnum (sträng)**: tar emot det interna namnet på en open-uppräkning. Uppräkningens värden kan definieras av användaren i gränssnittet.
 * **visibleIf (string)**: definierar ett villkor i form av ett XTK-uttryck som visar eller döljer attributet.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Attributet är dolt, men det går fortfarande att komma åt dess data.
 
