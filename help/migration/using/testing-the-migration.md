@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För ut
 
 1. Om migreringen av utvecklingsmiljön lyckas kan du migrera produktionsmiljön.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >På grund av ändringar i datastrukturen går det inte att importera och exportera datapaket mellan en v5-plattform och en v7-plattform.
 
