@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -57,7 +57,7 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
 
 * MTA och MTAChild-processer och minne: modulen **mta** distribuerar meddelanden till sina **underordnade** moduler. Varje **dator** förbereder meddelanden innan den begär ett tillstånd från statistikservern och skickar dem. Mer information finns på den här [sidan](../../installation/using/email-deliverability.md) .
 * TLS-konfiguration: Du bör inte aktivera TLS globalt eftersom det kan minska genomströmningen. I stället bör TLS-inställningar per domän, som hanteras av leveransteamet, justeras efter behov. Mer information finns på den här [sidan](../../installation/using/email-deliverability.md#mx-configuration) .
-* DKIM: 1024b är den rekommenderade krypteringsstorleken enligt Best Practices för att säkerställa att DKIM:s säkerhetsnivå är. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se den här [sidan](../../delivery/using/technical-recommendations.md#domainkeys-identified-mail--dkim-) och den här [tekniken](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+* DKIM: 1024b är den rekommenderade krypteringsstorleken enligt Best Practices för att säkerställa att DKIM:s säkerhetsnivå är. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se den här [sidan](../../delivery/using/technical-recommendations.md#dkim) och den här [tekniken](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
 ## Leveransproblem {#deliverability-issues}
 
@@ -66,7 +66,7 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 * IP-anseende: Om IP-anseendet inte är tillräckligt bra kommer resultatet att påverkas. I modulen **Leveransövervakning** finns olika verktyg för att spåra plattformens leveransprestanda. Se den här [sidan](../../delivery/using/technical-monitoring.md).
 * IP-uppvärmning: IP-uppvärmningen utförs av leveransteamet. Detta innebär att antalet e-postmeddelanden som skickas via nya IP-adresser gradvis ökar under några veckor.
 * Inställningar för IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa e-postmeddelanden helt (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska flödet (ett litet antal IP-adresser i tillhörigheten). Se den här [sidan](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-poststorlek: e-poststorleken spelar en viktig roll när det gäller genomströmning. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som överförts per timme i rapporten [Leveransflöde](../../reporting/using/reports-on-deliveries.md#delivery-throughput) .
+* E-poststorlek: e-poststorleken spelar en viktig roll när det gäller genomströmning. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som överförts per timme i rapporten [Leveransflöde](../../reporting/using/delivery-reports.md#delivery-throughput) .
 * Stort antal ogiltiga mottagare: om det finns ett stort antal ogiltiga mottagare kan det påverka dataflödet. MTA fortsätter att försöka skicka e-post till ogiltiga mottagare. Se till att din databas underhålls väl.
 * Mängd personalisering: Om en leverans fortsätter att vara&quot;personalisering pågår&quot;, kontrollerar du det JavaScript som används i personaliseringsblock.
 
