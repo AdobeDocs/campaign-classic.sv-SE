@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -64,7 +64,7 @@ Om du vill lägga till en hypertextlänk går du till **[!UICONTROL Static eleme
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * Innehållet **[!UICONTROL Label]** i hypertextlänken visas som det kommer att visas på formulärsidan.
-* Adressen **[!UICONTROL URL]** är den önskade adressen, t.ex.: [https://www.adobe.com](https://www.adobe.com) för en webbplats eller [mailto:info@adobe.com](mailto:info@adobe.com) för att skicka ett meddelande.
+* Adressen **[!UICONTROL URL]** är den önskade adressen, t.ex.: [https://www.adobe.com](https://www.adobe.com) för en webbplats eller [info@adobe.com](mailto:info@adobe.com) för att skicka ett meddelande.
 * I **[!UICONTROL Window]** fältet kan du välja visningsläge för länken när det gäller en plats. Du kan välja att öppna länken i ett nytt fönster, det aktuella fönstret eller i ett annat fönster.
 * Du kan lägga till en knappbeskrivning enligt nedan:
 
