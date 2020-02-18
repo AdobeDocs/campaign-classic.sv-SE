@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
       där **$(l)** är leveransens identifierare.
 
-   * I leveransloggtabellerna (**NmsBroadlogXx**) utförs massborttagningar i grupper om 10 000 poster.
-   * I offert-förslagstabellerna (**NmsPropositionXx**) utförs massborttagningar i grupper om 10 000 poster.
-   * I spårningsloggtabellerna (**NmsTrackinglogXx**) utförs massborttagningar i grupper om 5 000 poster.
-   * I leveransfragmenttabellen (**NmsDeliveryPart**) utförs massborttagningar i grupper om 5 000 poster. Tabellen innehåller information om personalisering av de meddelanden som återstår att leverera.
-   * I spegelsidans datagragmenttabell (**NmsMirrorPageInfo**) utförs massborttagningar i grupper om 5 000 poster. Den här tabellen innehåller personaliseringsinformation om alla meddelanden som används för att generera spegelsidor.
-   * I söktabellen med spegelsidor (**NmsMirrorPageSearch**) utförs massborttagningar i grupper om 5 000 poster. Det här registret är ett sökindex som ger åtkomst till anpassningsinformation som lagras i **tabellen NmsMirrorPageInfo** .
-   * I loggtabellen för gruppbearbetning (**XtkJobLog**) utförs massborttagningar i grupper om 5 000 poster. Det här registret innehåller loggen över leveranser som ska tas bort.
+   * I leveransloggtabellerna (**NmsBroadlogXx**) utförs massborttagningar i grupper om 20 000 poster.
+   * I offert-förslagstabellerna (**NmsPropositionXx**) utförs massborttagningar i grupper om 20 000 poster.
+   * I spårningsloggtabellerna (**NmsTrackinglogXx**) utförs massborttagningar i grupper om 20 000 poster.
+   * I leveransfragmenttabellen (**NmsDeliveryPart**) utförs massborttagningar i grupper om 500 000 poster. Tabellen innehåller information om personalisering av de meddelanden som återstår att leverera.
+   * I spegelsidans datagragmenttabell (**NmsMirrorPageInfo**) utförs massborttagningar i grupper om 20 000 poster för utgångna leveransdelar och för avslutade eller annullerade delar. Den här tabellen innehåller personaliseringsinformation om alla meddelanden som används för att generera spegelsidor.
+   * I söktabellen med spegelsidor (**NmsMirrorPageSearch**) utförs massborttagningar i grupper om 20 000 poster. Det här registret är ett sökindex som ger åtkomst till anpassningsinformation som lagras i **tabellen NmsMirrorPageInfo** .
+   * I loggtabellen för gruppbearbetning (**XtkJobLog**) utförs massborttagningar i grupper om 20 000 poster. Det här registret innehåller loggen över leveranser som ska tas bort.
    * I URL-spårningstabellen för leverans (**NmsTrackingUrl**) används följande fråga:
 
       ```
@@ -576,6 +576,26 @@ Den här aktiviteten rensar överblivna simuleringstabeller (som inte längre ä
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### Rensa granskningsspår {#cleanup-of-audit-trail}
+
+Följande fråga används:
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+där **$(tsDate)** är det aktuella serverdatumet från vilket den period som definierats för alternativet **XtkCleanup_AuditTrailPurgeDelay** delats.
+
+### Rensa Nmsaddress {#cleanup-of-nmsaddress}
+
+Följande fråga används:
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+Den här frågan tar bort alla poster som är relaterade till iOS och Android.
+
 ### Statistikuppdatering och lagringsoptimering {#statistics-update}
 
 Med alternativet **XtkCleanup_NoStats** kan du styra beteendet för lagringsoptimeringssteget i rensningsarbetsflödet.
@@ -590,13 +610,15 @@ Om värdet för alternativet är 2 körs lagringsanalysen i detaljerat läge (AN
 
 Den här uppgiften tar bort alla prenumerationer som rör borttagna tjänster eller mobilprogram.
 
-1. Följande fråga används för att återställa listan med sändningsscheman:
+Följande fråga används för att återställa listan med sändningsscheman:
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. Uppgiften återställer sedan namnen på de tabeller som är länkade till **appSubscription** -länken och tar bort dessa tabeller.
+Uppgiften återställer sedan namnen på de tabeller som är länkade till **appSubscription** -länken och tar bort dessa tabeller.
+
+Det här rensningsarbetsflödet tar också bort alla poster där inaktiverat = 1 som inte har uppdaterats sedan den tid som angetts i alternativet **NmsCleanup_AppSubscriptionRcpPurgeDelay** .
 
 ### Rensar sessionsinformation {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ Den här aktiviteten rensar de händelser som tas emot och lagras på körningsi
 ### Rensningsreaktioner {#cleansing-reactions}
 
 Den här aktiviteten rensar de reaktioner ( **NmsRemaMatchRcp**) i vilka hypoteserna har tagits bort.
-
-### Rensa granskningsspår {#cleanup-of-audit-trail}
-
-Följande fråga används:
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-där **$(tsDate)** är det aktuella serverdatumet från vilket den period som definierats för alternativet **XtkCleanup_AuditTrailPurgeDelay** delats.
