@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
 
 ---
 
@@ -116,7 +116,7 @@ Elementen **`<rtevent>`** och **`<batchevent>`** elementen har en uppsättning a
 
 De obligatoriska attributen för elementen **`<rtevent>`** och **`<batchevent>`** är @type och @email. Värdet för @type måste vara samma som det specificerade listvärdet som definieras när körningsinstansen konfigureras. Med det här värdet kan du definiera mallen som ska länkas till innehållet i händelsen under leveransen.
 
-`<rtevent>  configuration example: </rtevent>`
+`<rtevent> configuration example:`
 
 ```
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
