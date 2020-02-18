@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Med Adobe Campaign kan ni länka insamlade webbspårningsdata till en mottagare när de surfar anonymt på er webbplats. När en användare bläddrar på de taggade sidorna på din webbplats samlas den här surfinformationen in, så att när användaren klickar i ett e-postmeddelande som skickas av Adobe Campaign identifieras de och informationen länkas automatiskt till dem.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du konfigurerar anonym spårning på en webbplats kan en stor mängd spårningsloggar samlas in, vilket påverkar databasåtgärden. Var försiktig.\
 >Spårningsloggar sparas i databasen tills spårningsdata rensas. Använd distributionsguiden för att konfigurera tömningsfrekvensen. Mer information finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#purging-data).
