@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Campaign använder en global variabel av typen Nms_DefaultRcpSchema för a
 
 Om du skapar ett nytt formulär kan du visa och redigera data i den externa mottagartabellen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Formulärets namn måste vara identiskt med namnet på schemat som det gäller.
 
