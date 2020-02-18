@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-w
 
 ## Definiera ytterligare inställningar {#defining-additional-settings}
 
-På fliken **[!UICONTROL Settings]** kan du skapa ytterligare inställningar för rapporten: dessa inställningar skickas till URL:en under anropet.
+På fliken **[!UICONTROL Parameters]** kan du skapa ytterligare inställningar för rapporten: dessa inställningar skickas till URL:en under anropet.
 
 Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-web-forms.md).
 
@@ -110,6 +110,14 @@ Så här skapar du en ny inställning:
    Data återställs direkt på entitetsnivå: ctx/ **mottagare/@konto**.
 
    Med det här **[!UICONTROL Variable]** alternativet kan du skapa eller välja en variabel som ska skickas som en parameter i URL-adressen och som kan användas i filtren.
+
+Med **[!UICONTROL Response HTTP headers]** den kan du förhindra clickjacking när du inkluderar rapportens sida på en HTML-sida med iframe. Du kan undvika klickbara objekt genom att välja **[!UICONTROL X-Frame-options header]** beteendet:
+
+* **[!UICONTROL None]**: Rapporten kommer inte att ha någon **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**: Ange som standard för nya rapporter och ompublicerade rapporter. Värdnamnet är samma som rapportens URL.
+* **[!UICONTROL Deny]**: Rapporten kan inte inkluderas på en HTML-sida med iframe.
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Lägga till variabler {#adding-variables}
 
