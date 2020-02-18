@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -64,11 +64,10 @@ Här skapar vi t.ex. ett arbetsflöde för att skicka ett e-postmeddelande eller
 1. Lägg till och konfigurera en **[!UICONTROL Wait]** aktivitet för att mottagarna inte ska få för många leveranser samtidigt.
 1. Lägg till en **[!UICONTROL Split]** aktivitet för att dela upp prenumeranter av iOS- eller Android-mobilprogram.
 
-   Välj en tjänst för vart och ett av operativsystemen. Mer information om hur du skapar tjänster finns på den här [sidan](../../delivery/using/setting-up-mobile-app-channel.md#creating-the-service-and-collecting-subscriptions).
+   Välj en tjänst för vart och ett av operativsystemen. Mer information om hur du skapar tjänster finns på den här [sidan](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
 1. Välj och konfigurera en leverans av mobilapplikationer för vart och ett av operativsystemen.
 
    ![](assets/cross_channel_delivery_5.png)
-
