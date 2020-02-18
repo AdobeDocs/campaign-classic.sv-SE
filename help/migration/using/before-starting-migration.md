@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -77,7 +77,7 @@ I v7 måste **intern** anslutning och **administratörsanslutning** skyddas av e
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det **interna** lösenordet måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier) och [Om behörigheter](../../platform/using/access-management.md#about-permissions) .
 
