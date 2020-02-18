@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -108,6 +108,10 @@ Om du vill stoppa Adobe Campaign-tjänster använder du något av följande komm
       /etc/init.d/nlserver6 stop
       ```
 
+      >[!NOTE]
+      >
+      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): stoppserver **systemctl**
+
    * I Windows:
 
       ```
@@ -127,6 +131,11 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 * Om du har rot- eller administratörsåtkomst:
 
    * I Linux:/etc/init.d/nlserver6 - start
+
+      >[!NOTE]
+      >
+      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+
    * I Windows:net start nlserver6
 
 * I annat fall, på Adobe Campaign-kontot: **nlserver watchdog -svc -noconsole**
