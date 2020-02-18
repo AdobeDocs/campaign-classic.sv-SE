@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 703fa6e5d5e6f1c8c512bd65ebadad724f02ded3
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -59,7 +59,7 @@ Startsidan för Adobe Campaign v5.11 är inte längre tillgänglig.
 
 ## MySQL {#mysql}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >MySQL stöds bara i v7 som huvuddatabasmotor när du migrerar från version 6.02 eller 5.11 med den här motorn.
 
