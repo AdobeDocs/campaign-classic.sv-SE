@@ -169,6 +169,7 @@ Som regel måste du installera motsvarande klientlager på den externa databasen
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
+
 1. I Campaign Classic konfigurerar du ditt externa konto för Snowflake i Campaign Classic. Öppna **[!UICONTROL Explorer]** och visa **[!UICONTROL Administration]** menyn.
 
 1. Öppna **[!UICONTROL Platform]** menyn och klicka på **[!UICONTROL External accounts]**.
