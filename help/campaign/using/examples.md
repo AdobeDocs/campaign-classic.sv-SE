@@ -131,10 +131,10 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 1. På **[!UICONTROL General]** fliken måste du ange:
 
-   * - **[!UICONTROL Targeting dimension]**. Här utförs **datadistributionen** på **mottagarna**.
-   * - **[!UICONTROL Distribution type]**. Du kan välja en **fast storlek** eller en **storlek i procent**.
-   * - **[!UICONTROL Assignment type]**. Välj alternativet **Lokal enhet** .
-   * - **[!UICONTROL Distribution type]**. Här är det **[!UICONTROL Origin (@origin)]** fält som finns i mottagarregistret där du kan identifiera relationen mellan kontakten och den lokala enheten.
+   * \- **[!UICONTROL Targeting dimension]**. Här utförs **datadistributionen** på **mottagarna**.
+   * \- **[!UICONTROL Distribution type]**. Du kan välja en **fast storlek** eller en **storlek i procent**.
+   * \- **[!UICONTROL Assignment type]**. Välj alternativet **Lokal enhet** .
+   * \- **[!UICONTROL Distribution type]**. Här är det **[!UICONTROL Origin (@origin)]** fält som finns i mottagarregistret där du kan identifiera relationen mellan kontakten och den lokala enheten.
    * Fältet **[!UICONTROL Approval storage]** . Välj alternativet **Lokalt godkännande av mottagare** .
 
 1. Ange följande på **[!UICONTROL Breakdown]** fliken:
