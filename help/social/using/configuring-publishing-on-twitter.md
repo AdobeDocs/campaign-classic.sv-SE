@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste 
 
 Börja med att skapa ett eller flera Twitter-konton att skicka tweetar till.
 
-Om du vill skapa ett Twitter-konto går du till [http://twitter.com](http://twitter.com).
+Om du vill skapa ett Twitter-konto går du till [https://twitter.com](https://twitter.com).
 
 ## Skapa ett testkonto på Twitter {#creating-a-test-account-on-twitter}
 
