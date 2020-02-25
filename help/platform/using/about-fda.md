@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -35,11 +35,11 @@ Med FDA-alternativet kan du utöka din datamodell i en tredjepartsdatabas. Den i
 
 Om du vill använda den här funktionen måste du:
 
-1. Ha en extern databas som är kompatibel med Adobe Campaign FDA-modulen. Listan över databassystem och kompatibla versioner finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Användarna måste också ha [nödvändiga behörigheter](#remote-database-access-rights) i Adobe Campaign och i den externa databasen.
-1. [Installera drivrutinerna](#specific-configurations-by-database-type) som motsvarar databasen på Adobe Campaign-servern.
-1. [Skapa och konfigurera ett externt konto](#connecting-to-the-database) som gör att du kan upprätta en anslutning mellan Adobe Campaign och den externa databasen. Mer information om tillgängliga externa konton finns på den här [sidan](../../platform/using/external-accounts.md).
-1. [Skapa schemat](#creating-the-data-schema) för den externa databasen i Adobe Campaign. På så sätt kan du känna igen den externa databasens datastruktur.
-1. Till slut [skapar du en ny målmappning](#defining-data-mapping) från det tidigare skapade schemat, om mottagarna av dina leveranser kommer från den externa databasen. Detta innebär vissa begränsningar, särskilt när det gäller att personalisera leveranserna.
+1. Ha en extern databas som är kompatibel med Adobe Campaign FDA-modulen. Listan över databassystem och kompatibla versioner finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Användarna måste också ha [nödvändiga behörigheter](../../platform/using/remote-database-access-rights.md) i Adobe Campaign och i den externa databasen.
+1. [Installera drivrutinerna](../../platform/using/specific-configuration-database.md) som motsvarar databasen på Adobe Campaign-servern.
+1. [Skapa och konfigurera ett externt konto](../../platform/using/connecting-to-database.md) som gör att du kan upprätta en anslutning mellan Adobe Campaign och den externa databasen. Mer information om tillgängliga externa konton finns på den här [sidan](../../platform/using/external-accounts.md).
+1. [Skapa schemat](../../platform/using/creating-data-schema.md) för den externa databasen i Adobe Campaign. På så sätt kan du känna igen den externa databasens datastruktur.
+1. Till slut [skapar du en ny målmappning](../../platform/using/defining-data-mapping.md) från det tidigare skapade schemat, om mottagarna av dina leveranser kommer från den externa databasen. Detta innebär vissa begränsningar, särskilt när det gäller att personalisera leveranserna.
 
 När dataschemat har skapats kan data bearbetas i Adobe Campaign-arbetsflöden. Mer information finns i [det här avsnittet](../../workflow/using/executing-a-workflow.md#architecture).
 
