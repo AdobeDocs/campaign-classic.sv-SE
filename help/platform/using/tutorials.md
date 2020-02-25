@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -56,4 +56,4 @@ Upptäck huvudfunktionerna i Adobe Campaign genom att titta på våra instruktio
 * [Hantera startvärden och korrektur i ett e-postmeddelande](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html): Lär dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande i Adobe Campaign.
 * [Integrering](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)av Adobe Campaign och Microsoft Dynamics 365: Lär dig hur du länkar och synkroniserar Adobe Campaign och Microsoft Dynamics via CRM-anslutningsfunktionerna.
 
-Förutom dessa korta och detaljerade videoklipp finns det även [kurser](https://training.adobe.com/training/courses.html) och [presentationsvideor](https://www.adobe.com/training/video.html) på vår webbplats.
+Förutom dessa korta och detaljerade videoklipp finns det även [kurser](https://learning.adobe.com/catalog.html) och [presentationsvideor](https://www.adobe.com/training/video.html) på vår webbplats.
