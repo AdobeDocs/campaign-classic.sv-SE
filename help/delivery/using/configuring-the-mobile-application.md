@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 ---
 
@@ -125,7 +125,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
 1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: Integrera [Campaign SDK i mobilapplikationen](#integrating-campaign-sdk-into-the-mobile-application). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
+1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: Integrera [Campaign SDK i mobilapplikationen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
 
    >[!NOTE]
    >
@@ -256,7 +256,7 @@ Så här väljer du vilken koppling du vill använda:
 
 1. Ange en **[!UICONTROL Label]**.
 
-1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: Integrera [Campaign SDK i mobilapplikationen](#integrating-campaign-sdk-into-the-mobile-application).
+1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: Integrera [Campaign SDK i mobilapplikationen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -280,7 +280,7 @@ Som standard sparar Adobe Campaign en nyckel i fältet **[!UICONTROL User identi
 1. Definiera mappningen på **[!UICONTROL Subscription parameters]** fliken.
    >[!CAUTION]
    >
-   >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är desamma som de i mobilprogramkoden. Se avsnittet [Integrera Campaign SDK i mobilappen](#integrating-campaign-sdk-into-the-mobile-application) .
+   >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är desamma som de i mobilprogramkoden. Se avsnittet [Integrera Campaign SDK i mobilappen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
 
 ### Steg 4: Skapa ett multimediemeddelande från Android {#creating-android-delivery}
 
