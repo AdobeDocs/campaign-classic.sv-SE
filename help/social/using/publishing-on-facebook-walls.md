@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -42,7 +42,7 @@ Börja med att skapa ett Facebook-konto och flera sidor: dessa kommer att använ
 
 ## Skapa en testsida på Facebook {#creating-a-test-facebook-page}
 
-Vi rekommenderar att du skapar en privat Facebook-sida för att skicka ut korrektur (mer information finns i [Skicka korrektur](#sending-the-proof)).
+Vi rekommenderar att du skapar en privat Facebook-sida för att skicka ut korrektur (mer information finns i [Skicka korrektur](../../social/using/publishing-on-facebook.md#sending-the-proof)).
 
 1. Logga in på det Facebook-konto som du använder för att administrera dina sidor.
 1. Skapa en ny Facebook-sida.
