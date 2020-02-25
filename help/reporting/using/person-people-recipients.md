@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -32,7 +32,7 @@ Det här exemplet hjälper dig att förstå skillnaden mellan en person/en perso
 
 >[!NOTE]
 >
->Dessa indikatorer används i **[!UICONTROL Tracking indicators]** rapporten. Mer information finns i [Spårningsindikatorer](#tracking-indicators).
+>Dessa indikatorer används i **[!UICONTROL Tracking indicators]** rapporten. Mer information finns i [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Tre länkar läggs till i en leverans. Det skickas till fyra mottagare:
 
