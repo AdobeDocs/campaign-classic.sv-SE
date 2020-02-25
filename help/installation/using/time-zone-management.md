@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c2b5ce9afa45b472f161d6d62517513888e062e
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -103,5 +103,5 @@ Exempel på möjliga värden:
 * Europa/London,
 * America/New_York, osv.
 
-   Dessa värden hämtas från tz-databasen (Olson). Mer information finns på [http://en.wikipedia.org/wiki/List_of_tz_database_time_zones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+   Dessa värden hämtas från tz-databasen (Olson). Mer information finns på [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
