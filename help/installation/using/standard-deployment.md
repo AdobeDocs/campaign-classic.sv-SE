@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -63,7 +63,7 @@ Den här typen av konfiguration kan hantera ett stort antal mottagare (500 000 t
 
 ### Installera programservern {#installing-the-application-server}
 
-Följ stegen för att installera en fristående instans från Adobe Campaign-programservern när du skapar databasen (steg 12). Se [Installera och konfigurera (en dator)](#installing-and-configuring--single-machine-).
+Följ stegen för att installera en fristående instans från Adobe Campaign-programservern när du skapar databasen (steg 12). Se [Installera och konfigurera (en dator)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Eftersom datorn inte är en spårningsserver ska du inte ta hänsyn till integreringen med webbservern.
 
