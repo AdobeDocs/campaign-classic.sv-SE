@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -28,7 +28,7 @@ Ett villkor är ett JavaScript-uttryck som måste utvärderas till true eller fa
 
 ![](assets/edit_test.png)
 
-Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via JavaScript i arbetsflödet finns i [JSAPI-dokumentationen](http://docs.campaign.adobe.com/doc/AC/en/jsapi/p-1.html).
+Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via JavaScript i arbetsflödet finns i [JSAPI-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 Du kan också infoga variabler direkt från den här redigeraren.
 
