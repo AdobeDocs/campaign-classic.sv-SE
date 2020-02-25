@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -39,12 +39,12 @@ Om du vill visa rapporter klickar du på deras namn. Följande rapporter är til
 * **[!UICONTROL Sharing to social networks]** : se [Delning till sociala nätverk](#sharing-to-social-networks).
 * **[!UICONTROL Statistics on sharing activities]** : se [Statistik om delning av aktiviteter](#statistics-on-sharing-activities).
 * **[!UICONTROL Operating systems]** : se [Operativsystem](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : se [URL:er och klicka på strömmar](#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : se [Spårningsindikatorer](#tracking-indicators).
+* **[!UICONTROL URLs and click streams]** : se [URL:er och klicka på strömmar](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** : se [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
 * **[!UICONTROL Non-deliverables and bounces]** : hänvisa till [Ej levererbara produkter och studsar](#non-deliverables-and-bounces).
 * **[!UICONTROL User activities]** : se [Användaraktiviteter](#user-activities).
 * **[!UICONTROL Subscription tracking]** : se [Prenumerationsspårning](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : se [Leveranssammanfattning](#delivery-summary).
+* **[!UICONTROL Delivery summary]** : se [Leveranssammanfattning](../../reporting/using/delivery-reports.md#delivery-summary).
 * **[!UICONTROL Delivery statistics]** : se [Leveransstatistik](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : se [Indelning av öppningar](#breakdown-of-opens).
 
@@ -64,7 +64,7 @@ Den här rapporten visar hur öppningar, klick och transaktioner per halvtimme, 
 
 Följande alternativ är tillgängliga:
 
-* **[!UICONTROL Opens]** : Totalt antal öppnade meddelanden. E-post i textformat tas inte med i beräkningen. Mer information om att spåra öppningar finns i [Spåra öppningar](#tracking-opens-).
+* **[!UICONTROL Opens]** : Totalt antal öppnade meddelanden. E-post i textformat tas inte med i beräkningen. Mer information om att spåra öppningar finns i [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Totalt antal klick på länkar i leveranser. Klickningar på prenumerationslänkar och spegelsidor beaktas inte.
 * **[!UICONTROL Transactions]** : Totalt antal transaktioner efter att ett meddelande har tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
@@ -302,7 +302,7 @@ Följande indikatorer används:
 
 Denna rapport visar hur öppningarna fördelats efter operativsystem, enhet och webbläsare under den aktuella perioden. För varje kategori används två diagram. Den första visar statistik om öppningar på datorer och mobila enheter. Den andra visar statistik som endast gäller öppningar på mobila enheter.
 
-Antalet öppningar motsvarar det totala antalet öppnade meddelanden. E-postmeddelanden i textformat räknas inte. Mer information om att spåra öppnas finns i avsnittet [Spåra öppningar](#tracking-opens-) .
+Antalet öppningar motsvarar det totala antalet öppnade meddelanden. E-postmeddelanden i textformat räknas inte. Mer information om att spåra öppnas finns i avsnittet [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-) .
 
 ![](assets/dlv_useragent_report.png)
 
