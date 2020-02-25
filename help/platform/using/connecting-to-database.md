@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
+source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
 
@@ -26,7 +26,7 @@ Om du vill aktivera en anslutning till den externa databasen måste du ange ansl
 
 >[!CAUTION]
 >
->Adobe Campaign-användaren behöver specifika rättigheter för den externa databasen och Adobe Campaign-programservern för att bearbeta data från en extern databas. Mer information finns i avsnittet [Åtkomstbehörighet](#remote-database-access-rights) för fjärrdatabas.
+>Adobe Campaign-användaren behöver specifika rättigheter för den externa databasen och Adobe Campaign-programservern för att bearbeta data från en extern databas. Mer information finns i avsnittet [Åtkomstbehörighet](../../platform/using/remote-database-access-rights.md) för fjärrdatabas.
 >
 >För att undvika felfunktioner måste operatorer som har åtkomst till delade fjärrdata arbeta från separata blanksteg.
 
@@ -38,7 +38,7 @@ Om du vill aktivera en anslutning till en delad extern databas kan du komma åt 
 1. Klicka på **[!UICONTROL New]** knappen och välj **[!UICONTROL External database]** typ.
 1. Definiera den externa databasens **[!UICONTROL Connection]** parametrar.
 
-   För anslutningar till en **ODBC** -typdatabas måste **[!UICONTROL Server]** fältet innehålla namnet på ODBC-datakällan och inte servernamnet. Dessutom kan vissa ytterligare konfigurationer vara nödvändiga beroende på vilka databaser som används. Se avsnittet [Specifika konfigurationer per databastyp](#specific-configurations-by-database-type) .
+   För anslutningar till en **ODBC** -typdatabas måste **[!UICONTROL Server]** fältet innehålla namnet på ODBC-datakällan och inte servernamnet. Dessutom kan vissa ytterligare konfigurationer vara nödvändiga beroende på vilka databaser som används. Se avsnittet [Specifika konfigurationer per databastyp](../../platform/using/specific-configuration-database.md) .
 
 1. När parametrarna har angetts klickar du på **[!UICONTROL Test the connection]** knappen för att godkänna dem.
 
