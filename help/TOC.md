@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
@@ -584,7 +584,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
    + Ytterligare konfigurationer {#additional-configurations}
       + [Konfigurerar Campaign-server](installation/using/configuring-campaign-server.md)
       + [Ansluta via LDAP](installation/using/connecting-through-ldap.md)
-      + [E-postleverans](installation/using/email-deliverability.md)
+      + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
       + [E-postarkivering](installation/using/email-archiving.md)
       + [Tidszonshantering](installation/using/time-zone-management.md)
       + [Konfigurera SpamAssassin](installation/using/configuring-spamassassin.md)
