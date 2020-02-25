@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ Följande fälttyper är tillgängliga:
 
    >[!NOTE]
    >
-   >På serversidan kan skriptet använda de funktioner som definieras i JSAPI-dokumentationen för [Campaign](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+   >På serversidan kan skriptet använda de funktioner som definieras i JSAPI-dokumentationen för [Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Infoga HTML-innehåll {#inserting-html-content}
 
