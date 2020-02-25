@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -376,7 +376,7 @@ Du kan lägga till ett överföringsfält på en sida. Den här funktionen kan v
 
 Om du vill infoga ett överföringsfält på en formulärsida väljer du **[!UICONTROL Advanced controls > File...]** menyn i verktygsfältet i sidredigeraren.
 
-Som standard lagras de överförda filerna i resursfiler som är tillgängliga via **[!UICONTROL Resources > Online > Public resources]** menyn. Du kan använda ett skript för att ändra det här beteendet. Det här skriptet kan använda de funktioner som definieras i JSAPI-dokumentationen [för](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campaign, inklusive de som rör filhantering.
+Som standard lagras de överförda filerna i resursfiler som är tillgängliga via **[!UICONTROL Resources > Online > Public resources]** menyn. Du kan använda ett skript för att ändra det här beteendet. Det här skriptet kan använda de funktioner som definieras i JSAPI-dokumentationen [för](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign, inklusive de som rör filhantering.
 
 Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfält. Du kan till exempel utöka mottagarschemat för att lägga till en länk till filbaserade resurser.
 
