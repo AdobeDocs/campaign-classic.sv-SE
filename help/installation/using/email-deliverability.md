@@ -15,25 +15,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
 
-# E-postleverans{#email-deliverability}
+# Tekniska e-postkonfigurationer{#email-deliverability}
 
 ## Översikt {#overview}
 
-I följande avsnitt ges en översikt över konfigurationen som krävs för att styra utdata från Adobe Campaign-instanser när meddelanden skickas.
+I följande avsnitt ges en översikt över konfigurationen som krävs för att styra utdata från Adobe Campaign-instanser när e-postmeddelanden skickas.
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Se guiden [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Komma igång som beskriver koncept och bästa praxis för slutbarhet.
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som lagras hos Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Mer information om koncept och bästa metoder för att leverera finns i det här [avsnittet](../../delivery/using/about-deliverability.md).
 
-Alla tekniska rekommendationer om hur man effektivt skickar och tar emot meddelanden från en Adobe Campaign-plattform finns i det här [avsnittet](../../delivery/using/technical-recommendations.md).
+Alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via en Adobe Campaign-plattform finns i det här [avsnittet](../../delivery/using/technical-recommendations.md).
 
 ## Verksamhetsprincip {#operating-principle}
 
