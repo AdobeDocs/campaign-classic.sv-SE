@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -62,7 +62,7 @@ Attrahera kundernas uppmärksamhet och förbättra svarsfrekvensen tack vare den
 
 ### Analys och rapportering {#analysis-and-reporting}
 
-Med Adobe Campaign kan ni övervaka och tolka kundernas beteende genom att gradvis förbättra deras data och profiler. Med rapporterings- och analysverktygen kan ni utnyttja varje ny kampanj, bättre målinrikta era marknadsföringsinitiativ och optimera deras effekt och avkastning på investeringen. Mer information finns på [den här sidan](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports) .
+Med Adobe Campaign kan ni övervaka och tolka kundernas beteende genom att gradvis förbättra deras data och profiler. Med rapporterings- och analysverktygen kan ni utnyttja varje ny kampanj, bättre målinrikta era marknadsföringsinitiativ och optimera deras effekt och avkastning på investeringen. Mer information finns på [den här sidan](../../reporting/using/delivery-reports.md) .
 
 ### Integreringar med Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
