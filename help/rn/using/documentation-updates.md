@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
+source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 
 ---
 
@@ -25,6 +25,20 @@ Läs om alla de senaste uppdateringarna av dokumentationen för Adobe Campaign C
 På den här sidan visas alla nya funktioner och dokumentationsuppdateringar för varje version av Adobe Campaign Classic.
 
 Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Februari 2020 {#february-2020}
+
+Nu finns ett nytt avsnitt med bästa praxis och viktiga rekommendationer när du utformar datamodellen för Adobe Campaign. [Läs mer](../../configuration/using/data-model-best-practices.md)
+
+Avsnittet&quot;E-postleverans&quot; har bytt namn till&quot;Tekniska e-postkonfigurationer&quot;. [Läs mer](../../installation/using/email-deliverability.md)
+
+Vanliga frågor om leveranser har uppdaterats med mer information om felmeddelandet&quot;kvoterna uppfyllts&quot;. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+
+AMP för e-post stöds nu av tre e-postleverantörer (Gmail, Outlook och Mail.ru), och avsnittet som beskriver hur du definierar interaktivt innehåll med AMP har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
+
+Avsnittet för e-postarkivering har klargjorts. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
+
+
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -67,12 +81,6 @@ En begränsning har lagts till när en frågeaktivitet används i ett arbetsflö
 Ett nytt avsnitt har lagts till för att detaljgranska de förbättrade verifieringsreglerna för e-postadresser för att skicka en adress till karantänen om fel uppstår. [Läs mer](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 Parametern från konfigurationsfilen som anger att en instans använder Förbättrad MTA eller inte dokumenteras nu. [Läs mer](../../installation/using/the-server-configuration-file.md#mta)
-
-## Februari 2020 {#february-2020}
-
-AMP för e-post stöds nu av tre e-postleverantörer (Gmail, Outlook och Mail.ru), och avsnittet som beskriver hur du definierar interaktivt innehåll med AMP har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
-
-Avsnittet för e-postarkivering har klargjorts. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## Januari 2020 {#january-2020}
 
