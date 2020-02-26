@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ Som expertanvändare kan du konfigurera spårningsfunktioner i Campaign-instanse
 
 ## Hur konfigurerar man e-postleveransen? {#how-to-configure-email-deliverability-}
 
-Förutom guiden [för att komma igång med](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)slutprodukten kan du läsa avsnittet om konfiguration för e-postleverans för att förstå hur du konfigurerar instansen för att maximera kapaciteten för kampanjleverans.
+Förutom guiden [för att komma igång med](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)slutprodukten kan du läsa avsnittet om konfiguration för e-postleverans för att förstå hur du konfigurerar instansen för att maximera kapaciteten för kampanjleverans.
 
 [Klicka här om du vill veta mer](../../installation/using/email-deliverability.md).
 
