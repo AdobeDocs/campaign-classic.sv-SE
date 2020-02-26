@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -38,7 +38,7 @@ Med en **återkommande leverans** kan du skapa en ny leverans varje gång aktivi
 
 Om du till exempel kör den här typen av aktivitet en gång i månaden får du 12 leveranser efter ett år.
 
-Återkommande leveranser skapas i arbetsflöden via aktiviteten [Återkommande leverans](../../workflow/using/recurring-delivery.md). Ett exempel på den här aktiviteten visas i det här avsnittet: [Skapa en återkommande leverans i ett målarbetsflöde](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Återkommande leveranser skapas i arbetsflöden via aktiviteten [Återkommande leverans](../../workflow/using/recurring-delivery.md). Ett exempel på den här aktiviteten visas i det här avsnittet: [Skapa en återkommande leverans i ett målarbetsflöde](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Kontinuerlig leverans {#continuous-delivery}
 
