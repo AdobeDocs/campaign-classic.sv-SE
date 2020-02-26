@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -159,7 +159,7 @@ Ange de olika fälten:
 
 1. I **[!UICONTROL Status]** fältet anger du den text som ska visas under sidans namn.
 1. Ange publikationens titel i **[!UICONTROL Name]** fältet.
-1. I **[!UICONTROL Video code]** fältet anger du koden för YouTube-videon. För exempelvis http://www.youtube.com/watch?v=abc123456&#39; blir videokoden abc123456.
+1. I **[!UICONTROL Video code]** fältet anger du koden för YouTube-videon. För exempelvis https://www.youtube.com/watch?v=abc123456&#39; blir videokoden abc123456.
 1. I **[!UICONTROL Caption]** fältet anger du den text som ska visas i slutet av publikationen.
 1. Gå till **[!UICONTROL Description]** fältet och ange texten som ska visas under rubriken.
 
