@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Du kan använda redigeraren för digitalt innehåll i Adobe Campaign för att ut
 
 ## Hur kan jag spåra leveranser? {#how-can-i-track-deliveries-}
 
-Du kan spåra leveranser som skickats med Campaign Classic via dedikerade [leveransrapporter](../../reporting/using/reports-on-deliveries.md#delivery-reports) och sedan övervaka leveranserna.
+Du kan spåra leveranser som skickats med Campaign Classic via dedikerade [leveransrapporter](../../reporting/using/delivery-reports.md) och sedan övervaka leveranserna.
 
 Läs mer om spårningshantering i Campaign på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
