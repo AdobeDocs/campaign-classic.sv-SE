@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Lär dig hur du spårar leveranser och förstår mottagarnas beteende [från den
 
 Adobe Campaign innehåller en uppsättning rapporter för att övervaka era leveranser och spåra era meddelanden.
 
-[Klicka här om du vill veta mer om inbyggda rapporter](../../reporting/using/reports-on-deliveries.md#delivery-reports).
+[Klicka här om du vill veta mer om inbyggda rapporter](../../reporting/using/delivery-reports.md).
 
 ### Hur kvalificerar och hanterar Adobe Campaign karantänadresser? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
