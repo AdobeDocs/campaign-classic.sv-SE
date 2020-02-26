@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -71,7 +71,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Mer information finns på [http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html](http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html) .
+>Mer information finns på [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) .
 
 Om databasstrukturen har ändrats, t.ex. under konfiguration (skapa specifika index, skapa SQL-vyer osv.), bör vissa försiktighetsåtgärder vidtas vid migrering. Vissa ändringar kan ha sin grund i inkompatibilitet med migreringsförfarandet. Att skapa SQL-vyer som innehåller **tidsstämpelfält** är till exempel inte kompatibelt med alternativet **usetimestamptz** . Vi rekommenderar därför att du följer rekommendationerna nedan:
 
