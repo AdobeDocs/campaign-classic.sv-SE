@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ---
 
@@ -92,11 +92,11 @@ Från kontrollpanelen för leverans vill du kontrollera de bearbetade meddelande
 Vissa indikatorer eller status kan vara felaktiga eller inte aktuella. Lösningen kan vara:
 
 * Om leveransstatusen är felaktig kontrollerar du att alla nödvändiga godkännanden har gjorts för leveransen eller att arbetsflödena **[!UICONTROL operationMgt]** och **[!UICONTROL deliveryMgt]** körs utan fel. Detta kan också bero på leveransen med en tillhörighet som inte har konfigurerats på den sändande instansen.
-* Om leveransindikatorerna fortfarande är noll och du använder en mellanleverantörskonfiguration bör du kontrollera det **[!UICONTROL Mid-sourcing (delivery counters)]** tekniska arbetsflödet. Starta om det inte har status **[!UICONTROL Started]**. Sedan kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
-* Om leveransräknaren inte stämmer överens med leveransräknaren kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
+* Om leveransindikatorerna fortfarande är noll och du använder en mellanleverantörskonfiguration bör du kontrollera det **[!UICONTROL Mid-sourcing (delivery counters)]** tekniska arbetsflödet. Starta om det inte har status **[!UICONTROL Started]**. Sedan kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Om leveransräknaren inte stämmer överens med leveransräknaren kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
 * Om leveransräknaren inte är uppdaterad för medelstora distributioner kontrollerar du att det tekniska arbetsflödet körs. **[!UICONTROL Mid-Sourcing (Delivery counters)]** Mer information finns på den här [sidan](../../installation/using/mid-sourcing-deployment.md).
 
-Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. Mer information finns i det här [avsnittet](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports).
+Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. Mer information finns i det här [avsnittet](../../reporting/using/delivery-reports.md).
 
 ## Prestandaproblem {#performance-issues}
 
@@ -118,7 +118,7 @@ När du har klickat på **[!UICONTROL Send]** knappen verkar leveransen ta läng
 * Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Mer information om riktlinjer för innehåll finns i Adobe Campaign [Delivery best practices](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) .
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
-   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/technical-recommendations.md#quota-met). Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
    * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har stött på fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed riskerar att bli svartlistad.
 
 * Ett systemproblem kan förhindra servrar från att samverka: detta kan göra hela sändningsprocessen långsammare. Kontrollera servrarna för att se till att det inte finns några minnes- eller resursproblem som kan påverka Campaign när personaliseringsdata hämtas till exempel.
