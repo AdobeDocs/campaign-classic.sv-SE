@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ Med en guide kan du definiera aktivitetens frekvens och giltighetsperiod. Konfig
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-Användning av en schemaläggaraktivitet kan leda till att ett arbetsflöde körs flera gånger samtidigt. Du kan till exempel ha en schemaläggare som utlöser arbetsflödeskörningen varje timme, men ibland tar körningen av hela arbetsflödet mer än en timme. Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar att arbetsflöden körs samtidigt finns på [den här sidan](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution).
+Användning av en schemaläggaraktivitet kan leda till att ett arbetsflöde körs flera gånger samtidigt. Du kan till exempel ha en schemaläggare som utlöser arbetsflödeskörningen varje timme, men ibland tar körningen av hela arbetsflödet mer än en timme. Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar att arbetsflöden körs samtidigt finns på [den här sidan](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 Observera också att övergången kan aktiveras flera timmar senare om arbetsflödet utförde en långvarig uppgift, till exempel en import, eller om wfserver-modulen stoppades en tid. I det här fallet kan det vara nödvändigt att begränsa körningen av den uppgift som har aktiverats av schemaläggaren till ett visst tidsintervall.
