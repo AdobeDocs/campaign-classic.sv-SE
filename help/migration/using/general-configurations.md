@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ Om du får ett **ORA 01805** -fel under efteruppgraderingen innebär det att Ora
 
 1. Kontrollera att tidszonsfilerna är identiska på båda servrarna.
 
-Mer information finns på: [https://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm](http://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm).
+Mer information finns på: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 En felpassning av tidszonen mellan klienten och servern kan också orsaka vissa förluster. Därför rekommenderar vi att du använder samma version av Oracle-biblioteket på klient- och serversidan. Båda tidszonerna måste vara desamma.
 
