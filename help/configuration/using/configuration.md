@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
 Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;** värdet som finns i kommandoetiketten.
 
-Den valfria förekomsten av taggen med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. **`<soapcall>`** Mer information om SOAP API finns i JSAPI-dokumentationen för [Campaign](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+Den valfria förekomsten av taggen med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. **`<soapcall>`** Mer information om SOAP API finns i JSAPI-dokumentationen för [Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 Formulärkontexten kan uppdateras vid initiering från **`<enter>`** -taggen. Mer information om den här taggen finns i dokumentationen om indataformulär.
 
@@ -269,7 +269,7 @@ Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
 Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;** värdet som finns i kommandoetiketten.
 
-Den valfria förekomsten av taggen med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. **`<soapcall>`** Mer information om SOAP-API:er finns i JSAPI-dokumentationen för [Campaign](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+Den valfria förekomsten av taggen med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. **`<soapcall>`** Mer information om SOAP-API:er finns i JSAPI-dokumentationen för [Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 Formulärkontexten kan uppdateras vid initieringen via **`<enter>`** -taggen. Mer information om den här taggen finns i dokumentationen till indataformuläret.
 
