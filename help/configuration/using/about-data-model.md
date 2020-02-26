@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: b7fa53a0463c5752a5fe4d11262dbf7b8ad77144
 
 ---
 
@@ -28,7 +28,7 @@ Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICO
 
 ![](assets/data-model_documentation-tab.png)
 
-Mer information om standardbeskrivningen för Campaign Classic-datamodellen finns i det här [dokumentet](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
+Mer information om standardbeskrivningen för datamodellen i Campaign Classic finns i det här [dokumentet](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
 
 Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i det här [avsnittet](../../configuration/using/about-schema-reference.md).
 
