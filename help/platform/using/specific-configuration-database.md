@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
 
 ---
 
@@ -165,10 +165,10 @@ Som regel måste du installera motsvarande klientlager på den externa databasen
 
 1. När du har hämtat och installerat ODBC-drivrutinerna måste du starta om Campaign Classic. Om du vill göra det kör du följande kommando:
 
-     ```
-    /etc/init.d/nlserver6 stop
-    /etc/init.d/nlserver6 start
-     ```
+   ```
+   /etc/init.d/nlserver6 stop
+   /etc/init.d/nlserver6 start
+   ```
 
 1. I Campaign Classic konfigurerar du ditt externa konto för Snowflake i Campaign Classic. Öppna **[!UICONTROL Explorer]** och visa **[!UICONTROL Administration]** menyn.
 
