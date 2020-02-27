@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
+source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
 
@@ -114,7 +114,9 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
 
 1. I avsnittet Initieringsskript på fliken Avancerat i aktiviteten Dela definierar du ett JS-villkor. JS-villkoret väljer den slumpmässiga samplingsprocenten för den första övergången som kommer från aktiviteten Dela och uppdaterar den till ett värde som anges av instansvariabeln som skapades tidigare.
 
-   ```activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;```
+   ```
+   activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
+   ```
 
    ![](assets/js_ex3.png)
 
@@ -128,29 +130,29 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
 
 1. Ta arbetsflödet från föregående exempel och ersätt skriptet för **JavaScript-koden** med följande skript:
 
-    ```
-    instance.vars.foo = "bar1"
-    vars.foo = "bar2"
-    task.vars.foo = "bar3"
-    ```
+   ```
+   instance.vars.foo = "bar1"
+   vars.foo = "bar2"
+   task.vars.foo = "bar3"
+   ```
 
 1. Lägg till följande skript i initieringsskriptet för aktiviteten **End** :
 
-    ```
-    logInfo("instance.vars.foo = " + instance.vars.foo)
-    logInfo("vars.foo = " + vars.foo)
-    logInfo("task.vars.foo = " + task.vars.foo)
-    ```
+   ```
+   logInfo("instance.vars.foo = " + instance.vars.foo)
+   logInfo("vars.foo = " + vars.foo)
+   logInfo("task.vars.foo = " + task.vars.foo)
+   ```
 
 1. Starta arbetsflödet och titta sedan på loggen.
 
-    ```
-    Workflow finished
-    task.vars.foo = undefined
-    vars.foo = bar2
-    instance.vars.foo = bar1
-    Starting workflow (operator 'admin')
-    ```
+   ```
+   Workflow finished
+   task.vars.foo = undefined
+   vars.foo = bar2
+   instance.vars.foo = bar1
+   Starting workflow (operator 'admin')
+   ```
 
 I det här exemplet visas att aktiviteten efter **JavaScript-kod** får åtkomst till instansvariablerna och händelsevariablerna, men aktivitetsvariablerna är inte tillgängliga utifrån (&#39;undefined&#39;).
 
