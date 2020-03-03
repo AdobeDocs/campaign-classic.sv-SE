@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
+source-git-commit: 7082ff9c8ce18f12734831bc4f00c9a1b71376b3
 
 ---
 
@@ -25,6 +25,10 @@ Läs om alla de senaste uppdateringarna av dokumentationen för Adobe Campaign C
 På den här sidan visas alla nya funktioner och dokumentationsuppdateringar för varje version av Adobe Campaign Classic.
 
 Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Mars 2020 {#march-2020}
+
+Sidan med bästa praxis för datamodeller har uppdaterats med nya avsnitt, bland annat [Sekvenser](../../configuration/using/data-model-best-practices.md#sequences), [Prestanda](../../configuration/using/data-model-best-practices.md#performance) och [Stora tabeller](../../configuration/using/data-model-best-practices.md#large-tables). [Läs mer](../../configuration/using/data-model-best-practices.md)
 
 ## Februari 2020 {#february-2020}
 
