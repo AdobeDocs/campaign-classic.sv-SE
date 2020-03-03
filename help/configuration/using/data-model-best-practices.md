@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8bfeaecc8a4832cac96f479ea1a0b11cd73c1e8
+source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
 
 ---
 
@@ -68,7 +68,7 @@ Om du vill avgöra om ett attribut behövs eller inte i Adobe Campaign kan du fr
 
 Om du inte hamnar i något av dessa behöver du troligen inte det här attributet i Adobe Campaign.
 
-## Val av datatyper {#data-types}
+### Val av datatyper {#data-types}
 
 Följ de bästa sätten nedan för att konfigurera data i Adobe Campaign för att säkerställa att systemet är korrekt arkitektur och prestanda.
 
@@ -78,6 +78,28 @@ Följ de bästa sätten nedan för att konfigurera data i Adobe Campaign för at
 * Du kan undvika att skapa för många fält genom att använda **XML** -typen. Men det tar också upp diskutrymme när en CLOB-kolumn används i databasen. Det kan även leda till komplexa SQL-frågor och kan påverka prestanda.
 * Längden på ett **strängfält** ska alltid definieras med kolumnen. Som standard är maxlängden i Adobe Campaign 255, men Adobe rekommenderar att du håller fältet kortare om du redan vet att storleken inte kommer att överskrida en kortare längd.
 * Det går bra att ha ett fält som är kortare i Adobe Campaign än i källsystemet om du är säker på att storleken i källsystemet var för stor och inte skulle nås. Det kan betyda en kortare sträng eller ett mindre heltal i Adobe Campaign.
+
+### Val av fält {#choice-of-fields}
+
+Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller personalisera. Det innebär att om ett fält inte används för att skicka ett anpassat e-postmeddelande eller används som ett kriterium i en fråga tar det upp diskutrymme medan det är oanvändbart.
+
+För hybridinstanser och lokala instanser täcker FDA (Federated Data Access, en valfri funktion som ger åtkomst till externa data) behovet av att lägga till ett fält&quot;direkt&quot; under en kampanjprocess. Du behöver inte importera allt om du har FDA. Mer information finns i [Om åtkomst till](../../platform/using/about-fda.md)federerade data.
+
+### Val av nycklar {#choice-of-keys}
+
+Förutom den **autopk** som är definierad som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
+
+Effektiva nycklar är viktiga för prestanda. Numeriska datatyper bör alltid vara att föredra som nycklar för tabeller.
+
+För SQLServer-databasen kan du använda &quot;grupperat index&quot; om prestanda behövs. Eftersom Adobe inte hanterar detta måste du skapa det i SQL.
+
+### Dedikerade tabellutrymmen {#dedicated-tablespaces}
+
+Med tabellutrymmesattributet i schemat kan du ange ett dedikerat tabellutrymme för en tabell.
+
+Med installationsguiden kan du lagra objekt efter typ (data, tillfällig och indexerad).
+
+Dedikerade tabellutrymmen är bättre för partitionering, säkerhetsregler och ger smidig och flexibel administration, bättre optimering och prestanda.
 
 ## Identifierare {#identifiers}
 
@@ -201,6 +223,8 @@ Det finns några lösningar som minimerar behovet av arkiv i Adobe Campaign:
 * Exportera data till ett datalager utanför Adobe Campaign.
 * Generera aggregerade värden som använder mindre utrymme samtidigt som de är tillräckliga för er marknadsföringspraxis. Du behöver till exempel inte den fullständiga kundtransaktionshistoriken i Adobe Campaign för att hålla reda på de senaste köpen.
 
+Du kan deklarera attributet &quot;deleteStatus&quot; i ett schema. Det är effektivare att markera posten som borttagen och sedan skjuta upp borttagningen i rensningsaktiviteten.
+
 ## Prestanda {#performance}
 
 Följ de bästa metoderna nedan för att få bättre prestanda när som helst.
@@ -222,9 +246,11 @@ Följ de bästa metoderna nedan för att få bättre prestanda när som helst.
 * Det är bra att ha alla viktiga fält i en tabell eftersom det gör det enklare för användarna att skapa frågor. Ibland kan det också vara bra för prestanda att duplicera vissa fält mellan tabeller om det kan undvika en koppling.
 * Vissa inbyggda funktioner kan inte referera till 1:N-relationer, t.ex. offertviktningsformel och Leveranser.
 
-### Stora tabeller {#large-tables}
+## Stora tabeller {#large-tables}
 
-Nedan följer några metodtips som bör följas när du utformar din datamodell med stora tabeller och komplexa kopplingar.
+Adobe Campaign använder databasmotorer från tredje part. Beroende på vilken provider som används kan optimering av prestanda för större tabeller kräva en viss design.
+
+Nedan följer några vanliga metodtips som bör följas när du utformar din datamodell med stora tabeller och komplexa kopplingar.
 
 * När du använder ytterligare anpassade mottagartabeller måste du ha en dedikerad loggtabell för varje leveransmappning.
 * Minska antalet kolumner, särskilt genom att identifiera de som inte används.
@@ -232,4 +258,36 @@ Nedan följer några metodtips som bör följas när du utformar din datamodell 
 * Använd alltid numeriska data i stället för teckensträngar för kopplingsnycklar.
 * Minska så mycket du kan av djupet för loggbevarande. Om du behöver mer detaljerad historik kan du sammanställa beräkningar och/eller hantera anpassade loggtabeller för att lagra större historik.
 
-Mer detaljerad information om hur du optimerar databasdesignen för större volymer finns i [Klassisk datamodell](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)för Campaign.
+### Tabellstorlek {#size-of-tables}
+
+Tabellstorleken är en kombination av antalet poster och antalet kolumner per post. Båda kan påverka prestanda för frågor.
+
+* En **tabell i liten storlek** påminner om leveranstabellen.
+* En tabell med **medelstor storlek** är samma som storleken på mottagartabellen. Det finns en post per kund.
+* En **stor** tabell påminner om den allmänna loggtabellen. Det finns många poster per kund.
+Om din databas till exempel innehåller 10 miljoner mottagare innehåller den stora loggtabellen cirka 100 till 200 miljoner meddelanden och leveranstabellen innehåller några tusen poster.
+
+I PostgreSQL får en rad inte överskrida 8 kB för att undvika [TOAST](https://wiki.postgresql.org/wiki/TOAST) -mekanismen. Försök därför att så mycket som möjligt minska antalet kolumner och storleken på varje rad för att behålla optimala prestanda för systemet (minne och processor).
+
+Antalet rader påverkar även prestandan. Adobe Campaign-databasen är inte utformad för att lagra historiska data som inte aktivt används för målinriktning eller personalisering - det här är en operativ databas.
+
+Om du vill förhindra prestandaproblem som har att göra med det stora antalet rader sparar du bara de nödvändiga posterna i databasen. Alla andra poster ska exporteras till ett datalager från tredje part och tas bort från Adobe Campaigns databas.
+
+Här följer några tips om tabellstorlek:
+
+* Designa stora tabeller med färre fält och mer numeriska data.
+* Använd inte en stor kolumntyp (t.ex.: Int64) för att lagra små tal som booleska värden.
+* Ta bort oanvända kolumner från tabelldefinitionen.
+* Spara inte historiska eller inaktiva data i Adobe Campaign-databasen (export och rensning).
+
+Här är ett exempel:
+
+![](assets/transaction-table-example.png)
+
+I det här exemplet:
+* Tabellerna *Transaktioner* och *Transaktionsobjekt* är stora: över 10 miljoner.
+* Tabellerna *Product* och *Store* är mindre: mindre än 10 000.
+* Produktetiketten och referensen har placerats i *produkttabellen* .
+* Tabellen *Transaktionsobjekt* har bara en länk till tabellen *Produkt* , som är numerisk.
+
+<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
