@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: a047e4af6e31c54fa2444943a18da5913e115c09
 
 ---
 
@@ -180,6 +180,6 @@ Om du vill skicka in webbtjänsten måste du kontakta den Adobe Campaign-server 
 
 Server-URL:en är följande:
 
-[https://`<server>`/nl/jsp/soaprouter.jsp`](https://XXXX//nl/jsp/soaprouter.jsp)
+https://serverName/nl/jsp/soaprouter.jsp
 
 Med **`<server>`** Adobe Campaign-programservern (**webbservern** på webben).
