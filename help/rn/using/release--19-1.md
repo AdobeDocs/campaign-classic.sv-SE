@@ -15,20 +15,41 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-## Version 19.1.6 - build 9035 {#release-19-1-6-build-9035}
+[Bygg uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td><img src="assets/green3.png"/><strong>Allmän tillgänglighet</strong></td>
+   <td><img src="assets/blue3.png"/><strong>Releasedatan</strong></td> 
+   <td><img src="assets/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
+   <td><img src="assets/red3.png"/><strong>Föråldrat</strong></td> 
+  </tr> 
+   <tr> 
+   <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
+   <td>Bygg validerat av Adobe. Väntar på korrektur av produktionen.<br> </td>
+   <td>Nyare bygge tillgänglig med felkorrigeringar. Uppdatering krävs.<br> </td>
+   <td>Innehåller kända regressioner. Uppdatering är obligatorisk.<br> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+Den **sista stabila versionen** är 9032 (205c981c3). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## ![](assets/orange_2.png) Version 19.1.6 - build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
 >Den här versionen är endast avsedd för lokala installationer. För hybriddistributioner fortsätter värdbaserade instanser att köra 9032-versionen. Uppgradera inte din marknadsinstans till 9035-versionen eftersom den inte är kompatibel med 9032.
 
-3 oktober 2019
+_3 oktober 2019_
 
 **Förbättringar**
 
@@ -38,13 +59,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
 * Ett problem som förhindrade att SQL Data Management-aktiviteten användes fullt ut har åtgärdats (namngiven SQL Data Management-behörighet saknas).
 
-## Version 19.1.5 - build 9033{#release-19-1-5-build-9033}
+## ![](assets/orange_2.png) Version 19.1.5 - build 9033{#release-19-1-5-build-9033}
 
-13 augusti 2019
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+_13 augusti 2019_
 
 **Förbättringar**
 
@@ -57,43 +74,31 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-**17 december 2019**: new build (9032-9d34fb17e) which includes the following fix:
+![](assets/green_2.png) 5 **mars 2020**: new build (9032-...205c981c3) which includes the following fix:
+
+* Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
+
+![](assets/orange_2.png) 17 **december 2019**: new build (9032-...9d34fb17e) which includes the following fix:
 
 * Korrigerade ett spårningsproblem i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter).
 (NEO-19595)
 
-**11 december 2019**: new build (9032-e28b428b7) which includes the following fix:
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+![](assets/orange_2.png) 11 **december 2019**: new build (9032-...e28b428b7) som innehåller följande fix:
 
 * Ett prestandaproblem har korrigerats när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-**20 november 2019**: new build (9032-3468c7bb5) which includes the following fixes:
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+![](assets/orange_2.png) 20 **november 2019**: new build (9032-...3468c7bb5) which includes the following fixes:
 
 * Ett inloggningsproblem via IMS-autentisering har korrigerats. (NEO-17312)
 * Korrigerade ett problem när kumulativa rapporter för flera leveranser visades. (NEO-18165)
 * Korrigerade ett problem som kunde blockera eller få webbservern att krascha.
 
-**19 september 2019**: new build (9032-cee805c93) which includes the following fixes:
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+![](assets/orange_2.png) 19 **september 2019**: new build (9032-...cee805c93) som innehåller följande korrigeringar:
 
 * Ett problem har korrigerats när CRM Connector för Salesforce användes. (NEO-17712)
 * Korrigerade ett indexproblem som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
 
-**13 augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+![](assets/orange_2.png) 13 **augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
 
 * Korrigerade ett problem med schemaläggaraktiviteten som genererade oönskade felmeddelanden under guidekonfigurationen. Återställer uppdatering från NEO-11662. (NEO-17097)
 * Korrigerade en regression orsakad av NEO-12727 som kunde leda till att arbetsflöden stoppades när en testaktivitet kördes två gånger. (NEO-16835)
@@ -101,13 +106,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Korrigerade ett problem med DKIM-nyckeln som inte längre var inbäddad i e-postmeddelanden, vilket orsakade leveransproblem. (NEO-16804)
 * Åtgärdade olika problem med arbetsflödesplanering. Arbetsflödena har schemalagts att köras en gång om dagen utan att schemaläggarens konfiguration har beaktats. (NEO-16619, NEO-16426)
 
-## Version 19.1.2 - build 9029{#release-19-1-2-build-9029}
+## ![](assets/orange_2.png) Version 19.1.2 - build 9029{#release-19-1-2-build-9029}
 
-21 juni 2019
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+_21 juni 2019_
 
 **Säkerhetsförbättringar**
 
@@ -121,13 +122,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Nu kan vi ta bort dummy-poster som skapats i Microsoft Dynamics under importarbetsflödet.
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 
-## Version 19.1 - build 9026{#release-19-1-build-9026}
+## ![](assets/orange_2.png) Version 19.1 - build 9026{#release-19-1-build-9026}
 
-30 maj 2019
-
->[!CAUTION]
->
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+_30 maj 2019_
 
 **Vad är nytt?**
 
