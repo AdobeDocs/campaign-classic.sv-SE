@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -26,22 +26,22 @@ source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
  <tbody> 
   <tr> 
    <td><img src="assets/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasedatum</strong></td> 
+   <td><img src="assets/blue3.png"/><strong>Releasedatan</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
    <td><img src="assets/red3.png"/><strong>Föråldrat</strong></td> 
   </tr> 
    <tr> 
-   <td>Senaste stabila bygge tillgänglig. <br>Bygg validerat i produktion. </td>
-   <td>Bygg validerat av Adobe. <br>Väntar på korrektur av produktionen. </td>
-   <td>Nyare bygge tillgänglig med felkorrigeringar. <br>Uppdatering krävs. </td>
-   <td>Innehåller kända regressioner. <br>Uppdatering är obligatorisk. </td>
+   <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
+   <td>Bygg validerat av Adobe. Väntar på korrektur av produktionen.<br> </td>
+   <td>Nyare bygge tillgänglig med felkorrigeringar. Uppdatering krävs.<br> </td>
+   <td>Innehåller kända regressioner. Uppdatering är obligatorisk.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032) för att visa den **senaste stabila versionen** (GA).
+Den **sista stabila versionen** är 9032 (205c981c3). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) Version 20.1 - build 9122 {#release-20-1-build-XXXX}
+## ![](assets/blue_2.png) Version 20.1 - build 9122 {#release-20-1-build-9122}
 
 _17 februari 2020_
 
