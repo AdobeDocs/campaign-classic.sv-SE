@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -28,22 +28,22 @@ source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
  <tbody> 
   <tr> 
    <td><img src="assets/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasedatum</strong></td> 
+   <td><img src="assets/blue3.png"/><strong>Releasedatan</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
    <td><img src="assets/red3.png"/><strong>Föråldrat</strong></td> 
   </tr> 
    <tr> 
-   <td>Senaste stabila bygge tillgänglig. <br>Bygg validerat i produktion. </td>
-   <td>Bygg validerat av Adobe. <br>Väntar på korrektur av produktionen. </td>
-   <td>Nyare bygge tillgänglig med felkorrigeringar. <br>Uppdatering krävs. </td>
-   <td>Innehåller kända regressioner. <br>Uppdatering är obligatorisk. </td>
+   <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
+   <td>Bygg validerat av Adobe. Väntar på korrektur av produktionen.<br> </td>
+   <td>Nyare bygge tillgänglig med felkorrigeringar. Uppdatering krävs.<br> </td>
+   <td>Innehåller kända regressioner. Uppdatering är obligatorisk.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032) för att visa den **senaste stabila versionen** (GA).
+Den **sista stabila versionen** är 9032 (205c981c3). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue_2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -52,7 +52,7 @@ _7 februari 2020_
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 * Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
 
-## ![](assets/orange-2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/orange_2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
@@ -174,7 +174,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Korrigerade ett kodningsproblem för det kinesiska avsändarnamnet. (NEO-13837)
 * Korrigerade ett fel som kunde uppstå när undersökningssvarsdata från Utforskaren visades. (NEO-14590)
 * Korrigerade ett problem som kunde leda till diskrepans mellan leveransloggklassificeringen och karantäntabellen. (NEO-16547)
-* Ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden har korrigerats. (NEO-16804)
+* Korrigerade ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden. (NEO-16804)
 * Korrigerade ett problem som visade fel felkod när en ogiltig sessionstoken användes i kontexten för API-anrop för att utlösa händelser. Felkoden var HTTP 200 OK i stället för HTTP 403 Forbidden. (NEO-16826)
 * Ett problem som orsakade att leveransrapporter visades via webbåtkomst har korrigerats. (NEO-17015)
 * Ett IMS-autentiseringsproblem när du loggade in på Adobe Campaign har korrigerats. (NEO-17312)
