@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
 
 ---
 
 
 # Om kampanjtypologier{#about-campaign-typologies}
 
-Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera och övervaka utskick. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy.
+Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera och övervaka utskick. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.
 
 >[!NOTE]
 >
@@ -61,8 +61,8 @@ Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
 
    Typologier nås via **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** -noden.
 
-1. Konfigurera leveransen för att använda den typologi du skapade. Mer information finns i [det här avsnittet](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
-1. Testa och kontrollera beteendet med kampanjsimuleringar. Mer information om kampanjsimuleringar finns i [det här avsnittet](../../campaign/using/campaign-simulations.md).
+1. Konfigurera leveransen för att använda den typologi du skapade. For more on this, refer to [this section](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Testa och kontrollera beteendet med kampanjsimuleringar. For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
 Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka undantag. Exempel på användningsområden för typologiregler för tryck finns på [den här sidan](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
