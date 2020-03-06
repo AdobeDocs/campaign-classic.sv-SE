@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
 
@@ -44,10 +44,6 @@ Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e
 ## Hur skapar man e-postinnehåll med Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
 [Designa ett e-postmeddelande med Campaign Digital Content Editor](../../web/using/use-case--creating-an-email-delivery.md): Lär dig hur du använder Campaign DCE för att utforma ett e-postmeddelande med hjälp av ett exempel.
-
-## Hur lägger jag till en streckkod i ett e-postmeddelande? {#how-can-i-add-a-barcode-in-an-email-}
-
-Upptäck hur enkelt det är att [lägga till en streckkod](../../delivery/using/inserting-a-barcode-in-an-email.md) i ett personligt e-postmeddelande.
 
 ## Hur skapar jag ett prenumerationsbaserat nyhetsbrev i Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
