@@ -640,7 +640,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Stackspårning i Linux](production/using/stack-trace-in-linux.md)
       + [Kodning av Oracle-databasen](production/using/encoding-of-the-oracle-database.md)
       + [Konsoluppdatering](production/using/console-update.md)
-      + [Lösenordet har försvunnit](production/using/lost-password.md)
+      + [Lösenordet har gått förlorat](production/using/lost-password.md)
       + [JSP-beteende](production/using/jsp-behavior.md)
 + Konfigurera Campaign Classic {#configuring-campaign-classic}
    + Datamodell {#data-model}
