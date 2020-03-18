@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
 
 ---
 
@@ -645,9 +645,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 + Konfigurera Campaign Classic {#configuring-campaign-classic}
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
-      + [Använda standardmottagartabellen](configuration/using/default-recipient-table.md)
-      + [Utöka datamodellen](configuration/using/extending-data-model.md)
-      + [Använda en anpassad mottagartabell](configuration/using/custom-recipient-table.md)
+      + [Beskrivning av datamodell](configuration/using/data-model-description.md)
       + [God praxis](configuration/using/data-model-best-practices.md)
    + Schemareferens {#schema-reference}
       + [Om schemareferens](configuration/using/about-schema-reference.md)
