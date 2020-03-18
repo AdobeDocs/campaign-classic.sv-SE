@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
+source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ---
 
@@ -129,7 +129,7 @@ I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet 
 I motsats till hårda fel skickar inte mjuka fel en adress direkt till karantän, utan i stället ökar de en felräknare.
 
 * När felräknaren når gränsvärdet sätts adressen i karantän.
-* I standardkonfigurationen anges tröskelvärdet till fem fel, där två fel är viktiga om de inträffar med minst 24 timmars mellanrum. Adressen sätts i karantän vid det sjätte felet.
+* I standardkonfigurationen anges tröskelvärdet till fem fel, där två fel är viktiga om de inträffar med minst 24 timmars mellanrum. Adressen sätts i karantän vid det femte felet.
 * Tröskelvärdet för felräknare kan ändras. Mer information finns i [Försök igen efter ett tillfälligt leveransfel](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **Giltig** och tas bort från listan över karantäner i **databasrensningsarbetsflödet** .
@@ -236,7 +236,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
   <tr> 
    <td> Avvisning av APNS-meddelande: alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Felavvisande orsak kommer att finnas i felmeddelandet<br /> </td> 
+   <td> Felavvisandeorsaken kommer att finnas i felmeddelandet<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
@@ -432,13 +432,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 
    ![](assets/tech_quarant_error_regex.png)
 
-   **Som standard extraherar regex** tillståndet: enligt definitionen i **tillägg B** i **SMPP 3.4-specifikationen**.
+   Som standard extraherar regex **tillståndet:** enligt definitionen i **tillägg B** i **SMPP 3.4-specifikationen**.
 
 * Den fjärde delen (**000** i det här exemplet) av felmeddelandet motsvarar den felkod som extraheras från SR med den felkodsextraheringsregex som definieras i det externa SMS-kontot.
 
    Det här området anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Se [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
-   **Regex extraherar som standard** felet: enligt definitionen i **tillägg B** i **SMPP 3.4-specifikationen**.
+   Regex extraherar som standard **felet:** enligt definitionen i **tillägg B** i **SMPP 3.4-specifikationen**.
 
 * Allt som kommer efter rörsymbolen (|) visas bara i **[!UICONTROL First text]** kolumnen i **[!UICONTROL Delivery log qualification]** tabellen. Det här innehållet ersätts alltid av **#MESSAGE#** när meddelandet har normaliserats. Med den här processen undviker du att ha flera poster för liknande fel och den är samma som för e-postmeddelanden. Mer information finns i [Studsa-e-postkvalifikationer](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
 
