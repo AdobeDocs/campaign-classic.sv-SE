@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
+source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 ---
 
@@ -31,7 +31,6 @@ Exempel på händelsedata:
 Om du vill bearbeta transaktionsmeddelandehändelser måste följande steg utföras:
 
 1. Händelsesamling,
-1. Händelseberikning innan de överförs till en meddelandemall (om du har förvärvat anrikningsalternativet som är tillgängligt för transaktionsmeddelandemodulen i Campaign),
 1. Händelseöverföring till en meddelandemall,
 1. händelseberikning med personaliseringsdata,
 1. Leveranssätt,
