@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 ---
 
@@ -67,15 +67,19 @@ I följande steg beskrivs konfigurationen av dataanslutningen med hjälp av en g
 
    ![](assets/adobe_genesis_install_013.png)
 
-1. Välj på **[!UICONTROL Admin]** fliken **[!UICONTROL Data Connectors]**.
+1. From the **[!UICONTROL Admin]** tab, select **[!UICONTROL Data Connectors]**.
 
+   Du måste ha följande behörigheter för analysverktygen för att komma åt **[!UICONTROL Data Connectors]** menyn. Mer information finns på den här [sidan](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   * Integreringar (skapa)
+   * Integreringar (uppdatering)
+   * Integreringar (ta bort)
    ![](assets/adobe_genesis_install_002.png)
 
 1. Välj **[!UICONTROL Neolane - Enterprise Marketing Platform]** i listan över partners.
 
    ![](assets/adobe_genesis_install_014.png)
 
-1. Klicka på i **[!UICONTROL Add integration]** dialogrutan **[!UICONTROL Activate]**.
+1. In the **[!UICONTROL Add integration]** dialog, click **[!UICONTROL Activate]**.
 1. Markera **[!UICONTROL I accept these terms and conditions]** och markera den **[!UICONTROL Report suite]** länkade till den här integreringen och ange kopplingsetiketten.
 
    När du är klar klickar du på **[!UICONTROL Create and configure this integration]**.
@@ -87,6 +91,7 @@ I följande steg beskrivs konfigurationen av dataanslutningen med hjälp av en g
    ![](assets/adobe_genesis_install_005.png)
 
 1. Ange de identifierare som krävs för att mäta effekten av e-postkampanjen, dvs. det interna kampanjnamnet (cid) och ID:t för registret iNmsBroadlog (bid). Du bör också ange indikatorer för händelser som ska samlas in.
+Kontrollera att **[!UICONTROL Events]** du har typen Numerisk, annars visas de inte i listrutan.
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -248,7 +253,7 @@ För att Adobe Experience Cloud ska kunna spåra aktiviteter på webbplatserna n
 
 För att förbereda er marknadsföringskampanj skapar ni helt enkelt leveransmallar som kan användas för återmarknadsföringskampanjer. Konfigurera sedan er marknadsföringskampanj och länka den till ett segment. Varje segment måste ha olika återmarknadsföringskampanjer.
 
-Återmarknadsföringskampanjer startas automatiskt när Adobe Campaign har återskapat segmenten och analyserat beteendet hos de personer som den inledande kampanjen riktar sig till. Om kunden överger en varukorg eller visar en produkt utan att köpa den skickas en leverans till de berörda mottagarna så att surfandet avslutas vid köpet.
+Återmarknadsföringskampanjer startas automatiskt när Adobe Campaign har återskapat segmenten och analyserat beteendet hos de personer som den inledande kampanjen riktar sig till. Om kunden överger en varukorg eller visar en produkt utan att köpa den skickas en leverans till de berörda mottagarna för att surfandet ska sluta vid köpet.
 
 Adobe Campaign innehåller skräddarsydda leveransmallar som ni kan använda eller databasera er själva för att förbereda kampanjer.
 
