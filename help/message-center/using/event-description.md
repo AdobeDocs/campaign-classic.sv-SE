@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
 
 # Händelsebeskrivning{#event-description}
 
-## Datamodell för transaktionsmeddelanden {#about-transactional-messaging-datamodel}
+## Om datamodellen för transaktionsmeddelanden {#about-transactional-messaging-datamodel}
 
-Transactional messaging förlitar sig på Campaign-datamodellen och använder ytterligare två separata tabeller. Dessa tabeller, **NmsRtEvent** och **NmsBatchEvent**, innehåller samma fält och gör att du kan hantera både realtidshändelser och batchhändelser.
+Transaktionsmeddelanden bygger på datamodellen i Adobe Campaign och använder ytterligare två separata tabeller. Dessa [tabeller](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** och **NmsBatchEvent**, innehåller samma fält och gör att du kan hantera både realtidshändelser och batchhändelser.
 
 ## SOAP-metoder {#soap-methods}
 
