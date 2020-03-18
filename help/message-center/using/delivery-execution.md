@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >MTA prioriterar bearbetning av transaktionsmeddelanden framför annan leverans.
 
-I körningsinstansen skickas leveransen när anrikningsfaserna har slutförts och en leveransmall har länkats till händelsen. Alla leveranser grupperas i **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** mappen.
+I exekveringsinstansen skickas leveransen när anrikningsfasen är slutförd och en leveransmall har länkats till händelsen. Alla leveranser grupperas i **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** mappen.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
