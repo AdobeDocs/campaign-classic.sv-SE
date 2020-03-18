@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
+source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
 
 ---
 
@@ -46,11 +46,11 @@ Detta kundcentrerade tillvägagångssätt visas i tabellen nedan. I **mottagarta
 
 Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på **[!UICONTROL Documentation]** fliken.
 
-Standarddatamodellen för Adobe Campaign presenteras i det här [dokumentet](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
+Standarddatamodellen för Adobe Campaign presenteras i det här [dokumentet](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Med Adobe Campaign Classic kan du skapa en anpassad kundtabell. I de flesta fall bör du emellertid använda [mottagartabellen](../../configuration/using/default-recipient-table.md) som redan har fördefinierade tabeller och funktioner.
+>Med Adobe Campaign Classic kan du skapa en anpassad kundtabell. I de flesta fall bör du emellertid använda [mottagartabellen](../../configuration/using/about-data-model.md#default-recipient-table) som redan har fördefinierade tabeller och funktioner.
 
 ### Data för Adobe Campaign {#data-for-campaign}
 
@@ -85,15 +85,15 @@ Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller p
 
 För hybridinstanser och lokala instanser täcker FDA (Federated Data Access, en valfri funktion som ger åtkomst till externa data) behovet av att lägga till ett fält&quot;direkt&quot; under en kampanjprocess. Du behöver inte importera allt om du har FDA. Mer information finns i [Om åtkomst till](../../platform/using/about-fda.md)federerade data.
 
-### Val av nycklar {#choice-of-keys}
+### Choice of keys {#choice-of-keys}
 
-Förutom den **autopk** som är definierad som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
+Förutom den **autopk** som är definierad som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). It can be used later for imports/reconciliation or data packages. Mer information finns i [Identifierare](#identifiers).
 
-Effektiva nycklar är viktiga för prestanda. Numeriska datatyper bör alltid vara att föredra som nycklar för tabeller.
+Efficient keys are essential for performance. Numeric data types should always be preferred as keys for tables.
 
-För SQLServer-databasen kan du använda &quot;grupperat index&quot; om prestanda behövs. Eftersom Adobe inte hanterar detta måste du skapa det i SQL.
+For SQLServer database, you could consider using &quot;clustered index&quot; if performance is needed. Since Adobe does not handle this, you need to create it in SQL.
 
-### Dedikerade tabellutrymmen {#dedicated-tablespaces}
+### Dedicated tablespaces {#dedicated-tablespaces}
 
 Med tabellutrymmesattributet i schemat kan du ange ett dedikerat tabellutrymme för en tabell.
 
@@ -103,14 +103,14 @@ Dedikerade tabellutrymmen är bättre för partitionering, säkerhetsregler och 
 
 ## Identifierare {#identifiers}
 
-Adobe Campaign-resurserna har tre identifierare och det går att lägga till ytterligare en identifierare.
+Adobe Campaign-resurser har tre identifierare och det går att lägga till ytterligare en identifierare.
 
 I följande tabell beskrivs dessa identifierare och deras syfte.
 
 | Identifierare | Beskrivning | God praxis |
 |--- |--- |--- |
-| ID | <ul><li>ID är den fysiska primärnyckeln för en Adobe Campaign-tabell. För färdiga tabeller är det ett genererat 32-bitarsnummer från en sekvens</li><li>Den här identifieraren är vanligtvis unik för en viss Adobe Campaign-instans. </li><li>Ett automatiskt genererat ID kan vara synligt i en schemadefinition. Sök efter attributet *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Automatiskt genererade identifierare bör inte användas som referens i ett arbetsflöde eller i en paketdefinition.</li><li>Man bör inte anta att ID:t alltid blir ett ökande tal.</li><li>ID:t i en körklar tabell är ett 32-bitars tal och den här typen bör inte ändras. Numret hämtas från en sekvens som beskrivs i avsnittet med samma namn.</li></ul> |
-| Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (till exempel *schema* ), kommer detta gemensamma namnutrymme att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk*.</li><li>När ett objekt inte har något namnutrymme (till exempel *arbetsflöde* eller *leverans* ) läggs detta namnutrymmesbegrepp till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
+| ID | <ul><li>The id is the physical primary key of an Adobe Campaign table. För färdiga tabeller är det ett genererat 32-bitarsnummer från en sekvens</li><li>Den här identifieraren är vanligtvis unik för en viss Adobe Campaign-instans. </li><li>Ett automatiskt genererat ID kan vara synligt i en schemadefinition. Sök efter attributet *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Automatiskt genererade identifierare bör inte användas som referens i ett arbetsflöde eller i en paketdefinition.</li><li>Man bör inte anta att ID:t alltid blir ett ökande tal.</li><li>ID:t i en körklar tabell är ett 32-bitars tal och den här typen bör inte ändras. Numret hämtas från en sekvens som beskrivs i avsnittet med samma namn.</li></ul> |
+| Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>This identifier keeps its value when deployed in a different instance of Adobe Campaign and it should not be empty.</li></ul> | <ul><li>Rename the record name generated by Adobe Campaign if the object is meant to be deploy from an environment to another.</li><li>When an object has a namespace attribute (*schema* for example), this common namespace will be leveraged across all custom objects created. Some reserved namespaces should not be used: *nms*, *xtk*.</li><li>When an object does not have any namespace (*workflow* or *delivery* for example), this namespace notion would be added as a prefix of an internal name object: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
 | Etikett | <ul><li>Etiketten är affärsidentifieraren för ett objekt eller en post i Adobe Campaign.</li><li>Det här objektet tillåter mellanslag och specialtecken.</li><li>Det garanterar inte att ett register är unikt.</li></ul> | <ul><li>Vi rekommenderar att du bestämmer en struktur för objektetiketterna.</li><li>Detta är den mest användarvänliga lösningen för att identifiera en post eller ett objekt för en Adobe Campaign-användare.</li></ul> |
 
 ## Anpassade interna nycklar {#custom-internal-keys}
@@ -223,18 +223,18 @@ Det finns några lösningar som minimerar behovet av arkiv i Adobe Campaign:
 * Exportera data till ett datalager utanför Adobe Campaign.
 * Generera aggregerade värden som använder mindre utrymme samtidigt som de är tillräckliga för er marknadsföringspraxis. Du behöver till exempel inte den fullständiga kundtransaktionshistoriken i Adobe Campaign för att hålla reda på de senaste köpen.
 
-Du kan deklarera attributet &quot;deleteStatus&quot; i ett schema. Det är effektivare att markera posten som borttagen och sedan skjuta upp borttagningen i rensningsaktiviteten.
+You can declare the &quot;deleteStatus&quot; attribute in a schema. It is more efficient to mark the record as deleted, then postpone the deletion in the cleanup task.
 
-## Prestanda {#performance}
+## Performance {#performance}
 
-Följ de bästa metoderna nedan för att få bättre prestanda när som helst.
+In order to ensure better performance at any time, follow the best practices below.
 
-### Allmänna rekommendationer {#general-recommendations}
+### General recommendations {#general-recommendations}
 
-* Undvik åtgärder som &quot;CONTAINS&quot; i frågor. Om du vet vad som förväntas och vill filtreras efter använder du samma villkor med &quot;EQUAL TO&quot; eller andra specifika filteroperatorer.
-* Undvik koppling till icke-indexerade fält när du skapar data i arbetsflöden.
-* Försök att se till att processer som import och export går utanför kontorstid.
-* Se till att det finns ett schema för alla dagliga aktiviteter och att schemat följs.
+* Avoid using operations like “CONTAINS” in queries. If you know what is expected and want to be filtered for, apply the same condition with an “EQUAL TO” or other specific filter operators.
+* Avoid joining with non-indexed fields while building data in workflows.
+* Try and make sure the processes like import and export happen off business hours.
+* Make sure there is a schedule for all the daily activities and stick to the schedule.
 * Om en eller flera av de dagliga processerna misslyckas och om det är obligatoriskt att köra den samma dag, ska du se till att det inte finns några processkonflikter som körs när den manuella processen startar, eftersom detta kan påverka systemets prestanda.
 * Kontrollera att ingen av de dagliga kampanjerna körs under importprocessen eller när någon manuell process körs.
 * Använd en eller flera referenstabeller i stället för att duplicera ett fält i varje rad. När du använder nyckel/värde-par bör du välja en numerisk nyckel.
@@ -243,16 +243,16 @@ Följ de bästa metoderna nedan för att få bättre prestanda när som helst.
 ### En-till-många-relationer {#one-to-many-relationships}
 
 * Datadesign påverkar användbarhet och funktionalitet. Om du utformar din datamodell med många 1:N-relationer blir det svårare för användarna att skapa meningsfull logik i programmet. En-till-många-filterlogik kan vara svår för icke-tekniska marknadsförare att konstruera och förstå på ett korrekt sätt.
-* Det är bra att ha alla viktiga fält i en tabell eftersom det gör det enklare för användarna att skapa frågor. Ibland kan det också vara bra för prestanda att duplicera vissa fält mellan tabeller om det kan undvika en koppling.
+* Det är bra att ha alla viktiga fält i en tabell eftersom det gör det enklare för användarna att skapa frågor. Sometimes it is also good for performance to duplicate some fields across tables if it can avoid a join.
 * Vissa inbyggda funktioner kan inte referera till 1:N-relationer, t.ex. offertviktningsformel och Leveranser.
 
 ## Stora tabeller {#large-tables}
 
-Adobe Campaign använder databasmotorer från tredje part. Beroende på vilken provider som används kan optimering av prestanda för större tabeller kräva en viss design.
+Adobe Campaign relies on third-party database engines. Depending on the provider, optimizing performance for larger tables may require a specific design.
 
-Nedan följer några vanliga metodtips som bör följas när du utformar din datamodell med stora tabeller och komplexa kopplingar.
+Below are a few common best practices that should be followed when designing your data model using large tables and complex joins.
 
-* När du använder ytterligare anpassade mottagartabeller måste du ha en dedikerad loggtabell för varje leveransmappning.
+* When using additional custom recipient tables, make sure you have a dedicated log table for each delivery mapping.
 * Minska antalet kolumner, särskilt genom att identifiera de som inte används.
 * Optimera datamodellens relationer genom att undvika komplexa kopplingar, till exempel kopplingar på flera villkor och/eller flera kolumner.
 * Använd alltid numeriska data i stället för teckensträngar för kopplingsnycklar.
@@ -262,16 +262,16 @@ Nedan följer några vanliga metodtips som bör följas när du utformar din dat
 
 Tabellstorleken är en kombination av antalet poster och antalet kolumner per post. Båda kan påverka prestanda för frågor.
 
-* En **tabell i liten storlek** påminner om leveranstabellen.
-* En tabell med **medelstor storlek** är samma som storleken på mottagartabellen. Det finns en post per kund.
-* En **stor** tabell påminner om den allmänna loggtabellen. Det finns många poster per kund.
-Om din databas till exempel innehåller 10 miljoner mottagare innehåller den stora loggtabellen cirka 100 till 200 miljoner meddelanden och leveranstabellen innehåller några tusen poster.
+* A **small-size** table is similar to the Delivery table.
+* A **medium size** table is the same as the size of the Recipient table. It has one record per customer.
+* A **large-size** table is similar to the Broad log table. It has many records per customer.
+For example, if your database contains 10 million recipients, the Broad log table contains about 100 to 200 million messages, and the Delivery table contains a few thousand records.
 
 I PostgreSQL får en rad inte överskrida 8 kB för att undvika [TOAST](https://wiki.postgresql.org/wiki/TOAST) -mekanismen. Försök därför att så mycket som möjligt minska antalet kolumner och storleken på varje rad för att behålla optimala prestanda för systemet (minne och processor).
 
-Antalet rader påverkar även prestandan. Adobe Campaign-databasen är inte utformad för att lagra historiska data som inte aktivt används för målinriktning eller personalisering - det här är en operativ databas.
+The number of rows impacts performance as well. Adobe Campaign-databasen är inte utformad för att lagra historiska data som inte aktivt används för målinriktning eller personalisering - det här är en operativ databas.
 
-Om du vill förhindra prestandaproblem som har att göra med det stora antalet rader sparar du bara de nödvändiga posterna i databasen. Alla andra poster ska exporteras till ett datalager från tredje part och tas bort från Adobe Campaigns databas.
+To prevent any performance issue related to the high number of rows, only keep the necessary records in the database. Alla andra poster ska exporteras till ett datalager från tredje part och tas bort från Adobe Campaigns databas.
 
 Här följer några tips om tabellstorlek:
 
@@ -285,7 +285,7 @@ Här är ett exempel:
 ![](assets/transaction-table-example.png)
 
 I det här exemplet:
-* Tabellerna *Transaktioner* och *Transaktionsobjekt* är stora: över 10 miljoner.
+* Tabellerna *Transaktion* och *Transaktionsobjekt* är stora: över 10 miljoner.
 * Tabellerna *Product* och *Store* är mindre: mindre än 10 000.
 * Produktetiketten och referensen har placerats i *produkttabellen* .
 * Tabellen *Transaktionsobjekt* har bara en länk till tabellen *Produkt* , som är numerisk.
