@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7082ff9c8ce18f12734831bc4f00c9a1b71376b3
+source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
 
 ---
 
@@ -29,6 +29,8 @@ Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md
 ## Mars 2020 {#march-2020}
 
 Sidan med bästa praxis för datamodeller har uppdaterats med nya avsnitt, bland annat [Sekvenser](../../configuration/using/data-model-best-practices.md#sequences), [Prestanda](../../configuration/using/data-model-best-practices.md#performance) och [Stora tabeller](../../configuration/using/data-model-best-practices.md#large-tables). [Läs mer](../../configuration/using/data-model-best-practices.md)
+
+Nu finns ett nytt avsnitt som beskriver den fördefinierade datamodellen Adobe Campaign och interaktionen med färdiga tabeller. [Läs mer](../../configuration/using/data-model-description.md)
 
 ## Februari 2020 {#february-2020}
 
@@ -50,7 +52,7 @@ Avsnittet för e-postarkivering har klargjorts. [Läs mer](../../installation/us
 
 Snöflake FDA Connector - [Läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
 
-Förbättringar av Hadoop FDA Connector - [Läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Förbättringar av Hadoop FDA Connector - [läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
 
 **Andra dokumentationsuppdateringar som följer med releasen**
 
