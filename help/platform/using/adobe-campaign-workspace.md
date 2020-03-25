@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
 
 ---
 
@@ -51,6 +51,22 @@ För en viss operator visas en kampanj med följande alternativ i konsolen:
 Med tillgång till webben kommer man främst att kunna se
 
 ![](assets/operation_from_web.png)
+
+### Språk {#languages}
+
+Språket väljs när du installerar Adobe Campaign Classic-instansen och kan inte ändras efteråt. Mer information om hur du skapar en instans finns på den här [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
+
+![](assets/language.png)
+
+Du kan välja mellan fem olika språk:
+
+* Engelska (USA)
+* Engelska (EN)
+* Franska
+* Tyska
+* Japanska
+
+Det språk du väljer för Adobe Campaign Classic-instansen kan påverka datum- och tidsformat. For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Navigeringsgrunder {#navigation-basics}
 
@@ -98,7 +114,7 @@ Arbetsytan **[!UICONTROL Explorer]** är uppdelad i tre zoner:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information finns på [den här sidan](../../configuration/using/about-navigation-hierarchy.md).
+**1 - Träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. For more on this, refer to [this page](../../configuration/using/about-navigation-hierarchy.md).
 
 **2 - Lista**: kan du filtrera den här listan, köra sökningar, lägga till information eller sortera data.
 
@@ -261,7 +277,7 @@ Följ stegen nedan för att spara listkonfigurationen så att den kan återanvä
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Klicka **[!UICONTROL OK]** och sedan på **[!UICONTROL Save]**.
+1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
 
 Du kan sedan använda den här konfigurationen i en annan **leveransmapp** :
 
@@ -320,7 +336,7 @@ Du kan göra en sökning av de tillgängliga fälten i en redigerare med hjälp 
 
 Språket i Adobe Campaign Classic-instansen påverkar datum- och tidsformat.
 
-Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. Mer information finns på [den här sidan](../../installation/using/creating-an-instance-and-logging-on.md).
+Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 
