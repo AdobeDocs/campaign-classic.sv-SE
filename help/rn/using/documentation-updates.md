@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
+source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
 
 ---
 
@@ -32,6 +32,14 @@ Sidan med bästa praxis för datamodeller har uppdaterats med nya avsnitt, bland
 
 Nu finns ett nytt avsnitt som beskriver den fördefinierade datamodellen Adobe Campaign och interaktionen med färdiga tabeller. [Läs mer](../../configuration/using/data-model-description.md)
 
+Ytterligare resurser har lagts till på dokumentationsstartsidan. [Läs mer](../../campaign-classic-home.md)
+
+Ett användningsexempel har lagts till om hur du integrerar ett dynamiskt erbjudande från Adobe Target i ett e-postmeddelande i Adobe Campaign. [Läs mer](../../integrations/using/inserting-a-dynamic-image.md)
+
+Nu finns ett nytt avsnitt som beskriver de olika språk som är tillgängliga i Adobe Campaign. [Läs mer](../../platform/using/adobe-campaign-workspace.md#languages)
+
+Sidan Åtkomsthantering har uppdaterats med mer information om namngivna rättigheter. [Läs mer](../../platform/using/access-management.md#named-rights)
+
 ## Februari 2020 {#february-2020}
 
 Nu finns ett nytt avsnitt med bästa praxis och viktiga rekommendationer när du utformar datamodellen för Adobe Campaign. [Läs mer](../../configuration/using/data-model-best-practices.md)
@@ -43,8 +51,6 @@ Vanliga frågor om leveranser har uppdaterats med mer information om felmeddelan
 AMP för e-post stöds nu av tre e-postleverantörer (Gmail, Outlook och Mail.ru), och avsnittet som beskriver hur du definierar interaktivt innehåll med AMP har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
 
 Avsnittet för e-postarkivering har klargjorts. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
-
-
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -138,7 +144,7 @@ Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i
 
 De nya alternativen NmsOperation_DeliveryPreparationWindow och WdbcKillSessionPolicy har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Nu finns ett nytt dokument som beskriver grunderna i Adobe Campaign Classic-datamodellen. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Nu finns ett nytt dokument som beskriver grunderna i datamodellen i Adobe Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 Det nya alternativet **Maximal körtidsåtgång** för personalisering i leveransegenskaperna beskrivs i det här [avsnittet](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
