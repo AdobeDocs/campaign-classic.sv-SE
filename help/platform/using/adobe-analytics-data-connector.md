@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
+source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
 
 ---
 
@@ -75,7 +75,7 @@ I följande steg beskrivs konfigurationen av dataanslutningen med hjälp av en g
    * Integreringar (ta bort)
    ![](assets/adobe_genesis_install_002.png)
 
-1. Välj **[!UICONTROL Neolane - Enterprise Marketing Platform]** i listan över partners.
+1. Välj **[!UICONTROL Adobe Campaign Classic]** i listan över partners.
 
    ![](assets/adobe_genesis_install_014.png)
 
