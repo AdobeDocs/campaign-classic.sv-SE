@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
 
@@ -32,7 +32,7 @@ Med Adobe Campaign kan ni definiera och hantera de rättigheter som tilldelats d
 
 Behörigheterna gäller för operatorprofiler eller operatorgrupper.
 
-De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. Mer information finns på [den här sidan](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 Det finns två typer av behörigheter som du kan ge en användare:
 
@@ -129,7 +129,7 @@ Med hjälp av **[!UICONTROL Edit the access parameters...]** länken kommer du �
 
 * Med **[!UICONTROL Disable account]** alternativet kan du inaktivera operatörens konto: Han kommer inte längre att ha tillgång till Adobe Campaign.
 * Med **[!UICONTROL Forbid access from the rich client]** det här alternativet kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign-klientkonsolen är inte längre tillgänglig.
-* Det går att länka en säkerhetszon till operatören. Mer information finns på [den här sidan](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+* Det går att länka en säkerhetszon till operatören. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
 
    Operatören kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
@@ -287,26 +287,45 @@ Som standard föreslår Adobe Campaign en uppsättning namngivna rättigheter so
 
 Dessa rättigheter är följande:
 
-* ADMINISTRATION: Allmän administrationsbehörighet för alla mappar på konsolen.
-* ADMINISTRERING AV GODKÄNNANDE: Rätt att utse granskare.
-* CENTRALT: Rätt till central hantering (distribuerad marknadsföring).
-* TA BORT MAPP: Rätt att ta bort mappar.
-* REDIGERA MAPPAR: Rätt att ändra mappegenskaper: namn, etikett, associerad bild osv.
-* EXPORTERA: Rätt att exportera data.
-* ÅTKOMST TILL FILER: Rätt att läsa och skriva för filer via skript.
-* IMPORTERA: Rätt för allmän dataimport.
-* INFOGA MAPPAR: Rätt att infoga mappar.
-* LOKAL: Rätt till lokal hantering (distribuerad marknadsföring).
-* SAMMANFOGA: Rätt att sammanfoga poster.
-* FÖRBEREDANDE LEVERANSER: Rätt att skapa, redigera och starta leveransanalysen.
-* INTEGRITETSDATA: Rätt att samla in och ta bort personuppgifter. Mer information finns på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
-* PROGRAMKÖRNING: Rätt att köra externa program.
-* MOTTAGARIMPORT: Rätt att importera mottagare.
-* SQL-SKRIPTKÖRNING: Rätt att köra SQL-skript i databasen.
-* STARTA LEVERANSER: Rätt att godkänna tidigare analyserade leveranser.
-* ANVÄND SQL DATA MANAGEMENT-AKTIVITET: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller (se [det här avsnittet](../../workflow/using/sql-data-management.md)).
-* ARBETSFLÖDE: Rätt att använda arbetsflöden.
-* WEBAPP: Rätt att använda webbprogram.
+* **[!UICONTROL ADMINISTRATION]**: Operatorer med **[!UICONTROL ADMINISTRATION]** rättigheten har fullständig åtkomst till instansen. Administratörsanvändare kan köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
+
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella läget har godkänts av en tilldelad operator eller grupp. Användare med **[!UICONTROL APPROVAL ADMINISTRATION]** behörighet kan ange godkännandesteg och även tilldela en operator eller operatörsgrupp som ska godkänna dessa steg.
+
+* **[!UICONTROL CENTRAL]**: Rätt till central hantering (distribuerad marknadsföring).
+
+* **[!UICONTROL DELETE FOLDER]**: Rätt att ta bort mappar. Med den här rättigheten kan användare ta bort mappar från utforskarvyn.
+
+* **[!UICONTROL EDIT FOLDERS]**: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
+
+* **[!UICONTROL EXPORT]**: Användare kan exportera data från sina Adobe Campaign-instanser till en fil på servern eller den lokala datorn med hjälp av **[!UICONTROL EXPORT]** arbetsflödesaktiviteten.
+
+* **[!UICONTROL FILES ACCESS]**: Rätt att läsa och skriva för filer via ett skript som kan skrivas i arbetsflödesaktiviteten för att läsa och skriva filer på en server. **[!UICONTROL JavaScript]**
+
+* **[!UICONTROL IMPORT]**: Rätt för allmän dataimport. **[!UICONTROL IMPORT]** tillåter att du importerar data till andra tabeller, medan rätten endast tillåter import till mottagartabellen **[!UICONTROL RECIPIENT IMPORT]** .
+
+* **[!UICONTROL INSERT FOLDERS]**: Rätt att infoga mappar. Användare med **[!UICONTROL INSERT FOLDERS]** höger kan skapa nya mappar i mappträdet i utforskarvyn.
+
+* **[!UICONTROL LOCAL]**: Rätt till lokal hantering (distribuerad marknadsföring).
+
+* **[!UICONTROL MERGE]**: Höger om du vill sammanfoga de markerade posterna till en. Om mottagarna finns som dubbletter ger rättigheten användaren **[!UICONTROL MERGE]** möjlighet att välja dubbletter och sammanfoga dem till en primär mottagare.
+
+* **[!UICONTROL PREPARE DELIVERIES]**: Rätt att skapa, redigera och spara en leverans. Användare med rätt **[!UICONTROL PREPARE DELIVERIES]** behörighet kan också starta leveransanalysprocessen.
+
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. Mer information finns på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+
+* **[!UICONTROL PROGRAM EXECUTION]**: Rätt att köra kommandon på olika programmeringsspråk.
+
+* **[!UICONTROL RECIPIENT IMPORT]**: Rätt att importera mottagare. Användare med **[!UICONTROL RECIPIENT IMPORT]** behörighet kan importera en lokal fil till mottagartabellen.
+
+* **[!UICONTROL SQL SCRIPT EXECUTION]** Rätt att köra ett SQL-kommando direkt i databasen.
+
+* **[!UICONTROL START DELIVERIES]**: Rätt att godkänna tidigare analyserade leveranser. Efter leveransanalysen pausas leveransen vid olika godkännandesteg och måste godkännas för att kunna återupptas. Användare med rätt **[!UICONTROL START DELIVERIES]** behörighet kan godkänna leveranser.
+
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller (se [det här avsnittet](../../workflow/using/sql-data-management.md)).
+
+* **[!UICONTROL WORKFLOW]**: Rätt att köra arbetsflöden. Utan den här rättigheten kan användare inte starta, stoppa eller starta om arbetsflöden.
+
+* **[!UICONTROL WEBAPP]**: Rätt att använda webbprogram.
 
 >[!NOTE]
 >
