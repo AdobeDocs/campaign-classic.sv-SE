@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 ---
 
@@ -24,7 +24,11 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
 
-Dessa konfigurationer måste utföras av administratörer och endast för **lokala** värdmodeller. För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på Kontrollpanelen (till exempel vitlista för IP eller URL-behörigheter).
+>[!IMPORTANT]
+>
+>Dessa konfigurationer måste utföras av administratörer och endast för **lokala** värdmodeller.
+>
+>För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på Kontrollpanelen (till exempel vitlista för IP eller URL-behörigheter).
 
 Mer information finns i följande avsnitt:
 
@@ -109,7 +113,7 @@ Alla rättigheter som definierar en zon är följande:
 * **sessionTokenOnly**: säkerhetstoken krävs inte i anslutnings-URL
 * **showErrors**: fel på serversidan vidarebefordras och visas
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >I en zondefinition minskar varje attribut med värdet **true** säkerheten.
 
@@ -153,13 +157,13 @@ Parametern **proxy** kan användas i ett **subNetwork** -element för att ange p
 
 När en proxy refereras och en anslutning matas in via den här proxyn (synlig via HTTP X-Forwarded-For-huvudet), är den verifierade zonen den för proxyns klienter och inte proxyns.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om en proxy är konfigurerad och det går att åsidosätta den (eller om den inte finns), kommer den IP-adress som testas att kunna förfalskas.
 >
 >Dessutom genereras nu reläer som proxies. Du kan därför lägga till IP-adressen 127.0.0.1 i listan över proxy i din säkerhetszonskonfiguration.
 >
->Till exempel: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
+>Exempel: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
 
 Olika fall kan inträffa:
 
@@ -281,7 +285,7 @@ I det här fallet ställs dessa parametrar in genom att SMTP-servern konfigurera
 <relay address="192.0.0.3" port="25"/>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det här operativläget innebär allvarliga leveransbegränsningar eftersom det kan minska genomströmningen avsevärt på grund av reläserverns inneboende prestanda (latens, bandwith...). Dessutom kommer kapaciteten att kvalificera synkrona leveransfel (som upptäcks genom analys av SMTP-trafik) att vara begränsad och det går inte att skicka om reläservern inte är tillgänglig.
 
@@ -297,7 +301,7 @@ Se även [E-postoptimering](../../installation/using/email-deliverability.md#ema
 
 ### Hantera utgående SMTP-trafik med tillhörigheter {#managing-outbound-smtp-traffic-with-affinities}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Tillhörighetskonfigurationen måste vara konsekvent från en server till en annan. Vi rekommenderar att du kontaktar Adobe för tillhörighetskonfiguration eftersom konfigurationsändringar bör replikeras på alla programservrar som kör MTA.
 
@@ -307,7 +311,7 @@ Gör så här:
 
 1. Ange tillhörigheterna i avsnittet **`<ipaffinity>`** i **filen serverConf.xml** .
 
-   **En tillhörighet kan ha flera olika namn: för att skilja dem åt, använda** tecken.
+   En tillhörighet kan ha flera olika namn: för att skilja dem åt, använda **** tecken.
 
    Exempel:
 
@@ -351,7 +355,7 @@ Med **hybridvärdmodeller** och **lokala** värdmodeller måste administratören
 
 Det finns tre lägen för anslutningsskydd:
 
-* **Blockering**: Alla URL:er som inte tillhör vitlistan blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Blockering**: alla URL:er som inte tillhör vitlistan blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
 * **Tillstånd**: Alla URL:er som inte hör till vitlistan tillåts.
 * **Varning**: alla URL:er som inte är vita tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
@@ -363,7 +367,7 @@ Det finns tre lägen för anslutningsskydd:
 </urlPermission>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Som standard använder nya kunders kunder **blockeringsläget**. Om de behöver tillåta en ny URL bör de kontakta sin administratör för att vitlista den.
 >
@@ -444,7 +448,7 @@ ruby
 sh
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Denna lista är inte uttömmande.
 
@@ -456,7 +460,7 @@ I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigar
 >
 >Om ingen användare anges körs alla kommandon i användarkontexten för Adobe Campaign-instansen. Användaren måste vara en annan än användaren som kör Adobe Campaign.
 
-Till exempel:
+Exempel:
 
 ```
 <serverConf>
@@ -466,7 +470,7 @@ Till exempel:
 
 Den här användaren måste läggas till i användarlistan för Adobe Campaign-operatorn neolane.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Du bör inte använda en anpassad sudo. En standardsudo måste installeras på datorn.
 
@@ -480,7 +484,7 @@ Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubr
 
    * **namn**: rubriknamn
    * **värde**: värdenamn.
-   Till exempel:
+   Exempel:
 
    ```
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
@@ -581,7 +585,7 @@ Det gör du genom att gå till **filen serverConf.xml** som finns i **conf** -da
 
 Varje process som konfigureras i den här filen har ett **processRestartTime** -attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ta inte bort det här attributet. Alla processer måste startas om varje dag.
 
@@ -595,9 +599,9 @@ Standardvärdet för det här attributet är **.+** så kan du ladda upp alla fi
 
 Om du vill begränsa antalet möjliga format måste du ersätta attributvärdet med ett giltigt reguljärt java-uttryck. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: upload **WhiteList=&quot;&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format accepteras.
+Till exempel: upload **WhiteList=&quot;&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >I Internet Explorer måste den fullständiga filsökvägen verifieras av det reguljära uttrycket.
 
@@ -628,7 +632,7 @@ Alternativen http och https används bara när protokollparametern är ftp och a
 Om du använder olika portar för FTP-/SFTP- och HTTP/HTTPS-trafik över proxyservern bör du ange protokollparametern ftp.
 
 
-Till exempel:
+Exempel:
 
 ```
 nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
