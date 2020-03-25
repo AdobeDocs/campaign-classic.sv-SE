@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
 
 ---
 
@@ -242,11 +242,15 @@ Studsade e-postmeddelanden kan ha följande kvalificeringsstatus:
 
 ![](assets/deliverability_qualif_status.png)
 
->[!NOTE]
->
->Om du har uppgraderat till Enhanced MTA används studskompetensen i **[!UICONTROL Delivery log qualification]** tabellen inte längre för värdbaserade eller hybridbaserade installationer. Det förbättrade MTA-avtalet avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
->
->Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+För värdbaserade eller hybridinstallationer, om du har uppgraderat till det förbättrade MTA:
+
+* Studskompetensen i **[!UICONTROL Delivery log qualification]** tabellen används inte längre för synkrona felmeddelanden vid leveransfel. Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
+
+* Asynkrona studsar är fortfarande kvalificerade av inMail-processen via **[!UICONTROL Inbound email]** reglerna. Mer information finns i Regler [för](#email-management-rules)e-posthantering.
+
+* För instanser som använder Förbättrat MTA utan **Webhooks/EFS** används även **[!UICONTROL Inbound email]** reglerna för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
+
+Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 ### Regler för e-posthantering {#email-management-rules}
 
@@ -264,34 +268,54 @@ Standardreglerna är följande:
 
 * **Inkommande e-post**
 
-   När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i plattformsparametrarna. I Adobe Campaign jämförs innehållet i varje studsmeddelande med strängarna i listan över regler och sedan tilldelas det en av de tre feltyperna.
+   När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i plattformsparametrarna.
+
+   I Adobe Campaign jämförs innehållet i varje studsmeddelande med strängarna i listan över regler och sedan tilldelas det en av de tre feltyperna.
 
    Användaren kan skapa egna regler.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >När du importerar ett paket och uppdaterar data via arbetsflödet **Uppdatera för leverans** , skrivs de regler som användaren har skapat över.
 
+   Mer information om studentkvalifikationer finns i [det här avsnittet](#bounce-mail-qualification).
+
+   >[!NOTE]
+   >
+   >Om du har uppgraderat till Förbättrat MTA används inte längre reglerna för synkrona felmeddelanden vid leverans för värdbaserade eller hybridinstallationer **[!UICONTROL Inbound email]** . Mer information finns i [det här avsnittet](#bounce-mail-qualification).
+   >
+   >Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+
 * **Domänhantering**
 
-   Domänhanteringsreglerna används för att reglera flödet av utgående e-post för en viss domän. De samplar studsmeddelandena och blockerar sändningarna där så är lämpligt. Meddelandeservern för Adobe Campaign tillämpar regler som är specifika för domänerna och sedan reglerna för det allmänna fallet som representeras av en asterisk i listan med regler. Regler för Hotmail- och MSN-domänerna är tillgängliga som standard i Adobe Campaign.
+   Meddelandeservern för Adobe Campaign tillämpar regler som är specifika för domänerna och sedan reglerna för det allmänna fallet som representeras av en asterisk i listan med regler.
+
+   Regler för Hotmail- och MSN-domänerna är tillgängliga som standard i Adobe Campaign.
 
    Klicka på **[!UICONTROL Detail]** ikonen för att komma åt regelkonfigurationen.
 
    ![](assets/tech_quarant_domain_rules_02.png)
 
-   Om du vill konfigurera regler för domänhantering anger du bara ett tröskelvärde och väljer vissa SMTP-parametrar. Ett **tröskelvärde** är en gräns som beräknas som ett felprocentvärde över vilket alla meddelanden till en viss domän blockeras.
-
-   I det allmänna fallet, för minst 300 meddelanden, blockeras sändning av e-postmeddelanden under tre timmar om felprocenten når 90 %.
-
    SMTP- **parametrarna** fungerar som filter för en blockeringsregel.
 
    * Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar för att kontrollera domännamnet, till exempel **avsändar-ID**, **DomainKeys**, **DKIM** och **S/MIME**.
-   * **SMTP-relä**: I kan du konfigurera IP-adressen och porten för en reläserver för en viss domän.
+   * **SMTP-relä**: I kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
+   Om dina meddelanden visas i Outlook som **[!UICONTROL on behalf of]** med ett annat domännamn kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den föråldrade Microsoft-standarden för e-postautentisering. Om **[!UICONTROL Sender ID]** alternativet är aktiverat avmarkerar du motsvarande ruta och kontaktar Adobe Campaign-supporten. Leveransen påverkas inte.
+
+   >[!NOTE]
+   >
+   >Om du har uppgraderat till Förbättrat MTA används inte längre reglerna för värdbaserade eller hybridinstallationer **[!UICONTROL Domain management]** . **DKIM-signering (DomainKeys Identified Mail)** för e-postautentisering görs av den utökade MTA:n för alla meddelanden med alla domäner. Det signerar inte med **avsändar-ID**, **DomainKeys** eller **S/MIME** om inte annat anges på den förbättrade MTA-nivån.
+   >
+   >Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 * **MX-hantering**
 
-   Mer information om MX-hantering finns i [det här avsnittet](../../installation/using/email-deliverability.md#mx-configuration).
+   * MX-hanteringsreglerna används för att reglera flödet av utgående e-post för en viss domän. De samplar studsmeddelandena och blockerar sändningarna där så är lämpligt.
+
+   * Meddelandeservern för Adobe Campaign tillämpar regler som är specifika för domänerna och sedan reglerna för det allmänna fallet som representeras av en asterisk i listan med regler.
+
+   * Om du vill konfigurera MX-hanteringsregler anger du bara ett tröskelvärde och väljer vissa SMTP-parametrar. Ett **tröskelvärde** är en gräns som beräknas som ett felprocentvärde över vilket alla meddelanden till en viss domän blockeras. I det allmänna fallet, för minst 300 meddelanden, blockeras sändning av e-postmeddelanden under tre timmar om felprocenten når 90 %.
+   For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
    >[!NOTE]
    >
@@ -299,7 +323,7 @@ Standardreglerna är följande:
    >
    >Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Leveransservern (MTA) måste startas om om om parametrarna har ändrats.
 >* Ändringen eller skapandet av hanteringsregler är endast till för expertanvändare.
