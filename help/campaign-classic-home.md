@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
+source-git-commit: d674d8a0cabb72a8a344019de688ad7027cb3e8d
 
 ---
 
@@ -23,8 +23,6 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 * **[Underhållsguide](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>Lär dig övervaka Campaign-instansen och -processerna
 
 * **[Interaktivt innehåll med AMP](delivery/using/defining-interactive-content.md)**<br/>Lär dig hur du skickar dynamiska e-postmeddelanden med det nya[AMP-formatet för e-post](https://amp.dev/about/email/)
-
-* **[Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)**<br/>Lär dig hantera inställningar och spåra användningen av Campaign-instansen
 
 [Klicka här för fler uppdateringar](/help/rn/using/documentation-updates.md)
 
@@ -71,15 +69,13 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 </tr>
 </table>
 
-
 ## Ytterligare resurser
 
-* [Versionsinformation](/help/rn/using/latest-release.md)
-
-* [Instruktionsvideor](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
-
-* [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
-
-* [Implementeringsguide](https://helpx.adobe.com/campaign/kb/acc-implementation.html)
-
-* [Tekniska anteckningar](https://helpx.adobe.com/campaign/kb/article-list.html)
+<table>
+<tr>
+  <td valign="top"><strong>Användbara sidor</strong>* [Versionsinformation](/help/rn/using/latest-release.md) * [Hur gör jag-videor](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) * [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) * [Komma igång med Campaign Classic](../../platform/using/about-adobe-campaign-classic.md) * [Gold Standard upgrade](https://helpx.adobe.com/campaign/kb/gold-standard.html) * [Deprecated and removed features](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) * [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+  </td>
+  <td valign="top"><strong>Resurser för utvecklare</strong>* [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) * [Campaign Classic-datamodell](../../configuration/using/about-data-model.md) * [JSAPI-dokumentation](../../configuration/using/about-web-services.md) * [Implementeringsguide](https://helpx.adobe.com/campaign/kb/acc-implementation.html) * [Tracking guide](https://helpx.adobe.com/campaign/kb/acc-tracking.html) * [Security &amp; Privacy checklist](https://helpx.adobe.com/campaign/kb/acc-security.html) * [Technical notes](https://helpx.adobe.com/campaign/kb/article-list.html)
+  </td>
+</tr>
+</table>
