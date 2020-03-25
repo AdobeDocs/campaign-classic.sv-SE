@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 ---
 
@@ -52,7 +52,7 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
 
       När du har valt leveransåtgärden kan du visa innehållet genom att klicka på **[!UICONTROL Edit link]** -ikonen.
 
-   * Skapa ett skript för att beräkna leveransen. Om du vill göra det markerar du **[!UICONTROL Calculated by a script]** alternativet och anger skriptet. Du kan öppna ett inmatningsfönster genom att klicka på **[!UICONTROL Edit...]** alternativet. I följande exempel återskapas leveransens identifierare:
+   * Skapa ett skript för att beräkna leveransen. Om du vill göra det markerar du **[!UICONTROL Computed by a script]** alternativet och anger skriptet. Du kan öppna ett inmatningsfönster genom att klicka på **[!UICONTROL Edit...]** alternativet. I följande exempel återskapas leveransens identifierare:
 
       ![](assets/diffusion_edit_3.png)
 
