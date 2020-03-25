@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7eef2b9bdee51d6684d4dff5b08f50ec79a33af6
+source-git-commit: b0cd40d4616f7b55a1d655a1717b9c7ce8d8b6c6
 
 ---
 
@@ -40,4 +40,3 @@ Flera typer av data kan användas av Adobe Target:
 >[!NOTE]
 >
 >Du hittar även information om integrationen mellan Adobe Campaign och Adobe Target på hjälpsidorna [för](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_campaign_and_target.html)Adobe Target.
-
