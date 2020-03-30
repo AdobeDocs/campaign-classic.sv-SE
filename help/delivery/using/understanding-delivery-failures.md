@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
+source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
 
 ---
 
@@ -300,7 +300,7 @@ Standardreglerna är följande:
 
    * Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar för att kontrollera domännamnet, till exempel **avsändar-ID**, **DomainKeys**, **DKIM** och **S/MIME**.
    * **SMTP-relä**: I kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
-   Om dina meddelanden visas i Outlook som **[!UICONTROL on behalf of]** med ett annat domännamn kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den föråldrade Microsoft-standarden för e-postautentisering. Om **[!UICONTROL Sender ID]** alternativet är aktiverat avmarkerar du motsvarande ruta och kontaktar Adobe Campaign-supporten. Leveransen påverkas inte.
+   Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-postmeddelanden från Microsoft. Om **[!UICONTROL Sender ID]** alternativet är aktiverat avmarkerar du motsvarande ruta och kontaktar Adobe Campaign-supporten. Leveransen påverkas inte.
 
    >[!NOTE]
    >
