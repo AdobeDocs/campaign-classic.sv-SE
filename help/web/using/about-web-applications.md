@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
 
 ---
 
@@ -38,23 +38,23 @@ I det här kapitlet finns en översikt över hur du hanterar webbprogram.
 
 Webbprogram i Adobe Campaign ger tillgång till följande funktioner:
 
-* Skapa formulär på flera sidor,
-* Hantering av flerspråkiga enkäter med ett integrerat översättningsverktyg
-* Grafiskt sidhanteringsgränssnitt, sidlayout med flera kolumner,
-* Återgivning av personalisering och fältposition,
-* Villkorlig visning av undersökningsfält enligt svar,
-* Slumpmässig visning av frågor,
-* Villkorlig sidvisning,
-* Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och de obligatoriska fälten,
-* Skicka inbjudningar eller meddelanden via e-post,
-* Anpassning av fel- och slutmeddelanden.
-* Användning av bilder, videor, hypertextlänkar, captcha osv.
-* Övervakning av svar i realtid.
+* Skapa flersidiga formulär. Mer information finns på den här [sidan](../../web/using/about-web-forms.md).
+* Hantering av flerspråkiga enkäter med ett integrerat översättningsverktyg. Mer information finns på den här [sidan](../../web/using/translating-a-web-application.md).
+* Grafiskt sidhanteringsgränssnitt, sidlayout med flera kolumner. Mer information finns på den här [sidan](../../web/using/designing-a-web-application.md).
+* Återger personalisering och fältposition. Mer information finns på den här [sidan](../../web/using/editing-content.md#adding-personalization-content).
+* Villkorlig visning av undersökningsfält enligt svar. Mer information finns på den här [sidan](../../web/using/form-rendering.md#defining-fields-conditional-display).
+* Slumpmässig visning av frågor. Mer information finns på den här [sidan](../../web/using/building-a-survey.md#adding-questions).
+* Villkorlig sidvisning. Mer information finns på den här [sidan](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+* Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och de obligatoriska fälten. Mer information finns på den här [sidan](../../web/using/form-rendering.md#defining-control-settings).
+* Skicka inbjudningar eller meddelanden via e-post. Mer information finns på den här [sidan](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Personalisering av fel- och slutmeddelanden. Mer information finns på den här [sidan](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
+* Användning av bilder, videor, hypertextlänkar, captcha osv. Mer information finns på den här [sidan](../../web/using/editing-content.md).
+* Övervakning av svar i realtid. Mer information finns på den här [sidan](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 
 Den valfria modulen för att skapa **enkäter** har följande extrafunktioner:
 
-* Databasens dynamiska tillägg: Skapande av svar som inte ingår i den ursprungliga datamallen.
-* Genererar dedikerade rapporter.
+* Databasens dynamiska tillägg: Skapa svar som inte ingår i den ursprungliga datamallen. Mer information finns på den här [sidan](../../web/using/managing-answers.md#storing-collected-answers).
+* Genererar dedikerade rapporter. Mer information finns på den här [sidan](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med ett reducerat antal redigeringskontroller.
 
@@ -81,16 +81,16 @@ Webbprogram skapas via **[!UICONTROL Web Applications]** länken på flikarna **
 
 Webbprogram lagras i noden **[!UICONTROL Resources > Online > Web Applications]** i Adobe Campaign-trädet. Konfigurationerna är uppdelade i följande mappar:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. En CSS-formatmall används också. Den här formatmallen kan överladdas på mallnivå. Mer information finns på [den här sidan](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Resources > Templates > Web application templates]**: innehåller formulärmallar. Om du vill skapa ett formulär eller ett webbprogram måste du utgå från en mall.
+* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. It also uses a CSS style sheet. This style sheet can be overloaded at the template level. For more on this, refer to [this page](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Resources > Templates > Web application templates]**: contains form templates. To create a form or a Web application, you must start from a template.
 
-## Mallar för webbprogram {#web-application-templates}
+## Web application templates {#web-application-templates}
 
 Som standard innehåller Adobe Campaign en mall per tillgängligt webbprogram.
 
 >[!NOTE]
 >
->Du kan konvertera ett befintligt webbprogram till en mall. Om du vill göra det markerar du formuläret och högerklickar. Välj **[!UICONTROL Actions > Save as template...]**.
+>You can convert an existing Web application into a template. To do this, select the form and right-click. Select **[!UICONTROL Actions > Save as template...]**.
 
 Du kan skapa nya mallar via noden **[!UICONTROL Resources > Templates > Web Application templates]** i Adobe Campaign-trädet.
 
@@ -100,5 +100,5 @@ Med guiden Skapa kan du välja de alternativ som du vill aktivera, vilket visas 
 
 >[!CAUTION]
 >
->Vilka program som är tillgängliga beror på vilka alternativ och moduler du har. Kontrollera licensavtalet.
+>The available applications depend on your options and modules. Please check your license agreement.
 
