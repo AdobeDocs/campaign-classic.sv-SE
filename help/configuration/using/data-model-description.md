@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 828c95aaa4b1d0d9507129edb164ddf978c363c1
+source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
 
 ---
 
@@ -40,7 +40,7 @@ I följande diagram visas kopplingarna mellan huvudtabellerna i Adobe Campaign-d
 
 ![](assets/data-model_simplified-diagram.png)
 
-Den fördefinierade datamodellen för Adobe Campaign innehåller följande huvudtabeller.
+Den fördefinierade datamodellen för Adobe Campaign innehåller huvudtabellerna som listas nedan.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -108,11 +108,15 @@ Trädet hanteras av fälten iParentId och iChildCount. Fältet sFullName ger den
 
 ## Leverans och spårning {#delivery-and-tracking}
 
+Den här tabelluppsättningen är länkad till modulen **Leverans** , som används för att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information finns i [Övervaka leveranser](../../delivery/using/monitoring-a-delivery.md). Mer information om spårning finns i [Spåra meddelanden](../../delivery/using/about-message-tracking.md).
+
 ![](assets/data-model_delivery.png)
 
 **NmsBroadLogMsg**: Tabellen matchar schemat **nms:broadLogMsg** . Det är ett tillägg till leveransloggtabellen.
 
 ## Kampanjhantering {#campaign-management}
+
+Den här tabelluppsättningen är kopplad till modulen **Marknadsföringskampanjer** , som gör det möjligt att definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [Om marknadsföringskampanjer](../../campaign/using/designing-marketing-campaigns.md).
 
 ![](assets/data-model_campaign.png)
 
@@ -128,6 +132,8 @@ Trädet hanteras av fälten iParentId och iChildCount. Fältet sFullName ger den
 
 ## Enhetlig kommunikation {#communication-consistency}
 
+Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** , som gör det möjligt att styra, filtrera och övervaka leveransen. Mer information finns i [Om kampanjtypologier](../../campaign/using/about-campaign-typologies.md).
+
 ![](assets/data-model_typology.png)
 
 * **NmsTypologyRule**: Tabellen matchar schemat **nms:typologyRule** . Det innehåller de regler som gäller för leveranser beroende på typologi.
@@ -137,6 +143,8 @@ Trädet hanteras av fälten iParentId och iChildCount. Fältet sFullName ger den
 * **NmsVolumeCONSmed**: Den här tabellen matchar schemat **nms:volumeCONSmed** . Den innehåller alla förbrukningslinjer för kapacitetsreglerna.
 
 ## Svarshantering {#response-management}
+
+Den här tabelluppsättningen är kopplad till **Response Manager** -modulen, som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda förslag för alla kommunikationskanaler. Mer information finns i [Om svarshanteraren](../../campaign/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
@@ -196,6 +204,8 @@ Det innehåller ett register som representerar en individs reaktion på en given
 
 ## Simulering och leverans {#simulation-and-delivery}
 
+Den här tabelluppsättningen är länkad till modulen **Simulering** , som gör att du kan testa distributionen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna. Mer information finns i [Om erbjudandesimulering](../../interaction/using/about-offers-simulation.md).
+
 ![](assets/data-model_simulation.png)
 
 * **NmsSimulation**: Den här tabellen matchar **nms:simulation** -schemat. Det representerar en simulering för en uppsättning leveranser eller erbjudanden för en viss population.
@@ -203,6 +213,8 @@ Det innehåller ett register som representerar en individs reaktion på en given
 * **NmsOfferSimulationRel**: Tabellen matchar schemat **nms:offerSimulationRel** . Du kan länka ihop en simulering med ett erbjudande.
 
 ## Interaktionsmodul {#interaction-module}
+
+Den här tabelluppsättningen är länkad till **interaktionsmodulen** , som gör att du kan svara i realtid under en interaktion med en viss kontakt genom att göra dem till ett eller flera anpassade erbjudanden. Mer information finns i [Interaktion och erbjudandehantering](../../interaction/using/interaction-and-offer-management.md).
 
 * **NmsOffer**: Tabellen matchar schemat **nms:offer** . Det innehåller definitionen av varje marknadsföringserbjudande.
 * **NmsPropositionRcp**: Tabellen matchar schemat **nms:propositionRcp** . Det innehåller en flerkanalslogg över de marknadsföringsförslag som skickas till varje enskild person. Posten skapas när ett förslag förbereds eller görs på ett effektivt sätt till en individ.
@@ -213,6 +225,8 @@ Det innehåller ett register som representerar en individs reaktion på en given
 * **NmsOfferEnv**: Tabellen matchar **nms:offerEnv**. Den innehåller erbjudandemiljöerna.
 
 ## Modul för meddelandecenter {#message-center-module}
+
+Följande tabelluppsättning är länkad till modulen **Transactional Messaging** (Message Center), som gör det möjligt att hantera enskilda och unika meddelanden som skickas till en användare och som genereras från händelser som utlöses från informationssystem. Mer information finns i [Om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -226,15 +240,19 @@ Tabellen matchar schemat **nms:rtEvent** . Den innehåller en definition av hän
 
 Tabellen matchar schemat **nms:batchEvent** . Den innehåller definitionen av händelser per grupp.
 
-## Microsites Module {#microsites-module}
+<!--## Microsites Module {#microsites-module}
+
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
 ![](assets/data-model_microsites.png)
 
-* **NmsTrackingUrl**: Tabellen matchar schemat **nms:trackingUrl** .
+* **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: Tabellen matchar schemat **nms:purl** .
+* **NmsPurl**: This table matches the **nms:purl** schema.-->
 
 ## NMAC-modul {#nmac-module}
+
+Den här tabelluppsättningen är länkad till **mobilappskanalen**, som gör att du kan skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Mer information finns i [Om mobilappskanalen](../../delivery/using/about-mobile-app-channel.md).
 
 * **NmsMobileApp**: Tabellen matchar schemat **nms:mobileApp** . Det innehåller de mobilprogram som definieras i Adobe Campaign.
 * **NmsAppSubscription**: Tabellen matchar schemat **nms:appSubscription** . Det innehåller information om prenumeranter för ett eller flera program.
@@ -244,6 +262,8 @@ Tabellen matchar schemat **nms:batchEvent** . Den innehåller definitionen av h�
 * **NmsBroadLogAppSubRcp**: Den här tabellen matchar schemat **nms:broadLogAppSubRcp** .
 
 ## Modul för social marknadsföring {#social-marketing-module}
+
+Den här tabelluppsättningen är länkad till modulen **Hantera sociala nätverk** , som gör det möjligt att interagera med kunder och potentiella kunder via Facebook och Twitter. Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
