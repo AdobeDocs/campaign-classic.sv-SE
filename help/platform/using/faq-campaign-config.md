@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
 
 ---
 
@@ -25,11 +25,11 @@ Lär dig viktiga konfigurationer för att konfigurera Campaign-instansen så att
 
 ## Kan jag ändra språket i Campaign-gränssnittet? {#can-i-change-the-language-of-campaign-interface-}
 
-Kampanjspråk väljs när instansen skapas. Du kan inte ändra den i efterhand. Mer information finns i [det här avsnittet](../../installation/using/creating-an-instance-and-logging-on.md).
+Kampanjspråk väljs när instansen skapas. Du kan inte ändra den i efterhand. For more on this, refer to [this section](../../installation/using/creating-an-instance-and-logging-on.md).
 
 Användargränssnittet i Adobe Campaign finns på fyra språk: Engelska, franska, tyska och japanska. Observera att klientkonsolen och servern måste vara inställda på samma språk. Varje Campaign-instans kan bara köras på ett språk.
 
-För engelska kan du välja antingen amerikansk engelska eller brittisk engelska när du installerar Campaign: de skiljer sig åt när det gäller datum- och tidsformat. Mer information om skillnaderna finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+För engelska kan du välja antingen amerikansk engelska eller brittisk engelska när du installerar Campaign: de skiljer sig åt när det gäller datum- och tidsformat. For more on these differences refer to [this section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Kan jag använda Campaign Classic med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
@@ -78,3 +78,35 @@ Adobe Campaign innehåller olika CRM-anslutningar för att länka din Adobe Camp
 Dessa kopplingar möjliggör snabb och enkel dataintegrering: I Adobe Campaign finns en dedikerad guide för att samla in och välja bland tabellerna som finns i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
 Läs mer i [Konfigurera CRM-anslutningar](../../platform/using/crm-connectors.md) om du vill veta hur du synkroniserar CRM-verktyget med Adobe Campaign. Titta på den här fallvideon om [Adobe Campaign och Microsoft Dynamics 365-integrering](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+
+## Hur utför jag rensning av mjuk cache när problemen är datorspecifika eller användarspecifika? {#perform-soft-cache-clear}
+
+Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och kan exportera data som är datorspecifika/användarspecifika, kan du behöva utföra en rensning på mjuk cache med Windows (Windows 7, Windows XP, Windows 10).
+
+När du har loggat in går du till **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. Logga sedan ut och in igen.
+
+![](assets/faq_soft_cache.png)
+
+Om detta fortfarande inte hjälper kan du försöka rensa hårddisken genom att utföra stegen nedan.
+
+## Hur rensar du hårddisken när problemen är datorspecifika eller användarspecifika? {#perform-hard-cache-clear}
+
+Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och kan exportera data som är datorspecifika/användarspecifika, kan du behöva utföra en rensning av hårddisken med Windows (Windows 7, Windows XP, Windows 10).
+
+1. På klientkonsolen väljer du **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
+
+1. Logga ut och stäng klientkonsolen (Rich Client).
+
+1. Gå till följande platser, baserat på operativsystemsversion:
+
+   * Windows 7: C:\Users\&lt; Användarnamn >\AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt; Användarnamn >\Application Data\Neolane\NL_5
+   Här ser du många XML-filer med namnet nlclient-config-&lt; alfanumeriskt värde >.xml.
+
+1. Ta bort dessa XML-filer och associerade mappar.
+
+   >[!CAUTION]
+   >
+   >Ta inte bort filen nlclient_cnx.xml.
+
+1. Logga in på klientkonsolen.
