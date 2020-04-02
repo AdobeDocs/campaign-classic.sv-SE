@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
 
 ---
 
@@ -108,7 +108,7 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Sociala nätverk (social marknadsföring) <br /> </td> 
    <td> Synkroniserar Adobe Campaign med Twitter och Facebook.<br /> </td> 
    <td> Alla</td> 
-   <td> <a href="../../social/using/starting-workflows.md">Läs mer</a> </td> 
+   <td> <a href="../../social/using/about-social-marketing.md">Läs mer</a> </td> 
   </tr> 
   <tr> 
    <td> Kontroll av transaktionsmeddelanden (Message Center - Control)<br /> </td> 
