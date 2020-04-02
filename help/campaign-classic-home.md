@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
+source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ---
 
@@ -75,7 +75,7 @@ source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
 |---|---|
 | [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Instruktionsvideor](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Klassisk kampanjdatamodell](configuration/using/about-data-model.md) |
-| [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-dokumentation](configuration/using/about-web-services.md) |
+| [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Komma igång med Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Uppgradering av Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Föråldrade och borttagna funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html) |
