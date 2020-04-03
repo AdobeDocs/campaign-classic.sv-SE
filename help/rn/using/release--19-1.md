@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
+source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 
 ---
 
@@ -74,13 +74,7 @@ _13 augusti 2019_
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 3 **april 2020**: new build (9032-...e8b36257e) som innehåller följande fix:
-
-* Vi introducerar en signaturmekanism för att spåra länkar i e-postmeddelanden för att förhindra potentiellt skadlig användning (nätfiske). Detta skyddar mot omskrivning av spårningsparametrar, som kan innehålla en URL som används för att dirigera om användaren. Den här funktionen är inaktiverad som standard. Kontakta kundtjänst om du behöver aktivera den.
-
-* Ett extra säkerhetsskydd har lagts till för att förhindra omdirigering av felformaterade URL:er som genererats från tidigare byggen eller när signaturmekanismen är inaktiverad. Kontakta kundtjänst om du behöver använda den.
-
-![](assets/orange_2.png) 5 **mars 2020**: new build (9032-...205c981c3) which includes the following fix:
+![](assets/green_2.png) 5 **mars 2020**: new build (9032-...205c981c3) which includes the following fix:
 
 * Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
 
