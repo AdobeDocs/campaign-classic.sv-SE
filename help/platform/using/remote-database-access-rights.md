@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
+source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
 
 ---
 
@@ -46,7 +46,7 @@ I allmänhet är följande rättigheter nödvändiga:
 * **LÄS data**: skrivskyddad åtkomst till tabeller som innehåller kunddata,
 * **LÄS &#39;MetaData&#39;**: åtkomst till serverns datakataloger för att få fram tabellstrukturen,
 * **LADDA**: massinläsning i arbetstabeller (krävs vid arbete med samlingar och kopplingar),
-* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION**,
+* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION** (endast för arbetstabeller som genererats av Adobe Campaign),
 * **FÖRKLARA** (rekommenderas): för övervakning av prestanda vid problem,
 * **SKRIV data** (beroende på integrationsscenariot).
 
@@ -56,11 +56,11 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 
 |   | Snöflinga | Skift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Ansluter till fjärrdatabas** | ANVÄNDNING PÅ LAGERHUS OCH ANVÄNDNING PÅ DATABASBEHÖRIGHETER | Skapa en användare som är länkad till AWS-kontot | SKAPA SESSIONSprivilegium | ANSLUT behörighet | BEHÖRIGHET FÖR ANSLUT | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER |
+| **Ansluter till fjärrdatabas** | ANVÄNDNING I LAGERHUS, ANVÄNDNING I DATABAS OCH ANVÄNDNING I SCHEMABEHÖRIGHETER | Skapa en användare som är länkad till AWS-kontot | SKAPA SESSIONSprivilegium | ANSLUT behörighet | BEHÖRIGHET FÖR ANSLUT | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER |
 | **Skapa tabeller** | Behörighet SKAPA TABELL PÅ SCHEMA | SKAPA privilegium | Privilegium SKAPA TABELL | SKAPA TABELLBEHÖRIGHET | SKAPA privilegium | SKAPA privilegium |
 | **Skapa index** | Ej tillämpligt | SKAPA privilegium | INDEX- eller CREATE EVENTUELL INDEX-BEHÖRIGHET | ALTERNATIVbehörighet | SKAPA privilegium | INDEX-privilegium |
 | **Skapa funktioner** | SKAPA FUNKTION PÅ SCHEMABEHÖRIGHET | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA FUNKTIONSTILLSTÅND | Behörighet att använda | SKAPA ROUTINprivilegium |
-| **Skapa procedurer** | BEHÖRIGHET ATT SKAPA PROCEDUR PÅ SCHEMA | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA PROCESSTILLSTÅND | Behörighet för ANVÄNDNING (procedurer är funktioner) | SKAPA ROUTINprivilegium |
+| **Skapa procedurer** | Ej tillämpligt | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA PROCESSTILLSTÅND | Behörighet för ANVÄNDNING (procedurer är funktioner) | SKAPA ROUTINprivilegium |
 | **Ta bort objekt (tabeller, index, funktioner, procedurer)** | Äga objektet | Äga objektet eller vara superanvändare | DROP ANY &lt; object > privilege | ALTERNATIVbehörighet | Tabell: äger tabellindexet: äger indexfunktionen: äger funktionen | DROP-privilegium |
 | **Övervaka körningar** | MONITOR-behörighet för det begärda objektet | Ingen behörighet krävs för kommandot EXPLAIN | Behörighet INSERT och SELECT samt nödvändiga privilegier för att köra den sats som EXPLAIN-planen baseras på | SHOWPLAN-behörighet | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium |
 | **Skriver data** | INSERT- och/eller UPDATE-behörigheter (beroende på skrivåtgärd) | INSERT- och UPDATE-behörigheter | INFOGA OCH UPPDATERA ELLER INFOGA OCH UPPDATERA VALFRITT TABELLBEHÖRIGHET | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
