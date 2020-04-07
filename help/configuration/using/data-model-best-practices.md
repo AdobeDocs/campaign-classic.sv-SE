@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
+source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
 
 ---
 
@@ -141,7 +141,11 @@ Det finns två typer av sekvenser:
 * **Delad**: fler än en tabell skulle välja sitt ID från samma sekvens. Det innebär att om ett ID &#39;X&#39; används av en tabell, så har ingen annan tabell som delar samma sekvens en post med ID &#39;X&#39;. **XtkNewId** är standardsekvensen som är tillgänglig i Adobe Campaign.
 * **Dedikerad**: bara en tabell plockar sina ID:n från sekvensen. Sekvensnamnet innehåller vanligtvis tabellnamnet.
 
-Sekvensen är ett 32-bitars heltalsvärde med ett begränsat maximalt antal tillgängliga värden: 2,14 miljarder. När det maximala värdet har uppnåtts återgår sekvensen till 0 för att återvinna ID:n. Om gamla data inte har rensats blir resultatet ett brott mot en unik nyckel, vilket blir en blockerare för plattformens hälsa och användning. Adobe Campaign skulle inte kunna skicka ut kommunikation (när den påverkar leveransloggtabellen) och resultatet skulle påverkas starkt.
+>[!IMPORTANT]
+>
+>Sekvensen är ett 32-bitars heltalsvärde med ett begränsat maximalt antal tillgängliga värden: 2,14 miljarder. När det maximala värdet har uppnåtts återgår sekvensen till 0 för att återvinna ID:n.
+>
+>Om gamla data inte har rensats blir resultatet ett brott mot en unik nyckel, vilket blir en blockerare för plattformens hälsa och användning. Adobe Campaign skulle inte kunna skicka ut kommunikation (när den påverkar leveransloggtabellen) och resultatet skulle påverkas starkt.
 
 Därför skulle en kund som skickar 6 miljarder e-postmeddelanden årligen med en kvarhållningsperiod på 180 dagar för sina loggar få slut på ID:n på 4 månader. Om du vill förhindra en sådan utmaning måste du se till att du har rensningsinställningar för volymerna. Mer information finns i [det här avsnittet](#data-retention).
 
