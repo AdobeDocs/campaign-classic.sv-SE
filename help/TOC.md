@@ -1,11 +1,11 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic Help
+user-guide-title: Hjälp om Adobe Campaign Classic
 index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
+source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
 
 ---
 
@@ -385,17 +385,22 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [Inkommande e-postmeddelanden](workflow/using/inbound-emails.md)
       + [Inkommande SMS](workflow/using/inbound-sms.md)
    + Användningsexempel {#use-cases}
-      + [Använda lokal godkännandeaktivitet](workflow/using/using-the-local-approval-activity.md)
-      + [Skicka en rapport till en lista](workflow/using/sending-a-report-to-a-list.md)
-      + [Arbetsflöden för övervakning](workflow/using/supervising-workflows.md)
-      + [Samordna datauppdateringar](workflow/using/coordinating-data-updates.md)
-      + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
-      + [Förbättra data](workflow/using/enriching-data.md)
-      + [A/B-tester](workflow/using/a-b-testing.md)
-      + [Använda aggregat](workflow/using/using-aggregates.md)
-      + [Skicka ett födelsedagsmeddelande](workflow/using/sending-a-birthday-email.md)
-      + [Läser in leveransinnehåll](workflow/using/loading-delivery-content.md)
-      + [Arbetsflöde för flerkanalsleverans](workflow/using/cross-channel-delivery-workflow.md)
+      + Leveranser {#deliveries}
+         + [Använda lokal godkännandeaktivitet](workflow/using/using-the-local-approval-activity.md)
+         + [A/B-tester](workflow/using/a-b-testing.md)
+         + [Skicka ett födelsedagsmeddelande](workflow/using/sending-a-birthday-email.md)
+         + [Läser in leveransinnehåll](workflow/using/loading-delivery-content.md)
+         + [Arbetsflöde för flerkanalsleverans](workflow/using/cross-channel-delivery-workflow.md)
+         + [E-postberikning med anpassade datumfält](workflow/using/email-enrichment-with-custom-date-fields.md)
+      + Övervakning {#monitoring}
+         + [Skicka en rapport till en lista](workflow/using/sending-a-report-to-a-list.md)
+         + [Arbetsflöden för övervakning](workflow/using/supervising-workflows.md)
+         + [Skicka personaliserade aviseringar till operatorer](workflow/using/sending-personalized-alerts-to-operators.md)
+      + Datahantering {#data-management}
+         + [Samordna datauppdateringar](workflow/using/coordinating-data-updates.md)
+         + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
+         + [Förbättra data](workflow/using/enriching-data.md)
+         + [Använda aggregat](workflow/using/using-aggregates.md)
       + Utforma frågor {#designing-queries}
          + [Frågar mottagartabellen](workflow/using/querying-recipient-table.md)
          + [Frågar leveransinformation](workflow/using/querying-delivery-information.md)
@@ -405,8 +410,6 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
          + [Lägga till ett beräkningsfält av uppräkningstyp](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Skapa ett filter](workflow/using/creating-a-filter.md)
          + [Filtrera duplicerade mottagare](workflow/using/filtering-duplicated-recipients.md)
-      + [Skicka personaliserade aviseringar till operatorer](workflow/using/sending-personalized-alerts-to-operators.md)
-      + [E-postberikning med anpassade datumfält](workflow/using/email-enrichment-with-custom-date-fields.md)
    + Övervaka arbetsflöden {#monitoring-workflows}
       + [Övervaka körning av arbetsflöde](workflow/using/monitoring-workflow-execution.md)
       + [Övervaka tekniska arbetsflöden](workflow/using/monitoring-technical-workflows.md)
