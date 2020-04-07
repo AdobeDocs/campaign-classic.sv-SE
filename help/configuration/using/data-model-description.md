@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
+source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
 
 ---
 
@@ -73,6 +73,8 @@ Relationstabellen NmsRcpGrpRel innehåller bara de två fälten som motsvarar id
 ### NmsService {#NmsService}
 
 Tabellen matchar **nms:service** -schemat.
+
+I Adobe Campaign kan du skapa och hantera prenumerationer på informationstjänster (ämnen). Registret NmsService lagrar definitionen av de informationstjänster (ämnen) som du erbjuder dina mottagare att prenumerera på (till exempel ett nyhetsbrev).
 
 Tjänster är enheter som liknar grupper (statiska mottagargrupper), förutom att de distribuerar mer information och gör det enkelt att hantera prenumerationer och avbeställningar via formulär.
 
