@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1afd6ad61db2062ee804c8a2add56a21578ef19
+source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
 
 ---
 
@@ -30,4 +30,14 @@ Du kan skapa en erbjudandekatalog som kommer att interagera med inkommande och u
 
 Med Interaction kan du skapa och hantera en katalog med erbjudanden och konfigurera regler och programteman som är länkade till dem. Beroende på vilken kanal du väljer kan innehållet anpassas tack vare olika återgivningsfunktioner. Slutligen kan du använda simuleringsmodulen för att beräkna effekten av en erbjudandepresentation.
 
-Titta på den här videon om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction: Översikt över [Adobe Campaign Interaction](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com).
+![](assets/Offermgt2.png)
+
+Titta på den här videon om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction: Översikt över [Adobe Campaign Interaction](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+
+## Relaterade ämnen
+
+| Användbara sidor | Ytterligare resurser |
+|---|---|
+| [Interaktionsimplementeringssteg](../../interaction/using/implementation-steps.md) | [Distribution av testerbjudanden](../../interaction/using/about-offers-simulation.md) |
+| [Live-/designmiljöer](../../interaction/using/live-design-environments.md) | [Lägga till ett erbjudande i ett e-postmeddelande](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md) | [Användningsfall: lägga till ett erbjudande på en webbplats](../../interaction/using/offers-on-an-inbound-channel.md) |
