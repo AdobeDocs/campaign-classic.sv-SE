@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: 05831dbcf2450600a9f2f91f87c4440d7e599c9d
 
 ---
 
@@ -440,8 +440,8 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span><br /> </td> 
    <td> JavaScript-bibliotek som ska anpassas för att berika händelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> enrichRtEvents(aiEventId);: berikar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid som bearbetas).</p> </li> 
-     <li> <p> <span class="uicontrol"></span> enrichBatchEvents(aiEventId);: registrerar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för batchhändelser som bearbetas).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : berikar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid som bearbetas).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : registrerar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för batchhändelser som bearbetas).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -452,8 +452,8 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> <span class="uicontrol">MC_RoutingCustomJs</span><br /> </td> 
    <td> JavaScript-bibliotek som ska anpassas för routningshändelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> dispatchRtEvent(iEventId);: returnerar det interna namnet på det transaktionsmeddelande som valts för att bearbeta realtidshändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för realtidshändelsen som bearbetas).</p> </li> 
-     <li> <p> <span class="uicontrol"></span> dispatchBatchEvent(iEventId);: returnerar det interna namnet på transaktionsmeddelandet som valts för att bearbeta batchhändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för batchhändelsen som bearbetats).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som valts för att bearbeta realtidshändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för realtidshändelsen som bearbetas).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : returnerar det interna namnet på transaktionsmeddelandet som valts för att bearbeta batchhändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för batchhändelsen som bearbetats).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -635,7 +635,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span><br /> </td> 
-   <td> Gör att du kan konfigurera en separat databas för fungerande tabeller på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">Läs mer</a><br /> </td> 
+   <td> Gör att du kan konfigurera en separat databas för arbetstabeller på Microsoft SQL Server för att optimera säkerhetskopiering och replikering. Alternativet motsvarar namnet på den tillfälliga databasen: Arbetstabeller skrivs i den här databasen om de anges. Exempel: 'tempdb.dbo.' (Observera att namnet måste sluta med en punkt).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Läs mer</a><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span><br /> </td> 
@@ -670,7 +670,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span><br /> </td> 
    <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort föråldrade mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> Datatyp:Heltal</p> </li> 
+     <li> <p> <span class="uicontrol">Datatyp:</span> Heltal</p> </li> 
      <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
@@ -680,7 +680,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span><br /> </td> 
-   <td> <br /> Information om felet som inträffade i Podumgrade, enligt syntaxen nedan: <strong>{Build number}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
+   <td> Information om felet som inträffade i Podumgrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The lessThan/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XTKCleanup_NoStats</span><br /> </td> 
