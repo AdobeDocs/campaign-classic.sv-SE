@@ -12,7 +12,7 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 10419ee0fb466bddd05ab67087ccdbfdda1e48c8
+source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
 
 ---
 
@@ -52,8 +52,8 @@ Kunderna rekommenderas att granska om de använder funktionen/funktionen i den a
    <tr> 
    <td>Javascript SDK Security<br></td>
    <td>decryptString<br></td>
-   <td><p>Av säkerhetsskäl är dekrypptString API inte längre tillgängligt som standard för nya installationer.</p> 
-   <p>I samband med en efteruppgradering till 18.6 (och senare) är denna API inte längre aktiverad och har ersatts av funktionen dekrypptPassword.</p><br> </td>
+   <td><p>Av säkerhetsskäl är <em>dekrypptString</em> API inte längre tillgängligt som standard för nya installationer.</p> 
+   <p>I samband med en efteruppgradering till 18.6 (och senare) är denna API inte längre aktiverad och har ersatts av funktionen <em>dekrypptPassword</em> .</p><br> </td>
   </tr> 
  </tbody> 
 </table>
@@ -125,7 +125,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Standar
    <tr> 
    <td>Dokumentation för kampanj-API:er - jsapi.chm-fil<br></td>
    <td>Campaign Classic-API:er finns nu på en dedikerad sida. Om du använde filen jsapi.chm bör du nu hänvisa till <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">den nya onlineversionen</a>.</td>
-   <td>&lt;19.1</td>
+   <td>19.1</td>
   </tr> 
   <tr> 
    <td>Kampanjsamordning - prediktiv marknadsföring</td>
