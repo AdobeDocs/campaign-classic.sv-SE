@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
@@ -29,9 +29,17 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sitt Adobe ID. In
 * Lösenordshanteringsprincip för säkerhetslösenord.
 * Användning av Federated ID-konton (extern ID-leverantör).
 
-Mer information om olika typer av Adobe ID finns i: [https://helpx.adobe.com/en/enterprise/help/identity.html](https://helpx.adobe.com/en/enterprise/help/identity.html)
+Adobes identitetshanteringssystem hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-id:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
 >[!CAUTION]
 >
->IMS-implementeringen är strikt reserverad för Adobes tekniska administratörer. IMS-implementeringen är en komplex process som kan ta lite tid.
+>IMS-implementeringen är strikt reserverad för Adobes tekniska administratörer. IMS-implementeringen är en komplex process som kan vara lång att implementera.
+
+## Relaterade ämnen
+
+| Användbara sidor | Ytterligare resurser |
+|---|---|
+| [Konfigurera IMS](../../integrations/using/configuring-ims.md) | [Vanliga frågor om Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [Implementera IMS](../../integrations/using/implementing-ims.md) | [Åtkomsthantering](../../platform/using/access-management.md) |
+| [IMS-felsökning](../../integrations/using/ims-troubleshooting.md) | [Installera Campaign-paket](../../installation/using/installing-campaign-standard-packages.md) |
 
