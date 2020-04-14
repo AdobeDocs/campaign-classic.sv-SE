@@ -1,6 +1,6 @@
 ---
 title: Om Campaign-integreringar
-description: Lär dig mer om funktionella integreringar som finns mellan den aktuella versionen av Adobe Campaign och [Adobe Experience Cloud-lösningar]
+description: Lär dig mer om funktionsintegreringar som finns mellan den aktuella versionen av Adobe Campaign och [Adobe Experience Cloud-lösningar]
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,26 +13,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
 
-# Om Campaign-integreringar{#about-campaign-integrations}
-
-Lär dig mer om funktionella integreringar som finns mellan den aktuella versionen av Adobe Campaign och [Adobe Experience Cloud-lösningar](https://marketing.adobe.com/resources/help/en_US/mcloud/marketing-cloud-integrations.html) och [bastjänster](https://marketing.adobe.com/resources/help/en_US/mcloud/core-services-landing.html).
+# Om Campaign-integreringar {#about-campaign-integrations}
 
 Adobe Experience Cloud är en omfattande uppsättning förstklassiga, integrerade lösningar som bygger på en gemensam dataplattform med en gemensam uppsättning kraftfulla bastjänster.
 
-Upptäck hela listan över Adobes lösningar och bastjänster som kan integreras med Adobe Campaign, samt tillhörande dokumentation, på [den här sidan](#experience-cloud-integrations).
+Lär dig mer om funktionsintegreringar som finns mellan Adobe Campaign och [Adobe Experience Cloud-lösningar](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) och [bastjänster](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html). Sedan kan ni modernisera era implementeringar av lösningar och implementera Experience Cloud så att ni kan använda funktioner som kundattribut och målgrupper.
+
+En fullständig lista över Adobes lösningar och bastjänster som kan integreras med Adobe Campaign, samt tillhörande dokumentation, finns i [det här avsnittet](#experience-cloud-integrations).
+
+![](assets/ExCloud-solutions.png)
+
 
 >[!CAUTION]
 >
 >De flesta av dessa integreringar kräver att du loggar in via ett Adobe ID (IMS). Mer information om den här implementeringen finns på [den här sidan](../../integrations/using/about-adobe-id.md).
 >
->IMS-implementering är en komplex process som måste planeras framåt eftersom den kan ta lite tid. Det är förbehållet Adobes tekniska administratörer.
+>Observera att IMS-implementering är en komplex process som kan vara lång. Det är förbehållet Adobes tekniska administratörer.
 
-## Arbeta med Experience Cloud-lösningar {#working-with-experience-cloud-solutions}
+## Länka lösningar {#working-with-experience-cloud-solutions}
 
 Beroende på din miljö kan flera lösningar länkas till Adobe Experience Cloud. De är länkade som organisationer. En **organisation** är den enhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning i Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla Experience Cloud-produkter och -lösningar. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
@@ -59,8 +62,8 @@ Följande tabell ger tillgång till tillgänglig integreringsdokumentation för 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Campaign Standard</strong> (Prime offer)<br /> </td> 
-   <td> Gör att ni kan replikera data till <strong>Campaign Standard</strong>, och kombinera det bästa av båda programmen. Campaign Classic v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign Classic v7 gör att Campaign Standard kan utnyttja omfattande data i en användarvänlig miljö.<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Läs mer</a> om Adobe Campaign Classic - Adobe Campaign Standard-integrering.</p><br /></td> 
+   <td> <strong>Adobe Customer Data Platform i realtid</strong><br /> </td> 
+   <td> Integrationen mellan Adobe Campaign och Adobe Customer Data Platform i realtid gör att ni kan dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Läs mer</a> om Campaign - Integrering av Adobes kunddataplattform i realtid.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>IMS - Adobe ID</strong><br /> </td> 
@@ -88,15 +91,15 @@ Följande tabell ger tillgång till tillgänglig integreringsdokumentation för 
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud-utlösare</strong><br /> </td> 
-   <td> Integrationen mellan <strong>nyckeltjänsten</strong> Triggers och Adobe Campaign gör att ni kan skicka personaliserade e-postmeddelanden till era kunder som en reaktion på specifika beteenden som Adobe Analytics spårar på er webbplats. Mer information finns i följande <a href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html">artikel</a>.<br /> <p><a href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html">Läs mer</a> om Adobe Campaign - Experience Cloud utlöser integrering.</p><br /> </td> 
+   <td> Integrationen mellan <strong>nyckeltjänsten</strong> Triggers och Adobe Campaign gör att ni kan skicka personaliserade e-postmeddelanden till era kunder som en reaktion på specifika beteenden som Adobe Analytics spårar på er webbplats.<br /> <p><a href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html">Läs mer</a> om Adobe Campaign - Experience Cloud utlöser integrering.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics - Data Connectors</strong><br /> </td> 
    <td> <strong>Med datakopplingar</strong> (som tidigare kallades Adobe Genesis) kan Adobe Campaign och Adobe Analytics interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer från Adobe Campaign till Adobe Analytics - Data Connector.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Läs mer</a> om Campaign - Integrering med Data Connectors.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Customer Data Platform i realtid</strong><br /> </td> 
-   <td> Integrationen mellan Adobe Campaign och Adobe Customer Data Platform i realtid gör att ni kan dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Läs mer</a> om Campaign - Integrering av Adobes kunddataplattform i realtid.</p><br /> </td> 
+   <td> <strong>Adobe Campaign Standard</strong> (Prime offer)<br /> </td> 
+   <td> Gör att ni kan replikera data till <strong>Campaign Standard</strong>, och kombinera det bästa av båda programmen. Campaign Classic v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign Classic v7 gör att Campaign Standard kan utnyttja omfattande data i en användarvänlig miljö.<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Läs mer</a> om Adobe Campaign Classic - Adobe Campaign Standard-integrering.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
