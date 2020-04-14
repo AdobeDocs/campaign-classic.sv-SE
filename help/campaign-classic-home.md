@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
+source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 
 ---
 
@@ -16,11 +16,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ## Nyheter
 
-* **[Integritetshantering](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>Läs mer om hur Adobe Campaign kan hjälpa er att uppfylla era integritetskrav.
+* **[Integritetsefterlevnad](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Läs mer om hur Adobe Campaign kan hjälpa er med er sekretessefterlevnad
 
-* **[Spårningsguide](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>Förstå spårningsfunktioner i Campaign
-
-* **[Underhållsguide](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>Lär dig övervaka Campaign-instansen och -processerna
+* **[Spårningsfunktioner](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> Förstå spårningsfunktioner i Campaign
 
 * **[Interaktivt innehåll med AMP](delivery/using/defining-interactive-content.md)**<br/>Lär dig hur du skickar dynamiska e-postmeddelanden med det nya[AMP-formatet för e-post](https://amp.dev/about/email/)
 
@@ -74,9 +72,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 | Användbara sidor | Resurser för utvecklare |
 |---|---|
 | [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Instruktionsvideor](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Klassisk kampanjdatamodell](configuration/using/about-data-model.md) |
-| [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Komma igång med Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
+| [Instruktionsvideor](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Kampanjdatamodell](configuration/using/about-data-model.md) |
+| [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [Kampanj-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Kom igång med Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Uppgradering av Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Föråldrade och borttagna funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Dokumentation för kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Tekniska anteckningar](https://helpx.adobe.com/campaign/kb/article-list.html) |
+| [Kontrollpanelen för kampanj](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Övervaka bästa praxis](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
