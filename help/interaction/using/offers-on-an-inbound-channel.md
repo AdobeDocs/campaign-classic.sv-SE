@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
+source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
 
 ---
 
@@ -100,7 +100,7 @@ Du får en trädstruktur som innehåller din nya miljö:
 ### Skapa anonyma erbjudanden {#creating-anonymous-offers}
 
 1. Gå till kategorin som du nyss skapade.
-1. Klicka **[!UICONTROL New]**.
+1. Klicka på **[!UICONTROL New]**.
 
    ![](assets/offer_inbound_anonymous_example_013.png)
 
@@ -310,7 +310,7 @@ I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adob
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. Klicka på **[!UICONTROL Target identification]** fliken **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Target identification]** tab, click **[!UICONTROL Add]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
