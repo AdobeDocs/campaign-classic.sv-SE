@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
@@ -26,12 +26,12 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Så här använder du integreringen med IMS:
 
-* Du måste ha en Adobe Marketing Cloud-organisation och IMS-ID (tillhandahålls när du först ansluter till Adobe Marketing Cloud).
-* Du måste lägga till användare i Marketing Cloud. Mer information finns på den här sidan: [https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html).
+* Du måste ha en Adobe Experience Cloud-organisation och IMS-ID (tillhandahålls när du först ansluter till Adobe Experience Cloud).
+* Du måste lägga till användare i Experience Cloud. For more on this, refer to [this page](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!NOTE]
 >
->Se till att användarna är länkade till de Adobe Marketing Cloud-grupper som ska synkroniseras med Adobe Campaign. Se [Konfigurera det externa kontot](#configuring-the-external-account).
+>Se till att användarna är länkade till de Adobe Experience Cloud-grupper som ska synkroniseras med Adobe Campaign. Se [Konfigurera det externa kontot](#configuring-the-external-account).
 
 ## Konsolen uppdateras {#updating-the-console}
 
@@ -55,7 +55,7 @@ Konfigurera det externa **Adobe Experience Cloud** -kontot i **[!UICONTROL Admin
 
 Ange följande information:
 
-* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobes support. Mer information finns i [Vanliga frågor för Adobe Experience Cloud-administratörer](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html).
+* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobes support. Mer information finns i [Vanliga frågor för Adobe Experience Cloud-administratörer](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html).
 
    Adressen **[!UICONTROL Callback server]** måste anges i **https**. Det här fältet motsvarar åtkomstwebbadressen för din Adobe Campaign-instans.
 
