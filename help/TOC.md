@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
+source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 
 ---
 
@@ -22,6 +22,7 @@ source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
+   + [Föråldrade funktioner](rn/using/deprecated-features.md)
 + Komma igång {#getting-started}
    + Börja med Adobe Campaign {#starting-with-adobe-campaign}
       + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
