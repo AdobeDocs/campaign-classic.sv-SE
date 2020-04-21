@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -39,6 +39,8 @@ Avsnittet som beskriver den fördefinierade datamodellen för Adobe Campaign har
 Användningsexempel från guiden&quot;Automatisera med arbetsflöden&quot; har omorganiserats till tematiska avsnitt. [Läs mer](../../workflow/using/using-the-local-approval-activity.md)
 
 Avsnitten [Signera e-postkvalificering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) och [E-posthanteringsregler](../../delivery/using/understanding-delivery-failures.md#email-management-rules) har förbättrats med uppdaterad information.
+
+Adobe Campaign Enhanced MTA article has been updated. Det gäller nu endast Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
 
 ## Mars 2020 {#march-2020}
 
@@ -114,7 +116,7 @@ Avsnittet Slutprodukt har flyttats, omorganiserats och förbättrats med uppdate
 
 Nu finns ett nytt avsnitt som beskriver grunderna i datamodellen för Adobe Campaign Classic och hur du får tillgång till beskrivningen av varje tabell. [Läs mer](../../configuration/using/about-data-model.md)
 
-Artikeln Förbättrad MTA för Adobe Campaign har uppdaterats med mer detaljerad information om hur du installerar ett specifikt typologipaket för instanser som inte lägger till de obligatoriska Enhanced MTA-rubrikerna i varje meddelande. [Läs mer](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html#impacts)
+Artikeln Förbättrad MTA för Adobe Campaign har uppdaterats med mer detaljerad information om hur du installerar ett specifikt typologipaket för instanser som inte lägger till de obligatoriska Enhanced MTA-rubrikerna i varje meddelande. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 Användningsexempel för frågedesign har omorganiserats i olika avsnitt. [Läs mer](../../workflow/using/querying-recipient-table.md)
 
@@ -152,13 +154,13 @@ Säkra SMS-meddelanden (TLS) - [Läs mer](https://helpx.adobe.com/campaign/kb/sm
 
 **Andra dokumentationsuppdateringar som följer med releasen**
 
-Adobe Campaign Förbättrad MTA-dokumentation finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)
+Adobe Campaign Förbättrad MTA-dokumentation finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i läget&quot;Starta så snart som möjligt&quot; i en kampanj. [Läs mer](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 De nya alternativen NmsOperation_DeliveryPreparationWindow och WdbcKillSessionPolicy har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Nu finns ett nytt dokument som beskriver grunderna i Adobe Campaign Classic-datamodellen. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Nu finns ett nytt dokument som beskriver grunderna i datamodellen i Adobe Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 Det nya alternativet **Maximal körtidsåtgång** för personalisering i leveransegenskaperna beskrivs i det här [avsnittet](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
