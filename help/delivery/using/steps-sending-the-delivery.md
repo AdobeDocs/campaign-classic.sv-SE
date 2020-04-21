@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -133,7 +133,7 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
 
       I **[!UICONTROL Start]** kolumnen anger du fördröjningen mellan början av två på varandra följande påfyllnader. Ange ett fast tal eller en procentsats i **[!UICONTROL Size]** kolumnen.
 
-      I exemplet nedan representerar den första vågen 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda att börja med 6 timmars intervall.
+      I exemplet nedan representerar den första vågen 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
    En viss typologiregel **[!UICONTROL Wave scheduling check]** säkerställer att den sista påfyllnaden planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, som är konfigurerade på fliken **[!UICONTROL Typology]** i leveransegenskaperna, presenteras i [valideringsprocessen med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
@@ -178,13 +178,13 @@ I den centrala delen av **[!UICONTROL Delivery]** fliken för leveransparametrar
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Som standard schemaläggs fem återförsök till den första dagen i leveransen med ett minsta intervall på en timme som sprids ut över dygnets 24 timmar. Ett nytt försök per dag programmeras efter detta och fram till leveransdatumet, som definieras på **[!UICONTROL Validity]** fliken (se [Definiera giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)).
+Som standard schemaläggs fem återförsök till leveransdagens första dag med ett minsta intervall på en timme som sprids ut över dagens 24 timmar. Ett nytt försök per dag programmeras efter detta och fram till leveransdatumet, som definieras på **[!UICONTROL Validity]** fliken (se [Definiera giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)).
 
 >[!NOTE]
 >
 >Om du har uppgraderat till Förbättrat MTA används inte längre inställningarna för nya försök i leveransen för värdbaserade eller hybridinstallationer i Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 >
->Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) -dokumentet.
+>Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) -dokumentet.
 
 
 ## Definiera giltighetsperiod {#defining-validity-period}
@@ -205,4 +205,4 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 >
 >Om du har uppgraderat till Förbättrat MTA för värdbaserade installationer eller hybridinstallationer kommer inställningen i **[!UICONTROL Delivery duration]** kampanjleveranserna endast att användas om den är inställd på **3,5** dagar eller mindre. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
 >
->Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) -dokumentet.
+>Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) -dokumentet.
