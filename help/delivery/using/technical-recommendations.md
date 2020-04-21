@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -26,7 +26,7 @@ Flera tekniker, konfigurationer och verktyg som du kan använda för att förbä
 
 ### Omvänd DNS {#reverse-dns}
 
- Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta korrekt pekar tillbaka till IP-adressen.
+Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta korrekt pekar tillbaka till IP-adressen.
 
 En viktig punkt i nätverkskonfigurationen är att se till att rätt omvänd DNS har definierats för var och en av IP-adresserna för utgående meddelanden. Det innebär att det för en viss IP-adress finns en omvänd DNS-post (PTR-post) med matchande DNS-post (A-post) som repeterar den ursprungliga IP-adressen.
 
@@ -82,7 +82,7 @@ DKIM ersatte **DomainKeys** -autentisering.
 >
 >För värdbaserade eller hybridbaserade installationer, om du har uppgraderat till Enhanced MTA, signerar DKIM e-postautentisering av Förbättrat MTA. DKIM-signering av den inbyggda Campaign MTA inaktiveras i **[!UICONTROL Domain management]** tabellen som en del av den förbättrade MTA-uppgraderingen.
 >
->Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 DKIM kräver vissa förutsättningar:
 
