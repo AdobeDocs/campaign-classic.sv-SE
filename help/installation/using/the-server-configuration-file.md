@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -241,7 +241,7 @@ Här är de olika parametrarna för **dataStore** -noden. Här definieras server
   </tr> 
   <tr> 
    <td> workingDirectory<br /> </td> 
-   <td>  XPath för arbetskatalogen.<br /> </td> 
+   <td> XPath för arbetskatalogen.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> workingDirectory: XPath för arbetskatalogen. Standard: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
@@ -1556,7 +1556,7 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Om värdet är "true" använder din instans <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Om värdet är "true" använder din instans <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1768,7 +1768,7 @@ Mer information finns i [E-postoptimering](../../installation/using/email-delive
   </tr> 
   <tr> 
    <td> startWithFirstMX<br /> </td> 
-   <td> Börja alltid med högsta prioritet MX.<br /> </td> 
+   <td> Börja alltid med den högsta prioriteten MX.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2544,7 +2544,7 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> configurationPeriodSec<br /> </td> 
+   <td> conversionPeriodSec<br /> </td> 
    <td> Konsolideringsperiod<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 300<br /> </td> 
@@ -3259,7 +3259,7 @@ Mer information finns i det här [avsnittet](../../installation/using/deploying-
  </tbody> 
 </table>
 
-Här är de olika parametrarna för noden **web > redirection > reserveServer** .
+Här är de olika parametrarna för noden **web > redirection > reservedServer** .
 
 Mer information finns i [Spårning](../../installation/using/configuring-campaign-server.md#redundant-tracking)av överflödiga objekt.
 
