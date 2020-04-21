@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -90,4 +90,4 @@ Du kan välja den tidsrymd som genomflödet beräknas för. Det gör du genom at
 >
 >Om du har uppgraderat till Förbättrat MTA för värdbaserade eller hybridbaserade installationer kommer **[!UICONTROL Delivery throughput]** sidan inte längre att visa dataflödet för e-postmottagarna. Den visar dataöverföringshastigheten för vidarebefordran av meddelanden från Campaign till det förbättrade MTA-avtalet.
 >
->Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
