@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -38,4 +38,4 @@ Den här sorteringen kan ändras i meddelandemallens egenskaper enligt nedan.
 
 >[!NOTE]
 >
->Om du har uppgraderat till Förbättrat MTA för hostinginstallationer eller hybridinstallationer kan alla transaktionsmeddelanden också skickas med Förbättrat MTA i Adobe Campaign för förbättrad leverans, genomströmning och studshantering. Alla effekter är desamma som för vanliga marknadsföringsmeddelanden och de beskrivs i dokumentet Förbättrat MTA [för](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) Adobe Campaign.
+>Om du har uppgraderat till Förbättrat MTA för hostinginstallationer eller hybridinstallationer kan alla transaktionsmeddelanden också skickas med Förbättrat MTA i Adobe Campaign för förbättrad leverans, genomströmning och studshantering. Alla effekter är desamma som för vanliga marknadsföringsmeddelanden och de beskrivs i dokumentet Förbättrat MTA [för](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
