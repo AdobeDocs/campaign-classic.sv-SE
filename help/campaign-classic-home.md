@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
+source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
 
 ## Nyheter
 
-* **[Få frågor och svar om support](https://helpx.adobe.com/campaign/kb/ac-support.html)**</br>, bästa praxis, hjälpresurser och kontakt med Campaign-experter och kundtjänst
+* **[Få frågor och svar om support](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>, bästa praxis, hjälpresurser och kontakt med Campaign-experter och kundtjänst
 
 * **[Integritetsefterlevnad](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Läs mer om hur Adobe Campaign kan hjälpa er med er sekretessefterlevnad
 
