@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,10 +27,10 @@ source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasedatan</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Föråldrat</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Allmän tillgänglighet</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasedatan</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Föråldrat</strong></td> 
   </tr> 
    <tr> 
    <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
  </tbody> 
 </table>
 
-Den **sista stabila versionen** är 9032 (205c981c3). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -52,7 +52,7 @@ _7 februari 2020_
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 * Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
 
-## ![](assets/orange_2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/orange_2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
