@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,10 +27,10 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasedatan</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Föråldrat</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Allmän tillgänglighet</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasedatan</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Föråldrat</strong></td> 
   </tr> 
    <tr> 
    <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-Den **sista stabila versionen** är 9032 (205c981c3). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Version 19.1.6 - build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 - build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _3 oktober 2019_
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
 * Ett problem som förhindrade att SQL Data Management-aktiviteten användes fullt ut har åtgärdats (namngiven SQL Data Management-behörighet saknas).
 
-## ![](assets/orange_2.png) Version 19.1.5 - build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.5 - build 9033{#release-19-1-5-build-9033}
 
 _13 augusti 2019_
 
@@ -74,31 +74,35 @@ _13 augusti 2019_
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5 **mars 2020**: new build (9032-...205c981c3) which includes the following fix:
+![](assets/do-not-localize/green_2.png) 29 **april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigering:
+
+* Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
+* Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 5 **mars 2020**: new build (9032@19f73c5) som innehåller följande korrigering:
 
 * Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
 
-![](assets/orange_2.png) 17 **december 2019**: new build (9032-...9d34fb17e) which includes the following fix:
+![](assets/do-not-localize/orange_2.png) 17 **december 2019**: new build (9032@d6b8062) som innehåller följande korrigering:
 
-* Korrigerade ett spårningsproblem i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter).
-(NEO-19595)
+* Korrigerade ett spårningsproblem i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter). (NEO-19595)
 
-![](assets/orange_2.png) 11 **december 2019**: new build (9032-...e28b428b7) som innehåller följande fix:
+![](assets/do-not-localize/orange_2.png) 11 **december 2019**: new build (9032@bc4a935) som innehåller följande korrigering:
 
 * Ett prestandaproblem har korrigerats när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-![](assets/orange_2.png) 20 **november 2019**: new build (9032-...3468c7bb5) which includes the following fixes:
+![](assets/do-not-localize/orange_2.png) 20 **november 2019**: new build (9032@3468c7b) som innehåller följande korrigeringar:
 
 * Ett inloggningsproblem via IMS-autentisering har korrigerats. (NEO-17312)
 * Korrigerade ett problem när kumulativa rapporter för flera leveranser visades. (NEO-18165)
 * Korrigerade ett problem som kunde blockera eller få webbservern att krascha.
 
-![](assets/orange_2.png) 19 **september 2019**: new build (9032-...cee805c93) som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) 19 **september 2019**: new build (9032@cee805c) som innehåller följande korrigeringar:
 
 * Ett problem har korrigerats när CRM Connector för Salesforce användes. (NEO-17712)
 * Korrigerade ett indexproblem som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
 
-![](assets/orange_2.png) 13 **augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) 13 **augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
 
 * Korrigerade ett problem med schemaläggaraktiviteten som genererade oönskade felmeddelanden under guidekonfigurationen. Återställer uppdatering från NEO-11662. (NEO-17097)
 * Korrigerade en regression orsakad av NEO-12727 som kunde leda till att arbetsflöden stoppades när en testaktivitet kördes två gånger. (NEO-16835)
@@ -106,7 +110,7 @@ _13 augusti 2019_
 * Korrigerade ett problem med DKIM-nyckeln som inte längre var inbäddad i e-postmeddelanden, vilket orsakade leveransproblem. (NEO-16804)
 * Åtgärdade olika problem med arbetsflödesplanering. Arbetsflödena har schemalagts att köras en gång om dagen utan att schemaläggarens konfiguration har beaktats. (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) Version 19.1.2 - build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.2 - build 9029{#release-19-1-2-build-9029}
 
 _21 juni 2019_
 
@@ -122,7 +126,7 @@ _21 juni 2019_
 * Nu kan vi ta bort dummy-poster som skapats i Microsoft Dynamics under importarbetsflödet.
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 
-## ![](assets/orange_2.png) Version 19.1 - build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1 - build 9026{#release-19-1-build-9026}
 
 _30 maj 2019_
 
