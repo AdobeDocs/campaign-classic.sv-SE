@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
 
 ---
 
@@ -74,7 +74,7 @@ _13 augusti 2019_
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigering:
+![](assets/do-not-localize/green_2.png) 29 **april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
 
 * Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
