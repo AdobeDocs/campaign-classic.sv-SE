@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ Ett exempel på hur du använder en instansvariabel i ett arbetsflöde har lagts
 
 Alternativet &quot;WdbcOptions_TempDbName&quot; har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-FDA-matrissidan har flyttats [här](/help/rn/using/assets/fda_rdbms_rights.pdf).
+FDA-matrissidan har flyttats [här](../../platform/using/remote-database-access-rights.md).
 
 Sidan Behörighetsmatris för åtkomst har flyttats [här](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
@@ -160,7 +160,7 @@ Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i
 
 De nya alternativen NmsOperation_DeliveryPreparationWindow och WdbcKillSessionPolicy har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Nu finns ett nytt dokument som beskriver grunderna i Adobe Campaign Classic-datamodellen. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Nu finns ett nytt dokument som beskriver grunderna i datamodellen i Adobe Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 Det nya alternativet **Maximal körtidsåtgång** för personalisering i leveransegenskaperna beskrivs i det här [avsnittet](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
