@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -25,10 +25,10 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasedatan</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Föråldrat</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Allmän tillgänglighet</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasedatan</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Föråldrat</strong></td> 
   </tr> 
    <tr> 
    <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
@@ -39,15 +39,15 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
  </tbody> 
 </table>
 
-Den **sista stabila versionen** är 9032 (205c981c3). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) Version 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Version 20.1.2 - build 9123 {#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
 * Korrigerade ett problem som förhindrade versionshantering på Red Hat 7-servrar. (NEO-23332)
 
-## ![](assets/orange_2.png) Version 20.1 - build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1 - build 9122 {#release-20-1-build-9122}
 
 _17 februari 2020_
 
