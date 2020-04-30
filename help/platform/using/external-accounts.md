@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
+source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
 
 ---
 
@@ -64,7 +64,7 @@ Externa konton används av tekniska processer som tekniska arbetsflöden eller k
 
    Den nödvändiga informationen tillhandahålls vanligtvis av providern för den server som du ansluter till.
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
 Det externa kontot skapas och läggs till i listan över externa konton. Den är nu tillgänglig för dina data-/filöverföringar eller routningskonfigurationer i arbetsflödesaktiviteter och leveransegenskaper.
 
@@ -377,7 +377,7 @@ Med det **[!UICONTROL AEM (AEM instance)]** externa kontot kan ni hantera inneh�
 
    Lösenord som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
 
-Mer information finns i det här [avsnittet](../../integrations/using/about-adobe-experience-manager.md).
+For more on this, refer to this [section](../../integrations/using/about-adobe-experience-manager.md).
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
@@ -447,14 +447,14 @@ Det **[!UICONTROL Hadoop]** externa kontot möjliggör anslutning till en delad 
 
 Med det **[!UICONTROL Microsoft Dynamics CRM]** externa kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-Konfigurationen för Microsoft Dynamics Connector som ska fungera med Adobe Campaign beror på din distributionstyp.
+Konfigurationen för Microsoft Dynamics-anslutningen som ska fungera med Adobe Campaign beror på din distributionstyp.
 Med **[!UICONTROL On-premise]** - och **[!UICONTROL Office 365]** distributionstyper måste du ange följande information:
 
 ![](assets/ext_account_21.png)
 
 * **[!UICONTROL Account]**
 
-   Konto som används för att logga in i Microsoft CRM.
+   Det konto som används för att logga in på Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
@@ -483,7 +483,7 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Password credent
 
 * **[!UICONTROL Account]**
 
-   Konto som används för att logga in i Microsoft CRM.
+   Det konto som används för att logga in på Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
@@ -510,7 +510,6 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** a
    Privat nyckel kodad till Base64
 
 * **[!UICONTROL Custom Key identifier]**
-
 
 * **[!UICONTROL Key ID]**
 
@@ -564,11 +563,11 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 * **[!UICONTROL Client identifier]**
 
-   Om du vill veta var du kan hitta din klientidentifierare kan du gå till den här [sidan](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Om du vill veta var du kan hitta din klientidentifierare kan du gå till den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Om du vill veta var du hittar din säkerhetstoken kan du gå till den här [sidan](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Om du vill veta var du hittar din säkerhetstoken kan du gå till den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
