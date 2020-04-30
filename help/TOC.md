@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 ---
 
@@ -286,34 +286,34 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Om Campaign-integreringar](integrations/using/about-campaign-integrations.md)
    + Målgruppsdelning {#audience-sharing}
-      + [Dela målgrupper med Adobe Experience Cloud](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Dela målgrupper med [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Skicka begäran till Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Konfigurera integrering av delade målgrupper i Adobe Campaign](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Konfigurera integrering med delade målgrupper i [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Felsökning](integrations/using/troubleshooting.md)
       + [Importera och exportera målgrupper](integrations/using/importing-and-exporting-audiences.md)
    + Resursdelning {#asset-sharing}
-      + [Dela resurser med Adobe Experience Cloud](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Konfigurera åtkomst till resurser](integrations/using/configuring-access-to-assets.md)
+      + [Dela resurser med [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Konfigurerar åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Infoga en delad resurs](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Om Adobe Experience Manager](integrations/using/about-adobe-experience-manager.md)
+      + [Om [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om Experience Manager](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett [!DNL Experience Manager]-nyhetsbrev](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Integrera med Adobe Target](integrations/using/integrating-with-adobe-target.md)
-      + [Konfigurera integreringen med Adobe Target](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + Ansluta via ett Adobe-ID {#connecting-via-an-adobe-id}
-      + [Om Adobe ID](integrations/using/about-adobe-id.md)
-      + [Konfigurera IMS](integrations/using/configuring-ims.md)
-      + [Implementera IMS](integrations/using/implementing-ims.md)
+      + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [Konfigurerar [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Implementera [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
-      + [ACS Connector-principer och datasecykel](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector]-principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbprogram](integrations/using/synchronizing-web-applications.md)
-      + [Felsöka ACS Connector](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Felsökning av [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Introduktion {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
