@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
 
 ---
 
@@ -32,7 +32,6 @@ I Adobe Campaign finns alternativet **FDA (Federated Data Access** ) för att be
 
 Med FDA-alternativet kan du utöka din datamodell i en tredjepartsdatabas. Den identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna.
 
-
 Om du vill använda den här funktionen måste du:
 
 1. Ha en extern databas som är kompatibel med Adobe Campaign FDA-modulen. Listan över databassystem och kompatibla versioner finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Användarna måste också ha [nödvändiga behörigheter](../../platform/using/remote-database-access-rights.md) i Adobe Campaign och i den externa databasen.
@@ -41,7 +40,7 @@ Om du vill använda den här funktionen måste du:
 1. [Skapa schemat](../../platform/using/creating-data-schema.md) för den externa databasen i Adobe Campaign. På så sätt kan du känna igen den externa databasens datastruktur.
 1. Till slut [skapar du en ny målmappning](../../platform/using/defining-data-mapping.md) från det tidigare skapade schemat, om mottagarna av dina leveranser kommer från den externa databasen. Detta innebär vissa begränsningar, särskilt när det gäller att personalisera leveranserna.
 
-När dataschemat har skapats kan data bearbetas i Adobe Campaign-arbetsflöden. Mer information finns i [det här avsnittet](../../workflow/using/executing-a-workflow.md#architecture).
+När dataschemat har skapats kan data bearbetas i Adobe Campaign-arbetsflöden. For more on this, refer to [this section](../../workflow/using/accessing-an-external-database--fda-.md).
 
 ## God praxis och rekommendationer {#best-practices-and-recommendations}
 
