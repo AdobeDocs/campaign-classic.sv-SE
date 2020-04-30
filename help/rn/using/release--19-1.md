@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
+source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
 
 ---
 
@@ -78,6 +78,17 @@ _13 augusti 2019_
 
 * Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
+* Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
+* Korrigerade ett problem som kunde påverka push-meddelanden när de skickades med hög frekvens. (NEO-20516)
+* Ett problem i hanteringen av erbjudanden som kan leda till att webbservern kraschar har åtgärdats. (NEO-19482)
+* Korrigerade ett fel i LibraryOffice-hanteringen som hindrade dig från att exportera rapporter. (NEO-20982)
+* Korrigerade ett problem som orsakade ett fel när flera arbetsflöden uppgraderades med en undersökningsaktivitet.
+* Förbättrad LiveOffice-hantering för att undvika fel vid e-postförhandsgranskning med .odt-filer.
+* Förbättrad hantering av Apache-anslutning för att undvika latens i webbtjänsten.
+* Förbättrad visning av versionstagg (7 siffror) på menyn **Om** .
+* Korrigerade en regression i listhantering som förhindrade att erbjudanden publicerades.
+* Korrigerade en regression som fick rensningsarbetsflödet att krascha.
+* Korrigerade en mindre regression i rensningsarbetsflödets loggar.
 
 ![](assets/do-not-localize/orange_2.png) 5 **mars 2020**: new build (9032@19f73c5) som innehåller följande korrigering:
 
