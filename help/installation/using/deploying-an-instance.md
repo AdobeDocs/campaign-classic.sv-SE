@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ---
 
@@ -97,13 +97,13 @@ Utöver detta kan du ange **masker** som är behöriga för avsändaradressen oc
 
 I Adobe Campaign-databasen måste alla e-postadresser skapas enligt följande: `x@y.z`. Tecknen **x**, **y** och **z** får inte vara tomma och får inte innehålla otillåtna tecken.
 
-Här definierar du vilka tecken som är tillåtna (&#39;datapolicy&#39;) i databasens e-postfält. Tecken som inte finns med i listan kommer att förbjudas och nekas därför när information matas in i databasen via gränssnittet, via ett webbformulär eller när data importeras.
+Här definierar du vilka tecken som är tillåtna (&#39;datapolicy&#39;) i databasens e-postfält. Tecken som inte finns med i listan kommer att förbjudas och nekas därför när information matas in i databasen via gränssnittet via ett webbformulär och när data importeras.
 
-Två listor är tillgängliga: Endast **** Europa eller **USA**. Andra tecken kan läggas till om det behövs.
+Två listor är tillgängliga: **Endast** Europa eller **USA**. Andra tecken kan läggas till om det behövs.
 
 ### Leveransparametrar {#delivery-parameters}
 
-**De** avancerade parametrarna.. Med hjälp av länken kan du komma åt leveransalternativ, parametrar som är länkade till återförsök och karantän.
+De **avancerade parametrarna..** Med hjälp av länken kan du komma åt leveransalternativ, parametrar som är länkade till återförsök och karantän.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -288,7 +288,7 @@ I listrutan **Prioritet** : Välj &quot;Normal&quot;, &quot;Hög&quot; eller &qu
 
 ### Avancerade parametrar {#advanced-parameters}
 
-**De** avancerade parametrarna.. -länken gör att du kan komma åt alternativen för återförsök och karantän.
+De **avancerade parametrarna..** -länken gör att du kan komma åt alternativen för återförsök och karantän.
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
