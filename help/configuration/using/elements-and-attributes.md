@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ---
 
@@ -235,7 +235,7 @@ compute-string:==EMPTY
 
 ### Barn {#children-1}
 
- Ingen
+Ingen
 
 ### Beskrivning {#description-1}
 
@@ -284,7 +284,7 @@ villkor:==TOM
 
 ### Barn {#children-2}
 
- Ingen
+Ingen
 
 ### Beskrivning {#description-2}
 
@@ -404,11 +404,11 @@ CREATE INDEX DocNewSchemaUser_myIndex ON DocNewSchemaUser(sEmail, sPhone);
 
 ### Innehållsmodell {#content-model-4}
 
-element:==(attribute)| compute-string| dbindex| standard| element| hjälp| join| nyckel| sysFilter| translatDefault)
+element:==(attribute) | compute-string | dbindex | standard | element | hjälp | join | nyckel | sysFilter | translatDefault)
 
 ### Attribut {#attributes-4}
 
-_operation (string), advanced (boolean), aggregate (string), applicableIf (string), autopk (boolean), beginTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boobox) lean), doesNotSupportDiff (booleskt), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (booleskt), feature (string), featureDate (booleskt), filterPath (sträng), folderLink (sträng), folderModelModel (model string), folderProcess (string), fullLoad (boolesk), hierarkisk (boolesk), hierarkisk sökväg (sträng), img (sträng), inout (sträng), integritet (sträng), label (sträng), labelSingular (sträng), length (sträng), localizable (boolesk), name (MNTOKEN), noDbIndex (boolesk), no Nyckel (booleskt), sorterad (booleskt), överflödig (booleskt), pkSequence (sträng), pkgStatus (sträng), ref (sträng), obligatoriskt (booleskt), revAdvanced (booleskt), revCardinality (sträng), revDesc (sträng), revExternalJoin (booleskt), revIntegrity (sträng) sträng), revLink (sträng), revTarget (sträng), revVisibleIf (sträng), sql (booleskt), sqlname (sträng), sqltable (sträng), tableSpace (sträng), tableSpaceIndex (sträng), target (MNTOKEN), template (sträng), temporaryTable (booleskt), translatedDefault (sträng), translateExpr (sträng) sträng), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
+_operation (string), advanced (boolean), aggregate (string), applicableIf (string), autopk (boolean), beginTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boobox) lean), doesNotSupportDiff (boolesk), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (boolean), feature (string), featureDate (boolean), filterPath (string), folderLink (string), folderModelModel (string) string), folderProcess (string), fullLoad (boolesk), hierarkisk (boolesk), hierarkisk sökväg (sträng), img (sträng), inout (sträng), integritet (sträng), label (sträng), labelSingular (sträng), length (sträng), localizable (boolesk), name (MNTOKEN), noDbIndex (boolesk), no Nyckel (booleskt), sorterad (booleskt), överflödig (booleskt), pkSequence (sträng), pkgStatus (sträng), ref (sträng), obligatoriskt (booleskt), revAdvanced (booleskt), revCardinality (sträng), revDesc (sträng), revExternalJoin (booleskt), revIntegrity (sträng) sträng), revLink (sträng), revTarget (sträng), revVisibleIf (sträng), sql (booleskt), sqlname (sträng), sqltable (sträng), tableSpace (sträng), tableSpaceIndex (sträng), target (MNTOKEN), template (sträng), temporaryTable (booleskt), translatedDefault (sträng), translateExpr (sträng) sträng), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
 
 ### Överordnade {#parents-4}
 
@@ -499,7 +499,7 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
 
    Tillgängliga värden är:
 
-   * &quot;define&quot;: Enheten tas inte bort i Adobe Campaign om det hänvisas till via länken
+   * &quot;define&quot;: Enheten tas inte bort i Adobe Campaign om länken refererar till den
    * &quot;normal&quot;: om du tar bort källförekomsten initieras länkens nycklar på målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar
    * &quot;own&quot;: borttagning av källförekomsten utlöser borttagning av målförekomsten
    * &quot;owncopy&quot;: liknar&quot;egen&quot; (vid borttagning) eller dubblerar förekomster (vid duplicering)
@@ -509,7 +509,7 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
 * **labelSingular (string)**: etikett (singular form) för elementet som används i vissa delar av gränssnittet.
 * **length (string)**: max. Antal tecken som är tillåtna för ett värde av typen &quot;string&quot; i SQL-fältet.
 * **lokaliserbar (boolesk)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
-* **name (MNTOKEN)**: internt namn på det element som matchar tabellens namn. Värdet för attributet &quot;@name&quot; måste vara kort, helst på engelska, och måste uppfylla de namnbegränsningar som är kopplade till XML.
+* **name (MNTOKEN)**: internt namn på elementet som matchar tabellens namn. Värdet för attributet &quot;@name&quot; måste vara kort, helst på engelska, och måste uppfylla de namnbegränsningar som är kopplade till XML.
 
    När schemat skrivs till databasen läggs prefix automatiskt till i fältnamnet av Adobe Campaign.
 
@@ -696,7 +696,7 @@ help:==EMPTY
 
 ### Attribut {#attributes-6}
 
- Ingen
+Ingen
 
 ### Överordnade {#parents-6}
 
@@ -704,7 +704,7 @@ help:==EMPTY
 
 ### Barn {#children-6}
 
- Ingen
+Ingen
 
 ### Beskrivning {#description-6}
 
@@ -741,7 +741,7 @@ join:==EMPTY
 
 ### Barn {#children-7}
 
- Ingen
+Ingen
 
 ### Beskrivning {#description-7}
 
@@ -866,7 +866,7 @@ nyckelfält:==EMPTY
 
 ### Barn {#children-9}
 
- Ingen
+Ingen
 
 ### Beskrivning {#description-9}
 
@@ -889,7 +889,7 @@ Markering av fältet &quot;sName&quot; i ett index med en Xpath på &quot;@name&
 
 ### Innehållsmodell {#content-model-10}
 
-method:==( help| parametrar)
+method:==( help | parametrar)
 
 ### Attribut {#attributes-10}
 
@@ -957,7 +957,7 @@ metoder:==metod
 
 ### Attribut {#attributes-11}
 
- Ingen
+Ingen
 
 ### Överordnade {#parents-11}
 
@@ -1017,7 +1017,7 @@ Med det här elementet kan du definiera en parameter för att anropa en SOAP-met
 
 * **desc (sträng)**: beskrivning som rör `<param>` elementet.
 * **inout (sträng)**: det här attributet definierar om parametern finns vid indata (in) eller utdata (ut) för SOAP-anropet eller inte. Om det här attributet inte anges används standardparametern (&quot;@inout=in&quot;).
-* **label (string)**: `<param>` etikett
+* **label (string)**: `<param>` label
 * **localizable (string)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
 * **name (MNTOKEN)**: internt namn på `<param>`
 * **type (string)**: this-attributet definierar typen av `<param>` element
@@ -1070,7 +1070,7 @@ parametrar:==param
 
 ### Attribut {#attributes-13}
 
- Ingen
+Ingen
 
 ### Överordnade {#parents-13}
 
@@ -1090,7 +1090,7 @@ Det här elementet är obligatoriskt, även för ett enskilt `<param>` underordn
 
 ### Attributbeskrivning {#attribute-description-13}
 
- Ingen
+Ingen
 
 ### Exempel {#examples-10}
 
@@ -1104,7 +1104,7 @@ Det här elementet är obligatoriskt, även för ett enskilt `<param>` underordn
 
 ### Innehållsmodell {#content-model-14}
 
-srcSchema:=(attribut)| createdBy| data| element| uppräkning| hjälp| gränssnitt| metoder| modifiedBy)
+srcSchema:=(attribut) | createdBy | data | element | uppräkning | hjälp | gränssnitt | metoder | modifiedBy)
 
 ### Attribut {#attributes-14}
 
@@ -1112,7 +1112,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), e
 
 ### Överordnade {#parents-14}
 
- Ingen
+Ingen
 
 ### Barn {#children-14}
 
@@ -1162,7 +1162,7 @@ Schemapresentation är tillgänglig i [Om schemareferens](../../configuration/us
 
 ### Exempel {#examples-11}
 
-`<srcschema>` element i &quot;nms:delivery&quot; ur kartongschemat
+`<srcschema>` elementet i &quot;nms:delivery&quot; ur kartongschemat
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  
@@ -1179,7 +1179,7 @@ sysFilter:==villkor
 
 ### Attribut {#attributes-15}
 
- Ingen
+Ingen
 
 ### Överordnade {#parents-15}
 
