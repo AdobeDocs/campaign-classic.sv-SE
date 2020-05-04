@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
 
 ---
 
@@ -157,7 +157,7 @@ Använd följande steg:
    ForceLanguagePriority
    ```
 
-1. Skapa en Adobe Campaign-specifik konfigurationsfil i `/etc/httpd/conf.d/` mappen. Till exempel `CampaignApache.conf`
+1. Skapa en Adobe Campaign-specifik konfigurationsfil i `/etc/httpd/conf.d/` mappen. Exempel `CampaignApache.conf`
 
 1. För **RHEL7** lägger du till följande instruktioner i filen:
 
@@ -234,19 +234,19 @@ Du bör få:
 Trying 127.0.0.1...
 Connected to localhost.localdomain.
 Escape character is '^]'.
-````
+```
 
 Ange sedan:
 
 ```
 GET /r/test
-````
+```
 
 Följande information visas:
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
-````
+```
 
 Du kan också begära URL:en [`https://<computer>`](https://machine/r/test) från en webbläsare.
