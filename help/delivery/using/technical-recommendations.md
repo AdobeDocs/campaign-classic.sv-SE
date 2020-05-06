@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+workflow-type: tm+mt
+source-wordcount: '2433'
+ht-degree: 0%
 
 ---
 
@@ -78,12 +81,6 @@ DKIM kommer från en kombination av DomainKeys, Yahoo! och Cisco identifierade a
 
 DKIM ersatte **DomainKeys** -autentisering.
 
->[!IMPORTANT]
->
->För värdbaserade eller hybridbaserade installationer, om du har uppgraderat till Enhanced MTA, signerar DKIM e-postautentisering av Förbättrat MTA. DKIM-signering av den inbyggda Campaign MTA inaktiveras i **[!UICONTROL Domain management]** tabellen som en del av den förbättrade MTA-uppgraderingen.
->
->Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
 DKIM kräver vissa förutsättningar:
 
 * **Säkerhet**: Kryptering är en viktig del av DKIM och för att försäkra sig om att DKIM:s säkerhetsnivå sedan våren 2013 är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
@@ -92,10 +89,14 @@ DKIM kräver vissa förutsättningar:
 
 >[!NOTE]
 >
->* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dhelm** i domänhanteringsreglerna. Om inte följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys.
+>* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dhelm** i [domänhanteringsreglerna](../../delivery/using/understanding-delivery-failures.md#domain-management). Om inte följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys.
 >* Du behöver inte aktivera både DomainKeys och DKIM för samma domän som DKIM är en förbättrad version av DomainKeys.
 >* Följande domäner validerar för närvarande DKIM: AOL, Gmail.
 
+
+>[!IMPORTANT]
+>
+>Om du har uppgraderat till [Förbättrat MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)för värdbaserade eller hybridbaserade installationer signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
 
 ### DMARC {#dmarc}
 
