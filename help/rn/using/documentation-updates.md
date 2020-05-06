@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
+source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+workflow-type: tm+mt
+source-wordcount: '6488'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,15 @@ Läs om alla de senaste uppdateringarna av dokumentationen för Adobe Campaign C
 På den här sidan visas alla nya funktioner och dokumentationsuppdateringar för varje version av Adobe Campaign Classic.
 
 Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Maj 2020 {#may-2020}
+
+Avsnittet Övervakning av slutprodukt har flyttats och organiserats om. [Läs mer](../../delivery/using/monitoring-deliverability.md)
+
+Avsnittet Felsökning av slutprodukt har flyttats och uppdaterats. [Läs mer](../../delivery/using/deliverability-faq.md)
+
+Avsnittet Starta en ny plattform har förbättrats. [Läs mer](../../delivery/using/starting-new-platform.md)
+
 
 ## April 2020 {#april-2020}
 
@@ -160,7 +172,7 @@ Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i
 
 De nya alternativen NmsOperation_DeliveryPreparationWindow och WdbcKillSessionPolicy har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Nu finns ett nytt dokument som beskriver grunderna i datamodellen i Adobe Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Nu finns ett nytt dokument som beskriver grunderna i Adobe Campaign Classic-datamodellen. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 Det nya alternativet **Maximal körtidsåtgång** för personalisering i leveransegenskaperna beskrivs i det här [avsnittet](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
@@ -279,7 +291,7 @@ Lagt till information i faktureringsrapporten.
 Uppdaterad dokumentation om integrationen mellan delade målgrupper.
 [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
-Följande tekniker har uppdaterats: Protokoll och inställningar för [SMS-anslutningsprogrammet](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) och automatisk [sekvensgenerering](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Följande tekniker har uppdaterats: [SMS-anslutningsprotokoll och inställningar](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) och automatisk [sekvensgenerering](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Avsnittet Tekniska arbetsflöden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
@@ -365,7 +377,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
