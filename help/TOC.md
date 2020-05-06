@@ -5,7 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
+source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+workflow-type: tm+mt
+source-wordcount: '2077'
+ht-degree: 0%
 
 ---
 
@@ -151,12 +154,13 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Starta en ny plattform](delivery/using/starting-new-platform.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
       + [Förbättra ert rykte](delivery/using/improve-reputation.md)
-      + [Bästa praxis för återanvändning](delivery/using/re-engagement-best-practices.md)
       + [Tekniska rekommendationer](delivery/using/technical-recommendations.md)
-      + [Teknisk övervakning](delivery/using/technical-monitoring.md)
+      + [Övervaka leveransen](delivery/using/monitoring-deliverability.md)
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
+      + [Bästa praxis för återanvändning](delivery/using/re-engagement-best-practices.md)
       + [Svartlistade databaser](delivery/using/blacklisting-databases.md)
+      + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
       + [Resurser och principer för Content Manager](delivery/using/content-manager-resources-and-principles.md)
@@ -554,26 +558,26 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Om hybridmodeller och värdbaserade modeller](installation/using/about-hybrid-and-hosted-models.md)
       + [Hybridmodell](installation/using/hybrid-model.md)
       + [Värdmodell](installation/using/hosted-model.md)
-   + Krav och rekommendationer {#prerequisites-and-recommendations-}
+   + Krav och rekommendationer  {#prerequisites-and-recommendations-}
       + [Före start](installation/using/before-starting.md)
       + [Databas](installation/using/database.md)
       + [Programserver](installation/using/application-server.md)
       + [Meddelandeserver](installation/using/messaging-server.md)
       + [Nätverkskonfiguration](installation/using/network-configuration.md)
-   + Distributionstyper {#deployment-types-}
+   + Distributionstyper  {#deployment-types-}
       + [Om distributionstyper](installation/using/about-deployment-types.md)
       + [Fristående driftsättning](installation/using/standalone-deployment.md)
       + [Standarddistribution](installation/using/standard-deployment.md)
       + [Företagsdistribution](installation/using/enterprise-deployment.md)
       + [Distribution från olika källor](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Installera Campaign i Windows {#installing-campaign-in-windows-}
+   + Installera Campaign i Windows  {#installing-campaign-in-windows-}
       + [Krav för Campaign-installation i Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Installera servern](installation/using/installing-the-server.md)
       + [Integrering med en webbserver för Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Klientkonsolens tillgänglighet för Windows](installation/using/client-console-availability-for-windows.md)
       + [Installera klientkonsolen](installation/using/installing-the-client-console.md)
-   + Installera Campaign i Linux {#installing-campaign-in-linux-}
+   + Installera Campaign i Linux  {#installing-campaign-in-linux-}
       + [Krav för Campaign-installation i Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installera paket med Linux](installation/using/installing-packages-with-linux.md)
       + [Integrering med en webbserver för Linux](installation/using/integration-into-a-web-server-for-linux.md)
