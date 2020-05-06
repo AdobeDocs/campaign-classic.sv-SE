@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
 
 ## Översikt {#overview}
 
-SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign poängsätta e-postmeddelanden och avgöra om ett meddelande troligtvis kommer att anses vara oönskat innan leverans startas. För att göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler krävs för att fungera.
+SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign poängsätta e-postmeddelanden och avgöra om ett meddelande troligtvis inte är önskvärt innan det lanseras. För att göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler krävs för att fungera.
 
 Distributionen och integreringen av SpamAssassin enligt beskrivningen i detta kapitel baseras på standardprogramvaruinstallation, liksom filtrerings- och poängregler, som tillhandahålls av SpamAssassin utan ändringar eller optimeringar. Poängattribuering och meddelandekvalificering baseras enbart på konfigurationen av SpamAssets-alternativen och på filtreringsregler. Nätverksadministratörer ansvarar för att anpassa dem till företagets behov.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >SpamAssasins klassificering av e-post som oönskad baseras helt på filtrerings- och poängregler.
 >
