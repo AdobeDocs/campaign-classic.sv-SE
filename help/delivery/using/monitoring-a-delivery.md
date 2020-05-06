@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2602'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 Kontrollpanelen för **leverans** är avgörande för att du ska kunna övervaka leveranser och eventuella problem som uppstår när meddelanden skickas.
 
-**Relaterade ämnen**
+**Relaterade ämnen:**
 
 * [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
 * [Om karantänhantering](../../delivery/using/understanding-quarantine-management.md)
-* [Bästa praxis](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
-* [Komma igång: Hantera leveranser](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)
+* [Bästa praxis](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+* [Hantera leveranser](../../delivery/using/about-deliverability.md)
 
 ## Kontrollpanel för leverans {#delivery-dashboard}
 
@@ -43,7 +46,7 @@ Det går inte längre att ändra tabbinnehållet när leveransen har skickats.
 
 Fliken **[!UICONTROL Summary]** innehåller leveransegenskaperna: leveransstatus, kanal som används, information om avsändare, ämne, information om exekvering. Mer information finns i [Antal skickade](#number-of-messages-sent)meddelanden.
 
-Med hjälp av **[!UICONTROL reports]** länken kan du titta på en uppsättning rapporter om leveransåtgärden: allmän leveransrapport, detaljerad rapport, leveransrapport, distribution av felmeddelanden, öppningsfrekvens, klick och transaktioner osv. Innehållet på den här fliken kan konfigureras enligt dina krav. Mer information finns i [det här avsnittet](../../reporting/using/delivery-reports.md).
+Med hjälp av **[!UICONTROL reports]** länken kan du titta på en uppsättning rapporter om leveransåtgärden: allmän leveransrapport, detaljerad rapport, leveransrapport, distribution av felmeddelanden, öppningsfrekvens, klick och transaktioner osv. Innehållet på den här fliken kan konfigureras enligt dina krav. For more information, refer to [this section](../../reporting/using/delivery-reports.md).
 
 ### Leveransloggar och historik {#delivery-logs-and-history}
 
@@ -96,7 +99,7 @@ Vissa indikatorer eller status kan vara felaktiga eller inte aktuella. Lösninge
 * Om leveransräknaren inte stämmer överens med leveransräknaren kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
 * Om leveransräknaren inte är uppdaterad för medelstora distributioner kontrollerar du att det tekniska arbetsflödet körs. **[!UICONTROL Mid-Sourcing (Delivery counters)]** Mer information finns på den här [sidan](../../installation/using/mid-sourcing-deployment.md).
 
-Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. Mer information finns i det här [avsnittet](../../reporting/using/delivery-reports.md).
+Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
 
 ## Prestandaproblem {#performance-issues}
 
@@ -108,7 +111,7 @@ Om leveransresultaten är felaktiga kan du kontrollera:
 * **Målet för leveransen**: Förbud mot leveransprestanda påverkas av mjuka studsfel som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
 * **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i Adobe Campaign [Deliverability best practices guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och på [den här sidan](../../delivery/using/about-deliverability.md).
 
-Plattforms- och databasunderhåll kan också påverka leveransresultaten. Mer information finns på [den här sidan](../../production/using/database-performances.md).
+Plattforms- och databasunderhåll kan också påverka leveransresultaten. For more on this, refer to [this page](../../production/using/database-performances.md).
 
 ### Långsamma leveranser {#slow-deliveries}
 
@@ -232,7 +235,7 @@ Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]** ka
    >
    >Ersätt `<INSTANCENAME>` med namnet på din instans (produktion, utveckling osv.). Instansnamnet identifieras via konfigurationsfilerna: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
 
-* Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande servern. I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+* Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande servern. I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till den MTA som hanterar tillhörigheten. For more information on affinities, refer to [this section](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 * När leveransförberedelsen är väntande kan det finnas för många kampanjer som körs, vilket blockerar statusuppdateringen av leveransen. Du löser det genom att gå till **[!UICONTROL Options]** och öka värdet för **[!UICONTROL NmsOperation_LimitConcurrency]** (standardvärdet är 10). Kör inte fler kampanjer än det värde som tilldelats det här specifika alternativet.
 
 ### Misslyckad status {#failed-status}
@@ -241,11 +244,11 @@ Om status för en e-postleverans är **[!UICONTROL Failed]** kan den länkas til
 
 Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. Här följer möjliga fel som du kan identifiera från leveransloggar:
 
-* Om det inte går att nå mottagarmeddelanden med felet &quot;Oåtkomligt&quot;: **Fel vid kompilering av skript &#39;content htmlContent&#39; rad X: har inte`[table]`definierats. JavaScript: fel vid utvärdering av skript &#39;content htmlContent**&#39; är orsaken till problemet nästan alltid en personalisering inom HTML som försöker anropa en tabell eller ett fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
+* Om det inte går att nå mottagarmeddelanden med felet &quot;Oåtkomligt&quot;: **Fel vid kompilering av skript &#39;content htmlContent&#39; rad X:`[table]`är inte definierad. JavaScript: fel vid utvärdering av skript &#39;content htmlContent**&#39; är orsaken till problemet nästan alltid en personalisering inom HTML som försöker anropa en tabell eller ett fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
 
    För att rätta till detta måste arbetsflödes- och leveransinnehållet granskas för att avgöra specifikt vilken personalisering som försöker anropa tabellen i fråga och om tabellen kan mappas eller inte. Därifrån är det antingen vägen till lösningen att ta bort anropet till den här tabellen i HTML-koden eller att åtgärda mappningen till leveransen.
 
-* I distributionsmodellen där flera leverantörer är installerade kan följande meddelande visas i leveransloggarna: Ett **fel uppstod när metoden AppendDeliveryPart skulle anropas på mittkällservern: &#39;Kommunikationsfel med servern: kontrollera att den här är korrekt konfigurerad. Kod HTTP 408 &#39;Tjänsten är inte tillgänglig för tillfället&#39;**.
+* I distributionsmodellen där flera leverantörer är installerade kan följande meddelande visas i leveransloggarna: **Ett fel uppstod när metoden AppendDeliveryPart skulle anropas på mittkällservern: &#39;Kommunikationsfel med servern: kontrollera att den här är korrekt konfigurerad. Kod HTTP 408 &#39;Tjänsten är inte tillgänglig för tillfället&#39;**.
 
    Orsaken är kopplad till prestandaproblem. Det innebär att marknadsinstansen lägger för mycket tid på att bygga upp data innan den skickas till servern med mellanlagring.
 
@@ -274,8 +277,8 @@ Du kan komma åt leveranser från leveranslistan via trädnoden **[!UICONTROL Ca
 Som standard innehåller listan över leveranser namnen och statusvärdena för leveranser som skapas i den valda noden. Här visas även antalet meddelanden som ska skickas, bearbetas och skickas.
 
 * Antalet **[!UICONTROL Messages to send]** motsvarar antalet mottagare som valts efter analys och före leverans.
-* Antalet meddelanden i **[!UICONTROL success]** kolumnen motsvarar antalet meddelanden som har skickats av servern och tagits emot av mottagarna.
-* Antalet **[!UICONTROL processed]** meddelanden motsvarar antalet mottagna meddelanden plus antalet meddelanden med fel.
+* Antalet meddelanden i **[!UICONTROL Success]** kolumnen motsvarar antalet meddelanden som har skickats av servern och tagits emot av mottagarna.
+* Antalet **[!UICONTROL Processed]** meddelanden motsvarar antalet mottagna meddelanden plus antalet meddelanden med fel.
 
 På kontrollpanelen för leverans kan du spåra antalet skickade meddelanden.
 
