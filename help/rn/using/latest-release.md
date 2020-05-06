@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
+workflow-type: tm+mt
+source-wordcount: '1411'
+ht-degree: 0%
 
 ---
 
 
 # Senaste versionen{#latest-release}
 
-[Bygg uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-2.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-2.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,7 +44,13 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Version 20.1.3 - build 9124 {#release-20-1-3-build-9124}
+
+_6 maj 2020_
+
+* Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
+
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 - build 9123 {#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
