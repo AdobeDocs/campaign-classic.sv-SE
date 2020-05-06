@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -45,9 +48,9 @@ Som expertanvändare kan du konfigurera spårningsfunktioner i Campaign-instanse
 
 ## Hur konfigurerar man e-postleveransen? {#how-to-configure-email-deliverability-}
 
-Förutom guiden [för att komma igång med](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)slutprodukten kan du läsa avsnittet om konfiguration för e-postleverans för att förstå hur du konfigurerar instansen för att maximera kapaciteten för kampanjleverans.
+Förutom avsnittet [Leveranskonfiguration](../../delivery/using/about-deliverability.md#configuration) kan du läsa igenom de tekniska rekommendationerna för leverans för att förstå hur du konfigurerar instansen för att maximera kapaciteten för kampanjleverans.
 
-[Klicka här om du vill veta mer](../../installation/using/email-deliverability.md).
+[Klicka här om du vill veta mer](../../delivery/using/technical-recommendations.md).
 
 ## Hur kan jag implementera innehållsgodkännande? {#how-can-i-implement-content-approval-}
 
@@ -105,7 +108,7 @@ Om du har problem med till exempel att de nya logotyperna återspeglas korrekt o
 
 1. Ta bort dessa XML-filer och associerade mappar.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Ta inte bort filen nlclient_cnx.xml.
 
