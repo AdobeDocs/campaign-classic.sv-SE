@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2800'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Information om hur du infogar och använder personaliseringsfält finns i avsnit
 >* Adobe Campaign kontrollerar syntaxen för de e-postadresser som anges.
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >I samband med de kontroller som Internet Access Providers (ISP) utför för att bekämpa oönskad e-post (skräppost) rekommenderar Adobe att man skapar e-postkonton som motsvarar de adresser som angetts för leveranser och svar. Kontakta systemadministratören för meddelanden.
 
@@ -46,7 +49,7 @@ Information om hur du infogar och använder personaliseringsfält finns i avsnit
 
 Meddelandets ämne är konfigurerat i motsvarande fält. Du kan ange det direkt i fältet eller klicka på **[!UICONTROL Subject]** länken för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ämnet för meddelandet är obligatoriskt.
 
@@ -62,7 +65,7 @@ I meddelandet ovan anpassas till exempel meddelandets ämne för varje mottagare
 
 ## Meddelandeinnehåll {#message-content}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Av sekretesskäl rekommenderar vi att du använder HTTPS för alla externa resurser.
 
@@ -74,7 +77,7 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
    Om du använder [DCE (Digital Content Editor](../../web/using/about-campaign-html-editor.md) ) läser du [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >HTML-innehållet måste skapas i förväg och sedan importeras till Adobe Campaign. HTML-redigeraren är inte utformad för att skapa innehåll.
 
@@ -128,7 +131,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
    Meddelandet innehåller båda formaten: text och HTML. Formatet som visas vid mottagning beror på konfigurationen av mottagarens e-postprogramvara (multipart-option).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Det här alternativet inkluderar båda versionerna av dokumentet. Det påverkar därför leveransgraden eftersom meddelandestorleken är större.
 
@@ -169,7 +172,7 @@ Bilderna kan vara:
 
 * En resurs som delas med Adobe Experience Cloud. Se [det här avsnittet](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du vill inkludera bilder i e-postmeddelanden med leveransguiden måste Adobe Campaign-instansen konfigureras för att aktivera offentlig resurshantering. Den här proceduren kan utföras från distributionsguiden. Mer information om konfiguration finns i [det här avsnittet](../../installation/using/deploying-an-instance.md) .
 
@@ -194,7 +197,7 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Sökvägarna för bildåtkomst ändras vid manuell överföring eller när meddelanden skickas.
 
@@ -208,7 +211,7 @@ Dessa bilder kommer från en lokal katalog eller webbplats som du kan verifiera 
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
-Klicka på **[!UICONTROL Tracking & Images]** ikonen och sedan på **[!UICONTROL Images]** fliken för att börja identifiera bilderna i meddelandet.
+Klicka på **[!UICONTROL Tracking & Images]** ikonen och sedan på **[!UICONTROL Images]** fliken för att börja identifiera bilder i meddelandet.
 
 För varje bild som identifieras kan du visa dess status:
 
@@ -360,7 +363,7 @@ På fliken **[!UICONTROL Preview]** i fönstret för innehållsredigering kan du
 
 Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar ett bevis eller en leverans: en specifik typologiregel **[!UICONTROL Deco-mail check]** startas under analysen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Den här typologiregeln körs bara om minst en av mottagarna har konfigurerats att ta emot e-post i **[!UICONTROL Deco-mail (DoCoMo)]****[!UICONTROL Decore Mail (Softbank)]** eller **[!UICONTROL Decoration Mail (KDDI AU)]** format.
 
@@ -397,6 +400,6 @@ När Adobe Campaign hanterar formaten dynamiskt enligt domänen (profiler med e-
 
 Meddelandekontakten visas korrekt för användare på japanska mobiler, precis som för standardmottagare.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Se till att du respekterar de specialfunktioner som är associerade med alla japanska e-postformat (Deco-mail, Decoration Mail och Decore Mail). Mer information om begränsningar finns i [det här avsnittet](#limitations-and-recommendations).
+>Se till att du respekterar de specialfunktioner som är associerade med alla japanska e-postformat (Deco-mail, Decoration Mail och Decore Mail). For more information on limitations, refer to [this section](#limitations-and-recommendations).
