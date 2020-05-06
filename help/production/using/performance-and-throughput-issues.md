@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 >[!NOTE]
 >
->Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna. Se [versionsinformationen](https://docs.campaign.adobe.com/doc/AC/en/RN.html) för mer information om innehållet i varje release.
+>Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna. Mer information om innehållet i varje [release finns i versionsinformationen](https://docs.campaign.adobe.com/doc/AC/en/RN.html) .
 
 ## Maskinvara och infrastruktur {#hardware-and-infrastructure}
 
@@ -63,7 +66,7 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
 
 Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 
-* IP-anseende: Om IP-anseendet inte är tillräckligt bra kommer resultatet att påverkas. I modulen **Leveransövervakning** finns olika verktyg för att spåra plattformens leveransprestanda. Se den här [sidan](../../delivery/using/technical-monitoring.md).
+* IP-anseende: Om IP-anseendet inte är tillräckligt bra kommer resultatet att påverkas. I modulen **Leveransövervakning** finns olika verktyg för att spåra plattformens leveransprestanda. Se den här [sidan](../../delivery/using/monitoring-deliverability.md).
 * IP-uppvärmning: IP-uppvärmningen utförs av leveransteamet. Detta innebär att antalet e-postmeddelanden som skickas via nya IP-adresser gradvis ökar under några veckor.
 * Inställningar för IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa e-postmeddelanden helt (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska flödet (ett litet antal IP-adresser i tillhörigheten). Se den här [sidan](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-poststorlek: e-poststorleken spelar en viktig roll när det gäller genomströmning. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som överförts per timme i rapporten [Leveransflöde](../../reporting/using/delivery-reports.md#delivery-throughput) .
