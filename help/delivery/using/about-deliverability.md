@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
@@ -47,4 +50,4 @@ Exakt vad är e-postleverans? Och hur kan marknadsförarna förbättra leveransm
 
 E-postleverans är en uppsättning egenskaper som avgör hur ett meddelande kan nå sin destination via en personlig e-postadress inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format. Dessa egenskaper kan delas in i fyra huvudkategorier: datakvalitet, meddelande och innehåll, utskick av infrastruktur och anseende. Tillsammans utgör de grunden för ett framgångsrikt program för e-postleverans. I den här översikten beskrivs de fyra grundläggande aspekterna av e-postleverans och de bästa sätten att nå inkorgen och generera större intäkter från e-postmarknadsföringsprogram.
 
-![](assets/deliverability_overview_2.png)
+<!--![](assets/deliverability_overview_2.png)-->
