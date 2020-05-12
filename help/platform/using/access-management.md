@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
+source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+workflow-type: tm+mt
+source-wordcount: '2894'
+ht-degree: 0%
 
 ---
 
@@ -278,6 +281,14 @@ Standardoperatorgrupperna är:
 1. Lokal/central hantering
 
    Med dessa grupper kan ni använda **distribuerad marknadsföring** (valfri Adobe Campaign-modul).
+
+1. Erbjudandeansvariga
+
+   Operatorerna i den här gruppen kan skapa och underhålla erbjudanden. Mer information finns på den här [sidan](../../interaction/using/operator-profiles.md).
+Den här gruppen innehåller följande namngivna rättigheter:
+
+   * INFOGA MAPPAR: Rätt att infoga mappar i Adobe Campaign-trädet (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
+   * REDIGERA MAPPAR: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
 
 ## Namngivna rättigheter {#named-rights}
 
