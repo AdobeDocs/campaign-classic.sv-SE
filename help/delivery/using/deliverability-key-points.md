@@ -13,18 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 0%
 
 ---
 
 
 # Leveransnyckelpoäng{#deliverability-key-points}
 
-Leveransen består i att mäta framgångarna med kampanjer som når mottagarnas inkorg utan att studsa, eller markeras som skräppost.
-
 För att optimera leveransen av era Adobe Campaign-e-postmeddelanden rekommenderar vi att du använder de bästa metoderna nedan. Leveransproblem är i allmänhet kopplade till skyddsåtgärder mot skräppost som implementeras av Internet-leverantörer och e-postserveradministratörer.
 
-E-postleverans är en uppsättning egenskaper som avgör hur ett meddelande kan nå sin destination via en personlig e-postadress inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
+**E-postleveransen** avser den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
 
 Dessa egenskaper kan delas in i fyra huvudkategorier:
 * Datakvalitet
@@ -34,7 +35,7 @@ Dessa egenskaper kan delas in i fyra huvudkategorier:
 
 Tillsammans utgör de grunden för ett framgångsrikt program för e-postleverans.
 
-Leveransfrekvensen är antalet skickade e-postmeddelanden som levererats till mottagarna.
+Leveransfrekvensen **** är antalet skickade e-postmeddelanden som levererats till mottagarna.
 
 Leveransgraden beror på flera faktorer, särskilt:
 * Korrekt konfiguration av dina instanser
@@ -45,7 +46,7 @@ Leveransgraden beror på flera faktorer, särskilt:
 * Meddelandeautentisering (SPF, DKIM, DMARC)
 * Avsändarens rykte
 
-Här är en lista över de viktigaste punkterna som ska kontrolleras för att säkerställa god levererbarhet.
+Nedan finns en lista över de viktigaste punkterna som ska kontrolleras för att säkerställa god leveransförmåga.
 
 ## Kontrollera nätverkskonfiguration {#network-configuration}
 
@@ -61,7 +62,7 @@ Internetleverantörer har vanligtvis ett framträdande sätt att rapportera ett 
 
 ## Skicka till anteckningsadresser {#honeypot-addresses}
 
-Internetleverantörer och andra organisationer (se https://www.projecthoneypot.org/) använder postlådor som inte motsvarar fysiska personer, men som bara skapas för att lura skräppost. Dessa så kallade &quot;honungsportadresser&quot; publiceras på webben för att samlas in av skräppost och därmed fånga oäkta avsändare. Användningen av en dubbel anmälningsmekanism förhindrar att den här typen av adress läggs till i en lista. När du använder en tredjepartslista måste du vara säker på vilka metoder som används av den som ansvarar för den.
+Internetleverantörer och andra organisationer (se webbplatsen [Project Honung Pot](https://www.projecthoneypot.org/) ) använder postlådor som inte motsvarar fysiska personer, men som bara skapas för att lura skräppost. Dessa så kallade &quot;honungsportadresser&quot; publiceras på webben för att samlas in av skräppost och därmed fånga oäkta avsändare. Användningen av en dubbel anmälningsmekanism förhindrar att den här typen av adress läggs till i en lista. När du använder en tredjepartslista måste du vara säker på vilka metoder som används av den som ansvarar för den.
 
 ## Anpassa meddelandeinnehållet {#message-content}
 
