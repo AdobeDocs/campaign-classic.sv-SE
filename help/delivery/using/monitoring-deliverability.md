@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a30c4a2d31c3f674ac4a7bb4827a6951b36014ab
+source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,14 @@ Du kan även använda följande verktyg:
 
 * Rapporten innehåller en översikt över hela plattformens dataflöde under en viss period. **[!UICONTROL Delivery throughput]** Mer information finns i [det här avsnittet](../../reporting/using/global-reports.md#delivery-throughput).
 * Rapporten **[!UICONTROL Technical deliverability monitoring]** innehåller ett antal kvalitetsindikatorer för er plattform. Mer information finns i [det här avsnittet](#technical-deliverability-monitoring).
-* På kontrollpanelen för [leverans](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) får du tillgång till [leveranssammanfattningen](../../delivery/using/monitoring-a-delivery.md#delivery-summary), [leveransloggarna och historiken](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) samt [spårningsloggarna](../../delivery/using/monitoring-a-delivery.md#tracking-logs). De visar detaljerna för utskicket, vilket mål som har uteslutits och varför samt spårningsinformation som öppningar och klick. <!--For more on this, see [Monitoring a delivery](../../delivery/using/monitoring-a-delivery.md).-->
-* Du kan också kontrollera antalet meddelanden som ska skickas, bearbetas och skickas. Mer information finns i [det här avsnittet](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent)
-   <!--[SpamAssassin](../../installation/using/configuring-spamassassin.md)?-->
+* Varje leverans genererar en utsändningsstatistikrapport för olika internetleverantörer. Den visar vissa data- och anseendemått som kan påverka leveransförmågan, inklusive följande tal:
+   * **[!UICONTROL Hard bounces]** ange datakvalitet. Talet ska vara mindre än 2%.
+   * **[!UICONTROL Soft bounces]** ange anseende. Talet får inte vara högre än 10 % för någon ISP.
+   Mer information finns i avsnittet [Leveransstatistik](../../reporting/using/global-reports.md#delivery-statistics) .
+* Mer generellt ger [kontrollpanelen](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) dig tillgång till:
+   * En sammanfattning [av](../../delivery/using/monitoring-a-delivery.md#delivery-summary)leveransen, som visar hur detaljerad sändningen är och [hur många meddelanden](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) som ska skickas, behandlas och skickas utan fel.
+   * Leveransloggar och [leveranshistorik](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), som visar vilket mål som har uteslutits och varför.
+   * loggarna [för](../../delivery/using/monitoring-a-delivery.md#tracking-logs)spårning, som visar spårningsinformation som öppningar och klick.
 
 ## Riktlinjer för övervakning {#monitoring-guidelines}
 
