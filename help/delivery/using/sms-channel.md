@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6e587747be546860c0a485b44aee79d396f25cec
+source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+workflow-type: tm+mt
+source-wordcount: '3227'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +109,7 @@ Gör så här:
 
    ![](assets/extended_smpp_transliteration.png)
 
-   Mer information finns i [det här avsnittet](#about-character-transliteration).
+   For more on this, refer to [this section](#about-character-transliteration).
 
 1. På **[!UICONTROL Throughput and delays]** fliken kan du ange maximal genomströmning för utgående meddelanden (&quot;MT&quot;, Mobile Terminated) i MT per sekund. Om du anger &quot;0&quot; i motsvarande fält är dataflödet obegränsat.
 
@@ -114,7 +117,7 @@ Gör så här:
 
 1. På **[!UICONTROL Mapping of encodings]** fliken kan du definiera kodningar.
 
-   Mer information finns i [det här avsnittet](#about-text-encodings).
+   For more on this, refer to [this section](#about-text-encodings).
 
 1. Alternativet är som standard inaktiverat på **[!UICONTROL SMSC specificities]** fliken **[!UICONTROL Send full phone number]** . Aktivera det inte om du vill respektera SMPP-protokollet och bara överföra siffror till servern för SMS-providern (SMSC).
 
@@ -124,7 +127,7 @@ Gör så här:
 
 1. Om du konfigurerar en **[!UICONTROL Extended generic SMPP]** koppling kan du ställa in automatiska svar.
 
-   Mer information finns i [det här avsnittet](#automatic-reply).
+   For more on this, refer to [this section](#automatic-reply).
 
 ### Om teckenomläsning {#about-character-transliteration}
 
@@ -135,7 +138,7 @@ Translitterering består i att ersätta ett tecken i ett SMS med ett annat om de
 * Om transkriberingen är **[!UICONTROL authorized]** så ersätts varje tecken som inte beaktas av ett GSM-tecken när meddelandet skickas. Bokstaven&quot;ë&quot; ska till exempel ersättas med&quot;e&quot;. Meddelandet ändras därför något, men teckengränsen är densamma.
 * När transkriberingen är **[!UICONTROL not authorized]** klar skickas varje meddelande som innehåller tecken som inte tas med i beräkningen i binärt format (Unicode): alla tecken skickas därför som de är. SMS-meddelanden som använder Unicode är dock begränsade till 70 tecken (eller 67 tecken per SMS för meddelanden som skickas i flera delar). Om det maximala antalet tecken överskrids skickas flera meddelanden, vilket kan medföra extra kostnader.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till.
 
@@ -343,9 +346,9 @@ Du kan deklarera **data_codings** och tvinga fram kodningen om det behövs: Om d
 
 * När du definierar de kodningar som du vill använda samt de länkade **[!UICONTROL data_coding]** fältvärdena, kommer Adobe Campaign att försöka använda den första kodningen i listan och sedan följande, om den första kodningen visar sig vara omöjlig.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Deklarationsordningen är viktig: Vi rekommenderar att du placerar listan i stigande ordning **för kostnaden** så att kodningen kan anpassas så många tecken som möjligt i varje SMS.
+>Deklarationsordningen är viktig: Vi rekommenderar att du placerar listan i stigande ordning **för kostnader** för att kunna välja kodningar så att du får plats med så många tecken som möjligt i varje SMS.
 >
 >Deklarera bara de kodningar som du vill använda. Om en del av de kodningar som SMSC tillhandahåller inte stämmer överens med ditt användningsändamål ska de inte tas upp i listan.
 
@@ -401,7 +404,7 @@ I exemplet nedan skapar vi en mall för att leverera meddelanden via NetSize-kon
 
    ![](assets/s_user_mobile_template_change_02.png)
 
-1. Klicka **[!UICONTROL Properties]**.
+1. Klicka på **[!UICONTROL Properties]**.
 1. På fliken **[!UICONTROL General]** väljer du ett routningsläge som motsvarar ett externt konto som du har konfigurerat, till exempel **[!UICONTROL NetSize mobile delivery]**.
 
    ![](assets/s_user_mobile_template_change_03.png)
@@ -427,7 +430,7 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en etikett, kod och beskrivning. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicka **[!UICONTROL Continue]** för att bekräfta informationen och visa meddelandekonfigurationsfönstret.
 
 ## Definiera SMS-innehåll {#defining-the-sms-content}
@@ -491,7 +494,7 @@ Följande alternativ är tillgängliga:
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Läs lagen i ditt land om hur du redigerar avsändarnamn. Du bör också fråga din operatör om de erbjuder den här funktionen.
 
@@ -547,7 +550,7 @@ InSMS-schemat innehåller information som är relevant för inkommande SMS. En b
 * **skapad**: datum då inkommande meddelande infogades i Adobe Campaign.
 * **TextAccount**: Externt konto för Adobe Campaign.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Följande fält är specifika för NetSize.
    >
@@ -571,7 +574,7 @@ Om mottagarna skickar nyckelordet STOP får de automatiskt ett bekräftelsemedde
 
 Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis används för att skicka leveranser.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Följande detaljerade procedur gäller bara för SMPP-anslutningar, utom för den utökade generiska SMPP-anslutningen. Mer information finns i avsnittet [Skapa ett externt SMPP-konto](#creating-an-smpp-external-account) .
 >
@@ -605,7 +608,7 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 
    Om du vill skicka samma meddelande för flera nyckelord duplicerar du motsvarande rad.
 
-   Till exempel:
+   Exempel:
 
    ```
    <reply keyword="STOP" text="You will not receive SMS anymore" />
@@ -618,7 +621,7 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 
 1. Kopiera den här filen till **conf** -katalogen i Adobe Campaign, på samma plats som webbservern.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Den här typen av automatiska meddelanden sparar ingen historik. Därför visas de inte på [leveranskontrollpanelen](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 >
