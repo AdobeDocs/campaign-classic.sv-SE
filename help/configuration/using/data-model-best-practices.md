@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '3997'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Ado
 
 Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa datamodellavsnittet [för](../../configuration/using/about-data-model.md) Campaign Classic.
 
-Läs den här [dokumentationen](../../configuration/using/about-schema-reference.md) för att komma igång med Campaign-scheman. Lär dig hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen i det här [dokumentet](../../configuration/using/about-schema-edition.md).
+Läs [den här dokumentationen](../../configuration/using/about-schema-reference.md) för att komma igång med Campaign-scheman. Lär dig hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen i [det här dokumentet](../../configuration/using/about-schema-edition.md).
 
 ## Översikt {#overview}
 
@@ -46,7 +49,7 @@ Detta kundcentrerade tillvägagångssätt visas i tabellen nedan. I **mottagarta
 
 Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på **[!UICONTROL Documentation]** fliken.
 
-Standarddatamodellen för Adobe Campaign presenteras i det här [dokumentet](../../configuration/using/data-model-description.md).
+Standarddatamodellen för Adobe Campaign presenteras i [det här dokumentet](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
@@ -154,8 +157,8 @@ När en anpassad tabell skapas i Adobe Campaign med en primärnyckel som autoPK,
 Som standard har en anpassad sekvens värden mellan +1 000 och +2,1BB. Tekniskt sett är det möjligt att få ett fullständigt urval av 4BB genom att aktivera negativa ID:n. Detta bör användas med försiktighet och ett ID kommer att förloras vid övergång från negativa till positiva tal: Posten 0 ignoreras vanligtvis av Adobe Campaign Classic i genererade SQL-frågor.
 
 **Relaterade ämnen:**
-* Mer information om funktionen **Sequence auto-generation** finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
-* Titta på den här [videon](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)om du vill veta mer om hur sekvenser blirslut.
+* Mer information om funktionen **Sequence auto-generation** finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
+* Titta på [den här videon](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)om du vill veta mer om sekvensöverstrålning.
 
 ## Index {#indexes}
 
