@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3055'
+ht-degree: 0%
 
 ---
 
@@ -160,7 +163,7 @@ Obearbetade studsar visas inte i Adobe Campaign-gränssnittet. De tas automatisk
 * **[!UICONTROL Address for errors]** : Fyll i det här fältet om du bara vill överföra felmeddelanden till en tredje partsadress som det inte gick att kvalificera inMail-processen för.
 * **[!UICONTROL SMTP server]** : Servern som används för att skicka obearbetade studsmeddelanden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >För att vidarebefordra obearbetade studsmeddelanden rekommenderar Adobe att du bara fyller i **[!UICONTROL Address for errors]** fältet. Kontrollera dock att adressen som används kontrolleras regelbundet eftersom det kan medföra en stor belastning på e-postservern. Kontakta er kontoansvarige om du vill ha mer information.
 
@@ -310,7 +313,7 @@ I det här steget kan du ange inställningar för dataprofiler.
 
 ## Åtkomst från Internet {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Av sekretesskäl rekommenderar vi att du använder HTTPS för alla externa resurser.
 
@@ -334,7 +337,7 @@ Med Adobe Campaign kan ni differentiera dessa tre URL:er för att sprida belastn
 
 ## Hantera offentliga resurser {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Av sekretesskäl rekommenderar vi att du använder HTTPS för alla externa resurser.
 
