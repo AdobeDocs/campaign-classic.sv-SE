@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 0%
 
 ---
 
@@ -34,11 +37,11 @@ De viktigaste plattformsfunktionerna för hantering av tidszoner är: importera/
 
 **Operatörer** kan ändra tidszoner under **leveranskonfigurationen** och kan ange i vilken tidszon leveransen ska köras.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om databasen inte hanterar flera tidszoner måste SQL-frågor köras i databasserverns tidszon för alla datafiltreringsändringar.
 
-Alla Adobe Campaign-operatorer är länkade till en tidszon: den här informationen är konfigurerad i deras profil. Mer information finns i [det här dokumentet](../../platform/using/access-management.md).
+Alla Adobe Campaign-operatorer är länkade till en tidszon: den här informationen är konfigurerad i deras profil. For more on this, refer to [this document](../../platform/using/access-management.md).
 
 Om Adobe Campaign-plattformen inte kräver tidszonshantering kan du behålla ett lagringsläge i lokalt format med en viss länkad tidszon.
 
@@ -46,9 +49,9 @@ Om Adobe Campaign-plattformen inte kräver tidszonshantering kan du behålla ett
 
 Tidszoner kombinerar flera realiteter: uttrycket kan beskriva en konstant tidsfördröjning med UTC-datumet, eller tidpunkterna i ett område som kan ändras två gånger per år (sommartid).
 
-**I postgreSQL, till exempel,** SET TIME ZONE &#39;Europe/Paris&#39;, Kommandot tar hänsyn till sommar- och vintertid: Datumet kommer att anges i UTC+1 eller UTC+2 beroende på tidpunkten på året.
+I postgreSQL, till exempel, **SET TIME ZONE &#39;Europe/Paris&#39;,** Kommandot tar hänsyn till sommar- och vintertid: Datumet kommer att anges i UTC+1 eller UTC+2 beroende på tidpunkten på året.
 
-**Om du däremot använder** SET TIME ZONE 0200, kommer tidsfördröjningen alltid att vara UTC+2.
+Om du däremot använder **SET TIME ZONE 0200,** kommer tidsfördröjningen alltid att vara UTC+2.
 
 ## Konfiguration {#configuration}
 
@@ -59,7 +62,7 @@ Ur teknisk synvinkel finns det två sätt att lagra **information av typen Datum
 1. TIDSSTÄMPEL MED TIMEZONE-format: databasmotorn lagrar datum i UTC. Varje session som öppnas har en tidszon och datumen konverteras enligt den.
 1. Lokalt format + lokal tidszon: alla datum lagras i det lokala formatet (ingen hantering av tidsfördröjning) och en enda tidszon tilldelas dem. Tidszonen lagras i alternativet **WdbcTimeZone** i Adobe Campaign-instansen och kan ändras via trädens **[!UICONTROL Administration > Platform > Options]** meny.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Observera att den här ändringen kan leda till problem med datakonsekvens och synkronisering.
 
@@ -71,7 +74,7 @@ Markera alternativet för att lagra alla data med datum och tidpunkter i UTC-for
 
 ![](assets/install_wz_select_utc_option.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du använder **Oracle** måste tidszonsfilerna (.dat) för Oracle-klientlagren vara kompatibla med de tidszonsfiler som är installerade på servern.
 
@@ -87,13 +90,13 @@ Annars lagras de i det lokala formatet och du måste välja vilken tidszon som s
 
 När du migrerar till en tidigare version (utan tidszonshantering) måste du definiera lagringsläget för datum i databasen.
 
-För att garantera kompatibilitet med externa verktyg som har åtkomst till Adobe Campaign-databasen finns SQL-fälten av typen **Datum+tid** som standard kvar i lokalt format.
+För att garantera kompatibilitet med externa verktyg som har åtkomst till Adobe Campaign-databasen finns SQL-fälten av typen **Datum+tid** som standard i lokalt format.
 
 XML-fält som innehåller datum lagras nu i UTC. Vid inläsning konverteras fält som inte är i UTC-format automatiskt med serverns tidszon. Det innebär att alla XML-fält konverteras stegvis till UTC-format.
 
 Om du vill använda en befintlig instans lägger du till alternativet **WdbcTimeZone** och anger instansens tidszon.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Kontrollera att rätt värde har konfigurerats för alternativet WdbcTimeZone: senare ändringar kan leda till inkonsekvenser.
 
