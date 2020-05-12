@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
 
 Transactional Messaging (Message Center) är en Campaign-modul som är utformad för att hantera utlösarmeddelanden. Dessa meddelanden genereras från händelser som utlöses från informationssystem och kan vara: Faktura, orderbekräftelse, leveransbekräftelse, lösenordsändring, meddelande om att produkten inte är tillgänglig, kontoutdrag eller skapande av webbkonto till exempel.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Transactional messaging kräver en specifik licens. Kontrollera licensavtalet.
 
