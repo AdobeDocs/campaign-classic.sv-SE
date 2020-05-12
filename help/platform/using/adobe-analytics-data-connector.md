@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
+source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 0%
 
 ---
 
@@ -200,7 +203,8 @@ De är tillgängliga i Adobe Campaign-trädet, under **[!UICONTROL Administratio
 
 * **[!UICONTROL Recovering of web events]**: en gång i timmen hämtar det här arbetsflödet segment om hur användare beter sig på en viss webbplats, inkluderar dem i Adobe Campaign-databasen och startar arbetsflödet för ommarknadsföring.
 * **[!UICONTROL Event purge]**: Med det här arbetsflödet kan du ta bort alla händelser från databasen beroende på vilken period som är konfigurerad i **[!UICONTROL Lifespan]** fältet. Mer information finns i [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. De data som samlas in av det här arbetsflödet är tillgängliga i **[!UICONTROL Re-marketing efficiency]** rapporten, se den här [sidan](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: Med kan ni skicka indikatorer för e-postkampanjer via Adobe Campaign till Adobe Experience Cloud med hjälp av Adobe Analytics - Data Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
+* **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. De data som samlas in av det här arbetsflödet är tillgängliga i **[!UICONTROL Re-marketing efficiency]** rapporten, se den här [sidan](#creating-a-re-marketing-campaign).
+* **[!UICONTROL Sending of indicators and campaign attributes]**: Med kan ni skicka indikatorer för e-postkampanjer via Adobe Campaign till Adobe Experience Cloud med hjälp av Adobe Analytics - Data Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 
    Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan fördröja analysresultaten.
 
@@ -232,7 +236,6 @@ De är tillgängliga i Adobe Campaign-trädet, under **[!UICONTROL Administratio
    * **[!UICONTROL Contact date]** (schemalägger/@contactDate)
 
 
-* **Identifiering av konverterade kontakter**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. De data som samlas in av det här arbetsflödet är tillgängliga i **[!UICONTROL Re-marketing efficiency]** rapporten (se den här [sidan](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign)).
 
 ## Spåra leveranser i Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
