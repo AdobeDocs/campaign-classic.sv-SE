@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2375'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICO
 
 >[!NOTE]
 >
->Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i det här [avsnittet](../../configuration/using/about-schema-reference.md).
+>Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
 
 ## Beskrivning av huvudtabellerna {#description-main-tables}
 
@@ -58,7 +61,7 @@ Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körn
 
 Fältet sCountryCode är ISO-koden 3166-1 Alpha 2 (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet&quot;XX&quot; (och används i stället för en nollpost).
 
-Mer information om mottagartabellen finns i det här [avsnittet](../../configuration/using/about-data-model.md#default-recipient-table).
+Mer information om mottagartabellen finns i [det här avsnittet](../../configuration/using/about-data-model.md#default-recipient-table).
 
 ### NmsGroup {#NmsGroup}
 
