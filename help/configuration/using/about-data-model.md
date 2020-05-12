@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87966db35779f0e6a4b09a1a3ba1c30d4d002518
+source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICO
 
 ![](assets/data-model_documentation-tab.png)
 
-Mer information om standardbeskrivningen för datamodellen i Campaign Classic finns i det här [avsnittet](../../configuration/using/data-model-description.md).
+Mer information om standardbeskrivningen för datamodellen i Campaign Classic finns i [det här avsnittet](../../configuration/using/data-model-description.md).
 
-Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i det här [avsnittet](../../configuration/using/about-schema-reference.md).
+Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
 
 ## Översikt {#data-model-overview}
 
@@ -38,13 +41,13 @@ Adobe Campaign bygger på en relationsdatabas som innehåller tabeller som är l
 
 >[!NOTE]
 >
->Mer information om arkitekturen för Campaigns datamodell och relaterade bästa metoder finns i det här [avsnittet](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+>Mer information om arkitekturen för Campaigns datamodell och relaterade bästa metoder finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-model-architecture).
 
 ### Mottagarregister {#recipient-table}
 
 Datamodellen bygger på en huvudtabell som som standard är mottagartabellen (**NmsRecipient**). Med den här tabellen kan alla marknadsföringsprofiler lagras.
 
-Mer information om mottagartabellen finns i det här [avsnittet](#default-recipient-table).
+Mer information om mottagartabellen finns i [det här avsnittet](#default-recipient-table).
 
 ### Leveransregister {#delivery-table}
 
@@ -66,7 +69,7 @@ Slutligen består en del av datamodellen av tekniska data som används för ans�
 
 Den körklara mottagartabellen i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
 
-Fördelarna med att använda den vanliga mottagartabellen är följande:
+Fördelarna med att använda standardmottagartabellen är följande:
 
 * Arbeta direkt med funktioner som prenumerationer, listor, undersökningar, sociala medier och så vidare.
 * Tillhandahåller en marknadsföringsdatabas med en mottagarcentrerad datamodell.
@@ -85,7 +88,7 @@ Och eftersom mottagartabellen är en del av produkten utvecklas både tabellen o
 
 När ni börjar med Adobe Campaign måste ni utvärdera standarddatamodellen för att kontrollera vilken tabell som är bäst lämpad för att lagra era marknadsföringsdata.
 
-Om det är relevant kan du använda den förvalda mottagartabellen med de färdiga fälten, som beskrivs i det här [avsnittet](#default-recipient-table).
+Om det är relevant kan du använda den förvalda mottagartabellen med de färdiga fälten, som beskrivs i [det här avsnittet](#default-recipient-table).
 
 Om det behövs kan du utöka den med två mekanismer:
 
@@ -108,7 +111,7 @@ Om er datamodell inte passar den mottagarcentrerade strukturen kan ni skapa andr
 >
 >I så fall måste du skapa en ny [målmappning](../../configuration/using/target-mapping.md).
 
-Alla principer och steg som behövs när du använder en anpassad mottagartabell beskrivs i det här [avsnittet](../../configuration/using/about-custom-recipient-table.md).
+Alla principer och steg som behövs när du använder en anpassad mottagartabell beskrivs i [det här avsnittet](../../configuration/using/about-custom-recipient-table.md).
 
 Fördelarna med att använda en anpassad mottagartabell är följande:
 
@@ -130,4 +133,4 @@ Inget underhåll krävs för att kontrollera att alla tillägg fortfarande är g
 
 >[!IMPORTANT]
 >
->Användningen av en anpassad mottagartabell är reserverad för avancerade användare och är begränsad. Mer information finns i det här avsnittet.
+>Användningen av en anpassad mottagartabell är reserverad för avancerade användare och är begränsad. Mer information finns i [det här avsnittet](../../configuration/using/about-custom-recipient-table.md).
