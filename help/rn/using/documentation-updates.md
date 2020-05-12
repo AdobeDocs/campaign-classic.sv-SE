@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
 workflow-type: tm+mt
-source-wordcount: '6488'
+source-wordcount: '6502'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,7 @@ Avsnittet Felsökning av slutprodukt har flyttats och uppdaterats. [Läs mer](..
 
 Avsnittet Starta en ny plattform har förbättrats. [Läs mer](../../delivery/using/starting-new-platform.md)
 
+Avsnittet Skicka transaktionsmeddelanden med bilagor har flyttats och uppdaterats. [Läs mer](../../message-center/using/transactional-email-with-attachments.md)
 
 ## April 2020 {#april-2020}
 
