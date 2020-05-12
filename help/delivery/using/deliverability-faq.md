@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2aad7e586b83bbb6c7b4233e9844e038802f50d7
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ I Adobe Campaign finns en konfiguration för hur många e-postmeddelanden per ti
 
 Det innebär att en anslutning kan använda en MX-regel utan att skicka ett e-postmeddelande. I det här fallet måste en konfiguration med en IP-adress eller en domän med dåligt rykte försöka med flera anslutningar innan ett e-postmeddelande skickas. För varje försök används ett meddelande per timkredit. Resultatet av marknadsföringskampanjen kommer att få en betydande effekt.
 
-Så &#39;kvoter har uppfyllts&#39; är inte bara ett konfigurationsproblem utan kan även kopplas till rykte. Det är viktigt att analysera felmeddelanden i SMTP-loggen.
+Därför är&quot;kvoter uppfyllda&quot; inte bara ett konfigurationsproblem, utan kan även kopplas till rykte. Det är viktigt att analysera felmeddelanden i [SMTP-loggen](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
 
-Mer information om MX-konfiguration finns i den [detaljerade dokumentationen](../../installation/using/email-deliverability.md#mx-configuration).
+Mer information om MX-konfiguration finns i [det här avsnittet](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Samma felmeddelande för en Internet-leverantör {#same-error-for-an-isp}
 
@@ -57,7 +57,7 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
    * Statusen **[!UICONTROL Blacklisted]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
 
    * Statusen **[!UICONTROL Quarantined]** är ett resultat av en mjuk eller hård studsa.
-   Mer information finns i det här [avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
 
 * **Vad betyder de olika anledningarna till karantänfel?**
 
@@ -76,9 +76,9 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
 * **Hur kan jag ta reda på om en av mina IP-adresser är svartlistad? Hur avsvartlistar jag mina IP-adresser?**
 
    Om du vill kontrollera om din IP-adress är svartlistad kan du använda olika webbplatser för att verifiera den:
-   * https://mxtoolbox.com/
-   * https://whatismyipaddress.com/blacklist-check
-   * https://www.blacklistalert.org/
+   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
+   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
+   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
    I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om svartlistan och även namnet på den webbplats som svartlistade IP-adressen.
 
    Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats avlistas från den webbplats som svartlistade IP-adressen.
@@ -89,13 +89,19 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
 
 ## God praxis {#best-practices}
 
+Nedan följer några tips som kan hjälpa dig att identifiera och åtgärda leveransproblem.
+
 ### Identifiera ett leveransproblem {#identify-deliverability-issue}
 
-* Postads- eller kampanjstatistik: Avgiftsbesvär/missbruk av klagomål/studsfrekvens är högre än vanligt.
-* Prenumerationsaktivitet: öppnas/klickas/transaktioner är lägre än vanligt.
+Följande element kan dra uppmärksamheten till dig:
+
+* Postads- eller kampanjstatistik: avbeställning, missbruk, klagomål och/eller avhoppsfrekvens är högre än vanligt.
+* Prenumerationsaktivitet: öppnas, klickningar och/eller transaktioner är lägre än vanligt.
 * Seed-konton visar filtrerade eller olevererade utskick.
 
 ### Hypotetiskt möjliga orsaker {#potential-causes}
+
+Ställ följande frågor för att identifiera möjliga orsaker till leveransproblemet:
 
 * Har det nyligen skett en förändring i listsegmenteringen?
 * Har jag skaffat några nya datakällor?
@@ -110,22 +116,36 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
 
 **Klagomål**
 
-Klagomålen definieras av prenumeranter som klickar på knappen&quot;this is spam&quot;. Om ditt leveransproblem har orsakats av klagomål måste du försöka avgöra varför mottagarna klagar. Kunder med hög andel klagomål kan också överväga att flytta sin länk för att avbryta prenumerationen till början av e-postmeddelandet för att uppmuntra prenumeranter som har tryckt på skräppostknappen att avbryta prenumerationen i stället för att klaga.
+Klagomålen definieras av prenumeranter som **rapporterar e-post som skräppost** genom att klicka på motsvarande knapp i sin inkorg.
 
-Avsändare kan samla in en mängd information utifrån sina kommentarer. Det är viktigt att lagra data och leta efter mönster i saker som anmälningskälla, hur länge adressen har prenumererats eller till och med vissa beteendedemografiska profiler. Klagomål kan ofta identifiera en riskfylld datakälla eller ett risksegment i filen. Risky definieras som den som mest sannolikt klagar, vilket kan skada anseendet, och i sin tur antalet inkorgar.
+Om ditt leveransproblem har orsakats av klagomål:
+* Du måste försöka avgöra varför mottagarna klagar.
+* Du kanske också vill flytta länken för att avbryta prenumerationen till det övre av e-postmeddelandet. Detta uppmuntrar prenumeranter att avbryta prenumerationen i stället för att klaga på skräppostknappen.
 
-Klagomålen har också sin grund i prenumeranter som inte längre vill ha e-post. Detta kan ofta bero på övermeddelanden, hur de uppfattade meddelandet, att de inte förväntade sig meddelandet eller inte minns att de valde att göra det. Det är också viktigt att utföra en granskning för att säkerställa att alla samlingspunkter är tydliga och att det inte finns några förkryssade kryssrutor i inköpsplatserna. Du bör också skicka ett välkomstmeddelande när prenumeranter väljer att gå med för att ange tonen och förklara hur ofta de kan förvänta sig att få e-postmeddelanden från dig.
+Avsändare kan samla in en mängd information från sina [feedback-slingor](../../delivery/using/technical-recommendations.md#feedback-loop) :
+* Det är viktigt att lagra data och leta efter mönster i saker som anmälningskälla, hur länge adressen har prenumererats eller till och med vissa beteendedemografiska profiler.
+* Klagomål kan ofta identifiera en riskfylld datakälla eller ett risksegment i filen. Risky definieras som den som mest sannolikt klagar, vilket kan skada anseendet, och i sin tur antalet inkorgar.
+
+Klagomålen kommer också från prenumeranter som inte längre vill ha e-post:
+* Detta kan ofta bero på för många meddelanden, att de som prenumererar inte uppfattade meddelandet, att de inte förväntade sig meddelandet eller inte minns att de valde.
+* Det är också viktigt att utföra en granskning för att säkerställa att alla insamlingspunkter är tydliga och att det inte finns några förkryssade kryssrutor i inköpsplatserna.
+* Du bör också skicka ett välkomstmeddelande när prenumeranter väljer att gå med för att ange tonen och förklara hur ofta de kan förvänta sig att få e-postmeddelanden från dig.
 
 **Datasäkerhet**
 
-Hårda studsar inträffar när du skickar till en adress som inte kan levereras hos en Internet-leverantör. En adress kan vara olevererbar av många anledningar, t.ex. en felstavad adress, en felaktig lista eller datakälla, eller ett e-postmeddelande till en adress som var aktiv vid ett tillfälle, men som har stängts eller avslutats efter en inaktivitetsperiod. Om du stöter på en hög hög grovlek är det viktigt att du granskar listan. Om det kommer från en ny källa kontrollerar du hur adresserna samlades in och att det fanns behörighet. Felaktiga data kan också komma från felstavade adresser. Detta kan åtgärdas med en datavalideringstjänst i realtid eller genom att kräva en bekräftad anmälan innan marknadsföringsmeddelanden skickas till den adressen.
+**Hårda studsar** inträffar när du skickar till en **adress** som inte kan levereras hos en Internet-leverantör. En adress kan vara olevererbar av många orsaker, till exempel:
+* Felstavad adress. Detta kan åtgärdas med en datavalideringstjänst i realtid eller genom att kräva en bekräftad anmälan innan marknadsföringsmeddelanden skickas till den adressen.
+* Felaktig lista eller datakälla. Om det kommer från en ny källa kontrollerar du hur adresserna samlades in och att det fanns behörighet.
+* Posta till en adress som vid ett tillfälle var aktiv, men som har stängts eller avslutats efter en inaktivitetsperiod.
 
 **Engagemang**
 
-Förutom klagomål och informationskvalitet fokuserar internetleverantörer mer än någonsin på positivt engagemang för att fatta leveransbeslut. De vill se om era prenumeranter öppnar era e-postmeddelanden eller tar bort dem utan att läsa dem. Eftersom de inte delar dessa data med avsändare måste vi använda den information vi har och översätta öppningar/klick/transaktioner som engagemang.
+Förutom klagomål och informationskvalitet fokuserar internetleverantörer mer än någonsin på **positivt engagemang** för att fatta leveransbeslut. De vill se om era prenumeranter öppnar era e-postmeddelanden eller tar bort dem utan att läsa dem. Eftersom de inte delar dessa data med avsändare måste vi använda den information vi har och översätta öppningar/klick/transaktioner som engagemang.
 
-Som en del av det pågående anseendeunderhållet är det viktigt att förstå hur engagerade prenumeranter finns på er lista och utveckla en riskhierarki för senaste nytt för prenumeranterna i varje fil. Senaste tid definieras som senaste öppnings-/klicknings-/transaktionsdatum eller registreringsdatum. Tidsramen kan skilja sig åt lodrätt. Fastställ aktiva (&quot;säkra&quot;) segment för varje vertikal. Detta är vanligtvis prenumeranter som har varit aktiva under de senaste 3-6 månaderna.
+Som en del av det pågående anseendeunderhållet är det viktigt att förstå hur engagerade prenumeranter finns på er lista och utveckla en **riskhierarki** för senaste nytt för prenumeranterna i varje fil. Senaste tid definieras som senaste öppnings-/klicknings-/transaktionsdatum eller registreringsdatum. Tidsramen kan skilja sig åt lodrätt. Så här gör du:
 
-Minska frekvensen för inaktivitet. Skapa en omengagemangsserie för måttliga riskinaktioner. Det är normalt 6-9 månader utan engagemang. Utveckla en bekräftelsekampanj för riskinaktivitet. Detta är vanligtvis prenumeranter som inte har interagerat med ett e-postmeddelande på 9-12 månader. Slutligen måste ni ange en avlämningsregel och ta bort prenumeranter som inte har öppnat på&quot;x&quot; månader. Vi rekommenderar vanligtvis 12+ månader, men det kan skilja sig åt beroende på försäljnings- och köpcykel.
-
-Mer information om återengagemang finns i [det här avsnittet](../../delivery/using/re-engagement-best-practices.md).
+1. Fastställ aktiva (&quot;säkra&quot;) segment för varje vertikal. Detta är vanligtvis prenumeranter som har varit aktiva under de senaste 3-6 månaderna.
+1. Minska frekvensen för inaktivitet.
+1. Skapa en [omengagemangsserie](../../delivery/using/re-engagement-best-practices.md) för måttliga riskinaktioner. Det är normalt 6-9 månader utan engagemang.
+1. Utveckla en bekräftelsekampanj för riskinaktivitet. Detta är vanligtvis prenumeranter som inte har interagerat med ett e-postmeddelande på 9-12 månader.
+1. Slutligen anger du en avlämningsregel och tar bort prenumeranter som inte har öppnat e-postmeddelanden på&quot;x&quot; månader. Vi rekommenderar vanligtvis 12+ månader, men det kan skilja sig åt beroende på försäljnings- och köpcykel.
