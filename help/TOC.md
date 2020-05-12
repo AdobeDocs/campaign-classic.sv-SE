@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
@@ -532,9 +532,7 @@ ht-degree: 0%
       + [Tjänstnivå för meddelandecenter](message-center/using/message-center-service-level.md)
       + [Bearbetningstid för meddelandecenter](message-center/using/message-center-processing-time.md)
    + Använd skiftläge {#use-case}
-      + [Syfte](message-center/using/purpose.md)
-      + [Viktiga anteckningar](message-center/using/important-notes.md)
-      + [Implementering](message-center/using/implementation.md)
+      + [Skicka transaktionsmejl med bilagor](message-center/using/transactional-email-with-attachments.md)
 + Integrering med sociala medier {#integrating-with-social-media}
    + [Om social marknadsföring](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
