@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Du måste vidta flera försiktighetsåtgärder när du installerar Transactional
 >
 >Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
 
-Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Se [Lägga till en leveranskanal](#adding-a-delivery-channel).
+Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional message-paket. Se [Lägga till en leveranskanal](#adding-a-delivery-channel).
 
 * Om du vill installera kontrollinstansen på datorn väljer du **[!UICONTROL Transactional message control]** modulen.
 
@@ -75,40 +78,40 @@ Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras i
 
    ![](assets/messagecenter_install_channel.png)
 
-## Transaktionsmeddelanden och inkommande interaktion {#transactional-messages-and-inbound-interaction}
+<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
-I kombination med modulen för inkommande interaktion kan du med transaktionsmeddelanden infoga ett marknadsföringserbjudande som är dedikerat till mottagaren i meddelandet.
+When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
 >[!NOTE]
 >
->Interaktionsmodulen beskrivs i [Interaktion](../../interaction/using/interaction-and-offer-management.md).
+>The Interaction module is detailed in [Interaction](../../interaction/using/interaction-and-offer-management.md).
 
-Om du vill använda transaktionsmeddelanden med interaktion måste du använda följande konfigurationer:
+To use transactional messaging with Interaction, you need to apply the following configurations:
 
-* Installera **interaktionspaketet** på kontrollinstansen och konfigurera din erbjudandekatalog.
+* Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-   >[!CAUTION]
-   >
-   >Replikera inte erbjudandena på körningsinstanserna.
+  >[!CAUTION]
+  >
+  >Do not replicate the offers onto the execution instances.
 
-* Händelsen måste innehålla en identifierare som är länkad till mottagarna för att kunna personalisera erbjudanden. Attributet **@externalId** måste innehålla värdet för den här identifieraren. **Interaktionen** är som standard konfigurerad för att identifiera mottagaren av primärnyckeln:
+* The event must include an identifier linked to the recipients, for personalizing offers. The **@externalId** attribute must contain the value of this identifier. **Interaction** is configured by default to identify the recipient of the primary key:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
+  ```
 
-   Du kan konfigurera **Interaktion** så att identifiering sker i valfritt fält, t.ex. på e-postadressen:
+  You can configure **Interaction** so that identification takes place in the field of your choice, for example on the email address:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
+  ```
 
-Skapa leveransmallar på det sätt du vill för en e-postkampanj:
+Create your delivery templates the way you would for an email campaign:
 
-* Lägg till erbjudandet i mallen för transaktionsmeddelanden.
-* Kontrollera förhandsgranskningen, skicka ett korrektur och publicera mallen.
+* Add the offer to your transactional message template.
+* Check the preview, send a proof and publish the template.
 
-Du måste också aktivera enhetsläget för dina erbjudanden. Mer information finns i [det här avsnittet](../../interaction/using/creating-offer-spaces.md).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
 ## Transaktionsmeddelanden och push-meddelanden {#transactional-messaging-and-push-notifications}
 
