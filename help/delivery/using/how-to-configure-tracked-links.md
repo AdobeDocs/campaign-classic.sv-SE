@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
 
 1. För varje URL för meddelandet väljer du om spårning ska aktiveras eller inte.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >När länkens URL används som etikett bör du inaktivera spårning för att undvika risken för avvisning på grund av nätfiske.
    >
@@ -67,4 +70,4 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    * **[!UICONTROL Opt-out]** : hanterar denna URL som en avanmälnings- eller avanmälnings-URL.
    * **[!UICONTROL Mirror page]** : anser att denna URL är en URL för en speglad sida.
 
-1. Dessutom kan du välja en kategori för varje spårad URL i den nedrullningsbara listan i **[!UICONTROL Category]** kolumnen. Dessa kategorier kan visas som i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en viss uppräkning: **[!UICONTROL urlCategory]** (se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).
+1. Dessutom kan du välja en kategori för varje spårad URL i den nedrullningsbara listan i **[!UICONTROL Category]** kolumnen. Dessa kategorier kan visas som i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en viss uppräkning: **[!UICONTROL urlCategory]** (Se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).
