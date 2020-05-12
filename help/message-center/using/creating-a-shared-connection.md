@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 0%
 
 ---
 
 
 # Skapa en delad anslutning{#creating-a-shared-connection}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Schematillägg som görs för scheman som används av [meddelandecentrets tekniska arbetsflöden](../../message-center/using/technical-workflows.md) för antingen kontroll- eller körningsinstanser måste dupliceras i de andra instanser som används av transaktionsmeddelandemodulen i Adobe Campaign.
 >* Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
@@ -97,7 +100,7 @@ Så här skapar du ett externt konto av instanstypen körning:
 
 Om du vill att kontrollinstansen ska kunna ansluta till körningsinstansen utan att behöva ange ett lösenord anger du bara IP-adressen för kontrollinstansen i avsnittet **Meddelandecentrets** åtkomstbehörighet. Tomma lösenord tillåts dock inte som standard.
 
-Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>` typanslutningar. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>` typanslutningar. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 >[!NOTE]
 >
@@ -146,13 +149,13 @@ Om du vill använda flera kontrollinstanser måste den här konfigurationen utf�
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Skapa operatorerna **mc1** och **mc2** genom att duplicera operatorn Message Center som anges som standard (**mc**). Mer information om hur du skapar operatorer finns i [det här avsnittet](../../platform/using/access-management.md#operators).
+1. Skapa operatorerna **mc1** och **mc2** genom att duplicera operatorn Message Center som anges som standard (**mc**). For more on creating operators, refer to [this section](../../platform/using/access-management.md#operators).
 
    ![](assets/messagecenter_multi_control_4.png)
 
    >[!NOTE]
    >
-   >**mc1** - och **mc2** -operatorer måste ha **[!UICONTROL Message Center execution]** rättigheter och kan inte komma åt Adobe Campaign-klientkonsolen. En operator måste alltid länkas till en säkerhetszon. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >**mc1** - och **mc2** -operatorer måste ha **[!UICONTROL Message Center execution]** rättigheter och kan inte komma åt Adobe Campaign-klientkonsolen. En operator måste alltid länkas till en säkerhetszon. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 1. För varje operator markerar du **[!UICONTROL Restrict to information found in sub-folders of]** rutan och väljer lämplig mapp (**Mapp 1** för operatorn **mc1** och **Mapp 2** för operatorn **mc2** ).
 
