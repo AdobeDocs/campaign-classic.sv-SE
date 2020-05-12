@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en s�
 
 Mer exakt används de för att styra hur snabbt Campaign MTA (Message Transfer Agent) skickar e-postmeddelanden till varje enskild e-postdomän eller Internet-leverantör (t.ex. hotmail.com, comcast.net). Dessa regler är vanligtvis baserade på gränser som offentliggjorts av Internet-leverantörer (t.ex. innehåller inte mer än 20 meddelanden per varje SMTP-anslutning).
 
-Mer information om MX-hantering finns i det [dedikerade avsnittet](../../installation/using/email-deliverability.md#mx-configuration).
+For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
