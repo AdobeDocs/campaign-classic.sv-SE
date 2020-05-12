@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
 
 # Leverans{#about-deliverability}
+
+**Leveransmöjligheterna** består i att mäta framgången för era kampanjer som når mottagarnas inkorg utan att studsa, eller markeras som skräppost.
 
 Adobe Campaign erbjuder ett antal verktyg för att spåra plattformens leveransförmåga. I det här avsnittet beskrivs också de huvudprinciper som du bör tänka på när du hanterar och optimerar leveransen.
 
