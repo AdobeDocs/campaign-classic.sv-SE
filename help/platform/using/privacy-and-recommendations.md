@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +35,15 @@ Ta dig tid att gå igenom checklistan [för](https://docs.campaign.adobe.com/doc
 
 ## Integritetshantering {#privacy-management}
 
+Adobe Campaign erbjuder en uppsättning verktyg som hjälper er att följa sekretessregler (GDPR, CCPA med flera).
+
 GDPR (General Data Protection Regulation) är EU:s integritetslagstiftning som harmoniserar och moderniserar kraven på skydd av personuppgifter. GDPR gäller för Adobe Campaign-kunder som lagrar data för registrerade i EU.
 
 CCPA (California Consumer Privacy Act) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger vissa företag som bedriver verksamhet i Kalifornien dataskyddsansvar.
 
-Förutom samtyckeshantering, inställningar för datalagring och behörighetshantering erbjuder vi, i vår roll som dataprocessor, ytterligare funktioner som underlättar din beredskap som datastyrenhet för vissa sekretessförfrågningar.
+Förutom samtyckeshantering, inställningar för datalagring och behörighetshantering erbjuder vi, i vår roll som dataprocessor, ytterligare funktioner som underlättar din beredskap som Data Controller för vissa sekretessförfrågningar.
 
-I den här [artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html)får du lära dig hur Adobe Campaign hjälper dig att hantera de olika sekretessnyckelfunktionerna: Rätt till åtkomst, rätt att bli glömd, samtycke, datalagring och användarroller. Du hittar också bästa praxis som hjälper dig att följa din sekretesspraxis när du använder vår tjänst.
+I [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html)får du lära dig hur Adobe Campaign hjälper dig att hantera de olika sekretessnyckelfunktionerna: Rätt till åtkomst, rätt att bli glömd, samtycke, datalagring och användarroller. Du hittar också bästa praxis som hjälper dig att följa din sekretesspraxis när du använder vår lösning.
 
 ## Cookies och spårningsfunktioner {#cookies-and-tracking-capabilities}
 
