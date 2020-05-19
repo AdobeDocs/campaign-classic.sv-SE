@@ -12,7 +12,10 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Den här processen ger kunderna minst en releasecykel för att anpassa implement
 
 I det här avsnittet visas funktioner som har markerats som borttagna i de senaste Campaign Classic-versionerna.
 
-I allmänhet är funktioner som ska tas bort i en framtida version först inaktuella, med ett alternativ. Dessa funktioner är inte längre tillgängliga för nya kunder med Campaign Standard eller ska inte användas för nya implementeringar. De tas också bort från produktdokumentationen.
+I allmänhet är funktioner som ska tas bort i en framtida version först inaktuella, med ett alternativ. Dessa funktioner är inte längre tillgängliga för nya kunder i Campaign Classic, eller ska inte användas för nya implementeringar. De tas också bort från produktdokumentationen.
 
 Kunderna rekommenderas att granska om de använder funktionen/funktionen i den aktuella distributionen och planera för att ändra implementeringen så att den använder det alternativ som finns. Se målets borttagningsdatum för att planera miljön och projektuppdateringarna utifrån detta.
 
@@ -50,8 +53,8 @@ Kunderna rekommenderas att granska om de använder funktionen/funktionen i den a
    <td><strong>Ersättning</strong></td> 
   </tr> 
    <tr> 
-   <td>Javascript SDK Security<br></td>
-   <td>decryptString<br></td>
+   <td>Javascript SDK Security<br> </td>
+   <td>decryptString<br> </td>
    <td><p>Av säkerhetsskäl är <em>dekrypptString</em> API inte längre tillgängligt som standard för nya installationer.</p> 
    <p>I samband med en efteruppgradering till 18.6 (och senare) är denna API inte längre aktiverad och har ersatts av funktionen <em>dekrypptPassword</em> .</p><br> </td>
   </tr> 
@@ -68,14 +71,14 @@ Kunderna rekommenderas att granska om de använder funktionen/funktionen i den a
    <td><strong>Ersättning</strong></td> 
   </tr> 
    <tr> 
-   <td>E-postarkivering<br></td>
-   <td>Filbaserad arkivering<br></td>
+   <td>E-postarkivering<br> </td>
+   <td>Filbaserad arkivering<br> </td>
    <td><p>E-postarkivering är nu tillgänglig via en dedikerad e-postadress för hemlig kopia. <a href="../../installation/using/email-archiving.md">Läs mer</a>.</p> 
    <p><em>Datum för målborttagning: Kampanjversion 20.2 - juni 2020</em></p><br> </td>
   </tr> 
    <tr> 
-   <td>Leadhantering<br></td>
-   <td>Leads<br></td>
+   <td>Leadhantering<br> </td>
+   <td>Leads<br> </td>
    <td><p>Leads Management-paketet i Adobe Campaign Classic förenklade processen att bygga upp och underhålla hela livscykeln för leads. Liknande funktioner kan implementeras via andra interna arbetsflödesaktiviteter och datamodellsändringar.</p> 
    <p><em>Datum för målborttagning: Kampanjversion 20.2 - juni 2020</em></p><br> </td>
   </tr> 
@@ -96,13 +99,13 @@ Från och med den 20.1 februari är följande system föråldrat för Campaign C
    <td><strong>Ersättning</strong></td> 
   </tr> 
    <tr> 
-   <td>Campaign Classic Client Console 32 bitar<br></td>
+   <td>Campaign Classic Client Console 32 bitar<br> </td>
    <td><p>Campaign Classic Client Console 64 bitar</p><br> </td>
   </tr> 
  </tbody> 
 </table>
 
-### Adobe Campaign 19.2 {#compat-19-2-release}
+### Adobe Campaign 19.2  {#compat-19-2-release}
 
 Från och med hösten 19.2 används inte följande operativsystem för Campaign Classic. Kompatibiliteten upphör 2020 för EOY.
 
@@ -113,7 +116,7 @@ Se [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-m
 
 ## Borttagna funktioner {#removed-features}
 
-I det här avsnittet visas funktioner som har tagits bort från Campaign Standard.
+I det här avsnittet visas funktioner som har tagits bort från Campaign Classic.
 
 <table> 
  <tbody> 
@@ -123,7 +126,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Standar
    <td><strong>Version</strong></td> 
   </tr> 
    <tr> 
-   <td>Dokumentation för kampanj-API:er - jsapi.chm-fil<br></td>
+   <td>Dokumentation för kampanj-API:er - jsapi.chm-fil<br> </td>
    <td>Campaign Classic-API:er finns nu på en dedikerad sida. Om du använde filen jsapi.chm bör du nu hänvisa till <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">den nya onlineversionen</a>.</td>
    <td>19.1</td>
   </tr> 
@@ -138,7 +141,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Standar
    <td>18.10</td>
   </tr> 
   <tr> 
-   <td>Push-meddelanden - binär iOS-anslutning<br></td>
+   <td>Push-meddelanden - binär iOS-anslutning<br> </td>
    <td>Enligt Apples rekommendation kommer Adobe att ta bort den gamla binära iOS-kopplingen. Den mer kapabla och mer effektiva HTTP/2-baserade kopplingen är redan tillgänglig.</td>
    <td>18.10</td>
   </tr> 
