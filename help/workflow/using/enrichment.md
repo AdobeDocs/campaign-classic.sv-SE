@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Med det här **[!UICONTROL Data linked to the filtering dimension]** alternative
 
 ![](assets/wf_enrich_linkoptions.png)
 
-Med det här **[!UICONTROL A link]** alternativet kan du skapa en koppling till valfri databastabell.
+Med det här **[!UICONTROL A link]** alternativet kan du skapa en join i valfri databastabell.
 
 ![](assets/wf_enrich_linkstype.png)
 
@@ -55,7 +58,11 @@ Det finns fyra typer av länkar:
 
    Det här alternativet är konfigurerat på **[!UICONTROL Reconciliation and deduplication]** fliken som du kan komma åt via **[!UICONTROL Edit additional data]** länken för **[!UICONTROL Enrichment]** aktiviteten.
 
-I exemplen med [att förbättra data](../../workflow/using/enriching-data.md) och [skapa en sammanfattningslista](../../workflow/using/creating-a-summary-list.md) finns information om hur Enrichment-aktiviteter fungerar i sitt sammanhang.
+Användningsexempel som beskriver hur anrikningsaktiviteter fungerar i sitt sammanhang finns också i följande avsnitt:
+
+* [E-postberikning med anpassade datumfält](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+* [Förbättra data](../../workflow/using/enriching-data.md)
+* [Skapa en sammanfattningslista](../../workflow/using/creating-a-summary-list.md)
 
 ## Lägga till information {#adding-information}
 
@@ -122,11 +129,11 @@ Gör så här:
    83TY2;SWITZERLAND;mike@gmail.com
    ```
 
-1. **Redigera anrikningsaktiviteten och klicka på** Lägg till data.. om du vill skapa en koppling till tabellen Land.
+1. Redigera anrikningsaktiviteten och klicka på **Lägg till data..** om du vill skapa en koppling till tabellen Land.
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Markera **[!UICONTROL Link definition]** alternativet och klicka på **[!UICONTROL Next]** knappen. Ange vilken typ av länk som ska skapas. I det här exemplet vill vi att filmottagarens land ska stämma överens med ett land i listan över tillgängliga länder i den dedikerade databastabellen. Välj **[!UICONTROL Define a link by searching for a reference among several options]** alternativet. Markera landstabellen i **[!UICONTROL Target schema]** fältet.
+1. Markera **[!UICONTROL Link definition]** alternativet och klicka på **[!UICONTROL Next]** knappen. Ange vilken typ av länk som ska skapas. I det här exemplet vill vi att filmottagarens land ska stämma överens med ett land i listan över tillgängliga länder i den dedikerade databastabellen. Choose the **[!UICONTROL Define a link by searching for a reference among several options]** option. Markera landstabellen i **[!UICONTROL Target schema]** fältet.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -211,7 +218,7 @@ Så här gör du:
 
 När en **anrikningsaktivitet** används för att leverera erbjudanden lagras deras rankningar och deras vikter som standard inte i förslagstabellen.
 
- Den här informationen lagras som standard i aktiviteten **[!UICONTROL Offer engine]** .
+Den här informationen lagras som standard i aktiviteten **[!UICONTROL Offer engine]** .
 
 Du kan dock lagra den här informationen på följande sätt:
 
