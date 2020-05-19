@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
 workflow-type: tm+mt
-source-wordcount: '6502'
+source-wordcount: '6464'
 ht-degree: 0%
 
 ---
@@ -23,19 +23,18 @@ ht-degree: 0%
 
 # Dokumentationsuppdateringar{#documentation-updates}
 
-Läs om alla de senaste uppdateringarna av dokumentationen för Adobe Campaign Classic.
+På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per månad och Campaign-versionen.
 
-På den här sidan visas alla nya funktioner och dokumentationsuppdateringar för varje version av Adobe Campaign Classic.
+Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md) Adobe Campaign Classic för mer information.
 
-Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md)Adobe Campaign Classic.
 
 ## Maj 2020 {#may-2020}
 
-Avsnittet Övervakning av slutprodukt har flyttats och organiserats om. [Läs mer](../../delivery/using/monitoring-deliverability.md)
+Avsnittet Övervakning av levererbarhet har flyttats och förbättrats. [Läs mer](../../delivery/using/monitoring-deliverability.md)
 
-Avsnittet Felsökning av slutprodukt har flyttats och uppdaterats. [Läs mer](../../delivery/using/deliverability-faq.md)
+Avsnittet Felsökning av slutprodukter har flyttats och förbättrats. [Läs mer](../../delivery/using/deliverability-faq.md)
 
-Avsnittet Starta en ny plattform har förbättrats. [Läs mer](../../delivery/using/starting-new-platform.md)
+Riktlinjer för leveransbarhet när du startar ett nytt plattformsavsnitt har förbättrats. [Läs mer](../../delivery/using/starting-new-platform.md)
 
 Avsnittet Skicka transaktionsmeddelanden med bilagor har flyttats och uppdaterats. [Läs mer](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -45,11 +44,11 @@ FDA-rättighetstabellen har flyttats till Accessing an external database (FDA) d
 
 Vanliga frågor och svar har uppdaterats med tips på hur du rensar mjuk och hård cache. [Läs mer](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
-Avsnittet om god praxis för datamodell har förbättrats med ytterligare information om index. [Läs mer](../../configuration/using/data-model-best-practices.md#indexes)
+Bästa praxis för datamodeller har förbättrats med ytterligare information om index. [Läs mer](../../configuration/using/data-model-best-practices.md#indexes)
 
-Avsnittet som beskriver den fördefinierade datamodellen för Adobe Campaign har uppdaterats med mer information om varje körklar tabell och med länkar till relevanta moduler. [Läs mer](../../configuration/using/data-model-description.md)
+Avsnittet som beskriver den inbyggda datamodellen för Adobe Campaign har uppdaterats med mer information om varje tabell. [Läs mer](../../configuration/using/data-model-description.md)
 
-Användningsexempel från guiden&quot;Automatisera med arbetsflöden&quot; har omorganiserats till tematiska avsnitt. [Läs mer](../../workflow/using/using-the-local-approval-activity.md)
+Fall av användning av arbetsflöden har uppdaterats och omorganiserats i tematiska avsnitt. [Läs mer](../../workflow/using/using-the-local-approval-activity.md)
 
 Avsnitten [Signera e-postkvalificering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) och [E-posthanteringsregler](../../delivery/using/understanding-delivery-failures.md#email-management-rules) har förbättrats med uppdaterad information.
 
@@ -57,29 +56,29 @@ Adobe Campaign Enhanced MTA article has been updated. Det gäller nu endast Camp
 
 ## Mars 2020 {#march-2020}
 
-Sidan&quot;Bästa praxis för datamodell&quot; har uppdaterats med nya avsnitt, bland annat [Sekvenser](../../configuration/using/data-model-best-practices.md#sequences), [Prestanda](../../configuration/using/data-model-best-practices.md#performance) och [Stora tabeller](../../configuration/using/data-model-best-practices.md#large-tables). [Läs mer](../../configuration/using/data-model-best-practices.md)
+Bästa praxis för datamodeller har uppdaterats med nya avsnitt som bland annat [Sekvenser](../../configuration/using/data-model-best-practices.md#sequences), [Prestanda](../../configuration/using/data-model-best-practices.md#performance) och [Stora tabeller](../../configuration/using/data-model-best-practices.md#large-tables). [Läs mer](../../configuration/using/data-model-best-practices.md)
 
-Nu finns ett nytt avsnitt som beskriver den fördefinierade datamodellen Adobe Campaign och interaktionen med färdiga tabeller. [Läs mer](../../configuration/using/data-model-description.md)
+Nu finns ett nytt avsnitt som beskriver den inbyggda datamodellen för Adobe Campaign och interaktionen mellan tabeller. [Läs mer](../../configuration/using/data-model-description.md)
 
-Ytterligare resurser har lagts till på dokumentationsstartsidan. [Läs mer](../../campaign-classic-home.md)
+Ytterligare nyckellänkar har lagts till på dokumentationsstartsidan. [Läs mer](../../campaign-classic-home.md)
 
 Ett användningsexempel har lagts till om hur du integrerar ett dynamiskt erbjudande från Adobe Target i ett e-postmeddelande i Adobe Campaign. [Läs mer](../../integrations/using/inserting-a-dynamic-image.md)
 
 Nu finns ett nytt avsnitt som beskriver de olika språk som är tillgängliga i Adobe Campaign. [Läs mer](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Sidan Åtkomsthantering har uppdaterats med mer information om namngivna rättigheter. [Läs mer](../../platform/using/access-management.md#named-rights)
+Riktlinjerna för åtkomsthantering har uppdaterats med mer information om namngivna rättigheter. [Läs mer](../../platform/using/access-management.md#named-rights)
 
 ## Februari 2020 {#february-2020}
 
 Nu finns ett nytt avsnitt med bästa praxis och viktiga rekommendationer när du utformar datamodellen för Adobe Campaign. [Läs mer](../../configuration/using/data-model-best-practices.md)
 
-Avsnittet&quot;E-postleverans&quot; har bytt namn till&quot;Tekniska e-postkonfigurationer&quot;. [Läs mer](../../installation/using/email-deliverability.md)
+Det finns ett nytt avsnitt om konfigurationer av teknisk e-post. [Läs mer](../../installation/using/email-deliverability.md)
 
 Vanliga frågor om leveranser har uppdaterats med mer information om felmeddelandet&quot;kvoterna uppfyllts&quot;. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-AMP för e-post stöds nu av tre e-postleverantörer (Gmail, Outlook och Mail.ru), och avsnittet som beskriver hur du definierar interaktivt innehåll med AMP har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
+AMP för e-post stöds nu av nya e-postleverantörer: den relaterade dokumentationen har uppdaterats. [Läs mer](../../delivery/using/defining-interactive-content.md)
 
-Avsnittet för e-postarkivering har klargjorts. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
+Avsnittet för e-postarkivering har förbättrats. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -91,7 +90,7 @@ Förbättringar av Hadoop FDA Connector - [läs mer](../../platform/using/specif
 
 **Andra dokumentationsuppdateringar som följer med releasen**
 
-Guiderna för [installation](../../installation/using/before-reading.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används av servertjänstens start. Du kan fortfarande använda /etc/init.d/nlserver6, men vi rekommenderar att du nu använder kommandot systemctl för att interagera med nlserver-tjänsten.
+Guiderna för [installation](../../installation/using/before-reading.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används av servertjänstens start. Du kan fortfarande använda /etc/init.d/nlserver6, men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med nlserver-tjänsten.
 
 Installationsguiden har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Nya system som stöds har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/before-reading.md)
 
@@ -378,7 +377,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
