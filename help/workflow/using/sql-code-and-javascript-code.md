@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
+source-git-commit: 26ba86073e4f1569bf05a7d8aa864ca87baed3ea
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
 ## SQL-kod {#sql-code}
 
-En **[!UICONTROL SQL code*]* -aktivitet kör ett SQL-skript. Skriptet är en JST-mall.
+En **[!UICONTROL SQL code]** aktivitet kör ett SQL-skript. Skriptet är en JST-mall.
 
 ![](assets/sql_code.png)
 
@@ -50,14 +53,14 @@ En **[!UICONTROL SQL code*]* -aktivitet kör ett SQL-skript. Skriptet är en JST
 
    ![](assets/javascript_code.png)
 
-   * **[!UICONTROL Script]**:Redigerarens centrala del innehåller skriptet som ska köras.
-   * **[!UICONTROL Processing errors]**:Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   * **[!UICONTROL Script]**: Redigerarens centrala del innehåller skriptet som ska köras.
+   * **[!UICONTROL Processing errors]**: Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
 * **[!UICONTROL Advanced JavaScript code]**
 
    ![](assets/advanced_javascript_code.png)
 
-   * **[!UICONTROL First call]**:Den första zonen i redigeraren innehåller skriptet som ska köras under det första anropet.
-   * **[!UICONTROL Next calls]**:Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
-   * **[!UICONTROL Transitions]**:Du kan definiera flera aktivitetsutdatagränser.
-   * **[!UICONTROL Schedule]**:På fliken **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
+   * **[!UICONTROL First call]**: Den första zonen i redigeraren innehåller skriptet som ska köras under det första anropet.
+   * **[!UICONTROL Next calls]**: Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
+   * **[!UICONTROL Transitions]**: Du kan definiera flera aktivitetsutdatagränser.
+   * **[!UICONTROL Schedule]**: På fliken **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
