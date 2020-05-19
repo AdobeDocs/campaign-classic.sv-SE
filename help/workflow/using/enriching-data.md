@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 ## Om att förbättra data {#about-enriching-data}
 
 Här finns information om möjliga användningar av aktiviteten i ett målarbetsflöde **[!UICONTROL Enrichment]** . Mer information om hur du använder **[!UICONTROL Enrichment]** aktiviteten finns i: [Berikning](../../workflow/using/enrichment.md).
+
+Det finns också ett användningsexempel om hur man förbättrar e-postleveransen med anpassade datum i [det här avsnittet](../../workflow/using/email-enrichment-with-custom-date-fields.md).
 
 Kontakterna i marknadsföringsdatabasen får en inbjudan att delta i en tävling via ett webbprogram. Konkurrensresultaten återvinnas i **[!UICONTROL Competition results]** tabellen. Det här registret är länkat till kontakttabellen (**[!UICONTROL Recipients]**). Tabellen **[!UICONTROL Competition results]** innehåller följande fält:
 
@@ -63,7 +68,7 @@ Den andra frågan gör att vi kan rikta in oss på de mottagare som deltog i den
 
 Därefter läggs en **[!UICONTROL Intersection]** typaktivitet till för att rikta sig till de mottagare som lagts till i databasen under de senaste sex månaderna och som gick in i den sista tävlingen.
 
-## Steg 2:Berikning {#step-2--enrichment}
+## Steg 2: Berikning {#step-2--enrichment}
 
 I det här exemplet vill vi anpassa leveranser enligt det **[!UICONTROL Score]** fält som lagras i **[!UICONTROL Competition results]** tabellen. Den här tabellen har en 1:n-typrelation med mottagartabellen. Med den här **[!UICONTROL Enrichment]** aktiviteten kan vi lägga till data från en tabell som är länkad till filtreringsdimensionen i arbetsflödets arbetsregister.
 
@@ -75,19 +80,19 @@ I det här exemplet vill vi anpassa leveranser enligt det **[!UICONTROL Score]**
 
    ![](assets/uc1_enrich_7.png)
 
-1. Ange ett ID och en etikett och välj sedan **[!UICONTROL Limit the line count]** alternativet i **[!UICONTROL Data collected]** fältet. Välj 1 som värde i **[!UICONTROL Lines to retrieve]** fältet. För varje mottagare läggs en rad från tabellen till arbetsflödets arbetsregister i anrikningsaktiviteten från **[!UICONTROL Competition results]** tabellen. Klicka **[!UICONTROL Next]**.
+1. Ange ett ID och en etikett och välj sedan **[!UICONTROL Limit the line count]** alternativet i **[!UICONTROL Data collected]** fältet. Välj 1 som värde i **[!UICONTROL Lines to retrieve]** fältet. För varje mottagare läggs en rad från tabellen till arbetsflödets arbetsregister i anrikningsaktiviteten från **[!UICONTROL Competition results]** tabellen. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. I det här exemplet vill vi återfå mottagarens högsta poäng, men bara för den sista tävlingen. Det gör du genom att lägga till ett filter i **[!UICONTROL Competition name]** fältet så att alla rader som hör till tidigare tävlingar utesluts. Klicka **[!UICONTROL Next]**.
+1. I det här exemplet vill vi återfå mottagarens högsta poäng, men bara för den sista tävlingen. Det gör du genom att lägga till ett filter i **[!UICONTROL Competition name]** fältet så att alla rader som hör till tidigare tävlingar utesluts. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Gå till **[!UICONTROL Sort]** skärmen och klicka på **[!UICONTROL Add]** knappen, markera **[!UICONTROL Score]** fältet och markera kryssrutan i **[!UICONTROL descending]** kolumnen för att sortera objekt i **[!UICONTROL Score]** fälten i fallande ordning. För varje mottagare läggs en rad till i anrikningsaktiviteten som matchar den högsta poängen för det senaste spelet. Klicka **[!UICONTROL Next]**.
+1. Gå till **[!UICONTROL Sort]** skärmen och klicka på **[!UICONTROL Add]** knappen, markera **[!UICONTROL Score]** fältet och markera kryssrutan i **[!UICONTROL descending]** kolumnen för att sortera objekt i **[!UICONTROL Score]** fälten i fallande ordning. För varje mottagare läggs en rad till i anrikningsaktiviteten som matchar den högsta poängen för det senaste spelet. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Dubbelklicka på **[!UICONTROL Data to add]** fältet i **[!UICONTROL Score]** fönstret. För varje mottagare läggs bara **[!UICONTROL Score]** fältet till i anrikningsaktiviteten. Klicka **[!UICONTROL Finish]**.
+1. Dubbelklicka på **[!UICONTROL Data to add]** fältet i **[!UICONTROL Score]** fönstret. För varje mottagare läggs bara **[!UICONTROL Score]** fältet till i anrikningsaktiviteten. Klicka på **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
