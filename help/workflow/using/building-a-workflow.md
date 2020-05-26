@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 0%
 
 ---
 
@@ -155,13 +158,13 @@ Målgruppsfasen är följande:
 1. Information om hur du förbereder data för leveransbehov finns i [Förbättra och ändra data](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
 1. Information om hur du använder data för att utföra uppdateringar eller inom en leverans finns i [Uppdatera databasen](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
 
-Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](../../workflow/using/executing-a-workflow.md#target-data)
+Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](../../workflow/using/data-life-cycle.md#target-data)
 
 ### Målinriktning och filtrering {#targeting-and-filtering-dimensions}
 
-Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Filtreringsdimensionen gör att du kan välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
+Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Med filterdimensionen kan du välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
 
-Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: Innehavare av **kontrakt**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
+Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
 
 Under måldimensionens urvalsfas finns endast kompatibla filtreringsdimensioner i gränssnittet.
 
@@ -193,7 +196,7 @@ Kampanjarbetsflöden och implementeringsexempel finns på den här [sidan](../..
 
 ## Tekniska arbetsflöden {#technical-workflows}
 
-Adobe Campaign innehåller färdiga tekniska arbetsflöden. De är åtgärder eller jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser och konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via **[!UICONTROL Administration > Production > Technical workflows]** noden.
+Med Adobe Campaign får du tillgång till tekniska arbetsflöden direkt. De är åtgärder eller jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser och konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via **[!UICONTROL Administration > Production > Technical workflows]** noden.
 
 ![](assets/navtree.png)
 
