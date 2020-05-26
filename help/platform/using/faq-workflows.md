@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Lär dig de bästa sätten att importera data via ett Campaign-arbetsflöde [i d
 
 ## Kan jag övervaka arbetsflödeskörningen? {#can-i-monitor-workflow-execution-}
 
-Lär dig hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](../../workflow/using/executing-a-workflow.md).
+Lär dig hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](../../workflow/using/starting-a-workflow.md).
 
 ## Hur uppdaterar jag Campaign-data med ett arbetsflöde? {#how-can-i-update-campaign-data-with-a-workflow-}
 
