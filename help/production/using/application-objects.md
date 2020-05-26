@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Den här metoden markerar även användare som skapar för många objekt.
 
 ## Leveranser {#deliveries}
 
-Det får inte finnas fler än 1000 leveranser på instansen när som helst. Många leveranser förbrukar databasutrymme och skapar problem. En instans som skapar mer än 10 leveranser per dag måste kontrolleras mot affärsbehoven. Överväg att använda kontinuerliga leveranser för att skapa färre leveranser. Mer information finns i [det här avsnittet](../../workflow/using/continuous-delivery.md).
+Det får inte finnas fler än 1000 leveranser på instansen när som helst. Många leveranser förbrukar databasutrymme och skapar problem. En instans som skapar mer än 10 leveranser per dag måste kontrolleras mot affärsbehoven. Överväg att använda kontinuerliga leveranser för att skapa färre leveranser. For more on this, refer to [this section](../../workflow/using/continuous-delivery.md).
 
 Leveranser som är äldre än två år ska rensas från instansen.
 
@@ -58,7 +61,7 @@ Om ett arbetsflöde importerar filer och inte använder standardfunktionerna må
 
 ## Transaktionsdata och transaktionsloggar {#transactional-data-and-logs}
 
-Alla [arbetsflöden](../../workflow/using/executing-a-workflow.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek ökar.
+Alla [arbetsflöden](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek ökar.
 
 Kontrollera att arbetsflödena för rensning eller tömning körs och att posterna effektivt rensas. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
