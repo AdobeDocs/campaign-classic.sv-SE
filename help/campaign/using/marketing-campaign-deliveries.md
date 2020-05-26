@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ För varje leverans definierar kampanjchefen:
 
 * Huvudmålet. Mer information finns i [Skapa huvudmålet i ett arbetsflöde](#building-the-main-target-in-a-workflow) och [Välja målpopulation](#selecting-the-target-population).
 * Kontrollgruppen. Mer information finns i [Definiera en kontrollgrupp](#defining-a-control-group).
-* Startadresserna. Mer information finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md).
+* Startadresserna. For more on this, refer to [this section](../../delivery/using/about-seed-addresses.md).
 
 En del av den här informationen ärvs från mallen.
 
@@ -70,7 +73,7 @@ Du kan importera en population till en lista och sedan ange den här listan som 
 
 Huvudmålet för en leverans kan också definieras i målarbetsflödet: I den grafiska miljön kan du skapa mål med hjälp av frågor, tester och operatorer: union, borttagning av dubbletter, delning osv.
 
-Handboken [Automatisera med arbetsflöden](../../workflow/using/executing-a-workflow.md#architecture) innehåller en detaljerad beskrivning av hur arbetsflödesmodulen fungerar.
+Handboken [Automatisera med arbetsflöden](../../workflow/using/architecture.md) innehåller en detaljerad beskrivning av hur arbetsflödesmodulen fungerar.
 
 >[!IMPORTANT]
 >
@@ -104,7 +107,7 @@ Körnings- och formateringsfunktionerna för målarbetsflödet är tillgängliga
 
 >[!NOTE]
 >
->Vilka aktiviteter som finns tillgängliga för att skapa diagrammet och alla funktioner för visning och layout finns i guiden [Automating with workflows](../../workflow/using/executing-a-workflow.md#architecture) .
+>Vilka aktiviteter som finns tillgängliga för att skapa diagrammet och alla funktioner för visning och layout finns i guiden [Automating with workflows](../../workflow/using/architecture.md) .
 
 Ni kan skapa flera arbetsflöden för målinriktning för en enskild kampanj. Så här lägger du till ett arbetsflöde:
 
@@ -207,7 +210,7 @@ Kontrollgruppen kan extraheras från huvudmålet och/eller komma från en viss g
 Du kan definiera en kontrollgrupp på kampanjnivå, och i så fall tillämpas kontrollgruppen på varje leverans av den aktuella kampanjen.
 
 1. Redigera den aktuella kampanjen och klicka på **[!UICONTROL Edit]** -fliken.
-1. Klicka **[!UICONTROL Advanced campaign settings]**.
+1. Klicka på **[!UICONTROL Advanced campaign settings]**.
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -252,7 +255,7 @@ Klicka **[!UICONTROL Next]** för att definiera sorteringsordningen (om det beh�
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Den här konfigurationen motsvarar en delningsaktivitet i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar. Mer information finns i [det här avsnittet](../../workflow/using/executing-a-workflow.md#architecture) .
+Den här konfigurationen motsvarar en delningsaktivitet i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar. Mer information finns i [det här avsnittet](../../workflow/using/architecture.md) .
 
 ### Lägga till en population {#adding-a-population}
 
