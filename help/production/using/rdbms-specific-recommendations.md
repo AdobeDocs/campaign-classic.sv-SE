@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,7 @@ vacuum full nmsdelivery;
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
 >* Kommandona **vakuum** och **omindexering** låser tabellen, som pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfyllnad** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för **tabellen YyyNmsBroadLogXx** .
->* Den här underhållsåtgärden kan implementeras av ett Adobe Campaign-arbetsflöde, med en **[!UICONTROL SQL]** aktivitet (mer information finns i [det här avsnittet](../../workflow/using/executing-a-workflow.md#architecture)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* Den här underhållsåtgärden kan implementeras av ett Adobe Campaign-arbetsflöde, med en **[!UICONTROL SQL]** aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 >
 
 
@@ -111,7 +114,7 @@ PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom **
 * utföra underhåll när Adobe Campaign-plattformen stoppas,
 * stoppa de olika undertjänster i Adobe Campaign som kan tänkas skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
 
-Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera den DDL som krävs för att återskapa en tabell.
+Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera nödvändig DDL för att återskapa en tabell.
 
 * Med den första funktionen kan du skapa en arbetstabell (** _tmp** här) som är en kopia av den ursprungliga tabellen.
 * Den andra funktionen tar sedan bort den ursprungliga tabellen och byter namn på arbetstabellen och dess index.
