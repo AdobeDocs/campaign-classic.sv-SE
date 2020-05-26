@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
 
@@ -34,5 +37,5 @@ Läs mer:
 
 * [Om målinriktade aktiviteter](../../workflow/using/about-targeting-activities.md)
 * [Importera data](../../workflow/using/importing-data.md)
-* [Köra ett arbetsflöde](../../workflow/using/executing-a-workflow.md)
+* [Köra ett arbetsflöde](../../workflow/using/starting-a-workflow.md)
 * [Bästa arbetsflöden](../../workflow/using/workflow-best-practices.md)
