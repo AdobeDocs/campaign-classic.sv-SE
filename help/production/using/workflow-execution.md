@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 69b562979f3b32a4d30dfed0695cf3cf6c0fd26a
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,8 @@ I avsnittet nedan visas information om vanliga problem som rör körning av arbe
 Mer information om arbetsflöden finns i följande avsnitt:
 
 * [Om arbetsflöden](../../workflow/using/about-workflows.md)
-* [Köra ett arbetsflöde](../../workflow/using/executing-a-workflow.md)
+* [Starta ett arbetsflöde](../../workflow/using/starting-a-workflow.md)
+* [Arbetsflödets livscykel](../../workflow/using/workflow-life-cycle.md)
 * [Bästa tillvägagångssätt när du använder arbetsflöden](../../workflow/using/workflow-best-practices.md)
 
 ## Börja så snart som möjligt i kampanjer {#start-as-soon-as-possible-in-campaigns}
@@ -121,5 +125,5 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 Om ett arbetsflöde misslyckas gör du så här:
 
 1. Kontrollera arbetsflödesjournalen. Mer information finns i avsnitten [Övervaka arbetsflödeskörning](../../workflow/using/monitoring-workflow-execution.md) och [Visningsloggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) .
-1. Övervaka tekniska arbetsflöden. Mer information finns i [det här avsnittet](../../workflow/using/monitoring-technical-workflows.md).
+1. Övervaka tekniska arbetsflöden. For more on this refer to the [this section](../../workflow/using/monitoring-technical-workflows.md).
 1. Leta efter fel i de enskilda arbetsflödesaktiviteterna.
