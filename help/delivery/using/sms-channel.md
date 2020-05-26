@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 0%
@@ -538,7 +538,7 @@ SMS-modulen **nlserver** frågar SMS-routern med regelbundna intervall. På så 
 
 * **Avbeställ**: Mottagare som inte längre vill ta emot SMS-leveranser kan returnera ett meddelande som innehåller ordet STOP. Om din leverantör tillåter det enligt villkoren i kontraktet kan du hämta meddelanden via arbetsflödesaktiviteten för **inkommande SMS** och sedan skapa en fråga som aktiverar alternativet **Kontakta inte längre den här mottagaren** för de berörda mottagarna.
 
-   Se [Handboken för arbetsflöden](../../workflow/using/executing-a-workflow.md#architecture) .
+   Se [Handboken för arbetsflöden](../../workflow/using/architecture.md) .
 
 ## InSMS-schema {#insms-schema}
 
