@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2090'
 ht-degree: 0%
 
 ---
@@ -327,8 +327,13 @@ ht-degree: 0%
       + [Måldata](workflow/using/targeting-data.md)
       + [Importera data](workflow/using/importing-data.md)
       + [Så här använder du arbetsflödesdata](workflow/using/how-to-use-workflow-data.md)
-      + [Köra ett arbetsflöde](workflow/using/executing-a-workflow.md)
       + [Bästa arbetsflöden](workflow/using/workflow-best-practices.md)
+   + Köra ett arbetsflöde {#executing-a-workflow}
+      + [Starta ett arbetsflöde](workflow/using/starting-a-workflow.md)
+      + [Arbetsflödets livscykel](workflow/using/workflow-life-cycle.md)
+      + [Datalivscykel](workflow/using/data-life-cycle.md)
+      + [Definiera godkännanden](workflow/using/defining-approvals.md)
+      + [Arkitektur](workflow/using/architecture.md)
    + Verksamheter som riktar sig till {#targeting-activities}
       + [Om målinriktade aktiviteter](workflow/using/about-targeting-activities.md)
       + [Fråga](workflow/using/query.md)
