@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ## Använd {#use}
 
-Med hjälp av den här **[!UICONTROL Load (File)]** aktiviteten kan ni få direkt åtkomst till externa data och använda dem i Adobe Campaign. Alla data som krävs för målinriktade åtgärder finns inte alltid i Adobe Campaign-databasen: den kan göras tillgänglig i externa filer.
+Med hjälp av den här **[!UICONTROL Data loading (File)]** aktiviteten kan ni få direkt åtkomst till externa data och använda dem i Adobe Campaign. Alla data som krävs för målinriktade åtgärder finns inte alltid i Adobe Campaign-databasen: den kan göras tillgänglig i externa filer.
 
 Filen som ska läsas in kan anges av övergången eller beräknas under körningen av aktiviteten. Det kan till exempel vara en lista över en kunds 10 favoritprodukter vars inköp hanteras i en extern databas.
 
@@ -111,7 +114,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
    * den första kolumnen innehåller en kod som sammanfaller med händelsen: inköp (mer eller mindre än 3 000 euro), inget inköp eller någon återbetalning för ett eller flera inköp.
    * De fyra följande kolumnerna innehåller klientens förnamn, efternamn, e-postadress och kontonummer.
-   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid en dataimport i Adobe Campaign. Mer information finns i det här [avsnittet](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid en dataimport i Adobe Campaign. For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. I den delade aktiviteten anger du de delmängder som ska skapas enligt **kolumnvärdet för Event** .
 
