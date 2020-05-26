@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+workflow-type: tm+mt
+source-wordcount: '2481'
+ht-degree: 0%
 
 ---
 
@@ -114,7 +117,7 @@ För de tre typerna av paket innehåller guiden följande steg:
 
    >[!CAUTION]
    >
-   >Om du exporterar en **[!UICONTROL Offer category]**-, **[!UICONTROL Offer environment]****[!UICONTROL Program]** - eller **[!UICONTROL Plan]** typmapp ska du aldrig markera mappen **xtk:folder** eftersom du kan förlora vissa data. Välj den enhet som motsvarar mappen: nms: **offerCategory** för erbjudandekategorier, **nms:offerEnv** för erbjudandemiljöer, **nms:program** för program och **nms:plan** för planer.
+   >Om du exporterar en **[!UICONTROL Offer category]**-, **[!UICONTROL Offer environment]****[!UICONTROL Program]** - eller **[!UICONTROL Plan]** typmapp ska du aldrig markera mappen **xtk:folder** eftersom du kan förlora vissa data. Välj den enhet som motsvarar mappen: **nms:offerCategory** för erbjudandekategorier, **nms:offerEnv** för erbjudandemiljöer, **nms:program** för program och **nms:plan** för planer.
 
    Med listhantering kan du lägga till eller ta bort enheter för export från konfigurationen. Klicka **[!UICONTROL Add]** för att välja en ny enhet.
 
@@ -335,3 +338,128 @@ Standardpaket installeras när Adobe Campaign konfigureras. Beroende på din beh
 Se licensavtalet för att se vilka paket du kan installera.
 
 Mer information om standardpaket finns på [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+
+## Bästa praxis för datapaket {#data-package-best-practices}
+
+I det här avsnittet beskrivs hur du organiserar datapaket på ett konsekvent sätt under projektets hela livslängd.
+
+<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
+
+Paket kan innehålla olika typer av konfigurationer och element, filtrerade eller inte. Om du saknar vissa element eller inte importerar element/paket i rätt ordning kan plattformskonfigurationen brytas.
+
+Dessutom kan paketspecifikationsmappen snabbt bli komplex om flera personer arbetar på samma plattform med många olika funktioner.
+
+Även om det inte är obligatoriskt att göra det erbjuder det här avsnittet en lösning för att ordna och använda paket i Adobe Campaign för storskaliga projekt.
+
+<!--This solution has been used with a project involving more than 10 consultants.-->
+
+De huvudsakliga begränsningarna är följande:
+* Ordna paketen och håll reda på vad som ändrats och när
+* Om en konfiguration uppdateras minimerar du risken för att något som inte är direkt kopplat till uppdateringen bryts
+
+>[!NOTE]
+>
+>Mer information om hur du konfigurerar ett arbetsflöde för automatisk export av paket finns på [den här sidan](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
+
+### Rekommendationer {#data-package-recommendations}
+
+Importera alltid i samma version av plattformen. Du måste kontrollera att du distribuerar dina paket mellan två instanser som har samma programversion. Tvinga aldrig importen och uppdatera alltid plattformen först (om bygget är annorlunda).
+
+>[!IMPORTANT]
+>
+>Import mellan olika versioner stöds inte av Adobe.
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+
+Var uppmärksam på schema- och databasstrukturen. Import av paket med schema måste följas av schemagenerering.
+
+### Lösning {#data-package-solution}
+
+#### Pakettyper {#package-types}
+
+Börja med att definiera olika typer av paket. Endast fyra typer kommer att användas:
+
+**Enheter**
+* Alla xtk- och nms-specifika element i Adobe Campaign, som scheman, formulär, mappar, leveransmallar osv.
+* Du kan betrakta en entitet som både ett admin- och plattformselement.
+* Du bör inte inkludera mer än en enhet i ett paket när du överför det till en Campaign-instans.
+
+<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+
+Om du behöver distribuera konfigurationen på en ny instans kan du importera alla enhetspaket.
+
+**Funktioner** Den här typen av paket:
+* Besvarar ett klientbehov/en kundspecifikation.
+* Innehåller en eller flera funktioner.
+* Bör innehålla alla beroenden för att kunna köra funktionen utan något annat paket.
+
+**Kampanjer** Det här paketet är inte obligatoriskt. Ibland kan det vara användbart att skapa en specifik typ för alla kampanjer, även om en kampanj kan ses som en funktion.
+
+**Uppdateringar** När de har konfigurerats kan en funktion exporteras till en annan miljö. Paketet kan till exempel exporteras från en utvecklingsmiljö till en testmiljö. I det här testet avslöjas en defekt. Först måste den korrigeras i utvecklingsmiljön. Sedan ska plåstret appliceras på testplattformen.
+
+Den första lösningen är att exportera hela funktionen igen. Men för att undvika risker (uppdatera oönskade element) är det säkrare att ha ett paket som bara innehåller korrigeringen.
+
+Därför rekommenderar vi att du skapar ett uppdateringspaket som bara innehåller en enhetstyp av funktionen.
+
+En uppdatering kan inte bara vara en korrigering, utan även ett nytt element i ditt enhets-/funktions-/kampanjpaket. Du kan undvika att distribuera hela paketet genom att exportera ett uppdateringspaket.
+
+### Namnkonventioner {#data-package-naming}
+
+Nu när typerna är definierade bör vi ange en namnkonvention. I Adobe Campaign går det inte att skapa undermappar för paketspecifikationer, vilket innebär att nummer är den bästa lösningen för att hålla ordning. Numreringsprefixpaketnamn. Du kan använda följande konvention:
+
+* Enhet: från 1 till 99
+* Funktion: från 100 till 199
+* Campaign: från 200 till 299
+* Uppdatering: från 5000 till 5999
+
+### Paket {#data-packages}
+
+>[!NOTE]
+>
+>Det är bättre att ställa in regler för att definiera rätt antal paket.
+
+#### Ordning för enhetspaket {#entity-packages-order}
+
+För att underlätta importen bör entitetspaketen sorteras när de importeras. Exempel:
+* 001 - Schema
+* 002 - Formulär
+* 003 - Bilder
+* osv.
+
+>[!NOTE]
+>
+>Formulär ska bara importeras efter schemauppdateringar.
+
+#### Package 200 {#package-200}
+
+Paketnummer 200 ska inte användas för en viss kampanj: det här numret kommer att användas för att uppdatera något som gäller alla kampanjer.
+
+#### Uppdatera paket {#update-package}
+
+Den sista punkten gäller uppdateringspaketnumreringen. Det är ditt paketnummer (enhet, funktion eller kampanj) med prefixet&quot;5&quot;. Exempel:
+* 5001 för att uppdatera ett schema
+* 5200 för att uppdatera alla kampanjer
+* 5101 för att uppdatera funktionen 101
+
+Uppdateringspaketet ska bara innehålla en specifik entitet för att vara enkelt att återanvända. Om du vill dela upp dem lägger du till ett nytt nummer (börja från 1). Det finns inga särskilda beställningsregler för dessa paket. Tänk dig att vi har en 101-funktion, en social tillämpning:
+* Den innehåller en webApp och ett externt konto.
+   * Paketetiketten är: 101 - Social tillämpning (socialApplication).
+* Det finns en defekt i webApp.
+   * The wepApp is correction.
+   * Ett korrigeringspaket måste skapas med följande namn: 5101 - 1 - Webbapp för sociala program (socialApplication_webApp).
+* Ett nytt externt konto måste läggas till för den sociala funktionen.
+   * Ett externt konto skapas.
+   * Det nya paketet är: 5101 - 2 - externt konto för sociala program (socialApplication_extAccount).
+   * Parallellt uppdateras 101-paketet för att läggas till det externa kontot, men det distribueras inte.
+      ![](assets/ncs_datapackage_best-practices-1.png)
+
+#### Paketdokumentation {#package-documentation}
+
+När du uppdaterar ett paket bör du alltid placera en kommentar i beskrivningsfältet för att beskriva eventuella ändringar och orsaker (till exempel&quot;lägg till ett nytt schema&quot; eller&quot;åtgärda ett fel&quot;).
+
+![](assets/ncs_datapackage_best-practices-2.png)
+
+Du bör också datera kommentaren. Rapportera alltid din kommentar om ett uppdateringspaket till det överordnade paketet (paket utan prefixet 5).
+
+>[!IMPORTANT]
+>
+>Beskrivningsfältet får innehålla högst 2 000 tecken.
