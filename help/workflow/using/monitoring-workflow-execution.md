@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +105,7 @@ I loggen visas den kronologiska listan med körningsmeddelanden som rör arbetsf
 
 ## Rensar loggarna {#purging-the-logs}
 
-Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Du kan rensa historiken via **[!UICONTROL File > Actions]** menyn eller genom att klicka på **[!UICONTROL Actions]** knappen i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**. De alternativ som är tillgängliga på **[!UICONTROL Actions]** menyn finns i verktygsfältsavsnittet [Åtgärder](../../workflow/using/executing-a-workflow.md#actions-toolbar) .
+Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Du kan rensa historiken via **[!UICONTROL File > Actions]** menyn eller genom att klicka på **[!UICONTROL Actions]** knappen i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**. De alternativ som är tillgängliga på **[!UICONTROL Actions]** menyn finns i verktygsfältsavsnittet [Åtgärder](../../workflow/using/starting-a-workflow.md) .
 
 ![](assets/purge_historique.png)
 
@@ -235,7 +238,7 @@ Observera att:
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-Ett användningsexempel presenteras i detta avsnitt: Samordna [datauppdateringar](../../workflow/using/coordinating-data-updates.md).
+Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar](../../workflow/using/coordinating-data-updates.md).
 
 ## Databasunderhåll {#database-maintenance}
 
@@ -257,7 +260,7 @@ Dessa punkter kan konfigureras via alternativet NmsServer_PausedWorkflowPeriod.
 
 Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista användaren som ändrade det meddelas också. Administratörer får inte meddelanden.
 
-## Filtrera arbetsflöden utifrån deras status{#filtering-workflows-status}
+## Filtrera arbetsflöden utifrån deras status {#filtering-workflows-status}
 
 Med gränssnittet Campaign Classic kan du övervaka körningsstatusen för alla arbetsflöden på instansen med hjälp av fördefinierade **vyer**. Öppna **[!UICONTROL Administration]**//**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**-noden för att komma åt dessa vyer.
 
