@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +73,7 @@ Klicka på **[!UICONTROL Advanced parameters...]** länken för att välja den l
 
 Den här mallen kan ändras för att anpassa meddelandelayouten, men du bör skapa en kopia. Målinriktningsmekanismen (extern fil, målmappning) får inte ändras eftersom den krävs för att meddelanden ska fungera korrekt.
 
-Ett exempel på godkännande visas i [Definiera godkännanden](../../workflow/using/executing-a-workflow.md#defining-approvals).
+Ett exempel på godkännande visas i [Definiera godkännanden](../../workflow/using/defining-approvals.md).
 
 ## Utdataparametrar {#output-parameters}
 
