@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Det finns ytterligare två lösningar:
    Det här alternativet är tillgängligt på fliken **[!UICONTROL Execution]** för arbetsflödesegenskaper och loggar alla SQL-frågor som genererats av verktyget från de olika aktiviteterna. Det är ett bra sätt att se vad som faktiskt utförs av plattformen. Detta alternativ bör dock endast användas tillfälligt under utvecklingen och inte aktiveras i produktionen.
 
 Rensa loggarna när de inte behövs längre. Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Du kan rensa historiken via **[!UICONTROL File > Actions]** menyn eller genom att klicka på knappen Åtgärder i verktygsfältet ovanför listan. Välj Rensa historik.
-Mer information om hur du tömmer dina loggar finns i den här [dokumentationen](../../workflow/using/executing-a-workflow.md#actions-toolbar).
+Mer information om hur du tömmer dina loggar finns i den här [dokumentationen](../../workflow/using/starting-a-workflow.md).
 
 ### Arbetsflödesplanering {#workflow-planning}
 
@@ -95,7 +98,7 @@ Eftersom det gör det enklare att hitta och felsöka dem om de inte fungerar på
 
 Om arbetsflödet är en del av en process som innefattar flera arbetsflöden kan du vara tydlig när du anger en etikett; Att använda siffror är ett bra sätt att ordna arbetsflödena (med Label).
 
-Till exempel:
+Exempel:
 
 * 001 - Importera - Importera mottagare
 * 002 - Import - Importförsäljning
@@ -109,7 +112,7 @@ Du kan konfigurera ett arbetsflödes svårighetsgrad i arbetsflödesegenskaperna
 
 * Normal
 * Produktion
-*  Kritisk
+* Kritisk
 
 Om du anger den här informationen när du skapar ett arbetsflöde blir det lättare att förstå hur allvarlig den konfigurerade processen är.
 
@@ -166,6 +169,6 @@ Oftast vet du inte varifrån signalen anropas. För att undvika det här problem
 
 Ett produktionsarbetsflöde får inte uppdateras direkt. Om inte processen består av att skapa en kampanj med mallarbetsflöden, bör processerna först testas i en utvecklingsmiljö. Efter den här valideringen kan arbetsflödet distribueras och startas i produktionen.
 
-Utför alla tester i utvecklings- eller stagingmiljöer, inte i produktionsmiljöer. Prestanda kan inte säkerställas i sådana fall.
+Utför alla tester i utvecklings- eller testmiljöer, inte i produktionsmiljöer. Prestanda kan inte säkerställas i sådana fall.
 
 Arkiverade arbetsflöden kan finnas på utvecklings- eller testplattformar i en arkiverad mapp, men produktionsmiljön bör vara så ren som möjligt. Gamla arbetsflöden bör tas bort från produktionsmiljön om de är inaktiva.
