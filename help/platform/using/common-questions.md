@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Behöver du hjälp när du arbetar med Campaign Classic? Läs de tio vanligaste 
 
 Adobe Campaign Classic använder en rad teknologier för att ge mervärde. Den här kombinationen av tekniker kräver att ni regelbundet uppgraderar era Campaign Classic-instanser för att säkerställa att de senaste versionerna används för att leverera överlägsen säkerhet, stabilitet och prestanda.
 
-Om du använder Adobes hanterade tjänster kan du dra nytta av uppgraderingen av Campaign Gold Standard. Mer information finns i [den här artikeln](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+Om du använder Adobes hanterade tjänster kan du dra nytta av uppgraderingen av Campaign Gold Standard. For more on this refer to [this article](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
 [Läs den här artikeln](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) och lär dig hur du uppdaterar din miljö och läser [Vanliga frågor](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html) om det här specifika ämnet.
 
@@ -49,9 +52,9 @@ Adobe Campaign innehåller en uppsättning instrumentpaneler och verktyg för at
 
 [Klicka här om du vill veta](../../delivery/using/monitoring-a-delivery.md) hur du kontrollerar att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
 
-## 5.Kan jag övervaka arbetsflödeskörningen? {#can-i-monitor-workflow-execution}
+## 5. Kan jag övervaka arbetsflödeskörningen? {#can-i-monitor-workflow-execution}
 
-Lär dig hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](../../workflow/using/executing-a-workflow.md).
+Lär dig hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](../../workflow/using/starting-a-workflow.md).
 
 ## 6. Hur ansluter jag till Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 
