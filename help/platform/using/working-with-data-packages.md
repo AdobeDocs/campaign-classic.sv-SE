@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -387,14 +387,20 @@ Börja med att definiera olika typer av paket. Endast fyra typer kommer att anv�
 
 Om du behöver distribuera konfigurationen på en ny instans kan du importera alla enhetspaket.
 
-**Funktioner** Den här typen av paket:
+**Funktioner**
+
+Den här typen av paket:
 * Besvarar ett klientbehov/en kundspecifikation.
 * Innehåller en eller flera funktioner.
 * Bör innehålla alla beroenden för att kunna köra funktionen utan något annat paket.
 
-**Kampanjer** Det här paketet är inte obligatoriskt. Ibland kan det vara användbart att skapa en specifik typ för alla kampanjer, även om en kampanj kan ses som en funktion.
+**Kampanjer**
 
-**Uppdateringar** När de har konfigurerats kan en funktion exporteras till en annan miljö. Paketet kan till exempel exporteras från en utvecklingsmiljö till en testmiljö. I det här testet avslöjas en defekt. Först måste den korrigeras i utvecklingsmiljön. Sedan ska plåstret appliceras på testplattformen.
+Detta paket är inte obligatoriskt. Ibland kan det vara användbart att skapa en specifik typ för alla kampanjer, även om en kampanj kan ses som en funktion.
+
+**Uppdateringar**
+
+När en funktion har konfigurerats kan den exporteras till en annan miljö. Paketet kan till exempel exporteras från en utvecklingsmiljö till en testmiljö. I det här testet avslöjas en defekt. Först måste den korrigeras i utvecklingsmiljön. Sedan ska plåstret appliceras på testplattformen.
 
 Den första lösningen är att exportera hela funktionen igen. Men för att undvika risker (uppdatera oönskade element) är det säkrare att ha ett paket som bara innehåller korrigeringen.
 
