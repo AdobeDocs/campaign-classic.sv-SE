@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +66,7 @@ Så här konfigurerar du din mapphierarki för marknadsföringsplaner och progra
    ![](assets/create_plan_1.png)
 
 1. Byt namn på planen.
-1. **Högerklicka på den nya planen och välj** Egenskaper... .
+1. Högerklicka på den nya planen och välj **Egenskaper...**.
 
    ![](assets/create_plan_2.png)
 
@@ -146,7 +149,7 @@ Du kan använda guiden Skapa schema för att fylla i alla körningsdatum automat
 
 ![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
-Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. Mer information finns i [det här avsnittet](../../workflow/using/executing-a-workflow.md#architecture).
+Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. For more on this, refer to [this section](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
