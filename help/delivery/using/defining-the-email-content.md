@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2798'
 ht-degree: 0%
 
 ---
@@ -180,17 +180,21 @@ Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i b
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-För att mottagarna ska kunna se bilderna i de meddelanden de får måste meddelandena vara tillgängliga på en server som är tillgänglig utifrån.
+>[!IMPORTANT]
+>
+>För att mottagarna ska kunna se bilderna i de meddelanden de får måste meddelandena vara tillgängliga på en server som är tillgänglig utifrån.
 
-Om du vill hantera bilder via leveransguiden måste du klicka på **[!UICONTROL Tracking & Images]** -ikonen i verktygsfältet.
+Så här hanterar du bilder via leveransguiden:
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. Klicka på **[!UICONTROL Tracking & Images]** ikonen i verktygsfältet.
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-Välj **[!UICONTROL Upload images]** på **[!UICONTROL Images]** fliken. Du kan sedan välja om du vill inkludera bilderna i e-postmeddelandet.
+1. Välj **[!UICONTROL Upload images]** på **[!UICONTROL Images]** fliken.
+1. Du kan sedan välja om du vill inkludera bilderna i e-postmeddelandet.
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på **[!UICONTROL Upload images now]** länken om du vill göra det.
+* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på **[!UICONTROL Upload the images straightaway...]** länken om du vill göra det.
 * Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i **[!UICONTROL Image URL]** fältet. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
 
 När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande som ger dig möjlighet att ladda upp bilderna direkt enligt leveransparametrarna.
@@ -201,7 +205,7 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 >
 >Sökvägarna för bildåtkomst ändras vid manuell överföring eller när meddelanden skickas.
 
-**Exempel: skicka ett meddelande med bilder{#example--sending-a-message-with-images}**
+### Exempel: skicka ett meddelande med bilder {#example--sending-a-message-with-images}
 
 Här följer ett exempel på en leverans med fyra bilder:
 
@@ -211,7 +215,7 @@ Dessa bilder kommer från en lokal katalog eller webbplats som du kan verifiera 
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
-Klicka på **[!UICONTROL Tracking & Images]** ikonen och sedan på **[!UICONTROL Images]** fliken för att börja identifiera bilder i meddelandet.
+Klicka på **[!UICONTROL Tracking & Images]** ikonen och sedan på **[!UICONTROL Images]** fliken för att börja identifiera bilderna i meddelandet.
 
 För varje bild som identifieras kan du visa dess status:
 
