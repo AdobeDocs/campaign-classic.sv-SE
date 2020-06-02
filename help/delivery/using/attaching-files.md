@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
+source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
 Du kan bifoga en eller flera filer till en e-postleverans. Det finns två möjliga fall:
 
 * Välj en fil och bifoga den till leveransen som den är.
-* Anpassa innehållet i den bifogade filen för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras, om du har alternativet **Variabel digital utskrift** .
+* Anpassa innehållet i bilagan för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras, om du har alternativet **Variabel digital utskrift** .
 
 >[!NOTE]
 >
@@ -42,15 +45,16 @@ Följ stegen nedan för att bifoga en lokal fil till en leverans.
 >Du kan bifoga flera filer till en leverans. Bifogade filer kan ha vilket format som helst, inklusive zippat format.
 
 1. Klicka på **[!UICONTROL Attachments]** länken.
-1. Klicka på **[!UICONTROL Add]** knappen och klicka sedan på **[!UICONTROL File...]** den fil som ska bifogas till leveransen.
+1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka **[!UICONTROL File...]** för att välja den fil som ska bifogas leveransen.
 
-![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![](assets/s_ncs_user_wizard_email_attachement.png)
 
 Du kan också dra och släppa filen direkt i leveransfältet, **[!UICONTROL Attachments]** eller använda **[!UICONTROL Attach]** ikonen från leveransguideverktygsfältet,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-1. När filen är markerad överförs den direkt till servern för att vara tillgänglig vid leveransen. Den visas i **[!UICONTROL Attachments]** fältet.
+När filen är markerad överförs den direkt till servern för att vara tillgänglig vid leveransen. Den visas i **[!UICONTROL Attachments]** fältet.
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -92,7 +96,7 @@ Om den bifogade filen är en lokal fil väljer du alternativet: **[!UICONTROL Fi
 
 ### Bifoga ett personligt meddelande {#attach-a-personalized-message}
 
-Med det här alternativet **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kan du välja ett foto med anpassningsfält, till exempel efternamnet och förnamnet för den avsedda mottagaren.
+Med det här alternativet **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kan du välja en fil med anpassningsfält, till exempel efternamnet och förnamnet för den avsedda mottagaren.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
