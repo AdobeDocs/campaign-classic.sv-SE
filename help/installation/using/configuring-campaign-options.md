@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 0%
@@ -60,6 +60,13 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: custom_nms_receive.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> Adobe Campaign använder en global variabel av typen Nms_DefaultRcpSchema för att öppna en dialogruta med standardmottagardatabasen (nms:receive).<br /> Alternativvärdet måste motsvara namnet på schemat som matchar den externa mottagartabellen.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> Minsta antal mottagare för att en leverans ska anses vara den viktigaste i faktureringsrapporten.<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
    <td> Om du anger "1" som värde kan du automatiskt ignorera dubbletter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign använder en global variabel av typen Nms_DefaultRcpSchema för att öppna en dialogruta med standardmottagardatabasen (nms:receive).<br /> Alternativvärdet måste motsvara namnet på schemat som matchar den externa mottagartabellen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span> <br /> </td> 
@@ -164,6 +167,10 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Lista över auktoriserade e-postadresser för vidarebefordran (från modulen för inkommande e-postbearbetning). Adresserna måste avgränsas med kommatecken (eller * för att tillåta alla). Exempel: xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> AES-nyckeln som används i serverleten 'lineImage' för att koda URL:er (LINE-kanal).<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> I kanalen "email" (använd som standard): Maximalt antal fel som accepteras för SOFT-fel under sändning innan mottagaren sätts i karantän.<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> On channel "mobile" : Minimal tid som har använts sedan föregående refererade SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> URL:en för spegelsidservern (ska som standard vara identisk med NmsTracking_ServerUrl).<br /> Det är standardvärdet för e-postleveranser när URL:en inte har angetts i routningsdefinitionen.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> Tillåter att en maximal period (uttryckt i timmar) anges som för att begränsa antalet utsändning som återställs varje gång synkroniseringsarbetsflödet körs.</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> Maximalt antal anrop i MidSourcing-sessionen som kan köras parallellt (3 som standard).<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> Anpassad fördröjning (i minuter) efter vilken en leverans betraktas som"fördröjd". Standardvärdet är 30 minuter.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
+   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> Rad 1 i avsändarens adress.<br /> </td> 
@@ -203,10 +222,10 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> Rad 7 på avsändarens adress.<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> URL:en för spegelsidservern (ska som standard vara identisk med NmsTracking_ServerUrl).<br /> Det är standardvärdet för e-postleveranser när URL:en inte har angetts i routningsdefinitionen.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> Parametrar för skickade SMS-meddelanden: information som skickas till SMS-gatewayen för att ange meddelandeprioriteten.<br /> </td> 
@@ -220,51 +239,33 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Den period under vilken nya försök med SMS-meddelanden kommer att utföras.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XTKEmail_Characters</span> <br /> </td> 
-   <td> Giltiga tecken för en e-postadress.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Tillåter att en maximal period (uttryckt i timmar) anges som för att begränsa antalet utsändning som återställs varje gång synkroniseringsarbetsflödet körs.</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> Maximalt antal anrop i MidSourcing-sessionen som kan köras parallellt (3 som standard).<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> Anpassad fördröjning (i minuter) efter vilken en leverans betraktas som"fördröjd". Standardvärdet är 30 minuter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> Aktivera/inaktivera stöd för specialtecken för Code128.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> AES-nyckeln som används i serverleten 'lineImage' för att koda URL:er (LINE-kanal).<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> Senaste konsolideringsdatum för <span class="uicontrol">NmsUserAgent</span> -statistik.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> Namnet på det alternativ som innehåller webbsegmenten och deras lägen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Senaste konsolideringsdatum för <span class="uicontrol">NmsUserAgent</span> -statistik.<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> Aktivera/inaktivera stöd för specialtecken för Code128.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XTKEmail_Characters</span> <br /> </td> 
+   <td> Giltiga tecken för en e-postadress.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
    <td> Lägg till det här alternativet med värdet "0" för att inaktivera XML-koden för leveransversionen (högerklicka/ <span class="uicontrol">Redigera XML-källa</span> eller kortkommandot <span class="uicontrol">CTRL+F4</span> ).<br /> </td> 
-  </tr> 
-  <!--<tr> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## Resurser {#resources}
 
