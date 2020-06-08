@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,10 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 Med Adobe Campaign kan ni sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen innefattar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. kan du lägga till dessa banners i webbapplikationer eller landningssidor.
 
 Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar, överförs den informationen till Adobe Campaign-spårningsservern med JavaScript-API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
+
+>[!NOTE]
+>
+>När du använder skript ska du alltid följa riktlinjerna som beskrivs i checklistan för [säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Konfigurera banderollen {#configuring-the-banner-}
 
@@ -92,7 +99,7 @@ De tillgängliga API:erna på klientsidan för att anpassa banderollen är:
 
 Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
-* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Skapar koden för den avanmälningsbanderoll som ska infogas på JSSP-sidan
+* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Skapar koden för avanmälningsbanderollen som ska infogas på JSSP-sidan
 
    **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript.
 
