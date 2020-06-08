@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3903'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,18 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
    <td> Här kan du definiera syntaxen för den Från-adress som används när ett meddelande skickas.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> Gör att du kan ange en tidsgräns (i sekunder) för hur du får ett svar från servern när du hämtar en bild som har hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Om det här värdet överskrids kan meddelandet inte skickas. Standardvärdet är 60 sekunder.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
+   <td> Här kan du ange den största tillåtna storleken (i byte) för en bild som hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Standardvärdet är 100 000 byte. När du skickar ett korrektur och hämtar bilden/bilderna för att bearbeta e-postmeddelandet, om storleken på en bild överskrider det här värdet eller om det uppstår ett hämtningsproblem, visas ett fel i leveransloggarna och korrekturleveransen misslyckas.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
+   <td> Gör att du kan ange ett maximalt antal bilagor i en e-postmall eller transaktionsmall. Om det här värdet överskrids visas en varning i leveransanalysloggarna eller när du publicerar e-postmallen för transaktioner. Standardvärdet är 1 bifogad fil.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
