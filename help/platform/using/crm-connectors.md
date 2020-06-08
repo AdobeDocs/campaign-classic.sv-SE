@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2541'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ Versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/c
 
    >[!CAUTION]
    >
-   >När du ansluter Adobe Campaign till Oracle On Demand finns följande begränsningar:
+   >När du ansluter Adobe Campaign till Oracle On Demand är begränsningarna:
    >
    >    
    >    
@@ -197,7 +200,7 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
    >
    >Parametern redirectURL krävs inte av Adobe Campaign Classic.
 
-   Värdet för **clientId** används med användarnamnet/lösenordet för att hämta innehavartoken med hjälp av lösenord för anslagstyp. Detta kallas **Resursägarens lösenordsbeviljande**. Mer information finns på [den här sidan](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
+   Värdet för **clientId** används med användarnamnet/lösenordet för att hämta innehavartoken med hjälp av lösenord för anslagstyp. Detta kallas **Resursägarens lösenordsbeviljande**. For more on this, refer to [this page](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
@@ -207,7 +210,7 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
-   Markera de tabeller som ska återställas.
+1. Markera de tabeller som ska återställas.
 
    ![](assets/crm_connectors_msdynamics_03.png)
 
@@ -397,7 +400,7 @@ För en export använder du följande konfiguration för aktiviteten **CRM Conne
 
    >[!NOTE]
    >
-   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att du riskerar att exportera samma post flera gånger eller förlora data.
+   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att riskera att exportera samma post flera gånger eller förlora data.
 
 ### Ytterligare konfigurationer {#additional-configurations}
 
@@ -439,7 +442,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 
 Med **[!UICONTROL Reject]** utdataövergången kan du komma åt utdataschemat som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. Följande kolumner är:
 
-* För Oracle On Demand: errorLogFilename **(** loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, som inte är felkoden), **errorMessage** (beskrivning av felkontexten).
+* För Oracle On Demand: **errorLogFilename** (loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, annan än felkoden), **errorMessage** (beskrivning av felkontexten).
 * För Salesforce.com: **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
 ### Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
