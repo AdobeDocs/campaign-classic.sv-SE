@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ I anpassningsfältet med syntaxen **&lt;%= mottagare.LastName %>** anges till ex
 
 ## Datakällor {#data-sources}
 
-Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveransläge:
+Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveranssätt:
 
 * Adobe Campaign-databasen är datakällan. Detta är det vanligaste fallet, till exempel&quot;fält för mottagaranpassning&quot;. Det här är alla fält som definieras i mottagartabellen, oavsett om det är standardfält (vanligtvis: efternamn, förnamn, adress, ort, födelsedatum osv.) eller användardefinierade fält.
 * En extern fil är datakällan. Detta är alla fält som definieras i kolumnerna i filen som presenteras som indata vid en leverans med hjälp av data som hittas i en extern fil.
@@ -83,11 +83,11 @@ Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och 
 
 ## Optimera personalisering {#optimizing-personalization}
 
-Ni kan optimera personaliseringen med ett dedikerat alternativ: **[!UICONTROL Prepare the personalization data with a workflow]**, som finns på fliken **[!UICONTROL Analysis]** i leveransegenskaperna.
+Ni kan optimera personaliseringen med ett dedikerat alternativ: **[!UICONTROL Prepare the personalization data with a workflow]**, som finns på fliken **[!UICONTROL Analysis]** i leveransegenskaperna. Mer information om hur du analyserar leveransen finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i FDA.
 
-Genom att markera det här alternativet kan du uppnå en avsevärd prestandaökning för personalisering.
+Om du markerar det här alternativet kan leveransanalysens prestanda förbättras avsevärt när mycket data bearbetas, särskilt om personaliseringsdata kommer från en extern tabell via FDA. Mer information finns i [Åtkomst till en extern databas (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
 
 Om du till exempel får prestandaproblem när du levererar till ett stort antal mottagare och använder många personaliseringsfält och/eller personaliseringsblock i innehållet i dina meddelanden, kan det här alternativet snabba upp hanteringen av personaliseringen och därmed leveransen av dina meddelanden.
 
