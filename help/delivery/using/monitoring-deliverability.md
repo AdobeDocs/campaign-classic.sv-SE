@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
+source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Signal Spam är en fransk tjänst som erbjuder anonymiserad rapportering av feed
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) är en kompletterande övervakningslösning för Adobes interna verktyg för slutbarhet som erbjuder IP-adresser, svartlistning av domäner och kända indikatorer.
+[250ok](https://250ok.com/) är en kompletterande övervakningslösning för Adobes interna verktyg för slutbarhet som erbjuder IP-adresser, domänsvartlistning och anseende.
 
 Den information som tillhandahålls är i realtid, vilket möjliggör en proaktiv hjälp.
 
