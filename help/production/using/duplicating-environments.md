@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+workflow-type: tm+mt
+source-wordcount: '1291'
+ht-degree: 0%
 
 ---
 
@@ -109,7 +112,11 @@ Kontrollera att antalet exporterade alternativ/konton är lika med antalet rader
 >
 >Antalet rader som ska exporteras i en paketexport är 1 000 rader. Om antalet alternativ eller externa konton är fler än 1 000 måste du utföra flera exporter.
 > 
->Mer information finns i [det här avsnittet](../../platform/using/working-with-data-packages.md#exporting-packages).
+>For more information, refer to [this section](../../platform/using/working-with-data-packages.md#exporting-packages).
+
+>[!NOTE]
+>
+>När nmsextaccount-tabellen exporteras exporteras inte lösenord som är kopplade till externa konton (till exempel lösenord för MID-källkod, körning av meddelandecenter, SMPP, IMS och andra externa konton). Kontrollera att du har tillgång till rätt lösenord i förväg, eftersom de kan behöva anges igen när de externa kontona har importerats tillbaka till miljön.
 
 ### Steg 3 - Stoppa målmiljön (dev) {#step-3---stop-the-target-environment--dev-}
 
@@ -146,7 +153,7 @@ Du kan även kontrollera att inga systemprocesser fortfarande körs.
 Gör så här:
 
 * I Windows: öppna **Aktivitetshanteraren** och kontrollera att det inte finns några **nlserver.exe** -processer.
-* I Linux: kör **ps aux| grep nlserver** command och kontrollera att det inte finns några **nlserver** -processer.
+* I Linux: kör **ps aux | grep nlserver** command och kontrollera att det inte finns några **nlserver** -processer.
 
 ### Steg 4 - Återställ databaserna i målmiljön (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
