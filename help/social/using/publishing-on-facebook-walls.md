@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ För att Adobe Campaign ska kunna skicka publikationer till Facebook-väggar må
 Börja med att skapa ett Facebook-konto och flera sidor: dessa kommer att användas för att skicka publikationer.
 
 * Om du vill skapa ett Facebook-konto använder du länken [https://www.facebook.com](https://www.facebook.com) .
-* Om du vill skapa en Facebook-sida använder du länken [https://www.facebook.com/pages/create.php](https://www.facebook.com/pages/create.php) .
+* Om du vill skapa en Facebook-sida använder du länken [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create) .
 
    Vi rekommenderar att du använder samma Facebook-konto för att administrera alla dina sidor. På så sätt behöver du bara ett Facebook-program och ett externt konto för att skriva på alla sidor i kontot.
 
@@ -99,7 +102,7 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
    >
    >Om **[!UICONTROL Facebook Web Games]** avsnittet inte visas klickar du på **[!UICONTROL Add Platform]** knappen längst ned på sidan och väljer **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe Campaign**: gå till **[!UICONTROL Administration > Platform > External Accounts]** noden i trädet, markera det **[!UICONTROL Facebook routing]** externa kontot och klicka på **[!UICONTROL Connector]** fliken.
+* **Adobe Campaign**: Gå till **[!UICONTROL Administration > Platform > External Accounts]** noden i trädet, markera det **[!UICONTROL Facebook routing]** externa kontot och klicka på **[!UICONTROL Connector]** fliken.
 
    ![](assets/social_facebook_external_account_001.png)
 
