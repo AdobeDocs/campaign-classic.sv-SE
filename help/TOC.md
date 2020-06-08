@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 0%
 + Versionsinformation {#release-notes}
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
+      + [Version 20.1](rn/using/release--20-1.md)
       + [Version 19.2](rn/using/release--19-2.md)
       + [Version 19.1](rn/using/release--19-1.md)
       + [Version 18.10](rn/using/release--18-10.md)
@@ -127,6 +128,7 @@ ht-degree: 0%
       + [Villkorligt innehåll](delivery/using/conditional-content.md)
       + [Personaliserade kuponger](delivery/using/personalized-coupons.md)
       + [Generera skräddarsydda PDF-dokument](delivery/using/generating-personalized-pdf-documents.md)
+      + [Anpassa uttryckslistan](delivery/using/customizing-emoticon-list.md)
    + Använda dirigerade adresser {#using-seed-addresses}
       + [Om dirigeringsadresser](delivery/using/about-seed-addresses.md)
       + [Skapa dirigerade adresser](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 0%
       + [Förhandsgranskning av transaktionsmeddelande](message-center/using/transactional-message-preview.md)
       + [Skicka ett bevis](message-center/using/sending-a-proof.md)
       + [Mallpublicering](message-center/using/template-publication.md)
+      + [Opublicerad mall](message-center/using/template-unpublication.md)
    + Händelsebearbetning {#event-processing}
       + [Om händelsebearbetning](message-center/using/about-event-processing.md)
       + [Händelsesamling](message-center/using/event-collection.md)
@@ -603,6 +606,7 @@ ht-degree: 0%
       + [Interaktion - databuffert](installation/using/interaction---data-buffer.md)
    + Tillägg {#appendices}
       + [Serverkonfigurationsfilen](installation/using/the-server-configuration-file.md)
+      + [Slutpunkter för kampanjnätverk](installation/using/campaign-network-endpoints.md)
       + [Kommandorader](installation/using/command-lines.md)
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
       + [Lista med alternativ för Campaign Classic](installation/using/configuring-campaign-options.md)
