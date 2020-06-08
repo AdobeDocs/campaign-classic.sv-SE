@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1631'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,6 @@ Skapa diagrammet
 >
 >Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. Vi rekommenderar i stället att du **duplicerar** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](#duplicating-workflows).
 
-### Ytterligare layoutalternativ {#additional-layout-options}
-
 Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Använda verktygsfältet**
@@ -162,7 +160,7 @@ Resultaten av alla berikningar och all hantering som utförs under målgruppsanp
 
 ### Målinriktning och filtrering {#targeting-and-filtering-dimensions}
 
-Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Med filterdimensionen kan du välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
+Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Filtreringsdimensionen gör att du kan välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
 
 Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
 
