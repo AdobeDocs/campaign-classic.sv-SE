@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +74,4 @@ Nedladdningen **av** webben startar nedladdningen av en fil på en explicit URL,
 
 ## Utdataparametrar {#output-parameters}
 
-* filnamn
-
-   Den hämtade filens fullständiga namn.
-
+* filnamn: Den hämtade filens fullständiga namn.
