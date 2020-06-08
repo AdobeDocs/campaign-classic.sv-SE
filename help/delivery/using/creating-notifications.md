@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -59,18 +62,18 @@ Börja med att skapa en ny leverans.
    >Läget **tyst överföring** är tillgängligt från iOS 7. Detta gör att ett tyst meddelande kan skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
 
 1. I **[!UICONTROL Title]** fältet anger du etiketten för titeln som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet på **title** -parametern för iOS-meddelandenyttolasten.
+
 1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **undertitle** -parametern i iOS-meddelandenyttolasten). Mer information finns i [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+
 1. Ange sedan **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
 
    ![](assets/nmac_delivery_ios_5.png)
 
    >[!NOTE]
    >
-   >Du kan lägga till känslolägesikoner i innehållet i meddelandet. Om du vill göra det går du till en webbplats med en känslolägesikonlista ([till exempel](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopierar ett känslolägesikoner och klistrar in det direkt i innehållsredigeraren. I Windows 7 kanske vissa känslolägesikoner inte visas korrekt i redigeraren (fyrkantig symbol), men de bör skickas korrekt i det slutliga meddelandet. Möjligheten att visa känslolägesikoner beror på vilket operativsystem som används på enheten. Vi rekommenderar att du skickar korrektur för att verifiera att leveransen visas korrekt innan du skickar den.
-
-   >[!NOTE]
-   >
    >**[!UICONTROL Badge]** och **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
+
+1. Klicka på **[!UICONTROL Insert emoticon]** ikonen om du vill infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [Anpassa uttryckslistan](../../delivery/using/defining-interactive-content.md)
 
 1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**fältet action_loc_key** i nyttolasten). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apples dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. I **[!UICONTROL Play a sound]** fältet väljer du vilket ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
@@ -83,7 +86,7 @@ Börja med att skapa en ny leverans.
 
    >[!NOTE]
    >
-   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: Konfigurera [ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Klicka på fliken för att förhandsgranska meddelandet när meddelandet har konfigurerats **[!UICONTROL Preview]** .
 
@@ -121,15 +124,13 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
    ![](assets/nmac_delivery_android_4.png)
 
-   >[!NOTE]
-   >
-   >Du kan lägga till känslolägesikoner i innehållet i meddelandet. Om du vill göra det går du till en webbplats med en känslolägesikonlista ([till exempel](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopierar ett känslolägesikoner och klistrar in det direkt i innehållsredigeraren. I Windows 7 kanske vissa känslolägesikoner inte visas korrekt i redigeraren (fyrkantig symbol), men de bör skickas korrekt i det slutliga e-postmeddelandet. Möjligheten att visa känslolägesikoner beror på vilket operativsystem som används på enheten. Vi rekommenderar att du skickar korrektur för att verifiera att leveransen visas korrekt innan du skickar den.
+1. Klicka på **[!UICONTROL Insert emoticon]** ikonen om du vill infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [Anpassa uttryckslistan](../../delivery/using/defining-interactive-content.md)
 
 1. I **[!UICONTROL Application variables]** fältet anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
    >[!NOTE]
    >
-   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: Konfigurera [ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Klicka på fliken för att förhandsgranska meddelandet när meddelandet har konfigurerats **[!UICONTROL Preview]** .
 
