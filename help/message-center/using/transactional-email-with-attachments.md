@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 * Om den bifogade filen är kopplad till en transaktion (som i det exempel som beskrivs ovan) kan den innehålla dynamiska data som genereras under kundprocessen.
 * Genom att bifoga PDF-filer optimeras säkerheten eftersom du kan kryptera dem och skicka dem via HTTPS.
 
+>[!NOTE]
+>
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+
 ## Rekommendationer {#important-notes}
 
 Läs riktlinjerna nedan innan du implementerar detta scenario:
@@ -53,6 +57,10 @@ Läs riktlinjerna nedan innan du implementerar detta scenario:
 * Eftersom det inte finns någon direkt åtkomst till Transactional Messaging-instanser eller -servrar utanför Adobe finns det inget standardsätt att skicka sådana filer till dessa servrar (ingen FTP-åtkomst).
 * Det är inte korrekt enligt avtalet att använda diskutrymmet på Transactional Messaging-instanserna för att lagra filer av någon typ, inte ens för bilagor.
 * Du måste använda ett annat onlinesystem för att ha dessa filer. Du behöver FTP-åtkomst till det här systemet och du måste kunna skriva och ta bort filer.
+
+>[!NOTE]
+>
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementering {#implementation}
 
