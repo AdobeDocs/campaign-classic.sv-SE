@@ -15,20 +15,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
+source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
 
 # Om webbprogram{#about-web-applications}
 
-Med Adobe Campaign kan ni skapa och publicera dynamiska och interaktiva webbapplikationer med data från databasen och innehåll som är anpassat efter den anslutna användarens rättigheter. Du kan skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
+Med Adobe Campaign kan ni skapa och publicera dynamiska och interaktiva webbapplikationer med data från databasen och innehåll som är anpassat efter den anslutna användarens rättigheter.
+
+Du kan skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
 Detta kan vara ett prenumerationsformulär som innehåller data som har lästs in i förväg med information som finns i Adobe Campaign-databasen, vilket visas nedan:
 
 ![](assets/webapp_form_sample.png)
 
 I det här kapitlet finns en översikt över hur du hanterar webbprogram.
+
+>[!NOTE]
+>
+>Läs checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html) säkerhet och sekretess om du vill veta hur du optimerar säkerheten för webbprogram.
 
 >[!CAUTION]
 >
@@ -81,16 +90,16 @@ Webbprogram skapas via **[!UICONTROL Web Applications]** länken på flikarna **
 
 Webbprogram lagras i noden **[!UICONTROL Resources > Online > Web Applications]** i Adobe Campaign-trädet. Konfigurationerna är uppdelade i följande mappar:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. It also uses a CSS style sheet. This style sheet can be overloaded at the template level. For more on this, refer to [this page](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Resources > Templates > Web application templates]**: contains form templates. To create a form or a Web application, you must start from a template.
+* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. En CSS-formatmall används också. Den här formatmallen kan överladdas på mallnivå. For more on this, refer to [this page](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Resources > Templates > Web application templates]**: innehåller formulärmallar. Om du vill skapa ett formulär eller ett webbprogram måste du utgå från en mall.
 
-## Web application templates {#web-application-templates}
+## Mallar för webbprogram {#web-application-templates}
 
 Som standard innehåller Adobe Campaign en mall per tillgängligt webbprogram.
 
 >[!NOTE]
 >
->You can convert an existing Web application into a template. To do this, select the form and right-click. Select **[!UICONTROL Actions > Save as template...]**.
+>Du kan konvertera ett befintligt webbprogram till en mall. Om du vill göra det markerar du formuläret och högerklickar. Välj **[!UICONTROL Actions > Save as template...]**.
 
 Du kan skapa nya mallar via noden **[!UICONTROL Resources > Templates > Web Application templates]** i Adobe Campaign-trädet.
 
@@ -100,5 +109,5 @@ Med guiden Skapa kan du välja de alternativ som du vill aktivera, vilket visas 
 
 >[!CAUTION]
 >
->The available applications depend on your options and modules. Please check your license agreement.
+>Vilka program som är tillgängliga beror på vilka alternativ och moduler du har. Kontrollera licensavtalet.
 
