@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
+source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+workflow-type: tm+mt
+source-wordcount: '3589'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +77,7 @@ Varje zon definierar rättigheter, till exempel:
 >**Varje operator måste länkas till en zon**. Om operatorns IP-adress tillhör det intervall som definieras av zonen kan operatorn logga in på instansen.\
 >Operatorns IP-adress kan definieras i flera zoner. I det här fallet får operatören **uppsättningen** tillgängliga rättigheter för varje zon.
 
-Filen **serverConf.xml** finns i tre zoner: public, **VPN och LAN**.
+Filen **serverConf.xml** finns i tre zoner: **public, VPN och LAN**.
 
 >[!NOTE]
 >
@@ -355,7 +358,7 @@ Med **hybridvärdmodeller** och **lokala** värdmodeller måste administratören
 
 Det finns tre lägen för anslutningsskydd:
 
-* **Blockering**: alla URL:er som inte tillhör vitlistan blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Blockering**: Alla URL:er som inte tillhör vitlistan blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
 * **Tillstånd**: Alla URL:er som inte hör till vitlistan tillåts.
 * **Varning**: alla URL:er som inte är vita tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
@@ -599,7 +602,7 @@ Standardvärdet för det här attributet är **.+** så kan du ladda upp alla fi
 
 Om du vill begränsa antalet möjliga format måste du ersätta attributvärdet med ett giltigt reguljärt java-uttryck. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: upload **WhiteList=&quot;&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
+Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format accepteras.
 
 >[!IMPORTANT]
 >
@@ -610,6 +613,8 @@ Till exempel: upload **WhiteList=&quot;&quot;.*.png,*.jpg&quot;** gör att du ka
 Om du behöver ansluta Campaign-servern till utsidan via en proxy (till exempel med hjälp av en arbetsflödesaktivitet för filöverföring) måste du konfigurera avsnittet proxyConfig i serverConf via ett kommando. Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
+>
+>Från och med 20.2 är protokollparametrarna HTTP och HTTPS inte längre tillgängliga. I följande information omnämns dessa parametrar fortfarande, eftersom de fortfarande är tillgängliga för tidigare versioner, inklusive 9032.
 >
 >SOCKS-proxies stöds inte.
 
