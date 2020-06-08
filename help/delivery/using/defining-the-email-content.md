@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ I meddelandet ovan anpassas till exempel meddelandets ämne för varje mottagare
 >[!NOTE]
 >
 >Användningen av personaliseringsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
+
+Du kan också infoga uttryckssymboler på ämnesraden med **[!UICONTROL Insert emoticon]** popup-fönstret.
 
 ## Meddelandeinnehåll {#message-content}
 
@@ -114,6 +116,19 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
    När det gäller HTML-formatet klickar du på **[!UICONTROL Preview]** fliken längst ned på sidan för att visa återgivningen av meddelandet med dess anpassning.
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
+
+### Infoga uttryckssymboler i ett e-postmeddelande {#inserting-emoticons}
+
+Du kan infoga uttryckssymboler i ditt e-postinnehåll.
+
+1. Klicka på **[!UICONTROL Insert emoticon]** ikonen.
+1. Välj en uttryckssymbol i popup-fönstret.
+
+   ![](assets/emoticon_4.png)
+
+1. Klicka på **[!UICONTROL Close]** knappen när du är klar.
+
+Mer information om hur du anpassar uttryckslistan finns på den här [sidan](../../delivery/using/customizing-emoticon-list.md).
 
 ## Välja meddelandeformat {#selecting-message-formats}
 
@@ -191,11 +206,10 @@ Så här hanterar du bilder via leveransguiden:
 
 1. Välj **[!UICONTROL Upload images]** på **[!UICONTROL Images]** fliken.
 1. Du kan sedan välja om du vill inkludera bilderna i e-postmeddelandet.
-
-![](assets/s_ncs_user_email_del_img_upload.png)
+   ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på **[!UICONTROL Upload the images straightaway...]** länken om du vill göra det.
-* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i **[!UICONTROL Image URL]** fältet. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
+* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i **[!UICONTROL Images URL]** fältet. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
 
 När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande som ger dig möjlighet att ladda upp bilderna direkt enligt leveransparametrarna.
 
@@ -205,7 +219,11 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 >
 >Sökvägarna för bildåtkomst ändras vid manuell överföring eller när meddelanden skickas.
 
-### Exempel: skicka ett meddelande med bilder {#example--sending-a-message-with-images}
+### Skicka ett meddelande med bilder {#sending-a-message-with-images}
+
+>[!NOTE]
+>
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](../../delivery/using/attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
 
 Här följer ett exempel på en leverans med fyra bilder:
 
