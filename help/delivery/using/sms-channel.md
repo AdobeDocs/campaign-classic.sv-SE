@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3152'
 ht-degree: 0%
 
 ---
@@ -41,38 +41,13 @@ Om du vill skicka till en mobiltelefon behöver du:
 
 1. Ett externt konto som anger en koppling och typ av meddelande.
 
-   Tillgängliga anslutningar är: NetSize, Generic SMPP (SMPP version 3.4 med stöd för binärt läge), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 och Extended generisk SMPP.
+   Observera att följande anslutningar kommer att bli inaktuella från och med version 20.2: NetSize, Generic SMPP (stöd för binärt läge i SMPP version 3.4), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 och iOS. Det finns fortfarande funktioner som inte längre används, men de kommer inte att förbättras ytterligare eller stödjas. Mer information finns på den här [sidan](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 1. En leveransmall där det här externa kontot refereras.
 
-### Aktivera ett externt konto {#activating-an-external-account}
-
-Listan över externa konton finns i noden **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Adobe Campaign Explorer-trädet.
-
-* Gå till exempel till standardkontot **[!UICONTROL NetSize mobile delivery]**.
-* Markera kryssrutan på **[!UICONTROL General]** fliken **[!UICONTROL Enabled]** .
-
-   ![](assets/s_user_external_account_01.png)
-
-* Kontrollera att **[!UICONTROL Mobile]** alternativet är markerat för **[!UICONTROL Channel]** fältet.
-* Välj en koppling i listrutan på **[!UICONTROL Mobile]** fliken: NetSize, Generic SMPP, Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 eller Extended generisk SMPP. Mer information om den utökade allmänna SMPP-anslutningen finns i avsnittet [Skapa ett externt SMPP-konto](#creating-an-smpp-external-account) .
-
-   ![](assets/s_user_external_account_connect_01.png)
-
-* Konfigurera kontakten enligt informationen från leverantören. I exemplet nedan är operatorn NetSize.
-
-   ![](assets/s_user_external_account_param.png)
-
-* På **[!UICONTROL Connector]** fliken låter du det **[!UICONTROL Call Web Service]** aktiveringsläge som är valt som standard.
-
-   ![](assets/s_user_external_account_param_02.png)
-
-* Om fliken **[!UICONTROL Connector]** visas anger du anslutningens URL. Adressen måste sluta i **netsize.jsp** om din leverantör är NetSize. För alla andra kopplingar avslutas URL-adressen med **smpp34.jsp**.
-
 ### Skapa ett SMPP-externt konto {#creating-an-smpp-external-account}
 
-Om du vill använda SMPP-protokollet kan du även skapa ett nytt externt konto.
-
+Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
 Mer information om SMS-protokoll och inställningar finns i den här [tekniska informationen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Gör så här:
@@ -87,7 +62,11 @@ Gör så här:
 
    ![](assets/extended_smpp_connector.png)
 
-   Med det här **[!UICONTROL Enable verbose SMPP traces in the log file]** alternativet kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att felsöka anslutningen och jämföra med den trafik som leverantören ser.
+   >[!CAUTION]
+   >
+   > Från och med version 20.2 kommer äldre anslutningar att bli inaktuella och inte stödjas. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]** kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+
+1. Med det här **[!UICONTROL Enable verbose SMPP traces in the log file]** alternativet kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att felsöka anslutningen och jämföra med den trafik som leverantören ser.
 
 1. Kontakta din SMS-leverantör som förklarar hur du fyller i de olika externa kontofälten på **[!UICONTROL Connection settings]** fliken.
 
@@ -378,6 +357,7 @@ Mottagarna visas i den **[!UICONTROL Non deliverables and addresses]** tabell so
 
 Om du har flera externa konton som använder den utökade allmänna SMPP-anslutningen med samma leverantörskonto kan följande problem uppstå: när du skickar ett svar till en kort kod kan det tas emot på någon av dina externa kontoanslutningar. Det automatiska svaret som skickas kunde därför inte vara det förväntade meddelandet.
 Du undviker detta genom att använda någon av följande lösningar, beroende på vilken leverantör du använder:
+
 * Skapa ett leverantörskonto för varje externt konto.
 * Använd **[!UICONTROL System type]** fältet från fliken **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** för att skilja på kortkoderna. Fråga leverantören ett annat värde för varje konto.
 
@@ -393,19 +373,19 @@ Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen r
 
 För att behålla den inbyggda leveransmallen rekommenderar vi att du duplicerar den och sedan konfigurerar den.
 
-I exemplet nedan skapar vi en mall för att leverera meddelanden via NetSize-kontot som aktiverats tidigare. Så här gör du:
+I exemplet nedan skapar vi en mall för att leverera meddelanden via det SMPP-konto som aktiverats tidigare. Så här gör du:
 
 1. Gå till **[!UICONTROL Delivery templates]** noden.
 1. Högerklicka på **[!UICONTROL Send to mobiles]** mallen och välj **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Ändra mallens etikett.
+1. Ändra mallens etikett, till exempel **Skickat till mobiler (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Klicka på **[!UICONTROL Properties]**.
-1. På fliken **[!UICONTROL General]** väljer du ett routningsläge som motsvarar ett externt konto som du har konfigurerat, till exempel **[!UICONTROL NetSize mobile delivery]**.
+1. Välj ett routningsläge som motsvarar det externa kontot som du skapade i föregående steg på fliken **[!UICONTROL General]** .
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -426,7 +406,7 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 >Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
-1. Välj leveransmallen **[!UICONTROL Send to mobiles (NetSize)]** som du skapade tidigare. Mer information finns i avsnittet [Ändra leveransmall](#changing-the-delivery-template) .
+1. Välj leveransmallen **Skickat till mobiler (SMPP)** som du skapade tidigare. Mer information finns i avsnittet [Ändra leveransmall](#changing-the-delivery-template) .
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -488,7 +468,7 @@ Knappen ger åtkomst till den avancerade parametern för leverans. **[!UICONTROL
 
 Följande alternativ är tillgängliga:
 
-* **Avsändarens adress** (endast för NetSize-anslutningar och SMPP-anslutningar): Med kan du anpassa namnet på avsändaren med en alfanumerisk teckensträng som är begränsad till elva tecken. Fältet får inte uteslutande bestå av siffror. Du kan definiera ett villkor som ska visas, t.ex. med olika namn beroende på mottagarens riktnummer:
+* **Avsändarens adress**: Med kan du anpassa namnet på avsändaren med en alfanumerisk teckensträng som är begränsad till elva tecken. Fältet får inte uteslutande bestå av siffror. Du kan definiera ett villkor som ska visas, t.ex. med olika namn beroende på mottagarens riktnummer:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -546,7 +526,7 @@ InSMS-schemat innehåller information som är relevant för inkommande SMS. En b
 
 * **meddelande**: det SMS som togs emot.
 * **ursprung**: mobilnummer i meddelandets ursprung.
-* **providerId**: Identifierare för det meddelande som returneras av SMSC (meddelandecenter).
+* **providerId**: Identifierare för meddelandet som returneras av SMSC (meddelandecenter).
 * **skapad**: datum då inkommande meddelande infogades i Adobe Campaign.
 * **TextAccount**: Externt konto för Adobe Campaign.
 
