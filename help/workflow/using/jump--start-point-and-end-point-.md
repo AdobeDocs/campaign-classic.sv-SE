@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 4994aff9f2db36a519a9c7af2864393713eb65e3
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,9 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 **[!UICONTROL Jump]** grafiska objekt av typen -typ används för att förbättra läsbarheten för komplexa diagram, särskilt sådana med korsningsövergångar.
 
-Hoppar är övergångar utan pilar: De går från en aktivitet till en annan, som i följande exempel.
+Hoppar är övergångar utan pilar.
+
+De går från en aktivitet till en annan, som i följande exempel:
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
