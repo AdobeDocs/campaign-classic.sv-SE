@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2217'
+ht-degree: 0%
 
 ---
 
@@ -107,7 +110,7 @@ Med det **[!UICONTROL Routing]** externa kontot kan ni konfigurera varje kanal s
 Följande kanaler kan konfigureras:
 
 * [E-post](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobil (SMS)](../../delivery/using/sms-channel.md#activating-an-external-account).
+* [Mobil (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/other-channels.md)
 * [Direktreklam](../../delivery/using/about-direct-mail-channel.md)
 * [byrå](../../delivery/using/other-channels.md)
@@ -154,6 +157,7 @@ Adobe Campaign har flera kontakter som gör att du kan kommunicera med externa p
 
 Följande anslutningstyper kan konfigureras:
 
+* Azure Synapse. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
 * Oracle. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
 * Netezza. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
 * SAP HANA. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
