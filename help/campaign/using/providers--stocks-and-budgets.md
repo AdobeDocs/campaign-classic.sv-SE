@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Varje tjänsteleverantör sparas i en fil med kontaktinformation, tjänstmallar 
 
 Tjänsteleverantörer är konfigurerade i trädnoden **[!UICONTROL Administration > Campaign management]** .
 
-De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt för direktreklam och mobila kanaler. Dessa tjänsteleverantörer kan till exempel vara inblandade i utskrift eller distribution av meddelanden. Dessa jobb omfattar konfigurationer och kostnader som är specifika för varje tjänsteleverantör. Tjänsteleverantörernas konfiguration omfattar fyra steg:
+De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt för direktreklam och mobila kanaler. Dessa tjänsteleverantörer kan till exempel vara inblandade i utskrift eller distribution av meddelanden. Dessa jobb omfattar konfigurationer och kostnader som är specifika för varje tjänsteleverantör. Konfigurationen av tjänsteleverantörer omfattar fyra steg:
 
 1. Skapa en tjänsteleverantör i Adobe Campaign
 
@@ -81,7 +84,7 @@ Så här skapar du en tjänstmall och definierar dess innehåll:
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Ange en etikett för kostnadskategorin och välj typ av process: Leverans av **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** eller **[!UICONTROL Fax]** **[!UICONTROL Task]**.
+   * Ange en etikett för kostnadskategorin och välj typ av process: Leverans av **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]** eller **[!UICONTROL Telephone]** **[!UICONTROL Task]**.
    * Klicka på **[!UICONTROL Add]** knappen för att definiera de kostnadstyper som är associerade med den här kategorin.
    * Vid behov skall en lagerlinje kopplas till varje typ av kostnad så att de använda kvantiteterna automatiskt kopplas till de befintliga lagren.
 
@@ -176,7 +179,7 @@ När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (di
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
-* För leverans i mobilkanaler, via fax eller telefon gäller samma urvalsmodell.
+* För leverans i mobilkanaler eller via telefon gäller samma urvalsmodell.
 * För en e-postleverans väljs tjänsten på fliken **[!UICONTROL Advanced]** i leveransegenskaperna, som i följande exempel:
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
@@ -236,7 +239,7 @@ När du skapar en aktie klickar du på **[!UICONTROL Stock lines]** fliken för 
 
 ![](assets/s_ncs_user_stocks_display_line.png)
 
-När du har skapat stocken klickar du på den för att redigera och använda kontrollpanelen för att skapa och visa lagerrader.
+När du har skapat stocken klickar du på den för att redigera den och använda kontrollpanelen för att skapa och visa stockrader.
 
 Klicka på **[!UICONTROL Create]** knappen om du vill definiera parametrar för Stock.
 
