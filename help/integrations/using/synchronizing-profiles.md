@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 0%
 
 ---
 
@@ -76,13 +79,13 @@ Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Ca
 
 Profiler och tjänster som replikerats från Campaign v7 är tillgängliga för digitala marknadsförare så att de kan utnyttja de omfattande data som finns i Campaign Standard. Instruktionerna nedan visar hur du lägger till en fråga i ett Campaign Standard-arbetsflöde och sedan använder den med den replikerade databasen.
 
-Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standard finns i [Arbetsflöden](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
+Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standard finns i [Arbetsflöden](../../workflow/using/about-workflows.md).
 
 1. Gå till Campaign Standard och klicka **[!UICONTROL Marketing Activities]**.
 1. Klicka **[!UICONTROL Create]** uppe till höger.
-1. Klicka **[!UICONTROL Workflow]**.
+1. Klicka på **[!UICONTROL Workflow]**.
 1. Klicka **[!UICONTROL New workflow]** och **[!UICONTROL Next]**.
-1. Ange ett namn för arbetsflödet i **[!UICONTROL Label]** fältet och ytterligare information om det behövs. Klicka **[!UICONTROL Next]**.
+1. Ange ett namn för arbetsflödet i **[!UICONTROL Label]** fältet och ytterligare information om det behövs. Klicka på **[!UICONTROL Next]**.
 1. Dra ett **[!UICONTROL Targeting]** mål från vänster **[!UICONTROL Query]** till arbetsytan.
 
    ![](assets/acs_connect_profile_sync_05.png)
@@ -100,7 +103,7 @@ Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standa
 
 Digitala marknadsförare kan utnyttja ett Campaign v7-webbprogram för att försäkra sig om att en mottagares val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. När mottagaren klickar på länken för att avbryta prenumerationen replikeras alternativet att sluta ta emot tjänsten från Campaign v7 till Campaign Standard. Mer information finns i [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
 
-Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbetsflöde med den tjänst för avprenumeration som skapades i Campaign v7. Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standard finns i det här [dokumentet](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
+Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbetsflöde med den tjänst för avprenumeration som skapades i Campaign v7. Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standard finns i det här [dokumentet](../../workflow/using/about-workflows.md).
 
 >[!NOTE]
 >
@@ -116,7 +119,7 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. Ange ett namn för leveransen i **[!UICONTROL Label]** fältet och ytterligare information om det behövs. Klicka **[!UICONTROL Next]**.
+1. Ange ett namn för leveransen i **[!UICONTROL Label]** fältet och ytterligare information om det behövs. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_09.png)
 
@@ -125,7 +128,7 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
 
    ![](assets/acs_connect_profile_sync_10.png)
 
-1. Välj innehåll som innehåller länken för att avbryta prenumerationen på tjänsten. Klicka **[!UICONTROL Confirm]**.
+1. Välj innehåll som innehåller länken för att avbryta prenumerationen på tjänsten. Klicka på **[!UICONTROL Confirm]**.
 
    ![](assets/acs_connect_profile_sync_11.png)
 
@@ -138,7 +141,7 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
    ![](assets/acs_connect_profile_sync_13.png)
 
 1. Markera texten med markören och klicka på kedjeikonen.
-1. Klicka **[!UICONTROL Link to a landing page]**.
+1. Klicka på **[!UICONTROL Link to a landing page]**.
 
    ![](assets/acs_connect_profile_sync_14.png)
 
@@ -150,7 +153,7 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
 
    ![](assets/acs_connect_profile_sync_16.png)
 
-1. Klicka **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**.
 1. Återgå till arbetsflödet genom att klicka på leveransnamnet.
 
    ![](assets/acs_connect_profile_sync_17.png)
