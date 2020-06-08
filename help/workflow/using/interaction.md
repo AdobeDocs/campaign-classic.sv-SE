@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 28a32c9a5300c28784ae7a2837075b4dc3aad1fa
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
 
 
 # Interaktion{#interaction}
 
-Arbetsflödet som beskrivs nedan installeras som standard med **modulen Erbjudandemotor (interaktion)** . Mer information om den här modulen finns i det här [avsnittet](../../interaction/using/interaction-and-offer-management.md).
+Arbetsflödena som beskrivs nedan installeras som standard med **modulen Erbjudandemotor (interaktion)** . Mer information om den här modulen finns i det här [avsnittet](../../interaction/using/interaction-and-offer-management.md).
 
 <table> 
  <tbody> 
@@ -32,13 +35,13 @@ Arbetsflödet som beskrivs nedan installeras som standard med **modulen Erbjudan
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Fullständig aggregerad beräkning (propositionskub)</span><br /> </td> 
-   <td> <span class="uicontrol">agg_nmspropositioncp_full</span><br /> </td> 
-   <td> Det här arbetsflödet uppdaterar den <strong>fullständiga</strong> sammanställningen för <strong>erbjudandekuben</strong> . Den aktiveras varje dag kl. 6.00 som standard. Den här sammanställningen fångar följande dimensioner: Kanal, leverans, marknadsföringserbjudande och datum.<br /> Buffertkub <strong>för</strong> erbjudanden används sedan för att generera rapporter baserade på erbjudanden. Du kan läsa mer om kuber i <a href="../../reporting/using/about-cubes.md">det här avsnittet</a>.<br /> </td> 
+   <td> <span class="uicontrol">Fullständig aggregerad beräkning (propositionskub)</span> <br /> </td> 
+   <td> <span class="uicontrol">agg_nmspropositioncp_full</span> <br /> </td> 
+   <td> Det här arbetsflödet uppdaterar den <strong>fullständiga</strong> sammanställningen för <strong>erbjudandekuben</strong> . Den aktiveras varje dag kl. 6.00 som standard. Den här sammanställningen fångar följande dimensioner: Kanal, leverans, marknadsföringserbjudande och datum.<br /> Kuben <strong>för erbjudandeförslag</strong> används sedan för att generera rapporter baserat på erbjudanden. Du kan läsa mer om kuber i <a href="../../reporting/using/about-cubes.md">det här avsnittet</a>.<br /> </td> 
   </tr> 
    <tr> 
-   <td> <span class="uicontrol">Fullständig mängdberäkning</span> för MessageCenter <br /> </td> 
-   <td> <span class="uicontrol">agg_messageCenter_full</span><br /> </td> 
+   <td> <span class="uicontrol">Fullständig mängdberäkning för MessageCenter</span> <br /> </td> 
+   <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
