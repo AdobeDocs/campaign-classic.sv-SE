@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ I det här fallet gäller att även om regeln är länkad till alla leveranser, 
 
 >[!NOTE]
 >
->Typologier och filtreringsregler kan användas i ett arbetsflöde i **[!UICONTROL Delivery outline]** aktiviteten. Mer information finns i [det här avsnittet](../../workflow/using/delivery-outline.md).
+>Typologier och filtreringsregler kan användas i ett arbetsflöde i **[!UICONTROL Delivery outline]** aktiviteten. For more on this, refer to [this section](../../workflow/using/delivery-outline.md).
 
 ## Skapa och använda en filtertypologi {#creating-and-using-a-filtering-typology}
 
@@ -84,10 +87,9 @@ Du kan också länka filtreringsregler direkt via den här fliken utan att grupp
 
 >[!NOTE]
 >
->* Endast typologier och filtreringsregler är tillgängliga i urvalsfönstret.
->* Dessa konfigurationer kan definieras i leveransmallen som automatiskt tillämpas på alla nya leveranser som skapas med hjälp av mallen.
+>Endast typologier och filtreringsregler är tillgängliga i urvalsfönstret.
 >
-
+>Dessa konfigurationer kan definieras i leveransmallen som automatiskt tillämpas på alla nya leveranser som skapas med hjälp av mallen.
 
 
 ## Undantagsregler för standardleverans {#default-deliverability-exclusion-rules}
