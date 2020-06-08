@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -246,7 +246,7 @@ För att Adobe Experience Cloud ska kunna spåra aktiviteter på webbplatserna n
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Öppna leveransegenskaperna.
-1. Gå till **[!UICONTROL Web Analytics]** fliken och välj det tidigare skapade externa kontot. Se [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign)).
+1. Gå till **[!UICONTROL Web Analytics]** fliken och välj det tidigare skapade externa kontot. Se [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
