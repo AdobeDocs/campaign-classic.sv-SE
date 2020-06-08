@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 5b0bcdfca1767aab5c54f06a5af5fb9097d2ec6f
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 0%
 
 ---
 
@@ -28,45 +31,58 @@ Så här gör du:
 
 1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. Se [Analysera leveransen](#analyzing-the-delivery).
 
-   Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
+   Reglerna som används under analysen visas i [valideringsprocessen med typologiavsnittet](#validation-process-with-typologies) . De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
 
 1. **Skicka korrektur**: I det här steget kan du godkänna innehåll, URL:er, anpassningsfält osv. Se [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Båda dessa steg måste nödvändigtvis utföras efter varje ändring av meddelandeinnehållet.
 
 ## Analyserar leveransen {#analyzing-the-delivery}
 
-Analysen är den fas då målpopulationen beräknas och leveransinnehållet färdigställs. När leveransen är klar kan den skickas. Klicka på **[!UICONTROL Send]** och välj sedan **[!UICONTROL Deliver as soon as possible]** leveransanalysen för att starta leveransanalysen.
+Analysen är den fas då målpopulationen beräknas och leveransinnehållet färdigställs. När leveransen är klar kan den skickas.
 
-![](assets/s_ncs_user_email_del_send.png)
+### Starta analysen {#launching-the-analysis}
 
-Med **[!UICONTROL Analyze]** knappen kan du starta analysen manuellt. Förloppsindikatorn visar analysförloppet. Analysresultatet visas i fönstrets nedre del. Specialikoner visar varningar.
+1. Klicka på **[!UICONTROL Send]** för att starta leveransanalysen.
+1. Välj **[!UICONTROL Deliver as soon as possible]**.
 
-![](assets/s_ncs_user_interface_delivery04b.png)
+   ![](assets/s_ncs_user_email_del_send.png)
 
->[!NOTE]
->
->Valideringsreglerna beskrivs i [Valideringsprocess med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+1. Klicka **[!UICONTROL Analyze]** för att starta analysen manuellt.
 
-Du kan när som helst avbryta det här jobbet genom att klicka på **[!UICONTROL Stop]**.
+   Förloppsindikatorn visar analysförloppet.
 
-![](assets/s_ncs_user_wizard_email01_16.png)
+   ![](assets/s_ncs_user_email_del_analyze_progress.png)
 
-Inga meddelanden skickas under analysfasen. Du kan därför starta eller avbryta det här jobbet utan risk.
+   >[!NOTE]
+   >
+   >Valideringsreglerna som används under analysen beskrivs i avsnittet [Validering med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) .
 
->[!CAUTION]
->
->Analysen fryser leveransen (eller beviset) vid tidpunkten för analysen. Eventuella ändringar av leveransen (eller beviset) måste följas av en annan analys innan de blir tillämpliga.
+1. Du kan när som helst stoppa analysen genom att klicka på **[!UICONTROL Stop]**.
 
-I det sista loggmeddelandet visas eventuella felmeddelanden och antalet fel. En speciell ikon visar feltypen: Om den gula ikonen anger ett icke-kritiskt bearbetningsfel visas ett kritiskt fel som förhindrar att leveransen startar.
+   ![](assets/s_ncs_user_wizard_email01_16.png)
 
-![](assets/s_ncs_user_email_del_analyze_error.png)
+   Inga meddelanden skickas under förberedelsefasen. Du kan därför påbörja eller avbryta analysen utan risk.
 
-Klicka **[!UICONTROL Close]** för att korrigera felen. När du har gjort ändringarna måste du starta om analysen.
+   >[!IMPORTANT]
+   >
+   >Vid körning fryser analysen leveransen (eller korrekturet). Alla ändringar av leveransen (eller beviset) måste följas av en annan analys innan de blir tillämpliga.
 
-Kontrollera resultatet av analysen innan du klickar på **[!UICONTROL Confirm delivery]** för att skicka meddelandet till det angivna målet. Med ett bekräftelsemeddelande kan du starta leveransen.
+1. Vänta tills analysen är klar.
+
+   När analysen är klar anger fönstrets övre del om leveransförberedelserna är slutförda eller om några fel har inträffat. Alla valideringssteg, varningar och fel visas. Färgade ikoner visar meddelandetypen:
+   * Den blå ikonen visar ett informativt meddelande.
+   * Den gula ikonen indikerar ett icke-kritiskt bearbetningsfel.
+   * Den röda ikonen anger ett kritiskt fel som förhindrar leverans.
+   ![](assets/s_ncs_user_email_del_analyze_error.png)
+
+1. Klicka **[!UICONTROL Close]** för att korrigera eventuella fel.
+
+1. När du har gjort ändringarna startar du om analysklickningen **[!UICONTROL Analyze]**.
+
+När du har kontrollerat resultatet av analysen kan du klicka för **[!UICONTROL Confirm delivery]** att skicka meddelandet till det angivna målet. Med ett bekräftelsemeddelande kan du starta leveransen.
 
 ![](assets/s_ncs_user_email_del_analyze_ok.png)
 
@@ -74,18 +90,33 @@ Kontrollera resultatet av analysen innan du klickar på **[!UICONTROL Confirm de
 >
 >Klicka på **[!UICONTROL Change the main delivery target]** länken om antalet meddelanden som ska skickas inte matchar din konfiguration. På så sätt kan du ändra definitionen av målpopulationen och starta om analysen.
 
-På **[!UICONTROL Analysis]** fliken Leveransparametrar kan du definiera en uppsättning information om hur meddelanden förbereds under analysfasen.
+### Analysparametrar {#analysis-parameters}
+
+På fliken **[!UICONTROL Analysis]** för leveransegenskaperna kan du definiera en uppsättning information om hur meddelanden förbereds under analysfasen.
 
 ![](assets/s_ncs_user_email_del_analyze_adv_param.png)
 
 På den här fliken finns följande alternativ:
 
-* **[!UICONTROL Label and code of the delivery]** : Alternativen för detta avsnitt på skärmen används för att beräkna värdena för dessa fält under leveransanalysfasen. Fältet **[!UICONTROL Calculate the execution folder during the delivery analysis]** beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
-* **[!UICONTROL Approval mode]** : I det här fältet kan du välja typ av leveransgodkännande. Godkännandelägena visas i [valideringsprocessen med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde. Det gör det möjligt att avsevärt förbättra resultatet för leveransanalysen när mycket data bearbetas, särskilt om personaliseringsdata kommer från en extern tabell via FDA. Se avsnittet [Åtkomst till en extern databas (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
+* **[!UICONTROL Label and code of the delivery]** : Alternativen i detta avsnitt används för att beräkna värdena för dessa fält under leveransanalysfasen. Fältet **[!UICONTROL Compute the execution folder during the delivery analysis]** beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
+* **[!UICONTROL Approval mode]** : I det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar. Valideringslägena visas i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
+* **[!UICONTROL Prepare the delivery parts in the database]** : Med det här alternativet kan du förbättra resultatet för leveransanalysen. Mer information finns i [det här avsnittet](#improving-delivery-analysis).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde, vilket kan göra att du kan uppnå en avsevärd prestandaökning för personalisering. Mer information finns i [Optimera personalisering](../../delivery/using/personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du påbörja leveransanalysen i en separat process. Analysfunktionen använder Adobe Campaign-programserverprocessen (webbservern) som standard. Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Med det här alternativet läggs SQL-frågeloggarna till i leveransjournalen under analysfasen.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv har introducerats med taggen **&lt;%=** ).
+
+### Förbättra leveransanalysens prestanda {#improving-delivery-analysis}
+
+Om du vill göra leveransförberedelserna snabbare kan du kontrollera alternativet innan du startar analysen **[!UICONTROL Prepare the delivery parts in the database]** .
+
+När det här alternativet är aktiverat utförs leveransförberedelsen direkt i databasen, vilket avsevärt kan snabba upp analysen.
+
+För närvarande är det här alternativet endast tillgängligt när följande villkor är uppfyllda:
+* Leveransen måste vara ett e-postmeddelande. De andra kanalerna stöds inte för tillfället.
+* Du får inte använda medelstor eller extern routning, endast bulkleveransroutningstyp. Du kan kontrollera routningen som används på fliken **[!UICONTROL General]** i **[!UICONTROL Delivery properties]**.
+* Du kan inte ange en målgrupp som kommer från en extern fil som mål. Klicka på **[!UICONTROL To]** länken från **[!UICONTROL Email parameters]** **[!UICONTROL Defined in the database]** och kontrollera att alternativet är markerat för en enskild leverans. För en leverans som används i ett arbetsflöde kontrollerar du att mottagarna finns **[!UICONTROL Specified by the inbound event(s)]** på **[!UICONTROL Delivery]** fliken.
+* Du måste använda en PostgreSQL-databas.
 
 ### Konfigurera analysprioriteten {#analysis-priority-}
 
@@ -172,6 +203,8 @@ Du kan visa och redigera godkännandereglerna, deras innehåll, deras körningso
 
 Du kan skapa nya regler och definiera nya typologier från den här noden. Dessa uppgifter är dock reserverade för expertanvändare som kan JavaScript.
 
+Mer information om typologiregler finns i [Om kampanjtypologier](../../campaign/using/about-campaign-typologies.md).
+
 Om du vill redigera den aktuella typologin klickar du på **[!UICONTROL Edit link]** ikonen till höger om **[!UICONTROL Typology]** fältet.
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
@@ -182,7 +215,7 @@ På fliken **[!UICONTROL Rule]** visas en lista med de typologiregler som ska an
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. Mer information finns i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
 
 ## Ändra godkännandeläge {#changing-the-approval-mode}
 
