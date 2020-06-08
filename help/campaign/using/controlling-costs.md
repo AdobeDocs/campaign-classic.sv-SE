@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '2470'
+ht-degree: 0%
 
 ---
 
@@ -217,7 +220,7 @@ Kostnaderna delas in i tre kategorier:
 
 Kostnaderna beräknas via kostnadsstrukturer och debiteras de budgetar som valts ut för de aktuella kampanjerna, leveranserna eller uppgifterna.
 
-En kontroll kan göras av belopp som har avsatts för kampanjer via budgetgodkännandet. Ytterligare kontrollpunktsliknande uppgifter kan skapas i en kampanj för att ställa in andra godkännanden. Se [Typer av uppgifter](../../campaign/using/creating-and-managing-tasks.md#types-of-task).
+En kontroll kan utföras på belopp som har anslagits för kampanjer via budgetgodkännande. Ytterligare kontrollpunktsliknande uppgifter kan skapas i en kampanj för att ställa in andra godkännanden. Se [Typer av uppgifter](../../campaign/using/creating-and-managing-tasks.md#types-of-task).
 
 ### Exempel {#example}
 
@@ -229,73 +232,69 @@ Vi ska skapa en kampanj med:
 
 #### Steg 1 - Skapa budgeten {#step-1---creating-the-budget}
 
-Skapa en ny budget via **[!UICONTROL Campaign management > Budgets]** noden.
+1. Skapa en ny budget via **[!UICONTROL Campaign management > Budgets]** noden.
 
-Definiera en budget på 10 000 euro inom **[!UICONTROL Allocated]** området för **[!UICONTROL Amounts]** avsnittet. Lägg till två utgiftskategorier i fönstrets nedre del:
+1. Definiera en budget på 10 000 euro inom **[!UICONTROL Allocated]** området för **[!UICONTROL Amounts]** avsnittet. Lägg till två utgiftskategorier i fönstrets nedre del:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### Steg 2 - Konfigurera tjänsteleverantören och definiera kostnadsstrukturer {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-Skapa en tjänsteleverantör och en tjänstmall med en kostnadsstruktur från **[!UICONTROL Administration > Campaigns]** noden.
+1. Skapa en tjänsteleverantör och en tjänstmall med en kostnadsstruktur från **[!UICONTROL Administration > Campaigns]** noden. Mer information finns i [Skapa en tjänsteleverantör och dess kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-Mer information finns i [Skapa en tjänsteleverantör och dess kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
-
-* För direktreklam skapar du kostnadskategorier **[!UICONTROL Envelopes]** (typerna 114x229 och 162x229) **[!UICONTROL Postage]** och **[!UICONTROL Print]** (typerna A3 och A4). Skapa sedan följande kostnadsstrukturer:
+   För direktreklam skapar du kostnadskategorier **[!UICONTROL Envelopes]** (typerna 114x229 och 162x229) **[!UICONTROL Postage]** och **[!UICONTROL Print]** (typerna A3 och A4). Skapa sedan följande kostnadsstrukturer:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
-   Lägg till en fast kostnad (i kostnadskategorierna) vars beräkning är fast och vars belopp är tomt (i motsvarande kostnadsstruktur) och som specificeras individuellt för varje leverans.
+1. Lägg till en fast kostnad (i kostnadskategorierna) vars beräkning är fast och vars belopp är tomt (i motsvarande kostnadsstruktur) och som specificeras individuellt för varje leverans.
 
    ![](assets/s_user_cost_mgmt_sample_5.png)
 
-* Skapa följande två kostnadskategorier för uppgifter:
+   Skapa följande två kostnadskategorier för uppgifter:
 
-   1. **[!UICONTROL Room reservation]** (litet rum och stort rum), med en **fast** kostnadsstruktur på 300 och 500 euro:
+   * **[!UICONTROL Room reservation]** (litet rum och stort rum), med en **fast** kostnadsstruktur på 300 och 500 euro:
+   ![](assets/s_user_cost_mgmt_sample_6.png)
 
-      ![](assets/s_user_cost_mgmt_sample_6.png)
-
-   1. **[!UICONTROL Creation]** (**Innehållsmalltyp** ), med en **kostnadsstruktur på 300 euro per dag** :
-
-      ![](assets/s_user_cost_mgmt_sample_7.png)
+   * **[!UICONTROL Creation]** (**Innehållsmalltyp** ), med en **kostnadsstruktur på 300 euro per dag** :
+   ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Steg 3 - Debitera budgeten i kampanjen {#step-3---charging-the-budget-in-the-campaign}
 
-Skapa en kampanj och välj den budget som skapades i steg 1.
+1. Skapa en kampanj och välj den budget som skapades i steg 1.
 
->[!NOTE]
->
->Som standard tillämpas den valda budgeten för programmet på alla kampanjer i programmet.
+   >[!NOTE]
+   >
+   >Som standard tillämpas den valda budgeten för programmet på alla kampanjer i programmet.
 
-![](assets/s_user_cost_mgmt_sample_4.png)
+   ![](assets/s_user_cost_mgmt_sample_4.png)
 
-Ange den uppskattade preliminära kostnaden, med uppdelning:
+1. Ange den uppskattade preliminära kostnaden, med uppdelning:
 
-![](assets/s_user_cost_mgmt_sample_9.png)
+   ![](assets/s_user_cost_mgmt_sample_9.png)
 
-Klicka **[!UICONTROL Ok]** och sedan **[!UICONTROL Save]** för att bekräfta informationen. Den beräknade kostnaden för kampanjen uppdateras sedan med den uppskattade preliminära kostnaden.
+1. Klicka **[!UICONTROL Ok]** och sedan **[!UICONTROL Save]** för att bekräfta informationen. Den beräknade kostnaden för kampanjen uppdateras sedan med den uppskattade preliminära kostnaden.
 
 #### Steg 4 - Skapa direktreklam {#step-4---creating-the-direct-mail-delivery}
 
-Skapa ett arbetsflöde för kampanjen och placera frågeaktiviteterna för att välja målet (varning, mottagarens postadresser måste anges).
+1. Skapa ett arbetsflöde för kampanjen och placera frågeaktiviteterna för att välja målet (varning, mottagarens postadresser måste anges).
 
-Skapa en direktutskick och välj den tjänsteleverantör som skapades i steg 2: kostnadskategorierna visas automatiskt.
+1. Skapa en direktutskick och välj den tjänsteleverantör som skapades i steg 2: kostnadskategorierna visas automatiskt.
 
-Åsidosätt kostnaden för kuverten och lägg till en fast kostnad. Välj även de kategorier som berörs av dessa kostnader.
+1. Åsidosätt kostnaden för kuverten och lägg till en fast kostnad. Välj även de kategorier som berörs av dessa kostnader.
 
-![](assets/s_user_cost_mgmt_sample_3.png)
+   ![](assets/s_user_cost_mgmt_sample_3.png)
 
->[!NOTE]
->
->Om en av kostnadskategorierna inte används genereras inga utgifter.
+   >[!NOTE]
+   >
+   >Om en av kostnadskategorierna inte används genereras inga utgifter.
 
-Starta det arbetsflöde du just skapat för att starta analysen och beräkna kostnaderna.
+1. Starta det arbetsflöde du just skapat för att starta analysen och beräkna kostnaderna.
 
-![](assets/s_user_cost_mgmt_sample_10.png)
+   ![](assets/s_user_cost_mgmt_sample_10.png)
 
-Godkänn budgeten från instrumentpanelen om budgetgodkännande är aktiverat för den här kampanjen. Du kan kontrollera godkännandet av kostnadskategorier.
+1. Godkänn budgeten från instrumentpanelen om budgetgodkännande är aktiverat för den här kampanjen. Du kan kontrollera godkännandet av kostnadskategorier.
 
-![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![](assets/s_user_cost_mgmt_sample_10b.png)
 
 Utgiftsraden för leveransen läggs till på fliken **[!UICONTROL Edit > Budget]** i kampanjen. Redigera den för att visa information om beräkningen.
 
@@ -311,27 +310,27 @@ När du redigerar den beräknade kostnaden kan du kontrollera kostnadsuppdelning
 
 Till den här kampanjen ska vi lägga till de två uppgifter för vilka kostnadsstrukturerna skapades tidigare (se [Steg 2 - Konfigurera tjänsteleverantören och definiera kostnadsstrukturerna](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Det gör du genom att klicka på **[!UICONTROL Add a task]** knappen på kampanjpanelen. Namnge uppgiften och klicka på **[!UICONTROL Save]**.
 
-Uppgiften läggs sedan till i uppgiftslistan. Du måste redigera den för att kunna konfigurera den.
+1. Uppgiften läggs sedan till i uppgiftslistan. Du måste redigera den för att kunna konfigurera den.
 
-Välj tjänsten och motsvarande kostnadskategori på **[!UICONTROL Properties]** fliken:
+1. Välj tjänsten och motsvarande kostnadskategori på **[!UICONTROL Properties]** fliken:
 
-![](assets/s_user_cost_mgmt_sample_14.png)
+   ![](assets/s_user_cost_mgmt_sample_14.png)
 
-Klicka sedan på **[!UICONTROL Expenses and revenue]** ikonen för uppgiften och ange den uppskattade preliminära kostnaden.
+1. Klicka sedan på **[!UICONTROL Expenses and revenue]** ikonen för uppgiften och ange den uppskattade preliminära kostnaden.
 
-![](assets/s_user_cost_mgmt_sample_15.png)
+   ![](assets/s_user_cost_mgmt_sample_15.png)
 
-När uppgiften har sparats anges den beräknade kostnaden med det värde som angetts för den uppskattade preliminära kostnaden.
+   När uppgiften har sparats anges den beräknade kostnaden med det värde som angetts för den uppskattade preliminära kostnaden.
 
-När uppgiften är slutförd (status **[!UICONTROL Finished]** ) uppdateras den beräknade kostnaden automatiskt med kostnaden för det stora rummet enligt vad som anges i dess kostnadsstruktur. Denna kostnad visas också i denna kategori i uppdelningen.
+   När uppgiften är slutförd (status **[!UICONTROL Finished]** ) uppdateras den beräknade kostnaden automatiskt med kostnaden för det stora rummet enligt vad som anges i dess kostnadsstruktur. Denna kostnad visas också i denna kategori i uppdelningen.
 
-Skapa sedan en andra uppgift enligt samma förfarande, schemalagd över fem dagar och relaterad till den kostnadsstruktur som skapades tidigare.
+1. Skapa sedan en andra uppgift enligt samma förfarande, schemalagd över fem dagar och relaterad till den kostnadsstruktur som skapades tidigare.
 
-![](assets/s_user_cost_mgmt_sample_16.png)
+   ![](assets/s_user_cost_mgmt_sample_16.png)
 
-När uppgiften är slutförd specificeras den beräknade kostnaden med värdet från den relaterade kostnadsstrukturen, dvs. 1500 euro i vårt exempel (5 dagar x 300 euro):
+   När uppgiften är slutförd specificeras den beräknade kostnaden med värdet från den relaterade kostnadsstrukturen, dvs. 1500 euro i vårt exempel (5 dagar x 300 euro):
 
-![](assets/s_user_cost_mgmt_sample_17.png)
+   ![](assets/s_user_cost_mgmt_sample_17.png)
 
 #### Steg 6 - Uppdatera kampanjbudgetens status {#step-6---update-the-campaign-budget-status}
 
