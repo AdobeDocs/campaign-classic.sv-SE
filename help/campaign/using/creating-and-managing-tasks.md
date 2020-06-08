@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '3737'
+ht-degree: 0%
 
 ---
 
@@ -274,10 +277,10 @@ När du skapar uppgifter via en kampanj kan du skapa specifika uppgifter. Typen 
 
 Följande uppgifter kan schemaläggas:
 
-* **[!UICONTROL Control task]**, se [Kontrolluppgifter](#control-tasks),
-* **[!UICONTROL Marketing resource creation task]**, se [Grupperingsåtgärd](#grouping-task),
-* **[!UICONTROL Grouping task]**, se [Grupperingsåtgärd](#grouping-task),
-* **[!UICONTROL Notification task]**, se [Meddelandeuppgift](#notification-task).
+* [Kontrolluppgifter](#control-tasks),
+* [Grupperingsuppgift](#grouping-task),
+* [Grupperingsuppgift](#grouping-task),
+* [Aviseringsuppgift](#notification-task).
 
 >[!NOTE]
 >
@@ -429,7 +432,7 @@ Låt oss skjuta upp den överordnade uppgiften: upphör nu den 11 oktober klocka
 
 Uppgiftsstatusvärden kan visas på aktivitetskartan. Körningsstatusen för en aktivitet uppdateras automatiskt enligt operatoråtgärder.
 
-En uppgift kan vara: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[!UICONTROL Finished]**, **[!UICONTROL Canceled]**, **[!UICONTROL Pending approval]** eller **[!UICONTROL Rejected]**.
+En uppgift kan vara: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[!UICONTROL Finished]**, **[!UICONTROL Canceled]** eller **[!UICONTROL Pending approval]** **[!UICONTROL Rejected]**.
 
 * När en uppgift skapas är det **[!UICONTROL Scheduled]** om startdatumet infaller i framtiden. Den här statusen behålls tills dess startdatum nås.
 * När aktiviteten har startats blir den **[!UICONTROL In progress]**. När den person som ansvarar för uppgiften stänger den ändras den till **[!UICONTROL Finished]**.
@@ -485,7 +488,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i det meddelande som skickades när aktiviteten startades, konsolen eller gränssnittet.
+1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i e-postmeddelandet som skickades när aktiviteten startades, konsolen eller gränssnittet.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
