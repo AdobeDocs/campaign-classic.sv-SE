@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -144,10 +144,6 @@ En periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körni
 På den här fliken anger du planerade körningsdatum för kampanjer som är baserade på den här mallen.
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
-
-Du kan använda guiden Skapa schema för att fylla i alla körningsdatum automatiskt. Det gör du genom att klicka på **[!UICONTROL Complete the execution schedule...]** länken ovanför tabellen.
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
 Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. For more on this, refer to [this section](../../workflow/using/architecture.md).
 
