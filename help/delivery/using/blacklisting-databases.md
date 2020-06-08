@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
 * **SURBL**
 
-   Se [https://www.surbl.org/](https://www.surbl.org/)
+   Se [http://www.surbl.org/](http://www.surbl.org/)
 
    SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Ni bör informera leveranssätten och Adobe Campaign-supporten omedelbart.
 
