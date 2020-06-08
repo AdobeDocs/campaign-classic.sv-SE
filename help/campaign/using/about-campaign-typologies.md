@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 0%
 
 ---
 
@@ -32,10 +35,10 @@ Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera
 
 Med Adobe Campaign kan ni utforma och tillämpa fyra typer av typologiregler:
 
-1. **Filtreringsregler** som gör att du kan utesluta delar av målet baserat på villkor. Mer information finns i [Filtreringsregler](../../campaign/using/filtering-rules.md).
-1. **Tryckregler** som gör att ni kan kontrollera reklamtrötthet. Mer information finns i [Tryckregler](../../campaign/using/pressure-rules.md).
-1. **Kapacitetsregler** som gör att du kan begränsa lasterna för att garantera optimala bearbetningsförhållanden. Mer information finns i [Kontrollera kapacitet](../../campaign/using/consistency-rules.md#controlling-capacity).
-1. **Styr** regler som gör att du kan kontrollera giltigheten för meddelanden innan de skickas. Mer information finns i [Kontrollregler](../../campaign/using/control-rules.md).
+* **Filtreringsregler** som gör att du kan utesluta delar av målet baserat på villkor. Mer information finns i [Filtreringsregler](../../campaign/using/filtering-rules.md).
+* **Tryckregler** som gör att ni kan kontrollera reklamtrötthet. Mer information finns i [Tryckregler](../../campaign/using/pressure-rules.md).
+* **Kapacitetsregler** som gör att du kan begränsa lasterna för att garantera optimala bearbetningsförhållanden. Mer information finns i [Kontrollera kapacitet](../../campaign/using/consistency-rules.md#controlling-capacity).
+* **Styr** regler som gör att du kan kontrollera giltigheten för meddelanden innan de skickas. Mer information finns i [Kontrollregler](../../campaign/using/control-rules.md).
 
 När typologireglerna har skapats grupperas de i kampanjtypologier som refereras i leveranser. Se [Använda typologier](#applying-typologies).
 
@@ -55,7 +58,7 @@ Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
 
    Typologiregler finns i **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** noden.
 
-   Olika regler som är tillgängliga i Campaign beskrivs i följande avsnitt: regler [för](../../campaign/using/pressure-rules.md)försäljningstryck, [kapacitetsregler](../../campaign/using/consistency-rules.md#controlling-capacity), [kontrollregler](../../campaign/using/control-rules.md) och [filtreringsregler](../../campaign/using/filtering-rules.md).
+   Olika regler som är tillgängliga i Campaign beskrivs i följande avsnitt: [regler](../../campaign/using/pressure-rules.md)för försäljningstryck, [kapacitetsregler](../../campaign/using/consistency-rules.md#controlling-capacity), [kontrollregler](../../campaign/using/control-rules.md) och [filtreringsregler](../../campaign/using/filtering-rules.md).
 
 1. Skapa en typologi och referera till reglerna som du skapade i den.
 
