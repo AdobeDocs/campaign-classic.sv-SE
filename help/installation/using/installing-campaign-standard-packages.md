@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 0%
 
 ---
 
@@ -145,13 +148,7 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Skickar leveranser via telefonkanalen med Adobe Campaign.<br /> </td> 
    <td> Alla<br /> </td> 
    <td> Valfritt</td> 
-  </tr> 
-  <tr> 
-   <td> Faxkanal<br /> </td> 
-   <td> Skickar leveranser via faxkanalen med Adobe Campaign.<br /> </td> 
-   <td> Alla<br /> </td> 
-   <td> Valfritt</td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> Mobilappskanal<br /> </td> 
    <td> Använder Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. <br /> </td> 
