@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 1%
 
 ---
 
@@ -96,10 +99,6 @@ Följande tabell ger tillgång till tillgänglig integreringsdokumentation för 
   <tr> 
    <td> <strong>Adobe Analytics - Data Connectors</strong><br /> </td> 
    <td> <strong>Med datakopplingar</strong> (som tidigare kallades Adobe Genesis) kan Adobe Campaign och Adobe Analytics interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer från Adobe Campaign till Adobe Analytics - Data Connector.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Läs mer</a> om Campaign - Integrering med Data Connectors.</p><br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>Adobe Campaign Standard</strong> (Prime offer)<br /> </td> 
-   <td> Gör att ni kan replikera data till <strong>Campaign Standard</strong>, och kombinera det bästa av båda programmen. Campaign Classic v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign Classic v7 gör att Campaign Standard kan utnyttja omfattande data i en användarvänlig miljö.<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Läs mer</a> om Adobe Campaign Classic - Adobe Campaign Standard-integrering.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
