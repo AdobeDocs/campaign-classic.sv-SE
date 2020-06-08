@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ De mobil-, meddelande- och webbpostklienter som är tillgängliga för **inkorgs
 >
 >Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personaliseringen kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och [korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Aktivera inkorgsåtergivning{#activating-inbox-rendering}
+## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
 
 För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobes tekniska support och konsulter. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
 
@@ -47,7 +50,7 @@ För lokala installationer följer du stegen nedan för att konfigurera inkorgs�
 1. Ange externa kontoparametrar enligt följande:
    * **[!UICONTROL Label]**: Information om leveransserver
    * **[!UICONTROL Internal name]**: deliverabilityInstance
-   * **[!UICONTROL Type]**:HTTP
+   * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
    * **[!UICONTROL Encryption]**: Ingen
    * Markera **[!UICONTROL Enabled]** alternativet.
@@ -98,12 +101,6 @@ Antalet återstående tillgängliga token visas i **[!UICONTROL General summary]
 
 Återgivningsfunktionen i Inkorgen används vanligtvis för att testa HTML-ramverket i ett nyligen utformat e-postmeddelande. Varje återgivning kräver ungefär 70 token (beroende på hur många miljöer som testas i allmänhet). I vissa fall kan du dock behöva flera rapporter om inkorgsåtergivning för att kunna testa leveransen. Det kan därför ta fler tokens att slutföra flera kontroller.
 
->[!NOTE]
->
->Om du är en Litmus-klient kan du använda ditt eget Litmus-konto för att etablera och använda Inkorgsåtergivning i Adobe Campaign. Kontakta er kontoansvarige på Adobe om du vill veta mer.
->
->Observera att om du ändrar din Litmus-inloggningsinformation kan det orsaka autentiseringsproblem i Adobe Campaign.
-
 ## Få åtkomst till rapporten för inkorgsåtergivning {#accessing-the-inbox-rendering-report}
 
 När du har skapat e-postleveransen och definierat innehållet samt målpopulationen följer du stegen nedan.
@@ -115,7 +112,7 @@ Mer information om hur du skapar, utformar och anger mål för en leverans finns
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. For more on sending proofs, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 1. När du har skickat korrekturet visas det i leveranslistan. Dubbelklicka på den.
 
