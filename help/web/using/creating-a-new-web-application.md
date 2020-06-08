@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +31,10 @@ Gå till fliken **Kampanjer** och välj **[!UICONTROL Web Applications]** menyn.
 
 ![](assets/webapp_create_from_campaign.png)
 
+>[!NOTE]
+>
+>Skydda alltid de sidor som kan innehålla personlig information. Se checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)säkerhet och sekretess.
+
 Den här mallen avgör typen av webbprogram. Du kan skapa:
 
 1. Webbformulär (+ ändring av profil)
@@ -36,15 +43,15 @@ Den här mallen avgör typen av webbprogram. Du kan skapa:
 
 1. Webbprogram
 
-   Med Adobe Campaign kan ni skapa webbapplikationer som ska visas på t.ex. en webbplattform eller ett extranät. På så sätt kan ni redigera data och registrera information i Adobe Campaign. I det här fallet kan du begränsa deras åtkomst till autentiserade användare (via åtkomstkontroll) och konfigurera förinläsning av data baserat på olika kriterier. Mer information finns i [det här avsnittet](../../web/using/about-web-applications.md).
+   Med Adobe Campaign kan ni skapa webbapplikationer som ska visas på t.ex. en webbplattform eller ett extranät. På så sätt kan ni redigera data och registrera information i Adobe Campaign. I det här fallet kan du begränsa deras åtkomst till autentiserade användare (via åtkomstkontroll) och konfigurera förinläsning av data baserat på olika kriterier. For more on this, refer to [this section](../../web/using/about-web-applications.md).
 
 1. Landningssidor
 
-   En landningssida är en HTML-sida vars innehåll är tillgängligt på en webbplats och som gör det möjligt för användare att ange information som ska lagras i Adobe Campaigns databasprofil. Innehållet på den här typen av sidor skapas vanligtvis av en specialiserad webbbyrå innan det importeras till Adobe Campaign för publicering, hantering och uppföljning. Mer information finns på [den här sidan](../../web/using/creating-a-landing-page.md).
+   En landningssida är en HTML-sida vars innehåll är tillgängligt på en webbplats och som gör det möjligt för användare att ange information som ska lagras i Adobe Campaigns databasprofil. Innehållet på den här typen av sidor skapas vanligtvis av en specialiserad webbbyrå innan det importeras till Adobe Campaign för publicering, hantering och uppföljning. For more on this, refer to [this page](../../web/using/creating-a-landing-page.md).
 
 1. Undersökningar
 
-   Med Adobe Campaign kan ni, via alternativet **Survey Manager** , utforma och hantera onlineundersökningar och bearbeta deras resultat: skapa dynamiska fält, hantera poäng, exportera svar och dedikerade rapporter. Mer information finns i [det här avsnittet](../../web/using/about-surveys.md).
+   Med Adobe Campaign kan ni, via alternativet **Survey Manager** , utforma och hantera onlineundersökningar och bearbeta deras resultat: skapa dynamiska fält, hantera poäng, exportera svar och dedikerade rapporter. For more on this, refer to [this section](../../web/using/about-surveys.md).
 
    >[!CAUTION]
    >
@@ -52,10 +59,10 @@ Den här mallen avgör typen av webbprogram. Du kan skapa:
 
 1. Facebook-program
 
-   Tack vare alternativet för **social marknadsföring** kan ni med Adobe Campaign publicera personaliserat innehåll i en Facebook-applikation. Mer information finns i [det här avsnittet](../../social/using/about-social-marketing.md).
+   Tack vare alternativet för **social marknadsföring** kan ni med Adobe Campaign publicera personaliserat innehåll i en Facebook-applikation. For more on this, refer to [this section](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
    >**Social marknadsföring** är en valfri Adobe Campaign-modul. Kontrollera licensavtalet.
 
-Sidkonfigurationsläget och de tillgängliga konfigurationerna kan vara identiska för flera webbprogramstyper. Mer information finns i [det här avsnittet](../../web/using/about-web-forms.md).
+Sidkonfigurationsläget och de tillgängliga konfigurationerna kan vara identiska för flera webbprogramstyper. For more on this, refer to [this section](../../web/using/about-web-forms.md).
