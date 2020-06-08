@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 0%
 
 ---
 
@@ -87,7 +90,7 @@ Det finns fyra typer av webbgränssnitt:
 
 ### Standardvärden {#default-values}
 
-Välj det **[!UICONTROL Default values]** som ska fyllas i av lokala enheter. Till exempel:
+Välj det **[!UICONTROL Default values]** som ska fyllas i av lokala enheter. Exempel:
 
 * Kontakt- och extraktionsdatum.
 * målegenskaper (ålderssegment osv.).
@@ -251,9 +254,9 @@ Så här beställer du en kampanj:
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
-   Slutför de tillgängliga parametrarna och godkänn ordern.
+1. Slutför de tillgängliga parametrarna och godkänn ordern.
 
-   Ett meddelande skickas till chefen för den organisationsenhet som den lokala enheten tillhör för att godkänna ordern.
+1. Ett meddelande skickas till chefen för den organisationsenhet som den lokala enheten tillhör för att godkänna ordern.
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
