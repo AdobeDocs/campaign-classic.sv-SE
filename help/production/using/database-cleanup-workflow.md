@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+workflow-type: tm+mt
+source-wordcount: '2908'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Databasrensningen är konfigurerad på två nivåer: i arbetsflödets schemaläg
 
 >[!NOTE]
 >
->Mer information om schemaläggaren finns i [det här avsnittet](../../workflow/using/scheduler.md).
+>For more on the scheduler, refer to [this section](../../workflow/using/scheduler.md).
 
 Som standard är arbetsflödet konfigurerat så att det startar varje dag kl. 4.00. **[!UICONTROL Database cleanup]** Med schemaläggaren kan du ändra arbetsflödets utlösande frekvens. Följande frekvenser är tillgängliga:
 
@@ -78,7 +81,7 @@ Fönstrets fält **[!UICONTROL Purge of data]** sammanfaller med följande alter
    >
    >Fälten **[!UICONTROL Events]** och **[!UICONTROL Archived events]** är bara tillgängliga om **meddelandecentermodulen** är installerad.
 
-* Granskningsspår: **XTKCleanup_AuditTrailPurgeDelay** (se [Rensa granskningsspår](#cleanup-of-audit-trail))
+* Granskningsspår: **XtkCleanup_AuditTrailPurgeDelay** (se [Rensa granskningsspår](#cleanup-of-audit-trail))
 
 Alla åtgärder som utförs av **[!UICONTROL Database cleanup]** arbetsflödet beskrivs i följande avsnitt.
 
@@ -324,11 +327,11 @@ I det här steget kan du ta bort poster som inte bearbetades av alla data under 
 
 ### Rensa arbetsflödesinstanser {#cleanup-of-workflow-instances}
 
-Den här aktiviteten rensar varje arbetsflödesinstans med dess identifierare (**lWorkflowId**) och historik (**lHistory**). Den tar bort inaktiva tabeller genom att köra arbetstabellrensningsåtgärden igen.
+Den här aktiviteten rensar varje arbetsflödesinstans med dess identifierare (**lWorkflowId**) och historik (**lHistory**). Den tar bort inaktiva tabeller genom att köra arbetstabellrensningsåtgärden igen. Rensningen tar också bort alla överblivna arbetstabeller (wkf% och wkfhisto%) i borttagna arbetsflöden.
 
 >[!NOTE]
 >
->Historikens tömningsfrekvens anges för varje arbetsflöde i fältet **Historik i dagar** (standardvärde 30 dagar). Det här fältet finns på fliken **Körning** i arbetsflödesegenskaperna. Mer information finns i [det här avsnittet](../../workflow/using/workflow-properties.md#execution).
+>Historikens tömningsfrekvens anges för varje arbetsflöde i fältet **Historik i dagar** (standardvärde 30 dagar). Det här fältet finns på fliken **Körning** i arbetsflödesegenskaperna. For more on this, refer to [this section](../../workflow/using/workflow-properties.md#execution).
 
 1. Följande fråga används för att återställa listan med arbetsflöden som ska tas bort:
 
@@ -404,7 +407,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 Den här uppgiften tar bort inaktuella poster från besökstabellen med massborttagning. Föråldrade poster är poster för vilka den senaste ändringen är tidigare än den bevarandeperiod som definierats i distributionsguiden (se [distributionsguiden](#deployment-wizard)). Följande fråga används:
 
 ```
-DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < $(tsDate) LIMIT 5000)
+DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
 där **$(tsDate)** är det aktuella serverdatumet, från vilket vi subtraherar den period som definierats för alternativet **NmsCleanup_VisitorPurgeDelay** .
@@ -472,7 +475,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
 
    där **$(tableName)** är namnet på varje tabell i schemalistan, och **$(option)** är det datum som definieras för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [distributionsguiden](#deployment-wizard)).
 
-1. Arbetsflödet kontrollerar slutligen om **NmsProviderMsgId** -tabellen finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
+1. Arbetsflödet kontrollerar slutligen om **tabellen NmsProviderMsgId** finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
 
    ```
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
@@ -484,7 +487,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
 
 Den här aktiviteten rensar **tabellen NmsEmailErrorStat** . Huvudprogrammet (**coalesceErrors**) definierar två datum:
 
-* **Startdatum**: datum för nästa process som matchar alternativet **NmsLastErrorStatusCoalesce** eller det senaste datumet i tabellen.
+* **Startdatum**: datum för nästa process som matchar alternativet **NmsLastErrorStatCoalesce** eller det senaste datumet i tabellen.
 * **Slutdatum**: aktuellt serverdatum.
 
 Om startdatumet är senare än eller lika med slutdatumet utförs ingen process. I det här fallet visas **meddelandet coalesceUpToDate** .
@@ -634,4 +637,4 @@ Den här aktiviteten rensar de händelser som tas emot och lagras på körningsi
 
 ### Rensningsreaktioner {#cleansing-reactions}
 
-Den här aktiviteten rensar de reaktioner ( **NmsRemaMatchRcp**) i vilka hypoteserna har tagits bort.
+Den här aktiviteten rensar de reaktioner ( **NmsRemaMatchRcp**) där själva hypoteserna har tagits bort.
