@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ Välj databasmotorn bland dem i listrutan.
 
 Databaser som stöds visas i [avsnittets kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
 
-Identifiera servern och välj vilken typ av åtgärd som ska utföras. I det här fallet, **[!UICONTROL Create or recycle a database]**..
+Identifiera servern och välj vilken typ av åtgärd som ska utföras. In this case, **[!UICONTROL Create or recycle a database]**.
 
 ![](assets/s_ncs_install_db_oracle_creation01.png)
 
@@ -66,7 +69,7 @@ Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server** -motor måste du definiera:
 
-   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\ `<instance>`** (instansläge),
+   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\`<instance>`**(instansläge),
    1. den autentiseringsmetod som används för att komma åt Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** eller **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -179,7 +182,7 @@ Välj databasmotorn i listrutan.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Identifiera servern och välj vilken typ av åtgärd du vill utföra. I det här fallet, **[!UICONTROL Use an existing database]**..
+Identifiera servern och välj vilken typ av åtgärd du vill utföra. In this case, **[!UICONTROL Use an existing database]**.
 
 ![](assets/s_ncs_install_db_oracle_exists_01.png)
 
@@ -207,6 +210,7 @@ Du måste definiera följande inställningar:
 
    >[!NOTE]
    >
+   >Kontrollera att både schemanamnet och användarnamnet matchar. Rekommenderat sätt att skapa databaser är via kampanjkonsolklienten.
    >För en Oracle-databas behöver du inte ange kontonamnet.
 
 * Ange om databasen ska vara Unicode eller inte.
