@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,13 @@ ht-degree: 0%
 
 ## Om e-postbilagor {#about-email-attachments}
 
-Du kan bifoga en eller flera filer till en e-postleverans. Det finns två möjliga fall:
+Du kan bifoga en eller flera filer till en e-postleverans.
+
+>[!NOTE]
+>
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+
+Det finns två möjliga fall:
 
 * Välj en fil och bifoga den till leveransen som den är.
 * Anpassa innehållet i bilagan för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras, om du har alternativet **Variabel digital utskrift** .
@@ -92,7 +98,7 @@ Om den bifogade filen är en lokal fil väljer du alternativet: **[!UICONTROL Fi
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   Filen är sedan tillgänglig på servern för att bifogas till de olika leveranser som skapas från den här mallen.
+Filen är sedan tillgänglig på servern för att bifogas till de olika leveranser som skapas från den här mallen.
 
 ### Bifoga ett personligt meddelande {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ Använd följande konfigurationssteg för den här typen av bifogad fil:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+
 ### Bifoga en beräknad fil {#attach-a-calculated-file}
 
 Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. Välj alternativet **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
@@ -131,7 +141,7 @@ Du kan beräkna namnet på den bifogade filen under färdigställandet av levera
 1. Ange den etikett som du vill använda för den bifogade filen.
 1. Ange filens åtkomstsökväg och dess exakta namn i definitionsfönstret.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Filen måste finnas på servern.
 
@@ -156,7 +166,7 @@ När du markerar den bifogade filen kan du välja alternativet **[!UICONTROL The
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Filen måste finnas på servern.
 
