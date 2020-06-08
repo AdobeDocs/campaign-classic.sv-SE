@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign poängsätta e-postmeddelanden och avgöra om ett meddelande troligtvis inte är önskvärt innan det lanseras. För att göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler krävs för att fungera.
+SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign poängsätta e-postmeddelanden och avgöra om ett meddelande troligtvis kommer att anses oönskat innan leverans startas. För att göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler krävs för att fungera.
 
 Distributionen och integreringen av SpamAssassin enligt beskrivningen i detta kapitel baseras på standardprogramvaruinstallation, liksom filtrerings- och poängregler, som tillhandahålls av SpamAssassin utan ändringar eller optimeringar. Poängattribuering och meddelandekvalificering baseras enbart på konfigurationen av SpamAssets-alternativen och på filtreringsregler. Nätverksadministratörer ansvarar för att anpassa dem till företagets behov.
 
@@ -58,7 +58,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 1. Anslut till [extranätportalen](http://support.neolane.net) med dina användaruppgifter.
 1. Gå till **Hämtningscenter** och bläddra på sidan för att hitta **verktygsavsnittet** .
-1. Ladda ned **filen Spam Assassin (Windows-installation) (1.0)** .
+1. Ladda ned filen **Neolane Spam Assassin (Windows-installation) (2.0)** (neolane_spamassassin.2.0.zip).
 1. Kopiera den här filen till Adobe Campaign-servern och packa upp den.
 
    >[!NOTE]
