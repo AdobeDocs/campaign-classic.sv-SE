@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Innan du börjar designa e-postmeddelanden bör du lära dig de koncept och bäs
 
 Leveranskonfiguration och parametrar kan sparas i en leveransmall för återanvändning.
 
-Klicka här om du vill veta mer.
+[Klicka här om du vill veta mer](../../delivery/using/about-templates.md).
 
 ## Kan jag enkelt importera en befintlig HTML för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
