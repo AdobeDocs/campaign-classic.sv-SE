@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 0%
 
 ---
 
 
 # Marknadsföringsresurser{#marketing-resources-mrm}
 
-Arbetsflödet som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)** . Mer information om den här modulen finns i det här [avsnittet](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)** . Mer information om den här modulen finns i det här [avsnittet](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -32,18 +35,18 @@ Arbetsflödet som beskrivs nedan installeras som standard med modulen **Marknads
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Marknadsresursmeddelanden</span><br /> </td> 
-   <td> <span class="uicontrol">assetMgt</span><br /> </td> 
+   <td> <span class="uicontrol">Meddelanden om marknadsföringsresurser</span> <br /> </td> 
+   <td> <span class="uicontrol">assetMgt</span> <br /> </td> 
    <td> Det här arbetsflödet hanterar meddelanden som är kopplade till godkännande och publicering av marknadsföringsresurser. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Aktivitetsmeddelande</span><br /> </td> 
-   <td> <span class="uicontrol">taskMgt</span><br /> </td> 
+   <td> <span class="uicontrol">Aktivitetsmeddelande</span> <br /> </td> 
+   <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
    <td> Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Diskussionsforumprocesser</span><br /> </td> 
-   <td> <span class="uicontrol">newsgroupMgt</span><br /> </td> 
+   <td> <span class="uicontrol">Diskussionsforumprocesser</span> <br /> </td> 
+   <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
    <td> Det här arbetsflödet hanterar leveransen av meddelanden från diskussionsforum. Den aktiveras när en godkännandesignal tas emot.<br /> </td> 
   </tr> 
  </tbody> 
