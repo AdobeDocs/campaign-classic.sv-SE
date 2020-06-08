@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
+source-git-commit: 39b8f4af256c23744a2b6e5978964e4b3207aafb
 workflow-type: tm+mt
-source-wordcount: '6477'
+source-wordcount: '6666'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,38 @@ ht-degree: 0%
 På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per månad och Campaign-versionen.
 
 Du kan även läsa versionsinformationen [för](../../rn/using/latest-release.md) Adobe Campaign Classic för mer information.
+
+## 20.2 - 08/06/2020{#release-20-2}
+
+**Nya funktioner i releasen**
+
+Stöd för uttryckssymboler - [läs mer](../../delivery/using/customizing-emoticon-list.md)
+
+Azure Synapse FDA Connector - [Läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+
+Sekretesslagar för Thailand och Brasilien - [Läs mer](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+**Andra dokumentationsuppdateringar som följer med releasen**
+
+Det nya alternativet för att avpublicera en transaktionsmeddelandemall beskrivs i[det här avsnittet](../../message-center/using/template-unpublication.md).
+
+De nya alternativen som gör det möjligt att ange begränsningar när du skickar e-postmeddelanden som innehåller bilder som hämtats från en personlig URL och bilagor har lagts till i listan med alternativ för Campaign Classic. [Läs mer](../../installation/using/configuring-campaign-options.md#delivery)
+
+Det nya alternativet **Förbered leveransdelarna i databasen** beskrivs i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis).
+
+Valideringen av leveransavsnittet har klargjorts och uppdaterats. [Läs mer](../../delivery/using/steps-validating-the-delivery.md)
+
+Parametrarna för den nya signeringsfunktionen för spårningslänk har lagts till i avsnittet [Serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md) .
+
+Kompatibilitetsmatrisen har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+
+Rensningsarbetsflödesavsnittet har uppdaterats. [Läs mer](../../production/using/database-cleanup-workflow.md)
+
+Kampanjnätverkets slutpunkter har flyttats till det här [avsnittet](../../installation/using/campaign-network-endpoints.md).
+
+Installationsavsnittet för Spam Assassin har uppdaterats med det nya installationsfilnamnet. [Läs mer](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+
+Avsnittet om dupliceringsmiljöer har uppdaterats. [Läs mer](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 
 ## Maj 2020 {#may-2020}
@@ -174,7 +206,7 @@ Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i
 
 De nya alternativen NmsOperation_DeliveryPreparationWindow och WdbcKillSessionPolicy har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Nu finns ett nytt dokument som beskriver grunderna i Adobe Campaign Classic-datamodellen. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Nu finns ett nytt dokument som beskriver grunderna i datamodellen i Adobe Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 Det nya alternativet **Maximal körtidsåtgång** för personalisering i leveransegenskaperna beskrivs i det här [avsnittet](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
