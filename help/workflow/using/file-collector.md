@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +77,7 @@ På aktivitetens första flik kan du välja källkatalogen och vid behov filtrer
 
 1. **Historik**
 
-   Se **[!UICONTROL File historization]** steget här: Ladda ned [webben](../../workflow/using/web-download.md).
+   Se **[!UICONTROL File historization]** steget här: [Webbnedladdning](../../workflow/using/web-download.md).
 
 Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättning filer sekventiellt använder du alternativet och skapar en slinga **[!UICONTROL Stop as soon as a file has been processed]** . I så fall bearbetas filerna i alfabetisk ordning. Med det här **[!UICONTROL Process file nonexistence]** alternativet kan du slutföra iterationen.
 
@@ -82,6 +85,4 @@ Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättnin
 
 ## Utdataparametrar {#output-parameters}
 
-* filnamn
-
-Fullständigt filnamn. Det här är filnamnet när det har flyttats till historikkatalogen. Sökvägen är därför annorlunda, men namnet är också annorlunda om det redan finns en fil med samma namn i katalogen. Utbyggnaden behålls.
+* filnamn: Fullständigt filnamn. Det här är filnamnet när det har flyttats till historikkatalogen. Sökvägen är därför annorlunda, men namnet är också annorlunda om det redan finns en fil med samma namn i katalogen. Utbyggnaden behålls.
