@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+workflow-type: tm+mt
+source-wordcount: '7852'
+ht-degree: 2%
 
 ---
 
@@ -1534,6 +1537,12 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
+   <td> signEmailLinks<br /> </td> 
+   <td> Aktivera signaturmekanismen. Detta förbättrar säkerheten vid spårning av länkar i e-post.<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> true<br /> </td> 
+  </tr>
+  <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Adress till servern för leveransstatistik, angiven som &lt;dns eller ip&gt; [: 
      &lt;port&gt; ]. Se <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
@@ -2544,6 +2553,12 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
    <td> false<br /> </td> 
   </tr> 
   <tr> 
+   <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
+   <td> Inaktivera felformaterade URL:er som genererats från tidigare versioner.<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> false<br /> </td> 
+  </tr> 
+  <tr> 
    <td> conversionPeriodSec<br /> </td> 
    <td> Konsolideringsperiod<br /> </td> 
    <td> Lång<br /> </td> 
@@ -2596,6 +2611,18 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
    <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceAPIKey<br /> </td> 
+   <td> API-nyckel för slutpunktsintegrering för tjänsten i Phishbowl. Detta skyddar omdirigering av felformaterade URL:er som genereras från äldre byggen. <br /> </td> 
+   <td> Lång<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceEndpoint<br /> </td> 
+   <td> Slutpunkt för integreringen av slutpunkten för tjänsten Phishbowl. Detta skyddar omdirigering av felformaterade URL:er som genereras från äldre byggen.<br /> </td> 
+   <td> Lång<br /> </td> 
+   <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
