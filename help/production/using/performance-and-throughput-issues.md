@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 * IP-anseende: Om IP-anseendet inte är tillräckligt bra kommer resultatet att påverkas. I modulen **Leveransövervakning** finns olika verktyg för att spåra plattformens leveransprestanda. Se den här [sidan](../../delivery/using/monitoring-deliverability.md).
 * IP-uppvärmning: IP-uppvärmningen utförs av leveransteamet. Detta innebär att antalet e-postmeddelanden som skickas via nya IP-adresser gradvis ökar under några veckor.
 * Inställningar för IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa e-postmeddelanden helt (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska flödet (ett litet antal IP-adresser i tillhörigheten). Se den här [sidan](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-poststorlek: e-poststorleken spelar en viktig roll när det gäller genomströmning. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som överförts per timme i rapporten [Leveransflöde](../../reporting/using/delivery-reports.md#delivery-throughput) .
+* E-poststorlek: e-poststorleken spelar en viktig roll när det gäller genomströmning. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som överförts per timme i rapporten [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput) .
 * Stort antal ogiltiga mottagare: om det finns ett stort antal ogiltiga mottagare kan det påverka dataflödet. MTA fortsätter att försöka skicka e-post till ogiltiga mottagare. Se till att din databas underhålls väl.
 * Mängd personalisering: Om en leverans fortsätter att vara&quot;personalisering pågår&quot;, kontrollerar du det JavaScript som används i personaliseringsblock.
 
