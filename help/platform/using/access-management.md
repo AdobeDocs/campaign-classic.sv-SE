@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2912'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ En fullständig procedur för att skapa en operator beskrivs på [den här sidan
 
 Mer information om Adobe Campaign och LDAP-integrering finns på [den här sidan](../../installation/using/connecting-through-ldap.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Operatorer måste länkas till en säkerhetszon för att kunna logga in på en instans. Mer information om säkerhetszoner i Adobe Campaign finns på [den här sidan](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
@@ -149,7 +149,7 @@ Med hjälp av **[!UICONTROL Edit the access parameters...]** länken kommer du �
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Detta är en mycket noggrann restriktion som måste användas med försiktighet. En operator som är inloggad med den här typen av rättigheter kan BARA se innehållet i den angivna mappen och har inte åtkomst till någon annan nod i trädet via Utforskaren. Beroende på vilka funktioner han har tillgång till (t.ex.: arbetsflöden) kan han visa data som vanligtvis lagras i noder som han inte kan se.
 
@@ -179,7 +179,7 @@ Du kan komma åt:
 
 Adobe Campaign använder tekniska operatorer med profiler som konfigurerats som standard: Administratör (&#39;admin&#39;), fakturering (&#39;billing&#39;), övervakning, webbprogramagent (&#39;webapp&#39;) osv. Vissa av dessa beror på vilka program och alternativ som är installerade på plattformen: Operatorer av typen central och lokal är till exempel bara synliga om alternativet Distribuerad marknadsföring är installerat.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dessa tekniska operatorer meddelas som standard när informationsmeddelanden returneras av plattformen. Vi rekommenderar att du skickar ett e-postmeddelande till dem.
 >
@@ -308,7 +308,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL EDIT FOLDERS]**: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
 
-* **[!UICONTROL EXPORT]**: Användare kan exportera data från sina Adobe Campaign-instanser till en fil på servern eller den lokala datorn med hjälp av **[!UICONTROL EXPORT]** arbetsflödesaktiviteten.
+* **[!UICONTROL EXPORT]**: Användare kan exportera data från sina Adobe Campaign-instanser till en fil på servern eller den lokala datorn med hjälp av arbetsflödesaktiviteten **[!UICONTROL EXPORT]** .
 
 * **[!UICONTROL FILES ACCESS]**: Rätt att läsa och skriva för filer via ett skript som kan skrivas i arbetsflödesaktiviteten för att läsa och skriva filer på en server. **[!UICONTROL JavaScript]**
 
@@ -396,7 +396,7 @@ Om **[!UICONTROL Security]** alternativet är markerat på fliken **[!UICONTROL 
 
 ## Mappar och vyer {#folders-and-views}
 
-### Om mappar och vyer {#about-folders-and-views}
+### Om mappar {#about-folders}
 
 Mappar är noder i Adobe Campaign-trädet. De här noderna skapas genom att högerklicka på trädet via **[!UICONTROL Add new folder]** menyn. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
 
@@ -404,17 +404,23 @@ Mappar är noder i Adobe Campaign-trädet. De här noderna skapas genom att hög
 
 Du kan ge dessa mappar behörigheter som i alla andra mappar i trädet. Se [Mappåtkomsthantering](#folder-access-management).
 
+### Om vyer {#about-views}
+
 Dessutom kan du skapa vyer för att begränsa tillgången till data och ordna innehållet i trädet så att det passar dina behov. Du kan sedan tilldela behörighet till vyerna.
 
 En vy är en mapp som visar poster som lagras fysiskt i en eller flera andra mappar av samma typ. Om du till exempel skapar en Campaign-mapp som är en vy, visas alla kampanjer som finns i databasen som standard, oavsett ursprung. Dessa data kan sedan filtreras.
 
 När du konverterar en mapp till en vy visas alla data som motsvarar mapptypen i databasen i vyn, oavsett i vilken mapp den sparas. Du kan sedan filtrera den för att begränsa vilka data som visas.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vyerna innehåller data och ger åtkomst till dem, men data lagras inte fysiskt i visningsmappen. Operatorn måste ha rätt behörighet för den önskade åtgärden i datakällmapparna (minst läsåtkomst).
 >
 >Om du vill ge åtkomst till en vy utan att ge åtkomst till dess källmapp, ger du bara inte läsåtkomst till den överordnade noden i källmappen.
+
+För att skilja vyer från mappar visas namnet på varje vy i en annan färg (mörk cyan).
+
+![](assets/s_ncs_user_view_name_color.png)
 
 ### Lägga till mappar och skapa vyer {#adding-folders-and-creating-views}
 
@@ -442,4 +448,3 @@ I exemplet nedan skapar vi nya mappar för att visa specifika data:
 Följande leveranser visas i vyn:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
-
