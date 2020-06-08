@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Med Adobe Campaign kan ni samordna framtagningen av marknadsföringskampanjer f�
 
 >[!NOTE]
 >
->Adobe Campaign Classic finns i version 6.11 och v7. Förutom när det anges gäller hjälpmaterialet båda versionerna, i den senaste versionen. Skärmbilderna gäller Campaign Classic v7.
+>Adobe Campaign Classic finns i version 6.11 och v7. Förutom när det anges gäller hjälpmaterialet båda versionerna, i den senaste versionen. Skärmbilderna återspeglar gränssnittet i Campaign Classic v7.
 
 ## Viktiga funktioner {#key-capabilities}
 
@@ -40,7 +43,7 @@ Marknadsföringskampanjen i Adobe Campaign illustrerar de viktigaste funktionali
 
 ### Integrerad kundprofil {#integrated-customer-profile}
 
-Profiler (kunder, prospects, nyhetsbrev, prenumeranter osv.) är centraliserade i Adobe Campaign-databasen. Det finns många sätt att skaffa profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en samlad vy för att analysera och vidta åtgärder.
+Profiler (kunder, prospects, nyhetsbrevprenumeranter osv.) är centraliserade i Adobe Campaign-databasen. Det finns många sätt att skaffa profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en samlad vy för att analysera och vidta åtgärder.
 
 I Adobe Campaign är mottagare standardprofiler som är avsedda för att skicka leveranser (e-post, SMS, osv.). Tack vare de mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsområden. Exempelvis görs dirigeringsprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
@@ -48,11 +51,11 @@ Grunderna i Profilhantering beskrivs i [Om profiler](../../platform/using/about-
 
 ### Målinriktad segmentering {#targeted-segmentation}
 
-Adobe Campaign har kraftfulla, användarvänliga funktioner för segmentering och målinriktning som gör att ni kan skapa välriktade, differentierade erbjudanden. Med den beskrivande analysfunktionen kan ni analysera information både i ett tidigare och senare skede av era marknadsföringskampanjer, och med filterhanteringen och den [grafiska frågeredigeringsfunktionen](../../platform/using/about-queries-in-campaign.md) kan ni filtrera era era abonnentpopulationer och sampla eller skapa målgrupper baserat på ett obegränsat antal kriterier. Funktionerna för analys och målinriktning beskrivs på [den här sidan](../../reporting/using/about-descriptive-analysis.md) och i avsnittet [Skapa filter](../../platform/using/creating-filters.md) .
+Adobe Campaign har kraftfulla, användarvänliga funktioner för segmentering och målinriktning som gör att ni kan skapa välriktade, differentierade erbjudanden. Med den beskrivande analysfunktionen kan ni analysera information både i tidigare och senare led av era marknadsföringskampanjer, och med filterhanteringen och den [grafiska frågeredigeringsfunktionen](../../platform/using/about-queries-in-campaign.md) kan ni filtrera era era mottagarpopulationer och sampla eller skapa målgrupper baserat på ett obegränsat antal kriterier. Funktionerna för analys och målinriktning beskrivs på [den här sidan](../../reporting/using/about-descriptive-analysis.md) och i avsnittet [Skapa filter](../../platform/using/creating-filters.md) .
 
 Den avancerade datahanteringsfunktionen utökar databearbetningsfunktionerna. Det förenklar och optimerar målgruppsprocessen genom att inkludera data som inte är modellerade i datamappningen. Den här funktionaliteten beskrivs närmare på [den här sidan](../../workflow/using/targeting-data.md#data-management).
 
-### Flerkanalsmarknadsföring {#cross-channel-campaign-orchestration}
+### Samordna kampanjer i flera kanaler {#cross-channel-campaign-orchestration}
 
 Med Adobe Campaign kan ni utforma och samordna målinriktade och personaliserade kampanjer i flera kanaler: e-post, direktreklam, SMS, push-meddelanden. Ett enda gränssnitt ger er alla funktioner ni behöver för att schemalägga, samordna, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation. Mer information om schemaläggning och körning av kampanjer finns på [den här sidan](../../campaign/using/setting-up-marketing-campaigns.md).
 
@@ -70,7 +73,7 @@ Ni kan kombinera leveransfunktionerna och de avancerade kampanjhanteringsfunktio
 
 ## Kärnfunktioner och tillägg {#core-capabilities-and-add-ons}
 
-Adobe Campaign erbjuder en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna för konversationer beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras och av din konfiguration. En detaljerad produktbeskrivning finns här: Produktbeskrivning för [Adobe Campaign Classic](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign erbjuder en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna för konversationer beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras och av din konfiguration. En detaljerad produktbeskrivning finns här: [Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)för Adobe Campaign Classic.
 
 Följande funktioner är tillgängliga. Beroende på vilket licensavtal du har kan vissa av dessa funktioner vara tillgängliga eller inte i din instans.
 
