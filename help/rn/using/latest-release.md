@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: cb55216e75559e1ce7eefa24d2302fe2c2224d40
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 - Build XXXX {#release-20-2-1-build-XXXX}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
