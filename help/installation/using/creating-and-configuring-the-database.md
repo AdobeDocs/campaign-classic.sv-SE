@@ -69,7 +69,7 @@ Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server** -motor måste du definiera:
 
-   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\`<instance>`**(instansläge),
+   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\ `<instance>`**(instansläge),
    1. den autentiseringsmetod som används för att komma åt Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** eller **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
