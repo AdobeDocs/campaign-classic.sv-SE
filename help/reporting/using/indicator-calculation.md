@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '2980'
+ht-degree: 0%
 
 ---
 
@@ -27,10 +30,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -66,10 +69,10 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -149,10 +152,10 @@ Den här rapporten baseras på **[!UICONTROL Internet Browser Statistics]** tabe
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -182,10 +185,10 @@ Den här rapporten baseras på **[!UICONTROL Internet Browser Statistics]** tabe
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -217,10 +220,10 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -286,10 +289,10 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -319,10 +322,10 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -354,10 +357,10 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -391,10 +394,10 @@ Den här rapporten baseras på **[!UICONTROL Internet Browser Statistics]** tabe
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -424,10 +427,10 @@ Den här rapporten baseras på **[!UICONTROL Internet Browser Statistics]** tabe
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -459,10 +462,10 @@ Den här rapporten baseras på **[!UICONTROL Services]** tabellen (nms:service).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -506,10 +509,10 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -564,7 +567,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
   <tr> 
    <td> Klagomål<br /> </td> 
    <td> @klagomål<br /> </td> 
-   <td> Antal meddelanden med statusen "Misslyckades" och en orsak som är lika med "svartlistad adress".<br /> </td> 
+   <td> Antal meddelanden med statusen "Misslyckades" och en orsak som är lika med "Adress har lagts till i blocklistan".<br /> </td> 
    <td> Count(@status=2 och msg/@errorReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -703,10 +706,10 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabellen (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -730,7 +733,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabellen (nms:delivery)
   </tr> 
   <tr> 
    <td> Klickningar<br /> </td> 
-   <td> @_klicka<br /> </td> 
+   <td> @_click<br /> </td> 
    <td> Antal alla @totalClicks med en URL-primärnyckel som skiljer sig från 1<br /> </td> 
    <td> count(Iif([@url-id] != 1, @totalClicks, 0)<br /> </td> 
   </tr> 
@@ -750,23 +753,23 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabellen (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Inledande population<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td>  Totalt antal mottagare som leveransmålet gäller.<br /> </td> 
+   <td> Totalt antal mottagare som leveransmålet gäller.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
    <td> Meddelanden som avvisats av regeln<br /> </td> 
    <td> @visa<br /> </td> 
-   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: adress ej angiven, i karantän, svartlistad osv.<br /> </td> 
+   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen adress har angetts, placerats i karantän, lagts till i blockeringslistan osv.<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
@@ -809,10 +812,10 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabellen (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -844,10 +847,10 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -860,7 +863,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> Levererat<br /> </td> 
    <td> @success<br /> </td> 
-   <td>  Antal meddelanden som har bearbetats.<br /> </td> 
+   <td> Antal meddelanden som har bearbetats.<br /> </td> 
    <td> indikatorer/@success<br /> </td> 
   </tr> 
   <tr> 
@@ -903,10 +906,10 @@ Den här rapporten baseras på tabellerna **Leveranser** (nms:delivery) och **sp
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etikett</strong><br /> </th> 
-   <th> <strong>Fältnamn</strong><br /> </th> 
-   <th> <strong>Indikatorbeskrivning</strong><br /> </th> 
-   <th> <strong>Beräkningsformel</strong> för indikator <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
+   <th> <strong>Fältnamn</strong> <br /> </th> 
+   <th> <strong>Indikatorbeskrivning</strong> <br /> </th> 
+   <th> <strong>Beräkningsformel för indikator</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -925,20 +928,20 @@ Indikatorn **Skickat** (@sent) som nås via noden **Leveranser (nms:delivery) > 
 
 ## Synkronisering av indikator {#indicator-synchronization}
 
-Om du upplever desynkronisering eller inkonsekvens för vissa indikatorer väljer du den aktuella leveransen i Adobe Campaign Explorer, högerklickar och väljer **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klicka **[!UICONTROL Next]** och sedan på **[!UICONTROL Finish]**.
+Om du får desynkronisering eller inkonsekvens för vissa indikatorer väljer du den aktuella leveransen i utforskaren i Adobe Campaign, högerklickar och väljer **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klicka **[!UICONTROL Next]** och sedan på **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
 ## Spårningsöppningar {#tracking-opens-}
 
-För att Adobe Campaign ska kunna identifiera när ett meddelande öppnas måste mottagaren hämta bilderna i e-postmeddelandet. HTML och Multipart/Alternative emails innehåller en bild på 0 pixlar, som gör att du kan identifiera meddelanden som har öppnats. Eftersom meddelanden i textformat inte innehåller några bilder går det inte att se om de har öppnats eller inte. Värden som beräknas baserat på det meddelande som öppnas är alltid uppskattningar på grund av den felmarginal som är länkad till bildvisningen.
+För att Adobe Campaign ska kunna upptäcka att ett meddelande öppnas måste mottagaren hämta bilderna i e-postmeddelandet. HTML och Multipart/Alternative emails innehåller en bild på 0 pixlar, som gör att du kan identifiera meddelanden som har öppnats. Eftersom meddelanden i textformat inte innehåller några bilder går det inte att se om de har öppnats eller inte. Värden som beräknas baserat på det meddelande som öppnas är alltid uppskattningar på grund av den felmarginal som är länkad till bildvisningen.
 
 ## Målgrupper/mottagare {#targeted-persons---recipients}
 
-I vissa rapporter skiljer Adobe Campaign på målgruppsanpassade personer och målgruppsmottagare.
+I vissa rapporter skiljer Adobe Campaign mellan målgruppsinriktade personer och målgruppsinriktade mottagare.
 
 Målmottagare är alla mottagare som leveransen skickades till.
 
 Antalet personer omfattar riktade mottagare plus alla personer som e-postmeddelandet skickades till. Varje gång det finns en öppning eller ett klick i en ny webbläsare (som meddelandet ännu inte har öppnats i) läggs en annan person till i statistiken.
 
-Om du till exempel får ett e-postmeddelande (som skickas av Adobe Campaign) på jobbet och öppnar eller klickar i det, räknas du som målmottagare (dvs. mottagare=1, person=1). Om du vidarebefordrar det här e-postmeddelandet till två vänner är antalet målmottagare fortfarande lika med ett, medan antalet personer är lika med tre. Värdet 3 sammanfaller med varje öppet/klickning i en ny webbläsare.
+Om du till exempel får ett e-postmeddelande (som skickas av Adobe Campaign) på arbetet och öppnar eller klickar i det, räknas du som en målmottagare (dvs. mottagare=1, person=1). Om du vidarebefordrar det här e-postmeddelandet till två vänner är antalet målmottagare fortfarande lika med ett, medan antalet personer är lika med tre. Värdet 3 sammanfaller med varje öppet/klickning i en ny webbläsare.
