@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '1617'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ Med **[!UICONTROL Edit query...]** länken kan du definiera måltyp, begränsnin
 
    Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i det här [avsnittet](../../workflow/using/querying-using-grouping-management.md).
 
-   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsvisa kombinationen **[!UICONTROL Corresponding SQL query...]** för dina villkor. Mer information finns i det här [avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsvisa kombinationen **[!UICONTROL Corresponding SQL query...]** för dina villkor. For more on this refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
    Spara filtret om du vill återanvända det senare.
 
@@ -79,7 +82,7 @@ Börja med att välja vilken typ av data som ska läggas till:
 
 ![](assets/wf_add_data_1st_option.png)
 
-* Välj **[!UICONTROL Data linked to the filtering dimension]** om du vill välja data i Adobe Campaign-databasen.
+* Markera data **[!UICONTROL Data linked to the filtering dimension]** i Adobe Campaign-databasen.
 * Välj **[!UICONTROL External data]** att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt alternativet **Federated Data Access** . Mer information finns i [Åtkomst till en extern databas (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 * Välj alternativet **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner där du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt **interaktionsmodulen** .
 
@@ -91,7 +94,7 @@ Så här lägger du till data från Adobe Campaign-databasen:
 
    ![](assets/query_add_columns.png)
 
-1. Om data tillhör frågefiltret markerar du dem i listan med tillgängliga fält så att de visas i utdatakolumnerna.
+1. Om data tillhör frågefiltret markerar du dem i listan över tillgängliga fält så att de visas i utdatakolumnerna.
 
    ![](assets/wf_add_data_field_selection.png)
 
@@ -117,7 +120,7 @@ Så här lägger du till en samling information som är länkad till en målpopu
       >
       >I det här läget optimeras den SQL-fråga som genereras tack vare en direkt överlappning av samlingselementen.
       >
-      >Om det inledande villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
+      >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
 
    * Om du återställer flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
    * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda **[!UICONTROL Aggregates]** värdet.
@@ -135,7 +138,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 
 >[!NOTE]
 >
->Ytterligare frågeexempel visas i [det här avsnittet](../../workflow/using/querying-recipient-table.md).
+>Ytterligare frågeexempel presenteras i [det här avsnittet](../../workflow/using/querying-recipient-table.md).
 
 1. Ge frågan ett namn och välj sedan **[!UICONTROL Edit query...]** länken.
 1. Välj **[!UICONTROL Filtering conditions]** i listan över tillgängliga filtertyper.
@@ -172,7 +175,7 @@ Det här värdet är arbetstabellens schema. Den här parametern är giltig för
 
 ## Optimera frågor {#optimizing-queries}
 
-I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågor som körs i Adobe Campaign för att begränsa arbetsbördan för databasen och förbättra användarupplevelsen.
+I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågor som körs på Adobe Campaign för att begränsa arbetsbördan för databasen och förbättra användarupplevelsen.
 
 ### Kopplingar och index {#joins-and-indexes}
 
@@ -185,7 +188,7 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
    Se till att `where` satsen är av samma typ som fältet.
 
-   Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält och `3` anger ett textvärde.
+   Ett vanligt misstag är: `iBlocklist='3'` där `iBlocklist` är ett numeriskt fält och `3` anger ett textvärde.
 
    Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
@@ -196,7 +199,7 @@ Mer information finns[i avsnitten om datamodellens bästa praxis](https://helpx.
 * Se upp för funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
 * Kontrollera frågor med &quot;gilla&quot;-instruktionen eller &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Upper&quot; på användarindata, inte i databasfältet.
 
-   Mer information om funktioner finns i [det här avsnittet](../../platform/using/defining-filter-conditions.md#list-of-functions).
+   For more on functions, refer to [this section](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ### Filtrera dimensioner {#filtering-dimensions}
 
@@ -216,7 +219,7 @@ Motsvarigheten till filterdimensionen i SQL är den inre kopplingen:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Mer information om filtreringsdimensioner finns i [det här avsnittet](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+For more on filtering dimensions, refer to [this section](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### Arkitektur {#architecture}
 
