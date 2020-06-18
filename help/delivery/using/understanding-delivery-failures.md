@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Om leveransfel {#about-delivery-failures}
 
-När ett meddelande (e-post, SMS, push-meddelanden) inte kan skickas till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och kvalificeras för att avgöra om e-postadressen eller telefonnumret ska placeras i karantän eller inte. Se [Studsa e-posthantering](#bounce-mail-management).
+När ett meddelande (e-post, SMS, push-meddelanden) inte kan skickas till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och är kvalificerat för att avgöra om e-postadressen eller telefonnumret ska placeras i karantän eller inte. Se [Studsa e-posthantering](#bounce-mail-management).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ När ett meddelande (e-post, SMS, push-meddelanden) inte kan skickas till en pro
 
 När ett meddelande har skickats kan du i leveransloggarna visa leveransstatus för varje profil och tillhörande feltyp och orsak.
 
-Meddelanden kan också uteslutas under färdigställandet av leveransen om en adress sätts i karantän eller om en profil är svartlistad. Exkluderade meddelanden visas på kontrollpanelen för leverans.
+Meddelanden kan också uteslutas under färdigställandet av leveransen om en adress sätts i karantän eller om en profil finns i blocklistan. Exkluderade meddelanden visas på kontrollpanelen för leverans.
 
 **Relaterade ämnen:**
 
@@ -86,10 +86,10 @@ Möjliga orsaker till leveransfel är:
    <td> Kvalitetsklassificeringen för den här adressen är för låg.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Svartlistad adress </td> 
+   <td> Adress i blocklista </td> 
    <td> Hård </td> 
    <td> 8 </td> 
-   <td> Adressen var svartlistad när den skickades. Den här statusen används för att importera data från externa listor och externa system när data importeras till Adobe Campaign-karantänlistan.<br /> </td> 
+   <td> Adressen lades till i blockeringslistan när den skickades. Den här statusen används för att importera data från externa listor och externa system till karantänlistan i Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kontrolladress </td> 
@@ -107,7 +107,7 @@ Möjliga orsaker till leveransfel är:
    <td> Felet ignorerades </td> 
    <td> Ignorerad </td> 
    <td> 25 </td> 
-   <td> Adressen är vitlistad. Felet ignoreras därför och ett e-postmeddelande skickas.<br /> </td> 
+   <td> Adressen finns i listan över tillåtna. Felet ignoreras därför och ett e-postmeddelande skickas.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uteslutet efter skiljedom </td> 
@@ -158,7 +158,7 @@ Möjliga orsaker till leveransfel är:
    <td> Adressen har placerats i karantän på grund av säkerhetsfeedback som en skräppostrapport. Enligt felet görs ett nytt försök att ange adressen tills felräknaren når 5 eller skickas direkt till karantän.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Målet är begränsat </td> 
+   <td> Target begränsad i storlek </td> 
    <td> Ignorerad </td> 
    <td> 17 </td> 
    <td> Den maximala leveransstorleken har uppnåtts för mottagaren.<br /> </td> 
@@ -200,14 +200,14 @@ Standardkonfigurationen tillåter fem försök med en timmes intervall, följt a
 
 Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att det har skickats (asynkront fel).
 
-* Synkront fel: Om fjärre-postservern som kontaktades av Adobe Campaign-leveransservern omedelbart returnerade ett felmeddelande får leveransen inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om e-postadresserna i fråga ska placeras i karantän eller inte. Se [Studsa e-postkvalifikationer](#bounce-mail-qualification).
+* Synkront fel: Om fjärre-postservern som kontaktades av Adobe Campaign-leveransservern omedelbart returnerade ett felmeddelande, får leveransen inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om e-postadresserna i fråga ska sättas i karantän eller inte. Se [Studsa e-postkvalifikationer](#bounce-mail-qualification).
 * Asynkront fel: ett studsmeddelande eller en SR skickades senare av den mottagande servern. Det här e-postmeddelandet läses in i en teknisk postlåda som programmet använder för att etikettera meddelanden med ett fel. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
    >[!NOTE]
    >
    >Konfiguration av studspostlådan beskrivs i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   Feedslingan fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Adresserna till dessa användare är svartlistade även om de inte klickade på länken för att ta bort prenumerationen. Adresser är svartlistade i (**NmsAddress**)-karantäntabellen och inte i mottagartabellen (**NmsRecipient**).
+   Den [här slingan](../../delivery/using/technical-recommendations.md#feedback-loop) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser finns i blockeringslistan även om de inte klickade på länken för att ta bort prenumerationen. Adresser finns i blockeringslistan i (**NmsAddress**)-karantäntabellen och inte i mottagartabellen (**NmsRecipient**).
 
    >[!NOTE]
    >
@@ -215,13 +215,13 @@ Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att
 
 ## E-posthantering {#bounce-mail-management}
 
-Med Adobe Campaign-plattformen kan ni hantera misslyckade e-postleveranser via studsfunktionen. När ett e-postmeddelande inte kan levereras till en mottagare, returnerar fjärrmeddelandeservern automatiskt ett felmeddelande (studsmeddelanden) till en teknisk inkorg som är utformad för detta. Felmeddelanden samlas in av Adobe Campaign-plattformen och kvalificeras av inMail-processen för att utöka listan med regler för e-posthantering
+På Adobe Campaign-plattformen kan du hantera e-postleveransfel via studsfunktionen. När ett e-postmeddelande inte kan levereras till en mottagare, returnerar fjärrmeddelandeservern automatiskt ett felmeddelande (studsmeddelanden) till en teknisk inkorg som är utformad för detta. Felmeddelanden samlas in av Adobe Campaign-plattformen och kvalificeras av inMail-processen för att utöka listan över regler för e-posthantering
 
 ### E-poststudsar {#bounce-mail-qualification}
 
-När leveransen av ett e-postmeddelande misslyckas får Adobe Campaign-leveransservern ett felmeddelande från meddelandeservern eller fjärr-DNS-servern. Listan med fel består av strängar i meddelandet som returneras av fjärrservern. Feltyper och orsaker tilldelas till varje felmeddelande.
+När leveransen av ett e-postmeddelande misslyckas får leveransservern i Adobe Campaign ett felmeddelande från meddelandeservern eller fjärr-DNS-servern. Listan med fel består av strängar i meddelandet som returneras av fjärrservern. Feltyper och orsaker tilldelas till varje felmeddelande.
 
-Listan är tillgänglig via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** noden. Det innehåller alla regler som används av Adobe Campaign för att kvalificera leveransfel. Den är inte uttömmande och uppdateras regelbundet av Adobe Campaign och kan även hanteras av användaren.
+Listan är tillgänglig via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** noden. Den innehåller alla regler som Adobe Campaign använder för att kvalificera leveransfel. Den är inte uttömmande och uppdateras regelbundet av Adobe Campaign och kan även hanteras av användaren.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
@@ -229,7 +229,7 @@ Listan är tillgänglig via **[!UICONTROL Administration > Campaign Management >
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtrerar det här meddelandet för att ta bort variabelinnehållet (t.ex. ID:n, datum, e-postadresser, telefonnummer osv.) och visar det filtrerade resultatet i **[!UICONTROL Text]** kolumnen. Variablerna ersätts med **`#xxx#`**, förutom adresser som ersätts med **`*`**.
+Adobe Campaign filtrerar det här meddelandet för att ta bort variabelt innehåll (t.ex. ID:n, datum, e-postadresser, telefonnummer osv.) och visar det filtrerade resultatet i **[!UICONTROL Text]** kolumnen. Variablerna ersätts med **`#xxx#`**, förutom adresser som ersätts med **`*`**.
 
 Med den här processen kan du sammanföra alla fel av samma typ och undvika flera poster för liknande fel i tabellen för leveransloggskvalificering.
 
@@ -258,7 +258,7 @@ Studsade e-postmeddelanden kan ha följande kvalificeringsstatus:
 * För instanser som använder Förbättrat MTA utan **Webhooks/EFS** används även **[!UICONTROL Inbound email]** reglerna för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
 >
 >
-Mer information om Adobe Campaign Enhanced MTA finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Mer information om förbättrad MTA för Adobe Campaign finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regler för e-posthantering {#email-management-rules}
 
@@ -282,7 +282,7 @@ Standardreglerna är följande.
 
 Dessa regler innehåller en lista med teckensträngar som kan returneras av fjärrservrar och som gör att du kan kvalificera felet (**Hård**, **Mjuk** eller **Ignorerad**).
 
-När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i plattformsparametrarna. Adobe Campaign jämför innehållet i varje studentpost med strängarna i listan med regler och tilldelar det sedan en av de tre [feltyperna](#delivery-failure-types-and-reasons).
+När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i plattformsparametrarna. Adobe Campaign jämför innehållet i varje studsande post med strängarna i listan med regler och tilldelar det sedan en av de tre [feltyperna](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >
@@ -294,30 +294,30 @@ Mer information om studentkvalifikationer finns i [det här avsnittet](#bounce-m
 >
 >Om du har uppgraderat till Förbättrat MTA för hostinginstallationer eller hybridinstallationer, och om din instans har **Webhooks/EFS** -funktioner, används inte längre reglerna för synkrona felmeddelanden om leveransfel **[!UICONTROL Inbound email]** . Mer information finns i [det här avsnittet](#bounce-mail-qualification).
 >
->Mer information om Adobe Campaign Enhanced MTA finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Mer information om förbättrad MTA för Adobe Campaign finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Domänhantering {#domain-management}
 
-Adobe Campaign-meddelandeservern tillämpar en enda **domänhanteringsregel** på alla domäner.
+Meddelandeservern i Adobe Campaign tillämpar en enda **domänhanteringsregel** på alla domäner.
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
 * Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar för att kontrollera domännamnet, till exempel **avsändar-ID**, **DomainKeys**, **DKIM** och **S/MIME**.
 * Med parametrarna för **SMTP-relä** kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-postmeddelanden från Microsoft. Om **[!UICONTROL Sender ID]** alternativet är aktiverat avmarkerar du motsvarande ruta och kontaktar Adobe Campaign-supporten. Leveransen påverkas inte.
+Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-postmeddelanden från Microsoft. Om **[!UICONTROL Sender ID]** alternativet är aktiverat avmarkerar du motsvarande ruta och kontaktar supporten för Adobe Campaign. Leveransen påverkas inte.
 
 >[!IMPORTANT]
 >
 >Om du har uppgraderat till Förbättrat MTA används inte längre reglerna för värdbaserade eller hybridinstallationer **[!UICONTROL Domain management]** . **DKIM-signering (DomainKeys Identified Mail)** för e-postautentisering görs av den utökade MTA:n för alla meddelanden med alla domäner. Det signerar inte med **avsändar-ID**, **DomainKeys** eller **S/MIME** om inte annat anges på den förbättrade MTA-nivån.
 >
->Mer information om Adobe Campaign Enhanced MTA finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Mer information om förbättrad MTA för Adobe Campaign finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### MX-hantering {#mx-management}
 
 * MX-hanteringsreglerna används för att reglera flödet av utgående e-post för en viss domän. De samplar studsmeddelandena och blockerar sändningarna där så är lämpligt.
 
-* Meddelandeservern för Adobe Campaign tillämpar regler som är specifika för domänerna och sedan reglerna för det allmänna fallet som representeras av en asterisk i listan med regler.
+* Meddelandeservern i Adobe Campaign tillämpar regler som är specifika för domänerna och sedan reglerna för det allmänna fallet som representeras av en asterisk i listan med regler.
 
 * Om du vill konfigurera MX-hanteringsregler anger du bara ett tröskelvärde och väljer vissa SMTP-parametrar. Ett **tröskelvärde** är en gräns som beräknas som ett felprocentvärde över vilket alla meddelanden till en viss domän blockeras. I det allmänna fallet, för minst 300 meddelanden, blockeras sändning av e-postmeddelanden under tre timmar om felprocenten når 90 %.
 
@@ -327,4 +327,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >Om du har uppgraderat till Förbättrat MTA används inte längre leveransregler för värdbaserade eller hybridinstallationer. **[!UICONTROL MX management]** Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
 >
->Mer information om Adobe Campaign Enhanced MTA finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Mer information om förbättrad MTA för Adobe Campaign finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
