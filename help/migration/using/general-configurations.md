@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '2822'
+ht-degree: 0%
 
 ---
 
 
 # Allmänna konfigurationer{#general-configurations}
 
-I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 om du migrerar från en v5.11 eller en v6.02.
+I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 om du migrerar från v5.11 eller v6.02.
 
 Dessutom:
 
@@ -91,7 +94,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
 >
 >Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: måste du konfigurera säkerhetszonerna och därför samla in operatörens IP-adresser.
 
-Adobe Campaign v7 innehåller begreppet **säkerhetszoner**. Varje användare måste associeras med en zon för att kunna logga in på en instans och användarens IP-adress måste inkluderas i de adresser eller adressintervall som definieras i säkerhetszonen. Du kan konfigurera säkerhetszoner i konfigurationsfilen för Adobe Campaign-servern. Den säkerhetszon som en användare är kopplad till måste definieras i konsolen (**[!UICONTROL Administration > Access management > Operators]**).
+Adobe Campaign v7 omfattar begreppet **säkerhetszoner**. Varje användare måste associeras med en zon för att kunna logga in på en instans och användarens IP-adress måste inkluderas i de adresser eller adressintervall som definieras i säkerhetszonen. Du kan konfigurera säkerhetszoner i konfigurationsfilen för Adobe Campaign-servern. Den säkerhetszon som en användare är kopplad till måste definieras i konsolen (**[!UICONTROL Administration > Access management > Operators]**).
 
 **Före migreringen** ber du nätverksadministratören att hjälpa dig att definiera de säkerhetszoner som ska aktiveras efter migreringen.
 
@@ -188,11 +191,11 @@ Om du vill tillåta åtkomst till vissa sidor via HTTP-protokollet (inte HTTPS),
 
 Om du använder anonyma JSSP:er måste du lägga till parametern **httpAllowed=&quot;true&quot;** i en reläregel för din JSSP (**[!UICONTROL serverConf.xml]** fil):
 
-Till exempel:
+Exempel:
 
 ```
 <url IPMask="" deny="" hostMask="" httpAllowed="true" relayHost="true" relayPath="true"
-           status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
+           status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
 ```
 
 ## Syntax {#syntax}
@@ -203,7 +206,7 @@ Adobe Campaign v7 integrerar en nyare JavaScript-tolk. Uppdateringen kan dock le
 
 Syntaxen **[!UICONTROL myObject.@attribute]** gäller nu endast för XML-objekt. Den här syntaxen kan användas för att personalisera leveranser och innehållshantering. Om du använde den här typen av syntax för ett objekt som inte är XML kommer personaliseringsfunktionerna inte längre att fungera.
 
-För alla andra objekttyper är syntaxen nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ett icke-XML-objekt som använder följande syntax:**[!UICONTROL employee.@sn]**måste nu använda följande syntax:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+För alla andra objekttyper är syntaxen nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ett icke-XML-objekt som använder följande syntax:**[!UICONTROL employee.@sn]**måste nu följande syntax användas:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Tidigare syntax:
 
@@ -430,7 +433,7 @@ Efter resurssynkroniseringen kan du med kommandot **postupgrade** upptäcka om s
 
 Synkroniseringsresultatet kan visas på två sätt:
 
-* I kommandoradsgränssnittet materialiseras felen med en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras med en dubbel skiftning **>>** och måste åtgärdas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Till exempel:
+* I kommandoradsgränssnittet materialiseras felen med en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras med en dubbel skiftning **>>** och måste åtgärdas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Exempel:
 
    ```
    2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -457,7 +460,7 @@ Så här löser du en konflikt:
 Det finns tre möjliga sätt att lösa en konflikt:
 
 * **[!UICONTROL Declared as resolved]**: kräver åtgärd från operatörens sida i förväg.
-* **[!UICONTROL Accept the new version]**: rekommenderas om resurserna i Adobe Campaign inte har ändrats av användaren.
+* **[!UICONTROL Accept the new version]**: rekommenderas om Adobe Campaign inte har ändrat resurserna.
 * **[!UICONTROL Keep the current version]**: betyder att uppdateringen inte godkänns.
 
    >[!IMPORTANT]
@@ -478,7 +481,7 @@ Om du väljer att lösa konflikten manuellt gör du så här:
 
 ## Tomcat {#tomcat}
 
-Den integrerade Tomcat-servern i Adobe Campaign v7 har ändrat version (Tomcat 7). Installationsmappen (tomcat-6) har därför ändrats (tomcat 7). Efter uppgraderingen kontrollerar du att sökvägarna är länkade till den uppdaterade mappen (i **[!UICONTROL serverConf.xml]** filen):
+Den inbyggda Tomcat-servern i Adobe Campaign v7 har ändrat version (Tomcat 7). Installationsmappen (tomcat-6) har därför ändrats (tomcat 7). Efter uppgraderingen kontrollerar du att sökvägarna är länkade till den uppdaterade mappen (i **[!UICONTROL serverConf.xml]** filen):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-7/bin/bootstrap.jar 
@@ -509,7 +512,7 @@ I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje repre
 >[!IMPORTANT]
 Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kan utnyttja alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
-Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i mappen Adobe Campaign v7. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** fälten och **[!UICONTROL textSource]** fälten). Innehållet som fanns i **tabellen NmsEmailOfferView** har flyttats till erbjudandetabellen.
+Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i Adobe Campaign v7-mappen. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** fälten och **[!UICONTROL textSource]** fälten). Innehållet som fanns i **tabellen NmsEmailOfferView** har flyttats till erbjudandetabellen.
 
 >[!NOTE]
 Om du använder det här skriptet kan du inte utnyttja alternativen för innehållshantering och återgivningsfunktioner. För att kunna dra nytta av dessa funktioner måste du tänka om katalogen erbjuder, särskilt erbjudandeinnehållet och konfigurationsutrymmena.
