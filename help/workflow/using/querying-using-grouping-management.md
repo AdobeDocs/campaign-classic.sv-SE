@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +51,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Sortera e-postdomäner i fallande ordning i fönstret.. **[!UICONTROL Sorting]** Det gör du genom att markera **[!UICONTROL Yes]** i **[!UICONTROL Descending sort]** kolumnen. Klicka **[!UICONTROL Next]**.
+1. Sortera e-postdomäner i fallande ordning i fönstret.. **[!UICONTROL Sorting]** Det gör du genom att markera **[!UICONTROL Yes]** i **[!UICONTROL Descending sort]** kolumnen. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_70.png)
 
@@ -57,15 +60,15 @@ Så här skapar du det här exemplet:
 
    Det här fönstret för datagruppering visas bara om rutan **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) är markerad.
 
-   ![](assets/query_editor_blacklist_04.png)
+   ![](assets/query_editor_blocklist_04.png)
 
 1. I **[!UICONTROL Grouping condition]** fönstret anger du ett primärnyckelantal som är större än 30 eftersom vi bara vill att e-postdomäner som är avsedda mer än 30 gånger ska returneras som resultat.
 
    Fönstret visas när **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** rutan har markerats: Det är här grupperingsresultatet filtreras (HAVING).
 
-   ![](assets/query_editor_blacklist_05.png)
+   ![](assets/query_editor_blocklist_05.png)
 
 1. I **[!UICONTROL Data formatting]** fönstret klickar du på **[!UICONTROL Next]**: ingen formatering behövs här.
 1. Klicka på **[!UICONTROL Launch data preview]**: Här returneras tre olika e-postdomäner som är riktade över 30 gånger.
 
-   ![](assets/query_editor_blacklist_06.png)
+   ![](assets/query_editor_blocklist_06.png)
