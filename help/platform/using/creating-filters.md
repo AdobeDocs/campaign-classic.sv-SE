@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+workflow-type: tm+mt
+source-wordcount: '1980'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Introduktion {#introduction}
 
-När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** menyn på startsidan) visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
+När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** hemsidans meny), visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
 
 >[!NOTE]
 >
@@ -32,11 +35,11 @@ När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** meny
 
 ## Typologi för tillgängliga filter {#typology-of-available-filters}
 
-Med Adobe Campaign kan ni använda filter på datalistor.
+Med Adobe Campaign kan du använda filter på datalistor.
 
 Dessa filter kan användas en gång eller så kan du spara dem för framtida bruk. Du kan använda flera filter samtidigt.
 
-Följande filtertyper är tillgängliga i Adobe Campaign:
+Följande filtertyper finns i Adobe Campaign:
 
 * Standardfilter
 
@@ -276,8 +279,8 @@ De fördefinierade filtren är:
    <td> Väljer mottagare som har klickat på en leverans minst X gånger under de senaste Y-månaderna.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Svartlistad e-postadress<br /> </td> 
-   <td> Väljer mottagare vars e-postadress är svartlistad.<br /> </td> 
+ <td> E-postadress i blockeringslistan<br /> </td> 
+    <td> Väljer mottagare vars e-postadress finns i blocklistan.<br/> </td>
   </tr> 
   <tr> 
    <td> E-postadress i karantän<br /> </td> 
