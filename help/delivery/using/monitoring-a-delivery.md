@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Från kontrollpanelen för leverans vill du kontrollera de bearbetade meddelande
 Vissa indikatorer eller status kan vara felaktiga eller inte aktuella. Lösningen kan vara:
 
 * Om leveransstatusen är felaktig kontrollerar du att alla nödvändiga godkännanden har gjorts för leveransen eller att arbetsflödena **[!UICONTROL operationMgt]** och **[!UICONTROL deliveryMgt]** körs utan fel. Detta kan också bero på leveransen med en tillhörighet som inte har konfigurerats på den sändande instansen.
-* Om leveransindikatorerna fortfarande är noll och du använder en mellanleverantörskonfiguration bör du kontrollera det **[!UICONTROL Mid-sourcing (delivery counters)]** tekniska arbetsflödet. Starta om det inte har status **[!UICONTROL Started]**. Sedan kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
-* Om leveransräknaren inte stämmer överens med leveransräknaren kan du försöka beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Om leveransindikatorerna fortfarande är noll och du använder en mellanleverantörskonfiguration bör du kontrollera det **[!UICONTROL Mid-sourcing (delivery counters)]** tekniska arbetsflödet. Starta om det inte har status **[!UICONTROL Started]**. Du kan sedan försöka beräkna om indikatorerna genom att högerklicka på leveransen i utforskaren i Adobe Campaign och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Om leveransräknaren inte stämmer överens med leveransräknaren kan du försöka beräkna om indikatorerna genom att högerklicka på leveransadressen i Utforskaren i Adobe Campaign och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
 * Om leveransräknaren inte är uppdaterad för medelstora distributioner kontrollerar du att det tekniska arbetsflödet körs. **[!UICONTROL Mid-Sourcing (Delivery counters)]** Mer information finns på den här [sidan](../../installation/using/mid-sourcing-deployment.md).
 
 Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
@@ -109,20 +109,20 @@ Om leveransresultaten är felaktiga kan du kontrollera:
 
 * **Leveransens** storlek: Stora leveranser kan ta längre tid att slutföra. MTA-underordnade är konfigurerade att hantera en standardbatchstorlek, som fungerar för de flesta instanser, men som måste kontrolleras när leveranserna är konstant långsamma.
 * **Målet för leveransen**: Förbud mot leveransprestanda påverkas av mjuka studsfel som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
-* **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i Adobe Campaign [Deliverability best practices guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och på [den här sidan](../../delivery/using/about-deliverability.md).
+* **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i guiden [om bästa praxis för Adobe Campaign](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Deliverability och [den här sidan](../../delivery/using/about-deliverability.md).
 
-Plattforms- och databasunderhåll kan också påverka leveransresultaten. For more on this, refer to [this page](../../production/using/database-performances.md).
+Platform och databasunderhåll kan också påverka leveransresultaten. For more on this, refer to [this page](../../production/using/database-performances.md).
 
 ### Långsamma leveranser {#slow-deliveries}
 
 När du har klickat på **[!UICONTROL Send]** knappen verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
 
-* Vissa e-postleverantörer kan ha svartlistat dina IP-adresser. I så fall kontrollerar du dina utskick och läser [detta för att komma igång](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
+* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. I så fall kontrollerar du dina utskick och läser [det här avsnittet](../../delivery/using/about-deliverability.md).
 * Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Mer information om riktlinjer för innehåll finns i Adobe Campaign [Delivery best practices](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) .
-* Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
+* Begränsning kan ha inträffat i MTA-filen för Adobe Campaign. Detta orsakas av:
 
    * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har stött på fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed riskerar att bli svartlistad.
+   * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har påträffat fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en för hög feltäthet och därmed stöter på en potentiell blocklista.
 
 * Ett systemproblem kan förhindra servrar från att samverka: detta kan göra hela sändningsprocessen långsammare. Kontrollera servrarna för att se till att det inte finns några minnes- eller resursproblem som kan påverka Campaign när personaliseringsdata hämtas till exempel.
 
@@ -166,7 +166,7 @@ När du skickar en leverans kan du stöta på följande status på kontrollpanel
   </tr> 
   <tr> 
    <td> Ignorerad<br /> </td> 
-   <td> Leveransen skickades inte till mottagaren på grund av ett fel med hans adress. Den var antingen svartlistad, i karantän, inte tillhandahållen eller en dubblett. <br /> </td> 
+   <td> Leveransen skickades inte till mottagaren på grund av ett fel med hans adress. Den har antingen lagts till i en blocklista, i karantän, inte tillhandahållits eller en dubblett. <br /> </td> 
   </tr> 
   <tr> 
    <td> Skickat<br /> </td> 
@@ -203,7 +203,7 @@ När du skickar en leverans kan du stöta på följande status på kontrollpanel
  </tbody> 
 </table>
 
-Om du vill veta hur du kan optimera leveransen av Adobe Campaign-e-postmeddelanden kan du läsa Adobe Campaign [Deliverability best practices guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och [den här sidan](../../delivery/using/about-deliverability.md).
+Mer information om hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden finns i handboken [om bästa praxis för Adobe Campaign](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Deliverability och [på den här sidan](../../delivery/using/about-deliverability.md).
 
 ### Väntande status {#pending-status}
 
@@ -262,7 +262,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 
    Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en aktivitet i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. **[!UICONTROL Deduplication]** Mer information om borttagning av dubbletter finns på [den här sidan](../../workflow/using/deduplication.md).
 
-* En del leveranser kan misslyckas med felet &quot;Onåbar&quot; som anger: &quot;Studsa inkommande e-post (regeln &quot;Auto_responses&quot; har matchat detta studs). Det innebär att leveransen lyckades, men Adobe Campaign fick ett automatiskt svar från mottagaren (t.ex. ett frånvaromeddelande) som matchade de inkommande e-postreglerna för autosvar. Adobe Campaign ignorerar e-postmeddelandet om automatiskt svar och mottagarens adress skickas inte till karantän.
+* En del leveranser kan misslyckas med felet &quot;Onåbar&quot; som anger: &quot;Studsa inkommande e-post (regeln &quot;Auto_responses&quot; har matchat detta studs). Det innebär att leveransen lyckades, men Adobe Campaign fick ett automatiskt svar från mottagaren (t.ex. ett frånvaromeddelande) som matchade e-postreglerna för inkommande e-post av typen &quot;Auto_responses&quot;. E-postadressen för automatiskt svar ignoreras av Adobe Campaign och mottagarens adress skickas inte till karantän.
 
 **Relaterade ämnen:**
 
