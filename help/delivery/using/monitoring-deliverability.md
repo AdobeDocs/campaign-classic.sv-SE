@@ -1,6 +1,6 @@
 ---
 title: Övervaka leveransen i Adobe Campaign Classic
-description: Läs mer om verktyg och riktlinjer för övervakning av slutprodukter i Adobe Campaign Classic.
+description: Läs om verktyg och riktlinjer för leveransövervakning i Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 0b5c5dbd-f532-4d8a-a255-9e6d88357d8d
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 # Övervaka leveransen{#monitoring-deliverability}
 
-Nedan finns information om de olika övervakningsverktygen i Adobe Campaign samt ytterligare riktlinjer för leveransövervakning.
+Nedan hittar du information om de olika övervakningsverktygen från Adobe Campaign samt ytterligare riktlinjer för leveransövervakning.
 
 ## Övervakningsverktyg {#monitoring-tools}
 
-Använd funktionerna i Adobe Campaign för att övervaka plattformens leveransbarhet.
+Använd de funktioner som Adobe Campaign erbjuder för att övervaka plattformens leveransbarhet.
 
 Leveranspaketet ger dig tillgång till:
 
@@ -58,7 +58,7 @@ Här följer ytterligare riktlinjer för leveransövervakning:
 * Kontrollera varje leveransflöde för att säkerställa att det stämmer överens med leveransinnehållets giltighet (t.ex. &quot;flash sales&quot; ska levereras på några minuter, inte dagar).
 * När du använder [vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)bör du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
 * Kontrollera att antalet fel och nya [karantän](../../delivery/using/understanding-quarantine-management.md) stämmer överens med andra leveranser.
-* Läs noggrant igenom [leveransloggarna](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) för att kontrollera vilka typer av fel som är markerade (grå eller svartlistning, DNS-problem, skräppostregler osv.).
+* Läs noggrant igenom [leveransloggarna](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blocklistor, DNS-problem, antispam-regler osv.).
 
 ## Signalspam {#signal-spam}
 
@@ -70,31 +70,31 @@ Signal Spam är en fransk tjänst som erbjuder anonymiserad rapportering av feed
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) är en kompletterande övervakningslösning för Adobes interna verktyg för slutbarhet som erbjuder IP-adresser, domänsvartlistning och anseende.
+[250ok](https://250ok.com/) är en kompletterande övervakningslösning för Adobes interna verktyg för slutbarhet som tillhandahåller IP- och domänblockslistor samt kända indikatorer.
 
 Den information som tillhandahålls är i realtid, vilket möjliggör en proaktiv hjälp.
 
 ## Övervakningsrapport för teknisk leverans {#technical-deliverability-monitoring}
 
-Den tekniska leveransövervakningsrapporten uppdateras dagligen och är tillgänglig genom att gå till **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** och klicka på **[!UICONTROL Technical monitoring]** länken på Adobe Campaign- **[!UICONTROL Home]** fliken. Det innehåller ett antal kvalitetsindikatorer för er plattform.
+Den tekniska leveransövervakningsrapporten uppdateras dagligen och är tillgänglig genom att navigera till **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** och klicka på **[!UICONTROL Technical monitoring]** länken på fliken Adobe Campaign **[!UICONTROL Home]** . Det innehåller ett antal kvalitetsindikatorer för er plattform.
 
 Dessa indikatorer uppdateras dagligen kl. 9.00.
 
 >[!NOTE]
 >
->Dessutom kan du få en daglig rapport via e-post till en angiven adress. Informera oss om den begärda e-postadressen via e-post eller via Adobe Campaign Extranet.
+>Dessutom kan du få en daglig rapport via e-post till en angiven adress. Informera oss om den begärda e-postadressen via e-post eller via Adobe Campaign-extranätet.
 
 ![](assets/s_tn_del_monitoring.png)
 
 Följande indikatorer används i rapporten:
 
-* **[!UICONTROL Reverse DNS]** : Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta korrekt pekar tillbaka till IP-adressen.
+* **[!UICONTROL Reverse DNS]** : Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta pekar tillbaka till IP-adressen.
 
 * **[!UICONTROL SPF]** (Sender Policy Framework): En autentiseringsmekanism som gör det möjligt för Internet-leverantörer och postlådeleverantörer att kontrollera om e-postavsändaren är auktoriserad på den sändande domänen.
 
 * **[!UICONTROL DomainKeys]** : En tjänst som utvecklats av Yahoo och som är avsedd att certifiera identiteten för en e-postavsändare.
 
-* **[!UICONTROL IP and RBL domain]** (Blackutjämlista i realtid): En lista över IP-adresser och domäner som har flaggats av blocklistorganisationer för dåligt sändande rykte. Listorna hanteras av särskilda organisationer som Spamhaus, Spampolis, SURBL/URIBL osv. Adobe Campaign bearbetar för närvarande kontroller mot RBL:er som har en betydande påverkan på leveransen. Dessa URL:er återspeglar avsändarens anseende och kan refereras av Internet-leverantörer innan de godkänner att få dina e-postmeddelanden.
+* **[!UICONTROL IP and RBL domain]** (Blackutjämlista i realtid): En lista över IP-adresser och domäner som har flaggats av blocklistorganisationer för dåligt sändningsrykte. Listorna hanteras av särskilda organisationer som Spamhaus, Spampolis, SURBL/URIBL osv. Adobe Campaign utför för närvarande kontroller mot RBL:er som har en betydande inverkan på leveransen. Dessa URL:er återspeglar avsändarens anseende och kan refereras av Internet-leverantörer innan de godkänner att få dina e-postmeddelanden.
 
 * **[!UICONTROL SNDS]** (Data Services för smarta nätverk): En [Windows Live Hotmail-tjänst mot skräppost](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail är den enda Internet-leverantör som tillhandahåller den här typen av information. Benchmark-poängen är ett grönt filterresultat, en klagofrekvens på mindre än 0,1 % och noll skräppostsvällningar.
 
