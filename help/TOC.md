@@ -1,19 +1,19 @@
 ---
 audience: end-user
-user-guide-title: Hjälp om Adobe Campaign Classic
+user-guide-title: Hjälp för Adobe Campaign Classic
 index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
 
 
-# Hjälp om Adobe Campaign Classic {#using}
+# Hjälp för Adobe Campaign Classic {#using}
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
@@ -28,11 +28,11 @@ ht-degree: 0%
       + [Version 18.4](rn/using/release--18-4.md)
    + [Föråldrade funktioner](rn/using/deprecated-features.md)
 + Komma igång {#getting-started}
-   + Börja med Adobe Campaign {#starting-with-adobe-campaign}
+   + Från Adobe Campaign {#starting-with-adobe-campaign}
       + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Sekretess och rekommendationer](platform/using/privacy-and-recommendations.md)
       + [Startar Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Arbetsytan i Adobe Campaign](platform/using/adobe-campaign-workspace.md)
+      + [Adobe Campaign arbetsyta](platform/using/adobe-campaign-workspace.md)
       + Vanliga frågor {#faq}
          + [Vanliga frågor](platform/using/common-questions.md)
          + [Viktiga begrepp](platform/using/faq-key-concepts.md)
@@ -161,7 +161,7 @@ ht-degree: 0%
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Bästa praxis för återanvändning](delivery/using/re-engagement-best-practices.md)
-      + [Svartlistade databaser](delivery/using/blacklisting-databases.md)
+      + [Blocklistedatabaser](delivery/using/block-list-databases.md)
       + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
@@ -309,8 +309,8 @@ ht-degree: 0%
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
-   + Ansluta via ett Adobe-ID {#connecting-via-an-adobe-id}
-      + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+   + Ansluta via ett Adobe ID {#connecting-via-an-adobe-id}
+      + [Om [!DNL-Adobe ID]](integrations/using/about-adobe-id.md)
       + [Konfigurerar [!DNL IMS]](integrations/using/configuring-ims.md)
       + [Implementera [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
@@ -439,7 +439,7 @@ ht-degree: 0%
       + [Om tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
       + [Leveranser](workflow/using/deliveries.md)
       + [Campaign](workflow/using/campaign.md)
-      + [Webbanalys](workflow/using/web-analytics.md)
+      + [Web Analytics](workflow/using/web-analytics.md)
       + [Distribuerad marknadsföring](workflow/using/distributed-marketing.md)
       + [Leveransövervakning](workflow/using/email-deliverability.md)
       + [Inkorgsåtergivning](workflow/using/inbox-rendering.md)
@@ -594,7 +594,7 @@ ht-degree: 0%
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
       + [Kampanjserverkonfiguration](installation/using/campaign-server-configuration.md)
       + [Distribuera en instans](installation/using/deploying-an-instance.md)
-      + [Installera standardpaket för Campaign Classic](installation/using/installing-campaign-standard-packages.md)
+      + [Installera Campaign Classic-standardpaket](installation/using/installing-campaign-standard-packages.md)
    + Ytterligare konfigurationer {#additional-configurations}
       + [Konfigurerar Campaign-server](installation/using/configuring-campaign-server.md)
       + [Ansluta via LDAP](installation/using/connecting-through-ldap.md)
@@ -609,9 +609,9 @@ ht-degree: 0%
       + [Slutpunkter för kampanjnätverk](installation/using/campaign-network-endpoints.md)
       + [Kommandorader](installation/using/command-lines.md)
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
-      + [Lista med alternativ för Campaign Classic](installation/using/configuring-campaign-options.md)
+      + [Lista över alternativ för Campaign Classic](installation/using/configuring-campaign-options.md)
       + [Avinstallerar Campaign](installation/using/uninstalling-campaign.md)
-+ Övervaka kampanj Classic {#monitoring-campaign-classic}
++ Övervaka Campaign Classic {#monitoring-campaign-classic}
    + Introduktion {#introduction}
       + [Förord](production/using/foreword.md)
       + [Allmän arkitektur](production/using/general-architecture.md)
@@ -629,7 +629,7 @@ ht-degree: 0%
       + [Återställning](production/using/restoration.md)
       + [Duplicera miljöer](production/using/duplicating-environments.md)
       + [Arbetsflöde för databasrensning](production/using/database-cleanup-workflow.md)
-   + Uppdatera Adobe Campaign {#updating-adobe-campaign}
+   + Uppdaterar Adobe Campaign {#updating-adobe-campaign}
       + [Introduktion](production/using/introduction.md)
       + [Uppgraderar](production/using/upgrading.md)
       + [Växla till Unicode](production/using/switching-to-unicode.md)
@@ -657,7 +657,7 @@ ht-degree: 0%
       + [Konsoluppdatering](production/using/console-update.md)
       + [Lösenordet har gått förlorat](production/using/lost-password.md)
       + [JSP-beteende](production/using/jsp-behavior.md)
-+ Konfigurera Campaign Classic {#configuring-campaign-classic}
++ Konfigurerar Campaign Classic {#configuring-campaign-classic}
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
       + [Beskrivning av datamodell](configuration/using/data-model-description.md)
@@ -724,7 +724,7 @@ ht-degree: 0%
       + [Innan du startar migreringen](migration/using/before-starting-migration.md)
       + [Testa migreringen](migration/using/testing-the-migration.md)
       + [Konfigurera din plattform](migration/using/configuring-your-platform.md)
-   + Migrera till Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
+   + Migrerar till Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
       + [Krav för migrering till Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
       + [Migrera i Windows för Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrera i Linux för Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
