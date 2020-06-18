@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Så här konfigurerar du Azure Synapse på CentOS:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kanske du måste vitlista din offentliga IP-adress. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i listan över tillåtna. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Om det är iptables kör du följande kommando:
 
@@ -223,7 +223,7 @@ Så här konfigurerar du Azure Synapse på Debian:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kanske du måste vitlista din offentliga IP-adress. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i listan över tillåtna. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Konfigurera åtkomst till Snowflake {#configure-access-to-snowflake}
 
@@ -262,7 +262,7 @@ Kopplingen stöder följande alternativ:
 |---|---|
 | arbetsschema | Databasschema som ska användas för arbetsregister |
 | lagerställe | Namnet på standardlagerstället som ska användas. Det åsidosätter användarens standardvärde. |
-| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för Campaign Classic-appservern används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Mer information finns på [den här sidan](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
 | AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade Snowflake-resultat. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 
@@ -548,7 +548,7 @@ För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigur
 
    Skapa sedan en ny TNS_ADMIN-miljövariabel: exportera TNS_ADMIN=/etc/oracle och starta om datorn.
 
-1. Integrera Oracle med er Adobe Campaign-server (nlserver). Det gör du genom att kontrollera att filen **customer.sh** finns i mappen &quot;nl6&quot; i serverstrukturen för Adobe Campaign och att den innehåller länkarna till Oracle-biblioteken.
+1. Integrera Oracle med Adobe Campaign-servern (nlserver). Det gör du genom att kontrollera att filen **customer.sh** finns i mappen &quot;nl6&quot; i trädstrukturen för Adobe Campaign och att den innehåller länkar till Oracle-biblioteken.
 
    Exempel: för en klient i 11.2:
 
