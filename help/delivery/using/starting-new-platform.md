@@ -1,6 +1,6 @@
 ---
 title: Starta en ny plattform med Adobe Campaign Classic
-description: Läs mer om hur du hanterar slutprodukter när du startar en ny plattform med Adobe Campaign Classic.
+description: Lär dig mer om hur du hanterar leveranser när du startar en ny plattform med Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Det är viktigt att du behåller domänens och IP-adressens anseende när du ska
 
 * Att börja skicka e-post är ett känsligt steg eftersom plattformen inte har någon historik över användning och, när de avsändande IP-adresserna aldrig har använts för detta ändamål, inget anseende.
 
-* Internetleverantörer misstänker naturligtvis IP-adresser som aldrig har använts för att skicka e-post och som plötsligt börjar skicka stora volymer e-posttrafik. För skräppost används i allmänhet&quot;okända&quot; IP-adresser (adresser som aldrig har svartlistats) för att skicka så många meddelanden som möjligt innan de upptäcks.
+* Internetleverantörer misstänker naturligtvis IP-adresser som aldrig har använts för att skicka e-post och som plötsligt börjar skicka stora volymer e-posttrafik. För skräppost används i allmänhet&quot;okända&quot; IP-adresser (adresser som aldrig har lagts till i en blocklista) för att skicka så många meddelanden som möjligt innan de upptäcks.
 
 * Du kan inte förvänta dig att uppnå driftshastighet i form av utdata i början av produktionsfasen. Du bör inte heller försöka skicka meddelanden i den här hastigheten eftersom det kan leda till att internetleverantörerna blockerar sändningsadresserna och allvarligt äventyrar resten av startfasen.
 
