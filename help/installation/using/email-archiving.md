@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '1304'
+ht-degree: 0%
 
 ---
 
 
 # E-postarkivering{#email-archiving}
 
-Du kan konfigurera Adobe Campaign så att det behåller en kopia av e-postmeddelanden som skickas från din plattform.
+Du kan konfigurera Adobe Campaign så att en kopia av e-postmeddelanden som skickas från din plattform sparas.
 
-Men Adobe Campaign hanterar inte själva arkiverade filer. Det gör att du kan skicka meddelanden till en dedikerad adress, varifrån de kan bearbetas och arkiveras i ett externt system.
+Adobe Campaign hanterar dock inte själva arkiverade filer. Det gör att du kan skicka meddelanden till en dedikerad adress, varifrån de kan bearbetas och arkiveras i ett externt system.
 
 För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddelanden till en fjärrserver, till exempel en SMTP-e-postserver. Arkiveringsmålet är en e-postadress (osynlig för leveransmottagarna) som du måste ange.
 
@@ -36,7 +39,7 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 * Du kan bara använda en e-postadress för hemlig kopia.
 * När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via **[!UICONTROL Archive emails]** alternativet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
-* E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har använt e-postarkivering måste du uppgradera manuellt till det nya systemet för e-postarkivering. Mer information finns i avsnittet [Uppdaterat arkiveringssystem för e-post (BCC)](#updated-email-archiving-system--bcc-) .
+* E-postarkiveringssystemet ändrades med Adobe Campaign 17.2 (build 8795). Om du redan har använt e-postarkivering måste du uppgradera manuellt till det nya systemet för e-postarkivering. Mer information finns i avsnittet [Uppdaterat arkiveringssystem för e-post (BCC)](#updated-email-archiving-system--bcc-) .
 
 ## Aktivera e-postarkivering (lokalt) {#activating-email-archiving--on-premise-}
 
@@ -46,7 +49,7 @@ Följ stegen nedan för att aktivera BCC-e-postarkivering när Adobe Campaign ä
 
 Om du vill aktivera överföring av skickade e-postmeddelanden till en e-postadress för hemlig kopia, måste du först spara exakta kopior av skickade e-postmeddelanden som .eml-filer i en lokal mapp.
 
-Sökvägen till den lokala mappen måste anges i filen **config-`<instance>`.xml** från konfigurationen. Till exempel:
+Sökvägen till den lokala mappen måste anges i filen **config-`<instance>`.xml** från konfigurationen. Exempel:
 
 ```
 <mta dataLogPath="C:\emails">
@@ -56,13 +59,13 @@ Sökvägen till den lokala mappen måste anges i filen **config-`<instance>`.xml
 >
 >Det är teamets ansvar att se till att skyddsinställningarna tillåter åtkomst till den mapp som definieras med **dataLogPath** -parametrarna.
 
-Den fullständiga sökvägen är följande: **`<datalogpath>  YYYY-MM-DDHHh`**. Datum och tid anges enligt MTA-serverns klocka (UTC). Till exempel:
+Den fullständiga sökvägen är följande: **`<datalogpath>  YYYY-MM-DDHHh`**. Datum och tid anges enligt MTA-serverns klocka (UTC). Exempel:
 
 ```
 C:\emails\2018-12-02\13h
 ```
 
-Arkivfilens namn är **`<deliveryid>-<broadlogid>.eml`** när e-postmeddelandets status inte är **[!UICONTROL Sent]**. När statusen har ändrats till **[!UICONTROL Sent]** blir filnamnet **`<deliveryid>-<broadlogid>-sent.eml`**. Till exempel:
+Arkivfilens namn är **`<deliveryid>-<broadlogid>.eml`** när e-postmeddelandets status inte är **[!UICONTROL Sent]**. När statusen har ändrats till **[!UICONTROL Sent]** blir filnamnet **`<deliveryid>-<broadlogid>-sent.eml`**. Exempel:
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -132,7 +135,7 @@ Använd följande parametrar i **config-`<instance name>.xml`**-filen för att d
 
 >[!CAUTION]
 >
->BCC (e-postarkivering) har ändrats med Adobe Campaign 17.2 (build 8795). Om du uppgraderar från en äldre version och redan har använt e-postarkiveringsfunktioner måste du uppgradera manuellt till det nya systemet för e-postarkivering.
+>E-postarkiveringssystemet (BCC) har ändrats med Adobe Campaign 17.2 (build 8795). Om du uppgraderar från en äldre version och redan har använt e-postarkiveringsfunktioner måste du uppgradera manuellt till det nya systemet för e-postarkivering.
 
 Gör följande ändringar i **`config-<instance>.xml`** filen:
 
@@ -151,5 +154,5 @@ När du har konfigurerat BCC för e-post måste du välja **[!UICONTROL Archive 
    * Om du använder samma MTA för flera instanser (utveckling, test, prod) för en enskild klient, dupliceras meddelandena som skickas från alla tre instanserna med alternativet dataLogPath.
 
 * **E-post per anslutning**: BCC-arkivering av e-post fungerar genom att öppna en anslutning och försöka skicka alla e-postmeddelanden via den anslutningen. Adobe rekommenderar att du kontaktar din interna tekniska kontakt för att kontrollera antalet e-postmeddelanden som accepteras för en viss anslutning. Om du ökar det här antalet kan det påverka genomströmningen av BCC avsevärt.
-* **BCC skickar IP**: För närvarande skickas inte BCC-e-post via de vanliga MTA-proxyadresserna. I stället öppnas en direktanslutning från MTA-servern till målservern för e-post. Det innebär att du kan behöva vitlista ytterligare IP-adresser i nätverket, beroende på e-postserverkonfigurationen.
+* **BCC skickar IP**: För närvarande skickas inte BCC-e-post via de vanliga MTA-proxyadresserna. I stället öppnas en direktanslutning från MTA-servern till målservern för e-post. Det innebär att du kan behöva lägga till ytterligare IP-adresser i listan över tillåtna IP-adresser i nätverket, beroende på din e-postserverkonfiguration.
 
