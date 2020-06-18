@@ -1,5 +1,5 @@
 ---
-title: Förbättra ditt rykte med Adobe Campaign Classic
+title: Förbättra ditt rykte när du använder Adobe Campaign Classic
 description: Läs mer om hur du kan förbättra ditt rykte med Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 0%
 
 ---
 
 
 # Förbättra ert rykte{#improve-reputation}
 
-Du kan undvika att mottagarna blir trötta genom att ta bort dubbla e-postadresser från målet. Det här steget skyddar ditt sändningsrykte och garanterar en god karantänhantering. Adobe Campaign har de verktyg som krävs för att implementera dessa rekommendationer och undvika risken att bli svartlistad av Internet-leverantören.
+Du kan undvika att mottagarna blir trötta genom att ta bort dubbla e-postadresser från målet. Det här steget skyddar ditt sändningsrykte och garanterar en god karantänhantering. Adobe Campaign har de verktyg som krävs för att implementera dessa rekommendationer och undviker risken att läggas till i en blocklista av Internet-leverantören.
 
 För att så mycket som möjligt undvika dubbletter måste följande åtgärder utföras:
 
@@ -42,7 +45,7 @@ Att ha dubbla e-postadresser kan få flera följder:
 * Samma meddelande skickas mer än en gång. Även om Campaign utför en dedupliceringsprocedur som standard innan det skickas, finns det inget som hindrar att samma meddelande skickas av olika åtgärder med samma innehåll när ett mål delas.
 * Begäran om att avbryta prenumerationen har inte uppfyllts. Om en mottagare säger upp prenumerationen efter att ha fått ett meddelande, är deras duplicerade profil fortfarande berättigad till framtida meddelanden.
 
-Förutom detta steg i anmälningsförfarandet kommer denna situation sannolikt att leda användarna till att betrakta meddelandena som skräppost och till att utlösa ett förfarande för svartlistning hos Internet.
+Förutom detta steg i anmälningsprocessen kommer denna situation sannolikt att leda till att användarna ser meddelandena som skräppost och att utlösa en blockeringslistprocedur hos Internet-leverantören.
 
 Du måste vara särskilt försiktig när du utför åtgärder i databasen:
 
