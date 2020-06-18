@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
@@ -47,8 +50,6 @@ Följande exempel söker efter en lista över mottagare i åldrarna 18 till 30 �
 1. Kör arbetsflödet. I det här exemplet består resultatet av mottagare mellan 18 och 30 år, men de som bor i Paris utesluts och skickas till komplementet.
 
    ![](assets/exclusion_example.png)
-
-Exemplet med svartlistsimport använder en aktivitet av typen **Uteslutning** som finns i [Läslista](../../workflow/using/read-list.md).
 
 ## Indataparametrar {#input-parameters}
 
