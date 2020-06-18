@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
 
 ## Allmän information {#general-information}
 
-Alla API-metoder presenteras i form av webbtjänster. På så sätt kan ni hantera alla Adobe Campaign-funktioner via SOAP-anrop, som är startpunkten för Adobe Campaign-programservern. Adobe Campaign-konsolen använder bara SOAP-anrop.
+Alla API-metoder presenteras i form av webbtjänster. På så sätt kan du hantera alla Adobe Campaign-funktioner via SOAP-anrop, som är startpunkten för programservern Adobe Campaign. Adobe Campaign-konsolen använder bara SOAP-anrop.
 
 Med webbtjänster kan du skapa många program från ett tredjepartssystem:
 
@@ -34,7 +37,7 @@ Med webbtjänster kan du skapa många program från ett tredjepartssystem:
 
 ## Definition av webbtjänster {#definition-of-web-services}
 
-Definitionen av de webbtjänster som implementeras på Adobe Campaign-programservern är tillgänglig från datamappningarna.
+Definitionen av de webbtjänster som implementeras på programservern i Adobe Campaign är tillgänglig från datamappningarna.
 
 En webbtjänst beskrivs i datamappningens grammatik och är tillgänglig från **`<methods>`** elementet.
 
@@ -59,7 +62,7 @@ Förekomsten av attributet&quot;static&quot; (med värdet&quot;true&quot;) beskr
 
 En const-metod har implicit ett XML-dokument i det associerade schemats format som indata.
 
-En fullständig beskrivning av elementet `<method>` i ett Adobe Campaign-schema finns i kapitlet&quot;Schemareferenser&quot; under <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    -element.
+En fullständig beskrivning av elementet `<method>` i ett Adobe Campaign-schema finns i kapitlet &quot;Schemareferenser&quot; under  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    -element.
 
 Exempel på &quot;const&quot;-typ &quot;ExecuteQuery&quot;-metoden från schemat &quot;xtk:queryDef&quot;:
 
@@ -86,7 +89,7 @@ Om du vill generera en WSDL-fil måste du ange följande URL från en webbläsar
 
 Med:
 
-* **`<server>`**: Adobe Campaign-programservern (nlserver web)
+* **`<server>`**: programservern Adobe Campaign (webbserver)
 * **`<schema>`**: schema-ID-nyckel (namespace:schema_name)
 
 ### Exempel på metoden ExecuteQuery i schemat xtk:queryDef {#example-on-the--executequery--method-of-schema--xtk-querydef-}
@@ -181,7 +184,7 @@ Delen anger `<binding>` SOAP-kommunikationsprotokollet ( `<soap:binding>` ), dat
 
 #### Tjänst {#service}
 
-Delen beskriver `<service>` tjänsten XtkQueryDef med dess URI på webbadressen för Adobe Campaign-programservern.
+Delen beskriver `<service>` tjänsten XtkQueryDef med dess URI på URL:en för programservern i Adobe Campaign.
 
 ```
 <service name="XtkQueryDef">
@@ -220,7 +223,7 @@ Säkerhetstoken har följande egenskaper:
 
 * den genereras från sessionstoken
 * har en 24-timmars livscykel (konfigurerbar i filen serverConf.xml, standardperioden är 24 timmar)
-* lagras i Adobe Campaign-konsolen
+* den lagras i Adobe Campaign-konsolen
 * på webben:
 
    * det lagras i ett dokument.__securityToken, egenskap
@@ -281,7 +284,7 @@ Från ett SOAP-anrop:
 
 >[!NOTE]
 >
->De URL:er som används i följande **HttpServletRequest** -anrop måste vitlistas i url-behörighetsavsnittet i **filen serverConf.xml** . Detta gäller även för serverns URL.
+>De URL:er som används i följande **HttpServletRequest** -anrop måste finnas i listan över tillåtna i avsnittet url-behörigheter i **filen serverConf.xml** . Detta gäller även för serverns URL.
 
 Inloggningskörning():
 
