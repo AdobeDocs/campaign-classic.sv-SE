@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Du kan också länka filtreringsregler direkt via den här fliken utan att grupp
 
 Två filtreringsregler är tillgängliga som standard: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) och **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Under e-postanalysen jämför dessa regler mottagarnas e-postadresser med de förbjudna adresserna eller domännamnen i en krypterad global undertryckningslista som hanteras i leveransinstansen. Om det finns en matchning skickas inte meddelandet till den mottagaren.
 
-Detta för att undvika att bli svartlistad på grund av skadlig aktivitet, särskilt användning av en svampfälla. Om en svällning till exempel används för att prenumerera via ett av dina webbformulär, skickas ett bekräftelsemeddelande via e-post till den svällningen, vilket gör att din adress automatiskt blir svartlistad.
+Detta för att undvika att läggas till i blockeringslistan på grund av skadlig aktivitet, särskilt användning av en svällning. Om en svällning till exempel används för att prenumerera via ett av dina webbformulär, skickas ett bekräftelsemeddelande via e-post till den svällningen, vilket gör att din adress automatiskt läggs till i blocklistan.
 
 >[!NOTE]
 >
