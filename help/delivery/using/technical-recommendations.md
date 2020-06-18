@@ -1,6 +1,6 @@
 ---
 title: Tekniska rekommendationer för förbättrad leverans med Adobe Campaign Classic
-description: Upptäck tekniker, konfigurationer och verktyg som ni kan använda för att förbättra leveransgraden med Adobe Campaign Classic.
+description: Upptäck tekniker, konfigurationer och verktyg som du kan använda för att förbättra leveransfrekvensen med Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2436'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Flera tekniker, konfigurationer och verktyg som du kan använda för att förbä
 
 ### Omvänd DNS {#reverse-dns}
 
-Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta korrekt pekar tillbaka till IP-adressen.
+Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta pekar tillbaka till IP-adressen.
 
 En viktig punkt i nätverkskonfigurationen är att se till att rätt omvänd DNS har definierats för var och en av IP-adresserna för utgående meddelanden. Det innebär att det för en viss IP-adress finns en omvänd DNS-post (PTR-post) med matchande DNS-post (A-post) som repeterar den ursprungliga IP-adressen.
 
@@ -85,7 +85,7 @@ DKIM kräver vissa förutsättningar:
 
 * **Säkerhet**: Kryptering är en viktig del av DKIM och för att försäkra sig om att DKIM:s säkerhetsnivå sedan våren 2013 är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
 * **Anseende**: anseendet baseras på IP-adressen och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: Undvik att behålla&quot;standardinställningen&quot; som kan användas av alla och därför har ett mycket svagt rykte. Du måste implementera en annan väljare för **kundlojalitet jämfört med kundvärvning** och för autentisering.
-* **Adobe Campaign-alternativdeklaration**: i Adobes kampanj baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering i varken plattformen eller e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
+* **Deklaration** för alternativ i Adobe Campaign: i Adobes kampanj baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering i varken plattformen eller e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Recommendations for defining an SPF record:
 
 ## Feedback-slinga {#feedback-loop}
 
-En feedback-slinga fungerar genom att på Internet-nivå deklarera en given e-postadress för ett intervall av IP-adresser som används för att skicka meddelanden. Internet-leverantören skickar till den här postlådan, på ungefär samma sätt som för studsmeddelanden, de meddelanden som rapporteras av mottagarna som skräppost. Plattformen bör konfigureras för att blockera framtida leveranser till användare som har klagat. Det är viktigt att du inte längre kontaktar dem även om de inte använde rätt avanmälningslänk. På grundval av dessa klagomål kommer en Internet-leverantör att svartlista en IP-adress. Beroende på Internet-leverantören kommer en klagofrekvens på ungefär 1 % att resultera i en svartlista över en IP-adress.
+En feedback-slinga fungerar genom att på Internet-nivå deklarera en given e-postadress för ett intervall av IP-adresser som används för att skicka meddelanden. Internet-leverantören skickar till den här postlådan, på ungefär samma sätt som för studsmeddelanden, de meddelanden som rapporteras av mottagarna som skräppost. Plattformen bör konfigureras för att blockera framtida leveranser till användare som har klagat. Det är viktigt att du inte längre kontaktar dem även om de inte använde rätt avanmälningslänk. På grundval av dessa klagomål kommer en Internet-leverantör att lägga till en IP-adress i sin blockeringslista. Beroende på Internet-leverantören kommer en klagofrekvens på ungefär 1 % att leda till att en IP-adress blockeras.
 
 En standard håller på att utarbetas för att definiera formatet för meddelanden med feedback-slingor: ARF ( [Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -147,7 +147,7 @@ Implementering av en feedbackslinga för en instans kräver:
 * En postlåda som är dedikerad till instansen, som kan vara studspostlådan
 * IP-adresser som är dedikerade till instansen
 
-Implementering av en enkel feedbackslinga i Adobe Campaign använder funktionen för studsmeddelanden. Postlådan för feedbackslingan används som studspostlåda och en regel definieras för att identifiera dessa meddelanden. E-postadresserna till mottagarna som rapporterade meddelandet som skräppost läggs till i karantänlistan.
+När du implementerar en enkel feedbackslinga i Adobe Campaign används funktionen för studsmeddelanden. Postlådan för feedbackslingan används som studspostlåda och en regel definieras för att identifiera dessa meddelanden. E-postadresserna till mottagarna som rapporterade meddelandet som skräppost läggs till i karantänlistan.
 
 * Skapa eller ändra en studs-postregel, **Feedback_loop**, i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** med orsaken **Refused** och typen **Hard**.
 * Om en postlåda har definierats särskilt för feedbackslingan definierar du parametrarna som ska få åtkomst till den genom att skapa ett nytt externt studentkonto i **[!UICONTROL Administration > Platform > External accounts]**.
@@ -163,7 +163,7 @@ Om du tvingas använda en enda slingadress för feedback för flera instanser m�
 
 * Replikera de meddelanden som tas emot på så många postlådor som det finns instanser av,
 * få varje postlåda upphämtad i en enda instans,
-* Konfigurera instanserna så att de endast bearbetar de meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet i meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara parametern **checkInstanceName** i instanskonfigurationsfilen (instansen verifieras inte som standard och detta kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
+* Konfigurera instanserna så att de endast bearbetar de meddelanden som berör dem: Instansinformationen ingår i Message-ID-huvudet i meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara parametern **checkInstanceName** i instanskonfigurationsfilen (instansen verifieras inte som standard och detta kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
 
    ```
    <serverConf>
@@ -171,7 +171,7 @@ Om du tvingas använda en enda slingadress för feedback för flera instanser m�
    </serverConf>
    ```
 
-Adobe Campaigns leveranstjänst hanterar din prenumeration på tjänster för feedback-slingor för följande internetleverantörer: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+Adobe Campaign Deliverability-tjänsten hanterar din prenumeration på tjänster för feedback-slingor för följande Internet-leverantörer: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -254,11 +254,11 @@ Adobe tillhandahåller en dedikerad IP-strategi för varje kund med en IP-först
 
 ## IP-certifiering {#ip-certification}
 
-IP-certifiering är ett program för vitlistning och sändningsmetoder som hjälper till att säkerställa att e-post tas emot utan att blockeras av antispamfilter eller andra e-postblockeringssystem.
+IP-certifiering är ett program för att skicka beprövade metoder som hjälper till att säkerställa att e-postmeddelanden tas emot utan att blockeras av antispamfilter eller andra e-postblockeringssystem.
 
 För närvarande erbjuder två leverantörer IP-certifiering: Return Path och Certified Senders Alliance.
 
-Certifierade avsändare läggs till i e-postvitlistor som används av globala postlådeproviders och e-postsäkerhetsföretag. Dessa kommersiella vitlistor är baserade på ett system som gör att avsändaren kan kringgå skräppostfilter helt eller delvis eller tilldelas inkrementella punkter när de kommer in i systemet.
+Certifierade avsändare läggs till i e-postlistor som tillåts av globala postlådeproviders och e-postsäkerhetsföretag. Dessa kommersiella tillståndslistor är baserade på ett system som gör det möjligt för avsändaren att kringgå skräppostfilter helt eller tilldelas inkrementella punkter när de kommer in i systemet.
 
 Programmet [Return Path Certification](https://www.validity.com/products/returnpath/certification/) har flera fördelar:
 
@@ -275,6 +275,6 @@ Certifieringen [Certified Senders Alliance](https://certified-senders.org/certif
 * Skydd mot juridiska och ekonomiska risker genom att till fullo följa rättsliga normer
 * Skydda anseendet genom tidiga varningar från CSA:s anmälningskontor och dagliga rapporter om skräppostfällor
 
-Internetleverantörer får använda dessa tjänster och antalet internetleverantörer kan variera beroende på vitlistan.
+Internetleverantörer får använda dessa tjänster och antalet internetleverantörer kan variera beroende på listan över tillåtna leverantörer.
 
 Men eftersom allt fler Internet-leverantörer bygger sina antispamfilter baserat på varje inkorgsägares beteende i stället för att analysera själva meddelandeinnehållet, kan IP-certifiering inte vara en garanti för inkorgsplacering eller till och med leverans.
