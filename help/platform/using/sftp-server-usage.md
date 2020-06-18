@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer god praxis n
 
 >[!NOTE]
 >
->Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Control Panel](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
+>Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic på [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
 >
 >Följ stegen i [det här avsnittet](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) för att kontrollera om din instans finns på AWS.
 
@@ -47,7 +50,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer god praxis n
 * Det kan hända att du loggar in på SFTP för att direkt kontrollera vad som finns där.
 * Kom ihåg att SFTP-diskhantering i första hand är ditt ansvar.
 * Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
-* De offentliga IP-adresser som du försöker initiera SFTP-anslutningen från måste vitlistas i Campaign-instansen. Vitlistning av IP-adresser kan begäras via en [supportanmälan](https://support.neolane.net).
+* De offentliga IP-adresser som du försöker initiera SFTP-anslutningen från måste läggas till i listan över tillåtna i Campaign-instansen. Du kan begära att få lägga till IP-adresser i listan över tillåtna via en [supportanmälan](https://support.neolane.net).
 
 >[!CAUTION]
 >
@@ -89,7 +92,7 @@ I avsnittet nedan visas den information som ska kontrolleras och tillhandahålla
 
    Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med Adobe Support-teamet.
 
-1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för vitlistning.
+1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för listan över tillåtna.
 1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Därför rekommenderar vi starkt att du använder nyckelbaserad autentisering (se [Bästa praxis](#sftp-server-best-practices)för SFTP-server).
 1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för Adobe Support-teamet för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
