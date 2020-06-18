@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
@@ -51,13 +54,13 @@ Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Eftersom mottagarna av den här leveransen inte har bekräftat sitt godkännande är de fortfarande svartlistade i databasen. För att de ska kunna ta emot den här informationen måste du godkänna leveranser som baseras på den här mallen för att rikta sig till svartlistade mottagare.
+1. Eftersom mottagarna av den här leveransen inte har bekräftat sitt godkännande finns de fortfarande kvar i databasblocklistan. För att de ska kunna ta emot den här kommunikationen måste du godkänna leveranser som baseras på den här mallen för målmottagare som finns i blocklistan.
 
    Klicka på **[!UICONTROL Exclusions]** fliken om du vill göra det.
 
-1. Klicka på **[!UICONTROL Edit...]** länken och avmarkera **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** alternativet.
+1. Klicka på **[!UICONTROL Edit...]** länken och avmarkera **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** alternativet.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)
+   <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
    >[!CAUTION]
    >
@@ -109,10 +112,10 @@ Gör så här:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Den första **[!UICONTROL Script]** aktiviteten gör att mottagare blir svarta tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
+   Den första **[!UICONTROL Script]** aktiviteten lägger till mottagare i blockeringslistan tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
 
    ```
-   ctx.recipient.@blackList=1
+   ctx.recipient.@blockList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +123,7 @@ Gör så här:
    Den andra **[!UICONTROL Script]** aktiviteten tillåter att leveranser skickas till användarna och prenumererar på dem i nyhetsbrevet. De sista två raderna i skriptet gör att du kan överföra dina mottagare från den tillfälliga mappen till en annan mapp och stämma av med befintliga profiler så fort de har bekräftat prenumerationen.
 
    ```
-   ctx.recipient.@blackList=0
+   ctx.recipient.@blockList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +175,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen, och deras profil är svartlistad tills de bekräftar sin prenumeration med e-postmeddelandet.
+   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen, och deras profil läggs till i blocklistan tills de bekräftar sin prenumeration med e-postmeddelandet.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +189,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    I Adobe Campaign uppdateras användarprofilen:
 
-   * de inte längre är svartlistade,
+   * De finns inte längre med i blockeringslistan.
    * de prenumererar på informationstjänsten.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
