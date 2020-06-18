@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ Den här skärmen innehåller alla allmänna data om den valda profilen. Den inn
 
 >[!NOTE]
 >
->När du väljer **[!UICONTROL No longer contact (by any channel)]** alternativet innebär det att profilen är svartlistad, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
+>När du väljer **[!UICONTROL No longer contact (by any channel)]** alternativet innebär det att profilen finns i blocklistan, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
 ## Fliken Kontaktinformation {#contact-information-tab}
 
@@ -82,7 +85,7 @@ Den här skärmen innehåller de informationstjänster som profilen har prenumer
 
 Knappen **[!UICONTROL Detail]** visar egenskaperna för den valda prenumerationen. Knappen **[!UICONTROL Add]** används för att lägga till en ny prenumeration manuellt.
 
-Mer information finns på [den här sidan](../../delivery/using/managing-subscriptions.md).
+For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
 ## Fliken Leveranser {#deliveries-tab}
 
