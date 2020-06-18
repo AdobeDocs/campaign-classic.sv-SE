@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 # Serverkonfigurationsfilen{#the-server-configuration-file}
 
-Den övergripande konfigurationen för Adobe Campaign definieras i filen **serverConf.xml** , som finns i katalogen **conf** i installationskatalogen. I det här avsnittet visas alla olika noder och parametrar för **filen serverConf.xml** .
+Den övergripande konfigurationen för Adobe Campaign definieras i filen **serverConf.xml** som finns i katalogen **conf** i installationskatalogen. I det här avsnittet visas alla olika noder och parametrar för **filen serverConf.xml** .
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ Här är de olika parametrarna för **dataStore** -noden. Här definieras server
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> Auktoriserade filer som ska laddas ned avgränsade med ','. Strängen måste vara ett giltigt, reguljärt java-uttryck. Se <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Begränsa överförbara filer</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ Mer information finns i [Begränsa tillåtna externa kommandon](../../installati
  </thead> 
  <tbody> 
   <tr> 
-   <td> svartlistFile<br /> </td> 
-   <td> Sökväg till filen som innehåller de kommandon som ska svartlistas. <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> Sökväg till filen som innehåller de kommandon som ska läggas till i listan Tillåt. <br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
@@ -907,7 +907,7 @@ Här är de olika parametrarna för **treadPool** -noden.
 
 Här är de olika parametrarna för **urlPermission** -noden. Det här är listan med URL:er som JavaScript-koden har åtkomst till.
 
-Lista över domäner och reguljära uttryck som anger om en URL som påträffas i JavaScript-koden kan användas eller inte av Adobe Campaign-servern.
+Lista över domäner och reguljära uttryck som anger om en URL som påträffas i Javascript-koden kan användas eller inte av Adobe Campaign-servern.
 
 Om det inte går att hitta URL:en utförs standardåtgärden enligt det angivna standardläget.
 
@@ -3061,7 +3061,7 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
   </tr> 
   <tr> 
    <td> httpAllowed<br /> </td> 
-   <td> HTTP-åtkomst tillåten oavsett säkerhetszon (som webApps). <br /> </td> 
+   <td> HTTP-åtkomst auktoriserad oavsett säkerhetszon (som webApps). <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synkroniseringsstatus för en offentlig resurs (uppräkning). Möjliga värden är 'normal' (normal körning), 'svartlista' (url svartlist vid fel 404) och 'reserv' (filöverföring på reservserver om sådan finns).<br /> </td> 
+   <td> Synkroniseringsstatus för en offentlig resurs (uppräkning). Möjliga värden är 'normal' (normal körning), 'blocklist' (url tillagd i blocklistan vid fel 404) och 'free' (filöverföring på reservserver om sådan finns).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ Här är standardkonfigurationen:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
@@ -3219,7 +3219,7 @@ Mer information finns i det här [avsnittet](../../installation/using/deploying-
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> IMS-organisationsidentifierare: en unik organisationsidentifierare i Adobe Marketing Cloud, som särskilt används för VisitorID-tjänsten och IMS SSO. <br /> </td> 
+   <td> IMS-organisationsidentifierare: Unik organisationsidentifierare i Adobe Marketing Cloud, som särskilt används för VisitorID-tjänsten och IMS SSO. <br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
