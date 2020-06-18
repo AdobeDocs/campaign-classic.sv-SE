@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+workflow-type: tm+mt
+source-wordcount: '2472'
+ht-degree: 0%
 
 ---
 
@@ -34,21 +37,21 @@ Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress
 
 De profiler vars e-postadresser eller telefonnummer är i karantän exkluderas automatiskt vid meddelandeförberedelsen (se [Identifiera karantänadresser för en leverans](#identifying-quarantined-addresses-for-a-delivery)). Detta snabbar upp leveranserna eftersom felfrekvensen påverkar leveranshastigheten avsevärt.
 
-Vissa leverantörer av internetåtkomst betraktar automatiskt e-post som skräppost om antalet ogiltiga adresser är för högt. Karantän gör att ni kan undvika att dessa leverantörer blir svarta.
+Vissa leverantörer av internetåtkomst betraktar automatiskt e-post som skräppost om antalet ogiltiga adresser är för högt. Med karantän kan du därför undvika att läggas till i en blockeringslista av dessa leverantörer.
 
 Dessutom bidrar karantäner till att minska SMS-sändningskostnaderna genom att utesluta felaktiga telefonnummer från leveranser. Mer information om de bästa sätten att skydda och optimera leveranser finns på [den här sidan](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
 
-### Karantän jämfört med svartlistning {#quarantine-vs-blacklisting}
+### Karantän mot blocklista {#quarantine-vs-block-list}
 
 **Karantän** gäller bara en adress, inte själva profilen. Det innebär att om två profiler har samma e-postadress påverkas båda om adressen sätts i karantän.
 
 På samma sätt kan en profil vars e-postadress sätts i karantän uppdatera profilen och ange en ny adress. Den kan sedan användas av leveransåtgärder igen.
 
-**Svartlistning**&#x200B;å andra sidan resulterar i att profilen inte längre används av någon leverans, t.ex. efter en avanmälan (avanmälan).
+Å andra sidan finns i **blockeringslistan**, vilket innebär att profilen inte längre används som mål för någon leverans, till exempel efter en avanmälan (avanmälan).
 
 >[!NOTE]
 >
->När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser är profilen inte svartlistad som i processen för avanmälan via e-post. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
+>När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs denna profil inte till i blocklistan som i e-postavanmälningsprocessen. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
 
 ## Identifiera adresser i karantän {#identifying-quarantined-addresses}
 
@@ -103,16 +106,16 @@ Om du behöver ta bort en adress från karantän ändrar du dess status manuellt
 
 ![](assets/tech_quarant_error_status.png)
 
-Om du ändrar statusen till **[!UICONTROL Whitelisted]** anges adressen systematiskt som mål varje gång även om ett fel inträffar.
+Om du ändrar statusen till **[!UICONTROL On allow list]** anges adressen systematiskt som mål varje gång även om ett fel inträffar.
 
 >[!CAUTION]
-Svartlistade adresser berörs inte av karantänsystemet och är inte riktade, även om du ändrar adressens status.
+Adresser i blockeringslistan berörs inte av karantänsystemet och är inte riktade, även om du ändrar adressens status.
 
 Du kan också ändra antalet fel och tiden mellan felen. Det gör du genom att ändra inställningarna för distributionsguiden (E-postkanal/Avancerade inställningar). Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
 
 ## Villkor för att skicka en adress till karantän {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign hanterar karantän utifrån typ av leveransfel och orsaken som tilldelats vid kvalificering av felmeddelanden (se [studsbehörighet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) och typ av [leveransfel](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)och orsaker.
+Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som tilldelats vid kvalificering av felmeddelanden (se [studsbehörighet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) och typ av [leveransfel](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)och orsaker.
 
 * **Ignorerat fel**: ignorerade fel skickar ingen adress till karantän.
 * **Hårt fel**: motsvarande e-postadress omedelbart skickas till karantänen.
@@ -120,7 +123,7 @@ Adobe Campaign hanterar karantän utifrån typ av leveransfel och orsaken som ti
 
 Om en användare kvalificerar ett e-postmeddelande som en skräppost (**Feedback-slinga**) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
 
-I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet varför den valda adressen placerades i karantän. Karantän i Adobe Campaign är skiftlägeskänsligt. Se till att importera e-postadresser i gemener så att de inte återdirigeras senare.
+I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet varför den valda adressen placerades i karantän. Karantän i Adobe Campaign är skiftlägeskänslig. Se till att importera e-postadresser i gemener så att de inte återdirigeras senare.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -144,7 +147,7 @@ Objekten som sätts i karantän är enhetstoken.
 
 **För iOS - binär anslutning**
 
-För varje meddelande får Adobe Campaign synkrona och asynkrona fel från APNS-servern. För följande synkrona fel genererar Adobe Campaign mjuka fel:
+För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från APNS-servern. För följande synkrona fel genererar Adobe Campaign mjuka fel:
 
 * Problem med nyttolastens längd: inga nya försök, felorsaken är **[!UICONTROL Unreachable]**.
 * Utgångsdatum för certifikat: inga nya försök, felorsaken är **[!UICONTROL Unreachable]**.
@@ -236,7 +239,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
   <tr> 
    <td> Avvisning av APNS-meddelande: alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Felavvisandeorsaken kommer att finnas i felmeddelandet<br /> </td> 
+   <td> Felavvisande orsak kommer att finnas i felmeddelandet<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
@@ -248,7 +251,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
 
 **För Android V1**
 
-För varje meddelande får Adobe Campaign synkrona fel direkt från FCM-servern. Adobes kampanj hanterar dem i farten och genererar hårda eller mjuka fel beroende på hur allvarligt felet är och försök kan göras på nytt:
+För varje meddelande tar Adobe Campaign emot synkrona fel direkt från FCM-servern. Adobes kampanj hanterar dem i farten och genererar hårda eller mjuka fel beroende på hur allvarligt felet är och försök kan göras på nytt:
 
 * Nyttolastlängden har överskridits, anslutningsproblem, problem med tjänsttillgänglighet: återförsök utförd, mjukt fel, felorsak **[!UICONTROL Refused]**.
 * Enhetskvoten har överskridits: inga nya försök, mjuka fel, felorsaken är **[!UICONTROL Refused]**.
@@ -264,7 +267,7 @@ Här är olika typer av fel för kunder som använder Baidu-kontakten:
 * Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, nytt försök utförs.
 * Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 
-Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar utsändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
+Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar utsändningsloggarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
 **För Android V2**
 
