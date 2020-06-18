@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +75,7 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 
 * **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klicka på länkar för att ta bort prenumerationen och spegelsidor beaktas.
 * **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
-* **[!UICONTROL Clicks on opt-out link]** :Antal klick på länken för att avbryta prenumerationen.
+* **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
 * **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). Se den här [sidan](../../delivery/using/monitoring-a-delivery.md).
 * **[!UICONTROL Estimation of forwards]** : Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
 
@@ -92,7 +95,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den **[!UICONTROL Domains]** specificerade listan och ändrar värden och alias. Mer information finns i [det här avsnittet](../../platform/using/managing-enumerations.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör något värde i den specificerade listan.
+>Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den **[!UICONTROL Domains]** specificerade listan och ändrar värden och alias. For more on this, refer to [this section](../../platform/using/managing-enumerations.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör något värde i den specificerade listan.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -164,7 +167,7 @@ Den här rapporten innehåller all huvudinformation om leveransen.
 Det här avsnittet har två indikatorer:
 
 * **[!UICONTROL Initial population]** : Totalt antal mottagare som leveransmålet gäller.
-* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, är i karantän, svartlistad osv. Mer information om typologiregler finns på den här [sidan](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, har satts i karantän, lagts till i blockeringslistan osv. Mer information om typologiregler finns på den här [sidan](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
