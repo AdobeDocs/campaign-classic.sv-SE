@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +55,9 @@ Enligt en studie av Return Path resulterade återengagemangskampanjer i en öppe
 ### Fas 1 {#phase-1}
 
 * Det första steget är att identifiera prenumeranter som har mycket lite till ingen öppnings- eller klickaktivitet och segmentera gruppen utifrån en bestämd tidsram. Regeln är att granska prenumeranter som inte har öppnat eller klickat på ett e-postmeddelande inom de senaste 90 dagarna. Detta varierar dock beroende på verksamhetens art (till exempel säsongsbunden sändning).
-* En annan sak att tänka på när man definierar tidsramar är att internetleverantörer och svartlistningsföretag ser engagemang som varsomhelst mellan 1,5 och 1,8 år. Dessutom kan beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten, förekomma.
+* En annan sak att tänka på när man definierar tidsramar är att internetleverantörer och blocklistföretag ser engagemang som varsomhelst mellan 1,5 och 1,8 år. Dessutom kan beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten, förekomma.
 
-### Fas 1 {#phase-2}
+### Fas 2 {#phase-2}
 
 * När ett segment har definierats är nästa steg att skapa en återengagemangskampanj som fångar upp abonnenten enligt de mätvärden som har identifierats. Genom att skapa en ämnesrad ökar abonnentens intresse. Enligt en Return Path-studie genererar ämnesrader och innehåll där det står&quot;We missing you&quot; högre svarsfrekvens än&quot;We want you back&quot;.
 * Man kan också erbjuda ett incitament att återengagera sig i e-postmeddelandet. När du överväger erbjudanden med rabatt är det bäst att använda dollarbelopp jämfört med procentandelar. Return Path föreslår också detta eftersom det ger högre svarsfrekvens. Slutligen är det också användbart att utföra A/B-delade tester för att granska respons och svarsfrekvens.
