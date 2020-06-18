@@ -1,6 +1,6 @@
 ---
-title: Beskrivning av datamodell för Adobe Campaign Classic
-description: I det här dokumentet beskrivs datamodellen för Adobe Campaign Classic.
+title: Beskrivning av datamodellen Adobe Campaign Classic
+description: I det här dokumentet beskrivs datamodellen Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Beskrivning av kampanjdatamodell{#data-model-description}
 
-Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna för datamodellen i Adobe Campaign och deras interaktion.
+Adobe Campaign levereras med en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i datamodellen för Adobe Campaign och deras interaktion.
 
 Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på **[!UICONTROL Documentation]** fliken.
 
@@ -31,13 +31,13 @@ Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICO
 
 >[!NOTE]
 >
->Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
+>Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder en grammatik som är specifik för Adobe Campaign och som kallas ett schema. Mer information om scheman för Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
 
 ## Beskrivning av huvudtabellerna {#description-main-tables}
 
-Adobe Campaign bygger på en relationsdatabas som innehåller tabeller som är länkade tillsammans.
+Adobe Campaign förlitar sig på en relationsdatabas som innehåller tabeller som är länkade tillsammans.
 
-I följande diagram visas kopplingarna mellan huvudtabellerna i Adobe Campaign-datamodellen och huvudfälten för varje.
+I följande diagram visas kopplingarna mellan huvudtabellerna i datamodellen för Adobe Campaign med huvudfälten för varje.
 
 <!--![](assets/data-model_diagram.png)-->
 
@@ -55,7 +55,7 @@ Det är standardtabellen som används för **mottagare av leveranser**. Den inne
 * iEmailFormat: önskat format för e-post (1 för Text, 2 för HTML och 0 om det är odefinierat).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity används för att skapa postadressen (i enlighet med standarden XPZ 10-011 AFNOR från maj 1997).
 * sPhone, sMobilePhone, sFax innehåller telefon-, mobiltelefon- och faxnummer.
-* iBlackList är standardavanmälningsflaggan som används för profilerna (1 betyder&quot;unsubscribed&quot;, 0 annars).
+* iBlockList är standardflaggan för avanmälan som används för profilerna (1 betyder&quot;unsubscribed&quot;, 0 annars).
 
 Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körningsmapp. Mer information finns i [XtkFolder](#XtkFolder).
 
@@ -259,7 +259,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 Den här tabelluppsättningen är länkad till **mobilappskanalen**, som gör att du kan skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Mer information finns i [Om mobilappskanalen](../../delivery/using/about-mobile-app-channel.md).
 
-* **NmsMobileApp**: Tabellen matchar schemat **nms:mobileApp** . Det innehåller de mobilprogram som definieras i Adobe Campaign.
+* **NmsMobileApp**: Tabellen matchar schemat **nms:mobileApp** . Den innehåller de mobilprogram som definieras i Adobe Campaign.
 * **NmsAppSubscription**: Tabellen matchar schemat **nms:appSubscription** . Det innehåller information om prenumeranter för ett eller flera program.
 * **NmsAppSubscriptionRcp**: Tabellen matchar schemat **nms:appSubscriptionRcp** . Det gör att du kan länka besökare som prenumererar på ett program till mottagartabellen.
 * **NmsExcludeLogAppSubRcp**: Den här tabellen matchar schemat **nms:excludeLogAppSubRcp** .
