@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Om det externa kontot har ett **produktkontextfält** kontrollerar du att dess v
 
 Se till att produktsammanhanget är detsamma för Campaign och Experience Cloud.
 
-Om till exempel **produktkontexten** inte visas ska standardproduktkontexten vara **dma_campaign** i både Campaign och Experience Cloud. Om **produktkontextfältet** visas ska standardproduktsammanhanget vara **dma_campaign_classic** i både Campaign och Experience Cloud.
+Om till exempel **produktkontexten** inte visas ska standardproduktkontexten vara **dma_campaign** både i Campaign och Experience Cloud. Om **produktkontextfältet** visas ska standardproduktsammanhanget vara **dma_campaign_classic** både i Campaign och Experience Cloud.
 
 **[!UICONTROL IMS Server URL]**
 
@@ -62,7 +65,7 @@ Omfattningar som definieras i det externa Campaign-kontot måste vara en delmän
 
 **Återanrops-URL**
 
-Återanrops-URL:en **** ska vara vitlistad och börja med &quot;https://&quot;. Kontrollera att **återanrops-URL** är länkad till motsvarande instans. Produktionsinstansen bör till exempel omdirigeras till produktions-URL:en.
+URL:en **för** återanrop ska läggas till i listan Tillåt och börja med https://. Kontrollera att **återanrops-URL** är länkad till motsvarande instans. Produktionsinstansen bör till exempel omdirigeras till produktions-URL:en.
 
 **Klient-ID och hemlighet**
 
@@ -84,7 +87,7 @@ Starta om servern om några ändringar görs i inställningarna ovan i det exter
 
    Läs föregående steg för att kontrollera konfigurationen av **[!UICONTROL Association Mask]** operatorgrupperna och operatorgrupperna.
 
-* Användaren kan inte komma åt inloggningssidan för Adobe-id:
+* Användaren kan inte komma åt Adobe IDS inloggningssida:
 
    Kontrollera scopekonfigurationen i föregående steg.
 
