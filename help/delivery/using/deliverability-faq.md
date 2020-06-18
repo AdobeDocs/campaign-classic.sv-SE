@@ -1,6 +1,6 @@
 ---
 title: Viktiga punkter vid hantering av leveranser i Adobe Campaign Classic
-description: Vilka är de viktigaste punkterna att kontrollera vid hantering av leveranser i Adobe Campaign Classic?
+description: Vilka är de viktigaste punkterna att kontrollera vid hantering av leveransen i Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Har du något leveransproblem? Du kan hitta lösningen här.
 
 Det här meddelandet anger att du har nått kvotgränsen för en viss MX och att du måste vänta för att kunna skicka ytterligare ett e-postmeddelande till den här providern.
 
-I Adobe Campaign finns en konfiguration för hur många e-postmeddelanden per timme som kan skickas. Denna konfiguration måste användas med vaksamhet, eftersom det nummer som definieras i instansen avser antalet anslutningar som görs med Internet-leverantören och inte antalet e-postmeddelanden som faktiskt skickas.
+I Adobe Campaign finns en konfiguration för hur många e-postmeddelanden som kan skickas per timme. Denna konfiguration måste användas med vaksamhet, eftersom det nummer som definieras i instansen avser antalet anslutningar som görs med Internet-leverantören och inte antalet e-postmeddelanden som faktiskt skickas.
 
 Det innebär att en anslutning kan använda en MX-regel utan att skicka ett e-postmeddelande. I det här fallet måste en konfiguration med en IP-adress eller en domän med dåligt rykte försöka med flera anslutningar innan ett e-postmeddelande skickas. För varje försök används ett meddelande per timkredit. Resultatet av marknadsföringskampanjen kommer att få en betydande effekt.
 
@@ -48,40 +48,39 @@ Om du alltid får samma felmeddelande för en Internet-leverantör, kan din e-po
 * Uppdatera dina prenumerationsformulär för att upptäcka eventuella fel i de angivna domännamnen (till exempel: gmaul.com eller yaho.com).
 * Om du märker fel som anger att dina meddelanden har deklarerats som skräppost, eller att dina meddelanden alltid är blockerade, kan du försöka utesluta mottagare som inte har öppnat eller klickat i något av dina meddelanden de senaste 12 månaderna från målet.
 
-Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstjänsterna, Adobe Campaign Client Care eller Adobe Campaign-supporten.
+Om problemet kvarstår kontaktar du Adobe Campaign Client Care eller Adobe Campaign support.
 
-## Svartlistning kontra karantän {#blacklisting-versus-quarantine}
+## Blocklista kontra karantän {#block-list-versus-quarantine}
 
-* **Vad är skillnaden mellan en svartlistad e-postadress och en e-postadress i karantän?**
+* **Vad är skillnaden mellan en e-postadress i blockeringslistan och en e-postadress i karantän?**
 
-   * Statusen **[!UICONTROL Blacklisted]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
+   * Statusen **[!UICONTROL On block list]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
 
    * Statusen **[!UICONTROL Quarantined]** är ett resultat av en mjuk eller hård studsa.
-   Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
 
 * **Vad betyder de olika anledningarna till karantänfel?**
 
-   Här följer tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, svartlistad adress, nekad, fel ignorerad, ej tillgänglig, konto inaktiverat, postlåda full, inte ansluten.
+   Här följer tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, adress i blocklista, nekad, fel ignorerad, ej tillgänglig, konto inaktiverat, postlåda full, inte ansluten.
 
    Mer information finns i [Om karantänhantering](../../delivery/using/understanding-quarantine-management.md).
 
-## Osvartlistning {#unblacklisting}
+## Tar bort från blockeringslistan {#remove-from-block-list}
 
-* **En av mina mottagare blev svartlistad av misstag. Hur avlistar jag dem så att jag kan börja skicka dem igen?**
+* **En av mina mottagare lades till i blockeringslistan av misstag. Hur tar jag bort dem från blockeringslistan så att jag kan börja skicka dem igen?**
 
    * Gå till **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * I informationen för motsvarande post anger du värdet för **[!UICONTROL Status]** fältet till **[!UICONTROL Valid]**.
    * Spara posten.
 
-* **Hur kan jag ta reda på om en av mina IP-adresser är svartlistad? Hur avsvartlistar jag mina IP-adresser?**
+* **Hur kan jag ta reda på om en av mina IP-adresser finns med i en blockeringslista? Hur tar jag bort mina IP-adresser från en blockeringslista?**
 
-   Om du vill kontrollera om din IP-adress är svartlistad kan du använda olika webbplatser för att verifiera den:
-   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
-   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
-   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
-   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om svartlistan och även namnet på den webbplats som svartlistade IP-adressen.
+   Om du vill kontrollera om din IP-adress finns i en blockeringslista kan du använda olika webbplatser för att verifiera den, till exempel:
+   * [MX Toolbox](https://mxtoolbox.com/)
+   * [Vad är min IP-adress?](https://whatismyipaddress.com)
+   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslistan och även namnet på den webbplats som blockerade IP-adressen.
 
-   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats avlistas från den webbplats som svartlistade IP-adressen.
+   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen i sin blockeringslista.
 
    >[!NOTE]
    >
