@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 0%
 
 ---
 
@@ -145,7 +148,7 @@ Följande alternativ är tillgängliga:
 
    Standardvärdet för alternativet kan konfigureras för varje leveransmall.
 
-   Till exempel:
+   Exempel:
 
    * Leverans av nyhetsbrev eller elektroniska dokument. I vissa fall finns det inget undantag för dubbletter om data inte har några inbyggda dubbletter. Ett par som prenumererar med samma e-postadress kan förvänta sig att få två specifika personliga e-postmeddelanden: en adresserad till varje enskild person efter namn. I det här fallet kan det här alternativet avmarkeras.
    * Leverera en marknadsföringskampanj: Duplicerad uteslutning är nödvändigt för att undvika att skicka för många meddelanden till samma mottagare. I det här fallet kan du välja det här alternativet.
@@ -154,7 +157,7 @@ Följande alternativ är tillgängliga:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.v.s. mottagare vars e-postadresser finns på en svartlista (&#39;opt out&#39;). Detta alternativ måste förbli valt för att man ska kunna följa e-handelns yrkesmässiga etik och lagstiftningen om e-handel.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.v.s. mottagare vars e-postadresser finns i en blockeringslista (&#39;opt out&#39;). Detta alternativ måste förbli valt för att man ska kunna följa e-handelns yrkesmässiga etik och lagstiftningen om e-handel.
 * **[!UICONTROL Exclude quarantined recipients]**. Med det här alternativet kan du undanta profiler med en adress som inte svarar från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat.
 
    >[!NOTE]
@@ -191,7 +194,7 @@ Välj det här alternativet om du vill välja mottagare med hjälp av **[!UICONT
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-Mer information om hur du skickar korrektur finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+For more on proof sending, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Använda adressersättning i korrektur {#using-address-substitution-in-proof}
 
