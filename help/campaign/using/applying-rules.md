@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ I standarddriftsläget används reglerna i följande sekvens:
 1. Kontrollregler, om de tillämpas i början av målinriktningen.
 1. Filtreringsregler:
 
-   * Interna ansökningsregler för adresskvalifikation: definierad adress/overifierad adress/svartlistad adress/adresskvalitet i karantän.
+   * Interna ansökningsregler för adresskvalifikation: definierad adress/overifierad adress/adress i blocklistan/adresskvalitet i karantän.
    * Filtreringsregler som definieras av användaren.
    * Regel för borttagning av dubbletter för adressen eller identifieraren (används om det behövs).
 
@@ -139,7 +142,7 @@ Du kan också använda fältet för att länka leveranser till leveransservern (
 >[!NOTE]
 >
 >Tillhörighetshantering gäller inte för **[!UICONTROL Filtering]** typologier.\
->Tillhörigheterna definieras i instanskonfigurationsfilen på Adobe Campaign-servern. Mer information finns i [det här avsnittet](../../installation/using/about-initial-configuration.md).
+>Tillhörigheterna definieras i instanskonfigurationsfilen på Adobe Campaign-servern. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
 
 ### Kampanjoptimering och distribuerad marknadsföring {#campaign-optimization-and-distributed-marketing}
 
