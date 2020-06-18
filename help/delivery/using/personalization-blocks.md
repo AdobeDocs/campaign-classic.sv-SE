@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Personaliseringsblock är dynamiska, personaliserade och innehåller en specifik
 
 >[!NOTE]
 >
->Personaliseringsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]** . Mer information finns på [den här sidan](../../web/using/editing-content.md#inserting-a-personalization-block).
+>Personaliseringsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
 
-Personaliseringsblock nås via noden **[!UICONTROL Resources > Campaign Management > Personalization blocks]** i Adobe Campaign Explorer. Flera block är tillgängliga som standard (se [Inkörda anpassningsblock](#out-of-the-box-personalization-blocks)).
+Personaliseringsblock nås via noden **[!UICONTROL Resources > Campaign Management > Personalization blocks]** i Utforskaren i Adobe Campaign. Flera block är tillgängliga som standard (se [Inkörda anpassningsblock](#out-of-the-box-personalization-blocks)).
 
 Ni kan definiera nya block som gör att ni kan optimera er leveranspersonalisering. Mer information finns i [Definiera anpassade personaliseringsblock](#defining-custom-personalization-blocks).
 
@@ -108,7 +111,7 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
    >Mer information om generering av spegelsidor finns i [Generera spegelsidan](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : infogar en länk till spegelsidan: &quot;Om du inte kan visa det här meddelandet korrekt klickar du här&quot;.
-* **[!UICONTROL Unsubscription link]** : infogar en länk som gör det möjligt att avbryta prenumerationen på alla leveranser (svartlista).
+* **[!UICONTROL Unsubscription link]** : infogar en länk som gör det möjligt att avbryta prenumerationen på alla leveranser (blocklista).
 * **[!UICONTROL Formatting function for proper nouns]** : genererar funktionen **[!UICONTROL toSmartCase]** JavaScript, som ändrar den första bokstaven i varje ord till versaler. Det här blocket måste infogas i källkoden för leveransen, i **`<script>...</script>`** -taggar.
 
    I exemplet nedan används funktionen för att ersätta elementet&quot;Min rubrik&quot; med&quot;Min nya rubrik&quot; med versaler vid varje ord:
@@ -147,7 +150,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    ![](assets/s_ncs_user_personalized_block.png)
 
-   * Ange blockets etikett. Den här etiketten visas i fönstret för infogning av anpassningsfält.
+   * Ange blockets etikett. Den här etiketten visas i fönstret där personaliseringsfältet infogas.
    * Välj **[!UICONTROL Visible in the customization menus]** att göra det här blocket tillgängligt från ikonen för infogning av anpassningsfält.
    * Om det behövs väljer du **[!UICONTROL The content of the personalization block depends upon the format]** att definiera två separata block för e-post i HTML-format och för e-post i textformat.
 
