@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3055'
+source-wordcount: '3066'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## Distributionsguide {#deployment-wizard}
 
-Med en grafisk guide, som finns i Adobe Campaign-klientkonsolen, kan du definiera parametrarna för den instans som du ska ansluta till.
+Med en grafisk guide, som är tillgänglig i klientkonsolen i Adobe Campaign, kan du definiera parametrarna för den instans som du ska ansluta till.
 
 Om du vill starta distributionsguiden väljer du **Verktyg > Avancerat > Distributionsguiden**.
 
@@ -90,7 +90,7 @@ Ange följande parametrar:
 * **[!UICONTROL Sender address]** : Avsändarens adress.
 * **[!UICONTROL Reply address text]** : Namnet, som är anpassbart, som kommer att användas när mottagaren klickar på knappen **[!UICONTROL Reply]** i sin e-postklientprogramvara,
 * **[!UICONTROL Reply address]** : Den e-postadress som ska användas när mottagaren klickar på **[!UICONTROL Reply]** knappen i sin e-postklientprogramvara,
-* **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
+* **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tagits emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
 
 Utöver detta kan du ange **masker** som är behöriga för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.
 
@@ -116,7 +116,7 @@ Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Delivery duration of messages]** : Efter denna tid stoppas leveransen (som standard 5 dagar),
 * **[!UICONTROL Online resources validity duration]** : Tidpunkt för när information från mottagarprofilen sparas för att generera spegelsidor.
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : När det här alternativet är markerat kontaktas inte svartlistade mottagare,
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : När det här alternativet är markerat kommer mottagare i blocklistan inte att kontaktas,
 * **[!UICONTROL Automatically ignore doubles]** : När det här alternativet är markerat kommer leveransen inte att göras till dubblettadresser.
 
 ### Försök igen med parametrar {#retry-parameters}
@@ -157,9 +157,9 @@ När du har angett POP-inställningarna klickar du på **Testa** för att kontro
 
 Satser hanteras automatiskt av Adobe Campaign och de regler som anges i noden **Administration > Kampanjhantering > Hantering av ej slutprodukter > Kvalificering** av leveranslogg tillämpas. Mer information finns i [Avsluta e-posthantering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
-Obearbetade studsar visas inte i Adobe Campaign-gränssnittet. De tas automatiskt bort om de inte överförs till en tredje parts postlåda med följande fält:
+Obearbetade studsar visas inte i Adobe Campaign. De tas automatiskt bort om de inte överförs till en tredje parts postlåda med följande fält:
 
-* **[!UICONTROL Forwarding address]** : Fyll i det här fältet om du vill överföra alla felmeddelanden (bearbetade eller obearbetade) som samlas in av Adobe Campaign-plattformen till en tredje part.
+* **[!UICONTROL Forwarding address]** : Fyll i det här fältet om du vill överföra alla felmeddelanden (bearbetade eller obearbetade) som samlats in av Adobe Campaign-plattformen till en tredje part.
 * **[!UICONTROL Address for errors]** : Fyll i det här fältet om du bara vill överföra felmeddelanden till en tredje partsadress som det inte gick att kvalificera inMail-processen för.
 * **[!UICONTROL SMTP server]** : Servern som används för att skicka obearbetade studsmeddelanden.
 
@@ -181,9 +181,9 @@ När du aktiverar spårning för en instans ändras URL:erna i leveranserna unde
 
 * Informationen om externa URL:er (oavsett om de är säkra eller inte) som anges på den här sidan i distributionsguiden används för att skapa den nya URL:en. Förutom den här informationen innehåller den ändrade länken: Identifierare för leveransen, mottagaren och URL:en.
 
-   Spårningsinformation samlas in av Adobe Campaign på spårningsservern/spårningsservrarna för att berika mottagarprofiler och data som är länkade till leveransen ( **[!UICONTROL Tracking]** flikar).
+   Spårningsinformation samlas in av Adobe Campaign på spårningsservrarna för att berika mottagarprofilerna och data som är länkade till leveransen ( **[!UICONTROL Tracking]** flikar).
 
-   Information om interna URL:er används endast av programservern för Adobe Campaign för att kontakta spårningsservern/spårningsservrarna.
+   Information om interna URL:er används endast av programservern i Adobe Campaign för att kontakta spårningsservern/-servrarna.
 
    Mer information finns i [Spårningsserver](#tracking-server).
 
@@ -199,7 +199,7 @@ För att säkerställa effektiviteten i spårningen för den här instansen mås
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
 * **[!UICONTROL External URL]** och/eller **[!UICONTROL Secure external URL]** : Ange den omdirigerings-URL som ska användas i det e-postmeddelande som ska skickas.
-* **[!UICONTROL Internal URL(s)]** : URL:er som bara används av Adobe Campaign-servern för att kontakta spårningsservern/spårningsservrarna för att samla in loggar och överföra URL:erna. Du behöver inte associera den med instansen.
+* **[!UICONTROL Internal URL(s)]** : URL:er som bara används av Adobe Campaign-servern för att kontakta spårningsservern/-servrarna för att samla in loggar och överföra URL:erna. Du behöver inte associera den med instansen.
 
    Om du inte anger någon URL används spårnings-URL som standard.
 
@@ -317,7 +317,7 @@ I det här steget kan du ange inställningar för dataprofiler.
 >
 >Av sekretesskäl rekommenderar vi att du använder HTTPS för alla externa resurser.
 
-I det här steget kan du definiera åtkomst-URL:er för Adobe Campaign-sidor som visas på internet.
+I det här steget kan du definiera åtkomst-URL:er för Adobe Campaign-sidor som visas på Internet.
 
 Här måste du även ange vilka publiceringsalternativ som är länkade till webbformulär.
 
@@ -333,7 +333,7 @@ Använd den här sidan om du vill fylla i server-URL:er till:
 
    En spegelsida är en dynamisk sida som visar innehållet i e-postmeddelandet. Den öppnas via en länk som infogas i meddelandet som skickas till mottagaren och kan innehålla anpassade element. Spegelsidan ger mottagaren möjlighet att läsa meddelandet i en webbläsare i stället för i e-postprogrammet, oavsett leveransformat (text eller HTML). Spegelsidor genereras dock bara för en viss leverans om det obligatoriska HTML-innehållet har definierats.
 
-Med Adobe Campaign kan ni differentiera dessa tre URL:er för att sprida belastningen över flera plattformar.
+Med Adobe Campaign kan du differentiera dessa tre URL-adresser för att sprida belastningen över flera plattformar.
 
 ## Hantera offentliga resurser {#managing-public-resources}
 
@@ -392,7 +392,7 @@ Följande publiceringslägen är tillgängliga:
 
 * Andra Adobe Campaign-servrar
 
-   Du kan använda ytterligare en Adobe Campaign-server där resurserna kopieras.
+   Du kan använda ytterligare en Adobe Campaign-server där resurserna ska kopieras.
 
    På serversidan måste du skapa en ny instans med följande kommando för att kunna använda en dedikerad Adobe Campaign-server:
 
@@ -419,13 +419,13 @@ Följande publiceringslägen är tillgängliga:
       [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
       ```
 
-      var `[INSTALL]` finns åtkomstsökvägen till installationsmappen för Adobe Campaign.
+      var `[INSTALL]` finns åtkomstsökvägen till installationsmappen i Adobe Campaign.
 
    * Kontrollera att skriptet är körbart i Unix.
 
 För bilder måste de kopieras från mappen &quot;images&quot; som anges via alternativet **NmsDelivery_ImageSubDirectory** till en eller flera frontservrar. Dessa servrar lagrar bilderna så att de blir tillgängliga via den nya konfigurerade URL:en.
 
-Vid publicering på en Adobe Campaign-server utan ett manuellt skript lagras som standard bilderna för en leverans i `$(XTK_INSTALL_DIR)/var/res/img/ directory`. Motsvarande URL är följande: **`https://server/res/img`**.
+Vid publicering på en Adobe Campaign-server utan ett manuellt skript, lagras som standard bilderna av en leverans i `$(XTK_INSTALL_DIR)/var/res/img/ directory`. Motsvarande URL är följande: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. Motsvarande URL är följande: **`https://server/res/instance`** där instansen är namnet på spårningsinstansen.
 
@@ -459,7 +459,7 @@ Statusattributet kan vara ett av tre värden:
 
 * normal: Befintligt beteende (utan synkronisering)
 
-* svartlista: URL:en är svartlistad om den returnerar ett 404-fel. Varaktigheten (i sekunder) för svartlistningen definieras av ett **timeout** -attribut vars standardvärde är 60-tal.
+* blocklist: URL:en läggs till i blockeringslistan om den returnerar ett 404-fel. Varaktigheten (i sekunder) för den URL som finns i blocklistan definieras av ett **timeout** -attribut vars standardvärde är 60 sekunder.
 
 Synkroniseringens färdiga konfiguration är:
 
@@ -478,11 +478,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
 <relay debugRelay="false" forbiddenCharsInAuthority="?#.@/:" forbiddenCharsInPath="?#/"
            modDir="index.html" startRelay="false" startRelayInModule="true" timeout="60">
    <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/view/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/strings/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/interaction/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/barcode/*"/>
