@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ I det här avsnittet beskrivs användningen av tjänsterna &quot;Subscribe&quot;
 
 >[!IMPORTANT]
 >
->[Kampanjens JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
+>[Kampanjens JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign samt en fullständig referens till alla metoder och funktioner som används i programmet.
 
 ## Prenumerera (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -147,7 +150,7 @@ Om mottagaren inte finns i databasen eller inte prenumererar på den berörda in
 
 >[!NOTE]
 >
->Om tjänstnamnet inte anges som en parameter, svartlistas mottagaren automatiskt (@blackList=&quot;1&quot;).
+>Om tjänstnamnet inte anges som en parameter placeras mottagaren automatiskt i blocklistan (@blockList=&quot;1&quot;).
 
 Anropet returnerar inga data, förutom fel.
 
@@ -204,7 +207,7 @@ Beskrivning av metoden i dess schema:
 </method>
 ```
 
-En leveransmall måste skapas från Adobe Campaign-klientkonsolen. Den innehåller de parametrar som är gemensamma för alla leveranser (avsändarens adress eller meddelandets giltighetstid).
+En leveransmall måste skapas från klientkonsolen i Adobe Campaign. Den innehåller de parametrar som är gemensamma för alla leveranser (avsändarens adress eller meddelandets giltighetstid).
 
 XML-indatadokumentet är ett leveransmallfragment som följer strukturen i schemat nms:delivery. Den kommer att innehålla alla ytterligare data som inte kan definieras statiskt i leveransmallen (t.ex. en lista över mottagare som ska anges som mål).
 
