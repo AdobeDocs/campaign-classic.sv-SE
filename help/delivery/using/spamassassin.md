@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 
@@ -24,19 +27,19 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Om SpamAssassin {#about-spamassassin}
 
-Adobe Campaign kan konfigureras för att fungera med [SpamAssets](https://spamassassin.apache.org), en tredjepartstjänst som används för skräppostfiltrering. På så sätt kan du poängsätta e-postmeddelanden för att avgöra om ett meddelande löper risk att betraktas som skräppost av de antispam-verktyg som används vid mottagande.
+Adobe Campaign kan konfigureras att fungera med [SpamAssassin](https://spamassassin.apache.org), en tredjepartstjänst som används för skräppostfiltrering. På så sätt kan du poängsätta e-postmeddelanden för att avgöra om ett meddelande löper risk att betraktas som skräppost av de antispam-verktyg som används vid mottagande.
 
 SpamAssassin utnyttjar en mängd olika tekniker för skräppostavkänning, bland annat:
 
 * DNS-baserad och otydlig kontrollsummebaserad skräppostavkänning
 * Bayesisk filtrering
 * Externa program
-* Blacklists
+* Blocklistor
 * Onlinedatabaser
 
 >[!NOTE]
 >
->SpamAssassin måste installeras och konfigureras på Adobe Campaign-programservern. Mer information finns i [det här avsnittet](../../installation/using/configuring-spamassassin.md).
+>SpamAssassin måste vara installerat och konfigurerat på Adobe Campaign-programservern. For more on this, refer to [this section](../../installation/using/configuring-spamassassin.md).
 >
 >Reglerna som styr om ett element är spam eller inte hanteras via SpamAssets och kan redigeras av en administratör med behörighet.
 
@@ -46,7 +49,7 @@ När du har skapat din e-postleverans och definierat innehållet följer du steg
 
 Mer information om hur du skapar och utformar en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md).
 
-1. Gå till **[!UICONTROL Preview]** fliken.
+1. Go to the **[!UICONTROL Preview]** tab.
 1. Välj en mottagare om du vill förhandsgranska leveransen.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
