@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 0%
 
 ---
 
@@ -135,11 +138,11 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 * Prenumerera automatiskt på en uppsättning mottagare för den här tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller en direktmarkering med hjälp av musen. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, välj den aktuella tjänsten och starta åtgärden.
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importguiden.
 
-   Mer information finns i [det här avsnittet](../../platform/using/importing-data.md#import-wizard).
+   For more on this, refer to [this section](../../platform/using/importing-data.md#import-wizard).
 
 * Använd ett webbformulär så att mottagarna kan prenumerera på en tjänst.
 
-   Mer information finns i [det här avsnittet](../../web/using/about-web-applications.md).
+   For more on this, refer to [this section](../../web/using/about-web-applications.md).
 
 * Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]** ruta.
 
@@ -153,13 +156,13 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 
 e-postleveranser måste innehålla en länk för att avsluta prenumerationen enligt lag. Mottagarna kan klicka på den här länken för att uppdatera sin profil och uteslutas från målen för framtida leveranser.
 
-Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken svartlistas profilen (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
+Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslistan (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
 
 Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk (se [Personaliseringsblock](../../delivery/using/personalization-blocks.md)).
 
 Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. För att göra detta klickar du på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markerar den eller de berörda informationstjänsterna och klickar på **[!UICONTROL Delete]**.
 
-Du kan avsluta prenumerationen på en eller flera mottagare via den aktuella informationstjänsten. Det gör du genom att klicka på tjänstens **[!UICONTROL Subscriptions]** flik, markera mottagarna och klicka på **[!UICONTROL Delete]**.
+Slutligen kan du avbeställa en eller flera mottagare via den aktuella informationstjänsten. Det gör du genom att klicka på tjänstens **[!UICONTROL Subscriptions]** flik, markera mottagarna och klicka på **[!UICONTROL Delete]**.
 
 #### Automatisk avprenumeration {#automatic-unsubscription}
 
