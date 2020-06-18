@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
+source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+workflow-type: tm+mt
+source-wordcount: '2693'
+ht-degree: 0%
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-[Bygg uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -74,7 +77,7 @@ _13 augusti 2019_
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
+![](assets/do-not-localize/green_2.png) **29 april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
 
 * Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
@@ -90,30 +93,30 @@ _13 augusti 2019_
 * Korrigerade en regression som fick rensningsarbetsflödet att krascha.
 * Korrigerade en mindre regression i rensningsarbetsflödets loggar.
 
-![](assets/do-not-localize/orange_2.png) 5 **mars 2020**: new build (9032@19f73c5) som innehåller följande korrigering:
+![](assets/do-not-localize/orange_2.png) **5 mars 2020**: new build (9032@19f73c5) som innehåller följande korrigering:
 
 * Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) 17 **december 2019**: new build (9032@d6b8062) som innehåller följande korrigering:
+![](assets/do-not-localize/orange_2.png) **17 december 2019**: new build (9032@d6b8062) som innehåller följande korrigering:
 
 * Korrigerade ett spårningsproblem i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) 11 **december 2019**: new build (9032@bc4a935) som innehåller följande korrigering:
+![](assets/do-not-localize/orange_2.png) **11 december 2019**: new build (9032@bc4a935) som innehåller följande korrigering:
 
 * Ett prestandaproblem har korrigerats när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) 20 **november 2019**: new build (9032@3468c7b) som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **20 november 2019**: new build (9032@3468c7b) som innehåller följande korrigeringar:
 
 * Ett inloggningsproblem via IMS-autentisering har korrigerats. (NEO-17312)
 * Korrigerade ett problem när kumulativa rapporter för flera leveranser visades. (NEO-18165)
 * Korrigerade ett problem som kunde blockera eller få webbservern att krascha.
 
-![](assets/do-not-localize/orange_2.png) 19 **september 2019**: new build (9032@cee805c) som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **19 september 2019**: new build (9032@cee805c) som innehåller följande korrigeringar:
 
 * Ett problem har korrigerats när CRM Connector för Salesforce användes. (NEO-17712)
 * Korrigerade ett indexproblem som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
 
-![](assets/do-not-localize/orange_2.png) 13 **augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **13 augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
 
 * Korrigerade ett problem med schemaläggaraktiviteten som genererade oönskade felmeddelanden under guidekonfigurationen. Återställer uppdatering från NEO-11662. (NEO-17097)
 * Korrigerade en regression orsakad av NEO-12727 som kunde leda till att arbetsflöden stoppades när en testaktivitet kördes två gånger. (NEO-16835)
@@ -153,7 +156,7 @@ _30 maj 2019_
  <tbody> 
   <tr> 
    <td> Kontrollpanelen<br /> </td> 
-   <td> <p>För att effektivisera arbetet som administratör hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagring, vitlista IP-adresser och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">logga in via Experience Cloud idag</a>).</p> <p>Mer information finns i den <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
+   <td> <p>För att effektivisera arbetet som administratör hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagring, lägga till IP-adresser för att tillåta listor och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud idag</a>).</p> <p>Mer information finns i den <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
   </tr> 
     <tr> 
    <td> Granskningsspår<br /> </td> 
@@ -165,7 +168,7 @@ _30 maj 2019_
   </tr> 
   <tr> 
    <td> Uppdatering av kompatibilitetsmatris<br /> </td> 
-   <td> Med den nya versionen har Adobe Campaign nu stöd för följande databassystem. Se <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">kompatibilitetsmatrisen</a>.<br /> 
+   <td> I den nya versionen har Adobe Campaign nu stöd för följande databassystem. Se <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">kompatibilitetsmatrisen</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -204,7 +207,7 @@ _30 maj 2019_
 * BCC-arkivering: standardparametrarna för BCC-arkivering har ändrats för att öka arkiveringshastigheten. [Läs mer](../../installation/using/email-archiving.md#parameters)
 * Databasstrukturuppdatering: SQL-begäranden som genereras av guiden Uppdatera databasstruktur har förbättrats för snabbare körning.
 * Garantier för operatoråtgärder: flera skyddsräcken har implementerats för att hindra operatorer från att utföra åtgärder som kan påverka plattformens integritet. Inbyggda scheman kan inte längre tas bort via gränssnittet. Arbetsflödets källa-XML kan inte längre redigeras av icke-adminanvändare.
-* Två nya alternativ har gjorts tillgängliga: **XtkSecurity_Restrict_EditXML** (gör att du kan inaktivera utgåvan av leveransens XML-kod) och **NmsOperation_OperationMgtDebug** (gör att du kan övervaka körningen av operationMgt-arbetsflödet). [Läs mer](../../installation/using/configuring-campaign-options.md)
+* Två nya alternativ har gjorts tillgängliga: **XtkSecurity_Restrict_EditXML** (gör att du kan inaktivera utgåvan av leveransernas XML-kod) och **NmsOperation_OperationMgtDebug** (gör att du kan övervaka körningen av operationMgt-arbetsflödet). [Läs mer](../../installation/using/configuring-campaign-options.md)
 
 **Andra ändringar**
 
