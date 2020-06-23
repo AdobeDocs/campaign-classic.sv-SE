@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
+source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
 workflow-type: tm+mt
-source-wordcount: '6708'
+source-wordcount: '6726'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per
 Du kan även läsa [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) för mer information.
 
 ## Juni 2020 {#june-2020}
+
+Användningsexempel har lagts till om hur du [krypterar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypterar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) data med arbetsflödena på Kontrollpanelen och Campaign.
 
 Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod, men kommer att ersättas i kommande Campaign-versioner med blocklist och allowlist.
 
