@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
 workflow-type: tm+mt
-source-wordcount: '2472'
+source-wordcount: '2584'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Följande rapporter innehåller information om adresserna i karantän:
 
 * I **[!UICONTROL Non-deliverables and bounces]** rapporten visas information om adresserna i karantän, typer av fel som uppstått osv. samt felinformation per domän.
 
-Du kan söka efter den här informationen för alla leveranser av plattformen (**Home page>Reports**) eller för en viss leverans. Du kan också skapa anpassade rapporter och välja vilken information som ska visas.
+Du kan söka efter den här informationen för alla leveranser av plattformen (**[!UICONTROL Home page > Reports]**) eller för en viss leverans. Du kan också skapa anpassade rapporter och välja vilken information som ska visas.
 
 ### Identifiera adresser i karantän för en mottagare {#identifying-quarantined-addresses-for-a-recipient}
 
@@ -102,16 +102,30 @@ Du kan slå upp status för e-postadressen för alla mottagare. Det gör du geno
 
 ### Ta bort en adress i karantän {#removing-a-quarantined-address}
 
-Om du behöver ta bort en adress från karantän ändrar du dess status manuellt till **[!UICONTROL Valid]**.
+Om det behövs kan du ta bort en adress manuellt från karantänlistan. Dessutom tas adresser som matchar specifika villkor automatiskt bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflödet.
 
-![](assets/tech_quarant_error_status.png)
+Så här tar du bort en adress manuellt från karantänlistan:
 
-Om du ändrar statusen till **[!UICONTROL On allow list]** anges adressen systematiskt som mål varje gång även om ett fel inträffar.
+* Du kan ändra dess status till **[!UICONTROL Valid]** från **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** noden.
 
->[!CAUTION]
-Adresser i blockeringslistan berörs inte av karantänsystemet och är inte riktade, även om du ändrar adressens status.
+   ![](assets/tech_quarant_error_status.png)
 
-Du kan också ändra antalet fel och tiden mellan felen. Det gör du genom att ändra inställningarna för distributionsguiden (E-postkanal/Avancerade inställningar). Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
+* Du kan också ändra dess status till **[!UICONTROL On allow list]**. I det här fallet finns adressen kvar på karantänlistan, men den kommer att riktas systematiskt, även om ett fel inträffar.
+
+<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+
+Adresserna tas automatiskt bort från karantänlistan i följande fall:
+
+* Adresser i en **[!UICONTROL With errors]** status kommer att tas bort från karantänlistan efter en slutförd leverans.
+* Adresser i en **[!UICONTROL With errors]** status tas bort från karantänlistan om den senaste mjuka studsen inträffade för mer än 10 dagar sedan. Mer information om felhantering finns i [det här avsnittet](#soft-error-management).
+* Adresser i en **[!UICONTROL With errors]** status som studsade med **[!UICONTROL Mailbox full]** felet tas bort från karantänlistan efter 30 dagar.
+
+Deras status ändras sedan till **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL On block list]** status tas aldrig bort, även om de får ett e-postmeddelande.
+
+Du kan ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i distributionsguiden (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
 
 ## Villkor för att skicka en adress till karantän {#conditions-for-sending-an-address-to-quarantine}
 
@@ -121,7 +135,7 @@ Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som ti
 * **Hårt fel**: motsvarande e-postadress omedelbart skickas till karantänen.
 * **Mjukt fel**: Mjuka fel skickar inte en adress till karantän omedelbart, men de ökar en felräknare. Mer information finns i [Mjuk felhantering](#soft-error-management).
 
-Om en användare kvalificerar ett e-postmeddelande som en skräppost (**Feedback-slinga**) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
+Om en användare kvalificerar ett e-postmeddelande som en skräppost ([Feedback-slinga](../../delivery/using/technical-recommendations.md#feedback-loop)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
 
 I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet varför den valda adressen placerades i karantän. Karantän i Adobe Campaign är skiftlägeskänslig. Se till att importera e-postadresser i gemener så att de inte återdirigeras senare.
 
@@ -239,7 +253,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
   <tr> 
    <td> Avvisning av APNS-meddelande: alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Felavvisande orsak kommer att finnas i felmeddelandet<br /> </td> 
+   <td> Felavvisandeorsaken kommer att finnas i felmeddelandet<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
