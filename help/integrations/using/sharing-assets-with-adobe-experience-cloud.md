@@ -15,27 +15,30 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 0%
 
 ---
 
 
 # Dela resurser med Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-Experience Cloud Assets utgör en enda central lagringsplats med marknadsföringsklart material som ni kan dela mellan olika lösningar. En resurs är ett digitalt dokument, en bild, en video eller en ljudfil.
+Experience Cloud Assets utgör ett enda centralt arkiv av marknadsföringsmaterial som ni kan dela mellan olika lösningar. En resurs är ett digitalt dokument, en bild, en video eller en ljudfil.
 
 Tillgångstjänster:
 
 * Resurslagring, hanteringsgränssnitt, inbäddat urvalsgränssnitt (nås via lösningar).
-* Integrering med lösningarna i Creative Cloud och Experience Cloud.
+* Integrering med lösningarna Creative Cloud och Experience Cloud.
 
-När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i bastjänsten Assets eller i Adobe Experience Manager Assets.
+När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i kärntjänsten Resurser eller Adobe Experience Manager Assets.
 
-De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://marketing.adobe.com/resources/help/en_US/mcloud/experience-cloud-assets.html).
+De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html).
 
 I avsnittet [Konfigurera åtkomst till resurser](../../integrations/using/configuring-access-to-assets.md) finns mer information om de specifika länkarna till varje bibliotek.
 
 >[!NOTE]
 >
->Om du använder Adobe Campaign On-Premise är integrering med bastjänsten Assets och med AEM Assets inte tillgängligt, såvida inte AEM Assets också är On-Premise.
+>Om du använder Adobe Campaign On-Premise är integrering med Assets-bastjänsten och med AEM Assets inte tillgängligt, såvida inte AEM Assets också är On-Premise.
 
