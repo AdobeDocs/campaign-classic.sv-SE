@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 Du kan importera målgrupper/segment från Audience Manager eller People core service till Adobe Campaign via mottagarlistorna.
 
-1. Gå till noden **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** i Adobe Campaign Explorer.
+1. Gå till noden **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** i Utforskaren i Adobe Campaign.
 1. Välj **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]** i åtgärdsfältet.
 
    ![](assets/aam_import_audience.png)
@@ -44,15 +47,15 @@ Du kan importera målgrupper/segment från Audience Manager eller People core se
 
 1. Spara publiken.
 
-Publiken importeras via ett tekniskt arbetsflöde. Den importerade listan innehåller element som kan förenas med hjälp av AMC-datakällan. Elementen som inte känns igen av Adobe Campaign importeras inte.
+Publiken importeras via ett tekniskt arbetsflöde. Den importerade listan innehåller element som kan förenas med hjälp av AMC-datakällan. De element som Adobe Campaign inte känner igen importeras inte.
 
-Det tar 24-36 timmar att synkronisera importprocessen när segment importeras direkt från personkärntjänsten eller Audience Manager. Efter den här perioden kan ni hitta och använda er nya målgrupp i Adobe Campaign.
+Det tar 24-36 timmar att synkronisera importprocessen när segment importeras direkt från personbastjänsten eller Audience Manager. Efter den här perioden kan du hitta och använda din nya publik i Adobe Campaign.
 
 >[!NOTE]
 >
 >Om du importerar målgrupper från Adobe Analytics till Adobe Campaign måste dessa målgrupper först delas i People Core Service eller Audience Manager. Den här processen tar 12-24 timmar, vilket måste läggas till i synkroniseringen av 24-36 timmar med Campaign.
 >
->I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics-målgruppsdelning i tjänsten People Core och Audience Manager finns i den här [dokumentationen](https://marketing.adobe.com/resources/help/en_US/mcloud/t_publish_audience_segment.html).
+>I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics-målgruppsdelning i tjänsten People Core och Audience Manager finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
 
 Publiken ersätts helt och hållet varje gång den synkroniseras. Endast segment kan importeras. Detaljerade data som nyckelvärdepar, egenskaper och regler stöds inte.
 
@@ -82,7 +85,7 @@ Du kan exportera en målgrupp från Adobe Campaign till Audience Manager eller P
 
 Publiken exporteras sedan. Det finns två utgående övergångar för aktiviteten Spara målgrupp. Huvudövergången innehåller de mottagare som exporterades. Den extra övergången innehåller de mottagare som inte kunde mappas med ett besökar-ID eller deklarerat ID.
 
-Synkroniseringen mellan Adobe Campaign och People Core Service tar 24-36 timmar. Efter den här perioden kan du hitta din nya målgrupp i bastjänsten för människor och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en delad målgrupp i Adobe Campaign i huvudtjänsten Adobe People finns i den här [dokumentationen](https://marketing.adobe.com/resources/help/en_US/mcloud/t_audience_create.html).
+Synkronisering mellan huvudtjänsten Adobe Campaign och People tar 24-36 timmar. Efter den här perioden kan du hitta din nya målgrupp i bastjänsten för människor och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en Adobe Campaign-delad målgrupp i huvudtjänsten Adobe People finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html).
 
 >[!NOTE]
 >
