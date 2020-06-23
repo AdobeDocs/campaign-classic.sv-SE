@@ -1,7 +1,7 @@
 ---
-title: Om Adobe ID
-seo-title: Om Adobe ID
-description: Om Adobe ID
+title: Adobe ID Om
+seo-title: Adobe ID Om
+description: Adobe ID Om
 seo-description: null
 page-status-flag: never-activated
 uuid: d88f70f7-637a-4609-8747-784700b6ca1a
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
 
-# Om Adobe ID{#about-adobe-id}
+# Adobe ID Om{#about-adobe-id}
 
 Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sitt Adobe ID. Integreringen ger följande fördelar:
 
@@ -31,7 +34,7 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sitt Adobe ID. In
 
 Adobes identitetshanteringssystem hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-id:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >IMS-implementeringen är strikt reserverad för Adobes tekniska administratörer. IMS-implementeringen är en komplex process som kan vara lång att implementera.
 
