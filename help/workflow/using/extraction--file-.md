@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Så här konfigurerar du dataextrahering:
 
    Alternativet **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** lägger till ett extra steg för att filtrera slutresultatet av sammanställningen, till exempel för en viss inköpsordertyp, kunder som har beställt mer än 10 gånger osv.
 
-1. Om det behövs kan du lägga till nya kolumner i utdatafilen, t.ex. genom att beräkna eller bearbeta resultat. Om du vill göra det klickar du på **[!UICONTROL Add]** ikonen
+1. Om det behövs kan du lägga till nya kolumner i utdatafilen, t.ex. genom att beräkna eller bearbeta resultat. Klicka på **[!UICONTROL Add]** ikonen om du vill göra det.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -50,6 +53,12 @@ Så här konfigurerar du dataextrahering:
    Välj önskad formel i listan.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
+
+Du kan definiera en efterprocess som ska köras under dataextraheringen så att du kan komprimera eller kryptera filerna. För att göra detta måste du lägga till det önskade kommandot på aktivitetens **[!UICONTROL Script]** flik.
+
+Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+
+![](assets/postprocessing_dataextraction.png)
 
 ## Lista över sammanställningsfunktioner {#list-of-aggregate-functions}
 
