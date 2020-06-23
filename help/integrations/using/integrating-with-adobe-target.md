@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b0cd40d4616f7b55a1d655a1717b9c7ce8d8b6c6
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
 
 # Integrera med Adobe Target{#integrating-with-adobe-target}
 
-Integrationen mellan Adobe Campaign och Adobe Target (Classic och Standard) i Adobe Experience Cloud gör att ni kan inkludera ett erbjudande från Adobe Target i en e-postleverans från Adobe Campaign.
+Integrationen mellan Adobe Campaign och Adobe Target (Classic och Standard) i Adobe Experience Cloud gör att du kan inkludera ett erbjudande från Adobe Target i en e-postleverans från Adobe Campaign.
 
 Följande princip gäller: När en mottagare öppnar ett e-postmeddelande som skickas via Adobe Campaign kan du med ett anrop till Adobe Target visa en dynamisk version av innehållet. Den här dynamiska versionen beräknas utifrån de regler som anges i förväg när e-postmeddelandet skapas.
 
@@ -33,10 +36,10 @@ Läs mer om integrationen mellan Adobe Campaign och Adobe Target och [dessa fyra
 
 Flera typer av data kan användas av Adobe Target:
 
-* Data från Adobe Campaign-datamappningen
-* Segment som är länkade till besökar-ID i Adobe Target, om de data som används inte omfattas av juridiska begränsningar
-* Adobe Target-data: användaragent, IP-adress, geolokaliseringsdata
+* Data från datamart i Adobe Campaign
+* Segment länkade till besökar-ID i Adobe Target, om de data som används inte omfattas av juridiska begränsningar
+* Adobe Target data: användaragent, IP-adress, geolokaliseringsdata
 
 >[!NOTE]
 >
->Du hittar även information om integrationen mellan Adobe Campaign och Adobe Target på hjälpsidorna [för](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_campaign_and_target.html)Adobe Target.
+>Du hittar även information om integrationen mellan Adobe Campaign och Adobe Target på hjälpsidorna [för](https://docs.adobe.com/content/help/en/target/using/integrate/campaign-and-target.html)Adobe Target.
