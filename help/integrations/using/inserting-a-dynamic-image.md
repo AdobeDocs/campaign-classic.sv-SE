@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d5d8474099776f770e88fcaf3bf15256da1be2
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
 
-# Infoga dynamiskt innehåll för mål {#inserting-a-dynamic-image}
+# Infoga Target dynamiskt innehåll {#inserting-a-dynamic-image}
 
 I den här guiden kommer vi att visa hur man integrerar ett dynamiskt erbjudande från Target i ett e-postmeddelande i Adobe Campaign.
 
@@ -46,7 +49,7 @@ För att detta ska fungera måste vi utföra följande steg både i Adobe Campai
 
 När du har definierat mål och innehåll för ditt e-postmeddelande i Adobe Campaign kan du infoga en dynamisk bild från Target.
 
-Det gör du genom att ange standardbildens URL-adress, platsnamnet och fälten som du vill överföra till Mål.
+Det gör du genom att ange standardbildens URL-adress, platsnamn och de fält som du vill överföra till Target.
 
 I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i ett e-postmeddelande:
 
@@ -63,15 +66,15 @@ I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i
 * URL **[!UICONTROL Default image]** till programmet: Bilden som visas när inget av villkoren är uppfyllt. Du kan också välja en bild från ditt resursbibliotek.
 * The **[!UICONTROL Target location]**: Ange ett namn för platsen för ditt dynamiska erbjudande. Du måste välja den här platsen i din Target-aktivitet.
 * The **[!UICONTROL Landing Page]**: Om du vill att standardbilden ska dirigeras om till en standardstartsida. Den här URL:en är endast till för de fall då standardbilden visas i det slutliga e-postmeddelandet och är valfri.
-* The **[!UICONTROL Additional decision parameters]**: Ange mappningen mellan fälten som definieras i Adobe Target-segmenten och fälten i Adobe Campaign. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
+* The **[!UICONTROL Additional decision parameters]**: Ange mappningen mellan fälten som definieras i segmenten Adobe Target och Adobe Campaign. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise på [den här sidan](https://marketing.adobe.com/resources/help/en_US/target/target/properties-overview.html).
+Om du använder Enterprise-behörigheter i inställningarna i Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om Target Enterprise-behörigheter på [den här sidan](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
 ## Skapa omdirigeringserbjudanden {#create-redirect-offers}
 
-I Target kan ni skapa olika versioner av ert erbjudande. Beroende på användarupplevelsen kan ett omdirigeringserbjudande skapas och du kan ange vilken bild som ska visas.
+I Target kan du skapa olika versioner av ditt erbjudande. Beroende på användarupplevelsen kan ett omdirigeringserbjudande skapas och du kan ange vilken bild som ska visas.
 
 I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbjudandet) ska definieras i Adobe Campaign.
 
@@ -155,10 +158,10 @@ I det här **[!UICONTROL Reporting Settings]** avsnittet kan du välja en åtgä
 
 ![](assets/target_experience_2.png)
 
-## Förhandsgranska och skicka e-postmeddelandet i Campaign Classic {#preview-send-email}
+## Förhandsgranska och skicka e-post i Campaign Classic {#preview-send-email}
 
-I Adobe Campaign kan du nu förhandsgranska ditt e-postmeddelande och testa återgivningen på olika mottagare. Du kommer att märka att bilden ändras beroende på de olika upplevelser som skapas. Mer information om hur du skapar e-postmeddelanden finns på den här [sidan](../../delivery/using/defining-the-email-content.md).
+I Adobe Campaign kan du nu förhandsgranska ditt e-postmeddelande och testa återgivningen i olika mottagare. Du kommer att märka att bilden ändras beroende på de olika upplevelser som skapas. Mer information om hur du skapar e-postmeddelanden finns på den här [sidan](../../delivery/using/defining-the-email-content.md).
 
-Du kan nu skicka ditt e-postmeddelande med ett dynamiskt erbjudande från Target.
+Nu kan du skicka e-post med ett dynamiskt erbjudande från Target.
 
 ![](assets/target_20.png)
