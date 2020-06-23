@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ När du har skickat in din begäran fortsätter Adobe att distribuera integrerin
 
 ## Steg 1: Konfigurera eller kontrollera externa konton i Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
-Först måste vi konfigurera eller kontrollera de externa kontona i Adobe Campaign enligt följande:
+För det första måste vi konfigurera eller kontrollera externa konton i Adobe Campaign enligt följande:
 
 1. Klicka på **[!UICONTROL Explorer]** ikonen.
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**. Adobe borde ha konfigurerat SFTP-kontona och du borde ha fått den information du behöver.
@@ -40,9 +43,9 @@ Först måste vi konfigurera eller kontrollera de externa kontona i Adobe Campai
    * **[!UICONTROL exportSharedAudience]** : SFTP-konto för export av målgrupper.
    ![](assets/aam_config_1.png)
 
-1. Fyll i **[!UICONTROL Server]** fältet: domänen **ftp-out.demdex.com** för det externa importkontot och domänen **ftp-in.demdex.com** för det externa exportkontot.
+1. Fyll i **[!UICONTROL Server]** fältet: **ftp-out.demdex.com** -domän för det externa importkontot och **ftp-in.demdex.com** -domänen för det externa exportkontot.
 
-   Kom ihåg att en export från Campaign är en import för huvudtjänsten Audience Manager eller People.
+   Kom ihåg att en export från Campaign är en import för bastjänsten Audience Manager eller People.
 
    >[!NOTE]
    >
@@ -76,6 +79,6 @@ Du måste kontrollera att Campaign Tracking Server är registrerad på domänen 
 
 ## Steg 4: Konfigurera besökar-ID-tjänsten {#step-4--configure-the-visitor-id-service}
 
-Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-aam-analytics.html) för att lära dig hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) .
+Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) för att lära dig hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) .
 
 Din konfiguration och etablering är färdiga, och integreringen kan nu användas för att importera och exportera målgrupper eller segment.
