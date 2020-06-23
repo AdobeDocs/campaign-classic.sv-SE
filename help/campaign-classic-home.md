@@ -1,13 +1,13 @@
 ---
 keywords: Campaign Classic;home;popular topics
-seo-title: Produktdokumentation för Adobe Campaign Classic
+seo-title: Adobe Campaign Classic - produktdokumentation
 solution: Campaign Classic
-title: Produktdokumentation för Adobe Campaign Classic
+title: Adobe Campaign Classic - produktdokumentation
 topic: Premium
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,11 @@ ht-degree: 0%
 
 ## Nyheter
 
+* Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. [Läs mer](/help/rn/using/documentation-updates.md)
+
 * **[Få frågor och svar om support](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/> Access, bästa praxis, hjälpresurser och begäran om hjälp
 
-* **[Integritetsefterlevnad](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Läs mer om hur Adobe Campaign kan hjälpa er med er sekretessefterlevnad
+* **[Integritetsefterlevnad](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Läs mer om hur Adobe Campaign kan hjälpa dig att följa din sekretesspolicy
 
 * **[Spåra funktioner](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> Förstå spårningsfunktioner och -processer i Campaign
 
@@ -43,7 +45,7 @@ ht-degree: 0%
     </a>
     </div>
     <p>
-    <em>Hitta svar på vanliga frågor när du använder Campaign Classic</em>
+    <em>Hitta svar på vanliga frågor om Campaign Classic</em>
     <p>
   </td>
    <td>
