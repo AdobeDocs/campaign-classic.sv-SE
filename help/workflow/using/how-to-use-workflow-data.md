@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Alla insamlade data kan användas för att uppdatera databasen eller i leveranse
 
 ### Listor och direkta uppdateringar {#lists-and-direct-updates}
 
-Data från Adobe Campaign-databasen och befintliga listor kan uppdateras med två dedikerade aktiviteter:
+Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras med hjälp av två dedikerade aktiviteter:
 
 * Med hjälp av den här **[!UICONTROL List update]** aktiviteten kan du lagra arbetstabeller i en datalist.
 
@@ -67,7 +67,7 @@ Förutom de vanliga personaliseringsfälten kan du lägga till anpassningsfält 
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData** . Mer information finns i [Måldata](../../workflow/using/data-life-cycle.md#target-data).
+Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData** . Mer information finns i [Target-data](../../workflow/using/data-life-cycle.md#target-data).
 
 Inom ramen för e-postleverans kan personaliseringsfält även använda data från måltillägg som har utförts i arbetsflödesfaserna för målanpassning, vilket visas i exemplet nedan:
 
@@ -85,16 +85,67 @@ Med Adobe Campaign kan du exportera komprimerade eller krypterade filer. När du
 
 Så här kan du göra:
 
-* Om Adobe har Adobe som värd för din installation av Adobe Campaign: skicka en begäran till [supporten](https://support.neolane.net) om att få de nödvändiga verktygen installerade på servern.
-* Om ni har Adobe Campaign lokalt: installera verktyget som du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
+1. Installera ett GPG-nyckelpar för instansen med [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-Du kan sedan använda kommandon eller kod som:
+   >[!NOTE]
+   >
+   >Kontrollpanelen är tillgänglig för alla kunder som har AWS som värd (med undantag för kunder som har sina marknadsföringsinstanser på plats).
 
-```
-function encryptFile(file) {  
-  var systemCommand = “gpg --encrypt --recipient  recipientToEncryptTo ” + file;  
-  var result = execCommand(systemCommand, true); 
-}
-```
+1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du Adobes kundtjänst för att få de nödvändiga verktygen installerade på servern.
+1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
 
-När du importerar en fil kan du även packa upp eller dekryptera den. Se [Zippa upp eller dekryptera en fil före bearbetning](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Du kan sedan använda kommandon eller kod på aktivitetens **[!UICONTROL Script]** flik eller i en **[!UICONTROL JavaScript code]** aktivitet. Ett exempel visas i användningsexemplet nedan.
+
+**Relaterade ämnen:**
+
+* [Zippa upp eller dekryptera en fil före bearbetning](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
+* [Dataextraheringsaktivitet](../../workflow/using/extraction--file-.md).
+
+### Användningsfall: Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen {#use-case-gpg-encrypt}
+
+I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera data med en nyckel som installeras på Kontrollpanelen.
+
+Så här utför du det här användningsfallet:
+
+1. Generera ett GPG-nyckelpar (public/private) med ett GPG-verktyg och installera sedan den offentliga nyckeln på Kontrollpanelen. Detaljerade steg finns i dokumentationen för [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+
+1. Bygg ett arbetsflöde i Campaign Classic för att exportera data och exportera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
+
+   ![](assets/gpg-workflow-encrypt.png)
+
+   * **[!UICONTROL Query]** aktivitet: I det här exemplet vill vi köra en fråga för att rikta data från den databas som vi vill exportera.
+   * **[!UICONTROL Data extraction (file)]** aktivitet: Extraherar data till en fil.
+   * **[!UICONTROL JavaScript code]** aktivitet: Krypterar de data som ska extraheras.
+   * **[!UICONTROL File transfer]** aktivitet: Skickar data till en extern källa (i det här exemplet en SFTP-server).
+
+1. Konfigurera **[!UICONTROL Query]** aktiviteten för att ange önskade data från databasen som mål. For more on this, refer to [this section](../../workflow/using/query.md).
+
+1. Öppna **[!UICONTROL Data extraction (file)]** aktiviteten och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
+
+   ![](assets/gpg-data-extraction.png)
+
+1. Öppna **[!UICONTROL JavaScript code]** aktiviteten och kopiera och klistra in kommandot nedan för att kryptera de data som ska extraheras.
+
+   >[!IMPORTANT]
+   >
+   >Se till att du ersätter värdet för **fingeravtryck** från kommandot med fingeravtrycket för den offentliga nyckeln som är installerad på kontrollpanelen.
+
+   ```
+   var cmd='gpg ';
+   cmd += ' --trust-model always';
+   cmd += ' --batch -yes';
+   cmd += ' --recipient fingerprint';
+   cmd += ' --encrypt --output ' + vars.filename + '.gpg ' + vars.filename;
+   execCommand(cmd,true);
+   vars.filename=vars.filename + '.gpg'
+   ```
+
+   ![](assets/gpg-script.png)
+
+1. Öppna **[!UICONTROL File transfer]** aktiviteten och ange sedan den SFTP-server som du vill skicka filen till. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
+
+   ![](assets/gpg-file-transfer.png)
+
+1. Du kan nu köra arbetsflödet. När den har körts exporteras datamål som omfattas av frågan till SFTP-servern till en krypterad GPG-fil.
+
+   ![](assets/gpg-sftp-encrypt.png)
