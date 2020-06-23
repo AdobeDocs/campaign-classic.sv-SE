@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2218'
 ht-degree: 0%
 
 ---
@@ -25,19 +25,19 @@ ht-degree: 0%
 
 # Externa konton{#external-accounts}
 
-Ett externt konto är en konfiguration som gör att du kan konfigurera och testa åtkomsten till en server utanför Adobe Campaign. Dessa externa konton kan användas i Campaign-arbetsflöden för att få tillgång till och hantera data.
+Ett externt konto är en konfiguration som gör att du kan konfigurera och testa åtkomsten till en server som ligger utanför Adobe Campaign. Dessa externa konton kan användas i Campaign-arbetsflöden för att få tillgång till och hantera data.
 
 Du kan ställa in följande typer av externa konton:
 
 * [Routning av externt konto](#routing-external-account)
 * [Externt FTP-konto](#ftp-external-account)
 * [Externt konto för extern databas](#external-database-external-account)
-* [Externt konto för Web Analytics](#web-analytics-external-account)
+* [Analytics-konto för webben](#web-analytics-external-account)
 * [Externt konto för Facebook-anslutning](#facebook-connect-external-account)
 * [Externt konto för körningsinstans](#execution-instance-external-account)
 * [Externt Adobe Experience Cloud-konto](#adobe-experience-cloud-external-account)
 * [Externt SFTP-konto](#sftp-external-account)
-* [Externt Adobe Experience Manager-konto](#adobe-experience-manager-external-account)
+* [Adobe Experience Manager external account](#adobe-experience-manager-external-account)
 * [Externt konto för Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Externt Azure-konto](#azure-external-account)
 * [Hadoop-externt konto](#hadoop-external-account)
@@ -47,9 +47,9 @@ Du kan ställa in följande typer av externa konton:
 
 ## Skapa ett externt konto {#creating-an-external-account}
 
-Adobe Campaign innehåller en uppsättning fördefinierade externa konton. Om du vill skapa anslutningar till externa system, t.ex. FTP-servrar som används för filöverföringar, kan du skapa egna externa konton.
+Adobe Campaign levereras med en uppsättning fördefinierade externa konton. Om du vill skapa anslutningar till externa system, t.ex. FTP-servrar som används för filöverföringar, kan du skapa egna externa konton.
 
-Externa konton används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden. När du konfigurerar en filöverföring i ett arbetsflöde eller ett datautbyte med något annat program (Adobe Target, Experience Manager osv.) måste du välja ett externt konto.
+Externa konton används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden. När du konfigurerar en filöverföring i ett arbetsflöde eller ett datautbyte med något annat program (Adobe Target, Experience Manager, osv.) måste du välja ett externt konto.
 
 1. Öppna **[!UICONTROL Explorer]** och visa **[!UICONTROL Administration]** menyn.
 1. Öppna **[!UICONTROL Platform]** menyn och klicka på **[!UICONTROL External accounts]**.
@@ -103,7 +103,7 @@ Så här konfigurerar du det **[!UICONTROL Bounce mails (defaultPopAccount)]** e
 
 ## Routning av externt konto {#routing-external-account}
 
-Med det **[!UICONTROL Routing]** externa kontot kan ni konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
+Med det **[!UICONTROL Routing]** externa kontot kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
 
 ![](assets/ext_account_7.png)
 
@@ -151,7 +151,7 @@ Om du vill veta var du hittar dessa autentiseringsuppgifter kan du gå till den 
 
 ## Externt konto för extern databas {#external-database-external-account}
 
-Adobe Campaign har flera kontakter som gör att du kan kommunicera med externa program och ansluta till databasmotorer.
+I Adobe Campaign finns flera anslutningar som gör att du kan kommunicera med externa program och ansluta till databasmotorer.
 
 ![](assets/ext_account_11.png)
 
@@ -173,7 +173,7 @@ Följande anslutningstyper kan konfigureras:
 
 ### Snöflinga externt konto {#snowflake-external-account}
 
-Med det **externa kontot Snowflake** kan du ansluta Campaign-instansen till din externa Snowflake-databas. Mer information om hur du konfigurerar Campaign Classic med Snowflake finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+Med det **externa kontot Snowflake** kan du ansluta Campaign-instansen till din externa Snowflake-databas. Mer information om hur du konfigurerar Campaign Classic med snöflake finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
 
 Om du vill konfigurera det här externa kontot så att det fungerar med Adobe Campaign måste du ange följande information:
 
@@ -233,7 +233,7 @@ Om du vill konfigurera det här externa kontot så att det fungerar med Adobe Ca
 
 ![](assets/ext_account_20.png)
 
-När flera Adobe Campaign-användare ansluter till samma externa FDA Teradata-konto kan du med fliken **[!UICONTROL Query banding]** ställa in ett frågeband, dvs. en uppsättning nyckel/värde-par, för en session.
+När flera Adobe Campaign-användare ansluter till samma externa FDA Teradata-konto kan du på fliken **[!UICONTROL Query banding]** ställa in ett frågeband, dvs. en uppsättning nyckel/värde-par, för en session.
 
 Varje gång en Campaign-användare utför en fråga i Teradata-databasen skickar Adobe Campaign metadata, som består av en lista med nycklar som är kopplade till den här användaren. Dessa data kan sedan användas av Teradata-administratörer för revision eller för att hantera åtkomsträttigheter.
 
@@ -245,9 +245,9 @@ I **[!UICONTROL Users]** fältet kan du ange ett frågeband för varje användar
 
 Mer information om **[!UICONTROL Query banding]** finns i [Teradata-dokumentationen](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-## Externt konto för Web Analytics {#web-analytics-external-account}
+## Analytics-konto för webben {#web-analytics-external-account}
 
-Med det **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externa kontot kan ni vidarebefordra data från Adobe Analytics till Adobe Campaign i form av segment. Omvänt skickas indikatorer och attribut för e-postkampanjer från Adobe Campaign till Adobe Analytics - Data Connector.
+Med det **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externa kontot kan du vidarebefordra data från Adobe Analytics till Adobe Campaign i form av segment. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics - Datakoppling.
 
 ![](assets/ext_account_10.png)
 
@@ -299,7 +299,7 @@ Mer information om den här konfigurationen finns på den här [sidan](../../mes
 
 ## Externt Adobe Experience Cloud-konto {#adobe-experience-cloud-external-account}
 
-Om du vill ansluta till Adobe Campaign-konsolen med ett Adobe-id måste du konfigurera det **[!UICONTROL Adobe Experience Cloud (MAC)]** externa kontot.
+Om du vill ansluta till konsolen Adobe Campaign med ett Adobe ID måste du konfigurera det **[!UICONTROL Adobe Experience Cloud (MAC)]** externa kontot.
 
 ![](assets/ext_account_9.png)
 
@@ -321,15 +321,15 @@ Om du vill ansluta till Adobe Campaign-konsolen med ett Adobe-id måste du konfi
 
 * **[!UICONTROL Callback server]**
 
-   Åtkomst-URL för Adobe Campaign-instansen.
+   Åtkomst-URL för din Adobe Campaign-instans.
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID för din IMS-organisation. Se den här [sidan](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html) för att hitta ditt organisations-ID (**Var hittar jag mitt IMS-organisations-ID?**).
+   ID för din IMS-organisation. Se den här [sidan](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) för att hitta ditt organisations-ID (**Var hittar jag mitt IMS-organisations-ID?**).
 
 * **[!UICONTROL Association mask]**
 
-   Syntax som gör att konfigurationsnamn i Enterprise Dashboard kan synkroniseras med grupperna i Adobe Campaign.
+   Syntax som gör att konfigurationsnamn i Enterprise Dashboard kan synkroniseras med grupper i Adobe Campaign.
 
 * **[!UICONTROL Server]**
 
@@ -363,23 +363,23 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 
    Lösenord som används för att ansluta till SFTP-servern.
 
-## Externt Adobe Experience Manager-konto {#adobe-experience-manager-external-account}
+## Adobe Experience Manager external account {#adobe-experience-manager-external-account}
 
-Med det **[!UICONTROL AEM (AEM instance)]** externa kontot kan ni hantera innehållet i era e-postleveranser och era formulär direkt i Adobe Experience Manager.
+Med det **[!UICONTROL AEM (AEM instance)]** externa kontot kan du hantera innehållet i e-postleveranser och formulär direkt i Adobe Experience Manager.
 
 ![](assets/ext_account_5.png)
 
 * **[!UICONTROL Server]**
 
-   URL för Adobe Experience Manager-servern.
+   Adobe Experience Manager-serverns URL.
 
 * **[!UICONTROL Port]**
 
-   Kontonamn som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
+   Kontonamn som används för att ansluta till författarinstansen för Adobe Experience Manager.
 
 * **[!UICONTROL Password]**
 
-   Lösenord som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
+   Lösenord som används för att ansluta till författarinstansen för Adobe Experience Manager.
 
 For more on this, refer to this [section](../../integrations/using/about-adobe-experience-manager.md).
 
@@ -417,7 +417,7 @@ Om du vill veta var du hittar nyckel-ID:t och den hemliga åtkomstnyckeln kan du
 
 ## Externt Azure-konto {#azure-external-account}
 
-Det **[!UICONTROL Azure]** externa kontot möjliggör anslutning till en delad extern databas, så länge som anslutningen är aktiv, kan databasen nås via Adobe Campaign.
+Det **[!UICONTROL Azure]** externa kontot möjliggör en anslutning till en delad extern databas, så länge som den här anslutningen är aktiv kan databasen nås via Adobe Campaign.
 
 ![](assets/ext_account_15.png)
 
@@ -435,7 +435,7 @@ Det **[!UICONTROL Azure]** externa kontot möjliggör anslutning till en delad e
 
 ## Hadoop-externt konto {#hadoop-external-account}
 
-Det **[!UICONTROL Hadoop]** externa kontot möjliggör anslutning till en delad extern databas, så länge som anslutningen är aktiv, kan databasen nås via Adobe Campaign. Mer information om hur du konfigurerar åtkomst till Hadoop finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
+Det **[!UICONTROL Hadoop]** externa kontot möjliggör en anslutning till en delad extern databas, så länge som den här anslutningen är aktiv kan databasen nås via Adobe Campaign. Mer information om hur du konfigurerar åtkomst till Hadoop finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
@@ -451,7 +451,7 @@ Det **[!UICONTROL Hadoop]** externa kontot möjliggör anslutning till en delad 
 
 Med det **[!UICONTROL Microsoft Dynamics CRM]** externa kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-Konfigurationen för Microsoft Dynamics-anslutningen som ska fungera med Adobe Campaign beror på din distributionstyp.
+Konfigurationen för Microsoft Dynamics-anslutningen som ska fungera med Adobe Campaign beror på vilken distributionstyp du har.
 Med **[!UICONTROL On-premise]** - och **[!UICONTROL Office 365]** distributionstyper måste du ange följande information:
 
 ![](assets/ext_account_21.png)
