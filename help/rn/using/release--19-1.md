@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2808'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,19 @@ _13 augusti 2019_
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **29 april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
+![](assets/do-not-localize/green_2.png) **22 juni 2020**: new build (9032@800be2e) som innehåller följande korrigeringar:
+
+* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903, NEO-25799)
+
+Följande korrigeringar är relaterade till säkerhetsmekanismen för spårningslänkar:
+
+* Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
+* Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook.  (NEO-25688)
+* Korrigerade ett problem som förhindrade spårning av URL-adresser som använder fragment i personaliseringsparametrar (ankartaggar med nummertecken) från att fungera. (NEO-25774)
+* Ett problem med tjänsten mot nätfiske har korrigerats. (NEO-25283)
+* Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277)
+
+![](assets/do-not-localize/orange_2.png) **29 april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
 
 * Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
