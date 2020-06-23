@@ -1,6 +1,6 @@
 ---
-title: Transactional Messaging-arkitekturen i Adobe Campaign Classic
-description: I det här avsnittet beskrivs transaktionsmeddelandearkitekturen för Adobe Campaign Classic.
+title: Adobe Campaign Classic-arkitektur för transaktionsmeddelanden
+description: I det här avsnittet beskrivs Adobe Campaign Classic-arkitekturen för transaktionsmeddelanden.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 ## Om körnings- och kontrollinstanser {#about-execution-and-control-instances}
 
-I Adobe Campaign har transaktionsfunktioner (även kallat Message Center) utformats för att stödja skalbarhet och tillhandahålla en tjänst dygnet runt. Den består av flera instanser:
+I Adobe Campaign har funktioner för transaktionsmeddelanden (även kallat Message Center) utformats för att stödja skalbarhet och tillhandahålla en tjänst dygnet runt. Den består av flera instanser:
 
 * en kontrollinstans som meddelandemallarna skapas i,
 * en eller flera körningsinstanser som tar emot händelser och levererar meddelanden.
 
-Om du vill använda de här funktionerna loggar Adobe Campaign-användare in på kontrollinstansen för att skapa transaktionsmeddelandemallar, generera meddelandeförhandsvisningen med hjälp av en startlista, visa rapporter och övervaka körningsinstanser.
+Om du vill använda de här funktionerna loggar du in på kontrollinstansen för att skapa transaktionsmeddelandemallar, generera meddelandeförhandsvisningen med hjälp av en startlista, visa rapporter och övervaka körningsinstanser.
 
 Körningsinstanser tar emot händelser, länkar dem till transaktionsmeddelandemallar och skickar ett personligt meddelande till varje mottagare.
 
@@ -38,7 +38,7 @@ Körningsinstanser tar emot händelser, länkar dem till transaktionsmeddelandem
 
 ## Stöd för flera kontrollinstanser {#supporting-several-control-instances}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Delning av ett körningskluster med flera kontrollinstanser stöds endast i lokala miljöer.
 
@@ -54,7 +54,7 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 
 Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
 
@@ -90,7 +90,7 @@ To use transactional messaging with Interaction, you need to apply the following
 
 * Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-  >[!CAUTION]
+  >[!IMPORTANT]
   >
   >Do not replicate the offers onto the execution instances.
 
@@ -124,7 +124,7 @@ I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skick
 Om du vill använda transaktionsmeddelandemoduler med Mobile App Channel måste du använda följande konfigurationer:
 
 1. Installera paketet **Mobile App Channel** på instanser för kontroll och körning.
-1. Replikera Adobe Campaign-tjänsten av typen **mobilprogram** samt de mobilprogram som den innehåller i körningsinstanserna.
+1. Replikera tjänsten för **Mobile-programtypen** Adobe Campaign samt de mobilprogram som den innehåller i körningsinstanserna.
 
 Händelsen måste innehålla följande element:
 
