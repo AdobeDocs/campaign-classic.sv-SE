@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Adobe Campaign Classic - produktdokumentation
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
+source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Nyheter
 
-* Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. [Läs mer](/help/rn/using/documentation-updates.md)
+* **[Uttryckssymboler](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få frågor och svar om support](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/> Access, bästa praxis, hjälpresurser och begäran om hjälp
 
@@ -49,11 +49,11 @@ ht-degree: 0%
     <p>
   </td>
    <td>
-    <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+    <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
       <img alt="Bygg uppgradering" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
-      <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+      <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
     <strong>Uppgradera till den senaste versionen</strong>
     </a>
     </div>
