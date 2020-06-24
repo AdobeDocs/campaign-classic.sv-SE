@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3e8802aae0d10befcf9eef1ccf720f82c460038
+source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 0%
 </table>
 
 Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+![](assets/do-not-localize/cp-icon.png) **Den nya Kontrollpanelen i juni** med övervakning av aktiva profiler, granskning av deldomänsleveranser och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
@@ -90,7 +92,7 @@ _8 juni 2020_
   <tr> 
    <td> <p>Thailand’s Personal Data Protection Act (PDPA) är den nya integritetslagen som harmoniserar och moderniserar dataskyddskraven för Thailand. </p>
    <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) börjar gälla från och med 16 augusti för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
-   <p>Dessa regler gäller Adobe Campaign-kunder som lagrar data för registrerade i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta din beredskap för PDPA och LGPD:</p>
+   <p>Dessa bestämmelser gäller för Adobe Campaign-kunder som har data för registrerade i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta din beredskap för PDPA och LGPD:</p>
    <ul> 
      <li><p>Rätt till åtkomst och rätt att ta bort: vi utnyttjar de funktioner som tillkommit för GDPR och CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
      <li> <p>När du skapar en sekretessbegäran med Campaign-gränssnittet eller API:t väljer du nu <strong>regeltypen</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Läs mer</a>.</p></li>
@@ -151,7 +153,7 @@ Läs mer i [Matrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.h
 
 * Färgen på visningsnamnen har ändrats från mörkblått till mörkblått cyan för att det ska bli lättare att skilja vyer från mappar. [Läs mer](../../platform/using/access-management.md#about-views)
 
-* Campaign Classic kan nu anslutas till Microsoft Dynamics CRM-konton som finns i regionerna UK, Indien och Kanada. Detta gäller distributionstyperna Office 365 och On Premise (Dynamics 2015).
+* Campaign Classic kan nu anslutas till Microsoft Dynamics CRM-konton i Storbritannien, Indien och Kanada. Detta gäller distributionstyperna Office 365 och On Premise (Dynamics 2015).
 
 * Campaign utför nu en TLS-verifiering för att kontrollera att värdnamnet för servern matchar värdnamnet i det angivna certifikatet.
 
@@ -240,7 +242,7 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade en regression som fick rensningsarbetsflödet att krascha.
 * Korrigerade ett problem som kunde inträffa när en mall publicerades på en körningsinstans.
 * Ett problem som kunde förhindra det tekniska arbetsflödet collectPrivacyRequests har åtgärdats. (NEO-20513, NEO-25169)
-* Korrigerade problem som kan inträffa när du försöker ansluta till Audience Manager efter att ha uppgraderat till build 9080. (NEO-20511, NEO-25167)
+* Korrigerade problem som kunde inträffa när du försökte ansluta till Audience Manager efter att ha uppgraderat till build 9080. (NEO-20511, NEO-25167)
 * Problem som kan uppstå vid export av rapporter i PDF- eller XLS-format har åtgärdats. (NEO-20982, NEO-23493, NEO-23348)
 * Korrigerade ett problem som kunde visa en leverans två gånger i leveranslistan efter att den skickades.
 * Ett problem med leveransförberedelser som kunde inträffa när routningskonfigurationen var inställd på att skicka leveransen via mellanlagring har åtgärdats.
