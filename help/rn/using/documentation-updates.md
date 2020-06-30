@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
+source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
 workflow-type: tm+mt
-source-wordcount: '6726'
+source-wordcount: '6767'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,13 @@ Du kan även läsa [Adobe Campaign Classic Release Notes](../../rn/using/latest-
 
 ## Juni 2020 {#june-2020}
 
+Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inbegriper förtydligande av de fall där adresser automatiskt tas bort från karantänlistan. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+
 Användningsexempel har lagts till om hur du [krypterar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypterar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) data med arbetsflödena på Kontrollpanelen och Campaign.
 
 Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod, men kommer att ersättas i kommande Campaign-versioner med blocklist och allowlist.
+
+Integreringssidan Experience Cloud Triggers och Adobe Campaign Classic har flyttats [här](../../integrations/using/about-triggers.md).
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -88,7 +92,7 @@ Bästa praxis för datamodeller har förbättrats med ytterligare information om
 
 Avsnittet som beskriver den inbyggda datamodellen för Adobe Campaign har uppdaterats med mer information om varje tabell. [Läs mer](../../configuration/using/data-model-description.md)
 
-Fall av användning av arbetsflöden har uppdaterats och omorganiserats i tematiska avsnitt. [Läs mer](../../workflow/using/using-the-local-approval-activity.md)
+Fall av användning av arbetsflöden har uppdaterats och omorganiserats i tematiska avsnitt. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
 
 Avsnitten [Signera e-postkvalificering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) och [E-posthanteringsregler](../../delivery/using/understanding-delivery-failures.md#email-management-rules) har förbättrats med uppdaterad information.
 
@@ -130,7 +134,7 @@ Förbättringar av Hadoop FDA Connector - [läs mer](../../platform/using/specif
 
 **Andra dokumentationsuppdateringar som följer med releasen**
 
-Guiderna för [installation](../../installation/using/before-reading.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används av starten av servertjänsten. Du kan fortfarande använda /etc/init.d/nlserver6, men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med nlserver-tjänsten.
+Guiderna för [installation](../../installation/using/before-reading.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används av servertjänstens start. Du kan fortfarande använda /etc/init.d/nlserver6, men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med nlserver-tjänsten.
 
 Installationsguiden har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Nya system som stöds har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/before-reading.md)
 
@@ -417,7 +421,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
