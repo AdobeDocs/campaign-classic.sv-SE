@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3a932bc440853151704f1ba1e188fa0af9d4c5cb
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,3 @@ Arbetsflöden hanteras av en specifik modul. Den här modulen kan startas på fl
 * Processen &#39;Workflow Instance Runner&#39; (runwf) kör alla åtgärder i en viss arbetsflödesinstans. När det inte finns några uppgifter att utföra just nu blir den&quot;passiv&quot;, det vill säga sparar dess status i databasen och sedan stoppas.
 * Modulen Arbetsflödesserver (wfserver) övervakar aktuella arbetsflödesinstanser. När det finns en uppgift att utföra skapar den här modulen en process för att aktivera (eller återaktivera) motsvarande instans.
 
-När en operator utför en åtgärd i ett arbetsflöde (start, stopp, paus osv.), utförs åtgärden inte direkt av modulen nlserver, utan placeras i en kö för att bearbetas av arbetsflödesmodulen.
