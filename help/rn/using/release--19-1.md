@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2808'
+source-wordcount: '2848'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,11 @@ Följande korrigeringar är relaterade till säkerhetsmekanismen för spårnings
 ![](assets/do-not-localize/orange_2.png) **29 april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
 
 * Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
+
+>[!CAUTION]
+>
+>Om du får problem med push-meddelanden med hjälp av spårningslänkar, eller leveranser med ankartaggar, rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårning av länkar. Proceduren beskrivs på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
 * Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 * Korrigerade ett problem som kunde påverka push-meddelanden när de skickades med hög frekvens. (NEO-20516)
