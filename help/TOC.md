@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2126'
 ht-degree: 0%
 
 ---
@@ -320,6 +320,13 @@ ht-degree: 0%
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbprogram](integrations/using/synchronizing-web-applications.md)
       + [Felsökning av [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+   + Experience Cloud-utlösare {#experience-triggers}
+      + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Konfigurerar pipeline](integrations/using/configuring-pipeline.md)
+      + [Pipeline, alternativ NmsPipeline_Config](integrations/using/nmspipeline-config.md)
+      + [Utlösarhändelser](integrations/using/events.md)
+      + [Pipelinesövervakning](integrations/using/pipeline-monitoring.md)
+      + [Felsökning av pipeline](integrations/using/pipeline-troubleshooting.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Introduktion {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
@@ -397,6 +404,7 @@ ht-degree: 0%
       + [Inkommande e-postmeddelanden](workflow/using/inbound-emails.md)
       + [Inkommande SMS](workflow/using/inbound-sms.md)
    + Användningsexempel {#use-cases}
+      + [Om användningsfall för arbetsflöden](workflow/using/about-workflow-use-cases.md)
       + Leveranser {#deliveries}
          + [Använda lokal godkännandeaktivitet](workflow/using/using-the-local-approval-activity.md)
          + [A/B-tester](workflow/using/a-b-testing.md)
