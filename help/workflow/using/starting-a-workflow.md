@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Ett arbetsflöde startas alltid manuellt. När den startas kan den dock förbli 
 Med verktygsfältet kan du starta och spåra arbetsflödets körning.
 
 Listan med alternativ på **[!UICONTROL Actions]** menyn och högerklicksmenyn finns nedan.
+
+>[!IMPORTANT]
+>
+>Tänk på att när en operator utför en åtgärd i ett arbetsflöde (starta, stoppa, pausa osv.) utförs inte åtgärden direkt, utan i stället placeras i en kö för att bearbetas av [arbetsflödesmodulen](../../workflow/using/architecture.md).
 
 ## Verktygsfältet Åtgärder {#actions-toolbar}
 
