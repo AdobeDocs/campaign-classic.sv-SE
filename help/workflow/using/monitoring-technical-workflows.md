@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 Tekniska arbetsflöden måste övervakas, och åtgärder måste vidtas när de misslyckas.
 
-Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-maintenance.html).
+Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
@@ -54,7 +57,7 @@ För **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
 För **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som standard) och att journalen inte visar återkommande fel. Mer information finns i det här [avsnittet](../../workflow/using/delivery.md).
+Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som standard) och att journalen inte visar återkommande fel. For more on this, refer to this [section](../../workflow/using/delivery.md).
 
 För **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
@@ -102,4 +105,4 @@ Du kan skapa ett övervakningsarbetsflöde för att skicka ett e-postmeddelande 
 
 Du kan skapa en vy så att alla arbetsflöden i ett funktionsområde eller hela systemet kan övervakas.
 
-Du kan också använda Adobe Campaign-jobbet eller rapportfunktionen för att skapa dokumentation på begäran, som alltid är uppdaterad.
+Du kan också använda Adobe Campaign-jobbet eller rapportfunktionen för att skapa dokumentation på begäran, som alltid är aktuell.
