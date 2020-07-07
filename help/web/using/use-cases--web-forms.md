@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Eftersom mottagarna av den här leveransen inte har bekräftat sitt godkännande finns de fortfarande kvar i databasblocklistan. För att de ska kunna ta emot den här kommunikationen måste du godkänna leveranser som baseras på den här mallen för målmottagare som finns i blocklistan.
+1. Eftersom mottagarna av leveransen inte har bekräftat sitt godkännande finns de fortfarande i databasen blockeringslista. För att de ska kunna ta emot det här meddelandet måste du godkänna leveranser som baseras på den här mallen för mottagare som befinner sig på blockeringslista.
 
    Klicka på **[!UICONTROL Exclusions]** fliken om du vill göra det.
 
@@ -62,7 +62,7 @@ Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Det här alternativet kan endast inaktiveras i den här typen av sammanhang.
 
@@ -112,7 +112,7 @@ Gör så här:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Den första **[!UICONTROL Script]** aktiviteten lägger till mottagare i blockeringslistan tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
+   Den första **[!UICONTROL Script]** aktiviteten lägger till mottagare i blockeringslista tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
 
    ```
    ctx.recipient.@blockList=1
@@ -175,7 +175,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen, och deras profil läggs till i blocklistan tills de bekräftar sin prenumeration med e-postmeddelandet.
+   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen, och deras profil läggs till i blockeringslista tills de bekräftar sin prenumeration med e-postmeddelandet.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -189,7 +189,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    I Adobe Campaign uppdateras användarprofilen:
 
-   * De finns inte längre med i blockeringslistan.
+   * De är inte längre på blockeringslista.
    * de prenumererar på informationstjänsten.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
