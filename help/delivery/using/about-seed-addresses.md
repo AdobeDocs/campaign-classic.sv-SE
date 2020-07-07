@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Funktionen för dirigerade adresser har följande fördelar:
 
 * Slumpmässig ersättning av fält med data från mottagarprofiler: Detta gör att du bara kan ange e-postadressen, till exempel i avsnittet för dirigerad adress, och låta Campaign automatiskt fylla i de andra fälten från profilen (se [Användningsfall: konfigurera fältersättning](../../delivery/using/use-case--configuring-the-field-substitution.md)).
 * När du använder ett arbetsflöde med datahanteringsfunktioner kan ytterligare data som bearbetas i leveranser anges på dirigeringsadressnivå för att framtvinga värden: den här sidan gör att slumpmässiga värden byts ut.
-* dirigeringsadresser exkluderas automatiskt från rapporter om följande leveransstatistik: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**..
+* dirigeringsadresser exkluderas automatiskt från rapporter om följande leveransstatistik: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
 Seed-adresser läggs till i målet för leveranser genom att importeras eller skapas direkt i leveransen eller kampanjen.
 
@@ -44,12 +47,12 @@ Seed-adresser läggs till i målet för leveranser genom att importeras eller sk
 
 Vid direktutskick läggs startadresser till under extraheringen och blandas i utdatadokumentet.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >För direktreklam måste extraheringsfilformatet uppfylla följande begränsningar:
 >
 >* Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Om elementsamlingar extraheras får dessa fält ett tomt värde för startadresserna, såvida inte **[!UICONTROL Single row (expert user)]** alternativet är markerat. Mer information finns i [det här avsnittet](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Om elementsamlingar extraheras får dessa fält ett tomt värde för startadresserna, såvida inte **[!UICONTROL Single row (expert user)]** alternativet är markerat. For more on this, refer to [this section](../../platform/using/exporting-data.md#step-7---data-formatting).
 >
 
 
