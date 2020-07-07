@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2122'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,13 @@ ht-degree: 0%
    + Åtkomst till en extern databas (FDA){#accessing-external-database}
       + [Om FDA](platform/using/about-fda.md)
       + [Specifika konfigurationer efter databastyp](platform/using/specific-configuration-database.md)
+      + [Äldre anslutningar](platform/using/legacy-connectors.md)
       + [Åtkomsträttigheter till fjärrdatabas](platform/using/remote-database-access-rights.md)
       + [Ansluta till databasen](platform/using/connecting-to-database.md)
       + [Skapa dataschemat](platform/using/creating-data-schema.md)
       + [Definiera datamappning](platform/using/defining-data-mapping.md)
       + [Ytterligare alternativ](platform/using/additional-options.md)
-      + [Använda data från en extern databas i ett arbetsflöde](platform/using/data-external-database-workflow.md)
+      + [Tillägg](platform/using/appendices-fda.md)
    + Kopplingar {#connectors}
       + [Om kopplingar](platform/using/about-connectors.md)
       + [CRM Connectors](platform/using/crm-connectors.md)
@@ -161,7 +162,7 @@ ht-degree: 0%
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Bästa praxis för återanvändning](delivery/using/re-engagement-best-practices.md)
-      + [Blocklistedatabaser](delivery/using/block-list-databases.md)
+      + [Blockeringslista databaser](delivery/using/block-list-databases.md)
       + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
@@ -623,6 +624,7 @@ ht-degree: 0%
    + Introduktion {#introduction}
       + [Förord](production/using/foreword.md)
       + [Allmän arkitektur](production/using/general-architecture.md)
+      + [Riktlinjer för övervakning](production/using/monitoring-guidelines.md)
    + Produktionsförfaranden {#production-procedures}
       + [Konfigurationsprincip](production/using/configuration-principle.md)
       + [Verksamhetsprincip](production/using/operating-principle.md)
