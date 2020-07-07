@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Adobe Campaign Classic - produktdokumentation
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
+source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -87,4 +87,4 @@ ht-degree: 0%
 | [Kom igång med Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Uppgradering av Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Kontrollpanelen för kampanj](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Övervaka bästa praxis](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
+| [Kontrollpanelen för kampanj](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
