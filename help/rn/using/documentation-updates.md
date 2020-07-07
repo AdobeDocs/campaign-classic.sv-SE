@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
 workflow-type: tm+mt
-source-wordcount: '6767'
+source-wordcount: '6795'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,19 @@ På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per
 
 Du kan även läsa [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) för mer information.
 
+## Juli 2020 {#july-2020}
+
+Ett nytt avsnitt har lagts till med riktlinjer för övervakning av Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
+
+Avsnittet Sekretess och samtycke har förbättrats med mer detaljerad information och användbara länkar. [Läs mer](../../platform/using/privacy-and-recommendations.md).
+
 ## Juni 2020 {#june-2020}
 
 Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inbegriper förtydligande av de fall där adresser automatiskt tas bort från karantänlistan. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Användningsexempel har lagts till om hur du [krypterar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypterar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) data med arbetsflödena på Kontrollpanelen och Campaign.
 
-Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod, men kommer att ersättas i kommande Campaign-versioner med blocklist och allowlist.
+Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod, men kommer att ersättas i kommande Campaign-versioner med&quot;blockeringslista&quot; och&quot;tillåtelselista&quot;.
 
 Integreringssidan Experience Cloud Triggers och Adobe Campaign Classic har flyttats [här](../../integrations/using/about-triggers.md).
 
@@ -68,7 +74,6 @@ Kampanjnätverkets slutpunkter har flyttats till det här [avsnittet](../../inst
 Installationsavsnittet för Spam Assassin har uppdaterats med det nya installationsfilnamnet. [Läs mer](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 Avsnittet om dupliceringsmiljöer har uppdaterats. [Läs mer](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## Maj 2020 {#may-2020}
 
@@ -260,7 +265,7 @@ Stegen för att konfigurera Inkorgsåtergivning för lokala installationer har l
 
 ## September 2019 {#september-2019}
 
-En ny sida har lagts till för att ge allmänna riktlinjer för att underhålla Campaign Classic. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+En ny sida har lagts till för att ge allmänna riktlinjer för att underhålla Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
 Information om övervakning av arbetsflöden har centraliserats till ett nytt dedikerat avsnitt. [Läs mer](../../workflow/using/monitoring-workflow-execution.md).
 
