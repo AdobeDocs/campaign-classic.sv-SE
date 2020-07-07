@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ACS Connector bryggar Adobe Campaign v7 och Adobe Campaign Standard. Det är en 
 
 Med ACS Connector används Campaign Standard även fortsättningsvis av digitala marknadsförare för att utforma, rikta och köra kampanjer, medan Campaign v7 är skräddarsytt för datainriktade användare som t.ex. databasmarknadsförare.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >ACS Connector är endast tillgängligt som en del av erbjudandet Adobe Campaign Prime. Mer information om hur du licensierar Adobe Campaign Prime får du av din kontoansvarige.
 >
@@ -83,7 +83,7 @@ ACS Connector replikerar följande objekt regelbundet från Campaign Standard ti
 
 Genom att replikera leverans-ID:n och e-postloggar får du åtkomst till leveranshistoriken och spårningsdata för dina v7-mottagare från Campaign v7.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Endast e-postutsändningsloggar och spårningsloggar replikeras från Campaign Standard till Campaign v7.
 
@@ -120,7 +120,7 @@ Faktureringen påverkas inte av ditt val av program för att skicka leveranser, 
 
 Det finns två typer av implementering för ACS Connector. Båda genomförs alltid av Adobe Campaign Consulting-teamet.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det här avsnittet är endast avsett för expertanvändare, så att de får en global bild av implementeringsprocessen och dess huvudsteg.
 >
@@ -140,7 +140,7 @@ Alla tekniska element som är relaterade till ACS Connector är tillgängliga i 
 
 Efter installationen av paketet finns två tekniska arbetsflöden under **[!UICONTROL Administration > ACS Connector > Process]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Försök aldrig att ändra dessa arbetsflöden. De får aldrig befinna sig i fel eller ha pausats. Kontakta din Adobe Campaign-konsult om detta händer.
 
@@ -219,7 +219,7 @@ Nedan finns en lista över mottagarfält som replikeras med den grundläggande i
   </tr> 
   <tr> 
    <td> Inte längre kontakt (via någon kanal)<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @blockeringslista<br /> </td> 
   </tr> 
   <tr> 
    <td> Kontakta inte längre via e-post<br /> </td> 
@@ -290,7 +290,7 @@ Rättigheterna hanteras på olika sätt i Campaign v7 och Campaign Standard. I C
 
 I det här avsnittet beskrivs några av möjligheterna när det gäller avancerad implementering.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Den här informationen kan bara användas som allmänna riktlinjer. Kontakta er Adobe Campaign-konsult för implementeringen.
 
