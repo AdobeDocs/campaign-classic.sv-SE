@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2001'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Det finns även ett användningsexempel om hur du skapar ett arbetsflöde där d
 
 Administratörer av instansen kan dessutom använda **granskningsspåret** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Mer information finns i det [dedikerade avsnittet](../../production/using/audit-trail.md).
 
-Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-maintenance.html).
+Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
 ## Visa förlopp {#displaying-progress}
 
@@ -111,7 +111,7 @@ Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som sta
 
 ## Arbetstabeller och arbetsflödesschema {#worktables-and-workflow-schema}
 
-Arbetsflödet konverterar arbetstabeller som kan ändras via vissa aktiviteter. Med Adobe Campaign kan ni, via datahanteringsaktiviteter, ändra, byta namn på och berika kolumnerna i arbetsflödestabellerna, till exempel för att anpassa dem till nomenklaturen beroende på kundens behov, för att samla in ytterligare information om medmottagaren av ett kontrakt, osv.
+Arbetsflödet konverterar arbetstabeller som kan ändras via vissa aktiviteter. Med Adobe Campaign kan ni via datahanteringsaktiviteter ändra, byta namn på och berika kolumnerna i arbetsflödestabellerna, t.ex. för att anpassa dem till nomenklaturen beroende på kundens behov, för att samla in ytterligare information om medmottagaren av ett kontrakt osv.
 
 Det går också att skapa länkar mellan olika arbetsdimensioner och definiera dimensionsändringar. För varje kontrakt som registreras i databasen anger du t.ex. huvudinnehavaren och använder uppgifter om medägare i den ytterligare informationen.
 
@@ -123,7 +123,7 @@ När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet bl
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-I Adobe Campaign Explorer visar arbetsflödeslistan en **[!UICONTROL Failed]** kolumn som standard.
+I Utforskaren i Adobe Campaign visar arbetsflödeslistan en **[!UICONTROL Failed]** kolumn som standard.
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -175,7 +175,7 @@ Om det är möjligt rekommenderar vi att du startar om arbetsflödet när du har
 
 ## Instansövervakning {#instance-supervision}
 
-På **[!UICONTROL Instance supervision]** sidan kan du visa serveraktiviteten för Adobe Campaign och visa en lista över arbetsflöden och leveranser med fel.
+På **[!UICONTROL Instance supervision]** sidan kan du visa serveraktiviteten Adobe Campaign och visa en lista över arbetsflöden och leveranser med fel.
 
 Gå till **[!UICONTROL Monitoring]** universum och klicka på **[!UICONTROL General view]** länken för att komma åt den här sidan.
 
@@ -262,7 +262,7 @@ Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista anv
 
 ## Filtrera arbetsflöden utifrån deras status {#filtering-workflows-status}
 
-Med gränssnittet Campaign Classic kan du övervaka körningsstatusen för alla arbetsflöden på instansen med hjälp av fördefinierade **vyer**. Öppna **[!UICONTROL Administration]**//**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**-noden för att komma åt dessa vyer.
+Med Campaign Classic-gränssnittet kan du övervaka körningsstatusen för alla arbetsflöden på instansen med hjälp av fördefinierade **vyer**. Öppna **[!UICONTROL Administration]**//**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**-noden för att komma åt dessa vyer.
 
 Följande vyer är tillgängliga:
 
