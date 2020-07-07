@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 0%
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 # Avanmäl dig till spårning av webbprogram{#web-application-tracking-opt-out}
 
-Med Adobe Campaign kan ni sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen innefattar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. kan du lägga till dessa banners i webbapplikationer eller landningssidor.
+Med Adobe Campaign kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen innefattar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. kan du lägga till dessa banners i webbapplikationer eller landningssidor.
 
-Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar, överförs den informationen till Adobe Campaign-spårningsservern med JavaScript-API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
+Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar, överförs den informationen till spårningsservern för Adobe Campaign med JavaScript API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar,
 
 Banderollen måste konfigureras för att kunna visas i webbprogram eller på landningssidor.
 
-Adobe Campaign levereras med en exempelbanderoll som ni måste anpassa efter era behov. Den här banderollversionen visas som ett anpassningsblock i mappen för innehållsmodellen. Se [den här sidan](../../delivery/using/personalization-blocks.md).
+Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter dina behov. Den här banderollversionen visas som ett anpassningsblock i mappen för innehållsmodellen. Se [den här sidan](../../delivery/using/personalization-blocks.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du vill skapa en egen banderoll måste du anpassa den färdiga banderollen.
 
