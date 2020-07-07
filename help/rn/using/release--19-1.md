@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
+source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2917'
 ht-degree: 0%
 
 ---
@@ -77,11 +77,27 @@ _13 augusti 2019_
 
 ## Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **22 juni 2020**: new build (9032@800be2e) som innehåller följande korrigeringar:
+![](assets/do-not-localize/green_2.png) **Gold Standard 10**
+
+_7 juli 2020_
+
+Den här nya versionen (9032@efd8a94) innehåller följande korrigering:
+
+* Ett problem som gjorde att det inte gick att spåra länkar har åtgärdats. (NEO-26411)
+
+>[!CAUTION]
+>
+>Vi rekommenderar att du uppgraderar klientkonsolen med den som finns i den här versionen. Se den här [sidan](../../installation/using/installing-the-client-console.md)
+
+![](assets/do-not-localize/orange_2.png) **Gold Standard 9 release**
+
+_22 juni 2020_
+
+Den här nya versionen (9032@800be2e) innehåller följande korrigeringar:
 
 * iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903, NEO-25799)
 
-Följande korrigeringar är relaterade till säkerhetsmekanismen för spårningslänkar:
+Följande korrigeringar är relaterade till säkerhetsmekanismen för spårningslänkar (se checklistan för [säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
 * Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook.  (NEO-25688)
@@ -89,7 +105,11 @@ Följande korrigeringar är relaterade till säkerhetsmekanismen för spårnings
 * Ett problem med tjänsten mot nätfiske har korrigerats. (NEO-25283)
 * Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277)
 
-![](assets/do-not-localize/orange_2.png) **29 april 2020**: new build (9032@3a9dc9c) som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 8**
+
+_29 april 2020_
+
+Den här nya versionen (9032@3a9dc9c) innehåller följande korrigeringar:
 
 * Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
 
@@ -110,30 +130,54 @@ Följande korrigeringar är relaterade till säkerhetsmekanismen för spårnings
 * Korrigerade en regression som fick rensningsarbetsflödet att krascha.
 * Korrigerade en mindre regression i rensningsarbetsflödets loggar.
 
-![](assets/do-not-localize/orange_2.png) **5 mars 2020**: new build (9032@19f73c5) som innehåller följande korrigering:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 6 release**
+
+_9 mars 2019_
+
+Den här nya versionen (9032@19f73c5) innehåller följande korrigering:
 
 * Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) **17 december 2019**: new build (9032@d6b8062) som innehåller följande korrigering:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 5-utgåva**
+
+_17 december 2019_
+
+Den här nya versionen (9032@d6b8062) innehåller följande korrigering:
 
 * Korrigerade ett spårningsproblem i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) **11 december 2019**: new build (9032@bc4a935) som innehåller följande korrigering:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 4**
+
+_11 december 2019_
+
+Den här nya versionen (9032@bc4a935) innehåller följande korrigering:
 
 * Ett prestandaproblem har korrigerats när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) **20 november 2019**: new build (9032@3468c7b) som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 3 release**
+
+_20 november 2019_
+
+Den här nya versionen (9032@3468c7b) innehåller följande korrigeringar:
 
 * Ett inloggningsproblem via IMS-autentisering har korrigerats. (NEO-17312)
 * Korrigerade ett problem när kumulativa rapporter för flera leveranser visades. (NEO-18165)
 * Korrigerade ett problem som kunde blockera eller få webbservern att krascha.
 
-![](assets/do-not-localize/orange_2.png) **19 september 2019**: new build (9032@cee805c) som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 2**
+
+_19 september 2019_
+
+Den här nya versionen (9032@cee805c) innehåller följande korrigeringar:
 
 * Ett problem har korrigerats när CRM Connector för Salesforce användes. (NEO-17712)
 * Korrigerade ett indexproblem som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
 
-![](assets/do-not-localize/orange_2.png) **13 augusti 2019**: Den första versionen av 19.1.4 som innehåller följande korrigeringar:
+![](assets/do-not-localize/orange_2.png) **Version 19.1.4 - build 9032**
+
+_13 augusti 2019_
+
+Ursprunglig version 19.1.4 som innehåller följande korrigeringar:
 
 * Korrigerade ett problem med schemaläggaraktiviteten som genererade oönskade felmeddelanden under guidekonfigurationen. Återställer uppdatering från NEO-11662. (NEO-17097)
 * Korrigerade en regression orsakad av NEO-12727 som kunde leda till att arbetsflöden stoppades när en testaktivitet kördes två gånger. (NEO-16835)
@@ -173,7 +217,7 @@ _30 maj 2019_
  <tbody> 
   <tr> 
    <td> Kontrollpanelen<br /> </td> 
-   <td> <p>För att effektivisera arbetet som administratör hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagring, lägga till IP-adresser för att tillåta listor och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud idag</a>).</p> <p>Mer information finns i den <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
+   <td> <p>Om du vill öka effektiviteten i ditt arbete som Admin-användare hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagringsutrymmet, lägga till IP-adresser i tillåtelselista och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud idag</a>).</p> <p>Mer information finns i den <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
   </tr> 
     <tr> 
    <td> Granskningsspår<br /> </td> 
