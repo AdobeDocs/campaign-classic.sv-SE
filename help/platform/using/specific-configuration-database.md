@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '1835'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 # Specifika konfigurationer efter databastyp {#specific-configurations-by-database-type}
 
 Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaign måste du utföra vissa specifika konfigurationer. Dessa konfigurationer innebär i princip att installera drivrutiner och deklarera miljövariabler som tillhör varje RDBMS på Adobe Campaign-servern.
+
+Mer information om äldre anslutningar som Teradata, Hadoop 2.1 och Netezza finns på den här [sidan](../../platform/using/legacy-connectors.md).
 
 Som regel måste du installera motsvarande klientlager på den externa databasen på Adobe Campaign-servern.
 
@@ -42,7 +44,9 @@ Så här skapar du ett externt [!DNL Azure Synapse] konto:
 
 1. Konfigurera ditt [!DNL Azure Synapse] externa konto i Campaign Classic. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL New]**.
+
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
 1. Konfigurera det [!DNL Azure Synapse] externa kontot måste du ange:
 
@@ -132,7 +136,7 @@ Så här konfigurerar du Azure Synapse på CentOS:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i listan över tillåtna. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i tillåtelselista. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Om det är iptables kör du följande kommando:
 
@@ -223,7 +227,7 @@ Så här konfigurerar du Azure Synapse på Debian:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i listan över tillåtna. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure Synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i tillåtelselista. Om du vill göra det läser du i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Konfigurera åtkomst till Snowflake {#configure-access-to-snowflake}
 
@@ -239,9 +243,13 @@ Med det [!DNL Snowflake] externa kontot kan du ansluta Campaign-instansen till d
 
 1. Konfigurera ditt [!DNL Snowflake] externa konto i Campaign Classic. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. Välj det inbyggda **[!UICONTROL Snowflake]** externa kontot.
+1. Klicka på **[!UICONTROL New]**.
+
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
 1. Konfigurera det **[!UICONTROL Snowflake]** externa kontot måste du ange:
+
+   * **[!UICONTROL Type]**: [!DNL Snowflake]
 
    * **[!UICONTROL Server]**: URL för [!DNL Snowflake] servern
 
@@ -315,24 +323,17 @@ Kopplingen stöder följande alternativ:
 
 ## Konfigurera åtkomst till Hadoop 3.0 {#configure-access-to-hadoop-3}
 
-För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurationer på Adobe Campaign-servern. Observera att den här konfigurationen är tillgänglig för både Windows och Linux.
+### Hadoop-externt konto {#hadoop-external}
 
-1. Hämta ODBC-drivrutinerna för Hadoop beroende på vilken OS-version du har. Drivrutiner finns på [den här sidan](https://www.cloudera.com/downloads.html).
+Med det [!DNL Hadoop] externa kontot kan du ansluta Campaign-instansen till din externa Hadoop-databas.
 
-1. Du måste sedan installera ODBC-drivrutinerna och skapa ett DSN för din Hive-anslutning. Instruktioner finns på [den här sidan](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. Konfigurera ditt [!DNL Hadoop] externa konto i Campaign Classic. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. När du har hämtat och installerat ODBC-drivrutinerna måste du starta om Campaign Classic. Om du vill göra det kör du följande kommando:
+1. Klicka på **[!UICONTROL New]**.
 
-   ```
-   systemctl stop nlserver.service
-   systemctl start nlserver.service
-   ```
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-1. I Campaign Classic kan du sedan konfigurera ditt externa konto för snöflake. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
-
-1. Klicka **[!UICONTROL Create]** och välj **[!UICONTROL External database]** kontotyp.
-
-1. Om du vill konfigurera det **[!UICONTROL  Hadoop]** externa kontot måste du ange:
+1. Konfigurera det **[!UICONTROL Hadoop]** externa kontot måste du ange:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -363,185 +364,51 @@ Kopplingen stöder även följande Hive-alternativ:
 | buficknummer | 20 | Antal grupper när en klustrad tabell skapas. |
 | fileFormat | PARQUET | Standardfilformat för arbetsregister. |
 
-## Konfigurera åtkomst till Hadoop 2.1 {#configure-access-to-hadoop}
+### Konfigurera Hadoop 3.0 {#configuring-hadoop}
 
-### För Windows {#for-windows}
+För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurationer på Adobe Campaign-servern. Observera att den här konfigurationen är tillgänglig för både Windows och Linux.
 
-1. Installera ODBC- och [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) -drivrutiner för Windows.
-1. Skapa DSN (namn på datakälla) genom att köra administrationsverktyget för ODBC-datakälla. Du kan ändra ett system-DSN-exempel för Hive.
+1. Hämta ODBC-drivrutinerna för Hadoop beroende på vilken OS-version du har. Drivrutiner finns på [den här sidan](https://www.cloudera.com/downloads.html).
 
-   ```
-   Description: vorac (or any name you like)
-   Host: vorac.azurehdinsight.net
-   Port: 443
-   Database: sm_tst611 (or your database name)
-   Mechanism: Azure HDInsight Service
-   User/Password: admin/<your password here>
-   ```
+1. Du måste sedan installera ODBC-drivrutinerna och skapa ett DSN för din Hive-anslutning. Instruktioner finns på [den här sidan](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
-1. Skapa det externa Hadoop-kontot, vilket beskrivs i [det här](../../platform/using/external-accounts.md#hadoop-external-account) sidavsnittet.
-
-### För Linux {#for-linux}
-
-1. Installera unixodbc för Linux.
+1. När du har hämtat och installerat ODBC-drivrutinerna måste du starta om Campaign Classic. Om du vill göra det kör du följande kommando:
 
    ```
-   apt-get install unixodbc
+   systemctl stop nlserver.service
+   systemctl start nlserver.service
    ```
 
-1. Hämta och installera ODBC-drivrutiner för Apache Hive från HortonWorks: [https://www.hortonworks.com/downloads/](https://www.hortonworks.com/downloads/).
+1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Hadoop] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#hadoop-external).
 
-   ```
-   dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
-   ```
+## Konfigurera åtkomst till Oracle {#configure-access-to-oracle}
 
-1. Kontrollera ODBC-filens plats.
+### Externt Oracle-konto {#oracle-external}
 
-   ```
-   root@campadpac71:/tmp# odbcinst -j
-   unixODBC 2.3.1
-   DRIVERS............: /etc/odbcinst.ini
-   SYSTEM DATA SOURCES: /etc/odbc.ini
-   FILE DATA SOURCES..: /etc/ODBCDataSources
-   USER DATA SOURCES..: /root/.odbc.ini
-   SQLULEN Size.......: 8
-   SQLLEN Size........: 8
-   SQLSETPOSIROW Size.: 8
-   ```
+Med det [!DNL Oracle] externa kontot kan du ansluta Campaign-instansen till din externa Hadoop-databas.
 
-1. Skapa DSN (Data Source Name) och redigera filen odbc.ini. Skapa sedan ett DSN för din Hive-anslutning.
+1. Konfigurera ditt [!DNL oracle] externa konto i Campaign Classic. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-   Här är ett exempel för HDInsight som skapar en anslutning som kallas&quot;viral&quot;:
+1. Klicka på **[!UICONTROL New]**.
 
-   ```
-   [ODBC Data Sources]
-   vorac 
-   
-   [vorac]
-   Driver=/usr/lib/hive/lib/native/Linux-amd64-64/libhortonworkshiveodbc64.so
-   HOST=vorac.azurehdinsight.net
-   PORT=443
-   Schema=sm_tst611
-   HiveServerType=2
-   AuthMech=6
-   UID=admin
-   PWD=<your password here>
-   HTTPPath=
-   UseNativeQuery=1
-   ```
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-   >[!NOTE]
-   >
-   >Parametern **UseNativeQuery** är mycket viktig. Campaign är Hive-medveten och fungerar inte korrekt om inte UseNativeQuery har angetts. Vanligtvis skriver drivrutinen eller Hive SQL Connector om frågor och ändrar kolumnordningen.
+1. Konfigurera det **[!UICONTROL Oracle]** externa kontot måste du ange:
 
-   Inställningen av autentisering beror på konfigurationen av Hive/Hadoop. För HD Insight använder du till exempel AuthMech=6 för användar-/lösenordsautentisering enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   * **[!UICONTROL Type]**: Oracle
 
-1. Exportera variablerna.
-
-   ```
-   export ODBCINI=/etc/myodbc.ini
-   export ODBCSYSINI=/etc/myodbcinst.ini
-   ```
-
-1. Konfigurera drivrutiner för Hortonworks via /usr/lib/hive/lib/native/Linux-amd64-64/hortonworks.hiveodbc.ini.
-
-   Du måste använda UTF-16 för att kunna ansluta till Campaign och unix-odbc (libodbcinst).
-
-   ```
-   [Driver]
-   
-   DriverManagerEncoding=UTF-16
-   ErrorMessagesPath=/usr/lib/hive/lib/native/hiveodbc/ErrorMessages/
-   LogLevel=0
-   LogPath=/tmp/hive
-   SwapFilePath=/tmp
-   
-   ODBCInstLib=libodbcinst.so
-   ```
-
-1. Nu kan du testa anslutningen med isql.
-
-   ```
-   isql vorac
-   isql vorac -v
-   ```
-
-1. Skapa det externa Hadoop-kontot, vilket beskrivs i [det här](../../platform/using/external-accounts.md#hadoop-external-account) sidavsnittet.
-
-## Konfigurera åtkomst till Netezza {#configure-access-to-netezza}
-
-För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
-
-1. Installera ODBC-drivrutinerna för Netezza, enligt det operativsystem du använder:
-
-   * **nz-linuxclient-v7.2.0.0.tar.gz** för Linux. Markera den mapp som motsvarar ditt operativsystem (Linux eller Linux64) och starta uppackningskommandot. Du kan lämna installationen som ska utföras i den databas som föreslås som standard: &quot;/usr/local/nz&quot;.
-   * **nz-winclient-v7.2.0.0.zip** för Windows. Zippa upp filen och starta det körbara skript som hör till ditt operativsystem: nzodbcsetup.exe eller nzodbcsetup64.exe. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
-
-1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: **/etc/odbc.ini** för allmänna parametrar och **/etc/odbcinst.ini** för att deklarera drivrutiner.
-
-   * **/etc/odbc.ini**
-
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
-
-      &quot;InstallDir&quot; motsvarar platsen för filen odbcinst.ini.
-
-   * **/etc/odbcinst.ini**
-
-      ```
-      [ODBC Drivers]
-      NetezzaSQL = Installed
-      
-      [NetezzaSQL]
-      Driver           = /usr/local/nz/lib/libnzsqlodbc3.so
-      Setup            = /usr/local/nz/lib/libnzsqlodbc3.so
-      APILevel         = 1
-      ConnectFunctions = YYN
-      Description      = Netezza ODBC driver
-      DriverODBCVer    = 03.51
-      DebugLogging     = false
-      LogPath          = /tmp
-      UnicodeTranslationOption = utf8
-      CharacterTranslationOption = all
-      PreFetch         = 256
-      Socket           = 16384
-      ```
-
-1. Ange miljövariablerna för Adobe Campaign-servern:
-
-   * **LD_LIBRARY_PATH**: /usr/local/nz/lib och /usr/local/nz/lib64. &quot;/usr/local/nz&quot; motsvarar den installationsdatabas som finns som standard när du installerar drivrutinerna. Här måste du ange vilken databas du har valt för installationen.
-   * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
-   * **NZ_ODBC_INI_PATH**: platsen för filen odbc.ini. Netezza kräver också den andra variabeln för att kunna använda filen odbc.ini.
-
-1. I Campaign Classic kan du sedan konfigurera ditt externa Netezza-konto. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
-
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
-
-1. Om du vill konfigurera det **[!UICONTROL Netezza]** externa kontot måste du ange:
-
-   * **[!UICONTROL Type]**: Netezza
-
-   * **[!UICONTROL Server]**: URL för Netezza-servern
+   * **[!UICONTROL Server]**: DNS-namn
 
    * **[!UICONTROL Account]**: Användarens namn
 
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
-   * **[!UICONTROL Database]**: Namn på databasen
+   * **[!UICONTROL Time zone]**: Tidszon för server
+   ![](assets/oracle_config.png)
 
->[!NOTE]
->
->Åtgärder för scheman som innehåller automatiskt genererade primärnycklar beaktas inte.
->
->Tabellen använder **Organizer on** -satsen för det första indexvärdet som definieras i schemat. Eftersom den här satsen är begränsad till 1 till 4 kolumner med Netezza, får indexet inte innehålla fler än 4 kolumner.
-
-## Konfigurera åtkomst till Oracle {#configure-access-to-oracle}
+### Oracle på Linux {#for-linux-1}
 
 För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
-
-### För Linux {#for-linux-1}
 
 1. Installera den fullständiga Oracle-klienten som motsvarar din version av Oracle.
 1. Lägg till dina TNS-definitioner i installationen. Om du vill göra det anger du dem i en **namnfil.ora** i databasen /etc/oracle. Om den här databasen inte finns skapar du den.
@@ -579,179 +446,16 @@ För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigur
       yum install libaio1
       ```
 
-### För Windows {#for-windows-1}
+1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Oracle] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#oracle-external).
+
+### Oracle i Windows {#for-windows-1}
+
+För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
 1. Installera Oracle-klienten.
+
 1. I mappen C:Oracle skapar du en **namnfil.ora** som innehåller din TNS-definition.
 
-   Lägg till en TNS_ADMIN-miljövariabel med C:Oracle som-värde och starta om datorn.
+1. Lägg till en TNS_ADMIN-miljövariabel med C:Oracle som-värde och starta om datorn.
 
-## Konfigurera åtkomst till Sybase IQ {#configure-access-to-sybase-iq}
-
-För att ansluta till en extern Sybase IQ-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
-
-1. Kontrollera att Unixodbc-paketet finns på servern.
-1. Installera **iq_odbc**. Ett fel kan uppstå i slutet av installationen. Det här felet kan ignoreras.
-1. Installera **iq_client_common**. Ett Java-fel kan uppstå när installationen är klar. Det här felet kan ignoreras.
-1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: /etc/odbc.ini för allmänna parametrar och /etc/odbcinst.ini för att deklarera drivrutiner:
-
-   * **/etc/odbc.ini** (ersätt värden som `<server_alias>` tecken med egna):
-
-      ```
-      [ODBC Data Sources]
-      <server_alias>=libdbodbc.so
-      
-      [<server_alias>]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      Description=<description>
-      Username=<username>
-      Password=<password>
-      ServerName=<server_name>
-      CommLinks=tcpip(host=<host>)
-      ```
-
-   * **/etc/odbcinst.ini**
-
-      ```
-      [ODBC DRIVERS]
-      SAP SybaseIQ=Installed
-      
-      [SAP SybaseIQ]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      ```
-
-1. Lägg till sökvägen för det nya biblioteket libodbc16.so i variabeln LD_LIBRARY_PATH. Så här gör du:
-
-   * Om du använder en customer.sh-fil för att deklarera sökvägen: lägg till sökvägen /opt/sybase/IQ-16_0/lib64 för variabeln LD_LIBRARY_PATH.
-   * Annars använder du ett Unix-kommando.
-
-1. I Campaign Classic kan du sedan konfigurera ditt externa Sybase IQ-konto. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
-
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
-
-1. Om du vill konfigurera det **[!UICONTROL Sybase IQ]** externa kontot måste du ange:
-
-   * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
-
-   * **[!UICONTROL Server]**: Motsvarar ODBC-anslutningen (`<server_alias>`) som definieras i steg 5. Inte nödvändigtvis namnet på själva servern.
-
-   * **[!UICONTROL Account]**: Användarens namn
-
-   * **[!UICONTROL Password]**: Lösenord för användarkonto
-
-   * **[!UICONTROL Database]**: Namn på databasen
-
->[!NOTE]
->
->För Windows måste du installera Sybase IQ-klienten på Adobe Campaign-servern och skapa en ODBC-anslutning. Se till att du skapar en systemdatakälla när Adobe Campaign-servern (nlserver) körs som en tjänst i Windows.
-
-## Konfigurera åtkomst till Teradata {#configure-access-to-teradata}
-
-För anslutning till en extern Teradata-databas i FDA krävs vissa ytterligare konfigurationer på Adobe Campaign-servern. Mer information om hur du konfigurerar Teradata-databasen finns i den här [artikeln](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html).
-
-1. Installera [ODBC-drivrutinen för Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
-
-   Den består av tre paket som kan installeras på Red Hat (eller CentOS)/Suse i följande ordning:
-
-   * TeraGSS
-   * tdicu1510 (installera den med setup_wrapper.sh)
-   * tdodbc1510 (installera den med setup_wrapper.sh)
-
-1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: **/etc/odbc.ini** för allmänna parametrar och /etc/odbcinst.ini för att deklarera drivrutiner:
-
-   * **/etc/odbc.ini**
-
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
-
-      &quot;InstallDir&quot; motsvarar platsen för filen **odbcinst.ini** .
-
-   * **/etc/odbcinst.ini**
-
-      ```
-      [ODBC DRIVERS]
-      teradata=Installed
-      
-      [teradata]
-      Driver=/opt/teradata/client/15.10/lib64/tdata.so
-      APILevel=CORE
-      ConnectFunctions=YYY
-      DriverODBCVer=3.51
-      SQLLevel=1
-      ```
-
-1. Ange miljövariablerna för Adobe Campaign-servern:
-
-   * **LD_LIBRARY_PATH**: /opt/teradata/client/15.10/lib64 och /opt/teradata/client/15.10/odbc_64/lib.
-   * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
-   * **NLSPATH**: plats för filen opermsgs.cat (/opt/teradata/client/15.10/msg/opermsgs.cat)
-
-1. I Campaign Classic kan du sedan konfigurera ditt externa Teradata-konto. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
-
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
-
-1. Om du vill konfigurera det **[!UICONTROL Teradata]** externa kontot måste du ange:
-
-   * **[!UICONTROL Type]**: Teradata
-
-   * **[!UICONTROL Server]**: URL för Teradata-servern
-
-   * **[!UICONTROL Account]**: Användarens namn
-
-   * **[!UICONTROL Password]**: Lösenord för användarkonto
-
-   * **[!UICONTROL Database]**: Namn på databasen
-
-## Konfigurera åtkomst till SAP HANA {#configure-access-to-sap-hana}
-
-Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfigurationer på Adobe Campaign-servern:
-
-1. Installera ODBC-drivrutinerna för SAP HANA, enligt det operativsystem du använder:
-
-   * **hdb_client_linux.tgz** för Linux. När du har packat upp en fil startar du kommandot hdbinst och följer instruktionerna för att slutföra installationen av drivrutinerna.
-   * **hdb_client_windows.zip** för Windows. Zippa upp filen och starta den körbara filen: **hdbinst.exe**. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
-
-1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: /etc/odbc.ini för allmänna parametrar och /etc/odbcinst.ini för att deklarera drivrutiner.
-
-   * **/etc/odbc.ini**
-
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      
-      [HDB]
-      Driver=HDBODBC
-      servernode=localhost:39013 (this value depend of your server)
-      User:SYSTEM
-      ```
-
-      &quot;InstallDir&quot; motsvarar platsen för filen **odbcinst.ini** .
-
-   * **/etc/odbcinst.ini**
-
-      ```
-      [HDBODBC]
-      Description = "SmartCloudPT HANA"
-      Driver = /usr/sap/hdbclient/libodbcHDB.so
-      ```
-
-1. Ange miljövariablerna för Adobe Campaign-servern:
-
-   * **LD_LIBRARY_PATH**: Den bör innehålla länken till SAP Hana-klienten (/usr/sap/hdbclient/libodbcHDB.so) som standard.
-   * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
-
-1. I Campaign Classic kan du sedan konfigurera ditt externa SAP Hana-konto. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
-
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
-
-1. Om du vill konfigurera det **[!UICONTROL SAP Hana]** externa kontot måste du ange:
-
-   * **[!UICONTROL Type]**: SAP Hana
-
-   * **[!UICONTROL Server]**: URL för SAP Hana-servern
-
-   * **[!UICONTROL Account]**: Användarens namn
-
-   * **[!UICONTROL Password]**: Lösenord för användarkonto
+1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Oracle] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#oracle-external).
