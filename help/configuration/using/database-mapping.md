@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+workflow-type: tm+mt
+source-wordcount: '1976'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
 Schemats rotelement är inte längre **`<srcschema>`** utan **`<schema>`**.
 
-Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av Adobe Campaign-programmet.
+Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av programmet Adobe Campaign.
 
 SQL-namnen bestäms automatiskt utifrån elementnamn och typ.
 
@@ -108,7 +111,7 @@ Om du vill fylla i ett fält i XML måste du lägga till **xml** -attributet med
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Med typen html kan du lagra HTML-innehållet i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i Adobe Campaign-klientgränssnittet.
+   Med typen &quot;html&quot; kan du lagra HTML-innehållet i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i klientgränssnittet för Adobe Campaign.
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
 
@@ -207,7 +210,7 @@ Tangenter följer följande regler:
 
 >[!NOTE]
 >
->Tangenter skapas vid tabellmappning (standard eller FDA). Adobe Campaign hittar unika index.
+>Tangenter skapas vid tabellmappning (standard eller FDA) och Adobe Campaign hittar unika index.
 
 **Exempel**:
 
@@ -296,7 +299,7 @@ Tangenter följer följande regler:
 
 ### Automatisk inkrementell nyckel {#auto-incremental-key}
 
-Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars långt heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard SQL-funktionen **XtkNewId** ) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
+Den primära nyckeln för de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard SQL-funktionen **XtkNewId** ) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
 
 Fördelen med en inkrementell nyckel är att den ger en icke-modifierbar teknisk nyckel för kopplingarna mellan tabellerna. Dessutom tar den här nyckeln inte upp så mycket minne eftersom ett heltal med dubbla byte används.
 
@@ -362,7 +365,7 @@ De olika sammanslutningarna (så kallade kardinaliteter) är följande:
 
 I gränssnittet kan du enkelt skilja mellan olika typer av relationer tack vare deras ikoner.
 
-För anslutningsrelationer med en campingtabell/databas:
+För kopplingsrelationer med en kampanjtabell/databas:
 
 * ![](assets/join_with_campaign11.png) : Kardinalitet 1-1. Till exempel mellan en mottagare och en aktuell order. En mottagare kan bara vara relaterad till en förekomst av den aktuella ordertabellen åt gången.
 * ![](assets/externaljoin11.png) : Kardinalitet 1-1, extern koppling. Till exempel mellan en mottagare och deras land. En mottagare kan bara vara relaterad till en förekomst av registerlandet. Innehållet i landstabellen sparas inte.
