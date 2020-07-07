@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -27,13 +27,13 @@ ht-degree: 0%
 
 ## Om CRM-anslutningar {#about-crm-connectors}
 
-Adobe Campaign innehåller olika CRM-anslutningar för att länka din Adobe Campaign-plattform till dina tredjepartssystem. Med dessa CRM-anslutningar kan du synkronisera kontakter, konton, inköp osv. De gör att du enkelt kan integrera ditt program med olika tredjeparts- och affärsprogram.
+Adobe Campaign tillhandahåller olika CRM-anslutningar för att länka din Adobe Campaign-plattform till dina tredjepartssystem. Med dessa CRM-anslutningar kan du synkronisera kontakter, konton, inköp osv. De gör att du enkelt kan integrera ditt program med olika tredjeparts- och affärsprogram.
 
-Dessa kopplingar möjliggör snabb och enkel dataintegrering: I Adobe Campaign finns en dedikerad guide för att samla in och välja bland tabellerna som finns i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
+Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign tillhandahåller en dedikerad guide för att samla in och välja mellan tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig i Adobe Campaign via det dedikerade paketet med **CRM-anslutningar** .
+>Den här funktionen är tillgänglig i Adobe Campaign via det dedikerade paketet för **CRM-anslutningar** .
 
 Anslutningen till CRM sker via dedikerade arbetsflödesaktiviteter. Dessa aktiviteter beskrivs närmare i kapitlet i [detta avsnitt](../../workflow/using/crm-connector.md).
 
@@ -47,7 +47,7 @@ Versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/c
 
    Läs [det här avsnittet](#example-for-salesforce-com) för att lära dig hur du konfigurerar anslutningen med Salesforce.com.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >När du ansluter Adobe Campaign till Salesforce.com är begränsningarna:
    >
@@ -62,13 +62,13 @@ Versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/c
 
    Läs [det här avsnittet](#example-for-oracle-on-demand) för att lära dig hur du konfigurerar anslutningen med Oracle On Demand.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >När du ansluter Adobe Campaign till Oracle On Demand är begränsningarna:
+   >När du ansluter Adobe Campaign med Oracle On Demand är begränsningarna:
    >
    >    
    >    
-   >    * Adobe Campaign kan synkronisera alla objekt som finns i Oracle On Demand-standardmallarna. Om du har lagt till anpassade tabeller i Oracle On Demand, kommer de inte att återställas i Adobe Campaign.
+   >    * Adobe Campaign kan synkronisera alla tillgängliga objekt i Oracle On Demand-mallarna. Om du har lagt till anpassade tabeller i Oracle On Demand, kommer de inte att återställas i Adobe Campaign.
    >    * Med API-version v1.0 kan du sortera eller filtrera data under en fråga, men du kan inte göra båda samtidigt.
    >    * Datumen som skickas av Oracle On Demand innehåller ingen tidszonsinformation.
    >    * Uppräkningar av flera markeringar stöds inte av Adobe Campaign.
@@ -78,11 +78,11 @@ Versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/c
 
    Läs [det här avsnittet](#example-for-microsoft-dynamics) för att lära dig hur du konfigurerar anslutningen med Microsoft Dynamics.
 
-   Läs mer om hur integreringen mellan Adobe Campaign och Microsoft Dynamics fungerar i [den här videon](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+   Läs om hur integreringen mellan Adobe Campaign och Microsoft Dynamics fungerar i [den här videon](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >När du ansluter Adobe Campaign till Microsoft Dynamics är begränsningarna:
+   >När du ansluter Adobe Campaign med Microsoft Dynamics gäller följande begränsningar:
    >
    >    
    >    
@@ -92,7 +92,7 @@ Versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/c
 
 ## Konfigurera anslutningen {#setting-up-the-connection}
 
-Gör så här om du vill använda CRM-anslutningar i Adobe Campaign:
+Om du vill använda CRM-anslutningar i Adobe Campaign gör du så här:
 
 1. Skapa det externa kontot
 1. Samla CRM-tabellerna
@@ -120,7 +120,7 @@ Följ stegen nedan för att konfigurera **Salesforce.com** -anslutningen med Ado
 
    >[!NOTE]
    >
-   >För att godkänna konfigurationen måste du logga ut och sedan logga in på Adobe Campaign-konsolen igen.
+   >För att godkänna installationen måste du logga ut och sedan logga in på Adobe Campaign-konsolen igen.
 
 1. Kontrollera schemat som genererats i Adobe Campaign i **[!UICONTROL Administration > Configuration > Data schemas]** noden.
 
@@ -128,7 +128,7 @@ Följ stegen nedan för att konfigurera **Salesforce.com** -anslutningen med Ado
 
 1. När schemat har skapats kan du synkronisera uppräkningar automatiskt via CRM till Adobe Campaign.
 
-   Det gör du genom att klicka på **[!UICONTROL Synchronizing enumerations...]** länken och välja den Adobe Campaign-uppräkning som matchar CRM-uppräkningen.
+   Det gör du genom att klicka på **[!UICONTROL Synchronizing enumerations...]** länken och välja uppräkningen Adobe Campaign som matchar CRM-uppräkningen.
 
    Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: om du vill göra det markerar du **[!UICONTROL Yes]** i **[!UICONTROL Replace]** kolumnen.
 
@@ -146,13 +146,13 @@ Följ stegen nedan för att konfigurera **Salesforce.com** -anslutningen med Ado
 
 ### Exempel på Oracle On Demand {#example-for-oracle-on-demand}
 
-Så här konfigurerar du **Oracle On Demand** -kontakten så att den fungerar med Adobe Campaign:
+Så här konfigurerar du **Oracle On Demand** -anslutningen så att den fungerar med Adobe Campaign:
 
 1. Skapa ett nytt externt konto via noden **[!UICONTROL Administration > Platform > External accounts]** i Adobe Campaign-trädet.
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. Öppna konfigurationsguiden: Adobe Campaign visar automatiskt tabellerna för Oracles datamodell. Markera de tabeller som du vill samla in.
+1. Öppna konfigurationsguiden: Adobe Campaign visar automatiskt tabellerna i Oracles datamodell. Markera de tabeller som du vill samla in.
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -166,7 +166,7 @@ Så här konfigurerar du **Oracle On Demand** -kontakten så att den fungerar me
 
    ![](assets/crm_connectors_ood_4.png)
 
-1. Om du vill importera Oracle On Demand-data till Adobe Campaign skapar du följande typ av arbetsflöde:
+1. Om du vill importera Oracle On Demand-data till Adobe Campaign skapar du följande arbetsflöde:
 
    ![](assets/crm_connectors_ood_5.png)
 
@@ -206,7 +206,7 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
 
    Mer information om kompatibilitet för CRM-versioner finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
 
-1. Öppna konfigurationsguiden. Adobe Campaign identifierar automatiskt tabellerna från datamallen i Microsoft Dynamics.
+1. Öppna konfigurationsguiden. Adobe Campaign identifierar automatiskt tabellerna från Microsoft Dynamics-datamallen.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -220,7 +220,7 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
 
    >[!NOTE]
    >
-   >Om du vill godkänna konfigurationen måste du koppla från/återansluta till Adobe Campaign-konsolen.
+   >Om du vill godkänna konfigurationen måste du koppla från/återansluta till konsolen Adobe Campaign.
 
    Det matchande dataschemat blir tillgängligt i Adobe Campaign.
 
@@ -230,7 +230,7 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
-1. Om du vill importera Microsoft Dynamics-data till Adobe Campaign skapar du följande typ av arbetsflöde:
+1. Om du vill importera Microsoft Dynamics-data till Adobe Campaign skapar du följande arbetsflöde:
 
    ![](assets/crm_connectors_msdynamics_07.png)
 
@@ -242,7 +242,7 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
 
 ## Datasynkronisering {#data-synchronization}
 
-Synkroniseringen mellan Adobe Campaign och CRM utförs via en dedikerad arbetsflödesaktivitet: [CRM-koppling](../../workflow/using/crm-connector.md).
+Synkroniseringen mellan Adobe Campaign och CRM sker via en särskild arbetsflödesaktivitet: [CRM-koppling](../../workflow/using/crm-connector.md).
 
 Med den här aktiviteten kan du:
 
@@ -268,7 +268,7 @@ Om du vill importera data via CRM i Adobe Campaign måste du skapa följande arb
 Konfigurationsstegen för en import-aktivitet i **CRM Connector** är:
 
 1. Välj en **[!UICONTROL Import from the CRM]** åtgärd.
-1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapades i Adobe Campaign under konfigurationen av kopplingen.
+1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under kopplingskonfigurationen.
 1. Gå till **[!UICONTROL Remote fields]** avsnittet och ange fälten som ska importeras.
 
    Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** knappen i verktygsfältet och sedan på **[!UICONTROL Edit expression]** ikonen .
@@ -277,9 +277,9 @@ Konfigurationsstegen för en import-aktivitet i **CRM Connector** är:
 
    Om det behövs ändrar du dataformatet via listrutan för **[!UICONTROL Conversion]** kolumnerna. Möjliga konverteringstyper beskrivs i [dataformat](#data-format).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och i Adobe Campaign. Den läggs till automatiskt när förpackningen godkänns.
+   >Identifieraren för posten i CRM är obligatorisk för länkning av objekt i CRM och Adobe Campaign. Den läggs till automatiskt när förpackningen godkänns.
    >
    >Det sista ändringsdatumet på CRM-sidan är också obligatoriskt för inkrementell dataimport.
 
@@ -289,7 +289,7 @@ Konfigurationsstegen för en import-aktivitet i **CRM Connector** är:
 
    ![](assets/crm_task_import_filter.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Begränsningarna som är kopplade till datafiltreringslägen beskrivs i [Filtrera data](#filtering-data).
 
@@ -371,7 +371,7 @@ Markera sedan fälten för den inkommande ifyllning som du vill importera, så s
 
 ### Exportera till CRM {#exporting-to-the-crm}
 
-Genom att exportera Adobe Campaign-data till CRM kan du kopiera hela innehållet till en CRM-databas.
+Genom att exportera data från Adobe Campaign till CRM kan du kopiera hela innehåll till en CRM-databas.
 
 Om du vill exportera data till CRM måste du skapa följande arbetsflöde:
 
@@ -380,9 +380,9 @@ Om du vill exportera data till CRM måste du skapa följande arbetsflöde:
 För en export använder du följande konfiguration för aktiviteten **CRM Connector** :
 
 1. Välj en **[!UICONTROL Export to CRM]** åtgärd.
-1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapades i Adobe Campaign under konfigurationen av kopplingen.
+1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under kopplingskonfigurationen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Exportfunktionen för aktiviteten **CRM Connectors** kan infoga eller uppdatera fält på CRM-sidan. Om du vill aktivera fältuppdateringar i CRM måste du ange fjärrtabellens primärnyckel. Om nyckeln saknas infogas data (i stället för att uppdateras).
 
@@ -452,12 +452,12 @@ Om du vill kunna konfigurera en omfattande datasynkroniseringsprocess kan du imp
 Gör så här:
 
 1. Välj en **[!UICONTROL Import objects deleted in the CRM]** åtgärd.
-1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapades i Adobe Campaign under konfigurationen av kopplingen.
+1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under kopplingskonfigurationen.
 1. Ange den borttagningsperiod som ska beaktas i **[!UICONTROL Start date]** och i **[!UICONTROL End date]** fälten. Dessa datum inkluderas i perioden.
 
    ![](assets/crm_import_deleted_obj.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Elementets raderingsperiod måste sammanfalla med de begränsningar som är specifika för CRM. Det innebär att för Salesforce.com kan element som togs bort för över 30 dagar sedan inte återställas.
 
