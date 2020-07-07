@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '3602'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Programservern och omdirigeringsservern (**spårning**) kan övervakas manuellt 
 
 ## Manuell övervakning {#manual-monitoring}
 
-Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Overview]** länken för att visa sidan för processövervakning i Adobe Campaign.
+Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Overview]** länken för att visa Adobe Campaign processövervakningssidan.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -36,7 +39,7 @@ På den sida som visas kan du visa den anslutna instansens tillstånd, dvs:
 * En förteckning över saknade processer och körningsinformation (startdatum, PID osv.).
 * en översikt över arbetsflöden och leveranser.
 
-Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-maintenance.html).
+Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
 ### Loggjournal {#log-journal}
 
@@ -93,7 +96,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    **[!UICONTROL Alert]** : den här indikatorn visas när det tillgängliga diskutrymmet når 90 % av den totala kapaciteten.
 
-* **[!UICONTROL Number of processes too old]** : information om Adobe Campaign-processer som har varit aktiva i mer än en dag.
+* **[!UICONTROL Number of processes too old]** : Information om Adobe Campaign-processer som har varit aktiva i mer än en dag.
 
    **[!UICONTROL Current value]** : antalet aktiva processer.
 
@@ -101,7 +104,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    **[!UICONTROL Alert]** : den här indikatorn visas om antalet processer är lika med 1.
 
-   När indikatorn visas kan det bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. **[!UICONTROL Alert]** Den **övervakningsprocess** som Adobe Campaign erbjuder startar automatiskt om alla processer varje dag och gör att ni kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
+   När indikatorn visas kan det bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. **[!UICONTROL Alert]** Den **övervakningsprocess** som tillhandahålls av Adobe Campaign startar automatiskt om alla processer varje dag och gör att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
 
 #### I Linux {#in-linux}
 
@@ -214,10 +217,10 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
 #### Anpassade indikatorer {#customized-indicators}
 
-Med Adobe Campaign kan ni anpassa indikatorerna. Så här gör du:
+Med Adobe Campaign kan du anpassa indikatorer. Så här gör du:
 
 1. Skapa en **.sh** -fil och ge den ett namn **[!UICONTROL cust_indicators.sh]** .
-1. Lägg till anpassade indikatorer i den här filen. Till exempel:
+1. Lägg till anpassade indikatorer i den här filen. Exempel:
 
    ```
    #!/bin/bash 
@@ -246,7 +249,7 @@ Den här filen anropas av Adobe Campaign.
 
 ## SMTP-rapporter {#smtp-reports}
 
-Rapporterna om övervakning av SMTP-leveranser är integrerade i Adobe Campaign-plattformen. De kan nås via konsolen eller via webben.
+Rapporterna om övervakning av SMTP-leveranser är integrerade i Adobe Campaign. De kan nås via konsolen eller via webben.
 
 Dessa rapporter visar SMTP-leveransstatistik och SMTP-fel per domän.
 
@@ -321,7 +324,7 @@ Förteckningen över indikatorer för denna rapport visas under tabellen.
 
 Klicka på ett domännamn för att visa felen.
 
-De kategoriseras av PublicId: Den här identifieraren motsvarar en IP-adress som delas av flera Adobe Campaign-metoder bakom en router. Statistikservern använder den här identifieraren för att memorera anslutningen och leveransstatistiken mellan den här startpunkten och målservern.
+De kategoriseras av PublicId: den här identifieraren motsvarar en IP-adress som delas av flera Adobe Campaign-matriser bakom en router. Statistikservern använder den här identifieraren för att memorera anslutningen och leveransstatistiken mellan den här startpunkten och målservern.
 
 ![](assets/smtp_error_report_details.png)
 
@@ -363,7 +366,7 @@ Följande mätvärden finns för att spåra dina leveranser:
 
 ## Automatisk övervakning {#automatic-monitoring}
 
-Adobe Campaign erbjuder flera automatiska övervakningsmetoder som presenteras nedan.
+Adobe Campaign erbjuder flera automatiska övervakningsmetoder, som presenteras nedan.
 
 ### Kommandorad {#command-line}
 
@@ -371,7 +374,7 @@ Kommando
 
 **nlserver monitor**
 
-Här kan du visa en uppsättning indikatorer för Adobe Campaign-modulerna och systemet.
+Här kan du visa en uppsättning indikatorer för modulerna Adobe Campaign och systemet.
 
 Det genererar utdata i ett enkelt bearbetat XML-format.
 
@@ -389,7 +392,7 @@ wfserver@prod
 
 #### /r/test {#r-test}
 
-Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan även användas för att testa en lastdispatcher.
+Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan också användas för att testa en lastdispatcher.
 
 Här visas en rad som den här i XML-format:
 
@@ -405,11 +408,11 @@ Den här **/nl/jsp/ping.jsp`<Application server url>`-sidan fungerar på samma s
 
 **Användning**: en sessionstoken som är associerad med en användarinloggning måste skickas som ett argument för att fjärrinloggning ska kunna ske (se tips i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
 
-Till exempel:
+Exempel:
 
 ![](assets/ncs_monitoring_ping.png)
 
-Operatornamnet och inloggningen måste tidigare konfigureras i Adobe Campaign-klientkonsolen med databasrättigheter.
+Operatornamnet och inloggningen måste tidigare konfigureras med databasrättigheter i klientkonsolen i Adobe Campaign.
 
 ![](assets/ncs_operators_rights_01.png)
 
@@ -421,15 +424,15 @@ Detta är ett test för att kontrollera att en operatör har tillgång till Adob
 
 ![](assets/ncs_monitoring_web.png)
 
-**Användning**: en sessionstoken som är associerad med en användarinloggning, som gör att du kan ansluta till instansen måste användas som ett argument (se tips i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Användning**: en sessionstoken som är associerad med en användarinloggning som gör att du kan ansluta till instansen måste användas som ett argument (se tips i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
 
-Operatorn och inloggningen måste konfigureras tidigare i Adobe Campaign-klientkonsolen med rätt databasbehörighet och databasbegränsningar.
+Operatorn och deras inloggning måste konfigureras tidigare i klientkonsolen för Adobe Campaign med rätt databasbehörighet och databasbegränsningar.
 
 **Frekvens**: detta är ett fullständigt servertest och behöver inte köras ofta (det kan till exempel utföras en gång var tionde minut).
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-Denna **jsp** representerar ingångspunkten för API:er för Adobe Campaign-program. Den kan därför ge detaljerad övervakning av ansökan. Det kan också användas för att övervaka Adobe Campaign-webbtjänster. Det används i våra övervakningsskript, men observera att det endast är för avancerade användare.
+Denna **jsp** representerar ingångspunkten för API:er för Adobe Campaign-program. Den kan därför ge detaljerad övervakning av ansökan. Den kan också användas för att övervaka Adobe Campaign webbtjänster. Det används i våra övervakningsskript, men observera att det endast är för avancerade användare.
 
 ### Övervakning baserad på distributionstyper {#monitoring-based-on-deployment-types}
 
@@ -476,7 +479,7 @@ Adobe Campaign möjliggör olika distributionskonfigurationer (mer information f
  </tbody> 
 </table>
 
-## Automatisk övervakning via skript i Adobe Campaign {#automatic-monitoring-via-adobe-campaign-scripts}
+## Automatisk övervakning via Adobe Campaign-skript {#automatic-monitoring-via-adobe-campaign-scripts}
 
 Adobe Campaign kan tillhandahålla ett instansövervakningsverktyg (netreport) som gör att du kan skicka en rapport via e-post om de identifierade avvikelserna.
 
@@ -484,7 +487,7 @@ Adobe Campaign kan tillhandahålla ett instansövervakningsverktyg (netreport) s
 
 >[!CAUTION]
 >
->Det här verktyget kan användas för att övervaka instanser, men stöds inte av Adobe Campaign. Kontakta er Campaign-administratör om du vill ha mer information.
+>Det här verktyget kan användas för att övervaka dina instanser, men stöds inte av Adobe Campaign. Kontakta er Campaign-administratör om du vill ha mer information.
 
 ### Obligatoriska element {#required-elements}
 
@@ -493,7 +496,7 @@ Följande förinstallationsanvisningar krävs för automatisk övervakning:
 * Du måste ha **netreport.tgz **(Linux-installation) eller **netreport.zip** (Windows-installation),
 * Vi rekommenderar att du inte installerar övervakning på den dator som ska övervakas,
 * Den måste vara installerad på en dator med JRE eller JDK.
-* i Linux måste den dator som ska övervakas ha paketet **bc** . Mer information finns i [det här avsnittet](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
+* i Linux måste den dator som ska övervakas ha paketet **bc** . For more on this, refer to [this section](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
 
 ### Installationsprocedur {#installation-procedure}
 
@@ -596,7 +599,7 @@ Detta element konfigurerar övervakningen av en viss server på värden, dvs.
 * **alias** (valfritt): namnet på den övervakade datorn så som den kommer att visas i rapporten.
 * **sessionToken**: tillhandahåller inloggningsautentisering via en auktoriserad sessionstoken.
 
-   Om du vill konfigurera sessionstoken väljer du **övervakningsoperatorn** i Adobe Campaign-konsolen. Ange IP-adresserna till de datorer som har behörighet att övervaka den här instansen på fliken **Åtkomstbehörighet** . Du kan sedan ansluta till övervakningssidan från dessa datorer med **övervaknings** -ID:t och utan att behöva ange ett lösenord.
+   Om du vill konfigurera sessionstoken väljer du **övervakningsoperatorn** i konsolen Adobe Campaign. Ange IP-adresserna till de datorer som har behörighet att övervaka den här instansen på fliken **Åtkomstbehörighet** . Du kan sedan ansluta till övervakningssidan från dessa datorer med **övervaknings** -ID:t och utan att behöva ange ett lösenord.
 
    ![](assets/ncs_operators_rights_02.png)
 
