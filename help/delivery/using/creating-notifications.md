@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Börja med att skapa en ny leverans.
    >
    >**[!UICONTROL Badge]** och **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
 
-1. Klicka på **[!UICONTROL Insert emoticon]** ikonen om du vill infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [Anpassa uttryckslistan](../../delivery/using/defining-interactive-content.md)
+1. Klicka på **[!UICONTROL Insert emoticon]** ikonen om du vill infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [Anpassa uttryckslistan](../../delivery/using/customizing-emoticon-list.md)
 
 1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**fältet action_loc_key** i nyttolasten). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apples dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. I **[!UICONTROL Play a sound]** fältet väljer du vilket ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
@@ -94,7 +94,7 @@ Börja med att skapa en ny leverans.
 
    >[!NOTE]
    >
-   >Meddelandeformatet (banner eller alert) har inte definierats i Adobe Campaign. Det beror på vilken konfiguration användaren har valt i sina iOS-inställningar. Med Adobe Campaign kan du dock förhandsgranska varje typ av meddelandeformat. Klicka på pilen längst ned till höger för att växla från ett format till ett annat.
+   >Meddelandeformatet (banner eller alert) har inte definierats i Adobe Campaign. Det beror på vilken konfiguration användaren har valt i sina iOS-inställningar. I Adobe Campaign kan du dock förhandsgranska varje typ av meddelandeformat. Klicka på pilen längst ned till höger för att växla från ett format till ett annat.
    >
    >Förhandsgranskningen använder iOS 10-utseendet.
 
