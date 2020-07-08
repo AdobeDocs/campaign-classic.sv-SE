@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+workflow-type: tm+mt
+source-wordcount: '1372'
+ht-degree: 0%
 
 ---
 
 
 # Version 19.2{#release-19-2}
 
-[Bygg uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,7 +44,7 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
  </tbody> 
 </table>
 
-Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
@@ -66,8 +69,8 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA är delstaten Kaliforniens nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 1 januari 2020. CCPA gäller Adobe Campaign-kunder som lagrar data för registrerade i Kalifornien.</p>
-    <p>Förutom de sekretessfunktioner som redan finns (inklusive samtyckeshantering, datalagringsinställningar och användarroller) hjälper Adobe Campaign dig att bli redo för CCPA:</p>
+   <td> <p>CCPA är delstaten Kaliforniens nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 1 januari 2020. CCPA gäller för Adobe Campaign-kunder som lagrar data för registrerade i Kalifornien.</p>
+    <p>Förutom de sekretessfunktioner som redan finns (inklusive samtyckeshantering, datalagringsinställningar och användarroller) kan Adobe Campaign underlätta din beredskap för CCPA:</p>
     <ul>
       <li>Rätt till åtkomst och rätt att ta bort: vi utnyttjar de funktioner som tillkommit för GDPR. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Läs mer</a></li>
       <li>Ni kan spåra om en konsument har valt att sälja personuppgifter. Därför måste du utöka profiltabellen och lägga till ett <strong>avanmäl för CCPA</strong> -fältet. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Läs mer</a></li></td> 
@@ -177,7 +180,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Korrigerade ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden. (NEO-16804)
 * Korrigerade ett problem som visade fel felkod när en ogiltig sessionstoken användes i kontexten för API-anrop för att utlösa händelser. Felkoden var HTTP 200 OK i stället för HTTP 403 Forbidden. (NEO-16826)
 * Ett problem som orsakade att leveransrapporter visades via webbåtkomst har korrigerats. (NEO-17015)
-* Ett IMS-autentiseringsproblem när du loggade in på Adobe Campaign har korrigerats. (NEO-17312)
+* Ett IMS-autentiseringsproblem vid inloggning på Adobe Campaign har korrigerats. (NEO-17312)
 * Korrigerade ett problem som förhindrade att e-postmeddelanden i karantän togs bort av sekretesshanteringsprocessen. (NEO-17314)
 * Problem med genomströmning har korrigerats efter uppgradering till 9031 med SQL-databas. (NEO-17558)
 * Ett problem som påverkade CRM Connector med Salesforce har korrigerats. (NEO-17712)
