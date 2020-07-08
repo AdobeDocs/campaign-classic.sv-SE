@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 0%
@@ -83,7 +83,7 @@ _7 juli 2020_
 
 Den här nya versionen (9032@efd8a94) innehåller följande korrigering:
 
-* Korrigerade ett problem som hindrade spårning från att fungera när servern med mitt-surfarande byggdes 9032 (Gold Standard 7) och marknadsföringsservern i en äldre version (före 9032). (NEO-26411)
+* Korrigerade ett problem som hindrade spårning från att fungera när mittkällservern var på build 9032 (Gold Standard) och marknadsföringsservern på en äldre version (före 9032). (NEO-26411)
 
 >[!CAUTION]
 >
