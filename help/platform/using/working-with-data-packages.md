@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Principen med **datapaket** är att exportera en datakonfiguration och integrera
 Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket och administratörspaket.
 
 * **Användarpaket**: gör att du kan välja en lista över enheter som ska exporteras. Den här typen av paket hanterar beroenden och verifierar fel.
-* **Platform-paket**: Den innehåller alla tillagda tekniska resurser (inte standard): scheman, JavaScript-kod osv.
+* **Platform-paket**: Den innehåller alla tillagda tekniska resurser (ej standard): scheman, JavaScript-kod osv.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
-* **Administratörspaket**: innehåller alla tillagda mallar och affärsobjekt (inte standard): mallar, bibliotek osv.
+* **Administratörspaket**: innehåller alla tillagda mallar och affärsobjekt (ej standard): mallar, bibliotek osv.
 
    ![](assets/ncs_datapackage_package_admin.png)
 
@@ -315,7 +315,7 @@ Om du vill exportera ett paket från en paketdefinition följer du stegen nedan:
 
 Guiden för paketimport är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Package import...]** i klientkonsolen i Adobe Campaign.
 
-Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans eller ett standardpaket, beroende på villkoren i din licens.
+Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans, eller ett [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), beroende på licensvillkoren.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -331,13 +331,13 @@ Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** starta importen.
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Installera ett standardpaket {#installing-a-standard-package}
+### Installera ett inbyggt paket {#installing-a-standard-package}
 
-Standardpaket installeras när Adobe Campaign är konfigurerat. Beroende på din behörighet och distributionsmodell kan du importera nya standardpaket om du skaffar nya alternativ eller tillägg, eller om du uppgraderar till ett nytt erbjudande.
+Standardpaket är inbyggda paket som installeras när Adobe Campaign är konfigurerat. Beroende på din behörighet och distributionsmodell kan du importera nya standardpaket om du skaffar nya alternativ eller tillägg, eller om du uppgraderar till ett nytt erbjudande.
 
 Se licensavtalet för att se vilka paket du kan installera.
 
-Mer information om standardpaket finns på [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+Mer information om inbyggda paket finns på [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Bästa praxis för datapaket {#data-package-best-practices}
 
