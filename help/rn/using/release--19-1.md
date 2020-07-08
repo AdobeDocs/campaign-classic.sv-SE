@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2934'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-Den **sista stabila versionen** är 9032 (3a9dc9c). Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 - build 9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _7 juli 2020_
 
 Den här nya versionen (9032@efd8a94) innehåller följande korrigering:
 
-* Ett problem som gjorde att det inte gick att spåra länkar har åtgärdats. (NEO-26411)
+* Korrigerade ett problem som hindrade spårning från att fungera när servern med mitt-surfarande byggdes 9032 (Gold Standard 7) och marknadsföringsservern i en äldre version (före 9032). (NEO-26411)
 
 >[!CAUTION]
 >
