@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1128'
+ht-degree: 1%
 
 ---
 
@@ -132,12 +132,6 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Skickar leveranser via Mobile/SMS-kanalen med Adobe Campaign. Valfritt. <a href="../../delivery/using/sms-channel.md">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
-  <tr> 
-   <td> Telefonkanal<br /> </td> 
-   <td> Skickar leveranser via telefonkanalen med Adobe Campaign.<br /> </td> 
-   <td> Alla<br /> </td> 
-   <td> Valfritt</td> 
-  </tr>
   <tr> 
    <td> Mobilappskanal<br /> </td> 
    <td> Använder plattformen Adobe Campaign för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Valfritt. <a href="../../delivery/using/about-mobile-app-channel.md">Läs mer</a> <br /> </td> 
