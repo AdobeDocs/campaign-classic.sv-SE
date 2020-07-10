@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -86,12 +86,15 @@ Ett exempel visas i användningsexemplet nedan.
 
 I det här fallet skapar vi ett arbetsflöde för att importera data som har krypterats i ett externt system med hjälp av en nyckel som genererats på Kontrollpanelen.
 
+En självstudievideo som visar hur du använder en GPG-nyckel för att dekryptera data finns också i [det här avsnittet](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html).
+
 Så här utför du det här användningsfallet:
 
 1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i dokumentationen för [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * Den offentliga nyckeln delas med det externa systemet, som kommer att använda den för att kryptera data som ska skickas till Campaign.
    * Den privata nyckeln används av Campaign Classic för att dekryptera inkommande krypterade data.
+
    ![](assets/gpg_generate.png)
 
 1. I det externa systemet använder du den offentliga nyckel som hämtats från Kontrollpanelen för att kryptera de data som ska importeras till Campaign Classic.
@@ -223,6 +226,7 @@ I det här exemplet visas hur du förinställer ett arbetsflöde som kan återan
    * **[!UICONTROL Split]**: Skapa filter för att bearbeta poster på olika sätt beroende på om de kan förenas eller inte.
    * **[!UICONTROL Deduplication]**: Deduplicera data från den inkommande filen innan den infogas i databasen.
    * **[!UICONTROL Update data]**: Uppdatera databasen med de importerade profilerna.
+
    ![](assets/import_template_example0.png)
 
 1. Konfigurera **[!UICONTROL Data Loading (file)]** aktiviteten:
@@ -244,6 +248,7 @@ I det här exemplet visas hur du förinställer ett arbetsflöde som kan återan
 
    * På **[!UICONTROL Enrichment]** fliken markerar du **[!UICONTROL Add data]** och definierar en länk mellan importerade data och måldimensionen för mottagarna. I det här exemplet används det anpassade fältet **CRM ID** för att skapa kopplingsvillkoret. Använd fältet eller kombinationen av fält som du behöver så länge det går att identifiera unika poster.
    * Låt alternativet vara omarkerat på **[!UICONTROL Reconciliation]** fliken **[!UICONTROL Identify the document from the working data]** .
+
    ![](assets/import_template_example2.png)
 
 1. Konfigurera aktiviteten för att hämta avstämda mottagare i en övergång och mottagare som inte kunde avstämas men som har tillräckligt med data i en andra övergång. **[!UICONTROL Split]**
@@ -284,6 +289,7 @@ I det här exemplet visas hur du förinställer ett arbetsflöde som kan återan
 
    * I det här exemplet används e-postfältet för att hitta unika profiler. Du kan använda vilket fält som helst som du är säker på är ifyllt och ingår i en unik kombination.
    * På **[!UICONTROL Deduplication method]** skärmen markerar du **[!UICONTROL Advanced parameters]** och markerar **[!UICONTROL Disable automatic filtering of 0 ID records]** alternativet för att se till att poster som har en primärnyckel som är lika med 0 (som ska vara alla poster i den här övergången) inte utesluts.
+
    ![](assets/import_template_example7.png)
 
 1. Konfigurera den **[!UICONTROL Update data]** aktivitet som finns efter den **[!UICONTROL Deduplication]** aktivitet som konfigurerats tidigare.
