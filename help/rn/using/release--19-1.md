@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
+source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ _7 juli 2020_
 
 Den här nya versionen (9032@efd8a94) innehåller följande korrigering:
 
-* Korrigerade ett problem som hindrade spårning från att fungera när mittkällservern var på build 9032 (Gold Standard) och marknadsföringsservern på en äldre version (före 9032). (NEO-26411)
+* Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades. (NEO-26411)
 
 >[!CAUTION]
 >
