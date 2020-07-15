@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Med den här **[!UICONTROL Sub-workflow]** aktiviteten kan du aktivera körninge
 
 Du kan anropa flera delarbetsflöden i ett enda arbetsflöde. Delarbetsflöden körs synkront.
 
-I exemplet nedan anropar ett&quot;master&quot;-arbetsflöde ett delarbetsflöde med jumps. Mer information om grafiska objekt av typen hoppskrivningar finns i [det här avsnittet](../../workflow/using/jump--start-point-and-end-point-.md).
+I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps. Mer information om grafiska objekt av typen hoppskrivningar finns i [det här avsnittet](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Skapa ett arbetsflöde som du vill använda som ett underarbetsflöde i ett annat arbetsflöde.
-1. Infoga en **[!UICONTROL Jump (end point)]** aktivitet med prioriteten 1 i början av arbetsflödet. Om du har flera&quot;slutpunktshopp&quot; använder Adobe Campaign&quot;slutpunktshoppet&quot; med det lägsta talet.
-1. Infoga en **[!UICONTROL Jump (start point)]** aktivitet med prioritet 2 i slutet av arbetsflödet. Om du har flera&quot;startpunktshopp&quot; använder Adobe Campaign&quot;startpunkten&quot; med det högsta talet.
+1. Infoga en **[!UICONTROL Jump (end point)]** aktivitet med prioriteten 1 i början av arbetsflödet. Om du har flera&quot;slutpunkttypshopp&quot; använder Adobe Campaign&quot;slutpunktshoppet&quot; med det lägsta talet.
+1. Infoga en **[!UICONTROL Jump (start point)]** aktivitet med prioritet 2 i slutet av arbetsflödet. Om du har flera &quot;startpunktstift&quot; använder Adobe Campaign &quot;startpunktstift&quot; med det högsta talet.
 
    ![](assets/subworkflow_jumps.png)
 
@@ -44,7 +44,7 @@ I exemplet nedan anropar ett&quot;master&quot;-arbetsflöde ett delarbetsflöde 
    >För att delarbetsflödet ska kunna köras på rätt sätt får du bara ha en &quot;slutpunktstyp&quot; som hoppar med det lägsta talet och bara en &quot;startpunktstyp&quot; som hoppar med det högsta talet.
 
 1. Slutför och spara det här delarbetsflödet.
-1. Skapa ett huvudarbetsflöde.
+1. Skapa ett primärt arbetsflöde.
 1. Infoga en **[!UICONTROL Sub-workflow]** aktivitet och öppna den.
 1. Välj det arbetsflöde som du vill använda i **[!UICONTROL Workflow template]** listrutan.
 
@@ -57,13 +57,17 @@ I exemplet nedan anropar ett&quot;master&quot;-arbetsflöde ett delarbetsflöde 
 
 1. Kör arbetsflödet.
 
-När arbetsflödet som anropades som ett underarbetsflöde har fortfarande **[!UICONTROL Being edited]** status, vilket innebär följande:
+När arbetsflödet som anropades som ett underarbetsflöde körs förblir i **[!UICONTROL Being edited]** status, vilket innebär följande:
 
 * Du kan inte högerklicka på övergångarna för att visa målet.
 * Antalet mellanliggande populationer kan inte visas.
-* Loggarna sammanställs i huvudarbetsflödet och kallas bara för delarbetsflöde.
+* Delarbetsflödets loggar visas i det primära arbetsflödet.
 
-Det här arbetsflödet är i själva verket bara en mall. Ett nytt delarbetsflöde som är baserat på den här mallen skapas när det anropas från huvudarbetsflödet.
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>Om något fel inträffar i delarbetsflödet pausas det primära arbetsflödet och en kopia av delarbetsflödet skapas.
 
 ## Indataparametrar (valfritt) {#input-parameters--optional-}
 
