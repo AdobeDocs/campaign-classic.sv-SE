@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
+source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
@@ -44,11 +47,11 @@ När IMS är aktiverat kan du begära etablering av People core service/Audience
   </tr> 
   <tr> 
    <td> <strong>Miljö:</strong><br /> </td> 
-   <td> Exempel:Produktion </td> 
+   <td> Exempel: Produktion </td> 
   </tr> 
   <tr> 
-   <td> <strong>AAM- eller persontjänst</strong><br /> </td> 
-   <td> Exempel: Adobe Audience Manager. Se till att tala om för provisioneringsteamet om ni äger Audience Manager-licensen eller inte.</td> 
+   <td> <strong>AAM eller People Service</strong><br /> </td> 
+   <td> Exempel: Adobe Audience Manager. Se till att tala om för provisioneringsteamet om du äger Audience Manager-licens eller inte.</td> 
   </tr> 
   <tr> 
    <td> <strong>Deklarerat ID eller besökar-ID</strong><br /> </td> 
