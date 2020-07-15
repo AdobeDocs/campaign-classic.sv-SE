@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3151'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 # SMS-kanal{#sms-channel}
 
-Med Adobe Campaign kan ni utföra massanpassade leveranser av SMS-meddelanden. Mottagarprofilerna måste innehålla minst ett mobiltelefonnummer.
+Med Adobe Campaign kan ni utföra personaliserade SMS-meddelanden. Mottagarprofilerna måste innehålla minst ett mobiltelefonnummer.
 
 >[!NOTE]
 >
->Med Adobe Campaign kan ni också skicka meddelanden på mobilterminaler via alternativet **Adobe Campaign Mobile App Channel (NMAC)** .
+>Med Adobe Campaign kan du även skicka meddelanden på mobilterminaler via alternativet **Adobe Campaign Mobile App Channel (NMAC)** .
 > 
 >Mer information finns i avsnittet [Om mobilappskanaler](../../delivery/using/about-mobile-app-channel.md) .
 
@@ -64,7 +64,7 @@ Gör så här:
 
    >[!CAUTION]
    >
-   > Från och med version 20.2 kommer äldre anslutningar att bli inaktuella och inte stödjas. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]** kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]** kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](https://helpx.adobe.com/campaign/kb/sms-connector.html).
 
 1. Med det här **[!UICONTROL Enable verbose SMPP traces in the log file]** alternativet kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att felsöka anslutningen och jämföra med den trafik som leverantören ser.
 
@@ -314,7 +314,7 @@ När du konfigurerar ett nytt externt SMPP-konto för mobil leverans kan du defi
 
 >[!NOTE]
 >
->Mappningen mellan **data_coding** -värdet och den kodning som faktiskt används är standardiserad. Vissa SMSC har dock en egen specifik mappning: I det här fallet måste **Adobe Campaign** -administratören deklarera den här mappningen. Kontakta din leverantör för mer information.
+>Mappningen mellan **data_coding** -värdet och den kodning som faktiskt används är standardiserad. Vissa SMSC har dock en egen specifik mappning: I det här fallet måste **Adobe Campaign** -administratören deklarera mappningen. Kontakta din leverantör för mer information.
 
 Du kan deklarera **data_codings** och tvinga fram kodningen om det behövs: Om du vill göra det anger du en enda kodning i tabellen.
 
@@ -323,7 +323,7 @@ Du kan deklarera **data_codings** och tvinga fram kodningen om det behövs: Om d
    * Den försöker använda GSM-kodning som den tilldelar värdet **data_coding = 0**.
    * Om GSM-kodningen misslyckas används **UCS2** -kodning som värdet **data_coding = 8** tilldelas till.
 
-* När du definierar de kodningar som du vill använda samt de länkade **[!UICONTROL data_coding]** fältvärdena, kommer Adobe Campaign att försöka använda den första kodningen i listan och sedan följande, om den första kodningen visar sig vara omöjlig.
+* När du definierar de kodningar som du vill använda samt de länkade **[!UICONTROL data_coding]** fältvärdena, kommer Adobe Campaign att försöka använda den första kodningen i listan och sedan följande, om den första kodningen inte är möjlig.
 
 >[!IMPORTANT]
 >
@@ -335,7 +335,7 @@ Du kan deklarera **data_codings** och tvinga fram kodningen om det behövs: Om d
 
 När du konfigurerar en utökad allmän SMPP-anslutning kan du konfigurera automatiska svar.
 
-När en prenumerant svarar på ett SMS-meddelande som skickades till dem via Adobe Campaign och deras meddelande innehåller ett nyckelord som&quot;STOP&quot;, kan du konfigurera meddelanden som automatiskt skickas tillbaka till dem i **[!UICONTROL Automatic reply sent to the MO]** avsnittet.
+När en prenumerant svarar på ett SMS-meddelande som skickades till dem via Adobe Campaign och deras meddelande innehåller ett nyckelord som &quot;STOP&quot;, kan du konfigurera meddelanden som automatiskt skickas tillbaka till dem i **[!UICONTROL Automatic reply sent to the MO]** avsnittet.
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ Stegen för att konfigurera ett externt konto med den utökade generiska SMPP-an
 
 ### Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign ger er en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** noden. Mer information finns i avsnittet [Om mallar](../../delivery/using/about-templates.md) .
+Adobe Campaign tillhandahåller en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** noden. Mer information finns i avsnittet [Om mallar](../../delivery/using/about-templates.md) .
 
 Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen refereras.
 
@@ -504,7 +504,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
 ## Bearbetar inkommande meddelanden {#processing-inbound-messages}
 
-SMS-modulen **nlserver** frågar SMS-routern med regelbundna intervall. På så sätt kan Adobe Campaign spåra leveransförloppet och hantera statusrapporter och mottagarnas begäran om att avbryta prenumerationen.
+SMS-modulen **nlserver** frågar SMS-routern med regelbundna intervall. På så sätt kan Adobe Campaign spåra leveransförloppet och hantera statusrapporter och mottagarens begäran om att ta bort prenumerationen.
 
 * **Statusrapporter**: visa leveransloggar för att kontrollera status för dina meddelanden.
 
@@ -526,9 +526,9 @@ InSMS-schemat innehåller information som är relevant för inkommande SMS. En b
 
 * **meddelande**: det SMS som togs emot.
 * **ursprung**: mobilnummer i meddelandets ursprung.
-* **providerId**: Identifierare för meddelandet som returneras av SMSC (meddelandecenter).
+* **providerId**: Identifierare för det meddelande som returneras av SMSC (meddelandecenter).
 * **skapad**: datum då inkommande meddelande infogades i Adobe Campaign.
-* **TextAccount**: Externt konto för Adobe Campaign.
+* **TextAccount**: Adobe Campaign externt konto.
 
    >[!IMPORTANT]
    >
@@ -544,11 +544,11 @@ InSMS-schemat innehåller information som är relevant för inkommande SMS. En b
 * **largeAccount**: kundkontokod länkad till inkommande SMS.
 * **countryCode**: landskod för operator.
 * **operatorCode**: operatörens nätverkskod.
-* **linkedSmsId**: Adobe Campaign-identifieraren (broadlogId) länkad till utgående SMS, där detta SMS är svaret.
+* **linkedSmsId**: Adobe Campaign-identifierare (broadlogId) länkad till utgående SMS, där detta SMS är svaret.
 
 ## Hantera automatiska svar (amerikansk förordning) {#managing-automatic-replies--american-regulation-}
 
-När prenumeranter besvarar ett SMS-meddelande som skickats till dem via Adobe Campaign och de använder ett nyckelord som STOP, HELP eller YES måste de på den amerikanska marknaden konfigurera meddelanden som returneras automatiskt.
+När prenumeranterna svarar på ett SMS-meddelande som skickats till dem via Adobe Campaign och använder ett nyckelord som STOP, HELP eller YES, är det nödvändigt att konfigurera meddelanden som returneras automatiskt på den amerikanska marknaden.
 
 Om mottagarna skickar nyckelordet STOP får de automatiskt ett bekräftelsemeddelande om att de har avbeställt prenumerationen.
 
