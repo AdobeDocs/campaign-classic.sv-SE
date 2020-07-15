@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
 
 
-# Specifika konfigurationer efter databastyp {#specific-configurations-by-database-type}
+# Konfigurera FDA-anslutningar {#specific-configurations-by-database-type}
 
 Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaign måste du utföra vissa specifika konfigurationer. Dessa konfigurationer innebär i princip att installera drivrutiner och deklarera miljövariabler som tillhör varje RDBMS på Adobe Campaign-servern.
 
@@ -59,6 +59,7 @@ Så här skapar du ett externt [!DNL Azure Synapse] konto:
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
    * **[!UICONTROL Database]**: Namn på databasen
+
    ![](assets/azure_1.png)
 
 ### Azure Synapse i CentOS {#azure-centos}
@@ -258,6 +259,7 @@ Med det [!DNL Snowflake] externa kontot kan du ansluta Campaign-instansen till d
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
    * **[!UICONTROL Database]**: Namn på databasen
+
    ![](assets/snowflake.png)
 
 1. Klicka på **[!UICONTROL Parameters]** fliken och sedan på **[!UICONTROL Deploy functions]** knappen för att skapa funktioner.
@@ -346,6 +348,7 @@ Med det [!DNL Hadoop] externa kontot kan du ansluta Campaign-instansen till din 
    * **[!UICONTROL Database]**: Namnet på databasen om det inte anges i DSN. Den kan lämnas tom om den anges i DSN
 
    * **[!UICONTROL Time zone]**: Tidszon för server
+
    ![](assets/hadoop3.png)
 
 Kopplingen stöder följande ODBC-alternativ:
@@ -404,6 +407,7 @@ Med det [!DNL Oracle] externa kontot kan du ansluta Campaign-instansen till din 
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
    * **[!UICONTROL Time zone]**: Tidszon för server
+
    ![](assets/oracle_config.png)
 
 ### Oracle på Linux {#for-linux-1}
