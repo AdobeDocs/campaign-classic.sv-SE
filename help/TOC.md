@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 + Komma igång {#getting-started}
    + Från Adobe Campaign {#starting-with-adobe-campaign}
       + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Sekretess och rekommendationer](platform/using/privacy-and-recommendations.md)
+      + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
       + [Startar Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign arbetsyta](platform/using/adobe-campaign-workspace.md)
       + Vanliga frågor {#faq}
@@ -72,7 +72,7 @@ ht-degree: 0%
       + [Externa konton](platform/using/external-accounts.md)
    + Åtkomst till en extern databas (FDA){#accessing-external-database}
       + [Om FDA](platform/using/about-fda.md)
-      + [Specifika konfigurationer efter databastyp](platform/using/specific-configuration-database.md)
+      + [Konfigurera FDA-anslutningar](platform/using/specific-configuration-database.md)
       + [Äldre anslutningar](platform/using/legacy-connectors.md)
       + [Åtkomsträttigheter till fjärrdatabas](platform/using/remote-database-access-rights.md)
       + [Ansluta till databasen](platform/using/connecting-to-database.md)
@@ -295,32 +295,32 @@ ht-degree: 0%
    + Målgruppsdelning {#audience-sharing}
       + [Dela målgrupper med [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Skicka begäran till Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Konfigurera integrering med delade målgrupper i [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Konfigurera integrering av delade målgrupper i [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Felsökning](integrations/using/troubleshooting.md)
       + [Importera och exportera målgrupper](integrations/using/importing-and-exporting-audiences.md)
    + Resursdelning {#asset-sharing}
       + [Dela resurser med [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Konfigurerar åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+      + [Konfigurera åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Infoga en delad resurs](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Om [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett [!DNL Experience Manager]-nyhetsbrev](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa [!DNL Experience Manager] ett nyhetsbrev](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + Ansluta via ett Adobe ID {#connecting-via-an-adobe-id}
-      + [Om [!DNL-Adobe ID]](integrations/using/about-adobe-id.md)
+      + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
       + [Konfigurerar [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementera [!DNL IMS]](integrations/using/implementing-ims.md)
+      + [Implementering [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
-      + [[!DNL ACS Connector]-principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbprogram](integrations/using/synchronizing-web-applications.md)
-      + [Felsökning av [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Felsöka [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud-utlösare {#experience-triggers}
       + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurerar pipeline](integrations/using/configuring-pipeline.md)
