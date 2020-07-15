@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Fliken, som är tillgänglig från Campaign Classic hemsida, är den viktigaste startpunkten som hjälper dig att övervaka instansen. **[!UICONTROL Monitoring]**
 
-Här finns en kontrollpanel med information om vad som händer i din instans:  status (version av bygge, installerade paket osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
+Här finns en kontrollpanel med information om vad som händer i din instans: status (version av bygge, installerade paket osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
 
 Detaljerad information finns [här](../../production/using/monitoring-processes.md).
 
@@ -35,16 +35,18 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 
 ## Övervaka Campaign Classic-processer {#monitoring-campaign-classic-processes}
 
-Det finns fler sätt att övervaka olika Campaign-processer. Mer information finns i avsnitten nedan.
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">Övervaka arbetsflöden</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">Övervaka databasen</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">Bildskärmsleveranser</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Övervaka arbetsflöden</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Övervaka databasen</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">Bildskärmsleveranser</a></p></td></tr>
 </table>
 
+Det finns fler sätt att övervaka olika Campaign-processer. De innehåller flera sätt att övervaka dina instanser för att säkerställa att systemet är felfritt och till slut felsöka problem som kan uppstå när du ställer in arbetsflöden, skickar leveranser osv.
+
 ### Övervaka instansen {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Automatiska övervakningsverktyg**
 
@@ -63,6 +65,8 @@ På Kontrollpanelen kan du hantera flera inställningar för din instans: hanter
 >Observera att Kontrollpanelen endast är tillgänglig för administratörsanvändare och för alla kunder som använder Adobe Managed Services.
 
 ### Övervaka arbetsflöden {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **Värmekarta för arbetsflöde**
 
@@ -88,6 +92,8 @@ Du kan förbättra prestandan genom att följa riktlinjer och bästa praxis när
 
 ### Övervaka leveranser {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **SMTP-rapporter**
 
 SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Klicka här](../../production/using/monitoring-processes.md) om du vill ha mer information.
@@ -103,6 +109,8 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Klicka här](..
 * [Temporära filproblem](../../production/using/temporary-files.md) - endast *på lokala värdmodeller*
 
 ### Övervaka databasen {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Arbetsflöde för databasrensning**
 
