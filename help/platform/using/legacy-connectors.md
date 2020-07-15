@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fddd0b61c71c90849a1f64776eea43c57d9debe2
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
 
 
 # Äldre anslutningar {#legacy-connectors}
+
+Äldre FDA-anslutningar stöds fortfarande av Adobe. Vi rekommenderar dock att du ersätter dem med senare alternativ på den här [sidan](../../platform/using/specific-configuration-database.md).
 
 ## Konfigurera åtkomst till Hadoop 2.1 {#configure-access-to-hadoop}
 
