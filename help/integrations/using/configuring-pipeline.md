@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Följ de här stegen:
 
 ### Registrering av programnamn i Adobe Campaign Classic {#application-name-registration}
 
-Program-ID för den autentiseringsklient som skapas måste konfigureras i Adobe Campaign. Du kan göra det genom att redigera instanskonfigurationsfilen i elementet pipelined, särskilt attributet appName.
+Program-ID för den autentiseringsklient som skapas måste konfigureras i Adobe Campaign. Du kan göra det genom att redigera instanskonfigurationsfilen i [!DNL pipelined] elementet, särskilt attributet appName.
 
 Exempel:
 
@@ -139,11 +139,11 @@ Exempel:
 
 ### Nyckelkryptering {#key-encription}
 
-Om du vill använda den i en pipeline måste den privata nyckeln krypteras. Krypteringen görs med Javascript-funktionen cryptString och måste utföras på samma instans som i pipeline.
+Den privata nyckeln måste vara krypterad för att kunna användas av [!DNL pipelined]. Krypteringen görs med JavaScript-funktionen cryptString och måste utföras på samma instans som [!DNL pipelined].
 
 Ett exempel på kryptering med privat nyckel med JavaScript finns på den här [sidan](../../integrations/using/pipeline-troubleshooting.md).
 
-Den krypterade privata nyckeln måste registreras i Adobe Campaign. Du kan göra det genom att redigera instanskonfigurationsfilen i elementet pipelined, särskilt attributet authPrivateKey.
+Den krypterade privata nyckeln måste registreras i Adobe Campaign. Du kan göra det genom att redigera instanskonfigurationsfilen i [!DNL pipelined] elementet, särskilt attributet authPrivateKey.
 
 Exempel:
 
@@ -153,7 +153,7 @@ Exempel:
 
 ### Automatisk processstart i pipeline {#pipelined-auto-start}
 
-Processen med rörledning måste startas automatiskt.
+Processen [!DNL pipelined] måste startas automatiskt.
 Om du vill göra det anger du elementet i konfigurationsfilen till autostart=&quot;true&quot;:
 
 ```
@@ -174,7 +174,7 @@ En omstart krävs för att ändringarna ska börja gälla:
 nlserver restart pipelined@instance
 ```
 
-Om det uppstår fel söker du efter fel i standardutdata (om du började manuellt) eller i den förberedda loggfilen. Mer information om hur du löser problem finns i avsnittet Felsökning i det här dokumentet.
+Om det uppstår fel söker du efter fel i standardutdata (om du startade manuellt) eller i [!DNL pipelined] loggfilen. Mer information om hur du löser problem finns i avsnittet Felsökning i det här dokumentet.
 
 ### Konfigurationsalternativ för pipeline {#pipelined-configuration-options}
 
@@ -187,7 +187,7 @@ Om det uppstår fel söker du efter fel i standardutdata (om du började manuell
 | discoverPipelineEndpoint | URL för att identifiera den slutpunkt för Pipeline Services som ska användas för den här klienten. Standard: https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | Perioden mellan två dumpar av processens interna tillstånd i var/INSTANCE/pipelined.json interna tillstånd är även tillgänglig på begäran på http://INSTANCE/pipelined/status (port 7781). |
 | forceradPipelineEndpoint | Inaktivera identifieringen av PipelineServicesEndpoint och framtvinga den |
-| monitorServerPort | Den rörliga processen lyssnar på den här porten och tillhandahåller processens interna tillstånd på http://INSTANCE/pipelined/status (port 7781). |
+| monitorServerPort | Processen lyssnar på den här porten och tillhandahåller processens interna tillstånd på http://INSTANCE/pipelined/status (port 7781). [!DNL pipelined] |
 | pointerFlushMessageCount | När det här antalet meddelanden bearbetas sparas förskjutningarna i databasen. Standardvärdet är 1000 |
 | pekareFlushPeriodSec | Efter den här perioden sparas förskjutningarna i databasen. Standardvärdet är 5 (sek) |
 | processingJSThreads | Antal dedikerade trådar som bearbetar meddelanden med anpassade JS-anslutningar. Standard är 4 |
