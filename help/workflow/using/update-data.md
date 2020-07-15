@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ I **[!UICONTROL Operation type]** fältet kan du välja vilken process som ska u
 * **[!UICONTROL Insert or update]**: lägga till eller uppdatera data om de redan har lagts till.
 * **[!UICONTROL Insert]**: bara lägga till data.
 * **[!UICONTROL Update]**: bara uppdatera data.
-* **[!UICONTROL Update and merge collections]**: uppdatera data och välj en&quot;huvudpost&quot; och länka sedan element som är länkade till dubbletterna i den här huvudposten. Dubbletter kan sedan tas bort utan att överordnade element skapas.
+* **[!UICONTROL Update and merge collections]**: uppdaterar data och väljer en primär post och länkar sedan element som är länkade till dubbletterna i den här primära posten. Dubbletter kan sedan tas bort utan att överordnade element skapas.
 * **[!UICONTROL Delete]**: ta bort data.
 
 ![](assets/s_advuser_update_data_1.png)
@@ -52,7 +55,7 @@ Ange hur posterna i databasen ska identifieras:
 
 ## Markera de fält som ska uppdateras {#selecting-the-fields-to-be-updated}
 
-Använd alternativet **[!UICONTROL Automatically associate fields with the same name]** för att automatiskt identifiera de fält som ska uppdateras i Adobe Campaign.
+Använd det här alternativet om du vill att Adobe Campaign ska identifiera de fält som ska uppdateras automatiskt. **[!UICONTROL Automatically associate fields with the same name]**
 
 ![](assets/s_advuser_update_data_3b.png)
 
@@ -107,7 +110,7 @@ Genom att uppdatera data och sammanfoga samlingar kan du uppdatera data i en pos
 
 1. Markera de samlingar som ska flyttas till den primära posten och de fält som ska uppdateras.
 
-   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. Mer information finns i det här [avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
+   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
 
    Ange sedan de villkor som ska beaktas för regeln.
 
