@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Din version av Adobe Campaign Classic stöder inte pipeline.
 
-1. Kontrollera om det rörliga elementet finns i konfigurationsfilen. Annars betyder det att det inte stöds.
+1. Kontrollera om elementet [!DNL pipelined] finns i konfigurationsfilen. Annars betyder det att det inte stöds.
 1. Uppgradera till version 6.11 build 8705 eller senare.
 
 **Pipelined misslyckas med &#39;&#39; aurait d¢commencer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)&quot;**
@@ -53,7 +53,7 @@ Parametern @authPrivateKey i instanskonfigurationsfilen är felaktig.
 1. Kontrollera att authPrivateKey: börjar med @, slutar med = och är ca 4 000 tecken långt.
 1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4096 bitar långt och börjar med —BEGIN RSA PRIVATE KEY—.
    <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics. Se det här [avsnittet](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
-1. Kontrollera att nyckeln har kodats i samma instans som den har rörts i. <br>Om det behövs kan du göra om kodningen med JavaScript eller arbetsflödet.
+1. Kontrollera att nyckeln har kodats i samma instans som [!DNL pipelined]. <br>Om det behövs kan du göra om kodningen med JavaScript eller arbetsflödet.
 
 **Överföringen misslyckades med &quot;det går inte att läsa token under autentiseringen&quot;**
 
@@ -65,12 +65,12 @@ Den privata nyckeln har ett ogiltigt format.
 
 **Inga utlösare har hämtats**
 
-När den rörliga processen körs och inga utlösare hämtas:
+När [!DNL pipelined] processen körs och inga utlösare hämtas:
 
 1. Kontrollera att utlösaren är aktiv i Analytics och genererar händelser.
-1. Kontrollera att den rörliga processen körs.
-1. Leta efter fel i den rörliga loggen.
-1. Leta efter fel på statussidan för pipeline. utlösare-ignorerad, utlösare-fel ska vara noll.
+1. Kontrollera att [!DNL pipelined] processen körs.
+1. Sök efter fel i [!DNL pipelined] loggen.
+1. Sök efter fel på [!DNL pipelined] statussidan. utlösare-ignorerad, utlösare-fel ska vara noll.
 1. Kontrollera att utlösarnamnet är konfigurerat i **[!UICONTROL NmsPipeline_Config]** alternativet. Om du är osäker kan du använda alternativet jokertecken.
 1. Kontrollera att Analytics har en aktiv utlösare och genererar händelser. Det kan dröja några timmar innan konfigurationen är aktiv i Analytics.
 
@@ -89,9 +89,9 @@ När Analytics tidsstämpel är mycket äldre än det datum då händelsen skapa
 
 I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskampanj. Detta varierar beroende på implementeringen av datainsamlingen, inläsningen på pipeline, den anpassade konfigurationen av den definierade utlösaren och arbetsflödet i Adobe Campaign.
 
-1. Kontrollera om den rörliga processen har körts.
+1. Kontrollera om [!DNL pipelined] processen har körts.
 1. Leta efter fel i pipelined.log som kan orsaka nya försök. Åtgärda eventuella fel.
-1. Kontrollera storleken på kön på statussidan för pipelines. Om köstorleken är stor kan du förbättra JS-prestanda.
+1. Kontrollera köstorleken på statussidan [!DNL pipelined] . Om köstorleken är stor kan du förbättra JS-prestanda.
 1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna på Analytics med färre meddelanden.
 Bilagor
 
