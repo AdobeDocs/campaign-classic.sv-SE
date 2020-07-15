@@ -1,7 +1,7 @@
 ---
-title: Skapa ett nyhetsbrev om Experience Manager
-seo-title: Skapa ett nyhetsbrev om Experience Manager
-description: Skapa ett nyhetsbrev om Experience Manager
+title: Skapa ett Experience Manager-nyhetsbrev
+seo-title: Skapa ett Experience Manager-nyhetsbrev
+description: Skapa ett Experience Manager-nyhetsbrev
 seo-description: null
 page-status-flag: never-activated
 uuid: 75cf4891-06a6-42d2-9b22-b4d93e0dc64a
@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
 
-# Skapa ett nyhetsbrev om Experience Manager{#creating-an-experience-manager-newsletter}
+# Skapa ett Experience Manager-nyhetsbrev{#creating-an-experience-manager-newsletter}
 
-Integreringen kan till exempel användas för att skapa ett nyhetsbrev i Adobe Experience Manager som sedan används i Adobe Campaign som en del av en e-postkampanj.
+Den här integreringen kan till exempel användas för att skapa ett nyhetsbrev i Adobe Experience Manager som sedan används i Adobe Campaign som en del av en e-postkampanj.
 
 Ett mer detaljerat exempel på hur du använder den här integreringen finns i den här [steg-för-steg-guiden](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html).
 
@@ -32,8 +35,8 @@ Ett mer detaljerat exempel på hur du använder den här integreringen finns i d
 
    ![](assets/aem_uc_1.png)
 
-1. Välj **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Master Area > Email campaigns]**.
-1. Klicka på **[!UICONTROL Create]** knappen längst upp till höger på sidan och välj sedan **[!UICONTROL Page]**.
+1. Välj **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Main Area > Email campaigns]**.
+1. Klicka på **[!UICONTROL Create]** knappen i det övre högra hörnet på sidan och markera sedan **[!UICONTROL Page]**.
 
    ![](assets/aem_uc_2.png)
 
@@ -42,7 +45,7 @@ Ett mer detaljerat exempel på hur du använder den här integreringen finns i d
 
    ![](assets/aem_uc_3.png)
 
-1. På **[!UICONTROL Cloud Services]** fliken väljer du **[!UICONTROL Adobe Campaign]** som **[!UICONTROL Cloud service configuration]** och Adobe Campaign-instansen i den andra listrutan.
+1. På **[!UICONTROL Cloud Services]** fliken väljer du **[!UICONTROL Adobe Campaign]** som **[!UICONTROL Cloud service configuration]** och din Adobe Campaign-instans i den andra listrutan.
 
    ![](assets/aem_uc_4.png)
 
@@ -68,7 +71,7 @@ Nyhetsbrevet är nu klart och synkroniserat i Adobe Campaign.
 
 **Från Adobe Campaign:**
 
-1. Klicka på **[!UICONTROL Campaigns]** fliken **[!UICONTROL Deliveries]** och sedan **[!UICONTROL Create]**.
+1. From the **[!UICONTROL Campaigns]** tab, click **[!UICONTROL Deliveries]** then **[!UICONTROL Create]**.
 
    ![](assets/aem_uc_9.png)
 
@@ -83,7 +86,7 @@ Nyhetsbrevet är nu klart och synkroniserat i Adobe Campaign.
 
    ![](assets/aem_uc_11.png)
 
-1. Välj den leverans som tidigare skapats i Adobe Experience Manager och klicka på **[!UICONTROL Ok]**.
+1. Markera den leverans du skapat tidigare i Adobe Experience Manager och klicka på **[!UICONTROL Ok]**.
 1. Klicka på **[!UICONTROL Refresh content]** knappen så snart några ändringar har gjorts i din AEM-leverans.
 
    ![](assets/aem_uc_12.png)
