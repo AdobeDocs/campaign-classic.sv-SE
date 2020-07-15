@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Pipeline, alternativ NmsPipeline_Config {#nmspipeline_config}
 
-När autentiseringen fungerar kan händelsen hämtas och bearbetas med hjälp av en pipeline. Den behandlar bara utlösare som är konfigurerade i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och överförts till pipeline i förväg.
+När autentiseringen fungerar [!DNL pipelined] kan hämta händelser och bearbeta dem. Den behandlar bara utlösare som är konfigurerade i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och överförts till pipeline i förväg.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
 Konfigurationen av utlösarna görs i ett alternativ, under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Alternativets namn är **[!UICONTROL NmsPipeline_Config]**. Datatypen är&quot;lång text&quot; i JSON-format.
@@ -90,6 +90,6 @@ Se till att JSON är giltig med hjälp av den här [webbplatsen](http://jsonlint
 
 * &quot;name&quot; är utlösar-ID. Ett jokertecken (*) fångar upp alla utlösare.
 * &quot;Consumer&quot; är en unik sträng som unikt identifierar nlserver-instansen. Det kan vanligtvis vara själva instansnamnet. För flera miljöer (dev/stage/prod) måste du se till att det är unikt för var och en av dem så att varje instans får en kopia av meddelandet.
-* Pipelined har också stöd för ämnet&quot;alias&quot;.
+* [!DNL Pipelined] har också stöd för avsnittet&quot;alias&quot;.
 
-Starta om pipelines när du har gjort ändringarna.
+Starta om [!DNL pipelined] när du har gjort ändringarna.
