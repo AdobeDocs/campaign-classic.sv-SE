@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Pipeline är ett meddelandesystem på Experience Cloud som använder [Apache Kaf
 
 ### Hur fungerar Pipeline? {#how-pipeline-work}
 
-Processen&quot;rörlig&quot; körs alltid på marknadsföringsservern i Adobe Campaign. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
+Processen [!DNL pipelined] körs alltid på marknadsföringsservern i Adobe Campaign. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
 
 ![](assets/triggers_2.png)
 
-Processen som skickas till Experience Cloud loggas in med en autentiseringstjänst och en privat nyckel skickas. Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser. [!DNL Triggers] hämtas från en REST-webbtjänst med hjälp av en enkel GET-begäran. Svaret är JSON-format. Parametrar för begäran innehåller namnet på utlösaren och en pekare som anger det senaste meddelandet som har hämtats. Den rörliga processen hanterar den automatiskt.
+Processen loggar in på Experience Cloud med hjälp av en autentiseringstjänst och skickar en privat nyckel. [!DNL pipelined] Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser. [!DNL Triggers] hämtas från en REST-webbtjänst med hjälp av en enkel GET-begäran. Svaret är JSON-format. Parametrar för begäran innehåller namnet på utlösaren och en pekare som anger det senaste meddelandet som har hämtats. Processen hanterar den automatiskt [!DNL pipelined] .
 
 ## Integrering med Adobe Experience Cloud Triggers med Adobe Campaign Classic
 
