@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Pipelinesövervakning {#pipeline-monitoring}
 
-Webbtjänsten med status pipelined ger information om statusen för den pipelinerade processen.
+Statuswebbtjänsten ger [!DNL pipelined] information om [!DNL pipelined] processens status.
 
 Den kan nås manuellt via en webbläsare eller automatiskt med ett övervakningsprogram.
 
@@ -50,7 +50,7 @@ Rekommenderade indikatorer för övervakning markeras.
    * next-offsets-flush: tid att vänta till nästa batch, när den är klar.
    * bearbetad-sedan-senaste-flush: antal utlösare som bearbetats i den senaste batchen.
 * routning
-   * utlösare: lista över utlösare som hämtats. Konfigureras i alternativet med rörlig orientering.
+   * utlösare: lista över utlösare som hämtats. Konfigureras i [!DNL pipelined] alternativet.
 * status
    * Average-pointer-flush-time-ms: genomsnittlig bearbetningstid för en grupp utlösare.
    * Average-trigger-processing-time-ms: Genomsnittlig tid för tolkning av utlösardata.
