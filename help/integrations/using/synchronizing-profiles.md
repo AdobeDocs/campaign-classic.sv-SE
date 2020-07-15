@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 0%
@@ -27,23 +27,23 @@ ht-degree: 0%
 
 ACS Connector replikerar data från Campaign v7 till Campaign Standard. Data som tas emot från Campaign v7 kan användas i Campaign Standard för att skapa leveranser. Du kan se hur profiler synkroniseras genom att utföra de åtgärder som listas nedan.
 
-* **Lägg till nya mottagare**: Skapa en ny mottagare i Campaign v7 och bekräfta att en motsvarande profil har replikerats till Campaign Standard. Se [Skapa en ny mottagare](#creating-a-new-recipient).
+* **Lägg till nya mottagare**: Skapa en ny mottagare i Campaign v7 och bekräfta att en motsvarande profil har replikerats till Campaign Standarden. Se [Skapa en ny mottagare](#creating-a-new-recipient).
 * **Uppdatera mottagare**: Redigera en ny mottagare i Campaign v7 och visa motsvarande profil i Campaign Standard för att bekräfta att uppdateringen har replikerats. Se [Redigera en mottagare](#editing-a-recipient).
 * **Bygg ett arbetsflöde i Campaign Standard**: Skapa ett arbetsflöde i Campaign Standard som innehåller en fråga med en eller flera målgrupper som replikerats från Campaign v7. Se [Skapa ett arbetsflöde](#creating-a-workflow).
 * **Skapa en leverans i Campaign Standard**: Följ arbetsflödet för att slutföra leveransen. Se [Skapa en leverans](#creating-a-delivery).
-* **Verifiera avprenumerationslänken**: Använd ett Campaign v7-webbprogram för att kontrollera att mottagarens val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. Alternativet att sluta ta emot tjänsten replikeras till Campaign Standard. Se [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
+* **Verifiera avprenumerationslänken**: Använd ett Campaign v7-webbprogram för att kontrollera att mottagarens val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. Alternativet att sluta ta emot tjänsten replikeras till Campaign Standarden. Se [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
 
 ## Förutsättningar {#prerequisites}
 
-I följande avsnitt beskrivs hur ACS Connector hjälper dig att lägga till och redigera mottagare i Campaign v7 och sedan använda dem i en Campaign Standard-leverans. ACS Connector kräver följande:
+I följande avsnitt beskrivs hur ACS Connector hjälper dig att lägga till och redigera mottagare i Campaign v7 och sedan använda dem i en Campaign Standard. ACS Connector kräver följande:
 
-* Mottagare i Campaign v7 har replikerats till Campaign Standard.
+* Mottagare i Campaign v7 har replikerats till Campaign Standarden.
 * Användarrättigheter för att köra arbetsflöden i både Campaign v7 och Campaign Standard.
 * Användarrättigheter för att skapa och köra en leverans i Campaign Standard.
 
 ## Ändra avprenumerationslänken {#changing-the-unsubscription-link}
 
-När en mottagare klickar på länken för att avbryta prenumerationen i ett e-postmeddelande som skickas av Campaign Standard uppdateras motsvarande profil i Campaign Standard. För att vara säker på att en replikerad profil innehåller en användares val att avbryta prenumerationen på en tjänst måste informationen skickas till Campaign v7 i stället för Campaign Standard. För att kunna utföra ändringen är den avbrutna prenumerationstjänsten kopplad till ett Campaign v7-webbprogram i stället för Campaign Standard.
+När en mottagare klickar på länken för att avbryta prenumerationen i ett e-postmeddelande som skickas av Campaign Standarden uppdateras motsvarande profil i Campaign Standarden. Om du vill vara säker på att en replikerad profil innehåller en användares val att avbryta prenumerationen på en tjänst, måste informationen skickas till Campaign v7 i stället för Campaign Standard. För att kunna utföra ändringen är tjänsten för avprenumeration länkad till ett Campaign v7-webbprogram i stället för Campaign Standard.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ När en mottagare klickar på länken för att avbryta prenumerationen i ett e-p
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Bekräfta att den nya mottagaren har lagts till i Campaign Standard. När du granskar profilen bör du kontrollera att de data du angav i Campaign v7 också är tillgängliga i Campaign Standard. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Bekräfta att den nya mottagaren har lagts till i Campaign Standarden. När du granskar profilen bör du kontrollera att de data du angav i Campaign v7 också är tillgängliga i Campaign Standard. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -63,7 +63,7 @@ När en mottagare klickar på länken för att avbryta prenumerationen i ett e-p
 
 ## Redigera en mottagare {#editing-a-recipient}
 
-Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Campaign v7 blir huvuddatabasen för Campaign Standard när datareplikering används. Att ändra eller ta bort replikerade data i Campaign v7 har samma effekt på motsvarande data i Campaign Standard.
+Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Campaign v7 blir den primära databasen för Campaign Standard när datareplikering används. Att ändra eller ta bort replikerade data i Campaign v7 har samma effekt på motsvarande data i Campaign Standarden.
 
 1. Välj den nya mottagaren i [Skapa en ny mottagare](#creating-a-new-recipient) och redigera mottagarens namn. Välj t.ex. en **[!UICONTROL Salutation]** för mottagaren (t.ex. herr eller fru). Mer information finns i [Redigera en profil](../../platform/using/editing-a-profile.md).
 
@@ -77,11 +77,11 @@ Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Ca
 
 ## Skapa ett arbetsflöde {#creating-a-workflow}
 
-Profiler och tjänster som replikerats från Campaign v7 är tillgängliga för digitala marknadsförare så att de kan utnyttja de omfattande data som finns i Campaign Standard. Instruktionerna nedan visar hur du lägger till en fråga i ett Campaign Standard-arbetsflöde och sedan använder den med den replikerade databasen.
+Profiler och tjänster som replikerats från Campaign v7 är tillgängliga för digitala marknadsförare för att utnyttja Campaign Standardens omfattande data. Instruktionerna nedan visar hur du lägger till en Campaign Standard i ett arbetsflöde och sedan använder den med den replikerade databasen.
 
-Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standard finns i [Arbetsflöden](../../workflow/using/about-workflows.md).
+Mer information och fullständiga anvisningar om arbetsflöden för Campaign Standard finns i [Arbetsflöden](../../workflow/using/about-workflows.md).
 
-1. Gå till Campaign Standard och klicka **[!UICONTROL Marketing Activities]**.
+1. Gå till Campaign Standarden och klicka **[!UICONTROL Marketing Activities]**.
 1. Klicka **[!UICONTROL Create]** uppe till höger.
 1. Klicka på **[!UICONTROL Workflow]**.
 1. Klicka **[!UICONTROL New workflow]** och **[!UICONTROL Next]**.
@@ -103,7 +103,7 @@ Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standa
 
 Digitala marknadsförare kan utnyttja ett Campaign v7-webbprogram för att försäkra sig om att en mottagares val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. När mottagaren klickar på länken för att avbryta prenumerationen replikeras alternativet att sluta ta emot tjänsten från Campaign v7 till Campaign Standard. Mer information finns i [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
 
-Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbetsflöde med den tjänst för avprenumeration som skapades i Campaign v7. Mer information och fullständiga anvisningar om arbetsflöden i Campaign Standard finns i det här [dokumentet](../../workflow/using/about-workflows.md).
+Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbetsflöde med den tjänst för avprenumeration som skapades i Campaign v7. Mer information och fullständiga instruktioner om arbetsflöden för Campaign Standard finns i det här [dokumentet](../../workflow/using/about-workflows.md).
 
 >[!NOTE]
 >
@@ -182,7 +182,7 @@ Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skap
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Gå till Campaign Standard och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
 
