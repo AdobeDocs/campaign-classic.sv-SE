@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6898'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,14 @@ Du kan även läsa [Adobe Campaign Classic Release Notes](../../rn/using/latest-
 Ett nytt avsnitt har lagts till med riktlinjer för övervakning av Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
 Avsnittet Sekretess och samtycke har förbättrats med mer detaljerad information och användbara länkar. [Läs mer](../../platform/using/privacy-and-recommendations.md).
+
+Sekretesshantering på Campaign Classic-sidan har uppdaterats med information om fältet&quot;Reglering&quot; som nu är tillgängligt när du använder API:t för att konfigurera automatisk process för förfrågningar om sekretess. [Läs mer](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+Sidan Sekretesshanteringsöversikt har uppdaterats med information om Thailands lag för skydd av personuppgifter (PDPA) och Brasiliens Lei Geral de Proteção de Dados (LGPD). [Läs mer](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+
+Information har lagts till i delarbetsflödets loggar och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
+
+Bästa tillvägagångssätt har lagts till i **[!UICONTROL Scheduler]** aktivitetsavsnittet. [Läs mer](../../workflow/using/scheduler.md)
 
 ## Juni 2020 {#june-2020}
 
@@ -426,7 +434,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
