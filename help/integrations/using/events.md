@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 Pipeline använder en JavaScript-funktion för att bearbeta varje meddelande. Den här funktionen är användardefinierad.
 
-Den är konfigurerad i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Detta javascript anropas varje gång en händelse tas emot. Den drivs av den rörliga processen.
+Den är konfigurerad i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Detta javascript anropas varje gång en händelse tas emot. Det styrs av [!DNL pipelined] processen.
 
 JS-exempelfilen är cus:triggers.js.
 
 ### JavaScript-funktion {#function-js}
 
-Pipeline Javascript måste börja med en viss funktion.
+Javascript- [!DNL pipelined] filen måste börja med en viss funktion.
 
 Den här funktionen anropas en gång för varje händelse:
 
@@ -51,7 +51,7 @@ Den ska returnera som
 <undefined/>
 ```
 
-Starta om pipelines när du har redigerat JS.
+Starta om [!DNL pipelined] när du har redigerat JS.
 
 ### Utlös dataformat {#trigger-format}
 
@@ -110,7 +110,7 @@ Exempel:
 
 ### Ordning för händelsebearbetning {#order-events}
 
-Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i pipeline bearbetar en egen partition.
+Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL pipelined] bearbetar en egen partition.
 
 &quot;Offset&quot; för den senaste händelsen som hämtats lagras i databasen. Om processen stoppas startar den därför om från det sista meddelandet. Dessa data lagras i det inbyggda schemat xtk:pipelineOffset.
 
@@ -122,8 +122,8 @@ Det finns för närvarande inget sätt att ha olika köer för olika miljöer so
 
 ### Loggning och felhantering {#logging-error-handling}
 
-Loggar som logInfo() dirigeras till den pipelinerade loggen. Fel som logError() skrivs till den pipelinerade loggen och gör att händelsen placeras i en ny försökskö. Kontrollera den rörliga loggen.
-Felmeddelanden provas flera gånger under den tid som anges i alternativen för pipelines.
+Loggar som logInfo() dirigeras till [!DNL pipelined] loggen. Fel som logError() skrivs till [!DNL pipelined] loggen och gör att händelsen placeras i en ny försökskö. Kontrollera den rörliga loggen.
+Felmeddelanden provas flera gånger under den varaktighet som angetts i [!DNL pipelined] alternativen.
 
 För felsökning och övervakning skrivs alla utlösande data in i utlösartabellen. Det finns i datafältet i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
 
