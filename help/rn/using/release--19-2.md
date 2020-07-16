@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 2%
 
 ---
 
 
 # Version 19.2{#release-19-2}
-
-[Uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-1.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasedatan</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Föråldrat</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
-   <td>Bygg validerat av Adobe. Väntar på korrektur av produktionen.<br> </td>
-   <td>Nyare bygge tillgänglig med felkorrigeringar. Uppdatering krävs.<br> </td>
-   <td>Innehåller kända regressioner. Uppdatering är obligatorisk.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
@@ -59,7 +38,7 @@ _7 februari 2020_
 
 _2 december 2019_
 
-**Vad är nytt?**
+**Nyheter?**
 
 <table> 
  <thead> 
@@ -87,7 +66,7 @@ _2 december 2019_
  <tbody> 
   <tr> 
    <td> <p>Nu kan du övervaka körningsstatusen för alla arbetsflöden på instansen med fördefinierade vyer.</p>
-   <p>Mer information finns i den <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">detaljerade dokumentationen</a>.</p></td> 
+   <p>Se den <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">detaljerade dokumentationen</a> för mer information.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -117,7 +96,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
+<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Se den <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a> för mer information. </p> </td> 
   </tr> 
  </tbody> 
 </table>
