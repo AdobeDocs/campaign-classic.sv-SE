@@ -13,36 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 0%
+source-wordcount: '1692'
+ht-degree: 1%
 
 ---
 
 
 # Senaste versionen{#latest-release}
-
-[Uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--20-1.md) | [Föråldrade funktioner](../../rn/using/deprecated-features.md)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasedatan</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Föråldrat</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
-   <td>Bygg validerat av Adobe. Väntar på korrektur av produktionen.<br> </td>
-   <td>Nyare bygge tillgänglig med felkorrigeringar. Uppdatering krävs.<br> </td>
-   <td>Innehåller kända regressioner. Uppdatering är obligatorisk.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ![](assets/do-not-localize/cp-icon.png) **Den nya Kontrollpanelen i juni** med övervakning av aktiva profiler, granskning av deldomänsleveranser och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
@@ -50,7 +29,7 @@ Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/usi
 
 _8 juni 2020_
 
-**Vad är nytt?**
+**Nyheter?**
 
 <table> 
  <thead> 
@@ -76,7 +55,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>Nu kan du ansluta din Campaign-instans till din externa Azure Synapse-databas. Anslutningen hanteras via ett nytt externt konto.</p>
-    <p>Azure Synapse är bara tillgängligt för hybridmiljöer och lokala miljöer. Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">detaljerade dokumentationen</a>.</p>
+    <p>Azure Synapse är bara tillgängligt för hybridmiljöer och lokala miljöer. Se den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">detaljerade dokumentationen</a> för mer information.</p>
    </td> 
   </tr> 
  </tbody> 
