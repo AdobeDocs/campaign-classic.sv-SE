@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
 workflow-type: tm+mt
-source-wordcount: '6898'
-ht-degree: 0%
+source-wordcount: '6939'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,8 @@ På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per
 Du kan även läsa [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) för mer information.
 
 ## Juli 2020 {#july-2020}
+
+Versionsinformationen [](../../rn/using/latest-release.md) har ordnats om: en [översiktssida](../../rn/using/latest-release.md) med information om byggstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [Gold Standard-versioner](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
 
 Ett nytt avsnitt har lagts till med riktlinjer för övervakning av Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
@@ -47,7 +49,7 @@ Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inbegriper förty
 
 Användningsexempel har lagts till om hur du [krypterar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypterar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) data med arbetsflödena på Kontrollpanelen och Campaign.
 
-Både&quot;vitlista&quot; och&quot;svartlista&quot; har tagits bort från Adobe Campaign dokumentation. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod, men kommer att ersättas i kommande Campaign-versioner med&quot;blockeringslista&quot; och&quot;tillåtelselista&quot;.
+Båda termerna ”vitlistad” och ”svartlistad” har tagits bort från dokumentationen om Adobe Campaign. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod men ersätts i kommande versioner av Campaign med ”blockeringslista” och ”tillåtelselista”.
 
 Integreringssidan Experience Cloud Triggers och Adobe Campaign Classic har flyttats [här](../../integrations/using/about-triggers.md).
 
@@ -225,7 +227,7 @@ Säkra SMS-meddelanden (TLS) - [Läs mer](https://helpx.adobe.com/campaign/kb/sm
 
 Den förbättrade MTA-dokumentationen för Adobe Campaign är nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i läget&quot;Starta så snart som möjligt&quot; i en kampanj. [Läs mer](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+Ett nytt avsnitt har lagts till om hur du felsöker ett arbetsflöde som finns i läget&quot;Starta så snart som möjligt&quot; i en kampanj. [Read more](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 De nya alternativen NmsOperation_DeliveryPreparationWindow och WdbcKillSessionPolicy har lagts till i listan över kampanjalternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
@@ -352,7 +354,7 @@ Följande tekniker har uppdaterats: [SMS-anslutningsprotokoll och inställningar
 
 Avsnittet Tekniska arbetsflöden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
-Konfigurationsproceduren för Campaign-domännamnet har förbättrats och uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)
+Konfigurationsproceduren för Campaign-domännamnet har förbättrats och uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html)
 
 Migreringsproceduren för Android-appar från Google Cloud Messaging (GCM) till Firebase Cloud Messaging (FCM) har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html)
 
@@ -434,7 +436,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
