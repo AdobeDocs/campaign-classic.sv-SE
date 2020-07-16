@@ -13,54 +13,33 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 0%
+source-wordcount: '1330'
+ht-degree: 1%
 
 ---
 
 
 # Version 20.1{#release-20-1}
 
-[Uppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Kontrollpanelsversioner](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md) | [Tidigare versioner](../../rn/using/release--19-2.md) | [Föråldrade funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Allmän tillgänglighet</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasedatan</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Inte längre tillgänglig</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Föråldrat</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Senaste stabila bygge tillgänglig. Bygg validerat i produktion.<br> </td>
-   <td>Bygg validerat av Adobe. Väntar på korrektur av produktionen.<br> </td>
-   <td>Nyare bygge tillgänglig med felkorrigeringar. Uppdatering krävs.<br> </td>
-   <td>Innehåller kända regressioner. Uppdatering är obligatorisk.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 - build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 - build 9124{#release-20-1-3-build-9124}
 
 _6 maj 2020_
 
 * Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 - build 9123{#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
 * Korrigerade ett problem som förhindrade versionshantering på Red Hat 7-servrar. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1 - build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1 - build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
-**Vad är nytt?**
+**Nyheter?**
 
 <table> 
  <thead> 
@@ -86,7 +65,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Hadoop FDA Connector har förbättrats med stöd för både Hadoop 3.0 och Cloudera.</p>
-    <p>Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">detaljerade dokumentationen</a>.</p>
+    <p>Se den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">detaljerade dokumentationen</a> för mer information.</p>
    </td> 
   </tr> 
  </tbody> 
