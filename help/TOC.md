@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,10 @@ ht-degree: 0%
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
-+ Versionsinformation {#release-notes}
++ Release Notes {#release-notes}
+   + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
+   + [Gold Standard](rn/using/gold-standard.md)
    + Tidigare versioner {#previous-releases}
       + [Version 20.1](rn/using/release--20-1.md)
       + [Version 19.2](rn/using/release--19-2.md)
@@ -26,14 +28,16 @@ ht-degree: 0%
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
-   + [Föråldrade funktioner](rn/using/deprecated-features.md)
+   + Föråldrade funktioner och kompatibilitet {#deprecated-compatibility}
+      + [Föråldrade funktioner](rn/using/deprecated-features.md)
+      + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}
    + Från Adobe Campaign {#starting-with-adobe-campaign}
       + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
       + [Startar Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign arbetsyta](platform/using/adobe-campaign-workspace.md)
-      + Vanliga frågor {#faq}
+      + Vanliga frågor och svar {#faq}
          + [Vanliga frågor](platform/using/common-questions.md)
          + [Viktiga begrepp](platform/using/faq-key-concepts.md)
          + [Målgrupper](platform/using/faq-audiences.md)
@@ -605,7 +609,7 @@ ht-degree: 0%
       + [Distribuera en instans](installation/using/deploying-an-instance.md)
       + [Installera Campaign Classic-standardpaket](installation/using/installing-campaign-standard-packages.md)
    + Ytterligare konfigurationer {#additional-configurations}
-      + [Konfigurerar Campaign-server](installation/using/configuring-campaign-server.md)
+      + [Konfigurera en Campaign-server](installation/using/configuring-campaign-server.md)
       + [Ansluta via LDAP](installation/using/connecting-through-ldap.md)
       + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
       + [E-postarkivering](installation/using/email-archiving.md)
@@ -639,7 +643,7 @@ ht-degree: 0%
       + [Återställning](production/using/restoration.md)
       + [Duplicera miljöer](production/using/duplicating-environments.md)
       + [Arbetsflöde för databasrensning](production/using/database-cleanup-workflow.md)
-   + Uppdaterar Adobe Campaign {#updating-adobe-campaign}
+   + Uppdatera Adobe Campaign {#updating-adobe-campaign}
       + [Introduktion](production/using/introduction.md)
       + [Uppgraderar](production/using/upgrading.md)
       + [Växla till Unicode](production/using/switching-to-unicode.md)
