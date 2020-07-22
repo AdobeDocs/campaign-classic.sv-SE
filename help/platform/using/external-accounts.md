@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Externa konton används av tekniska processer som tekniska arbetsflöden eller k
 
    ![](assets/ext_account_1.png)
 
-1. Klicka på **[!UICONTROL New]** knappen.
+1. Klicka på knappen **[!UICONTROL New]**. 
 
    ![](assets/ext_account_2.png)
 
@@ -111,9 +111,9 @@ Följande kanaler kan konfigureras:
 
 * [E-post](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Mobil (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [Telefon](../../delivery/using/other-channels.md)
+* [Telefon](../../delivery/using/communication-channels.md#other-channels)
 * [Direktreklam](../../delivery/using/about-direct-mail-channel.md)
-* [byrå](../../delivery/using/other-channels.md)
+* [byrå](../../delivery/using/communication-channels.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS-kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
@@ -121,7 +121,7 @@ Följande kanaler kan konfigureras:
 
 ## Externt FTP-konto {#ftp-external-account}
 
-Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Mer information finns på den här [sidan](../../workflow/using/file-transfer.md).
+Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska användas för att upprätta anslutningen till FTP-servern i det här externa kontot
 
@@ -243,7 +243,7 @@ I **[!UICONTROL Default]** fältet kan du ange ett standardfrågeband som ska an
 
 I **[!UICONTROL Users]** fältet kan du ange ett frågeband för varje användare. Du kan lägga till så många nyckel/värde-par du behöver, t.ex. priority=1;workload=high. Om användaren inte har något tilldelat frågeband används **[!UICONTROL Default]** fältet.
 
-Mer information om **[!UICONTROL Query banding]** finns i [Teradata-dokumentationen](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 ## Analytics-konto för webben {#web-analytics-external-account}
 
@@ -251,13 +251,13 @@ Med det **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** extern
 
 ![](assets/ext_account_10.png)
 
-För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Mer information finns på den här [sidan](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
+För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. For more on this, refer to this [page](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
 
 ## Externt konto för Facebook-anslutning {#facebook-connect-external-account}
 
 Med det **[!UICONTROL Facebook Connect]** externa kontot kan du visa anpassat innehåll i dina Facebook-program, vilket gör det enklare att hitta potentiella kunder via det här sociala nätverket.
 
-För varje Facebook-program måste du skapa ett externt konto av **[!UICONTROL Facebook Connect]** typen. Mer information finns på [sidan](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+För varje Facebook-program måste du skapa ett externt konto av **[!UICONTROL Facebook Connect]** typen. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
@@ -343,7 +343,7 @@ Mer information om den här konfigurationen finns på den här [sidan](../../int
 
 ## Externt SFTP-konto {#sftp-external-account}
 
-Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Mer information finns på den här [sidan](../../workflow/using/file-transfer.md).
+Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_4.png)
 
@@ -385,7 +385,7 @@ For more on this, refer to this [section](../../integrations/using/about-adobe-e
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen till Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. Mer information finns på den här [sidan](../../workflow/using/file-transfer.md).
+Kopplingen till Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_3.png)
 
