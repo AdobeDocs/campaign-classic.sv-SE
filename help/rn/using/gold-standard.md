@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ff58cee4b189c51fbff20880ac800d91f1b0147
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -35,7 +35,7 @@ På den här sidan visas Gold Standard-utgåvor.
 
 Mer information om uppgradering av Gold Standard finns i den här [artikeln](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/green_2.png) Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/blue_2.png) Gold Standard 10{#gs-10}
 
 _7 juli 2020_
 
@@ -88,7 +88,7 @@ Version 9032@3a9dc9c innehåller följande korrigeringar:
 * Korrigerade en regression som fick rensningsarbetsflödet att krascha.
 * Korrigerade en mindre regression i rensningsarbetsflödets loggar.
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard 6 release{#gs-6}
+## ![](assets/do-not-localize/green_2.png) Gold Standard 6 release{#gs-6}
 
 _9 mars 2020_
 
