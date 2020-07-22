@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 1%
+source-wordcount: '1987'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,29 @@ ht-degree: 1%
 
 ![](assets/do-not-localize/cp-icon.png) **Den nya Kontrollpanelen i juni** med övervakning av aktiva profiler, granskning av deldomänsleveranser och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 - build 9180 {#release-20-2-2-build-9180}
+
+_22 juli 2020_
+
+* Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades eller när en gammal marknadsföringsinstans med ett nyligen använt MID användes. (NEO-26411)
+* Korrigerade ett problem som medförde att osignerade länkar från anpassade domäner blockerades när de borde tillåtas. (NEO-25210)
+* Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook. (NEO-25688)
+* Korrigerade ett problem som ledde till att sidans URL:er speglades och definierades felaktigt i e-postleveranser. (NEO-26084)
+* Ett problem med hantering av kodnings-URL i tjänsten mot nätfiske har korrigerats. (NEO-25283)
+* Korrigerade ett problem som förhindrade spårning av URL-adresser som använder fragment i personaliseringsparametrar (ankartaggar med nummertecken) från att fungera. (NEO-25774)
+* Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277) Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
+* Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde. (NEO-25194)
+* Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-2099)
+* Korrigerade ett problem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
+* Korrigerade ett kraschproblem i distributionsguiden.
+* Korrigerade ett problem som kunde förhindra att arbetsflödet för meddelanden om erbjudanden fungerar korrekt efter en efteruppgradering.
+* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903)
+* Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre användes (iOS-meddelanden).
+* Korrigerade ett problem som blockerade leveransförberedelser efter efteruppgradering.
+* Efter växlingen till den [nya sekvens-ID-mekanismen](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
+* Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987, NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
