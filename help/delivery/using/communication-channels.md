@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 # Kommunikationskanaler{#communication-channels}
 
-Med Adobe Campaign kan ni skicka kampanjer i flera kanaler, inklusive e-post, SMS, LINE-meddelanden, push-meddelanden och direktreklam, och mäta hur effektiva de är med hjälp av olika dedikerade [rapporter](../../reporting/using/delivery-reports.md). Dessa meddelanden är utformade och skickas genom leveranser och kan anpassas för varje mottagare.
+Med Adobe Campaign kan ni skicka flerkanalskampanjer, inklusive e-post, SMS, LINE-meddelanden, push-meddelanden och direktreklam, och mäta hur effektiva de är med hjälp av olika dedikerade [rapporter](../../reporting/using/delivery-reports.md). Dessa meddelanden är utformade och skickas genom leveranser och kan anpassas för varje mottagare.
 
 De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter. Den huvudsakliga funktionella åtkomstpunkten är leveransguiden. Den här åtkomstpunkten leder till flera funktioner som täcks av Adobe Campaign.
 
 >[!NOTE]
 >
->Adobe Campaign har en uppsättning verktyg för att övervaka er leveransförmåga och optimera e-postutskick. Mer information finns i Komma igång med [slutprodukten](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och i Hantering [av](../../delivery/using/about-deliverability.md)slutprodukter.
+>Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Mer information finns i Komma igång med [slutprodukten](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och i Hantering [av](../../delivery/using/about-deliverability.md)slutprodukter.
 
 Leveransprocessen kan automatiseras genom att man förbereder en leverans och/eller skickar den i ett arbetsflöde. Mer information om aktiviteter av leveranstyp i arbetsflöden finns i [det här avsnittet](../../workflow/using/about-action-activities.md).
 
@@ -42,7 +42,7 @@ Adobe Campaign erbjuder följande leveranskanaler:
 1. **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserade SMS- eller LINE-meddelanden till målpopulationen. Se [SMS-kanal](../../delivery/using/sms-channel.md).
 1. **Mobil programkanal**: mobilappsleveranser gör att du kan skicka meddelanden till iOS- och Android-system. Se kapitlet om [mobilappskanalen](../../delivery/using/about-mobile-app-channel.md) .
 
-   Andra kanaler beskrivs på [den här sidan](../../delivery/using/other-channels.md).
+   Andra kanaler beskrivs på [den här sidan](../../delivery/using/communication-channels.md#other-channels).
 
    >[!NOTE]
    >
@@ -59,12 +59,12 @@ Externa konton konfigureras via **[!UICONTROL Administration > Platform > Extern
 
 ## E-postleveranser {#email-deliveries}
 
-E- [postkanalen](../../delivery/using/about-email-channel.md) är en av huvudkanalerna i Adobe Campaign, och du kan schemalägga och skicka personaliserade e-postmeddelanden till specifika mål.
+E- [postkanalen](../../delivery/using/about-email-channel.md) är en av huvudkanalerna i Adobe Campaign, vilket gör att du kan schemalägga och skicka personaliserade e-postmeddelanden till specifika mål.
 
 Du kan skicka olika typer av e-postmeddelanden:
 
 * E-post för enstaka sändning: e-postmeddelanden som du kan skicka en gång till ett definierat mål. De används vanligtvis för att marknadsföra ett visst innehåll som bara ska förberedas och skickas en gång (nyhetsbrev, e-postreklam osv.).
-* Återkommande e-postmeddelanden: i en kampanj skicka samma e-postmeddelande regelbundet och sammanställa varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. Mer information finns i [Återkommande leveranser](../../workflow/using/recurring-delivery.md).
+* Återkommande e-postmeddelanden: i en kampanj skicka samma e-postmeddelande regelbundet och sammanställa varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. For more on this, refer to [Recurring deliveries](../../workflow/using/recurring-delivery.md).
 * Transactional emails: enhetliga e-postmeddelanden som triggas utifrån kundernas beteende. Se [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 
 Mer information om leveransanvändning och rekommendationer finns i Bästa praxis för Campaign [Delivery](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
@@ -92,4 +92,14 @@ Med Adobe Campaign kan ni skicka personaliserade och segmenterade [push-meddelan
 
 [Direktreklam](../../delivery/using/about-direct-mail-channel.md) är en offlinekanal som gör att du kan anpassa och generera den fil som direktreklamleverantörer behöver. Det ger er möjlighet att blanda online- och offlinekanaler i era kundresor.
 
-Med onlinekanaler kan du skapa meddelanden (e-post, SMS, mobilappsleverans osv.) och skicka dem till er målgrupp direkt från Adobe Campaign. Med offlinekanaler är det annorlunda. När du förbereder en direktutskick genererar Adobe Campaign en fil som innehåller alla målprofiler och den valda kontaktinformationen (till exempel postadress). Du kan sedan skicka den här filen till din direktreklamleverantör som tar hand om själva sändningen.
+Med onlinekanaler kan du skapa meddelanden (e-post, SMS, mobilappsleverans osv.) och skicka dem till er målgrupp direkt från Adobe Campaign. Med offlinekanaler är det annorlunda. När du förbereder en direktutskick genererar Adobe Campaign en fil med alla målprofiler och den valda kontaktinformationen (till exempel postadress). Du kan sedan skicka den här filen till din direktreklamleverantör som tar hand om själva sändningen.
+
+## Andra kanaler {#other-channels}
+
+Adobe Campaign erbjuder mallar för utskick via telefon eller byrå som används för att skapa externa leveranser. Om du använder dessa kanaler måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct-postkanalen](../../delivery/using/about-direct-mail-channel.md).
+
+För leveranser av typen Annan används dessutom en specifik teknisk mall som inte utför någon process: På så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign-plattformen.
+
+Den här kanalen har ingen specifik mekanism. Det är en allmän kanal som har ett eget alternativ för extern kontodirigering, leveransmalltyp och kampanjarbetsflödesaktivitet, precis som alla andra kommunikationskanaler som finns i Adobe Campaign.
+
+Den här kanalen är avsedd endast för beskrivande syften, till exempel för att definiera leveranser för vilka du vill hålla reda på målet för en kampanj som har utförts i ett annat verktyg än Adobe Campaign.
