@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6963'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per
 Du kan även läsa [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) för mer information.
 
 ## Juli 2020 {#july-2020}
+
+Ett användningsexempel om hur du automatiskt uppdaterar en lista med en stegvis fråga har lagts till i arbetsflödets användningsfall. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
 
 Versionsinformationen [](../../rn/using/latest-release.md) har ordnats om: en [översiktssida](../../rn/using/latest-release.md) med information om byggstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [Gold Standard-versioner](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
 
@@ -436,7 +438,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
