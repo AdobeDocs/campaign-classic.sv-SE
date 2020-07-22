@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 0%
       + [Skapa direktreklam](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definiera innehållet i direktreklam](delivery/using/defining-the-direct-mail-content.md)
       + [Validerar](delivery/using/validating.md)
-      + [Andra kanaler](delivery/using/other-channels.md)
    + Använda leveransmallar {#using-delivery-templates}
       + [Om mallar](delivery/using/about-templates.md)
       + [Skapa en leveransmall](delivery/using/creating-a-delivery-template.md)
@@ -426,6 +425,7 @@ ht-degree: 0%
          + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
          + [Förbättra data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
+         + [Kvartalslistuppdatering med inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Utforma frågor {#designing-queries}
          + [Frågar mottagartabellen](workflow/using/querying-recipient-table.md)
          + [Frågar leveransinformation](workflow/using/querying-delivery-information.md)
