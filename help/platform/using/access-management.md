@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 752318fa4e5b330965bef0906aa0991673e8bd68
+source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2924'
 ht-degree: 0%
 
 ---
@@ -347,7 +347,7 @@ Dessa rättigheter är följande:
 
 Standardgrupper och namngivna rättigheter ger operatorer åtkomst till vissa mappar i navigeringshierarkin och ger behörighet att läsa, skriva och ta bort.
 
-Matris med åtkomsträttigheter för Adobe Campaign finns [här](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf).
+Matris med åtkomsträttigheter för Adobe Campaign finns [här](/help/platform/using/assets/access-rights-matrix.pdf).
 
 [![image](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
