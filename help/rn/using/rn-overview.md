@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18035a68b0ebfee4a8165c49646e408a85371ae5
+source-git-commit: d4a170f22108b38ebe8a451feea6210fe5aa482f
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Från och med Campaign Classic 19.2 associeras en status med varje bygge. Du hit
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** - senaste stabila versionen finns tillgänglig. Bygg validerat i produktion.
 
 Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/gold-standard.md)
+
+![](assets/do-not-localize/limited.png) **Begränsad tillgänglighet** - Bygg för närvarande i produktionsvalidering. Endast on demand-distribution.
 
 ![](assets/do-not-localize/blue3.png) **Releasedatum** - bygge validerat av Adobe. Väntar på korrektur av produktionen.
 
