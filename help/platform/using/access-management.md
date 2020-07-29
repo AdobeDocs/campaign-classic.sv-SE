@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -241,55 +241,63 @@ Så här skapar du en ny operatorgrupp:
 
 Standardoperatorgrupperna är:
 
-1. Leveransoperatörer
+1. **[!UICONTROL Administrator]**
+
+   Operatorerna i den här gruppen har fullständig åtkomst till instansen. Administratörer är användare som har tillgång till de flesta tekniska delarna av gränssnittet. De har rollen **[!UICONTROL Administration]** och ser till att plattformen är konfigurerad.
+
+   Den här gruppen innehåller följande namngivna rättigheter:
+
+   * **[!UICONTROL ADMINISTRATION]**: rätt att köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
+
+1. **[!UICONTROL Delivery operators]**
 
    Operatörerna i den här gruppen ansvarar för hanteringen av leveranser: de ger tillgång till de viktigaste resurser som krävs för att skapa och förbereda leveranser (kampanjtyper, leveransmappningar, standardmallar, personaliseringsblock osv.).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
-   * FÖRBEREDANDE LEVERANSER: rätt att skapa, redigera och starta leveransanalysen,
-   * STARTA LEVERANSER: rätt att godkänna tidigare analyserade leveranser.
+   * **[!UICONTROL PREPARE DELIVERIES]**: rätt att skapa, redigera och starta leveransanalysen,
+   * **[!UICONTROL START DELIVERIES]**: rätt att godkänna tidigare analyserade leveranser.
 
-1. Kampanjansvariga
+1. **[!UICONTROL Campaign managers]**
 
-   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: gör att du kan komma åt objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.).
+   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: gör att du kan komma åt objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (frivillig modul Adobe Campaign).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
-   * INFOGA MAPPAR: rätt att lägga in mappar i Adobe Campaign (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
-   * ARBETSFLÖDE: rätt att använda arbetsflöden.
+   * **[!UICONTROL INSERT FOLDERS]**: rätt att lägga in mappar i Adobe Campaign (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
+   * **[!UICONTROL WORKFLOW]**: rätt att använda arbetsflöden.
 
    >[!NOTE]
    >
    >Den här gruppen tillåter inte att operatorer påbörjar leveranser.
 
-1. Innehållsmedarbetare
+1. **[!UICONTROL Content contributors]**
 
-   Operatorerna i den här gruppen har åtkomst till innehållsmapparna inom ramen för **innehållshanteringen** (valfri modul i Adobe Campaign). Den här gruppen ger inte några ytterligare rättigheter.
+   Operatorerna i den här gruppen har åtkomst till innehållsmapparna inom ramen för **[!UICONTROL Content management]** (valfri modul i Adobe Campaign). Den här gruppen ger inte några ytterligare rättigheter.
 
-1. Åtkomst till rapporter
+1. **[!UICONTROL Access to reports]**
 
    Den här gruppen är reserverad för externa operatorer för att få åtkomst till leveransrapporter via webbåtkomst.
 
-1. Arbetsflödeskörning
+1. **[!UICONTROL Workflow execution]**
 
    Med den här gruppen kan ni tilldela operatörer rätten att hantera arbetsflöden som inte har med kampanjer att göra.
 
-1. Arbetsflödesansvariga
+1. **[!UICONTROL Workflow supervisors]**
 
    Operatörerna i den här gruppen får ett e-postmeddelande om det uppstår varningar om kampanjarbetsflöden.
 
 1. Lokal/central hantering
 
-   Med de här grupperna kan du använda **Distributed Marketing** (modulen Adobe Campaign som är valfri).
+   Med de här grupperna kan du använda **[!UICONTROL Distributed marketing]** (modulen Adobe Campaign (valfritt).
 
-1. Erbjudandeansvariga
+1. **[!UICONTROL Offer managers]**
 
    Operatorerna i den här gruppen kan skapa och underhålla erbjudanden. Mer information finns på den här [sidan](../../interaction/using/operator-profiles.md).
 Den här gruppen innehåller följande namngivna rättigheter:
 
-   * INFOGA MAPPAR: Rätt att lägga in mappar i Adobe Campaign (förutsatt att du har redigeringsbehörighet för de berörda grenarna).
-   * REDIGERA MAPPAR: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
+   * **[!UICONTROL INSERT FOLDERS]**: Rätt att lägga in mappar i Adobe Campaign (förutsatt att du har redigeringsbehörighet för de berörda grenarna).
+   * **[!UICONTROL EDIT FOLDERS]**: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
 
 ## Namngivna rättigheter {#named-rights}
 
