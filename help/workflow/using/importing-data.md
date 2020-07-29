@@ -1,6 +1,6 @@
 ---
 title: Importera data
-description: Läs om hur du importerar data i Adobe Campaign Classic
+description: Lär dig hur du importerar data i Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: c8cf2bf1-f7a5-4de4-9e53-a961c9e5beca
 contentOwner: sauviat
@@ -13,15 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
 
 
 # Importera data{#importing-data}
+
+>[!CAUTION]
+>
+>Tänk på begränsningarna för SFTP-lagring, DB-lagring och aktiv profil enligt ditt Adobe Campaign-kontrakt när du använder den här funktionen.
 
 ## Hur man samlar in data {#how-to-collect-data}
 
@@ -63,7 +67,7 @@ Så här kan du göra:
    >
    >Kontrollpanelen är tillgänglig för alla kunder som har AWS som värd (med undantag för kunder som har sina marknadsföringsinstanser på plats).
 
-1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du Adobes kundtjänst för att få de nödvändiga verktygen installerade på servern.
+1. Om du har installerat Adobe Campaign på Adobe ska du kontakta Adobe kundtjänst för att få de verktyg som behövs installerade på servern.
 1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
 
 Du kan sedan använda de förbehandlingskommandon du vill i dina arbetsflöden:
@@ -240,7 +244,7 @@ I det här exemplet visas hur du förinställer ett arbetsflöde som kan återan
 
    * I **[!UICONTROL Name of the file to load]** avsnittet markerar du **[!UICONTROL Upload a file from the local machine]** och lämnar fältet tomt. Varje gång ett nytt arbetsflöde skapas från den här mallen kan du här ange vilken fil du vill ha, så länge den motsvarar den definierade strukturen.
 
-      Du kan använda något av alternativen, men du måste ändra mallen därefter. Om du till exempel väljer **[!UICONTROL Specified in the transition]** kan du lägga till en **[!UICONTROL File Transfer]** aktivitet innan du hämtar filen som ska importeras från en FTP-/SFTP-server. Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobes kunddataplattform i realtid. Mer information finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+      Du kan använda något av alternativen, men du måste ändra mallen därefter. Om du till exempel väljer **[!UICONTROL Specified in the transition]** kan du lägga till en **[!UICONTROL File Transfer]** aktivitet innan du hämtar filen som ska importeras från en FTP-/SFTP-server. Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. For more on this, refer to this [documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
       ![](assets/import_template_example1.png)
 
