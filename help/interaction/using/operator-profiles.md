@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
@@ -24,10 +27,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Det finns två typer av operatorer som använder Interaction: erbjuder chefer och leveransansvariga. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
 
-* **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden
+* **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]** - eller **[!UICONTROL Offer Managers)** -operatorgruppen för att arbetsflödet ska kunna köras.
 * **[!UICONTROL Delivery manager]** : godkänner och använder erbjudanden
 
-Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Mer information finns i [det här avsnittet](../../platform/using/access-management.md#creating-an-operator). Rättigheterna konfigureras när operatorn skapas.
+Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Se [det här avsnittet](../../platform/using/access-management.md#creating-an-operator) för mer information om detta. Rättigheterna konfigureras när operatorn skapas.
 
 ## Erbjudandehanterare {#offer-manager}
 
