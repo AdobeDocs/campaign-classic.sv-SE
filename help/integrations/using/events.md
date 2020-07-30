@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -161,7 +161,7 @@ Detta exempel på JS-kod sparar utlösaren i databasen.
 
 ```
 function processPipelineMessage(xmlTrigger)
- {```
+ {
  (…)
  var event = 
  <pipelineEvent
@@ -209,7 +209,7 @@ Här följer ett exempel på schemakod för den här tabellen:
 | shopper_id | Sträng 32 | shopper_id | Köparens interna identifierare. Anges av avstämningsarbetsflödet. Om värdet är noll betyder det att kunden är okänd i Campaign. |
 | shopper_key | Lång | shopper_key | Bugarens externa identifierare som hämtats av Analytics. |
 | skapad | Datetime | Skapad | Den tid då händelsen skapades i Campaign. |
-| lastModified | Datetime | Senast ändrad | Senaste gången händelsen ändrades i Adobe. |
+| lastModified | Datetime | Senast ändrad | Den senaste gången händelsen ändrades i Adobe. |
 | timeGMT | Datetime | Tidsstämpel | Den tidpunkt då händelsen genererades i Analytics. |
 
 ### Visa händelserna {#display-events}
