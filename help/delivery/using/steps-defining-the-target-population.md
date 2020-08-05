@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -29,25 +29,23 @@ ht-degree: 0%
 
 För varje leverans kan du definiera flera typer av målpopulationer. Avsnittet nedan innehåller mer information om hur du väljer:
 
-* **Leveransens** huvudmottagare. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
-* **Mottagarna av korrekturmeddelanden** för att skapa en valideringscykel. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+* Leveransens huvudmottagare. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* Mottagarna av korrekturmeddelanden för att ställa in en valideringscykel. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-Dessutom kan du definiera [dirigerade adresser](../../delivery/using/about-seed-addresses.md)och [kontrollgrupper](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group). om leveransen ingår i en marknadsföringskampanj.
+Om leveransen ingår i en marknadsföringskampanj kan du även definiera [dirigeringsadresser](../../delivery/using/about-seed-addresses.md)och [kontrollgrupper](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
 ## Välja huvudmottagare för leveransen {#selecting-the-main-target}
 
-I de flesta fall extraheras huvudmålet från Campaign-databasen (standardläge).
+I de flesta fall extraheras huvudmålet från Adobe Campaign-databasen (standardläge). Mottagarna kan dock också lagras i en extern fil. Läs mer i [det här avsnittet](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-Mottagarna kan också lagras i en extern fil. Konfigurationen av den här typen av leverans visas i [Välja externa mottagare](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Följ stegen nedan för att välja mottagare av en leverans:
 
-Så här väljer du mottagare av leveransen som skapas:
-
-1. Klicka på **[!UICONTROL To]** länken.
-1. Om mottagarna lagras i databasen markerar du det första alternativet.
+1. Välj **[!UICONTROL To]** i leveransredigeraren.
+1. Om mottagarna lagras i databasen väljer du det första alternativet.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Välj målmappning i **[!UICONTROL Target mapping]** listrutan. Standardmålmappningen för Adobe Campaign är **[!UICONTROL Recipients]**.
+1. Välj målmappning i **[!UICONTROL Target mapping]** listrutan. Adobe Campaign standardmålmappning baseras **[!UICONTROL Recipients]** på **nms:mottagarschema** .
 
    Andra målmappningar är tillgängliga, och vissa kan vara relaterade till din specifika konfiguration. Mer information om målmappningar finns i [Välja målmappning](../../delivery/using/selecting-a-target-mapping.md).
 
@@ -114,7 +112,7 @@ Så här gör du:
 
 1. När du importerar mottagarna klickar du på **[!UICONTROL File format definition...]** länken för att markera och konfigurera den externa filen.
 
-   Mer information om import av data finns i [det här avsnittet](../../platform/using/importing-data.md#step-2---source-file-selection).
+   For more information on data import, refer to [this section](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Klicka **[!UICONTROL Finish]** och konfigurera leveransen som standardleverans.
 
@@ -157,7 +155,7 @@ Följande alternativ är tillgängliga:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.v.s. mottagare vars e-postadresser finns i en blockeringslista (&#39;opt out&#39;). Detta alternativ måste förbli valt för att man ska kunna följa e-handelns yrkesmässiga etik och lagstiftningen om e-handel.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.v.s. mottagare vars e-postadresser finns på blockeringslista (&#39;opt out&#39;). Detta alternativ måste förbli valt för att man ska kunna följa e-handelns yrkesmässiga etik och lagstiftningen om e-handel.
 * **[!UICONTROL Exclude quarantined recipients]**. Med det här alternativet kan du undanta profiler med en adress som inte svarar från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat.
 
    >[!NOTE]
