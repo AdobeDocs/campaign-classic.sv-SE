@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4361'
 ht-degree: 3%
 
 ---
 
 
 # Bästa praxis {#delivery-best-practices}
+
+Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign.
 
 ## Optimera leveransen {#optimize-delivery}
 
@@ -102,7 +104,7 @@ När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du h
 
 **Tips**:  För att undvika konfigurationsfel i Campaign Standarden rekommenderar vi att du duplicerar en inbyggd mall och ändrar dess egenskaper i stället för att skapa en ny mall.
 
-**Konfigurera adresser**
+### Konfigurera adresser
 
 * Avsändarens adress är obligatorisk för att tillåta att ett e-postmeddelande skickas.
 
@@ -126,7 +128,7 @@ Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
 1. I **[!UICONTROL Reply address text]** fälten används avsändarens adress som standard för svar. Adobe rekommenderar dock att man använder en befintlig riktig adress som till exempel kundtjänst för ert varumärke. Om en mottagare skickar ett svar kan kundtjänst hantera det.
 
-**Konfigurera en kontrollgrupp**
+### Konfigurera en kontrollgrupp
 
 När leveransen har skickats kan du jämföra beteendet hos de uteslutna mottagarna med mottagarna som tog emot leveransen. Sedan kan ni mäta effektiviteten i era kampanjer. Läs mer om kontrollgrupper i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -134,7 +136,7 @@ Om du vill konfigurera en kontrollgrupp klickar du på **[!UICONTROL To]** länk
 
 ![](assets/d_best_practices_control_group.png)
 
-**Använd typografi för att tillämpa filter eller kontrollregler**
+### Använd typografi för att tillämpa filter eller kontrollregler
 
 En typologi innehåller kontrollregler som tillämpas under analysfasen innan ett meddelande skickas.
 
@@ -342,7 +344,7 @@ När meddelandet är klart ser du till att innehållet visas korrekt på alla en
 
 Innan du skickar meddelandet måste du se till att parametrarna och konfigurationen stämmer överens med leveransen.
 
-### Validering är nyckel {#validation-is-key}
+### Varför validering är avgörande {#validation-is-key}
 
 Innan du skickar en leverans måste du se till att mottagarna får det meddelande som du verkligen vill skicka. För att göra detta måste du validera meddelandets innehåll och leveransparametrar.
 
@@ -461,7 +463,7 @@ Om du vill mäta den hastighet med vilken meddelandena levereras kan du styra le
 
 * Försök inte schemalägga stora leveranser tillsammans. Observera att det kan ta 5 till 10 minuter att sprida belastningen jämnt över systemet.
 
-## Felsökning av leverans {#delivery-troubleshooting}
+### Felsökning av leverans {#delivery-troubleshooting}
 
 Specifika åtgärder kan utföras vid problem med leveranser:
 
