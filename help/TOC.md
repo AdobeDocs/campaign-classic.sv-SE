@@ -1,23 +1,23 @@
 ---
 audience: end-user
-user-guide-title: Hjälp för Adobe Campaign Classic
+user-guide-title: Hjälp om Adobe Campaign Classic
 index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
+source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 0%
+source-wordcount: '2097'
+ht-degree: 8%
 
 ---
 
 
-# Hjälp för Adobe Campaign Classic {#using}
+# Adobe Campaign Classic Help {#using}
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
-+ Release Notes {#release-notes}
++ Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + [Gold Standard](rn/using/gold-standard.md)
@@ -31,7 +31,7 @@ ht-degree: 0%
    + Föråldrade funktioner och kompatibilitet {#deprecated-compatibility}
       + [Föråldrade funktioner](rn/using/deprecated-features.md)
       + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
-+ Komma igång {#getting-started}
++ Getting Started {#getting-started}
    + Från Adobe Campaign {#starting-with-adobe-campaign}
       + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
@@ -47,7 +47,7 @@ ht-degree: 0%
          + [Konfiguration](platform/using/faq-campaign-config.md)
          + [Rapporter](platform/using/faq-reporting.md)
          + [Utveckling](platform/using/faq-developers.md)
-      + [Självstudiekurser](platform/using/tutorials.md)
+      + [Tutorials](platform/using/tutorials.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
@@ -65,7 +65,7 @@ ht-degree: 0%
       + [Filtreringsalternativ](platform/using/filtering-options.md)
       + [Skapa filter](platform/using/creating-filters.md)
       + [Använd skiftläge](platform/using/use-case.md)
-   + Skapa frågor {#creating-queries}
+   + Skapa förfrågningar{#creating-queries}
       + [Om frågor i Campaign](platform/using/about-queries-in-campaign.md)
       + [Steg för att skapa en fråga](platform/using/steps-to-create-a-query.md)
       + [Definiera filtervillkor](platform/using/defining-filter-conditions.md)
@@ -89,8 +89,9 @@ ht-degree: 0%
       + [CRM Connectors](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
-   + Om leveranser och kanaler {#about-deliveries-and-channels}
+   + Kom igång med meddelanden {#about-deliveries-and-channels}
       + [Kommunikationskanaler](delivery/using/communication-channels.md)
+      + [Bästa praxis](delivery/using/delivery-best-practices.md)
       + [Åtkomst till leveransinformation](delivery/using/accessing-deliveries-information.md)
       + [Typer av leveranser](delivery/using/types-of-deliveries.md)
    + Viktiga steg när du skapar en leverans {#key-steps-when-creating-a-delivery}
@@ -118,7 +119,7 @@ ht-degree: 0%
    + Skickar direktutskick {#sending-direct-mail}
       + [Om kanal för direktreklam](delivery/using/about-direct-mail-channel.md)
       + [Skapa direktreklam](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definiera innehållet i direktreklam](delivery/using/defining-the-direct-mail-content.md)
+      + [Definiera innehållet i direktutskick](delivery/using/defining-the-direct-mail-content.md)
       + [Validerar](delivery/using/validating.md)
    + Använda leveransmallar {#using-delivery-templates}
       + [Om mallar](delivery/using/about-templates.md)
@@ -145,8 +146,8 @@ ht-degree: 0%
       + [Hantera prenumerationer](delivery/using/managing-subscriptions.md)
       + [Virusmarknadsföring och social marknadsföring](delivery/using/viral-and-social-marketing.md)
    + Övervaka leveranser {#monitoring-deliveries}
-      + [Övervaka leverans](delivery/using/monitoring-a-delivery.md)
-      + [Om leveransfel](delivery/using/understanding-delivery-failures.md)
+      + [Övervaka en leverans](delivery/using/monitoring-a-delivery.md)
+      + [Oom leveransfel](delivery/using/understanding-delivery-failures.md)
       + [Om karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
       + [Om meddelandespårning](delivery/using/about-message-tracking.md)
@@ -155,13 +156,13 @@ ht-degree: 0%
       + [Åtkomst till spårningsloggarna](delivery/using/accessing-the-tracking-logs.md)
       + [Testspårning](delivery/using/testing-tracking.md)
    + Leveranshantering {#deliverability-management}
-      + [Leverans](delivery/using/about-deliverability.md)
+      + [Om levererbarhet](delivery/using/about-deliverability.md)
       + [Viktiga punkter att kontrollera](delivery/using/deliverability-key-points.md)
       + [Starta en ny plattform](delivery/using/starting-new-platform.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
       + [Förbättra ert rykte](delivery/using/improve-reputation.md)
       + [Tekniska rekommendationer](delivery/using/technical-recommendations.md)
-      + [Övervaka leveransen](delivery/using/monitoring-deliverability.md)
+      + [Övervaka levererbarhet](delivery/using/monitoring-deliverability.md)
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Bästa praxis för återanvändning](delivery/using/re-engagement-best-practices.md)
@@ -313,7 +314,7 @@ ht-degree: 0%
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
-   + Ansluta via ett Adobe ID {#connecting-via-an-adobe-id}
+   + Ansluta via en Adobe ID {#connecting-via-an-adobe-id}
       + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
       + [Konfigurerar [!DNL IMS]](integrations/using/configuring-ims.md)
       + [Implementering [!DNL IMS]](integrations/using/implementing-ims.md)
@@ -324,7 +325,7 @@ ht-degree: 0%
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbprogram](integrations/using/synchronizing-web-applications.md)
       + [Felsöka [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Experience Cloud-utlösare {#experience-triggers}
+   + Experience Cloud Triggers {#experience-triggers}
       + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurerar pipeline](integrations/using/configuring-pipeline.md)
       + [Pipeline, alternativ NmsPipeline_Config](integrations/using/nmspipeline-config.md)
@@ -336,23 +337,23 @@ ht-degree: 0%
       + [Om arbetsflöden](workflow/using/about-workflows.md)
       + [Om aktiviteter](workflow/using/about-activities.md)
    + Allmän åtgärd {#general-operation}
-      + [Bygga ett arbetsflöde](workflow/using/building-a-workflow.md)
+      + [Skapa ett arbetsflöde](workflow/using/building-a-workflow.md)
       + [Måldata](workflow/using/targeting-data.md)
       + [Importera data](workflow/using/importing-data.md)
       + [Så här använder du arbetsflödesdata](workflow/using/how-to-use-workflow-data.md)
-      + [Bästa arbetsflöden](workflow/using/workflow-best-practices.md)
+      + [Bäst praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
    + Köra ett arbetsflöde {#executing-a-workflow}
       + [Starta ett arbetsflöde](workflow/using/starting-a-workflow.md)
       + [Arbetsflödets livscykel](workflow/using/workflow-life-cycle.md)
       + [Datalivscykel](workflow/using/data-life-cycle.md)
       + [Definiera godkännanden](workflow/using/defining-approvals.md)
       + [Arkitektur](workflow/using/architecture.md)
-   + Verksamheter som riktar sig till {#targeting-activities}
-      + [Om målinriktade aktiviteter](workflow/using/about-targeting-activities.md)
-      + [Fråga](workflow/using/query.md)
-      + [Inkrementell fråga](workflow/using/incremental-query.md)
+   + Målaktiviteter {#targeting-activities}
+      + [Om målaktiviteter](workflow/using/about-targeting-activities.md)
+      + [Förfrågan](workflow/using/query.md)
+      + [Inkrementell förfrågan](workflow/using/incremental-query.md)
       + [Läslista](workflow/using/read-list.md)
-      + [Union](workflow/using/union.md)
+      + [Sammanslutning](workflow/using/union.md)
       + [Skärningspunkt](workflow/using/intersection.md)
       + [Uteslutning](workflow/using/exclusion.md)
       + [Dela](workflow/using/split.md)
@@ -370,11 +371,11 @@ ht-degree: 0%
       + [CRM Connector](workflow/using/crm-connector.md)
    + Flödeskontroll {#flow-control-activities}
       + [Om flödeskontrollaktiviteter](workflow/using/about-flow-control-activities.md)
-      + [Start och slut](workflow/using/start-and-end.md)
-      + [Gaffel](workflow/using/fork.md)
+      + [Starta och sluta](workflow/using/start-and-end.md)
+      + [Förgrening](workflow/using/fork.md)
       + [AND-join](workflow/using/and-join.md)
       + [Schemaläggare](workflow/using/scheduler.md)
-      + [Testa](workflow/using/test.md)
+      + [Test](workflow/using/test.md)
       + [Vänta](workflow/using/wait.md)
       + [Tidsbegränsning](workflow/using/time-constraint.md)
       + [Delarbetsflöde](workflow/using/sub-workflow.md)
@@ -423,7 +424,7 @@ ht-degree: 0%
       + Datahantering {#data-management}
          + [Samordna datauppdateringar](workflow/using/coordinating-data-updates.md)
          + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
-         + [Förbättra data](workflow/using/enriching-data.md)
+         + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
          + [Kvartalslistuppdatering med inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Utforma frågor {#designing-queries}
@@ -451,8 +452,8 @@ ht-degree: 0%
    + Tekniska arbetsflöden {#technical-workflows}
       + [Om tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
       + [Leveranser](workflow/using/deliveries.md)
-      + [Campaign](workflow/using/campaign.md)
-      + [Web Analytics](workflow/using/web-analytics.md)
+      + [Kampanj](workflow/using/campaign.md)
+      + [Webbanalys](workflow/using/web-analytics.md)
       + [Distribuerad marknadsföring](workflow/using/distributed-marketing.md)
       + [Leveransövervakning](workflow/using/email-deliverability.md)
       + [Inkorgsåtergivning](workflow/using/inbox-rendering.md)
@@ -539,7 +540,7 @@ ht-degree: 0%
       + [Hantera dirigerade adresser i transaktionsmeddelanden](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [Personaliseringsdata](message-center/using/personalization-data.md)
       + [Förhandsgranskning av transaktionsmeddelande](message-center/using/transactional-message-preview.md)
-      + [Skicka ett bevis](message-center/using/sending-a-proof.md)
+      + [Utskick av korrektur](message-center/using/sending-a-proof.md)
       + [Mallpublicering](message-center/using/template-publication.md)
       + [Opublicerad mall](message-center/using/template-unpublication.md)
    + Händelsebearbetning {#event-processing}
@@ -688,7 +689,7 @@ ht-degree: 0%
       + [Utöka ett schema](configuration/using/extending-a-schema.md)
       + [Filtreringsscheman](configuration/using/filtering-schemas.md)
       + [Begränsa PII-vyn](configuration/using/restricting-pii-view.md)
-      + [Uppdaterar databasstrukturen](configuration/using/updating-the-database-structure.md)
+      + [Uppdatera databasstrukturen](configuration/using/updating-the-database-structure.md)
       + [Guiden Nytt fält](configuration/using/new-field-wizard.md)
       + [Dataschemats struktur](configuration/using/structure-of-a-data-schema.md)
       + [Återskapar scheman](configuration/using/regenerating-schemas.md)
@@ -738,7 +739,7 @@ ht-degree: 0%
       + [Innan du startar migreringen](migration/using/before-starting-migration.md)
       + [Testa migreringen](migration/using/testing-the-migration.md)
       + [Konfigurera din plattform](migration/using/configuring-your-platform.md)
-   + Migrerar till Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
+   + Migrera till Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
       + [Krav för migrering till Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
       + [Migrera i Windows för Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrera i Linux för Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
