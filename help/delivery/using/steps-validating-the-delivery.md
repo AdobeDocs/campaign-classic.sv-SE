@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 0%
+source-wordcount: '1673'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Så här gör du:
 
 1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. Se [Analysera leveransen](#analyzing-the-delivery).
 
-   Reglerna som används under analysen visas i [valideringsprocessen med typologiavsnittet](#validation-process-with-typologies) . De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
+   De regler som tillämpas under analysen presenteras i [detta avsnitt](#validation-process-with-typologies) . De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
 
 1. **Skicka korrektur**: I det här steget kan du godkänna innehåll, URL:er, anpassningsfält osv. Se [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
@@ -76,6 +76,7 @@ Analysen är den fas då målpopulationen beräknas och leveransinnehållet fär
    * Den blå ikonen visar ett informativt meddelande.
    * Den gula ikonen indikerar ett icke-kritiskt bearbetningsfel.
    * Den röda ikonen anger ett kritiskt fel som förhindrar leverans.
+
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
 1. Klicka **[!UICONTROL Close]** för att korrigera eventuella fel.
@@ -102,7 +103,7 @@ På den här fliken finns följande alternativ:
 * **[!UICONTROL Approval mode]** : I det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar. Valideringslägena visas i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
 * **[!UICONTROL Prepare the delivery parts in the database]** : Med det här alternativet kan du förbättra resultatet för leveransanalysen. Mer information finns i [det här avsnittet](#improving-delivery-analysis).
 * **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde, vilket kan göra att du kan uppnå en avsevärd prestandaökning för personalisering. Mer information finns i [Optimera personalisering](../../delivery/using/personalization-fields.md#optimizing-personalization).
-* **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du påbörja leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign-programserverprocessen (webbservern). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
+* **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du påbörja leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign programserverprocess (webbserver). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Med det här alternativet läggs SQL-frågeloggarna till i leveransjournalen under analysfasen.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv har introducerats med taggen **&lt;%=** ).
 
@@ -134,14 +135,15 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 >
 >Om du vill vara säker på att de större leveransanalyserna inte fördröjer arbetsflödena kan du schemalägga deras körningar genom att trycka på **[!UICONTROL Schedule execution for a time of low activity]**.
 
-## Skicka ett bevis {#sending-a-proof}
+## Utskick av korrektur {#sending-a-proof}
 
-För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrektur till testmottagarna. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
+Adobe rekommenderar starkt att du konfigurerar en leveransvalideringscykel för att upptäcka eventuella fel i meddelandekonfigurationen. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrektur till testmottagarna. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
 >[!NOTE]
 >
 >* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
@@ -156,7 +158,7 @@ Följ stegen nedan för att skicka ett bevis:
 1. Starta meddelandeanalys. Se [Analysera leveransen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 1. Nu kan du skicka leveransen (se [Skicka leveransen](../../delivery/using/steps-sending-the-delivery.md)).
 
-   När leveransen är skickad visas korrekturet i leveranslistan och skapas och numreras automatiskt. Den kan redigeras om du vill komma åt dess innehåll och egenskaper. Mer information finns på den här [sidan](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   När leveransen är skickad visas korrekturet i leveranslistan och skapas och numreras automatiskt. Den kan redigeras om du vill komma åt dess innehåll och egenskaper. Mer information om detta hittar du på den här [sidan](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -181,13 +183,13 @@ På fliken **[!UICONTROL Advanced]** Leveransegenskaper kan du definiera egenska
 Följande alternativ är tillgängliga:
 
 * Det första alternativet gör att du kan behålla korrekturet dubblerar.
-* Båda följande alternativ gör att du kan behålla mottagare som finns i blockeringslistan och adresser i karantän. Se beskrivningen av dessa alternativ för huvudmålet i [Anpassa undantagsinställningar](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Till skillnad från målet för en leverans, där dessa adresser exkluderas som standard, behålls de som standard som mål för ett korrektur.
+* Med båda av följande alternativ kan du hålla mottagare som är på blockeringslista och adresser i karantän. Se beskrivningen av dessa alternativ för huvudmålet i [Anpassa undantagsinställningar](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Till skillnad från målet för en leverans, där dessa adresser exkluderas som standard, behålls de som standard som mål för ett korrektur.
 * Med **[!UICONTROL Keep the delivery code for the proof]** det här alternativet kan du ge beviset samma leveranskod som den som är definierad för den leverans som det hör till. Den här koden anges i det första steget i leveransguiden.
 * Som standard anges korrekturens ämne med &quot;Korrekturnr&quot;, där # är korrekturets nummer. Du kan ändra det här prefixet i **[!UICONTROL Label prefix]** fältet.
 
 ## Valideringsprocess med typologier {#validation-process-with-typologies}
 
-Innan du skickar meddelanden bör du analysera kampanjen för att godkänna dess innehåll och konfiguration. De kontrollregler som tillämpas under analysfasen definieras i en **typologi**. Som standard täcker analysen följande punkter för e-post:
+Innan du skickar meddelanden bör du analysera kampanjen för att godkänna dess innehåll och konfiguration. The checking rules applied during the analysis phase are defined in a **typology**. Som standard täcker analysen följande punkter för e-post:
 
 * Godkänna objektet
 * Godkänna URL:er och bilder
@@ -215,7 +217,7 @@ På fliken **[!UICONTROL Rule]** visas en lista med de typologiregler som ska an
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. Mer information om detta hittar du i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
 
 ## Ändra godkännandeläge {#changing-the-approval-mode}
 
