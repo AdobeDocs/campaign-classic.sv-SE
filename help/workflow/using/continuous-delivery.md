@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
@@ -50,3 +53,17 @@ Endast när **[!UICONTROL Specified by the inbound event]** alternativet är mar
 Den här uppsättningen med tre värden identifierar det mål som uppstår vid leverans. **[!UICONTROL tableName]** är namnet på den tabell som memorerar målets identifierare, **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
 
 Övergången som är associerad med komplementet har samma parametrar.
+
+## Konfigurera kontinuerlig leverans
+
+I det här avsnittet beskrivs hur du konfigurerar en kontinuerlig leverans.
+
+Med den **kontinuerliga leveransen** kan du lägga till nya mottagare i en befintlig leverans och undvika att behöva skapa en ny leverans varje gång en ny mottagare läggs till. Du kan uppdatera den kreativa informationen direkt i kampanjarbetsflödet och den uppdaterar mallen i leveransmallens resursmapp.
+
+En kontinuerlig leverans skapar en enda leverans- och leveranslogg (broadLog) och spårningsloggar som refererar till att en leverans läggs till varje gång den körs.
+
+![Kontinuerlig leverans](assets/delivery_continuous.jpg)
+
+I den här videon visas hur du konfigurerar en kontinuerlig leverans med en stegvis fråga.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
