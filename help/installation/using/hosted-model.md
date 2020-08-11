@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '81'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Här följer installations- och konfigurationsstegen som gäller för värdbaser
 * Konfigurerar spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se det här [avsnittet](../../message-center/using/configuring-multibranding.md).
 * Installera klientkonsolen: se det här [avsnittet](../../installation/using/installing-the-client-console.md).
 * Installerar paket: se det här [avsnittet](../../installation/using/installing-campaign-standard-packages.md).
-* Läs mer om verktygen för slutprodukter och de effektivaste strategierna i [guiden](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Komma igång och [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
+* Läs mer om verktygen för slutprodukter och de effektivaste strategierna i [guiden](../../delivery/using/deliverability-key-points.md) Komma igång och [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
 * Konfigurerar kampanjalternativ: se det här [avsnittet](../../installation/using/configuring-campaign-options.md).
 * Konfigurerar CRM-anslutningar: se det här [avsnittet](../../platform/using/crm-connectors.md).
 
