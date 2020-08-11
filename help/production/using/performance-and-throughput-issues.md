@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna. Mer information om innehållet i varje [release finns i versionsinformationen](https://docs.campaign.adobe.com/doc/AC/en/RN.html) .
+>Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna. Mer information om innehållet i varje [release finns i versionsinformationen](../../rn/using/latest-release.md) .
 
 ## Maskinvara och infrastruktur {#hardware-and-infrastructure}
 
@@ -39,7 +39,7 @@ Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur m
 * Kontrollera de tabeller som har den maximala blotten. Om dessa tabeller används ofta måste de semitueras.
 * Databasblockering kan göra att e-postmeddelanden inte skickas.
 
-Adobe Campaign innehåller också ett [verktyg](../../production/using/monitoring-processes.md#manual-monitoring) för att kontrollera processor- och RAM-användning. Använd det här verktyget och se specifika indikatorer som: **Minne**, **Växla minne**, **disk**, **aktiva processer**. Om värdena är för höga kan du försöka minska antalet arbetsflöden eller schemalägga arbetsflöden att starta vid olika tidpunkter.
+Adobe Campaign har också ett [verktyg](../../production/using/monitoring-processes.md#manual-monitoring) för att kontrollera processor- och RAM-användning. Använd det här verktyget och se specifika indikatorer som: **Minne**, **Växla minne**, **disk**, **aktiva processer**. Om värdena är för höga kan du försöka minska antalet arbetsflöden eller schemalägga arbetsflöden att starta vid olika tidpunkter.
 
 ## Databasprestanda {#database-performances}
 
@@ -52,7 +52,7 @@ För det mesta är prestandaproblem kopplade till databasunderhåll. Här är de
 
 >[!NOTE]
 >
->Mer information finns i följande avsnitt: [Databasprestanda](../../production/using/database-performances.md).
+>For more information, refer to this section: [Database performances](../../production/using/database-performances.md).
 
 ## Programkonfiguration {#application-configuration}
 
@@ -60,7 +60,7 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
 
 * MTA och MTAChild-processer och minne: modulen **mta** distribuerar meddelanden till sina **underordnade** moduler. Varje **dator** förbereder meddelanden innan den begär ett tillstånd från statistikservern och skickar dem. Mer information finns på den här [sidan](../../installation/using/email-deliverability.md) .
 * TLS-konfiguration: Du bör inte aktivera TLS globalt eftersom det kan minska genomströmningen. I stället bör TLS-inställningar per domän, som hanteras av leveransteamet, justeras efter behov. Mer information finns på den här [sidan](../../installation/using/email-deliverability.md#mx-configuration) .
-* DKIM: 1024b är den rekommenderade krypteringsstorleken enligt Best Practices för att säkerställa att DKIM:s säkerhetsnivå är. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se den här [sidan](../../delivery/using/technical-recommendations.md#dkim) och den här [tekniken](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+* DKIM: 1024b är den rekommenderade krypteringsstorleken enligt Best Practices för att säkerställa att DKIM:s säkerhetsnivå är. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se den här [sidan](../../delivery/using/technical-recommendations.md#dkim) och den här [tekniken](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html).
 
 ## Leveransproblem {#deliverability-issues}
 
@@ -75,5 +75,5 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 
 >[!NOTE]
 >
->Glöm inte att läsa guiden Komma igång med [slutprodukten](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
+>Se även avsnittet [Nyckelpunkter](../../delivery/using/deliverability-key-points.md) för slutprodukt.
 
