@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f3006ac7178b4fc3091859ca8a7225864da9524a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Det här arbetsflödet (daglig körning) markerar alla mottagare som har sin födelsedag det aktuella datumet.
 
-Det här användningsexemplet finns också i form av en video. Mer information finns i videon [Skapa ett arbetsflöde](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) .
+Det här användningsexemplet finns också i form av en video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 Det gör du genom att skapa en kampanj och klicka på **[!UICONTROL Targeting and workflows]** fliken. Mer information finns i avsnittet [Skapa huvudmålet i ett arbetsflöde](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
 
@@ -209,7 +212,7 @@ Lägg till en **återkommande leveransaktivitet** baserat på e-postmallen för 
 
 >[!CAUTION]
 >
->För att arbetsflödena ska kunna köras måste de tekniska arbetsflödena för kampanjprocessen startas. Mer information finns i avsnittet [Lista över arbetsflöden](../../workflow/using/campaign.md) för kampanjprocesser.
+>För att arbetsflödena ska kunna köras måste de tekniska arbetsflödena för kampanjprocessen startas. For more on this, refer to the [List of campaign process workflows](../../workflow/using/campaign.md) section.
 >
 >Om godkännandestegen är aktiverade för kampanjen skickas leveranserna först när dessa steg har bekräftats. Mer information finns i avsnittet [Välja de processer som ska godkännas](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 
