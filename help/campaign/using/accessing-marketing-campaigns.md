@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 0%
 
 ---
 
 
 # Åtkomst till marknadsföringskampanjer{#accessing-marketing-campaigns}
 
-Med Adobe Campaign kan ni skapa, konfigurera, köra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter.
+Med Adobe Campaign kan ni skapa, konfigurera, genomföra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter.
 
 ## Grundläggande om arbetsytan {#workspace-basics}
 
@@ -45,9 +48,9 @@ Universums navigeringsblock erbjuder olika **[!UICONTROL Campaigns]** poster, be
 
 >[!NOTE]
 >
->Mer information om Adobe Campaigns allmänna ergonomi, behörigheter och profilhanteringsfunktioner finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
+>Mer information om Adobe Campaign allmänna ergonomi, behörigheter och profilhanteringsfunktioner finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >
->Alla funktioner som rör kanaler och leveranser beskrivs i [detta avsnitt](../../delivery/using/communication-channels.md).
+>Alla funktioner som rör kanaler och leveranser beskrivs i [detta avsnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Kampanjkalender {#campaign-calendar}
 
@@ -89,7 +92,7 @@ När du redigerar ett program använder du flikarna nedan för att bläddra och 
 
 #### Bläddra bland kampanjer {#browsing-campaigns}
 
-Kampanjerna kan nås via kampanjkalendern, programfliken eller **[!UICONTROL Schedule]** kampanjlistan.
+Kampanjer kan nås via kampanjkalendern, programfliken eller **[!UICONTROL Schedule]** kampanjlistan.
 
 1. Välj den kampanj du vill visa via kampanjkalendern och klicka sedan på **[!UICONTROL Open]** länken.
 
@@ -114,7 +117,7 @@ Kontrollpanelen för en kampanj används som ett kontrollgränssnitt. Här komme
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
-Med Adobe Campaign kan ni skapa samarbetsprocesser för att skapa och godkänna de olika faserna i marknadsförings- och kommunikationskampanjer: godkännande av budget, mål, innehåll osv.
+Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkännande av de olika stadierna av marknadsförings- och kommunikationskampanjer: godkännande av budget, mål, innehåll osv.
 
 ![](assets/s_ncs_user_op_board_validate.png)
 
@@ -124,7 +127,7 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för att skapa och godkänna 
 
 #### Schema {#schedule}
 
-En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global översikt över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
+En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global vy över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -132,7 +135,7 @@ En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger sche
 
 För varje kampanj kan operatörerna utbyta meddelanden via ett särskilt forum.
 
-Mer information finns i [diskussionsforumen](../../campaign/using/discussion-forums.md).
+For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
 
 #### Rapporter {#reports}
 
@@ -149,7 +152,7 @@ Via **[!UICONTROL Reports]** länken kan du komma åt kampanjrapporterna.
 Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar för vilka vissa alternativ har valts och andra inställningar redan har sparats. För varje kampanj finns följande funktioner:
 
 * Hänvisning till dokument och resurser: du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds. Se [Hantera associerade dokument](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
-* Definiera kostnader: För varje kampanj kan ni med Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när ni skapar marknadsföringskampanjen. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum osv. Se [Definiera kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
+* Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum osv. Se [Definiera kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
 * Definiera mål: kan ni definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
 * Hantera dirigerade adresser (mer information finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md)) och kontrollgrupper (se [Definiera en kontrollgrupp](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
 * Hantera godkännanden: Du kan välja vilka behandlingar som ska godkännas och vid behov välja granskningsoperatorer eller grupper av operatorer. Se [Kontrollera och godkänna leveranser](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
@@ -160,7 +163,7 @@ Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar f
 
 ## Använda webbgränssnittet {#using-the-web-interface-}
 
-Du kan komma åt Adobe Campaign-konsolskärmarna via en webbläsare och visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Det går inte att skapa poster med den här åtkomsten. Beroende på användarrättigheterna kan du visa och/eller agera på data i databasen. Du kan till exempel godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
+Du kan öppna Adobe Campaign konsolskärmar via en webbläsare och visa alla kampanjer och leveranser samt rapporter och information om profilerna i din databas. Det går inte att skapa poster med den här åtkomsten. Beroende på användarrättigheterna kan du visa och/eller agera på data i databasen. Du kan till exempel godkänna kampanjinnehåll och målinriktning, starta om eller stoppa en leverans osv.
 
 1. Logga in som vanligt via https://`<your instance>:<port>/view/home`.
 1. Använd menyerna för att komma åt översikterna.
