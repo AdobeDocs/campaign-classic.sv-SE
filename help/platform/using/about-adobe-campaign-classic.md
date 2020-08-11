@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 
 För att kunna leverera en hög grad av kundengagemang och fantastiska upplevelser måste varumärkena skapa enhetliga kundresor vid alla kontaktytor. Marknadsförarna kan nu effektivt utforma, planera, genomföra, hantera och optimera flerkanalskampanjer som ger hög avkastning på marknadsföringsinvesteringar och ökar lojaliteten.
 
-Med Adobe Campaign kan ni samordna framtagningen av marknadsföringskampanjer för konversationer. Adobe Campaign har innovativa funktioner för att modellera, effektivisera och automatisera processer för marknadsföring och kundkommunikation.
+Med Adobe Campaign kan ni samordna framtagningen av konversationskampanjer. Adobe Campaign har innovativa funktioner för att modellera, effektivisera och automatisera marknadsförings- och kundkommunikationsprocesserna.
 
 >[!NOTE]
 >
->Adobe Campaign Classic finns i version 6.11 och v7. Förutom när det anges gäller hjälpmaterialet båda versionerna, i den senaste versionen. Skärmbilderna återspeglar gränssnittet i Campaign Classic v7.
+>Adobe Campaign Classic finns i v6.11 och v7. Förutom när det anges gäller hjälpmaterialet båda versionerna, i den senaste versionen. Skärmbilderna återspeglar användargränssnittet i Campaign Classic v7.
 
 ## Viktiga funktioner {#key-capabilities}
 
-Adobe Campaign är en plattform för att utforma kundupplevelser i flera kanaler och erbjuder en miljö för visuell kampanjsamordning, interaktionshantering i realtid och kanalövergripande körning.
+Adobe Campaign erbjuder en plattform för att utforma kundupplevelser över flera kanaler och levererar en miljö för visuell kampanjorkestrering, interaktionshantering i realtid och körning över flera kanaler.
 
-Marknadsföringskampanjen i Adobe Campaign illustrerar de viktigaste funktionalitetsområdena för produkten:
+Marknadsföringskampanjen i Adobe Campaign visar de viktigaste funktionalitetsområdena för produkten:
 
 ![](assets/d_ncs_user_emarketing.png)
 
@@ -45,7 +45,7 @@ Marknadsföringskampanjen i Adobe Campaign illustrerar de viktigaste funktionali
 
 Profiler (kunder, prospects, nyhetsbrevprenumeranter osv.) är centraliserade i Adobe Campaign-databasen. Det finns många sätt att skaffa profiler och bygga upp databasen: onlinesamling via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en samlad vy för att analysera och vidta åtgärder.
 
-I Adobe Campaign är mottagare standardprofiler som är avsedda för att skicka leveranser (e-post, SMS, osv.). Tack vare de mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsområden. Exempelvis görs dirigeringsprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
+I Adobe Campaign är mottagare standardprofiler för att skicka leveranser (e-post, SMS, osv.). Tack vare de mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsområden. Exempelvis görs dirigeringsprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
 Grunderna i Profilhantering beskrivs i [Om profiler](../../platform/using/about-profiles.md).
 
@@ -67,17 +67,17 @@ Attrahera kundernas uppmärksamhet och förbättra svarsfrekvensen tack vare den
 
 Med Adobe Campaign kan ni övervaka och tolka kundernas beteende genom att gradvis förbättra deras data och profiler. Med rapporterings- och analysverktygen kan ni utnyttja varje ny kampanj, bättre målinrikta era marknadsföringsinitiativ och optimera deras effekt och avkastning på investeringen. Mer information finns på [den här sidan](../../reporting/using/delivery-reports.md) .
 
-### Integreringar med Adobe Experience Cloud {#adobe-experience-cloud-integrations}
+### Adobe Experience Cloud integreringar {#adobe-experience-cloud-integrations}
 
-Ni kan kombinera leveransfunktionerna och de avancerade kampanjhanteringsfunktionerna i Adobe Campaign med en uppsättning lösningar som hjälper er att personalisera användarnas upplevelse: Adobe Experience Manager, Adobe Analytics, Adobe Target eller Adobe Experience Cloud triggers till exempel. Du kan även integrera med Adobe IMS och logga in på Campaign med ditt Adobe ID. Mer information om integreringar mellan lösningar och autentisering finns i [det här avsnittet](../../integrations/using/about-adobe-id.md).
+Ni kan kombinera leveransfunktionerna och de avancerade kampanjhanteringsfunktionerna i Adobe Campaign med en uppsättning lösningar som hjälper er att personalisera användarupplevelsen: Utlösare från Adobe Experience Manager, Adobe Analytics, Adobe Target eller Adobe Experience Cloud till exempel. Ni kan också integrera med Adobe IMS och logga in på Campaign med er Adobe ID. Mer information om integreringar mellan lösningar och autentisering finns i [det här avsnittet](../../integrations/using/about-adobe-id.md).
 
 ## Kärnfunktioner och tillägg {#core-capabilities-and-add-ons}
 
-Adobe Campaign erbjuder en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna för konversationer beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras och av din konfiguration. En detaljerad produktbeskrivning finns här: [Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)för Adobe Campaign Classic.
+Adobe Campaign har en uppsättning funktioner som hjälper er att implementera och optimera marknadsföringsfunktionerna beroende på era behov och er arkitektur. Vissa av dem är kärnfunktioner och andra är beroende av att ett paket installeras och av din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign Classic produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 Följande funktioner är tillgängliga. Beroende på vilket licensavtal du har kan vissa av dessa funktioner vara tillgängliga eller inte i din instans.
 
-* [Kanaler](../../delivery/using/communication-channels.md) - utforma och skicka leveranser i olika kanaler: e-post, SMS, Line, mobilapp, direktreklam,
+* [Kanaler](../../delivery/using/steps-about-delivery-creation-steps.md) - utforma och skicka leveranser i olika kanaler: e-post, SMS, Line, mobilapp, direktreklam,
 * [Campaign](../../campaign/using/designing-marketing-campaigns.md) - samordna flerkanalskampanjer,
 * [MRM](../../campaign/using/about-marketing-resource-management.md) - hantera marknadsföringsresurser och budget,
 * [Interaktion](../../interaction/using/interaction-and-offer-management.md) - hantering av erbjudanden med Campaign,
