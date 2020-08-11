@@ -1,7 +1,7 @@
 ---
-title: Om karantänhantering
-seo-title: Om karantänhantering
-description: Om karantänhantering
+title: Om karantänshantering
+seo-title: Om karantänshantering
+description: Om karantänshantering
 seo-description: null
 page-status-flag: never-activated
 uuid: 9421e26c-bdcc-4588-8e44-fa6f31051081
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 0%
+source-wordcount: '2576'
+ht-degree: 12%
 
 ---
 
 
-# Om karantänhantering{#understanding-quarantine-management}
+# Om karantänshantering{#understanding-quarantine-management}
 
 ## Om karantäner {#about-quarantines}
 
@@ -33,37 +33,37 @@ Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress
 >
 >Detta avsnitt gäller för onlinekanaler: e-post, SMS, push-meddelanden.
 
-### Optimera leveransen genom karantän {#optimizing-your-delivery-through-quarantines}
+### Optimera leveransen genom karantäner {#optimizing-your-delivery-through-quarantines}
 
-De profiler vars e-postadresser eller telefonnummer är i karantän exkluderas automatiskt vid meddelandeförberedelsen (se [Identifiera karantänadresser för en leverans](#identifying-quarantined-addresses-for-a-delivery)). Detta snabbar upp leveranserna eftersom felfrekvensen påverkar leveranshastigheten avsevärt.
+De profiler vars e-postadresser eller telefonnummer är i karantän exkluderas automatiskt vid förberedelse av meddelanden (se [Identifiera karantänadresser vid en leverans](#identifying-quarantined-addresses-for-a-delivery)).  Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten.
 
-Vissa leverantörer av internetåtkomst betraktar automatiskt e-post som skräppost om antalet ogiltiga adresser är för högt. Med karantän kan du därför undvika att läggas till i en blockeringslista av dessa leverantörer.
+Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i en blockeringslista av dessa leverantörer.
 
-Dessutom bidrar karantäner till att minska SMS-sändningskostnaderna genom att utesluta felaktiga telefonnummer från leveranser. Mer information om de bästa sätten att skydda och optimera leveranser finns på [den här sidan](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta felaktiga telefonnummer från leveranser. Mer information om de bästa sätten för att skydda och optimera leveranser finns på [den här sidan](../../delivery/using/delivery-best-practices.md) .
 
-### Karantän mot blocklista {#quarantine-vs-block-list}
+### Karantän jämfört med blockeringslista {#quarantine-vs-block-list}
 
-**Karantän** gäller bara en adress, inte själva profilen. Det innebär att om två profiler har samma e-postadress påverkas båda om adressen sätts i karantän.
+**Karantän** gäller bara en adress, inte själva profilen.    Det innebär att om två profiler har samma e-postadress så påverkas båda om adressen sätts i karantän.
 
-På samma sätt kan en profil vars e-postadress sätts i karantän uppdatera profilen och ange en ny adress. Den kan sedan användas av leveransåtgärder igen.
+På samma sätt kan en profil vars e-postadress sätts i karantän uppdatera profilen och ange en ny adress. Den kan sedan användas vid leveransåtgärder igen.
 
-Å andra sidan finns i **blockeringslistan**, vilket innebär att profilen inte längre används som mål för någon leverans, till exempel efter en avanmälan (avanmälan).
+Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs denna profil inte till i blocklistan som i e-postavanmälningsprocessen. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
+>När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs denna profil inte till blockeringslista som i avanmälningsprocessen. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
 
 ## Identifiera adresser i karantän {#identifying-quarantined-addresses}
 
-Adresser i karantän kan listas för en viss leverans eller för hela plattformen.
+Adresser i karantän kan användas för en viss leverans eller för hela plattformen.
 
 ### Identifiera adresser i karantän för en leverans {#identifying-quarantined-addresses-for-a-delivery}
 
-Adresser i karantän för en viss leverans listas i leveransloggarna på leveransinstrumentpanelen under leveransfasen (se [Leveransloggar och historik](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
+Quarantined addresses for a specific delivery are listed during the delivery preparation phase, in the delivery logs of the delivery dashboard (see [Delivery logs and history](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
 
 ### Identifiera adresser i karantän för hela plattformen {#identifying-quarantined-addresses-for-the-entire-platform}
 
-Administratörer kan lista adresserna i karantän för hela plattformen från **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** noden.
+Administrators can list the addresses in quarantine for the entire platform from the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** node.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Följande information finns för varje adress:
 >Ökningen av antalet karantän är en normal effekt som har samband med databasens slitage. Om en e-postadress till exempel anses ha en livslängd på tre år och mottagartabellen ökar med 50 % varje år, kan ökningen av antalet karantän beräknas enligt följande:
 >
 >Slutet av år 1: (1*0.33)/(1+0.5)=22 %.
-Slutet av år 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5 %.
+Slutet av år 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### Identifiera adresser i karantän i leveransrapporter {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,7 +94,7 @@ Följande rapporter innehåller information om adresserna i karantän:
 
 Du kan söka efter den här informationen för alla leveranser av plattformen (**[!UICONTROL Home page > Reports]**) eller för en viss leverans. Du kan också skapa anpassade rapporter och välja vilken information som ska visas.
 
-### Identifiera adresser i karantän för en mottagare {#identifying-quarantined-addresses-for-a-recipient}
+### Identifying quarantined addresses for a recipient {#identifying-quarantined-addresses-for-a-recipient}
 
 Du kan slå upp status för e-postadressen för alla mottagare. Det gör du genom att markera mottagarprofilen och klicka på **[!UICONTROL Deliveries]** fliken. För alla leveranser till den mottagaren kan du ta reda på om adressen misslyckades, placerades i karantän under analysen osv. För varje mapp kan du bara visa mottagare vars e-postadress är i karantän. Använd programfiltret om du vill göra det **[!UICONTROL Quarantined email address]** .
 
@@ -125,19 +125,19 @@ Deras status ändras sedan till **[!UICONTROL Valid]**.
 >[!IMPORTANT]
 Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL On block list]** status tas aldrig bort, även om de får ett e-postmeddelande.
 
-Du kan ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i distributionsguiden (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
+Du kan ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i distributionsguiden (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
 ## Villkor för att skicka en adress till karantän {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som tilldelats vid kvalificering av felmeddelanden (se [studsbehörighet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) och typ av [leveransfel](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)och orsaker.
+Adobe Campaign hanterar karantän beroende på typ av leveransfel och orsaken som tilldelats vid kvalificering av felmeddelanden (se [Avhoppsbehörighet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) och typ av [leveransfel](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)och orsaker.
 
-* **Ignorerat fel**: ignorerade fel skickar ingen adress till karantän.
-* **Hårt fel**: motsvarande e-postadress omedelbart skickas till karantänen.
-* **Mjukt fel**: Mjuka fel skickar inte en adress till karantän omedelbart, men de ökar en felräknare. Mer information finns i [Mjuk felhantering](#soft-error-management).
+* **Ignorerad avvikelse**: ignorerade avvikelser skickar ingen adress till karantänen.
+* **Kritisk avvikelse**: motsvarande e-postadress skickas omedelbart till karantänen.
+* **Icke-kritisk avvikelse**: En icke-kritiskt avvikelse skickar inte en adress till karantän omedelbart men ökar dock felräknaren.  Mer information finns i [Mjuk felhantering](#soft-error-management).
 
-Om en användare kvalificerar ett e-postmeddelande som en skräppost ([Feedback-slinga](../../delivery/using/technical-recommendations.md#feedback-loop)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
+If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop)), the message is automatically redirected towards a technical mailbox managed by Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
 
-I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet varför den valda adressen placerades i karantän. Karantän i Adobe Campaign är skiftlägeskänslig. Se till att importera e-postadresser i gemener så att de inte återdirigeras senare.
+I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet varför den valda adressen placerades i karantän. Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -146,8 +146,8 @@ I listan över adresser i karantän anger **[!UICONTROL Error reason]** fältet 
 I motsats till hårda fel skickar inte mjuka fel en adress direkt till karantän, utan i stället ökar de en felräknare.
 
 * När felräknaren når gränsvärdet sätts adressen i karantän.
-* I standardkonfigurationen anges tröskelvärdet till fem fel, där två fel är viktiga om de inträffar med minst 24 timmars mellanrum. Adressen sätts i karantän vid det femte felet.
-* Tröskelvärdet för felräknare kan ändras. Mer information finns i [Försök igen efter ett tillfälligt leveransfel](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+* I standardkonfigurationen anges tröskelvärdet till fem avvikelser, där två avvikelser klassas som viktiga om de inträffar med minst 24 timmars mellanrum.        Adressen sätts i karantän vid den femte avvikelsen.    
+* Tröskelvärdet för felräknaren kan ändras.  For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **Giltig** och tas bort från listan över karantäner i **databasrensningsarbetsflödet** .
 
@@ -168,7 +168,7 @@ För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från A
 * Förlorad anslutning under leveransen: återförsök utförd, felorsaken är **[!UICONTROL Unreachable]**.
 * Problem med tjänstkonfiguration (ogiltigt certifikat, ogiltigt certifikatlösenord, inget certifikat): inga nya försök, felorsaken är **[!UICONTROL Unreachable]**.
 
-APNS-servern meddelar Adobe Campaign asynkront att en enhetstoken har avregistrerats (när mobilprogrammet har avinstallerats av användaren). Arbetsflödet körs var 6:e timme för att kontakta APNS-feedbacktjänster för att uppdatera **[!UICONTROL mobileAppOptOutMgt]** tabellen AppSubscriptionRcp **** . För alla inaktiverade token anges fältet **Inaktiverad** till **Sant** och prenumerationen som är länkad till den enhetstoken exkluderas automatiskt från framtida leveranser.
+APNS-servern meddelar asynkront Adobe Campaign om att en enhetstoken har avregistrerats (när mobilprogrammet har avinstallerats av användaren). Arbetsflödet körs var 6:e timme för att kontakta APNS-feedbacktjänster för att uppdatera **[!UICONTROL mobileAppOptOutMgt]** tabellen AppSubscriptionRcp **** . För alla inaktiverade token anges fältet **Inaktiverad** till **Sant** och prenumerationen som är länkad till den enhetstoken exkluderas automatiskt från framtida leveranser.
 
 **För iOS - HTTP/2-anslutning**
 
@@ -265,7 +265,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
 
 **För Android V1**
 
-För varje meddelande tar Adobe Campaign emot synkrona fel direkt från FCM-servern. Adobes kampanj hanterar dem i farten och genererar hårda eller mjuka fel beroende på hur allvarligt felet är och försök kan göras på nytt:
+För varje meddelande får Adobe Campaign synkrona fel direkt från FCM-servern. Adobe-kampanjen hanterar dem i farten och genererar hårda eller mjuka fel beroende på hur allvarligt felet är, och nya försök kan utföras:
 
 * Nyttolastlängden har överskridits, anslutningsproblem, problem med tjänsttillgänglighet: återförsök utförd, mjukt fel, felorsak **[!UICONTROL Refused]**.
 * Enhetskvoten har överskridits: inga nya försök, mjuka fel, felorsaken är **[!UICONTROL Refused]**.
@@ -281,11 +281,11 @@ Här är olika typer av fel för kunder som använder Baidu-kontakten:
 * Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, nytt försök utförs.
 * Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 
-Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar utsändningsloggarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
+Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
 **För Android V2**
 
-Android V2-karantänmekanismen använder samma process som Android V1, samma gäller för prenumerations- och exkluderingsuppdateringen. Mer information finns i avsnittet [Android V1](#android-quarantine) .
+Android V2-karantänmekanismen använder samma process som Android V1, samma gäller för prenumerations- och exkluderingsuppdateringen. For more on this refer to the [Android V1](#android-quarantine) section.
 
 <table> 
  <tbody> 
@@ -429,7 +429,7 @@ SMPP-kopplingen hämtar data från SR-meddelandet (statusrapport) som returneras
 Innan en ny typ av fel har kvalificerats anges felorsaken alltid som **standard till Avvisat** .
 
 >[!NOTE]
-Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Typ av leveransfel och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. See [Delivery failure types and reasons](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
 
 Exempel på ett genererat meddelande:
