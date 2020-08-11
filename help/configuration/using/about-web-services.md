@@ -15,40 +15,43 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a047e4af6e31c54fa2444943a18da5913e115c09
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 0%
 
 ---
 
 
 # Om webbtjänster{#about-web-services}
 
-## Definition av Adobe Campaign-API:er {#definition-of-adobe-campaign-apis}
+## Definition av Adobe Campaign API:er {#definition-of-adobe-campaign-apis}
 
-Programservern Adobe Campaign är utformad för öppenhet och enkel integrering med allt mer mångsidiga och komplexa företagsinformationssystem.
+Adobe Campaign programserver är utformad för öppenhet och enkel integrering med allt mer mångsidiga och komplexa företagsinformationssystem.
 
-Adobe Campaign-API:er används i JavaScript i programmet och i SOAP utanför det. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP-metoder](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP-metoder](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
->Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+>Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. For more on this, refer to [this page](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Förutsättningar {#prerequisites}
 
-Innan du använder API:erna för Adobe Campaign måste du känna till följande:
+Innan du använder Adobe Campaign API:er måste du känna till följande:
 
 * Javascript
 * SOAP-protokoll
-* Datamodell för Adobe Campaign
+* Adobe Campaign datamodell
 
-## Använda API:er för Adobe Campaign {#using-adobe-campaign-apis}
+## Använda Adobe Campaign API:er {#using-adobe-campaign-apis}
 
 Adobe Campaign använder två typer av API:er:
 
 * Generiska data har åtkomst till API:er för att fråga efter datamodelldata. Se [Dataorienterade API:er](../../configuration/using/data-oriented-apis.md).
 * Affärsspecifika API:er där du kan agera på varje objekt: leveranser, arbetsflöden, prenumerationer osv. Se [Affärsorienterade API:er](../../configuration/using/business-oriented-apis.md).
 
-Om du vill utveckla API:er och interagera med Adobe Campaign måste du känna till datamodellen. Med Adobe Campaign kan ni generera en fullständig beskrivning av basen. Se [modellbeskrivningen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Om du vill utveckla API:er och interagera med Adobe Campaign måste du känna till datamodellen. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [modellbeskrivningen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP-anrop {#soap-calls}
 
@@ -65,7 +68,7 @@ Strukturen för ett SOAP-meddelande är följande:
 
 ## Resurser och utbyten {#resources-and-exchanges}
 
-I följande schema visas de olika resurser som används för att använda API:er för Adobe Campaign:
+I följande schema visas de olika resurser som används i Adobe Campaign API:er:
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
@@ -77,7 +80,7 @@ Mer information finns i [ExecuteQuery (xtk:queryDef)](../../configuration/using/
 
 >[!NOTE]
 >
->WSDL-beskrivningen av den här tjänsten har slutförts i exemplet som visas här: Beskrivning av [webbtjänst: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>WSDL-beskrivningen av den här tjänsten har slutförts i exemplet som visas här: [Beskrivning av webbtjänst: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP-fråga {#soap-query}
 
@@ -122,7 +125,7 @@ I SOAP identifieras parametrarna i den ordning de visas. Den första parametern,
 
 Resultatet av frågan anges från `<pdomoutput>` elementet.
 
-## Felhantering {#error-management}
+## Error management {#error-management}
 
 Exempel på SOAP-felsvar:
 
@@ -156,7 +159,7 @@ Om serviceanropet lyckades eller misslyckades identifieras när `<faultcode>` el
 
 >[!IMPORTANT]
 >
->Alla Adobe Campaign-webbtjänster hanterar fel. Vi rekommenderar därför att du testar varje anrop för att kunna hantera returnerade fel.
+>Alla Adobe Campaign webbtjänster hanterar fel. Vi rekommenderar därför att du testar varje anrop för att kunna hantera returnerade fel.
 
 Exempel på felhantering i C#:
 
@@ -176,10 +179,10 @@ catch (SoapException e)
 
 ## Webbtjänstserverns URL (eller EndPoint) {#url-of-web-service-server--or-endpoint-}
 
-Om du vill skicka in webbtjänsten måste du kontakta den Adobe Campaign-server som implementerar motsvarande tjänstmetod.
+Om du vill skicka webbtjänsten måste du kontakta den Adobe Campaign-server som implementerar motsvarande tjänstmetod.
 
 Server-URL:en är följande:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Med **`<server>`** Adobe Campaign-programservern (**webbservern** på webben).
+Med **`<server>`** Adobe Campaign programserver (**nlserver web**).
