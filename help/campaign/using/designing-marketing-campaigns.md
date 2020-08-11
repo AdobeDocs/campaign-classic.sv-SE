@@ -15,27 +15,30 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
 
 # Utforma marknadsföringskampanjer{#designing-marketing-campaigns}
 
-Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som en enhetlig order- och exekveringscentral för marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../campaign/using/accessing-campaigns.md) och [Konfigurera marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
+Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../campaign/using/accessing-campaigns.md) och [Konfigurera marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Med modulen **Marketing Resource Management (MRM)** kan ni dessutom styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information finns i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
+Med modulen **Marketing Resource Management (MRM)** kan ni dessutom styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta hittar du i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Mer information om huvudfunktionerna i Adobe Campaign finns i avsnittet [Komma igång](../../platform/using/about-adobe-campaign-classic.md) .\
->Funktioner för målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/communication-channels.md).
+>Mer information om Adobe Campaign grundläggande funktioner finns i avsnittet [Komma igång](../../platform/using/about-adobe-campaign-classic.md) .\
+>Funktioner för målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Kärnkoncept {#core-concepts}
 
 Följande koncept måste vara kända i samband med Campaign:
 
-* **Campaign**
+* **Kampanj**
 
    En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, regler för målinriktning, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
 
@@ -49,13 +52,13 @@ Följande koncept måste vara kända i samband med Campaign:
 
    Marknadsföringsplanen kan innehålla flera program. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
 
-   Mer information finns i [Kampanjkalendern](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Arbetsflöde**
 
    Ett kampanjarbetsflöde innehåller samma aktiviteter som för alla arbetsflöden, men är specifikt för kampanjen. Det gör att du kan skapa och konfigurera leveranser för alla tillgängliga kanaler.
 
-   Mer information finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+   Mer information om detta hittar du i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Mål**
 
@@ -66,3 +69,11 @@ Följande koncept måste vara kända i samband med Campaign:
    En leveransdisposition är en strukturerad beskrivning av en leverans. Varje leverans kan referera till en leveransdisposition som t.ex. innehåller relaterade erbjudanden, dokument som ska bifogas eller en länk till butiker. Det går att referera till ett erbjudande i leveransen enligt den valda leveransdispositionen.
 
    Mer information finns i [Associera och strukturera resurser via en leveransöversikt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+
+## Så här skapar du ett e-postmeddelande i en kampanj
+
+I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
