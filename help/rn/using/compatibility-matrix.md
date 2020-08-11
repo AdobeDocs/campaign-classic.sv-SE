@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e8598fd445f6e2ebd891af1e15c07eb836cd647
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 6%
 
 ---
@@ -31,7 +31,7 @@ Den här matrisen uppdateras regelbundet med nya objekt som stöds och borttagna
 
 Om inget annat anges stöds alla mindre releaser.
 
-Adobe Campaign Classic är kompatibelt med alla system och verktyg som visas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du har de versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du har de versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 Mer information om borttagna objekt finns på [den här sidan](../../rn/using/deprecated-features.md).
 
@@ -169,7 +169,7 @@ Följande RDBMS-drivrutiner stöds:
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. Se <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">installationshandboken</a>.</p>
+<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Lär dig mer</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -292,7 +292,7 @@ Följande RDBMS-drivrutiner stöds:
 </td>
 </tr>
 <tr>
-<td>Snöflinga</td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
@@ -362,7 +362,7 @@ Den senaste versionen stöds i följande webbläsare:
 
 ## Experience Cloud-integreringar{#ExperienceCloudintegrations}
 
-Integrationer med Adobes lösningar beskrivs i detta [avsnitt](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
+Om du har integrerat med lösningar från Adobe finns mer information i det här [avsnittet](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
 
 ## Mer som detta{#Morelikethis}
 
