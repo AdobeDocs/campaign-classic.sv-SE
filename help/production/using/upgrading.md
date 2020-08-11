@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1122'
+ht-degree: 0%
 
 ---
 
 
 # Uppgraderar{#upgrading}
 
-Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](https://docs.campaign.adobe.com/doc/AC/en/RN.html).
+Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md) .
 
 >[!CAUTION]
 >
@@ -31,14 +34,14 @@ Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken
 
 >[!NOTE]
 >
->Se även [installationsguiden](../../installation/using/general-architecture.md) och hur du kommer igång med [uppgraderingen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) .
+>Se även [installationsguiden](../../installation/using/general-architecture.md) och hur du kommer igång med [uppgraderingen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) .
 
 ## I Windows {#in-windows}
 
-Om du vill uppdatera Adobe Campaign i en ny version när du levererar en ny version bör du göra följande i Windows:
+Om du vill uppdatera Adobe Campaign i en ny version när du skickar en ny version bör du göra följande i Windows:
 
 * [Stäng av tjänster](#shut-down-services),
-* [Uppgradera serverprogrammet](#upgrade-the-adobe-campaign-server-application)Adobe Campaign,
+* [Uppgradera Adobe Campaign serverprogram](#upgrade-the-adobe-campaign-server-application),
 * [Synkronisera resurser](#synchronize-resources),
 * [Starta om tjänsterna](#restart-services).
 
@@ -54,7 +57,7 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
 
       **iisreset /stop**
 
-   * Adobe Campaign-tjänsten: **net stop nlserver6**
+   * Adobe Campaign: **net stop nlserver6**
    >[!CAUTION]
    >
    >Du måste också se till att omdirigeringsservern (webmdl) stoppas så att filen **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
@@ -69,13 +72,13 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
 
    Du kan använda Aktivitetshanteraren i Windows för att kontrollera att alla processer har stoppats.
 
-### Uppgradera serverprogrammet Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
+### Uppgradera Adobe Campaign serverprogram {#upgrade-the-adobe-campaign-server-application}
 
 Så här kör du uppgraderingsfilen:
 
 1. Kör **setup.exe**.
 
-   Om du vill hämta den här filen går du till Adobe Campaign Support-sidan ( [https://support.neolane.net/](https://support.neolane.net/)) via länken **Download Center** .
+   Om du vill hämta den här filen går du till Adobe Campaign supportsida ( [https://support.neolane.net/](https://support.neolane.net/)) via länken **Hämtningscenter** .
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
 1. Klicka på **[!UICONTROL Next]** .
@@ -111,7 +114,7 @@ De tjänster som ska startas om är:
 
    **iisreset /start**
 
-* Adobe Campaign-tjänsten: nästa **start nlserver6**
+* Adobe Campaign: **net start nlserver6**
 
 ## I Linux {#in-linux}
 
@@ -129,7 +132,7 @@ Information om hur du uppdaterar klientkonsolen finns i [det här avsnittet](../
 
 ### Hämta uppdaterade paket {#obtain-updated-packages}
 
-Börja med att återställa båda de uppdaterade paketen i Adobe Campaign: gå till Adobe Campaign Support-sidan ( [https://support.neolane.net/](https://support.neolane.net/)) via länken **Download Center** .
+Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: Gå till Adobe Campaign Support-sidan ( [https://support.neolane.net/](https://support.neolane.net/)) via länken **Download Center** .
 
 Filen är **nlserver6-v7-XXX.rpm**
 
@@ -178,6 +181,7 @@ Om du vill göra det kör du följande kommando:
 >* Skriptet kan heta **httpd** istället för **apache**.
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
    >Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
+
 >
 
 
@@ -221,7 +225,7 @@ Använd följande process för att lösa konflikter:
 Det finns tre sätt att lösa en konflikt:
 
 * **[!UICONTROL Declare as resolved]** : kräver att användaren gör något i förväg.
-* **[!UICONTROL Accept the new version]** : rekommenderas om resurserna i Adobe Campaign inte har ändrats av användaren.
+* **[!UICONTROL Accept the new version]** : rekommenderas om resurserna som tillhandahålls med Adobe Campaign inte har ändrats av användaren.
 * **[!UICONTROL Keep the current version]** : betyder att uppdateringen inte godkänns.
 
    >[!CAUTION]
@@ -251,7 +255,7 @@ En Unicode-databas får till exempel inte bara tillåta lagring av LATIN1-data.
 
 ### I Windows {#in-windows-1}
 
-Hämta och kopiera filen på den dator där (**nlserver web**) Adobe Campaign-programservern är installerad
+Hämta och kopiera filen på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad
 
 **setup-client-6.** XXXX **.exe**
 
