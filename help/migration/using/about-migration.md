@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till en Adobe Campaign Classic-plattform (v7), de ytterligare, nödvändiga och valfria inställningarna beroende på din konfiguration.
 
-Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar Adobe Campaign innan du påbörjar någon migreringsprocess.
+Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar Adobe Campaign innan du påbörjar en migreringsprocedur.
 
 Migreringen måste testas i utvecklingsmiljön i förväg för att se till att den fungerar smidigt och utan fel. Migrering av produktionsmiljön får endast ske när den migrerade utvecklingsmiljön har godkänts fullständigt.
 
@@ -34,4 +37,4 @@ Migreringen måste testas i utvecklingsmiljön i förväg för att se till att d
 
 >[!NOTE]
 >
->Nya funktioner och lösningar för Adobe Campaign v7 finns på [den här sidan](https://docs.campaign.adobe.com/doc/AC/en/RN.html).
+>Nya funktioner och lösningar för Adobe Campaign v7 finns på [den här sidan](../../rn/using/latest-release.md).
