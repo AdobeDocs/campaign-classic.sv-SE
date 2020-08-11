@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2567'
 ht-degree: 2%
 
 ---
@@ -109,7 +109,7 @@ Om leveransresultaten är felaktiga kan du kontrollera:
 
 * **Leveransens** storlek: Stora leveranser kan ta längre tid att slutföra. MTA-underordnade är konfigurerade att hantera en standardbatchstorlek, som fungerar för de flesta instanser, men som måste kontrolleras när leveranserna är konstant långsamma.
 * **Målet för leveransen**: Förbud mot leveransprestanda påverkas av mjuka studsfel som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
-* **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i Adobe Campaign [Deliverability best practices guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och på [den här sidan](../../delivery/using/about-deliverability.md).
+* **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i Adobe Campaign [Deliverability best practices guide](../../delivery/using/deliverability-key-points.md) och på [den här sidan](../../delivery/using/about-deliverability.md).
 
 Plattforms- och databasunderhåll kan också påverka leveransresultaten. For more on this, refer to [this page](../../production/using/database-performances.md).
 
@@ -118,10 +118,10 @@ Plattforms- och databasunderhåll kan också påverka leveransresultaten. For mo
 När du har klickat på **[!UICONTROL Send]** knappen verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
 
 * Vissa e-postleverantörer kan ha lagt till dina IP-adresser i blockeringslista. I så fall kontrollerar du dina utskick och läser [det här avsnittet](../../delivery/using/about-deliverability.md).
-* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Läs Adobe Campaign [Delivery best practices](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) om riktlinjer för innehållet.
+* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Läs Adobe Campaign [Delivery best practices](../../delivery/using/delivery-best-practices.md) om riktlinjer för innehållet.
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
-   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/deliverability-faq.md) . Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
    * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har stött på fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed stöter på potentiella blockeringslista.
 
 * Ett systemproblem kan förhindra servrar från att samverka: detta kan göra hela sändningsprocessen långsammare. Kontrollera servrarna för att se till att det inte finns några minnes- eller resursproblem som kan påverka Campaign när personaliseringsdata hämtas till exempel.
@@ -203,7 +203,7 @@ När du skickar en leverans kan du stöta på följande status på kontrollpanel
  </tbody> 
 </table>
 
-Om du vill veta hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden kan du läsa Adobe Campaign [Deliverability best practices guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och [den här sidan](../../delivery/using/about-deliverability.md).
+Om du vill veta hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden kan du läsa Adobe Campaign [Deliverability best practices guide](../../delivery/using/deliverability-key-points.md) och [den här sidan](../../delivery/using/about-deliverability.md).
 
 ### Väntande status {#pending-status}
 
