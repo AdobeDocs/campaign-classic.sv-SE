@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
+source-wordcount: '1176'
+ht-degree: 11%
 
 ---
 
@@ -31,7 +31,7 @@ De viktigaste funktionerna är målinriktning, definition och personalisering av
 
 >[!NOTE]
 >
->Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Mer information finns i Komma igång med [slutprodukten](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och i Hantering [av](../../delivery/using/about-deliverability.md)slutprodukter.
+>Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Mer information finns i Komma igång med [slutprodukten](../../delivery/using/deliverability-key-points.md) och i Hantering [av](../../delivery/using/about-deliverability.md)slutprodukter.
 
 Leveransprocessen kan automatiseras genom att man förbereder en leverans och/eller skickar den i ett arbetsflöde. Mer information om aktiviteter av leveranstyp i arbetsflöden finns i [det här avsnittet](../../workflow/using/about-action-activities.md).
 
@@ -42,7 +42,7 @@ Adobe Campaign erbjuder följande leveranskanaler:
 1. **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserade SMS- eller LINE-meddelanden till målpopulationen. Se [SMS-kanal](../../delivery/using/sms-channel.md).
 1. **Mobil programkanal**: mobilappsleveranser gör att du kan skicka meddelanden till iOS- och Android-system. Se kapitlet om [mobilappskanalen](../../delivery/using/about-mobile-app-channel.md) .
 
-   Andra kanaler beskrivs på [den här sidan](../../delivery/using/communication-channels.md#other-channels).
+   Andra kanaler beskrivs på [den här sidan](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels).
 
    >[!NOTE]
    >
@@ -67,9 +67,9 @@ Du kan skicka olika typer av e-postmeddelanden:
 * Återkommande e-postmeddelanden: i en kampanj skicka samma e-postmeddelande regelbundet och sammanställa varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. For more on this, refer to [Recurring deliveries](../../workflow/using/recurring-delivery.md).
 * Transactional emails: enhetliga e-postmeddelanden som triggas utifrån kundernas beteende. Se [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 
-Mer information om leveransanvändning och rekommendationer finns i Bästa praxis för Campaign [Delivery](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+Mer information om leveransanvändning och rekommendationer finns i Bästa praxis för Campaign [Delivery](../../delivery/using/delivery-best-practices.md).
 
-Mer information om olika typer av leveranser finns i [det här avsnittet](../../delivery/using/types-of-deliveries.md).
+Mer information om olika typer av leveranser finns i [det här avsnittet](#types-of-deliveries).
 
 ## Mobila leveranser {#mobile-deliveries}
 
@@ -86,20 +86,50 @@ För att kunna leverera SMS- eller LINE-meddelanden till en mobiltelefon behöve
 
 ## Push-meddelanden {#push-notifications}
 
-Med Adobe Campaign kan ni skicka personaliserade och segmenterade [push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på iOS- och Android-mobilenheter via dedikerade appar. När konfigurations- och integrationsstegen är klara kan iOS- och Android-leveranser skapas och skickas. Du kan också utforma avancerade meddelanden med bilder eller videoklipp.
+Adobe Campaign allows you to send personalized and segmented [push notifications](../../delivery/using/about-mobile-app-channel.md) on iOS and Android mobile devices, through dedicated apps. När konfigurations- och integrationsstegen är klara kan iOS- och Android-leveranser skapas och skickas. Du kan också utforma avancerade meddelanden med bilder eller videoklipp.
 
-## Direktreklam {#direct-mail}
+## Direktmeddelande {#direct-mail}
 
-[Direktreklam](../../delivery/using/about-direct-mail-channel.md) är en offlinekanal som gör att du kan anpassa och generera den fil som direktreklamleverantörer behöver. Det ger er möjlighet att blanda online- och offlinekanaler i era kundresor.
+[Direktmeddelanden är en offlinekanal som gör att du kan anpassa och generera den fil som leverantören av direktmeddelanden behöver.  ](../../delivery/using/about-direct-mail-channel.md) Det ger dig möjligheten att blanda online- och offline-kanaler i kundresorna.
 
-Med onlinekanaler kan du skapa meddelanden (e-post, SMS, mobilappsleverans osv.) och skicka dem till er målgrupp direkt från Adobe Campaign. Med offlinekanaler är det annorlunda. När du förbereder en direktutskick genererar Adobe Campaign en fil med alla målprofiler och den valda kontaktinformationen (till exempel postadress). Du kan sedan skicka den här filen till din direktreklamleverantör som tar hand om själva sändningen.
+Med onlinekanaler kan du skapa meddelanden (e-post, SMS, leveransmeddelanden för mobilappar etc.)  och skicka dem till din målgrupp direkt från Adobe Campaign.  Med offlinekanaler fungerar det annorlunda.  När du förbereder ett direktutskick genererar Adobe Campaign en fil som innehåller samtliga målprofiler och den valda kontaktinformationen (exempelvis postadress).  Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.
 
 ## Andra kanaler {#other-channels}
 
-Adobe Campaign erbjuder mallar för utskick via telefon eller byrå som används för att skapa externa leveranser. Om du använder dessa kanaler måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct-postkanalen](../../delivery/using/about-direct-mail-channel.md).
+Adobe Campaign erbjuder mallar för extern leverans. Om du använder dessa kanaler måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct-postkanalen](../../delivery/using/about-direct-mail-channel.md).
 
-För leveranser av typen Annan används dessutom en specifik teknisk mall som inte utför någon process: På så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign-plattformen.
+För leveranser av typen Annan används dessutom en specifik teknisk mall som inte utför någon process: på så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign.
 
 Den här kanalen har ingen specifik mekanism. Det är en allmän kanal som har ett eget alternativ för extern kontodirigering, leveransmalltyp och kampanjarbetsflödesaktivitet, precis som alla andra kommunikationskanaler som finns i Adobe Campaign.
 
 Den här kanalen är avsedd endast för beskrivande syften, till exempel för att definiera leveranser för vilka du vill hålla reda på målet för en kampanj som har utförts i ett annat verktyg än Adobe Campaign.
+
+## Typer av leveranser{#types-of-deliveries}
+
+Det finns tre typer av leveransobjekt i Campaign:
+
+### Enskild leverans {#single-delivery}
+
+En **leverans** är ett fristående leveransobjekt som körs en gång. Den kan dupliceras, förberedas på nytt, men så länge den är i det slutliga tillståndet (avbryts, stoppas, slutförd) kan den inte återanvändas.
+
+Leveranser kan skapas antingen i listan över leveranser eller i ett arbetsflöde via en [leveransaktivitet](../../workflow/using/delivery.md) .
+
+Arbetsflödena innehåller också specifika leveransaktiviteter beroende på vilken typ av kanal du vill använda. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
+
+### Återkommande leverans {#recurring-delivery}
+
+Med en **återkommande leverans** kan du skapa en ny leverans varje gång aktiviteten körs. På så sätt slipper du skapa en ny leverans för återkommande uppgifter.
+
+Om du till exempel kör den här typen av aktivitet en gång i månaden får du 12 leveranser efter ett år.
+
+Återkommande leveranser skapas i arbetsflöden via aktiviteten [Återkommande leverans](../../workflow/using/recurring-delivery.md). Ett exempel på den här aktiviteten visas i det här avsnittet: [Skapa en återkommande leverans i ett målarbetsflöde](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+
+### Kontinuerlig leverans {#continuous-delivery}
+
+Med en **kontinuerlig leverans** kan du lägga till nya mottagare till en befintlig leverans, vilket innebär att du slipper skapa en ny leverans varje gång den körs.
+
+Om en information i leveransen ändras (innehåll, namn osv.) skapas ett nytt leveransobjekt vid leveranskörningen. Om ingen information ändrades återanvänds samma leveransobjekt och leverans- och spårningsloggarna läggs till i samma objekt.
+
+Om du till exempel kör den här typen av aktivitet en gång i månaden får du en leverans efter ett år (förutsatt att du inte har ändrat leveransen).
+
+Kontinuerliga leveranser skapas i arbetsflöden via aktiviteten [](../../workflow/using/continuous-delivery.md)Kontinuerlig leverans.
