@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats d
 
 Behörigheterna gäller för operatorprofiler eller operatorgrupper.
 
-De fylls i med säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 Det finns två typer av behörigheter som du kan ge en användare:
 
@@ -44,7 +44,7 @@ Det finns två typer av behörigheter som du kan ge en användare:
 
 >[!NOTE]
 >
->Innan du börjar definiera behörigheter rekommenderar Adobe att du läser checklistan för [säkerhetskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html).
+>Innan du börjar definiera behörigheter rekommenderar Adobe att du läser checklistan för [säkerhetskonfiguration](https://helpx.adobe.com/campaign/kb/acc-security.html).
 
 ## Operatorer {#operators}
 
@@ -60,13 +60,13 @@ Operatorer kan skapas manuellt eller mappas på en befintlig LDAP-katalog.
 
 En fullständig procedur för att skapa en operator beskrivs på [den här sidan](#creating-an-operator).
 
-Mer information om integrering mellan Adobe Campaign och LDAP finns på [den här sidan](../../installation/using/connecting-through-ldap.md).
+Mer information om Adobe Campaign- och LDAP-integrering finns på [den här sidan](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
 >Operatorer måste länkas till en säkerhetszon för att kunna logga in på en instans. Mer information om säkerhetszoner i Adobe Campaign finns på [den här sidan](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Användare kan även ansluta direkt till Adobe Campaign via Adobe ID. For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
+Användare kan även ansluta direkt till Adobe Campaign via sin Adobe ID. Mer information om detta hittar du på den här [sidan](../../integrations/using/about-adobe-id.md).
 
 ### Skapa en operator {#creating-an-operator}
 
@@ -76,7 +76,7 @@ Så här skapar du en ny operator och tilldelar behörigheter:
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Ange användarens namn **[!UICONTROL Identification parameters]** : användar-ID, lösenord och namn. Inloggningen och lösenordet används av operatorn för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]** menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden behandlas.
+1. Ange användarens namn **[!UICONTROL Identification parameters]** : användar-ID, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]** menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden behandlas.
 
    I det här avsnittet kan du även länka en operator till en organisationsenhet. For more on this, refer to the [this page](../../campaign/using/about-distributed-marketing.md).
 
@@ -118,7 +118,7 @@ Konfigurationen av tidszoner beskrivs på [den här sidan](../../installation/us
 >
 >För samarbete inom olika tidszoner krävs att datum lagras i UTC. Datum konverteras i lämplig tidszon i följande sammanhang: när ett datum visas i användartidszonen, när filer importeras och exporteras, när en e-postleverans schemaläggs, när aktiviteter schemaläggs i ett arbetsflöde (schemaläggare, vänta, tidsbegränsning osv.)
 >
->Begränsningar och rekommendationer som är kopplade till dessa sammanhang presenteras i relaterade avsnitt i dokumentationen för Adobe Campaign.
+>Begränsningar och rekommendationer som är kopplade till dessa sammanhang presenteras i relaterade avsnitt i Adobe Campaign-dokumentationen.
 
 Dessutom kan du i den **[!UICONTROL Regional settings]** nedrullningsbara listan välja vilket format som ska visas för datum och nummer.
 
@@ -130,12 +130,12 @@ Använd fliken **[!UICONTROL Access rights]** för att uppdatera grupper och nam
 
 Med hjälp av **[!UICONTROL Edit the access parameters...]** länken kommer du åt följande alternativ:
 
-* Med **[!UICONTROL Disable account]** alternativet kan du inaktivera operatörens konto: Han kommer inte längre att få tillgång till Adobe Campaign.
-* Med **[!UICONTROL Forbid access from the rich client]** det här alternativet kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till klientkonsolen i Adobe Campaign är inte längre tillgänglig.
+* Med **[!UICONTROL Disable account]** alternativet kan du inaktivera operatörens konto: Han kommer inte längre att ha tillgång till Adobe Campaign.
+* Med det här **[!UICONTROL Forbid access from the rich client]** alternativet kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
 * Det går att länka en säkerhetszon till operatören. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
 
-   Operatorn kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
+   Operatören kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
 
    Du kan också ange en uppsättning IP-adresser som ska auktoriseras att ansluta utan lösenord, som i följande exempel:
 
@@ -177,7 +177,7 @@ Du kan komma åt:
 
 ### Standardoperatorer {#default-operators}
 
-Adobe Campaign använder tekniska operatorer med profiler som konfigurerats som standard: Administratör (&#39;admin&#39;), fakturering (&#39;billing&#39;), övervakning, webbprogramagent (&#39;webapp&#39;) osv. Vissa av dessa beror på vilka program och alternativ som är installerade på plattformen: Operatorer av typen central och lokal är till exempel bara synliga om alternativet Distribuerad marknadsföring är installerat.
+Adobe Campaign använder tekniska operatorer med profiler som är konfigurerade som standard: Administratör (&#39;admin&#39;), fakturering (&#39;billing&#39;), övervakning, webbprogramagent (&#39;webapp&#39;) osv. Vissa av dessa beror på vilka program och alternativ som är installerade på plattformen: Operatorer av typen central och lokal är till exempel bara synliga om alternativet Distribuerad marknadsföring är installerat.
 
 >[!IMPORTANT]
 >
@@ -211,7 +211,7 @@ Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATI
 
 >[!NOTE]
 >
->Mer information om riktlinjer för säkerhet finns i checklistan [för säkerhetskonfiguration i](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)Adobe Campaign.
+>Mer information om säkerhetsriktlinjer finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html)Adobe Campaign-säkerhetskonfiguration.
 
 ## Operatörsgrupper {#operator-groups}
 
@@ -260,11 +260,11 @@ Standardoperatorgrupperna är:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: gör att du kan komma åt objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (frivillig modul Adobe Campaign).
+   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: gör att du kan komma åt objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (valfri Adobe Campaign-modul).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
-   * **[!UICONTROL INSERT FOLDERS]**: rätt att lägga in mappar i Adobe Campaign (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
+   * **[!UICONTROL INSERT FOLDERS]**: rätt att lägga in mappar i Adobe Campaign-trädet (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
    * **[!UICONTROL WORKFLOW]**: rätt att använda arbetsflöden.
 
    >[!NOTE]
@@ -273,7 +273,7 @@ Standardoperatorgrupperna är:
 
 1. **[!UICONTROL Content contributors]**
 
-   Operatorerna i den här gruppen har åtkomst till innehållsmapparna inom ramen för **[!UICONTROL Content management]** (valfri modul i Adobe Campaign). Den här gruppen ger inte några ytterligare rättigheter.
+   Operatorerna i den här gruppen har åtkomst till innehållsmapparna inom ramen för **[!UICONTROL Content management]** (valfri Adobe Campaign-modul). Den här gruppen ger inte några ytterligare rättigheter.
 
 1. **[!UICONTROL Access to reports]**
 
@@ -289,19 +289,19 @@ Standardoperatorgrupperna är:
 
 1. Lokal/central hantering
 
-   Med de här grupperna kan du använda **[!UICONTROL Distributed marketing]** (modulen Adobe Campaign (valfritt).
+   Med de här grupperna kan du använda **[!UICONTROL Distributed marketing]** (Adobe Campaign-modul (valfritt)).
 
 1. **[!UICONTROL Offer managers]**
 
-   Operatorerna i den här gruppen kan skapa och underhålla erbjudanden. Mer information finns på den här [sidan](../../interaction/using/operator-profiles.md).
+   Operatorerna i den här gruppen kan skapa och underhålla erbjudanden. For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
 Den här gruppen innehåller följande namngivna rättigheter:
 
-   * **[!UICONTROL INSERT FOLDERS]**: Rätt att lägga in mappar i Adobe Campaign (förutsatt att du har redigeringsbehörighet för de berörda grenarna).
+   * **[!UICONTROL INSERT FOLDERS]**: Rätt att lägga in mappar i Adobe Campaign-trädet (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
    * **[!UICONTROL EDIT FOLDERS]**: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
 
 ## Namngivna rättigheter {#named-rights}
 
-Som standard föreslår Adobe Campaign en uppsättning namngivna rättigheter som gör att du kan definiera de tillstånd som tilldelats operatorer och grupper av operatorer. Dessa rättigheter kan redigeras från trädnoden **[!UICONTROL Administration > Access management > Named rights]** .
+Som standard föreslår Adobe Campaign en uppsättning namngivna rättigheter som gör att du kan definiera de behörigheter som tilldelats operatorer och grupper av operatorer. Dessa rättigheter kan redigeras från trädnoden **[!UICONTROL Administration > Access management > Named rights]** .
 
 ![](assets/s_ncs_admin_named_rights.png)
 
@@ -317,7 +317,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL EDIT FOLDERS]**: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
 
-* **[!UICONTROL EXPORT]**: Användare kan exportera data från sina Adobe Campaign-instanser till en fil på servern eller den lokala datorn med hjälp av arbetsflödesaktiviteten **[!UICONTROL EXPORT]** .
+* **[!UICONTROL EXPORT]**: Användare kan exportera data från sina Adobe Campaign-instanser till en fil på servern eller den lokala datorn med hjälp av **[!UICONTROL EXPORT]** arbetsflödesaktiviteten.
 
 * **[!UICONTROL FILES ACCESS]**: Rätt att läsa och skriva för filer via ett skript som kan skrivas i arbetsflödesaktiviteten för att läsa och skriva filer på en server. **[!UICONTROL JavaScript]**
 
@@ -331,7 +331,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Rätt att skapa, redigera och spara en leverans. Användare med rätt **[!UICONTROL PREPARE DELIVERIES]** behörighet kan också starta leveransanalysprocessen.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. Mer information om detta hittar du på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Rätt att köra kommandon på olika programmeringsspråk.
 
@@ -355,7 +355,7 @@ Dessa rättigheter är följande:
 
 Standardgrupper och namngivna rättigheter ger operatorer åtkomst till vissa mappar i navigeringshierarkin och ger behörighet att läsa, skriva och ta bort.
 
-Matris med åtkomsträttigheter för Adobe Campaign finns [här](/help/platform/using/assets/access-rights-matrix.pdf).
+Adobe Campaign åtkomsträttighetsmatris finns [här](/help/platform/using/assets/access-rights-matrix.pdf).
 
 [![image](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
@@ -442,7 +442,7 @@ I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. Välj på **[!UICONTROL Restriction]** fliken **[!UICONTROL This folder is a view]**. Därefter visas alla leveranser i databasen.
+1. In the **[!UICONTROL Restriction]** tab, select **[!UICONTROL This folder is a view]**. Därefter visas alla leveranser i databasen.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
