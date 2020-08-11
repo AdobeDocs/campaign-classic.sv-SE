@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 
-# Skapa en leveransmall{#creating-a-delivery-template}
+# Creating a delivery template{#creating-a-delivery-template}
 
 ## Konvertera en befintlig leverans till en mall {#converting-an-existing-delivery-to-a-template}
 
@@ -61,7 +64,7 @@ Så här konfigurerar du en leveransmall:
 
 1. Fyll i kategorin **E-postparametrar** med ditt e-postämne och din målgrupp.
 1. Om du lägger till ditt **HTML-innehåll** för att anpassa mallen kan du visa en länk för spegelsida och en länk för att avbryta prenumerationen.
-1. Välj fliken **Förhandsgranska** . I listrutan **Testa personalisering** väljer du **Mottagare** för att förhandsgranska mallen som vald profil.
+1. Select the **Preview** tab. I listrutan **Testa personalisering** väljer du **Mottagare** för att förhandsgranska mallen som vald profil.
 
    ![](assets/delivery_template_5.png)
 
@@ -70,3 +73,21 @@ Så här konfigurerar du en leveransmall:
 >[!NOTE]
 >
 >För att undvika konfigurationsfel rekommenderar vi att du duplicerar en intern mall och ändrar dess egenskaper i stället för att skapa en ny mall.
+
+## Konfigurera en leveransmall
+
+I följande video visas hur du konfigurerar en mall för en ad hoc-leverans.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+
+## Så här ställer du in egenskaper för leveransmallar
+
+I följande video visas hur du ställer in leveransmallsegenskaperna och förklarar varje egenskap i detalj.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+
+## Distribuera en ad hoc-leveransmall
+
+I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postleverans och den förklarar skillnaden mellan en e-postleverans och ett leveransarbetsflöde.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
