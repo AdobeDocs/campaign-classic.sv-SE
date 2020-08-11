@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -229,3 +229,15 @@ Du kan använda **[!UICONTROL Seed addresses]** som mål för korrekturet: Med d
 >dirigeringsadresserna visas i [Om dirigeringsadresser](../../delivery/using/about-seed-addresses.md).
 
 Du kan kombinera definitionen för ett specifikt korrekturmål och användningen av dirigerade adresser med hjälp av **[!UICONTROL Specific target and Seed addresses]** alternativet. De relaterade konfigurationerna definieras sedan i två separata underflikar.
+
+## Hantera startvärden och korrektur i ett e-postmeddelande
+
+I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+Se även:
+* [Välja korrekturmål](#selecting-the-proof-target)
+
+* [Om dirigerade adresser](../../delivery/using/about-seed-addresses.md)
+
+* [Användningsfall: välja startadresser enligt villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
