@@ -1,7 +1,7 @@
 ---
-title: Konfigurerar Campaign-server
-seo-title: Konfigurerar Campaign-server
-description: Konfigurerar Campaign-server
+title: Konfigurera en Campaign-server
+seo-title: Konfigurera en Campaign-server
+description: Konfigurera en Campaign-server
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 0%
+source-wordcount: '3593'
+ht-degree: 3%
 
 ---
 
 
-# Konfigurerar Campaign-server{#configuring-campaign-server}
+# Konfigurera en Campaign-server{#configuring-campaign-server}
 
 I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
 
@@ -31,14 +31,14 @@ I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa
 >
 >Dessa konfigurationer måste utföras av administratörer och endast för **lokala** värdmodeller.
 >
->För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på Kontrollpanelen (till exempel listhantering för IP-tillåtna eller URL-behörigheter).
+>För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på Kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
 
 Mer information finns i följande avsnitt:
 
-* [Dokumentation för kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+* [Dokumentation för kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 * [Värdmodeller](../../installation/using/hosting-models.md)
 * [Funktionsmatris för lokal och värdbaserad Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
-* [Konfigurationssteg för hybridmodeller och värdbaserade modeller](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
+* [Konfigurationssteg](../../installation/using/about-hybrid-and-hosted-models.md) för hybridmodeller och värdbaserade modeller)
 
 Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
 
@@ -49,7 +49,7 @@ Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installat
 
 ### Om säkerhetszoner {#about-security-zones}
 
-Varje operator måste länkas till en zon för att kunna logga in på en instans och operatörens IP-adress måste inkluderas i adresserna eller adressuppsättningarna som definieras i säkerhetszonen. Säkerhetszonskonfigurationen utförs i konfigurationsfilen för Adobe Campaign-servern.
+Varje operator måste länkas till en zon för att kunna logga in på en instans och operatörens IP-adress måste inkluderas i adresserna eller adressuppsättningarna som definieras i säkerhetszonen. Säkerhetszonskonfigurationen utförs i Adobe Campaign-serverns konfigurationsfil.
 
 Operatorer är länkade till en säkerhetszon från sin profil i konsolen ( **[!UICONTROL Administration > Access management > Operators]** nod). Lär dig hur du länkar zoner till Campaign-operatorer i [det här avsnittet](#linking-a-security-zone-to-an-operator).
 
@@ -245,7 +245,7 @@ När zonerna har definierats och **[!UICONTROL Security zone]** uppräkningen ha
 
 ### Standardport för Tomcat {#default-port-for-tomcat}
 
-När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program som krävs för din konfiguration, måste du ersätta 8080-porten med en kostnadsfri port (till exempel 8090). Om du vill ändra den redigerar du filen **server.xml** som sparats i katalogen **/tomcat-7/conf** i installationsmappen för Adobe Campaign.
+När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program som krävs för din konfiguration, måste du ersätta 8080-porten med en kostnadsfri port (till exempel 8090). Om du vill ändra den redigerar du filen **server.xml** som har sparats i katalogen **/tomcat-7/conf** i installationsmappen för Adobe Campaign.
 
 Ändra sedan porten för JSP-reläsidorna. Det gör du genom att ändra filen **serverConf.xml** som sparats i katalogen **/conf** i installationskatalogen för Adobe Campaign. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
@@ -343,24 +343,24 @@ Gör så här:
 
 ## URL-behörigheter {#url-permissions}
 
-Standardlistan med URL:er som kan anropas av JavaScript-koder (arbetsflöden osv.) antalet instanser i Campaign Classic är begränsat. Det här är URL:er som gör att dina instanser fungerar som de ska.
+Standardlistan med URL:er som kan anropas av JavaScript-koder (arbetsflöden osv.) från dina instanser i Campaign Classic är begränsad. Dessa är URL:er som gör det möjligt för dina instanser att fungerar korrekt.
 
-Som standard tillåts inte instanser att ansluta till externa URL:er. Det är dock möjligt att lägga till vissa externa URL:er i listan över auktoriserade URL:er, så att instansen kan ansluta till dem. På så sätt kan ni koppla era Campaign-instanser till externa system, som till exempel SFTP-servrar eller webbplatser, för att möjliggöra fil- och/eller dataöverföring.
+Som standard tillåts instanser endast att ansluta till interna URL:er. Det är dock möjligt att lägga till vissa externa URL:er i listan över auktoriserade URL:er, så att instansen kan ansluta till dem. Detta gör det möjligt för dig att ansluta instanserna i Campaign till externa system såsom SFTP-servrar eller webbplatser för att möjliggöra fil- och/eller dataöverföring.
 
-När en URL har lagts till refereras den till i instansens konfigurationsfil (serverConf.xml).
+När en URL har lagts till refereras den i instansens konfigurationsfil (serverConf.xml).
 
 Hur du hanterar URL-behörigheter beror på din värdmodell:
 
 * **Hybrid** eller **lokal**: lägg till de URL:er som ska tillåtas i **filen** serverConf.xml. Detaljerad information finns i avsnittet nedan.
-* **Värdbaserad**: lägg till de URL:er som ska tillåtas via **Kontrollpanelen**. Mer information finns i den [dedikerade dokumentationen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html).
+* **Värdbaserad**: lägg till de URL:er som ska tillåtas via **Kontrollpanelen**. Se den [särskilda dokumentationen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) för mer information.
 
 Med **hybridvärdmodeller** och **lokala** värdmodeller måste administratören referera till en ny **urlPermission** i **filen serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 Det finns tre lägen för anslutningsskydd:
 
-* **Blockering**: Alla URL:er som inte tillhör listan Tillåt blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
-* **Tillstånd**: Alla URL:er som inte tillhör listan Tillåt tillåts.
-* **Varning**: Alla URL:er som inte tillhör listan Tillåt tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
+* **Blockering**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Tillstånd**: Alla URL:er som inte tillhör tillåtelselista tillåts.
+* **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ Det finns tre lägen för anslutningsskydd:
 
 >[!IMPORTANT]
 >
->Som standard använder nya kunders kunder **blockeringsläget**. Om de behöver tillåta en ny URL-adress kontaktar de administratören för att lägga till den i listan Tillåt.
+>Som standard använder nya kunders kunder **blockeringsläget**. Om de behöver tillåta en ny URL-adress kontaktar de administratören för att lägga till den i tillåtelselista.
 >
->Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:erna i listan Tillåt och aktivera **blockeringsläget**.
+>Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:erna i tillåtelselista och aktivera **blockeringsläget**.
 
 ## Dynamisk sidsäkerhet och vidarebefordran {#dynamic-page-security-and-relays}
 
@@ -434,7 +434,7 @@ I det här exemplet sammanfaller **`<IP_addresses>`** värdet med listan över I
 >
 >Följande konfiguration krävs bara för lokala installationer.
 
-Från och med bygge 8780 kan teknikadministratörer begränsa listan över tillåtna externa kommandon som kan användas i Adobe Campaign.
+Från och med bygge 8780 kan teknikadministratörer begränsa listan över auktoriserade externa kommandon som kan användas i Adobe Campaign.
 
 Om du vill göra det måste du skapa en textfil med en lista över kommandon som du inte kan använda, till exempel:
 
@@ -461,7 +461,7 @@ I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigar
 
 >[!NOTE]
 >
->Om ingen användare anges körs alla kommandon i användarkontexten för Adobe Campaign-instansen. Användaren måste vara en annan än den användare som kör Adobe Campaign.
+>Om ingen användare anges körs alla kommandon i användarkontexten för Adobe Campaign-instansen. Användaren måste vara en annan än den som kör Adobe Campaign.
 
 Exempel:
 
@@ -487,6 +487,7 @@ Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubr
 
    * **namn**: rubriknamn
    * **värde**: värdenamn.
+
    Exempel:
 
    ```
@@ -518,7 +519,7 @@ Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**
 
 Offentliga medel används för att [förvalta offentliga medel](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-De lagras i katalogen **/var/res/instance** i installationskatalogen för Adobe Campaign.
+De lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
 
 Den matchande URL:en är: **http://server/res/instance** där **instansen** är namnet på spårningsinstansen.
 
@@ -543,7 +544,7 @@ Du kan konfigurera flera arbetsflödesservrar (wfserver) och distribuera dem på
 
 Om du vill få åtkomst från webben väljer du **belastningsutjämnarläget** för att begränsa anslutningstiderna.
 
-Om du öppnar via Adobe Campaign-konsolen väljer du **hash-läge** eller **klisterläge** . Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
+Om du öppnar via Adobe Campaign Console väljer du **hash** - eller **sticky** -läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
 
 Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera tillhörigheter för arbetsflödet eller aktiviteten.
 
@@ -594,7 +595,7 @@ Varje process som konfigureras i den här filen har ett **processRestartTime** -
 
 ## Begränsa överförbara filer {#limiting-uploadable-files}
 
-Med ett nytt attribut **uploadAllowList** kan du begränsa vilka filtyper som kan överföras på Adobe Campaign-servern.
+Med ett nytt attribut **uploadAllowList** kan du begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
 
 Det här attributet är tillgängligt i **dataStore** -elementet i **filen serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
@@ -602,7 +603,7 @@ Standardvärdet för det här attributet är **.+** så kan du ladda upp alla fi
 
 Om du vill begränsa antalet möjliga format måste du ersätta attributvärdet med ett giltigt reguljärt java-uttryck. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: **uploadAllowList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format accepteras.
+Till exempel: **uploadAllowList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
 
 >[!IMPORTANT]
 >
