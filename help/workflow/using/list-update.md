@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Om listan redan finns läggs mottagarna till i det befintliga innehållet, såvi
 
 Om du vill att den skapade eller uppdaterade listan ska använda en annan tabell än mottagartabellen markerar du **[!UICONTROL Create or use a list with its own table]** alternativet.
 
-Om du vill använda alternativet måste de specifika tabellerna i fråga ha konfigurerats i Adobe Campaign-instansen.
+Om du vill använda alternativet måste de specifika tabellerna i fråga ha konfigurerats i din Adobe Campaign-instans.
 
 Om du sparar ett mål i en lista markeras i allmänhet slutet av ett arbetsflöde. Som standard har **[!UICONTROL List update]** aktiviteten därför ingen utgående övergång. Markera alternativet om du vill lägga till en **[!UICONTROL Generate an outbound transition]** .
 
@@ -58,13 +58,13 @@ I följande exempel följer listuppdateringsaktiviteten en fråga som riktar sig
 1. Låt alternativet vara markerat om du vill ta bort mottagare som inte matchar målinriktningsvillkoret och infoga de nya i listan. **[!UICONTROL Purge the list if it exists (otherwise add to the list)]**
 1. Låt även alternativet vara markerat **[!UICONTROL Create or use a list with its own table]** .
 1. Låt alternativet vara **[!UICONTROL Generate an outbound transition]** avmarkerat.
-1. Klicka **[!UICONTROL Ok]** och starta arbetsflödet.
+1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
    Listan med matchande mottagare skapas eller uppdateras.
 
-Mer information finns i videon [Skapa en lista över mottagare](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) .
+Mer information finns i videon [Skapa en lista över mottagare](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) .
 
 ## Indataparametrar {#input-parameters}
 
