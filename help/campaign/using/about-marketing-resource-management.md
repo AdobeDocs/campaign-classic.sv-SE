@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 Med modulen **Marketing Resource Management (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
 
-Adobe Campaign-operatorer kan samordna sina åtgärder och godkänna deras framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, meddelanden, diskussionsforum osv. De varnas i händelse eller fel eller fördröjning och i varje nytt steg i valideringscykeln.
+Adobe Campaign-operatorer kan koordinera sina åtgärder och godkänna sina framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, meddelanden, diskussionsforum osv. De varnas i händelse eller fel eller fördröjning och i varje nytt steg i valideringscykeln.
 
 Inom ramen för programmen och delprogrammen i marknadsföringsplanerna kan uppgifter skapas och tilldelas de berörda aktörerna och sedan hanteras under alla faser i dem.
 
@@ -46,23 +49,23 @@ I Adobe Campaign måste följande begrepp definieras:
 
 * **Marknadsföringsresurser**
 
-   Med Adobe Campaign kan ni följa utvecklingen av samverkansbaserade marknadsföringsprojekt som kommunikationsmedier, åtgärdsplaner, nyhetsbrev med mera. Framtagnings- och godkännandecykeln för dessa marknadsföringsresurser kan spåras från kontrollpanelen för resurser tills de publiceras.
+   Med Adobe Campaign kan ni följa utvecklingen av samverkansbaserade marknadsföringsprojekt som kommunikationsmedier, åtgärdsplaner, nyhetsbrev osv. Framtagnings- och godkännandecykeln för dessa marknadsföringsresurser kan spåras från kontrollpanelen för resurser tills de publiceras.
 
    Mer information finns i [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md).
-
-## Användarvänlighet {#user-friendliness}
 
 >[!NOTE]
 >
 >Mer information om den övergripande arbetsytan i Adobe Campaign finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >  
->Alla funktioner som är kopplade till leveranser och profilhantering beskrivs i [detta avsnitt](../../delivery/using/communication-channels.md).
+>Alla funktioner som är kopplade till leveranser och kommunikationskanaler beskrivs i [detta avsnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >Alla kampanjrelaterade funktioner beskrivs i [Få tillgång till marknadsföringskampanjer](../../campaign/using/accessing-marketing-campaigns.md).
 
 Dessutom erbjuder planer och program i Adobe Campaign extra funktioner:
 
-* Budgethantering. Mer information finns i [Kontrollera kostnader](../../campaign/using/controlling-costs.md).
-* Uppgiftshantering. Mer information finns i [Skapa och hantera uppgifter](../../campaign/using/creating-and-managing-tasks.md).
-* Hantering av marknadsföringsresurser. Mer information finns i [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md).
+* Budgethantering. For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md)
+
+* Uppgiftshantering. Mer information finns i [Skapa och hantera uppgifter](../../campaign/using/creating-and-managing-tasks.md)
+
+* Hantering av marknadsföringsresurser. Mer information finns i [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md)
 
