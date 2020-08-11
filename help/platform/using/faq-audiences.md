@@ -14,14 +14,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# Profiler och målgrupper Frågor och svar {#audiences-faq}
+# Profiles and Audiences FAQ {#audiences-faq}
 
-Lär dig att rikta in er på en population och hantera målgrupper inom Adobe Campaign.
+Lär dig målinrikta en population och hantera målgrupper inom Adobe Campaign.
 
 ## Hur skapar man mottagare? {#how-to-create-recipients-}
 
@@ -39,7 +42,7 @@ Ni kan [använda arbetsflöden för att skapa målgrupper](../../campaign/using/
 
 En lista är en statisk uppsättning mottagare som kan användas för leveransåtgärder, som uppdateras under importåtgärder eller arbetsflödeskörning. En population som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
 
-[Klicka här om du vill veta mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Du kan även titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) om hur du skapar en lista manuellt och [den här andra videon](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) för att skapa och automatiskt uppdatera en lista över mottagare i ett arbetsflöde.
+[Klicka här om du vill veta mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Du kan även titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) om hur du skapar en lista manuellt och [den här andra videon](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) för att skapa och automatiskt uppdatera en lista över mottagare i ett arbetsflöde.
 
 ## Hur kan jag deduplicera en population innan jag skickar ett meddelande? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
