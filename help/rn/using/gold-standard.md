@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
+source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _7 juli 2020_
 
 Version 9032@efd8a94 innehåller följande korrigering:
 
-Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades eller när en gammal marknadsföringsinstans med ett nyligen använt MID användes. (NEO-26411)
+Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades. (NEO-26411)
 
 >[!CAUTION]
 >
