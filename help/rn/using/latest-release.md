@@ -13,23 +13,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 0%
+source-wordcount: '1976'
+ht-degree: 3%
 
 ---
 
 
 # Senaste versionen{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Den nya Kontrollpanelen i juni** med övervakning av aktiva profiler, granskning av deldomänsleveranser och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Den nya Kontrollpanelen i juni** med övervakning av aktiva profiler, granskning av deldomänsleveranser och hantering av GPG-nycklar. [Lär dig mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
-* Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades eller när en gammal marknadsföringsinstans med ett nyligen använt MID användes. (NEO-26411)
+* Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades. (NEO-26411)
 * Korrigerade ett problem som medförde att osignerade länkar från anpassade domäner blockerades när de borde tillåtas. (NEO-25210)
 * Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook. (NEO-25688)
 * Korrigerade ett problem som ledde till att sidans URL:er speglades och definierades felaktigt i e-postleveranser. (NEO-26084)
@@ -51,7 +51,7 @@ _22 juli 2020_
 
 _8 juni 2020_
 
-**Nyheter?**
+**Vad är nytt?**
 
 <table> 
  <thead> 
@@ -77,7 +77,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>Nu kan du ansluta din Campaign-instans till din externa Azure Synapse-databas. Anslutningen hanteras via ett nytt externt konto.</p>
-    <p>Azure Synapse är bara tillgängligt för hybridmiljöer och lokala miljöer. Se den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">detaljerade dokumentationen</a> för mer information.</p>
+    <p>Azure Synapse är bara tillgängligt för hybridmiljöer och lokala miljöer. Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -93,9 +93,9 @@ _8 juni 2020_
   <tr> 
    <td> <p>Thailand’s Personal Data Protection Act (PDPA) är den nya integritetslagen som harmoniserar och moderniserar dataskyddskraven för Thailand. </p>
    <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) börjar gälla från och med 16 augusti för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
-   <p>Dessa bestämmelser gäller för Adobe Campaign-kunder som har data för registrerade i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta din beredskap för PDPA och LGPD:</p>
+   <p>Dessa regler gäller för Adobe Campaign-kunder som har data för registrerade i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta din beredskap för PDPA och LGPD:</p>
    <ul> 
-     <li><p>Rätt till åtkomst och rätt att ta bort: vi utnyttjar de funktioner som tillkommit för GDPR och CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
+     <li><p>Rätt till åtkomst och rätt att ta bort: vi använder de funktioner som tillkommit för GDPR och CCPA.  <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
      <li> <p>När du skapar en sekretessbegäran med Campaign-gränssnittet eller API:t väljer du nu <strong>regeltypen</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Läs mer</a>.</p></li>
     </ul>
    </td> 
@@ -126,11 +126,11 @@ Läs mer i [Matrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.h
 
 **Förbättringar**
 
-* Transaktionsmeddelanden har förbättrats för en bättre användarupplevelse. Du kan nu avpublicera en transaktionsmeddelandemall som tar bort den från körningsinstanserna. [Läs mer](../../message-center/using/template-unpublication.md).
+* Transaktionsmeddelanden har förbättrats för en bättre användarupplevelse. Du kan nu avpublicera en transaktionsmeddelandemall som tar bort den från körningsinstanserna. [Lär dig mer](../../message-center/using/template-unpublication.md).
 
 * Det finns nya alternativ för att ange begränsningar när du skickar e-postmeddelanden som innehåller bilder eller bilagor. Dessa skyddsräcken kan undvika prestandaproblem, vilket är särskilt användbart för transaktionsmeddelanden. [Läs mer](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Med det nya alternativet **Förbered leveransdelarna i databasen** kan leveransförberedelser utföras direkt i databasen, vilket avsevärt kan snabba upp analysen. Det här alternativet är bara tillgängligt för särskilda konfigurationer. [Läs mer](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
+* Med det nya alternativet **Förbered leveransdelarna i databasen** kan leveransförberedelser utföras direkt i databasen, vilket avsevärt kan snabba upp analysen. Det här alternativet är bara tillgängligt för särskilda konfigurationer. [Lär dig mer](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * Prestandan för [CRM Connector-aktiviteten](../../workflow/using/crm-connector.md) för Microsoft Dynamics har förbättrats. (NEO-13303, NEO-12710)
 
@@ -140,17 +140,17 @@ Läs mer i [Matrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.h
    >
    >Denna förbättring kräver ytterligare ett steg efter uppgraderingen. Se avsnittet **Technical Evolutions** nedan.
 
-* Rensningsarbetsflödet har förbättrats. Överblivna arbetstabeller för alla borttagna arbetsflöden tas nu även bort automatiskt i rensningsarbetsflödet. [Läs mer](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+* Rensningsarbetsflödet har förbättrats. Överblivna arbetstabeller för alla borttagna arbetsflöden tas nu även bort automatiskt i rensningsarbetsflödet. [Lär dig mer](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * Certifikat för iOS-mobilprogram med iOS HTTP2-anslutning valideras nu innan push-meddelanden skickas, vilket förhindrar att leveranser misslyckas på grund av utgångna certifikat.
 
-* Hanteringen av HTTP-proxyanslutningar har förbättrats. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Hanteringen av HTTP-proxyanslutningar har förbättrats. [Lär dig mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Andra ändringar**
 
 * Äldre SMS-anslutningar är nu föråldrade. Gå till sidan [](../../rn/using/deprecated-features.md)Borttagna funktioner.
 
-* Du kan inte längre använda ditt eget Litmus-konto för att etablera och använda Inkorgsåtergivning i Adobe Campaign. [Läs mer](../../delivery/using/inbox-rendering.md).
+* Du kan inte längre använda ditt eget Litmus-konto för att etablera och använda Inkorgsåtergivning i Adobe Campaign. [Lär dig mer](../../delivery/using/inbox-rendering.md).
 
 * Färgen på visningsnamnen har ändrats från mörkblått till mörkblått cyan för att det ska bli lättare att skilja vyer från mappar. [Läs mer](../../platform/using/access-management.md#about-views)
 
@@ -162,7 +162,7 @@ Läs mer i [Matrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.h
 
 * Ett felmeddelande har lagts till i loggfilen för att varna användare när den hämtade filen är större än diskutrymmet.
 
-* Följande funktioner är nu tillgängliga för Snowflake-kopplingen: MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo.
+* Följande funktioner är nu tillgängliga för Snowflake-anslutningen: MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo.
 
 **Teknisk utveckling**
 
