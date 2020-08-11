@@ -14,33 +14,36 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
 
 # Viktiga begrepp {#key-concepts}
 
-Lär dig viktiga steg att börja med Adobe Campaign.
+Lär dig hur du börjar med Adobe Campaign.
 
-## Kan jag ansluta till Campaign Classic med ett Adobe-ID? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
+## Kan jag ansluta till Campaign Classic med en Adobe ID? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
 
-Tack vare integreringen med IMS (Adobe Identity Management System) kan användare ansluta till Adobe Campaign-konsolen med sitt Adobe ID. Integreringen ger följande fördelar:
+Tack vare integreringen med IMS (Adobe Identity Management System) kan användare ansluta till Adobe Campaign-konsolen med sin Adobe ID. Integreringen ger följande fördelar:
 
 * Samma ID kan användas för alla Experience Cloud-lösningar.
-* Anslutningen sparas när Adobe Campaign används med olika integreringar.
+* Anslutningen memoreras när du använder Adobe Campaign med olika integreringar.
 * Lösenordshanteringsprincip för säkerhetslösenord.
-* Användning av Federated ID-konton (extern ID-leverantör).
+* Användning av Federated ID (extern ID-leverantör).
 
-[Klicka här om du vill veta mer](../../integrations/using/about-adobe-id.md) om hur du använder Campaign Classic med ett Adobe-ID.
+[Klicka här om du vill veta mer](../../integrations/using/about-adobe-id.md) om hur du använder Campaign Classic med en Adobe ID.
 
 ## Vad är min version av Campaign? {#what-is-my-version-of-campaign-}
 
-[ Kontrollera ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)version och build-nummer **i** Hjälp > Om... meny för Campaign-klientkonsolen.
+Kontrollera [version och build-nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) i **Hjälp > Om...** meny för Campaign-klientkonsolen.
 
 ## Vilka är skillnaderna när du arbetar lokalt jämfört med i en hostingmiljö? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic innehåller en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och vilka konfigurationer de har beror på [vilken typ av distribution](../../installation/using/hosting-models.md) du har: värdbaserade (hanterade tjänster) eller på plats.
+Adobe Campaign Classic innehåller en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och vilka konfigurationer de har beror på [vilken typ av distribution](../../installation/using/hosting-models.md) du har: värdbaserad (Managed Services) eller lokal.
 
 [Klicka här om du vill veta mer](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
@@ -58,13 +61,13 @@ Detta är en uppsättning rättigheter och begränsningar som tillåter eller ne
 
 ## Hur säkrar jag integritetsefterlevnaden med Campaign? {#how-to-be-gdpr-compliant-with-campaign-}
 
-Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att uppfylla sekretesskraven för GDPR och CCPA.
+Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa sekretesskraven för GDPR och CCPA.
 
-Läs [det här dokumentet](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html) för att få en förståelse för de verktyg och funktioner som Adobe Campaign tillhandahåller, samt för bästa praxis, för att hjälpa er med er GDPR-efterlevnad när ni använder vår tjänst. Implementeringsstegen för Campaign Classic beskrivs i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+Läs [det här dokumentet](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html) för att få en förståelse för de verktyg och funktioner som Adobe Campaign tillhandahåller, samt för bästa praxis, för att hjälpa dig att uppfylla GDPR-kraven när du använder vår tjänst. Implementeringsstegen för Campaign Classic beskrivs i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 ## Vad är Campaign-användargränssnittskoncept som jag bör känna till? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) om du vill veta mer om grunderna för arbetsytan i Adobe Campaign. Du kan också titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
+Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) om du vill veta mer om grunderna i Adobe Campaign arbetsyta. Du kan också titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
 
 ## Hur väljer jag målgrupp för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -76,7 +79,7 @@ Med Adobe Campaign kan ni använda olika strategier för att skapa målgrupper o
 
 Adobe Campaign innehåller arbetsflöden för att samordna alla processer och uppgifter i olika moduler på programservern. I den omfattande grafiska miljön kan ni utforma processer som segmentering, kampanjhantering, filhantering, medarbetare osv. Arbetsflödesmotorn kör och spårar dessa processer.
 
-Du kan till exempel använda ett arbetsflöde för att hämta en fil från en server, expandera den och sedan importera poster i Adobe Campaign-databasen.
+Du kan till exempel använda ett arbetsflöde för att hämta en fil från en server, expandera den och sedan importera poster som finns i Adobe Campaign-databasen.
 
 Ett arbetsflöde kan även omfatta en eller flera operatorer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransåtgärd, tilldela en eller flera operatorer en uppgift att arbeta med innehåll, ange mål och godkänna korrektur innan leveransen påbörjas.
 
@@ -96,17 +99,17 @@ Lär dig hur du använder Adobe Campaign för att [skicka personaliserade push-m
 
 ## Hur designar och delar man en undersökning online? {#how-to-design-and-share-an-online-survey-}
 
-Lär dig hur du [skapar en onlineenkät](../../web/using/getting-started-with-surveys.md)med viktiga steg för att designa och publicera den med Campaign Classic.
+Lär dig hur du [skapar en onlineundersökning](../../web/using/getting-started-with-surveys.md)med viktiga steg för att designa och publicera den med Campaign Classic.
 
 ## Hur skapar man landningssidor? {#how-to-create-landing-page-}
 
-Du kan använda redigeraren för digitalt innehåll i Adobe Campaign för att utforma en landningssida och definiera mappning med databasfält.
+Du kan använda Adobe Campaign Digital Content Editor för att utforma en landningssida och definiera mappning med databasfält.
 
 [Klicka här om du vill veta mer](../../web/using/creating-a-landing-page.md).
 
 ## Hur kan jag spåra leveranser? {#how-can-i-track-deliveries-}
 
-Du kan spåra leveranser som skickats med Campaign Classic via dedikerade [leveransrapporter](../../reporting/using/delivery-reports.md) och sedan övervaka leveranserna.
+Du kan spåra leveranser som skickas med Campaign Classic via dedikerade [leveransrapporter](../../reporting/using/delivery-reports.md) och sedan övervaka leveranserna.
 
 Läs mer om spårningshantering i Campaign på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
@@ -116,7 +119,7 @@ Läs checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html) s
 
 ## Hur översätter jag ett felmeddelande? {#how-to-translate-an-error-message-}
 
-Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning visas på [den här sidan](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html).
+Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning visas på [den här sidan](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html).
 
 ## Kan jag skapa ett webbformulär och samla in svar i Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
@@ -124,12 +127,12 @@ Lär dig hur du [skapar ett webbformulär](../../web/using/about-web-forms.md): 
 
 ## Finns det en lista över borttagna funktioner och versioner? {#is-there-a-list-of-deprecated-features-and-versions-}
 
-Adobe utvärderar ständigt funktionerna i produkten och planerar att ersätta funktioner med kraftfullare versioner, eller bestämmer sig för att återimplementera utvalda delar för att bli bättre förberedda för framtida förväntningar eller tillägg. Eftersom Campaign fungerar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, så att endast de versioner som stöds kan implementeras.
+Adobe utvärderar ständigt funktionerna i produkten och planerar att ersätta funktioner med kraftfullare versioner, eller beslutar sig för att återimplementera utvalda delar för att bli bättre förberedda för framtida förväntningar eller tillägg. Eftersom Campaign fungerar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, så att endast de versioner som stöds kan implementeras.
 
 [Klicka här om du vill veta mer](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 ## Finns det nya dokumentationsuppdateringar och hjälpmaterial? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De senaste uppdateringarna för Campaign Classic-dokumentation visas [på den här sidan](https://docs.adobe.com/content/help/en/campaign-classic/using/documentation-updates.html).
+De senaste dokumentationsuppdateringarna för Campaign Classic finns [på den här sidan](https://docs.adobe.com/content/help/en/campaign-classic/using/documentation-updates.html).
 
 Du kan även läsa de senaste tekniska anteckningarna som finns [på den här sidan](https://helpx.adobe.com/campaign/kb/article-list.html).
