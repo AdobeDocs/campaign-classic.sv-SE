@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Med dataorienterade API:er kan du hantera hela datamodellen.
 
 ## Översikt över datamodellen {#overview-of-the-datamodel}
 
-Adobe Campaign erbjuder inte ett dedikerat läs-API per entitet (ingen getRecipient- eller getDelivery-funktion osv.). Använd metoderna för läsning och ändring av QUERY- och WRITER-data för att komma åt modellens data.
+Adobe Campaign erbjuder inte ett dedikerat läs-API per entitet (ingen getRecipient- eller getDelivery-funktion, osv.). Använd metoderna för läsning och ändring av QUERY- och WRITER-data för att komma åt modellens data.
 
-Med Adobe Campaign kan ni hantera samlingar: Med frågor kan du återställa en uppsättning information som samlats in i hela basen. Till skillnad från åtkomst i SQL-läge returnerar Adobe Campaign-API:er ett XML-träd i stället för datakolumner. Adobe Campaign skapar därmed sammansatta dokument med alla insamlade data.
+Med Adobe Campaign kan du hantera samlingar: Med frågor kan du återställa en uppsättning information som samlats in i hela basen. Till skillnad från åtkomst i SQL-läge returnerar Adobe Campaign API:er ett XML-träd i stället för datakolumner. Adobe Campaign skapar alltså sammansatta dokument med alla insamlade data.
 
 Det här operativläget erbjuder inte en-till-en-mappning mellan attributen och elementen i XML-dokumenten och kolumnerna i tabellerna i databasen.
 
@@ -36,15 +39,15 @@ XML-dokument lagras i databasens MEMO-typfält.
 
 ## Beskrivning av modellen {#description-of-the-model}
 
-Du måste känna till datamodellen för Adobe Campaign för att kunna hantera fälten i databasen i dina skript.
+Du måste känna till Adobe Campaign datamodell för att kunna adressera fälten i databasen i dina skript.
 
-En presentation av datamodellen finns i beskrivningen [av](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)datamodellen för Adobe Campaign.
+En presentation av datamodellen finns i beskrivningen [av](../../configuration/using/data-model-description.md)Adobe Campaign datamodell.
 
 Läs den här artikeln om du vill skapa en struktur: [Så här skapar du en datamodell eller datamordlista](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
 ## Fråga och skrivprogram {#query-and-writer}
 
-Följande introduktionsschema innehåller information om utbyten på låg nivå för läsning (ExecuteQuery) och skrivning (Writer) mellan databas och kund (webbsidor eller Adobe Campaign-klientkonsolen).
+Följande introduktionsschema innehåller information om utbyten på låg nivå för läsning (ExecuteQuery) och skrivning (Writer) mellan databas och kund (webbsidor eller Adobe Campaign klientkonsol).
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -390,7 +393,7 @@ När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[i
 </select>
 ```
 
-För att undvika bindning av en parameter måste attributet noSqlBind fyllas i med värdet true.
+För att undvika bindning av en parameter måste attributet &quot;noSqlBind&quot; fyllas i med värdet &quot;true&quot;.
 
 >[!IMPORTANT]
 >
@@ -398,7 +401,7 @@ För att undvika bindning av en parameter måste attributet noSqlBind fyllas i m
 
 #### Tips för frågeskapande: {#query-building-tip-}
 
-Om du vill ha hjälp med syntaxen för en fråga kan du skriva frågan med den generiska frågeredigeraren i Adobe Campaign-klientkonsolen ( **[!UICONTROL Tools/ Generic query editor...]** menyn). Så här gör du:
+Om du vill ha hjälp med syntaxen för en fråga kan du skriva frågan med den generiska frågeredigeraren i Adobe Campaign klientkonsol ( **[!UICONTROL Tools/ Generic query editor...]** menyn). Så här gör du:
 
 1. Välj de data som ska hämtas:
 
@@ -469,7 +472,7 @@ I stället för:
 
 ### Exempel på SOAP-meddelanden {#example-of-soap-messages}
 
-* Fråga:
+* Förfrågan:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -588,7 +591,7 @@ Uppdatera eller infoga för flera mottagare:
 
 ### Exempel på länkar {#example-on-links}
 
-#### Exempel 1 {#example-1}
+#### Example 1 {#example-1}
 
 Kopplar mappen till en mottagare baserat på dess interna namn (@name).
 
@@ -606,7 +609,7 @@ Definitionen av nyckeln för huvudentiteten (&quot;nms:receive&quot;) består av
 >
 >Åtgärden &quot;none&quot; som anges i mappelementet definierar en avstämning för mappen utan uppdatering eller infogning.
 
-#### Exempel 2 {#example-2}
+#### Example 2 {#example-2}
 
 Uppdaterar företaget (länkad tabell i&quot;cus:company&quot;-schema) från en mottagare:
 
@@ -616,7 +619,7 @@ Uppdaterar företaget (länkad tabell i&quot;cus:company&quot;-schema) från en 
 </recipient>
 ```
 
-#### Exempel 3 {#example-3}
+#### Example 3 {#example-3}
 
 Lägga till en mottagare i en grupp med grupprelationstabellen (&quot;nms:rcpGrpRel&quot;):
 
@@ -638,7 +641,7 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
 
 ### Exempel på SOAP-meddelanden {#example-of-soap-messages-1}
 
-* Fråga:
+* Förfrågan:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
