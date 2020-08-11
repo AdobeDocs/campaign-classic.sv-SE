@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
+source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2110'
 ht-degree: 8%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 8%
          + [Konfiguration](platform/using/faq-campaign-config.md)
          + [Rapporter](platform/using/faq-reporting.md)
          + [Utveckling](platform/using/faq-developers.md)
-      + [Tutorials](platform/using/tutorials.md)
+      + [Självstudiekurser](platform/using/tutorials.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
@@ -89,13 +89,17 @@ ht-degree: 8%
       + [CRM Connectors](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
-   + Kom igång med meddelanden {#about-deliveries-and-channels}
-      + [Kommunikationskanaler](delivery/using/communication-channels.md)
-      + [Bästa praxis](delivery/using/delivery-best-practices.md)
-      + [Åtkomst till leveransinformation](delivery/using/accessing-deliveries-information.md)
-      + [Typer av leveranser](delivery/using/types-of-deliveries.md)
+   + [Kom igång med meddelanden](delivery/using/communication-channels.md)
+   + Bästa praxis {#delivery-bestpractices}
+      + [Lär dig god praxis](delivery/using/delivery-best-practices.md)
+      + [Optimera leveransen](delivery/using/optimize-delivery.md)
+      + [Använd mallar](delivery/using/use-templates.md)
+      + [Skapa personaliserat innehåll](delivery/using/design-and-personalize.md)
+      + [Definiera rätt målgrupp](delivery/using/define-the-right-audience.md)
+      + [Kontrollera före sändning](delivery/using/check-before-sending.md)
+      + [Spåra och övervaka](delivery/using/track-and-monitor.md)
    + Viktiga steg när du skapar en leverans {#key-steps-when-creating-a-delivery}
-      + [Om leveransskapande ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Kom igång med leveranser](delivery/using/steps-about-delivery-creation-steps.md)
       + [Skapa och identifiera leveransen](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Definiera målpopulationen](delivery/using/steps-defining-the-target-population.md)
       + [Verifierar leveransen](delivery/using/steps-validating-the-delivery.md)
