@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6943'
-ht-degree: 14%
+source-wordcount: '7069'
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,37 @@ ht-degree: 14%
 
 På den här sidan visas alla nya funktioner och dokumentationsuppdateringar per månad och Campaign-versionen.
 
+
 Du kan även läsa [Adobe Campaign Classic Versionsinformation](../../rn/using/latest-release.md) för mer information.
+
+## Augusti 2020 {#aug-2020}
+
+Lär dig de bästa metoderna för leveransdesign och att skicka med Campaign i ett särskilt avsnitt. [Läs mer](../../delivery/using/delivery-best-practices.md)
+
+Landningssidan för bästa praxis för slutleverans har förbättrats för att underlätta tillgången till underavsnitt. [Läs mer](../../delivery/using/deliverability-key-points.md)
+
+Instruktionsvideor finns nu tillgängliga för följande ämnen:
+
+* [Ställa in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
+
+* [Så här skapar du ett e-postmeddelande i en kampanj](../../campaign/using/designing-marketing-campaigns.md)
+
+* [Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll](../../delivery/using/conditional-content.md)
+
+* [Konfigurera och distribuera en leveransmall](../../delivery/using/creating-a-delivery-template.md)
+
+* [Så här aktiverar och använder du AMP för e-post](../../delivery/using/defining-interactive-content.md)
+
+* [Skräddarsy e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
+
+* [Skräddarsy e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
+
+* [Hantera startvärden och korrektur i ett e-postmeddelande](../../delivery/using/steps-defining-the-target-population.md)
+
+* [Så här ställer du in en återkommande leverans](../../workflow/using/recurring-delivery.md)
+
+* [Konfigurera kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
+
 
 ## Juli 2020 {#july-2020}
 
@@ -438,7 +468,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
