@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -110,3 +113,9 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    >[!NOTE]
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
+
+## Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll
+
+Lär dig hur du lägger till villkorligt innehåll i en leverans med ett exempel på ett flerspråkigt nyhetsbrev.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
