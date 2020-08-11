@@ -14,9 +14,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Upptäck viktiga steg för att utforma flerkanalsmeddelanden med Adobe Campaign.
 
 ## Finns det särskilda riktlinjer för hur man utformar e-postmeddelanden med Campaign? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
 
-Innan du börjar designa e-postmeddelanden bör du lära dig de koncept och bästa metoder som rör leveransdesign och skicka med Adobe Campaign.
+Innan du börjar designa e-postmeddelanden bör du lära dig de koncept och bästa metoder som är kopplade till leveransdesign och skicka med Adobe Campaign.
 
-[Klicka här om du vill veta mer](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+[Klicka här om du vill veta mer](../../delivery/using/delivery-best-practices.md).
 
 ## Vad är en leveransmall? {#what-is-a-delivery-template-}
 
@@ -54,7 +54,7 @@ Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e
 
 ## Hur kan jag personalisera meddelanden? {#how-can-i-personalize-messages-}
 
-Meddelanden från Adobe Campaign kan personaliseras på flera olika sätt, när det gäller innehållet eller utseendet på meddelanden. De här sätten kan kombineras enligt kriterier som tagits särskilt från mottagarprofilerna. I allmänhet kan ni med Adobe Campaign
+Meddelanden från Adobe Campaign kan personaliseras på flera olika sätt, vad gäller innehåll eller utseendet på meddelanden. De här sätten kan kombineras enligt kriterier som tagits särskilt från mottagarprofilerna. I allmänhet kan du göra följande med Adobe Campaign:
 
 * Anpassa meddelandeformatet. [Klicka här om du vill veta mer](../../delivery/using/defining-the-email-content.md#message-content).
 * Infoga dynamiska anpassningsfält. [Klicka här om du vill veta mer](../../delivery/using/personalization-fields.md).
