@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
+source-wordcount: '301'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 Den här integreringen kan till exempel användas för att skapa ett nyhetsbrev i Adobe Experience Manager som sedan används i Adobe Campaign som en del av en e-postkampanj.
 
-Ett mer detaljerat exempel på hur du använder den här integreringen finns i den här [steg-för-steg-guiden](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html).
+Ett mer detaljerat exempel på hur du använder den här integreringen finns i den här [steg-för-steg-guiden](https://helpx.adobe.com/campaign/kb/acc-aem.html).
 
 **Från Adobe Experience Manager:**
 
-1. Klicka på **Adobe Experience** -logotypen i den övre vänstra delen av sidan i din AEM-författarinstans och välj **[!UICONTROL Sites]**.
+1. Klicka på **Adobe Experience** -logotypen i det övre vänstra hörnet av AEM författare och välj **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 
@@ -80,14 +80,14 @@ Nyhetsbrevet är nu klart och synkroniserat i Adobe Campaign.
    ![](assets/aem_uc_10.png)
 
 1. Lägg till en **[!UICONTROL Label]** till leveransen och klicka på **[!UICONTROL Continue]**.
-1. Klicka på **[!UICONTROL Synchronize]** knappen.
+1. Klicka på knappen **[!UICONTROL Synchronize]**.
 
-   Om den här knappen inte visas i gränssnittet klickar du på **[!UICONTROL Properties]** -knappen och väljer **[!UICONTROL Advanced]** -fliken. Fältet **[!UICONTROL Content editing mode]** ska ställas in på **[!UICONTROL AEM]** med din AEM-instans i **[!UICONTROL AEM account]** fältet.
+   Om den här knappen inte visas i gränssnittet klickar du på **[!UICONTROL Properties]** -knappen och väljer **[!UICONTROL Advanced]** -fliken. Fältet **[!UICONTROL Content editing mode]** ska ställas in på **[!UICONTROL AEM]** med din AEM i **[!UICONTROL AEM account]** fältet.
 
    ![](assets/aem_uc_11.png)
 
-1. Markera den leverans du skapat tidigare i Adobe Experience Manager och klicka på **[!UICONTROL Ok]**.
-1. Klicka på **[!UICONTROL Refresh content]** knappen så snart några ändringar har gjorts i din AEM-leverans.
+1. Markera leveransen som du skapat tidigare i Adobe Experience Manager och klicka på **[!UICONTROL Ok]**.
+1. Klicka på **[!UICONTROL Refresh content]** knappen så snart några ändringar har gjorts i AEM.
 
    ![](assets/aem_uc_12.png)
 
