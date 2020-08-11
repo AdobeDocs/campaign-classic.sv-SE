@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 
 # Om Campaign HTML-redigerare{#about-campaign-html-editor}
 
-DCE ( **Digital Content Editor)** är en redigerare för HTML-innehåll som gör att du enkelt kan skapa eller ändra mallar eller innehåll i HTML-format i Adobe Campaign.
+DCE ( **Digital Content Editor)** är en HTML-redigerare där du enkelt kan skapa och ändra mallar eller innehåll i HTML-format i Adobe Campaign.
 
 Med redigeraren för digitalt innehåll kan du infoga och formatera sidelement och associera databasfält med element från en HTML-sida. Den erbjuds som standard när du skapar en sida för ett webbprogram, eller är tillgänglig när du skapar leveranser som baseras på en mall där den är aktiv.
 
@@ -60,7 +63,7 @@ Så här skapar du en e-postleverans:
 * Skapa en leverans från en e-posttypsmall där DCE är aktiv,
 * Välj befintligt innehåll eller skapa innehåll från en standardmall,
 * Redigera och konfigurera onlinematerial,
-* Skicka leveransen. Mer information finns i [det här avsnittet](../../delivery/using/communication-channels.md).
+* Skicka leveransen. Mer information finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
