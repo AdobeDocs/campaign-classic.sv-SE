@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '6953'
+source-wordcount: '6943'
 ht-degree: 14%
 
 ---
@@ -291,7 +291,7 @@ De bästa metoderna för prestandaförbättringar av arbetsflöden och leveranse
 
 Kontrollpanelen - [läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 
-Granskningsspår - [läs mer](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
+Granskningsspår - [läs mer](../../production/using/audit-trail.md)
 
 **Andra dokumentationsuppdateringar som medföljer utgåvan**
 
