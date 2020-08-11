@@ -1,6 +1,6 @@
 ---
-title: Viktiga punkter vid hantering av leveranser i Adobe Campaign Classic
-description: Vilka är de viktigaste punkterna att kontrollera vid hantering av leveranser i Adobe Campaign Classic?
+title: Viktiga punkter vid hantering av slutprodukter i Adobe Campaign Classic
+description: Vilka är de viktigaste punkterna att kontrollera när man hanterar produkter i Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 0%
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
 # Leveransnyckelpoäng{#deliverability-key-points}
 
-För att optimera leveransen av era Adobe Campaign-e-postmeddelanden rekommenderar vi att du använder de bästa metoderna nedan. Leveransproblem är i allmänhet kopplade till skyddsåtgärder mot skräppost som implementeras av Internet-leverantörer och e-postserveradministratörer.
+För att optimera leveransen av dina e-postmeddelanden från Adobe Campaign rekommenderar vi att du använder de bästa metoderna nedan. Leveransproblem är i allmänhet kopplade till skyddsåtgärder mot skräppost som implementeras av Internet-leverantörer och e-postserveradministratörer.
 
 **E-postleveransen** avser den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
 
@@ -71,3 +71,92 @@ I mindre utsträckning kan innehållet i vissa meddelanden leda till att vissa f
 ## Arbeta med ditt rykte {#reputation}
 
 Spammar gör planerade leveranser för att bevara sitt rykte över tiden. Ibland måste de anpassa sin marknadsföringsplan så att den uppfyller de bästa metoderna som internetleverantörerna har infört, så att de konfigurerar regelbundna leveranser efter ett rykte som når ända upp.
+
+## God praxis {#best-practices}
+
+Lär dig de bästa sätten att leverera med Adobe Campaign. Använd länkarna nedan för att navigera bland ämnen och hitta vägledning.
+
+<table>
+<tr>
+  <td>
+    <a href="starting-new-platform.md">
+      <img alt="Starta" src="assets/do-not-localize/start.svg"/>
+    </a>
+    <div>
+      <a href="starting-new-platform.md">
+    <strong>Starta</strong>
+    </a>
+    </div>
+    <p>
+    <em>Starta en ny plattform</em>
+    <p>
+  </td>
+   <td>
+    <a href="control-message-content.md">
+      <img alt="Design" src="assets/do-not-localize/design.svg"/>
+    </a>
+    <div>
+      <a href="control-message-content.md">
+    <strong>Design</strong>
+    </a>
+    </div>
+    <p>
+    <em>Kontrollera meddelandeinnehåll</em>
+    <p>
+  </td>
+  <td>
+    <a href="improve-reputation.md">
+      <img alt="Design" src="assets/do-not-localize/check.svg"/>
+    </a>
+    <div>
+      <a href="improve-reputation.md">
+    <strong>Skicka</strong>
+    </a>
+    </div>
+    <p>
+    <em>Förbättra ert rykte</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="technical-recommendations.md">
+      <img alt="Optimera" src="assets/do-not-localize/optimize.svg"/>
+    </a>
+    <div>
+      <a href="technical-recommendations.md">
+    <strong>Optimera</strong>
+    </a>
+    </div>
+    <p>
+    <em>Tekniska rekommendationer</em>
+    <p>
+  </td>
+   <td>
+    <a href="monitoring-deliverability.md">
+      <img alt="Markera" src="assets/do-not-localize/monitor.svg"/>
+    </a>
+    <div>
+      <a href="monitoring-deliverability.md">
+    <strong>Bildskärm</strong>
+    </a>
+    </div>
+    <p>
+    <em>Övervakningsverktyg</em>
+    <p>
+  </td>
+  <td>
+    <a href="deliverability-faq.md">
+      <img alt="Optimera" src="assets/do-not-localize/troubleshoot.svg"/>
+    </a>
+    <div>
+      <a href="deliverability-faq.md">
+    <strong>Felsökning</strong>
+    </a>
+    </div>
+    <p>
+    <em>Lös problem</em>
+    <p>
+  </td>
+</tr>
+</table>
