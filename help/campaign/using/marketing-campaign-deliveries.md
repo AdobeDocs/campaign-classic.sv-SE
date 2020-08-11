@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2928'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De föreslagna konfigurationerna passar för olika typer av leveranser: direktre
 
 >[!NOTE]
 >
->Mer information om hur du skapar och konfigurerar leveranser finns i avsnittet [Skicka meddelanden](../../delivery/using/communication-channels.md) .
+>Mer information om hur du skapar och konfigurerar leveranser finns i avsnittet [Skicka meddelanden](../../delivery/using/steps-about-delivery-creation-steps.md) .
 
 ## Välja målpopulation {#selecting-the-target-population}
 
@@ -45,7 +45,7 @@ För varje leverans definierar kampanjchefen:
 
 * Huvudmålet. Mer information finns i [Skapa huvudmålet i ett arbetsflöde](#building-the-main-target-in-a-workflow) och [Välja målpopulation](#selecting-the-target-population).
 * Kontrollgruppen. Mer information finns i [Definiera en kontrollgrupp](#defining-a-control-group).
-* Startadresserna. For more on this, refer to [this section](../../delivery/using/about-seed-addresses.md).
+* Startadresserna. Mer information om detta hittar du i [det här avsnittet](../../delivery/using/about-seed-addresses.md).
 
 En del av den här informationen ärvs från mallen.
 
@@ -79,7 +79,7 @@ Handboken [Automatisera med arbetsflöden](../../workflow/using/architecture.md)
 >
 >I samma kampanj kan du inte konfigurera fler än 28 arbetsflöden. Tidigare är ytterligare arbetsflöden inte synliga i gränssnittet och kan generera fel.
 
-#### Skapa ett målarbetsflöde {#creating-a-targeting-workflow}
+#### Creating a targeting workflow {#creating-a-targeting-workflow}
 
 Målinriktning kan skapas med en kombination av filtreringsvillkor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa populationer och underpopulationer som ska anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** fliken på kontrollpanelen för kampanjer.
 
@@ -219,7 +219,7 @@ Du kan definiera en kontrollgrupp på kampanjnivå, och i så fall tillämpas ko
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-Konfigurationsproceduren presenteras i [Extrahera kontrollgruppen från huvudmålet](#extracting-the-control-group-from-the-main-target) och [lägga till en population](#adding-a-population).
+Konfigurationsproceduren beskrivs i [Extrahera kontrollgruppen från huvudmålet](#extracting-the-control-group-from-the-main-target) och [Lägga till en kontrollgrupp](#adding-a-population).
 
 #### Aktivera kontrollgruppen för en leverans {#activating-the-control-group-for-a-delivery}
 
@@ -238,7 +238,7 @@ Som standard gäller den kontrollgruppskonfiguration som definieras på kampanjn
 1. Klicka på **[!UICONTROL Control group]** fliken och välj sedan **[!UICONTROL Enable and edit control group configuration]**.
 1. Klicka **[!UICONTROL Edit...]** för att konfigurera kontrollgruppen.
 
-Konfigurationsproceduren presenteras i [Extrahera kontrollgruppen från huvudmålet](#extracting-the-control-group-from-the-main-target) och [lägga till en population](#adding-a-population).
+Konfigurationsproceduren beskrivs i [Extrahera kontrollgruppen från huvudmålet](#extracting-the-control-group-from-the-main-target) och [Lägga till en kontrollgrupp](#adding-a-population).
 
 #### Extrahera kontrollgruppen från huvudmålet {#extracting-the-control-group-from-the-main-target}
 
@@ -257,7 +257,7 @@ Klicka **[!UICONTROL Next]** för att definiera sorteringsordningen (om det beh�
 
 Den här konfigurationen motsvarar en delningsaktivitet i arbetsflödet, vilket gör att du kan dela upp målet i delmängder. Kontrollgruppen är en av dessa deluppsättningar. Mer information finns i [det här avsnittet](../../workflow/using/architecture.md) .
 
-### Lägga till en population {#adding-a-population}
+### Lägga till en kontrollgrupp {#adding-a-population}
 
 Du kan definiera en ny population som ska användas som kontrollgrupp. Den här populationen kan komma från en grupp mottagare eller så kan du skapa den via en specifik fråga.
 
@@ -265,7 +265,7 @@ Du kan definiera en ny population som ska användas som kontrollgrupp. Den här 
 
 >[!NOTE]
 >
->Frågeredigeraren för Adobe Campaign presenteras i [det här avsnittet](../../workflow/using/query.md).
+>Adobe Campaign frågeredigerare visas i [det här avsnittet](../../workflow/using/query.md).
 
 ## Starta en leverans {#starting-a-delivery}
 
@@ -277,7 +277,7 @@ När alla godkännandebegäranden har beviljats ändras leveransstatusen till **
 
 >[!NOTE]
 >
->Om en viss operator eller grupp av operatorer har utsetts för att starta en leverans i leveransegenskaperna, kan du även tillåta den operator som ansvarar för leveransen att bekräfta sändningen. Aktivera alternativet **NMS_ActivateOwnerConfirmation** genom att ange **1** som värde. Alternativen hanteras från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** -noden i Adobe Campaign Explorer.
+>Om en viss operator eller grupp av operatorer har utsetts för att starta en leverans i leveransegenskaperna, kan du även tillåta den operator som ansvarar för leveransen att bekräfta sändningen. Aktivera alternativet **NMS_ActivateOwnerConfirmation** genom att ange **1** som värde. Alternativen hanteras från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** -noden i Adobe Campaign Utforskaren.
 >  
 >Om du vill inaktivera det här alternativet anger du **0** som värde. Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen.
 
@@ -314,7 +314,7 @@ Mer information finns i [Godkänna en extraheringsfil](../../campaign/using/mark
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* Klicka på **[!UICONTROL Send a proof]** knappen för att skapa korrektur.
+* Click the **[!UICONTROL Send a proof]** button to create the proofs.
 
    Korrekturmålet måste definieras i förväg.
 
@@ -322,7 +322,7 @@ Mer information finns i [Godkänna en extraheringsfil](../../campaign/using/mark
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Leveransstatusen ändras till **[!UICONTROL To submit]**. Klicka på **[!UICONTROL Submit proofs]** knappen för att starta godkännandeprocessen.
+* Leveransstatusen ändras till **[!UICONTROL To submit]**. Click the **[!UICONTROL Submit proofs]** button to start the approval process.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -413,7 +413,7 @@ Om du vill skapa en disposition klickar du på **[!UICONTROL Delivery outlines]*
 >
 >Om den här fliken inte finns är den här funktionen inte tillgänglig för kampanjen. Se kampanjmallskonfigurationen.
 >   
->Mer information finns i [Campaign-mallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
