@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+workflow-type: tm+mt
+source-wordcount: '1134'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +78,7 @@ När volymen växer flyttar en variant av den här arkitekturen databasservern t
    * Den första som exponeras för allmänheten för att spåra och peka mot datorn på dess offentliga immateriella tillgångar.
    * det andra aliaset som visas för interna användare för konsolåtkomst och som pekar på samma dator.
 
-* Brandväggen har konfigurerats för att öppna STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i [Nätverkskonfiguration](../../installation/using/network-configuration.md).
+* Brandväggen är konfigurerad att öppna SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i [Nätverkskonfiguration](../../installation/using/network-configuration.md).
 
 I följande exempel är parametrarna för instansen:
 
@@ -91,7 +94,7 @@ Använd följande steg:
 
    Mer information finns i [Krav för Campaign-installation i Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) och [Krav för Campaign-installation i Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. När Adobe Campaign-servern har installerats startar du programservern (webben) med kommandot **nlserver web -tomcat** (med webbmodulen kan du starta Tomcat i fristående webbserverläge som avlyssnar port 8080) och se till att Tomcat startar korrekt:
+1. När Adobe Campaign-servern har installerats startar du programservern (webben) med kommandot **nlserver web -tomcat** (med webbmodulen kan du starta Tomcat i fristående webbserverläge (avlyssning på port 8080) och se till att Tomcat startar korrekt:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -108,8 +111,8 @@ Använd följande steg:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Serverns [](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)första start,
-   * För Windows: Serverns [](../../installation/using/installing-the-server.md#first-start-up-of-the-server)första start.
+   * För Linux: [Serverns](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)första start,
+   * För Windows: [Första starten av servern](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
 
 1. Ändra det **interna** lösenordet med kommandot:
 
@@ -117,7 +120,7 @@ Använd följande steg:
    nlserver config -internalpassword
    ```
 
-   Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Skapa **demoinstansen** med DNS-maskerna för spårning (i det här fallet **tracking.campaign.net**) och åtkomst till klientkonsoler (i det här fallet **console.campaign.net**). Det finns två sätt att göra detta:
 
@@ -155,7 +158,7 @@ Använd följande steg:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och ange leveransdomänen. Ange sedan IP-adresserna (eller värdadresserna) för de DNS-servrar som används av MTA-modulen för att svara på DNS-frågor av MX-typ.
 
@@ -173,13 +176,13 @@ Använd följande steg:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Tillgänglighet [för klientkonsol för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: Tillgänglighet [för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md)
+   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
+   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md)
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
-   * För Linux: Integrering [med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * För Windows: Integrering [med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * För Linux: [Integrering med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * För Windows: [Integrering med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Starta webbplatsen och testa omdirigering med URL:en: https://tracking.campaign.net/r/test.
 
@@ -191,14 +194,14 @@ Använd följande steg:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Starta [webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * För Windows: Starta [webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * För Linux: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Starta Adobe Campaign-servern (**starta nlserver6** i Windows, **/etc/init.d/nlserver6 i Linux) och kör kommandot** nlserver pdump **** en gång till för att kontrollera om alla aktiverade moduler finns.
+1. Starta Adobe Campaign-servern (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) och kör kommandot **nlserver pdump** en gång till för att kontrollera om alla aktiverade moduler finns.
 
    >[!NOTE]
    >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -211,7 +214,7 @@ Använd följande steg:
    web@default (28671) - 40.5 MB
    ```
 
-   Med det här kommandot kan du även se version och versionsnummer för Adobe Campaign-servern som är installerad på datorn.
+   Med det här kommandot kan du även se version och versionsnummer för den Adobe Campaign-server som är installerad på datorn.
 
 1. Testa webbmodulen **på** servern med URL-adressen: https://console.campaign.net/nl/jsp/logon.jsp
 
@@ -223,10 +226,10 @@ Använd följande steg:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Tillgänglighet [för klientkonsol för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: Tillgänglighet [för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md)
+   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
+   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md)
 
-1. Starta Adobe Campaign-klientkonsolen (från föregående hämtningssida eller direkt från servern för en Windows-installation), ange serveranslutningens URL till https://console.campaign.net och ansluta med den **interna** inloggningen.
+1. Starta Adobe Campaign klientkonsol (från föregående nedladdningssida eller direkt från servern för en Windows-installation), ange serveranslutningens URL till https://console.campaign.net och ansluta med den **interna** inloggningen.
 
    Se [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md) och [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
@@ -249,7 +252,7 @@ Använd följande steg:
    * E-postleverans: avsändare- och svarsadresser samt felpostlådan för avhoppad e-post.
    * Spårning: Fyll i den externa URL som används för omdirigering och den interna URL:en, klicka på **Registrering på spårningsservern** och validera den sedan på **demoinstansen** av spårningsservern.
 
-      Mer information finns i [Spårningskonfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
+      For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
       ![](assets/s_ncs_install_deployment_wiz_09.png)
 
