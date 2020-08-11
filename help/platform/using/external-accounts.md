@@ -15,29 +15,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '2218'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 
 # Externa konton{#external-accounts}
 
-Ett externt konto är en konfiguration som gör att du kan konfigurera och testa åtkomsten till en server som ligger utanför Adobe Campaign. Dessa externa konton kan användas i Campaign-arbetsflöden för att få tillgång till och hantera data.
+Ett externt konto är en konfiguration som gör att du kan konfigurera och testa åtkomsten till en server utanför Adobe Campaign. Dessa externa konton kan användas i Campaign-arbetsflöden för att få åtkomst till och hantera data.
 
 Du kan ställa in följande typer av externa konton:
 
 * [Routning av externt konto](#routing-external-account)
 * [Externt FTP-konto](#ftp-external-account)
 * [Externt konto för extern databas](#external-database-external-account)
-* [Analytics-konto för webben](#web-analytics-external-account)
+* [Externt konto för Web Analytics](#web-analytics-external-account)
 * [Externt konto för Facebook-anslutning](#facebook-connect-external-account)
 * [Externt konto för körningsinstans](#execution-instance-external-account)
-* [Externt Adobe Experience Cloud-konto](#adobe-experience-cloud-external-account)
+* [Adobe Experience Cloud externt konto](#adobe-experience-cloud-external-account)
 * [Externt SFTP-konto](#sftp-external-account)
-* [Adobe Experience Manager external account](#adobe-experience-manager-external-account)
+* [Externt Adobe Experience Manager-konto](#adobe-experience-manager-external-account)
 * [Externt konto för Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Externt Azure-konto](#azure-external-account)
 * [Hadoop-externt konto](#hadoop-external-account)
@@ -47,16 +47,16 @@ Du kan ställa in följande typer av externa konton:
 
 ## Skapa ett externt konto {#creating-an-external-account}
 
-Adobe Campaign levereras med en uppsättning fördefinierade externa konton. Om du vill skapa anslutningar till externa system, t.ex. FTP-servrar som används för filöverföringar, kan du skapa egna externa konton.
+Adobe Campaign innehåller en uppsättning fördefinierade externa konton. Om du vill skapa anslutningar till externa system, t.ex. FTP-servrar som används för filöverföringar, kan du skapa egna externa konton.
 
-Externa konton används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden. När du konfigurerar en filöverföring i ett arbetsflöde eller ett datautbyte med något annat program (Adobe Target, Experience Manager, osv.) måste du välja ett externt konto.
+Externa konton används av tekniska processer som tekniska arbetsflöden eller Campaign-arbetsflöden. När du konfigurerar en filöverföring i ett arbetsflöde eller ett datautbyte med något annat program (Adobe Target, Experience Manager, o.s.v.) måste du välja ett externt konto.
 
 1. Öppna **[!UICONTROL Explorer]** och visa **[!UICONTROL Administration]** menyn.
 1. Öppna **[!UICONTROL Platform]** menyn och klicka på **[!UICONTROL External accounts]**.
 
    ![](assets/ext_account_1.png)
 
-1. Klicka på knappen **[!UICONTROL New]**. 
+1. Klicka på knappen **[!UICONTROL New]**.
 
    ![](assets/ext_account_2.png)
 
@@ -65,15 +65,15 @@ Externa konton används av tekniska processer som tekniska arbetsflöden eller k
 1. Välj det externa konto **[!UICONTROL Type]** som du vill skapa.
 1. Konfigurera åtkomsten till kontot genom att ange autentiseringsuppgifter beroende på vald extern kontotyp.
 
-   Den nödvändiga informationen tillhandahålls vanligtvis av providern för den server som du ansluter till.
+   Den nödvändiga informationen tillhandahålls vanligtvis av leverantören för den server som du ansluter till.
 
 1. Klicka på **[!UICONTROL Save]**.
 
-Det externa kontot skapas och läggs till i listan över externa konton. Den är nu tillgänglig för dina data-/filöverföringar eller routningskonfigurationer i arbetsflödesaktiviteter och leveransegenskaper.
+Det externa kontot skapas och läggs till i listan över externa konton. Den är nu tillgänglig för dina data-/filöverföringar eller dirigeringskonfigurationer i arbetsflödesaktiviteter och leveransegenskaper.
 
 ## Externt konto för studsmeddelanden {#bounce-mails-external-account}
 
-Det externa kontot för **studs-e-post** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns på den här [sidan](../../workflow/using/inbound-emails.md).
+Det externa kontot för **studs-e-post** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. For more on this external account, refer to this [page](../../workflow/using/inbound-emails.md).
 
 Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
@@ -111,9 +111,9 @@ Följande kanaler kan konfigureras:
 
 * [E-post](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Mobil (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [Telefon](../../delivery/using/communication-channels.md#other-channels)
-* [Direktreklam](../../delivery/using/about-direct-mail-channel.md)
-* [byrå](../../delivery/using/communication-channels.md#other-channels)
+* [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [Direktutskick](../../delivery/using/about-direct-mail-channel.md)
+* [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS-kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
@@ -121,7 +121,7 @@ Följande kanaler kan konfigureras:
 
 ## Externt FTP-konto {#ftp-external-account}
 
-Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
+Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Mer information om detta hittar du på den här [sidan](../../workflow/using/file-transfer.md).
 
 Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska användas för att upprätta anslutningen till FTP-servern i det här externa kontot
 
@@ -151,16 +151,16 @@ Om du vill veta var du hittar dessa autentiseringsuppgifter kan du gå till den 
 
 ## Externt konto för extern databas {#external-database-external-account}
 
-I Adobe Campaign finns flera anslutningar som gör att du kan kommunicera med externa program och ansluta till databasmotorer.
+Adobe Campaign har flera anslutningar som gör att du kan kommunicera med externa program och ansluta till databasmotorer.
 
 ![](assets/ext_account_11.png)
 
 Följande anslutningstyper kan konfigureras:
 
-* Azure Synapse. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
-* Oracle. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
-* Netezza. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
-* SAP HANA. Mer information finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
+* Azure Synapse. For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
+* Oracle. For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* Netezza. For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* SAP HANA. For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
 * InfiniDB
 * Microsoft SQL Server
 * AsterData
@@ -171,15 +171,15 @@ Följande anslutningstyper kan konfigureras:
 * ODBC (Sybase ASE, Sybase IQ)
 * HTTP-relä till fjärrdatabas
 
-### Snöflinga externt konto {#snowflake-external-account}
+### Snowflake external account {#snowflake-external-account}
 
-Med det **externa kontot Snowflake** kan du ansluta Campaign-instansen till din externa Snowflake-databas. Mer information om hur du konfigurerar Campaign Classic med snöflake finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+Med det externa kontot **Snowflake** kan du ansluta Campaign-instansen till din externa Snowflake-databas. Mer information om hur du konfigurerar Campaign Classic med Snowflake finns på den här [sidan](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
 
 Om du vill konfigurera det här externa kontot så att det fungerar med Adobe Campaign måste du ange följande information:
 
 * **[!UICONTROL Server]**
 
-       Webbadress till Snowflake-servern.
+       SNOWFLAKE-serverns URL.
    
 * **[!UICONTROL Account]**
 
@@ -245,13 +245,13 @@ I **[!UICONTROL Users]** fältet kan du ange ett frågeband för varje användar
 
 For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-## Analytics-konto för webben {#web-analytics-external-account}
+## Externt konto för Web Analytics {#web-analytics-external-account}
 
 Med det **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externa kontot kan du vidarebefordra data från Adobe Analytics till Adobe Campaign i form av segment. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics - Datakoppling.
 
 ![](assets/ext_account_10.png)
 
-För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. For more on this, refer to this [page](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
+För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Mer information om detta hittar du på den här [sidan](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
 
 ## Externt konto för Facebook-anslutning {#facebook-connect-external-account}
 
@@ -295,11 +295,11 @@ Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är l�
 
    Lösenord för kontot enligt definitionen i mappen operator.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../message-center/using/creating-a-shared-connection.md#control-instance).
+For more information on this configuration, refer to this [page](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
-## Externt Adobe Experience Cloud-konto {#adobe-experience-cloud-external-account}
+## Adobe Experience Cloud external account {#adobe-experience-cloud-external-account}
 
-Om du vill ansluta till konsolen Adobe Campaign med ett Adobe ID måste du konfigurera det **[!UICONTROL Adobe Experience Cloud (MAC)]** externa kontot.
+Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfigurera det **[!UICONTROL Adobe Experience Cloud (MAC)]** externa kontot.
 
 ![](assets/ext_account_9.png)
 
@@ -337,13 +337,13 @@ Om du vill ansluta till konsolen Adobe Campaign med ett Adobe ID måste du konfi
 
 * **[!UICONTROL Tenant]**
 
-   Namnet på din Adobe Experience Cloud-klient.
+   Namn på din Adobe Experience Cloud-klient.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../integrations/using/configuring-ims.md).
+For more information on this configuration, refer to this [page](../../integrations/using/configuring-ims.md).
 
 ## Externt SFTP-konto {#sftp-external-account}
 
-Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
+Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Mer information om detta hittar du på den här [sidan](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_4.png)
 
@@ -363,7 +363,7 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 
    Lösenord som används för att ansluta till SFTP-servern.
 
-## Adobe Experience Manager external account {#adobe-experience-manager-external-account}
+## Externt Adobe Experience Manager-konto {#adobe-experience-manager-external-account}
 
 Med det **[!UICONTROL AEM (AEM instance)]** externa kontot kan du hantera innehållet i e-postleveranser och formulär direkt i Adobe Experience Manager.
 
@@ -371,21 +371,21 @@ Med det **[!UICONTROL AEM (AEM instance)]** externa kontot kan du hantera inneh�
 
 * **[!UICONTROL Server]**
 
-   Adobe Experience Manager-serverns URL.
+   URL för Adobe Experience Manager-servern.
 
 * **[!UICONTROL Port]**
 
-   Kontonamn som används för att ansluta till författarinstansen för Adobe Experience Manager.
+   Kontonamn som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
 
 * **[!UICONTROL Password]**
 
-   Lösenord som används för att ansluta till författarinstansen för Adobe Experience Manager.
+   Lösenord som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
 
-For more on this, refer to this [section](../../integrations/using/about-adobe-experience-manager.md).
+Mer information om detta hittar du i det här [avsnittet](../../integrations/using/about-adobe-experience-manager.md).
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen till Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. Mer information om detta hittar du på den här [sidan](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_3.png)
 
@@ -413,11 +413,11 @@ När du konfigurerar det nya externa kontot måste du ange följande information
 
 * Med **[!UICONTROL Use server side encryption]** kryssrutan kan du lagra filen i S3-krypterat läge.
 
-Om du vill veta var du hittar nyckel-ID:t och den hemliga åtkomstnyckeln kan du läsa Amazon Web services- [dokumentationen](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+Mer information om var du hittar nyckel-ID:t och den hemliga åtkomstnyckeln finns i Amazon Web Services- [dokumentationen](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 ## Externt Azure-konto {#azure-external-account}
 
-Det **[!UICONTROL Azure]** externa kontot möjliggör en anslutning till en delad extern databas, så länge som den här anslutningen är aktiv kan databasen nås via Adobe Campaign.
+Det externa **[!UICONTROL Azure]** kontot möjliggör anslutning till en delad extern databas, så länge som anslutningen är aktiv, kan databasen nås via Adobe Campaign.
 
 ![](assets/ext_account_15.png)
 
@@ -435,7 +435,7 @@ Det **[!UICONTROL Azure]** externa kontot möjliggör en anslutning till en dela
 
 ## Hadoop-externt konto {#hadoop-external-account}
 
-Det **[!UICONTROL Hadoop]** externa kontot möjliggör en anslutning till en delad extern databas, så länge som den här anslutningen är aktiv kan databasen nås via Adobe Campaign. Mer information om hur du konfigurerar åtkomst till Hadoop finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
+Det externa **[!UICONTROL Hadoop]** kontot möjliggör anslutning till en delad extern databas, så länge som anslutningen är aktiv, kan databasen nås via Adobe Campaign. For more information on how to configure access to Hadoop, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
@@ -525,7 +525,7 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** a
 
    CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
+For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
 
 ## Oracle on demand-konto {#oracle-on-demand-external-account}
 
@@ -547,7 +547,7 @@ Om du vill konfigurera det externa Oracle on demand-kontot så att det fungerar 
 
    Lösenord som används för att logga in på Oracle CRM på begäran.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
 
 ## Externt konto för Salesforce CRM {#salesforce-crm-external-account}
 
@@ -579,4 +579,4 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-salesforce-com).
