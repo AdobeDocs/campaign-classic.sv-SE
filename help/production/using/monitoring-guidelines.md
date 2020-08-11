@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 41c515008a12fa066cedc9d7125195e2c4776f40
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 1%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -58,11 +58,11 @@ Med granskningsspåret kan du visualisera den fullständiga historiken över än
 
 **Kontrollpanelen**
 
-På Kontrollpanelen kan du hantera flera inställningar för din instans: hantera URL-behörigheter, kontrollera instansinformation som serverns build-versioner osv. Du kan också övervaka det tillgängliga utrymmet på de SFTP-servrar som är anslutna till din instans. [Klicka här](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) om du vill ha mer information.
+På Kontrollpanelen kan du hantera flera inställningar för din instans: hantera URL-behörigheter, kontrollera instansinformation som serverns build-versioner osv. Du kan också övervaka det tillgängliga utrymmet på de SFTP-servrar som är anslutna till din instans. [Klicka här](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html) om du vill ha mer information.
 
 >[!NOTE]
 >
->Observera att Kontrollpanelen endast är tillgänglig för administratörsanvändare och för alla kunder som använder Adobe Managed Services.
+>Observera att Kontrollpanelen endast är tillgänglig för administratörsanvändare och för alla kunder som använder Adobes hanterade tjänster.
 
 ### Övervaka arbetsflöden {#monitoring-workflows}
 
@@ -96,11 +96,11 @@ Du kan förbättra prestandan genom att följa riktlinjer och bästa praxis när
 
 **SMTP-rapporter**
 
-SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Klicka här](../../production/using/monitoring-processes.md) om du vill ha mer information.
+SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Lär dig mer](../../production/using/monitoring-processes.md)
 
 **God praxis**
 
-[De bästa sätten att skicka och designa](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) kan hjälpa er att förbättra deras prestanda.
+[De bästa sätten att skicka och designa](../../delivery/using/delivery-best-practices.md) kan hjälpa er att förbättra deras prestanda.
 
 **Felsökning** av leveranser Specifika åtgärder kan utföras när du stöter på leveransproblem:
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
