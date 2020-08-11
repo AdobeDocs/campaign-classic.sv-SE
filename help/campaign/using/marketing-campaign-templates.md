@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1146'
+ht-degree: 0%
 
 ---
 
 
 # Mallar för marknadsföringskampanj {#campaign-templates}
 
-Kampanjmallar är centraliserade i **[!UICONTROL Resources > Templates > Campaign templates]** noden. En standardmall anges som standard. Med den kan ni skapa en ny kampanj med hjälp av alla tillgängliga moduler (dokument, uppgifter, dirigerade adresser osv.), men vilka moduler som erbjuds beror på era rättigheter och konfigurationen av Adobe Campaign-plattformen.
+Kampanjmallar är centraliserade i **[!UICONTROL Resources > Templates > Campaign templates]** noden. En standardmall anges som standard. Du kan skapa en ny kampanj med hjälp av alla tillgängliga moduler (dokument, uppgifter, dirigerade adresser osv.), men vilka moduler som erbjuds beror på dina rättigheter och konfigurationen av din Adobe Campaign-plattform.
 
 ## Skapa eller duplicera en kampanjmall {#creating-or-duplicating-a-campaign-template}
 
@@ -44,7 +47,7 @@ Så här skapar du en ny mall:
 
    ![](assets/create_campaign_template_3.png)
 
-1. **Klicka på** Lägg till ett arbetsflöde på fliken **Mål och arbetsflöden**.. .
+1. Klicka på **Lägg till ett arbetsflöde på fliken** Mål och arbetsflöden **..**.
 
    ![](assets/create_campaign_template_4.png)
 
@@ -74,7 +77,7 @@ En färdig mall tillhandahålls för att skapa en kampanj för vilken ingen spec
 
 Skapandet och konfigurationen av kampanjmallar presenteras i [Campaign-mallar](#campaign-templates).
 
-Mer information om hur du skapar kampanjer finns i [Skapa en kampanj och en e-postvideo](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) .
+Mer information om hur du skapar kampanjer finns i [Skapa en kampanj och en e-postvideo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html) .
 
 ## Konfiguration av tillgängliga moduler {#configuration-of-the-available-modules}
 
@@ -177,7 +180,7 @@ När du skapar en kampanjmall måste du ange följande information:
    >
    >Mer information om uppräkningar finns i avsnittet [Komma igång](../../platform/using/managing-enumerations.md) .
 
-* Välj **kampanjtyp**: unika, återkommande eller periodiska. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs här: Återkommande [och periodiska kampanjer](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
+* Välj **kampanjtyp**: unika, återkommande eller periodiska. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs här: [Återkommande och periodiska kampanjer](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Ange kampanjens varaktighet, dvs. antalet dagar som kampanjen ska äga rum. När du skapar en kampanj som baseras på den här mallen fylls start- och slutdatumet för kampanjen i automatiskt.
 
    Om kampanjen är återkommande måste du ange kampanjens start- och slutdatum direkt i mallen.
