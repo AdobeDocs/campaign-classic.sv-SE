@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,9 @@ Anpassningsfält används för personalisering på första nivån av innehållet
 
 I anpassningsfältet med syntaxen **&lt;%= mottagare.efternamn %>** anger Adobe Campaign att namnet på mottagaren ska infogas i databasen (mottagartabell).
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >Innehållet i anpassningsfält får inte vara längre än 1 024 tecken.
 
@@ -124,7 +126,7 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Skräddarsy e-postmeddelanden med personaliseringsfält
+## Skräddarsy e-postmeddelanden med personaliseringsfält {#personalization-field-video}
 
 Lär dig hur du lägger till ett anpassningsfält på ämnesraden och innehållet i en e-postleverans.
 
