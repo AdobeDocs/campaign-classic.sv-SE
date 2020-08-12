@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 0%
@@ -235,6 +235,7 @@ Du kan kombinera definitionen för ett specifikt korrekturmål och användningen
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+
 Se även:
 * [Välja korrekturmål](#selecting-the-proof-target)
 
