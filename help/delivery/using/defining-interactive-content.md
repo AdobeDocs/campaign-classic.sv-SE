@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,7 @@ ht-degree: 0%
 
 Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) , som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
->[!IMPORTANT]
->
->* Den här funktionen är en betafunktion i Adobe Campaign.
->* AMP for Email är ett nytt format med öppen källkod som gör att utvecklare kan skapa dynamiska och interaktiva e-postmeddelanden. För närvarande stöds den av ett fåtal e-postleverantörer: Gmail, Outlook och Mail.ru.
-
-
-För närvarande kan du bara:
+I den här versionen kan du:
 * Testa att leverera AMP-e-post till specifika adresser som är korrekt konfigurerade.
 * Leverera AMP-e-post till Gmail-, Outlook- eller Mail.ru-adresser efter registrering hos motsvarande leverantörer.
 
@@ -39,11 +33,9 @@ Mer information om hur du testar och skickar AMP-e-post finns i [Ange ett AMP-e-
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
 
-För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mellankällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/creating-a-shared-connection.md#execution-instance). Kontakta er kontoansvarige.
+>[!NOTE]
+>>För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mellankällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/creating-a-shared-connection.md#execution-instance). Kontakta er kontoansvarige.
 
-I videon nedan förklaras hur du aktiverar AMP i Adobe Campaign Classic och visar hur du använder det.
-
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## Om AMP för e-post {#about-amp-for-email}
 
@@ -53,6 +45,8 @@ Exempel:
 * E-postmeddelanden som skrivits med AMP kan innehålla interaktiva element som bildkaruseller.
 * Innehållet hålls uppdaterat i meddelandet.
 * Mottagarna kan göra som att svara på ett formulär utan att lämna sin inkorg.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#amp-email-video)
 
 AMP for Email är kompatibelt med befintliga e-postmeddelanden. AMP-versionen av meddelandet är inbäddad i e-postmeddelandet som en ny MIME-del, förutom HTML och/eller oformaterad text, vilket garanterar kompatibilitet för alla e-postklienter.
 
@@ -218,3 +212,9 @@ Om du till exempel har tagit med en produktlista i e-postmeddelandet justeras pr
 >Du kan skapa en regel för e-postbearbetning för att förhindra att vissa domäner tar emot AMP-e-postmeddelanden. Se [Hantera e-postformat](../../installation/using/email-deliverability.md#managing-email-formats).
 >
 >Som standard är alternativet **[!UICONTROL AMP inclusion]** inställt på **[!UICONTROL No]**.
+
+## Så här aktiverar och använder du AMP för e-post {#amp-email-video}
+
+I videon nedan förklaras hur du aktiverar AMP i Adobe Campaign Classic och visar hur du använder det.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
