@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,9 @@ ht-degree: 0%
 # Villkorligt innehåll{#conditional-content}
 
 Genom att konfigurera fält för villkorligt innehåll kan du skapa dynamisk personalisering baserat på mottagarens profil, till exempel. Textblock och/eller bilder ersätts när ett visst villkor uppfylls.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#conditionnal-content-video)
+
 
 ## Använda villkor i ett e-postmeddelande {#using-conditions-in-an-email}
 
@@ -114,7 +117,7 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
 
-## Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll
+## Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll {#conditionnal-content-video}
 
 Lär dig hur du lägger till villkorligt innehåll i en leverans med ett exempel på ett flerspråkigt nyhetsbrev.
 
