@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 0%
+source-wordcount: '379'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,9 @@ Seed-adresser används för målmottagare som inte matchar de definierade målvi
 
 En av de främsta anledningarna till att använda dem är **ditt skydd** av e-postlistan. Om du infogar dirigerade adresser i din e-postlista kan du lägga märke till om de används av en tredje part, eftersom de dirigerade adresserna som finns där kommer att få leveranserna som skickas till din e-postlista.
 
-Med dirigerade adresser kan du dessutom **förhandsgranska och testa leveranspersonalisering och återgivning** innan de skickas, genom att skicka korrektur (se [Använda dirigerade adresser som bevis](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
+Med dirigerade adresser kan du dessutom **förhandsgranska och testa leveranspersonalisering och återgivning** innan de skickas, genom att skicka korrektur (se [Använda dirigerade adresser som bevis](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 Funktionen för dirigerade adresser har följande fördelar:
 
@@ -52,7 +54,8 @@ Vid direktutskick läggs startadresser till under extraheringen och blandas i ut
 >För direktreklam måste extraheringsfilformatet uppfylla följande begränsningar:
 >
 >* Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Om elementsamlingar extraheras får dessa fält ett tomt värde för startadresserna, såvida inte **[!UICONTROL Single row (expert user)]** alternativet är markerat. For more on this, refer to [this section](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Om elementsamlingar extraheras får dessa fält ett tomt värde för startadresserna, såvida inte **[!UICONTROL Single row (expert user)]** alternativet är markerat. Mer information om detta hittar du i [det här avsnittet](../../platform/using/exporting-data.md#step-7---data-formatting).
+
 >
 
 
