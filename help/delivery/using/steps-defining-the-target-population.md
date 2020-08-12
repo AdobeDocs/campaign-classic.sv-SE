@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1578'
 ht-degree: 0%
 
 ---
@@ -174,6 +174,9 @@ Du kan minska storleken på målpopulationen. Det gör du genom att ange antalet
 
 Korrekturmeddelandet är ett särskilt meddelande där du kan testa en leverans innan du skickar den till huvudmålet. Korrekturmottagare ansvarar för att godkänna både meddelandets form och innehåll.
 
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#seeds-and-proofs-video)
+
+
 Följ stegen nedan för att välja provtryckets mål:
 
 1. Klicka på **[!UICONTROL To]** länken.
@@ -230,7 +233,7 @@ Du kan använda **[!UICONTROL Seed addresses]** som mål för korrekturet: Med d
 
 Du kan kombinera definitionen för ett specifikt korrekturmål och användningen av dirigerade adresser med hjälp av **[!UICONTROL Specific target and Seed addresses]** alternativet. De relaterade konfigurationerna definieras sedan i två separata underflikar.
 
-## Hantera startvärden och korrektur i ett e-postmeddelande
+## Hantera startvärden och korrektur i ett e-postmeddelande {#seeds-and-proofs-video}
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
