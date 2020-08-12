@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,15 @@ ht-degree: 0%
 
 Personaliseringsblock är dynamiska, personaliserade och innehåller en specifik rendering som du kan infoga i leveranserna. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Se [Infoga personaliseringsblock](#inserting-personalization-blocks).
 
->[!NOTE]
->
->Personaliseringsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#personalization-blocks-video)
 
 Personaliseringsblocken nås via noden **[!UICONTROL Resources > Campaign Management > Personalization blocks]** i Adobe Campaign Explorer. Flera block är tillgängliga som standard (se [Inkörda anpassningsblock](#out-of-the-box-personalization-blocks)).
 
 Ni kan definiera nya block som gör att ni kan optimera er leveranspersonalisering. Mer information finns i [Definiera anpassade personaliseringsblock](#defining-custom-personalization-blocks).
+
+>[!NOTE]
+>
+>Personaliseringsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Infoga personaliseringsblock {#inserting-personalization-blocks}
 
@@ -160,7 +162,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    * Ange innehållet (i HTML, text, JavaScript osv.) av personaliseringsblocket och klicka **[!UICONTROL Save]**.
 
-## Skräddarsy e-postmeddelanden med dynamiska innehållsblock
+## Skräddarsy e-postmeddelanden med dynamiska innehållsblock {#personalization-blocks-video}
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i e-postleveransen.
 
