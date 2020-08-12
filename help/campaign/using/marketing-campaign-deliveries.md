@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 # Leveranser av marknadsföringskampanjer {#marketing-campaign-deliveries}
 
 Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller direkt via leveransöversikten.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 
@@ -78,6 +80,13 @@ Handboken [Automatisera med arbetsflöden](../../workflow/using/architecture.md)
 >[!IMPORTANT]
 >
 >I samma kampanj kan du inte konfigurera fler än 28 arbetsflöden. Tidigare är ytterligare arbetsflöden inte synliga i gränssnittet och kan generera fel.
+
+### Så här skapar du ett e-postmeddelande i en kampanj {#create-email-video}
+
+I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Creating a targeting workflow {#creating-a-targeting-workflow}
 
