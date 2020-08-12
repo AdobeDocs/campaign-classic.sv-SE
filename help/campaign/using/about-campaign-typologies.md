@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 5%
 # Om kampanjtypologier{#about-campaign-typologies}
 
 Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera och övervaka leveransen. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa specifika begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#typologies-video)
 
 >[!NOTE]
 >
@@ -69,7 +71,7 @@ Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
 
 Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka uteslutningar. Exempel på användningsområden för typologiregler för tryck finns på [den här sidan](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Ställa in trötthetshantering med typologiregler
+## Ställa in trötthetshantering med typologiregler {#typologies-video}
 
 I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic genom att utnyttja typologiregler.
 
