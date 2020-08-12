@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ En färdig mall tillhandahålls för att skapa en kampanj för vilken ingen spec
 
 Skapandet och konfigurationen av kampanjmallar presenteras i [Campaign-mallar](#campaign-templates).
 
-Mer information om hur du skapar kampanjer finns i [Skapa en kampanj och en e-postvideo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html) .
+Mer information om hur du skapar kampanjer finns i [den här videon](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Konfiguration av tillgängliga moduler {#configuration-of-the-available-modules}
 
