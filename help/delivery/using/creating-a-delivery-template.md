@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 
 # Creating a delivery template{#creating-a-delivery-template}
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#delivery-template-video)
 
 ## Konvertera en befintlig leverans till en mall {#converting-an-existing-delivery-to-a-template}
 
@@ -74,7 +76,7 @@ Så här konfigurerar du en leveransmall:
 >
 >För att undvika konfigurationsfel rekommenderar vi att du duplicerar en intern mall och ändrar dess egenskaper i stället för att skapa en ny mall.
 
-## Konfigurera en leveransmall
+## Konfigurera en leveransmall {#delivery-template-video}
 
 I följande video visas hur du konfigurerar en mall för en ad hoc-leverans.
 
