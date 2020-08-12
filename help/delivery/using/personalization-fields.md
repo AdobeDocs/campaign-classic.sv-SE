@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 3%
@@ -37,7 +37,7 @@ I anpassningsfältet med syntaxen **&lt;%= mottagare.efternamn %>** anger Adobe 
 
 ## Datakällor {#data-sources}
 
-Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveranssätt:
+Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveransläge:
 
 * Adobe Campaign-databasen är datakällan. Detta är det vanligaste fallet, till exempel&quot;fält för mottagaranpassning&quot;. Det här är alla fält som definieras i mottagartabellen, oavsett om det är standardfält (vanligtvis: efternamn, förnamn, adress, ort, födelsedatum osv.) eller användardefinierade fält.
 * En extern fil är datakällan. Detta är alla fält som definieras i kolumnerna i filen som presenteras som indata vid en leverans med hjälp av data som hittas i en extern fil.
@@ -126,7 +126,7 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Skräddarsy e-postmeddelanden med personaliseringsfält {#personalization-field-video}
+## Skräddarsy e-postmeddelanden med personaliseringsfält {#personalization-fields-video}
 
 Lär dig hur du lägger till ett anpassningsfält på ämnesraden och innehållet i en e-postleverans.
 
