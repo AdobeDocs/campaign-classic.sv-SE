@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
 source-wordcount: '7069'
 ht-degree: 13%
@@ -38,7 +38,7 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
 * [Ställa in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
 
-* [Så här skapar du ett e-postmeddelande i en kampanj](../../campaign/using/designing-marketing-campaigns.md)
+* [Så här skapar du ett e-postmeddelande i en kampanj](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll](../../delivery/using/conditional-content.md)
 
@@ -468,7 +468,7 @@ Ett felsökningsavsnitt som rör SFTP-användning har lagts till. [Läs mer](htt
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet i guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Avsnittet om hur du använder dirigerade adresser flyttades till översiktskapitlet för guiden Skicka meddelanden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
 Ett nytt användningsexempel för arbetsflöde har lagts till: Hantera uppdateringar från samtidig körning av arbetsflöden. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
