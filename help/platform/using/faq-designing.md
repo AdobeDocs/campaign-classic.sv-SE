@@ -1,7 +1,7 @@
 ---
-title: Vanliga frågor om meddelandedesign
+title: Vanliga frågor om att utforma meddelanden
 seo-title: Vanliga frågor vid utformning av meddelanden
-description: Vanliga frågor om Campaign Classic
+description: Vanliga frågor och svar om Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -17,36 +17,36 @@ translation-type: tm+mt
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Vanliga frågor om meddelandedesign {#design-messages-faq}
+# Vanliga frågor om att utforma meddelanden {#design-messages-faq}
 
-Upptäck viktiga steg för att utforma flerkanalsmeddelanden med Adobe Campaign.
+Upptäck viktiga steg för att utforma meddelanden över flera kanaler med Adobe Campaign.
 
 ## Finns det särskilda riktlinjer för hur man utformar e-postmeddelanden med Campaign? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
 
-Innan du börjar designa e-postmeddelanden bör du lära dig de koncept och bästa metoder som är kopplade till leveransdesign och skicka med Adobe Campaign.
+Innan du börjar utforma e-postmeddelanden bör du lära dig de koncept och bästa praxis som rör utformning av leveranser och att skicka med Adobe Campaign.
 
-[Klicka här om du vill veta mer](../../delivery/using/delivery-best-practices.md).
+[Klicka här för att läsa mer](../../delivery/using/delivery-best-practices.md).
 
 ## Vad är en leveransmall? {#what-is-a-delivery-template-}
 
-Leveranskonfiguration och parametrar kan sparas i en leveransmall för återanvändning.
+Leveranskonfiguration och -parametrar kan sparas i en leveransmall för att användas flera gånger.
 
-[Klicka här om du vill veta mer](../../delivery/using/about-templates.md).
+[Klicka här för att läsa mer](../../delivery/using/about-templates.md).
 
-## Kan jag enkelt importera en befintlig HTML för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
+## Kan jag enkelt importera en befintlig HTML-kod för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e-postmeddelande i Adobe Campaign med ett enda klick.
 
-[Klicka här om du vill veta mer](../../delivery/using/defining-the-email-content.md#message-content).
+[Klicka här för att läsa mer](../../delivery/using/defining-the-email-content.md#message-content).
 
-## Hur skapar man e-postinnehåll med Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
+## Hur skapar man e-postinnehåll med DCE i Campaign? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[Designa ett e-postmeddelande med Campaign Digital Content Editor](../../web/using/use-case--creating-an-email-delivery.md): Lär dig hur du använder Campaign DCE för att utforma ett e-postmeddelande med hjälp av ett exempel.
+[Utforma ett e-postmeddelande med redigeraren för digitalt innehåll i Campaign](../../web/using/use-case--creating-an-email-delivery.md). Lär dig hur du använder DCE i Campaign för att utforma ett e-postmeddelande med hjälp av ett exempel.
 
 ## Hur skapar jag ett prenumerationsbaserat nyhetsbrev i Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
@@ -54,19 +54,19 @@ Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e
 
 ## Hur kan jag personalisera meddelanden? {#how-can-i-personalize-messages-}
 
-Meddelanden från Adobe Campaign kan personaliseras på flera olika sätt, vad gäller innehåll eller utseendet på meddelanden. De här sätten kan kombineras enligt kriterier som tagits särskilt från mottagarprofilerna. I allmänhet kan du göra följande med Adobe Campaign:
+Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. I allmänhet kan du med Adobe Campaign:
 
-* Anpassa meddelandeformatet. [Klicka här om du vill veta mer](../../delivery/using/defining-the-email-content.md#message-content).
-* Infoga dynamiska anpassningsfält. [Klicka här om du vill veta mer](../../delivery/using/personalization-fields.md).
-* Lägg in fördefinierade personaliseringsblock eller skapa ett eget block. [Klicka här om du vill veta mer](../../delivery/using/personalization-blocks.md).
-* Skapa villkorsstyrt innehåll. [Klicka här om du vill veta mer](../../delivery/using/conditional-content.md) och läsa [det här avsnittet](../../delivery/using/conditional-content.md).
+* Anpassa meddelandeformatet. [Klicka här för att läsa mer](../../delivery/using/defining-the-email-content.md#message-content).
+* Infoga dynamiska personaliseringsfält. [Klicka här för att läsa mer](../../delivery/using/personalization-fields.md).
+* Lägga till fördefinierade personaliseringsblock eller skapa ett eget block. [Klicka här för att läsa mer](../../delivery/using/personalization-blocks.md).
+* Skapa villkorsstyrt innehåll. [Klicka här för mer information](../../delivery/using/conditional-content.md) och läs [det här avsnittet](../../delivery/using/conditional-content.md).
 
 ## Kan jag skicka flerspråkiga meddelanden? {#can-i-send-multilingual-messages-}
 
-Du kan skicka flerspråkiga meddelanden till mottagarna, beroende på deras preferenser eller land till exempel.
+Du kan skicka flerspråkiga meddelanden till mottagare beroende på till exempel deras preferenser eller land.
 
-För att göra detta kan du lokalisera meddelandeinnehållet och anpassa det efter mottagarens profil, med [villkor](../../delivery/using/conditional-content.md). Du kan också använda [arbetsflöden](../../workflow/using/split.md) för att välja vilken version av meddelandet som ska skickas beroende på vilket testspråk du föredrar.
+För att göra detta kan du lokalisera meddelandeinnehållet och anpassa det efter mottagarens profil med olika [villkor](../../delivery/using/conditional-content.md). Du kan också använda [arbetsflöden](../../workflow/using/split.md) för att välja vilken version av meddelandet som ska skickas beroende på ett test av föredraget språk.
 
 ## Hur kan jag lokalisera ett webbformulär? {#how-can-i-localize-a-webform-}
 
-Du kan lokalisera ett webbprogram till flera språk. Översättningsmekanismen presenteras i [detta avsnitt](../../web/using/translating-a-web-form.md).
+Du kan lokalisera en webbapplikation till flera olika språk. Översättningsmekanismen presenteras i [detta avsnitt](../../web/using/translating-a-web-form.md).
