@@ -1,7 +1,7 @@
 ---
 title: Vanliga frågor
 seo-title: Vanliga frågor
-description: Vanliga frågor om Campaign Classic
+description: Vanliga frågor och svar om Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,67 +13,67 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '536'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Vanliga frågor{#common-questions}
 
-Behöver du hjälp när du arbetar med Campaign Classic? Läs de tio vanligaste frågorna nedan och andra vanliga frågor och svar på den sidan. Du kan också [titta på självstudiekurser](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) och läsa Campaign [Getting started guides](../../platform/using/tutorials.md#step-by-step-guides) för att lära dig nyckelfunktioner. Hittar du inte svaret? [Fråga communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign).
+Behöver du hjälp eftersom du arbetar med Campaign Classic? Läs de tio vanligaste frågorna nedan samt andra vanliga frågor och svar på den sidan. Du kan också [titta på videor med självstudiekurser](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) och läsa [Starthandböcker](../../platform/using/tutorials.md#step-by-step-guides) för Campaign för att lära dig de viktigaste funktionerna. Hittar du inte svaret? [Fråga communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign).
 
 ## 1. Hur uppgraderar jag Campaign till den senaste versionen? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
-Adobe Campaign Classic använder en rad teknologier för att ge mervärde. Den här kombinationen av tekniker kräver att ni regelbundet uppgraderar era Campaign Classic-instanser för att säkerställa att de senaste versionerna används för att leverera överlägsen säkerhet, stabilitet och prestanda.
+Adobe Campaign Classic använder en rad olika teknologier för att leverera värde. Den här kombinationen av tekniker kräver att du regelbundet uppgraderar dina instanser i Campaign Classic för att säkerställa att de senaste versionerna används så att de kan leverera överlägsen säkerhet, stabilitet och prestanda.
 
-Om du använder Adobes hanterade tjänster kan du dra nytta av uppgraderingen av Campaign Gold Standard. For more on this refer to [this article](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+Om du använder Adobe Managed Services kan du dra nytta av Gold Standard-uppgraderingen för Campaign. Mer information om detta finns i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
-[Läs den här artikeln](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) och lär dig hur du uppdaterar din miljö och läser [Vanliga frågor](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html) om det här specifika ämnet.
+[Läs den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) och lär dig hur du uppdaterar din miljö samt läs [vanliga frågor](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html) om det här specifika ämnet.
 
 ## 2. Vad är arbetsflödet för databasrensning? {#what-is-the-database-cleanup-workflow-}
 
-Arbetsflödet för att rensa databasen tar bort föråldrade data för att undvika exponentiell tillväxt i databasen. Det inbyggda tekniska arbetsflödet aktiveras automatiskt utan användaråtgärder. Den är tillgänglig via **[!UICONTROL Administration > Production > Technical workflows]** noden i Campaign Explorer.
+Arbetsflödet för databasrensning raderar föråldrade data för att undvika exponentiell tillväxt i databasen. Det inbyggda tekniska arbetsflödet aktiveras automatiskt utan användaråtgärder. Det är tillgänglig via **[!UICONTROL Administration > Production > Technical workflows]**-noden i Campaign Explorer.
 
-[Klicka här om du vill veta mer](../../production/using/database-cleanup-workflow.md) om arbetsflödet för databasrensning.
+[Klicka här för att läsa mer](../../production/using/database-cleanup-workflow.md) om arbetsflödet för databasrensning.
 
 ## 3. Hur konfigurerar jag säkerhetszoner? {#how-can-i-configure-security-zones-}
 
-Självbetjäningsgränssnittet för säkerhetszoner kan användas för att hantera poster i VPN-säkerhetszonskonfigurationen för en Adobe Campaign Classic-distribution. Läs [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones) om du vill veta mer om säkerhetszoner i Campaign.
+Självbetjäningsgränssnittet i Säkerhetszoner kan användas för att hantera poster i konfigurationen av VPN-säkerhetszoner för en driftsättning av Adobe Campaign Classic. Läs [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones) för att veta mer om säkerhetszoner i Campaign.
 
-[Klicka här om du vill veta mer](https://helpx.adobe.com/campaign/kb/configuring-security-zones-self-service.html) om självbetjäningsgränssnittet i Security Zone.
+[Klicka här för att läsa mer](https://helpx.adobe.com/se/campaign/kb/configuring-security-zones-self-service.html) om självbetjäningsgränssnittet i Säkerhetszoner.
 
 ## 4. Hur kan jag vara säker på att min leverans skickas utan fel? {#how-can-i-make-sure-my-delivery-is-sent-without-errors-}
 
-Adobe Campaign innehåller en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
+Adobe Campaign har en uppsättning instrumentpaneler och verktyg för att övervaka e-postleveranser.
 
-[Klicka här om du vill veta](../../delivery/using/monitoring-a-delivery.md) hur du kontrollerar att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
+[Klicka här för att veta](../../delivery/using/monitoring-a-delivery.md) om hur du kontrollerar att dina meddelanden skickas, övervakar körningen och utför en åtgärd om ett fel inträffar.
 
-## 5. Kan jag övervaka arbetsflödeskörningen? {#can-i-monitor-workflow-execution}
+## 5. Kan jag övervaka körningen av arbetsflödet? {#can-i-monitor-workflow-execution}
 
-Lär dig hur du övervakar körningen av Campaign-arbetsflödet [på den här sidan](../../workflow/using/starting-a-workflow.md).
+Läs om hur man övervakar körningen av arbetsflödet i Campaign [på den här sidan](../../workflow/using/starting-a-workflow.md).
 
-## 6. Hur ansluter jag till Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
+## 6. Hur kan jag ansluta till Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 
-Om du vill ansluta till Adobe Campaign Classic måste du starta Adobe Campaign-klientkonsolen och ange din inloggning och ditt lösenord för din instans.
+För att ansluta till Adobe Campaign Classic måste du starta klientkonsolen i Adobe Campaign och ange dina inloggningsuppgifter för din instans.
 
-[Klicka här om du vill veta mer](../../platform/using/launching-adobe-campaign.md).
+[Klicka här för att läsa mer](../../platform/using/launching-adobe-campaign.md).
 
 ## 7. Vilka system och komponenter är Campaign Classic kompatibelt med? {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
-Du kan få en lista över alla system och komponenter som stöds för den senaste versionen av Campaign i [Adobe Campaign Classic-kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Du kan se listan över alla system och komponenter som den senaste versionen av Campaign har stöd för i [kompatibilitetsmatrisen för Adobe Campaign Classic](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
-## 8. Var finns versionsinformation för Campaign Classic? {#where-are-campaign-classic-release-notes-}
+## 8. Var finns versionsinformation om Campaign Classic? {#where-are-campaign-classic-release-notes-}
 
-Du kan få tillgång till de senaste versionskommentarerna för Campaign Classic [på den här sidan](https://docs.adobe.com/content/help/en/campaign-classic/using/release-notes/latest-release.html).
+Du kan komma åt den senaste versionsinformationen om Campaign Classic [på den här sidan](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. Hur gör jag för domändelegering? {#what-is-the-procedure-for-domain-delegation-}
+## 9. Vilken är proceduren för domändelegering? {#what-is-the-procedure-for-domain-delegation-}
 
-En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik (transaktionsmeddelanden, marknadsföringsinformation osv.).
-Adobe tar hänsyn till DNS (Domain Name System) för e-postleverans, som gör att klienten kan behålla sin image genom att använda ett DNS-alias med sina domännamn, och Adobe kan självständigt implementera alla tekniska metoder som gör att kunden kan optimera leveransen under e-postutskick.
+En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik (transaktionsmeddelanden och marknadsföringsinformation osv.).
+Adobe tar hänsyn till domännamnssystemet (DNS) för e-postleverans vilket innebär att klienten kan behålla sitt varumärkes stil genom att använda ett DNS-alias med sina domännamn. Adobe kan även självständigt implementera alla tekniska bästa praxis som gör att kunden kan optimera levererbarheten under e-postutskick.
 
-[Klicka här om du vill veta mer](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+[Klicka här för att läsa mer](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html).
 
