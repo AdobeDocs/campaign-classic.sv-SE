@@ -1,8 +1,8 @@
 ---
-title: Senaste versionsinformation
-seo-title: Senaste versionsinformation
-description: 'null'
-seo-description: 'null'
+title: Information om den senaste versionen
+seo-title: Information om den senaste versionen
+description: noll
+seo-description: noll
 page-status-flag: never-activated
 uuid: 85b95a68-d522-49c8-937c-a7d909003958
 contentOwner: sauviat
@@ -11,11 +11,14 @@ iscontainer: true
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+workflow-type: ht
+source-wordcount: '11'
+ht-degree: 100%
 
 ---
 
 
-# Senaste versionsinformation{#latest-release-notes}
+# Information om den senaste versionen{#latest-release-notes}
 
