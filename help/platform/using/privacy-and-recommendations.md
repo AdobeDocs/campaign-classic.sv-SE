@@ -91,7 +91,7 @@ De [viktigaste lagstiftningarna](#privacy-regulations) avser de olika enheter so
 * En **dataprocessor** är en person eller part som samlar in, använder eller delar personuppgifter enligt den personuppgiftsansvariges anvisningar.
 * En **registrerad** är en levande person vars personuppgifter samlas in, används eller delas och som direkt eller indirekt kan identifieras genom hänvisning till dessa personuppgifter.
 
-Därför är du, som ett företag som samlar in och delar personuppgifter, Data Controller, dina kunder de registrerade och Adobe Campaign fungerar som databehandlare när de hanterar sina personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvariga att hantera relationen till de registrerade, t.ex. vid hantering av [sekretessförfrågningar](#privacy-requests).
+Som företag som samlar in och delar personuppgifter är du den registeransvarige och dina kunder är de registrerade och Adobe Campaign fungerar som databehandlare när de hanterar sina personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvariga att hantera relationen till de registrerade, t.ex. vid hantering av [sekretessförfrågningar](#privacy-requests).
 
 När ni integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager eller People core service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste ni vara extra noga med att skydda personuppgifter.
 
