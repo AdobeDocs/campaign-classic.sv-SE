@@ -18,22 +18,22 @@ translation-type: tm+mt
 source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# Sekretess och samtycke{#privacy-and-recommendations}
+# Privacy and Consent{#privacy-and-recommendations}
 
 ## Allmänna rekommendationer {#general-recommendations}
 
-Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket stora mängder data, inklusive personuppgifter och känsliga uppgifter. Det är därför sekretess måste hanteras noggrant.
+Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket stora mängder data, inklusive personuppgifter och känsliga data. Det är därför sekretess måste hanteras noggrant.
 
 * Gör alltid ansvarsfull och etisk användning av personuppgifter.
 
-* Undvik att skicka oönskade e-postmeddelanden, push-meddelanden och SMS-meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av Adobe Campaign när det gäller att skicka oönskade meddelanden.
+* Undvik att skicka oönskade e-postmeddelanden, push-meddelanden och SMS-meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av Adobe Campaign för att skicka oönskade meddelanden.
 
-Ta dig tid att gå igenom checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html) säkerhet och integritet för att lära dig grunderna för att kontrollera säkerhet och integritet.
+Ta dig tid att gå igenom [checklistan för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html) för att lära dig grunderna i att kontrollera säkerhet och integritet.
 
 ### Sekretessregler {#privacy-regulations}
 
@@ -50,34 +50,35 @@ För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i en
 >
 >Mer information om hur GDPR, CCPA, PDPA och LGPD gäller för Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
 
-### Sekretess för Adobe Experience Cloud {#experience-cloud-privacy}
+### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
-Adobe Campaign är en del av Adobe Experience Cloud-lösningarna. Det sätt på vilket sekretessen hanteras i Campaign följer de allmänna principerna för Experience Cloud, som följande:
+Adobe Campaign ingår i Adobe Experience Cloud lösningar. Det sätt på vilket sekretessen hanteras i Campaign följer de allmänna principerna för Experience Cloud, som följande:
 
-* **Vilken information samlas in när du använder Adobe Experience Cloud**
+* **Vilken information samlas in när Adobe Experience Cloud används**
 
-   Som företag som använder Adobe Experience Cloud-lösningar väljer ni vilken information som ska samlas in och skickas till ert Adobe Experience Cloud-konto. Exempel på information som kan samlas in är webbläsaraktivitet, IP-adresser, platsinformation från mobila enheter, kampanjfrekvens, artiklar som köpts eller placerats i kundvagn osv.
+   Som företag som använder Adobe Experience Cloud lösningar väljer du vilken information som ska registreras och skickas till ditt Adobe Experience Cloud-konto. Exempel på information som kan samlas in är webbläsaraktivitet, IP-adresser, platsinformation från mobila enheter, kampanjfrekvens, artiklar som köpts eller placerats i kundvagn osv.
 
    >[!NOTE]
    >
-   >För alla Adobe-produkter samlar Campaign in information om program- och webbplatsanvändare. Mer information finns i [Adobes integritetspolicy](https://www.adobe.com/privacy/policy.html).
+   >För alla Adobe-produkter samlar Campaign in information om program- och webbplatsanvändare. Mer information finns i [Adobe integritetspolicy](https://www.adobe.com/privacy/policy.html).
 
 * **Hur Adobe Experience Cloud används för att samla in information**
 
-   * Adobe Experience Cloud-lösningar använder cookies och liknande tekniker, som webbfyrar (kallas även taggar eller pixlar), för att göra det möjligt för er att samla in information. Mer information om cookies och spårningsfunktioner med Adobe Campaign finns i [det här avsnittet](#tracking-capabilities).
-   * Ni kan också använda Adobe Experience Cloud-teknologier i era mobilappar. Mer information om hur du skickar mobilleveranser med Campaign finns i [SMS-kanal](../../delivery/using/sms-channel.md) och [Mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
+   * Adobe Experience Cloud lösningar använder cookies och liknande tekniker, som webbfyrar (kallas även taggar eller pixlar), för att göra det möjligt att samla in information. Mer information om cookies och spårningsfunktioner med Adobe Campaign finns i [det här avsnittet](#tracking-capabilities).
+   * Du kan också använda Adobe Experience Cloud-tekniker i dina mobilappar. Mer information om hur du skickar mobilleveranser med Campaign finns i [SMS-kanal](../../delivery/using/sms-channel.md) och [Mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
 
-* **Dina användares sekretessval när det gäller din användning av Adobe Experience Cloud**
+* **Dina användares sekretessinställningar för din användning av Adobe Experience Cloud**
 
-   Adobe ber dig att tillhandahålla dina kunders integritetspolicyer som beskriver:
+   Adobe ber dig att ge dina kunder en egen sekretesspolicy som beskriver:
 
    * Din sekretesspraxis i samband med Adobe Experience Cloud
-   * Hur användare kan ange sina inställningar för insamling eller användning av information i anslutning till Adobe Experience Cloud
+   * Hur användare kan ange sina inställningar för insamling eller användning av information i samband med Adobe Experience Cloud
+
    >[!NOTE]
    >
-   >Liksom för alla Adobe-produkter kan Campaign-användare avanmäla delning av information som samlats in om dem via appar och webbplatser. Mer information finns i Vanliga frågor om användningsinformation för [Adobe Experience Cloud](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html).
+   >Liksom för alla Adobe-produkter kan Campaign-användare avanmäla sig från att dela information som samlats in om dem via appar och webbplatser. Mer information finns i Vanliga frågor om [Adobe Experience Cloud-användning](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html).
 
-Mer information om Adobe Experience Cloud-sekretess finns på [den här sidan](https://www.adobe.com/privacy/marketing-cloud.html).
+Mer information om Adobe Experience Cloud sekretess finns på [den här sidan](https://www.adobe.com/privacy/marketing-cloud.html).
 
 ## Personuppgifter och personuppgifter {#personal-data}
 
@@ -90,9 +91,9 @@ De [viktigaste lagstiftningarna](#privacy-regulations) avser de olika enheter so
 * En **dataprocessor** är en person eller part som samlar in, använder eller delar personuppgifter enligt den personuppgiftsansvariges anvisningar.
 * En **registrerad** är en levande person vars personuppgifter samlas in, används eller delas och som direkt eller indirekt kan identifieras genom hänvisning till dessa personuppgifter.
 
-Därför är ni, som ett företag som samlar in och delar personuppgifter, personuppgiftsansvariga, era kunder de registrerade och Adobe Campaign agerar som databehandlare när de hanterar sina personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvariga att hantera relationen till de registrerade, t.ex. vid hantering av [sekretessförfrågningar](#privacy-requests).
+Därför är du, som ett företag som samlar in och delar personuppgifter, Data Controller, dina kunder de registrerade och Adobe Campaign fungerar som databehandlare när de hanterar sina personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvariga att hantera relationen till de registrerade, t.ex. vid hantering av [sekretessförfrågningar](#privacy-requests).
 
-När ni integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, till exempel [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager eller People Core Service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller med andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste ni vara extra noga med att skydda personuppgifter.
+När ni integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager eller People core service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste ni vara extra noga med att skydda personuppgifter.
 
 ## Datainsamling {#data-acquisition}
 
@@ -105,12 +106,12 @@ Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig 
 
 ## Integritetshantering {#privacy-management}
 
-Integritetshantering avser alla processer och verktyg som kan hjälpa er att följa sekretessbestämmelser (GDPR, CCPA, etc.). Få en översikt över vilken sekretesshantering som finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html).
+Integritetshantering avser alla processer och verktyg som kan hjälpa er att följa sekretessbestämmelser (GDPR, CCPA, etc.). Få en översikt över vilken sekretesshantering som finns på [den här sidan](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html).
 
 Adobe Campaign tillhandahåller olika funktioner för sekretesshantering:
 * Hantering av samtycke, datalagring och användarroller. Se [det här avsnittet](#consent).
 * Sekretessförfrågningar (rätt till åtkomst och rätt att bli glömd). Se [det här avsnittet](#privacy-requests).
-* Avanmäl dig från försäljning av personuppgifter (CCPA-specifik). Se [det här avsnittet](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa).
+* Avanmäl dig från försäljning av personuppgifter (CCPA-specifik). Se [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html#ccpa).
 
 De viktigaste sekretessfunktionerna i Campaign och ett exempel på vilka personer som berörs presenteras i [det här avsnittet](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
 
@@ -120,14 +121,14 @@ De viktigaste sekretessfunktionerna i Campaign och ett exempel på vilka persone
 Ursprungligen har Adobe Campaign viktiga funktioner som är viktiga för sekretessen:
 
 * **Hantering** av samtycke: Genom prenumerationshanteringen kan du hantera mottagarnas inställningar och spåra vilka mottagare som har valt vilken typ av prenumerationer du vill ha. Mer information finns i [Om prenumerationer](../../delivery/using/about-services-and-subscriptions.md).
-* **Datalagring**: Alla inbyggda standardloggtabeller har förinställda lagringsperioder, vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare kvarhållningsperioder kan ställas in med arbetsflöden. Mer information får du av Adobes konsulter eller tekniska administratörer.
-* **Rättighetshantering**: Adobe Campaign ger dig möjlighet att hantera de rättigheter som tilldelats olika Campaign-operatorer via olika färdiga eller anpassade roller. På så sätt kan du hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Mer information finns i [Om åtkomsthantering](../../platform/using/access-management.md).
+* **Datalagring**: Alla inbyggda standardloggtabeller har förinställda lagringsperioder, vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare kvarhållningsperioder kan ställas in med arbetsflöden. Mer information får du om du kontaktar konsulterna eller teknikadministratörerna på Adobe.
+* **Rättighetshantering**: Adobe Campaign ger er möjlighet att hantera de rättigheter som tilldelats olika Campaign-operatorer via olika färdiga eller anpassade roller. På så sätt kan du hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Mer information finns i [Om åtkomsthantering](../../platform/using/access-management.md).
 
-Mer information om de här funktionerna och hur du hanterar dem i Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent).
+Mer information om dessa funktioner och hur du hanterar dem i Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent).
 
 ### Sekretessförfrågningar {#privacy-requests}
 
-Adobe Campaign har ytterligare funktioner som hjälper dig att underlätta din beredskap som Data Controller för vissa sekretessförfrågningar:
+Adobe Campaign erbjuder ytterligare funktioner som hjälper dig att underlätta din beredskap som Data Controller för vissa sekretessförfrågningar:
 
 * Den **** registrerade har rätt att få en bekräftelse från den registeransvarige på om personuppgifter som rör dem behandlas eller inte, var och varför.
 
@@ -145,15 +146,15 @@ Adobe Campaign har ytterligare funktioner som hjälper dig att underlätta din b
 
 Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
 
-Begäran om **åtkomst** och **borttagning** visas på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess). Implementeringsstegen för att skapa dessa begäranden beskrivs i [det här avsnittet](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests). <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+Begäran om **åtkomst** och **borttagning** visas på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess). Implementeringsstegen för att skapa dessa begäranden beskrivs i [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html#ManagingPrivacyRequests). <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
 
 ## Spårningsfunktioner {#tracking-capabilities}
 
 ### Cookies {#cookies}
 
-Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra hur mottagarna ser ut i sina leveranser med hjälp av två typer av cookies:
+Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra hur mottagarna ser ut med hjälp av två typer av cookies:
 
-* En **sessionscookie** (nlid). Detta innehåller identifieraren för e-postmeddelandet som skickas till kontakten (broadlogId) och identifieraren för meddelandemallen (deliveryId). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och gör att du kan spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
+* En **sessionscookie** (nlid). Detta innehåller identifieraren för e-postmeddelandet som skickas till kontakten (broadlogId) och identifieraren för meddelandemallen (deliveryId). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
 * En **permanent cookie** som delas mellan Adobe Experience Cloud-lösningar. På så sätt kan du identifiera de användare som interagerar med Experience Cloud när de besöker en webbplats. Beskrivningen av denna cookie finns [här](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
 
 I sådana förordningar som den allmänna dataskyddsförordningen (GDPR) anges att företag kräver att webbplatsanvändarna godkänner avtalet innan de installerar cookies.
@@ -173,4 +174,4 @@ Med Adobe Campaign kan du också övervaka hur mottagarna surfar på webbplatsen
 
 Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
-Om du vill hantera spårning ytterligare kan du med Adobe Campaign visa en avanmälningsbanderoll så att du kan sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning. Mer information finns i [Avanmäl dig](../../web/using/web-application-tracking-opt-out.md)till webbprogramspårning.
+För att ytterligare hantera spårning kan du med Adobe Campaign visa en avanmälningsbanderoll så att du inte längre kan spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning. Mer information finns i [Avanmäl dig](../../web/using/web-application-tracking-opt-out.md)till webbprogramspårning.
