@@ -1,8 +1,8 @@
 ---
 title: Versionsinformation om äldre versioner
 seo-title: Versionsinformation om äldre versioner
-description: 'null'
-seo-description: 'null'
+description: noll
+seo-description: noll
 page-status-flag: never-activated
 uuid: a9fa6447-35e8-410d-b9de-e4053cee47ab
 contentOwner: sauviat
@@ -11,8 +11,11 @@ iscontainer: true
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+workflow-type: ht
+source-wordcount: '11'
+ht-degree: 100%
 
 ---
 
