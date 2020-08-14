@@ -1,7 +1,7 @@
 ---
-title: Vanliga frågor om kampanjinställningar
-seo-title: Konfigurera Campaign
-description: Vanliga frågor om Campaign Classic
+title: Vanliga frågor och svar om inställningar i Campaign
+seo-title: Så konfigurerar du Campaign
+description: Vanliga frågor och svar om Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,103 +13,103 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Vanliga frågor om kampanjinställningar {#settings-faq}
+# Vanliga frågor och svar om inställningar i Campaign {#settings-faq}
 
-Lär dig viktiga konfigurationer för att konfigurera Campaign-instansen så att den passar dina behov.
+Lär dig viktiga konfigurationer för att ställa in instansen i Campaign så att den passar dina behov.
 
-## Kan jag ändra språket i Campaign-gränssnittet? {#can-i-change-the-language-of-campaign-interface-}
+## Kan jag ändra språket på gränssnittet i Campaign? {#can-i-change-the-language-of-campaign-interface-}
 
-Kampanjspråk väljs när instansen skapas. Du kan inte ändra den i efterhand. For more on this, refer to [this section](../../installation/using/creating-an-instance-and-logging-on.md).
+Språket i Campaign väljs när instansen skapas. Du kan inte ändra det i efterhand. Mer information om detta finns i [det här avsnittet](../../installation/using/creating-an-instance-and-logging-on.md).
 
-Användargränssnittet i Adobe Campaign finns på fyra språk: Engelska, franska, tyska och japanska. Observera att klientkonsolen och servern måste vara inställda på samma språk. Varje Campaign-instans kan bara köras på ett språk.
+Användargränssnittet i Adobe Campaign finns på fyra språk: engelska, franska, tyska och japanska. Observera att klientkonsolen och servern måste vara inställda på samma språk. Varje instans i Campaign kan bara köras på ett språk.
 
-För engelska kan du välja antingen amerikansk engelska eller brittisk engelska när du installerar Campaign: de skiljer sig åt när det gäller datum- och tidsformat. For more on these differences refer to [this section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+För engelska kan du välja antingen amerikansk engelska eller brittisk engelska när du installerar Campaign. De skiljer sig åt när det gäller datum- och tidsformat. Mer information om dessa skillnader finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-## Kan jag använda Campaign Classic med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## Kan jag använda Campaign Classic tillsammans med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
-Ni kan kombinera leveransfunktionerna och de avancerade kampanjhanteringsfunktionerna i Adobe Campaign med en uppsättning lösningar som hjälper er att personalisera användarnas upplevelse.
+Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampanjhantering i Adobe Campaign med en uppsättning lösningar som hjälper till att personalisera användarnas upplevelse.
 
-Klicka här för att lära dig [hur du arbetar med andra Adobe-lösningar](../../integrations/using/about-campaign-integrations.md) och [hur du konfigurerar IMS i Campaign](../../integrations/using/about-adobe-id.md).
+Klicka här för att läsa mer om [hur man arbetar med andra Adobe-lösningar](../../integrations/using/about-campaign-integrations.md) och [hur man konfigurerar IMS i Campaign](../../integrations/using/about-adobe-id.md).
 
-## Hur ställer jag in spårningsfunktioner för min Campaign-instans? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## Hur ställer jag in spårningsfunktioner för min instans i Campaign? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
-Som expertanvändare kan du konfigurera spårningsfunktioner i Campaign-instansen.
+Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Campaign.
 
-[Klicka här om du vill veta mer](../../installation/using/deploying-an-instance.md#tracking-configuration).
+[Klicka här för att läsa mer](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-## Hur konfigurerar man e-postleveransen? {#how-to-configure-email-deliverability-}
+## Hur konfigurerar man e-postmeddelandets levererbarhet? {#how-to-configure-email-deliverability-}
 
-Förutom avsnittet [Leveranskonfiguration](../../delivery/using/about-deliverability.md#configuration) kan du läsa igenom de tekniska rekommendationerna för leverans för att förstå hur du konfigurerar instansen för att maximera kapaciteten för kampanjleverans.
+Förutom avsnittet [Konfiguration av levererbarhet](../../delivery/using/about-deliverability.md#configuration) kan du läsa de tekniska rekommendationerna för leveranser för att förstå hur du konfigurerar instansen för att maximera levererbarheten i Campaign.
 
-[Klicka här om du vill veta mer](../../delivery/using/technical-recommendations.md).
+[Klicka här för att läsa mer](../../delivery/using/technical-recommendations.md).
 
 ## Hur kan jag implementera innehållsgodkännande? {#how-can-i-implement-content-approval-}
 
-Med Campaign kan ni skapa godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen, i samverkansbaserat läge. För varje kampanj kan du godkänna leveransmålet, innehållet och kostnaderna. De Adobe Campaign-operatörer som ansvarar för godkännandet kan meddelas via e-post och godkänna eller avvisa godkännanden från konsolen eller via en webbanslutning.
+Med Campaign kan du skapa godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen i samarbetsläge. För varje kampanj kan du godkänna leveransmålet, innehållet och kostnaderna. Operatörer som ansvarar för godkännande i Adobe Campaign kan meddelas via e-post och kan godkänna eller ej från konsolen eller via en webbanslutning.
 
-[Klicka här om du vill veta mer](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) och se hur du implementerar ditt godkännande av leveransinnehåll i Campaign.
+[Klicka här för att läsa mer](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) och se hur du implementerar ditt godkännande av leveransinnehåll i Campaign.
 
 ## Hur får jag åtkomst till data som lagras i en extern databas? {#how-can-i-access-data-stored-in-an-external-database-}
 
-I Adobe Campaign finns alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser: kan ni få åtkomst till externa data utan att ändra strukturen på Adobe Campaign-data.
+Adobe Campaign tillhandahåller alternativet federerad dataåtkomst (FDA) för att bearbeta information som lagras i en eller flera externa databaser. Du kan få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign.
 
-[Klicka här om du vill veta mer](../../platform/using/connecting-to-database.md).
+[Klicka här för att läsa mer](../../platform/using/connecting-to-database.md).
 
 ## Vilka externa databaser kan jag ansluta Campaign till? {#which-external-databases-can-i-connect-campaign-to-}
 
-Extern databas som är kompatibel med Campaign via FDA (Federated Data Access) listas i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Externa databaser som är kompatibla med Campaign via federerad dataåtkomst (FDA) listas i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
 ## Kan Adobe Campaign integreras med LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
-Som lokal/blandad kund kan ni integrera Campaign Classic med LDAP-katalogen.
+Som lokal/hybrid-kund kan du integrera Campaign Classic med LDAP-katalogen.
 
-[Klicka här om du vill veta mer](../../installation/using/connecting-through-ldap.md).
+[Klicka här för att läsa mer](../../installation/using/connecting-through-ldap.md).
 
-## Hur konfigurerar jag CRM-anslutningar i Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
+## Hur konfigurerar jag CRM-kopplingar i Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
 
-Adobe Campaign innehåller olika CRM-anslutningar för att länka din Adobe Campaign-plattform till dina tredjepartssystem. Med dessa CRM-anslutningar kan du synkronisera kontakter, konton, inköp osv. De gör att du enkelt kan integrera ditt program med olika tredjeparts- och affärsprogram.
+Adobe Campaign tillhandahåller olika CRM-kopplingar för att länka din plattform i Adobe Campaign till dina tredjepartssystem. Med dessa CRM-kopplingar kan du synkronisera kontakter, konton och inköp osv. De låter dig enkelt integrera din applikation med olika tredjeparts- och företagsapplikationer.
 
-Dessa kopplingar möjliggör snabb och enkel dataintegrering: I Adobe Campaign finns en dedikerad guide för att samla in och välja bland tabellerna som finns i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
+Dessa kopplingar möjliggör snabb och enkel dataintegrering. Adobe Campaign erbjuder en dedikerad guide för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
-Läs mer i [Konfigurera CRM-anslutningar](../../platform/using/crm-connectors.md) om du vill veta hur du synkroniserar CRM-verktyget med Adobe Campaign. Titta på den här fallvideon om [Adobe Campaign och Microsoft Dynamics 365-integrering](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+Läs mer i [Konfigurera CRM-kopplingar](../../platform/using/crm-connectors.md) för att veta hur du synkroniserar CRM-verktyget med Adobe Campaign. Titta på den här videon med användningsfall om [integrering mellan Adobe Campaign och Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
-## Hur utför jag rensning av mjuk cache när problemen är datorspecifika eller användarspecifika? {#perform-soft-cache-clear}
+## Hur utför jag en rensning av mjukt cacheminne när problemen är dator- eller användarspecifika? {#perform-soft-cache-clear}
 
-Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och kan exportera data som är datorspecifika/användarspecifika, kan du behöva utföra en rensning på mjuk cache med Windows (Windows 7, Windows XP, Windows 10).
+Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och att kunna exportera data som är datorspecifika/användarspecifika kan du behöva utföra en rensning av mjukt cacheminne med Windows (Windows 7, Windows XP och Windows 10).
 
-När du har loggat in går du till **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. Logga sedan ut och in igen.
+Logga ut och gå till **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. Logga sedan ut och in igen.
 
 ![](assets/faq_soft_cache.png)
 
-Om detta fortfarande inte hjälper kan du försöka rensa hårddisken genom att utföra stegen nedan.
+Om detta fortfarande inte hjälper kan du försöka utföra en rensning av hårt cacheminne genom att utföra stegen nedan.
 
-## Hur rensar du hårddisken när problemen är datorspecifika eller användarspecifika? {#perform-hard-cache-clear}
+## Hur utför jag en rensning av hårt cacheminne när problemen är dator- eller användarspecifika? {#perform-hard-cache-clear}
 
-Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och kan exportera data som är datorspecifika/användarspecifika, kan du behöva utföra en rensning av hårddisken med Windows (Windows 7, Windows XP, Windows 10).
+Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och att kunna exportera data som är datorspecifika/användarspecifika kan du behöva utföra en rensning av hårt cacheminne med Windows (Windows 7, Windows XP och Windows 10).
 
-1. På klientkonsolen väljer du **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
+1. Välj **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]** på klientkonsolen.
 
-1. Logga ut och stäng klientkonsolen (Rich Client).
+1. Logga ut och stäng klientkonsolen (rich client).
 
-1. Gå till följande platser, baserat på operativsystemsversion:
+1. Gå till följande platser beroende på version av operativsystemet:
 
-   * Windows 7: C:\Users\&lt; Användarnamn >\AppData\Roaming\Neolane\NL_5\
-   * Windows XP: C:\Documents and Settings\&lt; Användarnamn >\Application Data\Neolane\NL_5
-   Här ser du många XML-filer med namnet nlclient-config-&lt; alfanumeriskt värde >.xml.
+   * Windows 7: C:\Users\&lt; Användarnamn >\AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt; Användarnamn >\Application Data\Neolane\NL_5
+   Här ser du många xml-filer med namnet nlclient-config-&lt; alfanumeriskt värde >.xml.
 
-1. Ta bort dessa XML-filer och associerade mappar.
+1. Radera dessa xml-filer och associerade mappar.
 
    >[!IMPORTANT]
    >
-   >Ta inte bort filen nlclient_cnx.xml.
+   >Radera inte filen nlclient_cnx.xml.
 
 1. Logga in på klientkonsolen.
