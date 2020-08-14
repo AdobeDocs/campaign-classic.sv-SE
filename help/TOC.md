@@ -1,19 +1,19 @@
 ---
 audience: end-user
-user-guide-title: Hjälp om Adobe Campaign Classic
+user-guide-title: Hjälp med Adobe Campaign Classic
 index: y
 product: adobe campaign
-sub-product: adobe campaign classic
+sub-product: Adobe Campaign Classic
 translation-type: tm+mt
 source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
 source-wordcount: '2110'
-ht-degree: 8%
+ht-degree: 95%
 
 ---
 
 
-# Adobe Campaign Classic Help {#using}
+# Hjälp med Adobe Campaign Classic {#using}
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
@@ -29,19 +29,19 @@ ht-degree: 8%
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
    + Föråldrade funktioner och kompatibilitet {#deprecated-compatibility}
-      + [Föråldrade funktioner](rn/using/deprecated-features.md)
+      + [Inaktuella funktioner](rn/using/deprecated-features.md)
       + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
-+ Getting Started {#getting-started}
-   + Från Adobe Campaign {#starting-with-adobe-campaign}
++ Komma igång {#getting-started}
+   + Komma igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
-      + [Startar Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Adobe Campaign arbetsyta](platform/using/adobe-campaign-workspace.md)
+      + [Starta Adobe Campaign](platform/using/launching-adobe-campaign.md)
+      + [Arbetsytan i Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Vanliga frågor och svar {#faq}
          + [Vanliga frågor](platform/using/common-questions.md)
          + [Viktiga begrepp](platform/using/faq-key-concepts.md)
-         + [Målgrupper](platform/using/faq-audiences.md)
-         + [Designmeddelanden](platform/using/faq-designing.md)
+         + [Publiker](platform/using/faq-audiences.md)
+         + [Utforma meddelanden](platform/using/faq-designing.md)
          + [Skicka meddelanden](platform/using/faq-messages.md)
          + [Arbetsflöden](platform/using/faq-workflows.md)
          + [Konfiguration](platform/using/faq-campaign-config.md)
@@ -60,12 +60,12 @@ ht-degree: 8%
       + [Allmän import och export](platform/using/generic-imports-and-exports.md)
       + [Exportera data](platform/using/exporting-data.md)
       + [Importera data](platform/using/importing-data.md)
-      + [Användning av SFTP-server](platform/using/sftp-server-usage.md)
+      + [Använda en SFTP-server](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
       + [Filtreringsalternativ](platform/using/filtering-options.md)
       + [Skapa filter](platform/using/creating-filters.md)
-      + [Använd skiftläge](platform/using/use-case.md)
-   + Skapa förfrågningar{#creating-queries}
+      + [Användningsfall](platform/using/use-case.md)
+   + Skapa frågor {#creating-queries}
       + [Om frågor i Campaign](platform/using/about-queries-in-campaign.md)
       + [Steg för att skapa en fråga](platform/using/steps-to-create-a-query.md)
       + [Definiera filtervillkor](platform/using/defining-filter-conditions.md)
@@ -81,13 +81,13 @@ ht-degree: 8%
       + [Åtkomsträttigheter till fjärrdatabas](platform/using/remote-database-access-rights.md)
       + [Ansluta till databasen](platform/using/connecting-to-database.md)
       + [Skapa dataschemat](platform/using/creating-data-schema.md)
-      + [Definiera datamappning](platform/using/defining-data-mapping.md)
+      + [Definiera datakartläggning](platform/using/defining-data-mapping.md)
       + [Ytterligare alternativ](platform/using/additional-options.md)
       + [Tillägg](platform/using/appendices-fda.md)
    + Kopplingar {#connectors}
       + [Om kopplingar](platform/using/about-connectors.md)
-      + [CRM Connectors](platform/using/crm-connectors.md)
-      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
+      + [CRM-kopplingar](platform/using/crm-connectors.md)
+      + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
    + Bästa praxis {#delivery-bestpractices}
@@ -98,104 +98,104 @@ ht-degree: 8%
       + [Definiera rätt målgrupp](delivery/using/define-the-right-audience.md)
       + [Kontrollera före sändning](delivery/using/check-before-sending.md)
       + [Spåra och övervaka](delivery/using/track-and-monitor.md)
-   + Viktiga steg när du skapar en leverans {#key-steps-when-creating-a-delivery}
+   + Viktiga steg när man skapar en leverans {#key-steps-when-creating-a-delivery}
       + [Kom igång med leveranser](delivery/using/steps-about-delivery-creation-steps.md)
       + [Skapa och identifiera leveransen](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [Definiera målpopulationen](delivery/using/steps-defining-the-target-population.md)
+      + [Definiera målgruppen](delivery/using/steps-defining-the-target-population.md)
       + [Verifierar leveransen](delivery/using/steps-validating-the-delivery.md)
       + [Skicka leveransen](delivery/using/steps-sending-the-delivery.md)
-   + Skicka e-post {#sending-emails}
+   + Skicka e-postmeddelanden {#sending-emails}
       + [Om e-postkanal](delivery/using/about-email-channel.md)
       + [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
       + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
       + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
       + [Skicka meddelanden](delivery/using/sending-messages.md)
       + [Bifoga filer](delivery/using/attaching-files.md)
-   + Skicka meddelanden på mobiler {#sending-messages-on-mobiles}
+   + Skicka meddelanden på mobiltelefoner {#sending-messages-on-mobiles}
       + [SMS-kanal](delivery/using/sms-channel.md)
       + [LINE-kanal](delivery/using/line-channel.md)
    + Skicka push-meddelanden {#sending-push-notifications}
-      + [Om mobilappskanal](delivery/using/about-mobile-app-channel.md)
-      + [Integrera Campaign SDK i mobilapplikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + [Konfigurera mobilprogrammet i Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
+      + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
+      + [Integrera Campaign SDK i den mobila applikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [Konfigurera den mobila applikationen i Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
       + [Skapa meddelanden](delivery/using/creating-notifications.md)
       + [Felsökning](delivery/using/troubleshooting.md)
-   + Skickar direktutskick {#sending-direct-mail}
-      + [Om kanal för direktreklam](delivery/using/about-direct-mail-channel.md)
-      + [Skapa direktreklam](delivery/using/creating-a-direct-mail-delivery.md)
+   + Skicka direktutskick {#sending-direct-mail}
+      + [Om kanal för direktutskick](delivery/using/about-direct-mail-channel.md)
+      + [Skapa direktutskick](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definiera innehållet i direktutskick](delivery/using/defining-the-direct-mail-content.md)
-      + [Validerar](delivery/using/validating.md)
+      + [Validera](delivery/using/validating.md)
    + Använda leveransmallar {#using-delivery-templates}
       + [Om mallar](delivery/using/about-templates.md)
       + [Skapa en leveransmall](delivery/using/creating-a-delivery-template.md)
-      + [Välja en målmappning](delivery/using/selecting-a-target-mapping.md)
+      + [Välja en målgrupp att kartlägga](delivery/using/selecting-a-target-mapping.md)
       + [Skapa en leverans från en mall](delivery/using/creating-a-delivery-from-a-template.md)
    + Anpassa leveranser {#personalizing-deliveries}
       + [Om personalisering](delivery/using/about-personalization.md)
-      + [Anpassningsfält](delivery/using/personalization-fields.md)
-      + [Personaliseringsblock](delivery/using/personalization-blocks.md)
+      + [Fält för personalisering](delivery/using/personalization-fields.md)
+      + [Block för personalisering](delivery/using/personalization-blocks.md)
       + [Villkorligt innehåll](delivery/using/conditional-content.md)
       + [Personaliserade kuponger](delivery/using/personalized-coupons.md)
-      + [Generera skräddarsydda PDF-dokument](delivery/using/generating-personalized-pdf-documents.md)
-      + [Anpassa uttryckslistan](delivery/using/customizing-emoticon-list.md)
-   + Använda dirigerade adresser {#using-seed-addresses}
-      + [Om dirigeringsadresser](delivery/using/about-seed-addresses.md)
-      + [Skapa dirigerade adresser](delivery/using/creating-seed-addresses.md)
-      + [Lägga till dirigerade adresser](delivery/using/adding-seed-addresses.md)
+      + [Generera personaliserade PDF-dokument](delivery/using/generating-personalized-pdf-documents.md)
+      + [Anpassa listan med uttryckssymboler](delivery/using/customizing-emoticon-list.md)
+   + Använda fröadresser {#using-seed-addresses}
+      + [Om fröadresser](delivery/using/about-seed-addresses.md)
+      + [Skapa fröadresser](delivery/using/creating-seed-addresses.md)
+      + [Lägga till fröadresser](delivery/using/adding-seed-addresses.md)
       + [Använda en extern mottagartabell](delivery/using/using-an-external-recipient-table.md)
-      + [Användningsfall: välja startadresser enligt villkor](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+      + [Användningsfall: välja fröadresser enligt villkor](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Användningsfall: konfigurera fältersättning](delivery/using/use-case--configuring-the-field-substitution.md)
    + Prenumerationer och hänvisningar {#subscriptions-and-referrals}
       + [Om tjänster och prenumerationer](delivery/using/about-services-and-subscriptions.md)
       + [Hantera prenumerationer](delivery/using/managing-subscriptions.md)
-      + [Virusmarknadsföring och social marknadsföring](delivery/using/viral-and-social-marketing.md)
+      + [Viral och social marknadsföring](delivery/using/viral-and-social-marketing.md)
    + Övervaka leveranser {#monitoring-deliveries}
       + [Övervaka en leverans](delivery/using/monitoring-a-delivery.md)
-      + [Oom leveransfel](delivery/using/understanding-delivery-failures.md)
-      + [Om karantänhantering](delivery/using/understanding-quarantine-management.md)
+      + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
+      + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
-      + [Om meddelandespårning](delivery/using/about-message-tracking.md)
-      + [Konfigurera spårade länkar](delivery/using/how-to-configure-tracked-links.md)
-      + [Anpassa URL-spårning](delivery/using/personalizing-url-tracking.md)
+      + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
+      + [Så konfigurerar man spårade länkar](delivery/using/how-to-configure-tracked-links.md)
+      + [Personalisera URL-spårning](delivery/using/personalizing-url-tracking.md)
       + [Åtkomst till spårningsloggarna](delivery/using/accessing-the-tracking-logs.md)
-      + [Testspårning](delivery/using/testing-tracking.md)
+      + [Testa spårning](delivery/using/testing-tracking.md)
    + Leveranshantering {#deliverability-management}
-      + [Om levererbarhet](delivery/using/about-deliverability.md)
+      + [Om leverans](delivery/using/about-deliverability.md)
       + [Viktiga punkter att kontrollera](delivery/using/deliverability-key-points.md)
       + [Starta en ny plattform](delivery/using/starting-new-platform.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
-      + [Förbättra ert rykte](delivery/using/improve-reputation.md)
+      + [Förbättra ryktet](delivery/using/improve-reputation.md)
       + [Tekniska rekommendationer](delivery/using/technical-recommendations.md)
       + [Övervaka levererbarhet](delivery/using/monitoring-deliverability.md)
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [Bästa praxis för återanvändning](delivery/using/re-engagement-best-practices.md)
-      + [Blockeringslista databaser](delivery/using/block-list-databases.md)
+      + [Bästa praxis för förnyat engagemang](delivery/using/re-engagement-best-practices.md)
+      + [Databaser i blockeringslistan](delivery/using/block-list-databases.md)
       + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
       + [Resurser och principer för Content Manager](delivery/using/content-manager-resources-and-principles.md)
       + [Användningsfall: skapa innehållshantering](delivery/using/use-case--creating-content-management.md)
-      + [Datamodeller](delivery/using/data-schemas.md)
+      + [Datascheman](delivery/using/data-schemas.md)
       + [Inmatningsformulär](delivery/using/input-forms.md)
-      + [Formatering](delivery/using/formatting.md)
-      + [Publikationsmallar](delivery/using/publication-templates.md)
+      + [Formatera](delivery/using/formatting.md)
+      + [Publiceringsmallar](delivery/using/publication-templates.md)
       + [Använda en innehållsmall](delivery/using/using-a-content-template.md)
-      + [Förbättra innehåll](delivery/using/enriching-content.md)
+      + [Berika innehåll](delivery/using/enriching-content.md)
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
-+ Samordna kampanjer {#orchestrating-campaigns}
++ Orkestrera kampanjer {#orchestrating-campaigns}
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
-   + Samordna kampanjer {#orchestrate-campaigns}
+   + Orkestrera kampanjer {#orchestrate-campaigns}
       + [Konfigurera marknadsföringskampanjer](campaign/using/setting-up-marketing-campaigns.md)
       + [Mallar för marknadsföringskampanj](campaign/using/marketing-campaign-templates.md)
       + [Leveranser av marknadsföringskampanjer](campaign/using/marketing-campaign-deliveries.md)
       + [Godkännande av marknadsföringskampanj](campaign/using/marketing-campaign-approval.md)
       + [Övervakning av marknadsföringskampanj](campaign/using/marketing-campaign-monitoring.md)
-      + [Leverantörer, stockar och budgetar](campaign/using/providers--stocks-and-budgets.md)
+      + [Leverantörer, lager och budgetar](campaign/using/providers--stocks-and-budgets.md)
    + Uppgifter, resurser och budgetar {#tasks--resources-and-budgets}
-      + [Om hantering av marknadsföringsresurser](campaign/using/about-marketing-resource-management.md)
+      + [Om att hantera marknadsföringsresurser](campaign/using/about-marketing-resource-management.md)
       + [Skapa och hantera uppgifter](campaign/using/creating-and-managing-tasks.md)
       + [Kontrollera kostnader](campaign/using/controlling-costs.md)
       + [Hantera marknadsföringsresurser](campaign/using/managing-marketing-resources.md)
@@ -203,10 +203,10 @@ ht-degree: 8%
    + Kampanjoptimering {#campaign-optimization}
       + [Om kampanjtypologier](campaign/using/about-campaign-typologies.md)
       + [Tryckregler](campaign/using/pressure-rules.md)
-      + [Konsekvensregler](campaign/using/consistency-rules.md)
+      + [Konsistensregler](campaign/using/consistency-rules.md)
       + [Kontrollregler](campaign/using/control-rules.md)
       + [Filtreringsregler](campaign/using/filtering-rules.md)
-      + [Tillämpar regler](campaign/using/applying-rules.md)
+      + [Tillämpa regler](campaign/using/applying-rules.md)
       + [Kampanjsimuleringar](campaign/using/campaign-simulations.md)
    + Distribuerad marknadsföring {#distributed-marketing}
       + [Om distribuerad marknadsföring](campaign/using/about-distributed-marketing.md)
@@ -216,96 +216,96 @@ ht-degree: 8%
       + [Åtkomst till kampanjer](campaign/using/accessing-campaigns.md)
       + [Spåra en kampanj](campaign/using/tracking-a-campaign.md)
       + [Exempel](campaign/using/examples.md)
-   + Svarshanteraren {#response-manager}
-      + [Om svarshanteraren](campaign/using/about-response-manager.md)
+   + Responshanteraren {#response-manager}
+      + [Om responshanteraren](campaign/using/about-response-manager.md)
       + [Konfiguration](campaign/using/configuration.md)
-      + [Översiktsmallar](campaign/using/hypothesis-templates.md)
+      + [Hypotesmallar](campaign/using/hypothesis-templates.md)
       + [Skapa hypoteser](campaign/using/creating-hypotheses.md)
-      + [Spårning av hyposer](campaign/using/hypothesis-tracking.md)
+      + [Spåra hypoteser](campaign/using/hypothesis-tracking.md)
 + Rapportering {#reporting}
    + Rapportering i Adobe Campaign {#reporting-in-adobe-campaign}
-      + [Kom igång med rapporter](reporting/using/about-adobe-campaign-reporting-tools.md)
-      + [Bästa tillvägagångssätt för rapportering](reporting/using/best-practices.md)
+      + [Kom igång med rapportering](reporting/using/about-adobe-campaign-reporting-tools.md)
+      + [Bästa praxis för rapportering](reporting/using/best-practices.md)
    + Åtkomst till inbyggda rapporter {#accessing-built-in-reports}
-      + [Om inbyggda rapporter för Campaign](reporting/using/about-campaign-built-in-reports.md)
-      + [Förteckning över rapporter](reporting/using/list-of-reports.md)
+      + [Om inbyggda rapporter i Campaign](reporting/using/about-campaign-built-in-reports.md)
+      + [Lista över rapporter](reporting/using/list-of-reports.md)
    + Rapporter om leveranser{#reports-on-deliveries}
-      + [Rapporter om leveranser](reporting/using/reports-on-deliveries.md)
+      + [Om rapporter om leveranser](reporting/using/reports-on-deliveries.md)
       + [Globala rapporter](reporting/using/global-reports.md)
       + [Leveransrapporter](reporting/using/delivery-reports.md)
       + [Kumulativa rapporter](reporting/using/cumulative-reports.md)
       + [Indikatorberäkning](reporting/using/indicator-calculation.md)
       + [Person/personer och mottagare](reporting/using/person-people-recipients.md)
-   + Analyserar populationer {#analyzing-populations}
-      + [Beskrivande analys](reporting/using/about-descriptive-analysis.md)
+   + Analyserar grupper{#analyzing-populations}
+      + [Om beskrivande analys](reporting/using/about-descriptive-analysis.md)
       + [Använda guiden för beskrivande analys](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Bearbeta en rapport](reporting/using/processing-a-report.md)
-      + [Användningsexempel](reporting/using/use-cases.md)
+      + [Användningsfall](reporting/using/use-cases.md)
    + Skapa nya rapporter {#creating-new-reports}
       + [Om att skapa rapporter i Campaign](reporting/using/about-reports-creation-in-campaign.md)
       + [Skapa en ny rapport](reporting/using/creating-a-new-report.md)
       + [Samla in data som ska analyseras](reporting/using/collecting-data-to-analyze.md)
-      + [Använda kontexten](reporting/using/using-the-context.md)
+      + [Använda sammanhanget](reporting/using/using-the-context.md)
       + [Skapa en tabell](reporting/using/creating-a-table.md)
       + [Skapa ett diagram](reporting/using/creating-a-chart.md)
       + [Elementlayout](reporting/using/element-layout.md)
       + [Definiera ett villkorligt innehåll](reporting/using/defining-a-conditional-content.md)
       + [Avancerade funktioner](reporting/using/advanced-functionalities.md)
-      + [Egenskaper för rapporten](reporting/using/properties-of-the-report.md)
+      + [Rapportens egenskaper](reporting/using/properties-of-the-report.md)
       + [Konfigurera åtkomst till rapporten](reporting/using/configuring-access-to-the-report.md)
-      + [Åtgärder för rapporter](reporting/using/actions-on-reports.md)
+      + [Instruktioner i rapporter](reporting/using/actions-on-reports.md)
    + Utforma rapporter med kuber {#designing-reports-with-cubes}
       + [Om kuber](reporting/using/about-cubes.md)
       + [Skapa indikatorer](reporting/using/creating-indicators.md)
       + [Använda kuber för att utforska data](reporting/using/using-cubes-to-explore-data.md)
-      + [Koncept och metoder](reporting/using/concepts-and-methodology.md)
-      + [Användningsfall: visa rapport om svar på en nätundersökning](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+      + [Koncept och metodik](reporting/using/concepts-and-methodology.md)
+      + [Användningsfall: visa rapport gällande svar på en nätundersökning](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Utforma webbinnehåll {#designing-content}
-   + Webbprogram {#web-applications}
-      + [Om webbprogram](web/using/about-web-applications.md)
-      + [Skapa ett nytt webbprogram](web/using/creating-a-new-web-application.md)
-      + [Utforma ett webbprogram](web/using/designing-a-web-application.md)
-      + [Användningsexempel: skapa översikter](web/using/use-cases--creating-overviews.md)
-      + [Översätta ett webbprogram](web/using/translating-a-web-application.md)
-      + [Spåra ett webbprogram](web/using/tracking-a-web-application.md)
-      + [Avanmäl dig till spårning av webbprogram](web/using/web-application-tracking-opt-out.md)
+   + Webbapplikationer {#web-applications}
+      + [Om webbapplikationer](web/using/about-web-applications.md)
+      + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
+      + [Designa en webbapplikation](web/using/designing-a-web-application.md)
+      + [Användningsfall: skapa översikter](web/using/use-cases--creating-overviews.md)
+      + [Översätta en webbapplikation](web/using/translating-a-web-application.md)
+      + [Spåra en webbapplikation](web/using/tracking-a-web-application.md)
+      + [Välja att inte delta i spårning av webbapplikation](web/using/web-application-tracking-opt-out.md)
    + Redigera HTML-innehåll {#editing-html-content}
-      + [Om Campaign HTML-redigerare](web/using/about-campaign-html-editor.md)
+      + [Om HTML-redigeraren i Campaign](web/using/about-campaign-html-editor.md)
       + [Mallhantering](web/using/template-management.md)
-      + [Gränssnitt för innehållsredigering](web/using/content-editor-interface.md)
+      + [Gränssnitt för innehållsredigeraren](web/using/content-editor-interface.md)
       + [Redigera innehåll](web/using/editing-content.md)
       + [Bästa praxis för innehållsredigering](web/using/content-editing-best-practices.md)
       + [Skapa en landningssida](web/using/creating-a-landing-page.md)
-      + [Användningsfall: skapa e-postleverans](web/using/use-case--creating-an-email-delivery.md)
+      + [Användningsfall: skapa en e-postleverans](web/using/use-case--creating-an-email-delivery.md)
    + Webbformulär {#web-forms}
       + [Om webbformulär](web/using/about-web-forms.md)
       + [Använda en webbformulärmall](web/using/using-a-web-form-template.md)
       + [Lägga till fält i ett webbformulär](web/using/adding-fields-to-a-web-form.md)
       + [Statiska element i ett webbformulär](web/using/static-elements-in-a-web-form.md)
-      + [Definiera webbformulärslayout](web/using/defining-web-forms-layout.md)
+      + [Definiera ett webbformulärs layout](web/using/defining-web-forms-layout.md)
       + [Formuläråtergivning](web/using/form-rendering.md)
       + [Definiera sidsekvenser för webbformulär](web/using/defining-web-forms-page-sequencing.md)
-      + [Svar på webbformulär](web/using/web-forms-answers.md)
+      + [Svar från webbformulär](web/using/web-forms-answers.md)
       + [Publicera ett webbformulär](web/using/publishing-a-web-form.md)
       + [Definiera egenskaper för webbformulär](web/using/defining-web-forms-properties.md)
       + [Översätta ett webbformulär](web/using/translating-a-web-form.md)
-      + [Användningsexempel: webbformulär](web/using/use-cases--web-forms.md)
+      + [Användningsfall: webbformulär](web/using/use-cases--web-forms.md)
    + Onlineundersökningar {#online-surveys}
-      + [Om enkäter](web/using/about-surveys.md)
-      + [Komma igång med enkäter](web/using/getting-started-with-surveys.md)
+      + [Om undersökningar](web/using/about-surveys.md)
+      + [Komma igång med undersökningar](web/using/getting-started-with-surveys.md)
       + [Bygga en undersökning](web/using/building-a-survey.md)
       + [Hantera svar](web/using/managing-answers.md)
       + [Publicera, spåra och använda insamlade data](web/using/publish--track-and-use-collected-data.md)
       + [Konfigurera undersökningar](web/using/configuring-surveys.md)
       + [Användningsfall: skapa ett referensformulär](web/using/use-case--creating-a-refer-a-friend-form.md)
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
-   + [Om Campaign-integreringar](integrations/using/about-campaign-integrations.md)
-   + Målgruppsdelning {#audience-sharing}
+   + [Om integreringar i Campaign](integrations/using/about-campaign-integrations.md)
+   + Dela publiker {#audience-sharing}
       + [Dela målgrupper med [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Skicka begäran till Adobe](integrations/using/submitting-request-to-adobe.md)
       + [Konfigurera integrering av delade målgrupper i [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Felsökning](integrations/using/troubleshooting.md)
-      + [Importera och exportera målgrupper](integrations/using/importing-and-exporting-audiences.md)
+      + [Importera och exportera publiker](integrations/using/importing-and-exporting-audiences.md)
    + Resursdelning {#asset-sharing}
       + [Dela resurser med [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Konfigurera åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
@@ -318,68 +318,68 @@ ht-degree: 8%
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
-   + Ansluta via en Adobe ID {#connecting-via-an-adobe-id}
+   + Ansluta via ett Adobe ID {#connecting-via-an-adobe-id}
       + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
       + [Konfigurerar [!DNL IMS]](integrations/using/configuring-ims.md)
       + [Implementering [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
-   + ACS Connector {#acs-connector}
+   + ACS-koppling {#acs-connector}
       + [[!DNL ACS Connector] principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
-      + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
-      + [Synkronisera webbprogram](integrations/using/synchronizing-web-applications.md)
+      + [Synkronisera publiker](integrations/using/synchronizing-audiences.md)
+      + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
       + [Felsöka [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Experience Cloud Triggers {#experience-triggers}
+   + Utlösare i Experience Cloud{#experience-triggers}
       + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [Konfigurerar pipeline](integrations/using/configuring-pipeline.md)
-      + [Pipeline, alternativ NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [Utlösarhändelser](integrations/using/events.md)
-      + [Pipelinesövervakning](integrations/using/pipeline-monitoring.md)
-      + [Felsökning av pipeline](integrations/using/pipeline-troubleshooting.md)
+      + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
+      + [Pipelinealternativet NmsPipeline_Config](integrations/using/nmspipeline-config.md)
+      + [Utlösa händelser](integrations/using/events.md)
+      + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
+      + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Introduktion {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
       + [Om aktiviteter](workflow/using/about-activities.md)
    + Allmän åtgärd {#general-operation}
-      + [Skapa ett arbetsflöde](workflow/using/building-a-workflow.md)
-      + [Måldata](workflow/using/targeting-data.md)
+      + [Bygga ett arbetsflöde](workflow/using/building-a-workflow.md)
+      + [Målinrikta data](workflow/using/targeting-data.md)
       + [Importera data](workflow/using/importing-data.md)
-      + [Så här använder du arbetsflödesdata](workflow/using/how-to-use-workflow-data.md)
-      + [Bäst praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
+      + [Så använder du arbetsflödesdata](workflow/using/how-to-use-workflow-data.md)
+      + [Bästa praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
    + Köra ett arbetsflöde {#executing-a-workflow}
       + [Starta ett arbetsflöde](workflow/using/starting-a-workflow.md)
       + [Arbetsflödets livscykel](workflow/using/workflow-life-cycle.md)
-      + [Datalivscykel](workflow/using/data-life-cycle.md)
+      + [Datas livscykel](workflow/using/data-life-cycle.md)
       + [Definiera godkännanden](workflow/using/defining-approvals.md)
       + [Arkitektur](workflow/using/architecture.md)
-   + Målaktiviteter {#targeting-activities}
-      + [Om målaktiviteter](workflow/using/about-targeting-activities.md)
-      + [Förfrågan](workflow/using/query.md)
-      + [Inkrementell förfrågan](workflow/using/incremental-query.md)
+   + Målinriktade aktiviteter{#targeting-activities}
+      + [Om målinriktade aktiviteter](workflow/using/about-targeting-activities.md)
+      + [Fråga](workflow/using/query.md)
+      + [Inkrementell fråga](workflow/using/incremental-query.md)
       + [Läslista](workflow/using/read-list.md)
-      + [Sammanslutning](workflow/using/union.md)
+      + [Union](workflow/using/union.md)
       + [Skärningspunkt](workflow/using/intersection.md)
       + [Uteslutning](workflow/using/exclusion.md)
       + [Dela](workflow/using/split.md)
       + [Celler](workflow/using/cells.md)
       + [Erbjudanden per cell](workflow/using/offers-by-cell.md)
-      + [Leveransöversikt](workflow/using/delivery-outline.md)
-      + [Berikning](workflow/using/enrichment.md)
+      + [Leveransbeskrivning](workflow/using/delivery-outline.md)
+      + [Berikande](workflow/using/enrichment.md)
       + [Redigera schema](workflow/using/edit-schema.md)
       + [Erbjudandemotor](workflow/using/offer-engine.md)
-      + [Deduplicering](workflow/using/deduplication.md)
-      + [Ändra dimension](workflow/using/change-dimension.md)
+      + [Avduplicering](workflow/using/deduplication.md)
+      + [Dimensionsändring](workflow/using/change-dimension.md)
       + [Listuppdatering](workflow/using/list-update.md)
       + [Prenumerationstjänster](workflow/using/subscription-services.md)
       + [Uppdatera data](workflow/using/update-data.md)
-      + [CRM Connector](workflow/using/crm-connector.md)
-   + Flödeskontroll {#flow-control-activities}
+      + [CRM-koppling](workflow/using/crm-connector.md)
+   + Flödeskontrollaktiviteter {#flow-control-activities}
       + [Om flödeskontrollaktiviteter](workflow/using/about-flow-control-activities.md)
-      + [Starta och sluta](workflow/using/start-and-end.md)
-      + [Förgrening](workflow/using/fork.md)
+      + [Start och slut](workflow/using/start-and-end.md)
+      + [Gaffel](workflow/using/fork.md)
       + [AND-join](workflow/using/and-join.md)
-      + [Schemaläggare](workflow/using/scheduler.md)
-      + [Test](workflow/using/test.md)
+      + [Scheduler](workflow/using/scheduler.md)
+      + [Testa](workflow/using/test.md)
       + [Vänta](workflow/using/wait.md)
       + [Tidsbegränsning](workflow/using/time-constraint.md)
       + [Delarbetsflöde](workflow/using/sub-workflow.md)
@@ -388,43 +388,43 @@ ht-degree: 8%
       + [Godkännande](workflow/using/approval.md)
       + [Varning](workflow/using/alert.md)
       + [Uppgift](workflow/using/task.md)
-   + Verksamheter {#action-activities}
-      + [Om funktionsmakron](workflow/using/about-action-activities.md)
+   + Instruktionsaktiviteter {#action-activities}
+      + [Om instruktionsaktiviteter](workflow/using/about-action-activities.md)
       + [Leverans](workflow/using/delivery.md)
       + [Leveranskontroll](workflow/using/delivery-control.md)
       + [Kontinuerlig leverans](workflow/using/continuous-delivery.md)
       + [Återkommande leverans](workflow/using/recurring-delivery.md)
-      + [Flerkanalsleveranser](workflow/using/cross-channel-deliveries.md)
+      + [Leveranser över flera kanaler](workflow/using/cross-channel-deliveries.md)
       + [Lokalt godkännande](workflow/using/local-approval.md)
       + [Datainläsning (RDBMS)](workflow/using/data-loading--rdbms-.md)
-      + [Läser in (SOAP)](workflow/using/loading--soap-.md)
+      + [Läsa in (SOAP)](workflow/using/loading--soap-.md)
       + [Inläsning av data (fil)](workflow/using/data-loading--file-.md)
       + [Innehållshantering](workflow/using/content-management.md)
       + [Dataextrahering (fil)](workflow/using/extraction--file-.md)
       + [SQL-kod och JavaScript-kod](workflow/using/sql-code-and-javascript-code.md)
-      + [SQL Data Management](workflow/using/sql-data-management.md)
+      + [SQL-datahantering](workflow/using/sql-data-management.md)
       + [Nlserver-modul](workflow/using/nlserver-module.md)
-      + [Uppdatera sammanställning](workflow/using/update-aggregate.md)
-   + Evenemangsaktiviteter {#event-activities}
+      + [Uppdatera aggregat](workflow/using/update-aggregate.md)
+   + Händelseaktiviteter {#event-activities}
       + [Om händelseaktiviteter](workflow/using/about-event-activities.md)
-      + [Filinsamlare](workflow/using/file-collector.md)
+      + [Filhämtare](workflow/using/file-collector.md)
       + [Filöverföring](workflow/using/file-transfer.md)
       + [Webbnedladdning](workflow/using/web-download.md)
       + [Inkommande e-postmeddelanden](workflow/using/inbound-emails.md)
       + [Inkommande SMS](workflow/using/inbound-sms.md)
-   + Användningsexempel {#use-cases}
+   + Användningsfall {#use-cases}
       + [Om användningsfall för arbetsflöden](workflow/using/about-workflow-use-cases.md)
       + Leveranser {#deliveries}
-         + [Använda lokal godkännandeaktivitet](workflow/using/using-the-local-approval-activity.md)
-         + [A/B-tester](workflow/using/a-b-testing.md)
+         + [Använda den lokala godkännandeaktiviteten](workflow/using/using-the-local-approval-activity.md)
+         + [A/B-test](workflow/using/a-b-testing.md)
          + [Skicka ett födelsedagsmeddelande](workflow/using/sending-a-birthday-email.md)
-         + [Läser in leveransinnehåll](workflow/using/loading-delivery-content.md)
-         + [Arbetsflöde för flerkanalsleverans](workflow/using/cross-channel-delivery-workflow.md)
-         + [E-postberikning med anpassade datumfält](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Övervakning {#monitoring}
+         + [Läsa in leveransinnehåll](workflow/using/loading-delivery-content.md)
+         + [Arbetsflöde för leveranser över flera kanaler](workflow/using/cross-channel-delivery-workflow.md)
+         + [E-postberikande med anpassade datumfält](workflow/using/email-enrichment-with-custom-date-fields.md)
+      + Övervaka {#monitoring}
          + [Skicka en rapport till en lista](workflow/using/sending-a-report-to-a-list.md)
-         + [Arbetsflöden för övervakning](workflow/using/supervising-workflows.md)
-         + [Skicka personaliserade aviseringar till operatorer](workflow/using/sending-personalized-alerts-to-operators.md)
+         + [Övervaka arbetsflöden](workflow/using/supervising-workflows.md)
+         + [Skicka personaliserade aviseringar till operatörer](workflow/using/sending-personalized-alerts-to-operators.md)
       + Datahantering {#data-management}
          + [Samordna datauppdateringar](workflow/using/coordinating-data-updates.md)
          + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
@@ -432,11 +432,11 @@ ht-degree: 8%
          + [Använda aggregat](workflow/using/using-aggregates.md)
          + [Kvartalslistuppdatering med inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Utforma frågor {#designing-queries}
-         + [Frågar mottagartabellen](workflow/using/querying-recipient-table.md)
-         + [Frågar leveransinformation](workflow/using/querying-delivery-information.md)
-         + [Utföra aggregerad databearbetning](workflow/using/performing-aggregate-computing.md)
+         + [Fråga mottagartabellen](workflow/using/querying-recipient-table.md)
+         + [Fråga om leveransinformation](workflow/using/querying-delivery-information.md)
+         + [Utföra aggregerad databehandling](workflow/using/performing-aggregate-computing.md)
          + [Fråga med grupperingshantering](workflow/using/querying-using-grouping-management.md)
-         + [Frågar med hjälp av en många-till-många-relation](workflow/using/querying-using-many-to-many-relationship.md)
+         + [Fråga med hjälp av en många-till-många-relation](workflow/using/querying-using-many-to-many-relationship.md)
          + [Lägga till ett beräkningsfält av uppräkningstyp](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Skapa ett filter](workflow/using/creating-a-filter.md)
          + [Filtrera duplicerade mottagare](workflow/using/filtering-duplicated-recipients.md)
@@ -455,52 +455,52 @@ ht-degree: 8%
       + [Hantera tidszoner](workflow/using/managing-time-zones.md)
    + Tekniska arbetsflöden {#technical-workflows}
       + [Om tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
-      + [Leveranser](workflow/using/deliveries.md)
-      + [Kampanj](workflow/using/campaign.md)
+      + [Leveranser ](workflow/using/deliveries.md)
+      + [Campaign](workflow/using/campaign.md)
       + [Webbanalys](workflow/using/web-analytics.md)
       + [Distribuerad marknadsföring](workflow/using/distributed-marketing.md)
-      + [Leveransövervakning](workflow/using/email-deliverability.md)
+      + [Övervaka levererbarhet](workflow/using/email-deliverability.md)
       + [Inkorgsåtergivning](workflow/using/inbox-rendering.md)
       + [Interaktion](workflow/using/interaction.md)
       + [Kontroll över erbjudandemotor](workflow/using/control-of-offer-engine.md)
-      + [Message Center (Control)](workflow/using/message-center--control-.md)
-      + [Meddelandecenter (körning)](workflow/using/message-center--execution-.md)
-      + [Mobilappskanal](workflow/using/mobile-app-channel.md)
-      + [LINJEKanal](workflow/using/line-channel.md)
-      + [Marknadsföringsresurser](workflow/using/marketing-resources--mrm-.md)
+      + [Meddelandecenter (kontroll)](workflow/using/message-center--control-.md)
+      + [Meddelandecenter (köra)](workflow/using/message-center--execution-.md)
+      + [Mobilappskanalen](workflow/using/mobile-app-channel.md)
+      + [LINE-kanal](workflow/using/line-channel.md)
+      + [Marknadsföringsresurser (MRM)](workflow/using/marketing-resources--mrm-.md)
       + [Social marknadsföring](workflow/using/social-marketing.md)
-      + [Integrering med Adobe Experience Cloud-lösningar](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Skyddsförordningen för personuppgifter](workflow/using/general-data-protection-regulation--gdpr-.md)
-      + [Överföring till Mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
-      + [Plattform för mellanleverantörer](workflow/using/mid-sourcing-platform.md)
+      + [Integrering med lösningar i Adobe Experience Cloud](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
+      + [Sekretessdataskyddsförordningen](workflow/using/general-data-protection-regulation--gdpr-.md)
+      + [Överföring till mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
+      + [Plattform för mid-sourcing](workflow/using/mid-sourcing-platform.md)
 + Hantera erbjudanden {#managing-offers}
    + Interaktionsöversikt {#interaction-overview}
-      + [Hantering av samverkan och erbjudanden](interaction/using/interaction-and-offer-management.md)
+      + [Interaktion och erbjudandehantering](interaction/using/interaction-and-offer-management.md)
       + [Ordlista](interaction/using/glossary.md)
-      + [Bästa praxis för samverkan](interaction/using/interaction-best-practices.md)
+      + [Bästa praxis för interaktion](interaction/using/interaction-best-practices.md)
    + Allmän åtgärd {#general-operation}
       + [Implementeringssteg](interaction/using/implementation-steps.md)
-      + [Grundprinciper](interaction/using/fundamental-principles.md)
+      + [Grundläggande principer](interaction/using/fundamental-principles.md)
    + Hantera miljöer {#managing-environments}
       + [Miljööversikt](interaction/using/environments-overview.md)
       + [Operatörsprofiler](interaction/using/operator-profiles.md)
       + [Live-/designmiljöer](interaction/using/live-design-environments.md)
-      + [Skapa erbjudandemellanslag](interaction/using/creating-offer-spaces.md)
+      + [Skapa erbjudandeplatser](interaction/using/creating-offer-spaces.md)
       + [Skapa fördefinierade filter](interaction/using/creating-predefined-filters.md)
    + Hantera en erbjudandekatalog {#managing-an-offer-catalog}
-      + [Katalogöversikt](interaction/using/offer-catalog-overview.md)
+      + [Översikt över erbjudandekatalogen](interaction/using/offer-catalog-overview.md)
       + [Skapa erbjudandekategorier](interaction/using/creating-offer-categories.md)
       + [Rekommendera en kategori](interaction/using/recommending-a-category.md)
       + [Skapa ett erbjudande](interaction/using/creating-an-offer.md)
       + [Godkänna och aktivera ett erbjudande](interaction/using/approving-and-activating-an-offer.md)
       + [Hantera mallar för erbjudanden](interaction/using/managing-offer-templates.md)
-      + [Hantera presentation av erbjudanden](interaction/using/managing-offer-presentation.md)
+      + [Hantera en presentation av erbjudanden](interaction/using/managing-offer-presentation.md)
    + Simulera erbjudanden {#simulating-offers}
-      + [Om erbjudandesimulering](interaction/using/about-offers-simulation.md)
+      + [Om att simulera erbjudanden](interaction/using/about-offers-simulation.md)
       + [Körningsinställningar](interaction/using/execution-settings.md)
       + [Simuleringsomfång](interaction/using/simulation-scope.md)
       + [Simuleringsspårning](interaction/using/simulation-tracking.md)
-   + Erbjuda {#delivering-an-offer}
+   + Leverera ett erbjudande {#delivering-an-offer}
       + [Om utgående kanaler](interaction/using/about-outbound-channels.md)
       + [Integrera ett erbjudande via guiden](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Integrera ett erbjudande via ett arbetsflöde](interaction/using/integrating-an-offer-via-a-workflow.md)
@@ -510,55 +510,55 @@ ht-degree: 8%
       + [Integrering via SOAP (serversida)](interaction/using/integration-via-soap--server-side-.md)
       + [Anonyma interaktioner](interaction/using/anonymous-interactions.md)
    + Spåra erbjudanden {#tracking-offers}
-      + [Erbjudandehistorik](interaction/using/offer-proposition-history.md)
-      + [Analysrapport](interaction/using/offer-analysis-report.md)
+      + [Historik över erbjudandeförslag](interaction/using/offer-proposition-history.md)
+      + [Analysrapport om erbjudande](interaction/using/offer-analysis-report.md)
    + Avancerade parametrar {#advanced-parameters}
       + [Använda avancerade parametrar](interaction/using/using-advanced-parameters.md)
       + [Ytterligare data](interaction/using/additional-data.md)
       + [Exempel på tillägg](interaction/using/extension-example.md)
       + [Skapa en testmiljö](interaction/using/creating-a-test-environment.md)
-      + [Hooks](interaction/using/hooks.md)
+      + [Krokar](interaction/using/hooks.md)
       + [Distribuerade arkitekturer](interaction/using/distributed-architectures.md)
       + [Databuffertzon](interaction/using/data-buffer-zone.md)
    + Fallstudie {#case-study}
       + [Presentationsregler](interaction/using/presentation-rules.md)
       + [Erbjudanden på en inkommande kanal](interaction/using/offers-on-an-inbound-channel.md)
       + [Erbjudanden på en utgående kanal](interaction/using/offers-on-an-outbound-channel.md)
-+ Transactional Messaging {#transactional-messaging}
++ Transaktionsmeddelanden {#transactional-messaging}
    + Introduktion {#introduction}
       + [Om transaktionsmeddelanden](message-center/using/about-transactional-messaging.md)
-      + [Arkitektur för transaktionsmeddelanden](message-center/using/transactional-messaging-architecture.md)
+      + [Transaktionsmeddelandets arkitektur](message-center/using/transactional-messaging-architecture.md)
       + [Händelsebeskrivning](message-center/using/event-description.md)
    + Instanskonfiguration {#instance-configuration}
       + [Skapa en delad anslutning](message-center/using/creating-a-shared-connection.md)
       + [Identifiera körningsinstanser](message-center/using/identifying-execution-instances.md)
-      + [Övervakningströsklar](message-center/using/monitoring-thresholds.md)
+      + [Övervakningsgränser](message-center/using/monitoring-thresholds.md)
       + [Rensa händelser](message-center/using/purging-events.md)
       + [Tekniska arbetsflöden](message-center/using/technical-workflows.md)
       + [Skapa händelsetyper](message-center/using/creating-event-types.md)
-      + [Konfigurera multibranding](message-center/using/configuring-multibranding.md)
+      + [Konfigurera flermärkesförsäljning](message-center/using/configuring-multibranding.md)
    + Meddelandemallar {#message-templates}
       + [Introduktion](message-center/using/introduction.md)
-      + [Skapar meddelandemallen](message-center/using/creating-the-message-template.md)
+      + [Skapa meddelandemallen](message-center/using/creating-the-message-template.md)
       + [Skapa meddelandeinnehåll](message-center/using/creating-message-content.md)
-      + [Hantera dirigerade adresser i transaktionsmeddelanden](message-center/using/managing-seed-addresses-in-transactional-messages.md)
+      + [Hantera fröadresser i transaktionsmeddelanden](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [Personaliseringsdata](message-center/using/personalization-data.md)
       + [Förhandsgranskning av transaktionsmeddelande](message-center/using/transactional-message-preview.md)
-      + [Utskick av korrektur](message-center/using/sending-a-proof.md)
-      + [Mallpublicering](message-center/using/template-publication.md)
-      + [Opublicerad mall](message-center/using/template-unpublication.md)
+      + [Skicka en korrektur](message-center/using/sending-a-proof.md)
+      + [Publicera mall](message-center/using/template-publication.md)
+      + [Ta bort publiceringen av mallen](message-center/using/template-unpublication.md)
    + Händelsebearbetning {#event-processing}
       + [Om händelsebearbetning](message-center/using/about-event-processing.md)
       + [Händelsesamling](message-center/using/event-collection.md)
-      + [Cirkulera mot en mall](message-center/using/routing-towards-a-template.md)
+      + [Routning mot en mall](message-center/using/routing-towards-a-template.md)
       + [Leveranskörning](message-center/using/delivery-execution.md)
    + Rapporter {#reports}
-      + [Rapporter om transaktionsmeddelanden](message-center/using/about-transactional-messaging-reports.md)
-      + [Historik för meddelandecenterhändelser](message-center/using/history-of-message-center-events.md)
-      + [Tjänstnivå för meddelandecenter](message-center/using/message-center-service-level.md)
-      + [Bearbetningstid för meddelandecenter](message-center/using/message-center-processing-time.md)
-   + Använd skiftläge {#use-case}
-      + [Skicka transaktionsmejl med bilagor](message-center/using/transactional-email-with-attachments.md)
+      + [Om rapporter om transaktionsmeddelanden](message-center/using/about-transactional-messaging-reports.md)
+      + [Historik om händelser i meddelandecentret](message-center/using/history-of-message-center-events.md)
+      + [Tjänstenivå för meddelandecentret](message-center/using/message-center-service-level.md)
+      + [Bearbetningstid för meddelandecentret](message-center/using/message-center-processing-time.md)
+   + Användningsfall {#use-case}
+      + [Skicka transaktionsmeddelanden med bilagor](message-center/using/transactional-email-with-attachments.md)
 + Integrering med sociala medier {#integrating-with-social-media}
    + [Om social marknadsföring](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
@@ -573,58 +573,58 @@ ht-degree: 8%
    + Bilagor {#annexes}
       + [Exempel på Facebook-appar](social/using/examples-of-facebook-apps.md)
       + [Spårning](social/using/tracking.md)
-+ Installerar Campaign Classic {#installing-campaign-classic}
++ Installera Campaign Classic {#installing-campaign-classic}
    + Arkitektur och värdmodeller {#architecture-and-hosting-models}
       + [Före läsning](installation/using/before-reading.md)
       + [Allmän arkitektur](installation/using/general-architecture.md)
-      + [Värdmodeller](installation/using/hosting-models.md)
-   + Hybrid- och värdmodeller {#hybrid-and-hosted-models}
+      + [Värdbaserade modeller](installation/using/hosting-models.md)
+   + Hybrid- och värdbaserade modeller{#hybrid-and-hosted-models}
       + [Om hybridmodeller och värdbaserade modeller](installation/using/about-hybrid-and-hosted-models.md)
       + [Hybridmodell](installation/using/hybrid-model.md)
-      + [Värdmodell](installation/using/hosted-model.md)
-   + Krav och rekommendationer  {#prerequisites-and-recommendations-}
+      + [Värdbaserad modell](installation/using/hosted-model.md)
+   + Förutsättningar och rekommendationer {#prerequisites-and-recommendations-}
       + [Före start](installation/using/before-starting.md)
       + [Databas](installation/using/database.md)
       + [Programserver](installation/using/application-server.md)
       + [Meddelandeserver](installation/using/messaging-server.md)
       + [Nätverkskonfiguration](installation/using/network-configuration.md)
-   + Distributionstyper  {#deployment-types-}
-      + [Om distributionstyper](installation/using/about-deployment-types.md)
+   + Driftsättningstyper {#deployment-types-}
+      + [Om driftsättningstyper](installation/using/about-deployment-types.md)
       + [Fristående driftsättning](installation/using/standalone-deployment.md)
-      + [Standarddistribution](installation/using/standard-deployment.md)
-      + [Företagsdistribution](installation/using/enterprise-deployment.md)
-      + [Distribution från olika källor](installation/using/mid-sourcing-deployment.md)
+      + [Standardiserad driftsättning](installation/using/standard-deployment.md)
+      + [Driftsättning i företagsklass](installation/using/enterprise-deployment.md)
+      + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Installera Campaign i Windows  {#installing-campaign-in-windows-}
-      + [Krav för Campaign-installation i Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Installera Campaign i Windows {#installing-campaign-in-windows-}
+      + [Krav för installationen av Campaign i Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Installera servern](installation/using/installing-the-server.md)
       + [Integrering med en webbserver för Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Klientkonsolens tillgänglighet för Windows](installation/using/client-console-availability-for-windows.md)
       + [Installera klientkonsolen](installation/using/installing-the-client-console.md)
-   + Installera Campaign i Linux  {#installing-campaign-in-linux-}
-      + [Krav för Campaign-installation i Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + Installera Campaign i Linux {#installing-campaign-in-linux-}
+      + [Krav för installationen av Campaign i Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installera paket med Linux](installation/using/installing-packages-with-linux.md)
       + [Integrering med en webbserver för Linux](installation/using/integration-into-a-web-server-for-linux.md)
-      + [Klientkonsoltillgänglighet för Linux](installation/using/client-console-availability-for-linux.md)
+      + [Klientkonsolens tillgänglighet för Linux](installation/using/client-console-availability-for-linux.md)
    + Inledande konfiguration {#initial-configuration}
       + [Om inledande konfiguration](installation/using/about-initial-configuration.md)
       + [Skapa en instans och logga in](installation/using/creating-an-instance-and-logging-on.md)
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
-      + [Kampanjserverkonfiguration](installation/using/campaign-server-configuration.md)
-      + [Distribuera en instans](installation/using/deploying-an-instance.md)
-      + [Installera Campaign Classic-standardpaket](installation/using/installing-campaign-standard-packages.md)
+      + [Konfiguration av kampanjservern](installation/using/campaign-server-configuration.md)
+      + [Driftsätta en instans](installation/using/deploying-an-instance.md)
+      + [Installera standardpaketet för Campaign Classic](installation/using/installing-campaign-standard-packages.md)
    + Ytterligare konfigurationer {#additional-configurations}
-      + [Konfigurera en Campaign-server](installation/using/configuring-campaign-server.md)
+      + [Konfigurera Campaign-servern](installation/using/configuring-campaign-server.md)
       + [Ansluta via LDAP](installation/using/connecting-through-ldap.md)
       + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
       + [E-postarkivering](installation/using/email-archiving.md)
-      + [Tidszonshantering](installation/using/time-zone-management.md)
+      + [Hantera tidszoner](installation/using/time-zone-management.md)
       + [Konfigurera SpamAssassin](installation/using/configuring-spamassassin.md)
-      + [Server för mellanleverantörer](installation/using/mid-sourcing-server.md)
-      + [Interaktion - databuffert](installation/using/interaction---data-buffer.md)
+      + [Server för mid-sourcing](installation/using/mid-sourcing-server.md)
+      + [Interaktion – databuffert](installation/using/interaction---data-buffer.md)
    + Tillägg {#appendices}
       + [Serverkonfigurationsfilen](installation/using/the-server-configuration-file.md)
-      + [Slutpunkter för kampanjnätverk](installation/using/campaign-network-endpoints.md)
+      + [Nätverksslutpunkter i Campaign](installation/using/campaign-network-endpoints.md)
       + [Kommandorader](installation/using/command-lines.md)
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
       + [Lista över alternativ för Campaign Classic](installation/using/configuring-campaign-options.md)
@@ -642,15 +642,15 @@ ht-degree: 8%
       + [Loggfiler](production/using/log-files.md)
       + [Övervaka processer](production/using/monitoring-processes.md)
       + [Vanliga kommandon](production/using/usual-commands.md)
-      + [Granskningsspår](production/using/audit-trail.md)
+      + [Verifieringskedja](production/using/audit-trail.md)
    + Databehandling {#data-processing}
       + [Säkerhetskopiera](production/using/backup.md)
-      + [Återställning](production/using/restoration.md)
+      + [Återställa](production/using/restoration.md)
       + [Duplicera miljöer](production/using/duplicating-environments.md)
       + [Arbetsflöde för databasrensning](production/using/database-cleanup-workflow.md)
    + Uppdatera Adobe Campaign {#updating-adobe-campaign}
       + [Introduktion](production/using/introduction.md)
-      + [Uppgraderar](production/using/upgrading.md)
+      + [Uppgradera](production/using/upgrading.md)
       + [Växla till Unicode](production/using/switching-to-unicode.md)
       + [Migreringsförfaranden](production/using/migration-procedures.md)
    + Databasunderhåll {#database-maintenance}
@@ -670,25 +670,25 @@ ht-degree: 8%
       + [Spåra loggproblem](production/using/tracking-logs-issues.md)
       + [Arbetsflödeskörning](production/using/workflow-execution.md)
       + [Det gick inte att ansluta](production/using/failure-to-connect.md)
-      + [Anslutningströsklar](production/using/connection-thresholds.md)
+      + [Anslutningsgränser](production/using/connection-thresholds.md)
       + [Stackspårning i Linux](production/using/stack-trace-in-linux.md)
       + [Kodning av Oracle-databasen](production/using/encoding-of-the-oracle-database.md)
       + [Konsoluppdatering](production/using/console-update.md)
-      + [Lösenordet har gått förlorat](production/using/lost-password.md)
+      + [Lösenordet har tappats bort](production/using/lost-password.md)
       + [JSP-beteende](production/using/jsp-behavior.md)
-+ Konfigurerar Campaign Classic {#configuring-campaign-classic}
++ Konfigurera Campaign Classic {#configuring-campaign-classic}
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
-      + [Beskrivning av datamodell](configuration/using/data-model-description.md)
-      + [God praxis](configuration/using/data-model-best-practices.md)
+      + [Beskrivning av datamodellen](configuration/using/data-model-description.md)
+      + [Bästa praxis](configuration/using/data-model-best-practices.md)
    + Schemareferens {#schema-reference}
       + [Om schemareferens](configuration/using/about-schema-reference.md)
       + [Schemastruktur](configuration/using/schema-structure.md)
-      + [Databasmappning](configuration/using/database-mapping.md)
+      + [Databaskartläggning](configuration/using/database-mapping.md)
       + [Element och attribut](configuration/using/elements-and-attributes.md)
-   + Redigera scheman {#editing-schemas}
+   + Redigera scheman{#editing-schemas}
       + [Om schemautgåva](configuration/using/about-schema-edition.md)
-      + [Datamodeller](configuration/using/data-schemas.md)
+      + [Datascheman](configuration/using/data-schemas.md)
       + [Schema för en befintlig tabell](configuration/using/schema-of-an-existing-table.md)
       + [Utöka ett schema](configuration/using/extending-a-schema.md)
       + [Filtreringsscheman](configuration/using/filtering-schemas.md)
@@ -696,7 +696,7 @@ ht-degree: 8%
       + [Uppdatera databasstrukturen](configuration/using/updating-the-database-structure.md)
       + [Guiden Nytt fält](configuration/using/new-field-wizard.md)
       + [Dataschemats struktur](configuration/using/structure-of-a-data-schema.md)
-      + [Återskapar scheman](configuration/using/regenerating-schemas.md)
+      + [Återskapa scheman](configuration/using/regenerating-schemas.md)
       + [Exempel på scheman](configuration/using/examples-of-schemas-edition.md)
    + Inmatningsformulär {#input-forms}
       + [Identifiera ett formulär](configuration/using/identifying-a-form.md)
@@ -704,20 +704,20 @@ ht-degree: 8%
       + [Formulärstruktur](configuration/using/form-structure.md)
    + API {#api}
       + [Om webbtjänster](configuration/using/about-web-services.md)
-      + [Webbtjänstsamtal](configuration/using/web-service-calls.md)
+      + [Webbtjänstanrop](configuration/using/web-service-calls.md)
       + [Dataorienterade API:er](configuration/using/data-oriented-apis.md)
       + [Verksamhetsorienterade API:er](configuration/using/business-oriented-apis.md)
       + [Implementera SOAP-metoder](configuration/using/implementing-soap-methods.md)
       + [SOAP-metoder i JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Lägga till ytterligare SQL-funktioner](configuration/using/adding-additional-sql-functions.md)
    + Navigeringshierarki {#navigation-hierarchy}
-      + [Navigeringshierarki](configuration/using/about-navigation-hierarchy.md)
+      + [Om navigeringshierarki](configuration/using/about-navigation-hierarchy.md)
       + [Konfiguration](configuration/using/configuration.md)
-      + [Edition](configuration/using/edition.md)
+      + [Utgåva](configuration/using/edition.md)
    + Använda en anpassad mottagartabell {#use-a-custom-recipient-table}
       + [Om anpassad mottagartabell](configuration/using/about-custom-recipient-table.md)
       + [Schemaegenskaper](configuration/using/schema-characteristics.md)
-      + [Målmappning](configuration/using/target-mapping.md)
+      + [Målkartläggning](configuration/using/target-mapping.md)
       + [Konfigurera gränssnittet](configuration/using/configuring-the-interface.md)
       + [Fröadresser](configuration/using/seed-addresses.md)
       + [Skapa filter](configuration/using/creating-filters.md)
@@ -726,12 +726,12 @@ ht-degree: 8%
       + [Hantera rapporter](configuration/using/managing-reports.md)
    + Konfigurera webbspårning {#setting-up-web-tracking}
       + [Om webbspårning](configuration/using/about-web-tracking.md)
-      + [Spårningsläge för webben](configuration/using/web-tracking-mode.md)
+      + [Läge för webbspårning](configuration/using/web-tracking-mode.md)
       + [Webbspårningstagg: definition](configuration/using/web-tracking-tag--definition.md)
       + [Inställningsfaser](configuration/using/setup-stages.md)
       + [Ytterligare parametrar](configuration/using/additional-parameters.md)
       + [Skapa webbspårningstaggar](configuration/using/creating-web-tracking-tags.md)
-      + [Infoga taggar på platsen](configuration/using/inserting-tags-in-your-site.md)
+      + [Infoga taggar på din webbplats](configuration/using/inserting-tags-in-your-site.md)
       + [Samla in alla besök](configuration/using/collecting-all-visits.md)
       + [Anonym spårning](configuration/using/anonymous-tracking.md)
 + Migrera till en ny version {#migrating-to-a-new-version}
@@ -739,21 +739,21 @@ ht-degree: 8%
       + [Om migrering](migration/using/about-migration.md)
       + [Migreringsmetod](migration/using/migration-method.md)
       + [Migreringsvarningar](migration/using/migration-warnings.md)
-   + Migreringsprocedur {#migration-procedure}
+   + Migreringsförfaranden {#migration-procedure}
       + [Innan du startar migreringen](migration/using/before-starting-migration.md)
       + [Testa migreringen](migration/using/testing-the-migration.md)
       + [Konfigurera din plattform](migration/using/configuring-your-platform.md)
    + Migrera till Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [Krav för migrering till Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [Migrera i Windows för Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migrera i Linux för Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [Förutsättningar för att migrera till Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
+      + [Migrera Adobe Campaign 7 i Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [Migrera Adobe Campaign 7 i Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + Konfiguration {#configuration}
       + [Allmänna konfigurationer](migration/using/general-configurations.md)
-      + [Specifika konfigurationer i v5.11](migration/using/specific-configurations-in-v5-11.md)
-      + [Specifika konfigurationer i v6.02](migration/using/specific-configurations-in-v6-02.md)
-      + [Specifika konfigurationer i v6.10](migration/using/specific-configurations-in-v6-10.md)
+      + [Specifika konfigurationer i version 5.11](migration/using/specific-configurations-in-v5-11.md)
+      + [Specifika konfigurationer i version 6.02](migration/using/specific-configurations-in-v6-02.md)
+      + [Specifika konfigurationer i version 6.10](migration/using/specific-configurations-in-v6-10.md)
    + Återställning {#rollback}
       + [Om återställning](migration/using/about-rollback.md)
-      + [Återställer v5.11](migration/using/restoring-v5-11.md)
-      + [Återställer v6.02](migration/using/restoring-v6-02.md)
-      + [Återställer v6.1](migration/using/restoring-v6-1.md)
+      + [Återställa version 5.11](migration/using/restoring-v5-11.md)
+      + [Återställa version 6.02](migration/using/restoring-v6-02.md)
+      + [Återställa version 6.1](migration/using/restoring-v6-1.md)
