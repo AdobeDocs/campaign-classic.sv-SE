@@ -16,14 +16,14 @@ translation-type: tm+mt
 source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
 workflow-type: tm+mt
 source-wordcount: '1976'
-ht-degree: 3%
+ht-degree: 86%
 
 ---
 
 
 # Senaste versionen{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Den nya Kontrollpanelen i juni** med övervakning av aktiva profiler, granskning av deldomänsleveranser och hantering av GPG-nycklar. [Lär dig mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
@@ -37,21 +37,21 @@ _22 juli 2020_
 * Korrigerade ett problem som förhindrade spårning av URL-adresser som använder fragment i personaliseringsparametrar (ankartaggar med nummertecken) från att fungera. (NEO-25774)
 * Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277) Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
 * Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde. (NEO-25194)
-* Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-2099)
+* Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-20999)
 * Korrigerade ett problem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
 * Korrigerade ett kraschproblem i distributionsguiden.
 * Korrigerade ett problem som kunde förhindra att arbetsflödet för meddelanden om erbjudanden fungerar korrekt efter en efteruppgradering.
-* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903)
+* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904 och NEO-25903)
 * Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre användes (iOS-meddelanden).
 * Korrigerade ett problem som blockerade leveransförberedelser efter efteruppgradering.
-* Efter växlingen till den [nya sekvens-ID-mekanismen](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
-* Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987, NEO-26073)
+* Efter växlingen till den [nya sekvens-ID-mekanismen](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
+* Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987 och NEO-26073)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
-**Vad är nytt?**
+**Nyheter**
 
 <table> 
  <thead> 
@@ -61,8 +61,8 @@ _8 juni 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>När du utformar ett meddelande i Campaign kan du nu enkelt infoga uttryckssymboler i meddelandetexten med en dedikerad knapp. De kan också läggas till i e-postens ämnesrad. Du kan anpassa listan med tillgängliga uttryckssymboler i gränssnittet.</p>
-    <p>Mer information om hur du lägger till uttryckssymboler finns i den <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">detaljerade dokumentationen</a>. Lär dig hur du anpassar uttryckslistan <a href="../../delivery/using/customizing-emoticon-list.md">i det här avsnittet</a>.</p>
+   <td> <p>När du utformar ett meddelande i Campaign kan du nu enkelt infoga uttryckssymboler i meddelandetexten med en dedikerad knapp. De kan också läggas till i e-postmeddelandets ämnesrad. Du kan anpassa listan med tillgängliga uttryckssymboler i gränssnittet.</p>
+    <p>Se den <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">detaljerade dokumentationen</a> för mer information om hur du lägger till uttryckssymboler. Läs mer om hur man anpassar listan med uttryckssymboler <a href="../../delivery/using/customizing-emoticon-list.md">i det här avsnittet</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -71,12 +71,12 @@ _8 juni 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Azure Synapse FDA Connector</strong><br /> </th> 
+   <th> <strong>Azure Synapse FDA-koppling</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Nu kan du ansluta din Campaign-instans till din externa Azure Synapse-databas. Anslutningen hanteras via ett nytt externt konto.</p>
+   <td> <p>Du kan ansluta din instans i Campaign till den externa Azure Synapse-databasen. Denna anslutning hanteras via ett nytt externt konto.</p>
     <p>Azure Synapse är bara tillgängligt för hybridmiljöer och lokala miljöer. Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
@@ -86,17 +86,17 @@ _8 juni 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Sekretesslagar för Thailand och Brasilien</strong><br /> </th> 
+   <th> <strong>Integritetslagar för Thailand och Brasilien</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Thailand’s Personal Data Protection Act (PDPA) är den nya integritetslagen som harmoniserar och moderniserar dataskyddskraven för Thailand. </p>
+   <td> <p>Thailands lag om skydd av personuppgifter (PDPA) är den nya integritetslagen som harmoniserar och moderniserar kraven på skydd av personuppgifter i Thailand. </p>
    <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) börjar gälla från och med 16 augusti för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
-   <p>Dessa regler gäller för Adobe Campaign-kunder som har data för registrerade i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta din beredskap för PDPA och LGPD:</p>
+   <p>Dessa bestämmelser gäller för Adobe Campaign-kunder som innehar uppgifter för registrerade personer som bor i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive medgivandehantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta beredskapen för PDPA och LGPD:</p>
    <ul> 
-     <li><p>Rätt till åtkomst och rätt att ta bort: vi använder de funktioner som tillkommit för GDPR och CCPA.  <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
-     <li> <p>När du skapar en sekretessbegäran med Campaign-gränssnittet eller API:t väljer du nu <strong>regeltypen</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Läs mer</a>.</p></li>
+     <li><p>Rätt till åtkomst och rätt att ta bort: vi tar vara på de funktioner som redan finns för GDPR och CCPA. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
+     <li> <p>När du skapar en förfrågan om användarens information med gränssnittet i Campaign eller API:et väljer du nu <strong>regeltypen</strong>: PDPA, LGPD, GDPR eller CCPA. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Läs mer</a>.</p></li>
     </ul>
    </td> 
   </tr> 
@@ -105,85 +105,85 @@ _8 juni 2020_
 
 **Säkerhetsförbättringar**
 
-* Förbättrad säkerhet för spårning av länkar i e-postmeddelanden är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html)säkerhet och sekretess. (NEO-24232)
+* Förbättrad säkerhet för spårning av länkar i e-postmeddelanden är aktiverad som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som kan aktiveras genom att kontakta kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder som vill aktivera den finns i [checklistan över säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html). (NEO-24232)
 
-* För att optimera säkerheten har den MD5-hash-algoritm som används för att generera filnamn förstärkts med sha256 för filöverföring. (NEO-17044)
+* För att optimera säkerheten har MD5-hash-algoritmen som används för att generera filnamn förstärkts med sha256 för offentlig filöverföring. (NEO-17044)
 
-* För att förstärka säkerheten mot XSS-attacker inaktiveras klientskript när en spegelsida körs. (NEO-17987)
+* För att förstärka säkerheten mot XSS-angrepp inaktiveras skript på klientsidan när en spegelsida körs. (NEO-17987)
 
-* Ett problem som hindrade det tekniska arbetsflödet för rensning av **sekretessbegäran** från att ta bort avstämningsdata har åtgärdats. (NEO-25168, NEO-21004)
+* Ett problem som hindrade det tekniska arbetsflödet **borttagning av förfrågningar om användares information** från att ta bort avstämningsdata har åtgärdats. (NEO-25168 och NEO-21004)
 
-* Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
+* Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
 **Kompatibilitetsförbättringar**
 
-Följande system stöds nu i Campaign:
+Campaign har nu stöd för följande system:
 * Operativsystem: Debian 10
 * RDBMS: Oracle 18c och Oracle 19c
 * FDA: Azure Synapse Analytics
 
-Läs mer i [Matrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)Kampanjkompatibilitet.
+Läs mer i [kompatibilitetsmatrisen i Campaign](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
 **Förbättringar**
 
-* Transaktionsmeddelanden har förbättrats för en bättre användarupplevelse. Du kan nu avpublicera en transaktionsmeddelandemall som tar bort den från körningsinstanserna. [Lär dig mer](../../message-center/using/template-unpublication.md).
+* Transaktionsmeddelanden har förbättrats för en bättre användarupplevelse. En mall för transaktionsmeddelanden kan nu avpubliceras. Detta tar bort den från körningsinstanserna. [Läs mer](../../message-center/using/template-unpublication.md).
 
-* Det finns nya alternativ för att ange begränsningar när du skickar e-postmeddelanden som innehåller bilder eller bilagor. Dessa skyddsräcken kan undvika prestandaproblem, vilket är särskilt användbart för transaktionsmeddelanden. [Läs mer](../../installation/using/configuring-campaign-options.md#delivery)
+* Det finns nya alternativ för att ange begränsningar när e-postmeddelanden skickas och de innehåller bilder eller bilagor. Dessa skydd kan undvika prestandaproblem, vilket är särskilt användbart för transaktionsmeddelanden. [Läs mer](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Med det nya alternativet **Förbered leveransdelarna i databasen** kan leveransförberedelser utföras direkt i databasen, vilket avsevärt kan snabba upp analysen. Det här alternativet är bara tillgängligt för särskilda konfigurationer. [Lär dig mer](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
+* Det nya alternativet **Förbereda leveransdelarna i databasen** gör det möjligt att utföra leveransförberedelser direkt i databasen, vilket kan avsevärt snabba upp analysen. Det här alternativet är bara tillgängligt för särskilda konfigurationer. [Läs mer](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
-* Prestandan för [CRM Connector-aktiviteten](../../workflow/using/crm-connector.md) för Microsoft Dynamics har förbättrats. (NEO-13303, NEO-12710)
+* Prestandan gällande [aktiviteten i CRM-kopplingen](../../workflow/using/crm-connector.md) för Microsoft Dynamics har förbättrats. (NEO-13303 och NEO-12710)
 
-* Versionen för delat minne har ökats.
+* Versionen för delat minne har uppgraderats.
 
    >[!WARNING]
    >
-   >Denna förbättring kräver ytterligare ett steg efter uppgraderingen. Se avsnittet **Technical Evolutions** nedan.
+   >Denna förbättring kräver ytterligare ett steg efter uppgraderingen. Se avsnittet **Tekniska utvecklingar** nedan.
 
-* Rensningsarbetsflödet har förbättrats. Överblivna arbetstabeller för alla borttagna arbetsflöden tas nu även bort automatiskt i rensningsarbetsflödet. [Lär dig mer](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+* Arbetsflödet för rensning har förbättrats. Överblivna arbetstabeller för alla borttagna arbetsflöden tas nu även bort automatiskt av arbetsflödet för rensning. [Läs mer](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
-* Certifikat för iOS-mobilprogram med iOS HTTP2-anslutning valideras nu innan push-meddelanden skickas, vilket förhindrar att leveranser misslyckas på grund av utgångna certifikat.
+* Certifikat för mobila applikationer i iOS med iOS HTTP2-kopplingen valideras nu innan push-meddelanden skickas, vilket förhindrar att leveranser misslyckas på grund av utgångna certifikat.
 
-* Hanteringen av HTTP-proxyanslutningar har förbättrats. [Lär dig mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Hanteringen av HTTP-proxyanslutningar har förbättrats. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Andra ändringar**
 
-* Äldre SMS-anslutningar är nu föråldrade. Gå till sidan [](../../rn/using/deprecated-features.md)Borttagna funktioner.
+* Äldre SMS-kopplingar är nu inaktuella. Se till [sidan Inaktuella funktioner](../../rn/using/deprecated-features.md).
 
-* Du kan inte längre använda ditt eget Litmus-konto för att etablera och använda Inkorgsåtergivning i Adobe Campaign. [Lär dig mer](../../delivery/using/inbox-rendering.md).
+* Du kan inte längre använda ditt eget Litmus-konto för att etablera och använda Inkorgsåtergivning i Adobe Campaign. [Läs mer](../../delivery/using/inbox-rendering.md).
 
-* Färgen på visningsnamnen har ändrats från mörkblått till mörkblått cyan för att det ska bli lättare att skilja vyer från mappar. [Läs mer](../../platform/using/access-management.md#about-views)
+* Färgen på visningsnamnen har ändrats från mörkblått till mörk cyan för att göra det lättare att skilja vyer från mappar. [Läs mer](../../platform/using/access-management.md#about-views)
 
-* Campaign Classic kan nu anslutas till Microsoft Dynamics CRM-konton i Storbritannien, Indien och Kanada. Detta gäller distributionstyperna Office 365 och On Premise (Dynamics 2015).
+* Campaign Classic kan nu anslutas till Microsoft Dynamics CRM-konton i Storbritannien, Indien och Kanada. Detta gäller driftsättningstyperna Office 365 och lokalt (Dynamics 2015).
 
 * Campaign utför nu en TLS-verifiering för att kontrollera att värdnamnet för servern matchar värdnamnet i det angivna certifikatet.
 
 * Tabellen Leverans- och spårningsstatistik visar nu en post per leverans för SMS-kanalen i stället för en post per leveransmottagare.
 
-* Ett felmeddelande har lagts till i loggfilen för att varna användare när den hämtade filen är större än diskutrymmet.
+* Ett felmeddelande har lagts till i loggfilen för att varna användare när den nedladdade filen är större än diskutrymmet.
 
-* Följande funktioner är nu tillgängliga för Snowflake-anslutningen: MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo.
+* Följande funktioner är nu tillgängliga för Snowflake-kopplingen: MonthsAgo, DaysAgoInt, ToDateTime och YearsAgo.
 
-**Teknisk utveckling**
+**Tekniska utvecklingar**
 
-Den här nya versionen uppdaterar delat minne och kräver ytterligare steg för att utföra uppgraderingen. Som kampanjadministratör måste du ta bort minnessegment. Dessa steg är obligatoriska eftersom gamla segment förhindrar att nlserver/nlsrvmod startar.
+Den nya versionen uppdaterar delat minne och kräver ytterligare steg för att utföra uppgraderingen. Som administratör i Campaign måste du ta bort minnessegment. Dessa steg är obligatoriska eftersom gamla segment förhindrar att nlserver/nlsrvmod startar.
 
 I Windows krävs en omstart av systemet.
 
-På Debian/CentOs krävs delad minnesborttagning. Så här gör du:
+I Debian/CentOs krävs delad minnesborttagning. Gör följande:
 
-Innan du uppgraderar måste du göra följande:
+Innan uppgraderingen måste du utföra följande:
 
-1. Stoppa Apache2-tjänsten (http2 i CentOS) om den körs.
-1. Stoppa servertjänsten (nlserver6 för äldre versioner) om den körs.
+1. Stoppa tjänsten Apache2 (http2 i CentOS) om den körs.
+1. Stoppa tjänsten nlserver (nlserver6 för äldre versioner) om den körs.
 
 Efter uppgraderingen:
 
-1. Ta bort det delade minnet med **kommandot ipcrm** om versionen är äldre än den aktuella versionen.
-1. Starta nlserver-tjänsten om den körs.
-1. Starta Apache2-tjänsten om den körs.
+1. Ta bort det delade minnet med kommandot **ipcrm** om versionen är äldre än den aktuella versionen.
+1. Starta tjänsten nlserver om den kördes.
+1. Starta tjänsten Apache2 om den kördes.
 
-Här är kommandoraden för Debian:
+Följande är kommandoraderna för Debian:
 
 ```
 /etc/init.d/nlserver* stop
@@ -207,47 +207,47 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 
 Ett exempel för Linux finns på den här [sidan](../../configuration/using/additional-parameters.md#redirection-server-configuration).
 
-**Patchar**
+**Felkorrigeringar**
 
-* Korrigerade en mindre regression i rensningsarbetsflödets loggar.
-* Korrigerade ett problem i arbetsflödets **inläsningsaktivitet (SOAP)** vid parsning av WSDL-filer.
-* Korrigerade ett problem som orsakade ett fel vid uppgradering av ett antal arbetsflöden med en **undersökningsaktivitet** för effektiv bearbetning av ett stort antal arbetsflöden.
-* Korrigerade ett intermittent anslutningsproblem under bearbetningen av inMail-meddelanden från Förbättrad MTA. (NEO-20380)
+* Korrigerade en mindre regression i loggfilerna för arbetsflödet för rensning.
+* Korrigerade ett problem i arbetsflödets **inläsningsaktivitet (SOAP)** vid tolkning av WSDL-filer.
+* Korrigerade ett problem som orsakade ett fel vid uppgradering av ett antal arbetsflöden med en **undersökningsaktivitet** för att effektivt bearbeta ett stort antal arbetsflöden.
+* Korrigerade ett intermittent anslutningsproblem under bearbetningen av inMail-meddelanden från Enhanced MTA. (NEO-20380)
 * Korrigerade ett problem som förhindrade att procentvärdena för aktiva klick visades korrekt när bilder visades med en bredd på 100 % i HTML-koden. (NEO-23203)
 * Korrigerade ett problem som förhindrade att leveransens villkorliga innehåll visades fullständigt i rapporten med aktiva klick. (NEO-18729)
-* Korrigerade ett problem som hoppade över målgodkännandesteget när ett arbetsflöde återupptogs för att skicka en återkommande leverans. (NEO-18166)
-* Ett problem som gjorde att **förberedelseknappen** för omstartsmeddelandet inte kunde återuppta leveransen efter att ett fel i arbetsflödet hade åtgärdats har åtgärdats. (NEO-13488)
-* Korrigerade ett problem som kunde få leveranser att misslyckas i läget mitt i källkoden under uppfartsfasen, där mottagare med japanska e-postformat ingick i målfasen. (NEO-23846)
-* Korrigerade ett problem med tidszonskonvertering med Snowflake Connector (NEO-20105)
-* Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
-* Korrigerade ett problem som kunde förhindra att bilder visas i radleveranser. (NEO-23207)
+* Korrigerade ett problem som hoppade över steget med målgruppens godkännande när ett arbetsflöde återupptogs för att skicka en återkommande leverans. (NEO-18166)
+* Korrigerade ett problem som förhindrade knappen **Starta om förberedelsemeddelandet** från att återuppta leveransen efter att ett fel i arbetsflödet hade åtgärdats. (NEO-13488)
+* Korrigerade ett problem som kunde få leveranser att misslyckas i läget mid-sourcing under uppstartsfasen där målgruppen inkluderade mottagare med japanska e-postformat. (NEO-23846)
+* Korrigerade ett problem med konvertering av tidszoner med Snowflake-koppling (NEO-20105)
+* Korrigerade ett problem med externa konton som använder FTP över SSL. (NEO-20498)
+* Korrigerade ett problem som kunde förhindra att bilder visades i Line-leveranser. (NEO-23207)
 * Korrigerade ett problem som orsakade ett fel när ett erbjudande publicerades. (NEO-23312)
-* Korrigerade ett problem med push-meddelanden som gjorde att testanslutningar fungerade i mobilprogram, även när certifikatet hade upphört att gälla. (NEO-22991)
+* Korrigerade ett problem med push-meddelanden som gjorde att testanslutningar fungerade i mobila applikationer även när certifikatet hade upphört att gälla. (NEO-22991)
 * Korrigerade ett problem som kunde påverka push-meddelanden när de skickades med hög frekvens. (NEO-20516)
-* Ett problem som gjorde att spårningsdata inkluderade dubbletter trots att spårningsloggarna inte gjorde det har åtgärdats. (NEO-20040)
-* Korrigerade ett problem som orsakade att dubbla transaktionsmeddelanden skickades efter att ett kommunikationsfel för spårningsservern korrigerats. (NEO-23640)
-* Ett problem som tog bort kodningsparametervärdet vid omdirigering från en spårnings-URL har korrigerats. (NEO-25637)
-* Korrigerade ett problem som kunde förhindra att en fråga fungerar när flyttal jämfördes. (NEO-23243)
-* Korrigerade ett problem som kunde förhindra att innehållet **Ändrad av** kolumn visas efter att ett arbetsflöde startades om. (NEO-23035)
-* Korrigerade ett problem som gjorde att det tekniska arbetsflödet för spårning misslyckades vid hämtning av loggar från en andra behållare. (NEO-23159)
-* Korrigerade ett problem som kunde få arbetsflöden att misslyckas när en **anrikningsaktivitet** kördes. (NEO-17338)
-* En kontroll har lagts till i **Dubbletter för att behålla** fältet i arbetsflödesaktiviteten **Deduplicering** för att förhindra att null- eller negativa värden anges.
-* Guiden **** Schemaläggaren har tagits bort från de återkommande kampanjerna för att undvika omnämnande av timmar och minuter. Endast datum beaktas.
-* Korrigerade ett problem med ytterligare lagringsfält när leveranser skapades via alternativet **Beräknad av ett skript** i **skriptarbetsflödesaktiviteten** . (NEO-20609)
-* Korrigerade ett problem som förhindrade att spökarbetsflöden togs bort i databasrensningsaktiviteterna.
-* Korrigerade ett problem som gjorde att det tekniska arbetsflödet för **fakturering (aktiva profiler)** misslyckades. (NEO-19777)
-* Ett problem har korrigerats vid testning av anslutningen för det externa acsDefaultAccount-kontot. (NEO-23433)
-* Ett problem som gjorde att du inte kunde skapa ett schematillägg för en primärnyckel med flera kolumner med en Hadoop-tabell har åtgärdats. (NEO-17390)
-* Ett problem i **inläsningsaktiviteten (SOAP)** som kunde förhindra att WSDL-filer lästes in från en URL har åtgärdats. (NEO-16924)
+* Korrigerade ett problem som gjorde att spårningsdata inkluderade dubbletter trots att spårningsloggarna inte gjorde det. (NEO-20040)
+* Korrigerade ett problem som orsakade att dubbla transaktionsmeddelanden skickades efter att ett kommunikationsfel för spårningsservern hade korrigerats. (NEO-23640)
+* Korrigerade ett problem som tog bort kodning av parametervärde vid omdirigering från en spårnings-URL. (NEO-25637)
+* Korrigerade ett problem som kunde förhindra att en fråga fungerade när flyttal jämfördes. (NEO-23243)
+* Korrigerade ett problem som kunde förhindra att innehållet i kolumnen **Ändrad av** visades efter att ett arbetsflöde startades om. (NEO-23035)
+* Korrigerade ett problem som gjorde att det tekniska arbetsflödet för spårning inte fungerade vid nedladdning av loggar från en andra behållare. (NEO-23159)
+* Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
+* En kontroll har lagts till i fältet **Dubbletter att behålla** i arbetsflödesaktiviteten **Avduplicering** för att förhindra att noll eller negativa värden anges.
+* **Guiden för Scheduler** har tagits bort från de återkommande kampanjerna för att undvika omnämnande av timmar och minuter. Endast datum beaktas.
+* Korrigerade ett problem med ytterligare lagringsfält när leveranser skapades via alternativet **Beräknad av ett skript** i **skriptet** arbetsflödesaktivitet. (NEO-20609)
+* Korrigerade ett problem som förhindrade att spökarbetsflöden togs bort i databasrensningen.
+* Korrigerade ett problem som gjorde att det tekniska arbetsflödet för **fakturering (aktiva profiler)** inte fungerade. (NEO-19777)
+* Korrigerade ett problem som uppstod vid testning av anslutningen för det externa acsDefaultAccount-kontot. (NEO-23433)
+* Korrigerade ett problem som gjorde att du inte kunde skapa ett schematillägg för en primärnyckel med flera kolumner med en Hadoop-tabell. (NEO-17390)
+* Korrigerade ett problem i **inläsningsaktiviteten (SOAP)** som kunde förhindra att WSDL-filer lästes in från en URL. (NEO-16924)
 * Korrigerade ett problem som förhindrade dig från att utföra ett **ovillkorligt stopp** via konsolen när flera aktiva arbetsflödesservrar lästes in. (NEO-19556)
-* Korrigerade en regression som fick rensningsarbetsflödet att krascha.
+* Korrigerade en regression som fick arbetsflödet för rensning att krascha.
 * Korrigerade ett problem som kunde inträffa när en mall publicerades på en körningsinstans.
-* Ett problem som kunde förhindra det tekniska arbetsflödet collectPrivacyRequests har åtgärdats. (NEO-20513, NEO-25169)
-* Korrigerade problem som kunde inträffa när du försökte ansluta till Audience Manager efter att ha uppgraderat till build 9080. (NEO-20511, NEO-25167)
-* Problem som kan uppstå vid export av rapporter i PDF- eller XLS-format har åtgärdats. (NEO-20982, NEO-23493, NEO-23348)
-* Korrigerade ett problem som kunde visa en leverans två gånger i leveranslistan efter att den skickades.
-* Ett problem med leveransförberedelser som kunde inträffa när routningskonfigurationen var inställd på att skicka leveransen via mellanlagring har åtgärdats.
-* Korrigerade ett problem som kunde visa ett felmeddelande när du klickade på en webbprogramlänk i ett radmeddelande.
+* Korrigerade ett problem som kunde förhindra att det tekniska arbetsflödet collectPrivacyRequests kördes. (NEO-20513 och NEO-25169)
+* Korrigerade ett problem som kunde inträffa när du försökte ansluta till Audience Manager efter att ha uppgraderat till build 9080. (NEO-20511 och NEO-25167)
+* Korrigerade ett problem som kunde uppstå vid export av rapporter i PDF- eller XLS-format. (NEO-20982, NEO-23493 och NEO-23348)
+* Korrigerade ett problem som kunde visa en leverans två gånger i leveranslistan efter att den hade skickats.
+* Korrigerade ett problem med leveransförberedelser som kunde inträffa när routningskonfigurationen var inställd på att skicka leveransen via mid-sourcing.
+* Korrigerade ett problem som kunde visa ett felmeddelande när du klickade på en webbapplikationslänk i ett Line-meddelande.
 * Korrigerade ett problem som kunde förhindra Microsoft Dynamics CRM från att hämta alla entiteter. (NEO-24528)
-* Korrigerade ett problem som tog bort historiken för aktiviteten **Inkrementell fråga** efter att ha kört rensningsarbetsflödet.
-* Ett problem har korrigerats när ett externt konto med mellanleverantörer skapades där alternativet NmsMidSourcing_LastBroadLog_&lt;InternalName> saknades
+* Korrigerade ett problem som tog bort aktivitetshistoriken för **Inkrementell fråga** efter att ha kört arbetsflödet för rensning.
+* Ett problem har korrigerats när ett externt konto med mid-sourcing skapades där alternativet NmsMidSourcing_LastBroadLog_&lt;InternalName> saknades
