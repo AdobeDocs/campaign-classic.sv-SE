@@ -1,6 +1,6 @@
 ---
-title: Funktioner som tagits bort och ersatts av Campaign Classic
-description: På den här sidan visas borttagna och borttagna funktioner i Adobe Campaign Classic
+title: Funktioner som är inaktuella och har ersatts i Campaign Classic
+description: Den här sidan visar inaktuella och borttagna funktioner i Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: null
 contentOwner: simonetn
@@ -14,32 +14,32 @@ translation-type: tm+mt
 source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Inaktuella och borttagna funktioner {#deprecated-and-removed-features}
 
-Adobe utvärderar ständigt produktfunktioner för att identifiera äldre funktioner som bör ersättas med mer moderna alternativ för att förbättra det totala kundvärdet, alltid med noggrant övervägande av bakåtkompatibilitet. När Adobe Campaign Classic arbetar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, så att endast de versioner som stöds kan implementeras. Versioner som inte längre är kompatibla med Adobe Campaign Classic visas nedan och i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Adobe utvärderar ständigt produktfunktioner för att identifiera äldre funktioner som bör ersättas med modernare alternativ för att förbättra det övergripande kundvärdet. Detta sker alltid under noggrant övervägande gällande bakåtkompatibilitet. Eftersom Adobe Campaign Classic fungerar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, vilket innebär att endast de versioner som stöds kan implementeras. Versioner som inte längre är kompatibla med Adobe Campaign Classic visas nedan och i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
-Följande regler gäller för att informera om den förestående borttagningen/ersättningen av Campaign Classic-funktioner:
+Följande regler tillämpas för att informera om den förestående borttagningen/ersättningen av funktioner i Campaign Classic:
 
-* Föråldringsanmälan kommer först. Funktioner som inte längre används är fortfarande tillgängliga och stöds av befintliga användare, men de kommer inte att förbättras ytterligare och inte heller dokumenteras.
-* Borttagning av föråldrade funktioner sker tidigast i följande version. Faktiskt måldatum för borttagning visas på den här sidan.
+* Tillkännagivande av utfasning kommer först. Även om inaktuella funktioner fortfarande kan vara tillgängliga och stöd finns för befintliga användare förbättras de inte och dokumenteras inte ytterligare.
+* Borttagning av inaktuella funktioner sker tidigast i följande version. Faktiskt måldatum för borttagning tillkännages på den här sidan.
 
-Den här processen ger kunderna minst en releasecykel för att anpassa implementeringen till en ny version eller en efterföljare till en borttagningsfunktion, innan den faktiska borttagningen.
+Den här processen ger kunderna minst en cykel av versioner för att anpassa implementeringen till en ny version eller efterföljare till en inaktuell funktion innan den faktiska borttagningen.
 
 >[!NOTE]
->Adobe Campaign-releaser och nya funktioner listas i [versionsinformationen](../../rn/using/latest-release.md).
+>Adobe Campaign-versioner och nya funktioner listas i [versionsinformationen](../../rn/using/latest-release.md).
 
-## Deprecated features {#deprecated-features}
+## Inaktuella funktioner {#deprecated-features}
 
-I det här avsnittet visas funktioner som markerats som borttagna i de senaste Campaign Classic-versionerna.
+I det här avsnittet listas funktioner som har markerats som inaktuella i de senaste versionerna av Campaign Classic.
 
-I allmänhet är de funktioner som ska tas bort i en framtida version först inaktuella. Dessa funktioner är inte längre tillgängliga för nya Campaign Classic-kunder eller ska inte användas för nya implementeringar. De tas också bort från produktdokumentationen.
+I allmänhet är de funktioner som ska tas bort i en framtida version de första att bli inaktuella. Dessa funktioner är inte längre tillgängliga för nya Campaign Classic-kunder eller ska inte användas för nya implementeringar. De tas också bort från produktdokumentationen.
 
-Kunder uppmanas att granska om de använder funktionen/funktionen i den aktuella distributionen och planera för en ändring av implementeringen. Se målets borttagningsdatum för att planera miljön och projektuppdateringarna utifrån detta.
+Kunder uppmanas att se över om de använder funktionen i den aktuella driftsättningen och planera för en ändring av implementeringen. Se måldatumet för borttagning för att planera miljön och projektuppdateringar utifrån detta.
 
 <table> 
  <tbody> 
@@ -48,27 +48,27 @@ Kunder uppmanas att granska om de använder funktionen/funktionen i den aktuella
    <td><strong>Ersättning</strong></td> 
   </tr>
    <tr>
-  <td>SMS-anslutningar<br></td>
-  <td><p> Från och med version 20.2 har följande SMS-anslutningar tagits bort.<p>
+  <td>SMS-kopplingar<br></td>
+  <td><p> Från och med version 20.2 har följande SMS-kopplingar tagits bort.<p>
    <ul>
    <li>NetSize</li>
-   <li>Allmänt SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
+   <li>Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
    <li>Sybase365 (SAP SMS 365)</li>
    <li>CLX Communications</li>
    <li>Tele2</li>
    <li>O2</li>
    <li>iOS</li>
    </ul>
-  <p>Om du använder någon av dessa anslutningar måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Lär dig mer</a></p> 
-  <p>Lär dig hur du migrerar äldre anslutningar i <a href="https://helpx.adobe.com/campaign/kb/sms-connector.html">den här tekniken</a>.</p>
-  <p><em>Datum för målborttagning: 2021</em></p>
+  <p>Om du använder någon av dessa kopplingar måste implementeringen anpassas i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Läs mer</a></p> 
+  <p>Läs mer om hur man migrerar äldre kopplingar i <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector.html">det här tekniska dokumentet</a>.</p>
+  <p><em>Måldatum för borttagning: 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Faxkanal<br></td>
-   <td><p>Faxkanalen är föråldrad från och med version 20.2.</p> 
-   <p>Om du använder den här kanalen måste du anpassa implementeringen efter det. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om Campaign-kanaler.</p>
-   <p><em>Datum för målborttagning: 2021</em></p></td>
+   <td><p>Faxkanalen är inaktuell från och med version 20.2.</p> 
+   <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
+   <p><em>Måldatum för borttagning: 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -80,136 +80,136 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Område - funktion</strong></td>
+   <td><strong>Område – funktion</strong></td>
    <td><strong>Ersättning</strong></td> 
   </tr> 
    <tr> 
    <td>Filbaserad e-postarkivering<br></td>
-   <td><p>Från och med Campaign 20.2 är filbaserad e-postarkivering inte längre tillgänglig. E-postarkivering är nu tillgänglig via en dedikerad e-postadress för hemlig kopia. <a href="../../installation/using/email-archiving.md">Lär dig mer</a></p></td>
+   <td><p>Från och med Campaign 20.2 är filbaserad e-postarkivering inte längre tillgänglig. E-postarkivering är nu tillgänglig via en dedikerad e-postadress som är osynlig för leveransmottagarna. <a href="../../installation/using/email-archiving.md">Läs mer</a></p></td>
   </tr> 
    <tr> 
-   <td>Leadhantering</td>
-   <td><p>Från och med Campaign 20.2 är Leads Management-paketet inte längre tillgängligt. Liknande funktioner kan implementeras via andra interna arbetsflödesaktiviteter och datamodellsändringar.</p></td>
+   <td>Hantera potentiella kunder</td>
+   <td><p>Från och med Campaign 20.2 är paketet med hantering av potentiella kunder inte längre tillgängligt. Liknande funktioner kan implementeras via andra ändringar i interna arbetsflödesaktiviteter och datamodeller.</p></td>
    </tr>
    <tr>
-   <td>Dokumentation för kampanj-API:er - jsapi.chm-fil</td>
-   <td>Från och med Campaign 19.1 finns Campaign Classic API:er på en dedikerad sida. Om du använde den äldre jsapi.chm-filen bör du nu hänvisa till <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">den nya onlineversionen</a>.</td>
+   <td>Dokumentation för API:er i Campaign – filen jsapi.chm</td>
+   <td>Från och med Campaign 19.1 finns API:er i Campaign Classic på en dedikerad sida. Om du använder den äldre filen jsapi.chm bör du nu använda <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">den nya versionen online</a>.</td>
   </tr> 
   <tr> 
-   <td>Kampanjsamordning - prediktiv marknadsföring</td>
-   <td>Från och med Campaign 18.10 är de prediktiva marknadsföringsfunktionerna inte längre tillgängliga.</td>
+   <td>Orkestrering i Campaign – förutsägande marknadsföring</td>
+   <td>Från och med Campaign 18.10 är de förutsägande marknadsföringsfunktionerna inte längre tillgängliga.</td>
   </tr> 
   <tr> 
-   <td>Webbprogram - mikrowebbplatser</td>
-   <td>Från och med Campaign 18.10 är Microsites inte längre tillgängliga. Du kan förbättra säkerheten genom att begränsa åtkomsten till enbart dedikerade domäner i Adobe Campaign konfigurationsfiler och använda anpassade URL:er i Campaign genom att använda DNS-alias. <a href="https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html">Lär dig mer</a></td>
+   <td>Webbapplikationer – mikrowebbplatser</td>
+   <td>Från och med Campaign 18.10 är mikrowebbplatser inte längre tillgängliga. Du kan förbättra säkerheten genom att begränsa åtkomsten till enbart dedikerade domäner i konfigurationsfiler i Adobe Campaign och använda anpassade webbadresser i Campaign genom att använda DNS-alias. <a href="https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html">Läs mer</a></td>
   </tr> 
   <tr> 
-   <td>Push-meddelanden - binär iOS-anslutning</td>
-   <td>Enligt Apples rekommendation har Adobe tagit bort den gamla binära iOS-kopplingen från och med Campaign 18.10. Den mer kapabla och mer effektiva HTTP/2-baserade kopplingen är redan tillgänglig.</td>
+   <td>Push-meddelanden – iOS Binary-koppling</td>
+   <td>Enligt Apples rekommendation har Adobe tagit bort den gamla binära iOS-kopplingen från och med Campaign 18.10. Den mer kapabla och effektiva HTTP/2-baserade kopplingen är redan tillgänglig.</td>
   </tr> 
   <tr> 
-   <td>decryptString API</td>
-   <td><p>Från och med Campaign 18.6 är API:t <em>dekrypptString</em> av säkerhetsskäl inte längre tillgängligt som standard för nya installationer.</p> 
-   <p>I samband med en efteruppgradering till 18.6 (och senare) är denna API inte längre aktiverad och har ersatts av funktionen <em>dekrypptPassword</em> . <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Lär dig mer</a></p></td>
+   <td>API:et decryptString</td>
+   <td><p>Från och med Campaign 18.6 är API:et <em>decryptString</em> av säkerhetsskäl inte längre tillgängligt som standard för nya installationer.</p> 
+   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Läs mer</a></p></td>
   </tr> 
    <tr> 
-   <td>Mobilkanal - MMS- och WAP-push-meddelanden</td>
-   <td>Från och med Campaign 18.4 är kanalerna MMS och Wap Push inte längre tillgängliga. Som ersättning kan du använda <a href="../../delivery/using/sms-channel.md">SMS</a> och <a href="../../delivery/using/about-mobile-app-channel.md">push</a> -leveranser.</td>
+   <td>Mobilkanal – MMS- och WAP-push-meddelanden</td>
+   <td>Från och med Campaign 18.4 är kanalerna MMS och Wap Push inte längre tillgängliga. Som ersättning kan du använda <a href="../../delivery/using/sms-channel.md">SMS</a>- och <a href="../../delivery/using/about-mobile-app-channel.md">push</a>-leveranser.</td>
   </tr> 
    <tr> 
-   <td>Mobilkanal - LINE v1</td>
-   <td>Från och med Campaign 18.4 är LINE Connect-paketet inte längre tillgängligt. Adobe rekommenderar att du använder det nya LINE Channel-paketet som ersättning. <a href="../../delivery/using/line-channel.md">Lär dig mer</a></td>
+   <td>Mobilkanal – LINE v1</td>
+   <td>Från och med Campaign 18.4 är LINE Connect-paketet inte längre tillgängligt. Adobe rekommenderar att du använder det nya LINE Channel-paketet som ersättning. <a href="../../delivery/using/line-channel.md">Läs mer</a></td>
   </tr> 
  </tbody> 
 </table>
 
-## Undertryckt kompatibilitet {#deprecated-compatibility}
+## Inaktuell kompatibilitet {#deprecated-compatibility}
 
-Följande system används inte i Campaign Classic. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) för att uppgradera till en nyare version eller gå till ett nytt system innan kompatibiliteten upphör.
+Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
 
-### Adobe Campaign 20.2 {#compat-20-2-release}
+### Adobe Campaign version 20.2 {#compat-20-2-release}
 
-Från och med version 20.2 är följande system föråldrat för Campaign Classic. Kompatibiliteten upphör i version 20.3 - september 2020.
+Från och med version 20.2 är följande system inaktuellt i Campaign Classic. Kompatibiliteten upphör i version 20.3 – september 2020.
 
 * Klientkonsol: Windows 7
-* Äldre SMS-anslutningar (se avsnittet Föråldrade funktioner nedan)
+* Äldre SMS-kopplingar (se avsnittet Inaktuella funktioner nedan)
 
-### Adobe Campaign 19.2  {#compat-19-2-release}
+### Adobe Campaign version 19.2 {#compat-19-2-release}
 
-Från och med version 19.2 är följande operativsystem inaktuella för Campaign Classic. Kompatibiliteten upphör 2020 för EOY.
+Från och med version 19.2 är följande operativsystem inaktuella att användas med Campaign Classic. Kompatibiliteten upphör i slutet av 2020.
 
 * Webbserver: Apache 2.2.
 * Operativsystem: CentOS 6.
 
-Se [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) för att uppgradera till en nyare version eller gå till ett nytt system.
+Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) för att uppgradera till en nyare version eller gå över till ett nytt system.
 
-## Kompatibilitetsslut {#end-of-compatibility}
+## Slut på kompatibilitet {#end-of-compatibility}
 
 >[!CAUTION]
 >
->Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). När specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln med sina respektive skapare är Adobe Campaign inte längre kompatibelt med dessa versioner: de tillkännages som inaktuella och tas sedan bort från vår kompatibilitetsmatris i den följande produktversionen. Se till att du har de versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+>Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html). När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tillkännages som inaktuella och tas sedan bort från vår kompatibilitetsmatris i den följande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 ### Klientkonsol {#client-console-eol}
 
-Adobe Campaign Classic Client Console kan inte längre köras på följande system eftersom de har tagits bort av redigeraren. Kunder som kör Campaign Client Console på någon av dessa versioner måste uppgradera till den senaste versionen före målets borttagningsdatum. Se [Kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande system eftersom de har tagits bort av redigeraren. Kunder som kör klientkonsolen i Campaign på någon av dessa versioner måste uppgradera till den senaste versionen före måldatumet för borttagning. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
-* Windows Server 2003, 2008, 2008 R2
-* Windows XP, Vista
+* Windows Server 2003, 2008 och 2008 R2
+* Windows XP och Vista
 
 >[!NOTE]
->Från och med Campaign 20.1 är Campaign Classic Client Console 32 bitar inte längre kompatibelt med Campaign med de senaste versionerna. Du måste använda 64-bitars Client Console.
+>Från och med Campaign version 20.1 är klientkonsolen i Campaign Classic som körs med 32 bitar inte längre kompatibel med de senaste versionerna av Campaign. Du måste använda klientkonsolen med 64 bitar.
 
 
 ### Operativsystem {#o-s-eol}
 
 Från och med version 19.1 är Adobe Campaign inte längre kompatibelt med följande operativsystem.
 
-* Debian 7. [Lär dig mer](https://wiki.debian.org/DebianReleases)
+* Debian 7. [Läs mer](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x [Läs mer](https://access.redhat.com/support/policy/updates/errata)
-* Windows Server 2008. [Lär dig mer](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11. [Lär dig mer](https://www.suse.com/lifecycle)
+* Windows Server 2008. [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1163)
+* SLES 11. [Läs mer](https://www.suse.com/lifecycle)
 
 ### Webbservrar {#web-server-eol}
 
-Från och med 19.1-vårutgåvan är Adobe Campaign inte längre kompatibelt med följande webbserver.
+Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande webbserver.
 
-* Microsoft IIS 7. [Lär dig mer](https://support.microsoft.com/en-us/lifecycle/search/810)
+* Microsoft IIS 7. [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/810)
 
-### verktyg {#tools-eol}
+### Verktyg {#tools-eol}
 
-Från och med vårutgåvan 19.1 är Adobe Campaign inte längre kompatibelt med följande verktyg.
+Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande verktyg.
 
-* Java JDK 7. [Lär dig mer](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Library Office 3.5 / 4.3 / 5.x, utom när det är inbäddat i ett annat verktyg. [Lär dig mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Java JDK 7. [Läs mer](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Libre Office 3.5/4.3/5.x utom när det är inbäddat i ett annat verktyg. [Läs mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Databasmotorer {#dbe-eol}
 
-Adobe stöder inte följande databasmotorer eftersom de har tagits bort av redigeraren. Kunder som kör dessa versioner måste uppgradera till den senaste versionen eller byta till en annan.
+Adobe har inte stöd för följande databasmotorer eftersom de har tagits bort av redigeraren. Kunder som kör dessa versioner måste uppgradera till den senaste versionen eller byta till en annan.
 
-Se [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) för Campaign Classic för att få tillgång till en lista över kompatibla versioner.
+Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) för Campaign Classic för att få tillgång till en lista över kompatibla versioner.
 
-**FDA (FEDERATED DATA ACCESS)**
+**FDA (FEDERERAD DATAÅTKOMST)**
 
-Från och med vårutgåvan 19.1 är Adobe Campaign inte längre kompatibelt med följande FDA-servrar.
+Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande FDA-servrar.
 
 * PostgreSQL 9.3. [Läs mer](https://www.postgresql.org/support/versioning)
 * MySQL 5.5. [Läs mer](http://www.fromdual.com/support-for-mysql-from-oracle)
 * DB2 9.5. [Läs mer](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Teradata 14-14.1. [Läs mer](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
+* Teradata 14–14.1. [Läs mer](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
-Campaign Classic är inte kompatibelt med följande servrar i FDA (Federated Data Access).
+Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtkomst (FDA).
 
-* DB2 UDB 9.5, 9.7. Den senaste versionen av DB2 stöds av FDA (Federated Data Access). [Lär dig mer](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Senare versioner av Oracle stöds via FDA (Federated Data Access). [Lär dig mer](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Senare versioner av PostgreSQL stöds via FDA (Federated Data Access). [Lär dig mer](https://www.postgresql.org/support/versioning)
-* MSSQL 2000, 2005, 2008 R2. Senare versioner av SQL Server stöds via FDA (Federated Data Access). [Lär dig mer](https://support.microsoft.com/en-us/lifecycle/search/1044)
-* MySQL 5.1. Senare versioner av MySQL stöds via FDA (Federated Data Access). [Lär dig mer](https://en.wikipedia.org/wiki/InfiniDB)
-* InfiniDB har nått slutet av livscykeln. [Lär dig mer](https://www.mysql.com/support)
-* Teradata 13, 13.1. Senare versioner av Teradata stöds via FDA (Federated Data Access). [Lär dig mer](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02, 7.0. Netezza har nått slutet av livet. [Lär dig mer](https://en.wikipedia.org/wiki/Netezza)
-* AsterData 5.0. AsterData har nått slutet av livet. [Lär dig mer](https://en.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2, 15.4, 15.5 och Sybase ASE 15.0. Senare versioner av Sybase stöds via FDA (Federated Data Access). [Lär dig mer](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic kommer fortfarande att ha stöd för de listade versionerna av Hadoop via HiveSQL via FDA (Federated Data Access), men dessa versioner sammanfogas med: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* DB2 UDB 9.5 och 9.7. Stöd finns för senare versioner av DB2 via federerad dataåtkomst (FDA). [Läs mer](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i och 10G R2. Stöd finns för senare versioner av Oracle Server via federerad dataåtkomst (FDA). [Läs mer](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* PostgreSQL 8.3, 8.4, 9.0, 9.1 och 9.2. Stöd finns för senare versioner av PostgreSQL via federerad dataåtkomst (FDA). [Läs mer](https://www.postgresql.org/support/versioning)
+* MSSQL 2000, 2005 och 2008 R2. Stöd finns för senare versioner av SQL Server via federerad dataåtkomst (FDA). [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1044)
+* MySQL 5.1. Stöd finns för senare versioner av MySQL via federerad dataåtkomst (FDA). [Läs mer](https://en.wikipedia.org/wiki/InfiniDB)
+* InfiniDB har nått slutet av sin livscykel. [Läs mer](https://www.mysql.com/support)
+* Teradata 13 och 13.1. Stöd finns för senare versioner av Teradata via federerad dataåtkomst (FDA). [Läs mer](https://www.info.teradata.com/download.cfm?ItemID=1007255)
+* Netezza 6.02 och 7.0. Netezza har nått slutet av sin livscykel. [Läs mer](https://en.wikipedia.org/wiki/Netezza)
+* AsterData 5.0. AsterData har nått slutet av sin livscykel. [Läs mer](https://en.wikipedia.org/wiki/Aster_Data_Systems)
+* Sybase IQ 15.2, 15.4 och 15.5 samt Sybase ASE 15.0. Stöd finns för senare versioner av Sybase via federerad dataåtkomst (FDA). [Läs mer](https://sites.google.com/site/dbatipsandtricks/time-tracker)
+* Hadoop via HiveSQL: Hadoop 2.7.3 och HiveSQL 1.2.1. Adobe Campaign Classic har fortfarande stöd för de listade versionerna av Hadoop via HiveSQL via federerad dataåtkomst (FDA). Dessa versioner slås dock ihop med: HortonWorks (HDP 2.4.X, 2.5.x och 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5) och 3.6 (HDP 2.6)
 
 **RDBMS-SERVER**
 
