@@ -13,18 +13,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: d4ebaaf90d88cbec9a4d24d79eaf7c46890d933a
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 7%
 
 ---
 
 
 # Om schemareferens{#about-schema-reference}
 
-I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen.
+I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell.
 
-Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa datamodellen [för](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)Campaign Classic.
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i datamodellen [för](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html)Campaign Classic.
 
-Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, vilket kallas ett **schema**.
+Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. It obeys a grammar specific to Adobe Campaign, called a **schema**.
 
 Ett schema är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition:
 
@@ -43,13 +46,13 @@ Här beskrivs också XML-strukturen som används för att lagra data:
 
 Med scheman kan du definiera en enhet i databasen. Det finns ett schema för varje entitet.
 
-Följande bild visar var scheman finns i Adobe Campaign-datasystemet:
+I följande bild visas schemats placering i Adobe Campaign datasystem:
 
 ![](assets/reference_schema_intro.png)
 
 ## Syntax för scheman {#syntax-of-schemas}
 
-Schemats rotelement är **`<srcschema>`**. Den innehåller ** **`<element>`** och **`<attribute>`** delelementen.
+Schemats rotelement är **`<srcschema>`**. Den innehåller elementen **`<element>`** och **`<attribute>`** subelementen.
 
 Det första **`<element>`** underelementet sammanfaller med entitetens rot.
 
