@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Tänk på begränsningarna för SFTP-lagring, DB-lagring och aktiv profil enligt ditt Adobe Campaign-kontrakt när du använder den här funktionen.
+>Tänk på begränsningarna för SFTP-lagring, databaslagring och aktiv profil enligt ditt Adobe Campaign-avtal när du importerar data.
 
 ## Hur man samlar in data {#how-to-collect-data}
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 Data som skickas i ett arbetsflöde kan komma från listor där data har förberetts och strukturerats.
 
-Listan kan ha skapats direkt i Adobe Campaign eller importerats med **[!UICONTROL Import a list]** alternativet. Mer information om det här alternativet finns på den här [sidan](../../platform/using/generic-imports-and-exports.md).
+Listan kan ha skapats direkt i Adobe Campaign eller importerats med **[!UICONTROL Import a list]** alternativet. For more on this option, refer to this [page](../../platform/using/generic-imports-and-exports.md).
 
 Mer information om hur du använder läslisteaktiviteten i ett arbetsflöde finns i [Läslista](../../workflow/using/read-list.md).
 
 ### Läsa in data från en fil {#loading-data-from-a-file}
 
-De data som bearbetas i ett arbetsflöde kan extraheras från en strukturerad fil så att de kan importeras till Adobe Campaign.
+Data som bearbetas i ett arbetsflöde kan extraheras från en strukturerad fil så att de kan importeras till Adobe Campaign.
 
 En beskrivning av inläsningen av dataaktiviteten finns i avsnittet [Datainläsning (fil)](../../workflow/using/data-loading--file-.md) .
 
@@ -53,91 +53,6 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Zippa upp eller dekryptera en fil före bearbetning {#unzipping-or-decrypting-a-file-before-processing}
-
-### Om förbearbetningsfaser {#about-pre-processing-stages}
-
-Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas in i en [datainläsningsaktivitet (fil)](../../workflow/using/data-loading--file-.md) kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
-
-Så här kan du göra:
-
-1. Använd [kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att generera ett nyckelpar för offentlig/privat nyckel.
-
-   >[!NOTE]
-   >
-   >Kontrollpanelen är tillgänglig för alla kunder som har AWS som värd (med undantag för kunder som har sina marknadsföringsinstanser på plats).
-
-1. Om du har installerat Adobe Campaign på Adobe ska du kontakta Adobe kundtjänst för att få de verktyg som behövs installerade på servern.
-1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
-
-Du kan sedan använda de förbehandlingskommandon du vill i dina arbetsflöden:
-
-1. Lägg till och konfigurera en **[!UICONTROL File transfer]** aktivitet i arbetsflödet.
-1. Lägg till en **[!UICONTROL Data loading (file)]** aktivitet och definiera filformatet.
-1. Markera **[!UICONTROL Pre-process the file]** alternativet.
-1. Ange det förbehandlingskommando som du vill använda.
-1. Lägg till andra aktiviteter för att hantera data som kommer från filen.
-1. Spara och kör arbetsflödet.
-
-Ett exempel visas i användningsexemplet nedan.
-
-**Relaterade ämnen:**
-
-* [Aktivitet](../../workflow/using/data-loading--file-.md)för datainläsning (fil).
-* [Zippa eller kryptera en fil](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
-
-### Användningsfall: Importera data krypterade med en nyckel som genererats av Kontrollpanelen {#use-case-gpg-decrypt}
-
-I det här fallet skapar vi ett arbetsflöde för att importera data som har krypterats i ett externt system med hjälp av en nyckel som genererats på Kontrollpanelen.
-
-En självstudievideo som visar hur du använder en GPG-nyckel för att dekryptera data finns också i [det här avsnittet](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html).
-
-Så här utför du det här användningsfallet:
-
-1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i dokumentationen för [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
-
-   * Den offentliga nyckeln delas med det externa systemet, som kommer att använda den för att kryptera data som ska skickas till Campaign.
-   * Den privata nyckeln används av Campaign Classic för att dekryptera inkommande krypterade data.
-
-   ![](assets/gpg_generate.png)
-
-1. I det externa systemet använder du den offentliga nyckel som hämtats från Kontrollpanelen för att kryptera de data som ska importeras till Campaign Classic.
-
-   ![](assets/gpg_external.png)
-
-1. Bygg ett arbetsflöde i Campaign Classic för att importera krypterade data och dekryptera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
-
-   ![](assets/gpg_workflow.png)
-
-   * **[!UICONTROL File transfer]** aktivitet: Överför filen från en extern källa till Campaign Classic. I det här exemplet vill vi överföra filen från en SFTP-server.
-   * **[!UICONTROL Data loading (file)]** aktivitet: Läser in data från filen i databasen och dekrypterar den med den privata nyckel som genereras på Kontrollpanelen.
-
-1. Öppna **[!UICONTROL File transfer]** aktiviteten och ange sedan det externa konto som du vill importera den krypterade GPG-filen från.
-
-   ![](assets/gpg_transfer.png)
-
-   Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
-
-1. Öppna **[!UICONTROL Data loading (file)]** aktiviteten och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/data-loading--file-.md).
-
-   Lägg till en förbearbetningsfas i aktiviteten för att dekryptera inkommande data. Det gör du genom att markera **[!UICONTROL Pre-process the file]** alternativet och sedan kopiera och klistra in dekrypteringskommandot i **[!UICONTROL Command]** fältet:
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
-
-   ![](assets/gpg_load.png)
-
-   >[!CAUTION]
-   >
-   >I det här exemplet använder vi den lösenfras som används som standard av Kontrollpanelen, som är&quot;lösenfras&quot;.
-   >
-   >Om du redan har installerat GPG-nycklar på din instans via en kundtjänstförfrågan tidigare kan lösenfrasen ha ändrats och vara en annan som standard.
-
-1. Klicka **[!UICONTROL OK]** för att bekräfta aktivitetskonfigurationen.
-
-1. Du kan nu köra arbetsflödet. När dekrypteringen är klar kan du kontrollera i arbetsflödets loggar att den har körts och att data från filen har importerats.
-
-   ![](assets/gpg_run.png)
-
 ## Bästa tillvägagångssätt vid import av data {#best-practices-when-importing-data}
 
 Genom att vara försiktig och följa de få enkla regler som beskrivs nedan kan du till stor del säkerställa att data är konsekventa i databasen och undvika vanliga fel under databasuppdatering eller dataexport.
@@ -150,7 +65,7 @@ Med importmallar är det mycket bekvämt att förbereda liknande importer och s�
 
 I många projekt byggs importen utan **[!UICONTROL Deduplication]** aktivitet eftersom filerna som används i projektet inte har några dubbletter. Det kan ibland visas dubbletter när du importerar olika filer. Det är då svårt att deduplicera. Därför är ett borttagningssteg en bra försiktighetsåtgärd i alla importarbetsflöden.
 
-Förutsätt inte att inkommande data är konsekventa och korrekta, eller att IT-avdelningen eller Adobe Campaign-administratören kommer att ta hand om dem. Under projektet bör du tänka på datarensningen. Ta bort dubbletter, stämma av och bibehåll enhetligheten när du importerar data.
+Du kan inte utgå från att inkommande data är konsekventa och korrekta, eller att IT-avdelningen eller Adobe Campaign-administratören kommer att ta hand om dem. Under projektet bör du tänka på datarensningen. Ta bort dubbletter, stämma av och bibehåll enhetligheten när du importerar data.
 
 Ett exempel på en importmall finns i avsnittet [Konfigurera en återkommande import](#setting-up-a-recurring-import) .
 
@@ -197,7 +112,7 @@ Använd alltid aktiviteten i arbetsflöden för datahantering för bättre effek
 
 ### Importera i Delta-läge {#importing-in-delta-mode}
 
-Vanlig import måste göras i deltaläge. Det innebär att endast ändrade eller nya data skickas till Adobe Campaign, i stället för till hela tabellen varje gång.
+Vanlig import måste göras i deltaläge. Det innebär att endast ändrade eller nya data skickas till Adobe Campaign, i stället för hela tabellen varje gång.
 
 Full import bör endast användas för inledande last.
 
@@ -216,11 +131,11 @@ Följ nedanstående principer för att upprätthålla datakonsekvensen i Adobe C
 
 * **Ta bort dubbletter**, stämma av och bibehåll konsekvens när du importerar data.
 
-## Konfigurera en återkommande import {#setting-up-a-recurring-import}
+## Användningsfall: konfigurera en återkommande import {#setting-up-a-recurring-import}
 
 Det är bäst att använda en importmall om du behöver importera filer med samma struktur regelbundet.
 
-I det här exemplet visas hur du förinställer ett arbetsflöde som kan återanvändas för import av profiler som kommer från en CRM i Adobe Campaign-databasen. Mer information om alla möjliga inställningar för varje aktivitet finns i det här [avsnittet](../../workflow/using/about-activities.md).
+I det här exemplet visas hur du anger ett förinställt arbetsflöde som kan återanvändas för import av profiler från en CRM i Adobe Campaign-databasen. Mer information om alla möjliga inställningar för varje aktivitet finns i det här [avsnittet](../../workflow/using/about-activities.md).
 
 1. Skapa en ny arbetsflödesmall från **[!UICONTROL Resources > Templates > Workflow templates]**.
 1. Lägg till följande aktiviteter:
@@ -311,3 +226,87 @@ Mallen kan nu användas och är tillgänglig för alla nya arbetsflöden. Allt s
 
 ![](assets/import_template_example9.png)
 
+## Zippa upp eller dekryptera en fil före bearbetning {#unzipping-or-decrypting-a-file-before-processing}
+
+### Om förbearbetningsfaser {#about-pre-processing-stages}
+
+Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas in i en [datainläsningsaktivitet (fil)](../../workflow/using/data-loading--file-.md) kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
+
+Så här kan du göra:
+
+1. Använd [kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att generera ett nyckelpar för offentlig/privat nyckel.
+
+   >[!NOTE]
+   >
+   >Kontrollpanelen är tillgänglig för alla kunder som har AWS som värd (med undantag för kunder som har sina marknadsföringsinstanser på plats).
+
+1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du Adobe kundtjänst för att få de verktyg som behövs installerade på servern.
+1. Om du har en installation av Adobe Campaign installerad installerar du verktyget som du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
+
+Du kan sedan använda de förbehandlingskommandon du vill i dina arbetsflöden:
+
+1. Lägg till och konfigurera en **[!UICONTROL File transfer]** aktivitet i arbetsflödet.
+1. Lägg till en **[!UICONTROL Data loading (file)]** aktivitet och definiera filformatet.
+1. Markera alternativet **[!UICONTROL Pre-process the file]**.
+1. Ange det förbehandlingskommando som du vill använda.
+1. Lägg till andra aktiviteter för att hantera data som kommer från filen.
+1. Spara och kör arbetsflödet.
+
+Ett exempel visas i användningsexemplet nedan.
+
+**Relaterade ämnen:**
+
+* [Aktivitet](../../workflow/using/data-loading--file-.md)för datainläsning (fil).
+* [Zippa eller kryptera en fil](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+
+### Användningsfall: Importera data krypterade med en nyckel som genererats av Kontrollpanelen {#use-case-gpg-decrypt}
+
+I det här fallet skapar vi ett arbetsflöde för att importera data som har krypterats i ett externt system med hjälp av en nyckel som genererats på Kontrollpanelen.
+
+En självstudievideo som visar hur du använder en GPG-nyckel för att dekryptera data finns också i [det här avsnittet](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html).
+
+Så här utför du det här användningsfallet:
+
+1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i dokumentationen för [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+
+   * Den offentliga nyckeln delas med det externa systemet, som kommer att använda den för att kryptera data som ska skickas till Campaign.
+   * Den privata nyckeln används av Campaign Classic för att dekryptera inkommande krypterade data.
+
+   ![](assets/gpg_generate.png)
+
+1. I det externa systemet använder du den offentliga nyckel som hämtats från Kontrollpanelen för att kryptera de data som ska importeras till Campaign Classic.
+
+   ![](assets/gpg_external.png)
+
+1. Bygg ett arbetsflöde i Campaign Classic för att importera krypterade data och dekryptera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
+
+   ![](assets/gpg_workflow.png)
+
+   * **[!UICONTROL File transfer]** aktivitet: Överför filen från en extern källa till Campaign Classic. I det här exemplet vill vi överföra filen från en SFTP-server.
+   * **[!UICONTROL Data loading (file)]** aktivitet: Läser in data från filen i databasen och dekrypterar den med den privata nyckel som genereras på Kontrollpanelen.
+
+1. Öppna **[!UICONTROL File transfer]** aktiviteten och ange sedan det externa konto som du vill importera den krypterade GPG-filen från.
+
+   ![](assets/gpg_transfer.png)
+
+   Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
+
+1. Öppna **[!UICONTROL Data loading (file)]** aktiviteten och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/data-loading--file-.md).
+
+   Lägg till en förbearbetningsfas i aktiviteten för att dekryptera inkommande data. Det gör du genom att markera **[!UICONTROL Pre-process the file]** alternativet och sedan kopiera och klistra in dekrypteringskommandot i **[!UICONTROL Command]** fältet:
+
+   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+
+   ![](assets/gpg_load.png)
+
+   >[!CAUTION]
+   >
+   >I det här exemplet använder vi den lösenfras som används som standard av Kontrollpanelen, som är&quot;lösenfras&quot;.
+   >
+   >Om du redan har installerat GPG-nycklar på din instans via en kundtjänstförfrågan tidigare kan lösenfrasen ha ändrats och vara en annan som standard.
+
+1. Klicka **[!UICONTROL OK]** för att bekräfta aktivitetskonfigurationen.
+
+1. Du kan nu köra arbetsflödet. När dekrypteringen är klar kan du kontrollera i arbetsflödets loggar att den har körts och att data från filen har importerats.
+
+   ![](assets/gpg_run.png)
