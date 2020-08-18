@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+workflow-type: tm+mt
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
@@ -245,24 +248,24 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
-   <td> DATUM<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Tid<br /> </td> 
-   <td> TID<br /> </td> 
+   <td> Time<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TID<br /> </td> 
-   <td> TID<br /> </td> 
+   <td> TIME<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
@@ -270,7 +273,7 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
@@ -284,7 +287,7 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> PM<br /> </td> 
+   <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB if Unicode)<br /> </td> 
    <td> CLOB (CLOB CHARACTER SET UNICODE if Unicode)<br /> </td> 
@@ -297,7 +300,7 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB(4M)<br /> </td> 
-   <td> BILD<br /> </td> 
+   <td> IMAGE<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -320,13 +323,13 @@ Elementen **`<elements>`** och **`<attributes>`** elementen i dataschemat kan be
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Etiketten visas i indataformuläret för Adobe Campaign-klientkonsolen:
+   Etiketten visas i indataformuläret för Adobe Campaign klientkonsol:
 
    ![](assets/d_ncs_integration_schema_label.png)
 
 * Med egenskapen **desc** kan du ange en lång beskrivning.
 
-   Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign-klientkonsolen.
+   Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
 
    >[!NOTE]
    >
@@ -353,7 +356,7 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
    >[!NOTE]
    >
-   >I Adobe Campaign-klientkonsolen används noden för att hantera räknare **[!UICONTROL Administration>Counters]** .
+   >I Adobe Campaign klientkonsol används **[!UICONTROL Administration>Counters]** noden för att hantera räknare.
 
 Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -377,7 +380,7 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 >[!NOTE]
 >
->I Adobe Campaign-klientkonsolen används noden för att hantera uppräkningar **[!UICONTROL Administration > Enumerations]** .
+>I Adobe Campaign klientkonsol används **[!UICONTROL Administration > Enumerations]** noden för att hantera uppräkningar.
 
 #### Ange uppräkning {#set-enumeration}
 
@@ -482,8 +485,8 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 * **@email**: markerar e-postmeddelandet,
 * **location/@city**: markerar attributet &quot;city&quot; under **`<location>`** elementet
 * **../@email**: väljer e-postadressen från det överordnade elementet i det aktuella elementet
-* **grupp`[1]/@label`**: väljer attributet &quot;label&quot; som är underordnat det första **`<group>`**mängdelementet
-* **grupp`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat elementet och innehåller värdet &quot;test1&quot;**`<group>`**
+* **grupp`[1]/@label`**: väljer attributet &quot;label&quot; som är underordnat det första **`<group>`** mängdelementet
+* **grupp`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat elementet och innehåller värdet &quot;test1&quot; **`<group>`**
 
 >[!NOTE]
 >
@@ -491,6 +494,7 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 >
 >* **location/@city** is not valid; använd **`[location/@city]`**
 >* **`[@email]`** och **@email** är likvärdiga
+
 >
 
 
@@ -502,7 +506,7 @@ Det går också att definiera komplexa uttryck, till exempel följande aritmetis
 
 Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
 
-Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign-klientkonsolen:
+Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign klientkonsol:
 
 ![](assets/d_ncs_integration_schema_function.png)
 
