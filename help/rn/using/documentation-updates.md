@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '7069'
+source-wordcount: '7095'
 ht-degree: 95%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 95%
 # Dokumentationsuppdateringar{#documentation-updates}
 
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
-
 
 Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
 
@@ -56,6 +55,7 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
 * [Konfigurera kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
 
+Information har lagts till om kontroller och åtgärder som ska utföras vid hämtning av felet&quot;Det gick inte att lösa värdnamnet&quot; efter anslutning till FTP-servern. [Läs mer](../../platform/using/sftp-server-usage.md)
 
 ## Juli 2020 {#july-2020}
 
