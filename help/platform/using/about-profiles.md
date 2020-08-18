@@ -15,19 +15,25 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 0%
+source-wordcount: '915'
+ht-degree: 16%
 
 ---
 
 
 # Om profiler{#about-profiles}
 
+Profiler (kunder, prospekt och prenumeranter på nyhetsbrev osv.) är centraliserade i databasen i Adobe Campaign. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PI-data i en samlad vy för att analysera och vidta åtgärder.
+
+I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
+
+![](assets/do-not-localize/how-to-video.png) [Förstå begreppet profiler i video](#create-profiles-video)
+
 ## Profiltyper {#profile-types}
 
-Med Adobe Campaign kan du hantera profiler under hela deras livscykel: skapa, importera, målinrikta, åtgärdsspårning, uppdateringar osv.
+Med Adobe Campaign kan du hantera profiler under hela livscykeln: skapa, importera, målinrikta, åtgärdsspårning, uppdateringar osv.
 
 Varje profil matchar en databaspost. De innehåller all information som krävs för att målinrikta, kvalificera och spåra individer.
 
@@ -79,11 +85,11 @@ Om du vill komma åt avancerade funktioner och konfigurationer måste du klicka 
 
 ![](assets/d_ncs_user_interface01.png)
 
-Utforskaren i Adobe Campaign presenteras i [Använda Adobe Campaign Utforskaren](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+Den allmänna layouten för Adobe Campaign Explorer visas i [Använda Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 
 >[!NOTE]
 >
->Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på **[!UICONTROL Profiles and targets > Recipients]** länken. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [Använda Utforskaren](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)i Adobe Campaign.
+>Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på **[!UICONTROL Profiles and targets > Recipients]** länken. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [Använda Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
 >Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [Mappar och vyer](../../platform/using/access-management.md#folders-and-views).
 
@@ -91,7 +97,7 @@ Utforskaren i Adobe Campaign presenteras i [Använda Adobe Campaign Utforskaren]
 
 Aktiva profiler är de profiler som räknas i faktureringssyfte.
 
-&quot;**profil**&quot; innebär ett register över information (t.ex.: en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead.
+“**Profile**” means a record of information (e.g.: a record in the nmsRecipient table or an external table containing a cookie ID, Customer ID, mobile identifier or other information relevant to a particular channel) representing an end-customer, prospect, or lead.
 
 Fakturering gäller endast profiler som är **aktiva**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
 
@@ -103,4 +109,24 @@ De profiler som uteslöts under färdigställandet (typologiregler, karantänreg
 
 Du kan visa en översikt över **[!UICONTROL Number of active profiles]** Campaign Standarden **[!UICONTROL Administration > Campaign Management > Customer metrics]** på menyn. Det faktiska antalet utförs av det **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [tekniska arbetsflödet](../../workflow/using/deliveries.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]** menyn. Varje period varar i 12 månader.
 
-Om du är värd på AWS och använder Campaign Classic från build 8931 kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. Mer information finns i dokumentationen [för](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)Kontrollpanelen.
+Om du är värd på AWS och använder Campaign Classic från build 8931 kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+
+## Skapa och hantera profiler {#create-profiles-video}
+
+Lär dig hur du får åtkomst till profildata, sorterar och filtrerar profiler och skapar och hanterar profiler manuellt.
+
+I den här videon förklaras också Adobe Campaign Classic överensstämmelse med de allmänna dataskyddsreglerna.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+**Se även**
+
+* [Integritetsmappning i Campaign](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html)
+
+* [Definiera målpopulationen](../../delivery/using/define-the-right-audience.md)
+
+* [Skapa frågor och segmentdata i arbetsflöden](../../workflow/using/targeting-data.md)
+
+* [Välj målmappning](../../delivery/using/selecting-a-target-mapping.md)
+
+* [Definiera målgruppen - bästa praxis](../../delivery/using/define-the-right-audience.md)
