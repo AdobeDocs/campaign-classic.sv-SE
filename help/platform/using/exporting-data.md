@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ När du startar exportguiden måste du först välja en mall. Om du till exempel
    Den interna mallen är **[!UICONTROL New text export]**. Den här mallen får inte ändras, men du kan duplicera den för att konfigurera en ny mall. Som standard sparas exportmallar i **[!UICONTROL Resources > Templates > Job templates]** noden.
 
 1. Ange ett exportnamn i **[!UICONTROL Label]** fältet. Du kan lägga till en beskrivning.
-1. Välj exporttyp. Det finns två möjliga typer av export: om du bara vill exportera en fil och **[!UICONTROL Simple export]** **[!UICONTROL Multiple export]** exportera flera filer i en enda körning från en eller flera typer av källdokument.
+1. Välj exporttyp. Det finns två möjliga typer av export: **[!UICONTROL Simple export]** om du bara vill exportera en fil och **[!UICONTROL Multiple export]** exportera flera filer i en enda körning från en eller flera typer av källdokument.
 
 ### Steg 2 - Typ av fil som ska exporteras {#step-2---type-of-file-to-export}
 
@@ -50,7 +53,7 @@ Som standard hämtas data från mottagartabellen när exporten startas från **[
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* Som standard är **[!UICONTROL Download the file generated on the server after the export]** alternativet markerat. I **[!UICONTROL Local file]** fältet fyller du i namnet och sökvägen för filen som ska skapas eller bläddrar på den lokala hårddisken genom att klicka på mappen till höger om fältet. Du kan avmarkera det här alternativet om du vill ange åtkomstsökväg och namn för serverutdatafilen.
+* By default, the **[!UICONTROL Download the file generated on the server after the export]** option is selected. I **[!UICONTROL Local file]** fältet fyller du i namnet och sökvägen för filen som ska skapas eller bläddrar på den lokala hårddisken genom att klicka på mappen till höger om fältet. Du kan avmarkera det här alternativet om du vill ange åtkomstsökväg och namn för serverutdatafilen.
 
    >[!NOTE]
    >
@@ -73,7 +76,7 @@ Välj ett utdataformat för exportfilen. Följande format kan användas: text, t
 * För **[!UICONTROL Text]** format markerar du avgränsarna för att separera kolumnerna (tabbar, kommatecken, semikolon eller egna) och strängarna (enkla eller dubbla citattecken eller inga).
 * För **[!UICONTROL text]** och **[!UICONTROL CSV]** kan du välja alternativet **[!UICONTROL Use first lines as column titles]**.
 * Ange datumformat och talformat. Det gör du genom att klicka på **[!UICONTROL Edit]** knappen för fältet i fråga och använda redigeraren.
-* För fält som innehåller uppräknade värden kan du välja **[!UICONTROL Export labels instead of internal values of enumerations]**. Titeln kan till exempel sparas i formatet **1=Mr.**, **2=Fröken**,** 3=Mrs.**. Om det här alternativet väljs exporteras **Mr.**, **miss** och **Mrs.** .
+* För fält som innehåller uppräknade värden kan du välja **[!UICONTROL Export labels instead of internal values of enumerations]**. Titeln kan till exempel sparas i formatet **1=Mr.**, **2=Fröken**, **3=Mrs.**. Om det här alternativet väljs exporteras **Mr.**, **miss** och **Mrs.** .
 
 ### Steg 4 - Val av data {#step-4---data-selection}
 
@@ -109,9 +112,10 @@ Du kan ändra ordningen och etiketten på fälten för utdatafilen och använda 
    * Växla till gemener
    * Växla till versaler
    * Första bokstaven i versaler
+
    ![](assets/s_ncs_user_export_wizard06.png)
 
-* Klicka **[!UICONTROL Add a calculated field]** om du vill skapa ett nytt beräkningsfält (t.ex. en kolumn som innehåller efternamn + förnamn). Mer information finns i [Beräkningsfält](../../platform/using/importing-data.md#calculated-fields).
+* Klicka **[!UICONTROL Add a calculated field]** om du vill skapa ett nytt beräkningsfält (t.ex. en kolumn som innehåller efternamn + förnamn). For more on this, refer to [Calculated fields](../../platform/using/importing-data.md#calculated-fields).
 
 Om du exporterar en samling element (t.ex. mottagarnas prenumerationer, de listor som de hör till osv.) måste du ange antalet element i samlingen som du vill exportera.
 
