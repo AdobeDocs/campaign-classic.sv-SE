@@ -1,7 +1,7 @@
 ---
-title: Uppgraderar
-seo-title: Uppgraderar
-description: Uppgraderar
+title: Uppgradera
+seo-title: Uppgradera
+description: Uppgradera
 seo-description: null
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 5598682078a8fd3c8d9ecdca083f3a310c48f5f0
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1120'
+ht-degree: 1%
 
 ---
 
 
-# Uppgraderar{#upgrading}
+# Uppgradera{#upgrading}
 
 Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md) .
 
@@ -34,7 +34,7 @@ Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken
 
 >[!NOTE]
 >
->Se även [installationsguiden](../../installation/using/general-architecture.md) och hur du kommer igång med [uppgraderingen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) .
+>Se även [installationsguiden](../../installation/using/general-architecture.md) och hur du kommer igång med [uppgraderingen](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) .
 
 ## I Windows {#in-windows}
 
@@ -257,7 +257,7 @@ En Unicode-databas får till exempel inte bara tillåta lagring av LATIN1-data.
 
 Hämta och kopiera filen på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 in **[path of the application]**datakitnlengthsp
 
@@ -271,7 +271,7 @@ Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar anv
 
 Hämta följande paket på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad:
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 och kopiera den, spara som **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
