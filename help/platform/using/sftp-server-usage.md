@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '999'
 ht-degree: 12%
 
 ---
@@ -95,9 +95,9 @@ I avsnittet nedan visas den information som ska kontrolleras och skickas till su
 1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för Adobe Support-teamet för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
 
-## &quot;Det gick inte att lösa värdnamnet&quot;-fel, överföringsfel i cURL
+## Felet &quot;Det gick inte att matcha värdnamnet&quot;
 
-I det här avsnittet finns information om de kontroller och åtgärder som ska utföras vid hämtning av &quot;Det gick inte att matcha värdnamnet&quot;. fel efter anslutning till FTP-server från Campaign Classic.
+I det här avsnittet finns information om de kontroller och åtgärder som ska utföras vid hämtning av felet&quot;Det gick inte att lösa värdnamnet&quot; efter anslutning till FTP-servern från Campaign Classic.
 
 I arbetsflödesjournalen visas följande loggar:
 
