@@ -15,21 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '3903'
-ht-degree: 0%
+source-wordcount: '3927'
+ht-degree: 1%
 
 ---
 
 
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
 
-Med **[!UICONTROL Administration / Platform / Options]** noden kan du konfigurera alternativ för Adobe Campaign.
+Med **[!UICONTROL Administration / Platform / Options]** noden kan du konfigurera Adobe Campaign-alternativ.
 
 >[!NOTE]
 >
->Alternativ för att ändra eller uppdatera Adobe Campaign kan endast utföras av expertanvändare.
+>Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
 
 Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
@@ -64,7 +64,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign använder en global variabel av typen "Nms_DefaultRcpSchema" för att öppna en dialogruta med standardmottagardatabasen (nms:receive).<br /> Alternativvärdet måste motsvara namnet på schemat som matchar den externa mottagartabellen.<br /> </td> 
+   <td> Adobe Campaign använder den globala variabeln "Nms_DefaultRcpSchema" för att öppna en dialogruta med standardmottagardatabasen (nms:receive).<br /> Alternativvärdet måste motsvara namnet på schemat som matchar den externa mottagartabellen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -112,7 +112,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
-   <td> Gör att du kan ange en tidsgräns (i sekunder) för hur du får ett svar från servern när du hämtar en bild som har hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Om det här värdet överskrids kan meddelandet inte skickas. Standardvärdet är 60 sekunder.<br /> </td> 
+   <td> Gör att du kan ange en tidsgräns (i sekunder) för hur du får ett svar från servern när du hämtar en bild som har hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Om det här värdet överskrids kan meddelandet inte skickas. The default value is 60 seconds.<br /> </td> 
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
@@ -263,7 +263,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Aktivera/inaktivera stöd för specialtecken för Code128.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> <span class="uicontrol">XTKEmail_Characters</span> <br /> </td> 
    <td> Giltiga tecken för en e-postadress.<br /> </td> 
   </tr> 
   <tr> 
@@ -291,11 +291,11 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Plats för publiceringsresurser i klientkonsolen i Adobe Campaign. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
+   <td> Plats för publiceringsresurser i Adobe Campaign klientkonsol. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Plats för resurser för förhandsgranskning i klientkonsolen i Adobe Campaign. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
+   <td> Sökväg till resurser för förhandsgranskning i Adobe Campaign klientkonsol. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -633,21 +633,21 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
     <li><p>1 - pg_cancel_backend: stoppar arbetsflödesprocessen och avbryter frågan i databasen<p></li>
     <li><p>2 - pg_terminate_backend: stoppar arbetsflödesprocessen och avslutar frågan i databasen<p></li></ul></td> 
   </tr>  
-  <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign standardtabeller.<br /> </td> 
+    <tr> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
+   <td> Namnet på det tabellutrymme som ska innehålla data från Adobe Campaign standardtabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som är avsett att innehålla data från Adobe Campaign standardtabeller.<br /> </td> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign standardtabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som ska innehålla data från arbetsregistren i Adobe Campaign.<br /> </td> 
+   <td> Namnet på det tabellutrymme som ska innehålla data från Adobe Campaign arbetstabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som ska innehålla indexen för arbetsregistren i Adobe Campaign.<br /> </td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign arbetstabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -655,7 +655,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Adobe Campaign tidszon. Se <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Konfiguration</a>.<br /> </td> 
+   <td> Tidszon för Adobe Campaign-instansen. Se <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Konfiguration</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -688,7 +688,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
     <ul> 
      <li> <p> <span class="uicontrol">Datatyp:</span> Heltal</p> </li> 
      <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
-    </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
+    </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -717,7 +717,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typer av AEM-resurser som kan användas i Adobe Campaign. Värdena måste avgränsas med kommatecken.<br /> </td> 
+   <td> Typer av AEM resurser som kan användas i Adobe Campaign. Värdena måste avgränsas med kommatecken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
@@ -733,11 +733,11 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Adobe Target-server som används för integreringen. Det här alternativet är redan markerat som standard. Detta värde motsvarar domänservern i Adobe Target, följt av värdet /m2. Till exempel: tt.omtrdc.net/m2.<br /> Se <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">det här avsnittet</a>.<br /> </td> 
+   <td> Adobe Target-server som används för integreringen. Det här alternativet är redan markerat som standard. Detta värde motsvarar Adobe Target Domain Server, följt av värdet /m2. Till exempel: tt.omtrdc.net/m2.<br /> Se <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target organisationsnamn. Det här värdet motsvarar namnet på Adobe Target-klienten.<br /> Se <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">det här avsnittet</a>.<br /> </td> 
+   <td> Adobe Target organisationsnamn. Detta värde motsvarar namnet på Adobe Target-klienten.<br /> Se <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
