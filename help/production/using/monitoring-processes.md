@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Programservern och omdirigeringsservern (**spårning**) kan övervakas manuellt 
 
 ## Manuell övervakning {#manual-monitoring}
 
-Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Overview]** länken för att visa Adobe Campaign processövervakningssidan.
+Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Overview]** länken för att visa sidan för processövervakning i Adobe Campaign.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -66,7 +66,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    **[!UICONTROL Alert]** : den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
-   När indikatorerna **[!UICONTROL Warning]** och **[!UICONTROL Alert]** indikatorerna visas kan du lösa problemet genom att lägga till RAM-minne på datorn som Adobe Campaign-servern är installerad på. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
+   När indikatorerna **[!UICONTROL Warning]** och **[!UICONTROL Alert]** indikatorerna visas kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
 
 * **[!UICONTROL Swap Memory]** : information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
 
@@ -104,7 +104,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    **[!UICONTROL Alert]** : den här indikatorn visas om antalet processer är lika med 1.
 
-   När indikatorn visas kan det bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. **[!UICONTROL Alert]** Den **övervakningsprocess** som tillhandahålls av Adobe Campaign startar automatiskt om alla processer varje dag och gör att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
+   När indikatorn visas kan det bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. **[!UICONTROL Alert]** Den **övervakningsprocess** som Adobe Campaign erbjuder startar automatiskt om alla processer varje dag och gör att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
 
 #### I Linux {#in-linux}
 
@@ -133,7 +133,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    **[!UICONTROL Alert]** : den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
-   När indikatorerna **[!UICONTROL Warning]** och **[!UICONTROL Alert]** indikatorerna visas kan du lösa problemet genom att lägga till RAM-minne på datorn som Adobe Campaign-servern är installerad på. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
+   När indikatorerna **[!UICONTROL Warning]** och **[!UICONTROL Alert]** indikatorerna visas kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
 
 * **[!UICONTROL Swap Memory]** : information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
 
@@ -263,6 +263,7 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 >
 >* Information om SMTP-övervakning är bara tillgänglig om e-postkanalen har aktiverats.
 >* De **[!UICONTROL SMTP sending statistics]** visas bara om statistikservern har startats på instansen.
+
 >
 
 
@@ -282,6 +283,7 @@ Listan över indikatorer för den här rapporten visas under diagrammet.
    * Grön linje: meddelanden har skickats (sammanfaller med utgående data).
 
    * Röd linje: meddelanden som överges av Shaper, som returneras till **mta** (sammanfaller med data som underkänns vid denna återställning).
+
    Dessa värden uttrycks i antal meddelanden per timme.
 
 1. Representerar två köer i Shaper:
@@ -344,7 +346,7 @@ Klicka på en PublicId-identifierare för att visa mer information.
 
 ## Faktureringsrapport {#billing-report}
 
-Det **[!UICONTROL Billing]** tekniska arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den aktiveras som standard den 25:e varje månad.
+The **[!UICONTROL Billing]** technical workflow sends the system activity report to the &#39;billing&#39; operator by email. Den aktiveras som standard den 25:e varje månad.
 
 Det tekniska arbetsflödet finns i en undermapp till följande nod: **Administration** > **Produktion** > **Tekniska arbetsflöden**.
 
@@ -366,7 +368,7 @@ Följande mätvärden finns för att spåra dina leveranser:
 
 ## Automatisk övervakning {#automatic-monitoring}
 
-Adobe Campaign erbjuder flera automatiska övervakningsmetoder, som presenteras nedan.
+Adobe Campaign erbjuder flera automatiska övervakningsmetoder som visas nedan.
 
 ### Kommandorad {#command-line}
 
@@ -374,7 +376,7 @@ Kommando
 
 **nlserver monitor**
 
-Här kan du visa en uppsättning indikatorer för modulerna Adobe Campaign och systemet.
+Här kan du visa en lista med indikatorer för Adobe Campaign-modulerna och systemet.
 
 Det genererar utdata i ett enkelt bearbetat XML-format.
 
@@ -392,7 +394,7 @@ wfserver@prod
 
 #### /r/test {#r-test}
 
-Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan också användas för att testa en lastdispatcher.
+Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan även användas för att testa en lastdispatcher.
 
 Här visas en rad som den här i XML-format:
 
@@ -412,7 +414,7 @@ Exempel:
 
 ![](assets/ncs_monitoring_ping.png)
 
-Operatornamnet och inloggningen måste tidigare konfigureras med databasrättigheter i klientkonsolen i Adobe Campaign.
+Operatornamnet och inloggningen måste tidigare konfigureras i Adobe Campaign klientkonsol med databasbehörighet.
 
 ![](assets/ncs_operators_rights_01.png)
 
@@ -420,13 +422,13 @@ Operatornamnet och inloggningen måste tidigare konfigureras med databasrättigh
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Detta är ett test för att kontrollera att en operatör har tillgång till Adobe Campaign-servern via en webbsida. samma webbsida som den som öppnas via klientkonsolmenyerna. Du kan ringa upp den här sidan från dina övervakningsverktyg (Tivoli, Nagios, etc.).
+Detta är ett test för att kontrollera att en operatör har åtkomst till Adobe Campaign-servern via en webbsida. samma webbsida som den som öppnas via klientkonsolmenyerna. Du kan ringa upp den här sidan från dina övervakningsverktyg (Tivoli, Nagios, etc.).
 
 ![](assets/ncs_monitoring_web.png)
 
-**Användning**: en sessionstoken som är associerad med en användarinloggning som gör att du kan ansluta till instansen måste användas som ett argument (se tips i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Användning**: en sessionstoken som är associerad med en användarinloggning, som gör att du kan ansluta till instansen måste användas som ett argument (se tips i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
 
-Operatorn och deras inloggning måste konfigureras tidigare i klientkonsolen för Adobe Campaign med rätt databasbehörighet och databasbegränsningar.
+Operatorn och inloggningen måste konfigureras tidigare i Adobe Campaign klientkonsol med rätt databasbehörighet och databasbegränsningar.
 
 **Frekvens**: detta är ett fullständigt servertest och behöver inte köras ofta (det kan till exempel utföras en gång var tionde minut).
 
@@ -442,7 +444,7 @@ Adobe Campaign möjliggör olika distributionskonfigurationer (mer information f
  <thead> 
   <tr> 
    <th> Distributionstyp </th> 
-   <th> Övervakning </th> 
+   <th> Övervaka </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -493,10 +495,10 @@ Adobe Campaign kan tillhandahålla ett instansövervakningsverktyg (netreport) s
 
 Följande förinstallationsanvisningar krävs för automatisk övervakning:
 
-* Du måste ha **netreport.tgz **(Linux-installation) eller **netreport.zip** (Windows-installation),
+* Du måste ha filerna **netreport.tgz** (Linux-installation) eller **netreport.zip** (Windows-installation),
 * Vi rekommenderar att du inte installerar övervakning på den dator som ska övervakas,
 * Den måste vara installerad på en dator med JRE eller JDK.
-* i Linux måste den dator som ska övervakas ha paketet **bc** . For more on this, refer to [this section](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
+* i Linux måste den dator som ska övervakas ha paketet **bc** . Mer information om detta finns i [det här avsnittet](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
 
 ### Installationsprocedur {#installation-procedure}
 
@@ -506,7 +508,7 @@ Installationsproceduren är följande:
 1. Kör arkivextrahering.
 1. Läs filen **Viktigt** .
 1. Uppdatera konfigurationsfilen **netconf.xml** .
-1. Uppdatera filen **netreport.bat** (Windows) eller **netreport.sh **(Linux).
+1. Uppdatera filen **netreport.bat** (Windows) eller **netreport.sh** (Linux).
 
 ### Konfigurera filen netconf.xml {#configuring-the-netconf-xml-file}
 
@@ -599,7 +601,7 @@ Detta element konfigurerar övervakningen av en viss server på värden, dvs.
 * **alias** (valfritt): namnet på den övervakade datorn så som den kommer att visas i rapporten.
 * **sessionToken**: tillhandahåller inloggningsautentisering via en auktoriserad sessionstoken.
 
-   Om du vill konfigurera sessionstoken väljer du **övervakningsoperatorn** i konsolen Adobe Campaign. Ange IP-adresserna till de datorer som har behörighet att övervaka den här instansen på fliken **Åtkomstbehörighet** . Du kan sedan ansluta till övervakningssidan från dessa datorer med **övervaknings** -ID:t och utan att behöva ange ett lösenord.
+   Om du vill konfigurera sessionstoken väljer du **övervakningsoperatorn** i Adobe Campaign-konsolen. Ange IP-adresserna till de datorer som har behörighet att övervaka den här instansen på fliken **Åtkomstbehörighet** . Du kan sedan ansluta till övervakningssidan från dessa datorer med **övervaknings** -ID:t och utan att behöva ange ett lösenord.
 
    ![](assets/ncs_operators_rights_02.png)
 
