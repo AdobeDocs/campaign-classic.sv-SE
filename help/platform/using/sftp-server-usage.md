@@ -1,5 +1,5 @@
 ---
-title: Bästa praxis och felsökning för SFTP-servrar
+title: Använda en SFTP-server
 description: Läs mer om de effektivaste strategierna för SFTP-servrar och felsökning.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 12%
 
 ---
@@ -118,9 +118,9 @@ Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så 
    1. Kontrollera om servernamnet har lagts till i den lokala DNS-servern.
    1. Om ja, kör följande kommando på Adobe Campaign-servern för att hämta IP-adressen:
 
-   `nslookup <server domain name>`
+      `nslookup <server domain name>`
 
-   Detta bekräftar att FTP-servern fungerar och kan nås från Adobe Campaign programserver.
+      Detta bekräftar att FTP-servern fungerar och kan nås från Adobe Campaign programserver.
 
 1. Felsöka **sessionsloggar**:
 
@@ -128,11 +128,11 @@ Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så 
    1. Gå till **[!UICONTROL File Transfer]** fliken och klicka sedan på **[!UICONTROL Advanced Parameters]**.
    1. Markera alternativet **[!UICONTROL Display the session logs]**.
 
-   ![](assets/sftp-error-display-logs.png)
+      ![](assets/sftp-error-display-logs.png)
 
    1. Gå till arbetsflödet Granskning och kontrollera om loggarna visar felet &quot;Det gick inte att lösa värdnamnet&quot;.
 
-   Om SFTP-servern är värd för Adobe ska du kontrollera om IP har lagts till i tillåtelselista genom att kontakta Kundtjänst.
+1. Om SFTP-servern är värd för Adobe ska du kontrollera om IP har lagts till i tillåtelselista genom att kontakta Kundtjänst.
 
    Annars validera:
 
