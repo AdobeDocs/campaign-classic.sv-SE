@@ -1,7 +1,7 @@
 ---
-title: Publikationsmallar
-seo-title: Publikationsmallar
-description: Publikationsmallar
+title: Publiceringsmallar
+seo-title: Publiceringsmallar
+description: Publiceringsmallar
 seo-description: null
 page-status-flag: never-activated
 uuid: 1976f70c-b2d8-44ca-8fc3-6451fb67d18b
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
 
-# Publikationsmallar{#publication-templates}
+# Publiceringsmallar{#publication-templates}
 
 ## Om publiceringsmallar {#about-publication-templates}
 
@@ -40,7 +43,7 @@ Identifieringsnyckeln för en formatmall är en sträng som består av namnutrym
 >
 >I praktiken rekommenderar vi att du använder samma nyckel för schemat, formuläret och publiceringsmallen.
 
-## Skapa och konfigurera mallen {#creating-and-configuring-the-template}
+## Creating and configuring the template {#creating-and-configuring-the-template}
 
 Publikationsmallar lagras som standard i **[!UICONTROL Administration > Configuration > Publication templates]** noden. Om du vill skapa en ny mall klickar du på **[!UICONTROL New]** knappen ovanför listan med mallar.
 
@@ -52,7 +55,7 @@ Om du vill konfigurera publiceringsmallen fyller du i mallens namn (dvs. identif
 >
 >Etiketten visas när innehåll skapas baserat på den här publiceringsmallen.
 
-Med alternativet **Kontrollera status för att validera innehållsgenerering** kontrolleras statusen &quot;Validerad&quot; för innehållsinstanserna för att auktorisera filgenerering. Mer information finns i [Publication](#publication).
+Med alternativet **Kontrollera status för att validera innehållsgenerering** kontrolleras statusen &quot;Validerad&quot; för innehållsinstanserna för att auktorisera filgenerering. For more on this, refer to [Publication](#publication).
 
 En omformningsmall måste läggas till för varje utdatadokument. Du kan skapa så många omformningsmallar som behövs.
 
@@ -75,10 +78,10 @@ Publiceringen innebär att utdatadokumentet genereras i form av en fil, om den v
 Följande publiceringsalternativ är tillgängliga:
 
 * Teckenuppsättningen för kodning av utdatafil kan framtvingas via **[!UICONTROL Encoding]** fältet. Teckenuppsättningen Latin 1 (1252) används som standard.
-* Med det här **[!UICONTROL Multi-file generation]** alternativet aktiveras ett särskilt dokumentpubliceringsläge. Det här alternativet innebär att en partitioneringstagg fylls i i början av varje sida i utdatadokumentet. När du genererar innehållet skapas en fil för varje ifylld partitionstagg. Det här läget används för att generera miniwebbplatser från ett innehållsblock. Mer information finns i [Skapa](#multi-file-generation)flera filer.
+* Med det här **[!UICONTROL Multi-file generation]** alternativet aktiveras ett särskilt dokumentpubliceringsläge. Det här alternativet innebär att en partitioneringstagg fylls i i början av varje sida i utdatadokumentet. När du genererar innehållet skapas en fil för varje ifylld partitionstagg. Det här läget används för att generera miniwebbplatser från ett innehållsblock. for more on this, refer to [Multi-file generation](#multi-file-generation).
 * Fältet innehåller namnet på **[!UICONTROL Location]** utdatafilen. Namnet kan bestå av variabler för att generera ett automatiskt filnamn.
 
-   En variabel har följande format: **`$(<xpath>)`, där `<xpath>` är sökvägen till ett fält i publiceringsmallens dataschema.
+   En variabel har följande format: **`$(<xpath>)`**, där **`<xpath>`** är sökvägen till ett fält i publiceringsmallens dataschema.
 
    Namnet på en fil kan bestå av ett datumtypsfält. Om du vill formatera det här fältet korrekt använder du funktionen **$date-format** med sökvägen till fältet och utdataformatet som parametrar.
 
@@ -116,7 +119,7 @@ Partitionstaggen som ska integreras i formatmallen är följande:
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** där **`<name_of_file>`** är filnamnet på sidan som ska genereras.
 
-**Exempel:**Skapa flera filer med hjälp av&quot;cus:book&quot;-schemat.
+**Exempel:** Skapa flera filer med hjälp av&quot;cus:book&quot;-schemat.
 
 Principen är att skapa en huvudsida som listar kapitlen, med möjlighet att visa kapiteldetaljer på en extern sida.
 
