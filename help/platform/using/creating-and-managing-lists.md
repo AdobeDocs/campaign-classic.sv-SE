@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 5%
 
 ---
 
 
 # Skapa och hantera listor{#creating-and-managing-lists}
 
-## Om listor i Adobe Campaign {#about-lists-in-adobe-campaign}
+## Listor i Adobe Campaign {#about-lists-in-adobe-campaign}
 
-En lista är en statisk uppsättning profiler som kan användas för leveransåtgärder eller uppdateras under importåtgärder eller under arbetsflödeskörning. En population som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
+En lista är en statisk uppsättning profiler som kan användas för leveransåtgärder eller uppdateras under importåtgärder eller under arbetsflödeskörning. En grupp som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
 
-Leveranser (via e-post, SMS eller andra kanaler) som är avsedda för dessa listor kan sedan ställas in i enlighet med de professionella etiska reglerna för tillståndsmarknadsföring.
+
 
 Listor skapas och hanteras via **[!UICONTROL Lists]** länken på **[!UICONTROL Profiles and targets]** fliken.
 
@@ -36,7 +39,7 @@ Det finns två typer av listor i Adobe Campaign:
 
 * **[!UICONTROL Group]** typ: Typlistorna tillhör en **[!UICONTROL Group]** statisk **** lista med personer som har valts enligt specifika kriterier. Listan är som en ögonblicksbild av en uppsättning profiler. Observera att den inte uppdateras automatiskt om profiler läggs till i databasen.
 
-   Mer information om hur du skapar en **[!UICONTROL Group]** typlista finns på den här [sidan](#creating-a-profile-list-from-a-group).
+   For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
 
 * **[!UICONTROL List]** typ: Med **[!UICONTROL List]** typlistorna kan du använda arbetsflöden för att skapa och hantera listor. De här listorna är specifika från dataimport som kan uppdateras via den dedikerade **[!UICONTROL List update]** arbetsflödesaktiviteten.
 
@@ -44,15 +47,15 @@ Det finns två typer av listor i Adobe Campaign:
 
 ## Skapa en profillista från en grupp {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** typlistor som skapas via **[!UICONTROL Profiles and targets]** länken måste baseras på Adobe Campaign-standardprofiltabellen (nms:mottagare).
+**[!UICONTROL Group]** typlistor som skapas via **[!UICONTROL Profiles and targets]** länken måste baseras på Adobe Campaign standardprofiltabell (nms:mottagare).
 
 >[!NOTE]
 >
->Om du vill skapa listor som innehåller andra typer av data måste du köra ett arbetsflöde. Om du till exempel använder en fråga i besökstabellen och sedan uppdaterar listan, kan du skapa en besökslista. Mer information om arbetsflöden finns i [det här avsnittet](../../workflow/using/about-workflows.md).
+>Om du vill skapa listor som innehåller andra typer av data måste du köra ett arbetsflöde. Om du till exempel använder en fråga i besökstabellen och sedan uppdaterar listan, kan du skapa en besökslista. For more information on workflows, refer to [this section](../../workflow/using/about-workflows.md).
 
 Så här skapar du en ny **[!UICONTROL Group]** typlista:
 
-1. Klicka på **[!UICONTROL Create]** knappen och välj **[!UICONTROL New list]**.
+1. Click the **[!UICONTROL Create]** button and select **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
@@ -68,7 +71,7 @@ Så här skapar du en ny **[!UICONTROL Group]** typlista:
 
    ![](assets/s_ncs_user_add_group.png)
 
-1. Klicka **[!UICONTROL Save]** för att spara listan. Sedan läggs den till i översikten över listor.
+1. Click **[!UICONTROL Save]** to save the list. Sedan läggs den till i översikten över listor.
 
 Du kan skapa nya profiler direkt från fönstret Lägg till profiler genom att klicka på **[!UICONTROL Create]**. Profilen läggs till i databasen.
 
@@ -93,7 +96,7 @@ Profilerna för en uppsättning profiler kan filtreras och länkas till en lista
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. Klicka på **[!UICONTROL Start]** knappen.
+1. Klicka på knappen **[!UICONTROL Start]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
@@ -107,7 +110,7 @@ Du kan övervaka processen via fliken **[!UICONTROL Lists]** för de profiler so
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-Du kan även redigera listan via hemsidan för Adobe Campaign: klicka på **[!UICONTROL Profiles and Targets > Lists]** menyn och välj den berörda listan. På fliken **[!UICONTROL Content]** visas de profiler som är länkade till den här listan.
+Du kan även redigera listan via Adobe Campaign hemsida: klicka på **[!UICONTROL Profiles and Targets > Lists]** menyn och välj den berörda listan. På fliken **[!UICONTROL Content]** visas de profiler som är länkade till den här listan.
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
@@ -125,7 +128,7 @@ Om du vill ta bort en profil från en lista kan du:
 
 ## Ta bort en lista med profiler {#deleting-a-list-of-profiles}
 
-Du kan ta bort en eller flera listor från grupplistan i Adobe Campaign-trädet. Om du vill göra det redigerar du trädet via **[!UICONTROL Advanced > Explorer]** länken på startsidan för Adobe Campaign. Markera gruppen/grupperna och högerklicka. Välj **[!UICONTROL Delete]**. Ett varningsmeddelande ber dig bekräfta borttagningen.
+Du kan ta bort en eller flera listor från grupplistan i Adobe Campaign-trädet. Om du vill göra det redigerar du trädet via **[!UICONTROL Advanced > Explorer]** länken på Adobe Campaign hemsida. Markera gruppen/grupperna och högerklicka. Välj **[!UICONTROL Delete]**.  Ett varningsmeddelande ber dig bekräfta borttagningen.
 
 >[!NOTE]
 >
