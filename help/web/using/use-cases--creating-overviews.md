@@ -1,7 +1,7 @@
 ---
-title: '"Användningsexempel: skapa översikter"'
-seo-title: '"Användningsexempel: skapa översikter"'
-description: '"Användningsexempel: skapa översikter"'
+title: '"Användningsfall: skapa översikter"'
+seo-title: '"Användningsfall: skapa översikter"'
+description: '"Användningsfall: skapa översikter"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 404ae82b-2766-4802-8673-aaaa26868f46
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: b01252d57ec4ca5c5c87e69566079c48d7363e38
+workflow-type: tm+mt
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
 
-# Användningsexempel: skapa översikter{#use-cases-creating-overviews}
+# Användningsfall: skapa översikter{#use-cases-creating-overviews}
 
 I följande exempel skapar vi webbprogram av översiktstyp som visar alla webbprogram i din databas. Konfigurera följande element:
 
@@ -32,7 +35,7 @@ I följande exempel skapar vi webbprogram av översiktstyp som visar alla webbpr
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## Skapa ett webbprogram med en sida {#creating-a-single-page-web-application}
+## Creating a single-page Web application {#creating-a-single-page-web-application}
 
 1. Skapa ett enda **[!UICONTROL Page]** webbprogram och inaktivera utgående övergångar och övergångar till nästa sida.
 
@@ -60,7 +63,7 @@ I följande exempel skapar vi webbprogram av översiktstyp som visar alla webbpr
 
 ## Lägga till ett filter i en mapp {#adding-a-filter-on-a-folder}
 
-I en översikt kan du välja att få åtkomst till data beroende på var de finns i Adobe Campaign-trädet. Det här är ett filter på en mapp. Använd följande process för att lägga till den i översikten.
+I en översikt kan du välja att få åtkomst till data beroende på var de finns i Adobe Campaign-trädet. Detta är ett filter på en mapp. Använd följande process för att lägga till den i översikten.
 
 1. Placera markören på **[!UICONTROL Page]** noden i webbprogrammet och lägg till ett **[!UICONTROL Select folder]** element (**[!UICONTROL Advanced controls > Select folder]**).
 1. Klicka på **[!UICONTROL Storage]** **[!UICONTROL Edit variables]** länken i det fönster som visas.
@@ -201,10 +204,11 @@ Dessa två element grupperas i samma behållare för att grafiskt grupperas i ö
 
 1. Placera markören på listelementet och skapa ett filter via **[!UICONTROL Data > Filter]** fliken:
 
-   * **** Uttryck: Sekundärnyckel för länken&quot;Skapad av&quot;
-   * **** Operatör: är lika med
-   * **** Värde: Variabler (variabler)
-   * **** Ta hänsyn till om &#39;$(var2/@id)&#39;!=&#39;&#39;
+   * **Uttryck:** Sekundärnyckel för länken&quot;Skapad av&quot;
+   * **Operatör:** är lika med
+   * **Värde:** Variabler (variabler)
+   * **Ta hänsyn till om** &#39;$(var2/@id)&#39;!=&#39;&#39;
+
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
@@ -220,7 +224,7 @@ Dessa två element grupperas i samma behållare för att grafiskt grupperas i ö
 
    ![](assets/s_ncs_configuration_webapp_refreshlink.png)
 
-1. Lägg till uppdateringsikonen i **[!UICONTROL Image]** fältet: **/xtk/img/refresh.png **.
+1. Lägg till uppdateringsikonen i **[!UICONTROL Image]** fältet: **/xtk/img/refresh.png**.
 1. Med hjälp av sorteringspilarna kan du ordna om de olika elementen i webbprogrammet enligt nedan.
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
