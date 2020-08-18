@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Konfigurationsstegen beskrivs nedan.
 >
 >Namn på databaser, användare och scheman får inte börja med en siffra eller innehålla specialtecken.
 >
->Det är bara den **interna** identifieraren som kan utföra dessa åtgärder. Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Det är bara den **interna** identifieraren som kan utföra dessa åtgärder. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 ## Fall 1: Skapa/återvinna en databas {#case-1--creating-recycling-a-database}
 
@@ -57,7 +57,7 @@ Välj databasmotorn bland dem i listrutan.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Databaser som stöds visas i [avsnittets kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Databaser som stöds visas i [avsnittets kompatibilitetsmatris](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
 Identifiera servern och välj vilken typ av åtgärd som ska utföras. In this case, **[!UICONTROL Create or recycle a database]**.
 
@@ -69,7 +69,7 @@ Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server** -motor måste du definiera:
 
-   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\ `<instance>`**(instansläge),
+   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\`<instance>`** (instansläge),
    1. den autentiseringsmetod som används för att komma åt Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** eller **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,7 +132,7 @@ I **[!UICONTROL Creation steps]** fönstret kan du visa och redigera det SQL-skr
 
 * För en Oracle-, Microsoft SQL Server- eller PostgreSQL-databas kan administratören också definiera de **lagringsparametrar** som ska användas när databasobjekt skapas.
 
-   De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i noden **[!UICONTROL Administration > Platform > Options]** i följande alternativ:
+   De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i noden **[!UICONTROL Administration > Platform > Options]** i följande alternativ (se [](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: användartabeller baserade på ett schema
    * **WdbcOptions_TableSpaceIndex**: index för användartabeller baserat på ett schema
@@ -140,9 +140,9 @@ I **[!UICONTROL Creation steps]** fönstret kan du visa och redigera det SQL-skr
    * **WdbcOptions_TableSpaceWorkIndex**: index för arbetstabeller utan schema
 
 * För en Oracle-databas måste Adobe Campaign-användaren ha tillgång till Oracle-biblioteken, vanligtvis som medlem i **avinstallationsgruppen** .
-* Med **[!UICONTROL Set or change the administrator password]** alternativet kan du ange lösenordet som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
+* Med det här **[!UICONTROL Set or change the administrator password]** alternativet kan du ange lösenordet som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
 
-   Vi rekommenderar att du definierar ett Adobe Campaign-kontoadministratörslösenord av säkerhetsskäl.
+   Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
 
 ### Steg 6 - Skapa databasen {#step-6---creating-the-database}
 
@@ -154,7 +154,7 @@ När databasen har skapats kan du ansluta igen för att slutföra instanskonfigu
 
 Du måste nu starta distributionsguiden för att slutföra konfigurationen av instansen. Se [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Anslutningsinställningarna för databasen som är länkad till instansen lagras i filen som **`/conf/config-<instance>.xml`** finns i installationskatalogen för Adobe Campaign.
+Anslutningsinställningarna för den databas som är länkad till instansen lagras i filen som **`/conf/config-<instance>.xml`** finns i Adobe Campaign installationskatalog.
 
 Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är länkad till kampanjkontot med dess krypterade lösenord:
 
@@ -166,7 +166,7 @@ Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är l
 
 Databasen, liksom användaren, måste ha skapats av databasadministratören och behörigheterna måste vara korrekt konfigurerade.
 
-För en Oracle-databas är till exempel lägsta nödvändiga behörighet: BEVILJA CONNECT, RESOURCE och UNLIMITED TABLESPACE.
+För en Oracle-databas är till exempel lägsta nödvändiga behörighet: GE CONNECT, RESURS OCH OBEGRÄNSAT TABLESPACE.
 
 Så här använder du en befintlig databas:
 
@@ -231,9 +231,9 @@ I **[!UICONTROL Creation steps]** fönstret kan du visa och redigera det SQL-skr
 
 * För Oracle-, Microsoft SQL Server- eller PostgreSQL-databaser kan administratören definiera de **lagringsparametrar** som ska användas när databasobjekt skapas.
 * För en Oracle-databas måste Adobe Campaign-användaren ha tillgång till Oracle-biblioteken, vanligtvis som medlem i **avinstallationsgruppen** .
-* Med **[!UICONTROL Set or change the administrator password]** alternativet kan du ange lösenordet som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
+* Med det här **[!UICONTROL Set or change the administrator password]** alternativet kan du ange lösenordet som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
 
-   Vi rekommenderar att du definierar ett Adobe Campaign-kontoadministratörslösenord av säkerhetsskäl.
+   Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
 
 ### Steg 5 - Skapa databasen {#step-5---creating-the-database}
 
@@ -245,7 +245,7 @@ När databasen har skapats kan du ansluta igen för att slutföra instanskonfigu
 
 Du måste nu starta distributionsguiden för att slutföra konfigurationen av instansen. Se [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Anslutningsinställningarna för databasen som är länkad till instansen lagras i filen som **`/conf/config-<instance>.xml`** finns i installationskatalogen för Adobe Campaign.
+Anslutningsinställningarna för den databas som är länkad till instansen lagras i filen som **`/conf/config-<instance>.xml`** finns i Adobe Campaign installationskatalog.
 
 Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är länkad till kampanjkontot med dess krypterade lösenord:
 
