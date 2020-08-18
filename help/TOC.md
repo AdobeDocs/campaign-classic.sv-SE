@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2110'
 ht-degree: 95%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 95%
       + [Allmän import och export](platform/using/generic-imports-and-exports.md)
       + [Exportera data](platform/using/exporting-data.md)
       + [Importera data](platform/using/importing-data.md)
-      + [Bästa praxis och felsökning för SFTP-servrar](platform/using/sftp-server-usage.md)
+      + [Använda en SFTP-server](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
       + [Filtreringsalternativ](platform/using/filtering-options.md)
       + [Skapa filter](platform/using/creating-filters.md)
