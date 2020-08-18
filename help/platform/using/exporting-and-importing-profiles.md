@@ -15,20 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 11%
 
 ---
 
 
-# Exportera och importera profiler{#exporting-and-importing-profiles}
+# Importing and exporting profiles{#exporting-and-importing-profiles}
 
-Mottagarprofiler kan importeras till Adobe Campaign-databasen eller exporteras och lagras i en fil som ligger utanför databasen.
+Du kan [använda arbetsflöden](#use-workflows) för att importera eller exportera mottagarprofiler till Adobe Campaign-databaser eller konfigurera [generiska import- eller exportjobb](#create-jobs).
 
-Om du vill konfigurera och köra import och export av data går du till **[!UICONTROL Profiles and targets]** universum och klickar på **[!UICONTROL Jobs]** länken.
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#import-profiles-video)
+
+## Använda arbetsflöden{#use-workflows}
+
+Export och import konfigureras i dedikerade mallar som körs via arbetsflöden via **[!UICONTROL Import]** och **[!UICONTROL Export]** aktiviteter. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. [Läs mer](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+
+Om det behövs kan du skapa ett enstaka import- eller exportjobb med hjälp av **[!UICONTROL Generic imports and exports]** funktionen som beskrivs nedan.
+
+## Skapa jobb{#create-jobs}
+
+Om du vill konfigurera och köra import- och exportjobb för data går du till **[!UICONTROL Profiles and targets]** fliken och klickar på **[!UICONTROL Jobs]** länken. [Läs mer](../../platform/using/generic-imports-and-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
->[!NOTE]
->
->Dataimport och -export visas i [Allmän import och export](../../platform/using/generic-imports-and-exports.md) och i [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
 
+## How to import profiles{#import-profiles-video}
+
+I den här videon förklaras hur du importerar profiler i Adobe Campaign, vid en enstaka import.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
