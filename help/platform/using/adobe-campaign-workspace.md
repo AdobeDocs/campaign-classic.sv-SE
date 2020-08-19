@@ -1,7 +1,7 @@
 ---
-title: Arbetsytan i Adobe Campaign
-seo-title: Arbetsytan i Adobe Campaign
-description: Arbetsytan i Adobe Campaign
+title: Arbetsyta i Adobe Campaign
+seo-title: Arbetsyta i Adobe Campaign
+description: Arbetsyta i Adobe Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: ed954f73-6456-4fa3-b284-9b2d865c2afb
@@ -15,22 +15,25 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2165'
+ht-degree: 2%
 
 ---
 
 
-# Arbetsytan i Adobe Campaign{#adobe-campaign-workspace}
+# Arbetsyta i Adobe Campaign{#adobe-campaign-workspace}
 
-## Om Adobe Campaign-gränssnittet {#about-adobe-campaign-interface}
+## About Adobe Campaign interface {#about-adobe-campaign-interface}
 
-När du är ansluten till databasen kommer du åt Adobe Campaigns hemsida, som är en kontrollpanel: den består av länkar och genvägar som gör att du kan komma åt funktioner, beroende på installation och allmänna plattformskonfigurationer.
+När du är ansluten till databasen kommer du till Adobe Campaign hemsida, som är en kontrollpanel: den består av länkar och genvägar som gör att du kan komma åt funktioner, beroende på installation och allmänna plattformskonfigurationer.
 
 Från den centrala delen av startsidan kan du använda länkar för att få åtkomst till webbdokumentationsportalen för Campaign, forumet och supportwebbplatsen.
 
 ![](assets/d_ncs_user_interface_home.png)
 
-Skärmbilden ovan är ett exempel på hemsidan för en Adobe Campaign-användare. Mer information finns i [översiktsvideon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)om Adobe Campaign Interface.
+Skärmbilden ovan är ett exempel på hemsidan för en Adobe Campaign-användare. Mer information finns i översiktsvideon [om](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign-gränssnittet.
 
 >[!NOTE]
 >
@@ -54,7 +57,7 @@ Med tillgång till webben kommer man främst att kunna se
 
 ### Språk {#languages}
 
-Språket väljs när du installerar Adobe Campaign Classic-instansen och kan inte ändras efteråt. Mer information om hur du skapar en instans finns på den här [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
+Språket väljs när du installerar din Adobe Campaign Classic-instans och kan inte ändras efteråt. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 ![](assets/language.png)
 
@@ -66,7 +69,7 @@ Du kan välja mellan fem olika språk:
 * Tyska
 * Japanska
 
-Det språk du väljer för Adobe Campaign Classic-instansen kan påverka datum- och tidsformat. For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information om detta hittar du i det här [avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Navigeringsgrunder {#navigation-basics}
 
@@ -106,9 +109,9 @@ Använd till exempel knappen för att skapa en ny leverans på leveranssidan **[
 
 ## Använda Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-### Om Adobe Campaign Explorer {#about-adobe-campaign-explorer}
+### About Adobe Campaign explorer {#about-adobe-campaign-explorer}
 
-Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Med den får ni tillgång till Adobe Campaign alla funktioner i Adobe Campaign, konfigurationsskärmar och en mer detaljerad bild av några plattformselement.
+Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 
 Arbetsytan **[!UICONTROL Explorer]** är uppdelad i tre zoner:
 
@@ -126,7 +129,7 @@ För optimal navigering och användbarhet rekommenderar Adobe att du använder e
 
 >[!CAUTION]
 >
->Upplösningar på under 1 600 x 900 pixlar kanske inte stöds av Adobe Campaign.
+>Upplösningar under 1 600 × 900 pixlar kanske inte stöds av Adobe Campaign.
 
 Om vissa delar av **[!UICONTROL Explorer]** zonen verkar vara trunkerade på arbetsytan expanderar du den med pilen över zonen eller klickar på **[!UICONTROL Details]** **[!UICONTROL Enlarge]** knappen.
 
@@ -207,8 +210,7 @@ Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som 
    >
    >Använd fältet **Sök** för att köra en sökning i de tillgängliga fälten. Mer information finns i [Sortera en lista](#sorting-a-list).
    >
-   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräknade fält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält.
-   [Konfigurerar listor](#configuring-lists).
+   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräknade fält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält. [Konfigurerar listor](#configuring-lists).
    >
    >Du kan också sortera och filtrera data. Se [Filtreringsalternativ](../../platform/using/filtering-options.md).
 
@@ -303,7 +305,7 @@ Listor kan innehålla en stor mängd data. Du kan sortera dessa data eller anvä
 
 Klicka på kolumnrubriken om du vill använda en stigande eller fallande sortering eller om du vill avbryta sorteringen. Aktiv sorteringsstatus och sorteringsordning anges med en blå pil före kolumnetiketten. Ett rött streck före kolumnetiketten betyder att sorteringen tillämpas på data som indexeras från databasen. Den här sorteringsmetoden används för att optimera sorteringsjobb.
 
-Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så här:
+Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ stegen nedan för att göra detta:
 
 1. **[!UICONTROL Configure list]** nedan och till höger om listan.
 
@@ -334,7 +336,7 @@ Du kan göra en sökning av de tillgängliga fälten i en redigerare med hjälp 
 
 ### Datum och tid {#date-and-time}
 
-Språket i Adobe Campaign Classic-instansen påverkar datum- och tidsformat.
+Språket i din Adobe Campaign Classic-instans påverkar datum- och tidsformat.
 
 Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -377,7 +379,7 @@ Om du klickar **[!UICONTROL Yes]** på den här kommandoknappen visas det här v
 
 >[!NOTE]
 >
->Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]** avsnittet. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
+>Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]** avsnittet. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
 
 ### Standardenheter {#default-units}
 
