@@ -1,7 +1,7 @@
 ---
-title: Formatering
-seo-title: Formatering
-description: Formatering
+title: Formatera
+seo-title: Formatera
+description: Formatera
 seo-description: null
 page-status-flag: never-activated
 uuid: b6065289-c487-416b-8847-49aa0fb782bf
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
 
-# Formatering{#formatting}
+# Formatera{#formatting}
 
 ## JavaScript-mallar {#javascript-templates}
 
@@ -74,7 +77,7 @@ Innehållets attribut och element representeras som JavaScript-objekt och följe
 **Exempel**:
 
 * **innehåll.@name**: hämtar värdet för &quot;name&quot;-attributet för huvudelementet
-* **innehåll.@`['name']`**: identiskt med** innehållet.@name **syntax
+* **innehåll.@`['name']`**: identiskt med **innehållet.@name** syntax
 * **content.chapter.length**: returnerar antalet element i `<chapter` samlingselementet
 * **content.kapitel`[0]`.@name**: hämtar namnet på det första `<chapter>` elementet
 * **chapter.name()**: returnerar namnet på `<chapter>` elementet
@@ -84,7 +87,7 @@ Innehållets attribut och element representeras som JavaScript-objekt och följe
 >
 >Eftersom tecknet &#39;-&#39; är reserverat i JavaScript-språket måste alla attribut och element som innehåller det här tecknet återställas med `['<field>']` syntaxen.
 >
->Till exempel: `content.@['offer-id']`.
+>Exempel: `content.@['offer-id']`.
 
 Alla funktioner i ett programmeringsspråk (variabler, slingor, villkorstester, funktioner etc.). ) är tillgängligt för att skapa utdatadokumentet. SOAP API:er är tillgängliga för att berika utdatadokumentet.
 
@@ -477,7 +480,7 @@ Exempel:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* Lägga till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;) { %>**:
+* Lägger till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;)`{`%>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -524,7 +527,7 @@ Om du vill generera en förhandsgranskning av utdatadokumentet markerar du en in
 
 De bilder som anges i HTML-utdatadokumentet kan refereras med absoluta eller relativa referenser.
 
-Med Relativ referens kan du ange webbadressen till servern som innehåller bilderna i alternativen **NcmRessourcesDir** och **NcmRessourcesDirPreview** . Dessa alternativ innehåller platsen för bilder som ska publiceras och förhandsgranskas i Adobe Campaign-klientkonsolen.
+Med Relativ referens kan du ange webbadressen till servern som innehåller bilderna i alternativen **NcmRessourcesDir** och **NcmRessourcesDirPreview** . Dessa alternativ innehåller platsen för bilder som ska publiceras och förhandsgranskas i Adobe Campaign klientkonsol.
 
 De här två alternativen är tillgängliga via alternativhanteringsskärmen i **[!UICONTROL Administration > Platform > Options]** mappen.
 
@@ -573,7 +576,7 @@ I formuläret läggs fältet för att välja bilden till med följande syntax:
 
 I XML-indatadokumentet sparas datumen i ett internt XML-format: **YYYY/MM/DD HH:MM:SS** (exempel 2018/10/01 12:23:30).
 
-Adobe Campaign innehåller funktioner för datumformatering för JavaScript-mallar och XSL-formatmallar som beskrivs nedan.
+Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar som beskrivs nedan.
 
 ### JavaScript-datumformatering {#javascript-date-formatting}
 
@@ -608,7 +611,7 @@ Exempel:
 
 ### XSL-datumformatering {#xsl-date-formatting}
 
-Det finns ingen standardfunktion för datumhantering i XSLT-syntax. Adobe Campaign tillhandahåller det externa funktionens **datumformat** för att visa ett datum i det önskade formatet. Den här funktionen tar innehållet i datumet som indata och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
+Det finns ingen standardfunktion för datumhantering i XSLT-syntax. För att visa ett datum i det önskade formatet tillhandahåller Adobe Campaign den externa funktionen **date-format**. Den här funktionen tar innehållet i datumet som indata och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exempel:
 
