@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '1833'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ Så här skapar du ett externt [!DNL Azure Synapse] konto:
 
 ### Azure Synapse i CentOS {#azure-centos}
 
-**Förutsättningar:**
+**Förhandskrav:**
 
 * Du måste ha rotbehörighet för att installera en ODBC-drivrutin.
 * Red Hat Enterprise ODBC-drivrutiner från Microsoft kan också användas med CentOS för att ansluta till SQL Server.
@@ -149,7 +149,7 @@ Så här konfigurerar du Azure Synapse på CentOS:
 
 >[!NOTE]
 >
->Detta gäller endast version 13 av ODBC-drivrutinen, men Adobe Campaign Classic kan även använda SQL Server Native Client-drivrutinerna 11.0 och 10.0.
+>Detta gäller endast version 13 av ODBC-drivrutinen, men Adobe Campaign Classic kan även använda drivrutinerna 11.0 och 10.0 för SQL Server Native Client.
 
 Så här konfigurerar du Azure Synapse i Windows:
 
@@ -161,15 +161,15 @@ Så här konfigurerar du Azure Synapse i Windows:
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. När ODBC-drivrutinen har installerats kan du testa den om det behövs. Mer information finns på den här [sidan](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
+1. När ODBC-drivrutinen har installerats kan du testa den om det behövs. Se denna [sida](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) för mer information om detta.
 
 1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Azure Synapse] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Eftersom Azure Synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. Mer information finns i [Windows-dokumentationen](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Eftersom Azure Synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ### Azure Synapse på Debian {#azure-debian}
 
-**Förutsättningar:**
+**Förhandskrav:**
 
 * Du måste ha rotbehörighet för att installera en ODBC-drivrutin.
 * Rullning krävs för att installera paketet mSolbcsql. Om du inte har det installerat kör du följande kommando:
@@ -234,11 +234,11 @@ Så här konfigurerar du Azure Synapse på Debian:
 
 >[!NOTE]
 >
->[!DNL Snowflake] anslutning finns för värdbaserade och lokala distributioner. For more on this, refer to [this article](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>[!DNL Snowflake] anslutning finns för värdbaserade och lokala distributioner. For more on this, refer to [this article](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ![](assets/snowflake_3.png)
 
-### Snöflinga externt konto {#snowflake-external}
+### Snowflake external account {#snowflake-external}
 
 Med det [!DNL Snowflake] externa kontot kan du ansluta Campaign-instansen till din externa Snowflake-databas.
 
@@ -272,11 +272,11 @@ Kopplingen stöder följande alternativ:
 |---|---|
 | arbetsschema | Databasschema som ska användas för arbetsregister |
 | lagerställe | Namnet på standardlagerstället som ska användas. Det åsidosätter användarens standardvärde. |
-| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
-| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Mer information finns på [den här sidan](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
-| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade Snowflake-resultat. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>[Se denna sida](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone) för mer information om detta. |
+| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>[Se denna sida](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start) för mer information om detta. |
+| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>[Se denna sida](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html) för mer information om detta. |
 
-### Snöflinga i CentOS {#snowflake-centos}
+### Snowflake på CentOS {#snowflake-centos}
 
 1. Hämta ODBC-drivrutinerna för [!DNL Snowflake]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) för att påbörja nedladdningen.
 1. Du måste sedan installera ODBC-drivrutinerna på CentOS med följande kommando:
@@ -295,7 +295,7 @@ Kopplingen stöder följande alternativ:
 
 1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Snowflake] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#snowflake-external).
 
-### Snöflinga på Debian {#snowflake-debian}
+### Snowflake på Debian {#snowflake-debian}
 
 1. Hämta ODBC-drivrutinerna för [!DNL Snowflake]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) för att påbörja nedladdningen.
 
@@ -315,7 +315,7 @@ Kopplingen stöder följande alternativ:
 
 1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Snowflake] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#snowflake-external).
 
-### Snöflinga i Windows {#snowflake-windows}
+### Snowflake i Windows {#snowflake-windows}
 
 1. Hämta [ODBC-drivrutinen för Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). Observera att du behöver administratörsbehörighet för att installera drivrutinen. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
@@ -419,7 +419,7 @@ För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigur
 
    Skapa sedan en ny TNS_ADMIN-miljövariabel: exportera TNS_ADMIN=/etc/oracle och starta om datorn.
 
-1. Integrera Oracle med Adobe Campaign-servern (nlserver). Det gör du genom att kontrollera att filen **customer.sh** finns i mappen &quot;nl6&quot; i trädstrukturen för Adobe Campaign och att den innehåller länkar till Oracle-biblioteken.
+1. Integrera Oracle med din Adobe Campaign-server (nlserver). Det gör du genom att kontrollera att filen **customer.sh** finns i mappen &quot;nl6&quot; i trädstrukturen för Adobe Campaign och att den innehåller länkar till Oracle-biblioteken.
 
    Exempel: för en klient i 11.2:
 
