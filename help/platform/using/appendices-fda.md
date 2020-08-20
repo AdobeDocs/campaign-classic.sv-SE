@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 **Baserat på Latin1**
 
-Tidigare versioner än Adobe Campaign Classic 17.9 har endast stöd för Teradata Latin-1-databaser.
+Tidigare versioner än Adobe Campaign Classic 17.9 hade bara stöd för Teradata Latin-1-databas.
 
 Från och med Adobe Campaign Classic 17.9 har vi nu stöd för Teradata-databasen i Unicode som standard.
 
@@ -50,11 +50,11 @@ Kunder med en Latin-1 Teradata-databas som migrerar till en nyligen släppt Camp
 
 #### Användarkonfiguration {#user-configuration}
 
-Följande rättigheter krävs: skapa/släppa/köra anpassade procedurer, skapa/släppa/infoga/markera tabeller. Du kan också behöva skapa användarlägesfunktioner om du vill använda funktionen md5 och sha2 i Adobe Campaign-instansen.
+Följande rättigheter krävs: skapa/släppa/köra anpassade procedurer, skapa/släppa/infoga/markera tabeller. Du kan också behöva skapa användarlägesfunktioner om du vill använda funktionen md5 och sha2 i din Adobe Campaign-instans.
 
 Kontrollera att du har konfigurerat rätt tidszon. Den ska matcha vad som kommer att anges i det externa konto som skapas i Adobe Campaign-instansen.
 
-Adobe Campaign anger inte skyddsläge (reserv) för de objekt som skapas i databasen. Du kan behöva ange ett standardvärde för användaren som Adobe Campaign ska använda för att ansluta till Teradata-databasen med följande fråga:
+Adobe Campaign kommer inte att ange skyddsläge (reserv) för objekten som skapas i databasen. Du kan behöva ange ett standardvärde för den användare som Adobe Campaign ska använda för att ansluta till Teradata-databasen med följande fråga:
 
 | inaktivera standardåtergång |
 | :-: |
@@ -82,7 +82,7 @@ Så här installerar du md5:
 
 #### SHA2-installation {#sha2-installation}
 
-Om du vill använda sha2-funktioner i Adobe Campaign måste du installera funktionen för användarläge i Teradata-databasen från den här [sidan](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
+Om du vill använda sha2-funktioner i din Adobe Campaign-instans måste du installera funktionen för användarläge i Teradata-databasen från den här [sidan](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
 
 Sha1 för den hämtade filen är som följer e87438d37424836358bd3902cf1adeb629349780.
 
@@ -144,7 +144,7 @@ Filnamn och SHA1:
 
 * TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz b 29d0af5ffd8dcf68a9dbbaa6f8639387b19c563
 
-Om det inte finns något paket för din Linux-distribution kan du installera enligt anvisningarna på en CentOS 7 (t.ex. med docker) och sedan kopiera innehållet i /opt/teradata på Adobe Campaign-servern.
+Om det inte finns något paket för din Linux-distribution kan du installera enligt anvisningarna på en CentOS 7 (t.ex. med docker) och sedan kopiera innehållet i /opt/teradata på din Adobe Campaign-server.
 
 #### Installation av ODBC-drivrutin {#odbc-installation}
 
@@ -184,13 +184,13 @@ Så här installerar du verktyg:
 
 #### Drivrutinskonfiguration {#driver-configuration}
 
-Mer information om drivrutinskonfigurationen finns i det här [avsnittet](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
+To learn more on driver configuration, refer to this [section](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
 #### Miljövariabler {#environment-varaiables}
 
-Mer information om miljövariablerna på Adobe Campaign-servern finns i det här [avsnittet](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
+Mer information om miljövariablerna för Adobe Campaign-servern finns i det här [avsnittet](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
-### Kampanjserverkonfiguration för Windows #campaign-server-windows}
+### Kampanjserverkonfiguration för Windows {#campaign-server-windows}
 
 Du måste först ladda ned Teradata Tools och Utilities för Windows. Du kan hämta den från den här [sidan](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
 
@@ -210,7 +210,7 @@ Om basen är i latin1 måste du lägga till APICharSize=1 i alternativen.
 
 ### Tidszon {#timezone}
 
-Teradata använder ett tidszonsnamn som inte är standard. Du hittar listan på [Teradata-webbplatsen](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). Adobe Campaign kommer att försöka konvertera tidszonen som anges i den externa konfigurationen till något som Teradata förstår. Om ingen korrespondens hittas kommer tidszonen GMT+X (eller GMT-X) som stängs att hittas för sessionen, med en varning i loggen.
+Teradata använder ett tidszonsnamn som inte är standard. Du hittar listan på [Teradata-webbplatsen](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). Adobe Campaign försöker konvertera tidszonen som anges i den externa konfigurationen till något som Teradata förstår. Om ingen korrespondens hittas kommer tidszonen GMT+X (eller GMT-X) som stängs att hittas för sessionen, med en varning i loggen.
 
 Konverteringen är klar med läsningen av en fil med namnet teradata_timezone.txt som ska finnas i följande datakatalog: /usr/local/neolane/nl6/datakit under linux. Om du redigerar den här filen måste du kontakta Adobe Campaign-teamet för att ändra källkoden, annars skrivs den här filen över vid nästa Campaign-uppdatering.
 
@@ -232,7 +232,7 @@ MODIFY USER $login$ AS TIME ZONE = 'Europe Central';
 
 ### Serverkonfiguration {#server-configuration-mysql}
 
-Serverkonfigurationen kräver inga specifika installationssteg. Adobe Campaign bör arbeta med en latin1-databas, standard i MySQL eller en Unicode-databas.
+Serverkonfigurationen kräver inga specifika installationssteg. Adobe Campaign bör fungera med en latin1-databas, MySQL-standarddatabas eller en Unicode-databas.
 
 ### Drivrutinsinstallation {#driver-installation-mysql}
 
