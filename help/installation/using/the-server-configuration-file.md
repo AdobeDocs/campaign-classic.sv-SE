@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '7859'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Den övergripande konfigurationen för Adobe Campaign definieras i filen **serve
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan endast utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
 
 De första parametrarna finns i den **delade** noden. Dessa är relaterade till instansen. De kan användas av alla nlserver-kommandon (nlserver web, nlserver wfserver osv.). De andra avsnitten är relaterade till ett specifikt underkommando på servern.
 
@@ -344,7 +344,7 @@ Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase ASE, Sybase IQ)), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
+   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' DBC (Sybase ASE, Sybase IQ)), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -506,7 +506,7 @@ Här är standardkonfigurationen:
 
 Här är de olika parametrarna för noden **dnsConfig** (DNS-konfiguration).
 
-Mer information finns i det här [avsnittet](../../installation/using/configuring-campaign-server.md).
+For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md).
 
 <table> 
  <thead> 
@@ -576,7 +576,7 @@ Mer information finns i [Begränsa tillåtna externa kommandon](../../installati
  <tbody> 
   <tr> 
    <td> blocklistFile<br /> </td> 
-   <td> Sökväg till filen som innehåller de kommandon som ska läggas till i listan Tillåt. <br /> </td> 
+   <td> Sökväg till filen som innehåller de kommandon som ska läggas till i tillåtelselista. <br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
@@ -729,7 +729,7 @@ Här är de olika parametrarna för **modulnoden** . Det här är konfiguratione
  </tbody> 
 </table>
 
-## övervakning {#monitoring}
+## monitoring {#monitoring}
 
 Här är de olika parametrarna för **övervakningsnoden** . Detta är övervakningstjänstens konfiguration.
 
@@ -1544,8 +1544,8 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
-   <td> Adress till servern för leveransstatistik, angiven som &lt;dns eller ip&gt; [: 
-     &lt;port&gt; ]. Se <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
+   <td> Adress till servern för leveransstatistik, angiven som &lt;dns eller ip&gt; <code>[</code>: 
+     &lt;port&gt; <code>]</code>. Se <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
       <br /> 
      </td> 
    <td> Sträng<br /> </td> 
@@ -1565,7 +1565,7 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Om värdet är "true" använder din instans <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Om värdet är "true" använder din instans <a href="https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1656,11 +1656,11 @@ Mer information finns i [SMTP-relä](../../installation/using/configuring-campai
  </tbody> 
 </table>
 
-### master {#master}
+### överordnad {#master}
 
-Konfigurera följande parametrar i **mta > master** -noden. Detta är huvudserverns konfiguration.
+Konfigurera följande parametrar i noden **mta > överordnad** . Detta är huvudserverns konfiguration.
 
-Mer information finns i det här [avsnittet](../../installation/using/configuring-campaign-server.md#mta-child-processes).
+For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
 <table> 
  <thead> 
@@ -1875,7 +1875,7 @@ Mer information finns i [Lista över IP-adresser som ska användas](../../instal
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Associerat ID för offentlig adress. Används som nyckel för statistikservern. Måste vara numeriskt. Se det här <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">avsnittet</a>.<br /> </td> 
+   <td> Associerat ID för offentlig adress. Används som nyckel för statistikservern. Måste vara numeriskt. See this <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">section</a>.<br /> </td> 
    <td> Lång<br /> </td> 
   </tr> 
   <tr> 
@@ -2436,7 +2436,7 @@ Här är de olika parametrarna för **statsnoden** . Detta är konfigurationen f
   </tr> 
   <tr> 
    <td> port<br /> </td> 
-   <td> Serverlyssningsporten. Se det här <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">avsnittet</a>.<br /> </td> 
+   <td> Serverlyssningsporten. See this <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">section</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2526,7 +2526,7 @@ Här är de olika parametrarna för **syslogd** -noden. Detta är konfiguratione
  </tbody> 
 </table>
 
-## spårning {#tracking}
+## tracking {#tracking}
 
 Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsserverns konfiguration.
 
@@ -2750,7 +2750,7 @@ Här är de olika parametrarna för **spårningsloggnoden** . Detta är konfigur
 
 Här är de olika parametrarna för **webbnoden** . Detta är konfigurationen för webbmodulen.
 
-Mer information finns i det här [avsnittet](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2970,7 +2970,7 @@ Noden **web > jsp > classpath** innehåller en lista med alla klasssökvägar so
 
 Här är de olika parametrarna för noden **web > relay** . Detta är konfigurationen av reläet för HTTP-begäranden mellan två zoner.
 
-Mer information finns i det här [avsnittet](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+For additional information, refer to this [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3061,7 +3061,7 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
   </tr> 
   <tr> 
    <td> httpAllowed<br /> </td> 
-   <td> HTTP-åtkomst auktoriserad oavsett säkerhetszon (som webApps). <br /> </td> 
+   <td> HTTP-åtkomst tillåten oavsett säkerhetszon (som webApps). <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synkroniseringsstatus för en offentlig resurs (uppräkning). Möjliga värden är 'normal' (normal körning), 'blocklist' (url tillagd i blocklistan vid fel 404) och 'free' (filöverföring på reservserver om sådan finns).<br /> </td> 
+   <td> Synkroniseringsstatus för en offentlig resurs (uppräkning). Möjliga värden är 'normal' (normal körning), 'blockeringslista' (url som lagts till blockeringslista vid fel 404) och 'fri' (filöverföring på reservserver om sådan finns).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3205,7 +3205,7 @@ Här är standardkonfigurationen:
 
 Här är de olika parametrarna för noden **web > redirection** . Detta är konfigurationen för omdirigeringsmodulen.
 
-Mer information finns i det här [avsnittet](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+For additional information, refer to this [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3219,7 +3219,7 @@ Mer information finns i det här [avsnittet](../../installation/using/deploying-
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> IMS-organisationsidentifierare: Unik organisationsidentifierare i Adobe Marketing Cloud, som särskilt används för VisitorID-tjänsten och IMS SSO. <br /> </td> 
+   <td> IMS-organisationsidentifierare: Unik organisationsidentifierare inom Adobe Marketing Cloud, som särskilt används för VisitorID-tjänsten och IMS SSO. <br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3227,7 +3227,7 @@ Mer information finns i det här [avsnittet](../../installation/using/deploying-
    <td> P3PCompactPolicy<br /> </td> 
    <td> Värde som beskriver principen som används för permanenta cookies (kompatibelt med P3P-principformatet). <br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 'CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV'<br /> </td> 
+   <td> "CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
