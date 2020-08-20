@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Felsökning av pipeline {#pipeline-troubleshooting}
+# Felsöka pipelines {#pipeline-troubleshooting}
 
 **Pipelined misslyckas med felet&quot;Ingen aktivitet motsvarar masken pipelined@&quot;**
 
@@ -32,7 +32,7 @@ Din version av Adobe Campaign Classic stöder inte pipeline.
 1. Kontrollera om elementet [!DNL pipelined] finns i konfigurationsfilen. Annars betyder det att det inte stöds.
 1. Uppgradera till version 6.11 build 8705 eller senare.
 
-**Pipelined misslyckas med &#39;&#39; aurait d¢commencer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)&quot;**
+**Pipelined misslyckas med &#39;&#39; aurait d¢commencer par`[`ou`{`(iRc=16384)&quot;**
 
 Alternativet **NmsPipeline_Config** har inte angetts. Det är faktiskt ett JSON-tolkningsfel.
 Ställ in JSON-konfigurationen i alternativet **NmsPipeline_Config**. Se&quot;routningsalternativ&quot; på den här sidan.
@@ -52,7 +52,7 @@ Parametern @authPrivateKey i instanskonfigurationsfilen är felaktig.
 1. Kontrollera att authPrivateKey har angetts.
 1. Kontrollera att authPrivateKey: börjar med @, slutar med = och är ca 4 000 tecken långt.
 1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4096 bitar långt och börjar med —BEGIN RSA PRIVATE KEY—.
-   <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics. Se det här [avsnittet](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
+   <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
 1. Kontrollera att nyckeln har kodats i samma instans som [!DNL pipelined]. <br>Om det behövs kan du göra om kodningen med JavaScript eller arbetsflödet.
 
 **Överföringen misslyckades med &quot;det går inte att läsa token under autentiseringen&quot;**
@@ -72,7 +72,7 @@ När [!DNL pipelined] processen körs och inga utlösare hämtas:
 1. Sök efter fel i [!DNL pipelined] loggen.
 1. Sök efter fel på [!DNL pipelined] statussidan. utlösare-ignorerad, utlösare-fel ska vara noll.
 1. Kontrollera att utlösarnamnet är konfigurerat i **[!UICONTROL NmsPipeline_Config]** alternativet. Om du är osäker kan du använda alternativet jokertecken.
-1. Kontrollera att Analytics har en aktiv utlösare och genererar händelser. Det kan dröja några timmar innan konfigurationen är aktiv i Analytics.
+1. Kontrollera att Analytics har en aktiv utlösare och genererar händelser. Det kan dröja några timmar innan konfigurationen har gjorts i Analytics innan den är aktiv.
 
 **Händelser är inte länkade till en kund**
 
@@ -85,14 +85,14 @@ När vissa händelser inte är länkade till en kund:
 
 **Svarstid i händelsebearbetning**
 
-När Analytics tidsstämpel är mycket äldre än det datum då händelsen skapades i Campaign.
+När tidsstämpeln för Analytics är mycket äldre än datumet då händelsen skapades i Campaign.
 
-I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskampanj. Detta varierar beroende på implementeringen av datainsamlingen, inläsningen på pipeline, den anpassade konfigurationen av den definierade utlösaren och arbetsflödet i Adobe Campaign.
+I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskampanj. Detta varierar beroende på implementering av datainsamling, inläsning på pipeline, anpassad konfiguration av den definierade utlösaren och arbetsflödet i Adobe Campaign.
 
 1. Kontrollera om [!DNL pipelined] processen har körts.
 1. Leta efter fel i pipelined.log som kan orsaka nya försök. Åtgärda eventuella fel.
 1. Kontrollera köstorleken på statussidan [!DNL pipelined] . Om köstorleken är stor kan du förbättra JS-prestanda.
-1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna på Analytics med färre meddelanden.
+1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna i Analytics med färre meddelanden.
 Bilagor
 
 **Så här använder du JavaScript för nyckelkryptering**
