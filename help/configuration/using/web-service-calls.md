@@ -1,7 +1,7 @@
 ---
-title: Webbtjänstsamtal
-seo-title: Webbtjänstsamtal
-description: Webbtjänstsamtal
+title: Webbtjänstanrop
+seo-title: Webbtjänstanrop
+description: Webbtjänstanrop
 seo-description: null
 page-status-flag: never-activated
 uuid: 7defe0e4-bb4a-4f6a-b6e8-e2ffac73b4c1
@@ -15,19 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Webbtjänstsamtal{#web-service-calls}
+# Webbtjänstanrop{#web-service-calls}
 
 ## Allmän information {#general-information}
 
-Alla API-metoder presenteras i form av webbtjänster. På så sätt kan du hantera alla Adobe Campaign-funktioner via SOAP-anrop, som är startpunkten för programservern Adobe Campaign. Adobe Campaign-konsolen använder bara SOAP-anrop.
+Alla API-metoder presenteras i form av webbtjänster. På så sätt kan du hantera alla Adobe Campaign-funktioner via SOAP-anrop, som är startpunkten för Adobe Campaign programserver. Adobe Campaign-konsolen använder bara SOAP-anrop.
 
 Med webbtjänster kan du skapa många program från ett tredjepartssystem:
 
@@ -37,7 +37,7 @@ Med webbtjänster kan du skapa många program från ett tredjepartssystem:
 
 ## Definition av webbtjänster {#definition-of-web-services}
 
-Definitionen av de webbtjänster som implementeras på programservern i Adobe Campaign är tillgänglig från datamappningarna.
+Definitionen av de webbtjänster som implementeras på Adobe Campaign programserver finns i dataschemat.
 
 En webbtjänst beskrivs i datamappningens grammatik och är tillgänglig från **`<methods>`** elementet.
 
@@ -85,11 +85,11 @@ Det finns en WSDL-fil (Web Service Description Library) för varje tjänst. I de
 
 Om du vill generera en WSDL-fil måste du ange följande URL från en webbläsare:
 
-[https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
+https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 
 Med:
 
-* **`<server>`**: programservern Adobe Campaign (webbserver)
+* **`<server>`**: adobe campaign programserver (nlserver web)
 * **`<schema>`**: schema-ID-nyckel (namespace:schema_name)
 
 ### Exempel på metoden ExecuteQuery i schemat xtk:queryDef {#example-on-the--executequery--method-of-schema--xtk-querydef-}
@@ -184,7 +184,7 @@ Delen anger `<binding>` SOAP-kommunikationsprotokollet ( `<soap:binding>` ), dat
 
 #### Tjänst {#service}
 
-Delen beskriver `<service>` tjänsten XtkQueryDef med dess URI på URL:en för programservern i Adobe Campaign.
+I delen beskrivs `<service>` tjänsten XtkQueryDef med dess URI på URL:en för Adobe Campaign-programservern.
 
 ```
 <service name="XtkQueryDef">
@@ -204,7 +204,7 @@ Det finns två autentiseringslägen:
 
 eller
 
-* **via inloggning + lösenord** för Adobe Campaign som skapar en sessionstoken. Sessionstoken upphör automatiskt efter en angiven period. Det här läget rekommenderas inte och kräver att säkerhetsinställningarna för vissa zoninställningar reduceras (allowUserPassword=&quot;true&quot; och sessionTokenOnly=&quot;true&quot;).
+* **via Adobe Campaign inloggning + lösenord** som skapar en sessionstoken. Sessionstoken upphör automatiskt efter en angiven period. Det här läget rekommenderas inte och kräver att säkerhetsinställningarna för vissa zoninställningar reduceras (allowUserPassword=&quot;true&quot; och sessionTokenOnly=&quot;true&quot;).
 
 ### Sessionstokensegenskaper {#session-token-characteristics}
 
@@ -223,7 +223,7 @@ Säkerhetstoken har följande egenskaper:
 
 * den genereras från sessionstoken
 * har en 24-timmars livscykel (konfigurerbar i filen serverConf.xml, standardperioden är 24 timmar)
-* den lagras i Adobe Campaign-konsolen
+* lagras i Adobe Campaign Console
 * på webben:
 
    * det lagras i ett dokument.__securityToken, egenskap
@@ -237,7 +237,7 @@ När du använder konsolen är det:
 * skickas i inloggningssvaret (i HTTP-huvudet)
 * används i varje fråga (i HTTP-huvudet)
 
-Från en POST och GET HTTP:
+Från en POSTS- och GET-HTTP:
 
 * servern slutför länkarna med token
 * servern lägger till ett dolt fält i formulär
@@ -250,41 +250,42 @@ Från ett SOAP-anrop:
 
 * Använda **HttpSoapConnection/SoapService**:
 
-   ```
-     var cnx = new HttpSoapConnection("https://serverURL/nl/jsp/soaprouter.jsp");
-   var session = new SoapService(cnx, 'urn:xtk:session');
-   session.addMethod("Logon", "xtk:session#Logon",
-                       ["sessiontoken", "string", "Login", "string", "Password", "string", "Parameters", "NLElement"],
-                       ["sessionToken", "string", "sessionInfo", "NLElement", "securityToken", "string"]);
-   
-   var res = session.Logon("", "admin", "pwd", <param/>);
-   var sessionToken = res[0];
-   var securityToken = res[2];
-   
-   cnx.addTokens(sessionToken, securityToken);
-   var query = new SoapService(cnx, 'urn:xtk:queryDef');
-   query.addMethod("ExecuteQuery", "xtk:queryDef#ExecuteQuery",
-                       ["sessiontoken", "string", "entity", "NLElement"],
-                       ["res", "NLElement"]);
-   
-   var queryRes = query.ExecuteQuery("", <queryDef operation="select" schema="nms:recipient">
-             <select>
-               <node expr="@email"/>
-               <node expr="@lastName"/>
-               <node expr="@firstName"/>
-             </select>
-             <where>
-               <condition expr="@email = 'joe.doe@aol.com'"/>
-             </where>
-           </queryDef>);
-   logInfo(queryRes[0].toXMLString())
-   ```
+```
+  
+    var cnx = new HttpSoapConnection("https://serverURL/nl/jsp/soaprouter.jsp");
+  var session = new SoapService(cnx, 'urn:xtk:session');
+  session.addMethod("Logon", "xtk:session#Logon",
+                      ["sessiontoken", "string", "Login", "string", "Password", "string", "Parameters", "NLElement"],
+                      ["sessionToken", "string", "sessionInfo", "NLElement", "securityToken", "string"]);
+  
+  var res = session.Logon("", "admin", "pwd", <param/>);
+  var sessionToken = res[0];
+  var securityToken = res[2];
+  
+  cnx.addTokens(sessionToken, securityToken);
+  var query = new SoapService(cnx, 'urn:xtk:queryDef');
+  query.addMethod("ExecuteQuery", "xtk:queryDef#ExecuteQuery",
+                      ["sessiontoken", "string", "entity", "NLElement"],
+                      ["res", "NLElement"]);
+  
+  var queryRes = query.ExecuteQuery("", <queryDef operation="select" schema="nms:recipient">
+            <select>
+              <node expr="@email"/>
+              <node expr="@lastName"/>
+              <node expr="@firstName"/>
+            </select>
+            <where>
+              <condition expr="@email = 'joe.doe@aol.com'"/>
+            </where>
+          </queryDef>);
+  logInfo(queryRes[0].toXMLString())
+```
 
 * Använda **HttpServletRequest**:
 
 >[!NOTE]
 >
->De URL:er som används i följande **HttpServletRequest** -anrop måste finnas i listan över tillåtna i avsnittet url-behörigheter i **filen serverConf.xml** . Detta gäller även för serverns URL.
+>De URL:er som används i följande **HttpServletRequest** -anrop måste finnas på tillåtelselista i behörighetssektionen url i **filen serverConf.xml** . Detta gäller även för serverns URL.
 
 Inloggningskörning():
 
@@ -294,18 +295,18 @@ req.header["Content-Type"] = "text/xml; charset=utf-8";
 req.header["SOAPAction"] =   "xtk:session#Logon";
 req.method = "POST";
 req.body = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">' +
-  '<soapenv:Header/>' +
-  '<soapenv:Body>' +
-      '<urn:Logon>' +
-          '<urn:sessiontoken></urn:sessiontoken>' +
-          '<urn:strLogin>LOGIN_HERE</urn:strLogin>' +
-          '<urn:strPassword>PASSWORD_HERE</urn:strPassword>' +
-          '<urn:elemParameters></urn:elemParameters>' +
-      '</urn:Logon>' +
-  '</soapenv:Body>' +
+    '<soapenv:Header/>' +
+    '<soapenv:Body>' +
+        '<urn:Logon>' +
+            '<urn:sessiontoken></urn:sessiontoken>' +
+            '<urn:strLogin>LOGIN_HERE</urn:strLogin>' +
+            '<urn:strPassword>PASSWORD_HERE</urn:strPassword>' +
+            '<urn:elemParameters></urn:elemParameters>' +
+        '</urn:Logon>' +
+    '</soapenv:Body>' +
 '</soapenv:Envelope>';
 req.execute();
-         
+           
 var resp = req.response;
 var xmlRes = new XML(String(resp.body).replace("<?xml version='1.0'?>",""));
 var sessionToken = String(xmlRes..*::pstrSessionToken);;
@@ -321,14 +322,13 @@ req2.header["SOAPAction"] =   "xtk:queryDef#ExecuteQuery";req2.header["X-Securit
 req2.header["cookie"]           = "__sessiontoken="+sessionToken;
 req2.method = "POST";
 req2.body = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:queryDef">' +
-           '<soapenv:Header/><soapenv:Body><urn:ExecuteQuery><urn:sessiontoken/><urn:entity>' +
-              '<queryDef operation="select" schema="nms:recipient">' +
-                '<select><node expr="@email"/><node expr="@lastName"/><node expr="@firstName"/></select>' +
-                '<where><condition expr="@email = \'john.doe@aol.com\'"/></where>' +
-              '</queryDef>' +
-         '</urn:entity></urn:ExecuteQuery></soapenv:Body></soapenv:Envelope>';
+             '<soapenv:Header/><soapenv:Body><urn:ExecuteQuery><urn:sessiontoken/><urn:entity>' +
+                '<queryDef operation="select" schema="nms:recipient">' +
+                  '<select><node expr="@email"/><node expr="@lastName"/><node expr="@firstName"/></select>' +
+                  '<where><condition expr="@email = \'john.doe@aol.com\'"/></where>' +
+                '</queryDef>' +
+           '</urn:entity></urn:ExecuteQuery></soapenv:Body></soapenv:Envelope>';
 req2.execute();
 var resp2 = req2.response;
 logInfo(resp2.body)
 ```
-
