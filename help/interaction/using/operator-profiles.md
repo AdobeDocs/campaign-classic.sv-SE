@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '388'
+ht-degree: 5%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 2%
 
 Det finns två typer av operatorer som använder Interaction: erbjuder chefer och leveransansvariga. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
 
-* **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]** - eller **[!UICONTROL Offer Managers)** -operatorgruppen för att arbetsflödet ska kunna köras.
+* **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]** - eller **[!UICONTROL Offer managers]** operatorgruppen för att arbetsflödet ska kunna köras.
 * **[!UICONTROL Delivery manager]** : godkänner och använder erbjudanden
 
-Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Se [det här avsnittet](../../platform/using/access-management.md#creating-an-operator) för mer information om detta. Rättigheterna konfigureras när operatorn skapas.
+Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Mer information om detta finns i [det här avsnittet](../../platform/using/access-management.md#creating-an-operator). Rättigheterna konfigureras när operatorn skapas.
 
 ## Erbjudandehanterare {#offer-manager}
 
@@ -115,7 +115,7 @@ Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem at
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Typologiregler<br /> </td> 
+   <td> Regler för typologi<br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -175,7 +175,7 @@ Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem at
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Typologiregler<br /> </td> 
+   <td> Regler för typologi<br /> </td> 
    <td> </td> 
    <td> Läs<br /> </td> 
   </tr> 
