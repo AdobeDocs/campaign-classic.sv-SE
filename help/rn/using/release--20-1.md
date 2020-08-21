@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 1%
+source-wordcount: '1331'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 _6 maj 2020_
 
-* Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
+* Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 - build 9123{#release-20-1-2-build-9123}
 
@@ -39,18 +39,18 @@ _13 mars 2020_
 
 _17 februari 2020_
 
-**Nyheter?**
+**Nyheter**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Snöflake FDA Connector</strong><br /> </th> 
+   <th> <strong>Snowflake FDA Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake är ett helt hanterat molnbaserat data warehouse som kan skalas upp både på lagrings- och datornivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja kraften i Snowflake för att utföra Big Data-segmentering. Den här kopplingen är tillgänglig för alla kunder, inklusive Adobe som värd.</p>
-    <p>Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">självstudievideon</a>.</p>
+   <td> <p>Snowflake är ett helt hanterat moln data warehouse som bygger på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja Snowflake förmåga att utföra Big Data Segmentation. Den här kontakten är tillgänglig för alla kunder, inklusive via Adobe.</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -65,7 +65,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Hadoop FDA Connector har förbättrats med stöd för både Hadoop 3.0 och Cloudera.</p>
-    <p>Se den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">detaljerade dokumentationen</a> för mer information.</p>
+    <p>Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -103,7 +103,7 @@ _17 februari 2020_
 
 * I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar 20.1-paketet. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
 
-* De vanligaste anpassade tabellerna har flyttats från **xtkNewId** -sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* De vanligaste anpassade tabellerna har flyttats från **xtkNewId** -sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Förbättrade frågeprestanda som kan påverkas av onödiga databasanslutningar.
 
@@ -121,7 +121,7 @@ _17 februari 2020_
 
 * En timeout har lagts till i LINE-serverleten när en anslutning öppnas för att läsa in en rik bild. Om det tar för lång tid att läsa in bilden avbryts anslutningen för att undvika flaskhalsar.
 
-**Patchar**
+**Felkorrigeringar**
 
 * Ett krypteringsfel för kontonycklar har korrigerats när Hadoop-kopplingen användes.
 
@@ -131,7 +131,7 @@ _17 februari 2020_
 
 * Korrigerade ett kodningsproblem när frågor kördes via Netezza FDA-anslutningen. (NEO-19594)
 
-* Korrigerade ett problem som orsakade ett fel när metoden POST användes i händelseaktiviteten för **webbhämtningen** .
+* Ett problem som orsakade ett fel när metoden POST användes i händelseaktiviteten för **webbhämtningen** har åtgärdats.
 
 * Ett problem med generering av erbjudandeförslag har korrigerats. (NEO-18176)
 
@@ -175,7 +175,7 @@ _17 februari 2020_
 
 * Korrigerade ett problem som förhindrade överföring av data till offentliga resurser om överföringskatalogen var en delad fjärrplats. (NEO-19361)
 
-* Ett problem som orsakade att det tekniska arbetsflödet **Importera målgrupper från Adobe Experience Cloud** ständigt misslyckades har åtgärdats. (NEO-18463)
+* Korrigerade ett problem som fick **Importera målgrupper från Adobe Experience Cloud** tekniska arbetsflöde att hela tiden misslyckas. (NEO-18463)
 
 * Korrigerade ett problem som förhindrade att leveranser skickades när mallar som importerats från Experience Manager användes. (NEO-17540)
 
@@ -183,7 +183,7 @@ _17 februari 2020_
 
 * Ett problem som uppstod när en stor mängd data skulle tas bort, infogas eller uppdateras med aktiviteten **Uppdatera data** i ett arbetsflöde med ett FDA-schema som måldimension har åtgärdats. (NEO-13280)
 
-* Korrigerade ett problem som förhindrade att e-post skickades när if-satsen användes utanför `body` -taggen.
+* Korrigerade ett problem som förhindrade att e-post skickades när if-satsen användes utanför `body` -taggen. (NEO-18628)
 
 * Korrigerade ett fel som uppstod när spegelsidan skulle visas från leveransloggarna för ett skickat meddelande. (NEO-17976)
 
