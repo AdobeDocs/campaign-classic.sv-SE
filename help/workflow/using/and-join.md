@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 5%
 
 ---
 
@@ -24,6 +27,14 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 En join utlöser sin utgående övergång endast när alla inkommande övergångar är aktiverade, dvs. när alla tidigare aktiviteter är slutförda. På så sätt kan du se till att vissa aktiviteter har slutförts innan du fortsätter att köra arbetsflödet.
 
+Du kan till exempel använda en AND-join-aktivitet när du skapar innehåll och skickar automatisering för att se till att en leverans bara startas när målfrågor och innehållsuppdateringar är klara. Ett fall för dedikerad användning finns i [det här avsnittet](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+
+![](assets/and-join-usage.png)
+
 Den utgående skickade populationen av aktiviteten bestäms genom att en huvuduppsättning väljs bland de inkommande övergångarna i aktiviteten.
 
 Den utgående övergången kan bara innehålla en av de ingående övergångspopulationerna. Om aktiviteten inte är konfigurerad kommer den utgående övergången att slumpmässigt välja en av de inkommande populationerna.
+
+>[!CAUTION]
+>
+>När det gäller aktiviteter av typen **AND-join** sammanfogas händelsevariablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är fortfarande obestämt. Se [](../../workflow/using/javascript-scripts-and-templates.md#event-variables) för mer information om detta.
