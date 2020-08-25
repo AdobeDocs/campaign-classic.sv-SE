@@ -1,7 +1,7 @@
 ---
-title: Testa
-seo-title: Testa
-description: Testa
+title: Test
+seo-title: Test
+description: Test
 seo-description: null
 page-status-flag: never-activated
 uuid: 3522f4ac-3a72-4ff1-b3aa-1b4c283ef2bd
@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 6%
 
 ---
 
 
-# Testa{#test}
+# Test{#test}
 
-En aktivitet av typen **Test** aktiverar den första övergången som uppfyller villkoret som är kopplat till den. Om inget villkor är uppfyllt och om **[!UICONTROL Use the default fork]** alternativet är aktiverat aktiveras standardövergången.
+A **Test** type activity activates the first transition that satisfies the condition associated with it. If no condition is satisfied and if the **[!UICONTROL Use the default fork]** option is activated, the default transition will be activated.
 
 Ett villkor är ett JavaScript-uttryck som måste utvärderas till true eller false. Om du vill ange uttrycket klickar du på ikonen till höger om namnet på villkoret och väljer sedan **[!UICONTROL Edit...]**.
 
@@ -30,7 +33,7 @@ Ett villkor är ett JavaScript-uttryck som måste utvärderas till true eller fa
 
 Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via JavaScript i arbetsflödet finns i [JSAPI-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-Du kan också infoga variabler direkt från den här redigeraren.
+Du kan också infoga variabler direkt från den här redigeraren. Mer information om hur du arbetar med variabler finns i [det här avsnittet](../../workflow/using/javascript-scripts-and-templates.md#variables).
 
 Villkoren kan läggas till, tas bort eller ordnas i redigeringsfönstret för aktivitetsegenskapen, men kan också ändras från övergången.
 
