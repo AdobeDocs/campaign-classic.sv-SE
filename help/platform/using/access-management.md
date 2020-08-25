@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Det finns två typer av behörigheter som du kan ge en användare:
 
 >[!NOTE]
 >
->Innan du börjar definiera behörigheter rekommenderar Adobe att du läser checklistan för [säkerhetskonfiguration](https://helpx.adobe.com/campaign/kb/acc-security.html).
+>Innan du börjar definiera behörigheter rekommenderar Adobe att du läser checklistan för [säkerhetskonfiguration](https://helpx.adobe.com/se/campaign/kb/acc-security.html).
 
 ## Operatorer {#operators}
 
@@ -66,7 +66,7 @@ Mer information om Adobe Campaign- och LDAP-integrering finns på [den här sida
 >
 >Operatorer måste länkas till en säkerhetszon för att kunna logga in på en instans. Mer information om säkerhetszoner i Adobe Campaign finns på [den här sidan](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Användare kan även ansluta direkt till Adobe Campaign via sin Adobe ID. Mer information om detta hittar du på den här [sidan](../../integrations/using/about-adobe-id.md).
+Användare kan även ansluta direkt till Adobe Campaign via sin Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
 
 ### Skapa en operator {#creating-an-operator}
 
@@ -211,7 +211,7 @@ Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATI
 
 >[!NOTE]
 >
->Mer information om säkerhetsriktlinjer finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html)Adobe Campaign-säkerhetskonfiguration.
+>Mer information om säkerhetsriktlinjer finns i checklistan [för](https://helpx.adobe.com/se/campaign/kb/acc-security.html)Adobe Campaign-säkerhetskonfiguration.
 
 ## Operatörsgrupper {#operator-groups}
 
@@ -331,7 +331,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Rätt att skapa, redigera och spara en leverans. Användare med rätt **[!UICONTROL PREPARE DELIVERIES]** behörighet kan också starta leveransanalysprocessen.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. Mer information om detta hittar du på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. Se denna [sida](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html) för mer information om detta.
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Rätt att köra kommandon på olika programmeringsspråk.
 
@@ -357,7 +357,7 @@ Standardgrupper och namngivna rättigheter ger operatorer åtkomst till vissa ma
 
 Adobe Campaign åtkomsträttighetsmatris finns [här](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![image](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Hantering av mappåtkomst {#folder-access-management}
 
@@ -409,7 +409,7 @@ Om **[!UICONTROL Security]** alternativet är markerat på fliken **[!UICONTROL 
 
 ### Om mappar {#about-folders}
 
-Mappar är noder i Adobe Campaign-trädet. De här noderna skapas genom att högerklicka på trädet via **[!UICONTROL Add new folder]** menyn. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
+Mappar är noder i Adobe Campaign-trädet. De här noderna skapas genom att högerklicka på trädet via **[!UICONTROL Add new folder]** menyn. Som standard gör den första menyn att du kan lägga till mappen som motsvarar den aktuella kontexten.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
