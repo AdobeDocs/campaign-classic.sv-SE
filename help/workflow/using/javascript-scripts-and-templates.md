@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
+source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 2%
 
 ---
 
@@ -74,23 +77,29 @@ Variablerna är de kostnadsfria egenskaperna för objekten **[!UICONTROL instanc
 
 ### Förekomstvariabler {#instance-variables}
 
-Instansvariablerna (**[!UICONTROL instance.vars.xxx]**) är jämförbara med globala variabler.  De delas av alla aktiviteter.
+Instansvariablerna (**[!UICONTROL instance.vars.xxx]**) är jämförbara med globala variabler. De delas av alla aktiviteter.
 
 ### Uppgiftsvariabler {#task-variables}
 
-Aktivitetsvariablerna (**[!UICONTROL task.vars.xxx]**) är jämförbara med lokala variabler.  De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
+Aktivitetsvariablerna (**[!UICONTROL task.vars.xxx]**) är jämförbara med lokala variabler. De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
 
 ### Händelsevariabler {#event-variables}
 
 Händelsevariablerna (**[!UICONTROL vars.xxx]**) möjliggör datautbyte mellan de grundläggande uppgifterna i en arbetsflödesprocess. Dessa variabler skickas av aktiviteten som aktiverade den pågående uppgiften. Det går att ändra dem och definiera nya. De överförs sedan till följande aktiviteter.
 
-När det gäller aktiviteter av typen **AND-join** sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är fortfarande obestämt.
+>[!CAUTION]
+>
+>När det gäller aktiviteter av typen [AND-join](../../workflow/using/and-join.md) sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är fortfarande obestämt.
 
-Dessa är de vanligaste variablerna och bör användas i stället för förekomstvariabler.
+Händelsen är de vanligaste variablerna och bör användas i stället för förekomstvariabler.
 
 Vissa händelsevariabler ändras eller läses av de olika aktiviteterna. Dessa är alla strängtypsvariabler. En export ställer till exempel in variabeln med det fullständiga namnet på den fil som just har exporterats. **[!UICONTROL vars.filename]** Alla dessa lästa eller ändrade variabler beskrivs i [Om-aktiviteter](../../workflow/using/about-activities.md)i avsnitten **Indataparametrar** och **Utdataparametrar** för aktiviteterna.
 
-### Exempel {#example}
+### Användningsfall {#example}
+
+>[!NOTE]
+>
+>Det finns fler användningsexempel för arbetsflöden i [det här avsnittet](../../workflow/using/about-workflow-use-cases.md).
 
 **Exempel 1**
 
@@ -100,7 +109,7 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
 
 1. Lägg till och konfigurera en JavaScript-kodsaktivitet för att definiera en instansvariabel.
 
-   Till exempel: `instance.vars.segmentpercent = 10;`
+   Exempel: `instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
@@ -162,7 +171,7 @@ När du har angett en instansvariabel i en aktivitet kan du återanvända den i 
 
 Om du vill anropa en variabel **instance.vars.xxx = &quot;yyy&quot;** i ett filter anger du **$(instance/vars/xxx)**.
 
-Till exempel:
+Exempel:
 
 1. Skapa en förekomstvariabel som definierar ett leveransens interna namn via **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
