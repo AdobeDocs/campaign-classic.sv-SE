@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
 workflow-type: tm+mt
-source-wordcount: '7096'
-ht-degree: 95%
+source-wordcount: '7164'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
 * [Så här aktiverar och använder du AMP för e-post](../../delivery/using/defining-interactive-content.md)
 
-* [Skräddarsy e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
+* [Så här personaliserar du e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
 
 * [Skräddarsy e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
 
@@ -56,6 +56,15 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 * [Konfigurera kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
 
 Information har lagts till om de kontroller och åtgärder som ska utföras vid hämtning av felet&quot;Det gick inte att lösa värdnamnet&quot; efter anslutning till en FTP-server. [Läs mer](../../platform/using/sftp-server-usage.md)
+
+Nya användningsfall har refererats i listan över [arbetsflödesanvändningsfall](../../workflow/using/about-workflow-use-cases.md):
+
+* Automatisera framtagning, utgåva och publicering av innehåll
+* Ställa in en process för mottagningsgodkännande innan en leverans skickas
+* Anropa en förekomstvariabel i en fråga
+* Använda en delad procentsats på en population
+
+Aktivitetsavsnittet har berikats med ytterligare information om hur det används samt en anteckning om användningen av variabler. **[!UICONTROL AND-join]** [Läs mer](../../workflow/using/and-join.md)
 
 ## Juli 2020 {#july-2020}
 
