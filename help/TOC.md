@@ -6,9 +6,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2109'
 ht-degree: 95%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 95%
       + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
-   + Bästa praxis {#delivery-bestpractices}
+   + Bästa praxis för leverans {#delivery-bestpractices}
       + [Lär dig god praxis](delivery/using/delivery-best-practices.md)
       + [Optimera leveransen](delivery/using/optimize-delivery.md)
       + [Använd mallar](delivery/using/use-templates.md)
@@ -432,7 +432,7 @@ ht-degree: 95%
          + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
          + [Kvartalslistuppdatering med inkrementell fråga](workflow/using/quarterly-list-update.md)
-      + Utforma frågor {#designing-queries}
+      + Målinriktning {#designing-queries}
          + [Fråga mottagartabellen](workflow/using/querying-recipient-table.md)
          + [Fråga om leveransinformation](workflow/using/querying-delivery-information.md)
          + [Utföra aggregerad databehandling](workflow/using/performing-aggregate-computing.md)
