@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 668a0093616e1a2b49623b010ae5055f4d43d9b9
+source-git-commit: 6c76ce3e6da41a80d1df2adfcb17fd7c0f85b894
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 668a0093616e1a2b49623b010ae5055f4d43d9b9
 
 I det här avsnittet beskrivs principerna för användning av en mottagartabell som inte är standard.
 
-Adobe Campaign erbjuder som standard en mottagartabell som färdiga funktioner och processer är länkade till. Standardmottagartabellen har ett antal fördefinierade fält och tabeller som enkelt kan utökas med hjälp av en tilläggstabell.
+Som standard har Adobe Campaign en mottagartabell som färdiga funktioner och processer är länkade till. Standardmottagartabellen har ett antal fördefinierade fält och tabeller som enkelt kan utökas med hjälp av en tilläggstabell.
 
 Om den här tilläggsmetoden ger stor flexibilitet för att utöka en tabell kan inte antalet fält eller länkar i den minskas. Om du använder en tabell som inte är standard, eller en &quot;extern mottagartabell&quot;, får du större flexibilitet men det krävs vissa försiktighetsåtgärder när du implementerar den.
 
@@ -39,13 +42,13 @@ Med den här funktionen kan Adobe Campaign bearbeta data från en extern databas
 * Standardmottagartabellen är värdelös om du inte behöver de flesta tabellfälten eller om databasmallen inte är centrerad på mottagarna.
 * För att vara effektiv krävs en tabell med få fält om du har ett stort antal profiler. Standardmottagartabellen har för många fält för det här specifika fallet.
 
-I det här avsnittet beskrivs de huvudpunkter som gör att du kan mappa befintliga tabeller i Adobe Campaign och konfigurationen som ska användas för att köra leveranser baserat på vilken tabell som helst. Slutligen beskrivs hur man ger användarna möjlighet att fråga efter gränssnitt som är lika praktiska som de som finns i den vanliga mottagartabellen. För att förstå det material som presenteras i detta avsnitt krävs god kunskap om principerna för skärm och schemadesign.
+I det här avsnittet beskrivs de huvudpunkter som gör att du kan mappa befintliga tabeller i Adobe Campaign och konfigurationen som ska användas för att köra leveranser baserat på valfri tabell. Slutligen beskrivs hur man ger användarna möjlighet att fråga efter gränssnitt som är lika praktiska som de som finns i den vanliga mottagartabellen. För att förstå det material som presenteras i detta avsnitt krävs god kunskap om principerna för skärm och schemadesign.
 
-## Rekommendationer och begränsningar {#recommendations-and-limitations}
+## Recommendations och begränsningar {#recommendations-and-limitations}
 
 Användningen av en extern mottagartabell har följande begränsningar:
 
-* Adobe Campaign har inte stöd för flera mottagarscheman, som kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt.
+* Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt.
 
    Bilden nedan visar den nödvändiga relationsstrukturen för varje anpassat mottagarschema:
    ![](assets/custom_recipient_limitation.png)
@@ -61,7 +64,7 @@ Användningen av en extern mottagartabell har följande begränsningar:
 
 * Länken med **[!UICONTROL visitor]** tabellen fungerar inte.
 
-   För att kunna använda modulen för **[!UICONTROLSsocial marknadsföring]** måste du därför konfigurera lagringssteget så att det refererar till rätt tabell.
+   Om du vill använda **[!UICONTROL Social Marketing]** modulen måste du därför konfigurera lagringssteget så att det refererar till rätt tabell.
 
    På samma sätt måste standardmallen för inledande meddelandeöverföring anpassas när hänvisningsfunktioner används.
 
@@ -75,7 +78,7 @@ Användningen av en extern mottagartabell har följande begränsningar:
 
 Vi rekommenderar också att du kontrollerar standardvärdena som används i de olika färdiga konfigurationerna: Beroende på vilka funktioner som används måste flera anpassningar göras.
 
-Till exempel:
+Exempel:
 
 * Vissa standardrapporter, särskilt de som erbjuds av **Interaction** och **Mobile Applications** , måste utvecklas på nytt. Se avsnittet [Hantera rapporter](../../configuration/using/managing-reports.md) .
 * Standardkonfigurationerna för vissa arbetsflödesaktiviteter refererar till standardmottagartabellen (**[!UICONTROL nms:recipient]**): dessa konfigurationer måste ändras när de används för en extern mottagartabell. Se avsnittet [Hantera arbetsflöden](../../configuration/using/managing-workflows.md) .
