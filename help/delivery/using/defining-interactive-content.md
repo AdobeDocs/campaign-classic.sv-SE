@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 3%
 
 ---
 
@@ -33,13 +33,14 @@ Mer information om hur du testar och skickar AMP-e-post finns i [Ange ett AMP-e-
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
 
->[!NOTE]
-> För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mellankällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/creating-a-shared-connection.md#execution-instance). Kontakta er kontoansvarige.
+    >[!NOTE]
+    >
+    > För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mittkällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/creating-a-shared-connection.md#execution-instance). Kontakta er kontoansvarige.
 
 
 ## Om AMP för e-post {#about-amp-for-email}
 
-Det nya formatet **AMP for Email** gör det möjligt att inkludera AMP-komponenter i meddelanden för att förbättra e-postupplevelsen med avancerat och användbart innehåll. Med de moderna appfunktionerna som är direkt tillgängliga i e-postmeddelanden kan mottagarna interagera dynamiskt med innehållet i själva meddelandet.
+Det nya formatet **AMP for Email** gör det möjligt att inkludera AMP-komponenter i meddelanden för att förbättra e-postupplevelsen med avancerat och användbart innehåll. Med de moderna appliknande funktioner som finns direkt tillgängliga i e-postmeddelanden kan mottagarna interagera dynamiskt med innehållet i själva meddelandet.
 
 Exempel:
 * E-postmeddelanden som skrivits med AMP kan innehålla interaktiva element som bildkaruseller.
@@ -215,6 +216,6 @@ Om du till exempel har tagit med en produktlista i e-postmeddelandet justeras pr
 
 ## Så här aktiverar och använder du AMP för e-post {#amp-email-video}
 
-I videon nedan förklaras hur du aktiverar AMP i Adobe Campaign Classic och visar hur du använder det.
+I videon nedan förklaras hur du aktiverar och använder AMP i Adobe Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
