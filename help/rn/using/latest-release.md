@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
+source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 86%
+source-wordcount: '1975'
+ht-degree: 85%
 
 ---
 
@@ -92,7 +92,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>Thailands lag om skydd av personuppgifter (PDPA) är den nya integritetslagen som harmoniserar och moderniserar kraven på skydd av personuppgifter i Thailand. </p>
-   <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) börjar gälla från och med 16 augusti för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
+   <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) träder i kraft i början av 2021 för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
    <p>Dessa bestämmelser gäller för Adobe Campaign-kunder som innehar uppgifter för registrerade personer som bor i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive medgivandehantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta beredskapen för PDPA och LGPD:</p>
    <ul> 
      <li><p>Rätt till åtkomst och rätt att ta bort: vi tar vara på de funktioner som redan finns för GDPR och CCPA. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
