@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
+source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1616'
 ht-degree: 3%
 
 ---
@@ -33,10 +33,9 @@ Mer information om hur du testar och skickar AMP-e-post finns i [Ange ett AMP-e-
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
 
-    >[!NOTE]
-    >
-    > För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mittkällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/creating-a-shared-connection.md#execution-instance). Kontakta er kontoansvarige.
-
+>[!NOTE]
+>
+> För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mellankällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/creating-a-shared-connection.md#execution-instance). Kontakta er kontoansvarige.
 
 ## Om AMP för e-post {#about-amp-for-email}
 
