@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 98c880e1218f179b8b804d52690135a2f28520a0
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +29,7 @@ De data som är länkade till en mottagares profil kan uppdateras manuellt eller
 
 ## Konfigurera en automatisk uppdatering {#setting-up-an-automatic-update}
 
-En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information finns i [det här avsnittet](../../workflow/using/update-data.md).
+En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information om detta finns i [det här avsnittet](../../workflow/using/update-data.md).
 
 ## Genomföra en massuppdatering {#performing-a-mass-update}
 
