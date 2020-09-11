@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
+source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 85%
+source-wordcount: '2119'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +25,20 @@ ht-degree: 85%
 
 ![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.2 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.3 - build 9182 {#release-20-2-3-build-9182}
+
+_11 september 2020_
+
+* Korrigerade en regression som gjorde att leveransförberedelser blockerades på grund av en felfunktion på leveransdelen, vilket ledde till minnesöverbelastning. (NEO-27346)
+* Korrigerade ett efteruppgraderingsfel som stängde av Apache och webbservern innan webbprogrampubliceringen. (NEO-27155)
+* Korrigerade en regression av HTML-mallhantering som ledde till att URL:er för spårning blev synliga på grund av en felaktig tolkning av flikarna. (NEO-25909)
+* Korrigerade ett problem med arbetsflödet för databasrensning som kunde misslyckas på grund av ohanterad datakälla. (NEO-23160 och NEO-23364)
+* Rensningsarbetsflödet tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
+* Korrigerade en regression som förhindrade dig från att ändra det interna namnet för ett externt konto. (NEO-27323)
+* Korrigering av en regression under efteruppgradering som orsakade en felaktig start av lserver (felloggar).
+* Uppdateringshanteringen för delat minne har förbättrats. De ytterligare steg som krävs i 20.2 behövs inte längre.
+
+## ![](assets/do-not-localize/orange_2.png) Version 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
