@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: aeedcfb489e0dc0cd62e4472dc86102fa40cf6b4
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server** -motor måste du definiera:
 
-   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS\ `<instance>`** (instansläge),
+   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS`\<instance>`** (instansläge),
    1. den autentiseringsmetod som används för att komma åt Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** eller **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -108,7 +108,7 @@ Du måste definiera följande inställningar:
 
    >[!NOTE]
    >
-   >Med en Oracle-databas kan du med det här **[!UICONTROL Unicode storage]** alternativet använda **typfälten NCLOB** och **NVARCHAR** .
+   >Med en Oracle-databas kan du med det här **[!UICONTROL Unicode storage]** alternativet använda textfälten **NCLOB** och **NVARCHAR** .
    > 
    >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) för Oracle-databasen aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
 
