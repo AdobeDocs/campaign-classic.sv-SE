@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 2%
+source-wordcount: '1318'
+ht-degree: 8%
 
 ---
 
@@ -38,7 +38,7 @@ _7 februari 2020_
 
 _2 december 2019_
 
-**Nyheter?**
+**Nyheter**
 
 <table> 
  <thead> 
@@ -48,7 +48,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA är delstaten Kaliforniens nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 1 januari 2020. CCPA gäller för Adobe Campaign-kunder som lagrar data för registrerade i Kalifornien.</p>
+   <td> <p>CCPA är delstaten Kaliforniens nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 1 januari 2020. CCPA gäller Adobe Campaign-kunder som lagrar data för registrerade i Kalifornien.</p>
     <p>Förutom de sekretessfunktioner som redan finns (inklusive samtyckeshantering, datalagringsinställningar och användarroller) kan Adobe Campaign underlätta din beredskap för CCPA:</p>
     <ul>
       <li>Rätt till åtkomst och rätt att ta bort: vi utnyttjar de funktioner som tillkommit för GDPR. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Läs mer</a></li>
@@ -66,7 +66,7 @@ _2 december 2019_
  <tbody> 
   <tr> 
    <td> <p>Nu kan du övervaka körningsstatusen för alla arbetsflöden på instansen med fördefinierade vyer.</p>
-   <p>Se den <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">detaljerade dokumentationen</a> för mer information.</p></td> 
+   <p>Mer information finns i den <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">detaljerade dokumentationen</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,7 +96,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Se den <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a> för mer information. </p> </td> 
+<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,24 +126,24 @@ _2 december 2019_
 
 _Föråldrade system_
 
-Följande system är nu [föråldrade](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) för Campaign Classic-implementeringar:
+The following systems are now [deprecated](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) for Campaign Classic implementations:
 * Apache 2.2
 * Centrum 6
 
-Kontrollera att du har de versioner av alla system som stöds och som finns i den senaste kampanjkompatibilitetsmatrisen. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Kontrollera att du har de versioner av alla system som stöds och som finns i den senaste kampanjkompatibilitetsmatrisen. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 _Campaign Mobile SDK_
 
-Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta Adobes kundtjänst för att få SDK.
+Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta Adobe kundtjänst för att få SDK.
 
-**Patchar**
+**Felkorrigeringar**
 
-* En konsolkrasch som kan inträffa när en tom länkad tabell läggs till i arbetsflödesaktiviteten **Datainläsning (RDBMS)** har åtgärdats. (NEO-12213)
+* Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)** . (NEO-12213)
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
 * Ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata har korrigerats. (NEO-12399)
 * Ett problem som påverkade leveransanalysen med typologiregeln inklusive domänen ne.jp har korrigerats. (NEO-12609)
 * Korrigerade ett problem relaterat till SMS över TLS-uppdateringar som innebar en mer restriktiv certifikatprincip. Uppdateringarna kan leda till ett anslutningsfel mellan marknadsförings- och mellanleverantörsservrar om certifikatet är inaktuellt. (NEO-17698)
-* Ett problem har korrigerats när du använde knappen för att **testa anslutning** på ett externt konto i en miljö med flera källor och vaultautentisering användes. (NEO-12722)
+* Ett problem har korrigerats när knappen för **testanslutning** användes på ett externt konto i en miljö med flera källor med vaultautentisering. (NEO-12722)
 * Korrigerade ett problem med frågor som använder datumfunktioner med en FDA Hadoop-anslutning. (NEO-12847)
 * Korrigerade ett problem när en bild skulle ersättas i e-postredigeraren. (NEO-13098)
 * Korrigerade ett problem som kan leda till fel efter uppgraderingen i mappar som har tagits bort eller flyttats till en annan plats. (NEO-13118)
@@ -152,18 +152,20 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Korrigerade ett problem i arbetsflöden när **filöverföringsaktiviteten** användes för att hämta filer med alternativet **Ta bort källfilerna efter överföring** , med ett namn som innehåller ett blanksteg. (NEO-13411)
 * Ett problem med rensning av Tomcat-cachen som kan leda till minnesproblem har åtgärdats. (NEO-13456)
 * Ett problem har korrigerats när **Control of offer-motorn installerades med det inbyggda paketet för körningsinstansen** på en befintlig kontrollinstans som körs i Microsoft SQL 2017. (NEO-13539)
-* En krasch som kan inträffa när spårade URL:er avmarkeras i ett e-postmeddelande från fliken **Textinnehåll** har åtgärdats. (NEO-13545)
+* Ett kraschproblem som kunde inträffa när spårade URL:er i ett e-postmeddelande avkontrollerades från fliken **Textinnehåll** på grund av en variabel som inte initierats har åtgärdats. (NEO-13545)
 * Korrigerade ett kodningsproblem för det kinesiska avsändarnamnet. (NEO-13837)
 * Korrigerade ett fel som kunde uppstå när undersökningssvarsdata från Utforskaren visades. (NEO-14590)
 * Korrigerade ett problem som kunde leda till diskrepans mellan leveransloggklassificeringen och karantäntabellen. (NEO-16547)
-* Korrigerade ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden. (NEO-16804)
+* Ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden har korrigerats. (NEO-16804)
 * Korrigerade ett problem som visade fel felkod när en ogiltig sessionstoken användes i kontexten för API-anrop för att utlösa händelser. Felkoden var HTTP 200 OK i stället för HTTP 403 Forbidden. (NEO-16826)
 * Ett problem som orsakade att leveransrapporter visades via webbåtkomst har korrigerats. (NEO-17015)
-* Ett IMS-autentiseringsproblem vid inloggning på Adobe Campaign har korrigerats. (NEO-17312)
+* Ett IMS-autentiseringsproblem som uppstod vid inloggning på Adobe Campaign har korrigerats. (NEO-17312)
 * Korrigerade ett problem som förhindrade att e-postmeddelanden i karantän togs bort av sekretesshanteringsprocessen. (NEO-17314)
 * Problem med genomströmning har korrigerats efter uppgradering till 9031 med SQL-databas. (NEO-17558)
 * Ett problem som påverkade CRM Connector med Salesforce har korrigerats. (NEO-17712)
 * Ett timeout-problem vid import av data från en extern SFTP har korrigerats. (NEO-19723)
 * Ett problem har korrigerats vid åtkomst till prediktiva modeller. (NEO-19713)
 * Korrigerade ett problem som påverkade slumpmässig sampling i **delad** arbetsflödesaktivitet med Hadoop FDA-databasen. (NEO-16636)
+* Korrigerade en regression i Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgradering. (NEO-12759)
+
 
