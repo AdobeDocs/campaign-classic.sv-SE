@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 16%
+source-wordcount: '944'
+ht-degree: 15%
 
 ---
 
@@ -97,6 +97,12 @@ Den allmänna layouten för Adobe Campaign Explorer visas i [Använda Adobe Camp
 
 Aktiva profiler är de profiler som räknas i faktureringssyfte.
 
+>[!NOTE]
+>
+>Om du är värd på AWS och använder Campaign Classic från build 8931 kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>
+>Observera att antalet aktiva profiler endast är tillgängligt för **marknadsinstanser** . Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
+
 “**Profile**” means a record of information (e.g.: a record in the nmsRecipient table or an external table containing a cookie ID, Customer ID, mobile identifier or other information relevant to a particular channel) representing an end-customer, prospect, or lead.
 
 Fakturering gäller endast profiler som är **aktiva**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
@@ -107,9 +113,7 @@ De profiler som uteslöts under färdigställandet (typologiregler, karantänreg
 >
 >Facebook- och Twitter-kanaler beaktas inte.
 
-Du kan visa en översikt över **[!UICONTROL Number of active profiles]** Campaign Standarden **[!UICONTROL Administration > Campaign Management > Customer metrics]** på menyn. Det faktiska antalet utförs av det **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [tekniska arbetsflödet](../../workflow/using/deliveries.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]** menyn. Varje period varar i 12 månader.
-
-Om du är värd på AWS och använder Campaign Classic från build 8931 kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+Du kan få en översikt över **[!UICONTROL Number of active profiles]** Campaign Standarden **[!UICONTROL Administration > Campaign Management > Customer metrics]** på menyn. Det faktiska antalet utförs av det **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [tekniska arbetsflödet](../../workflow/using/deliveries.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]** menyn. Varje period varar i 12 månader.
 
 ## Skapa och hantera profiler {#create-profiles-video}
 
@@ -121,7 +125,7 @@ I den här videon förklaras också Adobe Campaign Classic överensstämmelse me
 
 **Se även**
 
-* [Integritetsmappning i Campaign](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html)
+* [Sekretessförändring i Campaign](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html)
 
 * [Definiera målpopulationen](../../delivery/using/define-the-right-audience.md)
 
