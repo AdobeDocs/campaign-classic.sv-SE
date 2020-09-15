@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1344'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ _17 februari 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake är ett helt hanterat moln data warehouse som bygger på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja Snowflake förmåga att utföra Big Data Segmentation. Den här kontakten är tillgänglig för alla kunder, inklusive via Adobe.</p>
+   <td> <p>Snowflake är ett helt hanterat moln data warehouse som bygger på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja Snowflake kraft att utföra Big Data Segmentation. Den här kontakten är tillgänglig för alla kunder, inklusive via Adobe.</p>
     <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
@@ -107,7 +107,7 @@ _17 februari 2020_
 
 * Förbättrade frågeprestanda som kan påverkas av onödiga databasanslutningar.
 
-* Förbättrade prestanda för guiden Databasuppdatering.
+* Förbättrade prestanda för guiden Databasuppdatering för att göra färre SQL-satser för att optimera svarstiden.
 
 * Hanteringen av databasposter har förbättrats.
 
@@ -183,7 +183,7 @@ _17 februari 2020_
 
 * Ett problem som uppstod när en stor mängd data skulle tas bort, infogas eller uppdateras med aktiviteten **Uppdatera data** i ett arbetsflöde med ett FDA-schema som måldimension har åtgärdats. (NEO-13280)
 
-* Korrigerade ett problem som förhindrade att e-post skickades när if-satsen användes utanför `body` -taggen. (NEO-18628)
+* Korrigerade ett problem som förhindrade att e-post skickades när det fanns Javascript-kod utanför HTML-innehållstaggen. (NEO-18628)
 
 * Korrigerade ett fel som uppstod när spegelsidan skulle visas från leveransloggarna för ett skickat meddelande. (NEO-17976)
 
