@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
+source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 80%
+source-wordcount: '2161'
+ht-degree: 76%
 
 ---
 
@@ -45,13 +45,13 @@ _22 juli 2020_
 * Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades. (NEO-26411)
 * Korrigerade ett problem som medförde att osignerade länkar från anpassade domäner blockerades när de borde tillåtas. (NEO-25210)
 * Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook. (NEO-25688)
-* Korrigerade ett problem som ledde till att sidans URL:er speglades och definierades felaktigt i e-postleveranser. (NEO-26084)
+* Korrigerade ett problem som ledde till att sidans URL:er speglades på ett felaktigt sätt definierades i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
 * Ett problem med hantering av kodnings-URL i tjänsten mot nätfiske har korrigerats. (NEO-25283)
 * Korrigerade ett problem som förhindrade spårning av URL-adresser som använder fragment i personaliseringsparametrar (ankartaggar med nummertecken) från att fungera. (NEO-25774)
 * Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277) Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
-* Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde. (NEO-25194)
+* Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde och orsakade att arbetsflödet misslyckades. (NEO-25194)
 * Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-20999)
-* Korrigerade ett problem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
+* Korrigerade ett regressionsproblem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
 * Korrigerade ett kraschproblem i distributionsguiden.
 * Korrigerade ett problem som kunde förhindra att arbetsflödet för meddelanden om erbjudanden fungerar korrekt efter en efteruppgradering.
 * iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904 och NEO-25903)
@@ -239,7 +239,7 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade ett problem som kunde påverka push-meddelanden när de skickades med hög frekvens. (NEO-20516)
 * Korrigerade ett problem som gjorde att spårningsdata inkluderade dubbletter trots att spårningsloggarna inte gjorde det. (NEO-20040)
 * Korrigerade ett problem som orsakade att dubbla transaktionsmeddelanden skickades efter att ett kommunikationsfel för spårningsservern hade korrigerats. (NEO-23640)
-* Korrigerade ett problem som tog bort kodning av parametervärde vid omdirigering från en spårnings-URL. (NEO-25637)
+* Ett problem som tog bort kodningsparametervärdet vid omdirigering från en spårnings-URL (påverkar japanska tecken) har korrigerats. (NEO-25637)
 * Korrigerade ett problem som kunde förhindra att en fråga fungerade när flyttal jämfördes. (NEO-23243)
 * Korrigerade ett problem som kunde förhindra att innehållet i kolumnen **Ändrad av** visades efter att ett arbetsflöde startades om. (NEO-23035)
 * Korrigerade ett problem som gjorde att det tekniska arbetsflödet för spårning inte fungerade vid nedladdning av loggar från en andra behållare. (NEO-23159)
@@ -249,7 +249,7 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade ett problem med ytterligare lagringsfält när leveranser skapades via alternativet **Beräknad av ett skript** i **skriptet** arbetsflödesaktivitet. (NEO-20609)
 * Korrigerade ett problem som förhindrade att spökarbetsflöden togs bort i databasrensningen.
 * Korrigerade ett problem som gjorde att det tekniska arbetsflödet för **fakturering (aktiva profiler)** inte fungerade. (NEO-19777)
-* Korrigerade ett problem som uppstod vid testning av anslutningen för det externa acsDefaultAccount-kontot. (NEO-23433)
+* Ett regressionsproblem som förhindrade anslutningen till en Campaign Standard-instans (felaktig hantering av FOH/FOH2-anslutningen) har korrigerats när funktionen ACS Connector användes. (NEO-23433)
 * Korrigerade ett problem som gjorde att du inte kunde skapa ett schematillägg för en primärnyckel med flera kolumner med en Hadoop-tabell. (NEO-17390)
 * Korrigerade ett problem i **inläsningsaktiviteten (SOAP)** som kunde förhindra att WSDL-filer lästes in från en URL. (NEO-16924)
 * Korrigerade ett problem som förhindrade dig från att utföra ett **ovillkorligt stopp** via konsolen när flera aktiva arbetsflödesservrar lästes in. (NEO-19556)
@@ -261,6 +261,6 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade ett problem som kunde visa en leverans två gånger i leveranslistan efter att den hade skickats.
 * Korrigerade ett problem med leveransförberedelser som kunde inträffa när routningskonfigurationen var inställd på att skicka leveransen via mid-sourcing.
 * Korrigerade ett problem som kunde visa ett felmeddelande när du klickade på en webbapplikationslänk i ett Line-meddelande.
-* Korrigerade ett problem som kunde förhindra Microsoft Dynamics CRM från att hämta alla entiteter. (NEO-24528)
 * Korrigerade ett problem som tog bort aktivitetshistoriken för **Inkrementell fråga** efter att ha kört arbetsflödet för rensning.
-* Ett problem har korrigerats när ett externt konto med mid-sourcing skapades där alternativet NmsMidSourcing_LastBroadLog_&lt;InternalName> saknades
+* Ett problem har korrigerats när ett externt konto med mid-sourcing skapades där alternativet NmsMidSourcing_LastBroadLog_&lt;InternalName> saknades.
+* Ett regressionsproblem i databasanslutningen som gjorde att webbservern hela tiden startades om på grund av ett databaskodningsproblem har åtgärdats. Detta kan leda till överkonsumtion. (NEO-23264)
