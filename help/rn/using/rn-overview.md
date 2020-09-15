@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ Från och med Campaign Classic 19.2 associeras en status med varje bygge. Du hit
 
 Den **sista stabila versionen** är Gold Standard 6. Klicka [här](../../rn/using/gold-standard.md)
 
-![](assets/do-not-localize/limited.png) **Begränsad tillgänglighet** - Bygg för närvarande i produktionsvalidering. Endast on demand-distribution.
+![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** - Bygg för närvarande i produktionsvalidering. Endast on demand-distribution.
 
 ![](assets/do-not-localize/blue3.png) **Releasedatum** - bygget validerat av Adobe. Väntar på korrektur av produktionen.
 
@@ -49,9 +49,9 @@ Den **sista stabila versionen** är Gold Standard 6. Klicka [här](../../rn/usin
 
 Som värdkund (Managed Service eller Hybrid) måste du kontakta kundtjänst för att få din miljö uppgraderad.
 
-Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. [Lär dig mer](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. [Läs mer](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
-Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)och se Frågor och svar om [bygguppgraderingen](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html).
+Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)och se Frågor och svar om [bygguppgraderingen](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html).
 
 ## Rekommendationer{#recommendations}
 
@@ -69,6 +69,6 @@ Läs mer om övriga [rekommendationer](https://helpx.adobe.com/campaign/kb/acc-b
 * [Versioner av Kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html)
 * [Dokumentationsuppdateringar](../../rn/using/documentation-updates.md)
 * [Tidigare versioner](../../rn/using/release--20-1.md)
-* [Föråldrade funktioner](../../rn/using/deprecated-features.md)
+* [Inaktuella funktioner](../../rn/using/deprecated-features.md)
 * [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md)
 
