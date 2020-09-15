@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -33,9 +33,9 @@ Det här är vår långsiktiga supportrelease. Om du migrerar från en gammal ve
 
 På den här sidan visas Gold Standard-utgåvor.
 
-Mer information om uppgradering av Gold Standard finns i den här [artikeln](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+Mer information om uppgradering av Gold Standard finns i den här [artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/limited.png) Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/limited_2.png) Gold Standard 10{#gs-10}
 
 _7 juli 2020_
 
@@ -45,7 +45,7 @@ Korrigerade ett problem som hindrade spårning från att fungera när signaturfu
 
 >[!CAUTION]
 >
->Vi rekommenderar att du uppgraderar klientkonsolen med den som finns i den här versionen. Se den här [sidan](../../installation/using/installing-the-client-console.md)
+>Vi rekommenderar att du uppgraderar klientkonsolen med den som finns i den här versionen. Refer to this [page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9 release{#gs-9}
 
@@ -53,7 +53,7 @@ _22 juni 2020_
 
 Version 9032@800be2e innehåller följande korrigeringar:
 
-* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903, NEO-25799)
+* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903 och NEO-25799)
 
 Följande korrigeringar är relaterade till säkerhetsmekanismen för spårningslänkar (se checklistan för [säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
 
@@ -69,14 +69,14 @@ _29 april 2020_
 
 Version 9032@3a9dc9c innehåller följande korrigeringar:
 
-* Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som du kan aktivera genom att kontakta Kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder för att aktivera den finns i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess.
+* Förbättrad säkerhet vid spårning av länkar i e-post. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som kan aktiveras genom att kontakta kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder som vill aktivera den finns i [checklistan över säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
 >Om du får problem med push-meddelanden med hjälp av spårningslänkar, eller leveranser med ankartaggar, rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårning av länkar. Proceduren beskrivs på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
-* Ett problem med **filöverföringsaktiviteten** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
+* Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 * Korrigerade ett problem som kunde påverka push-meddelanden när de skickades med hög frekvens. (NEO-20516)
 * Ett problem i hanteringen av erbjudanden som kan leda till att webbservern kraschar har åtgärdats. (NEO-19482)
 * Korrigerade ett fel i LibraryOffice-hanteringen som hindrade dig från att exportera rapporter. (NEO-20982)
@@ -85,8 +85,8 @@ Version 9032@3a9dc9c innehåller följande korrigeringar:
 * Förbättrad hantering av Apache-anslutning för att undvika latens i webbtjänsten.
 * Förbättrad visning av versionstagg (7 siffror) på menyn **Om** .
 * Korrigerade en regression i listhantering som förhindrade att erbjudanden publicerades.
-* Korrigerade en regression som fick rensningsarbetsflödet att krascha.
-* Korrigerade en mindre regression i rensningsarbetsflödets loggar.
+* Korrigerade en regression som fick arbetsflödet för rensning att krascha.
+* Korrigerade en mindre regression i loggfilerna för arbetsflödet för rensning.
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 6 release{#gs-6}
 
@@ -94,7 +94,7 @@ _9 mars 2020_
 
 Version 9032@19f73c5 innehåller följande korrigering:
 
-* Ett problem med externa konton som använder FTP över SSL har korrigerats. (NEO-20498)
+* Korrigerade ett problem med externa konton som använder FTP över SSL. (NEO-20498)
 
 ## ![](assets/do-not-localize/orange_2.png) Gold Standard 5-utgåva{#gs-5}
 
@@ -141,4 +141,4 @@ Den första versionen av 19.1.4 innehåller följande korrigeringar:
 * Korrigerade en regression orsakad av NEO-12727 som kunde leda till att arbetsflöden stoppades när en testaktivitet kördes två gånger. (NEO-16835)
 * Korrigerade ett problem som ledde till att en felaktig HTTP-kod returnerades (HTTP 200 OK i stället för HTTP 403 Forbidden) när en ogiltig eller utgången sessionstoken användes i API-anrop. (NEO-16826)
 * Korrigerade ett problem med DKIM-nyckeln som inte längre var inbäddad i e-postmeddelanden, vilket orsakade leveransproblem. (NEO-16804)
-* Åtgärdade olika problem med arbetsflödesplanering. Arbetsflödena har schemalagts att köras en gång om dagen utan att schemaläggarens konfiguration har beaktats. (NEO-16619, NEO-16426)
+* Åtgärdade olika problem med arbetsflödesplanering. Arbetsflödena har schemalagts att köras en gång om dagen utan att schemaläggarens konfiguration har beaktats. (NEO-16619 och NEO-16426)
