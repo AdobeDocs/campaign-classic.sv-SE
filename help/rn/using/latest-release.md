@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
+source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 76%
@@ -48,7 +48,8 @@ _22 juli 2020_
 * Korrigerade ett problem som ledde till att sidans URL:er speglades på ett felaktigt sätt definierades i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
 * Ett problem med hantering av kodnings-URL i tjänsten mot nätfiske har korrigerats. (NEO-25283)
 * Korrigerade ett problem som förhindrade spårning av URL-adresser som använder fragment i personaliseringsparametrar (ankartaggar med nummertecken) från att fungera. (NEO-25774)
-* Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277) Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
+* Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277)
+* Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
 * Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde och orsakade att arbetsflödet misslyckades. (NEO-25194)
 * Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-20999)
 * Korrigerade ett regressionsproblem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
