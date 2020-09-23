@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Från och med Campaign Classic 19.2 associeras en status med varje bygge. Du hit
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** - senaste stabila versionen finns tillgänglig. Bygg validerat i produktion.
 
-Den **sista stabila versionen** är Gold Standard 6. Klicka [här](../../rn/using/gold-standard.md)
+Den **sista stabila versionen** är Gold Standard 10. Klicka [här](../../rn/using/gold-standard.md#gs-10)
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** - Bygg för närvarande i produktionsvalidering. Endast on demand-distribution.
 
@@ -49,7 +49,7 @@ Den **sista stabila versionen** är Gold Standard 6. Klicka [här](../../rn/usin
 
 Som värdkund (Managed Service eller Hybrid) måste du kontakta kundtjänst för att få din miljö uppgraderad.
 
-Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. [Läs mer](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. [Läs mer](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
 
 Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)och se Frågor och svar om [bygguppgraderingen](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html).
 
