@@ -1,6 +1,6 @@
 ---
-title: Installera en server för mellanpublicering i Adobe Campaign Classic
-description: I det här avsnittet finns information om installation och konfiguration av en server med mellanleverantörer i Adobe Campaign Classic.
+title: Installera en server för mellanlagring i Adobe Campaign Classic
+description: I det här avsnittet beskrivs installation och konfiguration av en server med mellanlagring i Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 9b891a64-d75e-44d2-8de2-17334e1b8dca
 contentOwner: sauviat
@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
 
-# Server för mellanleverantörer{#mid-sourcing-server}
+# Server för mid-sourcing{#mid-sourcing-server}
 
-I det här avsnittet finns information om installation och konfiguration av en server med mellankällkod samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i **mellankälläge** .
+I det här avsnittet finns information om installation och konfiguration av en server med mellankällkod samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i **läget för** mellanlagring.
 
 Arkitekturen med&quot;mellanleverantörer&quot; presenteras i driftsättningen [med](../../installation/using/mid-sourcing-deployment.md)mellanleverantörer.
 
@@ -60,7 +63,7 @@ Du måste dock göra följande:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 * Steg **6**, **9** och **10** behövs inte.
 * Under steg **12** och **13** måste du ange porten 8080 i anslutningens URL (eftersom konsolen kommunicerar direkt med Tomcat, inte via webbservern). URL:en blir [http://console.campaign.net:8080](http://console.campaign.net). Under steg **13** väljer du både paketet och de som ska installeras **[!UICONTROL Issue towards Mid-sourcing]** .
@@ -122,7 +125,7 @@ Det är möjligt att dela en instans från mellanleverantörer med flera instans
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starta om modulen Webb med följande kommando: Starta **om webbservern**.
+1. Starta om modulen Webb med följande kommando: **Starta om webben**.
 
 Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml. Följande rad måste läggas till i avsnittet &quot;Hantering av tillhörigheter med IP-adresser&quot;, under den befintliga raden:
 
@@ -170,7 +173,7 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 1. Bekräfta konfigurationen genom att klicka på **[!UICONTROL Test the connection]**.
 1. Deklarera spårningsinstansen som refereras på mellankällservern:
 
-   Klicka på länken **[!UICONTROL Use this platform as a platform to access the tracking servers]**,
+   Klicka på länken **[!UICONTROL Use this platform as a proxy to access the tracking servers]**,
 
    Ange namnet på spårningsinstansen och bekräfta sedan anslutningen till spårningsservern.
 
