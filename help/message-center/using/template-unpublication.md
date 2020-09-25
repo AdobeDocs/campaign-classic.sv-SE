@@ -1,7 +1,7 @@
 ---
-title: Mallpublicering
-seo-title: Mallpublicering
-description: Mallpublicering
+title: Publicera mall
+seo-title: Publicera mall
+description: Publicera mall
 seo-description: null
 page-status-flag: never-activated
 uuid: f83dbe5f-762c-4c58-aeed-6ec289eb522f
@@ -15,17 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71aeeda3edafc64dbe696ce6f344b8b0ccdc43d1
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
 
-# Opublicerad mall{#template-unpublication}
+# Ta bort publiceringen av mallen{#template-unpublication}
 
 När en meddelandemall har publicerats på körningsinstanserna kan den avpubliceras.
+
+>[!NOTE]
+>
+>Den här funktionen är tillgänglig från och med Campaign 20.2.
 
 En publicerad mall kan fortfarande anropas. Om du inte längre använder en meddelandemall bör du därför avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag. Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
 
