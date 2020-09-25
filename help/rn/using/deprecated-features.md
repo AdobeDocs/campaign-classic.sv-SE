@@ -11,17 +11,17 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 100%
+source-wordcount: '1444'
+ht-degree: 96%
 
 ---
 
 
 # Inaktuella och borttagna funktioner {#deprecated-and-removed-features}
 
-Adobe utvärderar ständigt produktfunktioner för att identifiera äldre funktioner som bör ersättas med modernare alternativ för att förbättra det övergripande kundvärdet. Detta sker alltid under noggrant övervägande gällande bakåtkompatibilitet. Eftersom Adobe Campaign Classic fungerar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, vilket innebär att endast de versioner som stöds kan implementeras. Versioner som inte längre är kompatibla med Adobe Campaign Classic visas nedan och i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Adobe utvärderar ständigt produktfunktioner för att identifiera äldre funktioner som bör ersättas med modernare alternativ för att förbättra det övergripande kundvärdet. Detta sker alltid under noggrant övervägande gällande bakåtkompatibilitet. Eftersom Adobe Campaign Classic fungerar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, vilket innebär att endast de versioner som stöds kan implementeras. Versioner som inte längre är kompatibla med Adobe Campaign Classic visas nedan och i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 Följande regler tillämpas för att informera om den förestående borttagningen/ersättningen av funktioner i Campaign Classic:
 
@@ -49,7 +49,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </tr>
    <tr>
   <td>SMS-kopplingar<br></td>
-  <td><p> Från och med version 20.2 har följande SMS-kopplingar tagits bort.<p>
+  <td><p> Från och med Campaign 20.2 har följande SMS-anslutningar tagits bort.<p>
    <ul>
    <li>NetSize</li>
    <li>Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
@@ -66,7 +66,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
  </tr>
   <tr>  
    <td>Faxkanal<br></td>
-   <td><p>Faxkanalen är inaktuell från och med version 20.2.</p> 
+   <td><p>Faxkanalen är föråldrad från och med Campaign 20.2.</p> 
    <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
    <p><em>Måldatum för borttagning: 2021</em></p></td>
   </tr>
@@ -125,14 +125,15 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
 
 ## Inaktuell kompatibilitet {#deprecated-compatibility}
 
-Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
+Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
 
 ### Adobe Campaign version 20.2 {#compat-20-2-release}
 
-Från och med version 20.2 är följande system inaktuellt i Campaign Classic. Kompatibiliteten upphör i version 20.3 – september 2020.
+Från och med version 20.2 har följande system tagits bort för Campaign Classic. Kompatibiliteten upphör i version 20.3 - oktober 2020.
 
 * Klientkonsol: Windows 7
-* Äldre SMS-kopplingar (se avsnittet Inaktuella funktioner nedan)
+* Äldre SMS-anslutningar (se [Föråldrade funktioner)](#deprecated-features)
+* DB2 UDB 10.5 för FDA (Federated Data Access)
 
 ### Adobe Campaign version 19.2 {#compat-19-2-release}
 
@@ -141,17 +142,17 @@ Från och med version 19.2 är följande operativsystem inaktuella att användas
 * Webbserver: Apache 2.2.
 * Operativsystem: CentOS 6.
 
-Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) för att uppgradera till en nyare version eller gå över till ett nytt system.
+Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system.
 
 ## Slut på kompatibilitet {#end-of-compatibility}
 
 >[!CAUTION]
 >
->Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html). När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tillkännages som inaktuella och tas sedan bort från vår kompatibilitetsmatris i den följande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+>Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md). När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tillkännages som inaktuella och tas sedan bort från vår kompatibilitetsmatris i den följande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 ### Klientkonsol {#client-console-eol}
 
-Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande system eftersom de har tagits bort av redigeraren. Kunder som kör klientkonsolen i Campaign på någon av dessa versioner måste uppgradera till den senaste versionen före måldatumet för borttagning. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande system eftersom de har tagits bort av redigeraren. Kunder som kör klientkonsolen i Campaign på någon av dessa versioner måste uppgradera till den senaste versionen före måldatumet för borttagning. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 * Windows Server 2003, 2008 och 2008 R2
 * Windows XP och Vista
@@ -186,7 +187,7 @@ Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med
 
 Adobe har inte stöd för följande databasmotorer eftersom de har tagits bort av redigeraren. Kunder som kör dessa versioner måste uppgradera till den senaste versionen eller byta till en annan.
 
-Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) för Campaign Classic för att få tillgång till en lista över kompatibla versioner.
+Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för Campaign för att få tillgång till en lista över kompatibla versioner.
 
 **FDA (FEDERERAD DATAÅTKOMST)**
 
