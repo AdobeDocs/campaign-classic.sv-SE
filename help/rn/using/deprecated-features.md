@@ -11,7 +11,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 96%
@@ -132,7 +132,7 @@ Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen]
 Från och med version 20.2 har följande system tagits bort för Campaign Classic. Kompatibiliteten upphör i version 20.3 - oktober 2020.
 
 * Klientkonsol: Windows 7
-* Äldre SMS-anslutningar (se [Föråldrade funktioner)](#deprecated-features)
+* Äldre SMS-anslutningar - se [Föråldrade funktioner](#deprecated-features)
 * DB2 UDB 10.5 för FDA (Federated Data Access)
 
 ### Adobe Campaign version 19.2 {#compat-19-2-release}
