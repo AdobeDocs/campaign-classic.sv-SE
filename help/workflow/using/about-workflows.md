@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -21,9 +21,9 @@ ht-degree: 16%
 ---
 
 
-# Kom igång med arbetsflöden{#about-workflows}
+# Kom igång med arbetsflöden{#gs-workflows}
 
-## Om arbetsflöden
+## Om arbetsflöden{#about-workflows}
 
 Adobe Campaign innehåller en arbetsflödesmodul som gör det möjligt att samordna alla processer och uppgifter i de olika modulerna i programservern. I den omfattande grafiska miljön kan du utforma processer såsom segmentering, kampanjkörning, filhantering och mänskligt deltagande osv. Arbetsflödesmotorn kör och spårar dessa processer.
 
@@ -73,7 +73,7 @@ Varje arbetsflöde innehåller:
 
    Läs mer om arbetsflödesdata och tabeller i [det här avsnittet](../../workflow/using/how-to-use-workflow-data.md).
 
-## Viktiga principer och bästa metoder
+## Viktiga principer och bästa metoder{#principles-workflows}
 
 I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera processer med arbetsflöden:
 
