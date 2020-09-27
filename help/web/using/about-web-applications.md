@@ -1,8 +1,6 @@
 ---
-title: Om webbprogram
-seo-title: Om webbprogram
-description: Om webbprogram
-seo-description: null
+title: Om webbapplikationer
+description: Skapa och dela dynamiska webbapplikationer, landningssidor och enkäter.
 page-status-flag: never-activated
 uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
 contentOwner: sauviat
@@ -15,21 +13,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 0%
+source-wordcount: '687'
+ht-degree: 18%
 
 ---
 
 
-# Om webbprogram{#about-web-applications}
+# Kom igång med webbprogram{#about-web-applications}
 
-Med Adobe Campaign kan ni skapa och publicera dynamiska och interaktiva webbapplikationer med data från databasen och innehåll som är anpassat efter den anslutna användarens rättigheter.
+Med Adobe Campaign kan du skapa och publicera dynamiska och interaktiva webbapplikationer med data från databasen och innehåll som är anpassat efter den anslutna användarens rättigheter.
 
 Du kan skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
-Detta kan vara ett prenumerationsformulär som innehåller data som har lästs in i förväg med information som finns i Adobe Campaign-databasen, vilket visas nedan:
+Detta kan vara ett prenumerationsformulär som innehåller data som har förinlästs med information som finns i Adobe Campaign-databasen, vilket visas nedan:
 
 ![](assets/webapp_form_sample.png)
 
@@ -37,7 +35,7 @@ I det här kapitlet finns en översikt över hur du hanterar webbprogram.
 
 >[!NOTE]
 >
->Läs checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html) säkerhet och sekretess om du vill veta hur du optimerar säkerheten för webbprogram.
+>Läs checklistan [för](https://helpx.adobe.com/se/campaign/kb/acc-security.html) säkerhet och sekretess om du vill veta hur du optimerar säkerheten för webbprogram.
 
 >[!CAUTION]
 >
@@ -45,25 +43,25 @@ I det här kapitlet finns en översikt över hur du hanterar webbprogram.
 
 ## Webbprogramsomfång {#web-application-scope}
 
-Webbprogram i Adobe Campaign ger tillgång till följande funktioner:
+Webbprogram i Adobe Campaign har följande funktioner:
 
-* Skapa flersidiga formulär. Mer information finns på den här [sidan](../../web/using/about-web-forms.md).
-* Hantering av flerspråkiga enkäter med ett integrerat översättningsverktyg. Mer information finns på den här [sidan](../../web/using/translating-a-web-application.md).
-* Grafiskt sidhanteringsgränssnitt, sidlayout med flera kolumner. Mer information finns på den här [sidan](../../web/using/designing-a-web-application.md).
-* Återger personalisering och fältposition. Mer information finns på den här [sidan](../../web/using/editing-content.md#adding-personalization-content).
-* Villkorlig visning av undersökningsfält enligt svar. Mer information finns på den här [sidan](../../web/using/form-rendering.md#defining-fields-conditional-display).
-* Slumpmässig visning av frågor. Mer information finns på den här [sidan](../../web/using/building-a-survey.md#adding-questions).
-* Villkorlig sidvisning. Mer information finns på den här [sidan](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
-* Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och de obligatoriska fälten. Mer information finns på den här [sidan](../../web/using/form-rendering.md#defining-control-settings).
-* Skicka inbjudningar eller meddelanden via e-post. Mer information finns på den här [sidan](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
-* Personalisering av fel- och slutmeddelanden. Mer information finns på den här [sidan](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
-* Användning av bilder, videor, hypertextlänkar, captcha osv. Mer information finns på den här [sidan](../../web/using/editing-content.md).
-* Övervakning av svar i realtid. Mer information finns på den här [sidan](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Skapa flersidiga formulär. Se denna [sida](../../web/using/about-web-forms.md) för mer information om detta.
+* Hantering av flerspråkiga enkäter med ett integrerat översättningsverktyg. Se denna [sida](../../web/using/translating-a-web-application.md) för mer information om detta.
+* Grafiskt sidhanteringsgränssnitt, sidlayout med flera kolumner. Se denna [sida](../../web/using/designing-a-web-application.md) för mer information om detta.
+* Återger personalisering och fältposition. Se denna [sida](../../web/using/editing-content.md#adding-personalization-content) för mer information om detta.
+* Villkorlig visning av undersökningsfält enligt svar. Se denna [sida](../../web/using/form-rendering.md#defining-fields-conditional-display) för mer information om detta.
+* Slumpmässig visning av frågor. Se denna [sida](../../web/using/building-a-survey.md#adding-questions) för mer information om detta.
+* Villkorlig sidvisning. Se denna [sida](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
+* Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och de obligatoriska fälten. Se denna [sida](../../web/using/form-rendering.md#defining-control-settings) för mer information om detta.
+* Skicka inbjudningar eller meddelanden via e-post. Se denna [sida](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email) för mer information om detta.
+* Personalisering av fel- och slutmeddelanden. Se denna [sida](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page) för mer information om detta.
+* Användning av bilder, videor, hypertextlänkar, captcha osv. Se denna [sida](../../web/using/editing-content.md) för mer information om detta.
+* Övervakning av svar i realtid. Se denna [sida](../../web/using/publish--track-and-use-collected-data.md#response-tracking) för mer information om detta.
 
 Den valfria modulen för att skapa **enkäter** har följande extrafunktioner:
 
-* Databasens dynamiska tillägg: Skapa svar som inte ingår i den ursprungliga datamallen. Mer information finns på den här [sidan](../../web/using/managing-answers.md#storing-collected-answers).
-* Genererar dedikerade rapporter. Mer information finns på den här [sidan](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Databasens dynamiska tillägg: Skapa svar som inte ingår i den ursprungliga datamallen. Se denna [sida](../../web/using/managing-answers.md#storing-collected-answers) för mer information om detta.
+* Genererar dedikerade rapporter. Se denna [sida](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys) för mer information om detta.
 
 Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med ett reducerat antal redigeringskontroller.
 
@@ -71,7 +69,7 @@ Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med
 >
 >Undersökningar finns i [detta avsnitt](../../web/using/about-surveys.md).
 >
->De övergripande funktionerna för webbformulär i Adobe Campaign beskrivs i [det här avsnittet](../../web/using/about-web-forms.md).
+>De allmänna funktionerna för webbformulär i Adobe Campaign beskrivs i [detta avsnitt](../../web/using/about-web-forms.md).
 
 ## Implementering av webbapplikationer {#web-application-implementation}
 
@@ -95,7 +93,7 @@ Webbprogram lagras i noden **[!UICONTROL Resources > Online > Web Applications]*
 
 ## Mallar för webbprogram {#web-application-templates}
 
-Som standard innehåller Adobe Campaign en mall per tillgängligt webbprogram.
+Som standard tillhandahåller Adobe Campaign en mall per tillgängligt webbprogram.
 
 >[!NOTE]
 >
