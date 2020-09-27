@@ -1,8 +1,6 @@
 ---
 title: Allmän arkitektur
-seo-title: Allmän arkitektur
-description: Allmän arkitektur
-seo-description: null
+description: Lär dig hur du installerar och konfigurerar Campaign Classic.
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -15,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -37,31 +35,31 @@ Den typiska driftsättningen av Adobe Campaign-lösningar består av följande k
 
 * **Databasbehållare**
 
-   Baserat på relationsdatabasteknik lagrar Adobe Campaign-databasen all kundinformation, alla kampanjkomponenter, erbjudanden och arbetsflöden samt kampanjresultat i kunddatabasbehållare.
+   Adobe Campaign-databasen lagrar all kundinformation, kampanjkomponenter, erbjudanden och arbetsflöden samt kampanjresultat i kunddatabasbehållare, baserat på relationsdatabasteknik.
 
-Adobe Campaign bygger på en tjänsteinriktad arkitektur (SOA) som omfattar flera funktionella moduler. Dessa moduler kan distribueras på en eller flera datorer, i en eller flera instanser, beroende på begränsningar i fråga om skalbarhet, tillgänglighet och isolering av tjänster. Distributionskonfigurationerna är därför mycket omfattande och omfattar en enda central dator till konfigurationer som omfattar flera dedikerade servrar över flera platser.
+Adobe Campaign bygger på en tjänsteinriktad arkitektur (SOA) och består av flera funktionella moduler. Dessa moduler kan distribueras på en eller flera datorer, i en eller flera instanser, beroende på begränsningar i fråga om skalbarhet, tillgänglighet och isolering av tjänster. Distributionskonfigurationerna är därför mycket omfattande och omfattar en enda central dator till konfigurationer som omfattar flera dedikerade servrar över flera platser.
 
 >[!NOTE]
 >
->Som programvaruleverantör anger vi kompatibel infrastruktur för maskin- och programvara. De maskinvarurekommendationer som ges här är endast avsedda som information och baseras på vår erfarenhet. Adobe ansvarar inte för beslut som fattas utifrån dessa. Det beror också på era affärsregler och rutiner samt kritiken och de prestandanivåer som krävs för projektet.
+>Som programvaruleverantör anger vi kompatibel infrastruktur för maskin- och programvara. De maskinvarurekommendationer som ges här är endast avsedda som information och baseras på vår erfarenhet. Adobe skall inte vara ansvarig för beslut som fattas på grundval av dessa beslut. Det beror också på era affärsregler och rutiner samt kritiken och de prestandanivåer som krävs för projektet.
 
 ![](assets/s_ncs_install_architecture.png)
 
 >[!CAUTION]
 >
->Om inget annat uttryckligen anges är installation, uppdatering och underhåll av alla komponenter i en Adobe Campaign-plattform datoradministratörens ansvar. Detta innebär att man måste implementera förutsättningarna för Adobe Campaign-program samt att [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) mellan komponenterna följs.
+>Om inget annat uttryckligen anges är installation, uppdatering och underhåll av alla komponenter i en Adobe Campaign-plattform datoradministratörens ansvar. Detta innebär att man måste implementera förutsättningarna för Adobe Campaign-program samt följa [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) mellan komponenterna.
 
 ## Presentationslager {#presentation-layer}
 
 Programmet kan nås på olika sätt, beroende på användarnas behov: Rich Client, Thin Client eller API Integration.
 
-* **Rich Client**: Programmets huvudanvändargränssnitt är en avancerad klient, d.v.s. ett inbyggt program (Windows) som kommunicerar med Adobe Campaign-programservern enbart med standardInternetprotokoll (SOAP, HTTP osv.). Den här konsolen är mycket användarvänlig och ger mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
+* **Rich Client**: Programmets huvudanvändargränssnitt är en avancerad klient, d.v.s. ett inbyggt program (Windows) som kommunicerar med Adobe Campaign programserver enbart med standardInternetprotokoll (SOAP, HTTP osv.). Den här konsolen är mycket användarvänlig och ger mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
 * **Tunn klient**: Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-gränssnitt, som rapporteringsmodulen, godkännandefaser, funktioner för distribuerad marknadsföring (central/lokal), instansövervakning osv. I det här läget kan du inkludera Adobe Campaign-funktioner i ett intranät eller ett extranät.
-* **Integrering via API:erna**: I vissa fall kan systemet anropas från ett externt program med hjälp av de webbtjänstAPI:er som exponeras via SOAP-protokollet.
+* **Integrering via API:erna**: I vissa fall kan systemet anropas från ett externt program med hjälp av de API:er för webbtjänster som exponeras via SOAP-protokollet.
 
 ## Logiskt programlager {#logical-application-layer}
 
-Adobe Campaign är en enda plattform med olika program som tillsammans utgör en öppen och skalbar arkitektur. Plattformen Adobe Campaign är skriven i ett flexibelt programlager och kan enkelt konfigureras för att tillgodose företagets behov. Detta tillgodoser företagets växande behov ur funktionell och teknisk synvinkel. Den distribuerade arkitekturen säkerställer linjär skalbarhet av systemet från tusentals meddelanden till miljontals meddelanden.
+Adobe Campaign är en enda plattform med olika program som tillsammans utgör en öppen och skalbar arkitektur. Adobe Campaign-plattformen är skriven i ett flexibelt programlager och kan enkelt konfigureras för att tillgodose företagets behov. Detta tillgodoser företagets växande behov ur funktionell och teknisk synvinkel. Den distribuerade arkitekturen säkerställer linjär skalbarhet av systemet från tusentals meddelanden till miljontals meddelanden.
 
 Adobe Campaign förlitar sig på en uppsättning processer på serversidan som fungerar tillsammans.
 
@@ -89,7 +87,7 @@ Den här processen kan hantera anpassning och automatisk sändning till en tredj
 
 **Omdirigeringsserver** (nlserver webmdl)
 
-För e-post hanterar Adobe Campaign automatiskt öppning och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
+För e-post hanterar Adobe Campaign automatiskt öppnings- och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
 
 För att garantera högsta tillgänglighet är denna process helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP-anrop (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
 
@@ -127,7 +125,7 @@ Den här processen innehåller statistik om antalet anslutningar, de meddelanden
 
 >[!NOTE]
 >
->Den fullständiga listan med moduler för Adobe Campaign finns i [det här dokumentet](../../production/using/operating-principle.md).
+>En fullständig lista över Adobe Campaign-moduler finns i [det här dokumentet](../../production/using/operating-principle.md).
 
 ## Beständigt lager {#persistence-layer}
 
@@ -135,4 +133,4 @@ Databasen används som ett beständigt lager och innehåller nästan all informa
 
 Databasens tillförlitlighet är av yttersta vikt eftersom de flesta Adobe Campaign-komponenter kräver åtkomst till databasen för att kunna utföra sina uppgifter (med undantag för omdirigeringsmodulen).
 
-Plattformen levereras fördefinierad med en marknadsföringscentrerad datamarknad eller kan enkelt placeras ovanpå en befintlig datamarknad och ett befintligt schema med hjälp av något av de större Relational Database Management Systems (RDBMS). Alla data på datamarknaden nås av Adobe Campaign-plattformen via SQL-anrop från Adobe Campaign till databasen. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
+Plattformen levereras fördefinierad med en marknadsföringscentrerad datamarknad eller kan enkelt placeras ovanpå en befintlig datamarknad och ett befintligt schema med hjälp av något av de större Relational Database Management Systems (RDBMS). Alla data i datafilen nås av Adobe Campaign-plattformen via SQL-anrop från Adobe Campaign till databasen. Adobe Campaign har också en komplett uppsättning ETL-verktyg (Extract Transform and Load) för import och export av data till och från systemet.
