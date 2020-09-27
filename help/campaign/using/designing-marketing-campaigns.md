@@ -1,7 +1,7 @@
 ---
 title: Utforma marknadsföringskampanjer
 seo-title: Utforma marknadsföringskampanjer
-description: Utforma marknadsföringskampanjer
+description: Definiera, optimera, genomför och analysera marknadsföringskampanjer.
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../campaign/using/accessing-campaigns.md) och [Konfigurera marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Med modulen **Marketing Resource Management (MRM)** kan ni dessutom styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta hittar du i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
+Med modulen **Marketing Resource Management (MRM)** kan ni dessutom styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Med modulen **Marketing Resource Management (MRM)** kan ni dessutom styra markna
 
 Följande koncept måste vara kända i samband med Campaign:
 
-* **Kampanj**
+* **Campaign**
 
    En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, regler för målinriktning, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
 
@@ -58,13 +58,13 @@ Följande koncept måste vara kända i samband med Campaign:
 
    Ett kampanjarbetsflöde innehåller samma aktiviteter som för alla arbetsflöden, men är specifikt för kampanjen. Det gör att du kan skapa och konfigurera leveranser för alla tillgängliga kanaler.
 
-   Mer information om detta hittar du i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+   Mer information om detta finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Mål**
 
    I kampanjen, programmet eller planen kan ni ange en lista med mål. Dessa är kvantifierade värden som ska uppnås. I slutet av kampanjen, programmet eller planen kan ni med MRM-modulen jämföra målen och resultaten i dedikerade rapporter.
 
-* **Leveransöversikt**
+* **Leveransbeskrivning**
 
    En leveransdisposition är en strukturerad beskrivning av en leverans. Varje leverans kan referera till en leveransdisposition som t.ex. innehåller relaterade erbjudanden, dokument som ska bifogas eller en länk till butiker. Det går att referera till ett erbjudande i leveransen enligt den valda leveransdispositionen.
 
