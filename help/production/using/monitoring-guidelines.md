@@ -1,6 +1,6 @@
 ---
 title: Riktlinjer för övervakning
-description: I detta avsnitt presenteras allmänna riktlinjer för övervakningen av Campaign Classic.
+description: Upptäck riktlinjer och bästa metoder för att övervaka instans och processer i Campaign.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '712'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Övervaka Campaign Classic-processer {#monitoring-campaign-classic-processes}
+## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
@@ -52,7 +52,7 @@ Det finns fler sätt att övervaka olika Campaign-processer. De innehåller fler
 
 Flera automatiska metoder är tillgängliga. som hjälper dig att övervaka instansen. Du kan till exempel skapa e-postrapporter med identifierade avvikelser, hämta en lista med indikatorer i XML-format osv. [Klicka här](../../production/using/monitoring-processes.md#automatic-monitoring) om du vill ha mer information.
 
-**Granskningsspår**
+**Verifieringskedja**
 
 Med granskningsspåret kan du visualisera den fullständiga historiken över ändringar som rör alternativ, arbetsflöden och scheman i instansen. [Klicka här](../../production/using/audit-trail.md) om du vill ha mer information.
 
@@ -72,7 +72,7 @@ På Kontrollpanelen kan du hantera flera inställningar för din instans: hanter
 
 Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. [Klicka här](../../workflow/using/heatmap.md) om du vill ha mer information.
 
-**Granskningsspår**
+**Verifieringskedja**
 
 Med granskningsspåret kan du visualisera alla ändringar som har gjorts i arbetsflöden samt deras aktuella tillstånd. [Klicka här](../../production/using/audit-trail.md).
 
@@ -96,9 +96,9 @@ Du kan förbättra prestandan genom att följa riktlinjer och bästa praxis när
 
 **SMTP-rapporter**
 
-SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Lär dig mer](../../production/using/monitoring-processes.md)
+SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../../production/using/monitoring-processes.md)
 
-**God praxis**
+**Bästa praxis**
 
 [De bästa sätten att skicka och designa](../../delivery/using/delivery-best-practices.md) kan hjälpa er att förbättra deras prestanda.
 
@@ -139,7 +139,7 @@ Tekniska resurser finns i Campaign Classic dokumentation. Vi rekommenderar att d
 **Värdmodeller och funktioner**
 
 * [Värdmodeller för Campaign Classic](../../installation/using/hosting-models.md)
-* [Funktioner för värdmodeller](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Funktioner för värdmodeller](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html)
 
 **Serverkonfiguration**
 
