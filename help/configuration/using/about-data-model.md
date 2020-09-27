@@ -1,6 +1,6 @@
 ---
-title: Om datamodellen Adobe Campaign Classic
-description: I det här dokumentet beskrivs grunderna i datamodellen för Adobe Campaign Classic.
+title: Om Adobe Campaign Classic datamodell
+description: Lär dig hur du utökar datamodellen för Campaign, redigerar scheman, använder API:er med mera.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,31 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 5%
 
 ---
 
 
-# Om Campaign-datamodellen{#about-data-model}
+# About the Campaign data model{#about-data-model}
 
-I det här avsnittet beskrivs grunderna i datamodellen för Adobe Campaign Classic, vilket ger en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion.
+I det här avsnittet beskrivs grunderna i Adobe Campaign Classic datamodell, vilket ger en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion.
 
-Adobe Campaign-databasens konceptuella datamodell består av en uppsättning inbyggda tabeller och deras interaktion.
+Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion.
 
 Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på **[!UICONTROL Documentation]** fliken.
 
 ![](assets/data-model_documentation-tab.png)
 
-Mer information om standardbeskrivningen för datamodellen i Campaign Classic finns i [det här avsnittet](../../configuration/using/data-model-description.md).
+Mer information om standarddatamodellen för Campaign Classic finns i [det här avsnittet](../../configuration/using/data-model-description.md).
 
-Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign, som kallas schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
+Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## Översikt {#data-model-overview}
 
-Adobe Campaign bygger på en relationsdatabas som innehåller tabeller som är länkade tillsammans. Den grundläggande strukturen i Adobe Campaign-datamodellen beskrivs nedan.
+Adobe Campaign förlitar sig på en relationsdatabas som innehåller tabeller som är länkade tillsammans. Den grundläggande strukturen i Adobe Campaign datamodell beskrivs på följande sätt.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Slutligen består en del av datamodellen av tekniska data som används för ans�
 
 ## Använda standardmottagartabellen {#default-recipient-table}
 
-Den körklara mottagartabellen i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
+Registret Mottagare som är klar att användas i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
 
 Fördelarna med att använda standardmottagartabellen är följande:
 
@@ -86,7 +86,7 @@ Och eftersom mottagartabellen är en del av produkten utvecklas både tabellen o
 
 ## Utöka datamodellen {#extending-data-model}
 
-När ni börjar med Adobe Campaign måste ni utvärdera standarddatamodellen för att kontrollera vilken tabell som är bäst lämpad för att lagra era marknadsföringsdata.
+När du börjar med Adobe Campaign måste du utvärdera standarddatamodellen för att kontrollera vilken tabell som är bäst lämpad för att lagra dina marknadsföringsdata.
 
 Om det är relevant kan du använda den förvalda mottagartabellen med de färdiga fälten, som beskrivs i [det här avsnittet](#default-recipient-table).
 
@@ -101,11 +101,11 @@ Mer information om hur du konfigurerar tilläggsscheman för att utöka den konc
 >
 >Att utöka datamodellen är reserverat för avancerade användare.
 
-## Använda en anpassad mottagartabell {#custom-recipient-table}
+## Using a custom recipient table {#custom-recipient-table}
 
 När du utformar din Adobe Campaign-datamodell kan du använda [den körklara mottagartabellen](#default-recipient-table)eller välja att skapa en mottagartabell som inte är standard för att lagra dina marknadsföringsprofiler.
 
-Om er datamodell inte passar den mottagarcentrerade strukturen kan ni skapa andra tabeller som målgruppsdimension i Adobe Campaign. Detta kan till exempel vara relevant när du behöver rikta in dig på hushåll, konton (som mobiltelefoner) och företag/webbplatser i stället för bara mottagare.
+Om datamodellen inte passar den mottagarcentrerade strukturen kan du skapa andra tabeller som målningsdimension inom Adobe Campaign. Detta kan till exempel vara relevant när du behöver rikta in dig på hushåll, konton (som mobiltelefoner) och företag/webbplatser i stället för bara mottagare.
 
 >[!NOTE]
 >
