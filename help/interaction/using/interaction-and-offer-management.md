@@ -1,8 +1,6 @@
 ---
-title: Hantering av samverkan och erbjudanden
-seo-title: Hantering av samverkan och erbjudanden
-description: Hantering av samverkan och erbjudanden
-seo-description: null
+title: Interaktion och erbjudandehantering
+description: Skicka de bästa erbjudandena till dina kontakter baserat på regler för behörighet.
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -15,12 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 6%
 
 ---
 
 
-# Hantering av samverkan och erbjudanden{#interaction-and-offer-management}
+# Interaktion och erbjudandehantering{#interaction-and-offer-management}
 
 Med interaktion kan du svara i realtid under en interaktion med en viss kontakt (en kund eller ett visst mål) genom att göra dem till ett eller flera anpassade erbjudanden. Det kan till exempel vara enkla kommunikationsmeddelanden, specialerbjudanden för en eller flera produkter eller en tjänst.
 
@@ -32,7 +33,7 @@ Med Interaction kan du skapa och hantera en katalog med erbjudanden och konfigur
 
 ![](assets/Offermgt2.png)
 
-Titta på den här videon om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction: Översikt över [Adobe Campaign Interaction](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+Titta på den här videon om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction: [Adobe Campaign Interaction overview](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## Relaterade ämnen
 
@@ -40,4 +41,4 @@ Titta på den här videon om du vill bekanta dig med interaktionsfunktionen och 
 |---|---|
 | [Interaktionsimplementeringssteg](../../interaction/using/implementation-steps.md) | [Distribution av testerbjudanden](../../interaction/using/about-offers-simulation.md) |
 | [Live-/designmiljöer](../../interaction/using/live-design-environments.md) | [Lägga till ett erbjudande i ett e-postmeddelande](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md) | [Användningsfall: lägga till ett erbjudande på en webbplats](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Skapa erbjudandeplatser](../../interaction/using/creating-offer-spaces.md) | [Användningsfall: lägga till ett erbjudande på en webbplats](../../interaction/using/offers-on-an-inbound-channel.md) |
