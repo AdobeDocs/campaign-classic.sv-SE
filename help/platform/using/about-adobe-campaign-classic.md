@@ -1,7 +1,7 @@
 ---
 title: Om Adobe Campaign Classic
 seo-title: Om Adobe Campaign Classic
-description: Om Adobe Campaign Classic
+description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer.
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 98%
 
 ---
 
 
-# Om Adobe Campaign Classic{#about-adobe-campaign-classic}
+# Get Started with Campaign Classic{#about-adobe-campaign-classic}
 
 För att kunna leverera en hög grad av kundengagemang och fantastiska upplevelser måste varumärken skapa enhetliga kundupplevelser på alla kontaktytor. De som marknadsför kan nu effektivt utforma, planera, genomföra, hantera och optimera marknadsföringskampanjer över flera kanaler som ger hög avkastning på marknadsföringsinvesteringar och ökar lojaliteten.
 
