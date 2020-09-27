@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -82,5 +82,5 @@ I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera p
 * Lär dig hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../workflow/using/importing-data.md).
 * De effektivaste arbetsflödena beskrivs närmare på [den här sidan](../../workflow/using/workflow-best-practices.md).
 * Mer information om arbetsflödeskörning finns i [det här avsnittet](../../workflow/using/starting-a-workflow.md).
-* Lär dig hur du övervakar arbetsflöden på [den här sidan](../../workflow/using/monitoring-workflow-execution).
+* Lär dig hur du övervakar arbetsflöden på [den här sidan](../../workflow/using/monitoring-workflow-execution.md).
 * Lär dig hur du ger användare åtkomst till arbetsflöden på [den här sidan](../../workflow/using/managing-rights.md).
