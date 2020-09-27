@@ -1,8 +1,6 @@
 ---
 title: Om social marknadsföring
-seo-title: Om social marknadsföring
-description: Om social marknadsföring
-seo-description: null
+description: Lär dig hur du använder Campaign för att interagera med kunder via Facebook och Twitter.
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -15,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 4%
 
 ---
 
@@ -28,15 +29,15 @@ Programmet **Hantera sociala nätverk** (social marknadsföring) som är utforma
 
    Med social marknadsföring kan ni skicka meddelanden på Facebook och Twitter.
 
-   * Med Adobe Campaign kan ni publicera meddelanden direkt till er Facebook-vägg och till ert twitter-konto.
+   * Med Adobe Campaign kan du skicka meddelanden direkt till din Facebook-vägg och till ditt twitter-konto.
    * Du kan också skicka direktmeddelanden till alla dina Twitter-följare.
 
 1. **Hämtar nya kontakter**
 
-   Adobe Campaign Social Marketing gör det också enkelt att skaffa nya kontakter via Facebook: kontakta användare och fråga dem om de vill dela sin profilinformation. Om de godkänner det återhämtar Adobe Campaign automatiskt data, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera strategier för flera kanaler.
+   Adobe Campaign Social Marketing gör det också enkelt att skaffa nya kontakter via Facebook: kontakta användare och fråga dem om de vill dela sin profilinformation. Om de godkänner det återhämtar Adobe Campaign automatiskt data, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier.
 
 >[!IMPORTANT]
 >
 >Facebook och Twitter gör regelbundna ändringar i sina skärmar och processer. Det här dokumentet kommer att uppdateras i enlighet med detta.
 >
->Adobe Campaign begär att ni följer villkoren för tjänsten Facebook och Twitter.
+>Adobe Campaign begär att du följer villkoren för tjänsten Facebook och Twitter.
