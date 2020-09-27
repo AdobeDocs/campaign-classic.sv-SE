@@ -9,10 +9,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 95%
+source-wordcount: '2119'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
       + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}
    + Komma igång med Adobe Campaign {#starting-with-adobe-campaign}
-      + [Om Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+      + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
       + [Starta Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Arbetsytan i Adobe Campaign](platform/using/adobe-campaign-workspace.md)
@@ -266,7 +266,7 @@ ht-degree: 95%
       + [Användningsfall: visa rapport gällande svar på en nätundersökning](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Utforma webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Om webbapplikationer](web/using/about-web-applications.md)
+      + [Kom igång med webbprogram](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases--creating-overviews.md)
@@ -342,7 +342,7 @@ ht-degree: 95%
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Introduktion {#introduction}
-      + [Om arbetsflöden](workflow/using/about-workflows.md)
+      + [Kom igång med arbetsflöden](workflow/using/about-workflows.md)
       + [Om aktiviteter](workflow/using/about-activities.md)
    + Allmän åtgärd {#general-operation}
       + [Bygga ett arbetsflöde](workflow/using/building-a-workflow.md)
@@ -478,7 +478,7 @@ ht-degree: 95%
       + [Överföring till mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Plattform för mid-sourcing](workflow/using/mid-sourcing-platform.md)
 + Hantera erbjudanden {#managing-offers}
-   + Interaktionsöversikt {#interaction-overview}
+   + Kom igång med Interaktion {#interaction-overview}
       + [Interaktion och erbjudandehantering](interaction/using/interaction-and-offer-management.md)
       + [Ordlista](interaction/using/glossary.md)
       + [Bästa praxis för interaktion](interaction/using/interaction-best-practices.md)
@@ -530,7 +530,7 @@ ht-degree: 95%
       + [Erbjudanden på en utgående kanal](interaction/using/offers-on-an-outbound-channel.md)
 + Transaktionsmeddelanden {#transactional-messaging}
    + Introduktion {#introduction}
-      + [Om transaktionsmeddelanden](message-center/using/about-transactional-messaging.md)
+      + [Kom igång med transaktionsmeddelanden](message-center/using/about-transactional-messaging.md)
       + [Transaktionsmeddelandets arkitektur](message-center/using/transactional-messaging-architecture.md)
       + [Händelsebeskrivning](message-center/using/event-description.md)
    + Instanskonfiguration {#instance-configuration}
