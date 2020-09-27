@@ -1,8 +1,6 @@
 ---
 title: Om transaktionsmeddelanden
-seo-title: Om transaktionsmeddelanden
-description: Om transaktionsmeddelanden
-seo-description: null
+description: 'Skicka utlösarmeddelanden baserat på händelser som genererats från informationssystem. '
 page-status-flag: never-activated
 uuid: c854daac-8756-44f3-a4e2-be31177ab9d1
 contentOwner: sauviat
@@ -15,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 0%
+source-wordcount: '164'
+ht-degree: 3%
 
 ---
 
@@ -37,4 +35,4 @@ I den här specifika arkitekturen separeras körningscellen från kontrollinstan
 
 >[!NOTE]
 >
->Om du vill skapa nya användare för MSMQ-körningsinstanser på Adobe Cloud måste du kontakta Adobes kundtjänst. Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till mappar för &#39;Real time events&#39; (nmsRtEvent).
+>Om du vill skapa nya användare för instanser av körning i Message Center på Adobe Cloud måste du kontakta Adobe kundtjänst. Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till mappar för &#39;Real time events&#39; (nmsRtEvent).
