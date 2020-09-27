@@ -1,8 +1,6 @@
 ---
 title: Om arbetsflöden
-seo-title: Om arbetsflöden
-description: Om arbetsflöden
-seo-description: null
+description: Automatisera processerna med arbetsflöden, hantera data och målgrupper, skicka meddelanden med mera.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -15,26 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 16%
 
 ---
 
 
-# Om arbetsflöden{#about-workflows}
+# Kom igång med arbetsflöden{#about-workflows}
 
-Adobe Campaign innehåller en arbetsflödesmodul som gör det möjligt att samordna alla processer och uppgifter i olika moduler på programservern. I den omfattande grafiska miljön kan ni utforma processer som segmentering, kampanjhantering, filhantering, medarbetare osv. Arbetsflödesmotorn kör och spårar dessa processer.
+## Om arbetsflöden
 
-Du kan till exempel använda ett arbetsflöde för att hämta en fil från en server, expandera den och sedan importera poster i Adobe Campaign-databasen.
+Adobe Campaign innehåller en arbetsflödesmodul som gör det möjligt att samordna alla processer och uppgifter i de olika modulerna i programservern. I den omfattande grafiska miljön kan du utforma processer såsom segmentering, kampanjkörning, filhantering och mänskligt deltagande osv. Arbetsflödesmotorn kör och spårar dessa processer.
 
-Ett arbetsflöde kan även omfatta en eller flera operatorer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransåtgärd, tilldela en eller flera operatorer en uppgift att arbeta med innehåll, ange mål och godkänna korrektur innan leveransen påbörjas.
+Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en server, expandera den och sedan importera poster som finns i databasen i Adobe Campaign.
+
+Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
 
 Arbetsflöden sker i olika sammanhang och under olika faser av kampanjhanteringsprocessen.
 
 Adobe Campaign använder arbetsflöden för att
 
-* Utför riktade kampanjer. Mer information finns i [Implementeringssteg](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Skapa kampanjer: för varje kampanj kan du med fliken **[!UICONTROL Workflow]** skapa målet och leveranserna. Mer information finns i [Kampanjarbetsflöden](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Utför tekniska processer: rensning, insamling av spårningsinformation eller preliminära beräkningar. Mer information finns i [Tekniska arbetsflöden](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Utför riktade kampanjer. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* Skapa kampanjer: för varje kampanj kan du med fliken **[!UICONTROL Workflow]** skapa målet och leveranserna. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
+* Utför tekniska processer: rensning, insamling av spårningsinformation eller preliminära beräkningar. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
 
 Ett arbetsflöde kan betyda både en processdefinition (arbetsflödesmodellen, som är en representation av vad som ska hända) och en instans av den här processen (en arbetsflödesinstans, som är en representation av vad som faktiskt händer).
 
@@ -70,3 +73,14 @@ Varje arbetsflöde innehåller:
 
    Läs mer om arbetsflödesdata och tabeller i [det här avsnittet](../../workflow/using/how-to-use-workflow-data.md).
 
+## Viktiga principer och bästa metoder
+
+I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera processer med arbetsflöden:
+
+* Läs mer om arbetsflödesaktiviteter på [den här sidan](../../workflow/using/how-to-use-workflow-data.md).
+* Lär dig hur du skapar ett arbetsflöde i [det här avsnittet](../../workflow/using/building-a-workflow.md).
+* Lär dig hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../workflow/using/importing-data.md).
+* De effektivaste arbetsflödena beskrivs närmare på [den här sidan](../../workflow/using/workflow-best-practices.md).
+* Mer information om arbetsflödeskörning finns i [det här avsnittet](../../workflow/using/starting-a-workflow.md).
+* Lär dig hur du övervakar arbetsflöden på [den här sidan](../../workflow/using/monitoring-workflow-execution).
+* Lär dig hur du ger användare åtkomst till arbetsflöden på [den här sidan](../../workflow/using/managing-rights.md).
