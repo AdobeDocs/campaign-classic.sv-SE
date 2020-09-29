@@ -1,7 +1,7 @@
 ---
-title: Personaliseringsblock
-seo-title: Personaliseringsblock
-description: Personaliseringsblock
+title: Block för personalisering
+seo-title: Block för personalisering
+description: Block för personalisering
 seo-description: null
 page-status-flag: never-activated
 uuid: f9867f8d-f6ce-4a5f-b6b4-fd8056d28576
@@ -15,19 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 811d664807776473790b74c4cb6a672b5ca2bdd8
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Personaliseringsblock{#personalization-blocks}
+# Block för personalisering{#personalization-blocks}
 
 Personaliseringsblock är dynamiska, personaliserade och innehåller en specifik rendering som du kan infoga i leveranserna. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Se [Infoga personaliseringsblock](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i video](#personalization-blocks-video)
 
 Personaliseringsblocken nås via noden **[!UICONTROL Resources > Campaign Management > Personalization blocks]** i Adobe Campaign Explorer. Flera block är tillgängliga som standard (se [Inkörda anpassningsblock](#out-of-the-box-personalization-blocks)).
 
@@ -152,7 +152,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    ![](assets/s_ncs_user_personalized_block.png)
 
-   * Ange blockets etikett. Den här etiketten visas i fönstret där personaliseringsfältet infogas.
+   * Ange blockets etikett. Den här etiketten visas i fönstret för infogning av anpassningsfält.
    * Välj **[!UICONTROL Visible in the customization menus]** att göra det här blocket tillgängligt från ikonen för infogning av anpassningsfält.
    * Om det behövs väljer du **[!UICONTROL The content of the personalization block depends upon the format]** att definiera två separata block för e-post i HTML-format och för e-post i textformat.
 
@@ -162,7 +162,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    * Ange innehållet (i HTML, text, JavaScript osv.) av personaliseringsblocket och klicka **[!UICONTROL Save]**.
 
-## Skräddarsy e-postmeddelanden med dynamiska innehållsblock {#personalization-blocks-video}
+## Så här personaliserar du e-postmeddelanden med dynamiska innehållsblock {#personalization-blocks-video}
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i e-postleveransen.
 
