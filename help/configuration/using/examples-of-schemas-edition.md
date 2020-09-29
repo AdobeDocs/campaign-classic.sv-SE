@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 042349ae62012984a040b578d97706bae1c9917d
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
@@ -304,3 +307,46 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
+## Användningsfall: länka ett fält till en befintlig referenstabell {#uc-link}
+
+I det här exemplet visas hur du kan använda en befintlig referenstabell som ett alternativ till inbyggda uppräkningsmekanismer för Adobe Campaign (enum, userEnum eller dbEnum).
+
+Du kan också använda en befintlig referenstabell som uppräkning i dina scheman. Detta kan du göra genom att skapa en länk mellan en tabell och referenstabellen, och genom att lägga till attributet **displayAsField=&quot;true&quot;**.
+
+I det här exemplet innehåller referenstabellen en lista med banknamn och identifierare:
+
+```
+<srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
+xtkschema="xtk:srcSchema">
+    <element img="cus:bank16x16.png" label="Banks" name="bank">
+        <compute-string expr="@name"/>
+        <key name="id">
+            <keyfield xpath="@id"/>
+        </key>
+        <attribute label="Bank Id" name="id" type="short"/>
+        <attribute label="Name" length="64" name="name" type="string"/>
+     </element> 
+</srcSchema>
+```
+
+I alla tabeller som använder den här referenstabellen definierar du en länk och lägger till attributet **displayAsField=&quot;true&quot;** .
+
+```
+<element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
+```
+
+Användargränssnittet visar inte en länk utan ett fält. När användaren väljer det fältet kan han eller hon välja ett värde i referenstabellen eller använda funktionen Komplettera automatiskt.
+
+![](assets/schema-edition-ex.png)
+
+* För att den ska kunna slutföras automatiskt måste du definiera en beräkningssträng i referenstabellen.
+
+* Lägg till attributet **noDbIndex=&quot;true&quot;** i länkdefinitionen för att förhindra att Adobe Campaign skapar ett index för de värden som lagras i länkens källtabell.
+
+## Relaterade ämnen
+
+* [Arbeta med uppräkningar](../../platform/using/managing-enumerations.md)
+
+* [Kom igång med Campaign-scheman](../../configuration/using/about-schema-edition.md)
+
+* [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md)
