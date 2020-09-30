@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3704'
 ht-degree: 87%
 
 ---
@@ -32,6 +32,8 @@ Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/usin
 En anteckning har lagts till för att ange att antalet aktiva profiler endast är tillgängligt för marknadsinstanser. [Läs mer](../../platform/using/about-profiles.md#active-profiles)
 
 Ett nytt exempel om schemaversionen har lagts till för att länka ett fält till en befintlig referenstabell. [Läs mer](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+En anteckning har lagts till om användningen av ytterligare data med dirigerade adresser vid leveranser. [Läs mer](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Augusti 2020 {#aug-2020}
 
