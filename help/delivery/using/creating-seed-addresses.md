@@ -1,7 +1,7 @@
 ---
-title: Skapa dirigerade adresser
-seo-title: Skapa dirigerade adresser
-description: Skapa dirigerade adresser
+title: Skapa fröadresser
+seo-title: Skapa fröadresser
+description: Skapa fröadresser
 seo-description: null
 page-status-flag: never-activated
 uuid: 0dae107a-7b53-4096-93c3-9517b402cbc9
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
 
-# Skapa dirigerade adresser{#creating-seed-addresses}
+# Skapa fröadresser{#creating-seed-addresses}
 
 Seed-adresser hanteras inte via standardprofiler och -mål, utan i en dedikerad nod i Adobe Campaign-hierarkin **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på **[!UICONTROL Seed addresses]** noden och väljer **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** för att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. Mer information finns i [Definiera adresser](#defining-addresses).
+Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på **[!UICONTROL Seed addresses]** noden och väljer **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** för att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. For more on this, refer to [Defining addresses](#defining-addresses).
 
-Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Mer information finns i [Skapa dirigerade adressmallar](#creating-seed-address-templates).
+Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven för de aktuella leveranserna och kampanjerna. Mer information finns i [Skapa dirigerade adressmallar](#creating-seed-address-templates).
 
 ## Definiera adresser {#defining-addresses}
 
@@ -44,7 +47,12 @@ Följ stegen nedan för att skapa dirigerade adresser:
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
 1. På **[!UICONTROL Seed fields]** fliken anger du de värden som ska infogas i leveransloggarna under analysfasen (i **[!UICONTROL nms:broadLog]** tabellen).
+
 1. På fliken **[!UICONTROL Additional data]** anger du de personaliseringsdata som används för leveranser som skapas i arbetsflödena för datahantering och som du vill tilldela ett specifikt värde till.
+
+   >[!NOTE]
+   >
+   >Se till att ytterligare måldata har definierats med ett alias som börjar med @ i **[!UICONTROL Enrichment]** aktiviteten. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
 
 ## Skapa mallar för dirigerade adresser {#creating-seed-address-templates}
 
