@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # Allmänna konfigurationer{#general-configurations}
 
-I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 om du migrerar från v5.11 eller v6.02.
+I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 om du migrerar från en v5.11 eller en v6.02.
 
 Dessutom:
 
@@ -94,7 +91,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
 >
 >Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: måste du konfigurera säkerhetszonerna och därför samla in operatörens IP-adresser.
 
-Adobe Campaign v7 omfattar begreppet **säkerhetszoner**. Varje användare måste associeras med en zon för att kunna logga in på en instans och användarens IP-adress måste inkluderas i de adresser eller adressintervall som definieras i säkerhetszonen. Du kan konfigurera säkerhetszoner i konfigurationsfilen för Adobe Campaign-servern. Den säkerhetszon som en användare är kopplad till måste definieras i konsolen (**[!UICONTROL Administration > Access management > Operators]**).
+Adobe Campaign v7 innehåller begreppet **säkerhetszoner**. Varje användare måste associeras med en zon för att kunna logga in på en instans och användarens IP-adress måste inkluderas i de adresser eller adressintervall som definieras i säkerhetszonen. Du kan konfigurera säkerhetszoner i Adobe Campaign-serverkonfigurationsfilen. Den säkerhetszon som en användare är kopplad till måste definieras i konsolen (**[!UICONTROL Administration > Access management > Operators]**).
 
 **Före migreringen** ber du nätverksadministratören att hjälpa dig att definiera de säkerhetszoner som ska aktiveras efter migreringen.
 
@@ -202,11 +199,11 @@ Exempel:
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7 integrerar en nyare JavaScript-tolk. Uppdateringen kan dock leda till att vissa skript inte fungerar som de ska. Eftersom den tidigare motorn var mer flexibel skulle vissa syntaxer fungera, vilket inte längre är fallet med den nya versionen av motorn.
+Adobe Campaign v7 innehåller en nyare JavaScript-tolk. Uppdateringen kan dock leda till att vissa skript inte fungerar som de ska. Eftersom den tidigare motorn var mer flexibel skulle vissa syntaxer fungera, vilket inte längre är fallet med den nya versionen av motorn.
 
 Syntaxen **[!UICONTROL myObject.@attribute]** gäller nu endast för XML-objekt. Den här syntaxen kan användas för att personalisera leveranser och innehållshantering. Om du använde den här typen av syntax för ett objekt som inte är XML kommer personaliseringsfunktionerna inte längre att fungera.
 
-För alla andra objekttyper är syntaxen nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ett icke-XML-objekt som använder följande syntax:**[!UICONTROL employee.@sn]**måste nu följande syntax användas:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+För alla andra objekttyper är syntaxen nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ett icke-XML-objekt som använder följande syntax: **[!UICONTROL employee.@sn]** måste nu följande syntax användas: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Tidigare syntax:
 
@@ -460,7 +457,7 @@ Så här löser du en konflikt:
 Det finns tre möjliga sätt att lösa en konflikt:
 
 * **[!UICONTROL Declared as resolved]**: kräver åtgärd från operatörens sida i förväg.
-* **[!UICONTROL Accept the new version]**: rekommenderas om Adobe Campaign inte har ändrat resurserna.
+* **[!UICONTROL Accept the new version]**: rekommenderas om resurserna som tillhandahålls med Adobe Campaign inte har ändrats av användaren.
 * **[!UICONTROL Keep the current version]**: betyder att uppdateringen inte godkänns.
 
    >[!IMPORTANT]
@@ -481,7 +478,7 @@ Om du väljer att lösa konflikten manuellt gör du så här:
 
 ## Tomcat {#tomcat}
 
-Den inbyggda Tomcat-servern i Adobe Campaign v7 har ändrat version (Tomcat 7). Installationsmappen (tomcat-6) har därför ändrats (tomcat 7). Efter uppgraderingen kontrollerar du att sökvägarna är länkade till den uppdaterade mappen (i **[!UICONTROL serverConf.xml]** filen):
+Den integrerade Tomcat-servern i Adobe Campaign v7 har ändrat version (Tomcat 7). Installationsmappen (tomcat-6) har därför ändrats (tomcat 7). Efter uppgraderingen kontrollerar du att sökvägarna är länkade till den uppdaterade mappen (i **[!UICONTROL serverConf.xml]** filen):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-7/bin/bootstrap.jar 
@@ -512,7 +509,7 @@ I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje repre
 >[!IMPORTANT]
 Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kan utnyttja alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
-Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i Adobe Campaign v7-mappen. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** fälten och **[!UICONTROL textSource]** fälten). Innehållet som fanns i **tabellen NmsEmailOfferView** har flyttats till erbjudandetabellen.
+Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i mappen Adobe Campaign v7. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** fälten och **[!UICONTROL textSource]** fälten). Innehållet som fanns i **tabellen NmsEmailOfferView** har flyttats till erbjudandetabellen.
 
 >[!NOTE]
 Om du använder det här skriptet kan du inte utnyttja alternativen för innehållshantering och återgivningsfunktioner. För att kunna dra nytta av dessa funktioner måste du tänka om katalogen erbjuder, särskilt erbjudandeinnehållet och konfigurationsutrymmena.
@@ -630,7 +627,7 @@ Om du vill ha den blå banderollen från v7 (som ger dig tillgång till universu
 
 Om du vill dra nytta av de nya rapportfunktionerna måste du välja v.6.x-renderingsmotorn. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller PDF-export fungerar detta inte längre med den nya PDF-exportmotorn (PhantomJS) om du har lagt till ett specifikt skript för OpenOffice.
 
-## Webbprogram {#web-applications}
+## Webbapplikationer {#web-applications}
 
 Det finns två webbprogramfamiljer:
 
@@ -672,7 +669,7 @@ sessionTokenOnly="false"
 
 ### Anonyma webbapplikationer {#anonymous-web-applications}
 
-Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
+Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja återgivningsmotorn v6.x och dra nytta av dess nya funktioner.
 
 >[!NOTE]
 Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Personaliserade rapporter](#personalized-reports).
