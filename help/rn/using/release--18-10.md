@@ -11,11 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 8%
 
 ---
 
@@ -50,11 +50,11 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 **Förbättringar**
 
-* Korrigerade ett problem med datorprocessen med spårningsindikatorer för transaktionsmeddelanden. (NEO-12529, NEO-12581)
+* Korrigerade ett problem med datorprocessen med spårningsindikatorer för transaktionsmeddelanden. (NEO-12529 och NEO-12581)
 * Korrigerade ett problem med HTTPRequest-API som inte väntade på att alla återanrop skulle slutföras. (NEO-12628)
 * Index lades till i kupongtemporära tabeller för att optimera leveransen. (NEO-12437)
 * Korrigerade ett fel vid analys av ett meddelande som riktade till mottagare för japanska (.JP)-domäner. (NEO-12246)
-* I Analytics-integreringen tillåts nu hämtning av AAM-segmentdata med tecknet %. (NEO-12025)
+* I Analytics-integreringen är det nu tillåtet att hämta AAM segmentdata med tecknet %. (NEO-12025)
 * Korrigerade ett Tomcat-kraschproblem när push-meddelanden skickades med HTTP2. (NEO-12701)
 
 ## Version 18.10.3 - build 8981{#release-18-10-3-build-8981}
@@ -79,7 +79,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * Åtgärdade inkonsekvenser i hanteringen av hemliga nycklar.
 * Ett problem med anrikningsaktiviteten när ett fält skrevs som: xml=true och calculate=true
 * Korrigerade ett problem med teckenigenkänning när push-meddelanden skickades till ett mobilprogram.
-* Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt konto med medelkälla.
+* Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt MID-källkonto.
 
 ## Version 18.10.2 - build 8978{#release-18-10-2-build-8978}
 
@@ -111,7 +111,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 >
 >Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
 
-**Vad är nytt?**
+**Nyheter**
 
 <table> 
  <thead> 
@@ -128,7 +128,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
      <li> <p>Spåra tysta meddelanden i iOS </p> </li> 
      <li> <p>Skicka feedback vid registreringssamtal iOS</p> </li> 
      <li> <p>Förbättra förberedelsehastigheten för iOS-leverans</p> </li> 
-    </ul> <p>Som en del av GCM-avskrivningen av Google tillåter nu Android V2-kopplingen bara anslutningar till FCM-servern.</p><p>Mer information finns i den <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">detaljerade dokumentationen</a>. Den manuella uppgraderingen till FCM finns i den här <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artikeln</a>. </p> </td> 
+    </ul> <p>Som en del av GCM-avskrivningen av Google tillåter nu Android V2-kopplingen bara anslutningar till FCM-servern.</p><p>Mer information finns i den <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">detaljerade dokumentationen</a>. Den manuella uppgraderingen till FCM finns i den här <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html">artikeln</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL Data Management-aktivitet<br /> </td> 
@@ -136,7 +136,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
   </tr> 
   <tr> 
    <td> Arbetsflödesövervakning<br /> </td> 
-   <td> <p>Med nya Adobe Campaign Workflow HeatMap har plattformsadministratörerna en snabb grafisk representation av alla samtidiga arbetsflöden, vilket gör att de kan övervaka belastningen på instansen och planera arbetsflödena utifrån detta.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar programmet finns på <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
+   <td> <p>Med nya Adobe Campaign Workflow HeatMap kan plattformsadministratörerna snabbt visa upp alla samtidiga arbetsflöden, vilket gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar programmet finns på <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,19 +151,19 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 **Förbättringar**
 
-* Campaign Classic API:er finns nu på en [dedikerad sida](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Om du använde filen jsapi.chm bör du nu hänvisa till den nya onlineversionen.
-* PostgreSQL 10, Debian 9 och Teradata 16.20 stöds nu. Se [Kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
-* När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. Mer information finns i den [detaljerade dokumentationen](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
+* API:er i Campaign Classic finns nu på en [dedikerad sida](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
+* PostgreSQL 10, Debian 9 och Teradata 16.20 stöds nu. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+* När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * Alternativet **för datumberäkningsformeln** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktmeddelandeleverans. (NEO-9792)
 * Domännamnshanteringen har förbättrats för cookie-spårning och webbprogram. Mer information finns i avsnittet &quot;Technical Evolutions&quot; nedan.
-* Importen av delade resurser i Adobe Marketing Cloud på en leverans- eller landningssida har förbättrats vad gäller säkerhet och prestanda.
-* Det finns en ny kryssruta i det externa kontot för mobilkanaler som gör att du kan använda detaljerade SMPP-spår i loggfilen, vilket gör att dessa utdata är direkt tillgängliga från Adobe Campaign-gränssnittet.
+* Importen av Adobe Marketing Cloud delade resurser på en leverans- eller landningssida har förbättrats vad gäller säkerhet och prestanda.
+* Det finns en ny kryssruta i det externa kontot för mobilkanaler som gör att du kan aktivera detaljerade SMPP-spår i loggfilen, vilket gör att dessa utdata är direkt tillgängliga från Adobe Campaign-gränssnittet.
 * I utsändningarna görs nu en skillnad mellan det maximala antalet anslutningar och det maximala antalet meddelanden per timme. När gränserna nås är det sedan möjligt att veta varför genomströmningen är begränsad. Tidigare gällde samma meddelande (&quot;kvoten uppfylldes&quot;) i båda fallen.
 * Du kan nu ange ett SQL-skript som ska köras när du hämtar en anslutning från poolen. Skriptet kan användas för att ange standardschema. Skriptet används efter frågebanding. (NEO-11256)
 * Campaign SDK lagrar inte längre användar-ID:t så att det uppfyller våra PII-regler. Data lagras nu som en hash.
 * När du importerar en XML-fil för paketexport stöder Campaign nu att det finns strukturlistor i filen, även om kodningen uttryckligen deklareras i den.
 
-**Teknisk utveckling**
+**Tekniska utvecklingar**
 
 Klient- och serveruppgradering
 
@@ -200,7 +200,7 @@ Nya index har lagts till i NmsRtEvent och NmsEventHistory (i kolumnen &quot;Sche
 
 Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgraderingen ökar.
 
-**Patchar**
+**Felkorrigeringar**
 
 * Korrigerade ett fel som förhindrade att filer från arbetsflödesaktiviteten för **webbhämtning** hämtades. (NEO-11105)
 * Korrigerade ett fel som ibland lämnade arbetsflödet **Skicka indikatorer och kampanjattribut** i feltillstånd (NEO-10820).
@@ -212,13 +212,13 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Korrigerade ett problem som returnerade tomma rader när funktionen zcat användes för att läsa in filer i datainläsningsaktiviteten. (NEO-11273)
 * Korrigerade ett fel som genererade duplicerade breda loggar under leveransanalysen. (NEO-11360)
 * Ett problem som ledde till leveransfel på grund av att en sekundärlänknyckel saknas efter att Enrichment-aktiviteten kördes i ett arbetsflöde har åtgärdats. (NEO-11537)
-* Korrigerade ett problem som förhindrade att Adobe Campaign avinstallerades eller reparerades när installationssökvägen innehöll specifika kinesiska GB18030-tecken.
+* Korrigerade ett fel som förhindrade att Adobe Campaign avinstallerades eller reparerades när installationssökvägen innehöll specifika kinesiska GB18030-tecken.
 * Korrigerade ett problem som kopplade vissa spårningsloggar till fel leverans. (NEO-11412)
 * Korrigerade ett problem som kunde orsaka att vissa delar av leveransloggarna fortfarande hade väntande status längre än förväntat. (NEO-11336)
 * Korrigerade ett fel som uppstod när en fråga redigerades för att lägga till en kupong i en leverans. (NEO-11037)
 * Korrigerade ett problem i rapporter som fick diagrammen att alltid beräkna summan av värdena oavsett vilken aggregerad operator som valdes. (NEO-10913)
 * Eftersom funktionen &quot;request.scheme&quot; är inaktuell har den tagits bort från JSAPI-dokumentationen. (NEO-10828)
-* Ett problem som gjorde att vissa användare med tidszonskonfigurationer inte kunde logga in på Adobe Campaign har korrigerats. (NEO-10712)
+* Ett problem som gjorde att vissa användare med tidszonskonfigurationer inte kunde logga in på Adobe Campaign har åtgärdats. (NEO-10712)
 * Ett problem som uppstod när ett externt mobilkanalskonto konfigurerades med den utökade allmänna SMPP-anslutningen har åtgärdats: om du angav att använda olika parametrar för mottagaren skulle sändaren felaktigt använda dessa parametrar i stället för sina egna parametrar.
 * Korrigerade ett problem som gjorde att schemalagda leveranser misslyckades när en frekvens för tryckregeln angavs, eftersom leveranserna hela tiden räknades om efter den första skiljedomsförfarandet. (NEO-10016)
 * Korrigerade ett problem som gjorde att IIS-webbservern kraschade under programpoolens återvinningsprocess (i biblioteket nlsrvmod.dll). (NEO-10862)
@@ -233,16 +233,16 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Ett problem har korrigerats vid sortering av data i en arbetsflödesaktivitet för berikning. (NEO-11394)
 * Ett problem har korrigerats vid sortering av data i en anpassad rapport. (NEO-10896)
 * Korrigerade ett problem som ledde till fel när inställningen useVault användes med Teradata. (NEO-11399)
-* Ett problem som gjorde att Adobe Campaign-klientkonsolen kraschade när flera frågerader togs bort har åtgärdats. (NEO-10744)
+* Korrigerade ett problem som gjorde att Adobe Campaign klientkonsol kraschade när flera frågerader togs bort. (NEO-10744)
 * Korrigerade ett problem som förhindrade att tryckregler tillämpades i vissa fall vid leverans av direktreklam. (NEO-9004)
 * Ett problem som uppstod när datainläsningsaktiviteten användes för att importera en kolumn med datatypen&quot;time&quot; har korrigerats: tidsavgränsaren återställs även sedan den tagits bort. (NEO-10743)
 * Ett problem som gjorde att mappen Leveranser inte kunde visas i körningsmappslistan i leveransegenskaperna när en återkommande leverans redigerades har åtgärdats. (NEO-11094)
 * Korrigerade ett problem som gjorde att visningsfönstret inte kunde visa mer än 200 poster som resultatmål för en Query-aktivitet i ett arbetsflöde. (NEO-11195)
-* Korrigerade ett fel i Oracle som förhindrade att en DELETE-fråga kördes med fler än 1 000 valda element. (NEO-11171)
+* Korrigerade ett fel i Oracle som förhindrade att en DELETE-fråga kördes med över 1 000 markerade element. (NEO-11171)
 * Korrigerade ett problem som ledde till att URL:er kodades som spårade URL:er i de ytterligare parametrarna för en leverans av ett push-meddelande från Android. (NEO-11468)
 * Korrigerade ett skriptfel som uppstod i rapporten för användaraktiviteter när parametrarna angavs till&quot;Ett dagintervall&quot; och&quot;Öppnar&quot;. (NEO-11655)
 * Korrigerade ett problem som uppstod vid anslutning till servern med mellanlagring eller till meddelandecentret via en autentiserad webbproxy. (NEO-11309)
 * Korrigerade ett Oracle-fel som uppstod när en ny leveranskomposition sparades efter att ett element i ett specifikt schema **baserat på en SQL-vy** har valts. (NEO-11682)
-* Korrigerade ett problem som ledde till att avvisade filer som innehöll falska positiva värden vid bearbetning av en ZIP-fil som innehåller en CSV-fil via en inläsningsfilaktivitet med alternativet Dekomprimering.
+* Korrigerade ett problem som ledde till att genererade avvisningsfiler som innehöll falska positiv information vid bearbetning av en ZIP-fil som innehåller en CSV-fil via en inläsningsfilaktivitet med alternativet Dekomprimering.
 * xtkjoblog rensas nu av rensningen.
 
