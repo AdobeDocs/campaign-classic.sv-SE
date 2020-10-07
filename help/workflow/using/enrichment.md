@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -60,8 +57,8 @@ Det finns fyra typer av länkar:
 
 Användningsexempel som beskriver hur anrikningsaktiviteter fungerar i sitt sammanhang finns också i följande avsnitt:
 
-* [E-postberikning med anpassade datumfält](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Förbättra data](../../workflow/using/enriching-data.md)
+* [E-postberikande med anpassade datumfält](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+* [Berika data](../../workflow/using/enriching-data.md)
 * [Skapa en sammanfattningslista](../../workflow/using/creating-a-summary-list.md)
 
 ## Lägga till information {#adding-information}
@@ -133,7 +130,7 @@ Gör så här:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Markera **[!UICONTROL Link definition]** alternativet och klicka på **[!UICONTROL Next]** knappen. Ange vilken typ av länk som ska skapas. I det här exemplet vill vi att filmottagarens land ska stämma överens med ett land i listan över tillgängliga länder i den dedikerade databastabellen. Choose the **[!UICONTROL Define a link by searching for a reference among several options]** option. Markera landstabellen i **[!UICONTROL Target schema]** fältet.
+1. Markera **[!UICONTROL Link definition]** alternativet och klicka på **[!UICONTROL Next]** knappen. Ange vilken typ av länk som ska skapas. I det här exemplet vill vi att filmottagarens land ska stämma överens med ett land i listan över tillgängliga länder i den dedikerade databastabellen. Välj alternativet **[!UICONTROL Define a link by searching for a reference among several options]**. Markera landstabellen i **[!UICONTROL Target schema]** fältet.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -161,7 +158,7 @@ Om flera kopplingsvillkor anges måste ALLA verifieras så att data kan länkas 
 
 Med anrikningsaktiviteten kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.
 
-Mer information om anrikningsaktiviteten finns i det här [avsnittet](../../workflow/using/enrichment.md).
+For more information on the enrichment activity, refer to this [section](../../workflow/using/enrichment.md).
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -170,7 +167,7 @@ Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 När du har konfigurerat frågan (se det här [avsnittet](../../workflow/using/query.md)):
 
 1. Lägg till och öppna en anrikningsaktivitet.
-1. Välj på **[!UICONTROL Enrichment]** fliken **[!UICONTROL Add data]**.
+1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
 1. Välj **[!UICONTROL An offer proposition]** de datatyper som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)
@@ -222,7 +219,7 @@ Den här informationen lagras som standard i aktiviteten **[!UICONTROL Offer eng
 
 Du kan dock lagra den här informationen på följande sätt:
 
-1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. Se det här [avsnittet](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. Refer to this [section](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. Välj **[!UICONTROL Edit additional data...]** i aktivitetens huvudfönster.
 
    ![](assets/ita_enrichment_rankweight_1.png)
