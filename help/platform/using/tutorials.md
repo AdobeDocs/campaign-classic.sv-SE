@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea248639e9730c6bdd1090098866a094b80daebb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 15%
@@ -23,7 +20,7 @@ ht-degree: 15%
 ---
 
 
-# Självstudiekurser{#tutorials}
+# Tutorials{#tutorials}
 
 ## Stegvisa guider {#step-by-step-guides}
 
@@ -51,7 +48,7 @@ Upptäck Adobe Campaign huvudfunktioner genom att titta på våra instruktionsvi
 
 * [Skapa en målgrupp](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): Upptäck hur du kan skapa en målgrupp i Adobe Campaign.
 * [Skapa en kampanj och ett e-postmeddelande](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html): Upptäck hur du skapar e-postmeddelanden i en kampanj i Adobe Campaign.
-* [Skapa en lista med mottagare](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): skapa en lista med mottagare med ett arbetsflöde i Adobe Campaign.
+* [Skapa en lista över mottagare](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): skapa en lista med mottagare med ett arbetsflöde i Adobe Campaign.
 * [Skapa ett målarbetsflöde](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-targeting-workflow.html): skapa ett arbetsflöde för målmottagarnas födelsedagar.
 * [Skapa ett arbetsflöde i en kampanj](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html): Lär dig hur du skapar ett arbetsflöde i en kampanj.
 * [Importerar profiler](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html): Lär dig hur du importerar profiler från en fil i Adobe Campaign.
