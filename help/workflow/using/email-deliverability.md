@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Arbetsflödet som beskrivs nedan installeras som standard på alla instanser och
   </tr> 
   <tr> 
    <td> <strong>Uppdatera för leverans</strong><br /> </td> 
-   <td> <span class="uicontrol">deliverabilityUpdate</span><br /> </td> 
+   <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td>  När paketet för <strong>leveransövervakning (e-postleverans)</strong> har installerats körs det här arbetsflödet varje natt för att regelbundet uppdatera listan över regler och för att aktivt hantera plattformsleveransen.<br /> </td> 
   </tr> 
  </tbody> 
