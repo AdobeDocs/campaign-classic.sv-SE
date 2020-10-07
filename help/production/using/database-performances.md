@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 8%
 
 ---
 
@@ -26,16 +26,16 @@ De flesta prestandaproblem är kopplade till databasunderhåll. Här är fyra hu
 
 * Konfiguration,
 * Installation och konfigurering av Adobe Campaign-plattformen,
-* Databasunderhåll.
+* Databasunderhåll,
 * Realtidsdiagnos.
 
 ## Konfiguration {#configuration}
 
-Kontrollera att den ursprungliga Adobe Campaign-plattformskonfigurationen fortfarande är giltig och, om det behövs, omvärdera kundens behov i fråga om tillgänglighet eller databasstorlek. Vi rekommenderar även att du kör en fullständig maskinvarukontroll (CPU-, RAM-, IO-system).
+Kontrollera att den ursprungliga Adobe Campaign-plattformskonfigurationen fortfarande är giltig och, om det behövs, omvärdera kundens behov i fråga om leveransbarhet eller databasstorlek. Vi rekommenderar även att du kör en fullständig maskinvarukontroll (CPU-, RAM-, IO-system).
 
 >[!NOTE]
 >
->I [Adobe Campaign Harware Sizing Guide](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html) hittar du information om detta.
+>I [Adobe Campaign guide](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html) om maskinvarustorlekar finns information om detta.
 
 ## Plattformskonfiguration {#platform-configuration}
 
@@ -45,7 +45,7 @@ Felaktig konfiguration kan påverka plattformens prestanda. Vi rekommenderar att
 
 **Åtgärd för databasrensning**
 
-Kontrollera att databasrensningen fungerar. Om du vill göra det läser du loggfilerna för att se om de innehåller några fel. Mer information finns i [det här avsnittet](../../production/using/database-cleanup-workflow.md).
+Kontrollera att databasrensningen fungerar. Om du vill göra det läser du loggfilerna för att se om de innehåller några fel. Mer information om detta finns i [det här avsnittet](../../production/using/database-cleanup-workflow.md).
 
 **Underhållsplaner**
 
@@ -55,7 +55,7 @@ Kontrollera att databasunderhållet är korrekt schemalagt och att det körs. Ko
 * underhållsplaner som tidigare har genomförts,
 * visa skriptloggarna.
 
-Mer information finns i [det här avsnittet](../../production/using/recommendations.md).
+Mer information om detta finns i [det här avsnittet](../../production/using/recommendations.md).
 
 >[!CAUTION]
 >
@@ -71,14 +71,14 @@ Kontrollera antal och storlek på arbetsregister. När de överskrider en viss s
 
 >[!CAUTION]
 >
->Om operationen tar lång tid och frigör mycket utrymme innebär detta att det krävs ett djupgående underhåll (ombyggnad av index osv.). Mer information finns i [det här avsnittet](../../production/using/recommendations.md).
+>Om operationen tar lång tid och frigör mycket utrymme innebär detta att det krävs ett djupgående underhåll (ombyggnad av index osv.). Mer information om detta finns i [det här avsnittet](../../production/using/recommendations.md).
 
-**Processövervakning för Adobe Campaign**
+**Adobe Campaign processövervakning**
 
-Beroende på installationsinställningarna för Adobe Campaign kan två verktyg användas för plattformsövervakning:
+Beroende på Adobe Campaign installationsinställningar kan två verktyg användas för plattformsövervakning:
 
-* produktionssidan för instansen. Mer information finns i [Manuell övervakning](../../production/using/monitoring-processes.md#manual-monitoring).
-* Netreport-skriptet. Mer information finns i [Automatisk övervakning via skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)i Adobe Campaign.
+* produktionssidan för instansen. For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
+* Netreport-skriptet. Mer information finns i [Automatisk övervakning via Adobe Campaign-skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifikationer {#specifics}
 
