@@ -1,7 +1,7 @@
 ---
-title: SQL Data Management
-seo-title: SQL Data Management
-description: SQL Data Management
+title: SQL-datahantering
+seo-title: SQL-datahantering
+description: SQL-datahantering
 seo-description: null
 page-status-flag: never-activated
 uuid: b6057496-2dd5-4289-96df-98378e4f0ae7
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
 
-# SQL Data Management{#sql-data-management}
+# SQL-datahantering{#sql-data-management}
 
 Med **SQL Data Management** -aktiviteten kan du skriva egna SQL-skript för att skapa och fylla i arbetstabeller.
 
@@ -30,7 +30,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
 * Aktiviteten är endast tillgänglig för fjärrdatakällor. Paketet **[!UICONTROL FDA]** (Federated Data Access) måste därför installeras på din instans (se [det här avsnittet](../../platform/using/about-fda.md)).
 * Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas (mer information om datamodeller finns i [det här avsnittet](../../configuration/using/about-schema-reference.md)).
-* Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven behörighet. Mer information om namngivna rättigheter finns i [det här avsnittet](../../platform/using/access-management.md#named-rights).
+* Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven behörighet. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
 
 ## Konfigurera SQL Data Management-aktiviteten {#configuring-the-sql-data-management-activity}
 
