@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 2%
 
 ---
 
@@ -40,15 +40,15 @@ Om du vill utföra filtret **Skapad = max (Skapad)** för mottagarna måste du k
 1. Skapa en fråga. Här är målet att beräkna det senaste kända skapandedatumet från alla mottagare i databasen. Frågan innehåller därför inget filter.
 1. Välj **[!UICONTROL Add data]**.
 1. I de fönster som öppnas väljer du **[!UICONTROL Data linked to the filtering dimension]** sedan **[!UICONTROL Filtering dimension data]**.
-1. I **[!UICONTROL Data to add]** fönstret lägger du till en kolumn som beräknar det maximala värdet för fältet **Skapad** i mottagartabellen. Du kan använda uttrycksredigeraren eller ange **max(@created)** direkt i ett fält i **[!UICONTROL Expression]** kolumnen. Klicka sedan på **[!UICONTROL Finish]** knappen.
+1. I **[!UICONTROL Data to add]** fönstret lägger du till en kolumn som beräknar det maximala värdet för fältet **Skapad** i mottagartabellen. Du kan använda uttrycksredigeraren eller ange **max(@created)** direkt i ett fält i **[!UICONTROL Expression]** kolumnen. Then click the **[!UICONTROL Finish]** button.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicka **[!UICONTROL Edit additional data]** då **[!UICONTROL Advanced parameters...]**. Markera **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** alternativet.
+1. Klicka **[!UICONTROL Edit additional data]** och sen **[!UICONTROL Advanced parameters...]**. Markera alternativet **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
 
    Med det här alternativet ser du till att alla mottagare inte visas som ett resultat och att data som läggs till explicit inte behålls. I det här fallet avser det det senaste datumet då en mottagare skapades.
 
-   Låt alternativet vara **[!UICONTROL Remove duplicate rows (DISTINCT)]** markerat.
+   Låt alternativet **[!UICONTROL Remove duplicate rows (DISTINCT)]** vara markerat.
 
 ## Steg 2: Länka mottagarna och aggregeringsfunktionens resultat {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
@@ -60,6 +60,7 @@ Om du vill länka frågan som handlar med mottagare till frågan som utför ber�
    * Välj det tillfälliga schema som hör till sammanställningen. Data för det här schemat läggs till i medlemmarna i huvuduppsättningen.
    * Välj **[!UICONTROL Use a simple join]** om du vill länka det sammanställda resultatet till alla mottagare av huvuduppsättningen.
    * Slutligen anger du att länken är en **[!UICONTROL Type 11 simple link]**.
+
    ![](assets/datamanagement_usecase_3.png)
 
 Sammanställningsresultatet är därför kopplat till alla mottagare.
@@ -80,6 +81,7 @@ När länken har upprättats utgör det sammanställda resultatet och mottagarna
 
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**: `toDate([datemax/expr####])`, där expr#### relaterar till den mängd som anges i sammanställningsfunktionens fråga.
+
    ![](assets/datamanagement_usecase_4.png)
 
 Resultatet av den delade aktiviteten relaterar därmed till mottagarna som skapades samma dag som det senast kända skapandedatumet.
