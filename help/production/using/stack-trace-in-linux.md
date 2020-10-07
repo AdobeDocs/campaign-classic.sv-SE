@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
@@ -28,11 +28,12 @@ En **stackspårning** representerar en spårning som finns i en **huvudtypsfil**
 >
 >* En **kärnfil** heter **core.`<num>`**.
 >* **gdb - GNU-felsökaren** måste vara installerad på datorn.
+
 >
 
 
 
-Adobe Campaign teknisk support kan be dig om den här **stackspårningen**. Hämta den genom att ange följande kommandon i Linux:
+Adobe Campaign tekniska support kan be dig om den här **stackspårningen**. Hämta den genom att ange följande kommandon i Linux:
 
 ```
 su - neolane
@@ -59,7 +60,7 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Den tekniska supporten för Adobe Campaign kan be dig köra det här kommandot med en specifik körbar fil (som ska tillhandahållas av oss).
+Adobe Campaign tekniska support kan be dig köra det här kommandot med en specifik körbar fil (som vi ska tillhandahålla).
 
 I det här fallet kör du bara följande kommando genom att ersätta **nlserver** med den körbara filen från Adobe Campaign:
 
@@ -67,7 +68,7 @@ I det här fallet kör du bara följande kommando genom att ersätta **nlserver*
 gdb nlserver <coreFile>
 ```
 
-Till exempel:
+Exempel:
 
 ```
 gdb nlserver.1823 <coreFile>
