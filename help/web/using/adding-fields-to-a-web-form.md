@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2452'
+ht-degree: 1%
 
 ---
 
@@ -79,9 +79,9 @@ Fem olika typer av textfält kan infogas på en formulärsida:
 
    ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Antal**: gör att användaren kan ange ett nummer på en rad. Mer information finns i [Lägga till siffror](#adding-numbers).
+* **Antal**: gör att användaren kan ange ett nummer på en rad. for more on this, refer to [Adding numbers](#adding-numbers).
 
-   När sidan har godkänts kontrolleras fältinnehållet för att kontrollera att det angivna värdet är kompatibelt med fältet. Mer information finns i [Definiera kontrollinställningar](../../web/using/form-rendering.md#defining-control-settings).
+   När sidan har godkänts kontrolleras fältinnehållet för att kontrollera att det angivna värdet är kompatibelt med fältet. For more on this, refer to [Defining control settings](../../web/using/form-rendering.md#defining-control-settings).
 
 * **Lösenord**: gör att användaren kan skriva text på en rad. Under textinmatning ersätts tecknen med punkter:
 
@@ -99,7 +99,7 @@ Fem olika typer av textfält kan infogas på en formulärsida:
    >
    >Flerradiga textfält är specifika fält som kan innehålla vagnreturer. Deras lagringsutrymme måste associeras med ett fält som är mappat till ett XML-element, inte ett XML-attribut. Mer information om datatyperna i scheman finns i kapitlet&quot;Schemareferens&quot; i [det här avsnittet](../../configuration/using/about-schema-reference.md).
    >   
-   >Om du använder modulen **Undersökning** kan du lagra den här typen av fält i ett arkiverat fält som automatiskt anpassar sig till formatet. Mer information finns i [det här avsnittet](../../web/using/about-surveys.md).
+   >Om du använder modulen **Undersökning** kan du lagra den här typen av fält i ett arkiverat fält som automatiskt anpassar sig till formatet. Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).
 
 * **Flerradig text**: gör att användaren kan skriva text med en layout som ska sparas i HTML-format.
 
@@ -127,7 +127,7 @@ Svarslagringsläget kan ändras via **[!UICONTROL Edit storage...]** länken. V�
 >
 >Lagringslägen anges i [svarslagringsfält](../../web/using/web-forms-answers.md#response-storage-fields)
 
-På fliken **[!UICONTROL Advanced]** kan du definiera visningsparametrar för fältet (placering av etiketter, justering osv.). Se [Definiera webbformulärslayout](../../web/using/defining-web-forms-layout.md).
+På fliken **[!UICONTROL Advanced]** kan du definiera visningsparametrar för fältet (placering av etiketter, justering osv.). See [Defining web forms layout](../../web/using/defining-web-forms-layout.md).
 
 ## Lägga till nedrullningsbara listor {#adding-drop-down-lists}
 
@@ -225,7 +225,7 @@ Lägg till så många alternativknappar som det finns etiketter för. Fördelen 
 
 >[!NOTE]
 >
->Webbformulär tillåter inte att du väljer flera värden. Flera markeringar kan bara aktiveras för formulär av typen **Undersökning** . Mer information finns i [det här avsnittet](../../web/using/about-surveys.md).\
+>Webbformulär tillåter inte att du väljer flera värden. Flera markeringar kan bara aktiveras för formulär av typen **Undersökning** . Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).\
 >Det är dock möjligt att infoga ett **[!UICONTROL Multiple choice]** typfält i ett webbprogram. men utan att godkänna valet av flera värden: alternativen kan väljas med alternativknappar.
 
 ## Lägga till stödraster {#adding-grids}
@@ -272,7 +272,7 @@ Du kan välja datum via en kalender eller listruta. Du kan också ange dem direk
 
 >[!NOTE]
 >
->Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar finns tillgängliga på alla språk som används. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+>Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar finns tillgängliga på alla språk som används. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 I vissa fall kan det dock vara enklare att använda nedrullningsbara listor (till exempel när du anger födelsedatum).
 
@@ -386,6 +386,7 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 >* Adobe Campaign kontrollerar inte storleken eller typen av resurs som överförts: Därför rekommenderar vi att du endast använder överföringsfält för säkra intranätplatser.
 >* Om flera servrar är länkade till instansen (belastningsutjämningsarkitektur) måste du se till att anrop till webbformuläret kommer fram på samma server.
 >* Dessa implementeringar kräver hjälp av Adobe Campaign Consulting-teamet.
+
 >
 
 
