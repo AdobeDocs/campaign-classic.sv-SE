@@ -1,7 +1,7 @@
 ---
-title: Bearbetningstid för meddelandecenter
-seo-title: Bearbetningstid för meddelandecenter
-description: Bearbetningstid för meddelandecenter
+title: Bearbetningstid för meddelandecentret
+seo-title: Bearbetningstid för meddelandecentret
+description: Bearbetningstid för meddelandecentret
 seo-description: null
 page-status-flag: never-activated
 uuid: 06aca2c2-33c0-4839-bee4-fd838c49ce76
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: d1f591d2-95e8-4d99-bc60-955c96b532eb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 7%
 
 ---
 
 
-# Bearbetningstid för meddelandecenter{#message-center-processing-time}
+# Bearbetningstid för meddelandecentret{#message-center-processing-time}
 
 Den här rapporten innehåller de viktigaste indikatorerna för realtidskön. Denna rapport, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]** universum i kontrollinstansen.
 
@@ -37,5 +37,5 @@ Precis som för **[!UICONTROL Message Center service level]** rapporten kan du v
 
 >[!NOTE]
 >
->Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i distributionsguiden för Adobe Campaign. Se [Övervakningströsklar](../../message-center/using/monitoring-thresholds.md).
+>Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i Adobe Campaign distributionsguide. Se [Övervakningströsklar](../../message-center/using/monitoring-thresholds.md).
 
