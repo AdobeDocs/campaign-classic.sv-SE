@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1236'
+ht-degree: 1%
 
 ---
 
@@ -44,11 +44,11 @@ De här villkoren använder XTK-uttryckssyntaxen (till exempel **ctx.receive).@e
 
 ## Lägga till en kant och bakgrund {#adding-a-border-and-background}
 
-Du kan lägga till en **kantlinje** i ett markerat block. Kanterna definieras med tre alternativ: stil, storlek och färg.
+You can add a **border** to a selected block. Kanterna definieras med tre alternativ: stil, storlek och färg.
 
 ![](assets/dce_popup_border.png)
 
-Du kan också definiera en **bakgrundsfärg** genom att välja en färg i färgdiagrammet.
+You can also define a **background color** by selecting a color from the color chart.
 
 ![](assets/dce_popup_background.png)
 
@@ -64,13 +64,13 @@ Du kan länka databasfält med indatazon, alternativknapp eller kryssrutetypbloc
 >
 >Standardfälten är de som finns i webbprogrammets lagringsschema.
 
-Med **fältets** indatazon kan du välja ett databasfält som ska länkas till formulärfältet.
+The **field** input zone lets you select a database field to link with the form field.
 
 Som standard finns fälten i tabellen **nms:receive** .
 
 ![](assets/dce_field_selection.png)
 
-Med alternativet **Obligatoriskt fält** kan du bara godkänna sidan om användaren har fyllt i fältet. Om ett obligatoriskt fält inte fylls i visas ett felmeddelande.
+The **Required field** option lets you only authorize the page&#39;s approval if the user has filled in the field. Om ett obligatoriskt fält inte fylls i visas ett felmeddelande.
 
 För alternativknappar och kryssrutor krävs **** ytterligare konfiguration.
 
@@ -142,6 +142,7 @@ Anpassningsblock och fält kan bara infogas i textblock.
 >* Nytt fönster (_blank)
 >* Aktuellt fönster (_self)
 >* Standardwebbläsarbeteende
+
 >
 
 
@@ -176,7 +177,7 @@ Med **Länk som definierar ett åtgärdsalternativ** kan du konfigurera en åtg�
 
 ### Ta bort en länk {#delete-a-link}
 
-När en länk har infogats finns det två nya ikoner i verktygsfältet: **Redigera länk** och **Bryt länken** som gör att du kan interagera med den skapade länken.
+När en länk har infogats finns det två nya ikoner i verktygsfältet: **Redigera länken** och **Bryt länken** som gör att du kan interagera med den skapade länken.
 
 * **[!UICONTROL Edit link]** I kan du visa ett fönster med alla länkens parametrar.
 * **[!UICONTROL Break the link]** Med kan du ta bort länken och alla relaterade parametrar efter att du har bekräftat.
@@ -229,7 +230,7 @@ För att vara kompatibelt med DCE måste animeringar **av typen** &quot;Flash&qu
 
 >[!CAUTION]
 >
->Du får inte anropa externa filer i en **script** -tagg på HTML-sidan. Dessa filer importeras inte till Adobe Campaign-servern.
+>Du får inte anropa externa filer i en **script** -tagg på HTML-sidan. Dessa filer kommer inte att importeras till Adobe Campaign-servern.
 
 ### Lägga till/ta bort/duplicera en bild {#adding---deleting---duplicating-an-image}
 
@@ -260,7 +261,7 @@ När du markerar ett block som innehåller en bild får du tillgång till följa
 
 ## Lägga till innehåll för personalisering {#adding-personalization-content}
 
-### Infoga ett anpassningsfält {#inserting-a-personalization-field}
+### Infoga ett personaliserat fält {#inserting-a-personalization-field}
 
 Med alternativet **Anpassningsfält** för infogningsikonen kan du lägga till ett databasfält i innehållet, till exempel mottagarens namn. Det här alternativet är bara tillgängligt för textblock.
 
