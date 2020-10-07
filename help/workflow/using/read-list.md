@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Profilerna i mappen **Nya kontakter** måste ha en leveransåtgärd som mål. De
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
-   Uteslutningsregler konfigureras i det centrala avsnittet i redigeringsverktyget. Klicka på **[!UICONTROL Add]** knappen för att definiera vilken typ av undantag som ska användas.
+   Uteslutningsregler konfigureras i det centrala avsnittet av redigeringsverktyget. Klicka på **[!UICONTROL Add]** knappen för att definiera vilken typ av undantag som ska användas.
 
    Du kan definiera flera undantag beroende på antalet inkommande övergångar för aktiviteten.
 
