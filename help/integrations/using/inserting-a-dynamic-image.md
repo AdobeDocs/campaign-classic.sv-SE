@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 discoiquuid: f6e4d22b-4ad3-4a1e-8a6f-3bdfc1da0535
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Infoga Target dynamiskt innehåll {#inserting-a-dynamic-image}
+# Infoga dynamiskt innehåll för mål {#inserting-a-dynamic-image}
 
-I den här guiden kommer vi att visa hur man integrerar ett dynamiskt erbjudande från Target i ett e-postmeddelande i Adobe Campaign.
+I den här guiden kommer vi att visa hur du integrerar ett dynamiskt erbjudande från Target i ett e-postmeddelande i Adobe Campaign.
 
 Vi vill skapa en leverans som innehåller ett bildblock som ändras dynamiskt beroende på mottagarens land. Data skickas med varje mbox-begäran och beror på besökarens IP-adress.
 
@@ -49,7 +46,7 @@ För att detta ska fungera måste vi utföra följande steg både i Adobe Campai
 
 När du har definierat mål och innehåll för ditt e-postmeddelande i Adobe Campaign kan du infoga en dynamisk bild från Target.
 
-Det gör du genom att ange standardbildens URL-adress, platsnamn och de fält som du vill överföra till Target.
+Det gör du genom att ange standardbildens URL-adress, platsnamnet och fälten som du vill överföra till Mål.
 
 I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i ett e-postmeddelande:
 
@@ -66,21 +63,21 @@ I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i
 * URL **[!UICONTROL Default image]** till programmet: Bilden som visas när inget av villkoren är uppfyllt. Du kan också välja en bild från ditt resursbibliotek.
 * The **[!UICONTROL Target location]**: Ange ett namn för platsen för ditt dynamiska erbjudande. Du måste välja den här platsen i din Target-aktivitet.
 * The **[!UICONTROL Landing Page]**: Om du vill att standardbilden ska dirigeras om till en standardstartsida. Den här URL:en är endast till för de fall då standardbilden visas i det slutliga e-postmeddelandet och är valfri.
-* The **[!UICONTROL Additional decision parameters]**: Ange mappningen mellan fälten som definieras i segmenten Adobe Target och Adobe Campaign. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
+* The **[!UICONTROL Additional decision parameters]**: Ange mappningen mellan fälten som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna i Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om Target Enterprise-behörigheter på [den här sidan](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).
+Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för Target Enterprise på [den här sidan](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
 ## Skapa omdirigeringserbjudanden {#create-redirect-offers}
 
-I Target kan du skapa olika versioner av ditt erbjudande. Beroende på användarupplevelsen kan ett omdirigeringserbjudande skapas och du kan ange vilken bild som ska visas.
+I Target kan ni skapa olika versioner av ert erbjudande. Beroende på användarupplevelsen kan ett omdirigeringserbjudande skapas och du kan ange vilken bild som ska visas.
 
 I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbjudandet) ska definieras i Adobe Campaign.
 
 1. Om du vill skapa ett nytt omdirigeringserbjudande i Target Standard går du till **[!UICONTROL Content]** fliken och klickar på **[!UICONTROL Code offers]**.
 
-1. Klicka **[!UICONTROL Create]** då **[!UICONTROL Redirect Offer]**.
+1. Klicka **[!UICONTROL Create]** och sen **[!UICONTROL Redirect Offer]**.
 
    ![](assets/target_9.png)
 
@@ -88,7 +85,7 @@ I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbj
 
    ![](assets/target_6.png)
 
-1. Följ samma procedur för det återstående omdirigeringserbjudandet. Mer information finns på den här [sidan](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html).
+1. Följ samma procedur för det återstående omdirigeringserbjudandet. Se denna [sida](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html) för mer information om detta.
 
 ## Skapa målgrupper {#audiences-target}
 
@@ -98,7 +95,7 @@ I Target måste ni skapa de två målgrupper som de personer som besöker ert er
 
    ![](assets/audiences_1.png)
 
-1. Ge er målgrupp ett namn.
+1. Ge era målgrupper ett namn.
 
    ![](assets/audiences_2.png)
 
@@ -160,8 +157,8 @@ I det här **[!UICONTROL Reporting Settings]** avsnittet kan du välja en åtgä
 
 ## Förhandsgranska och skicka e-post i Campaign Classic {#preview-send-email}
 
-I Adobe Campaign kan du nu förhandsgranska ditt e-postmeddelande och testa återgivningen i olika mottagare. Du kommer att märka att bilden ändras beroende på de olika upplevelser som skapas. Mer information om hur du skapar e-postmeddelanden finns på den här [sidan](../../delivery/using/defining-the-email-content.md).
+I Adobe Campaign kan du nu förhandsgranska ditt e-postmeddelande och testa återgivningen i olika mottagare. Du kommer att märka att bilden ändras beroende på de olika upplevelser som skapas. To learn more on email creation, refer to this [page](../../delivery/using/defining-the-email-content.md).
 
-Nu kan du skicka e-post med ett dynamiskt erbjudande från Target.
+Du kan nu skicka ditt e-postmeddelande med ett dynamiskt erbjudande från Target.
 
 ![](assets/target_20.png)
