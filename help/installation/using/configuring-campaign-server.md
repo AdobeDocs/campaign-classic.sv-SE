@@ -1,7 +1,7 @@
 ---
-title: Konfigurera en Campaign-server
-seo-title: Konfigurera en Campaign-server
-description: Konfigurera en Campaign-server
+title: Konfigurera Campaign-servern
+seo-title: Konfigurera Campaign-servern
+description: Konfigurera Campaign-servern
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3593'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# Konfigurera en Campaign-server{#configuring-campaign-server}
+# Konfigurera Campaign-servern{#configuring-campaign-server}
 
 I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
 
@@ -36,8 +33,8 @@ I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa
 Mer information finns i följande avsnitt:
 
 * [Dokumentation för kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
-* [Värdmodeller](../../installation/using/hosting-models.md)
-* [Funktionsmatris för lokal och värdbaserad Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Värdbaserade modeller](../../installation/using/hosting-models.md)
+* [Funktionsmatris för lokal och värdbaserad Campaign Classic](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Konfigurationssteg](../../installation/using/about-hybrid-and-hosted-models.md) för hybridmodeller och värdbaserade modeller)
 
 Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
@@ -211,7 +208,7 @@ När zoner har definierats måste varje operator länkas till en av dem för att
 
 Zonernas tekniska konfiguration görs i konfigurationsfilen för Campaign Server: **serverConf.xml**.
 
-Innan detta börjar du med att konfigurera den körklara **[!UICONTROL Security zone]** uppräkningen för att länka en etikett till det interna namnet på zonen som definieras i **filen serverConf.xml** .
+Du måste börja med att konfigurera den körklara **[!UICONTROL Security zone]** uppräkningen för att länka en etikett till det interna namnet på zonen som definieras i filen **serverConf.xml** .
 
 Den här konfigurationen görs i Campaign Explorer:
 
@@ -558,7 +555,7 @@ Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflöd
 
    Listrutan innehåller tillhörigheter som tidigare använts. Den slutförs över tiden med de olika angivna värdena.
 
-1. Öppna **filen nl6/conf/config-`<instance>.xml`**.
+1. Öppna **filen nl6/conf/config-`<instance>.xml`** .
 1. Ändra raden som matchar **[!UICONTROL wfserver]** modulen enligt följande:
 
    ```
