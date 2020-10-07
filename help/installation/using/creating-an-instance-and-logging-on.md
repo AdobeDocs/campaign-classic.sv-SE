@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: c7395094-c635-45ab-8455-a050f7d16b64
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 4%
 
 ---
 
 
 # Skapa en instans och logga in{#creating-an-instance-and-logging-on}
 
-Gör så här om du vill skapa en ny instans och Adobe Campaign-databasen:
+Så här skapar du en ny instans och en Adobe Campaign-databas:
 
 1. Skapa anslutningen.
 1. Logga in för att skapa den relaterade instansen.
@@ -30,7 +30,7 @@ Gör så här om du vill skapa en ny instans och Adobe Campaign-databasen:
 
 >[!NOTE]
 >
->Det är bara den **interna** identifieraren som kan utföra dessa åtgärder. Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Det är bara den **interna** identifieraren som kan utföra dessa åtgärder. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 När Adobe Campaign-konsolen startas kommer du åt en inloggningssida.
 
@@ -40,7 +40,7 @@ Så här skapar du en ny instans:
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
+1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL-adressen för Adobe Campaign-programservern.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
@@ -53,8 +53,8 @@ Så här skapar du en ny instans:
    >Använd endast följande tecken för anslutnings-URL: `[a-z]`, `[A-Z]``[0-9]` och streck (-) eller fullständiga stopp.
 
 1. Bekräfta inställningarna genom **[!UICONTROL Ok]** att klicka: du kan nu börja med att skapa en instans.
-1. I **[!UICONTROL Connection settings]** fönstret anger du den **interna** inloggningen och lösenordet för att ansluta till Adobe Campaign-programservern. När du är ansluten öppnar du guiden Skapa instans för att deklarera en ny instans
-1. Ange **[!UICONTROL Name]** instansnamnet **i** fältet. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, måste du välja ett kort namn utan specialtecken. Till exempel: e **Marketing**.
+1. I **[!UICONTROL Connection settings]** fönstret anger du den **interna** inloggningen och lösenordet för att ansluta till Adobe Campaign programserver. När du är ansluten öppnar du guiden Skapa instans för att deklarera en ny instans
+1. Ange **[!UICONTROL Name]** instansnamnet **i** fältet. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, måste du välja ett kort namn utan specialtecken. Till exempel: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
@@ -86,5 +86,5 @@ Så här skapar du en ny instans:
 
    >[!NOTE]
    >
-   >Instansen kan skapas från kommandoraden. Mer information finns i [Kommandorader](../../installation/using/command-lines.md).
+   >Instansen kan skapas från kommandoraden. For more on this, refer to [Command lines](../../installation/using/command-lines.md).
 
