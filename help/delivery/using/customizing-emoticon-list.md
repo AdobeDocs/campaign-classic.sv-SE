@@ -1,5 +1,5 @@
 ---
-title: Anpassa uttryckslistan
+title: Anpassa listan med uttryckssymboler
 description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3beb62d0264cfcb03486c291ce79cc7ff582e9c7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Anpassa uttryckslistan {#customize-emoticons}
+# Anpassa listan med uttryckssymboler {#customize-emoticons}
 
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.
@@ -39,7 +36,7 @@ Det finns uttryckssymboler som du kan skicka via e-post och som du kan trycka p�
 
    >[!NOTE]
    >
-   >Enkla uppräkningar kan bara hanteras av en administratör för Adobe Campaign Classic-konsolen.
+   >Enkla uppräkningar kan bara hanteras av en administratör för din Adobe Campaign Classic-konsol.
 
    ![](assets/emoticon_1.png)
 
@@ -51,6 +48,7 @@ Det finns uttryckssymboler som du kan skicka via e-post och som du kan trycka p�
 För att undvika kompatibilitetsproblem rekommenderar vi att du väljer uttryckssymboler som stöds i webbläsare och i alla operativsystem.
 
    * **[!UICONTROL Label]**: Etikett på din nya uttryckssymbol.
+
    ![](assets/emoticon_5.png)
 
 1. Klicka **[!UICONTROL Ok]** sedan **[!UICONTROL Save]** när konfigurationen är klar.
@@ -66,7 +64,7 @@ Din nya uttryckssymbol placeras automatiskt i butiken.
 
 1. Din nya uttryckssymbol har nu lagts till i uppräkningen som är **[!UICONTROL Insert emoticon list]** färdig. Du kan när som **[!UICONTROL Display order]** helst ändra den eller flytta den till butiken om du inte behöver den längre.
 
-1. Om du vill ta hänsyn till dina ändringar måste du koppla från och sedan koppla från Adobe Campaign Classic igen. Om din nya uttryckssymbol fortfarande inte visas i **[!UICONTROL Insert emoticon]** popup-fönstret kanske du måste rensa cachen. For more on this, refer to this [section](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+1. Ta hänsyn till dina ändringar genom att koppla från och sedan ansluta igen från Adobe Campaign Classic. Om din nya uttryckssymbol fortfarande inte visas i **[!UICONTROL Insert emoticon]** popup-fönstret kanske du måste rensa cachen. Mer information om detta hittar du i det här [avsnittet](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
 1. Din nya uttryckssymbol finns nu i dina leveranser i **[!UICONTROL Insert emoticon]** popup-fönstret i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns på den här [sidan](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
