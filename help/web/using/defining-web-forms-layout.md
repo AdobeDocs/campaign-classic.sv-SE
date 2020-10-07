@@ -1,7 +1,7 @@
 ---
-title: Definiera webbformulärslayout
-seo-title: Definiera webbformulärslayout
-description: Definiera webbformulärslayout
+title: Definiera ett webbformulärs layout
+seo-title: Definiera ett webbformulärs layout
+description: Definiera ett webbformulärs layout
 seo-description: null
 page-status-flag: never-activated
 uuid: ae8659d0-3608-44dd-93ec-33c418a66ad0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 67d1d39b-3a5f-4ed6-8fcf-570891043b10
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
 
-# Definiera webbformulärslayout{#defining-web-forms-layout}
+# Definiera ett webbformulärs layout{#defining-web-forms-layout}
 
 ## Skapar behållare {#creating-containers}
 
@@ -32,7 +32,7 @@ För varje sida i formuläret skapas behållare med knappen **[!UICONTROL Contai
 
 Använd en behållare för att gruppera element på sidan utan att lägga till en etikett till den slutliga återgivningen. Elementen grupperas i behållarens underträd. Med standardbehållare kan du hantera layouten.
 
-Till exempel:
+Exempel:
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
