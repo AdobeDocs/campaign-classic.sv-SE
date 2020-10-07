@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: d538f489-f1ae-4682-9c21-d0300bd42b26
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,7 @@ Det går att gruppera utdatakolumndata: Om du vill göra det kontrollerar du **[
 
 * Med funktionen kan du&quot;gruppera efter&quot; och välja vad som har grupperats (&quot;att&quot;). **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** Den här funktionen gäller för alla fält i utdatakolumnen. Med det här alternativet kan du till exempel gruppera alla val för en utdatakolumn och återställa en viss typ av information, till exempel mottagare mellan 35 och 50.
 
-   Mer information finns i [det här avsnittet](../../workflow/using/querying-using-grouping-management.md).
+   Mer information om detta finns i [det här avsnittet](../../workflow/using/querying-using-grouping-management.md).
 
 * Med **[!UICONTROL Remove duplicate rows (DISTINCT)]** funktionen kan du duplicera identiska resultat som du får i utdatakolumnen. Om du till exempel gör en inventering genom att markera fälten Efternamn, Förnamn och E-post i utdatakolumnen, kommer de som har identiska data att tas bort eftersom det innebär att samma kontakt har angetts flera gånger i databasen: endast ett resultat kommer att beaktas.
 
@@ -83,7 +83,7 @@ Vilka filter som visas beror på vilken tabell frågan gäller.
 
 ![](assets/query_editor_nveau_09.png)
 
-När du har valt **[!UICONTROL Filtering conditions]** det här avsnittet kommer du åt **[!UICONTROL Target elements]** : på så sätt kan du definiera hur data ska filtreras för att samlas in.
+När du har valt **[!UICONTROL Filtering conditions]** det här avsnittet kommer du åt **[!UICONTROL Target elements]** : på så sätt kan du definiera hur data ska filtreras.
 
 * Om du vill skapa ett nytt filter markerar du de fält, operatorer och värden som krävs för att skapa formeln som ska verifieras för att data ska kunna väljas. Det går att kombinera flera villkor (mer information finns i [Definiera filtervillkor](../../platform/using/defining-filter-conditions.md)).
 * Om du vill använda tidigare sparade filter öppnar du listrutan genom att klicka på **[!UICONTROL Add]** knappen, klickar **[!UICONTROL Predefined filter]** och väljer den du vill använda.
