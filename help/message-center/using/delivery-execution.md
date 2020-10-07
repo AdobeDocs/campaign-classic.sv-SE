@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: afb375de-2de3-47ad-8b37-664cc04864e8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 
@@ -38,4 +38,4 @@ Den här sorteringen kan ändras i meddelandemallens egenskaper enligt nedan.
 
 >[!NOTE]
 >
->Om du har uppgraderat till Förbättrat MTA för hostinginstallationer eller hybridinstallationer kan alla transaktionsmeddelanden också skickas med Förbättrat MTA i Adobe Campaign för förbättrad leverans, genomströmning och studshantering. Alla effekter är desamma som för vanliga marknadsföringsmeddelanden och de beskrivs i dokumentet Förbättrat MTA [för](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
+>Om du har uppgraderat till Enhanced MTA kan alla transaktionsmeddelanden även skickas med Adobe Campaign Enhanced MTA för förbättrad leverans, genomströmning och studshantering. Alla effekter är desamma som för vanliga marknadsföringsmeddelanden och de beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html) -dokument.
