@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +26,7 @@ Klicka på **[!UICONTROL From]** länken om du vill definiera namn och adress f�
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Den här informationen kan personaliseras. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
+I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Den här informationen kan anpassas. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
 
 Information om hur du infogar och använder personaliseringsfält finns i avsnittet [Om personalisering](../../delivery/using/about-personalization.md) .
 
@@ -140,7 +137,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 * **[!UICONTROL Use recipient preferences]** (standardläge)
 
-   Meddelandeformatet definieras enligt data som lagras i mottagarprofilen och lagras som standard i **[!UICONTROL email format]** fältet (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
+   The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
@@ -156,7 +153,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 ## Definiera interaktivt innehåll {#amp-for-email-format}
 
-Med Adobe Campaign kan ni testa den nya interaktiva [AMP för e-postformat](https://amp.dev/about/email/) , som gör det möjligt att skicka dynamiska e-postmeddelanden under vissa omständigheter.
+Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) , som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
 Mer information finns i [det här avsnittet](../../delivery/using/defining-interactive-content.md).
 
@@ -181,7 +178,7 @@ E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du im
 Bilderna kan vara:
 
 * En lokal bild eller en bild som anropats från en server
-* En bild som lagras i Adobe Campaign-biblioteket för offentliga resurser
+* En bild som lagras i Adobe Campaign bibliotek för offentliga resurser
 
    Offentliga resurser är tillgängliga via noden **[!UICONTROL Resources > Online]** i Adobe Campaign-hierarkin. De grupperas i ett bibliotek och kan inkluderas i e-postmeddelanden, men kan också användas för kampanjer eller uppgifter, eller för innehållshantering.
 
@@ -223,7 +220,7 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](../../delivery/using/attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](../../delivery/using/attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
 
 Här följer ett exempel på en leverans med fyra bilder:
 
@@ -247,7 +244,7 @@ För varje bild som identifieras kan du visa dess status:
 
 Under analysfasen överförs bilderna automatiskt till servern så att de är åtkomliga från utsidan, med undantag för de lokala bilderna som måste överföras i förväg.
 
-Ni kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe Campaign-operatörer. Detta kan vara användbart om du arbetar tillsammans. Det gör du genom **[!UICONTROL Upload the images straightaway...]** att klicka för att överföra bilderna till servern.
+Du kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe Campaign-operatörer. Detta kan vara användbart om du arbetar tillsammans. Det gör du genom **[!UICONTROL Upload the images straightaway...]** att klicka för att överföra bilderna till servern.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -281,7 +278,7 @@ Konfigurera sedan följande element efter dina behov:
 
 1. Välj typ av streckkod.
 
-   * För 1D-format är följande typer tillgängliga i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
+   * För 1D-format finns följande typer i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
 
       Exempel på en 1D-streckkod:
 
@@ -340,9 +337,9 @@ För att mottagaren ska kunna ta emot meddelanden i något av dessa format rekom
 
 ![](assets/deco-mail_03.png)
 
-Om du låter alternativet vara **[!UICONTROL Email format]** , **[!UICONTROL Unknown]** eller **[!UICONTROL HTML]** **[!UICONTROL Text]** identifieras (när du skickar e-postmeddelandet) det japanska formatet automatiskt så att meddelandet visas korrekt.
+Om du låter **[!UICONTROL Email format]** alternativet vara **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** identifieras (när du skickar e-postmeddelandet) det japanska format som ska användas så att meddelandet visas korrekt.
 
-Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definieras i **[!UICONTROL Management of Email Formats]** postregeluppsättningen. Mer information om hur du hanterar e-postformat finns på [den här sidan](../../installation/using/email-deliverability.md#managing-email-formats).
+Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definieras i **[!UICONTROL Management of Email Formats]** postregeluppsättningen. For more on managing email formats, refer to [this page](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ### Begränsningar och rekommendationer {#limitations-and-recommendations}
 
@@ -367,9 +364,9 @@ Därför måste du:
 
 ### Testa e-postinnehållet {#testing-the-email-content}
 
-#### Förhandsgranska meddelandet {#previewing-the-message}
+#### Previewing the message {#previewing-the-message}
 
-Med Adobe Campaign kan ni kontrollera att meddelandeformatet är anpassat för att skickas till en japansk mobiltelefon.
+Med Adobe Campaign kan du kontrollera att meddelandeformatet är anpassat för att skickas till en japansk mobiltelefon.
 
 När du har definierat innehållet och angett ämnet för e-postmeddelandet kan du kontrollera visningen och formateringen när meddelandet skapas.
 
@@ -404,7 +401,7 @@ Du kan till exempel ersätta en profils adress med test@softbank.ne.jp om e-post
 Om du vill skicka ett e-postmeddelande till mottagare med japanska e-postformat med Campaign kan du välja mellan två alternativ:
 
 * Skapa två leveranser: en enbart för japanska mottagare och en annan för andra mottagare - se [det här avsnittet](#designing-a-specific-delivery-for-japanese-formats).
-* Skapa en leverans så identifierar Adobe Campaign automatiskt vilket format som ska användas - se [det här avsnittet](#designing-a-delivery-for-all-formats).
+* Skapa en enstaka leverans så identifierar Adobe Campaign automatiskt vilket format som ska användas - se [det här avsnittet](#designing-a-delivery-for-all-formats).
 
 #### Designa en specifik leverans för japanska format {#designing-a-specific-delivery-for-japanese-formats}
 
@@ -418,7 +415,7 @@ Det gör du genom att använda **[!UICONTROL Split]** aktiviteten i arbetsflöde
 
 #### Designa en leverans för alla format {#designing-a-delivery-for-all-formats}
 
-När Adobe Campaign hanterar formaten dynamiskt enligt domänen (profiler med e-postformat definierade som **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** ), kan du skicka samma leverans till alla mottagare.
+När Adobe Campaign dynamiskt hanterar formaten enligt domänen (profiler med e-postformat definierade som **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** ), kan du skicka samma leverans till alla mottagare.
 
 Meddelandekontakten visas korrekt för användare på japanska mobiler, precis som för standardmottagare.
 
