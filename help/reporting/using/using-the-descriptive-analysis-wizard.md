@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 18ba04d9-7bab-4eea-8dbb-6c2c138c5293
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Det är tillgängligt via flera noder i Adobe Campaign-trädet som pekar på mot
 
    Om du vill markera alla mottagare i mappen eller det aktuella filtret använder du kortkommandot CTRL+A. Detta innebär att även mottagare som inte visas markeras.
 
-   Ett exempel på en beskrivande analys av mottagare finns i: Kvalitativ [dataanalys](../../reporting/using/use-cases.md#qualitative-data-analysis).
+   Ett exempel på en beskrivande analys av mottagare finns i: [Kvalitativ dataanalys](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
 * Placera markören på en övergång som pekar mot mottagartabellen i ett **arbetsflöde**, högerklicka och välj **[!UICONTROL Analyze target]**. Mer information finns i exemplet när du [analyserar ett övergångsmål i ett arbetsflöde](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * För **listor** väljer du en eller flera listor och använder samma process som för mottagare.
@@ -62,7 +62,7 @@ Det är tillgängligt via flera noder i Adobe Campaign-trädet som pekar på mot
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Här finns exempel på beskrivande analyser av leveranser: [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population) och här: Analyserar loggar för [mottagarspårning](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Här finns exempel på beskrivande analyser av leveranser: [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population) och här: [Analyserar loggar](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)för mottagarspårning.
 
 ## Konfigurera den kvalitativa distributionsmallen {#configuring-the-qualitative-distribution-template}
 
@@ -141,13 +141,13 @@ Klicka på **[!UICONTROL Variants]** länken om du vill ändra diagramegenskaper
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
-Vilka alternativ som visas beror på vilken typ av diagram som är vald. Mer information finns på [den här sidan](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+Vilka alternativ som visas beror på vilken typ av diagram som är vald. För mer information om detta hittar du i [det här avsnittet](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 
 ### Statistikberäkning {#statistics-calculation}
 
 Med guiden för beskrivande analys kan du beräkna flera typer av statistik för data. Som standard konfigureras bara ett enkelt antal.
 
-Klicka **[!UICONTROL Add]** för att skapa en ny statistik.
+Click **[!UICONTROL Add]** to create a new statistic.
 
 ![](assets/reporting_descriptive_create_stat.png)
 
