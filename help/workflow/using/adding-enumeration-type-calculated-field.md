@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 0%
 
 ---
 
 
-# Lägga till ett beräkningsfält av uppräkningstyp {#adding-an-enumeration-type-calculated-field}
+# Adding an Enumeration type calculated field {#adding-an-enumeration-type-calculated-field}
 
 Här vill vi skapa en fråga med ett beräkningsfält av **[!UICONTROL Enumerations]** typen. Det här fältet genererar ytterligare en kolumn i förhandsgranskningsfönstret för data. Den här kolumnen anger de numeriska värden som returneras som resultat för varje mottagare (0, 1 och 2). Varje värde i den nya kolumnen tilldelas ett kön: &quot;Man&quot; för &quot;1&quot;, &quot;kvinna&quot; för &quot;2&quot; eller &quot;Inte angivet&quot; om värdet är lika med &quot;0&quot;.
 
@@ -47,7 +47,7 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_74.png)
 
-1. Klicka på i **[!UICONTROL Data formatting]** fönstret **[!UICONTROL Add a calculated field]**.
+1. In the **[!UICONTROL Data formatting]** window, click **[!UICONTROL Add a calculated field]**.
 
    ![](assets/query_editor_nveau_75.png)
 
@@ -63,13 +63,14 @@ Använd följande steg:
 
    * I **[!UICONTROL Source]** kolumnen anger du källvärdet för varje kön (0,1,2) på en ny rad.
    * Ange värdena i **[!UICONTROL Destination]** kolumnen: &quot;Ej angivet&quot; för rad &quot;0&quot;, &quot;Man&quot; för rad &quot;1&quot; och &quot;Kvinna&quot; för rad &quot;2&quot;.
+
    Markera **[!UICONTROL Keep the source value]** funktionen.
 
    Klicka **[!UICONTROL OK]** för att godkänna beräkningsfältet.
 
    ![](assets/query_editor_nveau_77.png)
 
-1. Klicka på i **[!UICONTROL Data formatting]** fönstret **[!UICONTROL Next]**.
+1. In the **[!UICONTROL Data formatting]** window, click **[!UICONTROL Next]**.
 1. I förhandsgranskningsfönstret, **[!UICONTROL start the preview of the data]**.
 
    Den extra kolumnen definierar kön för 0, 1 och 2:
@@ -77,6 +78,7 @@ Använd följande steg:
    * 0 för &quot;Ej angivet&quot;
    * 1 för &quot;Male&quot;
    * 2 för &quot;Kvinna&quot;
+
    ![](assets/query_editor_nveau_78.png)
 
    Om du t.ex. inte anger kön &quot;2&quot; i **[!UICONTROL List of enumeration values]** och **[!UICONTROL Generate a warning and continue]** funktionen för **[!UICONTROL In other cases]** fältet är markerad visas en varningslogg. Den här loggen anger att kön &quot;2&quot; (kvinna) inte har angetts. Den visas i fältet **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret.
