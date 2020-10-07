@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 0f73de0e-e589-4e39-9895-209dad75db75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
 >
 >Den här åtgärden är bara möjlig för väntande leveranser.
 
-1. Gå till Adobe Campaign-trädet **[!UICONTROL Campaign management > Measurement hypotheses]**.
+1. Gå till Adobe Campaign-trädet, **[!UICONTROL Campaign management > Measurement hypotheses]**.
 1. Klicka på **[!UICONTROL New]** knappen eller högerklicka på listan och välj alternativ **[!UICONTROL New]** i listrutan.
 
    ![](assets/response_hypothesis_instance_creation_002.png)
@@ -67,7 +67,7 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
    >[!CAUTION]
    >
    >Du kommer åt den om du har markerat **[!UICONTROL Keep execution workflow]** rutan.\
-   >Det här alternativet måste aktiveras endast i felsökningssyfte om fel uppstår när hypotesen körs. Arbetsflöden som genereras automatiskt sparas i mappen **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** i Adobe Campaign Explorer.
+   >Det här alternativet måste aktiveras endast i felsökningssyfte om fel uppstår när hypotesen körs. Arbetsflöden som genereras automatiskt sparas i mappen **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** i Utforskaren i Adobe Campaign.
    > 
    >Dessutom får arbetsflöden som genereras automatiskt inte ändras. Eventuella ändringar kommer inte att beaktas någon annanstans vid senare beräkningar.
    >
@@ -120,7 +120,7 @@ Mer information finns också i [Exempel: skapa en hypotes kopplad till en levera
 Att skapa en hypotes om ett offertförslag liknar att skapa en hypotes på direkten. Hypotesen kan verkställas så länge som erbjudandet är aktivt. Beräkningsperioden baseras på offertens förslagsdatum. När hypotesen låter dig länka en mottagare till ett köp kan status för det erbjudande som sannolikt accepteras ändras automatiskt (mer information finns i [Transaktioner](../../campaign/using/hypothesis-templates.md#transactions)).
 
 1. Skapa en eller flera **[!UICONTROL Offer]** typmodeller enligt beskrivningen i [Skapa en hypotesmodell](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
-1. Gå till **[!UICONTROL Campaign management > Measurement hypotheses]** noden.
+1. Go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node.
 1. Skapa en **[!UICONTROL Offers]** typografi genom att markera den tidigare skapade modellen.
 
    ![](assets/response_hypothesis_instance_offer_001.png)
@@ -183,7 +183,7 @@ I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Den här 
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
-1. I trädet Adobe Campaign går du till noden för att kontrollera de indikatorer som beräknats utifrån hypotesen. **[!UICONTROL Campaign management > Measurement hypotheses]**
+1. I Adobe Campaign-trädet går du till noden för att kontrollera de indikatorer som beräknats av hypotesen. **[!UICONTROL Campaign management > Measurement hypotheses]**
 
    ![](assets/response_hypothesis_delivery_example_010.png)
 
