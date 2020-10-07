@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 41bcfe67-b5d6-4ee6-9f8a-6a7a208e2036
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 2%
 
 ---
 
@@ -30,11 +30,11 @@ Du kan ange etiketten och vänta med redigeraren, som i exemplet nedan:
 
 I **[!UICONTROL Duration]** fältet kan värdet uttryckas i valfri enhet: (enligt operatörens regionala inställningar):
 
-* Om nationella inställningar inte anges: **är** i sekunder, **m** i minuter, **h** i timmar, **d** i dagar, **y** i åratal. Vid tidpunkten för godkännandet konverteras värdet automatiskt till den mest läsbara enheten.
+* Om nationella inställningar inte anges: **s** i sekunder, **m** i minuter, **h** i timmar, **d** i dagar, **y** i åratal. Vid tidpunkten för godkännandet konverteras värdet automatiskt till den mest läsbara enheten.
 
    Standardenheten är dag (**d**).
 
-* Om de regionala inställningarna till exempel är inställda på &quot;Français&quot;: **är** i sekunder, **mn** i minuter, **h** i timmar, **j** i dagar, **m** **** i månader,¥a¥ i åratal. Vid tidpunkten för godkännandet konverteras värdet automatiskt till den mest läsbara enheten, som i exemplet ovan **90-talet** konverterades till **1mn 30s**.
+* Om de regionala inställningarna till exempel är inställda på &quot;Français&quot;: **s** i sekunder, **mn** i minuter, **h** i timmar, **j** i dagar, **m** i månader, **** a¥ i åratal. Vid tidpunkten för godkännandet konverteras värdet automatiskt till den mest läsbara enheten, som i exemplet ovan **90-talet** konverterades till **1mn 30s**.
 
    Standardenheten är dag (**d**).
 
