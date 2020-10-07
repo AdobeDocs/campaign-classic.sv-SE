@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 8ef303b4-d9ce-40ee-a6c6-ed5012ab8eb8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
 
 
 # Presentationsregler{#presentation-rules}
 
-## Skapa en presentationsregel {#creating-a-presentation-rule}
+## Creating a presentation rule {#creating-a-presentation-rule}
 
 I vår databas finns flera reseerbjudanden för Europa, Afrika, USA och Kanada. Vi vill skicka erbjudanden för en resa till Kanada, men om mottagaren vägrar skicka den här typen av erbjudande vill vi inte skicka det till dem igen
 
