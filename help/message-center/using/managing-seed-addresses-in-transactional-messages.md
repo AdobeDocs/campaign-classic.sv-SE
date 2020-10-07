@@ -1,7 +1,7 @@
 ---
-title: Hantera dirigerade adresser i transaktionsmeddelanden
-seo-title: Hantera dirigerade adresser i transaktionsmeddelanden
-description: Hantera dirigerade adresser i transaktionsmeddelanden
+title: Hantera fröadresser i transaktionsmeddelanden
+seo-title: Hantera fröadresser i transaktionsmeddelanden
+description: Hantera fröadresser i transaktionsmeddelanden
 seo-description: null
 page-status-flag: never-activated
 uuid: 51c4e79d-53bb-4d46-9c7d-e90066f5317d
@@ -11,22 +11,22 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 11%
 
 ---
 
 
-# Hantera dirigerade adresser i transaktionsmeddelanden{#managing-seed-addresses-in-transactional-messages}
+# Hantera fröadresser i transaktionsmeddelanden{#managing-seed-addresses-in-transactional-messages}
 
 Med en dirigerad adress kan du visa en förhandsgranskning av ditt meddelande, skicka ett korrektur och testa meddelandepersonalisering innan e-post eller SMS-leverans. Seed-adresserna är kopplade till leveransen och kan inte användas för andra leveranser.
 
 ## Skapa en startadress {#creating-a-seed-address}
 
-1. Klicka på **[!UICONTROL Seed addresses]** fliken i transaktionsmeddelandemallen.
+1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -38,7 +38,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av ditt meddelande, s
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Ange den externa identifieraren: I det här valfria fältet kan du ange en affärsnyckel (unikt ID, namn + e-post osv.) som är gemensamma för alla program på webbplatsen och som används för att identifiera dina profiler. Om det här fältet också finns i marknadsföringsdatabasen för Adobe Campaign kan du sedan koppla en händelse till en profil i databasen.
+1. Ange den externa identifieraren: I det här valfria fältet kan du ange en affärsnyckel (unikt ID, namn + e-post osv.) som är gemensamma för alla program på webbplatsen och som används för att identifiera dina profiler. Om det här fältet också finns i Adobe Campaign marknadsföringsdatabas kan du sedan koppla en händelse till en profil i databasen.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
