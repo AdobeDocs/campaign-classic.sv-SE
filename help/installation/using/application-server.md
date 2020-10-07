@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Du måste först installera en JDK på de datorer där du vill köra Adobe Campa
 
 Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för **OpenJDK**.
 
-De versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+De versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ I Linux måste OpenSSL vara installerat. De versioner som stöds av Adobe Campai
 
 ## Exportera rapporter {#exporting-reports}
 
-Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och Adobe PDF-format. Adobe Campaign använder **LibraryOffice** för Microsoft Excel-formatet. Adobe Campaign använder **PhantomJS** -konverteraren för Adobe PDF-formatet. PhantomJs ingår i fabrikspaketet och LibraryOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**webbprocessen** på lserver).
+Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och Adobe PDF-format. För Microsoft Excel-formatet använder Adobe Campaign **LibraryOffice**. För Adobe PDF-formatet använder Adobe Campaign **PhantomJS** -konverteraren. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** process).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och A
 
 Med SpamAssassin kan du tilldela ett poängvärde till e-postmeddelanden för att avgöra om ett meddelande riskerar att betraktas som oönskat av antispam-verktyg som används vid mottagning. Installationen är valfri.
 
-SpamAssasins klassificering av e-post som oönskad baseras helt på filtrerings- och poängregler. Dessa regler måste därför uppdateras minst en gång om dagen för att din SpamAssassin-installation och dess integrering i Adobe Campaign ska fungera fullt ut och för att säkerställa relevansen av poängen som tilldelats dina leveranser innan de skickas. Den här uppdateringen görs av serveradministratören som är värd för SpamAssassin.
+SpamAssasins klassificering av e-post som oönskad baseras helt på filtrerings- och poängregler. Dessa regler måste därför uppdateras minst en gång om dagen för att din SpamAssassin-installation och dess integrering i Adobe Campaign ska fungera fullt ut och för att säkerställa att poängen som tilldelats dina leveranser är relevanta innan de skickas. Den här uppdateringen görs av serveradministratören som är värd för SpamAssassin.
 
 Den lägsta version som stöds är: **3.4**
 
