@@ -1,7 +1,7 @@
 ---
-title: Åtgärder för rapporter
-seo-title: Åtgärder för rapporter
-description: Åtgärder för rapporter
+title: Instruktioner i rapporter
+seo-title: Instruktioner i rapporter
+description: Instruktioner i rapporter
 seo-description: null
 page-status-flag: never-activated
 uuid: 7f9d99ab-ce19-46dd-bbf0-79de348d38fb
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
 
-# Åtgärder för rapporter{#actions-on-reports}
+# Instruktioner i rapporter{#actions-on-reports}
 
 När du visar en rapport kan du utföra ett visst antal åtgärder med verktygsfältet. Dessa beskrivs nedan.
 
@@ -38,7 +38,7 @@ Välj det format som du vill exportera rapporten till i listrutan. (.xls, .pdf e
 
 När en rapport innehåller flera sidor måste du upprepa åtgärden för varje sida.
 
-Du kan konfigurera din rapport så att den exporteras i PDF-, Excel- eller OpenOffice-format. Öppna Adobe Campaign-utforskaren och välj den aktuella rapporten.
+Du kan konfigurera din rapport så att den exporteras i PDF-, Excel- eller OpenOffice-format. Öppna Adobe Campaign Utforskaren och välj den aktuella rapporten.
 
 Exportalternativen nås via rapportens **[!UICONTROL Page]** aktiviteter på **[!UICONTROL Advanced]** fliken.
 
