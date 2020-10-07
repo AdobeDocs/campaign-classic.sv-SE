@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -23,15 +20,15 @@ ht-degree: 0%
 ---
 
 
-# Integrera Campaign SDK i mobilapplikationen {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrera Campaign SDK i den mobila applikationen {#integrating-campaign-sdk-into-the-mobile-application}
 
 Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Channel.
 
 >[!NOTE]
 >
->Kontakta Adobes kundtjänst om du vill skaffa Campaign SDK (tidigare kallat Neolane SDK).
+>Kontakta Adobe kundtjänst om du vill skaffa Campaign SDK (tidigare kallat Neolane SDK).
 
-SDK:s mål är att underlätta integreringen av en mobilapplikation i Adobe Campaign.
+Målet med SDK är att underlätta integreringen av mobilapplikationer i Adobe Campaign.
 
 Mer information om vilka olika Android- och iOS-versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) .
 
@@ -71,9 +68,9 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
    >[!NOTE]
    >
-   >Den här integreringsnyckeln anges i Adobe Campaign-konsolen på fliken med tjänster som är dedikerade till mobilprogrammet **[!UICONTROL Information]** . Se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken med tjänster som är dedikerade till mobilprogrammet. **[!UICONTROL Information]** Se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-* **En spårnings-URL**: som matchar adressen för spårningsservern för Adobe Campaign.
+* **En spårnings-URL**: som matchar adressen för Adobe Campaign-spårningsservern.
 * **En marknadsförings-URL**: för att aktivera insamling av prenumerationer.
 
 * **I Android**:
@@ -539,7 +536,7 @@ Så här implementerar du **registerDeviceStatus** -delegaten:
 
 ## Variabler {#variables}
 
-Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i konsolen Adobe Campaign på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
+Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
 * **I Android**:
 
