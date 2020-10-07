@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 ## Introduktion {#introduction}
 
-När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** hemsidans meny), visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
+När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** hemsidans meny) visas data i databaserna i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
 
 >[!NOTE]
 >
@@ -77,7 +74,7 @@ Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra sta
 
 * Användarfilter
 
-   Ett **programfilter** är ett avancerat filter som har sparats för att använda och dela konfigurationen med andra operatorer.
+   Ett **programfilter** är ett avancerat filter som har sparats för att använda och dela dess konfiguration med andra operatorer.
 
    Knappen som finns ovanför listorna innehåller en uppsättning programfilter som kan kombineras för att förfina filtreringen. **[!UICONTROL Filters]** Metoden för att skapa dessa filter beskrivs i [Spara ett filter](#saving-a-filter).
 
@@ -120,7 +117,7 @@ Så här skapar du ett **enkelt filter**:
 
 1. Aktivera filtret genom att trycka på Enter på tangentbordet eller klicka på den gröna pilen till höger om filterfälten.
 
-Om fältet som du vill filtrera data i inte visas som en profil kan du lägga till det i de kolumner som visas och sedan filtrera på den kolumnen. För att göra detta
+Om fältet som du vill filtrera data i inte visas som en profil kan du lägga till det i de kolumner som visas och sedan filtrera på den kolumnen. Så här gör du,
 
 1. Klicka på **[!UICONTROL Configure the list]** ikonen.
 
@@ -142,7 +139,7 @@ Om fältet som du vill filtrera data i inte visas som en profil kan du lägga ti
 
 Så här skapar du ett **avancerat filter**:
 
-1. Klicka på **[!UICONTROL Filters]** knappen och välj **[!UICONTROL Advanced filter...]**.
+1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**.
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
@@ -279,8 +276,8 @@ De fördefinierade filtren är:
    <td> Väljer mottagare som har klickat på en leverans minst X gånger under de senaste Y-månaderna.<br /> </td> 
   </tr> 
   <tr> 
- <td> E-postadress i blockeringslistan<br /> </td> 
-    <td> Väljer mottagare vars e-postadress finns i blocklistan.<br/> </td>
+ <td> E-postadress på blockeringslista<br /> </td> 
+    <td> Väljer mottagare vars e-postadress finns på blockeringslista.<br/> </td>
   </tr> 
   <tr> 
    <td> E-postadress i karantän<br /> </td> 
