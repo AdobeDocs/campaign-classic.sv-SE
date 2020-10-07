@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
 
-# Rapporter om leveranser{#reports-on-deliveries}
+# Om rapporter om leveranser{#reports-on-deliveries}
 
 Adobe Campaign erbjuder flera typer av rapporter som är tillgängliga via kundkonsolen eller en webbläsare.
 
@@ -54,4 +54,4 @@ Du kan:
 >
 >Vissa rapporter innehåller diagram (kurva, bar, tratt osv.). Flytta markören över ett diagram för att visa dess värden.
 
-Mer information om dessa alternativ finns i [det här avsnittet](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
