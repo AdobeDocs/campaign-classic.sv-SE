@@ -1,7 +1,7 @@
 ---
-title: Tillämpar regler
-seo-title: Tillämpar regler
-description: Tillämpar regler
+title: Tillämpa regler
+seo-title: Tillämpa regler
+description: Tillämpa regler
 seo-description: null
 page-status-flag: never-activated
 uuid: 4472fc0d-d717-4603-8472-bdaf2835a02a
@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Tillämpar regler{#applying-rules}
+# Tillämpa regler{#applying-rules}
 
 ## Använda typologi på en leverans {#applying-a-typology-to-a-delivery}
 
@@ -87,14 +84,14 @@ I standarddriftsläget används reglerna i följande sekvens:
 1. Kontrollregler, om de tillämpas i början av målinriktningen.
 1. Filtreringsregler:
 
-   * Interna ansökningsregler för adresskvalifikation: definierad adress/overifierad adress/adress i blocklistan/adresskvalitet i karantän.
+   * Interna ansökningsregler för adresskvalifikation: angiven adress/overifierad adress/adress på blockeringslista/i karantän-adress/adresskvalitet.
    * Filtreringsregler som definieras av användaren.
    * Regel för borttagning av dubbletter för adressen eller identifieraren (används om det behövs).
 
 1. Tryckregler.
 1. Kapacitetsregler.
 1. Kontrollregler, om de tillämpas när målinriktningen är slut.
-1. Styr regler, om de tillämpas i början av personaliseringen. Om användarreglerna (filtrering/tryck/aktivering) har upphört att gälla och behöver beräknas om, kommer de att tillämpas under det här steget.
+1. Kontrollregler, om de tillämpas i början av anpassningen. Om användarreglerna (filtrering/tryck/aktivering) har upphört att gälla och behöver beräknas om, kommer de att tillämpas under det här steget.
 1. Styr reglerna, om de gäller när personaliseringen är klar.
 
 >[!NOTE]
@@ -142,7 +139,7 @@ Du kan också använda fältet för att länka leveranser till leveransservern (
 >[!NOTE]
 >
 >Tillhörighetshantering gäller inte för **[!UICONTROL Filtering]** typologier.\
->Tillhörigheterna definieras i instanskonfigurationsfilen på Adobe Campaign-servern. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+>Tillhörigheterna definieras i instanskonfigurationsfilen på Adobe Campaign-servern. Mer information om detta finns i [det här avsnittet](../../installation/using/about-initial-configuration.md).
 
 ### Kampanjoptimering och distribuerad marknadsföring {#campaign-optimization-and-distributed-marketing}
 
