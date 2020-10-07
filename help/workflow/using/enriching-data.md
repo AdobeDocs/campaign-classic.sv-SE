@@ -1,7 +1,7 @@
 ---
-title: Förbättra data
-seo-title: Förbättra data
-description: Förbättra data
+title: Berika data
+seo-title: Berika data
+description: Berika data
 seo-description: null
 page-status-flag: never-activated
 uuid: 3f65a8a2-b3e1-4c4c-9653-b8a7c4d7557a
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Förbättra data{#enriching-data}
+# Berika data{#enriching-data}
 
 ## Om att förbättra data {#about-enriching-data}
 
@@ -118,7 +115,7 @@ Om du vill sortera mottagarna baserat på deras poäng läggs en aktivitet till 
 
 ![](assets/uc1_enrich_18.png)
 
-1. En första delmängd (**vinnare**) har definierats så att den innehåller mottagaren med det högsta poängtalet. Det gör du genom att definiera en begränsning av antalet poster, tillämpa en fallande sortering på poängen och begränsa antalet poster till 1.
+1. En första delmängd (**vinnare**) har definierats så att den innehåller den mottagare som har högst poäng. Det gör du genom att definiera en begränsning av antalet poster, tillämpa en fallande sortering på poängen och begränsa antalet poster till 1.
 
    ![](assets/uc1_enrich_16.png)
 
