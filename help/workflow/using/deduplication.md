@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -55,7 +52,8 @@ Klicka på **[!UICONTROL Edit configuration...]** länken för att definiera ded
    >[!NOTE]
    >
    >Om du använder externa data som indata, till exempel från en extern fil, måste du markera **[!UICONTROL Temporary schema]** alternativet.
-I nästa steg kan du välja vilket eller vilka villkor som ska användas: **[!UICONTROL Other]**
+   >
+   >I nästa steg kan du välja vilket eller vilka villkor som ska användas: **[!UICONTROL Other]**
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -67,12 +65,12 @@ I nästa steg kan du välja vilket eller vilka villkor som ska användas: **[!UI
 
    Följande metoder är tillgängliga:
 
-   * **[!UICONTROL Choose for me]**: markerar slumpmässigt den post som ska hållas utanför dubbletterna.
-   * **[!UICONTROL Following a list of values]**: I kan du definiera en värdeprioritet för ett eller flera fält. Om du vill definiera värdena markerar du ett fält eller skapar ett uttryck och lägger sedan till värdena i rätt tabell. Om du vill definiera ett nytt fält klickar du på **[!UICONTROL Add]** knappen ovanför listan med värden.
+   * **[!UICONTROL Choose for me]**: Markerar slumpmässigt den post som ska hållas utanför dubbletterna.
+   * **[!UICONTROL Following a list of values]**: Låter dig definiera en värdeprioritet för ett eller flera fält. Om du vill definiera värdena markerar du ett fält eller skapar ett uttryck och lägger sedan till värdena i rätt tabell. Om du vill definiera ett nytt fält klickar du på knappen **[!UICONTROL Add]** ovanför listan med värden.
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**: Detta gör att du kan behålla poster där värdet för det valda uttrycket inte är tomt som prioritet.
+   * **[!UICONTROL Non-empty value]**: Låter dig behålla poster där värdet för det valda uttrycket inte är tomt som prioritet.
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
@@ -87,7 +85,7 @@ I nästa steg kan du välja vilket eller vilka villkor som ska användas: **[!UI
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet består av alla dubbletter. Därefter kommer ytterligare en övergång att läggas till i aktiviteten enligt följande:
+   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Komplementet består av alla dubbletter. Därefter kommer ytterligare en övergång att läggas till i aktiviteten enligt följande:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
