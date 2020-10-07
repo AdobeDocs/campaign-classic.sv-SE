@@ -1,7 +1,7 @@
 ---
-title: Datamodeller
-seo-title: Datamodeller
-description: Datamodeller
+title: Datascheman
+seo-title: Datascheman
+description: Datascheman
 seo-description: null
 page-status-flag: never-activated
 uuid: 9f08750a-e125-4531-8c2c-1ab218190210
@@ -11,24 +11,24 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 2%
 
 ---
 
 
-# Datamodeller{#data-schemas}
+# Datascheman{#data-schemas}
 
 ## Principer {#principles}
 
-Om du vill redigera, skapa och konfigurera scheman klickar du på noden i Adobe Campaign-klientkonsolen. **[!UICONTROL Administration > Configuration > Data schemas]**
+Om du vill redigera, skapa och konfigurera scheman klickar du på noden i Adobe Campaign klientkonsol **[!UICONTROL Administration > Configuration > Data schemas]** .
 
 >[!NOTE]
 >
->Enkla datamodeller kan bara tas bort av en administratör för Adobe Campaign Classic-konsolen.
+>Enkla datamodeller kan bara tas bort av en administratör i Adobe Campaign Classic-konsolen.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
@@ -48,7 +48,7 @@ Förhandsgranskningen genererar automatiskt det utökade schemat:
 >
 >När källschemat sparas startas genereringen av det utökade schemat automatiskt.
 
-Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md) .
+Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## Exempel: skapa en kontraktstabell {#example--creating-a-contract-table}
 
@@ -125,5 +125,5 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. Mer information finns i [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md).
+1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
 
