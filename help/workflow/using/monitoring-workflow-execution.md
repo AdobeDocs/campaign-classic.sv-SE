@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2001'
 ht-degree: 0%
@@ -29,7 +26,7 @@ I det här avsnittet finns information om hur du övervakar arbetsflödenas kör
 
 Det finns även ett användningsexempel om hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot; i [det här avsnittet](../../workflow/using/supervising-workflows.md#supervising-workflows).
 
-Administratörer av instansen kan dessutom använda **granskningsspåret** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Mer information finns i det [dedikerade avsnittet](../../production/using/audit-trail.md).
+Administratörer av instansen kan dessutom använda **granskningsspåret** för att kontrollera aktiviteter och de senaste ändringarna av arbetsflöden, arbetsflödenas status. For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
 
 Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
@@ -105,7 +102,7 @@ I loggen visas den kronologiska listan med körningsmeddelanden som rör arbetsf
 
 ## Rensar loggarna {#purging-the-logs}
 
-Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Du kan rensa historiken via **[!UICONTROL File > Actions]** menyn eller genom att klicka på **[!UICONTROL Actions]** knappen i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**. De alternativ som är tillgängliga på **[!UICONTROL Actions]** menyn finns i verktygsfältsavsnittet [Åtgärder](../../workflow/using/starting-a-workflow.md) .
+Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Du kan rensa historiken via **[!UICONTROL File > Actions]** menyn eller genom att klicka på **[!UICONTROL Actions]** knappen i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**.  De alternativ som är tillgängliga på **[!UICONTROL Actions]** menyn finns i verktygsfältsavsnittet [Åtgärder](../../workflow/using/starting-a-workflow.md) .
 
 ![](assets/purge_historique.png)
 
@@ -119,11 +116,11 @@ Arbetstabellerna i arbetsflödet tas bort automatiskt när arbetsflödet försä
 
 ## Hantera fel {#managing-errors}
 
-När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar. I arbetsflödesöversikten (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** link) kan du endast visa arbetsflöden med fel, vilket visas nedan.
+När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar till rött. I arbetsflödesöversikten (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** link) kan du endast visa arbetsflöden med fel, vilket visas nedan.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-I Utforskaren i Adobe Campaign visar arbetsflödeslistan en **[!UICONTROL Failed]** kolumn som standard.
+I Utforskaren i Adobe Campaign visas som standard en **[!UICONTROL Failed]** kolumn i arbetsflödeslistan.
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -175,7 +172,7 @@ Om det är möjligt rekommenderar vi att du startar om arbetsflödet när du har
 
 ## Instansövervakning {#instance-supervision}
 
-På **[!UICONTROL Instance supervision]** sidan kan du visa serveraktiviteten Adobe Campaign och visa en lista över arbetsflöden och leveranser med fel.
+På **[!UICONTROL Instance supervision]** sidan kan du visa Adobe Campaign serveraktivitet och visa en lista över arbetsflöden och leveranser med fel.
 
 Gå till **[!UICONTROL Monitoring]** universum och klicka på **[!UICONTROL General view]** länken för att komma åt den här sidan.
 
@@ -244,7 +241,7 @@ Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar
 
 I arbetsflöden används många arbetstabeller som förbrukar utrymme och gör att hela plattformen blir långsammare om den inte underhålls. Mer information om databasunderhåll finns i det här [avsnittet](../../production/using/tables-to-maintain.md) .
 
-Med arbetsflödet för rensning **av** databas, som är tillgängligt via noden **Administration > Produktion > Tekniska arbetsflöden** , kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något. Se det här [avsnittet](../../production/using/database-cleanup-workflow.md).
+Med arbetsflödet för rensning **av** databas, som är tillgängligt via noden **Administration > Produktion > Tekniska arbetsflöden** , kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något. Refer to this [section](../../production/using/database-cleanup-workflow.md).
 
 Du kan också skapa specifika tekniska arbetsflöden för att rensa bort onödiga datamängder. Se det här [avsnittet](../../production/using/application-objects.md) och den här [sidan](#purging-the-logs).
 
