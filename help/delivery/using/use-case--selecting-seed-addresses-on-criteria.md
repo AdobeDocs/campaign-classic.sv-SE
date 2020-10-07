@@ -1,7 +1,7 @@
 ---
-title: '"Användningsfall: välja startadresser på villkor"'
-seo-title: '"Användningsfall: välja startadresser på villkor"'
-description: '"Användningsfall: välja startadresser på villkor"'
+title: '"Användningsfall: välja fröadresser enligt villkor"'
+seo-title: '"Användningsfall: välja fröadresser enligt villkor"'
+description: '"Användningsfall: välja fröadresser enligt villkor"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 6af39893-6ef3-4204-8b53-0c16e35bac8f
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 4%
 
 ---
 
 
-# Användningsfall: välja startadresser enligt villkor{#use-case-selecting-seed-addresses-on-criteria}
+# Användningsfall: välja fröadresser enligt villkor{#use-case-selecting-seed-addresses-on-criteria}
 
 I samband med en leverans eller en kampanj kan du med hjälp av länken välja dirigerade adresser baserat på specifika urvalskriterier. **[!UICONTROL Edit the dynamic condition...]**
 
@@ -60,7 +60,7 @@ Mer information om schematillägg finns i [konfigurationsguiden](../../configura
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 1. I schemaredigeringsfönstret kopierar du raderna nedan och klistrar in dem i det område som visas på skärmbilden.
 
    ```
@@ -85,8 +85,8 @@ Mer information om schematillägg finns i [konfigurationsguiden](../../configura
 
    I det här fallet anger du att en ny uppräkning med namnet **[!UICONTROL Department]** har skapats i dirigerad adresstabellen, och den är baserad på **[!UICONTROL @company]** standarduppräkningsmallen (med namnet **Company** i dirigerad adressform).
 
-1. Klicka **[!UICONTROL Save]**.
-1. Välj **[!UICONTROL Tools > Advanced]** alternativet på **[!UICONTROL Update database structure]** menyn.
+1. Klicka på **[!UICONTROL Save]**.
+1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
@@ -94,7 +94,7 @@ Mer information om schematillägg finns i [konfigurationsguiden](../../configura
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Följ guiden tills du kommer till sidan för att köra uppdateringen. Klicka på **[!UICONTROL Start]** knappen.
+1. Följ guiden tills du kommer till sidan för att köra uppdateringen. Klicka på knappen **[!UICONTROL Start]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
@@ -183,20 +183,20 @@ Nu kan du ange det dynamiska villkoret för startadresserna för leveransen. Så
    >
    >Schematillägget som skapades tidigare kommer från **mottagarschemat** . Värdena som visas på skärmen ovan kommer från en uppräkning av **mottagarschemat** .
 
-1. Klicka **[!UICONTROL Ok]**.
+1. Klicka på **[!UICONTROL Ok]**.
 
    Frågan visas i **[!UICONTROL Select target]** fönstret.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Klicka **[!UICONTROL Ok]** för att godkänna frågan.
+1. Click **[!UICONTROL Ok]** to approve the query.
 1. Analysera leveransen och klicka sedan på **[!UICONTROL Delivery]** fliken för att komma åt leveransloggarna.
 
    Startadresserna för inköpsavdelningen visas som väntande leveranser, precis som för mottagarna eller andra startadresser.
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Klicka på **[!UICONTROL Send]** knappen för att starta leveransen.
+1. Click the **[!UICONTROL Send]** button to start the delivery.
 
    Medlemmarna på inköpsavdelningen utgör en del av de dirigerade adresser som kommer att ta emot leveransen i inkorgen.
 
