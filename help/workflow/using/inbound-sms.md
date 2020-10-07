@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: fa9ae600-91fc-4aea-ae02-8ab9064947ac
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 
