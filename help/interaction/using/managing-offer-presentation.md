@@ -1,7 +1,7 @@
 ---
-title: Hantera presentation av erbjudanden
-seo-title: Hantera presentation av erbjudanden
-description: Hantera presentation av erbjudanden
+title: Hantera en presentation av erbjudanden
+seo-title: Hantera en presentation av erbjudanden
+description: Hantera en presentation av erbjudanden
 seo-description: null
 page-status-flag: never-activated
 uuid: cf4614b9-a322-4170-aa6d-4f138f8ca2d2
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: f6e44634-3a13-480e-ab44-f3c744054a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 1%
 
 ---
 
 
-# Hantera presentation av erbjudanden{#managing-offer-presentation}
+# Hantera en presentation av erbjudanden{#managing-offer-presentation}
 
 ## Översikt över presentationsregler {#presentation-rules-overview}
 
@@ -52,7 +52,7 @@ Med interaktion kan ni styra flödet av erbjudandeförslag med hjälp av present
 
 ## Inställningar för presentationsregel {#presentation-rule-settings}
 
-### Ansökningskriterier {#application-criteria-}
+### Ansökningsvillkor {#application-criteria-}
 
 Med de programvillkor som finns på fliken **[!UICONTROL General]** kan du ange vilka erbjudanden presentationsregeln ska gälla för. För att kunna göra detta måste du skapa en fråga och välja de aktuella erbjudandena enligt beskrivningen nedan.
 
@@ -109,7 +109,7 @@ Du kan välja filtreringskriterier för att exkludera offerter baserat på kanal
 
 ![](assets/offer_typology_014.png)
 
-Dessa kriterier är de vanligaste tillämpningarna av presentationsregler. Om du vill använda andra villkor kan du skapa en fråga via **[!UICONTROL Limit propositions...]** länken. Mer information finns i avsnittet [Skapa en fråga om förslag](#creating-a-query-on-propositions) .
+Dessa kriterier är de vanligaste tillämpningarna av presentationsregler. Om du vill använda andra villkor kan du skapa en fråga via **[!UICONTROL Limit propositions...]** länken. For more on this, refer to the [Creating a query on propositions](#creating-a-query-on-propositions) section.
 
 * **Filtrera på kanalen**
 
@@ -121,7 +121,7 @@ Dessa kriterier är de vanligaste tillämpningarna av presentationsregler. Om du
    >
    >Vi pratar om kanalen och inte rymden. Om regeln utesluter ett erbjudande på webbkanalen kommer det erbjudande som ska presenteras på en webbplats i två blanksteg (i en banderoll och till exempel i sidans brödtext) inte att visas på webbplatsen om det redan har presenterats tidigare.
    >
-   >För ett arbetsflöde som innehåller en erbjudandepresentation beaktas reglerna bara korrekt om de är konfigurerade för **[!UICONTROL All channels]**.
+   >För ett arbetsflöde som omfattar en erbjudandepresentation beaktas reglerna bara korrekt om de är konfigurerade för **[!UICONTROL All channels]**.
 
 * **Filtrera på erbjudandet**
 
