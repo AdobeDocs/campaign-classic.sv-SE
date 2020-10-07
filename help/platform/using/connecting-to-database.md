@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
 
@@ -26,13 +26,13 @@ Om du vill aktivera en anslutning till den externa databasen måste du ange ansl
 
 >[!CAUTION]
 >
->Adobe Campaign-användaren behöver specifika rättigheter för den externa databasen och Adobe Campaign-programservern för att bearbeta data från en extern databas. Mer information finns i avsnittet [Åtkomstbehörighet](../../platform/using/remote-database-access-rights.md) för fjärrdatabas.
+>Adobe Campaign-användaren behöver specifika rättigheter för den externa databasen och Adobe Campaign-programservern för att kunna bearbeta data från en extern databas. Mer information finns i avsnittet [Åtkomstbehörighet](../../platform/using/remote-database-access-rights.md) för fjärrdatabas.
 >
 >För att undvika felfunktioner måste operatorer som har åtkomst till delade fjärrdata arbeta från separata blanksteg.
 
 ## Skapa en delad anslutning {#creating-a-shared-connection}
 
-Om du vill aktivera en anslutning till en delad extern databas kan du komma åt databasen via Adobe Campaign, så länge den här anslutningen är aktiv.
+Om du vill aktivera en anslutning till en delad extern databas kan du komma åt databasen via Adobe Campaign så länge den här anslutningen är aktiv.
 
 1. Konfigurationen måste definieras i förväg via **[!UICONTROL Administration > Platform > External accounts]** noden.
 1. Klicka på **[!UICONTROL New]** knappen och välj **[!UICONTROL External database]** typ.
@@ -45,7 +45,7 @@ Om du vill aktivera en anslutning till en delad extern databas kan du komma åt 
    ![](assets/wf-external-account-create.png)
 
 1. Om det behövs avmarkerar du alternativet för att inaktivera åtkomsten till den här databasen utan att ta bort dess konfiguration. **[!UICONTROL Enabled]**
-1. Om du vill att Adobe Campaign ska få åtkomst till den här databasen måste du distribuera SQL-funktionerna. Klicka på **[!UICONTROL Parameters]** fliken och sedan på **[!UICONTROL Deploy functions]** knappen.
+1. Om du vill att Adobe Campaign ska kunna komma åt den här databasen måste du distribuera SQL-funktionerna. Klicka på **[!UICONTROL Parameters]** fliken och sedan på **[!UICONTROL Deploy functions]** knappen.
 
    ![](assets/wf-external-account-functions.png)
 
@@ -72,7 +72,7 @@ I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutni
 
    ![](assets/wf_add_data_local_external_data_param.png)
 
-   Klicka på **[!UICONTROL Next]** knappen.
+   Klicka på knappen **[!UICONTROL Next]**.
 
 1. Markera tabellen där data lagras.
 
@@ -80,7 +80,7 @@ I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutni
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klicka på **[!UICONTROL Add]** knappen för att definiera ett eller flera avstämningsfält mellan externa databasdata och data i Adobe Campaign-databasen. Ikonerna **[!UICONTROL Edit expression]** i **[!UICONTROL Remote field]** och **[!UICONTROL Local field]** ger dig tillgång till listan med fält i varje tabell.
+1. Klicka på **[!UICONTROL Add]** knappen för att definiera ett eller flera avstämningsfält mellan den externa databasinformationen och data i Adobe Campaign-databasen. Ikonerna **[!UICONTROL Edit expression]** i **[!UICONTROL Remote field]** och **[!UICONTROL Local field]** ger dig tillgång till listan med fält i varje tabell.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
@@ -105,7 +105,7 @@ Data skickas sedan via det säkra SSL-protokollet.
 
 ## Ytterligare konfigurationer {#additional-configurations}
 
-Om det behövs kan du skapa schemat för databearbetning i en extern databas. På samma sätt kan du med Adobe Campaign definiera mappning för data i en extern tabell. Dessa konfigurationer är allmänna och gäller inte enbart arbetsflöden.
+Om det behövs kan du skapa schemat för databearbetning i en extern databas. På samma sätt kan du i Adobe Campaign definiera mappning av data i en extern tabell. Dessa konfigurationer är allmänna och gäller inte enbart arbetsflöden.
 
 >[!NOTE]
 >
