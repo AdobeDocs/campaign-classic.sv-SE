@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,21 +24,21 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-I följande avsnitt ges en översikt över konfigurationen som krävs för att styra utdata från Adobe Campaign-instanser när e-postmeddelanden skickas.
+I följande avsnitt ges en översikt över den konfiguration som krävs för att styra utdata från Adobe Campaign-instanser när e-postmeddelanden levereras.
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som lagras hos Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Mer information om koncept och bästa metoder för att leverera finns i det här [avsnittet](../../delivery/using/about-deliverability.md).
 
-Alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via en Adobe Campaign-plattform finns i det här [avsnittet](../../delivery/using/technical-recommendations.md).
+Alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post från en Adobe Campaign-plattform finns i detta [avsnitt](../../delivery/using/technical-recommendations.md).
 
 ## Verksamhetsprincip {#operating-principle}
 
 Det går att styra utdata från en eller flera Adobe Campaign-instanser för att begränsa antalet e-postmeddelanden som skickas beroende på en domän. Du kan till exempel begränsa utdata till 20 000 per timme för **yahoo.com** -adresser, och konfigurera 100 000 meddelanden per timme för alla andra domäner.
 
-Meddelandeutdata måste kontrolleras för varje IP-adress som används av leveransservrarna (**mta**). Flera **data** som har delats upp på flera datorer och som tillhör olika instanser av Adobe Campaign kan dela samma IP-adress för e-postleverans: En process måste skapas för att koordinera användningen av dessa IP-adresser.
+Meddelandeutdata måste kontrolleras för varje IP-adress som används av leveransservrarna (**mta**). Flera **data** som har delats upp på flera datorer och som tillhör olika Adobe Campaign-instanser kan dela samma IP-adress för e-postleverans: En process måste skapas för att koordinera användningen av dessa IP-adresser.
 
 Detta är vad **statusmodulen** gör: den vidarebefordrar alla anslutningsbegäranden och meddelanden som ska skickas till e-postservrarna för en uppsättning IP-adresser. Statistikservern håller reda på leveranser och kan aktivera eller inaktivera sändning baserat på angivna kvoter.
 
@@ -105,7 +102,7 @@ När ett meddelande skickas kan du få tre möjliga resultat:
 
    >[!NOTE]
    >
-   >En **sökväg** är en anslutning mellan Adobe Campaign- **data** och **måldata**. Adobe Campaign- **data** kan välja mellan flera IP-startadresser och flera IP-måldomäner.
+   >En **sökväg** är en anslutning mellan Adobe Campaign- **data** och **måldata**. Adobe Campaign **MTA** kan välja mellan flera IP-startadresser och flera IP-måldomäner.
 
 ### Avbrutet meddelande {#message-abandonment}
 
@@ -147,11 +144,11 @@ MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en s�
 >
 >Om du har uppgraderat till Förbättrat MTA används inte längre leveransregler för värdbaserade eller hybridinstallationer. **[!UICONTROL MX management]** Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
 >
->Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Dessa regler läses in automatiskt varje morgon kl. 6.00 (servertid) för att klientinstansen ska kunna levereras regelbundet.
 
-Beroende på materialkapaciteten och den interna policyn kommer en Internet-leverantör att acceptera ett fördefinierat antal anslutningar och meddelanden per timme. Dessa variabler kan ändras automatiskt av Internet-leverantörssystemet beroende på IP-adressens och den sändande domänens anseende. Via sin leveransplattform hanterar Adobe Campaign över 150 specifika regler av Internet-leverantören och dessutom en allmän regel för andra domäner.
+Beroende på materialkapaciteten och den interna policyn kommer en Internet-leverantör att acceptera ett fördefinierat antal anslutningar och meddelanden per timme. Dessa variabler kan ändras automatiskt av Internet-leverantörssystemet beroende på IP-adressens och den sändande domänens anseende. Via sin leveransplattform hanterar Adobe Campaign över 150 specifika regler av Internet-leverantören och dessutom en generisk regel för andra domäner.
 
 Det maximala antalet anslutningar beror inte enbart på antalet offentliga IP-adresser som används av MTA.
 
@@ -223,7 +220,7 @@ De regler som ska följas för MX definieras i **[!UICONTROL MX management]** do
 Om **[!UICONTROL MX management]** dokumentet inte finns i noden kan du skapa det manuellt. Så här gör du:
 
 1. Skapa en ny uppsättning e-postregler.
-1. Välj **[!UICONTROL MX management]** läge.
+1. Välj **[!UICONTROL MX management]**-läget.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
@@ -252,10 +249,12 @@ Följande parametrar är tillgängliga för varje regel:
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
+
    är kompatibla med följande masker:
 
    * *.yahoo.com
    * ?.mx.yahoo.com
+
    För e-postadressen foobar@gmail.com är domänen gmail.com och MX-posten är:
 
    ```
@@ -272,6 +271,7 @@ Följande parametrar är tillgängliga för varje regel:
 
    * Ett tal: regeln endast gäller för detta publicId,
    * Ett nummerintervall (**tal1-tal2**): regeln gäller för alla publika ID:n mellan dessa två tal.
+
    >[!NOTE]
    >
    >Om fältet är tomt gäller regeln alla identifierare.
@@ -313,7 +313,7 @@ Du kan definiera formatet för skickade meddelanden så att innehållet som visa
 
 Det gör du genom att gå till **[!UICONTROL Management of email formats]** dokumentet som finns i **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. Mer information finns i [det här dokumentet](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. For more information, refer to [this document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 ![](assets/mail_rule_sets.png)
 
@@ -383,7 +383,7 @@ Parametrarna är följande:
 * **adress**: Detta är IP-adressen till den MTA-värddator som ska användas.
 * **heloHost**: den här identifieraren representerar IP-adressen så som den kommer att ses av SMTP-servern.
 
-* **publicId**: Den här informationen är användbar när en IP-adress delas av flera Adobe Campaign- **datorer** bakom en NAT-router. Statistikservern använder den här identifieraren för att memorera anslutningen och skicka statistik mellan den här startpunkten och målservern.
+* **publicId**: den här informationen är användbar när en IP-adress delas av flera Adobe Campaign- **datorer** bakom en NAT-router. Statistikservern använder den här identifieraren för att memorera anslutningen och skicka statistik mellan den här startpunkten och målservern.
 * **vikt**: Här kan du definiera den relativa användningsfrekvensen för adressen. Som standard har alla adresser en vikt som är lika med 1.
 
 >[!NOTE]
@@ -411,7 +411,7 @@ Om till exempel den första adressen inte kan användas för ett givet MX, skick
 
 ## Optimering av e-postutskick {#email-sending-optimization}
 
-Den interna arkitekturen för Adobe Campaign- **data** påverkar konfigurationen för optimering av e-postleverans. Här är några tips om hur du kan förbättra dina leveranser.
+Den interna arkitekturen för Adobe Campaign **Data** påverkar konfigurationen för optimering av e-postleverans. Här är några tips om hur du kan förbättra dina leveranser.
 
 ### Justera parametern maxWaitMessages {#adjust-the-maxwaitingmessages-parameter}
 
