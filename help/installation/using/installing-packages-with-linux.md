@@ -11,25 +11,25 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
 
 # Installera paket med Linux{#installing-packages-with-linux}
 
-Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Linux. Installera 64-bitarsversionen av Adobe Campaign för en 64-bitarsplattform i Linux.
+Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Linux. Installera 64-bitarsversionen av Adobe Campaign för en 64-bitarsplattform för Linux.
 
-För var och en av dessa versioner har Adobe Campaign ett paket: **nlserver**. Det här paketet innehåller binärfiler och konfigurationsfiler för en viss version.
+För var och en av dessa versioner medföljer Adobe Campaign ett paket: **nlserver**. Det här paketet innehåller binärfiler och konfigurationsfiler för en viss version.
 
 Med installationskommandona kan du:
 
 * Kopiera filerna till **/usr/local/neolane**
-* Skapa ett Adobe Campaign Linux-konto (och den associerade gruppen) som skapas med **/usr/local/neolane** som hemkatalog
+* Skapa ett Adobe Campaign Linux-konto (och den tillhörande gruppen) som skapas med **/usr/local/neolane** som hemkatalog
 * Skapa ett automatiskt skript **/etc/init.d/nlserver6** för användning vid start, eller skapa en systemenhet (med början 20.1).
 
 >[!NOTE]
@@ -38,23 +38,24 @@ Med installationskommandona kan du:
 >
 >Den **hemkatalog** som är länkad till **neolane** -användaren skapas också automatiskt i **[!UICONTROL /usr/local/neolane]**. Kontrollera att det finns tillräckligt med utrymme på **[!UICONTROL /usr/local]** disken (flera GB).
 
-Du kan köra **ping-`hostname`**kommandot för att kontrollera att servern kan nå sig själv.
+Du kan köra **ping-`hostname`** kommandot för att kontrollera att servern kan nå sig själv.
 
 ## Distribution baserad på RPM-paket {#distribution-based-on-rpm--packages}
 
 Så här installerar du Adobe Campaign på ett RPM-operativsystem (RHEL, CentOS och SUSE):
 
-1. Du måste först skaffa Adobe Campaign-paketet.
+1. Du måste först hämta Adobe Campaign-paketet.
 
-   Filen namnges nedan, där **XXXX** är Adobe Campaign-numret:
+   Filen namnges nedan, där **XXXX** är Adobe Campaign byggnummer:
 
    * **nlserver6-v7-XXXX-0.x86_64.rpm** för v7.
    * **nlserver6-XXXX-0.x86_64.rpm** för v6.1.
+
    >[!CAUTION]
    >
    >Se till att du använder rätt filnamn för din version av Adobe Campaign i kommandoexemplen i det här avsnittet.
 
-1. Installera den genom att ansluta som **rot** och köra följande kommando (där **XXXX** är byggnumret för Adobe Campaign):
+1. Installera den genom att ansluta som **rot** och köra följande kommando (där **XXXX** är Adobe Campaign build number):
 
    ```
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
@@ -80,17 +81,18 @@ yum install bc.x86_64
 
 Så här installerar du 64-bitars Adobe Campaign på ett 64-bitars Debian-operativsystem:
 
-1. Du måste först skaffa Adobe Campaign-paketet.
+1. Du måste först hämta Adobe Campaign-paketet.
 
    * **nlserver6-v7-XXXX-linux-2.6-amd64.deb** för v7.
    * **nlserver6-XXXX-linux-2.6-amd64.deb** för v6.1.
-   **XXXX** är byggnumret för Adobe Campaign.
+
+   **XXXX** är Adobe Campaign build number.
 
    >[!CAUTION]
    >
    >Se till att du använder rätt filnamn för din version av Adobe Campaign i kommandoexemplen i det här avsnittet.
 
-1. Installera den genom att ansluta som **rot** och köra följande kommando (där **XXXX** är byggnumret för Adobe Campaign):
+1. Installera den genom att ansluta som **rot** och köra följande kommando (där **XXXX** är Adobe Campaign build number):
 
    ```
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
@@ -199,7 +201,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
 
 * För LibreOffice:
 
-   För att köra Adobe Campaign på en befintlig version av LibraryOffice krävs ytterligare konfigurationer: du måste ange åtkomstsökvägarna till installationskatalogen. Till exempel:
+   Om du vill köra Adobe Campaign på en befintlig version av LibraryOffice krävs ytterligare konfigurationer: du måste ange åtkomstsökvägarna till installationskatalogen. Till exempel:
 
    * Debian
 
@@ -277,7 +279,7 @@ När du använder Oracle med Adobe Campaign måste du konfigurera Oracle-klientl
 
 * Konfiguration för Adobe Campaign
 
-   För att slutföra installationen av Oracle-klienten för Adobe Campaign måste du skapa en symbolisk länk för filen **.so** som används av Adobe Campaign.
+   För att slutföra installationen av Oracle-klienten för Adobe Campaign måste du skapa en symbolisk länk till filen **.so** som används av Adobe Campaign.
 
    Använd följande kommandon om du vill göra det:
 
