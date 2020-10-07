@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2498'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ Observera följande steg för att skapa en List med group-typtabell:
 
 1. Gå till rapportdiagrammet och placera en **[!UICONTROL Query]** aktivitet. Se [Samla in data för analys](../../reporting/using/collecting-data-to-analyze.md).
 1. Fyll i källtabellen och markera fälten i tabellen som statistiken ska beröra.
-1. Placera en **[!UICONTROL Page]** aktivitet i diagrammet. Mer information finns i [Statiska element](../../reporting/using/creating-a-new-report.md#static-elements).
+1. Placera en **[!UICONTROL Page]** aktivitet i diagrammet. For more on this, refer to [Static elements](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Infoga en **[!UICONTROL List with group]** typtabell på sidan.
 1. Ange datasökvägen eller den tabell som har valts som datakälla i frågan.
 
@@ -115,7 +115,7 @@ Använd **[!UICONTROL Expression]** menyposten för att välja de värden som sk
 
 * Ange en etikett för en cell, till exempel rubrikens.
 
-   Om du vill göra det använder du samma process som när du infogar ett fält i databasen, men markerar inget uttryck. Ange etiketten i **[!UICONTROL Label]** fältet. Den visas som den är.
+   Om du vill göra det använder du samma process som när du infogar ett fält i databasen, men markerar inget uttryck. Enter the label in the **[!UICONTROL Label]** field. Den visas som den är.
 
 * Beräkna ett aggregat (ett genomsnitt, en summa osv.) och visa den i cellen.
 
@@ -239,6 +239,7 @@ Dubbelklicka på den första frågan för att redigera den och använd sedan fö
    * Indikatorn för bearbetade leveranser.
    * den utländska nyckeln för Campaign-länken,
    * Indikatorn för felfrekvens.
+
    ![](assets/s_advuser_report_listgroup_002.png)
 
    Länka ett alias till varje fält: Vi rekommenderar att du gör det enklare att välja data från tabellen som ska läggas till på rapportens första sida.
@@ -378,6 +379,7 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
       ![](assets/reporting_quick_start_query-2_count.png)
 
    * samla in mottagarnas e-postdomäner och gruppinformation om detta fält: Om du vill göra det väljer du **[!UICONTROL Group]** alternativet i kolumnen Domännamn.
+
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Länka följande alias till fälten:
@@ -400,7 +402,7 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 
 ### Steg 5 - Skapa den andra sidan {#step-5---create-the-second-page}
 
-1. Redigera sidan och ange dess etikett: E- **postdomäner**.
+1. Redigera sidan och ange dess etikett: **E-postdomäner**.
 1. Avmarkera **[!UICONTROL Enable output transitions]** alternativet: detta är sista sidan i rapporten och kommer inte att följas av någon annan aktivitet.
 
    ![](assets/s_advuser_report_listgroup_028.png)
@@ -421,11 +423,12 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 
    * Lägg till **[!UICONTROL Email domain(Recipient)]** uttrycket i den andra cellen på detaljraden.
    * Lägg till **[!UICONTROL count(primary key)]** uttrycket i den tredje cellen på detaljraden.
+
    ![](assets/s_advuser_report_listgroup_019.png)
 
 1. Lägg till ett cirkeldiagram på sidan med högerklicksmenyn och tilldela etiketten **E-postdomäner** till den. Mer information finns i [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. Klicka på **[!UICONTROL Variants]** länken och avmarkera alternativen **[!UICONTROL Display label]** och **[!UICONTROL Display caption]** .
-1. Kontrollera att ingen värdesortering har konfigurerats. Mer information finns i [det här avsnittet](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
+1. Kontrollera att ingen värdesortering har konfigurerats. Mer information om detta finns i [det här avsnittet](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
@@ -437,7 +440,7 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. Markera **[!UICONTROL Chart type]** variabeln i **[!UICONTROL Email domain]** avsnittet.
+1. In the **[!UICONTROL Chart type]** section, select the **[!UICONTROL Email domain]** variable.
 1. Lägg sedan till den beräkning som ska utföras: markera summan som en operator.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
@@ -466,6 +469,6 @@ Om du klickar på länken för någon av dessa leveranser visas ett diagram med 
 
 Med den här tabelltypen kan du visa statistik som beräknas på data i databasen.
 
-Konfigurationen för de här typerna av rapporter liknar den som används för den beskrivande analysguiden. Mer information finns på [den här sidan](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
+Konfigurationen för de här typerna av rapporter liknar den som används för den beskrivande analysguiden. Se denna [sida](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) för mer information om detta.
 
 Mer information om hur du skapar en pivottabell finns i [det här avsnittet](../../reporting/using/using-cubes-to-explore-data.md).
