@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -55,7 +52,7 @@ Ange hur posterna i databasen ska identifieras:
 
 ## Markera de fält som ska uppdateras {#selecting-the-fields-to-be-updated}
 
-Använd det här alternativet om du vill att Adobe Campaign ska identifiera de fält som ska uppdateras automatiskt. **[!UICONTROL Automatically associate fields with the same name]**
+Använd det här alternativet om du vill att Adobe Campaign automatiskt ska identifiera de fält som ska uppdateras. **[!UICONTROL Automatically associate fields with the same name]**
 
 ![](assets/s_advuser_update_data_3b.png)
 
@@ -63,7 +60,7 @@ Du kan också använda **[!UICONTROL Insert]** ikonen för att manuellt välja d
 
 ![](assets/s_advuser_update_data_3.png)
 
-Markera alla fält som ska uppdateras och, om det behövs, lägg till villkor beroende på vilka uppdateringen ska utföras. Om du vill göra det använder du **[!UICONTROL Taken into account if]** kolumnen. Villkoren tillämpas efter varandra och i enlighet med ordningen i listan. Använd pilarna till höger för att ändra uppdateringsordningen.
+Markera alla fält som ska uppdateras och, om det behövs, lägg till villkor beroende på vilka uppdateringen ska utföras. Om du vill göra det använder du kolumnen **[!UICONTROL Taken into account if]**. Villkoren tillämpas efter varandra och i enlighet med ordningen i listan. Använd pilarna till höger för att ändra uppdateringsordningen.
 
 Du kan använda samma målfält flera gånger.
 
@@ -110,7 +107,7 @@ Genom att uppdatera data och sammanfoga samlingar kan du uppdatera data i en pos
 
 1. Markera de samlingar som ska flyttas till den primära posten och de fält som ska uppdateras.
 
-   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
+   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. Mer information om detta hittar du i det här [avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
 
    Ange sedan de villkor som ska beaktas för regeln.
 
