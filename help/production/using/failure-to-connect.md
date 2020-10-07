@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 493067fb-68f1-48b9-afaa-3127a847db83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ Kontrollera följande information:
 
       Kontrollera att du kan ansluta till webbplatser på Internet (till exempel). Om du inte kan ansluta finns problemet på datorn. Kontakta systemadministratören.
 
-   * Kan ni ansluta till servern som är värd för Adobe Campaign via en annan tjänst?
+   * Kan du ansluta till servern som är värd för Adobe Campaign via en annan tjänst?
 
       Anslut till servern via SSH eller på något annat sätt. Om detta inte är möjligt har värdföretaget ett problem. Kontakta systemadministratören.
 
@@ -46,11 +46,11 @@ Kontrollera följande information:
 
    * svarar webbservern?
 
-      Anslut till Adobe Campaign-serverns URL-adress via en webbläsare: **http(s)://`<urlserver>`**. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.
+      Anslut till Adobe Campaign server access URL med en webbläsare: **http(s)://`<urlserver>`**. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.
 
    * Har Adobe Campaign integrerats korrekt?
 
-      Logga in på: **http(s)://`<urlserver>`/r/test** URL. Servern ska returnera följande typ av meddelande
+      Logga in på: **http(s)://`<urlserver>`/r/test** -URL. Servern ska returnera följande typ av meddelande
 
       ```
       <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='<hostname>' localHost='<server>'/>
@@ -58,21 +58,21 @@ Kontrollera följande information:
 
       Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.
 
-1. **Kontroller på Adobe Campaign-sidan**
+1. **Kontroller på Adobe Campaign sida**
 
-   * Har Adobe Campaign-webbmodulen startats?
+   * Har Adobe Campaign webbmodul startats?
 
       Anslut till följande URL: **http(s)://`<URLSERVER>`/nl/jsp/logon.jsp**
 
       * Om du får ett Tomcat Java-fel:
 
-         Är JAVA-integreringen korrekt genomförd? Adobe Campaign kräver en SUN JDK.
+         Är JAVA-integreringen korrekt genomförd? Adobe Campaign kräver SUN JDK.
 
-         Den är integrerad i filen **`[path of application]`/nl6/customer.sh **
+         Den är integrerad i filen **`[path of application]`/nl6/customer.sh**
 
       * Om du får en tom sida:
 
-         Har Adobe Campaign-webbmodulen startats? Du bör få:
+         Har Adobe Campaign webbmodul startats? Du bör få:
 
          ```
          nlserver pdump
@@ -90,4 +90,4 @@ Kontrollera följande information:
 >[!NOTE]
 >
 >Om du får ett svar av följande typ när du listar Adobe Campaign-modulerna: **nlserver pdump**
->HH:MM:SS > Programserver för Adobe Campaign Classic (7.X YY.R build XXX@SHA1) för DD/MM/YYY Inga uppgifter Du måste starta om hela Adobe Campaign-programmet. Använd följande kommando för att göra detta: **nlserver watchdog -svc -noconsole **
+>HH:MM:SS > Programserver för Adobe Campaign Classic (7.X YY.R build XXX@SHA1) för DD/MM/YYY Inga åtgärder Du måste starta om hela Adobe Campaign-programmet. Använd följande kommando för att göra detta: **nlserver watchdog -svc -noconsole **
