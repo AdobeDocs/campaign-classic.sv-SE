@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 667746cb-b553-4a71-8523-6b2695047ab6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 2%
 
 ---
 
@@ -116,7 +116,7 @@ Följande alternativ är tillgängliga:
 * Med det här **[!UICONTROL Accumulate values]** alternativet kan du lägga till värden från en serie till en annan.
 * Du kan välja om du vill visa diagramförklaringen eller inte: om du vill dölja den avmarkerar du lämpligt alternativ. Som standard visas teckenförklaringen utanför diagrammet i det övre högra hörnet.
 
-   Förklaringen kan också visas ovanpå diagrammet för att spara på visningsutrymmet. Välj alternativet **[!UICONTROL Include in the chart]**
+   Förklaringen kan också visas ovanpå diagrammet för att spara på visningsutrymmet. To do this, select the option **[!UICONTROL Include in the chart]**
 
    Välj lodrät och vågrät justering i **[!UICONTROL Caption position]** listrutan.
 
@@ -128,7 +128,7 @@ Om du vill exportera data från en analysrapport klickar du på listrutan och v�
 
 ![](assets/s_ncs_user_report_wizard_09.png)
 
-Mer information finns på [den här sidan](../../reporting/using/actions-on-reports.md).
+Se denna [sida](../../reporting/using/actions-on-reports.md) för mer information om detta.
 
 ## Återanvända befintliga rapporter och analyser {#re-using-existing-reports-and-analyses}
 
@@ -138,7 +138,7 @@ Information om hur du sparar beskrivande analyser finns i [Spara en analysrappor
 
 Om du vill skapa beskrivande analysrapporter måste den beskrivande analysguiden köras via en arbetsflödesövergång eller via **[!UICONTROL Tools > Descriptive analysis]** menyn.
 
-1. Markera **[!UICONTROL Existing analyses and reports]** och klicka **[!UICONTROL Next]**.
+1. Markera **[!UICONTROL Existing analyses and reports]** och klicka på **[!UICONTROL Next]**.
 1. På så sätt kan du komma åt listan med tillgängliga rapporter. Välj den rapport som du vill generera.
 
    ![](assets/s_ncs_user_report_wizard_01.png)
