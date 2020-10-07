@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 8653d4fc-e47f-451a-95f2-c9209a252664
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Därefter skickas ett meddelande till granskaren som bekräftar att det här kam
 
 >[!NOTE]
 >
->På organisationsnivå kan du även ange granskare som ska godkänna order. Mer information finns i [Organisationsenheter](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+>På organisationsnivå kan du även ange granskare som ska godkänna order. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 ## Lägga till andra granskare {#adding-other-reviewers}
 
@@ -62,10 +62,10 @@ Påminnelser kan skickas ut ett visst datum och/eller **x** dagar efter inlämni
 
 När paketet har definierats och skickats för godkännande visas körningsschemat på **[!UICONTROL Audit]** fliken. Den visar bearbetningens tidsgräns som beräknats baserat på tidigare konfiguration samt datum för alla konfigurerade påminnelser.
 
-## Godkännande via Adobe Campaign-konsolen {#approving-via-the-adobe-campaign-console}
+## Godkännande via Adobe Campaign Console {#approving-via-the-adobe-campaign-console}
 
 Om ingen granskare har angetts, eller om ingen av de anmälda operatorerna har godkänt paketet, kan du med knappen gå direkt till godkännandet från kampanjpaketet **[!UICONTROL Approve the package]** **[!UICONTROL Dashboard]** eller från paketöversikten.
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-Efter godkännande publiceras kampanjen, läggs till i listan och så snart som dess tillgänglighetsdatum har nåtts kan lokala enheter använda den. Om de lokala entiteterna angavs när kampanjen skapades skickas ett meddelande till operatörerna i meddelandegruppen för att meddela dem att kampanjen är tillgänglig. Om ingen entitet har angetts i förväg är kampanjen som standard tillgänglig för alla lokala entiteter. Mer information finns i [Organisationsenheter](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+Efter godkännande publiceras kampanjen, läggs till i listan och så snart som dess tillgänglighetsdatum har nåtts kan lokala enheter använda den. Om de lokala entiteterna angavs när kampanjen skapades skickas ett meddelande till operatörerna i meddelandegruppen för att meddela dem att kampanjen är tillgänglig. Om ingen entitet har angetts i förväg är kampanjen som standard tillgänglig för alla lokala entiteter. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
