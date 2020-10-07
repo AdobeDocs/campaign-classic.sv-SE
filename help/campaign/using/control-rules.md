@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 * **[!UICONTROL Wave scheduling check]** (e-post): kontrollerar att den sista leveranshastigheten är planerad att påbörjas före utgången av giltighetsperioden, om leveransen delas upp i flera vågor.
 * **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälan (avanmälan)-URL i varje innehåll (HTML och Text).
 
-## Skapa en kontrollregel {#creating-a-control-rule}
+## Creating a control rule {#creating-a-control-rule}
 
 Det går att skapa nya kontrollregler som passar dina behov. Det gör du genom att skapa en **[!UICONTROL Control]** typologiregel och ange kontrollformeln i SQL på **[!UICONTROL Code]** fliken.
 
