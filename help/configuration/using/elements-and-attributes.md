@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5e24d94a-f9c1-4642-a881-dfc4b5492f14
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '6022'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ _operation (sträng), advanced (boolesk), applicableIf (sträng), autoIncrement 
 
 `<attribute>` -element måste deklareras i ett `<element>` element.
 
-Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverkar inte fältgenereringssekvensen i databasen. Sekvensen skapas i alfabetisk ordning.
+Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverkar inte fältgenereringssekvensen i databasen. Sekvensen som skapas kommer att vara i alfabetisk ordning.
 
 ### Attributbeskrivning {#attribute-description}
 
@@ -94,10 +94,12 @@ Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverk
 
    * &quot;shared&quot;: innehållet lagras i en delad tabell per datatyp
    * dedikerad: innehållet lagras i en dedikerad tabell
+
    SQL-egenskapstabeller byggs automatiskt baserat på den karakteristiska typen:
 
    * dedikerad: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * delade: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+
    Det finns två typer av egenskapsfält: enkla oà¹-fält där ett enda värde är godkänt för egenskapen och oà¹ flervalsfält där egenskapen är kopplad till ett samlingselement som kan innehålla flera värden.
 
    När en egenskap definieras i ett schema måste schemat ha en huvudnyckel baserad på ett enskilt fält (sammansatta nycklar tillåts inte).
@@ -115,9 +117,10 @@ Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverk
    * &quot;d&quot;: prefix för double-typen.
    * &quot;s&quot;: för teckensträngstypen.
    * &quot;ts&quot;: prefix för datatypen.
+
    Om du vill definiera namnet på fältet i tabellen ska du använda alternativet @sqlname när du definierar ett attribut.
 
-* **notNull (boolean)**: Med kan ni definiera om Adobe Campaigns beteende för hantering av NULL-poster i databasen. Som standard är numeriska fält inte null och sträng- och datumtypsfält kan vara null.
+* **notNull (boolean)**: Med kan du definiera om Adobe Campaign beteende för hantering av NULL-poster i databasen. Som standard är numeriska fält inte null och sträng- och datumtypsfält kan vara null.
 * **pkgStatus (sträng)**: vid paketexport beaktas värden beroende på värdet för @pkgStatus:
 
    * &quot;always&quot;: finns alltid
@@ -134,7 +137,7 @@ Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverk
 * **translatExpr (sträng)**: Om det finns ett @expr-attribut kan du med attributet @translr definiera om ett uttryck så att det matchar det som definierats i @expr, som ska samlas in med översättningsverktyget (intern användning).
 * **type (MNTOKEN)**: fälttyp.
 
-   Fälttyper är generiska. Beroende på vilken typ av databas som är installerad ändras den definierade typen i Adobe Campaign till ett värde som är specifikt för den databas som installeras under strukturuppdateringen.
+   Fälttyper är generiska. Beroende på vilken typ av databas som är installerad, ändrar Adobe Campaign den definierade typen till ett värde som är specifikt för den databas som är installerad under strukturuppdateringen.
 
    Lista över tillgängliga typer:
 
@@ -164,7 +167,8 @@ Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverk
    * tid
    * tidsintervall
    * uuid
-   Om attributet @type lämnas tomt länkas en teckensträng (STRING) med längden 100 till fältet som standard.
+
+   Om attributet &quot;@type&quot; lämnas tomt länkas en teckensträng (STRING) med längden 100 till fältet som standard.
 
    Om fältet är av STRING-typ och fältets namn inte anges av närvaron av attributet &quot;@sqlname&quot;, kommer namnet på fältet i databasen automatiskt att föregås av ett s. Det här operativläget liknar det för textfälten INTEGER (i), DOUBLE (d) och DATES (ts).
 
@@ -175,7 +179,7 @@ Den sekvens i vilken `<attribute>` element definieras i en `<srcschema>` påverk
    >
    >Attributet är dolt, men det går fortfarande att komma åt dess data.
 
-* **xml (boolesk)**: Om det här alternativet är aktiverat har fältets värden inte något länkat SQL-fält. I Adobe Campaign skapas ett texttypsfält,&quot;mData&quot;, för postlagring. Det innebär att det inte finns någon filtrering eller sortering för dessa fält.
+* **xml (boolesk)**: Om det här alternativet är aktiverat har fältets värden inte något länkat SQL-fält. Adobe Campaign skapar ett texttypsfält, &quot;mData&quot;, för postlagring. Det innebär att det inte finns någon filtrering eller sortering för dessa fält.
 
 ### Exempel {#examples}
 
@@ -408,7 +412,7 @@ element:==(attribute) | compute-string | dbindex | standard | element | hjälp |
 
 ### Attribut {#attributes-4}
 
-_operation (string), advanced (boolean), aggregate (string), applicableIf (string), autopk (boolean), beginTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boobox) lean), doesNotSupportDiff (boolesk), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (boolean), feature (string), featureDate (boolean), filterPath (string), folderLink (string), folderModelModel (string) string), folderProcess (string), fullLoad (boolesk), hierarkisk (boolesk), hierarkisk sökväg (sträng), img (sträng), inout (sträng), integritet (sträng), label (sträng), labelSingular (sträng), length (sträng), localizable (boolesk), name (MNTOKEN), noDbIndex (boolesk), no Nyckel (booleskt), sorterad (booleskt), överflödig (booleskt), pkSequence (sträng), pkgStatus (sträng), ref (sträng), obligatoriskt (booleskt), revAdvanced (booleskt), revCardinality (sträng), revDesc (sträng), revExternalJoin (booleskt), revIntegrity (sträng) sträng), revLink (sträng), revTarget (sträng), revVisibleIf (sträng), sql (booleskt), sqlname (sträng), sqltable (sträng), tableSpace (sträng), tableSpaceIndex (sträng), target (MNTOKEN), template (sträng), temporaryTable (booleskt), translatedDefault (sträng), translateExpr (sträng) sträng), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
+_operation (string), advanced (boolean), aggregate (string), applicableIf (string), autopk (boolean), beginTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boobox) lean), doesNotSupportDiff (booleskt), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (booleskt), feature (string), featureDate (booleskt), filterPath (string), folderLink (string), folderModelModel (string) string), folderProcess (string), fullLoad (boolesk), hierarkisk (boolesk), hierarkisk sökväg (sträng), img (sträng), inout (sträng), integritet (sträng), label (sträng), labelSingular (sträng), length (sträng), localizable (boolesk), name (MNTOKEN), noDbIndex (boolesk), no Nyckel (booleskt), sorterad (booleskt), överflödig (booleskt), pkSequence (sträng), pkgStatus (sträng), ref (sträng), obligatoriskt (booleskt), revAdvanced (booleskt), revCardinality (sträng), revDesc (sträng), revExternalJoin (booleskt), revIntegrity (sträng) sträng), revLink (sträng), revTarget (sträng), revVisibleIf (sträng), sql (booleskt), sqlname (sträng), sqltable (sträng), tableSpace (sträng), tableSpaceIndex (sträng), target (MNTOKEN), template (sträng), temporaryTable (booleskt), translatedDefault (sträng), translateExpr (sträng) sträng), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
 
 ### Överordnade {#parents-4}
 
@@ -480,10 +484,12 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
 
    * &quot;shared&quot;: innehållet lagras i en delad tabell per datatyp
    * dedikerad: innehållet lagras i en dedikerad tabell
+
    SQL-egenskapstabeller byggs automatiskt baserat på den karakteristiska typen:
 
    * dedikerad: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * delade: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+
    Det finns två typer av egenskapsfält: enkla fält där ett enda värde är godkänt för egenskapen, och flervalsfält där egenskapen är länkad till ett samlingselement som kan innehålla flera värden.
 
    När en egenskap definieras i ett schema måste schemat ha en huvudnyckel baserad på ett enskilt fält (sammansatta nycklar tillåts inte).
@@ -499,7 +505,7 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
 
    Tillgängliga värden är:
 
-   * &quot;define&quot;: Enheten tas inte bort i Adobe Campaign om länken refererar till den
+   * &quot;define&quot;: Adobe Campaign tar inte bort enheten om den refereras via länken
    * &quot;normal&quot;: om du tar bort källförekomsten initieras länkens nycklar på målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar
    * &quot;own&quot;: borttagning av källförekomsten utlöser borttagning av målförekomsten
    * &quot;owncopy&quot;: liknar&quot;egen&quot; (vid borttagning) eller dubblerar förekomster (vid duplicering)
@@ -509,7 +515,7 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
 * **labelSingular (string)**: etikett (singular form) för elementet som används i vissa delar av gränssnittet.
 * **length (string)**: max. Antal tecken som är tillåtna för ett värde av typen &quot;string&quot; i SQL-fältet.
 * **lokaliserbar (boolesk)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
-* **name (MNTOKEN)**: internt namn på elementet som matchar tabellens namn. Värdet för attributet &quot;@name&quot; måste vara kort, helst på engelska, och måste uppfylla de namnbegränsningar som är kopplade till XML.
+* **name (MNTOKEN)**: internt namn på det element som matchar tabellens namn. Värdet för attributet &quot;@name&quot; måste vara kort, helst på engelska, och måste uppfylla de namnbegränsningar som är kopplade till XML.
 
    När schemat skrivs till databasen läggs prefix automatiskt till i fältnamnet av Adobe Campaign.
 
@@ -517,10 +523,11 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
    * &quot;d&quot;: prefix för double-typen.
    * &quot;s&quot;: för teckensträngstypen.
    * &quot;ts&quot;: prefix för datatypen.
+
    Om du vill definiera namnet på tabellen på ett självständigt sätt måste du använda attributet &quot;@sqltable&quot; i definitionen av huvudschemaelementet.
 
 * **noDbIndex (boolesk)**: gör att du kan ange att elementet inte ska indexeras.
-* **ordnad (boolesk)**: om attributet är aktiverat (ordered=&quot;true&quot;) behåller Adobe Campaign elementdeklarationssekvensen i ett XML-samlingselement.
+* **ordnad (boolesk)**: om attributet är aktiverat (ordered=&quot;true&quot;), behåller Adobe Campaign elementdeklarationssekvensen i ett XML-samlingselement.
 * **pkSequence (sträng)**: tar emot namnet på den sekvens som ska användas för att beräkna en automatisk inkrementell nyckel. Det här attributet kan bara användas om en autoinkrementell nyckel har definierats för schemats rotelement.
 * **pkgStatus (sträng)**: Vid paketexport kommer värden att beaktas som en funktion av värdet för det här attributet:
 
@@ -537,11 +544,12 @@ Det finns fyra typer av `<element>` element i Adobe Campaign:
 
    * &quot;single&quot; : Enkel länk av typen 1-1
    * obunden: Länk för 1-N-typsamling
+
    Om attributet inte anges när länken skapas blir kardinaliteten 1-N som standard.
 
 * **revDesc (sträng)**: det här attributet får en beskrivning som är länkad till den motsatta länken.
 * **revExternalJoin (boolean)**: när det är aktiverat kan du med det här attributet tvinga det externa hörnet på motsatt länk.
-* **revIntegrity (string)**: det här attributet definierar integriteten för målschemat. Samma värden som attributet &quot;@integrity&quot; tillåts. Som standard ger Adobe Campaign det&quot;normala&quot; värdet till det här attributet.
+* **revIntegrity (string)**: det här attributet definierar integriteten för målschemat. Samma värden som attributet &quot;@integrity&quot; tillåts. Som standard ger Adobe Campaign attributet&quot;normal&quot;.
 * **revLabel (sträng)**: den motsatta länkens etikett.
 * **revLink (sträng)**: namnet på motsatt länk. Om värdet är &quot;_NONE_&quot; skapas ingen motsatt länk i målschemat.
 * **revTarget (string)**: mål för motsatt länk.
@@ -822,7 +830,7 @@ De första 1000 identifierarna är reserverade, så om ett intervall med värden
 
 * **allowEmptyPart (boolean)**: om det här attributet är aktiverat, anses nyckeln vara giltig om minst en av dess nycklar inte är tom. Om så är fallet är det tomma konceptvärdet &quot;0&quot; (booleskt eller för alla typer av numeriska data). Som standard måste alla tangenter som utgör en sammansatt nyckel anges.
 * **applicableIf (string)**: Med det här attributet kan du göra nyckeln valfri. Den definierar det villkor som nyckeldefinitionen ska tillämpas på. Det här attributet tar emot ett XTK-uttryck.
-* **internal (boolean)**: om det är aktiverat, talar det här attributet om för Adobe Campaign att nyckeln är primär.
+* **internal (boolean)**: om den är aktiverad, talar det här attributet om för Adobe Campaign att nyckeln är primär.
 * **label (string)**: nyckelns etikett.
 * **name (MNTOKEN)**: nyckelns interna namn.
 * **noDbIndex (boolesk)**: om den är aktiverad (noDbIndex=&quot;true&quot;) kommer fältet som matchar nyckeln inte att indexeras.
@@ -1139,7 +1147,7 @@ Schemapresentation är tillgänglig i [Om schemareferens](../../configuration/us
 * **skapat (datetime)**: det här attributet innehåller information om datum och tid då scheman skapades. Den har ett&quot;Date Time&quot;-formulär. De värden som visas hämtas från servern. Tiden visas i UTC-format.
 * **createdBy-id (long)**: är identifieraren för den operator som skapade schemat.
 * **desc (sträng)**: schemabeskrivning
-* **entitySchema (sträng)**: grundschema som syntax och godkännande baseras på (som standard för Adobe Campaign: xtk:srcSchema). När du sparar det aktuella schemat kommer Adobe Campaign att godkänna dess grammatik med det schema som deklarerats i attributet @xtkschema.
+* **entitySchema (sträng)**: grundschema som syntax och godkännande baseras på (som standard för Adobe Campaign: xtk:srcSchema). När du sparar det aktuella schemat kommer Adobe Campaign att godkänna dess grammatik med det schema som deklarerats i @xtkschema-attributet.
 * **extendedSchema (sträng)**: tar emot namnet på det schema som är utanför rutan och som det aktuella schematillägget baseras på. Formuläret är &quot;namespace:name&quot;.
 * **img (string)**: ikon länkad till schemat (kan definieras i guiden för att skapa schema).
 * **label (string)**: schemaetikett.
