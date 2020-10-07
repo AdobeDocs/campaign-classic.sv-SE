@@ -1,7 +1,7 @@
 ---
-title: Använda lokal godkännandeaktivitet
-seo-title: Använda lokal godkännandeaktivitet
-description: Använda lokal godkännandeaktivitet
+title: Använda den lokala godkännandeaktiviteten
+seo-title: Använda den lokala godkännandeaktiviteten
+description: Använda den lokala godkännandeaktiviteten
 seo-description: null
 page-status-flag: never-activated
 uuid: 6003aaed-543d-4e6b-b1f2-ad4e9757bff3
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: c143d8c3-c3ce-470c-8812-4b19cdb8afbf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1274'
+ht-degree: 2%
 
 ---
 
 
-# Använda lokal godkännandeaktivitet{#using-the-local-approval-activity}
+# Använda den lokala godkännandeaktiviteten{#using-the-local-approval-activity}
 
 Med den **[!UICONTROL Local approval]** aktivitet som är integrerad i ett arbetsflöde för målanpassning kan du konfigurera en process för mottagarnas godkännande innan leveransen skickas.
 
@@ -64,7 +64,7 @@ Mer information om hur du skapar en mall för datadistribution finns i [Begräns
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. Klicka på **[!UICONTROL General]** fliken.
+1. Klicka på fliken **[!UICONTROL General]**.  
 
    ![](assets/local_validation_data_distribution_2.png)
 
@@ -100,7 +100,7 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Följande aktiviteter lades till:
 
-* Två **[!UICONTROL Query]** verksamheter
+* Two **[!UICONTROL Query]** activities,
 * En **[!UICONTROL Intersection]** aktivitet,
 * En **[!UICONTROL Split]** aktivitet,
 * En **[!UICONTROL Local approval]** aktivitet,
@@ -115,17 +115,17 @@ Uppströms målgruppsanpassning består av två frågor, en skärningspunkt och 
 
 Mer information om hur du konfigurerar en delad aktivitet finns i [Dela](../../workflow/using/split.md). Skapandet av en mall för datadistribution beskrivs i [Begränsa antalet delmängdsposter per datadistribution](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-Om du inte vill begränsa fyllningen från frågan behöver du inte använda aktiviteterna **[!UICONTROL Query]**, **[!UICONTROL Intersection]** och **[!UICONTROL Split]** . I det här fallet fyller du i datautdelningsmallen i den första **[!UICONTROL Local approval]** aktiviteten.
+Om du inte vill begränsa fyllningen från frågan behöver du inte använda aktiviteterna **[!UICONTROL Query]**, **[!UICONTROL Intersection]** och **[!UICONTROL Split]** . I det här fallet ska du fylla i datamallen i den första **[!UICONTROL Local approval]** aktiviteten.
 
 1. I **[!UICONTROL Record count limitation]** avsnittet markerar du **[!UICONTROL Limit the selected records]** alternativet och klickar på **[!UICONTROL Edit]** länken.
 
    ![](assets/local_validation_split_1.png)
 
-1. Markera **[!UICONTROL Keep only the first records after sorting]** alternativet och klicka på **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Keep only the first records after sorting]** option and click **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. I **[!UICONTROL Sort columns]** avsnittet lägger du till det fält som sorteringen ska användas på. Här har vi valt **[!UICONTROL Email]** fältet. Klicka **[!UICONTROL Next]**.
+1. I **[!UICONTROL Sort columns]** avsnittet lägger du till det fält som sorteringen ska användas på. Här har vi valt **[!UICONTROL Email]** fältet. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_2.png)
 
@@ -147,8 +147,8 @@ Mer information om hur du konfigurerar **[!UICONTROL Local approval]** aktivitet
 
 Följande fält måste anges:
 
-1. Välj **[!UICONTROL Action to execute]** alternativet i **[!UICONTROL Target approval notification]** avsnittet.
-1. Välj **[!UICONTROL Distribution context]** alternativet i **[!UICONTROL Specified in the transition]** avsnittet.
+1. In the **[!UICONTROL Action to execute]** section, select the **[!UICONTROL Target approval notification]** option.
+1. In the **[!UICONTROL Distribution context]** section, select the **[!UICONTROL Specified in the transition]** option.
 
    Om du inte vill begränsa målpopulationen väljer du **[!UICONTROL Explicit]** alternativet här och anger den distributionsmall som skapades tidigare i **[!UICONTROL Data distribution]** fältet.
 
