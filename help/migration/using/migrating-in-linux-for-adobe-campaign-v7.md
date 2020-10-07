@@ -1,7 +1,7 @@
 ---
-title: Migrera i Linux för Adobe Campaign v7
-seo-title: Migrera i Linux för Adobe Campaign v7
-description: Migrera i Linux för Adobe Campaign v7
+title: Migrera Adobe Campaign 7 i Linux
+seo-title: Migrera Adobe Campaign 7 i Linux
+description: Migrera Adobe Campaign 7 i Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: 47870ea4-b07b-4db7-8094-7a8b6f4b6936
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: 8f6519e8-5c8d-4974-b193-a9f1cf78b3a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1897'
+ht-degree: 1%
 
 ---
 
 
-# Migrera i Linux för Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
+# Migrera Adobe Campaign 7 i Linux{#migrating-in-linux-for-adobe-campaign-v}
 
 ## Allmänt förfarande {#general-procedure}
 
@@ -28,7 +28,7 @@ Migreringsstegen i Linux är följande:
 
 1. Stoppa tjänster: se [Tjänststopp](#service-stop).
 1. Spara databasen: se [Säkerhetskopiera databasen och den befintliga installationen](#back-up-the-database-and-the-existing-installation).
-1. Avinstallera tidigare versionspaket för Adobe Campaign: se [Avinstallera paket](#uninstalling-adobe-campaign-previous-version-packages)för tidigare versioner av Adobe Campaign.
+1. Avinstallera tidigare Adobe Campaign-versionspaket: se [Avinstallera Adobe Campaign-paket](#uninstalling-adobe-campaign-previous-version-packages)med tidigare versioner.
 1. Migrera plattformen: se [Distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7).
 1. Starta om tjänsten: se [Omstarttjänster](#re-starting-services).
 
@@ -44,7 +44,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
    ```
 
 1. Logga in igen som **rot**.
-1. Stoppa tidigare versionstjänster för Adobe Campaign på alla servrar.
+1. Stoppa Adobe Campaign tidigare versionstjänster på alla servrar.
 
    ```
    /etc/init.d/nlserver6 stop
@@ -56,7 +56,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
    /etc/init.d/nlserver5 stop
    ```
 
-1. Kontrollera att Adobe Campaign-tjänsterna är stoppade på varje server.
+1. Kontrollera att Adobe Campaign tjänster är stoppade på alla servrar.
 
    ```
    ps waux | grep nlserver
@@ -64,7 +64,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
 
    Listan över aktiva processer visas tillsammans med deras ID (PID).
 
-1. Om en eller flera Adobe Campaign-processer fortfarande är aktiva eller blockerade efter några minuter ska du döda dem.
+1. Om en eller flera Adobe Campaign-processer fortfarande är aktiva eller blockerade efter några minuter kan du döda dem.
 
    ```
    killall nlserver
@@ -78,7 +78,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
 
 ## Säkerhetskopiera databasen och den befintliga installationen {#back-up-the-database-and-the-existing-installation}
 
-Proceduren beror på din tidigare version av Adobe Campaign.
+Hur du gör det beror på vilken version du har av Adobe Campaign.
 
 ### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
@@ -164,14 +164,14 @@ Proceduren beror på din tidigare version av Adobe Campaign.
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **nl6.back** och sparar den på en annan säker plats än servern.
 
-## Avinstallerar paket för tidigare versioner av Adobe Campaign {#uninstalling-adobe-campaign-previous-version-packages}
+## Avinstallerar Adobe Campaign tidigare versionspaket {#uninstalling-adobe-campaign-previous-version-packages}
 
-Proceduren beror på din tidigare version av Adobe Campaign.
+Hur du gör det beror på vilken version du har av Adobe Campaign.
 
 ### Avinstallerar Adobe Campaign v5-paket {#uninstalling-adobe-campaign-v5-packages}
 
 1. Logga in som **rot**.
-1. Identifiera Adobe Campaign-paketen som installerats med följande kommando.
+1. Identifiera de Adobe Campaign-paket som har installerats med följande kommando.
 
    * I **Debian**:
 
@@ -211,7 +211,7 @@ Proceduren beror på din tidigare version av Adobe Campaign.
 I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.02- eller v6.1-paket.
 
 1. Logga in som **rot**.
-1. Identifiera Adobe Campaign-paketen som installerats med följande kommando.
+1. Identifiera de Adobe Campaign-paket som har installerats med följande kommando.
 
    * I **Debian**:
 
@@ -248,11 +248,11 @@ I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.02- eller v6.1
 
 ## Distribuera Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
-Proceduren beror på din tidigare version av Adobe Campaign.
+Hur du gör det beror på vilken version du har av Adobe Campaign.
 
 ### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
 
-Distributionen av Adobe Campaign omfattar två faser:
+Distribuera Adobe Campaign i två steg:
 
 * Installera Adobe Campaign v7-paket: den här åtgärden måste utföras på varje server.
 * Uppgraderingen: det här kommandot måste startas för varje instans.
@@ -278,9 +278,9 @@ Så här distribuerar du Adobe Campaign:
 
    >[!NOTE]
    >
-   >Vid migrering från v5.11 installeras Adobe Campaign som standard i katalogen **/usr/local/neolane/nl6/** .
+   >När du migrerar från v5.11 installeras Adobe Campaign som standard i katalogen **/usr/local/neolane/nl6/** .
    >
-   >När paketen har installerats visas följande meddelande: Alternativet **&#39;WdbcTimeZone&#39; saknas**. Detta är normalt.
+   >När paketen har installerats visas följande meddelande: **Alternativet WdbcTimeZone saknas**. Detta är normalt.
 
 1. Om du vill göra installationsprogrammet för klientkonsolen tillgängligt kopierar du det till installationskatalogen för Adobe Campaign:
 
@@ -319,7 +319,7 @@ Så här distribuerar du Adobe Campaign:
 
    >[!NOTE]
    >
-   >Med dessa kommandon kan du skapa det interna filsystemet i Adobe Campaign v6: **conf** -katalogen (med **filerna config-default.xml** och **serverConf.xml** ), **var** -katalogen.
+   >Med dessa kommandon kan du skapa det interna filsystemet Adobe Campaign v6: **conf** -katalog (med **filerna config-default.xml** och **serverConf.xml** ), **var** -katalog.
 
 1. Gå till säkerhetskopieringsmappen **nl5.back** och kopiera (skriv över) konfigurationsfilerna och undermapparna för varje instans. Logga in som **neolane** och kör följande kommando:
 
@@ -336,7 +336,7 @@ Så här distribuerar du Adobe Campaign:
    cp -r nl5.back/var/* nl6/var/
    ```
 
-1. I Adobe Campaign v7 **serverConf.xml** - och **config-default.xml** -filerna använder du de specifika konfigurationer du hade för Adobe Campaign v5. För **filen serverConf.xml** använder du filen **nl5/conf/serverConf.xml.diff** .
+1. I Adobe Campaign v7 **serverConf.xml** - och **config-default.xml** -filerna tillämpar du de specifika konfigurationer du hade för Adobe Campaign v5. För **filen serverConf.xml** använder du filen **nl5/conf/serverConf.xml.diff** .
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ Så här distribuerar du Adobe Campaign:
    >
    >Om **spårningsloggtjänsten** inte har startats på spårningsservern vidarebefordras ingen spårningsinformation.
 
-1. Läs in konfigurationen för Adobe Campaign v7 igen med följande kommando:
+1. Läs in Adobe Campaign v7-konfigurationen igen med följande kommando:
 
    ```
    nlserver config -reload
@@ -375,11 +375,11 @@ Så här distribuerar du Adobe Campaign:
 
 >[!IMPORTANT]
 >
->Starta inte Adobe Campaign-tjänsterna än: Ändringar måste fortfarande göras i Apache.
+>Starta inte Adobe Campaign tjänster än: Ändringar måste fortfarande göras i Apache.
 
 ### Migrera från Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
 
-Distributionen av Adobe Campaign omfattar två faser:
+Distribuera Adobe Campaign i två steg:
 
 * Installera Adobe Campaign v7-paket: den här åtgärden måste utföras på varje server.
 * Uppgraderingen: det här kommandot måste startas för varje instans.
@@ -438,7 +438,7 @@ Så här distribuerar du Adobe Campaign:
    cp -r nl6.back/var/* nl6/var/
    ```
 
-1. Läs in konfigurationen för Adobe Campaign v7 igen med följande kommando:
+1. Läs in Adobe Campaign v7-konfigurationen igen med följande kommando:
 
    ```
    nlserver config -reload
@@ -457,7 +457,7 @@ Så här distribuerar du Adobe Campaign:
 
 ### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
 
-Distributionen av Adobe Campaign omfattar två faser:
+Distribuera Adobe Campaign i två steg:
 
 * Installera Adobe Campaign v7-paket: den här åtgärden måste utföras på varje server.
 * Uppgraderingen: det här kommandot måste startas för varje instans.
@@ -506,7 +506,7 @@ Så här distribuerar du Adobe Campaign:
    cp -r nl6.back/var/* nl6/var/
    ```
 
-1. Läs in konfigurationen för Adobe Campaign v7 igen med följande kommando:
+1. Läs in Adobe Campaign v7-konfigurationen igen med följande kommando:
 
    ```
    nlserver config -reload
@@ -525,7 +525,7 @@ Så här distribuerar du Adobe Campaign:
 >
 >Det här avsnittet gäller endast vid migrering från Adobe Campaign v5.11.
 
-I det här skedet måste Apache stoppas. Se: Stoppa [tjänsten](#service-stop).
+I det här skedet måste Apache stoppas. Se: [Tjänststopp](#service-stop).
 
 1. Logga in som **rot**.
 1. Ändra miljövariablerna i Apache så att de länkas till katalogen **nl6** .
@@ -583,7 +583,7 @@ Om du migrerar från v6.02 eller tidigare måste du konfigurera dina säkerhetsz
 
 ## Tjänster som startas om {#re-starting-services}
 
-Proceduren beror på din tidigare version av Adobe Campaign.
+Hur du gör det beror på vilken version du har av Adobe Campaign.
 
 ### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}
 
@@ -611,7 +611,7 @@ I **filen config-`<instance name>`.xml** återaktiverar du den automatiska start
 Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 1. Spårnings- och omdirigeringsserver.
-1. Server för mellanpublicering.
+1. Server för mid-sourcing.
 1. Marknadsföringsserver.
 
 Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md) .
@@ -642,7 +642,7 @@ I **filen config-`<instance name>`.xml** återaktiverar du den automatiska start
 Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 1. Spårnings- och omdirigeringsserver.
-1. Server för mellanpublicering.
+1. Server för mid-sourcing.
 1. Marknadsföringsserver.
 
 Testa den nya installationen fullständigt, kontrollera att den inte går tillbaka och se till att allt fungerar korrekt genom att följa alla rekommendationer i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md) .
@@ -652,7 +652,7 @@ Testa den nya installationen fullständigt, kontrollera att den inte går tillba
 Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 1. Spårnings- och omdirigeringsserver.
-1. Server för mellanpublicering.
+1. Server för mid-sourcing.
 1. Marknadsföringsserver.
 
 Testa den nya installationen fullständigt, kontrollera att den inte går tillbaka och se till att allt fungerar korrekt genom att följa alla rekommendationer i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md) .
@@ -666,7 +666,7 @@ Testa den nya installationen fullständigt, kontrollera att den inte går tillba
 Innan du tar bort och rensar installationen av Adobe Campaign v5 måste du följa följande rekommendationer:
 
 * Få funktionsteamen att göra en fullständig kontroll av den nya installationen.
-* Avinstallera bara Adobe Campaign v5 när du är säker på att ingen återställning behövs.
+* Avinstallera endast Adobe Campaign v5 när du är säker på att ingen återställning behövs.
 
 Ta bort katalogen **nl5.back** . Logga in som **neolane** och kör följande kommando:
 
