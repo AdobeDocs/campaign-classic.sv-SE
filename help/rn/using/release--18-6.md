@@ -11,11 +11,11 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d046304657f04312d78176c49a650690b05e4c94
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 8%
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 >
 >Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
 
-**Vad är nytt?**
+**Nyheter**
 
 <table> 
  <thead> 
@@ -61,7 +61,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 * Förbättrad import/export av paket (logg och region lades till i gränssnittet).
 * Korrigerade ett problem som visade oanvändbara fel i efteruppgraderingsloggen när en arbetsflödesaktivitet inte var helt konfigurerad. **[!UICONTROL Survey answers]**
 
-**Teknisk utveckling**
+**Tekniska utvecklingar**
 
 Frågeränder
 
@@ -86,7 +86,7 @@ Mer information om frågeflätning finns i följande artiklar:
 >
 >Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
 
-**Vad är nytt?**
+**Nyheter**
 
 <table> 
  <thead> 
@@ -98,11 +98,11 @@ Mer information om frågeflätning finns i följande artiklar:
  <tbody> 
   <tr> 
    <td> Säkerhetsförbättringar<br /> </td> 
-   <td> En rad säkerhetsförbättringar har lagts till i Campaign Classic. Förbättringar och korrigeringar visas nedan.<br /> </td> 
+   <td> Ett antal säkerhetsförbättringar har lagts till i Campaign Classic. Förbättringar och korrigeringar visas nedan.<br /> </td> 
   </tr> 
   <tr> 
    <td> Stöd för Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign är nu kompatibelt med Windows Server 2016. Se <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic-kompatibilitetsmatrisen</a>.<br /> </td> 
+   <td> Adobe Campaign är nu kompatibelt med Windows Server 2016. Se <a href="https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html">kompatibilitetsmatrisen</a>för Campaign Classic.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -111,7 +111,7 @@ Mer information om frågeflätning finns i följande artiklar:
 
 decryptString
 
-Funktionen **decryptString** är föråldrad. Mer information finns i artikeln [Borttagna och borttagna funktioner](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) .
+Funktionen **decryptString** är föråldrad. Mer information finns i artikeln [Borttagna och borttagna funktioner](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) .
 
 För nya kunder används den här funktionen nu bara för att dekryptera mottagarens krypterade ID på landningssidor. Om du vill dekryptera lösenord som lagras i ett externt konto använder du den nya **funktionen dekryptera lösenord** .
 
@@ -119,11 +119,11 @@ För befintliga kunder ändras inte beteendet för den här funktionen, men vi r
 
 decryptPassword
 
-Funktionen **decryptPassword** har lagts till. Du kan dekryptera ett lösenord som lagras i ett externt konto. Mer information finns i [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) -dokumentationen.
+Funktionen **decryptPassword** har lagts till. Du kan dekryptera ett lösenord som lagras i ett externt konto. Mer information finns i [JSAPI](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) -dokumentationen.
 
 Fil-API:er
 
-För nya installationer är mappåtkomst via fil-API:er begränsad till mapparna **var**, **sftp** och temporary i Adobe Campaign.
+För nya installationer är mappåtkomst via fil-API:er begränsad till **var**-, **sftp** - och temporära mappar i Adobe Campaign.
 
 För befintliga kunder har fil-API:er inte längre åtkomst till **conf** -mappen i Adobe Campaign. Kompatibilitetsalternativet **XtkSecurity_Disable_JSFileSandboxing** läggs till efter uppgraderingen och aktiveras som standard, vilket gör att du kan fortsätta använda de andra mapparna. Om du vill begränsa åtkomsten till **var**-, **sftp** - och temporära mappar i Adobe Campaign inaktiverar du alternativet.
 
