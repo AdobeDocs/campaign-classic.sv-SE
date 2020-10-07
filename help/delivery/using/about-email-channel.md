@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
@@ -34,7 +31,7 @@ Innan du börjar skicka e-post:
 De viktigaste stegen för att skicka e-post är följande:
 
 * [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md)
-* [Definiera målpopulationen](../../delivery/using/steps-defining-the-target-population.md)
+* [Definiera målgruppen](../../delivery/using/steps-defining-the-target-population.md)
 * [Definiera e-postinnehållet](../../delivery/using/defining-the-email-content.md)
 * [Skicka e-postmeddelandet](../../delivery/using/sending-messages.md)
 * [Övervaka leveransen](../../delivery/using/monitoring-a-delivery.md)
