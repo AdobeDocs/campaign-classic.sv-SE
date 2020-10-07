@@ -1,7 +1,7 @@
 ---
-title: Validerar
-seo-title: Validerar
-description: Validerar
+title: Validera
+seo-title: Validera
+description: Validera
 seo-description: null
 page-status-flag: never-activated
 uuid: e3cd96ef-4f5d-4e17-9fec-5eaa4d835cb1
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: c363a7cf-81a5-4c02-a021-b822eeeadd03
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 70f51ba3937d0f20d9a488c61b52b7ec4396fa5e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 1%
 
 ---
 
 
-# Validerar{#validating}
+# Validera{#validating}
 
 Globala koncept för validering av leverans visas i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md).
 
@@ -30,7 +30,7 @@ Utdatafilen för en direktpostleverans genereras under leveransanalysen. Filens 
 >
 >Analysfasen är detaljerad i [analysen av leveransen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Under analysfasen genereras filen, men informationen om mottagarna (dvs. leveransloggar) uppdateras inte. Du kan därför avbryta det här jobbet utan att köra några risker.
+Under analysfasen genereras filen, men information om mottagare (dvs. leveransloggar) uppdateras inte. Du kan därför avbryta det här jobbet utan att köra några risker.
 
 Kontrollera resultatet av analysen och innehållet i utdatafilen innan du klickar på **[!UICONTROL Confirm delivery]**. Med ett bekräftelsemeddelande kan du starta leveransen.
 
