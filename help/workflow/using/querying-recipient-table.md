@@ -1,5 +1,5 @@
 ---
-title: Frågar mottagartabellen
+title: Fråga mottagartabellen
 description: Lär dig ställa frågor i mottagartabellen
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
-# Frågar mottagartabellen {#querying-recipient-table}
+# Fråga mottagartabellen {#querying-recipient-table}
 
 I det här exemplet vill vi återskapa namn och e-post för mottagare vars e-postdomän är orange.co.uk och som inte bor i London.
 
@@ -58,7 +58,7 @@ Så här skapar du det här exemplet:
 
 1. Om det behövs klickar du på **[!UICONTROL Distribution of values]** knappen för att visa en distribution baserat på e-postdomänen för potentiella kunder. Det finns en procentandel tillgänglig för varje e-postdomän i databasen. Andra domäner än &quot;orange.co.uk&quot; visas tills filtret tillämpas.
 
-   En sammanfattning av frågan visas längst ned i fönstret: E- **postdomänen är lika med orange.co.uk**.
+   En sammanfattning av frågan visas längst ned i fönstret: **E-postdomänen är lika med orange.co.uk**.
 
 1. Klicka på **[!UICONTROL Preview]** för att få en uppfattning om frågeresultatet: Endast e-postdomäner med namnet&quot;orange.co.uk&quot; visas.
 
@@ -76,7 +76,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Klicka på i **[!UICONTROL Data preview]** fönstret **[!UICONTROL Start the preview of the data]**. Den här funktionen beräknar resultatet av frågan.
+1. In the **[!UICONTROL Data preview]** window, click **[!UICONTROL Start the preview of the data]**. Den här funktionen beräknar resultatet av frågan.
 
    På fliken **[!UICONTROL Column results]** visas frågeresultatet i kolumner.
 
