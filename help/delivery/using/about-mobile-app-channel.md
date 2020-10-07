@@ -9,26 +9,26 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
 
-# Om mobilappskanal{#about-mobile-app-channel}
+# Om mobilappskanalen{#about-mobile-app-channel}
 
 >[!CAUTION]
 >
->I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign-plattformen. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta, se den officiella Apple- [dokumentationen](https://developer.apple.com/) och Android- [dokumentationen](https://developer.android.com/index.html).
+>I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta, se den officiella Apple- [dokumentationen](https://developer.apple.com/) och Android- [dokumentationen](https://developer.android.com/index.html).
 
 Avsnitten nedan innehåller information som är specifik för mobilappskanalen.
 
- Global information om hur du skapar en leverans finns i[det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Global information om hur du skapar en leverans finns i[det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-Med **mobilappskanalen** kan ni använda Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Det finns två leveranskanaler:
+Med **mobilappskanalen** kan du använda Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Det finns två leveranskanaler:
 
 * En iOS-kanal som gör att du kan skicka meddelanden till Apple-mobilenheter.
 
@@ -46,7 +46,7 @@ Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsf
 >
 >Det finns även två mallar för transaktionsmeddelanden.
 
-Du kan definiera programbeteendet för när användaren aktiverar meddelandet för att visa skärmen som matchar programsammanhanget. Till exempel:
+Du kan definiera programbeteendet för när användaren aktiverar meddelandet för att visa skärmen som matchar programsammanhanget. Exempel:
 
 * Ett meddelande skickas till kunden för att meddela att deras paket har avslutats. När du aktiverar meddelandet öppnas en sida med leveransrelaterad information.
 * Användaren har lagt till artiklar i kundvagnen, men lämnat programmet utan att slutföra köpet. Ett meddelande om att kundvagnen har övergetts skickas. När de aktiverar meddelandet visas objektet på skärmen.
@@ -57,13 +57,13 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 >* Varning: I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
 
 
-Arbetsflödet **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i handboken [för](../../workflow/using/mobile-app-channel.md)arbetsflöden.
+Arbetsflödet **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
 
 Adobe Campaign är kompatibelt med både binära och HTTP/2 APNS. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 
 ## Datasökväg {#data-path}
 
-I följande scheman beskrivs de steg som gör det möjligt för en mobilapplikation att utbyta data med Adobe Campaign. Denna process inbegriper tre enheter:
+I följande scheman beskrivs de steg som gör att mobilprogram kan utbyta data med Adobe Campaign. Denna process inbegriper tre enheter:
 
 * mobilapplikationen
 * meddelandetjänsten: APNS (Apple Push Notification Service) för Apple och FCM (Firebase Cloud Messaging) för Android
@@ -77,7 +77,7 @@ Mobilprogrammet hämtas av användaren från App Store eller Google Play. Det h�
 
 ![](assets/nmac_register_view.png)
 
-### Steg 2:Leverans {#step-2--delivery}
+### Steg 2: Leverans {#step-2--delivery}
 
 Marknadsförarna riktar sig till programprenumeranter. Leveransprocessen skickar anslutningsinställningarna till meddelandetjänsten (iOS-certifikat och projektnyckel för Android), meddelande-ID:t (push-ID) och meddelandets innehåll. Meddelandetjänsten skickar meddelanden till målterminalerna.
 
