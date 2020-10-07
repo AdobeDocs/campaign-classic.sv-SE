@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Konfigurera marknadsföringskampanjer{#setting-up-marketing-campaigns}
+# Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
@@ -121,7 +118,7 @@ En återkommande kampanj är en kampanj som baseras på en viss mall vars arbets
 
 En periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körningsschemat i sin mall.
 
-### Skapa en återkommande kampanj {#creating-a-recurring-campaign}
+### Creating a recurring campaign {#creating-a-recurring-campaign}
 
 Återkommande kampanjer skapas från en specifik mall som definierar den arbetsflödesmall som ska köras och körningsschemat.
 
@@ -145,7 +142,7 @@ På den här fliken anger du planerade körningsdatum för kampanjer som är bas
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. For more on this, refer to [this section](../../workflow/using/architecture.md).
+Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
@@ -175,6 +172,7 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
 
    * **[!UICONTROL To be approved]** : gör att du kan framtvinga begäranden om leveransgodkännande i arbetsflödet.
    * **[!UICONTROL To be started]** : Med kan du starta arbetsflödet när startdatumet har nåtts.
+
    I **[!UICONTROL Create in advance for]** fältet kan du skapa alla arbetsflöden som täcker den angivna perioden.
 
    När arbetsflödet körs skapas de dedikerade arbetsflödena baserat på de förekomster som definieras i kampanjschemat. **[!UICONTROL Jobs on campaigns]** Ett arbetsflöde skapas alltså för varje körningsdatum.
@@ -198,7 +196,7 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
    >Startdatumet för den schemarad som är associerad med arbetsflödet är tillgängligt från en variabel i arbetsflödet med följande syntax:\
    >`$date(instance/vars/@startPlanningDate)`
 
-### Skapa en periodisk kampanj {#creating-a-periodic-campaign}
+### Creating a periodic campaign {#creating-a-periodic-campaign}
 
 En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du kan skapa kampanjinstanser baserat på ett körschema. Kampanjinstanser skapas automatiskt baserat på en mall för periodiska kampanjer, beroende på den frekvens som definieras i mallschemat.
 
@@ -228,7 +226,7 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
 
    >[!IMPORTANT]
    >
-   >Periodiska kampanjmallar skapar nya kampanjer enligt det schema som definieras ovan. Den måste därför slutföras noggrant för att undvika att Adobe Campaign-databasen överbelastas.
+   >Periodiska kampanjmallar skapar nya kampanjer enligt det schema som definieras ovan. Den måste därför fyllas i noggrant för att undvika överbelastning av Adobe Campaign-databasen.
 
 1. När startdatumet för körningen har uppnåtts skapas den matchande kampanjen automatiskt. Den får alla egenskaper som mallarna har.
 
