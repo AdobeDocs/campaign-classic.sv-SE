@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1526'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +52,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Archive emails]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information finns i [Arkivera e-post](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Archive emails]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
 
 När leveransen är konfigurerad och klar att skickas kontrollerar du att du har kört [leveransanalysen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery). När du är klar klickar du **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
 
@@ -60,15 +60,15 @@ När leveransen är konfigurerad och klar att skickas kontrollerar du att du har
 
 Du kan sedan stänga leveransguiden och spåra leveransen från fliken **[!UICONTROL Delivery]** , som du kommer åt via leveransinformationen eller leveranslistan.
 
-När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information finns i följande avsnitt:
+När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Övervaka leverans](../../delivery/using/monitoring-a-delivery.md)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om meddelandespårning](../../delivery/using/about-message-tracking.md)
+* [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md)
+* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Om att spåra meddelanden](../../delivery/using/about-message-tracking.md)
 
 ## Schemalägga leveransen som skickas {#scheduling-the-delivery-sending}
 
-Du kan skjuta upp leveransen av meddelanden för att schemalägga leveransen eller för att hantera försäljningstrycket och undvika att överbelasta en population.
+Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 
 1. Klicka på **[!UICONTROL Send]** knappen och välj **[!UICONTROL Postpone delivery]** alternativet.
 
@@ -144,7 +144,7 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
    >
    >Du måste också ge tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Se [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
-1. Gå till leveransloggarna för att övervaka dina utskick. Se [den här sidan](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
 
    Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (status **[!UICONTROL Sent]** ) och leveranser som ska skickas i de återstående påfyllnaderna (**[!UICONTROL Pending]** status).
 
@@ -166,7 +166,7 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
    Med hjälp av vågor kan du begränsa antalet meddelanden till 20 per dag, vilket är den dagliga bearbetningskapaciteten för ett callcenter.
 
-   Markera **[!UICONTROL Schedule multiple waves of the same size]** alternativet om du vill göra det. Ange **[!UICONTROL 20]** som vågstorlek och **[!UICONTROL 1d]** i **[!UICONTROL Period]** fältet.
+   To do this, select the **[!UICONTROL Schedule multiple waves of the same size]** option. Ange **[!UICONTROL 20]** som vågstorlek och **[!UICONTROL 1d]** i **[!UICONTROL Period]** fältet.
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -174,7 +174,7 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
 Meddelanden som inte har levererats tillfälligt på grund av ett **mjukt** eller **ignorerat** fel kan återförsökas automatiskt. Leveransfeltyperna och orsakerna visas i det här [avsnittet](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-I den centrala delen av **[!UICONTROL Delivery]** fliken för leveransparametrar anges hur många försök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan försöken.
+I det centrala avsnittet på **[!UICONTROL Delivery]** fliken för leveransparametrar anges hur många försök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan försöken.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
@@ -184,7 +184,7 @@ Som standard schemaläggs fem återförsök till leveransdagens första dag med 
 >
 >Om du har uppgraderat till Förbättrat MTA används inte längre inställningarna för nya försök i leveransen för värdbaserade eller hybridinstallationer i Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 >
->Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) -dokumentet.
+>Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html) -dokument.
 
 
 ## Definiera giltighetsperiod {#defining-validity-period}
@@ -193,7 +193,7 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* I **[!UICONTROL Delivery duration]** fältet kan du ange gränsen för antal globala leveransförsök. Det innebär att Adobe Campaign skickar meddelanden som börjar på startdatumet, och sedan, för meddelanden som bara returnerar ett fel, utförs regelbundna, konfigurerbara försök tills giltighetsgränsen har nåtts.
+* I **[!UICONTROL Delivery duration]** fältet kan du ange gränsen för antal globala leveransförsök. Detta innebär att Adobe Campaign skickar meddelanden som börjar på startdatumet och sedan, för meddelanden som bara returnerar ett fel, kommer regelbundna, konfigurerbara försök att utföras tills giltighetsgränsen nås.
 
    Du kan också välja att ange datum. Välj **[!UICONTROL Explicitly set validity dates]**. I det här fallet kan du även ange datum för leveransdatum och giltighetsgräns. Den aktuella tiden används som standard, men du kan ändra den direkt i indatafältet.
 
@@ -205,4 +205,4 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 >
 >Om du har uppgraderat till Förbättrat MTA för värdbaserade installationer eller hybridinstallationer kommer inställningen i **[!UICONTROL Delivery duration]** kampanjleveranserna endast att användas om den är inställd på **3,5** dagar eller mindre. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
 >
->Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) -dokumentet.
+>Alla konsekvenser beskrivs i [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html) -dokument.
