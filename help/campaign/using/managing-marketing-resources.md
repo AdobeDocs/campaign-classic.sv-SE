@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 069dbc6b-4019-4d66-85a8-0e4de6b66f18
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1387'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
 
 Med Adobe Campaign kan ni hantera och spåra de marknadsföringsresurser som ingår i kampanjens livscykel. Dessa marknadsföringsresurser kan vara en broschyr, ett visuellt stöd eller något annat kommunikationsmedium som involverar flera aktörer.
 
-För varje marknadsföringsresurs som hanteras via Adobe Campaign kan ni när som helst spåra dess status och historik och visa den aktuella versionen.
+För varje marknadsföringsresurs som hanteras via Adobe Campaign kan du när som helst spåra dess status och historik och visa den aktuella versionen.
 
 ## Lägga till en marknadsföringsresurs {#adding-a-marketing-resource}
 
@@ -34,13 +34,13 @@ Klicka på **[!UICONTROL Create]** knappen om du vill lägga till en resurs.
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-Om du vill göra en resurs tillgänglig på Adobe Campaign-servern måste du lägga till den önskade resursen genom att dra och släppa den i mitten av redigeraren. Du kan också klicka på **[!UICONTROL Upload file to server...]** länken.
+Om du vill göra en resurs tillgänglig på Adobe Campaign-servern måste du lägga till den genom att dra och släppa den i mitten av redigeraren. Du kan också klicka på **[!UICONTROL Upload file to server...]** länken.
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
 Ett bekräftelsemeddelande låter dig starta överföringen.
 
-När överföringen är klar läggs resursen till i listan över tillgängliga resurser. Det är tillgängligt för Adobe Campaign-operatorer. De kan visa den (via **[!UICONTROL Preview]** fliken), göra en kopia för att ändra den eller uppdatera filen på servern (med **[!UICONTROL Edit]** fliken).
+När överföringen är klar läggs resursen till i listan över tillgängliga resurser. Den är tillgänglig för Adobe Campaign-operatörer. De kan visa den (via **[!UICONTROL Preview]** fliken), göra en kopia för att ändra den eller uppdatera filen på servern (med **[!UICONTROL Edit]** fliken).
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
@@ -89,7 +89,7 @@ Du kan ange det planerade returdatumet på fliken **[!UICONTROL Tracking]** för
 
 ![](assets/s_ncs_user_mkg_resource_lock_date.png)
 
-Med den här informationen kan du informera andra Adobe Campaign-operatörer om vilket datum resursen kommer att låsas upp.
+Med den här informationen kan du informera andra Adobe Campaign-operatorer om vilket datum resursen kommer att låsas upp.
 
 När resursen har uppdaterats låses den upp automatiskt och blir tillgänglig för alla operatorer igen.
 
@@ -135,7 +135,7 @@ På fliken **[!UICONTROL Tracking]** kan alla operatorer spåra de olika stegen 
 >
 >Förutom den granskare som har angetts för varje marknadsföringsresurs har operatorer med administratörsrättigheter och resurshanteraren behörighet att godkänna en marknadsföringsresurs.
 
-### Publicera en resurs {#publishing-a-resource}
+### Publishing a resource {#publishing-a-resource}
 
 Marknadsföringsresursen måste publiceras när den har godkänts. Publiceringsprocessen måste genomföras i enlighet med företagets krav. Detta innebär att resurser kan publiceras på ett extranät eller på en annan server, specifik information kan skickas till en extern tjänsteleverantör osv.
 
@@ -147,7 +147,7 @@ Du kan också automatisera publiceringen av en resurs via ett arbetsflöde.
 
 Att publicera en resurs innebär att göra den tillgänglig för användning (till exempel för en annan uppgift). Publikationen varierar beroende på vilken typ av resurs du har: för ett flygblad kan publicering innebära att du skickar filen till ett tryckeri, för en webbbyrå kan det betyda att du publicerar den på en webbplats, osv.
 
-För att Adobe Campaign ska kunna publiceras måste ni skapa ett lämpligt arbetsflöde och länka det till resursen. Det gör du genom att öppna resursens **[!UICONTROL Advanced settings]** ruta och sedan välja önskat arbetsflöde i **[!UICONTROL Post-processing]** fältet.
+För att Adobe Campaign ska kunna publicera måste du skapa ett lämpligt arbetsflöde och länka det till resursen. Det gör du genom att öppna resursens **[!UICONTROL Advanced settings]** ruta och sedan välja önskat arbetsflöde i **[!UICONTROL Post-processing]** fältet.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
@@ -198,7 +198,7 @@ Du kan associera en marknadsföringsresurs med en eller flera lager för att han
 
 >[!NOTE]
 >
->Mer information om Stock-hantering i Adobe Campaign finns i [Stock-hantering](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Mer information om arkivhantering i Adobe Campaign finns i [Stock-hantering](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
 
 Om du vill associera en marknadsföringsresurs med en aktie redigerar du aktiekartan och redigerar eller skapar en aktie. Lägg till en aktierad och välj motsvarande marknadsföringsresurs.
 
@@ -216,7 +216,7 @@ När beståndet är otillräckligt skickas en varning till de berörda aktörern
 
 ## Avancerade funktioner {#advanced-functions}
 
-Med kontrollpanelen för marknadsföringsresurser kan du utföra vanliga typer av åtgärder: lägga till, redigera, låsa/låsa upp, godkänna, publicera. Du kan skapa andra typer av marknadsföringsresurser och komma åt avancerade funktioner via Adobe Campaign-trädet. Det gör du genom att klicka **[!UICONTROL Explorer]** på hemsidan för Adobe Campaign.
+Med kontrollpanelen för marknadsföringsresurser kan du utföra vanliga typer av åtgärder: lägga till, redigera, låsa/låsa upp, godkänna, publicera. Du kan skapa andra typer av marknadsföringsresurser och komma åt avancerade funktioner via Adobe Campaign-trädet. Det gör du genom att klicka **[!UICONTROL Explorer]** på Adobe Campaign hemsida.
 
 Som standard lagras marknadsföringsresurser i trädnoden **[!UICONTROL MRM > Marketing resources]** .
 
