@@ -1,7 +1,7 @@
 ---
-title: Erbjudandehistorik
-seo-title: Erbjudandehistorik
-description: Erbjudandehistorik
+title: Historik över erbjudandeförslag
+seo-title: Historik över erbjudandeförslag
+description: Historik över erbjudandeförslag
 seo-description: null
 page-status-flag: never-activated
 uuid: 91f45612-ede2-49f2-b0cd-1a9a19e6693a
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 discoiquuid: 82e67697-5dc7-4013-a00d-be8cdad31354
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 20%
 
 ---
 
 
-# Erbjudandehistorik{#offer-proposition-history}
+# Historik över erbjudandeförslag{#offer-proposition-history}
 
 När dina offertförslag är klara kan du se presentationshistoriken.
 
