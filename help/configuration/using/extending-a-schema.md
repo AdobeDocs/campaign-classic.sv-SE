@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 1c9af980-4e6b-44dc-af61-dd284863ec7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 >
 >Vissa inbyggda scheman får inte utökas: huvudsakligen de för vilka följande inställningar har definierats:\
 >**dataSource=&quot;file&quot;** och **mappingType=&quot;xmlFile&quot;**.\
->Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema********************************************,¥ncm:publishing¥nl:surveillance¥,nms:calendar✔nms:remote Tracking, nms:userAgentRules,¥xtk:builder, xtk:connections,¥xtk:dbInit,¥xtk:funcList,xtk:fusion¥,¥xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, ****************xtk:scriptContext¥,¥xtk:sessionUnder,¥xtk:sqlSchemaUnder, Underxtk:strings¥.
+>Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, ******************************************ncm:publishing¥nl:surveillance¥,nms:calendarUnder,nms:remoteTrav hög, nms:userAgentRules,xtk:builder, xtk:connections,¥xtk:dbInitUnder,¥xtk:funcList,¥xtk:fusion¥,¥xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, ****************xtk:scriptContext¥,¥xtk:sessionUnder,¥xtk:sqlSchemaUnder, Underxtk:strings¥.
 >Denna lista är inte uttömmande.
 
 Det finns två metoder för att utöka ett befintligt schema:
@@ -40,7 +40,7 @@ Det finns två metoder för att utöka ett befintligt schema:
 
    >[!IMPORTANT]
    >
-   >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras vid tidpunkten för framtida uppgraderingar av programmet. Detta kan leda till fel i användningen av Adobe Campaign.
+   >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras vid tidpunkten för framtida uppgraderingar av programmet. Detta kan leda till felfunktioner vid användning av Adobe Campaign.
 
    **Exempel**: tillägg för **nms:mottagarschemat** .
 
@@ -68,6 +68,6 @@ Det finns två metoder för att utöka ett befintligt schema:
 
 >[!IMPORTANT]
 >
->För att ändringarna ska kunna beaktas måste du generera om scheman. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md) .\
->Om ändringarna påverkar databasens struktur måste du köra en uppdatering. Mer information finns i avsnittet [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md) .
+>För att ändringarna ska kunna beaktas måste du generera om scheman. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>Om ändringarna påverkar databasens struktur måste du köra en uppdatering. Mer information om detta hittar du i avsnittet [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md) .
 
