@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 6%
@@ -39,7 +36,7 @@ Flera faktorer kan direkt påverka serverprestanda och göra plattformen långsa
 
 * Arbetsflödets körning: övervakning av arbetsflödena är avgörande för att undvika problem med plattformens prestanda. Följ riktlinjerna som visas [i det här dokumentet](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Som värdkund kan ni använda funktionerna [i](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) Campaign Control Panel för att övervaka plattformen med [prestandaövervakningsfunktioner](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html) .
+* Som värdkund kan ni utnyttja funktionerna [i](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) Campaign Control Panel för att övervaka plattformen med [prestandaövervakningsfunktioner](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html) .
 
 ## Kontrollerar nätverkskonfiguration {#network-config}
 
@@ -71,9 +68,9 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 * Om du har en lista med ogiltiga adresser rekommenderar Adobe att du importerar den till karantäntabellen via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
-* Mottagare vars adresser sätts i karantän exkluderas som standard vid leveransanalysen: de inte är riktade. Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. [Lär dig mer](#identifying-quarantined-addresses-for-a-delivery)
+* Mottagare vars adresser sätts i karantän exkluderas som standard vid leveransanalysen: de inte är riktade. Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. [Läs mer](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. Mer information om detta hittar du i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md).
+* Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. Mer information om detta finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md).
 
 
 * Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i en blockeringslista av dessa leverantörer.
@@ -82,6 +79,6 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 ## Mekanisk för dubbel anmälan {#double-opt-in}
 
-För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en dubbel anmälningsmekanism för bekräftelse efter prenumeration. Detta säkerställer att mottagaren prenumererar avsiktligt.
+För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en dubbel anmälningsmekanism för bekräftelse efter prenumeration. Detta bidrar till att säkerställa att mottagaren prenumererar avsiktligt.
 
 Detaljerad information om hur denna mekanism ska implementeras finns i [detta avsnitt](../../web/using/use-cases--web-forms.md).
