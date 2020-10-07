@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 3%
 
 ---
 
@@ -126,7 +126,7 @@ Klicka på erbjudandeetiketten för att visa erbjudandet som finns i den aktiva 
 
 När erbjudandet har godkänts kan du inaktivera det.
 
-Om du vill göra det går du till instrumentpanelen för ett erbjudande online eller ett erbjudande som väntar på att bli online. Klicka sedan på **[!UICONTROL Disable offer]**.
+Om du vill göra det går du till instrumentpanelen för ett erbjudande online eller ett erbjudande som väntar på att bli online och klickar sedan på **[!UICONTROL Disable offer]**.
 
 Du kan även inaktivera en kategori direkt genom att gå till **[!UICONTROL Eligibility]** fliken och markera **[!UICONTROL Enabled]** rutan.
 
