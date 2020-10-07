@@ -1,7 +1,7 @@
 ---
-title: Om erbjudandesimulering
-seo-title: Om erbjudandesimulering
-description: Om erbjudandesimulering
+title: Om att simulera erbjudanden
+seo-title: Om att simulera erbjudanden
+description: Om att simulera erbjudanden
 seo-description: null
 page-status-flag: never-activated
 uuid: 3c6783a0-6bab-4c41-8101-1d926c1ac6ac
@@ -11,22 +11,22 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: 0af021af-2686-4a37-97d9-6d13a851b5dd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
 
-# Om erbjudandesimulering{#about-offers-simulation}
+# Om att simulera erbjudanden{#about-offers-simulation}
 
 Med modulen **Simulering** kan du testa distributionen av erbjudanden som tillhör en kategori eller en miljö innan du skickar ditt förslag till mottagarna.
 
 Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare använts för erbjudanden (se [Översikt över](../../interaction/using/offer-catalog-overview.md)erbjudandekatalogen) samt deras presentationsregler (se [Hantera erbjudandepresentation](../../interaction/using/managing-offer-presentation.md)). Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
-Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande. Du kan också titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
+Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande. You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## Huvudsteg för att skapa en simulering {#main-steps-for-creating-a-simulation}
 
@@ -39,7 +39,7 @@ Så här kör du en simulering av dina erbjudanden:
 1. Spara och redigera den simulering du just har skapat.
 1. Gå till **[!UICONTROL Edit]** fliken och ange körningsinställningar.
 
-   Mer information finns i [Körningsinställningar](../../interaction/using/execution-settings.md).
+   For more on this, refer to [Execution settings](../../interaction/using/execution-settings.md).
 
    ![](assets/offer_simulation_003.png)
 
@@ -66,6 +66,6 @@ Så här kör du en simulering av dina erbjudanden:
 
 1. Kontrollera simuleringsresultatet och visa analysrapporten.
 
-   Mer information finns i [Simuleringsspårning](../../interaction/using/simulation-tracking.md).
+   For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
 
    ![](assets/offer_simulation_007.png)
