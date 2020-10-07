@@ -1,7 +1,7 @@
 ---
-title: Koncept och metoder
-seo-title: Koncept och metoder
-description: Koncept och metoder
+title: Koncept och metodik
+seo-title: Koncept och metodik
+description: Koncept och metodik
 seo-description: null
 page-status-flag: never-activated
 uuid: 595e9183-97f5-470d-9d82-dcd756e1fc83
@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Med bindning kan du förenkla visningen av data genom att gruppera värden enlig
 
 Sammantaget finns det tre typer av bindning:
 
-1. Använda manuellt definierade värdeintervall. Exempel: ålder, genomsnittlig kundvagn, antal öppnade leveranser osv.). Mer information finns i [Definiera varje behållare](#defining-each-bin).
+1. Använda manuellt definierade värdeintervall. Exempel: ålder, genomsnittlig kundvagn, antal öppnade leveranser osv.). For more on this, refer to [Defining each bin](#defining-each-bin).
 1. Beroende på uppräkningens värden: visar bara värdena i uppräkningen, övriga värden grupperas i &quot;Övrigt&quot;. Mer information finns i [Hantera behållare](#dynamically-managing-bins)dynamiskt.
 1. Med värdeintervall grupperas alla andra. Exempel: 18 till 25 åringar, 26 till 59 åringar och andra. Mer information finns i [Skapa värdeintervall](#creating-value-ranges).
 
@@ -38,7 +38,7 @@ Om du vill aktivera bindning markerar du lämplig ruta när du skapar dimensione
 
 Du kan antingen skapa bindningar manuellt eller länka dem till en befintlig uppräkning.
 
-Adobe Campaign erbjuder även en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
+Adobe Campaign har även en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
 
 ### Definiera varje behållare {#defining-each-bin}
 
@@ -103,7 +103,7 @@ I det här fallet ignoreras filtret som är markerat i faktaschemat.
 
 ### Uppräkningar {#enumerations}
 
-För att förbättra en rapports relevans och läsbarhet kan ni med Adobe Campaign skapa specifika uppräkningar för att gruppera om olika värden till samma behållare. Dessa uppräkningar, som är reserverade för bindning, refereras i kuber som sedan visas i rapporterna.
+För att förbättra en rapports relevans och läsbarhet kan du i Adobe Campaign skapa specifika uppräkningar för att gruppera om olika värden till samma behållare. Dessa uppräkningar, som är reserverade för bindning, refereras i kuber som sedan visas i rapporterna.
 
 Adobe Campaign erbjuder även en uppräkning i domäner, som gör att du kan visa en lista över e-postdomänerna för alla kontakter i databasen, som har grupperats av Internet-leverantören, vilket visas i följande exempel:
 
@@ -113,13 +113,13 @@ Den har skapats med följande mall:
 
 ![](assets/nmx_enum_domain.png)
 
-Om du vill skapa en rapport med den här uppräkningen skapar du en kub med **[!UICONTROL Email domain]** dimensionen. Välj sedan **[!UICONTROL Enable binning]** alternativet **[!UICONTROL Dynamically link the values to an enumeration]**. Välj sedan uppräkningen **Domäner** enligt ovan. Alla värden som saknar angivet alias grupperas om under etiketten **Övriga** .
+Om du vill skapa en rapport med den här uppräkningen skapar du en kub med **[!UICONTROL Email domain]** dimensionen. Choose the **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Välj sedan uppräkningen **Domäner** enligt ovan. Alla värden som saknar angivet alias grupperas om under etiketten **Övriga** .
 
 ![](assets/nmx_add_dimension.png)
 
 Skapa sedan en rapport baserad på den här kuben för att visa värdena.
 
-Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel **Adobe** -värdet och lägg till **adobe.com** -aliaset så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivå.
+Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel **Adobe** -värdet och lägg till **adobe.com** -aliaset så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivån.
 
 ![](assets/nmx_add_alias.png)
 
@@ -167,7 +167,7 @@ Så här skapar du en ny sammanställning:
 
 Mättyperna definieras på kubens **[!UICONTROL Measures]** flik. Du kan beräkna summor, medelvärden, avvikelser osv.
 
-Du kan skapa så många mått som behövs: markerar du det mått som du vill visa eller dölja i tabellen. Mer information finns i [Visa mått](#displaying-measures).
+Du kan skapa så många mått som behövs: markerar du det mått som du vill visa eller dölja i tabellen. For more on this, refer to [Displaying measures](#displaying-measures).
 
 Så här definierar du ett nytt mått:
 
@@ -177,7 +177,7 @@ Så här definierar du ett nytt mått:
 
 1. Om det behövs, och beroende på operatorn, väljer du det uttryck som åtgärden gäller.
 
-   Med den här **[!UICONTROL Advanced selection]** kommandoknappen skapar du komplexa beräkningsformler. Mer information finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+   Med den här **[!UICONTROL Advanced selection]** kommandoknappen skapar du komplexa beräkningsformler. Mer information om detta finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
