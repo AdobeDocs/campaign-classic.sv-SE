@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 2%
 
 ---
 
@@ -24,17 +24,18 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Så här skapar du en rapport:
 
-1. Öppna Adobe Campaign Explorer och från **[!UICONTROL Administration > Configuration]** noden och markera sedan **[!UICONTROL Reports]** mappen.
+1. Öppna Utforskaren i Adobe Campaign och från **[!UICONTROL Administration > Configuration]** noden och markera sedan **[!UICONTROL Reports]** mappen.
 1. Klicka på **[!UICONTROL New]** knappen ovanför listan med rapporter.
-1. Markera **[!UICONTROL Create a new report from a template]** och klicka **[!UICONTROL Next]**.
+1. Markera **[!UICONTROL Create a new report from a template]** och klicka på **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
 1. Välj rapportmallen i listrutan.
 
    * Med **[!UICONTROL Extended report]** den kan du skapa en rapport som har konfigurerats med hjälp av ett diagram.
-   * Med **[!UICONTROL Qualitative distribution]** rapporten kan du skapa statistik baserat på alla typer av data (företagsnamn, e-postdomän, osv.).
+   * Med hjälp av **[!UICONTROL Qualitative distribution]** rapporten kan du skapa statistik baserat på alla typer av data (företagsnamn, e-postdomän, osv.).
    * Med **[!UICONTROL Quantitative distribution]** rapporten kan du skapa statistik för data som kan mätas eller räknas (fakturabelopp, mottagarålder osv.).
+
    Mer information om de här rapportmallarna finns i [det här avsnittet](../../reporting/using/about-descriptive-analysis.md).
 
 1. Ange rapportnamnet och dess beskrivning i motsvarande fält. Ange **[!UICONTROL schema]** på vilken rapport ska användas.
@@ -71,19 +72,19 @@ Om du vill skapa en rapport, beroende på dess art och sammanhang, måste du ide
 
 1. Placera en eller flera aktiviteter på sidan för att definiera den grafiska representationen av insamlade data. Du kan infoga tabeller, diagram, inmatningsfält och villkora visningen av en eller flera sidor eller element på sidan. Innehållet som visas kan konfigureras fullständigt.
 
-   Mer information finns i [Statiska element](#static-elements).
+   For more on this, refer to [Static elements](#static-elements).
 
 1. Använd aktiviteten Testa för att definiera villkoren för att visa eller komma åt data.
 
-   Mer information finns i [Villkorlig sidvisning](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
+   For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
 1. Om det behövs lägger du till anpassade skript via aktiviteten Skript, t.ex. för att beräkna namnet på en rapport, för att filtrera visningen av resultatet i en viss kontext osv.
 
-   Mer information finns i [Skriptaktivitet](../../reporting/using/advanced-functionalities.md#script-activity).
+   For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
 1. Slutligen kan du enklare läsa komplexa rapporter genom att infoga en eller flera hoppaktiviteter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. Du kan även använda&quot;Hoppa&quot; för att visa en annan rapport.
 
-   Mer information finns i [Hoppaktivitet](../../reporting/using/advanced-functionalities.md#jump-activity).
+   For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
 Du kan inte köra flera grenar samtidigt. Det innebär att en sådan här rapport inte fungerar:
 
@@ -101,7 +102,7 @@ Om du vill konfigurera en aktivitet dubbelklickar du på dess ikon.
 
 Det visade innehållet definieras i **sidtypsaktiviteterna** .
 
-En rapport kan innehålla en eller flera sidor. Sidorna skapas med en dedikerad redigerare där du kan infoga inmatningsfält, urvalsfält, statiska element, diagram eller tabeller i en trädstruktur. Behållare hjälper dig att definiera layouten. Mer information finns i [Elementlayout](../../reporting/using/element-layout.md).
+En rapport kan innehålla en eller flera sidor. Sidorna skapas med en dedikerad redigerare där du kan infoga inmatningsfält, urvalsfält, statiska element, diagram eller tabeller i en trädstruktur. Behållare hjälper dig att definiera layouten. For more on this, refer to [Element layout](../../reporting/using/element-layout.md).
 
 Om du vill lägga till en komponent på sidan använder du ikonerna i verktygsfältets övre vänstra del.
 
