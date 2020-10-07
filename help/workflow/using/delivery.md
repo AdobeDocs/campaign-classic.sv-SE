@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9fd7122e-22c7-4f9a-a2a4-5de3daaa3c2e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,7 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
 
 1. **Innehåll**
 
-   Innehållet i meddelandet kan definieras i leverans- eller inkommande-händelsen.
+   Innehållet i meddelandet kan definieras i leverans- eller inkommande händelse.
 
    ![](assets/diffusion_edit_6.png)
 
@@ -87,7 +87,8 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
    * **[!UICONTROL Prepare]**: Med det här alternativet kan du köra hela analysprocessen (målberäkning och innehållsförberedelse). Leveransen har inte skickats. Den här åtgärden motsvarar att välja **[!UICONTROL Deliver as soon as possible]** alternativet och klicka **[!UICONTROL Analyze]** när du skickar en leverans till huvudmålet med **Leverans**.
    * **[!UICONTROL Send a proof]**: Med det här alternativet kan du skicka ett bevis på leveransen. Den här åtgärden motsvarar att klicka på **[!UICONTROL Send a proof]** knappen i verktygsfältet för en leverans med **leverans**
    * **[!UICONTROL Prepare and start]**: Med det här alternativet startas hela analysprocessen (målberäkning och förberedelse av innehåll) och leveransen skickas. Den här åtgärden motsvarar klickning **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** och **[!UICONTROL Confirm delivery]** alternativ när du skickar en leverans till huvudmålet med **Leverans**.
-   Med den **[!UICONTROL Act on a delivery]** aktivitet som används ytterligare i arbetsflödet kan du starta alla återstående steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Mer information finns i [Leveranskontroll](../../workflow/using/delivery-control.md).
+
+   Med den **[!UICONTROL Act on a delivery]** aktivitet som används ytterligare i arbetsflödet kan du starta alla återstående steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
 
    Följande alternativ är också tillgängliga:
 
@@ -115,8 +116,8 @@ Skapa ett nytt arbetsflöde och lägg till aktiviteter enligt bilden nedan:
 Öppna aktiviteten **Leverans** och definiera egenskaperna enligt följande:
 
 * Välj **[!UICONTROL Delivery]** och välj en leveransmall i **[!UICONTROL New, created from a template]** avsnittet.
-* Markera i **[!UICONTROL Recipients]** avsnittet **[!UICONTROL Specified in the delivery]**.
-* Behåll **[!UICONTROL Action to execute]** alternativet i **[!UICONTROL Prepare]** avsnittet.
+* In the **[!UICONTROL Recipients]** section, select **[!UICONTROL Specified in the delivery]**.
+* In the **[!UICONTROL Action to execute]** section, keep the **[!UICONTROL Prepare]** option.
 
 ![](assets/new-workflow-param-delivery.png)
 
@@ -131,7 +132,7 @@ Klicka **[!UICONTROL OK]** för att stänga egenskapsfönstret. Du har just konf
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Detta är ett meddelande som innehåller ett uttryck skrivet i JavaScript: **[!UICONTROL vars.recCount]** representerar antalet mottagare som den föregående uppgiften levereras till. Mer information om JavaScript-uttryck finns i [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md).
+   Detta är ett meddelande som innehåller ett uttryck skrivet i JavaScript: **[!UICONTROL vars.recCount]** representerar antalet mottagare som är målinriktade för leveransen av föregående uppgift. Mer information om JavaScript-uttryck finns i [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
