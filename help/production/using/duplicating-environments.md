@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +30,7 @@ ht-degree: 0%
 >
 >Om du inte har åtkomst till servern och databasen (värdmiljöer) kan du inte utföra de procedurer som beskrivs nedan. Kontakta Adobe.
 
-För att använda Adobe Campaign måste du installera och konfigurera en eller flera miljöer: utveckling, testning, förproduktion, produktion osv.
+Adobe Campaign kräver installation och konfigurering av en eller flera miljöer: utveckling, testning, förproduktion, produktion osv.
 
 Varje miljö innehåller en Adobe Campaign-instans och varje Adobe Campaign-instans är länkad till en eller flera databaser. Programservern kan köra en eller flera processer: nästan alla dessa har direktåtkomst till instansdatabasen.
 
@@ -49,7 +46,7 @@ Gör så här:
 
    >[!NOTE]
    >
-   >När det gäller Adobe Campaign kombineras åtgärder med en **autentisering** som gör att du kan stoppa alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.\
+   >När det gäller Adobe Campaign **kombinerar en auktorisering** åtgärder som gör att du kan stoppa alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.\
    >Detta steg är nödvändigt för att undvika att leverera meddelanden flera gånger (en gång från den nominella miljön och en gång från den duplicerade miljön).
 
    >[!CAUTION]
@@ -77,6 +74,7 @@ Följande steg måste utföras med stor noggrannhet: vissa processer kanske fort
 >
 >* Följande procedur gäller för PostgreSQL-språk. Om SQL-språket är ett annat (till exempel Oracle) måste SQL-frågorna anpassas.
 >* Nedanstående kommandon gäller för en **prod** -instans och en **dev** -instans under PostgreSQL.
+
 >
 
 
@@ -112,7 +110,7 @@ Kontrollera att antalet exporterade alternativ/konton är lika med antalet rader
 >
 >Antalet rader som ska exporteras i en paketexport är 1 000 rader. Om antalet alternativ eller externa konton är fler än 1 000 måste du utföra flera exporter.
 > 
->For more information, refer to [this section](../../platform/using/working-with-data-packages.md#exporting-packages).
+>Mer information hittar du i [det här avsnittet](../../platform/using/working-with-data-packages.md#exporting-packages).
 
 >[!NOTE]
 >
@@ -120,7 +118,7 @@ Kontrollera att antalet exporterade alternativ/konton är lika med antalet rader
 
 ### Steg 3 - Stoppa målmiljön (dev) {#step-3---stop-the-target-environment--dev-}
 
-Ni måste stoppa Adobe Campaign-processerna på alla målmiljöservrar. Den här åtgärden beror på operativsystemet.
+Du måste stoppa Adobe Campaign-processer på alla målmiljöservrar. Den här åtgärden beror på operativsystemet.
 
 Du kan stoppa alla processer, eller bara de som skriver till databasen.
 
@@ -200,7 +198,7 @@ Starta om Adobe Campaign-processerna för alla servrar i målmiljön.
 
 >[!NOTE]
 >
->Innan du startar om Adobe Campaign i **utvecklingsmiljön** kan du göra ytterligare en säkerhetsåtgärd: starta endast **webbmodulen** .
+>Innan du startar om Adobe Campaign i **utvecklingsmiljön** kan du använda en extra säkerhetsprocedur: starta endast **webbmodulen** .
 >  
 >Om du vill göra det redigerar du instansens konfigurationsfil (**config-dev.xml**) och lägger sedan till tecknet&quot;_&quot; före alternativen autoStart=&quot;true&quot; för varje modul (mta, stat osv.).
 
@@ -239,7 +237,7 @@ Så här importerar du konfigurationen från målmiljödatabasen (dev):
 
 ### Steg 9 - Starta om alla processer och ändra användare (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Använd följande kommandon för att starta Adobe Campaign-processerna:
+Så här startar du Adobe Campaign-processerna:
 
 * I Windows:
 
