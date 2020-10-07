@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -57,7 +54,7 @@ De viktigaste metoderna för att skapa mottagarprofiler är följande:
 
 ## Profiler och mål {#profiles-and-targets}
 
-Med hjälp av **[!UICONTROL Profiles and targets]** länken kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
+Med hjälp av **[!UICONTROL Profiles and targets]** länken kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. Se denna [sida](../../platform/using/editing-a-profile.md) för mer information om detta.
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
