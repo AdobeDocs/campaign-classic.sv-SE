@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 3%
 
 ---
 
 
 # LINE-kanal{#line-channel}
 
-LINE är ett program för kostnadsfria snabbmeddelanden, röst- och videosamtal som finns på alla smarttelefoner (iPhone, Android, Windows Phone, Blackberry, Nokia) och på datorn. Med Adobe Campaign kan ni skicka LINE-meddelanden.
+LINE är ett program för gratis snabbmeddelanden, röst- och videosamtal som finns på alla smarttelefoner (iPhone, Android, Windows Phone, Blackberry, Nokia) och på datorn. Med Adobe Campaign kan du skicka LINE-meddelanden.
 
 LINE är endast tillgängligt för installation av lokala eller hanterade tjänster.
 
-LINE kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden på LINE-appen som är installerad på konsumentmobilenheter. Mer information finns på den här [sidan](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
+LINE kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden på LINE-appen som är installerad på konsumentmobilenheter. Se denna [sida](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line) för mer information om detta.
 
 ![](assets/line_message.png)
 
@@ -48,7 +48,7 @@ Stegen för LINE-kanalen är:
 >
 >Innan du skapar ett LINE-konto och ett externt konto måste du först installera LINE-paketet på din instans. Mer information finns i avsnittet [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) i installationshandboken.
 
-Du måste först skapa ett LINE-konto så att du sedan kan länka det till Adobe Campaign. Sedan kan du skicka LINE-meddelanden till de användare som har lagt till ditt LINE-konto i mobilprogrammet. Externa konton och LINE-konton kan bara hanteras av plattformens funktionsadministratör.
+Du måste först skapa ett LINE-konto så att du kan länka det till Adobe Campaign. Sedan kan du skicka LINE-meddelanden till de användare som har lagt till ditt LINE-konto i mobilprogrammet. Externa konton och LINE-konton kan bara hanteras av plattformens funktionsadministratör.
 
 Information om hur du skapar och konfigurerar ett LINE-konto finns i [https://developers.line.me/](https://developers.line.me/).
 
@@ -56,7 +56,7 @@ Mer information om hur du skapar och konfigurerar en LINE-tjänst finns i [Hante
 
 ![](assets/line_service.png)
 
-Slutligen, om du vill skapa ett externt konto på Adobe Campaign:
+Slutligen, för att skapa ett externt konto på Adobe Campaign:
 
 1. Klicka på fliken **Externa konton** i trädstrukturen **Administration** > **Plattform** .
 1. Klicka sedan på ikonen **Nytt** .
@@ -94,7 +94,7 @@ Så här skapar du en **LINE** -leverans:
 
    ![](assets/line_message_01.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicka **[!UICONTROL Continue]** för att skapa leveransen.
 
 ## Definiera innehållet {#defining-the-content}
@@ -112,7 +112,7 @@ Ett **textmeddelande** (LINE delivery) är ett meddelande som skickas till motta
 
 ![](assets/line_message_02.png)
 
-Konfigurationen för den här meddelandetypen liknar konfigurationen för **texten** i ett e-postmeddelande. Mer information finns på den här [sidan](../../delivery/using/defining-the-email-content.md#message-content).
+Konfigurationen för den här meddelandetypen liknar konfigurationen för **texten** i ett e-postmeddelande. For more information, refer to this [page](../../delivery/using/defining-the-email-content.md#message-content).
 
 ### Konfigurera en bild- och länkleverans {#configuring-an-image-and-link-delivery}
 
@@ -141,6 +141,7 @@ Du kan använda:
    * 460px
    * 300px
    * 240px
+
    >[!NOTE]
    >
    >Storleken 1 040 × 1 040 px är obligatorisk för varje LINE-bild med länk.
