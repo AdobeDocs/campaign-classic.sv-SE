@@ -11,25 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
 
-# Creating a delivery template{#creating-a-delivery-template}
+# Skapa en leveransmall{#creating-a-delivery-template}
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#delivery-template-video)
 
 ## Konvertera en befintlig leverans till en mall {#converting-an-existing-delivery-to-a-template}
 
-En leverans kan konverteras till en mall för nya upprepade leveransåtgärder. Om du vill konvertera en leverans till en mall väljer du den i leveranslistan, som du når via trädets **[!UICONTROL Campaign management]** nod.
+En leverans kan konverteras till en mall för nya upprepade leveransåtgärder. Om du vill konvertera en leverans till en mall väljer du den i leveranslistan, som du når via trädnoden **[!UICONTROL Campaign management]** .
 
 Högerklicka och välj **[!UICONTROL Actions > Save as template...]**.
 
