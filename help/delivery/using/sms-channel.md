@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3151'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 
 # SMS-kanal{#sms-channel}
 
-Med Adobe Campaign kan ni utföra personaliserade SMS-meddelanden. Mottagarprofilerna måste innehålla minst ett mobiltelefonnummer.
+Med Adobe Campaign kan ni utföra massutskick av personaliserade SMS-meddelanden. Mottagarprofilerna måste innehålla minst ett mobiltelefonnummer.
 
 >[!NOTE]
 >
@@ -41,16 +38,16 @@ Om du vill skicka till en mobiltelefon behöver du:
 
 1. Ett externt konto som anger en koppling och typ av meddelande.
 
-   Observera att följande anslutningar kommer att bli inaktuella från och med version 20.2: NetSize, Generic SMPP (stöd för binärt läge i SMPP version 3.4), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 och iOS. Det finns fortfarande funktioner som inte längre används, men de kommer inte att förbättras ytterligare eller stödjas. Mer information finns på den här [sidan](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
+   Observera att följande anslutningar kommer att bli inaktuella från och med version 20.2: NetSize, Generic SMPP (stöd för binärt läge i SMPP version 3.4), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 och iOS. Det finns fortfarande funktioner som inte längre används, men de kommer inte att förbättras ytterligare eller stödjas. Se denna [sida](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) för mer information om detta.
 
 1. En leveransmall där det här externa kontot refereras.
 
-### Skapa ett SMPP-externt konto {#creating-an-smpp-external-account}
+### Creating an SMPP external account {#creating-an-smpp-external-account}
 
 Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
-Mer information om SMS-protokoll och inställningar finns i den här [tekniska informationen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+Mer information om SMS-protokoll och inställningar finns i den här [tekniska informationen](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html).
 
-Gör så här:
+Följ stegen nedan för att göra detta:
 
 1. Klicka på **[!UICONTROL Platform]** ikonen i noden **[!UICONTROL External accounts]** > **[!UICONTROL New]** i trädet.
 1. Definiera kontotypen som **Routning**, kanalen som **mobil (SMS)** och leveransläget som **massleverans**.
@@ -64,9 +61,9 @@ Gör så här:
 
    >[!CAUTION]
    >
-   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]** kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]** kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/sms-connector.html).
 
-1. Med det här **[!UICONTROL Enable verbose SMPP traces in the log file]** alternativet kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att felsöka anslutningen och jämföra med den trafik som leverantören ser.
+1. The **[!UICONTROL Enable verbose SMPP traces in the log file]** option allows you to dump all SMPP traffic in log files. Det här alternativet måste vara aktiverat för att kunna felsöka anslutningen och jämföra med den trafik som leverantören ser.
 
 1. Kontakta din SMS-leverantör som förklarar hur du fyller i de olika externa kontofälten på **[!UICONTROL Connection settings]** fliken.
 
@@ -76,56 +73,56 @@ Gör så här:
 
 1. Som standard uppfyller antalet tecken i ett SMS GSM-standarden.
 
-   SMS-meddelanden som använder GSM-kodning får innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
+   SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
    >[!NOTE]
    >
-   >Vissa tecken räknas som två (klammerparenteser, eurosymbolen osv.).
+   >Vissa tecken räknas som två (parenteser, hakparanteser, eurosymbolen etc.).  
    >
    >Nedan visas en lista över tillgängliga GSM-tecken.
 
-   Om du vill kan du godkänna teckenomläsning genom att markera motsvarande ruta.
+   Om du vill kan du tillåta teckentranskribering genom att markera motsvarande ruta.
 
    ![](assets/extended_smpp_transliteration.png)
 
-   For more on this, refer to [this section](#about-character-transliteration).
+   Mer information om detta finns i [det här avsnittet](#about-character-transliteration).
 
-1. På **[!UICONTROL Throughput and delays]** fliken kan du ange maximal genomströmning för utgående meddelanden (&quot;MT&quot;, Mobile Terminated) i MT per sekund. Om du anger &quot;0&quot; i motsvarande fält är dataflödet obegränsat.
+1. In the **[!UICONTROL Throughput and delays]** tab, you can specify the maximum throughput of outbound messages (&quot;MT&quot;, Mobile Terminated) in MT per second. Om du anger &quot;0&quot; i motsvarande fält är dataflödet obegränsat.
 
-   Värdena för alla fält som motsvarar varaktighet måste fyllas i i sekunder.
+   Samtliga fältvärden som motsvarar varaktighet måste fyllas i som sekunder.
 
 1. På **[!UICONTROL Mapping of encodings]** fliken kan du definiera kodningar.
 
-   For more on this, refer to [this section](#about-text-encodings).
+   Mer information om detta finns i [det här avsnittet](#about-text-encodings).
 
 1. Alternativet är som standard inaktiverat på **[!UICONTROL SMSC specificities]** fliken **[!UICONTROL Send full phone number]** . Aktivera det inte om du vill respektera SMPP-protokollet och bara överföra siffror till servern för SMS-providern (SMSC).
 
    Eftersom vissa leverantörer kräver att&quot;+&quot;-prefixet används, bör du kontakta din leverantör och föreslå att du aktiverar det här alternativet om det behövs.
 
-   Med **[!UICONTROL Enable TLS over SMPP]** kryssrutan kan du kryptera SMPP-trafik. Mer information finns i denna [tekniska anmärkning](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+   The **[!UICONTROL Enable TLS over SMPP]** checkbox allows you to encrypt SMPP traffic. For more on this, refer to this [technical note](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html).
 
 1. Om du konfigurerar en **[!UICONTROL Extended generic SMPP]** koppling kan du ställa in automatiska svar.
 
-   For more on this, refer to [this section](#automatic-reply).
+   Mer information om detta finns i [det här avsnittet](#automatic-reply).
 
 ### Om teckenomläsning {#about-character-transliteration}
 
 Teckentranskribering kan ställas in i ett externt SMPP-konto för mobil leverans, under **[!UICONTROL Mobile]** fliken.
 
-Translitterering består i att ersätta ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden.
+Transkriberingen ersätter ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden.
 
-* Om transkriberingen är **[!UICONTROL authorized]** så ersätts varje tecken som inte beaktas av ett GSM-tecken när meddelandet skickas. Bokstaven&quot;ë&quot; ska till exempel ersättas med&quot;e&quot;. Meddelandet ändras därför något, men teckengränsen är densamma.
-* När transkriberingen är **[!UICONTROL not authorized]** klar skickas varje meddelande som innehåller tecken som inte tas med i beräkningen i binärt format (Unicode): alla tecken skickas därför som de är. SMS-meddelanden som använder Unicode är dock begränsade till 70 tecken (eller 67 tecken per SMS för meddelanden som skickas i flera delar). Om det maximala antalet tecken överskrids skickas flera meddelanden, vilket kan medföra extra kostnader.
+* If transliteration is **[!UICONTROL authorized]**, each character that is not taken into account is replaced by a GSM character when the message is sent. Bokstaven &quot;ë&quot; kommer exempelvis att ersättas med &quot;e&quot;.  Meddelandet ändras därför något men teckengränsen förblir densamma.
+* When transliteration is **[!UICONTROL not authorized]**, each message that contains characters that are not taken into account is sent in binary format (Unicode): all of the characters are therefore sent as they are. SMS-meddelanden som använder Unicode är dock begränsade till 70 tecken (eller 67 tecken per SMS för meddelanden som skickas i flera delar).  Om det maximala antalet tecken överskrids skickas flera meddelanden vilket kan medföra extra kostnader.
 
 >[!IMPORTANT]
 >
->Om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till.
+>Om du infogar anpassningsfält i innehållet av SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till.  
 
-Som standard är teckentranslitterering inaktiverat. Om du vill att alla tecken i SMS-meddelanden ska behållas som de är, bör du inte aktivera det här alternativet om du inte vill ändra egennamn.
+Som standard är teckentranskribering inaktiverat.  Om du vill att samtliga tecken i SMS-meddelanden ska behållas som de är bör du inte aktivera det här alternativet.
 
 Om dina SMS-meddelanden innehåller många tecken som genererar Unicode-meddelanden kan du välja att aktivera det här alternativet för att begränsa kostnaderna för att skicka meddelanden.
 
-I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tecken som infogats i meddelandetexten, förutom de som nämns nedan, konverterar hela meddelandet till binärt format (Unicode) och begränsar det därför till 70 tecken.
+I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tecken som infogats i meddelandetexten förutom de som nämns nedan konverterar hela meddelandet till binärt format (Unicode) och begränsar det därför till 70 tecken.  
 
 **Grundläggande tecken**
 
@@ -172,7 +169,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> s </td> 
   </tr> 
   <tr> 
-   <td> É </td> 
+   <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> ¤ </td> 
    <td> 4 </td> 
@@ -192,7 +189,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> u </td> 
   </tr> 
   <tr> 
-   <td> ñ </td> 
+   <td> ù </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
    <td> &amp; </td> 
    <td> 6 </td> 
@@ -202,17 +199,17 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> v </td> 
   </tr> 
   <tr> 
-   <td> Maximum </td> 
+   <td> ì </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
    <td> ' </td> 
    <td> 7 </td> 
    <td> G </td> 
-   <td> B </td> 
+   <td> W </td> 
    <td> g </td> 
    <td> w </td> 
   </tr> 
   <tr> 
-   <td> systemkrav </td> 
+   <td> ò </td> 
    <td> <img height="21px" src="assets/sigma.png" /> </td> 
    <td> ( </td> 
    <td> 8 </td> 
@@ -222,7 +219,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> else </td> 
+   <td> Ç </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
@@ -253,7 +250,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> AE </td> 
+   <td> Æ </td> 
    <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
@@ -267,7 +264,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> Ð </td> 
+   <td> Ñ </td> 
    <td> m </td> 
    <td> ñ </td> 
   </tr> 
@@ -279,7 +276,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> N </td> 
    <td> Ü </td> 
    <td> n </td> 
-   <td> ä </td> 
+   <td> ü </td> 
   </tr> 
   <tr> 
    <td> å </td> 
@@ -302,34 +299,34 @@ LF: Radmatning
 
 CR: Radretur
 
-**Avancerade tecken (två gånger)**
+**Avancerade tecken (räknas två gånger)**
 
 ^ { } `[ ~ ]` | €
 
 ### Om textkodning {#about-text-encodings}
 
-När du skickar ett SMS-meddelande kan Adobe Campaign använda en eller flera textkodningar. Varje kodning har en egen specifik teckenuppsättning och avgör antalet tecken som får plats i ett SMS-meddelande.
+När du skickar ett SMS kan Adobe Campaign använda en eller flera textkodningar.  Varje kodning har en egen specifik teckenuppsättning och avgör antalet tecken som får plats i ett SMS.
 
 När du konfigurerar ett nytt externt SMPP-konto för mobil leverans kan du definiera **[!UICONTROL Mapping of encodings]** på **[!UICONTROL Mobile]** fliken: i **[!UICONTROL data_coding]** fältet kan Adobe Campaign meddela vilken kodning som används för SMSC.
 
 >[!NOTE]
 >
->Mappningen mellan **data_coding** -värdet och den kodning som faktiskt används är standardiserad. Vissa SMSC har dock en egen specifik mappning: I det här fallet måste **Adobe Campaign** -administratören deklarera mappningen. Kontakta din leverantör för mer information.
+>Mappningen mellan **data_coding**-värdet och den kodning som faktiskt används är standardiserad.  Nevertheless, certain SMSC have their own specific mapping: in this case, your **Adobe Campaign** administrator needs to declare this mapping. Kontakta din leverantör för mer information.
 
-Du kan deklarera **data_codings** och tvinga fram kodningen om det behövs: Om du vill göra det anger du en enda kodning i tabellen.
+You can declare **data_codings** and force the encoding if necessary: to do this, specify a single encoding in the table.
 
 * När ingen mappning av kodningar har definierats får kopplingen ett generiskt beteende:
 
-   * Den försöker använda GSM-kodning som den tilldelar värdet **data_coding = 0**.
-   * Om GSM-kodningen misslyckas används **UCS2** -kodning som värdet **data_coding = 8** tilldelas till.
+   * Den försöker då använda GSM-kodning som den tilldelar värdet **data_coding = 0**.
+   * Om GSM-kodningen misslyckas används **UCS2**-kodning som värdet **data_coding = 8** tilldelas till.
 
 * När du definierar de kodningar som du vill använda samt de länkade **[!UICONTROL data_coding]** fältvärdena, kommer Adobe Campaign att försöka använda den första kodningen i listan och sedan följande, om den första kodningen inte är möjlig.
 
 >[!IMPORTANT]
 >
->Deklarationsordningen är viktig: Vi rekommenderar att du placerar listan i stigande ordning **för kostnader** för att kunna välja kodningar så att du får plats med så många tecken som möjligt i varje SMS.
+>Deklarationsordningen är viktig: Vi rekommenderar att du placerar listan i stigande ordning **för omkostnader** så att du kan välja kodningar som gör att du får plats med så många tecken som möjligt i varje SMS.
 >
->Deklarera bara de kodningar som du vill använda. Om en del av de kodningar som SMSC tillhandahåller inte stämmer överens med ditt användningsändamål ska de inte tas upp i listan.
+>Deklarera bara de kodningar som du vill använda.  Om en del av de kodningar som SMSC tillhandahåller inte stämmer överens med ditt användningsändamål ska de inte tas upp i listan.
 
 ### Automatiskt svar {#automatic-reply}
 
@@ -367,7 +364,7 @@ Stegen för att konfigurera ett externt konto med den utökade generiska SMPP-an
 
 ### Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign tillhandahåller en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** noden. Mer information finns i avsnittet [Om mallar](../../delivery/using/about-templates.md) .
+Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** noden. For more on this, refer to the [About templates](../../delivery/using/about-templates.md) section.
 
 Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen refereras.
 
@@ -375,7 +372,7 @@ För att behålla den inbyggda leveransmallen rekommenderar vi att du duplicerar
 
 I exemplet nedan skapar vi en mall för att leverera meddelanden via det SMPP-konto som aktiverats tidigare. Så här gör du:
 
-1. Gå till **[!UICONTROL Delivery templates]** noden.
+1. Go to the **[!UICONTROL Delivery templates]** node.
 1. Högerklicka på **[!UICONTROL Send to mobiles]** mallen och välj **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
@@ -406,11 +403,11 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 >Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
-1. Välj leveransmallen **Skickat till mobiler (SMPP)** som du skapade tidigare. Mer information finns i avsnittet [Ändra leveransmall](#changing-the-delivery-template) .
+1. Välj leveransmallen **Skickat till mobiler (SMPP)** som du skapade tidigare. For more on this, refer to the [Changing the delivery template](#changing-the-delivery-template) section.
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicka **[!UICONTROL Continue]** för att bekräfta informationen och visa meddelandekonfigurationsfönstret.
 
 ## Definiera SMS-innehåll {#defining-the-sms-content}
@@ -443,7 +440,7 @@ Följ stegen nedan för att skapa innehållet i SMS:et:
    >
    >När du startar analysen kontrolleras meddelandets längd och en varning visas om det skulle uppstå ett spill.
 
-1. Om du använder NetSize-anslutningen eller en SMPP-anslutning kan du anpassa namnet på leveransavsändaren. Mer information finns i avsnittet [Avancerade parametrar](#advanced-parameters) .
+1. Om du använder NetSize-anslutningen eller en SMPP-anslutning kan du anpassa namnet på leveransavsändaren. For more on this, refer to the [Advanced parameters](#advanced-parameters) section.
 
 ## Välja målpopulation {#selecting-the-target-population}
 
@@ -496,15 +493,15 @@ Följande alternativ är tillgängliga:
 
 ## Övervaka och spåra SMS-leveranser {#monitoring-and-tracking-sms-deliveries}
 
-När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information finns i följande avsnitt:
+När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Övervaka leverans](../../delivery/using/monitoring-a-delivery.md)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om meddelandespårning](../../delivery/using/about-message-tracking.md)
+* [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md)
+* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Om att spåra meddelanden](../../delivery/using/about-message-tracking.md)
 
 ## Bearbetar inkommande meddelanden {#processing-inbound-messages}
 
-SMS-modulen **nlserver** frågar SMS-routern med regelbundna intervall. På så sätt kan Adobe Campaign spåra leveransförloppet och hantera statusrapporter och mottagarens begäran om att ta bort prenumerationen.
+SMS-modulen **nlserver** frågar SMS-routern med regelbundna intervall. Detta gör att Adobe Campaign kan följa upp leveransförloppet och hantera statusrapporter och mottagarnas begäran om att ta bort prenumerationen.
 
 * **Statusrapporter**: visa leveransloggar för att kontrollera status för dina meddelanden.
 
@@ -528,7 +525,7 @@ InSMS-schemat innehåller information som är relevant för inkommande SMS. En b
 * **ursprung**: mobilnummer i meddelandets ursprung.
 * **providerId**: Identifierare för det meddelande som returneras av SMSC (meddelandecenter).
 * **skapad**: datum då inkommande meddelande infogades i Adobe Campaign.
-* **TextAccount**: Adobe Campaign externt konto.
+* **TextAccount**: Adobe Campaign externa konto.
 
    >[!IMPORTANT]
    >
