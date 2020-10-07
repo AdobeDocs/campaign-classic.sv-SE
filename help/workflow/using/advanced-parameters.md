@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f66f1ff5-3601-4eb8-b05d-6f99164890ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ Det här fältet innehåller aktivitetens interna namn.
 
 ## Bild {#image}
 
-I det här fältet kan du ändra bilden som är länkad till en aktivitet. Mer information finns i: Hantera [aktivitetsbilder](../../workflow/using/managing-activity-images.md).
+I det här fältet kan du ändra bilden som är länkad till en aktivitet. Mer information finns i: [Hantera aktivitetsbilder](../../workflow/using/managing-activity-images.md).
 
 ## Körning {#execution}
 
@@ -54,7 +54,7 @@ De här alternativen är vanligtvis markerade i kundvagnen genom att högerklick
 
 ## Tillhörighet {#affinity}
 
-I det här fältet kan du framtvinga körning av en aktivitet på en viss dator. Mer information finns i: Hantera [benägenhet](../../workflow/using/managing-propensity.md).
+I det här fältet kan du framtvinga körning av en aktivitet på en viss dator. For more on this, refer to: [Managing propensity](../../workflow/using/managing-propensity.md).
 
 ## Max. körningsperiod {#max--execution-period}
 
@@ -69,7 +69,7 @@ I det här fältet kan du definiera det beteende som ska användas för asynkron
 
 ## Tidszon {#time-zone}
 
-I det här fältet kan du välja aktivitetens tidszon. Mer information: Hantera [tidszoner](../../workflow/using/managing-time-zones.md).
+I det här fältet kan du välja aktivitetens tidszon. Mer information: [Hantera tidszoner](../../workflow/using/managing-time-zones.md).
 
 ## Vid fel {#in-case-of-errors}
 
