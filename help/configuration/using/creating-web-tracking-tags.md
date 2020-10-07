@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 647ca037-4efb-4524-9642-11056d096aea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 6%
 
 ---
 
 
 # Skapa webbspårningstaggar{#creating-web-tracking-tags}
 
-Varje sida på webbplatsen som du vill spåra måste refereras till i din Adobe Campaign-plattform. Den här referensen kan utföras på två sätt:
+Alla sidor på webbplatsen som du vill spåra måste refereras till på din Adobe Campaign-plattform. Den här referensen kan utföras på två sätt:
 
 1. Manuell definition av URL:er som ska spåras.
 1. Skapa URL:er som ska spåras direkt.
