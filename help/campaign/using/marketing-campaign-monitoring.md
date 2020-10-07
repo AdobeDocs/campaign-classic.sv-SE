@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
@@ -58,6 +58,6 @@ Om du vill kontrollera status för en leverans redigerar du den och visar kontro
 
 ## Körningsspårning {#execution-tracking}
 
-Du kan kontrollera leveransstatus genom att klicka på **[!UICONTROL Deliveries]**, som du kommer åt via hemsidan för Adobe Campaign. Se [Leveransspårning](#delivery-tracking).
+Du kan se leveransstatus genom att klicka på **[!UICONTROL Deliveries]**, som du kommer åt via startsidan för Adobe Campaign. Se [Leveransspårning](#delivery-tracking).
 
-Information om de processer som körs i en kampanj samlas in på **[!UICONTROL Edit > Audit]** fliken i kampanjen. Där kan du visa listan över leveranser i kampanjen. Se [Spåra en kampanj](#tracking-a-campaign).
+Information om de processer som körs i en kampanj samlas in på **[!UICONTROL Edit > Audit]** fliken i kampanjen. Där kan du se en lista över leveranser i kampanjen. See [Tracking a campaign](#tracking-a-campaign).
