@@ -11,18 +11,18 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 32f81ae9-396d-4bb6-8c81-6b75744f529d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 8%
 
 ---
 
 
 # Starta arbetsflöden{#starting-workflows}
 
-Med **[!UICONTROL Managing social networks]** arbetsflödena, som nås via **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** noden, kan ni synkronisera Adobe Campaign med Twitter och Facebook.
+Med hjälp av arbetsflödena, som nås via **[!UICONTROL Managing social networks]** **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** noden, kan du synkronisera Adobe Campaign med Twitter och Facebook.
 
 Första gången du använder social marknadsföring stoppas dessa arbetsflöden som standard. Starta dem genom att klicka på **[!UICONTROL Start]** knappen i verktygsfältet.
 
