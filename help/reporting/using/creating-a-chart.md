@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 70e4e63d-354d-4912-b75a-dba38e1c0b03
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
 
 # Skapa ett diagram{#creating-a-chart}
 
-Data i databasen kan också samlas in och visas i ett diagram. Adobe Campaign innehåller en uppsättning grafiska representationer. Deras konfiguration beskrivs nedan.
+Data i databasen kan också samlas in och visas i ett diagram. Adobe Campaign har en uppsättning grafiska representationer. Deras konfiguration beskrivs nedan.
 
 Diagram infogas direkt på en rapportsida via högerklicksmenyn eller verktygsfältet.
 
@@ -82,7 +82,7 @@ Med den här **[!UICONTROL Variants]** länken kan du anpassa den övergripande 
 
 Med cirkeldiagram kan du ange värdet för innerradien i lämpligt fält.
 
-Till exempel:
+Exempel:
 
 0,00 skriver ut en hel cirkel.
 
@@ -118,7 +118,7 @@ När det är lämpligt kan du stapla värden tillsammans.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Om det behövs kan du invertera värdevisningssekvensen. Markera **[!UICONTROL Reverse stacking]** alternativet om du vill göra det.
+Om det behövs kan du invertera värdevisningssekvensen. To do this, select the **[!UICONTROL Reverse stacking]** option.
 
 ### Konvertering: tratt {#conversion--funnel}
 
@@ -168,4 +168,4 @@ Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** -ikonen och
 
 ![](assets/reporting_add_statistics.png)
 
-Mer information finns i [det här avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Mer information om detta finns i [det här avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
