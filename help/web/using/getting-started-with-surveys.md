@@ -1,7 +1,7 @@
 ---
-title: Komma igång med enkäter
-seo-title: Komma igång med enkäter
-description: Komma igång med enkäter
+title: Komma igång med undersökningar
+seo-title: Komma igång med undersökningar
+description: Komma igång med undersökningar
 seo-description: null
 page-status-flag: never-activated
 uuid: 62ca684c-94a7-465a-9536-75e8a96b1c0e
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 2df82006-dcc3-4b07-bc36-b646b1c27aaa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 2%
 
 ---
 
 
-# Komma igång med enkäter{#getting-started-with-surveys}
+# Komma igång med undersökningar{#getting-started-with-surveys}
 
 Här följer en kort översikt över de viktigaste stegen för att skapa en enkel enkät med hjälp av följande mall:
 
@@ -44,7 +44,7 @@ Om du vill skapa en ny undersökning går du till **[!UICONTROL Campaigns]** - e
 
 ## Steg 2 - Välja mall {#step-2---selecting-the-template}
 
-Välj en undersökningsmall och ge sedan undersökningen ett namn. Slutanvändarna ser inte det här namnet, men de kan identifiera undersökningen i Adobe Campaign. Klicka **[!UICONTROL Save]** för att lägga till undersökningen i listan över webbprogram.
+Välj en undersökningsmall och ge sedan undersökningen ett namn. Det här namnet visas inte för slutanvändarna, men det gör att undersökningen kan identifieras i Adobe Campaign. Klicka **[!UICONTROL Save]** för att lägga till undersökningen i listan över webbprogram.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
@@ -156,5 +156,5 @@ Du kan sedan övervaka användarsvar via rapporter och loggar. Se [Svarsspårnin
 >
 >Den offentliga URL:en innehåller undersökningens interna namn. När det interna namnet ändras uppdateras URL-adressen automatiskt: Alla länkar till undersökningen måste också uppdateras.
 >
->Om leveranser som innehåller länken till formuläret redan har skickats, kommer länken inte längre att fungera.
+>Om leveranser som innehåller länken till formuläret redan har skickats, fungerar inte den här länken längre.
 
