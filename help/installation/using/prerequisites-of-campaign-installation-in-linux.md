@@ -1,7 +1,7 @@
 ---
-title: Krav för Campaign-installation i Linux
-seo-title: Krav för Campaign-installation i Linux
-description: Krav för Campaign-installation i Linux
+title: Krav för installationen av Campaign i Linux
+seo-title: Krav för installationen av Campaign i Linux
+description: Krav för installationen av Campaign i Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
@@ -11,26 +11,26 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 
-# Krav för Campaign-installation i Linux{#prerequisites-of-campaign-installation-in-linux}
+# Krav för installationen av Campaign i Linux{#prerequisites-of-campaign-installation-in-linux}
 
 ## Programvarukrav {#software-prerequisites}
 
-I det här avsnittet beskrivs de preliminära konfigurationssteg som krävs innan Adobe Campaign installeras.
+I det här avsnittet beskrivs de preliminära konfigurationssteg som krävs innan du installerar Adobe Campaign.
 
-Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
 Följande komponenter måste installeras och konfigureras korrekt:
 
-* Apache, se [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html),
+* Apache, se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html),
 * Java JDK och OpenJDK, se [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotek, se [Bibliotek](#libraries),
 * Lager för databasåtkomst, se [Lager](#database-access-layers)för databasåtkomst.
@@ -47,7 +47,7 @@ Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaig
 
 * Bibliotek C måste ha stöd för TLS-läge (trådlokal lagring). Det här läget är aktivt i de flesta fall utom med vissa kärnor för vilka Xen-stöd har inaktiverats.
 
-   Om du vill kontrollera det kan du använda **namnet -a| grep xen** command till exempel.
+   Om du vill kontrollera det kan du använda **namnet -a | grep xen** command till exempel.
 
    Om kommandot inte returnerar något (tom rad) betyder det att konfigurationen är korrekt.
 
@@ -55,13 +55,14 @@ Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaig
 
    För RHEL 7-distributioner krävs version 1.0 av OpenSSL.
 
-* Om du vill använda Adobe Campaign måste du ha **biblioteket libicu** installerat.
+* Om du vill använda Adobe Campaign måste du ha installerat **biblioteket** libicu.
 
    Följande versioner av **libicu** stöds (32 eller 64 bitar):
 
    * RHEL 7, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
+
    Om du vill använda Adobe Campaign måste du ha biblioteket för biblioteksservrar installerat. Kör följande kommando på RHEL/CentOS:
 
    ```
@@ -170,7 +171,7 @@ Följande konfigurationer är nödvändiga med CentOS:
 
 Åtkomstlagren för databasmotorn som du använder måste vara installerade på servern och tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
 
-Den pilotversion som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Den pilotversion som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 
 Kontrollera även det allmänna avsnittet [Databas](../../installation/using/database.md) .
 
@@ -194,7 +195,7 @@ Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
 Problem kan uppstå efter en Oracle-klient eller en serveruppdatering, vid versionsändring eller vid den första installationen av instansen.
 
-Om du på klientkonsolen noterar att loggarna har oväntat lång tid (en eller flera timmar), att arbetsflödet har bearbetats senast, att nästa bearbetning har utförts och så vidare, kan det bero på ett problem mellan biblioteket för Oracle-klienten och Oracle-servern. För att undvika sådana problem
+Om du på klientkonsolen noterar att loggarna har oväntat lång tid (en eller flera timmar), att arbetsflödet senast har bearbetats, att nästa bearbetning har utförts och så vidare, kan det bero på ett problem mellan biblioteket för Oracle-klienten och Oracle-servern. För att undvika sådana problem
 
 1. Se till att använda den **fullständiga klienten**.
 
