@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 940bec7e-e3f0-4251-b7fe-72bf188743a7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Om du vill konfigurera den redigerar du aktiviteten och anger dess etikett och v
 1. Klicka **[!UICONTROL Subscription]** eller **[!UICONTROL Unsubscription]** om du vill prenumerera eller avbryta prenumerationen på den angivna ifyllningen till eller från den valda informationstjänsten.
 1. Välj **[!UICONTROL Send a confirmation message]** att meddela mottagarna att de prenumererar på eller avbeställer en tjänst.
 
-   Innehållet i det här meddelandet anges i en leveransmall som är relaterad till informationstjänsten. Mer information finns i det här [avsnittet](../../delivery/using/managing-subscriptions.md).
+   Innehållet i det här meddelandet anges i en leveransmall som är relaterad till informationstjänsten. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/managing-subscriptions.md).
 
 ## Exempel: Prenumerera på en lista över mottagare i ett nyhetsbrev {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
