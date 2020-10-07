@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 Databasservern kan köras på ett givet operativsystem oavsett vilket operativsystem som används av programservern eller -servrarna, förutsatt att det finns nätverksanslutningar mellan dem.
 
-Operativsystemet för databasservern är inte viktigt så länge det finns en anslutning till de olika komponenterna i Adobe Campaign.
+Databasserverns operativsystem är inte viktigt så länge det finns en anslutning till de olika komponenterna i Adobe Campaign.
 
 Kontrollera även avsnittet [Databasåtkomstlager](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-Den interna klienten måste vara installerad på Adobe Campaign-programservrarna.
+Den inbyggda klienten måste vara installerad på Adobe Campaign programservrar.
 
 Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel, under **SQL Server Native Client 10.0** (för Microsoft SQL Server 2008 och 2008 R2-klienter) eller **SQL Server Native Client 11.0** (för Microsoft SQL Server 2012, 2014, 2 16 och 2017 klienter).
 
@@ -74,7 +74,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Om du vill logga in på **sqlplus** använder du Oracles användarprofil:
+Om du vill logga in på **sqlplus** använder du användarprofilen i Oracle:
 
 ```
 su - oracle 
