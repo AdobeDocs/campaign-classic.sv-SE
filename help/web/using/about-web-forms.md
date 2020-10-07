@@ -11,18 +11,18 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 5%
 
 ---
 
 
 # Om webbformulär{#about-web-forms}
 
-Adobe Campaign integrerar en grafisk modul för att definiera och publicera webbformulär för att skapa sidor som innehåller indata- och urvalsfält, och som kan innehålla data i databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
+Adobe Campaign integrerar en grafisk modul för att definiera och publicera webbformulär för att skapa sidor som innehåller inmatnings- och urvalsfält, och som kan innehålla data i databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
 
 I det här kapitlet beskrivs hur du skapar och hanterar webbformulär, hur du hanterar fält och sidor samt lagrings- och sparlägen.
 
@@ -32,7 +32,7 @@ I det här kapitlet beskrivs hur du skapar och hanterar webbformulär, hur du ha
 
 ## Steg för att skapa ett webbformulär {#steps-for-creating-a-web-form}
 
-I det här kapitlet beskrivs stegen som krävs för att utforma ett **webForm** -formulär i Adobe Campaign, samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan ni göra det här webbformuläret tillgängligt för användarna samt samla in och arkivera svar i databasen.
+I det här kapitlet beskrivs de steg som krävs för att utforma ett **webForm** -formulär i Adobe Campaign samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan du göra det här webbformuläret tillgängligt för användare samt samla in och arkivera svar i databasen.
 
 >[!CAUTION]
 >
@@ -79,12 +79,13 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 * [Lägga till fält i ett webbformulär](../../web/using/adding-fields-to-a-web-form.md),
 * [Infoga HTML-innehåll](../../web/using/static-elements-in-a-web-form.md#inserting-html-content),
 * [Statiska element i ett webbformulär](../../web/using/static-elements-in-a-web-form.md),
-* [Definiera webbformulärslayout](../../web/using/defining-web-forms-layout.md).
+* [Definiera ett webbformulärs layout](../../web/using/defining-web-forms-layout.md).
 
 >[!NOTE]
 >
 >* Under siddesignen kan du visa den slutliga återgivningen på **[!UICONTROL Preview]** fliken. Spara formuläret först om du vill se ändringarna. Eventuella fel visas på **[!UICONTROL Log]** fliken.
 >* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. Det gör du genom att gå till **[!UICONTROL Preview]** underfliken och markera **[!UICONTROL Enable debug mode]** rutan: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
+
 >
 
 
@@ -99,7 +100,7 @@ I det här fallet börjar du med att välja vilken typ av fält som ska läggas 
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-Klicka **[!UICONTROL Ok]** för att godkänna markeringen.
+Click **[!UICONTROL Ok]** to approve the selection.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
 
