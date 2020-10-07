@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Så här skapar du ett erbjudande:
 
    ![](assets/offer_create_001.png)
 
-1. Klicka på **[!UICONTROL Create]** knappen.
+1. Klicka på knappen **[!UICONTROL Create]**.
 
    ![](assets/offer_create_005.png)
 
@@ -84,7 +84,7 @@ Ett erbjudande kan till exempel ha vikten A för kontakter mellan 18 och 25 år 
 
 Så här skapar du en vikt i ett erbjudande:
 
-1. Klicka **[!UICONTROL Add]**.
+1. Klicka på **[!UICONTROL Add]**.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -108,7 +108,7 @@ Så här skapar du en vikt i ett erbjudande:
 
    ![](assets/offer_weight_create_004.png)
 
-1. Klicka **[!UICONTROL OK]** för att spara bredden.
+1. Click **[!UICONTROL OK]** to save the weight.
 
    ![](assets/offer_weight_create_005.png)
 
