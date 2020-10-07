@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 7b0aef75-345d-45be-b7d0-a9f6944ee678
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1298'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ I webbgränssnittet för **formulärtypen** Per används ett **webbprogram**. Be
 >
 >API:er finns detaljerade i ett dedikerat dokument, som du har åtkomst till beroende av ditt kontrakt. Se [API](../../configuration/using/about-web-services.md).
 >
->Webbprogrammet som används i det här exemplet är inte ett webbprogram som medföljer Adobe Campaign. Om du vill använda ett formulär i en kampanj måste du skapa det dedikerade webbprogrammet.
+>Webbprogrammet som används i det här exemplet är inte ett webbprogram som levereras med Adobe Campaign. Om du vill använda ett formulär i en kampanj måste du skapa det dedikerade webbprogrammet.
 
 När du skapar kampanjmallen klickar du på **[!UICONTROL Zoom]** ikonen i **[!UICONTROL Web interface]** alternativet för **[!UICONTROL Advanced campaign settings...]** länken för att få tillgång till information om webbprogrammet.
 
@@ -84,7 +84,7 @@ I det här exemplet används följande API:er:
 
 Du är marknadschef för ett stort varumärke för kläder som har en webbutik och flera företag över hela USA. Nu när våren är inne bestämmer du dig för att skapa ett specialerbjudande som ger dina bästa kunder 50 % rabatt på alla klänningar i din katalog.
 
-Erbjudandet riktar sig till de bästa kunderna i era amerikanska butiker, det vill säga de som har spenderat mer än 300 dollar sedan början av året.
+Erbjudandet riktar sig till de bästa kunderna i era amerikanska butiker, dvs. de som har spenderat mer än 300 dollar sedan början av året.
 
 Du bestämmer dig därför för att använda Distributed Marketing för att skapa en samverkanskampanj (efter målgodkännande) som gör att du kan välja de bästa kunderna (grupperade efter region) som får den e-postleverans som innehåller specialerbjudandet.
 
@@ -131,17 +131,18 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 1. På **[!UICONTROL General]** fliken måste du ange:
 
-   * \- **[!UICONTROL Targeting dimension]**. Här utförs **datadistributionen** på **mottagarna**.
-   * \- **[!UICONTROL Distribution type]**. Du kan välja en **fast storlek** eller en **storlek i procent**.
-   * \- **[!UICONTROL Assignment type]**. Välj alternativet **Lokal enhet** .
-   * \- **[!UICONTROL Distribution type]**. Här är det **[!UICONTROL Origin (@origin)]** fält som finns i mottagarregistret där du kan identifiera relationen mellan kontakten och den lokala enheten.
+   * the **[!UICONTROL Targeting dimension]**. Här utförs **datadistributionen** på **mottagarna**.
+   * the **[!UICONTROL Distribution type]**. Du kan välja en **fast storlek** eller en **storlek i procent**.
+   * the **[!UICONTROL Assignment type]**. Välj alternativet **Lokal enhet** .
+   * the **[!UICONTROL Distribution type]**. Här är det **[!UICONTROL Origin (@origin)]** fält som finns i mottagarregistret där du kan identifiera relationen mellan kontakten och den lokala enheten.
    * Fältet **[!UICONTROL Approval storage]** . Välj alternativet **Lokalt godkännande av mottagare** .
 
-1. Ange följande på **[!UICONTROL Breakdown]** fliken:
+1. In the **[!UICONTROL Breakdown]** tab, specify:
 
    * det **[!UICONTROL Distribution field value]**, som motsvarar de lokala enheter som deltar i den kommande kampanjen.
    * den lokala enheten **[!UICONTROL label]**.
    * den **[!UICONTROL Size]** (fast eller som en procentandel). Standardvärdet **** 0 innebär att du väljer alla mottagare som är länkade till den lokala enheten.
+
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Spara din nya datadistribution.
@@ -158,6 +159,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
    * det meddelandeinnehåll som ska skickas till de lokala enheterna i meddelandet,
    * påminnelsen om godkännande,
    * den förväntade bearbetningen för kampanjen.
+
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Spara ditt material.
@@ -170,6 +172,7 @@ Nu kan ni lägga till ett **kampanjpaket** från **Campaigns** -universum.
 
    * i **manuellt** läge deltar de lokala enheterna i kampanjen om de accepterar inbjudan från den centrala enheten. De kan ta bort de redan valda kontakterna om de vill och om de behöver ett godkännande från chefen för att bekräfta att de deltar i kampanjen.
    * i **automatiskt** läge måste de lokala enheterna delta i kampanjen, såvida de inte avregistrerar sig från den. De kan ta bort kontakter utan att behöva godkänna dem.
+
    ![](assets/mkg_dist_use_case_target_valid.png)
 
 1. På fliken **[!UICONTROL Description]** kan du lägga till en beskrivning av kampanjen samt alla dokument som ska skickas till de lokala enheterna.
