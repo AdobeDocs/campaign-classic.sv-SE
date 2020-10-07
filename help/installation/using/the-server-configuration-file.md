@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '7859'
 ht-degree: 5%
@@ -968,7 +965,7 @@ Mer information finns i [Utgående anslutningsskydd](../../installation/using/co
 
 Om en post uppfyller **dnsSuffix** men inte **urlRegEx**, undersöks följande post.
 
-Om du till exempel vill auktorisera åtkomst till alla URL:er för domänen business.com kan vi definiera två poster:
+Om du till exempel vill tillåta åtkomst till alla URL:er för domänen business.com kan vi definiera två poster:
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*&quot;
 
@@ -1741,7 +1738,7 @@ Mer information finns i [E-postoptimering](../../installation/using/email-delive
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximal kvarhållningstid för meddelanden. Om ett förberett meddelande inte kunde skickas på grund av strypning eller inte kunde ansluta till mål-MTA, överges meddelandet och kommer att bearbetas vid nästa försök.<br /> </td> 
+   <td> Maximal meddelandekvarhållningstid. Om ett förberett meddelande inte kunde skickas på grund av strypning eller inte kunde ansluta till mål-MTA, överges meddelandet och kommer att bearbetas vid nästa försök.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1810,7 +1807,7 @@ Konfigurera följande parametrar i noden **mta > child > smtp** . Detta är konf
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Tidsgräns för inaktiv session. Den här parametern används bara om sessionen återanvänds för att skicka flera meddelanden till en viss domän. När MTA har slutfört meddelandeöverföringen stängs inte den SMTP-session som den har använt systematiskt. Om ett meddelande är klart att skickas för samma domän återanvänds samma SMTP-session och därför stängs inte sessionen automatiskt. Med parametern IdleSessionTimeout kan du definiera den tid under vilken en SMTP-session kan vara aktiv och vänta på ett annat meddelande. När tiden har gått ut stängs sessionen automatiskt.<br /> </td> 
+   <td> Tidsgräns för inaktiv session. Den här parametern används bara om sessionen återanvänds för att skicka flera meddelanden till en viss domän. När MTA har slutfört meddelandeöverföringen stängs inte den SMTP-session som den har använt systematiskt. Om ett meddelande är klart att skickas för samma domän återanvänds samma SMTP-session och därför stängs sessionen inte automatiskt. Med parametern IdleSessionTimeout kan du definiera den tid under vilken en SMTP-session kan vara aktiv och vänta på ett annat meddelande. När tiden har gått ut stängs sessionen automatiskt.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -3043,7 +3040,7 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
  <tbody> 
   <tr> 
    <td> IPMask<br /> </td> 
-   <td> Auktoriserade IP-adresser: kommaseparerad lista över IP-adresser för källan som tillåts använda reläet för den här masken.<br /> </td> 
+   <td> Auktoriserade IP-adresser: kommaseparerad lista över IP-adresser för källan som tillåts använda relä för den här masken.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
