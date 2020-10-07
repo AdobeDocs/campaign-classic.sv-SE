@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: b781fd52-828c-4582-a546-a1fee7e5a26d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 2%
 
 ---
 
@@ -229,7 +229,7 @@ Filtrering och sortering kan användas när listan läses in:
 
 ### Kortkommandon {#shortcut-commands}
 
-Med ett kortkommando kan du starta en åtgärd när du markerar listan. Åtgärden kan vara ett indataformulär eller ett SOAP-anrop.
+Med ett kortkommando kan du starta en åtgärd när du väljer listan. Åtgärden kan vara ett indataformulär eller ett SOAP-anrop.
 
 Kommandon är tillgängliga på menyn **[!UICONTROL Action]** i listan eller på den tillhörande menyknappen.
 
