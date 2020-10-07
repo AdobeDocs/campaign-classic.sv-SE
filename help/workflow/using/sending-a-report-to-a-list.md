@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Mer information om hur du skapar listor finns i det här [avsnittet](../../platf
 
 ## Steg 2: Skapa leveransmallen {#step-2--creating-the-delivery-template}
 
-1. Gå till noden **[!UICONTROL Resources > Templates > Delivery templates]** i Adobe Campaign Explorer och duplicera mallen **[!UICONTROL Email delivery]** som är färdig.
+1. Gå till noden **[!UICONTROL Resources > Templates > Delivery templates]** i Adobe Campaign Utforskaren och duplicera mallen som finns **[!UICONTROL Email delivery]** som inte är installerad.
 
    ![](assets/use_case_report_2.png)
 
@@ -133,5 +133,6 @@ Följande arbetsflöde skapades för det här användningsfallet. Den har tre ve
    * För **[!UICONTROL Recipients]** - och **[!UICONTROL Content]** -fälten väljer du **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]**: välj **[!UICONTROL Prepare and start]**.
    * Avmarkera **[!UICONTROL Generate an outbound transition]** och **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)
 
