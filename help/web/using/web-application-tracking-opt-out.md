@@ -1,7 +1,7 @@
 ---
-title: Avanmäl dig till spårning av webbprogram
-seo-title: Avanmäl dig till spårning av webbprogram
-description: Avanmäl dig till spårning av webbprogram
+title: Välja att inte delta i spårning av webbapplikation
+seo-title: Välja att inte delta i spårning av webbapplikation
+description: Välja att inte delta i spårning av webbapplikation
 seo-description: null
 page-status-flag: never-activated
 uuid: c9b9eee2-a5be-4378-b2d7-53ed7121eae8
@@ -11,23 +11,20 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Avanmäl dig till spårning av webbprogram{#web-application-tracking-opt-out}
+# Välja att inte delta i spårning av webbapplikation{#web-application-tracking-opt-out}
 
 Med Adobe Campaign kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen innefattar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. kan du lägga till dessa banners i webbapplikationer eller landningssidor.
 
-Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar, överförs den informationen till spårningsservern för Adobe Campaign med JavaScript API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
+Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar överförs den informationen till Adobe Campaign spårningsserver med JavaScript API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
 
 >[!NOTE]
 >
@@ -99,7 +96,7 @@ De tillgängliga API:erna på klientsidan för att anpassa banderollen är:
 
 Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
-* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Skapar koden för avanmälningsbanderollen som ska infogas på JSSP-sidan
+* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Skapar koden för den avanmälningsbanderoll som ska infogas på JSSP-sidan
 
    **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript.
 
