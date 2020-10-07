@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2165'
 ht-degree: 2%
@@ -117,7 +114,7 @@ Arbetsytan **[!UICONTROL Explorer]** är uppdelad i tre zoner:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. For more on this, refer to [this page](../../configuration/using/about-navigation-hierarchy.md).
+**1 - Träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Se denna [sida](../../configuration/using/about-navigation-hierarchy.md) för mer information om detta.
 
 **2 - Lista**: kan du filtrera den här listan, köra sökningar, lägga till information eller sortera data.
 
@@ -338,7 +335,7 @@ Du kan göra en sökning av de tillgängliga fälten i en redigerare med hjälp 
 
 Språket i din Adobe Campaign Classic-instans påverkar datum- och tidsformat.
 
-Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
+Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. Se denna [sida](../../installation/using/creating-an-instance-and-logging-on.md) för mer information om detta.
 
 De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 
