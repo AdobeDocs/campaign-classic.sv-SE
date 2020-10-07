@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 48f491b7-bf7b-457f-9cf2-db2bbf4eceea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ Layouten används automatiskt baserat på de valda inställningarna. Om du vill 
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Mer information finns i det fullständiga implementeringsexemplet: Skapa [innehåll i leveransguiden](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Mer information finns i det fullständiga implementeringsexemplet: [Skapar innehåll i leveransguiden](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Skapa en innehållsinstans {#creating-a-content-instance}
 
@@ -82,7 +82,7 @@ Använd följande steg:
 
 ## Leverera en innehållsinstans {#delivering-a-content-instance}
 
-Om du vill skapa en innehållsinstans och leverera den måste en leveransmall länkas till den publiceringsmall som används för att generera innehållet. Mer information finns i [Leverans](../../delivery/using/publication-templates.md#delivery).
+Om du vill skapa en innehållsinstans och leverera den måste en leveransmall länkas till den publiceringsmall som används för att generera innehållet. For more on this, refer to [Delivery](../../delivery/using/publication-templates.md#delivery).
 
 Dessutom måste innehållslagringsmappen dedikeras till innehåll som hämtas från den här publiceringsmallen (när en innehållsmapp gör att du kan generera flera typer av innehåll kan leveranser inte skapas automatiskt).
 
