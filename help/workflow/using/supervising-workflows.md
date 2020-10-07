@@ -1,7 +1,7 @@
 ---
-title: Arbetsflöden för övervakning
-seo-title: Arbetsflöden för övervakning
-description: Arbetsflöden för övervakning
+title: Övervaka arbetsflöden
+seo-title: Övervaka arbetsflöden
+description: Övervaka arbetsflöden
 seo-description: null
 page-status-flag: never-activated
 uuid: e16d1c40-50ae-4c3d-95df-fac62f987a15
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 1%
 
 ---
 
 
-# Arbetsflöden för övervakning{#supervising-workflows}
+# Övervaka arbetsflöden{#supervising-workflows}
 
 Här beskrivs hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot;.
 
@@ -38,7 +38,7 @@ Om du vill övervaka statusen för en uppsättning arbetsflöden måste du följ
 
 >[!NOTE]
 >
->Utöver arbetsflödet kan du med hjälp av **heatmap** -kartan förCampaign-arbetsflöden analysera arbetsflöden som körs för närvarande. Mer information finns i det [dedikerade avsnittet](../../workflow/using/heatmap.md).
+>Utöver arbetsflödet kan du med hjälp av **heatmap** -kartan förCampaign-arbetsflöden analysera arbetsflöden som körs för närvarande. For more on this, refer to the [dedicated section](../../workflow/using/heatmap.md).
 >
 >Mer information om hur du **övervakar arbetsflödenas körning** finns i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md).
 
