@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Pipeline, alternativ NmsPipeline_Config {#nmspipeline_config}
+# Pipelinealternativet NmsPipeline_Config {#nmspipeline_config}
 
-När autentiseringen fungerar [!DNL pipelined] kan hämta händelser och bearbeta dem. Den behandlar bara utlösare som är konfigurerade i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och överförts till pipeline i förväg.
+När autentiseringen fungerar [!DNL pipelined] kan hämta händelser och bearbeta dem. Den behandlar endast utlösare som har konfigurerats i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och flyttats till pipeline i förväg.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
 Konfigurationen av utlösarna görs i ett alternativ, under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Alternativets namn är **[!UICONTROL NmsPipeline_Config]**. Datatypen är&quot;lång text&quot; i JSON-format.
@@ -75,7 +72,7 @@ Det andra exemplet fångar upp alla utlösare.
 
 >[!NOTE]
 >
->UID- [!DNL Trigger] värdet för ett visst utlösarnamn i Analytics-gränssnittet finns som en del av URL-frågesträngsparametrarna i utlösargränssnittet. triggerType-UID skickas i pipeline-dataströmmen och kod kan skrivas till pipeline.JS för att mappa utlösar-UID till en användarvänlig etikett som kan lagras i en utlösarnamnskolumn i pipelineEvents-schemat.
+>UID- [!DNL Trigger] värdet till ett specifikt utlösarnamn i Analytics-gränssnittet finns som en del av URL-frågesträngsparametrarna i Triggers-gränssnittet. triggerType-UID skickas i pipeline-dataströmmen och kod kan skrivas till pipeline.JS för att mappa utlösar-UID till en användarvänlig etikett som kan lagras i en utlösarnamnskolumn i pipelineEvents-schemat.
 
 ## Parametern Consumer {#consumer-parameter}
 
