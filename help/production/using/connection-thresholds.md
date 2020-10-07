@@ -1,7 +1,7 @@
 ---
-title: Anslutningströsklar
-seo-title: Anslutningströsklar
-description: Anslutningströsklar
+title: Anslutningsgränser
+seo-title: Anslutningsgränser
+description: Anslutningsgränser
 seo-description: null
 page-status-flag: never-activated
 uuid: a4b6959a-0f5b-41a2-b4c3-d7d6613d1a18
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
 
-# Anslutningströsklar{#connection-thresholds}
+# Anslutningsgränser{#connection-thresholds}
 
 För servrar med stor belastning kan anslutningens tröskelvärde överskridas. I alla händelser är det bra att ta reda på varför.
 
@@ -28,7 +28,7 @@ Det finns tre olika tröskelvärden:
 
 1. Tröskelvärdet för webbanslutning, konfigurerat på webbservern. Kontakta systemadministratören om du vill ändra den.
 1. Tröskelvärde för databasanslutning. Kontakta databasadministratören om du vill ändra den.
-1. Tröskelvärdet för Adobe Campaign-anslutningen, finns på två platser:
+1. Tröskelvärdet för Adobe Campaign-anslutning finns på två platser:
 
    * Tomcat side: alla frågor som faktiskt kommer från Adobe Campaign Tomcat-klienten.
 
