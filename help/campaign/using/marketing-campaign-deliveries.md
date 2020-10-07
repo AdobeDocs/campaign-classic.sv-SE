@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Leveranser av marknadsföringskampanjer {#marketing-campaign-deliveries}
+# Marketing campaign deliveries {#marketing-campaign-deliveries}
 
 Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller direkt via leveransöversikten.
 
@@ -47,7 +44,7 @@ För varje leverans definierar kampanjchefen:
 
 * Huvudmålet. Mer information finns i [Skapa huvudmålet i ett arbetsflöde](#building-the-main-target-in-a-workflow) och [Välja målpopulation](#selecting-the-target-population).
 * Kontrollgruppen. Mer information finns i [Definiera en kontrollgrupp](#defining-a-control-group).
-* Startadresserna. Mer information om detta hittar du i [det här avsnittet](../../delivery/using/about-seed-addresses.md).
+* Startadresserna. Mer information om detta finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md).
 
 En del av den här informationen ärvs från mallen.
 
@@ -88,7 +85,7 @@ I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
-#### Creating a targeting workflow {#creating-a-targeting-workflow}
+#### Skapa ett målarbetsflöde {#creating-a-targeting-workflow}
 
 Målinriktning kan skapas med en kombination av filtreringsvillkor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa populationer och underpopulationer som ska anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** fliken på kontrollpanelen för kampanjer.
 
@@ -208,7 +205,7 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet.
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-### Definiera en kontrollgrupp {#defining-a-control-group}
+### Defining a control group {#defining-a-control-group}
 
 En kontrollgrupp är en population som inte kommer att få leveransen. Det används för att spåra beteenden och kampanjeffekter efter leverans genom att göra en jämförelse med beteendet hos målpopulationen, som har fått leveransen.
 
@@ -258,7 +255,7 @@ Du kan extrahera mottagare från huvudmålet för leveransen. I det här fallet 
 Om du vill extrahera en kontrollgrupp aktiverar du kontrollgruppen för kampanjen eller leveransen och väljer något av följande alternativ: **[!UICONTROL Activate random sampling]** eller **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : Med det här alternativet tillämpas slumpmässiga stickprov på mottagarna i målpopulationen. Om du sedan anger tröskelvärdet till 100 kommer kontrollgruppen att bestå av 100 mottagare som väljs slumpmässigt från målpopulationen. Det slumpmässiga urvalet beror på databasmotorn.
-* **[!UICONTROL Keep only the first records after sorting]** : Med det här alternativet kan du definiera en begränsning baserat på en eller flera sorteringsordningar. Om du väljer **[!UICONTROL Age]** fältet som sorteringsvillkor och sedan anger 100 som ett tröskelvärde, kommer kontrollgruppen att bestå av de 100 yngsta mottagarna. Det kan till exempel vara intressant att definiera en kontrollgrupp som innehåller mottagare som gör få inköp, eller mottagare som gör vanliga inköp, och att jämföra deras beteende med de kontaktade mottagarna.
+* **[!UICONTROL Keep only the first records after sorting]** : med det här alternativet kan du definiera en begränsning baserat på en eller flera sorteringsvillkor. Om du väljer **[!UICONTROL Age]** fältet som sorteringsvillkor och sedan anger 100 som ett tröskelvärde, kommer kontrollgruppen att bestå av de 100 yngsta mottagarna. Det kan till exempel vara intressant att definiera en kontrollgrupp som innehåller mottagare som gör få inköp, eller mottagare som gör vanliga inköp, och att jämföra deras beteende med de kontaktade mottagarna.
 
 Klicka **[!UICONTROL Next]** för att definiera sorteringsordningen (om det behövs) och välj mottagarbegränsningsläge.
 
@@ -373,7 +370,7 @@ I en kampanj kan du även hänvisa till andra poster, t.ex. kampanjkuponger, spe
 
 >[!NOTE]
 >
->Om du använder MRM kan du även hantera ett bibliotek med marknadsföringsresurser som är tillgängliga för flera deltagare för samarbete. Se [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md).
+>Om du använder MRM kan du även hantera ett bibliotek med marknadsföringsresurser som är tillgängliga för flera deltagare för samarbete. See [Managing marketing resources](../../campaign/using/managing-marketing-resources.md).
 
 ### Lägga till dokument {#adding-documents}
 
@@ -440,7 +437,7 @@ En disposition kan innehålla objekt och personaliseringsfält, resurser och erb
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** ikonen till höger om listområdet.
+   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** ikonen till höger om listzonen.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
