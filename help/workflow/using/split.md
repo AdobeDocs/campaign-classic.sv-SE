@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +103,7 @@ Om du inte vill använda hela populationen i en delmängd kan du begränsa antal
    * **[!UICONTROL Maximum size]**: ett maximalt antal poster.
    * **[!UICONTROL By data grouping]**: Du kan ange en gräns för antalet poster beroende på värdena i ett angivet fält i den inkommande populationen. Mer information om detta finns i [Begränsa antalet delmängdsposter per datagrupp](#limiting-the-number-of-subset-records-by-data-grouping).
    * **[!UICONTROL By data grouping (in %)]**: Du kan ange en gräns för antalet poster beroende på värdena i ett angivet fält i den inkommande populationen med en procentsats. Mer information om detta finns i [Begränsa antalet delmängdsposter per datagrupp](#limiting-the-number-of-subset-records-by-data-grouping).
-   * **[!UICONTROL By data distribution]**: Om grupperingsfälten har för många värden eller om du inte vill ange värdena igen för varje ny delad aktivitet, kan du konfigurera en **[!UICONTROL By data distribution]** begränsning (valfri modul för distribuerad marknadsföring) i Adobe Campaign. Mer information finns i [Begränsa antalet delmängdsposter per datadistribution](#limiting-the-number-of-subset-records-per-data-distribution).
+   * **[!UICONTROL By data distribution]**: Om grupperingsfälten har för många värden eller om du inte vill ange värden igen för varje ny delad aktivitet, kan du konfigurera en **[!UICONTROL By data distribution]** begränsning (valfri modul för distribuerad marknadsföring) i Adobe Campaign. Mer information finns i [Begränsa antalet delmängdsposter per datadistribution](#limiting-the-number-of-subset-records-per-data-distribution).
 
 1. Klicka **[!UICONTROL Finish]** för att godkänna urvalskriterierna för posten. Den definierade konfigurationen visas sedan i redigerarens mittersta fönster.
 
@@ -155,7 +155,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
    * **[!UICONTROL Targeting dimension]**: Ange måldimensionen som datafördelningen ska tillämpas på, till **[!UICONTROL Recipient]** exempel. Det här schemat måste alltid vara kompatibelt med de data som används i målarbetsflödet.
    * **[!UICONTROL Distribution field]**: markera ett fält via måldimensionen. Om du till exempel markerar **[!UICONTROL Email domain]** fältet kommer listan över mottagare att delas upp efter domän.
    * **[!UICONTROL Distribution type]**: Välj hur målets begränsningsvärde ska brytas ned på **[!UICONTROL Distribution]** fliken: **[!UICONTROL Percentage]** eller **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: välj tilldelningstypen för datadistribution. Du kan välja mellan tilldelning efter grupp eller operator eller tilldelning efter lokal enhet. Tilldelning av lokal enhet används i **Distribuerad marknadsföring**. Mer information finns i det här [avsnittet](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Assignment type]**: välj tilldelningstypen för datadistribution. Du kan välja mellan tilldelning efter grupp eller operator eller tilldelning efter lokal enhet. Tilldelning av lokal enhet används i **Distribuerad marknadsföring**. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
    * **[!UICONTROL Approval storage]**: Om du använder en **[!UICONTROL Local approval]** aktivitet i målarbetsflödet (se [Lokalt godkännande](../../workflow/using/local-approval.md)), anger du det schema som godkännanderesultaten ska lagras i. Du måste ange ett lagringsschema per målschema. Om du använder **[!UICONTROL Recipients]** målschemat anger du **[!UICONTROL Local approval of recipients]** standardlagringsschemat.
 
       Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Approvals storage]** fältet.
@@ -204,7 +204,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
       >
       >Se till att operatorerna har tilldelats rätt behörighet.
 
-   * **[!UICONTROL Local entity]**: välj den lokala entitet som tilldelats varje distributionsvärde. Lokala enheter används i **distribuerad marknadsföring**. Mer information finns i det här [avsnittet](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: välj den lokala entitet som tilldelats varje distributionsvärde. Lokala enheter används i **distribuerad marknadsföring**. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
 
 ## Filtreringsparametrar {#filtering-parameters}
 
@@ -212,7 +212,7 @@ Klicka på **[!UICONTROL General]** fliken för att ange aktivitetsetiketten. V�
 
 ![](assets/s_user_segmentation_partage_general.png)
 
-Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet är det inkommande målet minus kombinationen av delmängderna. En ytterligare utgående övergång läggs sedan till i aktiviteten enligt följande:
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Komplementet är det inkommande målet minus kombinationen av delmängderna. En ytterligare utgående övergång läggs sedan till i aktiviteten enligt följande:
 
 ![](assets/s_user_segmentation_partage_compl.png)
 
@@ -220,12 +220,12 @@ För att det här alternativet ska fungera på rätt sätt måste inkommande dat
 
 Om data till exempel läses direkt från en extern databas som Netezza (som inte stöder begreppet index) via en **[!UICONTROL Data loading (RDBMS)]** aktivitet, blir det komplement som genereras av **[!UICONTROL Split]** aktiviteten felaktigt.
 
-Du kan undvika detta genom att dra och släppa en **[!UICONTROL Enrichment]** aktivitet precis före **[!UICONTROL Split]** aktiviteten. I **[!UICONTROL Enrichment]** aktiviteten kontrollerar du **[!UICONTROL Keep all additional data from the main set]** och anger de kolumner som du vill använda för att konfigurera filtren för **[!UICONTROL Split]** aktiviteten i ytterligare data. Data från den inkommande övergången av aktiviteten lagras sedan lokalt i en temporär tabell på Adobe Campaign-servern och komplementet kan genereras korrekt. **[!UICONTROL Split]**
+Du kan undvika detta genom att dra och släppa en **[!UICONTROL Enrichment]** aktivitet precis före **[!UICONTROL Split]** aktiviteten. I **[!UICONTROL Enrichment]** aktiviteten kontrollerar du **[!UICONTROL Keep all additional data from the main set]** och anger de kolumner som du vill använda för att konfigurera filtren för **[!UICONTROL Split]** aktiviteten i ytterligare data. Data från aktivitetens ingående övergång lagras sedan lokalt i en temporär tabell på Adobe Campaign-servern och komplementet kan genereras korrekt. **[!UICONTROL Split]**
 
 Med det här **[!UICONTROL Enable overlapping of output populations]** alternativet kan du hantera populationer som tillhör flera deluppsättningar:
 
 * När rutan inte är markerad ser delningsaktiviteten till att en mottagare inte kan finnas i flera utdataövergångar, även om den uppfyller villkoren för flera delmängder. De kommer att vara i målet för den första fliken med matchande villkor.
-* När rutan är markerad kan mottagarna hittas i flera delmängder om de uppfyller filtervillkoren. Adobe Campaign rekommenderar att du använder exklusiva kriterier.
+* När rutan är markerad kan mottagarna hittas i flera delmängder om de uppfyller filtervillkoren. Adobe Campaign rekommenderar att man använder exklusiva kriterier.
 
 ## Indataparametrar {#input-parameters}
 
