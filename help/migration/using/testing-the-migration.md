@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 30e3082f-a367-4c3b-bff2-208ccf97acd4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
@@ -26,13 +26,13 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 Beroende på konfigurationen finns det flera sätt att utföra migreringstester.
 
-Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För utvecklingsmiljöer krävs licens: kontrollera licensavtalet eller kontakta Adobe Campaigns säljavdelning.
+Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För utvecklingsmiljöer krävs licens: kontrollera licensavtalet eller kontakta Adobe Campaign säljavdelning.
 
 1. Stoppa all pågående utveckling och föra över den till produktionsmiljön.
 1. Säkerhetskopiera utvecklingsmiljödatabasen.
 1. Stoppa alla Adobe Campaign-processer i utvecklingsinstansen.
 1. Säkerhetskopiera produktionsmiljödatabasen och återställ den som en utvecklingsmiljö.
-1. Innan du startar Adobe Campaign-tjänsterna kör du skriptet **frysinstans.js** som gör att du kan rensa databasen för alla objekt som kördes när säkerhetskopieringen startades.
+1. Innan du startar Adobe Campaign-tjänsterna kör du skriptet för **frysinstansen.js** -autentisering, vilket gör att du kan rensa databasen för alla objekt som kördes när säkerhetskopieringen startades.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -55,7 +55,7 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För ut
 
 >[!NOTE]
 >
->Med uppdateringskommandot i Adobe Campaign (**postuppgradering**) kan du synkronisera resurser och uppdateringsscheman samt databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats kan du med kommandot **postupgrade** identifiera om synkroniseringen genererar fel eller varningar.
+>Med Adobe Campaign uppdateringskommando (**postuppgradering**) kan du synkronisera resurser, uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats kan du med kommandot **postupgrade** identifiera om synkroniseringen genererar fel eller varningar.
 
 ## Migreringsverktyg {#migration-tools}
 
@@ -75,7 +75,7 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 
 >[!NOTE]
 >
->**Du måste använda`<instanceame>`**-instansen: alternativ. Vi rekommenderar inte att du använder alternativet**-allinstances **.
+>Du måste använda **-instansen:`<instanceame>`** alternativ. Vi rekommenderar inte att du använder alternativet **-allinstances** .
 
 ### -showCustomEntities och -showDeletedEntities, alternativ {#showcustomentities-and--showdeletedentities-options}
 
