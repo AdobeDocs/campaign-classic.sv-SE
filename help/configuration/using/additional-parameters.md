@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## Definition av parametrar {#definition-of-parameters}
 
-Din Adobe Campaign-plattform erbjuder två parametrar av typen TRANSACTION som standard för webbspårning:
+På din Adobe Campaign-plattform finns två parametrar av typen TRANSACTION som standard för webbspårning:
 
 * **belopp**: representerar beloppet för en transaktion,
 * **artikel**: representerar antalet artiklar i en transaktion.
@@ -57,7 +57,7 @@ I serverkonfigurationen kan du definiera det maximala antal tecken som ska beakt
 >
 >Om du ökar det maximala antalet tecken som ska beaktas kan det påverka plattformens webbspårningsprestanda.
 
-Det gör du genom att ändra attributet **webTrackingParamSize** för **`<trackinglogd>`** elementet i **filen serverConf.xml** . Den här filen sparas i underkatalogen **conf** i installationskatalogen för Adobe Campaign.
+Det gör du genom att ändra attributet **webTrackingParamSize** för **`<trackinglogd>`** elementet i **filen serverConf.xml** . Den här filen sparas i underkatalogen **conf** i Adobe Campaign installationskatalog.
 
 **Exempel**:
 
@@ -79,14 +79,14 @@ När konfigurationen har ändrats måste du:
 
    >[!NOTE]
    >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): stoppserver **systemctl**
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
 * I Linux tar du bort de delade minnessegmenten med **kommandot ipcrm** ,
-* Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 start** i Linux,
+* Starta om Adobe Campaign-servern: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
 * Starta om webbservern.
 
