@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: d0dd9c74-aad5-452e-a11d-c231dacd2aec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Med en skärningspunkt kan du bara extrahera den population som är gemensam fö
 
 Mer information om hur du konfigurerar och använder skärningsaktiviteten finns i [Extrahera leddata (skärning)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
 
-Markera alternativet **[!UICONTROL Generate complement]** om du vill bearbeta resten av populationen. Komplementet ska innehålla en kombination av resultaten av alla inkommande aktiviteter minus skärningspunkten. En ytterligare utgående övergång läggs sedan till i aktiviteten enligt följande:
+Check the **[!UICONTROL Generate complement]** option if you wish to process the remaining population. Komplementet ska innehålla en kombination av resultaten av alla inkommande aktiviteter minus skärningspunkten. En ytterligare utgående övergång läggs sedan till i aktiviteten enligt följande:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
