@@ -1,21 +1,21 @@
 ---
-title: Analyserar populationer
-seo-title: Analyserar populationer
-description: 'null'
-seo-description: 'null'
+title: Analyserar grupper
+seo-title: Analyserar grupper
+description: noll
+seo-description: noll
 page-status-flag: never-activated
 uuid: 643f367b-5d45-408a-a6eb-f7297e966e31
 contentOwner: sauviat
 discoiquuid: e0cea066-88c9-47f5-ba3a-59e38ac036f0
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '8'
+ht-degree: 100%
 
 ---
 
 
-# Analyserar populationer{#analyzing-populations}
+# Analyserar grupper{#analyzing-populations}
 
