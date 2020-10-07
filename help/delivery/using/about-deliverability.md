@@ -1,5 +1,5 @@
 ---
-title: Leveransvillkor i Adobe Campaign Classic
+title: Om leveransbarhet i Adobe Campaign Classic
 description: Läs mer om hur du hanterar leveranser i Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -21,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# Leverans{#about-deliverability}
+# Om leverans{#about-deliverability}
 
 **Leveransmöjligheterna** består i att mäta framgången för era kampanjer som når mottagarnas inkorg utan att studsa, eller markeras som skräppost.
 
-Adobe Campaign erbjuder ett antal verktyg för att spåra plattformens leveransförmåga. I det här avsnittet beskrivs också de huvudprinciper som du bör tänka på när du hanterar och optimerar leveransen.
+Adobe Campaign har ett antal verktyg för att spåra plattformens leveransförmåga. I det här avsnittet beskrivs också de huvudprinciper som du bör tänka på när du hanterar och optimerar leveransen.
 
 ## Konfiguration {#configuration}
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
-* För hostingkunder och hybridklienter konfigureras **leveransövervakning** av Adobes tekniska support och konsulter. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
+* För värdbaserade och hybridklienter konfigureras **leveransövervakning** av Adobe tekniska support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
 
-* För lokala installationer måste du installera paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera standardpaket](../../installation/using/installing-campaign-standard-packages.md)för Campaign Classic.
+* För lokala installationer måste du installera paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 
 I Adobe Campaign Classic hanteras **leveransövervakning** av **[!UICONTROL Refresh for deliverability]** arbetsflödet. Det installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, domänlistan och listan över MX:er. När paketet har installerats körs det här arbetsflödet i natt för att regelbundet uppdatera listan över regler och göra det möjligt att aktivt hantera plattformsleveransen. **[!UICONTROL Deliverability monitoring (Email Deliverability)]**
 
