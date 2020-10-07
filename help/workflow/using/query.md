@@ -1,7 +1,7 @@
 ---
-title: Fråga
-seo-title: Fråga
-description: Fråga
+title: Förfrågan
+seo-title: Förfrågan
+description: Förfrågan
 seo-description: null
 page-status-flag: never-activated
 uuid: 32f4f467-5083-414f-8616-1aa4bf2b5867
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -23,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# Fråga{#query}
+# Förfrågan{#query}
 
-## Skapa en fråga {#creating-a-query}
+## Creating a query {#creating-a-query}
 
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
 Mer information om frågeexempel finns i det här [avsnittet](../../workflow/using/querying-recipient-table.md).
@@ -62,7 +59,7 @@ Med **[!UICONTROL Edit query...]** länken kan du definiera måltyp, begränsnin
 
 1. Om du har valt **[!UICONTROL Filtering conditions]** i steg 1 eller med alternativet **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** måste du lägga till filtervillkor manuellt senare.
 
-   Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i det här [avsnittet](../../workflow/using/querying-using-grouping-management.md).
+   Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. For more information on grouping, refer to this [section](../../workflow/using/querying-using-grouping-management.md).
 
    Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsvisa kombinationen **[!UICONTROL Corresponding SQL query...]** för dina villkor. For more on this refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -118,12 +115,13 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
       >[!IMPORTANT]
       >
-      >I det här läget optimeras den SQL-fråga som genereras tack vare en direkt överlappning av samlingselementen.
+      >I det här läget optimeras SQL-frågan som genereras tack vare en direkt koppling till samlingselementen.
       >
       >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
 
    * Om du återställer flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
    * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda **[!UICONTROL Aggregates]** värdet.
+
    ![](assets/query_add_collection_param.png)
 
 1. Ange delmarkeringen för samlingen. Till exempel: endast de senaste 15 dagarna.
@@ -138,7 +136,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 
 >[!NOTE]
 >
->Ytterligare frågeexempel presenteras i [det här avsnittet](../../workflow/using/querying-recipient-table.md).
+>Ytterligare frågeexempel visas i [det här avsnittet](../../workflow/using/querying-recipient-table.md).
 
 1. Ge frågan ett namn och välj sedan **[!UICONTROL Edit query...]** länken.
 1. Välj **[!UICONTROL Filtering conditions]** i listan över tillgängliga filtertyper.
@@ -148,6 +146,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
    * Mottagare under 30 år.
    * Mottagare över 18 år.
    * Mottagare som bor i Frankrike.
+
    ![](assets/query_example.png)
 
    Du kan visa SQL som matchar din villkorskombination:
@@ -175,7 +174,7 @@ Det här värdet är arbetstabellens schema. Den här parametern är giltig för
 
 ## Optimera frågor {#optimizing-queries}
 
-I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågor som körs på Adobe Campaign för att begränsa arbetsbördan för databasen och förbättra användarupplevelsen.
+I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågor som körs på Adobe Campaign för att begränsa arbetsbelastningen i databasen och förbättra användarupplevelsen.
 
 ### Kopplingar och index {#joins-and-indexes}
 
@@ -192,7 +191,7 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
    Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
-Mer information finns[i avsnitten om datamodellens bästa praxis](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html) och [Databasmappning](../../configuration/using/database-mapping.md) .
+Mer information finns[i avsnitten om datamodellens bästa praxis](https://helpx.adobe.com/se/campaign/kb/acc-data-model-best-practices.html) och [Databasmappning](../../configuration/using/database-mapping.md) .
 
 ### Funktioner {#functions}
 
@@ -231,6 +230,7 @@ For more on filtering dimensions, refer to [this section](../../workflow/using/b
    * Data,
    * Program,
    * Volymer.
+
    >[!NOTE]
    >
    >En funktion som fungerar i en utvecklingsmiljö kanske inte fungerar i en produktionsmiljö där data kan vara annorlunda. Försök att identifiera de viktigaste skillnaderna för att förutse risker och förbereda lösningar.
