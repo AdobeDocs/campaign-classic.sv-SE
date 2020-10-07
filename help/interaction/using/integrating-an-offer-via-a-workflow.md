@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 6e27caea-1f1a-457d-bdec-1f93a12b01cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 4%
 
 ---
 
@@ -24,12 +24,12 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 Förutom själva leveransaktiviteten kan du definiera hur erbjudandena presenteras i flera arbetsflödesaktiviteter:
 
-* Leveransöversikt
+* Leveransbeskrivning
 * Berikning
 * Erbjudandemotor
 * Erbjudanden per cell
 
-## Leveransöversikt {#delivery-outline}
+## Leveransbeskrivning {#delivery-outline}
 
 Med aktiviteten för leveransdisposition, som är tillgänglig i kampanjarbetsflödena, kan du presentera erbjudanden som refereras i en leveransdisposition från den pågående kampanjen.
 
@@ -74,7 +74,7 @@ Det finns två metoder för att ange erbjudandeförslag.
 När du har konfigurerat frågan (se [arbetsflödesguiden](../../workflow/using/query.md)):
 
 1. Lägg till och öppna en anrikningsaktivitet.
-1. Välj på **[!UICONTROL Enrichment]** fliken **[!UICONTROL Add data]**.
+1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
 1. Välj **[!UICONTROL An offer proposition]** de datatyper som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)
