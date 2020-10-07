@@ -1,6 +1,6 @@
 ---
 title: Bästa praxis för kampanjleverans
-seo-title: Bästa praxis
+seo-title: Bästa praxis för leverans
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7dfc5cebf6b59d1b7e718fcab289691d8b76de
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
 
-# Bästa praxis {#delivery-best-practices}
+# Bästa praxis för leverans {#delivery-best-practices}
 
 Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign. Använd länkarna nedan för att navigera bland ämnen och hitta vägledning.
 
@@ -116,4 +113,4 @@ Se även:
 
 * [Steg för att skapa leverans](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-* [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html)
+* [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html)
