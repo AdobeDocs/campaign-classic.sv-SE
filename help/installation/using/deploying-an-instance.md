@@ -1,7 +1,7 @@
 ---
-title: Distribuera en instans
-seo-title: Distribuera en instans
-description: Distribuera en instans
+title: Driftsätta en instans
+seo-title: Driftsätta en instans
+description: Driftsätta en instans
 seo-description: null
 page-status-flag: never-activated
 uuid: 5694b07a-6c1c-45a3-8a22-fd9da163c28c
@@ -11,27 +11,24 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3066'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Distribuera en instans{#deploying-an-instance}
+# Driftsätta en instans{#deploying-an-instance}
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan endast utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Distributionsguide {#deployment-wizard}
 
-Med en grafisk guide, som är tillgänglig i klientkonsolen i Adobe Campaign, kan du definiera parametrarna för den instans som du ska ansluta till.
+Med en grafisk guide, som är tillgänglig i Adobe Campaign klientkonsol, kan du definiera parametrarna för den instans som du ska ansluta till.
 
 Om du vill starta distributionsguiden väljer du **Verktyg > Avancerat > Distributionsguiden**.
 
@@ -90,7 +87,7 @@ Ange följande parametrar:
 * **[!UICONTROL Sender address]** : Avsändarens adress.
 * **[!UICONTROL Reply address text]** : Namnet, som är anpassbart, som kommer att användas när mottagaren klickar på knappen **[!UICONTROL Reply]** i sin e-postklientprogramvara,
 * **[!UICONTROL Reply address]** : Den e-postadress som ska användas när mottagaren klickar på **[!UICONTROL Reply]** knappen i sin e-postklientprogramvara,
-* **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tagits emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
+* **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
 
 Utöver detta kan du ange **masker** som är behöriga för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.
 
@@ -116,7 +113,7 @@ Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Delivery duration of messages]** : Efter denna tid stoppas leveransen (som standard 5 dagar),
 * **[!UICONTROL Online resources validity duration]** : Tidpunkt för när information från mottagarprofilen sparas för att generera spegelsidor.
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : När det här alternativet är markerat kommer mottagare i blocklistan inte att kontaktas,
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : När det här alternativet är markerat kommer mottagare på blockeringslista inte att kontaktas,
 * **[!UICONTROL Automatically ignore doubles]** : När det här alternativet är markerat kommer leveransen inte att göras till dubblettadresser.
 
 ### Försök igen med parametrar {#retry-parameters}
@@ -155,17 +152,17 @@ När du har angett POP-inställningarna klickar du på **Testa** för att kontro
 
 ### Obearbetade studsmeddelanden {#unprocessed-bounce-mails}
 
-Satser hanteras automatiskt av Adobe Campaign och de regler som anges i noden **Administration > Kampanjhantering > Hantering av ej slutprodukter > Kvalificering** av leveranslogg tillämpas. Mer information finns i [Avsluta e-posthantering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Satserna hanteras automatiskt av Adobe Campaign och de regler som anges i noden **Administration > Kampanjhantering > Hantering av ej slutprodukter > Leveransloggens kvalificering** tillämpas. Mer information finns i [Avsluta e-posthantering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
-Obearbetade studsar visas inte i Adobe Campaign. De tas automatiskt bort om de inte överförs till en tredje parts postlåda med följande fält:
+Obearbetade studsar visas inte i Adobe Campaign-gränssnittet. De tas automatiskt bort om de inte överförs till en tredje parts postlåda med följande fält:
 
-* **[!UICONTROL Forwarding address]** : Fyll i det här fältet om du vill överföra alla felmeddelanden (bearbetade eller obearbetade) som samlats in av Adobe Campaign-plattformen till en tredje part.
+* **[!UICONTROL Forwarding address]** : Fyll i det här fältet om du vill överföra alla felmeddelanden (bearbetade eller obearbetade) som samlas in av Adobe Campaign-plattformen till en tredje part.
 * **[!UICONTROL Address for errors]** : Fyll i det här fältet om du bara vill överföra felmeddelanden till en tredje partsadress som det inte gick att kvalificera inMail-processen för.
 * **[!UICONTROL SMTP server]** : Servern som används för att skicka obearbetade studsmeddelanden.
 
 >[!IMPORTANT]
 >
->För att vidarebefordra obearbetade studsmeddelanden rekommenderar Adobe att du bara fyller i **[!UICONTROL Address for errors]** fältet. Kontrollera dock att adressen som används kontrolleras regelbundet eftersom det kan medföra en stor belastning på e-postservern. Kontakta er kontoansvarige om du vill ha mer information.
+>Om du vill vidarebefordra obearbetade studsmeddelanden rekommenderar Adobe att du bara fyller i **[!UICONTROL Address for errors]** fältet. Kontrollera dock att adressen som används kontrolleras regelbundet eftersom det kan medföra en stor belastning på e-postservern. Kontakta er kontoansvarige om du vill ha mer information.
 
 ## Spårningskonfiguration {#tracking-configuration}
 
@@ -181,15 +178,15 @@ När du aktiverar spårning för en instans ändras URL:erna i leveranserna unde
 
 * Informationen om externa URL:er (oavsett om de är säkra eller inte) som anges på den här sidan i distributionsguiden används för att skapa den nya URL:en. Förutom den här informationen innehåller den ändrade länken: Identifierare för leveransen, mottagaren och URL:en.
 
-   Spårningsinformation samlas in av Adobe Campaign på spårningsservrarna för att berika mottagarprofilerna och data som är länkade till leveransen ( **[!UICONTROL Tracking]** flikar).
+   Spårningsinformation samlas in av Adobe Campaign på spårningsservrar för att berika mottagarprofiler och data som är länkade till leveransen ( **[!UICONTROL Tracking]** flikar).
 
-   Information om interna URL:er används endast av programservern i Adobe Campaign för att kontakta spårningsservern/-servrarna.
+   Information om interna URL:er används endast av Adobe Campaign-programservern för att kontakta spårningsservern/-servrarna.
 
-   Mer information finns i [Spårningsserver](#tracking-server).
+   For more on this, refer to [Tracking server](#tracking-server).
 
 * När URL-adresserna har konfigurerats måste du aktivera spårning. För att göra detta måste instansen registreras på spårningsservern(arna).
 
-   Mer information finns i [Spara spårning](#saving-tracking).
+   For more on this, refer to [Saving tracking](#saving-tracking).
 
 ### Spårningsserver {#tracking-server}
 
@@ -349,7 +346,7 @@ I det här steget måste du ange:
 
 1. Den nya URL:en för den offentliga resursen. Mer information finns i avsnittet URL för [offentliga resurser](#public-resources-url) .
 1. Bildidentifieringsläget i en leverans. Mer information finns i avsnittet [Leveransbildidentifiering](#delivery-image-detection) .
-1. Publiceringsalternativ. Mer information finns i avsnittet [Publiceringslägen](#publication-modes) .
+1. Publiceringsalternativ. For more information, refer to the [Publication modes](#publication-modes) section.
 
 Offentliga resurser är tillgängliga via noden **Administration > Resurser > Online > Offentliga resurser** i Adobe Campaign-trädet. De samlas in i ett bibliotek och kan inkluderas i e-postmeddelanden men också användas i kampanjer eller uppgifter, samt i innehållshantering.
 
@@ -392,7 +389,7 @@ Följande publiceringslägen är tillgängliga:
 
 * Andra Adobe Campaign-servrar
 
-   Du kan använda ytterligare en Adobe Campaign-server där resurserna ska kopieras.
+   Du kan använda ytterligare en Adobe Campaign-server där resurserna kopieras.
 
    På serversidan måste du skapa en ny instans med följande kommando för att kunna använda en dedikerad Adobe Campaign-server:
 
@@ -419,13 +416,13 @@ Följande publiceringslägen är tillgängliga:
       [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
       ```
 
-      var `[INSTALL]` finns åtkomstsökvägen till installationsmappen i Adobe Campaign.
+      var `[INSTALL]` finns åtkomstsökvägen till Adobe Campaign installationsmapp.
 
    * Kontrollera att skriptet är körbart i Unix.
 
 För bilder måste de kopieras från mappen &quot;images&quot; som anges via alternativet **NmsDelivery_ImageSubDirectory** till en eller flera frontservrar. Dessa servrar lagrar bilderna så att de blir tillgängliga via den nya konfigurerade URL:en.
 
-Vid publicering på en Adobe Campaign-server utan ett manuellt skript, lagras som standard bilderna av en leverans i `$(XTK_INSTALL_DIR)/var/res/img/ directory`. Motsvarande URL är följande: **`https://server/res/img`**.
+Vid publicering på en Adobe Campaign-server utan ett manuellt skript lagras bilderna som standard i `$(XTK_INSTALL_DIR)/var/res/img/ directory`. Motsvarande URL är följande: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. Motsvarande URL är följande: **`https://server/res/instance`** där instansen är namnet på spårningsinstansen.
 
@@ -459,7 +456,7 @@ Statusattributet kan vara ett av tre värden:
 
 * normal: Befintligt beteende (utan synkronisering)
 
-* blocklist: URL:en läggs till i blockeringslistan om den returnerar ett 404-fel. Varaktigheten (i sekunder) för den URL som finns i blocklistan definieras av ett **timeout** -attribut vars standardvärde är 60 sekunder.
+* blockeringslista: URL:en läggs till i blockeringslista om den returnerar ett 404-fel. Varaktigheten (i sekunder) för den URL som finns i blockeringslista definieras av ett **timeout** -attribut vars standardvärde är 60 sekunder.
 
 Synkroniseringens färdiga konfiguration är:
 
