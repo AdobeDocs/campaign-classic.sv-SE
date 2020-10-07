@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 7%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 För att säkerställa att redigeraren fungerar optimalt rekommenderar vi att du följer följande riktlinjer:
 
-* Innan du **importerar en HTML-sidmall** i Adobe Campaign måste du kontrollera att mallen öppnas och visas korrekt i de olika webbläsarna.
-* Om HTML-sidan innehåller **JavaScript-skript** måste de köras **utan fel** utanför redigeraren.
-* När du skapar en mall rekommenderar vi att du lägger till ett **&#39;type&#39;** -attribut till `<input>` -taggar. Den här informationen bearbetas av redigeraren och hjälper användaren att länka ett databasfält till formulärfältet när webbprogrammet konfigureras.
+* Before **importing an HTML page template** in Adobe Campaign, please make sure the template opens and displays correctly in the various browsers.
+* If the HTML page contains **JavaScript scripts**, they need to execute **without errors** outside of the editor.
+* När du skapar en mall rekommenderar vi att du lägger till ett **&quot;type&quot;**-attribut till taggar. `<input>` Den här informationen bearbetas av redigeraren och hjälper användaren att länka ett databasfält till formulärfältet när webbprogrammet konfigureras.
 
    Exempel på HTML-kod i mallen:
 
