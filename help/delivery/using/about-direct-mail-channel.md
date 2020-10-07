@@ -1,7 +1,7 @@
 ---
-title: Om kanal för direktreklam
-seo-title: Om kanal för direktreklam
-description: Om kanal för direktreklam
+title: Om kanal för direktutskick
+seo-title: Om kanal för direktutskick
+description: Om kanal för direktutskick
 seo-description: null
 page-status-flag: never-activated
 uuid: c7fe4d33-a056-49cd-977e-b56753360c8b
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: 33fe5a57-55db-4cd7-b1fd-0dc3691909ab
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 70f51ba3937d0f20d9a488c61b52b7ec4396fa5e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 11%
 
 ---
 
 
-# Om kanal för direktreklam{#about-direct-mail-channel}
+# Om kanal för direktutskick{#about-direct-mail-channel}
 
 Med Adobe Campaign kan ni producera filer för att leverera personaliserade brev. Mottagarprofilerna måste innehålla minst namn och postadresser.
 
