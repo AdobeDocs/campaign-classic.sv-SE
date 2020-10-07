@@ -1,7 +1,7 @@
 ---
-title: Spårning av hyposer
-seo-title: Spårning av hyposer
-description: Spårning av hyposer
+title: Spåra hypoteser
+seo-title: Spåra hypoteser
+description: Spåra hypoteser
 seo-description: null
 page-status-flag: never-activated
 uuid: cb949a9d-8bbe-446b-b5b4-22234a91a68b
@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 
-# Spårning av hyposer{#hypothesis-tracking}
+# Spåra hypoteser{#hypothesis-tracking}
 
-Resultatet av hypotesberäkningar finns på olika nivåer i Adobe Campaign-plattformen: Indikatorer som beräknas utifrån hypoteser och målpopulationens reaktioner är synliga via den faktiska hypotesen, liksom i hypotesrapporter som är tillgängliga via kampanjer och leveranser.
+Resultatet av hypotesberäkningarna finns på olika nivåer i Adobe Campaign: Indikatorer som beräknas utifrån hypoteser och målpopulationens reaktioner är synliga via den faktiska hypotesen, liksom i hypotesrapporter som är tillgängliga via kampanjer och leveranser.
 
 ## Hyposterresultat {#hypothesis-results}
 
