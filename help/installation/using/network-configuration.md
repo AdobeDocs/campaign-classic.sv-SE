@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 639d2f42-e397-4694-942c-b2b8ad94ce9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
 
 Vissa processer i programmet måste kommunicera med andra eller för att få tillgång till LAN och Internet. Detta innebär att vissa TCP-portar måste vara öppna för dessa processer.
 
-Använd den inbäddade Apache Tomcat-porten som prioritet (8080 som standard) för intern kommunikation mellan de olika programservrarna på en Adobe Campaign-plattform.
+Använd den inbäddade Apache Tomcat-porten som prioritet (8080 som standard) för intern kommunikation mellan olika programservrar på en Adobe Campaign-plattform.
 
 ### Leveransserver {#delivery-server}
 
@@ -128,7 +128,7 @@ För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öp
 
 ### Rich Client {#rich-client}
 
-För Adobe Campaign-klienten (**lclient**) måste följande portar vara öppna:
+För Adobe Campaign Rich Client (**nlclient**) måste följande portar vara öppna:
 
 <table> 
  <tbody> 
@@ -180,7 +180,7 @@ Standardportarna är följande:
 
 ## Extern åtkomst {#external-access}
 
-Dessutom måste vissa komponenter vara tillgängliga från det offentliga internet så att e-postkampanjer som körs direkt från Adobe Campaign kan visas. Det innebär att vissa portar måste vara öppna för komponenter.
+Dessutom måste vissa komponenter vara tillgängliga via Internet så att e-postkampanjer som körs direkt från Adobe Campaign kan visas. Det innebär att vissa portar måste vara öppna för komponenter.
 
 ### Omdirigeringsserver {#redirection-server}
 
@@ -209,7 +209,7 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Var som helst. Nödvändigt när webbformulär hanteras direkt från Adobe Campaign-plattformen eller när spegelsidor används.<br /> </td> 
+   <td> Var som helst. Nödvändigt när webbformulär hanteras direkt från Adobe Campaign eller när spegelsidor används.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -231,7 +231,7 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
 
 ## Integrering med Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Integrationen mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar den här integreringen finns i den [detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
+Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar den här integreringen finns i den [detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -241,11 +241,11 @@ Integrationen mellan Adobe Campaign och Adobe Experience Manager kräver att fle
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM-anslutning till Adobe Campaign<br /> </td> 
+   <td> AEM anslutning till Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-anslutning till AEM:s"redigerings-" och"publiceringsinstanser". Portarna som ska öppnas kan skilja sig från standardportarna, beroende på din AEM-konfiguration.<br /> </td> 
+   <td> Adobe Campaign-anslutning till AEM"authoring" och"publishing"-instanser. Portarna som ska öppnas kan skilja sig från standardportarna, beroende på AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
