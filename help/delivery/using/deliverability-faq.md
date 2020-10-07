@@ -1,6 +1,6 @@
 ---
-title: Viktiga punkter vid hantering av leveranser i Adobe Campaign Classic
-description: Vilka är de viktigaste punkterna att kontrollera vid hantering av leveransen i Adobe Campaign Classic?
+title: Viktiga punkter vid hantering av slutprodukter i Adobe Campaign Classic
+description: Vilka är de viktigaste punkterna att kontrollera när man hanterar produkter i Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -37,7 +34,7 @@ Det innebär att en anslutning kan använda en MX-regel utan att skicka ett e-po
 
 Därför är&quot;kvoter uppfyllda&quot; inte bara ett konfigurationsproblem, utan kan även kopplas till rykte. Det är viktigt att analysera felmeddelanden i [SMTP-loggen](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
 
-Mer information om MX-konfiguration finns i [det här avsnittet](../../installation/using/email-deliverability.md#mx-configuration).
+For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Samma felmeddelande för en Internet-leverantör {#same-error-for-an-isp}
 
@@ -48,11 +45,11 @@ Om du alltid får samma felmeddelande för en Internet-leverantör, kan din e-po
 * Uppdatera dina prenumerationsformulär för att upptäcka eventuella fel i de angivna domännamnen (till exempel: gmaul.com eller yaho.com).
 * Om du märker fel som anger att dina meddelanden har deklarerats som skräppost, eller att dina meddelanden alltid är blockerade, kan du försöka utesluta mottagare som inte har öppnat eller klickat i något av dina meddelanden de senaste 12 månaderna från målet.
 
-Om problemet kvarstår kontaktar du Adobe Campaign Client Care eller Adobe Campaign support.
+Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, Adobe Campaign Client Care eller Adobe Campaign support.
 
-## Blocklista kontra karantän {#block-list-versus-quarantine}
+## Blockeringslista kontra karantän {#block-list-versus-quarantine}
 
-* **Vad är skillnaden mellan en e-postadress i blockeringslistan och en e-postadress i karantän?**
+* **Vad är skillnaden mellan en e-postadress på blockeringslista och en e-postadress i karantän?**
 
    * Statusen **[!UICONTROL On block list]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
 
@@ -61,26 +58,27 @@ Om problemet kvarstår kontaktar du Adobe Campaign Client Care eller Adobe Campa
 
 * **Vad betyder de olika anledningarna till karantänfel?**
 
-   Här följer tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, adress i blocklista, nekad, fel ignorerad, ej tillgänglig, konto inaktiverat, postlåda full, inte ansluten.
+   Här följer tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, adress på blockeringslista, nekad, fel ignorerad, ej tillgänglig, konto inaktiverat, postlåda full, inte ansluten.
 
-   Mer information finns i [Om karantänhantering](../../delivery/using/understanding-quarantine-management.md).
+   For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## Tar bort från blockeringslistan {#remove-from-block-list}
+## Ta bort från blockeringslista {#remove-from-block-list}
 
-* **En av mina mottagare lades till i blockeringslistan av misstag. Hur tar jag bort dem från blockeringslistan så att jag kan börja skicka dem igen?**
+* **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från blockeringslista så att jag kan börja skicka dem igen?**
 
    * Gå till **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * I informationen för motsvarande post anger du värdet för **[!UICONTROL Status]** fältet till **[!UICONTROL Valid]**.
    * Spara posten.
 
-* **Hur kan jag ta reda på om en av mina IP-adresser finns med i en blockeringslista? Hur tar jag bort mina IP-adresser från en blockeringslista?**
+* **Hur kan jag ta reda på om en av mina IP-adresser finns på blockeringslista? Hur tar jag bort mina IP-adresser från blockeringslista?**
 
-   Om du vill kontrollera om din IP-adress finns i en blockeringslista kan du använda olika webbplatser för att verifiera den, till exempel:
+   Om du vill kontrollera om din IP-adress finns på en blockeringslista kan du använda olika webbplatser för att verifiera den, till exempel:
    * [MX Toolbox](https://mxtoolbox.com/)
    * [Vad är min IP-adress?](https://whatismyipaddress.com)
-   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslistan och även namnet på den webbplats som blockerade IP-adressen.
 
-   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen i sin blockeringslista.
+   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslista och även namnet på den webbplats som blockerade IP-adressen.
+
+   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen i blockeringslista.
 
    >[!NOTE]
    >
