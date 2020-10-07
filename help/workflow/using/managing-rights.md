@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f78603e9-f6ff-4ebe-941b-b3fbd1924b71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 2%
 
 ---
 
 
 # Hantera rättigheter{#managing-rights}
 
-Om de inte är administratörer behöver Adobe Campaign-operatorer åtkomsträttigheter för att skapa, köra eller ändra arbetsflöden.
+Om de inte är administratörer behöver Adobe Campaign-operatorer åtkomstbehörighet för att skapa, köra eller ändra arbetsflöden.
 
 I allmänhet behöver operatorer som arbetar med arbetsflöden komma åt de filer som innehåller de data som används under de olika aktiviteterna (mottagare, mottagarlista, prenumerationer, leveranser osv.) och eventuellt deras underfiler.
 
