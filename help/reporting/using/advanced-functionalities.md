@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Med den här aktiviteten kan du bearbeta data och enkelt skapa komplexa frågor 
 
 Skriv bara in frågan i skriptfönstret.
 
-På fliken **[!UICONTROL Texts]** kan du definiera textsträngar. De kan sedan användas med följande syntax: **$(identifierare)**. Mer information om hur du använder texter finns i [Lägga till ett sidhuvud och en sidfot](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+På fliken **[!UICONTROL Texts]** kan du definiera textsträngar. De kan sedan användas med följande syntax: **$(Identifierare)**. Mer information om hur du använder texter finns i [Lägga till ett sidhuvud och en sidfot](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
