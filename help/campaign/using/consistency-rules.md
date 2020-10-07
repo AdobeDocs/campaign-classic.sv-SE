@@ -1,7 +1,7 @@
 ---
-title: Konsekvensregler
-seo-title: Konsekvensregler
-description: Konsekvensregler
+title: Konsistensregler
+seo-title: Konsistensregler
+description: Konsistensregler
 seo-description: null
 page-status-flag: never-activated
 uuid: 9b497460-ba42-4bc7-98e0-55c1b4be5e44
@@ -11,22 +11,22 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 9bcb5dc1-8cb4-4781-a8cd-8d072ff28b1a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 3%
 
 ---
 
 
-# Konsekvensregler{#consistency-rules}
+# Konsistensregler{#consistency-rules}
 
 ## Enhetlighetsregler {#about-consistency-rules}
 
 Adobe Campaign garanterar enhetlig kommunikation tack vare en uppsättning regler som finns i kampanjtypologier. Syftet är att kontrollera de leveranser som skickas till mottagarna, t.ex. volym, art, relevans osv.
 
-**Kapacitetsregler** kan t.ex. undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppringningscentralernas bearbetningskapacitet osv. Mer information finns i [Kontrollera kapacitet](#controlling-capacity).
+**Kapacitetsregler** kan t.ex. undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppringningscentralernas bearbetningskapacitet osv. For more on this, refer to [Controlling capacity](#controlling-capacity).
 
 ## Kontrollera kapacitet {#controlling-capacity}
 
@@ -34,7 +34,7 @@ Innan du levererar meddelanden måste du se till att din organisation har kapaci
 
 För att göra detta måste du skapa **[!UICONTROL Capacity]** typologiregler.
 
-I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten hos ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
+I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten för ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
 
 Så här utformar du en ny kapacitetsregel:
 
@@ -51,14 +51,14 @@ Så här utformar du en ny kapacitetsregel:
    >
    >Tillgänglighetsraderna är endast avsedda som information. Om du behöver exkludera meddelanden när kapacitetsgränsen nås, se [det här avsnittet](#exclude-messages-when-capacity-limit-reached).
 
-1. Koppla den här regeln till en typologi och referera sedan till typologin i leveransen för att tillämpa den här kapacitetsregeln. Mer information finns i [det här avsnittet](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Koppla den här regeln till en typologi och referera sedan till typologin i leveransen för att tillämpa den här kapacitetsregeln. Mer information om detta finns i [det här avsnittet](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
 1. Du kan övervaka förbrukningen från regeln **[!UICONTROL Consumptions]** och **[!UICONTROL Capacity]** flikarna.
 
    När en regel används i en leverans innehåller kolumnerna **[!UICONTROL Consumed]** och **[!UICONTROL Remaining]** information om inläsningen, vilket visas nedan:
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
-   Mer information finns i [det här avsnittet](#monitoring-consumption).
+   Mer information om detta finns i [det här avsnittet](#monitoring-consumption).
 
 ## Definiera maximal belastning {#defining-the-maximum-load}
 
