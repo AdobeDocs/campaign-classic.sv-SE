@@ -1,6 +1,6 @@
 ---
 title: Lägga till bilagor i transaktionsmeddelanden med Adobe Campaign Classic
-description: Lär dig hur du skickar transaktionsmeddelanden med personliga och/eller personliga bilagor med Adobe Campaign Classic
+description: Lär dig hur du skickar transaktionsmejl med personliga och/eller personliga bilagor med Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 4452d839-318a-49d8-8abb-4ba04c803e9f
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -47,20 +44,20 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
 
 ## Rekommendationer {#important-notes}
 
 Läs riktlinjerna nedan innan du implementerar detta scenario:
 
 * Transactional Messaging-instanserna ska inte användas för att lagra, exportera eller överföra filer eller data. De kan bara användas för händelsedata och relaterad information. De bör inte betraktas som ett fillagringssystem.
-* Eftersom det inte finns någon direkt åtkomst till Transactional Messaging-instanser eller -servrar utanför Adobe finns det inget standardsätt att skicka sådana filer till dessa servrar (ingen FTP-åtkomst).
+* Eftersom det inte finns någon direkt åtkomst till Transactional Messaging-instanserna eller -servrarna utanför Adobe, finns det inget standardsätt att skicka sådana filer till dessa servrar (ingen FTP-åtkomst).
 * Det är inte korrekt enligt avtalet att använda diskutrymmet på Transactional Messaging-instanserna för att lagra filer av någon typ, inte ens för bilagor.
 * Du måste använda ett annat onlinesystem för att ha dessa filer. Du behöver FTP-åtkomst till det här systemet och du måste kunna skriva och ta bort filer.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
 
 ## Implementering {#implementation}
 
