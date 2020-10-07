@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Det handlar om att starta om processerna med en högre loggnivå.
 >
 >Den här proceduren avbryter pågående tjänster i den här modulen.
 
-Adobe Campaign fungerar med två loggnivåer:
+Adobe Campaign kan arbeta med två loggnivåer:
 
 1. Läget **Detaljerad** är den första nivån efter standardnivån. Följande kommando aktiverar det:
 
