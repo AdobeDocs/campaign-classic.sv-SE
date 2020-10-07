@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: d71e5ff7-1e81-4c49-9673-c6fae890029b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3737'
 ht-degree: 0%
@@ -27,13 +24,13 @@ ht-degree: 0%
 
 ## Om uppgifter {#about-tasks}
 
-Med Adobe Campaign kan ni skapa uppgifter och hantera hela deras livscykel direkt i programmet. Program- och kampanjimplementering kan delas upp i uppgifter som tilldelas Adobe Campaign-operatörer eller externa tjänsteleverantörer. Med det här åtgärdsläget kan du skapa en öppen samarbetsmiljö som innehåller alla programdeltagare och externa deltagare.
+Med Adobe Campaign kan du skapa uppgifter och hantera hela deras livscykel direkt i programmet. Program- och kampanjimplementering kan delas upp i uppgifter som tilldelas Adobe Campaign-operatörer eller externa tjänsteleverantörer. Med det här åtgärdsläget kan du skapa en öppen samarbetsmiljö som innehåller alla programdeltagare och externa deltagare.
 
 Uppgifter kan skapas, visas och övervakas från listan med uppgifter eller kontrollpanelen för kampanjer. De kan också ses och spåras i tidsplanerna för marknadsföringsplanen, programmen och kampanjerna.
 
 Aktiviteter är kopplade till kampanjen och kan ha beroenden, dvs. associerade uppgifter. Varje uppgift har en status, prioritet, uppskattad belastning och relaterade kostnader.
 
-Alla uppgifter grupperas i en lista som är tillgänglig via **Campaigns** universum. Mer information finns i [Åtkomst av uppgifter](#accessing-tasks).
+Alla uppgifter grupperas i en lista som är tillgänglig via **Campaigns** universum. For more on this, refer to [Accessing tasks](#accessing-tasks).
 
 De kan visas i schemat för det program de tillhör.
 
@@ -63,7 +60,7 @@ Klicka på en uppgift för att redigera den.
 
 ![](assets/s_ncs_user_task_edit_from_view.png)
 
-## Skapa en ny uppgift {#creating-a-new-task}
+## Creating a new task {#creating-a-new-task}
 
 Om du vill skapa en uppgift klickar du på **[!UICONTROL Tasks]** länken i Campaigns-universum och väljer **[!UICONTROL Create]**.
 
@@ -97,7 +94,7 @@ Aktivitetens livscykel anges i [Livscykel](#life-cycle).
 
 Det är bara operatorn som ansvarar för en uppgift som har behörighet att stänga den.
 
-Som standard tilldelas en uppgift automatiskt när en Adobe Campaign-operator skapar en uppgift. Om du vill välja en annan operator använder du **[!UICONTROL Assigned to]** fältet.
+När en Adobe Campaign-operator skapar en uppgift tilldelas den som standard automatiskt. Om du vill välja en annan operator använder du **[!UICONTROL Assigned to]** fältet.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -119,7 +116,7 @@ För varje operator kan du ange en schemalagd arbetsbelastning och en faktisk ar
 
 Det går att konfigurera en påminnelse som automatiskt skickas till alla operatorer som arbetar med aktiviteten före slutdatumet.
 
-Du kan visa operatörsprofilen för Adobe Campaign via **[!UICONTROL Edit link]** ikonen .
+Du kan visa operatorprofilen för Adobe Campaign via **[!UICONTROL Edit link]** -ikonen.
 
 ![](assets/s_ncs_user_task_edit_resource_profile.png)
 
@@ -227,7 +224,7 @@ Gå till **[!UICONTROL Resources]** rutan och lägg till operatorn i **[!UICONTR
 
 ### Inledande meddelanden {#initial-notifications}
 
-När du skapar eller ändrar en uppgift med ett startdatum i framtiden erbjuder Adobe Campaign att skicka ett e-postmeddelande till den person som ansvarar för uppgiften för att meddela när den börjar.
+När du skapar eller ändrar en uppgift med ett startdatum i framtiden erbjuder Adobe Campaign att skicka ett e-postmeddelande till den person som ansvarar för uppgiften så att de får veta när den börjar.
 
 ![](assets/mrm_task_first_notif.png)
 
@@ -240,7 +237,7 @@ Om du vill schemalägga ett meddelande går du till **[!UICONTROL Resources]** r
 * För uppgifter inom kampanjer väljer du ett specifikt datum och en viss tid.
 * För uppgifter i kampanjmallar uttrycks meddelandetiden som återstående tid innan aktiviteten startar (om du t.ex. anger 2d i **[!UICONTROL Initial notification]** fältet skickas e-postmeddelandet 2 dagar före aktivitetens startdatum).
 
-Om du har schemalagt ett meddelande när du sparar uppgiften, kommer Adobe Campaign att skicka ett meddelande direkt. Du kan bestämma dig för att skicka det och detta ersätter inte det schemalagda meddelandet.
+Om du har schemalagt ett meddelande kommer Adobe Campaign att skicka ett meddelande direkt när du sparar uppgiften. Du kan bestämma dig för att skicka det och detta ersätter inte det schemalagda meddelandet.
 
 ### Aktivitet länkad till ett program {#task-linked-to-a-program}
 
@@ -416,7 +413,7 @@ Beroendet mellan aktiviteter representeras av pilar på kontrollpanelen för kam
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-För grupperade uppgifter tilldelas slutdatumet för den överordnade uppgiften automatiskt som startdatum i Adobe Campaign. Om aktiviteten **Skapa inbjudan** till exempel upphör 15 oktober klockan 17:30 kommer den underordnade aktiviteten **Skicka inbjudan via e-post** att börja 15 oktober klockan 17:30.
+När det gäller grupperade uppgifter tilldelar Adobe Campaign automatiskt slutdatumet för den överordnade uppgiften till den underordnade aktiviteten som startdatum. Om aktiviteten **Skapa inbjudan** till exempel upphör 15 oktober klockan 17:30 kommer den underordnade aktiviteten **Skicka inbjudan via e-post** att börja 15 oktober klockan 17:30.
 
 Om du skjuter upp slutet på en överordnad uppgift kan vissa av dess underordnade uppgifter påverkas: Detta är de underordnade uppgifter vars status är **[!UICONTROL Scheduled]** och vars startdatum är tidigare än det nya slutdatumet för den överordnade uppgiften. Aktivitetens längd ändras inte. Om startdatumet för en underordnad uppgift är senare än det nya slutdatumet för den överordnade aktiviteten påverkas inte den underordnade aktiviteten.
 
@@ -438,12 +435,13 @@ En uppgift kan vara: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 * När aktiviteten har startats blir den **[!UICONTROL In progress]**. När den person som ansvarar för uppgiften stänger den ändras den till **[!UICONTROL Finished]**.
 * Om en granskare har definierats blir uppgiften **[!UICONTROL Pending approval]** så snart den som ansvarar för den har stängt den och tills granskaren har godkänt den. Om granskaren avvisar den blir uppgiften **[!UICONTROL Rejected]**.
 * En uppgift kan avbrytas av den person som är ansvarig för den via kontrollpanelen eller **[!UICONTROL Task map]** genom att klicka på **[!UICONTROL Cancel]** knappen.
-* Om du vill schemalägga en aktivitet anger du ett startdatum i framtiden. Du kan sedan skicka ett första meddelande till de Adobe Campaign-operatörer som deltar i utförandet av uppgiften. Se [Fullständig livscykel](#complete-task-life-cycle)för uppgifter.
+* Om du vill schemalägga en aktivitet anger du ett startdatum i framtiden. Du kan sedan skicka ett första meddelande till de Adobe Campaign-operatorer som utför uppgiften. Se [Fullständig livscykel](#complete-task-life-cycle)för uppgifter.
 
 >[!NOTE]
 >
 >* Aktivitetens status uppdateras automatiskt.
 >* Även om giltighetsperioden är slut visas uppgifter som inte stängts fortfarande i listan över pågående uppgifter. En varning meddelar operatorer om att aktiviteten är sen.
+
 >
 
 
@@ -454,7 +452,7 @@ Förutom körningsstatus kan en uppgift associeras med en förloppsstatus: **[!U
 
 Du kan filtrera listan över uppgifter efter process- eller förloppsstatus.
 
-Mer information finns i [Åtkomst av uppgifter](#accessing-tasks).
+For more on this, refer to [Accessing tasks](#accessing-tasks).
 
 ### Slutför aktivitetens livscykel {#complete-task-life-cycle}
 
