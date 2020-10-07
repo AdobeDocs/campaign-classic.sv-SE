@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -121,7 +118,7 @@ Följande kanaler kan konfigureras:
 
 ## Externt FTP-konto {#ftp-external-account}
 
-Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Mer information om detta hittar du på den här [sidan](../../workflow/using/file-transfer.md).
+Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
 
 Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska användas för att upprätta anslutningen till FTP-servern i det här externa kontot
 
@@ -197,7 +194,7 @@ Om du vill konfigurera det här externa kontot så att det fungerar med Adobe Ca
 
 ### Externt Teradata-konto {#teradata-external-account}
 
-Med det **externa Teradata** -kontot kan du ansluta Campaign-instansen till din externa Teradata-databas. Mer information om hur du konfigurerar Campaign Classic med Teradata finns på den här [sidan](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) eller i det här [avsnittet](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
+Med det **externa Teradata** -kontot kan du ansluta Campaign-instansen till din externa Teradata-databas. Mer information om hur du konfigurerar Campaign Classic med Teradata finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/campaign_fda_teradata.html) eller i det här [avsnittet](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
 
 ![](assets/ext_account_19.png)
 
@@ -251,7 +248,7 @@ Med det **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** extern
 
 ![](assets/ext_account_10.png)
 
-För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Mer information om detta hittar du på den här [sidan](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
+För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Se denna [sida](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign) för mer information om detta.
 
 ## Externt konto för Facebook-anslutning {#facebook-connect-external-account}
 
@@ -343,7 +340,7 @@ For more information on this configuration, refer to this [page](../../integrati
 
 ## Externt SFTP-konto {#sftp-external-account}
 
-Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Mer information om detta hittar du på den här [sidan](../../workflow/using/file-transfer.md).
+Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
 
 ![](assets/ext_account_4.png)
 
@@ -385,7 +382,7 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. Mer information om detta hittar du på den här [sidan](../../workflow/using/file-transfer.md).
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
 
 ![](assets/ext_account_3.png)
 
@@ -458,7 +455,7 @@ Med **[!UICONTROL On-premise]** - och **[!UICONTROL Office 365]** distributionst
 
 * **[!UICONTROL Account]**
 
-   Det konto som används för att logga in på Microsoft CRM.
+   Konto som används för att logga in i Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
@@ -487,7 +484,7 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Password credent
 
 * **[!UICONTROL Account]**
 
-   Det konto som används för att logga in på Microsoft CRM.
+   Konto som används för att logga in i Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
