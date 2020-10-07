@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 12%
 
 ## Om karantäner {#about-quarantines}
 
-Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål. En e-postadress kan sättas i karantän, till exempel när postlådan är full eller om adressen inte finns. Under alla omständigheter uppfyller karantänförfarandet de särskilda regler som beskrivs nedan.
+Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål. En e-postadress kan sättas i karantän när till exempel postlådan är full eller om adressen inte finns. Under alla omständigheter uppfyller karantänförfarandet de särskilda regler som beskrivs nedan.
 
 >[!NOTE]
 >
@@ -253,7 +250,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
   <tr> 
    <td> Avvisning av APNS-meddelande: alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Felavvisandeorsaken kommer att finnas i felmeddelandet<br /> </td> 
+   <td> Felavvisande orsak kommer att finnas i felmeddelandet<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
@@ -439,13 +436,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alla felmeddelanden börjar med **SR** för att skilja mellan SMS-felkoder och e-postfelkoder.
-* Den andra delen (**Allmänt** i det här exemplet) av felmeddelandet hänvisar till namnet på SMSC-implementeringen, t.ex. definierad i **[!UICONTROL SMSC implementation name]** fältet för det externa SMS-kontot. Se [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Den andra delen (**Allmänt** i det här exemplet) av felmeddelandet hänvisar till namnet på SMSC-implementeringen, t.ex. definierad i **[!UICONTROL SMSC implementation name]** fältet för det externa SMS-kontot. Läs [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Eftersom samma felkod kan ha olika innebörd för varje provider kan du med det här fältet veta vilken provider som genererade felkoden. Du kan sedan hitta felet i den aktuella providerns dokumentation.
 
 * Den tredje delen (**DELIVRD** i det här exemplet) av felmeddelandet motsvarar statuskoden som hämtats från SR med statusextraheringsregex som definierats i det externa SMS-kontot.
 
-   Det här området anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Se [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Det här området anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -453,7 +450,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Den fjärde delen (**000** i det här exemplet) av felmeddelandet motsvarar den felkod som extraheras från SR med den felkodsextraheringsregex som definieras i det externa SMS-kontot.
 
-   Det här området anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Se [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Det här området anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Regex extraherar som standard **felet:** enligt definitionen i **tillägg B** i **SMPP 3.4-specifikationen**.
 
