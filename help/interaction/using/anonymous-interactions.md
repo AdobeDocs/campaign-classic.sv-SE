@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 3fd7a1ef-b0e2-4a7e-9e36-044d997db785
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 1%
 
 ---
 
 
 # Anonyma interaktioner{#anonymous-interactions}
 
-I den här [videon](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) får du en översikt över hur erbjudanden levereras till identifierade och anonyma mål.
+I den här [videon](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) får du en översikt över hur erbjudanden levereras till identifierade och anonyma mål.
 
 ## Målgruppsanpassning och lagring av en miljö för anonym interaktion {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
