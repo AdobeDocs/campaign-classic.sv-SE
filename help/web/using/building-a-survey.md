@@ -11,20 +11,20 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 
 # Bygga en undersökning{#building-a-survey}
 
-## Skapa en ny undersökning {#creating-a-new-survey}
+## Creating a new survey {#creating-a-new-survey}
 
-I det här kapitlet beskrivs utformningen av ett formulär av typen **Undersökning** med Adobe Campaign, samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan ni göra den här undersökningen tillgänglig för användarna och samla in och arkivera svar i databasen.
+I det här kapitlet beskrivs hur du utformar ett **undersökningsformulär** med Adobe Campaign, samt vilka alternativ och konfigurationer som är tillgängliga. Med Adobe Campaign kan du göra enkäten tillgänglig för användare och samla in och arkivera svar i databasen.
 
 Webbformulär öppnas via trädnoden **[!UICONTROL Resources > Online > Web applications]** . Om du vill skapa en undersökning klickar du på **[!UICONTROL New]** knappen ovanför listan med program eller högerklickar på listan och väljer **[!UICONTROL New]**.
 
@@ -96,7 +96,7 @@ Dessutom måste lagringsplatsen för det här inmatningsfältet vara ett **[!UIC
 >[!CAUTION]
 >
 >* Den här funktionen är bara tillgänglig för formulär av typen **Undersökning** .
->* Det här alternativet är inte kompatibelt med slumpmässig frågevisning. Mer information finns i [Lägga till frågor](#adding-questions).
+>* Det här alternativet är inte kompatibelt med slumpmässig frågevisning. For more on this, refer to [Adding questions](#adding-questions).
 
 
 ### Lägga till frågor {#adding-questions}
@@ -117,7 +117,7 @@ Frågeetiketten anges i etikettfältet. I det här fallet används formatet frå
 >
 >Mer information om hur du använder HTML-redigeraren finns i [det här avsnittet](../../web/using/about-web-forms.md) .
 
-Till exempel:
+Exempel:
 
 ![](assets/s_ncs_admin_survey_containers_qu_arbo.png)
 
@@ -129,7 +129,7 @@ I exemplet ovan återges på följande sätt:
 >
 >Varje fråga har en behållare av typen **Fråga** .
 
-Du kan göra det möjligt för Adobe Campaign att slumpmässigt rita frågor. Det går sedan att ange hur många frågor som ska visas på sidan i fältet längst ned i konfigurationsfönstret.
+Du kan aktivera slumpmässig anpassning av frågor via Adobe Campaign. Det går sedan att ange hur många frågor som ska visas på sidan i fältet längst ned i konfigurationsfönstret.
 
 ![](assets/s_ncs_admin_survey_containers_qu_display.png)
 
