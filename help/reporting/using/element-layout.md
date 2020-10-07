@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 8fdda764-3e42-4972-a9c9-63567588931e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
@@ -68,4 +68,4 @@ Infoga sedan dessa identifierare i HTML-innehållet i rapporten:
 
 De ersätts automatiskt med rätt innehåll när rapporten visas.
 
-Precis som för HTML-texter kan du med det här operativsystemet centralisera texterna som används i rapporten och hantera översättningen av dem. Texten som skapas på den här fliken samlas automatiskt in av det integrerade översättningsverktyget Adobe Campaign.
+Precis som för HTML-texter kan du med det här operativsystemet centralisera texterna som används i rapporten och hantera översättningen av dem. Texten som skapas på den här fliken samlas automatiskt in med det inbyggda Adobe Campaign-översättningsverktyget.
