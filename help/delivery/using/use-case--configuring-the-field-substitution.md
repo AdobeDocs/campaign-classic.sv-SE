@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
@@ -90,7 +90,7 @@ För att den här ändringen av dataschemat ska kunna visas i **indataformuläre
 
    Slumpmässig ersättning av fält utförs **vid leveranstillfället**.
 
-1. Klicka på **[!UICONTROL Send]** knappen.
+1. Klicka på knappen **[!UICONTROL Send]**.
 1. Analysera leveransen och **bekräfta leveransen**.
 
    dirigerade adresser får leveransen i sin inkorg.
