@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f3ff8c8e-22b0-4d61-9f26-11f5ca3bc0be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ Om fel uppstår bör du kontrollera att följande element är korrekt konfigurer
 
 * **Externa konton**
 
-   I **[!UICONTROL Administration > Platform > External accounts]** kontrollerar du att följande externa SFTP-konton är korrekt konfigurerade. Din konsult borde ha konfigurerat SFTP-servrarna i Adobe Experience Cloud.
+   Kontrollera **[!UICONTROL Administration > Platform > External accounts]** i att följande externa SFTP-konton är korrekt konfigurerade. Dessa SFTP-servrar bör ha konfigurerats i Adobe Experience Cloud av din konsult.
 
    * **[!UICONTROL importSharedAudience]** : SFTP-konto för att importera målgrupper.
    * **[!UICONTROL exportSharedAudience]** : SFTP-konto för export av målgrupper.
