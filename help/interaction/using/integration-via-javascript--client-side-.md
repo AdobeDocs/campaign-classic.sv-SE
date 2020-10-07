@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Om du vill anropa interaktionsmotorn på en webbsida infogar du ett anrop till en JavaScript-kod direkt på sidan. Det här anropet returnerar erbjudandeinnehållet i en riktad
 
-    -element.
+-element.
 
 Adobe rekommenderar att du använder JavaScript-integreringsmetoden.
 
@@ -36,7 +36,7 @@ Skriptet som anropar URL ser ut så här:
 
 Parametern &quot;**env**&quot; får det interna namnet på den aktiva miljön som är dedikerad till anonyma interaktioner.
 
-För att kunna presentera ett erbjudande måste vi skapa en miljö och ett erbjudandeutrymme i Adobe Campaign och sedan konfigurera HTML-sidan.
+För att kunna presentera ett erbjudande måste vi skapa en miljö och ett erbjudande i Adobe Campaign och sedan konfigurera HTML-sidan.
 
 I följande exempel beskrivs de möjliga alternativen för att integrera erbjudanden via JavaScript.
 
@@ -46,7 +46,7 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
 
 1. **Förbereda interaktionsmotorn**
 
-   Öppna Adobe Campaign-gränssnittet och förbered en anonym miljö.
+   Öppna Adobe Campaign gränssnitt och förbered en anonym miljö.
 
    Skapa ett erbjudandeutrymme som är länkat till den anonyma miljön.
 
@@ -106,7 +106,7 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
 
 ### Presentera ett identifierat erbjudande {#presenting-an-identified-offer}
 
-Processen liknar den som beskrivs här för att erbjuda en identifierad kontakt: Anonymt [erbjudande](#presenting-an-anonymous-offer). I webbsidans innehåll måste du lägga till följande skript som identifierar kontakten under anropet till motorn:
+Processen liknar den som beskrivs här för att erbjuda en identifierad kontakt: [Anonymt erbjudande](#presenting-an-anonymous-offer). I webbsidans innehåll måste du lägga till följande skript som identifierar kontakten under anropet till motorn:
 
 ```
 <script type="text/javascript">
@@ -120,7 +120,7 @@ Processen liknar den som beskrivs här för att erbjuda en identifierad kontakt:
 
    I det här exemplet är identifieringsnyckeln sammansatt eftersom den baseras både på e-postadressen och mottagarens namn.
 
-1. När webbsidan visas kan du med skriptutvärderingen skicka ID:t till erbjudandemotorn. Om ID:t är sammansatt visas tangenterna i samma sekvens som de används i de avancerade inställningarna och avgränsas med en|.
+1. När webbsidan visas kan du med skriptutvärderingen skicka ID:t till erbjudandemotorn. Om ID:t är sammansatt visas tangenterna i samma sekvens som de används i de avancerade inställningarna och avgränsas med en |.
 
    I följande exempel har kontakten loggat in på webbplatsen och identifierades under samtalet till interaktionsmotorn tack vare deras e-postadress och namn.
 
@@ -218,7 +218,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
    >
    >Varje element måste definieras två gånger. CDATA-tytelement (&quot;_jst&quot;) kan innehålla anpassningsfält.
    >
-   >Glöm inte att uppdatera databasstrukturen. Mer information finns i [det här avsnittet](../../configuration/using/updating-the-database-structure.md).
+   >Glöm inte att uppdatera databasstrukturen. Mer information om detta finns i [det här avsnittet](../../configuration/using/updating-the-database-structure.md).
 
    >[!NOTE]
    >
