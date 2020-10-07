@@ -1,7 +1,7 @@
 ---
-title: Arbetsflöde för flerkanalsleverans
-seo-title: Arbetsflöde för flerkanalsleverans
-description: Arbetsflöde för flerkanalsleverans
+title: Arbetsflöde för leveranser över flera kanaler
+seo-title: Arbetsflöde för leveranser över flera kanaler
+description: Arbetsflöde för leveranser över flera kanaler
 seo-description: null
 page-status-flag: never-activated
 uuid: 02d51b13-656f-48f3-b744-5968ffa94b3e
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 2fe907da-ef37-46e2-a8fb-6ad4e18be486
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 4%
 
 ---
 
 
-# Arbetsflöde för flerkanalsleverans{#cross-channel-delivery-workflow}
+# Arbetsflöde för leveranser över flera kanaler{#cross-channel-delivery-workflow}
 
 I det här användningsexemplet visas ett exempel med ett arbetsflöde för flerkanalsleverans. Det allmänna begreppet om leveranser över flera kanaler presenteras i [detta avsnitt](../../workflow/using/cross-channel-deliveries.md).
 
@@ -42,8 +42,8 @@ De huvudsakliga implementeringsstegen för det här fallet är följande:
 
 Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
-1. Skapa en kampanj. Mer information finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
+1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen. For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. Definiera de mottagare som ska ta emot leveranserna. Välj till exempel Guldmedlemmar som måldimension.
 1. Lägg till filtervillkor i frågan. I det här exemplet väljer du mottagare som har en e-postadress och ett mobilnummer.
 
@@ -76,7 +76,7 @@ Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
 När målet har identifierats och första leveransen har skapats måste du segmentera målet i olika populationer med filtervillkoren.
 
-1. Lägg till en **delad** aktivitet i arbetsflödet och öppna den. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/split.md).
+1. Lägg till en **delad** aktivitet i arbetsflödet och öppna den. For more on using this activity, refer to [this section](../../workflow/using/split.md).
 1. Skapa tre segment från populationen som beräknas uppströms i frågan.
 
    ![](assets/wkf_cross-channel_6.png)
@@ -89,7 +89,7 @@ När målet har identifierats och första leveransen har skapats måste du segme
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. I filterinställningarna väljer du **[!UICONTROL Recipients who have not opened or clicked (email)]** i **[!UICONTROL Behavior]** listrutan och väljer e-postmeddelandet med erbjudandet som du vill skicka från leveranslistan. Klicka **[!UICONTROL Finish]**.
+1. I filterinställningarna väljer du **[!UICONTROL Recipients who have not opened or clicked (email)]** i **[!UICONTROL Behavior]** listrutan och väljer e-postmeddelandet med erbjudandet som du vill skicka från leveranslistan. Klicka på **[!UICONTROL Finish]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -106,7 +106,7 @@ När målet har identifierats och första leveransen har skapats måste du segme
 
    ![](assets/wkf_cross-channel_13.png)
 
-1. Klicka **[!UICONTROL Finish]** för att spara ändringarna.
+1. Click **[!UICONTROL Finish]** to save your changes.
 
 ## Steg 4: Slutför arbetsflödet {#step-4--finalizing-the-workflow}
 
