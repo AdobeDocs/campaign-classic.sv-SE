@@ -11,21 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Skapa en lokal kampanj{#creating-a-local-campaign}
 
-En lokal kampanj är en instans som skapas från en mall som refereras i listan med **[!UICONTROL campaign packages]** med ett **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten. De viktigaste stegen för att genomföra en lokal åtgärd är följande:
+En lokal kampanj är en instans som skapats från en mall som refereras i listan med **[!UICONTROL campaign packages]** med ett **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten. De viktigaste stegen för att genomföra en lokal åtgärd är följande:
 
 **För den centrala enheten**
 
@@ -39,7 +36,7 @@ En lokal kampanj är en instans som skapas från en mall som refereras i listan 
 1. Beställa kampanjen.
 1. Kör kampanjer.
 
-## Skapa en lokal kampanjmall {#creating-a-local-campaign-template}
+## Creating a local campaign template {#creating-a-local-campaign-template}
 
 Om du vill skapa ett kampanjpaket måste du först skapa **kampanjmallen** via **[!UICONTROL Resources > Templates]** noden.
 
@@ -174,7 +171,7 @@ För att kampanjmallen ska bli tillgänglig för lokala enheter måste den lägg
 Använd följande steg:
 
 1. Klicka på **[!UICONTROL Navigation]** länken i avsnittet **på sidan** Kampanjer **[!UICONTROL Campaign packages]** .
-1. Klicka på **[!UICONTROL Create]** knappen.
+1. Klicka på knappen **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -226,7 +223,7 @@ På **[!UICONTROL General]** fliken kan den centrala enheten:
 
 ### Meddelanden {#notifications}
 
-När en kampanj blir tillgänglig eller när tidsgränsen för registrering nås, skickas ett meddelande till operatörerna i den lokala meddelandegruppen. Mer information finns i [Organisationsenheter](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+När en kampanj blir tillgänglig eller när tidsgränsen för registrering nås, skickas ett meddelande till operatörerna i den lokala meddelandegruppen. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 ## Beställa en kampanj {#ordering-a-campaign}
 
@@ -276,9 +273,9 @@ Så här beställer du en kampanj:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Mer information finns i avsnittet [Godkännandeprocess](#approval-process) .
+   For more on this, refer to the [Approval process](#approval-process) section.
 
-1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgänglighet finns i listan över kampanjpaket i **Campaigns** universum. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](../../campaign/using/accessing-campaigns.md).
+1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgänglighet finns i listan över kampanjpaket i **Campaigns** universum. Kampanjen kan sedan användas. For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
    Med **[!UICONTROL Start targeting with order approval]** alternativet kan den lokala enheten köra kampanjen så snart ordern har godkänts.
 
@@ -308,7 +305,7 @@ När en kampanj beställs av en lokal enhet meddelas dess granskare via e-post, 
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Godkännande via Adobe Campaign-konsolen {#approving-via-the-adobe-campaign-console}
+#### Godkännande via Adobe Campaign Console {#approving-via-the-adobe-campaign-console}
 
 Beställningen kan också godkännas via konsolen i kampanjorderöversikten. Om du vill godkänna en beställning markerar du den och klickar på **[!UICONTROL Approve the order]**.
 
@@ -324,7 +321,7 @@ När en kampanjorder har godkänts kan den konfigureras och köras av den lokala
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-Mer information finns i [Åtkomst till kampanjer](../../campaign/using/accessing-campaigns.md).
+For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
 ### Avslå ett godkännande {#rejecting-an-approval}
 
@@ -334,7 +331,7 @@ Operatören som ansvarar för godkännandet kan avvisa en order eller ett kampan
 
 Om granskaren avvisar en order skickas den relevanta underrättelsen automatiskt till de berörda lokala enheterna: den visar kommentaren som angetts av den operator som avvisade godkännandet.
 
-Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har tillgång till Adobe Campaign-konsolen informeras lokala enheter om detta avvisande.
+Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. Om de har åtkomst till Adobe Campaign-konsolen informeras lokala enheter om detta refusering.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
