@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -35,7 +32,7 @@ Om du vill konfigurera den här aktiviteten anger du dess etikett och väljer hu
 >
 >Mer information om hur du konfigurerar och använder exkluderingsaktiviteten finns i [Utesluta en population (Uteslutning)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
 
-Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet kommer att innehålla den huvudsakliga inkommande populationen minus den utgående populationen. En ytterligare övergång till utdata läggs sedan till i aktiviteten enligt följande:
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Komplementet kommer att innehålla den huvudsakliga inkommande populationen minus den utgående populationen. En ytterligare övergång till utdata läggs sedan till i aktiviteten enligt följande:
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
