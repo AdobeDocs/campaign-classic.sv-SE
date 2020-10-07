@@ -11,30 +11,30 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: d5b08e4e-060c-4185-9dac-af270918e2b9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 7%
 
 ---
 
 
 # Om schemautgåva{#about-schema-edition}
 
-I Adobe Campaign används datascheman för att
+Adobe Campaign använder datascheman för att
 
-* Definiera hur dataobjekt i programmet kopplas till underliggande databastabeller.
-* Definiera länkar mellan olika dataobjekt i Campaign-programmet.
-* Definiera och beskriv de enskilda fälten som ingår i varje objekt.
+* Definiera hur dataobjekt i programmet länkas till underliggande databastabeller.
+* Definiera länkar mellan olika dataobjekt i programmet Campaign.
+* Definiera och beskriva de enskilda fälten som ingår i varje objekt.
 
-Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa datamodellen [för](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)Campaign Classic.
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i datamodellen [för](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html)Campaign Classic.
 
 ## Utöka eller skapa scheman {#extending-or-creating-schemas}
 
-Om du vill lägga till ett fält eller index eller något annat element i ett av de centrala datamappningarna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat. Mer information finns i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md) .
+Om du vill lägga till ett fält eller index eller något annat element i ett av de centrala datamappningarna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat. For more on this, refer to the [Extending a schema](../../configuration/using/extending-a-schema.md) section.
 
-Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i avsnittet [Datascheman](../../configuration/using/data-schemas.md) .
+Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -120,7 +120,7 @@ Mer information om nycklar finns i avsnittet [Nyckelhantering](../../configurati
 
 ## Attribut (fält) {#attributes--fields-}
 
-Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda knappen **[!UICONTROL Insert]** i verktygsfältet för schemaversionen för att släppa tomma attributmallar i XML-filen där markören finns. Mer information finns i avsnittet [Datascheman](../../configuration/using/data-schemas.md) .
+Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda knappen **[!UICONTROL Insert]** i verktygsfältet för schemaversionen för att släppa tomma attributmallar i XML-filen där markören finns. For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_2.png)
 
@@ -141,7 +141,7 @@ Den fullständiga listan med attribut finns i [`<attribute>` elementavsnittet](.
 * **@xml**
 * **@type**
 
-   Om du vill visa en tabell över mappningarna för de datatyper som genereras av Adobe Campaign för de olika databashanteringssystemen, se [Mappa typerna av Adobe Campaign/DBMS-data](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
+   Om du vill visa en tabell med mappningar för datatyperna som genereras av Adobe Campaign för de olika databashanteringssystemen läser du avsnittet [Mappa datatyper för Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
 
 Mer information om de olika attributen finns i avsnittet [Attributbeskrivning](../../configuration/using/elements-and-attributes.md#attribute-description) .
 
@@ -209,7 +209,7 @@ Exempel på en extern koppling mellan mottagartabellen och en adresstabell som b
 
 Här motsvarar &quot;xpath-dst&quot; primärnyckeln i målschemat och &quot;xpath-src&quot; den externa nyckeln i källschemat.
 
-## Granskningsspår {#audit-trail}
+## Verifieringskedja {#audit-trail}
 
 Ett användbart element som du kanske vill ta med längst ned i schemat är ett spårningselement (granskningsspår).
 
@@ -219,15 +219,15 @@ Använd exemplet nedan för att inkludera fält som relaterar till datumet då d
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
 ```
 
-## Uppdaterar databasstrukturen {#updating-the-database-structure}
+## Uppdatera databasstrukturen {#updating-the-database-structure}
 
 När ändringarna är klara och sparade måste alla ändringar som kan påverka SQL-strukturen tillämpas på databasen. Använd guiden för databasuppdatering om du vill göra det.
 
 ![](assets/schemaextension_getting_started_3.png)
 
-Mer information finns i avsnittet [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md) .
+Mer information om detta hittar du i avsnittet [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md) .
 
 >[!NOTE]
 >
->Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]** . Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md) .
+>Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]** . For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
