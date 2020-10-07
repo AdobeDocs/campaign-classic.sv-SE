@@ -1,7 +1,7 @@
 ---
-title: Spåra ett webbprogram
-seo-title: Spåra ett webbprogram
-description: Spåra ett webbprogram
+title: Spåra en webbapplikation
+seo-title: Spåra en webbapplikation
+description: Spåra en webbapplikation
 seo-description: null
 page-status-flag: never-activated
 uuid: c087b40c-fd14-440f-8f38-33f5f68120a9
@@ -11,18 +11,18 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 3%
 
 ---
 
 
-# Spåra ett webbprogram{#tracking-a-web-application}
+# Spåra en webbapplikation{#tracking-a-web-application}
 
-Med Adobe Campaign kan ni spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE etc.).
+Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE, osv.).
 
 Därför kan du definiera flera navigeringsvägar och utvärdera hur de fungerar. Återskapade data är sedan tillgängliga i rapporter för respektive program.
 
@@ -42,6 +42,7 @@ De viktigaste förbättringarna i den här versionen är följande:
    * **Konverteringsgrad**: antal personer som visade alla steg i en navigeringssökväg.
    * **Studsfrekvens**: antal personer som endast visade det första steget
    * **Konverteringstunnel**: förlustnivå mellan varje steg.
+
    Dessutom visar ett **sektortypdiagram** populationen utifrån dess källa.
 
 ## Identifiera trafikkällan {#identifying-the-traffic-source}
@@ -53,7 +54,7 @@ Två olika lägen kan användas för att identifiera var besökaren kommer ifrå
 
    ![](assets/trackers_6.png)
 
-Adobe Campaign söker efter följande information för att identifiera trafikkällan i ett webbprogram:
+För att identifiera trafikkällan i ett webbprogram söker Adobe Campaign efter följande information i följd:
 
 1. källans leveransidentifierare, om den finns (nlId cookie),
 1. Identifieraren för den externa leveransen som definieras i webbprogrammets egenskaper, om sådan finns.
@@ -63,7 +64,7 @@ Adobe Campaign söker efter följande information för att identifiera trafikkä
 >
 >Kom ihåg att anonym spårning bara är möjligt om motsvarande alternativ har aktiverats i distributionsguiden.
 >
->Mer information finns i [installationshandboken](../../installation/using/deploying-an-instance.md).
+>For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
 
 ## Webbprogram utformade med DCE (Digital Content Editor) {#web-applications-designed-with-digital-content-editor--dce-}
 
