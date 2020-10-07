@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: ed4afa5e-c184-4c8e-a086-41d87b863190
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 Detta avsnitt är avsett för personer som ansvarar för att konfigurera svarshantering. Det förutsätter en viss kunskap om hur man utökar scheman, definierar arbetsflöden och SQL-programmering.
 
-På så sätt kan ni förstå hur ni anpassar standarddatamodellen till den specifika karaktären hos en transaktionstabell som ligger utanför Adobe Campaign med tabellen över individer. Den här tabellen med individer kan sammanfalla med tabellen med tillgängliga individer i Adobe Campaign eller med en annan tabell
+På så sätt kan du förstå hur du anpassar standarddatamodellen till den specifika karaktären hos en transaktionsregister som ligger utanför Adobe Campaign med tabellen över enskilda. Denna tabell över individer kan sammanfalla med tabellen över tillgängliga individer i Adobe Campaign eller med en annan tabell
 
 Måtthypotesen startas av arbetsflödet för operationsprocessen ( **[!UICONTROL operationMgt]** ). Varje hypotes representerar en separat process som körs asynkront med körningsstatus (Redigeras, Väntar, Slutförd, Misslyckades osv.) och styrs av en schemaläggare som hanterar prioritetsbegränsningar, begränsning av antalet samtidiga processer, sidan med låg aktivitet och automatisk exekvering med frekvens.
 
@@ -62,11 +62,11 @@ I följande schema visas kopplingar mellan de olika tabellerna när konfiguratio
 
 ### Svarshantering med Adobe Campaign-mottagare {#response-management-with-adobe-campaign-recipients}
 
-I det här exemplet kommer vi att integrera en tabell med inköp i vår svarshanteringsmodul med hjälp av mottagartabellen för Adobe Campaign ( **[!UICONTROL nms:recipient]** ).
+I det här exemplet integrerar vi en tabell med inköp i svarsmodulen med hjälp av mottagartabellen för Adobe Campaign ( **[!UICONTROL nms:recipient]** ).
 
 Svarsloggarna på en **[!UICONTROL nms:remaMatchRcp]** mottagare utökas för att lägga till en länk till inköpstabellschemat. I följande exempel kallas inköpstabellen **demo:purchase**.
 
-1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]** i Adobe Campaign Explorer.
+1. Via Adobe Campaign Explorer väljer du **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
 1. Högerklicka på **Mottagare** och välj **[!UICONTROL Actions]** och **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
@@ -107,11 +107,11 @@ name="remaMatchRcp" namespace="cus">
 
 ### Svarshantering med en anpassad mottagartabell {#response-management-with-a-personalized-recipient-table}
 
-I det här exemplet kommer vi att integrera en inköpstabell i svarsmodulen med hjälp av en annan tabell med personer än mottagartabellen i Adobe Campaign.
+I det här exemplet integrerar vi en inköpstabell i svarsmodulen med hjälp av en annan tabell med personer än mottagartabellen i Adobe Campaign.
 
 * Skapar ett nytt svarsloggsschema som härletts från **[!UICONTROL nms:remaMatch]** schemat.
 
-   Eftersom tabellen med enskilda användare skiljer sig från tabellen med mottagare av Adobe Campaign måste ett nytt schema med svarsloggarna skapas baserat på **[!UICONTROL nms:remaMatch]** schemat. Fyll sedan i den med länkar till leveransloggarna och inköpstabellen.
+   Eftersom tabellen med enskilda användare skiljer sig från tabellen med Adobe Campaign-mottagare måste ett nytt schema med svarsloggarna skapas baserat på **[!UICONTROL nms:remaMatch]** schemat. Fyll sedan i den med länkar till leveransloggarna och inköpstabellen.
 
    I följande exempel använder vi schemat **demo:broadLogPers** och **transaktionstabellen demo:purchase** :
 
@@ -136,7 +136,7 @@ I det här exemplet kommer vi att integrera en inköpstabell i svarsmodulen med 
 
    Som standard visas svarsloggarna i mottagarloggarna. Du måste därför ändra hypotesformuläret för att kunna visa de nya svarsloggarna som skapades under det föregående steget.
 
-   Till exempel:
+   Exempel:
 
    ```
     <container type="visibleGroup" visibleIf="[context/@remaMatchStorage]= 'demo:remaMatchPers'">
@@ -158,7 +158,7 @@ För att göra detta måste du utöka tabellen med hypoteser genom att infoga tv
 * den första för målpopulationen,
 * den andra för kontrollgruppen.
 
-Till exempel:
+Exempel:
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:remaHypothesis" label="Measurement hypothesis" 
