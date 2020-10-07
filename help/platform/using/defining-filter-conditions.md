@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: 8e575da0-c51a-4106-a826-3e1771e63649
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '3232'
+ht-degree: 37%
 
 ---
 
@@ -33,89 +33,89 @@ Nedan finns en lista över tillgängliga operatorer:
 <table> 
  <thead> 
   <tr> 
-   <th> Operator<br /> </th> 
+   <th> Operatör<br /> </th> 
    <th> Syfte<br /> </th> 
    <th> Exempel<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <span class="uicontrol">Lika med</span><br /> </td> 
+   <td> <span class="uicontrol">Equal to</span> <br /> </td> 
    <td> Returnerar ett resultat som är identiskt med de data som anges i den andra värdekolumnen.<br /> </td> 
    <td> <strong>Efternamnet (@lastName) är lika med 'Jones'</strong>, returnerar bara mottagare vars efternamn är Jones.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Större än</span><br /> </td> 
+   <td> <span class="uicontrol">Greater than</span> <br /> </td> 
    <td> Returnerar ett värde som är större än det angivna värdet.<br /> </td> 
    <td> <strong>Ålder (@age) större än 50</strong>, returnerar alla värden större än 50, dvs. 51, 52 osv.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Mindre än</span><br /> </td> 
+   <td> <span class="uicontrol">Less than</span> <br /> </td> 
    <td> Returnerar ett värde som är mindre än det angivna värdet.<br /> </td> 
    <td> <strong>Skapad (@created) före 'DaysAgo(100)'</strong>, returnerar alla mottagare som skapats för mindre än 100 dagar sedan.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Större än eller lika med</span><br /> </td> 
+   <td> <span class="uicontrol">Greater than or equal to</span> <br /> </td> 
    <td> Returnerar alla värden som är lika med eller större än det angivna värdet.<br /> </td> 
    <td> <strong>Ålder (@age) större än eller lika med 30,</strong>returnerar alla mottagare som är 30 år eller äldre.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Mindre än eller lika med</span><br /> </td> 
+   <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
    <td> Returnerar alla värden som är lika med eller lägre än det angivna värdet.<br /> </td> 
    <td> <strong>Ålder (@age) mindre än eller lika med "60"</strong>, returnerar alla mottagare som är 60 år eller yngre.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Inte lika med</span><br /> </td> 
+   <td> <span class="uicontrol">Inte lika med</span> <br /> </td> 
    <td> Returnerar alla värden som inte är identiska med det angivna värdet.<br /> </td> 
    <td> <strong>Språket (@language) är lika med "English"</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Börjar med</span><br /> </td> 
+   <td> <span class="uicontrol">Börjar med</span> <br /> </td> 
    <td> Returnerar resultatet med början på det angivna värdet.<br /> </td> 
    <td> <strong>Kontonr (@account) börjar med 32010.</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Börjar inte med</span><br /> </td> 
+   <td> <span class="uicontrol">Börjar inte med</span> <br /> </td> 
    <td> Returnerar resultat som inte börjar med det angivna värdet<br /> </td> 
    <td> <strong>Kontonr (@account) börjar inte med 20</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Innehåller</span><br /> </td> 
+   <td> <span class="uicontrol">Contains</span> <br /> </td> 
    <td> Returnerar resultatet som innehåller minst det angivna värdet.<br /> </td> 
    <td> <strong>E-postdomänen (@domain) innehåller 'mail'</strong>, returnerar alla domännamn som innehåller 'mail'. Domänen gmail.com returneras alltså också.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Innehåller</span> inte <br /> </td> 
+   <td> <span class="uicontrol">Innehåller inte</span> <br /> </td> 
    <td> Returnerar resultat som inte innehåller det angivna värdet.<br /> </td> 
    <td> <strong>E-postdomänen (@domain) innehåller inte 'vo'</strong>. I det här fallet returneras inte domännamn som innehåller "vo". Domännamnet voila.fr visas inte i resultatet.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Gilla</span><br /> </td> 
-   <td> <span class="uicontrol">Gilla</span> liknar mycket operatorn <span class="uicontrol">Contains</span> . Du kan infoga ett <span class="uicontrol">%</span> jokertecken i värdet.<br /> </td> 
+   <td> <span class="uicontrol">Like</span> <br /> </td> 
+   <td> <span class="uicontrol">Like</span> är mycket lik operatören <span class="uicontrol">Contains</span>. Du kan infoga ett <span class="uicontrol">%</span> jokertecken i värdet.<br /> </td> 
    <td> <strong>Efternamn (@lastName) som 'Jon%s'</strong>. Här används jokertecknet som"joker" för att hitta namnet"Jones", om operatorn hade glömt den saknade bokstaven mellan"n" och"s".<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Inte som</span><br /> </td> 
-   <td> liknar <span class="uicontrol">Gilla</span> . Gör att du inte kan återställa det angivna värdet. Även här måste det angivna värdet innehålla <span class="uicontrol">%</span> jokertecken.<br /> </td> 
+   <td> <span class="uicontrol">Not like</span> <br /> </td> 
+   <td> Liknar <span class="uicontrol">Like</span> . Gör att du inte kan återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
    <td> <strong>Efternamnet (@lastName) är inte som Smi%h</strong>. Här returneras inte mottagare vars efternamn är Smi%h.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Är tom</span><br /> </td> 
+   <td> <span class="uicontrol">Is empty</span> <br /> </td> 
    <td> I det här fallet matchar resultatet vi söker efter ett tomt värde i den andra värdekolumnen.<br /> </td> 
    <td> <strong>Mobilen (@mobilePhone) är tom</strong> och returnerar alla mottagare som inte har något mobilnummer.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Är inte tom</span><br /> </td> 
+   <td> <span class="uicontrol">Är inte tom</span> <br /> </td> 
    <td> Fungerar omvänt mot operatorn <span class="uicontrol">Är tom</span> . Du behöver inte ange data i den andra värdekolumnen.<br /> </td> 
    <td> <strong>E-postadressen (@email) är inte tom</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Ingår i</span><br /> </td> 
+   <td> <span class="uicontrol">Ingår i</span> <br /> </td> 
    <td> Returnerar resultat som ingår i de angivna värdena. Dessa värden måste avgränsas med kommatecken.<br /> </td> 
    <td> <strong>Födelsedatum (@BirthDate) ingår i "12/10/1979,12/10/1984"</strong>, returnerar de mottagare som är födda mellan dessa datum. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Ingår inte i</span><br /> </td> 
+   <td> <span class="uicontrol">Ingår inte i</span> <br /> </td> 
    <td> Fungerar som operatorn <span class="uicontrol">Ingår</span> i. Här vill vi exkludera mottagare baserat på de angivna värdena.<br /> </td> 
    <td> <strong>Födelsedatum (@BirthDate) ingår inte i "12/10/1979,12/10/1984"</strong>. Till skillnad från i föregående exempel returneras inte mottagare som fötts inom dessa datum.<br /> </td> 
   </tr> 
@@ -272,7 +272,7 @@ Länka till en tabell och ett samlingselement:
 
 ## Skapa beräknade fält {#creating-calculated-fields}
 
-Om det behövs lägger du till en kolumn under dataformatering. Ett beräkningsfält lägger till en kolumn i dataförhandsvisningsavsnittet. Klicka **[!UICONTROL Add a calculated field]**.
+Om det behövs lägger du till en kolumn under dataformatering. Ett beräkningsfält lägger till en kolumn i dataförhandsvisningsavsnittet. Klicka på **[!UICONTROL Add a calculated field]**.
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -292,7 +292,7 @@ Det finns fyra typer av beräknade fält:
 
 * **[!UICONTROL Enumerations]**: Med den här typen av fält kan du använda/ändra innehållet i en av utdatakolumnerna i en ny kolumn.
 
-   Du kan använda källvärdet för en kolumn och ge den ett målvärde. Det här målvärdet visas i den nya utdatakolumnen.
+   Det går att använda källvärdet för en kolumn och ge den ett målvärde. Det här målvärdet visas i den nya utdatakolumnen.
 
    Ett exempel på hur du lägger till en beräknad fälttyp **[!UICONTROL Enumerations]** finns i [det här avsnittet](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
@@ -321,9 +321,9 @@ Använd följande steg:
 
 1. Klicka **[!UICONTROL Add]** i **[!UICONTROL Data to extract]** fönstret. I **[!UICONTROL Formula type]** fönstret väljer du en formeltyp som du vill ange uttrycket för.
 
-   Det finns flera typer av formler: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**..
+   Det finns flera typer av formler: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Välj **[!UICONTROL Process on an aggregate function]**, och **[!UICONTROL Count]**. Klicka **[!UICONTROL Next]**.
+   Select **[!UICONTROL Process on an aggregate function]**, and **[!UICONTROL Count]**. Click **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -354,7 +354,7 @@ Här är en detaljerad vy över de alternativ som är tillgängliga i **[!UICONT
 
 ## Lista över funktioner {#list-of-functions}
 
-Om du väljer en **[!UICONTROL Expression]** typformel öppnas fönstret &quot;redigera uttrycket&quot;. Olika funktionskategorier kan kopplas till de tillgängliga fälten: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** och **[!UICONTROL Others]**.
+Om du väljer en **[!UICONTROL Expression]** typformel öppnas fönstret &quot;redigera uttrycket&quot;. Olika funktionskategorier kan kopplas till de tillgängliga fälten: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]** och **[!UICONTROL Windowing function]****[!UICONTROL Others]**.
 
 Uttrycksredigeraren ser ut så här:
 
@@ -362,7 +362,7 @@ Uttrycksredigeraren ser ut så här:
 
 Här kan du markera fält i databastabellerna och lägga till avancerade funktioner. Följande funktioner är tillgängliga:
 
-**Aggregat**
+**Sammanställning**
 
 <table> 
  <tbody> 
@@ -378,7 +378,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Antal</strong><br /> </td> 
-   <td> Räknar värden som inte är null i en kolumn<br /> </td> 
+   <td> Counts the non-null values of a column<br /> </td> 
    <td> Count(&lt;värde&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -388,17 +388,17 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Motdistinkt</strong><br /> </td> 
-   <td> Räknar distinkta icke-null-värden för en kolumn<br /> </td> 
-   <td> Countdistans(&lt;värde&gt;)<br /></td> 
+   <td> Counts the distinct non-null values of a column<br /> </td> 
+   <td> Countdistinct(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Returnerar det maximala värdet för en kolumn av typen tal, sträng eller datum<br /> </td> 
+   <td> Returns the maximum value of a number, string, or date type column<br /> </td> 
    <td> Max(&lt;värde&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Returnerar det minsta värdet för en tal-, sträng- eller datumtypskolumn<br /> </td> 
+   <td> Returns the minimum value of a number, string or date type column<br /> </td> 
    <td> Min(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -440,17 +440,17 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
-   <td> Returnerar tecknet som motsvarar ASCII-koden 'n'<br /> </td> 
+   <td> Returnerar tecknet som motsvarar ASCII-koden "n"<br /> </td> 
    <td> Char(&lt;tal&gt;)<br /></td>  
   </tr> 
   <tr> 
-   <td> <strong>Diagram</strong><br /> </td> 
+   <td> <strong>Charindex</strong><br /> </td> 
    <td> Returnerar positionen för sträng 2 i sträng 1.<br /> </td> 
    <td> Charindex(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
-   <td> Returnerar den n:te raden (från 1 till n) i strängen<br /> </td> 
+   <td> Returnerar den n:e raden (från 1 till n) i strängen<br /> </td> 
    <td> GetLine(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -479,17 +479,17 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> LPad(&lt;sträng&gt;, &lt;tal&gt;, &lt;tecken&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Vänster</strong><br /> </td> 
+   <td> <strong>Left</strong><br /> </td> 
    <td> Returnerar de första n tecknen i strängen<br /> </td> 
    <td> Left(&lt;sträng&gt;, &lt;tal&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Längd</strong><br /> </td> 
+   <td> <strong>Length</strong><br /> </td> 
    <td> Returnerar strängens längd<br /> </td> 
    <td> Length(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Lägre</strong><br /> </td> 
+   <td> <strong>Lower</strong><br /> </td> 
    <td> Returnerar strängen i gemener<br /> </td> 
    <td> Lower(&lt;sträng&gt;)<br /></td> 
   </tr> 
@@ -514,7 +514,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> RPad(&lt;sträng&gt;, &lt;tal&gt;, &lt;tecken&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Höger</strong><br /> </td> 
+   <td> <strong>Right</strong><br /> </td> 
    <td> Returnerar de sista n tecknen i strängen<br /> </td> 
    <td> Right(&lt;sträng&gt;)<br /> </td> 
   </tr> 
@@ -529,8 +529,8 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> Smart(&lt;sträng&gt;)<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Delsträng</strong><br /> </td> 
-   <td> Extraherar delsträngen med början vid tecken n1 i strängen och med längden n2<br /> </td> 
+   <td> <strong>Substring</strong><br /> </td> 
+   <td> Extracts the substring starting at character n1 of the string and of length n2<br /> </td> 
    <td> Substring(&lt;sträng&gt;, &lt;offset&gt;, &lt;längd&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -539,7 +539,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> ToString(&lt;tal&gt;, &lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Övre</strong><br /> </td> 
+   <td> <strong>Upper</strong><br /> </td> 
    <td> Returnerar strängen med versaler<br /> </td> 
    <td> Upper(&lt;sträng&gt;)<br /> </td>  
   </tr> 
@@ -555,8 +555,8 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Returnerar strängstorleken<br /> </td> 
-   <td> dataLength(&lt;sträng&gt;)<br /> </td>  
+   <td> Returns the string size<br /> </td> 
+   <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -606,23 +606,23 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> DateOnly(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Dag</strong><br /> </td> 
+   <td> <strong>Day</strong><br /> </td> 
    <td> Returnerar talet som representerar dagen på datumet<br /> </td> 
    <td> Day(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>DagPåÅr</strong><br /> </td> 
-   <td> Returnerar numret på dagen i datumåret<br /> </td> 
+   <td> <strong>DayOfYear</strong><br /> </td> 
+   <td> Returns the number of the day in the year of the date<br /> </td> 
    <td> DayOfYear(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>DagarFör</strong><br /> </td> 
-   <td> Returnerar det datum som motsvarar aktuellt datum minus n dagar<br /> </td> 
+   <td> <strong>DaysAgo</strong><br /> </td> 
+   <td> Returns the date corresponding to the current date minus n days<br /> </td> 
    <td> DaysAgo(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Returnerar det datum (heltal åååmmdd) som motsvarar det aktuella datumet minus n dagar<br /> </td> 
+   <td> Returns the date (integer yyyymmdd) corresponding to the current date minus n days<br /> </td> 
    <td> DaysAgoInt(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -631,7 +631,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> DaysDiff(&lt;slutdatum&gt;, &lt;startdatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>DagarGammal</strong><br /> </td> 
+   <td> <strong>DaysOld</strong><br /> </td> 
    <td> Returnerar åldern i dagar för ett datum<br /> </td> 
    <td> DaysOld(&lt;datum&gt;)<br /> </td>  
   </tr> 
@@ -641,9 +641,9 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> GetDate()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Timme</strong><br /> </td> 
+   <td> <strong>Hour</strong><br /> </td> 
    <td> Returnerar timmen för datumet<br /> </td> 
-   <td> Timme(&lt;datum&gt;)<br /> </td>  
+   <td> Hour(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>HoursDiff</strong><br /> </td> 
@@ -651,9 +651,9 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> HoursDiff(&lt;slutdatum&gt;, &lt;startdatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Minut</strong><br /> </td> 
+   <td> <strong>Minute</strong><br /> </td> 
    <td> Returnerar minuterna av datumet<br /> </td> 
-   <td> Minut(&lt;datum&gt;)<br /> </td>  
+   <td> Minute(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MinutesDiff</strong><br /> </td> 
@@ -661,29 +661,29 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> MinutesDiff(&lt;slutdatum&gt;, &lt;startdatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Månad</strong><br /> </td> 
+   <td> <strong>Month</strong><br /> </td> 
    <td> Returnerar talet som representerar månaden för datumet<br /> </td> 
-   <td> Månad(&lt;datum&gt;)<br /> </td>  
+   <td> Month(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>MånaderFör</strong><br /> </td> 
+   <td> <strong>MonthsAgo</strong><br /> </td> 
    <td> Returnerar det datum som motsvarar aktuellt datum minus n månader<br /> </td> 
    <td> MonthsAgo(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>MånaderDiff</strong><br /> </td> 
+   <td> <strong>MonthsDiff</strong><br /> </td> 
    <td> Returnerar antalet månader mellan två datum<br /> </td> 
    <td> MonthsDiff(&lt;slutdatum&gt;, &lt;startdatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>MånaderGammal</strong><br /> </td> 
+   <td> <strong>MonthsOld</strong><br /> </td> 
    <td> Returnerar åldern i månader för ett datum<br /> </td> 
    <td> MonthsOld(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Andra</strong><br /> </td> 
+   <td> <strong>Second</strong><br /> </td> 
    <td> Returnerar sekunder för datumet<br /> </td> 
-   <td> Second(&lt;date&gt;)<br /> </td>  
+   <td> Second(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SecondsDiff</strong><br /> </td> 
@@ -721,7 +721,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> SubYears(&lt;datum&gt;, &lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>TillDatum</strong><br /> </td> 
+   <td> <strong>ToDate</strong><br /> </td> 
    <td> Konverterar ett datum + tid som ett datum<br /> </td> 
    <td> ToDate(&lt;datum + tid&gt;)<br /> </td>  
   </tr> 
@@ -732,7 +732,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>TruncDate</strong><br /> </td> 
-   <td> Avrundar ett datum+tid till närmaste sekund<br /> </td> 
+   <td> Avrundar ett datum + tid till närmaste sekund<br /> </td> 
    <td> TruncDate(@lastModified, &lt;antal sekunder&gt;)<br /> </td> 
   </tr> 
   <tr> 
@@ -757,7 +757,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>TruncYear</strong><br /> </td> 
-   <td> Avrundar ett datum + tid till 1 januari året<br /> </td> 
+   <td> Avrundar ett datum + tid till 1 januari under året<br /> </td> 
    <td> TruncYear(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -766,12 +766,12 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> WeekDay(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>År</strong><br /> </td> 
+   <td> <strong>Year</strong><br /> </td> 
    <td> Returnerar talet som representerar datumåret<br /> </td> 
-   <td> År(&lt;datum&gt;)<br /> </td>  
+   <td> Year(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>ÅrOch månad</strong><br /> </td> 
+   <td> <strong>YearAnd Month</strong><br /> </td> 
    <td> Returnerar talet som representerar året och månaden på datumet<br /> </td> 
    <td> YearAndMonth(&lt;datum&gt;)<br /> </td>  
   </tr> 
@@ -781,7 +781,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> YearsDiff(&lt;slutdatum&gt;, &lt;startdatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>ÅrGamla</strong><br /> </td> 
+   <td> <strong>YearsOld</strong><br /> </td> 
    <td> Returnerar åldern i år för ett datum<br /> </td> 
    <td> YearsOld(&lt;datum&gt;)<br /> </td>  
   </tr> 
@@ -809,26 +809,26 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>Ceil</strong><br /> </td> 
    <td> Returnerar det lägsta heltalet som är större än eller lika med ett tal<br /> </td> 
-   <td> Ceil(&lt;number&gt;)<br /> </td>  
+   <td> Ceil(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Returnerar det största heltalet större än eller lika med ett tal<br /> </td> 
+   <td> Returns the greatest integer greater than or equal to a number<br /> </td> 
    <td> Floor(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Största</strong><br /> </td> 
+   <td> <strong>Greatest</strong><br /> </td> 
    <td> Returnerar det största av två tal<br /> </td> 
    <td> Greatest(&lt;tal 1&gt;, &lt;tal 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Minst</strong><br /> </td> 
+   <td> <strong>Least</strong><br /> </td> 
    <td> Returnerar det minsta av två tal<br /> </td> 
    <td> Minst(&lt;tal 1&gt;, &lt;tal 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> Returnerar resten av heltalsdivisionen av n1 med n2<br /> </td> 
+   <td> Returns the remainder of the integer division of n1 by n2<br /> </td> 
    <td> Mod(&lt;tal 1&gt;, &lt;tal 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -837,17 +837,17 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> Procent(&lt;tal 1&gt;, &lt;tal 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Slumpmässig</strong><br /> </td> 
+   <td> <strong>Random</strong><br /> </td> 
    <td> Returnerar det slumpmässiga värdet<br /> </td> 
    <td> Random()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Ansökningstillfälle</strong><br /> </td> 
+   <td> <strong>Round</strong><br /> </td> 
    <td> Avrundar ett tal till n decimaler<br /> </td> 
    <td> Round(&lt;tal&gt;, &lt;antal decimaler&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Signera</strong><br /> </td> 
+   <td> <strong>Sign</strong><br /> </td> 
    <td> Returnerar talets tecken<br /> </td> 
    <td> Sign(&lt;tal&gt;)<br /> </td>  
   </tr> 
@@ -896,7 +896,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
  </tbody> 
 </table>
 
-**Geomarketing**
+**Geomarknadsföring**
 
 <table> 
  <tbody> 
@@ -907,13 +907,13 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Avstånd</strong><br /> </td> 
-   <td> Returnerar avståndet mellan två punkter som definieras av longitud och latitud, uttryckt i grader.<br /> </td> 
-   <td> Avstånd(&lt;longitud A&gt;, &lt;latitud A&gt;, &lt;longitud B&gt;, &lt;latitud B&gt;)<br /> </td>  
+   <td> Returns the distance between two points defined by their longitude and latitude, expressed in degrees.<br /> </td> 
+   <td> Distance(&lt;longitud A&gt;, &lt;latitud A&gt;, &lt;longitud B&gt;, &lt;latitud B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
 
-**Övriga**
+**Övrigt**
 
 <table> 
  <tbody> 
@@ -923,9 +923,9 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> <strong>Syntax</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Skiftläge</strong><br /> </td> 
+   <td> <strong>Case</strong><br /> </td> 
    <td> Returnerar värdet 1 om villkoret är sant. Annars returneras värdet 2.<br /> </td> 
-   <td> Case(When(&lt;condition&gt;, &lt;value 1&gt;), Else(&lt;value 2&gt;))<br /> </td> 
+   <td> Case(When(&lt;villkor&gt;, &lt;värde 1&gt;), Else(&lt;värde 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>ClearBit</strong><br /> </td> 
@@ -938,18 +938,18 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> Coalesce(&lt;värde 1&gt;, &lt;värde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Avkoda</strong><br /> </td> 
+   <td> <strong>Decode</strong><br /> </td> 
    <td> Returnerar värde 3 om värde 1 = värde 2. Om inte returnerar värde 4.<br /> </td> 
    <td> Decode(&lt;värde 1&gt;, &lt;värde 2&gt;, &lt;värde 3&gt;, &lt;värde 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Annars</strong><br /> </td> 
+   <td> <strong>Else</strong><br /> </td> 
    <td> Returnerar värde 1 (kan endast användas som en parameter för case-funktionen)<br /> </td> 
    <td> Else(&lt;värde 1&gt;, &lt;värde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> Extraherar domänen från en e-postadress<br /> </td> 
+   <td> Extracts the domain from an e-mail address<br /> </td> 
    <td> GetEmailDomain(&lt;värde&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -969,7 +969,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Returnerar värde 2 om sträng 1 är tom, annars returneras värde 3<br /> </td> 
+   <td> Returns value 2 if string 1 is empty, otherwise returns value 3<br /> </td> 
    <td> IsEmptyString(&lt;värde 1&gt;, &lt;värde 2&gt;, &lt;värde 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -993,9 +993,9 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> ToBoolean(&lt;tal&gt;)<br /> </td>   
   </tr> 
   <tr> 
-   <td> <strong>När</strong><br /> </td> 
-   <td> Returnerar värdet 1 om uttrycket är true. Annars returneras värde 2 (kan bara användas som en parameter i case-funktionen)<br /> </td> 
-   <td> When(&lt;condition&gt;, &lt;value 1&gt;)<br /> </td>  
+   <td> <strong>When</strong><br /> </td> 
+   <td> Returnerar värdet 1 om uttrycket är true. If not, it returns value 2 (may only be used as a parameter of the case function)<br /> </td> 
+   <td> When(&lt;tillstånd&gt;, &lt;värde 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
