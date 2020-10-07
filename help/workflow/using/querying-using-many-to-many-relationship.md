@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_34.png)
 
-1. I **[!UICONTROL Data filtering]** fönstret väljer du **[!UICONTROL Filtering conditions]**.
+1. In the **[!UICONTROL Data filtering]** window, select **[!UICONTROL Filtering conditions]**.
 1. I **[!UICONTROL Target element]** fönstret innebär filtreringsvillkoret för att extrahera profiler utan spårningslogg de senaste 7 dagarna två steg. Elementet som du måste markera är en många-till-många-länk.
 
    * Börja med att markera samlingselementet (den orangefärgade noden) för den första **[!UICONTROL Recipient delivery logs (broadlog)]** **[!UICONTROL Value]** kolumnen.
@@ -83,7 +83,7 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_40.png)
 
-   Klicka **[!UICONTROL OK]**. Fönstret är konfigurerat **[!UICONTROL Data formatting]** .
+   Klicka på **[!UICONTROL OK]**. Fönstret är konfigurerat **[!UICONTROL Data formatting]** .
 
    Mer information om hur du lägger till beräkningsfält finns i det här avsnittet.
 
