@@ -1,7 +1,7 @@
 ---
-title: Specifika konfigurationer i v6.02
-seo-title: Specifika konfigurationer i v6.02
-description: Specifika konfigurationer i v6.02
+title: Specifika konfigurationer i version 6.02
+seo-title: Specifika konfigurationer i version 6.02
+description: Specifika konfigurationer i version 6.02
 seo-description: null
 page-status-flag: never-activated
 uuid: ea072af3-fdc1-4828-ad13-d4327de1eaf8
@@ -11,20 +11,20 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 87a6cbda-54a6-4dae-8224-e06dc217f4fc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 4%
 
 ---
 
 
-# Specifika konfigurationer i v6.02{#specific-configurations-in-v6-02}
+# Specifika konfigurationer i version 6.02{#specific-configurations-in-v6-02}
 
 I följande avsnitt beskrivs den ytterligare konfiguration som krävs vid migrering från v6.02. Du bör även konfigurera inställningarna som anges i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md) .
 
-## Webbprogram {#web-applications}
+## Webbapplikationer {#web-applications}
 
 Om du migrerar från v6.02 kan felloggar för webbprogram av översiktstyp visas. Exempel på felmeddelanden:
 
@@ -50,7 +50,7 @@ Om du har ändrat dessa webbprogram och vill fortsätta använda dem i v7 måste
 >
 >Om du vill fortsätta använda webbprogram av översiktstyp v6.02 måste du aktivera alternativet **allowSQLInjection** i dina olika säkerhetszoner innan du utför efteruppgraderingen. Se [webbprogrammen](#web-applications).
 
-Efter en migrering från version 6.02 visas inte längre hemsidan för Adobe Campaign v6.02, men den är fortfarande tillgänglig och kompatibel med Adobe Campaign v7.
+Efter en migrering från version 6.02 visas inte längre startsidan för Adobe Campaign v6.02, men den är fortfarande tillgänglig och kompatibel med Adobe Campaign v7.
 
 Om du vill fortsätta använda v6.02-startsidan måste du installera ett kompatibilitetspaket efter migreringen.
 
@@ -66,7 +66,7 @@ sessionTokenOnly="true"
 
 Det här alternativet ändrar säkerhetsnivåerna för att säkerställa gränssnittskompatibiliteten.
 
-När paketet har installerats ersätts hemsidan för Adobe Campaign v7 av din gamla v6.02-hemsida, som är komplett med de allmänna konfigurationerna från v7 (banner för blå hemsida).
+När paketet har installerats ersätts hemsidan för Adobe Campaign v7 av din gamla v6.02-hemsida med de allmänna konfigurationerna från v7 (banner för blå hemsida).
 
 ![](assets/dashboards.png)
 
