@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -29,7 +26,7 @@ Med filtreringsregler kan du definiera meddelanden som ska uteslutas baserat på
 
 Filtreringsregler kan länkas till andra typer av regler (kontroll, tryck osv.) i typologier eller grupperas i en dedikerad **filtreringstypologi** . Mer information finns i [Skapa och använda en filtertypologi](#creating-and-using-a-filtering-typology).
 
-## Skapa en filtreringsregel {#creating-a-filtering-rule}
+## Creating a filtering rule {#creating-a-filtering-rule}
 
 Du kan t.ex. filtrera nyhetsbrevets prenumeranter för att förhindra att kommunikationen skickas till mottagare som är minderåriga.
 
@@ -67,7 +64,7 @@ I det här fallet gäller att även om regeln är länkad till alla leveranser, 
 
 >[!NOTE]
 >
->Typologier och filtreringsregler kan användas i ett arbetsflöde i **[!UICONTROL Delivery outline]** aktiviteten. For more on this, refer to [this section](../../workflow/using/delivery-outline.md).
+>Typologier och filtreringsregler kan användas i ett arbetsflöde i **[!UICONTROL Delivery outline]** aktiviteten. Mer information om detta finns i [det här avsnittet](../../workflow/using/delivery-outline.md).
 
 ## Skapa och använda en filtertypologi {#creating-and-using-a-filtering-typology}
 
@@ -96,7 +93,7 @@ Du kan också länka filtreringsregler direkt via den här fliken utan att grupp
 
 Två filtreringsregler är tillgängliga som standard: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) och **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Under e-postanalysen jämför dessa regler mottagarnas e-postadresser med de förbjudna adresserna eller domännamnen i en krypterad global undertryckningslista som hanteras i leveransinstansen. Om det finns en matchning skickas inte meddelandet till den mottagaren.
 
-Detta för att undvika att läggas till i blockeringslistan på grund av skadlig aktivitet, särskilt användning av en svällning. Om en svällning till exempel används för att prenumerera via ett av dina webbformulär, skickas ett bekräftelsemeddelande via e-post till den svällningen, vilket gör att din adress automatiskt läggs till i blocklistan.
+Detta för att undvika att läggas till blockeringslista på grund av skadlig aktivitet, särskilt användningen av en svampfälla. Om du t.ex. använder en svällning för att prenumerera via ett av dina webbformulär, skickas ett bekräftelsemeddelande via e-post till den svällningen, vilket gör att din adress automatiskt läggs till i blockeringslista.
 
 >[!NOTE]
 >
