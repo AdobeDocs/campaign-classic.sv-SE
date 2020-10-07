@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 1%
@@ -35,7 +32,7 @@ Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats d
 
 Behörigheterna gäller för operatorprofiler eller operatorgrupper.
 
-De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. Se denna [sida](../../installation/using/configuring-campaign-server.md#defining-security-zones) för mer information om detta.
 
 Det finns två typer av behörigheter som du kan ge en användare:
 
@@ -132,7 +129,7 @@ Med hjälp av **[!UICONTROL Edit the access parameters...]** länken kommer du �
 
 * Med **[!UICONTROL Disable account]** alternativet kan du inaktivera operatörens konto: Han kommer inte längre att ha tillgång till Adobe Campaign.
 * Med det här **[!UICONTROL Forbid access from the rich client]** alternativet kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
-* Det går att länka en säkerhetszon till operatören. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+* Det går att länka en säkerhetszon till operatören. Se denna [sida](../../installation/using/configuring-campaign-server.md#defining-security-zones) för mer information om detta.
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
 
    Operatören kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
