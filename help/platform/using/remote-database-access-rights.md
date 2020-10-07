@@ -11,20 +11,20 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
 
 # Åtkomsträttigheter till fjärrdatabas {#remote-database-access-rights}
 
-För det första, för att användaren ska kunna utföra åtgärder på en extern databas via FDA, måste den senare ha en specifik namngiven behörighet i Adobe Campaign.
+För det första, så att användaren kan utföra åtgärder på en extern databas via FDA, måste den senare ha en specifik namngiven behörighet i Adobe Campaign.
 
-1. Markera **[!UICONTROL Administration > Access Management > Named Rights]** noden i Adobe Campaign Explorer.
+1. Markera **[!UICONTROL Administration > Access Management > Named Rights]** noden i Adobe Campaign Utforskaren.
 1. Skapa en ny rättighet genom att ange den valda etiketten.
 1. Fältet måste **[!UICONTROL Name]** ha följande format: **användare: base@server**, där:
 
@@ -36,13 +36,13 @@ För det första, för att användaren ska kunna utföra åtgärder på en exter
       >
       >Delen **:base** är valfri i Oracle.
 
-1. Spara den namngivna rättigheten och länka den till den valda användaren från noden **[!UICONTROL Administration > Access Management > Operators]** i Adobe Campaign Explorer.
+1. Spara den namngivna rättigheten och länka den till den användare du valt från noden i Adobe Campaign Utforskaren **[!UICONTROL Administration > Access Management > Operators]** .
 
-För att bearbeta data i en extern databas måste Adobe Campaign-användaren ha minst skrivbehörighet för databasen för att kunna skapa arbetstabeller. Dessa tas bort automatiskt av Adobe Campaign.
+Om du sedan vill bearbeta data i en extern databas måste Adobe Campaign-användaren ha minst skrivbehörighet för databasen för att kunna skapa arbetstabeller. Dessa tas bort automatiskt av Adobe Campaign.
 
 I allmänhet är följande rättigheter nödvändiga:
 
-* **ANSLUT**: anslutning till fjärrdatabasen,
+* **CONNECT**: anslutning till fjärrdatabasen,
 * **LÄS data**: skrivskyddad åtkomst till tabeller som innehåller kunddata,
 * **LÄS &#39;MetaData&#39;**: åtkomst till serverns datakataloger för att få fram tabellstrukturen,
 * **LADDA**: massinläsning i arbetstabeller (krävs vid arbete med samlingar och kopplingar),
@@ -54,13 +54,13 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 
 ## FDA-rättigheter {#fda-rights}
 
-|   | Snöflinga | Skift | Oracle | SQLServer | PostgreSQL | MySQL |
+|   | Snowflake | Skift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Ansluter till fjärrdatabas** | ANVÄNDNING I LAGERHUS, ANVÄNDNING I DATABAS OCH ANVÄNDNING I SCHEMABEHÖRIGHETER | Skapa en användare som är länkad till AWS-kontot | SKAPA SESSIONSprivilegium | ANSLUT behörighet | BEHÖRIGHET FÖR ANSLUT | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER |
+| **Ansluter till fjärrdatabas** | ANVÄNDNING I LAGERHUS, ANVÄNDNING I DATABAS OCH ANVÄNDNING I SCHEMABEHÖRIGHETER | Skapa en användare som är länkad till AWS-kontot | SKAPA SESSIONSprivilegium | CONNECT behörighet | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER |
 | **Skapa tabeller** | Behörighet SKAPA TABELL PÅ SCHEMA | SKAPA privilegium | Privilegium SKAPA TABELL | SKAPA TABELLBEHÖRIGHET | SKAPA privilegium | SKAPA privilegium |
-| **Skapa index** | Ej tillämpligt | SKAPA privilegium | INDEX- eller CREATE EVENTUELL INDEX-BEHÖRIGHET | ALTERNATIVbehörighet | SKAPA privilegium | INDEX-privilegium |
+| **Skapa index** | N/A | SKAPA privilegium | INDEX- eller CREATE EVENTUELL INDEX-BEHÖRIGHET | ALTERNATIVbehörighet | SKAPA privilegium | INDEX-privilegium |
 | **Skapa funktioner** | SKAPA FUNKTION PÅ SCHEMABEHÖRIGHET | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA FUNKTIONSTILLSTÅND | Behörighet att använda | SKAPA ROUTINprivilegium |
-| **Skapa procedurer** | Ej tillämpligt | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA PROCESSTILLSTÅND | Behörighet för ANVÄNDNING (procedurer är funktioner) | SKAPA ROUTINprivilegium |
+| **Skapa procedurer** | N/A | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA PROCESSTILLSTÅND | Behörighet för ANVÄNDNING (procedurer är funktioner) | SKAPA ROUTINprivilegium |
 | **Ta bort objekt (tabeller, index, funktioner, procedurer)** | Äga objektet | Äga objektet eller vara superanvändare | DROP ANY &lt; object > privilege | ALTERNATIVbehörighet | Tabell: äger tabellindexet: äger indexfunktionen: äger funktionen | DROP-privilegium |
 | **Övervaka körningar** | MONITOR-behörighet för det begärda objektet | Ingen behörighet krävs för kommandot EXPLAIN | Behörighet INSERT och SELECT samt nödvändiga privilegier för att köra den sats som EXPLAIN-planen baseras på | SHOWPLAN-behörighet | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium |
 | **Skriver data** | INSERT- och/eller UPDATE-behörigheter (beroende på skrivåtgärd) | INSERT- och UPDATE-behörigheter | INFOGA OCH UPPDATERA ELLER INFOGA OCH UPPDATERA VALFRITT TABELLBEHÖRIGHET | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
@@ -70,11 +70,11 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 
 |   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | Netezza | Växter | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Ansluter till fjärrdatabas** | ANSLUTNINGSMYNDIGHET | BEHÖRIGHET FÖR ANSLUT | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för satsen CONNECT | Inget privilegium krävs | BEHÖRIGHET FÖR ANSLUT | BEHÖRIGHET FÖR ANSLUT |
+| **Ansluter till fjärrdatabas** | CONNECT | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för programsatsen CONNECT | Inget privilegium krävs | CONNECT privilegium | CONNECT privilegium |
 | **Skapa tabeller** | CREATETAB-utfärdare | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium | SKAPA privilegium |
 | **Skapa index** | INDEX-privilegium | CREATE INDEX or INDEX keyword | INDEX-privilegium | RESURSutfärdare och SKAPA behörighet | INDEX-privilegium | SKAPA privilegium | SKAPA privilegium |
 | **Skapa funktioner** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | CREATE FUNCTION or FUNCTION, nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG eller DBA-myndighet för Java-funktioner | BEHÖRIGHET FÖR FUNKTION | Behörighet att använda | SKAPA FUNKTIONSHINDER |
-| **Skapa procedurer** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | SKAPA PROCESS- ELLER PROCEDURE-nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG | BEHÖRIGHET FÖR FÖRFARANDE | Behörighet att använda | SKAPA FUNKTIONSHINDER |
+| **Skapa procedurer** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | SKAPA nyckelordet PROCEDUR eller PROCEDURE | SKAPA ROUTINprivilegium | RESURSANSVARIG | BEHÖRIGHET FÖR FÖRFARANDE | Behörighet att använda | SKAPA FUNKTIONSHINDER |
 | **Ta bort objekt (tabeller, index, funktioner, procedurer)** | DROPIN-behörighet eller BEHÖRIGHET för KONTROLL eller ägande av objektet | DROP &lt; object > eller objektrelaterat nyckelord | DROP-privilegium | Äger objektet eller DBA-utfärdaren | DROP-privilegium | Äga objektet | Äga objektet |
 | **Övervaka körningar** | FÖRKLARING | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium | Endast en systemadministratör kan köra sp_showplan | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen |
 | **Skriver data** | INFOGA- och UPPDATERINGSbehörigheter eller DATAACCESS-utfärdare | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
