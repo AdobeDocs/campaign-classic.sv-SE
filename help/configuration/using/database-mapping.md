@@ -1,7 +1,7 @@
 ---
-title: Databasmappning
-seo-title: Databasmappning
-description: Databasmappning
+title: Databaskartläggning
+seo-title: Databaskartläggning
+description: Databaskartläggning
 seo-description: null
 page-status-flag: never-activated
 uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Databasmappning{#database-mapping}
+# Databaskartläggning{#database-mapping}
 
 SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
@@ -50,7 +47,7 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
 Schemats rotelement är inte längre **`<srcschema>`** utan **`<schema>`**.
 
-Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av programmet Adobe Campaign.
+Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av Adobe Campaign-programmet.
 
 SQL-namnen bestäms automatiskt utifrån elementnamn och typ.
 
@@ -111,7 +108,7 @@ Om du vill fylla i ett fält i XML måste du lägga till **xml** -attributet med
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Med typen &quot;html&quot; kan du lagra HTML-innehållet i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i klientgränssnittet för Adobe Campaign.
+   Med typen html kan du lagra HTML-innehållet i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i Adobe Campaign klientgränssnitt.
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
 
@@ -210,7 +207,7 @@ Tangenter följer följande regler:
 
 >[!NOTE]
 >
->Tangenter skapas vid tabellmappning (standard eller FDA) och Adobe Campaign hittar unika index.
+>Tangenter skapas vid tabellmappning (standard eller FDA). Adobe Campaign hittar unika index.
 
 **Exempel**:
 
@@ -299,7 +296,7 @@ Tangenter följer följande regler:
 
 ### Automatisk inkrementell nyckel {#auto-incremental-key}
 
-Den primära nyckeln för de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard SQL-funktionen **XtkNewId** ) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
+Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard SQL-funktionen **XtkNewId** ) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
 
 Fördelen med en inkrementell nyckel är att den ger en icke-modifierbar teknisk nyckel för kopplingarna mellan tabellerna. Dessutom tar den här nyckeln inte upp så mycket minne eftersom ett heltal med dubbla byte används.
 
@@ -418,7 +415,7 @@ Länkarna följer följande regler:
 >
 >Som standard är länkar de element som deklarerats i slutet av schemat.
 
-### Exempel 1 {#example-1}
+### Example 1 {#example-1}
 
 1-N-relation till schematabellen&quot;cus:company&quot;:
 
@@ -481,7 +478,7 @@ En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**: &quot;define&quot; som standard (kan framtvingas med attributet &quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
-### Exempel 2 {#example-2}
+### Example 2 {#example-2}
 
 I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address&quot;. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet &quot;@address&quot; i den länkade tabellen (&quot;nms:address&quot;).
 
@@ -496,7 +493,7 @@ I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address
 </srcSchema>
 ```
 
-### Exempel 3 {#example-3}
+### Example 3 {#example-3}
 
 1-1 relation till schematabellen &quot;cus:extension&quot;:
 
@@ -504,7 +501,7 @@ I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Exempel 4 {#example-4}
+### Example 4 {#example-4}
 
 Länka till en mapp (&quot;xtk:folder&quot;-schema):
 
@@ -514,7 +511,7 @@ Länka till en mapp (&quot;xtk:folder&quot;-schema):
 
 Standardvärdet returnerar identifieraren för den första giltiga parametertypfilen som anges i funktionen &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Exempel 5 {#example-5}
+### Example 5 {#example-5}
 
 I det här exemplet vill vi skapa en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** -attributet och ett fält i tabellen (&quot;e-post&quot;):
 
