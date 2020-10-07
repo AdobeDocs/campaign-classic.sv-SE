@@ -11,11 +11,11 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2263'
+ht-degree: 7%
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * Ett problem med frysning av klient som kan uppstå när komplexa arbetsflöden används har åtgärdats. (NEO-11847)
 * Korrigerade ett Oracle-fel när en ny leverans sparades efter att ett element i ett specifikt schema har valts (NEO-11682).
 * Korrigerade ett problem vid sökning efter ett fält som innehåller tecken med accenter (FDA/Teradata). Med det externa kontot kan du nu ändra kodningen som används för att kommunicera med Teradata-drivrutinen. (NEO-11818).
-* Korrigerade ett spårningsproblem vid överföring av URL:er i ytterligare variabler i ett push-meddelande som kunde leda till felaktigt formaterade eller felaktiga data som togs emot av mobilprogrammet. (NEO-11468, NEO-11960)
+* Korrigerade ett spårningsproblem vid överföring av URL:er i ytterligare variabler i ett push-meddelande som kunde leda till felaktigt formaterade eller felaktiga data som togs emot av mobilprogrammet. (NEO-11468 och NEO-11960)
 * Korrigerade ett problem som orsakade ett visningsproblem vid användning av en värdefördelning med en 1:N-länk. (NEO-11820)
 * Korrigerade ett problem som förhindrade massbelastning från att arbeta med Teradata 16.
 * Ökade buffertstorleken för tidsstämpel på Teradata för att undvika bindningsproblem med drivrutinen 15.10.
@@ -58,7 +58,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * Loggarna för e-postarkivering har förbättrats, vilket gör det enklare och tydligare att kontrollera vilka e-postmeddelanden som har levererats eller misslyckats via BCC-arkivering. (NEO-10675)
 * Korrigerade ett problem som ledde till att IP-adresser för belastningsutjämnare visades i stället för IP-adresser för kunder i spårningsloggarna. (NEO-11295)
 * Korrigerade ett fel med LATIN1-kodning vid användning av en FDA-anslutning till en PostgreSQL-databas. (NEO-11299)
-* Ett problem som uppstod när leveransalternativet användes har korrigerats. **[!UICONTROL Prepare the personalization data with a workflow]** (NEO-11047, NEO-11301)
+* Ett problem som uppstod när leveransalternativet användes har korrigerats. **[!UICONTROL Prepare the personalization data with a workflow]** (NEO-11047 och NEO-11301)
 * Korrigerade ett slumpmässigt problem som medförde att egenskaperna för en leverans skrevs över felaktigt. (NEO-11015)
 * Ett problem har korrigerats när beräknade fält användes i en **[!UICONTROL Survey answers]** arbetsflödesaktivitet. (NEO-11382)
 * Ett problem har korrigerats när data som lagrats i XML användes i en **[!UICONTROL Survey answers]** arbetsflödesaktivitet. (NEO-10816)
@@ -95,7 +95,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 24 apr 2018
 
-**Vad är nytt?**
+**Nyheter**
 
 <table> 
  <thead> 
@@ -106,16 +106,16 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
  </thead> 
  <tbody> 
   <tr> 
-   <td> EU:s allmänna dataskyddsförordning (GDPR)<br /> </td> 
-   <td> <p>GDPR är EU:s (EU) nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 25 maj 2018. GDPR gäller för Adobe Campaign-kunder som lagrar data för registrerade i EU.</p> <p>Förutom de sekretessfunktioner som redan finns i Adobe Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi denna möjlighet i vår roll som dataprocessor att inkludera ytterligare funktioner för att underlätta din beredskap som Data Controller för vissa GDPR-förfrågningar:</p> 
+   <td> EU General Data Protection Regulation (GDPR)<br /> </td> 
+   <td> <p>GDPR är EU:s (EU) nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 25 maj 2018. GDPR gäller för Adobe Campaign-kunder som innehar uppgifter för registrerade personer som bor i EU.</p> <p>Förutom de sekretessfunktioner som redan finns i Adobe Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi denna möjlighet i vår roll som dataprocessor att inkludera ytterligare funktioner för att underlätta din beredskap som Data Controller för vissa GDPR-förfrågningar:</p> 
     <ul> 
-     <li> <p>Åtkomst: ger den registrerade möjlighet att få en kopia av sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive data som lagrats i Adobe Campaign.</p> </li> 
-     <li> <p>Höger att ta bort: ger den registrerade rätt att radera sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive data som lagrats i Adobe Campaign.</p> </li> 
-    </ul> Mer information finns i den <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">detaljerade dokumentationen</a>.<br /> </td> 
+     <li> <p>Åtkomst: ger den registrerade möjlighet att få en kopia av sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive uppgifter som lagrats i Adobe Campaign.</p> </li> 
+     <li> <p>Höger att ta bort: ger den registrerade rätt att få sina personuppgifter som samlats in av personuppgiftsansvariga raderade, inklusive data som lagrats i Adobe Campaign.</p> </li> 
+    </ul> Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">detaljerade dokumentationen</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aktiva profiler<br /> </td> 
-   <td> <p>Adobe Campaign innehåller nu en lista över aktiva profiler som uppdateras månadsvis via ett dedikerat arbetsflöde.</p> <p>Mer information finns i den <a href="../../platform/using/about-profiles.md#active-profiles">detaljerade dokumentationen</a>.</p> </td> 
+   <td> <p>Adobe Campaign tillhandahåller nu en lista över aktiva profiler som uppdateras varje månad via ett dedikerat arbetsflöde.</p> <p>Mer information finns i den <a href="../../platform/using/about-profiles.md#active-profiles">detaljerade dokumentationen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> Förbättrad push-koppling för Android<br /> </td> 
@@ -134,24 +134,24 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 **Förbättringar**
 
 * **LINE-kanal - förbättrad** arkitektur: Liksom för alla andra kanaler i Adobe Campaign stöds nu LINE-kanalen för alla distributionstyper: värdbaserad, hybridbaserad och lokal.
-* **Automatisk sekvensgenerering**: ID-genereringsmekanismen har förbättrats för att öka livscykeln för Campaign-instanser med stora mängder objekt. Mer information finns i denna [technote](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
+* **Automatisk sekvensgenerering**: ID-genereringsmekanismen har förbättrats för att öka livscykeln för Campaign-instanser med stora mängder objekt. For more information, refer to this [technote](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
 
 **Andra ändringar**
 
 * Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket tillåter cirkulära beroenden (rekommenderas inte för stora paket). Mer information finns i avsnittet&quot;Tekniska lösningar&quot;. (NEO-8979)
 * Förbättrade prestanda för stor datainläsning i Teradata och åtgärdade ett problem som hindrade från att visa rätt värde för data som bearbetats i loggen. (NEO-10429)
-* Det går nu att importera målgrupper från Audience Manager med delade filer. Tidigare importerades bara den sista filen i segmentet av det tekniska arbetsflödet importSharedAudience. (NEO-10156)
+* Nu går det att importera målgrupper från Audience Manager med delade filer. Tidigare importerades bara den sista filen i segmentet av det tekniska arbetsflödet importSharedAudience. (NEO-10156)
 * I Windows har standardinstallationssökvägen för Campaign-servern ändrats. När du startar 64-bitarsversionen är standardinstallationssökvägen nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** i stället för **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * MX-standardreglerna har förbättrats så att fler domäner inkluderas och genomströmningen optimeras.
 * Tvingade åtkomstbegränsningar för distributionsguidens SOAP-anrop (xtk:serverOptions#SaveOptions).
 * Det föråldrade biblioteket weka.jar har tagits bort och OpenSSL-biblioteket har uppdaterats för säkerhetsoptimering.
 * Förbättrat tekniskt arbetsflöde för fakturering för att säkra instansernas prestanda.
 * Administratörernas möjlighet att ange eller återställa lösenordet för en operator har återställts. Om du vill göra det högerklickar du på en operator, väljer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och anger operatörens nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter. Mer information finns i den [detaljerade dokumentationen](../../production/using/lost-password.md).
-* För att ge stöd åt den nya multitenancy-funktionen i Adobe Target kan en ny&quot;at_property&quot;-parameter nu läggas till i URL:er när alternativ och externa konton konfigureras för integrering med Target. Värdet som ska användas för den här parametern finns i Adobe Target och kommer att användas av Campaign när anrop till Target görs. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
+* För att ge stöd åt den nya multitenancy-funktionen i Adobe Target kan en ny&quot;at_property&quot;-parameter nu läggas till i URL:er när alternativ och externa konton konfigureras för integrering med Target. Det värde som ska användas för den här parametern finns i Adobe Target och kommer att användas av Campaign när anrop till Target görs. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
 * Du kan nu ange en standardstartsida som ska öppnas när du klickar på en bild som hanteras av Adobe Target. Tidigare ledde klickningen på den bilden till standardbilduppsättningen när e-postmeddelandet skapades i stället. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
 * Lagt till kryssrutan **Aktivera SMPP-spår** i det externa kontot för att framtvinga spårningsutdata. Mer information finns i den [detaljerade dokumentationen](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
-**Teknisk utveckling**
+**Tekniska utvecklingar**
 
 queryDef
 
@@ -196,7 +196,7 @@ Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket till
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 ```
 
-**Patchar**
+**Felkorrigeringar**
 
 * Ett synkroniseringsproblem har korrigerats vid replikering av leverans- och spårningsloggar från Adobe Campaign Standard till Adobe Campaign Classic. (NEO-10023)
 * Korrigerade ett problem med hanteringen av fel- och loggtabeller i Teradata när ett ETL-arbetsflöde återupptogs efter ett fel i en snabb inläsningsåtgärd. Tabellerna Fel och Logg tas nu bort korrekt varje gång arbetsflödet återupptas. (NEO-10672)
@@ -214,9 +214,9 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Korrigerade ett problem som kunde leda till arbetsflödesfel när en hypotes kördes på ett erbjudande och status för förslaget uppdaterades. (NEO-9304)
 * Korrigerade fel som uppstod under leveransanalys när tryckregler användes baserat på ett attribut i Android-leveransmappningen. (NEO-9202)
 * Korrigerade ett problem vid sortering efter kolumner i mottagarlistan som kunde resultera i prestandaproblem. Mer information om queryDef-ändringarna finns i avsnittet &quot;Technical evolutions&quot; nedan. (NEO-9042)
-* Ett problem har korrigerats där länkarna i ett e-postmeddelande för godkännande kunde peka på en felaktig inloggnings-URL, särskilt när en Federated ID-inloggningstyp används. (NEO-9011)
+* Ett problem har korrigerats där länkarna i ett e-postmeddelande om godkännande kunde peka på en felaktig inloggnings-URL, särskilt när en Federated ID inloggningstyp används. (NEO-9011)
 * Korrigerade ett problem som kunde leda till att fel datum visades i datumväljarna för rapporter för vissa tidszoner. (NEO-9007)
-* Korrigerade ett problem som hindrade från att visa målet för en utgående databas när en FDA SQL-databas användes. (NEO-8924)
+* Korrigerade ett problem som gjorde att målet för en utgående databas inte kunde visas när en FDA SQL-databas användes. (NEO-8924)
 * Korrigerade ett problem som medförde att MS Dynamics CRM-kopplingen inte kunde hämta data under de första 7 dagarna i månaden. (NEO-8803)
 * Ett fel med Analytics-integrering som gjorde att användare inte kunde inkludera internationella tecken har korrigerats. (NEO-8719)
 * Korrigerade ett problem som kunde aktivera redigering av arbetsflöden utan rätt behörighet. (NEO-8708)
