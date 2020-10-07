@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1556e87f-9d92-4548-a75a-4f44030ab8d5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
@@ -32,4 +32,4 @@ Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot
 >
 >Därför rekommenderar vi att du inte använder företagets meddelandeserver för den här uppgiften eftersom den kan påverkas mycket.
 >
->Det är tillrådligt att konfigurera en specifik underdomän till din DNS och en dedikerad server för studentpost.
+>Du bör konfigurera en specifik underdomän till din DNS och en dedikerad server för att skicka studsade meddelanden.
