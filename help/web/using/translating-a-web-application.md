@@ -1,7 +1,7 @@
 ---
-title: Översätta ett webbprogram
-seo-title: Översätta ett webbprogram
-description: Översätta ett webbprogram
+title: Översätta en webbapplikation
+seo-title: Översätta en webbapplikation
+description: Översätta en webbapplikation
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b24a872-d3d1-4473-a6f9-96ba2a0eee8b
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 328e5b2f-8596-4eda-8ac5-57cb29bfb691
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 6%
 
 ---
 
 
-# Översätta ett webbprogram{#translating-a-web-application}
+# Översätta en webbapplikation{#translating-a-web-application}
 
 Du kan översätta webbprogramsidor som skapats med Adobe Campaign Digital Content Editor (DCE).
 
@@ -28,7 +28,7 @@ Om du väljer ytterligare ett språk via fliken **[!UICONTROL Localization]** i 
 
 Med det här alternativet kan du ange om blockinnehållet måste översättas eller inte.
 
-Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via fliken **[!UICONTROL Translations]** i programmet. Mer information finns på [den här sidan](../../web/using/translating-a-web-form.md).
+Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via fliken **[!UICONTROL Translations]** i programmet. Se denna [sida](../../web/using/translating-a-web-form.md) för mer information om detta.
 
 Så här flaggar du strängar som ska översättas:
 
@@ -57,7 +57,7 @@ Så här flaggar du strängar som ska översättas:
       ![](assets/dce_translation_2.png)
 
 1. När du har flaggat strängarna går du tillbaka till webbprogrammet och väljer **[!UICONTROL Translations]** fliken.
-1. Välj **[!UICONTROL Collect the strings to translate]**. Strängarna som är flaggade i DCE läggs till i webbprogrammets strängar.
+1. Välj **[!UICONTROL Collect the strings to translate]**.  Strängarna som är flaggade i DCE läggs till i webbprogrammets strängar.
 
    >[!NOTE]
    >
