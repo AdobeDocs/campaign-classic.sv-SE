@@ -11,22 +11,22 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: 568a9dec-5818-4666-b858-aa41fe827b92
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
 
 # Återvinning av händelser{#event-recycling}
 
-Om det inte går att leverera ett meddelande i en viss kanal kan Adobe Campaign skicka meddelandet på nytt via en annan kanal. Om till exempel en leverans på SMS-kanalen misslyckas, skickas meddelandet igen med e-postkanalen.
+Om det inte går att skicka ett meddelande via en viss kanal kan Adobe Campaign skicka meddelandet igen via en annan kanal. Om till exempel en leverans på SMS-kanalen misslyckas, skickas meddelandet igen med e-postkanalen.
 
 För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla händelser med **leveransfelstatus** och tilldelar dem en annan kanal.
 
 >[!CAUTION]
 >
->Det här steget kan bara utföras med ett arbetsflöde och är därför reserverat för expertanvändare. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
+>Det här steget kan bara utföras med ett arbetsflöde och är därför reserverat för expertanvändare. Mer information får du om du kontaktar kontoansvarig på Adobe.
 
