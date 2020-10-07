@@ -1,7 +1,7 @@
 ---
-title: Tjänstnivå för meddelandecenter
-seo-title: Tjänstnivå för meddelandecenter
-description: Tjänstnivå för meddelandecenter
+title: Tjänstenivå för meddelandecentret
+seo-title: Tjänstenivå för meddelandecentret
+description: Tjänstenivå för meddelandecentret
 seo-description: null
 page-status-flag: never-activated
 uuid: 8e363706-292b-40db-97bc-d41b41910556
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: e46a4e87-6c02-4b9c-bf6d-bb4e785e78fa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 6%
 
 ---
 
 
-# Tjänstnivå för meddelandecenter{#message-center-service-level}
+# Tjänstenivå för meddelandecentret{#message-center-service-level}
 
 Den här rapporten innehåller leveransstatistik för transaktionsmeddelanden samt felinformation. Du kan klicka på en feltyp för att visa information om den. Denna rapport, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]** universum i kontrollinstansen.
 
