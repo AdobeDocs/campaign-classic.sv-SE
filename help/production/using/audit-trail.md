@@ -1,7 +1,7 @@
 ---
-title: Granskningsspår
-seo-title: Granskningsspår
-description: Granskningsspår
+title: Verifieringskedja
+seo-title: Verifieringskedja
+description: Verifieringskedja
 seo-description: null
 page-status-flag: never-activated
 uuid: b96b93b6-e002-4c67-b9ce-b66cdcd395d7
@@ -11,20 +11,20 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: aa147a8c-9d93-45c8-bb4a-db714739f4c0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 4%
 
 ---
 
 
-# Granskningsspår{#audit-trail}
+# Verifieringskedja{#audit-trail}
 
-I Adobe Campaign får du tillgång till den fullständiga historiken för de ändringar du har gjort i din instans. **[!UICONTROL Audit trail]**
+I Adobe Campaign **[!UICONTROL Audit trail]** får du tillgång till den fullständiga historiken över ändringar som gjorts i instansen.
 
-**[!UICONTROL Audit trail]** i realtid innehåller en omfattande lista över åtgärder och händelser som inträffar i Adobe Campaign-instansen. Det innehåller ett självbetjäningssätt att komma åt en datahistorik som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad gjorde användarna i instansen.
+**[!UICONTROL Audit trail]** i realtid innehåller en omfattande lista över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt att komma åt en datahistorik som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad gjorde användarna i instansen.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Granskningsspårning består av tre komponenter:
 
 * **Schemagranskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna av dina scheman.
 
-   Mer information om scheman finns på den här [sidan](../../configuration/using/data-schemas.md).
+   For more information on schemas, refer to this [page](../../configuration/using/data-schemas.md).
 
 * **Arbetsflödets granskningsspår**: Kontrollera aktiviteter och de senaste ändringarna av arbetsflöden, och dessutom status för dina arbetsflöden, till exempel:
 
@@ -43,17 +43,18 @@ Granskningsspårning består av tre komponenter:
    * Pausa
    * Stoppa
    * Starta om
-   * Rensning som motsvarar åtgärden Rensa historik
+   * Rensa som är lika med åtgärden Rensa historik
    * Simulera vilket motsvarar åtgärden Starta i simuleringsläge
    * Aktivering som är lika med åtgärden Kör väntande uppgifter nu
    * Ovillkorligt stopp
-   Mer information om arbetsflöden finns på den här [sidan](../../workflow/using/about-workflows.md).
+
+   For more information on workflows, refer to this [page](../../workflow/using/about-workflows.md).
 
    Mer information om hur du övervakar arbetsflöden finns i det [dedikerade avsnittet](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Granskningsspår** för alternativ: Kontrollera aktiviteterna och de senaste ändringarna som du gjort.
 
-   Mer information om alternativen finns på den här [sidan](../../installation/using/configuring-campaign-options.md).
+   For more information on options, refer to this [page](../../installation/using/configuring-campaign-options.md).
 
 ## Åtkomst till granskningsspår {#accessing-audit-trail}
 
@@ -77,6 +78,7 @@ Så här kommer du åt instansens **[!UICONTROL Audit trail]** :
    * **[!UICONTROL Modified by]** : Användarnamn för den senaste personen som senast ändrade den här entiteten.
    * **[!UICONTROL Action]** : Senaste åtgärden som utfördes på den här entiteten, antingen Skapad, Redigerad eller Borttagen.
    * **[!UICONTROL Modification date]** : Datum för den senaste åtgärden som utfördes på den här entiteten.
+
    Kodblocket ger dig mer information om exakt vad som har ändrats i din enhet.
 
    ![](assets/audit_trail_3.png)
@@ -89,7 +91,7 @@ Så här kommer du åt instansens **[!UICONTROL Audit trail]** :
 
 Granskningsspårning kan enkelt aktiveras eller inaktiveras för en viss aktivitet om du t.ex. vill spara utrymme i databasen.
 
-Så här gör du:
+För att göra detta:
 
 1. Öppna instansens **[!UICONTROL Explorer]** meny.
 1. Välj **[!UICONTROL Administration]** sedan **[!UICONTROL Platform]** under **[!UICONTROL Options]** menyn.
@@ -102,6 +104,7 @@ Så här gör du:
    * För scheman: **[!UICONTROL XtkAudit_DataSchema]**
    * För alternativ: **[!UICONTROL XtkAudit_Option]**
    * För varje enhet: **[!UICONTROL XtkAudit_Enable_All]**
+
    ![](assets/audit_trail_5.png)
 
 1. Ändra **[!UICONTROL Value]** till 1 om du vill aktivera enheten eller till 0 om du vill inaktivera den.
