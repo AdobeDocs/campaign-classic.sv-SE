@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ Det här exemplet hjälper dig att förstå skillnaden mellan en person/en perso
 
 >[!NOTE]
 >
->Dessa indikatorer används i **[!UICONTROL Tracking indicators]** rapporten. Mer information finns i [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Dessa indikatorer används i **[!UICONTROL Tracking indicators]** rapporten. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Tre länkar läggs till i en leverans. Det skickas till fyra mottagare:
 
@@ -74,7 +74,7 @@ Marie&#39;s open visas i följande logg:
 
 ![](assets/s_ncs_user_indicators_example_4bis.png)
 
-Öppningen tilldelas en mottagare: Marie. Adobe Campaign lägger därför till en ny mottagare.
+Öppningen tilldelas en mottagare: Marie. Adobe Campaign lägger därför till en ny mottagare i räkningen.
 
 **Mellanliggande beräkning:**
 
@@ -96,7 +96,7 @@ Florians åtgärder (ett öppet och nio klick) visas i följande loggar:
 
 **Mottagare**: öppna och klickningar tilldelas samma mottagare (Florian). Eftersom den här mottagaren inte är samma som den tidigare (Marie) lägger Adobe Campaign till en ny mottagare i räkningen.
 
-Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att samma identifierare (UUID) är tilldelad alla klickningsloggar: **`fe37a503 [...]`**. Adobe Campaign identifierar dessa klick som att de tillhör samma person. En ny person läggs till i antalet.
+Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att samma identifierare (UUID) är tilldelad alla klickningsloggar: **`fe37a503 [...]`**. Adobe Campaign identifierar dessa klickningar som tillhör samma person. En ny person läggs till i antalet.
 
 **Mellanliggande beräkning:**
 
