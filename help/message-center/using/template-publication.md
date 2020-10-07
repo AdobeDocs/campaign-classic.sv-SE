@@ -1,7 +1,7 @@
 ---
-title: Mallpublicering
-seo-title: Mallpublicering
-description: Mallpublicering
+title: Publicera mall
+seo-title: Publicera mall
+description: Publicera mall
 seo-description: null
 page-status-flag: never-activated
 uuid: f83dbe5f-762c-4c58-aeed-6ec289eb522f
@@ -11,19 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Mallpublicering{#template-publication}
+# Publicera mall{#template-publication}
 
 När meddelandemallen som skapats på kontrollinstansen är klar kan du publicera den på alla körningsinstanser. Med Publication kan du automatiskt skapa två meddelandemallar i körningsinstansen som gör att du kan skicka meddelanden som är länkade till realtids- och grupphändelser.
 
