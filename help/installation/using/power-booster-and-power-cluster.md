@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 7%
 
 ---
 
@@ -24,15 +24,15 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ## Översikt {#overview}
 
-Adobe Campaign innehåller två uppsättningar förpaketerade arkitektoniska alternativ för att dimensionera driftsättningen:
+Adobe Campaign tillhandahåller två uppsättningar färdiga arkitektoniska alternativ för att dimensionera driftsättningen:
 
 * **Power Booster**
 
-   Det här alternativet ger stöd för en enda ytterligare körningsinstans som inte är kopplad till den primära programinstansen för Adobe Campaign. Dedikerade körningsinstanser kan fjärrhanteras eller hanteras av en tredje part. När det är implementerat hanteras e-postkörning, spårning, speglingssidor och studsmeddelanden oberoende av de centrala programfunktionerna.
+   Det här alternativet har stöd för ytterligare en körningsinstans som är fristående från den primära programinstansen i Adobe Campaign. Dedikerade körningsinstanser kan fjärrhanteras eller hanteras av en tredje part. När det är implementerat hanteras e-postkörning, spårning, speglingssidor och studsmeddelanden oberoende av de centrala programfunktionerna.
 
 * **Power Cluster**
 
-   Det här alternativet ger stöd för 2 till N-klustrade körningsinstanser som inte är kopplade till den primära programinstansen för Adobe Campaign i förhållande till ett visst program. Kluster kan fjärrhanteras, distribueras och hanteras av tredje part. Förutom fördelarna med processisolering kan man med Adobe Campaign Power Cluster-alternativet få redundans och utbyggbara strategier med hjälp av maskinvara för förenklad utveckling av SLA eller prestanda.
+   Det här alternativet ger stöd för 2 till N klustrade körningsinstanser som är frikopplade från den primära Adobe Campaign-programinstansen i förhållande till ett visst program. Kluster kan fjärrhanteras, distribueras och hanteras av tredje part. Förutom fördelarna med processisolering möjliggör Adobe Campaign Power Cluster-alternativet redundans och utskalning av strategier med hjälp av maskinvara för förenklad utveckling av SLA eller prestanda.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -90,6 +90,6 @@ Alternativen Power Booster och Power Cluster kan användas av följande program:
 ## Rekommendationer {#recommendations}
 
 * En körningsinstans måste dedikeras till en tjänst. Du kan inte installera ett paket för en tjänst som du inte har prenumererat på. Om du till exempel prenumererar på alternativet **Power Booster** för tjänsten **Message Center** , kan du bara installera paketet på den dedikerade körningsinstansen **[!UICONTROL Execution of transactional messages]** . Kontrollera licensavtalet.
-* Eftersom dedikerade instanser (eller kluster) är Adobe Campaign-instanser är rekommendationerna samma som för en huvudinstans. Mer information finns i [det här dokumentet](../../production/using/foreword.md).
+* Eftersom dedikerade instanser (eller kluster) är Adobe Campaign-instanser är rekommendationerna samma som för en huvudinstans. For more on this, refer to [this document](../../production/using/foreword.md).
 * Kontakta Adobe Campaign Professional Services om du vill konfigurera instansen från en databas-/maskinvarukomponentvy.
 
