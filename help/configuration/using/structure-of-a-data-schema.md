@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: a1a39eaa-6d6f-42c5-a36b-bd1cb3a77dcb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 13%
 
 ---
 
 
 # Dataschemats struktur{#structure-of-a-data-schema}
 
-Strukturen i ett dataschema visas i form av en trädstruktur. Om du vill visa det grafiskt i Adobe Campaign-klientkonsolen markerar du målschemat och klickar på **[!UICONTROL Structure]** underfliken.
+Strukturen i ett dataschema visas i form av en trädstruktur. Om du vill visa det grafiskt i Adobe Campaign klientkonsol markerar du målschemat och klickar på **[!UICONTROL Structure]** underfliken.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
