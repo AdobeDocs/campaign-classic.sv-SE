@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 8590cc75-11c8-450d-90e8-56744e12ac70
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # Webbnedladdning{#web-download}
 
-Nedladdningen **av** webben startar nedladdningen av en fil på en explicit URL, ett externt konto eller en Adobe Campaign-instans. HTTP-protokollet används. Det kan vara en GET- eller POST-nedladdning.
+Nedladdningen **av** webben startar nedladdningen av en fil på en explicit URL, ett externt konto eller en Adobe Campaign-instans. HTTP-protokollet används. Det kan vara en nedladdning av GET eller POST.
 
 ## Egenskaper {#properties}
 
@@ -55,9 +52,10 @@ Nedladdningen **av** webben startar nedladdningen av en fil på en explicit URL,
 
    Följande alternativ är tillgängliga:
 
-   * **[!UICONTROL Use a default storage directory]**: filen alltid flyttas innan den bearbetas. Om det här alternativet är markerat flyttas filen till standardlagringskatalogen ( **vars** katalog finns i installationsmappen för Adobe Campaign). Om du vill ange en lagringskatalog avmarkerar du kryssrutan och anger sökvägen i **[!UICONTROL Storage directory]** fältet
+   * **[!UICONTROL Use a default storage directory]**: filen alltid flyttas innan den bearbetas. Om det här alternativet är markerat flyttas filen till standardlagringskatalogen ( **vars** katalog finns i Adobe Campaign installationsmapp). Om du vill ange en lagringskatalog avmarkerar du kryssrutan och anger sökvägen i **[!UICONTROL Storage directory]** fältet
    * **[!UICONTROL Number of files]**: Ange det maximala antalet filer som ska lagras i lagringskatalogen.
    * **[!UICONTROL Maximum size (in Mb)]**: Ange maximal lagringskatalogkapacitet (i megabyte).
+
    Varje fil sparas i 24 timmar innan den omfattas av de definierade reningsreglerna. Rensa sker precis innan aktiviteten startas och tar därför inte hänsyn till den aktuella arbetsflödesfilen.
 
    Filerna tas bort som en funktion av deras ålder (äldsta till nyaste). De äldsta filerna rensas tills båda tömningsreglerna verifieras. Om du definierar en gräns på 100 filer innebär det därför att lagringskatalogen alltid innehåller de 100 senaste filerna innan arbetsflödet påbörjas, samt de som bearbetas i arbetsflödet som pågår.
