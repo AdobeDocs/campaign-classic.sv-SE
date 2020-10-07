@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: e1ab1e82-8194-40a8-8df3-e7cfbaa3e777
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 3%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera och välja data från databasen via kuber. Detta gör att du kan:
 
-* Skapa rapporter baserade på kuber. Processen beskrivs här: Utforska [data i en rapport](#exploring-the-data-in-a-report).
+* Skapa rapporter baserade på kuber. Processen beskrivs här: [Utforska data i en rapport](#exploring-the-data-in-a-report).
 * Samla in data i databasen och gruppera dem i listor, t.ex. för att identifiera och bygga mål och leveranser. Mer information finns i [Skapa en målpopulation](#building-a-target-population).
 * Infoga en pivottabell i en rapport och referera till en befintlig kub i den. Mer information finns i [Infoga en pivottabell i en rapport](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
->Marknadsföringsanalys krävs för att skapa eller ändra kuber. Mer information finns i [Om kuber](../../reporting/using/about-cubes.md).
+>Marknadsföringsanalys krävs för att skapa eller ändra kuber. For more on this, refer to [About cubes](../../reporting/using/about-cubes.md).
 
 ## Utforska data i en rapport {#exploring-the-data-in-a-report}
 
@@ -59,7 +59,7 @@ Med **[!UICONTROL Add]** knapparna på varje axel kan du lägga till dimensioner
 
    Parametrarna beror på datatypen för den valda dimensionen.
 
-   För datum kan till exempel flera nivåer vara tillgängliga. Mer information finns i [Visa mått](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   För datum kan till exempel flera nivåer vara tillgängliga. For more on this, refer to [Displaying measures](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    Följande alternativ erbjuds i det här fallet:
 
@@ -85,7 +85,7 @@ När raderna och kolumnerna är på plats anger du de mått som du vill visa sam
 
 Som standard visas bara ett mått. Så här lägger du till eller konfigurerar mått:
 
-1. Klicka på **[!UICONTROL Measures]** knappen.
+1. Klicka på knappen **[!UICONTROL Measures]**.
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
@@ -116,6 +116,7 @@ Som standard visas bara ett mått. Så här lägger du till eller konfigurerar m
    * Andel: Med den här typen av mått kan du beräkna antalet poster som mäts för en given dimension. Du kan beräkna proportionaliteten baserat på en dimension eller en underdimension.
    * Variation: Med det här måttet kan du beräkna variationen i värden för en nivå.
    * Standardavvikelse: Med den här typen av mått kan du beräkna avvikelser inom varje cellgrupp jämfört med medelvärdet för värdena. Du kan till exempel jämföra inköpsvolymen för alla befintliga segment.
+
    Det skapade måttet läggs till i rapporten.
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
@@ -164,7 +165,7 @@ Gör så här om du vill gruppera en population i en lista:
 
 Så här skapar du en tabell och utforskar data i en kub:
 
-1. Skapa en ny rapport med en enda sida och infoga en pivottabell i den. Mer information finns på [den här sidan](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table).
+1. Skapa en ny rapport med en enda sida och infoga en pivottabell i den. Se denna [sida](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table) för mer information om detta.
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
