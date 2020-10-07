@@ -1,6 +1,6 @@
 ---
-title: Beskrivning av datamodellen Adobe Campaign Classic
-description: I det här dokumentet beskrivs datamodellen Adobe Campaign Classic.
+title: Beskrivning av Adobe Campaign Classic datamodell
+description: I det här dokumentet beskrivs Adobe Campaign Classic datamodell.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -9,21 +9,18 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Beskrivning av kampanjdatamodell{#data-model-description}
+# Campaign data model description{#data-model-description}
 
-Adobe Campaign levereras med en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i datamodellen för Adobe Campaign och deras interaktion.
+Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i Adobe Campaign datamodell och hur de fungerar.
 
 Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på **[!UICONTROL Documentation]** fliken.
 
@@ -31,19 +28,19 @@ Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICO
 
 >[!NOTE]
 >
->Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder en grammatik som är specifik för Adobe Campaign och som kallas ett schema. Mer information om scheman för Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
+>Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## Beskrivning av huvudtabellerna {#description-main-tables}
 
 Adobe Campaign förlitar sig på en relationsdatabas som innehåller tabeller som är länkade tillsammans.
 
-I följande diagram visas kopplingarna mellan huvudtabellerna i datamodellen för Adobe Campaign med huvudfälten för varje.
+I följande diagram visas kopplingarna mellan huvudtabellerna i Adobe Campaign datamodell och huvudfälten för varje.
 
 <!--![](assets/data-model_diagram.png)-->
 
 ![](assets/data-model_simplified-diagram.png)
 
-Den fördefinierade datamodellen för Adobe Campaign innehåller huvudtabellerna som listas nedan.
+Den fördefinierade Adobe Campaign datamodellen innehåller huvudtabellerna som listas nedan.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -57,9 +54,9 @@ Det är standardtabellen som används för **mottagare av leveranser**. Den inne
 * sPhone, sMobilePhone, sFax innehåller telefon-, mobiltelefon- och faxnummer.
 * iBlockList är standardflaggan för avanmälan som används för profilerna (1 betyder&quot;unsubscribed&quot;, 0 annars).
 
-Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körningsmapp. Mer information finns i [XtkFolder](#XtkFolder).
+Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körningsmapp. For more on this, see [XtkFolder](#XtkFolder).
 
-Fältet sCountryCode är ISO-koden 3166-1 Alpha 2 (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet&quot;XX&quot; (och används i stället för en nollpost).
+Fältet sCountryCode är ISO-koden 3166-1 Alpha 2 (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet &#39;XX&#39; (och används i stället för en nollpost).
 
 Mer information om mottagartabellen finns i [det här avsnittet](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -67,7 +64,7 @@ Mer information om mottagartabellen finns i [det här avsnittet](../../configura
 
 Tabellen matchar **nms:group** -schemat.
 
-Det gör att du kan skapa **statiska grupper med mottagare**. Det finns en många-till-många-relation mellan mottagare och grupper. En mottagare kan till exempel tillhöra flera grupper och en grupp kan innehålla flera mottagare. Grupper kan skapas manuellt, via en import eller via leveransanpassning. Grupper används ofta som leveransmål. Det finns ett unikt index i fältet som representerar det interna namnet för sName-gruppen. Gruppen är länkad till en mapp (nyckeln är iFolderId). Mer information finns i [XtkFolder](#XtkFolder)).
+Det gör att du kan skapa **statiska grupper med mottagare**. Det finns en många-till-många-relation mellan mottagare och grupper. En mottagare kan till exempel tillhöra flera grupper och en grupp kan innehålla flera mottagare. Grupper kan skapas manuellt, via en import eller via leveransanpassning. Grupper används ofta som leveransmål. Det finns ett unikt index i fältet som representerar det interna namnet för sName-gruppen. Gruppen är länkad till en mapp (nyckeln är iFolderId). For more on this, see [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -81,7 +78,7 @@ I Adobe Campaign kan du skapa och hantera prenumerationer på informationstjäns
 
 Tjänster är enheter som liknar grupper (statiska mottagargrupper), förutom att de distribuerar mer information och gör det enkelt att hantera prenumerationer och avbeställningar via formulär.
 
-Det finns ett unikt index i fältet som representerar det interna namnet för sName-tjänsten. Tjänsten är länkad till en mapp (nyckeln är iFolderId). Mer information finns i [XtkFolder](#XtkFolder)). Slutligen anger iType-fältet tjänstens leveranskanal (0 för e-post, 1 för SMS, 2 för telefon, 3 för direktreklam och 4 för fax).
+Det finns ett unikt index i fältet som representerar det interna namnet för sName-tjänsten. Tjänsten är länkad till en mapp (nyckeln är iFolderId). For more on this, see [XtkFolder](#XtkFolder)). Slutligen anger iType-fältet tjänstens leveranskanal (0 för e-post, 1 för SMS, 2 för telefon, 3 för direktreklam och 4 för fax).
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -101,7 +98,7 @@ Tabellen matchar **nms:delivery** -schemat.
 
 Varje post i den här tabellen representerar en **leveransåtgärd** eller en **leveransmall**. Den innehåller alla parametrar som krävs för att utföra leveranser (mål, innehåll osv.). Leveransloggar (utsändning) (NmsBroadLog) och tillhörande spårnings-URL:er (NmsTrackingUrl) skapas under analysfasen (mer information om båda tabellerna finns nedan).
 
-Det finns ett unikt index i fältet som representerar det interna namnet för sInternalName-leveransen eller scenariot. Leveransen är länkad till en körningsmapp (den externa nyckeln är iFolderProcessId. Mer information finns i [XtkFolder](#XtkFolder)).
+Det finns ett unikt index i fältet som representerar det interna namnet för sInternalName-leveransen eller scenariot. Leveransen är länkad till en körningsmapp (den externa nyckeln är iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
