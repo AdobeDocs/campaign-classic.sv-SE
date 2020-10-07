@@ -11,18 +11,18 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: a78c9986-7c49-47db-99a0-9f0949c4dee7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 4%
 
 ---
 
 
 # Om händelsebearbetning{#about-event-processing}
 
-När det gäller transaktionsmeddelanden genereras en händelse av ett externt informationssystem och skickas till Adobe Campaign via metoderna **[!UICONTROL PushEvent]** och **[!UICONTROL PushEvents]** (se [händelsebeskrivningen](../../message-center/using/event-description.md)). Den innehåller data som är länkade till händelsen, till exempel dess typ (orderbekräftelse eller kontoskapande på en webbplats till exempel), e-postadress eller mobilnummer, samt annan information som gör att du kan förbättra och anpassa transaktionsmeddelandet före leverans. Det kan vara kundens kontaktinformation, meddelandespråket eller e-postformatet.
+När det gäller transaktionsmeddelanden genereras en händelse av ett externt informationssystem och skickas till Adobe Campaign via **[!UICONTROL PushEvent]** och **[!UICONTROL PushEvents]** metoder (se [händelsebeskrivningen](../../message-center/using/event-description.md)). Den innehåller data som är länkade till händelsen, till exempel dess typ (orderbekräftelse eller kontoskapande på en webbplats till exempel), e-postadress eller mobilnummer, samt annan information som gör att du kan förbättra och anpassa transaktionsmeddelandet före leverans. Det kan vara kundens kontaktinformation, meddelandespråket eller e-postformatet.
 
 Exempel på händelsedata:
 
@@ -33,7 +33,7 @@ Om du vill bearbeta transaktionsmeddelandehändelser måste följande steg utfö
 1. Händelsesamling,
 1. Händelseöverföring till en meddelandemall,
 1. händelseberikning med personaliseringsdata,
-1. Leveranssätt,
+1. Leveranskörning,
 1. Återvinning av händelser vars länkade leverans misslyckades (det här steget kan utföras via ett Adobe Campaign-arbetsflöde).
 
 ## Händelsestatus {#event-statuses}
@@ -47,5 +47,5 @@ I **Händelsehistoriken**, under **[!UICONTROL Message Center]** > **[!UICONTROL
 
 * **Väntande leverans**: händelsen bearbetades och leveransmallen är länkad. E-postmeddelandet väntar på att levereras och den klassiska leveransprocessen tillämpas. Du kan öppna leveransen om du vill ha mer information. Se [Leverans](../../delivery/using/about-message-tracking.md).
 * **Skickat**, **ignorerat** och **leveransfel**: dessa leveransstatus återställs via arbetsflödet **updateEventsStatus** . Mer information får du genom att öppna den relevanta leveransen.
-* **Händelsen omfattas** inte: routningsfasen för meddelandecentret misslyckades. Adobe Campaign hittade till exempel inte e-postmeddelandet som fungerar som en mall för händelsen.
+* **Händelsen omfattas** inte: routningsfasen för meddelandecentret misslyckades. Adobe Campaign hittade till exempel inte e-postmeddelandet som fungerar som mall för händelsen.
 * **Händelsen har upphört att gälla**: det maximala antalet sändningsförsök har uppnåtts. Händelsen betraktas som null.
