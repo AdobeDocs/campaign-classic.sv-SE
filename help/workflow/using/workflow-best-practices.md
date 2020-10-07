@@ -1,7 +1,7 @@
 ---
-title: Bästa arbetsflöden
-seo-title: Bästa arbetsflöden
-description: Bästa arbetsflöden
+title: Bästa praxis för arbetsflöden
+seo-title: Bästa praxis för arbetsflöden
+description: Bästa praxis för arbetsflöden
 seo-description: null
 page-status-flag: never-activated
 uuid: 56b04004-5d96-4169-9494-3d04284d5a3d
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# Bästa arbetsflöden{#workflow-best-practices}
+# Bäst praxis för arbetsflöden{#workflow-best-practices}
 
 ## Körning och prestanda {#execution-and-performance}
 
@@ -94,7 +91,7 @@ Om arbetsflödet påverkar hela plattformen (till exempel rensningsprocesser) ka
 
 ### Namnge arbetsflöde {#workflow-naming}
 
-Eftersom det gör det enklare att hitta och felsöka dem om de inte fungerar på rätt sätt rekommenderar Adobe att du ger arbetsflödena egna namn och etiketter: fylla i arbetsflödets beskrivningsfält för att sammanfatta den process som ska utföras så att operatorn lätt kan förstå den.
+Eftersom det gör det enklare att hitta och felsöka dem om de inte fungerar på rätt sätt rekommenderar Adobe att du ger arbetsflödena egna namn och etiketter: fyll i arbetsflödets beskrivningsfält för att sammanfatta den process som ska utföras så att operatören kan förstå den utan problem.
 
 Om arbetsflödet är en del av en process som innefattar flera arbetsflöden kan du vara tydlig när du anger en etikett; Att använda siffror är ett bra sätt att ordna arbetsflödena (med Label).
 
@@ -126,11 +123,11 @@ Alla schemalagda arbetsflöden som körs i produktionsmiljöer bör övervakas f
 
 I arbetsflödesegenskaperna väljer du en Supervisor-grupp, antingen standardgruppen **[!UICONTROL Workflow supervisors]** eller en anpassad grupp. Se till att minst en operator tillhör den här gruppen, med en e-postkonfiguration.
 
-Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. Mer information finns i [Hantera fel](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
+Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. For more on this, refer to [Managing errors](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Kontrollera regelbundet **[!UICONTROL Monitoring]** universum för att se den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Kontrollera regelbundet **[!UICONTROL Monitoring]** universum för att se den övergripande statusen för de aktiva arbetsflödena. For more on this, refer to [Instance supervision](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
-Workflow HeatMap gör att Adobe Campaign-plattformens administratörer kan övervaka belastningen på instansen och planera arbetsflödena i enlighet med detta. Mer information finns i [Arbetsflödesövervakning](../../workflow/using/heatmap.md).
+Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. For more on this, refer to [Workflow monitoring](../../workflow/using/heatmap.md).
 
 ## Använda aktiviteter {#using-activities}
 
@@ -147,7 +144,7 @@ Aktivitetsnamnet finns på **[!UICONTROL Advanced]** fliken. Ge dem inte namn **
 ### Första och sista aktiviteten {#first-and-last-activities}
 
 * Starta alltid arbetsflödet med en **[!UICONTROL Start]** aktivitet eller en **[!UICONTROL Scheduler]** aktivitet. När det är relevant kan du även använda en **[!UICONTROL External signal]** aktivitet.
-* När du skapar ditt arbetsflöde ska du bara använda en aktivitet per gren **[!UICONTROL Scheduler]** . Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra), multipliceras antalet uppgifter som ska utföras exponentiellt, vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även för alla aktiviteter med en **[!UICONTROL Scheduling & History]** flik. Läs mer om [schemaläggning](../../workflow/using/scheduler.md).
+* When building your workflow, only use one **[!UICONTROL Scheduler]** activity per branch. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra) så multipliceras antalet uppgifter som ska utföras exponentiellt vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även för alla aktiviteter med en **[!UICONTROL Scheduling & History]** flik. Läs mer om [schemaläggning](../../workflow/using/scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
