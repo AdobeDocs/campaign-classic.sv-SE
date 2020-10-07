@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -32,7 +29,7 @@ Vid implementering av leverans är några av de bästa sätten att försöka upp
 
 >[!NOTE]
 >
->Om du vill ha mer information om strategier för återengagemang i kampanjer och Adobes leveranstjänster kan du kontakta din leveranskonsult eller prata med din Adobe-säljare.
+>Om du vill ha mer information om strategier för återengagemang i kampanjer och Adobe’s Deliverability Services kontaktar du din Deliverability-konsult eller pratar med din säljare på Adobe.
 
 ## Hur visar internetleverantörer icke-engagemangsaktiviteter? {#how-do-isps-view-non-engagement-activity-}
 
@@ -55,7 +52,7 @@ Enligt en studie av Return Path resulterade återengagemangskampanjer i en öppe
 ### Fas 1 {#phase-1}
 
 * Det första steget är att identifiera prenumeranter som har mycket lite till ingen öppnings- eller klickaktivitet och segmentera gruppen utifrån en bestämd tidsram. Regeln är att granska prenumeranter som inte har öppnat eller klickat på ett e-postmeddelande inom de senaste 90 dagarna. Detta varierar dock beroende på verksamhetens art (till exempel säsongsbunden sändning).
-* En annan sak att tänka på när man definierar tidsramar är att internetleverantörer och blocklistföretag ser engagemang som varsomhelst mellan 1,5 och 1,8 år. Dessutom kan beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten, förekomma.
+* En annan sak som du bör tänka på när du definierar tidsramar är att internetleverantörer och företag i blockeringslista anser att engagemang är var som helst mellan 1,5 och 1,8 år. Dessutom kan beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten, förekomma.
 
 ### Fas 2 {#phase-2}
 
