@@ -1,5 +1,5 @@
 ---
-title: Utföra aggregerad databearbetning
+title: Utföra aggregerad databehandling
 description: Lär dig hur du utför sammanställd datoranvändning i frågor
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 2%
 
 ---
 
 
-# Utföra aggregerad databearbetning {#performing-aggregate-computing}
+# Utföra aggregerad databehandling {#performing-aggregate-computing}
 
 I det här exemplet vill vi räkna antalet mottagare som bor i London enligt kön.
 
