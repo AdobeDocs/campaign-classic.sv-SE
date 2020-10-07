@@ -1,6 +1,6 @@
 ---
 title: Adobe Campaign Classic Interaction best practices
-description: I det här avsnittet beskrivs det bästa sättet att hantera interaktionsmodulen i Adobe Campaign Classic.
+description: I det här avsnittet beskrivs de bästa sätten att hantera interaktionsmodulen i Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 88bcc1d5-be8f-4a63-9b4a-3843b5751abe
 contentOwner: sauviat
@@ -9,22 +9,22 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 85e8348f-d240-4a36-b7bd-645807dbc227
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 91f80adf0b84d45a71e07079d4e72fd7628b41c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 0%
 
 ---
 
 
-# Bästa praxis för samverkan{#interaction-best-practices}
+# Bästa praxis för interaktion{#interaction-best-practices}
 
 ## Allmänna rekommendationer {#general-recommendations}
 
-I det här avsnittet beskrivs de effektivaste strategierna för att hantera interaktionsmodulen i Adobe Campaign Classic, inklusive regler för behörighet, fördefinierade filter, arbetsflödesaktiviteter och databasalternativ.
+I det här avsnittet beskrivs de bästa sätten att hantera interaktionsmodulen i Adobe Campaign Classic, inklusive regler för behörighet, fördefinierade filter, arbetsflödesaktiviteter och databasalternativ.
 
-Interaktionen i Adobe Campaign kräver noggrann hantering för att fungera effektivt. Du måste hitta en balans mellan antalet kontakter och antalet erbjudandekategorier och erbjudanden. Om dessa faktorer inte behandlas noggrant kan det uppstå problem i Adobe Campaign-instansen.
+Interaktion i Adobe Campaign kräver noggrann hantering för att fungera effektivt. Du måste hitta en balans mellan antalet kontakter och antalet erbjudandekategorier och erbjudanden. Om dessa faktorer inte behandlas noggrant kan det uppstå problem i din Adobe Campaign-instans.
 
 ### Implementering {#implementation}
 
@@ -32,7 +32,7 @@ Nedan visas viktiga element som du bör tänka på när du implementerar och kon
 
 * För batchmotor (som vanligtvis används i utgående kommunikation som e-post) är dataflöde huvudproblemet, eftersom flera kontakter kan hanteras samtidigt. Den typiska flaskhalsen är databasprestanda.
 * Den huvudsakliga begränsningen för en enastående motor (används vanligtvis i inkommande kommunikation som en banderoll på en webbplats) är fördröjning, eftersom någon förväntar sig ett svar. Den typiska flaskhalsen är processorprestanda.
-* Katalogdesignen för erbjudandet har stor inverkan på prestandan i Adobe Campaign Classic.
+* Katalogdesignen har stor inverkan på Adobe Campaign Classic prestanda.
 * När det finns många erbjudanden kan du dela upp dem i flera olika erbjudandekataloger.
 
 ### Villkor {#eligibility-rules}
@@ -61,7 +61,7 @@ Nedan visas några metodtips om förslagstabellen.
 
 ## Tips och tricks för att hantera erbjudanden {#tips-managing-offers}
 
-Det här avsnittet innehåller mer detaljerad information om hur du hanterar erbjudanden och använder interaktionsmodulen i Adobe Campaign Classic.
+I det här avsnittet finns mer detaljerad information om hur du hanterar erbjudanden och använder interaktionsmodulen i Adobe Campaign Classic.
 
 ### Använda flera erbjudandeplatser i e-postleveranser {#multiple-offer-spaces}
 
@@ -119,7 +119,7 @@ Du kan också lagra ytterligare metadata direkt i förslagstabellen, t.ex. aktue
 
 När du använder utgående interaktion kan fältet @rank läggas till, som i exemplet ovan, men dess värde ställs in automatiskt baserat på den ordning som returneras av Interaction. Om du till exempel använder Interaction för att välja tre erbjudanden returneras värdena 1, 2 och 3 i fältet @rank.
 
-När du använder Interaction och väljer erbjudanden manuellt kan användaren kombinera båda metoderna. Användaren kan till exempel manuellt ange att fältet @rank ska vara 1 för det manuellt valda erbjudandet och använda ett uttryck som &quot;1 + @rank&quot; för erbjudanden som returneras av Interaction. Om Interaction väljer tre erbjudanden rangordnas de erbjudanden som returneras av båda metoderna 1-4:
+När du använder Interaction och väljer erbjudanden manuellt kan användaren kombinera båda metoderna. Användaren kan till exempel manuellt ange att fältet @rank ska vara 1 för det manuellt valda erbjudandet och använda ett uttryck som &quot;1 + @rank&quot; för erbjudanden som returneras av Interaction. Om Interaction väljer tre erbjudanden rangordnas de som returneras av båda metoderna 1-4:
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
@@ -127,7 +127,7 @@ När du använder Interaction och väljer erbjudanden manuellt kan användaren k
 
 När du utökar schemat nms:offer måste du följa den färdiga strukturen som redan är konfigurerad:
 * Definiera nya fält för innehållslagring under `<element name="view">`.
-* Varje nytt fält måste definieras två gånger. En gång som ett vanligt XML-fält och en gång som ett CDATA XML-fält med &quot;_jst&quot; som tillägg till namnet. Till exempel:
+* Varje nytt fält måste definieras två gånger. En gång som ett vanligt XML-fält och en gång som ett CDATA XML-fält med &quot;_jst&quot; som tillägg till namnet. Exempel:
 
    ```
    <element label="Price" name="price" type="long" xml="true"/>
