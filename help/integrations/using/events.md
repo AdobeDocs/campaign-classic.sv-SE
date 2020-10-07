@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Utlösarhändelser {#events}
+# Utlösa händelser {#events}
 
 ## Bearbeta händelser i JavaScript {#events-javascript}
 
@@ -58,7 +55,7 @@ Starta om [!DNL pipelined] när du har redigerat JS.
 Data skickas [!DNL trigger] till JS-funktionen. Det är i XML-format.
 
 * Attributet **[!UICONTROL @triggerId]** innehåller namnet på [!DNL trigger].
-* Elementet **enrichments** i JSON-format innehåller data som genererats av Analytics och är kopplat till utlösaren.
+* Elementet **enrichments** i JSON-format innehåller data som genereras av Analytics och är kopplat till utlösaren.
 * **[!UICONTROL @offset]** är pekaren till meddelandet. Den anger ordningen för meddelandet i kön.
 * **[!UICONTROL @partitio]**n är en meddelandebehållare i kön. Förskjutningen är relativ till en partition. <br>Det finns ungefär 15 partitioner i kön.
 
@@ -210,7 +207,7 @@ Här följer ett exempel på schemakod för den här tabellen:
 | shopper_key | Lång | shopper_key | Bugarens externa identifierare som hämtats av Analytics. |
 | skapad | Datetime | Skapad | Den tid då händelsen skapades i Campaign. |
 | lastModified | Datetime | Senast ändrad | Den senaste gången händelsen ändrades i Adobe. |
-| timeGMT | Datetime | Tidsstämpel | Den tidpunkt då händelsen genererades i Analytics. |
+| timeGMT | Datetime | Tidsstämpel | Den tid då händelsen genererades i Analytics. |
 
 ### Visa händelserna {#display-events}
 
@@ -229,7 +226,7 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 Avstämning är processen att matcha kunden från Analytics med Campaign-databasen. Kriterierna för matchning kan till exempel vara shopper_id.
 
 Av prestandaskäl måste matchningen göras i gruppläge av ett arbetsflöde.
-Frekvensen måste anges till 15 minuter för att arbetsbelastningen ska optimeras. Därför är fördröjningen mellan ett mottagningstillfälle i Adobe Campaign och dess behandling i ett marknadsföringsarbetsflöde upp till 15 minuter.
+Frekvensen måste anges till 15 minuter för att arbetsbelastningen ska optimeras. Därför är fördröjningen mellan en mottagning i Adobe Campaign och dess bearbetning i ett marknadsföringsarbetsflöde upp till 15 minuter.
 
 ### Alternativ för enhetsavstämning i JavaScript {#options-unit-reconciliation}
 
