@@ -1,7 +1,7 @@
 ---
-title: Skapa erbjudandemellanslag
-seo-title: Skapa erbjudandemellanslag
-description: Skapa erbjudandemellanslag
+title: Skapa erbjudandeplatser
+seo-title: Skapa erbjudandeplatser
+description: Skapa erbjudandeplatser
 seo-description: null
 page-status-flag: never-activated
 uuid: 2ad38697-db14-4dc0-abb8-9b71d57e0e35
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 0fae2149-0980-466d-ac9e-8afec2e278be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '984'
+ht-degree: 2%
 
 ---
 
 
-# Skapa erbjudandemellanslag{#creating-offer-spaces}
+# Skapa erbjudandeplatser{#creating-offer-spaces}
 
 Det går endast att skapa utrymme för erbjudandet av en **teknisk administratör** med tillgång till undermappen för erbjudandeutrymmet. Utrymmen kan bara skapas i designmiljön och dupliceras automatiskt till den aktiva miljön när erbjudandet godkänns.
 
@@ -51,7 +51,7 @@ Gör så här för att skapa ett nytt erbjudande:
 
    ![](assets/offer_space_create_003.png)
 
-1. Gå till **[!UICONTROL Content]** noden och markera fälten i följande ordning: **[!UICONTROL Title]**, då **[!UICONTROL Image URL]**, då **[!UICONTROL HTML content]**, **[!UICONTROL Destination URL]**.
+1. Gå till **[!UICONTROL Content]** noden och markera fälten i följande ordning: **[!UICONTROL Title]**, sedan **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** då **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
@@ -74,7 +74,7 @@ Gör så här för att skapa ett nytt erbjudande:
 
    ![](assets/offer_space_create_007.png)
 
-Om det behövs kan du överlagra XML-återgivningsfunktionerna för inkommande interaktioner. Du kan också överlagra återgivningsfunktioner för HTML och text för utgående interaktioner. Mer information finns i [Om inkommande kanaler](../../interaction/using/about-inbound-channels.md).
+Om det behövs kan du överlagra XML-återgivningsfunktionerna för inkommande interaktioner. Du kan också överlagra återgivningsfunktionerna för HTML och text för utgående interaktioner. Mer information finns i [Om inkommande kanaler](../../interaction/using/about-inbound-channels.md).
 
 ## Erbjud förslagsstatus {#offer-proposition-statuses}
 
@@ -145,11 +145,11 @@ Så snart en besökare klickar på erbjudandet, och därmed URL:en, tillämpas *
 >
 >Om du vill ange en annan status på URL:en (till exempel om ett erbjudande avvisas) använder du värdet som motsvarar önskad status. Exempel: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; och så vidare.
 >
->Status och deras värden kan hämtas i **[!UICONTROL Offer propositions (nms)]** dataschemat. Mer information finns på [den här sidan](../../configuration/using/data-schemas.md).
+>Status och deras värden kan hämtas i **[!UICONTROL Offer propositions (nms)]** dataschemat. Se denna [sida](../../configuration/using/data-schemas.md) för mer information om detta.
 
 **Utgående interaktion**
 
-Om det gäller en utgående interaktion kan du automatiskt tillämpa **[!UICONTROL Interested]** status på ett erbjudande när leveransen innehåller en länk. Lägg bara till **_urlType=&quot;11&quot;** -värdet till länken:
+Om det gäller en utgående interaktion kan du automatiskt tillämpa **[!UICONTROL Interested]** status på ett erbjudande när leveransen innehåller en länk. Lägg bara till värdet **_urlType=&quot;11&quot;** till länken:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
