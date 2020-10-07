@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 71969b30-cc01-4358-9597-f17939720684
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
    Om installationen innehåller flera arbetsflödesservrar använder du det här fältet för att välja vilken dator arbetsflödet ska köras på. Om värdet som definieras i det här fältet inte finns på någon server, kommer arbetsflödet att förbli väntande.
 
-   Se det här [avsnittet](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Refer to this [section](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 
@@ -64,7 +64,7 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
    Det här alternativet får endast användas för felsökning och aldrig i produktion. När det är aktiverat prioriteras arbetsflödet och alla andra arbetsflöden stoppas tills det är klart.
 
-### Felhantering {#error-management}
+### Error management {#error-management}
 
 * **[!UICONTROL Troubleshooting]**
 
@@ -85,7 +85,7 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   Standardmallen innehåller en länk för att komma åt Adobe Campaign-konsolen via webben, så att mottagaren kan arbeta med problemet när han eller hon är inloggad. **[!UICONTROL Notification to a workflow supervisor]**
+   Standardmallen innehåller en länk för åtkomst till Adobe Campaign-konsolen via webben så att mottagaren kan arbeta med problemet när han eller hon är inloggad. **[!UICONTROL Notification to a workflow supervisor]**
 
    Om du vill skapa en personlig mall går du till **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.
 
