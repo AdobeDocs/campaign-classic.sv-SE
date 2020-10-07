@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a26ec7ed1c8463270ac9f97079f49e00d5b258e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 3%
 
 ---
 
@@ -32,13 +32,13 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Bekräfta genom **[!UICONTROL OK]** att klicka. Adobe Campaign identifierar automatiskt strukturen för den valda tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
+1. Bekräfta genom **[!UICONTROL OK]** att klicka. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta skapandet.
 
    >[!CAUTION]
    >
-   >Med snöflake är en primärnyckel obligatorisk.
+   >Med Snowflake är en primärnyckel obligatorisk.
 
    ![](assets/wf_new_schema_generate_fda.png)
 
