@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 41338d32-b95c-45ae-bee6-17b2af5bd837
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 2%
 
 ---
 
@@ -75,7 +75,7 @@ Använd följande steg:
 
    >[!NOTE]
    >
-   >Utbyggnaden av **nms:seedMember** -schemat måste överensstämma med strukturen för en kampanj och en leverans i Adobe Campaign.
+   >Utbyggnaden av **nms:seedMember** -schemat måste följa strukturen för en kampanj och en leverans i Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -87,7 +87,7 @@ Använd följande steg:
    >    * I tillägget **nms:seedMember** måste fältet som innehåller e-postadressen ha **namn=&quot;email&quot;** som attribut. SQL-namnet måste skilja sig från sEmail som redan används för mottagarschemat. Det här attributet måste deklareras omedelbart under **`<element name="custom_cus_person" />`** elementet.
 
 
-1. Ändra formuläret **[!UICONTROL seedMember]** så att det definierar en ny flik för&quot;intern mottagare&quot; i **[!UICONTROL Seed addresses]** fönstret. Mer information finns i [Formulärstruktur](../../configuration/using/form-structure.md).
+1. Ändra formuläret **[!UICONTROL seedMember]** så att det definierar en ny flik för&quot;intern mottagare&quot; i **[!UICONTROL Seed addresses]** fönstret. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
