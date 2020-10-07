@@ -11,57 +11,54 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
 # Värmekarta för arbetsflöde {#workflow-heatmap}
 
-HeatMap för arbetsflöde i Adobe Campaign består av en färgkodad grafisk representation av alla arbetsflöden som körs. Den är endast tillgänglig för instansen Administratörer.
+Färgdiagrammet över arbetsflöden i Adobe Campaign består av en färgkodad grafisk representation av alla arbetsflöden som för närvarande körs. Den är endast tillgänglig för instansen Administratörer.
 
 Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
 ## Om HeatMap för arbetsflöde {#about-the-workflow-heatmap}
 
-Genom att ge en snabb översikt över antalet samtidiga arbetsflöden gör Workflow HeatMap det möjligt för plattformsadministratörerna i Adobe Campaign att övervaka belastningen på instansen och planera arbetsflödena utifrån detta.
+Genom att ge en snabb översikt över antalet samtidiga arbetsflöden gör Workflow HeatMap det möjligt för Adobe Campaign plattformsadministratörer att övervaka belastningen på instansen och planera arbetsflödena utifrån detta.
 
 Mer exakt hjälper det plattformsadministratörerna att:
 
-* Se och förstå samtidiga arbetsflöden
-* Filtrera arbetsflöden efter varaktighet för att se vilka arbetsflöden som kan stöta på problem
+* se och förstå samtidiga arbetsflöden
+* filtrera arbetsflöden per varaktighet för att se vilka arbetsflöden som kan stöta på problem
 * Filtrera aktiviteter efter varaktighet för att se vilka aktiviteter som kan stöta på problem
-* Hitta enkelt enskilda arbetsflöden och alla relaterade aktiviteter (med varaktigheten)
-* Sök efter arbetsflödestyp ([tekniska arbetsflöden](../../workflow/using/building-a-workflow.md#technical-workflows) eller [kampanjarbetsflöden](../../workflow/using/building-a-workflow.md#campaign-workflows))
-* Leta efter ett specifikt arbetsflöde att analysera
+* enkelt hitta enskilda arbetsflöden och alla relaterade aktiviteter (med deras varaktighet)
+* söka per typ av arbetsflöde ([tekniska arbetsflöden](../../workflow/using/building-a-workflow.md#technical-workflows) eller [kampanjarbetsflöden](../../workflow/using/building-a-workflow.md#campaign-workflows))
+* leta efter ett specifikt arbetsflöde att analysera
 
 >[!NOTE]
 >
->Förutom **heatmap** för arbetsflöde kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. Mer information finns i det [dedikerade avsnittet](../../workflow/using/supervising-workflows.md).
+>Förutom **heatmap** för arbetsflöde kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. For more on this, refer to the [dedicated section](../../workflow/using/supervising-workflows.md).
 
 Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](../../workflow/using/about-workflows.md), [aktiviteter](../../workflow/using/about-activities.md) och [arbetsflöden](../../workflow/using/workflow-best-practices.md).
 
-Workflow HeatMap är tillgängligt som standard i Adobe Campaign från och med version 18.10. Om du har ett build-värde mellan 8 700 och 8 977 (18,10) kan du också utnyttja den här funktionen. Kontakta [Adobes kundtjänst](https://support.neolane.net/) och följ instruktionerna från [den här sidan](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) för att få information om hur du installerar paketet.
+Workflow HeatMap är tillgängligt som standard i Adobe Campaign från och med version 18.10. Om du har ett build-värde mellan 8 700 och 8 977 (18,10) kan du också utnyttja den här funktionen. Kontakta [Adobe kundtjänst](https://support.neolane.net/) och följ instruktionerna från [den här sidan](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) för att få mer information om hur du installerar motsvarande paket.
 
-När du först öppnar Workflow HeatMap visas följande popup-fönster. Detta avtal tillåter överföring och lagring i USA som tillåter Adobe Campaign att:
+När du först öppnar Workflow HeatMap visas följande popup-fönster. Detta avtal tillåter överföring och lagring i USA som gör att Adobe Campaign kan:
 
 * övervaka instanser för att undersöka eventuella prestandaproblem.
 * samla in data för avvikelseidentifiering.
 
-Observera att överföringen av dina data endast är tillgänglig för användare som ansluter till Adobe Campaign via Adobe ID.
+Observera att överföringen av dina data endast är tillgänglig för användare som ansluter till Adobe Campaign via sin Adobe ID.
 
 ![](assets/wf_monitoring_agreement.png)
 
 Tre alternativ är tillgängliga:
 
-* **[!UICONTROL Accept]** : Genom att acceptera det här avtalet ger du Adobe Campaign tillstånd att samla in dina data och överföra dem till USA för att kunna hjälpa dig om avvikelser upptäcks.
+* **[!UICONTROL Accept]** : Genom att godkänna det här avtalet ger du Adobe Campaign tillstånd att samla in dina data och överföra dem till USA för att kunna hjälpa dig om avvikelser upptäcks.
 * **[!UICONTROL Refuse]** : Om du avböjer avtalet kommer dina data inte att överföras, men du kan fortfarande använda heatmap-kartan för arbetsflöde.
 * **[!UICONTROL Do not show this message again]** : Genom att klicka på **[!UICONTROL Do not show this message again]** kommer popup-fönstret att sluta visas när du öppnar heatmap-kartan för arbetsflöde, men det är fortfarande tillgängligt från **[!UICONTROL Term of use]** knappen.
 
@@ -86,7 +83,7 @@ Det här alternativet är inte slutgiltigt. Du kan alltid ändra det genom att k
    >Endast de arbetsflöden som inte har tagits bort av **[!UICONTROL Database cleanup]** arbetsflödet visas. Mer information om arbetsflödet för databasrensning finns i [det här avsnittet](../../production/using/database-cleanup-workflow.md).\
    >Som standard är tidszonen för Workflow HeatMap den som är definierad för den aktuella administratörsanvändaren. Du kan till exempel vilja ändra den om du inte befinner dig inom samma område som de marknadsföringsanvändare du arbetar med.
 
-1. Klicka på **[!UICONTROL Filters]** knappen.
+1. Klicka på knappen **[!UICONTROL Filters]**.
 
    ![](assets/wkf_monitoring_filters.png)
 
@@ -176,9 +173,9 @@ Som kampanjadministratör hjälper Workflow HeatMap dig att hitta de längsta ar
    * Rekommendera marknadsföringsanvändare att dela upp de längsta arbetsflödena för att minska bearbetningstiden.
    * Starta en djupgående analys av specifika arbetsflöden och specifika aktiviteter (som JavaScript, import, export och så vidare) för att isolera problemen och lättare lösa dem.
 
-## Exempel: Använda HeatMap för att förbättra arbetsflödesplaneringen {#example--using-the-heatmap-to-improve-workflow-planning}
+## Exempel: Förbättra arbetsflödesplaneringen med HeatMap {#example--using-the-heatmap-to-improve-workflow-planning}
 
-I exemplet nedan visas hur planering kan vara mer effektiv och hur prestanda kan förbättras när du använder HeatMap för arbetsflöde i Adobe Campaign.
+I exemplet nedan visas hur planering kan vara mer effektiv och hur prestanda kan förbättras när du använder Adobe Campaign Workflow HeatMap.
 
 I det här fallet klagar många användare över arbetsflödets prestanda. Du måste kontrollera vad som saktar ned aktiviteten och hur du löser problemet.
 
