@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2462'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -29,16 +26,16 @@ ht-degree: 0%
 
 Med Adobe Campaign kan du exportera eller importera plattformskonfigurationen och data via ett paketsystem. Paket kan innehålla olika typer av konfigurationer, element, filtrerade eller inte.
 
-Med datapaket kan enheter i Adobe Campaign-databasen visas via filer i XML-format. Varje entitet i ett paket representeras med alla dess data.
+Med datapaket kan enheter i databasen i Adobe Campaign visas via filer i XML-format. Varje entitet i ett paket representeras med alla dess data.
 
-Principen med **datapaket** är att exportera en datakonfiguration och integrera den i ett annat Adobe Campaign-system. Lär dig hur du underhåller en konsekvent uppsättning datapaket i det här [avsnittet](#data-package-best-practices).
+The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. Lär dig hur du underhåller en konsekvent uppsättning datapaket i det här [avsnittet](#data-package-best-practices).
 
 ### Typ av paket {#types-of-packages}
 
 Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket och administratörspaket.
 
 * **Användarpaket**: gör att du kan välja en lista över enheter som ska exporteras. Den här typen av paket hanterar beroenden och verifierar fel.
-* **Platform-paket**: Den innehåller alla tillagda tekniska resurser (ej standard): scheman, JavaScript-kod osv.
+* **Plattformspaket**: Den innehåller alla tillagda tekniska resurser (ej standard): scheman, JavaScript-kod osv.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
@@ -105,7 +102,7 @@ När ett paket har exporterats kan du importera det och alla tillagda enheter ti
 
 ### Exportera en uppsättning objekt i ett paket {#exporting-a-set-of-objects-in-a-package}
 
-Guiden för paketexport är tillgänglig via **[!UICONTROL Tools > Advanced > Export package...]** menyn i klientkonsolen i Adobe Campaign.
+Guiden för paketexport är tillgänglig via **[!UICONTROL Tools > Advanced > Export package...]** menyn i Adobe Campaign klientkonsol.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -125,7 +122,7 @@ För de tre typerna av paket innehåller guiden följande steg:
 
    >[!NOTE]
    >
-   >Beroendemekanismen styr entitetens exportsekvens. Mer information finns i [Hantera beroenden](#managing-dependencies).
+   >Beroendemekanismen styr entitetens exportsekvens. For more on this, refer to [Managing dependencies](#managing-dependencies).
 
 1. Enhetskonfigurationsskärmen definierar filterfrågan för den typ av dokument som ska extraheras.
 
@@ -243,7 +240,7 @@ Med paketdefinitioner kan du skapa en paketstruktur där du lägger till entitet
 * [Konfigurera generering av paketdefinitioner](#configuring-package-definitions-generation)
 * [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)
 
-### Skapa en paketdefinition {#creating-a-package-definition}
+### Creating a package definition {#creating-a-package-definition}
 
 Du kommer åt paketdefinitioner på **[!UICONTROL Administration > Configuration > Package management > Package definitions]** menyn.
 
@@ -265,7 +262,7 @@ Klicka på **[!UICONTROL Content]** knappen på fliken **[!UICONTROL Add]** för
 
 ![](assets/packagedefinition_addentities.png)
 
-Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen. Gör så här:
+Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen. Följ stegen nedan för att göra detta:
 
 1. Högerklicka på önskad enhet och välj sedan **[!UICONTROL Actions > Export in a package]**.
 
@@ -313,9 +310,9 @@ Om du vill exportera ett paket från en paketdefinition följer du stegen nedan:
 
 ### Om paketimport {#about-package-import}
 
-Guiden för paketimport är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Package import...]** i klientkonsolen i Adobe Campaign.
+Guiden för paketimport är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Package import...]** i Adobe Campaign klientkonsol.
 
-Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans, eller ett [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), beroende på licensvillkoren.
+Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans, eller ett [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), beroende på villkoren i din licens.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -333,11 +330,11 @@ Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** starta importen.
 
 ### Installera ett inbyggt paket {#installing-a-standard-package}
 
-Standardpaket är inbyggda paket som installeras när Adobe Campaign är konfigurerat. Beroende på din behörighet och distributionsmodell kan du importera nya standardpaket om du skaffar nya alternativ eller tillägg, eller om du uppgraderar till ett nytt erbjudande.
+Standardpaket är inbyggda paket som installeras när Adobe Campaign konfigureras. Beroende på din behörighet och distributionsmodell kan du importera nya standardpaket om du skaffar nya alternativ eller tillägg, eller om du uppgraderar till ett nytt erbjudande.
 
 Se licensavtalet för att se vilka paket du kan installera.
 
-Mer information om inbyggda paket finns på [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Bästa praxis för datapaket {#data-package-best-practices}
 
@@ -406,7 +403,7 @@ En uppdatering kan inte bara vara en korrigering, utan även ett nytt element i 
 
 ### Namnkonventioner {#data-package-naming}
 
-Nu när typerna är definierade bör vi ange en namnkonvention. Adobe Campaign kan inte skapa undermappar för paketspecifikationer, vilket innebär att tal är den bästa lösningen för att hålla ordning. Numreringsprefixpaketnamn. Du kan använda följande konvention:
+Nu när typerna är definierade bör vi ange en namnkonvention. Adobe Campaign tillåter inte att du skapar undermappar för paketspecifikationer, vilket innebär att tal är den bästa lösningen för att hålla ordning. Numreringsprefixpaketnamn. Du kan använda följande konvention:
 
 * Enhet: från 1 till 99
 * Funktion: från 100 till 199
@@ -429,7 +426,7 @@ För att underlätta importen bör entitetspaketen sorteras när de importeras. 
 
 >[!NOTE]
 >
->Formulär ska bara importeras efter schemauppdateringar.
+>Forms bör endast importeras efter schemauppdateringar.
 
 #### Package 200 {#package-200}
 
