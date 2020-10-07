@@ -1,7 +1,7 @@
 ---
-title: Så här använder du arbetsflödesdata
-seo-title: Så här använder du arbetsflödesdata
-description: Så här använder du arbetsflödesdata
+title: Så använder du arbetsflödesdata
+seo-title: Så använder du arbetsflödesdata
+description: Så använder du arbetsflödesdata
 seo-description: null
 page-status-flag: never-activated
 uuid: ed03f14b-1b53-426e-9213-22cb2f3deb19
@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Så här använder du arbetsflödesdata{#how-to-use-workflow-data}
+# Så använder du arbetsflödesdata{#how-to-use-workflow-data}
 
-## Uppdaterar databasen {#updating-the-database}
+## Updating the database {#updating-the-database}
 
 Alla insamlade data kan användas för att uppdatera databasen eller i leveranser. Du kan till exempel utöka möjligheterna att personalisera innehåll i meddelanden (ange antalet kontrakt i meddelandet, ange den genomsnittliga kundvagnen under det senaste året, osv.) eller målgruppsanpassning (skicka ett meddelande till kontraktsparter, rikta in de 1 000 bästa abonnenterna på onlinetjänster osv.). Dessa data kan också exporteras eller arkiveras i en lista.
 
@@ -43,7 +40,7 @@ Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras me
 
 * Aktiviteten **[!UICONTROL Update data]** utför en massuppdatering av fälten i databasen.
 
-   Mer information finns i [Uppdatera data](../../workflow/using/update-data.md).
+   For more on this, refer to [Update data](../../workflow/using/update-data.md).
 
 ### Prenumerations-/prenumerationshantering {#subscription-unsubscription-management}
 
@@ -67,7 +64,7 @@ Förutom de vanliga personaliseringsfälten kan du lägga till anpassningsfält 
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData** . Mer information finns i [Target-data](../../workflow/using/data-life-cycle.md#target-data).
+Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData** . For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data).
 
 Inom ramen för e-postleverans kan personaliseringsfält även använda data från måltillägg som har utförts i arbetsflödesfaserna för målanpassning, vilket visas i exemplet nedan:
 
@@ -91,8 +88,8 @@ Så här kan du göra:
    >
    >Kontrollpanelen är tillgänglig för alla kunder som har AWS som värd (med undantag för kunder som har sina marknadsföringsinstanser på plats).
 
-1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du Adobes kundtjänst för att få de nödvändiga verktygen installerade på servern.
-1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
+1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du Adobe kundtjänst för att få de verktyg som behövs installerade på servern.
+1. Om du har en installation av Adobe Campaign installerad installerar du verktyget som du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
 
 Du kan sedan använda kommandon eller kod på aktivitetens **[!UICONTROL Script]** flik eller i en **[!UICONTROL JavaScript code]** aktivitet. Ett exempel visas i användningsexemplet nedan.
 
@@ -103,7 +100,7 @@ Du kan sedan använda kommandon eller kod på aktivitetens **[!UICONTROL Script]
 
 ### Användningsfall: Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen {#use-case-gpg-encrypt}
 
-I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera data med en nyckel som installeras på Kontrollpanelen.
+I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera data med en nyckel som är installerad på Kontrollpanelen.
 
 En självstudievideo som visar hur du använder en GPG-nyckel för att kryptera data finns också i [det här avsnittet](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html).
 
@@ -120,7 +117,7 @@ Så här utför du det här användningsfallet:
    * **[!UICONTROL JavaScript code]** aktivitet: Krypterar de data som ska extraheras.
    * **[!UICONTROL File transfer]** aktivitet: Skickar data till en extern källa (i det här exemplet en SFTP-server).
 
-1. Konfigurera **[!UICONTROL Query]** aktiviteten för att ange önskade data från databasen som mål. For more on this, refer to [this section](../../workflow/using/query.md).
+1. Konfigurera **[!UICONTROL Query]** aktiviteten för att ange önskade data från databasen som mål. Mer information om detta finns i [det här avsnittet](../../workflow/using/query.md).
 
 1. Öppna **[!UICONTROL Data extraction (file)]** aktiviteten och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
 
