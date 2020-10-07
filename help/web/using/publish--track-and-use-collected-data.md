@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 434a4bda-0907-42a7-8a75-2db658bba046
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 4%
 
 ---
 
@@ -46,7 +46,7 @@ För varje enkät som levereras kan du spåra svaren på **[!UICONTROL Logs]** f
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Dubbelklicka på en rad för att visa enkätformuläret ifyllt av svaranden. Du kan bläddra igenom hela undersökningen och få tillgång till svaren i sin helhet. Dessa kan exporteras i en extern fil. Mer information finns i [Exportera svar](#exporting-answers).
+Dubbelklicka på en rad för att visa enkätformuläret ifyllt av svaranden. Du kan bläddra igenom hela undersökningen och få tillgång till svaren i sin helhet. Dessa kan exporteras i en extern fil. For more on this, refer to [Exporting answers](#exporting-answers).
 
 Ursprunget anges i URL:en för undersökningen genom att följande tecken läggs till:
 
@@ -56,7 +56,7 @@ Ursprunget anges i URL:en för undersökningen genom att följande tecken läggs
 
 medan undersökningen redigeras innehåller URL-adressen parametern **[!UICONTROL __uuid]**, vilket anger att den är i testfasen och inte online än. När du kommer åt undersökningen via den här URL:en beaktas inte de poster som skapas i spårningen (rapporter). Ursprunget tvingas till värdet **[!UICONTROL Adobe Campaign]**.
 
-Mer information om URL-parametrar finns på [den här sidan](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+For more on URL parameters, refer to [this page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Rapporter om undersökningar {#reports-on-surveys}
 
@@ -90,7 +90,7 @@ Svar på en undersökning kan exporteras i en extern fil som kan bearbetas senar
 
    Om du vill exportera rapportdata klickar du på **[!UICONTROL Export]** knappen och väljer exportformat.
 
-   Mer information om hur du exporterar rapportdata finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md).
+   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Exportera svar
 
@@ -107,6 +107,7 @@ Svar på en undersökning kan exporteras i en extern fil som kan bearbetas senar
    * lägga till kolumner i utdatafilen och återskapa informationen om mottagaren (som lagras i databasen),
    * formatera exporterade data,
    * Välj kodningsformat för informationen i filen.
+
    Om undersökningen du vill exportera innehåller flera **[!UICONTROL Multi-line text]** eller **[!UICONTROL HTML text]** fält måste den exporteras i **[!UICONTROL XML]** format. Det gör du genom att välja det här formatet i listrutan i **[!UICONTROL Output format]** fältet enligt nedan:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
@@ -119,7 +120,7 @@ Svar på en undersökning kan exporteras i en extern fil som kan bearbetas senar
 
 ## Använda insamlade data {#using-the-collected-data}
 
-Den information som samlas in via online-enkäter kan återvinnas inom ramen för ett målinriktat arbetsflöde. Använd **[!UICONTROL Survey responses]** rutan för att göra detta.
+Den information som samlas in via online-enkäter kan återvinnas inom ramen för ett målinriktat arbetsflöde. To do this, use the **[!UICONTROL Survey responses]** box.
 
 I följande exempel vill vi göra ett webberbjudande speciellt för de fem mottagarna med minst två barn och med högst poäng i en nätundersökning. Svaren på den här enkäten är:
 
@@ -155,7 +156,7 @@ Konfigurera delningsrutan genom att redigera den:
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Markera **[!UICONTROL Keep only the first records after sorting]** alternativet och markera sorteringskolumnen. Markera **[!UICONTROL Descending sort]** alternativet.
+* Markera **[!UICONTROL Keep only the first records after sorting]** alternativet och markera sorteringskolumnen. Markera alternativet **[!UICONTROL Descending sort]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
@@ -167,6 +168,6 @@ Konfigurera delningsrutan genom att redigera den:
 
 ## Standardisera data {#standardizing-data}
 
-Det går att skapa standardiseringsprocesser i Adobe Campaign för data som samlas in med alias. På så sätt kan du standardisera de data som lagras i databasen: För att göra detta definierar du alias i de specificerade listorna som innehåller relevant information.
+Det är möjligt att skapa standardiseringsprocesser i Adobe Campaign för data som samlas in med alias. På så sätt kan du standardisera de data som lagras i databasen: För att göra detta definierar du alias i de specificerade listorna som innehåller relevant information.
 
-Mer information finns på [den här sidan](../../platform/using/managing-enumerations.md#about-enumerations).
+Se denna [sida](../../platform/using/managing-enumerations.md#about-enumerations) för mer information om detta.
