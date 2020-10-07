@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 7f79c0d8-77b0-4cc6-a888-7dbd32d2f3b6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >Följande steg bör utföras av en **administratörsprofil** och endast i designmiljöer.
 
-1. Skapa användarprofiler. Mer information finns i [Operator profiles](../../interaction/using/operator-profiles.md).
+1. Skapa användarprofiler. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
 1. Skapa en erbjudandemiljö genom att inrikta er på olika aspekter. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 1. Skapa typologiregler för varje miljö. Mer information finns i [Skapa och referera till en presentationsregel](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)för erbjudanden.
 1. Skapa utrymme för varje miljö och konfigurera återgivningsfunktioner. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
@@ -45,7 +45,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    >
    >När ett utrymme skapas på den inkommande webbkanalen krävs även en konfiguration på den webbplats där erbjudandet ska visas.
 
-## Hantera erbjudandekatalogen {#managing-the-offer-catalog-}
+## Managing the offer catalog {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
