@@ -1,5 +1,5 @@
 ---
-title: Datalivscykel
+title: Datas livscykel
 description: Läs mer om datalivscykeln i arbetsflöden.
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Datalivscykel {#data-life-cycle}
+# Datas livscykel {#data-life-cycle}
 
 ## Arbetsregister {#work-table}
 
@@ -45,7 +42,7 @@ Välj den relevanta menyn för att göra detta:
 
    På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
 
-   For more on this, refer to this [section](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+   Mer information om detta hittar du i det här [avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
 Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: markera alternativet i arbetsflödesegenskaperna. **[!UICONTROL Keep the result of interim populations between two executions]**
 
@@ -65,7 +62,7 @@ På så sätt kan du använda data som samlats in via en lista eller baserat på
 
 **[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i leveransens ingående övergång.
 
-Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på **[!UICONTROL Address substitution]** läget så att personaliseringsdata kan anges. For more on this, refer to this [section](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på **[!UICONTROL Address substitution]** läget så att personaliseringsdata kan anges. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 I följande exempel ska vi samla in en lista med information om kunderna som ska användas i ett personaliserat e-postmeddelande.
 
