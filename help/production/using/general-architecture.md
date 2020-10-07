@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: introduction
 discoiquuid: f4879774-afe5-4556-ab60-9297cabbca2c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Adobe Campaign har minst följande konfigurationer:
 
-* Adobe Campaign-programservern,
+* adobe campaign programserver,
 * databasen.
 
    ![](assets/formation_exploitation.png)
@@ -50,7 +50,7 @@ Distributionen av moduler på flera datorer ger stor flexibilitet och förbättr
 
 >[!NOTE]
 >
->Mer information om de olika arkitekturerna finns i [det här avsnittet](../../installation/using/general-architecture.md).
+>For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
 
 ## Lista över öppna portar {#list-of-open-ports}
 
