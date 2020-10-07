@@ -11,35 +11,32 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 discoiquuid: 44c7acdd-6b7a-4e88-b2a7-3e9bf8a6eab5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Integrera med Adobe Target{#integrating-with-adobe-target}
+# Integrating with Adobe Target{#integrating-with-adobe-target}
 
-Integrationen mellan Adobe Campaign och Adobe Target (Classic och Standard) i Adobe Experience Cloud gör att du kan inkludera ett erbjudande från Adobe Target i en e-postleverans från Adobe Campaign.
+Tack vare integrationen mellan Adobe Campaign och Adobe Target (Classic och Standard) i Adobe Experience Cloud kan du inkludera ett erbjudande från Adobe Target i en e-postleverans från Adobe Campaign.
 
 Följande princip gäller: När en mottagare öppnar ett e-postmeddelande som skickas via Adobe Campaign kan du med ett anrop till Adobe Target visa en dynamisk version av innehållet. Den här dynamiska versionen beräknas utifrån de regler som anges i förväg när e-postmeddelandet skapas.
 
-Läs mer om integrationen mellan Adobe Campaign och Adobe Target och [dessa fyra tips och trick](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
+Läs mer om integrationen mellan Adobe Campaign och Adobe Target med [dessa fyra tips och trick](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
 >[!NOTE]
 >
 >Integreringen stöder bara statiska bilder. Resten av innehållet kan inte personaliseras.
 
-Flera typer av data kan användas av Adobe Target:
+Adobe Target kan använda flera typer av data:
 
-* Data från datamart i Adobe Campaign
-* Segment länkade till besökar-ID i Adobe Target, om de data som används inte omfattas av juridiska begränsningar
+* Data från Adobe Campaign datamart
+* Segment som är länkade till besökar-ID i Adobe Target, om de data som används inte omfattas av juridiska begränsningar
 * Adobe Target data: användaragent, IP-adress, geolokaliseringsdata
 
 >[!NOTE]
 >
->Du hittar även information om integrationen mellan Adobe Campaign och Adobe Target på hjälpsidorna [för](https://docs.adobe.com/content/help/en/target/using/integrate/campaign-and-target.html)Adobe Target.
+>Du hittar även information om integrationen mellan Adobe Campaign och Adobe Target på [Adobe Target hjälpsidor](https://docs.adobe.com/content/help/sv-SE/target/using/integrate/campaign-and-target.html).
