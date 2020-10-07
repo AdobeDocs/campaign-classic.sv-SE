@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ För att få stöd för skalbarhet och dygnet runt-service på den inkommande ka
 
 >[!NOTE]
 >
->Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Varje instans för körning är oberoende och dedikerad till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
+>Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Alla instanser av exekvering är oberoende och dedikerade till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
 
 ## Förslagssynkronisering {#proposition-synchronization}
 
@@ -56,7 +56,7 @@ Ett arbetsflöde skapas för varje miljö och ett externt konto för förslagssy
 * Om du använder funktionen för säkerhetskopiering från en anonym miljö till en identifierad miljö måste dessa två miljöer finnas i samma körningsinstans.
 * Synkroniseringen mellan flera körningsinstanser utförs inte i realtid. Interaktioner av samma kontakt måste skickas till samma instans. Kontrollinstansen måste dedikeras till den utgående kanalen (ingen realtid).
 * Marknadsföringsdatabasen synkroniseras inte automatiskt. Marknadsföringsdata som används i viktnings- och berättigandereglerna måste dupliceras i körningsinstanser. Den här processen kommer inte som standard, du måste utveckla den under integreringsperioden.
-* Propositionssynkronisering utförs uteslutande av FDA-anslutning.
+* Synkronisering av offerter utförs uteslutande av FDA-anslutning.
 * Om du använder Interaction och Message Center på samma instans, synkroniseras i båda fallen via FDA-protokollet.
 
 ## Paketkonfiguration {#packages-configuration}
@@ -79,7 +79,7 @@ På kontrollinstanserna:
 
    * Fyll i etiketten och lägg till ett kort och explicit internt namn.
    * Markera **[!UICONTROL Execution instance]**.
-   * Markera **[!UICONTROL Enabled]** alternativet.
+   * Markera alternativet **[!UICONTROL Enabled]**.
    * Slutför anslutningsparametrarna för körningsinstansen.
    * Alla körningsinstanser måste länkas till ett ID. Detta ID tilldelas när du klickar på **[!UICONTROL Initialize connection]** knappen.
    * Kontrollera vilken typ av program som används: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** eller båda.
