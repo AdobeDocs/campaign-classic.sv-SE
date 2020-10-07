@@ -11,24 +11,24 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 10%
 
 ---
 
 
 # Om kuber{#about-cubes}
 
-Utforska data i databasen via modulen **Marketing Analytics** . Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målgruppsanpassning, segmentering osv.).
+Utforska data i databasen via modulen **Marketing Analytics** . Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
 Kuber används för att generera vissa inbyggda rapporter, inklusive leveransrapporter (leveransspårning, klickningar, öppningar osv.). Rapporter som baseras på kuber får endast användas som standard för datavolymer under 5 miljoner faktarader.
 
-Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det blir enklare för slutanvändarna att konfigurera rapporter och tabeller: Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
+Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det blir enklare för slutanvändarna att konfigurera rapporter och tabeller. Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
 
-När de har skapats och konfigurerats används kuber i rapportrutor och webbprogram. De kan användas och ändras i pivottabeller.
+När de har skapats och konfigurerats används kuber i frågeformulär för rapportering och webbapplikationer. De kan användas och ändras i pivottabeller.
 
 >[!CAUTION]
 >
@@ -41,7 +41,8 @@ Med modulen Marketing Analytics kan ni med Campaign
    * sammanställa data och lagra dessa i en arbetstabell för att på förhand beräkna indikatorer utifrån användarnas behov,
    * minska mängden data som ingår i de olika beräkningar som används för rapporter och frågor, vilket avsevärt optimerar beräkningstiderna för indikatorn,
    * förenkla tillgången till data, så att användarna kan hantera data (oavsett om de är i förväg aggregerade eller inte) beroende på olika dimensioner.
-   Mer information finns i [Skapa indikatorer](../../reporting/using/creating-indicators.md).
+
+   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
 
 1. Skapa pivottabeller i vyn:
 
@@ -49,12 +50,13 @@ Med modulen Marketing Analytics kan ni med Campaign
    * välja vilka data som ska visas samt dess visningsläge,
    * personalisering av de åtgärder och indikatorer som används,
    * erbjuder interaktiva analysverktyg till användare med icke-teknisk bakgrund.
+
    Mer information finns i [Använda kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Bygg en fråga med data som beräknas och aggregeras i en kub.
 1. Identifiera populationer och referera till dem i listor.
 
-##  Terminologi {#terminology}
+## Terminologi {#terminology}
 
 När du arbetar med kuber måste du känna till följande begrepp:
 
@@ -70,7 +72,7 @@ När du arbetar med kuber måste du känna till följande begrepp:
 
 * Dimension
 
-   Med dimensioner kan ni gruppera data i grupper: När de har skapats fungerar dimensionerna som analysaxlar. I de flesta fall definieras flera nivåer för en viss dimension. För en tidsdimension är nivåerna till exempel månader, dagar, timmar, minuter och så vidare. Den här nivåuppsättningen representerar dimensionshierarkin och möjliggör olika nivåer av dataanalys.
+   Med Dimensioner kan du gruppera data i grupper: När de har skapats fungerar dimensionerna som analysaxlar. I de flesta fall definieras flera nivåer för en viss dimension. För en tidsdimension är nivåerna till exempel månader, dagar, timmar, minuter och så vidare. Den här nivåuppsättningen representerar dimensionshierarkin och möjliggör olika nivåer av dataanalys.
 
 * Bindning
 
@@ -92,7 +94,7 @@ Kuber lagras i **[!UICONTROL Administration > Configuration > Cubes]** noden.
 
 De huvudsakliga användningsområdena för kuber är följande:
 
-* Dataexport kan utföras direkt i en rapport som utformats i **[!UICONTROL Reports]** hela Adobe Campaign-plattformen.
+* Dataexport kan utföras direkt i en rapport som utformats i Adobe Campaign-plattformens **[!UICONTROL Reports]** universum.
 
    Om du vill göra det skapar du en ny rapport och väljer den kub som du vill använda.
 
