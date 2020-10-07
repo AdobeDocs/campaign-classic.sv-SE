@@ -1,7 +1,7 @@
 ---
-title: Använd skiftläge
-seo-title: Använd skiftläge
-description: Använd skiftläge
+title: Användningsfall
+seo-title: Användningsfall
+description: Användningsfall
 seo-description: null
 page-status-flag: never-activated
 uuid: d4c76fdf-d562-4151-93ec-08b4f6563440
@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: fbc38e33-60a6-4d21-a598-312293d168fb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 3%
 
 ---
 
 
-# Använd skiftläge{#use-case}
+# Användningsfall{#use-case}
 
 ## Skapa ett filter för e-postformat för prenumeranter {#creating-a-filter-on-the-email-format-of-subscribers}
 
