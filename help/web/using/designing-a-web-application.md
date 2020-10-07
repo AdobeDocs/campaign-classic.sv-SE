@@ -1,7 +1,7 @@
 ---
-title: Utforma ett webbprogram
-seo-title: Utforma ett webbprogram
-description: Utforma ett webbprogram
+title: Designa en webbapplikation
+seo-title: Designa en webbapplikation
+description: Designa en webbapplikation
 seo-description: null
 page-status-flag: never-activated
 uuid: 29c11154-f056-4047-849a-739ba0a2c615
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '365'
+ht-degree: 4%
 
 ---
 
 
-# Utforma ett webbprogram{#designing-a-web-application}
+# Designa en webbapplikation{#designing-a-web-application}
 
 Webbprogram skapas och hanteras enligt samma princip som [onlineundersökningar](../../web/using/about-surveys.md).
 
@@ -58,7 +58,7 @@ Du kan också välja tabelltyp i listrutan.
 
 ## Webbprogram av översiktstyp {#overview-type-web-applications}
 
-I gränssnittet i Adobe Campaign används många webbprogram för att få tillgång till, hantera och interagera med mottagare, leveranser, kampanjer, lager med mera.
+Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst till, hantera och interagera med mottagare, leveranser, kampanjer, lager med mera.
 
 De visas i gränssnittet i form av kontrollpaneler med bara en sida.
 
