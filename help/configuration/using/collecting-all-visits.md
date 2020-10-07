@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 7f841368-3867-4d6e-9720-c038d9bea0ce
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 4%
 
 ---
 
 
 # Samla in alla besök{#collecting-all-visits}
 
-Med hjälp av webbspårningsmodulen i Adobe Campaign kan du samla in besök på vissa sidor av webbplatsen som en mottagare utför i samband med webbplatsspårning efter ett klick i ett meddelande.
+Med webbspårningsmodulen som tillhandahålls av Adobe Campaign kan du samla in besök på vissa sidor av webbplatsen som utförs av en mottagare i samband med webbplatsspårning efter ett klick i ett meddelande.
 
 Du kan dock konfigurera plattformen så att den samlar in alla besök på sidor med en webbspårningstagg från en användare som är känd för plattformen.
 
@@ -34,7 +34,7 @@ En användare som är känd för plattformen är en mottagare som redan har fåt
 
 ## Serverkonfiguration {#server-configuration}
 
-Servrarna konfigureras genom att överlagra vissa element i **filen serverConf.xml** . Dessa filer sparas i underkatalogen **conf** i installationskatalogen för Adobe Campaign.
+Servrarna konfigureras genom att överlagra vissa element i **filen serverConf.xml** . Dessa filer sparas i underkatalogen **conf** i Adobe Campaign installationskatalog.
 
 ### Omdirigeringsserver {#redirection-server}
 
@@ -54,4 +54,4 @@ Om du vill visa spårningsinformation via klientkonsolen måste du:
 * Skapa en **overksam leverans** (leveransmappningen måste vara identisk med mappningen av målschemat),
 * Ange det **interna namnet** för leveransen i alternativet **NmsTracking_WebTrackingDelivery** .
 
-All information om webbplatsspårning som inte kommer direkt efter ett klick i ett e-postmeddelande kan visas i den provleverans som skapas.
+All information om webbplatsspårning som inte kommer direkt efter ett klick i ett e-postmeddelande kan visas i den dummy-leverans som skapas.
