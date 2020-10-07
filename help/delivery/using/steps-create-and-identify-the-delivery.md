@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 13%
 
 ---
 
@@ -58,6 +58,6 @@ Leveransinnehållet är klart att konfigureras. Definitionen av leveransinnehål
 
 * [Definiera e-postinnehållet](../../delivery/using/defining-the-email-content.md)
 * [Definiera SMS-innehåll](../../delivery/using/sms-channel.md#defining-the-sms-content)
-* [Definiera innehållet i direktreklam](../../delivery/using/defining-the-direct-mail-content.md)
+* [Definiera innehållet i direktutskick](../../delivery/using/defining-the-direct-mail-content.md)
 * [Push-meddelanden](../../delivery/using/about-mobile-app-channel.md)
 
