@@ -11,21 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
 
 # Om kampanjtypologier{#about-campaign-typologies}
 
-Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera och övervaka leveransen. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa specifika begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.
+Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera och övervaka leveransen. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#typologies-video)
 
@@ -66,7 +63,7 @@ Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
 
    Typologier nås via **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** -noden.
 
-1. Konfigurera leveransen för att använda den typologi du skapade. Mer information om detta hittar du i [det här avsnittet](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Konfigurera leveransen för att använda den typologi du skapade. Mer information om detta finns i [det här avsnittet](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
 1. Testa och kontrollera beteendet med kampanjsimuleringar. For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
 Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka uteslutningar. Exempel på användningsområden för typologiregler för tryck finns på [den här sidan](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
