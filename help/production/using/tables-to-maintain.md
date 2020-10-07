@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 6ec4e566-7116-4d7f-835d-cb0f3c3a6a7a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
 
 # Tabeller att underhålla{#tables-to-maintain}
 
-Listan med tabeller som ska behållas beror på vilken version av Adobe Campaign du har, hur du använder den och på datamodellens konfiguration.
+Listan med tabeller som ska behållas beror på vilken version av Adobe Campaign du har, hur du använder den och på datamodellkonfigurationen.
 
 Följande lista innehåller endast de tabeller som är mest fragmenterade. Effekterna är följande:
 
@@ -208,4 +208,4 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
 
 ## Kundregister {#customer-tables}
 
-Förutom listan ovan kan tabeller som skapas av kunder (som inte finns i datamodellen för Adobe Campaign) under plattformskonfigurationen också fragmenteras, särskilt om de uppdateras ofta under datainläsning eller synkronisering. Dessa tabeller kan ingå i Adobe Campaigns standarddatamodell (till exempel **NmsRecipient**). I det här fallet är det administratören av Adobe Campaign-plattformen som måste göra en revision av sin specifika databasmodell för att kunna hitta dessa anpassade tabeller. Dessa tabeller nämns inte nödvändigtvis uttryckligen i våra underhållsprocedurer.
+Förutom listan ovan kan tabeller som skapas av kunder (som inte finns i Adobe Campaign datamodell) under plattformskonfiguration också fragmenteras, särskilt om de uppdateras ofta under datainläsning eller synkronisering. Dessa tabeller kan ingå i Adobe Campaign standarddatamodell (till exempel **NmsRecipient**). I det här fallet är det upp till administratören för Adobe Campaign-plattformen att utföra en revision av sin specifika databasmodell för att hitta dessa anpassade tabeller. Dessa tabeller nämns inte nödvändigtvis uttryckligen i våra underhållsprocedurer.
