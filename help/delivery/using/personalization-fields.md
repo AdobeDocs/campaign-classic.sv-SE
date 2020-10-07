@@ -1,7 +1,7 @@
 ---
-title: Anpassningsfält
-seo-title: Anpassningsfält
-description: Anpassningsfält
+title: Fält för personalisering
+seo-title: Fält för personalisering
+description: Fält för personalisering
 seo-description: null
 page-status-flag: never-activated
 uuid: 3a94a50e-259e-40c3-ae67-8a2c42e9fad7
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 
-# Anpassningsfält{#personalization-fields}
+# Fält för personalisering{#personalization-fields}
 
-Anpassningsfält används för personalisering på första nivån av innehållet i levererade meddelanden. Fälten som du infogar i ett huvudinnehåll visar var data från den valda datakällan ska infogas.
+Personaliseringsfält används för att personalisera innehållet i levererade meddelanden på första nivån. Fälten som infogas i ett huvudinnehåll visar var data från den valda datakällan ska infogas.
 
 I anpassningsfältet med syntaxen **&lt;%= mottagare.efternamn %>** anger Adobe Campaign att namnet på mottagaren ska infogas i databasen (mottagartabell).
 
@@ -37,7 +34,7 @@ I anpassningsfältet med syntaxen **&lt;%= mottagare.efternamn %>** anger Adobe 
 
 ## Datakällor {#data-sources}
 
-Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveransläge:
+Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveranssätt:
 
 * Adobe Campaign-databasen är datakällan. Detta är det vanligaste fallet, till exempel&quot;fält för mottagaranpassning&quot;. Det här är alla fält som definieras i mottagartabellen, oavsett om det är standardfält (vanligtvis: efternamn, förnamn, adress, ort, födelsedatum osv.) eller användardefinierade fält.
 * En extern fil är datakällan. Detta är alla fält som definieras i kolumnerna i filen som presenteras som indata vid en leverans med hjälp av data som hittas i en extern fil.
@@ -81,7 +78,7 @@ Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och 
 
    >[!NOTE]
    >
-   >När en leverans ingår i ett arbetsflöde kan du använda data från den tillfälliga arbetsflödestabellen. Dessa data grupperas på **[!UICONTROL Target extension]** menyn. Mer information om detta hittar du i [det här avsnittet](../../workflow/using/data-life-cycle.md#target-data).
+   >När en leverans ingår i ett arbetsflöde kan du använda data från den tillfälliga arbetsflödestabellen. Dessa data grupperas på **[!UICONTROL Target extension]** menyn. Mer information om detta finns i [det här avsnittet](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Optimera personalisering {#optimizing-personalization}
 
@@ -95,7 +92,7 @@ Om du till exempel får prestandaproblem när du levererar till ett stort antal 
 
 Följ stegen nedan om du vill använda det här alternativet:
 
-1. Skapa en kampanj. Mer information om detta hittar du i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
 1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen. For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. Lägg till en **[!UICONTROL Email delivery]** aktivitet i arbetsflödet och öppna den. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. Gå till fliken **[!UICONTROL Analysis]** i **[!UICONTROL Delivery properties]** och välj **[!UICONTROL Prepare the personalization data with a workflow]** alternativet.
