@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: ef7aa3a0-249f-46eb-9300-5b97bce31c8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ## Mottagarträd {#recipient-tree}
 
-För att få tillgång till de avancerade funktionerna för mottagarhantering måste du redigera Adobe Campaign-trädet. Det gör du genom att klicka på **[!UICONTROL Explorer]** knappen i verktygsfältet.
+Om du vill använda de avancerade funktionerna för mottagarhantering måste du redigera Adobe Campaign-trädet. Det gör du genom att klicka på **[!UICONTROL Explorer]** knappen i verktygsfältet.
 
 Som standard lagras mottagarna i noden **[!UICONTROL Profiles and targets]** i Adobe Campaign-trädet. Från samma nod kan du skapa en eller flera mappar och undermappar för att lagra mottagarprofiler.
 
