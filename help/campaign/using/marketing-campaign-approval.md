@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2479'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Varje steg i en leverans kan godkännas för att säkerställa full övervakning
 >
 >Du måste kontrollera att granskarna har behörighet att godkänna. Kontrollera också att deras säkerhetszon är korrekt definierad.
 
-E-postmeddelanden skickas till de Adobe Campaign-operatörer som är utsedda granskare för att informera dem om en begäran om godkännande.
+E-postmeddelanden skickas till de Adobe Campaign-operatörer som är utsedda granskare för att informera dem om en ansökan om godkännande.
 
 Godkännandeförfarandet presenteras i [Kontroll och godkännande av leveranser](#checking-and-approving-deliveries).
 
@@ -60,7 +60,7 @@ Dessa meddelanden skickas till de operatorer som påverkas av varje process som 
 
 Godkännanden kan aktiveras för kampanjmallen, för varje enskild kampanj eller för en leverans.
 
-Alla jobb som kräver godkännande markeras i kampanjmallen ( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** flik), liksom de operatorer som ansvarar för godkännandet (de får meddelanden om inte det här alternativet är aktiverat). Mer information finns i [Godkännandeprocesser](#approving-processes).
+Alla jobb som kräver godkännande markeras i kampanjmallen ( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** flik), liksom de operatorer som ansvarar för godkännandet (de får meddelanden om inte det här alternativet är aktiverat). For more on this, refer to [Approving processes](#approving-processes).
 
 De här inställningarna kan åsidosättas för varje kampanj som skapas med den här mallen och individuellt för varje kampanjleverans: klicka på **[!UICONTROL Properties]** knappen och sedan på **[!UICONTROL Approvals]** fliken.
 
@@ -107,7 +107,7 @@ Markera **[!UICONTROL Accept]** eller **[!UICONTROL Reject]** skriv en kommentar
 
 ![](assets/s_user_validation_save_target_validation.png)
 
-Klicka **[!UICONTROL Validate]**.
+Klicka på **[!UICONTROL Validate]**.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Informationen finns på flera ställen:
 
 #### Automatiskt och manuellt godkännande {#automatic-and-manual-approval}
 
-När du skapar ett arbetsflöde för målinriktning, om godkännandet är automatiskt (standardläge), visas länken för godkännande eller ett meddelande skickas så snart ett godkännande krävs.
+När du skapar ett arbetsflöde för målinriktning, om godkännande är automatiskt (standardläge), visar Adobe Campaign godkännandelänken eller skickar ett meddelande så snart ett godkännande krävs.
 
 Om du vill välja godkännandeläge (manuellt eller automatiskt) klickar du på fliken **[!UICONTROL Edit > Properties]** i kampanj- eller kampanjmallen, klickar **[!UICONTROL Advanced campaign settings...]** och slutligen på **[!UICONTROL Approvals]** fliken.
 
@@ -179,9 +179,9 @@ Meddelandeinnehåll definieras i en specifik mall: **[!UICONTROL Notification of
 
 Med Adobe Campaign kan ni skapa godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen i samverkansbaserat läge.
 
-För direktutskick kan Adobe Campaign-operatorer visa extraheringsfilen innan den skickas till routern, och om det behövs kan de ändra formatet och starta om extraheringen. Se [Godkänna en extraheringsfil](#approving-an-extraction-file).
+För direktutskick kan Adobe Campaign-operatörer visa extraheringsfilen innan den skickas till routern, och om det behövs kan de ändra formatet och starta extraheringen igen. Se [Godkänna en extraheringsfil](#approving-an-extraction-file).
 
-För varje kampanj kan du godkänna leveransmålet, innehållet (se [Godkänna innehåll](#approving-content)) och kostnaderna. De Adobe Campaign-operatörer som ansvarar för godkännandet kan meddelas via e-post och godkänna eller avvisa godkännanden från konsolen eller via en webbanslutning. Se [Godkännandeprocesser](#approving-processes).
+För varje kampanj kan du godkänna leveransmålet, innehållet (se [Godkänna innehåll](#approving-content)) och kostnaderna. Operatörer som ansvarar för godkännande i Adobe Campaign kan meddelas via e-post och kan godkänna eller ej från konsolen eller via en webbanslutning. Se [Godkännandeprocesser](#approving-processes).
 
 När dessa valideringsfaser är klara kan leveransen startas. Se [Påbörja leverans](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
@@ -197,7 +197,7 @@ Nu är kampanjens status **[!UICONTROL To validate]**.
 
 >[!NOTE]
 >
->* Om du vill välja vilka processer som ska godkännas ändrar du kampanjmallen. Mer information finns i [Campaign-mallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>* Om du vill välja vilka processer som ska godkännas ändrar du kampanjmallen. For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
    >
    >
 * Se även avsnittet om [godkännandeprocessen](#approval-process).
@@ -250,7 +250,7 @@ För varje leverans i kampanjen kan du godkänna följande processer:
 
 #### Välja processer som ska godkännas {#choosing-the-processes-to-be-approved}
 
-Godkännandefaserna definieras med den mall som är associerad med kampanjen. Du måste välja vilka element som ska godkännas från mallen och ange vilka Adobe Campaign-operatorer som ska ansvara för godkännandena. Mer information finns i [Campaign-mallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Godkännandefaserna definieras med den mall som är associerad med kampanjen. Du måste välja vilka element som ska godkännas från mallen och ange vilka Adobe Campaign-operatorer som ska ansvara för godkännandena. For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 >[!NOTE]
 >
@@ -271,6 +271,7 @@ Om du vill välja en lista med operatorer klickar du på länken till höger om 
 >* Om en lista över granskare definieras, godkänns ett jobb så snart en granskare har godkänt det. Länken för godkännande finns inte längre på kontrollpanelen. Om en annan granskare klickar på länken för godkännande i meddelandet när meddelanden har skickats, får de ett meddelande om att en annan operator redan har godkänt jobbet.
 >* Du kan definiera ett godkännandeschema för kampanjen i den nedre delen av granskningsfönstret. Som standard har granskarna tre dagar på sig att godkänna en process från och med överföringsdatumet. Det är möjligt att konfigurera en påminnelse som automatiskt skickas till de berörda operatörerna före godkännandedeadline.
 >* Du kan lägga till påminnelser från det här avsnittet.
+
 >
 
 
@@ -392,7 +393,7 @@ När innehållet, målsättningen och budgeten har godkänts ändras leveransen 
 
 ![](assets/s_ncs_user_waiting_file_extraction.png)
 
-Extraheringsfilen skapas på extraheringsbegärandedatumet och leveransstatusen ändras till **[!UICONTROL File to approve]**.
+På extraheringsbegärandedatumet skapas extraheringsfilen och leveransstatusen ändras till **[!UICONTROL File to approve]**.
 
 ![](assets/s_ncs_user_file_extract_to_valid.png)
 
