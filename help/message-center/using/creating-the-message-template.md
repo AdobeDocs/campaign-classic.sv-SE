@@ -1,7 +1,7 @@
 ---
-title: Skapar meddelandemallen
-seo-title: Skapar meddelandemallen
-description: Skapar meddelandemallen
+title: Skapa meddelandemallen
+seo-title: Skapa meddelandemallen
+description: Skapa meddelandemallen
 seo-description: null
 page-status-flag: never-activated
 uuid: 8155275c-729b-40ca-abae-e6b75889cc1a
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 2c2a7196-9183-46b1-b1e2-4a07a53e93b4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 12%
 
 ---
 
 
-# Skapar meddelandemallen{#creating-the-message-template}
+# Skapa meddelandemallen{#creating-the-message-template}
 
 1. Gå till mappen **[!UICONTROL Message Center >Transactional message templates]** i Adobe Campaign-trädet.
 1. I listan med transaktionsmeddelandemallar högerklickar och väljer du **[!UICONTROL New]** i listrutan eller klickar på **[!UICONTROL New]** knappen ovanför listan med transaktionsmeddelandemallar.
