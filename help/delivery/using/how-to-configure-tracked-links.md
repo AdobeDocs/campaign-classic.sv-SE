@@ -1,7 +1,7 @@
 ---
-title: Konfigurera spårade länkar
-seo-title: Konfigurera spårade länkar
-description: Konfigurera spårade länkar
+title: Så konfigurerar man spårade länkar
+seo-title: Så konfigurerar man spårade länkar
+description: Så konfigurerar man spårade länkar
 seo-description: null
 page-status-flag: never-activated
 uuid: 0fb41a43-8a84-4a61-bf93-97e1d448a5ec
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ed44ccd8053d79024e8fb2d05ee27e1e663b8cb2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 
-# Konfigurera spårade länkar{#how-to-configure-tracked-links}
+# Så konfigurerar man spårade länkar{#how-to-configure-tracked-links}
 
-För varje leverans kan du spåra mottagningen av meddelanden och aktiveringen av länkarna som infogats i meddelandeinnehållet. På så sätt kan du spåra mottagarnas beteende efter de leveransåtgärder som de har fått som mål.
+För varje leverans kan du spåra mottagningen av meddelanden och aktiveringen av länkarna som har infogats i meddelandets innehåll. På så sätt kan du spåra mottagarnas beteende beroende på de leveransåtgärder de har fått som mål.
 
 >[!NOTE]
 >
