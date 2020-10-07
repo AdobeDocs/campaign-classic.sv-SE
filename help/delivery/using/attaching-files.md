@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,16 +28,16 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
 
 Det finns två möjliga fall:
 
 * Välj en fil och bifoga den till leveransen som den är.
-* Anpassa innehållet i bilagan för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras, om du har alternativet **Variabel digital utskrift** .
+* Anpassa innehållet i den bifogade filen för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras, om du har alternativet **Variabel digital utskrift** .
 
 >[!NOTE]
 >
->Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Om mallar](../../delivery/using/about-templates.md).
+>Den här typen av konfiguration utförs vanligtvis i leveransmallarna. For more on this, refer to [About templates](../../delivery/using/about-templates.md).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 
@@ -51,7 +48,7 @@ Följ stegen nedan för att bifoga en lokal fil till en leverans.
 >Du kan bifoga flera filer till en leverans. Bifogade filer kan ha vilket format som helst, inklusive zippat format.
 
 1. Klicka på **[!UICONTROL Attachments]** länken.
-1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka på knappen **[!UICONTROL Add]**.
 1. Klicka **[!UICONTROL File...]** för att välja den fil som ska bifogas leveransen.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -128,11 +125,11 @@ Använd följande konfigurationssteg för den här typen av bifogad fil:
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
 
 ### Bifoga en beräknad fil {#attach-a-calculated-file}
 
-Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. Välj alternativet **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >
