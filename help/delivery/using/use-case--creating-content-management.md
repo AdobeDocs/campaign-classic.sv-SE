@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 2%
 
 ---
 
@@ -55,15 +55,15 @@ Det här nyhetsbrevet innehåller tre typer av element:
 
 De olika elementen i det här nyhetsbrevet sätts samman baserat på reglerna som definieras i en JavaScript-mall som refererar till alla element som ska infogas och skapar en layout för dem.
 
-Dessa element skapas via ett dedikerat schema som anger följande element för varje innehåll: namn, etikett, typ, storlek och annan information som är relevant för dess bearbetning i Adobe Campaign.
+Dessa element skapas via ett dedikerat schema som anger följande element för varje innehåll: namn, etikett, typ, storlek samt all annan information som är relevant för dess bearbetning i Adobe Campaign.
 
-## Steg 2 - Skapa dataschemat {#step-2---creating-the-data-schema}
+## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
 
 Ett dataschema är ett XML-dokument som är kopplat till innehållet. Den beskriver XML-strukturen för data i det här innehållet.
 
 >[!NOTE]
 >
->Mer information om hur du skapar och konfigurerar datamappningar i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
+>Mer information om hur du skapar och konfigurerar datascheman i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
 >
 >Konfigurationselement som är specifika för innehållshantering beskrivs i [Datamodeller](../../delivery/using/data-schemas.md).
 
@@ -89,7 +89,7 @@ Så här skapar du ett dataschema:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Mer information finns i [Redigera scheman](../../delivery/using/data-schemas.md#editing-schemas).
+   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
 
    För varje element som innehållet refererar till måste du välja en matchande typ.
 
@@ -98,10 +98,10 @@ Så här skapar du ett dataschema:
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Innehåll</strong><br /> </th> 
-   <th> <strong>Format</strong><br /> </th> 
-   <th> <strong>Typ</strong><br /> </th> 
-   <th> <strong>Etikett</strong><br /> </th> 
+   <th> <strong>Innehåll</strong> <br /> </th> 
+   <th> <strong>Format</strong> <br /> </th> 
+   <th> <strong>Typ</strong> <br /> </th> 
+   <th> <strong>Etikett</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -138,7 +138,7 @@ Så här skapar du ett dataschema:
   <tr> 
    <td> Upphovsman<br /> </td> 
    <td> Element<br /> </td> 
-   <td> PM<br /> </td> 
+   <td> Memo<br /> </td> 
    <td> Upphovsman<br /> </td> 
   </tr> 
   <tr> 
@@ -169,7 +169,7 @@ Schemat kommer att innehålla följande information:
 
 ## Steg 3 - Skapa indataformuläret {#step-3---creating-the-input-form}
 
-Med indataformuläret kan du redigera en innehållsinstans via ett indatagränssnitt från Adobe Campaign-klientkonsolen.
+Med indataformuläret kan du redigera en innehållsinstans via ett indatagränssnitt från Adobe Campaign klientkonsol.
 
 Beskrivningen av ett formulär är ett strukturerat XML-dokument som observerar grammatiken i xtk:form-formulärschemat.
 
@@ -229,7 +229,7 @@ I det här exemplet vill vi använda en JavaScript-mall för att definiera datak
 >
 >Begränsningar som är kopplade till dokumentbyggen (JavaScript- eller XSL-mallar) beskrivs i [Formatering](../../delivery/using/formatting.md).
 
-Om du vill använda en JavaScript-mall i Adobe Campaign följer du de här stegen:
+Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
 
 1. Öppna Adobe Campaign Explorer och markera **[!UICONTROL Administration > Configuration > JavaScript Templates]** noden.
 
