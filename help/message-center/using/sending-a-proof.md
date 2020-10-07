@@ -1,7 +1,7 @@
 ---
-title: Skicka ett bevis
-seo-title: Skicka ett bevis
-description: Skicka ett bevis
+title: Skicka en korrektur
+seo-title: Skicka en korrektur
+description: Skicka en korrektur
 seo-description: null
 page-status-flag: never-activated
 uuid: 6446cc5c-8378-48d1-9486-bffbae83e28d
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 8%
 
 ---
 
 
-# Skicka ett bevis{#sending-a-proof}
+# Utskick av korrektur{#sending-a-proof}
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
