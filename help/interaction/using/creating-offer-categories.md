@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ För varje kategori kan du definiera datum för behörighet, dvs. en period efte
 
 Om du vill skapa ytterligare en kategori gör du så här:
 
-1. Gå till **[!UICONTROL Offer catalog]** mappen.
+1. Go to the **[!UICONTROL Offer catalog]** folder.
 
    ![](assets/offer_cat_create_001.png)
 
