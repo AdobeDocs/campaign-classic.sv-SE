@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: ca3377c6-a120-4cd0-aaf4-80248f4f5918
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 4%
 
 ---
 
@@ -92,7 +92,7 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   Du kan dölja **[!UICONTROL Next]** - och/eller **[!UICONTROL Back]** -knapparna om de ska ersättas av en länk. Se den här [sidan](../../web/using/defining-web-forms-page-sequencing.md).
+   Du kan dölja **[!UICONTROL Next]** - och/eller **[!UICONTROL Back]** -knapparna om de ska ersättas av en länk. Refer to this [page](../../web/using/defining-web-forms-page-sequencing.md).
 
    Länken kommer att ersätta den **[!UICONTROL Next]** knapp som används som standard.
 
@@ -120,7 +120,7 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
    >[!CAUTION]
    >
-   >Den här funktionen är bara tillgänglig om du har installerat **[!UICONTROL Social Marketing]** programmet. Om du vill använda det här alternativet måste du skapa ett Facebook-program tillsammans med ett externt konto av **[!UICONTROL Facebook Connect]** typen. Mer information finns på [den här sidan](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+   >Den här funktionen är bara tillgänglig om du har installerat **[!UICONTROL Social Marketing]** programmet. Om du vill använda det här alternativet måste du skapa ett Facebook-program tillsammans med ett externt konto av **[!UICONTROL Facebook Connect]** typen. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
 
    Med det här **[!UICONTROL Preload with Facebook]** alternativet kan du infoga en knapp i ett formulär för att förhandsladda fält med hjälp av Facebook-profilinformation.
 
@@ -142,8 +142,8 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 I det här fallet har vi skapat ett webbprogram som består av följande element:
 
 * en sida som innehåller formuläret
-* en **[!UICONTROL Record]** aktivitet
-* en **[!UICONTROL End]** aktivitet
+* en **[!UICONTROL Record]**-aktivitet
+* an **[!UICONTROL End]** activity
 
 ![](assets/social_webapp_031.png)
 
@@ -165,7 +165,7 @@ Så här lägger du till en förinläsningsknapp:
 
    ![](assets/social_webapp_035.png)
 
-1. Gå till **[!UICONTROL Application]** fältet och välj den **[!UICONTROL Facebook Connect]** typ av externt konto som skapades tidigare. Mer information finns på [den här sidan](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+1. Gå till **[!UICONTROL Application]** fältet och välj den **[!UICONTROL Facebook Connect]** typ av externt konto som skapades tidigare. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
 
    ![](assets/social_webapp_036.png)
 
@@ -198,9 +198,9 @@ Detta ger följande resultat:
 
 På fliken **[!UICONTROL Text]** kan du skapa variabelfält som kan användas i HTML mellan &lt;%= och %> tecken med följande syntax: **$(IDENTIFIER)**.
 
-Använd den här metoden om du enkelt vill att strängarna ska vara lokaliserade. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md)
+Använd den här metoden om du enkelt vill att strängarna ska vara lokaliserade. See [Translating a web form](../../web/using/translating-a-web-form.md)
 
-Du kan till exempel skapa ett **kontaktfält** som gör att du kan visa strängen&quot;Datum för senaste kontakt:&quot; för HTML-innehållet. Gör så här:
+Du kan till exempel skapa ett **kontaktfält** som gör att du kan visa strängen&quot;Datum för senaste kontakt:&quot; för HTML-innehållet. Följ stegen nedan för att göra detta:
 
 1. Klicka på fliken **[!UICONTROL Text]** i HTML-texten.
 1. Klicka på **[!UICONTROL Add]** ikonen.
