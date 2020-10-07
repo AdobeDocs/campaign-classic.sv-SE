@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 811d664807776473790b74c4cb6a672b5ca2bdd8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +32,7 @@ Ni kan definiera nya block som gör att ni kan optimera er leveranspersonaliseri
 
 >[!NOTE]
 >
->Personaliseringsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
+>Personaliseringsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]** . Se denna [sida](../../web/using/editing-content.md#inserting-a-personalization-block) för mer information om detta.
 
 ## Infoga personaliseringsblock {#inserting-personalization-blocks}
 
