@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,11 +24,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Översikt {#overview}
 
-SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign poängsätta e-postmeddelanden och avgöra om ett meddelande troligtvis kommer att anses oönskat innan leverans startas. För att göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler krävs för att fungera.
+SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign ge e-postmeddelanden poäng och avgöra om ett meddelande troligtvis inte är önskvärt innan det skickas. För att kunna göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler måste användas.
 
 Distributionen och integreringen av SpamAssassin enligt beskrivningen i detta kapitel baseras på standardprogramvaruinstallation, liksom filtrerings- och poängregler, som tillhandahålls av SpamAssassin utan ändringar eller optimeringar. Poängattribuering och meddelandekvalificering baseras enbart på konfigurationen av SpamAssets-alternativen och på filtreringsregler. Nätverksadministratörer ansvarar för att anpassa dem till företagets behov.
 
@@ -39,11 +36,11 @@ Distributionen och integreringen av SpamAssassin enligt beskrivningen i detta ka
 >
 >SpamAssasins klassificering av e-post som oönskad baseras helt på filtrerings- och poängregler.
 >
->Dessa regler måste därför uppdateras minst en gång om dagen för att din SpamAssassin-installation och dess integrering i Adobe Campaign ska fungera fullt ut och för att säkerställa relevansen av poängen som tilldelats dina leveranser innan de skickas.
+>Dessa regler måste därför uppdateras minst en gång om dagen för att din SpamAssassin-installation och dess integrering i Adobe Campaign ska fungera fullt ut och för att säkerställa att poängen som tilldelats dina leveranser är relevanta innan de skickas.
 >
 >Den här uppdateringen görs av serveradministratören som är värd för SpamAssassin.
 
-Om du använder SpamAssassin i Adobe Campaign får du en indikation på det möjliga beteendet hos e-postservrar som använder SpamAssassin när de tar emot e-post som skickas av Adobe Campaign. Det är dock möjligt att e-postservrarna hos internetleverantörer eller e-postservrar fortfarande anser att de meddelanden som skickas av Adobe Campaign är oönskade.
+Om du använder SpamAssassin i Adobe Campaign får du en indikation på det möjliga beteendet hos e-postservrar som använder SpamAssassin när de tar emot e-post som skickas av Adobe Campaign. Det är dock möjligt att e-postservrarna hos internetleverantörer eller e-postservrar fortfarande anser att de meddelanden som skickas av Adobe Campaign inte är önskade.
 
 För att kunna distribuera SpamAssassin och dess moduler i Perl krävs Adobe Campaign-programservrar med Internetåtkomst via en HTTP-anslutning (TCP/80-flöde).
 
@@ -121,7 +118,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
    Stoppa och starta **[!UICONTROL Adobe Campaign]** tjänsten.
 
-1. För att kontrollera integreringen av SpamAssassin i Adobe Campaign använder du ett GTBUE-test (Generic Test for Unsolicited Bulk Email):
+1. Om du vill kontrollera integreringen av SpamAssassin i Adobe Campaign använder du ett GTBUE-test (Generic Test for Unsolicited Bulk Email):
 
    Dubbelklicka på **filen portableshell.bat** . Detta aktiverar visningen av ett Windows-gränssnitt. Kör sedan följande kommando:
 
@@ -129,7 +126,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
    ```
 
-   Innehållet i det här testmeddelandet utlöser 1 000 poäng som tilldelats av SpamAssassin. Det innebär att det har identifierats som oönskat och att integrationen i Adobe Campaign lyckades och fungerar fullt ut.
+   Innehållet i det här testmeddelandet utlöser 1 000 poäng som tilldelats av SpamAssassin. Det innebär att det har identifierats som oönskat och att integreringen i Adobe Campaign lyckades och fungerar fullt ut.
 
 1. Uppdatera SpamAssassin-filtrerings- och bedömningsregler
 
