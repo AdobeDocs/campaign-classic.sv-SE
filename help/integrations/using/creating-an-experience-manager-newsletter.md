@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 627ade78-96b3-4a6e-9ace-74610a3c8d1a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 1%
@@ -23,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Skapa ett Experience Manager-nyhetsbrev{#creating-an-experience-manager-newsletter}
+# Creating an Experience Manager newsletter{#creating-an-experience-manager-newsletter}
 
 Den här integreringen kan till exempel användas för att skapa ett nyhetsbrev i Adobe Experience Manager som sedan används i Adobe Campaign som en del av en e-postkampanj.
 
@@ -36,7 +33,7 @@ Ett mer detaljerat exempel på hur du använder den här integreringen finns i d
    ![](assets/aem_uc_1.png)
 
 1. Välj **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Main Area > Email campaigns]**.
-1. Klicka på **[!UICONTROL Create]** knappen i det övre högra hörnet på sidan och markera sedan **[!UICONTROL Page]**.
+1. Klicka på **[!UICONTROL Create]** knappen längst upp till höger på sidan och välj sedan **[!UICONTROL Page]**.
 
    ![](assets/aem_uc_2.png)
 
