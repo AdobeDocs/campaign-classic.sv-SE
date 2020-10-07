@@ -11,18 +11,18 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 2%
 
 ---
 
 
 # Konfigurera din plattform{#configuring-your-platform}
 
-Vissa större ändringar i Adobe Campaign v7 kräver en konfiguration för att den ska fungera effektivt. Dessa parametrar kan vara nödvändiga före eller efter migrering. De berörda ändringarna och deras konfigurationsläge visas i det här avsnittet.
+Vissa större förändringar i Adobe Campaign v7 kräver en konfiguration för att den ska fungera effektivt. Dessa parametrar kan vara nödvändiga före eller efter migrering. De berörda ändringarna och deras konfigurationsläge visas i det här avsnittet.
 
 Under migreringen återskapas **NmsRecipient** -tabellen från schemadefinitionen. Alla ändringar som görs i SQL-strukturen för den här tabellen utanför Adobe Campaign går förlorade.
 
@@ -44,31 +44,31 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
 
    Om du vill använda läget &quot;multitidszon&quot;, se avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones) .
 
-   Om du använder Oracle som en databas kontrollerar du att Oracles tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. Mer information finns i avsnittet [Oracle](../../migration/using/general-configurations.md#oracle) .
+   Om du använder Oracle som en databas kontrollerar du att Oracles tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
 
 * Säkerhetszoner
 
    Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: du måste konfigurera säkerhetszonerna, vilket kräver att du samlar in användarens IP-adresser innan migreringen.
 
-   Mer information finns i avsnittet [Säkerhet](../../migration/using/general-configurations.md#security) .
+   For more information, refer to the [Security](../../migration/using/general-configurations.md#security) section.
 
 * Syntax
 
-   Vissa syntaxer i JavaScript kan accepteras i version 5.11 och 6.02 och inte längre accepteras i version 7 på grund av att en ny tolk används. Mer information finns i [JavaScript](../../migration/using/general-configurations.md#javascript) -avsnittet.
+   Vissa syntaxer i JavaScript kan accepteras i version 5.11 och 6.02 och inte längre accepteras i version 7 på grund av att en ny tolk används. For more information, refer to the [JavaScript](../../migration/using/general-configurations.md#javascript) section.
 
-   På samma sätt introduceras en ny syntax i Adobe Campaign v7 som ersätter den SQLData-baserade syntaxen. Om du använder kodelement med den här syntaxen måste du anpassa dem. Mer information finns i avsnittet [SQLData](../../migration/using/general-configurations.md#sqldata) .
+   På samma sätt introduceras en ny syntax i Adobe Campaign v7 som ersätter den SQLData-baserade syntaxen. Om du använder kodelement med den här syntaxen måste du anpassa dem. For more information, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * Lösenord
 
-   Du måste konfigurera **administratörslösenordet** och det **interna** lösenordet. Mer information finns i avsnittet [Användarlösenord](../../migration/using/before-starting-migration.md#user-passwords) .
+   Du måste konfigurera **administratörslösenordet** och det **interna** lösenordet. For more information, refer to the [User passwords](../../migration/using/before-starting-migration.md#user-passwords) section.
 
 * Trädstruktur
 
-   Om du migrerar från en v5.11-plattform måste du ordna om trädstrukturmapparna enligt Adobe Campaign v6-standarderna. Mer information finns i [trädstrukturavsnittet](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) Adobe Campaign v7.
+   Om du migrerar från en v5.11-plattform måste du ordna om trädstrukturmapparna enligt Adobe Campaign v6-standarderna. Mer information finns i [Adobe Campaign v7-trädstrukturavsnittet](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) .
 
 * Interaktion
 
-   Om du använder **Interaktion** måste du ta bort alla 6.02 schemareferenser som inte längre finns i v7. Mer information finns i avsnittet [Interaktion](../../migration/using/general-configurations.md#interaction) .
+   Om du använder **Interaktion** måste du ta bort alla 6.02 schemareferenser som inte längre finns i v7. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
 ## Efter migreringen {#after-the-migration}
 
@@ -78,13 +78,13 @@ När du har kört **efteruppgraderingen** måste följande element beaktas och m
 
    Spegelsidans anpassningsblock har ändrats med v6.x. Den här nya versionen förbättrar säkerheten vid åtkomst av dessa sidor.
 
-   Om du använde v5-anpassningsblocket i dina meddelanden kommer speglingssidan inte att visas. Adobe rekommenderar att du använder det nya personaliseringsblocket när du infogar en spegelsida i dina meddelanden.
+   Om du använde v5-anpassningsblocket i dina meddelanden kommer speglingssidan inte att visas. Adobe rekommenderar starkt att du använder det nya anpassningsblocket när du infogar en spegelsida i dina meddelanden.
 
    Som en tillfällig lösning (och eftersom spegelsidorna fortfarande är aktiva) kan du återgå till det gamla personaliseringsblocket för att undvika det här problemet genom att ändra alternativet **[!UICONTROL XtkAcceptOldPasswords]** och ange det som **[!UICONTROL 1]**. Detta påverkar inte användningen av det nya v6.x-anpassningsblocket.
 
 * Syntax
 
-   Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera alternativet **allowSQLInjection** i **serverConf.xml** -filen eftersom det ger dig tid att skriva om koden. När koden har anpassats måste du se till att återaktivera säkerheten. Mer information finns i avsnittet [SQLData](../../migration/using/general-configurations.md#sqldata) .
+   Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera alternativet **allowSQLInjection** i **serverConf.xml** -filen eftersom det ger dig tid att skriva om koden. När koden har anpassats måste du se till att återaktivera säkerheten. For more on this, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * Konflikter
 
@@ -118,15 +118,15 @@ När du har kört **efteruppgraderingen** måste följande element beaktas och m
 
 * Scheman
 
-   I Red Hat kan du stöta på fel när du redigerar vissa scheman. Mer information finns i avsnittet [Röd-Hatt](../../migration/using/general-configurations.md#red-hat) .
+   I Red Hat kan du stöta på fel när du redigerar vissa scheman. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
 * Arbetsflöden
 
-   Om du migrerar från en v5.11-plattform måste du styra körningskatalogen för arbetsflöden. Mer information finns i avsnittet [Arbetsflöden](../../migration/using/specific-configurations-in-v5-11.md#workflows) .
+   Om du migrerar från en v5.11-plattform måste du styra körningskatalogen för arbetsflöden. For more on this, refer to the [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) section.
 
 * Spårning
 
-   Om du migrerar från en v5.11-plattform måste du konfigurera spårningsläget. Mer information finns i avsnittet [Spärra/knip](../../migration/using/specific-configurations-in-v5-11.md#tracking) .
+   Om du migrerar från en v5.11-plattform måste du konfigurera spårningsläget. For more on this, refer to the [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) section.
 
 * Startsida
 
@@ -134,5 +134,5 @@ När du har kört **efteruppgraderingen** måste följande element beaktas och m
 
 * Interaktion
 
-   Om du använder **Interaktion** måste du justera alla parametrar efter migreringen. Mer information finns i avsnittet [Interaktion](../../migration/using/general-configurations.md#interaction) .
+   Om du använder **Interaktion** måste du justera alla parametrar efter migreringen. For more on this, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
