@@ -1,7 +1,7 @@
 ---
-title: Egenskaper för rapporten
-seo-title: Egenskaper för rapporten
-description: Egenskaper för rapporten
+title: Rapportens egenskaper
+seo-title: Rapportens egenskaper
+description: Rapportens egenskaper
 seo-description: null
 page-status-flag: never-activated
 uuid: 56163f53-d115-45b8-94a5-c173ac4c6533
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 3%
 
 ---
 
 
-# Egenskaper för rapporten{#properties-of-the-report}
+# Rapportens egenskaper{#properties-of-the-report}
 
 ## Översikt {#overview}
 
@@ -52,7 +52,7 @@ Den övergripande principen är följande:
 
    Rättigheterna för standardrapportoperatorn (&#39;webapp&#39;) används för att visa rapportelement.
 
-* Med det här **[!UICONTROL Access control]** alternativet kan Adobe Campaign-operatorer komma åt den när de har loggat in.
+* Med det här **[!UICONTROL Access control]** alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
 * Med det här **[!UICONTROL Specific account]** alternativet kan du köra rapporten med rättigheter för den operator som är vald i **[!UICONTROL Operator]** fältet.
 
 Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-web-forms.md).
@@ -86,7 +86,7 @@ Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-w
 
 ## Definiera ytterligare inställningar {#defining-additional-settings}
 
-På fliken **[!UICONTROL Parameters]** kan du skapa ytterligare inställningar för rapporten: dessa inställningar skickas till URL:en under anropet.
+På fliken **[!UICONTROL Parameters]** kan du skapa ytterligare inställningar för rapporten: dessa inställningar skickas till URL:en under samtalet.
 
 Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-web-forms.md).
 
@@ -101,13 +101,13 @@ Så här skapar du en ny inställning:
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. Ange vid behov om inställningen ska vara obligatorisk eller inte.
-1. Välj den typ av inställning som du vill skapa: **[!UICONTROL Filter]** eller **[!UICONTROL Variable]**.
+1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
 
    Med det här **[!UICONTROL Filter entities]** alternativet kan du använda ett databasfält som parameter.
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
-   Data återställs direkt på entitetsnivå: ctx/ **mottagare/@konto**.
+   Data återställs direkt på entitetsnivå: **ctx/mottagare/@konto**.
 
    Med det här **[!UICONTROL Variable]** alternativet kan du skapa eller välja en variabel som ska skickas som en parameter i URL-adressen och som kan användas i filtren.
 
@@ -133,7 +133,7 @@ Om du vill visa definitionen för en variabel markerar du den och klickar på **
 
 På fliken **[!UICONTROL Scripts]** kan du referera till JavaScript-koder som ska köras på klient- och/eller serversidan när rapportsidan anropas.
 
-För normal körning på klientsidan måste de refererade skripten skrivas i JavaScript och måste vara kompatibla med de flesta webbläsare. Mer information finns i [det här avsnittet](../../web/using/web-forms-answers.md).
+För normal körning på klientsidan måste de refererade skripten skrivas i JavaScript och måste vara kompatibla med de flesta webbläsare. Mer information om detta finns i [det här avsnittet](../../web/using/web-forms-answers.md).
 
 ## Anpassa felsidan {#personalizing-the-error-page}
 
