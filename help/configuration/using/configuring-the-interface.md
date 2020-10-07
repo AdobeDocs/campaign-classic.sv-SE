@@ -11,30 +11,30 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 8fb9ff23-17a7-4425-9195-738d6fd914dc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 3%
 
 ---
 
 
 # Konfigurera gränssnittet{#configuring-the-interface}
 
-Gör så här för att visa och kommunicera med den nya mottagartabellen i Adobe Campaign-gränssnittet:
+Om du vill visa och öppna en dialogruta med den nya mottagartabellen i Adobe Campaign-gränssnittet gör du så här:
 
 * Skapa ett nytt formulär för att redigera innehållet i den nya mottagartabellen.
 * Ange en ny typ i mappen för utforskarträdet.
-* Skapa ett nytt webbprogram för att komma åt den anpassade tabellen via hemsidan för Adobe Campaign.
+* Skapa ett nytt webbprogram för att komma åt den anpassade tabellen via Adobe Campaign hemsida.
 
-Adobe Campaign använder en global variabel av typen Nms_DefaultRcpSchema för att öppna en dialogruta med standardmottagardatabasen (nms:receive). Denna variabel måste därför ändras.
+Adobe Campaign använder den globala variabeln &quot;Nms_DefaultRcpSchema&quot; för att öppna en dialogruta med standardmottagardatabasen (nms:receive). Denna variabel måste därför ändras.
 
 1. Gå till **[!UICONTROL Administration>Platform>Options]** noden för Utforskaren.
 1. Ändra värdet för variabeln **Nms_DefaultRcpSchema** med namnet på schemat som matchar den externa mottagartabellen (i det här fallet: cus:individual).
 1. Spara ändringar.
 
-## Skapa ett nytt formulär {#creating-a-new-form-}
+## Creating a new form {#creating-a-new-form-}
 
 Om du skapar ett nytt formulär kan du visa och redigera data i den externa mottagartabellen.
 
@@ -69,7 +69,7 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 
 ## Skapa en ny typ av mapp i navigeringshierarkin {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Gå till **[!UICONTROL Administration>Configuration>Navigation hierarchies]** noden.
+1. Go to the **[!UICONTROL Administration>Configuration>Navigation hierarchies]** node.
 1. Skapa ett nytt **xtk:navtree** -typ av **navtree** -dokument.
 1. Beskriv alla övervakningar och fält som du behöver beroende på tabellmallen.
 
