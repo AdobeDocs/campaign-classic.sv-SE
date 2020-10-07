@@ -1,5 +1,5 @@
 ---
-title: Leveransvillkor i Adobe Campaign Classic
+title: Om leveransbarhet i Adobe Campaign Classic
 description: Läs mer om hur du hanterar leveranser i Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
