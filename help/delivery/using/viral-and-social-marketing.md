@@ -1,7 +1,7 @@
 ---
-title: Virusmarknadsföring och social marknadsföring
-seo-title: Virusmarknadsföring och social marknadsföring
-description: Virusmarknadsföring och social marknadsföring
+title: Viral och social marknadsföring
+seo-title: Viral och social marknadsföring
+description: Viral och social marknadsföring
 seo-description: null
 page-status-flag: never-activated
 uuid: dca3db7e-cc8d-42ca-b1b8-45e9fb739c97
@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 66f2b229-92d9-4db1-97a4-2d9eb2270446
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 2%
 
 ---
 
 
-# Virusmarknadsföring och social marknadsföring{#viral-and-social-marketing}
+# Viral och social marknadsföring{#viral-and-social-marketing}
 
 ## Om viral marknadsföring {#about-viral-marketing}
 
-Med Adobe Campaign kan ni skapa verktyg för att uppmuntra till viral marknadsföring.
+Med Adobe Campaign kan ni skapa verktyg för att uppmuntra viral marknadsföring.
 
 På så sätt kan mottagare eller besökare dela information med sitt nätverk: från att lägga till en länk till sin Facebook- eller Twitter-profil till att skicka ett meddelande till en vän.
 
@@ -89,7 +89,7 @@ Använd följande steg:
    >
    >Denna konfiguration kan anpassas. För att göra detta måste du ändra webbprogrammet för **mottagarprenumerationer** som lagras i **[!UICONTROL Resources > Online > Web applications]** noden.
    >
-   >Mer information om webbprogram finns i [det här avsnittet](../../web/using/about-web-applications.md).
+   >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
 
    När de har validerat skickas ett bekräftelsemeddelande till dem: de registreras endast för gott när de aktiverar länken i bekräftelsemeddelandet. Det här meddelandet skapas baserat på **[!UICONTROL Registration confirmation]** mallen som lagras i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** noden.
 
@@ -97,7 +97,7 @@ Använd följande steg:
 
 ## Spåra delning via sociala nätverk {#tracking-social-network-sharing}
 
-Delning och åtkomst till delad information spåras. Den här informationen som samlas in av Adobe Campaign finns på två platser:
+Delning och åtkomst till delad information spåras. Denna information som Adobe Campaign samlar in finns tillgänglig på två ställen:
 
 * på fliken **[!UICONTROL Tracking]** för leveransen (eller individuellt för varje mottagare):
 
