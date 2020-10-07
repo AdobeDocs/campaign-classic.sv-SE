@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 62d03128-5525-4556-8590-8492847c4a1f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # Hantera mallar för erbjudanden{#managing-offer-templates}
 
-Mallar för erbjudanden levereras direkt i Adobe Campaign. Du kan använda dem när du har skapat dina erbjudanden, duplicerat dem eller anpassat deras konfiguration efter dina behov. Du kan också skapa egna mallar. Mallerbjudanden lagras i mappen **Resources** > **Templates** > **Offer templates**.
+Mallar för erbjudanden levereras i Adobe Campaign. Du kan använda dem när du har skapat dina erbjudanden, duplicerat dem eller anpassat deras konfiguration efter dina behov. Du kan också skapa egna mallar. Mallerbjudanden lagras i mappen **Resources** > **Templates** > **Offer templates**.
 
 ## Skapa en erbjudandemall {#creating-an-offer-template}
 
