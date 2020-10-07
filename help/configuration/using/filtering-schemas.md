@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 64d4c5b8-db0b-4287-8d30-4bf09878a401
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
@@ -105,7 +105,7 @@ Inbyggda scheman är som standard bara tillgängliga med SKRIV-behörighet för 
 
 >[!IMPORTANT]
 >
->LÄS- och SKRIVbehörigheter för schemat **xtk:sessionInfo** är bara tillgängliga för det interna kontot för en Adobe Campaign-instans.
+>LÄS- och SKRIVbehörigheter för schemat **xtk:sessionInfo** är bara tillgängliga för ett internt konto i en Adobe Campaign-instans.
 
 ## Ändra systemfilter för inbyggda scheman {#modifying-system-filters-of-built-in-schemas}
 
