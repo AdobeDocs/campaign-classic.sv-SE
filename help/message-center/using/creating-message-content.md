@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 4%
 
 ---
 
@@ -26,10 +26,10 @@ Definitionen av transaktionens meddelandeinnehåll är densamma som för vanliga
 
 >[!CAUTION]
 >
->Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign innehåller ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
+>Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
 >Till skillnad från i JSSP och webApp `<%=` finns ingen standardflytning.
 >
->I det här fallet måste du undvika alla data som kommer från händelsen på rätt sätt. Den här inställningen beror på hur fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML-koden kan du använda escapeXMLString.
+>I det här fallet måste du undvika alla data som kommer från händelsen på rätt sätt. Detta beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML-koden kan du använda escapeXMLString.
 
 När du har definierat meddelandeinnehållet kan du integrera händelseinformation i meddelandetexten och anpassa den. Händelseinformation infogas i texten tack vare personaliseringstaggar.
 
