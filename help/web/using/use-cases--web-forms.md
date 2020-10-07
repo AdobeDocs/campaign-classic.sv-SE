@@ -1,7 +1,7 @@
 ---
-title: '"Användningsexempel: webbformulär"'
-seo-title: '"Användningsexempel: webbformulär"'
-description: '"Användningsexempel: webbformulär"'
+title: '"Användningsfall: webbformulär"'
+seo-title: '"Användningsfall: webbformulär"'
+description: '"Användningsfall: webbformulär"'
 seo-description: null
 page-status-flag: never-activated
 uuid: b2c3f171-325e-4913-a188-a791bad0df2e
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Användningsexempel: webbformulär{#use-cases-web-forms}
+# Användningsfall: webbformulär{#use-cases-web-forms}
 
 ## Skapa ett prenumerationsformulär med dubbel anmälan {#create-a-subscription--form-with-double-opt-in}
 
@@ -48,7 +45,7 @@ Det här exemplet baseras på följande scenario:
 
 Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till på tillfällig tjänstnivå.
 
-1. I **[!UICONTROL Explorer]** väljer du **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Skapa en leveransmall för att skicka bekräftelsemeddelanden för prenumerationer.
 1. Klicka på **[!UICONTROL To]** knappen i **[!UICONTROL Email parameters]** för att associera leveransmallen med målmappningen för prenumerationer i stället för mottagare.
 
@@ -86,7 +83,7 @@ Arbetsflödet för webbformulär kommer att innehålla följande aktiviteter:
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
-Gör så här:
+Följ stegen nedan för att göra detta:
 
 1. Skapa ett webbformulär och välj en mall **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
@@ -175,7 +172,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen, och deras profil läggs till i blockeringslista tills de bekräftar sin prenumeration med e-postmeddelandet.
+   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen och deras profil läggs till i blockeringslista tills han/hon bekräftar sin prenumeration med e-postmeddelandet.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
