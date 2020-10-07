@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign Classic-arkitektur för transaktionsmeddelanden
-description: I det här avsnittet beskrivs Adobe Campaign Classic-arkitekturen för transaktionsmeddelanden.
+title: Adobe Campaign Classic transaktionsmeddelandearkitektur
+description: I det här avsnittet beskrivs Adobe Campaign Classic transaktionsmeddelandearkitektur.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -9,19 +9,16 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Arkitektur för transaktionsmeddelanden{#transactional-messaging-architecture}
+# Transaktionsmeddelandets arkitektur{#transactional-messaging-architecture}
 
 ## Om körnings- och kontrollinstanser {#about-execution-and-control-instances}
 
@@ -30,7 +27,7 @@ I Adobe Campaign har funktioner för transaktionsmeddelanden (även kallat Messa
 * en kontrollinstans som meddelandemallarna skapas i,
 * en eller flera körningsinstanser som tar emot händelser och levererar meddelanden.
 
-Om du vill använda de här funktionerna loggar du in på kontrollinstansen för att skapa transaktionsmeddelandemallar, generera meddelandeförhandsvisningen med hjälp av en startlista, visa rapporter och övervaka körningsinstanser.
+För att kunna använda dessa funktioner loggar Adobe Campaign-användare in på kontrollinstansen för att skapa transaktionsmeddelandemallar, generera meddelandeförhandsvisningen med hjälp av en startlista, visa rapporter och övervaka körningsinstanser.
 
 Körningsinstanser tar emot händelser, länkar dem till transaktionsmeddelandemallar och skickar ett personligt meddelande till varje mottagare.
 
@@ -52,13 +49,13 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 
 ## Installera instanser {#installing-instances}
 
-Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
+Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe för mer information.
 
 >[!IMPORTANT]
 >
 >Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
 
-Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional message-paket. Se [Lägga till en leveranskanal](#adding-a-delivery-channel).
+Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Se [Lägga till en leveranskanal](#adding-a-delivery-channel).
 
 * Om du vill installera kontrollinstansen på datorn väljer du **[!UICONTROL Transactional message control]** modulen.
 
@@ -124,14 +121,14 @@ I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skick
 Om du vill använda transaktionsmeddelandemoduler med Mobile App Channel måste du använda följande konfigurationer:
 
 1. Installera paketet **Mobile App Channel** på instanser för kontroll och körning.
-1. Replikera tjänsten för **Mobile-programtypen** Adobe Campaign samt de mobilprogram som den innehåller i körningsinstanserna.
+1. Replikera Adobe Campaign-tjänsten av **mobilprogramstypen** samt de mobilprogram som den innehåller i körningsinstanserna.
 
 Händelsen måste innehålla följande element:
 
 * Mobilenhets-ID (**registrationId** för Android och **deviceToken** för iOS). Detta ID representerar den adress som meddelandet ska skickas till.
 * Länken till mobilprogrammet eller integreringsnyckeln (**uuid**) som gör att du kan återställa anslutningsinformation som är specifik för programmet.
 * Den kanal som meddelandet ska skickas till (**önskadKanal**): 41 för iOS och 42 för Android
-* Alla data som är användbara för personalisering
+* Alla data är användbara för personalisering
 
 Här är ett exempel på en händelse som innehåller den här informationen:
 
@@ -179,6 +176,7 @@ Från **[!UICONTROL Explorer]** , i **[!UICONTROL Platform]** > **[!UICONTROL Ex
    * **[!UICONTROL Label]** och **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
    * **[!UICONTROL Type]** : välj **[!UICONTROL External database]** .
    * **[!UICONTROL Enabled]** måste vara markerad.
+
    Från **[!UICONTROL Connection]** kategorin:
 
    * **[!UICONTROL Type]** : välj databasserver, t.ex. PostgresSQL.
@@ -201,6 +199,7 @@ Från **[!UICONTROL Explorer]** , i **[!UICONTROL Platform]** > **[!UICONTROL Ex
    * **[!UICONTROL Label]** och **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
    * **[!UICONTROL Type]** : välj **[!UICONTROL External database]** .
    * Rutan Aktiverad måste vara markerad.
+
    Från **[!UICONTROL Connection]** kategorin:
 
    * **[!UICONTROL Type]** : välj **[!UICONTROL HTTP relay to remote Database]** .
@@ -217,18 +216,20 @@ Från **[!UICONTROL Explorer]** , i **[!UICONTROL Platform]** > **[!UICONTROL Ex
    * **[!UICONTROL Label]** och **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
    * **[!UICONTROL Type]** : välj **[!UICONTROL Execution instance]** .
    * Rutan Aktiverad måste vara markerad.
+
    Från **[!UICONTROL Connection]** kategorin:
 
    * **[!UICONTROL URL]** : ange körningsinstansens URL.
    * **[!UICONTROL Account]** : ange det konto som används för att komma åt din körningsinstans.
    * **[!UICONTROL Password]** : Ange lösenordet för kontot som används för att komma åt din körningsinstans.
+
    Från **[!UICONTROL Account connection method]** kategorin:
 
    * **[!UICONTROL Method]** : välj **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : välj ditt FDA-konto i listrutan.
-   * Klicka på **[!UICONTROL Create the archiving workflow]** knappen.
+   * Klicka på knappen **[!UICONTROL Create the archiving workflow]**.
    * Klicka på **[!UICONTROL Create data synchronization workflow]** knappen för att skapa arbetsflödet för LINE-datasynkronisering.
 
 
 
-1. Nu kan du börja skapa transaktionsmeddelanden. Mer information finns på den här [sidan](../../message-center/using/introduction.md).
+1. Nu kan du börja skapa transaktionsmeddelanden. Se denna [sida](../../message-center/using/introduction.md) för mer information om detta.
