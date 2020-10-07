@@ -1,5 +1,5 @@
 ---
-title: CRM Connector
+title: CRM-koppling
 description: Läs mer om CRM Connector och konfigurera datasynkronisering med Adobe Campaign.
 page-status-flag: never-activated
 uuid: b3856a82-b1dc-4e36-a2d0-14edc5b66b3b
@@ -9,18 +9,18 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: af7c0d1d-10ac-427b-8d12-b97eb91b30a1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c01a16a19516da6598b2d32a9408460c48aabf7b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 0%
 
 ---
 
 
-# CRM Connector{#crm-connector}
+# CRM-koppling{#crm-connector}
 
-Med **CRM-kopplingen** kan du konfigurera datasynkroniseringen mellan Adobe Campaign och en CRM.
+Med **CRM-kopplingen** kan du konfigurera datasynkroniseringen mellan Adobe Campaign och CRM.
 
 Mer information om CRM-anslutningar i Adobe Campaign finns i det här [avsnittet](../../platform/using/crm-connectors.md).
 
@@ -48,7 +48,7 @@ Om du vill importera data via CRM i Adobe Campaign måste du skapa följande arb
 Konfigurationsstegen för en import-aktivitet i **CRM Connector** är:
 
 1. Välj en **[!UICONTROL Import from the CRM]** åtgärd.
-1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapades i Adobe Campaign under konfigurationen av kopplingen.
+1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under anslutningskonfigurationen.
 1. Gå till **[!UICONTROL Remote fields]** avsnittet och ange fälten som ska importeras.
 
    Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** knappen i verktygsfältet och sedan på **[!UICONTROL Edit expression]** ikonen .
@@ -59,7 +59,7 @@ Konfigurationsstegen för en import-aktivitet i **CRM Connector** är:
 
    >[!CAUTION]
    >
-   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och i Adobe Campaign. Den läggs automatiskt till när aktiviteten godkänns.
+   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och Adobe Campaign. Den läggs automatiskt till när aktiviteten godkänns.
    > 
    >Det sista ändringsdatumet på CRM-sidan är också obligatoriskt för inkrementell dataimport.
 
@@ -73,7 +73,7 @@ Konfigurationsstegen för en import-aktivitet i **CRM Connector** är:
 
 1. Med det här **[!UICONTROL Use automatic index]** alternativet kan du automatiskt hantera inkrementell objektsynkronisering mellan CRM och Adobe Campaign, beroende på datum och senaste ändring.
 
-   Mer information finns i [Variabelhantering](#variable-management).
+   For more on this, refer to [Variable management](#variable-management).
 
 ## Variabelhantering {#variable-management}
 
@@ -135,7 +135,7 @@ Sorteringsordningen för kolumnerna i listan är:
 
 I stället för att importera element som ingår (och eventuellt filtreras) i CRM kan du använda en population som beräknas i förväg i arbetsflödet.
 
-Det gör du genom att markera **[!UICONTROL Use the population calculated upstream]** alternativet och ange fältet som innehåller fjärr-ID:t.
+Om du vill göra det markerar du **[!UICONTROL Use the population calculated upstream]** alternativet och anger fältet som innehåller fjärtidentifieraren.
 
 Markera sedan fälten för den inkommande ifyllning som du vill importera, så som visas nedan:
 
@@ -152,7 +152,7 @@ Om du vill exportera data till CRM måste du skapa följande arbetsflöde:
 För en export använder du följande konfiguration för aktiviteten **CRM Connector** :
 
 1. Välj en **[!UICONTROL Export to CRM]** åtgärd.
-1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapades i Adobe Campaign under konfigurationen av kopplingen.
+1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under anslutningskonfigurationen.
 
    >[!CAUTION]
    >
@@ -168,7 +168,7 @@ För en export använder du följande konfiguration för aktiviteten **CRM Conne
 
    Om det behövs ändrar du dataformatet via listrutan för **[!UICONTROL Conversion]** kolumnerna. Möjliga konverteringstyper beskrivs i det här [avsnittet](../../platform/using/crm-connectors.md#data-format).
 
-   Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att du riskerar att exportera samma post flera gånger eller förlora data.
+   Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att riskera att exportera samma post flera gånger eller förlora data.
 
 ## Dataformat och felhantering {#data-format-and-error-processing}
 
@@ -204,7 +204,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 
 Med den **[!UICONTROL Reject]** utgående övergången kan du komma åt det utdataschema som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. Följande kolumner är:
 
-* För Oracle On Demand: errorLogFilename **(** loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, som inte är felkoden), **errorMessage** (beskrivning av felkontexten).
+* För Oracle On Demand: **errorLogFilename** (loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, annan än felkoden), **errorMessage** (beskrivning av felkontexten).
 * För Salesforce.com: **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
 ## Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
@@ -214,7 +214,7 @@ Om du vill kunna konfigurera en omfattande datasynkroniseringsprocess kan du imp
 Gör så här:
 
 1. Välj en **[!UICONTROL Import objects deleted in the CRM]** åtgärd.
-1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapades i Adobe Campaign under konfigurationen av kopplingen.
+1. Gå till den **[!UICONTROL Remote object]** nedrullningsbara listan och markera objektet som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under anslutningskonfigurationen.
 1. Ange den borttagningsperiod som ska beaktas i **[!UICONTROL Start date]** och i **[!UICONTROL End date]** fälten. Dessa datum inkluderas i perioden.
 
    ![](assets/crm_import_deleted_obj.png)
@@ -229,13 +229,13 @@ Om du vill ta bort objekt på CRM-sidan måste du ange primärnyckeln för de fj
 
 ![](assets/crm_delete_in_crm.png)
 
-På fliken **[!UICONTROL Behavior]** kan du aktivera bearbetning av avvisade. Det här alternativet genererar en andra utdataövergång för **[!UICONTROL CRM connector]** aktiviteten. Mer information finns i det här [avsnittet](../../platform/using/crm-connectors.md#error-processing).
+På fliken **[!UICONTROL Behavior]** kan du aktivera bearbetning av avvisade. Det här alternativet genererar en andra utdataövergång för **[!UICONTROL CRM connector]** aktiviteten. Mer information om detta hittar du i det här [avsnittet](../../platform/using/crm-connectors.md#error-processing).
 
 Även när **[!UICONTROL Process rejects]** alternativet är inaktiverat genereras en varning för varje avvisad kolumn.
 
 ## Exempel på hur du konfigurerar en kontaktimport {#example-of-how-to-configure-a-contact-import}
 
-I följande exempel är aktiviteten konfigurerad att importera kontakter från ett Oracle On Demand CRM. Innan CRM-fälten importeras markeras de på ett sätt så att de sammanfaller med de som redan finns i Adobe Campaign-databasen.
+I följande exempel är aktiviteten konfigurerad att importera kontakter från ett Oracle On Demand CRM. Innan CRM-fälten importeras markeras de på ett sätt så att de sammanfaller med de fält som redan finns i Adobe Campaign-databasen.
 
 ![](assets/crm_connectors_ood_6.png)
 
