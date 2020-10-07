@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
 
 # Vanliga kommandon{#usual-commands}
 
-I det här avsnittet visas de vanliga kommandona i Adobe Campaign.
+I det här avsnittet visas vanliga kommandon i Adobe Campaign.
 
 Kommandot **nlserver** är indatakommandot för hela Adobe Campaign-programmet.
 
@@ -34,6 +34,7 @@ Parametern **`<command>`** motsvarar modulen.
 >
 >* I vilket fall som helst kan du lägga till argumentet **-noconsole** för att ta bort kommentarer som visas när modulerna har startats.
 >* Omvänt kan du lägga till argumentet **-verbose** för att visa mer information.
+
 >
 
 
@@ -66,7 +67,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ett annat användbart kommando är **lserver monitor**. Den listar XML-filen för övervakning (hämtas i Adobe Campaign-klienten eller via webbsidan **monitor.jsp** ).
+Ett annat användbart kommando är **lserver monitor**. Här listas XML-filen för övervakning (som hämtas i Adobe Campaign-klienten eller via webbsidan **monitor.jsp** ).
 
 Du kan lägga till den parameter som **saknas** för att visa de saknade modulerna (fel i moduler, moduler som stängs av osv.)
 
@@ -110,7 +111,7 @@ Om du vill stoppa Adobe Campaign-tjänster använder du något av följande komm
 
       >[!NOTE]
       >
-      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): stoppserver **systemctl**
+      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
    * I Windows:
 
@@ -130,13 +131,13 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 
 * Om du har rot- eller administratörsåtkomst:
 
-   * I Linux:/etc/init.d/nlserver6 - start
+   * I Linux: /etc/init.d/nlserver6 - start
 
       >[!NOTE]
       >
-      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
-   * I Windows:net start nlserver6
+   * I Windows: net start nlserver6
 
 * I annat fall, på Adobe Campaign-kontot: **nlserver watchdog -svc -noconsole**
 
@@ -156,17 +157,18 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Ange lösenordet.
 
-Så här ändrar du det **interna** lösenordet: **nlserver config -internalPassword**
+Så här ändrar du det **interna** lösenordet: **nlserver config -internalpassword**
 
 >[!CAUTION]
 >
->Om du vill logga in med den **interna** identifieraren måste du ha definierat ett lösenord i förväg. Mer information finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Om du vill logga in med den **interna** identifieraren måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 >[!NOTE]
 >
 >* I allmänhet kan du använda kommandot **config** i stället för att ändra konfigurationsfilerna manuellt
 >* Använd **-? om du vill visa parameterlistan.** parameter: **nlserver config -?**
 >* Om det är en Oracle-databas får du inte ange kontot. Syntaxen är följande:
+
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
