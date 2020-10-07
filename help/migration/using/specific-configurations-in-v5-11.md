@@ -1,7 +1,7 @@
 ---
-title: Specifika konfigurationer i v5.11
-seo-title: Specifika konfigurationer i v5.11
-description: Specifika konfigurationer i v5.11
+title: Specifika konfigurationer i version 5.11
+seo-title: Specifika konfigurationer i version 5.11
+description: Specifika konfigurationer i version 5.11
 seo-description: null
 page-status-flag: never-activated
 uuid: d6920beb-a766-4aec-8a8e-d32e47b545a4
@@ -11,20 +11,20 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: fc280640-528d-44de-87d8-52f443772abd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 3%
 
 ---
 
 
-# Specifika konfigurationer i v5.11{#specific-configurations-in-v5-11}
+# Specifika konfigurationer i version 5.11{#specific-configurations-in-v5-11}
 
 I det här avsnittet beskrivs den ytterligare konfiguration som krävs vid migrering från v5.11. Du bör även konfigurera inställningarna som anges i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md) .
 
-## Webbprogram {#web-applications}
+## Webbapplikationer {#web-applications}
 
 Följande varning visas automatiskt under migreringen:
 
@@ -43,7 +43,7 @@ Oavsett om filen är tom eller inte måste du kontrollera att dessa ID:n inte an
 
 ## Arbetsflöden {#workflows}
 
-Eftersom namnet på installationskatalogen för Adobe Campaign har ändrats kanske vissa arbetsflöden inte fungerar efter migreringen. Om ett arbetsflöde refererar till katalogen nl5 i någon av dess aktiviteter genereras ett fel. Ersätt den här referensen med **bygge**. Du kan köra en SQL-fråga för att identifiera dessa arbetsflöden (PostgreSQL-exempel):
+Eftersom namnet på Adobe Campaign installationskatalog har ändrats kanske vissa arbetsflöden inte fungerar efter migreringen. Om ett arbetsflöde refererar till katalogen nl5 i någon av dess aktiviteter genereras ett fel. Ersätt den här referensen med **bygge**. Du kan köra en SQL-fråga för att identifiera dessa arbetsflöden (PostgreSQL-exempel):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -53,7 +53,7 @@ WHERE mData LIKE '%nl5%';
 
 ## Användarvänlighet {#user-friendliness}
 
-Startsidan för Adobe Campaign v5.11 är inte längre tillgänglig.
+Hemsidan för Adobe Campaign v5.11 är inte längre tillgänglig.
 
 Även om det inte rekommenderas finns det vissa lösningar om du vill behålla specifika gränssnitt från Adobe Campaign v5.11. Kontakta oss om du vill ha mer information.
 
@@ -77,10 +77,10 @@ Om databasstrukturen har ändrats, t.ex. under konfiguration (skapa specifika in
 
 1. Innan du startar migreringen bör du säkerhetskopiera databasen.
 1. Ta bort SQL-ändringar.
-1. Utför efteruppgraderingen enligt den procedur som beskrivs i [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+1. Utför efteruppgraderingen enligt proceduren som beskrivs i [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
    >[!NOTE]
    >
-   >Du måste följa de migreringssteg som beskrivs i [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >Du måste följa stegen för migrering som beskrivs i [avsnittet Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
 1. Återintegrera SQL-ändringar.
 
 I det här exemplet har en **vy av typen NmcTrackingLogMessages** skapats och den har ett **tidsstämpelfält** med namnet **tslog**. I det här fallet misslyckas migreringsproceduren och följande felmeddelande visas:
@@ -101,7 +101,7 @@ Hanteringen av webbspårning har också ändrats. När migreringen till v7 har s
 
 ![](assets/migration_web_tracking.png)
 
-Tre lägen är tillgängliga:
+Tre olika lägen finns tillgängliga:
 
 * **Sessionswebbspårning**: Om paketet inte har installerats är det här alternativet valt som standard. **[!UICONTROL Leads]** Det här alternativet är det mest idealiska när det gäller prestanda och du kan begränsa spårningsloggarnas storlek.
 * **Permanent webbspårning**
@@ -113,13 +113,13 @@ Tre lägen är tillgängliga:
 
 ## Trädstruktur för Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
-Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
+Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen, och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
 
 Ett alternativ har lagts till för att inaktivera automatisk migrering av navigeringsträdet. Den här åtgärden är nu manuell. Föråldrade mappar tas inte bort och nya mappar läggs inte till. Det här alternativet bör endast användas om det färdiga v5-navigeringsträdet har genomgått för många ändringar. Lägg till alternativet i konsolen, innan du migrerar, i **[!UICONTROL Administration > Options]** noden:
 
 * Internt namn: NlMigration_KeepFolderStructure
-* Datatyp:Heltal
-* Värde (text): 1
+* Datatyp: Heltal
+* Värde (text): 3
 
 Om du använder det här alternativet måste du efter migreringen ta bort gamla mappar, lägga till nya mappar och köra alla nödvändiga kontroller.
 
@@ -161,7 +161,7 @@ De föråldrade mappar som ska tas bort efter migreringen är följande:
 | ncmJavascript | JavaScript-koder | Content Manager är installerat |
 | ncmJst | JavaScript-mallar | Content Manager är installerat |
 | ncmParameters | Konfiguration | Content Manager är installerat |
-| ncmSrcSchema | Datamodeller | Content Manager är installerat |
+| ncmSrcSchema | Datascheman | Content Manager är installerat |
 | ncmStylesheet | XSL-formatfiler | Content Manager är installerat |
 | nmsAdminPlan | Administration | Campaign har installerats |
 | nmsResourcePlan | Resurser | Campaign har installerats |
