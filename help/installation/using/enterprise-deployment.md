@@ -1,7 +1,7 @@
 ---
-title: Företagsdistribution
-seo-title: Företagsdistribution
-description: Företagsdistribution
+title: Driftsättning i företagsklass
+seo-title: Driftsättning i företagsklass
+description: Driftsättning i företagsklass
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c2b5cef-86cb-4cb5-801a-ca6afeae90bb
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 066d0ac1-033c-467b-aa6c-43a97ecd8632
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1265'
+ht-degree: 0%
 
 ---
 
 
-# Företagsdistribution{#enterprise-deployment}
+# Driftsättning i företagsklass{#enterprise-deployment}
 
 Detta är den mest fullständiga konfigurationen. Den bygger på standardkonfigurationen för bättre säkerhet och tillgänglighet:
 
@@ -64,7 +64,7 @@ Högre kostnader för maskinvara och administration.
 * Två DNS-alias skapas på belastningsutjämnaren:
 
    * Den första som exponeras för allmänheten för spårning och som pekar mot belastningsutjämnaren på en virtuell IP-adress (VIP) och som sedan distribueras till de två frontservrarna.
-   * den andra som exponeras för interna användare för åtkomst via konsolen och som pekar på en belastningsutjämnare på en virtuell IP-adress (VIP) och som sedan distribueras till de två programservrarna.
+   * den andra som visas för interna användare för åtkomst via konsolen och som pekar på en belastningsutjämnare på en virtuell IP-adress (VIP) och som sedan distribueras till de två programservrarna.
 
 * Brandväggen har konfigurerats för att öppna STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i avsnittet [Databasåtkomst](../../installation/using/network-configuration.md#database-access).
 
@@ -91,7 +91,7 @@ Stegen för installation av den första servern är:
 
    Mer information finns i [Krav för Campaign-installation i Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) och [Krav för Campaign-installation i Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. När Adobe Campaign-servern har installerats startar du programservern (webben) med kommandot **nlserver web -tomcat** (med webbmodulen kan du starta Tomcat i fristående webbserverläge som avlyssnar port 8080) och se till att Tomcat startar korrekt:
+1. När Adobe Campaign-servern har installerats startar du programservern (webben) med kommandot **nlserver web -tomcat** (med webbmodulen kan du starta Tomcat i fristående webbserverläge (avlyssning på port 8080) och se till att Tomcat startar korrekt:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -109,8 +109,8 @@ Stegen för installation av den första servern är:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Serverns [första start](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * För Windows: Serverns [första start](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * För Linux: [Serverns första start](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * För Windows: [Serverns första start](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 1. Ändra det **interna** lösenordet med kommandot:
 
@@ -118,7 +118,7 @@ Stegen för installation av den första servern är:
    nlserver config -internalpassword
    ```
 
-   Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Skapa **demoinstansen** med DNS-maskerna för spårning (i det här fallet **tracking.campaign.net**) och åtkomst till klientkonsoler (i det här fallet **console.campaign.net**). Det finns två sätt att göra detta:
 
@@ -156,7 +156,7 @@ Stegen för installation av den första servern är:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och ange leveransdomänen. Ange sedan IP-adresserna (eller värdadresserna) för de DNS-servrar som används av MTA-modulen för att svara på DNS-frågor av MX-typ.
 
@@ -174,14 +174,14 @@ Stegen för installation av den första servern är:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Tillgänglighet [för klientkonsol för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: Tillgänglighet [för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md).
+   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
+   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md).
 
-1. Starta Adobe Campaign-servern (**starta nlserver6** i Windows, **/etc/init.d/nlserver6 i Linux) och kör kommandot** nlserver pdump **** en gång till för att kontrollera om alla aktiverade moduler finns.
+1. Starta Adobe Campaign-servern (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) och kör kommandot **nlserver pdump** en gång till för att kontrollera om alla aktiverade moduler finns.
 
    >[!NOTE]
    >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): systemctl **start nlserver**
+   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
 
    ```
@@ -195,7 +195,7 @@ Stegen för installation av den första servern är:
    web@default (28671) - 40.5 MB
    ```
 
-   Med det här kommandot kan du även se version och versionsnummer för Adobe Campaign-servern som är installerad på datorn.
+   Med det här kommandot kan du även se version och versionsnummer för den Adobe Campaign-server som är installerad på datorn.
 
 1. Testa webbmodulen **på** servern med URL-adressen: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
@@ -207,8 +207,8 @@ Stegen för installation av den första servern är:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Tillgänglighet [för klientkonsol för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: Tillgänglighet [för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md)
+   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
+   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### Installera och konfigurera programservern 2 {#installing-and-configuring-the-application-server-2}
 
@@ -244,7 +244,7 @@ Använd följande steg:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och fyll i DNS-konfigurationen för MTA-modulen:
 
@@ -262,8 +262,8 @@ Använd följande steg:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Serverns [första start](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * För Windows: Serverns [första start](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * För Linux: [Serverns första start](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * För Windows: [Serverns första start](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### Installera och konfigurera frontservrarna {#installing-and-configuring-the-frontal-servers}
 
@@ -274,8 +274,8 @@ Stegen är följande:
 1. Installera Adobe Campaign-servern,
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
-   * För Linux: Integration [i en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
-   * För Windows: Integrering [med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
 1. Kopiera **filerna config-demo.xml** och **serverConf.xml** som skapades under installationen. Aktivera **spårningsloggsprocessen** i filen **config-demo.xml** och inaktivera **processerna** mta, **inmail**, **wfserver** och **** ¥stat¥.
 1. Redigera filen **serverConf.xml** och fyll i de redundanta spårningsservrarna i parametrarna för omdirigeringen:
@@ -301,8 +301,8 @@ Stegen är följande:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Starta [webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
-   * För Windows: Starta [webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * För Linux: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
+   * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Starta Adobe Campaign-servern.
 
