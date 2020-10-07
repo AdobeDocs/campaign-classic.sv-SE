@@ -1,7 +1,7 @@
 ---
-title: Använda kontexten
-seo-title: Använda kontexten
-description: Använda kontexten
+title: Använda sammanhanget
+seo-title: Använda sammanhanget
+description: Använda sammanhanget
 seo-description: null
 page-status-flag: never-activated
 uuid: ac8c7068-d640-4934-b7f5-bc91b98eab4c
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 2%
 
 ---
 
 
-# Använda kontexten{#using-the-context}
+# Använda sammanhanget{#using-the-context}
 
 När du vill representera data i form av **[!UICONTROL tables]** eller **[!UICONTROL charts]** kan den hämtas från två källor: en ny fråga (se [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data)) eller rapportkontexten (se [Använda kontextdata](#using-context-data)).
 
