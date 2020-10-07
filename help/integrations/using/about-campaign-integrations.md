@@ -9,14 +9,11 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -40,9 +37,9 @@ En fullständig lista över Adobe-lösningar och bastjänster som kan integreras
 
 ## Länka lösningar {#working-with-experience-cloud-solutions}
 
-Beroende på din miljö kan flera lösningar länkas till Adobe Experience Cloud. De är länkade som organisationer. En **organisation** är den enhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning i Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
+Beroende på din miljö kan flera lösningar länkas till Adobe Experience Cloud. De är länkade som organisationer. An **organization** is the entity that enables an administrator to configure groups and users, and to control single sign-on in the Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar i Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
-Organisationshantering och länkning av Adobe Experience Cloud-konton finns i [Adobe Experience Cloud hjälpportal](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+Organisationshantering och länkning av Adobe Experience Cloud-konton finns i [Adobe Experience Cloud hjälpportal](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
 
 >[!CAUTION]
 >
@@ -74,11 +71,11 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> Gör att du kan skapa e-postinnehåll eller formulär som mappas till Adobe Campaign-databasen direkt i <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Läs mer</a> om Adobe Campaign-Adobe Experience Manager-integrering.</p><br /> </td> 
+   <td> Allows you to create email contents or forms mapped to the Adobe Campaign database directly in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Läs mer</a> om Adobe Campaign-Adobe Experience Manager-integrering.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> Gör att du kan infoga bilder som beräknas dynamiskt av <strong>Adobe Target</strong> när e-postmeddelandet som skapas och skickas av Adobe Campaign öppnas.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Läs mer</a> om Adobe Campaign-Adobe Target-integrering.</p><br /> </td> 
+   <td> Allows you to insert images that are dynamically computed by <strong>Adobe Target</strong> when the email created and sent by Adobe Campaign is opened.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Läs mer</a> om Adobe Campaign-Adobe Target-integrering.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Bastjänst</strong><br /> för människor <strong>Adobe Audience Manager</strong><br /> </td> 
@@ -86,11 +83,11 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
   </tr> 
   <tr> 
    <td> <strong>Bastjänst för tillgångar</strong><br /> </td> 
-   <td> Gör att du kan infoga resurser från ditt Adobe Experience Cloud-bibliotek i e-postmeddelanden och landningssidor som skapats i Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Läs mer</a> om Adobe Campaign - integreringen av bastjänsterna för Assets</p><br /> </td> 
+   <td> Du kan infoga resurser från ditt bibliotek i Adobe Experience Cloud i e-postmeddelanden och landningssidor som har skapats i Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Läs mer</a> om Adobe Campaign - integreringen av bastjänsterna för Assets</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
-   <td> Gör att du kan infoga resurser från ditt <strong>AEM Assets</strong> -bibliotek i e-postmeddelanden och landningssidor som skapats i Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Läs mer</a> om Adobe Campaign-AEM Assets-integrering.</p><br /> </td> 
+   <td> Allows you to insert assets from your <strong>AEM Assets</strong> library into emails and landing pages created in Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Läs mer</a> om Adobe Campaign-AEM Assets-integrering.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Utlösare i Experience Cloud</strong><br /> </td> 
