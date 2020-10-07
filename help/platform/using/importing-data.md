@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '4142'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,8 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 >[!NOTE]
 >
 >Du kan importera data utan att mappa dem till databasdata med hjälp av **[!UICONTROL Import a list]** funktionen.
-> 
->Data kan sedan användas exklusivt i arbetsflöden via **[!UICONTROL Read list]** objektet. Mer information finns på [den här sidan](../../workflow/using/read-list.md).
+>
+>Data kan sedan användas exklusivt i arbetsflöden via **[!UICONTROL Read list]** objektet. Se denna [sida](../../workflow/using/read-list.md) för mer information om detta.
 >
 >Titta på videon [Importera profiler](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html) om du vill ha mer information.
 
@@ -44,7 +44,7 @@ Med importguiden kan du konfigurera importen, definiera alternativ (till exempel
 >
 >Om du använder en IIS-webbserver kan en konfiguration behövas för att tillåta överföring av stora filer (>28 MB).
 >
->Mer information finns i [det här avsnittet](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
+>Mer information hittar du i [det här avsnittet](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
 
 ### Steg 1 - Välj importmall {#step-1---choosing-the-import-template}
 
@@ -60,7 +60,7 @@ När du startar importguiden måste du först välja en mall. Om du till exempel
    Den interna mallen är **[!UICONTROL New text import]**. Den här mallen får inte ändras, men du kan duplicera den för att konfigurera en ny mall beroende på dina behov. Som standard sparas importmallar i **[!UICONTROL Profiles and targets > Templates > Job templates]** noden.
 
 1. Ange ett namn för importen i **[!UICONTROL Label]** fältet. Du kan lägga till en beskrivning.
-1. Välj importtyp i lämpligt fält. Det finns två typer av import: om du bara **[!UICONTROL Simple import]** vill importera en fil och **[!UICONTROL Multiple import]** importera flera filer i en enda körning.
+1. Välj importtyp i lämpligt fält. Det finns två typer av import: **[!UICONTROL Simple import]** om du bara vill importera en fil och **[!UICONTROL Multiple import]** importera flera filer i en enda körning.
 
    Om du vill importera flera filer väljer du **[!UICONTROL Multiple import]** i den **[!UICONTROL Import type]** nedrullningsbara listan på den första skärmen i importguiden.
 
@@ -110,7 +110,7 @@ Med hjälp av **[!UICONTROL Advanced parameters]** länken kommer du åt följan
 
 Källfilen kan vara i textformat (txt, csv, tab, fixed columns) eller xml.
 
-Som standard **[!UICONTROL Upload file on the server]** är markerat. Klicka på mappen till höger om **[!UICONTROL Local file]** fältet för att bläddra på den lokala disken och markera filen som ska importeras. Du kan avmarkera det här alternativet om du vill ange åtkomstsökvägen och namnet på filen som ska importeras om den finns på servern.
+By default, **[!UICONTROL Upload file on the server]** is selected. Klicka på mappen till höger om **[!UICONTROL Local file]** fältet för att bläddra på den lokala disken och markera filen som ska importeras. Du kan avmarkera det här alternativet om du vill ange åtkomstsökvägen och namnet på filen som ska importeras om den finns på servern.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -155,7 +155,7 @@ Du måste sedan välja målschemat och mappa data för varje kolumn till fält i
    >
    >Resultatet av den här åtgärden måste alltid valideras innan du fortsätter till nästa steg.
 
-* Du kan använda en omformning på de importerade fälten. Det gör du genom att klicka i cellen i den kolumn som är **[!UICONTROL Transformation]** relaterad till det aktuella fältet och välja den omformning som ska användas.
+* Du kan använda en omformning på de importerade fälten. Det gör du genom att klicka i cellen i kolumnen som är relaterad till det aktuella fältet och välja den omformning som ska användas. **[!UICONTROL Transformation]**
 
    ![](assets/s_ncs_user_import_wizard03_2.png)
 
@@ -167,7 +167,7 @@ Du måste sedan välja målschemat och mappa data för varje kolumn till fält i
 
 #### Beräknade fält {#calculated-fields}
 
-Beräknade fält är nya kolumner som läggs till i källfilen och beräknas från andra kolumner. Beräknade fält kan sedan kopplas till fält i Adobe Campaign-databasen. Avstämningsåtgärder är dock inte möjliga för beräknade fält.
+Beräknade fält är nya kolumner som läggs till i källfilen och beräknas från andra kolumner. Beräkningsfält kan sedan kopplas till fält i Adobe Campaign-databasen. Avstämningsåtgärder är dock inte möjliga för beräknade fält.
 
 Det finns fyra typer av beräknade fält:
 
@@ -188,7 +188,7 @@ I importguidens avstämningssteg kan du definiera läget för att stämma av dat
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
-Skärmens centrala del innehåller ett träd med fälten och tabellerna i Adobe Campaign-databasen som data ska importeras till.
+Skärmens centrala del innehåller ett träd med fälten och tabellerna i den Adobe Campaign-databas som data ska importeras till.
 
 Det finns särskilda alternativ för varje nod (tabell eller fält). När du klickar på den berörda noden i listan visas dess parametrar och en kort beskrivning nedan. Beteendet som definieras för varje element visas i motsvarande **[!UICONTROL Behavior]** kolumn.
 
@@ -278,7 +278,7 @@ På datavstämningssidan kan du definiera önskat felhanteringstypfält efter f�
 
    ![](assets/s_ncs_user_import_wizard04_4.png)
 
-Trädet på avvisningsskärmen för en importinstans anger vilka fält som avvisats och var felen inträffade.
+Trädet på avvisningsskärmen för en importinstans visar vilka fält som avvisats och var felen inträffade.
 
 Du kan generera en fil som innehåller dessa poster via **[!UICONTROL Export rejects]** ikonen:
 
@@ -292,7 +292,7 @@ I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data sk
 
 >[!NOTE]
 >
->Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign-standardmottagartabellen (**nms:mottagare**).
+>Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardtabell för mottagare (**nms:mottagare**).
 
 * Klicka på **[!UICONTROL Edit]** länkarna för att markera mappen, listan eller tjänsten som du vill associera eller abonnera på mottagarna till.
 
@@ -342,7 +342,7 @@ Klicka **[!UICONTROL Next]** för att validera det här steget och visa följand
 
 ### Steg 6 - Starta importen {#step-6---launching-the-import}
 
-I det sista steget i guiden kan du starta dataimport. Klicka på **[!UICONTROL Start]** knappen om du vill göra det.
+I det sista steget i guiden kan du starta dataimport. To do this, click the **[!UICONTROL Start]** button.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
@@ -396,7 +396,7 @@ Om du vill skapa och ange en lista med mottagare från översikten över listor 
 
 1. Skapa listan
 
-   * Klicka på **[!UICONTROL Lists]** länken på **[!UICONTROL Profiles and targets]** menyn på hemsidan för Adobe Campaign.
+   * Klicka på **[!UICONTROL Lists]** länken på **[!UICONTROL Profiles and targets]** menyn på Adobe Campaign hemsida.
    * Klicka på **[!UICONTROL Create]** och sedan på **[!UICONTROL Import a list]** knappen.
 
 1. Markera filen som ska importeras
@@ -423,7 +423,7 @@ Så här importerar du nya mottagarprofiler som lagras i en textfil till Adobe C
 
 1. Välja en mall
 
-   * Klicka på **[!UICONTROL Profiles and targets]** länken på startsidan för Adobe Campaign och sedan **[!UICONTROL Jobs]**. Ovanför listan med jobb klickar du på **[!UICONTROL New import]**.
+   * Klicka på **[!UICONTROL Profiles and targets]** länken på startsidan för Adobe Campaign **[!UICONTROL Jobs]**. Ovanför listan med jobb klickar du på **[!UICONTROL New import]**.
    * Behåll **[!UICONTROL New text import]** mallen markerad som standard.
    * Ändra etiketten och beskrivningen.
    * Välj **[!UICONTROL Simple import]**.
@@ -457,7 +457,7 @@ Så här importerar du nya mottagarprofiler som lagras i en textfil till Adobe C
 
 1. Starta importen
 
-   * Klicka **[!UICONTROL Start]**.
+   * Klicka på **[!UICONTROL Start]**.
 
       I mitten av redigeraren kan du kontrollera att importen har slutförts och se hur många poster som har bearbetats.
 
@@ -503,7 +503,7 @@ Vi vill uppdatera befintliga poster i databasen och skapa nya från en textfil. 
 
 1. Starta importen
 
-   * Klicka **[!UICONTROL Start]**.
+   * Klicka på **[!UICONTROL Start]**.
 
       I spårningsfönstret kan du kontrollera att importen har slutförts och se hur många poster som har bearbetats.
 
@@ -556,7 +556,7 @@ Använd följande steg:
 
 1. Starta importen
 
-   Klicka **[!UICONTROL Start]**.
+   Klicka på **[!UICONTROL Start]**.
 
    Kontrollera i mottagartabellen att posterna har ändrats av importen.
 
@@ -604,7 +604,7 @@ I det här exemplet ser du att vissa fält i textfilen har ett tomt värde, meda
 
 1. Starta importen
 
-   * Klicka **[!UICONTROL Start]**.
+   * Klicka på **[!UICONTROL Start]**.
    * Kontrollera i mottagartabellen att posterna har ändrats av åtgärden.
 
       ![](assets/s_ncs_user_import_example06_06.png)
