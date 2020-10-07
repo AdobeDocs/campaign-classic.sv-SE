@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2093'
+ht-degree: 1%
 
 ---
 
@@ -65,6 +65,7 @@ Du får en trädstruktur som innehåller din nya miljö:
    * HTML-innehåll
    * Bild-URL
    * Mål-URL
+
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Redigera HTML-återgivningsfunktionen enligt följande:
@@ -209,7 +210,7 @@ Erbjudandena som måste presenteras på webbplatsen tillhör två olika kategori
 
 Gör så här för att skapa ett utrymme som matchar kategorin **Bästa erbjudande** :
 
-1. Gå till den anonyma miljö du just skapat i Adobe Campaign-trädet och lägg till ett utrymme för erbjudanden.
+1. Gå till den anonyma miljön som du just har skapat i Adobe Campaign-trädet och lägg till ett utrymme för erbjudanden.
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
@@ -217,7 +218,7 @@ Gör så här för att skapa ett utrymme som matchar kategorin **Bästa erbjudan
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. Ange en etikett för den: Bästa **webberbjudande** , till exempel.
+1. Ange en etikett för den: **Web Best Anonymous Offer** for example.
 1. Lägg till de innehållsfält för erbjudandet som används för erbjudandeutrymmet och konfigurera återgivningsfunktionerna.
 
    ![](assets/offer_inbound_fallback_example_025.png)
@@ -288,7 +289,7 @@ Erbjudandena som du kommer att presentera på webbplatsen är uppdelade i två o
 
 Om du vill skapa de två erbjudandeutrymmena använder du samma procedur som för anonyma erbjudandeutrymmen. Se [Konfigurera erbjudandeutrymmen för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment).
 
-1. Gå till den miljö du just har skapat i trädet Adobe Campaign och lägg till **Best Offer** och **Partner** -erbjudanden.
+1. Gå till den miljö du just har skapat i Adobe Campaign-trädet och lägg till **Best Offer** och **Partner** erbjuder platser.
 1. Använd den process som beskrivs i [Konfigurera erbjudandeutrymmen för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment).
 
    ![](assets/offer_inbound_fallback_example_005.png)
@@ -310,7 +311,7 @@ I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adob
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. In the **[!UICONTROL Target identification]** tab, click **[!UICONTROL Add]**.
+1. På fliken **[!UICONTROL Target identification]** klickar du på **[!UICONTROL Add]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
