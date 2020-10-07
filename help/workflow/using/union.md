@@ -1,7 +1,7 @@
 ---
-title: Union
-seo-title: Union
-description: Union
+title: Sammanslutning
+seo-title: Sammanslutning
+description: Sammanslutning
 seo-description: null
 page-status-flag: never-activated
 uuid: 987e106e-c414-4db4-a93e-96e43dc04370
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 573021ad-1efb-4156-af6d-417737ce745a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
 
-# Union{#union}
+# Sammanslutning{#union}
 
 En union grupperar resultatet av flera inkommande aktiviteter i ett enda mål. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas för att unionen ska kunna genomföras.
 
@@ -37,8 +37,8 @@ I följande exempel har resultaten från två frågor kombinerats för att uppda
 1. Infoga en aktivitet av typen **[!UICONTROL Union]** -type direkt efter de två frågorna och före en aktivitet av typen update i listan, och öppna den sedan.
 1. Du kan ange en etikett.
 1. Välj **[!UICONTROL Keys only]** avstämningsmetoden eftersom populationen som är resultatet av frågor i det här exemplet innehåller konsekventa data.
-1. Om du har lagt till ytterligare data för frågorna kan du bestämma dig för att bara behålla de data som delas.
-1. Om du vill begränsa storleken på den slutliga populationen markerar du **[!UICONTROL Limit size of generated population]** rutan.
+1. Om du har lagt till ytterligare data för frågorna kan du bestämma dig för att behålla endast de data som delas.
+1. If you wish to limit the size of the final population, check the **[!UICONTROL Limit size of generated population]** box.
 
    Ange det slutliga talet genom att ange det maximala antalet mottagare och genom att välja frågan vars population ska prioriteras.
 
