@@ -1,7 +1,7 @@
 ---
-title: Historik för meddelandecenterhändelser
-seo-title: Historik för meddelandecenterhändelser
-description: Historik för meddelandecenterhändelser
+title: Historik om händelser i meddelandecentret
+seo-title: Historik om händelser i meddelandecentret
+description: Historik om händelser i meddelandecentret
 seo-description: null
 page-status-flag: never-activated
 uuid: ed2cf462-6fa9-47c7-912d-6d8253806629
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: 3caa1bd7-7111-4f94-ab89-5e12eaca4966
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 14%
 
 ---
 
 
-# Historik för meddelandecenterhändelser{#history-of-message-center-events}
+# Historik om händelser i meddelandecentret{#history-of-message-center-events}
 
 Rapporten ger dig en översikt **[!UICONTROL History of Message Center events]** över aktiviteten i meddelandecentret, dvs. antalet händelser som bearbetas och levereras som transaktionsmeddelanden.
 
@@ -30,4 +30,4 @@ När rapporten öppnas sammanfaller den information som visas som standard med h
 
 Du kan visa data som är specifika för varje händelsetyp, per tidsperiod. Kolumnen motsvarar **[!UICONTROL Events]** antalet händelser som tas emot per kontrollinstans. Antalet händelser som har omvandlats till personaliserade transaktionsmeddelanden visas i **[!UICONTROL Sent]** kolumnen.
 
-Rapporten är en rapport av typen pivottabell **[!UICONTROL History of Message Center events]** . Mer information finns i avsnittet [Analysera populationer](../../reporting/using/about-descriptive-analysis.md) .
+Rapporten är en rapport av typen pivottabell **[!UICONTROL History of Message Center events]** . For more on this, refer to the [Analyzing populations](../../reporting/using/about-descriptive-analysis.md) section.
