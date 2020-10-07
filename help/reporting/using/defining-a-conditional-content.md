@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0ca5e0f6-cc81-4da9-aecf-a095cc1a19f9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Du kan begränsa visningen av specifika rapportobjekt eller sidor.
 
 Om du vill göra vissa objekt villkorliga anpassar du deras synlighetsinställningar. Mer information finns i [Villkorsobjektsvisning](#conditioning-item-display).
 
-Om du vill göra visningen av en eller flera sidor villkorlig använder du en **[!UICONTROL Test]** typaktivitet. Mer information finns i [Villkorlig sidvisning](#conditioning-page-display).
+Om du vill göra visningen av en eller flera sidor villkorlig använder du en **[!UICONTROL Test]** typaktivitet. For more on this, refer to [Conditioning page display](#conditioning-page-display).
 
 ## Visning av villkorsobjekt {#conditioning-item-display}
 
@@ -57,6 +57,6 @@ Denna verksamhet bygger på följande verksamhetsprincip:
 
 1. Markera alternativet **[!UICONTROL Enable default transition]** för att lägga till en övergång om något av de konfigurerade villkoren inte uppfylls.
 
-   Mer information finns i [det här avsnittet](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+   Mer information om detta finns i [det här avsnittet](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
 En **[!UICONTROL Test]** aktivitet kan placeras i början av diagrammet för att villkora visningen beroende på kontext- eller operatorprofilen till exempel.
