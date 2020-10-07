@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: a5fc6c78-b4fb-41fd-a072-7be4ece3c554
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ Klicka på **[!UICONTROL Filter the source data...]** länken om du vill använd
 
 ## Definiera dimensioner {#defining-dimensions}
 
-Dimensionerna sammanfaller med analysaxlarna som definierats för varje kub baserat på deras relaterade faktaschema. Detta är de dimensioner som undersöks i analysen, t.ex. tid (år, månad, datum...), en produktklassificering (familj, referens osv.), ett populationssegment (per ort, åldersgrupp, status osv.).
+Dimensioner sammanfaller med analysaxlar som definierats för varje kub baserat på deras relaterade faktaschema. Detta är de dimensioner som undersöks i analysen, t.ex. tid (år, månad, datum...), en produktklassificering (familj, referens osv.), ett populationssegment (per ort, åldersgrupp, status osv.).
 
 Dessa analysaxlar definieras på fliken **[!UICONTROL Dimension]** i kuben.
 
@@ -103,7 +103,7 @@ När dimensionerna har definierats måste du ange ett beräkningssätt för de v
 
 Gör så här:
 
-1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka på knappen **[!UICONTROL Add]**.
 1. Välj typ av mått och formel som ska användas. Här vill vi räkna antalet kvinnor bland mottagarna.
 
    Vår åtgärd baseras på faktchemat och använder **[!UICONTROL Count]** operatorn.
@@ -136,7 +136,7 @@ Så här gör du:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Du kan ändra dimensionens axlar, ta bort dem, lägga till nya mått osv. Möjliga åtgärder beskrivs här: [Använda kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
+1. Du kan ändra dimensionens axlar, ta bort dem, lägga till nya mått osv. Möjliga åtgärder beskrivs här: [Använd kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
 
    Använd lämpliga ikoner för att göra detta.
 
