@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
 
-# Definiera datamappning {#defining-data-mapping}
+# Definiera datakartläggning {#defining-data-mapping}
 
-Med Adobe Campaign kan ni definiera mappning av data i en extern tabell.
+Med Adobe Campaign kan du definiera mappning av data i en extern tabell.
 
 För att göra detta måste du skapa en ny leveransmappning för att kunna använda data i den här tabellen som leveransmål när schemat för den externa tabellen har skapats.
 
@@ -48,4 +48,4 @@ Gör så här:
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicka på **[!UICONTROL Save]** knappen för att starta framtagningen av leveransmappningen: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
+   Klicka på **[!UICONTROL Save]** knappen för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
