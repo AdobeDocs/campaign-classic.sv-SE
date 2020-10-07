@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 19%
 
 ---
 
@@ -30,7 +30,7 @@ Om du vill skapa en **[!UICONTROL List]** typlista baserad på den nya mottagart
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Dubbelklicka på **Query** -aktiviteten och klicka sedan **[!UICONTROL Edit the query]** för att välja en måldimension baserat på schemat i den nya mottagartabellen (i vårt exempel: **Individual**). Bekräfta genom **[!UICONTROL Finish]** att klicka.
+1. Dubbelklicka på **Query** -aktiviteten och klicka sedan **[!UICONTROL Edit the query]** för att välja en måldimension baserat på schemat i den nya mottagartabellen (i vårt exempel: **Individuell**). Bekräfta genom **[!UICONTROL Finish]** att klicka.
 
    ![](assets/mapping_create_list_workflow03.png)
 
