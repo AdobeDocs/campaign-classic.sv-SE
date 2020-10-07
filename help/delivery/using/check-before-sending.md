@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -95,11 +92,11 @@ Om du vill ha bättre kontroll över utgående SMTP-trafik kan du hantera tillh�
 
 Du kan:
 
-* Definiera IP-tillhörigheterna i konfigurationsfilen serverConf.xml. [Lär dig mer](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* Definiera IP-tillhörigheterna i konfigurationsfilen serverConf.xml. [Läs mer](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* Deklarera de IP-adresser som kan användas för varje IPAfinity-element. [Lär dig mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* Deklarera de IP-adresser som kan användas för varje IPAfinity-element. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* I den [typologi](../../campaign/using/about-campaign-typologies.md) du väljer använder du **[!UICONTROL Managing affinities with IP addresses]** fältet för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Lär dig mer](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* I den [typologi](../../campaign/using/about-campaign-typologies.md) du väljer använder du **[!UICONTROL Managing affinities with IP addresses]** fältet för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * När e-postmeddelandet har skickats kontrollerar du huvudet för att verifiera vilken IP-adress som leveransen skickades från. E-postadministratören bör hjälpa dig att få fram rubrikinformationen.
 
@@ -109,7 +106,7 @@ Du kan:
 
 ### Använd typologier
 
-Du kan använda typologiregler för att exkludera delar av målet baserat på specifika kriterier. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Du kan till exempel filtrera de mottagare som är minderåriga från målet i nyhetsbrevet. Läs mer [i det här exemplet](../../campaign/using/filtering-rules.md).
+Du kan använda typologiregler för att exkludera delar av målet baserat på specifika kriterier. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar i enlighet med företagets kommunikationspolicyer. Du kan till exempel filtrera de mottagare som är minderåriga från målet i nyhetsbrevet. Läs mer [i det här exemplet](../../campaign/using/filtering-rules.md).
 
 ### Undvik bifogade filer
 
