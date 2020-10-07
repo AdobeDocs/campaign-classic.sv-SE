@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Konfigurera integrering av delade målgrupper i Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Configuring shared audiences integration in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
-När du har skickat in din begäran fortsätter Adobe att distribuera integreringen åt dig och kontaktar dig för att ange information och information som du måste slutföra konfigurationen:
+När du har skickat in den här begäran fortsätter Adobe till att tillhandahålla integreringen åt dig och kontaktar dig för att ange information och information som du måste slutföra konfigurationen:
 
 1. [Steg 1: Konfigurera eller kontrollera externa konton i Adobe Campaign](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Steg 2: Konfigurera datakällan](#step-2--configure-the-data-source)
@@ -34,13 +31,14 @@ När du har skickat in din begäran fortsätter Adobe att distribuera integrerin
 
 ## Steg 1: Konfigurera eller kontrollera externa konton i Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
-För det första måste vi konfigurera eller kontrollera externa konton i Adobe Campaign enligt följande:
+Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign enligt följande:
 
 1. Klicka på **[!UICONTROL Explorer]** ikonen.
-1. Gå till **[!UICONTROL Administration > Platform > External accounts]**. Adobe borde ha konfigurerat SFTP-kontona och du borde ha fått den information du behöver.
+1. Gå till **[!UICONTROL Administration > Platform > External accounts]**. Adobe borde ha konfigurerat SFTP-kontona och du borde ha fått den information som behövs.
 
    * **[!UICONTROL importSharedAudience]** : SFTP-konto för att importera målgrupper.
    * **[!UICONTROL exportSharedAudience]** : SFTP-konto för export av målgrupper.
+
    ![](assets/aam_config_1.png)
 
 1. Fyll i **[!UICONTROL Server]** fältet: **ftp-out.demdex.com** -domän för det externa importkontot och **ftp-in.demdex.com** -domänen för det externa exportkontot.
@@ -49,9 +47,11 @@ För det första måste vi konfigurera eller kontrollera externa konton i Adobe 
 
    >[!NOTE]
    >
-   >Om du använder S3 anger du **[!UICONTROL AWS S3 Account Server]** följande syntax:\
-   `<S3bucket name>.s3.amazonaws.com/<s3object path>`\
-   Mer information om hur du konfigurerar ditt S3-konto finns på den här [sidan](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
+   >Om du använder S3 anger du **[!UICONTROL AWS S3 Account Server]** följande syntax:
+   >
+   >`<S3bucket name>.s3.amazonaws.com/<s3object path>`
+   >
+   >Mer information om hur du konfigurerar ditt S3-konto finns på den här [sidan](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
 
    ![](assets/aam_config_2.png)
 
@@ -59,15 +59,15 @@ För det första måste vi konfigurera eller kontrollera externa konton i Adobe 
 
 Dina externa konton har nu konfigurerats.
 
-## Steg 2: Konfigurera datakällan {#step-2--configure-the-data-source}
+## Step 2: Configure the Data Source {#step-2--configure-the-data-source}
 
 Mottagar- **ID** för besökare skapas i Audience Manager. Detta är en användbar datakälla som konfigurerats som standard för besökar-ID. Segment som skapas från Campaign kommer att ingå i den här datakällan.
 
 Så här konfigurerar du **[!UICONTROL Recipient - Visitor ID]** datakällan:
 
-1. Välj från **[!UICONTROL Explorer]** noden **[!UICONTROL Administration > Platform > AMC Data sources]**.
+1. From the **[!UICONTROL Explorer]** node, select **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Välj **[!UICONTROL Recipient - Visitor ID]**.
-1. Ange **[!UICONTROL Data Source ID]** och **[!UICONTROL AAM Destination ID]** få information från Adobe.
+1. Ange **[!UICONTROL Data Source ID]** och **[!UICONTROL AAM Destination ID]** ange Adobe.
 
    ![](assets/aam_config_3.png)
 
@@ -75,7 +75,7 @@ Så här konfigurerar du **[!UICONTROL Recipient - Visitor ID]** datakällan:
 
 För konfigurationen av integreringen med tjänsten People Core eller Audience Manager måste vi även konfigurera Campaign Tracking-servern.
 
-Du måste kontrollera att Campaign Tracking Server är registrerad på domänen (CNAME). Mer information om delegering av domännamn finns i [den här artikeln](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+Du måste kontrollera att Campaign Tracking Server är registrerad på domänen (CNAME). Mer information om delegering av domännamn finns i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html).
 
 ## Steg 4: Konfigurera besökar-ID-tjänsten {#step-4--configure-the-visitor-id-service}
 
