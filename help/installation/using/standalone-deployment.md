@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 0%
@@ -181,8 +178,8 @@ Använd följande steg:
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
-   * För Linux: [Integrering med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * För Windows: [Integrering med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Starta webbplatsen och testa omdirigering med URL:en: https://tracking.campaign.net/r/test.
 
