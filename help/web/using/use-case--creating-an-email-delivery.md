@@ -1,7 +1,7 @@
 ---
-title: '"Användningsfall: skapa e-postleverans"'
-seo-title: '"Användningsfall: skapa e-postleverans"'
-description: '"Användningsfall: skapa e-postleverans"'
+title: '"Användningsfall: skapa en e-postleverans"'
+seo-title: '"Användningsfall: skapa en e-postleverans"'
+description: '"Användningsfall: skapa en e-postleverans"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 7cd6329c-63d5-4cf0-9451-f0b4c2eaf0dd
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 4ec34980-62a2-47b9-b103-de4290925624
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 3%
 
 ---
 
 
-# Användningsfall: skapa e-postleverans{#use-case-creating-an-email-delivery}
+# Användningsfall: skapa en e-postleverans{#use-case-creating-an-email-delivery}
 
 I det här fallet får du lära dig hur du utformar en e-postleverans med Adobe Campaign Digital Content Editor (DCE).
 
@@ -39,13 +39,13 @@ Vårt sista mål är att skapa en leverans med en personlig mall som innehåller
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
-Om du vill skapa en ny leverans placerar du markören på fliken **Kampanjer** och klickar på **Leveranser**. Klicka sedan på knappen **Skapa** ovanför listan över befintliga leveranser. Mer information om hur du skapar leveranser finns på [den här sidan](../../delivery/using/about-email-channel.md).
+Om du vill skapa en ny leverans placerar du markören på fliken **Kampanjer** och klickar på **Leveranser**. Klicka sedan på knappen **Skapa** ovanför listan över befintliga leveranser. For more on creating deliveries, refer to [this page](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
 ## Steg 2 - Välja en mall {#step-2---selecting-a-template}
 
-Välj en leveransmall och ge sedan leveransen ett namn. Det här namnet visas endast för användare av Adobe Campaign-konsolen och inte för dina mottagare, men den här rubriken visas i din lista över leveranser. Klicka **[!UICONTROL Continue]**.
+Välj en leveransmall och ge sedan leveransen ett namn. Det här namnet visas endast för användare av Adobe Campaign-konsolen och inte för dina mottagare, men den här rubriken visas i din lista över leveranser. Klicka på **[!UICONTROL Continue]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -57,15 +57,15 @@ Markera den innehållsmall som du vill använda och klicka sedan på **[!UICONTR
 
 ![](assets/dce_select_model.png)
 
-Du kan också importera HTML-innehåll som har skapats utanför Adobe Campaign genom att välja **[!UICONTROL From a file]**.
+Du kan även importera HTML-innehåll som har skapats utanför Adobe Campaign genom att välja **[!UICONTROL From a file]**.
 
 ![](assets/dce_select_from_file_template.png)
 
-Du kan spara innehållet som en mall för framtida bruk. När du har skapat en personlig innehållsmall kan du förhandsgranska den i listan med mallar. Mer information finns i [Mallhantering](../../web/using/template-management.md).
+Du kan spara innehållet som en mall för framtida bruk. När du har skapat en personlig innehållsmall kan du förhandsgranska den i listan med mallar. For more on this, refer to [Template management](../../web/using/template-management.md).
 
 >[!CAUTION]
 >
->Om du använder webbgränssnittet **för** Adobe Campaign måste du importera en ZIP-fil som innehåller HTML-innehållet och relaterade bilder.
+>Om du använder **Adobe Campaign webbgränssnitt** måste du importera en ZIP-fil som innehåller HTML-innehållet och relaterade bilder.
 
 ## Steg 4 - Utforma meddelandet {#step-4---designing-the-message}
 
