@@ -1,7 +1,7 @@
 ---
-title: Ändra dimension
-seo-title: Ändra dimension
-description: Ändra dimension
+title: Dimensionsändring
+seo-title: Dimensionsändring
+description: Dimensionsändring
 seo-description: null
 page-status-flag: never-activated
 uuid: 6cb309c0-4096-47ce-b1d4-37a3ddafaaa1
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 61583062-2349-4ab3-a3bf-310d21894f34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
 
-# Ändra dimension{#change-dimension}
+# Dimensionsändring{#change-dimension}
 
 Med aktiviteten för att ändra dimension kan du ändra måldimensionen under målkonstruktionscykeln. Axelväxling beror på datamallen och indatamängden. På så sätt kan du till exempel växla från dimensionen &quot;kontrakt&quot; till dimensionen &quot;kunder&quot;.
 
