@@ -11,14 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -60,7 +57,7 @@ ht-degree: 0%
 
 Den här rapporten baseras på **[!UICONTROL Consolidated tracking]** tabellen (nms:trackingStats). Den här sammanställda tabellen används av prestandaskäl när rapporter visas i stället för **[!UICONTROL Recipient tracking logs]** tabellen (nms:trackingLogRcp) och den beräknas inte i realtid. Tabellen genereras några minuter efter att spårningsloggarna har hämtats. Om indikatorerna är aktuella kommer resultaten att vara desamma som för indikatorerna i rapporten om **spårningsindikatorer** . Indikatorn @totalclicks uttrycker det totala antalet klick under en femminutersperiod.
 
-## Ej levererbara produkter och studsar {#non-deliverables-and-bounces-1}
+## Ej levererbara filer och studsningar {#non-deliverables-and-bounces-1}
 
 **Uppdelning efter feltyp**
 
@@ -228,7 +225,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
  </thead> 
  <tbody> 
   <tr> 
-   <td> Antal meddelanden som ska levereras<br /> </td> 
+   <td> Number of messages to deliver<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> Totalt antal meddelanden som bearbetats under leveransanalysen.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
@@ -304,7 +301,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
   </tr> 
   <tr> 
    <td> Uppdelning<br /> </td> 
-   <td> @procent<br /> </td> 
+   <td> @percent<br /> </td> 
    <td> Procentandel av antalet aktier i det sociala nätverket jämfört med det totala antalet aktier.<br /> </td> 
    <td> percent(@forward, sum(@forward))<br /> </td> 
   </tr> 
@@ -333,7 +330,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
    <td> Antal öppningar <br /> </td> 
    <td> @open<br /> </td> 
    <td> Totalt antal spårningsrader i webbspårningstabellen.<br /> </td> 
-   <td> Antal<br /> </td> 
+   <td> Count<br /> </td> 
   </tr> 
   <tr> 
    <td> Uppdelning<br /> </td> 
@@ -482,7 +479,7 @@ Den här rapporten baseras på **[!UICONTROL Services]** tabellen (nms:service).
    <td> sum(Iif(@action = 1 och @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avbeställ<br /> </td> 
+   <td> Avprenumerationer<br /> </td> 
    <td> @_unprenumeration<br /> </td> 
    <td> antal avbeställningar (åtgärd = 0) föregående dag.<br /> </td> 
    <td> sum(Iif(@action = 0 och @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -566,8 +563,8 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
   </tr> 
   <tr> 
    <td> Klagomål<br /> </td> 
-   <td> @klagomål<br /> </td> 
-   <td> Antal meddelanden med statusen "Misslyckades" och en orsak som är lika med "Adress har lagts till i blocklistan".<br /> </td> 
+   <td> @complaints<br /> </td> 
+   <td> Antal meddelanden med statusen "Misslyckades" och en orsak som är lika med "Adress som lagts till i blockeringslista".<br /> </td> 
    <td> Count(@status=2 och msg/@errorReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -769,7 +766,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabellen (nms:delivery)
   <tr> 
    <td> Meddelanden som avvisats av regeln<br /> </td> 
    <td> @visa<br /> </td> 
-   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen adress har angetts, placerats i karantän, lagts till i blockeringslistan osv.<br /> </td> 
+   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen angiven adress, i karantän, tillagd i blockeringslista osv.<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
@@ -891,7 +888,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
    <td> Countdistans(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Avbeställ<br /> </td> 
+   <td> Avprenumerationer<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Totalt antal @ids som URL-kategorin är lika med "Opt-out".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 
@@ -928,7 +925,7 @@ Indikatorn **Skickat** (@sent) som nås via noden **Leveranser (nms:delivery) > 
 
 ## Synkronisering av indikator {#indicator-synchronization}
 
-Om du får desynkronisering eller inkonsekvens för vissa indikatorer väljer du den aktuella leveransen i utforskaren i Adobe Campaign, högerklickar och väljer **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klicka **[!UICONTROL Next]** och sedan på **[!UICONTROL Finish]**.
+Om du får desynkronisering eller inkonsekvens för vissa indikatorer väljer du den aktuella leveransen i Adobe Campaign Explorer, högerklickar och väljer **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klicka **[!UICONTROL Next]** och sedan på **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
@@ -938,10 +935,10 @@ För att Adobe Campaign ska kunna upptäcka att ett meddelande öppnas måste mo
 
 ## Målgrupper/mottagare {#targeted-persons---recipients}
 
-I vissa rapporter skiljer Adobe Campaign mellan målgruppsinriktade personer och målgruppsinriktade mottagare.
+I vissa rapporter skiljer Adobe Campaign ut målgruppsanpassade personer och målgruppsinriktade mottagare.
 
 Målmottagare är alla mottagare som leveransen skickades till.
 
 Antalet personer omfattar riktade mottagare plus alla personer som e-postmeddelandet skickades till. Varje gång det finns en öppning eller ett klick i en ny webbläsare (som meddelandet ännu inte har öppnats i) läggs en annan person till i statistiken.
 
-Om du till exempel får ett e-postmeddelande (som skickas av Adobe Campaign) på arbetet och öppnar eller klickar i det, räknas du som en målmottagare (dvs. mottagare=1, person=1). Om du vidarebefordrar det här e-postmeddelandet till två vänner är antalet målmottagare fortfarande lika med ett, medan antalet personer är lika med tre. Värdet 3 sammanfaller med varje öppet/klickning i en ny webbläsare.
+Om du till exempel får ett e-postmeddelande (som skickas av Adobe Campaign) på jobbet och öppnar eller klickar i det, räknas du som en målmottagare (dvs. mottagare=1, person=1). Om du vidarebefordrar det här e-postmeddelandet till två vänner är antalet målmottagare fortfarande lika med ett, medan antalet personer är lika med tre. Värdet 3 sammanfaller med varje öppet/klickning i en ny webbläsare.
