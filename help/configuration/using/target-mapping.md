@@ -1,7 +1,7 @@
 ---
-title: Målmappning
-seo-title: Målmappning
-description: Målmappning
+title: Målkartläggning
+seo-title: Målkartläggning
+description: Målkartläggning
 seo-description: null
 page-status-flag: never-activated
 uuid: a7dad8eb-c191-4f10-b7d8-63e0699603b7
@@ -11,27 +11,27 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ff7e6f72-7605-41ee-b25a-1e4618e674d7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
 
-# Målmappning{#target-mapping}
+# Målkartläggning{#target-mapping}
 
 Målmappning måste skapas i två fall:
 
-* om du använder en annan mottagartabell än den som finns i Adobe Campaign,
+* om du använder en annan mottagartabell än den som tillhandahålls av Adobe Campaign,
 * om du konfigurerar en filtreringsdimension som skiljer sig från standardmåldimensionen på målmappningsskärmen.
 
 Guiden för att skapa målmappning hjälper dig att skapa alla scheman som behövs för att du ska kunna använda din anpassade tabell.
 
 ## Skapa och konfigurera scheman som är länkade till den anpassade tabellen {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-Innan du skapar en målmappning krävs flera konfigurationer för att Adobe Campaign ska fungera med ett nytt mottagardataschema.
+Innan du skapar en målmappning krävs flera konfigurationer för att Adobe Campaign ska kunna använda ett nytt mottagardataschema.
 
 Gör så här:
 
@@ -107,7 +107,7 @@ Gör så här:
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign har inte stöd för flera mottagarscheman, som kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns på sidan [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md) .
+   >Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns på sidan [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md) .
 
 1. I fönstret **Tillägg** väljer du de valfria scheman som du vill generera (listan med tillgängliga scheman beror på vilka moduler som är installerade på Adobe Campaign-plattformen).
 
