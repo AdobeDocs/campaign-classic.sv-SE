@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: d10624ea-d961-4162-879b-1754f897d763
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -23,16 +20,16 @@ ht-degree: 0%
 ---
 
 
-# Dela resurser med Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
+# Sharing assets with Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
 Experience Cloud Assets utgör ett enda centralt arkiv av marknadsföringsmaterial som ni kan dela mellan olika lösningar. En resurs är ett digitalt dokument, en bild, en video eller en ljudfil.
 
 Tillgångstjänster:
 
 * Resurslagring, hanteringsgränssnitt, inbäddat urvalsgränssnitt (nås via lösningar).
-* Integrering med lösningarna Creative Cloud och Experience Cloud.
+* Integrering med Creative Cloud och Experience Cloud.
 
-När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i kärntjänsten Resurser eller Adobe Experience Manager Assets.
+När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i bastjänsten Assets eller Adobe Experience Manager Assets.
 
 De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html).
 
@@ -40,5 +37,5 @@ I avsnittet [Konfigurera åtkomst till resurser](../../integrations/using/config
 
 >[!NOTE]
 >
->Om du använder Adobe Campaign On-Premise är integrering med Assets-bastjänsten och med AEM Assets inte tillgängligt, såvida inte AEM Assets också är On-Premise.
+>Om du använder Adobe Campaign On-Premise är integrering med Assets Core Service och AEM Assets inte tillgängligt, såvida inte AEM Assets också är On-Premise.
 
