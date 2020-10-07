@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '81'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Arbetsflödet som beskrivs nedan installeras som standard med **modulen för ink
   </tr> 
   <tr> 
    <td> <strong>Uppdatera startnätverk för inkorgsåtergivning</strong><br /> </td> 
-   <td> <span class="uicontrol">updateRenderingSeeds</span><br /> </td> 
+   <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
    <td> Det här arbetsflödet uppdaterar e-postadresser som används för inkorgsåtergivning och fungerar bara om HTTPS-porten är öppen för <strong>deliverability.neolane.net</strong>.<br /> </td> 
   </tr> 
  </tbody> 
