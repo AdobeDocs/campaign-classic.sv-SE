@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2908'
 ht-degree: 0%
@@ -134,7 +131,7 @@ Den första åtgärden som utförs av **[!UICONTROL Database cleanup]** arbetsfl
 
 Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
-1. Arbetsflödet **[!UICONTROL Database cleanup]** väljer alla leveranser för vilka **deleteStatus** -fältet har värdet **[!UICONTROL Yes]** eller **[!UICONTROL Recycled]** borttagningsdatumet och vars borttagningsdatum är tidigare än den period som definieras i **[!UICONTROL Deleted deliveries]** fältet (**NmsCleanup_RecycledDeliveryPurgeDelay**) i distributionsguiden. Mer information finns i [Distributionsguiden](#deployment-wizard). Perioden beräknas i relation till aktuellt serverdatum.
+1. Arbetsflödet **[!UICONTROL Database cleanup]** väljer alla leveranser för vilka **deleteStatus** -fältet har värdet **[!UICONTROL Yes]** eller **[!UICONTROL Recycled]** borttagningsdatumet och vars borttagningsdatum är tidigare än den period som definieras i **[!UICONTROL Deleted deliveries]** fältet (**NmsCleanup_RecycledDeliveryPurgeDelay**) i distributionsguiden. For more on this, refer to [Deployment wizard](#deployment-wizard). Perioden beräknas i relation till aktuellt serverdatum.
 1. För varje server med mellanleverantörer väljer aktiviteten listan över leveranser som ska tas bort.
 1. Arbetsflödet **[!UICONTROL Database cleanup]** tar bort leveransloggar, bilagor, information om spegelsidor och alla andra relaterade data.
 1. Innan leveransen tas bort rensas länkad information från följande tabeller bort:
@@ -331,7 +328,7 @@ Den här aktiviteten rensar varje arbetsflödesinstans med dess identifierare (*
 
 >[!NOTE]
 >
->Historikens tömningsfrekvens anges för varje arbetsflöde i fältet **Historik i dagar** (standardvärde 30 dagar). Det här fältet finns på fliken **Körning** i arbetsflödesegenskaperna. For more on this, refer to [this section](../../workflow/using/workflow-properties.md#execution).
+>Historikens tömningsfrekvens anges för varje arbetsflöde i fältet **Historik i dagar** (standardvärde 30 dagar). Det här fältet finns på fliken **Körning** i arbetsflödesegenskaperna. Mer information om detta finns i [det här avsnittet](../../workflow/using/workflow-properties.md#execution).
 
 1. Följande fråga används för att återställa listan med arbetsflöden som ska tas bort:
 
@@ -475,7 +472,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
 
    där **$(tableName)** är namnet på varje tabell i schemalistan, och **$(option)** är det datum som definieras för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [distributionsguiden](#deployment-wizard)).
 
-1. Arbetsflödet kontrollerar slutligen om **tabellen NmsProviderMsgId** finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
+1. Arbetsflödet kontrollerar slutligen om **NmsProviderMsgId** -tabellen finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
 
    ```
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
