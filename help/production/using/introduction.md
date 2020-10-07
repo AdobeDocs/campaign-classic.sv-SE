@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 772992bf-588f-42bd-a72a-986a88815264
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 2%
 
 ---
 
 
 # Introduktion{#introduction}
 
-I det här avsnittet beskrivs hur du uppgraderar Adobe Campaign, på klientsidan och på serversidan, och hur du går över till Unicode för en befintlig instans.
+I det här avsnittet beskrivs hur du uppgraderar Adobe Campaign, klientsidan och serversidan, och hur du går över till Unicode för en befintlig instans.
 
 >[!NOTE]
 >
->För värdinstanser måste du koordinera med din Adobe-administratör.\
+>För värdbaserade instanser måste du koordinera med din Adobe-administratör.\
 >För lokala instanser kan du få hjälp av Adobe Consultants.
 
-Uppgraderingen måste gälla alla servrar där Adobe Campaign är installerat.
+Uppgraderingen måste utföras på alla servrar där Adobe Campaign är installerat.
 
 1. Migrera omdirigerings- och spårningsservrar (Apache/IIS).
 1. Migrera Power Booster-/klusterservrarna.
