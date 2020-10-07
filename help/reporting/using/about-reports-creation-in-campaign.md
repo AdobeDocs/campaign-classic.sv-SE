@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: a21e9c9e-ffc5-40d1-8eac-f4f25da8f21d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 11%
 
 ---
 
 
 # Om att skapa rapporter i Campaign{#about-reports-creation-in-campaign}
 
-Om du vill producera statistik över data i din Campaign-databas kan du skapa rapporter och anpassa deras innehåll och layout utifrån era behov. Dessa rapporter kan delas med andra operatorer.
+Om du vill producera statistik över data i din Campaign-databas kan du skapa rapporter och anpassa deras innehåll och layout utifrån dina behov. Dessa rapporter kan delas med andra operatorer.
 
 >[!NOTE]
 >
