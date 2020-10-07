@@ -1,7 +1,7 @@
 ---
-title: Flerkanalsleveranser
-seo-title: Flerkanalsleveranser
-description: Flerkanalsleveranser
+title: Leveranser över flera kanaler
+seo-title: Leveranser över flera kanaler
+description: Leveranser över flera kanaler
 seo-description: null
 page-status-flag: never-activated
 uuid: 191ff39e-f739-48b3-8865-ad1b641b7499
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 8dda45b4-4b5d-4b4e-a8b4-45d9bc49aaf3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 8%
 
 ---
 
 
-# Flerkanalsleveranser{#cross-channel-deliveries}
+# Leveranser över flera kanaler{#cross-channel-deliveries}
 
 Flerkanalsleveranser är tillgängliga på fliken **[!UICONTROL Deliveries]** för kampanjarbetsflödesaktiviteter.
 
@@ -57,14 +57,14 @@ Här skapar vi t.ex. ett arbetsflöde för att skicka ett e-postmeddelande eller
 1. Lägg till en **[!UICONTROL Split]** aktivitet i arbetsflödet för att dela upp mottagare som har ett mobilnummer och de som har en e-postadress.
 1. Välj en leverans för varje mål på **[!UICONTROL Delivery]** fliken.
 
-   Skapa leveransen på samma sätt som med en klassisk leveransguide genom att dubbelklicka på leveransaktiviteten i arbetsflödet. Mer information finns på den här [sidan](../../delivery/using/about-email-channel.md).
+   Skapa leveransen på samma sätt som med en klassisk leveransguide genom att dubbelklicka på leveransaktiviteten i arbetsflödet. Se denna [sida](../../delivery/using/about-email-channel.md) för mer information om detta.
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Lägg till och konfigurera en **[!UICONTROL Wait]** aktivitet för att mottagarna inte ska få för många leveranser samtidigt.
-1. Lägg till en **[!UICONTROL Split]** aktivitet för att dela upp prenumeranter av iOS- eller Android-mobilprogram.
+1. Lägg till en **[!UICONTROL Split]** aktivitet för att dela upp prenumeranter på ett iOS- eller Android-mobilprogram.
 
-   Välj en tjänst för vart och ett av operativsystemen. Mer information om hur du skapar tjänster finns på den här [sidan](../../delivery/using/configuring-the-mobile-application.md).
+   Välj en tjänst för vart och ett av operativsystemen. For more on service creation, refer to this [page](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
