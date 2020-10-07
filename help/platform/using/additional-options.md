@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -95,19 +92,19 @@ Genom att markera det här alternativet kan du uppnå en avsevärd prestandaökn
 
 ## Använda data från en extern databas i ett arbetsflöde {#using-data-from-an-external-database-in-a-workflow}
 
-I flera arbetsflödesaktiviteter för Adobe Campaign kan du använda data som lagras i en extern databas.
+I flera arbetsflödesaktiviteter i Adobe Campaign kan du använda data som lagras i en extern databas.
 
 ### Filtrera externa data {#filtering-on-external-data}
 
 Med frågeaktiviteten kan du lägga till externa data och använda dem i definierade filterkonfigurationer.
 
-Mer information finns i avsnittet [Fråga](../../workflow/using/targeting-data.md#selecting-data) .
+For more on this, refer to the [Query](../../workflow/using/targeting-data.md#selecting-data) section.
 
 ### Skapa delmängder {#creating-sub-sets}
 
 Med den delade aktiviteten kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas.
 
-Mer information finns i avsnittet [Dela](../../workflow/using/split.md) .
+For more on this, refer to the [Split](../../workflow/using/split.md) section.
 
 ### Läser in extern databas {#loading-external-database}
 
