@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 005be008585f75a87fb0029a8a88578cfde5ce51
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar.
 
-Innan du startar måste du kontrollera [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)för Campaign, hämta URL:en för Campaign-servern och inloggningsuppgifterna.
+Innan du startar måste du kontrollera [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)för Campaign, hämta URL:en för Campaign-servern och inloggningsuppgifterna.
 
 >[!CAUTION]
 >
@@ -35,7 +32,7 @@ Innan du startar måste du kontrollera [kompatibilitetsmatrisen](https://helpx.a
 
 ## Ladda ned konsolen{#download-the-client-console}
 
-Följ stegen nedan för att hämta och installera klientkonsolen för Adobe Campaign:
+Följ stegen nedan för att hämta och installera Adobe Campaign klientkonsol:
 
 1. Öppna en webbläsare och hämta konsolen från följande adress:
 
@@ -49,11 +46,11 @@ Följ stegen nedan för att hämta och installera klientkonsolen för Adobe Camp
 
 1. Klicka på **[!UICONTROL Download]** länken på installationssidan.
 1. Hämta och spara klientinstallationsfilen.
-1. Kör den hämtade filen på en dator i Windows: Installationen startar. Standardinstallationssökvägen för klientkonsolen är **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, där X är 6 eller 7 enligt Adobe Campaign.
+1. Kör den hämtade filen på en dator i Windows: Installationen startar. Standardinstallationssökvägen för klientkonsolen är **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, där X är 6 eller 7 enligt din Adobe Campaign-version.
 
 >[!NOTE]
 >
->I Windows kan du starta filen **nlclient.exe** direkt från `[INSTALL]/bin` katalogen på en Windows-server, där `[INSTALL]` sökvägen till installationsmappen i Adobe Campaign finns.
+>I Windows kan du starta filen **nlclient.exe** direkt från `[INSTALL]/bin` katalogen på en Windows-server, där `[INSTALL]` sökvägen till Adobe Campaign-installationsmappen finns.
 
 ## Skapa anslutningen{#create-the-connection}
 
@@ -65,7 +62,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för programservern Adobe Campaign.
+1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL-adressen för Adobe Campaign-programservern.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
@@ -75,7 +72,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Om Adobe IMS är konfigurerat för din organisation markerar du alternativet **[!UICONTROL Connect with an Adobe ID]**
 
-1. Klicka **[!UICONTROL Ok]** för att spara inställningarna.
+1. Click **[!UICONTROL Ok]** to save your settings.
 
 Du kan lägga till så många anslutningar som behövs för att ansluta till test-, scen- och produktionsmiljöer, till exempel.
 
@@ -101,5 +98,5 @@ Så här loggar du in på en befintlig instans:
 **Relaterade ämnen**
 
 * [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
-* [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [Kompatibilitetsmatris](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 * [Installera och konfigurera Adobe Campaign Client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) (video)
