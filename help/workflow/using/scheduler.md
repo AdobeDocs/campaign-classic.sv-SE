@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 23629289ac5da3f9bef01f50c452f7c761a6fa44
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 Schemaläggaren **är en** beständig aktivitet som aktiverar övergången vid de tidpunkter som anges i schemat.
 
-Aktiviteten bör betraktas som **[!UICONTROL Scheduler]** en planerad start. Aktivitetspositionsreglerna i diagrammet är desamma som för **[!UICONTROL Start]** aktiviteten. Den här aktiviteten får inte ha en inkommande övergång.
+**[!UICONTROL Scheduler]**-aktiviteten bör betraktas som en planerad start.  Reglerna för aktivitetspositionering i diagrammet är desamma som för **[!UICONTROL Start]**-aktiviteten.  Den här aktiviteten får inte ha en inkommande övergång.
 
 ## God praxis {#best-practices}
 
