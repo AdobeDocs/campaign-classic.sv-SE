@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ De filter som är tillgängliga i Adobe Campaign definieras via filtervillkor so
 
 >[!NOTE]
 >
->Mer information om hur du skapar filter finns i [det här avsnittet](../../platform/using/filtering-options.md).
+>For more on creating filters, refer to [this section](../../platform/using/filtering-options.md).
 
 Noden innehåller **[!UICONTROL Administration > Configuration > Predefined filters]** alla filter som används i listorna och översikterna.
 
