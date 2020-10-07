@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 3cea2be4-4da4-4ebd-a241-1bbaa5abb16e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ Som standard innehåller Interaction en **[!UICONTROL Design]** miljö och en **
 
 ![](assets/offer_environments_overview_002.png)
 
-Erbjudandeansvariga och leveranschefer har tillgång till olika miljövyer. Leveransansvariga kan bara visa **[!UICONTROL Live]** erbjudandemiljön och använda erbjudanden för att leverera dem. Erbjudandeansvariga kan visa och ändra **[!UICONTROL Design]** miljön och visa **[!UICONTROL Live]** miljön. Mer information finns i [Operator profiles](../../interaction/using/operator-profiles.md).
+Erbjudandeansvariga och leveranschefer har tillgång till olika miljövyer. Leveransansvariga kan bara visa **[!UICONTROL Live]** erbjudandemiljön och använda erbjudanden för att leverera dem. Erbjudandeansvariga kan visa och ändra **[!UICONTROL Design]** miljön och visa **[!UICONTROL Live]** miljön. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
 
 ## Skapa en erbjudandemiljö {#creating-an-offer-environment}
 
