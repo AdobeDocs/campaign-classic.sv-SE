@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -30,12 +27,12 @@ Klickade du på knappen Skicka? Låt oss se vad som händer. När leveransen har
 För att kunna styra era kampanjer måste ni se till att meddelandet verkligen har levererats till mottagarna.
 
 På kontrollpanelen för kampanjleverans kan du kontrollera bearbetade meddelanden och leveransgranskningsloggar.
-Du kan också styra status för meddelandena i leveransloggarna. [Lär dig mer](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+Du kan också styra status för meddelandena i leveransloggarna. [Läs mer](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 
 Vad händer om leveranserna inte skickas och deras status förblir **Väntande**?
 
 * Körningsprocessen väntar på att vissa resurser ska vara tillgängliga. MTA har kanske inte startats.
-Kontrollera att mta@instance startas på dina MTA-servrar och starta MTA-modulen om det behövs. [Lär dig mer](../../production/using/administration.md).
+Kontrollera att mta@instance startas på dina MTA-servrar och starta MTA-modulen om det behövs. [Läs mer](../../production/using/administration.md).
 
 * Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande instansen.
 Tips: Kontrollera konfigurationen för trafikhantering (IP-tillhörighet). Mer information finns i Kontrollera utgående SMTP-trafik.
@@ -66,7 +63,7 @@ Om du vill mäta den hastighet med vilken meddelandena levereras kan du styra le
 
 ## Felsökning av leverans {#delivery-troubleshooting}
 
-Specifika åtgärder kan utföras vid problem med leveranser:
+Du kan utföra specifika åtgärder när du stöter på leveransproblem:
 
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
