@@ -1,7 +1,7 @@
 ---
-title: Installera Campaign Classic-standardpaket
-seo-title: Installera Campaign Classic-standardpaket
-description: Installera Campaign Classic-standardpaket
+title: Installera standardpaketet för Campaign Classic
+seo-title: Installera standardpaketet för Campaign Classic
+description: Installera standardpaketet för Campaign Classic
 seo-description: null
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# Installera inbyggda Campaign Classic-paket{#installing-campaign-standard-packages}
+# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
 
 ## Om inbyggda paket {#campaign-standard-packages}
 
@@ -39,7 +36,7 @@ Inbyggda paket innehåller en uppsättning funktioner som kan installeras efter 
 
 Så här installerar du ett inbyggt paket:
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** klientkonsolen i Adobe Campaign.
+1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** Adobe Campaign klientkonsol.
 1. Välj **[!UICONTROL Install a standard package]**.
 1. Markera de paket som du vill installera i paketlistan.
    >[!NOTE]
@@ -77,7 +74,7 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Marknadsföring</td>
   </tr> 
   <tr> 
-   <td> Marknadsföringsresurser<br /> </td> 
+   <td> Marketing resources (MRM)<br /> </td> 
    <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="../../campaign/using/about-marketing-resource-management.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
@@ -133,8 +130,8 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mobilappskanal<br /> </td> 
-   <td> Använder plattformen Adobe Campaign för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Valfritt. <a href="../../delivery/using/about-mobile-app-channel.md">Läs mer</a> <br /> </td> 
+   <td> Mobilappskanalen<br /> </td> 
+   <td> Använder Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Valfritt. <a href="../../delivery/using/about-mobile-app-channel.md">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
@@ -148,12 +145,12 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing Analytics<br /> </td> 
+   <td> Marknadsföringsanalys<br /> </td> 
    <td> Gör att du kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Du kan också skapa rapporter och skapa målpopulationer. Valfritt. <a href="../../reporting/using/about-cubes.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
-   <td> Svarshanteraren<br /> </td> 
+   <td> Responshanteraren<br /> </td> 
    <td> Mäter framgången och lönsamheten för marknadsföringskampanjer eller erbjuder förslag för alla kommunikationskanaler.  Valfritt. <a href="../../campaign/using/about-response-manager.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
@@ -188,48 +185,48 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> CRM-anslutningar<br /> </td> 
+   <td> CRM connectors<br /> </td> 
    <td> Tillhandahåller olika CRM-anslutningar för att länka din Adobe Campaign-plattform till dina tredjepartssystem.  <a href="../../platform/using/crm-connectors.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
-   <td> Analytics-anslutningar på webben<br /> </td> 
-   <td> Gör att Adobe Campaign och Adobe Analytics kan interagera via Web Analytics Connectors-paketet. Inte kompatibelt med Transactional Messaging (Message Center-paket). <a href="../../platform/using/adobe-analytics-data-connector.md">Läs mer</a><br /> </td> 
+   <td> Web Analytics-anslutningar<br /> </td> 
+   <td> Gör att Adobe Campaign och Adobe Analytics kan interagera via Web Analytics-anslutningspaketet. Inte kompatibelt med Transactional Messaging (Message Center-paket). <a href="../../platform/using/adobe-analytics-data-connector.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> AEM-integration<br /> </td> 
-   <td> Gör att du kan hantera innehållet i e-postleveranserna och formulären direkt i Adobe Experience Manager för att dra nytta av både AEM:s funktioner för innehållsredigering och Adobe Campaign leveranskapacitet. <a href="../../integrations/using/about-adobe-experience-manager.md">Läs mer</a> <br /> </td> 
+   <td> AEM<br /> </td> 
+   <td> Gör att du kan hantera innehållet i e-postleveranserna och formulären direkt i Adobe Experience Manager för att dra nytta av AEM funktioner för innehållsredigering och Adobe Campaign leveranskapacitet. <a href="../../integrations/using/about-adobe-experience-manager.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
-   <td> Integrering av Adobe Marketing Cloud Shared Auditions<br /> </td> 
-   <td> Gör att ni kan utbyta och dela målgrupper/segment med Adobe Experience Cloud-lösningar och bastjänster. Kräver IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Läs mer</a> <br /> </td> 
+   <td> Integrering av Adobe Marketing Cloud delade målgrupper<br /> </td> 
+   <td> Gör att ni kan utbyta och dela målgrupper/segment med Adobe Experience Cloud lösningar och bastjänster. Kräver IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integration med Adobe Marketing Cloud<br /> </td> 
+   <td> Integrering med Adobe Marketing Cloud<br /> </td> 
    <td> Används för att importera och exportera målgrupper/segment från olika Adobe Marketing Cloud-lösningar till Adobe Campaign. Valfritt. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Läs mer</a> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
-   <td> Skyddsförordningen för personuppgifter<br /> </td> 
-   <td> Innehåller ytterligare funktionalitet som kan hjälpa dig att följa sekretesskraven i Campaign Classic. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
+   <td> Sekretessdataskyddsförordningen<br /> </td> 
+   <td> Innehåller ytterligare funktionalitet som kan hjälpa dig att följa sekretesskraven i Campaign Classic. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
    <td> Alla</td> 
   </tr> 
   <tr> 
-   <td> Överföring till medelkälla <br /> </td> 
+   <td> Transfer to Mid-Sourcing <br /> </td> 
    <td> Detaljerar installation och konfiguration av en server med mellanlagring samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i mellankälläge. Valfritt. <a href="../../installation/using/mid-sourcing-server.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> Plattform för mellanleverantörer<br /> </td> 
-   <td> Denna konfiguration är en optimal mellanlösning mellan en värdkonfiguration (ASP) och internalisering. De utåtriktade körningskomponenterna utförs på en"server med mellanleverantörer" på Adobe Campaign. Valfritt. <a href="../../installation/using/mid-sourcing-server.md">Läs mer</a> <br /> </td> 
+   <td> Plattform för mid-sourcing<br /> </td> 
+   <td> Denna konfiguration är en optimal mellanlösning mellan en värdkonfiguration (ASP) och internalisering. Utomvända körningskomponenter utförs på en"server med mellanleverantörer" på Adobe Campaign. Valfritt. <a href="../../installation/using/mid-sourcing-server.md">Läs mer</a> <br /> </td> 
    <td> Mid-sourcing </td> 
   </tr> 
   <tr> 
-   <td> ACS Connector<br /> </td> 
-   <td> Bridges Adobe Campaign v7 och Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Valfritt. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Läs mer</a> <br /> </td> 
+   <td> ACS-koppling<br /> </td> 
+   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Valfritt. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
  </tbody> 
@@ -239,7 +236,7 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
 
 Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal efteråt måste du följa dessa steg:
 
-1. Installera den nya kanalen, till exempel **mobilkanalen**, med hjälp av paketimportguiden ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Installera den nya kanalen, till exempel **mobilkanalen**, med paketimportguiden ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importera filen ( **[!UICONTROL Tools > Advanced > Import package > File]**) och välj:
 
    ```
