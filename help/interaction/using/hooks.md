@@ -1,7 +1,7 @@
 ---
-title: Hooks
-seo-title: Hooks
-description: Hooks
+title: Krokar
+seo-title: Krokar
+description: Krokar
 seo-description: null
 page-status-flag: never-activated
 uuid: 4394717e-8625-4e2f-9492-3fd9b444a732
@@ -11,24 +11,24 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2b799ad7-b729-4b3e-9adc-1df13259f2a9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 1%
 
 ---
 
 
-# Hooks{#hooks}
+# Krokar{#hooks}
 
 Med krokar i interaktion kan du ändra **standardmotorbeteendet**.
 
-Hokarna **[!UICONTROL Target loading]** och **[!UICONTROL Proposition post-processing]** hookarna är konfigurerade i Adobe Campaign:
+Hakarna **[!UICONTROL Target loading]** och **[!UICONTROL Proposition post-processing]** hakarna är konfigurerade i Adobe Campaign:
 
 ![](assets/interaction_hooks_1.png)
 
-Haken **[!UICONTROL Dynamic offer]** konfigureras med erbjudandevikten i Adobe Campaign:
+Haken är konfigurerad med den vikt som erbjuds i Adobe Campaign: **[!UICONTROL Dynamic offer]**
 
 ![](assets/interaction_hooks_2.png)
 
@@ -82,7 +82,7 @@ Efterbearbetningen utförs efter typologiregeltillämpningen och den stödberät
      weight:2}
    ```
 
-* dicOffer (xml-typ): ordlista över alla attribut för berättigade erbjudanden (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudandeID, ytterligare erbjudandefält). Till exempel
+* dicOffer (xml-typ): ordlista över alla attribut för berättigade erbjudanden (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudandeID, ytterligare erbjudandefält). Exempel
 
    ```
    { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
