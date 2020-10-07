@@ -1,7 +1,7 @@
 ---
-title: A/B-tester
-seo-title: A/B-tester
-description: A/B-tester
+title: A/B-test
+seo-title: A/B-test
+description: A/B-test
 seo-description: null
 page-status-flag: never-activated
 uuid: 8887574e-447b-48a5-afc6-95783ffa7fb3
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 2%
 
 ---
 
 
-# A/B-tester{#a-b-testing}
+# A/B-test{#a-b-testing}
 
 Om du har flera olika innehåll för en e-postleverans och vill ta reda på vilken version som har störst effekt på målpopulationen, kan du skicka de olika versionerna till vissa av dina mottagare och sedan välja den version som har störst framgång och skicka den till övriga mottagare.
 
@@ -42,7 +42,7 @@ Så här skapar du A/B-testet:
 * [Steg 7: Starta arbetsflödet](#step-7--starting-the-workflow)
 * [Steg 8: Analyserar resultatet](#step-8--analyzing-the-result).
 
-## Steg 1:Skapa ett målarbetsflöde {#step-1--creating-a-targeting-workflow}
+## Step 1: Creating a targeting workflow {#step-1--creating-a-targeting-workflow}
 
 Du måste skapa ett arbetsflöde på fliken **[!UICONTROL Targeting and Workflows]** i en kampanj. Det består av en **[!UICONTROL Query]** aktivitet, en **[!UICONTROL Split]** aktivitet som är kopplad till två **[!UICONTROL Email delivery]** aktiviteter, en **[!UICONTROL Wait]** aktivitet, en **[!UICONTROL JavaScript code]** aktivitet och en **[!UICONTROL Delivery]** aktivitet.
 
@@ -50,7 +50,7 @@ Du måste skapa ett arbetsflöde på fliken **[!UICONTROL Targeting and Workflow
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Gå till **[!UICONTROL Targeting and Workflows]** fliken.
+1. Gå till fliken **[!UICONTROL Targeting and Workflows]**.
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
@@ -66,7 +66,7 @@ Du måste skapa ett arbetsflöde på fliken **[!UICONTROL Targeting and Workflow
 
 ### Konfigurera aktiviteten Fråga {#configuring-the-query-activity}
 
-* Dubbelklicka på **[!UICONTROL Query]** aktiviteten.
+* Double-click the **[!UICONTROL Query]** activity.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
@@ -84,7 +84,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar population A:
 
-   * Dubbelklicka på **[!UICONTROL Split]** aktiviteten.
+   * Double-click the **[!UICONTROL Split]** activity.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -116,7 +116,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar den återstående populationen:
 
-   * Gå till **[!UICONTROL General]** fliken.
+   * Gå till fliken **[!UICONTROL General]**.
 
       ![](assets/use_case_abtesting_createrecipients_011.png)
 
@@ -130,9 +130,9 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 ## Steg 3: Skapa två leveransmallar {#step-3--creating-two-delivery-templates}
 
-Vi vill nu skapa två leveransmallar. Varje mall kommer att refereras i en aktivitet som är länkad till **[!UICONTROL Email delivery]** **[!UICONTROL Split]** aktiviteten. Mer information finns i det här [avsnittet](../../delivery/using/about-templates.md).
+Vi vill nu skapa två leveransmallar. Varje mall kommer att refereras i en aktivitet som är länkad till **[!UICONTROL Email delivery]** **[!UICONTROL Split]** aktiviteten. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/about-templates.md).
 
-1. Gå till **[!UICONTROL Resources > Delivery template]** mappen.
+1. Go to the **[!UICONTROL Resources > Delivery template]** folder.
 1. Duplicera **[!UICONTROL Email]** leveransmallen.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
@@ -188,7 +188,7 @@ Valet av leveransinnehåll som är avsett för den återstående populationen be
 
 ### Exempel på ett skript {#example-of-a-script}
 
-Följande skript kan användas på samma sätt som i målarbetsflödet. Mer information finns i [Implementering](#implementation).
+Följande skript kan användas på samma sätt som i målarbetsflödet. For more on this, refer to [Implementation](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
