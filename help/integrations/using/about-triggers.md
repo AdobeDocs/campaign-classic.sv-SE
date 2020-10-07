@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Om Adobe Experience Cloud-utlösare{#about-adobe-experience-triggers}
 
-[!DNL Triggers] är en integrering mellan Adobe Campaign och Adobe Analytics via pipeline. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
+[!DNL Triggers] är en integrering mellan Adobe Campaign och Adobe Analytics. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
 
 [!DNL Triggers] köra marknadsföringsåtgärder inom ett kort tidsintervall efter en användares åtgärd. Den typiska svarstiden är mindre än en timme.
 
@@ -38,7 +35,7 @@ Det stöder också stora trafikvolymer utan att påverka marknadsföringsaktivit
 
 >[!CAUTION]
 >
->Endast Adobe Cloud-lösningar kan producera och förbruka evenemang från Adobes Pipeline-tjänster. System som är externa än Adobe kan inte göra det.
+>Endast Adobe Cloud-lösningar kan producera och förbruka event från Adobe’s Pipeline services. System som ligger utanför Adobe kan inte det.
 
 Pipeline är ett meddelandesystem på Experience Cloud som använder [Apache Kafka](http://kafka.apache.org/). Det är ett sätt att enkelt skicka data mellan olika lösningar. Dessutom är Pipeline en meddelandekö i stället för en databas. Producenterna pushar på händelser i pipeline och konsumenterna lyssnar på flödet och gör vad de vill med händelsen. Händelser sparas i några dagar, men inte längre. Syftet är att avlyssna händelser dygnet runt och bearbeta dem direkt.
 
@@ -46,7 +43,7 @@ Pipeline är ett meddelandesystem på Experience Cloud som använder [Apache Kaf
 
 ### Hur fungerar Pipeline? {#how-pipeline-work}
 
-Processen [!DNL pipelined] körs alltid på marknadsföringsservern i Adobe Campaign. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
+Processen [!DNL pipelined] körs alltid på Adobe Campaign marknadsföringsserver. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
 
 ![](assets/triggers_2.png)
 
