@@ -1,7 +1,7 @@
 ---
-title: Standarddistribution
-seo-title: Standarddistribution
-description: Standarddistribution
+title: Standardiserad driftsättning
+seo-title: Standardiserad driftsättning
+description: Standardiserad driftsättning
 seo-description: null
 page-status-flag: never-activated
 uuid: e2f9c4d9-4b36-4899-9954-493135597057
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: d714b759-cc08-4656-876c-9820d5c56216
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
 
 
-# Standarddistribution{#standard-deployment}
+# Standardiserad driftsättning{#standard-deployment}
 
 För den här konfigurationen krävs tre datorer:
 
@@ -31,7 +31,7 @@ De två servrarna i DMZ hanterar spårning, spegelsidor och leverans och är red
 
 Programservern i LAN betjänar slutanvändarna och utför alla återkommande processer (arbetsflödesmotor). När toppbelastningen uppnås på frontservrarna påverkas alltså inte programanvändarna.
 
-Databasservern kan finnas på en annan dator än dessa. I annat fall måste programservern och databasservern dela samma dator inom LAN så länge som operativsystemet stöds av Adobe Campaign (Linux eller Windows).
+Databasservern kan finnas på en annan dator än dessa. Programservern och databasservern måste i övrigt dela samma dator inom LAN så länge operativsystemet stöds av Adobe Campaign (Linux eller Windows).
 
 Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
@@ -86,8 +86,8 @@ Stegen är följande:
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
-   * För Linux: Integrering [med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * För Windows: Integrering [med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Skapa **demoinstansen** . Det finns två sätt att göra detta:
 
@@ -112,7 +112,7 @@ Stegen är följande:
 
 1. Ändra den **interna** till samma som programservern.
 
-   Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Länka databasen till instansen:
 
@@ -122,7 +122,7 @@ Stegen är följande:
 
 1. Aktivera modulerna **web** , **trackinglog** och **mta** i filerna config-default.xml **och** config-demo.xml **** .
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och fyll i den:
 
@@ -136,7 +136,7 @@ Stegen är följande:
       >
       >Parametern **nameServers** används bara i Windows.
 
-      Mer information finns i [Leveransinställningar](../../installation/using/campaign-server-configuration.md#delivery-settings).
+      For more on this, refer to [Delivery settings](../../installation/using/campaign-server-configuration.md#delivery-settings).
 
    * redundanta spårningsservrar i omdirigeringsparametrarna:
 
@@ -145,7 +145,7 @@ Stegen är följande:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      Mer information finns i [Spårning](../../installation/using/configuring-campaign-server.md#redundant-tracking)av överflödiga objekt.
+      For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 1. Starta webbplatsen och testa omdirigeringen från URL:en: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -163,11 +163,11 @@ Stegen är följande:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: Starta [webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * För Windows: Starta [webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * För Linux: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Starta Adobe Campaign-servern.
-1. I Adobe Campaign-konsolen ansluter du med **administratörsinloggningen** utan lösenord och startar distributionsguiden.
+1. I Adobe Campaign Console ansluter du med **administratörsinloggningen** utan lösenord och startar distributionsguiden.
 
    Mer information finns i [Distribuera en instans](../../installation/using/deploying-an-instance.md).
 
@@ -175,7 +175,7 @@ Stegen är följande:
 
 1. Fyll i den externa URL-adressen (den för belastningsutjämnaren) som används för omdirigering och de interna URL-adresserna för de två frontservrarna.
 
-   Mer information finns i [Spårningskonfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
+   For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 
