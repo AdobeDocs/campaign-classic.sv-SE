@@ -1,7 +1,7 @@
 ---
-title: Bästa tillvägagångssätt för rapportering
-seo-title: Bästa tillvägagångssätt för rapportering
-description: Bästa tillvägagångssätt för rapportering
+title: Bästa praxis för rapportering
+seo-title: Bästa praxis för rapportering
+description: Bästa praxis för rapportering
 seo-description: null
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
 
-# Bästa tillvägagångssätt för rapportering{#best-practices-reporting}
+# Bästa praxis för rapportering{#best-practices-reporting}
 
 ## Analysera behov{#analyzing-needs}
 
@@ -40,7 +40,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
    * Lägg till indikatorer i en befintlig rapport (se [detta avsnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Visa data i databasen (via [detta avsnitt](../../reporting/using/about-descriptive-analysis.md)),
    * Skapa en ny leveransrapport (se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet](../../workflow/using/about-workflows.md)),
+   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [detta avsnitt](../../workflow/using/about-workflows.md)),
    * Skapa en pivottabell (se [det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
    * Utforska aggregerade data (via [detta avsnitt](../../reporting/using/about-cubes.md)),
    * Använd en guide för att analysera data (via [det här avsnittet](../../reporting/using/about-descriptive-analysis.md)),
@@ -48,21 +48,22 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
 1. Identifiera målpopulationen
 
-   Sedan måste ni ta reda på vem den rapport ni vill skapa är avsedd för, veta vilken typ av publik som kommer att se den och rapportvisningsläget (i en webbläsare, i Adobe Campaign, för ett visst objekt, för hela plattformen osv.).
+   Sedan måste du ta reda på vem rapporten du vill skapa ska ha som mål, veta vilken typ av publik som ska visa den och rapportens visningsläge (i en webbläsare, i Adobe Campaign, för ett visst objekt, för hela plattformen osv.).
 
    Du kan också skapa rapporter för:
 
-   * Alla Adobe Campaign-operatörer,
+   * Alla Adobe Campaign-operatorer
    * Operatörer som endast har rätt att få tillgång till en marknadsföringskampanj,
    * En enda operatör för tillfälligt bruk.
    * Alla operatorer för webbåtkomst osv.
+
    Dessa överväganden måste också beakta de problem som är kopplade till åtkomsträttigheter och säkerhet.
 
 1. Definiera innehållet
 
    Sedan måste du ta reda på vilken typ av data du vill visa: leveransindikatorer, rapporter om databasprofiler osv.
 
-   Ni måste också känna till vilken typ av data det är (enkel, som ett resultat av en beräkning, signifikant osv.), dess plats (i Adobe Campaign, i ett tredjepartssystem), dess uppdateringsfrekvens för att definiera beräkningsfrekvensen (varje dag, varje vecka, direkt) samt dess volym.
+   Du måste också känna till vilken typ av data det är (enkel, som ett resultat av en beräkning, signifikant osv.), dess plats (i Adobe Campaign, i ett tredjepartssystem), dess uppdateringsfrekvens för att definiera beräkningsfrekvensen (varje dag, varje vecka, varje gång) samt dess volym.
 
    De problem som är kopplade till datavolymer och uppdateringar måste undersökas noggrant för att undvika problem med rapportvisningen, särskilt i fråga om tid. Därför rekommenderar vi att man skapar aggregat för att förberäkna vissa data utanför rapporten. Tabeller som innehåller spårnings- och leveransloggar kan innehålla miljontals poster: Detta innebär att data måste aggregeras via ett arbetsflöde för att användas i en rapport.
 
@@ -100,7 +101,7 @@ Frågor som gör att du kan samla in de data som visas i rapporterna får inte v
 
 Med rekommendationerna ovan kan du optimera rapportberäkningen.
 
-Adobe Campaign rekommenderar dessutom följande förbättringar:
+Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
 * Studera datamodellen: indexerade fält måste huvudsakligen användas för att förbättra beräkningsformler.
 
@@ -114,4 +115,4 @@ Adobe Campaign rekommenderar dessutom följande förbättringar:
 
 ### Exportera rapporter {#exporting-reports}
 
-Rekommendationer som är specifika för export av rapporter beskrivs i [detta avsnitt](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations som är specifikt för att exportera rapporter beskrivs i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).
