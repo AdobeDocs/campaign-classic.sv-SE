@@ -1,5 +1,5 @@
 ---
-title: Frågar leveransinformation
+title: Fråga om leveransinformation
 description: Lär dig hur du hämtar leveransinformation
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 1%
 
 ---
 
 
-# Frågar leveransinformation {#querying-delivery-information}
+# Fråga om leveransinformation {#querying-delivery-information}
 
 ## Antal klick för en viss leverans {#number-of-clicks-for-a-specific-delivery}
 
@@ -46,7 +46,7 @@ Så här utför du det här exemplet:
 
    Så här gör du:
 
-   * Klicka på **[!UICONTROL Add]** ikonen till höger om **[!UICONTROL Output columns]** fältet. I **[!UICONTROL Formula type]** fönstret markerar du **[!UICONTROL Edit the formula using an expression]** alternativet och klickar på **[!UICONTROL Next]**. Klicka på i **[!UICONTROL Field to select]** fönstret **[!UICONTROL Advanced selection]**.
+   * Klicka på **[!UICONTROL Add]** ikonen till höger om **[!UICONTROL Output columns]** fältet. I **[!UICONTROL Formula type]** fönstret markerar du **[!UICONTROL Edit the formula using an expression]** alternativet och klickar på **[!UICONTROL Next]**. In the **[!UICONTROL Field to select]** window, click **[!UICONTROL Advanced selection]**.
 
       ![](assets/query_editor_tracklog_06.png)
 
@@ -56,7 +56,7 @@ Så här utför du det här exemplet:
 
       ![](assets/query_editor_nveau_18.png)
 
-      Klicka **[!UICONTROL Next]**.
+      Klicka på **[!UICONTROL Next]**.
 
    * Markera **[!UICONTROL Primary key (@id)]** fältet. Utdatakolumnen är konfigurerad **[!UICONTROL count (primary key)]** .
 
@@ -80,29 +80,29 @@ Så här utför du det här exemplet:
 
    * Återställ spårningsloggar under en viss period för en viss leverans. Tre filtervillkor krävs: Två datumvillkor för att fastställa söktiden mellan två veckor före dagens datum och dagen före dagens datum. och ett annat villkor som begränsar sökningen till en viss leverans.
 
-      Konfigurera det datum som spårningsloggarna ska börja i **[!UICONTROL Target element]** fönstret. Klicka **[!UICONTROL Add]**. En villkorslinje visas. Redigera **[!UICONTROL Expression]** kolumnen genom att klicka på **[!UICONTROL Edit expression]** funktionen. Välj i **[!UICONTROL Field to select]** fönstret **[!UICONTROL Date (@logDate)]**.
+      I **[!UICONTROL Target element]** fönstret anger du det datum som spårningsloggarna ska börja. Klicka på **[!UICONTROL Add]**. En villkorslinje visas. Redigera **[!UICONTROL Expression]** kolumnen genom att klicka på **[!UICONTROL Edit expression]** funktionen. Välj i **[!UICONTROL Field to select]** fönstret **[!UICONTROL Date (@logDate)]**.
 
       ![](assets/query_editor_nveau_23.png)
 
       Välj **[!UICONTROL greater than]** operator. Klicka i **[!UICONTROL Value]** kolumnen **[!UICONTROL Edit expression]** och välj **[!UICONTROL Formula type]** i **[!UICONTROL Process on dates]** fönstret. Ange slutligen &quot;15&quot; i **[!UICONTROL Current date minus n days]** rutan.
 
-      Klicka **[!UICONTROL Finish]**.
+      Klicka på **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_24.png)
 
    * Om du vill välja slutdatum för spårningsloggssökning skapar du ett andra villkor genom att klicka på **[!UICONTROL Add]**. Välj **[!UICONTROL Expression]** igen i **[!UICONTROL Date (@logDate)]** kolumnen.
 
-      Välj **[!UICONTROL less than]** operator. Klicka i **[!UICONTROL Value]** kolumnen **[!UICONTROL Edit expression]**. Gå till **[!UICONTROL Formula type]** fönstret och skriv &quot;1&quot; i **[!UICONTROL Current date minus n days]**.
+      Välj **[!UICONTROL less than]** operator. In the **[!UICONTROL Value]** column, click **[!UICONTROL Edit expression]**. Gå till **[!UICONTROL Formula type]** fönstret och skriv &quot;1&quot; i **[!UICONTROL Current date minus n days]**.
 
-      Klicka **[!UICONTROL Finish]**.
+      Klicka på **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_65.png)
 
       Nu vill vi konfigurera det tredje filtervillkoret, dvs. den leveransetikett som vår fråga gäller.
 
-   * Klicka på **[!UICONTROL Add]** funktionen för att skapa ett annat filtervillkor. Klicka i **[!UICONTROL Expression]** kolumnen **[!UICONTROL Edit expression]**. I **[!UICONTROL Field to select]** fönstret väljer du **[!UICONTROL Label]** i **[!UICONTROL Delivery]** noden.
+   * Klicka på **[!UICONTROL Add]** funktionen för att skapa ett annat filtervillkor. In the **[!UICONTROL Expression]** column, click **[!UICONTROL Edit expression]**. I **[!UICONTROL Field to select]** fönstret väljer du **[!UICONTROL Label]** i **[!UICONTROL Delivery]** noden.
 
-      Klicka **[!UICONTROL Finish]**.
+      Klicka på **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_66.png)
 
@@ -131,7 +131,7 @@ Så här skapar du det här exemplet:
    ![](assets/query_recipients_1.png)
 
 1. Markera **[!UICONTROL Filtering conditions]** och klicka sedan **[!UICONTROL Next]**.
-1. Klicka på **[!UICONTROL Add]** knappen och välj **[!UICONTROL Tracking logs]**.
+1. Click the **[!UICONTROL Add]** button and select **[!UICONTROL Tracking logs]**.
 1. Ställ in **[!UICONTROL Operator]** uttrycket till **[!UICONTROL Tracking logs]** **[!UICONTROL Do not exist such as]**.
 
    ![](assets/query_open_1.png)
@@ -160,7 +160,7 @@ Om du däremot vill filtrera mottagare som har öppnat minst ett e-postmeddeland
 
 I följande exempel visas hur man riktar sig till profiler som har öppnat en leverans de senaste två veckorna:
 
-1. Om du vill ha målprofiler som har öppnat en leverans måste du använda spårningsloggar. De lagras i en länkad tabell: börja med att välja den här tabellen i listrutan i **[!UICONTROL Filtering dimension]** fältet, som visas nedan:
+1. Om du vill ha målprofiler som har öppnat en leverans måste du använda spårningsloggar. De lagras i en länkad tabell: börja med att välja den här tabellen i listrutan för **[!UICONTROL Filtering dimension]** fältet, som visas nedan:
 
    ![](assets/s_advuser_query_sample1.0.png)
 
@@ -168,7 +168,7 @@ I följande exempel visas hur man riktar sig till profiler som har öppnat en le
 
    ![](assets/s_advuser_query_sample1.1.png)
 
-   Bekräfta valet genom **[!UICONTROL Finish]** att klicka.
+   Click **[!UICONTROL Finish]** to confirm selection.
 
    Om du bara vill återställa spårningsloggarna som är mindre än två veckor gamla väljer du **[!UICONTROL Greater than]** operatorn.
 
@@ -202,12 +202,12 @@ I följande steg visas hur du konfigurerar **[!UICONTROL Split]** rutan genom at
 
    ![](assets/query_editor_ex_09.png)
 
-1. Öppna **[!UICONTROL Split]** lådan. Ange en etikett på **[!UICONTROL General]** fliken: Dela **baserat på beteende** , till exempel.
+1. Öppna **[!UICONTROL Split]** lådan. Ange en etikett på **[!UICONTROL General]** fliken: **Dela baserat på beteende** , till exempel.
 
    ![](assets/query_editor_ex_04.png)
 
 1. Definiera den första delade grenen på **[!UICONTROL Subsets]** fliken. Ange till exempel etiketten **Klickad** för den här grenen.
-1. Välj **[!UICONTROL Add a filtering condition on the incoming population]** alternativet. Klicka **[!UICONTROL Edit]**.
+1. Välj **[!UICONTROL Add a filtering condition on the incoming population]** alternativet. Klicka på **[!UICONTROL Edit]**.
 1. Dubbelklicka på **[!UICONTROL Targeting and filtering dimension]** filtret i **[!UICONTROL Recipients of a delivery]** fönstret.
 
    ![](assets/query_editor_ex_05.png)
@@ -225,7 +225,7 @@ I följande steg visas hur du konfigurerar **[!UICONTROL Split]** rutan genom at
    ![](assets/query_editor_ex_06.png)
 
 1. En annan underflik visas. Ge den namnet&quot;**Klick** inte&quot;.
-1. Klicka **[!UICONTROL Add a filtering condition for the incoming population]**. Klicka sedan på **[!UICONTROL Edit...]**.
+1. Klicka på **[!UICONTROL Add a filtering condition for the incoming population]**. Klicka sedan på **[!UICONTROL Edit...]**.
 
    ![](assets/query_editor_ex_07.png)
 
