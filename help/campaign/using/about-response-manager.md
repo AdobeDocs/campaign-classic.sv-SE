@@ -1,7 +1,7 @@
 ---
-title: Om svarshanteraren
-seo-title: Om svarshanteraren
-description: Om svarshanteraren
+title: Om responshanteraren
+seo-title: Om responshanteraren
+description: Om responshanteraren
 seo-description: null
 page-status-flag: never-activated
 uuid: 3087a96d-50fb-488a-9b76-70eb5c67deed
@@ -11,20 +11,20 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: a4669fee-4512-455f-b495-ebd5a0746b76
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 4%
 
 ---
 
 
-# Om svarshanteraren{#about-response-manager}
+# Om responshanteraren{#about-response-manager}
 
 ## Mål {#objectives}
 
-Adobe Campaign erbjuder en svarshanteringsapplikation (Response Manager) som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda förslag för alla kommunikationskanaler (e-post, mobil, telefon, direktreklam, fax, byrå, osv.).
+Adobe Campaign erbjuder en responshanteringsapplikation (Response Manager) som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda erbjudanden för alla kommunikationskanaler (e-post, mobil, telefon, direktreklam, fax, byrå, osv.).
 
 ## Hyposterkoncept {#hypothesis-concept}
 
