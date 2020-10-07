@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 335cf2de-1874-4e48-9538-f0937641cf96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Skapa en ny leverans med **[!UICONTROL Publish to a brand page]** leveransmallen
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Välja huvudmål {#selecting-the-main-target}
+## Selecting the main target {#selecting-the-main-target}
 
 Du måste markera de sidor du vill publicera publikationen på.
 
@@ -45,7 +45,7 @@ Du måste markera de sidor du vill publicera publikationen på.
 
    ![](assets/social_facebook_delivery_010.png)
 
-1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka på knappen **[!UICONTROL Add]**.
 
    ![](assets/social_facebook_delivery_011.png)
 
@@ -59,7 +59,7 @@ Du måste markera de sidor du vill publicera publikationen på.
 
 ## Välja korrekturmål {#selecting-the-proof-target}
 
-På fliken **[!UICONTROL Target of the proofs]** kan du definiera den Facebook-sida som du vill använda för att testa leveranser innan du skickar ut dem. Vi rekommenderar att du skapar en dedikerad privat Facebook-sida för detta ändamål. Mer information om hur du skapar en privat Facebook-sida finns i [Skapa en Facebook-testsida](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Om du vill välja korrekturmålet ska du utföra samma steg som för huvudmålet: [Markera huvudmålet](#selecting-the-main-target).
+På fliken **[!UICONTROL Target of the proofs]** kan du definiera den Facebook-sida som du vill använda för att testa leveranser innan du skickar ut dem. Vi rekommenderar att du skapar en dedikerad privat Facebook-sida för detta ändamål. Mer information om hur du skapar en privat Facebook-sida finns i [Skapa en Facebook-testsida](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Om du vill välja korrekturmålet ska du utföra samma steg som för huvudmålet: [Välja huvudmålet](#selecting-the-main-target).
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -69,7 +69,7 @@ På fliken **[!UICONTROL Target of the proofs]** kan du definiera den Facebook-s
 
 ## Definiera målgruppen {#defining-the-audience}
 
-Om du vill använda lokala segment för att förfina den typ av publik som har behörighet att visa publikationen rekommenderar vi att du skapar en Facebook-sida per segment (till exempel: Adobe Campaign Paris, Adobe Campaign London, osv.).
+Om du vill använda lokala segment för att förfina den typ av publik som har behörighet att visa publikationen rekommenderar vi att du skapar en Facebook-sida per segment (till exempel: Adobe Campaign Paris, Adobe Campaign London osv.).
 
 Men det är också möjligt att använda målgruppsfiltren som används av Facebook. Fliken **[!UICONTROL Audience]** i **[!UICONTROL Select target window]** innehåller fyra filter:
 
@@ -131,7 +131,7 @@ Ange de olika fälten:
    >1. Ange **[!UICONTROL Namespace]** fältet.
    >1. Ange **[!UICONTROL Mobile Site URL]** fältet: När en användare klickar på publiceringslänken på sin smarttelefon dirigeras de automatiskt av Facebook till den URL som definieras i det här fältet.
    >1. Skapa ditt webbprogram så att Facebook-skärmen anpassas som en funktion av enheten som används (smartphone eller PC).
-   >1. Gå till **[!UICONTROL Link]** fältet för publikationen via Adobe Campaign-konsolen och ange **[!UICONTROL Canvas page]** fältets URL.
+   >1. Gå till **[!UICONTROL Link]** fältet för publikationen via Adobe Campaign-konsolen och ange URL:en för **[!UICONTROL Canvas page]** fältet.
 
 
 1. I **[!UICONTROL Image]** fältet anger du URL-adressen till bilden som ska visas till vänster om publikationen.
@@ -199,9 +199,9 @@ På fliken **[!UICONTROL Preview]** kan du visa hur publikationen återges.
 
 Spårning kan visas i leveransrapporterna och på fliken **[!UICONTROL Edit > Tracking]** för leverans och tjänsten.
 
-Klick på URL:en som finns i leveransen mäts av Adobe Campaign. Antalet klick på **[!UICONTROL Like]** knappen, antalet kommentarer och antalet fans mäts av Facebook.
+Klickningar på URL:en som finns i leveransen mäts av Adobe Campaign. Antalet klick på **[!UICONTROL Like]** knappen, antalet kommentarer och antalet fans mäts av Facebook.
 
-Spårningskonfigurationen är densamma som för en e-postleverans. Mer information finns i [det här avsnittet](../../delivery/using/monitoring-a-delivery.md).
+Spårningskonfigurationen är densamma som för en e-postleverans. Mer information om detta finns i [det här avsnittet](../../delivery/using/monitoring-a-delivery.md).
 
 >[!NOTE]
 >
