@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # IMS-felsökning{#ims-troubleshooting}
 
-Följande felsökningstips hjälper **lokala** kunder att lösa de vanligaste problemen som uppstår när IMS-integreringen används. Kontakta Adobe om du har **värdtjänster** .
+Följande felsökningstips hjälper **lokala** kunder att lösa de vanligaste problemen som uppstår när IMS-integreringen används. Kontakta Adobe för **värdkunder** .
 
 **Externt konto**
 
@@ -65,7 +62,7 @@ Omfattningar som definieras i det externa Campaign-kontot måste vara en delmän
 
 **Återanrops-URL**
 
-URL:en **för** återanrop ska läggas till i listan Tillåt och börja med https://. Kontrollera att **återanrops-URL** är länkad till motsvarande instans. Produktionsinstansen bör till exempel omdirigeras till produktions-URL:en.
+URL:en **för** återanrop ska läggas till tillåtelselista och börja med&quot;https://&quot;. Kontrollera att **återanrops-URL** är länkad till motsvarande instans. Produktionsinstansen bör till exempel omdirigeras till produktions-URL:en.
 
 **Klient-ID och hemlighet**
 
@@ -87,7 +84,7 @@ Starta om servern om några ändringar görs i inställningarna ovan i det exter
 
    Läs föregående steg för att kontrollera konfigurationen av **[!UICONTROL Association Mask]** operatorgrupperna och operatorgrupperna.
 
-* Användaren kan inte komma åt Adobe IDS inloggningssida:
+* Användaren har inte åtkomst till Adobe ID inloggningssida:
 
    Kontrollera scopekonfigurationen i föregående steg.
 
