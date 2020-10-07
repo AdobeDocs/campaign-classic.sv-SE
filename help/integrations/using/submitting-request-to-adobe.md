@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -35,7 +32,7 @@ När IMS är aktiverat kan du begära etablering av People core service/Audience
  <tbody> 
   <tr> 
    <td> <strong>Typ av begäran:</strong><br /> </td> 
-   <td> Konfigurera integrering av AAM/People-bastjänst-Campaign </td> 
+   <td> Konfigurera AAM/kundtjänst - kampanjintegrering </td> 
   </tr> 
   <tr> 
    <td> <strong>Organisationsnamn:</strong><br /> </td> 
@@ -43,15 +40,15 @@ När IMS är aktiverat kan du begära etablering av People core service/Audience
   </tr> 
   <tr> 
    <td> <strong>IMS-organisations-ID</strong><br /> </td> 
-   <td> Ditt IMS-organisations-ID. <br> Du hittar ditt IMS-organisations-ID på Experience Cloud på menyn Administration. Det ingår också när du först ansluter till Adobe Experience Cloud. </td> 
+   <td> Ditt IMS-organisations-ID. <br> Du hittar ditt IMS-organisations-ID på Experience Cloud på menyn Administration. Den medföljer också när du ansluter till Adobe Experience Cloud första gången. </td> 
   </tr> 
   <tr> 
    <td> <strong>Miljö:</strong><br /> </td> 
    <td> Exempel: Produktion </td> 
   </tr> 
   <tr> 
-   <td> <strong>AAM eller People Service</strong><br /> </td> 
-   <td> Exempel: Adobe Audience Manager. Se till att tala om för provisioneringsteamet om du äger Audience Manager-licens eller inte.</td> 
+   <td> <strong>AAM eller persontjänst</strong><br /> </td> 
+   <td> Exempel: Adobe Audience Manager. Var noga med att tala om för provisioneringsteamet om du äger Audience Manager-licens eller inte.</td> 
   </tr> 
   <tr> 
    <td> <strong>Deklarerat ID eller besökar-ID</strong><br /> </td> 
