@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -104,7 +101,7 @@ Om du vill leverera till abonnenterna av en informationstjänst kan du rikta abo
 >
 >Målmappningen måste vara **[!UICONTROL Subscriptions]**.
 
-Markera **[!UICONTROL Subscribers of an information service]** och klicka **[!UICONTROL Next]**.
+Markera **[!UICONTROL Subscribers of an information service]** och klicka på **[!UICONTROL Next]**.
 
 ![](assets/s_ncs_user_wizard_target_is_a_service02.png)
 
@@ -138,11 +135,11 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 * Prenumerera automatiskt på en uppsättning mottagare för den här tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller en direktmarkering med hjälp av musen. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, välj den aktuella tjänsten och starta åtgärden.
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importguiden.
 
-   For more on this, refer to [this section](../../platform/using/importing-data.md#import-wizard).
+   Mer information om detta finns i [det här avsnittet](../../platform/using/importing-data.md#import-wizard).
 
 * Använd ett webbformulär så att mottagarna kan prenumerera på en tjänst.
 
-   For more on this, refer to [this section](../../web/using/about-web-applications.md).
+   Mer information om detta finns i [det här avsnittet](../../web/using/about-web-applications.md).
 
 * Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]** ruta.
 
@@ -156,13 +153,13 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 
 e-postleveranser måste innehålla en länk för att avsluta prenumerationen enligt lag. Mottagarna kan klicka på den här länken för att uppdatera sin profil och uteslutas från målen för framtida leveranser.
 
-Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslistan (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
+Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
 
 Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk (se [Personaliseringsblock](../../delivery/using/personalization-blocks.md)).
 
 Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. För att göra detta klickar du på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markerar den eller de berörda informationstjänsterna och klickar på **[!UICONTROL Delete]**.
 
-Slutligen kan du avbeställa en eller flera mottagare via den aktuella informationstjänsten. Det gör du genom att klicka på tjänstens **[!UICONTROL Subscriptions]** flik, markera mottagarna och klicka på **[!UICONTROL Delete]**.
+Du kan avsluta prenumerationen på en eller flera mottagare via den aktuella informationstjänsten. Det gör du genom att klicka på tjänstens **[!UICONTROL Subscriptions]** flik, markera mottagarna och klicka på **[!UICONTROL Delete]**.
 
 #### Automatisk avprenumeration {#automatic-unsubscription}
 
