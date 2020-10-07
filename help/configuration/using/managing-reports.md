@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 21777423-0c8a-4bb1-b210-972f660648bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 5%
 
 ---
 
 
 # Hantera rapporter{#managing-reports}
 
-Rapporter som baseras på ett schema som är specifikt för Adobe Campaign-standardmottagarna (nm:mottagare eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [Målmappning](../../configuration/using/target-mapping.md) ).
+Rapporter baserade på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:mottagare eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [Målmappning](../../configuration/using/target-mapping.md) ).
 
 Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)för att skapa nya rapporter.
 
