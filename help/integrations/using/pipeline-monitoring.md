@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Pipelinesövervakning {#pipeline-monitoring}
+# Övervaka pipelines {#pipeline-monitoring}
 
 Statuswebbtjänsten ger [!DNL pipelined] information om [!DNL pipelined] processens status.
 
