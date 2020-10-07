@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -27,19 +24,19 @@ ht-degree: 0%
 
 ## Om SpamAssassin {#about-spamassassin}
 
-Adobe Campaign kan konfigureras att fungera med [SpamAssassin](https://spamassassin.apache.org), en tredjepartstjänst som används för skräppostfiltrering. På så sätt kan du poängsätta e-postmeddelanden för att avgöra om ett meddelande löper risk att betraktas som skräppost av de antispam-verktyg som används vid mottagande.
+Adobe Campaign kan konfigureras för att fungera med [SpamAssets](https://spamassassin.apache.org), en tredjepartstjänst som används för skräppostfiltrering. På så sätt kan du poängsätta e-postmeddelanden för att avgöra om ett meddelande löper risk att betraktas som skräppost av de antispam-verktyg som används vid mottagande.
 
 SpamAssassin utnyttjar en mängd olika tekniker för skräppostavkänning, bland annat:
 
 * DNS-baserad och otydlig kontrollsummebaserad skräppostavkänning
 * Bayesisk filtrering
 * Externa program
-* Blocklistor
+* Blockeringslista
 * Onlinedatabaser
 
 >[!NOTE]
 >
->SpamAssassin måste vara installerat och konfigurerat på Adobe Campaign-programservern. For more on this, refer to [this section](../../installation/using/configuring-spamassassin.md).
+>SpamAssassin måste installeras och konfigureras på Adobe Campaign programserver. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-spamassassin.md).
 >
 >Reglerna som styr om ett element är spam eller inte hanteras via SpamAssets och kan redigeras av en administratör med behörighet.
 
@@ -49,7 +46,7 @@ När du har skapat din e-postleverans och definierat innehållet följer du steg
 
 Mer information om hur du skapar och utformar en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md).
 
-1. Go to the **[!UICONTROL Preview]** tab.
+1. Gå till fliken **[!UICONTROL Preview]**.
 1. Välj en mottagare om du vill förhandsgranska leveransen.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -63,7 +60,7 @@ Mer information om hur du skapar och utformar en leverans finns i [det här avsn
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Klicka på **[!UICONTROL More...]** länken bredvid varningen.
-1. Klicka på **[!UICONTROL Anti-spam checking]** fliken.
+1. Klicka på fliken **[!UICONTROL Anti-spam checking]**.  
 1. Gå till **[!UICONTROL Points / Rule / Description]** avsnittet för att se orsaken till risken.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
