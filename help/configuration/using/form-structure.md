@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: f8ae9497-9ca2-4c0c-8dc8-c0563839b036
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2386'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använde
 
 Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme beroende på datatypen.
 
-## Formatering {#formatting}
+## Formatera {#formatting}
 
 Layouten för kontrollerna ser ut som den layout som används i HTML-tabeller, där en kontroll kan delas upp i flera kolumner, element som sammanflätas eller där det tillgängliga utrymmet kan anges. Tänk dock på att du bara kan dela upp området efter proportioner med formateringen. Du kan inte ange fasta dimensioner för ett objekt.
 
@@ -190,7 +190,7 @@ Huvudbehållaren definieras av attributet **type=&quot;anteckningsbok&quot;** . 
 
 >[!NOTE]
 >
->Funktionen **style=&quot;down|up**(som standard)**&quot;** tvingar fram den lodräta placeringen av tabbetiketter under eller ovanför kontrollen. Den här funktionen är valfri.
+>Funktionen **style=&quot;down|up**(som standard)**&quot;** tvingar fram den lodräta placeringen av tabbetiketter under eller ovanför kontrollen. Den här funktionen är valfri.  
 >![](assets/d_ncs_integration_form_exemple7.png)
 >`<container style="down" type="notebook">  ... </container>`
 
@@ -244,7 +244,7 @@ Exempel på villkorssyntax:
 
 #### Aktivera behållare {#enabling-container}
 
-Med den här behållaren kan du aktivera eller inaktivera en uppsättning data från ett dynamiskt villkor. Om du inaktiverar en kontroll kan den inte redigeras. I följande exempel visas aktiveringen av kontroller från värdet i fältet Genus:
+Med den här behållaren kan du aktivera eller inaktivera en uppsättning data från ett dynamiskt villkor. Om du inaktiverar en kontroll kan du inte redigera den. I följande exempel visas aktiveringen av kontroller från värdet i fältet Genus:
 
 ```
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -654,7 +654,7 @@ Indataparametrarna beskrivs för **`<param>`** elementen under **`<soapcall>`** 
 Parametertypen måste anges via **type** -attributet. Möjliga typer är:
 
 * **sträng**: teckensträng
-* **boolesk**:Boolean
+* **boolesk**: Boolean
 * **byte**: 8-bitars heltal
 * **kort**: 16-bitars heltal
 * **long**: 32-bitars heltal
