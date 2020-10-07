@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -137,7 +134,7 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 
 ## Utskick av korrektur {#sending-a-proof}
 
-Adobe rekommenderar starkt att du konfigurerar en leveransvalideringscykel för att upptäcka eventuella fel i meddelandekonfigurationen. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrektur till testmottagarna. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
+För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
 >[!NOTE]
 >
@@ -158,7 +155,7 @@ Följ stegen nedan för att skicka ett bevis:
 1. Starta meddelandeanalys. Se [Analysera leveransen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 1. Nu kan du skicka leveransen (se [Skicka leveransen](../../delivery/using/steps-sending-the-delivery.md)).
 
-   När leveransen är skickad visas korrekturet i leveranslistan och skapas och numreras automatiskt. Den kan redigeras om du vill komma åt dess innehåll och egenskaper. Mer information om detta hittar du på den här [sidan](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   När leveransen är skickad visas korrekturet i leveranslistan och skapas och numreras automatiskt. Den kan redigeras om du vill komma åt dess innehåll och egenskaper. Se denna [sida](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) för mer information om detta.
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -217,7 +214,7 @@ På fliken **[!UICONTROL Rule]** visas en lista med de typologiregler som ska an
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. Mer information om detta hittar du i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. Mer information om detta finns i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
 
 ## Ändra godkännandeläge {#changing-the-approval-mode}
 
