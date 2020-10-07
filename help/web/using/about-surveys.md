@@ -1,7 +1,7 @@
 ---
-title: Om enkäter
-seo-title: Om enkäter
-description: Om enkäter
+title: Om undersökningar
+seo-title: Om undersökningar
+description: Om undersökningar
 seo-description: null
 page-status-flag: never-activated
 uuid: 31a07a48-2ebb-4b51-ae24-382f3ce3f04a
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
 
-# Om enkäter{#about-surveys}
+# Om undersökningar{#about-surveys}
 
 Adobe Campaign innehåller en grafisk modul för att definiera och publicera webbapplikationer. Detta används för att skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
@@ -38,7 +38,7 @@ Hantering av webbprogram beskrivs i [det här avsnittet](../../web/using/about-w
 
 ## Omfattning av kampanjundersökningar {#campaign-surveys-scope}
 
-I Adobe Campaign kan du i allmänhet använda följande funktioner för webbprogram:
+I Adobe Campaign kan du använda följande funktioner i webbprogram:
 
 * Skapa formulär på flera sidor,
 * Hantering av flerspråkiga enkäter med ett integrerat översättningsverktyg
@@ -53,14 +53,14 @@ I Adobe Campaign kan du i allmänhet använda följande funktioner för webbprog
 
 >[!NOTE]
 >
->Alla konfigurationer som är länkade till webbformulär beskrivs i [det här avsnittet](../../web/using/about-web-forms.md). I det här dokumentet finns mer information om koncept och om webbformulärsfunktioner som använder Adobe Campaign.
+>Alla konfigurationer som är länkade till webbformulär beskrivs i [det här avsnittet](../../web/using/about-web-forms.md). Läs det här dokumentet för mer information om koncept och om webbformulärsfunktioner som använder Adobe Campaign.
 
 Modulen för att skapa enkäter (**enkät**) erbjuder följande extrafunktioner:
 
 * Databasens dynamiska tillägg: skapa svar som inte ingår i den ursprungliga datamodellen. Mer information finns i [Lagra insamlade svar](../../web/using/managing-answers.md#storing-collected-answers).
-* Poänghantering. Mer information finns i [Scores Management](../../web/using/managing-answers.md#score-management).
-* Slumpmässig visning av frågor. Mer information finns i [Lägga till frågor](../../web/using/building-a-survey.md#adding-questions).
-* Spårning av svar i realtid. Mer information finns i [Svarsspårning](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Poänghantering. For more on this, refer to [Score management](../../web/using/managing-answers.md#score-management).
+* Slumpmässig visning av frågor. For more on this, refer to [Adding questions](../../web/using/building-a-survey.md#adding-questions).
+* Spårning av svar i realtid. For more on this, refer to [Response tracking](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 * Genererar dedikerade rapporter. Mer information finns i [Rapporter om undersökningar](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med ett reducerat antal redigeringskontroller.
