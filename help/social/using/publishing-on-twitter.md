@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 2dc278ce-477c-493d-8abb-8bbdf2e988a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '944'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ Skapa en ny leverans baserat på **[!UICONTROL Tweet (twitter)]** leveransmallen
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Välja huvudmål {#selecting-the-main-target}
+### Selecting the main target {#selecting-the-main-target}
 
 Markera det eller de konton som du vill skicka tweets till.
 
@@ -47,7 +47,7 @@ Markera det eller de konton som du vill skicka tweets till.
 
    ![](assets/social_twitter_delivery_002.png)
 
-1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka på knappen **[!UICONTROL Add]**.
 
    ![](assets/social_twitter_delivery_006.png)
 
@@ -94,7 +94,7 @@ På fliken **[!UICONTROL Preview]** kan du visa en återgivning av tweeten.
 
 Spårning kan visas i leveransrapporterna och på fliken **[!UICONTROL Edit > Tracking]** för leverans och tjänsten.
 
-Spårningskonfigurationen är densamma som för en e-postleverans. Mer information finns i [det här avsnittet](../../delivery/using/monitoring-a-delivery.md).
+Spårningskonfigurationen är densamma som för en e-postleverans. Mer information om detta finns i [det här avsnittet](../../delivery/using/monitoring-a-delivery.md).
 
 >[!NOTE]
 >
@@ -136,9 +136,9 @@ Arbetsflödet **[!UICONTROL Synchronize Twitter accounts]** (se [Synkronisera Tw
 
 >[!IMPORTANT]
 >
->För att arbetsflödet ska kunna återskapa listan med Twitter-följare måste du markera **[!UICONTROL Synchronize Twitter accounts]** rutan i fönstret Redigera för den tjänst som är länkad till kontot. Mer information finns i: Delegera [skrivåtkomst till Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
+>För att arbetsflödet ska kunna återskapa listan med Twitter-följare måste du markera **[!UICONTROL Synchronize Twitter accounts]** rutan i fönstret Redigera för den tjänst som är länkad till kontot. Mer information finns i: [Delegerar skrivåtkomst till Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
-Adobe Campaign återhämtar följande information för varje följare:
+För varje följare återställer Adobe Campaign följande information:
 
 * **[!UICONTROL Origin]**: det sociala nätverkets namn (**Twitter** i det här fallet)
 * **[!UICONTROL External ID]**: användar-ID
@@ -155,7 +155,7 @@ Följande begränsningar är begränsningar som är inbyggda i Twitter.
 
 * Meddelandet får inte vara längre än 140 tecken.
 * HTML stöds inte.
-* Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att överskrida detta tröskelvärde kan du leverera i flera vågor. Leveranser i påfyllnader konfigureras som e-postleveranser. Mer information finns i [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+* Du kan inte skicka mer än 250 direktmeddelanden per dag. För att undvika att överskrida detta tröskelvärde kan du leverera i flera vågor. Leveranser i påfyllnader konfigureras som e-postleveranser. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Skapa leveransen {#creating-the-delivery-}
 
@@ -163,7 +163,7 @@ Skapa en ny leverans baserat på **[!UICONTROL Tweet (Direct Message)]** leveran
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Välja huvudmål {#selecting-the-main-target-1}
+### Selecting the main target {#selecting-the-main-target-1}
 
 Välj de följare som du vill skicka ditt direktmeddelande till.
 
@@ -171,7 +171,7 @@ Välj de följare som du vill skicka ditt direktmeddelande till.
 
    ![](assets/social_twitter_delivery_016.png)
 
-1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka på knappen **[!UICONTROL Add]**.
 
    ![](assets/social_twitter_delivery_006.png)
 
