@@ -1,7 +1,7 @@
 ---
-title: Definiera målpopulationen
-seo-title: Definiera målpopulationen
-description: Definiera målpopulationen
+title: Definiera målgruppen
+seo-title: Definiera målgruppen
+description: Definiera målgruppen
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Definiera målpopulationen {#defining-the-target-population}
+# Definiera målgruppen {#defining-the-target-population}
 
 ## Om målpopulationer {#about-target-populations}
 
@@ -233,7 +230,7 @@ Du kan använda **[!UICONTROL Seed addresses]** som mål för korrekturet: Med d
 
 Du kan kombinera definitionen för ett specifikt korrekturmål och användningen av dirigerade adresser med hjälp av **[!UICONTROL Specific target and Seed addresses]** alternativet. De relaterade konfigurationerna definieras sedan i två separata underflikar.
 
-## Hantera startvärden och korrektur i ett e-postmeddelande {#seeds-and-proofs-video}
+## How to manage seed and proofs in an email {#seeds-and-proofs-video}
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
@@ -244,4 +241,4 @@ Se även:
 
 * [Om dirigerade adresser](../../delivery/using/about-seed-addresses.md)
 
-* [Användningsfall: välja startadresser enligt villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [Användningsfall: välja fröadresser enligt villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
