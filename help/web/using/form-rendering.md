@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ På fliken **[!UICONTROL Headers/Footers]** kan du ändra den information som vi
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Varje rad i avsnittet **[!UICONTROL Page headers]** och **[!UICONTROL Page footers]** motsvarar en rad på HTML-sidan. Klicka **[!UICONTROL Add]** för att skapa en ny rad.
+Varje rad i avsnittet **[!UICONTROL Page headers]** och **[!UICONTROL Page footers]** motsvarar en rad på HTML-sidan. Click **[!UICONTROL Add]** to create a new line.
 
 Markera en befintlig rad och klicka på **[!UICONTROL Detail]** knappen för att anpassa den.
 
@@ -70,7 +70,7 @@ I **[!UICONTROL Position]** fälten kan du definiera placeringen av element i si
 
 Du kan överlagra formatmallen för varje element i formuläret (inmatningsfält, bilder, alternativknappar etc.).
 
-Använd fliken **[!UICONTROL Advanced]** om du vill göra det.
+To do this, use the **[!UICONTROL Advanced]** tab.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
@@ -83,7 +83,7 @@ Här kan du definiera följande egenskaper:
 * **[!UICONTROL Width]** för zonen: detta kan uttryckas i procent eller i måttenheter, punkter eller pixlar (standardvärde),
 * Maximalt **[!UICONTROL Length]**: Högsta antal tillåtna tecken (för typografierna Text, Number och Password),
 * **[!UICONTROL Lines]**: antal rader för en **[!UICONTROL Multi-line text]** typzon,
-* **[!UICONTROL Style inline]**: I kan du överlagra CSS-formatmallen med ytterligare inställningar. **Dessa separeras med**; tecken enligt exemplet nedan:
+* **[!UICONTROL Style inline]**: I kan du överlagra CSS-formatmallen med ytterligare inställningar. Dessa separeras med **;** tecken enligt exemplet nedan:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -153,7 +153,7 @@ I fältvalsfönstret kan du välja bland följande data:
 
 * Huvudträdet innehåller parametrarna för formulärkontexten. Standardparametrarna är identifieraren (som matchar mottagarens krypterade identifierare), språk och ursprung.
 
-   Mer information finns på den här [sidan](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Se denna [sida](../../web/using/defining-web-forms-properties.md#form-url-parameters) för mer information om detta.
 
 * Underträdet innehåller de inmatningsfält som är infogade i formuläret och lagrade i databasen. **[!UICONTROL Recipients]**
 
@@ -163,7 +163,7 @@ I fältvalsfönstret kan du välja bland följande data:
 
 Mer information finns i användningsexemplet här: [Visa olika alternativ beroende på de valda värdena](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-Du kan också ange villkor för hur formulärsidor ska visas med hjälp av **[!UICONTROL Test]** objektet. Mer information finns på den här [sidan](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+Du kan också ange villkor för hur formulärsidor ska visas med hjälp av **[!UICONTROL Test]** objektet. Se denna [sida](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
 
 ## Importera element från ett befintligt formulär {#importing-elements-from-an-existing-form}
 
