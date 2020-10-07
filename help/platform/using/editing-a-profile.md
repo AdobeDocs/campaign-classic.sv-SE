@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -37,9 +34,9 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 
 >[!CAUTION]
 >
->XML-schemat och formuläret som gäller fälten i profiltabellen nås via noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet. Endast expertanvändare får göra ändringar i dessa scheman.
+>XML-schemat och det formulär som gäller fälten i profiltabellen är tillgängliga via noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet. Endast expertanvändare får göra ändringar i dessa scheman.
 >
->Mer information finns på [den här sidan](../../configuration/using/about-schema-edition.md).
+>For further information, refer to [this page](../../configuration/using/about-schema-edition.md).
 
 ## Fliken Allmänt {#general-tab}
 
@@ -49,7 +46,7 @@ Den här skärmen innehåller alla allmänna data om den valda profilen. Den inn
 
 >[!NOTE]
 >
->När du väljer **[!UICONTROL No longer contact (by any channel)]** alternativet innebär det att profilen finns i blocklistan, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
+>När du väljer **[!UICONTROL No longer contact (by any channel)]** alternativet innebär det att profilen finns på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Se denna [sida](../../delivery/using/understanding-quarantine-management.md) för mer information om detta.
 
 ## Fliken Kontaktinformation {#contact-information-tab}
 
@@ -85,7 +82,7 @@ Den här skärmen innehåller de informationstjänster som profilen har prenumer
 
 Knappen **[!UICONTROL Detail]** visar egenskaperna för den valda prenumerationen. Knappen **[!UICONTROL Add]** används för att lägga till en ny prenumeration manuellt.
 
-For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
+Se denna [sida](../../delivery/using/managing-subscriptions.md) för mer information om detta.
 
 ## Fliken Leveranser {#deliveries-tab}
 
