@@ -10,12 +10,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 100%
 
@@ -104,6 +101,7 @@ Om du har problem med till exempel att de nya logotyperna återspeglas korrekt o
 
    * Windows 7: C:\Users\&lt; Användarnamn >\AppData\Roaming\Neolane\NL_5\
    * Windows XP: C:\Documents and Settings\&lt; Användarnamn >\Application Data\Neolane\NL_5
+
    Här ser du många xml-filer med namnet nlclient-config-&lt; alfanumeriskt värde >.xml.
 
 1. Radera dessa xml-filer och associerade mappar.
