@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 8bcbcd23-9251-412a-ae72-11f15db74112
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 4%
 
 ---
 
 
 # Hantera tidszoner{#managing-time-zones}
 
-Med Adobe Campaign kan ni hantera tidsförskjutningar mellan olika länder som berörs av samma instans. Den använda konfigurationen konfigureras när instansen skapas.
+Med Adobe Campaign kan du hantera tidsförskjutningar mellan olika länder som berörs av samma instans. Den använda konfigurationen konfigureras när instansen skapas.
 
 Mer information om hur du konfigurerar tidszoner i Adobe Campaign finns i det här [avsnittet](../../installation/using/time-zone-management.md).
 
@@ -30,7 +30,7 @@ I ett arbetsflöde kan du anpassa scheman för aktivitetskörning och länka en 
 
 ## Körningsplanering {#execution-scheduling}
 
-Du kan schemalägga körningen av aktiviteter med schemaläggaren (se [Schemaläggaren](../../workflow/using/scheduler.md)). Du kan också använda de schemaläggningsalternativ som är tillgängliga i aktiviteterna som erbjuder den här funktionen. De här aktiviteterna erbjuder en **[!UICONTROL Schedule]** flik: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]** etc.
+Du kan schemalägga körningen av aktiviteter med schemaläggaren (se [Schemaläggaren](../../workflow/using/scheduler.md)). Du kan också använda de schemaläggningsalternativ som är tillgängliga i aktiviteterna som erbjuder den här funktionen. De här aktiviteterna erbjuder en **[!UICONTROL Schedule]** flik: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]** osv.
 
 För alla schemalagda aktiviteter, dvs. alla aktiviteter med schemaläggningsalternativ, kan du välja vilken tidszon som ska användas. Tidszonen väljs via fliken **[!UICONTROL Advanced]** för den aktuella aktiviteten:
 
