@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '623'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -54,7 +51,7 @@ Spam försöker dölja sin riktiga identitet och gör därför sina servrar svå
 
 ## Skicka till giltiga adresser {#valid-addresses}
 
-Spammare använder ofta adressgeneratorer som bygger på listor över frekventa namn och förnamn. Dessutom bearbetar de sällan tekniska meddelanden som skickas tillbaka av e-postservrar. En hög frekvens med ogiltiga adresser tolkas ofta som ett tecken på skräppost. Dubbla anmälningsmekanismer och effektiv hantering av tekniska studentmeddelanden gör det möjligt att undvika detta.
+Spammare använder ofta adressgeneratorer som bygger på listor över frekventa namn och förnamn. Dessutom bearbetar de sällan tekniska meddelanden som skickas tillbaka från e-postservrar. En hög frekvens med ogiltiga adresser tolkas ofta som ett tecken på skräppost. Dubbla anmälningsmekanismer och effektiv hantering av tekniska studentmeddelanden gör det möjligt att undvika detta.
 
 ## Minska antalet klagomål och avhoppsfrekvens {#reduce-complaint-rates}
 
@@ -114,7 +111,7 @@ Lär dig de bästa sätten att leverera med Adobe Campaign. Använd länkarna ne
     </a>
     </div>
     <p>
-    <em>Förbättra ert rykte</em>
+    <em>Förbättra ryktet</em>
     <p>
   </td>
 </tr>
