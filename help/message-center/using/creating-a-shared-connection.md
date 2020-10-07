@@ -11,14 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,8 +24,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->* Schematillägg som görs för scheman som används av [meddelandecentrets tekniska arbetsflöden](../../message-center/using/technical-workflows.md) för antingen kontroll- eller körningsinstanser måste dupliceras i de andra instanser som används av transaktionsmeddelandemodulen i Adobe Campaign.
+>* Schematillägg som görs för scheman som används av [meddelandecentrets tekniska arbetsflöden](../../message-center/using/technical-workflows.md) på antingen kontroll- eller körningsinstanser måste dupliceras på de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
 >* Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
+
 >
 
 
@@ -43,7 +41,7 @@ Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är l�
 
 Så här skapar du ett externt konto av instanstypen körning:
 
-1. Gå till **[!UICONTROL Administration > Platform > External accounts]** mappen.
+1. Go to the **[!UICONTROL Administration > Platform > External accounts]** folder.
 1. Välj ett av de externa konton av körningsinstanstyp som finns i Adobe Campaign, högerklicka och välj **[!UICONTROL Duplicate]** .
 
    ![](assets/messagecenter_create_extaccount_001.png)
@@ -68,7 +66,7 @@ Så här skapar du ett externt konto av instanstypen körning:
 
    >[!NOTE]
    >
-   >Du kan undvika att ange ett lösenord varje gång du loggar in på instansen genom att ange IP-adressen för kontrollinstansen i körningsinstansen. Mer information finns i [Körningsinstans](#execution-instance).
+   >Du kan undvika att ange ett lösenord varje gång du loggar in på instansen genom att ange IP-adressen för kontrollinstansen i körningsinstansen. For more on this, refer to [Execution instance](#execution-instance).
 
 1. Ange den återställningsmetod som ska användas av körningsinstansen.
 
@@ -100,7 +98,7 @@ Så här skapar du ett externt konto av instanstypen körning:
 
 Om du vill att kontrollinstansen ska kunna ansluta till körningsinstansen utan att behöva ange ett lösenord anger du bara IP-adressen för kontrollinstansen i avsnittet **Meddelandecentrets** åtkomstbehörighet. Tomma lösenord tillåts dock inte som standard.
 
-Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>` typanslutningar. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>` typanslutningar. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 >[!NOTE]
 >
@@ -155,7 +153,7 @@ Om du vill använda flera kontrollinstanser måste den här konfigurationen utf�
 
    >[!NOTE]
    >
-   >**mc1** - och **mc2** -operatorer måste ha **[!UICONTROL Message Center execution]** rättigheter och kan inte komma åt Adobe Campaign-klientkonsolen. En operator måste alltid länkas till en säkerhetszon. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >**mc1** - och **mc2** -operatorer måste ha **[!UICONTROL Message Center execution]** rättigheter och de kan inte komma åt Adobe Campaign klientkonsol. En operator måste alltid länkas till en säkerhetszon. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 1. För varje operator markerar du **[!UICONTROL Restrict to information found in sub-folders of]** rutan och väljer lämplig mapp (**Mapp 1** för operatorn **mc1** och **Mapp 2** för operatorn **mc2** ).
 
