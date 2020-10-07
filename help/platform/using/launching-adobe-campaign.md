@@ -1,7 +1,7 @@
 ---
-title: Startar Adobe Campaign
-seo-title: Startar Adobe Campaign
-description: Startar Adobe Campaign
+title: Starta Adobe Campaign
+seo-title: Starta Adobe Campaign
+description: Starta Adobe Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: c1c5bb0d-ae8e-4b0e-ab39-8b2291162557
@@ -15,19 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+source-git-commit: 28f56534a57e675e42a417acfbf9b1a3053250a8
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
+source-wordcount: '485'
+ht-degree: 7%
 
 ---
 
 
-# Startar Adobe Campaign{#launching-adobe-campaign}
+# Starta Adobe Campaign{#launching-adobe-campaign}
 
 Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar. Lär dig hur du hämtar och konfigurerar klientkonsolen på [den här sidan](../../installation/using/installing-the-client-console.md).
 
-## Startar Adobe Campaign {#starting-adobe-campaign}
+## Starting Adobe Campaign {#starting-adobe-campaign}
 
 Du kan starta Adobe Campaign genom att välja **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
@@ -37,7 +37,7 @@ I klientkonsolens anslutningsfönster kan du välja eller konfigurera befintliga
 
 ## Ansluta till Adobe Campaign {#connecting-to-adobe-campaign}
 
-Du kan ansluta till Adobe Campaign med Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
+Du kan ansluta till Adobe Campaign med din Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
 
 Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 
@@ -59,7 +59,7 @@ Du kommer åt inställningarna för serveranslutningen via länken ovanför inda
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Klicka på i **[!UICONTROL Connections]** fönstret **[!UICONTROL Add > Connection]**.
+In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
 
 ![](assets/s_ncs_user_add_connexion.png)
 
@@ -69,13 +69,13 @@ Du måste sedan definiera anslutningsinställningarna. Så här gör du:
 
 1. Lägg till adressen till programservern i **[!UICONTROL URL]** fältet. Kontakta administratören om du inte känner till anslutnings-URL:en.
 
-1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** att operatorerna har anslutit till konsolen med hjälp av Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
+1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** att operatorerna har anslutit till konsolen med sin Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
 
 1. Klicka **[!UICONTROL OK]** för att validera.
 
 ## Operatörer och behörigheter {#operators-and-permissions}
 
-Identifierare och lösenord för operatorer med åtkomst till programvaran och deras respektive behörigheter definieras av systemadministratören i Adobe Campaign i noden **[!UICONTROL Administration > Access management > Operators]** i Adobe Campaign-trädet.
+Identifierare och lösenord för operatorer med åtkomst till programvaran och deras respektive behörigheter definieras av din Adobe Campaign-systemadministratör i noden **[!UICONTROL Administration > Access management > Operators]** i Adobe Campaign-trädet.
 
 Den här funktionen beskrivs i avsnittet [Åtkomsthantering](../../platform/using/access-management.md) .
 
@@ -93,11 +93,23 @@ Om du vill koppla från Adobe Campaign använder du den första ikonen i ikonfä
 
 På **[!UICONTROL Help > About...]** menyn kommer du åt följande information:
 
-* **versionsnummer** ,
-* **build** number,
-* en länk för att kontakta supporten för Adobe Campaign.
+* **versionsnummer**
+* **build** number
+* en länk till att kontakta Adobe kundtjänst
+* länkar till Adobe sekretesspolicy, användarvillkor och cookies
 
-   >[!CAUTION]
-   >
-   >När ni kontaktar Adobes supportteam måste ni ange versionsnumret och build-numret för er Campaign-klientkonsol och applikationsserver.
+![](assets/about-acc.png)
 
+När ni kontaktar Adobe Support-teamet måste ni ange versionsnumret och build-numret för er Campaign-klientkonsol och applikationsserver.
+
+Om du använder [Campaign Gold Standard-versionen](../../rn/using/gold-standard.md)måste du också dela SHA/1-tecknen som visas i **[!UICONTROL About]** rutan. Exempel: för Gold **Standard 10 visar build-numret** build 9032@efd8a94 ****, vilket visas nedan:
+
+![](assets/about-acc-gs.png)
+
+Läs mer om Gold Standard [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
+
+**Relaterade ämnen**:
+
+* [Alternativ för kampanjsupport](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Programvarudistribution](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Experience Cloud support- och expertsessioner](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
