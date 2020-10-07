@@ -11,34 +11,34 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
 
 # Konfigurera integreringen{#configuring-the-integration}
 
-## Konfigurera i Adobe Campaign {#configuring-in-adobe-campaign}
+## Configuring in Adobe Campaign {#configuring-in-adobe-campaign}
 
 Om du vill använda dessa två lösningar tillsammans måste du konfigurera dem så att de ansluter till varandra.
 
-Följ stegen nedan för att starta konfigurationen i Adobe Campaign:
+Så här startar du konfigurationen i Adobe Campaign:
 
-1. [Installera AEM-integreringspaketet i Adobe Campaign](#install-the-aem-integration-package-in-adobe-campaign)
+1. [Installera AEM integreringspaket i Adobe Campaign](#install-the-aem-integration-package-in-adobe-campaign)
 1. [Konfigurera det externa kontot](#configure-the-external-account)
-1. [Konfigurera AEM-resursfiltrering](#configure-aem-resources-filtering)
+1. [Konfigurera AEM](#configure-aem-resources-filtering)
 
 För avancerade konfigurationer som hantering av personaliseringsfält och -block. Läs Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
 
-### Installera AEM-integreringspaketet i Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
+### Installera AEM integreringspaket i Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
 Du måste först installera **[!UICONTROL AEM integration]** paketet.
 
-1. I Adobe Campaign-instansen väljer du **[!UICONTROL Tools]** i det övre verktygsfältet.
+1. I din Adobe Campaign-instans väljer du **[!UICONTROL Tools]** i det övre verktygsfältet.
 1. Välj **[!UICONTROL Tools > Advanced > Import package...]**.
 
    ![](assets/aem_config_1.png)
@@ -50,7 +50,7 @@ Du måste först installera **[!UICONTROL AEM integration]** paketet.
 
 1. I nästa fönster klickar du på **[!UICONTROL Start]** knappen för att starta installationen av paketet. Stäng fönstret när installationen är klar.
 
-### Konfigurera säkerhetszonen för AEM-operatorn {#configure-the-security-zone-for-aem-operator}
+### Konfigurera säkerhetszonen för AEM {#configure-the-security-zone-for-aem-operator}
 
 Paketet **[!UICONTROL AEM integration]** anger **[!UICONTROL aemserver]** operatorn i Campaign. Den här operatorn används för att ansluta Adobe Experience Manager-servern till Adobe Campaign.
 
@@ -58,32 +58,33 @@ Du måste konfigurera en säkerhetszon så att den här operatorn kan ansluta ti
 
 >[!CAUTION]
 >
->Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i [installationshandboken](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+>Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. For more on this, refer to the Installation [guide](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Om Adobe är värd för din Campaign-instans kontaktar du Adobes supportteam. Om du använder Campaign lokalt följer du stegen nedan:
+Om din Campaign-instans hanteras av Adobe kontaktar du Adobe support. Om du använder Campaign lokalt följer du stegen nedan:
 
 1. Öppna konfigurationsfilen **serverConf.xml** .
 1. Få åtkomst till attributet **allowUserPassword** i den markerade säkerhetszonen och ange det till **true**.
 
-   På så sätt kan Adobe Experience Manager ansluta Adobe Campaign via inloggning/lösenord.
+   Detta gör att Adobe Experience Manager kan ansluta Adobe Campaign via inloggning/lösenord.
 
 ### Konfigurera det externa kontot {#configure-the-external-account}
 
-Paketet skapade det externa kontot för Adobe Experience Cloud **[!UICONTROL AEM integration]** . Nu måste du konfigurera den för att ansluta till din Adobe Experience Manager-instans.
+Paketet skapade det externa kontot för Adobe Experience Cloud. **[!UICONTROL AEM integration]** Nu måste du konfigurera den för att ansluta till din Adobe Experience Manager-instans.
 
-Följ stegen nedan för att konfigurera det externa AEM-kontot:
+Följ stegen nedan för att konfigurera det AEM externa kontot:
 
-1. Klicka på **[!UICONTROL Explorer]** knappen.
+1. Klicka på knappen **[!UICONTROL Explorer]**.
 
    ![](assets/aem_config_3.png)
 
 1. Välj **[!UICONTROL Administration > Platform > External accounts]**.
-1. Välj i **[!UICONTROL External account]** listan **[!UICONTROL AEM instance]**.
-1. Ange parametrarna för AEM-redigeringsinstansen:
+1. From the **[!UICONTROL External account]** list, select **[!UICONTROL AEM instance]**.
+1. Ange parametrarna för AEM:
 
    * **[!UICONTROL Server]**
    * **[!UICONTROL Account]**
    * **[!UICONTROL Password]**
+
    >[!NOTE]
    >
    >Se till att din **[!UICONTROL Server]** adress inte avslutas med ett avslutande snedstreck.
@@ -91,17 +92,17 @@ Följ stegen nedan för att konfigurera det externa AEM-kontot:
    ![](assets/aem_config_4.png)
 
 1. Markera **[!UICONTROL Enabled]** rutan.
-1. Klicka på **[!UICONTROL Save]** knappen.
+1. Klicka på knappen **[!UICONTROL Save]**.
 
-### Konfigurera AEM-resursfiltrering {#configure-aem-resources-filtering}
+### Konfigurera AEM {#configure-aem-resources-filtering}
 
-Alternativet **AEMResourceTypeFilter** används för att filtrera typer av Experience Manager-resurser som kan användas i Adobe Campaign. Detta gör att Adobe Campaign kan hämta Experience Manager-innehåll som är specifikt utformat för att endast användas i Adobe Campaign.
+Alternativet **AEMResourceTypeFilter** används för att filtrera typer av Experience Manager-resurser som kan användas i Adobe Campaign. På så sätt kan Adobe Campaign hämta innehåll i Experience Manager som är särskilt utformat för att endast användas i Adobe Campaign.
 
 Så här kontrollerar du om **[!UICONTROL AEMResourceTypeFilter]** alternativet är konfigurerat:
 
-1. Klicka på **[!UICONTROL Explorer]** knappen.
+1. Klicka på knappen **[!UICONTROL Explorer]**.
 1. Välj **[!UICONTROL Administration > Platform > Options]**.
-1. Välj i **[!UICONTROL Options]** listan **[!UICONTROL AEMResourceTypeFilter]**.
+1. From the **[!UICONTROL Options]** list, select **[!UICONTROL AEMResourceTypeFilter]**.
 1. I **[!UICONTROL Value (text)]** fältet ska sökvägen vara följande:
 
    ```
@@ -120,19 +121,19 @@ Så här kontrollerar du om **[!UICONTROL AEMResourceTypeFilter]** alternativet 
 
 Så här startar du konfigurationen i Adobe Experience Manager:
 
-1. Konfigurera **replikeringen** som ska replikeras från AEM-redigeringsinstansen till AEM-publiceringsinstansen.
+1. Konfigurera **replikeringen** som ska replikeras från AEM till den AEM publiceringsinstansen.
 
    Mer information om hur du konfigurerar replikering finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
 
-1. Installera integreringen **FeaturePack** på redigeringsinstansen och replikera sedan installationen på publiceringsinstansen. (Endast för AEM-versionerna 5.6.1 och 6.0).
+1. Installera integreringen **FeaturePack** på redigeringsinstansen och replikera sedan installationen på publiceringsinstansen. (Endast för AEM version 5.6.1 och 6.0).
 
    Mer information om hur du installerar FeaturePack finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/aem-previous-versions.html).
 
-1. Koppla Adobe Experience Manager till Adobe Campaign genom att konfigurera en dedikerad **molntjänst**.
+1. Anslut Adobe Experience Manager till Adobe Campaign genom att konfigurera en dedikerad **Cloud Service**.
 
-   Om du vill veta hur du ansluter båda lösningarna via molntjänster kan du läsa [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) för Adobe Experience Manager.
+   Om du vill veta hur du kopplar ihop båda lösningarna via Cloud Services kan du läsa Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. Konfigurera **tjänsten** Externalizer.
 
-   Mer information om hur du konfigurerar programmet finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
+   Mer information om hur du konfigurerar den finns i Adobe Experience Manager- [dokumentationen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
 
