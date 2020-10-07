@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ## Programunderhåll {#application-maintenance}
 
-Adobe Campaign har ett inbyggt arbetsflöde som gör att du kan schemalägga vissa databasunderhållsuppgifter: arbetsflödet för **databasrensning**. Det här arbetsflödet utför följande uppgifter:
+Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa underhållsåtgärder för databaser: arbetsflödet för **databasrensning**. Det här arbetsflödet utför följande uppgifter:
 
 * Borttagning av utgångna poster.
 * Borttagning av överblivna poster och återinitiering av status för utgångna objekt.
@@ -39,7 +39,7 @@ Adobe Campaign har ett inbyggt arbetsflöde som gör att du kan schemalägga vis
 Arbetsflödet för databasrensning innehåller inte något databasunderhållsverktyg: det är upp till dig att organisera underhållet. Om du vill göra det kan du antingen:
 
 * samarbeta med databasadministratören för att konfigurera databasunderhåll med verktyg från tredje part,
-* använda arbetsflödesmotorn i Adobe Campaign för att schemalägga och spåra dessa underhållsaktiviteter.
+* använda Adobe Campaign arbetsflödesmotor för att schemalägga och spåra underhållsaktiviteterna.
 
 Dessa underhållsförfaranden skall utföras regelbundet och skall omfatta följande:
 
@@ -48,7 +48,7 @@ Dessa underhållsförfaranden skall utföras regelbundet och skall omfatta följ
 
 ### Underhållsschema {#maintenance-schedule}
 
-Du måste hitta lämpliga platser för att utföra dessa underhållsaktiviteter. De kan påverka databasens prestanda avsevärt när programmet körs eller till och med blockeras (på grund av låsning).
+Du måste hitta rätt kortplatser för att kunna utföra dessa underhållsaktiviteter. De kan påverka databasens prestanda avsevärt när programmet körs eller till och med blockeras (på grund av låsning).
 
 Dessa uppgifter körs vanligtvis en gång i veckan under en period med låg aktivitet som inte kolliderar med säkerhetskopiering, datainläsning eller aggregeringsberäkning. Vissa system som är mycket efterfrågade kräver oftare underhåll.
 
