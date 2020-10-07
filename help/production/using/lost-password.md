@@ -1,7 +1,7 @@
 ---
-title: Lösenordet har försvunnit
-seo-title: Lösenordet har försvunnit
-description: Lösenordet har försvunnit
+title: Lösenordet har tappats bort
+seo-title: Lösenordet har tappats bort
+description: Lösenordet har tappats bort
 seo-description: null
 page-status-flag: never-activated
 uuid: caac68bf-abdc-45da-9697-b689ebd37002
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: d52eeadc-19c6-4d48-995a-1c1f2ca3b5ec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 5%
 
 ---
 
 
-# Lösenordet har försvunnit{#lost-password}
+# Lösenordet har tappats bort{#lost-password}
 
 Du kan ändra eller återställa ett förlorat lösenord.
 
@@ -28,7 +28,7 @@ Det finns två möjliga scenarier:
 
 * Lösenord som har gått förlorat av en Adobe Campaign-operator.
 
-   I så fall kan du ändra lösenordet för den berörda operatorn. Om du vill göra det ansluter du via en operator med administratörsbehörighet, högerklickar på en operator, väljer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och anger operatörens nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter.
+   I så fall kan du ändra lösenordet för den berörda operatorn. Det gör du genom att ansluta via en operator med administratörsbehörighet, högerklicka på en operator, välja **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och ange operatörens nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter.
 
    ![](assets/operator-passwd.png)
 
