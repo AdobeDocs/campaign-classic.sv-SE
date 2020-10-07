@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: f324afa5-304c-470e-a592-290f76a11ccb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
 
    ![](assets/deliv_coup_01.png)
 
-1. Klicka på **[!UICONTROL New]** knappen.
+1. Klicka på knappen **[!UICONTROL New]**.
 1. Ange namnet på kupongen i **[!UICONTROL Label]** fältet. En unik kod har angetts automatiskt i **[!UICONTROL Coupon code]**. Du kan behålla koden eller ange en ny.
 
    ![](assets/deliv_coup_02.png)
@@ -58,6 +58,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
    1. När du väljer Individual visas en ny flik, Kuponger, längst ned till vänster. Gå till **[!UICONTROL Coupons]** fliken och klicka på **[!UICONTROL Add]**.
    1. Ange en unik kod för den enskilda kupongen när du uppmanas till det i popup-fönstret.
    1. Klicka **[!UICONTROL Save]** för att generera kupongen.
+
    Mer information om fliken Kuponger finns i [Konfigurera enskilda kuponger](#configuring-individual-coupons).
 
    >[!NOTE]
@@ -82,7 +83,7 @@ Värden för **[!UICONTROL status]**, **[!UICONTROL channel]** och **[!UICONTROL
 I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md). Du kan också lägga till en kupong i en leverans i ett arbetsflöde.
 
 1. Gå till **[!UICONTROL Campaigns]** och välj **[!UICONTROL Deliveries]**.
-1. Klicka **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**.
 
    ![](assets/deliv_coup_04.png)
 
@@ -105,7 +106,7 @@ I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om 
 
    ![](assets/deliv_coup_08.png)
 
-1. Klicka på meddelandet och välj var du vill placera kupongen.
+1. Klicka på meddelandet för att välja var du vill placera kupongen.
 
    ![](assets/deliv_coup_09.png)
 
@@ -134,7 +135,7 @@ I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om 
 
    ![](assets/deliv_coup_15.png)
 
-1. Klicka **[!UICONTROL Analyze]**. Om analysloggen bekräftar att det finns tillräckligt med kuponger för alla mottagare klickar du på **[!UICONTROL Confirm delivery]** för att skicka den.
+1. Klicka på **[!UICONTROL Analyze]**. Om analysloggen bekräftar att det finns tillräckligt med kuponger för alla mottagare klickar du på **[!UICONTROL Confirm delivery]** för att skicka den.
 
    ![](assets/deliv_coup_16.png)
 
@@ -160,8 +161,8 @@ Så här bekräftar du att leveransen lyckades:
 Leveransanalysen avbryts om det finns färre kuponger än meddelanden. I så fall kan du importera fler kuponger eller begränsa antalet meddelanden. Följ instruktionerna nedan om du vill begränsa antalet meddelanden.
 
 1. Gå till e-postleveransfönstret.
-1. Klicka **[!UICONTROL To]**.
-1. Gå **[!UICONTROL Select target]** till **[!UICONTROL Exclusions]** fliken.
+1. Klicka på **[!UICONTROL To]**.
+1. In **[!UICONTROL Select target]**, go to the **[!UICONTROL Exclusions]** tab.
 
    ![](assets/deliv_coup_18.png)
 
