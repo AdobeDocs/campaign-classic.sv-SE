@@ -1,7 +1,7 @@
 ---
-title: Värdmodell
-seo-title: Värdmodell
-description: Värdmodell
+title: Värdbaserad modell
+seo-title: Värdbaserad modell
+description: Värdbaserad modell
 seo-description: null
 page-status-flag: never-activated
 uuid: b8db3c93-ccba-465a-8b75-921d7266c4e4
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 
-# Värdmodell{#hosted-model}
+# Värdbaserad modell{#hosted-model}
 
 Här följer installations- och konfigurationsstegen som gäller för värdbaserade modeller:
 
