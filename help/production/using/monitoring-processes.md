@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 0%
@@ -82,7 +79,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    När indikatorerna **[!UICONTROL Warning]** och **[!UICONTROL Alert]** indikatorerna visas kan du lösa problemet genom att öka utbytesfilens storlek i de avancerade Windows-inställningarna.
 
-* **[!UICONTROL Disk XXX]** : information om maskinläsare.
+* **[!UICONTROL Disk XXX]** : Information om maskinläsare.
 
    **[!UICONTROL Current value]** : diskutrymme som faktiskt används.
 
@@ -292,7 +289,7 @@ Listan över indikatorer för den här rapporten visas under diagrammet.
 
    * Kaki-kurva: kön med fördröjda överföringar. Dessa meddelanden kan inte returneras för tillfället på grund av begränsning eller på grund av att det inte finns någon anslutning till målet. Försök görs var femte, tionde, tionde, 20:e, 40:e, 2:a minut, osv. för den definierade **MaxAgeSec** -tiden innan den överges.
 
-1. I den här tabellen visas en detalj av övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
+1. I den här tabellen visas en detalj i övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
 1. SMTP-anslutningar öppnas eller öppnas.
 1. Uppskattning av antalet **datorer**.
 
@@ -338,7 +335,7 @@ Klicka på en PublicId-identifierare för att visa mer information.
 
 >[!NOTE]
 >
->Procentandelen fel representeras av två diagram. Den första är en vågrät förloppsindikator på en svart bakgrund. Det andra diagrammet är kronologiskt. Den markerade perioden delas in i tolv tidsintervall, som alla representeras av en lodrät förloppsindikator. I båda representationerna är stapeln svart om inget fel har identifierats. Färgen på stapeln beror på hur många procent fel som har inträffat (gult, orange och slutligen rött). Färggrått innebär att ingen signifikant datavolym har hittats. Du kan visa den exakta procentandelen fel genom att placera markören i diagrammet.
+>Procentandelen fel representeras av två diagram. Den första är en vågrät förloppsindikator på en svart bakgrund. Det andra diagrammet är kronologiskt. Den markerade perioden är uppdelad i tolv tidsintervall, där vart och ett representeras av en lodrät förloppsindikator. I båda representationerna är stapeln svart om inget fel har identifierats. Färgen på stapeln beror på hur många procent fel som har inträffat (gult, orange och slutligen rött). Färggrått innebär att ingen signifikant datavolym har hittats. Du kan visa den exakta procentandelen fel genom att placera markören i diagrammet.
 
 >[!NOTE]
 >
@@ -359,7 +356,7 @@ När arbetsflödet har startats var 25:e månad får din faktureringsoperatör f
 Följande mätvärden finns för att spåra dina leveranser:
 
 * **[!UICONTROL Start date]** : Startdatum för leveransen. Observera att det kan vara tidigare än rapportens &quot;från&quot;-datum.
-* **[!UICONTROL Label]** : Leveransens etikett. Leveranser som har färre än 100 meddelanden att skicka anses vara för små och därmed aggregerade efter startdatum. I så fall visas antalet aggregat i etiketten, t.ex. [aggregation av 3 små leveranser].
+* **[!UICONTROL Label]** : Leveransens etikett. Leveranser som har färre än 100 meddelanden att skicka anses vara för små och därmed aggregerade efter startdatum. I så fall visas antalet aggregat i etiketten, t.ex. [aggregering av tre små leveranser].
 * **[!UICONTROL Total volume]** : Total volym överförda byte för leveransen.
 * **[!UICONTROL Avg volume]** : Genomsnittlig volym överförda byte. Detta är resultatet av följande formel **(total volym/meddelanden)**, som är beräkningsgrunden för **[!UICONTROL Multiplier]** mätvärdet.
 * **[!UICONTROL Messages]** : Antal skickade meddelanden. Detta inkluderar både meddelanden som har skickats och försök igen (efter att ett studsmeddelande har tagits emot från den kontaktade servern).
@@ -444,7 +441,7 @@ Adobe Campaign möjliggör olika distributionskonfigurationer (mer information f
  <thead> 
   <tr> 
    <th> Distributionstyp </th> 
-   <th> Övervaka </th> 
+   <th> Övervakning </th> 
   </tr> 
  </thead> 
  <tbody> 
