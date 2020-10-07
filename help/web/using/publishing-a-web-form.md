@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: f4322902-c72d-4443-9c30-09add4c615a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,7 @@ Följande identifieringsmetoder är möjliga:
 
    >[!CAUTION]
    >
-   >Data i de markerade fälten är inte krypterade. Den får inte tillhandahållas i krypterad form eftersom Adobe Campaign inte kan dekryptera den om **[!UICONTROL Field list]** alternativet är valt.
+   >Data i de markerade fälten är inte krypterade. Den får inte tillhandahållas i krypterad form eftersom Adobe Campaign inte kan dekryptera den om du väljer **[!UICONTROL Field list]** alternativet.
 
    I följande exempel baseras förinläsningen av profiler på e-postadressen.
 
@@ -164,5 +164,5 @@ Du kan bearbeta svarsloggarna i frågor, till exempel för att endast rikta sig 
 
 >[!NOTE]
 >
->Om du vill ha en fullständig spårning av svaren kan du exportera svaren och visa eller skapa dedikerade rapporter med den valfria **undersökningsmodulen** . Mer information finns i [det här avsnittet](../../web/using/about-surveys.md).
+>Om du vill ha en fullständig spårning av svaren kan du exportera svaren och visa eller skapa dedikerade rapporter med den valfria **undersökningsmodulen** . Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).
 
