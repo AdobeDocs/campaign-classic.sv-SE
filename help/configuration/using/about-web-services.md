@@ -11,14 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 65919173-3ce0-4d98-936b-f4581df536ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -33,7 +30,7 @@ Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det
 
 >[!IMPORTANT]
 >
->Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. For more on this, refer to [this page](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Se denna [sida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) för mer information om detta.\
 >En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Förutsättningar {#prerequisites}
