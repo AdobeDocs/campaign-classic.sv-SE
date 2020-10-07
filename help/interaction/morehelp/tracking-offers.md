@@ -1,18 +1,18 @@
 ---
 title: Spåra erbjudanden
 seo-title: Spåra erbjudanden
-description: 'null'
-seo-description: 'null'
+description: noll
+seo-description: noll
 page-status-flag: never-activated
 uuid: 8a2511cd-8a46-405e-98ce-ce8fcf802ac6
 contentOwner: sauviat
 discoiquuid: 7def58cd-f3b1-4789-ab9b-df08027ec1b2
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '8'
+ht-degree: 100%
 
 ---
 
