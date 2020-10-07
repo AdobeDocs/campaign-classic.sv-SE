@@ -1,7 +1,7 @@
 ---
-title: Message Center (Control)
-seo-title: Message Center (Control)
-description: Message Center (Control)
+title: Meddelandecenter (kontroll)
+seo-title: Meddelandecenter (kontroll)
+description: Meddelandecenter (kontroll)
 seo-description: null
 page-status-flag: never-activated
 uuid: bdb3610b-a893-4e60-a9f7-f21d90b66919
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 69e3e99f-d392-4316-926c-3c3c675415ad
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 8%
 
 ---
 
 
-# Message Center (Control){#message-center-control}
+# Meddelandecenter (kontroll){#message-center-control}
 
-Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras som standard med **Message Center - Control** -modulen. Mer information om den här modulen finns i det här [avsnittet](../../message-center/using/about-transactional-messaging.md).
+Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras som standard med **Message Center - Control** -modulen. For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
 Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Meddelandecenter finns på [den här sidan](../../message-center/using/technical-workflows.md).
 
