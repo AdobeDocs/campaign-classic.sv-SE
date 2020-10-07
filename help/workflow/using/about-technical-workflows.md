@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 38%
 
 ---
 
 
 # Om tekniska arbetsflöden{#about-technical-workflows}
 
-De arbetsflöden som beskrivs i det här avsnittet installeras med de olika inbyggda Adobe Campaign-paketen. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet. Som standard är de tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggda Adobe Campaign-paket. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet. Som standard är de tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i det [dediker
 
 Detta avsnitt innehåller information om tekniska arbetsflöden som omfattar följande paket:
 
-* [Leveranser](../../workflow/using/deliveries.md)
+* [Leveranser ](../../workflow/using/deliveries.md)
 * [Campaign](../../workflow/using/campaign.md)
 * [Webbanalys](../../workflow/using/web-analytics.md)
 * [Distribuerad marknadsföring](../../workflow/using/distributed-marketing.md)
@@ -40,13 +40,13 @@ Detta avsnitt innehåller information om tekniska arbetsflöden som omfattar fö
 * [Inkorgsåtergivning (IR)](../../workflow/using/inbox-rendering.md)
 * [Interaktion](../../workflow/using/interaction.md)
 * [Kontroll över erbjudandemotor](../../workflow/using/control-of-offer-engine.md)
-* [Message Center (Control)](../../workflow/using/message-center--control-.md)
-* [Meddelandecenter (körning)](../../workflow/using/message-center--execution-.md)
-* [Mobilappskanal](../../workflow/using/mobile-app-channel.md)
-* [LINJEKanal](../../workflow/using/line-channel.md)
-* [Marknadsföringsresurser](../../workflow/using/marketing-resources--mrm-.md)
+* [Meddelandecenter (kontroll)](../../workflow/using/message-center--control-.md)
+* [Meddelandecenter (köra)](../../workflow/using/message-center--execution-.md)
+* [Mobilappskanalen](../../workflow/using/mobile-app-channel.md)
+* [LINE-kanal](../../workflow/using/line-channel.md)
+* [Marknadsföringsresurser (MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [Social marknadsföring](../../workflow/using/social-marketing.md)
-* [Integrering med Adobe Experience Cloud-lösningar](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Skyddsförordningen för personuppgifter](../../workflow/using/general-data-protection-regulation--gdpr-.md)
-* [Överföring till Mid-sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
-* [Plattform för mellanleverantörer](../../workflow/using/mid-sourcing-platform.md)
+* [Integrering med lösningar i Adobe Experience Cloud](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
+* [Sekretessdataskyddsförordningen](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [Överföring till mid-sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
+* [Plattform för mid-sourcing](../../workflow/using/mid-sourcing-platform.md)
