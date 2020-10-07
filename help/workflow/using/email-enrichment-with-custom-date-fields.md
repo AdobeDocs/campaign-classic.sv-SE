@@ -1,7 +1,7 @@
 ---
-title: E-postberikning med anpassade datumfält
-seo-title: E-postberikning med anpassade datumfält
-description: E-postberikning med anpassade datumfält
+title: E-postberikande med anpassade datumfält
+seo-title: E-postberikande med anpassade datumfält
+description: E-postberikande med anpassade datumfält
 seo-description: null
 page-status-flag: never-activated
 uuid: 6dd240b1-f995-4e12-90a5-55aeb584bcdc
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9cb3be65-6652-47fa-b8a4-e088530aab4a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 5%
 
 ---
 
 
-# E-postberikning med anpassade datumfält{#email-enrichment-with-custom-date-fields}
+# E-postberikande med anpassade datumfält{#email-enrichment-with-custom-date-fields}
 
 I det här exemplet vill vi skicka ett e-postmeddelande med anpassade datafält till mottagare som kommer att fira sina födelsedagar den här månaden. E-postmeddelandet innehåller en kupong som är giltig en vecka före och efter deras födelsedagar.
 
@@ -36,7 +36,7 @@ Så här skapar du det här exemplet:
    ![](assets/uc_enrichment_1.png)
 
 1. Lägg till en **[!UICONTROL Split]** aktivitet för att skilja mottagare som kommer att fira sina födelsedagar den här månaden från andra mottagare.
-1. Om du vill dela listan väljer du **[!UICONTROL Filtering of selected records]** i **[!UICONTROL Add a filtering condition on the inbound population]** kategorin. Klicka sedan på **[!UICONTROL Edit]**.
+1. Om du vill dela listan väljer du **[!UICONTROL Filtering of selected records]** i **[!UICONTROL Add a filtering condition on the inbound population]** kategorin. Then, click **[!UICONTROL Edit]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -52,7 +52,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/uc_enrichment_4.png)
 
-1. Klicka **[!UICONTROL Finish]**. Klicka sedan på fliken **[!UICONTROL General]** i **[!UICONTROL Split]** aktiviteten **[!UICONTROL Generate complement]** i **[!UICONTROL Results]** kategorin.
+1. Klicka på **[!UICONTROL Finish]**. Klicka sedan på fliken **[!UICONTROL General]** i **[!UICONTROL Split]** aktiviteten **[!UICONTROL Generate complement]** i **[!UICONTROL Results]** kategorin.
 
    Med **[!UICONTROL Complement]** resultatet kan du lägga till en leveransaktivitet eller uppdatera en lista. Här har vi just lagt till en **[!UICONTROL End]** aktivitet.
 
@@ -64,12 +64,12 @@ Nu måste du konfigurera din **[!UICONTROL Enrichment]** aktivitet:
 
    ![](assets/uc_enrichment_7.png)
 
-1. Öppna din **[!UICONTROL Enrichment]** aktivitet. Klicka på i **[!UICONTROL Complementary information]** kategorin **[!UICONTROL Add data]**.
+1. Öppna din **[!UICONTROL Enrichment]** aktivitet. In the **[!UICONTROL Complementary information]** category, click **[!UICONTROL Add data]**.
 
    ![](assets/uc_enrichment_8.png)
 
 1. Välj **[!UICONTROL Data linked to the filtering dimension]** sedan **[!UICONTROL Data of the filtering dimension]**.
-1. Klicka på **[!UICONTROL Add]** knappen.
+1. Klicka på knappen **[!UICONTROL Add]**.
 
    ![](assets/uc_enrichment_9.png)
 
@@ -87,7 +87,7 @@ Nu måste du konfigurera din **[!UICONTROL Enrichment]** aktivitet:
 
    ![](assets/uc_enrichment_12.png)
 
-1. Klicka **[!UICONTROL Ok]**. Din berikning är nu klar.
+1. Klicka på **[!UICONTROL Ok]**. Din berikning är nu klar.
 
 Efter din **[!UICONTROL Enrichment]** aktivitet kan du lägga till en leverans. I det här fallet har vi lagt till en e-postleverans för att skicka ett specialerbjudande med giltighetsdatum till kunder som firar sina födelsedagar den här månaden.
 
