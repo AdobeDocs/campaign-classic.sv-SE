@@ -1,7 +1,7 @@
 ---
-title: Blocklistedatabaser
-seo-title: Blocklistedatabaser
-description: Blocklistedatabaser
+title: Databaser i blockeringslistan
+seo-title: Databaser i blockeringslistan
+description: Databaser i blockeringslistan
 seo-description: null
 page-status-flag: never-activated
 uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Blocklistedatabaser{#blocklisting-databases}
+# Databaser i blockeringslistan{#blocklisting-databases}
 
 Flera organisationer har databaser med IP-adresser och domäner som används av skräppost. Att konsultera dessa webbplatser kan vara användbart för att förstå varför vissa meddelanden avvisades som skräppost. Det är i allmänhet möjligt att begära att en adress som felaktigt lagts till i dessa listor tas bort.
 
@@ -39,7 +36,7 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna för kommersiella tjänster, leveransmöjligheter och support från Adobe Campaign.
+   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna för kommersiella tjänster, slutprodukter och Adobe Campaign support.
 
 * **SpamCop**
 
@@ -51,13 +48,13 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [https://www.uribl.com/](https://www.uribl.com/)
 
-   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Ni bör omedelbart informera leveransavdelningen och supporten för Adobe Campaign.
+   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör omedelbart informera om leveranstjänster och Adobe Campaign support.
 
 * **SURBL**
 
    Se [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Ni bör omedelbart informera leveransavdelningen och supporten för Adobe Campaign.
+   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör omedelbart informera om leveranstjänster och Adobe Campaign support.
 
 * **iX Manitu**
 
