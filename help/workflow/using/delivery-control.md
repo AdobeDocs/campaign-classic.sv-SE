@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 0b5ee05c-4b96-425a-ab0f-60b930de21bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
 Med en åtgärd av typen **Leveranskontroll** kan du starta, pausa eller stoppa en leverans.
 
-Detta kan vara den leverans som anges i övergången, en leverans som valts uttryckligen eller en leverans som beräknas av ett skript. Mer information finns i [Leverans](../../workflow/using/delivery.md).
+Detta kan vara leveransen som anges i övergången, en leverans som valts uttryckligen eller en leverans som beräknas av ett skript. For more on this, refer to [Delivery](../../workflow/using/delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
