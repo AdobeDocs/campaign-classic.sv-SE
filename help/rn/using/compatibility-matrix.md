@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 6%
+ht-degree: 16%
 
 ---
 
@@ -31,11 +28,11 @@ Den här matrisen uppdateras regelbundet med nya objekt som stöds och borttagna
 
 Om inget annat anges stöds alla mindre releaser.
 
-Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du har de versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 Mer information om borttagna objekt finns på [den här sidan](../../rn/using/deprecated-features.md).
 
-## Operativsystem{#OperatingSystems}
+## Operating Systems{#OperatingSystems}
 
 <table> 
 <tbody> 
@@ -71,7 +68,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 </tbody>
 </table>
 
-## Webbservrar{#WebServers}
+## Web Servers{#WebServers}
 
 <table>
 <tbody>
@@ -92,7 +89,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 </tbody>
 </table>
 
-## verktyg{#Tools}
+## Verktyg{#Tools}
 
 <table>
 <tbody>
@@ -169,7 +166,7 @@ Följande RDBMS-drivrutiner stöds:
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Lär dig mer</a>.</p>
+<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Läs mer</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -179,7 +176,7 @@ Följande RDBMS-drivrutiner stöds:
 >
 >PostgreSQL är standarddatabasservern för hostingmiljöer.
 
-## CRM-anslutningar{#CRMconnectors}
+## CRM connectors{#CRMconnectors}
 
 <table>
 <tbody>
@@ -212,7 +209,7 @@ Följande RDBMS-drivrutiner stöds:
 </tbody>
 </table>
 
-## FDA (Federated Data Access){#FederatedDataAccessFDA}
+## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
 <table>
 <tbody>
@@ -368,8 +365,8 @@ Om du har integrerat med lösningar från Adobe finns mer information i det här
 
 * [Versionsinformation om Campaign Classic](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html)
 * [Installationshandbok](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [Föråldrade funktioner och system](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-* [Uppgraderingsprocedur](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
-* [Kompatibilitetsmatris för Campaign Classic för version 19.0](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html)
-* [Kompatibilitetsmatris för Campaign Classic för version 19.1](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-1.html)
+* [Föråldrade funktioner och system](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
+* [Uppgraderingsprocedur](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
+* [Kompatibilitetsmatris för Campaign Classic för version 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html)
+* [Kompatibilitetsmatris för Campaign Classic för version 19.1](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-1.html)
 
