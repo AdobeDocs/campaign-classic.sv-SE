@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: introduction
 discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '83'
+ht-degree: 4%
 
 ---
 
@@ -24,4 +24,4 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 I det här dokumentet beskrivs produktionsprocesserna för Adobe Campaign: konfiguration, övervakning, uppgradering, databehandling, databasunderhåll och rekommendationer. Det finns ett felsökningsavsnitt i slutet av det här dokumentet.
 
-Produktionsförfarandena måste utföras med försiktighet, dess påverkan måste beaktas fullt ut i förväg och förfarandet måste genomföras noggrant. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar Adobe Campaign innan du påbörjar en produktionsprocess, i synnerhet efter uppgraderingen.
+Produktionsförfarandena måste utföras med försiktighet, dess påverkan måste beaktas fullt ut i förväg och förfarandet måste genomföras noggrant. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar Adobe Campaign innan du påbörjar en produktionsprocess, speciellt efter uppgraderingen.
