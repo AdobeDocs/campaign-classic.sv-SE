@@ -1,7 +1,7 @@
 ---
-title: Importera och exportera målgrupper
-seo-title: Importera och exportera målgrupper
-description: Importera och exportera målgrupper
+title: Importera och exportera publiker
+seo-title: Importera och exportera publiker
+description: Importera och exportera publiker
 seo-description: null
 page-status-flag: never-activated
 uuid: af03ce68-8a58-4909-83e9-23c385820284
@@ -11,25 +11,22 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Importera och exportera målgrupper{#importing-and-exporting-audiences}
+# Importera och exportera publiker{#importing-and-exporting-audiences}
 
 ## Importera en målgrupp {#importing-an-audience}
 
 Du kan importera målgrupper/segment från Audience Manager eller People core service till Adobe Campaign via mottagarlistorna.
 
-1. Gå till noden **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** i Utforskaren i Adobe Campaign.
+1. Gå till noden **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** i Adobe Campaign Explorer.
 1. Välj **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]** i åtgärdsfältet.
 
    ![](assets/aam_import_audience.png)
@@ -37,7 +34,7 @@ Du kan importera målgrupper/segment från Audience Manager eller People core se
 1. I det fönster som öppnas klickar du för **[!UICONTROL Select a shared audience]** att gå till listan över delade målgrupper/segment som är tillgängliga från andra Adobe Experience Cloud-lösningar.
 1. Välj en målgrupp och bekräfta. Publiken fylls i automatiskt.
 
-   Observera att om du ska kunna importera delade målgrupper bör du tilldelas produkten i Admin Console och vara administratör i Audience Manager. **[!UICONTROL Audience library]** Mer information finns i dokumentationen [till](https://helpx.adobe.com/enterprise/managing/user-guide.html)Admin Console.
+   Observera att om du ska kunna importera delade målgrupper bör du tilldelas produkten i Admin Console och vara administratör i Audience Manager. **[!UICONTROL Audience library]** For more on this, refer to the [Admin console documentation](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
@@ -47,15 +44,15 @@ Du kan importera målgrupper/segment från Audience Manager eller People core se
 
 1. Spara publiken.
 
-Publiken importeras via ett tekniskt arbetsflöde. Den importerade listan innehåller element som kan förenas med hjälp av AMC-datakällan. De element som Adobe Campaign inte känner igen importeras inte.
+Publiken importeras via ett tekniskt arbetsflöde. Den importerade listan innehåller element som kan förenas med hjälp av AMC-datakällan. Elementen som inte känns igen av Adobe Campaign importeras inte.
 
-Det tar 24-36 timmar att synkronisera importprocessen när segment importeras direkt från personbastjänsten eller Audience Manager. Efter den här perioden kan du hitta och använda din nya publik i Adobe Campaign.
+Det tar 24-36 timmar att synkronisera importprocessen när segment importeras direkt från personbastjänsten eller Audience Manager. Efter den här perioden kan du hitta och använda din nya målgrupp i Adobe Campaign.
 
 >[!NOTE]
 >
 >Om du importerar målgrupper från Adobe Analytics till Adobe Campaign måste dessa målgrupper först delas i People Core Service eller Audience Manager. Den här processen tar 12-24 timmar, vilket måste läggas till i synkroniseringen av 24-36 timmar med Campaign.
 >
->I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics-målgruppsdelning i tjänsten People Core och Audience Manager finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
+>I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics målgruppsdelning i tjänsten People Core och Audience Manager finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
 
 Publiken ersätts helt och hållet varje gång den synkroniseras. Endast segment kan importeras. Detaljerade data som nyckelvärdepar, egenskaper och regler stöds inte.
 
@@ -85,9 +82,9 @@ Du kan exportera en målgrupp från Adobe Campaign till Audience Manager eller P
 
 Publiken exporteras sedan. Det finns två utgående övergångar för aktiviteten Spara målgrupp. Huvudövergången innehåller de mottagare som exporterades. Den extra övergången innehåller de mottagare som inte kunde mappas med ett besökar-ID eller deklarerat ID.
 
-Synkronisering mellan huvudtjänsten Adobe Campaign och People tar 24-36 timmar. Efter den här perioden kan du hitta din nya målgrupp i bastjänsten för människor och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en Adobe Campaign-delad målgrupp i huvudtjänsten Adobe People finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html).
+Synkronisering mellan Adobe Campaign och People Core Service tar 24-36 timmar. Efter den här perioden kan du hitta din nya målgrupp i bastjänsten People och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en delad Adobe Campaign-målgrupp i Adobe People-bastjänsten finns i den här [dokumentationen](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html).
 
 >[!NOTE]
 >
->För att posterna ska kunna stämmas av måste de ha ett Adobe Experience Cloud-ID (visitor-ID eller deklarerat ID). Posterna som inte har något Adobe Experience Cloud ID ignoreras när målgrupper exporteras och importeras.
+>För att posterna ska kunna stämmas av måste de ha ett Adobe Experience Cloud-ID (&quot;besökar-ID&quot; eller&quot;deklarerat ID&quot;). Posterna som inte har något Adobe Experience Cloud-ID ignoreras vid export och import av målgrupper.
 
