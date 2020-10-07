@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1833'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -272,9 +269,9 @@ Kopplingen stöder följande alternativ:
 |---|---|
 | arbetsschema | Databasschema som ska användas för arbetsregister |
 | lagerställe | Namnet på standardlagerstället som ska användas. Det åsidosätter användarens standardvärde. |
-| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>[Se denna sida](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone) för mer information om detta. |
-| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>[Se denna sida](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start) för mer information om detta. |
-| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>[Se denna sida](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html) för mer information om detta. |
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Se denna [sida](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone) för mer information om detta. |
+| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Se denna [sida](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start) för mer information om detta. |
+| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>Se denna [sida](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html) för mer information om detta. |
 
 ### Snowflake på CentOS {#snowflake-centos}
 
@@ -317,9 +314,9 @@ Kopplingen stöder följande alternativ:
 
 ### Snowflake i Windows {#snowflake-windows}
 
-1. Hämta [ODBC-drivrutinen för Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). Observera att du behöver administratörsbehörighet för att installera drivrutinen. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
+1. Hämta [ODBC-drivrutinen för Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). Observera att du behöver administratörsbehörighet för att installera drivrutinen. Se denna [sida](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html) för mer information om detta
 
-1. Konfigurera ODBC-drivrutinen. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
+1. Konfigurera ODBC-drivrutinen. Se denna [sida](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver) för mer information om detta
 
 1. I Campaign Classic kan du sedan konfigurera ditt [!DNL Snowflake] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i det här [avsnittet](../../platform/using/specific-configuration-database.md#snowflake-external).
 
