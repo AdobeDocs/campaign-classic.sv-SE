@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: f3cd5409-c301-4580-96e3-9349e18cf42a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4994aff9f2db36a519a9c7af2864393713eb65e3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 19%
 
 ---
 
@@ -39,4 +36,4 @@ Du kan infoga flera start- och slutpunktshopp i samma arbetsflöde. De identifie
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Om du vill förbättra diagrammets läsbarhet kan du ändra bilden som är kopplad till hopp så att det relaterade numret visas. Se [Hantera aktivitetsbilder](../../workflow/using/managing-activity-images.md).
+Om du vill förbättra diagrammets läsbarhet kan du ändra bilden som är kopplad till hopp så att det relaterade numret visas. See [Managing activity images](../../workflow/using/managing-activity-images.md).
