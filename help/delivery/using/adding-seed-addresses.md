@@ -1,7 +1,7 @@
 ---
-title: Lägga till dirigerade adresser
-seo-title: Lägga till dirigerade adresser
-description: Lägga till dirigerade adresser
+title: Lägga till fröadresser
+seo-title: Lägga till fröadresser
+description: Lägga till fröadresser
 seo-description: null
 page-status-flag: never-activated
 uuid: e94ddd46-bed6-4505-91b7-7e17abb0e9c8
@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: 0b9b53bf-4dd2-416c-894e-393aded489f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 5%
 
 ---
 
 
-# Lägga till dirigerade adresser{#adding-seed-addresses}
+# Lägga till fröadresser{#adding-seed-addresses}
 
 ## Utsändningsadresser i en leverans {#seed-addresses-in-a-delivery}
 
-Om du vill lägga till särskilda dirigerade adresser för en leverans klickar du på **[!UICONTROL To]** länken och väljer sedan **[!UICONTROL Seed addresses]** fliken.
+Om du vill lägga till specifika dirigerade adresser för en leverans klickar du på **[!UICONTROL To]** länken och väljer sedan **[!UICONTROL Seed addresses]** fliken.
 
 ![](assets/s_ncs_user_edit_del_addresses_tab.png)
 
@@ -32,7 +32,7 @@ Det finns tre möjliga insättningslägen:
 
 1. Ange enskilda dirigeringsadresser.
 
-   Det gör du genom att klicka på **[!UICONTROL Add]** knappen och definiera innehållet i adressfälten. Upprepa för varje adress. Mer information finns i [det här avsnittet](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   Det gör du genom att klicka på **[!UICONTROL Add]** knappen och definiera innehållet i adressfälten. Upprepa för varje adress. Mer information om detta finns i [det här avsnittet](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
 
 1. Importera adressmallar och anpassa dem efter dina behov.
 
@@ -48,7 +48,7 @@ Det finns tre möjliga insättningslägen:
 
 >[!NOTE]
 >
->Det här alternativet används när den mottagartabell som används inte är standardtabellen **nms:mottagare** och du använder den återgivningsfunktion för inkorgen som finns i Adobe Campaigns **[!UICONTROL Deliverability]** modul.
+>Det här alternativet används när den mottagartabell som används inte är standardtabellen **nms:mottagare** och du använder den återgivningsfunktion för inkorgen som finns i Adobe Campaign **[!UICONTROL Deliverability]** modul.
 >
 >Mer information finns i [Använda en extern mottagartabell](../../delivery/using/using-an-external-recipient-table.md) och i dokumentationen om [inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
 
