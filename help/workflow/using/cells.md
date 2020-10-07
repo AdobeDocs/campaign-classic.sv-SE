@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: f7187d42-56e9-4681-b172-22abd43ecd29
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 9%
 
 ---
 
@@ -55,4 +55,4 @@ För den här konfigurationen har följande information lagts till i arbetsflöd
                 </container>
 ```
 
-Anpassa anmälningsformulär i Adobe Campaign är reserverat för expertanvändare. Mer information finns i det här [avsnittet](../../configuration/using/identifying-a-form.md).
+Anpassa anmälningsformulär i Adobe Campaign är reserverat för expertanvändare. Mer information om detta hittar du i det här [avsnittet](../../configuration/using/identifying-a-form.md).
