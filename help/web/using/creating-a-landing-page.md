@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 5f1e5886-628f-4c9e-80c1-d82feec23e8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 3%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ## Skapa landningssidor {#about-landing-pages-creation}
 
-I det här exemplet visas hur den digitala redigeraren används för att skapa en landningssida från Adobe Campaign-konsolen.
+I det här exemplet visas hur du använder Digital Editor för att skapa en landningssida från Adobe Campaign-konsolen.
 
 Innan du börjar konfigurera landningssidan i Adobe Campaign måste du se till att du har **en eller flera mallar** som representerar HTML-sidorna.
 
 Huvudsyftet med det här användningsexemplet är att göra så att formulärfälten för landningssidan motsvarar de interna fälten i Adobe Campaign med funktionerna i DCE.
 
-## Skapa landningssidan {#creating-the-landing-page}
+## Creating the landing page {#creating-the-landing-page}
 
 Så här skapar du ett nytt webbprogram av typen Landing Page:
 
@@ -145,7 +145,7 @@ Det här steget är obligatoriskt eftersom det gör att webbprogrammet kan best�
 
    ![](assets/dce_uc1_actionbouton.png)
 
-### Infoga ett anpassningsfält {#inserting-a-personalization-field}
+### Infoga ett personaliserat fält {#inserting-a-personalization-field}
 
 I det här steget kan du anpassa sidan Tack. Så här gör du:
 
