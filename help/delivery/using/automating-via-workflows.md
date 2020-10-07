@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1191'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Innehållshanteringsaktivitet {#content-management-activity}
 
-Skapa, redigera och publicera innehåll kan automatiseras med ett arbetsflöde som konfigurerats via Adobe Campaign-klientgränssnittet.
+Det går att automatisera skapandet, redigeringen och publiceringen med hjälp av ett arbetsflöde som konfigurerats via Adobe Campaign klientgränssnitt.
 
 Aktiviteten **Innehållshantering** visas via **[!UICONTROL Tools]** verktygsfältet i arbetsflödesdiagrammet.
 
@@ -221,11 +221,11 @@ Den sista åtgärden i aktiviteten är att förbereda och starta leveransen.
 
 ### Importera innehåll från FTP {#importing-content-from-ftp}
 
-Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Refer to [this example](../../workflow/using/loading-delivery-content.md).
 
-### Importera innehåll från Amazon Simple Storage Service-anslutning (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Importera innehåll från kopplingen för Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Om ditt leveransinnehåll finns på Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Refer to [this example](../../workflow/using/loading-delivery-content.md).
 
 ## Halvautomatisk uppdatering {#semi-automatic-update}
 
