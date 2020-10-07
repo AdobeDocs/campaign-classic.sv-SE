@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 36953eb5-3296-4796-9352-945121bbdc69
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,7 @@ Innehållet i strängarna som visas definieras på fliken **[!UICONTROL Error pa
 
 På fliken **[!UICONTROL Localization]** kan du välja design- och visningsspråk för webbformuläret.
 
-Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## Bläddra bland och återge formulär {#form-browsing-and-rendering}
 
@@ -94,7 +94,7 @@ En exempelåtergivning visas i den nedre delen av egenskapsfönstret. Med **[!UI
 
 På fliken **[!UICONTROL Page]** kan du definiera innehållet i formulärhuvudet och sidfoten. Se [Definiera sidhuvuden och sidfötter](../../web/using/form-rendering.md#defining-headers-and-footers).
 
-Du kan också hantera översättningar. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+Du kan också hantera översättningar. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## Formulärets tillgänglighet {#accessibility-of-the-form}
 
@@ -106,7 +106,7 @@ Giltighetsperioden löper från **[!UICONTROL Start]** datum till **[!UICONTROL 
 
 >[!NOTE]
 >
->Om formuläret är stängt och dess giltighetsperiod därför inte har nåtts eller löpt ut, eller om det stängdes av Adobe Campaign-operatorn, visas ett meddelande när användaren försöker få åtkomst till det. Du kan anpassa det här meddelandet genom att klicka **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>Om formuläret är stängt och dess giltighetsperiod därför inte har nåtts eller löpt ut, eller om det stängts av Adobe Campaign-operatorn, visas ett meddelande när användaren försöker få åtkomst till det. Du kan anpassa det här meddelandet genom att klicka **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
 ## Åtkomstkontroll {#form-access-control}
 
@@ -120,7 +120,7 @@ När sidan öppnas visas följande autentiseringsformulär:
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Inloggning och lösenord är de som används av Adobe Campaign-operatorer. Mer information finns i [det här avsnittet](../../platform/using/access-management.md).
+Inloggning och lösenord är de som används av Adobe Campaign-operatörer. Mer information om detta finns i [det här avsnittet](../../platform/using/access-management.md).
 
 Med det här **[!UICONTROL Use a specific account]** alternativet kan du begränsa läs- och skrivbehörigheterna för den operator som kommer åt formuläret. Använd listrutan för att välja en operator eller grupp med operatorer som ska ansvara för att bevilja dessa behörigheter.
 
@@ -149,7 +149,7 @@ Följande parametrar är tillgängliga som standard:
 
    >[!CAUTION]
    >
-   >När formuläret visas via en URL med parametern **_uuid** tvingas värdet för **[!UICONTROL origin]** parametern till **Adobe Campaign**.
+   >När formuläret visas via en URL med parametern **_uuid** tvingas värdet på **[!UICONTROL origin]** parametern till **Adobe Campaign**.
 
 ## Lägga till parametrar {#adding-parameters}
 
