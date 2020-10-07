@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# ACS Connector-principer och datasecykel{#acs-connector-principles-and-data-cycle}
+# ACS Connector principles and data cycle{#acs-connector-principles-and-data-cycle}
 
 ## Introduktion {#introduction}
 
@@ -35,11 +32,11 @@ Med ACS Connector används Campaign Standard även fortsättningsvis av digitala
 
 >[!IMPORTANT]
 >
->ACS Connector är endast tillgängligt som en del av erbjudandet Adobe Campaign Prime. Mer information om hur du licensierar Adobe Campaign Prime får du av din kontoansvarige.
+>ACS Connector finns endast som en del av Adobe Campaign Prime-erbjudandet. Mer information om hur du licensierar Adobe Campaign Prime får du av din kontoansvarige.
 >
 >ACS Connector är endast tillgängligt för hostingarkitekturer och hybridarkitekturer. Den finns inte för kompletta installationer på plats.
 >
->Om du vill använda den här funktionen måste du ansluta till Campaign med ett Adobe ID (IMS). Se [Ansluta via ett Adobe ID](../../integrations/using/about-adobe-id.md).
+>Om du vill använda den här funktionen måste du ansluta till Campaign med en Adobe ID (IMS). See [Connecting via an Adobe ID](../../integrations/using/about-adobe-id.md).
 
 I det här dokumentet visas ACS Connector-funktionerna. Avsnitten nedan innehåller information om hur funktionen replikerar data och anvisningar om hur du arbetar med replikerade profiler.
 
@@ -124,7 +121,7 @@ Det finns två typer av implementering för ACS Connector. Båda genomförs allt
 >
 >Det här avsnittet är endast avsett för expertanvändare, så att de får en global bild av implementeringsprocessen och dess huvudsteg.
 >
->Försök inte på något sätt själv utföra någon av dessa implementeringar. Det är förbehållet konsulterna i Adobe Campaign.
+>Försök inte på något sätt själv utföra någon av dessa implementeringar. Det är förbehållet Adobe Campaign konsulter.
 
 Med den **grundläggande implementeringen** kan du replikera mottagare (färdiga fält), tjänster och prenumerationer, webbprogram och målgrupper. Detta är en envägsreplikering från Campaign v7 till Campaign Standard.
 
@@ -132,7 +129,7 @@ Den **avancerade implementeringen** gör att du kan utföra mer komplexa använd
 
 ### Installera paketet {#installing-the-package}
 
-Paketet måste vara installerat för att du ska kunna använda funktionen **[!UICONTROL ACS Connector]** . Detta görs alltid av Adobes tekniska administratör eller konsult.
+Paketet måste vara installerat för att du ska kunna använda funktionen **[!UICONTROL ACS Connector]** . Detta görs alltid av Adobe tekniska administratör eller konsult.
 
 Alla tekniska element som är relaterade till ACS Connector är tillgängliga i utforskarens **[!UICONTROL Administration > ACS Connector]** nod.
 
@@ -142,7 +139,7 @@ Efter installationen av paketet finns två tekniska arbetsflöden under **[!UICO
 
 >[!IMPORTANT]
 >
->Försök aldrig att ändra dessa arbetsflöden. De får aldrig befinna sig i fel eller ha pausats. Kontakta din Adobe Campaign-konsult om detta händer.
+>Försök aldrig att ändra dessa arbetsflöden. De får aldrig befinna sig i fel eller ha pausats. Om detta händer kontaktar du Adobe Campaign konsult.
 
 ![](assets/acs_connect_implementation_3.png)
 
@@ -292,7 +289,7 @@ I det här avsnittet beskrivs några av möjligheterna när det gäller avancera
 
 >[!IMPORTANT]
 >
->Den här informationen kan bara användas som allmänna riktlinjer. Kontakta er Adobe Campaign-konsult för implementeringen.
+>Den här informationen kan bara användas som allmänna riktlinjer. Kontakta Adobe Campaign konsult för implementeringen.
 
 Den avancerade implementeringen lägger till anpassade replikeringsarbetsflöden, beroende på kundens behov. Här är några exempel:
 
