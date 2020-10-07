@@ -1,7 +1,7 @@
 ---
-title: Svar på webbformulär
-seo-title: Svar på webbformulär
-description: Svar på webbformulär
+title: Svar från webbformulär
+seo-title: Svar från webbformulär
+description: Svar från webbformulär
 seo-description: null
 page-status-flag: never-activated
 uuid: 374df070-8969-4bf6-bd24-0b827d38593f
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: c89926b6-488e-4c72-8f67-b6af388bade3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 1%
 
 ---
 
 
-# Svar på webbformulär{#web-forms-answers}
+# Svar från webbformulär{#web-forms-answers}
 
 ## Svarslagringsfält {#response-storage-fields}
 
@@ -124,7 +124,7 @@ Det finns två sätt att använda den här rutan:
 
 * Om webbformuläret nås via en länk som skickas i ett e-postmeddelande, och om användaren som använder programmet redan finns i databasen, kan du markera **[!UICONTROL Update the preloaded record]** alternativet. Mer information finns i [Leverera ett formulär via e-post](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 
-   I det här fallet använder Adobe Campaign den krypterade primärnyckeln för användarprofilen, en unik identifierare som tilldelas varje profil av Adobe Campaign. Du måste konfigurera informationen så att den kan läsas in i förväg via förinläsningsrutan. Mer information finns i [Förhandsladda formulärdata](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+   I det här fallet använder Adobe Campaign den krypterade primärnyckeln för användarprofilen, som är en unik identifierare som tilldelas varje profil av Adobe Campaign. Du måste konfigurera informationen så att den kan läsas in i förväg via förinläsningsrutan. Mer information finns i [Förhandsladda formulärdata](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
@@ -144,7 +144,7 @@ Du kan välja en sökmapp för avstämning och skapandemappen för nya profiler.
 
 >[!NOTE]
 >
->Möjliga åtgärder är: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**..\
+>Möjliga åtgärder är: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >Operatorns standardmapp är den första mappen som operatorn har skrivbehörighet för.\
 >Se [det här avsnittet](../../platform/using/access-management.md).
 
