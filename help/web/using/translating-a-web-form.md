@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 145c26cc-c868-4b7b-904d-6af577fbcb83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +76,7 @@ För teckensträngar som aldrig har översatts är **[!UICONTROL Text]** fältet
 
 ### Filtrera strängar {#filtering-strings}
 
-Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på **[!UICONTROL Filters]** knappen och sedan på **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Mer information finns på [den här sidan](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på **[!UICONTROL Filters]** knappen och sedan på **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Se denna [sida](../../platform/using/creating-filters.md#creating-an-advanced-filter) för mer information om detta.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -102,7 +102,7 @@ Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate
 
 ## Extern översättning {#externalizing-translation}
 
-Det går att exportera och importera teckensträngar för att översätta dem med ett annat verktyg än Adobe Campaign.
+Du kan exportera och importera teckensträngar för att översätta dem med ett annat verktyg än Adobe Campaign.
 
 >[!CAUTION]
 >
@@ -454,7 +454,7 @@ Om du översätter webbprogrammet till ett språk som inte har översatts av sys
 
 Så här lägger du till ett språk:
 
-1. Gå till trädet Adobe Campaign och klicka på **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
+1. Gå till Adobe Campaign-trädet och klicka på **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
 1. I fönstrets övre del väljer du den systemsträng som ska översättas och klickar sedan **[!UICONTROL Add]** i det nedre avsnittet.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
