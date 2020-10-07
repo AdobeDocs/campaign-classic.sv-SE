@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 Nedan följer några allmänna principer för användning av indataformulär i Adobe Campaign.
 
-Formulär beskrivs i [det här avsnittet](../../configuration/using/identifying-a-form.md).
+Forms beskrivs i [det här avsnittet](../../configuration/using/identifying-a-form.md).
 
 ## Formulärstruktur {#form-structure}
 
@@ -78,11 +78,11 @@ Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme
 >
 >Indataformuläret måste referera till ett **type=&quot;contentForm&quot;** -attribut i **`<form>`** -elementet för att automatiskt lägga till den ram som krävs för att innehållet ska kunna matas in.
 
-## Formatering {#formatting}
+## Formatera {#formatting}
 
 Ordningen på kontrollerna i förhållande till varandra ser ut som den ordning som används i HTML-tabeller, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller att ange hur tillgängligt utrymme ska användas. Tänk dock på att formatering endast tillåter fördelning av proportioner. Du kan inte ange fasta dimensioner för ett objekt.
 
-Mer information finns i [det här avsnittet](../../configuration/using/form-structure.md#formatting).
+Mer information om detta finns i [det här avsnittet](../../configuration/using/form-structure.md#formatting).
 
 ## Kontroller för listtyp {#list-type-controls}
 
