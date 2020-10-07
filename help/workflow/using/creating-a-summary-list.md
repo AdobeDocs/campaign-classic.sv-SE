@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6b0acb6b-0808-4972-b2a2-15fab29b3861
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ Lägg till anrikningsaktiviteten och konfigurera den enligt följande:
 
    ![](assets/uc2_enrich_enrich1.png)
 
-1. Klicka **[!UICONTROL Add data]** och välj sedan **[!UICONTROL A link]** alternativet.
+1. Click **[!UICONTROL Add data]**, then select the **[!UICONTROL A link]** option.
 
    ![](assets/uc2_enrich_enrich2.png)
 
@@ -108,7 +108,7 @@ I följande fönster måste du skapa ett kopplingsvillkor genom att välja käll
 Nu när länken har skapats ska vi lägga till en kolumn i arbetsflödets arbetstabell från schemat&quot;Stores&quot;: fältet&quot;ZipCode Reference&quot;.
 
 1. Öppna anrikningsaktiviteten.
-1. Klicka **[!UICONTROL Edit additional data]**.
+1. Klicka på **[!UICONTROL Edit additional data]**.
 1. Lägg till fältet&quot;ZipCode Reference&quot; i **[!UICONTROL Output columns]**.
 
 ![](assets/uc2_enrich_enrich5.png)
@@ -127,7 +127,7 @@ En avstämning mellan data i arbetsflödets arbetstabell och dimensionen **Inkö
 1. Välj måldimensionen, inköpsschemat i det här fallet.
 1. Välj ett källuttryck för data i arbetsflödestabellen (fältet&quot;storeName&quot; i det här fallet).
 1. Välj ett måluttryck för data i tabellen&quot;Inköp&quot; (&quot;lagenamn&quot; i det här fallet).
-1. Markera **[!UICONTROL Keep unreconciled data coming from the work table]** alternativet.
+1. Markera alternativet **[!UICONTROL Keep unreconciled data coming from the work table]**.
 
 ![](assets/uc2_enrich_reconciliation.png)
 
@@ -152,7 +152,7 @@ Syftet med den andra anrikningen är att skapa en sammanställning av inköpssch
 1. Klicka på Lägg till **[!UICONTROL Data]**.
 1. Klicka på **[!UICONTROL Data linked to the targeting dimension]** alternativet.
 1. Klicka på **[!UICONTROL Data linked to the filtering dimension]** alternativet i **[!UICONTROL Select fields to add]** fönstret.
-1. Markera **[!UICONTROL Purchases]** noden och klicka sedan på **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Purchases]** node then click **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
@@ -160,7 +160,7 @@ Syftet med den andra anrikningen är att skapa en sammanställning av inköpssch
 
    ![](assets/uc2_enrich_enrich10.png)
 
-1. Klicka **[!UICONTROL Next]**.
+1. Klicka på **[!UICONTROL Next]**.
 1. Lägg till följande uttryck för att beräkna inköpsvolymen för varje kontakt: &quot;Sum(@prodprice)&quot;.
 
    ![](assets/uc2_enrich_enrich6.png)
