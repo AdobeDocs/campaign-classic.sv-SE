@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 88eb17b6-5206-4064-9cd9-b4645a85c609
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 1%
 
 ---
 
 
 # Diskussionsforum{#discussion-forums}
 
-Adobe Campaign-operatorer kan använda diskussionsforum för att dela information. Följande element har ett eget forum: planer, program, kampanjer, resurser, simuleringar, aktier. Varje operator har också ett personligt forum. Alla diskussioner är offentliga, även på personliga forum.
+Operatörer i Adobe Campaign kan använda diskussionsforum för att dela information. Följande element har ett eget forum: planer, program, kampanjer, resurser, simuleringar, aktier. Varje operator har också ett personligt forum. Alla diskussioner är offentliga, även på personliga forum.
 
 Operatörer kan prenumerera på ett forum och få ett e-postmeddelande varje gång ett meddelande skickas.
 
@@ -75,16 +75,16 @@ I **[!UICONTROL Discussion forum]** kartongen:
 
 ## Publicering på en operatörs personliga forum {#posting-to-the-personal-forum-of-an-operator}
 
-Du kan publicera ett meddelande på forumet för en operatör om ditt meddelande t.ex. inte gäller en viss kampanj, men du ändå vill hålla reda på konversationen i Adobe Campaign. Personliga forum är offentliga och alla operatörer kommer att se ditt meddelande. Operatören får ett meddelande varje gång någon publicerar på sitt personliga forum.
+Du kan skicka ett meddelande till en operatörs forum om ditt meddelande t.ex. inte gäller en viss kampanj, men du ändå vill hålla reda på konversationen i Adobe Campaign. Personliga forum är offentliga och alla operatörer kommer att se ditt meddelande. Operatören får ett meddelande varje gång någon publicerar på sitt personliga forum.
 
 Så här kommer du åt en operatörs forum:
 
 * Om du har de rättigheter som krävs för att få åtkomst till **[!UICONTROL Administration > Access management > Operators]** noden i utforskaren öppnar du kontrollpanelen för den önskade operatorn och klickar på **[!UICONTROL Forum]** länken i det övre högra hörnet.
-* Om inte, leta reda på namnet på operatorn i Adobe Campaign (via ett meddelande som skickats till forumet av den här operatorn, en uppgift som tilldelats honom) och klicka på den för att komma åt deras instrumentpanel. Du kan också be administratören att skapa en vy över operatörsmappen.
+* Om inte, hitta namnet på operatorn i Adobe Campaign (via ett meddelande som skickats till forumet av den här operatorn, en uppgift som tilldelats honom) och klicka på den för att komma åt deras instrumentpanel. Du kan också be administratören att skapa en vy över operatörsmappen.
 
 ## Prenumerera på ett forum {#subscribing-to-a-forum}
 
-Genom att prenumerera på ett forum kan du följa diskussioner. Du får ett e-postmeddelande varje gång ett meddelande skickas till forumet. Det här e-postmeddelandet innehåller meddelandetexten och eventuella bilagor. Om du vill svara på ett meddelande klickar du i e-postmeddelandet och loggar sedan in på webbgränssnittet i Adobe Campaign. När du prenumererar på ett forum visas den här informationen för alla.
+Genom att prenumerera på ett forum kan du följa diskussioner. Du får ett e-postmeddelande varje gång ett meddelande skickas till forumet. Det här e-postmeddelandet innehåller meddelandetexten och eventuella bilagor. Om du vill svara på ett meddelande klickar du i e-postmeddelandet och loggar sedan in på Adobe Campaign webbgränssnitt. När du prenumererar på ett forum visas den här informationen för alla.
 
 * Om du vill prenumerera på ett forum klickar du på **[!UICONTROL Follow discussions]** knappen i det övre högra avsnittet ovanför listan med meddelanden.
 
@@ -114,7 +114,8 @@ Om operatorer som prenumererar på ett forum inte får meddelanden som förvänt
 * Gå till **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** noden och kontrollera att **[!UICONTROL Jobs in discussion forums]** arbetsflödet har startats och är felfritt.
 * Visa leveransloggarna:
 
-   * På startsidan för Adobe Campaign går du till **[!UICONTROL Campaigns > Navigation > Deliveries]** och öppnar sedan **[!UICONTROL Discussion forum notification]** leveransen.
+   * Gå till Adobe Campaign hemsida **[!UICONTROL Campaigns > Navigation > Deliveries]** och öppna sedan **[!UICONTROL Discussion forum notification]** leveransen.
    * Gå till Utforskaren **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** och klicka sedan **[!UICONTROL Discussion forum notifications]**.
+
    I **[!UICONTROL Discussion forum notifications]** rutan finns leveransloggarna på **[!UICONTROL Edit > Delivery]** fliken. Du kan även visa **[!UICONTROL Tracking > Log]** och **[!UICONTROL Exclusion causes]** flikarna.
 
