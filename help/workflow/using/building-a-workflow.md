@@ -1,7 +1,7 @@
 ---
-title: Bygga ett arbetsflöde
-seo-title: Bygga ett arbetsflöde
-description: Bygga ett arbetsflöde
+title: Skapa ett arbetsflöde
+seo-title: Skapa ett arbetsflöde
+description: Skapa ett arbetsflöde
 seo-description: null
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Bygga ett arbetsflöde {#building-a-workflow}
+# Skapa ett arbetsflöde {#building-a-workflow}
 
 I det här avsnittet beskrivs de viktigaste principerna och de bästa metoderna för att skapa ett arbetsflöde i Campaign.
 
@@ -35,7 +32,7 @@ I det här avsnittet beskrivs de viktigaste principerna och de bästa metoderna 
 * Få tillgång till och skapa tekniska arbetsflöden, se [Tekniska arbetsflöden](#technical-workflows)
 * Använda mallar för att skapa arbetsflöden, se [Arbetsflödesmallar](#workflow-templates)
 
-## Skapa ett nytt arbetsflöde {#creating-a-new-workflow}
+## Creating a new workflow {#creating-a-new-workflow}
 
 Öppna en arbetsflödesmapp **[!UICONTROL Explorer]** i. Som standard kan du använda **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
@@ -53,9 +50,9 @@ Ange en etikett och klicka på **[!UICONTROL Save]**.
 >
 >När du ändrar det interna namnet på en arbetsflödesaktivitet eller själva arbetsflödet måste du spara arbetsflödet innan du stänger det, så att det nya interna namnet beaktas korrekt.
 
-## Lägga till och länka aktiviteter {#adding-and-linking-activities}
+## Lägga till och koppla aktiviteter {#adding-and-linking-activities}
 
-Du måste nu definiera de olika aktiviteterna och länka samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
+Du måste nu definiera de olika aktiviteterna och koppla samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
 
 ![](assets/new-workflow-2.png)
 
@@ -70,15 +67,15 @@ Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga f
 * Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa verksamheter beskrivs närmare i [Verksamheter](../../workflow/using/about-action-activities.md).
 * Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs närmare i [Evenemangsaktiviteter](../../workflow/using/about-event-activities.md).
 
-Skapa diagrammet
+Så här skapar du diagrammet
 
-1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
+1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp.
 
    Lägg till en **startaktivitet** och sedan en **leveransaktivitet** i diagrammet.
 
    ![](assets/new-workflow-3.png)
 
-1. Koppla samman aktiviteterna genom att dra övergången **Start** -aktivitet och släppa den i aktiviteten **Leverans** .
+1. Link the activities together by dragging the **Start** activity transition and dropping it on to the **Delivery** activity.
 
    ![](assets/new-workflow-4.png)
 
@@ -134,7 +131,7 @@ Om du vill få en bättre förståelse för aktiviteterna och om du vill förbä
 
 Med målarbetsflöden kan du skapa flera leveransmål. Du kan skapa frågor, definiera fackföreningar eller undantag baserat på specifika villkor, lägga till schemaläggning tack vare arbetsflödesaktiviteter. Resultatet av den här målsättningen kan automatiskt överföras till en lista som kan fungera som mål för leveransåtgärder
 
-Förutom dessa aktiviteter kan du med alternativen för datahantering hantera data och komma åt avancerade funktioner för att tillgodose komplexa målgruppsproblem. Mer information finns i [Datahantering](../../workflow/using/targeting-data.md#data-management).
+Förutom dessa aktiviteter kan du med alternativen för datahantering hantera data och komma åt avancerade funktioner för att tillgodose komplexa målgruppsproblem. For more on this, refer to [Data Management](../../workflow/using/targeting-data.md#data-management).
 
 Alla dessa aktiviteter finns på den första arbetsflödesfliken.
 
@@ -156,11 +153,11 @@ Målgruppsfasen är följande:
 1. Information om hur du förbereder data för leveransbehov finns i [Förbättra och ändra data](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
 1. Information om hur du använder data för att utföra uppdateringar eller inom en leverans finns i [Uppdatera databasen](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
 
-Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](../../workflow/using/data-life-cycle.md#target-data)
+Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
 ### Målinriktning och filtrering {#targeting-and-filtering-dimensions}
 
-Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Filtreringsdimensionen gör att du kan välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
+Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Med filterdimensionen kan du välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
 
 Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
 
@@ -194,7 +191,7 @@ Kampanjarbetsflöden och implementeringsexempel finns på den här [sidan](../..
 
 ## Tekniska arbetsflöden {#technical-workflows}
 
-Med Adobe Campaign får du tillgång till tekniska arbetsflöden direkt. De är åtgärder eller jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser och konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via **[!UICONTROL Administration > Production > Technical workflows]** noden.
+Tekniska arbetsflöden medföljer Adobe Campaign. De är åtgärder eller jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser och konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via **[!UICONTROL Administration > Production > Technical workflows]** noden.
 
 ![](assets/navtree.png)
 
@@ -208,7 +205,7 @@ Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som
 
 Du kan skapa andra tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Den här processen är dock reserverad för expertanvändare.
 
-De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. Mer information finns i [Implementeringssteg](#implementation-steps-).
+De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. For more on this, refer to [Implementation steps](#implementation-steps-).
 
 ## Arbetsflödesmallar {#workflow-templates}
 
