@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -27,13 +24,13 @@ ht-degree: 0%
 
 ## Om inkorgsåtergivning {#about-inbox-rendering}
 
-Innan du klickar på knappen **Skicka** måste du se till att ditt meddelande visas för mottagarna på ett optimalt sätt på olika webbklienter, webbmejl och enheter.
+Before hitting the **Send** button, make sure that your message will be displayed to the recipients in an optimal way on a variety of web clients, web mails and devices.
 
-Adobe Campaign utnyttjar den webbaserade e-posttestningslösningen [Litmus](https://litmus.com/email-testing) för att hämta in återgivningarna och göra dem tillgängliga i en dedikerad rapport. På så sätt kan du förhandsgranska det skickade meddelandet i olika sammanhang som det kan tas emot i och kontrollera kompatibiliteten i de flesta datorer och program.
+För att möjliggöra detta använder Adobe Campaign den webbaserade testlösningen [Litmus](https://litmus.com/email-testing) för att hämta in återgivningarna och göra dem tillgängliga i en dedikerad rapport. På så sätt kan du förhandsgranska det skickade meddelandet i olika sammanhang som det kan tas emot i och kontrollera kompatibiliteten i de flesta datorer och program.
 
 Litmus är en funktionell e-postvalidering och förhandsgranskning av program. Med den kan e-postinnehållsförfattare förhandsgranska sitt meddelandeinnehåll i över 70 e-postrenderare, till exempel Gmail-inkorgen eller Apple Mail-klienten.
 
-De mobil-, meddelande- och webbpostklienter som är tillgängliga för **inkorgsåtergivning** i Adobe Campaign finns listade på [Litmus-webbplatsen](https://litmus.com/email-testing) (klicka på **Visa alla e-postklienter**).
+The mobile, messaging and webmail clients available for **Inbox rendering** in Adobe Campaign are listed on the [Litmus website](https://litmus.com/email-testing) (click **View all email clients**).
 
 >[!NOTE]
 >
@@ -41,11 +38,11 @@ De mobil-, meddelande- och webbpostklienter som är tillgängliga för **inkorgs
 
 ## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
 
-För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobes tekniska support och konsulter. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
+För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobe teknisk support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
 
 För lokala installationer följer du stegen nedan för att konfigurera inkorgsåtergivning.
 
-1. Installera paketet **[!UICONTROL Inbox rendering (IR)]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera standardpaket](../../installation/using/installing-campaign-standard-packages.md)för Campaign Classic.
+1. Installera paketet **[!UICONTROL Inbox rendering (IR)]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 1. Konfigurera ett externt konto för HTTP-typen via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** -noden. Mer information finns i [Skapa ett externt konto](../../platform/using/external-accounts.md#creating-an-external-account).
 1. Ange externa kontoparametrar enligt följande:
    * **[!UICONTROL Label]**: Information om leveransserver
@@ -53,10 +50,11 @@ För lokala installationer följer du stegen nedan för att konfigurera inkorgs�
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
    * **[!UICONTROL Encryption]**: Ingen
-   * Markera **[!UICONTROL Enabled]** alternativet.
+   * Markera alternativet **[!UICONTROL Enabled]**.
+
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** -noden. Sök efter **[!UICONTROL DmRendering_cuid]** alternativet och kontakta supporten för att få den leveransrapportidentifierare som behöver kopieras till **[!UICONTROL Value (text)]** fältet.
+1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** node. Sök efter **[!UICONTROL DmRendering_cuid]** alternativet och kontakta supporten för att få den leveransrapportidentifierare som behöver kopieras till **[!UICONTROL Value (text)]** fältet.
 1. Redigera filen **serverConf.xml** så att den tillåter anrop till Litmus-servern. Lägg till följande rad i `<urlPermission>` avsnittet:
 
    ```
@@ -91,6 +89,7 @@ Varje gång du använder **[!UICONTROL Inbox rendering]** funktionen i en levera
 >
 >* Varje gång rapporten för inkorgsåtergivning skapas dras en token per meddelandeklient av: en token för Outlook 2000-återgivning, en för Outlook 2010-återgivningen, en för Apple Mail 9-återgivningen och så vidare.
 >* Om du genererar återgivningen av Inkorgen igen för samma leverans minskas antalet tillgängliga tokens igen med antalet genererade återgivningar.
+
 >
 
 
