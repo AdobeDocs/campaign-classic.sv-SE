@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: e8e7a720-c93d-491d-8768-270e47e9c898
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ## Om simuleringar {#about-simulations}
 
-Med Campaign Optimization kan ni testa effektiviteten i en kampanjplan med hjälp av simuleringar. Detta gör att ni kan mäta en kampanjs potentiella framgång: genererade intäkter, målvolym baserat på tillämpade typologiregler osv.
+Med Campaign Optimization kan ni testa effektiviteten i en kampanjplan med simuleringar. Detta gör att ni kan mäta en kampanjs potentiella framgång: genererade intäkter, målvolym baserat på tillämpade typologiregler osv.
 
 Med simulering kan du övervaka och jämföra effekterna av leveranser.
 
@@ -62,7 +62,7 @@ Så här skapar du en simulering:
 
    >[!NOTE]
    >
-   >Om ni väljer leveranser via en plan, ett program eller en kampanj kan Adobe Campaign automatiskt uppdatera listan över leveranser för att ta hänsyn till varje gång en simulering startas. Markera **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** alternativet om du vill göra det.
+   >Om du väljer leveranser via en plan, ett program eller en kampanj kan Adobe Campaign automatiskt uppdatera listan med leveranser som ska beaktas när en simulering startas. Markera **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** alternativet om du vill göra det.
    >  
    >Om du inte gör detta kommer alla leveranser som inte är tillgängliga i planen, programmet eller kampanjen när simuleringen skapas inte att beaktas: leveranser som läggs till senare ignoreras.
 
@@ -72,7 +72,7 @@ Så här skapar du en simulering:
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   Klicka **[!UICONTROL Finish]** för att godkänna markeringen.
+   Click **[!UICONTROL Finish]** to approve the selection.
 
    Du kan kombinera utvalda leveranser och leveranser som hör till planer, program eller kampanjer manuellt.
 
@@ -84,7 +84,7 @@ Så här skapar du en simulering:
 
    >[!NOTE]
    >
-   >Endast leveranser vars mål har beräknats beaktas vid beräkning av simuleringar (status: **Target ready** or **Ready to deliver**).
+   >Endast leveranser vars mål har beräknats beaktas vid beräkning av simuleringar (status: **Klart** eller **klart att leverera**).
 
 1. Välj en analysdimension, t.ex. mottagarschema, på fliken **[!UICONTROL Calculations]** .
 
@@ -164,7 +164,7 @@ Följande rapporter tillhandahålls som standard:
 
 >[!NOTE]
 >
->Du kan skapa nya rapporter och lägga till dem i de som erbjuds. Mer information finns i [det här avsnittet](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+>Du kan skapa nya rapporter och lägga till dem i de som erbjuds. Mer information om detta finns i [det här avsnittet](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 Klicka på länken för målsimuleringen via kontrollpanelen för att få åtkomst till rapporter. **[!UICONTROL Reports]**
 
@@ -176,7 +176,7 @@ Du kan också redigera rapporter med hjälp av den **[!UICONTROL Reports]** län
 
 Varje gång en simulering körs ersätter resultatet eventuella tidigare resultat: du kan inte visa och jämföra resultat från en körning till en annan.
 
-Om du vill jämföra resultaten måste du använda rapporter. Med Adobe Campaign kan du spara en rapporthistorik och visa den igen senare. Den här historiken sparas under simuleringens livscykel.
+Om du vill jämföra resultaten måste du använda rapporter. I Adobe Campaign kan du spara en rapporthistorik och visa den igen senare. Den här historiken sparas under simuleringens livscykel.
 
 **Exempel:**
 
@@ -235,4 +235,4 @@ Målöverlapp för leverans anger målmottagarna i minst två leveranser av en s
 >
 >Den här underfliken visas bara om **[!UICONTROL Generate target recovery statistics]** alternativet har aktiverats.
 
-Informationen om rapportaxlar kan behandlas i exkluderingsanalysrapporter som skapas på **[!UICONTROL Exploring exclusions]** underfliken. Mer information finns i [Utforska resultat](#exploring-results).
+Informationen om rapportaxlar kan behandlas i exkluderingsanalysrapporter som skapas på **[!UICONTROL Exploring exclusions]** underfliken. For more on this, refer to [Exploring results](#exploring-results).
