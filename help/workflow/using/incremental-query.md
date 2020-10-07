@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -42,14 +39,14 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 Så här gör du:
 
-1. Välj **[!UICONTROL Scheduling & History]** alternativet på **[!UICONTROL Schedule execution]** fliken. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och på en gång**.
-1. Klicka på knappen **[!UICONTROL Change]**. 
+1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och på en gång**.
+1. Klicka på knappen **[!UICONTROL Change]**.
 
    I **[!UICONTROL Schedule editing wizard]** fönstret kan du konfigurera typ av frekvens, återkommande händelser och händelsegiltighetsperiod.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Klicka **[!UICONTROL Finish]** för att spara schemat.
+1. Click **[!UICONTROL Finish]** to save the schedule.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
