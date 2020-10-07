@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 9%
 
 ---
 
@@ -31,22 +31,22 @@ Avsnitten nedan beskriver de parametrar som är specifika för att leverera e-po
 
 ## Arkivera e-post {#archiving-emails}
 
-Med Adobe Campaign kan ni lagra e-post på ett externt system via BCC genom att bara lägga till en e-postadress för hemlig kopia till ert meddelandemål. När alternativet är aktiverat sparas en exakt kopia av alla skickade meddelanden för den här leveransen.
+Med Adobe Campaign kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. När alternativet är aktiverat sparas en exakt kopia av alla skickade meddelanden för den här leveransen.
 
 Mer information om hur du konfigurerar e-postkopia finns i [det här avsnittet](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->Den här funktionen är valfri. Kontrollera licensavtalet och kontakta er kontoansvarige för att aktivera det.
+>Den här funktionen är valfri.  Kontrollera licensavtalet och kontakta eran kontoansvarige om du vill aktivera det.
 
 När du skapar en ny leverans- eller leveransmall är e-postkopia inte aktiverat som standard, även om alternativet har köpts. Du måste aktivera den manuellt i varje leverans eller mall där du vill använda den.
 
-Gör så här:
+Följ stegen nedan för att göra detta:
 
 1. Gå till **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** eller **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Välj leveransen eller duplicera den färdiga mallen för **e-postleverans** och välj sedan den duplicerade mallen.
-1. Klicka på knappen **Egenskaper** .
-1. Klicka på **[!UICONTROL Delivery]** fliken.
+1. Click the **Properties** button.
+1. Klicka på fliken **[!UICONTROL Delivery]**.  
 1. Markera rutan **Arkivera e-post** om du vill behålla en kopia av alla skickade meddelanden för den här leveransen eller för varje leverans baserat på den här mallen.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
@@ -103,12 +103,12 @@ Det gör du genom att markera **[!UICONTROL Force the encoding used for messages
 
 Det går att lägga till SMTP-huvuden i leveranserna. Det gör du genom att använda relevanta avsnitt på fliken **[!UICONTROL SMTP]** i leveransen.
 
-Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande formulär: **name:value**.
+The script entered in this window must reference one header per line in the following form: **name:value**.
 
 Värden kodas automatiskt om det behövs.
 
 >[!CAUTION]
 >
->Att lägga till ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
+>Tillägg av ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
 >
->Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: inget oanvänt utrymme, ingen tom rad o.s.v.
+>Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: Inget oanvänt utrymme, ingen tom rad, o.s.v.
