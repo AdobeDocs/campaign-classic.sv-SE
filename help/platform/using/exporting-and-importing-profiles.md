@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 0325ab0f-394e-404b-9f4a-db3cc18d2493
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -42,7 +39,7 @@ Om du vill konfigurera och köra import- och exportjobb för data går du till *
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## How to import profiles{#import-profiles-video}
+## Så här importerar du profiler{#import-profiles-video}
 
 I den här videon förklaras hur du importerar profiler i Adobe Campaign, vid en enstaka import.
 
