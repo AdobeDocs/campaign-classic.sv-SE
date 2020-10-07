@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -61,7 +58,7 @@ Verktygsfältsknapparna beskrivs i det här [avsnittet](../../campaign/using/mar
 
    Den här åtgärden avbryter och startar sedan om arbetsflödet. I de flesta fall går det att starta om snabbare. Det är också användbart att automatisera omstarten när stoppet tar en viss tid: Detta beror på att &quot;Stoppa&quot;-kommandot inte är tillgängligt när arbetsflödet stoppas.
 
-   Åtgärderna är också tillgängliga via körningsikonerna i verktygsfältet. **[!UICONTROL Start / Pause / Stop / Restart]** For more on this, refer to this [section](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Åtgärderna är också tillgängliga via körningsikonerna i verktygsfältet. **[!UICONTROL Start / Pause / Stop / Restart]** Mer information om detta hittar du i det här [avsnittet](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
 * **[!UICONTROL Purge history]**
 
@@ -87,7 +84,7 @@ Verktygsfältsknapparna beskrivs i det här [avsnittet](../../campaign/using/mar
 
    Den här åtgärden skapar en ny arbetsflödesmall baserad på det valda arbetsflödet. Du måste ange mappen där den ska sparas (i **[!UICONTROL Folder]** fältet).
 
-   Alternativen **[!UICONTROL Mass update of selected lines]** och **[!UICONTROL Merge selected lines]** är allmänna plattformsalternativ som är tillgängliga på alla **[!UICONTROL Actions]** menyer. For more on this, refer to this [section](../../platform/using/updating-data.md).
+   Alternativen **[!UICONTROL Mass update of selected lines]** och **[!UICONTROL Merge selected lines]** är allmänna plattformsalternativ som är tillgängliga på alla **[!UICONTROL Actions]** menyer. Mer information om detta hittar du i det här [avsnittet](../../platform/using/updating-data.md).
 
 ## Högerklicka på menyn {#right-click-menu}
 
