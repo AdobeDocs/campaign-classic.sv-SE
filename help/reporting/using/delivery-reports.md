@@ -11,14 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1456'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -76,7 +73,7 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 * **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klicka på länkar för att ta bort prenumerationen och spegelsidor beaktas.
 * **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
 * **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
-* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). Se den här [sidan](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). Refer to this [page](../../delivery/using/monitoring-a-delivery.md).
 * **[!UICONTROL Estimation of forwards]** : Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
 
    >[!NOTE]
@@ -95,7 +92,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den **[!UICONTROL Domains]** specificerade listan och ändrar värden och alias. For more on this, refer to [this section](../../platform/using/managing-enumerations.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör något värde i den specificerade listan.
+>Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den **[!UICONTROL Domains]** specificerade listan och ändrar värden och alias. Mer information om detta finns i [det här avsnittet](../../platform/using/managing-enumerations.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör något värde i den specificerade listan.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -132,7 +129,7 @@ Den här rapporten innehåller en lista över besökta sidor efter en leverans.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Du kan konfigurera innehållet i den här rapporten genom att välja: det poängdiagram som ska visas, tidsfiltret (sedan åtgärden startades, under de första 6 timmarna efter start osv.) och datavisningsläget (per etikett, per URL, per kategori - mer information finns på [den här sidan](../../delivery/using/monitoring-a-delivery.md)). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.
+Du kan konfigurera innehållet i den här rapporten genom att välja: det poängdiagram som ska visas, tidsfiltret (sedan åtgärden startades, under de första 6 timmarna efter start osv.) och datavisningsläget (per etikett, per URL, per kategori - mer information finns på [den här sidan](../../delivery/using/monitoring-a-delivery.md)). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
 
 Följande frekvenser visas i rapportens övre del:
 
@@ -167,7 +164,7 @@ Den här rapporten innehåller all huvudinformation om leveransen.
 Det här avsnittet har två indikatorer:
 
 * **[!UICONTROL Initial population]** : Totalt antal mottagare som leveransmålet gäller.
-* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, har satts i karantän, lagts till i blockeringslistan osv. Mer information om typologiregler finns på den här [sidan](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, har satts i karantän, lagts till blockeringslista, osv. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -198,7 +195,7 @@ Den här rapporten innehåller statistik om öppningar, klick och transaktioner.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera hur värden visas genom att ändra tidsskalan (1 timme, 3 timmar eller 24 timmar). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.
+Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera hur värden visas genom att ändra tidsskalan (1 timme, 3 timmar eller 24 timmar). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
 
 Den här rapporten innehåller en värdetabell och ett Pareto-diagram som visar hur lång tid det tar att leverera för att uppnå maximal effektivitet. Följande indikatorer används:
 
