@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -63,7 +60,7 @@ Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
 När leveransen har skickats kan du jämföra beteendet hos de uteslutna mottagarna med mottagarna som tog emot leveransen. Sedan kan ni mäta effektiviteten i era kampanjer. Läs mer om kontrollgrupper i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-Om du vill konfigurera en kontrollgrupp klickar du på **[!UICONTROL To]** länken. Välj **[!UICONTROL Select target]** fliken i **[!UICONTROL Control group]** fönstret. Du kan extrahera en del av målet, till exempel ett slumpmässigt urval på 5 %.
+Klicka på **[!UICONTROL To]** länken om du vill konfigurera en kontrollgrupp. Välj **[!UICONTROL Select target]** fliken i **[!UICONTROL Control group]** fönstret. Du kan extrahera en del av målet, till exempel ett slumpmässigt urval på 5 %.
 
 ![](assets/d_best_practices_control_group.png)
 
