@@ -1,7 +1,7 @@
 ---
-title: Konfigurera mobilprogrammet i Adobe Campaign
-seo-title: Konfigurera mobilprogrammet i Adobe Campaign
-description: Konfigurera mobilprogrammet i Adobe Campaign
+title: Konfigurera den mobila applikationen i Adobe Campaign
+seo-title: Konfigurera den mobila applikationen i Adobe Campaign
+description: Konfigurera den mobila applikationen i Adobe Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
 
-# Konfigurera mobilprogrammet i Adobe Campaign {#configuring-the-mobile-application-in-adobe-campaign}
+# Konfigurera den mobila applikationen i Adobe Campaign {#configuring-the-mobile-application-in-adobe-campaign}
 
 Nedan finns ett konfigurationsexempel som baseras på ett företag som säljer semesterpaket online. Hans mobilapplikation (Neotrips) finns i två versioner: Neotrips för Android och Neotrips för iOS. Om du vill konfigurera mobilprogrammet i Adobe Campaign måste du:
 
@@ -38,13 +38,13 @@ Nedan finns ett konfigurationsexempel som baseras på ett företag som säljer s
 
 >[!CAUTION]
 >
->Programmet måste ha konfigurerats för push-åtgärder INNAN du integrerar med Adobe Campaign SDK.
+>Programmet måste ha konfigurerats för push-åtgärder FÖRE integrering med Adobe Campaign SDK.
 >
 >Om så inte är fallet, se [den här sidan](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
-### Steg 1:Installera paketet {#installing-package-ios}
+### Steg 1: Installera paketet {#installing-package-ios}
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** Adobe Campaign-klientkonsolen.
+1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** Adobe Campaign klientkonsol.
 
    ![](assets/package_ios.png)
 
@@ -72,7 +72,7 @@ För iOS finns två anslutningar:
 Så här väljer du vilken koppling du vill använda:
 
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**.
-1. Välj det **[!UICONTROL iOS routing]** externa kontot.
+1. Select the **[!UICONTROL iOS routing]** external account.
 1. På **[!UICONTROL Connector]** fliken fyller du i **[!UICONTROL Access URL of the connector]** fältet:
 
    För iOS HTTP2: http://localhost:8080/nms/jsp/iosHTTP2.jsp
@@ -83,7 +83,7 @@ Så här väljer du vilken koppling du vill använda:
    >
    > Du kan även konfigurera den enligt https://localhost:8080/nms/jsp/ios.jsp, men vi rekommenderar att du använder version 2 av kopplingen.
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
 Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
@@ -93,7 +93,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
    ![](assets/nmac_service_1.png)
 
-1. Definiera en **[!UICONTROL Label]** och en **[!UICONTROL Internal name]**.
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. Gå till **[!UICONTROL Type]** fältet och välj **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
@@ -125,7 +125,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
 1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: Integrera [Campaign SDK i mobilapplikationen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
+1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: [Integrera Campaign SDK i mobilapplikationen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
 
    >[!NOTE]
    >
@@ -145,7 +145,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
    ![](assets/nmac_ios_5.png)
 
-1. Klicka **[!UICONTROL Finish]**. Ditt iOS-program kan nu användas i Campaign Classic.
+1. Klicka på **[!UICONTROL Finish]**. iOS-programmet är nu klart att användas i Campaign Classic.
 
 ### Steg 4: Skapa ett iOS-meddelande {#creating-ios-delivery}
 
@@ -155,7 +155,7 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
 1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
-1. Klicka **[!UICONTROL New]**.
+1. Klicka på **[!UICONTROL New]**.
 
    ![](assets/nmac_android_3.png)
 
@@ -186,9 +186,9 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 ## Konfigurera mobilprogrammet med Android {#configuring-the-mobile-application-android}
 
-### Steg 1:Installera paketet {#installing-package-android}
+### Steg 1: Installera paketet {#installing-package-android}
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** Adobe Campaign-klientkonsolen.
+1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** Adobe Campaign klientkonsol.
 
    ![](assets/package_ios.png)
 
@@ -216,7 +216,7 @@ För Android finns två anslutningar:
 Så här väljer du vilken koppling du vill använda:
 
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**.
-1. Välj det **[!UICONTROL Android routing]** externa kontot.
+1. Select the **[!UICONTROL Android routing]** external account.
 1. På **[!UICONTROL Connector]** fliken fyller du i **[!UICONTROL JavaScript used in the connector]** fältet:
 
    För Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
@@ -237,7 +237,7 @@ Så här väljer du vilken koppling du vill använda:
 
    ![](assets/nmac_service_1.png)
 
-1. Definiera en **[!UICONTROL Label]** och en **[!UICONTROL Internal name]**.
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. Gå till **[!UICONTROL Type]** fältet och välj **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
@@ -254,9 +254,9 @@ Så här väljer du vilken koppling du vill använda:
 
    ![](assets/nmac_android.png)
 
-1. Ange en **[!UICONTROL Label]**.
+1. Ange ett **[!UICONTROL Label]** värde.
 
-1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: Integrera [Campaign SDK i mobilapplikationen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: [Integrera Campaign SDK i mobilapplikationen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -272,9 +272,9 @@ Så här väljer du vilken koppling du vill använda:
 
    ![](assets/nmac_android_2.png)
 
-1. Klicka **[!UICONTROL Finish]** då **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
+1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
 
-Som standard sparar Adobe Campaign en nyckel i fältet **[!UICONTROL User identifier]** (@userKey) i **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabellen. Med den här nyckeln kan du länka en prenumeration till en mottagare. Om du vill samla in ytterligare data (till exempel en komplex avstämningsnyckel) måste du använda följande konfiguration:
+Som standard sparar Adobe Campaign en nyckel i **[!UICONTROL User identifier]** (@userKey)-fältet i **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabellen. Med den här nyckeln kan du länka en prenumeration till en mottagare. Om du vill samla in ytterligare data (till exempel en komplex avstämningsnyckel) måste du använda följande konfiguration:
 
 1. Skapa ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schemat och definiera de nya fälten.
 1. Definiera mappningen på **[!UICONTROL Subscription parameters]** fliken.
@@ -288,7 +288,7 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
 1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
-1. Klicka **[!UICONTROL New]**.
+1. Klicka på **[!UICONTROL New]**.
 
    ![](assets/nmac_android_3.png)
 
