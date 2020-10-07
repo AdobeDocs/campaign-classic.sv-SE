@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: a557026c-3b6a-4302-a042-0015449eaca5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,7 @@ Mer information om den beskrivande analysguiden finns i [det här avsnittet](../
 
 En pivottabell ger en snabb överblick över antalet erbjudanden per rankning. Precis som med alla rapporter i Adobe Campaign kan du exportera, skriva ut, arkivera eller visa dem i en webbläsare.
 
-Mer information finns i [det här avsnittet](../../reporting/using/actions-on-reports.md).
+Mer information om detta finns i [det här avsnittet](../../reporting/using/actions-on-reports.md).
 
 ![](assets/offer_simulation_013.png)
 
