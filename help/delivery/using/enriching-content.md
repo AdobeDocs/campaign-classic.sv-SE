@@ -1,7 +1,7 @@
 ---
-title: Förbättra innehåll
-seo-title: Förbättra innehåll
-description: Förbättra innehåll
+title: Berika innehåll
+seo-title: Berika innehåll
+description: Berika innehåll
 seo-description: null
 page-status-flag: never-activated
 uuid: 6f1bce9f-88ed-4ad3-987f-79f6c68264d2
@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4404c21e-0a89-4762-af20-384ad7071916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 1%
 
 ---
 
 
-# Förbättra innehåll{#enriching-content}
+# Berika innehåll{#enriching-content}
 
-Med aggregerare kan du förbättra innehållet med externa data. Dessa data kommer från generiska frågor eller länkade tabeller.
+Med aggregatorer kan du utöka innehållet med externa data. Dessa data kommer från generiska frågor eller länkade tabeller.
 
 ## Allmänna frågor {#generic-queries}
 
