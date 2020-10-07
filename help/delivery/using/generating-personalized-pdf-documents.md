@@ -1,7 +1,7 @@
 ---
-title: Generera skräddarsydda PDF-dokument
-seo-title: Generera skräddarsydda PDF-dokument
-description: Generera skräddarsydda PDF-dokument
+title: Generera personaliserade PDF-dokument
+seo-title: Generera personaliserade PDF-dokument
+description: Generera personaliserade PDF-dokument
 seo-description: null
 page-status-flag: never-activated
 uuid: d4c27523-bff3-457a-ba60-e2747a2b3166
@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 8dfc5e7c-c762-46ba-bbda-a7251354cb47
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# Generera skräddarsydda PDF-dokument{#generating-personalized-pdf-documents}
+# Generera personaliserade PDF-dokument{#generating-personalized-pdf-documents}
 
 ## Om variabla PDF-dokument {#about-variable-pdf-documents}
 
-Med Adobe Campaign kan du generera variabla PDF-dokument (för e-postbilagor, direktreklam) från dokument i LibreOffice eller Microsoft Word.
+Med Adobe Campaign kan du generera variabla PDF-dokument (för e-postbilagor, direktutskick) från dokument i LibraryOffice eller Microsoft Word.
 
 Följande tillägg stöds: &quot;.docx&quot;, &quot;.doc&quot; och &quot;.odt&quot;.
 
@@ -69,7 +69,7 @@ För att göra detta måste du konfigurera ett personaliseringsblock och sedan t
 
 **Steg 2: skapa personaliseringsblocket:**
 
-* Gå till menyn **[!UICONTROL Resources > Campaign management > Personalization blocks]** i Adobe Campaign-konsolen.
+* Gå till Adobe Campaign-konsolens **[!UICONTROL Resources > Campaign management > Personalization blocks]** meny.
 * Skapa ett nytt anpassningsblock för&quot;Min logotyp&quot; med&quot;Min_logotyp&quot; som internt namn.
 * Klicka på **[!UICONTROL Advanced parameters...]** länken och markera sedan **[!UICONTROL "The content of the block is included in an attachment"]** alternativet. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
 
@@ -77,7 +77,7 @@ För att göra detta måste du konfigurera ett personaliseringsblock och sedan t
 
    Ni måste skilja på två typer av deklarationer inom personaliseringsblocket:
 
-   * Adobe Campaign-koden för de anpassningsfält där&quot;öppna&quot;- och&quot;stängda&quot;-texterna måste ersättas med escape-tecken ( `&lt;` respektive `&gt;`).
+   * Adobe Campaign-koden för de anpassningsfält för vilka&quot;öppna&quot; och&quot;stängda&quot;-texterna måste ersättas med escape-tecken (respektive `&lt;` och `&gt;`).
    * Hela OpenOffice XML-koden kopieras till OpenOffice-dokumentet.
 
 I exemplet ser personaliseringsblocket ut så här:
