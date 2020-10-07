@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
 
 # Verksamhetsprincip{#operating-principle}
 
-Tekniskt sett är Adobe Campaign-plattformen baserad på flera moduler.
+Tekniskt sett bygger Adobe Campaign-plattformen på flera moduler.
 
 Det finns många Adobe Campaign-moduler. Vissa arbetar kontinuerligt medan andra startas ibland för att utföra administrativa uppgifter (t.ex. konfigurera databasanslutningen) eller för att köra en återkommande uppgift (t.ex. konsolidera spårningsinformation).
 
 Det finns tre typer av Adobe Campaign-moduler:
 
-* Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **web**, **syslogd**, **trackinglogd** och **watchdog** (aktiviteter från filen **config-default.xml** ).
-* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** **`<instance>`** (aktiviteter från filen¥config-¥.xml¥).
+* Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **web**, **syslogd**, **trackinglog** och **watchdog** (aktiviteter från **filen config-default.xml** ).
+* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från filen **`<instance>`** config-¥.xml¥).
 * Verktygsmoduler: Detta är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensning**, **konfiguration**, hämtning av spårningsloggar osv.).
 
 Moduladministration utförs med kommandoradsverktyget **nlserver** som är installerad i **katalogen bin** i installationsmappen.
@@ -49,9 +49,9 @@ De tillgängliga modulerna beskrivs i följande tabell:
 | rensa | Rensar databasen: tar bort inaktuella data från databasen och kör en uppdatering av statistiken som används av databasmotoroptimeraren. |
 | config | Ändrar serverkonfiguration |
 | copybase | Kopia av databas |
-| export | Exportera till kommandorad: gör att du kan skicka en exportmodell som skapats i Adobe Campaign-klientkonsolen till kommandoraden |
+| export | Exportera till kommandorad: gör att du kan skicka en exportmodell som skapats i Adobe Campaign klientkonsol till kommandoraden |
 | filconvert | Konvertera en fil med fast storlek |
-| import | Importera till kommandoraden: Med kan du skicka en importmodell som har skapats i Adobe Campaign-klientkonsolen till kommandoraden. |
+| import | Importera till kommandoraden: Med kan du skicka en importmodell som har skapats i Adobe Campaign klientkonsol till kommandoraden. |
 | inMail | Analysera inkommande e-post |
 | installsetup | Tillgång till kundinstallationsfilen |
 | javascript | Köra JavaScript-skript med tillgång till SOAP API:er. |
