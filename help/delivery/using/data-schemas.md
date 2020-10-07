@@ -1,7 +1,7 @@
 ---
-title: Datamodeller
-seo-title: Datamodeller
-description: Datamodeller
+title: Datascheman
+seo-title: Datascheman
+description: Datascheman
 seo-description: null
 page-status-flag: never-activated
 uuid: 3327a38c-e44d-4581-a67b-bb60c1604a5f
@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: aeaa9475-3715-40a4-8864-29d126883272
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
 
-# Datamodeller{#data-schemas}
+# Datascheman{#data-schemas}
 
-Nedan följer några allmänna principer för användningen av datamappningar i Adobe Campaign.
+Nedan följer några allmänna principer för användningen av datarotor i Adobe Campaign.
 
-Mer information om hur du skapar och konfigurerar datamappningar i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
+Mer information om hur du skapar och konfigurerar datamodeller i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
 
 ## Schemastruktur {#schema-structure}
 
@@ -172,7 +172,7 @@ Här är vårt exempelschema med **beräkningssträngen**:
 </srcSchema>
 ```
 
-## Redigera scheman {#editing-schemas}
+## Redigera scheman{#editing-schemas}
 
 I redigeringsfältet kan du ange XML-innehållet i källschemat:
 
