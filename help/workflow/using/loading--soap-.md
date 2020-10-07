@@ -1,7 +1,7 @@
 ---
-title: Läser in (SOAP)
-seo-title: Läser in (SOAP)
-description: Läser in (SOAP)
+title: Läsa in (SOAP)
+seo-title: Läsa in (SOAP)
+description: Läsa in (SOAP)
 seo-description: null
 page-status-flag: never-activated
 uuid: 80597892-e363-48f6-8633-faad161064a4
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
 
-# Läser in (SOAP){#loading-soap}
+# Läsa in (SOAP){#loading-soap}
 
 >[!CAUTION]
 >
@@ -56,7 +56,7 @@ Aktiviteten **Loading (SOAP)** används utöver aktiviteten för **datainläsnin
    * **[!UICONTROL Initialization]**: skapar en SOAP-anslutning.
    * **[!UICONTROL Iteration]**: utför anropet till SOAP-tjänsten. Returvärdet för den här funktionen måste vara ett XML-objekt som är kompatibelt med beskrivningen av exemplet eller WSDL.
 
-      Koden på den här fliken anropas i en slinga av Adobe Campaign tills ett XML-objekt som är null returneras.
+      Koden för den här fliken anropas i en slinga av Adobe Campaign tills ett XML-objekt som är null returneras.
 
    * **[!UICONTROL Finalization]**: stänger anslutningen och/eller frigör andra resurser som skapas under bearbetningen.
 
