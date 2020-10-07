@@ -1,7 +1,7 @@
 ---
-title: '"Användningsfall: visa rapport om svar på en nätundersökning"'
-seo-title: '"Användningsfall: visa rapport om svar på en nätundersökning"'
-description: '"Användningsfall: visa rapport om svar på en nätundersökning"'
+title: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
+seo-title: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
+description: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c0a5b7d-c606-4bcb-9600-8f89e6fce32a
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 9%
 
 ---
 
 
-# Användningsfall: visa rapport om svar på en nätundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Användningsfall: visa rapport gällande svar på en nätundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-Svar på Adobe Campaign-enkäter kan samlas in och analyseras med dedikerade rapporter.
+Svar på Adobe Campaign enkäter kan samlas in och analyseras med hjälp av särskilda rapporter.
 
 I följande exempel vill vi samla in svar på en onlineundersökning och visa dem i en pivottabell
 
@@ -42,7 +42,7 @@ Innan du börjar använda det här användningsexemplet måste du ha tillgång t
 
 Så här samlar du in svaren på enkäten:
 
-1. Skapa ett arbetsflöde och placera en **[!UICONTROL Answers to a survey]** aktivitet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Skapa ett arbetsflöde och placera en **[!UICONTROL Answers to a survey]** aktivitet. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Redigera aktiviteten och välj den undersökning vars svar du vill analysera.
 1. Aktivera alternativet **[!UICONTROL Select all the answer data]** att samla in all information.
 
@@ -90,7 +90,7 @@ Du kan sedan skapa en rapport baserad på den här kuben och bearbeta data och i
 
 ![](assets/reporting_usecase_3_01.png)
 
-Anpassa informationen efter behov.
+Anpassa informationen efter era behov.
 
 ![](assets/reporting_usecase_3_02.png)
 
