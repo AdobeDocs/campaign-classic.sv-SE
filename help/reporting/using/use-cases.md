@@ -1,7 +1,7 @@
 ---
-title: Användningsexempel
-seo-title: Användningsexempel
-description: Användningsexempel
+title: Användningsfall
+seo-title: Användningsfall
+description: Användningsfall
 seo-description: null
 page-status-flag: never-activated
 uuid: 86762d94-2a7d-4053-980b-c699a58a021d
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 691eea2c-bffc-4520-91c8-43798eece916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 0%
 
 ---
 
 
-# Användningsexempel{#use-cases}
+# Användningsfall{#use-cases}
 
 ## Analysera en population {#analyzing-a-population}
 
@@ -38,7 +38,7 @@ För att göra detta väljer du de aktuella leveranserna, högerklickar och väl
 
 ### Välja en analystyp {#selecting-a-type-of-analysis}
 
-I det första steget i assistenten kan du välja den beskrivande analysmall som ska användas. Adobe Campaign har som standard två mallar: **[!UICONTROL Qualitative distribution]** och **[!UICONTROL Quantitative distribution]**. Mer information finns i avsnittet [Konfigurera den kvalitativa distributionsmallen](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) . De olika återgivningarna presenteras i avsnittet [Om beskrivande analys](../../reporting/using/about-descriptive-analysis.md) .
+I det första steget i assistenten kan du välja den beskrivande analysmall som ska användas. Som standard har Adobe Campaign två mallar: **[!UICONTROL Qualitative distribution]** och **[!UICONTROL Quantitative distribution]**. For more on this refer to the [Configuring the qualitative distribution template](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) section. De olika återgivningarna presenteras i avsnittet [Om beskrivande analys](../../reporting/using/about-descriptive-analysis.md) .
 
 I det här exemplet markerar du **[!UICONTROL Qualitative distribution]** mallen och väljer en visning med ett diagram och en tabell (matris). Ge rapporten ett namn (&quot;Beskrivning analys&quot;) och klicka på **[!UICONTROL Next]**.
 
@@ -82,7 +82,7 @@ I det här fönstret kan du definiera en lista med statistik som ska beräknas.
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** . Mer information finns i [Statistikberäkning](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** . For more on this, refer to [Statistics calculation](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Visa och använda rapporten {#viewing-and-using-the-report}
 
