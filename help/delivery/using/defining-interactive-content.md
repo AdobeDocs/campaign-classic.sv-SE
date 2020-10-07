@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
+source-git-commit: a636d56652e1045e7c48bd2e1a2420b58212739a
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) , som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
-I den här versionen kan du:
+För närvarande kan du med AMP för e-post:
 * Testa att leverera AMP-e-post till specifika adresser som är korrekt konfigurerade.
 * Leverera AMP-e-post till Gmail-, Outlook- eller Mail.ru-adresser efter registrering hos motsvarande leverantörer.
 
@@ -55,19 +55,14 @@ Mer information om AMP för e-postformat, specifikationer och krav finns i [AMP-
 ## Viktiga steg för att använda AMP för e-post med Adobe Campaign {#key-steps-to-use-amp}
 
 Följ stegen nedan för att testa och skicka ett AMP-e-postmeddelande med Adobe Campaign:
-1. Installera **[!UICONTROL AMP support (Beta)]** paketet. Se [Installera Campaign-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+1. Installera **[!UICONTROL AMP support]** paketet. Se [Installera Campaign-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 1. Skapa ett e-postmeddelande och bygg ditt AMP-innehåll i Adobe Campaign. Se [Skapa e-postinnehåll för AMP med Adobe Campaign](#build-amp-email-content).
 1. Se till att du uppfyller alla leveranskrav från e-postleverantörer som stöder AMP-formatet. Se [AMP för leveranskrav](#amp-for-email-delivery-requirements)via e-post.
-
-   >[!NOTE]
-   >
-   >AMP for Email finns som betafunktion för testning. För närvarande stöder bara ett fåtal e-postleverantörer testning av det här formatet.
-
 1. När du definierar målet måste du markera de mottagare som ska kunna visa AMP-formatet. Se [Ange ett AMP-e-postmeddelande](#targeting-amp-email)som mål.
 
    >[!NOTE]
    >
-   >För närvarande kan du bara testa att leverera AMP-e-postmeddelanden till specifika e-postadresser som är korrekt konfigurerade eller efter registrering hos de e-postleverantörer som deltar i AMP-betaprogrammet.
+   >För närvarande kan du bara leverera AMP-e-postmeddelanden till [specifika e-postadresser](#testing-amp-delivery-for-selected-addresses) (för testning) eller efter [registrering](#delivering-amp-emails-by-registering) med de e-postklienter som stöds.
 
 1. Skicka e-post som vanligt. Se [Skicka ett AMP-e-postmeddelande](#sending-amp-email).
 
@@ -156,10 +151,10 @@ Du kan även läsa [Tips och kända begränsningar för Gmail](https://developer
 
 ## Ange ett AMP-e-postmeddelande {#targeting-amp-email}
 
-AMP för e-post är tillgängligt som betafunktion och för närvarande kan du experimentera med att skicka AMP-e-post i två steg:
+För närvarande kan du experimentera med att skicka ett AMP-mejl i två steg:
 
 1. Med Adobe Campaign kan du testa att leverera en AMP-driven dynamisk e-post till utvalda e-postadresser som är korrekt konfigurerade, för att verifiera dess innehåll och beteende. Se [Testa AMP-e-postleverans för valda adresser](#testing-amp-delivery-for-selected-addresses).
-1. När du har testats kan du skicka en leverans eller en kampanj som en del av betaprogrammet för AMP för e-post genom att registrera dig hos de relevanta e-postleverantörerna för att lägga till din avsändardomän i tillåtelselista. Se [Leverera AMP-e-post genom att registrera hos en e-postleverantör](#delivering-amp-emails-by-registering).
+1. När du har testats kan du skicka en leverans eller en kampanj som en del av AMP for Email-programmet genom att registrera dig hos de relevanta e-postleverantörerna för att lägga till din avsändardomän i tillåtelselista. Se [Leverera AMP-e-post genom att registrera hos en e-postleverantör](#delivering-amp-emails-by-registering).
 
 ### Testar AMP-e-postleverans för valda adresser {#testing-amp-delivery-for-selected-addresses}
 
@@ -183,7 +178,7 @@ Om du vill testa att skicka ett AMP-e-postmeddelande till en Mail.ru-adress föl
 
 ### Leverera AMP-mejl genom att registrera hos en e-postleverantör {#delivering-amp-emails-by-registering}
 
-Du kan experimentera med att leverera dynamiska e-postmeddelanden genom att registrera dig hos de e-postleverantörer som deltar i AMP-betaprogrammet så att din avsändardomän läggs till i tillåtelselista.
+Du kan experimentera med att leverera dynamiska e-postmeddelanden genom att registrera dig hos de e-postleverantörer som stöds så att din avsändardomän läggs till i tillåtelselista.
 
 >[!NOTE]
 >
