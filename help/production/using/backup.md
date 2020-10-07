@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 870ab0f2-1bd7-42e7-8d83-a08a520b6587
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse a
 
 Data lagras på två olika platser:
 
-* fysiska filer lagras i Adobe Campaign-katalogerna,
+* fysiska filer lagras i Adobe Campaign kataloger,
 * andra data lagras i databasen.
 
 De flesta data finns i databasen. Detta motsvarar 99 % av den information som ska säkerhetskopieras.
@@ -37,7 +37,7 @@ Filerna är uppdelade i flera kategorier:
 
 * Konfigurationsfiler i **nl6/conf**
 
-   Med dessa kan ni snabbt konfigurera om Adobe Campaign.
+   Med dessa kan du snabbt konfigurera om Adobe Campaign.
 
 * Omdirigeringsfiler ** nl6/var/`<instancename>`/redir**
 
@@ -63,6 +63,6 @@ Kataloger som ska säkerhetskopieras är därför:
 
 ## Databas {#database}
 
-Databasen innehåller all information som visas i Adobe Campaign-klientkonsolen samt alla affärsdata.
+Databasen innehåller all information som visas i Adobe Campaign Rich Client Console samt alla affärsdata.
 
 Ditt värdföretag och deras databasadministratörer ansvarar för den här åtgärden.
