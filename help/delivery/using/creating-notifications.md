@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -63,7 +60,7 @@ Börja med att skapa en ny leverans.
 
 1. I **[!UICONTROL Title]** fältet anger du etiketten för titeln som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet på **title** -parametern för iOS-meddelandenyttolasten.
 
-1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **undertitle** -parametern i iOS-meddelandenyttolasten). Mer information finns i [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **undertitle** -parametern i iOS-meddelandenyttolasten). Mer information finns i avsnittet [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 
 1. Ange sedan **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
 
@@ -100,11 +97,11 @@ Börja med att skapa en ny leverans.
 
 Använd samma process som för e-postleveranser om du vill skicka ett korrektur och den slutliga leveransen.
 
-När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information finns i följande avsnitt:
+När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
 * [Kantlinjer för push-meddelanden](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Övervaka leverans](../../delivery/using/monitoring-a-delivery.md)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md)
+* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
 
 ## Skicka meddelanden på Android {#sending-notifications-on-android}
 
@@ -143,8 +140,8 @@ Den detaljerade processen för att validera och skicka en leverans presenteras i
 * [Verifierar leveransen](../../delivery/using/steps-validating-the-delivery.md)
 * [Skicka leveransen](../../delivery/using/steps-sending-the-delivery.md)
 
-När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information finns i följande avsnitt:
+När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
 * [Kantlinjer för push-meddelanden](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Övervaka leverans](../../delivery/using/monitoring-a-delivery.md)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md)
+* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
