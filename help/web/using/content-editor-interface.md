@@ -1,7 +1,7 @@
 ---
-title: Gränssnitt för innehållsredigering
-seo-title: Gränssnitt för innehållsredigering
-description: Gränssnitt för innehållsredigering
+title: Gränssnitt för innehållsredigeraren
+seo-title: Gränssnitt för innehållsredigeraren
+description: Gränssnitt för innehållsredigeraren
 seo-description: null
 page-status-flag: never-activated
 uuid: b108ea74-ae2c-4e47-bee8-12070927ba89
@@ -12,16 +12,16 @@ content-type: reference
 topic-tags: editing-html-content
 dc-title: </strong> and
 discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
 
-# Gränssnitt för innehållsredigering{#content-editor-interface}
+# Gränssnitt för innehållsredigeraren{#content-editor-interface}
 
 ## Redigeringsfönster {#editing-window}
 
@@ -30,7 +30,7 @@ DCE-redigeringsfönstret är indelat i tre olika avsnitt. De gör att du kan vis
 ![](assets/dce_decoupe_window_nb.png)
 
 1. Det **övre** avsnittet är ett visningsområde för meddelanden till användaren. Dessa meddelanden anger status för webbprogrammet eller leveransen som skapas, liksom varningar och felmeddelanden för innehållet. Mer information finns i [HTML-innehållsstatus](../../web/using/content-editing-best-practices.md#html-content-statuses).
-1. Avsnittet till **vänster** om fönstret är området där du kan redigera innehåll. I det här området kan användaren interagera direkt med innehållet via popup-verktygsfältet: infoga en länk i en bild, ändra teckensnitt, ta bort ett fält osv. Mer information finns i [Redigera formulär](../../web/using/editing-content.md#editing-forms).
+1. Avsnittet till **vänster** om fönstret är området där du kan redigera innehåll. I det här området kan användaren interagera direkt med innehållet via popup-verktygsfältet: infoga en länk i en bild, ändra teckensnitt, ta bort ett fält osv. For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
 1. Avsnittet till **höger** om fönstret är kontrollpanelens område. I det här området grupperas de olika alternativen för redigeraren, särskilt de som gäller konfigurering av sidrubriken och allmänna alternativ för ett block: lägga till en kant, länka ett databasfält med en indatazon, få åtkomst till egenskaper för webbsidor, osv. Mer information finns i avsnitten [Globala alternativ](#global-options) och [Redigera innehåll](../../web/using/editing-content.md) .
 
 ## Globala alternativ {#global-options}
@@ -92,5 +92,5 @@ Verktygsfältet är ett **popup-element** i DCE-gränssnittet som visar olika fu
 
 >[!CAUTION]
 >
->Med vissa verktygsfältsfunktioner kan du formatera HTML-innehållet. Om sidan innehåller en CSS-formatmall kan det emellertid visa sig att **instruktionerna** från formatmallen har **högre prioritet** än instruktionerna som har angetts i verktygsfältet.
+>Du kan formatera HTML-innehållet med vissa verktygsfältsfunktioner. However, if the page contains a CSS style sheet, the **instructions** from the style sheet may prove to take **priority** over the instructions specified with the toolbar.
 
