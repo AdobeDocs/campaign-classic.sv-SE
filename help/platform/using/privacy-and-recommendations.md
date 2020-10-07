@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -48,7 +45,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i en
 
 >[!NOTE]
 >
->Mer information om hur GDPR, CCPA, PDPA och LGPD gäller för Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
+>Mer information om hur GDPR, CCPA, PDPA och LGPD gäller för Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -120,7 +117,7 @@ De viktigaste sekretessfunktionerna i Campaign och ett exempel på vilka persone
 
 Ursprungligen har Adobe Campaign viktiga funktioner som är viktiga för sekretessen:
 
-* **Hantering** av samtycke: Genom prenumerationshanteringen kan du hantera mottagarnas inställningar och spåra vilka mottagare som har valt vilken typ av prenumerationer du vill ha. Mer information finns i [Om prenumerationer](../../delivery/using/about-services-and-subscriptions.md).
+* **Hantering** av samtycke: Genom prenumerationshanteringsprocessen kan du hantera mottagarnas inställningar och spåra vilka mottagare som har valt vilken typ av prenumerationer du vill ha. Mer information finns i [Om prenumerationer](../../delivery/using/about-services-and-subscriptions.md).
 * **Datalagring**: Alla inbyggda standardloggtabeller har förinställda lagringsperioder, vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare kvarhållningsperioder kan ställas in med arbetsflöden. Mer information får du om du kontaktar konsulterna eller teknikadministratörerna på Adobe.
 * **Rättighetshantering**: Adobe Campaign ger er möjlighet att hantera de rättigheter som tilldelats olika Campaign-operatorer via olika färdiga eller anpassade roller. På så sätt kan du hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Mer information finns i [Om åtkomsthantering](../../platform/using/access-management.md).
 
@@ -136,7 +133,7 @@ Adobe Campaign erbjuder ytterligare funktioner som hjälper dig att underlätta 
 
 >[!NOTE]
 >
->Den här uppsättningen verktyg är till för att hjälpa dig att uppfylla dina krav på sekretess för GDPR, CCPA, PDPA och LGPD. Mer information om de olika reglerna finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
+>Den här uppsättningen verktyg är till för att hjälpa dig att uppfylla dina krav på sekretess för GDPR, CCPA, PDPA och LGPD. Mer information om de olika reglerna finns på [den här sidan](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
