@@ -1,7 +1,7 @@
 ---
-title: Leverantörer, stockar och budgetar
-seo-title: Leverantörer, stockar och budgetar
-description: Leverantörer, stockar och budgetar
+title: Leverantörer, lager och budgetar
+seo-title: Leverantörer, lager och budgetar
+description: Leverantörer, lager och budgetar
 seo-description: null
 page-status-flag: never-activated
 uuid: 6caffaaf-a6a6-40e1-8b17-07c81748382c
@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -23,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# Leverantörer, stockar och budgetar{#providers-stocks-and-budgets}
+# Leverantörer, lager och budgetar{#providers-stocks-and-budgets}
 
-Med Adobe Campaign kan ni definiera tjänsteleverantörer som ska vara engagerade i de jobb som utförs i kampanjerna. Adobe Campaign-administratören definierar information om tjänsteleverantörerna och de tillhörande kostnadsstrukturerna utifrån huvudperspektivet. Tjänsteleverantören hänvisas till från leveransen, och dess kostnadsstrukturer gör det möjligt att beräkna kostnaderna i samband med denna leverans samt förvaltningen av det berörda lagret.
+Med Adobe Campaign kan ni definiera tjänsteleverantörer som ska delta i de jobb som utförs i kampanjer. Information om tjänsteleverantörerna och de tillhörande kostnadsstrukturerna definieras av Adobe Campaign-administratören ur huvudsynvinkel. Tjänsteleverantören hänvisas till från leveransen, och dess kostnadsstrukturer gör det möjligt att beräkna kostnaderna i samband med denna leverans samt förvaltningen av det berörda lagret.
 
 ## Skapa tjänsteleverantörer och deras kostnadsstrukturer {#creating-service-providers-and-their-cost-structures}
 
@@ -33,7 +30,7 @@ Varje tjänsteleverantör sparas i en fil med kontaktinformation, tjänstmallar 
 
 Tjänsteleverantörer är konfigurerade i trädnoden **[!UICONTROL Administration > Campaign management]** .
 
-De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt för direktreklam och mobila kanaler. Dessa tjänsteleverantörer kan till exempel vara inblandade i utskrift eller distribution av meddelanden. Dessa jobb omfattar konfigurationer och kostnader som är specifika för varje tjänsteleverantör. Konfigurationen av tjänsteleverantörer omfattar fyra steg:
+De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt för direktreklam och mobila kanaler. Dessa tjänsteleverantörer kan till exempel vara inblandade i utskrift eller distribution av meddelanden. Dessa jobb omfattar konfigurationer och kostnader som är specifika för varje tjänsteleverantör. Tjänsteleverantörernas konfiguration omfattar fyra steg:
 
 1. Skapa en tjänsteleverantör i Adobe Campaign
 
@@ -70,7 +67,7 @@ Du måste associera tjänstmallar med varje tjänstleverantör. I dessa mallar m
 
 >[!NOTE]
 >
->Mer information finns i [Definiera kostnadsstrukturen](#defining-the-cost-structure).
+>For more on this, refer to [Defining the cost structure](#defining-the-cost-structure).
 
 En kostnadskategori är en enhet som innehåller en uppsättning kostnader som berättigar till en typ av leverans (e-post, direktreklam osv.) eller för en uppgift. Kostnadskategorierna grupperas i mallar för tjänster som är kopplade till tjänsteleverantörerna. Varje tjänsteleverantör kan referera till en eller flera tjänstmallar.
 
@@ -101,7 +98,7 @@ Så här skapar du en tjänstmall och definierar dess innehåll:
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### Definiera kostnadsstrukturen {#defining-the-cost-structure}
+### Defining the cost structure {#defining-the-cost-structure}
 
 För varje typ av kostnad anger en kostnadsstruktur de beräkningsregler som ska tillämpas.
 
@@ -169,7 +166,7 @@ Om du vill göra det klickar du på **[!UICONTROL Processes]** fliken för att k
 
 Tjänster är kopplade till kampanjer via leveranser eller aktiviteter. Tjänsteleverantörer är länkade till leveransmallar för att erbjuda sina tjänster i leveranser som skapas via den här mallen.
 
-När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post osv.) anges automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
+När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post osv.) visas automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
 
 >[!NOTE]
 >
@@ -194,7 +191,7 @@ Du kan införa obligatoriskt val av en kostnadstyp under definitionen av kostnad
 
 Kostnadstyperna kan kopplas till lagerrader för att hantera aviseringar, spåra leveranser och startorder.
 
-Här beskrivs förfarandet för att upprätta lager- och orderhantering i Adobe Campaign och för att varna leverantörer om det inte finns tillräckligt med material för att kunna leverera:
+Förfarandet för att upprätta lager- och orderhantering i Adobe Campaign samt för att varna aktörer om det inte finns tillräckligt med material för att en leverans ska kunna genomföras är följande:
 
 1. Skapa och referera till associerade tjänsteleverantörer
 
@@ -214,7 +211,7 @@ Här beskrivs förfarandet för att upprätta lager- och orderhantering i Adobe 
 
 ### Stock-hantering {#stock-management}
 
-Adobe Campaign kan varna en grupp operatorer om lagret har tagit slut eller nått en miniminivå. Stock-nivåerna är tillgängliga via **[!UICONTROL Stocks]** länken till **[!UICONTROL Campaigns]** universum via navigeringsområdets **[!UICONTROL Other choices]** länk.
+Adobe Campaign kan meddela en grupp operatorer om beståndet har tagit slut eller uppnått ett minimivärde. Stock-nivåerna är tillgängliga via **[!UICONTROL Stocks]** länken till **[!UICONTROL Campaigns]** universum via navigeringsområdets **[!UICONTROL Other choices]** länk.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
