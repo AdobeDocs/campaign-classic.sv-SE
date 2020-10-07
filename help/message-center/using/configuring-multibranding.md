@@ -1,7 +1,7 @@
 ---
-title: Konfigurera multibranding
-seo-title: Konfigurera multibranding
-description: Konfigurera multibranding
+title: Konfigurera flermärkesförsäljning
+seo-title: Konfigurera flermärkesförsäljning
+description: Konfigurera flermärkesförsäljning
 seo-description: null
 page-status-flag: never-activated
 uuid: 61b4235c-da03-4da8-b14b-7ffb12c8d4c8
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 907d82c8-9262-4952-b8df-21144dd55824
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5eac80743d4cc82cdf55aa9287e8bb4fcc84356
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 3%
 
 ---
 
 
-# Konfigurera multibranding{#configuring-multibranding}
+# Konfigurera flermärkesförsäljning{#configuring-multibranding}
 
 I det här avsnittet beskrivs en lösning för att konfigurera spårning och spegla sidadresser per varumärke för transaktionsmeddelanden i Adobe Campaign.
 
