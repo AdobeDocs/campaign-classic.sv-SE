@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 01d8be92-7312-4386-b5f5-651af31308f7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 4%
 
 ---
 
@@ -90,7 +90,7 @@ Kampanjarbetsflödet måste integrera aktiviteten **Lokal typ av godkännande** 
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Välj **Måldimension** och **[!UICONTROL Distribution field]**. För **[!UICONTROL Assignment type]** väljer du **Lokal entitet**.
+Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. För **[!UICONTROL Assignment type]** väljer du **Lokal entitet**.
 
 Lägg till ett fält för varje lokal enhet på **[!UICONTROL Distribution]** fliken och ange värdet.
 
@@ -110,14 +110,14 @@ Den lokala enheten kan ta bort vissa kontakter baserat på kampanjinnehållet.
 
 Om du vill skapa en enkel samarbetskampanj måste du välja **[!UICONTROL Collaborative campaign (simple)]** en mall.
 
-## Skapa ett kampanjpaket för samarbete {#creating-a-collaborative-campaign-package}
+## Creating a collaborative campaign package {#creating-a-collaborative-campaign-package}
 
 För att göra en kampanj tillgänglig för lokala enheter måste den centrala enheten skapa ett kampanjpaket.
 
 Använd följande steg:
 
 1. Klicka på **[!UICONTROL Navigation]** länken i avsnittet **på sidan** Kampanjer **[!UICONTROL Campaign packages]** .
-1. Klicka på **[!UICONTROL Create]** knappen.
+1. Klicka på knappen **[!UICONTROL Create]**.
 1. I avsnittet högst upp i fönstret kan du välja **[!UICONTROL New collaborative package (mutualizedEmpty)]** mallen.
 1. Välj referenskampanj.
 1. Ange etikett, mapp och körningsschema för kampanjpaketet.
@@ -136,7 +136,7 @@ För **samarbetskampanjer** måste den centrala enheten ange en deadline för re
 
 ### Målgrupp {#audience}
 
-Den centrala enheten måste specificera de lokala enheter som är inblandade per kampanj så snart en samarbetskampanj har skapats.
+Den centrala enheten måste ange vilka lokala enheter som deltar per kampanj så snart en samarbetskampanj har skapats.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry2.png)
 
@@ -176,7 +176,7 @@ När en lokal enhet har slutfört sin registrering meddelas centrala enheter via
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-Mer information finns i avsnittet [Godkännandeprocess](../../campaign/using/creating-a-local-campaign.md#approval-process) .
+For more on this, refer to the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
 
 ## Godkänna en order {#approving-an-order}
 
