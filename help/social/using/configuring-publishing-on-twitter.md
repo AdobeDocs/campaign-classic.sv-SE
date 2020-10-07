@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 9d74ed9c-0055-4556-a205-6e5fea11816b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,7 @@ För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste 
 
 1. Låt guiden vägleda dig genom processen.
 
-   För att det här programmet ska tillåta Adobe Campaign att skicka tweets till ditt konto går du till fliken **[!UICONTROL Permissions]** i programmet och väljer **[!UICONTROL Read and Write]** för **[!UICONTROL Access]** avsnittet. På fliken **[!UICONTROL Settings]** måste du också lämna **[!UICONTROL Callback URL]** fältet tomt.
+   Om du vill att det här programmet ska tillåta att Adobe Campaign skickar tweets till ditt konto går du till fliken **[!UICONTROL Permissions]** i programmet och väljer **[!UICONTROL Read and Write]** för **[!UICONTROL Access]** avsnittet. På fliken **[!UICONTROL Settings]** måste du också lämna **[!UICONTROL Callback URL]** fältet tomt.
 
    ![](assets/social_create_twitter_app_002.png)
 
@@ -68,7 +68,7 @@ För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste 
 
 För varje Twitter-program måste du skapa en annan **[!UICONTROL Twitter]** typtjänst som inkluderar programinställningarna.
 
-Det här steget kräver samtidig åtkomst till Adobe Campaign-konsolen och en webbläsare som är inloggad på ditt Twitter-konto:
+Det här steget kräver samtidig åtkomst till din Adobe Campaign-konsol och en webbläsare som är inloggad på ditt Twitter-konto:
 
 * **Twitter**: markera det program som skapats tidigare ([https://dev.twitter.com/apps](https://dev.twitter.com/apps)) och klicka på **[!UICONTROL Keys and Access Tokens]** .
 
@@ -84,7 +84,7 @@ Det här steget kräver samtidig åtkomst till Adobe Campaign-konsolen och en we
 
    >[!NOTE]
    >
-   >Alternativet är **[!UICONTROL Synchronize subscriptions]** aktiverat som standard. När kryssrutan är markerad återställs listan med Twitter-följare i arbetsflödet för kontosynkronisering (se [Synkronisera Twitter-konton](#synchronizing-twitter-accounts)) så att du kan skicka direktmeddelanden till dem (se [Skicka direktmeddelanden till prenumeranter](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Om du inte vill återställa listan med följare avmarkerar du den här rutan.
+   >The **[!UICONTROL Synchronize subscriptions]** option is enabled by default. När kryssrutan är markerad återställs listan med Twitter-följare i arbetsflödet för kontosynkronisering (se [Synkronisera Twitter-konton](#synchronizing-twitter-accounts)) så att du kan skicka direktmeddelanden till dem (se [Skicka direktmeddelanden till prenumeranter](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Om du inte vill återställa listan med följare avmarkerar du den här rutan.
 
 1. Ange etiketten och det interna namnet på tjänsten.
 
@@ -94,13 +94,13 @@ Det här steget kräver samtidig åtkomst till Adobe Campaign-konsolen och en we
    >
    >Tjänstens namn måste vara identiskt **[!UICONTROL Internal name]** med namnet på Twitter-kontot. Följ stegen nedan för att vara säker på att det inte finns några inmatningsfel.
 
-   * Klicka på **[!UICONTROL Save]** knappen.
+   * Klicka på knappen **[!UICONTROL Save]**.
    * Klicka på den Twitter-typtjänst som du just har skapat i översikten över tjänster.
-   * Klicka på **[!UICONTROL Twitter page]** fliken. Twitter-kontot ska visas.
+   * Klicka på fliken **[!UICONTROL Twitter page]**.  Twitter-kontot ska visas.
 
       ![](assets/social_twitter_service_010.png)
 
-1. I **[!UICONTROL Visitor folder]** fältet väljer du den besökarmapp som följarna ska skapas i. Mer information finns i [driftsprincipen](../../social/using/publishing-on-twitter.md#operating-principle). Som standard skapas följare i roten av **[!UICONTROL Visitors]** mappen.
+1. I **[!UICONTROL Visitor folder]** fältet väljer du den besökarmapp som följarna ska skapas i. For more on this, refer to [Operating principle](../../social/using/publishing-on-twitter.md#operating-principle). Som standard skapas följare i roten av **[!UICONTROL Visitors]** mappen.
 
    ![](assets/social_twitter_service_010_b.png)
 
@@ -132,6 +132,6 @@ Med **[!UICONTROL Twitter account synchronization]** arbetsflödet, som nås via
 
 >[!NOTE]
 >
->Det går att starta arbetsflödet när som helst genom att köra förväntad uppgiftsbearbetning. Du kan också redigera schemaläggaren för att ändra arbetsflödets utlösande frekvens. Mer information om schemaläggaren finns i [det här avsnittet](../../workflow/using/scheduler.md).
+>Det går att starta arbetsflödet när som helst genom att köra förväntad uppgiftsbearbetning. Du kan också redigera schemaläggaren för att ändra arbetsflödets utlösande frekvens. For more on the scheduler, refer to [this section](../../workflow/using/scheduler.md).
 
-Nu kan du skicka tweets till dina Twitter-konton och skicka direktmeddelanden till dina följare. Mer information finns i: Publicera [på Twitter](../../social/using/publishing-on-twitter.md).
+Nu kan du skicka tweets till dina Twitter-konton och skicka direktmeddelanden till dina följare. Mer information finns i: [Publicera på Twitter](../../social/using/publishing-on-twitter.md).
