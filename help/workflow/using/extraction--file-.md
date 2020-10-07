@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -54,13 +51,13 @@ Så här konfigurerar du dataextrahering:
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-Du kan definiera en efterprocess som ska köras under dataextraheringen så att du kan komprimera eller kryptera filerna. För att göra detta måste du lägga till det önskade kommandot på aktivitetens **[!UICONTROL Script]** flik.
+Du kan definiera en efterprocess som ska köras under dataextraheringen så att du kan komprimera eller kryptera filerna. För att kunna göra detta måste du lägga till det önskade kommandot på aktivitetens **[!UICONTROL Script]** flik.
 
 Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
-## Lista över sammanställningsfunktioner {#list-of-aggregate-functions}
+## List of aggregate functions {#list-of-aggregate-functions}
 
 Här följer en lista över tillgängliga sammanställningsfunktioner:
 
