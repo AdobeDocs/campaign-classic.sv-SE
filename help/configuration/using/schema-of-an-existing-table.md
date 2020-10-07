@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ## Översikt {#overview}
 
-När programmet behöver komma åt data från en befintlig tabell, en SQL-vy eller data från en fjärrdatabas skapar du schemat i Adobe Campaign med följande data:
+När programmet behöver komma åt data från en befintlig tabell, en SQL-vy eller data från en fjärrdatabas skapar du dess schema i Adobe Campaign med följande data:
 
 * Tabellnamn: Ange namnet på tabellen (med dess alias när en blink används) med attributet &quot;sqltable&quot;.
 * schemanyckel: hänvisa till avstämningsfält,
@@ -37,7 +37,7 @@ När programmet behöver komma åt data från en befintlig tabell, en SQL-vy ell
 Om du vill skapa motsvarande schema använder du följande steg:
 
 1. Redigera noden **[!UICONTROL Administration>Configuration>Data schemas]** i Adobe Campaign-trädet och klicka på **[!UICONTROL New]** .
-1. Markera **[!UICONTROL Access data from an existing table or an SQL view]** alternativet och klicka på **[!UICONTROL Next]** .
+1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -64,7 +64,7 @@ Om du vill skapa motsvarande schema använder du följande steg:
 </srcSchema>
 ```
 
-## Åtkomst till en extern databas {#accessing-an-external-database}
+## Komma åt en extern databas {#accessing-an-external-database}
 
 Med alternativet **Federated Data Access - FDA** får du åtkomst till data som lagras i en extern databas.
 
