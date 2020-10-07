@@ -1,7 +1,7 @@
 ---
-title: Filinsamlare
-seo-title: Filinsamlare
-description: Filinsamlare
+title: Filhämtare
+seo-title: Filhämtare
+description: Filhämtare
 seo-description: null
 page-status-flag: never-activated
 uuid: 57ef7b2b-f257-4d76-970f-55aece719cec
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Filinsamlare{#file-collector}
+# Filhämtare{#file-collector}
 
 Insamlaren **för** filer övervakar en eller flera filers ankomst till en katalog och aktiverar övergången för varje mottagen fil. För varje händelse innehåller en **[!UICONTROL filename]** variabel det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
 
