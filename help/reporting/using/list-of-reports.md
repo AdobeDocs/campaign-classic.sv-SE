@@ -1,7 +1,7 @@
 ---
-title: Förteckning över rapporter
-seo-title: Förteckning över rapporter
-description: Förteckning över rapporter
+title: Lista över rapporter
+seo-title: Lista över rapporter
+description: Lista över rapporter
 seo-description: null
 page-status-flag: never-activated
 uuid: 79a914d0-7828-4fe1-b1b7-b055d4bf1f82
@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 3e593527-5580-44ea-93dc-9084d862537e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 2%
 
 ---
 
