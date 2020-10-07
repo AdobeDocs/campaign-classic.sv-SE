@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 27cd51f6-b787-4703-a34d-ce23321f0dcf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 9%
 
 ---
 
@@ -32,8 +32,8 @@ Följande aktiviteter är databasaktiviteter: Deras huvuduppgift är att samordn
 * **Vänta**: aktiverar utgående övergång efter en viss tidsgräns. Se [Vänta](../../workflow/using/wait.md).
 * **Tidsbegränsning**: gör att du kan pausa en uppgift under en angiven period. Se [Tidsbegränsning](../../workflow/using/time-constraint.md).
 * **Delarbetsflöde**: gör att du kan köra ett annat arbetsflöde. Se [Delarbetsflöde](../../workflow/using/sub-workflow.md).
-* **Hoppar**: I kan du implementera övergångar utan länkar. Se [Hoppa (startpunkt och slutpunkt)](../../workflow/using/jump--start-point-and-end-point-.md).
-* **Extern signal**: gör att du kan aktivera den utgående övergången när du har tagit emot en extern signal. Se avsnittet [Extern signal](../../workflow/using/external-signal.md) .
+* **Hoppar**: I kan du implementera övergångar utan länkar. Refer to [Jump (start point and end point)](../../workflow/using/jump--start-point-and-end-point-.md).
+* **Extern signal**: gör att du kan aktivera den utgående övergången när du har tagit emot en extern signal. Se [Extern signal](../../workflow/using/external-signal.md)-avsnittet.
 * **Godkännande**: Med kan du skicka ett e-postmeddelande till en operator eller en grupp operatorer och vänta på godkännande för att fortsätta med körningen. Se avsnittet [Godkännande](../../workflow/using/approval.md) .
 * **Varning**: gör att du kan skicka en varning till en operator eller grupp med operatorer. Se avsnittet [Varning](../../workflow/using/alert.md) .
 * **Aktivitet**: I kan du konfigurera körning av uppgifter. Se avsnittet [Aktivitet](../../workflow/using/task.md) .
