@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 3710768e-ab7f-40a4-9c48-830695adc990
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '3255'
+ht-degree: 4%
 
 ---
 
@@ -44,11 +44,11 @@ Skiljedomsregeln för att definiera godtagbara meddelanden tillämpas under anal
 
 Annars blir mottagaren **[!UICONTROL Excluded by arbitration]**. Mer information finns i [Uteslutning efter skiljedom](#exclusion-after-arbitration).
 
-## Skapa en tryckregel {#creating-a-pressure-rule}
+## Creating a pressure rule {#creating-a-pressure-rule}
 
-Om du vill skapa skiljeväggar mellan kampanjer med Adobe Campaign börjar du med att skapa kampanjtypologier och definiera länkade typologiregler (**tryckregler** ).
+Om du vill skapa skiljeväggar mellan kampanjer med Adobe Campaign börjar du med att skapa kampanjtyper och definiera länkade typologiregler (**tryckregler** ).
 
-Så här skapar och konfigurerar du en **[!UICONTROL Pressure]** typologiregel:
+Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
 
 1. Klicka på **[!UICONTROL New]** ikonen ovanför listan i listan över kampanjtypologiregler.
 
@@ -58,7 +58,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]** typologiregel:
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Ändra körningsordningen om det behövs. När flera typologiregler används som en **[!UICONTROL Typology]** uppsättning tillämpas de lägre ordnade reglerna först. Mer information finns i [Körningsordning](../../campaign/using/applying-rules.md#execution-order).
+1. Ändra körningsordningen om det behövs. När flera typologiregler används som en **[!UICONTROL Typology]** uppsättning tillämpas de lägre ordnade reglerna först. For more on this, refer to [Execution order](../../campaign/using/applying-rules.md#execution-order).
 1. I avsnittet anger du en frekvens om du vill spara målgruppsanpassning efter nästa dagliga omskiljningskörning. **[!UICONTROL Calculation parameters]** Mer information finns i [Justera beräkningsfrekvens](../../campaign/using/applying-rules.md#adjusting-calculation-frequency).
 1. Klicka på **[!UICONTROL Pressure]** fliken och välj den kalenderperiod som typologiregeln gäller för.
 
@@ -68,7 +68,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]** typologiregel:
 
    >[!NOTE]
    >
-   >Schemalagda leveranser beaktas endast om du väljer **[!UICONTROL Take the deliveries into account in the provisional calendar]** alternativet. Mer information finns i [Ange perioden](#setting-the-period).
+   >Schemalagda leveranser beaktas endast om du väljer **[!UICONTROL Take the deliveries into account in the provisional calendar]** alternativet. For more on this, refer to [Setting the period](#setting-the-period).
 
 1. Definiera metoden för att beräkna det högsta antalet meddelanden.
 
@@ -86,7 +86,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]** typologiregel:
 
 1. Ange metod för beräkning av leveransvikt.
 
-   Varje leverans har en vikt, dvs. ett värde som representerar dess prioritetsnivå: Detta möjliggör skiljeförfaranden mellan kampanjer. Vikten beräknas med hjälp av den formel som definieras i typologiregeln och/eller i dess egenskaper. Mer information finns i [Meddelandevikt](#message-weight).
+   Varje leverans har en vikt, dvs. ett värde som representerar dess prioritetsnivå: Detta möjliggör skiljeförfaranden mellan kampanjer. Vikten beräknas med hjälp av den formel som definieras i typologiregeln och/eller i dess egenskaper. For more on this, refer to [Message weight](#message-weight).
 
 1. Som standard tas alla meddelanden med i beräkningen av tröskelvärdet. På fliken **[!UICONTROL Restriction]** kan du filtrera de meddelanden som berörs av typologiregeln:
 
@@ -96,13 +96,13 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]** typologiregel:
       I följande exempel beaktas endast mottagare som sparats i mappen **NewContacts** och leveranser som börjar med **Newsletter** .
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. På fliken **[!UICONTROL Typologies]** kan du visa de kampanjtyper som tillämpar den här regeln eller länka regeln till en eller flera befintliga typologier. Mer information finns i [Använda typologier](../../campaign/using/about-campaign-typologies.md#applying-typologies).
+1. På fliken **[!UICONTROL Typologies]** kan du visa de kampanjtyper som tillämpar den här regeln eller länka regeln till en eller flera befintliga typologier. For more on this, refer to [Applying typologies](../../campaign/using/about-campaign-typologies.md#applying-typologies).
 
 ## Definiera tröskelvärden och vikter {#defining-thresholds-and-weights}
 
 ### Maximalt antal meddelanden {#maximum-number-of-messages}
 
-Varje tryckregel definierar ett tröskelvärde, dvs. det maximala antalet meddelanden som kan skickas till en mottagare under en viss tidsperiod. När denna tröskel har uppnåtts kan inga fler leveranser göras förrän efter utgången av skadeundersökningsperioden. Med den här processen kan du automatiskt utesluta en mottagare från en leverans om ett meddelande överskrider det angivna tröskelvärdet och på så sätt undvika överdriven begäran.
+Varje tryckregel definierar ett tröskelvärde, dvs. det maximala antalet meddelanden som kan skickas till en mottagare under en viss tidsperiod. När denna tröskel har uppnåtts kan inga fler leveranser göras förrän efter den beaktade perioden. Med den här processen kan du automatiskt utesluta en mottagare från en leverans om ett meddelande överskrider det angivna tröskelvärdet och på så sätt undvika överdriven begäran.
 
 Tröskelvärden kan antingen vara konstanta eller beräknas med en formel med variabler. Detta innebär att tröskelvärdena för en viss period kan variera från en mottagare till en annan, eller till och med för samma mottagare.
 
@@ -144,11 +144,11 @@ I följande exempel vill vi länka vikten på nyhetsbrev på musik till mottagar
 
 1. Använd den här regeln för meddelanden med följande ämne: nyhetsbrev, specialerbjudanden osv. Vikten av dessa leveranser, och därmed deras prioritet, beror på varje mottagares benägenhetspoäng.
 
-## Ange period {#setting-the-period}
+## Setting the period {#setting-the-period}
 
 Tryckregler definieras i **vardagar**.
 
-Perioden konfigureras på regelns **[!UICONTROL Pressure]** flik. Du kan ange antalet dagar och vid behov välja vilken typ av gruppering som ska användas (dag, vecka, månad, kvartal osv.).
+Perioden är konfigurerad på regelns **[!UICONTROL Pressure]** flik. Du kan ange antalet dagar och vid behov välja vilken typ av gruppering som ska användas (dag, vecka, månad, kvartal osv.).
 
 Med grupperingstypen kan du utöka **[!UICONTROL Period considered]** fältet till hela dagen, kalenderveckan, kalendermånaden eller kalenderåret för datum för perioden.
 
@@ -203,7 +203,7 @@ Om ingen gruppering är markerad skickas inte bara **nyhetsbrevet nr.4** , efter
 
 >[!NOTE]
 >
->När du ändrar definitionen för en typologiregel kan du skapa en **simulering** som styr hur den påverkar de leveranser den används på och övervaka hur leveranserna påverkar varandra. Mer information finns i [Kampanjsimuleringar](../../campaign/using/campaign-simulations.md).
+>När du ändrar definitionen för en typologiregel kan du skapa en **simulering** som styr hur den påverkar de leveranser den används på och övervaka hur leveranserna påverkar varandra. For more on this, refer to [Campaign simulations](../../campaign/using/campaign-simulations.md).
 
 ## Uteslutning efter skiljedom {#exclusion-after-arbitration}
 
@@ -211,7 +211,7 @@ Skiljeförfarandet tillämpas varje kväll via det **[!UICONTROL Forecasting]** 
 
 Arbetsflödet förberäknar data för den aktuella perioden (från startdatumet till det aktuella datumet), vilket gör att typologiregler kan användas under analysen. **[!UICONTROL Forecasting]** Den beräknar också om räknare för uteslutning för skiljedom varje kväll.
 
-För varje mottagare kontrollerar Adobe Campaign att antalet meddelanden som ska skickas inte överstiger tröskelvärdet, med hänsyn tagen till antalet meddelanden som redan skickats under den aktuella perioden. Den här informationen är en **indikator** eftersom alla beräkningar uppdateras vid leveranstillfället.
+För varje mottagare kontrollerar Adobe Campaign därför att antalet meddelanden som ska skickas inte överstiger tröskelvärdet, med hänsyn tagen till antalet meddelanden som redan har skickats under den berörda perioden. Den här informationen är en **indikator** eftersom alla beräkningar uppdateras vid leveranstillfället.
 
 Om det här antalet överskrider tröskelvärdet tillämpas de skiljeregler som definierats i kampanjtypologin och mottagarna utesluts från kampanjer med lägre vikt.
 
@@ -231,20 +231,20 @@ Om du vill identifiera kunder och potentiella kunder använder du **[!UICONTROL 
 
 Så här skapar du regeln:
 
-1. Skapa en ny typologiregel för **trycktyp** .
-1. Redigera **[!UICONTROL Pressure]** fliken: i **[!UICONTROL Maximum number of messages]** avsnittet vill vi skapa en formel för att beräkna tröskelvärdet beroende på varje mottagare. Markera **[!UICONTROL Depends on the recipient]** värdet i **[!UICONTROL Threshold type]** fältet och klicka sedan **[!UICONTROL Edit expression]** till höger om **[!UICONTROL Formula]** fältet.
+1. Create a new **Pressure** type typology rule.
+1. Edit the **[!UICONTROL Pressure]** tab: in the **[!UICONTROL Maximum number of messages]** section, we want to create a formula to calculate the threshold depending on each recipient. Markera **[!UICONTROL Depends on the recipient]** värdet i **[!UICONTROL Threshold type]** fältet och klicka sedan **[!UICONTROL Edit expression]** till höger om **[!UICONTROL Formula]** fältet.
 
    Klicka på **[!UICONTROL Advanced parameters]** knappen för att definiera beräkningsformeln.
 
    ![](assets/campaign_opt_pressure_sample_1_1.png)
 
-1. Markera **[!UICONTROL Edit the formula using an expression]** alternativet och klicka på **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Edit the formula using an expression]** option and click **[!UICONTROL Next]**.
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. Dubbelklicka på funktionen **Iif** i **[!UICONTROL Others]** noden i listan över funktioner.
+1. In the list of functions, double-click the **Iif** function in the **[!UICONTROL Others]** node.
 
-   Välj sedan mottagarnas **status** i **[!UICONTROL Available fields]** avsnittet.
+   Then select the recipients&#39; **Status** in the **[!UICONTROL Available fields]** section.
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -303,7 +303,7 @@ Om du vill utföra den här typen av konfiguration måste du använda en formel 
 
 Använd följande konfigurationssteg:
 
-1. Skapa en ny typologiregel för **trycktyp** .
+1. Create a new **Pressure** type typology rule.
 1. Redigera **[!UICONTROL Pressure]** fliken. Vi vill skapa en tröskelformel som baseras på varje enskild mottagare: klicka på **[!UICONTROL Edit expression]** ikonen till höger om **[!UICONTROL Weight formula]** fältet.
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
@@ -328,27 +328,27 @@ För att göra detta måste du schemalägga flera leveranser med olika vikter f�
 Konfigurera först tryckregeln.
 
 1. Skapa en tryckregel. Mer information finns i [Skapa en tryckregel](#creating-a-pressure-rule).
-1. Välj **[!UICONTROL General]** alternativet på **[!UICONTROL Re-apply the rule at the start of personalization]** fliken.
+1. In the **[!UICONTROL General]** tab, select the **[!UICONTROL Re-apply the rule at the start of personalization]** option.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
    Det här alternativet åsidosätter det värde som definieras i **[!UICONTROL Frequency]** fältet och tillämpar automatiskt regeln under personaliseringsfasen. Mer information finns i [Justera beräkningsfrekvens](../../campaign/using/applying-rules.md#adjusting-calculation-frequency).
 
-1. På **[!UICONTROL Pressure]** fliken väljer du **[!UICONTROL 7d]** som **[!UICONTROL Period considered]** och **[!UICONTROL Grouping per day]** som **[!UICONTROL Period type]**.
+1. In the **[!UICONTROL Pressure]** tab, select **[!UICONTROL 7d]** as the **[!UICONTROL Period considered]** and **[!UICONTROL Grouping per day]** as the **[!UICONTROL Period type]**.
 1. Välj alternativet **[!UICONTROL Take the deliveries into account in the provisional calendar]** för att inkludera schemalagda leveranser.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   Leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet kommer att tas med i beräkningen. Mer information finns i [Ange perioden](#setting-the-period).
+   Leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet kommer att tas med i beräkningen. For more on this, refer to [Setting the period](#setting-the-period).
 
 1. Länka regeln till en kampanjtypologi på fliken **[!UICONTROL Typologies]** .
 1. Spara ändringarna.
 
 Skapa och konfigurera nu ett arbetsflöde för varje leverans som du vill att tryckregeln ska tillämpas på.
 
-1. Skapa en kampanj. Mer information finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
-1. Lägg till en **[!UICONTROL Email delivery]** aktivitet i arbetsflödet och öppna den. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/delivery.md).
+1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen. For more on using this activity, refer to [this section](../../workflow/using/query.md).
+1. Lägg till en **[!UICONTROL Email delivery]** aktivitet i arbetsflödet och öppna den. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. Gå till fliken **[!UICONTROL Approvals]** i **[!UICONTROL Delivery properties]** och inaktivera alla godkännanden.
 
    ![](assets/campaign_opt_pressure_example_2.png)
@@ -369,7 +369,7 @@ Skapa och konfigurera nu ett arbetsflöde för varje leverans som du vill att tr
 1. Fortsätt på samma sätt för varje leverans som du vill skicka. Se till att du anger önskad vikt för varje leverans.
 1. Kör de relevanta arbetsflödena för att förbereda och skicka leveranserna.
 
-När det nattliga skiljeförfarandet tillämpas kommer leveranser med de lägre vikterna för samma mottagare att uteslutas. Endast de leveranser som har högst vikt kommer att skickas. Mer information finns i [Meddelandevikt](#message-weight).
+När det nattliga skiljeförfarandet tillämpas kommer leveranser med de lägre vikterna för samma mottagare att uteslutas. Endast de leveranser som har högst vikt kommer att skickas. For more on this, refer to [Message weight](#message-weight).
 
 Med tanke på att ett e-postmeddelande redan har skickats till de berörda mottagarna tidigare under veckan visar tabellen nedan ett exempel på konfigurationer som kan användas för ytterligare två leveranser.
 
@@ -389,7 +389,7 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
  </thead> 
  <tbody> 
   <tr> 
-   <td> Leverans 1<br /> </td> 
+   <td> Delivery 1<br /> </td> 
    <td> Handikappade<br /> </td> 
    <td> 5<br /> </td> 
    <td> 3pm<br /> </td> 
@@ -400,7 +400,7 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
    <td> Exkluderad<br /> </td> 
   </tr> 
   <tr> 
-   <td> Leverans 2<br /> </td> 
+   <td> Delivery 2<br /> </td> 
    <td> Handikappade<br /> </td> 
    <td> 10<br /> </td> 
    <td> 4pm<br /> </td> 
@@ -415,4 +415,4 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
 
 Efter det att extraktionsdatumet har passerats för de två leveranserna, tillämpas det nattliga skiljeförfarandet på nytt före kontaktdatumen för båda leveranserna. På så sätt kan du hitta alla leveranser som redan har skickats (mottagare för vilka en leverans har bearbetats, registrerats via de breda loggarna) eller som har schemalagts för att skickas (mottagare som är berättigade att ta emot en leverans, som registrerats via prognosloggarna).
 
-När alla skickade och potentiella leveranser har listats för den period som definierats i tryckregeln sorterar Adobe Campaign dem efter vikt, med den högsta viktningen först. När det tröskelvärde som anges i tryckregeln nås (om det inte finns fler än två e-postmeddelanden inom samma vecka), utesluts mottagarna från leveransen.
+När alla skickade och potentiella leveranser har listats för den period som anges i tryckregeln sorterar Adobe Campaign dem efter vikt, med den högsta viktningen först. När det tröskelvärde som anges i tryckregeln nås (om det inte finns fler än två e-postmeddelanden inom samma vecka), utesluts mottagarna från leveransen.
