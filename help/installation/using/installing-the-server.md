@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1510fd9-995b-46c6-8d57-e1fe3999235e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ## Köra installationsprogrammet {#executing-the-installation-program}
 
-Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Windows. Installera 64-bitarsversionen av Adobe Campaign för en 64-bitarsplattform för Windows.
+Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Windows. Installera Adobe Campaign 64-bitarsversionen för en 64-bitarsplattform för Windows.
 
 Installationsstegen för Adobe Campaign-servern är följande:
 
@@ -38,10 +38,11 @@ Installationsstegen för Adobe Campaign-servern är följande:
 
    Det finns flera installationstyper:
 
-   * **[!UICONTROL Installation of an application server]** : Installera programservern Adobe Campaign och klientkonsolen.
-   * **[!UICONTROL Minimal installation (Network)]** : Installation av klientdatorn från nätverket. Endast ett begränsat antal DLL-filer kommer att installeras på datorn, om det behövs, och alla andra komponenter kommer att användas från en nätverksenhet.
+   * **[!UICONTROL Installation of an application server]** : Installera Adobe Campaign programserver och klientkonsolen.
+   * **[!UICONTROL Minimal installation (Network)]** : Installation av klientdatorn från nätverket. Endast ett begränsat antal DLL-filer installeras på datorn, om det behövs, och alla andra komponenter används från en nätverksenhet.
    * **[!UICONTROL Installation of a client]** : Installation av nödvändiga komponenter för Adobe Campaign-klienten.
    * **[!UICONTROL Custom installation]** : Användaren väljer vilka element som ska installeras.
+
    Välj **Installation av en programserver** och gå igenom de olika stegen som visas nedan:
 
    ![](assets/s_ncs_install_installer_02.png)
@@ -92,7 +93,7 @@ nlserver web
 
 ![](assets/s_ncs_install_cmd_nlserverweb.png)
 
-Filerna i installationskatalogen används för att konfigurera servermodulerna för Adobe Campaign.
+Filerna i installationskatalogen används för att konfigurera Adobe Campaign servermoduler.
 
 Följande information visas:
 
@@ -145,7 +146,7 @@ Adobe Campaign-servern definierar en teknisk inloggning som kallas **intern** so
 
 Se avsnittet [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Starta Adobe Campaign-tjänster {#starting-adobe-campaign-services}
+## Startar Adobe Campaign tjänster {#starting-adobe-campaign-services}
 
 Om du vill starta Adobe Campaign-tjänsterna kan du använda tjänsthanteraren eller ange följande på kommandoraden (med rätt behörighet):
 
