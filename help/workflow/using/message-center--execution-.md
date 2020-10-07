@@ -1,7 +1,7 @@
 ---
-title: Meddelandecenter (körning)
-seo-title: Meddelandecenter (körning)
-description: Meddelandecenter (körning)
+title: Meddelandecenter (köra)
+seo-title: Meddelandecenter (köra)
+description: Meddelandecenter (köra)
 seo-description: null
 page-status-flag: never-activated
 uuid: 8dfb09d1-da00-43fb-9df4-243bb915cbde
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: dc3d8998-9493-4d71-b3e2-6f9531cb9bac
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 7%
 
 ---
 
 
-# Meddelandecenter (körning){#message-center-execution}
+# Meddelandecenter (köra){#message-center-execution}
 
-De arbetsflöden som beskrivs nedan installeras som standard med **modulen Meddelandecenter - Körning** . Mer information om den här modulen finns i det här [avsnittet](../../message-center/using/about-transactional-messaging.md).
+De arbetsflöden som beskrivs nedan installeras som standard med **modulen Meddelandecenter - Körning** . For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
 Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Meddelandecenter finns på [den här sidan](../../message-center/using/technical-workflows.md).
 
@@ -34,8 +34,8 @@ Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Medde
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Uppdatera händelsestatus</span><br /> </td> 
-   <td> <span class="uicontrol">updateEventsStatus</span><br /> </td> 
+   <td> <span class="uicontrol">Uppdatera händelsestatus</span> <br /> </td> 
+   <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
    <td> Med det här arbetsflödet kan du tilldela en status till en händelse. Händelsestatus är följande:<br /> 
     <ul> 
      <li> <p><strong>Väntande</strong>: händelsen finns i en kö. Ingen meddelandemall har ännu kopplats till den.</p> </li> 
@@ -47,13 +47,13 @@ Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Medde
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Bearbetar batchhändelser</span><br /> </td> 
-   <td> <span class="uicontrol">batchEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">Bearbetar grupphändelser</span> <br /> </td> 
+   <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
    <td> Med det här arbetsflödet kan du placera grupphändelser i en kö innan du associerar dem med en meddelandemall. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Bearbeta realtidshändelser</span><br /> </td> 
-   <td> <span class="uicontrol">rtEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">Bearbeta realtidshändelser</span> <br /> </td> 
+   <td> <span class="uicontrol">rtEventsProcessing</span> <br /> </td> 
    <td> Med det här arbetsflödet kan du placera realtidshändelser i en kö innan du associerar dem med en meddelandemall. <br /> </td> 
   </tr> 
  </tbody> 
