@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1563db7c-ccb6-46b3-9299-67ec0aedaca0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 LDAP-konfigurationen utförs i distributionsguiden. Du måste välja **[!UICONTROL LDAP integration]** alternativet under det första konfigurationssteget. Se [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-I fönstret kan du konfigurera identifiering av Adobe Campaign-användare via den angivna LDAP-katalogen.
+I fönstret kan du konfigurera identifieringen av Adobe Campaign-användare via den angivna LDAP-katalogen.
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_01.png)
 
@@ -61,7 +61,7 @@ I fönstret kan du konfigurera identifiering av Adobe Campaign-användare via de
 
       Ingen kryptering (endast för användning i testfaser).
 
-* Välj autentiseringsläge för användare: **[!UICONTROL Automatically compute the unique user identifier]** (se [beräkning](#distinguished-name-calculation)av unikt namn i steg) eller **[!UICONTROL Search the unique user identifier in the directory]** (se [Söka efter identifierare](#searching-for-identifiers)i steg).
+* Välj autentiseringsläge för användare: **[!UICONTROL Automatically compute the unique user identifier]** (se [beräkning](#distinguished-name-calculation)av unikt namn i steg) eller **[!UICONTROL Search the unique user identifier in the directory]** (se steg [Söka efter identifierare](#searching-for-identifiers)).
 
 ## Kompatibilitet {#compatibility}
 
@@ -107,17 +107,17 @@ Om du vill beräkna identifierarna för unikt namn (DN) kan du konfigurera berä
 
 * Ange användarens unika identifierare i katalogen (unikt namn - DN) i **[!UICONTROL Distinguished Name]** fältet.
 
-   **[!UICONTROL (login)]** ersätts med identifieraren för Adobe Campaign-operatorn.
+   **[!UICONTROL (login)]** ersätts med identifieraren för operatorn Adobe Campaign.
 
    >[!CAUTION]
    >
    >Inställningen måste vara i gemener **[!UICONTROL dc]** .
 
-* Välj alternativet **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** om du vill synkronisera gruppen och användarassociationerna i LDAP-katalogen samt gruppen och användarassociationerna i Adobe Campaign.
+* Markera alternativet **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** om du vill synkronisera gruppen och användarassociationerna i LDAP-katalogen samt gruppen och användarassociationerna i Adobe Campaign.
 
    När du väljer det här alternativet aktiveras **[!UICONTROL Application level DN used for the search]** och **[!UICONTROL Password of the application login]** .
 
-   Om du fyller i dessa två fält kommer Adobe Campaign att ansluta till LDAP-servern med sin egen inloggning och sina egna lösenord. Om de är tomma ansluter Adobe Campaign anonymt till servern.
+   Om du fyller i dessa två fält kommer Adobe Campaign att ansluta till LDAP-servern med sin egen inloggning och lösenord. Om de är tomma ansluter Adobe Campaign anonymt till servern.
 
 ## Söker efter identifierare {#searching-for-identifiers}
 
@@ -161,7 +161,7 @@ Du måste ange flera parametrar för att kunna hitta gruppen eller grupperna som
 
 * fältet, **[!UICONTROL Rights search filter]** baserat på inloggningen och användarens särskiljande namn,
 * det **[!UICONTROL Attribute containing the group or authorization name]** fält som rör användaren,
-* det **[!UICONTROL Association mask]** fält som gör det möjligt att extrahera gruppnamnet i Adobe Campaign och tillhörande rättigheter. Du kan använda reguljära uttryck för att söka efter namnet.
+* det **[!UICONTROL Association mask]** fält som möjliggör extrahering av gruppnamnet i Adobe Campaign och tillhörande rättigheter. Du kan använda reguljära uttryck för att söka efter namnet.
 * Välj **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** så att användaren automatiskt får åtkomstbehörighet för anslutningen.
 
 Klicka **[!UICONTROL Save]** för att slutföra konfigurationen av instansen.
@@ -174,13 +174,13 @@ Om du vill använda LDAP-katalogen för att autentisera en operator redigerar du
 
 ![](assets/s_ncs_install_operator_in_ldap.png)
 
-## Användningsexempel {#use-cases}
+## Användningsfall {#use-cases}
 
 I det här avsnittet finns några enkla användningsexempel som hjälper dig att uppnå de lämpligaste konfigurationerna baserat på dina behov.
 
 1. En användare har skapats i LDAP-katalogen men inte i Adobe Campaign.
 
-   Adobe Campaign kan konfigureras så att användaren får åtkomst till plattformen via sin LDAP-autentisering. Adobe Campaign måste kunna kontrollera giltigheten för ID/lösenord-kombinationen i LDAP-katalogen, så att operatorn kan skapas direkt i Adobe Campaign. Markera **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** alternativet om du vill göra det. I det här fallet måste även gruppsynkronisering konfigureras: du måste välja alternativet **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** .
+   Adobe Campaign kan konfigureras så att användaren kommer åt plattformen via sin LDAP-autentisering. Adobe Campaign måste kunna kontrollera giltigheten för ID/lösenord-kombinationen i LDAP-katalogen, så att operatorn kan skapas direkt i Adobe Campaign. Markera **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** alternativet om du vill göra det. I det här fallet måste även gruppsynkronisering konfigureras: du måste välja alternativet **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** .
 
 1. Användaren har skapats i Adobe Campaign men inte i LDAP-katalogen.
 
@@ -190,9 +190,9 @@ I det här avsnittet finns några enkla användningsexempel som hjälper dig att
 
    Den här gruppen kommer inte att skapas i Adobe Campaign. Du måste skapa gruppen och synkronisera grupperna för att aktivera en matchning via **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** alternativet.
 
-1. Det finns grupper i Adobe Campaign och LDAP-katalogen aktiveras efter händelsen: användargrupper i Adobe Campaign ersätts inte automatiskt med innehåll i LDAP-grupper. Om det bara finns en grupp i Adobe Campaign kan inga LDAP-användare läggas till i gruppen förrän gruppen har skapats och synkroniserats i LDAP.
+1. Det finns grupper i Adobe Campaign och LDAP-katalogen aktiveras efter händelsen: användargrupper i Adobe Campaign ersätts inte automatiskt med innehåll i LDAP-grupper. Om det bara finns en grupp i Adobe Campaign kan inga LDAP-användare läggas till förrän gruppen har skapats och synkroniserats i LDAP.
 
-   Grupper skapas aldrig i farten, vare sig det är Adobe Campaign eller LDAP. De måste skapas individuellt, både i Adobe Campaign och i LDAP-katalogen.
+   Grupper skapas aldrig i farten, vare sig av Adobe Campaign eller LDAP. De måste skapas individuellt, både i Adobe Campaign och i LDAP-katalogen.
 
    Namnen på grupperna i LDAP-katalogen måste sammanfalla med namnen på Adobe Campaign-grupperna. Deras associationsmask definieras i det sista konfigurationssteget i distributionsguiden: Adobe Campaign_(.*), till exempel.
 
