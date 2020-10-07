@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 2%
@@ -29,9 +26,9 @@ Kontrollpanelen för **leverans** är avgörande för att du ska kunna övervaka
 
 **Relaterade ämnen:**
 
-* [Oom leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om karantänhantering](../../delivery/using/understanding-quarantine-management.md)
-* [Bästa praxis](../../delivery/using/delivery-best-practices.md)
+* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Förstå karantänhantering](../../delivery/using/understanding-quarantine-management.md)
+* [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md)
 * [Hantera levererbarhet](../../delivery/using/about-deliverability.md)
 
 ## Kontrollpanel för leverans {#delivery-dashboard}
@@ -70,7 +67,7 @@ På **[!UICONTROL Tracking]** fliken visas spårningshistoriken för leveransen.
 >
 >Om spårning inte är aktiverat för en leverans visas inte den här fliken.
 
-Spårningskonfigurationen utförs i rätt steg i leveransguiden. Se [Konfigurera spårade länkar](../../delivery/using/how-to-configure-tracked-links.md).
+Spårningskonfigurationen utförs i rätt steg i leveransguiden. See [How to configure tracked links](../../delivery/using/how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** data tolkas i leveransrapporterna. Se [det här avsnittet](../../reporting/using/delivery-reports.md).
 
@@ -97,7 +94,7 @@ Vissa indikatorer eller status kan vara felaktiga eller inte aktuella. Lösninge
 * Om leveransstatusen är felaktig kontrollerar du att alla nödvändiga godkännanden har gjorts för leveransen eller att arbetsflödena **[!UICONTROL operationMgt]** och **[!UICONTROL deliveryMgt]** körs utan fel. Detta kan också bero på leveransen med en tillhörighet som inte har konfigurerats på den sändande instansen.
 * Om leveransindikatorerna fortfarande är noll och du använder en mellanleverantörskonfiguration bör du kontrollera det **[!UICONTROL Mid-sourcing (delivery counters)]** tekniska arbetsflödet. Starta om det inte har status **[!UICONTROL Started]**. Du kan sedan försöka beräkna indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * Om leveransräknaren inte stämmer överens med leveransräknaren kan du försöka beräkna om indikatorerna genom att högerklicka på leveransadressen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* Om leveransräknaren inte är uppdaterad för medelstora distributioner kontrollerar du att det tekniska arbetsflödet körs. **[!UICONTROL Mid-Sourcing (Delivery counters)]** Mer information om detta hittar du på den här [sidan](../../installation/using/mid-sourcing-deployment.md).
+* Om leveransräknaren inte är uppdaterad för medelstora distributioner kontrollerar du att det tekniska arbetsflödet körs. **[!UICONTROL Mid-Sourcing (Delivery counters)]** Se denna [sida](../../installation/using/mid-sourcing-deployment.md) för mer information om detta.
 
 Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. Mer information om detta hittar du i det här [avsnittet](../../reporting/using/delivery-reports.md).
 
@@ -111,14 +108,14 @@ Om leveransresultaten är felaktiga kan du kontrollera:
 * **Målet för leveransen**: Förbud mot leveransprestanda påverkas av mjuka studsfel som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
 * **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i Adobe Campaign [Deliverability best practices guide](../../delivery/using/deliverability-key-points.md) och på [den här sidan](../../delivery/using/about-deliverability.md).
 
-Plattforms- och databasunderhåll kan också påverka leveransresultaten. For more on this, refer to [this page](../../production/using/database-performances.md).
+Plattforms- och databasunderhåll kan också påverka leveransresultaten. Se denna [sida](../../production/using/database-performances.md) för mer information om detta.
 
 ### Långsamma leveranser {#slow-deliveries}
 
 När du har klickat på **[!UICONTROL Send]** knappen verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
 
 * Vissa e-postleverantörer kan ha lagt till dina IP-adresser i blockeringslista. I så fall kontrollerar du dina utskick och läser [det här avsnittet](../../delivery/using/about-deliverability.md).
-* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Läs Adobe Campaign [Delivery best practices](../../delivery/using/delivery-best-practices.md) om riktlinjer för innehållet.
+* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa med hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit. Läs Adobe Campaign [Delivery best practices](../../delivery/using/delivery-best-practices.md) om riktlinjer för innehållet.
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
    * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/deliverability-faq.md) . Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
@@ -236,7 +233,7 @@ Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]** ka
    >Ersätt `<INSTANCENAME>` med namnet på din instans (produktion, utveckling osv.). Instansnamnet identifieras via konfigurationsfilerna: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
 
 * Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande servern. I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till den MTA som hanterar tillhörigheten. For more information on affinities, refer to [this section](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
-* När leveransförberedelsen är väntande kan det finnas för många kampanjer som körs, vilket blockerar statusuppdateringen av leveransen. Du löser det genom att gå till **[!UICONTROL Options]** och öka värdet för **[!UICONTROL NmsOperation_LimitConcurrency]** (standardvärdet är 10). Kör inte fler kampanjer än det värde som tilldelats det här specifika alternativet.
+* När leveransförberedelsen väntar kan det finnas för många kampanjer som körs, vilket blockerar statusuppdateringen av leveransen. Du löser det genom att gå till **[!UICONTROL Options]** och öka värdet för **[!UICONTROL NmsOperation_LimitConcurrency]** (standardvärdet är 10). Kör inte fler kampanjer än det värde som tilldelats det här specifika alternativet.
 
 ### Misslyckad status {#failed-status}
 
@@ -267,7 +264,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 **Relaterade ämnen:**
 
 * [Leveransloggar och historik](#delivery-logs-and-history)
-* [Oom leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
 * [Typ av leveransfel och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
 
 ## Number of messages sent {#number-of-messages-sent}
