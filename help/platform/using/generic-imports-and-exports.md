@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 Adobe Campaign erbjuder en modul för dataexport som gör det enkelt att extrahera en lista över kunder eller potentiella kunder (till exempel efter en målinriktningsåtgärd) som sedan blir en del av målpopulationen.
 
-Adobe Campaign har också en importmodul som gör att du kan förse databasen med data från externa filer.
+I Adobe Campaign finns också en importmodul som gör att du kan förse databasen med data från externa filer.
 
 >[!NOTE]
 >
@@ -45,7 +42,7 @@ Du kan:
 
 ## Creating a job template {#creating-a-job-template}
 
-Mallar för import och export lagras i katalogen **[!UICONTROL Resources > Templates > Job templates]** i Adobe Campaign-trädet.
+Mallar för import och export lagras i Adobe Campaign-trädets **[!UICONTROL Resources > Templates > Job templates]** katalog.
 
 ![](assets/s_ncs_user_export_wizard_template.png)
 
@@ -57,7 +54,7 @@ Hur du skapar en processmall beskrivs i [Exportguiden](../../platform/using/expo
 
 >[!NOTE]
 >
->Den interna mallen **[!UICONTROL Import block list]** är redan konfigurerad för att importera en lista med e-postadresser som har lagts till i blockeringslistan.
+>Den inbyggda mallen **[!UICONTROL Import block list]** är redan konfigurerad för att importera en lista med e-postadresser som har lagts till i blockeringslista.
 > 
 >Med mallarna **[!UICONTROL New text import]** och **[!UICONTROL New text export]** kan du konfigurera en import- eller exportfunktion från grunden.
 
@@ -77,7 +74,7 @@ Alla dessa öppnar [import](../../platform/using/importing-data.md) - eller [exp
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* Import och export kan också startas från utforskaren i Adobe Campaign.
+* Import och export kan också startas från Adobe Campaign Explorer.
 
    Om du vill exportera/importera data klickar du på **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** noden, sedan på **[!UICONTROL New]** ikonen och väljer **[!UICONTROL Export]** eller **[!UICONTROL Import]**. Då öppnas rätt guide.
 
