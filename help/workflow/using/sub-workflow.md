@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +30,7 @@ I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps
 
 1. Skapa ett arbetsflöde som du vill använda som ett underarbetsflöde i ett annat arbetsflöde.
 1. Infoga en **[!UICONTROL Jump (end point)]** aktivitet med prioriteten 1 i början av arbetsflödet. Om du har flera&quot;slutpunkttypshopp&quot; använder Adobe Campaign&quot;slutpunktshoppet&quot; med det lägsta talet.
-1. Infoga en **[!UICONTROL Jump (start point)]** aktivitet med prioritet 2 i slutet av arbetsflödet. Om du har flera &quot;startpunktstift&quot; använder Adobe Campaign &quot;startpunktstift&quot; med det högsta talet.
+1. Infoga en **[!UICONTROL Jump (start point)]** aktivitet med prioritet 2 i slutet av arbetsflödet. Om du har flera&quot;startpunktshopp&quot; använder Adobe Campaign&quot;startpunktshoppet&quot; med det högsta talet.
 
    ![](assets/subworkflow_jumps.png)
 
