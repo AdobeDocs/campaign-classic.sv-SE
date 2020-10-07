@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 24d4875b-81fa-4bf3-8cf0-e6998bec4949
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +44,7 @@ Den här metoden markerar även användare som skapar för många objekt.
 
 ## Leveranser {#deliveries}
 
-Det får inte finnas fler än 1000 leveranser på instansen när som helst. Många leveranser förbrukar databasutrymme och skapar problem. En instans som skapar mer än 10 leveranser per dag måste kontrolleras mot affärsbehoven. Överväg att använda kontinuerliga leveranser för att skapa färre leveranser. For more on this, refer to [this section](../../workflow/using/continuous-delivery.md).
+Det får inte finnas fler än 1000 leveranser på instansen när som helst. Många leveranser förbrukar databasutrymme och skapar problem. En instans som skapar mer än 10 leveranser per dag måste kontrolleras mot affärsbehoven. Överväg att använda kontinuerliga leveranser för att skapa färre leveranser. Mer information om detta finns i [det här avsnittet](../../workflow/using/continuous-delivery.md).
 
 Leveranser som är äldre än två år ska rensas från instansen.
 
