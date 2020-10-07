@@ -11,21 +11,18 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # RDBMS-specifika rekommendationer{#rdbms-specific-recommendations}
 
-I det här avsnittet beskrivs några rekommendationer/bästa metoder som är anpassade till de olika RDBMS-motorer som Adobe Campaign stöder, så att du enklare kan konfigurera underhållsplaner. Detta är dock bara rekommendationer. Det är upp till er att anpassa dem efter era behov, i enlighet med era interna rutiner och begränsningar. Databasadministratören ansvarar för att skapa och genomföra dessa planer.
+För att du lättare ska kunna konfigurera underhållsplaner innehåller det här avsnittet rekommendationer/bästa praxis som är anpassade till de olika RDBMS-motorer som Adobe Campaign stöder. Detta är dock bara rekommendationer. Det är upp till er att anpassa dem efter era behov, i enlighet med era interna rutiner och begränsningar. Databasadministratören ansvarar för att skapa och genomföra dessa planer.
 
 ## PostgreSQL {#postgresql}
 
@@ -102,7 +99,8 @@ vacuum full nmsdelivery;
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
 >* Kommandona **vakuum** och **omindexering** låser tabellen, som pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfyllnad** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för **tabellen YyyNmsBroadLogXx** .
->* Den här underhållsåtgärden kan implementeras av ett Adobe Campaign-arbetsflöde, med en **[!UICONTROL SQL]** aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med hjälp av en **[!UICONTROL SQL]** aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+
 >
 
 
@@ -112,7 +110,7 @@ vacuum full nmsdelivery;
 PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom **vakuumfullt** låser tabellen, vilket förhindrar normal produktion. Detta innebär att underhåll måste utföras när tabellen inte används. Du kan antingen:
 
 * utföra underhåll när Adobe Campaign-plattformen stoppas,
-* stoppa de olika undertjänster i Adobe Campaign som kan tänkas skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
+* stoppa de olika Adobe Campaign-undertjänster som kan tänkas skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
 
 Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera nödvändig DDL för att återskapa en tabell.
 
@@ -402,7 +400,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
       >[!NOTE]
       >
-      >Beroende på hur konfigurationen ser ut kan du välja antingen de tidigare markerade tabellerna eller alla tabeller i databasen.
+      >Beroende på hur konfigurationen ser ut kan du antingen välja de tidigare markerade tabellerna eller alla tabeller i databasen.
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
@@ -419,7 +417,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
 1. När underhållsplanen är klar klickar du på **[!UICONTROL Close]** .
 1. Dubbelklicka på **[!UICONTROL Management > Maintenance Plans]** mappen i Microsoft SQL Server Explorer.
-1. Välj underhållsplanen för Adobe Campaign: de olika stegen beskrivs i ett arbetsflöde.
+1. Välj Adobe Campaign underhållsplan: de olika stegen beskrivs i ett arbetsflöde.
 
    Observera att ett objekt har skapats i **[!UICONTROL SQL Server Agent > Jobs]** mappen. Med det här objektet kan du starta underhållsplanen. I vårt exempel finns det bara ett objekt eftersom alla underhållsåtgärder ingår i samma plan.
 
