@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
@@ -43,9 +40,9 @@ Du kan definiera en förprocess som ska utföras under filimport, t.ex. för att
 
 Mer information finns i följande avsnitt: [Zippa upp eller dekryptera en fil före bearbetning](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
 
-## Definiera filformatet {#defining-the-file-format}
+## Defining the file format {#defining-the-file-format}
 
-När du läser in en fil identifieras kolumnformatet automatiskt med standardparametrarna för varje datatyp. Du kan ändra de här standardparametrarna för att ange vilka processer som ska tillämpas på dina data, särskilt när det finns ett fel eller ett tomt värde.
+När du läser in en fil identifieras kolumnformatet automatiskt med standardparametrarna för varje datatyp. Du kan ändra de här standardparametrarna för att ange vilka processer som ska tillämpas på din data särskilt när det finns ett fel eller ett tomt värde.
 
 Det gör du genom att markera **[!UICONTROL Click here to change the file format...]** i **[!UICONTROL Data loading (file)]** aktivitetens huvudfönster. Fönstret Formatinformation öppnas.
 
@@ -61,8 +58,8 @@ Med kolumnformateringen kan du definiera värdebearbetningen för varje kolumn:
 * **[!UICONTROL Data type]**: Anger den typ av data som förväntas för varje kolumn.
 * **[!UICONTROL Allow NULLs]**: används för att ange hur tomma värden ska hanteras.
 
-   * **[!UICONTROL Adobe Campaign default]**: genererar ett fel endast för numeriska fält, annars infogas ett NULL-värde.
-   * **[!UICONTROL Empty value allowed]**: anger tomma värden. Värdet NULL infogas därför.
+   * **[!UICONTROL Adobe Campaign default]**: genererar ett fel endast för numeriska fält. Annars läggs ett NULL-värde in.
+   * **[!UICONTROL Empty value allowed]**: anger tomma värden.  Värdet NULL infogas därför.
    * **[!UICONTROL Always populated]**: genererar ett fel om ett värde är tomt.
 
 * **[!UICONTROL Length]**: Anger det maximala antalet tecken för **strängdatatypen** .
@@ -77,9 +74,9 @@ Med kolumnformateringen kan du definiera värdebearbetningen för varje kolumn:
 * **[!UICONTROL White space management]**: anger om vissa mellanslag måste ignoreras i en sträng. Värdet tillåter bara att blanksteg i början och i slutet av en sträng ignoreras **[!UICONTROL Ignore spaces]** .
 * **[!UICONTROL Error processings]**: definierar beteendet om ett fel påträffas.
 
-   * **[!UICONTROL Ignore the value]**: värdet ignoreras. En varning genereras i arbetsflödets körningslogg.
-   * **[!UICONTROL Reject line]**: hela raden inte bearbetas.
-   * **[!UICONTROL Use a default value in case of error]**: ersätter det värde som orsakar felet med ett standardvärde som definieras i **[!UICONTROL Default value]** fältet.
+   * **[!UICONTROL Ignore the value]**: värdet ignoreras.  En varning genereras i arbetsflödets körningslogg.
+   * **[!UICONTROL Reject line]**: hela raden bearbetas inte.
+   * **[!UICONTROL Use a default value in case of error]**: ersätter det värde som orsakar felet med ett standardvärde som definieras i fältet **[!UICONTROL Default value]**.
    * **[!UICONTROL Reject the line when there is no remapping value]**: hela raden behandlas inte såvida inte en mappning har definierats för det felaktiga värdet (se alternativet **[!UICONTROL Mapping]** nedan).
    * **[!UICONTROL Use a default value in case the value is not remapped]**: ersätter det värde som orsakar felet med ett standardvärde, som definieras i **[!UICONTROL Default value]** fältet, såvida inte en mappning har definierats för det felaktiga värdet (se **[!UICONTROL Mapping]** alternativet nedan).
 
@@ -94,7 +91,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
 1. Med filsamlaren kan du återställa filer som lagras i en katalog, beroende på den angivna frekvensen.
 
-   Fliken innehåller **[!UICONTROL Directory]** information om de filer som ska återställas. I det här exemplet återställs alla filer i textformat vars namn innehåller ordet &quot;kunder&quot; och som lagras i serverns katalog tmp/Adobe/Data/files.
+   Fliken innehåller **[!UICONTROL Directory]** information om de filer som ska återställas. I det här exemplet återställs alla filer i textformat vars namn innehåller ordet &quot;kunder&quot; och som lagras i katalogen tmp/Adobe/Data/files på servern.
 
    Det **[!UICONTROL File collector]** finns mer information i avsnittet [Filinsamlare](../../workflow/using/file-collector.md) .
 
@@ -108,7 +105,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
    Det gör du genom att klicka på **[!UICONTROL Change...]** knappen längst ned till höger i redigeringsverktyget och konfigurera schemat.
 
-   Mer information finns i [Schemaläggaren](../../workflow/using/scheduler.md).
+   For more on this, refer to [Scheduler](../../workflow/using/scheduler.md).
 
 1. Konfigurera sedan aktiviteten för inläsning av data (fil) för att ange hur de insamlade filerna ska läsas. Det gör du genom att markera en exempelfil med samma struktur som de filer som ska läsas in.
 
@@ -118,7 +115,8 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
    * den första kolumnen innehåller en kod som sammanfaller med händelsen: inköp (mer eller mindre än 3 000 euro), inget inköp eller någon återbetalning för ett eller flera inköp.
    * De fyra följande kolumnerna innehåller klientens förnamn, efternamn, e-postadress och kontonummer.
-   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid dataimport i Adobe Campaign. For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
+
+   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid dataimport i Adobe Campaign. Mer information om detta hittar du i det här [avsnittet](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. I den delade aktiviteten anger du de delmängder som ska skapas enligt **kolumnvärdet för Event** .
 
