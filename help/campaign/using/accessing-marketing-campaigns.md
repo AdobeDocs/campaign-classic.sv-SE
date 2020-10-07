@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -127,7 +124,7 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkänn
 
 #### Schema {#schedule}
 
-En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global vy över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
+En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global översikt över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
 
 ![](assets/campaign_planning_tab.png)
 
