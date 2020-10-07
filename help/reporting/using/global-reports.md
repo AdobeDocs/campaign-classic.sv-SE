@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+source-git-commit: 3b6cfe05b851843f5d886fcccbe114ff7f0b6611
+workflow-type: tm+mt
+source-wordcount: '2185'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Den här rapporten innehåller information om leveransflödet för hela plattfor
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta valet.
+Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
 
 ## Användaraktiviteter {#user-activities}
 
@@ -68,9 +71,9 @@ Följande alternativ är tillgängliga:
 * **[!UICONTROL Clicks]** : Totalt antal klick på länkar i leveranser. Klickningar på prenumerationslänkar och spegelsidor beaktas inte.
 * **[!UICONTROL Transactions]** : Totalt antal transaktioner efter att ett meddelande har tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
-## Ej levererbara produkter och studsar {#non-deliverables-and-bounces}
+## Ej levererbara filer och studsningar {#non-deliverables-and-bounces}
 
-I den här rapporten visas uppdelningen av icke-levererbara produkter samt en uppdelning av studenterna per Internetdomän.
+I den här rapporten visas uppdelningen av icke-levererbara produkter samt en uppdelning av belopp per Internetdomän.
 
 Det här **[!UICONTROL Number of messages processed]** representerar det totala antalet meddelanden som bearbetas av leveransservern. Värdet är lägre än antalet meddelanden som ska levereras när vissa leveranser har stoppats eller pausats (innan de bearbetas av servern).
 
@@ -97,12 +100,12 @@ Följande indikatorer används:
 * **[!UICONTROL Inbox full]** : Feltyp som genererats efter fem leveransförsök för att ange att mottagarens inkorg innehåller för många meddelanden.
 * **[!UICONTROL Account disabled]** : Feltyp som genereras när en leverans skickas för att ange att adressen inte längre finns.
 * **[!UICONTROL Rejected]** : Feltyp som genereras när en adress nekas av IAP (Internet Access Provider), till exempel efter att en säkerhetsregel (antispam-program) har tillämpats.
-* **[!UICONTROL Unreachable]** : Feltyp som inträffar i meddelandedistributionssträngen: incident på SMTP-reläet, domän som tillfälligt inte kan nås osv.
+* **[!UICONTROL Unreachable]** : Feltyp som inträffar i meddelandedistributionssträngen: -incident på SMTP-reläet, domän som tillfälligt inte kan nås osv.
 * **[!UICONTROL Not connected]** : Feltyp för att ange att mottagarens mobiltelefon är avstängd eller frånkopplad från nätverket när den skickas.
 
    >[!NOTE]
    >
-   >Denna indikator gäller endast leveranser i mobilkanaler. Mer information finns i [det här avsnittet](../../delivery/using/sms-channel.md).
+   >Denna indikator gäller endast leveranser i mobilkanaler. Mer information om detta finns i [det här avsnittet](../../delivery/using/sms-channel.md).
 
    Du kan öppna varje rad i värdetabellen genom att klicka på `[+]` symbolen. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
 
@@ -124,7 +127,7 @@ Du kan öppna varje rad i värdetabellen genom att klicka på [+] -symbolen. Fö
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kuben. Mer information finns i [det här avsnittet](../../reporting/using/about-cubes.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör en viss klass.
+>Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kuben. Mer information om detta finns i [det här avsnittet](../../reporting/using/about-cubes.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör en viss klass.
 
 ## Webbläsare {#browsers}
 
@@ -165,7 +168,7 @@ I värdetabellen används följande indikatorer:
 
 ### Delning till sociala nätverk {#sharing-to-social-networks}
 
-Med virusmarknadsföring kan mottagarna dela information med sina kontaktnätverk: kan de lägga till en länk till sin profil (Facebook, Twitter osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras inom leveransen. Mer information om viral marknadsföring finns i [detta avsnitt](../../delivery/using/viral-and-social-marketing.md).
+Med virusmarknadsföring kan mottagarna dela information med sina kontaktnätverk: kan de lägga till en länk till sin profil (Facebook, Twitter osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras inom leveransen. For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
 
 Den här rapporten visar hur delade och öppna meddelanden per socialt nätverk (Facebook, Twitter osv.) delas upp och/eller per e-post.
 
@@ -202,7 +205,7 @@ I det här avsnittet finns två diagram som visar hur delningsaktiviteter delas 
 
 Den här rapporten visar hur delningar har utvecklats till sociala nätverk (Facebook, Twitter, e-post osv.) i tid.
 
-Mer information om viral marknadsföring finns i [detta avsnitt](../../delivery/using/viral-and-social-marketing.md).
+For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
 
 ![](assets/s_ncs_user_social_report2.png)
 
@@ -259,7 +262,7 @@ I den här rapporten kan du övervaka prenumerationer på informationstjänster.
 
 Den kan visas för en prenumeration genom att klicka på **[!UICONTROL Profiles and targets > Services and subscriptions]** noden på hemsidan eller utforskaren. Välj önskad prenumeration och klicka sedan på **[!UICONTROL Reports]** fliken. Rapporten är som standard **[!UICONTROL Subscriptions tracking]** tillgänglig. Här kan du se trender för prenumeration och avprenumeration samt lojalitetsnivån under en period. Du kan konfigurera representationen av dessa data via listrutan. Klicka **[!UICONTROL Refresh]** för att validera den valda konfigurationen.
 
-Mer information finns på [den här sidan](../../delivery/using/managing-subscriptions.md).
+For further information, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
 Det här **[!UICONTROL Number subscribed to date]** representerar det totala antalet personer som för närvarande prenumererar.
 
@@ -308,4 +311,4 @@ Antalet öppningar motsvarar det totala antalet öppnade meddelanden. E-postmedd
 
 >[!NOTE]
 >
->Namnen på webbläsare och operativsystem utgör en del av den information som skickas av webbläsarens användaragent som spiken har öppnats till. Adobe Campaign minskar enhetstypen med hjälp av enhetsinformationen.
+>Namnen på webbläsare och operativsystem utgör en del av den information som skickas av webbläsarens användaragent som meddelandet har öppnats till. Adobe Campaign minskar enhetstypen med hjälp av enhetens enhetsinformation.
