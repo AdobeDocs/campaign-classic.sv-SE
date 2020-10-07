@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ Börja med att ange en etikett för aktiviteten och **[!UICONTROL Action to exec
 
    ![](assets/local_validation_intro_2.png)
 
-* **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se avsnittet [Inkrementell fråga](../../workflow/using/incremental-query.md) .
+* **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Refer to the [Incremental query](../../workflow/using/incremental-query.md) section.
 
    ![](assets/local_validation_intro_3.png)
 
@@ -60,7 +60,7 @@ De fält som ska anges vid ett meddelande om målgodkännande är:
 
 * **[!UICONTROL Approval management]**
 
-   * Välj leveransmall och ämne som ska användas för e-postmeddelandet. En standardmall är tillgänglig: **[!UICONTROL Local approval notification]**. Du kan också lägga till en beskrivning som visas ovanför mottagarlistorna i godkännanderutorna och feedbackmeddelandena.
+   * Välj leveransmall och ämne som ska användas för e-postmeddelandet. A default template is available: **[!UICONTROL Local approval notification]**. Du kan också lägga till en beskrivning som visas ovanför mottagarlistorna i godkännanderutorna och feedbackmeddelandena.
    * Ange det **[!UICONTROL Approval type]** som motsvarar godkännandedeadline (datum eller deadline från godkännandets början). På det här datumet startar arbetsflödet igen och de mottagare som inte har godkänts tas inte med i målsättningen. När meddelandena har skickats står aktiviteten i kö så att de lokala granskarna kan godkänna sina kontakter.
 
       >[!NOTE]
