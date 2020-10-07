@@ -1,7 +1,7 @@
 ---
-title: Definiera innehållet i direktreklam
-seo-title: Definiera innehållet i direktreklam
-description: Definiera innehållet i direktreklam
+title: Definiera innehållet i direktmeddelanden
+seo-title: Definiera innehållet i direktmeddelanden
+description: Definiera innehållet i direktmeddelanden
 seo-description: null
 page-status-flag: never-activated
 uuid: eac69f58-5ecb-4884-8806-edb16e6dece8
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: 443689f4-4c82-490f-ad96-22446f649a07
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 11%
 
 ---
 
 
-# Definiera innehållet i direktreklam{#defining-the-direct-mail-content}
+# Definiera innehållet i direktmeddelanden{#defining-the-direct-mail-content}
 
 ## Extraheringsfil {#extraction-file}
 
@@ -38,7 +38,7 @@ Med den här länken kan du komma åt extraheringsguiden och definiera den infor
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Det går att infoga en personlig URL i extraheringsfilen. Mer information finns i [Webbfunktioner](../../web/using/publishing-a-web-form.md).
+Det går att infoga en personlig URL i extraheringsfilen. For more on this, refer to [Web functionality](../../web/using/publishing-a-web-form.md).
 
 >[!NOTE]
 >
