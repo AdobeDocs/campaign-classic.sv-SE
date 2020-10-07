@@ -1,7 +1,7 @@
 ---
-title: Måldata
-seo-title: Måldata
-description: Måldata
+title: Målinrikta data
+seo-title: Målinrikta data
+description: Målinrikta data
 seo-description: null
 page-status-flag: never-activated
 uuid: 90c46ae9-8f9d-4538-a0fe-92fb3373f863
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1900'
+ht-degree: 4%
 
 ---
 
 
-# Måldata{#targeting-data}
+# Målinrikta data{#targeting-data}
 
 ## Skapa frågor {#creating-queries}
 
@@ -36,7 +36,7 @@ Det är möjligt att samla in ytterligare data som ska vidarebefordras och behan
 
 När ytterligare data har lagts till kan du redigera dem eller använda dem för att förfina det mål som definierats i frågeaktiviteten.
 
-Med **[!UICONTROL Edit additional data...]** länken kan du visa tillagda data och ändra dem eller lägga till dem.
+Med hjälp av **[!UICONTROL Edit additional data...]** länken kan du visa tillagda data och ändra dem eller lägga till dem.
 
 ![](assets/wf_add_data_edit_link.png)
 
@@ -96,7 +96,7 @@ Följande datavstämningsalternativ är tillgängliga:
 
 * **[!UICONTROL Keys only]**
 
-   Detta alternativ kan användas om indatapulserna är homogena.
+   Detta alternativ kan användas om indatapopulationerna är homogena.
 
 * **[!UICONTROL All columns in common]**
 
@@ -130,7 +130,7 @@ Följande datavstämningsalternativ är tillgängliga:
 
 Med skärningspunkten kan du bara återställa de linjer som delas av populationerna av inkommande övergångar. Denna aktivitet ska konfigureras som unionsaktiviteten.
 
-Dessutom är det möjligt att endast behålla ett urval kolumner, eller bara de kolumner som delas av den inkommande populationen.
+Dessutom är det bara möjligt att behålla ett urval av kolumner, eller bara de kolumner som delas av den inkommande populationen.
 
 Skärningsaktiviteten beskrivs i avsnittet [Skärningspunkt](../../workflow/using/intersection.md) .
 
@@ -182,7 +182,7 @@ För att konfigurera det måste du först välja villkor:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Mer information finns i det här [avsnittet](../../platform/using/about-fda.md).
+   Mer information om detta hittar du i det här [avsnittet](../../platform/using/about-fda.md).
 
 Sedan måste vi lägga till nya delmängder:
 
@@ -206,7 +206,7 @@ När deluppsättningar har skapats visar den delade aktiviteten som standard så
 
 ![](assets/wf_split_multi_outputs.png)
 
-Du kan gruppera alla dessa delmängder i en enda utdataövergång. I det här fallet visas länken till respektive delmängd i segmentkoden. Markera **[!UICONTROL Generate all subsets in the same table]** alternativet om du vill göra det.
+Du kan gruppera alla dessa delmängder i en enda utdataövergång. I det här fallet visas länken till respektive delmängd i segmentkoden. To do this, select the **[!UICONTROL Generate all subsets in the same table]** option.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -214,7 +214,7 @@ Du kan till exempel placera en enda leveransaktivitet och anpassa leveransinneh�
 
 ![](assets/wf_split_single_output.png)
 
-Deluppsättningar kan också skapas med hjälp av **[!UICONTROL Cells]** aktiviteten. Mer information finns i avsnittet [Celler](../../workflow/using/cells.md) .
+Deluppsättningar kan också skapas med hjälp av **[!UICONTROL Cells]** aktiviteten. For more on this, refer to the [Cells](../../workflow/using/cells.md) section.
 
 ### Använda måldata {#using-targeted-data}
 
@@ -226,25 +226,25 @@ När data har identifierats och beretts kan de användas i följande sammanhang:
 
 * Du kan även uppdatera innehållet i befintliga listor.
 
-   Mer information finns i [Listuppdatering](../../workflow/using/list-update.md).
+   For more on this, refer to [List update](../../workflow/using/list-update.md).
 
 * Du kan förbereda eller starta leveranser direkt i arbetsflödet.
 
    Mer information finns i [Leverans](../../workflow/using/delivery.md), [Leveranskontroll](../../workflow/using/delivery-control.md) och [Kontinuerlig leverans](../../workflow/using/continuous-delivery.md).
 
-## Datahantering {#data-management}
+## Data Management {#data-management}
 
-I Adobe Campaign kombinerar datahanteringen en uppsättning aktiviteter för att lösa komplexa målgruppsproblem genom att erbjuda mer effektiva och flexibla verktyg. På så sätt kan ni implementera en konsekvent hantering av all kommunikation med en kontakt genom att använda information som hör till deras kontrakt, prenumerationer, reaktivitet av leveranser osv. Med datahantering kan du följa datalivscykeln under segmenteringsåtgärder, särskilt:
+I Adobe Campaign kombinerar datahanteringen en uppsättning aktiviteter för att lösa komplexa målgruppsproblem genom att erbjuda mer effektiva och flexibla verktyg. På så sätt kan ni implementera en konsekvent hantering av all kommunikation med en kontakt genom att använda information som hör till deras kontrakt, prenumerationer, reaktivitet av leveranser osv. Datahantering låter dig följa datas livscykeln under segmenteringsåtgärder och då särskilt:
 
-* Förenkla och optimera målgruppsprocesserna genom att inkludera data som inte är modellerade i datamappningen (skapa nya tabeller: lokalt tillägg till varje målarbetsflöde beroende på konfiguration).
-* Behålla och överföra buffertberäkningar, särskilt under målkonstruktionsfaserna eller för databasadministration.
-* Åtkomst till externa baser (valfritt): heterogena databaser som beaktas under målinriktningsprocessen.
+* Förenkla och optimera målinriktningsprocesser genom att inkludera data som inte är modellerad i datakartläggningen (skapa nya tabeller: lokalt tillägg till varje arbetsflöde per målgrupp beroende på konfiguration).
+* Behålla och överföra buffertberäkningar. Särskilt under faserna då målgrupper konstrueras eller för databasadministration.
+* Åtkomst till externa baser (tillval): heterogena databaser som beaktas under målinriktningsprocessen.
 
-För att genomföra dessa åtgärder erbjuder Adobe Campaign följande:
+För att genomföra dessa åtgärder erbjuder Adobe Campaign
 
 * Datainsamling: [Filöverföring](../../workflow/using/file-transfer.md), [datainläsning (fil)](../../workflow/using/data-loading--file-.md), [datainläsning (RDBMS)](../../workflow/using/data-loading--rdbms-.md), [Uppdatera data](../../workflow/using/update-data.md). Detta första steg i datainsamlingen förbereder data så att de kan behandlas i andra aktiviteter. Flera parametrar måste övervakas för att arbetsflödet ska fungera korrekt och ge de förväntade resultaten. När du till exempel importerar data måste primärnyckeln (Pkey) för dessa data vara unik för varje post.
-* Målinriktade aktiviteter har förbättrats med datahanteringsalternativ: [Fråga](../../workflow/using/query.md), [Förening](../../workflow/using/union.md), [Skärning](../../workflow/using/intersection.md), [Dela](../../workflow/using/split.md). På så sätt kan du konfigurera en union eller en skärning mellan data från flera olika måldimensioner, så länge datavstämning är möjligt.
-* Dataomvandlingsaktiviteter: [Berikning](../../workflow/using/enrichment.md), [Ändra dimension](../../workflow/using/change-dimension.md).
+* Målinriktade aktiviteter har förbättrats med datahanteringsalternativ: [Fråga](../../workflow/using/query.md), [Förena](../../workflow/using/union.md), [Skärning](../../workflow/using/intersection.md), [Dela](../../workflow/using/split.md). På så sätt kan du konfigurera en union eller en skärning mellan data från flera olika måldimensioner, så länge datavstämning är möjligt.
+* Dataomvandlingsaktiviteter: [Anrikning](../../workflow/using/enrichment.md), [Ändra dimension](../../workflow/using/change-dimension.md).
 
 >[!CAUTION]
 >
