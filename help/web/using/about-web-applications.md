@@ -9,14 +9,11 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -88,7 +85,7 @@ Webbprogram skapas via **[!UICONTROL Web Applications]** länken på flikarna **
 
 Webbprogram lagras i noden **[!UICONTROL Resources > Online > Web Applications]** i Adobe Campaign-trädet. Konfigurationerna är uppdelade i följande mappar:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. En CSS-formatmall används också. Den här formatmallen kan överladdas på mallnivå. For more on this, refer to [this page](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. En CSS-formatmall används också. Den här formatmallen kan överladdas på mallnivå. Se denna [sida](../../web/using/form-rendering.md#selecting-the-form-rendering-template) för mer information om detta.
 * **[!UICONTROL Resources > Templates > Web application templates]**: innehåller formulärmallar. Om du vill skapa ett formulär eller ett webbprogram måste du utgå från en mall.
 
 ## Mallar för webbprogram {#web-application-templates}
