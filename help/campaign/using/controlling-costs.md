@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 0%
@@ -31,7 +28,7 @@ Med Adobe Campaign kan ni kontrollera planerade, utfästa och fakturerade markna
 
 Kostnaderna för de olika processerna i en kampanj debiteras en budget som fastställts i förväg av marknadsföringsavdelningen. Beloppen kan delas upp i flera kategorier för att göra informationen mer lättläst och för att ge en mer detaljerad rapportering om marknadsföringsinvesteringar.
 
-Hanteringen och spårningen av budgetar centraliseras i en dedikerad nod i Adobe Campaign-trädet. På så sätt kan du övervaka belopp som allokerats, reserverats, verkställts och använts från samma vy och för alla budgetar.
+Hanteringen och spårningen av budgetar är centraliserad i en dedikerad nod i Adobe Campaign-trädet. På så sätt kan du övervaka belopp som allokerats, reserverats, verkställts och använts från samma vy och för alla budgetar.
 
 ![](assets/s_ncs_user_budget_node_02.png)
 
@@ -97,7 +94,7 @@ För kampanjer kan en kostnad planeras, bindas eller reserveras för en framtida
 
 >[!CAUTION]
 >
->När en kampanj skapas **[!UICONTROL Budget]** måste förloppsstatusen i anges till **[!UICONTROL Defined]** för att kostnaderna ska kunna beaktas vid utförandet. Om statusen är **[!UICONTROL Being edited]** så konsolideras inte kostnaderna.
+>När en kampanj skapas **[!UICONTROL Budget]** måste förloppsstatusen i anges till **[!UICONTROL Defined]** för att kostnaderna ska beaktas vid utförandet. Om statusen är **[!UICONTROL Being edited]** så konsolideras inte kostnaderna.
 >   
 >Alternativet **[!UICONTROL Commitment level]** representerar en prognos över kostnaderna i framtiden innan de debiteras budgeten. Beroende på förloppet för en kampanj, uppgift eller leverans kan du välja att tilldela en högre eller lägre åtagandenivå (1). Planerad, 2. Reserverad, 3. Bekräftat) med kombinationsrutan.
 
@@ -208,13 +205,14 @@ Kostnaderna delas in i tre kategorier:
    * För en leverans som ännu inte har analyserats är den beräknade preliminära kostnaden den beräknade kostnaden. Om analysen redan har utförts är den beräknade kostnaden summan av alla kostnader som beräknas utifrån tjänstens kostnadsstrukturer och antalet mottagare.
    * För en pågående uppgift använder den beräknade kostnaden den uppskattade preliminära kostnaden. Om uppgiften är slutförd är den beräknade kostnaden summan av alla kostnader som beräknats från tjänsteleverantörens kostnadsstrukturer och antalet slutförda dagar.
    * För marknadsföringsplanen, liksom för programmet, är den beräknade kostnaden summan av de beräknade kostnaderna för kampanjerna. Om dessa kostnader inte anges kommer den beräknade kostnaden att använda de uppskattade preliminära kostnaderna.
+
    >[!NOTE]
    >
    >Med hjälp av **[!UICONTROL Breakdown]** länken kan du visa information om beräkningen och det senaste datumet för kostnadsberäkningen.
 
 1. Verklig kostnad
 
-   Den verkliga kostnaden anges manuellt och om det behövs delas den upp i olika utgiftskategorier.
+   Den verkliga kostnaden anges manuellt och delas vid behov upp i olika utgiftskategorier.
 
 ### Beräkning och debitering {#calculation-and-charging}
 
@@ -253,9 +251,11 @@ Vi ska skapa en kampanj med:
    Skapa följande två kostnadskategorier för uppgifter:
 
    * **[!UICONTROL Room reservation]** (litet rum och stort rum), med en **fast** kostnadsstruktur på 300 och 500 euro:
+
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** (**Innehållsmalltyp** ), med en **kostnadsstruktur på 300 euro per dag** :
+
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Steg 3 - Debitera budgeten i kampanjen {#step-3---charging-the-budget-in-the-campaign}
@@ -350,7 +350,7 @@ När budgeten har godkänts och leveransen är klar överförs kostnaderna autom
 
 ## Beställningar och fakturor {#orders-and-invoices}
 
-Inom ramen för MRM kan du spara beställningar hos en tjänsteleverantör och utfärda fakturor. Hela livscykeln för dessa order och fakturor kan hanteras via Adobe Campaign-gränssnittet.
+Inom ramen för MRM kan du spara beställningar hos en tjänsteleverantör och utfärda fakturor. Hela livscykeln för dessa order och fakturor kan hanteras via Adobe Campaign gränssnitt.
 
 ### Orderskapande {#order-creation}
 
@@ -378,4 +378,4 @@ Fakturorna för varje tjänsteleverantör visas på fliken **[!UICONTROL Invoice
 
 På fliken **[!UICONTROL Details]** kan du visa innehållet i fakturan.
 
-Klicka **[!UICONTROL Add]** för att skapa en ny faktura.
+Click **[!UICONTROL Add]** to create a new invoice.
