@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ee724240-c337-489d-a21b-5f3aec1f247a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Genom att basera dina nya arbetsflöden på en nyligen skapad mall väljs den an
 
 Alla aktiviteter som används i arbetsflödet använder därför din anpassade tabell utan att någon ytterligare manuell konfiguration behövs.
 
-Mer information om arbetsflöden finns i [det här avsnittet](../../workflow/using/about-workflows.md).
+For more information on workflows, refer to [this section](../../workflow/using/about-workflows.md).
 
 ![](assets/cfg_external_table_workflow.png)
 
