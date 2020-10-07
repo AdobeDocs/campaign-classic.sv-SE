@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Konfigurerar pipeline {#configuring-pipeline}
+# Konfigurera pipeline {#configuring-pipeline}
 
 Autentiseringsparametrar som kund-ID, privat nyckel och autentiseringsslutpunkt konfigureras i instanskonfigurationsfilerna.
 Listan med utlösare som ska bearbetas konfigureras i ett alternativ. Det är i JSON-format.
@@ -42,9 +39,9 @@ Nödvändiga konfigurationer är:
 * Skapar en privat nyckelfil och skapar sedan autentiseringsprogrammet som är registrerat med nyckeln.
 * Konfiguration av utlösare i Adobe Analytics.
 
-Adobe Analytics-konfigurationen ligger utanför det här dokumentets räckvidd.
+Adobe Analytics-konfigurationen omfattas inte av det här dokumentet.
 
-Adobe Campaign kräver följande uppgifter från Adobe Analytics:
+Adobe Campaign kräver följande information från Adobe Analytics:
 
 * Namnet på autentiseringsprogrammet.
 * IMSOrgId, identifieraren för Experience Cloud-kunden.
@@ -69,7 +66,7 @@ Den använder ett par offentliga och privata nycklar. Den här processen fungera
 
 ### IMSOrgId {#imsorgid}
 
-IMSOrgId är identifieraren för kunden i Adobe Experience Cloud.
+IMSOrgId är identifieraren för kunden på Adobe Experience Cloud.
 Ange det i instansfilen serverConf.xml, under attributet IMSOrgId.
 Exempel:
 
@@ -110,7 +107,7 @@ EwIDAQAB
 >
 >Tangenter ska inte genereras av PuttyGen, OpenSSL är det bästa alternativet.
 
-### Autentisera klientframtagning i Adobe Experience Cloud {#oauth-client-creation}
+### Skapa autentiska klienter i Adobe Experience Cloud {#oauth-client-creation}
 
 Ett program av typen JWT måste skapas genom att logga in på Adobe Analytics i rätt organisationskonto under **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Legacy Oath application]**.
 
@@ -180,7 +177,7 @@ Om det uppstår fel söker du efter fel i standardutdata (om du startade manuell
 
 | Alternativ | Beskrivning |
 |:-:|:-:|
-| appName | ID för OAuth-programmet (program-ID) som är registrerat i Adobe Analytics (där den offentliga nyckeln överfördes): Admin > Användarhantering > Äldre Oath-program. Se det här[avsnittet](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
+| appName | ID för OAuth-programmet (program-ID) som är registrerat i Adobe Analytics (där den offentliga nyckeln överfördes): Admin > Användarhantering > Äldre Oath-program. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
 | authGatewayEndpoint | URL för att hämta gateway-token. <br> Standard: https://api.omniture.com |
 | authPrivateKey | Privat nyckel (offentlig del som överförts till Adobe Analytics (se detta avsnitt). AES krypterad med alternativet XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
 | disableAuth | Inaktivera autentisering (anslutning utan gatewaytoken accepteras bara av vissa slutpunkter i utvecklingsprojektet) |
