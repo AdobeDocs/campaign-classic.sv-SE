@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 594a333d-1fc3-49a0-b3f6-7ea8fa4321e9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Den här aktiviteten erbjuder tre olika metoder:
 1. Bearbetar data i en lista.
 1. Använda data i en befintlig kub.
 
-Vilken metod som väljs beror på vilken typ av beräkning det är, datavolymen och hur länge de är giltiga osv. Alla dessa parametrar måste granskas noggrant för att undvika att Adobe Campaign-databasen överbelastas och för att optimera genereringen och hanteringen av de skapade rapporterna. Mer information finns på [den här sidan](../../reporting/using/best-practices.md#optimizing-report-creation).
+Vilken metod som väljs beror på vilken typ av beräkning det är, datavolymen och hur länge de är giltiga osv. Alla dessa parametrar måste granskas noggrant för att undvika att överbelasta Adobe Campaign-databasen och för att optimera genereringen och hanteringen av de skapade rapporterna. Se denna [sida](../../reporting/using/best-practices.md#optimizing-report-creation) för mer information om detta.
 
 I samtliga fall samlas data in via en **[!UICONTROL Query]** typaktivitet.
 
@@ -62,7 +62,7 @@ Du kan välja en kub som definierar frågan.
 
 ![](assets/reporting_query_from_cube.png)
 
-Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/about-cubes.md).
+Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. For more on creating cubes, refer to [this section](../../reporting/using/about-cubes.md).
 
 Klicka på **[!UICONTROL Edit query...]** länken och välj de indikatorer som du vill visa eller använda i rapporten.
 
