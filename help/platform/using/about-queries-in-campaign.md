@@ -11,25 +11,25 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: 08161b4a-7196-41db-b3df-68012a9fc2f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 86%
 
 ---
 
 
 # Om frågor i Campaign{#about-queries-in-campaign}
 
-Adobe Campaign-frågeverktyget finns på flera nivåer i programmet: för att skapa en målpopulation, segmentkunder, extrahera och filtrera spårningsloggar, byggfilter osv.
+Du kan hitta frågeverktyget i Adobe Campaign på flera nivåer i programmet. Du kan skapa en målgrupp, segmentera kunder, extrahera och filtrera spårningsloggar och bygga filter osv.
 
-Med Adobe Campaign-frågeverktyget kan du fråga en databas med en dedikerad guide: den generiska frågeredigeraren. Den öppnas via **[!UICONTROL Tools > Generic query editor...]** menyn. Du kan extrahera information som lagras i en databas och ordna, gruppera, sortera osv. Användaren kan till exempel återställa mottagare som klickat mer än n gånger på länken i ett nyhetsbrev under en viss period. Med det här verktyget kan du samla in, sortera och visa resultat utifrån dina behov.
+Med Adobe Campaign-frågeverktyget kan du fråga en databas med en dedikerad guide: den generiska frågeredigeraren. Den öppnas via **[!UICONTROL Tools > Generic query editor...]** menyn. Den låter dig extrahera information som finns lagrad i en databas och ordna, gruppera och sortera osv. Användaren kan till exempel hämta mottagare som har klickat mer än &quot;n&quot; gånger på länken i ett nyhetsbrev under en viss period. Det här verktyget låter dig samla in, sortera och visa resultat utifrån dina behov.
 
-Det här verktyget kombinerar alla Adobe Campaign-frågemöjligheter. Du kan till exempel skapa och spara begränsningsfilter. Det innebär att ett användarfilter som har skapats i den allmänna frågeredigeraren kan användas i rutan Fråga i ett målarbetsflöde, osv.
+Det här verktyget kombinerar alla frågemöjligheter i Adobe Campaign. Du kan till exempel skapa och spara begränsningsfilter. Det innebär att ett användarfilter som har skapats i den allmänna frågeredigeraren kan användas i frågeformuläret i ett arbetsflöde för målgrupper osv.
 
 Frågor skapas med hjälp av fält i den valda tabellen eller med hjälp av en formel.
 
-[Klicka här](../../workflow/using/query.md) om du vill identifiera redigeraren för Campaign-frågan.
+[Klicka här](../../workflow/using/query.md) för att lära dig om frågeredigeraren i Campaign.
 
 ![](assets/query_recipients_4.png)
