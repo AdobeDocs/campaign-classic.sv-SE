@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ Omfattningar som definieras i det externa Campaign-kontot måste vara en delmän
 
 **Återanrops-URL**
 
-URL:en **för** återanrop ska läggas till tillåtelselista och börja med&quot;https://&quot;. Kontrollera att **återanrops-URL** är länkad till motsvarande instans. Produktionsinstansen bör till exempel omdirigeras till produktions-URL:en.
+Återanrops-URL:en **** ska läggas till tillåtelselista och börja med &quot;https://&quot;. Kontrollera att **återanrops-URL** är länkad till motsvarande instans. Produktionsinstansen bör till exempel omdirigeras till produktions-URL:en.
 
 **Klient-ID och hemlighet**
 
