@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 5%
+source-wordcount: '792'
+ht-degree: 8%
 
 ---
 
@@ -25,8 +25,6 @@ ht-degree: 5%
 ## Listor i Adobe Campaign {#about-lists-in-adobe-campaign}
 
 En lista är en statisk uppsättning profiler som kan användas för leveransåtgärder eller uppdateras under importåtgärder eller under arbetsflödeskörning. En grupp som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
-
-
 
 Listor skapas och hanteras via **[!UICONTROL Lists]** länken på **[!UICONTROL Profiles and targets]** fliken.
 
@@ -41,6 +39,8 @@ Det finns två typer av listor i Adobe Campaign:
 * **[!UICONTROL List]** typ: Med **[!UICONTROL List]** typlistorna kan du använda arbetsflöden för att skapa och hantera listor. De här listorna är specifika från dataimport som kan uppdateras via den dedikerade **[!UICONTROL List update]** arbetsflödesaktiviteten.
 
    Till skillnad från **[!UICONTROL Group]** typlistan kan typlistan uppdateras automatiskt med en **[!UICONTROL Scheduler]** aktivitet. Observera att ett exempel på hur du skapar **[!UICONTROL List]** typlistor finns på [den här sidan](../../workflow/using/list-update.md).
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#create-list-video)
 
 ## Skapa en profillista från en grupp {#creating-a-profile-list-from-a-group}
 
@@ -131,3 +131,22 @@ Du kan ta bort en eller flera listor från grupplistan i Adobe Campaign-trädet.
 >
 >När du tar bort en lista påverkas inte profilerna i listan, men data i deras profil uppdateras.
 
+## Skapa en lista med mottagare {#create-list-video}
+
+En lista är en statisk uppsättning mottagare som kan användas för leveransåtgärder och som uppdateras i och med importer eller medan arbetsflödet körs. En lista över mottagare kallas även för en målgrupp.
+
+Lär dig hur du skapar en målgrupp genom att konfigurera en lista med mottagare från Utforskaren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+## Skapa en lista med mottagare med ett arbetsflöde
+
+Lär dig hur du skapar ett arbetsflöde för att rikta in dig på mottagare och hur du gör det återkommande innan du använder listan i ett e-postmål.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+**Se även**
+
+* 
+
+* 
