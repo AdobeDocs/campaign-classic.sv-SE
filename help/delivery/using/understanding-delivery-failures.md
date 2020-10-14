@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2440'
 ht-degree: 16%
 
 ---
@@ -83,10 +83,10 @@ Möjliga orsaker till leveransfel är:
    <td> Kvalitetsklassificeringen för den här adressen är för låg.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Adress på blockeringslista </td> 
+   <td> Blocklist adress </td> 
    <td> Hård </td> 
    <td> 8 </td> 
-   <td> Adressen lades till blockeringslista vid tidpunkten för sändningen. Den här statusen används för att importera data från externa listor och externa system till listan över Adobe Campaign-karantän.<br /> </td> 
+   <td> Adressen lades till i blockeringslista vid tidpunkten för sändningen. Den här statusen används för att importera data från externa listor och externa system till listan över Adobe Campaign-karantän.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kontrolladress </td> 
@@ -204,7 +204,7 @@ Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att
    >
    >Konfiguration av studspostlådan beskrivs i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   Den [här slingan](../../delivery/using/technical-recommendations.md#feedback-loop) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser finns på blockeringslista trots att de inte klickade på länken för att ta bort prenumerationen. Adresser finns blockeringslista i (**NmsAddress**)-karantäntabellen och inte i mottagartabellen (**NmsRecipient**).
+   Den [här slingan](../../delivery/using/technical-recommendations.md#feedback-loop) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser är till blockeringslista, även om de inte klickade på länken för att ta bort prenumerationen. Adresser är blockeringslista i (**NmsAddress**)-karantäntabellen och inte i mottagartabellen (**NmsRecipient**).
 
    >[!NOTE]
    >
