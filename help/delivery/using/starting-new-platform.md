@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Det är viktigt att du behåller domänens och IP-adressens anseende när du ska
 
 * Att börja skicka e-post är ett känsligt steg eftersom plattformen inte har någon historik över användning och, när de avsändande IP-adresserna aldrig har använts för detta ändamål, inget anseende.
 
-* Internetleverantörer misstänker naturligtvis IP-adresser som aldrig har använts för att skicka e-post och som plötsligt börjar skicka stora volymer e-posttrafik. För skräppost används i allmänhet&quot;okända&quot; IP-adresser (adresser som aldrig har lagts till i blockeringslista) för att skicka så många meddelanden som möjligt innan de upptäcks.
+* Internetleverantörer misstänker naturligtvis IP-adresser som aldrig har använts för att skicka e-post och som plötsligt börjar skicka stora volymer e-posttrafik. För skräppost används i allmänhet&quot;okända&quot; IP-adresser (adresser som aldrig har varit på blockeringslista) för att skicka så många meddelanden som möjligt före identifieringen.
 
 * Du kan inte förvänta dig att uppnå driftshastighet i form av utdata i början av produktionsfasen. Du bör inte heller försöka skicka meddelanden i den här hastigheten eftersom det kan leda till att internetleverantörerna blockerar sändningsadresserna och allvarligt äventyrar resten av startfasen.
 
