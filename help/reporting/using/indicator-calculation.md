@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2974'
 ht-degree: 1%
 
 ---
@@ -564,7 +564,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
   <tr> 
    <td> Klagomål<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Antal meddelanden med statusen "Misslyckades" och en orsak som är lika med "Adress som lagts till i blockeringslista".<br /> </td> 
+   <td> Antal meddelanden med statusen "Misslyckades" och en orsak som är lika med "adress till blockeringslista".<br /> </td> 
    <td> Count(@status=2 och msg/@errorReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** tabellen (nms:delivery)
   <tr> 
    <td> Meddelanden som avvisats av regeln<br /> </td> 
    <td> @visa<br /> </td> 
-   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen angiven adress, i karantän, tillagd i blockeringslista osv.<br /> </td> 
+   <td> Antal adresser som ignoreras under analysen enligt typologireglerna: ingen angiven adress, i karantän, på blockeringslista, osv.<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
