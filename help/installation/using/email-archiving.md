@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1303'
 ht-degree: 3%
 
 ---
@@ -151,5 +151,5 @@ När du har konfigurerat BCC för e-post måste du välja **[!UICONTROL Archive 
    * Om du använder samma MTA för flera instanser (utveckling, test, prod) för en enskild klient, dupliceras meddelandena som skickas från alla tre instanserna med alternativet dataLogPath.
 
 * **E-post per anslutning**: BCC-arkivering av e-post fungerar genom att öppna en anslutning och försöka skicka alla e-postmeddelanden via den anslutningen. Adobe rekommenderar att du kontaktar din interna tekniska kontakt för att kontrollera antalet e-postmeddelanden som accepteras för en viss anslutning. Om du ökar det här antalet kan det påverka genomströmningen av BCC avsevärt.
-* **BCC skickar IP**: För närvarande skickas inte BCC-e-post via de vanliga MTA-proxyadresserna. I stället öppnas en direktanslutning från MTA-servern till målservern för e-post. Det innebär att du kan behöva lägga till ytterligare IP-adresser till tillåtelselista i ditt nätverk, beroende på din e-postserverkonfiguration.
+* **BCC skickar IP**: För närvarande skickas inte BCC-e-post via de vanliga MTA-proxyadresserna. I stället öppnas en direktanslutning från MTA-servern till målservern för e-post. Det innebär att du kan behöva lägga till ytterligare IP-adresser till tillåtelselista i nätverket, beroende på din e-postserverkonfiguration.
 
