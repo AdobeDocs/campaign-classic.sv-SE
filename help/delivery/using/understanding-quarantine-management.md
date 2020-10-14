@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2571'
 ht-degree: 14%
 
 ---
@@ -34,21 +34,21 @@ Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress
 
 De profiler vars e-postadresser eller telefonnummer är i karantän exkluderas automatiskt vid förberedelse av meddelanden (se [Identifiera karantänadresser vid en leverans](#identifying-quarantined-addresses-for-a-delivery)).  Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten.
 
-Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i en blockeringslista av dessa leverantörer.
+Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer.
 
 Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta felaktiga telefonnummer från leveranser. Mer information om de bästa sätten för att skydda och optimera leveranser finns på [den här sidan](../../delivery/using/delivery-best-practices.md) .
 
-### Karantän jämfört med blockeringslista {#quarantine-vs-block-list}
+### Karantän mot blockeringslista {#quarantine-vs-denylist}
 
 **Karantän** gäller bara en adress, inte själva profilen.    Det innebär att om två profiler har samma e-postadress så påverkas båda om adressen sätts i karantän.
 
 På samma sätt kan en profil vars e-postadress sätts i karantän uppdatera profilen och ange en ny adress. Den kan sedan användas vid leveransåtgärder igen.
 
-Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs denna profil inte till blockeringslista som i avanmälningsprocessen. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
+>När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs denna profil inte till blockeringslista, som i avanmälningsprocessen via e-post. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
 
 ## Identifiera adresser i karantän {#identifying-quarantined-addresses}
 
@@ -107,9 +107,7 @@ Så här tar du bort en adress manuellt från karantänlistan:
 
    ![](assets/tech_quarant_error_status.png)
 
-* Du kan också ändra dess status till **[!UICONTROL On allow list]**. I det här fallet finns adressen kvar på karantänlistan, men den kommer att riktas systematiskt, även om ett fel inträffar.
-
-<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+* Du kan också ändra dess status till **[!UICONTROL Allowlisted]**. I det här fallet finns adressen kvar på karantänlistan, men den kommer att riktas systematiskt, även om ett fel inträffar.
 
 Adresserna tas automatiskt bort från karantänlistan i följande fall:
 
@@ -120,7 +118,7 @@ Adresserna tas automatiskt bort från karantänlistan i följande fall:
 Deras status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL On block list]** status tas aldrig bort, även om de får ett e-postmeddelande.
+Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL On denylist]** status tas aldrig bort, även om de får ett e-postmeddelande.
 
 Du kan ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i distributionsguiden (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
