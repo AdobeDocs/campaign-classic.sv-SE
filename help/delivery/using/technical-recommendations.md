@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -255,7 +255,7 @@ IP-certifiering är ett program för att skicka beprövade metoder som hjälper 
 
 För närvarande erbjuder två leverantörer IP-certifiering: Return Path och Certified Senders Alliance.
 
-Certifierade avsändare läggs till i e-post-tillåtelselista som används av globala postlådeproviders och säkerhetsföretag för e-postmeddelanden. Dessa tillåtelselista baseras på ett system som gör det möjligt för avsändaren att helt kringgå skräppostfilter eller tilldelas inkrementella punkter när de kommer in i systemet.
+Certifierade avsändare läggs till i e-postmeddelanden som används av globala postlådeproviders och e-postsäkerhetsföretag. Dessa kommersiella tillåtelselista baseras på ett system som gör att avsändaren kan kringgå skräppostfilter helt eller inkrementellt när de kommer in i systemet.
 
 Programmet [Return Path Certification](https://www.validity.com/products/returnpath/certification/) har flera fördelar:
 
