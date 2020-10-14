@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Att ha dubbla e-postadresser kan få flera följder:
 * Samma meddelande skickas mer än en gång. Även om Campaign utför en dedupliceringsprocedur som standard innan det skickas, finns det inget som hindrar att samma meddelande skickas av olika åtgärder med samma innehåll när ett mål delas.
 * Begäran om att avbryta prenumerationen har inte uppfyllts. Om en mottagare säger upp prenumerationen efter att ha fått ett meddelande, är deras duplicerade profil fortfarande berättigad till framtida meddelanden.
 
-Förutom detta steg i anmälningsförfarandet kommer denna situation sannolikt att leda till att användarna överväger att skicka meddelanden som skräppost och att utlösa ett förfarande för blockeringslista hos Internet-leverantören.
+Förutom detta steg i anmälningsförfarandet kommer denna situation sannolikt att leda till att användare anser att meddelandena är skräppost och att utlösa ett förfarande för blockeringslista hos Internet-leverantören.
 
 Du måste vara särskilt försiktig när du utför åtgärder i databasen:
 
