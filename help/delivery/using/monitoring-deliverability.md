@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Signal Spam är en fransk tjänst som erbjuder anonymiserad rapportering av feed
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) är en kompletterande övervakningslösning för de interna verktygen för Adobe-leverans som tillhandahåller IP-blockeringslista och domän samt för anseendeindikatorer.
+[250ok](https://250ok.com/) är en kompletterande övervakningslösning för de interna verktygen för Adobe-leverans som tillhandahåller IP- och domänbaserade blockeringslista samt anseendeindikatorer.
 
 Den information som tillhandahålls är i realtid, vilket möjliggör en proaktiv hjälp.
 
@@ -92,7 +92,7 @@ Följande indikatorer används i rapporten:
 
 * **[!UICONTROL DomainKeys]** : En tjänst som utvecklats av Yahoo och som är avsedd att certifiera identiteten för en e-postavsändare.
 
-* **[!UICONTROL IP and RBL domain]** (Blackutjämlista i realtid): En lista över IP-adresser och domäner som flaggats av blockeringslista för dåligt sändande anseende. Listorna hanteras av särskilda organisationer som Spamhaus, Spampolis, SURBL/URIBL osv. Adobe Campaign bearbetar för närvarande kontroller mot RBL:er som har en betydande påverkan på leveransen. Dessa URL:er återspeglar avsändarens anseende och kan refereras av Internet-leverantörer innan de godkänner att få dina e-postmeddelanden.
+* **[!UICONTROL IP and RBL domain]** (Blackutjämlista i realtid): En lista över IP-adresser och domäner som flaggats av organisationer i blockeringslista för dåligt sändande rykte. Listorna hanteras av särskilda organisationer som Spamhaus, Spampolis, SURBL/URIBL osv. Adobe Campaign bearbetar för närvarande kontroller mot RBL:er som har en betydande påverkan på leveransen. Dessa URL:er återspeglar avsändarens anseende och kan refereras av Internet-leverantörer innan de godkänner att få dina e-postmeddelanden.
 
 * **[!UICONTROL SNDS]** (Data Services för smarta nätverk): En [Windows Live Hotmail-tjänst mot skräppost](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail är den enda Internet-leverantör som tillhandahåller den här typen av information. Benchmark-poängen är ett grönt filterresultat, en klagofrekvens på mindre än 0,1 % och noll skräppostsvällningar.
 
