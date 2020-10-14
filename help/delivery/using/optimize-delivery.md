@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '736'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost 
 
 Det ligger i ditt bästa intresse att upprätthålla goda karantänhanteringsprocesser.
 
-När du börjar skicka e-post på en ny plattform kan du använda en lista med adresser som inte är fullständigt kvalificerade. Om du skickar till ogiltiga adresser eller till honeypoadresser (postlådor som bara skapats för att lura skräppost) börjar detta minska din plattforms anseende. Goda rutiner för hantering av karantäner hjälper till att upprätthålla adresskvaliteten, undvika blockeringslista från leverantörer av internetåtkomst, minska felfrekvensen och snabba upp leveranser och dataflöde.
+När du börjar skicka e-post på en ny plattform kan du använda en lista med adresser som inte är fullständigt kvalificerade. Om du skickar till ogiltiga adresser eller till honeypoadresser (postlådor som bara skapats för att lura skräppost) börjar detta minska din plattforms anseende. Goda rutiner för hantering av karantäner hjälper till att upprätthålla adresskvaliteten, undvika blockeringslista från internetleverantörer och minska felfrekvensen, snabba upp leveranser och dataflöde.
 
 **Tips**
 
@@ -73,7 +73,7 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 * Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. Mer information om detta finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md).
 
 
-* Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i en blockeringslista av dessa leverantörer.
+* Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer.
 
 * Hantering av karantäner minskar också SMS-sändningskostnaderna eftersom felaktiga telefonnummer utesluts från leveranser.
 
