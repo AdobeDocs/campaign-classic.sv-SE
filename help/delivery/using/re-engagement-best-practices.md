@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Enligt en studie av Return Path resulterade återengagemangskampanjer i en öppe
 ### Fas 1 {#phase-1}
 
 * Det första steget är att identifiera prenumeranter som har mycket lite till ingen öppnings- eller klickaktivitet och segmentera gruppen utifrån en bestämd tidsram. Regeln är att granska prenumeranter som inte har öppnat eller klickat på ett e-postmeddelande inom de senaste 90 dagarna. Detta varierar dock beroende på verksamhetens art (till exempel säsongsbunden sändning).
-* En annan sak som du bör tänka på när du definierar tidsramar är att internetleverantörer och företag i blockeringslista anser att engagemang är var som helst mellan 1,5 och 1,8 år. Dessutom kan beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten, förekomma.
+* En annan sak som du bör tänka på när du definierar tidsramar är att internetleverantörer och företag som blocklist anser att engagemang är var som helst mellan 1,5 och 1,8 år. Dessutom kan beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten, förekomma.
 
 ### Fas 2 {#phase-2}
 
