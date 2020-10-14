@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -187,7 +187,7 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
    Se till att `where` satsen är av samma typ som fältet.
 
-   Ett vanligt misstag är: `iBlocklist='3'` där `iBlocklist` är ett numeriskt fält och `3` anger ett textvärde.
+   Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält och `3` anger ett textvärde.
 
    Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
