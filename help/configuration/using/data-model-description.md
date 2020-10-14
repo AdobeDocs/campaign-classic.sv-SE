@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Det är standardtabellen som används för **mottagare av leveranser**. Den inne
 * iEmailFormat: önskat format för e-post (1 för Text, 2 för HTML och 0 om det är odefinierat).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity används för att skapa postadressen (i enlighet med standarden XPZ 10-011 AFNOR från maj 1997).
 * sPhone, sMobilePhone, sFax innehåller telefon-, mobiltelefon- och faxnummer.
-* iBlockList är standardflaggan för avanmälan som används för profilerna (1 betyder&quot;unsubscribed&quot;, 0 annars).
+* iBlackList är standardavanmälningsflaggan som används för profilerna (1 betyder&quot;unsubscribed&quot;, 0 annars).
 
 Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körningsmapp. For more on this, see [XtkFolder](#XtkFolder).
 
