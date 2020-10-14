@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '992'
 ht-degree: 12%
 
 ---
@@ -45,7 +45,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 * Det kan hända att du loggar in på SFTP för att direkt kontrollera vad som finns där.
 * Kom ihåg att SFTP-diskhantering i första hand är ditt ansvar.
 * Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
-* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser till tillåtelselista via en [supportanmälan](https://support.neolane.net).
+* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser i tillåtelselista via en [supportanmälan](https://support.neolane.net).
 
 >[!CAUTION]
 >
