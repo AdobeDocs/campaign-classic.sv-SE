@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -151,6 +151,7 @@ Du kan även läsa [Tips och kända begränsningar för Gmail](https://developer
 För närvarande kan du experimentera med att skicka ett AMP-mejl i två steg:
 
 1. Med Adobe Campaign kan du testa att leverera en AMP-driven dynamisk e-post till utvalda e-postadresser som är korrekt konfigurerade, för att verifiera dess innehåll och beteende. Se [Testa AMP-e-postleverans för valda adresser](#testing-amp-delivery-for-selected-addresses).
+
 1. När du har testats kan du skicka en leverans eller en kampanj som en del av AMP for Email-programmet genom att registrera dig hos de relevanta e-postleverantörerna för att lägga till din avsändardomän i tillåtelselista. Se [Leverera AMP-e-post genom att registrera hos en e-postleverantör](#delivering-amp-emails-by-registering).
 
 ### Testar AMP-e-postleverans för valda adresser {#testing-amp-delivery-for-selected-addresses}
@@ -161,7 +162,7 @@ Du kan testa att skicka dynamiska meddelanden från Adobe Campaign till valda e-
 >
 >För närvarande stöder endast Gmail, Outlook och Mail.ru testning av AMP-formatet.
 
-För Gmail och Outlook måste du först lägga till avsändaradressen/avsändaradresserna som du använder på tillåtelselista för att leverera från Adobe Campaign för de Gmail- och Outlook-konton som du riktar dig mot.
+För Gmail och Outlook måste du först lägga till avsändaradressen/avsändaradresserna som du använder på tillåtelselista för att kunna leverera från Adobe Campaign för de Gmail- och Outlook-konton som du riktar dig mot.
 
 Så här gör du:
 1. Kontrollera att alternativet Aktivera dynamisk e-post är markerat för de relevanta e-postleverantörerna.
