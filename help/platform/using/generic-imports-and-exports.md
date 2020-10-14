@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '489'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ Du kan:
 >
 >Dataimport i Campaign bör ske via arbetsflöden för att säkra konsekvensen och förbättra effektiviteten. Mer information finns i avsnitten [Importera data](../../workflow/using/importing-data.md), [Importera bästa praxis](../../workflow/using/importing-data.md#best-practices-when-importing-data) och Exempel [på](../../workflow/using/importing-data.md#setting-up-a-recurring-import) importmallar.
 
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+
 ## Creating a job template {#creating-a-job-template}
 
 Mallar för import och export lagras i Adobe Campaign-trädets **[!UICONTROL Resources > Templates > Job templates]** katalog.
-
-![](assets/s_ncs_user_export_wizard_template.png)
 
 Som standard finns det tre importmallar och en exportmall i den här katalogen. De får inte ändras. Du kan duplicera dem för att skapa egna mallar eller skapa en ny mall via menyn **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** .
 
@@ -54,7 +54,7 @@ Hur du skapar en processmall beskrivs i [Exportguiden](../../platform/using/expo
 
 >[!NOTE]
 >
->Den inbyggda mallen **[!UICONTROL Import block list]** är redan konfigurerad för att importera en lista med e-postadresser som har lagts till i blockeringslista.
+>Den inbyggda mallen **[!UICONTROL Import denylist]** är redan konfigurerad för att importera en lista med e-postadresser som har lagts till i blockeringslista.
 > 
 >Med mallarna **[!UICONTROL New text import]** och **[!UICONTROL New text export]** kan du konfigurera en import- eller exportfunktion från grunden.
 
