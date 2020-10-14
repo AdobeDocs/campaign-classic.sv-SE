@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '474'
 ht-degree: 5%
 
 ---
@@ -46,7 +46,7 @@ Den här skärmen innehåller alla allmänna data om den valda profilen. Den inn
 
 >[!NOTE]
 >
->När du väljer **[!UICONTROL No longer contact (by any channel)]** alternativet innebär det att profilen finns på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Se denna [sida](../../delivery/using/understanding-quarantine-management.md) för mer information om detta.
+>När du väljer **[!UICONTROL No longer contact (by any channel)]** alternativet innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Se denna [sida](../../delivery/using/understanding-quarantine-management.md) för mer information om detta.
 
 ## Fliken Kontaktinformation {#contact-information-tab}
 
