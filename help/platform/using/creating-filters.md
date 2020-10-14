@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1976'
 ht-degree: 0%
 
 ---
@@ -276,7 +276,7 @@ De fördefinierade filtren är:
    <td> Väljer mottagare som har klickat på en leverans minst X gånger under de senaste Y-månaderna.<br /> </td> 
   </tr> 
   <tr> 
- <td> E-postadress på blockeringslista<br /> </td> 
+ <td> Blocklist e-postadress<br /> </td> 
     <td> Väljer mottagare vars e-postadress finns på blockeringslista.<br/> </td>
   </tr> 
   <tr> 
