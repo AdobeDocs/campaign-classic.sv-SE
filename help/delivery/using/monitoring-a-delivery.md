@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 2%
 
 ---
@@ -114,12 +114,12 @@ Plattforms- och databasunderhåll kan också påverka leveransresultaten. Se den
 
 När du har klickat på **[!UICONTROL Send]** knappen verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
 
-* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i blockeringslista. I så fall kontrollerar du dina utskick och läser [det här avsnittet](../../delivery/using/about-deliverability.md).
+* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. I så fall kontrollerar du dina utskick och läser [det här avsnittet](../../delivery/using/about-deliverability.md).
 * Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa med hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit. Läs Adobe Campaign [Delivery best practices](../../delivery/using/delivery-best-practices.md) om riktlinjer för innehållet.
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
    * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/deliverability-faq.md) . Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har stött på fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed stöter på potentiella blockeringslista.
+   * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har påträffat fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed riskerar att blocklist.
 
 * Ett systemproblem kan förhindra servrar från att samverka: detta kan göra hela sändningsprocessen långsammare. Kontrollera servrarna för att se till att det inte finns några minnes- eller resursproblem som kan påverka Campaign när personaliseringsdata hämtas till exempel.
 
@@ -163,7 +163,7 @@ När du skickar en leverans kan du stöta på följande status på kontrollpanel
   </tr> 
   <tr> 
    <td> Ignorerad<br /> </td> 
-   <td> Leveransen skickades inte till mottagaren på grund av ett fel med hans adress. Den har antingen lagts till i en blockeringslista, i karantän, inte tillhandahållits eller en dubblett. <br /> </td> 
+   <td> Leveransen skickades inte till mottagaren på grund av ett fel med hans adress. Den fanns antingen på blockeringslista, i karantän, inte tillhandahållen eller en dubblett. <br /> </td> 
   </tr> 
   <tr> 
    <td> Skickat<br /> </td> 
@@ -241,7 +241,7 @@ Om status för en e-postleverans är **[!UICONTROL Failed]** kan den länkas til
 
 Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. Här följer möjliga fel som du kan identifiera från leveransloggar:
 
-* Om det inte går att nå mottagarmeddelanden med felet &quot;Oåtkomligt&quot;: **Fel vid kompilering av skript &#39;content htmlContent&#39; rad X:`[table]`är inte definierad. JavaScript: fel vid utvärdering av skript &#39;content htmlContent**&#39; är orsaken till problemet nästan alltid en personalisering inom HTML som försöker anropa en tabell eller ett fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
+* Om det inte går att nå mottagarmeddelanden med felet &quot;Oåtkomligt&quot;: **Fel vid kompilering av skript &#39;content htmlContent&#39; rad X: `[table]` är inte definierad. JavaScript: fel vid utvärdering av skript &#39;content htmlContent**&#39; är orsaken till problemet nästan alltid en personalisering inom HTML som försöker anropa en tabell eller ett fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
 
    För att rätta till detta måste arbetsflödes- och leveransinnehållet granskas för att avgöra specifikt vilken personalisering som försöker anropa tabellen i fråga och om tabellen kan mappas eller inte. Därifrån är det antingen vägen till lösningen att ta bort anropet till den här tabellen i HTML-koden eller att åtgärda mappningen till leveransen.
 
