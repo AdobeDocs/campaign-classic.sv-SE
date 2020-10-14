@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3587'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa
 >
 >Dessa konfigurationer måste utföras av administratörer och endast för **lokala** värdmodeller.
 >
->För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på Kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
+>För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
 
 Mer information finns i följande avsnitt:
 
@@ -357,7 +357,7 @@ Det finns tre lägen för anslutningsskydd:
 
 * **Blockering**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
 * **Tillstånd**: Alla URL:er som inte tillhör tillåtelselista tillåts.
-* **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
+* **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken skickar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -371,7 +371,7 @@ Det finns tre lägen för anslutningsskydd:
 >
 >Som standard använder nya kunders kunder **blockeringsläget**. Om de behöver tillåta en ny URL-adress kontaktar de administratören för att lägga till den i tillåtelselista.
 >
->Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:erna i tillåtelselista och aktivera **blockeringsläget**.
+>Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:er till tillåtelselista och aktivera **blockeringsläget**.
 
 ## Dynamisk sidsäkerhet och vidarebefordran {#dynamic-page-security-and-relays}
 
@@ -452,7 +452,7 @@ sh
 >
 >Denna lista är inte uttömmande.
 
-I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i attributet **blocklistFile** .
+I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i attributet **svartlistFile** .
 
 **Endast** för Linux: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som ska köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i **exec** -noden i konfigurationsfilen. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
@@ -464,7 +464,7 @@ Exempel:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
+ <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
 </serverConf>
 ```
 
