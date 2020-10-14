@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -47,38 +47,38 @@ Om du alltid får samma felmeddelande för en Internet-leverantör, kan din e-po
 
 Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, Adobe Campaign Client Care eller Adobe Campaign support.
 
-## Blockeringslista kontra karantän {#block-list-versus-quarantine}
+## Blockeringslista kontra karantän {#denylist-versus-quarantine}
 
 * **Vad är skillnaden mellan en e-postadress på blockeringslista och en e-postadress i karantän?**
 
-   * Statusen **[!UICONTROL On block list]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
+   * Statusen **[!UICONTROL Denylisted]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
 
    * Statusen **[!UICONTROL Quarantined]** är ett resultat av en mjuk eller hård studsa.
-   Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
+   Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Vad betyder de olika anledningarna till karantänfel?**
 
-   Här följer tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, adress på blockeringslista, nekad, fel ignorerad, ej tillgänglig, konto inaktiverat, postlåda full, inte ansluten.
+   Här följer tio möjliga orsaker: inte definierad, okänd av användare, ogiltig domän, avslagen på blockeringslista, ignorerat fel, ej tillgänglig, kontot inaktiverat, postlådan full, inte ansluten.
 
    For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## Ta bort från blockeringslista {#remove-from-block-list}
+## Ta bort från blockeringslista {#remove-from-denylist}
 
-* **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från blockeringslista så att jag kan börja skicka dem igen?**
+* **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från den så att jag kan börja skicka dem igen?**
 
    * Gå till **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * I informationen för motsvarande post anger du värdet för **[!UICONTROL Status]** fältet till **[!UICONTROL Valid]**.
    * Spara posten.
 
-* **Hur kan jag ta reda på om en av mina IP-adresser finns på blockeringslista? Hur tar jag bort mina IP-adresser från blockeringslista?**
+* **Hur kan jag ta reda på om en av mina IP-adresser är på blockeringslista? Hur tar jag bort mina IP-adresser från ett blockeringslista?**
 
-   Om du vill kontrollera om din IP-adress finns på en blockeringslista kan du använda olika webbplatser för att verifiera den, till exempel:
+   Om du vill kontrollera om din IP-adress finns på blockeringslista kan du använda olika webbplatser för att verifiera den, till exempel:
    * [MX Toolbox](https://mxtoolbox.com/)
    * [Vad är min IP-adress?](https://whatismyipaddress.com)
 
-   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslista och även namnet på den webbplats som blockerade IP-adressen.
+   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslista och även namnet på den webbplats som nekade IP-adressen.
 
-   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen i blockeringslista.
+   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen till blockeringslista.
 
    >[!NOTE]
    >
