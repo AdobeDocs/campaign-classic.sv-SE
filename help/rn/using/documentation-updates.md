@@ -7,13 +7,13 @@ contentOwner: sauviat
 products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
-topic-tags: latest-release-notes
+topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
 workflow-type: tm+mt
-source-wordcount: '3704'
-ht-degree: 88%
+source-wordcount: '3695'
+ht-degree: 87%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 88%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
 
 Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
+
+## Oktober 2020 {#oct-2020}
+
+En ny teknik har skapats med information om hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APN-providern. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 ## September 2020 {#september-2020}
 
@@ -94,8 +98,6 @@ Bästa tillvägagångssätt har lagts till i **[!UICONTROL Scheduler]** aktivite
 Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inkluderar förtydligande av de fall där adresser automatiskt tas bort från karantänlistan. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Användningsfall har lagts till om hur data [krypteras](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypteras](../../workflow/using/importing-data.md#use-case-gpg-decrypt) med Kontrollpanelen och arbetsflödena i Campaign.
-
-De båda termerna &quot;vitlistad&quot; och &quot;svartlistad&quot; har tagits bort från dokumentationen för Adobe Campaign. Vissa förekomster av dessa termer kan fortfarande förekomma i produktgränssnittet, alternativnamn och intern kod men ersätts i kommande versioner av Campaign med &quot;blockeringslista&quot; och &quot;tillåtelselista&quot;.
 
 The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
 
