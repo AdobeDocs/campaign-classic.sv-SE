@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Eftersom mottagarna av leveransen inte har bekräftat sitt godkännande finns de fortfarande i databasen blockeringslista. För att de ska kunna ta emot det här meddelandet måste du godkänna leveranser som baseras på den här mallen för mottagare som befinner sig på blockeringslista.
+1. Eftersom mottagarna av den här leveransen inte har bekräftat sitt godkännande finns de fortfarande på blockeringslista i databasen. För att de ska kunna ta emot det här meddelandet måste du godkänna leveranser som baseras på den här mallen för att rikta sig till mottagare på blockeringslista.
 
    Klicka på **[!UICONTROL Exclusions]** fliken om du vill göra det.
 
-1. Klicka på **[!UICONTROL Edit...]** länken och avmarkera **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** alternativet.
+1. Klicka på **[!UICONTROL Edit...]** länken och avmarkera **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** alternativet.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -109,10 +109,10 @@ Följ stegen nedan för att göra detta:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Den första **[!UICONTROL Script]** aktiviteten lägger till mottagare i blockeringslista tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
+   Den första **[!UICONTROL Script]** aktiviteten lägger till mottagare på blockeringslista tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
 
    ```
-   ctx.recipient.@blockList=1
+   ctx.recipient.@blackList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +120,7 @@ Följ stegen nedan för att göra detta:
    Den andra **[!UICONTROL Script]** aktiviteten tillåter att leveranser skickas till användarna och prenumererar på dem i nyhetsbrevet. De sista två raderna i skriptet gör att du kan överföra dina mottagare från den tillfälliga mappen till en annan mapp och stämma av med befintliga profiler så fort de har bekräftat prenumerationen.
 
    ```
-   ctx.recipient.@blockList=0
+   ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +172,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen och deras profil läggs till i blockeringslista tills han/hon bekräftar sin prenumeration med e-postmeddelandet.
+   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** mappen och deras profil är på blockeringslista tills han/hon bekräftar sin prenumeration med e-postmeddelandet.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    I Adobe Campaign uppdateras användarprofilen:
 
-   * De är inte längre på blockeringslista.
+   * de inte längre är på blockeringslista,
    * de prenumererar på informationstjänsten.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
