@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1576'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ Följande alternativ är tillgängliga:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.v.s. mottagare vars e-postadresser finns på blockeringslista (&#39;opt out&#39;). Detta alternativ måste förbli valt för att man ska kunna följa e-handelns yrkesmässiga etik och lagstiftningen om e-handel.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.v.s. mottagare vars e-postadresser är på blockeringslista (avanmäl dig). Detta alternativ måste förbli valt för att man ska kunna följa e-handelns yrkesmässiga etik och lagstiftningen om e-handel.
 * **[!UICONTROL Exclude quarantined recipients]**. Med det här alternativet kan du undanta profiler med en adress som inte svarar från målet. Vi rekommenderar starkt att du behåller det här alternativet markerat.
 
    >[!NOTE]
