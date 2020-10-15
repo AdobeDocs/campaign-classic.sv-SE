@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -648,7 +648,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Gör att du kan konfigurera en separat databas för arbetstabeller på Microsoft SQL Server för att optimera säkerhetskopiering och replikering. Alternativet motsvarar namnet på den tillfälliga databasen: Arbetstabeller skrivs i den här databasen om de anges. Exempel: 'tempdb.dbo.' (Observera att namnet måste sluta med en punkt).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Läs mer</a> <br /> </td> 
+   <td> Gör att du kan konfigurera en separat databas för arbetstabeller på Microsoft SQL Server för att optimera säkerhetskopiering och replikering. Alternativet motsvarar namnet på den tillfälliga databasen: Arbetstabeller skrivs i den här databasen om de anges. Exempel: 'tempdb.dbo.' (Observera att namnet måste sluta med en punkt). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Läs mer</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
