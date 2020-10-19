@@ -1,6 +1,6 @@
 ---
-title: Använda Adobe Campaign Classic mottagartabell
-description: Lär dig hur du använder den färdiga mottagartabellen i Adobe Campaign Classic när du utformar din datamodell.
+title: Bästa praxis för datamodell
+description: Lär dig hur du arbetar med datamodellen Campaign Classic
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3997'
-ht-degree: 0%
+source-wordcount: '4014'
+ht-degree: 1%
 
 ---
 
@@ -245,7 +245,7 @@ Om den omvända länken inte ska vara synlig för användaren kan du dölja den 
 
 Länkar som utför en extern koppling (1-0..1) bör användas med försiktighet eftersom det påverkar systemets prestanda.
 
-## Datalagring - Rensa och rensa {#data-retention}
+## Datalagring - rensning och rensning {#data-retention}
 
 Adobe Campaign är varken ett data warehouse eller ett rapportverktyg. För att Adobe Campaign-lösningen ska fungera väl bör databastillväxten därför förbli under kontroll. För att uppnå detta kan det vara bra att följa några av de bästa metoderna nedan.
 
@@ -253,6 +253,10 @@ Som standard har Adobe Campaign leverans- och spårningsloggar en kvarhållnings
 
 * Om du vill att loggarna ska sparas längre bör detta beslut fattas med stor noggrannhet beroende på databasstorleken och mängden meddelanden som skickas. Som påminnelse är Adobe Campaign-sekvensen ett 32-bitars heltal.
 * Vi rekommenderar att du inte har mer än 1 miljard poster samtidigt i dessa tabeller (cirka 50 % av de 2,14 miljarder ID som finns) för att begränsa riskerna med att använda alla tillgängliga ID:n. Detta kräver att vissa kunder minskar kvarhållningstiden till mindre än 180 dagar.
+
+Läs mer om datalagring i [riktlinjerna](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)för integritet och säkerhet i Campaign.
+
+Läs mer om rensningsarbetsflödet [i det här avsnittet](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
