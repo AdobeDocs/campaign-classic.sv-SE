@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Så här skapar du ett externt konto av instanstypen körning:
 
    >[!NOTE]
    >
-   >Observera att när du använder FDA över HTTP stöds bara körningsinstanser som använder en Postgres-databas. MSSQL- eller Oracle-databaser stöds inte.
+   >Observera att när du använder FDA över HTTP stöds endast körningsinstanser med en PostgreSQL-databas. MSSQL- eller Oracle-databaser stöds inte.
 
    Den andra metoden rekommenderas om kontrollinstansen har direktåtkomst till databasen för körningsinstanserna. Välj i annat fall webbtjänståtkomst. Det FDA-konto som ska anges sammanfaller med anslutningen till databaserna för de olika körningsinstanserna som skapas i kontrollinstansen.
 
