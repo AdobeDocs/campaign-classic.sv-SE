@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1848'
 ht-degree: 8%
 
 ---
@@ -149,10 +149,12 @@ Begäran om **åtkomst** och **borttagning** visas på [den här sidan](https://
 
 ### Cookies {#cookies}
 
-Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra hur mottagarna ser ut med hjälp av två typer av cookies:
+Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra hur mottagarna ser ut med hjälp av tre typer av cookies: en sessionscookie och två permanenta cookies.
 
-* En **sessionscookie** (nlid). Detta innehåller identifieraren för e-postmeddelandet som skickas till kontakten (broadlogId) och identifieraren för meddelandemallen (deliveryId). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
-* En **permanent cookie** som delas mellan Adobe Experience Cloud-lösningar. På så sätt kan du identifiera de användare som interagerar med Experience Cloud när de besöker en webbplats. Beskrivningen av denna cookie finns [här](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
+* A **session cookie**: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
+* Två **permanenta cookies**:
+   * Cookien **UID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med denna cookie kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan deponeras av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av denna cookie finns [här](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
+   * Den **olevererade** cookien (som introducerades i Campaign Classic 20.3) är en permanent cookie som innehåller **deliveryId** för den senaste leveransen som användaren klickade på länken från. Den här cookien används för att identifiera spårningstabellen som ska användas, när sessionscookien saknas.
 
 I sådana förordningar som den allmänna dataskyddsförordningen (GDPR) anges att företag kräver att webbplatsanvändarna godkänner avtalet innan de installerar cookies.
 
