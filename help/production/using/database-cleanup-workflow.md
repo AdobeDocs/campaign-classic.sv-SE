@@ -1,8 +1,6 @@
 ---
 title: Arbetsflöde för databasrensning
-seo-title: Arbetsflöde för databasrensning
-description: Arbetsflöde för databasrensning
-seo-description: null
+description: Se hur gamla data rensas automatiskt
 page-status-flag: never-activated
 uuid: a7478641-cdf6-4bd4-9dd7-0c84416c9de6
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -32,7 +30,7 @@ Med det arbetsflöde som är tillgängligt via **[!UICONTROL Database cleanup]**
 
 Databasrensningen är konfigurerad på två nivåer: i arbetsflödets schemaläggare och i distributionsguiden.
 
-### Schemaläggaren {#the-scheduler}
+### Arbetsflödesplanerare {#the-scheduler}
 
 >[!NOTE]
 >
@@ -53,7 +51,7 @@ Som standard är arbetsflödet konfigurerat så att det startar varje dag kl. 4.
 
 ### Distributionsguide {#deployment-wizard}
 
-Med **[!UICONTROL Deployment wizard]** , som du kommer åt via **[!UICONTROL Tools > Advanced]** menyn, kan du konfigurera hur länge data ska sparas. Värdena anges i dagar. Om dessa värden inte ändras används standardvärdena i arbetsflödet.
+Med **[!UICONTROL Deployment wizard]** menyalternativet, som du kommer åt via **[!UICONTROL Tools > Advanced]** menyn, kan du konfigurera hur länge data ska sparas. Värdena anges i dagar. Om dessa värden inte ändras används standardvärdena i arbetsflödet.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
