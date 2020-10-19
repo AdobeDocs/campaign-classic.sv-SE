@@ -1,8 +1,6 @@
 ---
 title: Skapa en ny rapport
-seo-title: Skapa en ny rapport
-description: Skapa en ny rapport
-seo-description: null
+description: Lär dig viktiga steg för att skapa en ny rapport
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
@@ -60,29 +58,29 @@ Aktiviteter länkas med övergångar, som representeras av pilar.
 
 Om du vill skapa en rapport, beroende på dess art och sammanhang, måste du identifiera de användbara elementen och ändra deras logiska sekvens.
 
-1. Använd aktiviteten Start för att materialisera den första processen som ska utföras för att skapa rapporten. Du kan bara använda en av dessa aktiviteter per rapport.
+1. Använd aktiviteten för att **[!UICONTROL Start]** materialisera den första processen som ska utföras för att skapa rapporten. Du kan bara använda en av dessa aktiviteter per rapport.
 
    Det är obligatoriskt om diagrammet innehåller en slinga.
 
-1. Lägg till en eller flera &#39;Fråga&#39;-aktiviteter för att samla in data som är användbara när du skapar rapporten. Data kan samlas in antingen direkt via en fråga i ett databasschema eller via en importerad lista eller en befintlig kub.
+1. Lägg till en eller flera **[!UICONTROL Query]** aktiviteter för att samla in data som är användbara när du skapar rapporten. Data kan samlas in antingen direkt via en fråga i ett databasschema eller via en importerad lista eller en befintlig kub.
 
    Mer information finns i [Samla in data som ska analyseras](../../reporting/using/collecting-data-to-analyze.md).
 
    Dessa data visas (eller inte) i rapporten beroende på sidkonfigurationen.
 
-1. Placera en eller flera aktiviteter på sidan för att definiera den grafiska representationen av insamlade data. Du kan infoga tabeller, diagram, inmatningsfält och villkora visningen av en eller flera sidor eller element på sidan. Innehållet som visas kan konfigureras fullständigt.
+1. Placera en eller flera **[!UICONTROL Page]** aktiviteter för att definiera den grafiska representationen av insamlade data. Du kan infoga tabeller, diagram, inmatningsfält och villkora visningen av en eller flera sidor eller element på sidan. Innehållet som visas kan konfigureras fullständigt.
 
    For more on this, refer to [Static elements](#static-elements).
 
-1. Använd aktiviteten Testa för att definiera villkoren för att visa eller komma åt data.
+1. Använd en **[!UICONTROL Test]** aktivitet för att definiera villkoren för att visa eller komma åt data.
 
    For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. Om det behövs lägger du till anpassade skript via aktiviteten Skript, t.ex. för att beräkna namnet på en rapport, för att filtrera visningen av resultatet i en viss kontext osv.
+1. Om det behövs lägger du till anpassade skript via **[!UICONTROL Script]** aktiviteten, t.ex. för att beräkna namnet på en rapport, för att filtrera visningen av resultatet i en viss kontext osv.
 
    For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Slutligen kan du enklare läsa komplexa rapporter genom att infoga en eller flera hoppaktiviteter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. Du kan även använda&quot;Hoppa&quot; för att visa en annan rapport.
+1. Slutligen kan du infoga en eller flera **[!UICONTROL Jump]** typaktiviteter för att lättare kunna läsa komplexa rapporter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. Aktiviteten kan även användas för att visa en annan rapport **[!UICONTROL Jump]** .
 
    For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -167,4 +165,3 @@ Slutligen kan du integrera en eller flera avancerade kontroller i dina rapporter
 Här kan du filtrera data i rapporten så att endast information som finns i en av trädets mappar visas:
 
 ![](assets/reporting_control_folder.png)
-
