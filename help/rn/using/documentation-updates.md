@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 87%
+source-wordcount: '3731'
+ht-degree: 86%
 
 ---
 
@@ -25,6 +25,10 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
 
 ## Oktober 2020 {#oct-2020}
+
+Avsnittet med avancerade funktioner för Campaign Reporting har förbättrats så att det beskriver hur URL-parametrar och variabler används i anpassade rapporter. [Läs mer](../../reporting/using/advanced-functionalities.md)
+
+Sidan Rapportegenskaper har organiserats om och förbättrats för att underlätta konfigurationen. [Läs mer](../../reporting/using/properties-of-the-report.md)
 
 En ny teknik har skapats med information om hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APN-providern. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
