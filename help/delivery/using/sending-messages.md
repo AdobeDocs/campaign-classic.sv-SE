@@ -1,6 +1,6 @@
 ---
 title: Skicka ett e-postmeddelande med Adobe Campaign Classic
-description: Läs mer om de parametrar som är specifika för att leverera e-postmeddelanden i Adobe Campaign Classic.
+description: Läs mer om parametrar för e-postleverans
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 9%
+source-wordcount: '739'
+ht-degree: 8%
 
 ---
 
@@ -29,25 +29,25 @@ Den detaljerade processen för att validera och skicka en leverans presenteras i
 
 Avsnitten nedan beskriver de parametrar som är specifika för att leverera e-postmeddelanden.
 
-## Arkivera e-post {#archiving-emails}
+## BCC för e-post {#archiving-emails}
 
 Med Adobe Campaign kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. När alternativet är aktiverat sparas en exakt kopia av alla skickade meddelanden för den här leveransen.
 
-Mer information om hur du konfigurerar e-postkopia finns i [det här avsnittet](../../installation/using/email-archiving.md).
+Mer information om konfiguration av BCC för e-post och metodtips finns i [det här avsnittet](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->Den här funktionen är valfri.  Kontrollera licensavtalet och kontakta eran kontoansvarige om du vill aktivera det.
+>Hemlig kopia via e-post är en valfri funktion. Kontrollera licensavtalet och kontakta eran kontoansvarige om du vill aktivera det.
 
-När du skapar en ny leverans- eller leveransmall är e-postkopia inte aktiverat som standard, även om alternativet har köpts. Du måste aktivera den manuellt i varje leverans eller mall där du vill använda den.
+När du skapar en ny leverans- eller leveransmall är e-postkopia inte aktiverat som standard. Du måste aktivera det manuellt på e-postleveransnivå eller leveransmallnivå.
 
-Följ stegen nedan för att göra detta:
+Följ stegen nedan för att aktivera e-postkopia för en e-postleveransmall:
 
 1. Gå till **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** eller **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Välj leveransen eller duplicera den färdiga mallen för **e-postleverans** och välj sedan den duplicerade mallen.
 1. Click the **Properties** button.
 1. Klicka på fliken **[!UICONTROL Delivery]**.  
-1. Markera rutan **Arkivera e-post** om du vill behålla en kopia av alla skickade meddelanden för den här leveransen eller för varje leverans baserat på den här mallen.
+1. Markera alternativet **E-postkopia** . En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till den konfigurerade e-post-BCC-adressen.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
