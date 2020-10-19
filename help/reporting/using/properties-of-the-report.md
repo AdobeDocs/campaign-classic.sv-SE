@@ -1,8 +1,6 @@
 ---
 title: Rapportens egenskaper
-seo-title: Rapportens egenskaper
-description: Rapportens egenskaper
-seo-description: null
+description: Läs mer om inställningarna för rapportegenskaper
 page-status-flag: never-activated
 uuid: 56163f53-d115-45b8-94a5-c173ac4c6533
 contentOwner: sauviat
@@ -12,50 +10,50 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b0b9a0714075474bf52c3eed78d45bcef25b44fc
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 3%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
 
 # Rapportens egenskaper{#properties-of-the-report}
 
-## Översikt {#overview}
-
-Ni kan anpassa och konfigurera rapporten efter era behov. Om du vill göra det redigerar du egenskaperna för den. Rapportegenskaper nås via egenskapsknappen ovanför aktivitetssekvensdiagrammet.
+Ni kan anpassa och konfigurera rapporten efter era behov. Om du vill göra det redigerar du egenskaperna för den. Rapportegenskaperna nås via knappen **[!UICONTROL Properties]** ovanför aktivitetssekvensdiagrammet.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-## Övergripande egenskaper {#overall-properties}
+Allmänna egenskaper beskrivs nedan. Avancerade funktioner som har konfigurerats på flikarna **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** och **[!UICONTROL Scripts]** beskrivs [i det här avsnittet](../../reporting/using/advanced-functionalities.md).
 
-På fliken **[!UICONTROL General]** kan du visa eller ändra etiketten och schemat som rapporten gäller. Dessa element anges när rapporten skapas.
+## Allmänna egenskaper {#overall-properties}
 
-Vi rekommenderar inte att du ändrar **[!UICONTROL Internal name]** : detta används i URL:en för rapportåtkomst.
+På fliken **[!UICONTROL General]** i rapportegenskaperna kan du redigera inställningarna som listas nedan:
 
-Rapportmallen väljs när rapporten skapas och kan inte ändras senare.
+* Rapportens etikett och interna namn. Den **[!UICONTROL Internal name]** används i rapportens slutliga URL. Den ska inte ändras efter att rapporten har skapats.
 
-Om du vill ändra tabellen som rapporten gäller klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Document type]** fältet. Om du vill visa de tillgängliga fälten i den markerade tabellen klickar du på **[!UICONTROL Magnifier]** ikonen .
+* Rapportmappen **** väljs när rapporten skapas. Ett tips är att skapa en dedikerad mapp för anpassade rapporter så att de inte blandas med [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md).
 
-![](assets/s_ncs_advuser_report_properties_02.png)
+* Du väljer **Lagring** när du skapar rapporten. Om du vill ändra datatabellen i rapporten klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Document type]** fältet.
 
-## Rapportera tillgänglighet {#report-accessibility}
+   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-En rapport kan nås utanför Adobe Campaign-konsolen, till exempel via en webbläsare. I så fall kan det vara nödvändigt att konfigurera åtkomstkontrollen för rapporten enligt nedan.
+* Parametrarna för **åtkomstkontroll** . Dessa inställningar beskrivs nedan.
+
+## Controlling access to the report {#report-accessibility}
+
+En rapport kan nås via Adobe Campaign-konsolen eller en webbläsare. I så fall kan det vara nödvändigt att konfigurera åtkomstkontrollen för rapporten enligt nedan.
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
-Den övergripande principen är följande:
+Möjliga alternativ är:
 
-* Alternativet **[!UICONTROL Anonymous access]** ger obegränsad åtkomst till rapporten. Det går dock inte att manipulera något.
+* **[!UICONTROL Anonymous access]**: det här alternativet ger obegränsad åtkomst till rapporten. Det går dock inte att manipulera något.
 
-   Rättigheterna för standardrapportoperatorn (&#39;webapp&#39;) används för att visa rapportelement.
+   Rättigheterna för den tekniska operatorn &#39;webapp&#39; används för att visa rapportelement. Läs mer [i det här avsnittet](../../platform/using/access-management.md#default-operators).
 
-* Med det här **[!UICONTROL Access control]** alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
-* Med det här **[!UICONTROL Specific account]** alternativet kan du köra rapporten med rättigheter för den operator som är vald i **[!UICONTROL Operator]** fältet.
-
-Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-web-forms.md).
+* **[!UICONTROL Access control]**: Med det här alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
+* **[!UICONTROL Specific account]**: Med det här alternativet kan du köra rapporten med rättigheter för den operator som är markerad i **[!UICONTROL Operator]** fältet.
 
 ## Hantera rapportlokalisering {#managing-report-localization}
 
@@ -69,7 +67,7 @@ Redigeringsspråket är det språk du skriver på. När du lägger till ett spr�
 
 >[!NOTE]
 >
->Mer information finns i respektive avsnitt i [detta avsnitt](../../web/using/translating-a-web-form.md).
+>Mer information om webbsidelokalisering i Campaign finns i [det här avsnittet](../../web/using/translating-a-web-form.md).
 
 ## Anpassa HTML-återgivning {#personalizing-html-rendering}
 
@@ -80,60 +78,7 @@ På fliken **[!UICONTROL Rendering]** kan du anpassa sidans datavisningsläge. D
 * Standardpositionen för etiketter för rapportelement. Den här positionen kan laddas över för varje element.
 * Den mall eller det tema som används för att generera rapportsidor.
 
-Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-web-forms.md).
-
 ![](assets/s_ncs_advuser_report_properties_08.png)
-
-## Definiera ytterligare inställningar {#defining-additional-settings}
-
-På fliken **[!UICONTROL Parameters]** kan du skapa ytterligare inställningar för rapporten: dessa inställningar skickas till URL:en under samtalet.
-
-Egenskaper för webbformulär finns på [den här sidan](../../web/using/about-web-forms.md).
-
->[!CAUTION]
->
->Av säkerhetsskäl måste dessa parametrar användas med stor försiktighet.
-
-Så här skapar du en ny inställning:
-
-1. Klicka på **[!UICONTROL Add]** knappen och ange namnet på inställningen.
-
-   ![](assets/s_ncs_advuser_report_properties_09a.png)
-
-1. Ange vid behov om inställningen ska vara obligatorisk eller inte.
-1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
-
-   Med det här **[!UICONTROL Filter entities]** alternativet kan du använda ett databasfält som parameter.
-
-   ![](assets/s_ncs_advuser_report_properties_09b.png)
-
-   Data återställs direkt på entitetsnivå: **ctx/mottagare/@konto**.
-
-   Med det här **[!UICONTROL Variable]** alternativet kan du skapa eller välja en variabel som ska skickas som en parameter i URL-adressen och som kan användas i filtren.
-
-Med **[!UICONTROL Response HTTP headers]** den kan du förhindra clickjacking när du inkluderar rapportens sida på en HTML-sida med iframe. Du kan undvika klickbara objekt genom att välja **[!UICONTROL X-Frame-options header]** beteendet:
-
-* **[!UICONTROL None]**: Rapporten kommer inte att ha någon **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**: Ange som standard för nya rapporter och ompublicerade rapporter. Värdnamnet är samma som rapportens URL.
-* **[!UICONTROL Deny]**: Rapporten kan inte inkluderas på en HTML-sida med iframe.
-
-![](assets/s_ncs_advuser_report_properties_09c.png)
-
-## Lägga till variabler {#adding-variables}
-
-Fliken innehåller **[!UICONTROL Variables]** en lista med variabler som har konfigurerats i rapporten. Dessa variabler exponeras i rapportsammanhang och kan användas i beräkningar.
-
-Klicka på **[!UICONTROL Add]** knappen för att skapa en ny variabel.
-
-Om du vill visa definitionen för en variabel markerar du den och klickar på **[!UICONTROL Detail...]** knappen.
-
-![](assets/s_ncs_advuser_report_properties_10.png)
-
-## Referera skript {#referencing-scripts}
-
-På fliken **[!UICONTROL Scripts]** kan du referera till JavaScript-koder som ska köras på klient- och/eller serversidan när rapportsidan anropas.
-
-För normal körning på klientsidan måste de refererade skripten skrivas i JavaScript och måste vara kompatibla med de flesta webbläsare. Mer information om detta finns i [det här avsnittet](../../web/using/web-forms-answers.md).
 
 ## Anpassa felsidan {#personalizing-the-error-page}
 
@@ -142,4 +87,3 @@ På fliken **[!UICONTROL Error page]** kan du konfigurera det meddelande som vis
 Du kan definiera texter och länka dem till specifika identifierare för att hantera rapportlokalisering. Mer information finns i [Lägga till ett sidhuvud och en sidfot](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 ![](assets/s_ncs_advuser_report_properties_11.png)
-
