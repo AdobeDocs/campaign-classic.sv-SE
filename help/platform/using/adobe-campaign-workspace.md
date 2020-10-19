@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2147'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # Arbetsyta i Adobe Campaign{#adobe-campaign-workspace}
 
-## About Adobe Campaign interface {#about-adobe-campaign-interface}
+## Utforska Adobe Campaign gränssnitt {#about-adobe-campaign-interface}
 
 När du är ansluten till databasen kommer du till Adobe Campaign hemsida, som är en kontrollpanel: den består av länkar och genvägar som gör att du kan komma åt funktioner, beroende på installation och allmänna plattformskonfigurationer.
 
@@ -30,7 +30,7 @@ Från den centrala delen av startsidan kan du använda länkar för att få åtk
 
 ![](assets/d_ncs_user_interface_home.png)
 
-Skärmbilden ovan är ett exempel på hemsidan för en Adobe Campaign-användare. Mer information finns i översiktsvideon [om](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign-gränssnittet.
+![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan Campaign i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Med tillgång till webben kommer man främst att kunna se
 
 ### Språk {#languages}
 
-Språket väljs när du installerar din Adobe Campaign Classic-instans och kan inte ändras efteråt. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+Språket väljs när du installerar din Adobe Campaign Classic-instans.
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ Du kan välja mellan fem olika språk:
 * Japanska
 
 Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information om detta hittar du i det här [avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
+For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>Språket kan inte ändras efter att instansen har skapats.
 
 ## Navigeringsgrunder {#navigation-basics}
 
@@ -174,9 +180,9 @@ Klicka på Avancerade parametrar (längst ned till vänster) i listkonfiguration
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### Konfigurera listor {#configuring-lists}
+## Konfigurera listor {#configuring-lists}
 
-#### Lägg till kolumner {#add-columns}
+### Lägg till kolumner {#add-columns}
 
 Det finns två sätt att lägga till en kolumn i en lista.
 
@@ -222,14 +228,14 @@ Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som 
 
 1. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
-#### Skapa en ny kolumn {#create-a-new-column}
+### Skapa en ny kolumn {#create-a-new-column}
 
 Du kan skapa nya kolumner för att visa ytterligare fält i listan. Så här gör du:
 
 1. Klicka **[!UICONTROL Configure the list]** nedan och till höger om listan.
 1. Klicka **[!UICONTROL Add]** för att visa ett nytt fält i listan.
 
-#### Ta bort en kolumn {#remove-a-column}
+### Ta bort en kolumn {#remove-a-column}
 
 Du kan maskera en eller flera kolumner i en lista med poster med hjälp av **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
 
@@ -241,11 +247,11 @@ I listkonfigurationsfönstret markerar du den kolumn som ska maskeras från **[!
 
 Upprepa för varje kolumn som ska maskeras. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
-#### Justera kolumnbredd {#adjust-column-width}
+### Justera kolumnbredd {#adjust-column-width}
 
 När en lista är aktiv, d.v.s. minst en rad är markerad, kan du använda F9 för att justera bredden på kolumnerna så att alla kolumner kan visas på skärmen.
 
-#### Visa undermappsposter {#display-sub-folders-records}
+### Visa undermappsposter {#display-sub-folders-records}
 
 Listor kan visa:
 
@@ -286,7 +292,7 @@ Klicka **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har 
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### Exportera en lista {#exporting-a-list}
+## Exportera en lista {#exporting-a-list}
 
 Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera de element som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
 
@@ -296,7 +302,7 @@ Användningen av import- och exportfunktionerna förklaras i [Allmän import och
 >
 >Element från en lista får inte exporteras med funktionen Kopiera/Klistra in.
 
-### Sortera en lista {#sorting-a-list}
+## Sortera en lista {#sorting-a-list}
 
 Listor kan innehålla en stor mängd data. Du kan sortera dessa data eller använda enkla eller avancerade filter. Med sortering kan du visa data i stigande eller fallande ordning. Med filter kan du definiera och kombinera villkor så att endast markerade data visas.
 
@@ -321,7 +327,7 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ ste
 
 1. Klicka **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
 
-### Köra en sökning {#running-a-search}
+### Söka efter element {#running-a-search}
 
 Du kan göra en sökning av de tillgängliga fälten i en redigerare med hjälp av det **[!UICONTROL Search]** fält som finns ovanför listan med fält. Tryck på **Enter** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
 
@@ -388,4 +394,3 @@ I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna 
 * **[!UICONTROL d]** i dagar.
 
 ![](assets/enter_unit_sample.png)
-
