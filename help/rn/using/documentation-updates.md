@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 86%
@@ -201,9 +201,9 @@ Förbättringar på Hadoop FDA-koppling – [läs mer](../../platform/using/spec
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Handböckerna för [installation](../../installation/using/before-reading.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används vid uppstart av tjänsten nlserver. /Etc/init.d/nlserver6 kan fortfarande användas men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med tjänsten nlserver.
+Handböckerna för [installation](../../installation/using/general-architecture.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används vid uppstart av tjänsten nlserver. /Etc/init.d/nlserver6 kan fortfarande användas men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med tjänsten nlserver.
 
-Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/before-reading.md)
+Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
 
 Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
@@ -375,7 +375,7 @@ En ny kunskapsbasartikel om hur man använder erbjudandekatalogen i Adobe Campai
 
 Avsnittet Underliggande arbetsflödesaktivitet har förbättrats med ett exempel på användning. [Läs mer](../../workflow/using/sub-workflow.md)
 
-Kunskapsbasartikeln om [funktionsmatrisen för lokal och värdbaserad Campaign Classic](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html) har uppdaterats med information om arkivering av e-post.
+The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
 
 Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
