@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 3%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
 
-# E-postarkivering{#email-archiving}
+# BCC för e-post {#email-archiving}
 
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform.
 
@@ -30,15 +30,15 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 
 ## Recommendations och begränsningar {#recommendations-and-limitations}
 
-* Funktionen för e-postarkivering är valfri. Kontrollera licensavtalet.
-* Kontakta er kontoansvarige för att aktivera **hostingarkitekturer och hybridarkitekturer**. Den valfria BCC-adressen måste anges till det Adobe-team som konfigurerar den åt dig.
-* För **lokala installationer** följer du riktlinjerna nedan för att aktivera den - se avsnitten [Aktivera e-postarkivering (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-) för BCC.
+* Funktionen för e-postkopia är valfri. Kontrollera licensavtalet.
+* Kontakta er kontoansvarige för att aktivera **hostingarkitekturer och hybridarkitekturer**. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
+* För **lokala installationer** följer du riktlinjerna nedan för att aktivera den - se avsnitten [Aktivera e-post-BCC (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-) .
 * Du kan bara använda en e-postadress för hemlig kopia.
-* När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via **[!UICONTROL Archive emails]** alternativet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via **[!UICONTROL Email BCC]** alternativet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
-* E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har använt e-postarkivering måste du uppgradera manuellt till det nya systemet för e-postarkivering. Mer information finns i avsnittet [Uppdaterat arkiveringssystem för e-post (BCC)](#updated-email-archiving-system--bcc-) .
+* E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har arkiverat via e-post måste du uppgradera manuellt till det nya BCC-systemet för e-post. Mer information finns i avsnittet [Flytta till den nya funktionen för hemlig](#updated-email-archiving-system--bcc-) e-post.
 
-## Aktivera e-postarkivering (lokalt) {#activating-email-archiving--on-premise-}
+## Aktiverar e-postkopia (lokalt) {#activating-email-archiving--on-premise-}
 
 Följ stegen nedan för att aktivera arkivering av e-post i webbläsare när Adobe Campaign är installerat lokalt.
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->I en instans med mellanlagring finns katalogen för de arkiverade e-postmeddelandena på servern med mellanlagring.
+>I en instans där flera källor finns finns katalogen för BCC-e-postmeddelanden på servern där flera leverantörer finns.
 >
 >DeliveryID och broadcastID kommer från mittkällservern när status för e-postmeddelanden inte skickas. När statusen har ändrats till **[!UICONTROL Sent]** kommer dessa ID:n från marknadsföringsservern.
 
@@ -128,7 +128,7 @@ Använd följande parametrar i **config-`<instance name>.xml`** -filen för att 
 >
 >Dessutom tilldelar reläet en **[!UICONTROL Sent]** status till alla e-postmeddelanden, även de som inte skickas. Därför arkiveras alla meddelanden.
 
-## Uppdaterat arkiveringssystem för e-post (BCC) {#updated-email-archiving-system--bcc-}
+## Gå till den nya e-postkontrollen {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ Gör följande ändringar i **`config-<instance>.xml`** filen:
 1. Ställ in parametern **compressionFormat** på **1** om det behövs.
 1. Ställ in parametern **archivingType** på **1**.
 
-När du har konfigurerat BCC för e-post måste du välja **[!UICONTROL Archive emails]** alternativet i leveransmallen eller leveransmallen. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+När du har konfigurerat BCC för e-post måste du välja **[!UICONTROL Email BCC]** alternativet i leveransmallen eller leveransmallen. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
-## God praxis {#best-practices}
+## Bästa praxis för BCC-e-postmarknadsföring {#best-practices}
 
 * **BCC-adresspostlåda**: Se till att den har tillräcklig mottagningskapacitet för att arkivera alla e-postmeddelanden som skickas av MTA.
 * **MTA-mutualisering**: arkiveringsfunktionen i innehållsförteckningen fungerar på MTA-nivå. Du kan duplicera alla e-postmeddelanden som skickas av MTA. Eftersom MTA kan mutualiseras i flera instanser (t.ex. dev, test eller prod) eller till och med i flera klienter (i en miljö där flera leverantörer finns) påverkar konfigurationen säkerheten:
