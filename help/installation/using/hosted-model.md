@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '88'
 ht-degree: 9%
 
 ---
@@ -22,12 +22,11 @@ ht-degree: 9%
 
 # Värdbaserad modell{#hosted-model}
 
-Här följer installations- och konfigurationsstegen som gäller för värdbaserade modeller:
+Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
 
-* Konfigurerar spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se det här [avsnittet](../../message-center/using/configuring-multibranding.md).
-* Installera klientkonsolen: se det här [avsnittet](../../installation/using/installing-the-client-console.md).
-* Installerar paket: se det här [avsnittet](../../installation/using/installing-campaign-standard-packages.md).
+* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/configuring-multibranding.md).
+* Installera klientkonsolen: se [det här avsnittet](../../installation/using/installing-the-client-console.md).
 * Läs mer om verktygen för slutprodukter och de effektivaste strategierna i [guiden](../../delivery/using/deliverability-key-points.md) Komma igång och [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
-* Konfigurerar kampanjalternativ: se det här [avsnittet](../../installation/using/configuring-campaign-options.md).
-* Konfigurerar CRM-anslutningar: se det här [avsnittet](../../platform/using/crm-connectors.md).
+* Konfigurera kampanjalternativ: se [det här avsnittet](../../installation/using/configuring-campaign-options.md).
+* Konfigurera CRM-anslutningar: se [det här avsnittet](../../platform/using/crm-connectors.md).
 
