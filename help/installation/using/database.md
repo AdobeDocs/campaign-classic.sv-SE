@@ -1,8 +1,6 @@
 ---
-title: Databas
-seo-title: Databas
-description: Databas
-seo-description: null
+title: Rekommendationer för Campaign Classic-databasen
+description: Databasrekommendationer
 page-status-flag: never-activated
 uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
@@ -32,14 +30,11 @@ Kontrollera även avsnittet [Databasåtkomstlager](../../installation/using/prer
 
 Den inbyggda klienten måste vara installerad på Adobe Campaign programservrar.
 
-Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel, under **SQL Server Native Client 10.0** (för Microsoft SQL Server 2008 och 2008 R2-klienter) eller **SQL Server Native Client 11.0** (för Microsoft SQL Server 2012, 2014, 2 16 och 2017 klienter).
+Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel under **SQL Server Native Client 11.0**.
 
-Följande DLL-filer för åtkomst måste finnas:
+Följande åtkomst-DLL måste finnas: **sqlncli11.dll**.
 
-* **sqlncli10.dll** för Microsoft SQL Server 2008- och 2008 R2-klienter,
-* **sqlncli11.dll** för Microsoft SQL Server 2012-, 2014-, 2016- och 2017-klienter.
-
-   Åtkomst-DLL:er finns på Microsofts webbplats.
+Åtkomst-DLL:er finns på Microsofts webbplats.
 
 >[!NOTE]
 >
