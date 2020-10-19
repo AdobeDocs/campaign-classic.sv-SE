@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d65e6f48bd84a2342895beca4a4ac184b57bf7c3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2188'
+ht-degree: 76%
 
 ---
 
 
 # Senaste versionen{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Oktober-versionen** av den nya Kontrollpanelen med domänkonfiguration med CNAME och nya funktioner för databasövervakning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.2.3 - build 9182 {#release-20-2-3-build-9182}
 
@@ -57,6 +57,8 @@ _22 juli 2020_
 * Korrigerade ett problem som blockerade leveransförberedelser efter efteruppgradering.
 * Efter växlingen till den [nya sekvens-ID-mekanismen](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
 * Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987 och NEO-26073)
+
+![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
