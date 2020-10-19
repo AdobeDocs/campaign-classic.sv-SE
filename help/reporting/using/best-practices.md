@@ -1,8 +1,6 @@
 ---
 title: Bästa praxis för rapportering
-seo-title: Bästa praxis för rapportering
-description: Bästa praxis för rapportering
-seo-description: null
+description: Bästa praxis för kampanjrapportering
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
 
-# Bästa praxis för rapportering{#best-practices-reporting}
+# Rapportera bästa praxis{#best-practices-reporting}
 
 ## Analysera behov{#analyzing-needs}
 
@@ -36,15 +34,15 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
    Du kan till exempel:
 
-   * Utforska data i databasen och definiera mått (via [detta avsnitt](../../reporting/using/about-cubes.md)),
-   * Lägg till indikatorer i en befintlig rapport (se [detta avsnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Visa data i databasen (via [detta avsnitt](../../reporting/using/about-descriptive-analysis.md)),
-   * Skapa en ny leveransrapport (se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [detta avsnitt](../../workflow/using/about-workflows.md)),
-   * Skapa en pivottabell (se [det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
-   * Utforska aggregerade data (via [detta avsnitt](../../reporting/using/about-cubes.md)),
-   * Använd en guide för att analysera data (via [det här avsnittet](../../reporting/using/about-descriptive-analysis.md)),
-   * Analysera stora datavolymer (se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)) osv.
+   * Utforska data i databasen och definiera mått. Läs mer [i det här avsnittet](../../reporting/using/about-cubes.md)
+   * Lägg till indikatorer i en befintlig rapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Visa data i databasen. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
+   * Skapa en ny leveransrapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet)](../../workflow/using/about-workflows.md)
+   * Skapa en pivottabell. Läs mer [i det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * Utforska aggregerade data. Läs mer [i det här avsnittet](../../reporting/using/about-cubes.md)
+   * Använd en guide för att analysera data. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
+   * Analysera stora datavolymer. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Identifiera målpopulationen
 
@@ -79,7 +77,7 @@ Namn:
 
    På samma sätt måste beräkningsmetoderna ändras under designfasen, med en liten datavolym, om rapportberäkningen överstiger 60 sekunder.
 
-* När marknadsföringsanalys används får de manipulerade data inte överstiga 10 miljoner rader.
+* Rapporteringsdata får inte överstiga 10 miljoner rader när modulen Marketing Analytics används.
 
 Vi rekommenderar också att man beräknar aggregat på natten och använder dessa aggregerade data direkt i rapporterna. Dessa aggregat måste skapas via dedikerade datahanteringsarbetsflöden (SQL-frågor).
 
@@ -103,15 +101,19 @@ Med rekommendationerna ovan kan du optimera rapportberäkningen.
 
 Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
-* Studera datamodellen: indexerade fält måste huvudsakligen användas för att förbättra beräkningsformler.
+* Arbeta med din datamodell: indexerade fält måste huvudsakligen användas för att förbättra beräkningsformler.
 
    Om du snabbt vill hitta ett indexerat fält ska du titta på namnet på kolumnen i Adobe Campaign-gränssnittet: sorteringspilen stryks under med rött om fältet är indexerat.
 
-* Kontrollera att rapporten är giltig i längden: datavolymen kan öka betydligt med tiden.
+   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+
+* Se till att rapporten är skalbar: datavolymen kan öka betydligt med tiden.
 
    På samma sätt kan mängden data som manipuleras under testfaserna skilja sig från den faktiska datavolymen i produktionen. Därför är testfaserna viktiga.
 
    Slutligen måste förseningar i samband med datarensning vara kända och vid behov anpassas för att underlätta datahanteringen.
+
+   Mer information om rensning och datalagring finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Exportera rapporter {#exporting-reports}
 
