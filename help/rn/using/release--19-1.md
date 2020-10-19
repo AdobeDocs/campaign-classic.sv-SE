@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2625'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,6 @@ _15 september 2020_
 
 * Förbättrad användning av nlsrvmod för Apache 2.4-trådar för att korrigera nlsrvmod-krascher.
 * Ett problem har korrigerats vid användning av filöverföringsaktiviteten med ett externt Azure-konto och en SSL-kryptering. Anslutningen gjordes via HTTP i stället för HTTPS. (NEO-26720)
-* I leveransegenskaper har **[!UICONTROL Archive emails]** alternativet bytt namn **[!UICONTROL Email BCC]** för en bättre användarupplevelse.
 * Ett problem med url-cachemekanismen som inte hämtade etiketten eller kategorin har korrigerats.
 * Korrigerade ett problem som ledde till att sidans URL:er speglades på ett felaktigt sätt definierades i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
 * Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre användes (iOS-meddelanden).
