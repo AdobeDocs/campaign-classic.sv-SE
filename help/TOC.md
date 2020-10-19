@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 93%
+source-wordcount: '2130'
+ht-degree: 92%
 
 ---
 
@@ -577,17 +577,16 @@ ht-degree: 93%
       + [Exempel på Facebook-appar](social/using/examples-of-facebook-apps.md)
       + [Spårning](social/using/tracking.md)
 + Installera Campaign Classic {#installing-campaign-classic}
-   + Arkitektur och värdmodeller {#architecture-and-hosting-models}
-      + [Före läsning](installation/using/before-reading.md)
+   + Arkitekturprinciper {#architecture-and-hosting-models}
       + [Allmän arkitektur](installation/using/general-architecture.md)
-      + [Värdbaserade modeller](installation/using/hosting-models.md)
-   + Hybrid- och värdbaserade modeller{#hybrid-and-hosted-models}
-      + [Om hybridmodeller och värdbaserade modeller](installation/using/about-hybrid-and-hosted-models.md)
-      + [Hybridmodell](installation/using/hybrid-model.md)
-      + [Värdbaserad modell](installation/using/hosted-model.md)
-   + Förutsättningar och rekommendationer {#prerequisites-and-recommendations-}
-      + [Före start](installation/using/before-starting.md)
-      + [Databas](installation/using/database.md)
+      + Värdbaserade modeller{#hosting-models-lp}
+         + [Om värdmodeller](installation/using/hosting-models.md)
+         + [Hybridmodell](installation/using/hybrid-model.md)
+         + [Värdbaserad modell](installation/using/hosted-model.md)
+         + [Funktionsmatris](installation/using/capability-matrix.md)
+   + Riktlinjer för distribution {#deployment-guidelines}
+      + [Förhandskrav](installation/using/before-starting.md)
+      + [Databasserver](installation/using/database.md)
       + [Programserver](installation/using/application-server.md)
       + [Meddelandeserver](installation/using/messaging-server.md)
       + [Nätverkskonfiguration](installation/using/network-configuration.md)
