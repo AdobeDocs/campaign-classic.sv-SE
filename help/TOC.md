@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 92%
+source-wordcount: '2124'
+ht-degree: 91%
 
 ---
 
@@ -597,14 +597,14 @@ ht-degree: 92%
       + [Driftsättning i företagsklass](installation/using/enterprise-deployment.md)
       + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Installera Campaign i Windows {#installing-campaign-in-windows-}
-      + [Krav för installationen av Campaign i Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Campaign i Windows {#installing-campaign-in-windows-}
+      + [Innan du installerar Campaign i Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Installera servern](installation/using/installing-the-server.md)
       + [Integrering med en webbserver för Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Klientkonsolens tillgänglighet för Windows](installation/using/client-console-availability-for-windows.md)
       + [Installera klientkonsolen](installation/using/installing-the-client-console.md)
-   + Installera Campaign i Linux {#installing-campaign-in-linux-}
-      + [Krav för installationen av Campaign i Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + Campaign i Linux  {#installing-campaign-in-linux-}
+      + [Innan du installerar Campaign i Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installera paket med Linux](installation/using/installing-packages-with-linux.md)
       + [Integrering med en webbserver för Linux](installation/using/integration-into-a-web-server-for-linux.md)
       + [Klientkonsolens tillgänglighet för Linux](installation/using/client-console-availability-for-linux.md)
@@ -625,11 +625,11 @@ ht-degree: 92%
       + [Server för mid-sourcing](installation/using/mid-sourcing-server.md)
       + [Interaktion – databuffert](installation/using/interaction---data-buffer.md)
    + Tillägg {#appendices}
-      + [Serverkonfigurationsfilen](installation/using/the-server-configuration-file.md)
+      + [Serverkonfigurationsfil](installation/using/the-server-configuration-file.md)
       + [Nätverksslutpunkter i Campaign](installation/using/campaign-network-endpoints.md)
       + [Kommandorader](installation/using/command-lines.md)
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
-      + [Lista över alternativ för Campaign Classic](installation/using/configuring-campaign-options.md)
+      + [Lista över alternativ för Campaign ](installation/using/configuring-campaign-options.md)
       + [Avinstallerar Campaign](installation/using/uninstalling-campaign.md)
 + Övervaka Campaign Classic {#monitoring-campaign-classic}
    + Introduktion {#introduction}
