@@ -1,8 +1,6 @@
 ---
 title: Installera klientkonsolen
-seo-title: Installera klientkonsolen
-description: Installera klientkonsolen
-seo-description: null
+description: Lär dig hur du installerar klientkonsolen
 page-status-flag: never-activated
 uuid: 1279c0d8-bf27-4a58-ae94-796d6147231a
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: bdc09e1b6e037e1b21573b8624a947e30f8ad1fc
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -81,7 +79,7 @@ Du kan lägga till så många anslutningar som behövs för att ansluta till tes
 >Med knappen **[!UICONTROL Add]** kan du skapa **[!UICONTROL folders]** för att ordna alla dina anslutningar. Bara dra och släpp varje anslutning till en mapp.
 
 
-## Logga in på Campaign
+## Logga in på Adobe Campaign
 
 Så här loggar du in på en befintlig instans:
 
