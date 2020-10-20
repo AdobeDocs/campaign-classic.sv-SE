@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '501'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ Du kan starta Adobe Campaign genom att välja **[!UICONTROL Start / All Programs
 
 I klientkonsolens anslutningsfönster kan du välja eller konfigurera befintliga databaser och ansluta till dem med ett användarnamn och lösenord:
 
-![](assets/acc-logon-screen.png)
+![](assets/s_ncs_user_login.png)
 
 ## Ansluta till Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -86,18 +86,18 @@ Om du vill koppla från Adobe Campaign använder du den första ikonen i ikonfä
 >
 >Du kan också stänga programmet utan att logga ut först.
 
-## Hämta Campaign-versionen {#getting-your-campaign-version}
+## Hämta din Adobe Campaign-version {#getting-your-campaign-version}
 
 På **[!UICONTROL Help > About...]** menyn kommer du åt följande information:
 
-* **versionsnummer**
-* **build** number
+* **versionsnummer** för Campaign-klientkonsolen och programservern
+* **build** number for Campaign client console and application server
 * en länk till att kontakta Adobe kundtjänst
 * länkar till Adobe sekretesspolicy, användarvillkor och cookies
 
 ![](assets/about-acc.png)
 
-När ni kontaktar Adobe Support-teamet måste ni ange versionsnumret och build-numret för er Campaign-klientkonsol och applikationsserver.
+När ni kontaktar kundtjänstteamet på Adobe måste ni ange versionsnumret och build-numret för er Campaign-klientkonsol och programserver.
 
 Om du använder [Campaign Gold Standard-versionen](../../rn/using/gold-standard.md)måste du också dela SHA/1-tecknen som visas i **[!UICONTROL About]** rutan. Exempel: för Gold **Standard 10 visar build-numret** build 9032@efd8a94 ****, vilket visas nedan:
 
