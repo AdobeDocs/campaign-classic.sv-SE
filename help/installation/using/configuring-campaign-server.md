@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 4%
+source-wordcount: '3582'
+ht-degree: 3%
 
 ---
 
@@ -34,8 +34,8 @@ Mer information finns i följande avsnitt:
 
 * [Dokumentation för kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 * [Värdbaserade modeller](../../installation/using/hosting-models.md)
-* [Funktionsmatris för lokal och värdbaserad Campaign Classic](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html)
-* [Konfigurationssteg](../../installation/using/about-hybrid-and-hosted-models.md) för hybridmodeller och värdbaserade modeller)
+* [Funktionsmatris för lokal och värdbaserad Campaign Classic](../../installation/using/capability-matrix.md)
+* [Konfigurationssteg för hybridmodeller och värdbaserade modeller](../../installation/using/hosting-models.md)
 
 Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
 
