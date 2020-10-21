@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 1%
+source-wordcount: '4138'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +29,8 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 >Du kan importera data utan att mappa dem till databasdata med hjälp av **[!UICONTROL Import a list]** funktionen.
 >
 >Data kan sedan användas exklusivt i arbetsflöden via **[!UICONTROL Read list]** objektet. Se denna [sida](../../workflow/using/read-list.md) för mer information om detta.
->
->Titta på videon [Importera profiler](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html) om du vill ha mer information.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Struktur för de data som ska importeras {#structure-of-the-data-to-import}
 
