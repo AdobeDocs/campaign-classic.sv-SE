@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 7%
+source-wordcount: '707'
+ht-degree: 6%
 
 ---
 
@@ -136,7 +136,7 @@ Tekniska resurser finns i Campaign Classic dokumentation. Vi rekommenderar att d
 **Värdmodeller och funktioner**
 
 * [Värdmodeller för Campaign Classic](../../installation/using/hosting-models.md)
-* [Funktioner för värdmodeller](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Funktioner för värdmodeller](../../installation/using/capability-matrix.md)
 
 **Serverkonfiguration**
 
