@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Ytterligare konfigurationer erbjuds i [Konfigurera Campaign-servern](../../insta
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i den här [artikeln](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller [i funktionsmatrisen](../../installation/using/capability-matrix.md).
 
 ## Intern identifierare {#internal-identifier}
 
