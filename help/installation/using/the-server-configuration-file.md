@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '7857'
+source-wordcount: '7852'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Den övergripande konfigurationen för Adobe Campaign definieras i filen **serve
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller på [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
 
 De första parametrarna finns i den **delade** noden. Dessa är relaterade till instansen. De kan användas av alla nlserver-kommandon (nlserver web, nlserver wfserver osv.). De andra avsnitten är relaterade till ett specifikt underkommando på servern.
 
