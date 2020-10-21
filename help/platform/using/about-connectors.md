@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '195'
+ht-degree: 10%
 
 ---
 
@@ -38,5 +38,5 @@ Du kan också integrera Campaign med flera andra system, som:
 
 >[!NOTE]
 >
->Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. Se [Campaign-matrisen](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html)för lokala funktioner/värdfunktioner.
+>Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. Se [Campaign lokalt - matris över värdbaserade funktioner](../../installation/using/capability-matrix.md).
 
