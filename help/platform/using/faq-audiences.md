@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 84%
 
 ---
 
@@ -29,17 +29,22 @@ Du kan importera mottagare eller skapa dem manuellt med hjälp av klientkonsolen
 
 ## Så importerar man profiler. {#how-to-import-profiles-}
 
-Upptäck enkla användningsfall för att [importera profiler](../../platform/using/importing-data.md#generic-import-samples) i din databas. Du kan också titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
+Upptäck enkla användningsfall för att [importera profiler](../../platform/using/importing-data.md#generic-import-samples) i din databas.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## Hur definierar jag målgruppen för en marknadsföringskampanj? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Du kan [använda arbetsflöden för att skapa målgrupper](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) för en marknadsföringskampanj. Se [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html) för att lära dig hur man skapar ett arbetsflöde för målinriktning i en kampanj.
+Du kan [använda arbetsflöden för att skapa målgrupper](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) för en marknadsföringskampanj.
+
 
 ## Hur skapar jag en lista med profiler? {#how-can-i-create-a-list-of-profiles-}
 
 En lista är en statisk uppsättning mottagare som kan användas för leveransåtgärder och som uppdateras i och med importer eller via arbetsflödet. En grupp som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
 
-[Klicka här för att läsa mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Du kan även titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) om hur man skapar en lista manuellt och även [den här videon](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) om att skapa och automatiskt uppdatera en lista över mottagare i ett arbetsflöde.
+[Klicka här för att läsa mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
+
+![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) och [i den här andra videon](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Hur kan jag avduplicera en grupp innan jag skickar ett meddelande? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
