@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 99%
 
 ## Nyheter
 
-* **[Uttryckssymboler](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
+* **[Uttryckssymboler](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
+Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
@@ -28,7 +29,8 @@ Läs mer om hur Adobe Campaign kan hjälpa till med din integritetsefterlevnad
 * **[Spårningsfunktioner](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html)**<br/>
 Förstå spårningsfunktioner och -processer i Campaign
 
-* **[Interaktivt innehåll med AMP](delivery/using/defining-interactive-content.md)**<br/>Lär dig hur du skickar dynamiska e-postmeddelanden med det nya AMP-formatet
+* **[Interaktivt innehåll med AMP](delivery/using/defining-interactive-content.md)**<br/>
+Lär dig hur du skickar dynamiska e-postmeddelanden med det nya AMP-formatet
 
 [Klicka här för fler uppdateringar](/help/rn/using/documentation-updates.md)
 
@@ -83,7 +85,7 @@ Förstå spårningsfunktioner och -processer i Campaign
 | Användbara sidor | Resurser för utvecklare |
 |---|---|
 | [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Instruktionsvideor](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
+| [Instruktionsvideor](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Kom igång med Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/se/campaign/kb/acc-implementation.html) |
 | [Gold Standard-uppgradering](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
