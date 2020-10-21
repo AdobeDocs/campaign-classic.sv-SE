@@ -11,9 +11,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Leveransanalysen är den fas under vilken målgruppen beräknas och leveransinne
 
 Adobe rekommenderar starkt att du skapar korrekturmeddelanden för att testa leveransen med en godkännandegrupp innan den skickas till huvudmålet. Då kan du validera meddelandeinnehåll, personalisering och leveransparametrar.
 
-[Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Du kan också titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html).
+[Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Så använder du fröadresser i Adobe Campaign. {#how-to-use-seed-addresses-in-adobe-campaign-}
 
