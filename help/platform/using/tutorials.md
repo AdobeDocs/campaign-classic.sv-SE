@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 677d631a075f50a80c9379fff0c17d3d06c7e803
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 15%
+source-wordcount: '399'
+ht-degree: 7%
 
 ---
 
@@ -42,18 +42,18 @@ Läs mer om Adobe Campaign genom att kontrollera följande användningsexempel o
 * [Skapa översikter](../../web/using/use-cases--creating-overviews.md): skapa webbprogram av översiktstyp för att visa alla webbprogram i databasen.
 * [Användningsexempel](../../workflow/using/about-workflow-use-cases.md)för arbetsflöde: hitta olika sätt att använda arbetsflöden med hjälp av de här användningsexemplen.
 
-## Instruktionsvideor {#how-to-videos}
+## Självhjälp {#how-to-videos}
 
-Upptäck Adobe Campaign huvudfunktioner genom att titta på våra instruktionsvideor.
+Förutom produktdokumentationen har du tillgång till självhjälpsresurserna för Campaign som listas nedan.
 
-* [Skapa en målgrupp](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): Upptäck hur du kan skapa en målgrupp i Adobe Campaign.
-* [Skapa en kampanj och ett e-postmeddelande](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html): Upptäck hur du skapar e-postmeddelanden i en kampanj i Adobe Campaign.
-* [Skapa en lista över mottagare](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): skapa en lista med mottagare med ett arbetsflöde i Adobe Campaign.
-* [Skapa ett målarbetsflöde](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-targeting-workflow.html): skapa ett arbetsflöde för målmottagarnas födelsedagar.
-* [Skapa ett arbetsflöde i en kampanj](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html): Lär dig hur du skapar ett arbetsflöde i en kampanj.
-* [Importerar profiler](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html): Lär dig hur du importerar profiler från en fil i Adobe Campaign.
-* [Gränssnittsöversikt](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html): lär dig navigera i Adobe Campaign gränssnitt.
-* [Hantera startvärden och korrektur i ett e-postmeddelande](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html): Lär dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande i Adobe Campaign.
-* [Integrering](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)av Adobe Campaign och Microsoft Dynamics 365: Lär dig hur du länkar och synkroniserar Adobe Campaign och Microsoft Dynamics via CRM-anslutningsfunktioner.
+### Självstudievideor
 
-Förutom dessa korta och detaljerade videoklipp finns det även [kurser](https://learning.adobe.com/catalog.html) och [presentationsvideor](https://www.adobe.com/training/video.html) på vår webbplats.
+Upptäck Adobe Campaign huvudfunktioner inom video. [Läs mer](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html)
+
+### Utbildningssessioner och videoklipp
+
+Förutom dessa korta och detaljerade videor kan du hitta [utbildningar](https://learning.adobe.com/catalog.html) och se videor [om](https://www.adobe.com/training/video.html) presentationer av funktioner på Adobe.com.
+
+### Experience League-kurser
+
+Du kan även gå till [Rekommenderade kurser](https://experienceleague.adobe.com/?lang=en#dashboard/learning) för Adobe Campaign Classic: kurserna är expertkurser i samlingar av lektioner som snabbt hjälper dig att skaffa dig färdigheter och kunskap.
