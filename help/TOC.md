@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2125'
 ht-degree: 91%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 91%
       + Vanliga frågor och svar {#faq}
          + [Vanliga frågor](platform/using/common-questions.md)
          + [Viktiga begrepp](platform/using/faq-key-concepts.md)
+         + [Uppgradering](platform/using/faq-build-upgrade.md)
          + [Publiker](platform/using/faq-audiences.md)
          + [Utforma meddelanden](platform/using/faq-designing.md)
          + [Skicka meddelanden](platform/using/faq-messages.md)
@@ -652,7 +653,8 @@ ht-degree: 91%
       + [Arbetsflöde för databasrensning](production/using/database-cleanup-workflow.md)
    + Uppdatera Adobe Campaign {#updating-adobe-campaign}
       + [Introduktion](production/using/introduction.md)
-      + [Uppgradera](production/using/upgrading.md)
+      + [Utföra en uppgradering av din build](production/using/build-upgrade.md)
+      + [Uppgraderingsförfarande (lokalt)](production/using/upgrading.md)
       + [Växla till Unicode](production/using/switching-to-unicode.md)
       + [Migreringsförfaranden](production/using/migration-procedures.md)
    + Databasunderhåll {#database-maintenance}
@@ -754,8 +756,4 @@ ht-degree: 91%
       + [Specifika konfigurationer i version 5.11](migration/using/specific-configurations-in-v5-11.md)
       + [Specifika konfigurationer i version 6.02](migration/using/specific-configurations-in-v6-02.md)
       + [Specifika konfigurationer i version 6.10](migration/using/specific-configurations-in-v6-10.md)
-   + Återställning {#rollback}
-      + [Om återställning](migration/using/about-rollback.md)
-      + [Återställa version 5.11](migration/using/restoring-v5-11.md)
-      + [Återställa version 6.02](migration/using/restoring-v6-02.md)
-      + [Återställa version 6.1](migration/using/restoring-v6-1.md)
+   + [Återställningsförfarande](migration/using/about-rollback.md)
