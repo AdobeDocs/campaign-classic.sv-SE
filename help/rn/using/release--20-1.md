@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -47,7 +47,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Snowflake är ett helt hanterat moln data warehouse som bygger på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja Snowflake kraft att utföra Big Data Segmentation. Den här kontakten är tillgänglig för alla kunder, inklusive via Adobe.</p>
-    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
