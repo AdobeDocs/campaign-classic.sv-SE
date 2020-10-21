@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ Kontrollera [versions- och build-numret](../../platform/using/launching-adobe-ca
 
 ## Vilka är skillnaderna när man arbetar lokalt jämfört med i en värdhanterad miljö? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och vilka konfigurationer de har beror på [vilken typ av driftsättning](../../installation/using/hosting-models.md) du har, värdbaserade (hanterade tjänster) eller lokala.
+Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
 
-[Klicka här för att läsa mer](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html).
+[Klicka här för att läsa mer](../../installation/using/capability-matrix.md).
 
 ## Hur ställer jag in användarbehörigheter? {#how-can-i-set-up-user-permissions-}
 
@@ -64,7 +64,9 @@ Läs [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/campaign-priva
 
 ## Vilka är koncepten för användargränssnitt i Campaign som jag bör känna till? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign. Du kan också titta på [den här videon](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
+Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan Campaign i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hur väljer jag publiken för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -84,7 +86,9 @@ Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas
 
 ## Hur skapar och skickar jag ett första e-postmeddelande? {#how-to-create-and-send-a-first-email-}
 
-[Klicka här för att läsa mer](../../delivery/using/about-email-channel.md) eller [se denna video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html) om hur man skapar ett e-postmeddelande i Campaign.
+[Klicka här för att läsa mer](../../delivery/using/about-email-channel.md).
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Hur skickar jag SMS-meddelanden? {#how-to-send-sms-messages-}
 
