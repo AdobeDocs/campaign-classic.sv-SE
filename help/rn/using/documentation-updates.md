@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3752'
 ht-degree: 85%
 
 ---
@@ -225,7 +225,7 @@ Handboken [Skicka push-meddelanden](../../delivery/using/about-mobile-app-channe
 
 Den nya parametern för rapportkonfigurationen av webbadresser har dokumenterats [här](../../reporting/using/properties-of-the-report.md#defining-additional-settings).
 
-Sidan för den **Lokala och värdbaserade funktionsmatrisen i Campaign Classic** har uppdaterats med de nya FDA-kopplingarna. [Läs mer](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html)
+Sidan för den **Lokala och värdbaserade funktionsmatrisen i Campaign Classic** har uppdaterats med de nya FDA-kopplingarna. [Läs mer](../../installation/using/capability-matrix.md).
 
 Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
@@ -379,7 +379,7 @@ En ny kunskapsbasartikel om hur man använder erbjudandekatalogen i Adobe Campai
 
 Avsnittet Underliggande arbetsflödesaktivitet har förbättrats med ett exempel på användning. [Läs mer](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/se/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
+Funktionsmatrissidan [Campaign Classic lokal och värdbaserad](../../installation/using/capability-matrix.md) har uppdaterats med information om e-post-BCC.
 
 Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
@@ -446,6 +446,6 @@ Avsnittet &quot;Arbetsflödesövervakning&quot; har uppdaterats med ett meddelan
 
 Ett användningsfall har lagts till om hur du skickar ett e-postmeddelande med anpassade datafält med hjälp av berikandeaktiviteten i ett arbetsflöde. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
-Videor med funktioner har flyttats [hit](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html).
+Videor med funktioner har flyttats [hit](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html).
 
 Två tekniska dokument har lagts till om [Teradata](https://helpx.adobe.com/se/campaign/kb/campaign_fda_teradata.html) och [MySQL 5.7](https://helpx.adobe.com/se/campaign/kb/campaign_fda_mysql.html).
