@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nedan finns definitionen av de huvudsakliga interaktionselementen.
 
 * **Utrymme**: mapp som definierar platsen där erbjudandet visas. Om du definierar ett mellanslag kan du ange vilken kanal som ska användas, ange om den kan användas i enställningsläge eller inte (som standard: endast i gruppläge), bygg innehållet i erbjudandet med hjälp av återgivningsfunktioner och ange erbjudandet. Ett blanksteg är ett gränssnitt mellan kanalen och erbjudandemotorn.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Ett erbjudandeutrymme är inte en kommunikationskanal, det sammanfaller med en specifik exponeringsplats i kanalen. Erbjudanden som visas på en webbplats kan till exempel innehålla två mellanslag på samma sida. I det här fallet har vi två mellanslag för samma kanal.
    >
