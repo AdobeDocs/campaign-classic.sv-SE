@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 8%
@@ -26,8 +26,8 @@ Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startad
 
 Att skicka ett korrektur innebär samma process som för en vanlig leverans (mer information finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)). Om du vill skicka ett bevis i Message Center måste du dock utföra följande åtgärder i förväg:
 
-* skapa en eller flera dirigeringsadresser (se [Hantera dirigeringsadresser i transaktionsmeddelanden](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) med testdata (se [personaliseringsdata](../../message-center/using/personalization-data.md)),
-* skapa meddelandeinnehållet (se [Skapa meddelandeinnehåll](../../message-center/using/creating-message-content.md)).
+* Skapa en eller flera dirigerade adresser (se [Hantera dirigerade adresser i transaktionsmeddelanden](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) med testdata (se [Personaliseringsdata](../../message-center/using/personalization-data.md)).
+* Skapa meddelandeinnehållet (se [Skapa meddelandeinnehåll](../../message-center/using/creating-message-content.md)).
 
 Så här skickar du korrekturet:
 
