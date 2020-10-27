@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3600'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Det går att visa loggjournalen som hör till en process. Det gör du genom att 
 
 Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. dess fysiska och virtuella minne, aktiva processer och tillgängliga diskutrymme. Indikatorer är olika för Linux och Windows. Gå till **[!UICONTROL Instance Monitoring]** sidan och klicka på **[!UICONTROL Display]** länken för att öppna listan över indikatorer
 
-#### I Windows {#in-windows}
+#### Windows {#in-windows}
 
 * **[!UICONTROL Pending events queued]** : -indikator som är specifik för **meddelandecentret**. Mer information finns i [det här avsnittet](../../message-center/using/monitoring-thresholds.md) .
 * **[!UICONTROL Memory]** : Information om det fysiska minnet.
@@ -103,7 +103,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
    När indikatorn visas kan det bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. **[!UICONTROL Alert]** Den **övervakningsprocess** som Adobe Campaign erbjuder startar automatiskt om alla processer varje dag och gör att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
 
-#### I Linux {#in-linux}
+#### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
@@ -256,7 +256,7 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 
 ![](assets/smtp_reports_access.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Information om SMTP-övervakning är bara tillgänglig om e-postkanalen har aktiverats.
 >* De **[!UICONTROL SMTP sending statistics]** visas bara om statistikservern har startats på instansen.
@@ -391,7 +391,7 @@ wfserver@prod
 
 #### /r/test {#r-test}
 
-Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan även användas för att testa en lastdispatcher.
+Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan också användas för att testa en lastdispatcher.
 
 Här visas en rad som den här i XML-format:
 
@@ -484,7 +484,7 @@ Adobe Campaign kan tillhandahålla ett instansövervakningsverktyg (netreport) s
 
 ![](assets/pro_netreport.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det här verktyget kan användas för att övervaka dina instanser, men stöds inte av Adobe Campaign. Kontakta er Campaign-administratör om du vill ha mer information.
 
@@ -548,7 +548,7 @@ Här är ett konfigurationsexempel:
 >
 >Du kan ange olika konfigurationer genom att lägga till ett suffix till **netconf.xml** -filen, till exempel **netconf-dev.xml**, **netconf-prod.xml** osv. Ange sedan den konfiguration som ska användas för att köra netreport i **netreport.bat** - eller **netreport.sh** -filerna genom att till exempel lägga till **$JAVA_HOME/bin/java netreport dev** eller **@%JAVA_HOME%binjava netreport** .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >För att **övervakningsoperatorn** ska fungera måste datorn som netreport körs på finnas i en säkerhetszon som är i **sessionTokenOnly** -läge. Om ingen betrodd IP-mask har angetts för den här operatorn måste säkerhetszonen också vara i **läget allowEmptyPassword** och **allowUserPassword** .
 
