@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: tracking-offers
 discoiquuid: 6aae6a10-b03e-41f1-a6e9-29100800bae1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 14%
@@ -30,15 +30,15 @@ Rapporten innehåller en översikt över antalet godkända eller avvisade försl
 
 Statistiken sorteras utifrån tre kriterier:
 
-* efter datum.
+* Efter datum:
 
    ![](assets/offer_report_perdate.png)
 
-* efter mellanslag.
+* Efter mellanslag:
 
    ![](assets/offer_report_perspaces.png)
 
-* efter leveranser.
+* Efter leveranser:
 
    ![](assets/offer_report_perdeliveries.png)
 
