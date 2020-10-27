@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### Översikt {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du inte har åtkomst till servern och databasen (värdmiljöer) kan du inte utföra de procedurer som beskrivs nedan. Kontakta Adobe.
 
@@ -49,14 +49,14 @@ Gör så här:
    >När det gäller Adobe Campaign **kombinerar en auktorisering** åtgärder som gör att du kan stoppa alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.\
    >Detta steg är nödvändigt för att undvika att leverera meddelanden flera gånger (en gång från den nominella miljön och en gång från den duplicerade miljön).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >En miljö kan innehålla flera instanser. Varje instans av Adobe Campaign omfattas av ett licensavtal. Se licensavtalet för att se hur många miljöer du kan ha.\
    >Med proceduren nedan kan du överföra en miljö utan att det påverkar antalet miljöer och instanser som du har installerat.
 
 ### Innan du börjar {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vi rekommenderar att du kör en fullständig säkerhetskopiering av databaserna för alla instanser av käll- och målmiljöer innan du påbörjar överföringsprocessen. Om ett problem uppstår kan du återställa säkerhetskopiorna och återgå till den ursprungliga konfigurationen.
 
@@ -70,7 +70,7 @@ I det här avsnittet får du hjälp med att förstå hur du överför en källmi
 
 Följande steg måste utföras med stor noggrannhet: vissa processer kanske fortfarande pågår när källmiljöns databaser kopieras. Verifiering (steg 3 nedan) förhindrar att meddelanden skickas två gånger och upprätthåller datakonsekvensen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Följande procedur gäller för PostgreSQL-språk. Om SQL-språket är ett annat (till exempel Oracle) måste SQL-frågorna anpassas.
 >* Nedanstående kommandon gäller för en **prod** -instans och en **dev** -instans under PostgreSQL.
@@ -218,7 +218,7 @@ Kontrollera åtkomsten till klientkonsolfunktionerna.
 
 ### Steg 8 - Importalternativ och externa konton i målmiljön (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det är bara webbprocessen som ska startas i det här steget. Om så inte är fallet ska du stoppa andra processer som körs innan du fortsätter
 
