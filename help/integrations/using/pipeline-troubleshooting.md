@@ -12,24 +12,24 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 2%
 
 ---
 
 
 # Felsöka pipelines {#pipeline-troubleshooting}
 
-**Pipelined misslyckas med felet&quot;Ingen aktivitet motsvarar masken pipelined@&quot;**
+**Pipelined misslyckas med felet&quot;Ingen aktivitet motsvarar maskens pipelinade@&lt; instans >&quot;**
 
 Din version av Adobe Campaign Classic stöder inte pipeline.
 
 1. Kontrollera om elementet [!DNL pipelined] finns i konfigurationsfilen. Annars betyder det att det inte stöds.
 1. Uppgradera till version 6.11 build 8705 eller senare.
 
-**Pipelined misslyckas med &#39;&#39; aurait d¢commencer par`[`ou`{`(iRc=16384)&quot;**
+**Pipelined misslyckas med &#39;&#39; aurait d¢commencer par `[` ou `{` (iRc=16384)&quot;**
 
 Alternativet **NmsPipeline_Config** har inte angetts. Det är faktiskt ett JSON-tolkningsfel.
 Ställ in JSON-konfigurationen i alternativet **NmsPipeline_Config**. Se&quot;routningsalternativ&quot; på den här sidan.
@@ -49,7 +49,7 @@ Parametern @authPrivateKey i instanskonfigurationsfilen är felaktig.
 1. Kontrollera att authPrivateKey har angetts.
 1. Kontrollera att authPrivateKey: börjar med @, slutar med = och är ca 4 000 tecken långt.
 1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4096 bitar långt och börjar med —BEGIN RSA PRIVATE KEY—.
-   <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
+   <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics.
 1. Kontrollera att nyckeln har kodats i samma instans som [!DNL pipelined]. <br>Om det behövs kan du göra om kodningen med JavaScript eller arbetsflödet.
 
 **Överföringen misslyckades med &quot;det går inte att läsa token under autentiseringen&quot;**
@@ -91,42 +91,3 @@ I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskam
 1. Kontrollera köstorleken på statussidan [!DNL pipelined] . Om köstorleken är stor kan du förbättra JS-prestanda.
 1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna i Analytics med färre meddelanden.
 Bilagor
-
-**Så här använder du JavaScript för nyckelkryptering**
-
-Kör ett JavaScript för att kryptera den privata nyckeln. Den krävs för pipeline-konfigurationen.
-
-Här följer ett kodexempel som du kan använda för att köra funktionen cryptString:
-
-```
-/*
-USAGE:
-  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-*/
- 
-function usage()
-{
-  return "USAGE:\n" +
-    '  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js\n'
-}
- 
-var fn = application.arg;
-if( fn == "" )
-  logError("Missing key file file\n" + usage());
- 
-//open the pem file
-plaintext = loadFile(fn)
- 
-if( !plaintext.match(/^-----BEGIN RSA PRIVATE KEY-----/) )
-  logError("File should be an rsa private key")
- 
-logInfo("Encrypted key:\n" + cryptString(plaintext, <xtkSecretKey>))
-```
-
-Kör JavaScript på servern:
-
-```
-nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-```
-
-Kopiera och klistra in den kodade nyckeln från utdata till konsolen.
