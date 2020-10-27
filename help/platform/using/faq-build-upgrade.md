@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 1%
+source-wordcount: '2020'
+ht-degree: 2%
 
 ---
 
@@ -203,3 +203,10 @@ allt innehåll visas och visas.
    * Testa att skicka SMS
    * Om du har någon extern FDA ansluten, testar du om data skickas på båda sätten
    * Om du använder integreringar som Adobe Campaign-Adobe Experience Manager eller Adobe Campaign-Adobe Analytics bör du testa om de fortfarande fungerar som tidigare
+
+**Se även**
+
+* [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
+* [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
+* [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html)
