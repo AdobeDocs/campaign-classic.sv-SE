@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa under
 * Borttagning av överblivna poster och återinitiering av status för utgångna objekt.
 * uppdatera databasstatistiken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Observera att rensningsaktiviteten huvudsakligen handlar om underhåll på programnivå, inte om underhåll på RDBMS-nivå (med undantag för statistikuppdatering). Underhållsåtgärder krävs dock för databasen. Även om arbetsflödet för databasrensning fungerar som det ska betyder det inte att databasen är optimalt justerad.
 
