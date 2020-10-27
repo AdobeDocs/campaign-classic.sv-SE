@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -59,14 +59,14 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 
 Arbetsflödet **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
 
-Adobe Campaign är kompatibelt med både binära och HTTP/2 APNS. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+Adobe Campaign är kompatibelt med både binära och HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 
 ## Datasökväg {#data-path}
 
 I följande scheman beskrivs de steg som gör att mobilprogram kan utbyta data med Adobe Campaign. Denna process inbegriper tre enheter:
 
 * mobilapplikationen
-* meddelandetjänsten: APNS (Apple Push Notification Service) för Apple och FCM (Firebase Cloud Messaging) för Android
+* meddelandetjänsten: APN:er (Apple Push Notification Service) för Apple och FCM (Firebase Cloud Messaging) för Android
 * Adobe Campaign
 
 De tre huvudstegen i anmälningsprocessen är: registrering av programmet i Adobe Campaign (prenumerationssamling), leveranser och spårning.
@@ -88,10 +88,14 @@ Följande information finns i Adobe Campaign:
 
 ![](assets/nmac_delivery_view.png)
 
-Adobe Campaign-servern måste kunna kontakta APNS-servern på följande portar:
+Adobe Campaign-servern måste kunna kontakta APN-servern på följande portar:
 
 * 2195 (sändning) och 2186 (feedbacktjänst) för binär iOS-anslutning
 * 443 för iOS HTTP/2-anslutning
+
+   >[!NOTE]
+   >
+   > Från och med Campaign 20.3 är den gamla binära kopplingen för iOS föråldrad. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
 
 Använd följande kommandon för att kontrollera att den fungerar som den ska:
 
@@ -107,7 +111,7 @@ Använd följande kommandon för att kontrollera att den fungerar som den ska:
    telnet gateway.push.apple.com
    ```
 
-Om en binär iOS-anslutning används måste MTA- och webbservern kunna kontakta APNS på port 2195 (skicka), arbetsflödesservern måste kunna kontakta APNS på port 2196 (feedback-tjänst).
+Om en binär iOS-anslutning används måste MTA- och webbservern kunna kontakta APN:er på port 2195 (skicka), arbetsflödesservern måste kunna kontakta APN:er på port 2196 (feedbacktjänst).
 
-Om en iOS HTTP/2-anslutning används måste MTA-, webbservern och arbetsflödesservern kunna kontakta APNS på port 443.
+Om en iOS HTTP/2-anslutning används måste MTA-, webbservern och arbetsflödesservern kunna kontakta APN:erna på port 443.
 
