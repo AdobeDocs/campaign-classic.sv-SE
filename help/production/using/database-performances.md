@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Kontrollera att databasunderhållet är korrekt schemalagt och att det körs. Ko
 
 Mer information om detta finns i [det här avsnittet](../../production/using/recommendations.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om du använder en mellanleverantörskonfiguration är det viktigt att databaserna upprätthålls regelbundet. När marknadsföringsinstansen analyserar en leverans på marknadsföringsplattformen skickar den information till mellanleverantörsinstansen. Om processen går långsammare kommer marknadsinstansen att påverkas.
 
@@ -69,7 +69,7 @@ Kontrollera antal och storlek på arbetsregister. När de överskrider en viss s
 * stoppa eller ta bort arbetsflöden som pausats på grund av ett fel,
 * stoppa alla arbetsflöden som används för tester som inte innehåller någon **[!UICONTROL End]** aktivitet och vars status därför kvarstår **[!UICONTROL Paused]** .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om operationen tar lång tid och frigör mycket utrymme innebär detta att det krävs ett djupgående underhåll (ombyggnad av index osv.). Mer information om detta finns i [det här avsnittet](../../production/using/recommendations.md).
 
