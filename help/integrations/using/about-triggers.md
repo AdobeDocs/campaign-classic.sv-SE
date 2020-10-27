@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -31,42 +31,14 @@ Det stöder också stora trafikvolymer utan att påverka marknadsföringsaktivit
 
 ## [!DNL Triggers] arkitektur {#triggers-architecture}
 
-### Vad är Pipeline? {#pipeline-explanation}
-
->[!CAUTION]
->
->Endast Adobe Cloud-lösningar kan producera och förbruka event från Adobe’s Pipeline services. System som ligger utanför Adobe kan inte det.
-
-Pipeline är ett meddelandesystem på Experience Cloud som använder [Apache Kafka](http://kafka.apache.org/). Det är ett sätt att enkelt skicka data mellan olika lösningar. Dessutom är Pipeline en meddelandekö i stället för en databas. Producenterna pushar på händelser i pipeline och konsumenterna lyssnar på flödet och gör vad de vill med händelsen. Händelser sparas i några dagar, men inte längre. Syftet är att avlyssna händelser dygnet runt och bearbeta dem direkt.
-
-![](assets/triggers_1.png)
-
-### Hur fungerar Pipeline? {#how-pipeline-work}
-
 Processen [!DNL pipelined] körs alltid på Adobe Campaign marknadsföringsserver. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
 
 ![](assets/triggers_2.png)
 
-Processen loggar in på Experience Cloud med hjälp av en autentiseringstjänst och skickar en privat nyckel. [!DNL pipelined] Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser. [!DNL Triggers] hämtas från en REST-webbtjänst med hjälp av en enkel GET-begäran. Svaret är JSON-format. Parametrar för begäran innehåller namnet på utlösaren och en pekare som anger det senaste meddelandet som har hämtats. Processen hanterar den automatiskt [!DNL pipelined] .
+Processen loggar in på Experience Cloud med hjälp av en autentiseringstjänst och skickar en privat nyckel. [!DNL pipelined] Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser.
 
-## Integrering med Adobe Experience Cloud Triggers med Adobe Campaign Classic
+For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
 
-Här följer några [!DNL Triggers] tips:
-
-* Data måste lagras [!DNL Trigger] som de kommer i Campaign. Den ska inte behandlas direkt eftersom den skulle skapa latens.
-* Tidsstämpeln ska kontrolleras från meddelandet och inte från databasen.
-* Använd TriggerTimestamp och trigger ID för att ta bort dubbletter.
-
->[!CAUTION]
+>[!NOTE]
 >
->Exemplet nedan är inte tillgängligt. Detta är ett specifikt exempel från olika möjliga implementeringar.
-
-Pipeline-händelserna laddas ned automatiskt. Dessa händelser kan övervakas med hjälp av ett formulär.
-
-![](assets/triggers_3.png)
-
-Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../configuration/using/about-navigation-hierarchy.md) och [formulärredigering](../../configuration/using/editing-forms.md).
-
-Ett återkommande kampanjarbetsflöde frågar efter utlösare och om de matchar marknadsföringskriterierna startar det en leverans.
-
-![](assets/triggers_4.png)
+>Ytterligare bearbetning av händelser görs som en del av ACX-paketet som tillhandahålls utanför standardimplementeringen. Mottagna händelser bearbetas omedelbart med JavaScript-kod. Den sparas i en databastabell utan vidare bearbetning i realtid. Utlösarna används för målgruppsanpassning av ett kampanjarbetsflöde som skickar e-postmeddelanden. Kampanjen har konfigurerats så att den kund som har utlöst händelsen får ett e-postmeddelande.
