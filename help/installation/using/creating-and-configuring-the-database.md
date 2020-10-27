@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 1%
+source-wordcount: '1305'
+ht-degree: 2%
 
 ---
 
@@ -64,12 +64,13 @@ Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen
 
 * För en **Oracle** -motor fyller du i det **TNS-namn** som definierats för programservern.
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
-* För en **Microsoft SQL Server** -motor måste du definiera:
+* För en **Microsoft SQL Server** -motor måste du definiera: DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS`\<instance>`** (instansläge),
 
-   1. DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS`\<instance>`** (instansläge),
-   1. den autentiseringsmetod som används för att komma åt Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** eller **[!UICONTROL Windows NT authentication]**.
+   >[!CAUTION]
+   >
+   > Från och med 20.3 har Windows NT-autentisering avaktiverats. **[!UICONTROL SQL Server authentication]** är nu det enda autentiseringsläget som är tillgängligt för Microsoft SQL Server. [Läs mer](../../rn/using/deprecated-features.md)
 
-      ![](assets/s_ncs_install_db_mssql_creation01.png)
+   ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Steg 2 - Ansluta till servern {#step-2---connecting-to-the-server}
 
