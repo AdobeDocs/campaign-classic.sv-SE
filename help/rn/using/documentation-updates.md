@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 85%
+source-wordcount: '3882'
+ht-degree: 83%
 
 ---
 
@@ -25,6 +25,31 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
 
 ## Oktober 2020 {#oct-2020}
+
+**Nya funktioner i version 20.3**
+
+Förbättrade push-meddelanden för iOS - [Läs mer](../../delivery/using/configuring-the-mobile-application.md)
+
+Förbättringar av push-meddelanden för Android - [Läs mer](../../delivery/using/configuring-the-mobile-application-android.md)
+
+**Andra dokumentationsuppdateringar som följer med denna version**
+
+Kompatibilitetsmatrisen har uppdaterats. [Läs mer](../../rn/using/compatibility-matrix.md)
+
+Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/using/deprecated-features.md)
+
+Versionsinformation och kompatibilitetsmatris för Gold Standard finns nu i ett särskilt avsnitt.
+[Läs mer](../../rn/using/gold-standard.md#gs-10).
+
+**Andra uppdateringar**
+
+Dokumentationssidorna har uppdaterats för att återspegla Tomcat 8-uppdateringen.
+
+Mer information finns i beskrivningen av rutan Om i avsnittet Hämta din Adobe Campaign-version. [Läs mer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+
+Riktlinjer för att utföra en bygguppgradering har lagts till i avsnittet Uppdatera Adobe Campaign Classic. Läs mer [Läs mer](../../production/using/build-upgrade.md)
+
+Vanliga frågor om Campaign-bygguppgraderingen har lagts till i vanliga frågor om Campaign. Läs mer [Läs mer](../../platform/using/faq-build-upgrade.md)
 
 Campaign-on-lokalt, på-hosted och hybridhosting-modeller beskrivs nu i ett särskilt avsnitt. [Läs mer](../../installation/using/hosting-models.md)
 
