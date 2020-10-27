@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
@@ -28,7 +28,7 @@ För en viss server finns det två element som är gemensamma för alla Adobe Ca
 
 * Det **interna** lösenordet: det här är det allmänna administratörslösenordet. Det är vanligt för alla instanser av en viss programserver.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Om du vill logga in med den **interna** identifieraren måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
