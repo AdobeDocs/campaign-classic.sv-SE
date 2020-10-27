@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 2%
@@ -239,6 +239,6 @@ I den här videon får du lära dig hur du lägger till frön och korrektur i et
 Se även:
 * [Välja korrekturmål](#selecting-the-proof-target)
 
-* [Om dirigerade adresser](../../delivery/using/about-seed-addresses.md)
+* [Om fröadresser](../../delivery/using/about-seed-addresses.md)
 
 * [Användningsfall: välja fröadresser enligt villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
