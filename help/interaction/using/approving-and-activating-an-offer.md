@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Innehållet i ett erbjudande har en representation per space. Eftersom varje erb
 
 Du kan godkänna erbjudandeinnehållet på vissa tillgängliga platser och avvisa det på andra.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >När innehållet i och behörigheten för ett erbjudande har godkänts körs arbetsflödet för publicering (meddelande om erbjudande) automatiskt och erbjudandet görs tillgängligt på alla aktiverade platser.
 
@@ -62,7 +62,7 @@ Så här godkänner du erbjudandeinnehållet:
 
 Godkännande av berättigande för erbjudanden innebär att acceptera eller avvisa erbjudandevikter och att reglerna för behörighet också har konfigurerats i erbjudandet eller ärvts från reglerna som skapats i den överordnade kategorin.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >När innehållet i och behörigheten för ett erbjudande har godkänts körs arbetsflödet för publicering (meddelande om erbjudande) automatiskt och erbjudandet görs tillgängligt på alla aktiverade platser.
 
