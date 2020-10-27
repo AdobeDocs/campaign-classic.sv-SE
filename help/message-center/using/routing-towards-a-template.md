@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 12%
@@ -34,7 +34,6 @@ Definition av händelsetypen i meddelandemallens egenskaper:
 
 Som standard baseras routningen på följande information:
 
-* händelsetypen,
-* den kanal som ska användas (som standard: e-post),
-* den senaste leveransmallen, baserat på publiceringsdatumet.
-
+* Händelsetypen
+* Den kanal som ska användas (som standard: e-post)
+* Den senaste leveransmallen, baserad på publiceringsdatumet
