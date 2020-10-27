@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 84%
 
 ---
 
@@ -17,8 +17,9 @@ ht-degree: 100%
 
 ## Nyheter
 
-* **[Uttryckssymboler](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
-Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
+* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> för APNs-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
+
+* **[Lägg till uttryckssymboler i meddelanden](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
@@ -28,9 +29,6 @@ Läs mer om hur Adobe Campaign kan hjälpa till med din integritetsefterlevnad
 
 * **[Spårningsfunktioner](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html)**<br/>
 Förstå spårningsfunktioner och -processer i Campaign
-
-* **[Interaktivt innehåll med AMP](delivery/using/defining-interactive-content.md)**<br/>
-Lär dig hur du skickar dynamiska e-postmeddelanden med det nya AMP-formatet
 
 [Klicka här för fler uppdateringar](/help/rn/using/documentation-updates.md)
 
