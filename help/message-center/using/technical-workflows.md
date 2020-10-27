@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
+source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '309'
 ht-degree: 11%
 
 ---
@@ -28,13 +28,11 @@ De olika tekniska arbetsflödena för transaktionsmeddelanden (Message Center) �
 
 ## Styra instansarbetsflöden {#control-instance-workflows}
 
-På kontrollinstansen måste du skapa ett arkiveringsarbetsflöde per körningsinstans. Du kommer sedan åt arkiveringsarbetsflödena via mappen **Administration > Produktion > Meddelandecenter** . Arkiveringsarbetsflödena startas automatiskt när de har skapats.
-
-**Distribuerad arkitektur**
-
-Om du har registrerat en eller flera körningsinstanser på kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]** externt konto. Klicka på **[!UICONTROL Create the archiving workflow]** knappen för att skapa och starta arbetsflödet.
+Oavsett om du har en eller flera instanser registrerade för körning i kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]** externt konto. Klicka på **[!UICONTROL Create the archiving workflow]** knappen för att skapa och starta arbetsflödet.
 
 ![](assets/messagecenter_archiving_002.png)
+
+Du kommer sedan åt dessa arbetsflöden via mappen **Administration > Produktion > Meddelandecenter** . Arkiveringsarbetsflödena startas automatiskt när de har skapats.
 
 <!--**Minimal architecture**
 
