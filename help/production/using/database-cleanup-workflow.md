@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Som standard är arbetsflödet konfigurerat så att det startar varje dag kl. 4.
 
 ![](assets/ncs_cleanup_scheduler.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Arbetsflödesmotorn (wfserver) måste startas för att arbetsflödet ska kunna starta vid det datum och den tid som anges i schemaläggaren. **[!UICONTROL Database cleanup]** Om så inte är fallet kommer ingen databasrensning att utföras förrän nästa gång arbetsflödesmotorn startas.
 
@@ -84,7 +84,7 @@ Alla åtgärder som utförs av **[!UICONTROL Database cleanup]** arbetsflödet b
 
 På det datum och den tid som definieras i arbetsflödets schemaläggare (se [Schemaläggaren](#the-scheduler)) startar arbetsflödesmotorn databasrensningsprocessen. Rensningen av databasen ansluter till databasen och utför åtgärderna i den sekvens som visas nedan.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om någon av dessa uppgifter misslyckas kommer följande inte att utföras.\
 >SQL-frågor med ett **LIMIT** -attribut körs upprepade gånger tills all information har bearbetats.
