@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -39,7 +39,7 @@ För att få stöd för skalbarhet och dygnet runt-service på den inkommande ka
 
 Synkronisering av erbjudanden utförs via paket. I körningsinstanser föregås alla katalogobjekt av det externa kontonamnet. Detta innebär att flera kontrollinstanser (till exempel utvecklings- och produktionsinstanser) kan stödjas på samma körningsinstans.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vi rekommenderar att du använder korta och explicita interna namn.
 
@@ -112,7 +112,7 @@ Om bara en del av marknadsföringsdatabasen dupliceras på körningsinstanserna 
 
 Här är en lista över underhållsalternativ som är tillgängliga för kontrollinstansen:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dessa alternativ får endast användas för särskilda underhållsfall.
 
@@ -128,7 +128,7 @@ Följande alternativ är tillgängligt för körningsinstanser:
 
 Om din instans inte tidigare har Interaction-paketet behövs ingen migrering. Som standard kommer förslagstabellen att vara 64 bitar efter att paketen har installerats.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Beroende på volymen av befintliga förslag i din instans kan den här åtgärden ta en stund.
 
