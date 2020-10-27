@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 762b0233-4b2a-420c-ba28-240cfba362e8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -30,7 +30,6 @@ Erbjudandet hanteras via ett träd med mappar i Adobe Campaign.
 
 Innan du skapar dina erbjudanden måste du ange en miljö (se [Miljööversikt](../../interaction/using/environments-overview.md)). Det kommer att innehålla alla egenskaper (behörighet, begränsningar av mål, presentationsregler) för en uppsättning erbjudanden, sorterade i kategorier, samt en lista över deras space.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ansvaret för att skapa erbjudandekatalogen, dvs. kategorierna och erbjudandena, ligger hos **[!UICONTROL Offer manager]**.
-
