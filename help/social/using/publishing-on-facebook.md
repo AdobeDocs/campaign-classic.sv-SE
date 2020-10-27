@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 335cf2de-1874-4e48-9538-f0937641cf96
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 3%
@@ -153,7 +153,7 @@ Med den här typen av innehåll kan du publicera en länk till en YouTube-video.
 
 Ange de olika fälten:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alla URL-adresser måste börja med **&quot;http://&quot;** eller **&quot;https://&quot;**.
 
