@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 7a92bc51-24cf-4ce6-bd50-a315f8f6e34e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 Så här skapar du en testmiljö (sandlådeläge):
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Använd bara den här metoden för att skapa miljöer för testmiljöer. I alla andra fall använder du guiden för målmappning. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
