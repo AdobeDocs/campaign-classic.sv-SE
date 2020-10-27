@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -369,7 +369,7 @@ Kontakta din databasadministratör för att ta reda på vilka procedurer som pas
 
 >[!NOTE]
 >
->För Microsoft SQL Server kan du använda underhållsplanen som beskrivs [på den här sidan](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>För Microsoft SQL Server kan du använda den underhållsplan som finns på [den här sidan](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan version kontaktar du databasadministratören för att få reda på mer om underhållsrutiner.
 
@@ -421,7 +421,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
    Observera att ett objekt har skapats i **[!UICONTROL SQL Server Agent > Jobs]** mappen. Med det här objektet kan du starta underhållsplanen. I vårt exempel finns det bara ett objekt eftersom alla underhållsåtgärder ingår i samma plan.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Microsoft SQL Server-agenten måste vara aktiverad för att det här objektet ska kunna köras.
 
