@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: a31c5c9f-503f-4b55-8409-34d4addbd581
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 3%
@@ -24,9 +24,8 @@ ht-degree: 3%
 
 Adobe Campaign är ett mycket transaktionssystem (OLTP-databas). Detta innebär att den underliggande databasen uppdateras ofta, vilket leder till försämrade prestanda över tiden. För att undvika den här typen av problem krävs regelbundet databasunderhåll.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >En databas fungerar bara optimalt om den upprätthålls regelbundet. Det automatiska underhåll som erbjuds av vissa RDBMS är inte tillräckligt och ersätter inte djupgående underhåll, som för alla transaktionsdatabassystem.
 >  
 >Procedurer som beskrivs i detta dokument är rekommendationer. Underhållsplaner är databasadministratörens ansvar, och dessa måste vara den första kontakten om problem uppstår.
-
