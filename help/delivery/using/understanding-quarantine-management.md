@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 14%
+source-wordcount: '2802'
+ht-degree: 13%
 
 ---
 
@@ -156,20 +156,23 @@ Objekten som sätts i karantän är enhetstoken.
 
 **För iOS - binär anslutning**
 
-För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från APNS-servern. För följande synkrona fel genererar Adobe Campaign mjuka fel:
+>[!NOTE]
+Från och med Campaign 20.3 är den gamla binära kopplingen för iOS föråldrad. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+
+För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från APN-servern. För följande synkrona fel genererar Adobe Campaign mjuka fel:
 
 * Problem med nyttolastens längd: inga nya försök, felorsaken är **[!UICONTROL Unreachable]**.
 * Utgångsdatum för certifikat: inga nya försök, felorsaken är **[!UICONTROL Unreachable]**.
 * Förlorad anslutning under leveransen: återförsök utförd, felorsaken är **[!UICONTROL Unreachable]**.
 * Problem med tjänstkonfiguration (ogiltigt certifikat, ogiltigt certifikatlösenord, inget certifikat): inga nya försök, felorsaken är **[!UICONTROL Unreachable]**.
 
-APNS-servern meddelar asynkront Adobe Campaign om att en enhetstoken har avregistrerats (när mobilprogrammet har avinstallerats av användaren). Arbetsflödet körs var 6:e timme för att kontakta APNS-feedbacktjänster för att uppdatera **[!UICONTROL mobileAppOptOutMgt]** tabellen AppSubscriptionRcp **** . För alla inaktiverade token anges fältet **Inaktiverad** till **Sant** och prenumerationen som är länkad till den enhetstoken exkluderas automatiskt från framtida leveranser.
+APN-servern meddelar asynkront Adobe Campaign om att en enhetstoken har avregistrerats (när mobilprogrammet har avinstallerats av användaren). Arbetsflödet **[!UICONTROL mobileAppOptOutMgt]** körs var sjätte timme för att kontakta APN:s feedbacktjänster för att uppdatera **tabellen AppSubscriptionRcp** . För alla inaktiverade token anges fältet **Inaktiverad** till **Sant** och prenumerationen som är länkad till den enhetstoken exkluderas automatiskt från framtida leveranser.
 
-**För iOS - HTTP/2-anslutning**
+**För iOS - HTTP/V2-anslutning**
 
-Protokollet http/2 tillåter direkt feedback och status för varje push-leverans. Om http/2-protokollkopplingen används anropas inte längre feedbacktjänsten av **[!UICONTROL mobileAppOptOutMgt]** arbetsflödet. De oregistrerade token hanteras på olika sätt mellan binära iOS-anslutningar och http/2-anslutningar i iOS. En token betraktas som oregistrerad när ett mobilprogram avinstalleras eller installeras om.
+HTTP/V2-protokollet tillåter direkt feedback och status för varje push-leverans. Om HTTP/V2-protokollkopplingen används anropas inte längre feedbacktjänsten av **[!UICONTROL mobileAppOptOutMgt]** arbetsflödet. De oregistrerade token hanteras på olika sätt mellan binära iOS-anslutningar och iOS HTTP/V2-anslutningar. En token betraktas som oregistrerad när ett mobilprogram avinstalleras eller installeras om.
 
-Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande, sätts måltoken omedelbart i karantän.
+Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelande, sätts måltoken omedelbart i karantän.
 
 <table> 
  <tbody> 
@@ -222,7 +225,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
    <td> Nej<br /> </td> 
   </tr> 
   <tr> 
-   <td> Certifikatproblem (lösenord, fel osv.) och testa anslutningen till APNS-problemet<br /> </td> 
+   <td> Certifikatproblem (lösenord, fel osv.) och testa anslutningen till APN-problemet<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Olika felmeddelanden enligt felet<br /> </td> 
    <td> Mjuk<br /> </td> 
@@ -238,7 +241,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av APNS-meddelande: Avregistrering<br /> av användaren har tagit bort programmet eller så har token gått ut<br /> </td> 
+   <td> Avvisning av APN-meddelande: Avregistrering<br /> av användaren har tagit bort programmet eller så har token gått ut<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Oregistrerad<br /> </td> 
    <td> Hård<br /> </td> 
@@ -246,7 +249,7 @@ Synkront, om APNS returnerar status &quot;unregistered&quot; för ett meddelande
    <td> Nej<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av APNS-meddelande: alla andra fel<br /> </td> 
+   <td> Avvisning av APN-meddelande: alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Felavvisande orsak kommer att finnas i felmeddelandet<br /> </td> 
    <td> Mjuk<br /> </td> 
@@ -356,6 +359,134 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
   </tr> 
+    <tr> 
+   <td> Avvisning av FCM-meddelande: Ogiltigt argument<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> INVALID_ARGUMENT </td> 
+   <td> Ignorerad</td> 
+   <td> Odefinierad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Avvisning av FCM-meddelande: Autentiseringsfel från tredje part<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> THIRD_PARTY_AUTH_ERROR </td> 
+   <td> Ignorerad</td>
+   <td> Avvisad<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Avvisning av FCM-meddelande: Avsändarens ID matchar inte<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> SENDER_ID_MISMATCH </td> 
+   <td> Mjuk</td>
+   <td> Okänd användare<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Avvisning av FCM-meddelande: Oregistrerad<br /> </td> 
+   <td> Fel<br /> </td>
+   <td> OREGISTRERAD </td> 
+   <td> Hård</td> 
+   <td> Okänd användare<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Avvisning av FCM-meddelande: Intern<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> INTERN </td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Avvisning av FCM-meddelande: Otillgänglig<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> OTILLGÄNGLIG</td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Avvisning av FCM-meddelande: oväntad felkod<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> oväntad felkod</td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+  <tr> 
+   <td> Autentisering: Anslutningsproblem<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> Det går inte att ansluta till autentiseringsservern </td> 
+   <td> Ignorerad</td>
+   <td> Avvisad<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Oauktoriserad klient eller omfång i begäran.<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> Ignorerad</td>
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Klienten är inte behörig att hämta åtkomsttoken med den här metoden, eller så är klienten inte auktoriserad för något av de begärda scopen.<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> Ignorerad</td>
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Åtkomst nekad<br /> </td> 
+   <td> Fel<br /> </td>
+   <td> access_deny</td> 
+   <td> Ignorerad</td>
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Ogiltig e-postadress<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Ogiltig JWT<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Ogiltig JWT-signatur<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: Ogiltig publik för OAuth-scope eller ID-token har angetts<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> unauthorized_client</td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Autentisering: OAuth-klient inaktiverad<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> disabled_client</td> 
+   <td> Ignorerad</td> 
+   <td> Avvisad<br /> </td> 
+   <td> Nej<br /> </td> 
+  </tr>
  </tbody> 
 </table>
 
