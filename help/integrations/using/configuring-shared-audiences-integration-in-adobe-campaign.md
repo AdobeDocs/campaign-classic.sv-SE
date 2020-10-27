@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d567cb7dbc55d9c124d1cc83b7a5a9e2dfb5ab61
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,10 @@ När du har skickat in den här begäran fortsätter Adobe till att tillhandahå
 1. [Steg 3: Konfigurera kampanjspårningsserver](#step-3--configure-campaign-tracking-server)
 1. [Steg 4: Konfigurera besökar-ID-tjänsten](#step-4--configure-the-visitor-id-service)
 
+>[!IMPORTANT]
+>
+>Om du använder demodomänen och följer syntaxen **ftp-out.demdex.com** för det externa importkontot och **ftp-in.demdex.com** för det externa exportkontot måste du anpassa implementeringen och gå över till anslutningen för Amazon Simple Storage Service (S3) för att importera eller exportera data. Mer information om hur du konfigurerar externa konton med Amazon S3 finns i det här [avsnittet](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+
 ## Steg 1: Konfigurera eller kontrollera externa konton i Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign enligt följande:
@@ -36,26 +40,35 @@ Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign e
 1. Klicka på **[!UICONTROL Explorer]** ikonen.
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**. Adobe borde ha konfigurerat SFTP-kontona och du borde ha fått den information som behövs.
 
-   * **[!UICONTROL importSharedAudience]** : SFTP-konto för att importera målgrupper.
-   * **[!UICONTROL exportSharedAudience]** : SFTP-konto för export av målgrupper.
+   * **[!UICONTROL importSharedAudience]**: konto för att importera målgrupper.
+   * **[!UICONTROL exportSharedAudience]**: konto som används för att exportera målgrupper.
 
    ![](assets/aam_config_1.png)
 
-1. Fyll i **[!UICONTROL Server]** fältet: **ftp-out.demdex.com** -domän för det externa importkontot och **ftp-in.demdex.com** -domänen för det externa exportkontot.
+1. Select the **[!UICONTROL Export audiences to the Adobe Marketing Cloud]** external account.
 
-   Kom ihåg att en export från Campaign är en import för bastjänsten Audience Manager eller People.
+1. From the **[!UICONTROL Type]** drop-down, select **[!UICONTROL AWS S3]**.
 
-   >[!NOTE]
-   >
-   >Om du använder S3 anger du **[!UICONTROL AWS S3 Account Server]** följande syntax:
-   >
-   >`<S3bucket name>.s3.amazonaws.com/<s3object path>`
-   >
-   >Mer information om hur du konfigurerar ditt S3-konto finns på den här [sidan](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
+1. Ange följande information:
 
+   * **[!UICONTROL AWS S3 Account Server]**
+URL-adressen till servern ska fyllas i enligt följande:
+
+      ```
+      <S3bucket name>.s3.amazonaws.com/<s3object path>
+      ```
+
+   * **[!UICONTROL AWS access key ID]**
+Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du gå till den här [sidan](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+
+   * **[!UICONTROL Secret access key to AWS]**
+Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa den här [sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+
+   * **[!UICONTROL AWS Region]**
+Mer information om AWS finns på den här [sidan](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
    ![](assets/aam_config_2.png)
 
-1. Lägg till **[!UICONTROL Account]** och **[!UICONTROL Password]** tillhandahålls av Adobe.
+1. Klicka på **[!UICONTROL Save]** och konfigurera det **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** externa kontot enligt anvisningarna i föregående steg.
 
 Dina externa konton har nu konfigurerats.
 
