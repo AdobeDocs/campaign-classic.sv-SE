@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 7d8828c5-5776-49ca-b4f7-a4a6aaaa9db1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
    Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i mappen **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . För mer information om detta hittar du i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Om du ökar tröskelvärdet för **[!UICONTROL NmsOperation_LimitConcurrency]** alternativet kan det leda till prestandaproblem i instansen. Utför inte detta på egen hand och kontakta Adobe Campaign.
 
