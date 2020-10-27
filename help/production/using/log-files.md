@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -56,7 +56,7 @@ Loggfilerna för en instans visas i följande tabell:
 | inMail.log | Logg för studsande e-postmodul |
 | logins.log | Loggar alla inloggningsförsök till Adobe Campaign (genomförda eller inte) |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Katalogen **redir** finns bara på omdirigeringsservrar. Underkatalogen **url** innehåller matchningar för de URL:er som ska omdirigeras, och **loggen** för underkatalogen innehåller spårningsloggarna. Om du vill generera spårningsloggar måste **spårningsloggmodulen** köras.
 
@@ -68,4 +68,4 @@ Du kan dock behålla större filer. Aktivera detta genom att ändra värdet för
 
 Om du vill behålla fler detaljnivåer i loggarna kan du starta Adobe Campaign-modulerna med parametern **-verbose** :
 
-**nlserver start`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**
