@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Du kan använda den här processen på alla Adobe Campaign-moduler för att öka
 
 Det handlar om att starta om processerna med en högre loggnivå.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Den här proceduren avbryter pågående tjänster i den här modulen.
 
@@ -62,7 +62,7 @@ Adobe Campaign kan arbeta med två loggnivåer:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 Loggarna för dessa kommandon lagras i modulens loggfil.
 
 Här är ett exempel som är specifikt för modulen Webb. De övriga modulerna fungerar enligt ovan.
@@ -88,7 +88,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 >[!NOTE]
 I **spårfilsläget** kan du spara loggarna. I exemplen ovan sparas loggarna i **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log** .
 
->[!CAUTION]
+>[!IMPORTANT]
 I Windows ska du inte lägga till alternativet LD_PRELOAD. Följande kommando är tillräckligt:\
 nlserver web -tomcat -verbose -tracefilter:*
 
