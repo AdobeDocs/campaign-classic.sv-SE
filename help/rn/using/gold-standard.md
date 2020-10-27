@@ -1,6 +1,6 @@
 ---
 title: Gold Standard
-description: Gold Standard
+description: Versionsinformation om Campaign Classic Gold Standard
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '820'
 ht-degree: 14%
 
 ---
@@ -20,15 +20,13 @@ ht-degree: 14%
 
 # Gold Standard{#gold-standard}
 
-Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd.
+Gold Standard är Campaign Classic Långsiktig supportrelease. Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. Anskaffade kunder på plats och Hybrid kan också dra nytta av Gold Standard-releaser.
 
-Anskaffade kunder på plats och Hybrid kan också dra nytta av Gold Standard-releaser.
-
-Det här är vår långsiktiga supportrelease. Om du migrerar från en gammal version rekommenderar vi att du först uppgraderar till den här versionen.
+Om du migrerar från en gammal version rekommenderar vi att du först uppgraderar till den här versionen.
 
 På den här sidan visas Gold Standard-utgåvor.
 
-Mer information om uppgradering av Gold Standard finns i den här [artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
+Mer information om Campaign Gold Standard finns [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 10{#gs-10}
 
@@ -40,7 +38,7 @@ Korrigerade ett problem som hindrade spårning från att fungera när signaturfu
 
 >[!CAUTION]
 >
->Vi rekommenderar att du uppgraderar klientkonsolen med den som finns i den här versionen. Refer to this [page](../../installation/using/installing-the-client-console.md)
+>Vi rekommenderar att du uppgraderar klientkonsolen med den som finns i den här versionen. Refer [to this page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9 release{#gs-9}
 
@@ -50,7 +48,7 @@ Version 9032@800be2e innehåller följande korrigeringar:
 
 * iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904, NEO-25903 och NEO-25799)
 
-Följande korrigeringar är relaterade till säkerhetsmekanismen för spårningslänkar (se checklistan för [säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
+Följande korrigeringar är relaterade till säkerhetsmekanismen för spårningslänken (läs mer i checklistan [för](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)säkerhet och sekretess):
 
 * Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
 * Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook.  (NEO-25688)
@@ -68,7 +66,7 @@ Version 9032@3a9dc9c innehåller följande korrigeringar:
 
 >[!CAUTION]
 >
->Om du får problem med push-meddelanden med hjälp av spårningslänkar, eller leveranser med ankartaggar, rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårning av länkar. Proceduren beskrivs på den här [sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Om du får problem med push-meddelanden med hjälp av spårningslänkar, eller leveranser med ankartaggar, rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårning av länkar. Proceduren beskrivs [på den här sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * Korrigerade ett problem som kunde förhindra att bilder visas på radleveranser. (NEO-23207)
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
