@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Moduladministration utförs med kommandoradsverktyget **nlserver** som är insta
 
 Den allmänna syntaxen för **lserver** -verktyget är följande:
 
-**nlserver`<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 Använd kommandot **nlserver** om du vill se en lista över tillgängliga moduler.
 
@@ -79,11 +79,11 @@ De tillgängliga modulerna beskrivs i följande tabell:
 | webb | Programserver (HTTP och SOAP) |
 | wfserver | Arbetsflödesserver |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Det finns en sista modul: Modulen för spårning och vidarebefordran är länkad till programservern som för prestandans skull är integrerad med inbyggda mekanismer i en Apache- eller IIS-webbserver via ett dynamiskt bibliotek. Det finns inget Adobe Campaign-kommando som gör att du kan starta eller administrera den här modulen. Du måste därför använda kommandona från själva webbservern.
 
-Modulanvändning och syntaxen för dess parametrar visas med följande kommando: **nlserver`[module]`-?**
+Modulanvändning och syntaxen för dess parametrar visas med följande kommando: **nlserver `[module]` -?**
 
 Exempel:
 
