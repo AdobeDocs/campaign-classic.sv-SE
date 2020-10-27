@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ Så här skapar du en vikt i ett erbjudande:
 
    ![](assets/offer_weight_create_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Om ingen vikt anges (0) anses målet inte vara berättigat till erbjudandet.
 
@@ -116,7 +116,7 @@ Så här skapar du en vikt i ett erbjudande:
    >
    >Om ett mål kan få flera vikter för ett valt erbjudande behåller motorn den bästa (högsta) vikten. Vid anrop till erbjudandemotorn väljs ett erbjudande högst en gång per kontakt.
 
-### En sammanfattning av reglerna för erbjudandebehörighet {#a-summary-of-offer-eligibility-rules}
+### Sammanfattning av regler för erbjudandekvalificering {#a-summary-of-offer-eligibility-rules}
 
 När konfigurationen är klar finns en sammanfattning av berättigandereglerna på instrumentpanelen för erbjudanden.
 
