@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1132'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vi rekommenderar att du gör en säkerhetskopiering av databasen för varje instans innan du uppdaterar. Mer information finns i [Säkerhetskopiera](../../production/using/backup.md).\
 >Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
@@ -31,7 +31,7 @@ Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken
 >
 >Se även [installationsguiden](../../installation/using/general-architecture.md) och hur du kommer igång med [uppgraderingen](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) .
 
-## I Windows {#in-windows}
+## Windows {#in-windows}
 
 Om du vill uppdatera Adobe Campaign i en ny version när du skickar en ny version bör du göra följande i Windows:
 
@@ -53,7 +53,7 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
       **iisreset /stop**
 
    * Adobe Campaign: **net stop nlserver6**
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Du måste också se till att omdirigeringsservern (webmdl) stoppas så att filen **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
 
@@ -111,7 +111,7 @@ De tjänster som ska startas om är:
 
 * Adobe Campaign: **net start nlserver6**
 
-## I Linux {#in-linux}
+## Linux {#in-linux}
 
 Så här uppdaterar du Adobe Campaign i en ny version när en ny version levereras:
 
@@ -171,7 +171,7 @@ Om du vill göra det kör du följande kommando:
 /etc/init.d/apache stop
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Skriptet kan heta **httpd** istället för **apache**.
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
@@ -223,7 +223,7 @@ Det finns tre sätt att lösa en konflikt:
 * **[!UICONTROL Accept the new version]** : rekommenderas om resurserna som tillhandahålls med Adobe Campaign inte har ändrats av användaren.
 * **[!UICONTROL Keep the current version]** : betyder att uppdateringen inte godkänns.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Om du väljer det här upplösningsläget kanske du inte har någon nytta av korrigeringar i den nya versionen.
 
@@ -248,7 +248,7 @@ En Unicode-databas får till exempel inte bara tillåta lagring av LATIN1-data.
 
 ## Varna klientkonsolerna om den tillgängliga uppdateringen {#warn-the-client-consoles-of-the-available-update}
 
-### I Windows {#in-windows-1}
+### Windows {#in-windows-1}
 
 Hämta och kopiera filen på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad
 
@@ -262,7 +262,7 @@ Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar anv
 >
 >Kontrollera att IIS_XPG-användaren har rätt läsbehörighet för den här installationsfilen och se [installationsguiden](../../installation/using/general-architecture.md) för mer information.
 
-### I Linux {#in-linux-1}
+### Linux {#in-linux-1}
 
 Hämta följande paket på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad:
 
