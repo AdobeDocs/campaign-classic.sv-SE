@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 translation-type: tm+mt
-source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
+source-git-commit: 84f14b7a8c4ed05b309109c76be8c8c7b7b52d83
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 
 >[!NOTE]
 >
->Adobe Campaign Classic finns i version 6.11 och 7. Förutom när så anges gäller hjälpmaterialet för båda versionerna i respektive senaste build. Skärmbilderna återspeglar användargränssnittet i Campaign Classic version 7.
+>Adobe Campaign Classic finns i version 6.11 och 7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Skärmbilderna återspeglar användargränssnittet i Campaign Classic version 7.
 
 ## Viktiga funktioner {#key-capabilities}
 
