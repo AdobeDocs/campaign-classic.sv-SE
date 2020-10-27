@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 3%
@@ -242,7 +242,7 @@ När zonerna har definierats och **[!UICONTROL Security zone]** uppräkningen ha
 
 ### Standardport för Tomcat {#default-port-for-tomcat}
 
-När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program som krävs för din konfiguration, måste du ersätta 8080-porten med en kostnadsfri port (till exempel 8090). Om du vill ändra den redigerar du filen **server.xml** som har sparats i katalogen **/tomcat-7/conf** i installationsmappen för Adobe Campaign.
+När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program som krävs för din konfiguration, måste du ersätta 8080-porten med en kostnadsfri port (till exempel 8090). Om du vill ändra den redigerar du filen **server.xml** som har sparats i katalogen **/tomcat-8/conf** i installationsmappen för Adobe Campaign.
 
 Ändra sedan porten för JSP-reläsidorna. Det gör du genom att ändra filen **serverConf.xml** som sparats i katalogen **/conf** i installationskatalogen för Adobe Campaign. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
@@ -255,7 +255,7 @@ När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program
 
 ### Mappa en mapp i Tomcat {#mapping-a-folder-in-tomcat}
 
-Om du vill definiera kundspecifika inställningar kan du skapa en **user_contexts.xml** -fil i mappen **/tomcat-7/conf** , som även innehåller **filen contexts.xml** .
+Om du vill definiera kundspecifika inställningar kan du skapa en **user_contexts.xml** -fil i mappen **/tomcat-8/conf** , som även innehåller **filen contexts.xml** .
 
 Filen kommer att innehålla följande typ av information:
 
