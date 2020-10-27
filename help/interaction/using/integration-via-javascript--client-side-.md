@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -70,7 +70,7 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Taggen får inte vara självstängande `<script>` .
 
@@ -214,7 +214,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
    </srcSchema>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Varje element måste definieras två gånger. CDATA-tytelement (&quot;_jst&quot;) kan innehålla anpassningsfält.
    >
@@ -264,7 +264,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
    ![](assets/interaction_xmlmode_form_001.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Fälten i ( `<input>`)-formuläret måste peka på de CDATA-tytelement som definieras i det skapade schemat.
 
