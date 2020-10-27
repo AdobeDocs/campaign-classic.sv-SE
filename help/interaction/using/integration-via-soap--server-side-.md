@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 4%
 
 ---
 
 
-# Integrering via SOAP (serversida){#integration-via-soap-server-side}
+# Integrering via SOAP (server-side){#integration-via-soap-server-side}
 
 SOAP-webbtjänster för erbjudandehantering skiljer sig från dem som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
 
