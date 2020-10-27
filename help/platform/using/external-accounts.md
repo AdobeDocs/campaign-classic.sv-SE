@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 55e87d5453565a12048d63dd654c09596260f1cc
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -113,8 +113,8 @@ Följande kanaler kan konfigureras:
 * [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS-kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
-* [Android-kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
+* [iOS-kanal](../../delivery/using/configuring-the-mobile-application.md)
+* [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
 ## Externt FTP-konto {#ftp-external-account}
 
@@ -382,7 +382,7 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
 
 ![](assets/ext_account_3.png)
 
