@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 1%
 
 ---
@@ -305,10 +305,10 @@ I det här skedet måste IIS-servern stoppas. Se [servicestopp](#service-stop).
 
 1. Kör skriptet **iis_neolane_setup.vbs** så att resurserna som används av Adobe Campaign-servern automatiskt konfigureras på den virtuella katalog som skapades tidigare.
 
-   * Den här filen finns i **`[Adobe Campaign v7]`\tomcat-7\conf file**, där **`[Adobe Campaign v7]`** finns åtkomstsökvägen till Adobe Campaign installationskatalog. Kommandot för att köra skriptet är följande (för administratörer):
+   * Den här filen finns i katalogen **`[Adobe Campaign v7]`\conf** , där **`[Adobe Campaign v7]`** är åtkomstsökvägen till Adobe Campaign installationskatalog. Kommandot för att köra skriptet är följande (för administratörer):
 
       ```
-      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\tomcat-7\conf
+      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
       cscript iis_neolane_setup.vbs
       ```
 
