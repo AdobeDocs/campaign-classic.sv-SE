@@ -10,27 +10,31 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 16%
+source-wordcount: '543'
+ht-degree: 13%
 
 ---
 
 
 # Kompatibilitetsmatris{#compatibility-matrix}
 
-I det här dokumentet visas alla system och komponenter som stöds för den senaste versionen av **Adobe Campaign Classic (v6.11 och v7)**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+I det här dokumentet visas alla system och komponenter som stöds för [den senaste versionen](../../rn/using/latest-release.md) av **Adobe Campaign Classic**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+
+Som Gold Standard-användare kan du läsa
 
 ## Viktiga anteckningar{#important-notes}
 
-Den här matrisen uppdateras regelbundet med nya objekt som stöds och borttagna objekt.
-
 Om inget annat anges stöds alla mindre releaser.
 
-Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+I den [senaste versionen](../../rn/using/latest-release.md)är Adobe Campaign Classic kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
 Mer information om borttagna objekt finns på [den här sidan](../../rn/using/deprecated-features.md).
+
+>[!CAUTION]
+>
+>Den här matrisen uppdateras regelbundet med nya objekt som stöds och borttagna objekt.
 
 ## Operating Systems{#OperatingSystems}
 
@@ -39,20 +43,22 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8,x (64 bitar)</p>
 <p>7.x (64 bitar)</p>
 </td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>8 (64 bitar)</p>
-<p>9 (64 bitar)</p>
 <p>10 (64 bitar)</p>
+<p>9 (64 bitar)</p>
+<p>8 (64 bitar)</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
+<p>8,x (64 bitar)</p>
 <p>7.x (64 bitar)</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.</p>
 </td>
@@ -60,9 +66,9 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2012</p>
-<p>2012 R2</p>
 <p>2016</p>
+<p>2012 R2</p>
+<p>2012</p>
 </td>
 </tr>
 </tbody>
@@ -75,9 +81,9 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>8.0 i Windows Server 2012 - Windows 8</p>
-<p>8.5 i Windows Server 2012 R2</p>
 <p>10.0 i Windows Server 2016</p>
+<p>8.5 i Windows Server 2012 R2</p>
+<p>8.0 i Windows Server 2012 - Windows 8</p>
 </td>
 </tr>
 <tr>
@@ -96,8 +102,9 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr>
 <td>Java Development Kit (JDK)</td>
 <td>
-<p>8</p>
+<p>11</p>
 <p>9</p>
+<p>8</p>
 <p>Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för OpenJDK.</p>
 </td>
 </tr>
@@ -116,56 +123,43 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 </tbody>
 </table>
 
-## RDBMS-drivrutiner{#RDBMSdrivers}
-
-Följande RDBMS-drivrutiner stöds:
-
-* Oracle SQL*Net 11
-
-* Oracle SQL*Net 12
-
-* PostgreSQL (libpq)
-
-* SQLServer
-
-* DB2 (ODBC-drivrutin)
-
+## RDBMS-servrar{#RDBMSservers}
 
 >[!NOTE]
 >
 >RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
-
-## RDBMS-servrar{#RDBMSservers}
 
 <table>
 <tbody>
 <tr>
 <td>Oracle</td>
 <td>
-<p>11g R2</p>
-<p>12c</p>
-<p>18c</p>
 <p>19c</p>
+<p>18c</p>
+<p>12c</p>
+<p>11g R2</p>
 </td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>9.4.x</p>
-<p>9.5.x</p>
-<p>9.6.x</p>
-<p>10.x</p>
+<p>12.x</p>
 <p>11.x</p>
+<p>10.x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 <p>Obs! Du kan också använda Amazon RDS för PostgreSQL med de versioner som anges ovan.</p>
 </td>
 </tr>
 <tr>
 <td>SQL Server</td>
 <td>
-<p>2012 - SP1 och SP2</p>
-<p>2014</p>
-<p>2016</p>
+<p>2019</p>
 <p>2017</p>
+<p>2016</p>
+<p>2014</p>
+<p>2012 - SP1 och SP2</p>
 <p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Läs mer</a>.</p>
 </td>
 </tr>
@@ -189,8 +183,8 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>SFDC API</td>
 <td>
-<p>API-version 15</p>
 <p>API version 21</p>
+<p>API-version 15</p>
 </td>
 </tr>
 <tr><td>API för Oracle On Demand</td>
@@ -225,27 +219,29 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>Oracle</td>
 <td>
-<p>11g</p>
-<p>12c</p>
 <p>18c</p>
+<p>12c</p>
+<p>11g</p>
 </td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>9.4.x</p>
-<p>9.5.x</p>
-<p>9.6.x</p>
-<p>10.x</p>
+<p>12.x</p>
 <p>11.x</p>
+<p>10.x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2012 SP1 och SP2</p>
-<p>2014</p>
-<p>2016</p>
+<p>2019</p>
 <p>2017</p>
+<p>2016</p>
+<p>2014</p>
+<p>2012 SP1 och SP2</p>
 </td>
 </tr>
 <tr><td>MySQL</td>
@@ -256,10 +252,10 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>Teradata</td>
 <td>
-<p>15.0</p>
-<p>15.10</p>
-<p>16</p>
 <p>16.20</p>
+<p>16</p>
+<p>15.10</p>
+<p>15.0</p>
 </td>
 </tr>
 <tr>
@@ -302,8 +298,8 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2012</p>
 <p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
@@ -323,20 +319,14 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>Android</td>
 <td>
-<p>7.x</p>
-<p>8.x</p>
-<p>9.0</p>
+<p>7.x, 8.x, 9.0</p>
 <p>med mobil SDK build 1.0.27.</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9</p>
-<p>iOS 10</p>
-<p>iOS 11</p>
-<p>iOS 12</p>
-<p>iOS 13</p>
+<p>iOS 9-14</p>
 <p>med mobil SDK build 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
 </td>
 </tr>
@@ -345,28 +335,13 @@ Följande RDBMS-drivrutiner stöds:
 
 ## Webbläsare{#Browsers}
 
-Version 11 av Internet Explorer stöds.
+Den senaste versionen stöds i följande webbläsare: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
 
-Den senaste versionen stöds i följande webbläsare:
-
-* Microsoft Edge
-
-* Firefox
-
-* Krom
-
-* Safari
-
-## Experience Cloud-integreringar{#ExperienceCloudintegrations}
-
-Om du har integrerat med lösningar från Adobe finns mer information i det här [avsnittet](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
+Internet Explorer 11 stöds.
 
 ## Mer som detta{#Morelikethis}
 
-* [Versionsinformation om Campaign Classic](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html)
-* [Installationshandbok](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [Föråldrade funktioner och system](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
+* [Versionsinformation om Campaign Classic](../../rn/using/latest-release.md)
+* [Installationshandbok](../../installation/using/general-architecture.md)
+* [Föråldrade funktioner och system](../../rn/using/deprecated-features.md)
 * [Uppgraderingsprocedur](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
-* [Kompatibilitetsmatris för Campaign Classic för version 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html)
-* [Kompatibilitetsmatris för Campaign Classic för version 19.1](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-1.html)
-
