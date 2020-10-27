@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1670'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Så här gör du:
 
 1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. Se [Analysera leveransen](#analyzing-the-delivery).
 
-   De regler som tillämpas under analysen presenteras i [detta avsnitt](#validation-process-with-typologies) . De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
+   De regler som tillämpas under analysen presenteras i [detta avsnitt](#validation-process-with-typologies). De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode) .
 
 1. **Skicka korrektur**: I det här steget kan du godkänna innehåll, URL:er, anpassningsfält osv. Se [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
