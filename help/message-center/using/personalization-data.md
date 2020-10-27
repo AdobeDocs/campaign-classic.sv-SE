@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 2cd8a320-37e8-410a-b71b-0c13c8e15482
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 # Personaliseringsdata{#personalization-data}
 
-Det går att använda data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Den här funktionen används för att generera en förhandsgranskning eller skicka ett korrektur. Om du installerar modulen **Leverans** kan du med den här informationen visa en återgivning av meddelanden för olika leverantörer av Internetåtkomst (**inkorgsåtergivning**: Mer information finns i [det här avsnittet](../../delivery/using/about-deliverability.md)).
+Det går att använda data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Den här funktionen används för att generera en förhandsgranskning eller skicka ett korrektur. Om du installerar modulen **Leverans** kan du med den här informationen visa en återgivning av meddelanden för olika leverantörer av Internetåtkomst (**inkorgsåtergivning**: Mer information finns i [det här avsnittet](../../delivery/using/inbox-rendering.md)).
 
 Syftet med dessa data är att testa dina meddelanden innan de levereras. Dessa meddelanden sammanfaller inte med faktiska data som ska bearbetas av meddelandecentret. XML-strukturen måste dock vara identisk med den för händelsen som lagras i körningsinstansen, vilket visas nedan.
 
@@ -34,4 +34,3 @@ Med den här informationen kan du anpassa meddelandeinnehåll med personaliserin
 1. I händelseinnehållet anger du testinformationen i XML-format.
 
    ![](assets/messagecenter_create_custo_001.png)
-
