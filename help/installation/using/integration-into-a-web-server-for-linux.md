@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -74,7 +74,7 @@ Använd följande steg:
 1. Skapa filen **nlsrv.conf** i **/etc/apache2/mods-available** med följande kommando:
 
    ```
-   ln -s /usr/local/[INSTALL]/nl6/tomcat-7/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
+   ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
    ```
 
 1. Aktivera den här modulen med följande kommando:
@@ -163,7 +163,7 @@ Använd följande steg:
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
-   Include /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
+   Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
 1. För **RHEL7**:
