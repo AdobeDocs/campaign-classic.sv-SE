@@ -12,15 +12,25 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
 
 
-# Utlösa händelser {#events}
+# Konfigurera händelser för anpassad implementering {#events}
+
+Delar av den här konfigurationen är en anpassad utveckling som kräver följande:
+
+* Arbetskunskaper om JSON-, XML- och Javascript-parsning i Adobe Campaign.
+* Arbetskunskaper i API:erna för QueryDef och Writer.
+* Aktuella krypterings- och autentiseringsfunktioner med privata nycklar.
+
+Eftersom det krävs tekniska kunskaper för att redigera JS-koden bör du inte försöka göra det utan rätt förståelse.
+
+Ytterligare bearbetning av händelser görs som en del av ACX-paketet som tillhandahålls utanför standardimplementeringen. Mottagna händelser bearbetas omedelbart med JavaScript-kod. Den sparas i en databastabell utan vidare bearbetning i realtid. Utlösarna används för målgruppsanpassning av ett kampanjarbetsflöde som skickar e-postmeddelanden. Kampanjen har konfigurerats så att den kund som har utlöst händelsen får ett e-postmeddelande.
 
 ## Bearbeta händelser i JavaScript {#events-javascript}
 
@@ -48,16 +58,16 @@ Den ska returnera som
 <undefined/>
 ```
 
-Starta om [!DNL pipelined] när du har redigerat JS.
+Du bör starta om [!DNL pipelined] när du har redigerat JS.
 
 ### Utlös dataformat {#trigger-format}
 
-Data skickas [!DNL trigger] till JS-funktionen. Det är i XML-format.
+Data skickas [!DNL trigger] till JS-funktionen i XML-format.
 
 * Attributet **[!UICONTROL @triggerId]** innehåller namnet på [!DNL trigger].
-* Elementet **enrichments** i JSON-format innehåller data som genereras av Analytics och är kopplat till utlösaren.
+* Elementet **enrichments** i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
 * **[!UICONTROL @offset]** är pekaren till meddelandet. Den anger ordningen för meddelandet i kön.
-* **[!UICONTROL @partitio]**n är en meddelandebehållare i kön. Förskjutningen är relativ till en partition. <br>Det finns ungefär 15 partitioner i kön.
+* **[!UICONTROL @partition]** är en behållare med meddelanden i kön. Förskjutningen är relativ till en partition. <br>Det finns ungefär 15 partitioner i kön.
 
 Exempel:
 
@@ -68,18 +78,18 @@ Exempel:
  </trigger>
 ```
 
-### Dataformat för berikning {#enrichment-format}
+### Berikning av dataformat {#enrichment-format}
 
 >[!NOTE]
 >
 >Det är ett specifikt exempel från olika möjliga implementeringar.
 
-Innehållet definieras i Analytics för varje utlösare. Det är i JSON-format.
+Innehållet definieras i JSON-format i Adobe Analytics för varje utlösare.
 I en utlösare av typen LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** kan innehålla det Shopper-ID som används för att stämma av mot Campaign-mottagare. Det är i strängformat. <br>Den måste avstämas för att hitta Shopper ID, som är primärnyckeln.
+* **[!UICONTROL eVar01]** kan innehålla Shopper-ID:t i strängformat, som används för att stämma av mot Adobe Campaign-mottagare. <br>Den måste avstämas för att hitta Shopper ID, som är primärnyckeln.
 
-* **[!UICONTROL timeGMT]** kan innehålla tidpunkten för utlösaren på Analytics-sidan. Det är i UTC Epoch-format (sekunder sedan 01/01/1970 UTC).
+* **[!UICONTROL timeGMT]** kan innehålla tiden för utlösaren på Adobe Analytics-sidan i UTC Epoch-format (sekunder sedan 01/01/1970 UTC).
 
 Exempel:
 
@@ -105,7 +115,7 @@ Exempel:
  }
 ```
 
-### Ordning för händelsebearbetning {#order-events}
+### Bearbetningsordning för händelser{#order-events}
 
 Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL pipelined] bearbetar en egen partition.
 
@@ -113,16 +123,16 @@ Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL p
 
 Den här pekaren är specifik för varje förekomst och varje konsument. När många instanser använder samma pipeline med olika konsumenter får de därför alla meddelanden och i samma ordning.
 
-Parametern &quot;Consumer&quot; i pipeline-alternativet identifierar den anropande instansen.
+Pipeline-alternativets **konsumentparameter** identifierar den anropande instansen.
 
 Det finns för närvarande inget sätt att ha olika köer för olika miljöer som&quot;staging&quot; eller&quot;dev&quot;.
 
 ### Loggning och felhantering {#logging-error-handling}
 
-Loggar som logInfo() dirigeras till [!DNL pipelined] loggen. Fel som logError() skrivs till [!DNL pipelined] loggen och gör att händelsen placeras i en ny försökskö. Kontrollera den rörliga loggen.
+Loggar som logInfo() dirigeras till [!DNL pipelined] loggen. Fel som logError() skrivs till [!DNL pipelined] loggen och gör att händelsen placeras i en ny försökskö. I det här fallet bör du kontrollera loggen i pipeline.
 Felmeddelanden provas flera gånger under den varaktighet som angetts i [!DNL pipelined] alternativen.
 
-För felsökning och övervakning skrivs alla utlösande data in i utlösartabellen. Det finns i datafältet i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
+För felsökning och övervakning skrivs alla utlösande data i utlösartabellen i fältet&quot;data&quot; i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
 
 ### Tolka data {#data-parsing}
 
@@ -172,13 +182,13 @@ function processPipelineMessage(xmlTrigger)
  data = {xmlTrigger.toXMLString()}
  />
  xtk.session.Write(event)
- return <undef/>; 
+ return <undef/>;
  }
 ```
 
 ### Begränsningar {#constraints}
 
-Prestanda för den här koden måste vara optimala eftersom den körs med höga frekvenser. Det finns potentiella negativa effekter för andra marknadsföringsaktiviteter. Speciellt om mer än en miljon utlöser händelser per timme på marknadsföringsservern. Eller om den inte är rätt inställd.
+Prestanda för denna kod måste vara optimala eftersom den körs med höga frekvenser och kan orsaka potentiella negativa effekter för andra marknadsföringsaktiviteter. Speciellt om mer än en miljon utlöser händelser per timme på marknadsföringsservern eller om det inte är korrekt justerat.
 
 Kontexten för detta JavaScript är begränsad. Alla funktioner i API:t är inte tillgängliga. getOption() eller getCurrentDate() fungerar till exempel inte.
 
@@ -223,20 +233,20 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 
 ### Avstämningsarbetsflöde {#reconciliation-workflow}
 
-Avstämning är processen att matcha kunden från Analytics med Campaign-databasen. Kriterierna för matchning kan till exempel vara shopper_id.
+Avstämning är processen att matcha kunden från Adobe Analytics med Adobe Campaign-databasen. Kriterierna för matchning kan till exempel vara shopper_id.
 
 Av prestandaskäl måste matchningen göras i gruppläge av ett arbetsflöde.
 Frekvensen måste anges till 15 minuter för att arbetsbelastningen ska optimeras. Därför är fördröjningen mellan en mottagning i Adobe Campaign och dess bearbetning i ett marknadsföringsarbetsflöde upp till 15 minuter.
 
 ### Alternativ för enhetsavstämning i JavaScript {#options-unit-reconciliation}
 
-Teoretiskt sett är det möjligt att köra avstämningsfrågan för varje utlösare i JavaScript. Den har högre prestandapåverkan och ger snabbare resultat. Det kan behövas för särskilda användningsfall när reaktivitet behövs.
+Det går att köra avstämningsfrågan för varje utlösare i JavaScript. Den har högre prestandapåverkan och ger snabbare resultat. Det kan behövas för särskilda användningsfall när reaktivitet behövs.
 
-Det kan vara svårt att göra det om inget index anges för shopper_id. Om villkoren finns på en separat databasserver än marknadsföringsservern, används en databaslänk, vilket har dålig prestanda.
+Det kan vara svårt att implementera om inget index anges för shopper_id. Om villkoren finns på en separat databasserver än marknadsföringsservern, används en databaslänk, vilket har dålig prestanda.
 
 ### Rensa arbetsflöde {#purge-workflow}
 
-Utlösare bearbetas inom en timme så det finns ingen anledning att behålla dem länge. Volymen kan vara cirka 1 miljon utlösare per timme. Det förklarar varför ett rensningsarbetsflöde måste införas. Rensa tar bort alla utlösare som är äldre än tre dagar och körs en gång om dagen.
+Utlösare bearbetas inom en timme. Volymen kan vara cirka 1 miljon utlösare per timme. Det förklarar varför ett rensningsarbetsflöde måste införas. Tömningen körs en gång per dag och alla utlösare som är äldre än tre dagar tas bort.
 
 ### Arbetsflöde för kampanj {#campaign-workflow}
 
