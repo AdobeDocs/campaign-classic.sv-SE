@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 4%
 
 ---
@@ -46,11 +46,11 @@ Om du vill skapa ytterligare en kategori gör du så här:
 
    Därefter kan du, efter behov,
 
-   * tilldela berättigandedatum från **[!UICONTROL Eligibility]** fliken.
+   * Tilldela berättigandedatum från **[!UICONTROL Eligibility]** fliken.
 
       ![](assets/offer_cat_create_004.png)
 
-   * Ange nyckelord som kan användas för att välja erbjudanden inom denna kategori, med hjälp av **[!UICONTROL Themes]** fältet.
+   * Ange nyckelord som kan användas för att välja erbjudanden i den här kategorin med hjälp av **[!UICONTROL Themes]** fältet.
 
       ![](assets/offer_cat_create_005.png)
 
@@ -58,7 +58,7 @@ Om du vill skapa ytterligare en kategori gör du så här:
       >
       >När du anropar erbjudandemotorn väljs bara den del av katalogen där teman eller kategorierna matchar parametrarna.
 
-   * Du kan tillfälligt &quot;öka&quot; en kategoris vikt under en viss period via **[!UICONTROL Multiplier weight]** fältet.
+   * Tillfälligt&quot;öka&quot; erbjudandevikten för en kategori under en viss period via **[!UICONTROL Multiplier weight]** fältet.
 
       ![](assets/offer_cat_create_006.png)
 
