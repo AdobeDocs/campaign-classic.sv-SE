@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Vi har skapat ett webbprogram som består av följande element för att återska
 
 ## Hur får jag tag i fläktdata? {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Följ konfigurationsstegen som beskrivs i [Skapa ett Facebook-program](../../social/using/creating-a-facebook-application.md).
 
@@ -250,7 +250,7 @@ Om profilen inte finns i databasen och Facebook-användarens e-postadress har sa
 
 1. I **[!UICONTROL Mapping]** fältet väljer du det schema som du vill utföra avstämningen på.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Se till att fälten på **[!UICONTROL Social networks]** fliken anges korrekt i leveransmappningen. Leveransmappningar nås via **[!UICONTROL Administration > Campaign management > Target mappings]** noden.
 
