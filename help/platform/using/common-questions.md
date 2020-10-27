@@ -1,7 +1,6 @@
 ---
 title: Vanliga frågor
-seo-title: Vanliga frågor
-description: Vanliga frågor och svar om Campaign Classic
+description: Adobe Campaign Classic FAQ
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -11,17 +10,23 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 98%
+source-wordcount: '539'
+ht-degree: 87%
 
 ---
 
 
 # Vanliga frågor{#common-questions}
 
-Behöver du hjälp eftersom du arbetar med Campaign Classic? Läs de tio vanligaste frågorna nedan samt andra vanliga frågor och svar på den sidan. Du kan också [titta på videor med självstudiekurser](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html) och läsa [Starthandböcker](../../platform/using/tutorials.md#step-by-step-guides) för Campaign för att lära dig de viktigaste funktionerna. Hittar du inte svaret? [Fråga communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign).
+Behöver du hjälp eftersom du arbetar med Campaign Classic? Läs de tio vanligaste frågorna nedan samt andra vanliga frågor och svar på den sidan. Du kan även:
+
+* [Titta på självstudiekurser](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html)
+* [Bläddra bland självhjälpsalternativ](../../platform/using/tutorials.md#how-to-videos)
+* [Läs avsnittet Komma igång och användningsexempel](../../platform/using/tutorials.md#step-by-step-guides)
+* Hittar du inte svaret? [Fråga experten](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* Behöver du support? [Mer information finns i Campaign-hjälp och -supportalternativ](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 
 ## 1. Hur uppgraderar jag Campaign till den senaste versionen? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -29,7 +34,7 @@ Adobe Campaign Classic använder en rad olika teknologier för att leverera vär
 
 Om du använder Adobe Managed Services kan du dra nytta av Gold Standard-uppgraderingen för Campaign. Mer information om detta finns i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
-[Läs den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) och lär dig hur du uppdaterar din miljö samt läs [vanliga frågor](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html) om det här specifika ämnet.
+[Läs det här avsnittet](../../production/using/build-upgrade.md) för att lära dig hur du uppdaterar din miljö och läser [Vanliga frågor](../../platform/using/faq-build-upgrade.md) om det här specifika ämnet.
 
 ## 2. Vad är arbetsflödet för databasrensning? {#what-is-the-database-cleanup-workflow-}
 
