@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 91%
+source-wordcount: '2148'
+ht-degree: 90%
 
 ---
 
@@ -23,17 +23,19 @@ ht-degree: 91%
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
-   + [Gold Standard](rn/using/gold-standard.md)
+   + Gold Standard Release {#gs-release}
+      + [Versionsinformation om Gold Standard](rn/using/gold-standard.md)
+      + [Standardkompatibilitetsmatris för guld](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
+      + [Version 20.2](rn/using/release--20-2.md)
       + [Version 20.1](rn/using/release--20-1.md)
       + [Version 19.2](rn/using/release--19-2.md)
       + [Version 19.1](rn/using/release--19-1.md)
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
-   + Föråldrade funktioner och kompatibilitet {#deprecated-compatibility}
-      + [Inaktuella funktioner](rn/using/deprecated-features.md)
-      + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
+   + [Inaktuella funktioner](rn/using/deprecated-features.md)
+   + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}
    + Komma igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -121,7 +123,10 @@ ht-degree: 91%
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
       + [Integrera Campaign SDK i den mobila applikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + [Konfigurera den mobila applikationen i Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
+      + Konfigurera mobilprogrammet{#configure-the-mobile-app}
+         + [Kom igång med appkonfigurationen](delivery/using/get-started-app-config.md)
+         + [Konfigurationssteg för iOS](delivery/using/configuring-the-mobile-application.md)
+         + [Konfigurationssteg för Android](delivery/using/configuring-the-mobile-application-android.md)
       + [Skapa meddelanden](delivery/using/creating-notifications.md)
       + [Felsökning](delivery/using/troubleshooting.md)
    + Skicka direktutskick {#sending-direct-mail}
@@ -336,8 +341,8 @@ ht-degree: 91%
    + Utlösare i Experience Cloud{#experience-triggers}
       + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
-      + [Pipelinealternativet NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [Utlösa händelser](integrations/using/events.md)
+      + [Konfigurera Adobe IO för Adobe Experience Cloud-utlösare](integrations/using/configuring-adobe-io.md)
+      + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
