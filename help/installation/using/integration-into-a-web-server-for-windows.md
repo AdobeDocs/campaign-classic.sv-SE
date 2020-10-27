@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: a4f2ae0e-e631-4ab6-934e-8298e4ce6f2c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Använd följande konfigurationssteg:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. Med ett **VBS** -skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Starta programmet genom att dubbelklicka på filen **is_neolane_setup.vbs** som finns i `[INSTALL]\tomcat-7\conf` mappen, där `[INSTALL]` sökvägen till Adobe Campaign-installationsmappen finns.
+1. Med ett **VBS** -skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Starta programmet genom att dubbelklicka på filen **is_neolane_setup.vbs** som finns i `[INSTALL]\conf` mappen, där `[INSTALL]` sökvägen till Adobe Campaign-installationsmappen finns.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
