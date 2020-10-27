@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -209,10 +209,10 @@ Följande tjänster måste startas om:
 
 Hämta och kopiera filen på den dator där Adobe Campaign programserver är installerad (nlserverweb):
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    &quot;
-    Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
-    &quot;
 
 Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar användarna om att det finns en ny uppdatering och som ger dem möjlighet att ladda ned och installera den.
 
@@ -344,7 +344,7 @@ Det finns tre alternativ för att lösa konflikter: **Acceptera den nya versione
 * Objektet kommer inte att uppgraderas
 * Långsiktiga effekter: versionsinkompatibiliteter, kan kunden inte utnyttja buggfixar.
 
->[!CAUTION]
+>[!IMPORTANT]
 >Vi rekommenderar att du löser konflikter.
 
 
@@ -408,7 +408,7 @@ Så här utför du en komplex sammanfogning:
 1. Utför i testmiljö
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >Det krävs utvecklingskunskaper för att utföra komplexa sammanfogningar.
 
 
