@@ -1,8 +1,6 @@
 ---
-title: Installera standardpaketet för Campaign Classic
-seo-title: Installera standardpaketet för Campaign Classic
-description: Installera standardpaketet för Campaign Classic
-seo-description: null
+title: Installera inbyggda Campaign Classic-paket
+description: Lär dig hur du installerar inbyggda Campaign-paket
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 6%
+source-wordcount: '1154'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +50,7 @@ Paketen är nu installerade.
 
 ### Lista över färdiga paket {#list-of-standard-packages}
 
-I följande tabell visas alla standardpaket med deras beskrivning, instanstypen som de kan installeras på (Marknadsföring, Mid, osv.) och ytterligare information.
+I följande tabell visas alla inbyggda Campaign-paket.
 
 <table> 
  <thead> 
@@ -80,17 +78,17 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
   </tr> 
   <tr> 
    <td> Erbjudandemotor (interaktion)<br /> </td> 
-   <td> Svarar i realtid under en interaktion med en viss kontakt (en kund eller ett visst mål) genom att göra dem till ett eller flera anpassade erbjudanden.  Valfritt. <a href="../../interaction/using/interaction-and-offer-management.md">Läs mer</a> <br /> </td> 
+   <td> Svarar i realtid under en interaktion med en viss kontakt (en kund eller ett visst mål) genom att göra dem till ett eller flera anpassade erbjudanden.  Valfritt. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
    <td> Kontroll över erbjudandemotorn med körningsinstansen. Valfritt.<br /> </td> 
-   <td> </td> 
+   <td> Paket som ska installeras på kontrollinstansen för erbjudandemotorn (interaktion). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Läs mer</a> </td> 
    <td> Marknadsföring<br /> </td>  
   </tr> 
   <tr> 
    <td> Erbjud motor för körningsinstanser. Valfritt.<br /> </td> 
-   <td> </td> 
+   <td> Paket som ska installeras på körningsinstanser för erbjudandemotorn (interaktion). <a href="../../interaction/using/distributed-architectures.md">Läs mer</a> </td> 
    <td> Mid, körning <br /> </td>  
   </tr> 
   <!--tr> 
@@ -200,13 +198,13 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
-   <td> Integrering av Adobe Marketing Cloud delade målgrupper<br /> </td> 
+   <td> Integrering av Adobe Experience Cloud delade målgrupper<br /> </td> 
    <td> Gör att ni kan utbyta och dela målgrupper/segment med Adobe Experience Cloud lösningar och bastjänster. Kräver IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integrering med Adobe Marketing Cloud<br /> </td> 
-   <td> Används för att importera och exportera målgrupper/segment från olika Adobe Marketing Cloud-lösningar till Adobe Campaign. Valfritt. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Läs mer</a> </td> 
+   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> Används för att importera och exportera målgrupper/segment från olika Adobe Experience Cloud-lösningar till Adobe Campaign. Valfritt. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Läs mer</a> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
@@ -223,6 +221,11 @@ I följande tabell visas alla standardpaket med deras beskrivning, instanstypen 
    <td> Plattform för mid-sourcing<br /> </td> 
    <td> Denna konfiguration är en optimal mellanlösning mellan en värdkonfiguration (ASP) och internalisering. Utomvända körningskomponenter utförs på en"server med mellanleverantörer" på Adobe Campaign. Valfritt. <a href="../../installation/using/mid-sourcing-server.md">Läs mer</a> <br /> </td> 
    <td> Mid-sourcing </td> 
+  </tr> 
+  <tr> 
+   <td> Stöd för AMP<br /> </td> 
+   <td> Gör att du kan använda den nya interaktiva AMP för e-postformat och skicka dynamiska e-postmeddelanden. Valfritt. <a href="../../delivery/using/defining-interactive-content.md">Läs mer</a> <br /> </td> 
+   <td> Alla </td> 
   </tr> 
   <tr> 
    <td> ACS-koppling<br /> </td> 
