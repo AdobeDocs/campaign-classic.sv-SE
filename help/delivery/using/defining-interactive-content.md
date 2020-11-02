@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Definiera interaktivt innehåll{#defining-interactive-content}
 
-Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) , som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
+Med Adobe Campaign kan du använda den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) , som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
-För närvarande kan du med AMP för e-post:
+Med AMP for Email kan man
 * Testa att leverera AMP-e-post till specifika adresser som är korrekt konfigurerade.
 * Leverera AMP-e-post till Gmail-, Outlook- eller Mail.ru-adresser efter registrering hos motsvarande leverantörer.
 
