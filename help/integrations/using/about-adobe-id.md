@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 31%
@@ -27,7 +27,7 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 * Säkrare policy för lösenordshantering.
 * Använda Federated ID-konton (extern ID-leverantör).
 
-Adobe IMS (Identity Management System) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
+Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
 >[!IMPORTANT]
 >
