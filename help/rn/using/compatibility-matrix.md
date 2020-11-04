@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 9cff35424b389d0cc6adb8ce0ec81d3258ffb6ba
+source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '543'
 ht-degree: 13%
 
 ---
@@ -195,9 +195,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API - lokal: 2007, 2015, 2016</p>
-<p>Soap API - online: 2015, 2016</p>
-<p>Webb-API - lokalt och online: 365, 2016, 2016 uppdatering 1</p>
+<p>Webb-API: Dynamics 365 On-Local and Online</p>
 </td>
 </tr>
 </tbody>
