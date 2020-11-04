@@ -10,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87c2ee675b77be0f24a2028e7dbbf0bd1b91d46e
+source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 85%
+source-wordcount: '1621'
+ht-degree: 84%
 
 ---
 
@@ -52,6 +52,8 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <ul>
    <li>Soap API - lokal: 2007, 2015, 2016</li>
    <li>Soap API - online: 2015, 2016</li>
+   <li>Webb-API - lokal Microsoft Dynamics CRM: 2016, 2016 uppdatering 1</li>
+   <li>Webb-API - Microsoft Dynamics CRM Online: 2016, 2016 uppdatering 1</li>
    </ul>
   <p><em>Måldatum för borttagning: 2021</em></p>
   </td>
