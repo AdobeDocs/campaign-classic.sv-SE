@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 84%
+source-wordcount: '283'
+ht-degree: 78%
 
 ---
 
@@ -17,15 +17,14 @@ ht-degree: 84%
 
 ## Nyheter
 
-* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> för APNs-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
+* **[Uppdatera integreringen](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
+
+* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APNs-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
 
 * **[Lägg till uttryckssymboler i meddelanden](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
-
-* **[Integritetsefterlevnad](https://helpx.adobe.com/se/campaign/kb/campaign-privacy.html)**<br/>
-Läs mer om hur Adobe Campaign kan hjälpa till med din integritetsefterlevnad
 
 * **[Spårningsfunktioner](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html)**<br/>
 Förstå spårningsfunktioner och -processer i Campaign
