@@ -1,8 +1,6 @@
 ---
-title: Konfigurera integreringen
-seo-title: Konfigurera integreringen
-description: Konfigurera integreringen
-seo-description: null
+title: Konfigurera pipeline
+description: Lär dig hur du konfigurerar pipeline
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: f3caef21a269cf57624a07bfe1b4bf1e241061a6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -32,17 +30,17 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 
 ## Förutsättningar {#prerequisites}
 
-För användning [!DNL Experience Cloud Triggers] i Campaign krävs:
+Kontrollera att du har:
 
-* Adobe Campaign 19.1.9 eller 20.3.1. och senare.
-* Analytics Standard-version.
+* en ny version av Adobe Campaign: 19.1.8- eller 20.2.1-byggen och senare,
+* Adobe Analytics Standard
 
-Nödvändiga konfigurationer är:
+Du behöver också:
 
 * Adobe I/O-projektautentisering
-* IMSOrgId, identifieraren för Experience Cloud-kunden med Adobe Analytics tillagd.
-* Provisioneringsteamet måste ha systemadministratörsbehörighet för kundens IMS-organisation
-* Konfiguration av utlösare i Adobe Analytics.
+* ett giltigt IMSOrgID, identifieraren för Experience Cloud-kunden med Adobe Analytics tillagd
+* en utvecklaråtkomst till IMS-organisationen
+* utlöser konfiguration som gjorts i Adobe Analytics
 
 ## Autentiserings- och konfigurationsfiler {#authentication-configuration}
 
