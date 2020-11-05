@@ -1,6 +1,6 @@
 ---
 title: Vanliga frågor
-description: Adobe Campaign Classic FAQ
+description: Vanliga frågor och svar om Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 87%
 
 Behöver du hjälp eftersom du arbetar med Campaign Classic? Läs de tio vanligaste frågorna nedan samt andra vanliga frågor och svar på den sidan. Du kan även:
 
-* [Titta på självstudiekurser](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html)
+* [Titta på självstudievideor](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html)
 * [Bläddra bland självhjälpsalternativ](../../platform/using/tutorials.md#how-to-videos)
-* [Läs avsnittet Komma igång och användningsexempel](../../platform/using/tutorials.md#step-by-step-guides)
+* [Läs avsnittet komma igång och användningsfall](../../platform/using/tutorials.md#step-by-step-guides)
 * Hittar du inte svaret? [Fråga experten](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* Behöver du support? [Mer information finns i Campaign-hjälp och -supportalternativ](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* Behöver du support? [Mer information finns i hjälpen och supportalternativen i Campaign](https://helpx.adobe.com/se/campaign/kb/ac-support.html#acc-support)
 
 ## 1. Hur uppgraderar jag Campaign till den senaste versionen? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -34,7 +34,7 @@ Adobe Campaign Classic använder en rad olika teknologier för att leverera vär
 
 Om du använder Adobe Managed Services kan du dra nytta av Gold Standard-uppgraderingen för Campaign. Mer information om detta finns i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
-[Läs det här avsnittet](../../production/using/build-upgrade.md) för att lära dig hur du uppdaterar din miljö och läser [Vanliga frågor](../../platform/using/faq-build-upgrade.md) om det här specifika ämnet.
+[Läs det här avsnittet](../../production/using/build-upgrade.md) för att lära dig hur du uppdaterar din miljö samt läs [vanliga frågor](../../platform/using/faq-build-upgrade.md) om det här specifika ämnet.
 
 ## 2. Vad är arbetsflödet för databasrensning? {#what-is-the-database-cleanup-workflow-}
 
@@ -72,7 +72,7 @@ Du kan se listan över alla system och komponenter som den senaste versionen av 
 
 Du kan komma åt den senaste versionsinformationen om Campaign Classic [på den här sidan](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
+## 9. Vilket är förfarnadet för domänkonfigurering? {#what-is-the-procedure-for-domain-delegation-}
 
 En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik (transaktionsmeddelanden och marknadsföringsinformation osv.).
 Adobe tar hänsyn till domännamnssystemet (DNS) för e-postleverans vilket innebär att klienten kan behålla sitt varumärkes stil genom att använda ett DNS-alias med sina domännamn. Adobe kan även självständigt implementera alla tekniska bästa praxis som gör att kunden kan optimera levererbarheten under e-postutskick.
