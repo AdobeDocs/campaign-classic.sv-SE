@@ -1,31 +1,31 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic Guide
-breadcrumb-title: Campaign Classic Guide
+user-guide-title: Guide om Adobe Campaign Classic
+breadcrumb-title: Guide om Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Utforma, planera, genomför, hantera och optimera flerkanalskampanjer som ger hög avkastning på marknadsföringsinvesteringar.
+user-guide-description: Utforma, planera, genomför, hantera och optimera marknadsföringskampanjer över flera kanaler som levererar hög avkastning på marknadsföringsinvesteringar.
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 90%
+source-wordcount: '2151'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic Guide {#using}
+# Guide om Adobe Campaign Classic {#using}
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
-   + Gold Standard Release {#gs-release}
+   + Gold Standard-version {#gs-release}
       + [Versionsinformation om Gold Standard](rn/using/gold-standard.md)
-      + [Standardkompatibilitetsmatris för guld](rn/using/compatibility-matrix-gs.md)
+      + [Kompatibilitetsmatris för Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
       + [Version 20.2](rn/using/release--20-2.md)
       + [Version 20.1](rn/using/release--20-1.md)
@@ -45,7 +45,7 @@ ht-degree: 90%
       + Vanliga frågor och svar {#faq}
          + [Vanliga frågor](platform/using/common-questions.md)
          + [Viktiga begrepp](platform/using/faq-key-concepts.md)
-         + [Uppgradering](platform/using/faq-build-upgrade.md)
+         + [Builduppgradering](platform/using/faq-build-upgrade.md)
          + [Publiker](platform/using/faq-audiences.md)
          + [Utforma meddelanden](platform/using/faq-designing.md)
          + [Skicka meddelanden](platform/using/faq-messages.md)
@@ -82,8 +82,8 @@ ht-degree: 90%
       + [Externa konton](platform/using/external-accounts.md)
    + Åtkomst till en extern databas (FDA){#accessing-external-database}
       + [Om FDA](platform/using/about-fda.md)
-      + [Konfigurera FDA-anslutningar](platform/using/specific-configuration-database.md)
-      + [Äldre anslutningar](platform/using/legacy-connectors.md)
+      + [Konfigurera FDA-kopplingar](platform/using/specific-configuration-database.md)
+      + [Äldre kopplingar](platform/using/legacy-connectors.md)
       + [Åtkomsträttigheter till fjärrdatabas](platform/using/remote-database-access-rights.md)
       + [Ansluta till databasen](platform/using/connecting-to-database.md)
       + [Skapa dataschemat](platform/using/creating-data-schema.md)
@@ -97,11 +97,11 @@ ht-degree: 90%
 + Skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
    + Bästa praxis för leverans {#delivery-bestpractices}
-      + [Lär dig god praxis](delivery/using/delivery-best-practices.md)
-      + [Optimera leveransen](delivery/using/optimize-delivery.md)
-      + [Använd mallar](delivery/using/use-templates.md)
+      + [Lär dig bästa praxis](delivery/using/delivery-best-practices.md)
+      + [Optimera leverans](delivery/using/optimize-delivery.md)
+      + [Använda mallar](delivery/using/use-templates.md)
       + [Skapa personaliserat innehåll](delivery/using/design-and-personalize.md)
-      + [Definiera rätt målgrupp](delivery/using/define-the-right-audience.md)
+      + [Definiera rätt publik](delivery/using/define-the-right-audience.md)
       + [Kontrollera före sändning](delivery/using/check-before-sending.md)
       + [Spåra och övervaka](delivery/using/track-and-monitor.md)
    + Viktiga steg när man skapar en leverans {#key-steps-when-creating-a-delivery}
@@ -123,8 +123,8 @@ ht-degree: 90%
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
       + [Integrera Campaign SDK i den mobila applikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + Konfigurera mobilprogrammet{#configure-the-mobile-app}
-         + [Kom igång med appkonfigurationen](delivery/using/get-started-app-config.md)
+      + Konfigurera den mobila applikationen{#configure-the-mobile-app}
+         + [Kom igång med konfigurationen av appen](delivery/using/get-started-app-config.md)
          + [Konfigurationssteg för iOS](delivery/using/configuring-the-mobile-application.md)
          + [Konfigurationssteg för Android](delivery/using/configuring-the-mobile-application-android.md)
       + [Skapa meddelanden](delivery/using/creating-notifications.md)
@@ -271,7 +271,7 @@ ht-degree: 90%
       + [Användningsfall: visa rapport gällande svar på en nätundersökning](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Utforma webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbprogram](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases--creating-overviews.md)
@@ -310,36 +310,36 @@ ht-degree: 90%
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Om integreringar i Campaign](integrations/using/about-campaign-integrations.md)
    + Dela publiker {#audience-sharing}
-      + [Dela målgrupper med [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Dela publik med [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Skicka begäran till Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Konfigurera integrering av delade målgrupper i [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Konfigurera integrering med delade publiker i [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Felsökning](integrations/using/troubleshooting.md)
       + [Importera och exportera publiker](integrations/using/importing-and-exporting-audiences.md)
    + Resursdelning {#asset-sharing}
       + [Dela resurser med [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Konfigurera åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+      + [Konfigurerar åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Infoga en delad resurs](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Om [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa [!DNL Experience Manager] ett nyhetsbrev](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett [!DNL Experience Manager] nyhetsbrev](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + Ansluta via ett Adobe ID {#connecting-via-an-adobe-id}
       + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Konfigurerar [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementering [!DNL IMS]](integrations/using/implementing-ims.md)
+      + [Konfigurera [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Implementera [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
    + ACS-koppling {#acs-connector}
-      + [[!DNL ACS Connector] principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] Principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
       + [Synkronisera publiker](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
       + [Felsöka [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Utlösare i Experience Cloud{#experience-triggers}
-      + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Kom igång med [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
       + [Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare](integrations/using/configuring-adobe-io.md)
       + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
@@ -439,7 +439,7 @@ ht-degree: 90%
          + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
          + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
-         + [Kvartalslistuppdatering med inkrementell fråga](workflow/using/quarterly-list-update.md)
+         + [Kvartalsvis listuppdatering med en inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Målinriktning {#designing-queries}
          + [Fråga mottagartabellen](workflow/using/querying-recipient-table.md)
          + [Fråga om leveransinformation](workflow/using/querying-delivery-information.md)
@@ -483,7 +483,7 @@ ht-degree: 90%
       + [Överföring till mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Plattform för mid-sourcing](workflow/using/mid-sourcing-platform.md)
 + Hantera erbjudanden {#managing-offers}
-   + Kom igång med Interaktion {#interaction-overview}
+   + Kom igång med interaktion {#interaction-overview}
       + [Interaktion och erbjudandehantering](interaction/using/interaction-and-offer-management.md)
       + [Ordlista](interaction/using/glossary.md)
       + [Bästa praxis för interaktion](interaction/using/interaction-best-practices.md)
@@ -586,11 +586,11 @@ ht-degree: 90%
    + Arkitekturprinciper {#architecture-and-hosting-models}
       + [Allmän arkitektur](installation/using/general-architecture.md)
       + Värdbaserade modeller{#hosting-models-lp}
-         + [Om värdmodeller](installation/using/hosting-models.md)
+         + [Om värdbaserade modeller](installation/using/hosting-models.md)
          + [Hybridmodell](installation/using/hybrid-model.md)
          + [Värdbaserad modell](installation/using/hosted-model.md)
          + [Funktionsmatris](installation/using/capability-matrix.md)
-   + Riktlinjer för distribution {#deployment-guidelines}
+   + Riktlinjer för driftsättning {#deployment-guidelines}
       + [Förhandskrav](installation/using/before-starting.md)
       + [Databasserver](installation/using/database.md)
       + [Programserver](installation/using/application-server.md)
@@ -631,7 +631,7 @@ ht-degree: 90%
       + [Server för mid-sourcing](installation/using/mid-sourcing-server.md)
       + [Interaktion – databuffert](installation/using/interaction---data-buffer.md)
    + Tillägg {#appendices}
-      + [Serverkonfigurationsfil](installation/using/the-server-configuration-file.md)
+      + [Fil för serverkonfiguration](installation/using/the-server-configuration-file.md)
       + [Nätverksslutpunkter i Campaign](installation/using/campaign-network-endpoints.md)
       + [Kommandorader](installation/using/command-lines.md)
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
