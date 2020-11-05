@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 6ac6145a38538f07b8080e503cd7750b19ed9621
+source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 78%
@@ -17,7 +17,7 @@ ht-degree: 78%
 
 ## Nyheter
 
-* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)med Adobe Experience Cloud Triggers)**<br/> Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
+* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)**<br/>av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
 
 * **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APNs-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
 
