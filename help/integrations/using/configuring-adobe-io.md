@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Om du använder en äldre version av Triggers-integrering via JWT-tokens eller autenticering måste **du gå till Adobe I/O enligt beskrivningen nedan**. Autentiseringslägena JWT och Auth är nu föråldrade. [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis)
+>Om du använder en äldre version av integreringen av utlösare via autentisering måste **du gå till Adobe I/O enligt beskrivningen nedan**. Det äldre autentiseringsläget för autentisering kommer att upphöra den 30 april 2021. [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
