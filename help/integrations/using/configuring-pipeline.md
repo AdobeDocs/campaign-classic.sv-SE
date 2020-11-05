@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '907'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ För användning [!DNL Experience Cloud Triggers] i Campaign krävs:
 
 Nödvändiga konfigurationer är:
 
-* Adobe IO-projektautentisering
+* Adobe I/O-projektautentisering
 * IMSOrgId, identifieraren för Experience Cloud-kunden med Adobe Analytics tillagd.
 * Provisioneringsteamet måste ha systemadministratörsbehörighet för kundens IMS-organisation
 * Konfiguration av utlösare i Adobe Analytics.
@@ -48,13 +48,13 @@ Nödvändiga konfigurationer är:
 
 Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud.
 Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare.
-Autentisering stöds för Marketing Cloud via Adobe IO-projekt.
+Autentisering stöds för Marketing Cloud via Adobe I/O-projekt.
 
-## Steg 1: Skapa/uppdatera Adobe IO-projekt {#creating-adobe-io-project}
+## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
-För kunder med värdtjänst kan du skapa en kundtjänstbiljett för att aktivera din organisation med Adobe IO Technical Account Tokens för integrering av utlösare.
+För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integreringen av utlösare.
 
-För On Premise-kunder, se sidan [Configuring Adobe IO for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe IO-autentiseringsuppgifterna.
+För On Premise-kunder, se sidan [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i inloggningsuppgifterna för Adobe.
 
 ## Steg 2: Konfigurerar alternativet för NmsPipeline_Config-pipeline {#configuring-nmspipeline}
 
