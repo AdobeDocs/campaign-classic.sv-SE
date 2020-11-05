@@ -10,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -47,11 +47,11 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Ersättning</strong></td>
   </tr>
   <tr>
-  <td>CRM-anslutningar<br></td>
-   <td><p>Från och med Campaign 20.3 har följande CRM-anslutningar tagits bort:</p>
+  <td>CRM-kopplingar<br></td>
+   <td><p>Från och med Campaign version 20.3 har följande CRM-kopplingar tagits bort:</p>
    <ul>
-   <li>Soap API - lokal: 2007, 2015, 2016</li>
-   <li>Soap API - online: 2015, 2016</li>
+   <li>Soap API – lokal: 2007, 2015 och 2016</li>
+   <li>Soap API – online: 2015 och 2016</li>
    <li>Webb-API - lokal Microsoft Dynamics CRM: 2016, 2016 uppdatering 1</li>
    <li>Webb-API - Microsoft Dynamics CRM Online: 2016, 2016 uppdatering 1</li>
    </ul>
@@ -59,29 +59,29 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </td>
  </tr>
   <tr>
-  <td>binär iOS-fil<br></td>
-  <td><p>Från och med Campaign 20.3 är den gamla binära kopplingen för iOS föråldrad.<p>
+  <td>Äldre binär iOS-fil<br></td>
+  <td><p>Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell.<p>
   <p> Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta.
-  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">Läs mer</a></p>
+  <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-http2.html">Läs mer</a></p>
   <p><em>Måldatum för borttagning: 2021</em></p>
   </td>
  </tr>
    <tr>
-  <td>Demdex domain<br></td>
-  <td><p> Från och med Campaign 20.3 är demodomänen som används för att importera och exportera målgrupper till Adobe Experience Cloud föråldrad.<p>
-  <p>Om du använder demodomänen för dina externa import-/exportkonton måste du anpassa implementeringen därefter. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
+  <td>Demdex-domän<br></td>
+  <td><p> Från och med Campaign version 20.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inaktuell.<p>
+  <p>Om du använder demdex-domänen för dina externa import-/exportkonton måste du anpassa implementeringen därefter. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
   <p><em>Måldatum för borttagning: 2021</em></p>
   </td>
   <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
-  <td><p> Från och med version 20.3 av Campaign 20.3 har autentisering av utlösarintegrering som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst av pipeline ändrats och flyttats till Adobe I/O. <p>
-  <p>Om du använder integreringen av utlösare måste du anpassa implementeringen efter detta. <a href="../../integrations/using/about-triggers.md">Läs mer</a></p> 
-  <p>Mer information om OAuth Authentication-avskrivning finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
-  <p><em>Datum för målborttagning: April 2021</em></p>
+  <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
+  <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
+  <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
+  <p><em>Måldatum för borttagning: april 2021</em></p>
   </td>
   </tr>
   <td>SMS-kopplingar<br></td>
-  <td><p> Från och med Campaign 20.2 har följande SMS-anslutningar tagits bort.<p>
+  <td><p> Från och med Campaign version 20.2 har följande SMS-kopplingar tagits bort.<p>
    <ul>
    <li>NetSize</li>
    <li>Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
@@ -98,7 +98,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
  </tr>
   <tr>  
    <td>Faxkanal<br></td>
-   <td><p>Faxkanalen är föråldrad från och med Campaign 20.2.</p> 
+   <td><p>Från och med Campaign version 20.2 är faxkanalen inaktuell.</p> 
    <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
    <p><em>Måldatum för borttagning: 2021</em></p></td>
   </tr>
@@ -117,7 +117,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   </tr> 
    <tr> 
    <td>Windows NT-autentisering<br></td>
-   <td><p>Från och med Campaign 20.3 har Windows NT-autentisering tagits bort från de tillgängliga autentiseringsmetoderna när en ny databas konfigureras med en Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Läs mer</a></p></td>
+   <td><p>Från och med Campaign version 20.3 har Windows NT-autentisering tagits bort från de tillgängliga autentiseringsmetoderna när en ny databas konfigureras med en Microsoft SQL-server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Läs mer</a></p></td>
   </tr>
    <tr> 
    <td>Filbaserad e-postarkivering<br></td>
@@ -165,7 +165,7 @@ Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen]
 
 ### Adobe Campaign version 20.2 {#compat-20-2-release}
 
-Från och med version 20.2 har äldre SMS-anslutningar tagits bort. Se avsnittet [Föråldrade funktioner](#deprecated-features)
+Från och med version 20.2 har äldre SMS-kopplingar blivit inaktuella. Se [avsnittet Inaktuella funktioner](#deprecated-features)
 
 ## Slut på kompatibilitet {#end-of-compatibility}
 
@@ -178,7 +178,7 @@ Från och med version 20.2 har äldre SMS-anslutningar tagits bort. Se avsnittet
 Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande system eftersom de har tagits bort av redigeraren. Kunder som kör klientkonsolen i Campaign på någon av dessa versioner måste uppgradera till den senaste versionen före måldatumet för borttagning. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 * Windows Server 2003, 2008 och 2008 R2
-* Windows 7, XP, Vista
+* Windows 7, XP och Vista
 
 >[!NOTE]
 >Från och med Campaign version 20.1 är klientkonsolen i Campaign Classic som körs med 32 bitar inte längre kompatibel med de senaste versionerna av Campaign. Du måste använda klientkonsolen med 64 bitar.
