@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2149'
 ht-degree: 90%
 
 ---
@@ -341,7 +341,7 @@ ht-degree: 90%
    + Utlösare i Experience Cloud{#experience-triggers}
       + [Om [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
-      + [Konfigurera Adobe IO för Adobe Experience Cloud-utlösare](integrations/using/configuring-adobe-io.md)
+      + [Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare](integrations/using/configuring-adobe-io.md)
       + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
