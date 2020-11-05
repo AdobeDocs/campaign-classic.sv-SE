@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
+source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
 workflow-type: tm+mt
-source-wordcount: '3882'
-ht-degree: 83%
+source-wordcount: '3905'
+ht-degree: 82%
 
 ---
 
@@ -40,6 +40,8 @@ Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/u
 
 Versionsinformation och kompatibilitetsmatris för Gold Standard finns nu i ett särskilt avsnitt.
 [Läs mer](../../rn/using/gold-standard.md#gs-10).
+
+Integreringen av utlösare som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst av pipeline har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/about-triggers.md)
 
 **Andra uppdateringar**
 
