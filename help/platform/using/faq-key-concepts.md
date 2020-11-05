@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Kontrollera [versions- och build-numret](../../platform/using/launching-adobe-ca
 
 ## Vilka är skillnaderna när man arbetar lokalt jämfört med i en värdhanterad miljö? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
+Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och vilka konfigurationer de har beror på [vilken typ av driftsättning](../../installation/using/hosting-models.md) din installation har: värdbaserad (hanterade tjänster), hybrid eller lokal.
 
 [Klicka här för att läsa mer](../../installation/using/capability-matrix.md).
 
@@ -65,7 +65,7 @@ Läs [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/campaign-priva
 
 Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan Campaign i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hur väljer jag publiken för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -85,7 +85,7 @@ Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas
 
 ## Hur skapar och skickar jag ett första e-postmeddelande? {#how-to-create-and-send-a-first-email-}
 
-[Klicka här för att läsa mer](../../delivery/using/about-email-channel.md).
+[Klicka här för att får reda på mer](../../delivery/using/about-email-channel.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
