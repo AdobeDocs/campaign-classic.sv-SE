@@ -1,8 +1,6 @@
 ---
-title: Konfigurera integreringen
-seo-title: Konfigurera integreringen
-description: Konfigurera integreringen
-seo-description: null
+title: Konfigurera integrering med Adobe Experience Manager
+description: Lär dig hur du konfigurerar Campaign-AEM-integrering
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 4%
+source-wordcount: '555'
+ht-degree: 2%
 
 ---
 
