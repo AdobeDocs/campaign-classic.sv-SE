@@ -13,22 +13,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
 
-# Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare {#configuring-adobe-io}
+# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+
+>[!CAUTION]
+>
+>Om du använder en äldre version av Triggers-integrering via JWT-tokens eller autenticering måste **du gå till Adobe I/O enligt beskrivningen nedan**. Autentiseringslägena JWT och Auth är nu föråldrade. [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis)
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
 Kontrollera att du har:
 
 * en ny version av Adobe Campaign: 19.1.8- eller 20.2.1-byggen och senare,
-* ett giltigt IMSOrgID: Organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som särskilt används för VisitorID-tjänsten och IMS Single-Sign On (SSO).
+* ett giltigt IMSOrgID: Organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO).
 * en utvecklare har tillgång till IMS-organisationen.
 
 >[!NOTE]
@@ -105,7 +109,3 @@ Om du vill uppdatera [!DNL pipelined] taggen måste du uppdatera autentiseringst
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
-
->[!NOTE]
->
->Om du använder den äldre versionen av Triggers Integration med äldre JWT-tokens bör du också lägga till Adobe I/O-API:t för [!DNL Adobe Analytics] information i det första steget för att automatiskt migrera till den nya utlösarautentiseringen.
