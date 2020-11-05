@@ -1,8 +1,6 @@
 ---
-title: Konfigurera Adobe IO för Adobe Experience Cloud-utlösare
-seo-title: Konfigurera Adobe IO för Adobe Experience Cloud-utlösare
-description: Konfigurera Adobe IO för Adobe Experience Cloud-utlösare
-seo-description: null
+title: Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare
+description: Lär dig hur du konfigurerar Adobe I/O för Adobe Experience Cloud-utlösare
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -15,25 +13,32 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 
-# Konfigurera Adobe IO för Adobe Experience Cloud-utlösare {#configuring-adobe-io}
+# Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare {#configuring-adobe-io}
 
-Nödvändiga konfigurationer är:
+## Förutsättningar {#adobe-io-prerequisites}
 
-* Adobe Campaign Classic bygger ACC-19.1.9 eller ACC-20.2.1 och senare.
-* ett giltigt IMSOrgID.
-* en utvecklare har tillgång till IMS-organisationen. Du måste begära behörighet som systemadministratör för IMS-organisationen för att följa proceduren som beskrivs på den här [sidan](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) för att ge åtkomst till alla produktprofiler.
+Kontrollera att du har:
 
-## Steg 1: Skapa/uppdatera Adobe IO-projekt {#creating-adobe-io-project}
+* en ny version av Adobe Campaign: 19.1.8- eller 20.2.1-byggen och senare,
+* ett giltigt IMSOrgID: Organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som särskilt används för VisitorID-tjänsten och IMS Single-Sign On (SSO).
+* en utvecklare har tillgång till IMS-organisationen.
 
-1. Gå till Adobe IO och logga in med systemadministratörsbehörighet för IMSorg.
+>[!NOTE]
+>
+>Om du behöver begära behörighet som systemadministratör för IMS-organisationen följer du anvisningarna [på den här sidan](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) för att ge åtkomst till alla produktprofiler.
+
+
+## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
+
+1. Gå till Adobe I/O och logga in med systemadministratörsbehörighet för IMSorg.
 
    >[!NOTE]
    >
@@ -43,9 +48,9 @@ Nödvändiga konfigurationer är:
 
    >[!NOTE]
    >
-   >Om ditt klient-ID är tomt kan du göra det direkt **[!UICONTROL Create a New project]** i Adobe IO.
+   >Om ditt klient-ID är tomt kan du göra det direkt **[!UICONTROL Create a New project]** i Adobe.
 
-1. Du måste nu identifiera det befintliga projektet med det extraherade klient-ID:t. Sök efter befintliga projekt med samma klient-ID som det som extraherades i föregående steg.
+1. Identifiera det befintliga projektet med hjälp av det extraherade klient-ID:t. Sök efter befintliga projekt med samma klient-ID som det som extraherades i föregående steg.
 
    ![](assets/adobe_io_8.png)
 
@@ -53,7 +58,7 @@ Nödvändiga konfigurationer är:
 
    ![](assets/adobe_io_1.png)
 
-1. I fönstret **[!UICONTROL Add an API]** väljer du **[!UICONTROL Adobe Analytics]**.
+1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/adobe_io_2.png)
 
@@ -61,7 +66,7 @@ Nödvändiga konfigurationer är:
 
    ![](assets/adobe_io_3.png)
 
-1. Om du inte har angett något klient-ID väljer du **[!UICONTROL Generate a key pair]** att skapa ett offentligt och privat nyckelpar.
+1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** att skapa ett offentligt och privat nyckelpar.
 
    ![](assets/adobe_io_4.png)
 
@@ -83,7 +88,7 @@ Nödvändiga konfigurationer är:
 
 ## Steg 2: Lägg till projektautentiseringsuppgifter i Adobe Campaign {#add-credentials-campaign}
 
-Om du vill lägga till projektautentiseringsuppgifterna i Adobe Campaign kör du följande kommando som neolane-användare på alla behållare i Adobe Campaign-instansen för att infoga autentiseringsuppgifterna i **[!UICONTROL Technical Account]** instanskonfigurationsfilen.
+Om du vill lägga till projektautentiseringsuppgifterna i Adobe Campaign kör du följande kommando som &quot;neolane&quot;-användare på alla behållare i Adobe Campaign-instansen för att infoga autentiseringsuppgifterna i **[!UICONTROL Technical Account]** instanskonfigurationsfilen.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -95,7 +100,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Steg 3: Uppdatera tagg för pipeline {#update-pipelined-tag}
 
-Om du vill uppdatera [!DNL pipelined] taggen måste du uppdatera autentiseringstypen till Adobe IO-projektet i konfigurationsfilen **config-&lt; instance-name >.xml** enligt följande:
+Om du vill uppdatera [!DNL pipelined] taggen måste du uppdatera autentiseringstypen till Adobe I/O-projektet i konfigurationsfilen **config-&lt; instance-name >.xml** enligt följande:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
@@ -103,4 +108,4 @@ Om du vill uppdatera [!DNL pipelined] taggen måste du uppdatera autentiseringst
 
 >[!NOTE]
 >
->Om du använder den äldre versionen av Triggers Integration med äldre JWT-tokens bör du också lägga till Adobe IO-API:t, som beskrivs i det första steget, för att automatiskt migrera till den nya utlösarautentiseringen. [!DNL Adobe Analytics]
+>Om du använder den äldre versionen av Triggers Integration med äldre JWT-tokens bör du också lägga till Adobe I/O-API:t för [!DNL Adobe Analytics] information i det första steget för att automatiskt migrera till den nya utlösarautentiseringen.
