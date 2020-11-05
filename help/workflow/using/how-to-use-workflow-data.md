@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -108,7 +108,7 @@ Så här utför du det här användningsfallet:
 
 1. Generera ett GPG-nyckelpar (public/private) med ett GPG-verktyg och installera sedan den offentliga nyckeln på Kontrollpanelen. Detaljerade steg finns i dokumentationen för [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-1. Bygg ett arbetsflöde i Campaign Classic för att exportera data och exportera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
+1. Bygg ett arbetsflöde i Campaign Classic för att exportera data och kryptera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -147,4 +147,3 @@ Så här utför du det här användningsfallet:
 
 1. Du kan nu köra arbetsflödet. När den har körts exporteras datamål som omfattas av frågan till SFTP-servern till en krypterad GPG-fil.
 
-   ![](assets/gpg-sftp-encrypt.png)
