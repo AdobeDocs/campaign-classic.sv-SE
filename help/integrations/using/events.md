@@ -1,8 +1,6 @@
 ---
-title: Konfigurera integreringen
-seo-title: Konfigurera integreringen
-description: Konfigurera integreringen
-seo-description: null
+title: Konfigurera händelser
+description: Lär dig hur du konfigurerar händelser för anpassad implementering
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 1%
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +26,7 @@ Delar av den här konfigurationen är en anpassad utveckling som kräver följan
 * Arbetskunskaper i API:erna för QueryDef och Writer.
 * Aktuella krypterings- och autentiseringsfunktioner med privata nycklar.
 
-Eftersom det krävs tekniska kunskaper för att redigera JS-koden bör du inte försöka göra det utan rätt förståelse.
-
-Ytterligare bearbetning av händelser görs som en del av ACX-paketet som tillhandahålls utanför standardimplementeringen. Mottagna händelser bearbetas omedelbart med JavaScript-kod. Den sparas i en databastabell utan vidare bearbetning i realtid. Utlösarna används för målgruppsanpassning av ett kampanjarbetsflöde som skickar e-postmeddelanden. Kampanjen har konfigurerats så att den kund som har utlöst händelsen får ett e-postmeddelande.
+Eftersom det krävs tekniska kunskaper för att redigera Javascript-koden bör du inte försöka utan rätt förståelse.
 
 ## Bearbeta händelser i JavaScript {#events-javascript}
 
@@ -40,7 +36,7 @@ Pipeline använder en JavaScript-funktion för att bearbeta varje meddelande. De
 
 Den är konfigurerad i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Detta javascript anropas varje gång en händelse tas emot. Det styrs av [!DNL pipelined] processen.
 
-JS-exempelfilen är cus:triggers.js.
+Javascript-exempelfilen är cus:triggers.js.
 
 ### JavaScript-funktion {#function-js}
 
@@ -58,7 +54,7 @@ Den ska returnera som
 <undefined/>
 ```
 
-Du bör starta om [!DNL pipelined] när du har redigerat JS.
+Du bör starta om [!DNL pipelined] när du har redigerat Javascript.
 
 ### Utlös dataformat {#trigger-format}
 
@@ -136,7 +132,7 @@ För felsökning och övervakning skrivs alla utlösande data i utlösartabellen
 
 ### Tolka data {#data-parsing}
 
-Detta exempel på JS-kod tolkar eVar01 i anrikningarna.
+Detta exempel på JavaScript-kod tolkar eVar01 i anrikningarna.
 
 ```
 function processPipelineMessage(xmlTrigger)
