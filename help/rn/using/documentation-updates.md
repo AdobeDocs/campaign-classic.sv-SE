@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3905'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -28,9 +28,9 @@ Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/usin
 
 **Nya funktioner i version 20.3**
 
-Förbättrade push-meddelanden för iOS - [Läs mer](../../delivery/using/configuring-the-mobile-application.md)
+Förbättrade push-meddelanden för iOS – [läs mer](../../delivery/using/configuring-the-mobile-application.md)
 
-Förbättringar av push-meddelanden för Android - [Läs mer](../../delivery/using/configuring-the-mobile-application-android.md)
+Förbättrade push-meddelanden för Android – [läs mer](../../delivery/using/configuring-the-mobile-application-android.md)
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
@@ -38,95 +38,95 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](../../rn/using/compatibility
 
 Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/using/deprecated-features.md)
 
-Versionsinformation och kompatibilitetsmatris för Gold Standard finns nu i ett särskilt avsnitt.
+Versionsinformation och kompatibilitetsmatris för utgåvan Gold Standard finns nu i ett särskilt avsnitt.
 [Läs mer](../../rn/using/gold-standard.md#gs-10).
 
-Integreringen av utlösare som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst av pipeline har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/about-triggers.md)
+Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
 
 **Andra uppdateringar**
 
-Dokumentationssidorna har uppdaterats för att återspegla Tomcat 8-uppdateringen.
+Dokumentationssidorna har uppdaterats för att återspegla uppdateringen Tomcat 8.
 
-Mer information finns i beskrivningen av rutan Om i avsnittet Hämta din Adobe Campaign-version. [Läs mer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+Mer information har lagts till i beskrivningen i rutan ”Om” i avsnittet ”Ladda ned din version av Adobe Campaign”. [Läs mer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Riktlinjer för att utföra en bygguppgradering har lagts till i avsnittet Uppdatera Adobe Campaign Classic. Läs mer [Läs mer](../../production/using/build-upgrade.md)
+Riktlinjer för att utföra en versionsuppgradering har lagts till i avsnittet Uppdatera Adobe Campaign Classic. Läs mer [Läs mer](../../production/using/build-upgrade.md)
 
-Vanliga frågor om Campaign-bygguppgraderingen har lagts till i vanliga frågor om Campaign. Läs mer [Läs mer](../../platform/using/faq-build-upgrade.md)
+Vanliga frågor och svar om builduppgraderingen av Campaign har lagts till i vanliga frågor om Campaign. Läs mer [Läs mer](../../platform/using/faq-build-upgrade.md)
 
-Campaign-on-lokalt, på-hosted och hybridhosting-modeller beskrivs nu i ett särskilt avsnitt. [Läs mer](../../installation/using/hosting-models.md)
+Campaign lokalt samt värdbaserade och hybridvärd-modeller beskrivs nu i ett särskilt avsnitt. [Läs mer](../../installation/using/hosting-models.md)
 
-Matrisen för kampanjkapacitet per värdmodell har uppdaterats och flyttats i installationshandboken. [Läs mer](../../installation/using/capability-matrix.md)
+Matrisen med funktionerna i Campaign per värdmodell har uppdaterats och flyttats i installationshandboken. [Läs mer](../../installation/using/capability-matrix.md)
 
-Avsnittet med avancerade funktioner för Campaign Reporting har förbättrats så att det beskriver hur URL-parametrar och variabler används i anpassade rapporter. [Läs mer](../../reporting/using/advanced-functionalities.md)
+Avsnittet med avancerade funktioner i Campaign Reporting har förbättrats så att det beskriver hur URL-parametrar och -variabler används i anpassade rapporter. [Läs mer](../../reporting/using/advanced-functionalities.md)
 
-Sidan Rapportegenskaper har organiserats om och förbättrats för att underlätta konfigurationen. [Läs mer](../../reporting/using/properties-of-the-report.md)
+Sidan med rapportegenskaper har omorganiserats och förbättrats för att underlätta konfigurationen. [Läs mer](../../reporting/using/properties-of-the-report.md)
 
-En ny teknik har skapats med information om hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APN-providern. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Ett nytt tekniskt dokument har skapats med information om hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er från APN-leverantören. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
 ## September 2020 {#september-2020}
 
-En anteckning har lagts till för att ange att antalet aktiva profiler endast är tillgängligt för marknadsinstanser. [Läs mer](../../platform/using/about-profiles.md#active-profiles)
+En anteckning har lagts till för att specificera att antalet aktiva profiler endast är tillgängligt för marknadsföringsinstanser. [Läs mer](../../platform/using/about-profiles.md#active-profiles)
 
 Ett nytt exempel om schemaversionen har lagts till för att länka ett fält till en befintlig referenstabell. [Läs mer](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-En anteckning har lagts till om användningen av ytterligare data med dirigerade adresser vid leveranser. [Läs mer](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+En anteckning har lagts till om användningen av ytterligare data med fröadresser vid leveranser. [Läs mer](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Augusti 2020 {#aug-2020}
 
-Lär dig de bästa metoderna för leveransdesign och att skicka med Campaign i ett särskilt avsnitt. [Läs mer](../../delivery/using/delivery-best-practices.md)
+Läs om de bästa metoderna för leveransdesign och att skicka med Campaign i ett särskilt avsnitt. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
-Landningssidan för bästa praxis för slutleverans har förbättrats för att underlätta tillgången till underavsnitt. [Läs mer](../../delivery/using/deliverability-key-points.md)
+Landningssidan gällande bästa praxis för levererbarhet har förbättrats för att underlätta åtkomsten till underavsnitt. [Läs mer](../../delivery/using/deliverability-key-points.md)
 
 Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
-* [Ställa in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
+* [Så ställer man in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
 
-* [Så här skapar du ett e-postmeddelande i en kampanj](../../campaign/using/marketing-campaign-deliveries.md)
+* [Så skapar man ett e-postmeddelande i en kampanj](../../campaign/using/marketing-campaign-deliveries.md)
 
-* [Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll](../../delivery/using/conditional-content.md)
+* [Så skapar man ett flerspråkigt nyhetsbrev med villkorligt innehåll](../../delivery/using/conditional-content.md)
 
-* [Konfigurera och distribuera en leveransmall](../../delivery/using/creating-a-delivery-template.md)
+* [Så konfigurerar och distribuera man en leveransmall](../../delivery/using/creating-a-delivery-template.md)
 
-* [Så här aktiverar och använder du AMP för e-post](../../delivery/using/defining-interactive-content.md)
+* [Så aktiverar och använder man AMP för e-postmeddelanden](../../delivery/using/defining-interactive-content.md)
 
-* [Så här personaliserar du e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
+* [Så personaliserar man e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
 
-* [Skräddarsy e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
+* [Så personaliserar man e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
 
-* [Hantera startvärden och korrektur i ett e-postmeddelande](../../delivery/using/steps-defining-the-target-population.md)
+* [Så hanterar man frön och korrektur i ett e-postmeddelande](../../delivery/using/steps-defining-the-target-population.md)
 
-* [Så här ställer du in en återkommande leverans](../../workflow/using/recurring-delivery.md)
+* [Så ställer man in en återkommande leverans](../../workflow/using/recurring-delivery.md)
 
-* [Konfigurera kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
+* [Så ställer man in en kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
 
-Information har lagts till om de kontroller och åtgärder som ska utföras vid hämtning av felet&quot;Det gick inte att lösa värdnamnet&quot; efter anslutning till en FTP-server. [Läs mer](../../platform/using/sftp-server-usage.md)
+Information har lagts till om de kontroller och åtgärder som ska utföras när man får felet ”Det gick inte att lösa värdnamnet” efter anslutning till en FTP-server. [Läs mer](../../platform/using/sftp-server-usage.md)
 
-Nya användningsfall har refererats i listan över [arbetsflödesanvändningsfall](../../workflow/using/about-workflow-use-cases.md):
+Nya användningsfall har refererats i listan [Användningsfall med arbetsflöde](../../workflow/using/about-workflow-use-cases.md):
 
-* Automatisera framtagning, utgåva och publicering av innehåll
+* Automatisera skapande, redigering och publicering av innehåll
 * Ställa in en process för mottagningsgodkännande innan en leverans skickas
-* Anropa en förekomstvariabel i en fråga
-* Använda en delad procentsats på en population
+* Anropa en instansvariabel i en fråga
+* Tillämpa en delad procentsats på en grupp
 
-Aktivitetsavsnittet har berikats med ytterligare information om hur det används samt en anteckning om användningen av variabler. **[!UICONTROL AND-join]** [Läs mer](../../workflow/using/and-join.md)
+Aktivitetsavsnittet **[!UICONTROL AND-join]** har berikats med ytterligare information om hur det används samt en anteckning om användningen av variabler. [Läs mer](../../workflow/using/and-join.md)
 
 ## Juli 2020 {#july-2020}
 
-Ett användningsexempel om hur du automatiskt uppdaterar en lista med en stegvis fråga har lagts till i arbetsflödets användningsfall. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
+Ett användningsfall om hur man automatiskt uppdaterar en lista med en inkrementell fråga har lagts till i användningsfallen om arbetsflöde. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
 
-Versionsinformationen [](../../rn/using/latest-release.md) har ordnats om: en [översiktssida](../../rn/using/latest-release.md) med information om byggstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [Gold Standard-versioner](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
+[Versionsinformationen](../../rn/using/latest-release.md) har omorganiseras: en [översiktssida](../../rn/using/latest-release.md) med information om buildstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [Gold Standard-versioner](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
 
-Ett nytt avsnitt har lagts till med riktlinjer för övervakning av Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
+Ett nytt avsnitt har lagts till med riktlinjer gällande att övervaka Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
 Avsnittet Sekretess och samtycke har förbättrats med mer detaljerad information och användbara länkar. [Läs mer](../../platform/using/privacy-and-recommendations.md).
 
-Sekretesshantering på Campaign Classic-sidan har uppdaterats med information om fältet&quot;Reglering&quot; som nu är tillgängligt när du använder API:t för att konfigurera automatisk process för förfrågningar om sekretess. [Läs mer](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+Sekretesshanteringen på sidan Campaign Classic har uppdaterats med information om fältet ”reglering” som nu är tillgängligt när du använder API:et, så att det går att konfigurera en automatisk process för förfrågan om användarens information. [Läs mer](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 Sidan Översikt över integritetshantering har uppdaterats med information om Thailands lag för persondataskydd (PDPA) och Brasiliens Lei Geral de Proteção de Dados (LGPD). [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
-Information har lagts till i delarbetsflödets loggar och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
+Information har lagts till om loggar om delarbetsflöden och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
 
-Bästa tillvägagångssätt har lagts till i **[!UICONTROL Scheduler]** aktivitetsavsnittet. [Läs mer](../../workflow/using/scheduler.md)
+Bästa praxis har lagts till i aktivitetsavsnittet **[!UICONTROL Scheduler]**. [Läs mer](../../workflow/using/scheduler.md)
 
 ## Juni 2020 {#june-2020}
 
@@ -134,9 +134,9 @@ Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inkluderar förty
 
 Användningsfall har lagts till om hur data [krypteras](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypteras](../../workflow/using/importing-data.md#use-case-gpg-decrypt) med Kontrollpanelen och arbetsflödena i Campaign.
 
-The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
+Sidan för integration av utlösare i Experience Cloud och Adobe Campaign Classic har flyttats [hit](../../integrations/using/about-triggers.md).
 
-## july 2020 {#release-20-2}
+## juli 2020 {#release-20-2}
 
 **Nya funktioner i version 20.2**
 
@@ -406,7 +406,7 @@ En ny kunskapsbasartikel om hur man använder erbjudandekatalogen i Adobe Campai
 
 Avsnittet Underliggande arbetsflödesaktivitet har förbättrats med ett exempel på användning. [Läs mer](../../workflow/using/sub-workflow.md)
 
-Funktionsmatrissidan [Campaign Classic lokal och värdbaserad](../../installation/using/capability-matrix.md) har uppdaterats med information om e-post-BCC.
+Sidan med en [matris för lokala och värdbaserade funktioner i Campaign Classic](../../installation/using/capability-matrix.md) har uppdaterats med information om e-postmeddelanden som är osynliga för leveransmottagarna.
 
 Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
