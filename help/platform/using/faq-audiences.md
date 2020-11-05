@@ -10,11 +10,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Du kan importera mottagare eller skapa dem manuellt med hjälp av klientkonsolen
 
 Upptäck enkla användningsfall för att [importera profiler](../../platform/using/importing-data.md#generic-import-samples) i din databas.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## Hur definierar jag målgruppen för en marknadsföringskampanj? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -44,7 +44,7 @@ En lista är en statisk uppsättning mottagare som kan användas för leveranså
 
 [Klicka här för att läsa mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) och [i den här andra videon](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) och [även i den här videon](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Hur kan jag avduplicera en grupp innan jag skickar ett meddelande? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
