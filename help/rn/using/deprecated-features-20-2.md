@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1444'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </tr>
    <tr>
   <td>SMS-kopplingar<br></td>
-  <td><p> Från och med Campaign 20.2 har följande SMS-anslutningar tagits bort.<p>
+  <td><p> Från och med Campaign version 20.2 har följande SMS-kopplingar tagits bort.<p>
    <ul>
    <li>NetSize</li>
    <li>Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
@@ -66,7 +66,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
  </tr>
   <tr>  
    <td>Faxkanal<br></td>
-   <td><p>Faxkanalen är föråldrad från och med Campaign 20.2.</p> 
+   <td><p>Från och med Campaign version 20.2 är faxkanalen inaktuell.</p> 
    <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
    <p><em>Måldatum för borttagning: 2021</em></p></td>
   </tr>
@@ -125,14 +125,14 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
 
 ## Inaktuell kompatibilitet {#deprecated-compatibility}
 
-Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
+Följande system är inte längre kompatibla med Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
 
 ### Adobe Campaign version 20.2 {#compat-20-2-release}
 
-Från och med version 20.2 har följande system tagits bort för Campaign Classic. Kompatibiliteten upphör i version 20.3 - oktober 2020.
+Från och med version 20.2 är följande system ej längre kompatibla att användas med Campaign Classic. Kompatibiliteten upphör i version 20.3 – oktober 2020.
 
 * Klientkonsol: Windows 7
-* Äldre SMS-anslutningar - se [Föråldrade funktioner](#deprecated-features)
+* Äldre SMS-kopplingar – se [Inaktuella funktioner](#deprecated-features)
 * DB2 UDB 10.5 för FDA (Federated Data Access)
 
 ### Adobe Campaign version 19.2 {#compat-19-2-release}
