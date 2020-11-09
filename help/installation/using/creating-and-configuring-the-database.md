@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1307'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ I **[!UICONTROL Creation steps]** fönstret kan du visa och redigera det SQL-skr
 
 * För en Oracle-, Microsoft SQL Server- eller PostgreSQL-databas kan administratören också definiera de **lagringsparametrar** som ska användas när databasobjekt skapas.
 
-   De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i noden **[!UICONTROL Administration > Platform > Options]** i följande alternativ (se [](../../installation/using/configuring-campaign-options.md#database)):
+   De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i **[!UICONTROL Administration > Platform > Options]** noden i följande alternativ (se [det här avsnittet](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: användartabeller baserade på ett schema
    * **WdbcOptions_TableSpaceIndex**: index för användartabeller baserat på ett schema
