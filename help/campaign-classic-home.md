@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 78%
+source-wordcount: '274'
+ht-degree: 77%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 78%
 
 ## Nyheter
 
-* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)**<br/>av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
+* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)**<br/> av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
 
-* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APNs-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
+* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APN-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
 
-* **[Lägg till uttryckssymboler i meddelanden](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
+* **[Lägg till uttryckssymboler i meddelanden](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
@@ -29,7 +29,7 @@ Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och be
 * **[Spårningsfunktioner](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html)**<br/>
 Förstå spårningsfunktioner och -processer i Campaign
 
-[Klicka här för fler uppdateringar](/help/rn/using/documentation-updates.md)
+[Fler uppdateringar](/help/rn/using/documentation-updates.md)
 
 ## De vanligaste sidorna
 
