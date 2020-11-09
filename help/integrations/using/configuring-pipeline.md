@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: f3caef21a269cf57624a07bfe1b4bf1e241061a6
+source-git-commit: 4f949d8db3aa3082acf1765bf66080b270cc6db4
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 
 Kontrollera att du har:
 
-* en ny version av Adobe Campaign: 19.1.8- eller 20.2.1-byggen och senare,
+* en ny version av Adobe Campaign (20.2.1 och senare),
 * Adobe Analytics Standard
 
 Du behöver också:
