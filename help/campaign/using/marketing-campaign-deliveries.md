@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller direkt via leveransöversikten.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i en video](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 
@@ -78,7 +78,7 @@ Handboken [Automatisera med arbetsflöden](../../workflow/using/architecture.md)
 >
 >I samma kampanj kan du inte konfigurera fler än 28 arbetsflöden. Tidigare är ytterligare arbetsflöden inte synliga i gränssnittet och kan generera fel.
 
-### Så här skapar du ett e-postmeddelande i en kampanj {#create-email-video}
+### Så skapar man ett e-postmeddelande i en kampanj {#create-email-video}
 
 I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign Classic.
 
