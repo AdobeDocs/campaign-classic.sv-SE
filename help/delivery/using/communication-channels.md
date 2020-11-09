@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 11%
 
 ---
@@ -43,7 +43,7 @@ Adobe Campaign erbjuder följande leveranskanaler:
 
    >[!NOTE]
    >
-   >Användningen av flera kanaler beror på ditt paket. Kontrollera licensavtalet.
+   >Antalet tillgängliga kanaler beror på ditt kontrakt. Kontrollera licensavtalet.
 
 Leveranser kan göras **online** (via e-post, en av mobilkanalerna och push-meddelanden) och **offline** (direktreklamkanal).
 
