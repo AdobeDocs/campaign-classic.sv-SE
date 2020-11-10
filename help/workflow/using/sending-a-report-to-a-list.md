@@ -1,8 +1,6 @@
 ---
 title: Skicka en rapport till en lista
-seo-title: Skicka en rapport till en lista
-description: Skicka en rapport till en lista
-seo-description: null
+description: Lär dig hur du skickar en rapport till en lista med ett arbetsflöde
 page-status-flag: never-activated
 uuid: 29759fd8-47f3-47cc-9f7e-263e305fd6fb
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
 source-wordcount: '623'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
