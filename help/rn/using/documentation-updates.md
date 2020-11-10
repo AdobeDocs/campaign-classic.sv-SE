@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 7af0d17450ea2bee757e54dd4861f11ad023b700
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3932'
 ht-degree: 98%
 
 ---
@@ -25,6 +25,8 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
 
 ## November 2020 {#nov-2020}
+
+[Campaign 20.2.3-versionen](../../rn/using/release--20-2.md#release-20-2-3-build-9182) har övergått till General Availability (GA).
 
 Sektionen Sekretess har flyttats och berikats med två nya avsnitt: [Sekretesshantering](../../platform/using/privacy-management.md) och [hantering av sekretessförfrågningar](../../platform/using/privacy-requests.md).
 
