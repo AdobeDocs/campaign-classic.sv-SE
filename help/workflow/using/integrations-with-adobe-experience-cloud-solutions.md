@@ -1,8 +1,6 @@
 ---
-title: Integrering med lösningar i Adobe Experience Cloud
-seo-title: Integrering med lösningar i Adobe Experience Cloud
-description: Integrering med lösningar i Adobe Experience Cloud
-seo-description: null
+title: Integrering med arbetsflöden för Adobe Experience Cloud-lösningar
+description: Läs mer om integreringar med arbetsflöden för Adobe Experience Cloud-lösningar
 page-status-flag: never-activated
 uuid: 6f179af5-1e5b-42a9-a493-1b726af2af8e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: dddc3bdc-2344-423b-81d9-6f93847448a0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 24%
+source-wordcount: '109'
+ht-degree: 8%
 
 ---
 
