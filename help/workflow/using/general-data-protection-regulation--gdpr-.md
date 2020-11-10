@@ -1,8 +1,6 @@
 ---
-title: Allmänna dataskyddsförordningen (GDPR)
-seo-title: Allmänna dataskyddsförordningen (GDPR)
-description: Allmänna dataskyddsförordningen (GDPR)
-seo-description: null
+title: Arbetsflöden för dataskyddsförordningen
+description: Läs mer om arbetsflödena i förordningen om skydd av personuppgifter
 page-status-flag: never-activated
 uuid: cb5f5d79-52ac-4ce4-abc7-a3a1f0a001cf
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 050c804e-87b7-4d68-b787-c396fec329d2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '107'
 ht-degree: 10%
 
 ---
