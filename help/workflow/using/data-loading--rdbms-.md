@@ -1,8 +1,6 @@
 ---
 title: Datainläsning (RDBMS)
-seo-title: Datainläsning (RDBMS)
-description: Datainläsning (RDBMS)
-seo-description: null
+description: Läs mer om arbetsflödesaktivitet för datainläsning (RDBMS)
 page-status-flag: never-activated
 uuid: d5ec30f2-398a-4b16-9232-924437da146a
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: a128caac-5740-4dac-b14d-1d2fcef3cc69
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 6%
+source-wordcount: '187'
+ht-degree: 3%
 
 ---
 
