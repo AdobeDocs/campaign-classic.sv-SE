@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
+source-git-commit: 160af30e13bb6a81672477f4f801dbd5cc3c767c
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Om du använder en äldre version av integreringen av utlösare via autentisering måste **du gå till Adobe I/O enligt beskrivningen nedan**. Det äldre autentiseringsläget för autentisering kommer att upphöra den 30 april 2021. [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
+>Om du använder en äldre version av integreringen av utlösare via autentisering måste **du gå till Adobe I/O enligt beskrivningen nedan**. Det äldre autentiseringsläget för autentisering kommer att upphöra den 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
