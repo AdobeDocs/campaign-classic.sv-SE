@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 2%
@@ -29,9 +29,10 @@ ht-degree: 2%
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
+Den här integreringen gäller endast från och med **Campaign Classic 20.3-versionen**.
+
 Kontrollera att du har:
 
-* en ny version av Adobe Campaign (20.2.1 och senare),
 * ett giltigt IMSOrgID: Organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO).
 * en utvecklare har tillgång till IMS-organisationen.
 
