@@ -1,8 +1,6 @@
 ---
 title: Skapa ett arbetsflöde
-seo-title: Skapa ett arbetsflöde
-description: Skapa ett arbetsflöde
-seo-description: null
+description: Lär dig hur du skapar ett arbetsflöde
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -28,7 +26,7 @@ I det här avsnittet beskrivs de viktigaste principerna och de bästa metoderna 
 * Utforma arbetsflödesdiagrammet, se [Lägga till och länka aktiviteter](#adding-and-linking-activities)
 * Åtkomstparametrar och egenskaper för aktiviteter finns i [Konfigurera aktiviteter](#configuring-activities)
 * Arbetsflöden för målinriktning, se [Målarbetsflöden](#targeting-workflows)
-* Använd arbetsflöde för att köra en kampanj, se [Kampanjarbetsflöden](#campaign-workflows)
+* Använda arbetsflöden för att köra en kampanj, se [Kampanjarbetsflöden](#campaign-workflows)
 * Få tillgång till och skapa tekniska arbetsflöden, se [Tekniska arbetsflöden](#technical-workflows)
 * Använda mallar för att skapa arbetsflöden, se [Arbetsflödesmallar](#workflow-templates)
 
@@ -145,13 +143,13 @@ Målarbetsflöden kan skapas och redigeras via noden **[!UICONTROL Profiles and 
 
 Målarbetsflöden inom ramen för en kampanj lagras med alla kampanjarbetsflöden.
 
-### Implementeringssteg {#implementation-steps-}
+### Viktiga steg för att skapa ett målarbetsflöde {#implementation-steps-}
 
-Målgruppsfasen är följande:
+Steg för att skapa ett arbetsflöde för målinriktning finns i följande avsnitt:
 
-1. Information om hur du identifierar data i databasen finns i [Skapa frågor](../../workflow/using/targeting-data.md#creating-queries).
-1. Information om hur du förbereder data för leveransbehov finns i [Förbättra och ändra data](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
-1. Information om hur du använder data för att utföra uppdateringar eller inom en leverans finns i [Uppdatera databasen](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
+1. **Identifiera** data i databasen - Se [Skapa frågor](../../workflow/using/targeting-data.md#creating-queries)
+1. **Förbered** data efter leveransbehov - Se [Förbättra och ändra data](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **Använd** data för att utföra uppdateringar eller inom en leverans - Se [Uppdatera databasen](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -179,15 +177,15 @@ För varje kampanj kan du skapa arbetsflöden som ska köras från **[!UICONTROL
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-Fliken innehåller samma aktiviteter som för alla arbetsflöden. De presenteras i avsnittet [Implementeringssteg](#implementation-steps-) .
+Fliken innehåller samma aktiviteter som för alla arbetsflöden. [Läs mer](#implementation-steps-)
 
-Förutom att rikta kampanjer kan ni med kampanjarbetsflöden skapa och konfigurera leveranser helt för alla tillgängliga kanaler. När leveransen har skapats i arbetsflödet är den tillgänglig från kontrollpanelen för kampanjen.
+Förutom att rikta kampanjer kan ni med kampanjarbetsflöden skapa och konfigurera leveranser helt för alla tillgängliga kanaler. När leveransen har skapats i arbetsflödet är den tillgänglig från kontrollpanelen för kampanjen. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md)
 
 Alla kampanjarbetsflöden är centraliserade under **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** noden.
 
 ![](assets/campaigns_wf.png)
 
-Kampanjarbetsflöden och implementeringsexempel finns på den här [sidan](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Kampanjarbetsflöden och implementeringsexempel finns på [den här sidan](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Tekniska arbetsflöden {#technical-workflows}
 
@@ -205,7 +203,7 @@ Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som
 
 Du kan skapa andra tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Den här processen är dock reserverad för expertanvändare.
 
-De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. For more on this, refer to [Implementation steps](#implementation-steps-).
+De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. [Läs mer](#implementation-steps-)
 
 ## Arbetsflödesmallar {#workflow-templates}
 
