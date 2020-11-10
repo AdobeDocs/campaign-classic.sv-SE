@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: input-forms
 discoiquuid: 0c33fd79-8fa5-4cc0-8881-c6d6f4ee1648
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 16%
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 # Redigera formulär{#editing-forms}
 
-Skärmen för att skapa och konfigurera inmatningsformulär är tillgänglig från mappen för Adobe Campaign klientkonsol: **[!UICONTROL Administration > Configuration > Input forms]**
+Skärmen för att skapa och konfigurera inmatningsformulär finns i mappen **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** i Adobe Campaign klientkonsol:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
