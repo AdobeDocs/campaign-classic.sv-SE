@@ -1,8 +1,6 @@
 ---
 title: Värmekarta för arbetsflöde
-seo-title: Värmekarta för arbetsflöde
-description: Värmekarta för arbetsflöde
-seo-description: null
+description: Övervaka era kampanjarbetsflöden med Workflow HeatMap
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 5%
+source-wordcount: '1328'
+ht-degree: 3%
 
 ---
 
 
 # Värmekarta för arbetsflöde {#workflow-heatmap}
 
-Färgdiagrammet över arbetsflöden i Adobe Campaign består av en färgkodad grafisk representation av alla arbetsflöden som för närvarande körs. Den är endast tillgänglig för instansen Administratörer.
+Adobe Campaign Workflow HeatMap består av en färgkodad grafisk representation av alla arbetsflöden som körs. Den är endast tillgänglig för instansen Administratörer.
 
 Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
