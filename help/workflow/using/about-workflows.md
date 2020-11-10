@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 16%
+source-wordcount: '650'
+ht-degree: 18%
 
 ---
 
@@ -32,9 +32,9 @@ Arbetsflöden sker i olika sammanhang och under olika faser av kampanjhanterings
 
 Adobe Campaign använder arbetsflöden för att
 
-* Utför riktade kampanjer. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Skapa kampanjer: för varje kampanj kan du med fliken **[!UICONTROL Workflow]** skapa målet och leveranserna. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Utför tekniska processer: rensning, insamling av spårningsinformation eller preliminära beräkningar. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Utför riktade kampanjer. [Läs mer](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* Skapa kampanjer: för varje kampanj kan du med fliken **[!UICONTROL Workflow]** skapa målet och leveranserna. [Läs mer](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Utför tekniska processer: rensning, insamling av spårningsinformation eller preliminära beräkningar. [Läs mer](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 Ett arbetsflöde kan betyda både en processdefinition (arbetsflödesmodellen, som är en representation av vad som ska hända) och en instans av den här processen (en arbetsflödesinstans, som är en representation av vad som faktiskt händer).
 
