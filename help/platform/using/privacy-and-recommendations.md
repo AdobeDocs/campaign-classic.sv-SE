@@ -1,7 +1,7 @@
 ---
-title: Sekretess och rekommendationer
-seo-title: Sekretess och rekommendationer
-description: Sekretess och rekommendationer
+title: Sekretess och samtycke
+seo-title: Sekretess och samtycke
+description: Sekretess och samtycke
 seo-description: null
 page-status-flag: never-activated
 uuid: a044bbea-521d-4c1e-8aab-7d51a87fc94b
@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 6ca61b4e927b7443815f0337b8e661c8ec126001
+source-git-commit: 53c15bca0f5cc3e6866e87a5ffbc7f68e7bcc1b8
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 8%
+source-wordcount: '1815'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +45,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i en
 
 >[!NOTE]
 >
->Mer information om hur GDPR, CCPA, PDPA och LGPD gäller för Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
+>Mer information om hur GDPR, CCPA, PDPA och LGPD gäller för Adobe Campaign finns på [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -83,7 +83,7 @@ När sekretessen hanteras är det viktigt att definiera vilka data som ska hante
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information som rör en individs ras, politiska åsikter, religiösa övertygelser, kriminell bakgrund, genetiska uppgifter, hälsodata, sexuella preferenser, biometrisk information samt medlemskap i fackföreningar.
 
-De [viktigaste lagstiftningarna](#privacy-regulations) avser de olika enheter som hanterar uppgifter enligt följande:
+De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
 * En **personuppgiftsansvarig** är den myndighet som bestämmer hur och syftet med att samla in, använda och dela personuppgifter.
 * En **dataprocessor** är en person eller part som samlar in, använder eller delar personuppgifter enligt den personuppgiftsansvariges anvisningar.
 * En **registrerad** är en levande person vars personuppgifter samlas in, används eller delas och som direkt eller indirekt kan identifieras genom hänvisning till dessa personuppgifter.
@@ -108,10 +108,9 @@ Integritetshantering avser alla processer och verktyg som kan hjälpa er att fö
 Adobe Campaign tillhandahåller olika funktioner för sekretesshantering:
 * Hantering av samtycke, datalagring och användarroller. Se [det här avsnittet](#consent).
 * Sekretessförfrågningar (rätt till åtkomst och rätt att bli glömd). Se [det här avsnittet](#privacy-requests).
-* Avanmäl dig från försäljning av personuppgifter (CCPA-specifik). Se [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html#ccpa).
+* Avanmäl dig från försäljning av personuppgifter (CCPA-specifik). Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 De viktigaste sekretessfunktionerna i Campaign och ett exempel på vilka personer som berörs presenteras i [det här avsnittet](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
-
 
 ### Samtycke, bevarande och roller {#consent}
 
@@ -121,7 +120,7 @@ Ursprungligen har Adobe Campaign viktiga funktioner som är viktiga för sekrete
 * **Datalagring**: Alla inbyggda standardloggtabeller har förinställda lagringsperioder, vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare kvarhållningsperioder kan ställas in med arbetsflöden. Mer information får du om du kontaktar konsulterna eller teknikadministratörerna på Adobe.
 * **Rättighetshantering**: Adobe Campaign ger er möjlighet att hantera de rättigheter som tilldelats olika Campaign-operatorer via olika färdiga eller anpassade roller. På så sätt kan du hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Mer information finns i [Om åtkomsthantering](../../platform/using/access-management.md).
 
-Mer information om dessa funktioner och hur du hanterar dem i Adobe Campaign finns på [den här sidan](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent).
+Mer information om dessa funktioner och hur du hanterar dem i Adobe Campaign finns i [det här avsnittet](../../platform/using/privacy-management.md#consent-retention-roles).
 
 ### Sekretessförfrågningar {#privacy-requests}
 
@@ -133,7 +132,7 @@ Adobe Campaign erbjuder ytterligare funktioner som hjälper dig att underlätta 
 
 >[!NOTE]
 >
->Den här uppsättningen verktyg är till för att hjälpa dig att uppfylla dina krav på sekretess för GDPR, CCPA, PDPA och LGPD. Mer information om de olika reglerna finns på [den här sidan](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
+>Den här uppsättningen verktyg är till för att hjälpa dig att uppfylla dina krav på sekretess för GDPR, CCPA, PDPA och LGPD. Mer information om de olika reglerna finns på [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
@@ -143,7 +142,7 @@ Adobe Campaign erbjuder ytterligare funktioner som hjälper dig att underlätta 
 
 Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
 
-Begäran om **åtkomst** och **borttagning** visas på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess). Implementeringsstegen för att skapa dessa begäranden beskrivs i [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html#ManagingPrivacyRequests). <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+Begäran om **åtkomst** och **borttagning** visas på [den här sidan](../../platform/using/privacy-management.md#right-access-forgotten). Implementeringsstegen för att skapa dessa begäranden beskrivs i [det här avsnittet](../../platform/using/privacy-requests.md). <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
 
 ## Spårningsfunktioner {#tracking-capabilities}
 
@@ -154,7 +153,7 @@ Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra hur mottagarna s
 * A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
 
 * Två **permanenta** cookies:
-   * Cookien **UID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med denna cookie kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan deponeras av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av denna cookie finns [på den här sidan](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
+   * Cookien **UID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med denna cookie kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan deponeras av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av denna cookie finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
    * Den **olevererade** cookien (som introducerades i Campaign Classic 20.3) är en permanent cookie som innehåller **deliveryId** för den senaste leveransen som användaren klickade på länken från. Den här cookien används för att identifiera spårningstabellen som ska användas, när sessionscookien saknas.
 
 I sådana förordningar som den allmänna dataskyddsförordningen (GDPR) anges att företag kräver att webbplatsanvändarna godkänner avtalet innan de installerar cookies.
