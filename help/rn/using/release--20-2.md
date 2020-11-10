@@ -10,19 +10,19 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: aeae6320f9b8de8618f7e5f07bc586d1b101611f
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 76%
+ht-degree: 80%
 
 ---
 
 
-# Release 20.2{#release-20-2}
+# Version 20.2{#release-20-2}
 
 ![](assets/do-not-localize/cp-icon.png) **Oktober-versionen** av den nya Kontrollpanelen med domänkonfiguration med CNAME och nya funktioner för databasövervakning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.3 - build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) Version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
@@ -35,24 +35,24 @@ _11 september 2020_
 * Korrigering av en regression under efteruppgradering som orsakade en felaktig start av lserver (felloggar).
 * Uppdateringshanteringen för delat minne har förbättrats. De ytterligare steg som krävs i 20.2 behövs inte längre.
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.2.2 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/orange_2.png) Version 20.2.2 – build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
-* Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen inaktiverades. (NEO-26411)
+* Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen var inaktiverad. (NEO-26411)
 * Korrigerade ett problem som medförde att osignerade länkar från anpassade domäner blockerades när de borde tillåtas. (NEO-25210)
 * Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook. (NEO-25688)
 * Korrigerade ett problem som ledde till att sidans URL:er speglades på ett felaktigt sätt definierades i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
 * Ett problem med hantering av kodnings-URL i tjänsten mot nätfiske har korrigerats. (NEO-25283)
-* Korrigerade ett problem som förhindrade spårning av URL-adresser som använder fragment i personaliseringsparametrar (ankartaggar med nummertecken) från att fungera. (NEO-25774)
-* Ett spårningsproblem har korrigerats när särskilda anpassade spårningsformler användes. (NEO-25277)
-* Korrigerade ett problem som hindrade spårningen av&quot;meddelandeklickningar&quot; från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
+* Korrigerade ett problem som förhindrade spårning av URL:er, som använder fragment i personaliseringsparametrar (ankartaggar med pundtecken), från att fungera. (NEO-25774)
+* Korrigerade ett problem med spårning när särskilda anpassade spårningsformler användes. (NEO-25277)
+* Korrigerade ett problem som hindrade spårningen av ”meddelandeklickningar” från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
 * Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde och orsakade att arbetsflödet misslyckades. (NEO-25194)
 * Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-20999)
 * Korrigerade ett regressionsproblem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
 * Korrigerade ett kraschproblem i distributionsguiden.
 * Korrigerade ett problem som kunde förhindra att arbetsflödet för meddelanden om erbjudanden fungerar korrekt efter en efteruppgradering.
-* iOS HTTP2-anslutningen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904 och NEO-25903)
+* iOS HTTP2-kopplingen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904 och NEO-25903)
 * Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre användes (iOS-meddelanden).
 * Korrigerade ett problem som blockerade leveransförberedelser efter efteruppgradering.
 * Efter växlingen till den [nya sekvens-ID-mekanismen](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
