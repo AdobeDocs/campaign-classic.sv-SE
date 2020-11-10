@@ -1,8 +1,6 @@
 ---
 title: Bästa praxis för arbetsflöden
-seo-title: Bästa praxis för arbetsflöden
-description: Bästa praxis för arbetsflöden
-seo-description: null
+description: Lär dig mer om arbetsflöden för kampanjer
 page-status-flag: never-activated
 uuid: 56b04004-5d96-4169-9494-3d04284d5a3d
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 6%
+source-wordcount: '1609'
+ht-degree: 5%
 
 ---
 
@@ -69,7 +67,7 @@ Så här undviker du att arbetsflöden är i pausat läge:
 
 * Kontrollera dina arbetsflöden regelbundet för att se om det inte finns några oväntade fel.
 * Håll arbetsflödena så enkla som möjligt, t.ex. genom att dela upp stora arbetsflöden i flera olika arbetsflöden. Du kan använda **[!UICONTROL External signal]** aktiviteter som utlöser deras körning baserat på andra arbetsflödenas körning.
-* Undvik inaktiverade aktiviteter med arbetsflöden som lämnar trådarna öppna och leder till många tillfälliga tabeller som kan ta mycket plats. Behåll inte aktiviteter i **[!UICONTROL Do not enable]** eller **[!UICONTROL Enable but do not execute]** lägen i dina arbetsflöden.
+* Undvik inaktiverade aktiviteter med arbetsflöden som lämnar trådar öppna och leder till många tillfälliga tabeller som kan ta mycket plats. Behåll inte aktiviteter i **[!UICONTROL Do not enable]** eller **[!UICONTROL Enable but do not execute]** lägen i dina arbetsflöden.
 
 Stoppa även oanvända arbetsflöden. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
 
