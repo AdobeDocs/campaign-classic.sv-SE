@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5f3ecffba2e505ad0bb074f6d635a51d983997e2
+source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2156'
 ht-degree: 99%
 
 ---
@@ -39,7 +39,6 @@ ht-degree: 99%
 + Komma igång {#getting-started}
    + Komma igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
       + [Starta Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Arbetsytan i Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Vanliga frågor och svar {#faq}
@@ -54,6 +53,10 @@ ht-degree: 99%
          + [Rapporter](platform/using/faq-reporting.md)
          + [Utveckling](platform/using/faq-developers.md)
       + [Självstudiekurser](platform/using/tutorials.md)
+   + Integritet {#privacy}
+      + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
+      + [Integritetshantering](platform/using/privacy-management.md)
+      + [Sekretessförfrågningar](platform/using/privacy-requests.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
