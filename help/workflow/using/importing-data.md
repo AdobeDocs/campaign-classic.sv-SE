@@ -1,6 +1,6 @@
 ---
 title: Importera data
-description: Lär dig hur du importerar data i Adobe Campaign Classic
+description: Lär dig hur du importerar data i Adobe Campaign
 page-status-flag: never-activated
 uuid: c8cf2bf1-f7a5-4de4-9e53-a961c9e5beca
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 translation-type: tm+mt
-source-git-commit: 12a6409df4816519b979b911d7de03eae94bef33
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Med importmallar är det mycket bekvämt att förbereda liknande importer och s�
 
 I många projekt byggs importen utan **[!UICONTROL Deduplication]** aktivitet eftersom filerna som används i projektet inte har några dubbletter. Det kan ibland visas dubbletter när du importerar olika filer. Det är då svårt att deduplicera. Därför är ett borttagningssteg en bra försiktighetsåtgärd i alla importarbetsflöden.
 
-Du kan inte utgå från att inkommande data är konsekventa och korrekta eller att IT-avdelningen eller Adobe Campaign-administratören kommer att ta hand om dem. Under projektet bör du tänka på datarensningen. Ta bort dubbletter, stämma av och bibehåll enhetligheten när du importerar data.
+Du kan inte utgå från att inkommande data är konsekventa och korrekta, eller att IT-avdelningen eller Adobe Campaign-administratören kommer att ta hand om dem. Under projektet bör du tänka på datarensningen. Ta bort dubbletter, stämma av och bibehåll enhetligheten när du importerar data.
 
 Ett exempel på en importmall finns i avsnittet [Konfigurera en återkommande import](#setting-up-a-recurring-import) .
 
