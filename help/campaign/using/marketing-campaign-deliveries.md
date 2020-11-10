@@ -1,8 +1,6 @@
 ---
 title: Leveranser av marknadsföringskampanjer
-seo-title: Leveranser av marknadsföringskampanjer
-description: Leveranser av marknadsföringskampanjer
-seo-description: Läs mer om kampanjleveranser
+description: Läs mer om kampanjleveranser
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 2%
+source-wordcount: '2917'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,9 @@ ht-degree: 2%
 
 Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller direkt via leveransöversikten.
 
-![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i en video](#create-email-video)
+När leveranser skapas från en kampanj länkas de till den här kampanjen och konsolideras på kampanjnivå.
+
+![](assets/do-not-localize/how-to-video.png)[ Upptäck den här funktionen i en video](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 
@@ -32,29 +32,21 @@ Om du vill skapa en leverans som är länkad till en kampanj klickar du på **[!
 
 ![](assets/campaign_op_add_delivery.png)
 
-De föreslagna konfigurationerna passar för olika typer av leveranser: direktreklam, e-post, mobila kanaler.
-
->[!NOTE]
->
->Mer information om hur du skapar och konfigurerar leveranser finns i avsnittet [Skicka meddelanden](../../delivery/using/steps-about-delivery-creation-steps.md) .
+De föreslagna konfigurationerna passar för olika typer av leveranser: direktreklam, e-post, mobila kanaler. [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Välja målpopulation {#selecting-the-target-population}
 
-För varje leverans definierar kampanjchefen:
+För varje leverans kan du definiera:
 
-* Huvudmålet. Mer information finns i [Skapa huvudmålet i ett arbetsflöde](#building-the-main-target-in-a-workflow) och [Välja målpopulation](#selecting-the-target-population).
-* Kontrollgruppen. Mer information finns i [Definiera en kontrollgrupp](#defining-a-control-group).
-* Startadresserna. Mer information om detta finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md).
+* Målgruppen - Lär dig mer om hur du [skapar målgrupper i ett arbetsflöde](#building-the-main-target-in-a-workflow) och [väljer målgrupp](#selecting-the-target-population).
+* En kontrollgrupp - Läs mer i [Definiera en kontrollgrupp](#defining-a-control-group).
+* dirigeringsadresser - Läs mer i [det här avsnittet](../../delivery/using/about-seed-addresses.md).
 
-En del av den här informationen ärvs från mallen.
+En del av den här informationen kan ärvas från [mallen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
->[!NOTE]
->
->Kampanjmallar finns i [Campaign-mallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Om du vill skapa leveransmålet kan du definiera filtervillkor för mottagarna i databasen. Det här mottagarläget visas i [det här avsnittet](../../delivery/using/steps-defining-the-target-population.md).
 
-Om du vill skapa leveransmålet kan du definiera filtervillkor för mottagarna i databasen. Det här mottagarläget visas i avsnittet [Skicka meddelanden](../../delivery/using/steps-defining-the-target-population.md) .
-
-### Exempel: leverera till en grupp mottagare {#example--delivering-to-a-group-of-recipients}
+**Exempel: skicka meddelanden till en grupp**
 
 Du kan importera en population till en lista och sedan ange den här listan som mål i leveranser.
 
@@ -68,24 +60,15 @@ Du kan importera en population till en lista och sedan ange den här listan som 
 
 ![](assets/s_user_target_group_next.png)
 
-### Bygga huvudmålet i ett arbetsflöde {#building-the-main-target-in-a-workflow}
+### Bygga målgruppen i ett arbetsflöde {#building-the-main-target-in-a-workflow}
 
-Huvudmålet för en leverans kan också definieras i målarbetsflödet: I den grafiska miljön kan du skapa mål med hjälp av frågor, tester och operatorer: union, borttagning av dubbletter, delning osv.
-
-Handboken [Automatisera med arbetsflöden](../../workflow/using/architecture.md) innehåller en detaljerad beskrivning av hur arbetsflödesmodulen fungerar.
+Huvudmålet för en leverans kan också definieras i målarbetsflödet: I den grafiska miljön kan du skapa mål med hjälp av frågor, tester och operatorer: union, borttagning av dubbletter, delning osv. [Läs mer](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->I samma kampanj kan du inte konfigurera fler än 28 arbetsflöden. Tidigare är ytterligare arbetsflöden inte synliga i gränssnittet och kan generera fel.
+>Du kan inte skapa fler än 28 arbetsflöden i en kampanj. Tidigare är ytterligare arbetsflöden inte synliga i gränssnittet och kan generera fel.
 
-### Så skapar man ett e-postmeddelande i en kampanj {#create-email-video}
-
-I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign Classic.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### Skapa ett målarbetsflöde {#creating-a-targeting-workflow}
+#### Skapa arbetsflödet {#creating-a-targeting-workflow}
 
 Målinriktning kan skapas med en kombination av filtreringsvillkor i en grafisk sekvens i ett arbetsflöde. Ni kan skapa populationer och underpopulationer som ska anpassas efter era behov. Om du vill visa arbetsflödesredigeraren klickar du på **[!UICONTROL Targeting and workflows]** fliken på kontrollpanelen för kampanjer.
 
@@ -124,7 +107,7 @@ Ni kan skapa flera arbetsflöden för målinriktning för en enskild kampanj. S�
 1. Välj **[!UICONTROL New workflow]** mall och ge arbetsflödet ett namn.
 1. Klicka **[!UICONTROL OK]** för att bekräfta att arbetsflödet har skapats och skapa sedan diagrammet för arbetsflödet.
 
-#### Köra ett arbetsflöde {#executing-a-workflow}
+#### Kör arbetsflödet {#executing-a-workflow}
 
 Målarbetsflöden kan startas manuellt med knappen i verktygsfältet, förutsatt att du har rätt behörighet. **[!UICONTROL Start]**
 
@@ -476,3 +459,9 @@ Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för d
 >[!NOTE]
 >
 >Mer information om export finns i avsnittet [Komma igång](../../platform/using/generic-imports-and-exports.md) .
+
+#### Så skapar man ett e-postmeddelande i en kampanj {#create-email-video}
+
+I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
