@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -20,19 +20,19 @@ ht-degree: 6%
 
 # Version 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 - build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 – build 9124{#release-20-1-3-build-9124}
 
 _6 maj 2020_
 
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 - build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 – build 9123{#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
 * Korrigerade ett problem som förhindrade versionshantering på Red Hat 7-servrar. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1 - build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1 – build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
@@ -47,7 +47,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Snowflake är ett helt hanterat moln data warehouse som bygger på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja Snowflake kraft att utföra Big Data Segmentation. Den här kontakten är tillgänglig för alla kunder, inklusive via Adobe.</p>
-    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -62,7 +62,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Hadoop FDA Connector har förbättrats med stöd för både Hadoop 3.0 och Cloudera.</p>
-    <p>Mer information finns i den <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">detaljerade dokumentationen</a>.</p>
+    <p>Mer information finns i den <a href="../../installation/using/configure-fda-hadoop.md">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
  </tbody> 
