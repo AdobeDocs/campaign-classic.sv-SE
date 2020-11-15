@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 8%
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 # Version 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 – build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -31,7 +31,7 @@ _7 februari 2020_
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 * Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/orange_2.png) Version 19.2 – build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
@@ -107,7 +107,7 @@ _2 december 2019_
 
 * Optimering av minnesförbrukning för push-meddelanden.
 * Hanteringen av filen **logins.log** har förbättrats för optimering av prestanda och lagring. Filen delas nu upp i flera filer, en gång om dagen med högst 365 filer bevarade. [Läs mer](../../production/using/log-files.md)
-* Det externa Microsoft Dynamics CRM-kontot kan nu konfigureras med hjälp av lösenordsautentiseringsuppgifter (lösenord + användarnamn) eller certifikat (privat nyckel). [Läs mer](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* Det externa Microsoft Dynamics CRM-kontot kan nu konfigureras med hjälp av lösenordsautentiseringsuppgifter (lösenord + användarnamn) eller certifikat (privat nyckel). [Läs mer](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Vissa förbättringar har lagts till i Hadoop FDA-kontakten för att förbättra tillförlitligheten
 * En särskild skyddsmodul har lagts till för att kontrollera diskutrymmet innan offentliga resurser kan överföras till servern.
 * Nya [kampanjalternativ](../../installation/using/configuring-campaign-options.md) har lagts till:
@@ -140,7 +140,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata har korrigerats. (NEO-12399)
 * Ett problem som påverkade leveransanalysen med typologiregeln inklusive domänen ne.jp har korrigerats. (NEO-12609)
 * Korrigerade ett problem relaterat till SMS över TLS-uppdateringar som innebar en mer restriktiv certifikatprincip. Uppdateringarna kan leda till ett anslutningsfel mellan marknadsförings- och mellanleverantörsservrar om certifikatet är inaktuellt. (NEO-17698)
-* Ett problem har korrigerats när du använde knappen för att **testa anslutning** på ett externt konto i en miljö med flera källor och vaultautentisering användes. (NEO-12722)
+* Ett problem har korrigerats när knappen för **testanslutning** användes på ett externt konto i en miljö med flera källor med vaultautentisering. (NEO-12722)
 * Korrigerade ett problem med frågor som använder datumfunktioner med en FDA Hadoop-anslutning. (NEO-12847)
 * Korrigerade ett problem när en bild skulle ersättas i e-postredigeraren. (NEO-13098)
 * Korrigerade ett problem som kan leda till fel efter uppgraderingen i mappar som har tagits bort eller flyttats till en annan plats. (NEO-13118)
