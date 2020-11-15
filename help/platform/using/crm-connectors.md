@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2536'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Anslutningen till CRM sker via dedikerade arbetsflödesaktiviteter. Dessa aktivi
 
 CRM:er som anges nedan kan integreras i Adobe Campaign.
 
-Versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md)för Campaign.
 
 * **Salesforce.com**
 
