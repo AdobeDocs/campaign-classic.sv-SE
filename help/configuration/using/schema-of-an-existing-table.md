@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 11%
@@ -68,4 +68,4 @@ Om du vill skapa motsvarande schema använder du följande steg:
 
 Med alternativet **Federated Data Access - FDA** får du åtkomst till data som lagras i en extern databas.
 
-Hur scheman ska konfigureras för att få åtkomst till data i en extern databas beskrivs på [den här sidan](../../platform/using/creating-data-schema.md).
+Hur scheman ska konfigureras för att få åtkomst till data i en extern databas beskrivs på [den här sidan](../../installation/using/creating-data-schema.md).
