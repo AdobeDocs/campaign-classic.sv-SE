@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 10%
@@ -26,7 +26,7 @@ Adobe Campaign har flera anslutningar som gör att du kan kommunicera med extern
 
 Dessa kopplingar är:
 
-* Med FDA Connector (**Federated Data Access**) kan ni ansluta Campaign till en eller flera externa databaser och bearbeta information som lagras i dem utan att påverka era Campaign-data. [Läs mer](../../platform/using/about-fda.md).
+* Med FDA Connector (**Federated Data Access**) kan ni ansluta Campaign till en eller flera externa databaser och bearbeta information som lagras i dem utan att påverka era Campaign-data. [Läs mer](../../installation/using/about-fda.md).
 * CRM-anslutningar gör det möjligt att utbyta data mellan Adobe Campaign och CRM-lösningen med hjälp av dedikerade arbetsflödesaktiviteter. [Läs mer](../../platform/using/crm-connectors.md).
 * Med Analytics Data Connectors (tidigare **Adobe Genesis**) kan ni dela data mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-data-connector.md).
 
