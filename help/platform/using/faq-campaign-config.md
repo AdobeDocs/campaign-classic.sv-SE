@@ -10,10 +10,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '759'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -59,11 +59,11 @@ Med Campaign kan du skapa godkännandeprocesser för de viktigaste stegen i mark
 
 Adobe Campaign tillhandahåller alternativet federerad dataåtkomst (FDA) för att bearbeta information som lagras i en eller flera externa databaser. Du kan få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign.
 
-[Klicka här för att läsa mer](../../platform/using/connecting-to-database.md).
+[Klicka här för att läsa mer](../../installation/using/connecting-to-database.md).
 
 ## Vilka externa databaser kan jag ansluta Campaign till? {#which-external-databases-can-i-connect-campaign-to-}
 
-Externa databaser som är kompatibla med Campaign via federerad dataåtkomst (FDA) listas i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Externa databaser som är kompatibla med Campaign via federerad dataåtkomst (FDA) listas i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 ## Kan Adobe Campaign integreras med LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
