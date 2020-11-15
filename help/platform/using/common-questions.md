@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: ht
-source-wordcount: '539'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ För att ansluta till Adobe Campaign Classic måste du starta klientkonsolen i A
 
 ## 7. Vilka system och komponenter är Campaign Classic kompatibelt med? {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
-Du kan se listan över alla system och komponenter som den senaste versionen av Campaign har stöd för i [kompatibilitetsmatrisen för Adobe Campaign Classic](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Du kan se listan över alla system och komponenter som den senaste versionen av Campaign har stöd för i [kompatibilitetsmatrisen för Adobe Campaign Classic](../../rn/using/compatibility-matrix.md).
 
 ## 8. Var finns versionsinformation om Campaign Classic? {#where-are-campaign-classic-release-notes-}
 
-Du kan komma åt den senaste versionsinformationen om Campaign Classic [på den här sidan](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html).
+Du kan komma åt den senaste versionsinformationen om Campaign Classic [på den här sidan](../../rn/using/latest-release.md).
 
 ## 9. Vilket är förfarnadet för domänkonfigurering? {#what-is-the-procedure-for-domain-delegation-}
 
