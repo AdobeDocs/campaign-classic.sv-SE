@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: faaecbd6-f707-4307-8921-04d8993c2c47
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 15%
+source-wordcount: '141'
+ht-degree: 12%
 
 ---
 
 
 # Krav för installationen av Campaign i Windows{#prerequisites-of-campaign-installation-in-windows}
 
-Den tekniska konfiguration och programvara som behövs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Den tekniska konfiguration och programvara som behövs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 Adobe Campaign serverinstallationsprocess för användning av flera instanser beskrivs nedan när du [installerar servern](../../installation/using/installing-the-server.md).
 
