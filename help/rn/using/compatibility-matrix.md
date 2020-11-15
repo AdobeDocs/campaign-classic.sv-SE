@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 13%
 
 ---
@@ -170,7 +170,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 >
 >PostgreSQL är standarddatabasservern för hostingmiljöer.
 
-## CRM connectors{#CRMconnectors}
+## CRM-kopplingar{#CRMconnectors}
 
 <table>
 <tbody>
@@ -342,4 +342,4 @@ Internet Explorer 11 stöds.
 * [Versionsinformation om Campaign Classic](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
 * [Föråldrade funktioner och system](../../rn/using/deprecated-features.md)
-* [Uppgraderingsprocedur](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
+* [Uppgraderingsprocedur](../../production/using/build-upgrade.md)
