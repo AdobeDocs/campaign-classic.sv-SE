@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 99%
+source-wordcount: '2167'
+ht-degree: 97%
 
 ---
 
@@ -82,17 +82,6 @@ ht-degree: 99%
       + [Åtkomsthantering](platform/using/access-management.md)
       + [Arbeta med datapaket](platform/using/working-with-data-packages.md)
       + [Hantera uppräkningar](platform/using/managing-enumerations.md)
-      + [Externa konton](platform/using/external-accounts.md)
-   + Åtkomst till en extern databas (FDA){#accessing-external-database}
-      + [Om FDA](platform/using/about-fda.md)
-      + [Konfigurera FDA-kopplingar](platform/using/specific-configuration-database.md)
-      + [Äldre kopplingar](platform/using/legacy-connectors.md)
-      + [Åtkomsträttigheter till fjärrdatabas](platform/using/remote-database-access-rights.md)
-      + [Ansluta till databasen](platform/using/connecting-to-database.md)
-      + [Skapa dataschemat](platform/using/creating-data-schema.md)
-      + [Definiera datakartläggning](platform/using/defining-data-mapping.md)
-      + [Ytterligare alternativ](platform/using/additional-options.md)
-      + [Tillägg](platform/using/appendices-fda.md)
    + Kopplingar {#connectors}
       + [Om kopplingar](platform/using/about-connectors.md)
       + [CRM-kopplingar](platform/using/crm-connectors.md)
@@ -460,7 +449,7 @@ ht-degree: 99%
       + [Egenskaper för arbetsflöde](workflow/using/workflow-properties.md)
       + [Avancerade parametrar](workflow/using/advanced-parameters.md)
       + [JavaScript-skript och -mallar](workflow/using/javascript-scripts-and-templates.md)
-      + [Åtkomst till en extern databas (FDA)](workflow/using/accessing-an-external-database--fda-.md)
+      + [Åtkomst till en extern databas](workflow/using/accessing-an-external-database--fda-.md)
       + [Hantera rättigheter](workflow/using/managing-rights.md)
       + [Hantera aktivitetsbilder](workflow/using/managing-activity-images.md)
       + [Hantera benägenhet](workflow/using/managing-propensity.md)
@@ -585,7 +574,7 @@ ht-degree: 99%
    + Bilagor {#annexes}
       + [Exempel på Facebook-appar](social/using/examples-of-facebook-apps.md)
       + [Spårning](social/using/tracking.md)
-+ Installera Campaign Classic {#installing-campaign-classic}
++ Installations- och konfigureringshandbok {#installing-campaign-classic}
    + Arkitekturprinciper {#architecture-and-hosting-models}
       + [Allmän arkitektur](installation/using/general-architecture.md)
       + Värdbaserade modeller{#hosting-models-lp}
@@ -633,6 +622,23 @@ ht-degree: 99%
       + [Konfigurera SpamAssassin](installation/using/configuring-spamassassin.md)
       + [Server för mid-sourcing](installation/using/mid-sourcing-server.md)
       + [Interaktion – databuffert](installation/using/interaction---data-buffer.md)
+      + [Konfigurera externa konton](installation/using/external-accounts.md)
+   + Komma åt en extern databas {#accessing-external-database}
+      + [Kom igång med FDA](installation/using/about-fda.md)
+      + Konfigurationsriktlinjer {#config-databases}
+         + [Konfigurationssteg](installation/using/configure-fda.md)
+         + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
+         + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
+         + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
+         + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
+         + [Konfigurera Netezza](installation/using/configure-fda-netezza.md)
+         + [Konfigurera Sybase IQ](installation/using/configure-fda-sybase.md)
+         + [Konfigurera Teradata](installation/using/configure-fda-teradata.md)
+         + [Konfigurera SAP HANA](installation/using/configure-fda-sap-hana.md)
+      + [Fjärråtkomsträttigheter](installation/using/remote-database-access-rights.md)
+      + [Ansluta till databasen](installation/using/connecting-to-database.md)
+      + [Skapa dataschemat](installation/using/creating-data-schema.md)
+      + [Definiera datakartläggning](installation/using/defining-data-mapping.md)
    + Tillägg {#appendices}
       + [Fil för serverkonfiguration](installation/using/the-server-configuration-file.md)
       + [Nätverksslutpunkter i Campaign](installation/using/campaign-network-endpoints.md)
@@ -640,7 +646,7 @@ ht-degree: 99%
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
       + [Lista över alternativ för Campaign ](installation/using/configuring-campaign-options.md)
       + [Avinstallerar Campaign](installation/using/uninstalling-campaign.md)
-+ Övervaka Campaign Classic {#monitoring-campaign-classic}
++ Övervakningsguide {#monitoring-campaign-classic}
    + Introduktion {#introduction}
       + [Förord](production/using/foreword.md)
       + [Allmän arkitektur](production/using/general-architecture.md)
@@ -688,7 +694,7 @@ ht-degree: 99%
       + [Konsoluppdatering](production/using/console-update.md)
       + [Lösenordet har tappats bort](production/using/lost-password.md)
       + [JSP-beteende](production/using/jsp-behavior.md)
-+ Konfigurera Campaign Classic {#configuring-campaign-classic}
++ Utvecklarhandbok {#configuring-campaign-classic}
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
       + [Beskrivning av datamodellen](configuration/using/data-model-description.md)
@@ -746,7 +752,7 @@ ht-degree: 99%
       + [Infoga taggar på din webbplats](configuration/using/inserting-tags-in-your-site.md)
       + [Samla in alla besök](configuration/using/collecting-all-visits.md)
       + [Anonym spårning](configuration/using/anonymous-tracking.md)
-+ Migrera till en ny version {#migrating-to-a-new-version}
++ Migreringsguide {#migrating-to-a-new-version}
    + Migreringsöversikt {#migration-overview}
       + [Om migrering](migration/using/about-migration.md)
       + [Migreringsmetod](migration/using/migration-method.md)
