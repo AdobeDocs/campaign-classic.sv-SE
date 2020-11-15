@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -373,7 +373,7 @@ För anslutningsrelationer med Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/join_fda_1m.png) : Kardinalitet 1-N
 
-Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../platform/using/about-fda.md).
+Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../installation/using/about-fda.md).
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 
