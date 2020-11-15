@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Du måste först installera en JDK på de datorer där du vill köra Adobe Campa
 
 Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för **OpenJDK**.
 
-De versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+De versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md)för Campaign.
 
 >[!NOTE]
 >
