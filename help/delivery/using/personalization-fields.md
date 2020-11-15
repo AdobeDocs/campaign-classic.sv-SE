@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Personaliseringsfält används för att personalisera innehållet i levererade m
 
 I anpassningsfältet med syntaxen **&lt;%= mottagare.efternamn %>** anger Adobe Campaign att namnet på mottagaren ska infogas i databasen (mottagartabell).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#personalization-fields-video)
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ Ni kan optimera personaliseringen med ett dedikerat alternativ: **[!UICONTROL Pr
 
 Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i FDA.
 
-Om du markerar det här alternativet kan leveransanalysens prestanda förbättras avsevärt när mycket data bearbetas, särskilt om personaliseringsdata kommer från en extern tabell via FDA. Mer information finns i [Åtkomst till en extern databas (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
+Om du markerar det här alternativet kan leveransanalysens prestanda förbättras avsevärt när mycket data bearbetas, särskilt om personaliseringsdata kommer från en extern tabell via FDA. Mer information finns i [Åtkomst till en extern databas (FDA)](../../installation/using/about-fda.md).
 
 Om du till exempel får prestandaproblem när du levererar till ett stort antal mottagare och använder många personaliseringsfält och/eller personaliseringsblock i innehållet i dina meddelanden, kan det här alternativet snabba upp hanteringen av personaliseringen och därmed leveransen av dina meddelanden.
 
@@ -123,7 +123,7 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Skräddarsy e-postmeddelanden med personaliseringsfält {#personalization-fields-video}
+## Så personaliserar man e-postmeddelanden med personaliseringsfält {#personalization-fields-video}
 
 Lär dig hur du lägger till ett anpassningsfält på ämnesraden och innehållet i en e-postleverans.
 
