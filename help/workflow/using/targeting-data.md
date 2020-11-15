@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 4%
@@ -180,7 +180,7 @@ För att konfigurera det måste du först välja villkor:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Mer information om detta hittar du i det här [avsnittet](../../platform/using/about-fda.md).
+   Mer information om detta hittar du i det här [avsnittet](../../installation/using/about-fda.md).
 
 Sedan måste vi lägga till nya delmängder:
 
