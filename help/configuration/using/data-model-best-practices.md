@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Följ de bästa metoderna nedan för att konfigurera data i Adobe Campaign för 
 
 Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller personalisera. Det innebär att om ett fält inte används för att skicka ett anpassat e-postmeddelande eller används som ett kriterium i en fråga tar det upp diskutrymme medan det är oanvändbart.
 
-För hybridinstanser och lokala instanser täcker FDA (Federated Data Access, en valfri funktion som ger åtkomst till externa data) behovet av att lägga till ett fält&quot;direkt&quot; under en kampanjprocess. Du behöver inte importera allt om du har FDA. Mer information finns i [Om åtkomst till](../../platform/using/about-fda.md)federerade data.
+För hybridinstanser och lokala instanser täcker FDA (Federated Data Access, en valfri funktion som ger åtkomst till externa data) behovet av att lägga till ett fält&quot;direkt&quot; under en kampanjprocess. Du behöver inte importera allt om du har FDA. Mer information finns i [Om åtkomst till](../../installation/using/about-fda.md)federerade data.
 
 ### Val av nycklar {#choice-of-keys}
 
