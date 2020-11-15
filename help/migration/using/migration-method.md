@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 3ac779a7-1f91-4c1c-a439-10d01697326a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 4%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ I v6.02 var läget &quot;multi timezone&quot; bara tillgängligt för PostgreSQL
 >
 >Vissa programversioner som stöds i Adobe Campaign 5.11 och 6.02 stöds inte längre i Adobe Campaign v7.
 >
->Mer information om vilka versioner som stöds av Adobe Campaign finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+>Mer information om vilka versioner som stöds av Adobe Campaign finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 ## Viktiga migreringssteg {#key-migration-steps}
 
