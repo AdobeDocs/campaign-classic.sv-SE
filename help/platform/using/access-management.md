@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 1%
@@ -103,7 +103,7 @@ När operatörens profil har skapats kan du lägga till eller uppdatera informat
 
 >[!NOTE]
 >
->I **[!UICONTROL Session timeout]** fältet kan du justera fördröjningen innan tidsgränsen för FDA-sessionen har nåtts. Mer information finns i [Om åtkomst till](../../platform/using/about-fda.md)federerade data.
+>I **[!UICONTROL Session timeout]** fältet kan du justera fördröjningen innan tidsgränsen för FDA-sessionen har nåtts. Mer information finns i [Om åtkomst till](../../installation/using/about-fda.md)federerade data.
 
 ### Operatorns tidszon {#time-zone-of-the-operator}
 
