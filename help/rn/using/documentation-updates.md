@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3932'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Sidan för integration av utlösare i Experience Cloud och Adobe Campaign Classi
 
 Stöd för uttryckssymboler – [läs mer](../../delivery/using/customizing-emoticon-list.md)
 
-Azure Synapse FDA-koppling – [läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Azure Synapse FDA-koppling – [läs mer](../../installation/using/configure-fda-synapse.md)
 
 Integritetslagar för Thailand och Brasilien – [läs mer](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -188,7 +188,7 @@ Avsnittet Bästa praxis för datapaket har flyttats och uppdaterats. [Läs mer](
 
 ## April 2020 {#april-2020}
 
-FDA-rättighetstabellen har flyttats till dokumentationen Åtkomst till en extern databas (FDA). [Läs mer](../../platform/using/remote-database-access-rights.md)
+FDA-rättighetstabellen har flyttats till dokumentationen Åtkomst till en extern databas (FDA). [Läs mer](../../installation/using/remote-database-access-rights.md)
 
 Vanliga frågor och svar har uppdaterats med tips på hur du rensar mjukt och hårt cacheminne. [Läs mer](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -232,9 +232,9 @@ Avsnittet E-postarkivering har förbättrats. [Läs mer](../../installation/usin
 
 **Nya funktioner i version 20.1**
 
-Snowflake FDA-koppling – [läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Snowflake FDA-koppling – [läs mer](../../installation/using/configure-fda-snowflake.md)
 
-Förbättringar på Hadoop FDA-koppling – [läs mer](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Förbättringar på Hadoop FDA-koppling – [läs mer](../../installation/using/configure-fda-hadoop.md)
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
@@ -292,7 +292,7 @@ Ett exempel på hur du använder en instansvariabel i ett arbetsflöde har lagts
 
 Alternativet &quot;WdbcOptions_TempDbName&quot; har lagts till i listan över alternativ i Campaign. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Sidan FDA-matriser har flyttats [hit](../../platform/using/remote-database-access-rights.md).
+Sidan FDA-matriser har flyttats [hit](../../installation/using/remote-database-access-rights.md).
 
 Sidan Matris för åtkomsträttigheter har flyttats [hit](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
