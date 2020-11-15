@@ -1,8 +1,6 @@
 ---
 title: Migreringsvarningar
-seo-title: Migreringsvarningar
 description: Migreringsvarningar
-seo-description: null
 page-status-flag: never-activated
 uuid: 35361471-881c-4aaf-a57b-ed7e89a97eae
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 1fa1fe0f-c392-413a-9fa0-d1b4e10e2e5e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 6%
+source-wordcount: '181'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +21,7 @@ ht-degree: 6%
 # Migreringsvarningar{#migration-warnings}
 
 * Migreringsprocessen är reserverad för expertanvändare. Du måste få hjälp av minst en databasexpert, en systemadministratör och en programutvecklare från Adobe Campaign.
-* Innan du startar migreringen bör du kontrollera att de system och systemkomponenter du använder är kompatibla med v7. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+* Innan du startar migreringen bör du kontrollera att de system och systemkomponenter du använder är kompatibla med v7. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 * Om du använder Adobe Campaign Cloud Messaging (tidigare mellanlagring) kontaktar du Adobe Campaign innan du påbörjar hela migreringsprocessen.
 * Innan du startar en migreringsprocess **måste** du säkerhetskopiera dina data.
 * Det kan ta flera dagar innan migreringen är klar.
