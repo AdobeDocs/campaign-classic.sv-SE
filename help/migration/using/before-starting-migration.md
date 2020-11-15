@@ -1,8 +1,6 @@
 ---
 title: Innan du startar migreringen
-seo-title: Innan du startar migreringen
 description: Innan du startar migreringen
-seo-description: null
 page-status-flag: never-activated
 uuid: b9325510-2fa5-4be4-9cf0-f37232bbbd8c
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-procedure
 discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +25,13 @@ ht-degree: 3%
 >I det här dokumentet ges kommandon som är länkade till databasen som exempel. Dessa kan variera beroende på konfiguration. Kontakta databasadministratören.
 
 ## Varningar {#warnings}
+
+* Migreringsprocessen får endast utföras av expertanvändare. Du måste få hjälp av minst en databasexpert, en systemadministratör och en programutvecklare från Adobe Campaign.
+* Innan du startar migreringen bör du kontrollera att de system och systemkomponenter du använder är kompatibla med v7. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
+* Om du använder Adobe Campaign Cloud Messaging (mellanlagring) kontaktar du Adobe innan du påbörjar hela migreringsprocessen.
+* Innan du startar en migreringsprocess **måste** du säkerhetskopiera dina data.
+* Det kan ta flera dagar innan migreringen är klar.
+* Adobe Campaign v7 är striktare än version 5.11 och 6.02 vad gäller konfiguration. Detta gäller främst för att undvika problem som till exempel dataskador och för att bevara databasens dataintegritet. Följaktligen kanske vissa funktioner som erbjuds i v5.11 och v6.02 inte längre fungerar i v7 och därför behöver anpassas efter migreringen. Innan du sätter något i produktion rekommenderar vi att du systematiskt testar alla konfigurationer, särskilt arbetsflöden som är nödvändiga för att använda Adobe Campaign.
 
 ### Installerad version {#installed-version}
 
@@ -45,7 +50,7 @@ Innan du startar en migreringsprocess **måste** du säkerhetskopiera dina data.
 
 ### Rekommendation {#recommendation}
 
-Eftersom migreringsproceduren är särskilt känslig rekommenderar vi att du läser detta dokument noggrant innan du börjar proceduren.
+Eftersom migreringsproceduren är känslig rekommenderar vi att du läser det här dokumentet noggrant innan du startar proceduren.
 
 ## Migreringssteg {#migration-steps}
 
@@ -64,10 +69,6 @@ Migreringsproceduren måste utföras på **alla** servrar och i en viss ordning.
    1. Migrera omdirigerings- och spårningsservrar (Apache/IIS).
    1. Migrera Power Booster-/klusterservrarna.
    1. Migrera marknadsföringsservern.
-
->[!NOTE]
->
->Kommunikation mellan en v6.02-marknadsföringsserver och en v7 Cloud Messaging- eller Power Booster-/Cluster-server är möjlig. Om du ändå bestämmer dig för att behålla din v6.02-marknadsföringsserver måste den uppdateras med den senaste v6.02-versionen innan du migrerar till Cloud Messaging eller Power Booster/Cluster.
 
 ## Användarlösenord {#user-passwords}
 
