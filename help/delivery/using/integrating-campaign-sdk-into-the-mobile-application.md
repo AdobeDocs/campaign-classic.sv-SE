@@ -1,8 +1,6 @@
 ---
-title: Konfigurera mobilappskanal
-seo-title: Konfigurera mobilappskanal
-description: Konfigurera mobilappskanal
-seo-description: null
+title: Integrera Campaign SDK
+description: Lär dig hur du integrerar Campaign SDK med din mobilapp
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 
-# Integrera Campaign SDK i den mobila applikationen {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrera Campaign SDK med er app {#integrating-campaign-sdk-into-the-mobile-application}
 
 Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Channel.
 
@@ -30,7 +28,7 @@ Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Ch
 
 Målet med SDK är att underlätta integreringen av mobilapplikationer i Adobe Campaign.
 
-Mer information om vilka olika Android- och iOS-versioner som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) .
+Mer information om vilka olika Android- och iOS-versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#MobileSDK) .
 
 ## Läser in kampanj-SDK {#loading-campaign-sdk}
 
