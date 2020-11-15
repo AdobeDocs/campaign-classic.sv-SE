@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 3%
 
 I det här avsnittet beskrivs de preliminära konfigurationssteg som krävs innan du installerar Adobe Campaign.
 
-Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 Följande komponenter måste installeras och konfigureras korrekt:
 
-* Apache, se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html),
+* Apache, se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md),
 * Java JDK och OpenJDK, se [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotek, se [Bibliotek](#libraries),
 * Lager för databasåtkomst, se [Lager](#database-access-layers)för databasåtkomst.
@@ -169,7 +169,7 @@ Följande konfigurationer är nödvändiga med CentOS:
 
 Åtkomstlagren för databasmotorn som du använder måste vara installerade på servern och tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
 
-Den pilotversion som stöds finns i [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
+Den pilotversion som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 Kontrollera även det allmänna avsnittet [Databas](../../installation/using/database.md) .
 
