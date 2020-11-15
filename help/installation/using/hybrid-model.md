@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: f5244ab8-2421-4d76-bcf6-3574e68ea4e9
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 6%
@@ -30,7 +30,7 @@ Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe
 * Installera inbyggda paket: se [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md).
 * Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om verktygen för slutprodukter och de effektivaste strategierna i [guiden](../../delivery/using/deliverability-key-points.md) Komma igång och [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
 * Konfigurera kampanjalternativ: se [det här avsnittet](../../installation/using/configuring-campaign-options.md).
-* Konfigurera en extern databas (Federated Data Access): se [det här avsnittet](../../platform/using/about-fda.md).
+* Konfigurera en extern databas (Federated Data Access): se [det här avsnittet](../../installation/using/about-fda.md).
 * Konfigurerar CRM-anslutningar: se [det här avsnittet](../../platform/using/crm-connectors.md).
 * Om du vill veta mer om principer [för användning på mellanleverantörer kan du läsa det här avsnittet](../../installation/using/mid-sourcing-deployment.md).
 
