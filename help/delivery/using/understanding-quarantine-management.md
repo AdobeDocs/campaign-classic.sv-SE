@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -157,7 +157,7 @@ Objekten som sätts i karantän är enhetstoken.
 **För iOS - binär anslutning**
 
 >[!NOTE]
-Från och med Campaign 20.3 är den gamla binära kopplingen för iOS föråldrad. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
 För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från APN-servern. För följande synkrona fel genererar Adobe Campaign mjuka fel:
 
