@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: 48176ebb19689855f3ee5e61fa6492be5a682291
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Följ stegen nedan för att hämta och installera Adobe Campaign klientkonsol:
 
 1. Öppna en webbläsare och hämta konsolen från följande adress:
 
-   [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://machine/nl/jsp/logon.jsp).
+   [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://myserver.adobe.com/nl/jsp/logon.jsp).
 
 1. I identifieringsfönstret anger du din inloggning och ditt lösenord.
 
@@ -66,7 +66,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://machine) typen URL.
+   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) typen URL.
 
 1. Om Adobe IMS är konfigurerat för din organisation markerar du alternativet **[!UICONTROL Connect with an Adobe ID]**
 
