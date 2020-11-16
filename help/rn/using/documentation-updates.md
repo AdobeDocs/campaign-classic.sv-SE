@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3497'
 ht-degree: 98%
 
 ---
@@ -342,7 +342,7 @@ Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../del
 
 ## Oktober 2019 {#october-2019}
 
-Listan med felmeddelanden i Campaign Standard och Campaign Classic har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+Listan med felmeddelanden i Campaign Standard och Campaign Classic har uppdaterats. [Läs mer](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentation om sekretesshantering som inkluderar GDPR och CCPA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy.html)
 
@@ -384,29 +384,29 @@ Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](http
 
 Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
 
-Beskrivningen om serverkonfigurationsfilen har lagts till i installationshandboken. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_The_server_configuration_file.html)
+Beskrivningen om serverkonfigurationsfilen har lagts till i installationshandboken. [Läs mer](../../installation/using/the-server-configuration-file.md)
 
-Ett avsnitt har lagts till som beskriver installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_Introduction.html)
+Ett avsnitt har lagts till som beskriver installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller. [Läs mer](../../installation/using/hosting-models.md)
 
-Ett avsnitt har lagts till som beskriver avinstallation av Campaign-servern. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
+Ett avsnitt har lagts till som beskriver avinstallation av Campaign-servern. [Läs mer](../../installation/using/uninstalling-campaign.md)
 
-Starthandböckerna [Säkerhet](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), [Leverans](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) och [Sekretess](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html) har uppdaterats.
+Starthandböckerna [Säkerhet](https://helpx.adobe.com/se/campaign/kb/acc-security.html), [Leverans](../../delivery/using/deliverability-key-points.md) och [Sekretess](../../platform/using/privacy-management.md) har uppdaterats.
 
-Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats för att återspegla produktändringar. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
+Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats för att återspegla produktändringar. [Läs mer](../../workflow/using/data-loading--file-.md)
 
-Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/triggers-and-campaign.html)
+Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
-Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
-Ytterligare information om SOAP-autentiseringsmetoder för transaktionsmeddelanden har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Event_description.html)
+Ytterligare information om SOAP-autentiseringsmetoder för transaktionsmeddelanden har lagts till. [Läs mer](../../message-center/using/event-description.md)
 
-Konfigurationsstegen för Apache har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Integration_into_a_Web_server.html#Configuring_Apache_web_server_in_RHEL)
+Konfigurationsstegen för Apache har uppdaterats. [Läs mer](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-En ny sida har lagts till med en lista över slutpunkter för Campaign Standard och Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-endpoints.html)
+En ny sida har lagts till med en lista över slutpunkter för Campaign Standard och Campaign Classic. [Läs mer](../../installation/using/campaign-network-endpoints.md)
 
-Artikeln Bästa praxis för datapaket har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/data-package-best-practices.html)
+Artikeln Bästa praxis för datapaket har uppdaterats. [Läs mer](../../configuration/using/data-model-best-practices.md)
 
-Dokumentationen Hantera erbjudanden har uppdaterats med ett nytt avsnitt som listar bästa praxis. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/ITA_Interaction_Overview_Interaction_best_practices.html)
+Dokumentationen Hantera erbjudanden har uppdaterats med ett nytt avsnitt som listar bästa praxis. [Läs mer](../../interaction/using/interaction-best-practices.md)
 
 En ny kunskapsbasartikel om hur man använder erbjudandekatalogen i Adobe Campaign Classic har skapats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/offer-best-practices.html)
 
@@ -414,30 +414,30 @@ Avsnittet Underliggande arbetsflödesaktivitet har förbättrats med ett exempel
 
 Sidan med en [matris för lokala och värdbaserade funktioner i Campaign Classic](../../installation/using/capability-matrix.md) har uppdaterats med information om e-postmeddelanden som är osynliga för leveransmottagarna.
 
-Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
+Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](../../message-center/using/template-publication.md)
 
-Avsnittet Obearbetade och ej levererade e-postmeddelanden har uppdaterats med mer information om fälten Vidarebefordringsadress och Adress för fel. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Deploying_an_instance.html#Unprocessed_bounce_mails)
+Avsnittet Obearbetade och ej levererade e-postmeddelanden har uppdaterats med mer information om fälten Vidarebefordringsadress och Adress för fel. [Läs mer](../../installation/using/deploying-an-instance.md)
 
-Ett nytt avsnitt om bästa praxis för arbetsflödesplanering har lagts till. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Workflow_best_practices.html#Execution_and_performance)
+Ett nytt avsnitt om bästa praxis för arbetsflödesplanering har lagts till. [Läs mer](../../workflow/using/workflow-best-practices.md)
 
 Två nya alternativ har lagts till i listan över alternativ i Campaign: XtkSecurity_Restrict_EditXML och NmsOperation_OperationMgtDebug.
-[Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+[Läs mer](../../installation/using/configuring-campaign-options.md)
 
 Information har lagts till om de olika externa konton som är tillgängliga i Campaign Classic och hur de konfigureras.
-[Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html)
+[Läs mer](../../installation/using/external-accounts.md)
 
 Avsnittet Analysverktyg för datakoppling har uppdaterats för att återspegla ändringar i gränssnittet.
-[Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
+[Läs mer](../../platform/using/adobe-analytics-data-connector.md)
 
 Information har lagts till om faktureringsrapporten.
-[Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#Billing_report)
+[Läs mer](../../production/using/monitoring-processes.md)
 
 Dokumentation om integrationen mellan delade publiker har uppdaterats.
-[Läs mer](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
+[Läs mer](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
 Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
-Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
+Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 Inställningsproceduren för domännamnet i Campaign har förbättrats och uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html)
 
@@ -445,40 +445,38 @@ Migreringsproceduren för Android-appar från Google Cloud Messaging (GCM) till 
 
 Handboken Ändra storlek på maskinvara i Campaign har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html)
 
-Information har lagts till om query banding för det externa Teradata-kontot. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#External_database_external_account)
+Information har lagts till om query banding för det externa Teradata-kontot. [Läs mer](../../installation/using/external-accounts.md)
 
 ## Januari 2019{#release-doc-16-01-2019}
 
-Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/triggers-and-campaign.html)
+Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
-Ett meddelande har lagts till i avsnittet Godkännande av erbjudande för att specificera att &quot;Godkänt innehåll&quot; indikerar att godkännandeprocessen för innehåll har uppnåtts. Detta gäller oavsett om alla erbjudanden har aktiverats/godkänts eller inte. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
+Ett meddelande har lagts till i avsnittet Godkännande av erbjudande för att specificera att &quot;Godkänt innehåll&quot; indikerar att godkännandeprocessen för innehåll har uppnåtts. Detta gäller oavsett om alla erbjudanden har aktiverats/godkänts eller inte. [Läs mer](../../interaction/using/offer-catalog-overview.md)
 
-Ett nytt avsnitt har lagts till i installationshandboken med alternativ från noderna administration/plattform/alternativ. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+Ett nytt avsnitt har lagts till i installationshandboken med alternativ från noderna administration/plattform/alternativ. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
-Information har lagts till om användningen av fröadresser för att skydda din e-postlista. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
+Information har lagts till om användningen av fröadresser för att skydda din e-postlista. [Läs mer](../../delivery/using/creating-seed-addresses.md)
 
 De viktigaste stegen när du skapar och skickar en leverans har grupperats om till ett nytt avsnitt med referenser till de olika kanalerna vid behov. [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-Avsnittet [E-postarkivering](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html) har flyttats, omorganiserats och förbättrats med tydlig information:
+Avsnittet [E-postarkivering](../../installation/using/email-archiving.md) har flyttats, omorganiserats och förbättrats med tydlig information:
 
-* Bästa praxis har lagts till för e-postmeddelanden per anslutning och IP-adressers parametrar när man skickar med BCC. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Best_practices)
+* Bästa praxis har lagts till för e-postmeddelanden per anslutning och IP-adressers parametrar när man skickar med BCC.
 
-* Vi har uppdaterat stegen gällande att uppgradera till det nya systemet för e-postarkivering (osynlig för leveransmottagarna). Detta gäller om du redan använde e-postarkivering med en äldre version (före Adobe Campaign 17.2 – build 8795). [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
+* Vi har uppdaterat stegen gällande att uppgradera till det nya systemet för e-postarkivering (osynlig för leveransmottagarna). Detta gäller om du redan använde e-postarkivering med en äldre version (före Adobe Campaign 17.2 – build 8795).
 
-Ett användningsfall l har lagts till i handboken Automatisera med arbetsflöden: skicka personaliserade aviseringar till operatörer. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
+Ett användningsfall l har lagts till i handboken Automatisera med arbetsflöden: skicka personaliserade aviseringar till operatörer. [Läs mer](../../workflow/using/sending-personalized-alerts-to-operators.md)
 
-Avsnittet &quot;Migrera till en ny version&quot; har uppdaterats. Dokumentationen innehåller nu bara information om stegen för att migrera till Adobe Campaign Classic version 7 från en äldre version. Detta eftersom det inte längre är möjligt att migrera till Adobe Campaign version 6.11. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+Avsnittet &quot;Migrera till en ny version&quot; har uppdaterats. Dokumentationen innehåller nu bara information om stegen för att migrera till Adobe Campaign Classic version 7 från en äldre version. Detta eftersom det inte längre är möjligt att migrera till Adobe Campaign version 6.11. [Läs mer](../../migration/using/about-migration.md)
 
-Avsnittet &quot;Återförsök efter ett tillfälligt leveransfel&quot; har klargjorts. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
+Avsnittet &quot;Återförsök efter ett tillfälligt leveransfel&quot; har klargjorts. [Läs mer](../../delivery/using/understanding-delivery-failures.md)
 
-Länkar till avsnittet &quot;Redigerare för digitalt innehåll&quot; har lagts till i avsnittet &quot;Definiera e-postinnehållet&quot;. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Defining_the_email_content.html#Message_content)
+Länkar till avsnittet &quot;Redigerare för digitalt innehåll&quot; har lagts till i avsnittet &quot;Definiera e-postinnehållet&quot;. [Läs mer](../../delivery/using/defining-the-email-content.md)
 
-Avsnittet &quot;Transaktionsmeddelandets arkitektur&quot; har uppdaterats med en varning som specificerar att man inte kan installera kontroll- och körningsinstanserna på samma maskin. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/MCE_Introduction_Transactional_messaging_architecture.html)
+Avsnittet &quot;Transaktionsmeddelandets arkitektur&quot; har uppdaterats med en varning som specificerar att man inte kan installera kontroll- och körningsinstanserna på samma maskin. [Läs mer](../../message-center/using/transactional-messaging-architecture.md)
 
-Avsnittet &quot;Arbetsflödesövervakning&quot; har uppdaterats med ett meddelande för versioner mellan 8700 och 8977 (18.10) inklusive en länk till den tekniska dokumentationen om hur Workflow HeatMap-paketet installeras för dessa versioner. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#About_the_Workflow_HeatMap)
+Avsnittet &quot;Arbetsflödesövervakning&quot; har uppdaterats med ett meddelande för versioner mellan 8700 och 8977 (18.10) inklusive en länk till den tekniska dokumentationen om hur Workflow HeatMap-paketet installeras för dessa versioner. [Läs mer](../../workflow/using/heatmap.md)
 
-Ett användningsfall har lagts till om hur du skickar ett e-postmeddelande med anpassade datafält med hjälp av berikandeaktiviteten i ett arbetsflöde. [Läs mer](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
+Ett användningsfall har lagts till om hur du skickar ett e-postmeddelande med anpassade datafält med hjälp av berikandeaktiviteten i ett arbetsflöde. [Läs mer](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
 Videor med funktioner har flyttats [hit](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html).
-
-Två tekniska dokument har lagts till om [Teradata](https://helpx.adobe.com/se/campaign/kb/campaign_fda_teradata.html) och [MySQL 5.7](https://helpx.adobe.com/se/campaign/kb/campaign_fda_mysql.html).
