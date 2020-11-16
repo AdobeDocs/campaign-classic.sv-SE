@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1333'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Mer exakt hjälper det plattformsadministratörerna att:
 
 Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](../../workflow/using/about-workflows.md), [aktiviteter](../../workflow/using/about-activities.md) och [arbetsflöden](../../workflow/using/workflow-best-practices.md).
 
-Workflow HeatMap är tillgängligt som standard i Adobe Campaign från och med version 18.10. Om du har ett build-värde mellan 8 700 och 8 977 (18,10) kan du också utnyttja den här funktionen. Kontakta [Adobe kundtjänst](https://support.neolane.net/) och följ instruktionerna från [den här sidan](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) för att få mer information om hur du installerar motsvarande paket.
+Workflow HeatMap är tillgängligt som standard i Adobe Campaign från och med version 18.10. Om du har ett build-värde mellan 8 700 och 8 977 (18,10) kan du också utnyttja den här funktionen. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) och följ instruktionerna från [den här sidan](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) för att få mer information om hur du installerar motsvarande paket.
 
 När du först öppnar Workflow HeatMap visas följande popup-fönster. Detta avtal tillåter överföring och lagring i USA som gör att Adobe Campaign kan:
 
