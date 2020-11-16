@@ -12,23 +12,23 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 8%
+source-wordcount: '795'
+ht-degree: 6%
 
 ---
 
 
 # Version 18.6{#release-18-6}
 
-## Version 18.6.2 - build 8949{#release-18-6-3-build-8949}
+## Version 18.6.2 – build 8949{#release-18-6-3-build-8949}
 
 22 augusti 2018
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+>Det här bygget har återkallats. Uppgradera [till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
@@ -42,7 +42,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td> Frågeränder<br /> </td> 
-   <td> <p>När flera Campaign-användare ansluter till samma externa FDA Teradata-konto kan du nu skicka ett frågeband (nyckel/värde-par) som är specifikt för varje användare. Varje gång en Campaign-användare utför en fråga i Teradata-databasen kan Adobe Campaign nu skicka metadata som är kopplade till användaren. Dessa data, som består av en lista med nycklar och värden, kan sedan användas av Teradata-administratörer för revision eller för att hantera åtkomsträttigheter, till exempel.</p><p>Mer information finns i den <a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">detaljerade dokumentationen</a>.</p> </td>
+   <td> <p>När flera Campaign-användare ansluter till samma externa FDA Teradata-konto kan du nu skicka ett frågeband (nyckel/värde-par) som är specifikt för varje användare. Varje gång en Campaign-användare utför en fråga i Teradata-databasen kan Adobe Campaign nu skicka metadata som är kopplade till användaren. Dessa data, som består av en lista med nycklar och värden, kan sedan användas av Teradata-administratörer för revision eller för att hantera åtkomsträttigheter, till exempel.</p><p>Mer information finns i den <a href="../../installation/using/external-accounts.md">detaljerade dokumentationen</a>.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -78,13 +78,13 @@ Mer information om frågeflätning finns i följande artiklar:
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## Version 18.6 - build 8947{#release-18-6-build-8947}
+## Version 18.6 – build 8947{#release-18-6-build-8947}
 
 25 juni 2018
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+>Det här bygget har återkallats. Uppgradera [till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [teknisk support](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
