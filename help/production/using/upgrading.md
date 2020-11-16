@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 1%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Så här kör du uppgraderingsfilen:
 
 1. Kör **setup.exe**.
 
-   Om du vill hämta den här filen går du till Adobe Campaign supportsida ( [https://support.neolane.net/](https://support.neolane.net/)) via länken **Hämtningscenter** .
+   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/downloads) med dina användaruppgifter. Läs mer om distribution av programvara på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
 1. Klicka på **[!UICONTROL Next]** .
@@ -127,7 +127,7 @@ Information om hur du uppdaterar klientkonsolen finns i [det här avsnittet](../
 
 ### Hämta uppdaterade paket {#obtain-updated-packages}
 
-Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: Gå till Adobe Campaign Support-sidan ( [https://support.neolane.net/](https://support.neolane.net/)) via länken **Download Center** .
+Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: ansluta till [programvarudistributionsportalen](https://experience.adobe.com/downloads) med dina användaruppgifter. Läs mer om distribution av programvara på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Filen är **nlserver6-v7-XXX.rpm**
 
