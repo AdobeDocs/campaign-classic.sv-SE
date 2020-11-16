@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 99%
@@ -62,7 +62,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td>Äldre binär iOS-fil<br></td>
   <td><p>Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell.<p>
   <p> Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta.
-  <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-http2.html">Läs mer</a></p>
+  <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html">Läs mer</a></p>
   <p><em>Måldatum för borttagning: 2021</em></p>
   </td>
  </tr>
