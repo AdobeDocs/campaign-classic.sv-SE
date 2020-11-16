@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 12%
+source-wordcount: '1007'
+ht-degree: 11%
 
 ---
 
@@ -37,7 +37,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 * Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs däremot att du delar lösenordet med alla enheter som du hanterar.
 
-   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till Adobe Support-teamet via en [supportanmälan](https://support.neolane.net) för att få den överförd till Campaign-servern.
+   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att kunna överföra den till Campaign-servern.
 
 * Använd arbetsflöden för att ta bort data på rätt sätt (hantera lagring från arbetsflöden som förbrukar data).
 * Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
@@ -45,7 +45,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 * Det kan hända att du loggar in på SFTP för att direkt kontrollera vad som finns där.
 * Kom ihåg att SFTP-diskhantering i första hand är ditt ansvar.
 * Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
-* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser i tillåtelselista via en [supportanmälan](https://support.neolane.net).
+* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser till tillåtelselista via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 ## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
 
-I avsnittet nedan visas den information som ska kontrolleras och skickas till supportteamet på Adobe via en [supportanmälan](https://support.neolane.net) när anslutningsproblem med värdbaserade SFTP-servrar på Adobe inträffar.
+I avsnittet nedan listas den information som ska kontrolleras och tillhandahållas till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när anslutningsproblem med värdbaserade SFTP-servrar från Adobe uppstår.
 
 1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan göra ett **[!UICONTROL GET]** anrop på instansens **[!UICONTROL /r/test]** slutpunkt:
 
