@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: c7395094-c635-45ab-8455-a050f7d16b64
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 4%
@@ -46,7 +46,7 @@ Så här skapar du en ny instans:
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://machine) typen URL.
+   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) typen URL.
 
    >[!CAUTION]
    >
