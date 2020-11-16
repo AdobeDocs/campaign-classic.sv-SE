@@ -1,6 +1,6 @@
 ---
-title: Viktiga punkter vid hantering av slutprodukter i Adobe Campaign Classic
-description: Vilka är de viktigaste punkterna att kontrollera när man hanterar produkter i Adobe Campaign Classic?
+title: Leveransnyckelpoäng
+description: viktiga punkter att kontrollera för att förbättra leveransen
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
