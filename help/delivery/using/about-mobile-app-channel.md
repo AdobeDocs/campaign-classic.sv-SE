@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -95,7 +95,7 @@ Adobe Campaign-servern måste kunna kontakta APN-servern på följande portar:
 
    >[!NOTE]
    >
-   > Från och med Campaign 20.3 är den gamla binära kopplingen för iOS föråldrad. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
 Använd följande kommandon för att kontrollera att den fungerar som den ska:
 
