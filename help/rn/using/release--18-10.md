@@ -12,17 +12,17 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 8%
+source-wordcount: '2367'
+ht-degree: 7%
 
 ---
 
 
 # Version 18.10{#release-18-10}
 
-## Version 18.10.6 - build 8985{#release-18-10-6-build-8985}
+## Version 18.10.6 – build 8985{#release-18-10-6-build-8985}
 
 12 juli 2019
 
@@ -34,7 +34,7 @@ ht-degree: 8%
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 * Ett problem som kunde orsaka fel i datorloggarna har korrigerats. (NEO-8978)
 
-## Version 18.10.5 - build 8984{#release-18-10-5-build-8984}
+## Version 18.10.5 – build 8984{#release-18-10-5-build-8984}
 
 23 april 2019
 
@@ -44,7 +44,7 @@ ht-degree: 8%
 * 10 000 poster har tagits bort i heatmap-kartan för arbetsflöde för att åtgärda ett problem med saknade data. (NEO-12329)
 * Ett problem har korrigerats när alternativet Behåll alla ytterligare data från huvuduppsättningen användes i en arbetsflödesaktivitet för anrikning. (NEO-13291)
 
-## Version 18.10.4 - build 8983{#release-18-10-4-build-8983}
+## Version 18.10.4 – build 8983{#release-18-10-4-build-8983}
 
 15 april 2019
 
@@ -57,13 +57,13 @@ ht-degree: 8%
 * I Analytics-integreringen är det nu tillåtet att hämta AAM segmentdata med tecknet %. (NEO-12025)
 * Korrigerade ett Tomcat-kraschproblem när push-meddelanden skickades med HTTP2. (NEO-12701)
 
-## Version 18.10.3 - build 8981{#release-18-10-3-build-8981}
+## Version 18.10.3 – build 8981{#release-18-10-3-build-8981}
 
 29 januari 2019
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+>Det här bygget har återkallats. Uppgradera [till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Förbättringar**
 
@@ -81,13 +81,13 @@ ht-degree: 8%
 * Korrigerade ett problem med teckenigenkänning när push-meddelanden skickades till ett mobilprogram.
 * Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt MID-källkonto.
 
-## Version 18.10.2 - build 8978{#release-18-10-2-build-8978}
+## Version 18.10.2 – build 8978{#release-18-10-2-build-8978}
 
 6 december 2018
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+>Det här bygget har återkallats. Uppgradera [till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Förbättringar**
 
@@ -103,13 +103,13 @@ ht-degree: 8%
 * Korrigerade ett problem med beräkningen av arbetsflödets varaktighet i Workflow HeatMap.
 
 
-## Version 18.10 - build 8977{#release-18-10-build-8977}
+## Version 18.10 – build 8977{#release-18-10-build-8977}
 
 5 nov 2018
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Uppgradera [till den senaste versionen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) eller kontakta [teknisk support](https://support.neolane.net/).
+>Det här bygget har återkallats. Uppgradera [till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
@@ -122,7 +122,7 @@ ht-degree: 8%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Förbättringar av push-meddelanden<br /> </td> 
+   <td> Push notification improvements<br /> </td> 
    <td> Ett antal förbättringar har implementerats för push-meddelanden i Adobe Campaign:<br /> 
     <ul> 
      <li> <p>Spåra tysta meddelanden i iOS </p> </li> 
@@ -151,7 +151,7 @@ ht-degree: 8%
 
 **Förbättringar**
 
-* API:er i Campaign Classic finns nu på en [dedikerad sida](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
+* API:er i Campaign Classic finns nu på en [dedikerad sida](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
 * PostgreSQL 10, Debian 9 och Teradata 16.20 stöds nu. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 * När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * Alternativet **för datumberäkningsformeln** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktmeddelandeleverans. (NEO-9792)
