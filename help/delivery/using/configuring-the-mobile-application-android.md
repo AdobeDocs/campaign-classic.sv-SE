@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1593'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,14 @@ När paketet har installerats kan du definiera dina Android-appinställningar i 
 >
 >Mer information om hur du konfigurerar din app för iOS och hur du skapar en leverans för iOS finns i det här [avsnittet](../../delivery/using/configuring-the-mobile-application.md).
 
+Viktiga steg är:
+
+1. [Konfigurera det externa Android-kontot](#configuring-external-account-android)
+1. [Konfigurera Android-tjänsten](#configuring-android-service)
+1. [Skapa mobilappen i Campaign](#creating-android-app)
+1. [Utöka appschemat med ytterligare data](#extend-subscription-schema)
+
+Du kan sedan [skapa ett omfattande Android-meddelande](#creating-android-delivery).
 
 ## Konfigurera externt Android-konto {#configuring-external-account-android}
 
@@ -94,23 +102,17 @@ När du har skapat tjänsten måste du nu skapa ditt Android-program:
    >
    > Det går **[!UICONTROL Integration key]** att anpassa med strängvärde, men det måste vara exakt detsamma som det som anges i SDK:n.
 
-1. Välj något av **[!UICONTROL API version]**:
-   * HTTP. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-   * HTTPV1. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+1. Välj **[!UICONTROL API version]**:
 
-1. Fill in the **[!UICONTROL Firebase Cloud Messaging settings for the Android connection]** fields.
+   * HTTPV1. Konfigurationen beskrivs i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+   * HTTP (äldre). Konfigurationen beskrivs i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+
+
+1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
 1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
 
 Som standard sparar Adobe Campaign en nyckel i **[!UICONTROL User identifier]** (@userKey)-fältet i **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabellen. Med den här nyckeln kan du länka en prenumeration till en mottagare. Om du vill samla in ytterligare data (till exempel en komplex avstämningsnyckel) måste du använda följande konfiguration:
-
-1. Skapa ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schemat och definiera de nya fälten.
-
-1. Definiera mappningen på **[!UICONTROL Subscription parameters]** fliken.
-
-   >[!CAUTION]
-   >
-   >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är desamma som de i mobilprogramkoden. Se avsnittet [Integrera Campaign SDK i mobilappen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
 
 ### Välj API-version{#select-api-version}
 
@@ -126,7 +128,7 @@ Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
 1. Klicka **[!UICONTROL Load project json file to extract projet details...]** för att läsa in JSON-nyckelfilen direkt. Mer information om hur du extraherar JSON-filen finns på den här [sidan](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
-1. Du kan även ange följande manuellt:
+   Du kan även ange följande manuellt:
    * **[!UICONTROL Project Id]**
    * **[!UICONTROL Private Key]**
    * **[!UICONTROL Client Email]**
@@ -179,6 +181,19 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 | meddelande | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
 
 <br>
+
+## Utöka appsubscriptionRcp-schemat {#extend-subscription-schema}
+
+Du måste utöka **appsubscriptionRcp** för att definiera nya fält för att lagra parametrar från appen i Campaign-databasen. Dessa fält kommer till exempel att användas för personalisering. Så här gör du:
+
+1. Skapa ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schemat och definiera de nya fälten. Läs mer om schematillägget på [den här sidan](../../configuration/using/about-schema-edition.md)
+
+1. Definiera mappningen på **[!UICONTROL Subscription parameters]** fliken.
+
+   >[!CAUTION]
+   >
+   >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är desamma som de i mobilprogramkoden. Se avsnittet [Integrera Campaign SDK i mobilappen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
+
 
 ## Skapa ett multimediemeddelande från Android {#creating-android-delivery}
 
