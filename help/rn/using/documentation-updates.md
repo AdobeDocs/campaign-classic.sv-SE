@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 98%
+source-wordcount: '3528'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,9 @@ Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/usin
 
 [Campaign 20.2.3-versionen](../../rn/using/release--20-2.md#release-20-2-3-build-9182) har övergått till General Availability (GA).
 
-Sektionen Sekretess har flyttats och berikats med två nya avsnitt: [Sekretesshantering](../../platform/using/privacy-management.md) och [hantering av sekretessförfrågningar](../../platform/using/privacy-requests.md).
+Sektionen Sekretess har flyttats och berikats med två nya sidor: [Sekretesshantering](../../platform/using/privacy-management.md) och [hantering av sekretessförfrågningar](../../platform/using/privacy-requests.md).
+
+En anteckning har lagts till på konfigurationssidan för server med mellankällkod för att ange att det externa kontots interna namn inte ska uppdateras när servern har konfigurerats. [Läs mer](../../installation/using/mid-sourcing-server.md)
 
 ## Oktober 2020 {#oct-2020}
 
