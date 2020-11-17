@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: e0ca252aceb0f2abca4a1324c5e4ece038927533
 workflow-type: tm+mt
-source-wordcount: '2443'
-ht-degree: 1%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +82,7 @@ Innan du skapar sekretessförfrågningar måste du definiera det namnutrymme som
 
 Tre namnutrymmen är tillgängliga direkt: e-post, telefon och mobiltelefon. Om du behöver ett annat namnutrymme (till exempel ett anpassat mottagarfält) kan du skapa ett nytt från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Skapa en sekretessförfrågan {#create-privacy-request-ui}
+## Creating a Privacy request {#create-privacy-request-ui}
 
 Med **Adobe Campaign gränssnitt** kan du skapa dina sekretessförfrågningar och spåra deras utveckling. Följ dessa anvisningar för att skapa en ny sekretessförfrågan:
 
@@ -129,7 +129,7 @@ Om du har skapat anpassade tabeller som har en länk till mottagartabellen (egen
 >Om du utför sekretessbatchbegäranden med arbetsflöden för profilborttagning bör du tänka på följande:
 >* Borttagning av profiler via arbetsflöden bearbetar inte underordnade tabeller.
 >* Du måste hantera borttagningen för alla underordnade tabeller.
->* Adobe rekommenderar att du skapar ett ETL-arbetsflöde som lägger till de rader som ska tas bort i tabellen för sekretessåtkomst och låter användaren ta bort **[!UICONTROL Delete privacy requests data]** dem. Vi rekommenderar att du av prestandaskäl begränsar till 200 profiler per dag att ta bort.
+>* Adobe rekommenderar att du skapar ett ETL-arbetsflöde som lägger till de rader som ska tas bort i tabellen för sekretessåtkomst och låter arbetsflödet utföra borttagningen. **[!UICONTROL Delete privacy requests data]** Vi rekommenderar att du av prestandaskäl begränsar till 200 profiler per dag att ta bort.
 
 
 ### Status för sekretessförfrågningar {#privacy-request-statuses}
@@ -443,14 +443,14 @@ Om du vill fylla i värdena kan du använda flera metoder:
 
 Du bör då se till att du aldrig säljer personuppgifter till någon tredje part för profiler som har avanmält sig.
 
-Om du vill ändra avanmälningsstatus går du till **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** och väljer en mottagare. På fliken **[!UICONTROL General]** ser du det fält som har konfigurerats i föregående avsnitt.
+1. Om du vill ändra avanmälningsstatus går du till **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** och väljer en mottagare. På fliken **[!UICONTROL General]** ser du det fält som har konfigurerats i föregående avsnitt.
 
-![](assets/privacy-ccpa-5.png)
+   ![](assets/privacy-ccpa-5.png)
 
-Konfigurera mottagarlistan så att den översta kolumnen visas. Mer information om hur du konfigurerar listor finns i den [detaljerade dokumentationen](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+1. Konfigurera mottagarlistan så att den översta kolumnen visas. Mer information om hur du konfigurerar listor finns i den [detaljerade dokumentationen](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-![](assets/privacy-ccpa-6.png)
+   ![](assets/privacy-ccpa-6.png)
 
-Du kan klicka på kolumnen för att sortera mottagare enligt avanmälningsinformationen. Du kan också skapa ett filter så att endast mottagare som har avanmält sig visas. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. Du kan klicka på kolumnen för att sortera mottagare enligt avanmälningsinformationen. Du kan också skapa ett filter så att endast mottagare som har avanmält sig visas. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
 
-![](assets/privacy-ccpa-7.png)
+   ![](assets/privacy-ccpa-7.png)
