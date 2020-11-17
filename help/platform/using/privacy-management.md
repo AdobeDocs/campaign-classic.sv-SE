@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa sekr
 
 * I det här avsnittet finns allmän information om vilken sekretesshantering som är och de funktioner som Adobe Campaign tillhandahåller för att hantera [rätten till åtkomst och rätten att bli glömd](#right-access-forgotten).
 
-* Det innehåller även information om viktiga funktioner för att hantera sekretess ([samtycke, datalagring och användarroller](#consent-retention-roles)) samt bästa praxis för att hjälpa dig att uppfylla sekretesskraven när du använder Adobe Campaign.
+* Det innehåller även information om viktiga funktioner för att hantera sekretess ([samtycke, lagring och roller](#consent-retention-roles)) samt bästa praxis för att hjälpa dig att uppfylla sekretesskraven när du använder Adobe Campaign.
 
 ## Bestämmelser om integritetshantering {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ Funktionerna för att hantera vissa aspekter av samtycke har varit centrala för
 
 Mer information om hantering av samtycke finns i den [detaljerade dokumentationen](../../delivery/using/managing-subscriptions.md).
 
-Förutom de verktyg för hantering av samtycke som Adobe Campaign tillhandahåller har ni möjlighet att spåra om en konsument har valt ut för försäljning av personuppgifter. Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information).
+Förutom de verktyg för hantering av samtycke som Adobe Campaign tillhandahåller har ni möjlighet att spåra om en konsument har valt ut för försäljning av personuppgifter. Se [det här avsnittet](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
 
 ### Datalagring {#data-retention}
 
