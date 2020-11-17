@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 34ee3d99-4ffb-4279-b994-5ab7abc7cf06
 translation-type: tm+mt
-source-git-commit: 270c86a8a15ebe38907be258aed9d245d2a49b6d
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ I det här avsnittet finns information om installation och konfiguration av en s
 Arkitekturen med&quot;mellanleverantörer&quot; presenteras i driftsättningen [med](../../installation/using/mid-sourcing-deployment.md)mellanleverantörer.
 
 När du installerar en server med mellanlagring utförs samma process som när du installerar en server på det vanliga sättet (se standardkonfigurationen). Det är en oberoende instans med en egen databas som kan användas för att köra leveranser. Kort och gott: den innehåller en extra konfiguration som tillåter att fjärrinstanser kör leveranser via den i läget mitt i källkoden.
+
+>[!CAUTION]
+>
+>När du har konfigurerat mittkällservern och [synkroniseringsarbetsflödena](../../workflow/using/transfer-to-mid-sourcing.md) har körts för första gången, ska du inte uppdatera det interna namnet på mittkällans externa konton.
 
 ## Steg för att installera och konfigurera en instans {#steps-for-installing-and-configuring-an-instance}
 
