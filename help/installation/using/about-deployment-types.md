@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 12bb3b4ba833d2c265350167be61bd916e8b3fc8
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 8%
@@ -28,9 +28,7 @@ Om det finns en konfiguration på flera datorer behöver du inte använda samma 
 
 >[!NOTE]
 >
->Steg för huvudinstallationskonfigurationen kan bara utföras av
->Adobe för driftsättningar på Adobe. Till exempel
->konfigurera server- och instanskonfigurationsfilerna.
+>De huvudsakliga installationskonfigurationsstegen kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att konfigurera server- och instanskonfigurationsfilerna.
 >
 >Mer information om de viktigaste skillnaderna mellan distributioner finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [Funktionsskillnader för värdbaserade och anläggningsdistributioner](../../installation/using/capability-matrix.md).
 
