@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 70%
@@ -17,9 +17,9 @@ ht-degree: 70%
 
 ## Nyheter
 
-* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)**<br/> av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
+* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)**<br/> av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O
 
-* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APN-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APNs-providern.
+* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APN-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APN-providern
 
 * **[Lägg till uttryckssymboler i meddelanden](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
 
