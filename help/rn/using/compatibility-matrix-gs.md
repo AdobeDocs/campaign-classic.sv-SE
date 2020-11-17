@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: e615b2420d126cd42ed52257491282b36975f9ff
+source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# Standardkompatibilitetsmatris för guld{#compatibility-matrix-gs}
+# Gold Standard Compatibility matrix{#compatibility-matrix-gs}
 
 I det här dokumentet finns en lista över alla system och komponenter som stöds för byggen med **Adobe Campaign Classic Gold Standard** 19.1. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
@@ -165,7 +165,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 >
 >PostgreSQL är standarddatabasservern för hostingmiljöer.
 
-## CRM connectors{#CRMconnectors-gs}
+## CRM-kopplingar{#CRMconnectors-gs}
 
 <table>
 <tbody>
@@ -190,8 +190,8 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API - lokal: 2007, 2015, 2016</p>
-<p>Soap API - online: 2015, 2016</p>
+<p>Soap API – lokal: 2007, 2015 och 2016</p>
+<p>Soap API – online: 2015 och 2016</p>
 <p>Webb-API - lokalt och online: 365, 2016, 2016 uppdatering 1</p>
 </td>
 </tr>
@@ -308,8 +308,8 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9-12</p>
-<p>med mobil SDK build 1.0.25, kompatibel med 32- och 64-bitarsversioner.</p>
+<p>iOS 9-14</p>
+<p>med mobil SDK build 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
 </td>
 </tr>
 </tbody>
