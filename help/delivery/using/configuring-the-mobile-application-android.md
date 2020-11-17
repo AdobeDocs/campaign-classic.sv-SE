@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
+source-git-commit: a69c9132a776eac5591bbbac0c89d6374047bb17
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 2%
@@ -102,11 +102,7 @@ När du har skapat tjänsten måste du nu skapa ditt Android-program:
    >
    > Det går **[!UICONTROL Integration key]** att anpassa med strängvärde, men det måste vara exakt detsamma som det som anges i SDK:n.
 
-1. Välj **[!UICONTROL API version]**:
-
-   * HTTPV1. Konfigurationen beskrivs i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-   * HTTP (äldre). Konfigurationen beskrivs i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-
+1. Välj **[!UICONTROL API version]**: HTTP v1 eller HTTP (äldre). Dessa konfigurationer beskrivs i [det här avsnittet](#select-api-version)
 
 1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
@@ -118,9 +114,10 @@ Som standard sparar Adobe Campaign en nyckel i **[!UICONTROL User identifier]** 
 
 När du har skapat en tjänst och ett nytt mobilprogram måste du konfigurera ditt mobilprogram beroende på den valda API-versionen.
 
-Mer information om tjänster och mobilapplikationer finns i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)
+* **Konfiguration av HTTP v1** beskrivs i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+* **HTTP-konfigurationen (äldre)** beskrivs i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
 
-#### Använd HTTP v1 API-version{#android-service-httpv1}
+#### Konfigurera HTTP v1 API{#android-service-httpv1}
 
 Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
@@ -157,7 +154,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 <br>
 <br>
 
-#### HTTP API-version{#android-service-http}
+#### Konfigurera HTTP-API (äldre){#android-service-http}
 
 Följ stegen nedan för att konfigurera API-versionen för HTTP (äldre):
 
