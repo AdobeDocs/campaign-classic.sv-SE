@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 022fe39e849ceafa6678120ff455d07432fb9a1f
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -96,11 +96,9 @@ Med det externa Teradata-kontot kan du ansluta Campaign-instansen till din exter
 
    * **[!UICONTROL Database]**: Databasens namn (valfritt)
 
-   * 
-      * **[!UICONTROL Options]**: Alternativ som ska skickas via Teradata. Använd följande format: &#39;parameter=value&#39;. Använd en semikolumn som avgränsare mellan värden.
-   * 
-      * **[!UICONTROL Timezone]**: Tidszon angiven i Teradata. [Läs mer](#timezone)
+   * **[!UICONTROL Options]**: Alternativ som ska skickas via Teradata. Använd följande format: &#39;parameter=value&#39;. Använd en semikolumn som avgränsare mellan värden.
 
+   * **[!UICONTROL Timezone]**: Tidszon angiven i Teradata. [Läs mer](#timezone)
 
 ### Frågeränder
 
