@@ -10,21 +10,37 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 11%
+source-wordcount: '1086'
+ht-degree: 9%
 
 ---
 
 
 # Bästa praxis och felsökning för SFTP-servrar {#sftp-server-usage}
 
-## Bästa praxis för SFTP-server {#sftp-server-best-practices}
+## Globala rekommendationer för SFTP-server {#global-recommendations}
 
-När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFTP-värdserver som tillhandahålls av Adobe. Denna SFTP är avsedd att vara ett tillfälligt lagringsutrymme där du kan styra lagring och borttagning av filer.
+När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFTP-värdserver som tillhandahålls av Adobe. Se till att du följer rekommendationerna nedan när du använder SFTP-servrar.
 
-Om utrymmet inte används eller övervakas korrekt kan det snabbt fylla det fysiska utrymmet på servern och leda till att filer trunkeras vid efterföljande överföringar. När utrymmet är mättat kan automatisk tömning utlösa och radera de äldsta filerna från SFTP-lagringen.
+* Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs däremot att du delar lösenordet med alla enheter som du hanterar.
+
+   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att kunna överföra den till Campaign-servern.
+
+* Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
+
+* Hantera fel/undantag.
+
+* Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
+
+* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser till tillåtelselista via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+## Bästa praxis för databasanvändning {#sftp-server-best-practices}
+
+SFTP-servrar är avsedda att vara tillfälliga lagringsutrymmen där du kan styra kvarhållande och borttagning av filer.
+
+Om de inte används eller övervakas på rätt sätt kan de här utrymmena snabbt fylla det fysiska utrymmet på servern och leda till att filer trunkeras vid efterföljande överföringar. När utrymmet är mättat kan automatisk tömning utlösa och radera de äldsta filerna från SFTP-lagringen.
 
 För att undvika sådana problem rekommenderar Adobe att du följer de bästa metoderna nedan.
 
@@ -35,21 +51,21 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 >Följ stegen i [det här avsnittet](https://docs.adobe.com/content/help/sv-SE/control-panel/using/faq.html#ims-org-id) för att kontrollera om instanser har AWS som värd .
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
-* Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs däremot att du delar lösenordet med alla enheter som du hanterar.
-
-   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att kunna överföra den till Campaign-servern.
 
 * Använd arbetsflöden för att ta bort data på rätt sätt (hantera lagring från arbetsflöden som förbrukar data).
-* Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
-* Hantera fel/undantag.
-* Det kan hända att du loggar in på SFTP för att direkt kontrollera vad som finns där.
-* Kom ihåg att SFTP-diskhantering i första hand är ditt ansvar.
-* Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
-* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser till tillåtelselista via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
->[!CAUTION]
->
->Om du använder en egen SFTP-server måste du följa rekommendationerna ovan så mycket som möjligt.
+* Det kan hända att du loggar in på SFTP för att direkt kontrollera vad som finns där.
+
+* Kom ihåg att SFTP-diskhantering i första hand är ditt ansvar.
+
+## Extern SFTP-serveranvändning {#external-SFTP-server}
+
+Om du använder en egen SFTP-server måste du följa rekommendationerna ovan så mycket som möjligt.
+
+När du i Campaign Classic anger en sökväg till en extern SFTP-server skiljer sig dessutom sökvägssyntaxen åt beroende på operativsystemet för SFTP-servern:
+
+* Om SFTP-servern finns i **Windows** ska du alltid använda en relativ sökväg.
+* Om STP-servern finns i **Linux** ska du alltid använda en sökväg som är relativ till hemmet (med början från &quot;~/&quot;) eller en absolut sökväg (med början från &quot;/&quot;).
 
 ## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
 
