@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 58b7070ad765ba072b9c82e75ab1100f8cb38f3a
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3588'
 ht-degree: 96%
 
 ---
@@ -37,6 +37,8 @@ FDA-dokumentationen (Campaign Federated Data Access) har förbättrats med infor
 Sektionen Sekretess har flyttats och berikats med två nya sidor: [Sekretesshantering](../../platform/using/privacy-management.md) och [hantering av sekretessförfrågningar](../../platform/using/privacy-requests.md).
 
 En anteckning har lagts till på konfigurationssidan för server med mellankällkod för att ange att det externa kontots interna namn inte ska uppdateras när servern har konfigurerats. [Läs mer](../../installation/using/mid-sourcing-server.md)
+
+Information har lagts till om syntaxen som ska användas när en sökväg till en extern SFTP-server anges. [Läs mer](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
 ## Oktober 2020 {#oct-2020}
 
