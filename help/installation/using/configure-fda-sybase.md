@@ -23,9 +23,9 @@ ht-degree: 0%
 Använd alternativet Campaign **Federated Data Access** (FDA) för att bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Sybase IQ.
 
 1. Konfigurera [Sybase IQ-databas](#configuring-sybase)
-1. Konfigurera det [externa Sybase IQ-kontot](#sybase-external) i Campaign
+1. Konfigurera Sybase IQ [externa konto](#sybase-external) i Campaign
 
-## Sybase IQ-konfiguration {#configuring-sybase}
+## sybase IQ-konfiguration {#configuring-sybase}
 
 För att ansluta till en extern Sybase IQ-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
@@ -69,9 +69,9 @@ För att ansluta till en extern Sybase IQ-databas i FDA krävs ytterligare konfi
    * Om du använder en customer.sh-fil för att deklarera sökvägen: lägg till sökvägen /opt/sybase/IQ-16_0/lib64 för variabeln LD_LIBRARY_PATH.
    * Annars använder du ett Unix-kommando.
 
-## Externt konto för Sybase IQ {#sybase-external}
+## sybase IQ externt konto {#sybase-external}
 
-Med det externa Sybase IQ-kontot kan du ansluta Campaign-instansen till din externa Sybase IQ-databas.
+Med Sybase IQ externa konto kan du ansluta Campaign-instansen till din externa Sybase IQ-databas.
 
 1. Klicka **[!UICONTROL Explorer]** på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign.
 
