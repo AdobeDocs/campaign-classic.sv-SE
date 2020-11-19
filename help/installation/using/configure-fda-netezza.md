@@ -23,13 +23,13 @@ ht-degree: 0%
 Använd alternativet Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) för att bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Netezza.
 
 1. Installera och konfigurera [Netezza-drivrutiner](#netezza-config)
-1. Konfigurera det [externa Netezza-kontot](#netezza-external) i Campaign
+1. Konfigurera Netezza [externa konto](#netezza-external) i Campaign
 
 ## Netezza-konfiguration {#netezza-config}
 
 För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
 
-1. Installera ODBC-drivrutinerna för Netezza, enligt det operativsystem du använder:
+1. Installera ODBC-drivrutinerna för Netezza enligt det operativsystem du använder:
 
    * **nz-linuxclient-v7.2.0.0.tar.gz** för Linux. Markera den mapp som motsvarar ditt operativsystem (Linux eller Linux64) och starta uppackningskommandot. Du kan lämna installationen som ska utföras i den databas som föreslås som standard: &quot;/usr/local/nz&quot;.
    * **nz-winclient-v7.2.0.0.zip** för Windows. Zippa upp filen och starta det körbara skript som hör till ditt operativsystem: nzodbcsetup.exe eller nzodbcsetup64.exe. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
@@ -70,11 +70,11 @@ För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigu
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib och /usr/local/nz/lib64. &quot;/usr/local/nz&quot; motsvarar den installationsdatabas som finns som standard när du installerar drivrutinerna. Här måste du ange vilken databas du har valt för installationen.
    * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
-   * **NZ_ODBC_INI_PATH**: platsen för filen odbc.ini. Netezza kräver också den andra variabeln för att kunna använda filen odbc.ini.
+   * **NZ_ODBC_INI_PATH**: platsen för filen odbc.ini. Netezza kräver också den andra variabeln för att använda filen odbc.ini.
 
-## Externt Netezza-konto {#netezza-external}
+## Netezza externt konto {#netezza-external}
 
-Med det externa Netezza-kontot kan du ansluta Campaign-instansen till din externa Netezza-databas.
+Med Netezza externa konto kan du ansluta Campaign-instansen till din externa Netezza-databas.
 
 1. Klicka **[!UICONTROL Explorer]** på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign.
 
