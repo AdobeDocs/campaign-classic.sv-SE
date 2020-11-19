@@ -628,7 +628,7 @@ ht-degree: 97%
       + Konfigurationsriktlinjer {#config-databases}
          + [Konfigurationssteg](installation/using/configure-fda.md)
          + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
-         + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
+         + [Konfigurera Azure synapse](installation/using/configure-fda-synapse.md)
          + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
          + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
          + [Konfigurera Netezza](installation/using/configure-fda-netezza.md)
