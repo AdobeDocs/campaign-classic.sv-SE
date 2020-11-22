@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Vanliga frågor om uppgradering av bygge
 description: Vanliga frågor om uppgraderingar av Campaign-versioner
-page-status-flag: never-activated
-uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -20,7 +17,7 @@ ht-degree: 2%
 
 # Vanliga frågor om uppgradering {#build-upgrade-faq}
 
-Adobe Campaign uppdateras regelbundet. Om du känner till våra publicerade [versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner kommer förbättringar och korrigeringar att släppas varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
+Adobe Campaign uppdateras regelbundet. Om du känner till våra publicerade [versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner kommer förbättringar och korrigeringar att släppas varje år. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
