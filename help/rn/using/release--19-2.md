@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Version 19.2
-seo-title: Version 19.2
 description: Version 19.2
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1317'
 ht-degree: 8%
 
 ---
@@ -108,7 +103,7 @@ _2 december 2019_
 * Optimering av minnesförbrukning för push-meddelanden.
 * Hanteringen av filen **logins.log** har förbättrats för optimering av prestanda och lagring. Filen delas nu upp i flera filer, en gång om dagen med högst 365 filer bevarade. [Läs mer](../../production/using/log-files.md)
 * Det externa Microsoft Dynamics CRM-kontot kan nu konfigureras med hjälp av lösenordsautentiseringsuppgifter (lösenord + användarnamn) eller certifikat (privat nyckel). [Läs mer](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Vissa förbättringar har lagts till i Hadoop FDA-kontakten för att förbättra tillförlitligheten
+* Vissa förbättringar har lagts till i Hadoop FDA-anslutningen för att förbättra tillförlitligheten
 * En särskild skyddsmodul har lagts till för att kontrollera diskutrymmet innan offentliga resurser kan överföras till servern.
 * Nya [kampanjalternativ](../../installation/using/configuring-campaign-options.md) har lagts till:
    * Med konfigurationsalternativet **WdbcKillSessionPolicy** kan du påverka beteendet **Ovillkorligt stopp** för alla arbetsflöden och PostgreSQL-databasfrågor.
@@ -137,7 +132,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 
 * Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)** . (NEO-12213)
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
-* Ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata har korrigerats. (NEO-12399)
+* Korrigerade ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata. (NEO-12399)
 * Ett problem som påverkade leveransanalysen med typologiregeln inklusive domänen ne.jp har korrigerats. (NEO-12609)
 * Korrigerade ett problem relaterat till SMS över TLS-uppdateringar som innebar en mer restriktiv certifikatprincip. Uppdateringarna kan leda till ett anslutningsfel mellan marknadsförings- och mellanleverantörsservrar om certifikatet är inaktuellt. (NEO-17698)
 * Ett problem har korrigerats när knappen för **testanslutning** användes på ett externt konto i en miljö med flera källor med vaultautentisering. (NEO-12722)
@@ -163,6 +158,6 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Ett timeout-problem vid import av data från en extern SFTP har korrigerats. (NEO-19723)
 * Ett problem har korrigerats vid åtkomst till prediktiva modeller. (NEO-19713)
 * Korrigerade ett problem som påverkade slumpmässig sampling i **delad** arbetsflödesaktivitet med Hadoop FDA-databasen. (NEO-16636)
-* Korrigerade en regression i Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgradering. (NEO-12759)
+* Korrigerade en regression på Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
 
 
