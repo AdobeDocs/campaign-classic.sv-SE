@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Krav för installationen av Campaign i Linux
 description: Krav för installationen av Campaign i Linux
-page-status-flag: never-activated
-uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
@@ -193,17 +190,17 @@ Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
 Problem kan uppstå efter en Oracle-klient eller en serveruppdatering, vid versionsändring eller vid den första installationen av instansen.
 
-Om du på klientkonsolen noterar att loggarna har oväntat lång tid (en eller flera timmar), att arbetsflödet senast har bearbetats, att nästa bearbetning har utförts och så vidare, kan det bero på ett problem mellan biblioteket för Oracle-klienten och Oracle-servern. För att undvika sådana problem
+Om du på klientkonsolen ser att loggarna har tagit oväntade lång tid (en eller flera timmar), arbetsflödets senaste bearbetning, nästa bearbetning och så vidare, kan det bero på ett problem mellan Oracle-klientens bibliotek och Oracle Server. För att undvika sådana problem
 
 1. Se till att använda den **fullständiga klienten**.
 
-   Olika problem har identifierats vid användning av Oracle Instant Client-versionen. Dessutom är det omöjligt att ändra tidszonsfilen på snabbklienten.
+   Olika problem har identifierats när du använder Oracle Instant Client-versionen. Dessutom är det omöjligt att ändra tidszonsfilen på snabbklienten.
 
 1. Kontrollera att **klientversionen** och **databasserverversionen** är **samma**.
 
-   Det är känt att blandningsversioner trots Oracles kompatibilitetsmatris och rekommendationer för att justera klient- och serverversioner orsakar problem.
+   Det är känt att blandningsversioner trots Oracle kompatibilitetsmatris och rekommendationer för att justera klient- och serverversioner orsakar problem.
 
-   Kontrollera också ORACLE_HOME-värdet för att se till att det pekar på den förväntade klientversionen (om flera versioner är installerade på datorn).
+   Kontrollera även ORACLE_HOME-värdet för att se till att det pekar på den förväntade klientversionen (om flera versioner är installerade på datorn).
 
 1. Se till att klienten och servern använder samma **tidszonsfil**.
 
