@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Skapa en leveransmall
-seo-title: Skapa en leveransmall
 description: Skapa en leveransmall
-seo-description: null
-page-status-flag: never-activated
-uuid: 8ceae1ec-9e02-4809-aa8b-1e6bd7790950
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '362'
 ht-degree: 5%
 
 ---
@@ -22,7 +17,7 @@ ht-degree: 5%
 
 # Skapa en leveransmall{#creating-a-delivery-template}
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#delivery-template-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#delivery-template-video)
 
 ## Konvertera en befintlig leverans till en mall {#converting-an-existing-delivery-to-a-template}
 
