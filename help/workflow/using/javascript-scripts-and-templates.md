@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: JavaScript-skript och -mallar
-seo-title: JavaScript-skript och -mallar
 description: JavaScript-skript och -mallar
-seo-description: null
-page-status-flag: never-activated
-uuid: d341a892-dc71-4413-acb8-9cba372b38cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1234'
 ht-degree: 2%
 
 ---
@@ -162,7 +157,7 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
 
 I det här exemplet visas att aktiviteten efter **JavaScript-kod** får åtkomst till instansvariablerna och händelsevariablerna, men aktivitetsvariablerna är inte tillgängliga utifrån (&#39;undefined&#39;).
 
-### Anropa en förekomstvariabel i en fråga {#calling-an-instance-variable-in-a-query}
+### Anropa en instansvariabel i en fråga {#calling-an-instance-variable-in-a-query}
 
 När du har angett en instansvariabel i en aktivitet kan du återanvända den i en arbetsflödesfråga.
 
