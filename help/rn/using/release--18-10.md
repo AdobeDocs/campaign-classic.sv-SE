@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Version 18.10
-seo-title: Version 18.10
 description: Version 18.10
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -238,7 +233,7 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Ett problem som uppstod när datainläsningsaktiviteten användes för att importera en kolumn med datatypen&quot;time&quot; har korrigerats: tidsavgränsaren återställs även sedan den tagits bort. (NEO-10743)
 * Ett problem som gjorde att mappen Leveranser inte kunde visas i körningsmappslistan i leveransegenskaperna när en återkommande leverans redigerades har åtgärdats. (NEO-11094)
 * Korrigerade ett problem som gjorde att visningsfönstret inte kunde visa mer än 200 poster som resultatmål för en Query-aktivitet i ett arbetsflöde. (NEO-11195)
-* Korrigerade ett fel i Oracle som förhindrade att en DELETE-fråga kördes med över 1 000 markerade element. (NEO-11171)
+* Korrigerade ett fel i Oracle som förhindrade att en DELETE-fråga kördes med över 1 000 valda element. (NEO-11171)
 * Korrigerade ett problem som ledde till att URL:er kodades som spårade URL:er i de ytterligare parametrarna för en leverans av ett push-meddelande från Android. (NEO-11468)
 * Korrigerade ett skriptfel som uppstod i rapporten för användaraktiviteter när parametrarna angavs till&quot;Ett dagintervall&quot; och&quot;Öppnar&quot;. (NEO-11655)
 * Korrigerade ett problem som uppstod vid anslutning till servern med mellanlagring eller till meddelandecentret via en autentiserad webbproxy. (NEO-11309)
