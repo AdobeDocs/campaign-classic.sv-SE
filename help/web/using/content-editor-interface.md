@@ -1,22 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Gränssnitt för innehållsredigeraren
-seo-title: Gränssnitt för innehållsredigeraren
 description: Gränssnitt för innehållsredigeraren
-seo-description: null
-page-status-flag: never-activated
-uuid: b108ea74-ae2c-4e47-bee8-12070927ba89
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-dc-title: </strong> and
-discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c93931820887306c0ef64ef05d4f0ba2ca5a98aa
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 4%
+source-wordcount: '533'
+ht-degree: 3%
 
 ---
 
