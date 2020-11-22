@@ -1,21 +1,18 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Om användningsfall för arbetsflöden
 description: Lär dig mer om användningsfall som du kan använda med arbetsflöden i Campaign Classic.
-page-status-flag: never-activated
-uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/STANDARD
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
-discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 46%
+ht-degree: 66%
 
 ---
 
@@ -36,7 +33,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Läsa in leveransinnehåll](../../workflow/using/loading-delivery-content.md)
 * [Arbetsflöde för leveranser över flera kanaler](../../workflow/using/cross-channel-delivery-workflow.md)
 * [E-postberikande med anpassade datumfält](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [Automatisera framtagning, utgåva och publicering av innehåll](../../delivery/using/automating-via-workflows.md#examples)
+* [Automatisera skapande, redigering och publicering av innehåll](../../delivery/using/automating-via-workflows.md#examples)
 
 ## Övervaka {#monitoring}
 
@@ -57,7 +54,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Använda aggregat](../../workflow/using/using-aggregates.md)
 * [Importera data krypterade med en nyckel som genererats av Kontrollpanelen](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [Kvartalslistuppdatering med inkrementell fråga](../../workflow/using/quarterly-list-update.md)
+* [Kvartalsvis listuppdatering med en inkrementell fråga](../../workflow/using/quarterly-list-update.md)
 
 ## Målinriktning {#designing-queries}
 
@@ -71,5 +68,5 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Lägga till ett beräkningsfält av uppräkningstyp](../../workflow/using/adding-enumeration-type-calculated-field.md)
 * [Skapa ett filter](../../workflow/using/creating-a-filter.md)
 * [Filtrera duplicerade mottagare](../../workflow/using/filtering-duplicated-recipients.md)
-* [Anropa en förekomstvariabel i en fråga](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [Använda en delad procentsats på en population](../../workflow/using/javascript-scripts-and-templates.md#example)
+* [Anropa en instansvariabel i en fråga](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [Tillämpa en delad procentsats på en grupp](../../workflow/using/javascript-scripts-and-templates.md#example)
