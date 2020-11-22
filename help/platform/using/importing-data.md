@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Importera data
-seo-title: Importera data
 description: Importera data
-seo-description: null
-page-status-flag: never-activated
-uuid: ca2269ad-7cfd-4f27-88be-469445a468bf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4136'
 ht-degree: 0%
 
 ---
@@ -30,7 +25,7 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 >
 >Data kan sedan användas exklusivt i arbetsflöden via **[!UICONTROL Read list]** objektet. Se denna [sida](../../workflow/using/read-list.md) för mer information om detta.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Struktur för de data som ska importeras {#structure-of-the-data-to-import}
 
@@ -278,7 +273,7 @@ På datavstämningssidan kan du definiera önskat felhanteringstypfält efter f�
 
    ![](assets/s_ncs_user_import_wizard04_4.png)
 
-Trädet på avvisningsskärmen för en importinstans visar vilka fält som avvisats och var felen inträffade.
+Trädet på avvisningsskärmen för en importinstans anger vilka fält som avvisats och var felen inträffade.
 
 Du kan generera en fil som innehåller dessa poster via **[!UICONTROL Export rejects]** ikonen:
 
