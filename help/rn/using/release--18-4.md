@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Version 18.4
-seo-title: Version 18.4
 description: Version 18.4
-seo-description: null
-page-status-flag: never-activated
-uuid: d132570e-20e6-4550-95bd-176701f43b19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2262'
 ht-degree: 7%
 
 ---
@@ -22,7 +17,7 @@ ht-degree: 7%
 
 # Version 18.4{#release-18-4}
 
-## Version 18.4.5 - build 8937{#release-18-4-5-build-8937}
+## Version 18.4.5 – build 8937{#release-18-4-5-build-8937}
 
 21 november 2018
 
@@ -44,12 +39,12 @@ ht-degree: 7%
 * Korrigerade ett spårningsproblem vid överföring av URL:er i ytterligare variabler i ett push-meddelande som kunde leda till felaktigt formaterade eller felaktiga data som togs emot av mobilprogrammet. (NEO-11468 och NEO-11960)
 * Korrigerade ett problem som orsakade ett visningsproblem vid användning av en värdefördelning med en 1:N-länk. (NEO-11820)
 * Korrigerade ett problem som förhindrade massbelastning från att arbeta med Teradata 16.
-* Ökade buffertstorleken för tidsstämpel på Teradata för att undvika bindningsproblem med drivrutinen 15.10.
+* Ökade buffertstorleken för tidsstämpling på Teradata för att undvika bindningsproblem med drivrutinen 15.10.
 * Förbättrad hantering av index för långa namn, vilket kan orsaka problem efter uppgraderingen.
 * Förbättrat delat minne som är tillgängligt under den underordnade processerna.
 * Korrigerade ett möjligt dödläge i Apache (spårning).
 
-## Version 18.4.4 - build 8936{#release-18-4-4-build-8936}
+## Version 18.4.4 – build 8936{#release-18-4-4-build-8936}
 
 1 augusti 2018
 
@@ -66,7 +61,7 @@ ht-degree: 7%
 * Korrigerade ett problem som visade oanvändbara fel i efteruppgraderingsloggen när en arbetsflödesaktivitet inte var helt konfigurerad. **[!UICONTROL Survey answers]**
 * FDA Teradata: åtgärdade ett problem med automatiskt inkrementerade fält och index i SQL-tabeller.
 
-## Version 18.4.3 - build 8935{#release-18-4-3-build-8935}
+## Version 18.4.3 – build 8935{#release-18-4-3-build-8935}
 
 22 juni 2018
 
@@ -80,7 +75,7 @@ ht-degree: 7%
 * Ett problem har korrigerats vid synkronisering av erbjudanden från marknadsinstansen till interaktionsinstansen. (NEO-11162)
 * Förbättrad hantering av index för långa namn under efteruppgradering
 
-## Version 18.4.2 - build 8932{#release-18-4-2-build-8932}
+## Version 18.4.2 – build 8932{#release-18-4-2-build-8932}
 
 22 maj 2018
 
@@ -91,7 +86,7 @@ ht-degree: 7%
 * Korrigerade ett prestandaproblem som kan uppstå med inMail-processen när en server för studsade meddelanden används. (NEO-10641)
 * Korrigerade ett databasuppgraderingsfel som kan inträffa vid uppgradering av fler än 1 000 scheman.
 
-## Version 18.4 - build 8931{#release-18-4-build-8931}
+## Version 18.4 – build 8931{#release-18-4-build-8931}
 
 24 apr 2018
 
@@ -199,7 +194,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 **Felkorrigeringar**
 
 * Ett synkroniseringsproblem har korrigerats vid replikering av leverans- och spårningsloggar från Adobe Campaign Standard till Adobe Campaign Classic. (NEO-10023)
-* Korrigerade ett problem med hanteringen av fel- och loggtabeller i Teradata när ett ETL-arbetsflöde återupptogs efter ett fel i en snabb inläsningsåtgärd. Tabellerna Fel och Logg tas nu bort korrekt varje gång arbetsflödet återupptas. (NEO-10672)
+* Korrigerade ett problem med hanteringen av fel- och loggtabeller i Teradata när ett ETL-arbetsflöde återupptogs efter ett fel vid en snabb inläsning. Tabellerna Fel och Logg tas nu bort korrekt varje gång arbetsflödet återupptas. (NEO-10672)
 * Korrigerade ett efteruppgraderingsfel som innebar att Hive-paketet (som behövs för Hadoop) skulle installeras automatiskt om FDA-paketet installerades. (NEO-10592)
 * Korrigerade ett fel som behandlade ogiltiga domäner som ett **odefinierat** fel. (NEO-10248)
 * Korrigerade ett problem som duplicerade loggar i tabellen deliveryLogStats när push-leveranser för android skickades. (NEO-10234)
