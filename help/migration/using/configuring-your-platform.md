@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Konfigurera din plattform
-seo-title: Konfigurera din plattform
 description: Konfigurera din plattform
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +39,7 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
 
    Om du vill använda läget &quot;multitidszon&quot;, se avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones) .
 
-   Om du använder Oracle som en databas kontrollerar du att Oracles tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
+   Om du använder Oracle som databas kontrollerar du att Oracle tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
 
 * Säkerhetszoner
 
