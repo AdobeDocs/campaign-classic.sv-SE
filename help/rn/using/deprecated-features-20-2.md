@@ -1,18 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Funktioner som är inaktuella och har ersatts i Campaign Classic
 description: Den här sidan visar inaktuella och borttagna funktioner i Adobe Campaign Classic
-page-status-flag: never-activated
-uuid: null
-contentOwner: simonetn
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 100%
 
@@ -125,7 +123,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
 
 ## Inaktuell kompatibilitet {#deprecated-compatibility}
 
-Följande system är inte längre kompatibla med Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
+Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
 
 ### Adobe Campaign version 20.2 {#compat-20-2-release}
 
