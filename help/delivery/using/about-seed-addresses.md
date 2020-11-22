@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Om fröadresser
-seo-title: Om fröadresser
 description: Om fröadresser
-seo-description: null
-page-status-flag: never-activated
-uuid: 80ab5abc-3ae0-484d-88c0-be039aac360d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 9%
 
 ---
@@ -28,7 +23,7 @@ En av de främsta anledningarna till att använda dem är **ditt skydd** av e-po
 
 Med dirigerade adresser kan du dessutom **förhandsgranska och testa leveranspersonalisering och återgivning** innan de skickas, genom att skicka korrektur (se [Använda dirigerade adresser som bevis](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 Funktionen för dirigerade adresser har följande fördelar:
 
