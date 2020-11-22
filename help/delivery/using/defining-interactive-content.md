@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Definiera interaktivt innehåll i Adobe Campaign Classic
 description: Lär dig hur du definierar interaktivt och dynamiskt e-postinnehåll med AMP i Adobe Campaign Classic.
-page-status-flag: never-activated
-uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +44,7 @@ AMP for Email är kompatibelt med befintliga e-postmeddelanden. AMP-versionen av
 
 Mer information om AMP för e-postformat, specifikationer och krav finns i [AMP-utvecklardokumentationen](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#amp-email-video)
 
 ## Viktiga steg för att använda AMP för e-post med Adobe Campaign {#key-steps-to-use-amp}
 
@@ -206,7 +203,7 @@ Om du till exempel har tagit med en produktlista i e-postmeddelandet justeras pr
 >
 >Som standard är alternativet **[!UICONTROL AMP inclusion]** inställt på **[!UICONTROL No]**.
 
-## Så här aktiverar och använder du AMP för e-post {#amp-email-video}
+## Så aktiverar och använder man AMP för e-postmeddelanden {#amp-email-video}
 
 I videon nedan förklaras hur du aktiverar och använder AMP i Adobe Campaign Classic.
 
