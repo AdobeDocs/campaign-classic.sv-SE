@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Skapa och konfigurera databasen
-seo-title: Skapa och konfigurera databasen
 description: Skapa och konfigurera databasen
-seo-description: null
-page-status-flag: never-activated
-uuid: e5143d55-61fa-416a-80db-c29a0caf9a3e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
@@ -62,7 +57,7 @@ Identifiera servern och välj vilken typ av åtgärd som ska utföras. In this c
 
 Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen variera.
 
-* För en **Oracle** -motor fyller du i det **TNS-namn** som definierats för programservern.
+* Om du använder en **Oracle** -motor fyller du i det **TNS-namn** som definierats för programservern.
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server** -motor måste du definiera: DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS`\<instance>`** (instansläge),
 
@@ -106,9 +101,9 @@ Du måste definiera följande inställningar:
 
    >[!NOTE]
    >
-   >Med en Oracle-databas kan du med det här **[!UICONTROL Unicode storage]** alternativet använda textfälten **NCLOB** och **NVARCHAR** .
+   >Med en Oracle-databas kan du med **[!UICONTROL Unicode storage]** alternativet använda textfälten **NCLOB** och **NVARCHAR** .
    > 
-   >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) för Oracle-databasen aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
+   >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oracle-databasen aktivera datalagring för alla språk (AL32UTF8 rekommenderas).
 
 * Välj en tidszon för databasen och ange om den ska vara i UTC (om tillgängligt).
 
@@ -164,7 +159,7 @@ Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är l
 
 Databasen, liksom användaren, måste ha skapats av databasadministratören och behörigheterna måste vara korrekt konfigurerade.
 
-För en Oracle-databas är till exempel lägsta nödvändiga behörighet: GE CONNECT, RESURS OCH OBEGRÄNSAT TABLESPACE.
+För en Oracle-databas är minimibehörigheten: GE CONNECT, RESURS OCH OBEGRÄNSAT TABLESPACE.
 
 Så här använder du en befintlig databas:
 
@@ -186,7 +181,7 @@ Identifiera servern och välj vilken typ av åtgärd du vill utföra. In this ca
 
 Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen variera.
 
-* För en **Oracle** -motor fyller du i det **TNS-namn** som definierats för programservern.
+* Om du använder en **Oracle** -motor fyller du i det **TNS-namn** som definierats för programservern.
 * För en **PostgreSQL** - eller **DB2** -motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server** -motor måste du definiera:
 
