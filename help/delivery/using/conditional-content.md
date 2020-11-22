@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Villkorligt innehåll
-seo-title: Villkorligt innehåll
 description: Villkorligt innehåll
-seo-description: null
-page-status-flag: never-activated
-uuid: d1c38263-a163-448c-8822-8b3e776e45cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 2%
 
 Genom att konfigurera fält för villkorligt innehåll kan du skapa dynamisk personalisering baserat på mottagarens profil, till exempel. Textblock och/eller bilder ersätts när ett visst villkor uppfylls.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#conditionnal-content-video)
 
 
 ## Använda villkor i ett e-postmeddelande {#using-conditions-in-an-email}
@@ -114,7 +109,7 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
 
-## Skapa ett flerspråkigt nyhetsbrev med villkorat innehåll {#conditionnal-content-video}
+## Så skapar man ett flerspråkigt nyhetsbrev med villkorligt innehåll {#conditionnal-content-video}
 
 Lär dig hur du lägger till villkorligt innehåll i en leverans med ett exempel på ett flerspråkigt nyhetsbrev.
 
