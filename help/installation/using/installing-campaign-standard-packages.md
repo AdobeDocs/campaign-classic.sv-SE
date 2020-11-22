@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Installera inbyggda Campaign Classic-paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
-page-status-flag: never-activated
-uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 5%
@@ -183,7 +180,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> CRM connectors<br /> </td> 
+   <td> CRM-kopplingar<br /> </td> 
    <td> Tillhandahåller olika CRM-anslutningar för att länka din Adobe Campaign-plattform till dina tredjepartssystem.  <a href="../../platform/using/crm-connectors.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
