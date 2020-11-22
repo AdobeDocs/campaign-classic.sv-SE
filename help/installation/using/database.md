@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Rekommendationer för Campaign Classic-databasen
 description: Databasrekommendationer
-page-status-flag: never-activated
-uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -48,7 +45,7 @@ Följande åtkomst-DLL måste finnas: **sqlncli11.dll**.
 
 Parametrarna **NLS_NCHAR_CHARACTERSET** och **NLS_CHARACTERSET** måste vara korrekt konfigurerade för att databasen ska fungera i Unicode eller ANSI.
 
-Adobe Campaign använder Oracle-standardkodning. Om du använder annan kodning kan kompatibilitetsproblem uppstå: Kontakta då teknisk support.
+Adobe Campaign använder Oracle standardkodning. Om du använder annan kodning kan kompatibilitetsproblem uppstå: Kontakta då teknisk support.
 
 Om du vill veta mer om kodningen använder du följande **sqlplus** -kommando:
 
@@ -69,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Om du vill logga in på **sqlplus** använder du användarprofilen i Oracle:
+Använd Oracle användarprofil för att logga in på **sqlplus**:
 
 ```
 su - oracle 
@@ -77,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-Du kan även referera till [Oracle Client i Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Du kan även hänvisa till [Oracle Client i Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
