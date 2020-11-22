@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Behörigheter för åtkomst till en extern databas
 description: Behörigheter för extern databasåtkomst
-page-status-flag: never-activated
-uuid: b84359b9-c584-431d-80d5-71146d9b6854
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 1%
@@ -66,7 +63,7 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Åtkomst till klientdata** | VÄLJ BEHÖRIGHET FÖR (FRAMTIDA) TABELL(ER) ELLER VY(ER) | VÄLJ privilegium | VÄLJ ELLER VÄLJ ETT TABELLprivilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
 | **Åtkomst till metadata** | VÄLJ BEHÖRIGHET FÖR INFORMATION_SCHEMA SCHEMA | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA DEFINITIONSTILLSTÅND | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | VÄLJ privilegium |
 
-|   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | Netezza | Växter | AsterData |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | Växter | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Ansluter till fjärrdatabas** | CONNECT | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för programsatsen CONNECT | Inget privilegium krävs | CONNECT privilegium | CONNECT privilegium |
 | **Skapa tabeller** | CREATETAB-utfärdare | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium | SKAPA privilegium |
