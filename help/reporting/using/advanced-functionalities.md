@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Avancerade funktioner
 description: Avancerade funktioner
-page-status-flag: never-activated
-uuid: 4dbf4750-0226-4f96-98d8-ec49b20374ac
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '621'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -116,7 +113,7 @@ Om du vill visa definitionen för en variabel markerar du den och klickar på **
 
 I videoexemplet nedan får du lära dig hur du lägger till en &quot;_type&quot;-parameter för att skapa olika vyer av en rapport utifrån värdet för det här attributet.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
 ## Anropa en annan rapport {#calling-up-another-report}
