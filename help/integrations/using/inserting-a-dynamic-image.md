@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Infoga en dynamisk bild
-seo-title: Infoga en dynamisk bild
 description: Infoga en dynamisk bild
-seo-description: null
-page-status-flag: never-activated
-uuid: 4acc905e-625c-45aa-bb70-7dde22911aa0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-discoiquuid: f6e4d22b-4ad3-4a1e-8a6f-3bdfc1da0535
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 3%
+source-wordcount: '849'
+ht-degree: 2%
 
 ---
 
