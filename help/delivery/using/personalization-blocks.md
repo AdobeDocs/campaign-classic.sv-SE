@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Block för personalisering
-seo-title: Block för personalisering
 description: Block för personalisering
-seo-description: null
-page-status-flag: never-activated
-uuid: f9867f8d-f6ce-4a5f-b6b4-fd8056d28576
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 2%
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 2%
 
 Personaliseringsblock är dynamiska, personaliserade och innehåller en specifik rendering som du kan infoga i leveranserna. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Se [Infoga personaliseringsblock](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i video](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png)[ Upptäck den här funktionen i en video](#personalization-blocks-video)
 
 Personaliseringsblocken nås via noden **[!UICONTROL Resources > Campaign Management > Personalization blocks]** i Adobe Campaign Explorer. Flera block är tillgängliga som standard (se [Inkörda anpassningsblock](#out-of-the-box-personalization-blocks)).
 
@@ -159,7 +154,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    * Ange innehållet (i HTML, text, JavaScript osv.) av personaliseringsblocket och klicka **[!UICONTROL Save]**.
 
-## Så här personaliserar du e-postmeddelanden med dynamiska innehållsblock {#personalization-blocks-video}
+## Så personaliserar man e-postmeddelanden med dynamiska innehållsblock {#personalization-blocks-video}
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i e-postleveransen.
 
