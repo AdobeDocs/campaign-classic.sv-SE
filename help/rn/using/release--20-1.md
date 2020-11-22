@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Version 20.1
 description: Version 20.1
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -56,12 +53,12 @@ _17 februari 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Förbättringar av Hadoop FDA Connector</strong><br /> </th> 
+   <th> <strong>Förbättringar av hadoop FDA Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Hadoop FDA Connector har förbättrats med stöd för både Hadoop 3.0 och Cloudera.</p>
+   <td> <p>Hadoop FDA Connector har förbättrats med stöd för Hadoop 3.0 och Cloudera.</p>
     <p>Mer information finns i den <a href="../../installation/using/configure-fda-hadoop.md">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
@@ -120,7 +117,7 @@ _17 februari 2020_
 
 **Felkorrigeringar**
 
-* Ett krypteringsfel för kontonycklar har korrigerats när Hadoop-kopplingen användes.
+* Ett krypteringsfel för kontonycklar har korrigerats när Hadoop-anslutningen användes.
 
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 
