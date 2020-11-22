@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: CRM-koppling
 description: Läs mer om CRM Connector och konfigurera datasynkronisering
-page-status-flag: never-activated
-uuid: b3856a82-b1dc-4e36-a2d0-14edc5b66b3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: af7c0d1d-10ac-427b-8d12-b97eb91b30a1
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -204,7 +201,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 
 Med den **[!UICONTROL Reject]** utgående övergången kan du komma åt det utdataschema som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. Följande kolumner är:
 
-* För Oracle On Demand: **errorLogFilename** (loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, annan än felkoden), **errorMessage** (beskrivning av felkontexten).
+* För Oracle On Demand: **errorLogFilename** (loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 * För Salesforce.com: **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
 ## Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
@@ -235,7 +232,7 @@ På fliken **[!UICONTROL Behavior]** kan du aktivera bearbetning av avvisade. De
 
 ## Exempel på hur du konfigurerar en kontaktimport {#example-of-how-to-configure-a-contact-import}
 
-I följande exempel är aktiviteten konfigurerad att importera kontakter från ett Oracle On Demand CRM. Innan CRM-fälten importeras markeras de på ett sätt så att de sammanfaller med de fält som redan finns i Adobe Campaign-databasen.
+I följande exempel är aktiviteten konfigurerad att importera kontakter från en Oracle On Demand CRM. Innan CRM-fälten importeras markeras de på ett sätt så att de sammanfaller med de fält som redan finns i Adobe Campaign-databasen.
 
 ![](assets/crm_connectors_ood_6.png)
 
