@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Tryckregler
-seo-title: Tryckregler
 description: Tryckregler
-seo-description: null
-page-status-flag: never-activated
-uuid: 653d8336-8765-4938-88c1-a96cd76c3b7e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-discoiquuid: 3710768e-ab7f-40a4-9c48-830695adc990
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '3255'
+source-wordcount: '3253'
 ht-degree: 4%
 
 ---
@@ -58,7 +53,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Ändra körningsordningen om det behövs. När flera typologiregler används som en **[!UICONTROL Typology]** uppsättning tillämpas de lägre ordnade reglerna först. For more on this, refer to [Execution order](../../campaign/using/applying-rules.md#execution-order).
+1. Ändra körningsordningen om det behövs. När flera typologiregler används som en **[!UICONTROL Typology]** uppsättning, tillämpas de lägre ordnade reglerna först. For more on this, refer to [Execution order](../../campaign/using/applying-rules.md#execution-order).
 1. I avsnittet anger du en frekvens om du vill spara målgruppsanpassning efter nästa dagliga omskiljningskörning. **[!UICONTROL Calculation parameters]** Mer information finns i [Justera beräkningsfrekvens](../../campaign/using/applying-rules.md#adjusting-calculation-frequency).
 1. Klicka på **[!UICONTROL Pressure]** fliken och välj den kalenderperiod som typologiregeln gäller för.
 
