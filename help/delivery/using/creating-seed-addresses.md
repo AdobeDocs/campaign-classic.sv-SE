@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Skapa fröadresser
 description: Lär dig hur du skapar och använder dirigerade adresser
-page-status-flag: never-activated
-uuid: 0dae107a-7b53-4096-93c3-9517b402cbc9
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: 6dad49af-4818-471b-9df1-057cc6b9a68a
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -24,7 +21,7 @@ Seed-adresser hanteras inte via standardprofiler och -mål, utan i en dedikerad 
 
 Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på **[!UICONTROL Seed addresses]** noden och väljer **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** för att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. For more on this, refer to [Defining addresses](#defining-addresses).
 
-Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Mer information finns i [Skapa dirigerade adressmallar](#creating-seed-address-templates).
+Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven för de aktuella leveranserna och kampanjerna. Mer information finns i [Skapa dirigerade adressmallar](#creating-seed-address-templates).
 
 ## Definiera adresser {#defining-addresses}
 
