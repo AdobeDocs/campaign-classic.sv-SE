@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Skapa en profillista med ett arbetsflöde
 description: Lär dig hur du skapar en profillista i ett arbetsflöde
-page-status-flag: never-activated
-uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -24,7 +21,7 @@ Om du vill skapa en **[!UICONTROL List]** typlista baserad på den nya mottagart
 
 Mer information om listor i Campaign finns i [det här avsnittet](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 Följ stegen nedan för att skapa ett målarbetsflöde och uppdatera mottagare i en anpassad mottagartabell:
 
