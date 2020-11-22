@@ -1,28 +1,23 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Version 19.1
-seo-title: Version 19.1
 description: Version 19.1
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2623'
-ht-degree: 5%
+source-wordcount: '2622'
+ht-degree: 7%
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Version 19.1.7 - build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/limited_2.png) Version 19.1.7 – build 9036 {#release-19-1-7-build-9036}
 
 _15 september 2020_
 
@@ -52,7 +47,7 @@ _15 september 2020_
 * Korrigerade ett efteruppgraderingsfel som stängde av Apache och webbservern innan webbprogrampubliceringen. (NEO-27155)
 * Korrigerade en regression som ledde till att en felaktig tidszon plockades när en tid angavs i en **arbetsflödesaktivitet i schemaläggaren** .
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 - build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -62,13 +57,13 @@ _3 oktober 2019_
 
 **Förbättringar**
 
-* Ett problem har korrigerats när CRM Connector för Salesforce användes. (NEO-17712)
-* Korrigerade ett indexproblem som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
+* Korrigerade ett problem när CRM-kopplingen för Salesforce användes. (NEO-17712)
+* Korrigerade ett problem med index som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
 * Korrigerade ett prestandaproblem när meddelanden skickades. (NEO-17558)
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
 * Ett problem som förhindrade att SQL Data Management-aktiviteten användes fullt ut har åtgärdats (namngiven SQL Data Management-behörighet saknas).
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1.5 - build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Version 19.1.5 – build 9033{#release-19-1-5-build-9033}
 
 _13 augusti 2019_
 
@@ -80,17 +75,17 @@ _13 augusti 2019_
 * Ett problem med installationen av paketet midEmitter via kommandoraden har korrigerats.
 * Ett nytt autentiseringsalternativ har lagts till som stöd för OAuth-autentiseringsuppgifter i AC-anslutningen med Microsoft Dynamics. (NEO-11982)
 * Korrigerade ett problem med UUID-hantering (Unik universell identifierare) som gjorde att arbetsflödesaktiviteterna för fråga och data misslyckades med Hive FDA.
-* Korrigerade en regression i Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgradering. (NEO-12759)
+* Korrigerade en regression på Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
 * Korrigerade en regression som ledde till att en felaktig tidszon plockades när tiden angavs i en arbetsflödesaktivitet i schemaläggaren.
 
-## ![](assets/do-not-localize/green_2.png) Version 19.1.4 - build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Version 19.1.4 – build 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
 >19.1.4 Gold Standard-utgåvorna finns listade på den här [sidan](../../rn/using/gold-standard.md).
 
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1.2 - build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – build 9029{#release-19-1-2-build-9029}
 
 _21 juni 2019_
 
@@ -106,7 +101,7 @@ _21 juni 2019_
 * Nu kan vi ta bort dummy-poster som skapats i Microsoft Dynamics under importarbetsflödet.
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1 - build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Version 19.1 – build 9026{#release-19-1-build-9026}
 
 _30 maj 2019_
 
@@ -122,7 +117,7 @@ _30 maj 2019_
  <tbody> 
   <tr> 
    <td> Kontrollpanelen<br /> </td> 
-   <td> <p>Om du vill öka effektiviteten i ditt arbete som Admin-användare hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagringsutrymmet, lägga till IP-adresser i tillåtelselista och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud idag</a>).</p> <p>Mer information hittar du i den <a href="https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
+   <td> <p>Om du vill öka effektiviteten i ditt arbete som Admin-användare hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagringsutrymmet, lägga till IP-adresser i tillåtelselista och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud idag</a>).</p> <p>Mer information hittar du i den <a href="https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/control-panel/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
   </tr> 
     <tr> 
    <td> Verifieringskedja<br /> </td> 
@@ -211,7 +206,7 @@ _30 maj 2019_
 * Korrigerade ett problem som hindrade dig från att ta bort ett webbprogram även om du hade rätt åtkomstbehörighet. (NEO-12072)
 * Korrigerade ett problem som kunde göra att vissa värden skrevs över vid export och sedan import av ett objekt via XML. Alternativet XtkExport_IncludeDefaultValues har lagts till. Om du anger True (standardbeteende) exporteras alla värden. Om värdet är Falskt skrivs ändringarna över med standardvärdet. (NEO-11979)
 * Korrigerade ett problem som gjorde att arbetsflödesaktiviteten misslyckades när en anrikningsaktivitet lades till efter en fråga. **[!UICONTROL Alert]** (NEO-12132)
-* Korrigerade ett problem i Oracle-inställningar där förskjutningar för pipeline (utlösare) inte hämtades från databasen som orsakade dubbletter. (NEO-12121)
+* Korrigerade ett fel i Oracle-inställningar där förskjutningar för pipeline (utlösare) inte hämtades från databasen och orsakade dubbletter. (NEO-12121)
 * Korrigerade ett problem som kunde orsaka visningsfel i pivottabeller när Analytics-integrering användes (NEO-12103)
 * Korrigerade ett problem med den beskrivande analysrapporten. (NEO-11414)
 * Korrigerade ett problem med CRM-anslutningar när fjärrtabellen innehöll ett fält med ett understreck i namnet.
