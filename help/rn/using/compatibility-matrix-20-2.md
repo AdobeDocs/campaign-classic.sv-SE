@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Kompatibilitetsmatris
 description: Kompatibilitetsmatris
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -176,7 +173,7 @@ Följande RDBMS-drivrutiner stöds:
 >
 >PostgreSQL är standarddatabasservern för hostingmiljöer.
 
-## CRM connectors{#CRMconnectors}
+## CRM-kopplingar{#CRMconnectors}
 
 <table>
 <tbody>
@@ -193,7 +190,7 @@ Följande RDBMS-drivrutiner stöds:
 <p>API version 21</p>
 </td>
 </tr>
-<tr><td>API för Oracle On Demand</td>
+<tr><td>Oracle On Demand-API</td>
 <td>
 <p>Webbtjänster v1.0 API</p>
 </td>
@@ -201,8 +198,8 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API - lokal: 2007, 2015, 2016</p>
-<p>Soap API - online: 2015, 2016</p>
+<p>Soap API – lokal: 2007, 2015 och 2016</p>
+<p>Soap API – online: 2015 och 2016</p>
 <p>Webb-API - lokalt och online: 365, 2016, 2016 uppdatering 1</p>
 </td>
 </tr>
@@ -214,7 +211,7 @@ Följande RDBMS-drivrutiner stöds:
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure Synapse Analytics</td>
+<td>Microsoft Azure synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
