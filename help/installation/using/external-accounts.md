@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Externa konton
 description: Lär dig hur du skapar externa konton
-page-status-flag: never-activated
-uuid: e06e7a36-b449-4ab0-a4f6-fa82dbb8de11
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 10%
@@ -151,7 +148,7 @@ Externa databaser som är kompatibla med Campaign listas i [kompatibilitetsmatri
 
 Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Läs mer i följande avsnitt:
 
-* Konfigurera åtkomst till [Azure Synapse](../../installation/using/configure-fda-synapse.md)
+* Konfigurera åtkomst till [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Konfigurera åtkomst till [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Konfigurera åtkomst till [Oracle](../../installation/using/configure-fda-oracle.md)
 * Konfigurera åtkomst till [Netezza](../../installation/using/configure-fda-netezza.md)
@@ -300,7 +297,7 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
 
 ![](assets/ext_account_3.png)
 
@@ -416,19 +413,19 @@ Med det **[!UICONTROL Oracle on demand]** externa kontot kan du importera och ex
 
 ![](assets/ext_account_18.png)
 
-Om du vill konfigurera det externa Oracle on demand-kontot så att det fungerar med Adobe Campaign måste du ange följande information:
+Om du vill konfigurera det externa kontot för Oracle on demand så att det fungerar med Adobe Campaign måste du ange följande information:
 
 * **[!UICONTROL Account]**
 
-   Konto som används för att logga in på Oracle CRM på begäran.
+   Konto som används för att logga in på Oracle CRM on demand.
 
 * **[!UICONTROL Server]**
 
-   URL för Oracle CRM-servern på begäran.
+   URL:en till din Oracle CRM-server på begäran.
 
 * **[!UICONTROL Password]**
 
-   Lösenord som används för att logga in på Oracle CRM på begäran.
+   Lösenord som används för att logga in på Oracle CRM on demand.
 
 For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
 
