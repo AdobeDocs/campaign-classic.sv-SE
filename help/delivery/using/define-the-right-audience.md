@@ -1,24 +1,20 @@
 ---
-title: Definiera rätt målgrupp
-seo-title: Definiera rätt målgrupp
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: Definiera rätt publik
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 1%
+source-wordcount: '474'
+ht-degree: 3%
 
 ---
 
 
-# Definiera rätt målgrupp {#define-the-right-audience}
+# Definiera rätt publik {#define-the-right-audience}
 
 Målgruppen är följande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 
