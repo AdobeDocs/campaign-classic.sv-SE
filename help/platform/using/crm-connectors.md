@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: CRM-kopplingar
-seo-title: CRM-kopplingar
 description: CRM-kopplingar
-seo-description: null
-page-status-flag: never-activated
-uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2539'
 ht-degree: 4%
 
 ---
@@ -61,11 +56,11 @@ Versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibil
 
    >[!IMPORTANT]
    >
-   >När du ansluter Adobe Campaign med Oracle On Demand är begränsningarna:
+   >När du ansluter Adobe Campaign till Oracle On Demand är begränsningarna:
    >
    >    
    >    
-   >    * Adobe Campaign kan synkronisera alla tillgängliga objekt i Oracle On Demand-mallarna. Om du har lagt till anpassade tabeller i Oracle On Demand, kommer de inte att återställas i Adobe Campaign.
+   >    * Adobe Campaign kan synkronisera alla objekt som finns i Oracle On Demand-mallarna. Om du har lagt till anpassade tabeller i Oracle On Demand, kommer dessa inte att återställas i Adobe Campaign.
    >    * Med API-version v1.0 kan du sortera eller filtrera data under en fråga, men du kan inte göra båda samtidigt.
    >    * Datumen som skickas av Oracle On Demand innehåller ingen tidszonsinformation.
    >    * Uppräkningar av flera markeringar stöds inte av Adobe Campaign.
@@ -149,7 +144,7 @@ Så här konfigurerar du **Oracle On Demand** -anslutningen så att den fungerar
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. Öppna konfigurationsguiden: Adobe Campaign visar automatiskt tabellerna i Oracles datamodell. Markera de tabeller som du vill samla in.
+1. Öppna konfigurationsguiden: Adobe Campaign visar automatiskt tabellerna i Oracle datamodell. Markera de tabeller som du vill samla in.
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -397,7 +392,7 @@ För en export använder du följande konfiguration för aktiviteten **CRM Conne
 
    >[!NOTE]
    >
-   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att riskera att exportera samma post flera gånger eller förlora data.
+   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att du riskerar att exportera samma post flera gånger eller förlora data.
 
 ### Ytterligare konfigurationer {#additional-configurations}
 
@@ -439,7 +434,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 
 Med **[!UICONTROL Reject]** utdataövergången kan du komma åt utdataschemat som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. Följande kolumner är:
 
-* För Oracle On Demand: **errorLogFilename** (loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, annan än felkoden), **errorMessage** (beskrivning av felkontexten).
+* För Oracle On Demand: **errorLogFilename** (loggfilens namn på Oracle-sidan), **errorCode** (felkod), **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 * För Salesforce.com: **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
 ### Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
