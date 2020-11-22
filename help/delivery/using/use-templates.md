@@ -1,28 +1,24 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Använd leveransmallar
-seo-title: Använd leveransmallar
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
 
 
-# Använd mallar {#use-templates}
+# Använda mallar {#use-templates}
 
 Leveransmallar ger ökad effektivitet genom färdiga scenarier för de flesta vanliga typer av aktiviteter. Med mallar kan marknadsförarna driftsätta nya kampanjer med minimal anpassning på kortare tid.
 
-Läs mer om leveransmallar i [det här avsnittet](../../delivery/using/creating-a-delivery-template.md).
+Learn more about delivery templates in [this section](../../delivery/using/creating-a-delivery-template.md).
 
 ## Kom igång med leveransmallar {#gs-templates}
 
