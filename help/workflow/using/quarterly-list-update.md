@@ -1,24 +1,21 @@
 ---
-title: Kvartalslistuppdatering med inkrementell fråga
+solution: Campaign Classic
+product: campaign
+title: Kvartalsvis listuppdatering med en inkrementell fråga
 description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista.
-page-status-flag: never-activated
-uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Kvartalslistuppdatering med inkrementell fråga {#quarterly-list-update}
+# Kvartalsvis listuppdatering med en inkrementell fråga {#quarterly-list-update}
 
 I följande exempel används en [stegvis fråga](../../workflow/using/incremental-query.md) för att automatiskt uppdatera en mottagarlista. Dessa mottagare ingår i säsongskampanjer.
 
