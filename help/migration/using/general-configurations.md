@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Allmänna konfigurationer
-seo-title: Allmänna konfigurationer
 description: Allmänna konfigurationer
-seo-description: null
-page-status-flag: never-activated
-uuid: 317a145d-36b0-40fe-a272-ad5e35b0b190
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
 translation-type: tm+mt
-source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -49,7 +44,7 @@ Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till alt
 
 ### Oracle {#oracle}
 
-Om du får ett **ORA 01805** -fel under efteruppgraderingen innebär det att Oracles tidszonsfiler mellan programservern och databasservern inte är synkroniserade. Så här synkroniserar du dem igen:
+Om du får ett **ORA 01805** -fel under efteruppgraderingen innebär det att Oracle tidszonsfiler mellan programservern och databasservern inte är synkroniserade. Så här synkroniserar du dem igen:
 
 1. Kör följande kommando för att identifiera tidszonsfilen som används:
 
@@ -669,7 +664,7 @@ sessionTokenOnly="false"
 
 ### Anonyma webbapplikationer {#anonymous-web-applications}
 
-Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
+Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja återgivningsmotorn v6.x och dra nytta av dess nya funktioner.
 
 >[!NOTE]
 Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Personaliserade rapporter](#personalized-reports).
