@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
-page-status-flag: never-activated
-uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2917'
 ht-degree: 1%
@@ -420,7 +417,7 @@ En disposition kan innehålla objekt och personaliseringsfält, resurser och erb
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** ikonen till höger om listzonen.
+   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** ikonen till höger om listområdet.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
