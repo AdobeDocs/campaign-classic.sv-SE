@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Installera paket med Linux
-seo-title: Installera paket med Linux
 description: Installera paket med Linux
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -61,7 +56,7 @@ Så här installerar du Adobe Campaign på ett RPM-operativsystem (RHEL, CentOS 
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden (till exempel om du vill använda Oracle JDK i stället för OpenJDK), kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
+   RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden (till exempel om du vill använda Oracle JDK i stället för OpenJDK) kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -195,7 +190,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   Innehållet i miljövariabeln ORACLE_HOME matchar Oracles installationskatalog.
+   Innehållet i miljövariabeln ORACLE_HOME matchar Oracle installationskatalog.
 
    Innehållet i variabeln TNS_ADMIN måste matcha platsen för filen **DNNAMes.ora** .
 
@@ -259,7 +254,7 @@ systemctl start nlserver
 
 ### Oracle Client i Linux {#oracle-client-in-linux}
 
-När du använder Oracle med Adobe Campaign måste du konfigurera Oracle-klientlagren i Linux.
+När du använder Oracle med Adobe Campaign måste du konfigurera Oracle klientlager i Linux.
 
 * Använd hela klienten
 * TNS-definition
@@ -288,7 +283,7 @@ När du använder Oracle med Adobe Campaign måste du konfigurera Oracle-klientl
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Om du råkar ut för ett problem kontrollerar du att paketen i [Oracles installationsdokumentation](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) är korrekt installerade.
+Om du får problem kontrollerar du att paketen i [Oracle-installationsdokumentationen](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) är korrekt installerade.
 
 ## Installationskontroller {#installation-checks}
 
