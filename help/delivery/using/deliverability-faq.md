@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Viktiga punkter vid hantering av slutprodukter i Adobe Campaign Classic
 description: Vilka är de viktigaste punkterna att kontrollera när man hanterar produkter i Adobe Campaign Classic?
-page-status-flag: never-activated
-uuid: 2681042b-3018-42ae-b252-2367b56616bd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 0%
