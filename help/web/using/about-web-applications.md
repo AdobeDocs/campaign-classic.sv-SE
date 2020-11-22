@@ -1,24 +1,21 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Om webbapplikationer
 description: Skapa och dela dynamiska webbapplikationer, landningssidor och enkäter.
-page-status-flag: never-activated
-uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-applications
-discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
 
-# Kom igång med webbprogram{#about-web-applications}
+# Kom igång med webbapplikationer {#about-web-applications}
 
 Med Adobe Campaign kan du skapa och publicera dynamiska och interaktiva webbapplikationer med data från databasen och innehåll som är anpassat efter den anslutna användarens rättigheter.
 
