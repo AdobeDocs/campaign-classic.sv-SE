@@ -49,4 +49,4 @@ Om du vill visa spårningsinformation via klientkonsolen måste du:
 * Skapa en **overksam leverans** (leveransmappningen måste vara identisk med mappningen av målschemat),
 * Ange det **interna namnet** för leveransen i alternativet **NmsTracking_WebTrackingDelivery** .
 
-All information om webbplatsspårning som inte kommer direkt efter ett klick i ett e-postmeddelande kan visas i den provleverans som skapas.
+All information om webbplatsspårning som inte kommer direkt efter ett klick i ett e-postmeddelande kan visas i den dummy-leverans som skapas.
