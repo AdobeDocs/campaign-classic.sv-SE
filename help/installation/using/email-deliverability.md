@@ -158,7 +158,7 @@ user:~ user$ host -t mx yahoo.com
                 yahoo.com mail is handled by 1 mta7.am0.yahoodns.net.
 ```
 
-MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta till Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
+MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
 
 ```
 user:~ user$ host -t a mta5.am0.yahoodns.net
