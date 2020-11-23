@@ -89,7 +89,7 @@ För kampanjer kan en kostnad planeras, bindas eller reserveras för en framtida
 
 >[!CAUTION]
 >
->När en kampanj skapas **[!UICONTROL Budget]** måste förloppsstatusen i anges till **[!UICONTROL Defined]** för att kostnaderna ska beaktas vid utförandet. Om statusen är **[!UICONTROL Being edited]** så konsolideras inte kostnaderna.
+>När en kampanj skapas **[!UICONTROL Budget]** måste förloppsstatusen i anges till **[!UICONTROL Defined]** för att kostnaderna ska kunna beaktas vid utförandet. Om statusen är **[!UICONTROL Being edited]** så konsolideras inte kostnaderna.
 >   
 >Alternativet **[!UICONTROL Commitment level]** representerar en prognos över kostnaderna i framtiden innan de debiteras budgeten. Beroende på förloppet för en kampanj, uppgift eller leverans kan du välja att tilldela en högre eller lägre åtagandenivå (1). Planerad, 2. Reserverad, 3. Bekräftat) med kombinationsrutan.
 
