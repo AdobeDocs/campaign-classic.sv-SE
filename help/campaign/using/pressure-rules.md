@@ -53,7 +53,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Ändra körningsordningen om det behövs. När flera typologiregler används som en **[!UICONTROL Typology]** uppsättning, tillämpas de lägre ordnade reglerna först. For more on this, refer to [Execution order](../../campaign/using/applying-rules.md#execution-order).
+1. Ändra körningsordningen om det behövs. När flera typologiregler används som en **[!UICONTROL Typology]** uppsättning tillämpas de lägre ordnade reglerna först. For more on this, refer to [Execution order](../../campaign/using/applying-rules.md#execution-order).
 1. I avsnittet anger du en frekvens om du vill spara målgruppsanpassning efter nästa dagliga omskiljningskörning. **[!UICONTROL Calculation parameters]** Mer information finns i [Justera beräkningsfrekvens](../../campaign/using/applying-rules.md#adjusting-calculation-frequency).
 1. Klicka på **[!UICONTROL Pressure]** fliken och välj den kalenderperiod som typologiregeln gäller för.
 
