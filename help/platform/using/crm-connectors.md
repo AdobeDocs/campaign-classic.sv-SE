@@ -392,7 +392,7 @@ För en export använder du följande konfiguration för aktiviteten **CRM Conne
 
    >[!NOTE]
    >
-   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att du riskerar att exportera samma post flera gånger eller förlora data.
+   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att riskera att exportera samma post flera gånger eller förlora data.
 
 ### Ytterligare konfigurationer {#additional-configurations}
 
