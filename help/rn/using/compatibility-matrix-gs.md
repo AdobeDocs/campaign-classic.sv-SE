@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 4d5ca9277305cc0baeb233d0912f26b6bdcf3206
+source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 15%
@@ -185,7 +185,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </td>
 </tr>
 <tr>
-<td>MS Dynamics</td>
+<td>Microsoft Dynamics</td>
 <td>
 <p>Soap API – lokal: 2007, 2015 och 2016</p>
 <p>Soap API – online: 2015 och 2016</p>
