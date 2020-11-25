@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: fc5a44fe7bf4c88eca4634a67eaae48c722d8e5e
+source-git-commit: 85fae38f864b031f069058dae79ce6753dc4bf03
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,11 @@ Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du **A
 </tr>
 <tr>
 <td>Kontrollera den allmänna konfigurationen för säkerhetszonerna.</td>
-<td>Mer information om hur du konfigurerar säkerhetszoner finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zone)</td>
+<td>Mer information om hur du konfigurerar säkerhetszoner finns i <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>det här avsnittet.</a></td>
+</tr>
+<tr>
+<td>Kommandot nlserver pdump returnerar <b>Inga uppgifter</b></td>
+<td>Du måste starta om hela Adobe Campaign-programmet. Använd följande kommando för att göra detta: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
