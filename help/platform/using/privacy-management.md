@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,29 @@ ht-degree: 1%
 
 # Integritetshantering {#privacy-management}
 
-Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa sekretesslagstiftningen (inklusive GDPR, CCPA, PDPA, LGPD).
+Adobe Campaign offers a set of tools to help you comply with [Privacy regulations](#privacy-management-regulations) (including GDPR, CCPA, PDPA, LGPD).
 
-* I det här avsnittet finns allmän information om vilken sekretesshantering som är och de funktioner som Adobe Campaign tillhandahåller för att hantera [rätten till åtkomst och rätten att bli glömd](#right-access-forgotten).
+Här är de fem viktigaste funktionerna som Adobe Campaign erbjuder för att säkerställa beredskap för GDPR och andra sekretessbestämmelser:
 
-* Det innehåller även information om viktiga funktioner för att hantera sekretess ([samtycke, lagring och roller](#consent-retention-roles)) samt bästa praxis för att hjälpa dig att uppfylla sekretesskraven när du använder Adobe Campaign.
+![](assets/privacy-gdpr-use-cases.png)
+
+* **Rätt till åtkomst**
+
+* **Höger att ta bort**
+
+Mer information finns i [Rätt till åtkomst och Rätt att bli glömd](#right-access-forgotten).
+
+* **Hantering av samtycke**
+
+* **Datalagring**
+
+* **Rättighetshantering**
+
+Mer information finns i [Godkännande, kvarhållning och roller](#consent-retention-roles).
+
+<!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
+
+It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
 
 ## Bestämmelser om integritetshantering {#privacy-management-regulations}
 
