@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cb6a2247e3b7617511aecf3d2d19985af0216494
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
@@ -17,72 +17,72 @@ ht-degree: 2%
 
 # Det gick inte att ansluta{#failure-to-connect}
 
-Orsaken till detta kan vara flera och beror på olika sammanhang.
+Orsaken till ett anslutningsproblem kan vara flera och beror på olika sammanhang.
 
-Kontrollera den allmänna konfigurationen för säkerhetszonerna.
+Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du **Adobe Campaign support**.
 
->[!NOTE]
->
->Mer information om hur du konfigurerar säkerhetszoner finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Kontrollera följande information:
 
-1. **Nätverkskontroller**
+<table> 
+ <thead> 
+  <tr> 
+   <th>Kontroller<br /> </th> 
+   <th>Upplösning<br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>Har du Internetåtkomst från datorn?</td> 
+   <td>Kontrollera att du kan ansluta till webbplatser på Internet (till exempel). Om du inte kan ansluta finns problemet på datorn. Kontakta systemadministratören.</td>
+  </tr>
+  <tr> 
+   <td>Kan du ansluta till servern som är värd för Adobe Campaign via en annan tjänst?</td> 
+   <td>Anslut till servern via SSH eller på något annat sätt. Om detta inte är möjligt har värdföretaget ett problem. Kontakta systemadministratören.</td>
+  </tr>
+  <tr> 
+   <td>svarar webbservern?</td> 
+   <td>Anslut till Adobe Campaign server access URL med en webbläsare: **`http(s):// <urlserver>`**. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.</td>
+  </tr>
+  <tr> 
+   <td>Har Adobe Campaign integrerats korrekt?</td> 
+   <td>Logga in på: **`http(s)://<urlserver>/r/test`** URL. Servern ska returnera följande typ av meddelande
 
-   * Har du Internetåtkomst från datorn?
+    &quot;
+    &lt;redir status=&#39;OK&#39; date=&#39;YYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
+    &quot;
+    
+    Om du inte får detta resultat bör du kontrollera i webbserverkonfigurationen att integreringen har beaktats.&lt;/td>
+</tr>
+  <tr> 
+   <td>Har Adobe Campaign webbmodul startats?</td> 
+   <td>
+   Anslut till följande URL: **`http(s)://<URLSERVER>/nl/jsp/logon.jsp`** * Om du får ett Tomcat Java-fel:
 
-      Kontrollera att du kan ansluta till webbplatser på Internet (till exempel). Om du inte kan ansluta finns problemet på datorn. Kontakta systemadministratören.
-
-   * Kan du ansluta till servern som är värd för Adobe Campaign via en annan tjänst?
-
-      Anslut till servern via SSH eller på något annat sätt. Om detta inte är möjligt har värdföretaget ett problem. Kontakta systemadministratören.
-
-1. **Kontrollerar på webbserversidan** (IIS/apache/etc.)
-
-   * svarar webbservern?
-
-      Anslut till Adobe Campaign server access URL med en webbläsare: **http(s)://`<urlserver>`**. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.
-
-   * Har Adobe Campaign integrerats korrekt?
-
-      Logga in på: **http(s):// `<urlserver>`/r/test** -URL. Servern ska returnera följande typ av meddelande
-
-      ```
-      <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='<hostname>' localHost='<server>'/>
-      ```
-
-      Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.
-
-1. **Kontroller på Adobe Campaign sida**
-
-   * Har Adobe Campaign webbmodul startats?
-
-      Anslut till följande URL: **http(s)://`<URLSERVER>`/nl/jsp/logon.jsp**
-
-      * Om du får ett Tomcat Java-fel:
-
-         Är JAVA-integreringen korrekt genomförd? Adobe Campaign kräver SUN JDK.
-
-         Den är integrerad i filen **`[path of application]`/nl6/customer.sh**
-
-      * Om du får en tom sida:
-
-         Har Adobe Campaign webbmodul startats? Du bör få:
-
-         ```
-         nlserver pdump
-         HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
-         [...]
-         web@default (27515) - 55.2 Mb
-         [...]
-         ```
-
-      * Om inte, starta om den med följande kommando:
-
-         ```
-         nlserver start web
-         ```
->[!NOTE]
->
->Om du får ett svar av följande typ när du listar Adobe Campaign-modulerna: **nlserver pdump**
->HH:MM:SS > Programserver för Adobe Campaign Classic (7.X YY.R build XXX@SHA1) för DD/MM/YYY Inga åtgärder Du måste starta om hela Adobe Campaign-programmet. Använd följande kommando för att göra detta: **nlserver watchdog -svc -noconsole **
+    Är JAVA-integreringen korrekt genomförd? Adobe Campaign kräver SUN JDK.
+    
+    Den är integrerad i filen **`[sökväg till programmet]`/nl6/customer.sh**
+    
+    * Om du får en tom sida:
+    
+    Har Adobe Campaign webbmodul startats? Du bör skaffa:
+    
+    &quot;
+    nlserver
+    pdumpHH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+    [...]
+    web@default (27515) - 55.2 Mb
+    [..]
+    &quot;
+    
+    * Om inte, starta om den med följande kommando:
+    
+    &quot;
+    
+    nlserver start web¥&quot;&lt;/td>
+</tr>
+  <tr>
+  	<td>Kontrollera den allmänna konfigurationen för säkerhetszonerna.</td>
+  	<td>Mer information om hur du konfigurerar säkerhetszoner finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zone)</td>
+  </tr>
+ </tbody> 
+</table>
