@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
+source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -61,13 +61,11 @@ Om du inte får det här resultatet bör du kontrollera i webbserverkonfiguratio
 Det är integrerat i [sökvägen till programmet]/nl6/customer.sh
 
 * Om du får en tom sida:
-
 Har Adobe Campaign webbmodul startats? Du bör få:
 
 <pre>
 nlserver pdumpHH:MM:SS &gt; Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY[...]web@default (27515) - 55.2 Mb[...]
 </pre>
-
 * Om inte, starta om den med följande kommando:
 
 <pre>        
