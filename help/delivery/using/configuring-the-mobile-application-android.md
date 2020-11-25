@@ -10,9 +10,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1648'
 ht-degree: 2%
 
 ---
@@ -61,6 +61,8 @@ Så här väljer du vilken koppling du vill använda:
    * **maxGCMConnectPerChild**: Maximal gräns för parallella HTTP-begäranden till FCM som initieras av varje underordnad server (8 som standard).
 
 ## Konfigurera Android-tjänsten {#configuring-android-service}
+
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du konfigurerar en Android-tjänst i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
 1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** noden och klicka på **[!UICONTROL New]**.
 
@@ -178,6 +180,8 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 ## Utöka appsubscriptionRcp-schemat {#extend-subscription-schema}
 
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du utökar appsubscriptionRcp-schemat i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
+
 Du måste utöka **appsubscriptionRcp** för att definiera nya fält för att lagra parametrar från appen i Campaign-databasen. Dessa fält kommer till exempel att användas för personalisering. Så här gör du:
 
 1. Skapa ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schemat och definiera de nya fälten. Läs mer om schematillägget på [den här sidan](../../configuration/using/about-schema-edition.md)
@@ -187,7 +191,6 @@ Du måste utöka **appsubscriptionRcp** för att definiera nya fält för att la
    >[!CAUTION]
    >
    >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är desamma som de i mobilprogramkoden. Se avsnittet [Integrera Campaign SDK i mobilappen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
-
 
 ## Skapa ett multimediemeddelande från Android {#creating-android-delivery}
 
@@ -241,6 +244,8 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 >[!NOTE]
 >
 >Ytterligare alternativ för meddelanden är bara tillgängliga med HTTP v1 API-konfiguration. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande för Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
 1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
