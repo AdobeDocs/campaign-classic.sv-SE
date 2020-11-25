@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Operatörsgrupperna för godkännanden bör utses som roller eller funktioner i 
 
 ## Förfallodatum {#expirations}
 
-Förfallodatum är specifika övergångar som används i olika typer av aktiviteter, och särskilt vid godkännanden. En förfallotid kan användas för att utlösa en åtgärd efter en viss tidsrymd i avsaknad av ett svar eller för att fortsätta arbetsflödet (och tilldela ett godkännande till en annan grupp, till exempel).
+Förfallodatum är specifika övergångar som används i olika typer av aktiviteter, och särskilt vid godkännanden. Du kan använda en förfallotid för att utlösa en åtgärd efter en viss tid utan att svara. Den kan också användas för att till exempel fortsätta med arbetsflödet och tilldela ett godkännande till en annan grupp.
 
 På den andra fliken i egenskaperna för aktivitetsgodkännande kan du definiera en eller flera förfallotider. Du kan definiera flera olika förfallotyper.
 
