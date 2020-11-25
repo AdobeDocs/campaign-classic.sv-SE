@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -162,7 +162,7 @@ Elementet **`<nodemodel>`** innehåller en beskrivning av mapptypen med följand
 * **namn**: internt namn
 * **label**: etikett som används på **[!UICONTROL Add new folder]** menyn och som standardetikett när du infogar en mapp.
 * **img**: standardbild vid mappinfogning.
-* **hiddenCommands**: lista med kommandon (avgränsade med kommatecken) som ska maskeras. Möjliga värden: &quot;insert&quot;, &quot;delete&quot;, &quot;update&quot; och &quot;duplicate&quot;.
+* **hiddenCommands**: lista med kommandon (avgränsade med kommatecken) som ska maskeras. Möjliga värden: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; och &quot;adbdup&quot;.
 * **newFolderShortCuts**: lista med kortkommandon på modeller (avgränsade med kommatecken) när mappar skapas.**`<nodemodel>`**
 * **insertRight**, **editRight**, **deleteRight**: behörighet att infoga, redigera och ta bort mappar.
 
