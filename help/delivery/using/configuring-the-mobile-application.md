@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '820'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 >
 >Programmet måste ha konfigurerats för push-åtgärder FÖRE integrering med Adobe Campaign SDK.
 >
->Om så inte är fallet, se [den här sidan](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
+>Om så inte är fallet, se [den här sidan](https://developer.apple.com/documentation/usernotifications).
 
 1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** noden och klicka på **[!UICONTROL New]**.
 
