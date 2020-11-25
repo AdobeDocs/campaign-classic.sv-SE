@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 9%
 
 ---
 
@@ -32,6 +32,8 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 >Gå till fliken **[!UICONTROL Subscriptions]** för tjänsten för att visa en lista över prenumeranter på tjänsten, dvs. alla personer som har installerat programmet på sin mobiltelefon och gått med på att ta emot meddelanden.
 
 ## Installera paketet {#installing-package-ios}
+
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
 Som hybrid-/värdkund kontaktar du kundtjänstteamet på Adobe för att få tillgång till push-meddelandekanalen i Campaign.
 
