@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: affc541c480ad7e618120fe90270841add06b711
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,7 @@ Arbetsflödena som beskrivs nedan installeras som standard med **modulen Erbjuda
    <tr> 
    <td> <span class="uicontrol">Fullständig mängdberäkning för MessageCenter</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
+   <td> Det här arbetsflödet uppdaterar den <strong>fullständiga</strong> sammanställningen för <strong>meddelandecenterkuben</strong> . Den aktiveras varje dag klockan tre som standard. Den här sammanställningen fångar följande dimensioner: Typ av kanal, datum, status och händelse.<br /> Kuben för <strong>meddelandecentret</strong> används sedan för att generera rapporter baserade på händelser. Du kan läsa mer om kuber i <a href="../../reporting/using/about-cubes.md">det här avsnittet</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
