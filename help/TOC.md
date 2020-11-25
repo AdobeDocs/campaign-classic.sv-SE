@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2171'
 ht-degree: 97%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 97%
       + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
       + [Integritetshantering](platform/using/privacy-management.md)
       + [Sekretessförfrågningar](platform/using/privacy-requests.md)
+      + [Frågor och svar om sekretess](platform/using/privacy-faq.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
