@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 96%
+source-wordcount: '3631'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,10 @@ Sektionen Sekretess har flyttats och berikats med två nya sidor: [Sekretesshant
 En anteckning har lagts till på konfigurationssidan för server med mellankällkod för att ange att det externa kontots interna namn inte ska uppdateras när servern har konfigurerats. [Läs mer](../../installation/using/mid-sourcing-server.md)
 
 Information har lagts till om syntaxen som ska användas när en sökväg till en extern SFTP-server anges. [Läs mer](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+
+Avsnittet Personuppgifter och Personas har uppdaterats med ett scenario för användningsfall för att illustrera hur de olika personerna interagerar när det gäller sekretess. [Läs mer](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+
+Ett nytt avsnitt med vanliga frågor om sekretess har lagts till. [Läs mer](../../platform/using/privacy-faq.md)
 
 ## Oktober 2020 {#oct-2020}
 
