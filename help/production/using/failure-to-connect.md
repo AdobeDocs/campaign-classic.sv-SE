@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
+source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '343'
 ht-degree: 2%
 
 ---
@@ -50,36 +50,31 @@ Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du **A
     &lt;pre>
     &lt;redir status=&#39;OK&#39; date=&#39;YYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
     &lt;/pre>
-    
-    Om du inte får detta resultat bör du kontrollera i webbserverkonfigurationen att integreringen har beaktats.&lt;/td>
+Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.</td>
 </tr>
   <tr> 
    <td>Har Adobe Campaign webbmodul startats?</td> 
    <td>Anslut till följande URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Om du får ett Tomcat Java-fel:
 
-    Är JAVA-integreringen korrekt genomförd? Adobe Campaign kräver SUN JDK.
-    
-    Den är integrerad i filen [sökväg för programmet]/nl6/customer.sh
+Är JAVA-integreringen korrekt genomförd? Adobe Campaign kräver SUN JDK.
+
+Det är integrerat i [sökvägen till programmet]/nl6/customer.sh
 
 * Om du får en tom sida:
 
-       Har Adobe Campaign webbmodul startats? Du bör få:
-       
-       &lt;pre>
-     nlserver pdump
-     HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
-     [...]
-     web@default (27515) - 55,2 Mb
-     
-     [...]¥&lt;/pre>
-   
+Har Adobe Campaign webbmodul startats? Du bör få:
+
+<pre>
+nlserver pdumpHH:MM:SS &gt; Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY[...]web@default (27515) - 55.2 Mb[...]
+</pre>
+
 * Om inte, starta om den med följande kommando:
 
-       &lt;pre>
- nlserver start web     
- &lt;/pre>     
-     &lt;/td>
-   </tr>
+<pre>        
+nlserver start web
+</pre>
+</td>
+</tr>
   <tr>
   	<td>Kontrollera den allmänna konfigurationen för säkerhetszonerna.</td>
   	<td>Mer information om hur du konfigurerar säkerhetszoner finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zone)</td>
