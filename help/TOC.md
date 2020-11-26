@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 97%
    + Integritet {#privacy}
       + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
       + [Integritetshantering](platform/using/privacy-management.md)
-      + [Sekretessförfrågningar](platform/using/privacy-requests.md)
+      + [Förfrågan om användarens information](platform/using/privacy-requests.md)
       + [Frågor och svar om sekretess](platform/using/privacy-faq.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
@@ -335,7 +335,7 @@ ht-degree: 97%
    + Utlösare i Experience Cloud{#experience-triggers}
       + [Kom igång med [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
-      + [Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare](integrations/using/configuring-adobe-io.md)
+      + [Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)
       + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
