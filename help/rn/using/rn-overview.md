@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-byggnaderna** är: [Gold Standard 10-utgåvan](../../rn/using/gold-standard.md#gs-10) och [Campaign 20.2.3-utgåvan](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
+De **senaste GA-versionerna** är: [Gold Standard version 10](../../rn/using/gold-standard.md#gs-10) och [Campaign version 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidat** (RC) – senaste versionen med nya funktioner.
 
-The **last RC build** is [Campaign Classic 20.3 release](../../rn/using/latest-release.md)
+Den **senaste RC-versionen** är [Campaign Classic version 20.3.](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/orange3.png) **Inte längre tillgänglig** – uppdatering till en nyare build krävs.
 
