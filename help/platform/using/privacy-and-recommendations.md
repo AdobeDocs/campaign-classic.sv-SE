@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 6%
+source-wordcount: '2043'
+ht-degree: 5%
 
 ---
 
@@ -78,6 +78,8 @@ När sekretessen hanteras är det viktigt att definiera vilka data som ska hante
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information som rör en individs ras, politiska åsikter, religiösa övertygelser, kriminell bakgrund, genetiska uppgifter, hälsodata, sexuella preferenser, biometrisk information samt medlemskap i fackföreningar.
 
+När ni integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager eller People core service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste ni vara extra noga med att skydda personuppgifter.
+
 De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
 * En **personuppgiftsansvarig** är den myndighet som bestämmer hur och syftet med att samla in, använda och dela personuppgifter.
 * En **dataprocessor** är en person eller part som samlar in, använder eller delar personuppgifter enligt den personuppgiftsansvariges anvisningar.
@@ -85,7 +87,31 @@ De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som
 
 Som företag som samlar in och delar personuppgifter är du den registeransvarige och dina kunder är de registrerade och Adobe Campaign fungerar som databehandlare när de hanterar sina personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvariga att hantera relationen till de registrerade, t.ex. vid hantering av [sekretessförfrågningar](#privacy-requests).
 
-När ni integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager eller People core service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste ni vara extra noga med att skydda personuppgifter.
+### Använd fallscenario {#use-case-scenario}
+
+För att illustrera hur de olika personerna interagerar finns här ett exempel på hur kundupplevelsen i den allmänna dataskyddsförordningen fungerar.
+
+I det här exemplet är ett flygbolag Adobe Campaign kund. Det här företaget är **Data Controller** och alla kunder i flygbolaget är **Data Subjects**. Laura är i det här fallet kund till flygbolaget.
+
+Här är de olika personerna som används i det här exemplet:
+
+* **Laura** är **dataföremålet**. Hon är mottagaren som får meddelanden från flygbolaget. Laura kanske är flygblad ofta, men kan vid något tillfälle besluta att hon inte vill ha någon personlig reklam eller marknadsföringsmeddelanden från flygbolaget. Hon kommer att be flygbolaget (baserat på deras process) att ta bort sitt vanliga flygplansnummer.
+
+* **Anne** är **Data Controller** på flygbolaget. Hon tar emot Laura begäran, hämtar användbara ID:n som efterfrågas för att identifiera den registrerade och skickar in begäran i Adobe Campaign.
+
+* **Adobe Campaign** är **dataprocessor**.
+
+![](assets/privacy-gdpr-flow.png)
+
+Här följer det allmänna flödet för det här användningsexemplet:
+
+1. Den **registrerade** (Laura) skickar en GDPR-begäran till **Data Controller** via e-post, kundtjänst eller en webbportal.
+
+1. **Data Controller** (Anne) skickar GDPR-begäran till Campaign via gränssnittet eller via ett API.
+
+1. När **dataprocessorn** (Adobe Campaign) tar emot informationen, vidtar den åtgärder på GDPR-begäran och skickar ett svar eller en bekräftelse till **datakontrollanten** (Anne).
+
+1. Den **personuppgiftsansvarige** (Anne) granskar sedan informationen och skickar tillbaka den till den registrerade **** (Laura).
 
 ## Datainsamling {#data-acquisition}
 
@@ -125,19 +151,9 @@ Adobe Campaign erbjuder ytterligare funktioner som hjälper dig att underlätta 
 
 * Den **rättigheten att bli glömd** (begäran om radering) ger den registrerade rätt att få registereditorn att radera sina personuppgifter.
 
->[!NOTE]
->
->Den här uppsättningen verktyg är till för att hjälpa dig att uppfylla dina krav på sekretess för GDPR, CCPA, PDPA och LGPD. Mer information om de olika reglerna finns på [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
+Begäran om **åtkomst** och **borttagning** visas i [det här avsnittet](../../platform/using/privacy-management.md#right-access-forgotten).
 
-<!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
-
-* **CCPA** (California Consumer Privacy Act) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
-
-* **Thailand's PDPA** (Personal Data Protection Act) is the new privacy law that harmonizes and modernizes data protection requirements for Thailand. This regulation applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.
-
-Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
-
-Begäran om **åtkomst** och **borttagning** visas på [den här sidan](../../platform/using/privacy-management.md#right-access-forgotten). Implementeringsstegen för att skapa dessa begäranden beskrivs i [det här avsnittet](../../platform/using/privacy-requests.md). <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+Implementeringsstegen för att skapa dessa begäranden beskrivs i [det här avsnittet](../../platform/using/privacy-requests.md).
 
 ## Spårningsfunktioner {#tracking-capabilities}
 
