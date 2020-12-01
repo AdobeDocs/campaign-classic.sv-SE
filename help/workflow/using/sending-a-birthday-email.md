@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Det här arbetsflödet (daglig körning) markerar alla mottagare som har sin födelsedag det aktuella datumet.
 
-Det här användningsexemplet finns också i form av en video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
+![](assets/do-not-localize/how-to-video.png) Det här användningsexemplet finns också i form av en video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 Det gör du genom att skapa en kampanj och klicka på **[!UICONTROL Targeting and workflows]** fliken. Mer information finns i avsnittet [Skapa huvudmålet i ett arbetsflöde](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
 
