@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Definiera sidsekvenser för webbformulär{#defining-web-forms-page-sequencing}
 
-Formuläret kan innehålla en eller flera sidor. Den byggs via ett diagram som gör att du kan sekvensera sidor och testning, köra skript och spela in sidhopp. Diagramkonstrueringsläget är detsamma som för ett arbetsflöde.
+Formuläret kan innehålla en eller flera sidor. Den byggs via ett diagram som låter dig sekvensera sidor, testa, köra skript, hoppa mellan sidor och spela in steg. Det globala diagramdesignläget är samma som för ett Campaign-arbetsflöde.
 
 ## Om föregående sida och nästa sida {#about-previous-page-and-next-page}
 
