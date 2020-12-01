@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ Om du vill använda alternativet måste de specifika tabellerna i fråga ha konf
 
 Om du sparar ett mål i en lista markeras i allmänhet slutet av ett arbetsflöde. Som standard har **[!UICONTROL List update]** aktiviteten därför ingen utgående övergång. Markera alternativet om du vill lägga till en **[!UICONTROL Generate an outbound transition]** .
 
+![](assets/do-not-localize/how-to-video.png) [Upptäck hur du skapar en lista med mottagare från Utforskaren i en video](#video)
+
 ## Exempel: Listuppdatering {#example--list-update}
 
 I följande exempel följer listuppdateringsaktiviteten en fråga som riktar sig till män över 30 som bor i Frankrike. Listan skapas från resultatet av frågan. Den uppdateras sedan varje gång den startas från arbetsflödet. Det kan till exempel användas regelbundet för riktade kampanjerbjudanden.
@@ -56,8 +58,6 @@ I följande exempel följer listuppdateringsaktiviteten en fråga som riktar sig
 
    Listan med matchande mottagare skapas eller uppdateras.
 
-Mer information finns i videon [Skapa en lista över mottagare](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) .
-
 ## Indataparametrar {#input-parameters}
 
 * tableName
@@ -68,3 +68,11 @@ Identifierar populationen som ska sparas i gruppen.
 ## Utdataparametrar {#output-parameters}
 
 * groupId: Gruppidentifierare.
+
+## Videokurs {#video}
+
+I den här videon visas hur du skapar en lista med mottagare från Utforskaren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
