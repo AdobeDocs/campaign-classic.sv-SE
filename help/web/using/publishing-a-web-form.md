@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Följande identifieringsmetoder är möjliga:
    > 
    >Den här funktionen är särskilt användbar för webbprogram, men rekommenderas inte för offentliga formulär. Det valda åtkomstkontrollalternativet måste vara &quot;Aktivera åtkomstkontroll&quot;.
 
-Du måste markera **[!UICONTROL Skip preloading if identification is empty]** alternativet om du inte vill uppdatera profiler. I det här fallet läggs alla profiler som anges till i databasen när formuläret har godkänts. Det här alternativet används till exempel när formuläret publiceras på en webbplats.
+Du måste markera **[!UICONTROL Skip preloading if no ID]** alternativet om du inte vill uppdatera profiler. I det här fallet läggs alla profiler som anges till i databasen när formuläret har godkänts. Det här alternativet används till exempel när formuläret publiceras på en webbplats.
 
 Med det här **[!UICONTROL Auto-load data referenced in the form]** alternativet kan du automatiskt förhandsladda data som matchar inmatnings- och kopplingsfält i formuläret. Uppgifter som det hänvisas till i **[!UICONTROL Script]** och **[!UICONTROL Test]** aktiviteter berörs dock inte. Om det här alternativet inte är markerat måste du definiera fälten med hjälp av **[!UICONTROL Load additional data]** alternativet.
 
