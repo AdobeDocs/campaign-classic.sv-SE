@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 95%
+source-wordcount: '911'
+ht-degree: 93%
 
 ---
 
@@ -25,6 +25,8 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 >
 >Adobe Campaign Classic finns i version 6.11 och 7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Skärmbilderna återspeglar användargränssnittet i Campaign Classic version 7.
 
+![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
+
 ## Viktiga funktioner {#key-capabilities}
 
 Adobe Campaign erbjuder en plattform för att utforma kundupplevelser över flera kanaler och tillhandahåller en miljö för orkestrering av visuella kampanjer, interaktionshantering i realtid och verkställande över flera kanaler.
@@ -32,8 +34,6 @@ Adobe Campaign erbjuder en plattform för att utforma kundupplevelser över fler
 Cykeln för marknadsföringskampanjer i Adobe Campaign illustrerar de viktigaste funktionalitetsområdena för produkten:
 
 ![](assets/d_ncs_user_emarketing.png)
-
-![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Integrerad kundprofil {#integrated-customer-profile}
 
@@ -87,3 +87,10 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [Webbtjänster](../../configuration/using/about-web-services.md) – använd Campaign via API:er/webbtjänster,
 * [Rapportering](../../reporting/using/about-adobe-campaign-reporting-tools.md) – få tillgång till inbyggda rapporter, analysera data och utforma egna rapporter.
 
+## Videokurs {#video}
+
+I den här videon visas huvudfunktionerna och funktionerna för Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
