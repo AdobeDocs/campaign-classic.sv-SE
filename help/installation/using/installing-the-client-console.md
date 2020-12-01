@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '489'
 ht-degree: 5%
 
 ---
@@ -24,6 +24,8 @@ Innan du startar måste du kontrollera [kompatibilitetsmatrisen](https://helpx.a
 >[!CAUTION]
 >
 >Kampanjklientkonsolen och Campaign-programservern måste köras på samma produktversion. Adobe rekommenderar också att du använder samma produktbygge.
+
+![](assets/do-not-localize/how-to-video.png) Lär dig installera och konfigurera Adobe Campaign Client i [video](#video)
 
 ## Ladda ned konsolen{#download-the-client-console}
 
@@ -93,4 +95,11 @@ Så här loggar du in på en befintlig instans:
 
 * [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitetsmatris](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
-* [Installera och konfigurera Adobe Campaign Client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) (video)
+
+## Videokurs
+
+I den här videon visas hur du installerar och konfigurerar Adobe Campaign Client.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
