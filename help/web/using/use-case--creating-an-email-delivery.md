@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"Användningsfall: skapa en e-postleverans"'
-description: '"Användningsfall: skapa en e-postleverans"'
+title: Användningsfall - skapa e-postleverans
+description: Skapa ett användningsfall för e-postleverans
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Vårt sista mål är att skapa en leverans med en personlig mall som innehåller
 >
 >Innan du börjar måste du ha minst en **HTML-mall** konfigurerad som värd för innehållet i framtida leveranser.
 >
->Kontrollera att **[!UICONTROL Properties]** (på **[!UICONTROL Content editing mode]** fliken) är inställt på **[!UICONTROL Advanced]** **[!UICONTROL DCE]** i leveransfönstret. Mer information om hur du optimerar redigeringsprogrammet finns i Bästa tillvägagångssätt för [innehållsredigering](../../web/using/content-editing-best-practices.md).
+>Kontrollera **[!UICONTROL Properties]** att **[!UICONTROL Content editing mode]** (på **[!UICONTROL Advanced]** fliken) är inställt på **[!UICONTROL DCE]** i leveransfönstret. Mer information om hur du optimerar redigeringsprogrammet finns i Bästa tillvägagångssätt för [innehållsredigering](../../web/using/content-editing-best-practices.md).
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
