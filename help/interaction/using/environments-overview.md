@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
@@ -25,4 +25,4 @@ Flera olika användarprofiler är involverade i hanteringen och användningen av
 >
 >Följande konfigurationer måste utföras av en **teknisk administratör**.
 
-Titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) för att lära dig mer om arkitekturen för Campaign-interaktionen och se hur erbjudandemotorn fungerar.
+![](assets/do-not-localize/how-to-video.png) Titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) för att lära dig mer om arkitekturen för Campaign-interaktionen och se hur erbjudandemotorn fungerar.
