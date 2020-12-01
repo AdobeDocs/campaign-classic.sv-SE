@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1579'
 ht-degree: 2%
 
 ---
@@ -225,15 +225,16 @@ Du kan använda **[!UICONTROL Seed addresses]** som mål för korrekturet: Med d
 
 Du kan kombinera definitionen för ett specifikt korrekturmål och användningen av dirigerade adresser med hjälp av **[!UICONTROL Specific target and Seed addresses]** alternativet. De relaterade konfigurationerna definieras sedan i två separata underflikar.
 
-## Så hanterar man frön och korrektur i ett e-postmeddelande {#seeds-and-proofs-video}
+Se även:
+
+* [Välja korrekturmål](#selecting-the-proof-target)
+* [Om fröadresser](../../delivery/using/about-seed-addresses.md)
+* [Användningsfall: välja fröadresser enligt villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## Videokurs {#seeds-and-proofs-video}
 
 I den här videon får du lära dig hur du lägger till frön och korrektur i ett befintligt e-postmeddelande och hur du skickar det.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Se även:
-* [Välja korrekturmål](#selecting-the-proof-target)
-
-* [Om fröadresser](../../delivery/using/about-seed-addresses.md)
-
-* [Användningsfall: välja fröadresser enligt villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
