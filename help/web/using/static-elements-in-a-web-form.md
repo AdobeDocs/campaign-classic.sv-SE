@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1269'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Statiska element i ett webbformulär{#static-elements-in-a-web-form}
 
-Du kan inkludera element som användaren inte har någon interaktion med på formulärets sidor; det är statiska element som bilder, HTML-innehåll, ett vågrätt fält eller en hypertextlänk. Dessa element skapas med den första knappen i verktygsfältet genom att klicka på **[!UICONTROL Add static element]** menyn.
+Du kan inkludera element som användaren inte har någon interaktion med på formulärets sidor; det är statiska element som bilder, HTML-innehåll, ett vågrätt fält eller en hypertextlänk. Dessa element skapas med den första knappen i verktygsfältet genom att du väljer **[!UICONTROL Static elements]**.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ Följande fälttyper är tillgängliga:
 
 Du kan inkludera HTML-innehåll på en formulärsida: hypertextlänkar, bilder, formaterade stycken, video- eller Flash-objekt osv.
 
-Med HTML-redigeraren kan du ange det innehåll som ska infogas på formulärsidan. Öppna redigeraren genom att gå till **[!UICONTROL Static elements>HTML]** .
+Med HTML-redigeraren kan du ange det innehåll som ska infogas på formulärsidan. To open the editor, click **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 Du kan ange och formatera innehållet direkt eller visa källkodsfönstret för att klistra in externt innehåll. Om du vill växla till källkodsläge klickar du på den första ikonen i verktygsfältet:
 
@@ -54,7 +54,7 @@ Om du vill infoga ett databasfält använder du personaliseringsknappen.
 
 Fyll i fälten i redigeringsfönstret enligt följande exempel:
 
-Om du vill lägga till en hypertextlänk går du till **[!UICONTROL Static elements>Link]**.
+Om du vill lägga till en hypertextlänk går du till **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ Använd anpassningsfält för att mata in användarnamnet och det valda varumär
 
 >[!NOTE]
 >
->Av säkerhetsskäl ersätts det värde som anges i **`<%=`** formeln med escape-tecken. Undvik detta genom att använda följande syntax: **`<%=`**.
+>Av säkerhetsskäl ersätts det värde som anges i **`<%=`** formeln med escape-tecken.
 
 I det här exemplet lagras mottagarens för- och efternamn i ett databasfält, medan deras bilmärke lagras i en variabel. Meddelandet som personaliserats på sidan 2 ska ha följande syntax:
 
@@ -216,13 +216,13 @@ Du kan till exempel skapa ett **kontaktfält** som gör att du kan visa stränge
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-I det här operativsystemet kan du faktorisera texten i webbformulär och hantera översättningar med det integrerade översättningsverktyget. Mer information finns i [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+I det här läget kan du bara definiera texten i webbformulär en gång och hantera översättningar med det integrerade översättningsverktyget. Mer information finns i [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
 
 ## Infoga bilder {#inserting-images}
 
 För att bilder ska kunna inkluderas i formulär måste de sparas på en server som är tillgänglig utifrån.
 
-Välj **[!UICONTROL Static elements>Image]** menyn.
+Välj menyn **[!UICONTROL Static elements]** > **[!UICONTROL Image]** .
 
 Välj bildkällan som ska infogas: den kan komma från det offentliga resursbiblioteket eller lagras på en extern server som är tillgänglig utifrån.
 
