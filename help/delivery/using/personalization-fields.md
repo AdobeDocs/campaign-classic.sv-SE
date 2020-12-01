@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 9%
+source-wordcount: '880'
+ht-degree: 8%
 
 ---
 
@@ -118,8 +118,10 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Så personaliserar man e-postmeddelanden med personaliseringsfält {#personalization-fields-video}
+## Videokurs {#personalization-fields-video}
 
 Lär dig hur du lägger till ett anpassningsfält på ämnesraden och innehållet i en e-postleverans.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
