@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 4%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
@@ -109,8 +109,10 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
 
-## Så skapar man ett flerspråkigt nyhetsbrev med villkorligt innehåll {#conditionnal-content-video}
+## Videokurs {#conditionnal-content-video}
 
 Lär dig hur du lägger till villkorligt innehåll i en leverans med ett exempel på ett flerspråkigt nyhetsbrev.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
