@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ Följ stegen nedan för att göra detta:
 
 1. Konfigurera **[!UICONTROL Storage]** aktiviteten för att spara informationen som anges på formulärsidan.
 
-   Med den här aktiviteten kan du skapa mottagarprofiler i en dedikerad temporär fil för att skilja dem från profilerna i databasen som kommunikationen kan skickas till.
+   Med den här aktiviteten kan du skapa mottagarprofiler i en dedikerad tillfällig mapp för att skilja dem från profilerna i databasen som kommunikationen kan skickas till.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
