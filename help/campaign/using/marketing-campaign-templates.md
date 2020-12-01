@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -69,7 +69,7 @@ En färdig mall tillhandahålls för att skapa en kampanj för vilken ingen spec
 
 Skapandet och konfigurationen av kampanjmallar presenteras i [Campaign-mallar](#campaign-templates).
 
-Mer information om hur du skapar kampanjer finns i [den här videon](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+![](assets/do-not-localize/how-to-video.png) Mer information om hur du skapar kampanjer finns i [den här videon](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Konfiguration av tillgängliga moduler {#configuration-of-the-available-modules}
 
