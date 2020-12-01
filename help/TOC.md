@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 98%
+source-wordcount: '2179'
+ht-degree: 96%
 
 ---
 
@@ -273,7 +273,7 @@ ht-degree: 98%
       + [Spåra en webbapplikation](web/using/tracking-a-web-application.md)
       + [Välja att inte delta i spårning av webbapplikation](web/using/web-application-tracking-opt-out.md)
    + Redigera HTML-innehåll {#editing-html-content}
-      + [Om HTML-redigeraren i Campaign](web/using/about-campaign-html-editor.md)
+      + [Kom igång med HTML-redigeraren](web/using/about-campaign-html-editor.md)
       + [Mallhantering](web/using/template-management.md)
       + [Gränssnitt för innehållsredigeraren](web/using/content-editor-interface.md)
       + [Redigera innehåll](web/using/editing-content.md)
@@ -281,7 +281,7 @@ ht-degree: 98%
       + [Skapa en landningssida](web/using/creating-a-landing-page.md)
       + [Användningsfall: skapa en e-postleverans](web/using/use-case--creating-an-email-delivery.md)
    + Webbformulär {#web-forms}
-      + [Om webbformulär](web/using/about-web-forms.md)
+      + [Kom igång med webbformulär](web/using/about-web-forms.md)
       + [Använda en webbformulärmall](web/using/using-a-web-form-template.md)
       + [Lägga till fält i ett webbformulär](web/using/adding-fields-to-a-web-form.md)
       + [Statiska element i ett webbformulär](web/using/static-elements-in-a-web-form.md)
@@ -294,9 +294,9 @@ ht-degree: 98%
       + [Översätta ett webbformulär](web/using/translating-a-web-form.md)
       + [Användningsfall: webbformulär](web/using/use-cases--web-forms.md)
    + Onlineundersökningar {#online-surveys}
-      + [Om undersökningar](web/using/about-surveys.md)
-      + [Komma igång med undersökningar](web/using/getting-started-with-surveys.md)
-      + [Bygga en undersökning](web/using/building-a-survey.md)
+      + [Kom igång med enkäter](web/using/about-surveys.md)
+      + [Viktiga steg för att skapa en enkät](web/using/getting-started-with-surveys.md)
+      + [Utforma en undersökning](web/using/building-a-survey.md)
       + [Hantera svar](web/using/managing-answers.md)
       + [Publicera, spåra och använda insamlade data](web/using/publish--track-and-use-collected-data.md)
       + [Konfigurera undersökningar](web/using/configuring-surveys.md)
