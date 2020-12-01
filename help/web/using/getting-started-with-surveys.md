@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Komma igång med undersökningar
-description: Komma igång med undersökningar
+title: Viktiga steg för att skapa en enkät
+description: Skapa din första enkät med Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
 
-# Komma igång med undersökningar{#getting-started-with-surveys}
+# Viktiga steg för att skapa en enkät{#getting-started-with-surveys}
 
 Här följer en kort översikt över de viktigaste stegen för att skapa en enkel enkät med hjälp av följande mall:
 
