@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ Med alternativknappar kan du erbjuda användaren en serie exklusiva alternativ a
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-Du kan skapa alternativknappar var för sig (enhetsknappar) eller via en flervalslista, men eftersom alternativknapparna är avsedda att markera ett alternativ skapar vi alltid minst ett par alternativknappar, aldrig bara en enda knapp.
+Du kan skapa alternativknappar var för sig (enhetsknappar) eller via en flervalslista, men eftersom alternativknapparna ska markera ett alternativ skapar vi alltid minst ett par alternativknappar, aldrig bara en enda knapp.
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ Innehållet i formulärfälten kan formateras så att de matchar data som lagras
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Om du vill att användaren ska kunna ange ett datum på en formulärsida väljer du **[!UICONTROL Add input field > Date...]** i verktygsfältet eller sidredigeraren.
+Om du vill att användaren ska kunna ange ett datum på en formulärsida lägger du till ett inmatningsfält och väljer typ **[!UICONTROL Date...]**.
 
 Ange en etikett för fältet och konfigurera datalagringsläget.
 
@@ -267,7 +267,7 @@ Du kan välja datum via en kalender eller listruta. Du kan också ange dem direk
 
 >[!NOTE]
 >
->Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar är tillgängliga på alla språk som används. See [Translating a web form](../../web/using/translating-a-web-form.md).
+>Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar finns tillgängliga på alla språk som används. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 I vissa fall kan det dock vara enklare att använda nedrullningsbara listor (till exempel när du anger födelsedatum).
 
@@ -388,11 +388,13 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 
 ## Infoga en dold konstant {#inserting-a-hidden-constant}
 
-Du kan markera ett fält när användaren skickar en av sidorna i formuläret. Det gör du genom att placera en konstant på sidan och ange värdet och lagringsplatsen.
+När användaren validerar en av sidorna i formuläret kan du ange ett specifikt värde för ett fält i profilen eller för en variabel.
 
 Det här fältet är inte synligt för användaren, men kan användas för att utöka data i användarprofilen.
 
-I följande exempel fylls mottagarprofilens **ursprungsfil** i automatiskt när en användare godkänner den här sidan. Konstanten visas inte på sidan.
+Det gör du genom att placera en **konstant** på sidan och ange värdet och lagringsplatsen.
+
+I följande exempel fylls mottagarprofilens **ursprungsfält** i automatiskt när en användare godkänner den här sidan. Konstanten visas inte på sidan.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
