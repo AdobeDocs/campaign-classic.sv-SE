@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1626'
 ht-degree: 99%
 
 ---
@@ -54,7 +54,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <li>Webb-API - lokal Microsoft Dynamics CRM: 2016, 2016 uppdatering 1</li>
    <li>Webb-API - Microsoft Dynamics CRM Online: 2016, 2016 uppdatering 1</li>
    </ul>
-  <p><em>Måldatum för borttagning: 2021</em></p>
+  <p><em>Måldatum för borttagning: april 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -62,14 +62,14 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td><p>Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell.<p>
   <p> Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta.
   <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html">Läs mer</a></p>
-  <p><em>Måldatum för borttagning: 2021</em></p>
+  <p><em>Måldatum för borttagning: april 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-domän<br></td>
   <td><p> Från och med Campaign version 20.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inaktuell.<p>
   <p>Om du använder demdex-domänen för dina externa import-/exportkonton måste du anpassa implementeringen därefter. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
-  <p><em>Måldatum för borttagning: 2021</em></p>
+  <p><em>Måldatum för borttagning: april 2021</em></p>
   </td>
   <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
@@ -92,14 +92,14 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    </ul>
   <p>Om du använder någon av dessa kopplingar måste implementeringen anpassas i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Läs mer</a></p> 
   <p>Läs mer om hur man migrerar äldre kopplingar i <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector.html">det här tekniska dokumentet</a>.</p>
-  <p><em>Måldatum för borttagning: 2021</em></p>
+  <p><em>Måldatum för borttagning: april 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Faxkanal<br></td>
    <td><p>Från och med Campaign version 20.2 är faxkanalen inaktuell.</p> 
    <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
-   <p><em>Måldatum för borttagning: 2021</em></p></td>
+   <p><em>Måldatum för borttagning: april 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
