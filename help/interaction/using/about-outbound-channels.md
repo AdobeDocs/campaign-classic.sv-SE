@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 Erbjudandena kan presenteras i olika utrymmen via inkommande eller utgående kanaler. I det här kapitlet beskrivs utgående kanaler.
 
->[!NOTE]
->
->Du kan också titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) som visar hur du kan leverera ett erbjudande via en utgående kanal.
+![](assets/do-not-localize/how-to-video.png) Du kan också titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) som visar hur du kan leverera ett erbjudande via en utgående kanal.
 
 För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det ha godkänts och vara tillgängligt i en live-miljö. Mer information finns i [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
 
