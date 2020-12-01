@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '952'
 ht-degree: 16%
 
 ---
@@ -107,13 +107,15 @@ De profiler som uteslöts under färdigställandet (typologiregler, karantänreg
 
 Du kan få en översikt över **[!UICONTROL Number of active profiles]** Campaign Standarden **[!UICONTROL Administration > Campaign Management > Customer metrics]** på menyn. Det faktiska antalet utförs av det **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [tekniska arbetsflödet](../../workflow/using/deliveries.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]** menyn. Varje period varar i 12 månader.
 
-## Skapa och hantera profiler {#create-profiles-video}
+## Videokurs {#create-profiles-video}
 
 Lär dig hur du får åtkomst till profildata, sorterar och filtrerar profiler och skapar och hanterar profiler manuellt.
 
 I den här videon förklaras också Adobe Campaign Classic överensstämmelse med de allmänna dataskyddsreglerna.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Se även**
 
