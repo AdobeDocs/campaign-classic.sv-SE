@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -99,7 +99,7 @@ Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Returnerar true om avanmälningsbanderollen ska visas efter att en avanmälningsbanderoll har valts av administratören
+   Returnerar &quot;true&quot; om avanmälningsbanderollen ska visas efter att en avanmälningsbanderoll har valts av administratören
 
    Den här koden anropas när administratören redan har valt att använda bannern för avanmälan av webbspårning.
 
