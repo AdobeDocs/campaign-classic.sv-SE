@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Med serverinformationen från skärmbilden i föregående avsnitt kan du till ex
 
 Adobe gör en säkerhetskopia av ditt system innan några ändringar görs. Men om det finns viktiga anpassningsarbeten i ditt icke-produktionssystem (utvecklings- eller testservrar) rekommenderar vi att du exporterar dessa som ett paket före en uppgradering.
 
-Om du vill ha mer information [tittar du på videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)så här.
+![](assets/do-not-localize/how-to-video.png) Om du vill ha mer information [tittar du på videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)så här.
 
 ## När kommer uppgraderingarna att äga rum?
 
