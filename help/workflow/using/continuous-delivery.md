@@ -7,17 +7,21 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 3%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
 
 
 # Kontinuerlig leverans{#continuous-delivery}
 
-Med en åtgärd av typen **kontinuerlig** leverans kan du lägga till nya mottagare till en befintlig leverans. Med den här leveranstypen slipper du skapa en ny leverans varje gång: Det här läget är ofta mer effektivt, särskilt när det gäller meddelanden om låga volymer eller meddelanden som skickas ut vid behov. På en leveransmallnivå kan du ange ett skript för att beräkna etiketten (och kampanjmappen) för den associerade leveransen. Om skriptet beräknar en leverans som inte finns än, skapas den direkt.
+Med en åtgärd av typen **kontinuerlig** leverans kan du lägga till nya mottagare till en befintlig leverans. Med den här leveranstypen slipper du skapa en ny leverans varje gång: Det här läget är ofta mer effektivt, särskilt när det gäller meddelanden om låga volymer eller meddelanden som skickas ut vid behov.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#continuous-delivery-video)
+
+På en leveransmallnivå kan du ange ett skript för att beräkna etiketten (och kampanjmappen) för den associerade leveransen. Om skriptet beräknar en leverans som inte finns än, skapas den direkt.
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -56,6 +60,10 @@ En kontinuerlig leverans skapar en enda leverans- och leveranslogg (broadLog) oc
 
 ![Kontinuerlig leverans](assets/delivery_continuous.jpg)
 
+## Videokurs {#continuous-delivery-video}
+
 I den här videon visas hur du konfigurerar en kontinuerlig leverans med en stegvis fråga.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
