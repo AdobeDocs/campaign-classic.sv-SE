@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Formulärmallen väljs när formuläret skapas. Den kan inte ändras senare. Mer
 
 Fälten i webbformulär lagras som standard i mottagartabellen. Du kan ändra tabellen som används genom att välja en ny tabell i **[!UICONTROL Document type]** fältet. Med **[!UICONTROL Zoom]** ikonen kan du visa innehållet i den markerade tabellen.
 
-Som standard lagras svaren i **[!UICONTROL Answer to a recipient form]** tabellen.
+Som standard lagras svaren i **svarstabellen till en mottagare** .
 
 ## Konfigurera en felsida {#setting-up-an-error-page}
 
