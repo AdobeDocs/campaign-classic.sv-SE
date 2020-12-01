@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '497'
 ht-degree: 12%
 
 ---
@@ -63,17 +63,21 @@ Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
 
 Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka uteslutningar. Exempel på användningsområden för typologiregler för tryck finns på [den här sidan](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Ställa in trötthetshantering med typologiregler {#typologies-video}
+## Självstudievideor {#typologies-video}
+
+### Ställa in trötthetshantering med typologiregler
 
 I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic genom att utnyttja typologiregler.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## Konfigurera trötthetshantering med fördefinierade filter
+### Konfigurera trötthetshantering med fördefinierade filter
 
 Trötthetshanteringen styr frekvens och antal meddelanden för att undvika att mottagare blir överdrivna. Om du inte har kampanjoptimeringsmodulen i din kampanjinstans kan du konfigurera ett fördefinierat filter som filtrerar målpopulationen efter antalet mottagna meddelanden. I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic med hjälp av filter.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Relaterat ämne**
 
