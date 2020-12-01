@@ -1,63 +1,56 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om HTML-redigeraren i Campaign
-description: Om HTML-redigeraren i Campaign
+title: Kom igång med Campaign HTML editor
+description: Kom igång med Campaign DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 
-# Om HTML-redigeraren i Campaign{#about-campaign-html-editor}
+# Kom igång med Campaign HTML editor{#about-campaign-html-editor}
 
-DCE ( **Digital Content Editor)** är en HTML-redigerare där du enkelt kan skapa och ändra mallar eller innehåll i HTML-format i Adobe Campaign.
+DCE ( **Digital Content Editor)** är en HTML-redigerare där du enkelt kan skapa innehåll och mallar i HTML-format i Adobe Campaign.
 
-Med redigeraren för digitalt innehåll kan du infoga och formatera sidelement och associera databasfält med element från en HTML-sida. Den erbjuds som standard när du skapar en sida för ett webbprogram, eller är tillgänglig när du skapar leveranser som baseras på en mall där den är aktiv.
+Med Digital Content Editor kan du infoga och formatera sidelement och mappa databasfält med element från en HTML-sida. Den här redigeraren är tillgänglig när du skapar en sida för ett webbprogram eller när du skapar leveranser som baseras på en DCE-mall.
 
 >[!NOTE]
+>>Använd anpassningsblock om du behöver lägga till JavaScript-kod på serversidan. [Läs mer](../../delivery/using/personalization-blocks.md).
 >
->I DCE kan du bara utföra de åtgärder som beskrivs i det här avsnittet.
->
->Om du vill lägga till JavaScript-kod på serversidan är det bättre att lägga till den i anpassningsblock. Mer information om hur du skapar och ändrar personaliseringsblock finns på [den här sidan](../../delivery/using/personalization-blocks.md).
-
 >[!CAUTION]
->
->Av sekretesskäl rekommenderar vi att du använder HTTPS för alla externa resurser.
+Alla externa resurser måste refereras med en HTTPS-URL.
 
-## Allmän åtgärd i Innehållsredigeraren {#content-editor-general-operation}
+## Viktiga steg för att använda Digital Content Editor {#content-editor-general-operation}
 
-I det här avsnittet beskrivs de viktigaste stegen för att redigera och överföra innehåll som redigeras med DCE inom ramen för ett webbprogram och i samband med en leverans.
+I det här avsnittet beskrivs de viktigaste stegen för att redigera och överföra innehåll som redigeras med DCE, i samband med webbprogram och leveransdesign.
 
 Den allmänna åtgärden är följande:
 
 ![](assets/dce_schema.png)
 
-Så här skapar du ett enkelt webbprogram:
+Om du vill skapa ett enkelt **webbprogram** måste du:
 
-* Skapa ett webbprogram, mer information finns i [Skapa en landningssida](../../web/using/creating-a-landing-page.md),
-* Välj befintligt innehåll eller skapa innehåll från en standardmall. Mer information finns i [Mallhantering](../../web/using/template-management.md).
-* Mer information om detta finns i [Redigera innehåll](../../web/using/editing-content.md).
-* Publicera webbprogrammet. Mer information finns i [Publicera innehåll](../../web/using/creating-a-landing-page.md#step-3---publishing-content) och på [den här sidan](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking).
-
->[!NOTE]
->
->Ett fullständigt exempel som beskriver hur DCE implementeras inom ramen för ett webbprogram finns i [Skapa en landningssida](../../web/using/creating-a-landing-page.md).
-
-Så här skapar du en e-postleverans:
-
-* Skapa en leverans från en e-posttypsmall där DCE är aktiv,
-* Välj befintligt innehåll eller skapa innehåll från en standardmall,
-* Redigera och konfigurera onlinematerial,
-* Skicka leveransen. Mer information finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+1. Skapa ett webbprogram - [Läs mer](../../web/using/creating-a-landing-page.md)
+1. Välj befintligt innehåll eller skapa innehåll från en standardmall - [Läs mer](../../web/using/template-management.md)
+1. Redigera och konfigurera innehåll - [Läs mer](../../web/using/editing-content.md)
+1. Publicera webbprogrammet - [Läs mer](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
->
->Ett fullständigt exempel som beskriver implementeringen av DCE inom ramen för en e-postleverans finns i [det här användningsexemplet](../../web/using/use-case--creating-an-email-delivery.md).
+Ett fullständigt implementeringsexempel i ett webbprogram finns i [det här avsnittet](../../web/using/creating-a-landing-page.md).
 
+Om du vill skapa en **e-postleverans** måste du:
+
+1. Skapa en leverans från en DCE-mall - [Läs mer](../../web/using/use-case--creating-an-email-delivery.md)
+1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](../../web/using/template-management.md)
+1. Redigera och konfigurera onlinematerial
+1. Skicka leveransen - [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
+
+>[!NOTE]
+Ett fullständigt implementeringsexempel i samband med en e-postleverans är tillgängligt i [det här fallet](../../web/using/use-case--creating-an-email-delivery.md).
