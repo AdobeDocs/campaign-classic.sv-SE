@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 7%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 7%
 # Återkommande leverans{#recurring-delivery}
 
 Med en **[!UICONTROL Recurring delivery]** aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
+
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#recurring-delivery-video)
 
 Den här aktiviteten är bara tillgänglig från fliken **[!UICONTROL Targeting and workflows]** som finns i en kampanj.
 
@@ -39,11 +41,16 @@ En **återkommande leverans** skapar en ny leveransinstans varje gång den körs
 
 ![Återkommande leverans](assets/delivery_recurring.jpg)
 
-I den här videon förklaras hur du konfigurerar en återkommande leverans och en schemaläggningsaktivitet.
-
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
-
 >[!NOTE]
 >
 >Det går inte att skicka ett korrektur från en **[!UICONTROL Recurring delivery]** typaktivitet.\
 >Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Email delivery]**).
+
+## Självstudievideo (#reciing-delivery-video)
+
+I den här videon förklaras hur du konfigurerar en återkommande leverans och en schemaläggningsaktivitet.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
