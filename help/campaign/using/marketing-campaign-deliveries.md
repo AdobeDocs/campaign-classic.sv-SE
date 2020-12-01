@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2925'
 ht-degree: 1%
 
 ---
@@ -417,7 +417,7 @@ En disposition kan innehålla objekt och personaliseringsfält, resurser och erb
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** ikonen till höger om listområdet.
+   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** ikonen till höger om listzonen.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
@@ -457,8 +457,10 @@ Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för d
 >
 >Mer information om export finns i avsnittet [Komma igång](../../platform/using/generic-imports-and-exports.md) .
 
-#### Så skapar man ett e-postmeddelande i en kampanj {#create-email-video}
+#### Videokurs {#create-email-video}
 
 I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
