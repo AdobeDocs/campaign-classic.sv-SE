@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
@@ -25,6 +25,8 @@ Med modulen **Marketing Resource Management (MRM)** kan ni dessutom styra markna
 >
 >Mer information om Adobe Campaign grundläggande funktioner finns i avsnittet [Komma igång](../../platform/using/about-adobe-campaign-classic.md) .\
 >Funktioner för målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+
+![](assets/do-not-localize/how-to-video.png) [Identifiera nyckelbegrepp för marknadsföringskampanjer i video](#video)
 
 ## Kärnkoncept {#core-concepts}
 
@@ -62,3 +64,10 @@ Följande koncept måste vara kända i samband med Campaign:
 
    Mer information finns i [Associera och strukturera resurser via en leveransöversikt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
+## Självstudiekurs {#video}
+
+I den här videon presenteras de viktigaste begreppen för marknadsföringskampanjer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
