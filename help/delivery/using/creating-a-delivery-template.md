@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 6%
 
 ---
 
@@ -68,20 +68,24 @@ Så här konfigurerar du en leveransmall:
 >
 >För att undvika konfigurationsfel rekommenderar vi att du duplicerar en intern mall och ändrar dess egenskaper i stället för att skapa en ny mall.
 
-## Konfigurera en leveransmall {#delivery-template-video}
+## Självstudievideor {#delivery-template-video}
+
+### Konfigurera en leveransmall
 
 I följande video visas hur du konfigurerar en mall för en ad hoc-leverans.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
-## Så här ställer du in egenskaper för leveransmallar
+### Så här ställer du in egenskaper för leveransmallar
 
 I följande video visas hur du ställer in leveransmallsegenskaperna och förklarar varje egenskap i detalj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-## Distribuera en ad hoc-leveransmall
+### Distribuera en ad hoc-leveransmall
 
 I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postleverans och den förklarar skillnaden mellan en e-postleverans och ett leveransarbetsflöde.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
