@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Spåra en webbapplikation{#tracking-a-web-application}
 
-Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE etc.).
+Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE, osv.).
 
 Därför kan du definiera flera navigeringsvägar och utvärdera hur de fungerar. Återskapade data är sedan tillgängliga i rapporter för respektive program.
 
@@ -36,7 +36,7 @@ De viktigaste förbättringarna i den här versionen är följande:
 
    * **Konverteringsgrad**: antal personer som visade alla steg i en navigeringssökväg.
    * **Studsfrekvens**: antal personer som endast visade det första steget
-   * **Konverteringstunnel**: förlustnivå mellan varje steg.
+   * **Konverteringstratt**: förlustnivå mellan varje steg.
 
    Dessutom visar ett **sektortypdiagram** populationen utifrån dess källa.
 
