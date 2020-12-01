@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 3%
+source-wordcount: '2157'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Från den centrala delen av startsidan kan du använda länkar för att få åtk
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png)[ Upptäck arbetsytan i Campaign via en video](#video)
 
 >[!NOTE]
 >
@@ -389,3 +389,11 @@ I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna 
 * **[!UICONTROL d]** i dagar.
 
 ![](assets/enter_unit_sample.png)
+
+## Videokurs {#video}
+
+I den här videon visas arbetsytan i Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
