@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 # Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
+
+![](assets/do-not-localize/how-to-video.png) Upptäck hur du skapar en marknadsföringsplan, ett program och en kampanj [i en video](#video)
 
 Så här skapar du en marknadsföringskampanj:
 
@@ -230,3 +232,11 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
 Varje periodisk kampanj innehåller samma element. När den väl har skapats hanteras den som en standardkampanj.
+
+## Videokurs {#video}
+
+Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
