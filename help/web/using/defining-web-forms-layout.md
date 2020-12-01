@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -39,9 +39,9 @@ I exemplet ovan återges följande:
 
 ## Placera fälten på sidan {#positioning-the-fields-on-the-page}
 
-Webbformulärets layout definieras sida för sida i varje behållare och kan överladdas för varje kontroll.
+Webbformulärets layout definieras sida för sida i varje behållare och kan vid behov överladdas.
 
-Sidorna är uppdelade i kolumner: varje sida innehåller ett visst antal kolumner. Varje fält på sidan upptar **n** celler. Behållare upptar också ett visst antal kolumner och fälten som de innehåller upptar ett visst antal celler
+Sidorna är uppdelade i kolumner: varje sida innehåller ett visst antal kolumner. Varje fält på sidan upptar **n** celler. Behållare upptar också ett visst antal kolumner och fälten som de innehåller upptar ett visst antal celler.
 
 Som standard byggs sidorna på en enda kolumn och varje element upptar en cell. Det innebär att fält visas under varandra, där var och en tar upp en hel rad, vilket visas nedan:
 
