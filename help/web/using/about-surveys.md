@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om undersökningar
-description: Om undersökningar
+title: Kom igång med enkäter
+description: Kom igång med Campaign-enkäter
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 0%
 
 ---
 
 
-# Om undersökningar{#about-surveys}
+# Get started with surveys{#about-surveys}
 
 Adobe Campaign innehåller en grafisk modul för att definiera och publicera webbapplikationer. Detta används för att skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
@@ -31,7 +31,7 @@ Hantering av webbprogram beskrivs i [det här avsnittet](../../web/using/about-w
 >
 >Av sekretesskäl rekommenderar vi att du använder HTTPS för alla externa resurser.
 
-## Omfattning av kampanjundersökningar {#campaign-surveys-scope}
+## Funktionsomfång {#campaign-surveys-scope}
 
 I Adobe Campaign kan du använda följande funktioner i webbprogram:
 
