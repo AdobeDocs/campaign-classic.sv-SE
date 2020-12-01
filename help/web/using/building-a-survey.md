@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Bygga en undersökning
-description: Bygga en undersökning
+title: Utforma en undersökning
+description: Utforma en undersökning
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Bygga en undersökning{#building-a-survey}
+# Utforma en undersökning{#building-a-survey}
 
 ## Creating a new survey {#creating-a-new-survey}
 
