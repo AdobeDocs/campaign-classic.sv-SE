@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -154,8 +154,10 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    * Ange innehållet (i HTML, text, JavaScript osv.) av personaliseringsblocket och klicka **[!UICONTROL Save]**.
 
-## Så personaliserar man e-postmeddelanden med dynamiska innehållsblock {#personalization-blocks-video}
+## Videokurs {#personalization-blocks-video}
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i e-postleveransen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
