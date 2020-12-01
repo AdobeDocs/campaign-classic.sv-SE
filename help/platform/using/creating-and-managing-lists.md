@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '805'
 ht-degree: 8%
 
 ---
@@ -126,7 +126,9 @@ Du kan ta bort en eller flera listor från grupplistan i Adobe Campaign-trädet.
 >
 >När du tar bort en lista påverkas inte profilerna i listan, men data i deras profil uppdateras.
 
-## Skapa en lista med mottagare {#create-list-video}
+## Videokurs {#create-list-video}
+
+### Skapa en lista med mottagare
 
 En lista är en statisk uppsättning mottagare som kan användas för leveransåtgärder och som uppdateras i och med importer eller medan arbetsflödet körs. En lista över mottagare kallas även för en målgrupp.
 
@@ -134,8 +136,10 @@ Lär dig hur du skapar en målgrupp genom att konfigurera en lista med mottagare
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
+### How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 Lär dig hur du skapar ett arbetsflöde för att rikta in dig på mottagare och hur du gör det återkommande innan du använder listan i ett e-postmål.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
