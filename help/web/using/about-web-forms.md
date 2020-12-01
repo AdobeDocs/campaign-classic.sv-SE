@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om webbformulär
-description: Om webbformulär
+title: Kom igång med webbformulär
+description: Kom igång med webbformulär i Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 5%
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
 
-# Om webbformulär{#about-web-forms}
+# Get started with web forms{#about-web-forms}
 
 Adobe Campaign integrerar en grafisk modul för att definiera och publicera webbformulär för att skapa sidor som innehåller inmatnings- och urvalsfält, och som kan innehålla data i databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
 
