@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -105,7 +105,7 @@ Du kan exportera och importera teckensträngar för att översätta dem med ett 
 
 ### Exportera filer {#exporting-files}
 
-1. Markera det eller de webbprogram vars strängar du vill importera, högerklicka och välj sedan **[!UICONTROL Actions > Export strings for translation...]**
+1. Markera det eller de webbprogram vars strängar du vill exportera, högerklicka och välj sedan **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
@@ -454,7 +454,7 @@ Så här lägger du till ett språk:
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Markera översättningsspråket och ange en översättning för strängen. Du kan godkänna översättningen genom att markera **[!UICONTROL Translation validated]** alternativet.
+1. Markera översättningsspråket och ange en översättning för strängen. Du kan godkänna översättningen genom att markera **[!UICONTROL Translation approved]** alternativet.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -470,7 +470,7 @@ Så här lägger du till ett språk:
 
 Om du vill översätta webbprogram till andra språk än standardspråken (se [Ändra visningsspråk](#changing-forms-display-language)för formulär) måste du lägga till ett nytt översättningsspråk.
 
-1. Klicka på noden **[!UICONTROL Administration > Platform > Itemized lists]** i Adobe Campaign-trädet och välj **[!UICONTROL Languages available for translation]** i listan. Listan med tillgängliga översättningar visas i fönstrets nedre del.
+1. Klicka på noden **[!UICONTROL Administration > Platform > Enumerations]** i Adobe Campaign-trädet och välj **[!UICONTROL Languages available for translation]** i listan. Listan med tillgängliga översättningar visas i fönstrets nedre del.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
