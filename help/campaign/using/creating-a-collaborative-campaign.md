@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -17,43 +17,43 @@ ht-degree: 3%
 
 # Skapa en samverkanskampanj{#creating-a-collaborative-campaign-intro}
 
-Den centrala enheten skapar samarbetskampanjer utifrån mallar för **distribuerade marknadsföringskampanjer** . Se [den här sidan](../../campaign/using/about-distributed-marketing.md#collaborative-campaign).
+Den centrala enheten skapar samarbetskampanjer från **Distributed Marketing** kampanjmallar. Se [den här sidan](../../campaign/using/about-distributed-marketing.md#collaborative-campaign).
 
 ## Skapa en samverkanskampanj {#creating-a-collaborative-campaign}
 
-Om du vill konfigurera en kampanj för samarbete klickar du på **[!UICONTROL Campaign management > Campaigns]** noden och sedan på **[!UICONTROL New]** ikonen .
+Klicka på noden **[!UICONTROL Campaign management > Campaigns]** och sedan på ikonen **[!UICONTROL New]** för att konfigurera en samarbetskampanj.
 
 >[!NOTE]
 >
->Förutom **[!UICONTROL collaborative campaigns (by campaign)]** dessa kampanjer kan konfigureras och köras via ett webbgränssnitt.
+>Förutom **[!UICONTROL collaborative campaigns (by campaign)]** kan dessa kampanjer konfigureras och köras via ett webbgränssnitt.
 
 Konfigurationsprocessen för en databas för en samarbetskampanj liknar den för en lokal kampanjmall. Specifikationerna för de olika typerna av samarbetskampanjer anges nedan.
 
-### Per formulär {#by-form}
+### Efter formulär {#by-form}
 
-Om du vill skapa en samarbetskampanj (per formulär) måste du välja **[!UICONTROL Collaborative campaign (by form)]** mallen.
+Om du vill skapa en samarbetskampanj (efter formulär) måste du välja **[!UICONTROL Collaborative campaign (by form)]**-mallen.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-Klicka på länken på **[!UICONTROL Edit]** fliken för att **[!UICONTROL Advanced campaign settings...]** öppna fliken **Distribuerad marknadsföring** .
+På fliken **[!UICONTROL Edit]** klickar du på länken **[!UICONTROL Advanced campaign settings...]** för att komma åt fliken **Distributed Marketing**.
 
-Välj webbgränssnittet **Efter formulär** . Med den här typen av gränssnitt kan du skapa anpassningsfält som ska användas av lokala enheter när du beställer en kampanj. Se [Skapa en lokal kampanj (per formulär)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+Välj webbgränssnittet **Efter formulär**. Med den här typen av gränssnitt kan du skapa anpassningsfält som ska användas av lokala enheter när du beställer en kampanj. Se [Skapa en lokal kampanj (efter formulär)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
-Spara kampanjen. Nu kan du använda den från **vyn Campaign-paket** i **Campaign** -universum genom att klicka på **[!UICONTROL Create]** -knappen.
+Spara kampanjen. Du kan nu använda den från vyn **Campaign packages** i **Campaign**-universum genom att klicka på knappen **[!UICONTROL Create]**.
 
-I **[!UICONTROL Campaign Package]** vyn kan ni använda lokala kampanjmallar (färdiga eller duplicerade) samt referenskampanjer för samarbetskampanjer, i syfte att skapa kampanjer för olika organisatoriska enheter.
+I vyn **[!UICONTROL Campaign Package]** kan du använda lokala kampanjmallar (körklara eller duplicerade) samt referenskampanjer för samarbetskampanjer, i syfte att skapa kampanjer för olika organisationsenheter.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
-### Per kampanj {#by-campaign}
+### Efter kampanj {#by-campaign}
 
-Om du vill skapa en samarbetskampanj (per kampanj) måste du välja **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** mallen.
+Om du vill skapa en samarbetskampanj (per kampanj) måste du välja **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]**-mallen.
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
 När kampanjen beställs kan den lokala enheten slutföra de villkor som den centrala enheten har fördefinierat och utvärdera kampanjen innan den beställs.
 
-När en order för en **samarbetskampanj (per kampanj)** har godkänts av den centrala enheten skapas en underordnad kampanj för den lokala enheten. När den lokala enheten är tillgänglig kan den sedan ändra:
+När en order för en **samarbetskampanj (efter kampanj)** har godkänts av den centrala enheten skapas en underordnad kampanj för den lokala enheten. När den lokala enheten är tillgänglig kan den sedan ändra:
 
 * kampanjarbetsflödet,
 * typologiregler,
@@ -61,13 +61,13 @@ När en order för en **samarbetskampanj (per kampanj)** har godkänts av den ce
 
 Den lokala entiteten kör den underordnade kampanjen. Den centrala enheten kör den överordnade kampanjen.
 
-Den centrala enheten kan visa alla underordnade kampanjer som är länkade till en **samarbetskampanj (per kampanj)** från den här instrumentpanelen (via **[!UICONTROL List of associated campaigns]** länken).
+Den centrala enheten kan visa alla underordnade kampanjer som är länkade till en **Samarbetskampanj (per kampanj)** från den här instrumentpanelen (via länken **[!UICONTROL List of associated campaigns]**).
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
 ### Efter målgodkännande {#by-target-approval}
 
-Om du vill skapa en samarbetskampanj (genom målgodkännande) måste du välja **[!UICONTROL Collaborative campaign (by target approval)]** mallen.
+Om du vill skapa en samarbetskampanj (med målgodkännande) måste du välja mallen **[!UICONTROL Collaborative campaign (by target approval)]**.
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
@@ -75,23 +75,23 @@ Om du vill skapa en samarbetskampanj (genom målgodkännande) måste du välja *
 >
 >I det här läget behöver den centrala enheten inte ange lokala enheter.
 
-Kampanjarbetsflödet måste integrera aktiviteten **Lokal typ av godkännande** . Aktivitetsparametrarna är följande:
+Kampanjarbetsflödet måste integrera typaktiviteten **Lokalt godkännande**. Aktivitetsparametrarna är följande:
 
 * **[!UICONTROL Action to perform]** : Målmeddelande för godkännande.
 * **[!UICONTROL Distribution context]** : Explicit.
 * **[!UICONTROL Data distribution]** : Lokal entitetsdistribution.
 
-**Datadistributionen för den lokala entitetens distributionstyp** måste skapas. Med mallen för datadistribution kan du begränsa antalet poster från en lista med grupperingsvärden. Klicka **[!UICONTROL Resources > Campaign management > Data distribution]** på **[!UICONTROL New]** ikonen för att skapa en ny **[!UICONTROL Data distribution]**. Mer information om datadistribution finns i handboken [Arbetsflöden](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) .
+**Distributionen av data** för den lokala entitetens distributionstyp måste skapas. Med mallen för datadistribution kan du begränsa antalet poster från en lista med grupperingsvärden. I **[!UICONTROL Resources > Campaign management > Data distribution]** klickar du på ikonen **[!UICONTROL New]** för att skapa en ny **[!UICONTROL Data distribution]**. Mer information om datadistribution finns i guiden [Arbetsflöden](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. För **[!UICONTROL Assignment type]** väljer du **Lokal entitet**.
+Markera **måldimensionen** och **[!UICONTROL Distribution field]**. För **[!UICONTROL Assignment type]** väljer du **Lokal enhet**.
 
-Lägg till ett fält för varje lokal enhet på **[!UICONTROL Distribution]** fliken och ange värdet.
+Lägg till ett fält för varje lokal enhet och ange värdet på fliken **[!UICONTROL Distribution]**.
 
 ![](assets/mkg_dist_data_distribution2.png)
 
-Du kan lägga till ett andra **målgodkännande** efter aktiviteten **Leveranstyp** för att konfigurera en rapport för det.
+Du kan lägga till en andra **målgodkännande** efter **leveransaktiviteten** för att konfigurera en rapport för den.
 
 I meddelandet om att kampanjen har skapats får den lokala enheten en kontaktlista som har fördefinierats av de centrala enhetsparametrarna.
 
@@ -103,17 +103,17 @@ Den lokala enheten kan ta bort vissa kontakter baserat på kampanjinnehållet.
 
 ### Enkel {#simple}
 
-Om du vill skapa en enkel samarbetskampanj måste du välja **[!UICONTROL Collaborative campaign (simple)]** en mall.
+Om du vill skapa en enkel samarbetskampanj måste du välja **[!UICONTROL Collaborative campaign (simple)]**-mallen.
 
-## Creating a collaborative campaign package {#creating-a-collaborative-campaign-package}
+## Skapa ett kampanjpaket för samarbete {#creating-a-collaborative-campaign-package}
 
 För att göra en kampanj tillgänglig för lokala enheter måste den centrala enheten skapa ett kampanjpaket.
 
 Använd följande steg:
 
-1. Klicka på **[!UICONTROL Navigation]** länken i avsnittet **på sidan** Kampanjer **[!UICONTROL Campaign packages]** .
+1. Klicka på länken **[!UICONTROL Campaign packages]** i avsnittet **[!UICONTROL Navigation]** på sidan **Kampanjer**.
 1. Klicka på knappen **[!UICONTROL Create]**.
-1. I avsnittet högst upp i fönstret kan du välja **[!UICONTROL New collaborative package (mutualizedEmpty)]** mallen.
+1. I avsnittet högst upp i fönstret kan du välja mallen **[!UICONTROL New collaborative package (mutualizedEmpty)]**.
 1. Välj referenskampanj.
 1. Ange etikett, mapp och körningsschema för kampanjpaketet.
 
@@ -121,11 +121,11 @@ Använd följande steg:
 
 Start- och slutdatumen definierar kampanjens synlighetsperiod i listan över kampanjpaket.
 
-För **samarbetskampanjer** måste den centrala enheten ange en deadline för registrering och personalisering.
+För **samarbetskampanjer** måste den centrala enheten ange deadline för registrering och personalisering.
 
 >[!NOTE]
 >
->På **[!UICONTROL Personalization deadline]** så sätt kan den centrala enheten välja en tidsgräns inom vilken de lokala enheterna måste ha levererat de dokument (kalkylblad, bilder) som ska användas för att konfigurera kampanjen. Detta är inte ett obligatoriskt alternativ. Sidstegning av det här datumet påverkar inte kampanjens implementering.
+>Med **[!UICONTROL Personalization deadline]** kan den centrala enheten välja en tidsgräns inom vilken de lokala enheterna måste ha levererat de dokument (kalkylblad, bilder) som ska användas för att konfigurera kampanjen. Detta är inte ett obligatoriskt alternativ. Sidstegning av det här datumet påverkar inte kampanjens implementering.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -157,7 +157,7 @@ Konfigurationen för meddelanden är identisk med aviseringar för en lokal enhe
 
 ## Beställa en kampanj {#ordering-a-campaign}
 
-När en samarbetskampanj läggs till i listan över kampanjpaket meddelas de lokala enheter som tillhör den målgrupp som definieras av den centrala enheten ( **samarbetskampanjer (med målgodkännande)** har ingen fördefinierad målgrupp). Det skickade meddelandet innehåller en länk som gör att du kan registrera dig för kampanjen, vilket visas nedan:
+När en samarbetskampanj läggs till i listan över kampanjpaket meddelas de lokala enheterna som tillhör den målgrupp som definieras av den centrala enheten (de **samarbetskampanjer (genom målgodkännande)** saknar en fördefinierad målgrupp). Det skickade meddelandet innehåller en länk som gör att du kan registrera dig för kampanjen, vilket visas nedan:
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
@@ -171,7 +171,7 @@ När en lokal enhet har slutfört sin registrering meddelas centrala enheter via
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-For more on this, refer to the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
+Mer information finns i avsnittet [Godkännandeprocess](../../campaign/using/creating-a-local-campaign.md#approval-process).
 
 ## Godkänna en order {#approving-an-order}
 
