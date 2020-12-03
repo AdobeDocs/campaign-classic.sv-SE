@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 9%
 
 ## Extraheringsfil {#extraction-file}
 
-Namnet på filen som innehåller extraherade data definieras i **[!UICONTROL File]** fältet. Med knappen till höger om fältet kan du använda anpassningsfält för att skapa filnamnet.
+Namnet på filen som innehåller extraherade data definieras i fältet **[!UICONTROL File]**. Med knappen till höger om fältet kan du använda anpassningsfält för att skapa filnamnet.
 
-Som standard skapas extraheringsfilen och lagras på servern. Du kan spara den på datorn. För att göra detta, se **[!UICONTROL Download the generated file after the analysis of the delivery]**. I det här fallet måste du ange åtkomstsökvägen till den lokala lagringskatalogen samt filnamnet.
+Som standard skapas extraheringsfilen och lagras på servern. Du kan spara den på datorn. Det gör du genom att kontrollera **[!UICONTROL Download the generated file after the analysis of the delivery]**. I det här fallet måste du ange åtkomstsökvägen till den lokala lagringskatalogen samt filnamnet.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-För direktutskick definieras innehållet i extraheringen i **[!UICONTROL Edit the extraction file format...]** länken.
+För direktutskick definieras innehållet i extraheringen i länken **[!UICONTROL Edit the extraction file format...]**.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -33,8 +33,8 @@ Med den här länken kan du komma åt extraheringsguiden och definiera den infor
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Det går att infoga en personlig URL i extraheringsfilen. For more on this, refer to [Web functionality](../../web/using/publishing-a-web-form.md).
+Det går att infoga en personlig URL i extraheringsfilen. Mer information om detta finns i [det här avsnittet](../../web/using/publishing-a-web-form.md).
 
 >[!NOTE]
 >
->Den här guiden innehåller de steg i exportguiden som beskrivs i avsnittet [Komma igång](../../platform/using/exporting-data.md#export-wizard) .
+>Den här guiden innehåller stegen i exportguiden som beskrivs i avsnittet [Komma igång](../../platform/using/exporting-data.md#export-wizard).
