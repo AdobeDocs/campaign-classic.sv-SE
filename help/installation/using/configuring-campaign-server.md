@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
 workflow-type: tm+mt
-source-wordcount: '3579'
+source-wordcount: '3600'
 ht-degree: 3%
 
 ---
@@ -21,9 +21,9 @@ I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa
 
 >[!IMPORTANT]
 >
->Dessa konfigurationer måste utföras av administratörer och endast för **lokala** värdmodeller.
+>Dessa konfigurationer måste utföras av administratörer och endast för värdmodeller av **On-lokalt**.
 >
->För **värdbaserade** distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
+>För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
 
 Mer information finns i följande avsnitt:
 
@@ -34,8 +34,8 @@ Mer information finns i följande avsnitt:
 
 Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
 
-* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna som visas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (där **instansen** är namnet på instansen): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
+* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna som listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** (där  **** instansen är instansens namn): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
 
 ## Definiera säkerhetszoner {#defining-security-zones}
 
@@ -43,9 +43,9 @@ Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installat
 
 Varje operator måste länkas till en zon för att kunna logga in på en instans och operatörens IP-adress måste inkluderas i adresserna eller adressuppsättningarna som definieras i säkerhetszonen. Säkerhetszonskonfigurationen utförs i Adobe Campaign-serverns konfigurationsfil.
 
-Operatorer är länkade till en säkerhetszon från sin profil i konsolen ( **[!UICONTROL Administration > Access management > Operators]** nod). Lär dig hur du länkar zoner till Campaign-operatorer i [det här avsnittet](#linking-a-security-zone-to-an-operator).
+Operatorer är länkade till en säkerhetszon från sin profil i konsolen ( **[!UICONTROL Administration > Access management > Operators]**-nod). Lär dig hur du länkar zoner till Campaign-operatorer i [det här avsnittet](#linking-a-security-zone-to-an-operator).
 
-### Skapa säkerhetszoner {#creating-security-zones}
+### Skapar säkerhetszoner {#creating-security-zones}
 
 En zon definieras av:
 
@@ -54,7 +54,7 @@ En zon definieras av:
 
 Säkerhetszoner är låsta, vilket innebär att om du definierar en ny zon inom en annan zon minskar antalet operatorer som kan logga in på den samtidigt som de rättigheter som tilldelats varje operator ökas.
 
-Zoner måste definieras under serverkonfigurationen i filen **serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Zoner måste definieras under serverkonfigurationen i filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 Varje zon definierar rättigheter, till exempel:
 
@@ -67,15 +67,15 @@ Varje zon definierar rättigheter, till exempel:
 >[!NOTE]
 >
 >**Varje operator måste länkas till en zon**. Om operatorns IP-adress tillhör det intervall som definieras av zonen kan operatorn logga in på instansen.\
->Operatorns IP-adress kan definieras i flera zoner. I det här fallet får operatören **uppsättningen** tillgängliga rättigheter för varje zon.
+>Operatorns IP-adress kan definieras i flera zoner. I det här fallet tar operatorn emot **uppsättningen** av tillgängliga rättigheter för varje zon.
 
-Filen **serverConf.xml** finns i tre zoner: **public, VPN och LAN**.
+Filen **serverConf.xml** som är klar att användas innehåller tre zoner: **public, VPN och LAN**.
 
 >[!NOTE]
 >
 >**Körklar konfiguration är säker**. Innan du migrerar från en tidigare version av Adobe Campaign kan det dock vara nödvändigt att tillfälligt minska säkerheten för att migrera och godkänna de nya reglerna.
 
-Exempel på hur du definierar en zon i **filen serverConf.xml** :
+Exempel på hur du definierar en zon i filen **serverConf.xml**:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -110,13 +110,13 @@ Alla rättigheter som definierar en zon är följande:
 
 >[!IMPORTANT]
 >
->I en zondefinition minskar varje attribut med värdet **true** säkerheten.
+>I en zondefinition minskar varje attribut med **true**-värdet säkerheten.
 
-Om det finns flera körningsinstanser när du använder Message Center måste du skapa en extra säkerhetszon med attributet **sessionTokenOnly** definierat som **true**, där endast de nödvändiga IP-adresserna ska läggas till. Mer information om hur du konfigurerar instanser finns i [det här dokumentet](../../message-center/using/creating-a-shared-connection.md).
+Om det finns flera körningsinstanser i Message Center måste du skapa en extra säkerhetszon med attributet **sessionTokenOnly** definierat som **true**, där endast de nödvändiga IP-adresserna ska läggas till. Mer information om hur du konfigurerar instanser finns i [det här dokumentet](../../message-center/using/creating-a-shared-connection.md).
 
 ### Bästa tillvägagångssätt för säkerhetszoner {#best-practices-for-security-zones}
 
-I definitionen av **säkerhetszonen för plan** är det möjligt att lägga till en IP-adressmask som definierar teknisk åtkomst. Det här tillägget ger åtkomst till alla instanser på servern.
+I definitionen av säkerhetszonen **lan** kan du lägga till en IP-adressmask som definierar teknisk åtkomst. Det här tillägget ger åtkomst till alla instanser på servern.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -137,7 +137,7 @@ I definitionen av **säkerhetszonen för plan** är det möjligt att lägga till
 
 Vi rekommenderar att du definierar IP-adressintervall direkt i konfigurationsfilen som är dedikerad till instansen för operatorer som bara har åtkomst till en viss instans.
 
-I **`config-<instance>.xml`** filen:
+I filen **`config-<instance>.xml`**:
 
 ```
   <securityZone name="public">
@@ -148,7 +148,7 @@ I **`config-<instance>.xml`** filen:
 
 ### Undernätverk och proxy i en säkerhetszon {#sub-networks-and-proxies-in-a-security-zone}
 
-Parametern **proxy** kan användas i ett **subNetwork** -element för att ange proxyanvändning i en säkerhetszon.
+Parametern **proxy** kan användas i ett **subNetwork**-element för att ange proxyanvändning i en säkerhetszon.
 
 När en proxy refereras och en anslutning matas in via den här proxyn (synlig via HTTP X-Forwarded-For-huvudet), är den verifierade zonen den för proxyns klienter och inte proxyns.
 
@@ -174,7 +174,7 @@ Olika fall kan inträffa:
 
    ![](assets/8101_proxy3.png)
 
-IP-adresserna till de proxies som sannolikt kommer att få åtkomst till Adobe Campaign-servern måste anges både i det **`<subnetwork>`** berörda och i det första delnätverket **`<subnetwork name="all"/>`**. Här gäller till exempel en proxy vars IP-adress är 10.131.146.102:
+IP-adresserna för proxies som sannolikt kommer att få åtkomst till Adobe Campaign-servern måste anges i både **`<subnetwork>`** och undernätverket **`<subnetwork name="all"/>`** på första nivån. Här gäller till exempel en proxy vars IP-adress är 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -203,31 +203,31 @@ När zoner har definierats måste varje operator länkas till en av dem för att
 
 Zonernas tekniska konfiguration görs i konfigurationsfilen för Campaign Server: **serverConf.xml**.
 
-Du måste börja med att konfigurera den körklara **[!UICONTROL Security zone]** uppräkningen för att länka en etikett till det interna namnet på zonen som definieras i filen **serverConf.xml** .
+Du måste börja med att konfigurera uppräkningen **[!UICONTROL Security zone]** som är klar att användas för att länka en etikett till zonens interna namn som definieras i filen **serverConf.xml**.
 
 Den här konfigurationen görs i Campaign Explorer:
 
-1. Klicka på **[!UICONTROL Administration > Platform > Enumerations]** noden.
-1. Välj **[!UICONTROL Security zone (securityZone)]** systemuppräkningen.
+1. Klicka på noden **[!UICONTROL Administration > Platform > Enumerations]**.
+1. Välj systemuppräkningen **[!UICONTROL Security zone (securityZone)]**.
 
    ![](assets/enum_securityzone.png)
 
-1. Klicka på **[!UICONTROL Add]** knappen för varje säkerhetszon som definieras i serverns konfigurationsfil.
-1. I **[!UICONTROL Internal name]** fältet anger du namnet på zonen som definierats i filen **serverConf.xml** . Det motsvarar attributet **@name** för `<securityzone>` elementet. Ange den etikett som är länkad till det interna namnet i fältet **** Etikett.
+1. Klicka på knappen **[!UICONTROL Add]** för varje säkerhetszon som definieras i serverns konfigurationsfil.
+1. I fältet **[!UICONTROL Internal name]** anger du namnet på zonen som definierats i filen **serverConf.xml**. Det motsvarar attributet **@name** för `<securityzone>`-elementet. Ange den etikett som är länkad till det interna namnet i fältet **Etikett** fält.
 
    ![](assets/enum_addsecurityvalue.png)
 
 1. Klicka på OK och spara ändringarna.
 
-När zonerna har definierats och **[!UICONTROL Security zone]** uppräkningen har konfigurerats måste du länka varje operator till en säkerhetszon:
+När zonerna har definierats och **[!UICONTROL Security zone]**-uppräkningen har konfigurerats måste du länka varje operator till en säkerhetszon:
 
-1. Klicka på **[!UICONTROL Administration > Access management > Operators]** noden.
-1. Markera den operator som du vill länka en säkerhetszon till och klicka på **[!UICONTROL Edit]** fliken.
-1. Gå till **[!UICONTROL Access rights]** fliken och klicka på **[!UICONTROL Edit access parameters...]** länken.
+1. Klicka på noden **[!UICONTROL Administration > Access management > Operators]**.
+1. Markera den operator som du vill länka en säkerhetszon till och klicka på fliken **[!UICONTROL Edit]**.
+1. Gå till fliken **[!UICONTROL Access rights]** och klicka på länken **[!UICONTROL Edit access parameters...]**.
 
    ![](assets/zone_operator.png)
 
-1. Välj en zon i **[!UICONTROL Authorized connection zone]** listrutan
+1. Välj en zon i listrutan **[!UICONTROL Authorized connection zone]**
 
    ![](assets/zone_operator_selection.png)
 
@@ -239,7 +239,7 @@ När zonerna har definierats och **[!UICONTROL Security zone]** uppräkningen ha
 
 När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program som krävs för din konfiguration, måste du ersätta 8080-porten med en kostnadsfri port (till exempel 8090). Om du vill ändra den redigerar du filen **server.xml** som har sparats i katalogen **/tomcat-8/conf** i installationsmappen för Adobe Campaign.
 
-Ändra sedan porten för JSP-reläsidorna. Det gör du genom att ändra filen **serverConf.xml** som sparats i katalogen **/conf** i installationskatalogen för Adobe Campaign. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Ändra sedan porten för JSP-reläsidorna. Det gör du genom att ändra filen **serverConf.xml** som har sparats i katalogen **/conf** i Adobe Campaign installationskatalog. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 ```
 <serverConf>
@@ -250,7 +250,7 @@ När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program
 
 ### Mappa en mapp i Tomcat {#mapping-a-folder-in-tomcat}
 
-Om du vill definiera kundspecifika inställningar kan du skapa en **user_contexts.xml** -fil i mappen **/tomcat-8/conf** , som även innehåller **filen contexts.xml** .
+Om du vill definiera kundspecifika inställningar kan du skapa en **user_contexts.xml**-fil i mappen **/tomcat-8/conf**, som även innehåller filen **contexts.xml**.
 
 Filen kommer att innehålla följande typ av information:
 
@@ -262,9 +262,9 @@ Om det behövs kan den här åtgärden reproduceras på serversidan.
 
 ## Anpassa leveransparametrar {#personalizing-delivery-parameters}
 
-Leveransparametrarna definieras i **konfigurationsfilen serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Leveransparametrarna definieras i konfigurationsfilen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Allmän serverkonfiguration och allmänna kommandon finns i [Campaign-serverkonfigurationen](../../installation/using/campaign-server-configuration.md).
+Allmän serverkonfiguration och allmänna kommandon finns i [Kampanjserverkonfiguration](../../installation/using/campaign-server-configuration.md).
 
 Du kan även göra följande konfigurationer beroende på dina behov och inställningar.
 
@@ -274,7 +274,7 @@ MTA-modulen fungerar som en intern e-postöverföringsagent för SMTP-sändning 
 
 Det är dock möjligt att ersätta den med en reläserver om säkerhetsprincipen kräver det. I så fall blir den globala genomströmningen relä (förutsatt att reläservergenomströmningen är lägre än Adobe Campaign).
 
-I det här fallet ställs dessa parametrar in genom att SMTP-servern konfigureras i **`<relay>`** -avsnittet. Du måste ange IP-adressen (eller värddatorn) för den SMTP-server som används för att överföra post och dess associerade port (25 som standard).
+I det här fallet anges dessa parametrar genom att SMTP-servern konfigureras i **`<relay>`**-avsnittet. Du måste ange IP-adressen (eller värddatorn) för den SMTP-server som används för att överföra post och dess associerade port (25 som standard).
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -284,9 +284,9 @@ I det här fallet ställs dessa parametrar in genom att SMTP-servern konfigurera
 >
 >Det här operativläget innebär allvarliga leveransbegränsningar eftersom det kan minska genomströmningen avsevärt på grund av reläserverns inneboende prestanda (latens, bandwith...). Dessutom kommer kapaciteten att kvalificera synkrona leveransfel (som upptäcks genom analys av SMTP-trafik) att vara begränsad och det går inte att skicka om reläservern inte är tillgänglig.
 
-### MTA-underprocesser {#mta-child-processes}
+### MTA-underordnade processer {#mta-child-processes}
 
-Det är möjligt att kontrollera populationen av underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen görs i avsnittet **`<master>`** MTA-konfiguration på varje enskild dator.
+Det är möjligt att kontrollera populationen av underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -304,9 +304,9 @@ Du kan förbättra utgående SMTP-trafik genom tillhörigheter med IP-adresser.
 
 Gör så här:
 
-1. Ange tillhörigheterna i avsnittet **`<ipaffinity>`** i **filen serverConf.xml** .
+1. Ange tillhörigheterna i **`<ipaffinity>`**-avsnittet i filen **serverConf.xml**.
 
-   En tillhörighet kan ha flera olika namn: för att skilja dem åt, använda **** tecken.
+   En tillhörighet kan ha flera olika namn: om du vill separera dem använder du tecknet **;**.
 
    Exempel:
 
@@ -315,15 +315,15 @@ Gör så här:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Om du vill visa de relevanta parametrarna läser du i **filen serverConf.xml** .
+   Se filen **serverConf.xml** för att se de relevanta parametrarna.
 
-1. Om du vill aktivera tillhörighetsval i listrutorna måste du lägga till tillhörighetsnamn i **IPAfinity** -uppräkningen.
+1. Om du vill aktivera tillhörighetsval i listrutorna måste du lägga till tillhörighetsnamn i uppräkningen **IPAfinity**.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Uppräkningar finns i [det här dokumentet](../../platform/using/managing-enumerations.md).
+   >Uppräkningarna beskrivs i [det här dokumentet](../../platform/using/managing-enumerations.md).
 
    Du kan sedan välja den tillhörighet som ska användas, som visas nedan för typologier:
 
@@ -331,7 +331,7 @@ Gör så här:
 
    >[!NOTE]
    >
-   >Du kan även se [Leveransserverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >Du kan även läsa [Leveransserverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 ## URL-behörigheter {#url-permissions}
 
@@ -343,10 +343,10 @@ När en URL har lagts till refereras den i instansens konfigurationsfil (serverC
 
 Hur du hanterar URL-behörigheter beror på din värdmodell:
 
-* **Hybrid** eller **lokal**: lägg till de URL:er som ska tillåtas i **filen** serverConf.xml. Detaljerad information finns i avsnittet nedan.
-* **Värdbaserad**: lägg till de URL:er som ska tillåtas via **Kontrollpanelen**. Se den [särskilda dokumentationen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) för mer information.
+* **** Hybriddrift  **lokalt**: lägg till de URL:er som ska tillåtas i  **filen** serverConf.xml. Detaljerad information finns i avsnittet nedan.
+* **Värdbaserad**: lägg till de URL:er som ska tillåtas via  **Kontrollpanelen**. Se den [särskilda dokumentationen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) för mer information.
 
-Med **hybridvärdmodeller** och **lokala** värdmodeller måste administratören referera till en ny **urlPermission** i **filen serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Med **hybridvärdmodeller** och **On-lokalt** måste administratören referera till en ny **urlPermission** i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 Det finns tre lägen för anslutningsskydd:
 
@@ -364,17 +364,17 @@ Det finns tre lägen för anslutningsskydd:
 
 >[!IMPORTANT]
 >
->Som standard använder nya kunders kunder **blockeringsläget**. Om de behöver tillåta en ny URL-adress kontaktar de administratören för att lägga till den i tillåtelselista.
+>Som standard använder nya kunders klient **blockeringsläget**. Om de behöver tillåta en ny URL-adress kontaktar de administratören för att lägga till den i tillåtelselista.
 >
->Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:er till tillåtelselista och aktivera **blockeringsläget**.
+>Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:erna i tillåtelselista och aktivera **blockeringsläget**.
 
-## Dynamisk sidsäkerhet och vidarebefordran {#dynamic-page-security-and-relays}
+## Dynamisk sidsäkerhet och reläer {#dynamic-page-security-and-relays}
 
-Som standard är alla dynamiska sidor automatiskt relaterade till den **lokala** Tomcat-servern på datorn vars webbmodul har startats. Den här konfigurationen anges i avsnittet **`<url>`** i frågereläkonfigurationen för **filen ServerConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Som standard är alla dynamiska sidor automatiskt relaterade till den lokala **Tomcat-servern på den dator vars webbmodul har startats.** Den här konfigurationen anges i avsnittet **`<url>`** i frågereläkonfigurationen för filen **ServerConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-för att vidarebefordra körning av den dynamiska sidan på en **fjärrserver** , om webbmodulen inte är aktiverad på datorn. För att göra detta måste du ersätta **localhost** med namnet på fjärrdatorn för JSP och JSSP, webbprogram, rapporter och strängar.
+för att vidarebefordra körning av den dynamiska sidan på en **fjärr**-server; om webbmodulen inte är aktiverad på datorn. För att göra detta måste du ersätta **localhost** med namnet på fjärrdatorn för JSP och JSSP, webbprogram, rapporter och strängar.
 
-Mer information om de olika tillgängliga parametrarna finns i konfigurationsfilen **serverConf.xml** .
+Mer information om de olika tillgängliga parametrarna finns i konfigurationsfilen **serverConf.xml**.
 
 För JSP-sidor är standardkonfigurationen:
 
@@ -396,7 +396,7 @@ De JSSP som används för Mobile App Channel är följande:
 
 **Exempel:**
 
-Det går att förhindra klientdatoranslutningar från utsidan. För att göra detta begränsar du helt enkelt utförandet av **soaprouter.jsp** och godkänner endast exekvering av spegelsidor, virala länkar, webbformulär och offentliga resurser.
+Det går att förhindra klientdatoranslutningar från utsidan. Det gör du genom att begränsa körningen av **soaprouter.jsp** och bara tillåta körning av spegelsidor, virala länkar, webbformulär och offentliga resurser.
 
 Parametrarna är följande:
 
@@ -414,7 +414,7 @@ Parametrarna är följande:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-I det här exemplet sammanfaller **`<IP_addresses>`** värdet med listan över IP-adresser (avgränsade med kommatecken) som har behörighet att använda relämodulen för den här masken.
+I det här exemplet sammanfaller **`<IP_addresses>`**-värdet med listan över IP-adresser (avgränsade med kommatecken) som har behörighet att använda relämodulen för den här masken.
 
 >[!NOTE]
 >
@@ -447,9 +447,9 @@ sh
 >
 >Denna lista är inte uttömmande.
 
-I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i attributet **svartlistFile** .
+I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i attributet **svartlistFile**.
 
-**Endast** för Linux: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som ska köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i **exec** -noden i konfigurationsfilen. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+**Endast** för Linux: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som ska köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i noden **exec** i konfigurationsfilen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -469,13 +469,13 @@ Den här användaren måste läggas till i användarlistan för Adobe Campaign-o
 >
 >Du bör inte använda en anpassad sudo. En standardsudo måste installeras på datorn.
 
-## Hantera HTTP-huvuden {#managing-http-headers}
+## Hantera HTTP-rubriker {#managing-http-headers}
 
 Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubriker i svar som skickas via relä. Så här gör du:
 
-1. Gå till **filen serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-1. Gå till listan med vidarebefordrade HTTP-rubriker i noden. **`<relay>`** .
-1. Lägg till ett **`<responseheader>`** element med följande attribut:
+1. Gå till filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+1. I noden **`<relay>`** går du till listan med vidarebefordrade HTTP-rubriker.
+1. Lägg till ett **`<responseheader>`**-element med följande attribut:
 
    * **namn**: rubriknamn
    * **värde**: värdenamn.
@@ -486,7 +486,7 @@ Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubr
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## Spårning av överflödiga {#redundant-tracking}
+## Spårning av överflödig {#redundant-tracking}
 
 När flera servrar används för omdirigering måste de kunna kommunicera med varandra via SOAP-anrop för att kunna dela information från de URL:er som ska omdirigeras. När leveransen påbörjas är det möjligt att inte alla omdirigeringsservrar är tillgängliga. därför kanske de inte har samma informationsnivå.
 
@@ -494,7 +494,7 @@ När flera servrar används för omdirigering måste de kunna kommunicera med va
 >
 >När du använder standardarkitekturen eller företagsarkitekturen måste huvudprogramservern ha behörighet att överföra spårningsinformation på varje dator.
 
-De redundanta servrarnas URL måste anges i omdirigeringskonfigurationen via filen **serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+URL:erna för de redundanta servrarna måste anges i omdirigeringskonfigurationen via filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 **Exempel:**
 
@@ -503,17 +503,17 @@ De redundanta servrarnas URL måste anges i omdirigeringskonfigurationen via fil
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-Egenskapen **enableIf** är valfri (tom som standard) och gör att du bara kan aktivera anslutningen om resultatet är true; På så sätt kan du få en identisk konfiguration på alla omdirigeringsservrar.
+Egenskapen **enableIf** är valfri (tom som standard) och du kan bara aktivera anslutningen om resultatet är true; På så sätt kan du få en identisk konfiguration på alla omdirigeringsservrar.
 
 Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**.
 
 ## Hantera offentliga resurser {#managing-public-resources}
 
-Offentliga medel används för att [förvalta offentliga medel](../../installation/using/deploying-an-instance.md#managing-public-resources).
+Offentliga resurser presenteras i [Hantera offentliga resurser](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 De lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
 
-Den matchande URL:en är: **http://server/res/instance** där **instansen** är namnet på spårningsinstansen.
+Den matchande URL:en är: **http://server/res/instance** där **instance** är namnet på spårningsinstansen.
 
 Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<instance>`.xml** för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
 
@@ -530,17 +530,17 @@ Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<insta
 
 I det här fallet bör den nya URL:en för de offentliga resurserna som anges i den övre delen av fönstret i distributionsguiden peka på den här mappen.
 
-## Arbetsflöden och tillhörighet med hög tillgänglighet {#high-availability-workflows-and-affinities}
+## Arbetsflöden och tillhörigheter med hög tillgänglighet {#high-availability-workflows-and-affinities}
 
 Du kan konfigurera flera arbetsflödesservrar (wfserver) och distribuera dem på två eller flera datorer. Om du väljer den här typen av arkitektur konfigurerar du anslutningsläget för belastningsutjämnarna enligt Adobe Campaign-åtkomsten.
 
 Om du vill få åtkomst från webben väljer du **belastningsutjämnarläget** för att begränsa anslutningstiderna.
 
-Om du öppnar via Adobe Campaign Console väljer du **hash** - eller **sticky** -läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
+Om du öppnar via Adobe Campaign-konsolen väljer du **hash** eller **sticky ip**-läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
 
 Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera tillhörigheter för arbetsflödet eller aktiviteten.
 
-1. Skapa tillhörigheterna för arbetsflödet eller aktiviteten genom att ange dem i **[!UICONTROL Affinity]** fältet.
+1. Skapa tillhörigheterna för arbetsflödet eller aktiviteten genom att ange dem i fältet **[!UICONTROL Affinity]**.
 
    Du kan fritt välja tillhörighetsnamn. Se dock till att du inte använder blanksteg eller skiljetecken. Om du använder olika servrar anger du olika namn.
 
@@ -550,8 +550,8 @@ Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflöd
 
    Listrutan innehåller tillhörigheter som tidigare använts. Den slutförs över tiden med de olika angivna värdena.
 
-1. Öppna **filen nl6/conf/config-`<instance>.xml`** .
-1. Ändra raden som matchar **[!UICONTROL wfserver]** modulen enligt följande:
+1. Öppna filen **nl6/conf/config-`<instance>.xml`**.
+1. Ändra raden som matchar modulen **[!UICONTROL wfserver]** enligt följande:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -577,9 +577,9 @@ Som standard startas de olika Adobe Campaign-processerna om automatiskt kl. 6.00
 
 Du kan dock ändra den här konfigurationen.
 
-Det gör du genom att gå till **filen serverConf.xml** som finns i **conf** -databasen för din installation. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Det gör du genom att gå till filen **serverConf.xml** som finns i **conf**-databasen för din installation. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Varje process som konfigureras i den här filen har ett **processRestartTime** -attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
+Varje process som konfigureras i den här filen har ett **processRestartTime**-attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
 
 >[!IMPORTANT]
 >
@@ -587,31 +587,34 @@ Varje process som konfigureras i den här filen har ett **processRestartTime** -
 
 ## Begränsa överförbara filer {#limiting-uploadable-files}
 
-Med det nya attributet **uploadWhiteList** kan du begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
+Med ett nytt attribut **uploadWhiteList** kan du begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
 
-Det här attributet är tillgängligt i **dataStore** -elementet i **filen serverConf.xml** . Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Det här attributet är tillgängligt i **dataStore**-elementet i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Standardvärdet för det här attributet är **.+** så kan du ladda upp alla filtyper.
+Standardvärdet för det här attributet är **.+** så att du kan överföra vilken filtyp som helst.
 
 Om du vill begränsa antalet möjliga format måste du ersätta attributvärdet med ett giltigt reguljärt java-uttryck. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
+Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format på servern. Inga andra format godtas.
 
 >[!IMPORTANT]
 >
 >I Internet Explorer måste den fullständiga filsökvägen verifieras av det reguljära uttrycket.
 
-## Konfiguration för proxyanslutning {#proxy-connection-configuration}
+## Proxyanslutningskonfiguration {#proxy-connection-configuration}
 
-Om du behöver ansluta Campaign-servern till utsidan via en proxy (till exempel med hjälp av en arbetsflödesaktivitet för filöverföring) måste du konfigurera avsnittet proxyConfig i serverConf via ett kommando. Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Alla parametrar som finns i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Du kan ansluta Campaign-servern till ett externt system via en proxy, till exempel med hjälp av en **filöverföringsaktivitet**-arbetsflödesaktivitet. För att uppnå detta måste du konfigurera **proxyConfig**-avsnittet i **serverConf.xml**-filen med ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
->[!NOTE]
+Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Observera att från och med Campaign 20.2 är HTTP- och HTTPS-protokollparametrarna **inte längre tillgängliga**. Dessa parametrar nämns fortfarande nedan eftersom de fortfarande är tillgängliga i tidigare versioner - inklusive 9032.
+
+>[!CAUTION]
 >
->Från och med 20.2 är protokollparametrarna HTTP och HTTPS inte längre tillgängliga. I följande information omnämns dessa parametrar fortfarande, eftersom de fortfarande är tillgängliga för tidigare versioner, inklusive 9032.
+>Endast det grundläggande autentiseringsläget stöds. NTLM-autentisering stöds inte.
 >
 >SOCKS-proxies stöds inte.
 
-Använd följande kommando:
+
+Du kan använda följande kommando:
 
 ```
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
