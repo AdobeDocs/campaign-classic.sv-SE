@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -43,7 +43,7 @@ Adobe Campaign använder två typer av API:er:
 * Generiska data har åtkomst till API:er för att fråga efter datamodelldata. Se [Dataorienterade API:er](../../configuration/using/data-oriented-apis.md).
 * Affärsspecifika API:er där du kan agera på varje objekt: leveranser, arbetsflöden, prenumerationer osv. Se [Affärsorienterade API:er](../../configuration/using/business-oriented-apis.md).
 
-Om du vill utveckla API:er och interagera med Adobe Campaign måste du känna till datamodellen. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [modellbeskrivningen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Om du vill utveckla API:er och interagera med Adobe Campaign måste du känna till datamodellen. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [Beskrivning av modellen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP-anrop {#soap-calls}
 
@@ -92,13 +92,13 @@ Mer information finns i [ExecuteQuery (xtk:queryDef)](../../configuration/using/
 </SOAP-ENV:Envelope>
 ```
 
-Elementet `<soap-env:envelope>` är det första elementet i meddelandet som representerar SOAP-kuvertet.
+`<soap-env:envelope>`-elementet är det första elementet i meddelandet som representerar SOAP-kuvertet.
 
-Elementet `<soap-env:body>` är det första underordnade elementet i omslaget. Den innehåller beskrivningen av meddelandet, dvs. innehållet i frågan eller svaret.
+`<soap-env:body>`-elementet är det första underordnade elementet i omslaget. Den innehåller beskrivningen av meddelandet, dvs. innehållet i frågan eller svaret.
 
-Den metod som ska anropas anges i elementet `<executequery>` från SOAP-meddelandets brödtext.
+Den metod som ska anropas anges i `<executequery>`-elementet från texten i SOAP-meddelandet.
 
-I SOAP identifieras parametrarna i den ordning de visas. Den första parametern, `<__sessiontoken>`tar autentiseringskedjan, den andra parametern är XML-beskrivningen av frågan från `<querydef>` elementet.
+I SOAP identifieras parametrarna i den ordning de visas. Den första parametern, `<__sessiontoken>`, tar autentiseringskedjan, den andra parametern är XML-beskrivningen för frågan från `<querydef>`-elementet.
 
 ### SOAP-svar {#soap-response}
 
@@ -115,9 +115,9 @@ I SOAP identifieras parametrarna i den ordning de visas. Den första parametern,
 </SOAP-ENV:Envelope>
 ```
 
-Resultatet av frågan anges från `<pdomoutput>` elementet.
+Resultatet av frågan anges från `<pdomoutput>`-elementet.
 
-## Error management {#error-management}
+## Felhantering {#error-management}
 
 Exempel på SOAP-felsvar:
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-Elementet `<soap-env:fault>` i SOAP-meddelandets brödtext används för att förmedla felsignaler som uppstår under bearbetningen av webbtjänsten. Detta består av följande delelement:
+`<soap-env:fault>`-elementet i SOAP-meddelandets brödtext används för att förmedla felsignaler som uppstår under bearbetningen av webbtjänsten. Detta består av följande delelement:
 
 * `<faultcode>` : anger feltypen. Feltyperna är:
 
@@ -147,7 +147,7 @@ Elementet `<soap-env:fault>` i SOAP-meddelandets brödtext används för att fö
 * `<faultstring>` : meddelande som beskriver felet
 * `<detail>` : långt felmeddelande
 
-Om serviceanropet lyckades eller misslyckades identifieras när `<faultcode>` elementet verifieras.
+Slutfört eller misslyckat anrop av tjänsten identifieras när elementet `<faultcode>` verifieras.
 
 >[!IMPORTANT]
 >
@@ -169,7 +169,7 @@ catch (SoapException e)
 }
 ```
 
-## Webbtjänstserverns URL (eller EndPoint) {#url-of-web-service-server--or-endpoint-}
+## URL för webbtjänstservern (eller EndPoint) {#url-of-web-service-server--or-endpoint-}
 
 Om du vill skicka webbtjänsten måste du kontakta den Adobe Campaign-server som implementerar motsvarande tjänstmetod.
 
@@ -177,4 +177,4 @@ Server-URL:en är följande:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Med **`<server>`** Adobe Campaign programserver (**nlserver web**).
+Med **`<server>`** Adobe Campaign-programservern (**nlserver web**).
