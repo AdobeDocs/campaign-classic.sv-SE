@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 1%
@@ -29,30 +29,30 @@ När du har anslutit till Adobe Campaign visas startsidan.
 
 Klicka på länkarna i navigeringsfältet för att komma åt de olika universum.
 
-Kampanjelementen finns i **[!UICONTROL Campaigns]** universum: här kan du se en översikt över marknadsföringsprogram och -kampanjer samt deras undergrupper. Ett marknadsföringsprogram består av kampanjer, som består av leveranser, uppgifter, länkade resurser osv. När det gäller hantering av marknadsföringskampanjer med Campaign finns det information om leveranser, budgetar, granskare och länkade dokument i kampanjerna.
+Kampanjelement finns i **[!UICONTROL Campaigns]**-universum: här kan du se en översikt över marknadsföringsprogram och -kampanjer samt deras undergrupper. Ett marknadsföringsprogram består av kampanjer, som består av leveranser, uppgifter, länkade resurser osv. När det gäller hantering av marknadsföringskampanjer med Campaign finns det information om leveranser, budgetar, granskare och länkade dokument i kampanjerna.
 
-Universums navigeringsblock erbjuder olika **[!UICONTROL Campaigns]** poster, beroende på vilka moduler som är installerade på instansen. Du kan till exempel få åtkomst till:
+Navigeringsblocket för **[!UICONTROL Campaigns]**-universum erbjuder olika poster, beroende på vilka moduler som är installerade på instansen. Du kan till exempel få åtkomst till:
 
-* **Kampanjkalender**: planeringskalender, marknadsföringsprogram, leveranser och kampanjer. Se [Kampanjkalendern](#campaign-calendar).
+* **Kampanjkalender**: planeringskalender, marknadsföringsprogram, leveranser och kampanjer. Se [Kampanjkalender](#campaign-calendar).
 * **Kampanjer**: tillgång till kampanjer i alla marknadsföringsprogram.
 * **Leveranser**: åtkomst till leveranser som är kopplade till kampanjerna.
-* **Webbprogram**: tillgång till webbprogram (formulär, undersökningar osv.).
+* **Webbprogram**: tillgång till webbapplikationer (formulär, undersökningar osv.).
 
 >[!NOTE]
 >
 >Mer information om Adobe Campaign allmänna ergonomi, behörigheter och profilhanteringsfunktioner finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >
->Alla funktioner som rör kanaler och leveranser beskrivs i [detta avsnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Alla funktioner som rör kanaler och leveranser beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Kampanjkalender {#campaign-calendar}
 
-Varje kampanj tillhör ett program som i sin tur tillhör en plan. Planer, program och kampanjer nås via **[!UICONTROL Campaign calendar]** menyn i **Campaigns** universum.
+Varje kampanj tillhör ett program som i sin tur tillhör en plan. Planer, program och kampanjer nås via menyn **[!UICONTROL Campaign calendar]** i **Campaigns**-universum.
 
 Om du vill redigera en plan, ett program, en kampanj eller en leverans klickar du på namnet i kalendern och sedan på **[!UICONTROL Open...]**. Den visas sedan på en ny flik, enligt nedan:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-Du kan filtrera den information som visas i kampanjkalendern. Om du vill göra det klickar du på **[!UICONTROL Filter]** länken och väljer filtervillkoren.
+Du kan filtrera den information som visas i kampanjkalendern. Det gör du genom att klicka på länken **[!UICONTROL Filter]** och välja filtervillkoren.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -60,7 +60,7 @@ Du kan filtrera den information som visas i kampanjkalendern. Om du vill göra d
 >
 >När du filtrerar på ett datum visas alla kampanjer med ett startdatum som är senare än det angivna datumet och/eller med ett slutdatum som är tidigare än det angivna datumet. Datum måste väljas med hjälp av kalendrarna till höger om varje fält.
 
-Du kan också använda **[!UICONTROL Search]** fältet för att filtrera de visade objekten.
+Du kan också använda fältet **[!UICONTROL Search]** för att filtrera de visade objekten.
 
 Med ikonerna som är länkade till varje objekt kan du visa objektets status: klart, pågående, redigeras osv.
 
@@ -72,7 +72,7 @@ Med Campaign kan ni hantera en uppsättning program som består av olika marknad
 
 När du redigerar ett program använder du flikarna nedan för att bläddra och konfigurera det.
 
-* På fliken **Schema** visas kalendern för program för en månad, vecka eller dag beroende på vilken flik du klickar på i kalenderrubriken.
+* På fliken **Schema** visas kalendern med program för en månad, vecka eller dag beroende på vilken flik du klickar på i kalenderrubriken.
 
    Om det behövs kan du skapa en kampanj, ett program eller en uppgift via den här sidan.
 
@@ -84,9 +84,9 @@ När du redigerar ett program använder du flikarna nedan för att bläddra och 
 
 #### Bläddra bland kampanjer {#browsing-campaigns}
 
-Kampanjer kan nås via kampanjkalendern, programfliken eller **[!UICONTROL Schedule]** kampanjlistan.
+Kampanjer kan nås via kampanjkalendern, fliken **[!UICONTROL Schedule]** i programmet eller listan över kampanjer.
 
-1. Välj den kampanj du vill visa via kampanjkalendern och klicka sedan på **[!UICONTROL Open]** länken.
+1. Välj den kampanj du vill visa via kampanjkalendern och klicka sedan på länken **[!UICONTROL Open]**.
 
    ![](assets/campaign_planning_edit_op.png)
 
@@ -94,12 +94,12 @@ Kampanjer kan nås via kampanjkalendern, programfliken eller **[!UICONTROL Sched
 
    ![](assets/campaign_op_edit.png)
 
-1. Via programmets flik är redigeringsläget detsamma som via kampanjkalendern. **[!UICONTROL Schedule]**
-1. Klicka på namnet på den kampanj du vill redigera via **[!UICONTROL Campaigns]** länken för **[!UICONTROL Campaigns]** universum.
+1. Via fliken **[!UICONTROL Schedule]** i programmet är redigeringsläget detsamma som via kampanjkalendern.
+1. Klicka på namnet på den kampanj du vill redigera via länken **[!UICONTROL Campaigns]** för **[!UICONTROL Campaigns]**-universum.
 
    ![](assets/campaign_edit_from_list.png)
 
-### Styra en kampanj {#controlling-a-campaign}
+### Kontrollera en kampanj {#controlling-a-campaign}
 
 #### Kontrollpanel {#dashboard}
 
@@ -115,9 +115,9 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkänn
 
 >[!NOTE]
 >
->Konfigurationen av kampanjmallar visas i [Campaign-mallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Konfigurationen av kampanjmallar presenteras i [Kampanjmallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-#### Schema {#schedule}
+#### Schemalägg {#schedule}
 
 En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global översikt över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
 
@@ -127,11 +127,11 @@ En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger sche
 
 För varje kampanj kan operatörerna utbyta meddelanden via ett särskilt forum.
 
-For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
+Mer information finns i [Diskussionsforum](../../campaign/using/discussion-forums.md).
 
 #### Rapporter {#reports}
 
-Via **[!UICONTROL Reports]** länken kan du komma åt kampanjrapporterna.
+Med länken **[!UICONTROL Reports]** kommer du åt kampanjrapporterna.
 
 ![](assets/campaign_reporting_tab.png)
 
@@ -146,12 +146,12 @@ Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar f
 * Hänvisning till dokument och resurser: du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds. Se [Hantera associerade dokument](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 * Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum osv. Se [Definiera kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
 * Definiera mål: kan ni definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
-* Hantera dirigerade adresser (mer information finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md)) och kontrollgrupper (se [Definiera en kontrollgrupp](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
+* Hantera dirigerade adresser (mer information om detta finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md)) och kontrollgrupper (se [Definiera en kontrollgrupp](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
 * Hantera godkännanden: Du kan välja vilka behandlingar som ska godkännas och vid behov välja granskningsoperatorer eller grupper av operatorer. Se [Kontrollera och godkänna leveranser](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
->Om du vill få åtkomst till kampanjkonfigurationerna och ändra dem klickar du på **[!UICONTROL Advanced campaign parameters...]** länken på **[!UICONTROL Edit]** fliken. Mer information om att ställa in parametrar på kampanjnivå så att leveranser automatiskt ärver värden finns i [vår TechNote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Klicka på länken **[!UICONTROL Advanced campaign parameters...]** på fliken **[!UICONTROL Edit]** om du vill komma åt kampanjkonfigurationerna och göra ändringar i dem. Mer information om att ställa in parametrar på kampanjnivå så att leveranser automatiskt ärver värden finns i [vår Technote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
 ## Använda webbgränssnittet {#using-the-web-interface-}
 
@@ -162,7 +162,7 @@ Du kan öppna Adobe Campaign konsolskärmar via en webbläsare och visa alla kam
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Godkännanden (till exempel av ett mål eller ett leveransinnehåll) kan göras via webbåtkomst.
+Godkännanden (till exempel av ett mål eller ett leveransinnehåll) kan utföras via webbåtkomst.
 
 ![](assets/campaign_web_interface_validation.png)
 
