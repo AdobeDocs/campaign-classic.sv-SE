@@ -1,53 +1,53 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Standardkompatibilitetsmatris för guld
-description: Kompatibilitetsmatris för Campaign Classic för Gold Standard
+title: Kompatibilitetsmatris för Gold Standard
+description: Kompatibilitetsmatris för Gold Standard-versionen av Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 
-# Gold Standard Compatibility matrix{#compatibility-matrix-gs}
+# Kompatibilitetsmatris för Gold Standard{#compatibility-matrix-gs}
 
-I det här dokumentet finns en lista över alla system och komponenter som stöds för byggen med **Adobe Campaign Classic Gold Standard** 19.1. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+Det här dokumentet listar alla system och komponenter som stöds för version 19.1 av **Adobe Campaign Classic Gold Standard**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
 ## Viktiga anteckningar{#important-notes-gs}
 
-Om inget annat anges stöds alla mindre releaser.
+Om inget annat anges stöds alla mindre versioner.
 
-Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i följande produktversion. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
-## Operating Systems{#OperatingSystems-gs}
+## Operativsystem{#OperatingSystems-gs}
 
 <table> 
 <tbody> 
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8,x (64 bitar)</p>
-<p>7.x (64 bitar)</p>
+<p>8.x (64 bitars)</p>
+<p>7.x (64 bitars)</p>
 </td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>9 (64 bitar)</p>
-<p>8 (64 bitar)</p>
+<p>9 (64 bitars)</p>
+<p>8 (64 bitars)</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>7.x (64 bitar)</p>
-<p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.</p>
+<p>7.x (64 bitars)</p>
+<p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </tbody>
 </table>
 
-## Web Servers{#WebServers-gs}
+## Webbservrar{#WebServers-gs}
 
 <table>
 <tbody>
@@ -70,14 +70,14 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <td>
 <p>10.0 i Windows Server 2016</p>
 <p>8.5 i Windows Server 2012 R2</p>
-<p>8.0 i Windows Server 2012 - Windows 8</p>
+<p>8.0 i Windows Server 2012 – Windows 8</p>
 </td>
 </tr>
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 för RHEL7 - CentOS 7, Debian 8/9, Windows (64 bitar)</p>
-<p>2.2 för RHEL6 - Endast CentOS 6 (64 bitar)</p>
+<p>2.4 för RHEL7 – CentOS 7, Debian 8/9, Windows (64 bitars)</p>
+<p>2.2 för RHEL6 – endast CentOS 6 (64 bitars)</p>
 </td>
 </tr>
 </tbody>
@@ -91,13 +91,13 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <td>Java Development Kit (JDK)</td>
 <td>
 <p>8</p>
-<p>Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för OpenJDK.</p>
+<p>Programvaran har godkänts för Java Development Kit (JDK) som har utvecklats av Oracle samt för OpenJDK.</p>
 </td>
 </tr>
 <tr>
-<td>Libre</td>
+<td>Libre Office</td>
 <td>
-<p>6 (och tidigare versioner om de är inbäddade i systemet)</p>
+<p>6 (och föregående versioner om de är inbäddade i systemet)</p>
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p>2012 - SP1 och SP2</p>
+<p>2012 – SP1 och SP2</p>
 <p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Läs mer</a>.</p>
 </td>
 </tr>
@@ -160,14 +160,14 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 
 >[!NOTE]
 >
->PostgreSQL är standarddatabasservern för hostingmiljöer.
+>PostgreSQL är den standardiserade databasservern för värdbaserade miljöer.
 
 ## CRM-kopplingar{#CRMconnectors-gs}
 
 <table>
 <tbody>
 <tr>
-<td>Salesforce-anslutnings-API</td>
+<td>API för Salesforce-anslutning</td>
 <td>
 <p>API-version 37</p>
 </td>
@@ -175,13 +175,13 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <tr>
 <td>SFDC API</td>
 <td>
-<p>API version 21</p>
+<p>API-version 21</p>
 <p>API-version 15</p>
 </td>
 </tr>
 <tr><td>Oracle On Demand-API</td>
 <td>
-<p>Webbtjänster v1.0 API</p>
+<p>API för Webbtjänster v1.0</p>
 </td>
 </tr>
 <tr>
@@ -189,13 +189,13 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <td>
 <p>Soap API – lokal: 2007, 2015 och 2016</p>
 <p>Soap API – online: 2015 och 2016</p>
-<p>Webb-API - lokalt och online: 365, 2016, 2016 uppdatering 1</p>
+<p>Webb-API – lokalt och online: 365, 2016, 2016 uppdatering 1</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Federated Data Access (FDA){#FederatedDataAccessFDA-gs}
+## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA-gs}
 
 <table>
 <tbody>
@@ -265,7 +265,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </tbody>
 </table>
 
-## Operativsystem för Client Console{#ClientConsoleoperatingsystems-gs}
+## Operativsystem för klientkonsoler{#ClientConsoleoperatingsystems-gs}
 
 <table>
 <tbody>
@@ -279,9 +279,9 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <tr>
 <td>Windows</td>
 <td>
-<p>Seven</p>
+<p>Sju</p>
 <p>8</p>
-<p>10 (rekommenderas för japanska förekomster)</p>
+<p>10 (rekommenderas för japanska instanser)</p>
 </td>
 </tr>
 </tbody>
@@ -295,14 +295,14 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <td>Android</td>
 <td>
 <p>7.x, 8.x, 9.0</p>
-<p>med mobil SDK build 1.0.27.</p>
+<p>med mobil SDK version 1.0.27.</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9-14</p>
-<p>med mobil SDK build 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
+<p>iOS 9–14</p>
+<p>med mobil SDK version 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
 </td>
 </tr>
 </tbody>
@@ -310,13 +310,13 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 
 ## Webbläsare{#Browsers-gs}
 
-Den senaste versionen stöds i följande webbläsare: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Den senaste versionen har stöd i följande webbläsare: Microsoft Edge, Mozilla Firefox, Google Chrome och Safari.
 
 Internet Explorer 11 stöds.
 
 ## Mer som detta{#Morelikethis-gs}
 
-* [Versionsinformation om Campaign Classic](../../rn/using/latest-release.md)
+* [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
-* [Föråldrade funktioner och system](../../rn/using/deprecated-features.md)
-* [Uppgraderingsprocedur](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
+* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
+* [Procedur för versionsuppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
