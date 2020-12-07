@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+source-git-commit: b78c9dc9112893f2b203eccf0bd2d92fa299425d
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2182'
 ht-degree: 98%
 
 ---
@@ -697,6 +697,8 @@ ht-degree: 98%
       + [Lösenordet har tappats bort](production/using/lost-password.md)
       + [JSP-beteende](production/using/jsp-behavior.md)
 + Utvecklarhandbok {#configuring-campaign-classic}
++ 
+   + [Om Campaign-konfiguration](configuration/using/about-config-guide.md)
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
       + [Beskrivning av datamodellen](configuration/using/data-model-description.md)
