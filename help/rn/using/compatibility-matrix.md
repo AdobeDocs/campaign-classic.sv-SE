@@ -6,58 +6,58 @@ description: Kompatibilitetsmatris för Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
 
 # Kompatibilitetsmatris{#compatibility-matrix}
 
-I det här dokumentet visas alla system och komponenter som stöds för [den senaste versionen](../../rn/using/latest-release.md) av **Adobe Campaign Classic**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+Det här dokumentet listar alla system och komponenter som stöds för [den senaste versionen](../../rn/using/latest-release.md) av **Adobe Campaign Classic**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
-Om du använder Gold Standard läser du i [Gold Standard-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
+Om du använder Gold Standard kan du se [kompatibilitetsmatrisen för Gold Standard](../../rn/using/compatibility-matrix-gs.md).
 
 ## Viktiga anteckningar{#important-notes}
 
-Om inget annat anges stöds alla mindre releaser.
+Om inget annat anges stöds alla mindre versioner.
 
-I den [senaste versionen](../../rn/using/latest-release.md)är Adobe Campaign Classic kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+Den [senaste versionen](../../rn/using/latest-release.md) av Adobe Campaign Classic är kompatibel med alla system och verktyg som listas på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i den följande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
-Mer information om borttagna objekt finns på [den här sidan](../../rn/using/deprecated-features.md).
+Besök [den här sidan](../../rn/using/deprecated-features.md) för mer information om inaktuella objekt.
 
 >[!CAUTION]
 >
->Den här matrisen uppdateras regelbundet med nya objekt som stöds och borttagna objekt.
+>Den här matrisen uppdateras regelbundet med nya objekt som stöds och inaktuella objekt som tas bort.
 
-## Operating Systems{#OperatingSystems}
+## Operativsystem{#OperatingSystems}
 
 <table> 
 <tbody> 
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8,x (64 bitar)</p>
-<p>7.x (64 bitar)</p>
+<p>8.x (64 bitars)</p>
+<p>7.x (64 bitars)</p>
 </td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>10 (64 bitar)</p>
-<p>9 (64 bitar)</p>
-<p>8 (64 bitar)</p>
+<p>10 (64 bitars)</p>
+<p>9 (64 bitars)</p>
+<p>8 (64 bitars)</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>8,x (64 bitar)</p>
-<p>7.x (64 bitar)</p>
-<p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.</p>
+<p>8.x (64 bitars)</p>
+<p>7.x (64 bitars)</p>
+<p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 </tbody>
 </table>
 
-## Web Servers{#WebServers}
+## Webbservrar{#WebServers}
 
 <table>
 <tbody>
@@ -80,13 +80,13 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <td>
 <p>10.0 i Windows Server 2016</p>
 <p>8.5 i Windows Server 2012 R2</p>
-<p>8.0 i Windows Server 2012 - Windows 8</p>
+<p>8.0 i Windows Server 2012 – Windows 8</p>
 </td>
 </tr>
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 för RHEL7 - CentOS 7, Debian 8/9, Windows (64 bitar)</p>
+<p>2.4 för RHEL7 – CentOS 7, Debian 8/9, Windows (64 bitars)</p>
 </td>
 </tr>
 </tbody>
@@ -102,13 +102,13 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för OpenJDK.</p>
+<p>Programvaran har godkänts för Java Development Kit (JDK) som har utvecklats av Oracle samt för OpenJDK.</p>
 </td>
 </tr>
 <tr>
-<td>Libre</td>
+<td>Libre Office</td>
 <td>
-<p>6 (och tidigare versioner om de är inbäddade i systemet)</p>
+<p>6 (och föregående versioner om de är inbäddade i systemet)</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p>2012 - SP1 och SP2</p>
+<p>2012 – SP1 och SP2</p>
 <p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Läs mer</a>.</p>
 </td>
 </tr>
@@ -165,14 +165,14 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 
 >[!NOTE]
 >
->PostgreSQL är standarddatabasservern för hostingmiljöer.
+>PostgreSQL är den standardiserade databasservern för värdbaserade miljöer.
 
 ## CRM-kopplingar{#CRMconnectors}
 
 <table>
 <tbody>
 <tr>
-<td>Salesforce-anslutnings-API</td>
+<td>API för Salesforce-anslutning</td>
 <td>
 <p>API-version 37</p>
 </td>
@@ -180,30 +180,30 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr>
 <td>SFDC API</td>
 <td>
-<p>API version 21</p>
+<p>API-version 21</p>
 <p>API-version 15</p>
 </td>
 </tr>
 <tr><td>Oracle On Demand-API</td>
 <td>
-<p>Webbtjänster v1.0 API</p>
+<p>API för Webbtjänster v1.0</p>
 </td>
 </tr>
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Webb-API: Dynamics 365 On-Local and Online</p>
+<p>Webb-API: Dynamics 365 lokalt och online</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Federated Data Access (FDA){#FederatedDataAccessFDA}
+## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure synapse Analytics</td>
+<td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -287,7 +287,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 </tbody>
 </table>
 
-## Operativsystem för Client Console{#ClientConsoleoperatingsystems}
+## Operativsystem för klientkonsoler{#ClientConsoleoperatingsystems}
 
 <table>
 <tbody>
@@ -302,7 +302,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <td>Windows</td>
 <td>
 <p>8</p>
-<p>10 (rekommenderas för japanska förekomster)</p>
+<p>10 (rekommenderas för japanska instanser)</p>
 </td>
 </tr>
 </tbody>
@@ -316,14 +316,14 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <td>Android</td>
 <td>
 <p>7.x, 8.x, 9.0</p>
-<p>med mobil SDK build 1.0.27.</p>
+<p>med mobil SDK version 1.0.27.</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9-14</p>
-<p>med mobil SDK build 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
+<p>iOS 9–14</p>
+<p>med mobil SDK version 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
 </td>
 </tr>
 </tbody>
@@ -331,13 +331,13 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 
 ## Webbläsare{#Browsers}
 
-Den senaste versionen stöds i följande webbläsare: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Den senaste versionen har stöd i följande webbläsare: Microsoft Edge, Mozilla Firefox, Google Chrome och Safari.
 
 Internet Explorer 11 stöds.
 
 ## Mer som detta{#Morelikethis}
 
-* [Versionsinformation om Campaign Classic](../../rn/using/latest-release.md)
+* [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
-* [Föråldrade funktioner och system](../../rn/using/deprecated-features.md)
-* [Uppgraderingsprocedur](../../production/using/build-upgrade.md)
+* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
+* [Procedur för versionsuppgradering](../../production/using/build-upgrade.md)
