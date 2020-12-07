@@ -6,11 +6,11 @@ description: Den här sidan visar alla nya funktioner och dokumentationsuppdater
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3631'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/usin
 
 ## November 2020 {#nov-2020}
 
-Översikt över kampanjdatamodellen har förbättrats och omorganiserats. [Läs mer](../../configuration/using/about-data-model.md).
+Översikten över kampanjdatamodellen har förbättrats och omorganiserats. [Läs mer](../../configuration/using/about-data-model.md).
 
-Konfiguration av externt konto har flyttats till [det här avsnittet](../../installation/using/external-accounts.md).
+Konfiguration av externa konton har flyttats till [det här avsnittet](../../installation/using/external-accounts.md).
 
-FDA-dokumentationen (Campaign Federated Data Access) har förbättrats med information för varje extern databaskonfiguration och flyttats till [det här avsnittet](../../installation/using/about-fda.md).
+Dokumentationen om federerad dataåtkomst (FDA) i Campaign har förbättrats med information för varje extern databaskonfiguration och flyttats till [det här avsnittet](../../installation/using/about-fda.md).
 
-[Campaign 20.2.3-versionen](../../rn/using/release--20-2.md#release-20-2-3-build-9182) har övergått till General Availability (GA).
+[Campaign version 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182) har flyttats till Allmän tillgänglighet (GA).
 
-Sektionen Sekretess har flyttats och berikats med två nya sidor: [Sekretesshantering](../../platform/using/privacy-management.md) och [hantering av sekretessförfrågningar](../../platform/using/privacy-requests.md).
+Sektionen om sekretess har flyttats och berikats med två nya sidor: [Sekretesshantering](../../platform/using/privacy-management.md) och [Hantering av förfrågningar om användarens information](../../platform/using/privacy-requests.md).
 
-En anteckning har lagts till på konfigurationssidan för server med mellankällkod för att ange att det externa kontots interna namn inte ska uppdateras när servern har konfigurerats. [Läs mer](../../installation/using/mid-sourcing-server.md)
+En anteckning har lagts till på sidan med serverkonfiguration gällande mid-sourcing för att specificera att det externa kontots interna namn inte bör uppdateras när servern väl har konfigurerats. [Läs mer](../../installation/using/mid-sourcing-server.md)
 
 Information har lagts till om syntaxen som ska användas när en sökväg till en extern SFTP-server anges. [Läs mer](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-Avsnittet Personuppgifter och Personas har uppdaterats med ett scenario för användningsfall för att illustrera hur de olika personerna interagerar när det gäller sekretess. [Läs mer](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+Avsnittet Personuppgifter och personer har uppdaterats med ett användningsfall för att illustrera hur de olika personerna interagerar när det gäller sekretess. [Läs mer](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-Ett nytt avsnitt med vanliga frågor om sekretess har lagts till. [Läs mer](../../platform/using/privacy-faq.md)
+Ett nytt avsnitt med vanliga frågor och svar gällande sekretess har lagts till. [Läs mer](../../platform/using/privacy-faq.md)
 
 ## Oktober 2020 {#oct-2020}
 
@@ -58,7 +58,7 @@ Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/u
 Versionsinformation och kompatibilitetsmatris för utgåvan Gold Standard finns nu i ett särskilt avsnitt.
 [Läs mer](../../rn/using/gold-standard.md#gs-10).
 
-Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
+Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
 
 **Andra uppdateringar**
 
