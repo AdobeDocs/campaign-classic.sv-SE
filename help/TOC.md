@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -55,9 +55,9 @@ ht-degree: 96%
          + [Utveckling](platform/using/faq-developers.md)
       + [Självstudiekurser](platform/using/tutorials.md)
    + Integritet {#privacy}
-      + [Sekretess och samtycke](platform/using/privacy-and-recommendations.md)
+      + [Integritet och medgivande](platform/using/privacy-and-recommendations.md)
       + [Integritetshantering](platform/using/privacy-management.md)
-      + [Förfrågan om användarens information](platform/using/privacy-requests.md)
+      + [Förfrågningar om användarens information](platform/using/privacy-requests.md)
       + [Frågor och svar om sekretess](platform/using/privacy-faq.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
@@ -625,12 +625,12 @@ ht-degree: 96%
       + [Server för mid-sourcing](installation/using/mid-sourcing-server.md)
       + [Interaktion – databuffert](installation/using/interaction---data-buffer.md)
       + [Konfigurera externa konton](installation/using/external-accounts.md)
-   + Komma åt en extern databas {#accessing-external-database}
+   + Åtkomst till en extern databas {#accessing-external-database}
       + [Kom igång med FDA](installation/using/about-fda.md)
       + Konfigurationsriktlinjer {#config-databases}
          + [Konfigurationssteg](installation/using/configure-fda.md)
          + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
-         + [Konfigurera Azure synapse](installation/using/configure-fda-synapse.md)
+         + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
          + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
          + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
          + [Konfigurera Netezza](installation/using/configure-fda-netezza.md)
@@ -648,7 +648,7 @@ ht-degree: 96%
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
       + [Lista över alternativ för Campaign ](installation/using/configuring-campaign-options.md)
       + [Avinstallerar Campaign](installation/using/uninstalling-campaign.md)
-+ Övervakningsguide {#monitoring-campaign-classic}
++ Övervakningshandbok {#monitoring-campaign-classic}
    + Introduktion {#introduction}
       + [Förord](production/using/foreword.md)
       + [Allmän arkitektur](production/using/general-architecture.md)
@@ -754,7 +754,7 @@ ht-degree: 96%
       + [Infoga taggar på din webbplats](configuration/using/inserting-tags-in-your-site.md)
       + [Samla in alla besök](configuration/using/collecting-all-visits.md)
       + [Anonym spårning](configuration/using/anonymous-tracking.md)
-+ Migreringsguide {#migrating-to-a-new-version}
++ Migreringshandbok {#migrating-to-a-new-version}
    + Migreringsöversikt {#migration-overview}
       + [Om migrering](migration/using/about-migration.md)
       + [Migreringsmetod](migration/using/migration-method.md)
