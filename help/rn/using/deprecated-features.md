@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <ul>
    <li>Soap API – lokal: 2007, 2015 och 2016</li>
    <li>Soap API – online: 2015 och 2016</li>
-   <li>Webb-API - lokal Microsoft Dynamics CRM: 2016, 2016 uppdatering 1</li>
-   <li>Webb-API - Microsoft Dynamics CRM Online: 2016, 2016 uppdatering 1</li>
+   <li>Webb-API – Microsoft Dynamics CRM lokalt: 2016, 2016 uppdatering 1</li>
+   <li>Webb-API – Microsoft Dynamics CRM online: 2016, 2016 uppdatering 1</li>
    </ul>
   <p><em>Måldatum för borttagning: april 2021</em></p>
   </td>
