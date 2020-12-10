@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 7%
@@ -32,7 +32,7 @@ De viktigaste stegen när du skapar en leverans är följande:
 
 1. **Skicka leveransen**. [Läs mer](../../delivery/using/steps-sending-the-delivery.md)
 
-1. **Övervaka leveransen** (spårning, karantän, rapporter osv.). Mer information finns i avsnitten [Övervaka leveranser](../../delivery/using/monitoring-a-delivery.md) och [Spåra leveranser](../../delivery/using/about-message-tracking.md) .
+1. **Övervaka leveransen**  (spårning, karantän, rapporter osv.). Mer information finns i avsnitten [Övervaka leveranser](../../delivery/using/about-delivery-monitoring.md) och [Spåra leveranser](../../delivery/using/about-message-tracking.md).
 
 >[!NOTE]
 >
