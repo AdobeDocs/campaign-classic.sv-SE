@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
 workflow-type: tm+mt
-source-wordcount: '3663'
+source-wordcount: '3660'
 ht-degree: 99%
 
 ---
@@ -311,7 +311,7 @@ Alternativet &quot;WdbcOptions_TempDbName&quot; har lagts till i listan över al
 
 Sidan FDA-matriser har flyttats [hit](../../installation/using/remote-database-access-rights.md).
 
-Sidan Matris för åtkomsträttigheter har flyttats [hit](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+Sidan Matris för åtkomsträttigheter har flyttats [hit](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en).
 
 Avsnittet som beskriver hur man definierar interaktivt innehåll med AMP har flyttats. [Läs mer](../../delivery/using/defining-interactive-content.md)
 
