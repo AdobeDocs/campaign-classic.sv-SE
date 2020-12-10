@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-Fliken, som är tillgänglig från Campaign Classic hemsida, är den viktigaste startpunkten som hjälper dig att övervaka instansen. **[!UICONTROL Monitoring]**
+Fliken **[!UICONTROL Monitoring]**, som är tillgänglig från Campaign Classic hemsida, är den viktigaste startpunkten som hjälper dig att övervaka din instans.
 
 Här finns en kontrollpanel med information om vad som händer i din instans: status (version av bygge, installerade paket osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
 
@@ -27,7 +27,7 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
+## Övervaka Campaign Classic-processer {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
@@ -38,21 +38,21 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 
 Det finns fler sätt att övervaka olika Campaign-processer. De innehåller flera sätt att övervaka dina instanser för att säkerställa att systemet är felfritt och till slut felsöka problem som kan uppstå när du ställer in arbetsflöden, skickar leveranser osv.
 
-### Övervaka instansen {#monitoring-instance}
+### Övervaka din instans {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Automatiska övervakningsverktyg**
 
-Flera automatiska metoder är tillgängliga. som hjälper dig att övervaka instansen. Du kan till exempel skapa e-postrapporter med identifierade avvikelser, hämta en lista med indikatorer i XML-format osv. [Klicka här](../../production/using/monitoring-processes.md#automatic-monitoring) om du vill ha mer information.
+Flera automatiska metoder är tillgängliga. som hjälper dig att övervaka instansen. Du kan till exempel skapa e-postrapporter med identifierade avvikelser, hämta en lista med indikatorer i XML-format osv. [Klicka ](../../production/using/monitoring-processes.md#automatic-monitoring) här för mer information.
 
 **Verifieringskedja**
 
-Med granskningsspåret kan du visualisera den fullständiga historiken över ändringar som rör alternativ, arbetsflöden och scheman i instansen. [Klicka här](../../production/using/audit-trail.md) om du vill ha mer information.
+Med granskningsspåret kan du visualisera den fullständiga historiken över ändringar som rör alternativ, arbetsflöden och scheman i instansen. [Klicka ](../../production/using/audit-trail.md) här för mer information.
 
 **Kontrollpanelen**
 
-På Kontrollpanelen kan du hantera flera inställningar för din instans: hantera URL-behörigheter, kontrollera instansinformation som serverns build-versioner osv. Du kan också övervaka det tillgängliga utrymmet på de SFTP-servrar som är anslutna till din instans. [Klicka här](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html) om du vill ha mer information.
+På Kontrollpanelen kan du hantera flera inställningar för din instans: hantera URL-behörigheter, kontrollera instansinformation som serverns build-versioner osv. Du kan också övervaka det tillgängliga utrymmet på de SFTP-servrar som är anslutna till din instans. [Klicka ](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html) här för mer information.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ På Kontrollpanelen kan du hantera flera inställningar för din instans: hanter
 
 **Värmekarta för arbetsflöde**
 
-Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. [Klicka här](../../workflow/using/heatmap.md) om du vill ha mer information.
+Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. [Klicka ](../../workflow/using/heatmap.md) här för mer information.
 
 **Verifieringskedja**
 
@@ -72,11 +72,11 @@ Med granskningsspåret kan du visualisera alla ändringar som har gjorts i arbet
 
 **Felsökning av arbetsflöden**
 
-Du kan utföra specifika åtgärder när du stöter på problem med arbetsflödeskörningen. [Klicka här](../../production/using/workflow-execution.md) för mer information
+Du kan utföra specifika åtgärder när du stöter på problem med arbetsflödeskörningen. [Klicka ](../../production/using/workflow-execution.md) här för mer information
 
 **Övervakning av arbetsflödesstatus**
 
-Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. [Klicka här](../../workflow/using/supervising-workflows.md) om du vill ha mer information.
+Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. [Klicka ](../../workflow/using/supervising-workflows.md) här för mer information.
 
 **Allmänna riktlinjer**
 
@@ -94,13 +94,14 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../..
 
 **Bästa praxis**
 
-[De bästa sätten att skicka och designa](../../delivery/using/delivery-best-practices.md) kan hjälpa er att förbättra deras prestanda.
+[De bästa sätten att skicka och ](../../delivery/using/delivery-best-practices.md) designa kan hjälpa er att förbättra deras prestanda.
 
-**Felsökning** av leveranser Specifika åtgärder kan utföras när du stöter på leveransproblem:
+**Felsökning av**
+leveranserSpecifika åtgärder kan utföras vid problem med leveranser:
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Bildvisningsproblem](../../production/using/image-display-issues.md)
-* [Problem med leveransresultat](../../delivery/using/monitoring-a-delivery.md#performance_issues)
-* [Temporära filproblem](../../production/using/temporary-files.md) - endast *på lokala värdmodeller*
+* [Problem med leveransresultat](../../delivery/using/delivery-performances.md)
+* [Temporära filproblem](../../production/using/temporary-files.md)  - endast  *lokala värdmodeller*
 
 ### Övervaka databasen {#monitoring-database}
 
@@ -108,23 +109,23 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../..
 
 **Arbetsflöde för databasrensning**
 
-Med hjälp av arbetsflödet för att rensa databas kan du ta bort föråldrade data från databasen. Vi rekommenderar att du undviker exponentiell tillväxt i databasen. [Klicka här](../../production/using/database-cleanup-workflow.md) om du vill ha mer information.
+Med hjälp av arbetsflödet för att rensa databas kan du ta bort föråldrade data från databasen. Vi rekommenderar att du undviker exponentiell tillväxt i databasen. [Klicka ](../../production/using/database-cleanup-workflow.md) här för mer information.
 
 **Felsökning av databasprestanda**
 
-Specifika åtgärder kan utföras när problem med databasprestanda påträffas. [Klicka här](../../production/using/database-performances.md) om du vill ha mer information.
+Specifika åtgärder kan utföras när problem med databasprestanda påträffas. [Klicka ](../../production/using/database-performances.md) här för mer information.
 
 **Databasunderhåll**
 
 *enbart lokala och hybridhosting-modeller*
 
-Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika överförbrukning av diskutrymme, vilket påverkar databasåtkomsten. [Klicka här](../../production/using/recommendations.md) om du vill ha mer information.
+Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika överförbrukning av diskutrymme, vilket påverkar databasåtkomsten. [Klicka ](../../production/using/recommendations.md) här för mer information.
 
 **Säkerhetskopiering och återställning**
 
 *enbart lokala och hybridhosting-modeller*
 
-Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka här](../../production/using/backup.md) om du vill ha mer information. Återställningsproceduren beskrivs i [detta avsnitt](../../production/using/restoration.md).
+Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka ](../../production/using/backup.md) här för mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
 
 ## Campaign Classic tekniska principer {#campaign-classic-technical-principles}
 
