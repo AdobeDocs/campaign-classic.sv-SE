@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1443'
 ht-degree: 2%
 
 ---
@@ -19,30 +19,30 @@ ht-degree: 2%
 
 Du kan spåra leveransen via olika rapporter som du når via leveransöversikten. Gör så här för att visa rapporter:
 
-1. Gå till **[!UICONTROL Campaigns]** universum och klicka på **[!UICONTROL Delivery]** länken för att visa listan över leveranser.
+1. Gå till **[!UICONTROL Campaigns]**-universum och klicka på länken **[!UICONTROL Delivery]** för att visa listan över leveranser.
 1. Klicka på namnet på den leverans som du vill visa för att visa informationen.
 
    ![](assets/s_ncs_user_detailled_report.png)
 
-1. Markera **[!UICONTROL Summary]** fliken och klicka på **[!UICONTROL Reports]** länken för att komma åt rapporter som är specifika för leveransen.
+1. Välj fliken **[!UICONTROL Summary]** och klicka på länken **[!UICONTROL Reports]** för att komma åt rapporter som är specifika för leveransen.
 
    ![](assets/s_ncs_user_detailled_report2.png)
 
    Som standard är följande rapporter tillgängliga:
 
-   * **[!UICONTROL Delivery throughput]** : se [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput).
-   * **[!UICONTROL Sharing to social networks]** : se [Delning till sociala nätverk](../../reporting/using/global-reports.md#sharing-to-social-networks).
-   * **[!UICONTROL Statistics on sharing activities]** : se [Statistik om delning av aktiviteter](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
-   * **[!UICONTROL Hot clicks]** : referera till [snabbklickningar](#hot-clicks).
-   * **[!UICONTROL Tracking statistics]** : se [Spårningsstatistik](#tracking-statistics)
-   * **[!UICONTROL URLs and click streams]** : se [URL:er och klicka på strömmar](#urls-and-click-streams).
-   * **[!UICONTROL Tracking indicators]** : se [Spårningsindikatorer](#tracking-indicators).
-   * **[!UICONTROL Non-deliverables and bounces]** : hänvisa till [Ej levererbara produkter och studsar](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
-   * **[!UICONTROL User activities]** : se [Användaraktiviteter](../../reporting/using/global-reports.md#user-activities).
-   * **[!UICONTROL Delivery summary]** : se [Leveranssammanfattning](#delivery-summary).
-   * **[!UICONTROL Subscription tracking]** : se [Prenumerationsspårning](../../reporting/using/global-reports.md#subscription-tracking).
-   * **[!UICONTROL Delivery statistics]** : se [Leveransstatistik](../../reporting/using/global-reports.md#delivery-statistics).
-   * **[!UICONTROL Breakdown of opens]** : se [Indelning av öppningar](../../reporting/using/global-reports.md#breakdown-of-opens).
+   * **[!UICONTROL Delivery throughput]** : se  [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput).
+   * **[!UICONTROL Sharing to social networks]** : se  [Delning till sociala nätverk](../../reporting/using/global-reports.md#sharing-to-social-networks).
+   * **[!UICONTROL Statistics on sharing activities]** : se  [Statistik om delning av aktiviteter](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
+   * **[!UICONTROL Hot clicks]** : referera till  [snabbklickningar](#hot-clicks).
+   * **[!UICONTROL Tracking statistics]** : se  [Spårningsstatistik](#tracking-statistics)
+   * **[!UICONTROL URLs and click streams]** : se  [URL:er och klicka på strömmar](#urls-and-click-streams).
+   * **[!UICONTROL Tracking indicators]** : se  [Spårningsindikatorer](#tracking-indicators).
+   * **[!UICONTROL Non-deliverables and bounces]** : hänvisa till  [Ej levererbara produkter och studsar](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL User activities]** : se  [Användaraktiviteter](../../reporting/using/global-reports.md#user-activities).
+   * **[!UICONTROL Delivery summary]** : se  [Leveranssammanfattning](#delivery-summary).
+   * **[!UICONTROL Subscription tracking]** : se  [Prenumerationsspårning](../../reporting/using/global-reports.md#subscription-tracking).
+   * **[!UICONTROL Delivery statistics]** : se  [Leveransstatistik](../../reporting/using/global-reports.md#delivery-statistics).
+   * **[!UICONTROL Breakdown of opens]** : se  [Indelning av öppningar](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Spårningsindikatorer {#tracking-indicators}
 
@@ -50,7 +50,7 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 
 >[!NOTE]
 >
->Värden som beräknas baserat på meddelandeöppning är alltid uppskattningar på grund av den felmarginal som är länkad till e-postmeddelanden i textformat. Indikatorerna **[!UICONTROL Distinct opens/Sum of opens for the population reached]** tar hänsyn till denna felmarginal. Mer information om att spåra öppningar finns i [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-).
+>Värden som beräknas baserat på meddelandeöppning är alltid uppskattningar på grund av den felmarginal som är länkad till e-postmeddelanden i textformat. Indikatorerna **[!UICONTROL Distinct opens/Sum of opens for the population reached]** tar hänsyn till den här felmarginalen. Mer information om att spåra öppningar finns i [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -68,12 +68,12 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 * **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klicka på länkar för att ta bort prenumerationen och spegelsidor beaktas.
 * **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
 * **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
-* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). Refer to this [page](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). Se den här [sidan](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : Uppskattning av antalet e-postmeddelanden som vidarebefordrats av målmottagarna. Det här värdet beräknas genom att subtrahera antalet distinkta personer och antalet distinkta mottagare som klickade i e-postmeddelandet.
 
    >[!NOTE]
    >
-   >Mer information om skillnaden mellan distinkta personer och målmottagare finns i [Målgrupper/mottagare](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
+   >Mer information om skillnaden mellan distinkta personer och målmottagare finns i [Målpersoner/mottagare](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -87,7 +87,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den **[!UICONTROL Domains]** specificerade listan och ändrar värden och alias. Mer information om detta finns i [det här avsnittet](../../platform/using/managing-enumerations.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör något värde i den specificerade listan.
+>Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den specificerade listan **[!UICONTROL Domains]** och ändrar värden och alias. Mer information om detta finns i [det här avsnittet](../../platform/using/managing-enumerations.md). Kategorin **[!UICONTROL Others]** innehåller domännamn som inte tillhör något värde i den specificerade listan.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -112,7 +112,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
    >[!NOTE]
    >
-   >För att en besökt sida, transaktion, belopp eller artikel ska kunna beaktas måste en webbspårningstagg infogas på den matchande webbsidan. Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+   >För att en besökt sida, transaktion, belopp eller artikel ska kunna beaktas måste en webbspårningstagg infogas på den matchande webbsidan. Webbspårningskonfigurationen visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
@@ -124,7 +124,7 @@ Den här rapporten innehåller en lista över besökta sidor efter en leverans.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Du kan konfigurera innehållet i den här rapporten genom att välja: det poängdiagram som ska visas, tidsfiltret (sedan åtgärden startades, under de första 6 timmarna efter start osv.) och datavisningsläget (per etikett, per URL, per kategori - mer information finns på [den här sidan](../../delivery/using/monitoring-a-delivery.md)). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+Du kan konfigurera innehållet i den här rapporten genom att välja: det poängdiagram som ska visas, tidsfiltret (sedan åtgärden startades, under de första 6 timmarna efter start osv.) och datavisningsläget (per etikett, per URL, per kategori). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
 
 Följande frekvenser visas i rapportens övre del:
 
@@ -159,7 +159,7 @@ Den här rapporten innehåller all huvudinformation om leveransen.
 Det här avsnittet har två indikatorer:
 
 * **[!UICONTROL Initial population]** : Totalt antal mottagare som leveransmålet gäller.
-* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, sätts i karantän, på blockeringslista osv. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress saknas, sätts i karantän, på blockeringslista osv. Mer information om typologiregler finns på den här [sidan](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -196,4 +196,4 @@ Den här rapporten innehåller en värdetabell och ett Pareto-diagram som visar 
 
 * **[!UICONTROL Opens]** : Uppskattning av den tid som krävs för att nå en procentandel av det totala antalet meddelanden som öppnas. E-post i textformat tas inte med i beräkningen. Mer information om att spåra öppningar finns i [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Uppskattning av den tid som krävs för att nå en procentandel av det totala antalet inspelade klick. Klicka på länken för avanmälan och spegelsidan beaktas inte.
-* **[!UICONTROL Transactions]** : Den tid som krävs för att uppnå en procentandel av det totala antalet transaktioner efter att meddelandet tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+* **[!UICONTROL Transactions]** : Den tid som krävs för att uppnå en procentandel av det totala antalet transaktioner efter att meddelandet tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Webbspårningskonfigurationen visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
