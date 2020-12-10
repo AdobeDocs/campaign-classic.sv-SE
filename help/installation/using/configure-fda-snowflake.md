@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 535339b5a9b39625100d630b0b831df143dbeb01
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 10%
@@ -17,10 +17,10 @@ ht-degree: 10%
 
 # Konfigurera åtkomst till Snowflake {#configure-access-to-snowflake}
 
-Använd alternativet Campaign **Federated Data Access** (FDA) för att bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Snowflake].
+Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Snowflake].
 
-1. Konfigurera [!DNL Snowflake] i [CentOS](#snowflake-centos), [Windows](#snowflake-windows) eller [Debian](#snowflake-debian)
-1. Konfigurera det [!DNL Snowflake][externa kontot](#snowflake-external) i Campaign
+1. Konfigurera [!DNL Snowflake] på [CentOS](#snowflake-centos), [Windows](#snowflake-windows) eller [Debian](#snowflake-debian)
+1. Konfigurera [!DNL Snowflake] [externt konto](#snowflake-external) i Campaign
 
 
 >[!NOTE]
@@ -31,9 +31,9 @@ Använd alternativet Campaign **Federated Data Access** (FDA) för att bearbeta 
 
 ## Snowflake på CentOS {#snowflake-centos}
 
-Så här konfigurerar du [!DNL Snowflake] i CentOS:
+Följ stegen nedan för att konfigurera [!DNL Snowflake] för CentOS:
 
-1. Hämta ODBC-drivrutinerna för [!DNL Snowflake]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) för att påbörja nedladdningen.
+1. Hämta ODBC-drivrutinerna för [!DNL Snowflake]. [Klicka ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) här för att påbörja nedladdningen.
 1. Du måste sedan installera ODBC-drivrutinerna på CentOS med följande kommando:
 
    ```
@@ -48,7 +48,7 @@ Så här konfigurerar du [!DNL Snowflake] i CentOS:
    /etc/init.d/nlserver6 start
    ```
 
-1. I Campaign kan du sedan konfigurera ditt [!DNL Snowflake] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#snowflake-external).
+1. I Campaign kan du sedan konfigurera ditt externa [!DNL Snowflake]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#snowflake-external).
 
 ## Snowflake i Windows {#snowflake-windows}
 
@@ -56,11 +56,11 @@ Så här konfigurerar du [!DNL Snowflake] i CentOS:
 
 1. Konfigurera ODBC-drivrutinen. Se denna [sida](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver) för mer information om detta
 
-1. I Campaign kan du sedan konfigurera ditt [!DNL Snowflake] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#snowflake-external).
+1. I Campaign kan du sedan konfigurera ditt externa [!DNL Snowflake]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#snowflake-external).
 
 ## Snowflake på Debian {#snowflake-debian}
 
-1. Hämta ODBC-drivrutinerna för [!DNL Snowflake]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) för att påbörja nedladdningen.
+1. Hämta ODBC-drivrutinerna för [!DNL Snowflake]. [Klicka på ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) Hämta.
 
 1. Du måste sedan installera ODBC-drivrutinerna på Debian med följande kommando:
 
@@ -76,23 +76,23 @@ Så här konfigurerar du [!DNL Snowflake] i CentOS:
    systemctl start nlserver.service
    ```
 
-1. I Campaign kan du sedan konfigurera ditt [!DNL Snowflake] externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#snowflake-external).
+1. I Campaign kan du sedan konfigurera ditt externa [!DNL Snowflake]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#snowflake-external).
 
-## Snowflake external account {#snowflake-external}
+## Snowflake externt konto {#snowflake-external}
 
-Du måste skapa ett [!DNL Snowflake] externt konto för att ansluta Campaign-instansen till din [!DNL Snowflake] externa databas.
+Du måste skapa ett externt [!DNL Snowflake]-konto för att ansluta Campaign-instansen till din externa [!DNL Snowflake]-databas.
 
-1. Klicka **[!UICONTROL Explorer]** på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign.
+1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]** &lt;a3/> i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som **[!UICONTROL Type]** för ditt externa konto.
 
-1. Konfigurera det **[!UICONTROL Snowflake]** externa kontot måste du ange:
+1. Konfigurera det externa **[!UICONTROL Snowflake]**-kontot måste du ange:
 
    * **[!UICONTROL Type]**: [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**: URL för [!DNL Snowflake] servern
+   * **[!UICONTROL Server]**: URL för  [!DNL Snowflake] servern
 
    * **[!UICONTROL Account]**: Användarens namn
 
@@ -102,7 +102,7 @@ Du måste skapa ett [!DNL Snowflake] externt konto för att ansluta Campaign-ins
 
    ![](assets/snowflake.png)
 
-1. Klicka på **[!UICONTROL Parameters]** fliken och sedan på **[!UICONTROL Deploy functions]** knappen för att skapa funktioner.
+1. Klicka på fliken **[!UICONTROL Parameters]** och sedan på knappen **[!UICONTROL Deploy functions]** för att skapa funktioner.
 
    ![](assets/snowflake_2.png)
 
