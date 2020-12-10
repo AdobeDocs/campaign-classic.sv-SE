@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Förekomsten av attributet&quot;static&quot; (med värdet&quot;true&quot;) beskr
 
 En const-metod har implicit ett XML-dokument i det associerade schemats format som indata.
 
-En fullständig beskrivning av `<method>`-elementet i ett Adobe Campaign-schema finns i kapitlet &quot;Schemareferenser&quot; under <a href="../../configuration/using/schema/method.md)" target="_blank">  `<method>`    -element.
+En fullständig beskrivning av `<method>`-elementet i ett Adobe Campaign-schema finns i kapitlet &quot;Schemareferenser&quot; under [Metod](../../configuration/using/schema/method.md)
 
 Exempel på &quot;const&quot;-typ &quot;ExecuteQuery&quot;-metoden från schemat &quot;xtk:queryDef&quot;:
 
