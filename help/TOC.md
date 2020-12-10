@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
+source-git-commit: 854d509315f1d8585cb041575908df896468cc77
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 98%
+source-wordcount: '2196'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,12 @@ ht-degree: 98%
       + [Hantera prenumerationer](delivery/using/managing-subscriptions.md)
       + [Viral och social marknadsföring](delivery/using/viral-and-social-marketing.md)
    + Övervaka leveranser {#monitoring-deliveries}
-      + [Övervaka en leverans](delivery/using/monitoring-a-delivery.md)
+      + [Kom igång med leveransövervakning](delivery/using/about-delivery-monitoring.md)
+      + [Åtkomst till listan över leveranser](delivery/using/list-of-deliveries.md)
+      + [Kontrollpanel för leverans](delivery/using/delivery-dashboard.md)
+      + [Bästa praxis för leverans](delivery/using/delivery-performances.md)
+      + [Felsökning av leverans](delivery/using/delivery-troubleshooting.md)
+      + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
