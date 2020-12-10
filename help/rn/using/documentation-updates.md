@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '3660'
 ht-degree: 99%
@@ -339,7 +339,7 @@ Det nya alternativet **Maximal körtid för personalisering** i leveransegenskap
 
 Exemplen för API-anrop med en **HttpServletRequest** med logon() och query() har uppdaterats. [Läs mer](../../configuration/using/web-service-calls.md).
 
-En rekommendation för attributet **sqlDefault** i schemadefinitionen har lagts till. [Läs mer](../../configuration/using/elements-and-attributes.md#attribute-description).
+En rekommendation för attributet **sqlDefault** i schemadefinitionen har lagts till. [Läs mer](../../configuration/using/schema/attribute.md)).
 
 Integrationen mellan Adobe Campaign och Adobe Real-time Customer Data Platform finns nu med i handboken **Integrera med Adobe Experience Cloud**. [Läs mer](../../integrations/using/about-campaign-integrations.md).
 
