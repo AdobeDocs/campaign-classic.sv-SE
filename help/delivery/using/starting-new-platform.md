@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 1%
@@ -27,17 +27,17 @@ Det är viktigt att du behåller domänens och IP-adressens anseende när du ska
 
 Nedan anges de huvudprinciper som ska följas när en ny plattform startas:
 
-* Om du har den här informationen **importerar du ogiltiga adresser till karantäntabellen**.
+* Om du har den här informationen kan du **importera ogiltiga adresser till karantäntabellen**.
 Det händer ofta att en plattform startas när en adresslista används för första gången och som kanske inte är fullständigt kvalificerad. Om du skickar till ogiltiga adresser eller till honeypoadresser kommer detta att bidra till att minska plattformens anseende.
 
-   * Om du har en lista med ogiltiga adresser är det bäst för dig att importera den till karantäntabellen (tillgänglig via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** menyn) innan du skickar den första gången.
+   * Om du har en lista med ogiltiga adresser är det bäst att importera den till karantäntabellen (tillgänglig via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**-menyn) innan du skickar den första gången.
    * Om du ändå vill ange de ogiltiga adresserna är det bäst att göra detta när plattformens rykte väl har etablerats och bitvis för att &quot;tona ned&quot; användningen av dåliga adresser över tiden.
 
-   Mer information finns i [Optimera leveransen via karantäner](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
-* **Begränsa genomströmningshastigheten** genom att begränsa antalet matriser. Kontakta Adobe Campaign-administratören om du vill ha mer information om hur du justerar sådana tekniska inställningar.
-* **Öka volymen som skickas** progressivt för att undvika att markeras som skräppost. Använd inte hela databasen som mål från början, utan lägg till en extra del av listan varje gång du skickar. Detta bör göra att du kan öka volymen i varje steg och samtidigt minska den totala hastigheten för ogiltiga adresser. För att säkerställa en smidig utveckling av startfasen kan du använda vågor. Mer information finns i [Skicka med flera vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+   Mer information finns i [Optimera leveransen genom karantän](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
+* **Begränsa** genomströmningshastigheten genom att begränsa antalet matriser. Kontakta Adobe Campaign-administratören om du vill ha mer information om hur du justerar sådana tekniska inställningar.
+* **Öka volymen gradvis** för att undvika att markeras som skräppost. Använd inte hela databasen som mål från början, utan lägg till en extra del av listan varje gång du skickar. Detta bör göra att du kan öka volymen i varje steg och samtidigt minska den totala hastigheten för ogiltiga adresser. För att säkerställa en smidig utveckling av startfasen kan du använda vågor. Mer information finns i [Skicka med flera vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 * **Skicka regelbundet**. I viss utsträckning är det bättre att skicka små tagningar regelbundet i stället för stora kampanjer sporadiskt.
-* **Var noga med leveransrapporterna**. Höga felindikatorer kan innebära att en teknisk inställning är felaktigt konfigurerad. Mer information finns i [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md).
+* **Var noga med leveransrapporterna**. Höga felindikatorer kan innebära att en teknisk inställning är felaktigt konfigurerad. Mer information finns i [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md).
 
 **Relaterade ämnen**:
 * [Öka e-postens anseende med IP-uppvärmning](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
