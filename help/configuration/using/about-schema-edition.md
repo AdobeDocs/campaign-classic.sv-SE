@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1007'
 ht-degree: 7%
 
 ---
@@ -146,12 +146,13 @@ Exempel på hur du definierar ett standardvärde:
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
-`
+```
 
-Example of using a common attribute as a template for a field also marked as mandatory:
+Exempel på hur du använder ett gemensamt attribut som mall för ett fält som också är markerat som obligatoriskt:
+
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
-"
+```
 
 Exempel på ett beräknat fält som är dolt med attributet **@advanced**:
 
