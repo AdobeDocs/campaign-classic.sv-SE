@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Schemastruktur{#schema-structure}
 
-Grundstrukturen för en `<srcschema>` bild är följande:
+Grundstrukturen för en `<srcschema>` är följande:
 
 ```
 <srcSchema>
@@ -60,7 +60,7 @@ Grundstrukturen för en `<srcschema>` bild är följande:
 </srcSchema>
 ```
 
-XML-dokumentet i ett dataschema måste innehålla **`<srcschema>`** rotelementet med attributen **name** och **namespace** för att schemanamnet och dess namnutrymme ska kunna fyllas i.
+XML-dokumentet i ett dataschema måste innehålla rotelementet **`<srcschema>`** med attributen **name** och **namespace** för att fylla i schemanamnet och dess namnutrymme.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -101,7 +101,7 @@ I det här exemplet representeras huvudelementet av följande rad:
 <element name="recipient">
 ```
 
-Med elementen **`<attribute>`** och **`<element>`** de som följer huvudelementet kan du definiera plats och namn för dataobjekten i XML-strukturen.
+Med elementen **`<attribute>`** och **`<element>`** som följer huvudelementet kan du definiera plats och namn för dataobjekten i XML-strukturen.
 
 I vårt exempelschema är följande:
 
@@ -116,23 +116,23 @@ I vårt exempelschema är följande:
 
 Följande regler måste följas:
 
-* Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via **name** -attributet.
+* Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via attributet **name**.
 
    >[!IMPORTANT]
    >
    >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tillåtna tecken i enlighet med XML-reglerna för namngivning.
 
-* Endast **`<element>`** element kan innehålla **`<attribute>`** element och **`<element>`** element i XML-strukturen.
-* Ett **`<attribute>`** element måste ha ett unikt namn i en **`<element>`**.
-* Vi rekommenderar att du använder **`<elements>`** i flerradiga datasträngar.
+* Endast **`<element>`**-element kan innehålla **`<attribute>`**-element och **`<element>`**-element i XML-strukturen.
+* Ett **`<attribute>`**-element måste ha ett unikt namn i en **`<element>`**.
+* Du bör använda **`<elements>`** i flerradiga datasträngar.
 
 ## Datatyper {#data-types}
 
-Datatypen anges via **type** -attributet i **`<attribute>`** elementen och **`<element>`** .
+Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`**.
 
-En detaljerad lista finns i beskrivningen av [`<attribute>` elementet](../../configuration/using/elements-and-attributes.md#attribute--element) och [`<element>` elementet](../../configuration/using/elements-and-attributes.md#element--element).
+En detaljerad lista finns i beskrivningen av [`<attribute>`-elementet](../../configuration/using/schema/attribute.md) och [`<element>`-elementet](../../configuration/using/schema/element.md)).
 
-När det här attributet inte är ifyllt är **strängen** standarddatatyp om inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (elementet i vårt exempel **`<location>`** ).
+När det här attributet inte är ifyllt är **sträng** standarddatatypen såvida inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
 
 Följande datatyper stöds i scheman:
 
@@ -141,9 +141,9 @@ Följande datatyper stöds i scheman:
    Storleken kan anges via attributet **length** (valfritt, standardvärde &quot;255&quot;).
 
 * **boolesk**: Booleskt fält. Exempel på möjliga värden: true/false, 0/1, yes/no, etc.
-* **byte**, **short**, **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: en ålder, ett kontonummer, ett antal poäng osv.
+* **byte**,  **short**,  **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: en ålder, ett kontonummer, ett antal poäng osv.
 * **dubbel**: flyttal med dubbel precision. Exempel: ett pris, en kurs, osv.
-* **date**, **datetime**: datum och datum + tider. Exempel: födelsedatum, inköpsdatum osv.
+* **date**,  **datetime**: datum och datum + tider. Exempel: födelsedatum, inköpsdatum osv.
 * **datetimenotz**: datum + tid utan tidszonsdata.
 * **tidsintervall**: varaktighet. Exempel: tjänsteålder.
 * **PM**: långa textfält (flera rader). Exempel: en beskrivning, en kommentar osv.
@@ -151,7 +151,7 @@ Följande datatyper stöds i scheman:
 
    >[!NOTE]
    >
-   >Om du vill innehålla ett **uuid** -fält i andra motorer än Microsoft SQL Server måste funktionen &quot;newuid()&quot; läggas till och fyllas i med standardvärdet.
+   >Om du vill innehålla ett **uid**-fält i andra motorer än Microsoft SQL Server måste funktionen &quot;newuid()&quot; läggas till och slutföras med standardvärdet.
 
 Här är vårt exempelschema med de angivna typerna:
 
@@ -168,7 +168,7 @@ Här är vårt exempelschema med de angivna typerna:
 </srcSchema>
 ```
 
-### Mappa typer av Adobe Campaign-/DBMS-data {#mapping-the-types-of-adobe-campaign-dbms-data}
+### Mappa typer av Adobe Campaign/DBMS-data {#mapping-the-types-of-adobe-campaign-dbms-data}
 
 Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe Campaign för de olika databashanteringssystemen.
 
@@ -216,7 +216,7 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   </tr> 
   <tr> 
    <td> Dubbel<br /> </td> 
-   <td> DUBBEL PRECISION<br /> </td> 
+   <td> DUBBELPRECISION<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> DUBBELT<br /> </td> 
@@ -240,24 +240,24 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
-   <td> DATE<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> DATUM<br /> </td> 
+   <td> DATUM<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> DATUM<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Time<br /> </td> 
-   <td> TIME<br /> </td> 
+   <td> Tid<br /> </td> 
+   <td> TID<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TIME<br /> </td> 
-   <td> TIME<br /> </td> 
+   <td> TID<br /> </td> 
+   <td> TID<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Datetime<br /> </td> 
+   <td> Datum/tid<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> DATUM<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
@@ -265,26 +265,26 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> DATUM<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> TIDSSTÄMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Tidsintervall<br /> </td> 
-   <td> DUBBEL PRECISION<br /> </td> 
+   <td> DUBBELPRECISION<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> DUBBELT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Memo<br /> </td> 
+   <td> PM<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB if Unicode)<br /> </td> 
    <td> CLOB (CLOB CHARACTER SET UNICODE if Unicode)<br /> </td> 
-   <td> CLOB(6 MB)<br /> </td> 
-   <td> TEXT (NTEXT om Unicode)<br /> </td> 
+   <td> CLOB(6M)<br /> </td> 
+   <td> TEXT (NTEXT om Unicode används)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
@@ -292,14 +292,14 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB(4M)<br /> </td> 
-   <td> IMAGE<br /> </td> 
+   <td> BILD<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Egenskaper {#properties}
 
-Elementen **`<elements>`** och **`<attributes>`** elementen i dataschemat kan berikas med olika egenskaper. Du kan fylla i en etikett för att beskriva det aktuella elementet.
+Elementen **`<elements>`** och **`<attributes>`** i dataschemat kan berikas med olika egenskaper. Du kan fylla i en etikett för att beskriva det aktuella elementet.
 
 ### Etiketter och beskrivningar {#labels-and-descriptions}
 
@@ -335,7 +335,7 @@ Elementen **`<elements>`** och **`<attributes>`** elementen i dataschemat kan be
 
 ### Standardvärden {#default-values}
 
-Med **standardegenskapen** kan du definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
+Med egenskapen **default** kan du definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
 
 Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer information finns i [Referera med XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -348,7 +348,7 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
    >[!NOTE]
    >
-   >I Adobe Campaign klientkonsol används **[!UICONTROL Administration>Counters]** noden för att hantera räknare.
+   >I Adobe Campaign klientkonsol används noden **[!UICONTROL Administration>Counters]** för att hantera räknare.
 
 Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -372,13 +372,13 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 >[!NOTE]
 >
->I Adobe Campaign klientkonsol används **[!UICONTROL Administration > Enumerations]** noden för att hantera uppräkningar.
+>I Adobe Campaign klientkonsol används noden **[!UICONTROL Administration > Enumerations]** för att hantera uppräkningar.
 
 #### Ange uppräkning {#set-enumeration}
 
-Med **enum** -egenskapen kan du definiera en fast uppräkning som används när listan med möjliga värden är känd i förväg.
+Med egenskapen **enum** kan du definiera en fast uppräkning som används när listan med möjliga värden är känd i förväg.
 
-Attributet **enum** refererar till definitionen av en uppräkningsklass som är ifylld i schemat utanför huvudelementet.
+Attributet **enum** refererar till definitionen för en uppräkningsklass som är ifylld i schemat utanför huvudelementet.
 
 Uppräkningar gör att användaren kan välja ett värde i en nedrullningsbar lista i stället för att ange värdet i ett vanligt inmatningsfält:
 
@@ -394,7 +394,7 @@ Exempel på en uppräkningsdeklaration i dataschemat:
 </enumeration>
 ```
 
-En uppräkning deklareras utanför huvudelementet via **`<enumeration>`** elementet.
+En uppräkning deklareras utanför huvudelementet via elementet **`<enumeration>`**.
 
 Uppräkningsegenskaperna är följande:
 
@@ -403,18 +403,18 @@ Uppräkningsegenskaperna är följande:
 * **namn**: Uppräkningens namn.
 * **standard**: uppräkningens standardvärde.
 
-Uppräkningsvärdena deklareras i **`<value>`** elementet med följande attribut:
+Uppräkningsvärdena deklareras i **`<value>`**-elementet med följande attribut:
 
 * **namn**: Namnet på det internt lagrade värdet.
 * **label**: etikett som visas via det grafiska gränssnittet.
 
-#### dbenum-uppräkning {#dbenum-enumeration}
+#### dbenum enumeration {#dbenum-enumeration}
 
-* Med egenskapen **dbenum** kan du definiera en uppräkning vars egenskaper liknar egenskaperna för egenskapen **enum** .
+* Med egenskapen **dbenum** kan du definiera en uppräkning vars egenskaper liknar egenskaperna för egenskapen **enum**.
 
    Attributet **name** lagrar emellertid inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
 
-   Värdena definieras via **[!UICONTROL Administration>Enumerations]** noden.
+   Värdena definieras via noden **[!UICONTROL Administration>Enumerations]**.
 
    Den här uppräkningen används till exempel för att ange kampanjens karaktär.
 
@@ -447,9 +447,9 @@ Här är vårt exempelschema med egenskaperna ifyllda:
 
 En samling är en lista med element med samma namn och samma hierarkiska nivå.
 
-Med det **obundna** attributet med värdet &quot;true&quot; kan du fylla i ett samlingselement.
+Med attributet **unbound** med värdet &quot;true&quot; kan du fylla i ett samlingselement.
 
-**Exempel**: definition av samlingselementet **`<group>`** i schemat.
+**Exempel**: definition av  **`<group>`** samlingselementet i schemat.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -464,7 +464,7 @@ Med projektion av XML-innehållet:
 <group label="Group2"/>
 ```
 
-## Referera med XPath {#referencing-with-xpath}
+## Refererar med XPath {#referencing-with-xpath}
 
 XPath-språket används i Adobe Campaign för att referera till ett element eller attribut som tillhör ett dataschema.
 
@@ -475,17 +475,17 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 **Exempel**:
 
 * **@email**: markerar e-postmeddelandet,
-* **location/@city**: markerar attributet &quot;city&quot; under **`<location>`** elementet
+* **location/@city**: väljer attributet &quot;city&quot; under  **`<location>`** elementet
 * **../@email**: väljer e-postadressen från det överordnade elementet i det aktuella elementet
-* **grupp`[1]/@label`**: väljer attributet &quot;label&quot; som är underordnat det första **`<group>`** mängdelementet
-* **grupp`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat elementet och innehåller värdet &quot;test1&quot; **`<group>`**
+* **grupp`[1]/@label`**: väljer attributet &quot;label&quot; som är underordnat det första  **`<group>`** mängdelementet
+* **grupp`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat  **`<group>`** elementet och innehåller värdet &quot;test1&quot;
 
 >[!NOTE]
 >
 >En ytterligare begränsning läggs till när banan korsar ett underelement. I det här fallet måste följande uttryck placeras inom hakparenteser:
 >
->* **location/@city** is not valid; använd **`[location/@city]`**
->* **`[@email]`** och **@email** är likvärdiga
+>* **location/@** cityis not valid; använd  **`[location/@city]`**
+>* **`[@email]`** och  **@** emailare-motsvarighet
 
 >
 
@@ -493,7 +493,7 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:
 
-* **@kön+1**: lägger till 1 i innehållet i **könsattributet** ,
+* **@kön+1**: lägger till 1 i innehållet i  **** genderattributet,
 * **@email + &#39;(&#39;+@created+&#39;)&#39;**: skapar en sträng genom att använda värdet för den e-postadress som lagts till i skapandedatumet mellan parenteser (för strängtypen anger du konstanten inom citattecken).
 
 Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
@@ -510,9 +510,9 @@ Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i 
 
 ## Bygga en sträng via beräkningssträngen {#building-a-string-via-the-compute-string}
 
-En **beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en post i en tabell som är associerad med schemat. **Beräkningssträngen** används huvudsakligen i det grafiska gränssnittet för att visa etiketten för en markerad post.
+En **beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en post i en tabell som är associerad med schemat. **Beräkningssträngen** används främst i det grafiska gränssnittet för att visa etiketten för en markerad post.
 
-Beräkningssträngen **definieras via** **`<compute-string>`** elementet under huvudelementet i dataschemat. Ett **expr** -attribut innehåller ett XPath-uttryck för att beräkna visningen.
+**Beräkningssträngen** definieras via elementet **`<compute-string>`** under huvudelementet i dataschemat. Ett **expr**-attribut innehåller ett XPath-uttryck för att beräkna visningen.
 
 **Exempel**: beräkningssträng för mottagartabellen.
 
@@ -525,7 +525,7 @@ Beräkningssträngen **definieras via** **`<compute-string>`** elementet under h
 </srcSchema>
 ```
 
-Resultat av beräknad sträng för en mottagare: **Doe John (john.doe@aol.com)**
+Resultat av beräknad sträng för en mottagare: **Gör John (john.doe@aol.com)**
 
 >[!NOTE]
 >
