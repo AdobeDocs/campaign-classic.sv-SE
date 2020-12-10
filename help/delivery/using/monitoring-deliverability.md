@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 2%
@@ -26,34 +26,34 @@ Använd de funktioner som Adobe Campaign erbjuder för att övervaka plattformen
 Leveranspaketet ger dig tillgång till:
 
 * Teknisk spårningsrapport för den dagliga leveransen (teknisk övervakning). Med den här rapporten, som är tillgänglig på begäran, kan du få en daglig rapport via e-post till en angiven adress. Mer information får du om du kontaktar Adobe kundtjänst.
-* Återgivningsrapporten [för](../../delivery/using/inbox-rendering.md) Inkorgen som gör att du kan förhandsgranska meddelanden på större e-postklienter för att skanna innehåll och anseende.
+* Återgivningsrapporten [Inkorgen](../../delivery/using/inbox-rendering.md) som gör att du kan förhandsgranska meddelanden på större e-postklienter för att skanna innehåll och anseende.
 * Översikt över meddelandekvalitet (inkorg, skräppost).
 
 Du kan även använda följande verktyg:
 
-* Rapporten innehåller en översikt över hela plattformens dataflöde under en viss period. **[!UICONTROL Delivery throughput]** Mer information finns i [det här avsnittet](../../reporting/using/global-reports.md#delivery-throughput).
-* Rapporten **[!UICONTROL Technical deliverability monitoring]** innehåller ett antal kvalitetsindikatorer för er plattform. Mer information finns i [det här avsnittet](#technical-deliverability-monitoring).
+* Rapporten **[!UICONTROL Delivery throughput]** ger dig en översikt över hela plattformens genomströmning under en viss period. Mer information finns i [det här avsnittet](../../reporting/using/global-reports.md#delivery-throughput).
+* **[!UICONTROL Technical deliverability monitoring]**-rapporten innehåller ett antal kvalitetsindikatorer för leveransen för din plattform. Mer information finns i [det här avsnittet](#technical-deliverability-monitoring).
 * Varje leverans genererar en utsändningsstatistikrapport för olika internetleverantörer. Den visar vissa data- och anseendemått som kan påverka leveransförmågan, inklusive följande tal:
    * **[!UICONTROL Hard bounces]** ange datakvalitet. Talet ska vara mindre än 2%.
    * **[!UICONTROL Soft bounces]** ange anseende. Talet får inte vara högre än 10 % för någon ISP.
 
-   For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
-* Mer generellt ger [kontrollpanelen](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) dig tillgång till:
-   * En sammanfattning [av](../../delivery/using/monitoring-a-delivery.md#delivery-summary)leveransen, som visar hur detaljerad sändningen är och [hur många meddelanden](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) som ska skickas, behandlas och skickas utan fel.
-   * Leveransloggar och [leveranshistorik](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), som visar vilket mål som har uteslutits och varför.
-   * loggarna [för](../../delivery/using/monitoring-a-delivery.md#tracking-logs)spårning, som visar spårningsinformation som öppningar och klick.
+   Mer information finns i avsnittet [Leveransstatistik](../../reporting/using/global-reports.md#delivery-statistics).
+* Mer generellt ger [kontrollpanelen](../../delivery/using/about-delivery-monitoring.md) åtkomst till:
+   * [leveranssammanfattning](../../delivery/using/delivery-dashboard.md#delivery-summary), som visar hur detaljerad sändningen är och hur många meddelanden som ska skickas, bearbetas och skickas.
+   * Leveransloggarna och historiken [som visar vilket mål som har uteslutits och varför.](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
+   * [spårningsloggar](../../delivery/using/delivery-dashboard.md#tracking-logs) som visar spårningsinformation som öppningar och klick.
 
 ## Riktlinjer för övervakning {#monitoring-guidelines}
 
 Här följer ytterligare riktlinjer för leveransövervakning:
 
-* Kontrollera regelbundet [leveransflödet](../../reporting/using/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den överensstämmer med den ursprungliga konfigurationen.
-* Kontrollera att [återförsök](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) är korrekt inställda (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
-* Kontrollera regelbundet att [studspostlådan](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
+* Kontrollera regelbundet [leveransflödet](../../reporting/using/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den stämmer överens med den ursprungliga konfigurationen.
+* Kontrollera att [återförsök](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) är rätt inställda (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
+* Kontrollera regelbundet att postlådan [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
 * Kontrollera varje leveransflöde för att säkerställa att det stämmer överens med leveransinnehållets giltighet (t.ex. &quot;flash sales&quot; ska levereras på några minuter, inte dagar).
-* När du använder [vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)bör du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
-* Kontrollera att antalet fel och nya [karantän](../../delivery/using/understanding-quarantine-management.md) stämmer överens med andra leveranser.
-* Läs noggrant igenom [leveransloggarna](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) för att kontrollera vilka typer av fel som markeras (blockeringslista, DNS-problem, antispam-regler osv.).
+* När du använder [vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
+* Kontrollera att antalet fel och nya [karantäner](../../delivery/using/understanding-quarantine-management.md) stämmer överens med andra leveranser.
+* Läs noga igenom [leveransloggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, antispam-regler osv.).
 
 ## Signalspam {#signal-spam}
 
@@ -65,13 +65,13 @@ Signal Spam är en fransk tjänst som erbjuder anonymiserad rapportering av feed
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) är en kompletterande övervakningslösning för de interna verktygen för Adobe-leverans som tillhandahåller IP- och domänbaserade blockeringslista samt anseendeindikatorer.
+[250](https://250ok.com/) okis är en kompletterande övervakningslösning för de interna verktygen för Adobe-leverans som tillhandahåller IP- och domänbaserade blockeringslista, och för anseendeindikatorer.
 
 Den information som tillhandahålls är i realtid, vilket möjliggör en proaktiv hjälp.
 
 ## Övervakningsrapport för teknisk leverans {#technical-deliverability-monitoring}
 
-Den tekniska leveransövervakningsrapporten uppdateras dagligen och är tillgänglig genom att gå till **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** och klicka på **[!UICONTROL Technical monitoring]** länken på fliken Adobe Campaign **[!UICONTROL Home]** . Det innehåller ett antal kvalitetsindikatorer för er plattform.
+Den tekniska leveransövervakningsrapporten uppdateras dagligen och är tillgänglig genom att gå till **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** och klicka på länken **[!UICONTROL Technical monitoring]** på fliken Adobe Campaign **[!UICONTROL Home]**. Det innehåller ett antal kvalitetsindikatorer för er plattform.
 
 Dessa indikatorer uppdateras dagligen kl. 9.00.
 
@@ -91,7 +91,7 @@ Följande indikatorer används i rapporten:
 
 * **[!UICONTROL IP and RBL domain]** (Blackutjämlista i realtid): En lista över IP-adresser och domäner som flaggats av organisationer i blockeringslista för dåligt sändande rykte. Listorna hanteras av särskilda organisationer som Spamhaus, Spampolis, SURBL/URIBL osv. Adobe Campaign bearbetar för närvarande kontroller mot RBL:er som har en betydande påverkan på leveransen. Dessa URL:er återspeglar avsändarens anseende och kan refereras av Internet-leverantörer innan de godkänner att få dina e-postmeddelanden.
 
-* **[!UICONTROL SNDS]** (Data Services för smarta nätverk): En [Windows Live Hotmail-tjänst mot skräppost](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail är den enda Internet-leverantör som tillhandahåller den här typen av information. Benchmark-poängen är ett grönt filterresultat, en klagofrekvens på mindre än 0,1 % och noll skräppostsvällningar.
+* **[!UICONTROL SNDS]** (Data Services för smarta nätverk): En  [Windows Live Hotmail-tjänst mot skräppost](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail är den enda Internet-leverantör som tillhandahåller den här typen av information. Benchmark-poängen är ett grönt filterresultat, en klagofrekvens på mindre än 0,1 % och noll skräppostsvällningar.
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
