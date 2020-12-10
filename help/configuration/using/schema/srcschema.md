@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Ingen
 
 ## Använd och använd {#use-and-context-of-use-9}
 
-Schemapresentation är tillgänglig i [Om schemareferens](../../configuration/using/about-schema-reference.md) och [Schemastruktur](../../configuration/using/schema-structure.md).
+Schemapresentation är tillgänglig i [Om schemareferens](../../../configuration/using/about-schema-reference.md) och [Schemastruktur](../../../configuration/using/schema-structure.md).
 
 ## Attributbeskrivning {#attribute-description-14}
 
