@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 854d509315f1d8585cb041575908df896468cc77
+source-git-commit: 1b498e9f47dc3cfc108ee182829b83442819629d
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2215'
 ht-degree: 97%
 
 ---
@@ -711,6 +711,23 @@ ht-degree: 97%
       + [Schemastruktur](configuration/using/schema-structure.md)
       + [Databaskartläggning](configuration/using/database-mapping.md)
       + [Element och attribut](configuration/using/elements-and-attributes.md)
+         + [Attribut](configuration/using/schema/attribute.md)
+         + [Beräkningssträng](configuration/using/schema/compute-string.md)
+         + [Villkor](configuration/using/schema/condition.md)
+         + [Databasindex](configuration/using/schema/db-index.md)
+         + [Element](configuration/using/schema/element.md)
+         + [Uppräkning](configuration/using/schema/enumeration.md)
+         + [Hjälp](configuration/using/schema/help.md)
+         + [Hörn](configuration/using/schema/join.md)
+         + [Nyckel](configuration/using/schema/key.md)
+         + [Nyckelfält](configuration/using/schema/keyfield.md)
+         + [Metod](configuration/using/schema/method.md)
+         + [Metoder](configuration/using/schema/methods.md)
+         + [Param](configuration/using/schema/param.md)
+         + [Parametrar](configuration/using/schema/parameters.md)
+         + [SrcSchema](configuration/using/schema/srcschema.md)
+         + [Sysfilter](configuration/using/schema/sysfilter.md)
+         + [Värde](configuration/using/schema/value.md)
    + Redigera scheman{#editing-schemas}
       + [Om schemautgåva](configuration/using/about-schema-edition.md)
       + [Datascheman](configuration/using/data-schemas.md)
