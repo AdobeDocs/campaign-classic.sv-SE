@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 4%
@@ -25,11 +25,11 @@ Börja med att skapa en ny leverans.
 
 ## Skicka meddelanden på iOS {#sending-notifications-on-ios}
 
-1. Välj **[!UICONTROL Deliver on iOS]** leveransmall.
+1. Välj leveransmallen **[!UICONTROL Deliver on iOS]**.
 
    ![](assets/nmac_delivery_ios_1.png)
 
-1. Om du vill definiera målet för meddelandet klickar du på **[!UICONTROL To]** länken och sedan på **[!UICONTROL Add]**.
+1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
 
    ![](assets/nmac_delivery_ios_2.png)
 
@@ -37,11 +37,11 @@ Börja med att skapa en ny leverans.
    >
    >Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](../../delivery/using/steps-defining-the-target-population.md).
    >
-   >Mer information om användningen av personaliseringsfält finns i [Om personalisering](../../delivery/using/about-personalization.md).
+   >Mer information om användning av anpassningsfält finns i [Om personalisering](../../delivery/using/about-personalization.md).
    >
-   >Mer information om hur du tar med en startvärdeslista finns i [Om startadresser](../../delivery/using/about-seed-addresses.md).
+   >Mer information om att ta med en startvärdeslista finns i [Om startadresser](../../delivery/using/about-seed-addresses.md).
 
-1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** den tjänst som är relevant för ditt mobilprogram (i det här fallet Neotrips) och välj sedan iOS-versionen av programmet.
+1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan iOS-versionen av programmet.
 
    ![](assets/nmac_delivery_ios_3.png)
 
@@ -51,11 +51,11 @@ Börja med att skapa en ny leverans.
 
    >[!NOTE]
    >
-   >Läget **tyst överföring** är tillgängligt från iOS 7. Detta gör att ett tyst meddelande kan skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
+   >Läget **Tyst push** är tillgängligt från iOS 7. Detta gör att ett tyst meddelande kan skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
 
-1. I **[!UICONTROL Title]** fältet anger du etiketten för titeln som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet på **title** -parametern för iOS-meddelandenyttolasten.
+1. I fältet **[!UICONTROL Title]** anger du etiketten för titeln som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet för parametern **title** för iOS-meddelandenyttolasten.
 
-1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **undertitle** -parametern i iOS-meddelandenyttolasten). Mer information finns i avsnittet [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för parametern **subtitle** för iOS-meddelandenyttolasten). Se avsnittet [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Ange sedan **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
 
@@ -63,24 +63,24 @@ Börja med att skapa en ny leverans.
 
    >[!NOTE]
    >
-   >**[!UICONTROL Badge]** och **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
+   >**[!UICONTROL Badge]** och  **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
 
-1. Klicka på **[!UICONTROL Insert emoticon]** ikonen om du vill infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [Anpassa uttryckslistan](../../delivery/using/customizing-emoticon-list.md)
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [anpassa uttryckslistan](../../delivery/using/customizing-emoticon-list.md)
 
-1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**fältet action_loc_key** i nyttolasten). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apples dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
-1. I **[!UICONTROL Play a sound]** fältet väljer du vilket ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** fält för nyttolasten). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apple-dokumentationen](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1).
+1. I fältet **[!UICONTROL Play a sound]** väljer du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
 
    >[!NOTE]
    >
-   >Ljud måste inkluderas i programmet och definieras när tjänsten skapas. Se [Konfigurera ett externt iOS-konto](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
+   >Ljud måste inkluderas i programmet och definieras när tjänsten skapas. Se [Konfigurera iOS-externt konto](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
 
-1. I **[!UICONTROL Application variables]** fältet anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+1. I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
    >[!NOTE]
    >
    >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-1. Klicka på fliken för att förhandsgranska meddelandet när meddelandet har konfigurerats **[!UICONTROL Preview]** .
+1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
 
    ![](assets/nmac_intro_2.png)
 
@@ -95,20 +95,20 @@ Använd samma process som för e-postleveranser om du vill skicka ett korrektur 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
 * [Kantlinjer för push-meddelanden](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md)
+* [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
 * [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
 
 ## Skicka meddelanden på Android {#sending-notifications-on-android}
 
-1. Börja med att välja **[!UICONTROL Deliver on Android (android)]** leveransmall.
+1. Börja med att välja leveransmallen **[!UICONTROL Deliver on Android (android)]**.
 
    ![](assets/nmac_delivery_android_1.png)
 
-1. Om du vill definiera målet för meddelandet klickar du på **[!UICONTROL To]** länken och sedan på **[!UICONTROL Add]**.
+1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
 
    ![](assets/nmac_delivery_android_2.png)
 
-1. Välj **[!UICONTROL Subscribers of an Android mobile application]** den tjänst som är relevant för ditt mobilprogram (i det här fallet Neotrips) och välj sedan Android-versionen av programmet.
+1. Välj **[!UICONTROL Subscribers of an Android mobile application]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan Android-versionen av programmet.
 
    ![](assets/nmac_delivery_android_3.png)
 
@@ -116,15 +116,15 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
    ![](assets/nmac_delivery_android_4.png)
 
-1. Klicka på **[!UICONTROL Insert emoticon]** ikonen om du vill infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [Anpassa uttryckslistan](../../delivery/using/defining-interactive-content.md)
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [anpassa uttryckslistan](../../delivery/using/defining-interactive-content.md)
 
-1. I **[!UICONTROL Application variables]** fältet anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+1. I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
    >[!NOTE]
    >
    >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information finns i: [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-1. Klicka på fliken för att förhandsgranska meddelandet när meddelandet har konfigurerats **[!UICONTROL Preview]** .
+1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
 
    ![](assets/nmac_intro_1.png)
 
@@ -138,5 +138,5 @@ Den detaljerade processen för att validera och skicka en leverans presenteras i
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
 * [Kantlinjer för push-meddelanden](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Övervaka en leverans](../../delivery/using/monitoring-a-delivery.md)
+* [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
 * [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
