@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '211'
 ht-degree: 3%
 
 ---
 
 
-# `<join>` element  {#join--element}
+# join element {#join--element}
 
 ## Innehållsmodell {#content-model-7}
 
