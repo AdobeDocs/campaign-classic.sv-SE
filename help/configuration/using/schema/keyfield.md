@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 8%
+source-wordcount: '101'
+ht-degree: 7%
 
 ---
 
 
-# `<keyfield>` element  {#keyfield--element}
+# nyckelfältselement {#keyfield--element}
 
 ## Innehållsmodell {#content-model-9}
 
