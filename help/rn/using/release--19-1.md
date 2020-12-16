@@ -7,17 +7,49 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: dc345681e8d0085b4366be0afa2d8207170c716f
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 7%
+source-wordcount: '3061'
+ht-degree: 18%
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Version 19.1.7 – build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/limited_2.png) Version 19.1.8 – build 9039 {#release-19-1-8-build-9039}
+
+_16 december 2020_
+
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll:  uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+
+**Förbättringar**
+
+* Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+* Integreringsautentisering med utlösare som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline har ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
+* När stödet för iOS APN:er för det äldre binära protokollet har upphört, uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
+* Ett problem som orsakade inaktivering av SMPP-anslutningen efter ett anslutningsfel har korrigerats, vilket förhindrar att andra SMS-leveranser skickas och leder till prestandaproblem.
+* Korrigerade ett problem som visade felaktiga procentvärden när en beskrivande rapport genererades via en arbetsflödesaktivitet. (NEO-14314)
+* Korrigerade ett leveransförberedelseproblem när alternativet **Exkludera dubblettadress under leverans** avmarkerades. (NEO-13240)
+* Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
+* Korrigerade ett problem i arbetsflöden när poster hämtades från en extern databas och infogades i databasen i Campaign. (NEO-26359)
+* Korrigerade ett problem med serverkraschar genom att förhindra minnesfel när uttrycksanalysen rensades.
+* Korrigerade ett fel som förhindrade funktionen **NoNull** från att arbeta i Oracle-databaser efter uppgradering till build 9032. (NEO-26488)
+* Korrigerade ett problem som uppstod när man redigerade en beskrivning av en kampanjmall som hindrade knappen **Spara** från att visas när symboler såsom japanska tecken kopierades och klistrades in. (NEO-27071)
+* Korrigerade ett problem som förhindrade att beskrivningen av en kampanj eller kampanjmall sparades när användaren klickade utanför fönstret innan denne klickade på knappen **Spara**. (NEO-27449)
+* Korrigerade ett problem med proxykonfigurationen som förhindrade dig från att logga in på Adobe Campaign efter den senaste Windows 10-uppdateringen. (NEO-27813)
+* Korrigerade ett problem relaterat till hanteringen av tomma rader i loggfiler, vilket orsakade fel i MTA-processbeteendet och ledde till prestandaförsämringar vid leveransen.
+
+**Tekniska utvecklingar**
+
+Tomcat har uppdaterats från version 7 (7.0.103) till version 8 (8.5.57). Katalogen `tomcat-7` ersätts med en `tomcat-8`-katalog. I Windows har nu _iis_neolane_setup.vbs_ och _apache_neolane.conf_ installerats i katalogen `conf` (i stället för i `tomcat-7/conf` som tidigare). I Linux finns nu _apache_neolane.conf_ installerat i katalogen `conf`.
+
+I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar paketet 19.1.8. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
+
+## ![](assets/do-not-localize/red_2.png) Version 19.1.7 – build 9036 {#release-19-1-7-build-9036}
 
 _15 september 2020_
 
@@ -26,28 +58,28 @@ _15 september 2020_
 * Förbättrad användning av nlsrvmod för Apache 2.4-trådar för att korrigera nlsrvmod-krascher.
 * Ett problem har korrigerats vid användning av filöverföringsaktiviteten med ett externt Azure-konto och en SSL-kryptering. Anslutningen gjordes via HTTP i stället för HTTPS. (NEO-26720)
 * Ett problem med url-cachemekanismen som inte hämtade etiketten eller kategorin har korrigerats.
-* Korrigerade ett problem som ledde till att sidans URL:er speglades på ett felaktigt sätt definierades i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
-* Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre användes (iOS-meddelanden).
+* Korrigerade ett problem som ledde till att spegelsidans URL:er definierades på ett felaktigt sätt i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
+* Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre används (iOS-meddelanden).
 * Korrigerade ett regressionsproblem som förhindrade efter publicering efter efteruppgradering.
 * Korrigerade en regression med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
-* Ett problem som tog bort kodningsparametervärdet vid omdirigering från en spårnings-URL (påverkar japanska tecken) har korrigerats. (NEO-25637)
+* Korrigerade ett problem som raderade kodning av parametervärde vid omdirigering från en spårnings-URL (inverkan på japanska tecken). (NEO-25637)
 * Korrigerade ett problem som medförde att osignerade länkar från anpassade domäner blockerades när de borde tillåtas. (NEO-25210)
-* Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde och orsakade att arbetsflödet misslyckades. (NEO-25194)
+* Korrigerade en regression som påverkade beräknade fält i ett arbetsflöde och orsakade att arbetsflödet slutade fungera. (NEO-25194)
 * Korrigerade ett kompatibilitetsproblem med Microsoft Dynamics (från version 8.2) som kunde förhindra att vissa API-anrop kördes (RetrieveAllEntities). (NEO-24528)
-* Ett regressionsproblem som förhindrade anslutningen till en Campaign Standard-instans (felaktig hantering av FOH/FOH2-anslutningen) har korrigerats när funktionen ACS Connector användes. (NEO-23433)
-* Ett regressionsproblem i databasanslutningen som gjorde att webbservern hela tiden startades om på grund av ett databaskodningsproblem har åtgärdats. Detta kan leda till överkonsumtion. (NEO-23264)
-* Korrigerade ett problem med arbetsflödet för databasrensning som kunde misslyckas på grund av ohanterad datakälla. (NEO-23160 och NEO-23364)
-* Rensningsarbetsflödet tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
-* Efter växlingen till den [nya sekvens-ID-mekanismen](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
+* Korrigerade ett regressionsproblem vid användning av ACS Connector-funktionen som förhindrade anslutningen till en instans i Campaign Standard (felaktig hantering av FOH/FOH2-anslutningen). (NEO-23433)
+* Korrigerade ett regressionsproblem i databasanslutningen som orsakade att webbservern hela tiden startades om på grund av ett problem med databaskodningen. Detta kan leda till överkonsumtion. (NEO-23264)
+* Korrigerade ett problem med arbetsflödet för databasrensning som kunde sluta fungera på grund av en ohanterad datakälla. (NEO-23160 och NEO-23364)
+* Arbetsflödet för rensning tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
+* Efter bytet till [mekanismen för nytt sekvens-ID](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
 * Korrigerade ett problem som förhindrade att e-post skickades när det fanns Javascript-kod utanför HTML-innehållstaggen. (NEO-18628)
 * Ett problem som förhindrade att spårningsindikatorerna för transaktionsmeddelanden uppdaterades i arbetsflödet för spårning har åtgärdats. (NEO-17770)
 * Förbättrade prestanda för guiden Databasuppdatering för att göra färre SQL-satser för att optimera svarstiden.
-* Ett kraschproblem som kunde inträffa när spårade URL:er i ett e-postmeddelande avkontrollerades från fliken **Textinnehåll** på grund av en variabel som inte initierats har åtgärdats. (NEO-13545)
+* Korrigerade ett kraschproblem i konsolen som kunde inträffa när spårade URL:er i ett e-postmeddelande avkontrollerades från fliken **Textinnehåll** på grund av en variabel som inte initierats. (NEO-13545)
 * Korrigerade ett problem som förhindrade dig från att överföra filer i en filöverföringsaktivitet med ett externt Azure Blob Storage-konto på grund av en oinitierad variabel (m_pCurlReader). (NEO-13717)
-* Korrigerade ett efteruppgraderingsfel som stängde av Apache och webbservern innan webbprogrampubliceringen. (NEO-27155)
-* Korrigerade en regression som ledde till att en felaktig tidszon plockades när en tid angavs i en **arbetsflödesaktivitet i schemaläggaren** .
+* Korrigerade ett problem med en efteruppgradering som stängde av Apache och webbservern innan webbapplikationens publicering. (NEO-27155)
+* Korrigerade en regression som ledde till att en felaktig tidszon plockades när tiden angavs i en **schemaläggaraktivitet**.
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) Version 19.1.6 – build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -71,7 +103,7 @@ _13 augusti 2019_
 
 * Korrigerade ett problem med SQL-satsen SELECT COUNT som kördes på standarddatabasen i stället för FDA-databasen under dataextraheringen i datahanteringsaktiviteten.
 * För att förbättra kundens infrastruktur finns nu en SFTP-proxydeklaration tillgänglig i serverkonfigurationsfilen.
-* Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)** . (NEO-12213)
+* Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)**. (NEO-12213)
 * Ett problem med installationen av paketet midEmitter via kommandoraden har korrigerats.
 * Ett nytt autentiseringsalternativ har lagts till som stöd för OAuth-autentiseringsuppgifter i AC-anslutningen med Microsoft Dynamics. (NEO-11982)
 * Korrigerade ett problem med UUID-hantering (Unik universell identifierare) som gjorde att arbetsflödesaktiviteterna för fråga och data misslyckades med Hive FDA.
@@ -110,26 +142,26 @@ _30 maj 2019_
 <table> 
  <thead> 
   <tr> 
-   <th> Funktionalitet<br /> </th> 
+   <th> Funktion<br /> </th> 
    <th> Beskrivning<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Kontrollpanelen<br /> </td> 
-   <td> <p>Om du vill öka effektiviteten i ditt arbete som Admin-användare hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagringsutrymmet, lägga till IP-adresser i tillåtelselista och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud idag</a>).</p> <p>Mer information hittar du i den <a href="https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/control-panel/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
+   <td> <p>Om du vill öka effektiviteten i ditt arbete som Admin-användare hanterar du inställningarna för dina SFTP-servrar genom att övervaka lagringsutrymmet, lägga till IP-adresser i tillåtelselista och installera SSH-nycklar för varje instans. Kontrollpanelen är endast tillgänglig för kunder som har AWS som värd idag (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">inloggning via Experience Cloud i dag</a>).</p> <p>Mer information hittar du i den <a href="https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/control-panel/control-panel-overview.html">instruktionsvideon</a>. </p><p>Obs! Du behöver inte uppgradera till den senaste Campaign-versionen för att komma åt Kontrollpanelen.</p> </td> 
   </tr> 
     <tr> 
    <td> Verifieringskedja<br /> </td> 
-   <td> <p>Som administratör kan du öka produktiviteten genom att övervaka och hantera ändringar som görs i Adobe Campaign Classic-instansen. Granskningsspårningen loggar åtgärder som har gjorts i källscheman, arbetsflöden och alternativ. Du kan snabbt se om ett element har skapats, ändrats eller tagits bort.</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
+   <td> <p>Som administratör kan du öka produktiviteten genom att övervaka och hantera ändringar som görs i Adobe Campaign Classic-instansen. Granskningsspårningen loggar åtgärder som har gjorts i källscheman, arbetsflöden och alternativ. Du kan snabbt se om ett element har skapats, ändrats eller tagits bort.</p><p>Mer information finns i <a href="../../production/using/audit-trail.md">den detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">instruktionsvideon</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robuskhet och skalbarhet<br /> </td> 
-   <td> En rad förbättringar har lagts till i Campaign Classic. Förbättringar av säkerhet, stabilitet och skalbarhet visas nedan.<br /> </td> 
+   <td> En rad förbättringar har lagts till i Campaign Classic. Förbättringar av säkerhetsritning, robusthet och skalbarhet visas nedan.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uppdatering av kompatibilitetsmatris<br /> </td> 
-   <td> Med den nya versionen har Adobe Campaign nu stöd för följande databassystem. Refer to the <a href="https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html">Compatibility Matrix</a>.<br /> 
+   <td> Med den nya versionen har Adobe Campaign nu stöd för följande databassystem. Se <a href="https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html">kompatibilitetsmatrisen</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -143,7 +175,7 @@ _30 maj 2019_
 
 **Säkerhetsförbättringar**
 
-* Av säkerhetsskäl kan du inte längre infoga godtyckliga kommandon när du använder alternativet **[!UICONTROL Pre-process the file]** i en **[!UICONTROL Data loading (file)]** arbetsflödesaktivitet. Nu finns en nedrullningsbar lista där du kan välja mellan tre alternativ: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) eller **[!UICONTROL Decrypt]** (gpg). XtkSecurity_Disable_Preproc-säkerhetsflaggan har lagts till. För nya kunder anges värdet 0. För befintliga kunder kommer detta alternativ att anges till 1 vid uppgraderingen för att behålla det tidigare beteendet. Refer to this [section](../../workflow/using/data-loading--file-.md).
+* Av säkerhetsskäl kan du inte längre infoga godtyckliga kommandon när du använder alternativet **[!UICONTROL Pre-process the file]** i en **[!UICONTROL Data loading (file)]**-arbetsflödesaktivitet. Nu finns en nedrullningsbar lista där du kan välja mellan tre alternativ: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) eller **[!UICONTROL Decrypt]** (gpg). XtkSecurity_Disable_Preproc-säkerhetsflaggan har lagts till. För nya kunder anges värdet 0. För befintliga kunder kommer detta alternativ att anges till 1 vid uppgraderingen för att behålla det tidigare beteendet. Se det här [avsnittet](../../workflow/using/data-loading--file-.md).
 * Ett problem med lösenordssynlighet som uppstod när anslutningen till ett externt FDA-konto testades utan tidszon har åtgärdats.
 * PDFBox-biblioteket har tagits bort.
 * Tomcat har uppdaterats till version 7.0.93.
@@ -159,7 +191,7 @@ _30 maj 2019_
 
 **Förbättringar av säkerhetsfunktioner, stabilitet och skalbarhet**
 
-* Lifespan - XtkNewId-sekvensoptimering: de mest använda tabellerna har flyttats från xtkNewId-sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - XtkNewId-sekvensoptimering: de mest använda tabellerna har flyttats från xtkNewId-sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA över HTTP v2: FDA över HTTP-protokollet används ofta vid hybriddriftsättningar, särskilt vid hämtning av breda loggar och leveransförberedelser. Robusiteten har förbättrats för att undvika nätverksproblem och eventuella fel som hämtning eller överföring av data. Detta kräver att byggen i båda ändar av anslutningen är uppdaterade, annars kommer det gamla protokollet fortfarande att användas.
 * Arbetsflöde för spårning: spårningsarbetsflödets tillförlitlighet har förbättrats. Flera problem med att spåra logginfogningar/uppdateringar och anpassning av URL-spårning har åtgärdats. Dessutom upptäcker arbetsflödet nu loggproblem som kan leda till fel och stoppa arbetsflödet. Dessa problem har nu ignorerats och bearbetats inte.
 * Rensningsarbetsflöde: rensningsarbetsflödet har förbättrats för att undvika potentiella fel och stopp. Detta optimerar databasens storlek och prestanda.
@@ -174,7 +206,7 @@ _30 maj 2019_
 
 * Push-meddelanden: har vi nu stöd för alternativet Tråd-ID för iOS-push.
 * Förbättrad hantering av index för långa namn, vilket kan orsaka problem efter uppgraderingen.
-* Om publiceringsläget är inställt på **[!UICONTROL None]** i distributionsguiden, loggas ett fel och analysen stoppas nu när analysen av en detaljerad leverans analyseras: &quot;Publiceringsläget är inställt på &#39;none&#39;: Det går inte att bädda in bilden. Bilderna visas inte på telefonen.&quot; (NEO-12208)
+* Om publiceringsläget är inställt på **[!UICONTROL None]** i distributionsguiden loggas ett fel och analysen stoppas nu när analysen av en detaljerad leverans analyseras: &quot;Publiceringsläget är inställt på &#39;none&#39;: Det går inte att bädda in bilden. Bilderna visas inte på telefonen.&quot; (NEO-12208)
 * Sändningshanteringen har förbättrats för transaktionsmeddelanden. När utsändningsloggar synkroniseras från körningsinstansen till kontrollinstansen uppdateras fältet @lastModified till systemets aktuella datum. Alternativet MC_Update_BlLastModified har lagts till för kontrollinstanser. True betyder att det aktuella datumet kommer att användas för kontrollinstansen (standardbeteende). Falskt innebär att vi använder körningsinstansens utsändningsdatum @lastModified. (NEO-12579)
 * Index lades till i kupongtemporära tabeller för att optimera leveransen. (NEO-12437)
 * I Analytics-integreringen är det nu tillåtet att hämta AAM segmentdata med tecknet %. (NEO-12025)
@@ -202,10 +234,10 @@ _30 maj 2019_
 * Ett problem med användningen av teman i erbjudandehanteringen har korrigerats. (NEO-11804)
 * Korrigerade ett prestandaproblem när push-meddelanden skickades. (NEO-11787)
 * Ett problem har korrigerats vid förhandsgranskning av utgående XML- eller CSV-fil i offerthantering för direktreklam. (NEO-11290)
-* Ett problem har korrigerats vid installation av paketet **Hantera sociala nätverk** (social marknadsföring). (NEO-12081)
+* Ett problem har korrigerats när paketet **Hantera sociala nätverk** (social marknadsföring) installerades. (NEO-12081)
 * Korrigerade ett problem som hindrade dig från att ta bort ett webbprogram även om du hade rätt åtkomstbehörighet. (NEO-12072)
 * Korrigerade ett problem som kunde göra att vissa värden skrevs över vid export och sedan import av ett objekt via XML. Alternativet XtkExport_IncludeDefaultValues har lagts till. Om du anger True (standardbeteende) exporteras alla värden. Om värdet är Falskt skrivs ändringarna över med standardvärdet. (NEO-11979)
-* Korrigerade ett problem som gjorde att arbetsflödesaktiviteten misslyckades när en anrikningsaktivitet lades till efter en fråga. **[!UICONTROL Alert]** (NEO-12132)
+* Korrigerade ett problem som gjorde att arbetsflödesaktiviteten **[!UICONTROL Alert]** misslyckades när en anrikningsaktivitet lades till efter en fråga. (NEO-12132)
 * Korrigerade ett fel i Oracle-inställningar där förskjutningar för pipeline (utlösare) inte hämtades från databasen och orsakade dubbletter. (NEO-12121)
 * Korrigerade ett problem som kunde orsaka visningsfel i pivottabeller när Analytics-integrering användes (NEO-12103)
 * Korrigerade ett problem med den beskrivande analysrapporten. (NEO-11414)
