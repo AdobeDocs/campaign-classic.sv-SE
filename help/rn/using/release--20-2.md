@@ -6,11 +6,11 @@ description: Version 20.2
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2201'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 80%
 
 _11 september 2020_
 
-* Korrigerade en regression som gjorde att leveransförberedelser blockerades på grund av en felfunktion på leveransdelen, vilket ledde till minnesöverbelastning. (NEO-27346)
-* Korrigerade ett efteruppgraderingsfel som stängde av Apache och webbservern innan webbprogrampubliceringen. (NEO-27155)
-* Korrigerade en regression av HTML-mallhantering som ledde till att URL:er för spårning blev synliga på grund av en felaktig tolkning av flikarna. (NEO-25909)
-* Korrigerade ett problem med arbetsflödet för databasrensning som kunde misslyckas på grund av ohanterad datakälla. (NEO-23160 och NEO-23364)
-* Rensningsarbetsflödet tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
-* Korrigerade en regression som förhindrade dig från att ändra det interna namnet för ett externt konto. (NEO-27323)
-* Korrigering av en regression under efteruppgradering som orsakade en felaktig start av lserver (felloggar).
-* Uppdateringshanteringen för delat minne har förbättrats. De ytterligare steg som krävs i 20.2 behövs inte längre.
+* Korrigerade en regression som gjorde att leveransförberedelser blockerades på grund av en felfunktion på leveransdelen, vilket ledde till överbelastning av minnet. (NEO-27346)
+* Korrigerade ett problem med en efteruppgradering som stängde av Apache och webbservern innan webbapplikationens publicering. (NEO-27155)
+* Korrigerade en regression i HTML-mallhantering som ledde till att URL:er för spårning blev synliga på grund av en felaktig tolkning av flikar. (NEO-25909)
+* Korrigerade ett problem med arbetsflödet för databasrensning som kunde sluta fungera på grund av en ohanterad datakälla. (NEO-23160 och NEO-23364)
+* Arbetsflödet för rensning tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
+* Korrigerade en regression som förhindrade dig från att ändra det interna namnet på ett externt konto. (NEO-27323)
+* Korrigerade en regression under efteruppgraderingen som orsakade en felaktig start av lserver (felloggar).
+* Uppdateringshanteringen för delat minne har förbättrats. De ytterligare steg som krävdes i 20.2 behövs inte längre.
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.2 – build 9180 {#release-20-2-2-build-9180}
 
@@ -39,23 +39,23 @@ _22 juli 2020_
 * Korrigerade ett problem som hindrade spårning från att fungera när signaturfunktionen var inaktiverad. (NEO-26411)
 * Korrigerade ett problem som medförde att osignerade länkar från anpassade domäner blockerades när de borde tillåtas. (NEO-25210)
 * Korrigerade ett problem som kunde hindra dig från att öppna/klicka på spårnings-URL:er när du använde vissa äldre versioner av Outlook. (NEO-25688)
-* Korrigerade ett problem som ledde till att sidans URL:er speglades på ett felaktigt sätt definierades i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
-* Ett problem med hantering av kodnings-URL i tjänsten mot nätfiske har korrigerats. (NEO-25283)
+* Korrigerade ett problem som ledde till att spegelsidans URL:er definierades på ett felaktigt sätt i e-postleveranser (på grund av felaktig ASCII-teckenkontroll). (NEO-26084)
+* Korrigerade ett problem med att hantera kodning av URL:er i tjänsten som förebygger nätfiske. (NEO-25283)
 * Korrigerade ett problem som förhindrade spårning av URL:er, som använder fragment i personaliseringsparametrar (ankartaggar med pundtecken), från att fungera. (NEO-25774)
 * Korrigerade ett problem med spårning när särskilda anpassade spårningsformler användes. (NEO-25277)
 * Korrigerade ett problem som hindrade spårningen av ”meddelandeklickningar” från att fungera (iOS- och Android-push-meddelanden). (NEO-25965)
-* Korrigerade en regression som påverkade beräkningsfält i ett arbetsflöde och orsakade att arbetsflödet misslyckades. (NEO-25194)
+* Korrigerade en regression som påverkade beräknade fält i ett arbetsflöde och orsakade att arbetsflödet slutade fungera. (NEO-25194)
 * Korrigerade en regression som förhindrade att webbspårnings-URL:er kunde skapas på direkten. (NEO-20999)
-* Korrigerade ett regressionsproblem med färdiga leveransrapporter som verkade trunkerade när de exporterades till PDF. (NEO-25757)
-* Korrigerade ett kraschproblem i distributionsguiden.
-* Korrigerade ett problem som kunde förhindra att arbetsflödet för meddelanden om erbjudanden fungerar korrekt efter en efteruppgradering.
+* Korrigerade ett regressionsproblem med färdiga leveransrapporter som verkade vara förkortade när de exporterades till PDF. (NEO-25757)
+* Korrigerade ett problem där distributionsguiden kraschade.
+* Korrigerade ett problem som kunde förhindra att arbetsflödet för erbjudandeavisering fungerar korrekt efter en efteruppgradering.
 * iOS HTTP2-kopplingen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904 och NEO-25903)
-* Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre användes (iOS-meddelanden).
-* Korrigerade ett problem som blockerade leveransförberedelser efter efteruppgradering.
-* Efter växlingen till [den nya sekvens-ID-mekanismen](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) publiceras alla webbprogram som uppdaterar mottagartabellen på nytt under efteruppgraderingen.
+* Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre används (iOS-meddelanden).
+* Korrigerade ett problem som blockerade leveransförberedelser efter en efteruppgradering.
+* Efter bytet till [mekanismen för nytt sekvens-ID](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
 * Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987 och NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
@@ -102,7 +102,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>Thailands lag om skydd av personuppgifter (PDPA) är den nya integritetslagen som harmoniserar och moderniserar kraven på skydd av personuppgifter i Thailand. </p>
-   <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) träder i kraft i början av 2021 för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
+   <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) börjar gälla från och med början av 2021 för alla företag som samlar in eller behandlar personuppgifter i Brasilien.</p>
    <p>Dessa bestämmelser gäller för Adobe Campaign-kunder som innehar uppgifter för registrerade personer som bor i dessa länder. Förutom de sekretessfunktioner som redan finns i Campaign (inklusive medgivandehantering, datalagringsinställningar och användarroller) tar vi tillfället i akt att inkludera ytterligare funktioner för att underlätta beredskapen för PDPA och LGPD:</p>
    <ul> 
      <li><p>Rätt till åtkomst och rätt att ta bort: vi tar vara på de funktioner som redan finns för GDPR och CCPA. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a></p></li> 
@@ -238,7 +238,7 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade ett problem som kunde påverka push-meddelanden när de skickades med hög frekvens. (NEO-20516)
 * Korrigerade ett problem som gjorde att spårningsdata inkluderade dubbletter trots att spårningsloggarna inte gjorde det. (NEO-20040)
 * Korrigerade ett problem som orsakade att dubbla transaktionsmeddelanden skickades efter att ett kommunikationsfel för spårningsservern hade korrigerats. (NEO-23640)
-* Ett problem som tog bort kodningsparametervärdet vid omdirigering från en spårnings-URL (påverkar japanska tecken) har korrigerats. (NEO-25637)
+* Korrigerade ett problem som raderade kodning av parametervärde vid omdirigering från en spårnings-URL (inverkan på japanska tecken). (NEO-25637)
 * Korrigerade ett problem som kunde förhindra att en fråga fungerade när flyttal jämfördes. (NEO-23243)
 * Korrigerade ett problem som kunde förhindra att innehållet i kolumnen **Ändrad av** visades efter att ett arbetsflöde startades om. (NEO-23035)
 * Korrigerade ett problem som gjorde att det tekniska arbetsflödet för spårning inte fungerade vid nedladdning av loggar från en andra behållare. (NEO-23159)
@@ -248,7 +248,7 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade ett problem med ytterligare lagringsfält när leveranser skapades via alternativet **Beräknad av ett skript** i **skriptet** arbetsflödesaktivitet. (NEO-20609)
 * Korrigerade ett problem som förhindrade att spökarbetsflöden togs bort i databasrensningen.
 * Korrigerade ett problem som gjorde att det tekniska arbetsflödet för **fakturering (aktiva profiler)** inte fungerade. (NEO-19777)
-* Ett regressionsproblem som förhindrade anslutningen till en Campaign Standard-instans (felaktig hantering av FOH/FOH2-anslutningen) har korrigerats när funktionen ACS Connector användes. (NEO-23433)
+* Korrigerade ett regressionsproblem vid användning av ACS Connector-funktionen som förhindrade anslutningen till en instans i Campaign Standard (felaktig hantering av FOH/FOH2-anslutningen). (NEO-23433)
 * Korrigerade ett problem som gjorde att du inte kunde skapa ett schematillägg för en primärnyckel med flera kolumner med en Hadoop-tabell. (NEO-17390)
 * Korrigerade ett problem i **inläsningsaktiviteten (SOAP)** som kunde förhindra att WSDL-filer lästes in från en URL. (NEO-16924)
 * Korrigerade ett problem som förhindrade dig från att utföra ett **ovillkorligt stopp** via konsolen när flera aktiva arbetsflödesservrar lästes in. (NEO-19556)
@@ -262,4 +262,4 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade ett problem som kunde visa ett felmeddelande när du klickade på en webbapplikationslänk i ett Line-meddelande.
 * Korrigerade ett problem som tog bort aktivitetshistoriken för **Inkrementell fråga** efter att ha kört arbetsflödet för rensning.
 * Ett problem har korrigerats när ett externt konto med mid-sourcing skapades där alternativet NmsMidSourcing_LastBroadLog_&lt;InternalName> saknades.
-* Ett regressionsproblem i databasanslutningen som gjorde att webbservern hela tiden startades om på grund av ett databaskodningsproblem har åtgärdats. Detta kan leda till överkonsumtion. (NEO-23264)
+* Korrigerade ett regressionsproblem i databasanslutningen som orsakade att webbservern hela tiden startades om på grund av ett problem med databaskodningen. Detta kan leda till överkonsumtion. (NEO-23264)
