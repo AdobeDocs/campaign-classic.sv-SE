@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
 workflow-type: tm+mt
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -299,8 +299,8 @@ ht-degree: 97%
       + [Översätta ett webbformulär](web/using/translating-a-web-form.md)
       + [Användningsfall: webbformulär](web/using/use-cases--web-forms.md)
    + Onlineundersökningar {#online-surveys}
-      + [Kom igång med enkäter](web/using/about-surveys.md)
-      + [Viktiga steg för att skapa en enkät](web/using/getting-started-with-surveys.md)
+      + [Kom igång med undersökningar](web/using/about-surveys.md)
+      + [Viktiga steg för att skapa en undersökning](web/using/getting-started-with-surveys.md)
       + [Utforma en undersökning](web/using/building-a-survey.md)
       + [Hantera svar](web/using/managing-answers.md)
       + [Publicera, spåra och använda insamlade data](web/using/publish--track-and-use-collected-data.md)
