@@ -6,11 +6,11 @@ description: Senaste versionsinformationen om Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1820'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 792bfbd041b20a61e975703e7d9d4a35859c2882
+workflow-type: tm+mt
+source-wordcount: '1852'
+ht-degree: 98%
 
 ---
 
@@ -94,6 +94,11 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 **Förbättringar**
 
 * Flera förbättringar har gjorts i **klientkonsolen**:
+   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+
+      >[!CAUTION]
+      >
+      >Efter uppdateringen av anslutningsprotokollet är uppgradering obligatorisk (server och konsol) för att kunna ansluta från 21 mars 2020.
    * För att förhindra inkompatibilitet med vissa begränsningar i grupprincipobjekt (GPO) för internetsäkerhet har inloggningsskärmen på klientkonsolen i Campaign ersatts av ett inbyggt standardformulär för Windows.
    * Korrigerade ett problem vid kopiera/klistra in aktiviteter i ett arbetsflöde med 64 bitars klientkonsol. (NEO-27635)
    * På menyn **Om** har information lagts till för att skilja på 64 bitars och 32 bitars konsoler.
