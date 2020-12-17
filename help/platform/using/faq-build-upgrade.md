@@ -7,21 +7,21 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2017'
 ht-degree: 2%
 
 ---
 
 
-# Vanliga frågor om uppgradering {#build-upgrade-faq}
+# Vanliga frågor om uppgradering av bygge {#build-upgrade-faq}
 
-Adobe Campaign uppdateras regelbundet. Om du känner till våra publicerade [versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner kommer förbättringar och korrigeringar att släppas varje år. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
+Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [versionsinformation](../../rn/using/rn-overview.md) är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
-Därför startade vi [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) -programmet för att samarbeta med våra kunder för att proaktivt och regelbundet uppgradera deras miljöer.
+Vi startade därför [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html)-programmet för att samarbeta med våra kunder för att proaktivt och regelbundet uppgradera deras miljöer.
 
 ## Vad är en bygguppgradering?
 
@@ -35,7 +35,7 @@ Den senaste versionen av Campaign Classic, med nya funktioner och dokumentation,
 
 ## Hur vet jag vilken version jag har?
 
-Kontrollera din version från **[!UICONTROL Help > About...]** -menyn i Adobe Campaign Client Console. Rutan innehåller detaljerad information om vilken version och version du kör för både konsolen och servern. **[!UICONTROL About]**
+Kontrollera din version från **[!UICONTROL Help > About...]**-menyn i Adobe Campaign Client Console. Rutan **[!UICONTROL About]** innehåller detaljerad information om versionen och bygget som du kör för både konsolen och servern.
 
 Läs mer [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -61,7 +61,7 @@ Med serverinformationen från skärmbilden i föregående avsnitt kan du till ex
 
 Adobe gör en säkerhetskopia av ditt system innan några ändringar görs. Men om det finns viktiga anpassningsarbeten i ditt icke-produktionssystem (utvecklings- eller testservrar) rekommenderar vi att du exporterar dessa som ett paket före en uppgradering.
 
-![](assets/do-not-localize/how-to-video.png) Om du vill ha mer information [tittar du på videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)så här.
+![](assets/do-not-localize/how-to-video.png) Om du vill ha mer information  [tittar du på videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html) så här.
 
 ## När kommer uppgraderingarna att äga rum?
 
@@ -83,7 +83,7 @@ Uppgradering är en tvåstegsprocess:
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
-For more information, [refer to this document](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
 
 ## Vilka resurser behövs för uppgraderingen?
 
@@ -96,15 +96,15 @@ Bygguppgraderingsprocessen kräver följande resurser:
 
 ## Hur kan jag förbereda mig för uppgraderingen?
 
-Exportera material som är viktigt och som måste bevaras i dina utvecklings- och staging-system. Om du vill ha mer information kan du titta [på videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)så här.
+Exportera material som är viktigt och som måste bevaras i dina utvecklings- och staging-system. [Se videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html) för mer information.
 
 Uppdatera dina kunskaper om viktiga arbetsflöden och leveranser som utvecklats i dina körningsböcker (eller av ditt konsultteam/partner) genom att läsa dokumentationen som skickas till ditt team när implementeringen är klar.
 
 Identifiera låga volymer eller låga trafiktider som skulle vara idealiska för underhållsperioder eftersom de ger lägsta möjliga inverkan på verksamheten.
 
-Se vår checklista [för bygguppgraderingar nedan](#check-list) och dina testplaner och se till att resurser som kan utföra dessa tester är tillgängliga inom 24-48 timmar. när en uppgradering har slutförts.
+Läs igenom vår [checklista för bygguppgradering nedan](#check-list) och dina testplaner och se till att resurser som kan utföra dessa tester är tillgängliga inom 24-48 timmar. när en uppgradering har slutförts.
 
-For more information, [refer to this document](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## Kan uppgraderingar göras dygnet runt eller på kontorstid utanför kontorstid?
 
@@ -136,7 +136,7 @@ Ja. Kunderna bör förse Adobe med en kontaktpunkt som är tillgänglig under el
 
 ## Behöver jag uppdatera klientkonsolen?
 
-Ja. Klientkonsolen måste finnas på samma bygge eller nyare bygge som serverinstansen. När uppgraderingen är klar bör din klientkonsol uppmana dig att uppgradera till den senaste versionen för att säkerställa att den är i linje med serverbygget.
+Ja. Klientkonsolen måste finnas på samma version som serverinstansen. När uppgraderingen är klar bör din klientkonsol uppmana dig att uppgradera till den senaste versionen för att säkerställa att den är i linje med serverbygget.
 
 ## Vad är återställningsplanen? Bevaras säkerhetskopior av mina data?
 
@@ -148,13 +148,13 @@ Det beror på databasens säkerhetskopieringsstorlek. Genomsnittlig tid det tar 
 
 ## Vilka typer av tester utförs på mitt system efter uppgraderingen?
 
-Se checklistan för [uppgradering nedan](#check-list).
+Se [checklistan för uppgraderingen nedan](#check-list).
 
 ## Vilken typ av test måste jag utföra efter min uppgradering?
 
 Utvecklings- och scenmiljöer uppgraderas antingen i följd eller tillsammans, men det krävs en signering innan produktionsinstansen uppgraderas. På så sätt kan varje kund utföra grundliga tester innan de signerar om produktionsändringar.
 
-Se listan över [bockar för uppgradering nedan](#check-list). Kunderna bör köra liknande tester liksom andra som de kan behöva för miljön.
+Se listan [bocka för uppgradering nedan](#check-list). Kunderna bör köra liknande tester liksom andra som de kan behöva för miljön.
 
 ## Hur ofta måste jag göra en bygguppgradering?
 
@@ -166,11 +166,11 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 ## Vem ska jag kontakta för att öppna uppgraderingsbiljetten?
 
-Om du får problem efter en uppgradering kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
+Om du får problem efter en uppgraderingsversion kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
 Läs mer i [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
 
-## Bygg checklista för uppgradering {#check-list}
+## Build upgrade checklist {#check-list}
 
 ### Checklista för efteruppgradering av molnmeddelandeserver
 
@@ -185,9 +185,12 @@ Läs mer i [Hjälp- och supportalternativ för Campaign Classic](https://helpx.a
 
 * Kan du logga in på servern? Kontrollera att Campaign Client Console fungerar utan några fel-/varningspopup-fönster.
 * Se till att använda samma konsolversion som byggversionen efter uppgraderingen.
-* Har du några webbprogram som infogar data i Campaign-databasen? I så fall kör du dem och kontrollerar att de kan infoga nya poster via API.
-* Kan du skicka ut ett test-e-postmeddelande? Skapa ny leverans med en känd mall, skicka till en testmottagare, verifiera personalisering, bryta länken, spegla hela sidor.
-* Körs alla era arbetsflöden för kritiska sökvägar? Kontrollera arbetsflöden, öppna arbetsflödesjournalen, verifiera att det inte finns några fel.
+* Har du några webbprogram som infogar data i Campaign-databasen? I så fall kör du dem och
+verifiera att de kan infoga nya poster via API.
+* Kan du skicka ut ett test-e-postmeddelande? Skapa ny leverans med en känd mall och skicka den till
+en testmottagare, verifiera personalisering, ta bort länkar, spegla sida allt arbete.
+* Körs alla era arbetsflöden för kritiska sökvägar? Kontrollera arbetsflöden, öppna arbetsflödesjournal, verifiera
+att det inte finns några fel.
 * Är alla dina mappar tillgängliga, synliga och tillgängliga? Bläddra bland olika mappar och kontrollera.
 allt innehåll visas och visas.
 * Kommer leveranserna igenom med rätt tidszon?
@@ -206,4 +209,4 @@ allt innehåll visas och visas.
 * [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
-* [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html)
+* [Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
