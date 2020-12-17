@@ -1,115 +1,117 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sekretess och samtycke
+title: Integritet och medgivande
 description: Läs mer om sekretess och samtycke
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 9e31f69fde38dcdc7f4e6d3ba3fb17911f96ded8
+source-git-commit: a399adc47e4676fe2d001924c62019e829eea403
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '809'
+ht-degree: 97%
 
 ---
 
 
-# Frågor och svar om sekretess {#privacy-faq}
+# Frågor och svar om integritet {#privacy-faq}
 
-Här är några av de vanliga frågorna om sekretess och samtycke när du använder Adobe Campaign.
+Här följer några av de vanligaste frågorna och svaren om integritet och medgivande när du använder Adobe Campaign.
 
-## Viktiga termer {#key-terms}
+## Nyckelvillkor {#key-terms}
 
-**Vilka är nyckelvillkoren för sekretess?**
+### Vilka är nyckelvillkoren gällande integritet?
 
-Nedan finns en länk till de viktigaste villkoren och begreppen för sekretess och samtycke i Adobe Campaign:
+Punkterna nedan är länkade till de viktigaste villkoren och begreppen relaterade till integritet och medgivande i Adobe Campaign:
 
-* [Bestämmelser om sekretesshantering](../../platform/using/privacy-management.md#privacy-management-regulations)
-* [Personuppgifter och personuppgifter](../../platform/using/privacy-and-recommendations.md#personal-data)
-* [Rätt till åtkomst och rätt att glömma](../../platform/using/privacy-management.md#right-access-forgotten)
-* [Samtycke, bevarande och roller](../../platform/using/privacy-management.md#consent-retention-roles)
+* [Reglering gällande integritetshantering](../../platform/using/privacy-management.md#privacy-management-regulations)
+* [Personuppgifter och personer](../../platform/using/privacy-and-recommendations.md#personal-data)
+* [Åtkomsträttigheter och rätt att glömmas](../../platform/using/privacy-management.md#right-access-forgotten)
+* [Medgivande, lagring och roller](../../platform/using/privacy-management.md#consent-retention-roles)
 
-## Beredskap för sekretesslagstiftning {#privacy-regulations-readiness}
+## Beredskap för integritetsreglering{#privacy-regulations-readiness}
 
-**Vad föreslår Adobe Campaign för att följa de senaste sekretessbestämmelserna?**
+### Vad föreslår Adobe Campaign för att följa den senaste integritetsregleringen?
 
-Adobe lämnar ingen juridisk rådgivning. Ni bör samarbeta med era egna jurister för att säkerställa att de vidtar alla nödvändiga åtgärder för att nå fram till GDPR, CCPA, PDPA, LGPD eller någon annan tillämplig beredskap för reglering.
+Adobe lämnar ingen juridisk rådgivning. Du bör samarbeta med eget juridiskt ombud för att säkerställa att de vidtar alla nödvändiga åtgärder gällande GDPR, CCPA, PDPA, LGPD eller någon annan tillämplig beredskap för reglering.
 
-**Förbered för dataåtkomst och -borttagning**
+**Förbered för dataåtkomst och -radering**
 
-* Identifiera en process för att ta emot/besvara förfrågningar från registrerade, inklusive att utse en kontaktpunkt för integritetsskydd.
+* Identifiera en process för att ta emot/besvara förfrågningar från registrerade, inklusive att utse en kontaktperson för integritet.
 
-* Granska de olika kunddata som lagras i Adobe Campaign och identifiera unika identifierare (det kommer troligen att finnas fler än en).
+* Granska de olika kunddata som finns lagrade i Adobe Campaign och identifiera unika identifierare (det finns troligen fler än en).
 
-* Bestäm en policy och process för validering/autentisering för att bekräfta identiteten på registrerade personer.
+* Bestäm en policy och process med validering/autentisering för att bekräfta identiteten på registrerade.
 
-* Se till att den registrerades svar är lätt att förstå.
+* Se till att svar till den registrerade är lätta att förstå.
 
-**Överväg samtycke**
+**Överväg medgivande**
 
-* Ange och uppdatera vid behov alla kontaktpunkter för datainhämtning för GDPR (dvs. överväg språk, mekanism för samtycke och godkännandeloggar).
+* Ange och uppdatera vid behov alla kontaktpunkter gällande datainsamling för GDPR (dvs. överväg språk, mekanismer för medgivande och medgivandeloggar).
 
-* Se till att alla marknadsföringsmejl innehåller länkarna för att avbryta prenumerationen.
+* Se till att alla e-postmeddelanden med marknadsföring innehåller länkarna för att avbryta prenumerationen.
 
-* Utvärdera den globala strategin för e-postmarknadsföring för att fastställa geografiska implementeringar.
+* Utvärdera den globala strategin för marknadsföring via e-post för att fastställa geografiskt specifika implementeringar.
 
-**Förstå era data**
+**Förstå dina data**
 
-* Granska alla import- och hämtningskällor där data flödar in i Adobe Campaign och dokumentera vilka fält som används i marknadsföringsarbetet.
+* Granska alla import- och insamlingskällor där data flödar in i Adobe Campaign och dokumentera vilka fält som används i marknadsföringssyfte.
 
-* Ta bort oanvända dataattribut från Adobe Campaign-databasen.
+* Ta bort oanvända dataattribut från databasen i Adobe Campaign.
 
-* Använd data som finns i Adobe Campaign för den avsikt de fångats in och ge era mottagare bättre personaliserade upplevelser.
+* Använd data som finns i Adobe Campaign i det syfte de har samlats in och ge dina mottagare bättre personaliserade upplevelser.
 
-* Granska och uppdatera behörigheter för dataåtkomst för att säkerställa att Adobe Campaign-användare kan utnyttja endast de data som behövs för att köra sina kampanjer, men inte komma åt data utöver det här.
+* Granska och uppdatera behörigheter gällande dataåtkomst för att säkerställa att användare av Adobe Campaign kan dra nytta av endast de data som behövs för att köra sina kampanjer och inte komma åt data utöver det.
 
-* Se till att alla användare av Adobe Campaign har rätt åtkomstbehörighet för att utföra de uppgifter de behöver, men att de inte har några andra rättigheter att utföra ytterligare uppgifter.
+* Se till att alla användare av Adobe Campaign har rätt åtkomstbehörighet för att utföra de uppgifter de behöver men inte några andra rättigheter att utföra ytterligare uppgifter.
 
 ## Bevara användarengagemang {#preserve-user-engagement}
 
-**Hur kan Data Controllers få sitt samtycke med minimal inverkan på användarinteraktionen?**
+### Hur kan personuppgiftsansvariga erhålla medgivande med minimal inverkan på användarengagemang?
 
-I de fall där samtycke kommer att behövas för vissa marknadsföringsaktiviteter måste konsumentens samtycke vara aktivt (dvs. ingen tystnad som samtycke eller förkryssade kryssrutor), fristående, och det får inte vara villkorat av att tjänsterna erbjuds.
+I de fall där medgivande behövs för vissa marknadsföringsaktiviteter måste konsumentens samtycke vara aktivt (dvs. tystnad får inte räknas som medgivande eller förkryssade kryssrutor), fristående och det får inte vara ett villkor för att tjänsterna ska erbjudas.
 
-Det kan till och med finnas tillfällen då vissa samtycke behöver uppdateras för att kunna fortsätta använda data som går framåt.
+Det kan till och med finnas tillfällen då vissa medgivanden behöver uppdateras för att kunna fortsätta använda data i framtiden.
 
-I stället för att tänka på dessa krav på ökat medgivande som en risk för det marknadsföringsbara universum, skulle marknadsförarna kunna använda dem som en sann indikator på varumärkesengagemang och varumärkeslojalitet, liksom kundnöjdhet och förtroende.
+I stället för att tänka på dessa ökade krav på medgivande som en risk för storleken på marknadsföringen bör marknadsförare använda dem som en indikator på verkligt varumärkesengagemang och varumärkeslojalitet lika väl som kundnöjdhet och förtroende.
 
-## Hantera samtycke {#manage-consent}
+## Hantera medgivande {#manage-consent}
 
-**Hur kan Data Controllers hantera samtycke i Adobe Campaign?**
+### Hur kan personuppgiftsansvariga hantera medgivande i Adobe Campaign?
 
-Adobe Campaign har redan funktioner för att hantera samtycke på fler nivåer än de flesta marknadsförare använder via anpassade datafält eller via en eller flera tjänster.
+Adobe Campaign erbjuder redan funktioner för att hantera medgivande på fler nivåer än de flesta marknadsförare använder via anpassade datafält eller via en eller flera tjänster.
 
-Marknadsförarna bör höra med sin juristrådgivare om hur de ska gå vidare och sedan utnyttja de funktioner som redan finns i Adobe Campaign.
+Marknadsförare bör kontakta sina juridiska ombud om hur de ska gå vidare och sedan dra nytta av de funktioner som redan finns i Adobe Campaign.
 
-Du kan t.ex. utöka datamodellen i Adobe Campaign så att den inte bara spåras om någon har anmält sig, utan även tidsstämpeln för anmälan och en typ av indikator som anger det exakta tillämpningsområdet för samtycke.
+Du kan t.ex. utöka datamodellen i Adobe Campaign så att den inte bara spårar om någon har anmält sig utan även tidsstämpeln för anmälan och en typ av indikator som anger det exakta tillämpningsområdet för medgivandet.
 
-## Radering av data {#data-deletion}
+## Dataradering {#data-deletion}
 
-**Vilka data kan personuppgiftsansvariga radera i Adobe Campaign som svar på en kundförfrågan från en registrerad?**
+### Vilka data kan personuppgiftsansvariga radera i Adobe Campaign som svar på en kundförfrågan från en registrerad?
 
-Alla data som är kopplade till den registrerade tas bort, inklusive färdiga och anpassade tabeller.
+Alla data som är kopplade till den registrerade tas bort inklusive färdiga och anpassade tabeller.
 
-Tekniskt sett raderas alla data som är länkade till den registrerade med `integrity="own"` data.
+Tekniskt sett tas alla data bort som är länkade till den registrerade med `integrity="own"`.
 
-Som Data Controller har du möjlighet att anpassa detta genom att ändra integriteten för länkar som definieras i dataschemat (t.ex. om du har en affärsjustering för att inte ta bort vissa data).
+Som personuppgiftsansvarig har du möjligheten att anpassa detta genom att ändra integriteten hos länkar som definieras i dataschemat (t.ex. om du har en affärsmässig motivering för att inte ta bort vissa data).
 
-**Hur påverkas rapporter när leverans- och spårningsloggar tas bort?**
+### Hur påverkas rapporter när leverans- och spårningsloggar tas bort?
 
-Rapporterna i Adobe Campaign baseras på indikatorer som beräknas på aggregerade data från leverans- och spårningsloggar. Om du tar bort de enskilda loggarna påverkas därför inte de mätvärden som visas i rapporterna.
+Rapporter i Adobe Campaign baseras på indikatorer som beräknas med aggregerade data från leverans- och spårningsloggar. Om du tar bort de enskilda loggarna påverkas därför inte de mätvärden som visas i rapporterna.
 
-## Importera data igen {#re-import-data}
+## Importera om data {#re-import-data}
 
-**I Adobe Campaign överförs ofta poster från en extern datakälla. Måste jag tänka på att eventuellt importera om data vid ett senare datum?**
+### Måste jag tänka på att importera data igen vid ett senare datum?
 
-Som personuppgiftsansvarig måste du se till att du tar bort alla nödvändiga data om den registrerade från alla dina system när du tar emot en raderingsbegäran.
+I Adobe Campaign laddas ofta poster upp från en extern datakälla.
 
-## Anmäl dig igen {#opt-in-again}
+Som personuppgiftsansvarig måste du se till att radera alla nödvändiga data om den registrerade från alla dina system när du tar emot en begäran om radering.
 
-**Kan en registrerade, vars uppgifter har raderats från Adobe Campaign, anmäla sig senare?**
+## Anmäla sig igen {#opt-in-again}
 
-En registrerade kan anmäla sig igen eller läggas till som ny mottagare efter att hans/hennes uppgifter har raderats från Adobe Campaign.
+**Kan en registrerade som har raderats från Adobe Campaign anmäla sig senare?**
 
-Du kan använda granskningsspåret som anger när den tidigare borttagningen utfördes och när den nya mottagaren skapades.
+En registrerad kan anmäla sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
+
+Du kan använda granskningsspåret som anger när den föregående borttagningen utfördes och när den nya mottagaren har skapats.
