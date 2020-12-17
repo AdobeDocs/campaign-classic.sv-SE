@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 
 Kontrollera att du använder:
 
-* Adobe Campaign 20.3 eller Gold Standard 11, minimum
+* Adobe Campaign 20.3 - minimum
 * Adobe Analytics Standard
 
 Du behöver också:
