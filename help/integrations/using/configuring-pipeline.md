@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '909'
 ht-degree: 1%
 
 ---
@@ -29,12 +29,12 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 
 Kontrollera att du använder:
 
-* Adobe Campaign 20.3 - minimum
+* Adobe Campaign 20.3 eller Gold Standard 11, minimum
 * Adobe Analytics Standard
 
 Du behöver också:
 
-* Adobe I/O-projektautentisering
+* Adobe I/O projektautentisering
 * ett giltigt IMSOrgID, identifieraren för Experience Cloud-kunden med Adobe Analytics tillagd
 * en utvecklaråtkomst till IMS-organisationen
 * utlöser konfiguration som gjorts i Adobe Analytics
@@ -43,24 +43,24 @@ Du behöver också:
 
 Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud.
 Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare.
-Autentisering stöds för Marketing Cloud via Adobe I/O-projekt.
+Autentisering stöds för Marketing Cloud via Adobe I/O Project.
 
-## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
+## Steg 1: Skapa/uppdatera Adobe I/O Project {#creating-adobe-io-project}
 
 För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integreringen av utlösare.
 
-För On Premise-kunder, se sidan [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i inloggningsuppgifterna för Adobe.
+För On Premise-kunder, se sidan [Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare](../../integrations/using/configuring-adobe-io.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe I/O-autentiseringsuppgifter.
 
 ## Steg 2: Konfigurerar alternativet för NmsPipeline_Config-pipeline {#configuring-nmspipeline}
 
 När autentiseringen är klar hämtas händelserna. Det bearbetar bara utlösare som har konfigurerats i Adobe Campaign. Utlösaren måste ha genererats från Adobe Analytics och skickats till pipeline, som endast kommer att bearbeta utlösare som har konfigurerats i Adobe Campaign.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
-1. I Adobe Campaign öppnar du alternativmenyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i **[!UICONTROL Explorer]**.
+1. I Adobe Campaign går du till alternativmenyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i **[!UICONTROL Explorer]**.
 
-1. Välj **[!UICONTROL NmsPipeline_Config]** alternativet.
+1. Välj alternativet **[!UICONTROL NmsPipeline_Config]**.
 
-1. I **[!UICONTROL Value (long text)]** fältet kan du klistra in följande JSON-kod som anger två utlösare. Du måste se till att ta bort kommentarer.
+1. I fältet **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Du måste se till att ta bort kommentarer.
 
    ```
    {
@@ -105,7 +105,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 Rörledningen fungerar som en leverantör och en konsumentmodell. Meddelanden används endast för enskilda konsumenter: varje konsument får en egen kopia av budskapen.
 
-Parametern **Consumer** identifierar förekomsten som en av dessa konsumenter. Instansens identitet anropar pipeline. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
+Parametern **Consumer** identifierar instansen som en av dessa konsumenter. Instansens identitet anropar pipeline. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
 
 Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument. Om du använder olika konsumenter för olika instanser kan du se till att alla meddelanden skickas till varje instans.
 
@@ -114,7 +114,7 @@ Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument.
 Så här konfigurerar du alternativet för pipeline:
 
 * Lägg till eller redigera utlösare under **[!UICONTROL Triggers]**, du bör inte redigera resten.
-* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se till exempel den här [webbplatsen](http://jsonlint.com/) .
+* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se till exempel den här [webbplatsen](http://jsonlint.com/).
 * &quot;name&quot; motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
 * &quot;Consumer&quot; motsvarar namnet på den anropande instansen eller det anropande programmet.
 * Pipelined har också stöd för ämnet&quot;alias&quot;.
@@ -133,7 +133,7 @@ Listan med valfria parametrar finns nedan:
 | authPrivateKey(Legacy) | Den privata nyckeln, den offentliga delen som överförts i det äldre Oath-programmet, AES som krypterats med alternativet XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Inaktivera autentisering, anslutning utan gatewaytoken accepteras bara av vissa slutpunkter i utvecklingsfasen. |
 | discoverPipelineEndpoint | URL för att hitta slutpunkten för Pipeline Services som ska användas för den här klienten. Standard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Perioden mellan två dumpar av den interna tillståndsprocessen i ```var/INSTANCE/pipelined.json.``` <br> det interna tillståndet är också tillgänglig på begäran här: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | Period mellan två dumpar av den interna tillståndsprocessen i ```var/INSTANCE/pipelined.json.``` <br> internt tillstånd är även tillgänglig på begäran här: ```http://INSTANCE:7781/pipelined/status``` |
 | forceradPipelineEndpoint | Inaktivera identifiering av PipelineServicesEndpoint för att framtvinga den |
 | monitorServerPort | Den rörliga processen avlyssnar den här porten för att tillhandahålla den interna tillståndsprocessen här: ```http://INSTANCE:PORT/pipelined/status```. <br>Standardvärdet är 7781 |
 | pointerFlushMessageCount | När det här antalet meddelanden bearbetas sparas förskjutningarna i databasen. <br> Standardvärdet är 1000 |
@@ -143,7 +143,7 @@ Listan med valfria parametrar finns nedan:
 | retryPeriodSec | Fördröjning mellan återförsök vid fel vid bearbetning. <br>Standardvärdet är 30 (sekunder) |
 | retryValiditySec | Ignorera meddelandet om det inte har bearbetats korrekt efter den här perioden (för många försök). <br>Standardvärdet är 300 (sekunder) |
 
-### Automatisk processstart i pipeline {#pipelined-process-autostart}
+### Automatisk start av process i pipeline {#pipelined-process-autostart}
 
 Processen med rörlig orientering måste startas automatiskt.
 
@@ -165,6 +165,6 @@ nlserver restart pipelined@instance
 
 Följ stegen nedan för att validera pipeline-konfigurationen för etablering:
 
-* Kontrollera att [!DNL pipelined] processen körs.
+* Kontrollera att [!DNL pipelined]-processen körs.
 * Kontrollera om det finns anslutningsloggar för pipeline i filen pipelined.log.
 * Kontrollera anslutningen och om ping-filer tas emot. Värdkunder kan använda övervakning från klientkonsolen.
