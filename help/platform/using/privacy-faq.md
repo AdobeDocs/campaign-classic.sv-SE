@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: a399adc47e4676fe2d001924c62019e829eea403
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 97%
+source-wordcount: '808'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Här följer några av de vanligaste frågorna och svaren om integritet och medg
 
 ## Nyckelvillkor {#key-terms}
 
-### Vilka är nyckelvillkoren gällande integritet?
+**Vilka är nyckelvillkoren gällande integritet?**
 
 Punkterna nedan är länkade till de viktigaste villkoren och begreppen relaterade till integritet och medgivande i Adobe Campaign:
 
@@ -32,7 +32,7 @@ Punkterna nedan är länkade till de viktigaste villkoren och begreppen relatera
 
 ## Beredskap för integritetsreglering{#privacy-regulations-readiness}
 
-### Vad föreslår Adobe Campaign för att följa den senaste integritetsregleringen?
+**Vad föreslår Adobe Campaign för att följa den senaste integritetsregleringen?**
 
 Adobe lämnar ingen juridisk rådgivning. Du bör samarbeta med eget juridiskt ombud för att säkerställa att de vidtar alla nödvändiga åtgärder gällande GDPR, CCPA, PDPA, LGPD eller någon annan tillämplig beredskap för reglering.
 
@@ -68,7 +68,7 @@ Adobe lämnar ingen juridisk rådgivning. Du bör samarbeta med eget juridiskt o
 
 ## Bevara användarengagemang {#preserve-user-engagement}
 
-### Hur kan personuppgiftsansvariga erhålla medgivande med minimal inverkan på användarengagemang?
+**Hur kan personuppgiftsansvariga erhålla medgivande med minimal inverkan på användarengagemang?**
 
 I de fall där medgivande behövs för vissa marknadsföringsaktiviteter måste konsumentens samtycke vara aktivt (dvs. tystnad får inte räknas som medgivande eller förkryssade kryssrutor), fristående och det får inte vara ett villkor för att tjänsterna ska erbjudas.
 
@@ -78,7 +78,7 @@ I stället för att tänka på dessa ökade krav på medgivande som en risk för
 
 ## Hantera medgivande {#manage-consent}
 
-### Hur kan personuppgiftsansvariga hantera medgivande i Adobe Campaign?
+**Hur kan personuppgiftsansvariga hantera medgivande i Adobe Campaign?**
 
 Adobe Campaign erbjuder redan funktioner för att hantera medgivande på fler nivåer än de flesta marknadsförare använder via anpassade datafält eller via en eller flera tjänster.
 
@@ -88,7 +88,7 @@ Du kan t.ex. utöka datamodellen i Adobe Campaign så att den inte bara spårar 
 
 ## Dataradering {#data-deletion}
 
-### Vilka data kan personuppgiftsansvariga radera i Adobe Campaign som svar på en kundförfrågan från en registrerad?
+**Vilka data kan personuppgiftsansvariga radera i Adobe Campaign som svar på en kundförfrågan från en registrerad?**
 
 Alla data som är kopplade till den registrerade tas bort inklusive färdiga och anpassade tabeller.
 
@@ -96,21 +96,19 @@ Tekniskt sett tas alla data bort som är länkade till den registrerade med `int
 
 Som personuppgiftsansvarig har du möjligheten att anpassa detta genom att ändra integriteten hos länkar som definieras i dataschemat (t.ex. om du har en affärsmässig motivering för att inte ta bort vissa data).
 
-### Hur påverkas rapporter när leverans- och spårningsloggar tas bort?
+**Hur påverkas rapporter när leverans- och spårningsloggar tas bort?**
 
 Rapporter i Adobe Campaign baseras på indikatorer som beräknas med aggregerade data från leverans- och spårningsloggar. Om du tar bort de enskilda loggarna påverkas därför inte de mätvärden som visas i rapporterna.
 
 ## Importera om data {#re-import-data}
 
-### Måste jag tänka på att importera data igen vid ett senare datum?
-
-I Adobe Campaign laddas ofta poster upp från en extern datakälla.
+**I Adobe Campaign laddas ofta poster upp från en extern datakälla. Måste jag tänka på att importera data igen vid ett senare datum?**
 
 Som personuppgiftsansvarig måste du se till att radera alla nödvändiga data om den registrerade från alla dina system när du tar emot en begäran om radering.
 
 ## Anmäla sig igen {#opt-in-again}
 
-**Kan en registrerade som har raderats från Adobe Campaign anmäla sig senare?**
+**Kan en registrerad vars data har raderats från Adobe Campaign anmäla sig igen?**
 
 En registrerad kan anmäla sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
 
