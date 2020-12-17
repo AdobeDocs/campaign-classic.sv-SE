@@ -6,11 +6,11 @@ description: Läs mer om uppgraderingar till Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '429'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,8 @@ Den **senaste RC-versionen** är [Campaign Classic version 20.3.](../../rn/using
 ## Rekommendationer{#recommendations}
 
 För att säkerställa en stabil konfiguration rekommenderar vi att du installerar samma stabila build på alla servrar som körs på samma klientkonfiguration.
+
+Dessutom bör klientkonsolen finnas på samma version som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
