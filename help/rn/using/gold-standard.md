@@ -6,11 +6,11 @@ description: Versionsinformation om Campaign Classic Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 494be84478f652dd5e1473dd98272056514f31c8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -24,6 +24,24 @@ Om du migrerar från en gammal version rekommenderar vi att du först uppgradera
 Den här sidan listar Gold Standard-versioner.
 
 Se [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) för mer information om Campaign Gold Standard.
+
+## ![](assets/do-not-localize/limited_2.png) Gold Standard version 11{#gs-11}
+
+_15 december 2020_
+
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+
+Version 9032@2a2a028 innehåller följande förbättringar och korrigeringar:
+
+* Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+
+* Integreringsautentisering för utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
+
+* När stödet för iOS APN:er för det äldre binära protokollet har upphört, uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
+
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard version 10{#gs-10}
 
@@ -59,11 +77,11 @@ _29 april 2020_
 
 Build 9032@3a9dc9c har följande korrigeringar:
 
-* Förbättrad säkerhet vid spårning av länkar i e-postmeddelanden. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som kan aktiveras genom att kontakta kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder som vill aktivera den finns i [checklistan över säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html#signature-mechanism).
+* Förbättrad säkerhet vid spårning av länkar i e-postmeddelanden. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som kan aktiveras genom att kontakta kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder som vill aktivera den finns i [checklistan över säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Om du upplever problem med push-meddelanden när du använder spårningslänkar eller leveranser med ankartaggar rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårningslänkar. Förfarandet beskrivs [på den här sidan](https://helpx.adobe.com/se/campaign/kb/acc-security.html#signature-mechanism)
+>Om du upplever problem med push-meddelanden när du använder spårningslänkar eller leveranser med ankartaggar rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårningslänkar. Förfarandet beskrivs [på den här sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * Korrigerade ett problem som kunde förhindra att bilder visades i Line-leveranser. (NEO-23207)
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
