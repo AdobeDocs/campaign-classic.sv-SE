@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2216'
 ht-degree: 98%
 
 ---
@@ -46,7 +46,6 @@ ht-degree: 98%
          + [Vanliga frågor](platform/using/common-questions.md)
          + [Viktiga begrepp](platform/using/faq-key-concepts.md)
          + [Builduppgradering](platform/using/faq-build-upgrade.md)
-         + [Integritet](platform/using/privacy-faq.md)
          + [Publiker](platform/using/faq-audiences.md)
          + [Utforma meddelanden](platform/using/faq-designing.md)
          + [Skicka meddelanden](platform/using/faq-messages.md)
@@ -58,7 +57,8 @@ ht-degree: 98%
    + Integritet {#privacy}
       + [Integritet och medgivande](platform/using/privacy-and-recommendations.md)
       + [Integritetshantering](platform/using/privacy-management.md)
-      + [Förfrågan om användarens information](platform/using/privacy-requests.md)
+      + [Förfrågningar om användarens information](platform/using/privacy-requests.md)
+      + [Frågor och svar om sekretess](platform/using/privacy-faq.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
