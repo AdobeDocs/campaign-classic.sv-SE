@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Målgruppen är följande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 
-Läs mer om målpopulationer [i det här avsnittet](../../delivery/using/steps-defining-the-target-population.md)
+Läs mer om målpopulationer [i detta avsnitt](../../delivery/using/steps-defining-the-target-population.md)
 
 ## Rikta er till rätt målgrupp {#target-the-right-audience}
 
@@ -28,11 +28,11 @@ För att leveransen ska bli framgångsrik vill ni skicka det mest relevanta pers
 
 ## Målmappningar {#target-mappings}
 
-I Campaign Classic är leveransmallarna som standard avsedda för **mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov.
+I Campaign Classic är leveransmallarna som standard **mottagare** som mål. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov.
 
 Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-Dessa mappningar presenteras [i det här avsnittet](../../delivery/using/selecting-a-target-mapping.md).
+Dessa mappningar visas [i det här avsnittet](../../delivery/using/selecting-a-target-mapping.md).
 
 Du kan också skapa och använda en anpassad målmappning. Mer information om detta finns i [det här avsnittet](../../configuration/using/target-mapping.md).
 
@@ -40,20 +40,20 @@ Du kan också skapa och använda en anpassad målmappning. Mer information om de
 
 Du kan leverera till mottagare som lagras i en extern fil i stället för att sparas i databasen. Läs mer [i det här avsnittet](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-## Skicka till prenumeranterna {#send-to-subscribers}
+## Skicka till dina prenumeranter {#send-to-subscribers}
 
 Om du vill skicka meddelanden till prenumeranterna på ett nyhetsbrev kan du rikta dem direkt till motsvarande informationstjänst. Läs mer [i det här avsnittet](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
-## Testa mottagare och startadresser {#test-recipients-seed-addresses}
+## Testmottagare och startadresser {#test-recipients-seed-addresses}
 
 Om du vill testa leveransen använder du korrektur innan du skickar till huvudmålet.
 
 Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare visas [i det här avsnittet](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De presenteras [i detta avsnitt](../../delivery/using/about-seed-addresses.md).
+Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [i det här avsnittet](../../delivery/using/about-seed-addresses.md).
 
-## Deduplicera adresser {#deduplicate-addresses}
+## Ta bort dubblettadresser {#deduplicate-addresses}
 
 Det är viktigt att undvika att ha dubbla e-postadresser, eftersom detta kan påverka ditt mål:
 
@@ -69,4 +69,4 @@ Läs mer [i det här fallet](../../workflow/using/deduplication.md#example--iden
 
 För att optimera prestanda för SQL-frågor som används i programmet kan ett index deklareras från huvudelementet i dataschemat.
 
-Stegen för att lägga till ett index till e-postadressen beskrivs [i det här avsnittet](../../configuration/using/database-mapping.md#indexed-fields).
+Stegen för att lägga till ett index till e-postadressen visas [i det här avsnittet](../../configuration/using/database-mapping.md#indexed-fields).
