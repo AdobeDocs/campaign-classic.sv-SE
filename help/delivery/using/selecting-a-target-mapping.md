@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Välja en målgrupp att kartlägga{#selecting-a-target-mapping}
 
-Som standard har leveransmallar som mål **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:receive** . Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
+Som standard har leveransmallar som mål **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:receive**. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ Mappningarna är följande:
 
 >[!NOTE]
 >
->Du kan också skapa nya målmappningar. Den här åtgärden är reserverad för expertanvändare. For more information, refer to the [Configuration guide](../../configuration/using/target-mapping.md).
+>Du kan också skapa nya målmappningar. Den här åtgärden är reserverad för expertanvändare. Mer information finns i [Konfigurationshandboken](../../configuration/using/target-mapping.md).
