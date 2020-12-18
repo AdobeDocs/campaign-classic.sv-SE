@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sekretessförfrågningar
+title: Förfrågningar om användarens information
 description: Lär dig hur du hanterar sekretessförfrågningar
 audience: platform
 content-type: reference
@@ -10,26 +10,26 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 0%
+ht-degree: 21%
 
 ---
 
 
-# Hantera sekretessförfrågningar {#privacy-requests}
+# Hantera sekretessbegäranden {#privacy-requests}
 
-En allmän presentation om sekretesshantering finns i [detta avsnitt](../../platform/using/privacy-management.md).
+Se [det här avsnittet](../../platform/using/privacy-management.md) för en allmän presentation om sekretesshantering.
 
-Denna information gäller GDPR, CCPA, PDPA och LGPD. For more on these regulations, see [this section](../../platform/using/privacy-management.md#privacy-management-regulations).
+Denna information gäller för GDPR, CCPA, PDPA och LGPD. Se [det här avsnittet](../../platform/using/privacy-management.md#privacy-management-regulations) för mer information om dessa regelverk.
 
-Avanmäla försäljning av personuppgifter, som är specifikt för CCPA, förklaras i [detta avsnitt](#sale-of-personal-information-ccpa).
+[Det här avsnittet](#sale-of-personal-information-ccpa) förklarar avanmälan till försäljning av personuppgifter vilken är specifik för CCPA.
 
 >[!IMPORTANT]
 >
->De installationsförfaranden som beskrivs i detta dokument gäller från och med Campaign Classic 18.4 (build 8931+). Om du använder en tidigare version kan du läsa den här [tekniken](https://helpx.adobe.com/se/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).
+>De installationsförfaranden som beskrivs i detta dokument gäller från och med Campaign Classic 18.4 (build 8931+). Om du kör på en tidigare version kan du läsa denna [Tech](https://helpx.adobe.com/se/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).
 
 ## Om sekretessförfrågningar {#about-privacy-requests}
 
-För att underlätta beredskapen för din integritet kan du hantera förfrågningar om åtkomst och borttagning med Adobe Campaign. I **det här avsnittet** beskrivs **rätten till åtkomst** och [rätten att bli glömd](../../platform/using/privacy-management.md#right-access-forgotten)(borttagningsbegäran).
+För att underlätta beredskapen gällande din integritet kan du hantera förfrågningar om åtkomst och borttagning med Adobe Campaign. **Det här avsnittet** beskriver **åtkomsträttigheter** och [rätten att glömmas](../../platform/using/privacy-management.md#right-access-forgotten) (borttagningsbegäran).
 
 Låt oss se hur du kan skapa förfrågningar om åtkomst och borttagning, samt hur de behandlas i Adobe Campaign.
 
@@ -42,17 +42,17 @@ Adobe Campaign erbjuder datakontroller två möjligheter att utföra förfrågni
 
 >[!NOTE]
 >
->Mer information om personuppgifter och om de olika enheter som hanterar data (personuppgiftsansvariga, databehandlare och registrerade) finns i [Personuppgifter och personuppgifter](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Mer information om personuppgifter och de olika enheter som hanterar data (personuppgiftsansvarig, personuppgiftsbiträde och registrerad) finns i [Personuppgifter och personer](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ### Förutsättningar {#prerequesites}
 
-Adobe Campaign erbjuder datakontrollerarverktyg för att skapa och bearbeta sekretessförfrågningar för data som lagras i Adobe Campaign. Det är dock den personuppgiftsansvariges ansvar att hantera relationen till den registrerade (e-post, kundtjänst eller en webbportal).
+Adobe Campaign erbjuder verktyg för personuppgiftsansvarig som låter dig skapa och bearbeta förfrågningar om användarens information gällande data som lagras i Adobe Campaign. Det är dock den personuppgiftsansvariges ansvar att hantera relationen med den registrerade (e-post, kundtjänst eller en webbportal).
 
-Det är därför ditt ansvar som personuppgiftsansvarig att bekräfta identiteten på den registrerade som gör begäran och att bekräfta att de uppgifter som skickas tillbaka till den som gjorde begäran avser den registrerade.
+Det är därför ditt ansvar som personuppgiftsansvarig att bekräfta identiteten på den registrerade som gör förfrågan och bekräfta att de uppgifter som skickas tillbaka till den som utförde förfrågan avser den registrerade.
 
 ### Installera sekretesspaketet {#install-privacy-package}
 
-Om du vill använda den här funktionen måste du installera **[!UICONTROL Privacy Data Protection Regulation]** paketet via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]** . Mer information om hur du installerar paket finns i den [detaljerade dokumentationen](../../installation/using/installing-campaign-standard-packages.md).
+Om du vill använda den här funktionen måste du installera **[!UICONTROL Privacy Data Protection Regulation]**-paketet via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**-menyn. Mer information om hur du installerar paket finns i [den detaljerade dokumentationen](../../installation/using/installing-campaign-standard-packages.md).
 
 Två nya mappar, som är specifika för sekretess, skapas under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**:
 
@@ -69,29 +69,29 @@ I **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL 
 * **[!UICONTROL Delete privacy requests data]**: det här arbetsflödet tar bort mottagarens data som lagras i Adobe Campaign.
 * **[!UICONTROL Privacy request cleanup]**: Med det här arbetsflödet raderas de filer för åtkomstbegäran som är äldre än 90 dagar.
 
-I **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]** har den **[!UICONTROL Privacy Data Right]** namngivna rättigheten lagts till. Den här namngivna rättigheten krävs för Data Controllers för att de ska kunna använda sekretessverktyg. På så sätt kan de skapa nya förfrågningar, spåra deras utveckling, använda API:t osv.
+I **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]** har den namngivna rättigheten **[!UICONTROL Privacy Data Right]** lagts till. Den här namngivna rättigheten krävs för Data Controllers för att de ska kunna använda sekretessverktyg. På så sätt kan de skapa nya förfrågningar, spåra deras utveckling, använda API:t osv.
 
 ![](assets/privacy-right.png)
 
-### Namnutrymmen {#namesspaces}
+### Namnrymder {#namesspaces}
 
-Innan du skapar sekretessförfrågningar måste du definiera det namnutrymme som du ska använda. Detta är nyckeln som kommer att användas för att identifiera den registrerade i Adobe Campaign-databasen.
+Innan du skapar förfrågningar om användarens information måste du definiera den namnrymd som ska användas. Detta är nyckeln som kommer att användas för att identifiera den registrerade i Adobe Campaign-databasen.
 
 Tre namnutrymmen är tillgängliga direkt: e-post, telefon och mobiltelefon. Om du behöver ett annat namnutrymme (till exempel ett anpassat mottagarfält) kan du skapa ett nytt från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Creating a Privacy request {#create-privacy-request-ui}
+## Skapa en förfrågan om användarens information {#create-privacy-request-ui}
 
-Med **Adobe Campaign gränssnitt** kan du skapa dina sekretessförfrågningar och spåra deras utveckling. Följ dessa anvisningar för att skapa en ny sekretessförfrågan:
+Med **Adobe Campaign-gränssnittet** kan du skapa dina sekretessförfrågningar och spåra deras utveckling. Följ dessa anvisningar för att skapa en ny sekretessförfrågan:
 
 1. Gå till mappen Privacy request under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Privacy Requests]**.
 
    ![](assets/privacy-requests-folder.png)
 
-1. På den här skärmen kan du visa alla aktuella sekretessförfrågningar, deras status och loggar. Klicka **[!UICONTROL New]** för att skapa en sekretessförfrågan.
+1. På den här skärmen kan du visa alla aktuella sekretessförfrågningar, deras status och loggar. Klicka på **[!UICONTROL New]** för att skapa en sekretessförfrågan.
 
    ![](assets/privacy-request-new.png)
 
-1. Markera **[!UICONTROL Regulation]** (GDPR, CCPA, PDPA eller LGPD), **[!UICONTROL Request type]** (Access eller Delete), markera en **[!UICONTROL Namespace]** och ange **[!UICONTROL Reconciliation value]**. Om du använder e-post som namnutrymme skriver du den registrerades e-postadress.
+1. Markera **[!UICONTROL Regulation]** (GDPR, CCPA, PDPA eller LGPD), **[!UICONTROL Request type]** (Access eller Delete), välj en **[!UICONTROL Namespace]** och ange **[!UICONTROL Reconciliation value]**. Om du använder e-post som namnutrymme skriver du den registrerades e-postadress.
 
    ![](assets/privacy-request-properties.png)
 
@@ -104,7 +104,7 @@ De tekniska arbetsflödena för sekretess körs en gång om dagen och varje ny b
 
 ### Lista över tabeller {#list-of-tables}
 
-När Adobe Campaign utför en begäran om att ta bort eller få åtkomst till sekretess söker igenom alla den registrerade personens data baserat på informationen **[!UICONTROL Reconciliation value]** i alla tabeller som har en länk till mottagartabellen (egen typ).
+När Adobe Campaign utför en begäran om att ta bort eller få åtkomst till sekretess söker igenom alla den registrerade personens data baserat på **[!UICONTROL Reconciliation value]** i alla tabeller som har en länk till mottagartabellen (egen typ).
 
 Här är en lista över färdiga tabeller som beaktas vid sekretessförfrågningar:
 
@@ -126,30 +126,30 @@ Om du har skapat anpassade tabeller som har en länk till mottagartabellen (egen
 >Om du utför sekretessbatchbegäranden med arbetsflöden för profilborttagning bör du tänka på följande:
 >* Borttagning av profiler via arbetsflöden bearbetar inte underordnade tabeller.
 >* Du måste hantera borttagningen för alla underordnade tabeller.
->* Adobe rekommenderar att du skapar ett ETL-arbetsflöde som lägger till de rader som ska tas bort i tabellen för sekretessåtkomst och låter arbetsflödet utföra borttagningen. **[!UICONTROL Delete privacy requests data]** Vi rekommenderar att du av prestandaskäl begränsar till 200 profiler per dag att ta bort.
+>* Adobe rekommenderar att du skapar ett ETL-arbetsflöde som lägger till de rader som ska tas bort i tabellen för sekretessåtkomst och låter arbetsflödet **[!UICONTROL Delete privacy requests data]** utföra borttagningen. Vi rekommenderar att du av prestandaskäl begränsar till 200 profiler per dag att ta bort.
 
 
-### Status för sekretessförfrågningar {#privacy-request-statuses}
+### Status gällande förfrågningar om användarens information {#privacy-request-statuses}
 
-Här är de olika statusvärdena för sekretessförfrågningar:
+Här följer de olika statusarna gällande förfrågningar om användarens information:
 
-* **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: arbetsflödet har inte bearbetat begäran ännu.
-* **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: arbetsflödet bearbetar begäran.
-* **[!UICONTROL Delete pending]**: arbetsflödet har identifierat alla mottagardata som ska tas bort.
+* **[!UICONTROL New]**/**[!UICONTROL Retry pending]**: arbetsflödet har inte bearbetat förfrågan ännu.
+* **[!UICONTROL Processing]**/**[!UICONTROL Retry in progress]**: arbetsflödet bearbetar förfrågan.
+* **[!UICONTROL Delete pending]**: arbetsflödet har identifierat alla mottagardata för borttagning.
 * **[!UICONTROL Delete in progress]**: arbetsflödet bearbetar borttagningen.
 * **[!UICONTROL Delete Confirmation Pending]** (Ta bort begäran i processläge i två steg): arbetsflödet har bearbetat åtkomstbegäran. Manuell bekräftelse krävs för att utföra borttagningen. Knappen är tillgänglig i 15 dagar.
-* **[!UICONTROL Complete]**: behandlingen av begäran har slutförts utan fel.
-* **[!UICONTROL Error]**: arbetsflödet har påträffat ett fel. Orsaken visas i listan över sekretessförfrågningar i **[!UICONTROL Request status]** kolumnen. Till exempel **[!UICONTROL Error data not found]** innebär det att inga mottagardata som matchar den registrerade har **[!UICONTROL Reconciliation value]** hittats i databasen.
+* **[!UICONTROL Complete]**: behandlingen av förfrågan har slutförts utan fel.
+* **[!UICONTROL Error]**: arbetsflödet har påträffat ett fel. Orsaken visas i listan över sekretessbegäranden i kolumnen **[!UICONTROL Request status]**. Till exempel innebär **[!UICONTROL Error data not found]** att inga mottagardata som matchar den registrerades **[!UICONTROL Reconciliation value]** har hittats i databasen.
 
 ### 2-stegsprocess {#two-step-process}
 
-Som standard aktiveras **tvåstegsprocessen** . När du skapar en ny Delete-begäran i det här läget utförs alltid en Access-begäran först i Adobe Campaign. På så sätt kan du kontrollera data innan du bekräftar borttagningen.
+Som standard är **tvåstegsprocessen** aktiverad. När du skapar en ny Delete-begäran i det här läget utförs alltid en Access-begäran först i Adobe Campaign. På så sätt kan du kontrollera data innan du bekräftar borttagningen.
 
 Du kan ändra det här läget från skärmen för utgåva av sekretessförfrågningar. Klicka på **[!UICONTROL Advanced settings]**.
 
 ![](assets/privacy-request-advanced-settings.png)
 
-När läget 2 steg är aktiverat ändras status för en ny Delete-begäran till **[!UICONTROL Confirm Delete Pending]**. Hämta den genererade XML-filen från skärmen för sekretessförfrågningar och kontrollera data. Bekräfta att du vill radera data genom att klicka på **[!UICONTROL Confirm delete data]** .
+När tvåstegsläget är aktiverat ändras statusen för en ny Delete-begäran till **[!UICONTROL Confirm Delete Pending]**. Hämta den genererade XML-filen från skärmen för sekretessförfrågningar och kontrollera data. Bekräfta att du vill radera data genom att klicka på knappen **[!UICONTROL Confirm delete data]**.
 
 ![](assets/privacy-request-delete-data.png)
 
@@ -163,7 +163,7 @@ När Access-begäranden behandlas genererar Adobe Campaign en JSSP som hämtar m
 
 där @id är ID för sekretesspolicy.
 
-Den här URL:en lagras i **[!UICONTROL "File location" (@urlFile)]** fältet i **[!UICONTROL Privacy Requests (gdprRequest)]** schemat.
+Den här URL:en lagras i fältet **[!UICONTROL "File location" (@urlFile)]** i schemat **[!UICONTROL Privacy Requests (gdprRequest)]**.
 
 Informationen är tillgänglig i databasen i 90 dagar. När begäran har rensats bort av det tekniska arbetsflödet tas informationen bort från databasen och URL:en blir inaktuell. Kontrollera att URL:en fortfarande är giltig innan du hämtar data från en webbsida.
 
@@ -175,7 +175,7 @@ Datakontrollanter kan enkelt skapa ett webbprogram med motsvarande JSSP-URL för
 
 ![](assets/privacy-gdpr-jssp.png)
 
-Här är ett kodfragment som du kan använda som exempel i webbprogramsaktiviteten **[!UICONTROL Page]** .
+Här är ett kodfragment som du kan använda som exempel i webbprogramaktiviteten **[!UICONTROL Page]**.
 
 ![](assets/privacy-page-activity.png)
 
@@ -211,13 +211,13 @@ Här är ett kodfragment som du kan använda som exempel i webbprogramsaktivitet
 </body> </html>
 ```
 
-Eftersom åtkomsten till den registrerade personens datafil är begränsad måste webbsidans anonyma åtkomst inaktiveras. Det är bara operatorn med **[!UICONTROL Privacy Data Right]** namngiven behörighet som kan logga in på sidan och hämta data.
+Eftersom åtkomsten till den registrerade personens datafil är begränsad måste webbsidans anonyma åtkomst inaktiveras. Det är bara operatorn med namngiven **[!UICONTROL Privacy Data Right]**-behörighet som kan logga in på sidan och hämta data.
 
 ## Automatisk process för begäran om sekretess {#automatic-privacy-request-api}
 
-Adobe Campaign tillhandahåller ett **API** som du kan använda för att konfigurera en automatisk process för sekretessförfrågningar.
+Adobe Campaign tillhandahåller ett **API** som gör att du kan konfigurera en automatisk process för sekretessförfrågningar.
 
-Med API:t är den allmänna sekretessprocessen densamma som att [använda gränssnittet](#create-privacy-request-ui). Den enda skillnaden är att begäran om sekretess har skapats. I stället för att skapa begäran i Adobe Campaign skickas en POST med begärandeinformationen till Campaign. För varje begäran läggs en ny post till på **[!UICONTROL Privacy Requests]** skärmen. De tekniska arbetsflödena för integritetsskydd behandlar sedan begäran på samma sätt som en begäran som läggs till via gränssnittet.
+Med API:t är den allmänna sekretessprocessen densamma som [när du använder gränssnittet](#create-privacy-request-ui). Den enda skillnaden är att begäran om sekretess har skapats. I stället för att skapa begäran i Adobe Campaign skickas en POST med begärandeinformationen till Campaign. För varje begäran läggs en ny post till på skärmen **[!UICONTROL Privacy Requests]**. De tekniska arbetsflödena för integritetsskydd behandlar sedan begäran på samma sätt som en begäran som läggs till via gränssnittet.
 
 Om du använder API:t för att skicka in sekretessförfrågningar rekommenderar vi att du låter den **tvåstegsprocess** som är aktiverad för de första Delete-förfrågningarna vara kvar för att testa returnerade data. När testerna är klara kan du inaktivera tvåstegsprocessen så att processen för borttagningsbegäran kan köras automatiskt.
 
@@ -225,11 +225,11 @@ JS-API:t **[!UICONTROL CreateRequestByName]** definieras så här.
 
 >[!NOTE]
 >
->Om du använde API:t **gdprRequest** kan du fortfarande använda det, men vi rekommenderar att du använder det nya API:t **privacyRequest** .
+>Om du använde API:t **gdprRequest** kan du fortfarande använda det, men vi rekommenderar att du använder det nya API:t **privacyRequest**.
 
 >[!IMPORTANT]
 >
->Den **[!UICONTROL Privacy Data Right]** namngivna rättigheten krävs för att använda API:t.
+>Den namngivna **[!UICONTROL Privacy Data Right]**-rättigheten krävs för att använda API:t.
 
 ```
 <method library="nms:gdpr.js" name="CreateRequestByName" static="true">
@@ -251,9 +251,9 @@ JS-API:t **[!UICONTROL CreateRequestByName]** definieras så här.
 >
 >Om du migrerar till 20.2 och om du redan använde API:t måste du lägga till fältet&quot;Regel&quot; enligt ovan. Om du använder en tidigare version kan du fortsätta att använda API:t utan fältet för regler.
 
-### Anropa API externt {#invoking-api-externally}
+### Anropa API:t externt {#invoking-api-externally}
 
-Här är ett exempel på hur du kan anropa API:t externt (autentisering via API:t och information om API:t för sekretess specifikt). Mer information om sekretess-API:t finns i [API-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html). Du kan även läsa dokumentationen för [webbtjänstanrop](../../configuration/using/web-service-calls.md).
+Här är ett exempel på hur du kan anropa API:t externt (autentisering via API:t och information om API:t för sekretess specifikt). Mer information om sekretess-API:t finns i [API-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html). Du kan även läsa [dokumentationen för webbtjänstanrop](../../configuration/using/web-service-calls.md).
 
 Först och främst måste du utföra autentiseringen via API:
 
@@ -277,11 +277,11 @@ Anropa sedan sekretess-API:
 
    Om du vill ha hjälp med att utföra stegen ovan bör du tänka på följande:
 
-   * Du kan använda en **queryDef** i **nms:gdprRequest** -schemat för att kontrollera status för åtkomstbegäran.
-   * Du kan använda en **queryDef** i **nms:gdprRequestData** -schemat för att få resultatet av åtkomstbegäran.
-   * Om du vill kunna hämta XML-filen från **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** måste du vara inloggad och komma åt den från en vitlistad IP. Det gör du genom att skapa ett webbprogram som ger dig åtkomst till filen som genereras av JSSP.
+   * Du kan använda ett **queryDef**-schema på **nms:gdprRequest**-schemat för att kontrollera status för åtkomstbegäran.
+   * Du kan använda ett **queryDef**-schema på **nms:gdprRequestData**-schemat för att få resultatet av åtkomstbegäran.
+   * Om du vill kunna hämta XML-filen från **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**, måste du vara inloggad och komma åt den från en vitlistad IP. Det gör du genom att skapa ett webbprogram som ger dig åtkomst till filen som genereras av JSSP.
 
-### Anropa API från en JS {#invoking-api-from-js}
+### Anropa API:t från en JS {#invoking-api-from-js}
 
 Här är ett exempel på hur du kan anropa API:t från en JS i Campaign Classic.
 
@@ -291,7 +291,7 @@ Här är ett exempel på hur du kan anropa API:t från en JS i Campaign Classic.
 >
 >Om du migrerar till 20.2 och om du redan använde API:t måste du lägga till fältet&quot;Regel&quot;. Om du använder en tidigare version kan du fortsätta att använda API:t utan fältet för regler.
 
-* Om du **använder en tidigare version (med GDPR-paket)** kan du fortsätta använda API:t utan fältet&quot;Regel&quot; enligt nedan:
+* Om du **använder en tidigare version (med GDPR-paket)** kan du fortsätta använda API:t utan fältet&quot;regler&quot; enligt nedan:
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -316,7 +316,7 @@ Här är ett exempel på hur du kan anropa API:t från en JS i Campaign Classic.
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* Om du **migrerar till 20.2** och om du redan använder API:t måste du lägga till fältet&quot;Regel&quot; enligt nedan:
+* Om du **migrerar till 20.2** och om du redan använder API:t, måste du lägga till fältet för regler enligt nedan:
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -347,7 +347,7 @@ Här är ett exempel på hur du kan anropa API:t från en JS i Campaign Classic.
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* Om du **använder Campaign Classic 20.2 (build 9178+) eller senare**&#x200B;är fältet&quot;Regulation&quot; valfritt, vilket visas nedan:
+* Om du använder **Campaign Classic 20.2 (build 9178+) eller senare** är fältet &#39;Regulation&#39; valfritt, vilket visas nedan:
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -380,45 +380,45 @@ Här är ett exempel på hur du kan anropa API:t från en JS i Campaign Classic.
 
 ## Avanmäl dig till försäljning av personuppgifter (CCPA) {#sale-of-personal-information-ccpa}
 
-The **California Consumer Privacy Act** (CCPA) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
+**CCPA (California Consumer Privacy Act)** ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger vissa företag som bedriver verksamhet i Kalifornien skyldigheter när det gäller uppgiftsskydd.
 
-Konfigurationen och användningen av begäranden om åtkomst och borttagning är gemensamma för både GDPR och CCPA. I det här avsnittet presenteras avanmälan för försäljning av personuppgifter, som är specifikt för CCPA.
+Konfigurationen och användningen av förfrågningar gällande åtkomst och borttagning är gemensamma för både GDPR och CCPA. Det här avsnittet presenterar avanmälan för försäljning av personuppgifter vilken är specifik för CCPA.
 
-Förutom de verktyg för [hantering](../../platform/using/privacy-management.md#consent-management) av samtycke som tillhandahålls av Adobe Campaign har ni möjlighet att spåra om en konsument har valt ut för försäljning av personuppgifter.
+Förutom verktygen [Samtyckeshantering](../../platform/using/privacy-management.md#consent-management) som tillhandahålls av Adobe Campaign kan du spåra om en konsument har valt att sälja personuppgifter.
 
-En konsument bestämmer genom ert system att han/hon inte tillåter att hans/hennes personuppgifter säljs till tredje part. I Adobe Campaign kan du lagra och spåra den här informationen.
+En konsument bestämmer genom ert system att denne inte tillåter att sina personuppgifter säljs till tredje part. I Adobe Campaign kan du lagra och spåra den här informationen.
 
-För att detta ska fungera måste du utöka tabellen Profiler och lägga till ett **[!UICONTROL Opt-Out for CCPA]** fält.
+För att detta ska fungera måste du utöka profiltabellen och lägga till ett **[!UICONTROL Opt-Out for CCPA]**-fält.
 
 >[!IMPORTANT]
 >
->Det är ditt ansvar som personuppgiftsansvariga att ta emot den registrerade personens begäran och att hålla reda på förfrågningsdatum för CCPA. Som teknikleverantör erbjuder vi bara ett sätt att avanmäla oss. Mer information om din roll som personuppgiftsansvariga finns i [Personliga data och personuppgifter](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Det är ditt ansvar som personuppgiftsansvarig att ta emot den registrerades förfrågan och att hålla reda på förfrågningsdatum för CCPA. Som teknikleverantör erbjuder vi bara ett sätt att avanmäla sig. Mer information om din roll som personuppgiftsansvarig finns i [Personuppgifter och personer](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ### Förutsättning {#ccpa-prerequisite}
 
-För att kunna utnyttja denna information måste du skapa det här fältet i Adobe Campaign Classic. För detta kommer du att lägga till ett booleskt fält i **[!UICONTROL Recipient]** tabellen. När ett nytt fält skapas stöds det automatiskt av Campaign-API:t.
+För att kunna utnyttja denna information måste du skapa det här fältet i Adobe Campaign Classic. För detta kommer du att lägga till ett booleskt fält i tabellen **[!UICONTROL Recipient]**. När ett nytt fält skapas stöds det automatiskt av API:et i Campaign.
 
 Om du använder en anpassad mottagartabell måste du också utföra den här åtgärden.
 
-Mer detaljerad information om hur du skapar ett nytt fält finns i dokumentationen [till](../../configuration/using/about-schema-edition.md)schemaversionen.
+Mer detaljerad information om hur du skapar ett nytt fält finns i [dokumentationen för schemaversionen](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
 >Att ändra scheman är en känslig åtgärd som bara måste utföras av expertanvändare.
 
-1. Gå till **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Add new fields]**, markera **[!UICONTROL Recipients]** som **[!UICONTROL Document type]** och klicka på **[!UICONTROL Next]**. Mer information om hur du lägger till fält i en tabell finns i [det här avsnittet](../../configuration/using/new-field-wizard.md).
+1. Gå till **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Add new fields]**, välj **[!UICONTROL Recipients]** som **[!UICONTROL Document type]** och klicka på **[!UICONTROL Next]**. Mer information om hur du lägger till fält i en tabell finns i [det här avsnittet](../../configuration/using/new-field-wizard.md).
 
    ![](assets/privacy-ccpa-1.png)
 
-1. För **[!UICONTROL Field type]** väljer du **[!UICONTROL SQL field]**. Använd Label **[!UICONTROL Opt-Out for CCPA]**. Välj **[!UICONTROL 8-bit integer (boolean)]** typ och definiera följande unika **[!UICONTROL Relative path]**: @OPTOUTCCPA. Klicka på **[!UICONTROL Finish]**.
+1. Välj **[!UICONTROL SQL field]** för **[!UICONTROL Field type]**. Använd **[!UICONTROL Opt-Out for CCPA]** som etikett. Välj typen **[!UICONTROL 8-bit integer (boolean)]** och definiera följande unika **[!UICONTROL Relative path]**: @OPTOUTCCPA. Klicka på **[!UICONTROL Finish]**.
 
    ![](assets/privacy-ccpa-2.png)
 
-   Detta utökar eller skapar **[!UICONTROL Recipient (cus)]** schemat. Kontrollera att fältet har lagts till korrekt genom att klicka på det.
+   Detta utökar eller skapar **[!UICONTROL Recipient (cus)]**-schemat. Kontrollera att fältet har lagts till korrekt genom att klicka på det.
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Klicka på noden **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** i Utforskaren. I **[!UICONTROL Recipient (nms)]** under Allmänt paket lägger du till ett `<input>` element och använder, för xpath-värdet, den relativa sökvägen som definieras i steg 2. Mer information om hur du identifierar ett formulär finns i [det här avsnittet](../../configuration/using/identifying-a-form.md).
+1. Klicka på noden **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** i Utforskaren. I **[!UICONTROL Recipient (nms)]**, under Allmänt paket, lägger du till ett `<input>`-element och använder, för xpath-värdet, den relativa sökvägen som definieras i steg 2. Mer information om hur du identifierar ett formulär finns i [det här avsnittet](../../configuration/using/identifying-a-form.md).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -430,24 +430,24 @@ Mer detaljerad information om hur du skapar ett nytt fält finns i dokumentation
 
 ### Användning {#usage}
 
-Det är Data Controller som ska fylla i fältets värde och följa CCPA:s riktlinjer och regler för dataförsäljning.
+Det är den personuppgiftsansvariges ansvar att fylla i fältets värde och följa CCPA:s riktlinjer och regler för försäljning av personuppgifter.
 
-Om du vill fylla i värdena kan du använda flera metoder:
+Du kan använda flera olika metoder för att fylla i värdena:
 
 * Använda Campaigns gränssnitt genom att redigera mottagarinformationen
 * Använda API
 * Via ett arbetsflöde för dataimport
 
-Du bör då se till att du aldrig säljer personuppgifter till någon tredje part för profiler som har avanmält sig.
+Du ska sedan se till att du aldrig säljer personuppgifter, från profiler som har avanmält sig, till någon tredje part.
 
-1. Om du vill ändra avanmälningsstatus går du till **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** och väljer en mottagare. På fliken **[!UICONTROL General]** ser du det fält som har konfigurerats i föregående avsnitt.
+1. Om du vill ändra avanmälningsstatus går du till **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** och väljer en mottagare. På fliken **[!UICONTROL General]** ser du fältet som konfigurerats i föregående avsnitt.
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Konfigurera mottagarlistan så att den översta kolumnen visas. Mer information om hur du konfigurerar listor finns i den [detaljerade dokumentationen](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+1. Konfigurera mottagarlistan så att den översta kolumnen visas. Mer information om hur du konfigurerar listor finns i [den detaljerade dokumentationen](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Du kan klicka på kolumnen för att sortera mottagare enligt avanmälningsinformationen. Du kan också skapa ett filter så att endast mottagare som har avanmält sig visas. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. Du kan klicka på kolumnen för att sortera mottagare enligt avanmälningsinformationen. Du kan också skapa ett filter så att endast mottagare som har avanmält sig visas. Mer information om hur du skapar filter finns i [det här avsnittet](../../platform/using/creating-filters.md).
 
    ![](assets/privacy-ccpa-7.png)
