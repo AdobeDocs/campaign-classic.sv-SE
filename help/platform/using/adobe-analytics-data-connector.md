@@ -23,11 +23,11 @@ ht-degree: 1%
 >
 >Adobe Analytics Data Connector är inte kompatibelt med Transactional Messaging (Message Center).
 
-Med Data Connector (tidigare Adobe Genesis) kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningspaketet** . Den skickar data till Adobe Campaign i form av segment som gäller användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics - Datakoppling.
+Med Data Connector (tidigare Adobe Genesis) kan Adobe Campaign och Adobe Analytics interagera via **Web Analytics-anslutningarna**-paketet. Den skickar data till Adobe Campaign i form av segment som gäller användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics - Datakoppling.
 
 Med hjälp av Data Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Tack vare dessa integreringar kan Adobe Campaign återställa data om besökares beteende för en eller flera webbplatser efter en marknadsföringskampanj och (efter analys) köra återmarknadsföringskampanjer i syfte att konvertera dem till köpare. Omvänt gör webbanalysverktygen att Adobe Campaign kan vidarebefordra indikatorer och kampanjattribut till sina plattformar.
 
-Mer information om hur du implementerar Adobe Analytics med Adobe Campaign finns i den här [dokumentationen](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html).
+Mer information om hur du implementerar integreringen av Adobe Analytics med Adobe Campaign finns i den här [dokumentationen](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html).
 
 Åtgärdsfälten för varje verktyg är följande:
 
@@ -58,13 +58,13 @@ I följande steg beskrivs konfigurationen av dataanslutningen med hjälp av en g
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. I listan över Experience Cloud-lösningar väljer du **[!UICONTROL Analytics]**.
+1. Välj **[!UICONTROL Analytics]** i listan över Experience Cloud-lösningar.
 
    ![](assets/adobe_genesis_install_013.png)
 
-1. From the **[!UICONTROL Admin]** tab, select **[!UICONTROL Data Connectors]**.
+1. Välj **[!UICONTROL Data Connectors]** på fliken **[!UICONTROL Admin]**.
 
-   Du måste ha följande behörigheter för analysverktygen för att komma åt **[!UICONTROL Data Connectors]** menyn. Se denna [sida](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html) för mer information om detta
+   Du måste ha följande behörigheter för analysverktygen för att komma åt **[!UICONTROL Data Connectors]**-menyn. Se denna [sida](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html) för mer information om detta
    * Integreringar (skapa)
    * Integreringar (uppdatering)
    * Integreringar (ta bort)
@@ -75,19 +75,19 @@ I följande steg beskrivs konfigurationen av dataanslutningen med hjälp av en g
 
    ![](assets/adobe_genesis_install_014.png)
 
-1. In the **[!UICONTROL Add integration]** dialog, click **[!UICONTROL Activate]**.
-1. Markera **[!UICONTROL I accept these terms and conditions]** och markera den **[!UICONTROL Report suite]** länkade till den här integreringen och ange kopplingsetiketten.
+1. Klicka på **[!UICONTROL Activate]** i dialogrutan **[!UICONTROL Add integration]**.
+1. Markera **[!UICONTROL I accept these terms and conditions]** och markera **[!UICONTROL Report suite]** som är länkad till den här integreringen och ange kopplingsetiketten.
 
    När du är klar klickar du på **[!UICONTROL Create and configure this integration]**.
 
    ![](assets/adobe_genesis_install_015.png)
 
-1. Ange den e-postadress som ska ta emot meddelanden för anslutningsprogrammet och kopiera sedan meddelandet **[!UICONTROL Account ID]** så som det visas i det externa Adobe Campaign-kontot (mer information finns i [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign)).
+1. Ange den e-postadress som ska ta emot meddelanden för anslutningsprogrammet och kopiera sedan **[!UICONTROL Account ID]** så som den visas i det externa Adobe Campaign-kontot (mer information finns i [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign)).
 
    ![](assets/adobe_genesis_install_005.png)
 
 1. Ange de identifierare som krävs för att mäta effekten av e-postkampanjen, dvs. det interna kampanjnamnet (cid) och ID:t för registret iNmsBroadlog (bid). Du bör också ange indikatorer för händelser som ska samlas in.
-Kontrollera att **[!UICONTROL Events]** du har typen Numerisk, annars visas de inte i listrutan.
+Kontrollera att **[!UICONTROL Events]** är av numerisk typ, annars visas de inte i listrutan.
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -95,7 +95,7 @@ Kontrollera att **[!UICONTROL Events]** du har typen Numerisk, annars visas de i
 
    ![](assets/adobe_genesis_install_007.png)
 
-1. I **[!UICONTROL Data collection]** väljer du en metod för att återställa data, i det här fallet de identifierare **[!UICONTROL cid]** och **[!UICONTROL bid]** identifierare som anges i steg 6.
+1. I **[!UICONTROL Data collection]** väljer du en metod för att återställa data, i det här fallet identifierarna **[!UICONTROL cid]** och **[!UICONTROL bid]** som anges i steg 6.
 
    ![](assets/adobe_genesis_install_009.png)
 
@@ -107,7 +107,7 @@ Kontrollera att **[!UICONTROL Events]** du har typen Numerisk, annars visas de i
 
    ![](assets/adobe_genesis_install_011.png)
 
-1. Klicka **[!UICONTROL Activate Now]** för att godkänna konfigurationen och aktivera kopplingen.
+1. Klicka på **[!UICONTROL Activate Now]** för att godkänna konfigurationen och aktivera kopplingen.
 
    ![](assets/adobe_genesis_install_012.png)
 
@@ -118,19 +118,19 @@ Kontrollera att **[!UICONTROL Events]** du har typen Numerisk, annars visas de i
 Integreringen av Adobe Campaign i Analytics-plattformarna görs med hjälp av en anslutning. Använd följande process om du vill synkronisera programmen:
 
 1. Installera **Web Analytics-anslutningspaketet** i Adobe Campaign.
-1. Gå till **[!UICONTROL Administration > Platform > External accounts]** mappen för Adobe Campaign-trädet.
-1. Högerklicka på listan med externa konton och välj **[!UICONTROL New]** i listrutan (eller klicka på **[!UICONTROL New]** knappen ovanför listan med externa konton).
-1. Välj **[!UICONTROL Web Analytics]** typ i listrutan.
-1. Välj provider för kopplingen, d.v.s. **[!UICONTROL Adobe Analytics - Data Connector]** i det här fallet.
+1. Gå till mappen **[!UICONTROL Administration > Platform > External accounts]** i Adobe Campaign-trädet.
+1. Högerklicka på listan med externa konton och välj **[!UICONTROL New]** i listrutan (eller klicka på knappen **[!UICONTROL New]** ovanför listan med externa konton).
+1. Använd listrutan för att välja typen **[!UICONTROL Web Analytics]**.
+1. Välj provider för kopplingen, dvs. **[!UICONTROL Adobe Analytics - Data Connector]** i det här fallet.
 
    ![](assets/webanalytics_ext_account_create_001.png)
 
-1. Klicka på **[!UICONTROL Enrich the formula...]** länken om du vill ändra URL-beräkningsformeln för att ange integreringsinformation för verktyget Webbanalys (kampanj-ID) och domänerna för de webbplatser vars aktivitet måste spåras.
+1. Klicka på länken **[!UICONTROL Enrich the formula...]** om du vill ändra URL-beräkningsformeln för att ange integreringsinformation för verktyget Webbanalys (kampanj-ID) och domänerna för de webbplatser vars aktivitet måste spåras.
 1. Ange domännamn för webbplatserna.
 
    ![](assets/webanalytics_tracking_001.png)
 
-1. Klicka **[!UICONTROL Next]** och kontrollera att domännamnen har sparats.
+1. Klicka på **[!UICONTROL Next]** och kontrollera att domännamnen har sparats.
 
    ![](assets/webanalytics_tracking_002.png)
 
@@ -149,40 +149,40 @@ Integreringen av Adobe Campaign i Analytics-plattformarna görs med hjälp av en
 
 >[!NOTE]
 >
->Om du använder flera målgruppsmätningsverktyg kan du välja **[!UICONTROL Other]** i **[!UICONTROL Partners]** listrutan när du skapar det externa kontot. Du får endast referera till ett externt konto i leveransegenskaperna: Du måste därför anpassa formeln för spårade URL-adresser genom att lägga till de parametrar som förväntas av Adobe och alla andra mätverktyg som används.
+>Om du använder flera målgruppsmätningsverktyg kan du välja **[!UICONTROL Other]** i listrutan **[!UICONTROL Partners]** när du skapar det externa kontot. Du får endast referera till ett externt konto i leveransegenskaperna: Du måste därför anpassa formeln för spårade URL-adresser genom att lägga till de parametrar som förväntas av Adobe och alla andra mätverktyg som används.
 
 ### Steg 3: Synkronisera Adobe Campaign och Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 När du har skapat det externa kontot måste du synkronisera båda programmen.
 
 1. Gå till ditt tidigare skapade externa konto.
-1. Ändra kontot efter **[!UICONTROL Label]** behov.
-1. Ändra **[!UICONTROL Internal name]** så att den matchar det **[!UICONTROL Name]** valda när du konfigurerar Data Connector.
+1. Ändra kontot **[!UICONTROL Label]** efter behov.
+1. Ändra **[!UICONTROL Internal name]** så att den matchar **[!UICONTROL Name]** som valdes när du konfigurerade Data Connector.
 
    ![](assets/webanalytics_ext_account_setting_001.png)
 
-1. Klicka på **[!UICONTROL Approve connection]** länken.
+1. Klicka på länken **[!UICONTROL Approve connection]**.
 
    ![](assets/webanalytics_ext_account_setting_002.png)
 
-   Kontrollera att **[!UICONTROL Internal name]** matchar **[!UICONTROL Name]** inställningarna i konfigurationsguiden för Data Connector.
+   Kontrollera att **[!UICONTROL Internal name]** matchar **[!UICONTROL Name]** som anges i konfigurationsguiden för Data Connector.
 
-1. Ange informationen **[!UICONTROL Account ID]** i konfigurationsguiden för Data Connector.
+1. Ange **[!UICONTROL Account ID]** i konfigurationsguiden för Data Connector.
 
    ![](assets/webanalytics_ext_account_setting_003.png)
 
 1. Följ stegen i guiden för Data Connector och gå sedan tillbaka till det externa kontot i Adobe Campaign.
-1. Klicka **[!UICONTROL Next]** för att datautbytet ska äga rum mellan Adobe Campaign och Adobe Analytics - Datakoppling.
+1. Klicka på **[!UICONTROL Next]** för att datautbytet ska äga rum mellan Adobe Campaign och Adobe Analytics - dataanslutning.
 
    Segmentlistan visas när synkroniseringen är klar.
 
    ![](assets/webanalytics_ext_account_setting_004.png)
 
-När synkroniseringen av data mellan Adobe Campaign och Adobe Analytics - Datakoppling är aktiv, återställs de tre standardsegmenten som definieras i guiden Data Connector av Adobe Campaign och blir tillgängliga på fliken **[!UICONTROL Segments]** i Adobe Campaign externa konto.
+När synkroniseringen av data mellan Adobe Campaign och Adobe Analytics - Datakoppling är aktiverad, återställs de tre standardsegmenten som definieras i guiden för dataanslutning av Adobe Campaign och blir tillgängliga på fliken **[!UICONTROL Segments]** i Adobe Campaign externa konto.
 
 ![](assets/webanalytics_segments.png)
 
-Om ytterligare segment har konfigurerats i guiden för dataanslutning kan du lägga till dem i Adobe Campaign. Det gör du genom att klicka på **[!UICONTROL Update segment list]** länken och följa stegen som beskrivs i guiden för det externa kontot. När åtgärden har utförts visas de nya segmenten i listan.
+Om ytterligare segment har konfigurerats i guiden för dataanslutning kan du lägga till dem i Adobe Campaign. Det gör du genom att klicka på länken **[!UICONTROL Update segment list]** och följa stegen som beskrivs i den externa kontoguiden. När åtgärden har utförts visas de nya segmenten i listan.
 
 ![](assets/webanalytics_segments_update.png)
 
@@ -190,13 +190,13 @@ Om ytterligare segment har konfigurerats i guiden för dataanslutning kan du lä
 
 Datautbyte mellan Adobe Campaign och Adobe Analytics - Datautkoppling hanteras av fyra tekniska arbetsflöden som körs som en bakgrundsuppgift.
 
-De finns i Adobe Campaign-trädet, under **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** mappen.
+De är tillgängliga i Adobe Campaign-trädet, under mappen **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]**.
 
 ![](assets/webanalytics_workflows.png)
 
 * **[!UICONTROL Recovering of web events]**: en gång i timmen hämtar det här arbetsflödet segment om hur användare beter sig på en viss webbplats, inkluderar dem i Adobe Campaign-databasen och startar arbetsflödet för ommarknadsföring.
-* **[!UICONTROL Event purge]**: Med det här arbetsflödet kan du ta bort alla händelser från databasen beroende på vilken period som är konfigurerad i **[!UICONTROL Lifespan]** fältet. Mer information finns i [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. De data som samlas in av det här arbetsflödet är tillgängliga i **[!UICONTROL Re-marketing efficiency]** rapporten, se den här [sidan](#creating-a-re-marketing-campaign).
+* **[!UICONTROL Event purge]**: Med det här arbetsflödet kan du ta bort alla händelser från databasen beroende på vilken period som har konfigurerats i  **[!UICONTROL Lifespan]** fältet. Mer information finns i [Steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign).
+* **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. Data som samlas in av det här arbetsflödet är tillgängliga i **[!UICONTROL Re-marketing efficiency]**-rapporten, se den här [sidan](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Sending of indicators and campaign attributes]**: Med kan ni skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics - Datakonnektor. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 
    Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan fördröja analysresultaten.
@@ -222,8 +222,8 @@ De finns i Adobe Campaign-trädet, under **[!UICONTROL Administration > Producti
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
-   * **[!UICONTROL Label]** (operation/@label): bara om **Campaign** -paketet är installerat
-   * **[!UICONTROL Nature]** (operation/@nature): bara om **Campaign** -paketet är installerat
+   * **[!UICONTROL Label]** (operation/@label): bara om  **** Campaign-paketet är installerat
+   * **[!UICONTROL Nature]** (operation/@nature): bara om  **** Campaign-paketet är installerat
    * **[!UICONTROL Tag 1]** (webAnalytics/@tag1)
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
@@ -240,13 +240,13 @@ För att Adobe Experience Cloud ska kunna spåra aktiviteter på webbplatserna n
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Öppna leveransegenskaperna.
-1. Gå till **[!UICONTROL Web Analytics]** fliken och välj det tidigare skapade externa kontot. Se [steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign).
+1. Gå till fliken **[!UICONTROL Web Analytics]** och välj det tidigare skapade externa kontot. Se [Steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
 1. Nu kan du skicka leveransen och öppna rapporten i Adobe Analytics.
 
-## Creating a re-marketing campaign {#creating-a-re-marketing-campaign}
+## Skapa en marknadsföringskampanj {#creating-a-re-marketing-campaign}
 
 För att förbereda er marknadsföringskampanj skapar ni helt enkelt leveransmallar som kan användas för återmarknadsföringskampanjer. Konfigurera sedan er marknadsföringskampanj och länka den till ett segment. Varje segment måste ha olika återmarknadsföringskampanjer.
 
@@ -254,17 +254,17 @@ För att förbereda er marknadsföringskampanj skapar ni helt enkelt leveransmal
 
 Adobe Campaign tillhandahåller skräddarsydda leveransmallar som ni kan använda eller registrera er själva för att förbereda kampanjer.
 
-1. Gå **[!UICONTROL Explorer]** till **[!UICONTROL Resources > Templates > Delivery templates]** mappen i Adobe Campaign-trädet.
-1. Duplicera **[!UICONTROL Email delivery (re-marketing)]** mallen eller mallexemplen för ny marknadsföring från Adobe Campaign.
+1. Gå till mappen **[!UICONTROL Resources > Templates > Delivery templates]** i Adobe Campaign-trädet från **[!UICONTROL Explorer]**.
+1. Duplicera **[!UICONTROL Email delivery (re-marketing)]**-mallen eller mallexemplen för ny marknadsföring som Adobe Campaign erbjuder.
 1. Anpassa mallen efter dina behov och spara den.
 
    ![](assets/webanalytics_delivery_model.png)
 
-1. Skapa en ny kampanj och välj **[!UICONTROL Re-marketing campaign]** mallen i listrutan.
+1. Skapa en ny kampanj och välj mallen **[!UICONTROL Re-marketing campaign]** i listrutan.
 
    ![](assets/webanalytics_remarketing_campaign_002.png)
 
-1. Klicka på **[!UICONTROL Configure...]** länken för att ange det segment och den leveransmall som är länkad till kampanjen.
+1. Klicka på länken **[!UICONTROL Configure...]** för att ange segmentet och leveransmallen som är länkad till kampanjen.
 1. Välj det tidigare konfigurerade externa kontot.
 
    ![](assets/webanalytics_remarketing_campaign_003.png)
@@ -277,9 +277,9 @@ Adobe Campaign tillhandahåller skräddarsydda leveransmallar som ni kan använd
 
    ![](assets/webanalytics_remarketing_campaign_006.png)
 
-1. Klicka **[!UICONTROL OK]** för att stänga kampanjfönstret.
+1. Klicka på **[!UICONTROL OK]** för att stänga kampanjfönstret.
 
-Du kommer åt **[!UICONTROL Re-marketing efficiency]** rapporten via den globala rapportsidan. Här kan du se antalet konverterade kontakter (dvs. ha köpt något) i relation till antalet övergivna kundvagnar efter Adobe Campaign marknadsföringskampanj. Konverteringsgraden beräknas per vecka, månad eller sedan synkroniseringen mellan Adobe Campaign och webbanalysverktygen startades.
+**[!UICONTROL Re-marketing efficiency]**-rapporten nås via den globala rapportsidan. Här kan du se antalet konverterade kontakter (dvs. ha köpt något) i relation till antalet övergivna kundvagnar efter Adobe Campaign marknadsföringskampanj. Konverteringsgraden beräknas per vecka, månad eller sedan synkroniseringen mellan Adobe Campaign och webbanalysverktygen startades.
 
 ![](assets/webanalytics_reporting.png)
 
