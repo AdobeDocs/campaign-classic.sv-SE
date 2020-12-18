@@ -27,12 +27,12 @@ Det finns två möjliga scenarier:
 
    ![](assets/operator-passwd.png)
 
-* **Intern** lösenordsförlust (endast lokala kunder).
+* **Förlorat** internt lösenord (endast lokala kunder).
 
-   Om det **interna** lösenordet går förlorat måste du initiera det igen. Gör så här:
+   Om det interna **lösenordet för** försvinner måste du initiera om det. Gör så här:
 
-   1. Redigera **/usr/local/neolane/nl6/conf/serverConf.xml** .
-   1. Gå till raden **internalPassword** .
+   1. Redigera filen **/usr/local/neolane/nl6/conf/serverConf.xml**.
+   1. Gå till raden **internalPassword**.
 
       ```
       <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -61,5 +61,5 @@ Det finns två möjliga scenarier:
       Confirmation 
       ```
 
-   1. Nu kan du använda ditt nya lösenord för att ansluta i **internt** läge.
+   1. Du kan nu använda ditt nya lösenord för att ansluta i läget **Intern**.
 
