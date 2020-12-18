@@ -25,7 +25,7 @@ Adobe Campaign erbjuder ett urval av tre värdmodeller som ger flexibilitet och 
 
 * **Managed Services (värd)**
 
-   Adobe Campaign kan distribueras som en hanterad tjänst: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och kundens Campaign-databas är helt värdbaserade för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret för att avbryta prenumerationen och landningssidor. Adobe allokerar upp till tre instanser i molnet - utveckling, testning/scen och produktion. Installations- och konfigurationsstegen för den här värdmodellen beskrivs [i det här avsnittet](../../installation/using/hosted-model.md).
+   Adobe Campaign kan distribueras som en hanterad tjänst: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och kundens Campaign-databas är helt värdbaserade för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret för att avbryta prenumerationen och landningssidor. Adobe allokerar upp till tre instanser i molnet - utveckling, testning/scen och produktion. Installations- och konfigurationsstegen för den här värdmodellen visas [i det här avsnittet](../../installation/using/hosted-model.md).
 
    ![](assets/deployment_hosted.png)
 
@@ -37,7 +37,7 @@ Adobe Campaign erbjuder ett urval av tre värdmodeller som ger flexibilitet och 
 
 * **Hybrid**
 
-   När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på plats hos kunden och körningshanteringen levereras som en molntjänst av Adobe. Adobe Campaign marknadsinstans installeras inuti en kunds brandvägg, så personligt identifierbar information (PII) finns kvar internt och endast data som krävs för att personalisera e-post skickas till molnet för e-postkörning. Körningsinstansen, som finns i molnet, tar emot förfrågningar från instansen On-Premise om att leverera e-postmeddelanden. Den här instansen personaliserar alla e-postmeddelanden och levererar dem. Inga data av något slag lagras permanent i molnet. Installations- och konfigurationsstegen för den här värdmodellen beskrivs [i det här avsnittet](../../installation/using/hybrid-model.md).
+   När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på plats hos kunden och körningshanteringen levereras som en molntjänst av Adobe. Adobe Campaign marknadsinstans installeras inuti en kunds brandvägg, så personligt identifierbar information (PII) finns kvar internt och endast data som krävs för att personalisera e-post skickas till molnet för e-postkörning. Körningsinstansen, som finns i molnet, tar emot förfrågningar från instansen On-Premise om att leverera e-postmeddelanden. Den här instansen personaliserar alla e-postmeddelanden och levererar dem. Inga data av något slag lagras permanent i molnet. Installations- och konfigurationsstegen för den här värdmodellen visas [i det här avsnittet](../../installation/using/hybrid-model.md).
 
    ![](assets/deployment_hybrid.png)
 
