@@ -21,7 +21,7 @@ I det här avsnittet beskrivs alla tillgängliga aktiviteter. Beroende på noden
 
 Arbetsflödesaktiviteter grupperas efter kategori. Det finns fyra flikar tillgängliga samtidigt.
 
-I kampanjarbetsflödena ersätts fliken av **[!UICONTROL Events]** **[!UICONTROL Deliveries]** fliken. Aktiviteterna på den här fliken beskrivs i avsnittet [Åtgärdsaktiviteter](../../workflow/using/about-action-activities.md) .
+I kampanjarbetsflödena ersätts fliken **[!UICONTROL Events]** av fliken **[!UICONTROL Deliveries]**. Aktiviteterna på den här fliken beskrivs i avsnittet [Åtgärdsaktiviteter](../../workflow/using/about-action-activities.md).
 
 ![](assets/wf-activity-tabs.png)
 
