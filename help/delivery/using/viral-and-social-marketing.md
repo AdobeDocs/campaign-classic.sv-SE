@@ -37,7 +37,7 @@ Om du vill att leveransmottagarna ska kunna dela innehållet i meddelandena med 
 
 >[!NOTE]
 >
->Som standard visas inte den här länken i listan med block. Du kommer åt den genom att klicka **[!UICONTROL Other...]** och markera **[!UICONTROL Social network sharing links]** blocket.
+>Som standard visas inte den här länken i listan med block. Du kommer åt den genom att klicka på **[!UICONTROL Other...]** och välja **[!UICONTROL Social network sharing links]**-blocket.
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -49,7 +49,7 @@ När mottagaren klickar på ikonen för ett av de sociala nätverk som visas omd
 
 >[!NOTE]
 >
->Det här anpassningsblocket innehåller alla länkar (för att skicka och dela meddelanden med alla sociala nätverk). Den kan anpassas efter dina behov. Konfigurationen är dock reserverad för avancerade användare. Om du vill redigera det matchande personaliseringsblocket går du till **[!UICONTROL Resources > Campaign management > Personalization blocks]** noden i Adobe Campaign-trädet.
+>Det här anpassningsblocket innehåller alla länkar (för att skicka och dela meddelanden med alla sociala nätverk). Den kan anpassas efter dina behov. Konfigurationen är dock reserverad för avancerade användare. Om du vill redigera det matchande personaliseringsblocket går du till noden **[!UICONTROL Resources > Campaign management > Personalization blocks]** i Adobe Campaign-trädet.
 
 ## Viral marketing: vidarebefordra till en vän {#viral-marketing--forward-to-a-friend}
 
@@ -59,8 +59,8 @@ Vidarebefordran av meddelanden baseras på samma principer som länkar till soci
 
 Använd följande steg:
 
-1. Lägg till **[!UICONTROL Social network sharing links]** personaliseringsblocket i det ursprungliga meddelandets brödtext.
-1. Meddelandemottagaren kan klicka på **[!UICONTROL Email]** ikonen för att skicka meddelandet till en eller flera vänner.
+1. Lägg till **[!UICONTROL Social network sharing links]**-anpassningsblocket i det ursprungliga meddelandets brödtext.
+1. Meddelandemottagaren kan klicka på ikonen **[!UICONTROL Email]** för att skicka meddelandet till en eller flera vänner.
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -68,13 +68,13 @@ Använd följande steg:
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   Meddelandet skickas till dem när huvudmottagaren klickar på **[!UICONTROL Next]** knappen.
+   Meddelandet skickas till dem när huvudmottagaren klickar på knappen **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
-   >Innehållet i det här meddelandet kan anpassas efter dina behov. Den skapas baserat på **[!UICONTROL Transfer of original message]** mallen, som lagras i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** noden.
+   >Innehållet i det här meddelandet kan anpassas efter dina behov. Den skapas baserat på mallen **[!UICONTROL Transfer of original message]**, som lagras i noden **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
    >
-   >Det går också att ändra meddelandets vidarebefordringsformulär som har gjorts tillgängligt för referenten För att göra detta måste du ändra **webbprogrammet för virala formulär** som lagras i **[!UICONTROL Resources > Online > Web applications]** noden.
+   >Det går också att ändra meddelandets vidarebefordringsformulär som har gjorts tillgängligt för referenten För att göra detta måste du ändra webbprogrammet **Viral form** som finns i noden **[!UICONTROL Resources > Online > Web applications]**.
 
 1. I det vidarebefordrade meddelandet finns en länk som gör att referenten kan spara sin profil i databasen. En tävlingsblankett tillhandahålls för detta ändamål.
 
@@ -82,15 +82,15 @@ Använd följande steg:
 
    >[!NOTE]
    >
-   >Denna konfiguration kan anpassas. För att göra detta måste du ändra webbprogrammet för **mottagarprenumerationer** som lagras i **[!UICONTROL Resources > Online > Web applications]** noden.
+   >Denna konfiguration kan anpassas. För att göra detta måste du ändra **mottagarprenumerationen** webbprogrammet som lagras i noden **[!UICONTROL Resources > Online > Web applications]**.
    >
-   >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
+   >Mer information om webbprogram finns i [det här avsnittet](../../web/using/about-web-applications.md).
 
-   När de har validerat skickas ett bekräftelsemeddelande till dem: de registreras endast för gott när de aktiverar länken i bekräftelsemeddelandet. Det här meddelandet skapas baserat på **[!UICONTROL Registration confirmation]** mallen som lagras i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** noden.
+   När de har validerat skickas ett bekräftelsemeddelande till dem: de registreras endast för gott när de aktiverar länken i bekräftelsemeddelandet. Det här meddelandet skapas baserat på mallen **[!UICONTROL Registration confirmation]**, som lagras i noden **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
 
-   Referenten läggs till i **mottagarmappen** i databasen och prenumereras (som standard) på informationstjänsten **Newsletter** .
+   Referensen läggs till i mappen **Mottagare** i databasen och prenumereras (som standard) på informationstjänsten **Newsletter**.
 
-## Spåra delning via sociala nätverk {#tracking-social-network-sharing}
+## Spåra delning av sociala nätverk {#tracking-social-network-sharing}
 
 Delning och åtkomst till delad information spåras. Denna information som Adobe Campaign samlar in finns tillgänglig på två ställen:
 
@@ -98,7 +98,7 @@ Delning och åtkomst till delad information spåras. Denna information som Adobe
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* i en särskild **[!UICONTROL Sharing to social networks]** rapport:
+* i en dedikerad **[!UICONTROL Sharing to social networks]**-rapport:
 
    ![](assets/s_ncs_user_viral_report.png)
 
