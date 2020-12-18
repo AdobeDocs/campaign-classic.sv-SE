@@ -21,9 +21,9 @@ Adobe Campaign har flera anslutningar som gör att du kan kommunicera med extern
 
 Dessa kopplingar är:
 
-* Med FDA Connector (**Federated Data Access**) kan ni ansluta Campaign till en eller flera externa databaser och bearbeta information som lagras i dem utan att påverka era Campaign-data. [Läs mer](../../installation/using/about-fda.md).
+* Med FDA Connector (**Federated Data Access**) kan du ansluta Campaign till en eller flera externa databaser och bearbeta information som lagras i dem utan att påverka dina Campaign-data. [Läs mer](../../installation/using/about-fda.md).
 * CRM-anslutningar gör det möjligt att utbyta data mellan Adobe Campaign och CRM-lösningen med hjälp av dedikerade arbetsflödesaktiviteter. [Läs mer](../../platform/using/crm-connectors.md).
-* Med Analytics Data Connectors (tidigare **Adobe Genesis**) kan ni dela data mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-data-connector.md).
+* Med Analytics Data Connectors (var **Adobe Genesis**) kan du dela data mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-data-connector.md).
 
 Du kan också integrera Campaign med flera andra system, som:
 
@@ -33,5 +33,5 @@ Du kan också integrera Campaign med flera andra system, som:
 
 >[!NOTE]
 >
->Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. Se [Campaign lokalt - matris över värdbaserade funktioner](../../installation/using/capability-matrix.md).
+>Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. Se [Kampanjens lokala värdfunktioner, matris](../../installation/using/capability-matrix.md).
 
