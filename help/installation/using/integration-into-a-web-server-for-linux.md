@@ -23,7 +23,7 @@ Du kan använda den här integrerade Tomcat-servern för att hantera HTTP-begär
 
 I detta fall:
 
-* Standardlyssningsporten är 8080. Mer information om hur du ändrar den finns i [Konfigurera Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* Standardlyssningsporten är 8080. Mer information finns i [Konfigurera Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
 * Klientkonsolerna ansluter sedan med en URL som:
 
    ```
@@ -52,7 +52,7 @@ Använd följande steg:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Kontrollera att modulerna **alias**, **authz_host** och **mime** fortfarande är aktiverade. Använd följande kommando för att göra detta:
+   Kontrollera att **alias**, **authz_host** och **mime**-modulerna fortfarande är aktiverade. Använd följande kommando för att göra detta:
 
    ```
    a2enmod  alias authz_host mime
@@ -78,13 +78,13 @@ Använd följande steg:
     a2enmod nlsrv
    ```
 
-   Om du använder modulen **mod_rewrite** för Adobe Campaign-sidor måste du byta namn på **filerna nlsrv.load** och **nlsrv.conf** till **zz-nlsrv.load** och **zz-nlsrv.conf**. Om du vill aktivera modulen kör du följande kommando:
+   Om du använder modulen **mod_rewrite** för Adobe Campaign-sidor måste du byta namn på **nlsrv.load** och **nlsrv.conf** till **zz-nlsrv.load** och **zz-nlsrv.conf**. Om du vill aktivera modulen kör du följande kommando:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Redigera filen **/etc/apache2/envvars** , lägg till följande rader:
+1. Redigera filen **/etc/apache2/envvars** och lägg till följande rader:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Den här proceduren gäller om du har installerat och skyddat Apache under ett R
 
 Använd följande steg:
 
-1. Aktivera följande Apache-moduler i `httpd.conf` filen:
+1. Aktivera följande Apache-moduler i filen `httpd.conf`:
 
    ```
    alias
@@ -152,7 +152,7 @@ Använd följande steg:
    ForceLanguagePriority
    ```
 
-1. Skapa en Adobe Campaign-specifik konfigurationsfil i `/etc/httpd/conf.d/` mappen. Exempel `CampaignApache.conf`
+1. Skapa en Adobe Campaign-specifik konfigurationsfil i mappen `/etc/httpd/conf.d/`. Exempel `CampaignApache.conf`
 
 1. För **RHEL7** lägger du till följande instruktioner i filen:
 
@@ -163,7 +163,7 @@ Använd följande steg:
 
 1. För **RHEL7**:
 
-   Lägg till `/etc/systemd/system/httpd.service` filen med följande innehåll:
+   Lägg till `/etc/systemd/system/httpd.service`-filen med följande innehåll:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
