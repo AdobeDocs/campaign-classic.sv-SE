@@ -45,7 +45,7 @@ Distributionen av moduler på flera datorer ger stor flexibilitet och förbättr
 
 >[!NOTE]
 >
->For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
+>Mer information om de olika arkitekturerna finns i [det här avsnittet](../../installation/using/general-architecture.md).
 
 ## Lista över öppna portar {#list-of-open-ports}
 
