@@ -69,21 +69,21 @@ Du kan ändra formateringen i varje behållare. I vårt exempel kan du sprida in
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras på **[!UICONTROL General]** fliken eller på **[!UICONTROL Advanced]** fliken, beroende på fälttypen:
+Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras på fliken **[!UICONTROL General]** eller fliken **[!UICONTROL Advanced]**, beroende på fälttypen:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
-## Definiera placeringen av etiketter {#defining-the-position-of-labels}
+## Definiera positionen för etiketterna {#defining-the-position-of-labels}
 
 Du kan definiera justeringen av fält och etiketter i formuläret.
 
 Som standard ärvs visningsparametrarna för fält och annat innehåll på sidan från formulärets allmänna konfiguration, sidans konfiguration eller den överordnade behållarens konfiguration, om sådan finns.
 
-De globala visningsparametrarna för hela formuläret anges i rutan för formuläregenskaper. På fliken **[!UICONTROL Rendering]** kan du välja placering av etiketter.
+De globala visningsparametrarna för hela formuläret anges i rutan för formuläregenskaper. På fliken **[!UICONTROL Rendering]** kan du välja placering för etiketter.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-Den här positionen kan laddas över för varje sida, varje behållare och varje fält via **[!UICONTROL Advanced]** fliken.
+Den här positionen kan överladdas för varje sida, varje behållare och varje fält via fliken **[!UICONTROL Advanced]**.
 
 Följande justeringar stöds:
 
