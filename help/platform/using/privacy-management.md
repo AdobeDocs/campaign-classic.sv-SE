@@ -10,24 +10,24 @@ translation-type: tm+mt
 source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
 
 # Integritetshantering {#privacy-management}
 
-Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [sekretesslagstiftningen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA, LGPD).
+Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [integritetsregleringen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA och LGPD).
 
-Här är de fem viktigaste funktionerna som Adobe Campaign erbjuder för att säkerställa beredskap för GDPR och andra sekretessbestämmelser:
+Här följer de fem viktigaste funktionerna som Adobe Campaign erbjuder för att säkerställa beredskap för GDPR och andra integritetsregleringar:
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-* **Rätt till åtkomst**
+* **Åtkomsträttigheter**
 
-* **Höger att ta bort**
+* **Rätt att radera**
 
-Mer information finns i [Åtkomst och rättighet att bli glömd](#right-access-forgotten).
+Se [Åtkomsträttigheter och rätt att glömmas](#right-access-forgotten) för mer information.
 
 * **Medgivandehantering**
 
@@ -35,7 +35,7 @@ Mer information finns i [Åtkomst och rättighet att bli glömd](#right-access-f
 
 * **Hantering av rättigheter**
 
-Mer information finns i [Samtycke, kvarhållning och roller](#consent-retention-roles).
+Se [Medgivande, lagring och roller](#consent-retention-roles) för mer information.
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
