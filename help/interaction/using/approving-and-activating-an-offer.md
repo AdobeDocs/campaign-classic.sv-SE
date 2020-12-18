@@ -23,7 +23,7 @@ Banderollen på instrumentpanelen för erbjudanden anger om erbjudandet behöver
 
 ![](assets/offer_validate_001.png)
 
-## Godkänna erbjudandeinnehåll {#approving-offer-content}
+## Innehåll {#approving-offer-content} för godkännande av erbjudande
 
 Att godkänna erbjudandeinnehåll innebär att välja den eller de representationer som du vill göra tillgängliga i den aktiva miljön.
 
@@ -37,11 +37,11 @@ Du kan godkänna erbjudandeinnehållet på vissa tillgängliga platser och avvis
 
 Så här godkänner du erbjudandeinnehållet:
 
-1. Klicka på **[!UICONTROL Approval]** knappen och välj **[!UICONTROL Approve content]** i popup-fönstret.
+1. Klicka på knappen **[!UICONTROL Approval]** och välj **[!UICONTROL Approve content]** i popup-fönstret.
 
    ![](assets/offer_validate_002.png)
 
-1. I listrutan väljer du de representationer du vill fortsätta redigera eller de du vill publicera i den aktiva miljön. Klicka sedan på **[!UICONTROL Content approval]**.
+1. Använd listrutan för att markera de representationer som du vill fortsätta redigera eller de som du vill publicera i den aktiva miljön och klicka sedan på **[!UICONTROL Content approval]**.
 
    ![](assets/offer_validate_003.png)
 
@@ -51,9 +51,9 @@ Så här godkänner du erbjudandeinnehållet:
 
    >[!NOTE]
    >
-   >Uppgiften **[!UICONTROL Content approved]** innebär inte att alla offertrepresentationer har aktiverats och godkänts. Det visar att processen för godkännande av innehåll har uppnåtts, oavsett om alla erbjudanden har aktiverats/godkänts eller inte.
+   >**[!UICONTROL Content approved]**-omnämnandet betyder inte att alla offertrepresentationer har aktiverats och godkänts. Det visar att processen för godkännande av innehåll har uppnåtts, oavsett om alla erbjudanden har aktiverats/godkänts eller inte.
 
-## Godkänna anbudsberättigande {#approving-offer-eligibility}
+## Godkänner erbjudande {#approving-offer-eligibility}
 
 Godkännande av berättigande för erbjudanden innebär att acceptera eller avvisa erbjudandevikter och att reglerna för behörighet också har konfigurerats i erbjudandet eller ärvts från reglerna som skapats i den överordnade kategorin.
 
@@ -61,7 +61,7 @@ Godkännande av berättigande för erbjudanden innebär att acceptera eller avvi
 >
 >När innehållet i och behörigheten för ett erbjudande har godkänts körs arbetsflödet för publicering (meddelande om erbjudande) automatiskt och erbjudandet görs tillgängligt på alla aktiverade platser.
 
-* Du kan visa den fullständiga listan med regler genom att klicka **[!UICONTROL Schedule and eligibility rules]**.
+* Du kan visa den fullständiga listan med regler genom att klicka på **[!UICONTROL Schedule and eligibility rules]**.
 
    ![](assets/offer_validate_005.png)
 
@@ -73,7 +73,7 @@ Godkännande av berättigande för erbjudanden innebär att acceptera eller avvi
 
    ![](assets/offer_validate_006.png)
 
-* Klicka **[!UICONTROL Approve eligibility]** för att godkänna erbjudandet.
+* Klicka **[!UICONTROL Approve eligibility]** om du vill godkänna erbjudandet.
 
    ![](assets/offer_validate_008.png)
 
@@ -87,27 +87,27 @@ Godkännande av berättigande för erbjudanden innebär att acceptera eller avvi
 
 ## Godkännandespårning {#approval-tracking}
 
-Spårning av godkännande finns på kontrollpanelen för erbjudanden. Klicka **[!UICONTROL Hide/display logs]** för att komma åt den.
+Spårning av godkännande finns på kontrollpanelen för erbjudanden. Klicka på **[!UICONTROL Hide/display logs]** för att komma åt den.
 
 ![](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
->Spårning finns också på fliken **[!UICONTROL Audit]** i erbjudandet, med information om granskarnas kommentarer.
+>Spårning finns även på fliken **[!UICONTROL Audit]** i erbjudandet, med information om granskarnas kommentarer.
 
 ## Starta om godkännandet {#restart-the-approval}
 
 När godkännandet har startats kan det startas om. Gör så här:
 
-1. Klicka **[!UICONTROL Content approved]** på instrumentpanelen för erbjudandet.
-1. I det **[!UICONTROL Edit]** fönster som visas väljer du det godkännande som ska startas om och klickar sedan på **[!UICONTROL Re-initialize approval to submit it again]**.
-1. Bekräfta genom att klicka **[!UICONTROL Ok]**.
+1. Klicka på **[!UICONTROL Content approved]** på instrumentpanelen för erbjudandet.
+1. I fönstret **[!UICONTROL Edit]** som visas väljer du det godkännande som ska startas om och klickar sedan på **[!UICONTROL Re-initialize approval to submit it again]**.
+1. Bekräfta genom att klicka på **[!UICONTROL Ok]**.
 
 ![](assets/offer_validate_013.png)
 
 ## Publicera erbjudandet {#publishing-the-offer}
 
-När innehållet i och behörigheten för ett erbjudande har godkänts publiceras erbjudandet i ett arbetsflöde som automatiskt körs för varje erbjudande vars godkännandecykel har slutförts. Arbetsflödet körs också varje timme för att synkronisera (om det behövs) de utrymmen och kategorier som finns i erbjudandekatalogen, från designmiljön till den aktiva miljön. **[!UICONTROL Offer notification]**
+När innehållet i och behörigheten för ett erbjudande har godkänts publiceras erbjudandet i ett arbetsflöde som automatiskt körs för varje erbjudande vars godkännandecykel har slutförts. Arbetsflödet **[!UICONTROL Offer notification]** körs också varje timme för att synkronisera (om det behövs) de utrymmen och kategorier som finns i erbjudandekatalogen, från designmiljön till den aktiva miljön.
 
 Kontrollpanelen för det erbjudande som finns i designmiljön innehåller information om publicering, inklusive namnet på matchande erbjudande i livemiljön.
 
@@ -117,13 +117,13 @@ Klicka på erbjudandeetiketten för att visa erbjudandet som finns i den aktiva 
 
 ![](assets/offer_golive_002.png)
 
-## Inaktivera ett erbjudande {#disabling-an-offer}
+## Inaktiverar ett erbjudande {#disabling-an-offer}
 
 När erbjudandet har godkänts kan du inaktivera det.
 
-Om du vill göra det går du till instrumentpanelen för ett erbjudande online eller ett erbjudande som väntar på att bli online och klickar sedan på **[!UICONTROL Disable offer]**.
+Om du vill göra det går du till instrumentpanelen för ett erbjudande på webben eller ett erbjudande som väntar på att ansluta och klickar sedan på **[!UICONTROL Disable offer]**.
 
-Du kan även inaktivera en kategori direkt genom att gå till **[!UICONTROL Eligibility]** fliken och markera **[!UICONTROL Enabled]** rutan.
+Du kan även inaktivera en kategori direkt genom att gå till fliken **[!UICONTROL Eligibility]** och markera rutan **[!UICONTROL Enabled]**.
 
 >[!NOTE]
 >
