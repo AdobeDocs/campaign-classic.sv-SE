@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Om social marknadsföring{#about-social-marketing}
 
-Programmet **Hantera sociala nätverk** (social marknadsföring) som är utformat för att hantera sociala nätverk gör att du kan interagera med kunder och potentiella kunder via Facebook och Twitter.
+Programmet **Hantera sociala nätverk** (Social Marketing) som är utformat för att hantera sociala nätverk gör att du kan interagera med kunder och potentiella kunder via Facebook och Twitter.
 
 1. **Skicka meddelanden**
 
