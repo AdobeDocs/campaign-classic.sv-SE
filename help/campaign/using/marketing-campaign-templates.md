@@ -15,31 +15,31 @@ ht-degree: 0%
 ---
 
 
-# Marketing Campaign templates {#campaign-templates}
+# Mallar för marknadsföringskampanj {#campaign-templates}
 
-Kampanjmallar är centraliserade i **[!UICONTROL Resources > Templates > Campaign templates]** noden. En standardmall anges som standard. Du kan skapa en ny kampanj med hjälp av alla tillgängliga moduler (dokument, uppgifter, dirigerade adresser osv.), men vilka moduler som erbjuds beror på dina rättigheter och konfigurationen av din Adobe Campaign-plattform.
+Kampanjmallar är centraliserade i noden **[!UICONTROL Resources > Templates > Campaign templates]**. En standardmall anges som standard. Du kan skapa en ny kampanj med hjälp av alla tillgängliga moduler (dokument, uppgifter, dirigerade adresser osv.), men vilka moduler som erbjuds beror på dina rättigheter och konfigurationen av din Adobe Campaign-plattform.
 
 ## Skapa eller duplicera en kampanjmall {#creating-or-duplicating-a-campaign-template}
 
 Så här skapar du en ny mall:
 
-1. Öppna Campaign **Explorer**.
+1. Öppna Campaign **Utforskaren**.
 1. I **Resurser > Mallar > Kampanjmallar** klickar du på **Nytt** i verktygsfältet ovanför listan med mallar.
 
    ![](assets/create_campaign_template_1.png)
 
 1. Ange etiketten för den nya kampanjmallen.
 1. Klicka på **Spara** och öppna mallen igen.
-1. Ange vid behov det **interna namnet** och andra värden på fliken **Redigera** .
+1. På fliken **Redigera** anger du vid behov det interna namnet **interna namnet** och andra värden.
 1. Välj **Avancerade kampanjinställningar** om du vill lägga till ett arbetsflöde i kampanjmallen.
 
    ![](assets/create_campaign_template_2.png)
 
-1. Ändra värdet för **Mål och arbetsflöden** till **Ja**.
+1. Ändra värdet **Mål och arbetsflöden** till **Ja**.
 
    ![](assets/create_campaign_template_3.png)
 
-1. Klicka på **Lägg till ett arbetsflöde på fliken** Mål och arbetsflöden **..**.
+1. På fliken **Mål och arbetsflöden** klickar du på **Lägg till ett arbetsflöde..**.
 
    ![](assets/create_campaign_template_4.png)
 
@@ -63,23 +63,23 @@ I en standardkonfiguration är kampanjmallarna centraliserade i noden **[!UICONT
 
 >[!NOTE]
 >
->Trädet visas när du klickar på **[!UICONTROL Explorer]** ikonen på startsidan.
+>Trädet visas när du klickar på ikonen **[!UICONTROL Explorer]** på startsidan.
 
 En färdig mall tillhandahålls för att skapa en kampanj för vilken ingen specifik konfiguration har definierats. Du kan skapa och konfigurera kampanjmallar och sedan skapa kampanjer utifrån dessa mallar.
 
-Skapandet och konfigurationen av kampanjmallar presenteras i [Campaign-mallar](#campaign-templates).
+Skapandet och konfigurationen av kampanjmallar presenteras i [Kampanjmallar](#campaign-templates).
 
-![](assets/do-not-localize/how-to-video.png) Mer information om hur du skapar kampanjer finns i [den här videon](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+![](assets/do-not-localize/how-to-video.png) Mer information om hur du skapar kampanjer finns i  [den här videon](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Konfiguration av tillgängliga moduler {#configuration-of-the-available-modules}
 
-### Val av modul {#module-selection}
+### Modulval {#module-selection}
 
-Med **[!UICONTROL Advanced campaign settings...]** länken kan du aktivera och inaktivera jobb för kampanjer som är baserade på den här mallen. Välj de funktioner som du vill aktivera i kampanjer som skapats baserat på den här mallen.
+Med länken **[!UICONTROL Advanced campaign settings...]** kan du aktivera och inaktivera jobb för kampanjer som är baserade på den här mallen. Välj de funktioner som du vill aktivera i kampanjer som skapats baserat på den här mallen.
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen sammanfaller vanligtvis med de processer som valts i mallen. Om du t.ex. inte väljer **Utgifter och mål** visas inte motsvarande **[!UICONTROL Budget]** flik i kampanjer som baseras på den här mallen.
+Om ingen funktion är markerad, de element som rör processen (menyer, ikoner, alternativ, flikar, underflikar osv.) visas inte i mallens gränssnitt eller i kampanjer som är baserade på den här mallen. Flikarna till vänster om kampanjinformationen sammanfaller vanligtvis med de processer som valts i mallen. Om du t.ex. inte väljer **Utgifter och mål** visas inte motsvarande **[!UICONTROL Budget]**-flik i kampanjer som baseras på den här mallen.
 
 Dessutom läggs genvägar till konfigurationsfönstren till på kontrollpanelen för kampanjer. När en funktion är aktiverad får en direktlänk åtkomst till den från kontrollpanelen för kampanjer.
 
@@ -87,7 +87,7 @@ Med konfigurationen nedan:
 
 ![](assets/s_ncs_user_op_template_tab1.4.png)
 
-Följande länkar visas på kontrollpanelen för kampanjer (länken saknas): **[!UICONTROL Add a task]**
+Följande länkar visas på kontrollpanelen för kampanjer (länken **[!UICONTROL Add a task]** saknas):
 
 ![](assets/s_ncs_user_op_template_tab1.3ex.png)
 
@@ -119,19 +119,19 @@ Följande länkar och flikar visas:
 
 * **Dokument**
 
-   När den här modulen är markerad läggs en extra flik till på **[!UICONTROL Edition]** fliken för mallen och de kampanjer som är baserade på den här mallen. Bifogade dokument kan läggas till från mallen eller individuellt för varje kampanj.
+   När den här modulen är markerad läggs en extra flik till på fliken **[!UICONTROL Edition]** i mallen och de kampanjer som är baserade på den här mallen. Bifogade dokument kan läggas till från mallen eller individuellt för varje kampanj.
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Kontur**
 
-   När den här modulen är markerad läggs en underflik till på **[!UICONTROL Delivery outlines]** **[!UICONTROL Documents]** fliken för att definiera leveransdispositioner för kampanjen.
+   När den här modulen är markerad läggs en **[!UICONTROL Delivery outlines]**-underflik till på fliken **[!UICONTROL Documents]** för att definiera leveransdispositioner för kampanjen.
 
    ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **Målgruppsanpassning och arbetsflöden**
 
-   När du väljer **[!UICONTROL Targeting and workflows]** modulen läggs en flik till så att du kan skapa ett eller flera arbetsflöden för kampanjer baserade på den här mallen. Arbetsflöden kan också konfigureras individuellt för varje kampanj baserat på den här mallen.
+   När du väljer modulen **[!UICONTROL Targeting and workflows]** läggs en flik till så att du kan skapa ett eller flera arbetsflöden för kampanjer baserade på den här mallen. Arbetsflöden kan också konfigureras individuellt för varje kampanj baserat på den här mallen.
 
    ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -141,19 +141,19 @@ Följande länkar och flikar visas:
 
 * **Godkännande**
 
-   Om du väljer **[!UICONTROL Approval]** det här alternativet kan du välja vilka processer som ska godkännas samt vilka operatörer som ansvarar för godkännandena.
+   Om du väljer **[!UICONTROL Approval]** kan du välja vilka processer som ska godkännas samt vilka operatorer som ansvarar för godkännandena.
 
    ![](assets/s_ncs_user_op_template_activate_5b.png)
 
 * **Utgifter och mål**
 
-   När den här modulen är markerad läggs en flik till i informationen om mallen och kampanjer som är baserade på den här mallen, så att den associerade budgeten kan väljas. **[!UICONTROL Budget]**
+   När den här modulen har valts läggs en **[!UICONTROL Budget]**-flik till i informationen om mallen och kampanjer som är baserade på den här mallen, så att den associerade budgeten kan väljas.
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
 ### Godkännande av jobb {#approval-of-jobs}
 
-Du kan välja om du vill aktivera processgodkännande eller inte via fliken **[!UICONTROL Approvals]** i avsnittet Mallar för avancerade inställningar. Jobb som har valts för godkännande måste godkännas för att meddelandeleverans ska kunna auktoriseras.
+Du kan välja om du vill aktivera processgodkännande eller inte via fliken **[!UICONTROL Approvals]** i avsnittet för mallar för avancerade inställningar. Jobb som har valts för godkännande måste godkännas för att meddelandeleverans ska kunna auktoriseras.
 
 Du måste associera en granskaroperator eller grupp av operatorer för varje aktiverat godkännande.
 
@@ -165,32 +165,32 @@ Du måste associera en granskaroperator eller grupp av operatorer för varje akt
 
 När du skapar en kampanjmall måste du ange följande information:
 
-* Ange mallens **etikett** : Den här etiketten tilldelas som standard till alla kampanjer som skapas via den här mallen.
-* Välj kampanjens **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i **[!UICONTROL natureOp]** uppräkningen.
+* Ange **etiketten** för mallen: Den här etiketten tilldelas som standard till alla kampanjer som skapas via den här mallen.
+* Välj kampanjen **natur** i listrutan. De värden som är tillgängliga i den här listan är de som har sparats i **[!UICONTROL natureOp]**-uppräkningen.
 
    >[!NOTE]
    >
-   >Mer information om uppräkningar finns i avsnittet [Komma igång](../../platform/using/managing-enumerations.md) .
+   >Mer information om uppräkningar finns i avsnittet [Komma igång](../../platform/using/managing-enumerations.md).
 
 * Välj **kampanjtyp**: unika, återkommande eller periodiska. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs här: [Återkommande och periodiska kampanjer](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Ange kampanjens varaktighet, dvs. antalet dagar som kampanjen ska äga rum. När du skapar en kampanj som baseras på den här mallen fylls start- och slutdatumet för kampanjen i automatiskt.
 
    Om kampanjen är återkommande måste du ange kampanjens start- och slutdatum direkt i mallen.
 
-* Ange mallens **relaterade program** : kampanjer som är baserade på den här mallen länkas till det valda programmet.
+* Ange **det relaterade programmet** för mallen: kampanjer som är baserade på den här mallen kommer att länkas till det valda programmet.
 
 ### Parametrar för mallkörning {#template-execution-parameters}
 
-Med **[!UICONTROL Advanced campaign settings...]** länken kan du konfigurera de avancerade alternativen för mallen för bearbetning av leveransmålet (kontrollgrupp, dirigeringsadresser osv.) och konfigurationen av kampanjmätning och arbetsflödeskörning.
+Med länken **[!UICONTROL Advanced campaign settings...]** kan du konfigurera de avancerade alternativen för mallen för bearbetning av leveransmålet (kontrollgrupp, dirigeringsadresser osv.) och konfigurationen av kampanjmätning och arbetsflödeskörning.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
-## Kampanj för omvänd planering {#campaign-reverse-scheduling}
+## Kampanjens omvänd schemaläggning {#campaign-reverse-scheduling}
 
-Du kan skapa ett omvänt schema för en kampanj, till exempel för att förbereda en händelse vars datum är känt i förväg. Med kampanjmallar kan du nu beräkna startdatumet för en aktivitet baserat på slutdatumet för en kampanj.
+Du kan skapa ett omvänt schema för en kampanj, till exempel för att förbereda en händelse vars datum är känt i förväg. Med kampanjmallar kan du nu beräkna startdatum för en aktivitet baserat på slutdatumet för en kampanj.
 
-Gå till **[!UICONTROL Implementation schedule]** området i konfigurationslådan för uppgifter och markera **[!UICONTROL The start date is calculated based on the campaign end date]** rutan. (Här är &quot;startdatum&quot; startdatum för aktiviteten). Gå till **[!UICONTROL Start]** fältet och ange ett intervall: aktiviteten startar så här långt före kampanjens slutdatum. Om du anger en period som är längre än kampanjen är inställd på att vara sista, börjar aktiviteten före kampanjen.
+Gå till området **[!UICONTROL Implementation schedule]** i konfigurationslådan för aktiviteten och markera kryssrutan **[!UICONTROL The start date is calculated based on the campaign end date]**. (Här är startdatum för aktiviteten). Gå till fältet **[!UICONTROL Start]** och ange ett intervall: aktiviteten startar så här långt före kampanjens slutdatum. Om du anger en period som är längre än vad kampanjen är inställd på att vara, startar aktiviteten före kampanjen.
 
 ![](assets/mrm_task_in_template_start_date.png)
 
-När du skapar en kampanj med den här mallen beräknas startdatumet för aktiviteten automatiskt. Du kan dock ändra den senare.
+När du skapar en kampanj med den här mallen beräknas startdatumet för aktiviteten automatiskt. Du kan dock ändra det senare.
