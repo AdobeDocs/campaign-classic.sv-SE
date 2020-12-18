@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# Implementing IMS{#implementing-ims}
+# Implementera IMS{#implementing-ims}
 
-## Aktivera IMS-anslutningen {#enabling-the-ims-connection}
+## Aktiverar IMS-anslutningen {#enabling-the-ims-connection}
 
-1. Om du vill aktivera anslutning via IMS kontrollerar du **[!UICONTROL Connect with an Adobe ID]** i konsolens anslutningsfönster.
+1. Om du vill aktivera anslutning via IMS-programmet markerar du **[!UICONTROL Connect with an Adobe ID]** i konsolens anslutningsfönster.
 
    ![](assets/ims_1.png)
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## Inaktiverar IMS-anslutningen {#disabling-the-ims-connection}
 
-Om du vill inaktivera anslutning via Adobe ID kopplar du från, klickar på **[!UICONTROL File > Connections]** och avmarkerar **[!UICONTROL Connect with an Adobe ID]**.
+Om du vill inaktivera anslutning via Adobe ID kopplar du från klickar du på **[!UICONTROL File > Connections]** och avmarkerar **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)
 
