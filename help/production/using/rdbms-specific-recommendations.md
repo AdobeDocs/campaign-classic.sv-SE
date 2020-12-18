@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ För att du lättare ska kunna konfigurera underhållsplaner innehåller det hä
 
 ### Enkelt underhåll {#simple-maintenance}
 
-Under PostgreSQL är de kommandon som du kan använda **vakuumfulla** och **omindexerade**.
+Under PostgreSQL är de vanliga kommandona som du kan använda **vakuum full** och **reindex**.
 
 Här är ett typiskt exempel på en SQL-underhållsplan som ska utföras regelbundet med dessa två kommandon:
 
@@ -92,22 +92,22 @@ vacuum full nmsdelivery;
 >
 >* Adobe rekommenderar att du börjar med mindre tabeller: På så sätt har åtminstone en del av underhållet slutförts om processen misslyckas på stora tabeller (där risken för fel är störst).
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
->* Kommandona **vakuum** och **omindexering** låser tabellen, som pausar vissa processer medan underhåll utförs.
->* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfyllnad** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för **tabellen YyyNmsBroadLogXx** .
->* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med hjälp av en **[!UICONTROL SQL]** aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* Kommandona **vakuum** och **reindex** låser tabellen, vilket pausar vissa processer medan underhåll utförs.
+>* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfullt** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YYYNmsBroadLogXx**.
+>* Underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 
 >
 
 
 
-### Återskapa en databas {#rebuilding-a-database}
+### Återskapar en databas {#rebuilding-a-database}
 
-PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom **vakuumfullt** låser tabellen, vilket förhindrar normal produktion. Detta innebär att underhåll måste utföras när tabellen inte används. Du kan antingen:
+PostgreSQL erbjuder inte ett enkelt sätt att utföra en omgenerering av en tabell online eftersom **vakuumfullt** låser tabellen, vilket förhindrar normal produktion. Detta innebär att underhåll måste utföras när tabellen inte används. Du kan antingen:
 
 * utföra underhåll när Adobe Campaign-plattformen stoppas,
 * stoppa de olika Adobe Campaign-undertjänster som kan tänkas skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
 
-Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera nödvändig DDL för att återskapa en tabell.
+Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera den DDL som krävs för att återskapa en tabell.
 
 * Med den första funktionen kan du skapa en arbetstabell (** _tmp** här) som är en kopia av den ursprungliga tabellen.
 * Den andra funktionen tar sedan bort den ursprungliga tabellen och byter namn på arbetstabellen och dess index.
@@ -327,7 +327,7 @@ Här är ett exempel på tabelldefragmentering som använder specifika funktione
  $$ LANGUAGE plpgsql;
 ```
 
-Följande exempel kan användas i ett arbetsflöde för att återskapa de tabeller som behövs i stället för att använda kommandot **vakuum/rebuild** :
+Följande exempel kan användas i ett arbetsflöde för att återskapa de tabeller som krävs i stället för att använda kommandot **vakuum/rebuild**:
 
 ```
 function sqlGetMemo(strSql)
@@ -369,19 +369,19 @@ Kontakta din databasadministratör för att ta reda på vilka procedurer som pas
 Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan version kontaktar du databasadministratören för att få reda på mer om underhållsrutiner.
 
 1. Anslut först till Microsoft SQL Server Management Studio med administratörsbehörighet.
-1. Gå till **[!UICONTROL Management > Maintenance Plans]** mappen, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**
-1. Klicka **[!UICONTROL Next]** när den första sidan visas.
-1. Välj den typ av underhållsplan som du vill skapa (separata scheman för varje aktivitet eller ett enda schema för hela planen) och klicka sedan på **[!UICONTROL Change...]** knappen.
-1. Välj önskade körningsinställningar i **[!UICONTROL Job schedule properties]** fönstret och klicka sedan på **[!UICONTROL OK]** . **[!UICONTROL Next]** .
+1. Gå till mappen **[!UICONTROL Management > Maintenance Plans]**, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**
+1. Klicka på **[!UICONTROL Next]** när den första sidan visas.
+1. Välj den typ av underhållsplan som du vill skapa (separata scheman för varje aktivitet eller enskilt schema för hela planen) och klicka sedan på knappen **[!UICONTROL Change...]**.
+1. I fönstret **[!UICONTROL Job schedule properties]** väljer du önskade körningsinställningar och klickar på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]** .
 1. Välj de underhållsåtgärder du vill utföra och klicka sedan på **[!UICONTROL Next]** .
 
    >[!NOTE]
    >
    >Vi rekommenderar att du utför åtminstone de underhållsåtgärder som visas nedan. Du kan också välja statistikuppdateringsuppgiften, även om den redan har utförts i arbetsflödet för databasrensning.
 
-1. I listrutan väljer du den databas som du vill köra uppgiften på **[!UICONTROL Database Check Integrity]** .
+1. I listrutan väljer du den databas där du vill köra **[!UICONTROL Database Check Integrity]**-aktiviteten.
 1. Markera databasen och klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]** .
-1. Konfigurera den största storlek som databasen tilldelas och klicka sedan på **[!UICONTROL Next]** .
+1. Konfigurera den maximala storlek som databasen tilldelas och klicka sedan på **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
@@ -399,22 +399,22 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
-      Välj de alternativ du vill använda för att återskapa index och klicka sedan på **[!UICONTROL Next]** .
+      Välj de alternativ som du vill använda för indexåterskapningsaktiviteten och klicka sedan på **[!UICONTROL Next]** .
 
       >[!NOTE]
       >
-      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Markera **[!UICONTROL Keep index online while reindexing]** alternativet om du vill att indexet ska vara tillgängligt under återskapandet.
+      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Markera alternativet **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
 
 1. Välj de alternativ som du vill visa i aktivitetsrapporten och klicka sedan på **[!UICONTROL Next]** .
-1. Kontrollera listan över uppgifter som har konfigurerats för underhållsplanen och klicka sedan på **[!UICONTROL Finish]** .
+1. Kontrollera listan över uppgifter som har konfigurerats för underhållsplanen och klicka sedan på **[!UICONTROL Finish]**.
 
    En sammanfattning av underhållsplanen och statusvärdena för de olika stegen visas.
 
 1. När underhållsplanen är klar klickar du på **[!UICONTROL Close]** .
-1. Dubbelklicka på **[!UICONTROL Management > Maintenance Plans]** mappen i Microsoft SQL Server Explorer.
+1. Dubbelklicka på mappen **[!UICONTROL Management > Maintenance Plans]** i Microsoft SQL Server Explorer.
 1. Välj Adobe Campaign underhållsplan: de olika stegen beskrivs i ett arbetsflöde.
 
-   Observera att ett objekt har skapats i **[!UICONTROL SQL Server Agent > Jobs]** mappen. Med det här objektet kan du starta underhållsplanen. I vårt exempel finns det bara ett objekt eftersom alla underhållsåtgärder ingår i samma plan.
+   Observera att ett objekt har skapats i mappen **[!UICONTROL SQL Server Agent > Jobs]**. Med det här objektet kan du starta underhållsplanen. I vårt exempel finns det bara ett objekt eftersom alla underhållsåtgärder ingår i samma plan.
 
    >[!IMPORTANT]
    >
