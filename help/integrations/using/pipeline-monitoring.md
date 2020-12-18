@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Övervaka pipelines {#pipeline-monitoring}
 
-Statuswebbtjänsten ger [!DNL pipelined] information om [!DNL pipelined] processens status.
+Statuswebbtjänsten [!DNL pipelined] ger information om statusen för [!DNL pipelined]-processen.
 
 Den kan nås manuellt via en webbläsare eller automatiskt med ett övervakningsprogram.
 
@@ -42,7 +42,7 @@ Rekommenderade indikatorer för övervakning markeras.
    * next-offsets-flush: tid att vänta till nästa batch, när den är klar.
    * bearbetad-sedan-senaste-flush: antal utlösare som bearbetats i den senaste batchen.
 * routning
-   * utlösare: lista över utlösare som hämtats. Konfigureras i [!DNL pipelined] alternativet.
+   * utlösare: lista över utlösare som hämtats. Konfigureras i alternativet [!DNL pipelined].
 * status
    * Average-pointer-flush-time-ms: genomsnittlig bearbetningstid för en grupp utlösare.
    * Average-trigger-processing-time-ms: Genomsnittlig tid för tolkning av utlösardata.
@@ -72,7 +72,7 @@ Dessa statusvärden visas per processtråd.
    * retry-validity-duration-ms: längden från den tidpunkt då bearbetningen görs om tills meddelandet ignoreras.
    * Rapport över försäljningsförloppsmeddelanden
 
-## Rapport över försäljningsförloppsmeddelanden {#pipeline-report}
+## Rapport över pipeline-meddelanden {#pipeline-report}
 
 Den här rapporten visar antalet meddelanden per timme under de senaste fem dagarna.
 
