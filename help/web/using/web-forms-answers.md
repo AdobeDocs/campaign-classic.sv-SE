@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Svarslagringsfält {#response-storage-fields}
 
-Svar på formulär kan sparas i ett databasfält eller tillfälligt i en lokal variabel. Lagringsläget för svar väljs när fält skapas. Den kan redigeras via **[!UICONTROL Edit storage...]** länken.
+Svar på formulär kan sparas i ett databasfält eller tillfälligt i en lokal variabel. Lagringsläget för svar väljs när fält skapas. Den kan redigeras via länken **[!UICONTROL Edit storage...]**.
 
 För varje inmatningsfält i ett formulär finns följande lagringsalternativ tillgängliga:
 
@@ -35,13 +35,13 @@ För varje inmatningsfält i ett formulär finns följande lagringsalternativ ti
 
 ### Lagra data i databasen {#storing-data-in-the-database}
 
-Om du vill spara data i ett befintligt fält i databasen klickar du på **[!UICONTROL Edit expression]** -ikonen och väljer den i listan med tillgängliga fält.
+Om du vill spara data i ett befintligt fält i databasen klickar du på ikonen **[!UICONTROL Edit expression]** och väljer den i listan med tillgängliga fält.
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->Standardreferensdokumentet är schemat **nms:mottagare** . Om du vill visa formuläret eller välja ett nytt, markerar du det i listan och klickar på **[!UICONTROL Properties]** knappen.
+>Standardreferensdokumentet är schemat **nms:receive**. Om du vill visa det eller välja ett nytt, markerar du formuläret i listan och klickar på knappen **[!UICONTROL Properties]**.
 
 ### Lagra data i en lokal variabel {#storing-data-in-a-local-variable}
 
@@ -51,11 +51,11 @@ Det innebär att du kan använda värdet för ett osparat fält för att godkän
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-Den lagras i en variabel som måste vara markerad när listrutan skapas, eller via **[!UICONTROL Edit storage...]** länken.
+Den lagras i en variabel som måste markeras när listrutan skapas, eller via länken **[!UICONTROL Edit storage...]**.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-Du kan visa befintliga variabler och skapa nya via **[!UICONTROL Edit variables...]** länken. Klicka på **[!UICONTROL Add]** knappen för att skapa en ny variabel.
+Du kan visa befintliga variabler och skapa nya via länken **[!UICONTROL Edit variables...]**. Klicka på knappen **[!UICONTROL Add]** för att skapa en ny variabel.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -63,7 +63,7 @@ Den tillagda variabeln är tillgänglig i listan med lokala variabler när sidan
 
 >[!NOTE]
 >
->För varje formulär kan du skapa variabler uppströms. Det gör du genom att markera formuläret och klicka på **[!UICONTROL Properties]** knappen. Fliken innehåller de lokala variablerna för formuläret **[!UICONTROL Variables]** .
+>För varje formulär kan du skapa variabler uppströms. Om du vill göra det markerar du formuläret och klickar på knappen **[!UICONTROL Properties]**. Fliken **[!UICONTROL Variables]** innehåller de lokala variablerna för formuläret.
 
 **Exempel på lokal lagring med konditionering**
 
@@ -83,7 +83,7 @@ Detta innebär att om användaren väljer ett nyttofordon, erbjuder formuläret 
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## Använda insamlade uppgifter {#using-collected-information}
+## Använda insamlad information {#using-collected-information}
 
 För varje formulär kan svaren återanvändas i fälten eller etiketterna. Följande syntaxer måste användas:
 
@@ -107,9 +107,9 @@ För varje formulär kan svaren återanvändas i fälten eller etiketterna. Föl
 
    >[!NOTE]
    >
-   >Till skillnad från andra fält där `<%=` tecken ersätts med escape-tecken sparas HTML-innehållet som det är med hjälp av `<%==` syntaxen.
+   >Till skillnad från andra fält där `<%=`-tecken ersätts med escape-tecken, sparas HTML-innehållet som det är med syntaxen `<%==`.
 
-## Spara svar på webbformulär {#saving-web-forms-answers}
+## Sparar svar på webbformulär {#saving-web-forms-answers}
 
 Om du vill spara den information som samlas in på sidorna i ett formulär måste du placera en lagringsruta i diagrammet.
 
@@ -117,7 +117,7 @@ Om du vill spara den information som samlas in på sidorna i ett formulär måst
 
 Det finns två sätt att använda den här rutan:
 
-* Om webbformuläret nås via en länk som skickas i ett e-postmeddelande, och om användaren som använder programmet redan finns i databasen, kan du markera **[!UICONTROL Update the preloaded record]** alternativet. Mer information finns i [Leverera ett formulär via e-post](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Om webbformuläret nås via en länk som skickas i ett e-postmeddelande, och om användaren som använder programmet redan finns i databasen, kan du markera alternativet **[!UICONTROL Update the preloaded record]**. Mer information finns i [Leverera ett formulär via e-post](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 
    I det här fallet använder Adobe Campaign den krypterade primärnyckeln för användarprofilen, som är en unik identifierare som tilldelas varje profil av Adobe Campaign. Du måste konfigurera informationen så att den kan läsas in i förväg via förinläsningsrutan. Mer information finns i [Förhandsladda formulärdata](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
@@ -129,7 +129,7 @@ Det finns två sätt att använda den här rutan:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Som standard importeras data till databasen genom en **[!UICONTROL Update or insertion]** åtgärd: om det finns i databasen uppdateras elementet (till exempel det valda nyhetsbrevet eller den e-postadress som har angetts). Om den inte finns läggs informationen till.
+Som standard importeras data till databasen med en **[!UICONTROL Update or insertion]**-åtgärd: om det finns i databasen uppdateras elementet (till exempel det valda nyhetsbrevet eller den e-postadress som har angetts). Om den inte finns läggs informationen till.
 
 Du kan dock ändra det här beteendet. Det gör du genom att markera elementets rot och välja den åtgärd som ska utföras i listrutan:
 
