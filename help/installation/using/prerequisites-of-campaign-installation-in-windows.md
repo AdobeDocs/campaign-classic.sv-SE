@@ -19,14 +19,14 @@ ht-degree: 12%
 
 Den tekniska konfiguration och programvara som behövs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
-Adobe Campaign serverinstallationsprocess för användning av flera instanser beskrivs nedan när du [installerar servern](../../installation/using/installing-the-server.md).
+Installationsprocessen för Adobe Campaign-servern för användning av flera instanser beskrivs nedan i [Installera servern](../../installation/using/installing-the-server.md).
 
 De huvudsakliga stegen är följande:
 
 1. Installera programservern, se [Köra installationsprogrammet](../../installation/using/installing-the-server.md#executing-the-installation-program).
 1. Integrera med en webbserver (valfritt, beroende på vilka komponenter som används), se [Konfigurera IIS-webbservern](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
-När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om den inledande konfigurationen](../../installation/using/about-initial-configuration.md).
+När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om inledande konfiguration](../../installation/using/about-initial-configuration.md).
 
 >[!NOTE]
 >
