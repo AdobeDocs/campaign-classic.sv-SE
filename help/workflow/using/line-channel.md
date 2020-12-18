@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # LINE-kanal{#line-channel}
 
-Arbetsflödena som beskrivs nedan installeras som standard med **LINE-kanalmodulen** . For more on this module, refer to this [section](../../delivery/using/line-channel.md).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **LINE-kanal**. Mer information om den här modulen finns i [avsnittet](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
