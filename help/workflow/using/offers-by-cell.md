@@ -17,20 +17,20 @@ ht-degree: 8%
 
 # Erbjudanden per cell{#offers-by-cell}
 
-Med den här **[!UICONTROL Offers by cell]** aktiviteten kan du distribuera den inkommande populationen (till exempel från en fråga) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
+Med aktiviteten **[!UICONTROL Offers by cell]** kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
-Den här aktiviteten kan bara användas med **Interaktion**. For more information, refer to this [section](../../interaction/using/about-outbound-channels.md).
+Den här aktiviteten kan bara användas med **Interaktion**. Mer information finns i [avsnittet](../../interaction/using/about-outbound-channels.md).
 
 Så här gör du:
 
-1. Lägg till **[!UICONTROL Offers by cell]** aktiviteten när du har angett målpopulationen och öppna den.
-1. Välj det erbjudandeutrymme som du vill visa erbjudandena på på fliken **[!UICONTROL General]** .
-1. På **[!UICONTROL Cells]** fliken anger du de olika deluppsättningarna med **[!UICONTROL Add]** knappen:
+1. Lägg till aktiviteten **[!UICONTROL Offers by cell]** när du har angett målpopulationen och öppna den sedan.
+1. På fliken **[!UICONTROL General]** väljer du det erbjudandeutrymme som du vill visa erbjudandena på.
+1. På fliken **[!UICONTROL Cells]** anger du de olika deluppsättningarna med knappen **[!UICONTROL Add]**:
 
    * Ange delmängdsfyllningen med de tillgängliga filtrerings- och begränsningsreglerna.
    * Välj sedan det erbjudande som du vill presentera för undergruppen. De erbjudanden som är tillgängliga är sådana som är berättigade till det erbjudandeutrymme som valdes i föregående steg.
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Flerkanalsleveranser](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](../../workflow/using/cross-channel-deliveries.md).
 
