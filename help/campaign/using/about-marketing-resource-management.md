@@ -25,11 +25,11 @@ Adobe Campaign-operatorer kan koordinera sina åtgärder och godkänna sina fram
 
 Inom ramen för programmen och delprogrammen i marknadsföringsplanerna kan uppgifter skapas och tilldelas de berörda aktörerna och sedan hanteras under alla faser i dem.
 
-**Med MRM** kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: Resursernas integritet och övervakning sker via en särskild kontrollpanel.
+**Med** MRM kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: Resursernas integritet och övervakning sker via en särskild kontrollpanel.
 
 Slutligen har budgetförvaltningen utökats tack vare förvaltningen av mål- och utgiftsområden och ett utökat utbud av standardrapporter. på så sätt kan ni övervaka och mäta produktiviteten och resultatet för alla marknadsföringsaktiviteter på ett korrekt sätt.
 
-## Kärnkoncept {#core-concepts}
+## Kärnbegrepp {#core-concepts}
 
 I Adobe Campaign måste följande begrepp definieras:
 
@@ -47,15 +47,15 @@ I Adobe Campaign måste följande begrepp definieras:
 
 >[!NOTE]
 >
->Mer information om den övergripande arbetsytan i Adobe Campaign finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
+>Mer information om den övergripande Adobe Campaign-arbetsytan finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >  
->Alla funktioner som är kopplade till leveranser och kommunikationskanaler beskrivs i [detta avsnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Alla funktioner som är kopplade till leveranser och kommunikationskanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >Alla kampanjrelaterade funktioner beskrivs i [Få tillgång till marknadsföringskampanjer](../../campaign/using/accessing-marketing-campaigns.md).
 
 Dessutom erbjuder planer och program i Adobe Campaign extra funktioner:
 
-* Budgethantering. For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md)
+* Budgethantering. Mer information finns i [Kontrollera kostnader](../../campaign/using/controlling-costs.md)
 
 * Uppgiftshantering. Mer information finns i [Skapa och hantera uppgifter](../../campaign/using/creating-and-managing-tasks.md)
 
