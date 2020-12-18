@@ -53,7 +53,7 @@ Gör så här:
    </srcSchema>
    ```
 
-1. Deklarera schemat som en extern vy med attributet =&quot;true&quot;. Se [visningsattributet](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Deklarera schemat som en extern vy med attributet =&quot;true&quot;. Se [Vyattributet](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -82,27 +82,27 @@ Gör så här:
       </element>
    ```
 
-1. Klicka på **[!UICONTROL Administration > Campaign management > Target mappings]** noden.
+1. Klicka på noden **[!UICONTROL Administration > Campaign management > Target mappings]**.
 1. Klicka på knappen **Nytt** för att öppna guiden för att skapa målmappning.
-1. Ange fältet **Etikett** och välj det schema som du just har skapat i fältet **Måldimension** .
+1. Ange fältet **Etikett** och välj det schema som du just har skapat i fältet **Måldimension**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. I fönstret **Redigera adressformulär** väljer du de fält i schemat som matchar de olika leveransadresserna. Här kan vi mappa fälten **@email** och **@mobile** .
+1. I fönstret **Redigera adressformulär** markerar du de fält i schemat som matchar de olika leveransadresserna. Här kan vi mappa fälten **@email** och **@mobile**.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. I följande **lagringsfönster** anger du **suffixet i fältet för tilläggsscheman** för att skilja de nya scheman från de färdiga scheman som tillhandahålls av Adobe Campaign.
+1. I följande **lagringsfönster** anger du **suffixet för tilläggsscheman** för att skilja de nya scheman från de körklara scheman som tillhandahålls av Adobe Campaign.
 
-   Klicka **[!UICONTROL Define new additional fields]** för att välja den dimension som du vill använda i leveransen.
+   Klicka på **[!UICONTROL Define new additional fields]** för att välja den dimension som du vill använda i leveransen.
 
-   Som standard lagras undantagshantering i samma tabeller som meddelanden. Markera rutan **Generera ett lagringsschema för spårning** om du vill konfigurera lagring för spårning som är länkad till målmappningen.
+   Som standard lagras undantagshantering i samma tabeller som meddelanden. Markera rutan **Generera ett lagringsschema för spårning** om du vill konfigurera lagring för spårningen som är länkad till målmappningen.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns på sidan [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md) .
+   >Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns på sidan [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md).
 
 1. I fönstret **Tillägg** väljer du de valfria scheman som du vill generera (listan med tillgängliga scheman beror på vilka moduler som är installerade på Adobe Campaign-plattformen).
 
