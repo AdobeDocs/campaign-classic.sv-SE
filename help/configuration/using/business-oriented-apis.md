@@ -21,7 +21,7 @@ Business API är specifikt för varje typ av objekt. De har en effekt på:
 
 * Leveranser:
 
-   * Skapa en leveransåtgärd, se [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Se [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-) för att skapa en leveransåtgärd.
    * skicka en kampanj (starta, pausa, stoppa, skicka bevis),
    * återställer leveransloggar.
 
@@ -40,7 +40,7 @@ I det här avsnittet beskrivs användningen av tjänsterna &quot;Subscribe&quot;
 
 >[!IMPORTANT]
 >
->[Kampanjens JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
+>[Kampanjens JSAPI-](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) dokumentation innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
 
 ## Prenumerera (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Beskrivning av prenumerationsmetoden i schemat nms:subscription:
 </method>
 ```
 
-Definitionen av avstämningsnyckeln måste anges via attributet _**key** för `<recipient>` elementet i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
+Definitionen av avstämningsnyckeln måste anges via attributet _**key** för elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
 
 Anropet returnerar inga data, förutom fel.
 
@@ -136,7 +136,7 @@ Beskrivning av metoden &quot;Unsubscribe&quot; i schemat &quot;nms:subscription&
 </method>
 ```
 
-Definitionen av avstämningsnyckeln måste anges via attributet _key för elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
+Definitionen av avstämningsnyckeln måste anges via attributet _key i elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
 
 Om mottagaren inte finns i databasen eller inte prenumererar på den berörda informationstjänsten utför tjänsten ingen åtgärd och genererar inget fel.
 
@@ -205,9 +205,9 @@ XML-indatadokumentet är ett leveransmallfragment som följer strukturen i schem
 
 Anropet returnerar inga data, förutom fel.
 
-### XML-dokumentexempel {#xml-document-example}
+### Exempel på XML-dokument {#xml-document-example}
 
-Det här exemplet är baserat på en anpassad leveransmall från en extern datakälla (en fil i det här fallet). Konfigurationen beskrivs i sin helhet i leveransmallen, så allt som återstår att skicka när anropet görs är innehållet i filen från `<externalsource>` elementet.
+Det här exemplet är baserat på en anpassad leveransmall från en extern datakälla (en fil i det här fallet). Konfigurationen beskrivs i sin helhet i leveransmallen, så allt som återstår att skicka när anropet görs är innehållet i filen från `<externalsource>`-elementet.
 
 ```
 <delivery>
