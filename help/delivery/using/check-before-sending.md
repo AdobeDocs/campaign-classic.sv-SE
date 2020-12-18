@@ -20,13 +20,13 @@ När meddelandet är klart ser du till att innehållet visas korrekt på alla en
 
 Innan du skickar meddelandet måste du se till att parametrarna och konfigurationen stämmer överens med leveransen.
 
-## Varför validering är avgörande {#validation-is-key}
+## Varför validering är nyckel {#validation-is-key}
 
 Innan du skickar en leverans måste du se till att mottagarna får det meddelande som du verkligen vill skicka. För att göra detta måste du validera meddelandets innehåll och leveransparametrar.
 
 Med det här steget kan du identifiera eventuella fel och åtgärda dem innan du levererar till huvudmålet.
 
-Stegen för validering av leverans beskrivs [i det här avsnittet](../../delivery/using/steps-validating-the-delivery.md).
+Stegen för validering av leverans visas [i det här avsnittet](../../delivery/using/steps-validating-the-delivery.md).
 
 ## Inkorgsåtergivning {#inbox-and-email-rendering}
 
@@ -74,7 +74,7 @@ Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du at
 
 Du kan ange avsändarordning för leveranser genom att ange prioritetsnivå. För att göra detta:
 
-1. Redigera leveransegenskaperna och välj **[!UICONTROL Delivery]** fliken.
+1. Redigera leveransegenskaperna och välj fliken **[!UICONTROL Delivery]**.
 
 1. Definiera prioritetsnivån för leveransen på en skala från **[!UICONTROL Very low]** till **[!UICONTROL Very high]**.
 
@@ -92,7 +92,7 @@ Du kan:
 
 * Deklarera de IP-adresser som kan användas för varje IPAfinity-element. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* I den [typologi](../../campaign/using/about-campaign-typologies.md) du väljer använder du **[!UICONTROL Managing affinities with IP addresses]** fältet för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* I den [typologi](../../campaign/using/about-campaign-typologies.md) du väljer använder du fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * När e-postmeddelandet har skickats kontrollerar du huvudet för att verifiera vilken IP-adress som leveransen skickades från. E-postadministratören bör hjälpa dig att få fram rubrikinformationen.
 
