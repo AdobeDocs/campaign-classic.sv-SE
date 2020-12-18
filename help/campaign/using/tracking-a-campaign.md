@@ -28,19 +28,19 @@ På så sätt kan de
 
 ## Filterpaket {#filter-packages}
 
-Från **[!UICONTROL Campaigns universe]** sidan kan ni visa listan över **[!UICONTROL Campaign packages]** vilka grupperar alla befintliga distribuerade marknadsföringskampanjer. Du kan filtrera den här listan så att den endast visar kampanjer som antingen är publicerade, sena, väntar på godkännande osv. Det gör du genom att klicka på länkarna i den övre delen av den här vyn eller genom att använda **[!UICONTROL Filter list]** länken och välja den kampanjpaketstatus som ska visas.
+Från **[!UICONTROL Campaigns universe]** kan du visa listan **[!UICONTROL Campaign packages]** som grupperar alla befintliga distribuerade marknadsföringskampanjer. Du kan filtrera den här listan så att den endast visar kampanjer som antingen är publicerade, sena, väntar på godkännande osv. Det gör du genom att klicka på länkarna i den övre delen av den här vyn eller genom att använda länken **[!UICONTROL Filter list]** och välja den kampanjpaketstatus som ska visas.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## Redigera paket {#edit-packages}
 
-På **[!UICONTROL Campaign packages]** sidan kan du visa sammanfattningen för varje paket.
+På sidan **[!UICONTROL Campaign packages]** kan du visa sammanfattningen för varje paket.
 
 Sammanfattningen innehåller följande information: etikett, kampanjtyp, namnet på kampanjen som kampanjen skapades från samt mappen.
 
 Klicka på paketnamnet för att redigera det. Du kan också visa order efter deras lokala enheter och deras status.
 
-Den här informationen visas också i **[!UICONTROL Campaign orders]** vyn med alla order.
+Den här informationen finns också i vyn **[!UICONTROL Campaign orders]** där alla order listas.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -50,7 +50,7 @@ Den centrala operatorn kan redigera ordern. Det finns två sätt att göra detta
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   På fliken **[!UICONTROL Edit > General]** kan du visa information som angetts av den lokala enheten när kampanjen beställdes.
+   På fliken **[!UICONTROL Edit > General]** kan du visa information som angetts av den lokala enheten när den beställde kampanjen.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -62,15 +62,15 @@ Den centrala operatorn kan redigera ordern. Det finns två sätt att göra detta
 
 Den centrala enheten kan när som helst avbryta ett kampanjpaket.
 
-Klicka **[!UICONTROL Cancel]** i kampanjpaketet **[!UICONTROL Dashboard]**.
+Klicka på **[!UICONTROL Cancel]** i kampanjpaketet **[!UICONTROL Dashboard]**.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-I **[!UICONTROL Comment]** fältet kan du justera annulleringen.
+I fältet **[!UICONTROL Comment]** kan du justera annulleringen.
 
 Om du avbryter ett paket tas det bort från listan över tillgängliga marknadsföringskampanjer för **lokala kampanjer**.
 
-För **samarbetskampanjer** utlöses flera åtgärder när ett paket avbryts:
+För **samarbetskampanjer** utlöser ett avbrutet paket flera åtgärder:
 
 1. Alla beställningar som rör detta paket annulleras,
 
@@ -86,16 +86,16 @@ För **samarbetskampanjer** utlöses flera åtgärder när ett paket avbryts:
 
 Avbrutna paket kan fortfarande nås och återinitieras av den centrala enheten (se nedan) om det behövs. De kommer endast att erbjudas lokala enheter igen när de har godkänts och startats. Paketets ominitieringsprocess visas nedan.
 
-## Initiera om ett paket {#reinitializing-a-package}
+## Initierar om ett paket {#reinitializing-a-package}
 
 Kampanjpaket som redan har publicerats kan initieras om, ändras och göras tillgängliga för lokala enheter.
 
 1. Välj det paket det gäller.
-1. Klicka på **[!UICONTROL Reinitialize the package to reuse it]** länken och klicka på **[!UICONTROL OK]**.
+1. Klicka på länken **[!UICONTROL Reinitialize the package to reuse it]** och klicka på **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. Klicka på **[!UICONTROL Save]** knappen för att godkänna ominitiering av paket.
+1. Klicka på knappen **[!UICONTROL Save]** för att godkänna ominitiering av paket.
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
