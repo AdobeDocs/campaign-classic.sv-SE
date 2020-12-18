@@ -25,11 +25,11 @@ Den tekniska konfiguration och programkonfiguration som krävs för att installe
 
 Följande komponenter måste installeras och konfigureras korrekt:
 
-* Apache, se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md),
+* Apache, se [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md),
 * Java JDK och OpenJDK, se [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotek, se [Bibliotek](#libraries),
-* Lager för databasåtkomst, se [Lager](#database-access-layers)för databasåtkomst.
-* LibreOffice, se [Installera LibraryOffice för Debian](#installing-libreoffice-for-debian) och [installera LibraryOffice för CentOS](#installing-libreoffice-for-centos).
+* Lager för databasåtkomst, se [Lager för databasåtkomst](#database-access-layers),
+* LibraryOffice, se [Installera LibraryOffice för Debian](#installing-libreoffice-for-debian) och [Installera LibraryOffice för CentOS](#installing-libreoffice-for-centos).
 * Teckensnitt finns i [Teckensnitt för MTA-statistik](#fonts-for-mta-statistics) och [Teckensnitt för japanska förekomster](#fonts-for-japanese-instances).
 
 >[!NOTE]
@@ -42,7 +42,7 @@ Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaig
 
 * Bibliotek C måste ha stöd för TLS-läge (trådlokal lagring). Det här läget är aktivt i de flesta fall utom med vissa kärnor för vilka Xen-stöd har inaktiverats.
 
-   Om du vill kontrollera det kan du använda **namnet -a | grep xen** command till exempel.
+   Om du vill kontrollera detta kan du använda **uname -a | grep xen**-kommando till exempel.
 
    Om kommandot inte returnerar något (tom rad) betyder det att konfigurationen är korrekt.
 
@@ -50,7 +50,7 @@ Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaig
 
    För RHEL 7-distributioner krävs version 1.0 av OpenSSL.
 
-* Om du vill använda Adobe Campaign måste du ha installerat **biblioteket** libicu.
+* Om du vill använda Adobe Campaign måste du ha **libicu**-biblioteket installerat.
 
    Följande versioner av **libicu** stöds (32 eller 64 bitar):
 
@@ -80,7 +80,7 @@ Om du vill göra det loggar du in som rot och anger följande kommando:
 echo 0 >/selinux/enforce
 ```
 
-I filen **/etc/sysconfig/httpd** lades dessutom följande rad till för att referera till konfigurationsskriptet för Adobe Campaign-miljön:
+I filen **/etc/sysconfig/httpd** lades dessutom följande rad till som referens till konfigurationsskriptet för Adobe Campaign-miljön:
 
 ```
 . ~neolane/nl6/env.sh
@@ -162,19 +162,19 @@ Följande konfigurationer är nödvändiga med CentOS:
    yum install ipa-gothic-fonts ipa-mincho-fonts
    ```
 
-## Åtkomstlager för databaser {#database-access-layers}
+## Lager för databasåtkomst {#database-access-layers}
 
 Åtkomstlagren för databasmotorn som du använder måste vara installerade på servern och tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
 
 Den pilotversion som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
-Kontrollera även det allmänna avsnittet [Databas](../../installation/using/database.md) .
+Kontrollera även det allmänna avsnittet [Databas](../../installation/using/database.md).
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign stöder alla versioner av PostgreSQL-klientbibliotek från version 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** och **libpq.so.3.1**).
 
-Om du använder PostgreSQL med Adobe Campaign måste du även installera motsvarande **pgcrypto** -bibliotek.
+Om du använder PostgreSQL med Adobe Campaign måste du också installera motsvarande **pgcrypto**-bibliotek.
 
 ### Oracle {#oracle}
 
@@ -184,7 +184,7 @@ Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
 >[!NOTE]
 >
->Om du redan har installerat Oracle-klienten men den globala miljön (till exempel: /etc/profile) inte är korrekt konfigurerad kan du lägga till saknad information i **nl6/customer.sh** . Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Om du redan har installerat Oracle-klienten men den globala miljön (till exempel: /etc/profile) inte är korrekt konfigurerad kan du lägga till saknad information i **nl6/customer.sh**-skriptet Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Felsökning och bästa praxis**
 
@@ -192,7 +192,7 @@ Problem kan uppstå efter en Oracle-klient eller en serveruppdatering, vid versi
 
 Om du på klientkonsolen ser att loggarna har tagit oväntade lång tid (en eller flera timmar), arbetsflödets senaste bearbetning, nästa bearbetning och så vidare, kan det bero på ett problem mellan Oracle-klientens bibliotek och Oracle Server. För att undvika sådana problem
 
-1. Se till att använda den **fullständiga klienten**.
+1. Se till att du använder den fullständiga **klienten**.
 
    Olika problem har identifierats när du använder Oracle Instant Client-versionen. Dessutom är det omöjligt att ändra tidszonsfilen på snabbklienten.
 
@@ -217,4 +217,4 @@ Installationsprocessen beskrivs i det här kapitlet. Installationsstegen är fö
 * Steg 1: Information om hur du installerar programservern finns i [Installera paket med Linux](../../installation/using/installing-packages-with-linux.md).
 * Steg 2: Integrering med en webbserver (valfritt, beroende på vilka komponenter som används).
 
-När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om den inledande konfigurationen](../../installation/using/about-initial-configuration.md).
+När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om inledande konfiguration](../../installation/using/about-initial-configuration.md).
