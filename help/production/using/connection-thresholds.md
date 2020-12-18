@@ -27,7 +27,7 @@ Det finns tre olika tröskelvärden:
 
    * Tomcat side: alla frågor som faktiskt kommer från Adobe Campaign Tomcat-klienten.
 
-      Detta tröskelvärde konfigureras i filen **nl6/tomcat-8/conf/server.xml** . Med **attributet maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
+      Detta tröskelvärde konfigureras i filen **nl6/tomcat-8/conf/server.xml**. Med attributet **maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ Det finns tre olika tröskelvärden:
 
    * Databas: alla anslutningar som är öppna samtidigt i databasen av en process.
 
-      Detta tröskelvärde konfigureras i filen **nl6/conf/serverConf.xml**. Med attributet **maxCnx** i **datakällpoolen** kan du öka tröskeln för frågor som bearbetas samtidigt.
+      Detta tröskelvärde konfigureras i filen **nl6/conf/serverConf.xml**. Med attributet **maxCnx** i **datakällpoolen** kan du öka tröskeln för frågor som behandlas samtidigt.
 
       ```
           <!-- Data source
