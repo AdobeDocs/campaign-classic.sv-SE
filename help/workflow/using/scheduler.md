@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Schemaläggare {#scheduler}
 
-Schemaläggaren **är en** beständig aktivitet som aktiverar övergången vid de tidpunkter som anges i schemat.
+**Schemaläggaren** är en beständig aktivitet som aktiverar övergången vid de tidpunkter som anges i schemat.
 
 **[!UICONTROL Scheduler]**-aktiviteten bör betraktas som en planerad start.  Reglerna för aktivitetspositionering i diagrammet är desamma som för **[!UICONTROL Start]**-aktiviteten.  Den här aktiviteten får inte ha en inkommande övergång.
 
@@ -25,15 +25,15 @@ Schemaläggaren **är en** beständig aktivitet som aktiverar övergången vid d
 
 * Schemalägg inte ett arbetsflöde så att det körs mer än var 15:e minut eftersom det kan påverka den totala systemprestandan negativt och skapa block i databasen.
 
-* Använd aldrig mer än en aktivitet per gren i ett arbetsflöde. **[!UICONTROL Scheduler]** Se [Använda aktiviteter](../../workflow/using/workflow-best-practices.md#using-activities).
+* Använd aldrig mer än en **[!UICONTROL Scheduler]**-aktivitet per gren i ett arbetsflöde. Se [Använda aktiviteter](../../workflow/using/workflow-best-practices.md#using-activities).
 
 * Användning av en schemaläggaraktivitet kan leda till att ett arbetsflöde körs flera gånger samtidigt. Du kan till exempel ha en schemaläggare som utlöser arbetsflödeskörningen varje timme, men ibland tar körningen av hela arbetsflödet mer än en timme.
 
-   Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar att arbetsflöden körs samtidigt finns på [den här sidan](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+   Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar samtidig körning av ett arbetsflöde finns på [den här sidan](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 * Observera att övergången kan aktiveras flera timmar senare om arbetsflödet utförde en långvarig uppgift, till exempel en import, eller om wfserver-modulen stoppades en tid. I det här fallet kan det vara nödvändigt att begränsa körningen av den uppgift som har aktiverats av schemaläggaren till ett visst tidsintervall.
 
-## Konfigurera aktiviteten Schemaläggaren {#configuring-scheduler-activity}
+## Konfigurera schemaläggaraktiviteten {#configuring-scheduler-activity}
 
 Schemaläggaren definierar aktiveringsschemat för övergången. Konfigurera den genom att dubbelklicka på det grafiska objektet och sedan klicka på **[!UICONTROL Change...]**
 
