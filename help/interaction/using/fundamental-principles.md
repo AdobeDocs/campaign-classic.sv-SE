@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Grundläggande principer{#fundamental-principles}
 
-## Distribuera miljöer {#deploying-environments}
+## Distribuerar miljöer {#deploying-environments}
 
 Det finns två miljöer för varje målinriktningsdimension som används vid hantering av erbjudanden:
 
@@ -25,7 +25,7 @@ Det finns två miljöer för varje målinriktningsdimension som används vid han
 
    Kategorier kan också publiceras manuellt i onlinemiljön.
 
-   Processen för att godkänna erbjudanden beskrivs i avsnittet [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md) .
+   Processen för att godkänna erbjudanden beskrivs i avsnittet [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
 
 * En aktiv miljö där man kan hitta godkända erbjudanden från designmiljön, liksom de olika erbjudanden, filter, kategorier och regler som är konfigurerade i designmiljön. Under ett anrop till erbjudandemotorn kommer motorn alltid att använda erbjudanden från den aktiva miljön.
 
