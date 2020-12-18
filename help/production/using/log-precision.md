@@ -27,7 +27,7 @@ Det handlar om att starta om processerna med en högre loggnivå.
 
 Adobe Campaign kan arbeta med två loggnivåer:
 
-1. Läget **Detaljerad** är den första nivån efter standardnivån. Följande kommando aktiverar det:
+1. Läget **Fullständig** är den första nivån efter standardnivån. Följande kommando aktiverar det:
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -39,7 +39,7 @@ Adobe Campaign kan arbeta med två loggnivåer:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. I **TraceFilter** -läget kan du spara så många loggar som möjligt. Den aktiveras med följande kommando:
+1. Läget **TraceFilter**, som gör att du kan spara så många loggar som möjligt. Den aktiveras med följande kommando:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,7 +49,7 @@ Adobe Campaign kan arbeta med två loggnivåer:
    >
    >Om du använder **spårningsfilter:*** aktiveras alla loggtyper: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, nätverk, pop3, inmail\
    De mest användbara loggtyperna är: **wdbc** (visar alla SQL-frågor), **soap** (visar alla SOAP-anrop), **ldap** (visar alla LDAP-frågor efter autentisering), **xtkquery** (visar listan över alla frågor).\
-   Du kan använda dem var för sig (till exempel **tracefilter:soap,wdbc** ). Du kan också aktivera alla och välja att utesluta vissa andra: **-tracefilter:*,!soap**
+   Du kan använda dem var för sig (**tracefilter:soap,wdbc** till exempel). Du kan också aktivera alla och välja att utesluta vissa andra: **-tracefilter:*,!soap**
 
    Kontrollera att felet verkligen uppstod och starta sedan om processen på normalt sätt:
 
@@ -68,7 +68,7 @@ Innan du skickar det här kommandot bör du kontrollera att inga pågående jobb
 nlserver pdump -who
 ```
 
-Stäng sedan av och starta om modulen i **TraceFilter** -läge.
+Stäng sedan av och starta om modulen i **TraceFilter**-läge.
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -81,7 +81,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-I **spårfilsläget** kan du spara loggarna. I exemplen ovan sparas loggarna i **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log** .
+I **spårfilsläget** kan du spara loggarna. I exemplen ovan sparas loggarna i filerna **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log**.
 
 >[!IMPORTANT]
 I Windows ska du inte lägga till alternativet LD_PRELOAD. Följande kommando är tillräckligt:\
