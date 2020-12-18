@@ -17,13 +17,13 @@ ht-degree: 5%
 
 # Serverkonfigurationsfilen{#the-server-configuration-file}
 
-Den övergripande konfigurationen för Adobe Campaign definieras i filen **serverConf.xml** som finns i katalogen **conf** i installationskatalogen. I det här avsnittet visas alla olika noder och parametrar för **filen serverConf.xml** .
+Den övergripande konfigurationen för Adobe Campaign definieras i filen **serverConf.xml** som finns i katalogen **conf** i installationskatalogen. I det här avsnittet visas alla olika noder och parametrar för filen **serverConf.xml**.
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller på [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
 
-De första parametrarna finns i den **delade** noden. Dessa är relaterade till instansen. De kan användas av alla nlserver-kommandon (nlserver web, nlserver wfserver osv.). De andra avsnitten är relaterade till ett specifikt underkommando på servern.
+De första parametrarna finns inuti noden **shared**. Dessa är relaterade till instansen. De kan användas av alla nlserver-kommandon (nlserver web, nlserver wfserver osv.). De andra avsnitten är relaterade till ett specifikt underkommando på servern.
 
 **Delade parametrar**
 
@@ -62,7 +62,7 @@ De första parametrarna finns i den **delade** noden. Dessa är relaterade till 
 
 ## autentisering {#authentication}
 
-Här är de olika parametrarna för **autentiseringsnoden** :
+Här är de olika parametrarna för noden **authentication**:
 
 <table> 
  <thead> 
@@ -94,7 +94,7 @@ Här är de olika parametrarna för **autentiseringsnoden** :
   </tr> 
   <tr> 
    <td> securityTimeOutSec<br /> </td> 
-   <td> Timeout för säkerhetstoken i sekunder.<br /> </td> 
+   <td> Tidsgräns för säkerhetstoken i sekunder.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
@@ -106,7 +106,7 @@ Här är de olika parametrarna för **autentiseringsnoden** :
   </tr> 
   <tr> 
    <td> sessionTimeOutSec<br /> </td> 
-   <td> Tidsgräns för session i sekunder.<br /> </td> 
+   <td> Sessionstimeout i sekunder.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
@@ -115,7 +115,7 @@ Här är de olika parametrarna för **autentiseringsnoden** :
 
 ### XTK {#xtk}
 
-Här är de olika parametrarna för **autentiseringen > XTK** -noden:
+Här är de olika parametrarna för noden **autentisering > XTK**:
 
 <table> 
  <thead> 
@@ -135,7 +135,7 @@ Här är de olika parametrarna för **autentiseringen > XTK** -noden:
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
-   <td> Intern kontosäkerhetszon: auktoriserad zon för internkontot.<br /> </td> 
+   <td> Intern kontosäkerhetszon: auktoriserad zon för det interna kontot.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'lan'<br /> </td> 
   </tr> 
@@ -144,7 +144,7 @@ Här är de olika parametrarna för **autentiseringen > XTK** -noden:
 
 ## dataStore {#datastore}
 
-Här är de olika parametrarna för **dataStore** -noden. Här definieras serverdatakällorna.
+Här är de olika parametrarna för noden **dataStore**. Här definieras serverdatakällorna.
 
 <table> 
  <thead> 
@@ -158,13 +158,13 @@ Här är de olika parametrarna för **dataStore** -noden. Här definieras server
  <tbody> 
   <tr> 
    <td> exportDirectory<br /> </td> 
-   <td> Exportkatalog: sökvägen till målkatalogen för exporterade data.<br /> </td> 
+   <td> Exportkatalog: sökväg till målkatalog för exporterade data.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/export/' <br /> </td> 
   </tr> 
   <tr> 
    <td> extraSandboxedDirectories<br /> </td> 
-   <td> Extra kataloger i begränsat läge: andra banor som ska läggas till i sandlådan (avgränsade med kommatecken).<br /> </td> 
+   <td> Extra kataloger i begränsat läge: andra sökvägar som ska läggas till i sandlådan (avgränsade med kommatecken).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '/home/customers/,/sftp/' <br /> </td> 
   </tr> 
@@ -206,13 +206,13 @@ Här är de olika parametrarna för **dataStore** -noden. Här definieras server
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
-   <td> Lagra hemligheter i Vault: använda Hashicorp Vault.<br /> </td> 
+   <td> Lagra hemligheter i Vault: använd Hashicorp Vault.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultSecretPath<br /> </td> 
-   <td> Hemlig sökväg i valv<br /> </td> 
+   <td> Hemlig sökväg i Vault<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '/v1/secrets/campaign/'<br /> </td> 
   </tr> 
@@ -224,7 +224,7 @@ Här är de olika parametrarna för **dataStore** -noden. Här definieras server
   </tr> 
   <tr> 
    <td> vaultUrl<br /> </td> 
-   <td> URL för hashicorp-valv <br /> </td> 
+   <td> Hashicorp Vault URL <br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -245,7 +245,7 @@ Här är de olika parametrarna för **dataStore** -noden. Här definieras server
 
 ### proxyAdjust {#proxyadjust}
 
-Här är de olika parametrarna för noden **dataStore > proxyAdjust** . URL:er som matchar det reguljära uttrycket genereras om baserat på den URL som definieras i urlBase.
+Här är de olika parametrarna för noden **dataStore > proxyAdjust**. URL:er som matchar det reguljära uttrycket genereras om baserat på den URL som definieras i urlBase.
 
 <table> 
  <thead> 
@@ -271,7 +271,7 @@ Här är de olika parametrarna för noden **dataStore > proxyAdjust** . URL:er s
 
 ### dataSource {#datasource}
 
-Här är de olika parametrarna för noden **dataStore > dataSource** .
+Här är de olika parametrarna för noden **dataStore > dataSource**.
 
 <table> 
  <thead> 
@@ -292,7 +292,7 @@ Här är de olika parametrarna för noden **dataStore > dataSource** .
  </tbody> 
 </table>
 
-Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx** :
+Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx**:
 
 <table> 
  <thead> 
@@ -367,7 +367,7 @@ Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx
  </tbody> 
 </table>
 
-Konfigurera SQL-parametrarna i noden **dataStore > dataSource > sqlParams** :
+Konfigurera SQL-parametrarna i noden **dataStore > dataSource > sqlParams**:
 
 <table> 
  <thead> 
@@ -386,7 +386,7 @@ Konfigurera SQL-parametrarna i noden **dataStore > dataSource > sqlParams** :
  </tbody> 
 </table>
 
-Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataStore > dataSource > pool** :
+Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataStore > dataSource > pool**:
 
 <table> 
  <thead> 
@@ -404,7 +404,7 @@ Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataSt
   </tr> 
   <tr> 
    <td> freeCnx<br /> </td> 
-   <td> Antal kostnadsfria anslutningar i poolen.<br /> </td> 
+   <td> Antal lediga anslutningar som finns i poolen.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
   <tr> 
@@ -422,7 +422,7 @@ Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataSt
 
 ### virtualDir {#virtualdir}
 
-Här är de olika parametrarna för noden **dataStore > virtualDir** . Detta är konfigurationen av den virtuella katalogen till den verkliga katalogmappningen.
+Här är de olika parametrarna för noden **dataStore > virtualDir**. Detta är konfigurationen av den virtuella katalogen till den verkliga katalogmappningen.
 
 Mer information finns i [Hantera offentliga resurser](../../installation/using/configuring-campaign-server.md#managing-public-resources).
 
@@ -436,12 +436,12 @@ Mer information finns i [Hantera offentliga resurser](../../installation/using/c
  </thead> 
  <tbody> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> namn<br /> </td> 
    <td> Namnet på den virtuella katalogen <br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
-   <td> bana<br /> </td> 
+   <td> sökväg<br /> </td> 
    <td> Fullständig sökväg till den faktiska katalogen<br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
@@ -458,7 +458,7 @@ Här är standardkonfigurationen:
 
 ### preprocessCommand {#preprocesscommand}
 
-Här är de olika parametrarna för noden **dataStore > preprocessCommand** . Detta är de auktoriserade kommandona för förbearbetning av arbetsflödesaktiviteten Läs in fil.
+Här är de olika parametrarna för noden **dataStore > preprocessCommand**. Detta är de auktoriserade kommandona för förbearbetning av arbetsflödesaktiviteten Läs in fil.
 
 <table> 
  <thead> 
@@ -476,11 +476,11 @@ Här är de olika parametrarna för noden **dataStore > preprocessCommand** . De
   </tr> 
   <tr> 
    <td> label<br /> </td> 
-   <td> Etikett för kommandorad<br /> </td> 
+   <td> Kommandoradsetikett<br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> namn<br /> </td> 
    <td> Kommandoradsnamn<br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
@@ -498,7 +498,7 @@ Här är standardkonfigurationen:
 
 Här är de olika parametrarna för noden **dnsConfig** (DNS-konfiguration).
 
-For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md).
+Mer information finns i [avsnittet](../../installation/using/configuring-campaign-server.md).
 
 <table> 
  <thead> 
@@ -518,7 +518,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> nameServers<br /> </td> 
-   <td> DNS-server: kommaavgränsad lista över DNS-servrar (Domain Name Servers). Se texten nedan.<br /> </td> 
+   <td> DNS-server: kommaavgränsad lista över DNS-servrar (Domain Name Servers). Se anteckningen nedan.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -539,7 +539,7 @@ For additional information, refer to this [section](../../installation/using/con
 
 >[!NOTE]
 >
->Note on **nameSevers**: som standard använder nätverket
+>Obs! **nameSevers**: som standard använder nätverket
 >parametrar för det första nätverksgränssnittet som deklarerats i Windows
 >inte definierad i UNIX. Definierar domännamnsservrar (DNS)
 >används av MTA för att hämta e-postväxlaren deklarerad för
@@ -581,7 +581,7 @@ Mer information finns i [Begränsa tillåtna externa kommandon](../../installati
 
 ## htmlToPdf {#htmltopdf}
 
-Här är de olika parametrarna för **noden htmlToPdf** . Det här är konfigurationen för tjänsten för konvertering av webbsidor till PDF-dokument.
+Här är de olika parametrarna för noden **htmlToPdf**. Det här är konfigurationen för tjänsten för konvertering av webbsidor till PDF-dokument.
 
 <table> 
  <thead> 
@@ -595,13 +595,13 @@ Här är de olika parametrarna för **noden htmlToPdf** . Det här är konfigura
  <tbody> 
   <tr> 
    <td> kommando<br /> </td> 
-   <td> Kommandorad för att köra konverteringen (i "annat"-läge).<br /> </td> 
+   <td> Kommandorad för att köra konverteringen (i "annat" läge).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessusCount<br /> </td> 
-   <td> Max. Antal konverteringsprocesser som tillåts samtidigt på en dator.<br /> </td> 
+   <td> Max. antal konverteringsprocesser som tillåts samtidigt på en dator.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -613,7 +613,7 @@ Här är de olika parametrarna för **noden htmlToPdf** . Det här är konfigura
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Timeout för konvertering: maximal konverteringstid i sekunder. Efter detta tröskelvärde stoppas konverteringsprocessen och ett fel uppstår.<br /> </td> 
+   <td> Timeout för konvertering: maximal konverteringstid i sekunder. Efter det här tröskelvärdet stoppas konverteringsprocessen och ett fel uppstår.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
@@ -640,9 +640,9 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ## javaScript {#javascript}
 
-Här är de olika parametrarna för **JavaScript** -noden. Detta är konfigurationen för JavaScript-tolken.
+Här är de olika parametrarna för noden **javaScript**. Detta är konfigurationen för JavaScript-tolken.
 
-Mer information finns i [rapporteringsdokumentationen](../../reporting/using/actions-on-reports.md#memory-allocation) och den här [tekniken](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+Mer information finns i [Rapportdokumentationen](../../reporting/using/actions-on-reports.md#memory-allocation) och i [den här ](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
 
 <table> 
  <thead> 
@@ -656,7 +656,7 @@ Mer information finns i [rapporteringsdokumentationen](../../reporting/using/act
  <tbody> 
   <tr> 
    <td> maxMB<br /> </td> 
-   <td> Maximal storlek i megabyte innan skräpinsamlaren körs.<br /> </td> 
+   <td> Maximal storlek i MB innan skräpinsamlaren körs.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 512 <br /> </td> 
   </tr> 
@@ -671,7 +671,7 @@ Mer information finns i [rapporteringsdokumentationen](../../reporting/using/act
 
 ## mailExchanger {#mailexchanger}
 
-Här är de olika parametrarna för **noden mailExchanger** . Detta är konfigurationen för SMTP-servern.
+Här är de olika parametrarna för noden **mailExchanger**. Detta är konfigurationen för SMTP-servern.
 
 <table> 
  <thead> 
@@ -691,7 +691,7 @@ Här är de olika parametrarna för **noden mailExchanger** . Detta är konfigur
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
-   <td> TCP-porten för SMTP-servern som används för e-postöverföringen.<br /> </td> 
+   <td> TCP-port för SMTP-servern som används för e-postöverföring.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -700,7 +700,7 @@ Här är de olika parametrarna för **noden mailExchanger** . Detta är konfigur
 
 ## modul {#module}
 
-Här är de olika parametrarna för **modulnoden** . Det här är konfigurationen för modulen för namnutrymmesbegränsningar xtk.
+Här är de olika parametrarna för noden **module**. Det här är konfigurationen för modulen för namnutrymmesbegränsningar xtk.
 
 <table> 
  <thead> 
@@ -721,9 +721,9 @@ Här är de olika parametrarna för **modulnoden** . Det här är konfiguratione
  </tbody> 
 </table>
 
-## monitoring {#monitoring}
+## övervakning {#monitoring}
 
-Här är de olika parametrarna för **övervakningsnoden** . Detta är övervakningstjänstens konfiguration.
+Här är de olika parametrarna för **övervaknings**-noden. Detta är övervakningstjänstens konfiguration.
 
 <table> 
  <thead> 
@@ -737,7 +737,7 @@ Här är de olika parametrarna för **övervakningsnoden** . Detta är övervakn
  <tbody> 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
-   <td> Maximal beredningstid: varaktighet i sekunder efter vilken en leveransåtgärd inte längre ska förberedas.<br /> </td> 
+   <td> Maximal beredningstid: längd i sekunder efter vilken en leveransåtgärd inte längre ska förberedas.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -756,9 +756,9 @@ Här är de olika parametrarna för **övervakningsnoden** . Detta är övervakn
  </tbody> 
 </table>
 
-## ooconv {#ooconv}
+## oconv {#ooconv}
 
-Här är de olika parametrarna för **oconv** -noden. Detta är konfigurationen för dokumentkonverteringsservern.
+Här är de olika parametrarna för noden **oconv**. Detta är konfigurationen för dokumentkonverteringsservern.
 
 <table> 
  <thead> 
@@ -772,13 +772,13 @@ Här är de olika parametrarna för **oconv** -noden. Detta är konfigurationen 
  <tbody> 
   <tr> 
    <td> maxConversions<br /> </td> 
-   <td> Maximalt antal konverteringar som en OpenOffice-server får utföra. Servern startas om efter det här numret.<br /> </td> 
+   <td> Maximalt antal konverteringar som en OpenOffice-server får utföra. Efter det här numret har servern startats om.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
-   <td> Maximal inaktiv tid för OpenOffice-servern innan den tvångsavslutas.<br /> </td> 
+   <td> Maximal inaktiv tid för OpenOffice-servern innan den tvångsstängs.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 7200<br /> </td> 
   </tr> 
@@ -799,9 +799,9 @@ Här är de olika parametrarna för **oconv** -noden. Detta är konfigurationen 
 
 ## proxyConfig {#proxyconfig}
 
-Här är de olika parametrarna för noden **proxyConfig** . Detta är konfigurationen av proxyparametrar.
+Här är de olika parametrarna för noden **proxyConfig**. Detta är konfigurationen av proxyparametrar.
 
-Mer information finns i [Proxyanslutningens konfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+Mer information finns i [Proxyanslutningskonfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 <table> 
  <thead> 
@@ -820,25 +820,25 @@ Mer information finns i [Proxyanslutningens konfiguration](../../installation/us
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> åsidosätta<br /> </td> 
-   <td> Undantag: En förteckning över adresser för vilka proxyparametrar ska ignoreras.<br /> </td> 
+   <td> override<br /> </td> 
+   <td> Undantag: adresslista för vilka proxyparametrar ska ignoreras.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'localhost*' <br /> </td> 
   </tr> 
   <tr> 
    <td> useSingleProxy<br /> </td> 
-   <td> Unik proxyserver: använda samma konfiguration för alla typer av proxy.<br /> </td> 
+   <td> Unik proxyserver: använd samma konfiguration för alla typer av proxy.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### HTTP-proxy/säker proxy {#http-proxy---secure-proxy-}
+### HTTP-proxy / Säker proxy {#http-proxy---secure-proxy-}
 
-Konfigurera följande parametrar i noden **proxyConfig > HTTP Proxy/Secure proxy** .
+Konfigurera följande parametrar i noden **proxyConfig > HTTP Proxy / Secure proxy**.
 
-Mer information finns i [Proxyanslutningens konfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+Mer information finns i [Proxyanslutningskonfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 <table> 
  <thead> 
@@ -874,7 +874,7 @@ Mer information finns i [Proxyanslutningens konfiguration](../../installation/us
 
 ## threadPool {#threadpool}
 
-Här är de olika parametrarna för **treadPool** -noden.
+Här är de olika parametrarna för noden **threadPool**.
 
 <table> 
  <thead> 
@@ -897,13 +897,13 @@ Här är de olika parametrarna för **treadPool** -noden.
 
 ## urlPermission {#urlpermission}
 
-Här är de olika parametrarna för **urlPermission** -noden. Det här är listan med URL:er som JavaScript-koden har åtkomst till.
+Här är de olika parametrarna för noden **urlPermission**. Det här är listan med URL:er som JavaScript-koden har åtkomst till.
 
 Lista över domäner och reguljära uttryck som anger om en URL som påträffas i Javascript-koden kan användas eller inte av Adobe Campaign-servern.
 
 Om det inte går att hitta URL:en utförs standardåtgärden enligt det angivna standardläget.
 
-Mer information finns i [Utgående anslutningsskydd](../../installation/using/configuring-campaign-server.md#url-permissions).
+Mer information finns i [Skydd mot utgående anslutning](../../installation/using/configuring-campaign-server.md#url-permissions).
 
 <table> 
  <thead> 
@@ -917,7 +917,7 @@ Mer information finns i [Utgående anslutningsskydd](../../installation/using/co
  <tbody> 
   <tr> 
    <td> åtgärd<br /> </td> 
-   <td> Standardåtgärd om URL:en inte finns i den auktoriserade listan (uppräkning). Möjliga värden är 'ignore' (auktorisera utan varningsmeddelande, detta kräver att skyddet inaktiveras), 'warn' (auktorisera och skicka ett varningsmeddelande) och 'deny' (förhindra åtkomst till URL:en).<br /> </td> 
+   <td> Standardåtgärd om URL:en inte finns i den auktoriserade listan (uppräkning). Möjliga värden är 'ignore' (auktorisera utan varningsmeddelande, detta kräver att skyddet inaktiveras), 'warn' (auktorisera och utfärda ett varningsmeddelande) och 'deny' (förhindra åtkomst till URL:en).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> neka<br /> </td> 
   </tr> 
@@ -932,9 +932,9 @@ Mer information finns i [Utgående anslutningsskydd](../../installation/using/co
 
 ### url {#url}
 
-För varje URL lägger du till en **url** -nod med följande parametrar:
+Lägg till en **url**-nod för varje URL med följande parametrar:
 
-Mer information finns i [Utgående anslutningsskydd](../../installation/using/configuring-campaign-server.md#url-permissions).
+Mer information finns i [Skydd mot utgående anslutning](../../installation/using/configuring-campaign-server.md#url-permissions).
 
 <table> 
  <thead> 
@@ -958,7 +958,7 @@ Mer information finns i [Utgående anslutningsskydd](../../installation/using/co
  </tbody> 
 </table>
 
-Om en post uppfyller **dnsSuffix** men inte **urlRegEx**, undersöks följande post.
+Om en post uppfyller **dnsSuffix** men inte **urlRegEx** undersöks följande post.
 
 Om du till exempel vill tillåta åtkomst till alla URL:er för domänen business.com kan vi definiera två poster:
 
@@ -989,7 +989,7 @@ Här är standardkonfigurationen:
 
 ## xtkJobs {#xtkjobs}
 
-Här är de olika parametrarna för noden **xtkJobs** . Detta är konfigurationen för serverjobben.
+Här är de olika parametrarna för noden **xtkJobs**. Detta är konfigurationen för serverjobben.
 
 <table> 
  <thead> 
@@ -1010,9 +1010,9 @@ Här är de olika parametrarna för noden **xtkJobs** . Detta är konfiguratione
  </tbody> 
 </table>
 
-## arkivering {#archiving}
+## arkiverar {#archiving}
 
-Här är de olika parametrarna för **arkiveringsnoden** . Detta är konfigurationen för de slutförda arkiveringsåtgärderna i bakgrunden.
+Här är de olika parametrarna för noden **archiving**. Detta är konfigurationen för de slutförda arkiveringsåtgärderna i bakgrunden.
 
 Mer information finns i [Aktivera e-postarkivering (lokalt)](../../installation/using/email-archiving.md#activating-email-archiving--on-premise-).
 
@@ -1076,13 +1076,13 @@ Mer information finns i [Aktivera e-postarkivering (lokalt)](../../installation/
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1106,13 +1106,13 @@ Mer information finns i [Aktivera e-postarkivering (lokalt)](../../installation/
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> smtpBccAddress<br /> </td> 
-   <td> Arkiverar måldestination<br /> </td> 
+   <td> Arkiverar målmålet<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1145,7 +1145,7 @@ Mer information finns i [Aktivera e-postarkivering (lokalt)](../../installation/
 
 ## inMail {#inmail}
 
-Här är de olika parametrarna för **inMail** -noden. Detta är konfigurationen för modulen för inkommande e-posthantering.
+Här är de olika parametrarna för noden **inMail**. Detta är konfigurationen för modulen för inkommande e-posthantering.
 
 <table> 
  <thead> 
@@ -1219,13 +1219,13 @@ Här är de olika parametrarna för **inMail** -noden. Detta är konfigurationen
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1267,7 +1267,7 @@ Här är de olika parametrarna för **inMail** -noden. Detta är konfigurationen
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1276,7 +1276,7 @@ Här är de olika parametrarna för **inMail** -noden. Detta är konfigurationen
 
 ### msgDump {#msgdump}
 
-Konfigurera följande parametrar i **noden** inMail > msgDump. Detta är konfigurationen för dumpen av bearbetade meddelanden.
+Konfigurera följande parametrar i noden **inMail > msgDump**. Detta är konfigurationen för dumpen av bearbetade meddelanden.
 
 <table> 
  <thead> 
@@ -1296,7 +1296,7 @@ Konfigurera följande parametrar i **noden** inMail > msgDump. Detta är konfigu
   </tr> 
   <tr> 
    <td> msgPath<br /> </td> 
-   <td> Sökväg till meddelandedumpen.<br /> </td> 
+   <td> Meddelandedumpsökväg.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
@@ -1305,9 +1305,9 @@ Konfigurera följande parametrar i **noden** inMail > msgDump. Detta är konfigu
 
 ## interactiond {#interactiond}
 
-Här är de olika parametrarna för **interaktionsnoden** . Detta är konfigurationen av skrivdaemon för inkommande interaktionshändelser.
+Här är de olika parametrarna för **interaktiond**-noden. Detta är konfigurationen av skrivdaemon för inkommande interaktionshändelser.
 
-Mer information finns i [Interaction - Data buffer](../../installation/using/interaction---data-buffer.md).
+Mer information finns i [Interaktion - Databuffert](../../installation/using/interaction---data-buffer.md).
 
 <table> 
  <thead> 
@@ -1333,7 +1333,7 @@ Mer information finns i [Interaction - Data buffer](../../installation/using/int
   </tr> 
   <tr> 
    <td> callDataSize<br /> </td> 
-   <td> Max. antalet tecken som lagras i det delade minnet för anropsdata.<br /> </td> 
+   <td> Max. antal tecken som lagras i det delade minnet för anropsdata.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1345,13 +1345,13 @@ Mer information finns i [Interaction - Data buffer](../../installation/using/int
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1363,7 +1363,7 @@ Mer information finns i [Interaction - Data buffer](../../installation/using/int
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> Maximalt antal berättigade erbjudanden sorterade direkt efter offerter som ska lagras för statistik.<br /> </td> 
+   <td> Maximalt antal berättigade erbjudanden sorterade direkt efter offerter, som ska lagras för statistik.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1375,7 +1375,7 @@ Mer information finns i [Interaction - Data buffer](../../installation/using/int
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1396,7 +1396,7 @@ Mer information finns i [Interaction - Data buffer](../../installation/using/int
 
 ## mta {#mta}
 
-Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen för leveransagenter.
+Här är de olika parametrarna för noden **mta**. Detta är konfigurationen för leveransagenter.
 
 <table> 
  <thead> 
@@ -1470,13 +1470,13 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1524,7 +1524,7 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1536,15 +1536,19 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
-   <td> Adress till servern för leveransstatistik, angiven som &lt;dns eller ip&gt; <code>[</code>: 
-     &lt;port&gt; <code>]</code>. Se <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
+   <td> Adress till servern för leveransstatistik, angiven som 
+    &lt;dns eller ip&gt; 
+      <code>[</code>: 
+     &lt;port&gt; 
+       <code>]</code>. Se 
+      <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
       <br /> 
      </td> 
    <td> Sträng<br /> </td> 
-   <td> Om det inte är definierat är standardporten 7777.<br /> </td> 
+   <td> Om inget anges är standardporten 7777.<br /> </td> 
   </tr> 
   <tr> 
-   <td> startServerTLSSupport<br /> </td> 
+   <td> statServerTLSSupport<br /> </td> 
    <td> Aktivera TLS per domän: aktiverar TLS som kan konfigureras av MX (kräver en uppdaterad statistikserver).<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true <br /> </td> 
@@ -1557,7 +1561,7 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Om värdet är "true" använder din instans <a href="https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Om värdet är "true" använder instansen <a href="https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Förbättrad MTA</a>.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1584,7 +1588,7 @@ Här är de olika parametrarna för **mta** -noden. Detta är konfigurationen f�
 
 ### cache {#cache}
 
-Konfigurera följande parametrar i **cache** -noden. Detta är den lokala filcachekonfigurationen.
+Konfigurera följande parametrar i noden **cache**. Detta är den lokala filcachekonfigurationen.
 
 <table> 
  <thead> 
@@ -1619,7 +1623,7 @@ Konfigurera följande parametrar i **cache** -noden. Detta är den lokala filcac
 
 ### relä {#relay}
 
-Konfigurera följande parametrar i noden **mta > relay** . Detta är konfigurationen för e-postservern för meddelandeleveransen.
+Konfigurera följande parametrar i noden **mta > relay**. Detta är konfigurationen för e-postservern för meddelandeleveransen.
 
 Mer information finns i [SMTP-relä](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
@@ -1650,9 +1654,9 @@ Mer information finns i [SMTP-relä](../../installation/using/configuring-campai
 
 ### överordnad {#master}
 
-Konfigurera följande parametrar i noden **mta > överordnad** . Detta är huvudserverns konfiguration.
+Konfigurera följande parametrar i noden **mta > överordnad**. Detta är huvudserverns konfiguration.
 
-For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#mta-child-processes).
+Mer information finns i [avsnittet](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
 <table> 
  <thead> 
@@ -1666,7 +1670,7 @@ For additional information, refer to this [section](../../installation/using/con
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Databasavsökningsfrekvens för de jobb som ska levereras. Det här värdet anger databasens avsökningsfrekvens (i sekunder). För att få en lista över jobb som väntar på leverans kommer MTA att regelbundet avsöka databasen. Om inget jobb väntar definieras avsökningsperioden av det här värdet. Om ett jobb har överförts till en underordnad server, minskas annars avsökningstiden automatiskt till en sekund så att ett nytt jobb kan bearbetas igen så snart som möjligt, dvs. så snart en underordnad server är tillgänglig igen. Detta innebär inte att databasfrågan kommer att utföras varje sekund tills en underordnad server blir tillgänglig igen. En databasåtkomst sker faktiskt bara när minst en underordnad server blir tillgänglig.<br /> </td> 
+   <td> Databasavsökningsfrekvens för de jobb som ska levereras. Det här värdet anger databasens avsökningsfrekvens (i sekunder). För att få en lista över jobb som väntar på leverans kommer MTA att regelbundet avsöka databasen. Om inget jobb väntar definieras avsökningsperioden av det här värdet. Om ett jobb har överförts till en underordnad server, minskas annars avsökningstiden automatiskt till en sekund så att ett nytt jobb kan bearbetas igen så snart som möjligt, dvs. så snart en underordnad server är tillgänglig igen. Detta innebär inte att databasfrågan kommer att utföras varje sekund tills en underordnad server blir tillgänglig igen. En databasåtkomst görs bara när minst en underordnad server blir tillgänglig.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -1678,19 +1682,19 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
-   <td> Giltighetsperiod för cachen med privata nycklar (DomainKeys). Privata nycklar som används för att signera e-postmeddelanden efter DomainKeys-rekommendationen (http://antispam.yahoo.com/domainkeys) lagras som alternativ i databasen. Parametern domainKeysReloadPeriodSec definierar hur många sekunder som MTA kan behålla dessa nycklar i ett cacheminne. Efter den här fördröjningen måste alla nycklar läsas in från databasen igen.<br /> </td> 
+   <td> Giltighetsperiod för cachen med privata nycklar (DomainKeys). Privata nycklar som används för att signera e-postmeddelanden efter DomainKeys-rekommendationen (http://antispam.yahoo.com/domainkeys) lagras som alternativ i databasen. Parametern domainKeysReloadPeriodSec definierar hur många sekunder som MTA kan behålla dessa nycklar i ett cacheminne. Efter den här fördröjningen måste alla nycklar läsas in på nytt från databasen.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Maximalt antal underordnade servrar. Representerar det maximala antalet servrar som körs. Vi rekommenderar att du begränsar det här antalet till ett optimalt värde som är kompatibelt med serverns minnesresurser. Detta kan kontrolleras under en leverans. Det använda minnet bör inte överstiga en tredjedel av det tillgängliga fysiska minnet, annars används växlingen. Se Underordnade <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA-processer</a>.<br /> </td> 
+   <td> Maximalt antal underordnade servrar. Representerar det maximala antalet servrar som körs. Vi rekommenderar att du begränsar det här antalet till ett optimalt värde som är kompatibelt med serverns minnesresurser. Detta kan kontrolleras under en leverans. Det använda minnet bör inte överstiga en tredjedel av det tillgängliga fysiska minnet, annars används växlingen. Se <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Underordnade MTA-processer</a>.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Minsta antal underordnade servrar. MTA försöker hålla åtminstone så många servrar igång. Om det är mindre startas nya servrar om varje sekund tills värdet nås.<br /> </td> 
+   <td> Minsta antal underordnade servrar. MTA försöker hålla åtminstone så många servrar igång. Om det är mindre startas nya servrar om varje sekund tills det här värdet nås.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1703,9 +1707,9 @@ For additional information, refer to this [section](../../installation/using/con
  </tbody> 
 </table>
 
-### child {#child}
+### underordnad {#child}
 
-Konfigurera följande parametrar i noden **mta > child** . Detta är konfigurationen för underordnade servrar.
+Konfigurera följande parametrar i noden **mta > child**. Detta är konfigurationen för underordnade servrar.
 
 Mer information finns i [E-postoptimering](../../installation/using/email-deliverability.md#email-sending-optimization).
 
@@ -1727,19 +1731,19 @@ Mer information finns i [E-postoptimering](../../installation/using/email-delive
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Timeout tills underordnade inaktiva servrar stoppas. Om en underordnad server har en inaktiv tid som är större än den här parametern tar den automatiskt slut för att frigöra värdresurser.<br /> </td> 
+   <td> Timeout tills underordnade inaktiva servrar stoppas. Om en underordnad server har en inaktiv tid som är större än den här parametern kommer den automatiskt att frigöra värdresurser.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximal meddelandekvarhållningstid. Om ett förberett meddelande inte kunde skickas på grund av strypning eller inte kunde ansluta till mål-MTA, överges meddelandet och kommer att bearbetas vid nästa försök.<br /> </td> 
+   <td> Maximal meddelandekvarhållningstid. Om ett förberett meddelande inte kunde skickas på grund av begränsning eller om det inte gick att ansluta till mål-MTA, överges meddelandet och kommer att bearbetas vid nästa försök.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
-   <td> Maximalt antal parallella Http-begäranden till FCM som initierats av varje underordnad server.<br /> </td> 
+   <td> Maximalt antal parallella HTTP-begäranden till FCM som initierats av varje underordnad server.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
@@ -1747,7 +1751,7 @@ Mer information finns i [E-postoptimering](../../installation/using/email-delive
    <td> maxMsgPerChild<br /> </td> 
    <td> Maximalt antal meddelanden per underordnad server. Varje underordnad MTA behandlar detta antal meddelanden och dör. Det är viktigt att ange ett tal så att minnes- eller resursläckor i MTA är ofarliga (vanligen några tusen). Även om det inte finns några kända minnesläckor i MTA-koden är de inbäddade JavaScript- och XSL-motorerna inte helt tillförlitliga.<br /> </td> 
    <td> Lång<br /> </td> 
-   <td> 5000000<br /> </td> 
+   <td> 500000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWaitMessages<br /> </td> 
@@ -1769,20 +1773,20 @@ Mer information finns i [E-postoptimering](../../installation/using/email-delive
   </tr> 
   <tr> 
    <td> startWithFirstMX<br /> </td> 
-   <td> Börja alltid med den högsta prioriteten MX.<br /> </td> 
+   <td> Starta alltid med högsta prioritet MX.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
-   <td> Maximalt antal försök i följd när programmet återupptas.<br /> </td> 
+   <td> Maximalt antal försök i följd vid återupptagning.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Konfigurera följande parametrar i noden **mta > child > smtp** . Detta är konfigurationen för SMTP-sessioner.
+Konfigurera följande parametrar i noden **mta > child > smtp**. Detta är konfigurationen för SMTP-sessioner.
 
 <table> 
  <thead> 
@@ -1821,9 +1825,9 @@ Konfigurera följande parametrar i noden **mta > child > smtp** . Detta är konf
  </tbody> 
 </table>
 
-Konfigurera följande parametrar i noden **mta > child > smtp > IPAfinity** . Detta är konfigurationen av hanteringen av tillhörigheter med IP-adresser för optimerad utgående SMTP-trafik.
+Konfigurera följande parametrar i noden **mta > child > smtp > IPAfinity**. Detta är konfigurationen av hanteringen av tillhörigheter med IP-adresser för optimerad utgående SMTP-trafik.
 
-Mer information finns i [Lista över IP-adresser som ska användas](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) och [hantera utgående SMTP-trafik med tillhörigheter](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
+Mer information finns i [Lista över IP-adresser som ska användas](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) och [Hantera utgående SMTP-trafik med tillhörigheter](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
 
 <table> 
  <thead> 
@@ -1840,14 +1844,14 @@ Mer information finns i [Lista över IP-adresser som ska användas](../../instal
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
-   <td> Logiskt namn: namn som är länkade till tillhörigheten av användare. Namn avgränsas med semikolon.<br /> </td> 
+   <td> namn<br /> </td> 
+   <td> Logiskt namn: namn som är länkade till tillhörigheten av användare. Namn avgränsas med semikolon;<br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Konfigurera följande parametrar i noden **mta > child > smtp > IP** .
+Konfigurera följande parametrar i noden **mta > child > smtp > IP**.
 
 Mer information finns i [Lista över IP-adresser som ska användas](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 
@@ -1862,12 +1866,12 @@ Mer information finns i [Lista över IP-adresser som ska användas](../../instal
  <tbody> 
   <tr> 
    <td> adress<br /> </td> 
-   <td> Associerad fysisk adress. Exempel: "192.168.0.1"<br /> </td> 
+   <td> Associerad fysisk adress. Exempel: 192.168.0.1<br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Associerat ID för offentlig adress. Används som nyckel för statistikservern. Måste vara numeriskt. See this <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">section</a>.<br /> </td> 
+   <td> Associerat ID för offentlig adress. Används som nyckel för statistikservern. Måste vara numeriskt. Se det här <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">avsnittet</a>.<br /> </td> 
    <td> Lång<br /> </td> 
   </tr> 
   <tr> 
@@ -1895,7 +1899,7 @@ Mer information finns i [Lista över IP-adresser som ska användas](../../instal
 
 ## nmac {#nmac}
 
-Här är de olika parametrarna för **namnnoden** . Det här är konfigurationen för push-meddelandeleveranser.
+Här är de olika parametrarna för **nmac**-noden. Det här är konfigurationen för push-meddelandeleveranser.
 
 <table> 
  <thead> 
@@ -1918,7 +1922,7 @@ Här är de olika parametrarna för **namnnoden** . Det här är konfigurationen
 
 ### relä {#relay-1}
 
-Här är de olika parametrarna för noden **nmac > relay** . Detta konfigurerar användningen av ett relä för meddelandeleveransen (iOS http2-anslutning).
+Här är de olika parametrarna för noden **nmac > relay**. Detta konfigurerar användningen av ett relä för meddelandeleveransen (iOS http2-anslutning).
 
 <table> 
  <thead> 
@@ -1953,7 +1957,7 @@ Här är de olika parametrarna för noden **nmac > relay** . Detta konfigurerar 
 
 ## rörlig {#pipelined}
 
-Här är de olika parametrarna för den **rörliga** noden. Det här är konfigurationen för händelsebearbetningsmodulen för Pipeline-tjänster.
+Här är de olika parametrarna för noden **pipelined**. Det här är konfigurationen för händelsebearbetningsmodulen för Pipeline-tjänster.
 
 <table> 
  <thead> 
@@ -1979,13 +1983,13 @@ Här är de olika parametrarna för den **rörliga** noden. Det här är konfigu
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
-   <td> URL för att hämta en gatewaytoken.<br /> </td> 
+   <td> URL för att hämta en gateway-token.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> https://api.omniture.com' <br /> </td> 
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
-   <td> Privat nyckel för att erhålla tokens (krypterad i AES med alternativet XtkKey).<br /> </td> 
+   <td> Privat nyckel för att hämta token (krypterad i AES med alternativet XtkKey).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2027,13 +2031,13 @@ Här är de olika parametrarna för den **rörliga** noden. Det här är konfigu
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2050,7 +2054,7 @@ Här är de olika parametrarna för den **rörliga** noden. Det här är konfigu
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
-   <td> pekareFlushPeriodSec<br /> </td> 
+   <td> pointerFlushPeriodSec<br /> </td> 
    <td> Fördröjning innan pekaren sparas: pekaren kommer att lagras i databasen minst en gång under den här perioden (användbart vid låg aktivitet).<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 5<br /> </td> 
@@ -2087,16 +2091,16 @@ Här är de olika parametrarna för den **rörliga** noden. Det här är konfigu
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## reparation {#repair}
+## reparera {#repair}
 
-Här är de olika parametrarna för **reparationsnoden** . Detta är konfigurationen för databasreparationsmodulen.
+Här är de olika parametrarna för noden **repair**. Detta är konfigurationen för databasreparationsmodulen.
 
 <table> 
  <thead> 
@@ -2119,7 +2123,7 @@ Här är de olika parametrarna för **reparationsnoden** . Detta är konfigurati
 
 ## securityZone {#securityzone}
 
-Här är de olika parametrarna för **securityZone** -noden.
+Här är de olika parametrarna för noden **securityZone**.
 
 Mer information finns i [Definiera säkerhetszoner](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
@@ -2159,7 +2163,7 @@ Mer information finns i [Definiera säkerhetszoner](../../installation/using/con
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
-   <td> Auktorisera användar-/lösenordssessionstoken.<br /> </td> 
+   <td> Autentisera token för användar-/lösenordssession.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2170,7 +2174,7 @@ Mer information finns i [Definiera säkerhetszoner](../../installation/using/con
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> namn<br /> </td> 
    <td> Internt namn<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> NewName() <br /> </td> 
@@ -2217,7 +2221,7 @@ Här är standardkonfigurationen:
 
 ### subNetwork {#subnetwork}
 
-Här är de olika parametrarna för noden **securityZone > subNetwork** .
+Här är de olika parametrarna för noden **securityZone > subNetwork**.
 
 Mer information finns i [Definiera säkerhetszoner](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
@@ -2239,19 +2243,19 @@ Mer information finns i [Definiera säkerhetszoner](../../installation/using/con
   </tr> 
   <tr> 
    <td> mask<br /> </td> 
-   <td> Mask eller adress<br /> </td> 
+   <td> Mask or address<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> namn<br /> </td> 
    <td> Internt namn<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
    <td> proxy<br /> </td> 
-   <td> Mask eller adress för (omvänd) proxy som används av det här undernätverket för att komma åt instansen. I det här fallet kommer rubriken"X-Forwarded-For" att testas i stället för den här proxyn.<br /> </td> 
+   <td> Mask eller adress för (omvänd) proxy som används av det här undernätverket för att komma åt instansen. I det här fallet kommer rubriken X-Forwarded-For att testas i stället för den här proxyn.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 127.0.0.1 <br /> </td> 
   </tr> 
@@ -2260,7 +2264,7 @@ Mer information finns i [Definiera säkerhetszoner](../../installation/using/con
 
 ## sms {#sms}
 
-Här är de olika parametrarna för **sms** -noden. Detta är konfigurationen för den inkommande SMS-hanteringsmodulen.
+Här är de olika parametrarna för noden **sms**. Detta är konfigurationen för den inkommande SMS-hanteringsmodulen.
 
 <table> 
  <thead> 
@@ -2286,7 +2290,7 @@ Här är de olika parametrarna för **sms** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> dataRetentionDays<br /> </td> 
-   <td> Maximalt antal dagar som SMPP-anslutaren lagrar filer.<br /> </td> 
+   <td> Maximalt antal dagar som SMPP-anslutningen har arbetsfiler.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -2310,13 +2314,13 @@ Här är de olika parametrarna för **sms** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2334,13 +2338,13 @@ Här är de olika parametrarna för **sms** -noden. Detta är konfigurationen f�
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
-   <td> Frekvens för omladdning av konto: frekvens för återinläsning av databaser för konton som ska avsökas.<br /> </td> 
+   <td> Frekvens för omladdning av konto: återinläsningsfrekvens för konton som ska avsökas.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2361,7 +2365,7 @@ Här är de olika parametrarna för **sms** -noden. Detta är konfigurationen f�
 
 ### netsize {#netsize}
 
-Här är de olika parametrarna för noden **sms > netsize** .
+Här är de olika parametrarna för noden **sms > netsize**.
 
 <table> 
  <thead> 
@@ -2375,16 +2379,16 @@ Här är de olika parametrarna för noden **sms > netsize** .
  <tbody> 
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
-   <td> Timeout i sekunder vid anslutning med Netsize.<br /> </td> 
+   <td> Timeout i sekunder när en anslutning med Netsize upprättas.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## stat {#stat}
+## status {#stat}
 
-Här är de olika parametrarna för **statsnoden** . Detta är konfigurationen för MTA-statistikmodulen.
+Här är de olika parametrarna för noden **stat**. Detta är konfigurationen för MTA-statistikmodulen.
 
 <table> 
  <thead> 
@@ -2416,19 +2420,19 @@ Här är de olika parametrarna för **statsnoden** . Detta är konfigurationen f
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> port<br /> </td> 
-   <td> Serverlyssningsporten. See this <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">section</a>.<br /> </td> 
+   <td> Serverlyssningsporten. Se det här <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">avsnittet</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2440,7 +2444,7 @@ Här är de olika parametrarna för **statsnoden** . Detta är konfigurationen f
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2449,7 +2453,7 @@ Här är de olika parametrarna för **statsnoden** . Detta är konfigurationen f
 
 ## syslogd {#syslogd}
 
-Här är de olika parametrarna för **syslogd** -noden. Detta är konfigurationen för modulen Logghantering.
+Här är de olika parametrarna för noden **syslogd**. Detta är konfigurationen för modulen Logghantering.
 
 <table> 
  <thead> 
@@ -2493,13 +2497,13 @@ Här är de olika parametrarna för **syslogd** -noden. Detta är konfiguratione
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2511,16 +2515,16 @@ Här är de olika parametrarna för **syslogd** -noden. Detta är konfiguratione
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## tracking {#tracking}
+## spåra {#tracking}
 
-Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsserverns konfiguration.
+Här är de olika parametrarna för noden **tracking**. Detta är spårningsserverns konfiguration.
 
 <table> 
  <thead> 
@@ -2558,7 +2562,7 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
-   <td> Ta bort öppningar: ta bort öppna spårningsloggar för att begränsa effekterna av förhandsgranskningar i e-postläsare som Outlook.<br /> </td> 
+   <td> Ta bort öppningar: ta bort dubbletter av öppna spårningsloggar för att begränsa effekterna av förhandsgranskningar i e-postläsare som Outlook.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -2575,7 +2579,7 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
-   <td> symbolsVaraktighet<br /> </td> 
+   <td> IndicDuration<br /> </td> 
    <td> Beräkningsindikatorer under: varaktighet efter giltighetsdatumet för en leverans efter vilken konsoliderade indikatorer inte längre beräknas.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 2592000<br /> </td> 
@@ -2594,13 +2598,13 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2612,7 +2616,7 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
-   <td> Slutpunkt för integreringen av slutpunkten för tjänsten Phishbowl. Detta skyddar omdirigering av felformaterade URL:er som genereras från äldre byggen.<br /> </td> 
+   <td> Slutpunkt för integreringen av slutpunkten för tjänsten Phishbowl. Detta skyddar omdirigering av felformaterade URL:er som genereras från äldre versioner.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2624,13 +2628,13 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingIgnorePercent<br /> </td> 
-   <td> Ignorera upp till X % av spårningen: uppdaterar inte spårningsindikatorer så länge kvoten för journaler som inte redan har beaktats inte når detta värde.<br /> </td> 
+   <td> Ignorera upp till X % av spårningen: uppdaterar inte spårningsindikatorer så länge kvoten för journaler som inte redan har beaktats inte når det här värdet.<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -2649,9 +2653,9 @@ Här är de olika parametrarna för **spårningsnoden** . Detta är spårningsse
  </tbody> 
 </table>
 
-## trackinglogd {#trackinglogd}
+## trackinglog {#trackinglogd}
 
-Här är de olika parametrarna för **spårningsloggnoden** . Detta är konfigurationen för spårningsloggens skrivdaemon.
+Här är de olika parametrarna för **trackinglogd**-noden. Detta är konfigurationen för spårningsloggens skrivdaemon.
 
 <table> 
  <thead> 
@@ -2695,13 +2699,13 @@ Här är de olika parametrarna för **spårningsloggnoden** . Detta är konfigur
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2725,7 +2729,7 @@ Här är de olika parametrarna för **spårningsloggnoden** . Detta är konfigur
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2740,9 +2744,9 @@ Här är de olika parametrarna för **spårningsloggnoden** . Detta är konfigur
 
 ## webb {#web}
 
-Här är de olika parametrarna för **webbnoden** . Detta är konfigurationen för webbmodulen.
+Här är de olika parametrarna för noden **web**. Detta är konfigurationen för webbmodulen.
 
-For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+Mer information finns i [avsnittet](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2756,7 +2760,7 @@ For additional information, refer to this [section](../../installation/using/con
  <tbody> 
   <tr> 
    <td> JVMOptions<br /> </td> 
-   <td> Alternativ för den JVM som skickas som en sträng.<br /> </td> 
+   <td> Alternativ för den JVM som skickades som en sträng.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2786,13 +2790,13 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat-lyssningskontrollport: se <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configuring Tomcat</a>.<br /> </td> 
+   <td> Tomcat-lyssningskontrollport: hänvisar till <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-lyssningsport: se <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configuring Tomcat</a>.<br /> </td> 
+   <td> Tomcat HTTP-lyssningsport: hänvisar till <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -2810,13 +2814,13 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukats (i MB) av en viss process<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2834,7 +2838,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2849,7 +2853,7 @@ For additional information, refer to this [section](../../installation/using/con
 
 ### jsp {#jsp}
 
-Här är de olika parametrarna för noden **web > jsp** . Detta är konfigurationen för parametrarna som används av JSP:erna.
+Här är de olika parametrarna för noden **web > jsp**. Detta är konfigurationen för parametrarna som används av JSP:erna.
 
 <table> 
  <thead> 
@@ -2869,7 +2873,7 @@ Här är de olika parametrarna för noden **web > jsp** . Detta är konfiguratio
   </tr> 
   <tr> 
    <td> downloadPath<br /> </td> 
-   <td> Hämtningsmapp: hämtningssökväg till installationsprogram för klientkonsolerna.<br /> </td> 
+   <td> Hämtningsmapp: hämtningssökväg för installationsprogram för klientkonsolerna.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp'<br /> </td> 
   </tr> 
@@ -2888,7 +2892,7 @@ Här är de olika parametrarna för noden **web > jsp** . Detta är konfiguratio
  </tbody> 
 </table>
 
-Noden **web > jsp > classpath** innehåller en lista med alla klasssökvägar som ska användas när JVM startas. Här är standardkonfigurationen:
+Noden **web > jsp > klassökväg** innehåller listan med alla klasssökvägar som ska användas när JVM startas. Här är standardkonfigurationen:
 
 ```
 '$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
@@ -2929,7 +2933,7 @@ Noden **web > jsp > classpath** innehåller en lista med alla klasssökvägar so
 
 ### jssp {#jssp}
 
-Här är de olika parametrarna för noden **web > jssp** . Detta är konfigurationen av parametrarna som används av JSSP:erna.
+Här är de olika parametrarna för noden **web > jssp**. Detta är konfigurationen av parametrarna som används av JSSP:erna.
 
 <table> 
  <thead> 
@@ -2956,13 +2960,13 @@ Här är de olika parametrarna för noden **web > jssp** . Detta är konfigurati
  </tbody> 
 </table>
 
-Noden **web > jsp > classpath** innehåller en lista med alla klasssökvägar som ska användas när JVM startas.
+Noden **web > jsp > klassökväg** innehåller listan med alla klasssökvägar som ska användas när JVM startas.
 
 ### relä {#relay-2}
 
-Här är de olika parametrarna för noden **web > relay** . Detta är konfigurationen av reläet för HTTP-begäranden mellan två zoner.
+Här är de olika parametrarna för noden **web > relay**. Detta är konfigurationen av reläet för HTTP-begäranden mellan två zoner.
 
-For additional information, refer to this [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+Mer information finns i [avsnittet](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -2982,13 +2986,13 @@ For additional information, refer to this [section](../../installation/using/dep
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Otillåtna tecken (domän): lista med förbjudna tecken i avsnittet 'Authority' i en URI.<br /> </td> 
+   <td> Otillåtna tecken (domän): lista över förbjudna tecken i avsnittet 'utfärdare' i en URI.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
-   <td> Otillåtna tecken (sökväg): lista med förbjudna tecken i sökvägsdelen i en URI.<br /> </td> 
+   <td> Otillåtna tecken (sökväg): lista över förbjudna tecken i sökvägsdelen i en URI.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
@@ -3019,9 +3023,9 @@ For additional information, refer to this [section](../../installation/using/dep
  </tbody> 
 </table>
 
-Lägg till en **webb > relä > url** -nod för varje URL att vidarebefordra (infogningsordningen definierar prioritet) med följande parametrar.
+Lägg till en **webb > relä > url**-nod för varje URL som ska vidarebefordras (infogningsordningen definierar prioritet) med följande parametrar.
 
-Mer information finns i [Dynamic page security and relays](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) and [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+Mer information finns i [Dynamisk sidsäkerhet och reläer](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) och [avsnitt](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3059,7 +3063,7 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
   </tr> 
   <tr> 
    <td> relayHost<br /> </td> 
-   <td> Lägg till ursprunglig värd: Använd HTTP-huvudet Host i den ursprungliga begäran vid återutläggning.<br /> </td> 
+   <td> Lägg till ursprunglig värd: använd HTTP-huvudet Host i den ursprungliga begäran vid återutläggning.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3071,13 +3075,13 @@ Mer information finns i [Dynamic page security and relays](../../installation/us
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synkroniseringsstatus för en offentlig resurs (uppräkning). Möjliga värden är 'normal' (normal körning), 'svartlist' (url som läggs till blockeringslista vid fel 404) och 'free' (filöverföring på reservserver om sådan finns).<br /> </td> 
+   <td> Synkroniseringsstatus för en offentlig resurs (uppräkning). Möjliga värden är 'normal' (normal körning), 'svartlist' (url tillagd i blockeringslista vid fel 404) och 'free' (filöverföring på reservserver om sådan finns).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> Målsidans URL: se <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configuring Tomcat</a>.<br /> </td> 
+   <td> Målsidans URL: hänvisar till <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3161,7 +3165,7 @@ Här är standardkonfigurationen:
      timeout="" status="spare" httpAllowed="true" urlPath="/*.jpg"/>
 ```
 
-Lägg till en **webb > relä > responseHeader** -nod för varje HTTP-huvud som ska läggas till i svar som vidarebefordras till relä.
+Lägg till en **webb > relä > responseHeader**-nod för varje HTTP-huvud som ska läggas till i svar som vidarebefordras till relä.
 
 Mer information finns i [Hantera HTTP-rubriker](../../installation/using/configuring-campaign-server.md#managing-http-headers).
 
@@ -3175,12 +3179,12 @@ Mer information finns i [Hantera HTTP-rubriker](../../installation/using/configu
  </thead> 
  <tbody> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> namn<br /> </td> 
    <td> Rubriknamn<br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
   <tr> 
-   <td> value<br /> </td> 
+   <td> värde<br /> </td> 
    <td> Huvudvärde <br /> </td> 
    <td> Sträng<br /> </td> 
   </tr> 
@@ -3195,9 +3199,9 @@ Här är standardkonfigurationen:
 
 ### omdirigering {#redirection}
 
-Här är de olika parametrarna för noden **web > redirection** . Detta är konfigurationen för omdirigeringsmodulen.
+Här är de olika parametrarna för noden **web > redirection**. Detta är konfigurationen för omdirigeringsmodulen.
 
-For additional information, refer to this [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+Mer information finns i [avsnittet](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3219,7 +3223,7 @@ For additional information, refer to this [section](../../installation/using/dep
    <td> P3PCompactPolicy<br /> </td> 
    <td> Värde som beskriver principen som används för permanenta cookies (kompatibelt med P3P-principformatet). <br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> "CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"<br /> </td> 
+   <td> 'CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV'<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
@@ -3241,7 +3245,7 @@ For additional information, refer to this [section](../../installation/using/dep
   </tr> 
   <tr> 
    <td> expirationURL<br /> </td> 
-   <td> Sida för omdirigeringar som har gått ut: Webbsidans URL som används som standard av omdirigeringsservern när omdirigering för en leveransåtgärd har upphört att gälla.<br /> </td> 
+   <td> Sida för omdirigeringar som har gått ut: Webbsidans URL som används som standard av omdirigeringsservern när omdirigeringen för en leveransåtgärd har upphört att gälla.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3278,9 +3282,9 @@ For additional information, refer to this [section](../../installation/using/dep
  </tbody> 
 </table>
 
-Här är de olika parametrarna för noden **web > redirection > reservedServer** .
+Här är de olika parametrarna för noden **web > redirection > reservedServer**.
 
-Mer information finns i [Spårning](../../installation/using/configuring-campaign-server.md#redundant-tracking)av överflödiga objekt.
+Mer information finns i [Spårning av överflödiga filer](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 <table> 
  <thead> 
@@ -3315,7 +3319,7 @@ Mer information finns i [Spårning](../../installation/using/configuring-campaig
 
 ### spamCheck {#spamcheck}
 
-Här är de olika parametrarna för noden **web > spamCheck** . Det här är konfigurationen för utvärderingsparametrarna för e-postskräppostbedömning.
+Här är de olika parametrarna för noden **web > spamCheck**. Det här är konfigurationen för utvärderingsparametrarna för e-postskräppostbedömning.
 
 Mer information finns i [Konfigurera SpamAssassin](../../installation/using/configuring-spamassassin.md).
 
@@ -3338,9 +3342,9 @@ Mer information finns i [Konfigurera SpamAssassin](../../installation/using/conf
 
 ## wfserver {#wfserver}
 
-Här är de olika parametrarna för **wfserver** -noden. Detta är arbetsflödets processkonfiguration.
+Här är de olika parametrarna för **wfserver**-noden. Detta är arbetsflödets processkonfiguration.
 
-Mer information finns i Arbetsflöden och tillhörigheter för [hög tillgänglighet](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+Mer information finns i [Arbetsflöden och tillhörigheter för hög tillgänglighet](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 <table> 
  <thead> 
@@ -3372,7 +3376,7 @@ Mer information finns i Arbetsflöden och tillhörigheter för [hög tillgängli
   </tr> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Period<br /> </td> 
+   <td> Punkt<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
@@ -3384,13 +3388,13 @@ Mer information finns i Arbetsflöden och tillhörigheter för [hög tillgängli
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: Varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en viss process.<br /> </td> 
+   <td> Minnesförbrukningsvarning: varning om mängden RAM som förbrukas (i MB) av en given process.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -3408,7 +3412,7 @@ Mer information finns i Arbetsflöden och tillhörigheter för [hög tillgängli
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Systemmodulen måste därför ha prioriteten 0.<br /> </td> 
+   <td> Prioritet i början. Moduler med låg prioritet startas först och stoppas senast. Modulen syslogd måste därför ha prioriteten 0.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
