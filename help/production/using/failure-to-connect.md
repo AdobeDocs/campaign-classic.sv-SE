@@ -41,11 +41,12 @@ Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du **A
 </tr>
 <tr> 
 <td>svarar webbservern?</td> 
-<td>Anslut till Adobe Campaign server access URL med en webbläsare: <b>http(s):// &lt;urlserver&gt;</b>. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.</td>
+<td>Anslut till Adobe Campaign server access URL med en webbläsare: <b>http(s)://&lt;urlserver&gt;</b>. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.</td>
 </tr>
 <tr> 
 <td>Har Adobe Campaign integrerats korrekt?</td> 
-<td>Logga in på: <b>http(s)://&lt;urlserver&gt;/r/test</b> -URL. Servern ska returnera följande typ av meddelande: &lt;redir status='OK' date='YYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;Om du inte får detta resultat bör du kontrollera i webbserverkonfigurationen att integreringen har beaktats.</td>
+<td>Logga in på: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Servern ska returnera följande typ av meddelande: &lt;redir status='OK' date='YYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.</td>
 </tr>
 <tr> 
 <td>Anslut till följande URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
