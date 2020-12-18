@@ -19,9 +19,9 @@ ht-degree: 7%
 
 I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell.
 
-Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i datamodellen [för](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html)Campaign Classic.
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i datamodellen [Campaign Classic](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
 
-Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. It obeys a grammar specific to Adobe Campaign, called a **schema**.
+Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign och som kallas **schema**.
 
 Ett schema är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition:
 
@@ -46,9 +46,9 @@ I följande bild visas schemats placering i Adobe Campaign datasystem:
 
 ## Syntax för scheman {#syntax-of-schemas}
 
-Schemats rotelement är **`<srcschema>`**. Den innehåller elementen **`<element>`** och **`<attribute>`** subelementen.
+Schemats rotelement är **`<srcschema>`**. Den innehåller underelementen **`<element>`** och **`<attribute>`**.
 
-Det första **`<element>`** underelementet sammanfaller med entitetens rot.
+Det första **`<element>`**-underelementet sammanfaller med entitetens rot.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ Det första **`<element>`** underelementet sammanfaller med entitetens rot.
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-Taggarna **`<element>`** definierar namnen på enhetselementen. **`<attribute>`** -taggar i schemat definierar namnen på attributen i de **`<element>`** -taggar som de har länkats till.
+**`<element>`**-taggarna definierar namnen på entitetselementen. **`<attribute>`** -taggar i schemat definierar namnen på attributen i de  **`<element>`** taggar som de har länkats till.
 
 ## Identifiering av ett schema {#identification-of-a-schema}
 
 Ett dataschema identifieras med sitt namn och namnutrymme.
 
-Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Exempelvis används **cus** -namnutrymmet för kundspecifik konfiguration (**kunder**).
+Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Namnutrymmet **cus** används till exempel för kundspecifik konfiguration (**kunder**).
 
 >[!IMPORTANT]
 >
