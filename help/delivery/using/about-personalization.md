@@ -22,8 +22,8 @@ Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sä
 * Anpassa meddelandeformatet. Se [Meddelandeinnehåll](../../delivery/using/defining-the-email-content.md#message-content).
 * Infoga dynamiska personaliseringsfält. Se [Anpassningsfält](../../delivery/using/personalization-fields.md).
 * Infoga fördefinierade personaliseringsblock. Se [Personaliseringsblock](../../delivery/using/personalization-blocks.md).
-* Skapa villkorsstyrt innehåll. Se avsnittet [Villkorligt innehåll](../../delivery/using/conditional-content.md) .
+* Skapa villkorsstyrt innehåll. Se avsnittet [Villkorligt innehåll](../../delivery/using/conditional-content.md).
 
 >[!CAUTION]
 >
->Följande variabler är interna variabler som kan användas för personalisering men som inte får ändras: **leverans**, **meddelande**, **dataSource**, **targetData**, **provider**, ************ coupon,¥couponValue,¥proposition¥.
+>Följande variabler är interna variabler som kan användas för personalisering men som inte får ändras: **leverans**, **meddelande**, **dataSource**, **targetData**, **provider**, **kupong**, **kupongvärde&lt;aValue 13/>,** proposition **.**
