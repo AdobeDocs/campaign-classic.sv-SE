@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Inkorgsåtergivning (IR){#inbox-rendering}
 
-Arbetsflödet som beskrivs nedan installeras som standard med **modulen för inkorgsåtergivning (IR)** . Mer information om återgivning av inkorgar finns i det här [avsnittet](../../delivery/using/inbox-rendering.md).
+Arbetsflödet som beskrivs nedan installeras som standard med modulen **Inkorgsåtergivning (IR)**. Mer information om återgivning av inkorgen finns i [avsnittet](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 
