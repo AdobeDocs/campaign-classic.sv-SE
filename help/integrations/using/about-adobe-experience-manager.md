@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# About Adobe Experience Manager{#about-adobe-experience-manager}
+# Om Adobe Experience Manager{#about-adobe-experience-manager}
 
 Tack vare integrationen mellan Adobe Campaign och Adobe Experience Manager kan ni hantera innehållet i era e-postleveranser och era formulär direkt i Adobe Experience Manager.
 
-Du kan också infoga resurser direkt från ditt AEM Assets-bibliotek när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionen beskrivs i kapitlet [Resurser](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) .
+Du kan också infoga resurser direkt från ditt AEM Assets-bibliotek när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionen beskrivs i kapitlet [Resurser](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
 Det innebär att du får ut det mesta av både AEM och Adobe Campaign leveranskapacitet.
 
@@ -27,8 +27,8 @@ Det innebär att du får ut det mesta av både AEM och Adobe Campaign leveranska
 
 Du måste ha följande element:
 
-* En instans av Adobe Experience Manager **authoring** .
-* En Adobe Experience Manager- **publiceringsinstans** .
+* En Adobe Experience Manager **redigeringsinstans**.
+* En Adobe Experience Manager **publiceringsinstans**.
 * En Adobe Campaign-instans.
 
 Adobe Campaign är kompatibelt med Adobe Experience Manager 6.1, 6.2, 6.3, 6.4 och 6.5. I följande avsnitt visas en översikt över integreringen.
