@@ -31,15 +31,15 @@ Innan du börjar använda det här användningsexemplet måste du ha tillgång t
 
 >[!NOTE]
 >
->Det här användningsexemplet kan bara implementeras om du har skaffat alternativet **Undersökningshanteraren** . Kontrollera licensavtalet.
+>Det här användningsexemplet kan bara implementeras om du har skaffat alternativet **Survey Manager**. Kontrollera licensavtalet.
 
 ## Steg 1 - Skapa arbetsflödet för datainsamling och lagring {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Så här samlar du in svaren på enkäten:
 
-1. Skapa ett arbetsflöde och placera en **[!UICONTROL Answers to a survey]** aktivitet. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Skapa ett arbetsflöde och placera en **[!UICONTROL Answers to a survey]**-aktivitet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Redigera aktiviteten och välj den undersökning vars svar du vill analysera.
-1. Aktivera alternativet **[!UICONTROL Select all the answer data]** att samla in all information.
+1. Aktivera alternativet **[!UICONTROL Select all the answer data]** för att samla in all information.
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -47,11 +47,11 @@ Så här samlar du in svaren på enkäten:
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. När svarssamlingsrutan har konfigurerats placerar du en **[!UICONTROL List update]** typaktivitet för att spara data.
+1. När svarssamlingsrutan har konfigurerats placerar du en **[!UICONTROL List update]**-typaktivitet för att spara data.
 
    ![](assets/reporting_usecase_1_04.png)
 
-   I den här aktiviteten anger du listan som ska uppdateras och avmarkerar **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** alternativet: svaren läggs till i den befintliga tabellen. Med det här alternativet kan du referera till listan i en kub. Schemat som är länkat till listan genereras inte om för varje uppdatering, vilket garanterar integriteten för kuben som använder den här listan.
+   I den här aktiviteten anger du listan som ska uppdateras och avmarkerar alternativet **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: svaren läggs till i den befintliga tabellen. Med det här alternativet kan du referera till listan i en kub. Schemat som är länkat till listan genereras inte om för varje uppdatering, vilket garanterar integriteten för kuben som använder den här listan.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -63,7 +63,7 @@ Så här samlar du in svaren på enkäten:
 
 1. Lägg till en schemaläggare för att automatisera den dagliga samlingen av svar och uppdateringen av listan.
 
-   Verksamheterna **[!UICONTROL List update]** och **[!UICONTROL Scheduler]** verksamheterna beskrivs närmare i .
+   Aktiviteterna **[!UICONTROL List update]** och **[!UICONTROL Scheduler]** beskrivs i .
 
 ## Steg 2 - Skapa kuben, dess mått och indikatorer {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
