@@ -17,18 +17,18 @@ ht-degree: 0%
 
 # Konfigurera åtkomst till Sybase IQ {#configure-access-to-sybase-iq}
 
-Använd alternativet Campaign **Federated Data Access** (FDA) för att bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Sybase IQ.
+Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Sybase IQ.
 
 1. Konfigurera [Sybase IQ-databas](#configuring-sybase)
-1. Konfigurera Sybase IQ [externa konto](#sybase-external) i Campaign
+1. Konfigurera det externa Sybase IQ [kontot](#sybase-external) i Campaign
 
-## sybase IQ-konfiguration {#configuring-sybase}
+## sybase IQ configuration {#configuring-sybase}
 
 För att ansluta till en extern Sybase IQ-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
 >[!NOTE]
 >
->Innan du startar kontrollerar du att **Unixodbc** -paketet finns på servern.
+>Kontrollera att **unixodbc**-paketet finns på servern innan du startar.
 
 1. Installera **iq_odbc**. Ett fel kan uppstå i slutet av installationen. Det här felet kan ignoreras.
 
@@ -36,7 +36,7 @@ För att ansluta till en extern Sybase IQ-databas i FDA krävs ytterligare konfi
 
 1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: /etc/odbc.ini för allmänna parametrar och /etc/odbcinst.ini för att deklarera drivrutiner:
 
-   * **/etc/odbc.ini** (ersätt värden som `<server_alias>` tecken med egna):
+   * **/etc/odbc.ini** (ersätt värden som  `<server_alias>` tecken med egna):
 
       ```
       [ODBC Data Sources]
@@ -70,11 +70,11 @@ För att ansluta till en extern Sybase IQ-databas i FDA krävs ytterligare konfi
 
 Med Sybase IQ externa konto kan du ansluta Campaign-instansen till din externa Sybase IQ-databas.
 
-1. Klicka **[!UICONTROL Explorer]** på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign.
+1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]** &lt;a3/> i Campaign **[!UICONTROL Explorer]**.
 
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
 
-1. Om du vill konfigurera det **[!UICONTROL Sybase IQ]** externa kontot måste du ange:
+1. Om du vill konfigurera det externa kontot **[!UICONTROL Sybase IQ]** måste du ange:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
