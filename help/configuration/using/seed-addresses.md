@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Fröadresser{#seed-addresses}
 
-Om mottagartabellen är en anpassad tabell krävs ytterligare konfigurationer. Schemat måste utökas **[!UICONTROL nms:seedMember]** . Ytterligare en flik läggs till i startadresserna för att definiera lämpliga fält, vilket visas nedan:
+Om mottagartabellen är en anpassad tabell krävs ytterligare konfigurationer. Schemat **[!UICONTROL nms:seedMember]** måste utökas. Ytterligare en flik läggs till i startadresserna för att definiera lämpliga fält, vilket visas nedan:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,7 +25,7 @@ Mer information om hur du använder dirigerade adresser finns i [det här avsnit
 
 ## Implementering {#implementation}
 
-Schemat **nms:seedMember** och det länkade formulär som visas i rutan ska utökas för kundkonfiguration, så att alla nödvändiga fält refereras. Schemadefinitionen innehåller kommentarer som beskriver dess konfigurationsläge.
+Schemat **nms:seedMember** och det länkade formulär som finns i lådan ska utökas för kundkonfiguration, så att alla nödvändiga fält refereras. Schemadefinitionen innehåller kommentarer som beskriver dess konfigurationsläge.
 
 Definition av det utökade schemat för mottagartabellen:
 
@@ -44,14 +44,14 @@ Definition av det utökade schemat för mottagartabellen:
 
 Använd följande steg:
 
-1. Skapa ett tillägg till **schemat nms:seedMember** . Mer information finns i [Utöka ett schema](../../configuration/using/extending-a-schema.md).
+1. Skapa ett tillägg för schemat **nms:seedMember**. Mer information finns i [Utöka ett schema](../../configuration/using/extending-a-schema.md).
 1. I det nya tillägget lägger du till ett nytt element i roten för **[!UICONTROL seedMember]** med följande parametrar:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Det här elementet måste innehålla de fält som krävs för att exportera kampanjer. Dessa fält ska ha samma namn som motsvarande fält i det externa schemat. Om schemat till exempel är **[!UICONTROL cus:person]** bör **[!UICONTROL nms:seedMember]** schemat utökas enligt följande:
+   Det här elementet måste innehålla de fält som krävs för att exportera kampanjer. Dessa fält ska ha samma namn som motsvarande fält i det externa schemat. Om schemat till exempel är **[!UICONTROL cus:person]** bör schemat **[!UICONTROL nms:seedMember]** utökas enligt följande:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,19 +70,19 @@ Använd följande steg:
 
    >[!NOTE]
    >
-   >Utbyggnaden av **nms:seedMember** -schemat måste följa strukturen för en kampanj och en leverans i Adobe Campaign.
+   >Tillägget av schemat **nms:seedMember** måste överensstämma med strukturen för en kampanj och en leverans i Adobe Campaign.
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * Under tillägget måste du ange ett **SQL-namn (@sqlname)** för fältet&quot;email&quot;. SQL-namnet måste skilja sig från &#39;sEmail&#39; som är reserverat för mottagarschemat.
-   >    * Du måste uppdatera databasstrukturen med det schema som skapas när du utökar **nms:seedMember**.
-   >    * I tillägget **nms:seedMember** måste fältet som innehåller e-postadressen ha **namn=&quot;email&quot;** som attribut. SQL-namnet måste skilja sig från sEmail som redan används för mottagarschemat. Det här attributet måste deklareras omedelbart under **`<element name="custom_cus_person" />`** elementet.
+   >    * Under tillägget måste du ange ett **SQL-namn (@sqlname)** för fältet &quot;email&quot;. SQL-namnet måste skilja sig från &#39;sEmail&#39; som är reserverat för mottagarschemat.
+   >    * Du måste uppdatera databasstrukturen med det schema som skapades när du utökar **nms:seedMember**.
+   >    * I tillägget **nms:seedMember** måste fältet som innehåller e-postadressen ha **name=&quot;email&quot;** som attribut. SQL-namnet måste skilja sig från sEmail som redan används för mottagarschemat. Det här attributet måste deklareras omedelbart under elementet **`<element name="custom_cus_person" />`**.
 
 
-1. Ändra formuläret **[!UICONTROL seedMember]** så att det definierar en ny flik för&quot;intern mottagare&quot; i **[!UICONTROL Seed addresses]** fönstret. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
+1. Ändra formuläret **[!UICONTROL seedMember]** och definiera en ny intern mottagare i fönstret **[!UICONTROL Seed addresses]**. Mer information finns i [Formulärstruktur](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
