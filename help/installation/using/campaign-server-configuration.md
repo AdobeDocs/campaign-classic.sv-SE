@@ -19,15 +19,15 @@ ht-degree: 1%
 
 I följande avsnitt beskrivs obligatoriska serverkonfigurationer som garanterar att Adobe Campaign fungerar effektivt för de flesta konfigurationer.
 
-Ytterligare konfigurationer erbjuds i [Konfigurera Campaign-servern](../../installation/using/configuring-campaign-server.md).
+Ytterligare konfigurationer finns i [Konfigurera kampanjservern](../../installation/using/configuring-campaign-server.md).
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller [i funktionsmatrisen](../../installation/using/capability-matrix.md).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [kapacitetsmatrisen](../../installation/using/capability-matrix.md).
 
 ## Intern identifierare {#internal-identifier}
 
-Den **interna** identifieraren är en teknisk inloggning som ska användas för installation, administration och underhåll. Inloggningen är inte kopplad till någon instans.
+Identifieraren **internal** är en teknisk inloggning som ska användas för installation, administration och underhåll. Inloggningen är inte kopplad till någon instans.
 
 Operatörer som är anslutna med den här inloggningen har alla rättigheter för alla instanser. Den här inloggningen har inget lösenord vid en ny installation. Du måste definiera det här lösenordet manuellt.
 
@@ -51,14 +51,14 @@ Confirmation: XXXX
 
 ## Konfigurationsfiler {#configuration-files}
 
-Konfigurationsfilerna lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
+Konfigurationsfilerna lagras i mappen **conf** i Adobe Campaign installationsmapp. Konfigurationen sprids över två filer:
 
-* **`config-<instance>.xml`** (där **instansen** är namnet på instansen): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
-* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. Se själva filen för att se alla tillgängliga parametrar. De olika noderna och parametrarna som visas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+* **`config-<instance>.xml`** (där  **** instansen heter): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
+* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. Se själva filen för att se alla tillgängliga parametrar. De olika noderna och parametrarna som listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Du kan konfigurera lagringskatalogen (**var** -katalog) för Adobe Campaign-data (loggar, hämtningar, omdirigeringar osv.). Det gör du genom att använda systemvariabeln **XTK_VAR_DIR** :
+Du kan konfigurera lagringskatalogen (**var** katalog) för Adobe Campaign-data (loggar, hämtningar, omdirigeringar osv.). Det gör du genom att använda systemvariabeln **XTK_VAR_DIR**:
 
-* I Windows anger du följande värde i systemvariabeln **XTK_VAR_DIR** :
+* I Windows anger du följande värde i systemvariabeln **XTK_VAR_DIR**
 
    ```
    D:\log\AdobeCampaign
@@ -66,19 +66,19 @@ Du kan konfigurera lagringskatalogen (**var** -katalog) för Adobe Campaign-data
 
 * I Linux går du till filen **customer.sh** och anger: **exportera XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+   Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
-## Möjliggöra processer {#enabling-processes}
+## Aktiverar processer {#enabling-processes}
 
-Adobe Campaign-processer på servern aktiveras (och inaktiveras) via **filen config-default.xml** och **`config-<instance>.xml`** .
+Adobe Campaign-processer på servern aktiveras (och inaktiveras) via filerna **config-default.xml** och **`config-<instance>.xml`**.
 
 Om du vill tillämpa ändringarna på de här filerna måste du köra kommandot **nlserver config -reload** om Adobe Campaign-tjänsten startas.
 
 Det finns två typer av processer: flera instanser och en instans.
 
-* **flera instanser**: en enda process startas för alla instanser. Detta gäller **webb**-, **systemlogd** - och **spårningsloggsprocesser** .
+* **flera instanser**: en enda process startas för alla instanser. Detta gäller för **web**, **syslogd** och **trackinglogd**-processer.
 
-   Aktivering kan konfigureras från filen **config-default.xml** .
+   Aktivering kan konfigureras från filen **config-default.xml**.
 
    Deklarera en Adobe Campaign-server för åtkomst till klientkonsoler och för omdirigering (spårning):
 
@@ -89,9 +89,9 @@ Det finns två typer av processer: flera instanser och en instans.
    <trackinglogd autoStart="true"/>
    ```
 
-   I det här exemplet redigeras filen med ett **vi** -kommando i Linux. Den kan redigeras med **.txt** - eller **.xml** -redigerare.
+   I det här exemplet redigeras filen med ett **vi**-kommando i Linux. Den kan redigeras med en **.txt** eller **.xml**-redigerare.
 
-* **mono-instance**: en process startas för varje instans (moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat**).
+* **mono-instance**: en process startas för varje instans (moduler:  **mta**,  **wfserver**,  **inMail**,  **** smand  **stat**).
 
    Aktivering kan konfigureras med hjälp av instansens konfigurationsfil:
 
@@ -110,9 +110,9 @@ Det finns två typer av processer: flera instanser och en instans.
 
 ## Leveransinställningar {#delivery-settings}
 
-Leveransparametrarna måste konfigureras i mappen **serverConf.xml** .
+Leveransparametrarna måste konfigureras i mappen **serverConf.xml**.
 
-* **DNS-konfiguration**: Ange leveransdomänen och IP-adresserna (eller värddatorn) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från och **`<dnsconfig>`** med.
+* **DNS-konfiguration**: Ange leveransdomänen och IP-adresserna (eller värddatorn) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från  **`<dnsconfig>`** och med.
 
    >[!NOTE]
    >
@@ -122,6 +122,6 @@ Leveransparametrarna måste konfigureras i mappen **serverConf.xml** .
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-De andra leveransparametrarna som är tillgängliga i den här filen visas i [Anpassa leveransparametrar](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+Övriga leveransparametrar som är tillgängliga i den här filen presenteras i [Anpassa leveransparametrar](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 Se även [E-postleverans](../../installation/using/email-deliverability.md).
