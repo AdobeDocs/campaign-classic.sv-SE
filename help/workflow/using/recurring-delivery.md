@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
 
 # Återkommande leverans{#recurring-delivery}
 
-Med en **[!UICONTROL Recurring delivery]** aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
+Med en **[!UICONTROL Recurring delivery]**-aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#recurring-delivery-video)
 
@@ -33,7 +33,7 @@ Så här gör du:
 
 Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en leveransmall utifrån tillgängliga alternativ. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/about-templates.md).
 
-Ett exempel på den här aktiviteten finns i det här [avsnittet](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Ett exempel på den här aktiviteten som används finns i [avsnittet](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Så här ställer du in återkommande leverans
 
@@ -43,7 +43,7 @@ En **återkommande leverans** skapar en ny leveransinstans varje gång den körs
 
 >[!NOTE]
 >
->Det går inte att skicka ett korrektur från en **[!UICONTROL Recurring delivery]** typaktivitet.\
+>Det går inte att skicka ett bevis från en **[!UICONTROL Recurring delivery]**-typaktivitet.\
 >Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Email delivery]**).
 
 ## Självstudievideo (#reciing-delivery-video)
@@ -52,5 +52,5 @@ I den här videon förklaras hur du konfigurerar en återkommande leverans och e
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
