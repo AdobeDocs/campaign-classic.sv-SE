@@ -30,7 +30,7 @@ De flesta data finns i databasen. Detta motsvarar 99 % av den information som sk
 
 Filerna är uppdelade i flera kategorier:
 
-* Konfigurationsfiler i **nl6/conf**
+* Konfigurationsfiler som finns i **nl6/conf**
 
    Med dessa kan du snabbt konfigurera om Adobe Campaign.
 
