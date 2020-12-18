@@ -25,11 +25,11 @@ När en meddelandemall har publicerats på körningsinstanserna kan den avpublic
 
 En publicerad mall kan fortfarande anropas. Om du inte längre använder en meddelandemall bör du därför avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag. Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
 
-Du kan inte heller ta bort en transaktionsmeddelandemall som har **[!UICONTROL Published]** statusen. Du måste avpublicera det först.
+Du kan inte heller ta bort en transaktionsmeddelandemall som har statusen **[!UICONTROL Published]**. Du måste avpublicera det först.
 
 Följ stegen nedan om du vill avpublicera en transaktionsmeddelandemall.
 
-1. Gå till mappen för trädet i kontrollinstansen **[!UICONTROL Message Center > Transactional message templates]** .
+1. Gå till mappen **[!UICONTROL Message Center > Transactional message templates]** i trädet i kontrollinstansen.
 1. Markera den mall som du vill avpublicera.
 1. Klicka på **[!UICONTROL Unpublish]**.
 
@@ -39,10 +39,10 @@ Följ stegen nedan om du vill avpublicera en transaktionsmeddelandemall.
 
 ![](assets/message-center-unpublish.png)
 
-Mallstatus för transaktionsmeddelanden ändras tillbaka från **[!UICONTROL Published]** till **[!UICONTROL Being edited]**.
+Status för transaktionsmeddelandemallen ändras tillbaka från **[!UICONTROL Published]** till **[!UICONTROL Being edited]**.
 
 När borttagningen är klar:
 
-* Båda meddelandemallarna (som används för batch- och realtidshändelser) tas bort från varje körningsinstans. De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mappen.
+* Båda meddelandemallarna (som används för batch- och realtidshändelser) tas bort från varje körningsinstans. De visas inte längre i mappen **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]**.
 
-* När en mall har avpublicerats kan du ta bort den från kontrollinstansen om det behövs. Det gör du genom att markera den i listan och klicka på **[!UICONTROL Delete]** knappen längst upp till höger på skärmen.
+* När en mall har avpublicerats kan du ta bort den från kontrollinstansen om det behövs. Det gör du genom att markera den i listan och klicka på knappen **[!UICONTROL Delete]** längst upp till höger på skärmen.
