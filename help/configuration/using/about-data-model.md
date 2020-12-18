@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# Get started with Campaign data model{#about-data-model}
+# Kom igång med Campaign-datamodell{#about-data-model}
 
 Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Huvudtabeller och begrepp listas på den här sidan.
 
@@ -31,14 +31,14 @@ Mer information om mottagartabellen finns i [det här avsnittet](#default-recipi
 
 ### Leveransregister {#delivery-table}
 
-Datamodellen innehåller också en del som är avsedd för lagring av alla marknadsföringsaktiviteter. Vanligtvis är det leveransregistret (**NmsDelivery**). Varje post i den här tabellen representerar en leveransåtgärd eller en leveransmall. Den innehåller alla parametrar som krävs för att utföra leveranser som mål, innehåll osv.
+Datamodellen innehåller också en del som är avsedd för lagring av alla marknadsföringsaktiviteter. Vanligtvis är det leveranstabellen (**NmsDelivery**). Varje post i den här tabellen representerar en leveransåtgärd eller en leveransmall. Den innehåller alla parametrar som krävs för att utföra leveranser som mål, innehåll osv.
 
-### Loggtabeller {#log-tables}
+### Loggar tabeller {#log-tables}
 
 En annan del av datamodellen gör det möjligt att tillfälligt lagra alla loggar som är associerade med kampanjkörningen.
 
 Leveransloggar är alla meddelanden som skickas till mottagare eller enheter i alla kanaler. Huvudtabellen för leveransloggar (**NmsBroadLog**) innehåller leveransloggarna för alla mottagare.
-I huvudspårningsloggtabellen (**NmsTrackingLog**) lagras spårningsloggarna för alla mottagare. Spårningsloggarna refererar till mottagarnas reaktioner, t.ex. öppningar och klickningar via e-post. Varje reaktion motsvarar en spårningslogg.
+Registret för huvudspårningsloggar (**NmsTrackingLog**) lagrar spårningsloggarna för alla mottagare. Spårningsloggarna refererar till mottagarnas reaktioner, t.ex. öppningar och klickningar via e-post. Varje reaktion motsvarar en spårningslogg.
 Leveransloggar och spårningsloggar tas bort efter en viss period, som anges i Adobe Campaign och kan ändras. Vi rekommenderar därför att du exporterar loggarna regelbundet.
 
 ### Tekniska tabeller {#technical-tables}
@@ -49,7 +49,7 @@ Slutligen består en del av datamodellen av tekniska data som används för ans�
 
 Registret Mottagare som är klar att användas i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
 
-Fördelarna med att använda standardmottagartabellen är följande:
+Fördelarna med att använda den vanliga mottagartabellen är följande:
 
 * Arbeta direkt med funktioner som prenumerationer, listor, undersökningar, sociala medier och så vidare.
 * Tillhandahåller en marknadsföringsdatabas med en mottagarcentrerad datamodell.
@@ -68,40 +68,40 @@ Och eftersom mottagartabellen är en del av produkten utvecklas både tabellen o
 
 När du börjar med Adobe Campaign måste du utvärdera standarddatamodellen för att kontrollera vilken tabell som är bäst lämpad för att lagra dina marknadsföringsdata.
 
-Om det är relevant kan du använda den förvalda mottagartabellen med de färdiga fälten, som beskrivs i [det här avsnittet](#default-recipient-table).
+Om det är relevant kan du använda standardmottagartabellen med ej ifyllda fält, som beskrivs i [det här avsnittet](#default-recipient-table).
 
 Om det behövs kan du utöka den med två mekanismer:
 
 * Utöka en befintlig tabell med nya fält. Du kan till exempel lägga till ett nytt&quot;Lojalitet&quot;-fält i mottagartabellen.
 * Skapa en ny tabell, t.ex. en&quot;Inköpstabell&quot; med alla inköp som gjorts av varje profil i databasen, och länka den till mottagartabellen.
 
-Mer information om hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen finns i [Om schemautgåva](../../configuration/using/about-schema-edition.md).
+Mer information om hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen finns i [Om schemaversion](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
 >Att utöka datamodellen är reserverat för avancerade användare.
 
-## Using a custom recipient table {#custom-recipient-table}
+## Använda en anpassad mottagartabell {#custom-recipient-table}
 
-När du utformar din Adobe Campaign-datamodell kan du använda den [körklara mottagartabellen](#default-recipient-table)eller välja att skapa en [anpassad mottagartabell](../../configuration/using/about-custom-recipient-table.md) för att lagra dina marknadsföringsprofiler.
+När du utformar din Adobe Campaign-datamodell kan du använda tabellen [som är färdig](#default-recipient-table) eller skapa en [anpassad mottagartabell](../../configuration/using/about-custom-recipient-table.md) för att lagra dina marknadsföringsprofiler.
 
 Om datamodellen inte passar den mottagarcentrerade strukturen kan du skapa andra tabeller som målningsdimension inom Adobe Campaign. Detta kan till exempel vara relevant när du behöver rikta in dig på hushåll, konton (som mobiltelefoner) och företag/webbplatser i stället för bara mottagare.
 
 >[!NOTE]
 >
->I så fall måste du skapa en ny [målmappning](../../configuration/using/target-mapping.md).
+>I det här fallet måste du skapa en ny [målmappning](../../configuration/using/target-mapping.md).
 
 Alla principer och steg som behövs när du använder en anpassad mottagartabell beskrivs i [det här avsnittet](../../configuration/using/about-custom-recipient-table.md).
 
 Fördelarna med att använda en anpassad mottagartabell är följande:
 
-* **Flexibel datamodell** - Den körklara mottagartabellen är värdelös om du inte behöver de flesta av mottagartabellfälten eller om datamodellen inte är mottagarcentrerad.
+* **Flexibel datamodell**  - Den körklara mottagartabellen är värdelös om du inte behöver de flesta av mottagartabellfälten eller om datamodellen inte är mottagarcentrerad.
 
-* **Skalbarhet** - Stora volymer kräver en strömlinjeformad tabell med få fält för effektiv design. Den färdiga mottagartabellen skulle ha för många oanvändbara fält, vilket skulle kunna påverka prestanda och bristande effektivitet.
+* **Skalbarhet**  - Stora volymer kräver en effektiv tabell med få fält för en effektiv design. Den färdiga mottagartabellen skulle ha för många oanvändbara fält, vilket skulle kunna påverka prestanda och bristande effektivitet.
 
-* **Dataplats** - Om data finns i en extern befintlig marknadsföringsdatabas kan det krävas för mycket arbete för att använda mottagartabellen som är färdig. Det är enklare att skapa en ny som baseras på en befintlig struktur.
+* **Dataplats**  - Om data finns i en extern befintlig marknadsföringsdatabas kan det kräva för mycket arbete för att använda mottagartabellen som är färdig. Det är enklare att skapa en ny som baseras på en befintlig struktur.
 
-* **Smidig migrering** - Inget underhåll behövs för att kontrollera att alla tillägg fortfarande är giltiga vid uppgradering.
+* **Smidig migrering**  - Inget underhåll krävs för att kontrollera att alla tillägg fortfarande är giltiga vid uppgradering.
 
 >[!IMPORTANT]
 >
@@ -111,13 +111,13 @@ Fördelarna med att använda en anpassad mottagartabell är följande:
 
 Läs mer om Campaign-datamodellen i följande avsnitt:
 
-* **Beskrivning av huvudtabellerna** - Mer information om standarddatamodellen för Campaign Classic finns i [det här avsnittet](../../configuration/using/data-model-description.md).
+* **Beskrivning av huvudtabellerna**  - Mer information om standarddatamodellen för Campaign Classic finns i  [det här avsnittet](../../configuration/using/data-model-description.md).
 
-* **Fullständig beskrivning av varje tabell** - Om du vill få tillgång till den fullständiga beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på **[!UICONTROL Documentation]** fliken.
+* **Fullständig beskrivning av varje tabell**  - Om du vill visa hela beskrivningen av varje tabell går du till  **[!UICONTROL Admin > Configuration > Data schemas]**, väljer en resurs i listan och klickar på  **[!UICONTROL Documentation]** fliken.
 
    ![](assets/data-model_documentation-tab.png)
 
 
-* **Kampanjscheman** - Den fysiska och logiska strukturen för de data som finns i programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+* **Kampanjscheman**  - Den fysiska och logiska strukturen för de data som finns i programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
 
-* **Bästa praxis** för datamodell - Lär dig mer om arkitektur för Campaign-datamodell och besläktade bästa metoder i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+* **Bästa praxis**  för datamodell - Lär dig mer om arkitekturen för Campaigns datamodell och besläktade bästa metoder i  [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-model-architecture).
