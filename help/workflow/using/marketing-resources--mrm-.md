@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # Marknadsföringsresurser (MRM){#marketing-resources-mrm}
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)** . For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)**. Mer information om den här modulen finns i [avsnittet](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
