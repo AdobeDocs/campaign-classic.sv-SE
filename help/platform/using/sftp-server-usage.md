@@ -15,9 +15,9 @@ ht-degree: 9%
 ---
 
 
-# Bästa praxis och felsökning för SFTP-servrar {#sftp-server-usage}
+# Bästa praxis för SFTP-server och felsökning {#sftp-server-usage}
 
-## Globala rekommendationer för SFTP-server {#global-recommendations}
+## Globala rekommendationer för SFTP-servern {#global-recommendations}
 
 När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFTP-värdserver som tillhandahålls av Adobe. Se till att du följer rekommendationerna nedan när du använder SFTP-servrar.
 
@@ -43,7 +43,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 >[!NOTE]
 >
->Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic på [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
+>Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
 >
 >Följ stegen i [det här avsnittet](https://docs.adobe.com/content/help/sv-SE/control-panel/using/faq.html#ims-org-id) för att kontrollera om instanser har AWS som värd .
 
@@ -61,14 +61,14 @@ Om du använder en egen SFTP-server måste du följa rekommendationerna ovan så
 
 När du i Campaign Classic anger en sökväg till en extern SFTP-server skiljer sig dessutom sökvägssyntaxen åt beroende på operativsystemet för SFTP-servern:
 
-* Om SFTP-servern finns i **Windows** ska du alltid använda en relativ sökväg.
-* Om STP-servern finns i **Linux** ska du alltid använda en sökväg som är relativ till hemmet (med början från &quot;~/&quot;) eller en absolut sökväg (med början från &quot;/&quot;).
+* Om SFTP-servern är på **Windows** ska du alltid använda en relativ sökväg.
+* Om STP-servern är på **Linux** ska du alltid använda en sökväg som är relativ till hemmet (med början från &quot;~/&quot;) eller en absolut sökväg (med början från &quot;/&quot;).
 
-## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
+## Anslutningsproblem med värdserver för SFTP-Adobe {#sftp-server-troubleshooting}
 
-I avsnittet nedan listas den information som ska kontrolleras och tillhandahållas till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när anslutningsproblem med värdbaserade SFTP-servrar från Adobe uppstår.
+I avsnittet nedan visas den information som ska kontrolleras och tillhandahållas till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när anslutningsproblem med värdbaserade SFTP-servrar från Adobe inträffar.
 
-1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan göra ett **[!UICONTROL GET]** anrop på instansens **[!UICONTROL /r/test]** slutpunkt:
+1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan göra ett **[!UICONTROL GET]**-anrop på instansen **[!UICONTROL /r/test]**-slutpunkten:
 
    ```
    https://instanceUrl/r/test
@@ -101,7 +101,7 @@ I avsnittet nedan listas den information som ska kontrolleras och tillhandahåll
    Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med Adobe Support-team.
 
 1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för tillåtelselista.
-1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Därför rekommenderar vi starkt att du använder nyckelbaserad autentisering (se [Bästa praxis](#sftp-server-best-practices)för SFTP-server).
+1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Därför rekommenderar vi starkt att du använder nyckelbaserad autentisering (se [SFTP-serverns bästa praxis](#sftp-server-best-practices)).
 1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för Adobe Support-teamet för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
 
@@ -123,7 +123,7 @@ Det här felet inträffar när du försöker ansluta FTP-servern från ett arbet
 
 Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så här felsöker du:
 
-1. Felsök **DNS-serverkonfigurationen**:
+1. Felsök **DNS-serverkonfiguration**:
 
    1. Kontrollera om servernamnet har lagts till i den lokala DNS-servern.
    1. Om ja, kör följande kommando på Adobe Campaign-servern för att hämta IP-adressen:
@@ -132,10 +132,10 @@ Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så 
 
       Detta bekräftar att FTP-servern fungerar och kan nås från Adobe Campaign programserver.
 
-1. Felsöka **sessionsloggar**:
+1. Felsök **sessionsloggar**:
 
    1. Dubbelklicka på aktiviteten [Filöverföring](../../workflow/using/file-transfer.md) i arbetsflödet.
-   1. Gå till **[!UICONTROL File Transfer]** fliken och klicka sedan på **[!UICONTROL Advanced Parameters]**.
+   1. Gå till fliken **[!UICONTROL File Transfer]** och klicka sedan på **[!UICONTROL Advanced Parameters]**.
    1. Markera alternativet **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)
