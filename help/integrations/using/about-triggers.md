@@ -28,12 +28,12 @@ ht-degree: 16%
 Det ger smidigare integrering eftersom konfigurationen är minimal och en tredje part inte berörs.
 Det stöder också stora trafikvolymer utan att påverka marknadsföringsaktiviteternas resultat. Integrationen kan till exempel behandla en miljon utlösare per timme.
 
-## [!DNL Triggers] arkitektur {#triggers-architecture}
+## [!DNL Triggers] arkitektur  {#triggers-architecture}
 
 Processen [!DNL pipelined] körs alltid på Adobe Campaign marknadsföringsserver. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
 
 ![](assets/triggers_2.png)
 
-Processen loggar in på Experience Cloud med hjälp av en autentiseringstjänst och skickar en privat nyckel. [!DNL pipelined] Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser.
+Processen [!DNL pipelined] loggar in på Experience Cloud med en autentiseringstjänst och skickar en privat nyckel. Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser.
 
-For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
+Mer information om autentisering finns på den här [sidan](../../integrations/using/configuring-adobe-io.md).
