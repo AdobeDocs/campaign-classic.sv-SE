@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Integrera Campaign SDK med er app {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrera Campaign SDK med din app {#integrating-campaign-sdk-into-the-mobile-application}
 
 Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Channel.
 
@@ -25,11 +25,11 @@ Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Ch
 
 Målet med SDK är att underlätta integreringen av mobilapplikationer i Adobe Campaign.
 
-Mer information om vilka olika Android- och iOS-versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#MobileSDK) .
+Mer information om vilka olika Android- och iOS-versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#MobileSDK).
 
 ## Läser in kampanj-SDK {#loading-campaign-sdk}
 
-* **I Android**: filen **neolane_sdk-release.aar** måste länkas till projektet.
+* **I Android**: filen  **neolane_sdk-release.** aarfile måste länkas till projektet.
 
    Följande behörighet ger åtkomst till Adobe Campaign-servern:
 
@@ -49,13 +49,13 @@ Mer information om vilka olika Android- och iOS-versioner som stöds finns i [ko
 
    Från och med version 1.0.26 av SDK används inte längre den här behörigheten.
 
-* **I iOS**: filerna **libNeolaneSDK.a** och **Neolane_SDK.h** måste länkas till projektet. Från version 1.0.24 av SDK aktiveras alternativet **ENABLE_BITCODE** .
+* **I iOS**: libNeolaneSDK. **and** Neolane_SDK. **** files måste länkas till projektet. Från version 1.0.24 av SDK är alternativet **ENABLE_BITCODE** aktiverat.
 
    >[!NOTE]
    >
-   >För version 1.0.25 av SDK är de fyra arkitekturerna tillgängliga i filen **Neolane_SDK.h** .
+   >För version 1.0.25 av SDK är de fyra arkitekturerna tillgängliga i filen **Neolane_SDK.h**.
 
-## Deklarera integrationsinställningar {#declaring-integration-settings}
+## Deklarera integreringsinställningar {#declaring-integration-settings}
 
 För att integrera Campaign SDK i mobilappen måste den funktionella administratören lämna följande information till utvecklaren:
 
@@ -63,7 +63,7 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
    >[!NOTE]
    >
-   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken med tjänster som är dedikerade till mobilprogrammet. **[!UICONTROL Information]** Se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign-spårningsservern.
 * **En marknadsförings-URL**: för att aktivera insamling av prenumerationer.
@@ -147,7 +147,7 @@ Registreringsfunktionen gör att du kan:
 
    Med spårningsfunktionerna kan du spåra meddelandeaktiveringar (öppnar) och meddelandevisning (skärmbild).
 
-   Följ implementeringen nedan för att spåra hur meddelandet visas (genom att anropa SDK:s **notifyReceive** -funktion). Observera att om du använder FCM (Firebase Cloud Messaging) rekommenderar vi att du använder funktionen **notifyReceive** när funktionen **onMessageReceived** anropas av Android-systemet.
+   Följ implementeringen nedan för att spåra visningen av meddelanden (genom att anropa funktionen **notifyReceive** i SDK:n). Observera att om du använder FCM (Firebase Cloud Messaging) rekommenderar vi att du använder funktionen **notifyReceive** när funktionen **onMessageReceived** anropas av Android-systemet.
 
    ```
    package com.android.YourApplication;
@@ -243,7 +243,7 @@ Registreringsfunktionen gör att du kan:
    }
    ```
 
-   Här är ett implementeringsexempel för att spåra ett meddelande som är öppet (som körs genom anrop av funktionen **notifyOpening** i SDK). Klassen **NotificationActivity** motsvarar den som användes för att skapa **notifIntent** -objektet i föregående exempel.
+   Här är ett implementeringsexempel för att spåra ett meddelande som är öppet (som körs genom att anropa funktionen **notifyOpening** i SDK). Klassen **NotificationActivity** motsvarar den som användes för att skapa **notifIntent**-objektet i föregående exempel.
 
    ```
    public class NotificationActivity extends Activity {
@@ -339,7 +339,7 @@ Följ exemplet nedan för att spåra ditt tysta meddelande:
 >
 >Observera att detta endast gäller iOS.
 
-I iOS gör delegatprotokollet att du kan få resultatet av **RegisterDevice** -anropet och använda det för att ta reda på om ett fel uppstod under registreringen.
+I iOS ger delegatprotokollet dig möjlighet att få resultatet av anropet **registerDevice** och kan användas för att ta reda på om ett fel uppstod under registreringen.
 
 Prototypen **registerDeviceStatus** är:
 
@@ -347,9 +347,9 @@ Prototypen **registerDeviceStatus** är:
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**Status** gör att du kan veta om en registrering lyckades eller om ett fel uppstod.
+**Med** Status kan du veta om en registrering lyckades eller om ett fel uppstod.
 
-**ErrorReason** ger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
+**** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
 <table> 
  <thead>
@@ -367,7 +367,7 @@ Prototypen **registerDeviceStatus** är:
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-   <td> Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts.<br /> </td>
+   <td> Värdnamnet för ACC-marknadsföringsservern är tomt eller inte inställt.<br /> </td>
    <td> TOM<br /> </td>
   </tr>
   <tr> 
@@ -393,7 +393,7 @@ Prototypen **registerDeviceStatus** är:
  </tbody>
 </table>
 
-**Neolane_SDKDelegate** -protokollet och **registerDeviceStatus** -delegatdefinitionen är följande:
+**Definitionen av Neolane_** SDKDelegateprotocol och  **** registerDeviceStatusdelegate är följande:
 
 ```
 //  Neolane_SDK.h
@@ -425,7 +425,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 @end
 ```
 
-Så här implementerar du **registerDeviceStatus** -delegaten:
+Så här implementerar du **registerDeviceStatus**-delegaten:
 
 1. Implementera **setDelegate** under SDK-initieringen.
 
@@ -456,7 +456,7 @@ Så här implementerar du **registerDeviceStatus** -delegaten:
    }
    ```
 
-1. Lägg till protokollet i **@interface** i klassen.
+1. Lägg till protokollet i **@interface** för klassen.
 
    ```
    //  AppDelegate.h
@@ -611,7 +611,7 @@ Mediet måste hämtas på meddelanditjänstens tilläggsnivå.
     // Perform the download to local storage
 ```
 
-## Tillägg för meddelandeinnehåll {#notification-content-extension}
+## Meddelandeinnehållstillägg {#notification-content-extension}
 
 **För iOS**
 
