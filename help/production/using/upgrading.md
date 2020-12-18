@@ -15,9 +15,9 @@ ht-degree: 0%
 ---
 
 
-# Uppgradera till en ny version (lokalt){#upgrading}
+# Uppgraderar till en ny version (lokalt){#upgrading}
 
-Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md) .
+Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken
 
 >[!NOTE]
 >
->Se även [installationsguiden](../../installation/using/general-architecture.md) och hur du kommer igång med [uppgraderingen](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) .
+>Se även [installationshandboken](../../installation/using/general-architecture.md) och [build upgrade](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) getting started.
 
 ## Windows {#in-windows}
 
@@ -52,9 +52,9 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
    * Adobe Campaign: **net stop nlserver6**
    >[!IMPORTANT]
    >
-   >Du måste också se till att omdirigeringsservern (webmdl) stoppas så att filen **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
+   >Du måste också se till att omdirigeringsservern (webmdl) är stoppad så att filen **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
 
-1. Kontrollera att inga åtgärder är aktiva genom att köra kommandot **nlserver pdump** . Följande bör komma upp:
+1. Kontrollera att inga åtgärder är aktiva genom att köra kommandot **nlserver pdump**. Följande bör komma upp:
 
    ```
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
@@ -70,7 +70,7 @@ Så här kör du uppgraderingsfilen:
 
 1. Kör **setup.exe**.
 
-   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/downloads) med dina användaruppgifter. Läs mer om distribution av programvara på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/downloads) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
 1. Klicka på **[!UICONTROL Next]** .
@@ -94,7 +94,7 @@ Detta gör att du kan utföra följande åtgärder:
 
 >[!NOTE]
 >
->Den här åtgärden bör endast utföras en gång och endast på en (**nlserver web**) programserver.
+>Den här åtgärden bör endast utföras en gång och endast på en (**nlserver web**)-programserver.
 
 Kontrollera sedan om synkroniseringen har genererat fel eller varningar. Mer information finns i [Lösa uppgraderingskonflikter](#resolving-upgrade-conflicts).
 
@@ -124,7 +124,7 @@ Information om hur du uppdaterar klientkonsolen finns i [det här avsnittet](../
 
 ### Hämta uppdaterade paket {#obtain-updated-packages}
 
-Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: ansluta till [programvarudistributionsportalen](https://experience.adobe.com/downloads) med dina användaruppgifter. Läs mer om distribution av programvara på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: ansluta till [programdistributionsportalen](https://experience.adobe.com/downloads) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Filen är **nlserver6-v7-XXX.rpm**
 
@@ -156,7 +156,7 @@ Filen är **nlserver6-v7-XXX.rpm**
 
 >[!NOTE]
 >
->Fullständiga installationsprocedurer beskrivs i [detta avsnitt](../../installation/using/installing-campaign-standard-packages.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lösa uppgraderingskonflikter](#resolving-upgrade-conflicts).
+>Fullständiga installationsprocedurer beskrivs i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lösa uppgraderingskonflikter](#resolving-upgrade-conflicts).
 
 ### Starta om webbservern {#reboot-the-web-server}
 
@@ -170,7 +170,7 @@ Om du vill göra det kör du följande kommando:
 
 >[!IMPORTANT]
 >
->* Skriptet kan heta **httpd** istället för **apache**.
+>* Skriptet kan heta **httpd** i stället för **apache**.
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
 
    >
@@ -186,13 +186,13 @@ Starta sedan om Apache:
 
 ## Lösa uppgraderingskonflikter {#resolving-upgrade-conflicts}
 
-Under resurssynkroniseringen kan du med kommandot **postupgrade** upptäcka om synkroniseringen har genererat fel eller varningar.
+Under resurssynkroniseringen kan du med kommandot **postupgrade** identifiera om synkroniseringen har genererat fel eller varningar.
 
 ### Visa synkroniseringsresultatet {#view-the-synchronization-result}
 
 Det finns två sätt att visa synkroniseringsresultatet:
 
-* I kommandoradsgränssnittet materialiseras felen med en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras med en dubbel skiftning **>>** och måste åtgärdas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Den kan se ut så här:
+* I kommandoradsgränssnittet materialiseras fel av en trippelkniv **>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras med en dubbel skiftning **>** och måste lösas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Den kan se ut så här:
 
    ```
    2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -211,7 +211,7 @@ Det finns två sätt att visa synkroniseringsresultatet:
 
 Använd följande process för att lösa konflikter:
 
-1. Gå till Adobe Campaign-trädet **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. Gå till **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** i Adobe Campaign-trädet.
 1. Markera den konflikt som du vill lösa i listan.
 
 Det finns tre sätt att lösa en konflikt:
@@ -226,7 +226,7 @@ Det finns tre sätt att lösa en konflikt:
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
-1. I fönstrets nedre del söker du efter **_konfliktsträngen_** för att hitta enheterna med konflikter. Entiteten som installerades med den nya versionen innehåller det **nya** argumentet, entiteten som matchar den tidigare versionen innehåller **cus** -argumentet.
+1. I fönstrets nedre del söker du efter strängen **_conflict_** för att hitta entiteterna med konflikter. Entiteten som installerats med den nya versionen innehåller argumentet **new**, entiteten som matchar den tidigare versionen innehåller argumentet **cus**.
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -234,7 +234,7 @@ Om du väljer att lösa konflikten manuellt gör du så här:
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Gå till konflikten som du har löst. Klicka på **[!UICONTROL Actions]** ikonen och välj **[!UICONTROL Declare as resolved]** .
+1. Gå till konflikten som du har löst. Klicka på ikonen **[!UICONTROL Actions]** och välj **[!UICONTROL Declare as resolved]** .
 1. Spara ändringarna: konflikten är nu löst.
 
 ### God praxis {#best-practices}
@@ -243,7 +243,7 @@ Ett uppdateringsfel kan vara länkat till databaskonfigurationen. Kontrollera at
 
 En Unicode-databas får till exempel inte bara tillåta lagring av LATIN1-data.
 
-## Varna klientkonsolerna om den tillgängliga uppdateringen {#warn-the-client-consoles-of-the-available-update}
+## Varna klientkonsolerna för den tillgängliga uppdateringen {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 
@@ -251,13 +251,13 @@ Hämta och kopiera filen på den dator där Adobe Campaign-programservern (**nls
 
 **setup-client-6.XXXX.exe**
 
-in **[path of the application]**datakitnlengthsp
+in **[sökväg till programmet]**datakitnlengthjsp
 
 Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar användarna om tillgängligheten till en uppdatering och ger dem möjlighet att ladda ned och installera den.
 
 >[!NOTE]
 >
->Kontrollera att IIS_XPG-användaren har rätt läsbehörighet för den här installationsfilen och se [installationsguiden](../../installation/using/general-architecture.md) för mer information.
+>Kontrollera att IIS_XPG-användaren har rätt läsbehörighet för den här installationsfilen och läs [installationsguiden](../../installation/using/general-architecture.md) för mer information.
 
 ### Linux {#in-linux-1}
 
@@ -275,5 +275,5 @@ Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar anv
 
 >[!NOTE]
 >
->Kontrollera att Apache-användaren har rätt läsbehörighet för den här installationsfilen och se [installationsguiden](../../installation/using/general-architecture.md) för mer information.
+>Kontrollera att Apache-användaren har rätt läsbehörighet för den här installationsfilen och läs [installationsguiden](../../installation/using/general-architecture.md) för mer information.
 
