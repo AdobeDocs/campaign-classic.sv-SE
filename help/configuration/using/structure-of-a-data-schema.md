@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Dataschemats struktur{#structure-of-a-data-schema}
 
-Strukturen i ett dataschema visas i form av en trädstruktur. Om du vill visa det grafiskt i Adobe Campaign klientkonsol markerar du målschemat och klickar på **[!UICONTROL Structure]** underfliken.
+Strukturen i ett dataschema visas i form av en trädstruktur. Om du vill visa det grafiskt i Adobe Campaign klientkonsol markerar du målschemat och klickar på underfliken **[!UICONTROL Structure]**.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
