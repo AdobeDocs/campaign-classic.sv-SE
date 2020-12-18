@@ -24,11 +24,11 @@ Adobe Campaign har ett antal verktyg för att spåra plattformens leveransförm�
 ## Konfiguration {#configuration}
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
-* För värdbaserade och hybridklienter konfigureras **leveransövervakning** av Adobe tekniska support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
+* För värdbaserade klienter och hybridklienter konfigureras **Leveransövervakning** av Adobe tekniska support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
 
-* För lokala installationer måste du installera paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+* För lokala installationer måste du installera **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-paketet via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**-menyn. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 
-I Adobe Campaign Classic hanteras **leveransövervakning** av **[!UICONTROL Refresh for deliverability]** arbetsflödet. Det installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, domänlistan och listan över MX:er. När paketet har installerats körs det här arbetsflödet i natt för att regelbundet uppdatera listan över regler och göra det möjligt att aktivt hantera plattformsleveransen. **[!UICONTROL Deliverability monitoring (Email Deliverability)]**
+I Adobe Campaign Classic hanteras **Leveransövervakning** av arbetsflödet **[!UICONTROL Refresh for deliverability]**. Det installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, domänlistan och listan över MX:er. När **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-paketet har installerats körs det här arbetsflödet varje natt för att regelbundet uppdatera listan över regler och göra det möjligt att aktivt hantera plattformsleveransen.
 
 ## Bakgrund {#background}
 
