@@ -33,7 +33,7 @@ Om du vill konfigurera multibranding måste du konfigurera både körningsinstan
 
    >[!NOTE]
    >
-   >Ett externt konto av instanstypen för körning visas i avsnittet [Kontrollinstans](../../message-center/using/creating-a-shared-connection.md#control-instance) .
+   >Ett externt konto för en körningsinstanstyp visas i avsnittet [Kontrollinstans](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
 1. Utöka schemat nms:extAccount för att lägga till spårnings-URL:
 
@@ -44,7 +44,7 @@ Om du vill konfigurera multibranding måste du konfigurera både körningsinstan
 
    >[!NOTE]
    >
-   >Utökning av ett befintligt schema visas i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md) .
+   >Utökning av ett befintligt schema visas i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md).
 
 1. Ändra formuläret nms:extAccount:
 
