@@ -19,7 +19,7 @@ ht-degree: 1%
 
 I Adobe Campaign kan du välja ett webbspårningsläge som definierar hur spårningsloggar bearbetas i programmet.
 
-Det finns tre tillgängliga spårningslägen: **&quot;Sessionsspårning&quot;**,**&quot;Permanent spårning&quot;** och **&quot;anonym spårning&quot;**.
+Det finns tre tillgängliga spårningslägen: **&quot;Sessionsspårning&quot;**,**&quot;Permanent spårning&quot;** och **&quot;Anonym spårning&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -31,7 +31,7 @@ Varje läge har specifika egenskaper. Det &quot;permanenta&quot; läget för web
 >
 >Du kan när som helst ändra standardläget i instansdistributionsguiden.
 
-Observera, att om du använder **permanent webb** - eller **anonym** spårningsläge måste du lägga till ett index i kolumnen&quot;sourceID&quot; (uuid230) i spårningstabellerna (trackingLogXXX):
+Observera att om du använder spårningsläget **permanent webb** eller **anonym** måste du lägga till ett index i kolumnen&quot;sourceID&quot; (uuid230) i spårningstabellerna (trackingLogXXX):
 
 1. Identifiera spårningstabellerna som berörs av permanent spårning.
 1. Utöka de scheman som matchar de här tabellerna genom att lägga till följande rader:
@@ -42,7 +42,7 @@ Observera, att om du använder **permanent webb** - eller **anonym** spårningsl
 </dbindex>
 ```
 
-**Det finns två olika lägen för permanent** och **anonym** webbspårning: **Tvingad leverans** och **senaste leverans**.
+**Spårningslägena** Permanent och  **** AnonymousWeb omfattar två alternativ:  **Tvingad** leverans och  **senaste leverans**.
 
 Med alternativet **Tvingad leverans** kan du ange identifieraren för leveransen (@jobid) under spårning.
 
@@ -75,13 +75,13 @@ Det här läget är kostsamt när det gäller beräkning vid loggavstämning.
 
 **Egenskaper för det anonyma webbspårningsläget:**
 
-I det här webbspårningsläget kan du hämta en spårningslogg som är länkad till anonym surfning i Adobe Campaign. En spårningslogg skapas automatiskt för varje klick på en spårad URL. Den här loggen har bara värdet uuid230. Under en marknadsföringskampanj skapas en spårningslogg automatiskt med all identifieringsinformation (se sessionsspårning). Adobe Campaign söker automatiskt i tidigare loggar efter ett uuid230-värde som är lika med värdet från spårningsloggen för den här marknadsföringskampanjen. Om identiska värden hittas, anges alla tidigare spårningsloggar tillsammans med all information från spårningsloggen för marknadsföringskampanjer.
+I det här webbspårningsläget kan du hämta en spårningslogg som är länkad till anonym surfning i Adobe Campaign. En spårningslogg skapas automatiskt för varje klick på en spårad URL. Den här loggen har bara värdet uuid230. Under en marknadsföringskampanj skapas en spårningslogg automatiskt med all identifieringsinformation (se sessionsspårning). Adobe Campaign söker automatiskt i tidigare loggar efter ett uuid230-värde som är lika med värdet från spårningsloggen för den här marknadsföringskampanjen. Om identiska värden hittas, anges alla tidigare spårningsloggar med all information från loggen för marknadsföringskampanjer.
 
 Det här läget är det mest kostsamma när det gäller beräkning och volym.
 
 >[!NOTE]
 >
->Om paketet är installerat måste du göra samma sak med aktivitetstabellen ( **[!UICONTROL Leads]** crm:inkommandeLead ****)
+>Om **[!UICONTROL Leads]**-paketet är installerat måste du göra samma sak för aktivitetstabellen (**crm:inkommandeLead**)
 
 I följande schema sammanfattas funktionerna för alla tre webbspårningslägena:
 
