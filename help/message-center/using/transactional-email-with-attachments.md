@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# Användningsfall: Skicka transaktionsmejl med bilagor{#transactional-email-with-attachments}
+# Användningsfall: Skicka transaktionsmeddelanden med bilagor{#transactional-email-with-attachments}
 
 Syftet med det här användningsexemplet är att lägga till e-postbilagor direkt till utgående utskick.
 
@@ -41,7 +41,7 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Rekommendationer {#important-notes}
 
@@ -54,7 +54,7 @@ Läs riktlinjerna nedan innan du implementerar detta scenario:
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementering {#implementation}
 
@@ -74,7 +74,7 @@ Om du vill lägga till en e-postbilaga i ett transaktionsmeddelande följer du s
 
 1. När du utformar e-postmeddelandet klickar du på **[!UICONTROL Attachment]**.
 
-1. Ange parametern SOAP attachment på **[!UICONTROL Attachment definition]** skärmen:
+1. På skärmen **[!UICONTROL Attachment definition]** anger du parametern SOAP attachment:
 
    ```
    <%= rtEvent.ctx.attachementUrl %>
