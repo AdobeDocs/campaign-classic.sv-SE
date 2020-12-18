@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Stackspårning i Linux{#stack-trace-in-linux}
 
-En **stackspårning** representerar en spårning som finns i en **huvudtypsfil** . Den här filen genereras om ett datorfel inträffar. Den kan identifiera felets ursprung.
+En **stackspårning** representerar en spårning som finns i en **core**-typfil. Den här filen genereras om ett datorfel inträffar. Den kan identifiera felets ursprung.
 
 >[!NOTE]
 >
->* En **kärnfil** heter **core.`<num>`**.
->* **gdb - GNU-felsökaren** måste vara installerad på datorn.
+>* En **core**-fil heter **core.`<num>`**.
+>* **gdb - GNU-** felsökaren måste vara installerad på datorn.
 
 >
 
 
 
-Adobe Campaign tekniska support kan be dig om den här **stackspårningen**. Hämta den genom att ange följande kommandon i Linux:
+Adobe Campaign tekniska support kan be dig om denna **stackspårning**. Hämta den genom att ange följande kommandon i Linux:
 
 ```
 su - neolane
@@ -57,7 +57,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign tekniska support kan be dig köra det här kommandot med en specifik körbar fil (som vi ska tillhandahålla).
 
-I det här fallet kör du bara följande kommando genom att ersätta **nlserver** med den körbara filen från Adobe Campaign:
+I det här fallet kör du följande kommando genom att ersätta **nlserver** med den körbara filen från Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>
