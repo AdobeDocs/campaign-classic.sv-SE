@@ -21,9 +21,9 @@ ht-degree: 3%
 
 Adobe Campaign erbjuder en responshanteringsapplikation (Response Manager) som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda erbjudanden för alla kommunikationskanaler (e-post, mobil, telefon, direktreklam, fax, byrå, osv.).
 
-## Hyposterkoncept {#hypothesis-concept}
+## Hypoeskoncept {#hypothesis-concept}
 
-Hypoeser kan konfigureras under en viss period från kontaktdatumet för att minska beteendet hos de som anges efter att ha fått en leverans. Hypoteserna baseras på ett **transaktionsregister** som sparar inköp och information om dessa inköp.
+Hypoeser kan konfigureras under en viss period från kontaktdatumet för att minska beteendet hos de som anges efter att ha fått en leverans. Hypoteserna baseras på en **transaktion**-tabell som sparar inköp och information om dessa inköp.
 
 Hypoesen är tidsbegränsad och kan tillämpas på en kontrollgrupp som ska jämföras med målpopulationen. Hypoesresultat tillhandahålls av **indikatorer** som uppdateras automatiskt när beräkningen är klar. Den avkastning som är kopplad till hypoteserna kommer att beaktas i kampanjrapporterna.
 
@@ -35,7 +35,7 @@ Efter en leverans som befordrar en artikel vill vi till exempel utvärdera de in
 
 >[!CAUTION]
 >
->Svarshanteraren är ett **[!UICONTROL Campaign]** alternativ. Kontrollera licensavtalet.
+>Svarshanteraren är ett **[!UICONTROL Campaign]**-alternativ. Kontrollera licensavtalet.
 
 Du kan också beräkna alla reaktioner för hela hushållet med mottagaren som tog emot leveransen eller erbjudandet.
 
@@ -43,7 +43,7 @@ Varje hypotes är kopplad till en enda transaktionstabell. En leverans eller ett
 
 ## Metod {#method}
 
-Innan du börjar använda Response Manager ska du läsa [Konfiguration](../../campaign/using/configuration.md) och utföra de nödvändiga konfigurationerna.
+Innan du börjar använda Svarshanteraren ska du läsa [Konfiguration](../../campaign/using/configuration.md) och utföra de nödvändiga konfigurationerna.
 
 För att kunna inleda en hypotes om en leverans eller ett erbjudande måste ni definiera sammanhanget i en mall som ska användas för varje hypotes som ni skapar.
 
