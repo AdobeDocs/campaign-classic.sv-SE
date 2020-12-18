@@ -23,17 +23,17 @@ Förutom de vanliga lagringslägena som är gemensamma för alla webbformulär i
 
 >[!CAUTION]
 >
->Det här alternativet är endast tillgängligt för webbprogram av typen **Undersökning** . Det finns inte för andra typer av webbformulär.
+>Det här alternativet är endast tillgängligt för webbprogram av typen **Undersökning**. Det finns inte för andra typer av webbformulär.
 
 ### Lagra i ett arkiverat fält {#storing-in-an-archived-field}
 
-Det är enkelt att utöka datamallen genom att lägga till nya lagringsutrymmen för att spara svaren från undersökningar. Det gör du genom att välja **[!UICONTROL Store answers to a question]** alternativet när du skapar inmatningsfältet. Klicka på **[!UICONTROL New field...]** länken och ange dess egenskaper:
+Det är enkelt att utöka datamallen genom att lägga till nya lagringsutrymmen för att spara svaren från undersökningar. Det gör du genom att välja alternativet **[!UICONTROL Store answers to a question]** när du skapar indatafältet. Klicka på länken **[!UICONTROL New field...]** och ange dess egenskaper:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
 Ange fältets etikett och namn och välj fälttyp: Text, booleskt, heltal eller decimaltal, datum osv.
 
-Den valda fälttypen innefattar en kontroll av data när användarna anger svar. För **textfält** kan du lägga till en begränsning (skiftläge, format) eller länka till en befintlig uppräkning för att framtvinga markering.
+Den valda fälttypen innefattar en kontroll av data när användarna anger svar. För **text**-fält kan du lägga till en begränsning (case, format) eller länka till en befintlig uppräkning för att framtvinga markering.
 
 Om du vill lägga till en begränsning markerar du den i listrutan. Det finns två typer av begränsningar:
 
@@ -45,23 +45,23 @@ Om du vill lägga till en begränsning markerar du den i listrutan. Det finns tv
 
 Om det här fältet används i en lista kan uppräkningsvärdena hämtas automatiskt i värdetabellen med hjälp av länken **[!UICONTROL Initialize the list of values from the database]** ovanför värdelistan.
 
-Du kan till exempel skapa en listruta där användaren kan välja sitt modersmål. Motsvarande arkiverade fält kan associeras med **språkuppräkningen** som innehåller en lista med språk:
+Du kan till exempel skapa en listruta där användaren kan välja sitt modersmål. Motsvarande arkiverade fält kan associeras med uppräkningen **language** som innehåller en lista över språk:
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
-Med **[!UICONTROL Edit link]** ikonen till höger om fältet kan du redigera innehållet i den här uppräkningen:
+Med ikonen **[!UICONTROL Edit link]** till höger om fältet kan du redigera innehållet i uppräkningen:
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-På fliken **[!UICONTROL General]** i fältet kan du med hjälp av **[!UICONTROL Initialize the list of values from the database]** länken automatiskt mata in listan med etiketter.
+På fliken **[!UICONTROL General]** i fältet kan du med länken **[!UICONTROL Initialize the list of values from the database]** automatiskt ange listan med etiketter som visas.
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Exempel**: lagra en mottagares kontrakt i ett fält
 
-Om du vill lagra olika typer av kontrakt i ett fält skapar du ett **[!UICONTROL Text]** inmatningsfält och väljer **[!UICONTROL Store answers to a question]** alternativet.
+Om du vill lagra olika typer av kontrakt i ett fält skapar du ett **[!UICONTROL Text]**-indatafält och väljer alternativet **[!UICONTROL Store answers to a question]**.
 
-Klicka på **[!UICONTROL New field...]** länken och ange fältegenskaperna. Markera **[!UICONTROL Multiple values]** alternativet om du vill aktivera flera värden som ska lagras.
+Klicka på länken **[!UICONTROL New field...]** och ange fältegenskaperna. Välj alternativet **[!UICONTROL Multiple values]** om du vill aktivera flera värden som ska lagras.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -69,7 +69,7 @@ Skapa inmatningsfält för de andra kontrakten och lagra data i samma arkiverade
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
-När användarna godkänner undersökningen lagras deras svar i **[!UICONTROL Contracts]** fältet.
+När användarna godkänner undersökningen lagras deras svar i fältet **[!UICONTROL Contracts]**.
 
 I vårt exempel finns följande svar:
 
@@ -77,11 +77,11 @@ I vårt exempel finns följande svar:
 
 Svarandens profil innehåller de fyra angivna kontrakten.
 
-De kan visas på fliken **[!UICONTROL Answers]** i undersökningen genom att visa relevanta kolumner.
+De kan visas på fliken **[!UICONTROL Answers]** i undersökningen genom att visa de relevanta kolumnerna.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-Du kan även filtrera mottagare baserat på svar så att endast de användare som intresserar dig visas. Det gör du genom att skapa ett målarbetsflöde och använda **[!UICONTROL Survey responses]** rutan.
+Du kan även filtrera mottagare baserat på svar så att endast de användare som intresserar dig visas. Det gör du genom att skapa ett målarbetsflöde och använda rutan **[!UICONTROL Survey responses]**.
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -109,26 +109,26 @@ Man kan arkivera svaren på enkäter i XML-format. På så sätt kan du spara en
 
 Så här gör du:
 
-* Redigera undersökningsegenskaperna med **[!UICONTROL Properties]** knappen på **[!UICONTROL Edit]** fliken.
-* Klicka på **[!UICONTROL Advanced parameters]** länken och markera **[!UICONTROL Save a copy of raw answers]** alternativet.
+* Redigera undersökningsegenskaperna via knappen **[!UICONTROL Properties]** på fliken **[!UICONTROL Edit]**.
+* Klicka på länken **[!UICONTROL Advanced parameters]** och markera alternativet **[!UICONTROL Save a copy of raw answers]**.
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-Du kan aktivera det som standard för alla undersökningar (det här alternativet används när undersökningen publiceras). Det gör du genom att skapa **[!UICONTROL NmsWebApp_XmlBackup]** alternativet och tilldela det ett värde **[!UICONTROL 1]** enligt nedan:
+Du kan aktivera det som standard för alla undersökningar (det här alternativet används när undersökningen publiceras). Det gör du genom att skapa alternativet **[!UICONTROL NmsWebApp_XmlBackup]** och tilldela det värdet **[!UICONTROL 1]** enligt nedan:
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
-## Poänghantering {#score-management}
+## Hantering av bakgrundsmusik {#score-management}
 
 Du kan tilldela ett poängvärde till de alternativ som finns på formulärets sidor. Bakgrundsmusik kan bara länkas till stängda frågor: kryssruta, värde från en nedrullningsbar lista, prenumeration osv.
 
 >[!CAUTION]
 >
->Enbart för **enkäter** .
+>Enbart poänghantering är tillgänglig för **enkäter**.
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
-Poängen samlas och sparas på serversidan när sidan bekräftas, dvs. när användaren klickar på **[!UICONTROL Next]** - eller **[!UICONTROL Finish]** -knappen.
+Poängen samlas och sparas på serversidan när sidan bekräftas, dvs. när användaren klickar på knappen **[!UICONTROL Next]** eller **[!UICONTROL Finish]**.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Bakgrundsmusik kan användas i tester och skript.
 >
 >Det går inte att använda bakgrundsmusik i synlighetsvillkoren för fält som finns på samma sida. De kan dock användas på efterföljande sidor.
 
-* Om du vill använda poäng i tester använder du **[!UICONTROL Score]** fältet i testberäkningsformeln enligt nedan:
+* Använd fältet **[!UICONTROL Score]** i testberäkningsformeln om du vill använda resultat i tester, vilket visas nedan:
 
    ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
@@ -156,7 +156,7 @@ Bakgrundsmusik kan användas i tester och skript.
 
    ![](assets/s_ncs_admin_survey_score_exb.png)
 
-* När användaren klickar på **[!UICONTROL Next]** knappen läggs de två värdena till.
+* När användaren klickar på knappen **[!UICONTROL Next]** läggs de två värdena till.
 
    ![](assets/s_ncs_admin_survey_score_exe.png)
 
