@@ -21,7 +21,7 @@ Om fel uppstår bör du kontrollera att följande element är korrekt konfigurer
 
 * **Externa konton**
 
-   Kontrollera **[!UICONTROL Administration > Platform > External accounts]** i att följande externa SFTP-konton är korrekt konfigurerade. Dessa SFTP-servrar bör ha konfigurerats i Adobe Experience Cloud av din konsult.
+   Kontrollera att följande externa SFTP-konton är korrekt konfigurerade i **[!UICONTROL Administration > Platform > External accounts]**. Dessa SFTP-servrar bör ha konfigurerats i Adobe Experience Cloud av din konsult.
 
    * **[!UICONTROL importSharedAudience]** : SFTP-konto för att importera målgrupper.
    * **[!UICONTROL exportSharedAudience]** : SFTP-konto för export av målgrupper.
