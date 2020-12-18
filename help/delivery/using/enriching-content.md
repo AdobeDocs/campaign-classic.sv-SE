@@ -21,11 +21,11 @@ Med aggregatorer kan du utöka innehållet med externa data. Dessa data kommer f
 
 ## Allmänna frågor {#generic-queries}
 
-Frågor konfigureras via publiceringsmallen på **[!UICONTROL Aggregator]** fliken.
+Frågor konfigureras via publiceringsmallen på fliken **[!UICONTROL Aggregator]**.
 
 De data som hämtas kommer att berika XML-utdatadokumentet via dess huvudelement.
 
-Exempel på retur från en fråga i mottagarschemat (**nms:receive**):
+Exempel på retur från en fråga i mottagarschemat (**nms:mottagare**):
 
 ```
 <book name="Content Management">
@@ -37,7 +37,7 @@ Exempel på retur från en fråga i mottagarschemat (**nms:receive**):
 </book>
 ```
 
-Elementet **`<collection-recipient>`** representerar indataelementet i dokumentet som är resultatet av en fråga. De data som hämtas returneras under detta element. i vårt exempel en mottagarlista.
+**`<collection-recipient>`**-elementet representerar indataelementet för dokumentet som är ett resultat av en fråga. De data som hämtas returneras under detta element. i vårt exempel en mottagarlista.
 
 ### Lägga till en fråga {#adding-a-query}
 
@@ -49,7 +49,7 @@ Frågeparametrarna redigeras med en guide.
 
    >[!NOTE]
    >
-   >Redigeringsfältets **sökväg** används för att byta namn på frågeutdataelementet.
+   >Redigeringsfältet **Sökväg** används för att byta namn på frågeutdataelementet.
 
 1. På nästa sida kan du välja vilka data som ska hämtas.
 
@@ -80,9 +80,9 @@ En innehållslänk deklareras i dataschemat enligt följande:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-Definitionen av länken fylls i på en **strängtyp****`<element>`** och attributet **expandSchemaTarget** refererar till målschemat (&quot;cus:chapter&quot; i vårt exempel). Det refererade schemat måste vara ett innehållsschema.
+Definitionen av länken fylls i på en **sträng**-typ **`<element>`** och attributet **expandSchemaTarget** refererar till målschemat (&quot;cus:chapter&quot; i vårt exempel). Det refererade schemat måste vara ett innehållsschema.
 
-Innehållet i målelementet berikar länkelementet, dvs. elementet **`<chapter>`** i vårt exempelschema:
+Innehållet i målelementet berikar länkelementet, dvs. **`<chapter>`**-elementet i vårt exempelschema:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +92,7 @@ Innehållet i målelementet berikar länkelementet, dvs. elementet **`<chapter>`
 
 >[!NOTE]
 >
->Länkens **beräkningssträng** visas från **computeString** -attributet.
+>**Beräkningssträngen** för länken visas från attributet **computeString**.
 
 I indataformuläret deklareras redigeringskontrollen för länken enligt följande:
 
@@ -102,7 +102,7 @@ I indataformuläret deklareras redigeringskontrollen för länken enligt följan
 
 ![](assets/d_ncs_content_link.png)
 
-Med den här **[!UICONTROL Magnifier]** ikonen öppnar du redigeringsformuläret för det länkade elementet.
+Med ikonen **[!UICONTROL Magnifier]** kan du öppna redigeringsformen för det länkade elementet.
 
 #### Länksamling {#link-collection}
 
@@ -138,11 +138,11 @@ En länk till en extern tabell deklareras i dataschemat enligt följande:
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-Definitionen av länken fylls i på en **länktyp****`<element>`** och **målattributet** refererar till målschemat (&quot;nms:receive&quot; i vårt exempel).
+Definitionen av länken fylls i på en **länk**-typ **`<element>`** och attributet **target** refererar till målschemat (&quot;nms:receive&quot; i vårt exempel).
 
 Länkar måste deklareras som huvudelement i dataschemat.
 
-Strängen **** Beräkna och nyckeln för målelementet berikar attributen **`<name>-id`** och **`<name>-cs`** för huvudelementet.
+**Beräkningssträngen** och nyckeln för målelementet berikar attributen **`<name>-id`** och **`<name>-cs`** för huvudelementet.
 
 I vårt exempel är länken ifylld i &quot;cus:book&quot;-schemat och innehållet i länkdata finns i attributen &quot;mainContact-id&quot; och &quot;mainContact-cs&quot;:
 
@@ -158,7 +158,7 @@ Länkredigeringskontrollen deklareras enligt följande:
 
 ![](assets/d_ncs_content_link3.png)
 
-Du kan begränsa valet av målelement genom att lägga till **`<sysfilter>`** elementet via länkdefinitionen i indataformuläret:
+Du kan begränsa valet av målelement genom att lägga till elementet **`<sysfilter>`** via länkdefinitionen i indataformuläret:
 
 ```
 <input xpath="mainContact">
