@@ -25,61 +25,61 @@ Så här skapar du en ny instans och en Adobe Campaign-databas:
 
 >[!NOTE]
 >
->Det är bara den **interna** identifieraren som kan utföra dessa åtgärder. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Det är bara identifieraren **internal** som kan utföra dessa åtgärder. Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 När Adobe Campaign-konsolen startas kommer du åt en inloggningssida.
 
 Så här skapar du en ny instans:
 
-1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration. Länken kan vara antingen **[!UICONTROL New...]** eller ett befintligt instansnamn.
+1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration. Den här länken kan vara antingen **[!UICONTROL New...]** eller ett befintligt instansnamn.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Klicka **[!UICONTROL Add > Connection]** och ange etiketten och URL-adressen för Adobe Campaign-programservern.
+1. Klicka på **[!UICONTROL Add > Connection]** och ange etiketten och URL:en för Adobe Campaign-programservern.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) typen URL.
+   Du kan till exempel använda URL-adressen [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
    >[!CAUTION]
    >
-   >Använd endast följande tecken för anslutnings-URL: `[a-z]`, `[A-Z]``[0-9]` och streck (-) eller fullständiga stopp.
+   >Använd endast följande tecken för anslutnings-URL: `[a-z]`, `[A-Z]`, `[0-9]` och streck (-) eller fullständiga stopp.
 
-1. Bekräfta inställningarna genom **[!UICONTROL Ok]** att klicka: du kan nu börja med att skapa en instans.
-1. I **[!UICONTROL Connection settings]** fönstret anger du den **interna** inloggningen och lösenordet för att ansluta till Adobe Campaign programserver. När du är ansluten öppnar du guiden Skapa instans för att deklarera en ny instans
-1. Ange **[!UICONTROL Name]** instansnamnet **i** fältet. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, måste du välja ett kort namn utan specialtecken. Till exempel: **eMarketing**.
+1. Bekräfta inställningarna genom att klicka på **[!UICONTROL Ok]**: du kan nu börja med att skapa en instans.
+1. I fönstret **[!UICONTROL Connection settings]** anger du **intern**-inloggning och dess lösenord för att ansluta till Adobe Campaign programserver. När du är ansluten öppnar du guiden Skapa instans för att deklarera en ny instans
+1. I fältet **[!UICONTROL Name]** anger du **instansnamnet**. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, måste du välja ett kort namn utan specialtecken. Till exempel: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
    Namnet på instansen som läggs till i domännamnet får inte vara längre än 40 tecken. På så sätt kan du begränsa storleken på meddelandehuvuden och förhindra att meddelanden betraktas som skräppost, särskilt med verktyg som SpamAssassin.
 
-1. I **[!UICONTROL DNS masks]** fälten anger du **listan med DNS-masker** som instansen ska kopplas till. Adobe Campaign-servern använder värdnamnet som visas i HTTP-begäranden för att avgöra vilken instans som ska nås.
+1. I fälten **[!UICONTROL DNS masks]** anger du listan **med DNS-masker** som instansen ska kopplas till. Adobe Campaign-servern använder värdnamnet som visas i HTTP-begäranden för att avgöra vilken instans som ska nås.
 
-   Värdnamnet finns mellan strängen **https://** och det första snedstrecket **/** i serveradressen.
+   Värdnamnet finns mellan strängen **https://** och det första snedstrecket **/** för serveradressen.
 
    Du kan definiera en lista med värden avgränsade med kommatecken.
 
-   Med och * kan användas som jokertecken för att ersätta ett eller flera olika tecken (DNS, port, osv.). Värdet för **demo*** fungerar till exempel med&quot;https://demo&quot; på samma sätt som med&quot;https://demo:8080&quot; och till och med&quot;https://demo2&quot;.
+   Med och * kan användas som jokertecken för att ersätta ett eller flera olika tecken (DNS, port, osv.). Värdet **demo*** fungerar till exempel med&quot;https://demo&quot; på samma sätt som med&quot;https://demo:8080&quot; och till och med&quot;https://demo2&quot;.
 
-   Namn som används måste definieras i din DNS. Du kan också informera om kommunikationen mellan ett DNS-namn och en IP-adress i **filen c:/windows/system32/drivers/etc/hosts** i Windows och i filen **/etc/hosts** i Linux. Du måste därför ändra anslutningsinställningarna för att kunna använda det här DNS-namnet för att ansluta till den valda instansen.
+   Namn som används måste definieras i din DNS. Du kan också informera om kopplingen mellan ett DNS-namn och en IP-adress i filen **c:/windows/system32/drivers/etc/hosts** i Windows och i filen **/etc/hosts** i Linux. Du måste därför ändra anslutningsinställningarna för att kunna använda det här DNS-namnet för att ansluta till den valda instansen.
 
    Servern måste identifieras med det här namnet, särskilt för överföring av bilder i e-postmeddelanden.
 
    Dessutom måste servern kunna ansluta till sig själv med det här namnet, och om möjligt med en loopback-adress - 127.0.0.1 - särskilt för att rapporter ska kunna exporteras i PDF-format.
 
-1. I den **[!UICONTROL Language]** nedrullningsbara listan väljer du **instansspråk**: Engelska (USA), engelska (Storbritannien), franska eller japanska.
+1. Välj **instansspråk** i listrutan **[!UICONTROL Language]**: Engelska (USA), engelska (Storbritannien), franska eller japanska.
 
-   Skillnaderna mellan amerikansk engelska och brittisk engelska beskrivs i [detta avsnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
    >[!CAUTION]
    >
    >Instansspråket kan inte ändras efter det här steget. Adobe Campaign-instanser är inte flerspråkiga: Du kan inte växla mellan olika språk i gränssnittet.
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta instansdeklarationen. Logga ut och sedan in igen för att deklarera databasen.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta instansdeklarationen. Logga ut och sedan in igen för att deklarera databasen.
 
    >[!NOTE]
    >
-   >Instansen kan skapas från kommandoraden. For more on this, refer to [Command lines](../../installation/using/command-lines.md).
+   >Instansen kan skapas från kommandoraden. Mer information finns i [Kommandorader](../../installation/using/command-lines.md).
 
