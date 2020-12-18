@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Överföring till mid-sourcing{#transfer-to-mid-sourcing}
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Överför till** medelkälla. For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+Arbetsflödena som anges nedan installeras som standard med modulen **Överför till modulen Mid-Source**. Mer information om den här modulen finns i [avsnittet](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
