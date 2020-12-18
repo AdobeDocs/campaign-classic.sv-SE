@@ -19,10 +19,10 @@ ht-degree: 11%
 
 ## Skapa leveransen {#creating-the-delivery}
 
-Du kan skapa en leverans via översikten eller **[!UICONTROL Create > Delivery]** menyn.
+Du kan skapa en leverans via översikten eller via menyn **[!UICONTROL Create > Delivery]**.
 
 
-Om du vill skapa en leverans klickar du **[!UICONTROL Create]** ovanför leveranslistan. När du skapar en ny leverans måste du ange vilken leveranskanal som används. Det gör du genom att välja rätt leveransmall i listrutan i **[!UICONTROL Delivery template]** fältet.
+Om du vill skapa en leverans klickar du **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du ange vilken leveranskanal som används. Det gör du genom att välja rätt leveransmall i listrutan i fältet **[!UICONTROL Delivery template]**.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -38,16 +38,16 @@ Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar s�
 
 Du måste ange parametrar för att kunna identifiera leveransen. Så här gör du:
 
-1. Ange ett namn för leveransen i **[!UICONTROL Label]** fältet.
+1. Ange ett namn för leveransen i fältet **[!UICONTROL Label]**.
 
    Leveransen kan även tilldelas en leveranskod. Namnet på leveransen och dess kod visas i listan över leveranser, men kan inte ses av mottagarna.
 
-1. Lägg till en beskrivning i **[!UICONTROL Description]** fältet.
+1. Lägg till en beskrivning i fältet **[!UICONTROL Description]**.
 1. Välj leveranstyp i det relevanta fältet. Den här informationen är användbar för leveransspårning: Du kan filtrera baserat på det här kriteriet i leveranslistan eller skapa frågor med det här urvalskriteriet.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
-1. Klicka **[!UICONTROL Continue]** för att bekräfta informationen och visa meddelandekonfigurationsfönstret.
+1. Klicka på **[!UICONTROL Continue]** för att bekräfta informationen och visa meddelandekonfigurationsfönstret.
 
 Leveransinnehållet är klart att konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
