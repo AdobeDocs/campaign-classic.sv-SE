@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->SOAP-aktiviteten ( **Loading)** är bara tillgänglig om du har **FDA-modulen (Federated Data Access)** installerad. Kontrollera licensavtalet.
+>Aktiviteten **Inläsning (SOAP)** är bara tillgänglig om du har **FDA-modulen (Federated Data Access)** installerad. Kontrollera licensavtalet.
 
-Aktiviteten **Loading (SOAP)** används utöver aktiviteten för **datainläsning (RDBMS)** när det inte är möjligt att samla in data direkt via FDA i en extern databas.
+Aktiviteten **Loading (SOAP)** används utöver aktiviteten **datainläsning (RDBMS)** när det inte går att samla in data direkt via FDA i en extern databas.
 
 Åtgärden är följande:
 
@@ -43,7 +43,7 @@ Aktiviteten **Loading (SOAP)** används utöver aktiviteten för **datainläsnin
 
    Om du vill uppdatera exemplet väljer du **[!UICONTROL Re-analyze the example]**.
 
-   Du kan också anpassa kolumndataformatet via **[!UICONTROL Advanced parameters]** länken. Mer information om hur du formaterar importerade data finns i det här [avsnittet](../../platform/using/importing-data.md#import-wizard).
+   Du kan också anpassa formatet för kolumndata via länken **[!UICONTROL Advanced parameters]**. Mer information om hur du formaterar importerade data finns i [avsnittet](../../platform/using/importing-data.md#import-wizard).
 
 1. Du kan använda radnumret som en identifierare och/eller ange att SOAP-anropet returnerar flera element.
 1. Ange följande tabbskript efter funktion:
