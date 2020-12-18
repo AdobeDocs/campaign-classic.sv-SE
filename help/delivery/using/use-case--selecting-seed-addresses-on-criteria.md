@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Användningsfall: välja fröadresser enligt villkor{#use-case-selecting-seed-addresses-on-criteria}
 
-I samband med en leverans eller en kampanj kan du med hjälp av länken välja dirigerade adresser baserat på specifika urvalskriterier. **[!UICONTROL Edit the dynamic condition...]**
+I samband med en leverans eller en kampanj kan du med länken **[!UICONTROL Edit the dynamic condition...]** välja dirigerade adresser baserat på särskilda urvalskriterier.
 
 I det här fallet vill webbplatsen **Mitt onlinebibliotek** anpassa sina nyhetsbrev efter kundernas litterära smak.
 
@@ -32,7 +32,7 @@ Om du vill använda det dynamiska villkoret måste du ha:
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
-Hur du skapar en leverans beskrivs i avsnittet [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md) .
+Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md).
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet och valt mottagare.
 
@@ -40,18 +40,18 @@ I det här exemplet har leveranshanteraren skapat nyhetsbrevet och valt mottagar
 
 ## Steg 2 - Skapa ett gemensamt värde {#step-2---creating-a-common-value}
 
-Om du vill skapa ett gemensamt värde som det i vårt exempel (Inköpsavdelning) måste du först utöka **dataschemat** för dina dirigerade adresser och redigera det tillhörande indataformuläret.
+Om du vill skapa ett gemensamt värde som det i vårt exempel (Inköpsavdelning) måste du först utöka **dataschemat** för dina dirigerade adresser och redigera det associerade indataformuläret.
 
 ### Utöka dataschemat {#extending-the-data-schema}
 
-Mer information om schematillägg finns i [konfigurationsguiden](../../configuration/using/data-schemas.md).
+Mer information om schematillägg finns i [Konfigurationsguiden](../../configuration/using/data-schemas.md).
 
-1. Klicka på **[!UICONTROL Administration > Configuration > Data schemas]** ikonen i **[!UICONTROL New]** noden.
-1. I **[!UICONTROL Creation of a data schema]** fönstret markerar du **[!UICONTROL Extension of a schema]** alternativet och klickar på **[!UICONTROL Next]**.
+1. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Administration > Configuration > Data schemas]**.
+1. I fönstret **[!UICONTROL Creation of a data schema]** väljer du alternativet **[!UICONTROL Extension of a schema]** och klickar på **[!UICONTROL Next]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Välj **[!UICONTROL Seed addresses]** källschemat, ange **doc** som **[!UICONTROL Namespace]** och klicka på **[!UICONTROL Ok]**.
+1. Välj **[!UICONTROL Seed addresses]**-källschemat, ange **doc** som **[!UICONTROL Namespace]** och klicka på **[!UICONTROL Ok]**.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
@@ -69,7 +69,7 @@ Mer information om schematillägg finns i [konfigurationsguiden](../../configura
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   Kopiera sedan följande rader och klistra in dem under **[!UICONTROL Seed to insert in the export files]** elementet.
+   Kopiera sedan följande rader och klistra in dem under **[!UICONTROL Seed to insert in the export files]**-elementet.
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -78,14 +78,14 @@ Mer information om schematillägg finns i [konfigurationsguiden](../../configura
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   I det här fallet anger du att en ny uppräkning med namnet **[!UICONTROL Department]** har skapats i dirigerad adresstabellen, och den är baserad på **[!UICONTROL @company]** standarduppräkningsmallen (med namnet **Company** i dirigerad adressform).
+   I det här fallet anger du att en ny uppräkning med namnet **[!UICONTROL Department]** har skapats i dirigerad adresstabellen, och den är baserad på standarduppräkningsmallen **[!UICONTROL @company]** (med namnet **Company** i dirigerad adressform).
 
 1. Klicka på **[!UICONTROL Save]**.
-1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
+1. Välj alternativet **[!UICONTROL Update database structure]** på menyn **[!UICONTROL Tools > Advanced]**.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. När uppdateringsguiden visas klickar du på **[!UICONTROL Next]** knappen för att öppna fönstret Redigera tabeller: Ändringar som utförs i schemat för startadressdata kräver en strukturuppdatering.
+1. När uppdateringsguiden visas klickar du på knappen **[!UICONTROL Next]** för att öppna fönstret Redigera tabeller: Ändringar som utförs i schemat för startadressdata kräver en strukturuppdatering.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
@@ -95,17 +95,17 @@ Mer information om schematillägg finns i [konfigurationsguiden](../../configura
 
    När uppdateringen är klar kan du stänga guiden.
 
-1. Koppla från och återanslut sedan till Adobe Campaign. Ändringarna i schemat för startadressdata gäller nu. För att de ska kunna visas från startadressens skärm måste du uppdatera den associerade adressen **[!UICONTROL Input form]**. Mer information finns i avsnittet [Uppdatera indataformulär](#updating-the-input-form) .
+1. Koppla från och återanslut sedan till Adobe Campaign. Ändringarna i schemat för startadressdata gäller nu. För att de ska kunna visas på startadressens skärm måste du uppdatera den associerade **[!UICONTROL Input form]**. Se avsnittet [Uppdatera indataformuläret](#updating-the-input-form).
 
 #### Utöka dataschemat från en länkad tabell {#extending-the-data-schema-from-a-linked-table}
 
 Startadressernas dataschema kan använda värden från en tabell som är länkad till mottagardataschemat - mottagare (nms).
 
-Användaren vill till exempel integrera den **[!UICONTROL Internet Extension]** som finns i den **[!UICONTROL Country]** tabell som är länkad till mottagarschemat.
+Användaren vill till exempel integrera **[!UICONTROL Internet Extension]** som finns i tabellen **[!UICONTROL Country]** som är länkad till mottagarschemat.
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-De måste därför utöka dataschemat för dirigerade adresser så som beskrivs i avsnittet. De kodrader som ska integreras i **steg 4** är dock följande:
+De måste därför utöka dataschemat för dirigerade adresser så som beskrivs i avsnittet. Följande kodrader ska integreras vid **steg 4**:
 
 ```
 <element name="country">
@@ -119,27 +119,27 @@ De måste därför utöka dataschemat för dirigerade adresser så som beskrivs 
 De anger
 
 * som användaren vill skapa ett nytt element med namnet **[!UICONTROL Internet Extension]**,
-* att det här elementet kommer från **[!UICONTROL Country]** tabellen.
+* att det här elementet kommer från tabellen **[!UICONTROL Country]**.
 
 >[!CAUTION]
 >
->I den länkade tabellens namn måste du ange den länkade tabellens **xpath-dst** .
+>I den länkade tabellens namn måste du ange **xpath-dst** för den länkade tabellen.
 >
->Detta finns i elementet **[!UICONTROL Country]** i mottagartabellen.
+>Detta finns i **[!UICONTROL Country]**-elementet i mottagartabellen.
 
 ![](assets/dlv_seeds_usecase_07.png)
 
-Användaren kan sedan följa **steg 5** i avsnittet och uppdatera **[!UICONTROL Input form]** startadresserna.
+Användaren kan sedan följa från **steg 5** i avsnittet och uppdatera **[!UICONTROL Input form]** för startadresserna.
 
-Mer information finns i avsnittet [Uppdatera indataformulär](#updating-the-input-form) .
+Se avsnittet [Uppdatera indataformuläret](#updating-the-input-form).
 
 #### Uppdaterar indataformuläret {#updating-the-input-form}
 
-1. Leta reda på indataformuläret för dirigerade adresser i **[!UICONTROL Administration > Configuration > Input forms]** noden.
+1. I noden **[!UICONTROL Administration > Configuration > Input forms]** hittar du indataformuläret för dirigerade adresser.
 
    ![](assets/dlv_seeds_usecase_19.png)
 
-1. Redigera formuläret och infoga följande rad i **[!UICONTROL Recipient]** behållaren.
+1. Redigera formuläret och infoga följande rad i **[!UICONTROL Recipient]**-behållaren.
 
    ```
    <input xpath="@workField"/>
@@ -148,11 +148,11 @@ Mer information finns i avsnittet [Uppdatera indataformulär](#updating-the-inpu
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. Spara ändringarna.
-1. Öppna en startadress. Fältet **[!UICONTROL Department]** visas i **[!UICONTROL Recipient]** tabellen.
+1. Öppna en startadress. Fältet **[!UICONTROL Department]** visas i tabellen **[!UICONTROL Recipient]**.
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. Redigera de dirigerade adresser som du vill använda för leveransen och ange **Inköp** som värde i **[!UICONTROL Department]** fältet.
+1. Redigera de dirigerade adresser som du vill använda för leveransen och ange **Inköp** som värde i fältet **[!UICONTROL Department]**.
 
 ## Steg 3 - Definiera villkoret {#step-3---defining-the-condition}
 
@@ -162,36 +162,36 @@ Nu kan du ange det dynamiska villkoret för startadresserna för leveransen. Så
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. Klicka på **[!UICONTROL To]** länken och sedan på **[!UICONTROL Seed addresses]** fliken för att öppna **[!UICONTROL Edit the dynamic condition...]** länken.
+1. Klicka på länken **[!UICONTROL To]** och sedan på fliken **[!UICONTROL Seed addresses]** för att komma åt länken **[!UICONTROL Edit the dynamic condition...]**.
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. Välj det uttryck som gör att du kan välja vilka dirigerade adresser du vill använda. Här väljer användaren **[!UICONTROL Department (@workField)]** uttrycket.
+1. Välj det uttryck som gör att du kan välja vilka dirigerade adresser du vill använda. Här väljer användaren uttrycket **[!UICONTROL Department (@workField)]**.
 
    ![](assets/dlv_seeds_usecase_03.png)
 
-1. Välj det värde du vill ha. I det här exemplet väljer användaren **Inköpsavdelning** i den nedrullningsbara listan med värden.
+1. Välj det värde du vill ha. I det här exemplet väljer användaren avdelningen **Inköp** i listrutan med värden.
 
    ![](assets/dlv_seeds_usecase_17.png)
 
    >[!NOTE]
    >
-   >Schematillägget som skapades tidigare kommer från **mottagarschemat** . Värdena som visas på skärmen ovan kommer från en uppräkning av **mottagarschemat** .
+   >Schematillägget som skapades tidigare kommer från schemat **mottagare**. Värdena som visas på skärmen ovan kommer från en uppräkning av schemat **mottagare**.
 
 1. Klicka på **[!UICONTROL Ok]**.
 
-   Frågan visas i **[!UICONTROL Select target]** fönstret.
+   Frågan visas i fönstret **[!UICONTROL Select target]**.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Click **[!UICONTROL Ok]** to approve the query.
-1. Analysera leveransen och klicka sedan på **[!UICONTROL Delivery]** fliken för att komma åt leveransloggarna.
+1. Klicka på **[!UICONTROL Ok]** för att godkänna frågan.
+1. Analysera leveransen och klicka sedan på fliken **[!UICONTROL Delivery]** för att komma åt leveransloggarna.
 
    Startadresserna för inköpsavdelningen visas som väntande leveranser, precis som för mottagarna eller andra startadresser.
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Click the **[!UICONTROL Send]** button to start the delivery.
+1. Klicka på knappen **[!UICONTROL Send]** för att starta leveransen.
 
    Medlemmarna på inköpsavdelningen utgör en del av de dirigerade adresser som kommer att ta emot leveransen i inkorgen.
 
