@@ -17,13 +17,13 @@ ht-degree: 6%
 
 # Starta arbetsflöden{#starting-workflows}
 
-Med hjälp av arbetsflödena, som nås via **[!UICONTROL Managing social networks]** **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** noden, kan du synkronisera Adobe Campaign med Twitter och Facebook.
+Med arbetsflödena **[!UICONTROL Managing social networks]**, som nås via noden **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, kan du synkronisera Adobe Campaign med Twitter och Facebook.
 
-Första gången du använder social marknadsföring stoppas dessa arbetsflöden som standard. Starta dem genom att klicka på **[!UICONTROL Start]** knappen i verktygsfältet.
+Första gången du använder social marknadsföring stoppas dessa arbetsflöden som standard. Starta dem genom att klicka på knappen **[!UICONTROL Start]** i verktygsfältet.
 
 ![](assets/social_start_workflows.png)
 
-Om det finns ett socialt nätverk som du inte vill använda rekommenderar vi att du inte startar matchande arbetsflöden. Om du inte vill få en varning om att produktionsarbetsflöden har stoppats, väljer du allvarlighetsgraden **[!UICONTROL Normal]** på **[!UICONTROL Execution]** fliken för de aktuella arbetsflödenas egenskaper.
+Om det finns ett socialt nätverk som du inte vill använda rekommenderar vi att du inte startar matchande arbetsflöden. Om du vill undvika att få en varning om att produktionsarbetsflöden har stoppats, väljer du allvarlighetsnivån **[!UICONTROL Normal]** på fliken **[!UICONTROL Execution]** för de aktuella arbetsflödenas egenskaper.
 
 ![](assets/social_start_workflows2.png)
 
