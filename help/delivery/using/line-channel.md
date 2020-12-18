@@ -25,7 +25,7 @@ LINE kan också kombineras med transaktionsmeddelandemodulen för att skicka rea
 
 ![](assets/line_message.png)
 
-Avsnitten nedan innehåller information som är specifik för LINE-kanalen. Global information om hur du skapar en leverans finns i[det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Avsnitten nedan innehåller information som är specifik för LINE-kanalen. Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 Stegen för LINE-kanalen är:
 
@@ -53,44 +53,44 @@ Mer information om hur du skapar och konfigurerar en LINE-tjänst finns i [Hante
 
 Slutligen, för att skapa ett externt konto på Adobe Campaign:
 
-1. Klicka på fliken **Externa konton** i trädstrukturen **Administration** > **Plattform** .
-1. Klicka sedan på ikonen **Nytt** .
+1. Klicka på fliken **Externa konton** i trädstrukturen **Administration** > **Plattform**.
+1. Klicka sedan på ikonen **Nytt**.
 
    ![](assets/line_config.png)
 
-1. Fyll i fälten **Etikett** och **Internt namn** .
-1. I **[!UICONTROL Type]** fältet väljer du Routning och sedan LINE i fältet **Kanal** .
-1. Klicka **[!UICONTROL Save]** för att skapa ett externt LINE-konto.
-1. Ett **LINE** -anpassningsfält visas sedan under ikonen **Allmänt** och fyller i följande fält:
+1. Fyll i fälten **Etikett** och **Internt namn**.
+1. Välj Routning i fältet **[!UICONTROL Type]** och välj LINE i fältet **Kanal**.
+1. Klicka på **[!UICONTROL Save]** om du vill skapa ett externt LINE-konto.
+1. Ett **LINE**-anpassningsfält visas sedan under ikonen **Allmänt** och fyller i följande fält:
 
    ![](assets/line_config_2.png)
 
-   * **Kanalalias**: visas via ditt LINE-konto på fliken **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** .
-   * **Kanal-ID**: visas via ditt LINE-konto på fliken **Kanaler** > panelen **** Grundläggande information.
-   * **Kanalhemlig nyckel**: visas via ditt LINE-konto på fliken **Kanaler** > panelen **** Grundläggande information.
-   * **Åtkomsttoken**: visas via ditt LINE-konto i utvecklarportalen eller genom att klicka på **[!UICONTROL Get access token]** knappen.
+   * **Kanalalias**: tillhandahålls via ditt LINE-konto på  **[!UICONTROL Channels]** >- **[!UICONTROL Technical configuration]** fliken.
+   * **Kanal-ID**: visas via ditt LINE-konto på fliken  **Channel** >  **Basic Information** Panel.
+   * **Kanalhemlig nyckel**: visas via ditt LINE-konto på fliken  **Channel** >  **Basic Information** Panel.
+   * **Åtkomsttoken**: visas via ditt LINE-konto i utvecklarportalen eller genom att klicka på  **[!UICONTROL Get access token]** knappen.
    * **Utgångsdatum** för åtkomsttoken: gör att du kan ange förfallodatum för åtkomsttoken.
    * **Prenumerationstjänst**: gör att du kan ange vilka tjänster som användarna ska prenumerera på.
 
 >[!NOTE]
 >
->Du måste verifiera att arbetsflödena **[!UICONTROL LINE access token update (updateLineAccessToken)]** och **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** arbetsflödena har startats. Klicka i Utforskaren **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** för att kontrollera arbetsflödenas status.
+>Du måste verifiera att arbetsflödena **[!UICONTROL LINE access token update (updateLineAccessToken)]** och **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** har startats. Klicka på **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** i Utforskaren för att kontrollera arbetsflödenas status.
 
 ## Skapa leveransen {#creating-the-delivery}
 
-Så här skapar du en **LINE** -leverans:
+Om du vill skapa en **LINE**-leverans måste du följa dessa steg:
 
 >[!NOTE]
 >
 >Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-1. Markera på **[!UICONTROL Campaigns]** fliken **[!UICONTROL Deliveries]** och klicka sedan på **[!UICONTROL Create]** knappen.
+1. På fliken **[!UICONTROL Campaigns]** väljer du **[!UICONTROL Deliveries]** och klickar sedan på knappen **[!UICONTROL Create]**.
 1. I det fönster som visas väljer du **[!UICONTROL LINE V2 delivery]** leveransmall.
 
    ![](assets/line_message_01.png)
 
 1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
-1. Klicka **[!UICONTROL Continue]** för att skapa leveransen.
+1. Klicka på **[!UICONTROL Continue]** för att skapa leveransen.
 
 ## Definiera innehållet {#defining-the-content}
 
@@ -101,25 +101,25 @@ Du kan välja mellan två meddelandetyper:
 * Textmeddelande
 * Bild och länk
 
-### Konfigurera leverans av textmeddelande {#configuring-a-text-message-delivery}
+### Konfigurera textmeddelandeleverans {#configuring-a-text-message-delivery}
 
-Ett **textmeddelande** (LINE delivery) är ett meddelande som skickas till mottagarna i textformuläret.
+Ett **textmeddelande** radleverans är ett meddelande som skickas till mottagare i textformat.
 
 ![](assets/line_message_02.png)
 
-Konfigurationen för den här meddelandetypen liknar konfigurationen för **texten** i ett e-postmeddelande. For more information, refer to this [page](../../delivery/using/defining-the-email-content.md#message-content).
+Konfigurationen för den här meddelandetypen liknar konfigurationen för **texten** i ett e-postmeddelande. Mer information finns på den här [sidan](../../delivery/using/defining-the-email-content.md#message-content).
 
 ### Konfigurera en bild- och länkleverans {#configuring-an-image-and-link-delivery}
 
-En **bild- och länkleverans** är ett meddelande som skickas till mottagarna i form av en bild som kan innehålla en eller flera URL:er.
+En **Image and link** LINE-leverans är ett meddelande som skickas till mottagare i form av en bild som kan innehålla en eller flera URL:er.
 
 Du kan använda:
 
-* en **personaliserad bild**,
+* en **personlig bild**,
 
    >[!NOTE]
    >
-   >Du kan använda variabeln **%SIZE%** : Med den här variabeln kan du optimera bildvisningen enligt skärmstorleken för mottagarens mobila enhet.
+   >Du kan använda variabeln **%SIZE%**: Med den här variabeln kan du optimera bildvisningen enligt skärmstorleken för mottagarens mobila enhet.
 
    ![](assets/line_message_04.png)
 
@@ -147,7 +147,7 @@ Du kan använda:
 
    ![](assets/line_message_05.png)
 
-   I det här avsnittet kan du välja mellan olika layouter som delar upp bilden i flera klickbara områden. **[!UICONTROL Links]** Sedan kan du tilldela var och en av dem en dedikerad länk.
+   I **[!UICONTROL Links]**-avsnittet kan du välja mellan olika layouter som delar upp bilden i flera klickbara områden. Sedan kan du tilldela var och en av dem en dedikerad länk.
 
 >[!NOTE]
 >
@@ -157,11 +157,11 @@ Du kan använda:
 
 * När du skickar en LINE-leverans till en ny mottagare för första gången måste du lägga till det officiella LINE-meddelandet om användningsvillkoren och samtycke i leveransen. Det officiella meddelandet finns på följande länk: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
-## Välja målpopulation {#selecting-the-target-population}
+## Välja målpopulationen {#selecting-the-target-population}
 
 Att välja mottagare för en LINE-leverans liknar att definiera mottagare för e-postleverans. Mer information finns i [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
 
-Målgruppsanpassning utförs på **besökare**.
+Målinriktning utförs på **besökare**.
 
 ## Skicka meddelanden {#sending-messages}
 
@@ -171,23 +171,23 @@ Att skicka radleveranser liknar att skicka e-postmeddelanden. Mer information om
 
 ## Åtkomst till rapporter {#accessing-reports}
 
-Du kan visa rapporter om LINE-tjänsten genom att klicka **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** i Utforskaren. Klicka sedan på **[!UICONTROL Reports]** ikonen i LINE-tjänsten.
+Du kan visa rapporter om LINE-tjänsten genom att klicka på **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** i Utforskaren. Klicka sedan på ikonen **[!UICONTROL Reports]** i LINE-tjänsten.
 
 ![](assets/line_reports.png)
 
-Om du vill visa rapporter om radleveranser klickar du på **[!UICONTROL Campaign Management > Deliveries]** och väljer önskad leverans. Spårningsrapporterna visar klickfrekvensen. LINE tar inte hänsyn till den öppna tariffen.
+Om du vill visa rapporter om radleveranser klickar du på **[!UICONTROL Campaign Management > Deliveries]** och väljer sedan önskad leverans. Spårningsrapporterna visar klickfrekvensen. LINE tar inte hänsyn till den öppna tariffen.
 
 ![](assets/line_reports_01.png)
 
-## Exempel: skapa och skicka ett personligt LINE-meddelande {#example--create-and-send-a-personalized-line-message}
+## Exempel: skapa och skicka ett anpassat LINE-meddelande {#example--create-and-send-a-personalized-line-message}
 
 I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild som innehåller data som ska anpassas efter mottagaren.
 
-1. Skapa LINE-leveransen genom att klicka på **[!UICONTROL Create]** knappen på **[!UICONTROL Campaign]** fliken.
+1. Skapa din LINE-leverans genom att klicka på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Campaign]**.
 
    ![](assets/line_usecase.png)
 
-1. Välj **[!UICONTROL LINE V2 delivery]** leveransmall och ge leveransen ett namn.
+1. Välj leveransmallen **[!UICONTROL LINE V2 delivery]** och ge leveransen ett namn.
 
    ![](assets/line_usecase_01.png)
 
@@ -195,7 +195,7 @@ I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild 
 
    ![](assets/line_usecase_02.png)
 
-1. Klicka **[!UICONTROL Add]** för att skapa meddelandet och markera **[!UICONTROL Message type]**.
+1. Klicka på **[!UICONTROL Add]** för att skapa meddelandet och välj **[!UICONTROL Message type]**.
 
    Här vill vi först skapa ett textmeddelande.
 
@@ -205,13 +205,13 @@ I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild 
 
    ![](assets/line_usecase_05.png)
 
-1. Följ samma procedur för att lägga till en bild och välja **[!UICONTROL Image and links]** i **[!UICONTROL Message type]** listrutan.
+1. Gör så här för att lägga till en bild och välja **[!UICONTROL Image and links]** i listrutan **[!UICONTROL Message type]**.
 
    Lägg till din bild-URL.
 
    ![](assets/line_usecase_07.png)
 
-1. I **[!UICONTROL Links]** avsnittet väljer du den layout som ska dela upp bilden i flera klickbara områden.
+1. I avsnittet **[!UICONTROL Links]** väljer du den layout som ska dela upp bilden i flera klickbara områden.
 1. Tilldela en URL till varje område i bilden.
 
    ![](assets/line_usecase_08.png)
