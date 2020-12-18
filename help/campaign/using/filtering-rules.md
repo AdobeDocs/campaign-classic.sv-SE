@@ -19,15 +19,15 @@ ht-degree: 2%
 
 Med filtreringsregler kan du definiera meddelanden som ska uteslutas baserat på kriterier som definierats i en fråga. Dessa regler är kopplade till en målinriktningsdimension.
 
-Filtreringsregler kan länkas till andra typer av regler (kontroll, tryck osv.) i typologier eller grupperas i en dedikerad **filtreringstypologi** . Mer information finns i [Skapa och använda en filtertypologi](#creating-and-using-a-filtering-typology).
+Filtreringsregler kan länkas till andra typer av regler (kontroll, tryck osv.) i typologier eller grupperas i en dedikerad **filtrering**-typologi. Mer information finns i [Skapa och använda en filtertypologi](#creating-and-using-a-filtering-typology).
 
-## Creating a filtering rule {#creating-a-filtering-rule}
+## Skapa en filtreringsregel {#creating-a-filtering-rule}
 
 Du kan t.ex. filtrera nyhetsbrevets prenumeranter för att förhindra att kommunikationen skickas till mottagare som är minderåriga.
 
 Så här definierar du filtret:
 
-1. Skapa en **[!UICONTROL Filtering]** typologiregel som gäller för alla kommunikationskanaler.
+1. Skapa en **[!UICONTROL Filtering]**-typologiregel som gäller för alla kommunikationskanaler.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
@@ -35,7 +35,7 @@ Så här definierar du filtret:
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Skapa filtret med hjälp av **[!UICONTROL Edit the query from the targeting dimension...]** länken.
+1. Skapa filtret med länken **[!UICONTROL Edit the query from the targeting dimension...]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -47,7 +47,7 @@ När den här regeln används i en leverans, exkluderas undertidsprenumeranter a
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## Villkora en filtreringsregel {#conditioning-a-filtering-rule}
+## Villkorsstyr en filtreringsregel {#conditioning-a-filtering-rule}
 
 Du kan begränsa programfältet för filtreringsregeln baserat på den länkade leverans- eller leveransdispositionen.
 
@@ -59,19 +59,19 @@ I det här fallet gäller att även om regeln är länkad till alla leveranser, 
 
 >[!NOTE]
 >
->Typologier och filtreringsregler kan användas i ett arbetsflöde i **[!UICONTROL Delivery outline]** aktiviteten. Mer information om detta finns i [det här avsnittet](../../workflow/using/delivery-outline.md).
+>Typologier och filtreringsregler kan användas i ett arbetsflöde i **[!UICONTROL Delivery outline]**-aktiviteten. Mer information om detta finns i [det här avsnittet](../../workflow/using/delivery-outline.md).
 
 ## Skapa och använda en filtertypologi {#creating-and-using-a-filtering-typology}
 
-Du kan skapa **[!UICONTROL Filtering]** typologier: de innehåller bara filtreringsregler.
+Du kan skapa **[!UICONTROL Filtering]**-typologier: de innehåller bara filtreringsregler.
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Dessa specifika typologier kan länkas till en leverans när målet har valts: i leveransguiden klickar du på **[!UICONTROL To]** länken och sedan på **[!UICONTROL Exclusions]** fliken.
+Dessa specifika typologier kan länkas till en leverans när målet har valts: i leveransguiden klickar du på länken **[!UICONTROL To]** och sedan på fliken **[!UICONTROL Exclusions]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Välj sedan den filtreringstyp som ska användas för leveransen. Om du vill göra det klickar du på **[!UICONTROL Add]** knappen och väljer de typologier som ska användas.
+Välj sedan den filtreringstyp som ska användas för leveransen. Om du vill göra det klickar du på **[!UICONTROL Add]**-knappen och väljer de typologier som ska användas.
 
 Du kan också länka filtreringsregler direkt via den här fliken utan att gruppera dem i en typologi. Använd fönstrets nedre del för att göra detta.
 
