@@ -37,7 +37,7 @@ MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en s�
 
 Mer exakt används de för att styra hur snabbt Campaign MTA (Message Transfer Agent) skickar e-postmeddelanden till varje enskild e-postdomän eller Internet-leverantör (t.ex. hotmail.com, comcast.net). Dessa regler är vanligtvis baserade på gränser som offentliggjorts av Internet-leverantörer (t.ex. innehåller inte mer än 20 meddelanden per varje SMTP-anslutning).
 
-For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
+Mer information om MX-hantering finns i [det här avsnittet](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
@@ -53,7 +53,7 @@ Det finns ett verktyg för att verifiera en SPF-post: [https://www.kitterman.com
 
 SPF är en teknik som i viss utsträckning gör att du kan kontrollera att domännamnet som används i ett e-postmeddelande inte är falskt. När ett meddelande tas emot från en domän tillfrågas domänens DNS-server. Svaret är en kort post (SPF-posten) som anger vilka servrar som har behörighet att skicka e-post från den här domänen. Om vi antar att bara ägaren av domänen har möjlighet att ändra den här posten, kan vi tänka oss att den här metoden inte tillåter att avsändaradressen förfalskas, åtminstone inte delen från höger om&quot;@&quot;.
 
-I den slutliga [RFC 4408-specifikationen](https://www.rfc-editor.org/info/rfc4408)används två element i meddelandet för att avgöra vilken domän som betraktas som avsändare: Den domän som anges av SMTP-kommandot &quot;HELO&quot; (eller &quot;EHLO&quot;) och den domän som anges av adressen för huvudet &quot;Return-Path&quot; (eller &quot;MAIL FROM&quot;), som också är studsadressen. Olika överväganden gör det möjligt att endast ta hänsyn till ett av dessa värden. vi rekommenderar att du ser till att båda källorna anger samma domän.
+I den sista [RFC 4408-specifikationen](https://www.rfc-editor.org/info/rfc4408) används två element i meddelandet för att avgöra vilken domän som betraktas som avsändare: Den domän som anges av SMTP-kommandot &quot;HELO&quot; (eller &quot;EHLO&quot;) och den domän som anges av adressen för huvudet &quot;Return-Path&quot; (eller &quot;MAIL FROM&quot;), som också är studsadressen. Olika överväganden gör det möjligt att endast ta hänsyn till ett av dessa värden. vi rekommenderar att du ser till att båda källorna anger samma domän.
 
 Om du kontrollerar SPF-filen utvärderas giltigheten för avsändarens domän:
 
@@ -73,24 +73,24 @@ DKIM-autentisering (DomainKeys Identified Mail) är en efterföljare till SPF oc
 
 DKIM kommer från en kombination av DomainKeys, Yahoo! och Cisco identifierade autentiseringsprinciper för Internet Mail och används för att kontrollera avsändardomänens autenticitet och garantera meddelandets integritet.
 
-DKIM ersatte **DomainKeys** -autentisering.
+DKIM ersatte **DomainKeys**-autentisering.
 
 DKIM kräver vissa förutsättningar:
 
 * **Säkerhet**: Kryptering är en viktig del av DKIM och för att försäkra sig om att DKIM:s säkerhetsnivå sedan våren 2013 är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
-* **Anseende**: anseendet baseras på IP-adressen och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: Undvik att behålla&quot;standardinställningen&quot; som kan användas av alla och därför har ett mycket svagt rykte. Du måste implementera en annan väljare för **kundlojalitet jämfört med kundvärvning** och för autentisering.
+* **Anseende**: anseendet baseras på IP-adressen och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: Undvik att behålla&quot;standardinställningen&quot; som kan användas av alla och därför har ett mycket svagt rykte. Du måste implementera en annan väljare för **kvarhållning jämfört med förvärvsinformation** och för autentisering.
 * **Adobe Campaign-alternativdeklaration**: i kampanjen Adobe baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering i varken plattformen eller e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
 
 >[!NOTE]
 >
->* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dhelm** i [domänhanteringsreglerna](../../delivery/using/understanding-delivery-failures.md#domain-management). Om inte följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys.
+>* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dkim** i [Domänhanteringsreglerna](../../delivery/using/understanding-delivery-failures.md#domain-management). Om inte följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys.
 >* Du behöver inte aktivera både DomainKeys och DKIM för samma domän som DKIM är en förbättrad version av DomainKeys.
 >* Följande domäner validerar för närvarande DKIM: AOL, Gmail.
 
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Förbättrat MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html)för värdbaserade eller hybridbaserade installationer signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
+>Om du har uppgraderat till [Förbättrat MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html) för värdbaserade eller hybridbaserade installationer, signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
 
 ### DMARC {#dmarc}
 
@@ -99,7 +99,7 @@ DMARC (Domain-based Message Authentication, Reporting and Conformance) är den s
 * Överensstämmelse - Avsändaren kan instruera Internet-leverantörer om vad de ska göra med meddelanden som inte kan autentiseras (t.ex. inte acceptera det).
 * Rapportering - Den ger avsändaren en detaljerad rapport som visar alla meddelanden som inte kunde verifieras av DMARC, tillsammans med domänen Från och IP-adressen som används för varje. Detta gör att ett företag kan identifiera legitim e-post som inte kan autentiseras och som behöver någon typ av &quot;fix&quot; (t.ex. lägga till IP-adresser i sin SPF-post) samt källorna till och förekomsten av nätfiskeförsök i sina e-postdomäner.
 
-DMARC kan utnyttja de rapporter som genererats av [250ok](https://250ok.com/).
+DMARC kan utnyttja rapporter som skapats av [250ok](https://250ok.com/).
 
 <!--#### Configuring the application {#configuring-the-application}
 
@@ -134,7 +134,7 @@ Recommendations for defining an SPF record:
 
 En feedback-slinga fungerar genom att på Internet-nivå deklarera en given e-postadress för ett intervall av IP-adresser som används för att skicka meddelanden. Internet-leverantören skickar till den här postlådan, på ungefär samma sätt som för studsmeddelanden, de meddelanden som rapporteras av mottagarna som skräppost. Plattformen bör konfigureras för att blockera framtida leveranser till användare som har klagat. Det är viktigt att du inte längre kontaktar dem även om de inte använde rätt avanmälningslänk. På grundval av dessa klagomål kommer en Internet-leverantör att lägga till en IP-adress till blockeringslista. Beroende på Internet-leverantören kommer en klagofrekvens på ungefär 1 % att leda till att en IP-adress blockeras.
 
-En standard håller på att utarbetas för att definiera formatet för meddelanden med feedback-slingor: ARF ( [Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
+En standard håller på att utarbetas för att definiera formatet för meddelanden med feedback-slingor: [Rapporteringsformat för missbruk av feedback (ARF)](https://tools.ietf.org/html/rfc6650).
 
 Implementering av en feedbackslinga för en instans kräver:
 
@@ -143,8 +143,8 @@ Implementering av en feedbackslinga för en instans kräver:
 
 När du implementerar en enkel feedbackslinga i Adobe Campaign används funktionen för studsmeddelanden. Postlådan för feedbackslingan används som studspostlåda och en regel definieras för att identifiera dessa meddelanden. E-postadresserna till mottagarna som rapporterade meddelandet som skräppost läggs till i karantänlistan.
 
-* Skapa eller ändra en studs-postregel, **Feedback_loop**, i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** med orsaken **Refused** och typen **Hard**.
-* Om en postlåda har definierats särskilt för feedbackslingan definierar du parametrarna som ska få åtkomst till den genom att skapa ett nytt externt studentkonto i **[!UICONTROL Administration > Platform > External accounts]**.
+* Skapa eller ändra en studs-e-postregel, **Feedback_loop**, i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** med orsaken **Refused** och typen **Hård**.
+* Om en postlåda har definierats särskilt för feedbackslingan, definierar du parametrarna för att få åtkomst till den genom att skapa ett nytt externt studentkonto i **[!UICONTROL Administration > Platform > External accounts]**.
 
 Mekanismen fungerar omedelbart för att behandla klagomål. Om du vill vara säker på att den här regeln fungerar som den ska kan du tillfälligt inaktivera kontona så att de inte samlar in dessa meddelanden och sedan kontrollera innehållet i feedbackloopens postlåda manuellt. Kör följande kommandon på servern:
 
@@ -157,7 +157,7 @@ Om du tvingas använda en enda slingadress för feedback för flera instanser m�
 
 * Replikera de meddelanden som tas emot på så många postlådor som det finns instanser av,
 * få varje postlåda upphämtad i en enda instans,
-* Konfigurera instanserna så att de endast bearbetar de meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet i meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara parametern **checkInstanceName** i instanskonfigurationsfilen (instansen verifieras inte som standard och detta kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
+* Konfigurera instanserna så att de endast bearbetar de meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet i meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara parametern **checkInstanceName** i instanskonfigurationsfilen (instansen verifieras inte som standard och det kan leda till att en viss adress sätts i karantän på fel sätt):
 
    ```
    <serverConf>
@@ -224,11 +224,11 @@ Regeln måste innehålla skriptet som genererar kommandoraden och den måste ink
 
 1. List-Unsubscribe: &lt;mailto:unsubscribe@domain.com>
 
-   Om du klickar på länken **för att avbryta prenumerationen** öppnas användarens standardklient för e-post. Den här typologiregeln måste läggas till i en typologi som används för att skapa e-post.
+   Om du klickar på länken **unsubscribe** öppnas användarens standardklient för e-post. Den här typologiregeln måste läggas till i en typologi som används för att skapa e-post.
 
 1. List-Unsubscribe: `<https://domain.com/unsubscribe.jsp>`
 
-   Om du klickar på länken **för att avbryta prenumerationen** dirigeras användaren till ditt formulär för att avbryta prenumerationen.
+   Om du klickar på länken **unsubscribe** dirigeras användaren om till ditt formulär.
 
    Exempel:
 
@@ -240,7 +240,7 @@ Regeln måste innehålla skriptet som genererar kommandoraden och den måste ink
 
 SMTP (Simple mail transfer protocol) är en Internetstandard för e-postöverföring.
 
-SMTP-felen som inte kontrolleras av en regel visas i mappen **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** . Dessa felmeddelanden tolkas som standard som ej nåbara felmeddelanden. De vanligaste felen måste identifieras och en motsvarande regel läggas till i **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** om du vill att feedback från SMTP-servrarna ska vara korrekt. Utan detta kommer plattformen att göra onödiga återförsök (okända användare) eller felaktigt placera vissa mottagare i karantän efter ett visst antal tester.
+SMTP-felen som inte kontrolleras av en regel visas i mappen **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**. Dessa felmeddelanden tolkas som standard som ej nåbara felmeddelanden. De vanligaste felen måste identifieras och en motsvarande regel läggas till i **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** om du vill att feedback från SMTP-servrarna ska vara korrekt. Utan detta kommer plattformen att göra onödiga återförsök (okända användare) eller felaktigt placera vissa mottagare i karantän efter ett visst antal tester.
 
 ### Dedikerade IP-adresser {#dedicated-ips}
 
@@ -254,7 +254,7 @@ För närvarande erbjuder två leverantörer IP-certifiering: Return Path och Ce
 
 Certifierade avsändare läggs till i e-postmeddelanden som används av globala postlådeproviders och e-postsäkerhetsföretag. Dessa kommersiella tillåtelselista baseras på ett system som gör att avsändaren kan kringgå skräppostfilter helt eller inkrementellt när de kommer in i systemet.
 
-Programmet [Return Path Certification](https://www.validity.com/products/returnpath/certification/) har flera fördelar:
+[Certifiering av retursökväg](https://www.validity.com/products/returnpath/certification/) ger ett antal fördelar, bland annat följande:
 
 * En mätbar ökning av inkorgplaceringen hos de främsta postlådeleverantörerna som Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru med flera
 * Bra rykte och behandling vid viktiga filter som Cloudmark, SpamAssassin och Cisco Ironport
@@ -262,7 +262,7 @@ Programmet [Return Path Certification](https://www.validity.com/products/returnp
 * Data från postlådeprovidern som ger detaljerad information om nyckeltal, placering och certifieringsprestanda
 * Förenklad och snabbare IP-uppvärmning, inklusive bättre rykte och erkännande vid migrering eller hämtning av en ny IP-adress
 
-Certifieringen [Certified Senders Alliance](https://certified-senders.org/certification-process/) ger bland annat följande fördelar:
+[Certified Senders Alliance](https://certified-senders.org/certification-process/) Certification erbjuder bland annat följande fördelar:
 
 * Certifiering av avsändare av kommersiella e-postmeddelanden som kan uppfylla höga kvalitetskrav
 * Förbättrad leverans och leverans av kommersiella e-postmeddelanden som ökar inkorgplaceringen och minskar skräppostfiltreringen
