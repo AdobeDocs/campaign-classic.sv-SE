@@ -19,13 +19,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta, se den officiella Apple- [dokumentationen](https://developer.apple.com/) och Android- [dokumentationen](https://developer.android.com/index.html).
+>I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta läser du den officiella Apple [dokumentationen](https://developer.apple.com/) och Android [dokumentationen](https://developer.android.com/index.html).
 
 Avsnitten nedan innehåller information som är specifik för mobilappskanalen.
 
-Global information om hur du skapar en leverans finns i[det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-Med **mobilappskanalen** kan du använda Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Det finns två leveranskanaler:
+Med **Mobile App Channel** kan du använda Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Det finns två leveranskanaler:
 
 * En iOS-kanal som gör att du kan skicka meddelanden till Apple-mobilenheter.
 
@@ -54,9 +54,9 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 >* Varning: I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
 
 
-Arbetsflödet **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
+Arbetsflödet för **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [Handboken för arbetsflöden](../../workflow/using/mobile-app-channel.md).
 
-Adobe Campaign är kompatibelt med både binära och HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+Adobe Campaign är kompatibelt med både binära och HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Datasökväg {#data-path}
 
