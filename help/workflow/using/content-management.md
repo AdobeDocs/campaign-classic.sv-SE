@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Innehållshantering{#content-management}
 
-Med en **innehållshanteringsaktivitet** kan du skapa och ändra ett innehåll och generera filer baserat på det här innehållet. Innehållet kan sedan levereras via en &#39;Delivery&#39;-aktivitet.
+Med en **Content management**-aktivitet kan du skapa och ändra ett innehåll och generera filer baserat på det här innehållet. Innehållet kan sedan levereras via en &#39;Delivery&#39;-aktivitet.
 
 >[!CAUTION]
 >
@@ -37,23 +37,23 @@ Aktivitetens egenskaper är uppdelade i tre steg:
 
    * **[!UICONTROL Specified in the transition]**
 
-      Med det här alternativet kan du använda innehållet som anges i övergången, d.v.s. händelsen som aktiverar innehållshantering måste innehålla en **[!UICONTROL contentId]** variabel. Den här variabeln kan ha angetts av en tidigare innehållshantering eller av ett skript.
+      Med det här alternativet kan du använda innehållet som anges i övergången, d.v.s. händelsen som aktiverar innehållshantering måste innehålla en **[!UICONTROL contentId]**-variabel. Den här variabeln kan ha angetts av en tidigare innehållshantering eller av ett skript.
 
    * **[!UICONTROL Explicit]**
 
-      Med det här alternativet kan du välja innehåll som redan har skapats via **[!UICONTROL Content]** fältet. Det här fältet är bara synligt när du har valt **[!UICONTROL Explicit]** alternativet.
+      Med det här alternativet kan du välja innehåll som redan har skapats via fältet **[!UICONTROL Content]**. Det här fältet visas bara när alternativet **[!UICONTROL Explicit]** är markerat.
 
       ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculated by a script]**
 
-      Innehållsidentifieraren beräknas av ett skript. I **[!UICONTROL Script]** fältet kan du definiera en JavaScript-mall som utvärderar innehållets identifierare (primärnyckel). Det här fältet är bara synligt när du har valt **[!UICONTROL Calculated by a script]** alternativet.
+      Innehållsidentifieraren beräknas av ett skript. I fältet **[!UICONTROL Script]** kan du definiera en JavaScript-mall som utvärderar innehållets identifierare (primärnyckel). Det här fältet visas bara när alternativet **[!UICONTROL Calculated by a script]** är markerat.
 
       ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL New, created from a publication template]**
 
-      Skapar ett nytt innehåll från en publiceringsmall. Det nya innehållet sparas i filen som anges i **[!UICONTROL String]** fältet. I **[!UICONTROL Template]** fältet anges den publiceringsmall som ska användas för att skapa innehållet.
+      Skapar ett nytt innehåll från en publiceringsmall. Det nya innehållet sparas i filen som anges i fältet **[!UICONTROL String]**. Fältet **[!UICONTROL Template]** anger den publiceringsmall som ska användas för att skapa innehållet.
 
       ![](assets/content_mgmt_new.png)
 
@@ -65,7 +65,7 @@ Aktivitetens egenskaper är uppdelade i tre steg:
 
    * **[!UICONTROL Access to data from an XML feed]**
 
-      Med det här alternativet kan du skapa innehåll från ett XML-dokument som hämtats via en XSL-formatmall. När det här alternativet är markerat anger **[!UICONTROL URL]** fältet URL:en för hämtning av XML-innehåll. Här **[!UICONTROL XSL stylesheet]** kan du ange vilken formatmall som ska användas för att omforma det hämtade XML-dokumentet. Den här egenskapen är valfri.
+      Med det här alternativet kan du skapa innehåll från ett XML-dokument som hämtats via en XSL-formatmall. När det här alternativet är markerat anger fältet **[!UICONTROL URL]** URL:en för hämtning av XML-innehåll. Med **[!UICONTROL XSL stylesheet]** kan du ange vilken formatmall som ska användas för att omforma det hämtade XML-dokumentet. Den här egenskapen är valfri.
 
       ![](assets/content_mgmt_xmlcontent.png)
 
@@ -75,7 +75,7 @@ Aktivitetens egenskaper är uppdelade i tre steg:
 
       Med det här alternativet sparas det skapade eller ändrade innehållet.
 
-      Den utgående övergången aktiveras bara en gång, med innehållet sparat i **[!UICONTROL contentId]** variabeln som en parameter.
+      Den utgående övergången aktiveras bara en gång, med innehållet sparat i variabeln **[!UICONTROL contentId]** som en parameter.
 
    * **[!UICONTROL Generate]**
 
@@ -83,13 +83,13 @@ Aktivitetens egenskaper är uppdelade i tre steg:
 
       ![](assets/content_mgmt_generate.png)
 
-      Den utgående övergången aktiveras för varje fil som skapas med identifieraren för det innehåll som sparas i variabeln som dess parameter och filnamnet i **[!UICONTROL contentId]** **[!UICONTROL filename]** variabeln.
+      Den utgående övergången aktiveras för varje fil som skapas med identifieraren för innehållet som sparas i variabeln **[!UICONTROL contentId]** som dess parameter och filnamnet i variabeln **[!UICONTROL filename]**.
 
 ## Indataparametrar {#input-parameters}
 
 * contentId
 
-Identifierare för det innehåll som ska användas om **[!UICONTROL Specified in the transition]** alternativet är aktiverat.
+Identifierare för det innehåll som ska användas om alternativet **[!UICONTROL Specified in the transition]** är aktiverat.
 
 ## Utdataparametrar {#output-parameters}
 
@@ -99,7 +99,7 @@ Identifierare för det innehåll som ska användas om **[!UICONTROL Specified in
 
 * filnamn
 
-   Det fullständiga namnet på den genererade filen om den valda åtgärden är **[!UICONTROL Generate]**.
+   Det genererade filens fullständiga namn om den valda åtgärden är **[!UICONTROL Generate]**.
 
 ## Exempel {#examples}
 
