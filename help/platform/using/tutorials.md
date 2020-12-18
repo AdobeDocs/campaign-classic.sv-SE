@@ -26,8 +26,8 @@ Kom igång med Adobe Campaign genom att läsa våra intuitiva stegvisa guider.
 * [Integrera dynamiskt innehåll i ett e-postmeddelande](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Upptäck grunderna för att komma igång med integrationen mellan Campaign Classic och Target Standard.
 * [Leveranshantering](../../delivery/using/deliverability-key-points.md): Lär dig mer om koncept och bästa metoder för att leverera samt de verktyg som Adobe Campaign Classic erbjuder för att optimera leveransen.
 * [Bästa praxis](../../delivery/using/delivery-best-practices.md): Lär dig mer om de bästa metoderna för leveransdesign och att skicka med Adobe Campaign Classic.
-* [Utföra en bygguppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html): Den här guiden presenterar de viktigaste stegen och de bästa metoderna för att utföra en bygguppgradering med Campaign Classic.
-* [Checklista](https://helpx.adobe.com/se/campaign/kb/acc-security.html)för säkerhetskonfiguration: identifiera nyckelelement för att kontrollera säkerhetskonfigurationen och åtkomsten till driftsättningen på plats
+* [Utföra en bygguppgradering](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html): Den här guiden presenterar de viktigaste stegen och de bästa metoderna för att utföra en bygguppgradering med Campaign Classic.
+* [Checklista](https://helpx.adobe.com/se/campaign/kb/acc-security.html) för säkerhetskonfiguration: identifiera nyckelelement för att kontrollera säkerhetskonfigurationen och åtkomsten till driftsättningen på plats
 
 Läs mer om Adobe Campaign genom att kontrollera följande användningsexempel och exempel:
 
@@ -35,7 +35,7 @@ Läs mer om Adobe Campaign genom att kontrollera följande användningsexempel o
 * [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in): Lär dig hur du skickar en bekräftelsebegäran om prenumeration för att skapa en dubbel anmälan för att se till att mottagaren prenumererar avsiktligt.
 * [Skapa en e-postleverans](../../web/using/use-case--creating-an-email-delivery.md): Lär dig hur du skapar e-postleveranser med Digital Content Editor.
 * [Skapa översikter](../../web/using/use-cases--creating-overviews.md): skapa webbprogram av översiktstyp för att visa alla webbprogram i databasen.
-* [Användningsexempel](../../workflow/using/about-workflow-use-cases.md)för arbetsflöde: hitta olika sätt att använda arbetsflöden med hjälp av de här användningsexemplen.
+* [Användningsexempel](../../workflow/using/about-workflow-use-cases.md) för arbetsflöde: hitta olika sätt att använda arbetsflöden med hjälp av de här användningsexemplen.
 
 ## Självhjälp {#how-to-videos}
 
@@ -47,7 +47,7 @@ Upptäck Adobe Campaign huvudfunktioner inom video. [Läs mer](https://docs.adob
 
 ### Utbildningssessioner och videoklipp
 
-Förutom dessa korta och detaljerade videor kan du hitta [utbildningar](https://learning.adobe.com/catalog.html) och se videor [om](https://www.adobe.com/training/video.html) presentationer av funktioner på Adobe.com.
+Förutom dessa korta och detaljerade videoklipp kan du hitta [kurser](https://learning.adobe.com/catalog.html) och se [presentationsvideor](https://www.adobe.com/training/video.html) på Adobe.com.
 
 ### Experience League-kurser
 
