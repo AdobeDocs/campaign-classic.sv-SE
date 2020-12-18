@@ -62,6 +62,6 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 * Åtkomst till en databasserver på programservern.
 * Brandväggen är konfigurerad att öppna HTTP- (80) eller HTTPS-portar (443) till mittkällservern.
 
-### Installera och konfigurera (driftsättning från mellanleverantörer) {#installing-and-configuring--mid-sourcing-deployment-}
+### Installera och konfigurera (distribuering från mellanleverantörer) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Se [Mid-sourcing-servern](../../installation/using/mid-sourcing-server.md).
+Se [Mid-sourcing-server](../../installation/using/mid-sourcing-server.md).
