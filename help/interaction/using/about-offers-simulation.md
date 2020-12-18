@@ -17,9 +17,9 @@ ht-degree: 5%
 
 # Om att simulera erbjudanden{#about-offers-simulation}
 
-Med modulen **Simulering** kan du testa distributionen av erbjudanden som tillhör en kategori eller en miljö innan du skickar ditt förslag till mottagarna.
+Med modulen **Simulering** kan du testa distributionen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna.
 
-Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare använts för erbjudanden (se [Översikt över](../../interaction/using/offer-catalog-overview.md)erbjudandekatalogen) samt deras presentationsregler (se [Hantera erbjudandepresentation](../../interaction/using/managing-offer-presentation.md)). Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
+Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidigare använts för erbjudanden (se [Översikt över erbjudandekatalogen](../../interaction/using/offer-catalog-overview.md)) samt deras presentationsregler (se [Hantera erbjudandepresentation](../../interaction/using/managing-offer-presentation.md)). Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
 Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande.
 
@@ -29,14 +29,14 @@ Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande.
 
 Så här kör du en simulering av dina erbjudanden:
 
-1. Klicka på **[!UICONTROL Profiles and Targets]** länken i **[!UICONTROL Simulations]** universum och klicka sedan på **[!UICONTROL Create]** knappen.
+1. Klicka på länken **[!UICONTROL Simulations]** i **[!UICONTROL Profiles and Targets]**-universum och klicka sedan på knappen **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
 1. Spara och redigera den simulering du just har skapat.
-1. Gå till **[!UICONTROL Edit]** fliken och ange körningsinställningar.
+1. Gå till fliken **[!UICONTROL Edit]** och ange körningsinställningar.
 
-   For more on this, refer to [Execution settings](../../interaction/using/execution-settings.md).
+   Mer information finns i [Körningsinställningar](../../interaction/using/execution-settings.md).
 
    ![](assets/offer_simulation_003.png)
 
@@ -50,19 +50,19 @@ Så här kör du en simulering av dina erbjudanden:
 
    ![](assets/offer_simulation_004.png)
 
-1. Lägg till rapportaxlar för att förbättra **[!UICONTROL Offer distribution by rank]** rapporten (valfritt).
+1. Lägg till rapporteringsaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
 
-   Mer information finns i [Lägga till rapportaxlar](../../interaction/using/simulation-scope.md#adding-reporting-axes).
+   Mer information finns i [Lägga till rapporteringsaxlar](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
    ![](assets/offer_simulation_005.png)
 
-1. Klicka **[!UICONTROL Save]** för att spela in simuleringsinställningarna.
+1. Klicka på **[!UICONTROL Save]** för att spela in simuleringsinställningarna.
 1. Starta simuleringen via kontrollpanelen.
 
    ![](assets/offer_simulation_006.png)
 
 1. Kontrollera simuleringsresultatet och visa analysrapporten.
 
-   For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+   Mer information finns i [Simuleringsspårning](../../interaction/using/simulation-tracking.md).
 
    ![](assets/offer_simulation_007.png)
