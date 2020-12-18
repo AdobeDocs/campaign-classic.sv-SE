@@ -21,7 +21,7 @@ Om du vill aktivera en anslutning till den externa databasen måste du ange ansl
 
 >[!CAUTION]
 >
->Adobe Campaign-användaren behöver specifika rättigheter för den externa databasen och Adobe Campaign-programservern för att kunna bearbeta data från en extern databas. Mer information finns i avsnittet [Åtkomstbehörighet](../../installation/using/remote-database-access-rights.md) för fjärrdatabas.
+>Adobe Campaign-användaren behöver specifika rättigheter för den externa databasen och Adobe Campaign-programservern för att kunna bearbeta data från en extern databas. Mer information finns i avsnittet [Åtkomst till fjärrdatabas](../../installation/using/remote-database-access-rights.md).
 >
 >För att undvika felfunktioner måste operatorer som har åtkomst till delade fjärrdata arbeta från separata blanksteg.
 
@@ -29,35 +29,35 @@ Om du vill aktivera en anslutning till den externa databasen måste du ange ansl
 
 Om du vill aktivera en anslutning till en delad extern databas kan du komma åt databasen via Adobe Campaign så länge den här anslutningen är aktiv.
 
-1. Konfigurationen måste definieras i förväg via **[!UICONTROL Administration > Platform > External accounts]** noden.
-1. Klicka på **[!UICONTROL New]** knappen och välj **[!UICONTROL External database]** typ.
-1. Definiera den externa databasens **[!UICONTROL Connection]** parametrar.
+1. Konfigurationen måste definieras i förväg via noden **[!UICONTROL Administration > Platform > External accounts]**.
+1. Klicka på knappen **[!UICONTROL New]** och välj typen **[!UICONTROL External database]**.
+1. Definiera den externa databasens **[!UICONTROL Connection]**-parametrar.
 
-   För anslutningar till en **ODBC** -typdatabas måste **[!UICONTROL Server]** fältet innehålla namnet på ODBC-datakällan och inte servernamnet. Dessutom kan vissa ytterligare konfigurationer vara nödvändiga beroende på vilka databaser som används. Se avsnittet [Specifika konfigurationer per databastyp](../../installation/using/configure-fda.md) .
+   För anslutningar till en **ODBC**-typdatabas måste fältet **[!UICONTROL Server]** innehålla namnet på ODBC-datakällan och inte servernamnet. Dessutom kan vissa ytterligare konfigurationer vara nödvändiga beroende på vilka databaser som används. Se avsnittet [Specifika konfigurationer per databastyp](../../installation/using/configure-fda.md).
 
-1. När parametrarna har angetts klickar du på **[!UICONTROL Test the connection]** knappen för att godkänna dem.
+1. När parametrarna har angetts klickar du på **[!UICONTROL Test the connection]** för att godkänna dem.
 
    ![](assets/wf-external-account-create.png)
 
-1. Om det behövs avmarkerar du alternativet för att inaktivera åtkomsten till den här databasen utan att ta bort dess konfiguration. **[!UICONTROL Enabled]**
-1. Om du vill att Adobe Campaign ska kunna komma åt den här databasen måste du distribuera SQL-funktionerna. Klicka på **[!UICONTROL Parameters]** fliken och sedan på **[!UICONTROL Deploy functions]** knappen.
+1. Om det behövs avmarkerar du alternativet **[!UICONTROL Enabled]** för att inaktivera åtkomst till den här databasen utan att ta bort dess konfiguration.
+1. Om du vill att Adobe Campaign ska kunna komma åt den här databasen måste du distribuera SQL-funktionerna. Klicka på fliken **[!UICONTROL Parameters]** och sedan på knappen **[!UICONTROL Deploy functions]**.
 
    ![](assets/wf-external-account-functions.png)
 
-Du kan definiera särskilda arbetstabellutrymmen för tabellerna och för indexet på **[!UICONTROL Parameters]** fliken.
+Du kan definiera särskilda arbetskatalogutrymmen för tabellerna och för indexet på fliken **[!UICONTROL Parameters]**.
 
-## Skapa en tillfällig anslutning {#creating-a-temporary-connection}
+## Skapar en tillfällig anslutning {#creating-a-temporary-connection}
 
-Du kan definiera en anslutning till en extern databas direkt från arbetsflödesaktiviteter. I det här fallet kommer den att finnas i en lokal extern databas som är reserverad för att användas i ett aktuellt arbetsflöde: den sparas inte på externa konton. Den här typen av punktlig anslutning kan skapas för olika aktiviteter i arbetsflödet, särskilt **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]** aktiviteten eller **[!UICONTROL Split]** aktiviteten.
+Du kan definiera en anslutning till en extern databas direkt från arbetsflödesaktiviteter. I det här fallet kommer den att finnas i en lokal extern databas som är reserverad för att användas i ett aktuellt arbetsflöde: den sparas inte på externa konton. Den här typen av punktanslutning kan skapas för olika aktiviteter i arbetsflödet, särskilt **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]**-aktiviteten eller **[!UICONTROL Split]**-aktiviteten.
 
 >[!CAUTION]
 >
->Den här typen av konfiguration rekommenderas inte, men kan användas regelbundet för att samla in data. Du bör ändå skapa ett externt konto, vilket beskrivs i avsnittet [Skapa en delad anslutning](#creating-a-shared-connection) .
+>Den här typen av konfiguration rekommenderas inte, men kan användas regelbundet för att samla in data. Du bör ändå skapa ett externt konto enligt beskrivningen i avsnittet [Skapa en delad anslutning](#creating-a-shared-connection).
 
 I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutning till en extern databas följande:
 
-1. Klicka på **[!UICONTROL Add data...]** och välj **[!UICONTROL External data]** alternativ.
-1. Välj **[!UICONTROL Locally defining the data source]** alternativet.
+1. Klicka på **[!UICONTROL Add data...]** och välj **[!UICONTROL External data]**-alternativen.
+1. Välj alternativet **[!UICONTROL Locally defining the data source]**.
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -75,7 +75,7 @@ I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutni
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klicka på **[!UICONTROL Add]** knappen för att definiera ett eller flera avstämningsfält mellan den externa databasinformationen och data i Adobe Campaign-databasen. Ikonerna **[!UICONTROL Edit expression]** i **[!UICONTROL Remote field]** och **[!UICONTROL Local field]** ger dig tillgång till listan med fält i varje tabell.
+1. Klicka på knappen **[!UICONTROL Add]** för att definiera ett eller flera avstämningsfält mellan den externa databasinformationen och data i Adobe Campaign-databasen. **[!UICONTROL Edit expression]**-ikonerna för **[!UICONTROL Remote field]** och **[!UICONTROL Local field]** ger dig åtkomst till listan med fält i varje tabell.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
@@ -84,7 +84,7 @@ I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutni
 
    ![](assets/wf_add_data_local_external_data_select.png)
 
-   Klicka **[!UICONTROL Finish]** för att bekräfta konfigurationen.
+   Bekräfta konfigurationen genom att klicka på **[!UICONTROL Finish]**.
 
 ## Säker anslutning {#secure-connection}
 
@@ -94,7 +94,7 @@ I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutni
 
 Du kan skydda åtkomsten till en extern databas när du konfigurerar ett externt FDA-konto.
 
-Det gör du genom att lägga till &quot;**:ssl**&quot; efter serveradressen och adressen för den port som används. Till exempel: **192.168.0.52:4501:ssl**.
+Det gör du genom att lägga till &quot;**:ssl**&quot; efter serveradressen och adressen för porten som används. Till exempel: **192.168.0.52:4501:ssl**.
 
 Data skickas sedan via det säkra SSL-protokollet.
 
