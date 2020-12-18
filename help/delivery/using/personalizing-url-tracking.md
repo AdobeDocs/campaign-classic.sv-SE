@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Personalisera URL-spårning{#personalizing-url-tracking}
 
-Avancerade inställningar för meddelandespårning är tillgängliga via **[!UICONTROL Tracking & Images]** ikonen i verktygsfältet i leveransguiden.
+Avancerade inställningar för meddelandespårning är tillgängliga via ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet i leveransguiden.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Du kan konfigurera spårningsalternativen:
 
    >[!CAUTION]
    >
-   >När spårning inte är aktiverat för en leverans (d.v.s. inte **[!UICONTROL Activate tracking]** valt) är rapporter och data som rör spårning inte tillgängliga: Öppnar, snabbklicksrapporter och URL-rapporter för spårning visar inga data och **[!UICONTROL Tracking logs]** flikar visas inte för den här leveransen.
+   >När spårning inte är aktiverat för en leverans (dvs. **[!UICONTROL Activate tracking]**-alternativet är inte valt), rapporter och data som rör spårning är inte tillgängliga: Öppnar, snabbklicksrapporter och URL-rapporter för spårning visar inga data och **[!UICONTROL Tracking logs]** flikar visas inte för den här leveransen.
 
 * Aktivera/inaktivera spårning för meddelande öppnas.
 
