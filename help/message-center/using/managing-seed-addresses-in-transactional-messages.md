@@ -21,7 +21,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av ditt meddelande, s
 
 ## Skapa fröadresser {#creating-a-seed-address}
 
-1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
+1. Klicka på fliken **[!UICONTROL Seed addresses]** i mallen för transaktionsmeddelanden.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -37,12 +37,12 @@ Med en dirigerad adress kan du visa en förhandsgranskning av ditt meddelande, s
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. Infoga testdata (se [personaliseringsdata](../../message-center/using/personalization-data.md)).
+1. Infoga testdata (se [Personaliseringsdata](../../message-center/using/personalization-data.md)).
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Klicka på **[!UICONTROL Add other seed addresses]** länken och sedan på **[!UICONTROL Add]** knappen.
+1. Klicka på länken **[!UICONTROL Add other seed addresses]** och klicka sedan på knappen **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -51,4 +51,4 @@ Med en dirigerad adress kan du visa en förhandsgranskning av ditt meddelande, s
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-När adresserna har skapats kan du visa deras förhandsgranskning och personalisering. Se Förhandsgranska [transaktionsmeddelande](../../message-center/using/transactional-message-preview.md).
+När adresserna har skapats kan du visa deras förhandsgranskning och personalisering. Se [Förhandsgranska transaktionsmeddelande](../../message-center/using/transactional-message-preview.md).
