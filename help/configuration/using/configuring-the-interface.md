@@ -25,11 +25,11 @@ Om du vill visa och öppna en dialogruta med den nya mottagartabellen i Adobe Ca
 
 Adobe Campaign använder den globala variabeln &quot;Nms_DefaultRcpSchema&quot; för att öppna en dialogruta med standardmottagardatabasen (nms:receive). Denna variabel måste därför ändras.
 
-1. Gå till **[!UICONTROL Administration>Platform>Options]** noden för Utforskaren.
+1. Gå till noden **[!UICONTROL Administration>Platform>Options]** i Utforskaren.
 1. Ändra värdet för variabeln **Nms_DefaultRcpSchema** med namnet på schemat som matchar den externa mottagartabellen (i det här fallet: cus:individual).
 1. Spara ändringar.
 
-## Creating a new form {#creating-a-new-form-}
+## Skapa ett nytt formulär {#creating-a-new-form-}
 
 Om du skapar ett nytt formulär kan du visa och redigera data i den externa mottagartabellen.
 
@@ -38,14 +38,14 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 >Formulärets namn måste vara identiskt med namnet på schemat som det gäller.
 
 1. Gå till noden **Administration > Konfiguration > Inmatningsformulär** i Utforskaren.
-1. Skapa en ny **xtk:formulärtyp** **formulärfil** .
+1. Skapa en ny **xtk:form** typ **form**-fil.
 1. Beskriv alla övervakningar och fält som du behöver beroende på tabellmallen.
 
    >[!NOTE]
    >
-   >Mer information om **formulärtypsfiler** finns på [den här sidan](../../configuration/using/identifying-a-form.md).
+   >Mer information om **formulärfiler** finns på [den här sidan](../../configuration/using/identifying-a-form.md).
 
-   I vårt aktuella exempel måste **formulärfilen** baseras på **cus:individual** -schemat och därför ha följande layout:
+   I vårt aktuella exempel måste filen **form** baseras på schemat **cus:individual** och därför ha följande layout:
 
    ```
    <container colspan="2">
@@ -62,17 +62,17 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 
 1. Spara skapelsen.
 
-## Skapa en ny typ av mapp i navigeringshierarkin {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
+## Skapar en ny typ av mapp i navigeringshierarkin {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Go to the **[!UICONTROL Administration>Configuration>Navigation hierarchies]** node.
-1. Skapa ett nytt **xtk:navtree** -typ av **navtree** -dokument.
+1. Gå till noden **[!UICONTROL Administration>Configuration>Navigation hierarchies]**.
+1. Skapa ett nytt **xtk:navtree** typ **navtree**-dokument.
 1. Beskriv alla övervakningar och fält som du behöver beroende på tabellmallen.
 
    >[!NOTE]
    >
-   >Mer information om **navtree** -typfiler finns på [den här sidan](../../configuration/using/about-navigation-hierarchy.md).
+   >Mer information om **navtree**-typfiler finns på [den här sidan](../../configuration/using/about-navigation-hierarchy.md).
 
-   I det aktuella exemplet måste **navtree** -filen baseras på **cus:individual** -schemat och därför ha följande format:
+   I det aktuella exemplet måste filen **navtree** baseras på schemat **cus:individual** och därför ha följande format:
 
    ```
     <model name="root">
