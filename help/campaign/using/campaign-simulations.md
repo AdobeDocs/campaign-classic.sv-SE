@@ -26,30 +26,30 @@ Med simulering kan du övervaka och jämföra effekterna av leveranser.
 >[!NOTE]
 >
 >Leveranser som förberetts i testläge påverkar inte varandra, t.ex. när en kampanj bedöms i distribuerad marknadsföring, eller så länge leveranserna inte är schemalagda i den preliminära kalendern.\
->Detta innebär att tryck- och kapacitetsregler endast tillämpas på leveranser i **[!UICONTROL Target estimation and message personalization]** läge. Leveranser i **[!UICONTROL Estimation and approval of the provisional target]** och i **[!UICONTROL Target evaluation]** läge beaktas inte.\
->Leveransläget väljs på **[!UICONTROL Typology]** underfliken till leveransegenskaperna.
+>Detta innebär att tryck- och kapacitetsregler endast tillämpas på leveranser i **[!UICONTROL Target estimation and message personalization]**-läge. Leveranser i **[!UICONTROL Estimation and approval of the provisional target]** och i **[!UICONTROL Target evaluation]**-läge beaktas inte.\
+>Leveransläget väljs på underfliken **[!UICONTROL Typology]** för leveransegenskaperna.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
 ## Konfigurera en simulering {#setting-up-a-simulation}
 
-### Skapa en simulering {#creating-a-simulation}
+### Skapar en simulering {#creating-a-simulation}
 
 Så här skapar du en simulering:
 
-1. Gå till **[!UICONTROL Campaigns]** universum, klicka på **[!UICONTROL More]** länken i **[!UICONTROL Create]** avsnittet och välj **[!UICONTROL Simulation]** alternativet.
+1. Gå till **[!UICONTROL Campaigns]**-universum, klicka på länken **[!UICONTROL More]** i **[!UICONTROL Create]**-avsnittet och välj alternativet **[!UICONTROL Simulation]**.
 
    ![](assets/simu_campaign_opti_01.png)
 
-1. Ange mallen och namnet på simuleringen. Klicka **[!UICONTROL Save]** för att skapa simuleringen.
+1. Ange mallen och namnet på simuleringen. Klicka på **[!UICONTROL Save]** för att skapa simuleringen.
 
    ![](assets/simu_campaign_opti_02.png)
 
-1. Klicka på **[!UICONTROL Edit]** fliken för att konfigurera den.
+1. Klicka på fliken **[!UICONTROL Edit]** för att konfigurera den.
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. Ange de leveranser du vill använda för den här simuleringen på fliken **[!UICONTROL Scope]** . Det gör du genom att klicka på **[!UICONTROL Add]** knappen och ange leveransvalsläget.
+1. På fliken **[!UICONTROL Scope]** anger du de leveranser du vill ta hänsyn till för den här simuleringen. Det gör du genom att klicka på knappen **[!UICONTROL Add]** och ange det leveransvalsläge som ska beaktas.
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
@@ -57,7 +57,7 @@ Så här skapar du en simulering:
 
    >[!NOTE]
    >
-   >Om du väljer leveranser via en plan, ett program eller en kampanj kan Adobe Campaign automatiskt uppdatera listan med leveranser som ska beaktas när en simulering startas. Markera **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** alternativet om du vill göra det.
+   >Om du väljer leveranser via en plan, ett program eller en kampanj kan Adobe Campaign automatiskt uppdatera listan med leveranser som ska beaktas när en simulering startas. Det gör du genom att markera alternativet **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**.
    >  
    >Om du inte gör detta kommer alla leveranser som inte är tillgängliga i planen, programmet eller kampanjen när simuleringen skapas inte att beaktas: leveranser som läggs till senare ignoreras.
 
@@ -67,21 +67,21 @@ Så här skapar du en simulering:
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   Click **[!UICONTROL Finish]** to approve the selection.
+   Klicka på **[!UICONTROL Finish]** för att godkänna markeringen.
 
    Du kan kombinera utvalda leveranser och leveranser som hör till planer, program eller kampanjer manuellt.
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Om det behövs kan du använda ett dynamiskt villkor via **[!UICONTROL Edit the dynamic condition...]** länken.
+   Om det behövs kan du använda ett dynamiskt villkor via länken **[!UICONTROL Edit the dynamic condition...]**.
 
-   Klicka **[!UICONTROL Save]** för att godkänna konfigurationen.
+   Klicka på **[!UICONTROL Save]** för att godkänna konfigurationen.
 
    >[!NOTE]
    >
-   >Endast leveranser vars mål har beräknats beaktas vid beräkning av simuleringar (status: **Klart** eller **klart att leverera**).
+   >Endast leveranser vars mål har beräknats beaktas vid beräkning av simuleringar (status: **Klart** eller **Klart att leverera**).
 
-1. Välj en analysdimension, t.ex. mottagarschema, på fliken **[!UICONTROL Calculations]** .
+1. På fliken **[!UICONTROL Calculations]** väljer du en analysdimension, till exempel mottagarschemat.
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -93,59 +93,59 @@ Så här skapar du en simulering:
 
 På fliken **[!UICONTROL General]** i simuleringen kan du ange körningsinställningar:
 
-* Med det här alternativet **[!UICONTROL Schedule execution for down-time]** fördröjs simuleringsöppningen till en mindre upptagen tidsperiod, baserat på vald prioritetsnivå. Simuleringar använder stora databasresurser, vilket är orsaken till varför icke-brådskande simuleringar ska schemaläggas att köras på natten, till exempel.
-* Värdet **[!UICONTROL Priority]** är den nivå som används för simuleringen för att fördröja dess utlösande åtgärd.
-* **[!UICONTROL Save SQL queries in the log]**. Med SQL-loggar kan du diagnostisera en simulering om den avslutas med fel. De kan också hjälpa dig att ta reda på varför en simulering är för långsam. Dessa meddelanden visas efter simuleringen på **[!UICONTROL SQL logs]** fliken **[!UICONTROL Audit]** .
+* Alternativet **[!UICONTROL Schedule execution for down-time]** skjuter upp simuleringsöppningen till en mindre upptagen tidsperiod, baserat på vald prioritetsnivå. Simuleringar använder stora databasresurser, vilket är orsaken till varför icke-brådskande simuleringar ska schemaläggas att köras på natten, till exempel.
+* **[!UICONTROL Priority]** är den nivå som används för simuleringen för att fördröja dess utlösare.
+* **[!UICONTROL Save SQL queries in the log]**. Med SQL-loggar kan du diagnostisera en simulering om den avslutas med fel. De kan också hjälpa dig att ta reda på varför en simulering är för långsam. Dessa meddelanden visas efter simuleringen på underfliken **[!UICONTROL SQL logs]** på fliken **[!UICONTROL Audit]**.
 
-## Köra en simulering {#executing-a-simulation}
+## Kör en simulering {#executing-a-simulation}
 
 ### Starta en simulering {#starting-a-simulation}
 
 När simuleringsomfånget har definierats kan du köra det.
 
-Det gör du genom att öppna kontrollpanelen för simulering och klicka på **[!UICONTROL Start simulation]**.
+Det gör du genom att öppna simuleringspanelen och klicka på **[!UICONTROL Start simulation]**.
 
 ![](assets/simu_campaign_opti_start.png)
 
-När körningen är klar öppnar du simuleringen och klickar på **[!UICONTROL Results]** fliken för att visa de mål som beräknats för varje leverans.
+När körningen är klar öppnar du simuleringen och klickar på fliken **[!UICONTROL Results]** för att visa de mål som beräknats för varje leverans.
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. På **[!UICONTROL Deliveries]** underfliken visas alla leveranser som har beaktats vid simuleringen. Den visar två antal:
+1. Underfliken **[!UICONTROL Deliveries]** visar alla leveranser som har beaktats vid simuleringen. Den visar två antal:
 
-   * Målvärdet **[!UICONTROL Initial count]** är det som beräknats vid uppskattningen av leveransen.
-   * Värdet **[!UICONTROL Final count]** är antalet mottagare som räknas efter simulering.
+   * **[!UICONTROL Initial count]** är målet så som det beräknades under uppskattningen av leveransen.
+   * **[!UICONTROL Final count]** är antalet mottagare som räknas efter simulering.
 
       Skillnaden mellan inledande och avslutande antal återspeglar tillämpningen av de olika regler eller filter som konfigurerats före simuleringen.
 
-      Om du vill veta mer om den här beräkningen redigerar du **[!UICONTROL Exclusions]** underfliken.
+      Om du vill veta mer om den här beräkningen kan du redigera underfliken **[!UICONTROL Exclusions]**.
 
-1. På **[!UICONTROL Exclusions]** underfliken kan du visa en exkluderingsbrytning.
+1. Med underfliken **[!UICONTROL Exclusions]** kan du visa undantagsbrytningen.
 
    ![](assets/simu_campaign_opti_14.png)
 
-1. På **[!UICONTROL Alerts]** underfliken grupperas alla varningsmeddelanden som genereras under simuleringen. Varningsmeddelanden kan skickas vid kapacitetsöverbelastning (om antalet mottagare som är mål överstiger den angivna kapaciteten, till exempel).
-1. På **[!UICONTROL Exploration of the exclusions]** underfliken kan du skapa en resultatanalystabell. Användaren måste ange variabler i axeln abscissa/ordinates.
+1. Underfliken **[!UICONTROL Alerts]** grupperar alla varningsmeddelanden som genereras under simuleringen. Varningsmeddelanden kan skickas vid kapacitetsöverbelastning (om antalet mottagare som är mål överstiger den angivna kapaciteten, till exempel).
+1. Med underfliken **[!UICONTROL Exploration of the exclusions]** kan du skapa en resultatanalystabell. Användaren måste ange variabler i axeln abscissa/ordinates.
 
-   Ett exempel på hur du skapar analystabeller finns i slutet av [Utforska resultat](#exploring-results).
+   Ett exempel på hur analystabellen skapas finns i slutet av [Utforska resultat](#exploring-results).
 
 ### Visa resultat {#viewing-results}
 
 #### Granskning {#audit}
 
-På fliken **[!UICONTROL Audit]** kan du övervaka simuleringskörning. Underfliken **[!UICONTROL SQL Logs]** är användbar för expertanvändare. Körningsloggar visas i SQL-format. Dessa loggar visas bara om **[!UICONTROL Save SQL queries in the log]** alternativet har valts på **[!UICONTROL General]** fliken före simuleringskörning.
+På fliken **[!UICONTROL Audit]** kan du övervaka simuleringskörning. Underfliken **[!UICONTROL SQL Logs]** är användbar för expertanvändare. Körningsloggar visas i SQL-format. Dessa loggar visas bara om alternativet **[!UICONTROL Save SQL queries in the log]** har valts på fliken **[!UICONTROL General]** före simuleringskörning.
 
 ![](assets/simu_campaign_opti_11.png)
 
 #### Utforska resultat {#exploring-results}
 
-Med **[!UICONTROL Exploration of the exclusions]** underfliken kan du analysera data som är ett resultat av en simulering.
+Med underfliken **[!UICONTROL Exploration of the exclusions]** kan du analysera data från en simulering.
 
-Beskrivande analys finns i [detta avsnitt](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+Beskrivande analys beskrivs i [det här avsnittet](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 ## Resultat av en simulering {#results-of-a-simulation}
 
-Indikatorerna på flikarna **[!UICONTROL Log]** och **[!UICONTROL Results]** ger en första översikt över simuleringsresultaten. Öppna fliken om du vill få en mer detaljerad resultatvy **[!UICONTROL Reports]** .
+Indikatorerna på flikarna **[!UICONTROL Log]** och **[!UICONTROL Results]** ger en första översikt över simuleringsresultaten. Öppna fliken **[!UICONTROL Reports]** om du vill få en mer detaljerad resultatvy.
 
 ### Rapporter {#reports}
 
@@ -161,11 +161,11 @@ Följande rapporter tillhandahålls som standard:
 >
 >Du kan skapa nya rapporter och lägga till dem i de som erbjuds. Mer information om detta finns i [det här avsnittet](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
-Klicka på länken för målsimuleringen via kontrollpanelen för att få åtkomst till rapporter. **[!UICONTROL Reports]**
+Om du vill få åtkomst till rapporter klickar du på länken **[!UICONTROL Reports]** för målsimuleringen via kontrollpanelen.
 
 ![](assets/campaign_opt_reporting_edit_from_board.png)
 
-Du kan också redigera rapporter med hjälp av den **[!UICONTROL Reports]** länk som du kommer åt från simuleringspanelen.
+Du kan också redigera rapporter med hjälp av länken **[!UICONTROL Reports]** som är tillgänglig från simuleringspanelen.
 
 ### Jämföra simuleringar {#comparing-simulations-}
 
@@ -175,13 +175,13 @@ Om du vill jämföra resultaten måste du använda rapporter. I Adobe Campaign k
 
 **Exempel:**
 
-1. Skapa en simulering av en leverans som typologi **A** tillämpas på.
-1. Redigera en av de tillgängliga rapporterna på **[!UICONTROL Reports]** fliken, t. **[!UICONTROL Detail of simulation exclusions]** ex.
+1. Skapa en simulering för en leverans som typologin **A** tillämpas på.
+1. På fliken **[!UICONTROL Reports]** redigerar du en av de tillgängliga rapporterna, till exempel **[!UICONTROL Detail of simulation exclusions]**.
 1. Klicka på ikonen längst upp till höger i rapporten för att skapa en ny historik.
 
    ![](assets/campaign_opt_reporting_create_hist.png)
 
-1. Stäng simuleringen och ändra konfigurationen för typologi **A**.
+1. Stäng simuleringen och ändra typologikonfigurationen **A**.
 1. Kör simuleringen igen och jämför resultatet med resultatet som visas i rapporten som en historik skapades för.
 
    ![](assets/campaign_opt_reporting_edit_hist.png)
@@ -201,7 +201,7 @@ På fliken **[!UICONTROL Calculations]** kan du definiera rapporteringsaxlar fö
 
 I exemplet nedan vill vi skapa ytterligare en rapporteringsaxel baserat på mottagarnas status (&quot;Kund&quot;,&quot;Prospekt&quot; eller ingen).
 
-1. Om du vill definiera en rapportaxel markerar du tabellen som innehåller den information som ska bearbetas i **[!UICONTROL Analysis dimension]** fältet. Denna information är obligatorisk.
+1. Om du vill definiera en rapportaxel markerar du tabellen som innehåller den information som ska bearbetas i fältet **[!UICONTROL Analysis dimension]**. Denna information är obligatorisk.
 1. Här väljer vi segmentfältet för mottagartabellen.
 
    ![](assets/simu_campaign_opti_09.png)
@@ -220,7 +220,7 @@ I exemplet nedan vill vi skapa ytterligare en rapporteringsaxel baserat på mott
       >
       >Det automatiska sparandet av dessa tabeller kräver en betydande lagringskapacitet: kontrollera att databasen är tillräckligt stor.
 
-När simuleringsresultatet visas, visas informationen om det valda uttrycket på **[!UICONTROL Overlaps]** underfliken.
+När simuleringsresultaten visas visas informationen för det valda uttrycket på underfliken **[!UICONTROL Overlaps]**.
 
 Målöverlapp för leverans anger målmottagarna i minst två leveranser av en simulering.
 
@@ -228,6 +228,6 @@ Målöverlapp för leverans anger målmottagarna i minst två leveranser av en s
 
 >[!NOTE]
 >
->Den här underfliken visas bara om **[!UICONTROL Generate target recovery statistics]** alternativet har aktiverats.
+>Den här underfliken visas bara om alternativet **[!UICONTROL Generate target recovery statistics]** har aktiverats.
 
-Informationen om rapportaxlar kan behandlas i exkluderingsanalysrapporter som skapas på **[!UICONTROL Exploring exclusions]** underfliken. For more on this, refer to [Exploring results](#exploring-results).
+Informationen om rapportaxlar kan behandlas i exkluderingsanalysrapporter som skapas på underfliken **[!UICONTROL Exploring exclusions]**. Mer information finns i [Utforska resultat](#exploring-results).
