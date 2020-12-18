@@ -23,7 +23,7 @@ I Adobe Campaign finns också en importmodul som gör att du kan förse database
 
 >[!NOTE]
 >
->Export och import konfigureras i dedikerade mallar som körs via arbetsflöden via **[!UICONTROL Import]** och **[!UICONTROL Export]** aktiviteter. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Om det behövs kan du skapa en tillfällig import eller export via noden **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** i Adobe Campaign-trädet.
+>Export och import konfigureras i dedikerade mallar som körs via arbetsflöden via aktiviteterna **[!UICONTROL Import]** och **[!UICONTROL Export]**. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. Om det behövs kan du skapa en tillfällig import eller export via noden **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** i Adobe Campaign-trädet.
 
 Du kan:
 
@@ -33,35 +33,35 @@ Du kan:
 
 >[!CAUTION]
 >
->Dataimport i Campaign bör ske via arbetsflöden för att säkra konsekvensen och förbättra effektiviteten. Mer information finns i avsnitten [Importera data](../../workflow/using/importing-data.md), [Importera bästa praxis](../../workflow/using/importing-data.md#best-practices-when-importing-data) och Exempel [på](../../workflow/using/importing-data.md#setting-up-a-recurring-import) importmallar.
+>Dataimport i Campaign bör ske via arbetsflöden för att säkra konsekvensen och förbättra effektiviteten. Mer information finns i avsnitten [Importera data](../../workflow/using/importing-data.md), [Importera metodtips](../../workflow/using/importing-data.md#best-practices-when-importing-data) och [Exempel på importmall](../../workflow/using/importing-data.md#setting-up-a-recurring-import).
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-## Creating a job template {#creating-a-job-template}
+## Skapar en jobbmall {#creating-a-job-template}
 
-Mallar för import och export lagras i Adobe Campaign-trädets **[!UICONTROL Resources > Templates > Job templates]** katalog.
+Import- och exportmallar lagras i katalogen **[!UICONTROL Resources > Templates > Job templates]** i Adobe Campaign-trädet.
 
-Som standard finns det tre importmallar och en exportmall i den här katalogen. De får inte ändras. Du kan duplicera dem för att skapa egna mallar eller skapa en ny mall via menyn **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** .
+Som standard finns det tre importmallar och en exportmall i den här katalogen. De får inte ändras. Du kan duplicera dem för att skapa egna mallar eller skapa en ny mall via menyn **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**.
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-Hur du skapar en processmall beskrivs i [Exportguiden](../../platform/using/exporting-data.md#export-wizard) och [importguiden](../../platform/using/importing-data.md#import-wizard).
+Hur du skapar en processmall beskrivs i [Exportguiden](../../platform/using/exporting-data.md#export-wizard) och [Importguiden](../../platform/using/importing-data.md#import-wizard).
 
 >[!NOTE]
 >
->Den inbyggda mallen **[!UICONTROL Import denylist]** är redan konfigurerad för att importera en lista med e-postadresser som har lagts till i blockeringslista.
+>Den inbyggda mallen **[!UICONTROL Import denylist]** har redan konfigurerats för att importera en lista med e-postadresser som har lagts till i blockeringslista.
 > 
->Med mallarna **[!UICONTROL New text import]** och **[!UICONTROL New text export]** kan du konfigurera en import- eller exportfunktion från grunden.
+>Med hjälp av mallarna **[!UICONTROL New text import]** och **[!UICONTROL New text export]** kan du konfigurera en import- eller exportfunktion från början.
 
 ## Skapa en ny import/export {#creating-a-new-import-export}
 
 När mallen har konfigurerats kan import- och exportåtgärder startas i flera sammanhang i Adobe Campaign.
 
-Alla dessa öppnar [import](../../platform/using/importing-data.md) - eller [exportguiden](../../platform/using/exporting-data.md#export-wizard) .
+Alla dessa öppnar guiden [import](../../platform/using/importing-data.md) eller [export](../../platform/using/exporting-data.md#export-wizard).
 
-* Klicka på **[!UICONTROL Profiles and targets]** länken i delen **[!UICONTROL Jobs]** av arbetsytan i Adobe Campaign: detta tar dig till listan över befintliga importer och exporter.
+* Klicka på länken **[!UICONTROL Jobs]** i **[!UICONTROL Profiles and targets]**-avsnittet på Adobe Campaign-arbetsytan: detta tar dig till listan över befintliga importer och exporter.
 
-   Klicka på **[!UICONTROL Create]** knappen och välj den typ av jobb som du vill utföra.
+   Klicka på knappen **[!UICONTROL Create]** och välj den typ av jobb som du vill utföra.
 
    ![](assets/s_ncs_user_import_from_home.png)
 
@@ -71,7 +71,7 @@ Alla dessa öppnar [import](../../platform/using/importing-data.md) - eller [exp
 
 * Import och export kan också startas från Adobe Campaign Explorer.
 
-   Om du vill exportera/importera data klickar du på **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** noden, sedan på **[!UICONTROL New]** ikonen och väljer **[!UICONTROL Export]** eller **[!UICONTROL Import]**. Då öppnas rätt guide.
+   Om du vill exportera/importera data klickar du på noden **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**, sedan på ikonen **[!UICONTROL New]** och väljer **[!UICONTROL Export]** eller **[!UICONTROL Import]**. Då öppnas rätt guide.
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
@@ -81,10 +81,10 @@ Du kan visa spårningen av körningen i den övre delen av redigeraren. Du kan s
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* På fliken **[!UICONTROL Log]** kan du titta i loggmeddelanden som rör körning.
-* Fliken innehåller de avvisade posterna **[!UICONTROL Rejects]** . Se [Beteende i händelse av ett fel](../../platform/using/importing-data.md#behavior-in-the-event-of-an-error).
+* På fliken **[!UICONTROL Log]** kan du titta i loggmeddelanden om körning.
+* Fliken **[!UICONTROL Rejects]** innehåller de avvisade posterna. Se [Beteende i händelse av ett fel](../../platform/using/importing-data.md#behavior-in-the-event-of-an-error).
 
 >[!NOTE]
 >
->Status för import-/exportjobb anges i [jobbstatus](../../platform/using/importing-data.md#job-statuses).
+>Status för import/export av jobb anges i [Jobbstatus](../../platform/using/importing-data.md#job-statuses).
 
