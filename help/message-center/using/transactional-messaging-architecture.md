@@ -44,7 +44,7 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 >
 >Mer information om nödvändig konfiguration finns i [Använda flera kontrollinstanser](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances).
 
-## Installera instanser {#installing-instances}
+## Installerar instanser {#installing-instances}
 
 Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe för mer information.
 
@@ -54,11 +54,11 @@ Du måste vidta flera försiktighetsåtgärder när du installerar Transactional
 
 Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Se [Lägga till en leveranskanal](#adding-a-delivery-channel).
 
-* Om du vill installera kontrollinstansen på datorn väljer du **[!UICONTROL Transactional message control]** modulen.
+* Om du vill installera kontrollinstansen på datorn väljer du modulen **[!UICONTROL Transactional message control]**.
 
    ![](assets/messagecenter_install_controlinstance_001.png)
 
-* Om du vill installera körningsinstansen på datorn väljer du **[!UICONTROL Transactional message execution]** modulen.
+* Om du vill installera körningsinstansen på datorn väljer du modulen **[!UICONTROL Transactional message execution]**.
 
    ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -66,9 +66,9 @@ Om du behöver använda flera kanaler måste du installera och konfigurera relat
 
 Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras innan du installerar Transactional-meddelandepaketet. Om du har startat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan bestämmer dig under projektet för att lägga till en ny kanal måste du följa dessa steg:
 
-1. Installera den kanal du behöver, till exempel **mobilkanalen**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
-1. Utför en filimport ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) och markera filen ****`[Your language]`**datanmspackemessageCenter.xml** .
-1. I **[!UICONTROL XML content of the data to import]** behålls bara den leveransmall som motsvarar den tillagda kanalen. Om du till exempel har lagt till **mobilkanalen** ska du bara behålla **enhetselementet** som motsvarar **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **mobilappskanalen** ska du bara behålla **iOS-transaktionsmeddelandet** (iosTriggerMessage) och **Android-transaktionsmeddelandet** (androidTriggerMessage).
+1. Installera den kanal du behöver, till exempel **Mobile channel**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
+1. Utför en filimport ( **[!UICONTROL Tools > Advanced > Import package... > File]**) och välj filen **datakitnms **`[Your language]`**packageCenter.xml**.
+1. I **[!UICONTROL XML content of the data to import]** ska du bara behålla den leveransmall som motsvarar den tillagda kanalen. Om du till exempel har lagt till **mobilkanalen** ska du bara behålla elementet **entities** som motsvarar **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **Mobile App Channel** ska du bara behålla **transaktionsmeddelandet** (iosTriggerMessage) och **transaktionsmeddelandet för Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -117,13 +117,13 @@ I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skick
 
 Om du vill använda transaktionsmeddelandemoduler med Mobile App Channel måste du använda följande konfigurationer:
 
-1. Installera paketet **Mobile App Channel** på instanser för kontroll och körning.
-1. Replikera Adobe Campaign-tjänsten av **mobilprogramstypen** samt de mobilprogram som den innehåller i körningsinstanserna.
+1. Installera **Mobile App Channel**-paketet på kontroll- och körningsinstanserna.
+1. Replikera **Mobile-programmet**-typen av Adobe Campaign-tjänst samt de mobilprogram som den innehåller i körningsinstanserna.
 
 Händelsen måste innehålla följande element:
 
 * Mobilenhets-ID (**registrationId** för Android och **deviceToken** för iOS). Detta ID representerar den adress som meddelandet ska skickas till.
-* Länken till mobilprogrammet eller integreringsnyckeln (**uuid**) som gör att du kan återställa anslutningsinformation som är specifik för programmet.
+* Länken till mobilprogrammet eller integreringsnyckeln (**uid**) som gör att du kan återställa anslutningsinformation som är specifik för programmet.
 * Den kanal som meddelandet ska skickas till (**önskadKanal**): 41 för iOS och 42 för Android
 * Alla data är användbara för personalisering
 
@@ -158,23 +158,23 @@ Här är ett exempel på en händelse som innehåller den här informationen:
 
 I kombination med LINE Channel kan du med transaktionsmeddelanden skicka meddelanden i realtid på LINE-appen som är installerad på konsumentmobilenheter. Detta används för att skicka välkomstmeddelandet när en LINE-användare lägger till varumärkets sida.
 
-Om du vill använda transaktionsmeddelandemodulen med LINE behövs följande element för konfigurationen på din **marknadsföringsinstans** och din **körningsinstans** :
+Om du vill använda transaktionsmeddelandemodulen med LINE behöver du följande element för konfigurationen på din **marketing**-instans och din **exekvering**-instans:
 
-* Installera paketet på båda instanserna **[!UICONTROL LINE Connect]** .
-* Installera paketet på din marknadsinstans och **[!UICONTROL Transactional message control]** paketet på körningsinstansen **[!UICONTROL Transactional message execution]** .
-* Skapa ett **externt LINE-konto** och en **tjänst** på båda instanserna med samma namn som de ska synkroniseras med. Mer information om hur du skapar ett externt LINE-konto och -tjänst finns på den här [sidan](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
+* Installera **[!UICONTROL LINE Connect]**-paketet på båda instanserna.
+* Installera **[!UICONTROL Transactional message control]**-paketet på din marknadsinstans och **[!UICONTROL Transactional message execution]**-paketet på körningsinstansen.
+* Skapa en LINE **extern konto** och **tjänst** för båda instanserna med samma namn för att de ska synkroniseras. Mer information om hur du skapar ett externt LINE-konto och -tjänst finns på den här [sidan](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
 
-Från **[!UICONTROL Explorer]** , i **[!UICONTROL Platform]** > **[!UICONTROL External account]** , måste du sedan konfigurera olika externa konton för båda instanserna:
+Från **[!UICONTROL Explorer]**, i **[!UICONTROL Platform]** > **[!UICONTROL External account]**, måste du sedan konfigurera olika externa konton för båda instanserna:
 
-1. Skapa ett **[!UICONTROL External database]** externt konto i din **körningsinstans** med följande konfiguration:
+1. Skapa ett externt **[!UICONTROL External database]**-konto i din **exekvering**-instans med följande konfiguration:
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** och **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
-   * **[!UICONTROL Type]** : välj **[!UICONTROL External database]** .
+   * **[!UICONTROL Label]** och  **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
+   * **[!UICONTROL Type]** : välj  **[!UICONTROL External database]** .
    * **[!UICONTROL Enabled]** måste vara markerad.
 
-   Från **[!UICONTROL Connection]** kategorin:
+   Från kategorin **[!UICONTROL Connection]**:
 
    * **[!UICONTROL Type]** : välj databasserver, t.ex. PostgresSQL.
    * **[!UICONTROL Server]** : ange URL:en för databasservern.
@@ -189,43 +189,43 @@ Från **[!UICONTROL Explorer]** , i **[!UICONTROL Platform]** > **[!UICONTROL Ex
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** måste vara markerad.
 
 
-1. Skapa ett **[!UICONTROL External Database]** konto i din **marknadsföringsinstans** med följande konfiguration.
+1. Skapa ett **[!UICONTROL External Database]**-konto i din **Marketing**-instans med följande konfiguration.
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** och **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
-   * **[!UICONTROL Type]** : välj **[!UICONTROL External database]** .
+   * **[!UICONTROL Label]** och  **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
+   * **[!UICONTROL Type]** : välj  **[!UICONTROL External database]** .
    * Rutan Aktiverad måste vara markerad.
 
-   Från **[!UICONTROL Connection]** kategorin:
+   Från kategorin **[!UICONTROL Connection]**:
 
-   * **[!UICONTROL Type]** : välj **[!UICONTROL HTTP relay to remote Database]** .
+   * **[!UICONTROL Type]** : välj  **[!UICONTROL HTTP relay to remote Database]** .
    * **[!UICONTROL Server]** : Ange kampanjens server-URL för körningsinstansen.
    * **[!UICONTROL Account]** : Ange kontot som används för att komma åt din körningsinstans.
    * **[!UICONTROL Password]** : Ange lösenordet för kontot som används för att komma åt din körningsinstans.
-   * **[!UICONTROL Data Source]** : ange följande syntax **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** : ange följande syntax  **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
 
 
-1. Skapa ett **[!UICONTROL Execution instance]** externt konto i din **marknadsföringsinstans** med följande konfiguration för att skapa arbetsflödet för datasynkronisering:
+1. Skapa ett externt **[!UICONTROL Execution instance]**-konto i din **Marketing**-instans med följande konfiguration för att skapa arbetsflödet för datasynkronisering:
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** och **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
-   * **[!UICONTROL Type]** : välj **[!UICONTROL Execution instance]** .
+   * **[!UICONTROL Label]** och  **[!UICONTROL Internal name]** : namnge ditt externa konto efter behov.
+   * **[!UICONTROL Type]** : välj  **[!UICONTROL Execution instance]** .
    * Rutan Aktiverad måste vara markerad.
 
-   Från **[!UICONTROL Connection]** kategorin:
+   Från kategorin **[!UICONTROL Connection]**:
 
    * **[!UICONTROL URL]** : ange körningsinstansens URL.
    * **[!UICONTROL Account]** : ange det konto som används för att komma åt din körningsinstans.
    * **[!UICONTROL Password]** : Ange lösenordet för kontot som används för att komma åt din körningsinstans.
 
-   Från **[!UICONTROL Account connection method]** kategorin:
+   Från kategorin **[!UICONTROL Account connection method]**:
 
-   * **[!UICONTROL Method]** : välj **[!UICONTROL Federated Data Access (FDA)]** .
+   * **[!UICONTROL Method]** : välj  **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : välj ditt FDA-konto i listrutan.
    * Klicka på knappen **[!UICONTROL Create the archiving workflow]**.
-   * Klicka på **[!UICONTROL Create data synchronization workflow]** knappen för att skapa arbetsflödet för LINE-datasynkronisering.
+   * Klicka på knappen **[!UICONTROL Create data synchronization workflow]** för att skapa arbetsflödet för synkronisering av LINE-data.
 
 
 
