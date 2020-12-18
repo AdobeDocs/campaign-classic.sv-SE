@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -23,17 +23,17 @@ Som regel måste du installera motsvarande klientlager på den externa databasen
 
 >[!NOTE]
 >
->Kompatibla versioner visas i [Campaign-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+>Kompatibla versioner listas i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
 
 
 ## Konfigurationssteg {#fda-configuration-steps}
 
 Så här ställer du in åtkomst till en extern databas med FDA:
 
-1. Installera de drivrutiner som motsvarar din databas på Adobe Campaign-servern. Drivrutiner listas på de databasspecifika sidorna [som listas nedan](#fda-specific-configuration).
-1. [Skapa och konfigurera ett externt konto](../../installation/using/connecting-to-database.md) som gör att du kan upprätta en anslutning mellan Adobe Campaign och den externa databasen. Mer information om externa konton i Campaign finns på [den här sidan](../../installation/using/external-accounts.md).
-1. [Skapa schemat](../../installation/using/creating-data-schema.md) för den externa databasen i Adobe Campaign. På så sätt kan du känna igen den externa databasens datastruktur.
-1. Om det behövs [skapar du en ny målmappning](../../installation/using/defining-data-mapping.md) från det schema som skapades tidigare. Detta är nödvändigt om mottagarna av leveranserna kommer från den externa databasen. Den här implementeringen har begränsningar som rör meddelandepersonalisering.
+1. Installera de drivrutiner som motsvarar din databas på Adobe Campaign-servern. Drivrutiner visas på de databasspecifika sidorna [som listas nedan](#fda-specific-configuration).
+1. [Skapa och konfigurera ett externt ](../../installation/using/connecting-to-database.md) konto som gör att du kan upprätta en anslutning mellan Adobe Campaign och den externa databasen. Mer information om externa konton i Campaign finns på [den här sidan](../../installation/using/external-accounts.md).
+1. [Skapa ](../../installation/using/creating-data-schema.md) schemat för den externa databasen i Adobe Campaign. På så sätt kan du känna igen den externa databasens datastruktur.
+1. Om det behövs skapar [du en ny målmappning](../../installation/using/defining-data-mapping.md) från det schema som skapades tidigare. Detta är nödvändigt om mottagarna av leveranserna kommer från den externa databasen. Den här implementeringen har begränsningar som rör meddelandepersonalisering.
 
 När dataschemat har skapats kan data bearbetas i Adobe Campaign arbetsflöden. Mer information om detta finns i [det här avsnittet](../../workflow/using/accessing-an-external-database--fda-.md).
 
