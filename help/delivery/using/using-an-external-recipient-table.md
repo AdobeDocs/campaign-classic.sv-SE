@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # Använda en extern mottagartabell{#using-an-external-recipient-table}
 
-Om leveranstabellen är en extern tabell måste du göra ytterligare konfigurationer. Schemat måste utökas **[!UICONTROL nms:seedmember]** . En flik läggs till i startadresserna för att definiera fälten enligt nedan:
+Om leveranstabellen är en extern tabell måste du göra ytterligare konfigurationer. Schemat **[!UICONTROL nms:seedmember]** måste utökas. En flik läggs till i startadresserna för att definiera fälten enligt nedan:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
