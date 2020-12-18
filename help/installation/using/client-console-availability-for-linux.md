@@ -17,4 +17,4 @@ ht-degree: 29%
 
 # Klientkonsolens tillgänglighet för Linux{#client-console-availability-for-linux}
 
-För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen. Mer information finns i Tillgänglighet för [klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md).
+För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen. Mer information finns i [Tillgänglighet för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md).
