@@ -23,9 +23,9 @@ Med Adobe Campaign kan du exportera eller importera plattformskonfigurationen oc
 
 Med datapaket kan enheter i databasen i Adobe Campaign visas via filer i XML-format. Varje entitet i ett paket representeras med alla dess data.
 
-The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. Lär dig hur du underhåller en konsekvent uppsättning datapaket i det här [avsnittet](#data-package-best-practices).
+Principen med **datapaket** är att exportera en datakonfiguration och integrera den i ett annat Adobe Campaign-system. Lär dig hur du upprätthåller en konsekvent uppsättning datapaket i det här [avsnittet](#data-package-best-practices).
 
-### Typ av paket {#types-of-packages}
+### Typer av paket {#types-of-packages}
 
 Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket och administratörspaket.
 
@@ -40,11 +40,11 @@ Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket
 
 >[!CAUTION]
 >
->Typerna **Plattform** och **Administratör** innehåller en fördefinierad lista över enheter som ska exporteras. Varje entitet är länkad till filtervillkor som gör att du kan ta bort de färdiga resurserna i det skapade paketet.
+>Typerna **platform** och **admin** innehåller en fördefinierad lista med enheter som ska exporteras. Varje entitet är länkad till filtervillkor som gör att du kan ta bort de färdiga resurserna i det skapade paketet.
 
 ## Datastruktur {#data-structure}
 
-Beskrivningen av ett datapaket är ett strukturerat XML-dokument som överensstämmer med grammatiken i **xrk:navtree** -dataschemat.
+Beskrivningen av ett datapaket är ett strukturerat XML-dokument som är kompatibelt med grammatiken i dataschemat **xrk:navtree**.
 
 Exempel på datapaket:
 
@@ -64,11 +64,11 @@ Exempel på datapaket:
 </package>
 ```
 
-XML-dokumentet måste börja och sluta med **`<package>`** -elementet. Alla **`<entities>`** element som följer distribuerar data efter dokumenttyp.
+XML-dokumentet måste börja och sluta med elementet **`<package>`**. Alla **`<entities>`**-element som följer distribuerar data efter dokumenttyp.
 
-Ett **`<entities>`** element innehåller data från paketet i det format som datarammet som anges i **schemaattributet** .
+Ett **`<entities>`**-element innehåller paketets data i det format som datarammet som anges i attributet **schema**.
 
-Data i ett paket får inte innehålla interna nycklar som inte är kompatibla mellan baser, t.ex. autogenererade nycklar (**autopk** -alternativ).
+Data i ett paket får inte innehålla interna nycklar som inte är kompatibla mellan baser, t.ex. autogenererade nycklar (**autopk**-alternativ).
 
 I det här exemplet har kopplingarna på länkarna &quot;mapp&quot; och &quot;företag&quot; ersatts med så kallade &quot;hög nivå&quot; i måltabellerna:
 
@@ -89,15 +89,15 @@ Ett datapaket kan skapas manuellt från valfri textredigerare. Se bara till att 
 
 Paket kan exporteras på tre olika sätt:
 
-* Med den här funktionen kan du **[!UICONTROL Package Export Wizard]** exportera en uppsättning objekt i ett enda paket. Mer information finns i [Exportera en uppsättning objekt i ett paket](#exporting-a-set-of-objects-in-a-package)
+* Med **[!UICONTROL Package Export Wizard]** kan du exportera en uppsättning objekt i ett enskilt paket. Mer information finns i [Exportera en uppsättning objekt i ett paket](#exporting-a-set-of-objects-in-a-package)
 * Ett **enskilt objekt** kan exporteras direkt i ett paket genom att högerklicka på det och välja **[!UICONTROL Actions > Export in a package]**.
-* **Med paketdefinitioner** kan du skapa en paketstruktur där du lägger till objekt som ska exporteras senare i ett paket. Mer information finns i [Hantera paketdefinitioner](#managing-package-definitions)
+* **Paketdefinition** gör att du kan skapa en paketstruktur där du lägger till objekt som ska exporteras senare i ett paket. Mer information finns i [Hantera paketdefinitioner](#managing-package-definitions)
 
 När ett paket har exporterats kan du importera det och alla tillagda enheter till en annan Campaign-instans.
 
 ### Exportera en uppsättning objekt i ett paket {#exporting-a-set-of-objects-in-a-package}
 
-Guiden för paketexport är tillgänglig via **[!UICONTROL Tools > Advanced > Export package...]** menyn i Adobe Campaign klientkonsol.
+Guiden för paketexport är tillgänglig via menyn **[!UICONTROL Tools > Advanced > Export package...]** i Adobe Campaign klientkonsol.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -109,15 +109,15 @@ För de tre typerna av paket innehåller guiden följande steg:
 
    >[!CAUTION]
    >
-   >Om du exporterar en **[!UICONTROL Offer category]**-, **[!UICONTROL Offer environment]****[!UICONTROL Program]** - eller **[!UICONTROL Plan]** typmapp ska du aldrig markera mappen **xtk:folder** eftersom du kan förlora vissa data. Välj den enhet som motsvarar mappen: **nms:offerCategory** för erbjudandekategorier, **nms:offerEnv** för erbjudandemiljöer, **nms:program** för program och **nms:plan** för planer.
+   >Om du exporterar en **[!UICONTROL Offer category]**-, **[!UICONTROL Offer environment]**-, **[!UICONTROL Program]**- eller **[!UICONTROL Plan]**-typmapp ska du aldrig markera **xtk:folder** eftersom du kan förlora vissa data. Välj den enhet som motsvarar mappen: **nms:offerCategory** för erbjudandekategorier, **nms:offerEnv** för erbjudandemiljöer, **nms:program** för program och **nms:plan** för planer.
 
-   Med listhantering kan du lägga till eller ta bort enheter för export från konfigurationen. Klicka **[!UICONTROL Add]** för att välja en ny enhet.
+   Med listhantering kan du lägga till eller ta bort enheter för export från konfigurationen. Klicka på **[!UICONTROL Add]** för att välja en ny entitet.
 
    Knappen **[!UICONTROL Detail]** redigerar den valda konfigurationen.
 
    >[!NOTE]
    >
-   >Beroendemekanismen styr entitetens exportsekvens. For more on this, refer to [Managing dependencies](#managing-dependencies).
+   >Beroendemekanismen styr entitetens exportsekvens. Mer information finns i [Hantera beroenden](#managing-dependencies).
 
 1. Enhetskonfigurationsskärmen definierar filterfrågan för den typ av dokument som ska extraheras.
 
@@ -129,7 +129,7 @@ För de tre typerna av paket innehåller guiden följande steg:
    >
    >Frågeredigeraren visas i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
 
-1. Klicka på **[!UICONTROL Next]** och markera sorteringskolumnerna för att ordna data under extraheringen:
+1. Klicka på **[!UICONTROL Next]** och välj sorteringskolumner för att sortera data under extraheringen:
 
    ![](assets/ncs_datapackage_export5.png)
 
@@ -137,7 +137,7 @@ För de tre typerna av paket innehåller guiden följande steg:
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. På den sista sidan i guiden för paketexport kan du starta exporten. Data lagras i den fil som anges i **[!UICONTROL File]** fältet.
+1. På den sista sidan i guiden för paketexport kan du starta exporten. Data lagras i den fil som anges i fältet **[!UICONTROL File]**.
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -147,8 +147,8 @@ Med exportfunktionen kan Adobe Campaign spåra länkarna mellan de olika exporte
 
 Den här mekanismen definieras av två regler:
 
-* objekt som är länkade till en länk med en **egen** eller **egen** textintegritet exporteras i samma paket som det exporterade objektet.
-* objekt som är länkade till en länk med en **neutral** eller **definierad** textintegritet (definierad länk) måste exporteras separat.
+* objekt som är länkade till en länk med en **egen** eller **egen**-typintegritet exporteras i samma paket som det exporterade objektet.
+* objekt som är länkade till en länk med en **neutral** eller **definition**-typintegritet (definierad länk) måste exporteras separat.
 
 >[!NOTE]
 >
@@ -205,14 +205,14 @@ label="" name="" namespace="" vendor="">
 </package>   
 ```
 
-Anslutning till en typ av paket definieras i ett schema med attributen **@pkgAdmin och @pkgPlatform** . Båda dessa attribut får ett XTK-uttryck som definierar villkoren för anslutning till paketet.
+Anslutning till en typ av paket definieras i ett schema med attributen **@pkgAdmin och @pkgPlatform**. Båda dessa attribut får ett XTK-uttryck som definierar villkoren för anslutning till paketet.
 
 ```
 <element name="offerEnv" img="nms:offerEnv.png" 
 template="xtk:folder" pkgAdmin="@id != 0">
 ```
 
-Slutligen kan du med **@pkgStatus** -attributet definiera exportreglerna för dessa element eller attribut. Beroende på attributets värde finns elementet eller attributet i det exporterade paketet. De tre möjliga värdena för det här attributet är:
+Slutligen kan du med attributet **@pkgStatus** definiera exportreglerna för dessa element eller attribut. Beroende på attributets värde finns elementet eller attributet i det exporterade paketet. De tre möjliga värdena för det här attributet är:
 
 * **aldrig**: exporterar inte fältet/länken
 * **always**: tvingar export för det här fältet
@@ -235,11 +235,11 @@ Med paketdefinitioner kan du skapa en paketstruktur där du lägger till entitet
 * [Konfigurera generering av paketdefinitioner](#configuring-package-definitions-generation)
 * [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)
 
-### Creating a package definition {#creating-a-package-definition}
+### Skapa en paketdefinition {#creating-a-package-definition}
 
-Du kommer åt paketdefinitioner på **[!UICONTROL Administration > Configuration > Package management > Package definitions]** menyn.
+Paketdefinitioner finns på **[!UICONTROL Administration > Configuration > Package management > Package definitions]**-menyn.
 
-Om du vill skapa en paketdefinition klickar du på **[!UICONTROL New]** knappen och fyller sedan i den allmänna paketdefinitionsinformationen.
+Om du vill skapa en paketdefinition klickar du på knappen **[!UICONTROL New]** och fyller sedan i den allmänna paketdefinitionsinformationen.
 
 ![](assets/packagedefinition_create.png)
 
@@ -251,34 +251,34 @@ Du kan sedan lägga till enheter i paketdefinitionen och exportera den till ett 
 * [Konfigurera generering av paketdefinitioner](#configuring-package-definitions-generation)
 * [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)
 
-### Lägga till enheter i en paketdefinition {#adding-entities-to-a-package-definition}
+### Lägga till entiteter i en paketdefinition {#adding-entities-to-a-package-definition}
 
-Klicka på **[!UICONTROL Content]** knappen på fliken **[!UICONTROL Add]** för att markera de enheter som ska exporteras med paketet. De bästa sätten att välja enheter visas i avsnittet [Exportera en uppsättning objekt i ett paketavsnitt](#exporting-a-set-of-objects-in-a-package) .
+På fliken **[!UICONTROL Content]** klickar du på knappen **[!UICONTROL Add]** för att markera de enheter som ska exporteras med paketet. De bästa sätten att välja enheter visas i avsnittet [Exportera en uppsättning objekt i ett paket](#exporting-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
 Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen. Följ stegen nedan för att göra detta:
 
-1. Högerklicka på önskad enhet och välj sedan **[!UICONTROL Actions > Export in a package]**.
+1. Högerklicka på önskad entitet och välj sedan **[!UICONTROL Actions > Export in a package]**.
 
    ![](assets/packagedefinition_singleentity.png)
 
-1. Markera **[!UICONTROL Add to a package definition]** och välj sedan den paketdefinition som du vill lägga till enheten i.
+1. Välj **[!UICONTROL Add to a package definition]** och välj sedan den paketdefinition som du vill lägga till entiteten i.
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. Entiteten läggs till i paketdefinitionen, den exporteras med paketet (se [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)).
+1. Entiteten läggs till i paketdefinitionen. Den exporteras med paketet (se [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)).
 
    ![](assets/packagedefinition_entityadded.png)
 
-### Konfigurera generering av paketdefinitioner {#configuring-package-definitions-generation}
+### Konfigurerar generering av paketdefinitioner {#configuring-package-definitions-generation}
 
-Paketgenerering kan konfigureras på **[!UICONTROL Content]** fliken Paketdefinition. Klicka på **[!UICONTROL Generation parameters]** länken om du vill göra det.
+Paketgenerering kan konfigureras från fliken för paketdefinitionen **[!UICONTROL Content]**. Det gör du genom att klicka på länken **[!UICONTROL Generation parameters]**.
 
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Include the definition]**: innehåller den definition som för närvarande används i paketdefinitionen.
-* **[!UICONTROL Include an installation script]**: I kan du lägga till ett javascript-skript som ska köras vid paketimporten. När du väljer det här alternativet läggs en **[!UICONTROL Script]** flik till på paketdefinitionsskärmen.
+* **[!UICONTROL Include an installation script]**: I kan du lägga till ett javascript-skript som ska köras vid paketimporten. När du väljer det här alternativet läggs en **[!UICONTROL Script]**-flik till på paketdefinitionsskärmen.
 * **[!UICONTROL Include default values]**: lägger till värdena för alla entiteters attribut i paketet.
 
    Det här alternativet är inte markerat som standard för att undvika långa exporter. Det innebär att entiteternas attribut med standardvärden (tom sträng, 0 och false om de inte definieras på annat sätt i schemat) inte läggs till i paketet och därför inte exporteras.
@@ -289,25 +289,25 @@ Paketgenerering kan konfigureras på **[!UICONTROL Content]** fliken Paketdefini
    >
    >Om instansen som paketet importeras till innehåller entiteter som är identiska med de i paketet (till exempel med samma externa ID) uppdateras inte deras attribut. Detta kan inträffa om attributen från den tidigare instansen har standardvärden eftersom de inte ingår i paketet.
    >
-   >Om du väljer det här alternativet **[!UICONTROL Include default values]** förhindrar du att versionerna sammanfogas, eftersom alla attribut från den tidigare instansen exporteras med paketet.
+   >Om du i så fall väljer alternativet **[!UICONTROL Include default values]** förhindras versionssammanslagning, eftersom alla attribut från den tidigare instansen exporteras med paketet.
 
 ### Exportera paket från en paketdefinition {#exporting-packages-from-a-package-definition}
 
 Om du vill exportera ett paket från en paketdefinition följer du stegen nedan:
 
-1. Markera den paketdefinition som ska exporteras, klicka sedan på **[!UICONTROL Actions]** -knappen och välj **[!UICONTROL Export the package]**.
+1. Markera den paketdefinition som ska exporteras, klicka sedan på knappen **[!UICONTROL Actions]** och välj **[!UICONTROL Export the package]**.
 1. En XML-fil som motsvarar det exporterade paketet markeras som standard. Det namnges enligt paketdefinitionens namnutrymme och namn.
-1. När paketnamnet och platsen har definierats klickar du på **[!UICONTROL Start]** knappen för att starta exporten.
+1. När paketnamnet och platsen har definierats klickar du på knappen **[!UICONTROL Start]** för att starta exporten.
 
    ![](assets/packagedefinition_packageexport.png)
 
-## Importera paket {#importing-packages}
+## Importerar paket {#importing-packages}
 
 ### Om paketimport {#about-package-import}
 
 Guiden för paketimport är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Package import...]** i Adobe Campaign klientkonsol.
 
-Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans, eller ett [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), beroende på villkoren i din licens.
+Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans, eller ett [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), beroende på villkoren för din licens.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -319,7 +319,7 @@ Om du vill importera ett befintligt datapaket markerar du XML-filen och klickar 
 
 Innehållet i det paket som ska importeras visas sedan i mitten av redigeraren.
 
-Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** starta importen.
+Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** för att starta importen.
 
 ![](assets/ncs_datapackage_import_2.png)
 
@@ -329,7 +329,7 @@ Standardpaket är inbyggda paket som installeras när Adobe Campaign konfigurera
 
 Se licensavtalet för att se vilka paket du kan installera.
 
-For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
+Mer information om inbyggda paket finns på [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Bästa praxis för datapaket {#data-package-best-practices}
 
@@ -396,7 +396,7 @@ Därför rekommenderar vi att du skapar ett uppdateringspaket som bara innehåll
 
 En uppdatering kan inte bara vara en korrigering, utan även ett nytt element i ditt enhets-/funktions-/kampanjpaket. Du kan undvika att distribuera hela paketet genom att exportera ett uppdateringspaket.
 
-### Namnkonventioner {#data-package-naming}
+### Namngivningskonventioner {#data-package-naming}
 
 Nu när typerna är definierade bör vi ange en namnkonvention. Adobe Campaign tillåter inte att du skapar undermappar för paketspecifikationer, vilket innebär att tal är den bästa lösningen för att hålla ordning. Numreringsprefixpaketnamn. Du kan använda följande konvention:
 
@@ -423,7 +423,7 @@ För att underlätta importen bör entitetspaketen sorteras när de importeras. 
 >
 >Forms bör endast importeras efter schemauppdateringar.
 
-#### Package 200 {#package-200}
+#### Paket 200 {#package-200}
 
 Paketnummer 200 ska inte användas för en viss kampanj: det här numret kommer att användas för att uppdatera något som gäller alla kampanjer.
 
