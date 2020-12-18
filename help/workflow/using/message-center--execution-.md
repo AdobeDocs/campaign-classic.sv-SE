@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Meddelandecenter (köra){#message-center-execution}
 
-De arbetsflöden som beskrivs nedan installeras som standard med **modulen Meddelandecenter - Körning** . For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+De arbetsflöden som beskrivs nedan installeras som standard med modulen **Message Center - Execution**. Mer information om den här modulen finns i [avsnittet](../../message-center/using/about-transactional-messaging.md).
 
 Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Meddelandecenter finns på [den här sidan](../../message-center/using/technical-workflows.md).
 
@@ -38,7 +38,7 @@ Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Medde
      <li> <p><strong>Skickat</strong>: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</p> </li> 
      <li> <p><strong>Ignoreras av leveransen</strong>: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</p> </li> 
      <li> <p><strong>Leveransfel</strong>: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</p> </li> 
-     <li> <p><strong>Händelsen omfattas</strong>inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</p> </li> 
+     <li> <p><strong>Händelsen omfattas</strong> inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
