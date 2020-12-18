@@ -17,7 +17,7 @@ ht-degree: 26%
 
 # Kontroll över erbjudandemotor{#control-of-offer-engine}
 
-Arbetsflödet som beskrivs nedan installeras som standard med **erbjudandemotorn** Control med körningsinstansmodulen.
+Arbetsflödet som beskrivs nedan installeras som standard med **kontrollen av erbjudandemotorn med körningsinstansen**-modulen.
 
 <table> 
  <tbody> 
