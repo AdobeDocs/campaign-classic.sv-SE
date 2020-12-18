@@ -44,7 +44,7 @@ _2 december 2019_
     <p>Förutom de sekretessfunktioner som redan finns (inklusive samtyckeshantering, datalagringsinställningar och användarroller) kan Adobe Campaign underlätta din beredskap för CCPA:</p>
     <ul>
       <li>Rätt till åtkomst och rätt att ta bort: vi utnyttjar de funktioner som tillkommit för GDPR. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Läs mer</a></li>
-      <li>Ni kan spåra om en konsument har valt att sälja personuppgifter. Därför måste du utöka profiltabellen och lägga till ett <strong>avanmäl för CCPA</strong> -fältet. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Läs mer</a></li></td> 
+      <li>Ni kan spåra om en konsument har valt att sälja personuppgifter. Därför måste du utöka profiltabellen och lägga till ett <strong>avanmäl dig för CCPA</strong>-fält. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Läs mer</a></li></td> 
   </tr> 
  </tbody> 
 </table>
@@ -72,7 +72,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Med Adobe Campaign kan ni testa den nya interaktiva <a href="https://amp.dev/about/email/">AMP för e-postformat</a> , som gör att marknadsförarna kan inkludera AMP-komponenter i meddelanden för att förbättra e-postupplevelsen med avancerat, dynamiskt och interaktivt innehåll som kan användas direkt i själva meddelandet.</p>
+<td> <p>Med Adobe Campaign kan du testa det nya interaktiva <a href="https://amp.dev/about/email/">AMP for Email</a>-formatet, som gör att marknadsförarna kan inkludera AMP-komponenter i meddelanden för att förbättra e-postupplevelsen med avancerat, dynamiskt och interaktivt innehåll som kan användas direkt i själva meddelandet.</p>
    <p>Den här funktionen lanseras som en betaversion.</p>
    <p>Mer information finns i den <a href="../../delivery/using/defining-interactive-content.md">detaljerade dokumentationen</a> och <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">självstudievideon</a>.</p><br /></td> 
   </tr> 
@@ -88,7 +88,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
+<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning </strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,19 +106,19 @@ _2 december 2019_
 * Vissa förbättringar har lagts till i Hadoop FDA-anslutningen för att förbättra tillförlitligheten
 * En särskild skyddsmodul har lagts till för att kontrollera diskutrymmet innan offentliga resurser kan överföras till servern.
 * Nya [kampanjalternativ](../../installation/using/configuring-campaign-options.md) har lagts till:
-   * Med konfigurationsalternativet **WdbcKillSessionPolicy** kan du påverka beteendet **Ovillkorligt stopp** för alla arbetsflöden och PostgreSQL-databasfrågor.
+   * Med konfigurationsalternativet **WdbcKillSessionPolicy** kan du påverka **ovillkorlig Stop**-funktion för alla arbetsflöden och PostgreSQL-databasfrågor.
    * Med alternativet **NmsOperation_DeliveryPreparationWindow** kan du definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.
    * Med alternativet **WdbcOptions_TempDbName** kan du konfigurera en separat databas för fungerande tabeller på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering. [Läs mer](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * Alternativet **XtkCleanup_NoStats** har förbättrats för PostgreSQL för att bättre styra beteendet för lagringsoptimeringssteget i arbetsflödet för databasrensning. [Läs mer](../../production/using/database-cleanup-workflow.md#statistics-update)
-* En mekanism för kontoutelåsning har lagts till i API:t **logon()** . Det förhindrar ytterligare inloggningsförsök efter ett visst antal misslyckade inloggningsförsök i följd inom en angiven tidsram.
-* Med det nya alternativet **Maximal körtid** för personalisering i leveransegenskaperna kan du definiera en timeout-period för personaliseringen, för att förhindra att personaliseringsfasen körs för länge. [Läs mer](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* Alternativet **ftp-protokoll** har lagts till så att du kan använda en proxykonfiguration för SFTP-anslutningar. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+   * Alternativet **XtkCleanup_NoStats** har förbättrats för PostgreSQL för att bättre kunna styra beteendet för lagringsoptimeringssteget i databasrensningsarbetsflödet. [Läs mer](../../production/using/database-cleanup-workflow.md#statistics-update)
+* En mekanism för kontoutelåsning har lagts till i API:t **logon()**. Det förhindrar ytterligare inloggningsförsök efter ett visst antal misslyckade inloggningsförsök i följd inom en angiven tidsram.
+* Med ett nytt **alternativ för maximal körtid för personalisering** i leveransegenskaperna kan du definiera en timeout-period för personalisering, för att förhindra att personaliseringsfasen körs för länge. [Läs mer](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* Alternativet **ftp protocol** har lagts till så att du kan använda en proxykonfiguration för SFTP-anslutningar. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
 * Nytt stöd för proxyåtkomst till en extern SFTP-server för lokala miljöer.
 * Ett specifikt skyddsutkast har lagts till för att förhindra installation av paket som inte är kompatibla med Campaign-instansen. [Läs mer](../../installation/using/installing-campaign-standard-packages.md)
 
 _Föråldrade system_
 
-The following systems are now [deprecated](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) for Campaign Classic implementations:
+Följande system är nu [inaktuella](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) för implementeringar av Campaign Classic:
 * Apache 2.2
 * Centrum 6
 
@@ -130,21 +130,21 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 
 **Felkorrigeringar**
 
-* Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)** . (NEO-12213)
+* Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)**. (NEO-12213)
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
 * Korrigerade ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata. (NEO-12399)
 * Ett problem som påverkade leveransanalysen med typologiregeln inklusive domänen ne.jp har korrigerats. (NEO-12609)
 * Korrigerade ett problem relaterat till SMS över TLS-uppdateringar som innebar en mer restriktiv certifikatprincip. Uppdateringarna kan leda till ett anslutningsfel mellan marknadsförings- och mellanleverantörsservrar om certifikatet är inaktuellt. (NEO-17698)
-* Ett problem har korrigerats när knappen för **testanslutning** användes på ett externt konto i en miljö med flera källor med vaultautentisering. (NEO-12722)
+* Ett problem har korrigerats när knappen **Testa anslutningen** användes på ett externt konto i en miljö med flera källor och vaultautentisering användes. (NEO-12722)
 * Korrigerade ett problem med frågor som använder datumfunktioner med en FDA Hadoop-anslutning. (NEO-12847)
 * Korrigerade ett problem när en bild skulle ersättas i e-postredigeraren. (NEO-13098)
 * Korrigerade ett problem som kan leda till fel efter uppgraderingen i mappar som har tagits bort eller flyttats till en annan plats. (NEO-13118)
-* Korrigerade ett problem vid bildvisning när alternativet **Definiera bild per enhetsskärmstorlek** användes i LINE-meddelanden. (NEO-13228)
-* Korrigerade ett leveransförberedelseproblem när alternativet **Uteslut dubblettadress under leverans** inte har valts. (NEO-13240)
-* Korrigerade ett problem i arbetsflöden när **filöverföringsaktiviteten** användes för att hämta filer med alternativet **Ta bort källfilerna efter överföring** , med ett namn som innehåller ett blanksteg. (NEO-13411)
+* Korrigerade ett fel vid bildvisning när alternativet **Definiera bild per enhet och skärmstorlek** användes i LINE-meddelanden. (NEO-13228)
+* Ett leveransförberedelseproblem har korrigerats när alternativet **Uteslut dubblettadress under leverans** inte har valts. (NEO-13240)
+* Korrigerade ett problem i arbetsflöden när aktiviteten **Filöverföring** användes för att hämta filer med alternativet **Ta bort källfilerna efter överföring**, med ett namn som innehåller ett blanksteg. (NEO-13411)
 * Ett problem med rensning av Tomcat-cachen som kan leda till minnesproblem har åtgärdats. (NEO-13456)
-* Ett problem har korrigerats när **Control of offer-motorn installerades med det inbyggda paketet för körningsinstansen** på en befintlig kontrollinstans som körs i Microsoft SQL 2017. (NEO-13539)
-* Ett kraschproblem som kunde inträffa när spårade URL:er i ett e-postmeddelande avkontrollerades från fliken **Textinnehåll** på grund av en variabel som inte initierats har åtgärdats. (NEO-13545)
+* Ett problem har korrigerats vid installation av **kontrollen av erbjudandemotorn med körningsinstansen** inbyggt paket på en befintlig kontrollinstans som körs i Microsoft SQL 2017. (NEO-13539)
+* Korrigerade ett kraschproblem i konsolen som kunde inträffa när spårade URL:er i ett e-postmeddelande avkontrollerades från fliken **Textinnehåll** på grund av en variabel som inte initierats. (NEO-13545)
 * Korrigerade ett kodningsproblem för det kinesiska avsändarnamnet. (NEO-13837)
 * Korrigerade ett fel som kunde uppstå när undersökningssvarsdata från Utforskaren visades. (NEO-14590)
 * Korrigerade ett problem som kunde leda till diskrepans mellan leveransloggklassificeringen och karantäntabellen. (NEO-16547)
@@ -157,7 +157,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Ett problem som påverkade CRM Connector med Salesforce har korrigerats. (NEO-17712)
 * Ett timeout-problem vid import av data från en extern SFTP har korrigerats. (NEO-19723)
 * Ett problem har korrigerats vid åtkomst till prediktiva modeller. (NEO-19713)
-* Korrigerade ett problem som påverkade slumpmässig sampling i **delad** arbetsflödesaktivitet med Hadoop FDA-databasen. (NEO-16636)
+* Korrigerade ett problem som påverkade slumpmässig sampling i **Dela** arbetsflödesaktivitet med Hadoop FDA-databas. (NEO-16636)
 * Korrigerade en regression på Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
 
 
