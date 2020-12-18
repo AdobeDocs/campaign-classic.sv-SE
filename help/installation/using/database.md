@@ -21,7 +21,7 @@ Databasservern kan köras på ett givet operativsystem oavsett vilket operativsy
 
 Databasserverns operativsystem är inte viktigt så länge det finns en anslutning till de olika komponenterna i Adobe Campaign.
 
-Kontrollera även avsnittet [Databasåtkomstlager](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
+Kontrollera även avsnittet [Databasåtkomstlager](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -47,7 +47,7 @@ Parametrarna **NLS_NCHAR_CHARACTERSET** och **NLS_CHARACTERSET** måste vara kor
 
 Adobe Campaign använder Oracle standardkodning. Om du använder annan kodning kan kompatibilitetsproblem uppstå: Kontakta då teknisk support.
 
-Om du vill veta mer om kodningen använder du följande **sqlplus** -kommando:
+Använd följande **sqlplus**-kommando för att ta reda på om kodningen:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -66,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Använd Oracle användarprofil för att logga in på **sqlplus**:
+Om du vill logga in på **sqlplus** använder du Oracle-användarprofil:
 
 ```
 su - oracle 
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-Du kan även hänvisa till [Oracle Client i Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Du kan även referera till [Oracle Client i Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
