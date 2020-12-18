@@ -21,11 +21,11 @@ När formuläret har skapats, konfigurerats och publicerats kan du dela länken 
 
 >[!NOTE]
 >
->Livscykeln för en enkät i Adobe Campaign och dess publicerings- och leveranssätt liknar den för webbformulär: beskrivs i [detta avsnitt](../../web/using/about-web-forms.md).
+>Livscykeln för en enkät i Adobe Campaign och dess publicerings- och leveranssätt liknar den för webbformulär: dessa beskrivs i [det här avsnittet](../../web/using/about-web-forms.md).
 
 ## Kontrollpanel för undersökning {#survey-dashboard}
 
-Varje undersökning har en egen kontrollpanel där du kan visa status, beskrivning, offentlig URL och tillgänglighetsschema. Här kan du även visa tillgängliga rapporter. Mer information finns i [Rapporter om undersökningar](#reports-on-surveys).
+Varje undersökning har en egen kontrollpanel där du kan visa status, beskrivning, offentlig URL och tillgänglighetsschema. Här kan du även visa tillgängliga rapporter. Mer information finns i [Undersökningsrapporter](#reports-on-surveys).
 
 Undersökningens offentliga URL visas på kontrollpanelen:
 
@@ -37,11 +37,11 @@ Du kan spåra svaren på undersökningen i loggar och rapporter.
 
 ### Undersökningsloggar {#survey-logs}
 
-För varje enkät som levereras kan du spåra svaren på **[!UICONTROL Logs]** fliken. På den här fliken visas en lista med de användare som har slutfört undersökningen och deras ursprung:
+För varje enkät som levereras kan du spåra svaren på fliken **[!UICONTROL Logs]**. På den här fliken visas en lista med de användare som har slutfört undersökningen och deras ursprung:
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Dubbelklicka på en rad för att visa enkätformuläret ifyllt av svaranden. Du kan bläddra igenom hela undersökningen och få tillgång till svaren i sin helhet. Dessa kan exporteras i en extern fil. For more on this, refer to [Exporting answers](#exporting-answers).
+Dubbelklicka på en rad för att visa enkätformuläret ifyllt av svaranden. Du kan bläddra igenom hela undersökningen och få tillgång till svaren i sin helhet. Dessa kan exporteras i en extern fil. Mer information finns i [Exportera svar](#exporting-answers).
 
 Ursprunget anges i URL:en för undersökningen genom att följande tecken läggs till:
 
@@ -49,9 +49,9 @@ Ursprunget anges i URL:en för undersökningen genom att följande tecken läggs
 ?origin=xxx
 ```
 
-medan undersökningen redigeras innehåller URL-adressen parametern **[!UICONTROL __uuid]**, vilket anger att den är i testfasen och inte online än. När du kommer åt undersökningen via den här URL:en beaktas inte de poster som skapas i spårningen (rapporter). Ursprunget tvingas till värdet **[!UICONTROL Adobe Campaign]**.
+När undersökningen redigeras innehåller URL-adressen parametern **[!UICONTROL __uuid]**, vilket anger att den är i testfasen och inte online än. När du kommer åt undersökningen via den här URL:en beaktas inte de poster som skapas i spårningen (rapporter). Ursprunget tvingas till värdet **[!UICONTROL Adobe Campaign]**.
 
-For more on URL parameters, refer to [this page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+Mer information om URL-parametrar finns på [den här sidan](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Rapporter om undersökningar {#reports-on-surveys}
 
@@ -59,9 +59,9 @@ På fliken Kontrollpanel kan du få åtkomst till undersökningsrapporter. Klick
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-Undersökningsstrukturen visas i **[!UICONTROL Documentation]** rapporten.
+Strukturen för undersökningen visas i **[!UICONTROL Documentation]**-rapporten.
 
-Två andra rapporter om webbundersökningar finns på fliken **[!UICONTROL Reports]** för enkäterna: **[!UICONTROL General]** och **[!UICONTROL Breakdown of responses]**.
+Två andra rapporter om webbundersökningar finns på fliken **[!UICONTROL Reports]** i enkäterna: **[!UICONTROL General]** och **[!UICONTROL Breakdown of responses]**.
 
 * Allmänt
 
@@ -73,23 +73,23 @@ Två andra rapporter om webbundersökningar finns på fliken **[!UICONTROL Repor
 
 * Uppdelning av svar
 
-   Den här rapporten visar hur svaren för varje fråga är uppdelade. Den här uppdelningen är bara tillgänglig för svar som ges till fält som lagras i **[!UICONTROL Question]** typbehållare. Den är bara giltig för markeringskontroller (ingen uppdelning på textfält, till exempel).
+   Den här rapporten visar hur svaren för varje fråga är uppdelade. Den här uppdelningen är bara tillgänglig för svar som ges till fält som lagras i **[!UICONTROL Question]**-typbehållare. Den är bara giltig för markeringskontroller (ingen uppdelning på textfält, till exempel).
 
    ![](assets/s_ncs_admin_survey_report_2.png)
 
-## Exportera svar {#exporting-answers}
+## Exporterar svar {#exporting-answers}
 
 Svar på en undersökning kan exporteras i en extern fil som kan bearbetas senare. Det finns två sätt att göra detta:
 
 1. Exporterar rapportdata
 
-   Om du vill exportera rapportdata klickar du på **[!UICONTROL Export]** knappen och väljer exportformat.
+   Om du vill exportera rapportdata klickar du på knappen **[!UICONTROL Export]** och väljer exportformat.
 
-   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
+   Mer information om hur du exporterar rapportdata finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Exportera svar
 
-   Om du vill exportera svaren klickar du på fliken **[!UICONTROL Responses]** i enkäten och högerklickar. Välj **[!UICONTROL Export...]**.
+   Om du vill exportera svar klickar du på fliken **[!UICONTROL Responses]** i enkäten och högerklickar. Välj **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -103,11 +103,11 @@ Svar på en undersökning kan exporteras i en extern fil som kan bearbetas senar
    * formatera exporterade data,
    * Välj kodningsformat för informationen i filen.
 
-   Om undersökningen du vill exportera innehåller flera **[!UICONTROL Multi-line text]** eller **[!UICONTROL HTML text]** fält måste den exporteras i **[!UICONTROL XML]** format. Det gör du genom att välja det här formatet i listrutan i **[!UICONTROL Output format]** fältet enligt nedan:
+   Om undersökningen som du vill exportera innehåller flera **[!UICONTROL Multi-line text]**- eller **[!UICONTROL HTML text]**-fält måste den exporteras i **[!UICONTROL XML]**-format. Det gör du genom att välja det här formatet i listrutan för fältet **[!UICONTROL Output format]** enligt nedan:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   Klicka **[!UICONTROL Start]** för att köra exporten.
+   Klicka på **[!UICONTROL Start]** för att köra exporten.
 
    >[!NOTE]
    >
@@ -115,19 +115,19 @@ Svar på en undersökning kan exporteras i en extern fil som kan bearbetas senar
 
 ## Använda insamlade data {#using-the-collected-data}
 
-Den information som samlas in via online-enkäter kan återvinnas inom ramen för ett målinriktat arbetsflöde. To do this, use the **[!UICONTROL Survey responses]** box.
+Den information som samlas in via online-enkäter kan återvinnas inom ramen för ett målinriktat arbetsflöde. Använd rutan **[!UICONTROL Survey responses]** om du vill göra det.
 
 I följande exempel vill vi göra ett webberbjudande speciellt för de fem mottagarna med minst två barn och med högst poäng i en nätundersökning. Svaren på den här enkäten är:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-I arbetsflödet för målanpassning **[!UICONTROL Survey responses]** kommer den att konfigureras enligt följande:
+I målarbetsflödet kommer **[!UICONTROL Survey responses]** att konfigureras enligt följande:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 Börja med att välja den berörda enkäten och sedan de data som ska extraheras i fönstrets centrala del. I det här fallet måste vi extrahera minst spalten eftersom den kommer att användas i delningsrutan för att återställa de fem högsta poängen.
 
-Ange filtreringsvillkoren för svar genom att klicka på **[!UICONTROL Edit query...]** länken.
+Ange filtreringsvillkoren för svar genom att klicka på länken **[!UICONTROL Edit query...]**.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -143,25 +143,25 @@ Placera sedan en delad ruta i arbetsflödet för att återställa de fem mottaga
 
 Konfigurera delningsrutan genom att redigera den:
 
-* Börja med att välja lämpligt schema på **[!UICONTROL General]** fliken och konfigurera sedan delmängden:
+* Börja med att välja lämpligt schema på fliken **[!UICONTROL General]** och konfigurera sedan delmängden:
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* Gå till **[!UICONTROL Sub-sets]** fliken och markera **[!UICONTROL Limit the selected records]** alternativet och klicka sedan på **[!UICONTROL Edit...]** länken.
+* Gå till fliken **[!UICONTROL Sub-sets]** och välj alternativet **[!UICONTROL Limit the selected records]** och klicka sedan på länken **[!UICONTROL Edit...]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Markera **[!UICONTROL Keep only the first records after sorting]** alternativet och markera sorteringskolumnen. Markera alternativet **[!UICONTROL Descending sort]**.
+* Välj alternativet **[!UICONTROL Keep only the first records after sorting]** och markera sorteringskolumnen. Markera alternativet **[!UICONTROL Descending sort]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* Klicka på **[!UICONTROL Next]** knappen och begränsa antalet poster till 5.
+* Klicka på knappen **[!UICONTROL Next]** och begränsa antalet poster till 5.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* Klicka **[!UICONTROL Finish]** och starta sedan om arbetsflödet för att godkänna målanpassning.
+* Klicka på **[!UICONTROL Finish]** och starta sedan om arbetsflödet för att godkänna mål.
 
-## Standardisera data {#standardizing-data}
+## Standardiserar data {#standardizing-data}
 
 Det är möjligt att skapa standardiseringsprocesser i Adobe Campaign för data som samlas in med alias. På så sätt kan du standardisera de data som lagras i databasen: För att göra detta definierar du alias i de specificerade listorna som innehåller relevant information.
 
