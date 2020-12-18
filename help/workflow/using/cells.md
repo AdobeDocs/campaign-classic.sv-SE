@@ -17,11 +17,11 @@ ht-degree: 8%
 
 # Celler{#cells}
 
-Aktiviteten ger **[!UICONTROL Cells]** en vy över de olika deluppsättningarna i form av datakolumner. Den underlättar delmängdsmanipulation och är även utformad för att uppmuntra personaliseringsmöjligheter.
+Aktiviteten **[!UICONTROL Cells]** ger en vy över de olika deluppsättningarna i form av datakolumner. Den underlättar delmängdsmanipulation och är även utformad för att uppmuntra personaliseringsmöjligheter.
 
 ![](assets/wf_split_cells.png)
 
-Den här aktiviteten kan konfigureras för att ange specifika parametrar baserat på användarnas behov. Som standard visas detaljerna för varje delmängd i ett dedikerat fönster via flikarna **[!UICONTROL Selection]** och **[!UICONTROL Advanced]** . I exemplet nedan har formuläret ändrats: en **[!UICONTROL Data]** flik har lagts till för att aktivera associationen för ett erbjudande och en prioritetsnivå för varje delmängd.
+Den här aktiviteten kan konfigureras för att ange specifika parametrar baserat på användarnas behov. Som standard visas detaljerna för varje delmängd i ett dedikerat fönster via flikarna **[!UICONTROL Selection]** och **[!UICONTROL Advanced]**. I exemplet nedan har formuläret ändrats: en **[!UICONTROL Data]**-flik har lagts till för att aktivera associationen för ett erbjudande och en prioritetsnivå för varje delmängd.
 
 ![](assets/wf_split_cells_with_customization.png)
 
