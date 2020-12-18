@@ -29,12 +29,12 @@ Det finns flera sätt att filtrera data som ska visas. Dessa kan vid behov anvä
 
 * Filtrera på mappar, se [Filtrera efter mapp](#filter-by-folder),
 * Filtrera efter status, se [Filtrera efter status](#filter-by-status),
-* Datasortering, se [Ordna efter](#order-by),
+* Datasortering, se [Order by](#order-by),
 * Sök, se [Snabbsökning](#quick-search).
 
 ## Filtrera efter mapp {#filter-by-folder}
 
-Klicka på **[!UICONTROL Folder]** ikonen för att markera den mapp som innehåller de data som ska visas.
+Klicka på ikonen **[!UICONTROL Folder]** för att markera mappen som innehåller de data som ska visas.
 
 ![](assets/filter_web_select_folder.png)
 
