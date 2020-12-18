@@ -23,7 +23,7 @@ Med den här ersättningen sparar du tid när du skapar leveransen: I stället f
 
 ## Kontext {#context}
 
-I det här fallet vill webbplatsen **Mitt onlinebibliotek** skicka en rabatt till sina kunder baserat på deras favoritlitterära genre.
+I det här fallet vill webbplatsen **Mitt onlinebibliotek** skicka en rabatt till sina kunder, baserat på deras favoritlitterära genre.
 
 Leveranshanteraren har integrerat ett anpassningsfält som är länkat till en favoritgenre i sitt e-postmeddelande. Han skulle vilja använda några frön-adresser. Dessa dirigerade adresser har anpassningsfältet i sin tabell, men inget värde sparas där.
 
@@ -32,15 +32,15 @@ Om du vill använda slumpmässig fältersättning måste du ha:
 * en leverans med ett eller flera personaliseringsfält,
 * dirigerade adresser vars **dataschema** ändras enligt de anpassningsfält som används i leveransen.
 
-## Skapa en leverans {#step-1---creating-a-delivery}
+## Skapar en leverans {#step-1---creating-a-delivery}
 
-Hur du skapar en leverans beskrivs i avsnittet [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md) .
+Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md).
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet.
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## Redigera dataschemat för dirigerade adresser {#editing-the-seed-addresses-data-schema}
+## Redigera dirigeringsadressens datarema {#editing-the-seed-addresses-data-schema}
 
 Instruktionerna för hur du ändrar ett dataschema finns i avsnittet.
 
@@ -53,9 +53,9 @@ I det här exemplet får dataschemat för dirigerade adresser ett värde som ska
 
 Med den här uppräkningen kan användaren ange klienternas favoritlitterära genre.
 
-För att den här ändringen av dataschemat ska kunna visas i **indataformuläret** för dirigerade adresser måste du uppdatera den. Mer information finns i avsnittet [Uppdatera indataformulär](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) .
+För att den här datarchemaändringen ska kunna visas i dirigerade adresser **Indataformulär** måste du uppdatera den. Se avsnittet [Uppdatera indataformuläret](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
-## Konfigurera personalisering {#configuring-personalization}
+## Konfigurerar personalisering {#configuring-personalization}
 
 1. Öppna en leverans.
 
@@ -75,9 +75,9 @@ För att den här ändringen av dataschemat ska kunna visas i **indataformuläre
 
    >[!NOTE]
    >
-   >Mer information om **[!UICONTROL Edit the dynamic condition...]** länken finns i [Använda skiftläge: välja startadresser efter villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Mer information om länken **[!UICONTROL Edit the dynamic condition...]** finns i [Användningsfall: välja startadresser på villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
-1. Klicka på **[!UICONTROL Preview]** fliken och välj sedan en startadress för att testa personaliseringen.
+1. Klicka på fliken **[!UICONTROL Preview]** och välj sedan en startadress för att testa personaliseringen.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
