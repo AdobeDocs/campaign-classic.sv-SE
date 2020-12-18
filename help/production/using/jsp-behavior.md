@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # JSP-beteende{#jsp-behavior}
 
-Om vissa **jsp** -jobb inte kan köras måste du tvinga dem att kompilera om.
+Om vissa **jsp**-jobb inte kan köras måste du tvinga dem att kompilera om.
 
 Ange följande kommandon för detta:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-JSP- **jobben** återskapas nästa gång du ansluter.
+**jsp**-jobben återskapas nästa gång du ansluter.
