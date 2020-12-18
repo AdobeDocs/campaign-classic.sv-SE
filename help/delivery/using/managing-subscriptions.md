@@ -40,53 +40,53 @@ Det finns tre olika sätt att prenumerera på/ta bort abonnemang:
 >
 >Ett exempel på hur du skapar ett prenumerationsformulär med dubbel anmälan finns i [det här avsnittet](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
 
-## Skapa en informationstjänst {#creating-an-information-service}
+## Skapar en informationstjänst {#creating-an-information-service}
 
 Du kan skapa och hantera prenumerationer på informationstjänster med tillhörande bekräftelsemeddelanden eller automatiska leveranser till prenumeranter.
 
-Gå till **[!UICONTROL Profiles and Targets]** universum och klicka på **[!UICONTROL Services and Subscriptions]** länken för att få tillgång till informationstjänstkartan.
+Om du vill komma åt informationstjänstkartan går du till **[!UICONTROL Profiles and Targets]**-universum och klickar på länken **[!UICONTROL Services and Subscriptions]**.
 
 ![](assets/s_ncs_user_services_new.png)
 
-Om du vill redigera en befintlig tjänst klickar du på dess namn. Om du vill skapa en tjänst klickar du på **[!UICONTROL Create]** knappen ovanför listan.
+Om du vill redigera en befintlig tjänst klickar du på dess namn. Om du vill skapa en tjänst klickar du på knappen **[!UICONTROL Create]** ovanför listan.
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Ange namnet på tjänsten i **[!UICONTROL Label]** fältet och välj leveranskanal: e-post, mobil, Facebook, Twitter eller mobilappar.
+* Ange namnet på tjänsten i fältet **[!UICONTROL Label]** och välj leveranskanalen: e-post, mobil, Facebook, Twitter eller mobilappar.
 
    >[!NOTE]
    >
    >Prenumerationer på Facebook och Twitter beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
 
 * För en tjänst av typen E-post väljer du **Leveransläge**. Möjliga lägen är: **[!UICONTROL Newsletter]** eller **[!UICONTROL Viral]**.
-* Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller en prenumeration. För att göra detta väljer du de leveransmallar som ska användas för att skapa motsvarande leveranser från **[!UICONTROL Subscription]** - och **[!UICONTROL Unsubscription]** fälten. Dessa mallar måste konfigureras med en **[!UICONTROL Subscription]** typmålmappning, utan ett definierat mål. Se avsnittet [Om e-postkanal](../../delivery/using/about-email-channel.md).
-* Som standard är prenumerationerna obegränsade. Du kan avmarkera alternativet om du vill definiera en giltighetslängd för tjänsten. **[!UICONTROL Unlimited]** Längden kan anges i dagar (**[!UICONTROL d]** ) eller månader (**[!UICONTROL m]** ).
+* Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller ett avabonnemang. För att göra detta väljer du de leveransmallar som ska användas för att skapa motsvarande leveranser från fälten **[!UICONTROL Subscription]** och **[!UICONTROL Unsubscription]**. Dessa mallar måste konfigureras med en **[!UICONTROL Subscription]**-målmappning utan ett definierat mål. Se avsnitt [Om e-postkanal](../../delivery/using/about-email-channel.md).
+* Som standard är prenumerationerna obegränsade. Du kan avmarkera alternativet **[!UICONTROL Unlimited]** om du vill definiera en giltighetslängd för tjänsten. Längden kan anges i dagar (**[!UICONTROL d]**) eller månader (**[!UICONTROL m]**).
 
-När tjänsten har sparats läggs den till i listan Tjänster och prenumerationer: Klicka på namnet för att redigera det. Flera flikar är tillgängliga. På fliken **[!UICONTROL Subscriptions]** kan du se en lista över prenumeranter på informationstjänsten (**[!UICONTROL Active subscriptions]** flik) eller historiken för prenumerationer/prenumerationer (**[!UICONTROL History]** flik). Du kan också lägga till och ta bort prenumeranter på den här fliken. Se [Lägga till och ta bort prenumeranter](#adding-and-deleting-subscribers).
+När tjänsten har sparats läggs den till i listan Tjänster och prenumerationer: Klicka på namnet för att redigera det. Flera flikar är tillgängliga. På fliken **[!UICONTROL Subscriptions]** kan du visa en lista över prenumeranter på informationstjänsten (**[!UICONTROL Active subscriptions]**-fliken) eller historiken för prenumerationer/avprenumerationer (**[!UICONTROL History]**-fliken). Du kan också lägga till och ta bort prenumeranter på den här fliken. Se [Lägga till och ta bort prenumeranter](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
-Med **[!UICONTROL Detail...]** knappen kan du kontrollera prenumerationsegenskaperna för den valda mottagaren.
+Med knappen **[!UICONTROL Detail...]** kan du kontrollera prenumerationsegenskaperna för den valda mottagaren.
 
 Du kan ändra prenumerationsegenskaperna för en mottagare.
 
 ![](assets/s_ncs_user_services_modify.png)
 
-På kontrollpanelen klickar du på **[!UICONTROL Reports]** fliken för att spåra prenumerationer: förändringar i abonnemangsnivåer, totalt antal abonnenter osv. På den här fliken kan du arkivera rapporter och se historik.
+På kontrollpanelen klickar du på fliken **[!UICONTROL Reports]** för att spåra prenumerationer: förändringar i abonnemangsnivåer, totalt antal abonnenter osv. På den här fliken kan du arkivera rapporter och se historik.
 
 ## Lägga till och ta bort prenumeranter {#adding-and-deleting-subscribers}
 
-På fliken **[!UICONTROL Subscriptions]** i en informationstjänst klickar du **[!UICONTROL Add]** för att lägga till prenumeranter. Du kan också högerklicka på listan med prenumeranter och välja **[!UICONTROL Add]**. Markera i vilken mapp profilerna som ska prenumereras lagras, markera profilerna som ska prenumereras och klicka sedan på **[!UICONTROL OK]** för att validera.
+På fliken **[!UICONTROL Subscriptions]** i en informationstjänst klickar du på **[!UICONTROL Add]** för att lägga till prenumeranter. Du kan också högerklicka på listan med prenumeranter och välja **[!UICONTROL Add]**. Markera i vilken mapp profilerna som ska prenumereras lagras, markera profilerna som ska prenumereras och klicka sedan på **[!UICONTROL OK]** för att validera.
 
 Om du vill ta bort prenumeranter markerar du dem och klickar på **[!UICONTROL Delete]**. Du kan också högerklicka på prenumerantlistan och välja **[!UICONTROL Delete]**.
 
-I båda fallen kan du skicka ett bekräftelsemeddelande till de berörda användarna om en leveransmall för avanmälan har bifogats till tjänsten (se [Skapa en informationstjänst](#creating-an-information-service)). Med en varning kan du validera leveransen eller inte:
+I båda fallen kan du skicka ett bekräftelsemeddelande till de berörda användarna om en leveransmall för att avbryta prenumerationen har bifogats till tjänsten (se [Skapa en informationstjänst](#creating-an-information-service)). Med en varning kan du validera leveransen eller inte:
 
 ![](assets/s_ncs_user_services_update.png)
 
-Se [Prenumerations- och](#subscription-and-unsubscription-mechanisms)avprenumerationsfunktioner.
+Se [Prenumerations- och avprenumerationsmekanismer](#subscription-and-unsubscription-mechanisms).
 
-## Leverera till abonnenterna av en tjänst {#delivering-to-the-subscribers-of-a-service}
+## Leverera till prenumeranterna av en tjänst {#delivering-to-the-subscribers-of-a-service}
 
 Om du vill leverera till abonnenterna av en informationstjänst kan du rikta abonnenterna till den berörda informationstjänsten, som i följande exempel:
 
@@ -113,21 +113,21 @@ Du kan ställa in prenumerations- och avprenumerationsmekanismer för att automa
 >[!NOTE]
 >
 >Du kan skicka ett bekräftelsemeddelande till nya prenumeranter.\
->Innehållet i det här meddelandet definieras i informationstjänstens konfiguration via **[!UICONTROL Subscription]** - eller **[!UICONTROL Unsubscription]** -fälten.
+>Innehållet i det här meddelandet definieras i informationstjänstkonfigurationen via fälten **[!UICONTROL Subscription]** eller **[!UICONTROL Unsubscription]**.
 >
 >Bekräftelsemeddelandena skapas med de leveransmallar som anges i dessa fält. Dessa målmappningar måste vara **[!UICONTROL Subscriptions]**.
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
-### Prenumerera på en tjänst {#subscribing-a-recipient-to-a-service}
+### Prenumerera på en mottagare på en tjänst {#subscribing-a-recipient-to-a-service}
 
 Om du vill registrera mottagare för en informationstjänst kan du:
 
-* Lägg till tjänsten manuellt: för att göra detta klickar du på **[!UICONTROL Subscriptions]** **[!UICONTROL Add]** och väljer den berörda informationstjänsten på fliken i deras profil.
+* Lägg till tjänsten manuellt: Om du vill göra det går du till fliken **[!UICONTROL Subscriptions]** i profilen och klickar på **[!UICONTROL Add]** och väljer den aktuella informationstjänsten.
 
    Mer information finns i avsnittet om profilredigering i [det här avsnittet](../../platform/using/editing-a-profile.md).
 
-* Prenumerera automatiskt på en uppsättning mottagare för den här tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller en direktmarkering med hjälp av musen. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, välj den aktuella tjänsten och starta åtgärden.
+* Prenumerera automatiskt på en uppsättning mottagare för den här tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller en direktmarkering med hjälp av musen. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, markera den aktuella tjänsten och starta åtgärden.
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importguiden.
 
    Mer information om detta finns i [det här avsnittet](../../platform/using/importing-data.md#import-wizard).
@@ -136,11 +136,11 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 
    Mer information om detta finns i [det här avsnittet](../../web/using/about-web-applications.md).
 
-* Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]** ruta.
+* Skapa ett målarbetsflöde och använda en **[!UICONTROL Subscription service]**-ruta.
 
    ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   Arbetsflöden och hur de används beskrivs i [det här avsnittet](../../workflow/using/about-workflows.md).
+   Arbetsflöden och hur du använder dem beskrivs i [det här avsnittet](../../workflow/using/about-workflows.md).
 
 ### Avbeställa en mottagares prenumeration på en tjänst {#unsubscribing-a-recipient-from-a-service}
 
@@ -148,24 +148,24 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 
 e-postleveranser måste innehålla en länk för att avsluta prenumerationen enligt lag. Mottagarna kan klicka på den här länken för att uppdatera sin profil och uteslutas från målen för framtida leveranser.
 
-Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
+Standardlänken för att avbryta prenumerationen infogas via den sista knappen i verktygsfältet i innehållsredigeraren som finns i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
 
-Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk (se [Personaliseringsblock](../../delivery/using/personalization-blocks.md)).
+Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad länk för att avbryta prenumerationen (se [Personaliseringsblock](../../delivery/using/personalization-blocks.md)).
 
-Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. För att göra detta klickar du på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markerar den eller de berörda informationstjänsterna och klickar på **[!UICONTROL Delete]**.
+Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. Det gör du genom att klicka på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markera den eller de berörda informationstjänsterna och klicka på **[!UICONTROL Delete]**.
 
-Du kan avsluta prenumerationen på en eller flera mottagare via den aktuella informationstjänsten. Det gör du genom att klicka på tjänstens **[!UICONTROL Subscriptions]** flik, markera mottagarna och klicka på **[!UICONTROL Delete]**.
+Du kan avsluta prenumerationen på en eller flera mottagare via den aktuella informationstjänsten. Det gör du genom att klicka på fliken **[!UICONTROL Subscriptions]** för tjänsten, markera de berörda mottagarna och klicka på **[!UICONTROL Delete]**.
 
 #### Automatisk avprenumeration {#automatic-unsubscription}
 
-En informationstjänst kan ha en begränsad varaktighet. Mottagarna kommer att avbeställa prenumerationen automatiskt när giltighetsperioden har gått ut. Den här perioden anges på fliken **[!UICONTROL Edit]** i serviceegenskaperna. Den uttrycks i dagar.
+En informationstjänst kan ha en begränsad varaktighet. Mottagarna kommer att avbeställa prenumerationen automatiskt när giltighetsperioden har gått ut. Den här perioden anges på fliken **[!UICONTROL Edit]** i tjänsteegenskaperna. Den uttrycks i dagar.
 
 ![](assets/s_ncs_user_services_delay.png)
 
-Du kan också skapa ett avabonnemangsarbetsflöde för en population. Om du vill göra det följer du samma procedur som för ett prenumerationsarbetsflöde, men väljer **[!UICONTROL Unsubscription]** alternativet. Se [Prenumerera på en tjänst](#subscribing-a-recipient-to-a-service).
+Du kan också skapa ett avabonnemangsarbetsflöde för en population. Om du vill göra det följer du samma procedur som för ett prenumerationsarbetsflöde, men väljer alternativet **[!UICONTROL Unsubscription]**. Se [Prenumerera på en mottagare på en tjänst](#subscribing-a-recipient-to-a-service).
 
 ### Prenumerationsspårning {#subscriber-tracking}
 
-Du kan spåra ändringar i prenumerationer på informationstjänster med hjälp av **[!UICONTROL Reports]** länken på kontrollpanelen.
+Du kan spåra ändringar i prenumerationer på informationstjänster med hjälp av länken **[!UICONTROL Reports]** på kontrollpanelen.
 
 ![](assets/s_ncs_user_services_report.png)
