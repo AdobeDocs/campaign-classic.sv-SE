@@ -21,7 +21,7 @@ I det här kapitlet finns en lista med Adobe Campaign inbyggda rapporter, deras 
 
 >[!NOTE]
 >
->Du kan även lära dig hur du lägger till egna rapporter på **[!UICONTROL Reports]** fliken. For more information, refer to this [page](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
+>Du kan även lära dig hur du lägger till egna rapporter på fliken **[!UICONTROL Reports]**. Mer information finns på den här [sidan](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
 
 Rapporterna och deras innehåll beskrivs närmare i dokumenten om de funktioner de avser.
 
@@ -31,13 +31,13 @@ Följande typer av rapporter är tillgängliga:
 
 * Rapporter om hela plattformen finns i [Globala rapporter](../../reporting/using/global-reports.md).
 * Leveransrapporter, se [Leveransrapporter](../../reporting/using/delivery-reports.md).
-* Ackumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
+* Kumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
 
-Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Mer information finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) .
+Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Mer information finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md).
 
 Få tillgång till inbyggda rapporter för Campaign:
 
-1. Klicka på fliken **[!UICONTROL Reports]** i Adobe Campaign-gränssnittet.
+1. Välj fliken **[!UICONTROL Reports]** i Adobe Campaign-gränssnittet.
 
    ![](assets/reporting_access_from_home.png)
 
@@ -47,11 +47,11 @@ Få tillgång till inbyggda rapporter för Campaign:
 
    ![](assets/reporting_edit_a_report.png)
 
-1. Klicka på **[!UICONTROL Back]** länken längst upp på skärmen så visas rapportlistan igen.
+1. Klicka på länken **[!UICONTROL Back]** längst upp på skärmen så visas rapportlistan igen.
 
    ![](assets/reporting_back_button.png)
 
-Andra möjliga åtgärder för en rapport som redigeras finns på [den här sidan](../../reporting/using/actions-on-reports.md).
+Andra möjliga åtgärder för en rapport som redigeras beskrivs i [den här sidan](../../reporting/using/actions-on-reports.md).
 
 Rapporter som är specifika för en kampanj eller leverans är tillgängliga via deras respektive kontrollpaneler.
 
