@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # SQL-datahantering{#sql-data-management}
 
-Med **SQL Data Management** -aktiviteten kan du skriva egna SQL-skript för att skapa och fylla i arbetstabeller.
+Med aktiviteten **SQL Data Management** kan du skriva egna SQL-skript för att skapa och fylla i arbetsregister.
 
 ## Förutsättningar {#prerequisites}
 
@@ -30,7 +30,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 ## Konfigurera SQL Data Management-aktiviteten {#configuring-the-sql-data-management-activity}
 
 1. Ange aktiviteten **[!UICONTROL Label]**.
-1. Markera det **[!UICONTROL External account]** som ska användas och markera sedan det **[!UICONTROL Outbound schema]** länkade till det här externa kontot.
+1. Markera **[!UICONTROL External account]** som ska användas och välj sedan **[!UICONTROL Outbound schema]** som är länkad till det här externa kontot.
 
    >[!CAUTION]
    >
@@ -42,7 +42,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
    >
    >Det är SQL-skriptets skrivares ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, etc.) är i enlighet med det utgående schemat.
 
-   Om du vill läsa in en befintlig SQL-kod markerar du **[!UICONTROL The SQL script is contained in an entity stored in the database]** alternativet. SQL-skript måste skapas och lagras på menyn **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** .
+   Om du vill läsa in en befintlig SQL-kod väljer du alternativet **[!UICONTROL The SQL script is contained in an entity stored in the database]**. SQL-skript måste skapas och lagras på menyn **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 
    I annat fall skriver eller kopierar och klistrar du in SQL-skriptet i det dedikerade området.
 
@@ -55,10 +55,10 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
       >[!NOTE]
       >
-      >Värdet (&#39;name&#39;) motsvarar **[!UICONTROL Name]** fältet från övergångsegenskaperna.
+      >Värdet (&#39;name&#39;) motsvarar fältet **[!UICONTROL Name]** från övergångsegenskaperna.
 
-1. Om SQL-skriptet redan innehåller kommandon för att skapa en utgående arbetstabell avmarkerar du **[!UICONTROL Automatically create work table]** alternativet. I annat fall skapas en arbetstabell automatiskt när arbetsflödet körs.
-1. Klicka **[!UICONTROL Ok]** för att bekräfta aktivitetskonfigurationen.
+1. Om SQL-skriptet redan innehåller kommandon för att skapa en utgående arbetstabell avmarkerar du alternativet **[!UICONTROL Automatically create work table]**. I annat fall skapas en arbetstabell automatiskt när arbetsflödet körs.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta aktivitetskonfigurationen.
 
 Aktiviteten är nu konfigurerad. Den är klar att köras i arbetsflödet.
 
