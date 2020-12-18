@@ -32,7 +32,7 @@ Nedan visas viktiga element som du bör tänka på när du implementerar och kon
 * Katalogdesignen har stor inverkan på Adobe Campaign Classic prestanda.
 * När det finns många erbjudanden kan du dela upp dem i flera olika erbjudandekataloger.
 
-### Villkor {#eligibility-rules}
+### Kvalifikationsregler {#eligibility-rules}
 
 Nedan visas några tips om de effektivaste strategierna när det gäller regler för behörighet.
 
@@ -60,7 +60,7 @@ Nedan visas några metodtips om förslagstabellen.
 
 I det här avsnittet finns mer detaljerad information om hur du hanterar erbjudanden och använder interaktionsmodulen i Adobe Campaign Classic.
 
-### Använda flera erbjudandeplatser i e-postleveranser {#multiple-offer-spaces}
+### Använda flera erbjudandemellanslag i en e-postleverans {#multiple-offer-spaces}
 
 När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i kampanjen via en anrikningsaktivitet (eller en annan liknande aktivitet).
 
@@ -78,7 +78,7 @@ I exemplet nedan är HTML-återgivningsfunktionen tillgänglig i listrutan efter
 
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-När du markerar förslaget blir värdet för **[!UICONTROL view]** attributet följande:
+När du markerar förslaget blir värdet för attributet **[!UICONTROL view]** följande:
 * &quot;rendering/html&quot;: html-återgivning. Den använder HTML-återgivningsfunktionen.
 * &quot;offer/view/html&quot;: html-innehåll. Den använder inte HTML-återgivningsfunktionen. Det innehåller bara HTML-fältet.
 
@@ -123,7 +123,7 @@ När du använder Interaction och väljer erbjudanden manuellt kan användaren k
 ### Utöka nms:offer-schemat {#extending-nms-offer-schema}
 
 När du utökar schemat nms:offer måste du följa den färdiga strukturen som redan är konfigurerad:
-* Definiera nya fält för innehållslagring under `<element name="view">`.
+* Definiera alla nya fält för innehållslagring under `<element name="view">`.
 * Varje nytt fält måste definieras två gånger. En gång som ett vanligt XML-fält och en gång som ett CDATA XML-fält med &quot;_jst&quot; som tillägg till namnet. Exempel:
 
    ```
