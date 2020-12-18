@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # Tjänstenivå för meddelandecentret{#message-center-service-level}
 
-Den här rapporten innehåller leveransstatistik för transaktionsmeddelanden samt felinformation. Du kan klicka på en feltyp för att visa information om den. Denna rapport, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]** universum i kontrollinstansen.
+Den här rapporten innehåller leveransstatistik för transaktionsmeddelanden samt felinformation. Du kan klicka på en feltyp för att visa information om den. Den här rapporten, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]**-universum i kontrollinstansen.
 
 ![](assets/mc_reports_1.png)
 
-I den här rapporten kan du välja att visa den övergripande statistiken eller den som är relativ till en viss körningsinstans. Du kan också filtrera data efter kanal och under en viss period. Indikatorerna som visas i **[!UICONTROL Indicators over the period]** avsnittet beräknas för den valda perioden:
+I den här rapporten kan du välja att visa den övergripande statistiken eller den som är relativ till en viss körningsinstans. Du kan också filtrera data efter kanal och under en viss period. Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** beräknas för den valda perioden:
 
 * **[!UICONTROL Incoming (throughput event/h)]** : genomsnittligt antal händelser per timme som anges i Message Center-kön.
 * **[!UICONTROL Incoming (event vol)]** : antal händelser som anges i Message Center-kön.
