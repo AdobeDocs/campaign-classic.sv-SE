@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Integrering med lösningar i Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
 
-Arbetsflödena som beskrivs nedan installeras som standard med **integreringen med Adobe Experience Cloud** -modulen. For more on this module, refer to this [section](../../integrations/using/configuring-ims.md#installing-the-package).
+Arbetsflödena som anges nedan installeras som standard med **integreringen med modulen Adobe Experience Cloud**. Mer information om den här modulen finns i [avsnittet](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ Arbetsflödena som beskrivs nedan installeras som standard med **integreringen m
   <tr> 
    <td> <span class="uicontrol">Exportera målgrupper till Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Det här arbetsflödet exporterar målgrupper som delade målgrupper/segment. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder.<br /> </td> 
+   <td> Det här arbetsflödet exporterar målgrupper som delade målgrupper/segment. Dessa målgrupper kan användas i olika Adobe Experience Cloud-lösningar som du använder.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
