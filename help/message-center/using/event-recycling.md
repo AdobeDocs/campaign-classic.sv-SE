@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Om det inte går att skicka ett meddelande via en viss kanal kan Adobe Campaign skicka meddelandet igen via en annan kanal. Om till exempel en leverans på SMS-kanalen misslyckas, skickas meddelandet igen med e-postkanalen.
 
-För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla händelser med **leveransfelstatus** och tilldelar dem en annan kanal.
+För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla händelser med statusen **Leveransfel** och tilldelar dem en annan kanal.
 
 >[!CAUTION]
 >
