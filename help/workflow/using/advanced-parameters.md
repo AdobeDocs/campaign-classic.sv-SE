@@ -17,17 +17,17 @@ ht-degree: 2%
 
 # Avancerade parametrar{#advanced-parameters}
 
-Egenskapsskärmen för en aktivitet har en **[!UICONTROL Advanced]** flik där du kan definiera ett beteende i händelse av fel, körningsperioden för aktiviteten; och gör att du kan ange ett initieringsskript. Det finns två versioner av den här fliken:
+Egenskapsskärmen för en aktivitet har en **[!UICONTROL Advanced]**-flik som gör att du kan definiera ett beteende i händelse av fel, körningsperioden för aktiviteten; och gör att du kan ange ett initieringsskript. Det finns två versioner av den här fliken:
 
-* en förenklad version (till exempel för **[!UICONTROL Start]** och **[!UICONTROL End]** aktiviteter)
+* en förenklad version (för till exempel **[!UICONTROL Start]** och **[!UICONTROL End]**-aktiviteter)
 
    ![](assets/wf-advanced-basic.png)
 
-* en mer detaljerad version (till exempel för **[!UICONTROL Query]** aktiviteten)
+* en mer detaljerad version (för aktiviteten **[!UICONTROL Query]**, till exempel)
 
    ![](assets/wf-advanced-full.png)
 
-Fälten som ska anges på **[!UICONTROL Advanced]** fliken beskrivs i följande avsnitt.
+Fälten som ska anges på fliken **[!UICONTROL Advanced]** beskrivs i följande avsnitt.
 
 ## Namn {#name}
 
@@ -49,11 +49,11 @@ De här alternativen är vanligtvis markerade i kundvagnen genom att högerklick
 
 ## Tillhörighet {#affinity}
 
-I det här fältet kan du framtvinga körning av en aktivitet på en viss dator. For more on this, refer to: [Managing propensity](../../workflow/using/managing-propensity.md).
+I det här fältet kan du framtvinga körning av en aktivitet på en viss dator. Mer information finns i: [Hantera benägenhet](../../workflow/using/managing-propensity.md).
 
 ## Max. körningsperiod {#max--execution-period}
 
-I det här fältet kan du ange en varning för när aktiviteten tar för lång tid. Det påverkar inte arbetsflödets funktion. Om uppgiften inte är slutförd innan den är **[!UICONTROL Max. execution period]** klar visas en varning för det här arbetsflödet på **[!UICONTROL Instance monitoring]** sidan. Den här sidan öppnas via fliken **[!UICONTROL Monitoring]** på startsidan.
+I det här fältet kan du ange en varning för när aktiviteten tar för lång tid. Det påverkar inte arbetsflödets funktion. Om aktiviteten inte är klar när **[!UICONTROL Max. execution period]** är slut visas en varning för det här arbetsflödet på **[!UICONTROL Instance monitoring]**-sidan. Den här sidan nås via fliken **[!UICONTROL Monitoring]** på startsidan.
 
 ## Beteende {#behavior}
 
@@ -79,4 +79,4 @@ I det här fältet kan du initiera variabler eller ändra aktivitetsegenskaper. 
 
 ## Kommentar {#comment}
 
-Fältet är ett **[!UICONTROL Comment]** kostnadsfritt fält där du kan lägga till en beskrivning.
+Fältet **[!UICONTROL Comment]** är ett kostnadsfritt fält där du kan lägga till en beskrivning.
