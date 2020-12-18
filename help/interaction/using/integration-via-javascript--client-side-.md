@@ -29,7 +29,7 @@ Skriptet som anropar URL ser ut så här:
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-Parametern &quot;**env**&quot; får det interna namnet på den aktiva miljön som är dedikerad till anonyma interaktioner.
+Parametern **env** får det interna namnet på den aktiva miljön som är dedikerad till anonyma interaktioner.
 
 För att kunna presentera ett erbjudande måste vi skapa en miljö och ett erbjudande i Adobe Campaign och sedan konfigurera HTML-sidan.
 
@@ -51,7 +51,8 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
 
    HTML-sidan måste innehålla en
 
-   element med ett @id-attribut med värdet för det interna namnet på erbjudandeutrymmet (&quot;i_internal name space&quot;). Erbjudandet kommer att infogas i detta element av Interaction.
+   element med ett @id-attribut med värdet för det interna namnet på erbjudandeutrymmet (&quot;i_internal name space&quot;). Erbjudandet kommer att infogas i detta
+element efter interaktion.
 
    I vårt exempel får attributet @id värdet &quot;i_SPC12&quot;, där &quot;SPC12&quot; är det interna namnet på det erbjudandeutrymme som skapats tidigare:
 
@@ -67,7 +68,7 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
 
    >[!IMPORTANT]
    >
-   >Taggen får inte vara självstängande `<script>` .
+   >Taggen `<script>` får inte vara självstängande.
 
    Detta statiska anrop genererar automatiskt ett dynamiskt anrop som innehåller alla parametrar som behövs för interaktionsmotorn.
 
@@ -101,7 +102,7 @@ I följande exempel beskrivs de möjliga alternativen för att integrera erbjuda
 
 ### Presentera ett identifierat erbjudande {#presenting-an-identified-offer}
 
-Processen liknar den som beskrivs här för att erbjuda en identifierad kontakt: [Anonymt erbjudande](#presenting-an-anonymous-offer). I webbsidans innehåll måste du lägga till följande skript som identifierar kontakten under anropet till motorn:
+Processen liknar den som beskrivs här för att erbjuda en identifierad kontakt: [Presentera ett anonymt erbjudande](#presenting-an-anonymous-offer). I webbsidans innehåll måste du lägga till följande skript som identifierar kontakten under anropet till motorn:
 
 ```
 <script type="text/javascript">
@@ -129,9 +130,9 @@ Processen liknar den som beskrivs här för att erbjuda en identifierad kontakt:
 
 Om du vill generera HTML-erbjudanderepresentationen automatiskt kan du använda en återgivningsfunktion.
 
-1. Gå till erbjudandeutrymmet och klicka på **[!UICONTROL Edit functions]** länken.
+1. Gå till erbjudandeutrymmet och klicka på länken **[!UICONTROL Edit functions]**.
 1. Välj **[!UICONTROL Overload the HTML rendering function]**.
-1. Gå till **[!UICONTROL HTML rendering]** fliken och infoga de variabler som matchar fälten som definierats för erbjudandeinnehållet i erbjudandeutrymmet.
+1. Gå till fliken **[!UICONTROL HTML rendering]** och infoga de variabler som matchar fälten som definierats för erbjudandeinnehållet i erbjudandeutrymmet.
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -149,15 +150,15 @@ Anropet till interaktionsmotorn ser ut så här:
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-Parametern &quot;**env**&quot; tar emot det interna namnet på den aktiva miljön.
+Parametern **env** får det interna namnet på den aktiva miljön.
 
-Parametern &quot;**cb**&quot; tar emot namnet på funktionen som ska läsa XML-noden som returneras av motorn som innehåller (återanrop). Den här parametern är valfri.
+Parametern **cb** får namnet på funktionen som ska läsa XML-noden som returneras av motorn som innehåller (återanrop). Den här parametern är valfri.
 
-Parametern &quot;**t**&quot; tar emot värdet för målet, endast för en identifierad interaktion. Den här parametern kan också skickas med **interactionTarget** -variabeln. Den här parametern är valfri.
+Parametern &quot;**t**&quot; tar emot värdet för målet, endast för en identifierad interaktion. Den här parametern kan också skickas med variabeln **interactionTarget**. Den här parametern är valfri.
 
-Parametern &quot;**c**&quot; får listan med interna namn för kategorierna. Den här parametern är valfri.
+Parametern **c** får listan med interna namn för kategorierna. Den här parametern är valfri.
 
-Parametern &quot;**th**&quot; får listan med teman. Den här parametern är valfri.
+Parametern **th** får listan med teman. Den här parametern är valfri.
 
 Parametern &quot;**gctx**&quot; tar emot anropsdata global (context) till hela sidan. Den här parametern är valfri.
 
@@ -176,7 +177,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
 1. **Skapa en miljö och ett utrymme för erbjudanden**
 
-   Mer information om hur du skapar en miljö finns i [Live-/designmiljöer](../../interaction/using/live-design-environments.md).
+   Mer information om hur du skapar en miljö finns i [Live/Design-miljöer](../../interaction/using/live-design-environments.md).
 
    Mer information om hur du skapar ett erbjudandeutrymme finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
 
@@ -221,7 +222,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
 1. **Utöka erbjudandeformeln för att redigera nya fält och ändra ett befintligt fält**
 
-   Redigera formuläret **Erbjudande (nsm)** .
+   Redigera **Erbjudandet (nsm)**-indataformuläret.
 
    I avsnittet Vyer infogar du de två nya fälten med följande innehåll:
 
@@ -261,13 +262,13 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
    >[!IMPORTANT]
    >
-   >Fälten i ( `<input>`)-formuläret måste peka på de CDATA-tytelement som definieras i det skapade schemat.
+   >Fälten i ( `<input>`)-formuläret måste peka på elementen för CDATA-typen som definieras i det skapade schemat.
 
    Återgivningen i formuläret för erbjudanderepresentationer ser ut så här:
 
    ![](assets/interaction_xmlmode_form.png)
 
-   Fälten **[!UICONTROL Title 2]** och **[!UICONTROL Price]** har lagts till och **[!UICONTROL Destination URL]** fältet visas inte längre.
+   Fälten **[!UICONTROL Title 2]** och **[!UICONTROL Price]** har lagts till och fältet **[!UICONTROL Destination URL]** visas inte längre.
 
 1. **Skapa ett erbjudande**
 
@@ -286,9 +287,9 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   Värdet för parametern &quot;**env**&quot; är det interna namnet på den aktiva miljön.
+   Värdet för parametern **env** är det interna namnet på den aktiva miljön.
 
-   Värdet för parametern &quot;**cb**&quot; är namnet på funktionen som måste tolka XML-noden som returneras av motorn. I det här exemplet öppnar den anropade funktionen ett modalt fönster (funktionen alert()).
+   Värdet för parametern **cb** är namnet på funktionen som behöver tolka XML-noden som returneras av motorn. I det här exemplet öppnar den anropade funktionen ett modalt fönster (funktionen alert()).
 
    XML-noden som returneras av interaktionsmotorn ser ut så här:
 
@@ -312,9 +313,9 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
 Det går att använda en XML-återgivningsfunktion för att skapa en erbjudandepresentation. Den här funktionen ändrar XML-noden som returneras till HTML-sidan under anropet till motorn.
 
-1. Gå till erbjudandeutrymmet och klicka på **[!UICONTROL Edit functions]** länken.
+1. Gå till erbjudandeutrymmet och klicka på länken **[!UICONTROL Edit functions]**.
 1. Välj **[!UICONTROL Overload the XML rendering function]**.
-1. Gå till **[!UICONTROL XML rendering]** fliken och infoga den önskade funktionen.
+1. Gå till fliken **[!UICONTROL XML rendering]** och infoga önskad funktion.
 
    Funktionen kan se ut så här:
 
