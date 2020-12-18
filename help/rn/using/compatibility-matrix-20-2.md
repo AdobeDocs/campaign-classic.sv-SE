@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 19%
+ht-degree: 83%
 
 ---
 
@@ -21,37 +21,37 @@ I det här dokumentet visas alla system och komponenter som stöds för den sena
 
 ## Viktiga anteckningar{#important-notes}
 
-Den här matrisen uppdateras regelbundet med nya objekt som stöds och borttagna objekt.
+Den här matrisen uppdateras regelbundet med nya objekt som stöds och inaktuella objekt som tas bort.
 
-Om inget annat anges stöds alla mindre releaser.
+Om inget annat anges stöds alla mindre versioner.
 
-Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i följande produktversion. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
 
-Mer information om borttagna objekt finns på [den här sidan](../../rn/using/deprecated-features.md).
+Besök [den här sidan](../../rn/using/deprecated-features.md) för mer information om inaktuella objekt.
 
-## Operating Systems{#OperatingSystems}
+## Operativsystem{#OperatingSystems}
 
 <table> 
 <tbody> 
 <tr> 
 <td>CentOs</td>
 <td>
-<p>7.x (64 bitar)</p>
+<p>7.x (64 bitars)</p>
 </td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>8 (64 bitar)</p>
-<p>9 (64 bitar)</p>
-<p>10 (64 bitar)</p>
+<p>8 (64 bitars)</p>
+<p>9 (64 bitars)</p>
+<p>10 (64 bitars)</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>7.x (64 bitar)</p>
-<p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.</p>
+<p>7.x (64 bitars)</p>
+<p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -65,14 +65,14 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 </tbody>
 </table>
 
-## Web Servers{#WebServers}
+## Webbservrar{#WebServers}
 
 <table>
 <tbody>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>8.0 i Windows Server 2012 - Windows 8</p>
+<p>8.0 i Windows Server 2012 – Windows 8</p>
 <p>8.5 i Windows Server 2012 R2</p>
 <p>10.0 i Windows Server 2016</p>
 </td>
@@ -80,7 +80,7 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 för RHEL7 - CentOS 7, Debian 8/9, Windows (64 bitar)</p>
+<p>2.4 för RHEL7 – CentOS 7, Debian 8/9, Windows (64 bitars)</p>
 </td>
 </tr>
 </tbody>
@@ -95,13 +95,13 @@ Mer information om borttagna objekt finns på [den här sidan](../../rn/using/de
 <td>
 <p>8</p>
 <p>9</p>
-<p>Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för OpenJDK.</p>
+<p>Programvaran har godkänts för Java Development Kit (JDK) som har utvecklats av Oracle samt för OpenJDK.</p>
 </td>
 </tr>
 <tr>
-<td>Libre</td>
+<td>Libre Office</td>
 <td>
-<p>6 (och tidigare versioner om de är inbäddade i systemet)</p>
+<p>6 (och föregående versioner om de är inbäddade i systemet)</p>
 </td>
 </tr>
 <tr>
@@ -159,7 +159,7 @@ Följande RDBMS-drivrutiner stöds:
 <tr>
 <td>SQL Server</td>
 <td>
-<p>2012 - SP1 och SP2</p>
+<p>2012 – SP1 och SP2</p>
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
@@ -171,14 +171,14 @@ Följande RDBMS-drivrutiner stöds:
 
 >[!NOTE]
 >
->PostgreSQL är standarddatabasservern för hostingmiljöer.
+>PostgreSQL är den standardiserade databasservern för värdbaserade miljöer.
 
 ## CRM-kopplingar{#CRMconnectors}
 
 <table>
 <tbody>
 <tr>
-<td>Salesforce-anslutnings-API</td>
+<td>API för Salesforce-anslutning</td>
 <td>
 <p>API-version 37</p>
 </td>
@@ -187,12 +187,12 @@ Följande RDBMS-drivrutiner stöds:
 <td>SFDC API</td>
 <td>
 <p>API-version 15</p>
-<p>API version 21</p>
+<p>API-version 21</p>
 </td>
 </tr>
 <tr><td>Oracle On Demand-API</td>
 <td>
-<p>Webbtjänster v1.0 API</p>
+<p>API för Webbtjänster v1.0</p>
 </td>
 </tr>
 <tr>
@@ -200,18 +200,18 @@ Följande RDBMS-drivrutiner stöds:
 <td>
 <p>Soap API – lokal: 2007, 2015 och 2016</p>
 <p>Soap API – online: 2015 och 2016</p>
-<p>Webb-API - lokalt och online: 365, 2016, 2016 uppdatering 1</p>
+<p>Webb-API – lokalt och online: 365, 2016, 2016 uppdatering 1</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Federated Data Access (FDA){#FederatedDataAccessFDA}
+## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure synapse Analytics</td>
+<td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@ Följande RDBMS-drivrutiner stöds:
 </tbody>
 </table>
 
-## Operativsystem för Client Console{#ClientConsoleoperatingsystems}
+## Operativsystem för klientkonsoler{#ClientConsoleoperatingsystems}
 
 <table>
 <tbody>
@@ -307,7 +307,7 @@ Följande RDBMS-drivrutiner stöds:
 <td>Windows</td>
 <td>
 <p>8</p>
-<p>10 (rekommenderas för japanska förekomster)</p>
+<p>10 (rekommenderas för japanska instanser)</p>
 </td>
 </tr>
 </tbody>
@@ -323,7 +323,7 @@ Följande RDBMS-drivrutiner stöds:
 <p>7.x</p>
 <p>8.x</p>
 <p>9.0</p>
-<p>med mobil SDK build 1.0.27.</p>
+<p>med mobil SDK version 1.0.27.</p>
 </td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ Följande RDBMS-drivrutiner stöds:
 <p>iOS 11</p>
 <p>iOS 12</p>
 <p>iOS 13</p>
-<p>med mobil SDK build 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
+<p>med mobil SDK version 1.0.26, kompatibel med 32- och 64-bitarsversioner.</p>
 </td>
 </tr>
 </tbody>
@@ -356,14 +356,14 @@ Den senaste versionen stöds i följande webbläsare:
 
 ## Experience Cloud-integreringar{#ExperienceCloudintegrations}
 
-Om du har integrerat med lösningar från Adobe finns mer information i det här [avsnittet](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
+För integreringar med lösningar från Adobe, se [avsnittet](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
 
 ## Mer som detta{#Morelikethis}
 
-* [Versionsinformation om Campaign Classic](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html)
+* [Versionsinformation om Campaign Classic ](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/release-notes/latest-release.html)
 * [Installationshandbok](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [Föråldrade funktioner och system](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
-* [Uppgraderingsprocedur](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
+* [Inaktuella funktioner och system](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
+* [Procedur för versionsuppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
 * [Kompatibilitetsmatris för Campaign Classic för version 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html)
 * [Kompatibilitetsmatris för Campaign Classic för version 19.1](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-1.html)
 
