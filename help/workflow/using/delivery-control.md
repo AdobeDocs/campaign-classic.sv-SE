@@ -17,13 +17,13 @@ ht-degree: 2%
 
 # Leveranskontroll{#delivery-control}
 
-Med en åtgärd av typen **Leveranskontroll** kan du starta, pausa eller stoppa en leverans.
+Med åtgärden **Leveranskontroll** kan du starta, pausa eller stoppa en leverans.
 
-Detta kan vara leveransen som anges i övergången, en leverans som valts uttryckligen eller en leverans som beräknas av ett skript. For more on this, refer to [Delivery](../../workflow/using/delivery.md).
+Detta kan vara leveransen som anges i övergången, en leverans som valts uttryckligen eller en leverans som beräknas av ett skript. Mer information finns i [Leverans](../../workflow/using/delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-Om du väljer **[!UICONTROL Start]** det här alternativet utför aktiviteten alla steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Om några av dessa steg redan har utförts av en tidigare arbetsflödesaktivitet, kommer de inte att utföras igen. Om måluppskattningen till exempel redan utfördes av en **[!UICONTROL Delivery]** typaktivitet (se [Leverans](../../workflow/using/delivery.md)), kommer aktiviteten att starta de återstående stegen (förberedelse och leverans av **[!UICONTROL Act on the delivery]** innehåll).
+Om du väljer **[!UICONTROL Start]** utför aktiviteten alla steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Om några av dessa steg redan har utförts av en tidigare arbetsflödesaktivitet, kommer de inte att utföras igen. Om måluppskattningen till exempel redan utfördes av en **[!UICONTROL Delivery]**-typaktivitet (se [Leverans](../../workflow/using/delivery.md)) startar aktiviteten **[!UICONTROL Act on the delivery]** de återstående stegen (förberedelse och leverans av innehåll).
 
 Följande alternativ är tillgängliga:
 
