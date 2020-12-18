@@ -19,13 +19,13 @@ ht-degree: 3%
 
 SOAP-webbtjänster för erbjudandehantering skiljer sig från dem som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
 
-## Erbjudandeförslag {#offer-proposition}
+## Erbjudandeerbjudande {#offer-proposition}
 
-Lägg till kommandot **nms:proposition#Propose** följt av följande parametrar för ett erbjudande via SOAP:
+Lägg till kommandot **nms:proposition#Propose** för ett erbjudande via SOAP följt av följande parametrar:
 
 * **targetId**: mottagarens primärnyckel (kan vara en sammansatt nyckel).
 * **maxCount**: Anger antalet erbjudandeförslag för kontakten.
-* **kontext**: I kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction**, **`<empty>`** bör läggas till.
+* **kontext**: I kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction**, ska **`<empty>`** läggas till.
 * **kategorier**: anger den eller de kategorier som erbjudandena måste tillhöra.
 * **teman**: anger temat som erbjudandet eller erbjudandena måste tillhöra.
 * **uuid**: värdet på Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
@@ -45,9 +45,9 @@ SOAP-tjänsten returnerar följande parametrar som svar på frågan:
 
 Lägg till kommandot **nms:interaction#UpdateStatus** i URL:en, följt av följande parametrar:
 
-* **Föreslå**: teckensträng, innehåller det förslags-ID som anges som utdata under ett erbjudande. Se [Erbjudandeförslag](#offer-proposition).
-* **status**: strängtyp, anger erbjudandets nya status. Möjliga värden visas i uppräkningen **propositionStatus** i schemat **nms:common** . Till exempel motsvarar siffran 3 statusen **Godkänd** .
-* **kontext**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction**, **`<empty>`** bör läggas till.
+* **Föreslå**: teckensträng, innehåller det förslags-ID som anges som utdata under ett erbjudande. Se [Erbjudandeerbjudande](#offer-proposition).
+* **status**: strängtyp, anger erbjudandets nya status. Möjliga värden visas i **propositionStatus**-uppräkningen i **nms:common**-schemat. Till exempel motsvarar siffran 3 statusen **Accepterad**.
+* **kontext**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction**, ska **`<empty>`** läggas till.
 
 ## Exempel på hur du använder ett SOAP-anrop {#example-using-a-soap-call}
 
