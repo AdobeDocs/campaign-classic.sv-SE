@@ -21,7 +21,7 @@ Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vi
 
 På den här sidan visas de viktigaste skillnaderna mellan värdbaserade (Managed Services) och lokala distributioner. Specifikationer för hybriddriftsättningar beror på vilka element som ligger hos Adobe och hos er.
 
-De olika värdmodellerna finns [i det här avsnittet](../../installation/using/hosting-models.md).
+De olika värdmodellerna introduceras [i det här avsnittet](../../installation/using/hosting-models.md).
 
 ## Tillgänglighet per distributionsmodell {#capability-matrix}
 
@@ -41,13 +41,13 @@ De olika värdmodellerna finns [i det här avsnittet](../../installation/using/h
 | Konfigurerar LDAP-autentisering | Inte tillgängligt | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/connecting-through-ldap.md) |
 
 
-## Federated Data Access{#fda}
+## Åtkomst till federerade data{#fda}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [Läs mer](../../installation/using/about-fda.md)
+Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign. [Läs mer](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Åtkomst till en extern databas via FDA är endast möjlig för anläggningsinstallationer eller hybridinstallationer, med undantag för [Snowflake-anslutaren](../../installation/using/configure-fda-snowflake.md).
+>Åtkomst till en extern databas via FDA är bara möjlig för lokala eller hybridinstallationer, förutom med [Snowflake-anslutaren](../../installation/using/configure-fda-snowflake.md).
 
 
 **Se även**
