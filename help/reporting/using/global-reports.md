@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Globala rapporter {#global-reports}
 
-Dessa rapporter gäller aktiviteten hos data i hela databasen. Om du vill visa rapportkontrollpanelen går du till **[!UICONTROL Reports]** fliken.
+Dessa rapporter gäller aktiviteten hos data i hela databasen. Gå till fliken **[!UICONTROL Reports]** om du vill visa rapportkontrollpanelen.
 
 ![](assets/s_ncs_user_report_delivery_link.png)
 
@@ -29,19 +29,19 @@ Om du vill visa rapporter klickar du på deras namn. Följande rapporter är til
 >
 >I det här avsnittet visas endast rapporter som är länkade till leveranser.
 
-* **[!UICONTROL Delivery throughput]** : se [Leveransflöde](#delivery-throughput).
-* **[!UICONTROL Browsers]** : se [Webbläsare](#browsers).
-* **[!UICONTROL Sharing to social networks]** : se [Delning till sociala nätverk](#sharing-to-social-networks).
-* **[!UICONTROL Statistics on sharing activities]** : se [Statistik om delning av aktiviteter](#statistics-on-sharing-activities).
-* **[!UICONTROL Operating systems]** : se [Operativsystem](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : se [URL:er och klicka på strömmar](../../reporting/using/delivery-reports.md#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : se [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Non-deliverables and bounces]** : hänvisa till [Ej levererbara produkter och studsar](#non-deliverables-and-bounces).
-* **[!UICONTROL User activities]** : se [Användaraktiviteter](#user-activities).
-* **[!UICONTROL Subscription tracking]** : se [Prenumerationsspårning](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : se [Leveranssammanfattning](../../reporting/using/delivery-reports.md#delivery-summary).
-* **[!UICONTROL Delivery statistics]** : se [Leveransstatistik](#delivery-statistics).
-* **[!UICONTROL Breakdown of opens]** : se [Indelning av öppningar](#breakdown-of-opens).
+* **[!UICONTROL Delivery throughput]** : se  [Leveransflöde](#delivery-throughput).
+* **[!UICONTROL Browsers]** : se  [Webbläsare](#browsers).
+* **[!UICONTROL Sharing to social networks]** : se  [Delning till sociala nätverk](#sharing-to-social-networks).
+* **[!UICONTROL Statistics on sharing activities]** : se  [Statistik om delning av aktiviteter](#statistics-on-sharing-activities).
+* **[!UICONTROL Operating systems]** : se  [Operativsystem](#operating-systems).
+* **[!UICONTROL URLs and click streams]** : se  [URL:er och klicka på strömmar](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** : se  [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Non-deliverables and bounces]** : hänvisa till  [Ej levererbara produkter och studsar](#non-deliverables-and-bounces).
+* **[!UICONTROL User activities]** : se  [Användaraktiviteter](#user-activities).
+* **[!UICONTROL Subscription tracking]** : se  [Prenumerationsspårning](#subscription-tracking).
+* **[!UICONTROL Delivery summary]** : se  [Leveranssammanfattning](../../reporting/using/delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]** : se  [Leveransstatistik](#delivery-statistics).
+* **[!UICONTROL Breakdown of opens]** : se  [Indelning av öppningar](#breakdown-of-opens).
 
 ## Leveransflöde {#delivery-throughput}
 
@@ -61,13 +61,13 @@ Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Opens]** : Totalt antal öppnade meddelanden. E-post i textformat tas inte med i beräkningen. Mer information om att spåra öppningar finns i [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Totalt antal klick på länkar i leveranser. Klickningar på prenumerationslänkar och spegelsidor beaktas inte.
-* **[!UICONTROL Transactions]** : Totalt antal transaktioner efter att ett meddelande har tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+* **[!UICONTROL Transactions]** : Totalt antal transaktioner efter att ett meddelande har tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Webbspårningskonfigurationen visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
 ## Ej levererbara filer och studsningar {#non-deliverables-and-bounces}
 
 I den här rapporten visas uppdelningen av icke-levererbara produkter samt en uppdelning av belopp per Internetdomän.
 
-Det här **[!UICONTROL Number of messages processed]** representerar det totala antalet meddelanden som bearbetas av leveransservern. Värdet är lägre än antalet meddelanden som ska levereras när vissa leveranser har stoppats eller pausats (innan de bearbetas av servern).
+**[!UICONTROL Number of messages processed]** representerar det totala antalet meddelanden som bearbetas av leveransservern. Värdet är lägre än antalet meddelanden som ska levereras när vissa leveranser har stoppats eller pausats (innan de bearbetas av servern).
 
 ![](assets/s_ncs_user_errors_report.png)
 
@@ -99,7 +99,7 @@ Följande indikatorer används:
    >
    >Denna indikator gäller endast leveranser i mobilkanaler. Mer information om detta finns i [det här avsnittet](../../delivery/using/sms-channel.md).
 
-   Du kan öppna varje rad i värdetabellen genom att klicka på `[+]` symbolen. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
+   Du kan öppna varje rad i värdetabellen genom att klicka på symbolen `[+]`. För varje feltyp kan du visa hur felmeddelandena är uppdelade efter domän.
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
@@ -113,13 +113,13 @@ För varje domännamn har vi:
 * Andelen meddelanden med fel för den här domänen jämfört med det totala antalet meddelanden som bearbetats för den här domänen.
 * procentandelen felmeddelanden för den här domänen jämfört med det totala antalet felmeddelanden.
 
-Du kan öppna varje rad i värdetabellen genom att klicka på [+] -symbolen. För varje domäntyp kan du visa hur felmeddelanden är uppdelade efter feltyp.
+Du kan öppna varje rad i värdetabellen genom att klicka på symbolen [+]. För varje domäntyp kan du visa hur felmeddelanden är uppdelade efter feltyp.
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kuben. Mer information om detta finns i [det här avsnittet](../../reporting/using/about-cubes.md). Kategorin innehåller **[!UICONTROL Others]** domännamn som inte tillhör en viss klass.
+>Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du kuben **[!UICONTROL Delivery logs (broadlogrcp)]**. Mer information om detta finns i [det här avsnittet](../../reporting/using/about-cubes.md). Kategorin **[!UICONTROL Others]** innehåller domännamn som inte tillhör en viss klass.
 
 ## Webbläsare {#browsers}
 
@@ -151,7 +151,7 @@ Statistiken presenteras i form av en kurva, ett diagram och en värdetabell.
 
 Kurvan **[!UICONTROL History]** representerar närvarofrekvensen för den här webbläsaren per dag. Frekvensen är förhållandet mellan antalet besökare per dag (i den här webbläsaren) och antalet besökare som mäts på dagen med den högsta närvarofrekvensen.
 
-Diagrammet visar hur många besökare som har delat upp sig per version jämfört med det totala antalet besökare (i den här webbläsaren). **[!UICONTROL Breakdown per version]**
+Diagrammet **[!UICONTROL Breakdown per version]** visar uppdelningen av besökare per version jämfört med det totala antalet besökare (i den här webbläsaren).
 
 I värdetabellen används följande indikatorer:
 
@@ -160,7 +160,7 @@ I värdetabellen används följande indikatorer:
 
 ### Delning till sociala nätverk {#sharing-to-social-networks}
 
-Med virusmarknadsföring kan mottagarna dela information med sina kontaktnätverk: kan de lägga till en länk till sin profil (Facebook, Twitter osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras inom leveransen. For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
+Med virusmarknadsföring kan mottagarna dela information med sina kontaktnätverk: kan de lägga till en länk till sin profil (Facebook, Twitter osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras inom leveransen. Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
 
 Den här rapporten visar hur delade och öppna meddelanden per socialt nätverk (Facebook, Twitter osv.) delas upp och/eller per e-post.
 
@@ -177,15 +177,15 @@ I e-postleveransstatistiken visas två värden:
 
 Den centrala tabellen visar statistik om e-postdelningar och öppningar.
 
-I **[!UICONTROL Shares]** kolumnen har vi följande indikatorer:
+I kolumnen **[!UICONTROL Shares]** har vi följande indikatorer:
 
-* **[!UICONTROL No. of sharing activities]** : Totalt antal meddelanden som delas på varje socialt nätverk. Det här värdet är lika med det totala antalet klick på ikonen för det matchande **[!UICONTROL Links for sharing to social networks]** anpassningsblocket.
+* **[!UICONTROL No. of sharing activities]** : Totalt antal meddelanden som delas på varje socialt nätverk. Det här värdet är lika med det totala antalet klick på ikonen för det matchande **[!UICONTROL Links for sharing to social networks]**-anpassningsblocket.
 * **[!UICONTROL Breakdown]** : Denna räntesats motsvarar fördelningen av aktier per socialt nätverk i förhållande till det totala antalet aktier.
 * **[!UICONTROL Sharing rate]** : Denna räntesats motsvarar fördelningen av aktier per socialt nätverk i förhållande till antalet meddelanden som ska levereras.
 
-I **[!UICONTROL Opens]** kolumnen har vi följande indikatorer:
+I kolumnen **[!UICONTROL Opens]** har vi följande indikatorer:
 
-* **[!UICONTROL No. of opens]** : Totalt antal meddelanden som har öppnats av personer som meddelandet har vidarebefordrats till (via **[!UICONTROL Links for sharing to social networks]** anpassningsblocket). Det här värdet är lika med antalet gånger som spegelsidan visades. Öppnar av leveransmottagare beaktas inte.
+* **[!UICONTROL No. of opens]** : Totalt antal meddelanden som öppnats av personer som meddelandet vidarebefordrats till (via  **[!UICONTROL Links for sharing to social networks]** anpassningsblocket). Det här värdet är lika med antalet gånger som spegelsidan visades. Öppnar av leveransmottagare beaktas inte.
 * **[!UICONTROL Breakdown]** : Denna frekvens representerar fördelningen av öppningar per socialt nätverk i förhållande till det totala antalet öppningar.
 * **[!UICONTROL Rate of opens]** : Denna räntesats motsvarar fördelningen av öppningar per socialt nätverk i förhållande till det totala antalet aktier.
 
@@ -193,11 +193,11 @@ I **[!UICONTROL Opens]** kolumnen har vi följande indikatorer:
 
 I det här avsnittet finns två diagram som visar hur delningsaktiviteter delas upp och öppnas per socialt nätverk.
 
-## Statistik om delningsaktiviteter {#statistics-on-sharing-activities}
+## Statistik för delningsaktiviteter {#statistics-on-sharing-activities}
 
 Den här rapporten visar hur delningar har utvecklats till sociala nätverk (Facebook, Twitter, e-post osv.) i tid.
 
-For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
+Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
 
 ![](assets/s_ncs_user_social_report2.png)
 
@@ -206,8 +206,8 @@ Statistiken presenteras i form av en värdetabell och ett diagram.
 Följande indikatorer används:
 
 * **[!UICONTROL New contacts]** : Antal nya prenumerationer efter att ett meddelande som delats via e-post har tagits emot. Det här värdet matchar antalet personer som fick ett meddelande som delades via e-post, klickade på **[!UICONTROL Subscription link]** och fyllde i prenumerationsformuläret.
-* **[!UICONTROL Opens]** : Totalt antal meddelanden som öppnats av personer som meddelandet överfördes till (via **[!UICONTROL Link for sharing to social networks]** anpassningsblocket). Det här värdet är lika med antalet gånger som spegelsidan visades. Öppnar av leveransmottagare beaktas inte.
-* **[!UICONTROL Sharing activities]** : Totalt antal meddelanden som delas via sociala nätverk. Det här värdet matchar det totala antalet klick på ikonen i **[!UICONTROL Links for sharing to social networks]** anpassningsblocket.
+* **[!UICONTROL Opens]** : Totalt antal meddelanden som öppnats av personer som meddelandet överfördes till (via  **[!UICONTROL Link for sharing to social networks]** anpassningsblocket). Det här värdet är lika med antalet gånger som spegelsidan visades. Öppnar av leveransmottagare beaktas inte.
+* **[!UICONTROL Sharing activities]** : Totalt antal meddelanden som delas via sociala nätverk. Det här värdet matchar det totala antalet klick på ikonen för **[!UICONTROL Links for sharing to social networks]**-anpassningsblocket.
 
 ## Operativsystem {#operating-systems}
 
@@ -237,9 +237,9 @@ I tabellen med globala statistikvärden klickar du på namnet på varje operativ
 
 Statistiken presenteras i form av en kurva, ett diagram och en värdetabell.
 
-Kurvan visar hur ofta operativsystemet används per dag. **[!UICONTROL History]** Den här frekvensen är förhållandet mellan antalet besökare per dag (i det här operativsystemet) och antalet besökare som mäts på dagen med den högsta närvaron.
+Kurvan **[!UICONTROL History]** representerar användarfrekvensen för det här operativsystemet per dag. Den här frekvensen är förhållandet mellan antalet besökare per dag (i det här operativsystemet) och antalet besökare som mäts på dagen med den högsta närvaron.
 
-Diagrammet visar **[!UICONTROL Breakdown by version]** fördelningen av besökare per version i förhållande till det totala antalet besökare i det här operativsystemet.
+Diagrammet **[!UICONTROL Breakdown by version]** visar uppdelningen av besökare per version i relation till det totala antalet besökare i det här operativsystemet.
 
 I värdetabellen används följande indikatorer:
 
@@ -252,11 +252,11 @@ I den här rapporten kan du övervaka prenumerationer på informationstjänster.
 
 ![](assets/s_ncs_user_services_report.png)
 
-Den kan visas för en prenumeration genom att klicka på **[!UICONTROL Profiles and targets > Services and subscriptions]** noden på hemsidan eller utforskaren. Välj önskad prenumeration och klicka sedan på **[!UICONTROL Reports]** fliken. Rapporten är som standard **[!UICONTROL Subscriptions tracking]** tillgänglig. Här kan du se trender för prenumeration och avprenumeration samt lojalitetsnivån under en period. Du kan konfigurera representationen av dessa data via listrutan. Klicka **[!UICONTROL Refresh]** för att validera den valda konfigurationen.
+Den kan visas för en prenumeration genom att klicka på noden **[!UICONTROL Profiles and targets > Services and subscriptions]** på hemsidan eller utforskaren. Välj önskad prenumeration och klicka sedan på fliken **[!UICONTROL Reports]**. Rapporten **[!UICONTROL Subscriptions tracking]** är tillgänglig som standard. Här kan du se trender för prenumeration och avprenumeration samt lojalitetsnivån under en period. Du kan konfigurera representationen av dessa data via listrutan. Klicka på **[!UICONTROL Refresh]** för att validera den valda konfigurationen.
 
-For further information, refer to [this page](../../delivery/using/managing-subscriptions.md).
+Mer information finns på [den här sidan](../../delivery/using/managing-subscriptions.md).
 
-Det här **[!UICONTROL Number subscribed to date]** representerar det totala antalet personer som för närvarande prenumererar.
+**[!UICONTROL Number subscribed to date]** representerar det totala antalet personer som för närvarande prenumererar.
 
 **[!UICONTROL Overall evolution of subscriptions]**
 
@@ -293,11 +293,11 @@ Följande indikatorer används:
 * **[!UICONTROL Clicks]** : procentandelen personer som klickade på en leverans minst en gång jämfört med antalet meddelanden som bearbetades.
 * **[!UICONTROL Unsubscription]** : procent av antalet klick på en länk för att avbryta prenumerationen jämfört med antalet meddelanden som har bearbetats.
 
-## Indelning av öppningar {#breakdown-of-opens}
+## Uppdelning av öppningar {#breakdown-of-opens}
 
 Denna rapport visar hur öppningarna fördelats efter operativsystem, enhet och webbläsare under den aktuella perioden. För varje kategori används två diagram. Den första visar statistik om öppningar på datorer och mobila enheter. Den andra visar statistik som endast gäller öppningar på mobila enheter.
 
-Antalet öppningar motsvarar det totala antalet öppnade meddelanden. E-postmeddelanden i textformat räknas inte. Mer information om att spåra öppnas finns i avsnittet [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-) .
+Antalet öppningar motsvarar det totala antalet öppnade meddelanden. E-postmeddelanden i textformat räknas inte. Mer information om att spåra öppnas finns i avsnittet [Spåra öppningar](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 ![](assets/dlv_useragent_report.png)
 
