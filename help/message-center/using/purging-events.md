@@ -19,7 +19,7 @@ ht-degree: 6%
 
 Du kan använda distributionsguiden för att konfigurera hur länge data ska lagras i databasen.
 
-Händelserensning utförs automatiskt av **[!UICONTROL Database cleanup]** arbetsflödet. Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
+Händelserensning utförs automatiskt av arbetsflödet **[!UICONTROL Database cleanup]**. Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
 
 Använd pilarna för att ändra inställningarna för tömning.
 
