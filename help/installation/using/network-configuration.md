@@ -59,7 +59,7 @@ För leveransservern (**nlserver mta**) måste följande portar vara öppna:
 
 ### Inkommande e-post {#inbound-mail}
 
-Följande portar måste vara öppna för återställning av inkommande e-post (**nlserver inMail**):
+Följande portar måste vara öppna för processen för återställning av inkommande e-post (**nlserver inMail**):
 
 <table> 
  <tbody> 
@@ -70,12 +70,12 @@ Följande portar måste vara öppna för återställning av inkommande e-post (*
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
-   <td> Intern e-postserver<br /> </td> 
+   <td> Server för intern e-post<br /> </td> 
    <td> POP3-trafik för att hämta studsmeddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> Intern e-postserver<br /> </td> 
+   <td> Server för intern e-post<br /> </td> 
    <td> SMTP-trafik för att skicka återstående studsmeddelanden som inte bearbetas automatiskt av de fördefinierade reglerna.<br /> </td> 
   </tr> 
  </tbody> 
@@ -83,7 +83,7 @@ Följande portar måste vara öppna för återställning av inkommande e-post (*
 
 ### Programserver {#application-server}
 
-För programservern (**nlserver web**) måste följande portar vara öppna:
+Följande portar måste vara öppna för programservern (**nlserver web**):
 
 <table> 
  <tbody> 
@@ -121,9 +121,9 @@ För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öp
  </tbody> 
 </table>
 
-### Rich Client {#rich-client}
+### Rich client {#rich-client}
 
-För Adobe Campaign Rich Client (**nlclient**) måste följande portar vara öppna:
+För Adobe Campaign-klienten (**nlclient**) måste följande portar vara öppna:
 
 <table> 
  <tbody> 
@@ -226,7 +226,7 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
 
 ## Integrering med Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar den här integreringen finns i den [detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
+Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar den här integreringen finns i [den detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
