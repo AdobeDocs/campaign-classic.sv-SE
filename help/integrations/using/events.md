@@ -31,13 +31,13 @@ Eftersom det krävs tekniska kunskaper för att redigera Javascript-koden bör d
 
 Pipeline använder en JavaScript-funktion för att bearbeta varje meddelande. Den här funktionen är användardefinierad.
 
-Den är konfigurerad i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Detta javascript anropas varje gång en händelse tas emot. Det styrs av [!DNL pipelined] processen.
+Den är konfigurerad i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Detta javascript anropas varje gång en händelse tas emot. Den körs av [!DNL pipelined]-processen.
 
 Javascript-exempelfilen är cus:triggers.js.
 
 ### JavaScript-funktion {#function-js}
 
-Javascript- [!DNL pipelined] filen måste börja med en viss funktion.
+JavaScript-koden [!DNL pipelined] måste börja med en specifik funktion.
 
 Den här funktionen anropas en gång för varje händelse:
 
@@ -55,7 +55,7 @@ Du bör starta om [!DNL pipelined] när du har redigerat Javascript.
 
 ### Utlös dataformat {#trigger-format}
 
-Data skickas [!DNL trigger] till JS-funktionen i XML-format.
+[!DNL trigger]-data skickas till JS-funktionen i XML-format.
 
 * Attributet **[!UICONTROL @triggerId]** innehåller namnet på [!DNL trigger].
 * Elementet **enrichments** i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
@@ -71,7 +71,7 @@ Exempel:
  </trigger>
 ```
 
-### Berikning av dataformat {#enrichment-format}
+### Dataformatsberikning {#enrichment-format}
 
 >[!NOTE]
 >
@@ -110,20 +110,20 @@ Exempel:
 
 ### Bearbetningsordning för händelser{#order-events}
 
-Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL pipelined] bearbetar en egen partition.
+Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL pipelined] bearbetar en annan partition.
 
 &quot;Offset&quot; för den senaste händelsen som hämtats lagras i databasen. Om processen stoppas startar den därför om från det sista meddelandet. Dessa data lagras i det inbyggda schemat xtk:pipelineOffset.
 
 Den här pekaren är specifik för varje förekomst och varje konsument. När många instanser använder samma pipeline med olika konsumenter får de därför alla meddelanden och i samma ordning.
 
-Pipeline-alternativets **konsumentparameter** identifierar den anropande instansen.
+Parametern **Consumer** för pipelinealternativet identifierar den anropande instansen.
 
 Det finns för närvarande inget sätt att ha olika köer för olika miljöer som&quot;staging&quot; eller&quot;dev&quot;.
 
 ### Loggning och felhantering {#logging-error-handling}
 
-Loggar som logInfo() dirigeras till [!DNL pipelined] loggen. Fel som logError() skrivs till [!DNL pipelined] loggen och gör att händelsen placeras i en ny försökskö. I det här fallet bör du kontrollera loggen i pipeline.
-Felmeddelanden provas flera gånger under den varaktighet som angetts i [!DNL pipelined] alternativen.
+Loggar som logInfo() dirigeras till [!DNL pipelined]-loggen. Fel som logError() skrivs till [!DNL pipelined]-loggen och gör att händelsen placeras i en ny försökskö. I det här fallet bör du kontrollera loggen i pipeline.
+Felmeddelanden provas flera gånger under den varaktighet som angetts för [!DNL pipelined]-alternativen.
 
 För felsökning och övervakning skrivs alla utlösande data i utlösartabellen i fältet&quot;data&quot; i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
 
@@ -187,7 +187,7 @@ Kontexten för detta JavaScript är begränsad. Alla funktioner i API:t är inte
 
 För att möjliggöra snabbare bearbetning körs flera trådar i det här skriptet samtidigt. Koden måste vara trådsäker.
 
-## Lagra händelser {#store-events}
+## Lagra händelserna {#store-events}
 
 >[!NOTE]
 >
@@ -218,11 +218,11 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 
 >[!NOTE]
 >
->Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../configuration/using/about-navigation-hierarchy.md) och [formulärredigering](../../configuration/using/editing-forms.md).
+>Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../configuration/using/about-navigation-hierarchy.md) och [Redigera formulär](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
-## Bearbeta händelserna {#processing-the-events}
+## Bearbetar händelserna {#processing-the-events}
 
 ### Avstämningsarbetsflöde {#reconciliation-workflow}
 
@@ -241,7 +241,7 @@ Det kan vara svårt att implementera om inget index anges för shopper_id. Om vi
 
 Utlösare bearbetas inom en timme. Volymen kan vara cirka 1 miljon utlösare per timme. Det förklarar varför ett rensningsarbetsflöde måste införas. Tömningen körs en gång per dag och alla utlösare som är äldre än tre dagar tas bort.
 
-### Arbetsflöde för kampanj {#campaign-workflow}
+### Kampanjarbetsflöde {#campaign-workflow}
 
 Arbetsflödet för utlösarkampanjer liknar ofta andra återkommande kampanjer som har använts.
 Den kan till exempel börja med en fråga om utlösare som letar efter specifika händelser under den sista dagen. Målet används för att skicka e-postmeddelandet. Anrikningar eller data kan komma från utlösaren. Det kan användas säkert av Marketing eftersom det inte kräver någon konfiguration.
