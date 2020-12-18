@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Konfigurera åtkomst till rapporten{#configuring-access-to-the-report}
 
-## Rapportens visningssammanhang {#report-display-context}
+## Rapportvisningssammanhang {#report-display-context}
 
-Definiera rapportens visningssammanhang på Adobe Campaign-plattformen med **[!UICONTROL Display]** fliken. Åtkomsten till en rapport beror på dess urvalstyp, visningsvillkor och åtkomstauktoriseringar.
+Definiera rapportens visningssammanhang på Adobe Campaign-plattformen med hjälp av fliken **[!UICONTROL Display]**. Åtkomsten till en rapport beror på dess urvalstyp, visningsvillkor och åtkomstauktoriseringar.
 
 ### Markeringstyp {#selection-type}
 
-Åtkomsten till rapporten kan begränsas till ett specifikt sammanhang eller ett visst utrymme för erbjudandet, t.ex. en leverans, en mottagare, ett urval av mottagare. Åtkomsten konfigureras i **[!UICONTROL Selection type]** avsnittet på **[!UICONTROL Display]** fliken.
+Åtkomsten till rapporten kan begränsas till ett specifikt sammanhang eller ett visst utrymme för erbjudandet, t.ex. en leverans, en mottagare, ett urval av mottagare. Åtkomsten konfigureras i avsnittet **[!UICONTROL Selection type]** på fliken **[!UICONTROL Display]**.
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -33,7 +33,7 @@ Definiera rapportens visningssammanhang på Adobe Campaign-plattformen med **[!U
 
 ### Visningssekvens {#display-sequence}
 
-I **[!UICONTROL Sequence]** fältet kan du ange ett numeriskt värde som anger rapportens visningssekvens i listan.
+I fältet **[!UICONTROL Sequence]** kan du ange ett numeriskt värde som anger rapportens visningssekvens i listan.
 
 Som standard visas rapporter efter relevans: Med det värde som anges i det här fältet kan du sortera rapporter från det högsta (högsta värdet) till det minsta (minsta värdet) som är relevant.
 
@@ -51,11 +51,11 @@ I följande exempel visas rapporten om huvudkampanjkanalen är e-post.
 
 Det innebär att om kampanjens huvudkanal är direktreklam kommer rapporten inte att vara tillgänglig i kampanjrapporterna.
 
-### Åtkomstbehörighet {#access-authorization}
+### Åtkomstauktorisering {#access-authorization}
 
 Rapporten kan delas med andra operatorer.
 
-Markera **[!UICONTROL Report shared with other operators]** alternativet om du vill att rapporten ska vara tillgänglig. Om det här alternativet inte är markerat kan bara den operator som skapade rapporten få åtkomst till rapporten.
+Markera alternativet **[!UICONTROL Report shared with other operators]** om du vill att rapporten ska vara tillgänglig. Om det här alternativet inte är markerat kan bara den operator som skapade rapporten få åtkomst till rapporten.
 
 Rapporten kan också delas med specifika operatorer eller grupper av operatorer som läggs till via tillståndsfönstret.
 
@@ -63,7 +63,7 @@ Rapporten kan också delas med specifika operatorer eller grupper av operatorer 
 
 ### Definiera filtreringsalternativen {#defining-the-filtering-options}
 
-Universum visar alla tillgängliga rapporter på plattformen och för vilka den anslutna operatorn har åtkomstbehörighet. **[!UICONTROL Reports]**
+Universum **[!UICONTROL Reports]** visar alla tillgängliga rapporter på plattformen och för vilka den anslutna operatorn har åtkomstbehörighet.
 
 Som standard sorteras de efter relevans, men du kan använda andra typer av filter: i bokstavsordning, efter ålder osv.
 
@@ -71,7 +71,7 @@ Du kan även filtrera visningen baserat på rapportkategorin:
 
 ![](assets/report_ovv_select_type.png)
 
-Om du vill definiera kategorin för en rapport väljer du den via **[!UICONTROL Display]** fliken enligt nedan:
+Om du vill definiera kategorin för en rapport väljer du den via fliken **[!UICONTROL Display]** enligt nedan:
 
 ![](assets/report_select_category.png)
 
@@ -83,11 +83,11 @@ Det går att göra en rapport tillgänglig via en viss nod i trädet, som en lis
 
 Vi ska till exempel skapa en länk till en rapport som gör den tillgänglig via en lista över mottagare.
 
-1. Klicka **[!UICONTROL New]** och välj **[!UICONTROL Create a link to an existing report]** i guiden för att skapa rapport.
+1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL Create a link to an existing report]** i guiden för att skapa rapporten.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. Välj den rapport som du vill skapa en länk till med hjälp av listrutan. I det här exemplet ska vi välja rapporten **Uppdelning per land** .
+1. Välj den rapport som du vill skapa en länk till med hjälp av listrutan. I det här exemplet ska vi välja rapporten **Uppdelning efter land**.
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
@@ -103,37 +103,37 @@ Vi ska till exempel skapa en länk till en rapport som gör den tillgänglig via
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. Publicera rapporten.
-1. Gå till en av mottagarlistorna och klicka på **[!UICONTROL Reports]** länken: den rapport du just har skapat är tillgänglig.
+1. Gå till en av mottagarlistorna och klicka på länken **[!UICONTROL Reports]**: den rapport du just har skapat är tillgänglig.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
 ## Förhandsgranskning av rapporten {#preview-of-the-report}
 
-Innan du publicerar rapporten bör du kontrollera att den visas korrekt på **[!UICONTROL Preview]** fliken.
+Innan du publicerar rapporten bör du kontrollera att den visas korrekt på fliken **[!UICONTROL Preview]**.
 
 ![](assets/s_ncs_advuser_report_preview_01.png)
 
-Om du vill visa förhandsgranskningen av rapporten markerar du **[!UICONTROL Global]** eller **[!UICONTROL Selection]** alternativet.
+Om du vill visa förhandsgranskningen av rapporten väljer du **[!UICONTROL Global]** eller **[!UICONTROL Selection]**.
 
-Dessa två alternativ väljs baserat på rapportens visningsinställningar. Om visningsinställningen är **[!UICONTROL Global]** markerad måste du välja **[!UICONTROL Global]** förhandsvisningsalternativet. Om visningsinställningarna är **[!UICONTROL Single selection]** eller **[!UICONTROL Multiple selection]** så måste alternativet för **[!UICONTROL Selection]** förhandsgranskning vara markerat.
+Dessa två alternativ väljs baserat på rapportens visningsinställningar. Om visningsinställningen är **[!UICONTROL Global]** måste du välja alternativet **[!UICONTROL Global]** för förhandsvisning. Om visningsinställningarna är **[!UICONTROL Single selection]** eller **[!UICONTROL Multiple selection]** måste du välja alternativet **[!UICONTROL Selection]** för förhandsvisning.
 
 Mer information finns i [Rapportvisningssammanhang](#report-display-context).
 
 Med specifika inställningar kan du kontrollera fel. Inställningen **_uid** finns i rapportens URL. Du kan lägga till inställningarna **&amp;_preview** eller **&amp;_debug** i den.
 
-Mer information om de här inställningarna finns i avsnittet **Definiera egenskaper** för webbformulär i kapitlet [Webbformulär](../../web/using/about-web-forms.md) .
+Mer information om de här inställningarna finns i avsnittet **Definiera egenskaper för webbformulär** i kapitlet [Webbformulär](../../web/using/about-web-forms.md).
 
-## Publicera rapporten {#publishing-the-report}
+## Publicerar rapporten {#publishing-the-report}
 
-Det är obligatoriskt att publicera rapporten för att dela den med andra operatorer och visa den i listan över tillgängliga rapporter (se även [Rapportens visningssammanhang](#report-display-context)). Denna åtgärd måste utföras igen varje gång rapporten ändras.
+Det är obligatoriskt att publicera rapporten för att dela den med andra operatorer och visa den i listan över tillgängliga rapporter (se även [Rapportvisningssammanhang](#report-display-context)). Denna åtgärd måste utföras igen varje gång rapporten ändras.
 
-1. Öppna publiceringsguiden genom att klicka **[!UICONTROL Publish]** i verktygsfältet.
+1. Öppna publiceringsguiden genom att klicka på **[!UICONTROL Publish]** i verktygsfältet.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. Klicka **[!UICONTROL Start]** för att publicera.
+1. Klicka på **[!UICONTROL Start]** för att publicera.
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
-1. Klicka på **[!UICONTROL Enlarge]** ikonen för att öppna rapporten i en webbläsare.
+1. Klicka på ikonen **[!UICONTROL Enlarge]** för att öppna rapporten i en webbläsare.
 
