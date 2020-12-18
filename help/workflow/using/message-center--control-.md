@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Meddelandecenter (kontroll){#message-center-control}
 
-Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras som standard med **Message Center - Control** -modulen. For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control**-modulen som standard. Mer information om den här modulen finns i [avsnittet](../../message-center/using/about-transactional-messaging.md).
 
 Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Meddelandecenter finns på [den här sidan](../../message-center/using/technical-workflows.md).
 
@@ -29,8 +29,8 @@ Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Medde
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Meddelandecenter &lt;external_account_name&gt;<br /> </td> 
-   <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
+   <td> Meddelandecenter &lt;externt_kontonamn&gt;<br /> </td> 
+   <td> mcSynch_&lt;externt_kontonamn&gt;<br /> </td> 
    <td> Det här arbetsflödet:<br /> 
     <ul> 
      <li> <p>återställer listan över händelser som bearbetats av åtgärderna.</p> </li> 
