@@ -26,13 +26,13 @@ För att så mycket som möjligt undvika dubbletter måste följande åtgärder 
 * Var uppmärksam vid automatisk import
 * Profilerna ska sorteras i olika mappar
 
-Karantänhantering presenteras i [detta avsnitt](../../delivery/using/understanding-quarantine-management.md).
+Karantänhantering presenteras i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md).
 
 Här nedan hittar du information om hantering av dubbletter och karantän.
 
 Du kan övervaka den skickade e-postvolymen med IP-adressen. Schematillägg krävs för detta. Du måste utöka utsändningstabellen för att lägga till den&quot;offentliga identifieraren&quot; och skapa ett arbetsflöde för att extrahera och visa data. Kontakta Adobe om du behöver det här.
 
-## Dubbletter {#duplicates}
+## Duplicerar {#duplicates}
 
 Att ha dubbla e-postadresser kan få flera följder:
 
@@ -50,8 +50,8 @@ Du måste vara särskilt försiktig när du utför åtgärder i databasen:
 
 Det finns också fall där dubbletter mellan olika partitioner är normala. Om du till exempel skickar för tredje part eller olika företagsenheter är det logiskt att samma person är mottagare av olika anledningar. Det är dock sällan normalt att hitta dubbletter inom samma partition.
 
-## Karantän {#quarantines}
+## Kantlinjer {#quarantines}
 
 Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adresser sätts i karantän exkluderas som standard vid leveransanalysen: de inte är riktade. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. I samtliga fall motsvarar karantänsättningen de särskilda regler som anges nedan.
 
-Karantänhantering presenteras i [detta avsnitt](../../delivery/using/understanding-quarantine-management.md).
+Karantänhantering presenteras i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md).
