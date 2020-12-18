@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Administration{#administration}
 
-Automatisk start av Adobe Campaign-modulerna (**webb**, **mta**, **wfserver** osv.) tillhandahålls av **nlserver** -servern.
+Automatisk start av Adobe Campaign-modulerna (**webb**, **mta**, **wfserver**, osv.) tillhandahålls av **nlserver**-servern.
 
-När du installerar Adobe Campaign konfigureras datorn automatiskt så att **nlserver** -tjänsten startar under startsekvensen.
+När du installerar Adobe Campaign konfigureras datorn automatiskt så att tjänsten **nlserver** startar under startsekvensen.
 
 Följande kommandon används för att starta och stänga av Adobe Campaign-tjänsten manuellt:
 
@@ -43,8 +43,8 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
 
    >[!NOTE]
    >
-   >Genom att lägga till parametern **-who** till kommandot **pdump** kan du samla in information om aktuella anslutningar (användare och processer).\
-   >Statuskommandot **/etc/init.d/nlserver6** (utan parametern &quot;-who&quot;) returnerar:
+   >Genom att lägga till parametern **-who** i kommandot **pdump** kan du samla in information om aktuella anslutningar (användare och processer).\
+   >Kommandot **/etc/init.d/nlserver6 status** (utan parametern &quot;-who&quot;) returnerar:
    >
    >    * 0 om alla processer körs.
    >    * 1 om en process saknas.
@@ -52,13 +52,13 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >    * ett annat värde om ett fel uppstår.
 
 
-* Starta/stoppa en modul med flera instanser eller en instans (**web**, **trackinglog**, **syslogd**, **mta**, **wfserver******,¥inmail¥):
+* Starta/stoppa en modul med flera instanser eller en instans (**web**, **trackinglog**, **syslogd**, **mta**, **wfserver**, **inmail**):
 
    **nlserver start`<module>[@<instance>]`**
 
    **nlserver stop`<module>[@<instance>][-immediate][-noconsole]`**
 
-   Du kan också använda kommandot **för att starta om`<module>[@<instance>]`** en modul.
+   Du kan också använda kommandot **nlserver start`<module>[@<instance>]`** för att starta om en modul.
 
    Exempel:
 
@@ -77,9 +77,9 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >[!NOTE]
    > 
    >    * Om instansen inte anges används standardinstansen.
-   >    * I en nödsituation använder du alternativet **-omedelbar** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **Kill -9**).
-   >    * Använd alternativet **-noconsole** för att se till att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via **systemmodulen** .
-   >    * Använd alternativet **-utförlig** om du vill visa ytterligare information om processåtgärder.
+   >    * I en nödsituation använder du alternativet **-direct** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **döda -9**).
+   >    * Använd alternativet **-noconsole** för att försäkra dig om att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via modulen **syslogd**.
+   >    * Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
 
       >    
       >      
@@ -92,18 +92,18 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
       **nlserver start mta@myinstance -verbose**
       >    
       >      
-      Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan det **-exakta** alternativet när du har hittat den önskade informationen, så att du undviker överlagring av loggar.
+      Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
 
 
-* Starta alla Adobe Campaign-processer (samma som att starta tjänsten **nlserver6** ):
+* Starta alla Adobe Campaign-processer (motsvarar att starta tjänsten **nlserver6**):
 
    **nlserver watchdog -noconsole**
 
-* Stäng alla Adobe Campaign-processer (motsvarar att stänga av **tjänsten nlserver6** ):
+* Stäng alla Adobe Campaign-processer (motsvarar att stänga av tjänsten **nlserver6**):
 
    **avstängning av nlserver**
 
-* Läs in **webbmodulens** konfiguration (och webbservertilläggets modul, om tillämpligt) igen när **serverConf.xml** - och **config-`<instance>  .xml </instance>`** filer har redigerats.
+* Läs in modulkonfigurationen **nlserver web** (och webbservertilläggets modul, där det är tillämpligt) när filerna **serverConf.xml** och **config-`<instance>  .xml </instance>`** har redigerats.
 
    **nlserver config -reload**
 
