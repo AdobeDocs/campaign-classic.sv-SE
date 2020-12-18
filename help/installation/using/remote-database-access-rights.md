@@ -19,19 +19,19 @@ ht-degree: 1%
 
 För det första, så att användaren kan utföra åtgärder på en extern databas via FDA, måste den senare ha en specifik namngiven behörighet i Adobe Campaign.
 
-1. Markera **[!UICONTROL Administration > Access Management > Named Rights]** noden i Adobe Campaign Utforskaren.
+1. Markera noden **[!UICONTROL Administration > Access Management > Named Rights]** i Adobe Campaign Utforskaren.
 1. Skapa en ny rättighet genom att ange den valda etiketten.
-1. Fältet måste **[!UICONTROL Name]** ha följande format: **användare: base@server**, där:
+1. Fältet **[!UICONTROL Name]** måste ha följande format **användare:base@server**, där :
 
-   * **-användaren** motsvarar namnet på användaren i den externa databasen.
-   * **base** motsvarar namnet på den externa databasen.
-   * **servern** motsvarar namnet på den externa databasservern.
+   * **** motsvarar namnet på användaren i den externa databasen.
+   * **basecorresponds** med namnet på den externa databasen.
+   * **** servermotsvarar namnet på den externa databasservern.
 
       >[!NOTE]
       >
       >Delen **:base** är valfri i Oracle.
 
-1. Spara den namngivna rättigheten och länka den till den användare du valt från noden i Adobe Campaign Utforskaren **[!UICONTROL Administration > Access Management > Operators]** .
+1. Spara den namngivna höger och länka den sedan till den valda användaren från noden **[!UICONTROL Administration > Access Management > Operators]** i Adobe Campaign Explorer.
 
 Om du sedan vill bearbeta data i en extern databas måste Adobe Campaign-användaren ha minst skrivbehörighet för databasen för att kunna skapa arbetstabeller. Dessa tas bort automatiskt av Adobe Campaign.
 
@@ -41,9 +41,9 @@ I allmänhet är följande rättigheter nödvändiga:
 * **LÄS data**: skrivskyddad åtkomst till tabeller som innehåller kunddata,
 * **LÄS &#39;MetaData&#39;**: åtkomst till serverns datakataloger för att få fram tabellstrukturen,
 * **LADDA**: massinläsning i arbetstabeller (krävs vid arbete med samlingar och kopplingar),
-* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION** (endast för arbetstabeller som genererats av Adobe Campaign),
-* **FÖRKLARA** (rekommenderas): för övervakning av prestanda vid problem,
-* **SKRIV data** (beroende på integrationsscenariot).
+* **CREATE/** DROP **for TABLE/INDEX/PROCEDURE/FUNCTION** (endast för arbetstabeller som genererats av Adobe Campaign),
+* **EXPLAIN**  (rekommenderas): för övervakning av prestanda vid problem,
+* **SKRIV data**  (beroende på integrationsscenariot).
 
 Databasadministratören måste se till att dessa rättigheter matchar de rättigheter som är specifika för varje databasmotor. Mer information finns i avsnittet nedan.
 
@@ -55,7 +55,7 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Skapa tabeller** | Behörighet SKAPA TABELL PÅ SCHEMA | SKAPA privilegium | Privilegium SKAPA TABELL | SKAPA TABELLBEHÖRIGHET | SKAPA privilegium | SKAPA privilegium |
 | **Skapa index** | N/A | SKAPA privilegium | INDEX- eller CREATE EVENTUELL INDEX-BEHÖRIGHET | ALTERNATIVbehörighet | SKAPA privilegium | INDEX-privilegium |
 | **Skapa funktioner** | SKAPA FUNKTION PÅ SCHEMABEHÖRIGHET | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA FUNKTIONSTILLSTÅND | Behörighet att använda | SKAPA ROUTINprivilegium |
-| **Skapa procedurer** | N/A | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA PROCESSTILLSTÅND | Behörighet för ANVÄNDNING (procedurer är funktioner) | SKAPA ROUTINprivilegium |
+| **Skapa procedurer** | Ej tillämpligt | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA PROCESSTILLSTÅND | Behörighet för ANVÄNDNING (procedurer är funktioner) | SKAPA ROUTINprivilegium |
 | **Ta bort objekt (tabeller, index, funktioner, procedurer)** | Äga objektet | Äga objektet eller vara superanvändare | DROP ANY &lt; object > privilege | ALTERNATIVbehörighet | Tabell: äger tabellindexet: äger indexfunktionen: äger funktionen | DROP-privilegium |
 | **Övervaka körningar** | MONITOR-behörighet för det begärda objektet | Ingen behörighet krävs för kommandot EXPLAIN | Behörighet INSERT och SELECT samt nödvändiga privilegier för att köra den sats som EXPLAIN-planen baseras på | SHOWPLAN-behörighet | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium |
 | **Skriver data** | INSERT- och/eller UPDATE-behörigheter (beroende på skrivåtgärd) | INSERT- och UPDATE-behörigheter | INFOGA OCH UPPDATERA ELLER INFOGA OCH UPPDATERA VALFRITT TABELLBEHÖRIGHET | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
