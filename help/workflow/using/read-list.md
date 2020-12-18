@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Data som bearbetas i ett arbetsflöde kan komma från listor där data har förberetts eller strukturerats i förväg (efter en tidigare segmentering eller filöverföring).
 
-Med den här **[!UICONTROL Read list]** aktiviteten kan du kopiera data från en lista i arbetsflödets arbetstabell, till exempel data från en fråga. Den är sedan tillgänglig i hela arbetsflödet.
+Med aktiviteten **[!UICONTROL Read list]** kan du kopiera data från en lista i arbetsflödestabellen, som data från en fråga. Den är sedan tillgänglig i hela arbetsflödet.
 
-Listan som ska bearbetas kan anges explicit, beräknas av ett skript eller lokaliseras dynamiskt enligt valda alternativ och parametrar definierade i en **[!UICONTROL Read list]** aktivitet.
+Listan som ska bearbetas kan anges explicit, beräknas av ett skript eller lokaliseras dynamiskt enligt valda alternativ och parametrar definierade i en **[!UICONTROL Read list]**-aktivitet.
 
 ![](assets/list_edit_select_option_01.png)
 
@@ -29,7 +29,7 @@ Om listan inte uttryckligen anges måste du ange en lista som ska användas som 
 
 ![](assets/s_advuser_list_template_select.png)
 
-När listmarkeringen har konfigurerats kan du lägga till ett filter med hjälp av alternativet att behålla en del av populationen för nästa arbetsflöde. **[!UICONTROL Edit query]**
+När listmarkeringen har konfigurerats kan du lägga till ett filter med alternativet **[!UICONTROL Edit query]** för att behålla en del av populationen för nästa arbetsflöde.
 
 ![](assets/wf_readlist_1.png)
 
@@ -37,7 +37,7 @@ När listmarkeringen har konfigurerats kan du lägga till ett filter med hjälp 
 >
 >För att kunna skapa ett filter i en läslisteaktivitet måste den relevanta listan vara av typen &quot;file&quot;.
 
-Listorna kan skapas direkt i Adobe Campaign via länken **[!UICONTROL Profiles and Targets > Lists]** på startsidan. De kan också skapas i ett arbetsflöde med hjälp av **[!UICONTROL List update]** aktiviteten.
+Listorna kan skapas direkt i Adobe Campaign via länken **[!UICONTROL Profiles and Targets > Lists]** på startsidan. De kan också skapas i ett arbetsflöde med aktiviteten **[!UICONTROL List update]**.
 
 **Exempel: Uteslut en lista med sändningsadresser**
 
@@ -47,7 +47,7 @@ I följande exempel kan du använda en lista med e-postadresser som ska utesluta
 
 Profilerna i mappen **Nya kontakter** måste ha en leveransåtgärd som mål. De e-postadresser som ska uteslutas från målet lagras i en extern lista. I vårt exempel krävs bara information om e-postadresser för att exkludera.
 
-1. Med frågan för val av mapp för **nya kontakter** måste du kunna läsa in de valda profilernas e-postadresser, för att kunna aktivera justering mot informationen i listan.
+1. Mappurvalsfrågan **Nya kontakter** måste göra det möjligt att läsa in de valda profilernas e-postadresser för att kunna justera mot informationen i listan.
 
    ![](assets/s_advuser_list_read_sample_0.png)
 
@@ -59,13 +59,13 @@ Profilerna i mappen **Nya kontakter** måste ha en leveransåtgärd som mål. De
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
-   Uteslutningsregler konfigureras i det centrala avsnittet av redigeringsverktyget. Klicka på **[!UICONTROL Add]** knappen för att definiera vilken typ av undantag som ska användas.
+   Uteslutningsregler konfigureras i det centrala avsnittet av redigeringsverktyget. Klicka på knappen **[!UICONTROL Add]** för att definiera vilken typ av undantag som ska användas.
 
    Du kan definiera flera undantag beroende på antalet inkommande övergångar för aktiviteten.
 
-1. Välj **[!UICONTROL Exclusion set]** aktivitet i **[!UICONTROL Read list]** fältet: uppgifterna i denna verksamhet ska uteslutas från huvudgruppen.
+1. Välj aktiviteten **[!UICONTROL Read list]** i fältet **[!UICONTROL Exclusion set]**: uppgifterna i denna verksamhet ska uteslutas från huvudgruppen.
 
-   I vårt exempel har vi ett undantag för kopplingar: uppgifterna i listan kommer att stämma överens med uppgifterna i huvuduppsättningen via fältet som innehåller e-postadressen. Om du vill konfigurera kopplingen väljer du **[!UICONTROL Joins]** i **[!UICONTROL Change dimension]** fältet.
+   I vårt exempel har vi ett undantag för kopplingar: uppgifterna i listan kommer att stämma överens med uppgifterna i huvuduppsättningen via fältet som innehåller e-postadressen. Om du vill konfigurera kopplingen väljer du **[!UICONTROL Joins]** i fältet **[!UICONTROL Change dimension]**.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
