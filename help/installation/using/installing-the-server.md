@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Installera servern{#installing-the-server}
 
-## Köra installationsprogrammet {#executing-the-installation-program}
+## Kör installationsprogrammet {#executing-the-installation-program}
 
 Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Windows. Installera Adobe Campaign 64-bitarsversionen för en 64-bitarsplattform för Windows.
 
@@ -46,7 +46,7 @@ Installationsstegen för Adobe Campaign-servern är följande:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Klicka **[!UICONTROL Finish]** för att starta installationen:
+1. Klicka på **[!UICONTROL Finish]** för att starta installationen:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -78,9 +78,9 @@ Om Adobe Campaign inte startas är svaret:
 No task
 ```
 
-## Serverns första start {#first-start-up-of-the-server}
+## Första start av servern {#first-start-up-of-the-server}
 
-När installationstestet är klart öppnar du en kommandotolk via **[!UICONTROL Start > Programs > Adobe Campaign]** menyn och anger följande kommando:
+När installationstestet är klart öppnar du en kommandotolk via menyn **[!UICONTROL Start > Programs > Adobe Campaign]** och anger följande kommando:
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ Följande information visas:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Tryck på **Ctrl+C** för att avbryta processen och ange följande kommando:
+Tryck på **Ctrl+C** för att stoppa processen och ange sedan följande kommando:
 
 ```
 nlserver start web
@@ -135,13 +135,13 @@ Följande information visas:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Lösenord för intern identifierare {#password-for-the-internal-identifier}
+## Lösenord för den interna identifieraren {#password-for-the-internal-identifier}
 
-Adobe Campaign-servern definierar en teknisk inloggning som kallas **intern** som har alla rättigheter för alla instanser. Precis efter installationen har inloggningen inget lösenord. Det är obligatoriskt att definiera en.
+Adobe Campaign-servern definierar en teknisk inloggning med namnet **internal** som har alla rättigheter för alla instanser. Precis efter installationen har inloggningen inget lösenord. Det är obligatoriskt att definiera en.
 
-Se avsnittet [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+Se avsnitt [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Startar Adobe Campaign tjänster {#starting-adobe-campaign-services}
+## Startar Adobe Campaign-tjänster {#starting-adobe-campaign-services}
 
 Om du vill starta Adobe Campaign-tjänsterna kan du använda tjänsthanteraren eller ange följande på kommandoraden (med rätt behörighet):
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## Installerar LibraryOffice {#installing-libreoffice}
 
-Hämta LibreOffice, till exempel från [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) , och följ de vanliga installationsstegen.
+Hämta LibreOffice, till exempel från [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) och följ de vanliga installationsstegen.
 
 Lägg till följande miljövariabel:
 
