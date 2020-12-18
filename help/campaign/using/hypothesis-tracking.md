@@ -23,7 +23,7 @@ Resultatet av hypotesberäkningarna finns på olika nivåer i Adobe Campaign: In
 
 ### Indikatorer {#indicators}
 
-När hypotesen har beräknats uppdateras flera mätningsindikatorer automatiskt. Dessa finns på **[!UICONTROL General]** fliken för hypotesen.
+När hypotesen har beräknats uppdateras flera mätningsindikatorer automatiskt. Dessa finns på fliken **[!UICONTROL General]** i hypotesen.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -35,7 +35,7 @@ Dessa indikatorer är följande:
 * **Kontrollgruppens** svarsfrekvens: antal respondentkontrollgrupper/totalt antal leveranskontrollgrupper.
 * **Antal reaktioner**: antal poster i tabellen som innehåller förhållandet mellan individer, hypotesen och transaktionstabellen.
 
-Klicka på **[!UICONTROL Display the list]** länken om du vill se en fullständig lista över indikatorer:
+Klicka på länken **[!UICONTROL Display the list]** om du vill se en fullständig lista över indikatorer:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -58,21 +58,21 @@ Indikatorerna ger följande information:
 
 ### Reaktioner {#reactions}
 
-Du kan visa mottagarnas reaktioner på hypoteserna via **[!UICONTROL Reactions]** fliken.
+Du kan visa mottagarnas reaktioner på hypoteserna via fliken **[!UICONTROL Reactions]**.
 
-1. När beräkningen av hypotesen är klar går du till noden **[!UICONTROL Campaign management > Measurement hypotheses]** i Adobe Campaign-trädet.
-1. Välj önskad hypotes och klicka på **[!UICONTROL Reactions]** fliken för att visa en lista över mottagare som kan köpa något efter marknadsföringskampanjen.
+1. När hypotesberäkningen är klar går du till noden **[!UICONTROL Campaign management > Measurement hypotheses]** i Adobe Campaign-trädet.
+1. Välj önskad hypotes och klicka på fliken **[!UICONTROL Reactions]** för att visa en lista över mottagare som kan köpa något efter marknadsföringskampanjen.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Rapporter {#reports}
 
-Här **[!UICONTROL Hypothesis report]** kan du se resultatet av de hypoteser som utförts på kampanjer och leveranser. Denna rapport innehåller de indikatorer som beräknats genom hypotesen (för mer information, se [Indikatorer](#indicators)).
+Med **[!UICONTROL Hypothesis report]** kan du visa resultatet av de hypoteser som utförts på kampanjer och leveranser. Denna rapport innehåller de indikatorer som beräknats av hypotesen (mer information finns i [Indikatorer](#indicators)).
 
-* **På kampanjnivå**: klicka på **[!UICONTROL Reports]** länken för den relevanta kampanjen och välj **[!UICONTROL Hypothesis report]**. Den här rapporten innehåller en lista över kampanjleveranser och de hypoteser som beräknas för varje leverans.
+* **På kampanjnivå**: klicka på  **[!UICONTROL Reports]** länken till den relevanta kampanjen och välj  **[!UICONTROL Hypothesis report]**. Den här rapporten innehåller en lista över kampanjleveranser och de hypoteser som beräknas för varje leverans.
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **På leveransnivå**: för att öppna rapporten öppnar du den aktuella leveransen, klickar på **[!UICONTROL Reports]** på **[!UICONTROL Summary]** fliken och väljer **[!UICONTROL Hypothesis report]**. Om flera hypoteser har beräknats för samma leverans innehåller rapporten alla hypoteser.
+* **På leveransnivå**: för att öppna rapporten öppnar du den aktuella leveransen, klickar på  **[!UICONTROL Reports]** på  **[!UICONTROL Summary]** fliken och väljer  **[!UICONTROL Hypothesis report]**. Om flera hypoteser har beräknats för samma leverans innehåller rapporten alla hypoteser.
 
    ![](assets/response_hypothesis_delivery_report_001.png)
