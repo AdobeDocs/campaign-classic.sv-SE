@@ -17,11 +17,11 @@ ht-degree: 6%
 
 # Övervakningsgränser{#monitoring-thresholds}
 
-Du kan konfigurera varningströskeln (orange) och aviseringströskeln (röd) för de indikatorer som visas i **meddelandecentrets servicenivå** och **meddelandecentrets** behandlingstidsrapporter (se [Om transaktionsmeddelanderapporter](../../message-center/using/about-transactional-messaging-reports.md)). Det gör du genom att öppna distributionsguiden för körningsinstansen, gå till **[!UICONTROL Message Center]** sidan och använda pilarna för att ändra tröskelvärdena.
+Du kan konfigurera varningströskeln (orange) och varningströsklar (röda) för de indikatorer som visas i **Message Center-servicenivån** och **Message Center-bearbetningstiden**-rapporter (se [Om transaktionsmeddelanderapporter](../../message-center/using/about-transactional-messaging-reports.md)). Det gör du genom att öppna distributionsguiden för körningsinstansen, gå till sidan **[!UICONTROL Message Center]** och använda pilarna för att ändra tröskelvärdena.
 
 ![](assets/messagecenter_monitor_events_001.png)
 
 >[!NOTE]
 >
->Antalet väntande händelser i kö visas i avsnittet [Systemindikatorer](../../production/using/monitoring-processes.md#system-indicators) på sidan för processövervakning i Adobe Campaign. Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Antalet väntande händelser i kö visas i avsnittet [Systemindikatorer](../../production/using/monitoring-processes.md#system-indicators) på sidan för Adobe Campaign processövervakning. Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
