@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## Introduktion {#introduction}
 
-När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** hemsidans meny) visas data i databaserna i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
+När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]**-menyn på startsidan) visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
 
 >[!NOTE]
 >
->Visningskonfigurationen definieras lokalt på arbetsstationsnivå. Den lagras i dolda filer och det kan ibland vara nödvändigt att rensa upp dessa data, särskilt om det uppstår problem när data uppdateras. Använd **[!UICONTROL File > Clear the local cache]** menyn för att göra detta.
+>Visningskonfigurationen definieras lokalt på arbetsstationsnivå. Den lagras i dolda filer och det kan ibland vara nödvändigt att rensa upp dessa data, särskilt om det uppstår problem när data uppdateras. Använd menyn **[!UICONTROL File > Clear the local cache]** om du vill göra det.
 
 ## Typologi för tillgängliga filter {#typology-of-available-filters}
 
@@ -35,7 +35,7 @@ Följande filtertyper finns i Adobe Campaign:
 
 * Standardfilter
 
-   Standardfiltret **är** tillgängligt via fälten ovanför listorna. Du kan filtrera efter fördefinierade fält (för mottagarprofiler är dessa som standard namn och e-postadress). Du kan använda fälten för att ange tecken som ska filtreras eller för att välja filtervillkor från en nedrullningsbar lista.
+   Standardfiltret **är tillgängligt via fälten ovanför listorna.** Du kan filtrera efter fördefinierade fält (för mottagarprofiler är dessa som standard namn och e-postadress). Du kan använda fälten för att ange tecken som ska filtreras eller för att välja filtervillkor från en nedrullningsbar lista.
 
    ![](assets/filters_recipient_default_filter.png)
 <!--
@@ -47,7 +47,7 @@ Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra sta
 
 * Enkla filter
 
-   **Enkla filter** är engångsfilter i kolumnerna. De definieras med ett eller flera enkla sökvillkor i de kolumner som visas.
+   **Enkla** filter är engångsfilter i kolumnerna. De definieras med ett eller flera enkla sökvillkor i de kolumner som visas.
 
    Du kan kombinera flera enkla filter i samma datalista för att begränsa sökningen. Filterfälten visas ett under det andra. De kan tas bort oberoende av varandra.
 
@@ -57,7 +57,7 @@ Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra sta
 
 * Avancerade filter
 
-   **Avancerade filter** skapas med en fråga eller en kombination av frågor på data.
+   **Avancerade** filter skapas med en fråga eller en kombination av frågor på data.
 
    Mer information om hur du skapar ett avancerat filter finns i [Skapa ett avancerat filter](#creating-an-advanced-filter).
 
@@ -71,18 +71,18 @@ Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra sta
 
    Ett **programfilter** är ett avancerat filter som har sparats för att använda och dela dess konfiguration med andra operatorer.
 
-   Knappen som finns ovanför listorna innehåller en uppsättning programfilter som kan kombineras för att förfina filtreringen. **[!UICONTROL Filters]** Metoden för att skapa dessa filter beskrivs i [Spara ett filter](#saving-a-filter).
+   Knappen **[!UICONTROL Filters]** ovanför listorna innehåller en uppsättning programfilter som kan kombineras för att förfina filtreringen. Metoden för att skapa dessa filter beskrivs i [Spara ett filter](#saving-a-filter).
 
 ## Ändra standardfiltret {#altering-the-default-filter}
 
-Om du vill ändra standardfiltret för en mottagarlista klickar du på **[!UICONTROL Profiles and Targets > Pre-defined filters]** trädnoden.
+Om du vill ändra standardfiltret för en mottagarlista klickar du på noden **[!UICONTROL Profiles and Targets > Pre-defined filters]** i trädet.
 
-För alla andra typer av data konfigurerar du standardfiltret via **[!UICONTROL Administration > Configuration > Predefined filters]** noden.
+För alla andra typer av data konfigurerar du standardfiltret via noden **[!UICONTROL Administration > Configuration > Predefined filters]**.
 
 Använd följande steg:
 
 1. Markera det filter som du vill använda som standard.
-1. Klicka på **[!UICONTROL Parameters]** fliken och välj **[!UICONTROL Default filter for the associated document type]**.
+1. Klicka på fliken **[!UICONTROL Parameters]** och välj **[!UICONTROL Default filter for the associated document type]**.
 
    ![](assets/s_ncs_user_default_filter.png)
 
@@ -90,7 +90,7 @@ Använd följande steg:
    >
    >Om ett standardfilter redan används i listan måste du inaktivera det innan du använder ett nytt filter. Om du vill göra det klickar du på det röda krysset till höger om filtreringsfälten.
 
-1. Klicka **[!UICONTROL Save]** för att använda filtret.
+1. Klicka på **[!UICONTROL Save]** för att använda filtret.
 
    >[!NOTE]
    >
@@ -114,7 +114,7 @@ Så här skapar du ett **enkelt filter**:
 
 Om fältet som du vill filtrera data i inte visas som en profil kan du lägga till det i de kolumner som visas och sedan filtrera på den kolumnen. Så här gör du,
 
-1. Klicka på **[!UICONTROL Configure the list]** ikonen.
+1. Klicka på ikonen **[!UICONTROL Configure the list]**.
 
    ![](assets/s_ncs_user_configure_list.png)
 
@@ -134,7 +134,7 @@ Om fältet som du vill filtrera data i inte visas som en profil kan du lägga ti
 
 Så här skapar du ett **avancerat filter**:
 
-1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**.
+1. Klicka på knappen **[!UICONTROL Filters]** och välj **[!UICONTROL Advanced filter...]**.
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
@@ -142,23 +142,23 @@ Så här skapar du ett **avancerat filter**:
 
    Definitionsfönstret för filtervillkor visas.
 
-1. Klicka på **[!UICONTROL Expression]** kolumnen för att definiera indatavärdet.
-1. Klicka **[!UICONTROL Edit expression]** för att markera det fält som filtret ska tillämpas på.
+1. Klicka på kolumnen **[!UICONTROL Expression]** för att definiera indatavärdet.
+1. Klicka på **[!UICONTROL Edit expression]** för att markera fältet som filtret ska tillämpas på.
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. I listan markerar du det fält där data ska filtreras. Bekräfta genom **[!UICONTROL Finish]** att klicka.
-1. Klicka på **[!UICONTROL Operator]** kolumnen och välj den operator som ska användas i listrutan.
-1. Välj ett förväntat värde i **[!UICONTROL Value]** kolumnen. Du kan kombinera flera filter för att förfina frågan. Om du vill lägga till ett filtervillkor klickar du på **[!UICONTROL Add]**.
+1. I listan markerar du det fält där data ska filtreras. Bekräfta genom att klicka på **[!UICONTROL Finish]**.
+1. Klicka på kolumnen **[!UICONTROL Operator]** och välj den operator som ska användas i listrutan.
+1. Välj ett förväntat värde i kolumnen **[!UICONTROL Value]**. Du kan kombinera flera filter för att förfina frågan. Om du vill lägga till ett filtervillkor klickar du på **[!UICONTROL Add]**.
 
    ![](assets/s_ncs_user_filter_add_button_alone.png)
 
 1. Du kan tilldela uttryck en hierarki eller ändra ordningen på frågeuttrycken med hjälp av pilarna i verktygsfältet.
-1. Standardoperatorn mellan uttryck är **And**, men du kan ändra den genom att klicka på fältet. Du kan välja en **Or** -operator.
+1. Standardoperatorn mellan uttryck är **And**, men du kan ändra den genom att klicka på fältet. Du kan välja en **eller**-operator.
 
    ![](assets/s_ncs_user_filter_operator.png)
 
-1. Klicka på **[!UICONTROL OK]** för att bekräfta att filter har skapats och använd dem i listan.
+1. Klicka på **[!UICONTROL OK]** för att bekräfta att filter har skapats och använda det i listan.
 
 Filtret som används visas ovanför listan.
 
@@ -166,17 +166,17 @@ Filtret som används visas ovanför listan.
 
 Om du vill redigera eller ändra det här filtret klickar du på filtrets etikett.
 
-Om du vill avbryta det här filtret klickar du på **[!UICONTROL Remove this filter]** ikonen till höger om filtret.
+Om du vill avbryta det här filtret klickar du på ikonen **[!UICONTROL Remove this filter]** till höger om filtret.
 
 ![](assets/s_ncs_user_filter_adv_remove.png)
 
-Du kan spara ett avancerat filter om du vill behålla det för framtida bruk. Mer information om den här typen av filter finns i [Spara ett filter](#saving-a-filter).
+Du kan spara ett avancerat filter om du vill behålla det för framtida bruk. Mer information om den här filtertypen finns i [Spara ett filter](#saving-a-filter).
 
 ### Skapa ett avancerat filter med funktioner {#creating-an-advanced-filter-with-functions}
 
-Avancerade filter kan använda funktioner; **filter med funktioner** skapas med en uttrycksredigerare som du kan använda för att skapa formler med hjälp av databasdata och avancerade funktioner. Om du vill skapa ett filter med funktioner upprepar du stegen 1, 2 och 3 för att skapa avancerade filter och fortsätter sedan enligt följande:
+Avancerade filter kan använda funktioner; **filter med funktioner** skapas via en uttrycksredigerare där du kan skapa formler med hjälp av databasdata och avancerade funktioner. Om du vill skapa ett filter med funktioner upprepar du stegen 1, 2 och 3 för att skapa avancerade filter och fortsätter sedan enligt följande:
 
-1. Klicka på i fältvalsfönstret **[!UICONTROL Advanced selection]**.
+1. Klicka på **[!UICONTROL Advanced selection]** i fältvalsfönstret.
 1. Välj formeltyp som ska användas: mängd, befintligt användarfilter eller uttryck.
 
    ![](assets/s_ncs_user_filter_formula_select.png)
@@ -192,39 +192,39 @@ Avancerade filter kan använda funktioner; **filter med funktioner** skapas med 
 
       ![](assets/s_ncs_user_create_exp_exple01.png)
 
-      Här kan du markera fält i databastabellerna och bifoga avancerade funktioner till dem: Välj den funktion som ska användas i **[!UICONTROL List of functions]**. De tillgängliga funktionerna beskrivs i [Lista över funktioner](../../platform/using/defining-filter-conditions.md#list-of-functions). Markera sedan det eller de fält som berörs av funktionerna och klicka på **[!UICONTROL OK]** för att godkänna uttrycket.
+      Här kan du markera fält i databastabellerna och bifoga avancerade funktioner till dem: Välj den funktion som ska användas i **[!UICONTROL List of functions]**. Tillgängliga funktioner beskrivs i [Lista över funktioner](../../platform/using/defining-filter-conditions.md#list-of-functions). Markera sedan det eller de fält som berörs av funktionerna och klicka på **[!UICONTROL OK]** för att godkänna uttrycket.
 
       >[!NOTE]
       >
-      >Ett exempel på hur du skapar filter baserat på ett uttryck finns i [Identifiera mottagare vars födelsedag det är](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
+      >Ett exempel på hur du skapar filter baserat på ett uttryck finns i [Identifiera mottagare vars födelsedag är](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
 
 ## Spara ett filter {#saving-a-filter}
 
 Filter är specifika för varje operator och initieras om varje gång operatorn rensar cachen för sin klientkonsol.
 
-Du kan skapa ett **programfilter** genom att spara ett avancerat filter: kan återanvändas genom att högerklicka i en lista eller via knappen som finns ovanför listorna **[!UICONTROL Filters]** .
+Du kan skapa ett **programfilter** genom att spara ett avancerat filter: kan återanvändas genom att högerklicka i en lista eller via knappen **[!UICONTROL Filters]** ovanför listorna.
 
 Dessa filter kan också nås direkt via leveransguiden i målurvalsfasen (se [det här avsnittet](../../delivery/using/creating-an-email-delivery.md) för mer information om hur du skapar leveranser). Om du vill skapa programfiltret kan du:
 
-* Konvertera ett avancerat filter till ett programfilter. Det gör du genom att klicka **[!UICONTROL Save]** innan du stänger den avancerade filterredigeraren.
+* Konvertera ett avancerat filter till ett programfilter. Om du vill göra det klickar du på **[!UICONTROL Save]** innan du stänger den avancerade filterredigeraren.
 
    ![](assets/s_ncs_user_filter_save.png)
 
 * Skapa det här programfiltret via noden **[!UICONTROL Administration > Configuration > Predefined filters]** (eller **[!UICONTROL Profiles and targets > Predefined filters]** för mottagare) i trädet. Om du vill göra det högerklickar du på filterlistan och väljer **[!UICONTROL New...]**. Proceduren är densamma som när du skapar avancerade filter.
 
-   I **[!UICONTROL Label]** fältet kan du ge filtret ett namn. Det här namnet visas i kombinationsfältet för **[!UICONTROL Filters...]** knappen.
+   I fältet **[!UICONTROL Label]** kan du namnge det här filtret. Det här namnet visas i kombinationsrutan för knappen **[!UICONTROL Filters...]**.
 
    ![](assets/user_filter_apply.png)
 
-Du kan ta bort alla filter i den aktuella listan genom att högerklicka och välja **[!UICONTROL No filter]** eller via **[!UICONTROL Filters]** ikonen ovanför listan.
+Du kan ta bort alla filter i den aktuella listan genom att högerklicka och välja **[!UICONTROL No filter]** eller via ikonen **[!UICONTROL Filters]** ovanför listan.
 
-Du kan kombinera filter genom att klicka på **[!UICONTROL Filters]** knappen och använda **[!UICONTROL And...]** menyn.
+Du kan kombinera filter genom att klicka på knappen **[!UICONTROL Filters]** och använda menyn **[!UICONTROL And...]**.
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Filtrera mottagare {#filtering-recipients}
+## Filtrerar mottagare {#filtering-recipients}
 
-Med fördefinierade filter (se [Spara ett filter](#saving-a-filter)) kan du filtrera mottagarprofilerna i databasen. Du kan redigera filter från trädnoden **[!UICONTROL Profiles and Targets > Predefined filters]** . Filtren visas i den övre delen av arbetsytan, via **[!UICONTROL Filters]** knappen.
+Fördefinierade filter (se [Spara ett filter](#saving-a-filter)) gör att du kan filtrera profilerna för mottagarna i databasen. Du kan redigera filter från noden **[!UICONTROL Profiles and Targets > Predefined filters]** i trädet. Filtren visas i den övre delen av arbetsytan med knappen **[!UICONTROL Filters]**.
 
 Markera ett filter om du vill visa dess definition och få tillgång till en förhandsvisning av filtrerade data.
 
@@ -232,7 +232,7 @@ Markera ett filter om du vill visa dess definition och få tillgång till en fö
 
 >[!NOTE]
 >
->Ett detaljerat exempel på hur du skapar fördefinierade filter finns i [Använda skiftläge](../../platform/using/use-case.md).
+>Ett detaljerat exempel på hur du skapar fördefinierade filter finns i [Använd skiftläge](../../platform/using/use-case.md).
 
 De fördefinierade filtren är:
 
@@ -259,16 +259,16 @@ De fördefinierade filtren är:
    <td> Väljer mottagare som har klickat eller öppnat leveransadress Y med enhet X de senaste Z-dagarna.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Senaste aktivitet per enhetstyp (spårning)<br /> </td> 
+   <td> Senaste aktivitet efter enhetstyp (spårning)<br /> </td> 
    <td> Väljer mottagare som har klickat eller öppnat leveransadress Y med enhet X de senaste Z-dagarna.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ej riktade mottagare<br /> </td> 
-   <td> Väljer mottagare som aldrig har fått något mål via kanal Y på X månader.<br /> </td> 
+   <td> Mottagare som inte är målinriktade<br /> </td> 
+   <td> Väljer mottagare som aldrig har fått mål via kanal Y på X månader.<br /> </td> 
   </tr> 
   <tr> 
    <td> Mycket aktiva mottagare<br /> </td> 
-   <td> Väljer mottagare som har klickat på en leverans minst X gånger under de senaste Y-månaderna.<br /> </td> 
+   <td> Väljer mottagare som har klickat på en leverans minst X gånger de senaste Y-månaderna.<br /> </td> 
   </tr> 
   <tr> 
  <td> Blocklist e-postadress<br /> </td> 
@@ -307,15 +307,15 @@ De fördefinierade filtren är:
    <td> Väljer mottagare som klickat på en viss URL i en leverans.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Beteende vid postleverans<br /> </td> 
-   <td> Väljer mottagare utifrån deras beteende efter att de har tagit emot en leverans.<br /> </td> 
+   <td> Efter leveransbeteende<br /> </td> 
+   <td> Väljer mottagare efter deras beteende efter att de har tagit emot en leverans.<br /> </td> 
   </tr> 
   <tr> 
    <td> Efter skapad den<br /> </td> 
-   <td> Väljer mottagare efter skapandedatum, över en period som sträcker sig från X månader (aktuellt datum minus n månader) till Y-månader (aktuellt datum minus n månader).<br /> </td> 
+   <td> Väljer mottagare efter skapandedatum, över en period som sträcker sig från X månader (aktuellt datum minus n månader) till Y månader (aktuellt datum minus n månader).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Per lista<br /> </td> 
+   <td> Efter lista<br /> </td> 
    <td> Väljer mottagare efter lista.<br /> </td> 
   </tr> 
   <tr> 
@@ -324,14 +324,14 @@ De fördefinierade filtren är:
   </tr> 
   <tr> 
    <td> Efter antal mottagna meddelanden<br /> </td> 
-   <td> Väljer mottagare baserat på det antal meddelanden som de har fått.<br /> </td> 
+   <td> Väljer mottagare efter det antal meddelanden de tagit emot.<br /> </td> 
   </tr> 
   <tr> 
    <td> Efter antal öppningar<br /> </td> 
-   <td> Väljer mottagare som har öppnat mellan X- och Y-leveranser över Z tid.<br /> </td> 
+   <td> Väljer mottagare som öppnat mellan X och Y levererar över Z tid.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter namn eller e-post<br /> </td> 
+   <td> Efter namn eller e-postadress<br /> </td> 
    <td> Väljer mottagare efter namn eller e-postadress.<br /> </td> 
   </tr> 
   <tr> 
@@ -361,20 +361,20 @@ Exempel på hur data beräknas:
 
 ## Avancerade inställningar för datafilter {#advanced-settings-for-data-filters}
 
-Klicka på **[!UICONTROL Settings]** fliken för att visa följande alternativ:
+Klicka på fliken **[!UICONTROL Settings]** för att komma åt följande alternativ:
 
 * **[!UICONTROL Default filter for the associated document type]**: Med det här alternativet kan du som standard föreslå det här filtret i redigeraren för de listor som berörs av sorteringen.
 
-   Filtret används till exempel på operatorer **[!UICONTROL By name or login]** . Det här alternativet är markerat och därför erbjuds filtret alltid i alla operatorlistor.
+   Filtret **[!UICONTROL By name or login]** används till exempel på operatorer. Det här alternativet är markerat och därför erbjuds filtret alltid i alla operatorlistor.
 
 * **[!UICONTROL Filter shared with other operators]**: Med det här alternativet kan du göra filtret tillgängligt för alla andra operatorer i den aktuella databasen.
-* **[!UICONTROL Use parameter entry form]**: Med det här alternativet kan du definiera de filterfält som ska visas ovanför listan när det här filtret är markerat. I dessa fält kan du definiera filterinställningarna. Formuläret måste anges i XML-format med **[!UICONTROL Form]** kommandoknappen. Det förkonfigurerade filtret, som **[!UICONTROL Recipients who have opened]** finns i mottagarlistan, visar till exempel ett filterfält där du kan välja den leverans som filtret är avsett för.
+* **[!UICONTROL Use parameter entry form]**: Med det här alternativet kan du definiera de filterfält som ska visas ovanför listan när det här filtret är markerat. I dessa fält kan du definiera filterinställningarna. Formuläret måste anges i XML-format med knappen **[!UICONTROL Form]**. Det förkonfigurerade filtret **[!UICONTROL Recipients who have opened]**, som finns i mottagarlistan, visar till exempel ett filterfält där du kan välja den leverans som filtret ska användas för.
 
-   Knappen visar **[!UICONTROL Preview]** resultatet av det valda filtret.
+   Knappen **[!UICONTROL Preview]** visar resultatet av det valda filtret.
 
-* Med hjälp av **[!UICONTROL Advanced parameters]** länken kan du ange ytterligare inställningar. Du kan associera en SQL-tabell med filtret för att göra den gemensam för alla redigerare som delar tabellen.
+* Med länken **[!UICONTROL Advanced parameters]** kan du definiera ytterligare inställningar. Du kan associera en SQL-tabell med filtret för att göra den gemensam för alla redigerare som delar tabellen.
 
-   Markera alternativet om du inte vill att användaren ska kunna åsidosätta det här filtret. **[!UICONTROL Do not restrict the filter]**
+   Välj alternativet **[!UICONTROL Do not restrict the filter]** om du vill hindra användaren från att åsidosätta det här filtret.
 
    Det här alternativet är aktiverat för filter för mottagare av en leverans och mottagare av leveranser som tillhör en mapp som finns i leveransguiden och som inte kan överladdas.
 
