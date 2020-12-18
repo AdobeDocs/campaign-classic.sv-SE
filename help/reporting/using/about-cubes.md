@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Om kuber{#about-cubes}
 
-Utforska data i databasen via modulen **Marketing Analytics** . Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
+Utforska data i databasen via modulen **Marketing Analytics**. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
 Kuber används för att generera vissa inbyggda rapporter, inklusive leveransrapporter (leveransspårning, klickningar, öppningar osv.). Rapporter som baseras på kuber får endast användas som standard för datavolymer under 5 miljoner faktarader.
 
@@ -27,7 +27,7 @@ När de har skapats och konfigurerats används kuber i frågeformulär för rapp
 
 >[!CAUTION]
 >
->**Marketing Analytics** är en Adobe Campaign-modul. Den måste installeras på din instans så att du kan använda de funktioner som beskrivs nedan.
+>**Marketing** Analytics är en Adobe Campaign-modul. Den måste installeras på din instans så att du kan använda de funktioner som beskrivs nedan.
 
 Med modulen Marketing Analytics kan ni med Campaign
 
@@ -37,7 +37,7 @@ Med modulen Marketing Analytics kan ni med Campaign
    * minska mängden data som ingår i de olika beräkningar som används för rapporter och frågor, vilket avsevärt optimerar beräkningstiderna för indikatorn,
    * förenkla tillgången till data, så att användarna kan hantera data (oavsett om de är i förväg aggregerade eller inte) beroende på olika dimensioner.
 
-   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
+   Mer information finns i [Skapa indikatorer](../../reporting/using/creating-indicators.md).
 
 1. Skapa pivottabeller i vyn:
 
@@ -81,15 +81,15 @@ När du arbetar med kuber måste du känna till följande begrepp:
 
    Mått kan beräknas: Antagandegraden för ett erbjudande är förhållandet mellan antalet gånger det presenterades och antalet gånger det accepterades.
 
-## Arbetsytan Kub {#cube-workspace}
+## Kubarbetsyta {#cube-workspace}
 
-Kuber lagras i **[!UICONTROL Administration > Configuration > Cubes]** noden.
+Kuber lagras i noden **[!UICONTROL Administration > Configuration > Cubes]**.
 
 ![](assets/s_advuser_cube_node.png)
 
 De huvudsakliga användningsområdena för kuber är följande:
 
-* Dataexport kan utföras direkt i en rapport som utformats i Adobe Campaign-plattformens **[!UICONTROL Reports]** universum.
+* Dataexport kan utföras direkt i en rapport som utformats i **[!UICONTROL Reports]**-universum för Adobe Campaign-plattformen.
 
    Om du vill göra det skapar du en ny rapport och väljer den kub som du vill använda.
 
@@ -101,7 +101,7 @@ De huvudsakliga användningsområdena för kuber är följande:
 
    ![](assets/cube_display_new.png)
 
-* Du kan också referera till en kub i rutan **[!UICONTROL Query]** för en rapport för att använda dess indikatorer, vilket visas nedan:
+* Du kan också referera till en kub i rutan **[!UICONTROL Query]** i en rapport för att använda dess indikatorer, vilket visas nedan:
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
