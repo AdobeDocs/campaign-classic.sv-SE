@@ -28,30 +28,30 @@ Tack vare webbapplikationer kan ni med Social Marketing visa personaliserat inne
 Använd följande konfigurationssteg:
 
 1. Skapa ett eller flera Facebook-program. Mer information finns i: [Skapa ett Facebook-program](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
-1. Ange **[!UICONTROL terms of service]** och **[!UICONTROL Privacy policy]** länkar som ska visas på skärmen för behörighetsbegäran på Facebook. Mer information finns i: [Ange länkar](#entering-the-terms-of-service-and-privacy-policy-links)till användarvillkoren och sekretesspolicyn.
-1. Skapa ett externt konto av **[!UICONTROL Facebook Connect]** typen för varje Facebook-program. Mer information finns i: [Konfigurerar externa konton](#configuring-external-accounts).
-1. För varje Facebook-program skapar du ett webbprogram av Facebook-typ i Adobe Campaign. Mer information finns i: [Skapa ett webbprogram](#creating-a-facebook-type-web-application)av Facebook-typ.
-1. Konfigurera dina Facebook-program så att de visas som flikar på din Facebook-sida. Mer information finns i: [Konfigurerar Facebook-flikar](#configuring-facebook-tabs).
+1. Ange de **[!UICONTROL terms of service]**- och **[!UICONTROL Privacy policy]**-länkar som ska visas på skärmen för behörighetsbegäran på Facebook. Mer information finns i: [Ange länkar till användarvillkoren och sekretesspolicyn](#entering-the-terms-of-service-and-privacy-policy-links).
+1. Skapa ett externt konto av typen **[!UICONTROL Facebook Connect]** för varje Facebook-program. Mer information finns i: [Konfigurera externa konton](#configuring-external-accounts).
+1. För varje Facebook-program skapar du ett webbprogram av Facebook-typ i Adobe Campaign. Mer information finns i: [Skapa ett webbprogram av Facebook-typ](#creating-a-facebook-type-web-application).
+1. Konfigurera dina Facebook-program så att de visas som flikar på din Facebook-sida. Mer information finns i: [Konfigurera Facebook-flikar](#configuring-facebook-tabs).
 
 ## Konfigurera externa konton {#configuring-external-accounts}
 
-För varje Facebook-program måste du skapa ett externt konto av **[!UICONTROL Facebook Connect]** typen.
+För varje Facebook-program måste du skapa ett externt konto av typen **[!UICONTROL Facebook Connect]**.
 
 Det här steget kräver åtkomst till både din Adobe Campaign-konsol och en webbläsare som är inloggad på det Facebook-konto som du använder för sidadministration:
 
-* **Facebook**: markera det tidigare skapade programmet ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)) och välj fliken **[!UICONTROL Settings]** > **[!UICONTROL Basic]** .
+* **Facebook**: markera det tidigare skapade programmet (  [https://developers.facebook.com/apps](https://developers.facebook.com/apps)) och välj  **[!UICONTROL Settings]** fliken  **[!UICONTROL Basic]** >.
 
    ![](assets/social_webapp_fb_008.png)
 
    >[!NOTE]
    >
-   >Om **[!UICONTROL Facebook Web Games]** avsnittet inte visas klickar du på **[!UICONTROL Add Platform]** knappen längst ned på sidan och väljer **[!UICONTROL Facebook Web Games]**.
+   >Om **[!UICONTROL Facebook Web Games]**-avsnittet inte visas klickar du på knappen **[!UICONTROL Add Platform]** längst ned på sidan och väljer **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe Campaign**: gå till **[!UICONTROL Administration > Platform > External accounts]** noden i trädet och klicka på **[!UICONTROL New]**.
+* **Adobe Campaign**: gå till  **[!UICONTROL Administration > Platform > External accounts]** trädnoden och klicka  **[!UICONTROL New]**.
 
    ![](assets/social_webapp_fb_005.png)
 
-1. Ange en etikett och ett internt namn och välj **[!UICONTROL Facebook Connect]** typ.
+1. Ange en etikett och ett internt namn och välj typen **[!UICONTROL Facebook Connect]**.
 
    ![](assets/social_webapp_fb_006.png)
 
@@ -67,7 +67,7 @@ Det här steget kräver åtkomst till både din Adobe Campaign-konsol och en web
    >
    >Parametrarna för webbtjänsten finns i WSDL-filen som finns här: **`https://<Instance name>/nl/jsp/schemawsdl.jsp?schema=nms:visitor`**
 
-   Om du vill integrera tredjepartsprogrammet i Adobe Campaign måste du kopiera innehållet i **[!UICONTROL App ID]** - och **[!UICONTROL App Secret]** Facebook-fälten och klistra in det i **[!UICONTROL Application ID]** och **[!UICONTROL Application secret]** i konsolens fält.
+   Om du vill integrera tredjepartsprogrammet i Adobe Campaign måste du kopiera innehållet i Facebook-fälten **[!UICONTROL App ID]** och **[!UICONTROL App Secret]** och klistra in det i fälten **[!UICONTROL Application ID]** och **[!UICONTROL Application secret]** i konsolen.
 
    ![](assets/social_facebook_external_account_013.png)
 
@@ -75,7 +75,7 @@ Det här steget kräver åtkomst till både din Adobe Campaign-konsol och en web
 
    Om du vill ha programmet på den här instansen (om du inte har något tredjepartsprogram) måste du använda Adobe Campaign webbprogram för att hämta Facebook-profiler. Mer information finns i [Exempel på Facebook-appar](../../social/using/examples-of-facebook-apps.md).
 
-   I Adobe Campaign-konsolen kopierar du adressen som finns i **[!UICONTROL Secure Canvas URL]** fältet och klistrar in den i **[!UICONTROL Facebook Web games (https)]** fältet på Facebook (i **[!UICONTROL Facebook Web Games]** avsnittet).
+   Kopiera adressen i fältet **[!UICONTROL Secure Canvas URL]** i Adobe Campaign-konsolen och klistra in den i fältet **[!UICONTROL Facebook Web games (https)]** på Facebook (i avsnittet **[!UICONTROL Facebook Web Games]**).
 
    ![](assets/social_facebook_external_account_009.png)
 
@@ -83,25 +83,25 @@ Det här steget kräver åtkomst till både din Adobe Campaign-konsol och en web
    >
    >Du får inte använda den osäkra URL:en under några omständigheter.
 
-   På Facebook kopierar du innehållet i **[!UICONTROL App ID]** och **[!UICONTROL App Secret]** fälten och klistrar in det i **[!UICONTROL Application ID]** - och **[!UICONTROL Application secret]** -fälten i konsolen.
+   På Facebook kopierar du innehållet i fälten **[!UICONTROL App ID]** och **[!UICONTROL App Secret]** och klistrar in det i fälten **[!UICONTROL Application ID]** och **[!UICONTROL Application secret]** i konsolen.
 
    ![](assets/social_facebook_external_account_008.png)
 
-1. På Facebook klickar du på **[!UICONTROL Save Changes]** knappen längst ned på sidan.
-1. Klicka på knappen på Adobe Campaign-konsolen för att aktivera Adobe Campaign för att återställa data i realtid varje gång en fläkt checkar in via det här programmet. **[!UICONTROL Subscribe]** Mer information finns i: [Exempel på Facebook-appar](../../social/using/examples-of-facebook-apps.md).
+1. På Facebook klickar du på knappen **[!UICONTROL Save Changes]** längst ned på sidan.
+1. Klicka på knappen **[!UICONTROL Subscribe]** i Adobe Campaign-konsolen för att Adobe Campaign ska kunna återställa data i realtid varje gång en fläkt checkar in via det här programmet. Mer information finns i: [Exempel på Facebook-appar](../../social/using/examples-of-facebook-apps.md).
 
    ![](assets/social_webapp_fb_013.png)
 
-## Ange länkar till användarvillkor och sekretesspolicy {#entering-the-terms-of-service-and-privacy-policy-links}
+## Ange länkar för användarvillkor och sekretesspolicy {#entering-the-terms-of-service-and-privacy-policy-links}
 
-Vi rekommenderar att du lägger till **[!UICONTROL Terms of service]** och **[!UICONTROL Privacy policy]** länkar som ska visas på skärmen för behörighetsbegäran på Facebook.
+Vi rekommenderar att du lägger till länkarna **[!UICONTROL Terms of service]** och **[!UICONTROL Privacy policy]**, som ska visas på skärmen för behörighetsbegäran på Facebook.
 
 ![](assets/social_fb_terms_of_services_001.png)
 
 Konfigurationsstegen är följande:
 
-1. Ange följande adress: [https://developers.facebook.com/apps](https://developers.facebook.com/apps)väljer du sedan Facebook-programmet.
-1. Markera **[!UICONTROL Settings > Basic]** fliken och ange **[!UICONTROL Privacy Policy URL]** fälten och **[!UICONTROL Terms of Service URL]** fälten.
+1. Ange följande adress: [https://developers.facebook.com/apps](https://developers.facebook.com/apps) och välj sedan Facebook-programmet.
+1. Välj fliken **[!UICONTROL Settings > Basic]** och ange fälten **[!UICONTROL Privacy Policy URL]** och **[!UICONTROL Terms of Service URL]**.
 
    ![](assets/social_fb_terms_of_services.png)
 
@@ -109,7 +109,7 @@ Konfigurationsstegen är följande:
 
 Med Adobe Campaign Facebook-programmet kan du visa anpassat innehåll i ditt Facebook-program. För varje Facebook-program måste du skapa ett webbprogram i Adobe Campaign. Så här skapar du ett Facebook-webbprogram:
 
-1. Gå till **[!UICONTROL Social networks]** universum, klicka på **[!UICONTROL Applications]** länken och sedan på **[!UICONTROL Create]** knappen.
+1. Gå till **[!UICONTROL Social networks]**-universum, klicka på länken **[!UICONTROL Applications]** och sedan på knappen **[!UICONTROL Create]**.
 
    ![](assets/social_webapp_001.png)
 
@@ -127,15 +127,15 @@ Med Adobe Campaign Facebook-programmet kan du visa anpassat innehåll i ditt Fac
    >* **[!UICONTROL "Page Tab" competition]**: Facebook-applikationen är helt integrerad med varumärkessidorna.
 
 
-1. I **[!UICONTROL Application]** fältet anger du det externa konto som är länkat till Facebook-programmet. Mer information finns i: [Konfigurerar externa konton](#configuring-external-accounts).
+1. I fältet **[!UICONTROL Application]** anger du det externa konto som är länkat till Facebook-programmet. Mer information finns i: [Konfigurera externa konton](#configuring-external-accounts).
 
    ![](assets/social_webapp_005.png)
 
-1. Markera **[!UICONTROL Edit]** fliken och redigera sedan webbprogrammet. Mer information finns i: [Exempel på Facebook-appar](../../social/using/examples-of-facebook-apps.md).
+1. Välj fliken **[!UICONTROL Edit]** och redigera sedan webbprogrammet. Mer information finns i: [Exempel på Facebook-appar](../../social/using/examples-of-facebook-apps.md).
 
    ![](assets/social_webapp_003.png)
 
-1. När webbprogrammet är klart väljer du **[!UICONTROL Dashboard]** fliken och klickar sedan på **[!UICONTROL Publish]** för att publicera online.
+1. När webbprogrammet är klart väljer du fliken **[!UICONTROL Dashboard]** och klickar sedan på **[!UICONTROL Publish]** för att publicera online.
 
    ![](assets/social_webapp_004.png)
 
@@ -143,23 +143,23 @@ Med Adobe Campaign Facebook-programmet kan du visa anpassat innehåll i ditt Fac
 
 Du kan konfigurera dina Facebook-program så att de visas som flikar på din Facebook-sida. Gör så här:
 
-1. Markera Facebook-programmet ([https://developers.facebook.com/apps](https://developers.facebook.com/apps)) och välj **[!UICONTROL Settings > Basic]** fliken.
+1. Markera Facebook-programmet ([https://developers.facebook.com/apps](https://developers.facebook.com/apps)) och välj fliken **[!UICONTROL Settings > Basic]**.
 
    ![](assets/social_webapp_fb_008.png)
 
-1. Klicka på **[!UICONTROL Add Platform]** knappen längst ned på sidan och markera **[!UICONTROL Page Tab]**.
+1. Klicka på knappen **[!UICONTROL Add Platform]** längst ned på sidan och välj **[!UICONTROL Page Tab]**.
 
    ![](assets/social_webapp_fb_008bis.png)
 
-1. I fältet **[!UICONTROL Page Tab Name]** i **[!UICONTROL Page Tab]** avsnittet anger du etiketten som du vill att den ska visas på Facebook-sidan.
+1. I fältet **[!UICONTROL Page Tab Name]** i avsnittet **[!UICONTROL Page Tab]** anger du etiketten så som du vill att den ska visas på Facebook-sidan.
 
    ![](assets/social_webapp_fb_001.png)
 
-1. I **[!UICONTROL Secure Page Tab URL]** fältet anger du webbprogrammets offentliga URL, som du kommer åt via webbprogrammets **[!UICONTROL Dashboard]** flik. Mer information om hur du skapar webbprogram av Facebook-typ finns i [Skapa ett webbprogram](#creating-a-facebook-type-web-application)av Facebook-typ.
+1. I fältet **[!UICONTROL Secure Page Tab URL]** anger du webbprogrammets offentliga URL, som du kommer åt via fliken **[!UICONTROL Dashboard]** i webbprogrammet. Mer information om hur du skapar webbprogram av Facebook-typ finns i [Skapa ett webbprogram av Facebook-typ](#creating-a-facebook-type-web-application).
 
    ![](assets/social_webapp_fb_002.png)
 
-1. Klicka på **[!UICONTROL Dashboard]** länken på webbprogrammets **[!UICONTROL Add a page tab]** sida.
+1. Klicka på länken **[!UICONTROL Add a page tab]** på **[!UICONTROL Dashboard]** i webbprogrammet.
 
    ![](assets/social_webapp_fb_0010.png)
 
