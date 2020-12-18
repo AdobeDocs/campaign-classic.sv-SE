@@ -25,8 +25,8 @@ Vid borttagning av dubbletter behandlas inkommande flöden separat. Om till exem
 
 Denna fråga måste åtgärdas på följande sätt:
 
-* Skapa en **unionsaktivitet** för att förena varje inkommande flöde.
-* Skapa en **borttagning av dubbletter** efter **unionsaktiviteten** .
+* Skapa en **Union**-aktivitet för att förena varje inkommande flöde.
+* Skapa en **borttagning av dubbletter**-aktivitet efter aktiviteten **Union**.
 
 ![](assets/dedup_bonnepratique.png)
 
@@ -34,7 +34,7 @@ Denna fråga måste åtgärdas på följande sätt:
 
 Om du vill konfigurera en borttagning av dubbletter anger du dess etikett, metod, borttagningsvillkor och alternativ för resultatet.
 
-Klicka på **[!UICONTROL Edit configuration...]** länken för att definiera dedupliceringsläget.
+Klicka på länken **[!UICONTROL Edit configuration...]** för att definiera dedupliceringsläget.
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -46,9 +46,9 @@ Klicka på **[!UICONTROL Edit configuration...]** länken för att definiera ded
 
    >[!NOTE]
    >
-   >Om du använder externa data som indata, till exempel från en extern fil, måste du markera **[!UICONTROL Temporary schema]** alternativet.
+   >Om du använder externa data som indata, till exempel från en extern fil, måste du markera alternativet **[!UICONTROL Temporary schema]**.
    >
-   >I nästa steg kan du välja vilket eller vilka villkor som ska användas: **[!UICONTROL Other]**
+   >I nästa steg kan du med **[!UICONTROL Other]**-alternativet välja vilket eller vilka kriterier som ska användas:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -72,7 +72,7 @@ Klicka på **[!UICONTROL Edit configuration...]** länken för att definiera ded
    * **[!UICONTROL Using an expression]**: I kan du behålla poster med det lägsta (eller högsta) värdet för det angivna uttrycket.
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   Klicka **[!UICONTROL Finish]** för att godkänna den valda borttagningsmetoden.
+   Klicka på **[!UICONTROL Finish]** för att godkänna den valda borttagningsmetoden.
 
    I fönstrets mellersta del sammanfattas den definierade konfigurationen.
 
@@ -80,11 +80,11 @@ Klicka på **[!UICONTROL Edit configuration...]** länken för att definiera ded
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Komplementet består av alla dubbletter. Därefter kommer ytterligare en övergång att läggas till i aktiviteten enligt följande:
+   Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet består av alla dubbletter. Därefter kommer ytterligare en övergång att läggas till i aktiviteten enligt följande:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Exempel: Identifiera dubbletter före leverans {#example--identify-the-duplicates-before-a-delivery}
+## Exempel: Identifiera dubbletterna före en leverans {#example--identify-the-duplicates-before-a-delivery}
 
 I följande exempel gäller borttagningen av dubbletter kombinationen av tre frågor.
 
@@ -96,17 +96,17 @@ De identifierade dubbletterna kommer också att integreras i en dedikerad dubble
 
 1. Lägg till och länka de olika aktiviteter som krävs för att arbetsflödet ska fungera enligt ovan.
 
-   Unionsaktiviteten används här för att&quot;sammanfoga&quot; de tre frågorna till en enda övergång. Det innebär att borttagning av dubbletter inte fungerar för varje fråga separat, utan för hela frågan. Mer information om detta finns i [Bästa praxis](#best-practices).
+   Unionsaktiviteten används här för att&quot;sammanfoga&quot; de tre frågorna till en enda övergång. Det innebär att borttagning av dubbletter inte fungerar för varje fråga separat, utan för hela frågan. Mer information om det här ämnet finns i [Bästa praxis](#best-practices).
 
-1. Öppna dedupliceringsaktiviteten och klicka sedan på **[!UICONTROL Edit configuration...]** länken för att definiera dedupliceringsläget.
-1. I det nya fönstret väljer du **[!UICONTROL Database schema]**.
-1. Välj **Mottagare** som mål och filtreringsdimensioner.
-1. Markera ID-fältet för **[!UICONTROL Email]** dubbletterna om du bara vill skicka leveransen en gång till varje e-postadress och sedan klicka på **[!UICONTROL Next]**.
+1. Öppna dedupliceringsaktiviteten och klicka sedan på länken **[!UICONTROL Edit configuration...]** för att definiera dedupliceringsläget.
+1. Välj **[!UICONTROL Database schema]** i det nya fönstret.
+1. Välj **Mottagare** som mål- och filtreringsdimensioner.
+1. Markera ID-fältet för dubbletterna **[!UICONTROL Email]** om du bara vill skicka leveransen en gång till varje e-postadress och sedan klicka på **[!UICONTROL Next]**.
 
-   Om du vill basera dubblett-ID:n på ett visst fält väljer du **[!UICONTROL Other]** att få åtkomst till listan med tillgängliga fält.
+   Om du vill basera dubblett-ID:n på ett specifikt fält väljer du **[!UICONTROL Other]** för att få tillgång till listan med tillgängliga fält.
 
 1. Välj om du bara vill behålla en post när samma e-postadress identifieras för flera mottagare.
-1. Välj läget för borttagning av dubbletter så att de poster som sparas om dubbletter identifieras väljs slumpmässigt och klicka sedan på **[!UICONTROL Choose for me]** **[!UICONTROL Finish]**.
+1. Välj borttagningsläget **[!UICONTROL Choose for me]** så att de poster som sparas om dubbletter identifieras väljs slumpmässigt och klicka sedan på **[!UICONTROL Finish]**.
 
 När arbetsflödet körs exkluderas alla mottagare som identifieras som dubbletter från resultatet (och därmed leveransen) och läggs till i dubblettlistan. Den här listan kan användas igen i stället för att du behöver identifiera dubbletterna igen.
 
@@ -123,6 +123,6 @@ Varje inkommande händelse måste ange ett mål som definieras av dessa parametr
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar det mål som skapas av borttagningen av dubbletter. **[!UICONTROL tableName]** är namnet på tabellen som sparar målidentifierare, **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar det mål som skapas av borttagningen av dubbletter. **[!UICONTROL tableName]** är namnet på tabellen som sparar målidentifierare,  **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och  **[!UICONTROL recCount]** är antalet element i tabellen.
 
 Övergången som är associerad med komplementet har samma parametrar.
