@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Principer {#principles}
 
-Om du vill redigera, skapa och konfigurera scheman klickar du på noden i Adobe Campaign klientkonsol **[!UICONTROL Administration > Configuration > Data schemas]** .
+Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign klientkonsol.
 
 >[!NOTE]
 >
@@ -43,16 +43,16 @@ Förhandsgranskningen genererar automatiskt det utökade schemat:
 >
 >När källschemat sparas startas genereringen av det utökade schemat automatiskt.
 
-Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md).
 
-## Exempel: skapa en kontraktstabell {#example--creating-a-contract-table}
+## Exempel: skapar en kontraktstabell {#example--creating-a-contract-table}
 
 I följande exempel vill vi skapa en ny tabell för **kontrakt** i databasmodellen för Adobe Campaign-databasen. I den här tabellen kan du lagra förnamn och efternamn samt e-postadresser för innehavare och medarbetare för varje kontrakt.
 
 För att göra detta måste du skapa tabellschemat och uppdatera databasstrukturen för att generera motsvarande tabell. Använd följande steg:
 
-1. Redigera noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet och klicka på **[!UICONTROL New]** .
-1. Välj **[!UICONTROL Create a new table in the data model]** alternativet och klicka på **[!UICONTROL Next]** .
+1. Redigera noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet och klicka på **[!UICONTROL New]**.
+1. Välj alternativet **[!UICONTROL Create a new table in the data model]** och klicka på **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -64,7 +64,7 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    >
    >Som standard lagras scheman som skapas av användare i &#39;cus&#39;-namnutrymmet. Mer information finns i [Identifiering av ett schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Skapa tabellens innehåll. Vi rekommenderar att du använder anmälningsguiden för att kontrollera att inga inställningar saknas. Det gör du genom att klicka på **[!UICONTROL Insert]** knappen och välja vilken typ av inställning som ska läggas till.
+1. Skapa tabellens innehåll. Vi rekommenderar att du använder anmälningsguiden för att kontrollera att inga inställningar saknas. Det gör du genom att klicka på knappen **[!UICONTROL Insert]** och välja vilken typ av inställning som ska läggas till.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,5 +120,5 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
+1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. Mer information finns i [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md).
 
