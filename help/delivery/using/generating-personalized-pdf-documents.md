@@ -25,7 +25,7 @@ Följande tillägg stöds: &quot;.docx&quot;, &quot;.doc&quot; och &quot;.odt&qu
 
 För att personalisera dina dokument finns samma JavaScript-funktioner som för e-postpersonalisering.
 
-Du måste aktivera **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** alternativet. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](../../delivery/using/attaching-files.md) .
+Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](../../delivery/using/attaching-files.md).
 
 Exempel på en anpassning av en fakturarubrik:
 
@@ -38,7 +38,7 @@ Om du vill generera dynamiska tabeller eller inkludera bilder via en URL-adress 
 Så här genererar du dynamiska tabeller:
 
 * Skapa en tabell med tre rader och så många kolumner som behövs, och konfigurera sedan tabellens layout (kanter osv.).
-* Placera markören på tabellen och klicka på **[!UICONTROL Table > Table properties]** menyn. Gå till **[!UICONTROL Table]** fliken och ange ett namn som börjar med **NlJsTable**.
+* Placera markören på tabellen och klicka på menyn **[!UICONTROL Table > Table properties]**. Gå till fliken **[!UICONTROL Table]** och ange ett namn som börjar med **NlJsTable**.
 * I den första cellen på den första raden definierar du en slinga (&quot;for&quot;, till exempel) som aktiverar iteration på de värden som du vill visa i tabellen.
 * I varje cell på den andra raden i tabellen infogar du skript som returnerar de värden som ska visas.
 * Stäng slingan på tabellens tredje och sista rad.
@@ -64,9 +64,9 @@ För att göra detta måste du konfigurera ett personaliseringsblock och sedan t
 
 **Steg 2: skapa personaliseringsblocket:**
 
-* Gå till Adobe Campaign-konsolens **[!UICONTROL Resources > Campaign management > Personalization blocks]** meny.
+* Gå till menyn **[!UICONTROL Resources > Campaign management > Personalization blocks]** i Adobe Campaign-konsolen.
 * Skapa ett nytt anpassningsblock för&quot;Min logotyp&quot; med&quot;Min_logotyp&quot; som internt namn.
-* Klicka på **[!UICONTROL Advanced parameters...]** länken och markera sedan **[!UICONTROL "The content of the block is included in an attachment"]** alternativet. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
+* Klicka på länken **[!UICONTROL Advanced parameters...]** och markera sedan alternativet **[!UICONTROL "The content of the block is included in an attachment"]**. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
