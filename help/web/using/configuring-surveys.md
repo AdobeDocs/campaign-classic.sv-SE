@@ -27,6 +27,6 @@ De tillgängliga parametrarna beskrivs i [det här avsnittet](../../web/using/de
 
 ## Enkätsdatalagring {#survey-data-storage}
 
-Som standard lagras webbformulärfälten i mottagartabellen. Om du vill använda en annan tabell markerar du den i **[!UICONTROL Document type]** fältet. Med **[!UICONTROL Zoom]** ikonen kan du visa innehållet i den markerade tabellen.
+Som standard lagras webbformulärfälten i mottagartabellen. Om du vill använda en annan tabell markerar du den i fältet **[!UICONTROL Document type]**. Med ikonen **[!UICONTROL Zoom]** kan du visa innehållet i den markerade tabellen.
 
-Svar på enkäter från användare som inte är lagrade i fälten (men i lokala variabler) lagras i tabellen **Svar på enkäter** . Du kan ändra det schema som används baserat på **[!UICONTROL Library]** fältet. Det här fältet är bara tillgängligt för **undersökningar**.
+Svar på enkäter från användare som inte är lagrade i fälten (men i lokala variabler) lagras i tabellen **Svar på enkäter**. Du kan ändra det schema som används baserat på fältet **[!UICONTROL Library]**. Det här fältet är bara tillgängligt för **enkäter**.
