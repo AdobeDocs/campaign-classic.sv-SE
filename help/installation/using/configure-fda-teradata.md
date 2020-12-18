@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # Konfigurera åtkomst till Teradata {#configure-access-to-teradata}
 
-Använd alternativet Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) för att bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Teradata.
+Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Teradata.
 
 1. Installera och konfigurera [Teradata-drivrutiner](#teradata-config)
-1. Konfigurera Teradata [externa konto](#teradata-external) i Campaign
+1. Konfigurera det externa Teradata [kontot](#teradata-external) i Campaign
 1. Konfigurera [ytterligare konfiguration](#teradata-additional-configurations) för Teradata- och Campaign-servern
 
-## Teradata-konfiguration {#teradata-config}
+## Teradata configuration {#teradata-config}
 
 Du måste installera drivrutiner för att Teradata ska kunna ansluta till Campaign.
 
@@ -44,7 +44,7 @@ Du måste installera drivrutiner för att Teradata ska kunna ansluta till Campai
       InstallDir=/etc/
       ```
 
-      &quot;InstallDir&quot; motsvarar platsen för filen **odbcinst.ini** .
+      &quot;InstallDir&quot; motsvarar platsen för filen **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
@@ -75,15 +75,15 @@ Du måste installera drivrutiner för att Teradata ska kunna ansluta till Campai
 
 Med Teradata externa konto kan du ansluta Campaign-instansen till din externa Teradata-databas.
 
-1. Klicka **[!UICONTROL Explorer]** på **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Klicka på **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]** i Campaign **[!UICONTROL Explorer]**.
 
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
 
    ![](assets/ext_account_19.png)
 
-1. Om du vill konfigurera det **[!UICONTROL Teradata]** externa kontot måste du ange:
+1. Om du vill konfigurera det externa kontot **[!UICONTROL Teradata]** måste du ange:
 
-   * **[!UICONTROL Type]**: Välj **[!UICONTROL Teradata]** typ.
+   * **[!UICONTROL Type]**: Välj  **[!UICONTROL Teradata]** typ.
 
    * **[!UICONTROL Server]**: URL eller namn på Teradata-servern
 
@@ -99,7 +99,7 @@ Med Teradata externa konto kan du ansluta Campaign-instansen till din externa Te
 
 ### Frågeränder
 
-När flera Adobe Campaign-användare ansluter till samma FDA Teradata-externa konto kan du på fliken **[!UICONTROL Query banding]** ställa in ett frågeband, dvs. en uppsättning nyckel/värde-par, för en session.
+När flera Adobe Campaign-användare ansluter till samma externa FDA Teradata-konto kan du på fliken **[!UICONTROL Query banding]** ställa in ett frågeband, dvs. en uppsättning nyckel/värde-par, för en session.
 
 ![](assets/ext_account_20.png)
 
@@ -107,21 +107,21 @@ När det här alternativet är konfigurerat skickar Adobe Campaign metadata varj
 
 >[!NOTE]
 >
->For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+>Mer information om **[!UICONTROL Query banding]** finns i [Teradata-dokumentationen](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 Så här konfigurerar du Query-ränder:
 
-1. Använd för **[!UICONTROL Default]** att ange ett standardfrågeband som ska användas om en användare inte har något associerat frågeband. Om det här fältet lämnas tomt kommer användare utan frågeband inte att kunna använda Teradata.
+1. Använd **[!UICONTROL Default]** för att ange ett standardfrågeband som ska användas om en användare inte har något associerat frågeband. Om det här fältet lämnas tomt kommer användare utan frågeband inte att kunna använda Teradata.
 
-1. Använd **[!UICONTROL Users]** fältet för att ange ett frågeband för varje användare. Du kan lägga till så många nyckel/värde-par du behöver, t.ex. priority=1;workload=high. Om användaren inte har något tilldelat frågeband används **[!UICONTROL Default]** fältet.
+1. Använd fältet **[!UICONTROL Users]** för att ange ett frågeband för varje användare. Du kan lägga till så många nyckel/värde-par du behöver, t.ex. priority=1;workload=high. Om användaren inte har tilldelats något frågeband används fältet **[!UICONTROL Default]**.
 
-1. Markera **[!UICONTROL Active]** rutan för att aktivera den här funktionen
+1. Markera rutan **[!UICONTROL Active]** om du vill aktivera den här funktionen
 
-#### Felsökning av externa konton {#external-account-troubleshooting}
+#### Felsökning av externt konto {#external-account-troubleshooting}
 
-Om följande fel uppstår när anslutningen **TIM-030008 testas Datum &#39;2&#39;: tecken som saknas (iRc=-53)** kontrollerar att ODBC-drivrutinen är korrekt installerad och att LD_LIBRARY_PATH (Linux)/PATH (Windows) är inställd för Campaign-servern.
+Om följande fel uppstår när anslutningen testas **TIM-030008 Datum &#39;2&#39;: tecken som saknas (iRc=-53)** kontrollera att ODBC-drivrutinen är korrekt installerad och att LD_LIBRARY_PATH (Linux) / PATH (Windows) är inställd för Campaign-servern.
 
-Felet **ODB-240000 ODBC: [Det gick inte att hitta namnet på Microsoft][ODBC Driver Manager] -datakällan och ingen standarddrivrutin har angetts.** inträffar med Windows om du använder en 16.X-drivrutin. Adobe Campaign förväntar sig att teradata får namnet {teradata} i odbcinst.ini.
+Felet **ODB-240000 ODBC-fel: [Det gick inte att hitta namnet på datakällan i Microsoft][ODBC Driver Manager] och ingen standarddrivrutin har angetts.** inträffar med Windows om du använder en 16.X-drivrutin. Adobe Campaign förväntar sig att teradata får namnet {teradata} i odbcinst.ini.
 
 * Från och med Campaign 18.10 kan du lägga till ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; i alternativen för det externa kontot. Versionsnumret kan ändras. Du hittar det exakta namnet genom att köra odbcad32.exe och gå till fliken Drivrutiner.
 
@@ -184,7 +184,7 @@ Så här installerar du md5:
 
 ### SHA2-installation {#sha2-installation}
 
-Om du vill använda sha2-funktioner i din Adobe Campaign-instans måste du installera funktionen för användarläge i din Teradata-databas från den här [sidan](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
+Om du vill använda sha2-funktioner i din Adobe Campaign-instans måste du installera användarlägesfunktionen i din Teradata-databas från den här [sidan](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
 
 Sha1 för den hämtade filen är som följer e87438d37424836358bd3902cf1adeb629349780.
 
@@ -205,7 +205,7 @@ Så här installerar du SHA2:
 
 ### UDF_UTF16TO8-installation {#UDF-UTF16TO8-installation}
 
-Om du vill använda udf_utf16to8-funktioner i din Adobe Campaign-instans måste du installera funktionen för användarläge i din Teradata-databas från **Teradata Unicode-verktygspaket** på den här [sidan](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
+Om du vill använda udf_utf16to8-funktioner i din Adobe Campaign-instans måste du installera funktionen för användarläge i din Teradata-databas från **Teradata Unicode-verktygslådan** på denna [sida](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
 
 SHA1 för den hämtade filen är som följer e58235f434f52c71316a577cb48e20b97d24f470.
 
@@ -236,9 +236,9 @@ Så här installerar du udf_utf16to8:
 
 Följande krävs för drivrutinsinstallationen:
 
-* Teradata ODBC Driver, som finns på den här [sidan](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
+* Teradata ODBC Driver, som finns på denna [sida](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
 
-* Teradata Tools and Utilities (används för massinläsning), som finns på den här [sidan](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
+* Teradata Tools and Utilities (används för massinläsning), som finns på denna [sida](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
 
 Filnamn och SHA1:
 
@@ -264,7 +264,7 @@ Så här installerar du ODBC-drivrutinen:
 
 1. Kör setup_wrapper.sh.
 
-### Installation av verktyg och verktyg från teradata {#teradata-tools-installation}
+### Installation av verktyg och verktyg i teradata {#teradata-tools-installation}
 
 Så här installerar du verktyg:
 
