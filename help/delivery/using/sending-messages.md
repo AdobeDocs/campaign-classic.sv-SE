@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Skicka ett e-postmeddelande{#sending-an-email}
 
-Om du vill godkänna e-postmeddelandet och skicka det till mottagarna av leveransen som skapas klickar du på **[!UICONTROL Send]**.
+Om du vill godkänna e-postmeddelandet och skicka det till mottagarna av den leverans som skapas klickar du på **[!UICONTROL Send]**.
 
 Den detaljerade processen för att validera och skicka en leverans presenteras i avsnitten nedan:
 
@@ -26,7 +26,7 @@ Den detaljerade processen för att validera och skicka en leverans presenteras i
 
 Avsnitten nedan beskriver de parametrar som är specifika för att leverera e-postmeddelanden.
 
-## BCC för e-post {#archiving-emails}
+## Hemlig kopia av e-post {#archiving-emails}
 
 Med Adobe Campaign kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. När alternativet är aktiverat sparas en exakt kopia av alla skickade meddelanden för den här leveransen.
 
@@ -41,24 +41,24 @@ När du skapar en ny leverans- eller leveransmall är e-postkopia inte aktiverat
 Följ stegen nedan för att aktivera e-postkopia för en e-postleveransmall:
 
 1. Gå till **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** eller **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Välj leveransen eller duplicera den färdiga mallen för **e-postleverans** och välj sedan den duplicerade mallen.
-1. Click the **Properties** button.
+1. Välj leveransen eller duplicera den färdiga **mallen** E-postleverans och välj sedan den duplicerade mallen.
+1. Klicka på knappen **Egenskaper**.
 1. Klicka på fliken **[!UICONTROL Delivery]**.  
-1. Markera alternativet **E-postkopia** . En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till den konfigurerade e-post-BCC-adressen.
+1. Markera alternativet **E-post i hemlig kopia**. En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till den konfigurerade e-post-BCC-adressen.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
    >[!NOTE]
    >
-   >Om e-postmeddelanden som skickas till BCC-adressen öppnas och klickas igenom, kommer detta att beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen, vilket kan orsaka vissa felberäkningar.
+   >Om e-postmeddelanden som skickas till BCC-adressen öppnas och klickas igenom, kommer detta att beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen, vilket kan orsaka felberäkningar.
 
-## Generera spegelsidan {#generating-the-mirror-page}
+## Genererar spegelsidan {#generating-the-mirror-page}
 
 Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet.
 
-Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av personaliseringsblock finns i [personaliseringsblock](../../delivery/using/personalization-blocks.md).
+Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [Personaliseringsblock](../../delivery/using/personalization-blocks.md).
 
-I leveransegenskaperna kan du ändra genereringsläget för den här sidan med hjälp **[!UICONTROL Mode]** av fältet på **[!UICONTROL Validity]** fliken.
+I leveransegenskaperna kan du ändra genereringsläget för den här sidan i fältet **[!UICONTROL Mode]** på fliken **[!UICONTROL Validity]**.
 
 ![](assets/s_ncs_user_wizard_miror_page_mode.png)
 
@@ -70,13 +70,13 @@ Förutom standardläget är följande alternativ också tillgängliga:
 
 * **[!UICONTROL Force the generation of the mirror page]** : även om ingen länk till spegelsidan infogas i leveransen, skapas spegelsidan.
 * **[!UICONTROL Do not generate the mirror page]** : ingen spegelsida genereras, även om länken finns i leveransen.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : Med det här alternativet kan du komma åt spegelsidans innehåll, med anpassningsinformation, i leveransloggfönstret. Det gör du genom att klicka på **[!UICONTROL Delivery]** fliken efter leveransens slut och markera raden för mottagaren vars spegelsida du vill visa. Klicka på **[!UICONTROL Display the mirror page for this message...]** länken.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : Med det här alternativet kan du komma åt spegelsidans innehåll, med anpassningsinformation, i leveransloggfönstret. Det gör du genom att klicka på fliken **[!UICONTROL Delivery]** efter leveransens slut och markera raden för mottagaren vars spegelsida du vill visa. Klicka på länken **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Hantera studsmeddelanden {#managing-bounce-emails}
 
-På fliken **[!UICONTROL SMTP]** för leveransparametrarna kan du konfigurera hanteringen av studsmeddelanden.
+På fliken **[!UICONTROL SMTP]** i leveransparametrarna kan du konfigurera hanteringen av studsmeddelanden.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
@@ -86,21 +86,21 @@ Du kan också definiera en specifik adress från den här skärmen för att unde
 
 ## Teckenkodning {#character-encoding}
 
-På fliken **[!UICONTROL SMTP]** i leveransparametrarna kan du ange en viss kodning i **[!UICONTROL Character encoding]** avsnittet.
+På fliken **[!UICONTROL SMTP]** i leveransparametrarna kan du ange en specifik kodning i avsnittet **[!UICONTROL Character encoding]**.
 
 Standardkodningen är UTF-8. Om vissa av mottagarnas e-postleverantörer inte har stöd för UTF-8-standardkodning kanske du vill ställa in en specifik kodning så att specialtecknen visas korrekt för mottagarna av e-postmeddelanden.
 
 Du vill till exempel skicka ett e-postmeddelande som innehåller japanska tecken. Om du vill vara säker på att alla tecken visas korrekt för mottagarna i Japan kan du använda en kodning som stöder de japanska tecknen i stället för standard UTF-8.
 
-Det gör du genom att markera **[!UICONTROL Force the encoding used for messages]** alternativet i **[!UICONTROL Character encoding]** avsnittet och välja en kodning i listrutan som visas.
+Det gör du genom att välja alternativet **[!UICONTROL Force the encoding used for messages]** i **[!UICONTROL Character encoding]**-avsnittet och välja en kodning i listrutan som visas.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
-## Lägga till SMTP-rubriker {#adding-smtp-headers}
+## Lägger till SMTP-rubriker {#adding-smtp-headers}
 
-Det går att lägga till SMTP-huvuden i leveranserna. Det gör du genom att använda relevanta avsnitt på fliken **[!UICONTROL SMTP]** i leveransen.
+Det går att lägga till SMTP-huvuden i leveranserna. Det gör du genom att använda relevant avsnitt på fliken **[!UICONTROL SMTP]** i leveransen.
 
-The script entered in this window must reference one header per line in the following form: **name:value**.
+Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande formulär: **name:value**.
 
 Värden kodas automatiskt om det behövs.
 
