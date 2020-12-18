@@ -29,7 +29,7 @@ I operationer baseras alla faser som kräver godkännande på samma princip.
 
 ![](assets/validation-1-in-op.png)
 
-Exempel på godkännanden finns i det här [avsnittet](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Godkännandeexempel finns i det här [avsnittet](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 En operator kan svara på ett av två sätt: validera med webbsidan som är länkad i e-postmeddelandet eller via konsolen.
 
@@ -43,15 +43,15 @@ Det går att få ett meddelande om godkännande som innehåller en länk till en
 
 Operatorhantering beskrivs i det här [avsnittet](../../platform/using/access-management.md).
 
-E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen är **[!UICONTROL notifyAssignee]**: Den sparas i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** mappen. Scenariot kan anpassas och vi rekommenderar att du skapar en kopia och ändrar mallar för varje aktivitet.
+E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen är **[!UICONTROL notifyAssignee]**: Den sparas i mappen **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Scenariot kan anpassas och vi rekommenderar att du skapar en kopia och ändrar mallar för varje aktivitet.
 
-Leveranser som skapas med den här mallen lagras i **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** mappen.
+Leveranser som skapas med den här mallen lagras i mappen **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Godkännande via konsolen {#approval-via-the-console}
 
 I åtgärder visas element som ska godkännas på kontrollpanelen för kampanjer.
 
-För tekniska arbetsflöden kan de uppgifter som användaren kan godkänna nås från trädstrukturen i **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** mappen.
+I tekniska arbetsflöden kan du komma åt de uppgifter som användaren kan godkänna från trädstrukturen i mappen **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -60,7 +60,7 @@ För tekniska arbetsflöden kan de uppgifter som användaren kan godkänna nås 
 Ett godkännande tilldelas en grupp operatorer, en enstaka operator eller en uppsättning operatorer som väljs via ett filtreringsvillkor.
 
 1. För den enklaste formen av godkännande slutförs uppgiften så snart en operator svarar. Alla andra operatorer som försöker svara får ett meddelande om att någon redan har gjort det.
-1. För flera godkännanden, se [Flera godkännanden](#multiple-approval).
+1. Mer information om flera godkännanden finns i [Flera godkännanden](#multiple-approval).
 
 Operatörsgrupperna för godkännanden bör utses som roller eller funktioner i stället för namngivna personer. En&quot;Kampanjbudgetgrupp&quot; är till exempel att föredra framför&quot;Harry&#39;s Group&quot;. Vi rekommenderar att du har minst två personer i en grupp som kan godkänna en uppgift. På så sätt kan den andre svara om någon inte är närvarande.
 
@@ -75,13 +75,13 @@ På den andra fliken i egenskaperna för aktivitetsgodkännande kan du definiera
 Om du vill lägga till en ny förfallotid klickar du på **[!UICONTROL Add]**. En övergång läggs till för varje förfallodatum som skapas. Du kan:
 
 * ändra de typiska parametrarna direkt genom att klicka på en cell i listan (eller genom att trycka på F2),
-* eller redigera uttrycket genom att klicka på **[!UICONTROL Detail...]** knappen.
+* eller redigera uttrycket genom att klicka på knappen **[!UICONTROL Detail...]**.
 
 >[!NOTE]
 >
 >Det är inte nödvändigt att ange en ordning för förfallodatumen eftersom de bearbetas i kronologisk ordning.
 
-Alternativet **[!UICONTROL Do not terminate the task]** låter godkännandet vara aktivt när fördröjningen överskrids. I det här läget kan du hantera påminnelser medan du låter godkännandet vara aktivt: -operatorer kan fortfarande svara. Det här alternativet är inaktiverat som standard, vilket innebär att uppgiften anses vara slutförd när den upphör att gälla och att operatorerna kanske inte längre svarar.
+Alternativet **[!UICONTROL Do not terminate the task]** lämnar godkännandet aktivt när fördröjningen överskrids. I det här läget kan du hantera påminnelser medan du låter godkännandet vara aktivt: -operatorer kan fortfarande svara. Det här alternativet är inaktiverat som standard, vilket innebär att uppgiften anses vara slutförd när den upphör att gälla och att operatorerna kanske inte längre svarar.
 
 Du kan skapa fyra typer av förfallodatum:
 
