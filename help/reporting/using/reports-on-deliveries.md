@@ -23,9 +23,9 @@ Följande typer av rapporter är tillgängliga:
 
 * Rapporter om hela plattformen finns i [Globala rapporter](../../reporting/using/global-reports.md).
 * Leveransrapporter, se [Leveransrapporter](../../reporting/using/delivery-reports.md).
-* Ackumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
+* Kumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
 
-Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Mer information finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) .
+Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Mer information finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md).
 
 ## Använda rapporter {#using-reports}
 
@@ -49,4 +49,4 @@ Du kan:
 >
 >Vissa rapporter innehåller diagram (kurva, bar, tratt osv.). Flytta markören över ett diagram för att visa dess värden.
 
-For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+Mer information om dessa alternativ finns i [det här avsnittet](../../reporting/using/about-adobe-campaign-reporting-tools.md).
