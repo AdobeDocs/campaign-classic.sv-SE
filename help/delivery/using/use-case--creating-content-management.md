@@ -26,7 +26,7 @@ Följande steg är nödvändiga för att skapa innehållshantering i Adobe Campa
 * [Steg 5 - Skapa publiceringsmallen](#step-5---creating-the-publication-template),
 * [Steg 6 - Skapa innehåll](#step-6---creating-contents).
 
-## Steg 1 - Analysera innehållet som ska produceras {#step-1---analyzing-the-content-to-be-produced}
+## Steg 1 - Analyserar innehållet som ska produceras {#step-1---analyzing-the-content-to-be-produced}
 
 Innan du börjar måste du göra en exakt analys av innehållet som ska produceras: identifiera de element som ska visas, studera de begränsningar som är kopplade till dem, definiera en typ för varje element osv. Du måste också skilja på statiska element och variabla element.
 
@@ -52,23 +52,23 @@ De olika elementen i det här nyhetsbrevet sätts samman baserat på reglerna so
 
 Dessa element skapas via ett dedikerat schema som anger följande element för varje innehåll: namn, etikett, typ, storlek samt all annan information som är relevant för dess bearbetning i Adobe Campaign.
 
-## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
+## Steg 2 - Skapa dataschemat {#step-2---creating-the-data-schema}
 
 Ett dataschema är ett XML-dokument som är kopplat till innehållet. Den beskriver XML-strukturen för data i det här innehållet.
 
 >[!NOTE]
 >
->Mer information om hur du skapar och konfigurerar datascheman i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
+>Mer information om hur du skapar och konfigurerar datamappningar i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
 >
 >Konfigurationselement som är specifika för innehållshantering beskrivs i [Datamodeller](../../delivery/using/data-schemas.md).
 
 Så här skapar du ett dataschema:
 
-1. Öppna Adobe Campaign Explorer och markera **[!UICONTROL Administration > Configuration > Data schemas]** noden.
+1. Öppna Adobe Campaign Explorer och välj noden **[!UICONTROL Administration > Configuration > Data schemas]**.
 
-   Klicka på **[!UICONTROL New]** ikonen ovanför listan med datamodeller.
+   Klicka på ikonen **[!UICONTROL New]** som finns ovanför listan med datamappningar.
 
-1. Välj **[!UICONTROL Create a schema]** alternativet för innehållshantering och klicka sedan på **[!UICONTROL Next]**.
+1. Välj alternativet **[!UICONTROL Create a schema]** för innehållshantering och klicka sedan på **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,15 +76,15 @@ Så här skapar du ett dataschema:
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   Klicka **[!UICONTROL Next]** för att validera.
+   Klicka på **[!UICONTROL Next]** för att validera.
 
-1. Ange schemats innehåll i **[!UICONTROL Edit schema]** fönstret.
+1. Ange schemats innehåll i fönstret **[!UICONTROL Edit schema]**.
 
    Använd knappen **[!UICONTROL Insert]** för att skapa schemainnehållet.
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
+   Mer information finns i [Redigera scheman](../../delivery/using/data-schemas.md#editing-schemas).
 
    För varje element som innehållet refererar till måste du välja en matchande typ.
 
@@ -131,10 +131,10 @@ Så här skapar du ett dataschema:
    <td> URL<br /> </td> 
   </tr> 
   <tr> 
-   <td> Upphovsman<br /> </td> 
+   <td> Författare<br /> </td> 
    <td> Element<br /> </td> 
-   <td> Memo<br /> </td> 
-   <td> Upphovsman<br /> </td> 
+   <td> PM<br /> </td> 
+   <td> Författare<br /> </td> 
   </tr> 
   <tr> 
    <td> Header logo (stored in Adobe Campaign public resources)<br /> </td> 
@@ -160,7 +160,7 @@ Schemat kommer att innehålla följande information:
   </element>
 ```
 
-1. Klicka **[!UICONTROL Save]** för att skapa dataschemat.
+1. Klicka på **[!UICONTROL Save]** för att skapa dataschemat.
 
 ## Steg 3 - Skapa indataformuläret {#step-3---creating-the-input-form}
 
@@ -176,17 +176,17 @@ Beskrivningen av ett formulär är ett strukturerat XML-dokument som observerar 
 
 Så här skapar du ett indataformulär för innehållshantering:
 
-1. Öppna Adobe Campaign Explorer och markera **[!UICONTROL Administration > Configuration > Input forms]** noden.
+1. Öppna Adobe Campaign Explorer och välj noden **[!UICONTROL Administration > Configuration > Input forms]**.
 
-   Klicka på **[!UICONTROL New]** ikonen ovanför listan med formulär.
+   Klicka på ikonen **[!UICONTROL New]** ovanför listan med formulär.
 
-1. Ange namnet på formuläret och den etikett som är länkad till formuläret och välj sedan **[!UICONTROL Content management]** typ.
+1. Ange namnet på formuläret och etiketten som är länkad till formuläret och välj sedan typen **[!UICONTROL Content management]**.
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >Om du vill att båda elementen ska matchas automatiskt bör du använda samma namn som för det länkade dataschemat. Använd knappen ovanför indatazonen för att lägga till fält från schemat som är länkat till formuläret. **[!UICONTROL Insert]**
+   >Om du vill att båda elementen ska matchas automatiskt bör du använda samma namn som för det länkade dataschemat. Använd knappen **[!UICONTROL Insert]** ovanför indatazonen för att lägga till fält från schemat som är länkat till formuläret.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -212,7 +212,7 @@ Så här skapar du ett indataformulär för innehållshantering:
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. Klicka **[!UICONTROL Save]** för att skapa indataformuläret.
+1. Klicka på **[!UICONTROL Save]** för att skapa indataformuläret.
 
 ## Steg 4 - Skapa byggmallen {#step-4---creating-the-construction-template}
 
@@ -226,14 +226,14 @@ I det här exemplet vill vi använda en JavaScript-mall för att definiera datak
 
 Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
 
-1. Öppna Adobe Campaign Explorer och markera **[!UICONTROL Administration > Configuration > JavaScript Templates]** noden.
+1. Öppna Adobe Campaign Explorer och välj noden **[!UICONTROL Administration > Configuration > JavaScript Templates]**.
 
-   Klicka på **[!UICONTROL New]** ikonen ovanför listan med mallar.
+   Klicka på ikonen **[!UICONTROL New]** ovanför listan med mallar.
 
 1. Ange ett mallnamn och välj det schema som du har skapat för innehållshantering.
 1. Importera det uppsatta innehåll som du vill visa i meddelandet.
 
-   Lägg till variabelelementen samtidigt som syntaxen i [JavaScript-mallar](../../delivery/using/formatting.md#javascript-templates)respekteras.
+   Lägg till variabelelementen utan att ta hänsyn till syntaxen i [JavaScript-mallar](../../delivery/using/formatting.md#javascript-templates).
 
    För att visa innehållet som visas i vårt exempel måste JavaScript-mallen innehålla följande element:
 
@@ -345,11 +345,11 @@ Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
    }
    ```
 
-   För att JavaScript-mallen ska vara giltig måste den här funktionen skapas i förväg från **[!UICONTROL JavaScript codes]** noden i trädstrukturen enligt följande:
+   För att JavaScript-mallen ska vara giltig måste den här funktionen skapas i förväg från noden **[!UICONTROL JavaScript codes]** i trädstrukturen enligt nedan:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Steg 5 - Skapa publiceringsmallen {#step-5---creating-the-publication-template}
+## Steg 5 - Skapa publikationsmallen {#step-5---creating-the-publication-template}
 
 Nästa steg är att skapa en mall för innehållspublikationer som länkar upp schemat, formuläret och mallen för innehållskonstruktion. Den här publiceringsmallen kan ha flera utdataformat.
 
@@ -359,23 +359,23 @@ Nästa steg är att skapa en mall för innehållspublikationer som länkar upp s
 
 I det här exemplet är stegen följande:
 
-1. Skapa en ny publiceringsmall via **[!UICONTROL Administration > Configuration > Publication templates]** noden.
+1. Skapa en ny publiceringsmall via noden **[!UICONTROL Administration > Configuration > Publication templates]**.
 1. Ange ett namn och en etikett och välj det schema och det formulär som ska användas.
-1. Ange sedan namnet på mallen och välj det återgivningsläge som du vill använda. Här har vi en **[!UICONTROL JavaScript]** typåtergivning baserad på mallen som skapades ovan.
+1. Ange sedan namnet på mallen och välj det återgivningsläge som du vill använda. Här har vi en **[!UICONTROL JavaScript]**-typåtergivning baserad på mallen som skapades ovan.
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >Alternativet är **[!UICONTROL DOM interface]** markerat som standard, vilket innebär att dokumentet inte är tillgängligt om du använder E4X-syntaxen. DOM-gränssnittet måste användas när det här alternativet är markerat och är den rekommenderade syntaxen.
+   >Alternativet **[!UICONTROL DOM interface]** är markerat som standard, vilket innebär att dokumentet inte är tillgängligt om du använder E4X-syntaxen. DOM-gränssnittet måste användas när det här alternativet är markerat och är den rekommenderade syntaxen.
    >
    >Du kan fortfarande använda E4X-syntaxen. Avmarkera i så fall det här alternativet.
 
    Använd knappen **[!UICONTROL Add]** för att skapa andra omformningsmallar.
 
-1. Klicka **[!UICONTROL Save]** för att skapa publikationsmallen.
+1. Klicka på **[!UICONTROL Save]** för att skapa publikationsmallen.
 
-## Steg 6 - Skapa innehåll {#step-6---creating-contents}
+## Steg 6 - Skapar innehåll {#step-6---creating-contents}
 
 Nu kan du skapa innehåll baserat på den här publiceringsmallen.
 
@@ -383,7 +383,7 @@ Nu kan du skapa innehåll baserat på den här publiceringsmallen.
 >
 >Mer information om hur du skapar innehåll finns i [Använda en innehållsmall](../../delivery/using/using-a-content-template.md).
 
-### Skapa innehåll i leveransguiden {#creating-content-in-the-delivery-wizard}
+### Skapar innehåll i leveransguiden {#creating-content-in-the-delivery-wizard}
 
 Så här skapar du innehåll direkt i leveranserna:
 
@@ -397,6 +397,6 @@ Så här skapar du innehåll direkt i leveranserna:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Klicka på **[!UICONTROL HTML preview]** fliken för att visa återgivningen. Du måste välja en mottagare för att testa personaliseringen.
+1. Klicka på fliken **[!UICONTROL HTML preview]** för att visa återgivningen. Du måste välja en mottagare för att testa personaliseringen.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)
