@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# Integrating with Adobe Target{#integrating-with-adobe-target}
+# Integrera med Adobe Target{#integrating-with-adobe-target}
 
 Tack vare integrationen mellan Adobe Campaign och Adobe Target (Classic och Standard) i Adobe Experience Cloud kan du inkludera ett erbjudande från Adobe Target i en e-postleverans från Adobe Campaign.
 
@@ -34,4 +34,4 @@ Adobe Target kan använda flera typer av data:
 
 >[!NOTE]
 >
->Du hittar även information om integrationen mellan Adobe Campaign och Adobe Target på [Adobe Target hjälpsidor](https://docs.adobe.com/content/help/sv-SE/target/using/integrate/campaign-and-target.html).
+>Du kan även hitta information om integrationen mellan Adobe Campaign och Adobe Target på [Adobe Target hjälpsidor](https://docs.adobe.com/content/help/sv-SE/target/using/integrate/campaign-and-target.html).
