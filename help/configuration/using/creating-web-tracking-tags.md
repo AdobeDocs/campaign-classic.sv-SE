@@ -24,7 +24,7 @@ Alla sidor på webbplatsen som du vill spåra måste refereras till på din Adob
 
 ## Definiera de URL:er som ska spåras i programmet {#defining-the-urls-to-be-tracked-in-the-application}
 
-Med den här metoden kan du manuellt definiera sidorna som ska spåras och sedan generera ett exempel på den associerade webbspårningstaggen. Den här åtgärden definieras i klientkonsolens **[!UICONTROL Campaign execution>Resources>Web tracking tags]** nod.
+Med den här metoden kan du manuellt definiera sidorna som ska spåras och sedan generera ett exempel på den associerade webbspårningstaggen. Den här åtgärden definieras i noden **[!UICONTROL Campaign execution>Resources>Web tracking tags]** i klientkonsolen.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -37,9 +37,9 @@ Så här genererar du den HTML-kod som ska infogas på sidan:
 
 Kopiera sedan den genererade koden och klistra in den på sidan som ska spåras.
 
-## Skapa URL:er som ska spåras direkt {#on-the-fly-creation-of-urls-to-be-tracked}
+## Skapa URL:er som ska spåras snabbt {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Du kan skapa URL:er för webbspårning direkt genom att lägga till information till värdet för **tagid** -parametern:
+Du kan skapa URL:er för webbspårning direkt genom att lägga till information till värdet för parametern **tagid**:
 
 * Typ av spårad sida: &#39;w&#39; för WEB eller &#39;t&#39; för TRANSACTION,
 * Det interna namnet på mappen där URL:en måste skapas.
@@ -52,7 +52,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Kom ihåg att koda värdet för **tagid** -parametern när den används som en URL-parameter.
+>Kom ihåg att koda värdet för parametern **tagid** när den används som en URL-parameter.
 
 **Exempel**: skapa en webbspårnings-URL av transaktionstyp.
 
