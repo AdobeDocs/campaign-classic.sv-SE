@@ -19,13 +19,13 @@ ht-degree: 3%
 
 Med Adobe Campaign kan du hantera tidsförskjutningar mellan olika länder som berörs av samma instans. Den använda konfigurationen konfigureras när instansen skapas.
 
-Mer information om hur du konfigurerar tidszoner i Adobe Campaign finns i det här [avsnittet](../../installation/using/time-zone-management.md).
+Mer information om hur du konfigurerar tidszoner i Adobe Campaign finns i [avsnittet](../../installation/using/time-zone-management.md).
 
 I ett arbetsflöde kan du anpassa scheman för aktivitetskörning och länka en specifik tidszon till en aktivitet eller till hela arbetsflödet. Den här konfigurationen kan vara användbar vid import av filen eller inom ramen för leveransplanering.
 
 ## Körningsplanering {#execution-scheduling}
 
-Du kan schemalägga körningen av aktiviteter med schemaläggaren (se [Schemaläggaren](../../workflow/using/scheduler.md)). Du kan också använda de schemaläggningsalternativ som är tillgängliga i aktiviteterna som erbjuder den här funktionen. De här aktiviteterna erbjuder en **[!UICONTROL Schedule]** flik: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]** osv.
+Du kan schemalägga körningen av aktiviteter med schemaläggaren (se [Schemaläggaren](../../workflow/using/scheduler.md)). Du kan också använda de schemaläggningsalternativ som är tillgängliga i aktiviteterna som erbjuder den här funktionen. De här aktiviteterna erbjuder en **[!UICONTROL Schedule]**-flik: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]** osv.
 
 För alla schemalagda aktiviteter, dvs. alla aktiviteter med schemaläggningsalternativ, kan du välja vilken tidszon som ska användas. Tidszonen väljs via fliken **[!UICONTROL Advanced]** för den aktuella aktiviteten:
 
@@ -49,7 +49,7 @@ Möjliga värden är:
 
    Använder den markerade tidszonen.
 
-Om du väljer **[!UICONTROL By default]** värdet används arbetsflödets tidszon eller, i annat fall, programserverns tidszon.
+Om **[!UICONTROL By default]**-värdet är markerat används arbetsflödets tidszon eller, i annat fall, programserverns tidszon.
 
 ## Länka en tidszon till en aktivitet {#linking-a-time-zone-to-an-activity}
 
