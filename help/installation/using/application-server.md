@@ -23,11 +23,11 @@ De nödvändiga lagren för databasåtkomst måste vara installerade på servern
 
 Den dynamiska generatorn för webbsidor använder JSP 1.2-teknik. För detta ingår en Tomcat-motor (från Apache) i programmet. Det kräver ett Java Development Kit (JDK) som är installerat på alla servrar där Adobe Campaign-programmet är installerat.
 
-Du måste först installera en JDK på de datorer där du vill köra Adobe Campaign-programservern (**webbprocessen** på lserver) eftersom den innehåller en serverbehållare, Apache Tomcat, som används för att generera dynamiska webbsidor (rapporter, webbformulär osv.).
+Du måste först installera en JDK på de datorer där du vill köra Adobe Campaign-programservern (**nlserver web** process) eftersom den innehåller en serverbehållare, Apache Tomcat, som används för att generera dynamiska webbsidor (rapporter, webbformulär osv.).
 
-Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för **OpenJDK**.
+Programmet har godkänts för Java Development Kit (JDK) som utvecklats av Oracle samt för **OpenJDK**.
 
-De versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md)för Campaign.
+Versionerna som stöds beskrivs i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ De versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compati
 >  
 >När du installerar behöver du inte utföra integreringen med webbläsarna.
 >
->På en dator som bara kör leveransagenter (**nlserver mta** -processen) eller arbetsflödesservern (**nlserver wfserver** -processen) behöver du inte installera en JDK.
+>På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** process) är det inte nödvändigt att installera en JDK.
 
 Om du vill hämta Java JDK ansluter du till: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -63,9 +63,9 @@ yum install java-1.8.0-openjdk
 
 I Linux måste OpenSSL vara installerat. De versioner som stöds av Adobe Campaign är **OpenSSL 1.0.1** och **OpenSSL 0.9.8**. Underversionerna 0.9.8g till 0.9.8o godkänns.
 
-## Exportera rapporter {#exporting-reports}
+## Exporterar rapporter {#exporting-reports}
 
-Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och Adobe PDF-format. För Microsoft Excel-formatet använder Adobe Campaign **LibraryOffice**. För Adobe PDF-formatet använder Adobe Campaign **PhantomJS** -konverteraren. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** process).
+Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och Adobe PDF-format. Adobe Campaign använder **LibraryOffice** för Microsoft Excel-formatet. För Adobe PDF-formatet använder Adobe Campaign konverteraren **PhantomJS**. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** process).
 
 >[!NOTE]
 >
