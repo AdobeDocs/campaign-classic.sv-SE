@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## Antal klick för en viss leverans {#number-of-clicks-for-a-specific-delivery}
 
-I det här exemplet försöker vi återställa antalet klick för en viss leverans. Dessa klick spelas in tack vare loggar för mottagarspårning som tagits under en viss period. Mottagaren identifieras via sin e-postadress. Den här frågan använder **[!UICONTROL Recipient tracking logs]** tabellen.
+I det här exemplet försöker vi återställa antalet klick för en viss leverans. Dessa klick spelas in tack vare loggar för mottagarspårning som tagits under en viss period. Mottagaren identifieras via sin e-postadress. Den här frågan använder tabellen **[!UICONTROL Recipient tracking logs]**.
 
 * Vilken tabell måste markeras?
 
-   Loggspårningstabell för mottagare (**[!UICONTROL nms:trackingLogRcp]**)
+   Loggspårningstabellen för mottagare (**[!UICONTROL nms:trackingLogRcp]**)
 
 * Fält som ska markeras för utdatakolumner?
 
@@ -35,35 +35,35 @@ I det här exemplet försöker vi återställa antalet klick för en viss levera
 
 Så här utför du det här exemplet:
 
-1. Öppna **[!UICONTROL Generic query editor]** och markera **[!UICONTROL Recipient tracking logs]** schemat.
+1. Öppna **[!UICONTROL Generic query editor]** och välj schemat **[!UICONTROL Recipient tracking logs]**.
 
    ![](assets/query_editor_tracklog_05.png)
 
-1. I **[!UICONTROL Data to extract]** fönstret vill vi skapa en sammanställning för att samla in information. Det gör du genom att lägga till primärnyckeln (som finns ovanför **[!UICONTROL Recipient tracking logs]** huvudelementet): Spårningsloggen utförs i det här **[!UICONTROL Primary key]** fältet. Det redigerade uttrycket kommer att vara **[!UICONTROL x=count(primary key)]**. Den länkar summan av olika spårningsloggar till en enda e-postadress.
+1. I fönstret **[!UICONTROL Data to extract]** vill vi skapa en sammanställning för att samla in information. Det gör du genom att lägga till primärnyckeln (som finns ovanför huvudelementet **[!UICONTROL Recipient tracking logs]**): Spårningsloggen utförs i det här **[!UICONTROL Primary key]**-fältet. Det redigerade uttrycket kommer att vara **[!UICONTROL x=count(primary key)]**. Den länkar summan av olika spårningsloggar till en enda e-postadress.
 
    Så här gör du:
 
-   * Klicka på **[!UICONTROL Add]** ikonen till höger om **[!UICONTROL Output columns]** fältet. I **[!UICONTROL Formula type]** fönstret markerar du **[!UICONTROL Edit the formula using an expression]** alternativet och klickar på **[!UICONTROL Next]**. In the **[!UICONTROL Field to select]** window, click **[!UICONTROL Advanced selection]**.
+   * Klicka på ikonen **[!UICONTROL Add]** till höger om fältet **[!UICONTROL Output columns]**. I fönstret **[!UICONTROL Formula type]** väljer du alternativet **[!UICONTROL Edit the formula using an expression]** och klickar på **[!UICONTROL Next]**. Klicka på **[!UICONTROL Advanced selection]** i fönstret **[!UICONTROL Field to select]**.
 
       ![](assets/query_editor_tracklog_06.png)
 
-   * Kör en process på sammanställningsfunktionen i **[!UICONTROL Formula type]** fönstret. Den här processen blir ett primärnyckelantal.
+   * Kör en process på sammanställningsfunktionen i fönstret **[!UICONTROL Formula type]**. Den här processen blir ett primärnyckelantal.
 
-      Markera **[!UICONTROL Process on an aggregate function]** i **[!UICONTROL Aggregate]** avsnittet och klicka på **[!UICONTROL Count]**.
+      Välj **[!UICONTROL Process on an aggregate function]** i avsnittet **[!UICONTROL Aggregate]** och klicka på **[!UICONTROL Count]**.
 
       ![](assets/query_editor_nveau_18.png)
 
       Klicka på **[!UICONTROL Next]**.
 
-   * Markera **[!UICONTROL Primary key (@id)]** fältet. Utdatakolumnen är konfigurerad **[!UICONTROL count (primary key)]** .
+   * Markera fältet **[!UICONTROL Primary key (@id)]**. Utdatakolumnen **[!UICONTROL count (primary key)]** har konfigurerats.
 
       ![](assets/query_editor_nveau_19.png)
 
-1. Markera det andra fältet som ska visas i utdatakolumnen. Öppna **[!UICONTROL Available fields]** noden i **[!UICONTROL Recipient]** kolumnen och välj **[!UICONTROL Email]**. Markera **[!UICONTROL Group]** kryssrutan för **[!UICONTROL Yes]** att gruppera spårningsloggarna efter e-postadress: den här gruppen länkar varje logg till mottagaren.
+1. Markera det andra fältet som ska visas i utdatakolumnen. Öppna noden **[!UICONTROL Recipient]** i kolumnen **[!UICONTROL Available fields]** och välj **[!UICONTROL Email]**. Markera rutan **[!UICONTROL Group]** till **[!UICONTROL Yes]** om du vill gruppera spårningsloggarna efter e-postadress: den här gruppen länkar varje logg till mottagaren.
 
    ![](assets/query_editor_nveau_20.png)
 
-1. Konfigurera kolumnsortering så att de mest aktiva mottagarna (med de flesta spårningsloggar) visas först. Markera **[!UICONTROL Yes]** i **[!UICONTROL Descending sort]** kolumnen.
+1. Konfigurera kolumnsortering så att de mest aktiva mottagarna (med de flesta spårningsloggar) visas först. Markera **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Descending sort]**.
 
    ![](assets/query_editor_nveau_64.png)
 
@@ -71,25 +71,25 @@ Så här utför du det här exemplet:
 
    Så här gör du:
 
-   * Konfigurera datafiltrering. Det gör du genom att markera **[!UICONTROL Filter conditions]** och sedan klicka **[!UICONTROL Next]**.
+   * Konfigurera datafiltrering. Om du vill göra det väljer du **[!UICONTROL Filter conditions]** och klickar sedan på **[!UICONTROL Next]**.
 
       ![](assets/query_editor_nveau_22.png)
 
    * Återställ spårningsloggar under en viss period för en viss leverans. Tre filtervillkor krävs: Två datumvillkor för att fastställa söktiden mellan två veckor före dagens datum och dagen före dagens datum. och ett annat villkor som begränsar sökningen till en viss leverans.
 
-      I **[!UICONTROL Target element]** fönstret anger du det datum som spårningsloggarna ska börja. Klicka på **[!UICONTROL Add]**. En villkorslinje visas. Redigera **[!UICONTROL Expression]** kolumnen genom att klicka på **[!UICONTROL Edit expression]** funktionen. Välj i **[!UICONTROL Field to select]** fönstret **[!UICONTROL Date (@logDate)]**.
+      I fönstret **[!UICONTROL Target element]** konfigurerar du det datum som börjar när spårningsloggar ska beaktas. Klicka på **[!UICONTROL Add]**. En villkorslinje visas. Redigera kolumnen **[!UICONTROL Expression]** genom att klicka på funktionen **[!UICONTROL Edit expression]**. Välj **[!UICONTROL Date (@logDate)]** i fönstret **[!UICONTROL Field to select]**.
 
       ![](assets/query_editor_nveau_23.png)
 
-      Välj **[!UICONTROL greater than]** operator. Klicka i **[!UICONTROL Value]** kolumnen **[!UICONTROL Edit expression]** och välj **[!UICONTROL Formula type]** i **[!UICONTROL Process on dates]** fönstret. Ange slutligen &quot;15&quot; i **[!UICONTROL Current date minus n days]** rutan.
+      Välj operatorn **[!UICONTROL greater than]**. Klicka på **[!UICONTROL Edit expression]** i kolumnen **[!UICONTROL Value]** och välj **[!UICONTROL Process on dates]** i fönstret **[!UICONTROL Formula type]**. I **[!UICONTROL Current date minus n days]** anger du slutligen &quot;15&quot;.
 
       Klicka på **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_24.png)
 
-   * Om du vill välja slutdatum för spårningsloggssökning skapar du ett andra villkor genom att klicka på **[!UICONTROL Add]**. Välj **[!UICONTROL Expression]** igen i **[!UICONTROL Date (@logDate)]** kolumnen.
+   * Om du vill välja slutdatum för spårningsloggssökningen skapar du ett andra villkor genom att klicka på **[!UICONTROL Add]**. Välj **[!UICONTROL Date (@logDate)]** igen i kolumnen **[!UICONTROL Expression]**.
 
-      Välj **[!UICONTROL less than]** operator. In the **[!UICONTROL Value]** column, click **[!UICONTROL Edit expression]**. Gå till **[!UICONTROL Formula type]** fönstret och skriv &quot;1&quot; i **[!UICONTROL Current date minus n days]**.
+      Välj operatorn **[!UICONTROL less than]**. Klicka på **[!UICONTROL Edit expression]** i kolumnen **[!UICONTROL Value]**. Gå till fönstret **[!UICONTROL Formula type]** och ange &quot;1&quot; i **[!UICONTROL Current date minus n days]** för datumbearbetning.
 
       Klicka på **[!UICONTROL Finish]**.
 
@@ -97,18 +97,18 @@ Så här utför du det här exemplet:
 
       Nu vill vi konfigurera det tredje filtervillkoret, dvs. den leveransetikett som vår fråga gäller.
 
-   * Klicka på **[!UICONTROL Add]** funktionen för att skapa ett annat filtervillkor. In the **[!UICONTROL Expression]** column, click **[!UICONTROL Edit expression]**. I **[!UICONTROL Field to select]** fönstret väljer du **[!UICONTROL Label]** i **[!UICONTROL Delivery]** noden.
+   * Klicka på funktionen **[!UICONTROL Add]** för att skapa ett annat filtervillkor. Klicka på **[!UICONTROL Edit expression]** i kolumnen **[!UICONTROL Expression]**. I fönstret **[!UICONTROL Field to select]** väljer du **[!UICONTROL Label]** i noden **[!UICONTROL Delivery]**.
 
       Klicka på **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_66.png)
 
-      Sök efter en leverans som innehåller ordet&quot;försäljning&quot;. Eftersom du inte kommer ihåg den exakta etiketten kan du välja **[!UICONTROL contains]** operator och ange&quot;försäljning&quot; i **[!UICONTROL Value]** kolumnen.
+      Sök efter en leverans som innehåller ordet&quot;försäljning&quot;. Eftersom du inte kommer ihåg den exakta etiketten kan du välja operatorn **[!UICONTROL contains]** och ange &quot;sales&quot; i kolumnen **[!UICONTROL Value]**.
 
       ![](assets/query_editor_nveau_25.png)
 
-1. Klicka **[!UICONTROL Next]** tills du kommer till **[!UICONTROL Data preview]** fönstret: ingen formatering behövs här.
-1. I **[!UICONTROL Data preview]** fönstret klickar du **[!UICONTROL Start the preview of the data]** för att visa antalet spårningsloggar för varje leveransmottagare.
+1. Klicka på **[!UICONTROL Next]** tills du kommer till fönstret **[!UICONTROL Data preview]**: ingen formatering behövs här.
+1. I fönstret **[!UICONTROL Data preview]** klickar du på **[!UICONTROL Start the preview of the data]** för att visa antalet spårningsloggar för varje leveransmottagare.
 
    Resultatet visas i fallande ordning.
 
@@ -116,40 +116,40 @@ Så här utför du det här exemplet:
 
    Det högsta antalet loggar för en användare är 6 för den här leveransen. 5 olika användare öppnade e-postmeddelandet eller klickade på någon av länkarna i e-postmeddelandet.
 
-## Mottagare som inte har öppnat någon leverans {#recipients-who-did-not-open-any-delivery}
+## Mottagare som inte öppnade någon leverans {#recipients-who-did-not-open-any-delivery}
 
 I det här exemplet vill vi filtrera mottagare som inte har öppnat ett e-postmeddelande de senaste 7 dagarna.
 
 Så här skapar du det här exemplet:
 
-1. Dra och släpp en **[!UICONTROL Query]** aktivitet i ett arbetsflöde och öppna aktiviteten.
-1. Klicka **[!UICONTROL Edit query]** och ange mål- och filtreringsdimensioner till **[!UICONTROL Recipients]**.
+1. Dra och släpp en **[!UICONTROL Query]**-aktivitet i ett arbetsflöde och öppna aktiviteten.
+1. Klicka på **[!UICONTROL Edit query]** och ställ in mål- och filterdimensionerna på **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. Markera **[!UICONTROL Filtering conditions]** och klicka sedan **[!UICONTROL Next]**.
-1. Click the **[!UICONTROL Add]** button and select **[!UICONTROL Tracking logs]**.
-1. Ställ in **[!UICONTROL Operator]** uttrycket till **[!UICONTROL Tracking logs]** **[!UICONTROL Do not exist such as]**.
+1. Välj **[!UICONTROL Filtering conditions]** och klicka sedan på **[!UICONTROL Next]**.
+1. Klicka på knappen **[!UICONTROL Add]** och välj **[!UICONTROL Tracking logs]**.
+1. Ange **[!UICONTROL Operator]** för uttrycket **[!UICONTROL Tracking logs]** som **[!UICONTROL Do not exist such as]**.
 
    ![](assets/query_open_1.png)
 
-1. Lägg till ett annat uttryck. Välj **[!UICONTROL Type]** i **[!UICONTROL URL]** kategorin.
-1. Ställ sedan in dess **[!UICONTROL Operator]** till **[!UICONTROL equal to]** och dess **[!UICONTROL Value]** till **[!UICONTROL Open]**.
+1. Lägg till ett annat uttryck. Välj **[!UICONTROL Type]** i kategorin **[!UICONTROL URL]**.
+1. Ställ sedan in **[!UICONTROL Operator]** på **[!UICONTROL equal to]** och **[!UICONTROL Value]** på **[!UICONTROL Open]**.
 
    ![](assets/query_open_2.png)
 
-1. Lägg till ytterligare ett uttryck och välj **[!UICONTROL Date]**. **[!UICONTROL Operator]** ska anges till **[!UICONTROL on or after]**.
+1. Lägg till ett annat uttryck och välj **[!UICONTROL Date]**. **[!UICONTROL Operator]** ska anges till  **[!UICONTROL on or after]**.
 
    ![](assets/query_open_3.png)
 
-1. Om du vill ange värdet för de senaste 7 dagarna klickar du på **[!UICONTROL Edit expression]** knappen i **[!UICONTROL Value]** fältet.
-1. Välj **[!UICONTROL Function]** och lägg till det antal dagar du vill ha som mål i **[!UICONTROL Current date minus n days]** kategorin. Här vill vi rikta in oss på de senaste 7 dagarna.
+1. Klicka på knappen **[!UICONTROL Edit expression]** i fältet **[!UICONTROL Value]** för att ange värdet för de senaste 7 dagarna.
+1. Välj **[!UICONTROL Current date minus n days]** i kategorin **[!UICONTROL Function]** och lägg till det antal dagar som du vill ha som mål. Här vill vi rikta in oss på de senaste 7 dagarna.
 
    ![](assets/query_open_4.png)
 
 Din utgående övergång kommer att innehålla mottagare som inte öppnat ett e-postmeddelande de senaste 7 dagarna.
 
-Om du däremot vill filtrera mottagare som har öppnat minst ett e-postmeddelande bör frågan vara som följer. Observera att i det här fallet ska **[!UICONTROL Filtering dimension]** inställningen vara **[!UICONTROL Tracking logs (Recipients)]**.
+Om du däremot vill filtrera mottagare som har öppnat minst ett e-postmeddelande bör frågan vara som följer. Observera att i det här fallet ska **[!UICONTROL Filtering dimension]** vara inställt på **[!UICONTROL Tracking logs (Recipients)]**.
 
 ![](assets/query_open_5.png)
 
@@ -157,35 +157,35 @@ Om du däremot vill filtrera mottagare som har öppnat minst ett e-postmeddeland
 
 I följande exempel visas hur man riktar sig till profiler som har öppnat en leverans de senaste två veckorna:
 
-1. Om du vill ha målprofiler som har öppnat en leverans måste du använda spårningsloggar. De lagras i en länkad tabell: börja med att välja den här tabellen i listrutan för **[!UICONTROL Filtering dimension]** fältet, som visas nedan:
+1. Om du vill ha målprofiler som har öppnat en leverans måste du använda spårningsloggar. De lagras i en länkad tabell: börja med att markera den här tabellen i listrutan för fältet **[!UICONTROL Filtering dimension]**, vilket visas nedan:
 
    ![](assets/s_advuser_query_sample1.0.png)
 
-1. När det gäller filtreringsvillkor klickar du på **[!UICONTROL Edit expression]** ikonen för de villkor som visas i spårningsloggarnas underträdstruktur. Markera **[!UICONTROL Date]** fältet.
+1. När det gäller filtreringsvillkor klickar du på ikonen **[!UICONTROL Edit expression]** för de villkor som visas i spårningsloggarnas underträdstruktur. Markera fältet **[!UICONTROL Date]**.
 
    ![](assets/s_advuser_query_sample1.1.png)
 
-   Click **[!UICONTROL Finish]** to confirm selection.
+   Klicka på **[!UICONTROL Finish]** för att bekräfta markeringen.
 
-   Om du bara vill återställa spårningsloggarna som är mindre än två veckor gamla väljer du **[!UICONTROL Greater than]** operatorn.
+   Om du bara vill återställa spårningsloggarna som är mindre än två veckor gamla väljer du operatorn **[!UICONTROL Greater than]**.
 
    ![](assets/s_advuser_query_sample1.4.png)
 
-   Klicka sedan på **[!UICONTROL Edit expression]** ikonen i **[!UICONTROL Value]** kolumnen för att definiera beräkningsformeln som ska användas. Markera **[!UICONTROL Current date minus n days]** formeln och ange 15 i det relaterade fältet.
+   Klicka sedan på ikonen **[!UICONTROL Edit expression]** i kolumnen **[!UICONTROL Value]** för att definiera beräkningsformeln som ska användas. Välj formeln **[!UICONTROL Current date minus n days]** och ange 15 i det relaterade fältet.
 
    ![](assets/s_advuser_query_sample1.5.png)
 
-   Klicka på formelfönstrets **[!UICONTROL Finish]** knapp. I filtreringsfönstret klickar du på **[!UICONTROL Preview]** fliken för att kontrollera målinriktningskriterierna.
+   Klicka på knappen **[!UICONTROL Finish]** i formelfönstret. Klicka på fliken **[!UICONTROL Preview]** i filtreringsfönstret för att kontrollera målinriktningsvillkoren.
 
    ![](assets/s_advuser_query_sample1.6.png)
 
 ## Filtrera mottagarnas beteende efter en leverans {#filtering-recipients--behavior-folllowing-a-delivery}
 
-I ett arbetsflöde kan du välja ett beteende efter en tidigare leverans i rutorna **[!UICONTROL Query]** och **[!UICONTROL Split]** . Detta val görs via **[!UICONTROL Delivery recipient]** filtret.
+I ett arbetsflöde kan du välja ett beteende efter en tidigare leverans med hjälp av rutorna **[!UICONTROL Query]** och **[!UICONTROL Split]**. Markeringen görs via filtret **[!UICONTROL Delivery recipient]**.
 
 * Syfte med exemplet
 
-   I ett leveransarbetsflöde finns det flera sätt att följa upp en första e-postkommunikation. Den här typen av åtgärd innebär att du använder **[!UICONTROL Split]** rutan.
+   I ett leveransarbetsflöde finns det flera sätt att följa upp en första e-postkommunikation. Den här typen av åtgärd använder du rutan **[!UICONTROL Split]**.
 
 * Kontext
 
@@ -193,43 +193,43 @@ I ett arbetsflöde kan du välja ett beteende efter en tidigare leverans i rutor
 
    Leveransen av&quot;vattensporterbjudandet&quot; skickas till mottagare som klickade på länken&quot;vattensporter&quot; vid första leveransen. Dessa klick visar att mottagaren är intresserad av ämnet. Det är rimligt att styra dem mot liknande erbjudanden. Mottagare som inte klickade i &quot;Sommarsportserbjudandet&quot; kommer dock att få samma innehåll igen.
 
-I följande steg visas hur du konfigurerar **[!UICONTROL Split]** rutan genom att integrera två olika beteenden:
+Följande steg visar hur du konfigurerar rutan **[!UICONTROL Split]** genom att integrera två olika beteenden:
 
-1. Infoga **[!UICONTROL Split]** rutan i arbetsflödet. I den här rutan delas mottagarna av den första leveransen upp i de två följande leveranserna. Uppdelningen görs utifrån de filtervillkor som är kopplade till mottagarens beteende under den första leveransen.
+1. Infoga **[!UICONTROL Split]**-rutan i arbetsflödet. I den här rutan delas mottagarna av den första leveransen upp i de två följande leveranserna. Uppdelningen görs utifrån de filtervillkor som är kopplade till mottagarens beteende under den första leveransen.
 
    ![](assets/query_editor_ex_09.png)
 
-1. Öppna **[!UICONTROL Split]** lådan. Ange en etikett på **[!UICONTROL General]** fliken: **Dela baserat på beteende** , till exempel.
+1. Öppna rutan **[!UICONTROL Split]**. Ange en etikett på fliken **[!UICONTROL General]**: **Dela baserat på beteende** till exempel.
 
    ![](assets/query_editor_ex_04.png)
 
-1. Definiera den första delade grenen på **[!UICONTROL Subsets]** fliken. Ange till exempel etiketten **Klickad** för den här grenen.
-1. Välj **[!UICONTROL Add a filtering condition on the incoming population]** alternativet. Klicka på **[!UICONTROL Edit]**.
-1. Dubbelklicka på **[!UICONTROL Targeting and filtering dimension]** filtret i **[!UICONTROL Recipients of a delivery]** fönstret.
+1. Definiera den första delade grenen på fliken **[!UICONTROL Subsets]**. Ange till exempel etiketten **klickad** för den här grenen.
+1. Välj alternativet **[!UICONTROL Add a filtering condition on the incoming population]**. Klicka på **[!UICONTROL Edit]**.
+1. Dubbelklicka på filtret **[!UICONTROL Recipients of a delivery]** i fönstret **[!UICONTROL Targeting and filtering dimension]**.
 
    ![](assets/query_editor_ex_05.png)
 
-1. I **[!UICONTROL Target element]** fönstret väljer du det beteende som du vill använda för den här grenen: **[!UICONTROL Recipients having clicked (email)]**.
+1. I fönstret **[!UICONTROL Target element]** väljer du det beteende som du vill tillämpa på den här grenen: **[!UICONTROL Recipients having clicked (email)]**.
 
-   Välj **[!UICONTROL Delivery specified by the transition]** alternativet nedan. Den här funktionen återställer automatiskt de personer som ska användas vid den första leveransen.
+   Välj alternativet **[!UICONTROL Delivery specified by the transition]** nedan. Den här funktionen återställer automatiskt de personer som ska användas vid den första leveransen.
 
    Det här är erbjudandet om vattensporter.
 
    ![](assets/query_editor_ex_08.png)
 
-1. Definiera den andra grenen. Den här grenen kommer att innehålla uppföljningsmejl med samma innehåll som den första leveransen. Gå till **[!UICONTROL Subsets]** fliken och klicka för **[!UICONTROL Add]** att skapa den.
+1. Definiera den andra grenen. Den här grenen kommer att innehålla uppföljningsmejl med samma innehåll som den första leveransen. Gå till fliken **[!UICONTROL Subsets]** och klicka på **[!UICONTROL Add]** för att skapa den.
 
    ![](assets/query_editor_ex_06.png)
 
-1. En annan underflik visas. Ge den namnet&quot;**Klick** inte&quot;.
+1. En annan underflik visas. Namnge den &quot;**Klick inte**&quot;.
 1. Klicka på **[!UICONTROL Add a filtering condition for the incoming population]**. Klicka sedan på **[!UICONTROL Edit...]**.
 
    ![](assets/query_editor_ex_07.png)
 
-1. Klicka **[!UICONTROL Delivery recipients]** i **[!UICONTROL Targeting and filtering dimension]** fönstret.
-1. Markera **[!UICONTROL Target element]** beteendet i **[!UICONTROL Recipients who did not click (email)]** fönstret. Välj det **[!UICONTROL Delivery specified by the transition]** alternativ som visas för den sista grenen.
+1. Klicka på **[!UICONTROL Delivery recipients]** i fönstret **[!UICONTROL Targeting and filtering dimension]**.
+1. I fönstret **[!UICONTROL Target element]** väljer du beteendet **[!UICONTROL Recipients who did not click (email)]**. Välj alternativet **[!UICONTROL Delivery specified by the transition]** så som visas för den senaste grenen.
 
-   Rutan är nu **[!UICONTROL Split]** helt konfigurerad.
+   Rutan **[!UICONTROL Split]** är nu helt konfigurerad.
 
    ![](assets/query_editor_ex_03.png)
 
