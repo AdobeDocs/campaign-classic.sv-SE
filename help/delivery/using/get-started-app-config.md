@@ -21,7 +21,7 @@ I det här avsnittet hittar du ett konfigurationsexempel baserat på ett företa
 
 Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
-* Skapa en **[!UICONTROL Mobile application]** typinformationstjänst för mobilappen Neotrips. Se [det här avsnittet för iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). och [det här avsnittet för Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
+* Skapa en **[!UICONTROL Mobile application]**-typinformationstjänst för mobilprogrammet Neotrips. Se [det här avsnittet för iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). och [det här avsnittet för Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
 * Lägg till iOS- och Android-versionerna av programmet i den här tjänsten.
 * Skapa en leverans för både iOS och Android. [Se den här sidan](../../delivery/using/creating-notifications.md).
 
@@ -29,7 +29,7 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
 >[!NOTE]
 >
->Gå till fliken **[!UICONTROL Subscriptions]** för tjänsten för att visa en lista över prenumeranter på tjänsten, dvs. alla personer som har installerat programmet på sin mobiltelefon och gått med på att ta emot meddelanden.
+>Gå till fliken **[!UICONTROL Subscriptions]** i tjänsten för att visa listan över prenumeranter på tjänsten, dvs. alla personer som har installerat programmet på sin mobiltelefon och gått med på att ta emot meddelanden.
 
 ## Installera paketet {#installing-package-ios}
 
@@ -39,19 +39,19 @@ Som hybrid-/värdkund kontaktar du kundtjänstteamet på Adobe för att få till
 
 Som lokal kund måste du utföra följande installationssteg:
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** Adobe Campaign klientkonsol.
+1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** i Adobe Campaign klientkonsol.
 
    ![](assets/package_ios.png)
 
 1. Välj **[!UICONTROL Install a standard package]**.
 
-1. Markera i listan som visas **[!UICONTROL Mobile App Channel]**.
+1. Markera **[!UICONTROL Mobile App Channel]** i listan som visas.
 
    ![](assets/package_ios_2.png)
 
-1. Klicka **[!UICONTROL Next]** och sedan **[!UICONTROL Start]** för att starta paketinstallationen.
+1. Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** för att starta paketinstallationen.
 
-   När paketen har installerats visar förloppsindikatorn **100 %** och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
+   När paketen har installerats visas **100 %** i förloppsindikatorn och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
