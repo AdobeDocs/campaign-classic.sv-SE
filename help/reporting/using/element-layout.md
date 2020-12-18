@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Elementlayout{#element-layout}
 
-Förutom de olika diagram som beskrivs här: [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants)kan du anpassa visningen och lägga till element på rapportsidorna.
+Förutom de olika diagram som beskrivs här: [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants), kan du anpassa visningen och lägga till element på rapportsidorna.
 
-Du kan använda behållare: Med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [detta avsnitt](../../web/using/defining-web-forms-layout.md#creating-containers).
+Du kan använda behållare: Med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [det här avsnittet](../../web/using/defining-web-forms-layout.md#creating-containers).
 
 Du kan konfigurera rapportlayouten i roten av trädet och överlagra den för varje behållare. Sidorna sorteras i kolumner. Behållare sorteras också i kolumner. Endast statiska och grafiska objekt sorteras i celler.
 
-## Definiera alternativ för varje sida {#defining-the-options-for-each-page}
+## Definiera alternativen för varje sida {#defining-the-options-for-each-page}
 
 Du kan använda alternativen på varje sida i rapporten.
 
@@ -31,17 +31,17 @@ På fliken **[!UICONTROL General]** kan du ändra sidans titel, samt konfigurera
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-I **[!UICONTROL Title]** fältet kan du anpassa etiketten i rubriken på rapportsidan. Fönstrets namn kan konfigureras via rapportens **[!UICONTROL Properties]** fönster. Mer information finns i [Lägga till ett sidhuvud och en sidfot](#adding-a-header-and-a-footer).
+I fältet **[!UICONTROL Title]** kan du anpassa etiketten i rubriken på rapportsidan. Fönstrets titel kan konfigureras via rapportens **[!UICONTROL Properties]**-fönster. Mer information finns i [Lägga till ett sidhuvud och en sidfot](#adding-a-header-and-a-footer).
 
-Med alternativen kan du **[!UICONTROL Display settings]** välja kontrollbildtextens position på en rapportsida och definiera antalet kolumner på sidan. Mer information om sidlayout finns i avsnittet **Objektlayout** i [det här avsnittet](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+Med alternativen för **[!UICONTROL Display settings]** kan du välja positionen för kontrollbildtexten på en rapportsida och definiera antalet kolumner på sidan. Mer information om sidlayout finns i avsnittet **Objektlayout** i [det här avsnittet](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Välj de olika alternativen i **[!UICONTROL Browse]** avsnittet för att godkänna bläddring från en rapportsida till en annan. Om alternativet **[!UICONTROL Disable next page]** eller **[!UICONTROL Disable previous page]** alternativet är markerat försvinner **[!UICONTROL Next]** - och **[!UICONTROL Previous]** -knapparna från rapportsidan.
+Välj de olika alternativen i **[!UICONTROL Browse]**-avsnittet för att tillåta bläddring från en rapportsida till en annan. Om alternativet **[!UICONTROL Disable next page]** eller **[!UICONTROL Disable previous page]** är markerat försvinner knapparna **[!UICONTROL Next]** och **[!UICONTROL Previous]** från rapportsidan.
 
 ## Lägga till ett sidhuvud och en sidfot {#adding-a-header-and-a-footer}
 
 I fönstret för rapportegenskaper kan du även definiera layoutelement, till exempel: fönstrets titel, HTML-innehållet för sidhuvuden och sidfötter.
 
-Du öppnar egenskapsfönstret genom att klicka på **[!UICONTROL Properties]** knappen i rapporten.
+Du öppnar egenskapsfönstret genom att klicka på knappen **[!UICONTROL Properties]** i rapporten.
 
 ![](assets/reporting_properties.png)
 
@@ -51,7 +51,7 @@ På fliken **[!UICONTROL Page]** kan du anpassa visningen.
 
 Innehållet som är konfigurerat på den här fliken visas på alla rapportsidor.
 
-På **[!UICONTROL Texts]** underfliken kan du definiera variabelt innehåll: det kommer att beaktas under översättningscykeln om rapporten är avsedd att användas på flera språk.
+Med underfliken **[!UICONTROL Texts]** kan du definiera variabelt innehåll: det kommer att beaktas under översättningscykeln om rapporten är avsedd att användas på flera språk.
 
 Detta gör att du kan skapa en lista med textfragment och länka dem till identifierare:
 
