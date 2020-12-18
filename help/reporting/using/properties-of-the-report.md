@@ -21,23 +21,23 @@ Ni kan anpassa och konfigurera rapporten efter era behov. Om du vill göra det r
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-Allmänna egenskaper beskrivs nedan. Avancerade funktioner som har konfigurerats på flikarna **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** och **[!UICONTROL Scripts]** beskrivs [i det här avsnittet](../../reporting/using/advanced-functionalities.md).
+Allmänna egenskaper beskrivs nedan. Avancerade funktioner som konfigurerats på flikarna **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** och **[!UICONTROL Scripts]** beskrivs [i det här avsnittet](../../reporting/using/advanced-functionalities.md).
 
 ## Allmänna egenskaper {#overall-properties}
 
 På fliken **[!UICONTROL General]** i rapportegenskaperna kan du redigera inställningarna som listas nedan:
 
-* Rapportens etikett och interna namn. Den **[!UICONTROL Internal name]** används i rapportens slutliga URL. Den ska inte ändras efter att rapporten har skapats.
+* Rapportens etikett och interna namn. **[!UICONTROL Internal name]** används i den slutliga URL:en för rapporten. Den ska inte ändras efter att rapporten har skapats.
 
-* Rapportmappen **** väljs när rapporten skapas. Ett tips är att skapa en dedikerad mapp för anpassade rapporter så att de inte blandas med [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md).
+* Rapporten **Mapp** markeras när rapporten skapas. Ett tips är att skapa en dedikerad mapp för anpassade rapporter så att de inte blandas med [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md).
 
-* Du väljer **Lagring** när du skapar rapporten. Om du vill ändra datatabellen i rapporten klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Document type]** fältet.
+* **Lagring** väljs när rapporten skapas. Om du vill ändra datatabellen för rapporten klickar du på ikonen **[!UICONTROL Select link]** till höger om fältet **[!UICONTROL Document type]**.
 
    ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* Parametrarna för **åtkomstkontroll** . Dessa inställningar beskrivs nedan.
+* **Åtkomstkontrollens** parametrar. Dessa inställningar beskrivs nedan.
 
-## Controlling access to the report {#report-accessibility}
+## Kontrollera åtkomst till rapporten {#report-accessibility}
 
 En rapport kan nås via Adobe Campaign-konsolen eller en webbläsare. I så fall kan det vara nödvändigt att konfigurera åtkomstkontrollen för rapporten enligt nedan.
 
@@ -50,11 +50,11 @@ Möjliga alternativ är:
    Rättigheterna för den tekniska operatorn &#39;webapp&#39; används för att visa rapportelement. Läs mer [i det här avsnittet](../../platform/using/access-management.md#default-operators).
 
 * **[!UICONTROL Access control]**: Med det här alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
-* **[!UICONTROL Specific account]**: Med det här alternativet kan du köra rapporten med rättigheter för den operator som är markerad i **[!UICONTROL Operator]** fältet.
+* **[!UICONTROL Specific account]**: Med det här alternativet kan du köra rapporten med rättigheter för den operator som är vald i  **[!UICONTROL Operator]** fältet.
 
 ## Hantera rapportlokalisering {#managing-report-localization}
 
-Du kan konfigurera de språk som du vill att rapporten ska översättas till. Klicka på **[!UICONTROL Localization]** fliken om du vill göra det.
+Du kan konfigurera de språk som du vill att rapporten ska översättas till. Det gör du genom att klicka på fliken **[!UICONTROL Localization]**.
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
@@ -64,7 +64,7 @@ Redigeringsspråket är det språk du skriver på. När du lägger till ett spr�
 
 >[!NOTE]
 >
->Mer information om webbsidelokalisering i Campaign finns i [det här avsnittet](../../web/using/translating-a-web-form.md).
+>Mer information om webbsideslokalisering i Campaign finns i [det här avsnittet](../../web/using/translating-a-web-form.md).
 
 ## Anpassa HTML-återgivning {#personalizing-html-rendering}
 
