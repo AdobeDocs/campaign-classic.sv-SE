@@ -17,22 +17,22 @@ ht-degree: 1%
 
 # Migrera Adobe Campaign 7 i Windows{#migrating-in-windows-for-adobe-campaign}
 
-## Allmänt förfarande {#general-procedure}
+## Allmän procedur {#general-procedure}
 
 För Windows är migreringsstegen följande:
 
 1. Stoppa tjänster: se [Tjänststopp](#service-stop).
-1. Säkerhetskopiera databasen: se [Säkerhetskopiera databasen och den aktuella installationen](#back-up-the-database-and-the-current-installation).
+1. Säkerhetskopiera databasen: hänvisar till [Säkerhetskopiera databasen och den aktuella installationen](#back-up-the-database-and-the-current-installation).
 1. Migrera plattformen: se [Distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7).
 1. Migrera omdirigeringsservern (IIS): se [Migrera omdirigeringsservern (IIS)](#migrating-the-redirection-server--iis-).
 1. Starta om tjänsten: se [Starta om tjänsterna](#re-starting-the-services).
-1. Ta bort och rensa tidigare Adobe Campaign-version: Se Ta [bort och rensa tidigare versioner](#deleting-and-cleansing-adobe-campaign-previous-version)av Adobe Campaign.
+1. Ta bort och rensa tidigare Adobe Campaign-version: Se [Ta bort och rensa Adobe Campaign tidigare version](#deleting-and-cleansing-adobe-campaign-previous-version).
 
 ## Tjänststopp {#service-stop}
 
 Stoppa först alla processer med tillgång till databasen på alla berörda datorer.
 
-1. Alla servrar som använder omdirigeringsmodulen (**webmdl** -tjänsten) måste stoppas. Kör följande kommando för IIS:
+1. Alla servrar som använder omdirigeringsmodulen (**webmdl**-tjänsten) måste stoppas. Kör följande kommando för IIS:
 
    ```
    iisreset /stop
@@ -98,7 +98,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
 
    >[!IMPORTANT]
    >
-   >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Neolane v5.back** och sparar den någon annanstans på en säker plats som inte finns på servern.
+   >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Neolane v5.back** och sparar den någon annanstans på en säker plats som inte är servern.
 
 1. I Windows Service Management Console inaktiverar du den automatiska starten av programservertjänsten 5.11. Du kan också använda följande kommando:
 
@@ -106,7 +106,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    sc config nlserver5 start= disabled
    ```
 
-1. Redigera **config-`<instance name>`.xml** (i **Neolane v5). back** folder) för att förhindra **mta**, **wfserver**, **stat** osv. från att starta automatiskt. Ersätt till exempel **autoStart** med **_autoStart**.
+1. Redigera **config-`<instance name>`.xml** (i **Neolane v5. back**-mapp) för att förhindra **mta**, **wfserver**, **stat** osv. från att starta automatiskt. Ersätt till exempel **autoStart** med **_autoStart**.
 
    ```
    <?xml version='1.0'?>
@@ -138,7 +138,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
 
    >[!IMPORTANT]
    >
-   >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Neolane v6.back** och sparar den någon annanstans på en säker plats som inte finns på servern.
+   >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **Neolane v6.back** och sparar den någon annanstans på en säker plats som inte är servern.
 
 1. Inaktivera automatisk start av 6.02-programservern i Windows Service Manager. Du kan också använda följande kommando:
 
@@ -146,7 +146,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    sc config nlserver6 start= disabled
    ```
 
-1. Redigera **config-`<instance name>`.xml** (i **Neolane v6). back** folder) för att förhindra **mta**, **wfserver**, **stat** osv. från att starta automatiskt. Ersätt till exempel **autoStart** med **_autoStart**.
+1. Redigera **config-`<instance name>`.xml** (i **Neolane v6. back**-mapp) för att förhindra **mta**, **wfserver**, **stat** osv. från att starta automatiskt. Ersätt till exempel **autoStart** med **_autoStart**.
 
    ```
    <?xml version='1.0'?>
@@ -167,7 +167,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### Migrerar från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Säkerhetskopiera katalogen **Adobe Campaign v6** med följande kommando:
@@ -178,7 +178,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
 
    >[!IMPORTANT]
    >
-   >Som en försiktighetsåtgärd rekommenderar vi att du packar upp mappen **Adobe Campaign v6.back** och sparar den någon annanstans på en säker plats som inte är servern.
+   >Som en försiktighetsåtgärd rekommenderar vi att du packar upp mappen **Adobe Campaign v6.back** och sparar den någon annanstans på en säker plats som inte finns på servern.
 
 1. I Windows Service Management Console inaktiverar du den automatiska starten av 6.11-programservertjänsten. Du kan också använda följande kommando:
 
@@ -186,7 +186,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    sc config nlserver6 start= disabled
    ```
 
-## Distribuera Adobe Campaign v7 {#deploying-adobe-campaign-v7}
+## Distribuerar Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
 Distribuera Adobe Campaign i två steg:
 
@@ -195,15 +195,15 @@ Distribuera Adobe Campaign i två steg:
 
 Så här distribuerar du Adobe Campaign:
 
-1. Installera den senaste Adobe Campaign v7-versionen genom att köra installationsfilen **setup.exe** . Mer information om hur du installerar Adobe Campaign-servern i Windows finns i [det här avsnittet](../../installation/using/installing-the-server.md).
+1. Installera den senaste Adobe Campaign v7-versionen genom att köra installationsfilen **setup.exe**. Mer information om hur du installerar Adobe Campaign-servern i Windows finns i [det här avsnittet](../../installation/using/installing-the-server.md).
 
    ![](assets/migration_wizard_1_7.png)
 
    >[!NOTE]
    >
-   >Adobe Campaign v7 installeras som standard i katalogen **C:\Program Files\Adobe\Adobe Campaign v7** .
+   >Adobe Campaign v7 installeras som standard i katalogen **C:\Program Files\Adobe\Adobe Campaign v7**.
 
-1. Om du vill göra installationsprogrammet för klientkonsolen tillgängligt kopierar du filen **setup-client-7.0.XXXX.exe** till installationskatalogen för Adobe Campaign: **C:\Program Files\Adobe\Adobe Campaign v7\datakit\nl\eng\jsp**.
+1. Om du vill göra installationsprogrammet för klientkonsolen tillgängligt kopierar du filen **setup-client-7.0.XXXX.exe** till Adobe Campaign installationskatalog: **C:\Program Files\Adobe\Adobe Campaign v7\datakit\nl\eng\jsp**.
 
    >[!NOTE]
    >
@@ -218,9 +218,9 @@ Så här distribuerar du Adobe Campaign:
 
    >[!NOTE]
    >
-   >Med dessa kommandon kan du skapa det interna filsystemet Adobe Campaign v7: **conf** -katalog (med **filerna config-default.xml** och **serverConf.xml** ), **var** -katalog osv.
+   >Med dessa kommandon kan du skapa det interna filsystemet Adobe Campaign v7: **conf**-katalog (med filerna **config-default.xml** och **serverConf.xml**), **var**-katalog, osv.
 
-1. Kopiera och klistra in (skriv över) konfigurationsfilerna och undermapparna för varje instans via säkerhetskopieringsfilen **Neolane v5.back**, **Neolane v6.back** eller **Adobe Campaign v6.back** (beroende på vilken version du migrerar från - se [det här avsnittet](#back-up-the-database-and-the-current-installation)).
+1. Kopiera och klistra in (skriv över) konfigurationsfilerna och undermapparna för varje instans via **Neolane v5.back**, **Neolane v6.back** eller **Adobe Campaign v6.back** säkerhetskopieringsfil (beroende på vilken version du migrerar från - se [det här avsnittet](#back-up-the-database-and-the-current-installation)).
 1. Kör följande kommandon beroende på vilken version du migrerar från:
 
    ```
@@ -243,9 +243,9 @@ Så här distribuerar du Adobe Campaign:
 
    >[!IMPORTANT]
    >
-   >För det första kommandot ovan ska du inte kopiera filen **config-default.xml** .
+   >Kopiera inte filen **config-default.xml** för det första kommandot ovan.
 
-1. I **filerna serverConf.xml** och **config-default.xml** för Adobe Campaign v7 använder du de konfigurationer du hade i Adobe Campaign tidigare version. För **filen serverConf.xml** använder du **filen Neolane v5/conf/serverConf.xml.diff**, **Neolane v6/conf/serverConf.xml.diff** eller **Adobe Campaign v6/conf/serverConf.xml.diff** .
+1. I **serverConf.xml** och **config-default.xml**-filerna för Adobe Campaign v7 använder du de specifika konfigurationer som du hade i Adobe Campaign tidigare version. För filen **serverConf.xml** använder du filen **Neolane v5/conf/serverConf.xml.diff**, **Neolane v6/conf/serverConf.xml.diff** eller **Adobe Campaign v6/conf/serverConf.xml.diff**.
 
    >[!NOTE]
    >
@@ -269,13 +269,13 @@ Så här distribuerar du Adobe Campaign:
 
 ## Migrerar omdirigeringsservern (IIS) {#migrating-the-redirection-server--iis-}
 
-I det här skedet måste IIS-servern stoppas. Se [servicestopp](#service-stop).
+I det här skedet måste IIS-servern stoppas. Se [Tjänststopp](#service-stop).
 
-1. Öppna IIS-hanterarkonsolen ( **Internet Information Services)** .
+1. Öppna konsolen **Internet Information Services (IIS) Manager**.
 1. Ändra bindningarna (avlyssningsportar) för webbplatsen som används för Adobe Campaign tidigare version:
 
    * Högerklicka på webbplatsen som användes för Adobe Campaign tidigare version och välj **[!UICONTROL Edit bindings]**.
-   * För varje typ av lyssningsport (**[!UICONTROL http]** och/eller **[!UICONTROL https]**) väljer du önskad rad och klickar på **[!UICONTROL Edit]**.
+   * För varje typ av lyssningsport (**[!UICONTROL http]** och/eller **[!UICONTROL https]**) väljer du lämplig rad och klickar på **[!UICONTROL Edit]**.
    * Ange en annan port. Som standard är lyssningsporten 80 för http och 443 för https. Kontrollera att den nya porten är tillgänglig.
 
       ![](assets/_migration_iis_3_611.png)
@@ -286,28 +286,28 @@ I det här skedet måste IIS-servern stoppas. Se [servicestopp](#service-stop).
 
 1. Skapa en ny webbplats för Adobe Campaign v7:
 
-   * Högerklicka på **[!UICONTROL Sites]** mappen och välj **[!UICONTROL Add Web Site...]**.
+   * Högerklicka på mappen **[!UICONTROL Sites]** och välj **[!UICONTROL Add Web Site...]**.
 
       ![](assets/_migration_iis_4.png)
 
-   * Ange namnet på webbplatsen, till exempel **Adobe Campaign v7** .
-   * Åtkomstsökvägen till webbplatsens baskatalog används inte, men fältet måste anges **[!UICONTROL Physical access path]** . Ange standardåtkomstsökvägen för IIS: **C:\inetpub\wwwroot**.
-   * Klicka på knappen **[!UICONTROL Connect as...]** som och kontrollera att **[!UICONTROL Application user]** alternativet är markerat.
-   * Du kan lämna standardvärdena i fälten **[!UICONTROL IP address]** och **[!UICONTROL Port]** . Om du vill använda andra värden kontrollerar du att IP-adressen och/eller porten är tillgängliga.
-   * Markera **[!UICONTROL Start Web site immediately]** rutan.
+   * Ange namnet på webbplatsen, till exempel **Adobe Campaign v7**.
+   * Åtkomstsökvägen till webbplatsens baskatalog används inte, men fältet **[!UICONTROL Physical access path]** måste anges. Ange standardåtkomstsökvägen för IIS: **C:\inetpub\wwwroot**.
+   * Klicka på knappen **[!UICONTROL Connect as...]** som och kontrollera att alternativet **[!UICONTROL Application user]** är markerat.
+   * Du kan lämna standardvärdena i fälten **[!UICONTROL IP address]** och **[!UICONTROL Port]**. Om du vill använda andra värden kontrollerar du att IP-adressen och/eller porten är tillgängliga.
+   * Markera rutan **[!UICONTROL Start Web site immediately]**.
 
       ![](assets/_migration_iis_5_7.png)
 
-1. Kör skriptet **iis_neolane_setup.vbs** så att resurserna som används av Adobe Campaign-servern automatiskt konfigureras på den virtuella katalog som skapades tidigare.
+1. Kör **iis_neolane_setup.vbs**-skriptet för att automatiskt konfigurera de resurser som används av Adobe Campaign-servern på den virtuella katalog som skapades tidigare.
 
-   * Den här filen finns i katalogen **`[Adobe Campaign v7]`\conf** , där **`[Adobe Campaign v7]`** är åtkomstsökvägen till Adobe Campaign installationskatalog. Kommandot för att köra skriptet är följande (för administratörer):
+   * Den här filen finns i katalogen **`[Adobe Campaign v7]`\conf**, där **`[Adobe Campaign v7]`** är åtkomstsökvägen till Adobe Campaign installationskatalog. Kommandot för att köra skriptet är följande (för administratörer):
 
       ```
       cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
       cscript iis_neolane_setup.vbs
       ```
 
-   * Klicka **[!UICONTROL OK]** för att bekräfta skriptkörningen.
+   * Klicka på **[!UICONTROL OK]** för att bekräfta skriptkörningen.
 
       ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
 
@@ -319,7 +319,7 @@ I det här skedet måste IIS-servern stoppas. Se [servicestopp](#service-stop).
 
       ![](assets/s_ncs_install_iis7_parameters_step7_7.png)
 
-   * Kontrollera att webbplatskonfigurationen är korrekt konfigurerad med Adobe Campaign-resurser på **[!UICONTROL Content view]** fliken:
+   * Kontrollera att webbplatskonfigurationen är korrekt konfigurerad med Adobe Campaign-resurser på fliken **[!UICONTROL Content view]**:
 
       ![](assets/s_ncs_install_iis7_parameters_step6_7.png)
 
@@ -341,9 +341,9 @@ Starta IIS- och Adobe Campaign-tjänsterna på följande servrar:
 1. Server för mid-sourcing.
 1. Marknadsföringsserver.
 
-Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md) .
+Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md).
 
-## Ta bort och rensa tidigare version av Adobe Campaign {#deleting-and-cleansing-adobe-campaign-previous-version}
+## Ta bort och rensa Adobe Campaign tidigare version {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
@@ -354,7 +354,7 @@ Innan du tar bort och rensar installationen av Adobe Campaign v5 måste du följ
 * Få funktionsteamen att göra en fullständig kontroll av den nya installationen.
 * Avinstallera endast Adobe Campaign v5 när du är säker på att ingen återställning behövs.
 
-1. I IIS tar du bort webbplatsen **Neolane v5** och sedan programpoolen **Neolane v5** .
+1. I IIS tar du bort webbplatsen **Neolane v5** och sedan programpoolen **Neolane v5**.
 1. Byt namn på mappen **Neolane v5.back** till **Neolane v5**.
 1. Avinstallera Adobe Campaign v5 med hjälp av guiden Lägg till/ta bort komponenter.
 
@@ -375,7 +375,7 @@ Innan du tar bort och rensar installationen av Adobe Campaign v6.02 måste du f�
 * Få funktionsteamen att göra en fullständig kontroll av den nya installationen.
 * Avinstallera endast Adobe Campaign v6.02 när du är säker på att ingen återställning behövs.
 
-1. I IIS tar du bort webbplatsen **Neolane v6** och sedan programpoolen **Neolane v6** .
+1. I IIS tar du bort webbplatsen **Neolane v6** och sedan programpoolen **Neolane v6**.
 1. Byt namn på mappen **Neolane v6.back** till **Neolane v6**.
 1. Avinstallera Adobe Campaign v6.02 med guiden för att lägga till/ta bort komponenter.
 
@@ -390,7 +390,7 @@ Innan du tar bort och rensar installationen av Adobe Campaign v6 måste du följ
 * Få funktionsteamen att göra en fullständig kontroll av den nya installationen.
 * Avinstallera endast Adobe Campaign v6 när du är säker på att ingen återställning behövs.
 
-1. I IIS tar du bort webbplatsen **Adobe Campaign v6** och sedan programpoolen för **Adobe Campaign v6** .
+1. I IIS tar du bort webbplatsen **Adobe Campaign v6** och sedan programpoolen **Adobe Campaign v6**.
 1. Byt namn på mappen **Adobe Campaign v6.back** till **Adobe Campaign v6**.
 1. Avinstallera Adobe Campaign v6 med hjälp av guiden för att lägga till/ta bort komponenter.
 
