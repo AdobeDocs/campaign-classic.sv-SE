@@ -28,14 +28,14 @@ Så här gör du:
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Skapa ett nytt arbetsflöde, till exempel från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Lägg till en **[!UICONTROL File transfer]** aktivitet i arbetsflödet och konfigurera den genom att ange
+1. Lägg till en **[!UICONTROL File transfer]**-aktivitet i arbetsflödet och konfigurera den genom att ange
 
    * Det externa konto som ska användas för att ansluta till S3- eller (S)FTP-servern.
    * Sökvägen till filen på S3- eller (S)FTP-servern.
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Lägg till en **[!UICONTROL Delivery]** aktivitet och koppla den till den utgående övergången för **[!UICONTROL File transfer]** aktiviteten. Konfigurera den enligt följande:
+1. Lägg till en **[!UICONTROL Delivery]**-aktivitet och koppla den till den utgående övergången för **[!UICONTROL File transfer]**-aktiviteten. Konfigurera den enligt följande:
 
    * Leverans: Beroende på dina behov kan det vara en specifik leverans som redan har skapats i systemet eller en ny leverans som baseras på en befintlig mall.
    * Mottagare: I det här exemplet anses målet vara angivet i själva leveransen.
@@ -44,7 +44,7 @@ Så här gör du:
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. Lägg till följande kommando på fliken **[!UICONTROL Script]** i **[!UICONTROL Delivery]** aktiviteten för att läsa in innehållet i den importerade filen i leveransen:
+1. På fliken **[!UICONTROL Script]** i aktiviteten **[!UICONTROL Delivery]** lägger du till följande kommando för att läsa in innehållet i den importerade filen i leveransen:
 
    ```
    delivery.content.md.source=loadFile(vars.filename)
@@ -56,4 +56,4 @@ Så här gör du:
 
 >[!NOTE]
 >
->De bästa metoderna och felsökningarna för användning av SFTP-servrar beskrivs [på den här sidan](../../platform/using/sftp-server-usage.md).
+>Bästa praxis och felsökning för SFTP-serveranvändning finns i [på den här sidan](../../platform/using/sftp-server-usage.md).
