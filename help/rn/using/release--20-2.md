@@ -6,9 +6,9 @@ description: Version 20.2
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ _22 juli 2020_
 * Efter bytet till [mekanismen för nytt sekvens-ID](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
 * Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987 och NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
