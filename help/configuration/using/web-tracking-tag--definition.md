@@ -19,7 +19,7 @@ ht-degree: 4%
 
 En webbspårningstagg är bara en URL som konstruerats med lämpliga parametrar och som skickats till omdirigeringsservern via en HTTP-fråga.
 
-## Format för de data som ska skickas {#format-of-the-data-to-be-sent}
+## Format på data som ska skickas {#format-of-the-data-to-be-sent}
 
 Formatet för en URL för webbspårning är följande: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
@@ -79,7 +79,8 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Leveransidentifierare som ska användas om det inte finns någon sessionscookie. Detta värde ska uttryckas hexadecimalt.
+                              <p>Leveransidentifierare som ska användas om det inte finns någon sessionscookie. Det här värdet ska vara
+                                 uttrycks hexadecimalt.
                               </p> 
                            </td> 
                         </tr>
@@ -91,7 +92,9 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Parametern som används för att identifiera Internetanvändaren. Den här parameterns format är "name=value", där namnet är ett fält i mottagarschemat. Den här parametern har högre prioritet än identifieraren i sessionens cookie.
+                              <p>Parametern som används för att identifiera Internetanvändaren. Den här parameterns format är "name=value",
+                                 där namnet är ett fält i mottagarschemat. Den här parametern får högre prioritet
+                                 den identifierare som finns i sessionens cookie.
                               </p> 
                            </td> 
                         </tr> 
@@ -128,6 +131,6 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
 
 Följande metoder är möjliga:
 
-* Infoga URL:en i attributet **&quot;src&quot;** för en HTML- **`<img>`** tagg som ingår i webbsidan som du vill spåra.
+* Infoga URL:en i attributet **&quot;src&quot;** för en HTML **`<img>`**-tagg som ingår i den webbsida som du vill spåra.
 * Direktanrop till omdirigeringsservern när webbsidan som du vill spåra genereras.
 
