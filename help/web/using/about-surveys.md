@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kom igång med enkäter
+title: Kom igång med undersökningar
 description: Kom igång med Campaign-enkäter
 audience: web
 content-type: reference
@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Get started with surveys{#about-surveys}
+# Kom igång med undersökningar{#about-surveys}
 
 Adobe Campaign innehåller en grafisk modul för att definiera och publicera webbapplikationer. Detta används för att skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
-Med den valfria **undersökningsmodulen** kan du skapa en ny typ av webbprogram för att skapa och hantera onlineenkäter, t.ex. formulär för att lägga till eller ändra profilinformation, för att prenumerera på eller avbryta en prenumeration på en informationstjänst eller ett tävlingsformulär. När svaren har samlats in lagras de i databasen eller i lokala variabler. Datamodellen kan utökas dynamiskt via svar på enkäter. Du kan visa resultaten i realtid, filtrera svaren och analysera dem med dedikerade diagram.
+Med den valfria modulen **Survey** kan du skapa en ny typ av webbprogram för att skapa och hantera onlineenkäter, t.ex. formulär för att lägga till eller ändra profilinformation, för att prenumerera på eller avbryta en prenumeration på en informationstjänst eller ett tävlingsformulär. När svaren har samlats in lagras de i databasen eller i lokala variabler. Datamodellen kan utökas dynamiskt via svar på enkäter. Du kan visa resultaten i realtid, filtrera svaren och analysera dem med dedikerade diagram.
 
-I det här kapitlet beskrivs hur du skapar och hanterar **undersökningar**, fält- och sidhantering, lagringslägen och poster.
+I det här kapitlet beskrivs metoden för att skapa och hantera **undersökningar**, fält- och sidhantering, lagringslägen och poster.
 
 Stegen för att skapa ett standardwebbformulär beskrivs i [det här avsnittet](../../web/using/about-web-forms.md).
 
@@ -50,17 +50,17 @@ I Adobe Campaign kan du använda följande funktioner i webbprogram:
 >
 >Alla konfigurationer som är länkade till webbformulär beskrivs i [det här avsnittet](../../web/using/about-web-forms.md). Läs det här dokumentet för mer information om koncept och om webbformulärsfunktioner som använder Adobe Campaign.
 
-Modulen för att skapa enkäter (**enkät**) erbjuder följande extrafunktioner:
+Modulen för att skapa enkäter (**Enkät**) erbjuder följande extrafunktioner:
 
 * Databasens dynamiska tillägg: skapa svar som inte ingår i den ursprungliga datamodellen. Mer information finns i [Lagra insamlade svar](../../web/using/managing-answers.md#storing-collected-answers).
-* Poänghantering. For more on this, refer to [Score management](../../web/using/managing-answers.md#score-management).
-* Slumpmässig visning av frågor. For more on this, refer to [Adding questions](../../web/using/building-a-survey.md#adding-questions).
-* Spårning av svar i realtid. For more on this, refer to [Response tracking](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
-* Genererar dedikerade rapporter. Mer information finns i [Rapporter om undersökningar](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Poänghantering. Mer information finns i [Scores Management](../../web/using/managing-answers.md#score-management).
+* Slumpmässig visning av frågor. Mer information finns i [Lägga till frågor](../../web/using/building-a-survey.md#adding-questions).
+* Spårning av svar i realtid. Mer information finns i [Svarsspårning](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Genererar dedikerade rapporter. Mer information finns i [Undersökningsrapporter](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med ett reducerat antal redigeringskontroller.
 
-## Granska implementeringssteg {#surveys-implementation-steps}
+## Undersöker implementeringssteg {#surveys-implementation-steps}
 
 Följ de här stegen för att skapa och leverera en enkät och bearbeta resultaten:
 
@@ -74,7 +74,7 @@ Följ de här stegen för att skapa och leverera en enkät och bearbeta resultat
 
 Mer information om konfiguration och sekvensering av dessa steg finns i [det här avsnittet](../../web/using/about-web-forms.md). Endast konfigurationer som är specifika för undersökningar beskrivs i det här kapitlet.
 
-## Konfiguration av undersökningar {#surveys-configuration}
+## Konfiguration av enkäter {#surveys-configuration}
 
 Undersökningar lagras i noden **[!UICONTROL Resources > Online > Web Applications]** i Adobe Campaign-trädet. Konfigurationer finns i följande mappar:
 
