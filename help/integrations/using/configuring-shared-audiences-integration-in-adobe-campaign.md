@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Configuring shared audiences integration in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Konfigurera integrering med delade målgrupper i Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 När du har skickat in den här begäran fortsätter Adobe till att tillhandahålla integreringen åt dig och kontaktar dig för att ange information och information som du måste slutföra konfigurationen:
 
@@ -26,13 +26,13 @@ När du har skickat in den här begäran fortsätter Adobe till att tillhandahå
 
 >[!IMPORTANT]
 >
->Om du använder demodomänen och följer syntaxen **ftp-out.demdex.com** för det externa importkontot och **ftp-in.demdex.com** för det externa exportkontot måste du anpassa implementeringen och gå över till anslutningen för Amazon Simple Storage Service (S3) för att importera eller exportera data. Mer information om hur du konfigurerar externa konton med Amazon S3 finns i det här [avsnittet](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+>Om du använder demodomänen och följer syntaxen **ftp-out.demdex.com** för det externa importkontot och **ftp-in.demdex.com** för det externa exportkontot, måste du anpassa implementeringen och gå till Amazon Simple Storage Service (S3)-anslutningen för att importera eller exportera data. Mer information om hur du konfigurerar externa konton med Amazon S3 finns i [avsnittet](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
 ## Steg 1: Konfigurera eller kontrollera externa konton i Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign enligt följande:
 
-1. Klicka på **[!UICONTROL Explorer]** ikonen.
+1. Klicka på ikonen **[!UICONTROL Explorer]**.
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**. Adobe borde ha konfigurerat SFTP-kontona och du borde ha fått den information som behövs.
 
    * **[!UICONTROL importSharedAudience]**: konto för att importera målgrupper.
@@ -40,9 +40,9 @@ Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign e
 
    ![](assets/aam_config_1.png)
 
-1. Select the **[!UICONTROL Export audiences to the Adobe Marketing Cloud]** external account.
+1. Välj det externa **[!UICONTROL Export audiences to the Adobe Marketing Cloud]**-kontot.
 
-1. From the **[!UICONTROL Type]** drop-down, select **[!UICONTROL AWS S3]**.
+1. Välj **[!UICONTROL AWS S3]** i listrutan **[!UICONTROL Type]**.
 
 1. Ange följande information:
 
@@ -54,28 +54,28 @@ URL-adressen till servern ska fyllas i enligt följande:
       ```
 
    * **[!UICONTROL AWS access key ID]**
-Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du gå till den här [sidan](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+Information om var du hittar ditt ID för AWS-åtkomstnyckel finns på den här  [sidan](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
    * **[!UICONTROL Secret access key to AWS]**
-Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa den här [sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa den här  [sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
    * **[!UICONTROL AWS Region]**
-Mer information om AWS finns på den här [sidan](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+Mer information om AWS finns på den här  [sidan](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
    ![](assets/aam_config_2.png)
 
-1. Klicka på **[!UICONTROL Save]** och konfigurera det **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** externa kontot enligt anvisningarna i föregående steg.
+1. Klicka på **[!UICONTROL Save]** och konfigurera det externa **[!UICONTROL Import audiences from the Adobe Marketing Cloud]**-kontot enligt anvisningarna i föregående steg.
 
 Dina externa konton har nu konfigurerats.
 
-## Step 2: Configure the Data Source {#step-2--configure-the-data-source}
+## Steg 2: Konfigurera datakällan {#step-2--configure-the-data-source}
 
-Mottagar- **ID** för besökare skapas i Audience Manager. Detta är en användbar datakälla som konfigurerats som standard för besökar-ID. Segment som skapas från Campaign kommer att ingå i den här datakällan.
+**Mottagaren - besökar-ID** skapas i Audience Manager. Detta är en användbar datakälla som konfigurerats som standard för besökar-ID. Segment som skapas från Campaign kommer att ingå i den här datakällan.
 
-Så här konfigurerar du **[!UICONTROL Recipient - Visitor ID]** datakällan:
+Så här konfigurerar du datakällan **[!UICONTROL Recipient - Visitor ID]**:
 
-1. From the **[!UICONTROL Explorer]** node, select **[!UICONTROL Administration > Platform > AMC Data sources]**.
+1. Välj **[!UICONTROL Administration > Platform > AMC Data sources]** i noden **[!UICONTROL Explorer]**.
 1. Välj **[!UICONTROL Recipient - Visitor ID]**.
-1. Ange **[!UICONTROL Data Source ID]** och **[!UICONTROL AAM Destination ID]** ange Adobe.
+1. Ange **[!UICONTROL Data Source ID]** och **[!UICONTROL AAM Destination ID]** från Adobe.
 
    ![](assets/aam_config_3.png)
 
@@ -87,6 +87,6 @@ Du måste kontrollera att Campaign Tracking Server är registrerad på domänen 
 
 ## Steg 4: Konfigurera besökar-ID-tjänsten {#step-4--configure-the-visitor-id-service}
 
-Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) för att lära dig hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) .
+Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) och lära dig hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two):
 
 Din konfiguration och etablering är färdiga, och integreringen kan nu användas för att importera och exportera målgrupper eller segment.
