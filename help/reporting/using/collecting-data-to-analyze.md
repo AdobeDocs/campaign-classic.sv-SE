@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Samla in data som ska analyseras{#collecting-data-to-analyze}
 
-De data som ska användas för att skapa rapporten kan väljas direkt på rapportsidan (mer information finns i [Använda sammanhanget](../../reporting/using/using-the-context.md)) eller samlas in via en eller flera frågor.
+De data som ska användas för att skapa rapporten kan väljas direkt på rapportsidan (mer information finns i [Använda kontexten](../../reporting/using/using-the-context.md)) eller samlas in via en eller flera frågor.
 
 Den här aktiviteten erbjuder tre olika metoder:
 
@@ -27,7 +27,7 @@ Den här aktiviteten erbjuder tre olika metoder:
 
 Vilken metod som väljs beror på vilken typ av beräkning det är, datavolymen och hur länge de är giltiga osv. Alla dessa parametrar måste granskas noggrant för att undvika att överbelasta Adobe Campaign-databasen och för att optimera genereringen och hanteringen av de skapade rapporterna. Se denna [sida](../../reporting/using/best-practices.md#optimizing-report-creation) för mer information om detta.
 
-I samtliga fall samlas data in via en **[!UICONTROL Query]** typaktivitet.
+I samtliga fall samlas data in via en **[!UICONTROL Query]**-typaktivitet.
 
 ![](assets/reporting_query_edit.png)
 
@@ -45,11 +45,11 @@ I följande exempel kan du samla in antalet mottagare för varje land, bland pro
 
 Om du vill skapa en rapport kan du använda data från en lista med importerade data.
 
-Om du vill göra det väljer du **[!UICONTROL Use an imported list]** alternativet i frågerutan och väljer den aktuella listan.
+Om du vill göra det väljer du alternativet **[!UICONTROL Use an imported list]** i frågerutan och väljer den aktuella listan.
 
 ![](assets/reporting_query_from_list.png)
 
-Klicka på **[!UICONTROL Edit query...]** länken för att definiera de data som ska samlas in bland elementen i listan för att skapa rapporten.
+Klicka på länken **[!UICONTROL Edit query...]** för att definiera de data som ska samlas in bland elementen i listan för att skapa rapporten.
 
 ## Använda en kub {#using-a-cube}
 
@@ -57,9 +57,9 @@ Du kan välja en kub som definierar frågan.
 
 ![](assets/reporting_query_from_cube.png)
 
-Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. For more on creating cubes, refer to [this section](../../reporting/using/about-cubes.md).
+Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/about-cubes.md).
 
-Klicka på **[!UICONTROL Edit query...]** länken och välj de indikatorer som du vill visa eller använda i rapporten.
+Klicka på länken **[!UICONTROL Edit query...]** och välj de indikatorer som du vill visa eller använda i rapporten.
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
@@ -69,9 +69,9 @@ För att undvika att frågor körs i hela databasen måste data filtreras.
 
 ### Förenklat filter {#simplified-filter}
 
-Du kan välja **[!UICONTROL Filter automatically with the context]** alternativet att göra rapporten tillgänglig via en viss nod i trädet, till exempel en lista, en mottagare eller en leverans.
+Du kan välja alternativet **[!UICONTROL Filter automatically with the context]** om du vill att rapporten ska vara tillgänglig via en viss nod i trädet, till exempel en lista, en mottagare eller en leverans.
 
-Med det här **[!UICONTROL Filter with the folder]** alternativet kan du ange en mapp och endast ta hänsyn till dess innehåll. Detta gör att du kan filtrera rapportdata så att endast data från en av mapparna i trädet visas, vilket visas nedan:
+Med alternativet **[!UICONTROL Filter with the folder]** kan du ange en mapp och endast ta hänsyn till dess innehåll. Detta gör att du kan filtrera rapportdata så att endast data från en av mapparna i trädet visas, vilket visas nedan:
 
 ![](assets/reporting_control_folder.png)
 
