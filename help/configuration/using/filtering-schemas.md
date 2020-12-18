@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Systemfilter {#system-filters}
 
-Du kan filtrera schemaåtkomst till specifika användare, beroende på deras behörigheter. Med systemfilter kan du hantera läs- och skrivbehörigheter för enheter som anges i scheman med hjälp av parametrarna **readAccess** och **writeAccess** .
+Du kan filtrera schemaåtkomst till specifika användare, beroende på deras behörigheter. Med systemfilter kan du hantera läs- och skrivbehörigheter för enheter som anges i scheman med hjälp av parametrarna **readAccess** och **writeAccess**.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ Du kan filtrera schemaåtkomst till specifika användare, beroende på deras beh
 
 * **readAccess**: ger skrivskyddad åtkomst till schemadata.
 
-   **Varning** - Alla länkade tabeller måste anges med samma begränsning. Den här konfigurationen kan påverka prestanda.
+   **Varning**  - Alla länkade tabeller måste anges med samma begränsning. Den här konfigurationen kan påverka prestanda.
 
 * **writeAccess**: ger skrivåtkomst till schemadata.
 
-De här filtren anges på schemats **huvudelementnivå** och kan, som visas i följande exempel, utformas för att begränsa åtkomsten.
+Dessa filter anges på huvudnivån **element** för scheman och kan, som visas i följande exempel, utformas för att begränsa åtkomsten.
 
 * Begränsa skrivbehörighet
 
@@ -45,7 +45,7 @@ De här filtren anges på schemats **huvudelementnivå** och kan, som visas i f�
 
 * Begränsa läs- och skrivbehörighet:
 
-   Här används filtret för att inte tillåta både LÄS- och SKRIVbehörigheter för schemat för alla operatorer. Endast det **interna** kontot, som representeras av uttrycket &quot;$(loginId)!=0&quot;, har dessa behörigheter.
+   Här används filtret för att inte tillåta både LÄS- och SKRIVbehörigheter för schemat för alla operatorer. Endast det interna **kontot**, som representeras av uttrycket &quot;$(loginId)!=0&quot;, har dessa behörigheter.
 
    ```
    <sysFilter name="readAccess"> 
@@ -57,7 +57,7 @@ De här filtren anges på schemats **huvudelementnivå** och kan, som visas i f�
    </sysFilter>
    ```
 
-   Möjliga **attributvärden för** uttryck som används för att definiera villkoret är TRUE eller FALSE.
+   Möjliga **expr**-attributvärden som används för att definiera villkoret är TRUE eller FALSE.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Inbyggda scheman är som standard bara tillgängliga med SKRIV-behörighet för 
 
 >[!IMPORTANT]
 >
->LÄS- och SKRIVbehörigheter för schemat **xtk:sessionInfo** är bara tillgängliga för ett internt konto i en Adobe Campaign-instans.
+>LÄS- och SKRIVbehörigheter för schemat **xtk:sessionInfo** är bara tillgängliga för det interna kontot för en Adobe Campaign-instans.
 
 ## Ändra systemfilter för inbyggda scheman {#modifying-system-filters-of-built-in-schemas}
 
@@ -111,6 +111,6 @@ Du kan fortfarande ändra systemfiltren för de färdiga scheman som som standar
 >Adobe rekommenderar dock att du inte ändrar standardparametrarna för att garantera optimal säkerhet.
 
 1. Skapa ett tillägg för det aktuella schemat eller öppna ett befintligt tillägg.
-1. Lägg till ett underordnat element **`<sysfilter name="<filter name>" _operation="delete"/>`** i huvudelementet för att ta bort programmet för filtret under samma i ursprungschemat.
-1. Om du vill kan du lägga till ett nytt filter, enligt informationen i [Systemfilter](#system-filters).
+1. Lägg till ett underordnat element **`<sysfilter name="<filter name>" _operation="delete"/>`** i huvudelementet för att ta bort programmet för filtret under samma element i det ursprungliga schemat.
+1. Om du vill kan du lägga till ett nytt filter, enligt beskrivningen i [Systemfilter](#system-filters).
 
