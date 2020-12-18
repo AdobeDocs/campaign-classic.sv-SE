@@ -29,7 +29,7 @@ Du kan referera till en innehållsmall i en leverans när du använder inmatning
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-Layouten används automatiskt baserat på de valda inställningarna. Om du vill visa den klickar du på **[!UICONTROL HTML preview]** (eller **[!UICONTROL Text preview]** ) och väljer en mottagare som ska testa personaliseringselementen.
+Layouten används automatiskt baserat på de valda inställningarna. Om du vill visa den klickar du på **[!UICONTROL HTML preview]** (eller **[!UICONTROL Text preview]**) och väljer en mottagare som ska testa personaliseringselement.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
@@ -41,7 +41,7 @@ Du kan skapa innehåll direkt i Adobe Campaign-trädet som ska användas i arbet
 
 Använd följande steg:
 
-1. Markera **[!UICONTROL Resources > Contents]** trädets nod, högerklicka och välj **[!UICONTROL Properties]**.
+1. Markera noden **[!UICONTROL Resources > Contents]** i trädet, högerklicka och välj **[!UICONTROL Properties]**.
 
    ![](assets/s_ncs_content_folder_properties.png)
 
@@ -57,11 +57,11 @@ Använd följande steg:
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. Klicka sedan på **[!UICONTROL HTML preview]** fliken för att visa återgivningen. Här anges inte de anpassningsfält som hämtats från databasen.
+1. Klicka sedan på fliken **[!UICONTROL HTML preview]** för att visa återgivningen. Här anges inte de anpassningsfält som hämtats från databasen.
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
-1. När innehållet har skapats läggs det till i listan med tillgängligt innehåll. Klicka på **[!UICONTROL Properties]** länken om du vill ändra dess etikett, status eller visa dess historik.
+1. När innehållet har skapats läggs det till i listan med tillgängligt innehåll. Klicka på länken **[!UICONTROL Properties]** om du vill ändra dess etikett, status eller visa historiken.
 
    ![](assets/s_ncs_content_folder_template_properties.png)
 
@@ -73,15 +73,15 @@ Använd följande steg:
    >
    >Du kan auktorisera generering av icke godkänt innehåll. Om du vill göra det ändrar du det relevanta alternativet i publiceringsmallen. Mer information finns i [Skapa och konfigurera mallen](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
 
-   HTML- och textinnehållet genereras som standard i **publiceringsmappen** för Adobe Campaign-instansen. Du kan ändra publikationsmappen tack vare alternativet **NcmPublishingDir** .
+   HTML- och textinnehållet genereras som standard i mappen **publishing** i Adobe Campaign-instansen. Du kan ändra publikationsmappen tack vare alternativet **NcmPublishingDir**.
 
 ## Leverera en innehållsinstans {#delivering-a-content-instance}
 
-Om du vill skapa en innehållsinstans och leverera den måste en leveransmall länkas till den publiceringsmall som används för att generera innehållet. For more on this, refer to [Delivery](../../delivery/using/publication-templates.md#delivery).
+Om du vill skapa en innehållsinstans och leverera den måste en leveransmall länkas till den publiceringsmall som används för att generera innehållet. Mer information finns i [Leverans](../../delivery/using/publication-templates.md#delivery).
 
 Dessutom måste innehållslagringsmappen dedikeras till innehåll som hämtas från den här publiceringsmallen (när en innehållsmapp gör att du kan generera flera typer av innehåll kan leveranser inte skapas automatiskt).
 
-Om du vill skapa leveransen automatiskt baserat på det valda innehållet klickar du på **[!UICONTROL Delivery]** ikonen och väljer mallen.
+Om du vill skapa leveransen automatiskt baserat på det valda innehållet klickar du på ikonen **[!UICONTROL Delivery]** och väljer mallen.
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 
