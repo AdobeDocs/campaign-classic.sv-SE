@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Definition av omfattningen {#definition-of-the-scope}
 
-Öppna **[!UICONTROL Scope]** fliken och välj inställningar.
+Öppna fliken **[!UICONTROL Scope]** och välj dina inställningar.
 
 Följande punkter är obligatoriska:
 
@@ -44,11 +44,11 @@ Du kan också välja att utföra simuleringen för alla erbjudanden eller endast
 >
 >Du måste ange ett kontaktdatum. Detta gör att interaktionsmotorn kan sortera erbjudandena i den valda miljön eller kategorin. Om inget datum är konfigurerat genereras ett fel vid simuleringen.
 
-## Lägga till rapporteringsaxlar {#adding-reporting-axes}
+## Lägger till rapporteringsaxlar {#adding-reporting-axes}
 
-Du kan förbättra simuleringsanalysen genom att lägga till rapportaxlar på målet eller själva erbjudandena via **[!UICONTROL Calculations]** fliken.
+Du kan förbättra simuleringsanalysen genom att lägga till rapportaxlar på målet eller själva erbjudandena via fliken **[!UICONTROL Calculations]**.
 
-Det gör du genom att klicka på **[!UICONTROL Add]** knappen och välja lämpliga fält. Axlar används för att beräkna simuleringen och visas i analysrapporten. For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+Det gör du genom att klicka på knappen **[!UICONTROL Add]** och välja lämpliga fält. Axlar används för att beräkna simuleringen och visas i analysrapporten. Mer information finns i [Simuleringsspårning](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
 
