@@ -28,7 +28,7 @@ Parametern **`<command>`** motsvarar modulen.
 >[!NOTE]
 >
 >* I vilket fall som helst kan du lägga till argumentet **-noconsole** för att ta bort kommentarer som visas när modulerna har startats.
->* Omvänt kan du lägga till argumentet **-verbose** för att visa mer information.
+>* Omvänt kan du lägga till argumentet **-verbose** om du vill visa mer information.
 
 >
 
@@ -38,9 +38,9 @@ Parametern **`<command>`** motsvarar modulen.
 
 >[!NOTE]
 >
->Om du vill visa alla moduler måste du använda kommandot **nlserver pdump** .
+>Om du vill visa alla moduler måste du använda kommandot **nlserver pdump**.
 
-Du kan lägga till parametern **-vem** för att lista pågående anslutningar (databas och program).
+Du kan lägga till parametern **-who** för att lista pågående anslutningar (databas och program).
 
 ```
 nlserver pdump -who
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ett annat användbart kommando är **lserver monitor**. Här listas XML-filen för övervakning (som hämtas i Adobe Campaign-klienten eller via webbsidan **monitor.jsp** ).
+Ett annat användbart kommando är **nlserver monitor**. Den listar XML-filen för övervakning (hämtas i Adobe Campaign-klienten eller via webbsidan **monitor.jsp**).
 
-Du kan lägga till den parameter som **saknas** för att visa de saknade modulerna (fel i moduler, moduler som stängs av osv.)
+Du kan lägga till parametern **-missing** för att lista saknade moduler (fel i moduler, moduler som stängs av osv.)
 
 ```
 nlserver monitor -missing
@@ -90,7 +90,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** motsvarar namnet på instansen så som det anges i konfigurationsfilerna, eller **standardvärdet** för moduler med en instans.
+>**`<instance>`** motsvarar namnet på instansen så som det anges i konfigurationsfilerna, eller  **** standardvärdet för monoinstansmoduler.
 
 ## Stäng av tjänster {#shut-down-services}
 
@@ -138,9 +138,9 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 
 ## Kommandot config {#the-config-command}
 
-Med **kommandot config** kan du hantera serverkonfigurationen, inklusive omkonfigurationen av databasanslutningen.
+Med kommandot **config** kan du hantera serverkonfigurationen, inklusive omkonfigurationen av databasanslutningen.
 
-Använd kommandot **config** för den körbara **nlserver** -filen med parametern **-setdblogin** .
+Använd kommandot **config** i **nlserver** körbar fil med parametern **-setdblogin**.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -152,16 +152,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Ange lösenordet.
 
-Så här ändrar du det **interna** lösenordet: **nlserver config -internalpassword**
+Så här ändrar du det interna **lösenordet:** nlserver config -internalpassword ****
 
 >[!IMPORTANT]
 >
->Om du vill logga in med den **interna** identifieraren måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Om du vill logga in med identifieraren **Internal** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 >[!NOTE]
 >
 >* I allmänhet kan du använda kommandot **config** i stället för att ändra konfigurationsfilerna manuellt
->* Använd **-? om du vill visa parameterlistan.** parameter: **nlserver config -?**
+>* Använd **- om du vill visa parameterlistan?** parameter:  **nlserver config -?**
 >* Om det är en Oracle-databas får du inte ange kontot. Syntaxen är följande:
 
 >
