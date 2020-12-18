@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Skapa händelsetyper{#creating-event-types}
 
-Händelsetyper som ska bearbetas av Adobe Campaign måste skapas i kontrollinstansen. Detta kan du göra via trädets **[!UICONTROL Administration > Platform > Enumerations]** mapp. Varje händelsetyp matchar ett värde i **[!UICONTROL eventType]** uppräkningen. Detta kan vara en orderbekräftelse, lösenord eller orderleveransändring osv.
+Händelsetyper som ska bearbetas av Adobe Campaign måste skapas i kontrollinstansen. Detta kan du göra via mappen **[!UICONTROL Administration > Platform > Enumerations]** i trädet. Varje händelsetyp matchar ett värde i **[!UICONTROL eventType]**-uppräkningen. Detta kan vara en orderbekräftelse, lösenord eller orderleveransändring osv.
 
 ![](assets/messagecenter_eventtype_enum_001.png)
 
