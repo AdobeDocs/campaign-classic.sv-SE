@@ -21,12 +21,12 @@ I det här exemplet vill vi filtrera mottagare som visas två gånger eller fler
 
 Så här skapar du det här exemplet:
 
-1. Dra och släpp en **[!UICONTROL Query]** aktivitet i ett arbetsflöde och öppna aktiviteten.
-1. Klicka **[!UICONTROL Edit query]** och ange mål- och filtreringsdimensioner till **[!UICONTROL Recipients]**.
+1. Dra och släpp en **[!UICONTROL Query]**-aktivitet i ett arbetsflöde och öppna aktiviteten.
+1. Klicka på **[!UICONTROL Edit query]** och ställ in mål- och filterdimensionerna på **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. Definiera följande filtervillkor för målmottagaren som finns i leveransloggen. Välj **Leveranslogg för mottagare (utsändningslogg)** i kolumnen **Uttryck** . Välj **till exempel** i kolumnen **Operator** .
+1. Definiera följande filtervillkor för målmottagaren som finns i leveransloggen. Välj **Leveranslogg för mottagare (broadlog)** i kolumnen **Uttryck** och välj **existerar t.ex.** i kolumnen **Operator**.
 
    ![](assets/query_recipients_2.png)
 
@@ -35,7 +35,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_recipients_3.png)
 
-1. Använd en **[!UICONTROL AND]** operator och upprepa samma åtgärder för att rikta in andra leveranser.
+1. Använd en **[!UICONTROL AND]**-operator för att upprepa samma åtgärder för att ange andra leveranser som mål.
 
    ![](assets/query_recipients_4.png)
 
