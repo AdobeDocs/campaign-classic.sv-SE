@@ -21,9 +21,9 @@ Precis som i den färdiga mottagartabellen som medföljer Adobe Campaign kan den
 
 Dessa filter kommer att vara tillgängliga i målurvalsfönstret med samma funktioner som segment för mottagare (med hjälp av parameterindataformulär, mappar osv.).
 
-1. Go to the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
+1. Gå till noden **[!UICONTROL Administration > Configuration > Predefined filters]**.
 1. Skapa ett nytt filter.
-1. Ange filtrets namn och markera sedan det schema som matchar den externa mottagartabellen i **[!UICONTROL Label]** **[!UICONTROL Document type]** fältet.
-1. Skapa dina **[!UICONTROL filtering conditions]** baserat på fälten i ditt schema.
+1. Ange **[!UICONTROL Label]** för filtret och välj sedan det schema som matchar den externa mottagartabellen i fältet **[!UICONTROL Document type]**.
+1. Skapa din **[!UICONTROL filtering conditions]** baserat på fälten i ditt schema.
 1. Spara filtret.
 
