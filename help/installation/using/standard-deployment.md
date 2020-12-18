@@ -56,7 +56,7 @@ Den här typen av konfiguration kan hantera ett stort antal mottagare (500 000 t
 
 * Brandväggen har konfigurerats för att öppna STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i avsnittet [Databasåtkomst](../../installation/using/network-configuration.md#database-access).
 
-### Installera programservern {#installing-the-application-server}
+### Installerar programservern {#installing-the-application-server}
 
 Följ stegen för att installera en fristående instans från Adobe Campaign-programservern när du skapar databasen (steg 12). Se [Installera och konfigurera (en dator)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
@@ -81,10 +81,10 @@ Stegen är följande:
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
-   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * För Linux: [Integrering med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * För Windows: [Integrering med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Skapa **demoinstansen** . Det finns två sätt att göra detta:
+1. Skapa instansen **demo**. Det finns två sätt att göra detta:
 
    * Skapa instansen via konsolen:
 
@@ -103,11 +103,11 @@ Stegen är följande:
       Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
    Namnet på instansen är detsamma som på programservern.
 
-   Anslutningen till servern med **webbmodulen** på servern (spegelsidor, avprenumeration) görs från URL:en för belastningsutjämnaren (tracking.campaign.net).
+   Anslutningen till servern med **nlserver web**-modulen (spegelsidor, avprenumeration) görs från URL:en för belastningsutjämnaren (tracking.campaign.net).
 
-1. Ändra den **interna** till samma som programservern.
+1. Ändra **internal** till samma som programservern.
 
-   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Länka databasen till instansen:
 
@@ -115,9 +115,9 @@ Stegen är följande:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Aktivera modulerna **web** , **trackinglog** och **mta** i filerna config-default.xml **och** config-demo.xml **** .
+1. I **config-default.xml** och **config-demo.xml**-filerna aktiverar du modulerna **web**, **trackinglogd** och **mta**.
 
-   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och fyll i den:
 
@@ -131,7 +131,7 @@ Stegen är följande:
       >
       >Parametern **nameServers** används bara i Windows.
 
-      For more on this, refer to [Delivery settings](../../installation/using/campaign-server-configuration.md#delivery-settings).
+      Mer information finns i [Leveransinställningar](../../installation/using/campaign-server-configuration.md#delivery-settings).
 
    * redundanta spårningsservrar i omdirigeringsparametrarna:
 
@@ -140,7 +140,7 @@ Stegen är följande:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
+      Mer information finns i [Spårning av överflödiga filer](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 1. Starta webbplatsen och testa omdirigeringen från URL:en: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -162,7 +162,7 @@ Stegen är följande:
    * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Starta Adobe Campaign-servern.
-1. I Adobe Campaign Console ansluter du med **administratörsinloggningen** utan lösenord och startar distributionsguiden.
+1. I Adobe Campaign-konsolen ansluter du med **admin**-inloggningen utan lösenord och startar distributionsguiden.
 
    Mer information finns i [Distribuera en instans](../../installation/using/deploying-an-instance.md).
 
@@ -170,11 +170,11 @@ Stegen är följande:
 
 1. Fyll i den externa URL-adressen (den för belastningsutjämnaren) som används för omdirigering och de interna URL-adresserna för de två frontservrarna.
 
-   For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
+   Mer information finns i [Spårningskonfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 
    >[!NOTE]
    >
-   >Vi använder den befintliga instansen av de två spårningsservrarna som har skapats tidigare och använder den **interna** inloggningen.
+   >Vi använder den befintliga instansen av de två spårningsservrarna som har skapats tidigare och använder inloggningen **internal**.
 
