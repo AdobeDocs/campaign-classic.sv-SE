@@ -27,7 +27,7 @@ För varje leverans kan du spåra mottagningen av meddelanden och aktiveringen a
 
 Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att anpassa hur URL-adresser spåras:
 
-1. Välj **[!UICONTROL Display URLs]** alternativet i den nedre delen av leveransguiden, under meddelandeinnehållet.
+1. Välj alternativet **[!UICONTROL Display URLs]** i den nedre delen av leveransguiden, under meddelandeinnehållet.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -49,7 +49,7 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    >
    >Etiketterna för de spårade URL-adresserna och etiketterna kan ändras för att förenkla läsningen av information vid spårning av leveranser. Två URL-adresser eller två etiketter med samma namn läggs ihop när antalet klickningar beräknas.
 
-1. Ändra vid behov spårningsläget och välj ett nytt läge i kolumnen som matchar mållänken, så som visas nedan: **[!UICONTROL Tracking]**
+1. Ändra spårningsläget om det behövs och välj ett nytt läge i kolumnen **[!UICONTROL Tracking]** som matchar mållänken, vilket visas nedan:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -62,4 +62,4 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    * **[!UICONTROL Opt-out]** : hanterar denna URL som en avanmälnings- eller avanmälnings-URL.
    * **[!UICONTROL Mirror page]** : anser att denna URL är en URL för en speglad sida.
 
-1. Dessutom kan du välja en kategori för varje spårad URL i den nedrullningsbara listan i **[!UICONTROL Category]** kolumnen. Dessa kategorier kan visas som i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en viss uppräkning: **[!UICONTROL urlCategory]** (Se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).
+1. Du kan dessutom välja en kategori för varje spårad URL i listrutan i kolumnen **[!UICONTROL Category]**. Dessa kategorier kan visas som i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en viss uppräkning: **[!UICONTROL urlCategory]** (se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).
