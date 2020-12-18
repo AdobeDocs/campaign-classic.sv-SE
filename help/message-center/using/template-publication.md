@@ -27,13 +27,13 @@ När meddelandemallen som skapats på kontrollinstansen är klar kan du publicer
 >
 >När du publicerar transaktionsmeddelandemallar publiceras typologiregler automatiskt på körningsinstanserna.
 
-1. Gå till mappen för trädet i kontrollinstansen **[!UICONTROL Message Center > Transactional message templates]** .
+1. Gå till mappen **[!UICONTROL Message Center > Transactional message templates]** i trädet i kontrollinstansen.
 1. Välj den mall som du vill publicera i dina körningsinstanser.
 1. Klicka på **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-När publiceringen är klar skapas båda meddelandemallarna som ska användas för batch- och realtidshändelser i trädet för produktionsinstansen i **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** mappen.
+När publiceringen är klar skapas båda meddelandemallarna som ska användas för batch- och realtidshändelser i trädet för produktionsinstansen i mappen **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
