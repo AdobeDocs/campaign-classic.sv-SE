@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Utöka en tabell {#extending-a-table}
 
-Om du vill utöka mottagartabellen för **nms:mottagande** schema gör du så här:
+Gör så här om du vill utöka mottagartabellen för **nms:receive**-schemat:
 
 1. Skapa tilläggsschemat (**cus:extension**) med följande data:
 
@@ -42,13 +42,13 @@ Om du vill utöka mottagartabellen för **nms:mottagande** schema gör du så h�
    </srcSchema>
    ```
 
-   I det här exemplet läggs ett indexerat fält (**följsamhet**) till och **location** -elementet (som redan fanns i **schemat nms:** mottagare **) kompletteras med ett uppräknat fält (** område).
+   I det här exemplet läggs ett indexerat fält (**följsamhet**) till och elementet **location** (som redan fanns i schemat **nms:receive**) kompletteras med ett numrerat fält (**area**).
 
    >[!IMPORTANT]
    >
    >Kom ihåg att lägga till attributet **extendedSchema** för att referera till tilläggsschemat.
 
-1. Kontrollera att det utökade schemat är **nms:mottagarschemat** och att det finns ytterligare data:
+1. Kontrollera att det utökade schemat är schemat **nms:receive** och att ytterligare data finns:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -155,7 +155,7 @@ Med en tilläggstabell kan du utöka innehållet i en befintlig tabell i en län
 
 Syftet med en tilläggstabell är att undvika begränsningar av antalet fält som stöds i en tabell eller att optimera utrymmet som upptas av data, som förbrukas på begäran.
 
-Skapa tilläggsschemat (**cus:feature**):
+Skapar tilläggsschemat (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -199,13 +199,13 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## Spilltabell {#overflow-table}
+## Spill table {#overflow-table}
 
 En flödestabell är en tilläggstabell (kardinalitet 1-1), men deklarationen av länken till tabellen som ska utökas fylls i schemat för flödestabellen.
 
 Flödestabellen innehåller sekundärnyckeln till tabellen som ska utökas. Den tabell som ska utökas ändras därför inte. Relationen mellan de två tabellerna är värdet på primärnyckeln för den tabell som ska utökas.
 
-Skapa schemat för flödestabellen (**cus:overflow**):
+Skapar schemat för flödestabellen (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-I alla tabeller som använder den här referenstabellen definierar du en länk och lägger till attributet **displayAsField=&quot;true&quot;** .
+I alla tabeller som använder den här referenstabellen definierar du en länk och lägger till attributet **displayAsField=&quot;true&quot;**.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
