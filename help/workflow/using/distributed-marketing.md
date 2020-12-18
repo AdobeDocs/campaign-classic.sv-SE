@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Distribuerad marknadsföring{#distributed-marketing}
 
-Arbetsflödet som beskrivs nedan installeras som standard med modulen **Distributed Marketing** . For more on this module, refer to this [section](../../campaign/using/about-distributed-marketing.md).
+Arbetsflödet som beskrivs nedan installeras som standard med modulen **Distributed Marketing**. Mer information om den här modulen finns i [avsnittet](../../campaign/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 
