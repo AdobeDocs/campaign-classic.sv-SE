@@ -23,15 +23,15 @@ Om du vill skapa en leverans baserad på en befintlig mall väljer du mallen i l
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-I annat fall klickar du på **[!UICONTROL Select link]** mappen till höger om fältet för att bläddra i trädet.
+I annat fall klickar du på mappen **[!UICONTROL Select link]** till höger om fältet för att bläddra i trädet.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Välj önskad katalog i **[!UICONTROL Folder]** fältet eller klicka på **[!UICONTROL Display sub-levels]** -ikonen för att visa innehållet i katalogerna i underträden till den aktuella katalogen.
+Välj önskad katalog i fältet **[!UICONTROL Folder]** eller klicka på ikonen **[!UICONTROL Display sub-levels]** för att visa innehållet i katalogerna i underträden till den aktuella katalogen.
 
 Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
-## Köra mallen {#executing-the-template}
+## Kör mallen {#executing-the-template}
 
 Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Om du vill göra det väljer du den mall som ska köras och högerklickar. Välj **[!UICONTROL Actions>Execute the delivery template...]**.
 
