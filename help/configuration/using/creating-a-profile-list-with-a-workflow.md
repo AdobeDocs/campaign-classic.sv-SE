@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Skapa en profillista med ett arbetsflöde{#creating-a-profile-list-with-a-workflow}
 
-Om du vill skapa en **[!UICONTROL List]** typlista baserad på den nya mottagartabellen måste du skapa ett målarbetsflöde som genererar listan.
+Om du vill skapa en **[!UICONTROL List]**-typlista baserad på den nya mottagartabellen måste du skapa ett målarbetsflöde som genererar listan.
 
 Mer information om listor i Campaign finns i [det här avsnittet](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
@@ -25,23 +25,23 @@ Mer information om listor i Campaign finns i [det här avsnittet](../../platform
 
 Följ stegen nedan för att skapa ett målarbetsflöde och uppdatera mottagare i en anpassad mottagartabell:
 
-1. Gå till **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** noden för Utforskaren.
+1. Gå till noden **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** i Utforskaren.
 1. Skapa ett nytt arbetsflöde för målinriktning.
-1. Placera en **Query** -aktivitet följt av en **List update** -aktivitet.
+1. Placera en **Query**-aktivitet följt av en **List update**-aktivitet.
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Dubbelklicka på **Query** -aktiviteten och klicka sedan **[!UICONTROL Edit the query]** för att välja en måldimension baserat på schemat i den nya mottagartabellen (i vårt exempel: **Individuell**). Bekräfta genom **[!UICONTROL Finish]** att klicka.
+1. Dubbelklicka på aktiviteten **Fråga** och klicka sedan på **[!UICONTROL Edit the query]** för att välja en måldimension baserat på schemat för den nya mottagartabellen (i vårt exempel: **Individuell**). Bekräfta genom att klicka på **[!UICONTROL Finish]**.
 
    ![](assets/mapping_create_list_workflow03.png)
 
-1. Dubbelklicka på aktiviteten **Listuppdatering** och välj sedan **[!UICONTROL Create the list if necessary (Computed name)]** alternativknappen.
+1. Dubbelklicka på aktiviteten **Listuppdatering** och välj sedan alternativknappen **[!UICONTROL Create the list if necessary (Computed name)]**.
 
    ![](assets/mapping_create_list_workflow02.png)
 
 1. Välj skapandemapp för den nya listan.
 1. Kör arbetsflödet för att skapa listan.
-1. Visa resultatet i noden för trädet som du valde under **[!UICONTROL List update]** aktiviteten.
+1. Visa resultatet i noden för trädet som du valde under aktiviteten **[!UICONTROL List update]**.
 
    Kontrollpanelen anger schemat som listan baseras på, vilket visas nedan:
 
