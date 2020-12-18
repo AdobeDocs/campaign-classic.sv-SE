@@ -15,11 +15,11 @@ ht-degree: 2%
 ---
 
 
-# Leveransnyckelpoäng{#deliverability-key-points}
+# Leveransnyckelpunkter{#deliverability-key-points}
 
 För att optimera leveransen av dina e-postmeddelanden från Adobe Campaign rekommenderar vi att du använder de bästa metoderna nedan. Leveransproblem är i allmänhet kopplade till skyddsåtgärder mot skräppost som implementeras av Internet-leverantörer och e-postserveradministratörer.
 
-**E-postleveransen** avser den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
+**E-** postleveransen avser den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
 
 Dessa egenskaper kan delas in i fyra huvudkategorier:
 * Datakvalitet
@@ -29,7 +29,7 @@ Dessa egenskaper kan delas in i fyra huvudkategorier:
 
 Tillsammans utgör de grunden för ett framgångsrikt program för e-postleverans.
 
-Leveransfrekvensen **** är antalet skickade e-postmeddelanden som levererats till mottagarna.
+**leveransfrekvensen** är antalet skickade e-postmeddelanden som levererats till mottagarna.
 
 Leveransgraden beror på flera faktorer, särskilt:
 * Korrekt konfiguration av dina instanser
@@ -50,13 +50,13 @@ Spam försöker dölja sin riktiga identitet och gör därför sina servrar svå
 
 Spammare använder ofta adressgeneratorer som bygger på listor över frekventa namn och förnamn. Dessutom bearbetar de sällan tekniska meddelanden som skickas tillbaka från e-postservrar. En hög frekvens med ogiltiga adresser tolkas ofta som ett tecken på skräppost. Dubbla anmälningsmekanismer och effektiv hantering av tekniska studentmeddelanden gör det möjligt att undvika detta.
 
-## Minska antalet klagomål och avhoppsfrekvens {#reduce-complaint-rates}
+## Minska antalet klagomål och studsfrekvenser {#reduce-complaint-rates}
 
 Internetleverantörer har vanligtvis ett framträdande sätt att rapportera ett mottaget meddelande som skräppost. Detta gör det möjligt att identifiera otillförlitliga källor. Genom att snabbt följa avanmälningsbegäranden, använda en viss lista regelbundet, verifiera samtycke via ett system med dubbel avanmälan och implementera feedbackslingor kan ni minska antalet klagomål.
 
 ## Skicka till anteckningsadresser {#honeypot-addresses}
 
-Internetleverantörer och andra organisationer (se webbplatsen [Project Honung Pot](https://www.projecthoneypot.org/) ) använder postlådor som inte motsvarar fysiska personer, men som bara skapas för att lura skräppost. Dessa så kallade &quot;honungsportadresser&quot; publiceras på webben för att samlas in av skräppost och därmed fånga oäkta avsändare. Användningen av en dubbel anmälningsmekanism förhindrar att den här typen av adress läggs till i en lista. När du använder en tredjepartslista måste du vara säker på vilka metoder som används av den som ansvarar för den.
+Internetleverantörer och andra organisationer (se [Project Honung Pot](https://www.projecthoneypot.org/)-webbplatsen) använder postlådor som inte motsvarar fysiska personer, men som bara skapas för att lura skräppost. Dessa så kallade &quot;honungsportadresser&quot; publiceras på webben för att samlas in av skräppost och därmed fånga oäkta avsändare. Användningen av en dubbel anmälningsmekanism förhindrar att den här typen av adress läggs till i en lista. När du använder en tredjepartslista måste du vara säker på vilka metoder som används av den som ansvarar för den.
 
 ## Anpassa meddelandeinnehållet {#message-content}
 
