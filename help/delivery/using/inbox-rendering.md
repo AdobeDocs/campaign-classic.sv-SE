@@ -17,28 +17,28 @@ ht-degree: 8%
 
 # Inkorgsåtergivning{#inbox-rendering}
 
-## Om inkorgsåtergivning {#about-inbox-rendering}
+## Om återgivning av inkorgen {#about-inbox-rendering}
 
-Before hitting the **Send** button, make sure that your message will be displayed to the recipients in an optimal way on a variety of web clients, web mails and devices.
+Innan du klickar på knappen **Skicka** måste du se till att ditt meddelande visas för mottagarna på ett optimalt sätt på olika webbklienter, webbmejl och enheter.
 
-För att möjliggöra detta använder Adobe Campaign den webbaserade testlösningen [Litmus](https://litmus.com/email-testing) för att hämta in återgivningarna och göra dem tillgängliga i en dedikerad rapport. På så sätt kan du förhandsgranska det skickade meddelandet i olika sammanhang som det kan tas emot i och kontrollera kompatibiliteten i de flesta datorer och program.
+För att möjliggöra detta använder Adobe Campaign den webbaserade e-posttestningslösningen [Litmus](https://litmus.com/email-testing) för att hämta in återgivningarna och göra dem tillgängliga i en dedikerad rapport. På så sätt kan du förhandsgranska det skickade meddelandet i olika sammanhang som det kan tas emot i och kontrollera kompatibiliteten i de flesta datorer och program.
 
 Litmus är en funktionell e-postvalidering och förhandsgranskning av program. Med den kan e-postinnehållsförfattare förhandsgranska sitt meddelandeinnehåll i över 70 e-postrenderare, till exempel Gmail-inkorgen eller Apple Mail-klienten.
 
-The mobile, messaging and webmail clients available for **Inbox rendering** in Adobe Campaign are listed on the [Litmus website](https://litmus.com/email-testing) (click **View all email clients**).
+De mobil-, meddelande- och webbpostklienter som är tillgängliga för **Inkorgsåtergivning** i Adobe Campaign finns listade på [Litmus-webbplatsen](https://litmus.com/email-testing) (klicka **Visa alla e-postklienter**).
 
 >[!NOTE]
 >
 >Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personaliseringen kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och [korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
+## Aktiverar inkorgsåtergivning {#activating-inbox-rendering}
 
 För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobe teknisk support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
 
 För lokala installationer följer du stegen nedan för att konfigurera inkorgsåtergivning.
 
-1. Installera paketet **[!UICONTROL Inbox rendering (IR)]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
-1. Konfigurera ett externt konto för HTTP-typen via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** -noden. Mer information finns i [Skapa ett externt konto](../../installation/using/external-accounts.md#creating-an-external-account).
+1. Installera **[!UICONTROL Inbox rendering (IR)]**-paketet via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**-menyn. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+1. Konfigurera ett externt konto för HTTP-typen via noden **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Mer information finns i [Skapa ett externt konto](../../installation/using/external-accounts.md#creating-an-external-account).
 1. Ange externa kontoparametrar enligt följande:
    * **[!UICONTROL Label]**: Information om leveransserver
    * **[!UICONTROL Internal name]**: deliverabilityInstance
@@ -49,8 +49,8 @@ För lokala installationer följer du stegen nedan för att konfigurera inkorgs�
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** node. Sök efter **[!UICONTROL DmRendering_cuid]** alternativet och kontakta supporten för att få den leveransrapportidentifierare som behöver kopieras till **[!UICONTROL Value (text)]** fältet.
-1. Redigera filen **serverConf.xml** så att den tillåter anrop till Litmus-servern. Lägg till följande rad i `<urlPermission>` avsnittet:
+1. Gå till noden **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Sök efter alternativet **[!UICONTROL DmRendering_cuid]** och kontakta support för att få den identifierare för leveransrapporter som behöver kopieras till fältet **[!UICONTROL Value (text)]**.
+1. Redigera filen **serverConf.xml** om du vill tillåta ett anrop till Litmus-servern. Lägg till följande rad i avsnittet `<urlPermission>`:
 
    ```
    <url dnsSuffix="deliverability-app.neolane.net" urlRegEx="https://.*"/>
@@ -76,7 +76,7 @@ I Adobe Campaign motsvarar krediten antalet tillgängliga återgivningar (kallas
 >
 >Antalet tillgängliga Litmus-tokens beror på vilken Campaign-licens du har köpt. Kontrollera licensavtalet.
 
-Varje gång du använder **[!UICONTROL Inbox rendering]** funktionen i en leverans minskar varje återgivning dina tillgängliga tokens med ett.
+Varje gång du använder funktionen **[!UICONTROL Inbox rendering]** i en leverans minskar varje återgivning dina tillgängliga tokens med ett.
 
 >[!IMPORTANT]
 >
@@ -89,30 +89,30 @@ Varje gång du använder **[!UICONTROL Inbox rendering]** funktionen i en levera
 
 
 
-Antalet återstående tillgängliga token visas i **[!UICONTROL General summary]** rapporten för [inkorgsåtergivning](#inbox-rendering-report).
+Antalet återstående tillgängliga token visas i **[!UICONTROL General summary]** i [rapporten för inkorgsåtergivning](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 Återgivningsfunktionen i Inkorgen används vanligtvis för att testa HTML-ramverket i ett nyligen utformat e-postmeddelande. Varje återgivning kräver ungefär 70 token (beroende på hur många miljöer som testas i allmänhet). I vissa fall kan du dock behöva flera rapporter om inkorgsåtergivning för att kunna testa leveransen. Det kan därför ta fler tokens att slutföra flera kontroller.
 
-## Få åtkomst till rapporten för inkorgsåtergivning {#accessing-the-inbox-rendering-report}
+## Åtkomst till rapporten för inkorgsåtergivning {#accessing-the-inbox-rendering-report}
 
 När du har skapat e-postleveransen och definierat innehållet samt målpopulationen följer du stegen nedan.
 
 Mer information om hur du skapar, utformar och anger mål för en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md).
 
-1. Klicka på **[!UICONTROL Inbox rendering]** knappen längst upp i leveransfältet.
-1. Välj **[!UICONTROL Analyze]** att starta hämtningsprocessen.
+1. Klicka på knappen **[!UICONTROL Inbox rendering]** längst upp i leveransfältet.
+1. Välj **[!UICONTROL Analyze]** för att starta hämtningsprocessen.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. For more on sending proofs, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 1. När du har skickat korrekturet visas det i leveranslistan. Dubbelklicka på den.
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
-1. Gå till fliken **Inkorgsåtergivning** i korrekturet.
+1. Gå till fliken **Inkorgsåtergivning** för korrekturet.
 
    ![](assets/s_tn_inbox_rendering_tab.png)
 
@@ -122,7 +122,7 @@ Mer information om hur du skapar, utformar och anger mål för en leverans finns
 
 I den här rapporten visas inkorgsåtergivningarna så som de visas för mottagaren. Återgivningarna kan variera beroende på hur mottagaren öppnar e-postleveransen: i en webbläsare, på en mobil enhet eller via ett e-postprogram.
 
-Här **[!UICONTROL General summary]** visas antalet mottagna, oönskade (skräppost), ej mottagna eller väntande mottagningar som en lista och med en grafisk färgkodad representation.
+**[!UICONTROL General summary]** visar antalet meddelanden som tagits emot, oönskade (spam), inte tagits emot eller väntar på att tas emot, som en lista och via en grafisk färgkodad representation.
 
 ![](assets/s_tn_inbox_rendering_summary.png)
 
