@@ -19,11 +19,11 @@ ht-degree: 5%
 
 De bilder som används i diagrammen för de olika arbetsflödena kan ändras. De måste dock uppfylla vissa krav. Här är genomförandefaserna:
 
-* Om du vill ändra bakgrundsbilden väljer du önskat målarbetsflöde och klickar sedan på **[!UICONTROL Properties]** fliken.
+* Om du vill ändra bakgrundsbilden väljer du önskat målarbetsflöde och klickar sedan på fliken **[!UICONTROL Properties]**.
 
    ![](assets/s_user_segmentation_properties_tab.png)
 
-   Om du vill välja den bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Background image]** fältet.
+   Klicka på ikonen **[!UICONTROL Select link]** till höger om fältet **[!UICONTROL Background image]** för att välja den bild som ska användas.
 
    >[!NOTE]
    >
@@ -31,21 +31,21 @@ De bilder som används i diagrammen för de olika arbetsflödena kan ändras. De
 
    ![](assets/s_user_segmentation_background_select.png)
 
-   Med **[!UICONTROL Edit link]** ikonen kan du visa den markerade bilden.
+   Med ikonen **[!UICONTROL Edit link]** kan du visa den valda bilden.
 
-* Om du vill ändra bilden som är associerad med en aktivitet dubbelklickar du på objektet och sedan på **[!UICONTROL Advanced]** fliken.
+* Om du vill ändra bilden som är associerad med en aktivitet dubbelklickar du på objektet och klickar sedan på fliken **[!UICONTROL Advanced]**.
 
-   Om du vill välja den bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Image]** fältet.
+   Klicka på ikonen **[!UICONTROL Select link]** till höger om fältet **[!UICONTROL Image]** för att välja den bild som ska användas.
 
    ![](assets/s_user_segmentation_activity_image.png)
 
-   Med **[!UICONTROL Edit link]** ikonen kan du visa den markerade bilden.
+   Med ikonen **[!UICONTROL Edit link]** kan du visa den valda bilden.
 
    ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >
->De bilder som sparas i trädnoden är tillgängliga för markering. **[!UICONTROL Administration > Configuration > Images]**
+>De bilder som sparas i noden **[!UICONTROL Administration > Configuration > Images]** i trädet kan väljas.
 >  
 >Bilderna måste vara i PNG-format med 48 x 48 pixlar, 16 miljoner färger och en genomskinlig bakgrund.
 
