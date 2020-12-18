@@ -20,8 +20,8 @@ ht-degree: 6%
 Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
 
 * Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/configuring-multibranding.md).
-* Installera klientkonsolen: se [det här avsnittet](../../installation/using/installing-the-client-console.md).
-* Läs mer om verktygen för slutprodukter och de effektivaste strategierna i [guiden](../../delivery/using/deliverability-key-points.md) Komma igång och [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
-* Konfigurera kampanjalternativ: se [det här avsnittet](../../installation/using/configuring-campaign-options.md).
-* Konfigurera CRM-anslutningar: se [det här avsnittet](../../platform/using/crm-connectors.md).
+* Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
+* Läs mer om leveransverktygen och de effektivaste strategierna i [guiden ](../../delivery/using/deliverability-key-points.md) och [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
+* Konfigurera kampanjalternativ: hänvisa [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
+* Konfigurera CRM-anslutningar: hänvisa [till detta avsnitt](../../platform/using/crm-connectors.md).
 
