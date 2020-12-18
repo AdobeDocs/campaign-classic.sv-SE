@@ -63,7 +63,7 @@ Du kan välja mellan fem olika språk:
 
 Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information om detta hittar du i det här [avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+Mer information om hur du skapar en instans finns på den här [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ For more information on how to create an instance, refer to this [page](../../in
 
 ## Navigeringsgrunder {#navigation-basics}
 
-### Bläddra bland sidor {#browsing-pages}
+### Bläddrar bland sidor {#browsing-pages}
 
 Plattformens olika funktioner är uppdelade i kärnfunktioner: använd länkarna som visas i det övre avsnittet av gränssnittet för att komma åt dem.
 
@@ -79,15 +79,15 @@ Plattformens olika funktioner är uppdelade i kärnfunktioner: använd länkarna
 
 Listan över kärnfunktioner som du kan komma åt beror på vilka paket och tillägg du har installerat och på din åtkomstbehörighet.
 
-Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Länken ger dig till exempel **[!UICONTROL Profiles and targets]** till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
+Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Länken **[!UICONTROL Profiles and targets]** leder dig till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
 
-Listorna är tillgängliga via **[!UICONTROL Lists]** länken till vänster i **[!UICONTROL Profiles and Targets]** gränssnittet.
+Listorna är tillgängliga via länken **[!UICONTROL Lists]** i den vänstra delen av gränssnittet **[!UICONTROL Profiles and Targets]**.
 
 ![](assets/recipient_list_overview.png)
 
 ### Använda tabbar {#using-tabs}
 
-* När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på **[!UICONTROL Back]** knappen i verktygsfältet. Klicka på **[!UICONTROL Home]** knappen om du vill gå tillbaka till startsidan.
+* När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på knappen **[!UICONTROL Back]** i verktygsfältet. Klicka på knappen **[!UICONTROL Home]** om du vill gå tillbaka till startsidan.
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -95,19 +95,19 @@ Listorna är tillgängliga via **[!UICONTROL Lists]** länken till vänster i **
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
-### Skapa ett element {#creating-an-element}
+### Skapar ett element {#creating-an-element}
 
-I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i **[!UICONTROL Browsing]** avsnittet för att göra detta. Med **[!UICONTROL Other choices]** länken kan du komma åt alla andra sidor, oavsett miljö.
+I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i avsnittet **[!UICONTROL Browsing]** för att göra detta. Med länken **[!UICONTROL Other choices]** kan du komma åt alla andra sidor, oavsett miljö.
 
-Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i **[!UICONTROL Create]** avsnittet till vänster på skärmen. Använd knappen ovanför listan för att lägga till nya element i listan **[!UICONTROL Create]** .
+Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i **[!UICONTROL Create]**-avsnittet till vänster på skärmen. Använd knappen **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
 
-Använd till exempel knappen för att skapa en ny leverans på leveranssidan **[!UICONTROL Create]** .
+Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att skapa en ny leverans.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 ## Använda Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-### About Adobe Campaign explorer {#about-adobe-campaign-explorer}
+### Om Adobe Campaign Explorer {#about-adobe-campaign-explorer}
 
 Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 
@@ -129,29 +129,29 @@ För optimal navigering och användbarhet rekommenderar Adobe att du använder e
 >
 >Upplösningar under 1 600 × 900 pixlar kanske inte stöds av Adobe Campaign.
 
-Om vissa delar av **[!UICONTROL Explorer]** zonen verkar vara trunkerade på arbetsytan expanderar du den med pilen över zonen eller klickar på **[!UICONTROL Details]** **[!UICONTROL Enlarge]** knappen.
+Om vissa delar av **[!UICONTROL Details]**-zonen verkar vara trunkerade på arbetsytan **[!UICONTROL Explorer]** expanderar du den med pilen över zonen eller klickar på knappen **[!UICONTROL Enlarge]**.
 
 ![](assets/s_ncs_user_resolution.png)
 
 ### Bläddringslistor {#browsing-lists}
 
-Om du vill bläddra i en lista kan du använda **rullningslisterna** (vågrätt och lodrätt) för att bläddra igenom den utan att ändra postmarkeringen, **mushjulet** eller **piltangenterna**.
+Om du vill bläddra i en lista kan du använda **rullningslisterna** (vågrät och lodrät) för att bläddra igenom den utan att ändra postmarkeringen, **mushjulet** eller **piltangenterna**.
 
 >[!NOTE]
 >
->Konfiguration och personalisering av listinnehåll presenteras i [Konfigurationslistor](#configuring-lists).
+>Konfiguration och personalisering av listinnehåll presenteras i [Konfigurera listor](#configuring-lists).
 >
 >Du kan också sortera och filtrera data. Se [Filtreringsalternativ](../../platform/using/filtering-options.md).
 
-### Inventeringsposter {#counting-records}
+### Räknar poster {#counting-records}
 
 Som standard läser Adobe Campaign in de första 200 posterna i en lista. Det innebär att visningen inte nödvändigtvis visar alla poster i tabellen som du visar. Du kan räkna antalet poster i listan och läsa in fler poster.
 
-I den nedre högra delen av listskärmen **[!UICONTROL counter]** visas hur många poster som har lästs in och det totala antalet poster i databasen (efter att eventuella filter har använts):
+I den nedre högra delen av listskärmen visar en **[!UICONTROL counter]** hur många poster som har lästs in och det totala antalet poster i databasen (efter att eventuella filter har använts):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Om ett &quot;**?**&quot; visas i stället för siffran till höger. Klicka på räknaren för att starta beräkningen.
+Om ett **?**&quot; visas i stället för siffran till höger. Klicka på räknaren för att starta beräkningen.
 
 ### Läser in fler poster {#loading-more-records}
 
@@ -165,9 +165,9 @@ Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICO
 >
 >Beroende på antalet poster kan tiden för inläsning av den fullständiga listan vara lång.
 
-### Ändra standardantal poster {#change-default-number-of-records}
+### Ändra standardantalet poster {#change-default-number-of-records}
 
-Om du vill ändra standardantalet inlästa poster klickar du **[!UICONTROL Configure list]** i listans nedre högra hörn.
+Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan.
 
 ![](assets/s_ncs_user_configure_list.png)
 
@@ -175,7 +175,7 @@ Klicka på Avancerade parametrar (längst ned till vänster) i listkonfiguration
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## Konfigurera listor {#configuring-lists}
+## Konfigurerar listor {#configuring-lists}
 
 ### Lägg till kolumner {#add-columns}
 
@@ -192,11 +192,11 @@ Du kan snabbt lägga till en kolumn i en lista från detaljerna i en post. Så h
 
 Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som inte visas på detaljskärmen, är att använda listkonfigurationsfönstret. Så här gör du:
 
-1. Klicka **[!UICONTROL Configure list]** nedan och till höger om listan.
+1. Klicka på **[!UICONTROL Configure list]** nedan och till höger om listan.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Dubbelklicka på det fält som ska läggas till i listan i listkonfigurationsfönstret för att lägga till det i **[!UICONTROL Available fields]** listan **[!UICONTROL Output columns]**.
+1. Dubbelklicka på det fält som ska läggas till i listan **[!UICONTROL Available fields]** i listkonfigurationsfönstret för att lägga till det i **[!UICONTROL Output columns]**.
 
    ![](assets/s_ncs_user_configurelist.png)
 
@@ -213,34 +213,34 @@ Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som 
    >Du kan också sortera och filtrera data. Se [Filtreringsalternativ](../../platform/using/filtering-options.md).
 
 1. Upprepa för varje kolumn som ska visas.
-1. Använd pilarna för att ändra **visningsordningen**. Den högsta kolumnen finns till vänster i listan med poster.
+1. Använd pilarna för att ändra visningsordningen ****. Den högsta kolumnen finns till vänster i listan med poster.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. Om du behöver kan du klicka **[!UICONTROL Distribution of values]** för att visa omfördelningen av värden för det valda fältet i den aktuella mappen.
+1. Om du behöver kan du klicka på **[!UICONTROL Distribution of values]** för att visa ompartitionen av värden för det valda fältet i den aktuella mappen.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+1. Klicka på **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
 ### Skapa en ny kolumn {#create-a-new-column}
 
 Du kan skapa nya kolumner för att visa ytterligare fält i listan. Så här gör du:
 
-1. Klicka **[!UICONTROL Configure the list]** nedan och till höger om listan.
-1. Klicka **[!UICONTROL Add]** för att visa ett nytt fält i listan.
+1. Klicka på **[!UICONTROL Configure the list]** nedanför och till höger om listan.
+1. Klicka på **[!UICONTROL Add]** om du vill visa ett nytt fält i listan.
 
 ### Ta bort en kolumn {#remove-a-column}
 
-Du kan maskera en eller flera kolumner i en lista med poster med hjälp av **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
+Du kan maskera en eller flera kolumner i en lista med poster med **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-I listkonfigurationsfönstret markerar du den kolumn som ska maskeras från **[!UICONTROL Output columns]** zonen och klickar på knappen Ta bort.
+I listkonfigurationsfönstret markerar du den kolumn som ska maskeras från zonen **[!UICONTROL Output columns]** och klickar på knappen Ta bort.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Upprepa för varje kolumn som ska maskeras. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+Upprepa för varje kolumn som ska maskeras. Klicka på **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
 ### Justera kolumnbredd {#adjust-column-width}
 
@@ -253,7 +253,7 @@ Listor kan visa:
 * Antingen posterna i den valda mappen,
 * Eller posterna i den markerade mappen OCH dess undermappar.
 
-Om du vill växla från ett visningsläge till ett annat klickar du **[!UICONTROL Display sub-levels]** i verktygsfältet.
+Om du vill växla från ett visningsläge till ett annat klickar du på **[!UICONTROL Display sub-levels]** i verktygsfältet.
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
@@ -273,23 +273,23 @@ Följ stegen nedan för att spara listkonfigurationen så att den kan återanvä
 
 1. Högerklicka på mappen som innehåller de data som visas.
 1. Välj **[!UICONTROL Properties]**.
-1. Klicka på **[!UICONTROL Advanced settings]** och ange sedan ett namn i **[!UICONTROL Configuration]** fältet.
+1. Klicka på **[!UICONTROL Advanced settings]** och ange sedan ett namn i fältet **[!UICONTROL Configuration]**.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Save]**.
 
-Du kan sedan använda den här konfigurationen i en annan **leveransmapp** :
+Du kan sedan använda den här konfigurationen i en annan **Delivery**-mapp:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Klicka **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har ändrats så att den matchar den angivna konfigurationen:
+Klicka på **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har ändrats så att den matchar den angivna konfigurationen:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
 ## Exportera en lista {#exporting-a-list}
 
-Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera de element som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
+Om du vill exportera data från en lista måste du använda en exportguide. Om du vill komma åt den markerar du de element som ska exporteras från listan, högerklickar och väljer **[!UICONTROL Export...]**.
 
 Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/generic-imports-and-exports.md).
 
@@ -309,7 +309,7 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ ste
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Klicka på **[!UICONTROL Sorting]** fliken i listkonfigurationsfönstret.
+1. Klicka på fliken **[!UICONTROL Sorting]** i listkonfigurationsfönstret.
 1. Markera de fält som ska sorteras och sorteringsriktningen (stigande eller fallande).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -320,11 +320,11 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ ste
 
    Sorteringsprioriteten påverkar inte visningen av kolumnerna i listan.
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
 
-### Söka efter element {#running-a-search}
+### Söker efter element {#running-a-search}
 
-Du kan göra en sökning av de tillgängliga fälten i en redigerare med hjälp av det **[!UICONTROL Search]** fält som finns ovanför listan med fält. Tryck på **Enter** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
+Du kan köra en sökning i de tillgängliga fälten i en redigerare med hjälp av fältet **[!UICONTROL Search]** ovanför listan med fält. Tryck på **Enter** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
 
 >[!NOTE]
 >
@@ -367,21 +367,21 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
  </tbody> 
 </table>
 
-### Lägga till värden i en uppräkning {#add-values-in-an-enumeration}
+### Lägg till värden i en uppräkning {#add-values-in-an-enumeration}
 
-Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. Du kan t.ex. ange London i fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** för en mottagarprofil. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
+Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** för en mottagarprofil kan du till exempel ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
-Om du klickar **[!UICONTROL Yes]** på den här kommandoknappen visas det här värdet i kombinationsfältet för det aktuella fältet (i det här fallet: **[!UICONTROL London]**).
+Om du klickar på **[!UICONTROL Yes]** är det här värdet tillgängligt i kombinationsrutan för det relevanta fältet (i det här fallet: **[!UICONTROL London]**).
 
 >[!NOTE]
 >
->Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]** avsnittet. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
+>Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]**-avsnittet. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
 
 ### Standardenheter {#default-units}
 
-I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista ansökningsdag för en uppgift osv.) kan värdet uttryckas i följande **enheter**:
+I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista datum för godkännande av en uppgift osv.) kan värdet uttryckas i följande **enheter**:
 
 * **[!UICONTROL s]** i sekunder,
 * **[!UICONTROL mn]** i minuter,
@@ -390,10 +390,10 @@ I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna 
 
 ![](assets/enter_unit_sample.png)
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 I den här videon visas arbetsytan i Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
