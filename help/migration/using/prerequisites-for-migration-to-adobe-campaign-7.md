@@ -17,7 +17,7 @@ ht-degree: 22%
 
 # Förutsättningar för att migrera till Adobe Campaign 7{#prerequisites-for-migration-to-adobe-campaign}
 
-Innan du kör en migrering bör du läsa avsnittet [Innan du startar migreringen](../../migration/using/before-starting-migration.md) och [konfigurerar plattformen](../../migration/using/configuring-your-platform.md) .
+Läs mer i avsnitten [Innan du startar migreringen](../../migration/using/before-starting-migration.md) och [Konfigurera plattformen](../../migration/using/configuring-your-platform.md) innan du kör en migrering.
 
 När du migrerar från v6.02 till Adobe Campaign v7 levereras inte alla filer som levereras i förväg.
 
