@@ -19,13 +19,13 @@ ht-degree: 1%
 
 ## Avsändare {#sender}
 
-Klicka på **[!UICONTROL From]** länken om du vill definiera namn och adress för avsändaren som ska visas i meddelandehuvudet.
+Klicka på länken **[!UICONTROL From]** om du vill definiera namn och adress för avsändaren som ska visas i meddelandehuvudet.
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
 I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Den här informationen kan anpassas. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
 
-Information om hur du infogar och använder personaliseringsfält finns i avsnittet [Om personalisering](../../delivery/using/about-personalization.md) .
+Information om hur du infogar och använder anpassningsfält finns i [Om personalisering](../../delivery/using/about-personalization.md)-avsnittet.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Information om hur du infogar och använder personaliseringsfält finns i avsnit
 
 ## Meddelandeämne {#message-subject}
 
-Meddelandets ämne är konfigurerat i motsvarande fält. Du kan ange det direkt i fältet eller klicka på **[!UICONTROL Subject]** länken för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
+Meddelandets ämne är konfigurerat i motsvarande fält. Du kan ange det direkt i fältet eller klicka på länken **[!UICONTROL Subject]** för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
 
 >[!IMPORTANT]
 >
@@ -55,9 +55,9 @@ I meddelandet ovan anpassas till exempel meddelandets ämne för varje mottagare
 
 >[!NOTE]
 >
->Användningen av personaliseringsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
+>Användningen av anpassningsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
 
-Du kan också infoga uttryckssymboler på ämnesraden med **[!UICONTROL Insert emoticon]** popup-fönstret.
+Du kan också infoga uttryckssymboler på ämnesraden med popup-fönstret **[!UICONTROL Insert emoticon]**.
 
 ## Meddelandeinnehåll {#message-content}
 
@@ -69,21 +69,21 @@ Innehållet i meddelandet definieras i det nedre avsnittet av fönstret för lev
 
 Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](#selecting-message-formats).
 
-* Om du vill importera ett HTML-innehåll använder du **[!UICONTROL Open]** knappen . Du kan också klistra in källkoden direkt på **[!UICONTROL Source]** underfliken.
+* Om du vill importera ett HTML-innehåll använder du knappen **[!UICONTROL Open]**. Du kan också klistra in källkoden direkt i underfliken **[!UICONTROL Source]**.
 
-   Om du använder [DCE (Digital Content Editor](../../web/using/about-campaign-html-editor.md) ) läser du [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+   Om du använder [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), se [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
    >[!IMPORTANT]
    >
    >HTML-innehållet måste skapas i förväg och sedan importeras till Adobe Campaign. HTML-redigeraren är inte utformad för att skapa innehåll.
 
-   På **[!UICONTROL Preview]** underfliken kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
+   Med underfliken **[!UICONTROL Preview]** kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
 
    Verktygsfältsknapparna ger tillgång till standardåtgärder och formateringsparametrar för HTML-sidan.
 
    ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på **[!UICONTROL Image]** ikonen och väljer lämpligt alternativ.
+   Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på ikonen **[!UICONTROL Image]** och väljer lämpligt alternativ.
 
    ![](assets/s_ncs_user_wizard_email01_18.png)
 
@@ -93,9 +93,9 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
    >[!NOTE]
    >
-   >Användningen av personaliseringsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
+   >Användningen av anpassningsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
 
-   Med flikarna längst ned på sidan kan du visa HTML-koden för sidan som skapas och visa återgivningen av meddelandet med dess anpassning. Om du vill öppna den här visningen klickar du på **[!UICONTROL Preview]** och väljer en mottagare med hjälp av **[!UICONTROL Test personalization]** knappen i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
+   Med flikarna längst ned på sidan kan du visa HTML-koden för sidan som skapas och visa återgivningen av meddelandet med dess anpassning. Om du vill starta den här visningen klickar du på **[!UICONTROL Preview]** och väljer en mottagare med knappen **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
 
    ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -103,11 +103,11 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
    ![](assets/s_ncs_user_wizard_email01_140.png)
 
-* Om du vill importera ett textinnehåll använder du **[!UICONTROL Open]** knappen eller **[!UICONTROL Text Content]** fliken för att ange innehållet i meddelandet när det visas i textformat. Använd verktygsfältsknapparna för att komma åt åtgärder för innehållet. Med den sista knappen kan du infoga anpassningsfält.
+* Om du vill importera ett textinnehåll använder du knappen **[!UICONTROL Open]** eller fliken **[!UICONTROL Text Content]** för att ange innehållet i meddelandet när det visas i textformat. Använd verktygsfältsknapparna för att komma åt åtgärder för innehållet. Med den sista knappen kan du infoga anpassningsfält.
 
    ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   När det gäller HTML-formatet klickar du på **[!UICONTROL Preview]** fliken längst ned på sidan för att visa återgivningen av meddelandet med dess anpassning.
+   När det gäller HTML-formatet klickar du på fliken **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess anpassning.
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
@@ -115,18 +115,18 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
 Du kan infoga uttryckssymboler i ditt e-postinnehåll.
 
-1. Klicka på **[!UICONTROL Insert emoticon]** ikonen.
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]**.
 1. Välj en uttryckssymbol i popup-fönstret.
 
    ![](assets/emoticon_4.png)
 
-1. Klicka på **[!UICONTROL Close]** knappen när du är klar.
+1. Klicka på knappen **[!UICONTROL Close]** när du är klar.
 
-Mer information om hur du anpassar uttryckslistan finns på den här [sidan](../../delivery/using/customizing-emoticon-list.md).
+Om du vill anpassa uttryckslistan läser du i den här [sidan](../../delivery/using/customizing-emoticon-list.md).
 
 ## Välja meddelandeformat {#selecting-message-formats}
 
-Du kan ändra formatet för skickade e-postmeddelanden. Det gör du genom att redigera leveransegenskaperna och klicka på **[!UICONTROL Delivery]** fliken.
+Du kan ändra formatet för skickade e-postmeddelanden. Om du vill göra det redigerar du leveransegenskaperna och klickar på fliken **[!UICONTROL Delivery]**.
 
 ![](assets/s_ncs_user_wizard_email_param.png)
 
@@ -134,7 +134,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 * **[!UICONTROL Use recipient preferences]** (standardläge)
 
-   The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
+   Meddelandeformatet definieras enligt data som lagras i mottagarprofilen och lagras som standard i fältet **[!UICONTROL email format]** (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
@@ -150,7 +150,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 ## Definiera interaktivt innehåll {#amp-for-email-format}
 
-Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) , som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
+Med Adobe Campaign kan du testa det nya interaktiva [AMP för e-post](https://amp.dev/about/email/)-formatet, som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
 Mer information finns i [det här avsnittet](../../delivery/using/defining-interactive-content.md).
 
@@ -170,7 +170,7 @@ Med en extra flik kan du ange innehåll som automatiskt ska integreras och forma
 
 ## Lägga till bilder {#adding-images}
 
-E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via **[!UICONTROL Image]** -ikonen.
+E-postleveranser i HTML-format kan innehålla bilder. Från leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via ikonen **[!UICONTROL Image]**.
 
 Bilderna kan vara:
 
@@ -183,9 +183,9 @@ Bilderna kan vara:
 
 >[!IMPORTANT]
 >
->Om du vill inkludera bilder i e-postmeddelanden med leveransguiden måste Adobe Campaign-instansen konfigureras för att aktivera offentlig resurshantering. Den här proceduren kan utföras från distributionsguiden. Mer information om konfiguration finns i [det här avsnittet](../../installation/using/deploying-an-instance.md) .
+>Om du vill inkludera bilder i e-postmeddelanden med leveransguiden måste Adobe Campaign-instansen konfigureras för att aktivera offentlig resurshantering. Den här proceduren kan utföras från distributionsguiden. Mer information om konfiguration finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
 
-Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på **[!UICONTROL Image]** knappen i verktygsfältet HTML-innehåll.
+Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på knappen **[!UICONTROL Image]** i verktygsfältet HTML-innehåll.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -195,15 +195,15 @@ Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i b
 
 Så här hanterar du bilder via leveransguiden:
 
-1. Klicka på **[!UICONTROL Tracking & Images]** ikonen i verktygsfältet.
+1. Klicka på ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet.
    ![](assets/s_ncs_user_email_del_img_param.png)
 
-1. Välj **[!UICONTROL Upload images]** på **[!UICONTROL Images]** fliken.
+1. Välj **[!UICONTROL Upload images]** på fliken **[!UICONTROL Images]**.
 1. Du kan sedan välja om du vill inkludera bilderna i e-postmeddelandet.
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på **[!UICONTROL Upload the images straightaway...]** länken om du vill göra det.
-* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i **[!UICONTROL Images URL]** fältet. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
+* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Det gör du genom att klicka på länken **[!UICONTROL Upload the images straightaway...]**.
+* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Det gör du genom att ange det i fältet **[!UICONTROL Images URL]**. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
 
 När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande som ger dig möjlighet att ladda upp bilderna direkt enligt leveransparametrarna.
 
@@ -217,23 +217,23 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](../../delivery/using/attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ](../../installation/using/configuring-campaign-options.md#delivery)för Campaign Classic.
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](../../delivery/using/attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Här följer ett exempel på en leverans med fyra bilder:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
-Dessa bilder kommer från en lokal katalog eller webbplats som du kan verifiera på **[!UICONTROL Source]** fliken.
+Dessa bilder kommer från en lokal katalog eller webbplats som du kan verifiera på fliken **[!UICONTROL Source]**.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
-Klicka på **[!UICONTROL Tracking & Images]** ikonen och sedan på **[!UICONTROL Images]** fliken för att börja identifiera bilderna i meddelandet.
+Klicka på ikonen **[!UICONTROL Tracking & Images]** och sedan på fliken **[!UICONTROL Images]** för att börja identifiera bilder i meddelandet.
 
 För varje bild som identifieras kan du visa dess status:
 
-* Om en bild lagras lokalt eller finns på en annan server identifieras den som **[!UICONTROL Not yet online]**, även om den är synlig från utsidan (till exempel på en webbplats).
+* Om en bild lagras lokalt eller finns på en annan server identifieras den som **[!UICONTROL Not yet online]** även om den här servern är synlig från utsidan (till exempel på en webbplats).
 * Bilderna identifieras som **[!UICONTROL Already online]** om de överfördes tidigare när en annan leverans skapades.
-* I distributionsguiden kan du definiera URL:er för vilka bildidentifiering inte är aktiverat: de här bilderna kommer att överföras **[!UICONTROL Skipped]**.
+* I distributionsguiden kan du definiera URL:er för vilka bildidentifiering inte är aktiverat: vid överföring av dessa bilder är **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >
@@ -241,7 +241,7 @@ För varje bild som identifieras kan du visa dess status:
 
 Under analysfasen överförs bilderna automatiskt till servern så att de är åtkomliga från utsidan, med undantag för de lokala bilderna som måste överföras i förväg.
 
-Du kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe Campaign-operatörer. Detta kan vara användbart om du arbetar tillsammans. Det gör du genom **[!UICONTROL Upload the images straightaway...]** att klicka för att överföra bilderna till servern.
+Du kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe Campaign-operatörer. Detta kan vara användbart om du arbetar tillsammans. Om du vill göra det klickar du på **[!UICONTROL Upload the images straightaway...]** för att överföra bilderna till servern.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -253,7 +253,7 @@ När bilderna är online kan du visa ändringar i namn och sökvägar på fliken
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
-Om du väljer **[!UICONTROL Include the images in the email]** det här alternativet kan du välja vilka bilder som ska tas med i motsvarande kolumn.
+Om du väljer **[!UICONTROL Include the images in the email]** kan du välja vilka bilder som ska inkluderas i motsvarande kolumn.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
@@ -296,25 +296,25 @@ Konfigurera sedan följande element efter dina behov:
       ![](assets/barcode_insert_12.png)
 
 1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: Om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
-1. I **[!UICONTROL Value]** fältet kan du definiera streckkodens värde. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
+1. I fältet **[!UICONTROL Value]** kan du definiera värdet för streckkoden. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
 
-   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på personaliseringsknappen till höger om **[!UICONTROL Value]** fältet och väljer **[!UICONTROL Recipient > Account number]**.
+   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på personaliseringsknappen till höger om fältet **[!UICONTROL Value]** och väljer **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. I **[!UICONTROL Height]** fältet kan du konfigurera höjden på streckkoden utan att ändra bredden, genom att ändra avståndet mellan varje stapel.
+1. I fältet **[!UICONTROL Height]** kan du konfigurera höjden på streckkoden utan att ändra bredden, genom att ändra avståndet mellan varje fält.
 
-   Det finns ingen begränsande inmatningskontroll beroende på streckkodstypen. Om ett streckkodsvärde är felaktigt visas det bara i **förhandsvisningsläget** där streckkoden stryks över med rött.
+   Det finns ingen begränsande inmatningskontroll beroende på streckkodstypen. Om ett streckkodsvärde är felaktigt visas det bara i läget **Förhandsgranska** där streckkoden stryks över med rött.
 
    >[!NOTE]
    >
    >Vilket värde som tilldelas en streckkod beror på dess typ. En EAN-8-typ ska till exempel ha exakt 8 siffror.
    >
-   >Med personaliseringsknappen till höger om **[!UICONTROL Value]** fältet kan du lägga till data utöver själva värdet. Detta förbättrar streckkoden, förutsatt att den accepteras av streckkodsstandarden.
+   >Med personaliseringsknappen till höger om fältet **[!UICONTROL Value]** kan du lägga till data utöver själva värdet. Detta förbättrar streckkoden, förutsatt att den accepteras av streckkodsstandarden.
    >
-   >Om du t.ex. använder en GS1-128-typstreckkod och vill ange kontonumret för en mottagare utöver värdet, klickar du på personaliseringsknappen och väljer **[!UICONTROL Recipient > Account number]**. Om kontonumret för den valda mottagaren anges korrekt kommer streckkoden att ta hänsyn till det.
+   >Om du till exempel använder en GS1-128-typstreckkod och vill ange kontonumret för en mottagare utöver värdet, klickar du på personaliseringsknappen och väljer **[!UICONTROL Recipient > Account number]**. Om kontonumret för den valda mottagaren anges korrekt kommer streckkoden att ta hänsyn till det.
 
-När dessa element har konfigurerats kan du slutföra e-postmeddelandet och skicka det. För att undvika fel ska du alltid se till att innehållet visas korrekt innan du utför en leverans genom att klicka på **[!UICONTROL Preview]** fliken.
+När dessa element har konfigurerats kan du slutföra e-postmeddelandet och skicka det. För att undvika fel ska du alltid se till att ditt innehåll visas korrekt innan du utför en leverans genom att klicka på fliken **[!UICONTROL Preview]**.
 
 ![](assets/barcode_insert_10.png)
 
@@ -334,9 +334,9 @@ För att mottagaren ska kunna ta emot meddelanden i något av dessa format rekom
 
 ![](assets/deco-mail_03.png)
 
-Om du låter **[!UICONTROL Email format]** alternativet vara **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** identifieras (när du skickar e-postmeddelandet) det japanska format som ska användas så att meddelandet visas korrekt.
+Om du låter alternativet **[!UICONTROL Email format]** vara **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** identifierar Adobe Campaign automatiskt (när du skickar e-postmeddelandet) det japanska formatet som ska användas så att meddelandet visas korrekt.
 
-Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definieras i **[!UICONTROL Management of Email Formats]** postregeluppsättningen. For more on managing email formats, refer to [this page](../../installation/using/email-deliverability.md#managing-email-formats).
+Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definieras i **[!UICONTROL Management of Email Formats]**-postregeluppsättningen. Mer information om hur du hanterar e-postformat finns på [den här sidan](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ### Begränsningar och rekommendationer {#limitations-and-recommendations}
 
@@ -361,13 +361,13 @@ Därför måste du:
 
 ### Testa e-postinnehållet {#testing-the-email-content}
 
-#### Previewing the message {#previewing-the-message}
+#### Förhandsgranska meddelandet {#previewing-the-message}
 
 Med Adobe Campaign kan du kontrollera att meddelandeformatet är anpassat för att skickas till en japansk mobiltelefon.
 
 När du har definierat innehållet och angett ämnet för e-postmeddelandet kan du kontrollera visningen och formateringen när meddelandet skapas.
 
-På fliken **[!UICONTROL Preview]** i fönstret för innehållsredigering kan du klicka **[!UICONTROL More... > Deco-mail diagnostic]** för att:
+På fliken **[!UICONTROL Preview]** i fönstret för innehållsredigering kan du klicka på **[!UICONTROL More... > Deco-mail diagnostic]** för att:
 
 * Kontrollera att HTML-innehållstaggarna följer de japanska formatbegränsningarna
 * Kontrollera att antalet bilder i meddelandet inte överstiger gränsen för formatet (20 bilder)
@@ -377,19 +377,19 @@ På fliken **[!UICONTROL Preview]** i fönstret för innehållsredigering kan du
 
 #### Kör typologiregel {#running-typology-rule}
 
-Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar ett bevis eller en leverans: en specifik typologiregel **[!UICONTROL Deco-mail check]** startas under analysen.
+Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar ett bevis eller en leverans: en specifik typologiregel, **[!UICONTROL Deco-mail check]**, startas under analysen.
 
 >[!IMPORTANT]
 >
->Den här typologiregeln körs bara om minst en av mottagarna har konfigurerats att ta emot e-post i **[!UICONTROL Deco-mail (DoCoMo)]****[!UICONTROL Decore Mail (Softbank)]** eller **[!UICONTROL Decoration Mail (KDDI AU)]** format.
+>Den här typologiregeln körs bara om minst en av mottagarna har konfigurerats att ta emot e-post i formatet **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** eller **[!UICONTROL Decoration Mail (KDDI AU)]**.
 
-Med den här typologiregeln kan du se till att leveransen uppfyller de [formatbegränsningar](#limitations-and-recommendations) som definieras av de japanska operatorerna, särskilt i förhållande till den totala storleken på e-postmeddelandet, storleken på HTML- och textavsnitten, antalet bilder i meddelandena och taggarna i HTML-innehållet.
+Med den här typologiregeln kan du se till att leveransen respekterar de [formatbegränsningar](#limitations-and-recommendations) som definieras av de japanska operatorerna, särskilt i relation till den totala storleken på e-postmeddelandet, storleken på HTML- och textavsnitten, antalet bilder i meddelandena samt taggarna i HTML-innehållet.
 
 #### Skicka korrektur {#sending-proofs}
 
 Du kan skicka korrektur för att testa leveransen. När du skickar korrekturet anger du adresser som motsvarar e-postformatet för den profil som används, om du använder ersättningsadresser.
 
-Du kan till exempel ersätta en profils adress med test@softbank.ne.jp om e-postformatet för profilen har definierats i förväg **[!UICONTROL Decore Mail (Softbank)]**.
+Du kan till exempel ersätta en profils adress med test@softbank.ne.jp om e-postformatet för den här profilen har definierats i förväg på **[!UICONTROL Decore Mail (Softbank)]**.
 
 ![](assets/deco-mail_05.png)
 
@@ -398,13 +398,13 @@ Du kan till exempel ersätta en profils adress med test@softbank.ne.jp om e-post
 Om du vill skicka ett e-postmeddelande till mottagare med japanska e-postformat med Campaign kan du välja mellan två alternativ:
 
 * Skapa två leveranser: en enbart för japanska mottagare och en annan för andra mottagare - se [det här avsnittet](#designing-a-specific-delivery-for-japanese-formats).
-* Skapa en enstaka leverans så identifierar Adobe Campaign automatiskt vilket format som ska användas - se [det här avsnittet](#designing-a-delivery-for-all-formats).
+* Skapa en enskild leverans så identifierar Adobe Campaign automatiskt vilket format som ska användas - se [det här avsnittet](#designing-a-delivery-for-all-formats).
 
 #### Designa en specifik leverans för japanska format {#designing-a-specific-delivery-for-japanese-formats}
 
 Du kan skapa ett arbetsflöde som innehåller två leveranser: en som ska läsas på japanska mobiler och en annan för mottagare med ett standardformat för e-post.
 
-Det gör du genom att använda **[!UICONTROL Split]** aktiviteten i arbetsflödet och definiera de japanska e-postformaten (Deco-mail, Decoration Mail och Decore Mail) som filtreringsvillkor.
+Det gör du genom att använda aktiviteten **[!UICONTROL Split]** i arbetsflödet och definiera de japanska e-postformaten (Deco-mail, Decoration Mail och Decore Mail) som filtreringsvillkor.
 
 ![](assets/deco-mail_08.png)
 
@@ -412,10 +412,10 @@ Det gör du genom att använda **[!UICONTROL Split]** aktiviteten i arbetsflöde
 
 #### Designa en leverans för alla format {#designing-a-delivery-for-all-formats}
 
-När Adobe Campaign dynamiskt hanterar formaten enligt domänen (profiler med e-postformat definierade som **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** ), kan du skicka samma leverans till alla mottagare.
+När Adobe Campaign dynamiskt hanterar formaten enligt domänen (profiler med e-postformat som är definierade som **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** ) kan du skicka samma leverans till alla dina mottagare.
 
 Meddelandekontakten visas korrekt för användare på japanska mobiler, precis som för standardmottagare.
 
 >[!IMPORTANT]
 >
->Se till att du respekterar de specialfunktioner som är associerade med alla japanska e-postformat (Deco-mail, Decoration Mail och Decore Mail). For more information on limitations, refer to [this section](#limitations-and-recommendations).
+>Se till att du respekterar de specialfunktioner som är associerade med alla japanska e-postformat (Deco-mail, Decoration Mail och Decore Mail). Mer information om begränsningar finns i [det här avsnittet](#limitations-and-recommendations).
