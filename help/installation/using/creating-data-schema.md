@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Så här skapar du ett schema i en extern databas:
 
-1. Klicka på **[!UICONTROL New]** knappen ovanför listan med datamodeller och välj **[!UICONTROL Access external data]**.
+1. Klicka på knappen **[!UICONTROL New]** ovanför listan med datamappningar och välj **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
@@ -27,9 +27,9 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Bekräfta genom **[!UICONTROL OK]** att klicka. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
+1. Bekräfta genom att klicka på **[!UICONTROL OK]**. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta skapandet.
+1. Bekräfta skapandet genom att klicka på **[!UICONTROL Save]**.
 
    >[!CAUTION]
    >
