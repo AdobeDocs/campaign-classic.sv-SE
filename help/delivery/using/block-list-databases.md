@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Blockeringslista-databaser{#denylist-databases}
+# Blocklist databaser{#denylist-databases}
 
 Flera organisationer har databaser med IP-adresser och domäner som används av skräppost. Att konsultera dessa webbplatser kan vara användbart för att förstå varför vissa meddelanden avvisades som skräppost. Det är i allmänhet möjligt att begära att en adress som felaktigt lagts till i dessa listor tas bort.
 
@@ -25,7 +25,7 @@ Dessa databaser kallas för RBL (BlackHill Lists i realtid) och söks igenom via
 * Efter avsändardomän: listar avsändardomäner (den fullständiga domänen för den studsande e-postadressen) som skickar skräppost eller felaktigt konfigurerad.
 * Efter webbdomän: listar de domäner (högnivådomäner som är registrerade hos registratorerna) som finns i URL:erna för länkarna och bilderna i skräppostinnehållet. I Adobe Campaign är den domän som ska beaktas vanligtvis den adress som används för spårning.
 
-Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns på [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns i [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
 * **Spamhaus**
 
