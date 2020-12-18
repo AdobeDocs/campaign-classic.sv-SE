@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Rapportera bästa praxis{#best-practices-reporting}
 
-## Analysera behov{#analyzing-needs}
+## Analyserar behov{#analyzing-needs}
 
 Användningen av ett rapporteringsverktyg beror på mängden data som ska ändras, dess komplexitet och på vilken typ av rapportering som ska skapas.
 
@@ -35,7 +35,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
    * Lägg till indikatorer i en befintlig rapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visa data i databasen. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
    * Skapa en ny leveransrapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet)](../../workflow/using/about-workflows.md)
+   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet](../../workflow/using/about-workflows.md)
    * Skapa en pivottabell. Läs mer [i det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Utforska aggregerade data. Läs mer [i det här avsnittet](../../reporting/using/about-cubes.md)
    * Använd en guide för att analysera data. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
@@ -102,7 +102,7 @@ Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
    Om du snabbt vill hitta ett indexerat fält ska du titta på namnet på kolumnen i Adobe Campaign-gränssnittet: sorteringspilen stryks under med rött om fältet är indexerat.
 
-   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+   Mer information om index finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#indexes).
 
 * Se till att rapporten är skalbar: datavolymen kan öka betydligt med tiden.
 
@@ -112,6 +112,6 @@ Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
    Mer information om rensning och datalagring finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Exportera rapporter {#exporting-reports}
+### Exporterar rapporter {#exporting-reports}
 
 Recommendations som är specifikt för att exportera rapporter beskrivs i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).
