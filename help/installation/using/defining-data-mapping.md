@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -35,12 +35,12 @@ Gör så här:
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   Du kan välja att lagra undantag (**exkluderande**), med meddelanden (**utsändning**) eller i en separat tabell.
+   Du kan välja om undantag ska lagras (**excludelog**), med meddelanden (**broadlog**) eller i en separat tabell.
 
-   Du kan också välja om du vill hantera spårning för den här leveranskartan (**spårningslogg**).
+   Du kan också välja om spårning ska hanteras för den här leveransmappningen (**spårningslogg**).
 
 1. Välj sedan de tillägg som ska beaktas. Tilläggstypen beror på plattformens parametrar och alternativ (se licensavtalet).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicka på **[!UICONTROL Save]** knappen för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
+   Klicka på knappen **[!UICONTROL Save]** för att starta skapandet av leveransmappningen: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
