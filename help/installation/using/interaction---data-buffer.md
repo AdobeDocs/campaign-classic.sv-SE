@@ -19,15 +19,15 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller på [den här sidan](../../installation/using/capability-matrix.md).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
 
-I Adobe Campaign har en **databuffertzon** lagts till i interaktionsmodulen. På så sätt kan du **öka prestanda** för inkommande interaktion genom att avsynkronisera lager och erbjuda beräkningar.
+I Adobe Campaign har en **databuffertzon** introducerats i interaktionsmodulen. På så sätt kan du **öka prestanda** för inkommande interaktion genom att avsynkronisera lager och erbjuda beräkningar.
 
 Det gäller bara inkommande interaktion, antingen via ett anrop (med eller utan anropsdata) eller via en statusuppdatering (updateStatus).
 
-För att undvika en kö när du skriver offerter för en mottagare, genererar en ny w-process en **databuffertzon** som tillåter att förslag **skrivs asynkront**. Den här databuffertzonen läses och töms regelbundet. Standardperioden är ungefär en sekund. Därför grupperas förslagsskrivning.
+För att undvika en kö när du skriver offerter för en mottagare, genererar en ny w-process en **databuffertzon** som tillåter att offerter skrivs **asynkront**. Den här databuffertzonen läses och töms regelbundet. Standardperioden är ungefär en sekund. Därför grupperas förslagsskrivning.
 
-Du kan **konfigurera** en databuffertzon i instansens konfigurationsfil (config-Instance.xml).
+Databuffertzonen **konfiguration** kan göras i instansens konfigurationsfil (config-Instance.xml).
 
 >[!NOTE]
 >
