@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Enkel metod {#simple-method}
 
-Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga en **`<img>`** HTML-tagg i HTML-källkoden för den webbsida som du vill spåra.
+Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga HTML-taggen **`<img>`** i HTML-källkoden för den webbsida som du vill spåra.
 
 >[!IMPORTANT]
 >
