@@ -17,12 +17,12 @@ ht-degree: 3%
 
 # Skapa meddelandeinnehåll{#creating-message-content}
 
-Definitionen av transaktionens meddelandeinnehåll är densamma som för vanliga leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML- eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information finns i kapitlet om [e-postleverans](../../delivery/using/about-email-channel.md).
+Definitionen av transaktionens meddelandeinnehåll är densamma som för vanliga leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML- eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information finns i kapitlet [E-postleverans](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
 >Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
->Till skillnad från i JSSP och webApp `<%=` finns ingen standardflytning.
+>Till skillnad från i JSSP och webApp har `<%=` ingen standardflytning.
 >
 >I det här fallet måste du undvika alla data som kommer från händelsen på rätt sätt. Detta beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML-koden kan du använda escapeXMLString.
 
@@ -37,7 +37,7 @@ Gör så här om du vill infoga personaliseringstaggar i brödtexten i ett e-pos
 
 1. Klicka på fliken som matchar e-postformatet (HTML eller text) i meddelandemallen.
 1. Ange meddelandets brödtext.
-1. Infoga taggen med hjälp av **[!UICONTROL Real time events>Event XML]** menyerna i texten.
+1. Infoga taggen med hjälp av menyerna **[!UICONTROL Real time events>Event XML]** i texten.
 
    ![](assets/messagecenter_create_custo_002.png)
 
