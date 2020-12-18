@@ -10,16 +10,16 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Setting up marketing campaigns{#setting-up-marketing-campaigns}
+# Konfigurera marknadsföringskampanjer{#setting-up-marketing-campaigns}
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
-![](assets/do-not-localize/how-to-video.png) Upptäck hur du skapar en marknadsföringsplan, ett program och en kampanj [i en video](#video)
+![](assets/do-not-localize/how-to-video.png) Upptäck hur du skapar en marknadsföringsplan, ett program och en kampanj  [i en video](#video)
 
 Så här skapar du en marknadsföringskampanj:
 
@@ -29,7 +29,7 @@ Så här skapar du en marknadsföringskampanj:
 
 1. Definiera målpopulationer: skapa ett arbetsflöde med riktade frågor.
 
-   Se [Välja målpopulation](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+   Se [Markera målpopulationen](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
 1. Skapa leveranser: markera kanaler och definiera innehållet som ska skickas.
 
@@ -37,7 +37,7 @@ Så här skapar du en marknadsföringskampanj:
 
 1. Godkänn leveranser.
 
-   Se [godkännandeprocessen](../../campaign/using/marketing-campaign-approval.md#approval-process).
+   Se [Godkännandeprocess](../../campaign/using/marketing-campaign-approval.md#approval-process).
 
 1. Övervaka leveranser.
 
@@ -47,9 +47,9 @@ Så här skapar du en marknadsföringskampanj:
 
    Se [Skapa tjänsteleverantörer och deras kostnadsstrukturer](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-När dessa steg har slutförts kan du starta leveranserna (se [Påbörja en leverans](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), kontrollera data, processer och information som rör leveranserna och, om det behövs, hantera tillhörande dokument (se [Hantera associerade dokument](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Du kan också spåra körningen av processerna för kampanjer och leveranser (se [Spärra/knip](../../campaign/using/marketing-campaign-monitoring.md)).
+När dessa steg har slutförts kan du starta leveranserna (se [Starta en leverans](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), kontrollera data, processer och information som hör till leveranserna och, om det behövs, hantera tillhörande dokument (se [Hantera associerade dokument](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Du kan också spåra körningen av processerna för kampanjer och leveranser (se [Spåra](../../campaign/using/marketing-campaign-monitoring.md)).
 
-## Skapa plan- och programhierarki {#creating-plan-and-program-hierarchy}
+## Skapar plan- och programhierarki {#creating-plan-and-program-hierarchy}
 
 Så här konfigurerar du din mapphierarki för marknadsföringsplaner och program:
 
@@ -64,7 +64,7 @@ Så här konfigurerar du din mapphierarki för marknadsföringsplaner och progra
 
    ![](assets/create_plan_2.png)
 
-1. På fliken **Allmänt** ändrar du det **interna namnet** för att undvika dubbletter under paketexporter.
+1. På fliken **Allmänt** ändrar du **Internt namn** för att undvika dubbletter under paketexporter.
 1. Klicka på **Spara**.
 1. Högerklicka på den nya planen och välj **Skapa en ny programmapp**.
 1. Upprepa stegen ovan för att byta namn på den nya programmappen och dess interna namn.
@@ -73,29 +73,29 @@ Så här konfigurerar du din mapphierarki för marknadsföringsplaner och progra
 
 ### Lägga till en kampanj {#adding-a-campaign}
 
-Du kan skapa en kampanj via listan med kampanjer. Om du vill visa den här vyn väljer du **[!UICONTROL Campaigns]** menyn på **[!UICONTROL Campaigns]** kontrollpanelen.
+Du kan skapa en kampanj via listan med kampanjer. Om du vill visa den här vyn väljer du menyn **[!UICONTROL Campaigns]** på kontrollpanelen **[!UICONTROL Campaigns]**.
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
-I **[!UICONTROL Program]** fältet kan du välja det program som kampanjen ska kopplas till. Denna information är obligatorisk.
+I fältet **[!UICONTROL Program]** kan du välja det program som kampanjen ska kopplas till. Denna information är obligatorisk.
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-Kampanjer kan också skapas via ett program. Det gör du genom att klicka på **[!UICONTROL Add]** knappen på fliken **[!UICONTROL Schedule]** i det aktuella programmet.
+Kampanjer kan också skapas via ett program. Det gör du genom att klicka på knappen **[!UICONTROL Add]** på fliken **[!UICONTROL Schedule]** i det aktuella programmet.
 
 ![](assets/s_ncs_user_add_an_op.png)
 
-När du skapar en kampanj via fliken **[!UICONTROL Schedule]** i ett program länkas kampanjen automatiskt till det aktuella programmet. I det här fallet är **[!UICONTROL Program]** fältet dolt.
+När du skapar en kampanj via fliken **[!UICONTROL Schedule]** i ett program länkas kampanjen automatiskt till det aktuella programmet. Fältet **[!UICONTROL Program]** är dolt i det här fallet.
 
 Välj kampanjmallen och lägg till ett namn och en beskrivning av kampanjen i fönstret där kampanjen skapades. Du kan också ange kampanjens start- och slutdatum.
 
-Klicka **[!UICONTROL OK]** för att skapa kampanjen. Den läggs till i programschemat.
+Klicka på **[!UICONTROL OK]** för att skapa kampanjen. Den läggs till i programschemat.
 
 ![](assets/s_ncs_user_program_planning_with_op.png)
 
 >[!NOTE]
 >
->Om du vill filtrera kampanjer som ska visas klickar du på **[!UICONTROL Filter]** länken och väljer status för de kampanjer som ska visas.
+>Om du vill filtrera kampanjer som ska visas klickar du på länken **[!UICONTROL Filter]** och väljer status för de kampanjer som ska visas.
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
@@ -115,13 +115,13 @@ En återkommande kampanj är en kampanj som baseras på en viss mall vars arbets
 
 En periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körningsschemat i sin mall.
 
-### Creating a recurring campaign {#creating-a-recurring-campaign}
+### Skapa en återkommande kampanj {#creating-a-recurring-campaign}
 
 Återkommande kampanjer skapas från en specifik mall som definierar den arbetsflödesmall som ska köras och körningsschemat.
 
 #### Skapa en mall för återkommande kampanjer {#creating-the-campaign-template}
 
-1. Skapa en **[!UICONTROL Recurring]** kampanjmall.
+1. Skapa en **[!UICONTROL Recurring]**-kampanjmall.
 
    >[!NOTE]
    >
@@ -133,24 +133,24 @@ En periodisk kampanj är en kampanj som skapas automatiskt i enlighet med körni
 
    ![](assets/s_ncs_user_op_template_recur_duplicate.png)
 
-1. För den här typen av kampanj läggs en flik till för att skapa ett mallkörningsschema **[!UICONTROL Schedule]** .
+1. För den här kampanjtypen läggs en **[!UICONTROL Schedule]**-flik till för att skapa mallkörningsschemat.
 
 På den här fliken anger du planerade körningsdatum för kampanjer som är baserade på den här mallen.
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-Körningsschemats konfigurationsläge sammanfaller med arbetsflödets **[!UICONTROL Scheduler]** objekt. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md).
+Konfigurationsläget för körningsschemat sammanfaller med **[!UICONTROL Scheduler]**-objektet för arbetsflödet. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
 >Konfigurationen av körningsschemat måste utföras noggrant för att undvika överbelastning av databasen. Återkommande kampanjer duplicerar arbetsflödet eller arbetsflödena i mallen beroende på angivet schema. Implementeringen av alltför ofta förekommande arbetsflöden kan hindra databasens funktion.
 
-1. Ange ett värde i **[!UICONTROL Create in advance for]** fältet för att skapa motsvarande arbetsflöden för den angivna perioden.
+1. Ange ett värde i fältet **[!UICONTROL Create in advance for]** för att skapa motsvarande arbetsflöden för den angivna perioden.
 1. Skapa arbetsflödesmallen som ska användas i kampanjer baserade på den här mallen, med målparametrar och en eller flera generiska leveranser.
 
    >[!NOTE]
    >
-   >Det här arbetsflödet måste sparas som en mall för återkommande arbetsflöde. Det gör du genom att redigera arbetsflödesegenskaperna och välja **[!UICONTROL Recurring workflow template]** alternativet på **[!UICONTROL Execution]** fliken.
+   >Det här arbetsflödet måste sparas som en mall för återkommande arbetsflöde. Om du vill göra det redigerar du arbetsflödesegenskaperna och väljer alternativet **[!UICONTROL Recurring workflow template]** på fliken **[!UICONTROL Execution]**.
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -170,9 +170,9 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
    * **[!UICONTROL To be approved]** : gör att du kan framtvinga begäranden om leveransgodkännande i arbetsflödet.
    * **[!UICONTROL To be started]** : Med kan du starta arbetsflödet när startdatumet har nåtts.
 
-   I **[!UICONTROL Create in advance for]** fältet kan du skapa alla arbetsflöden som täcker den angivna perioden.
+   I fältet **[!UICONTROL Create in advance for]** kan du skapa alla arbetsflöden som täcker den angivna perioden.
 
-   När arbetsflödet körs skapas de dedikerade arbetsflödena baserat på de förekomster som definieras i kampanjschemat. **[!UICONTROL Jobs on campaigns]** Ett arbetsflöde skapas alltså för varje körningsdatum.
+   När arbetsflödet **[!UICONTROL Jobs on campaigns]** körs skapas de dedikerade arbetsflödena baserat på de förekomster som definierats i kampanjschemat. Ett arbetsflöde skapas alltså för varje körningsdatum.
 
 1. Återkommande arbetsflöden skapas automatiskt från arbetsflödesmallen som finns i kampanjen. De visas på fliken **[!UICONTROL Targeting and workflows]** i kampanjen.
 
@@ -180,7 +180,7 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
 
    Etiketten för en återkommande arbetsflödesinstans består av malletiketten och arbetsflödesnumret, med tecknet # däremellan.
 
-   Arbetsflöden som skapas från schemat kopplas automatiskt till det i **[!UICONTROL Workflow]** kolumnen på **[!UICONTROL Schedule]** fliken.
+   Arbetsflöden som skapas från schemat associeras automatiskt med det i kolumnen **[!UICONTROL Workflow]** på fliken **[!UICONTROL Schedule]**.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
@@ -193,13 +193,13 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
    >Startdatumet för den schemarad som är associerad med arbetsflödet är tillgängligt från en variabel i arbetsflödet med följande syntax:\
    >`$date(instance/vars/@startPlanningDate)`
 
-### Creating a periodic campaign {#creating-a-periodic-campaign}
+### Skapa en periodisk kampanj {#creating-a-periodic-campaign}
 
 En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du kan skapa kampanjinstanser baserat på ett körschema. Kampanjinstanser skapas automatiskt baserat på en mall för periodiska kampanjer, beroende på den frekvens som definieras i mallschemat.
 
-#### Skapa kampanjmallen {#creating-the-campaign-template-1}
+#### Skapar kampanjmallen {#creating-the-campaign-template-1}
 
-1. Skapa en **[!UICONTROL Periodic]** kampanjmall, helst genom att duplicera en befintlig kampanjmall.
+1. Skapa en **[!UICONTROL Periodic]**-kampanjmall, helst genom att duplicera en befintlig kampanjmall.
 
    ![](assets/s_ncs_user_op_template_period_create.png)
 
@@ -217,7 +217,7 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
    >
    >Det här arbetsflödet är en arbetsflödesmall. Den kan inte köras från kampanjmallen.
 
-1. Slutför körningsschemat som för en mall för återkommande kampanjer: klicka på **[!UICONTROL Add]** knappen och definiera start- och slutdatum, eller fyll i körningsschemat via länken.
+1. Slutför körningsschemat som för en mall för återkommande kampanjer: klicka på knappen **[!UICONTROL Add]** och definiera start- och slutdatum, eller fyll i körningsschemat via länken.
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
@@ -233,10 +233,10 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
 
 Varje periodisk kampanj innehåller samma element. När den väl har skapats hanteras den som en standardkampanj.
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
