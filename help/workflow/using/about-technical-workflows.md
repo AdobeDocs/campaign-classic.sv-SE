@@ -21,9 +21,9 @@ De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggd
 
 >[!NOTE]
 >
->Tekniska arbetsflöden som är relaterade till meddelandecentermodulen är som standard tillgängliga i **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** -noden.
+>Tekniska arbetsflöden som är relaterade till meddelandecentermodulen är som standard tillgängliga i noden **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
 
-Mer information om hur du övervakar tekniska arbetsflöden finns i det [dedikerade avsnittet](../../workflow/using/monitoring-technical-workflows.md).
+Mer information om hur du övervakar tekniska arbetsflöden finns i [det dedikerade avsnittet](../../workflow/using/monitoring-technical-workflows.md).
 
 Detta avsnitt innehåller information om tekniska arbetsflöden som omfattar följande paket:
 
