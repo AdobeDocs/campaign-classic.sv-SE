@@ -38,7 +38,7 @@ De viktigaste förbättringarna i den här versionen är följande:
    * **Studsfrekvens**: antal personer som endast visade det första steget
    * **Konverteringstratt**: förlustnivå mellan varje steg.
 
-   Dessutom visar ett **sektortypdiagram** populationen utifrån dess källa.
+   Dessutom visar ett **sektordiagram** populationen utifrån dess källa.
 
 ## Identifiera trafikkällan {#identifying-the-traffic-source}
 
@@ -59,11 +59,11 @@ För att identifiera trafikkällan i ett webbprogram söker Adobe Campaign efter
 >
 >Kom ihåg att anonym spårning bara är möjligt om motsvarande alternativ har aktiverats i distributionsguiden.
 >
->For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
+>Mer information finns i [Installationsguiden](../../installation/using/deploying-an-instance.md).
 
 ## Webbprogram utformade med DCE (Digital Content Editor) {#web-applications-designed-with-digital-content-editor--dce-}
 
-När ett webbprogram skapas med HTML-redigeraren - **Digital Content Editor (DCE)** infogas spårningstaggar på **[!UICONTROL Properties]** fliken i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](../../web/using/about-campaign-html-editor.md).
+När ett webbprogram skapas med HTML-redigeraren - **Digital Content Editor (DCE)** - infogas spårningstaggar från fliken **[!UICONTROL Properties]** i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](../../web/using/about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -71,7 +71,7 @@ När du använder webbgränssnittet måste spårningstaggar infogas från sidege
 
 ![](assets/trackers_3.png)
 
-Med **[!UICONTROL Display blocks]** ikonen kan du visa antalet spårningstaggar som har definierats för sidan.
+Med ikonen **[!UICONTROL Display blocks]** kan du visa antalet spårningstaggar som har definierats för sidan.
 
 ![](assets/trackers_4.png)
 
