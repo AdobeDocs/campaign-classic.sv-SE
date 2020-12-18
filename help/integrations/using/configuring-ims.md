@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Configuring IMS{#configuring-ims}
+# Konfigurerar IMS{#configuring-ims}
 
 ## Förutsättningar {#prerequisites}
 
@@ -28,19 +28,19 @@ Så här använder du integreringen med IMS:
 >
 >Se till att dina användare är länkade till de Adobe Experience Cloud-grupper som ska synkroniseras med Adobe Campaign. Se [Konfigurera det externa kontot](#configuring-the-external-account).
 
-## Konsolen uppdateras {#updating-the-console}
+## Konsolen {#updating-the-console} uppdateras
 
 Om du vill använda den här funktionen måste du installera den senaste versionen av konsolen.
 
 ## Installera paketet {#installing-the-package}
 
-Du måste installera **[!UICONTROL Integration with the Adobe Experience Cloud]** paketet. Att installera ett integrationspaket är detsamma som att installera ett standardpaket, som beskrivs på [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+Du måste installera **[!UICONTROL Integration with the Adobe Experience Cloud]**-paketet. Att installera ett integrationspaket är detsamma som att installera ett standardpaket, vilket beskrivs i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
-## Konfigurera det externa kontot {#configuring-the-external-account}
+## Konfigurerar det externa kontot {#configuring-the-external-account}
 
-Konfigurera **Adobe Experience Cloud** externa konto i **[!UICONTROL Administration > Platform > External accounts]**.
+Konfigurera det externa kontot **Adobe Experience Cloud** i **[!UICONTROL Administration > Platform > External accounts]**.
 
 >[!CAUTION]
 >
@@ -50,11 +50,11 @@ Konfigurera **Adobe Experience Cloud** externa konto i **[!UICONTROL Administrat
 
 Ange följande information:
 
-* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe support. Mer information finns i [Frågor och svar för Adobe Experience Cloud-administratörer](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html).
+* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe support. Mer information finns i [Vanliga frågor och svar för Adobe Experience Cloud-administratörer](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html).
 
    Adressen **[!UICONTROL Callback server]** måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
 
-* IMS-organisations-ID: denna information finns tillgänglig på Experience Cloud (i **[!UICONTROL Administration > Experience Cloud Details]** ) och tillhandahålls när du ansluter till Adobe Experience Cloud första gången.
+* IMS-organisations-ID: den här informationen är tillgänglig på Experience Cloud (i **[!UICONTROL Administration > Experience Cloud Details]**) och tillhandahålls när du ansluter till Adobe Experience Cloud första gången.
 * Associationsmask: I det här fältet kan du definiera syntaxen som gör att konfigurationsnamnen i Enterprise Dashboard kan synkroniseras med grupperna i Adobe Campaign. Om du använder syntaxen&quot;Campaign - tenant_id - (.*)&quot; länkas säkerhetsgruppen som skapas i Adobe Campaign till konfigurationsnamnet Campaign - tenant_id - internal_name i Enterprise Dashboard.
 
    >[!CAUTION]
