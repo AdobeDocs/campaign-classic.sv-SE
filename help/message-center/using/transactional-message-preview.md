@@ -19,11 +19,11 @@ ht-degree: 16%
 
 När du har skapat en eller flera dirigerade adresser och meddelandetexten kan du förhandsgranska meddelandet och kontrollera dess personalisering.
 
-1. Klicka på **[!UICONTROL Preview]** fliken i meddelandemallen.
+1. Klicka på fliken **[!UICONTROL Preview]** i meddelandemallen.
 
    ![](assets/messagecenter_preview_001.png)
 
-1. Select **[!UICONTROL A seed address]** in the drop-down list.
+1. Välj **[!UICONTROL A seed address]** i listrutan.
 
    ![](assets/messagecenter_preview_002.png)
 
