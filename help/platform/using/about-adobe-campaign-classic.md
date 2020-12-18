@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
 
-# Get Started with Campaign Classic{#about-adobe-campaign-classic}
+# Kom igång med Campaign Classic{#about-adobe-campaign-classic}
 
 För att kunna leverera en hög grad av kundengagemang och fantastiska upplevelser måste varumärken skapa enhetliga kundupplevelser på alla kontaktytor. De som marknadsför kan nu effektivt utforma, planera, genomföra, hantera och optimera marknadsföringskampanjer över flera kanaler som ger hög avkastning på marknadsföringsinvesteringar och ökar lojaliteten.
 
@@ -23,7 +23,7 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 
 >[!NOTE]
 >
->Adobe Campaign Classic finns i version 6.11 och 7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Skärmbilderna återspeglar användargränssnittet i Campaign Classic version 7.
+>Adobe Campaign Classic finns i version 6.11 och 7. Förutom när det anges gäller hjälpmaterialet båda versionerna i den [senaste versionen](../../rn/using/latest-release.md). Skärmbilderna återspeglar användargränssnittet i Campaign Classic version 7.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
 
@@ -87,10 +87,10 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [Webbtjänster](../../configuration/using/about-web-services.md) – använd Campaign via API:er/webbtjänster,
 * [Rapportering](../../reporting/using/about-adobe-campaign-reporting-tools.md) – få tillgång till inbyggda rapporter, analysera data och utforma egna rapporter.
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 I den här videon visas huvudfunktionerna och funktionerna för Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Fler Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
