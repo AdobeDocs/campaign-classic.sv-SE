@@ -31,4 +31,4 @@ Du kan infoga flera start- och slutpunktshopp i samma arbetsflöde. De identifie
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Om du vill förbättra diagrammets läsbarhet kan du ändra bilden som är kopplad till hopp så att det relaterade numret visas. See [Managing activity images](../../workflow/using/managing-activity-images.md).
+Om du vill förbättra diagrammets läsbarhet kan du ändra bilden som är kopplad till hopp så att det relaterade numret visas. Se [Hantera aktivitetsbilder](../../workflow/using/managing-activity-images.md).
