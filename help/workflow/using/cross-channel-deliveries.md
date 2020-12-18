@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -36,12 +36,12 @@ Du kan ange ett mål för leveransen uppströms arbetsflödet med hjälp av olik
 Här skapar vi t.ex. ett arbetsflöde för att skicka ett e-postmeddelande eller ett SMS för prenumeranter på push-meddelanden, och sedan ett push-meddelande en vecka senare. Så här gör du:
 
 1. Skapa en kampanj.
-1. Lägg till en **[!UICONTROL Targeting and workflows]** funktion i arbetsflödet på fliken **[!UICONTROL Query]** i kampanjen.
+1. Lägg till en **[!UICONTROL Query]** i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen.
 1. Konfigurera frågan. Här väljer vi till exempel de mottagare som prenumererar på push-meddelanden som måldimension.
 
    >[!NOTE]
    >
-   >Kom ihåg att använda måldimensionen för **prenumerationsprogram** för push-meddelanden.
+   >Kom ihåg att använda måldimensionen **för prenumerationsprogram** för push-meddelanden.
 
    ![](assets/cross_channel_delivery_1.png)
 
@@ -49,17 +49,17 @@ Här skapar vi t.ex. ett arbetsflöde för att skicka ett e-postmeddelande eller
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. Lägg till en **[!UICONTROL Split]** aktivitet i arbetsflödet för att dela upp mottagare som har ett mobilnummer och de som har en e-postadress.
-1. Välj en leverans för varje mål på **[!UICONTROL Delivery]** fliken.
+1. Lägg till en **[!UICONTROL Split]**-aktivitet i arbetsflödet för att dela upp mottagare som har ett mobilnummer och de som har en e-postadress.
+1. Välj en leverans för varje mål på fliken **[!UICONTROL Delivery]**.
 
    Skapa leveransen på samma sätt som med en klassisk leveransguide genom att dubbelklicka på leveransaktiviteten i arbetsflödet. Se denna [sida](../../delivery/using/about-email-channel.md) för mer information om detta.
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. Lägg till och konfigurera en **[!UICONTROL Wait]** aktivitet för att mottagarna inte ska få för många leveranser samtidigt.
-1. Lägg till en **[!UICONTROL Split]** aktivitet för att dela upp prenumeranter på ett iOS- eller Android-mobilprogram.
+1. Lägg till och konfigurera en **[!UICONTROL Wait]**-aktivitet för att mottagarna inte ska få för många leveranser samtidigt.
+1. Lägg till en **[!UICONTROL Split]**-aktivitet för att dela upp prenumeranter på ett iOS- eller Android-mobilprogram.
 
-   Välj en tjänst för vart och ett av operativsystemen. For more on service creation, refer to this [page](../../delivery/using/configuring-the-mobile-application.md).
+   Välj en tjänst för vart och ett av operativsystemen. Mer information om hur du skapar tjänster finns på den här [sidan](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
