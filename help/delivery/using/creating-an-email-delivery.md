@@ -24,7 +24,7 @@ Följ stegen nedan för att skapa en ny e-postleverans:
 >Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
-1. Välj leveransmallen **E-postleverans (e-post)** eller en e-postleveransmall som du har skapat. For more on delivery templates, refer to [this section](../../delivery/using/about-templates.md).
+1. Välj leveransmallen **E-postleverans (e-post)** eller någon e-postleveransmall som du har skapat. Mer information om leveransmallar finns i [det här avsnittet](../../delivery/using/about-templates.md).
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
