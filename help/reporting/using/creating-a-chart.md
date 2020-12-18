@@ -21,7 +21,7 @@ Data i databasen kan också samlas in och visas i ett diagram. Adobe Campaign ha
 
 Diagram infogas direkt på en rapportsida via högerklicksmenyn eller verktygsfältet.
 
-## Skapa steg {#creation-steps}
+## Skapandesteg {#creation-steps}
 
 Så här skapar du ett diagram i en rapport:
 
@@ -33,15 +33,15 @@ Så här skapar du ett diagram i en rapport:
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. Klicka på **[!UICONTROL Data]** fliken för att definiera datakällan och serien som ska beräknas.
+1. Klicka på fliken **[!UICONTROL Data]** för att definiera datakällan och serien som ska beräknas.
 
-   Statistiken som ska visas i diagrammet kan beräknas baserat på en fråga eller kontextdata, dvs. data från den inkommande övergången på den aktuella sidan (mer information finns i [Använda kontextdata](../../reporting/using/using-the-context.md#using-context-data)).
+   Statistiken som ska visas i diagrammet kan beräknas utifrån en fråga eller kontextdata, dvs. data från den inkommande övergången på den aktuella sidan (mer information finns i [Använda kontextdata](../../reporting/using/using-the-context.md#using-context-data)).
 
-   * Klicka på **[!UICONTROL Filter data...]** länken för att definiera filtervillkor för data i databasen.
+   * Klicka på länken **[!UICONTROL Filter data...]** för att definiera filtervillkor för data i databasen.
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Om du vill använda sammanhangsberoende data markerar du det här alternativet och klickar på **[!UICONTROL Advanced settings...]** länken. Välj sedan de data som statistiken ska beröra.
+   * Om du vill använda sammanhangsberoende data markerar du det här alternativet och klickar på länken **[!UICONTROL Advanced settings...]**. Välj sedan de data som statistiken ska beröra.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -57,11 +57,11 @@ Diagramtypen väljs när den infogas på sidan.
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-Den kan också ändras via **[!UICONTROL Chart type]** flikavsnittet **[!UICONTROL General]** i diagrammet.
+Den kan också ändras via **[!UICONTROL Chart type]**-delen av fliken **[!UICONTROL General]** i diagrammet.
 
 ![](assets/reporting_change_graph_type.png)
 
-Varianterna beror på den markerade diagramtypen. De markeras via **[!UICONTROL Variants...]** länken.
+Varianterna beror på den markerade diagramtypen. De markeras via länken **[!UICONTROL Variants...]**.
 
 ### Uppdelning: cirkeldiagram {#breakdown--pie-charts}
 
@@ -71,7 +71,7 @@ Cirkeldiagram gör bara att du kan analysera en variabel.
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-Med den här **[!UICONTROL Variants]** länken kan du anpassa den övergripande återgivningen av diagrammet.
+Med länken **[!UICONTROL Variants]** kan du anpassa den övergripande återgivningen av diagrammet.
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -101,11 +101,11 @@ Med den här typen av grafisk representation kan du förstå hur ett eller flera
 
 Med hjälp av histogram kan du jämföra värden för en eller flera variabler.
 
-För den här typen av diagram finns följande alternativ i **[!UICONTROL Variants]** fönstret:
+För den här typen av diagram finns följande alternativ i **[!UICONTROL Variants]**-fönstret:
 
 ![](assets/reporting_select_graph_var.png)
 
-Markera **[!UICONTROL Display caption]** alternativet om du vill visa bildtexten med diagrammet och välja dess position:
+Markera alternativet **[!UICONTROL Display caption]** om du vill visa bildtexten med diagrammet och välja dess position:
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -113,7 +113,7 @@ När det är lämpligt kan du stapla värden tillsammans.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Om det behövs kan du invertera värdevisningssekvensen. To do this, select the **[!UICONTROL Reverse stacking]** option.
+Om det behövs kan du invertera värdevisningssekvensen. Om du vill göra det väljer du alternativet **[!UICONTROL Reverse stacking]**.
 
 ### Konvertering: tratt {#conversion--funnel}
 
@@ -131,23 +131,23 @@ Dessa element definieras när diagrammet konfigureras.
 
 * Fältet **[!UICONTROL Value]** representeras av en svart uppringning i diagrammet. Den representerar det element vars förlopp du vill beräkna. Värdet som ska representeras måste redan ha sparats för att kunna användas.
 * Fältet **[!UICONTROL Goal]** representerar det högsta värdet som ska uppnås.
-* Med hjälp av **[!UICONTROL Other mark]** fältet kan du lägga till en andra indikator i diagrammet.
-* I **[!UICONTROL Display range]** fälten kan du ange de värden mellan vilka rapporten beräknas.
-* I **[!UICONTROL Value ranges]** fältet kan du attribuera statusvärden (Ingen, Dålig, Godtagbar, Bra) till en uppsättning värden som bättre visar förloppet.
+* Med fältet **[!UICONTROL Other mark]** kan du lägga till en andra indikator i diagrammet.
+* I fälten **[!UICONTROL Display range]** kan du ange de värden mellan vilka rapporten beräknas.
+* I fältet **[!UICONTROL Value ranges]** kan du attribuera statusvärden (None, Bad, Acceptable, Good) till en uppsättning värden som bättre visar förloppet.
 
-I **[!UICONTROL Display settings]** avsnittet **[!UICONTROL Change appearance...]** kan du konfigurera hur diagrammet visas.
+I avsnittet **[!UICONTROL Display settings]** kan du med **[!UICONTROL Change appearance...]** konfigurera hur diagrammet visas.
 
 ![](assets/reporting_graph_type_gauge2.png)
 
-Med det här **[!UICONTROL Display the value below the gauge]** alternativet kan du visa värdeförloppet nedanför diagrammet.
+Med alternativet **[!UICONTROL Display the value below the gauge]** kan du visa värdeförloppet nedanför diagrammet.
 
-Med **[!UICONTROL Aperture ratio]** fältet, som måste vara mellan 0 och 1, kan du redigera rapportens bländare i en cirkel som är mer eller mindre fullständig. I exemplet ovan motsvarar värdet 0,50 en halvcirkel.
+Med fältet **[!UICONTROL Aperture ratio]**, som måste vara mellan 0 och 1, kan du redigera rapportens bländare i en cirkel som är mer eller mindre fullständig. I exemplet ovan motsvarar värdet 0,50 en halvcirkel.
 
-I **[!UICONTROL Width]** fältet kan du redigera diagramstorleken.
+I fältet **[!UICONTROL Width]** kan du redigera diagramstorleken.
 
 ## Interaktion med diagrammet {#interaction-with-the-chart}
 
-Du kan definiera en åtgärd när användaren klickar på diagrammet. Öppna **[!UICONTROL Interaction events]** fönstret och välj den åtgärd som du vill utföra.
+Du kan definiera en åtgärd när användaren klickar på diagrammet. Öppna fönstret **[!UICONTROL Interaction events]** och välj den åtgärd som du vill utföra.
 
 Möjliga interaktionstyper och deras konfigurationer beskrivs i [det här avsnittet](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
@@ -157,9 +157,9 @@ Möjliga interaktionstyper och deras konfigurationer beskrivs i [det här avsnit
 
 Med diagram kan du visa statistik om insamlade data.
 
-Statistiken definieras via **[!UICONTROL Series parameters]** avsnittet på **[!UICONTROL Data]** fliken.
+Statistiken definieras via **[!UICONTROL Series parameters]**-avsnittet på fliken **[!UICONTROL Data]**.
 
-Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** -ikonen och konfigurerar lämpligt fönster. De tillgängliga beräkningstyperna beskrivs nedan.
+Om du vill skapa en ny statistik klickar du på ikonen **[!UICONTROL Add]** och konfigurerar lämpligt fönster. De tillgängliga beräkningstyperna beskrivs nedan.
 
 ![](assets/reporting_add_statistics.png)
 
