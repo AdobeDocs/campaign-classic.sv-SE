@@ -30,19 +30,19 @@ I det här exemplet visas hur du snabbt skapar en enkel kub i en rapport för at
 
 Implementeringsstegen beskrivs nedan. Det finns omfattande alternativ och beskrivningar i de andra avsnitten i detta kapitel.
 
-## Markera arbetsregistret {#selecting-the-work-table}
+## Välja arbetstabell {#selecting-the-work-table}
 
-Om du vill skapa en kub klickar du på **[!UICONTROL New]** knappen ovanför listan med kuber.
+Om du vill skapa en kub klickar du på **[!UICONTROL New]** ovanför listan med kuber.
 
 ![](assets/s_advuser_cube_create.png)
 
-Välj faktchemat, d.v.s. schemat som innehåller elementen som du vill utforska. I det här exemplet ska vi välja **mottagartabellen** .
+Välj faktchemat, d.v.s. schemat som innehåller elementen som du vill utforska. I det här exemplet ska vi välja tabellen **Mottagare**.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
-Klicka **[!UICONTROL Save]** för att skapa kuben: visas i listan över kuber och kan sedan konfigureras med lämpliga flikar.
+Klicka på **[!UICONTROL Save]** för att skapa kuben: visas i listan över kuber och kan sedan konfigureras med lämpliga flikar.
 
-Klicka på **[!UICONTROL Filter the source data...]** länken om du vill använda beräkningar av den här kuben på ett dataurval i databasen.
+Klicka på länken **[!UICONTROL Filter the source data...]** för att använda beräkningar för den här kuben på ett dataurval i databasen.
 
 ![](assets/s_advuser_cube_wz_03.png)
 
@@ -52,19 +52,19 @@ Dimensioner sammanfaller med analysaxlar som definierats för varje kub baserat 
 
 Dessa analysaxlar definieras på fliken **[!UICONTROL Dimension]** i kuben.
 
-Klicka på **[!UICONTROL Add]** knappen för att skapa en ny dimension och klicka sedan på **[!UICONTROL Expression field]** ikonen i **[!UICONTROL Edit expression]** för att markera det fält som innehåller aktuella data.
+Klicka på knappen **[!UICONTROL Add]** för att skapa en ny dimension och klicka sedan på ikonen **[!UICONTROL Edit expression]** i **[!UICONTROL Expression field]** för att markera fältet som innehåller aktuella data.
 
 ![](assets/s_advuser_cube_wz_04.png)
 
-* Börja med att välja **mottagarålder**. I det här fältet kan du definiera bindning till gruppsidor och göra det enklare att läsa information. Vi rekommenderar att du använder bindning när det är möjligt att använda flera olika värden.
+* Börja med att markera mottagaren **Ålder**. I det här fältet kan du definiera bindning till gruppsidor och göra det enklare att läsa information. Vi rekommenderar att du använder bindning när det är möjligt att använda flera olika värden.
 
-   Markera **[!UICONTROL Enable binning]** alternativet om du vill göra det. Bindningslägena beskrivs närmare i [Databindning](../../reporting/using/concepts-and-methodology.md#data-binning).
+   Det gör du genom att markera alternativet **[!UICONTROL Enable binning]**. Bindningslägena beskrivs i [Databindning](../../reporting/using/concepts-and-methodology.md#data-binning).
 
    ![](assets/s_advuser_cube_wz_05.png)
 
-* Lägg till en dimension av **datatypen** . Här vill vi visa datum då mottagarprofilen skapades
+* Lägg till en **Date**-typdimension. Här vill vi visa datum då mottagarprofilen skapades
 
-   Om du vill göra det klickar du på **[!UICONTROL Add]** och markerar **[!UICONTROL Creation date]** fältet i mottagartabellen.
+   Det gör du genom att klicka på **[!UICONTROL Add]** och markera fältet **[!UICONTROL Creation date]** i mottagartabellen.
 
    ![](assets/s_advuser_cube_wz_06.png)
 
@@ -76,7 +76,7 @@ Klicka på **[!UICONTROL Add]** knappen för att skapa en ny dimension och klick
 
 * Skapa en annan dimension för att analysera data i förhållande till mottagarens ort
 
-   Om du vill göra det lägger du till en ny dimension och markerar staden i noden **[!UICONTROL Location]** i mottagarschemat.
+   Lägg till en ny dimension och markera staden i noden **[!UICONTROL Location]** i mottagarschemat.
 
    ![](assets/s_advuser_cube_wz_08.png)
 
@@ -88,24 +88,24 @@ Klicka på **[!UICONTROL Add]** knappen för att skapa en ny dimension och klick
 
    ![](assets/s_advuser_cube_wz_10.png)
 
-   Endast värdena i uppräkningen visas. De andra grupperas under den etikett som är definierad i **[!UICONTROL Label of the other values]** fältet.
+   Endast värdena i uppräkningen visas. De andra grupperas under den etikett som definieras i fältet **[!UICONTROL Label of the other values]**.
 
-   Mer information finns i [Hantera behållare](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins)dynamiskt.
+   Mer information finns i [Hantera behållare dynamiskt](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Byggnadsindikatorer {#building-indicators}
+## Byggindikatorer {#building-indicators}
 
-När dimensionerna har definierats måste du ange ett beräkningssätt för de värden som ska visas i cellerna. Det gör du genom att skapa matchande indikatorer på **[!UICONTROL Measures]** fliken: skapa så många mått som det finns kolumner att visa i rapporten som ska använda kuben.
+När dimensionerna har definierats måste du ange ett beräkningssätt för de värden som ska visas i cellerna. Det gör du genom att skapa matchande indikatorer på fliken **[!UICONTROL Measures]**: skapa så många mått som det finns kolumner att visa i rapporten som ska använda kuben.
 
 Gör så här:
 
 1. Klicka på knappen **[!UICONTROL Add]**.
 1. Välj typ av mått och formel som ska användas. Här vill vi räkna antalet kvinnor bland mottagarna.
 
-   Vår åtgärd baseras på faktchemat och använder **[!UICONTROL Count]** operatorn.
+   Vårt mått baseras på faktchemat och använder operatorn **[!UICONTROL Count]**.
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   Med **[!UICONTROL Filter the measure data...]** länken kan du bara välja kvinnor. Mer information om hur du definierar mått och de tillgängliga alternativen finns i [Definiera mått](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   Med länken **[!UICONTROL Filter the measure data...]** kan du bara välja kvinnor. Mer information om hur du definierar mått och tillgängliga alternativ finns i [Definiera mått](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -121,17 +121,17 @@ När kuben har konfigurerats kan den användas som mall för att skapa en ny rap
 
 Så här gör du:
 
-1. Klicka på **[!UICONTROL Create]** universums **[!UICONTROL Reports]** knapp och välj den kub du just skapat.
+1. Klicka på **[!UICONTROL Create]**-knappen för **[!UICONTROL Reports]**-universum och välj den kub du just har skapat.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
-1. Bekräfta genom att klicka på **[!UICONTROL Create]** knappen: kommer du till sidan för rapportkonfiguration och visning.
+1. Klicka på **[!UICONTROL Create]**-knappen för att bekräfta: kommer du till sidan för rapportkonfiguration och visning.
 
    Som standard visas de två första tillgängliga dimensionerna i rader och kolumner, men inget värde visas i tabellen. Klicka på huvudikonen om du vill generera tabellen:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Du kan ändra dimensionens axlar, ta bort dem, lägga till nya mått osv. Möjliga åtgärder beskrivs här: [Använd kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
+1. Du kan ändra dimensionens axlar, ta bort dem, lägga till nya mått osv. Möjliga åtgärder beskrivs här: [Använda kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
 
    Använd lämpliga ikoner för att göra detta.
 
