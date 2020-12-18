@@ -30,11 +30,11 @@ Vårt sista mål är att skapa en leverans med en personlig mall som innehåller
 >
 >Innan du börjar måste du ha minst en **HTML-mall** konfigurerad som värd för innehållet i framtida leveranser.
 >
->Kontrollera **[!UICONTROL Properties]** att **[!UICONTROL Content editing mode]** (på **[!UICONTROL Advanced]** fliken) är inställt på **[!UICONTROL DCE]** i leveransfönstret. Mer information om hur du optimerar redigeringsprogrammet finns i Bästa tillvägagångssätt för [innehållsredigering](../../web/using/content-editing-best-practices.md).
+>Kontrollera att **[!UICONTROL Content editing mode]** (på fliken **[!UICONTROL Advanced]**) är inställt på **[!UICONTROL DCE]** i leveransen **[!UICONTROL Properties]**. Mer information om hur du optimerar redigeringsprogrammet finns i [Bästa praxis för redigering av innehåll](../../web/using/content-editing-best-practices.md).
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
-Om du vill skapa en ny leverans placerar du markören på fliken **Kampanjer** och klickar på **Leveranser**. Klicka sedan på knappen **Skapa** ovanför listan över befintliga leveranser. For more on creating deliveries, refer to [this page](../../delivery/using/about-email-channel.md).
+Om du vill skapa en ny leverans placerar du markören på fliken **Kampanjer** och klickar på **Leveranser**. Klicka sedan på knappen **Skapa** ovanför listan över befintliga leveranser. Mer information om hur du skapar leveranser finns på [den här sidan](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
@@ -44,11 +44,11 @@ Välj en leveransmall och ge sedan leveransen ett namn. Det här namnet visas en
 
 ![](assets/dce_delivery_model.png)
 
-## Steg 3 - Markera ett innehåll {#step-3---selecting-a-content}
+## Steg 3 - Välj ett innehåll {#step-3---selecting-a-content}
 
 Redigeraren för digitalt innehåll innehåller olika färdiga mallar med olika strukturer (kolumner, textområden osv.).
 
-Markera den innehållsmall som du vill använda och klicka sedan på **[!UICONTROL Start with the selected content]** knappen för att visa mallen i den skapade leveransen.
+Markera den innehållsmall som du vill använda och klicka sedan på knappen **[!UICONTROL Start with the selected content]** för att visa mallen i den skapade leveransen.
 
 ![](assets/dce_select_model.png)
 
@@ -56,45 +56,45 @@ Du kan även importera HTML-innehåll som har skapats utanför Adobe Campaign ge
 
 ![](assets/dce_select_from_file_template.png)
 
-Du kan spara innehållet som en mall för framtida bruk. När du har skapat en personlig innehållsmall kan du förhandsgranska den i listan med mallar. For more on this, refer to [Template management](../../web/using/template-management.md).
+Du kan spara innehållet som en mall för framtida bruk. När du har skapat en personlig innehållsmall kan du förhandsgranska den i listan med mallar. Mer information finns i [Mallhantering](../../web/using/template-management.md).
 
 >[!CAUTION]
 >
 >Om du använder **Adobe Campaign webbgränssnitt** måste du importera en ZIP-fil som innehåller HTML-innehållet och relaterade bilder.
 
-## Steg 4 - Utforma meddelandet {#step-4---designing-the-message}
+## Steg 4 - Designa meddelandet {#step-4---designing-the-message}
 
 * Visa de första och andra namnen på mottagarna
 
-   Om du vill infoga mottagarnas för- och efternamn i ett textfält i leveransen klickar du på det valda textfältet och placerar sedan markören där du vill att de ska visas. Klicka på den första ikonen i popup-verktygsfältet och klicka sedan på **[!UICONTROL Personalization block]**. Markera **[!UICONTROL Greetings]** och klicka sedan på **[!UICONTROL OK]**.
+   Om du vill infoga mottagarnas för- och efternamn i ett textfält i leveransen klickar du på det valda textfältet och placerar sedan markören där du vill att de ska visas. Klicka på den första ikonen i popup-verktygsfältet och klicka sedan på **[!UICONTROL Personalization block]**. Välj **[!UICONTROL Greetings]** och klicka sedan på **[!UICONTROL OK]**.
 
    ![](assets/dce_personalizationblock_greetings.png)
 
 * Infoga en länk i en bild
 
-   Om du vill dirigera leveransmottagare till en extern adress via en bild, klickar du på den relevanta bilden för att visa popup-verktygsfältet, placerar markören på den första ikonen och klickar sedan på **[!UICONTROL Link to an external URL]**. Mer information finns i [Lägga till en länk](../../web/using/editing-content.md#adding-a-link).
+   Om du vill dirigera mottagare till en extern adress via en bild, klickar du på den relevanta bilden för att visa popup-verktygsfältet, placerar markören på den första ikonen och klickar sedan på **[!UICONTROL Link to an external URL]**. Mer information finns i [Lägga till en länk](../../web/using/editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
-   Ange länkens URL i fältet **URL** i följande format **https://www.myURL.com** och bekräfta sedan.
+   Ange länkens URL i fältet **URL** med följande format **https://www.myURL.com** och bekräfta sedan.
 
    Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
 
 * Infoga en länk i text
 
-   Om du vill integrera en extern länk i texten i leveransen markerar du en del text eller ett textblock och klickar sedan på den första ikonen i popup-verktygsfältet. Klicka **[!UICONTROL Link to an external URL]** och ange länkadressen i **[!UICONTROL URL]** fältet. Mer information finns i [Lägga till en länk](../../web/using/editing-content.md#adding-a-link).
+   Om du vill integrera en extern länk i texten i leveransen markerar du en del text eller ett textblock och klickar sedan på den första ikonen i popup-verktygsfältet. Klicka på **[!UICONTROL Link to an external URL]** och ange länkadressen i fältet **[!UICONTROL URL]**. Mer information finns i [Lägga till en länk](../../web/using/editing-content.md#adding-a-link).
 
    Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
 
    >[!CAUTION]
    >
-   >Den text som anges i **[!UICONTROL Label]** fältet ersätter den ursprungliga texten.
+   >Den text som anges i fältet **[!UICONTROL Label]** ersätter den ursprungliga texten.
 
 * Lägga till en spegelsida
 
    Om du vill att mottagarna ska kunna se leveransinnehållet i en webbläsare kan du integrera en länk till en spegelsida i leveransen.
 
-   Klicka i det textfält där du vill se länken publicerad. Klicka på den första ikonen i popup-verktygsfältet, markera **[!UICONTROL Personalization block]** och sedan **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Bekräfta genom **[!UICONTROL Save]** att klicka.
+   Klicka i det textfält där du vill se länken publicerad. Klicka på den första ikonen i popup-verktygsfältet, välj **[!UICONTROL Personalization block]** och **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Bekräfta genom att klicka på **[!UICONTROL Save]**.
 
    ![](assets/dce_mirrorpage.png)
 
@@ -106,16 +106,16 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
 
    Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida. Mer information finns i [Länka till ett webbprogram](../../web/using/editing-content.md#link-to-a-web-application).
 
-   Markera ett textfält för länken till ett webbprogram och klicka sedan på den första ikonen. Välj **[!UICONTROL Link to a Web application]** och välj sedan önskat program genom att klicka på ikonen i slutet av fältet **Webbprogram** .
+   Markera ett textfält för länken till ett webbprogram och klicka sedan på den första ikonen. Välj **[!UICONTROL Link to a Web application]** och välj sedan önskat program genom att klicka på ikonen i slutet av fältet **Webbprogram**.
 
    ![](assets/dce_webapp.png)
 
-   Bekräfta genom att klicka på **Spara** .
+   Bekräfta genom att klicka på **Spara**.
 
    >[!NOTE]
    >
-   >I det här steget måste du spara minst ett webbprogram i förväg. Dessa finns på **[!UICONTROL Campaigns > Web applications]** fliken i konsolen.
+   >I det här steget måste du spara minst ett webbprogram i förväg. Dessa finns på fliken **[!UICONTROL Campaigns > Web applications]** i konsolen.
 
-## Steg 5 - Spara leveransen {#step-5---saving-the-delivery}
+## Steg 5 - Sparar leveransen {#step-5---saving-the-delivery}
 
-När innehållet är integrerat sparar du leveransen genom att klicka på **Spara**. Den visas nu i din lista över leveranser på fliken **[!UICONTROL Campaigns > Deliveries]** .
+När innehållet är integrerat sparar du leveransen genom att klicka på **Spara**. Den visas nu i din lista över leveranser på fliken **[!UICONTROL Campaigns > Deliveries]**.
