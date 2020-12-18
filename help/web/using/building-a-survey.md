@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Utforma en undersökning{#building-a-survey}
 
-## Creating a new survey {#creating-a-new-survey}
+## Skapar en ny undersökning {#creating-a-new-survey}
 
 I det här kapitlet beskrivs hur du utformar ett **undersökningsformulär** med Adobe Campaign, samt vilka alternativ och konfigurationer som är tillgängliga. Med Adobe Campaign kan du göra enkäten tillgänglig för användare och samla in och arkivera svar i databasen.
 
-Webbformulär öppnas via trädnoden **[!UICONTROL Resources > Online > Web applications]** . Om du vill skapa en undersökning klickar du på **[!UICONTROL New]** knappen ovanför listan med program eller högerklickar på listan och väljer **[!UICONTROL New]**.
+Webbformulär nås via noden **[!UICONTROL Resources > Online > Web applications]** i trädet. Om du vill skapa en undersökning klickar du på **[!UICONTROL New]** ovanför listan med program eller högerklickar på listan och väljer **[!UICONTROL New]**.
 
 Välj undersökningsmallen (**[!UICONTROL newSurvey]** som standard).
 
@@ -35,7 +35,7 @@ Formulärets sidor skapas med en särskild redigerare där du kan definiera och 
 
 ## Lägga till fält {#adding-fields}
 
-Fälten i ett formulär gör det möjligt för användare att ange information och välja alternativ. För varje sida i formuläret skapas de via den första knappen i verktygsfältet via **[!UICONTROL Add using the wizard]** menyn.
+Fälten i ett formulär gör det möjligt för användare att ange information och välja alternativ. För varje sida i formuläret skapas de via den första knappen i verktygsfältet med hjälp av menyn **[!UICONTROL Add using the wizard]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -43,7 +43,7 @@ Fälten i ett formulär gör det möjligt för användare att ange information o
 >
 >Du kan också använda ett högerklick och infoga en indatazon. Som standard infogas zonen i slutet av det markerade trädet. Flytta det med pilarna i verktygsfältet.
 
-### Typ av fält {#types-of-fields}
+### Typer av fält {#types-of-fields}
 
 När du lägger till ett fält i en undersökning måste du välja dess typ. Följande alternativ är tillgängliga:
 
@@ -56,7 +56,7 @@ När du lägger till ett fält i en undersökning måste du välja dess typ. Fö
    >
    >Lagringslägen och fältimporter beskrivs i [Lagra insamlade svar](../../web/using/managing-answers.md#storing-collected-answers).
 
-Typ av fält som ska läggas till (nedrullningsbar lista, textfält, kryssrutor osv.) anpassar sig till det valda lagringsläget. Du kan ändra den i **[!UICONTROL Type]** fältet på **[!UICONTROL General]** fliken, men se till att den är konsekvent med datatypen.
+Typ av fält som ska läggas till (nedrullningsbar lista, textfält, kryssrutor osv.) anpassar sig till det valda lagringsläget. Du kan ändra den med hjälp av fältet **[!UICONTROL Type]** på fliken **[!UICONTROL General]**, men se till att den är konsekvent med datatypen.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -68,7 +68,7 @@ Onlineundersökningar använder funktioner för webbapplikationer. Specifika fun
 
 ### Flera alternativ {#multiple-choice}
 
-För **[!UICONTROL Multiple choice]** typkontroller kan du definiera ett minsta och högsta antal markeringar. Med det här alternativet kan du t.ex. tvinga markeringen till minst **2** värden och högst **4** värden från de tillgängliga alternativen:
+För **[!UICONTROL Multiple choice]**-typkontroller kan du definiera ett minsta och högsta antal markeringar. Med det här alternativet kan du t.ex. tvinga markeringen till minst **2**-värden och högst **4**-värden från de tillgängliga alternativen:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -84,33 +84,33 @@ Motsvarande konfiguration är följande:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
-Dessutom måste lagringsplatsen för det här inmatningsfältet vara ett **[!UICONTROL Multiple values]** typarkiverat **fält**:
+Dessutom måste lagringsplatsen för det här inmatningsfältet vara av typen **[!UICONTROL Multiple values]** **arkiverat fält**:
 
 ![](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
->* Den här funktionen är bara tillgänglig för formulär av typen **Undersökning** .
->* Det här alternativet är inte kompatibelt med slumpmässig frågevisning. For more on this, refer to [Adding questions](#adding-questions).
+>* Den här funktionen är bara tillgänglig för **enkät**-typformulär.
+>* Det här alternativet är inte kompatibelt med slumpmässig frågevisning. Mer information finns i [Lägga till frågor](#adding-questions).
 
 
 ### Lägga till frågor {#adding-questions}
 
-Det finns två typer av behållare: standard och fråga. Standardbehållare används för att konfigurera sidlayout och villkorsstyrd visning på en sida. De beskrivs i [detta avsnitt](../../web/using/about-web-forms.md).
+Det finns två typer av behållare: standard och fråga. Standardbehållare används för att konfigurera sidlayout och villkorsstyrd visning på en sida. De beskrivs i [det här avsnittet](../../web/using/about-web-forms.md).
 
-Använd en **frågebehållare** för att lägga till en fråga på sidan och för att infoga möjliga svar nedan i hierarkin. Användarsvar på frågor som placeras i den här typen av behållare kan analyseras i rapporter.
+Använd en **fråge**-behållare för att lägga till en fråga på sidan och för att infoga möjliga svar nedan i hierarkin. Användarsvar på frågor som placeras i den här typen av behållare kan analyseras i rapporter.
 
 >[!CAUTION]
 >
->Infoga aldrig en **frågebehållare** under en annan **frågebehållare** i hierarkin.
+>Infoga aldrig en **Fråga**-behållare under en annan **Fråga**-behållare i hierarkin.
 
 ![](assets/s_ncs_admin_question_label.png)
 
-Frågeetiketten anges i etikettfältet. I det här fallet används formatet från formulärets formatmall. Välj alternativet **[!UICONTROL Enter the title in HTML format]** för att anpassa den. Då får du tillgång till HTML-redigeraren.
+Frågeetiketten anges i etikettfältet. I det här fallet används formatet från formulärets formatmall. Välj alternativet **[!UICONTROL Enter the title in HTML format]** för att anpassa det. Då får du tillgång till HTML-redigeraren.
 
 >[!NOTE]
 >
->Mer information om hur du använder HTML-redigeraren finns i [det här avsnittet](../../web/using/about-web-forms.md) .
+>Mer information om hur du använder HTML-redigeraren finns i [det här avsnittet](../../web/using/about-web-forms.md).
 
 Exempel:
 
@@ -122,7 +122,7 @@ I exemplet ovan återges på följande sätt:
 
 >[!NOTE]
 >
->Varje fråga har en behållare av typen **Fråga** .
+>Varje fråga har en **Query**-typbehållare.
 
 Du kan aktivera slumpmässig anpassning av frågor via Adobe Campaign. Det går sedan att ange hur många frågor som ska visas på sidan i fältet längst ned i konfigurationsfönstret.
 
@@ -136,5 +136,5 @@ När sidan uppdateras är de visade frågorna inte desamma.
 
 >[!CAUTION]
 >
->När du visar en fråga slumpmässigt (alternativet är markerat på sidan) ska du se till att inte använda flervalsfrågor för vilka en eller flera markeringar är obligatoriska.**[!UICONTROL Display randomly]**
+>När du visar en fråga slumpmässigt (**[!UICONTROL Display randomly]** alternativ markerat på sidan) ska du se till att inte använda flervalsfrågor där en eller flera markeringar är obligatoriska.
 
