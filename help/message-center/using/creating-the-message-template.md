@@ -18,7 +18,7 @@ ht-degree: 9%
 # Skapa meddelandemallen{#creating-the-message-template}
 
 1. Gå till mappen **[!UICONTROL Message Center >Transactional message templates]** i Adobe Campaign-trädet.
-1. I listan med transaktionsmeddelandemallar högerklickar och väljer du **[!UICONTROL New]** i listrutan eller klickar på **[!UICONTROL New]** knappen ovanför listan med transaktionsmeddelandemallar.
+1. Högerklicka och välj **[!UICONTROL New]** i listrutan i listan över transaktionsmeddelandemallar eller klicka på knappen **[!UICONTROL New]** ovanför listan med transaktionsmeddelandemallar.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -37,7 +37,7 @@ ht-degree: 9%
    >
    >En händelsetyp får aldrig länkas till mer än en mall.
 
-1. Ange en typ och en beskrivning och klicka sedan för **[!UICONTROL Continue]** att skapa meddelandetexten (se [Skapa meddelandeinnehåll](../../message-center/using/creating-message-content.md)).
+1. Ange en natur och en beskrivning och klicka sedan på **[!UICONTROL Continue]** för att skapa meddelandetexten (se [Skapa meddelandeinnehåll](../../message-center/using/creating-message-content.md)).
 
    ![](assets/messagecenter_create_model_004.png)
 
