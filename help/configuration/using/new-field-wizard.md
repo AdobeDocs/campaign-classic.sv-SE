@@ -35,7 +35,7 @@ Guiderna innehåller följande steg:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Bekräfta ändringarna genom att klicka på **[!UICONTROL Finish]** .
+1. Bekräfta ändringarna genom att klicka på knappen **[!UICONTROL Finish]**.
 
 En tilläggsfil som i vårt exempel kallas&quot;cus:mottagare&quot; skapas automatiskt och motsvarande SQL-skript körs:
 
@@ -49,5 +49,5 @@ En tilläggsfil som i vårt exempel kallas&quot;cus:mottagare&quot; skapas autom
 
 >[!NOTE]
 >
->Som standard deklareras de tillagda fälten med **egenskapsanvändaren** (med värdet &quot;true&quot;). Detta gör att du kan visa och redigera fältet i indataformuläret för det utökade schemat med hjälp av en kontroll av typen &quot;treeEdit&quot; (se Indataformulär).
+>Som standard deklareras de tillagda fälten med egenskapen **användare** (med värdet &quot;true&quot;). Detta gör att du kan visa och redigera fältet i indataformuläret för det utökade schemat med hjälp av en kontroll av typen &quot;treeEdit&quot; (se Indataformulär).
 
