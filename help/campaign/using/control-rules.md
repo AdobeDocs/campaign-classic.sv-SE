@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Kontrollregler{#control-rules}
 
-## Kontrollregler för analys och skiljeförfarande {#analysis-and-arbitration-control-rules}
+## Kontrollregler för analys och medling {#analysis-and-arbitration-control-rules}
 
 Med kontrollregler kan du garantera giltigheten och kvaliteten på meddelanden före leverans: teckenvisning, SMS-storlek, adressformat osv.
 
@@ -32,9 +32,9 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 * **[!UICONTROL Wave scheduling check]** (e-post): kontrollerar att den sista leveranshastigheten är planerad att påbörjas före utgången av giltighetsperioden, om leveransen delas upp i flera vågor.
 * **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälan (avanmälan)-URL i varje innehåll (HTML och Text).
 
-## Creating a control rule {#creating-a-control-rule}
+## Skapa en kontrollregel {#creating-a-control-rule}
 
-Det går att skapa nya kontrollregler som passar dina behov. Det gör du genom att skapa en **[!UICONTROL Control]** typologiregel och ange kontrollformeln i SQL på **[!UICONTROL Code]** fliken.
+Det går att skapa nya kontrollregler som passar dina behov. Det gör du genom att skapa en **[!UICONTROL Control]**-typologiregel och ange kontrollformeln i SQL på fliken **[!UICONTROL Code]**.
 
 **Exempel:**
 
@@ -42,11 +42,11 @@ I följande exempel ska vi skapa en regel som förhindrar att ett SMS-erbjudande
 
 Använd följande steg:
 
-1. Skapa en **[!UICONTROL Control]** typologiregel. Välj en **[!UICONTROL Warning]** varningsnivå.
+1. Skapa en **[!UICONTROL Control]**-typologiregel. Välj en **[!UICONTROL Warning]**-varningsnivå.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. På **[!UICONTROL Code]** fliken anger du det skript som ska använda det önskade tröskelvärdet, som visas nedan:
+1. På fliken **[!UICONTROL Code]** anger du det skript som ska använda det önskade tröskelvärdet, som visas nedan:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,7 +70,7 @@ Använd följande steg:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   När analysen är klar är knappen inte tillgänglig **[!UICONTROL Confirm delivery]** .
+   När analysen är klar är knappen **[!UICONTROL Confirm delivery]** inte tillgänglig.
 
    ![](assets/campaign_opt_create_control_06.png)
 
