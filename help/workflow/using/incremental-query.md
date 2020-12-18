@@ -30,22 +30,22 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 >[!CAUTION]
 >
->Om resultatet av en inkrementell fråga är lika med **0** under en av dess körningar pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
+>Om resultatet av en inkrementell fråga är lika med **0** under någon av körningarna pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
 
 Så här gör du:
 
-1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och på en gång**.
+1. Välj alternativet **[!UICONTROL Schedule execution]** på fliken **[!UICONTROL Scheduling & History]**. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och på en gång**.
 1. Klicka på knappen **[!UICONTROL Change]**.
 
-   I **[!UICONTROL Schedule editing wizard]** fönstret kan du konfigurera typ av frekvens, återkommande händelser och händelsegiltighetsperiod.
+   I **[!UICONTROL Schedule editing wizard]**-fönstret kan du konfigurera typen av frekvens, händelseupprepning och händelsegiltighetsperiod.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Click **[!UICONTROL Finish]** to save the schedule.
+1. Klicka på **[!UICONTROL Finish]** för att spara schemat.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. I det nedre avsnittet på **[!UICONTROL Scheduling & History]** fliken kan du välja hur många dagar som ska tas med i historiken.
+1. I det nedre avsnittet på fliken **[!UICONTROL Scheduling & History]** kan du välja hur många dagar som ska tas med i historiken.
 
    ![](assets/edit_request_inc.png)
 
@@ -67,4 +67,4 @@ Så här gör du:
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna, **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna,  **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och  **[!UICONTROL recCount]** är antalet element i tabellen.
