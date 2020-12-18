@@ -31,13 +31,13 @@ Se till att meddelandeinnehållet är rätt utformat för att undvika fel, som v
 
 Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas enligt följande:
 
-    &lt;%
-    
-    var brand = &quot;xxx&quot;
+    &lt;>var brand = &quot;xxx&quot;
     
     %>
 
-Mer information om personaliseringsblock finns i [det här avsnittet](../../delivery/using/personalization-blocks.md).
+    
+    
+Mer information om anpassningsblock finns i [det här avsnittet](../../delivery/using/personalization-blocks.md).
 
 Ni kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra analysen av leveransförberedelser. Detta bör användas särskilt om personaliseringsdata kommer från en extern tabell via FDA (Federated Data Access). Det här alternativet beskrivs i det här [avsnittet](../../delivery/using/personalization-fields.md#optimizing-personalization)
 
@@ -57,7 +57,7 @@ När du skapar e-postmeddelanden bör du tänka på de allmänna bästa metodern
 
 ### Subject line
 
-Arbeta med [ämnesraden](../../delivery/using/defining-the-email-content.md#message-content) för att förbättra öppna priser:
+Arbeta på [ärenderaden](../../delivery/using/defining-the-email-content.md#message-content) för att förbättra öppna frekvenser:
 
 * Undvik för långa motiv. Använd högst 50 tecken
 
@@ -71,7 +71,7 @@ Inkludera alltid en länk för spegelsida. Önskad position är högst upp i e-p
 
 ### Avprenumerationslänk
 
-Avprenumerationslänken är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. När meddelandet analyseras kontrollerar en [typologiregel](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) som standard om en avanmälningslänk har inkluderats och genererar en varning om den saknas.
+Avprenumerationslänken är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. Som standard kontrolleras om en avanmälningslänk har inkluderats när meddelandet analyseras och en [typologiregel](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) genererar en varning om den saknas.
 
 **Tips**: Eftersom mänskliga fel alltid är möjliga bör du kontrollera att länken för avanmälan fungerar korrekt före varje gång du skickar. När du t.ex. skickar ett bevis ska du kontrollera att länken är giltig, att formuläret är online och att fältet för att inte längre kontakta den här mottagaren har ändrats till Ja.
 
@@ -79,7 +79,7 @@ Lär dig hur du infogar en länk för avanmälan [i det här avsnittet](../../de
 
 ### E-poststorlek
 
-För att undvika problem med prestanda och leverans är den rekommenderade maximala storleken på ett e-postmeddelande cirka **35 kB**. Om du vill kontrollera meddelandestorleken går du till **[!UICONTROL Preview]** fliken och väljer en testprofil. När meddelandet har genererats visas meddelandestorleken i det övre högra hörnet.
+För att undvika problem med prestanda och leverans bör du ha en maximal storlek på ett e-postmeddelande på cirka **35 kB**. Om du vill kontrollera meddelandestorleken går du till fliken **[!UICONTROL Preview]** och väljer en testprofil. När meddelandet har genererats visas meddelandestorleken i det övre högra hörnet.
 
 Tänk på följande om du vill hålla din e-post under gränsen:
 
@@ -110,11 +110,11 @@ Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md#about-charac
 
 Kontrollera följande element för att undvika vanliga formateringsfel:
 
-* Korrekt **datumformatering**: Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar. [Läs mer](../../delivery/using/formatting.md#date-display)
+* Korrigera **datumformatering**: Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar. [Läs mer](../../delivery/using/formatting.md#date-display)
 
-* Användning av **tillåtna tecken** i e-postmeddelanden: listan med giltiga tecken för e-postadresser definieras i alternativet XtkEmail_Characters. Lär dig hur du får tillgång till Campaign-alternativ [i det här avsnittet](../../installation/using/configuring-campaign-options.md). För att specialtecken ska kunna hanteras på rätt sätt måste Adobe Campaign vara installerat i Unicode.
+* Användning av **tillåtna tecken** i e-postmeddelanden: listan med giltiga tecken för e-postadresser definieras i alternativet XtkEmail_Characters. Lär dig hur du kommer åt Campaign-alternativen [i det här avsnittet](../../installation/using/configuring-campaign-options.md). För att specialtecken ska kunna hanteras på rätt sätt måste Adobe Campaign vara installerat i Unicode.
 
-* Konfiguration av **e-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM-autentisering (Domain Keys Identified Mail) kan den mottagande e-postservern verifiera att ett meddelande verkligen skickades av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet ändrades mellan den tidpunkt det ursprungligen skickades (och DKIM &quot;signerade&quot;) och den tidpunkt det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information om detta finns i [det här avsnittet](../../delivery/using/technical-recommendations.md#dkim).
+* Konfiguration av **E-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM-autentisering (Domain Keys Identified Mail) kan den mottagande e-postservern verifiera att ett meddelande verkligen skickades av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet ändrades mellan den tidpunkt det ursprungligen skickades (och DKIM &quot;signerade&quot;) och den tidpunkt det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information om detta finns i [det här avsnittet](../../delivery/using/technical-recommendations.md#dkim).
 
 ### Responsiv e-postdesign
 
@@ -124,7 +124,7 @@ Responsiv design säkerställer att ett e-postmeddelande återges optimalt för 
 
 * Använd förhandsgranskningsläget och skicka provtryck för att testa återgivningen på så många enheter som möjligt
 
-* Modulen Adobe Campaign Classic Digital Content Editor (DCE) innehåller responsiva designformaterade mallar för mobiler som är tillgängliga via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Läs mer [i den här artikeln](https://theblog.adobe.com/responsive-email-design-101/)
+* Modulen Adobe Campaign Classic Digital Content Editor (DCE) innehåller responsiva designformaterade mallar för mobilen som är tillgängliga via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Läs mer [i den här artikeln](https://theblog.adobe.com/responsive-email-design-101/)
 
 ## Hantera bilder {#manage-images}
 
@@ -150,7 +150,7 @@ För att vara tillgängliga utifrån måste de bilder som används i e-postmedde
 
 * Du kan kontrollera om instanskonfigurationen aktiverar offentlig resurshantering. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via **[!UICONTROL Image]** -ikonen. [Läs mer](../../delivery/using/defining-the-email-content.md#adding-images)
+* Från leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via ikonen **[!UICONTROL Image]**. [Läs mer](../../delivery/using/defining-the-email-content.md#adding-images)
 
 * Om bilderna inte visas kontrollerar du att bilderna är tillgängliga på servern. Det gör du genom att klicka på fliken Källa i leveransfönstret. Hitta bilderna och kopiera och klistra in URL:en för varje bild i en webbläsare. Om bilderna inte visas kontaktar du IT-administratören eller tredjepartsleverantören som tillhandahåller ditt leveransinnehåll.
 
@@ -158,6 +158,6 @@ För att vara tillgängliga utifrån måste de bilder som används i e-postmedde
 
 Adobe rekommenderar att du förhandsgranskar ditt meddelande för att kontrollera hur det är anpassat och hur mottagarna ser det.
 
-* I leveransguiden kan du på **[!UICONTROL Preview]** underfliken visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen. [Läs mer](../../delivery/using/defining-the-email-content.md#message-content)
+* I leveransguiden kan du på underfliken **[!UICONTROL Preview]** visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen. [Läs mer](../../delivery/using/defining-the-email-content.md#message-content)
 
-* En automatisk skräppostkontroll utförs under varje förhandsgranskning. På **[!UICONTROL Preview]** underfliken ska du kontrollera [SpamAssassin](../../delivery/using/spamassassin.md) spam-poäng.  Klicka **[!UICONTROL More...]** om du vill veta mer om varningen.  Innan du gör det kontrollerar du att SpamAssets är korrekt installerat och konfigurerat på Adobe Campaign programserver. [Läs mer](../../installation/using/configuring-spamassassin.md)
+* En automatisk skräppostkontroll utförs under varje förhandsgranskning. I underfliken **[!UICONTROL Preview]** kontrollerar du [SpamAssassin](../../delivery/using/spamassassin.md) skräppostpoäng.  Klicka på **[!UICONTROL More...]** om du vill veta mer om varningen.  Innan du gör det kontrollerar du att SpamAssets är korrekt installerat och konfigurerat på Adobe Campaign programserver. [Läs mer](../../installation/using/configuring-spamassassin.md)
