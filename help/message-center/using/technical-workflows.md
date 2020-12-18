@@ -21,13 +21,13 @@ Du måste se till att de tekniska arbetsflödena för kontrollinstansen och de o
 
 De olika tekniska arbetsflödena för transaktionsmeddelanden (Message Center) är uppdelade mellan kontrollinstansen och körningsinstansen/instanserna.
 
-## Styra instansarbetsflöden {#control-instance-workflows}
+## Kontrollera instansarbetsflöden {#control-instance-workflows}
 
-Oavsett om du har en eller flera instanser registrerade för körning i kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]** externt konto. Klicka på **[!UICONTROL Create the archiving workflow]** knappen för att skapa och starta arbetsflödet.
+Om du har en eller flera instanser registrerade för körning i kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]**-externt konto. Klicka på knappen **[!UICONTROL Create the archiving workflow]** för att skapa och starta arbetsflödet.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Du kommer sedan åt dessa arbetsflöden via mappen **Administration > Produktion > Meddelandecenter** . Arkiveringsarbetsflödena startas automatiskt när de har skapats.
+Arbetsflödena kan sedan nås från mappen **Administration > Produktion > Meddelandecenter**. Arkiveringsarbetsflödena startas automatiskt när de har skapats.
 
 <!--**Minimal architecture**
 
@@ -35,13 +35,13 @@ Once the control and execution modules are installed on the same instance, you m
 
 ![](assets/messagecenter_archiving_001.png)-->
 
-## Arbetsflöden för körningsinstanser {#execution-instance-workflows}
+## Arbetsflöden för körningsinstans {#execution-instance-workflows}
 
-På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena för transaktionsmeddelanden via mappen **Administration > Produktion > Meddelandecenter** . Du behöver bara starta dem. Arbetsflödena i listan är:
+På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena för transaktionsmeddelanden från mappen **Administration > Produktion > Meddelandecenter**. Du behöver bara starta dem. Arbetsflödena i listan är:
 
-* **[!UICONTROL Processing batch events]** (internt namn: **[!UICONTROL batchEventsProcessing]** ): Med det här arbetsflödet kan du dela upp grupphändelser i en kö innan de länkas till en meddelandemall.
-* **[!UICONTROL Processing real time events]** (internt namn: **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du bryta ned realtidshändelser i en kö innan de länkas till en meddelandemall.
-* **[!UICONTROL Update event status]** (internt namn: **[!UICONTROL updateEventStatus]** ): det här arbetsflödet gör att du kan tilldela en status till händelsen.
+* **[!UICONTROL Processing batch events]** (internt namn:  **[!UICONTROL batchEventsProcessing]** ): Med det här arbetsflödet kan du dela upp grupphändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Processing real time events]** (internt namn:  **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du bryta ned realtidshändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Update event status]** (internt namn:  **[!UICONTROL updateEventStatus]** ): det här arbetsflödet gör att du kan tilldela en status till händelsen.
 
    Följande händelselägen är tillgängliga:
 
