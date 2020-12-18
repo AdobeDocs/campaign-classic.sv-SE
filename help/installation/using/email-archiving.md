@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# BCC för e-post {#email-archiving}
+# Hemlig kopia av e-post {#email-archiving}
 
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform.
 
@@ -26,12 +26,12 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 ## Recommendations och begränsningar {#recommendations-and-limitations}
 
 * Funktionen för e-postkopia är valfri. Kontrollera licensavtalet.
-* Kontakta er kontoansvarige för att aktivera **hostingarkitekturer och hybridarkitekturer**. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
-* För **lokala installationer** följer du riktlinjerna nedan för att aktivera den - se avsnitten [Aktivera e-post-BCC (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-) .
+* För **värdbaserade och hybridarkitekturer**, kontakta din kontoansvarige för att aktivera den. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
+* För **lokala installationer** följer du riktlinjerna nedan för att aktivera den - se avsnitten [Aktivera e-post-BCC (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-).
 * Du kan bara använda en e-postadress för hemlig kopia.
-* När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via **[!UICONTROL Email BCC]** alternativet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* När BCC för e-post har konfigurerats kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen via alternativet **[!UICONTROL Email BCC]**. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 * Det är bara skickad e-post som räknas, studenterna gör det inte.
-* E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har arkiverat via e-post måste du uppgradera manuellt till det nya BCC-systemet för e-post. Mer information finns i avsnittet [Flytta till den nya funktionen för hemlig](#updated-email-archiving-system--bcc-) e-post.
+* E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har arkiverat via e-post måste du uppgradera manuellt till det nya BCC-systemet för e-post. Mer information finns i avsnittet [Gå till den nya grupprincipkoden för e-post](#updated-email-archiving-system--bcc-).
 
 ## Aktiverar e-postkopia (lokalt) {#activating-email-archiving--on-premise-}
 
@@ -49,7 +49,7 @@ Sökvägen till den lokala mappen måste anges i filen **config-`<instance>`.xml
 
 >[!NOTE]
 >
->Det är teamets ansvar att se till att skyddsinställningarna tillåter åtkomst till den mapp som definieras med **dataLogPath** -parametrarna.
+>Det åligger teamet som implementerar projektet att se till att skyddsinställningarna tillåter åtkomst till den mapp som definieras med parametrarna **dataLogPath**.
 
 Den fullständiga sökvägen är följande: **`<datalogpath>  YYYY-MM-DDHHh`**. Datum och tid anges enligt MTA-serverns klocka (UTC). Exempel:
 
@@ -71,7 +71,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ### Parametrar {#parameters}
 
-När den lokala mappsökvägen har definierats lägger du till och redigerar följande element som du vill i **config-`<instance name>.xml`** filen. Nedan finns standardvärdena:
+När den lokala mappsökvägen har definierats lägger du till och redigerar följande element som du vill i filen **config-`<instance name>.xml`**. Nedan finns standardvärdena:
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
@@ -88,25 +88,25 @@ När den lokala mappsökvägen har definierats lägger du till och redigerar fö
 * **compressBatchSize**: antal .eml-filer som lagts till i ett arkiv (.zip-fil).
 * **archivingType**: arkiveringsstrategi som ska användas. Möjliga värden är:
 
-   **0**: obearbetade kopior av skickade e-postmeddelanden sparas i .eml-format till mappen **dataLogPath** (standardvärde). En arkiverande kopia av **`<deliveryid>-<broadlogid>-sent.eml`** filen sparas i mappen **dataLogPath/archives** . Sökvägen till den skickade e-postfilen blir **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
+   **0**: obearbetade kopior av skickade e-postmeddelanden sparas i formatet .eml till mappen  **** dataLogPath(standardvärde). En arkiverande kopia av filen **`<deliveryid>-<broadlogid>-sent.eml`** sparas i mappen **dataLogPath/archives**. Sökvägen till den skickade e-postfilen blir **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-   **1**: obearbetade kopior av skickade e-postmeddelanden sparas i .eml-format till mappen **dataLogPath** och skickas till BCC-e-postadressen via SMTP. När e-postkopiorna har skickats till BCC-adressen ändras arkivfilens namn **`<deliveryid>-<broadlogid>-sent-archived.eml`** och filen flyttas till **mappen dataLogPath/archives** . Sökvägen till den skickade och BCC-arkiverade e-postfilen är sedan **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+   **1**: obearbetade kopior av skickade e-postmeddelanden sparas i .eml-format till mappen  **** dataLogPathoch skickas till BCC-e-postadressen via SMTP. När e-postkopiorna har skickats till BCC-adressen blir arkivfilens namn **`<deliveryid>-<broadlogid>-sent-archived.eml`** och filen flyttas till mappen **dataLogPath/archives**. Sökvägen till den skickade och BCC-arkiverade e-postfilen är sedan **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
 
 * **expirationDelay**: antal dagar som .eml-filer sparas för arkivering. Efter den fördröjningen flyttas de automatiskt till mappen **dataLogPath/archives** för komprimering. Som standard upphör .eml-filer att gälla efter två dagar.
-* **purgeArchivesDelay**: Antal dagar som arkiv sparas i mappen **dataLogPath/`<archives>`** . Efter den perioden tas de bort permanent. Tömningen börjar när MTA startas. Som standard utförs den var sjunde dag.
-* **pollDelay**: kontrollfrekvens (i sekunder) för nya inkommande skickade e-postmeddelanden till mappen **dataLogPath** . Om den här parametern till exempel är inställd på 60 innebär det att varje minut går arkiveringsprocessen igenom .eml-filerna i **dataLogPath/`<date and time>`** -mapparna, tillämpar en tömning vid behov och skickar e-postkopior till BCC-adressen och/eller komprimerar de arkiverade filerna vid behov.
-* **obtainLimit**: antalet .eml-filer som bearbetas samtidigt innan arkiveringsprocessen tillämpas igen enligt parametern **pollDelay** . Om du till exempel ställer in parametern **obtainLimit** på 100 medan parametern **pollDelay** är inställd på 60, bearbetas 100 .eml-filer per minut.
+* **purgeArchivesDelay**: Antal dagar som arkiv sparas i  **dataLogPath/`<archives>`** mapp. Efter den perioden tas de bort permanent. Tömningen börjar när MTA startas. Som standard utförs den var sjunde dag.
+* **pollDelay**: kontrollfrekvens (i sekunder) för nya inkommande skickade e-postmeddelanden till mappen  **** dataLogPath. Om den här parametern till exempel är inställd på 60 innebär det att varje minut går arkiveringsprocessen igenom .eml-filerna i mapparna **dataLogPath/`<date and time>`**, tillämpar en tömning vid behov och skickar e-postkopior till BCC-adressen och/eller komprimerar de arkiverade filerna vid behov.
+* **obtainLimit**: antalet .eml-filer som bearbetas samtidigt innan arkiveringsprocessen tillämpas igen enligt parametern  **** pollDelay. Om du till exempel ställer in parametern **obtainLimit** på 100 medan parametern **pollDelay** är inställd på 60, bearbetas 100 .eml-filer per minut.
 * **smtpNbConnection**: antal SMTP-anslutningar till BCC-e-postadressen.
 
-Se till att du justerar parametrarna efter e-postsändningens genomströmning. I en konfiguration där MTA skickar 30 000 e-postmeddelanden per timme kan du ange parametern **pollDelay** till 600, parametern **obtainLimit** till 5 000 och parametern **smtpNbConnection** till 2. Det innebär att med 2 SMTP-anslutningar skickas 5 000 e-postmeddelanden till BCC-adressen var 10:e minut.
+Se till att du justerar parametrarna efter e-postsändningens genomströmning. I en konfiguration där MTA skickar 30 000 e-postmeddelanden per timme kan du ange parametern **pollDelay** till 600, parametern **obtainLimit** till 5 000 och parametern **smtpNbConnection** till 2 . Det innebär att med 2 SMTP-anslutningar skickas 5 000 e-postmeddelanden till BCC-adressen var 10:e minut.
 
-## Konfigurera e-postadressen för den lokala kopian (lokal) {#configuring-the-bcc-email-address--on-premise-}
+## Konfigurerar e-postadressen för BCC (lokalt) {#configuring-the-bcc-email-address--on-premise-}
 
 >[!CAUTION]
 >
 >Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
 
-Använd följande parametrar i **config-`<instance name>.xml`** -filen för att definiera SMTP-e-postservern som de lagrade filerna ska överföras till:
+I filen **config-`<instance name>.xml`** använder du följande parametrar för att definiera SMTP-e-postservern som de lagrade filerna ska överföras till:
 
 ```
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
@@ -121,23 +121,23 @@ Använd följande parametrar i **config-`<instance name>.xml`** -filen för att 
 >
 >Om du använder ett SMTP-relä beaktas inte de ändringar i e-postmeddelanden som görs av reläet i arkiveringsprocessen.
 >
->Dessutom tilldelar reläet en **[!UICONTROL Sent]** status till alla e-postmeddelanden, även de som inte skickas. Därför arkiveras alla meddelanden.
+>Dessutom tilldelar reläet en **[!UICONTROL Sent]**-status till alla e-postmeddelanden, även de som inte skickas. Därför arkiveras alla meddelanden.
 
-## Gå till den nya e-postkontrollen {#updated-email-archiving-system--bcc-}
+## Flyttar till den nya BCC för e-post {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
 >E-postarkiveringssystemet (BCC) har ändrats med Adobe Campaign 17.2 (build 8795). Om du uppgraderar från en äldre version och redan har använt e-postarkiveringsfunktioner måste du uppgradera manuellt till det nya systemet för e-postarkivering.
 
-Gör följande ändringar i **`config-<instance>.xml`** filen:
+Gör följande ändringar i **`config-<instance>.xml`**-filen:
 
-1. Ta bort parametern **zipPath** från **`<archiving>`** noden.
+1. Ta bort parametern **zipPath** från noden **`<archiving>`**.
 1. Ställ in parametern **compressionFormat** på **1** om det behövs.
 1. Ställ in parametern **archivingType** på **1**.
 
-När du har konfigurerat BCC för e-post måste du välja **[!UICONTROL Email BCC]** alternativet i leveransmallen eller leveransmallen. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+När du har konfigurerat BCC för e-post måste du markera alternativet **[!UICONTROL Email BCC]** i leveransmallen eller leveransmallen. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Bästa praxis för BCC-e-postmarknadsföring {#best-practices}
+## Bästa praxis för e-postkopia {#best-practices}
 
 * **BCC-adresspostlåda**: Se till att den har tillräcklig mottagningskapacitet för att arkivera alla e-postmeddelanden som skickas av MTA.
 * **MTA-mutualisering**: arkiveringsfunktionen i innehållsförteckningen fungerar på MTA-nivå. Du kan duplicera alla e-postmeddelanden som skickas av MTA. Eftersom MTA kan mutualiseras i flera instanser (t.ex. dev, test eller prod) eller till och med i flera klienter (i en miljö där flera leverantörer finns) påverkar konfigurationen säkerheten:
