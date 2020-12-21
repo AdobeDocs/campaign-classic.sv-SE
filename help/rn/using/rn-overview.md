@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '434'
+ht-degree: 94%
 
 ---
 
@@ -37,13 +37,13 @@ De **senaste GA-versionerna** är: [Gold Standard version 10](../../rn/using/gol
 
 Den **senaste RC-versionen** är [Campaign Classic version 20.3.](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/orange3.png) **Inte längre tillgänglig** – uppdatering till en nyare build krävs.
-
-![](assets/do-not-localize/red3.png) **Inaktuell** – det är obligatoriskt att uppdatera till en nyare build.
+![](assets/do-not-localize/red3.png) **Föråldrat**  - Ingen distribution. Befintliga implementeringar måste uppgraderas.
 
 ## Rekommendationer{#recommendations}
 
 För att säkerställa en stabil konfiguration rekommenderar vi att du installerar samma stabila build på alla servrar som körs på samma klientkonfiguration.
+
+Dessutom bör klientkonsolen finnas på samma version som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
