@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
+source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
@@ -78,7 +78,7 @@ Build 9032@3a9dc9c har följande korrigeringar:
 * Korrigerade en regression som fick arbetsflödet för rensning att krascha.
 * Korrigerade en mindre regression i loggfilerna för arbetsflödet för rensning.
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard version 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png) Gold Standard version 6{#gs-6}
 
 _9 mars 2020_
 
@@ -86,7 +86,7 @@ Build 9032@19f73c5 har följande korrigering:
 
 * Korrigerade ett problem med externa konton som använder FTP över SSL. (NEO-20498)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard version 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png) Gold Standard version 5{#gs-5}
 
 _17 december 2019_
 
@@ -94,7 +94,7 @@ Build 9032@d6b8062 har följande korrigering:
 
 * Korrigerade ett problem med spårning i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard version 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png) Gold Standard version 4{#gs-4}
 
 _11 december 2019_
 
@@ -102,7 +102,7 @@ Build 9032@bc4a935 har följande korrigering:
 
 * Korrigerade ett problem med prestandan när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard version 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png) Gold Standard version 3{#gs-3}
 
 _20 november 2019_
 
