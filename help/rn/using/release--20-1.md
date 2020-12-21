@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -17,19 +17,19 @@ ht-degree: 6%
 
 # Version 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 – build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) Version 20.1.3 – build 9124{#release-20-1-3-build-9124}
 
 _6 maj 2020_
 
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 – build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) Version 20.1.2 – build 9123{#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
 * Korrigerade ett problem som förhindrade versionshantering på Red Hat 7-servrar. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1 – build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) Version 20.1 – build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
