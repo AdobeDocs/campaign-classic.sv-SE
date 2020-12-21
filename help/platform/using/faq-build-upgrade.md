@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2017'
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ Ja. Kunderna bör förse Adobe med en kontaktpunkt som är tillgänglig under el
 
 ## Behöver jag uppdatera klientkonsolen?
 
-Ja. Klientkonsolen måste finnas på samma bygge eller nyare bygge som serverinstansen. När uppgraderingen är klar bör din klientkonsol uppmana dig att uppgradera till den senaste versionen för att säkerställa att den är i linje med serverbygget.
+Ja. Klientkonsolen måste finnas på samma version som serverinstansen. När uppgraderingen är klar bör din klientkonsol uppmana dig att uppgradera till den senaste versionen för att säkerställa att den är i linje med serverbygget.
 
 ## Vad är återställningsplanen? Bevaras säkerhetskopior av mina data?
 
