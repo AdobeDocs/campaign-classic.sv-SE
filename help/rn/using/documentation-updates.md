@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '3660'
-ht-degree: 99%
+source-wordcount: '3668'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,8 @@ Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/usin
 Avsnittet för leveransövervakning har omorganiserats i tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
 
 Ett användningsexempel har lagts till om hur du lägger till avsändarens IP-adresser i leveransloggarna. [Läs mer](../../delivery/using/delivery-dashboard.md#use-case)
+
+Frågor och svar om sekretess har flyttats till [det här avsnittet](../../platform/using/privacy-faq.md).
 
 ## November 2020 {#nov-2020}
 
