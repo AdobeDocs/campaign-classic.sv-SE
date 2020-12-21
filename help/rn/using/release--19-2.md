@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Version 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 – build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) Version 19.2.3 – build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -26,7 +26,7 @@ _7 februari 2020_
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 * Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.2 – build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) Version 19.2 – build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
