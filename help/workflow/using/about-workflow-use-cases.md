@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 66%
+source-wordcount: '201'
+ht-degree: 64%
 
 ---
 
@@ -55,6 +55,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Importera data krypterade med en nyckel som genererats av Kontrollpanelen](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Kvartalsvis listuppdatering med en inkrementell fråga](../../workflow/using/quarterly-list-update.md)
+* [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](../../workflow/using/deduplication-merge.md)
 
 ## Målinriktning {#designing-queries}
 
