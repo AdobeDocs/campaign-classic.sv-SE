@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Leveranser{#deliveries}
 
-Arbetsflödena som anges nedan installeras som standard.
+Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser**.
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ Arbetsflödena som anges nedan installeras som standard.
    <td> Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses som standard den 25:e varje månad.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Antal aktiva faktureringsprofiler</span> <br /> </td> 
+   <td> <span class="uicontrol">Fakturering (aktiva profiler)</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
    <td> <p>Det här arbetsflödet räknar antalet aktiva profiler. Den utlöses varje natt klockan 1:00 som standard.</p> <p>"<strong>Profil</strong>" betyder en informationspost (t.ex.: en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead. Fakturering gäller endast profiler som är "aktiva". En profil betraktas som"aktiv" om profilen har delats eller kommunicerats via någon kanal under de senaste tolv månaderna.</p> <p>Facebook- och Twitter-kanaler beaktas inte.</p> <p>Du kan få en översikt över <span class="uicontrol">antalet aktiva profiler</span> i <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Kampanjhantering</span> &gt; <span class="uicontrol">Kundstatistik</span>.</p> </td> 
   </tr> 
@@ -67,7 +67,7 @@ Arbetsflödena som anges nedan installeras som standard.
    <td> Det här arbetsflödet distribuerar godkända erbjudanden till onlinemiljön samt alla kategorier i erbjudandekatalogen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Förhandsgranskning</span> <br /> </td> 
+   <td> <span class="uicontrol">Prognos</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span><br /> </td> 
    <td> Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses varje dag klockan 1:00 som standard.<br /> </td> 
   </tr> 
