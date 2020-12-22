@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '480'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,10 @@ Det är viktigt att undvika att ha dubbla e-postadresser, eftersom detta kan på
 
 Borttagning av dubbletter skyddar det avsändande anseendet och garanterar en god karantänhantering.
 
-Läs mer [i det här fallet](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
+**Relaterade ämnen:**
+
+* [Dedupliceringsaktivitet](../../workflow/using/deduplication.md).
+* [Användningsfall: Använda sammanfogningsfunktionen för aktiviteten Deduplicering](../../workflow/using/deduplication-merge.md)
 
 ## Indexera e-postadresser {#index-addresses}
 
