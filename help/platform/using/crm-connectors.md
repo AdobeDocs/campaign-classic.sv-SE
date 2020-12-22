@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: c511c1ac4b9fccff30f73fcfd0db650d860514d2
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 4%
@@ -186,13 +186,13 @@ Så här konfigurerar du Microsoft Dynamics-anslutningen så att den fungerar me
 
    Adobe Campaign Classic stöder Dynamics 365 REST-gränssnittet med OAuth-protokollet för autentisering.
 
-   Om du väljer en **[!UICONTROL WebAPI]**-distribution måste du registrera en app i Azure Directory och hämta **clientId** från Azure-katalogen. Den här registreringen finns i [den här sidan](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
+   Om du väljer en **[!UICONTROL WebAPI]**-distribution måste du registrera en app i Azure Directory och hämta **clientId** från Azure-katalogen. Den här registreringen finns i [den här sidan](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
    >[!NOTE]
    >
    >Parametern redirectURL krävs inte av Adobe Campaign Classic.
 
-   **clientId**-värdet används med användarnamn/lösenord för att hämta innehavartoken med hjälp av lösenord för anslagstyp. Det här kallas **Resursägarens lösenordsreferenser Bevilja**. Se denna [sida](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/) för mer information om detta.
+   **clientId**-värdet används med användarnamn/lösenord för att hämta innehavartoken med hjälp av lösenord för anslagstyp. Det här kallas **Resursägarens lösenordsreferenser Bevilja**. Se denna [sida](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc) för mer information om detta.
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
