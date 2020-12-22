@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '1089'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,29 @@ ht-degree: 10%
 # Deduplicering{#deduplication}
 
 Borttagning av dubbletter tar bort dubbletter från resultatet av inkommande aktiviteter. Deduplicering kan utföras på e-postadressen, telefonnumret eller något annat fält.
+
+Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från en datauppsättning. Posterna nedan kan till exempel betraktas som dubbletter eftersom de har samma e-postadress och samma mobil- och/eller hemtelefon.
+
+| Senaste ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
+-----|------------|-----------|-------|--------------|------
+| 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+
+Aktiviteten **[!UICONTROL Deduplication]** kan behålla en hel rad som den unika posten när dubbletter har identifierats. I ovanstående exempel skulle resultatet bli:**[!UICONTROL Date]**
+
+| Datum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
+-----|----------|------------|-------|--------------|------
+| 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+
+Den överordnad post som valts kommer att föra vidare data utan att fältdata slås samman med andra relevanta data i de duplicerade raderna.
+
+Komplettera:
+
+| Datum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
+-----|------------|-----------|-------|--------------|------
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## God praxis {#best-practices}
 
@@ -34,15 +57,11 @@ Denna fråga måste åtgärdas på följande sätt:
 
 Om du vill konfigurera en borttagning av dubbletter anger du dess etikett, metod, borttagningsvillkor och alternativ för resultatet.
 
-Klicka på länken **[!UICONTROL Edit configuration...]** för att definiera dedupliceringsläget.
+1. Klicka på länken **[!UICONTROL Edit configuration...]** för att definiera dedupliceringsläget.
 
-![](assets/s_user_segmentation_dedup_param.png)
+   ![](assets/s_user_segmentation_dedup_param.png)
 
-1. Målval
-
-   Välj måltyp för den här aktiviteten (som standard gäller borttagning av dubbletter mottagare) och vilket kriterium som ska användas, dvs. fältet där identiska värden gör att du kan identifiera dubbletter: e-postadress, mobil- eller telefonnummer, faxnummer eller direkte-postadress.
-
-   ![](assets/s_user_segmentation_dedup_param2.png)
+1. Välj måltyp för den här aktiviteten (som standard är borttagning av dubbletter länkad till mottagare) och vilket kriterium som ska användas, dvs. fältet som identiskt värden gör att du kan identifiera dubbletter för.
 
    >[!NOTE]
    >
@@ -50,11 +69,13 @@ Klicka på länken **[!UICONTROL Edit configuration...]** för att definiera ded
    >
    >I nästa steg kan du med **[!UICONTROL Other]**-alternativet välja vilket eller vilka kriterier som ska användas:
 
+   ![](assets/s_user_segmentation_dedup_param2.png)
+
+1. I nästa steg kan du med **[!UICONTROL Other]**-alternativet välja vilket eller vilka kriterier som ska användas om värdena är identiska.
+
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. Dedupliceringsmetoder
-
-   I listrutan väljer du den borttagningsmetod som ska användas och anger antalet kopior som ska behållas.
+1. I listrutan väljer du den borttagningsmetod som ska användas och anger antalet kopior som ska behållas.
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 
@@ -72,7 +93,11 @@ Klicka på länken **[!UICONTROL Edit configuration...]** för att definiera ded
    * **[!UICONTROL Using an expression]**: I kan du behålla poster med det lägsta (eller högsta) värdet för det angivna uttrycket.
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   Klicka på **[!UICONTROL Finish]** för att godkänna den valda borttagningsmetoden.
+   >[!NOTE]
+   >
+   >Med funktionen **[!UICONTROL Merge]**, som du kommer åt via länken **[!UICONTROL Advanced parameters]**, kan du konfigurera en uppsättning regler för att sammanfoga ett fält eller en grupp med fält till en enda resulterande datapost. Mer information finns i [Sammanfoga fält till en enda post](#merging-fields-into-single-record).
+
+1. Klicka på **[!UICONTROL Finish]** för att godkänna den valda borttagningsmetoden.
 
    I fönstrets mellersta del sammanfattas den definierade konfigurationen.
 
@@ -80,7 +105,7 @@ Klicka på länken **[!UICONTROL Edit configuration...]** för att definiera ded
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet består av alla dubbletter. Därefter kommer ytterligare en övergång att läggas till i aktiviteten enligt följande:
+1. Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet består av alla dubbletter. Därefter kommer ytterligare en övergång att läggas till i aktiviteten enligt följande:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -109,6 +134,32 @@ De identifierade dubbletterna kommer också att integreras i en dedikerad dubble
 1. Välj borttagningsläget **[!UICONTROL Choose for me]** så att de poster som sparas om dubbletter identifieras väljs slumpmässigt och klicka sedan på **[!UICONTROL Finish]**.
 
 När arbetsflödet körs exkluderas alla mottagare som identifieras som dubbletter från resultatet (och därmed leveransen) och läggs till i dubblettlistan. Den här listan kan användas igen i stället för att du behöver identifiera dubbletterna igen.
+
+## Sammanfoga fält till en enda datapost {#merging-fields-into-single-record}
+
+Med funktionen **[!UICONTROL Merge]** kan du konfigurera en uppsättning regler för borttagning av dubbletter för att definiera ett fält eller en grupp med fält som ska sammanfogas till en enda resulterande datapost.
+
+Om du till exempel har en uppsättning dubblettposter kan du välja att behålla det äldsta telefonnumret eller det senaste namnet.
+
+Ett användningsexempel som utnyttjar den här funktionen finns i [det här avsnittet](../../workflow/using/deduplication-merge.md).
+
+Följ dessa steg för att göra detta:
+
+1. Klicka på länken **[!UICONTROL Advanced Parameters]** i **[!UICONTROL Deduplication method]**-urvalssteget.
+
+   ![](assets/dedup1.png)
+
+1. Välj alternativet **[!UICONTROL Merge records]** för att aktivera funktionen.
+
+   Om du vill gruppera flera datafält i varje kopplingsvillkor aktiverar du alternativet **[!UICONTROL Use several record merging criteria]**.
+
+   ![](assets/dedup2.png)
+
+1. När du har aktiverat funktionen läggs en **[!UICONTROL Merge]**-flik till i **[!UICONTROL Deduplication]**-aktiviteten. Det gör att du kan definiera grupper av fält som ska sammanfogas och tillhörande regler.
+
+   Mer information finns i avsnittet [här](../../workflow/using/deduplication-merge.md).
+
+   ![](assets/dedup3.png)
 
 ## Indataparametrar {#input-parameters}
 
