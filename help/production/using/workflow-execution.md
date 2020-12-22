@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -32,7 +32,7 @@ I vissa fall startar inte arbetsflöden som körs från en kampanj när du klick
 
 Det kan finnas flera orsaker till det här problemet, följ stegen nedan för att lösa det:
 
-1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](../../workflow/using/campaign.md). Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
+1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md). Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
 
    Mer information om övervakning av tekniska arbetsflöden finns på [den här sidan](../../workflow/using/monitoring-technical-workflows.md).
 
