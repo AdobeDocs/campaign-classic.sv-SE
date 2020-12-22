@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2926'
 ht-degree: 1%
 
 ---
@@ -281,7 +281,7 @@ När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTRO
 
 >[!NOTE]
 >
->De tekniska arbetsflödena för kampanjprocesser presenteras i [Lista över arbetsflöden för kampanjprocesser](../../workflow/using/campaign.md).
+>De tekniska arbetsflödena för Campaign-paketet presenteras i [Lista över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
 **Steg 1 - Godkännande av fil**
 
