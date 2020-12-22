@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 98%
+source-wordcount: '3729'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,12 @@ Avsnittet för leveransövervakning har omorganiserats i tematiska ämnen. [Läs
 Ett användningsexempel har lagts till om hur du lägger till avsändarens IP-adresser i leveransloggarna. [Läs mer](../../delivery/using/delivery-dashboard.md#use-case)
 
 Frågor och svar om sekretess har flyttats till [det här avsnittet](../../platform/using/privacy-faq.md).
+
+Ett användningsexempel har lagts till om hur du använder sammanfogningsfunktionen för aktiviteten Deduplicering. [Läs mer](../../workflow/using/deduplication-merge.md)
+
+Protokollet och inställningssidan för SMS-anslutningen har flyttats [här](../../delivery/using/sms-protocol.md).
+
+En anteckning har lagts till i avsnittet Transactional Messaging som varnar för att händelsemapparna inte får anges som vyer för körningsinstanserna, för att undvika problem med åtkomsträttigheterna. [Läs mer](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
