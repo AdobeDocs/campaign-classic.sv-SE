@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 98%
@@ -148,7 +148,7 @@ I Linux finns nu _apache_neolane.conf_ installerat i katalogen `conf`.
 * Korrigerade ett problem vid användning av Snowflake FDA-kopplingen. En användare med Snowflake FDA-namngivna åtkomsträttigheter kunde inte köra en fråga i ett Snowflake-schema. Ett fel av typen ”Lösenordet hittades inte” visades i loggarna. (NEO-23851)
 * Korrigerade ett problem vid användning av en FDA-koppling som inträffade när det länkade FDA-schemanamnet var en delsträng av ett elementnamn i det aktuella schemat. Detta inträffade till exempel om FDA-schemat var ”cust” och ett av elementen i mottagarschemat var ”customer”. När kolumnen i ”customer”-elementet hämtades och en kolumn från FDA-schemat &quot;cust&quot; lades till saknades värdet för den lokala kolumnen. (NEO-20193)
 * Korrigerade ett problem i arbetsflöden när poster hämtades från en extern databas och infogades i databasen i Campaign. (NEO-26359)
-* Korrigerade ett problem i det tekniska arbetsflödet **Uppdatera händelsestatus**. För att matcha storleken på inkommande motsvarande fält i aktiviteten **Leveransstatistik** ändrades storleken på tre målfält i aktiviteten **Uppdatera leveransstatus** från 32 till 64 bitar. (NEO-11557) Läs mer om arbetsflödet **Uppdatera händelsestatus** i [det här avsnittet](../../workflow/using/message-center--execution-.md).
+* Korrigerade ett problem i det tekniska arbetsflödet **Uppdatera händelsestatus**. För att matcha storleken på inkommande motsvarande fält i aktiviteten **Leveransstatistik** ändrades storleken på tre målfält i aktiviteten **Uppdatera leveransstatus** från 32 till 64 bitar. (NEO-11557) Läs mer om arbetsflödet **Uppdatera händelsestatus** i [det här avsnittet](../../workflow/using/about-technical-workflows.md).
 * Korrigerade ett problem i rapporten **Meddelandecentrets händelsehistorik** som orsakade skriptfel när filter tillämpades och gjorde det omöjligt att filtrera per ett datumintervall. (NEO-23365)
 * Korrigerade ett störningsproblem mellan de tekniska arbetsflödena **Kampanjjobb** (operationMgt) och **Förhandsgranskning** (forecasting). Detta inträffade när schemalagda leveranser förblev i statusen ”Klar för mål” eller ”Klar för leverans”. (NEO-20819)
 * Korrigerade ett XML-tolkningsproblem när XML-identifieraren inte fanns i mdata-fältet i xtkOperator. Detta orsakade fel efter uppgraderingen. (NEO-26113)
