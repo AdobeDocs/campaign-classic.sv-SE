@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 17%
@@ -105,7 +105,7 @@ De profiler som uteslöts under färdigställandet (typologiregler, karantänreg
 >
 >Facebook- och Twitter-kanaler beaktas inte.
 
-Du kan få en översikt över **[!UICONTROL Number of active profiles]** på Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**-menyn. Det faktiska antalet utförs av **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [det tekniska arbetsflödet](../../workflow/using/deliveries.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]**-menyn. Varje period varar i 12 månader.
+Du kan få en översikt över **[!UICONTROL Number of active profiles]** på Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**-menyn. Det faktiska antalet utförs av **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [det tekniska arbetsflödet](../../workflow/using/about-technical-workflows.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]**-menyn. Varje period varar i 12 månader.
 
 ## Självstudievideo {#create-profiles-video}
 
