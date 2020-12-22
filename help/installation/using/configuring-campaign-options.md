@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -204,7 +204,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
+   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Gör att du kan övervaka den tekniska arbetsflödeskörningen för <a href="../../workflow/using/campaign.md">operationMgt</a>. När det är aktiverat (värdet "1") loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
+   <td> Gör att du kan övervaka den tekniska arbetsflödeskörningen för <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. När det är aktiverat (värdet "1") loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
