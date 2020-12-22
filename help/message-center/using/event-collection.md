@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 5%
+source-wordcount: '137'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,7 @@ Händelser som genereras av informationssystemet kan samlas in på två sätt:
 När de har samlats in delas händelser upp, efter tekniska arbetsflöden, mellan realtids- och batchköer för körningsinstanserna, i väntan på att länkas till en meddelandemall.
 
 ![](assets/messagecenter_events_queues_001.png)
+
+>[!NOTE]
+>
+>I körningsinstanserna får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer eftersom detta kan leda till [åtkomstproblem](../../platform/using/access-management.md#about-permissions). Mer information om hur du anger en mapp som en vy finns i [Om vyer](../../platform/using/access-management.md#about-views).
