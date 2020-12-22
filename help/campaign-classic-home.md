@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 70%
+source-wordcount: '255'
+ht-degree: 66%
 
 ---
 
@@ -19,17 +19,16 @@ ht-degree: 70%
 
 ## Nyheter
 
-* **[Uppdatera integreringen](integrations/using/configuring-adobe-io.md)**<br/> av Adobe Experience Cloud-utlösare Den äldre autentiseringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O
+* **[Ta bort felaktiga ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> hårdvarustudsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Gmail-avbrott
 
-* **[Gå till HTTP/2-baserat API](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> för APN-providern Lär dig hur du migrerar från det äldre binära protokollet till HTTP/2-baserat API för APN-providern
+* **[Uppdatera ](integrations/using/configuring-adobe-io.md)**<br/> integreringen av Adobe Experience Cloud TriggersDen gamla autenticeringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O
 
-* **[Lägg till uttryckssymboler i meddelanden](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> Du kan nu infoga uttryckssymboler i meddelanden och ämnesrader
+* **[Gå till HTTP/2-baserad APNs-provider ](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> APILläs hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APNs-providern
+
+* **[Lägg till uttryckssymboler i ](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> meddelandenNu kan du infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
-
-* **[Spårningsfunktioner](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html)**<br/>
-Förstå spårningsfunktioner och -processer i Campaign
 
 [Fler uppdateringar](/help/rn/using/documentation-updates.md)
 
@@ -84,7 +83,7 @@ Förstå spårningsfunktioner och -processer i Campaign
 | Användbara sidor | Resurser för utvecklare |
 |---|---|
 | [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
+| [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Kom igång med Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/se/campaign/kb/acc-implementation.html) |
 | [Gold Standard-uppgradering](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
