@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 97%
@@ -110,7 +110,7 @@ Som personuppgiftsansvarig måste du se till att radera alla nödvändiga data o
 
 ## Anmäla sig igen {#opt-in-again}
 
-**Kan en registrerade som har raderats från Adobe Campaign anmäla sig senare?**
+### Kan en registrerade som har raderats från Adobe Campaign anmäla sig senare?
 
 En registrerad kan anmäla sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
 
