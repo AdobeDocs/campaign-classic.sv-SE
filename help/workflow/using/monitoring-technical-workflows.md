@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -58,7 +58,7 @@ För **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
 För **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Titta på alla arbetsflöden som finns under mappen **[!UICONTROL Campaign process]**. Se denna [sida](../../workflow/using/campaign.md) för mer information om detta.
+1. Titta på alla arbetsflöden som finns under mappen **[!UICONTROL Campaign process]**. Se denna [sida](../../workflow/using/about-technical-workflows.md) för mer information om detta.
 1. Kontrollera att arbetsflödena körs som schemalagda och att journalen inte visar återkommande fel.
 
 ## Arbetsflödesövervakning {#workflow-supervision}
