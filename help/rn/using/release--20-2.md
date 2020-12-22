@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2483'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Ny version av kontrollpanelen i oktober** med domänkonfiguration som använder CNAME och nya funktioner för databasövervakning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) Version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
+
+_22 december 2020_
+
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll:  uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+
+**Förbättringar**
+
+* Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+* Integreringsautentisering med utlösare som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline har ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
+* När stödet för iOS APN:er för det äldre binära protokollet har upphört, uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
+* Ett problem som orsakade inaktivering av SMPP-anslutningen efter ett anslutningsfel har korrigerats, vilket förhindrar att andra SMS-leveranser skickas och leder till prestandaproblem. (NEO-28609)
+* Korrigerade ett problem med serverkraschar genom att förhindra minnesfel när uttrycksanalysen rensades. (NEO-26856)
+* Korrigerade ett problem som gjorde att servern kraschade när måldata visades som tillhörde resterna från en **delad** aktivitet i ett arbetsflöde.
+* Korrigerade ett problem som kunde visa ett felmeddelande när SMS-meddelanden skulle förhandsgranskas efter en fråga i ett annat schema än **mottagaren** (nms:recipient). (NEO-27517)
+* Korrigerade ett problem när en HTTPS-anslutningsbegäran med portnumret som uttryckligen definierats i värdnamnet gjordes. Anropet misslyckades med ett certifikatfel. (NEO-29146)
+* Korrigerade ett problem i hanteringen av POSIX-trådar som genererade stora kärndumpfiler på marknadsinstansen. (NEO-28117 och NEO-29281)
+* Korrigerade problem som kan få webbprocessen att krascha vid förberedelse av leveranser eller vid förhandsgranskning av återkommande leveranser. (NEO-27790 och NEO-27517)
+* Korrigerade ett problem som orsakade att leveranser eller korrektur som skickades misslyckades när de utlöstes av en icke-adminoperator. (NEO-28597)
+
+## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
