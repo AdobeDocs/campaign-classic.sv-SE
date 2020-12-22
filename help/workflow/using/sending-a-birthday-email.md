@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ Lägg till en **Återkommande leverans**-aktivitet baserat på e-postmallen för
 
 >[!CAUTION]
 >
->För att arbetsflödena ska kunna köras måste de tekniska arbetsflödena för kampanjprocessen startas. Mer information finns i avsnittet [Lista över arbetsflöden för kampanjprocesser](../../workflow/using/campaign.md).
+>För att arbetsflödena ska kunna köras måste de tekniska arbetsflödena för Campaign-paketet startas. Mer information finns i avsnittet [Lista över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 >
 >Om godkännandestegen är aktiverade för kampanjen skickas leveranserna först när dessa steg har bekräftats. Mer information finns i avsnittet [Välja de processer som ska godkännas](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 
