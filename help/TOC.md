@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 98%
+source-wordcount: '2181'
+ht-degree: 97%
 
 ---
 
@@ -114,6 +114,8 @@ ht-degree: 98%
    + Skicka meddelanden på mobiltelefoner {#sending-messages-on-mobiles}
       + [SMS-kanal](delivery/using/sms-channel.md)
       + [LINE-kanal](delivery/using/line-channel.md)
+      + [Protokoll och inställningar för SMS-anslutning](delivery/using/sms-protocol.md)
+      + [Felsökning av SMS](delivery/using/troubleshooting-sms.md)
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
       + [Integrera Campaign SDK i den mobila applikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -438,6 +440,8 @@ ht-degree: 98%
          + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
          + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
+         + [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](workflow/using/deduplication-merge.md)
+      + Utforma frågor {#designing-queries}
          + [Kvartalsvis listuppdatering med en inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Målinriktning {#designing-queries}
          + [Fråga mottagartabellen](workflow/using/querying-recipient-table.md)
@@ -461,26 +465,7 @@ ht-degree: 98%
       + [Hantera aktivitetsbilder](workflow/using/managing-activity-images.md)
       + [Hantera benägenhet](workflow/using/managing-propensity.md)
       + [Hantera tidszoner](workflow/using/managing-time-zones.md)
-   + Tekniska arbetsflöden {#technical-workflows}
-      + [Om tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
-      + [Leveranser ](workflow/using/deliveries.md)
-      + [Campaign](workflow/using/campaign.md)
-      + [Webbanalys](workflow/using/web-analytics.md)
-      + [Distribuerad marknadsföring](workflow/using/distributed-marketing.md)
-      + [Övervaka levererbarhet](workflow/using/email-deliverability.md)
-      + [Inkorgsåtergivning](workflow/using/inbox-rendering.md)
-      + [Interaktion](workflow/using/interaction.md)
-      + [Kontroll över erbjudandemotor](workflow/using/control-of-offer-engine.md)
-      + [Meddelandecenter (kontroll)](workflow/using/message-center--control-.md)
-      + [Meddelandecenter (köra)](workflow/using/message-center--execution-.md)
-      + [Mobilappskanalen](workflow/using/mobile-app-channel.md)
-      + [LINE-kanal](workflow/using/line-channel.md)
-      + [Marknadsföringsresurser (MRM)](workflow/using/marketing-resources--mrm-.md)
-      + [Social marknadsföring](workflow/using/social-marketing.md)
-      + [Integrering med lösningar i Adobe Experience Cloud](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Sekretessdataskyddsförordningen](workflow/using/general-data-protection-regulation--gdpr-.md)
-      + [Överföring till mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
-      + [Plattform för mid-sourcing](workflow/using/mid-sourcing-platform.md)
+      + [Tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
 + Hantera erbjudanden {#managing-offers}
    + Kom igång med interaktion {#interaction-overview}
       + [Interaktion och erbjudandehantering](interaction/using/interaction-and-offer-management.md)
@@ -619,7 +604,7 @@ ht-degree: 98%
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
       + [Konfiguration av kampanjservern](installation/using/campaign-server-configuration.md)
       + [Driftsätta en instans](installation/using/deploying-an-instance.md)
-      + [Installera standardpaketet för Campaign Classic](installation/using/installing-campaign-standard-packages.md)
+      + [Installera inbyggda Campaign Classic-paket](installation/using/installing-campaign-standard-packages.md)
    + Ytterligare konfigurationer {#additional-configurations}
       + [Konfigurera Campaign-servern](installation/using/configuring-campaign-server.md)
       + [Ansluta via LDAP](installation/using/connecting-through-ldap.md)
