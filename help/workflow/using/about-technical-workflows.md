@@ -1,23 +1,27 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om tekniska arbetsflöden
-description: Lista över tekniska arbetsflöden för kampanjer
+title: Tekniska arbetsflöden
+description: Läs mer om de tekniska arbetsflödena för Campaign Classic-paket.
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3f2e984f85e517777751e3c36dc96437eefb3010
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 35%
+source-wordcount: '1839'
+ht-degree: 5%
 
 ---
 
 
-# Om tekniska arbetsflöden{#about-technical-workflows}
+# Tekniska arbetsflöden{#about-technical-workflows}
 
-De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggda Adobe Campaign-paket. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet. Som standard är de tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+## Om tekniska arbetsflöden {#overview}
+
+De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggda Adobe Campaign-paket. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet. Inbyggda paket beskrivs i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md).
+
+Som standard är tekniska arbetsflöden tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 >[!NOTE]
 >
@@ -25,23 +29,55 @@ De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggd
 
 Mer information om hur du övervakar tekniska arbetsflöden finns i [det dedikerade avsnittet](../../workflow/using/monitoring-technical-workflows.md).
 
-Detta avsnitt innehåller information om tekniska arbetsflöden som omfattar följande paket:
+## Förteckning över tekniska arbetsflöden {#list-technical-workflows}
 
-* [Leveranser ](../../workflow/using/deliveries.md)
-* [Campaign](../../workflow/using/campaign.md)
-* [Webbanalys](../../workflow/using/web-analytics.md)
-* [Distribuerad marknadsföring](../../workflow/using/distributed-marketing.md)
-* [Leveransövervakning (e-postleverans)](../../workflow/using/email-deliverability.md)
-* [Inkorgsåtergivning (IR)](../../workflow/using/inbox-rendering.md)
-* [Interaktion](../../workflow/using/interaction.md)
-* [Kontroll över erbjudandemotor](../../workflow/using/control-of-offer-engine.md)
-* [Meddelandecenter (kontroll)](../../workflow/using/message-center--control-.md)
-* [Meddelandecenter (köra)](../../workflow/using/message-center--execution-.md)
-* [Mobilappskanalen](../../workflow/using/mobile-app-channel.md)
-* [LINE-kanal](../../workflow/using/line-channel.md)
-* [Marknadsföringsresurser (MRM)](../../workflow/using/marketing-resources--mrm-.md)
-* [Social marknadsföring](../../workflow/using/social-marketing.md)
-* [Integrering med lösningar i Adobe Experience Cloud](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Sekretessdataskyddsförordningen](../../workflow/using/general-data-protection-regulation--gdpr-.md)
-* [Överföring till mid-sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
-* [Plattform för mid-sourcing](../../workflow/using/mid-sourcing-platform.md)
+| Tekniskt arbetsflöde | Paket | Beskrivning |
+|------|--------|-----------|
+| **Aliasrensning** (aliasCleansing) | Leverans | Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard. |
+| **Fakturering**  (fakturering) | Leverans | Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses som standard den 25:e varje månad. |
+| **Beräkning av Twitter-statistik**  (statistikTwitter) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på Twitter. |
+| **Kampanjjobb**  (operationMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet hanterar jobben för marknadsföringskampanjer (lanserar målinriktning, filextrahering osv.). Det skapar också arbetsflöden för återkommande och periodiska kampanjer. |
+| **Samla in sekretessförfrågningar**  (collectPrivacyRequests) | Sekretessdataskyddsförordningen | Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på skärmen för sekretesspolicy. |
+| **Kostnadsberäkning**  (budgetMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet startar beräkningen av utgifts- och kostnadsrader för budgetar, planer, program, kampanjer, leveranser och uppgifter. |
+| **Databasrensning**  (rensning) | Leverans | Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard. För mer information om detta hittar du i [det här avsnittet](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
+| **Ta bort blockerade LINE-användare**  (deleteBlockedLineUsersV2) | LINE-kanal | Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-kontot i 180 dagar. |
+| **Ta bort data**  för sekretessförfrågningar (deletePrivacyRequestsData) | Sekretessdataskyddsförordningen | Det här arbetsflödet tar bort mottagarens data som lagras i Adobe Campaign. |
+| **Leveransindikatorer**  (deliveryIndicators) | Plattform för mid-sourcing | Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme. |
+| **Diskussionsforumprocesser**  (newsgroupMgt) | Marknadsföringsresurser | Det här arbetsflödet hanterar leveransen av meddelanden från diskussionsforum. Den aktiveras när en godkännandesignal tas emot |
+| **Distribuerade marknadsföringsprocesser**  (centralLocalMgt) | Central/lokal marknadsföring (distribuerad marknadsföring) | Det här arbetsflödet påbörjar bearbetning som är relaterad till användning av den distribuerade marknadsföringsmodulen. Det startar skapandet av lokala kampanjer och hanterar meddelanden relaterade till order och tillgänglighet för kampanjpaket. |
+| **Rensa**  händelser (webAnalyticsPurgeWebEvents) | Web Analytics-anslutningar | Med det här arbetsflödet kan du ta bort alla händelser från databasfältet enligt den period som har konfigurerats i fältet Livslängd. |
+| **Exportera målgrupper till Adobe Experience Cloud** (exportSharedAudience) | Integrering med Adobe Experience Cloud | Det här arbetsflödet exporterar målgrupper som delade målgrupper/segment. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. |
+| **Prognoser**  (prognoser) | Leverans | Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses som standard varje dag klockan 1:00. |
+| **Fullständig aggregerad beräkning (propositionCp cube)** (agg_nmspropositioncp_full) | Erbjudandemotor (interaktion) | Det här arbetsflödet uppdaterar den fullständiga sammanställningen för erbjudandekuben. Den aktiveras varje dag kl. 6.00 som standard. Den här sammanställningen fångar följande dimensioner: Kanal, leverans, marknadsföringserbjudande och datum. Bufferterbjudandekuben används sedan för att generera rapporter baserat på erbjudanden. Du kan läsa mer om kuber i [det här avsnittet](../../reporting/using/about-cubes.md). |
+| **Identifiering av konverterade kontakter**  (webAnalyticsFindConverted) | Web Analytics-anslutningar | Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. De data som återställs av det här arbetsflödet finns i rapporten Effektivare återmarknadsföring (se den här sidan). |
+| **Importera målgrupper från Adobe Experience Cloud** (importSharedAudience) | Integrering med Adobe Experience Cloud | Med det här arbetsflödet kan du importera målgrupper/segment från olika Adobe Experience Cloud-lösningar till Adobe Campaign. |
+| **Jobb för leveranser i kampanjer**  (deliveryMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet utlöser de godkända leveranserna och påbörjar efterbearbetning av tjänsteleverantören för en extern leverans. Dessutom skickas meddelanden och påminnelser om godkännande. |
+| **Jobb för tjänsteleverantörer**  (providerMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet börjar bearbeta providern (e-post till routern och efterbearbetning) när leveranser har godkänts. |
+| **Uppdatering**  av åtkomsttoken för LINE V2 (updateLineV2AccessToken) | LINE-kanal | Det här arbetsflödet uppdaterar åtkomsttoken till LINE V2. |
+| **MID till LineUserID-migrering**  (MIDToUserIDMigration) | LINE-kanal | Det här arbetsflödet genererar användar-ID:t för LINE V2 för migrering från LINE V1 till LINE V2. |
+| **Marknadsföringsresursmeddelanden**  (assetMgt) | Marknadsföringsresurser | Det här arbetsflödet hanterar meddelanden som är kopplade till godkännande och publicering av marknadsföringsresurser. |
+| **Message Center  &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | Kontroll av transaktionsmeddelanden (Message Center - Control) | Det här arbetsflödet: <ul><li>återställer listan över händelser som bearbetats av åtgärderna.</li><li>synkroniserar med tabellen NmsBroadLogMsg för att återställa leveranskunskaper.</li><li>återställer händelseloggar så snart synkroniseringen med tabellen NmsBroadLogMsg har slutförts.</li><li>synkroniserar med NmsTrackingUrl-tabellen för att återställa spårningen för leverans-URL:er.</li><li>återställer URL:er för händelsespårning så snart synkroniseringen med tabellen NmsTrackingUrl har slutförts.</li><li>Med kan du återställa alla e-postadresser som placerats i karantän var tredje timme efter att en leverans har skickats.</ul> |
+| **Fullständig mängdberäkning**  för MessageCenter (agg_messageCenter_full) | Erbjudandemotor (interaktion) | Det här arbetsflödet uppdaterar den fullständiga sammanställningen för Message Center-kuben. Den aktiveras varje dag klockan tre som standard. Den här sammanställningen fångar följande dimensioner: Typ av kanal, datum, status och händelse. Meddelandecenterkuben används sedan för att generera rapporter baserade på händelser. Du kan läsa mer om kuber i [det här avsnittet](../../reporting/using/about-cubes.md) |
+| **Mid-sourcing (leveransräknare)** (defaultMidSourcingDlv) | Överföring till mid-sourcing | Det här arbetsflödet samlar in räkningsinformation för leveranser på servern för mellanlagring. Räkningsinformation omfattar allmänna leveransindikatorer, t.ex. antalet skickade leveranser. Spårningsinformation som öppningar inkluderas inte. Den aktiveras var tionde minut som standard. |
+| **Mid-sourcing (leveransloggar)** (defaultMidSourcingLog) | Överföring till mid-sourcing | Det här arbetsflödet samlar in leveransloggar på servern med mellanleverantörer. Den aktiveras som standard varje timme. |
+| **Hantering**  av NMAC-avanmälan (mobileAppOptOutMgt) | Mobilappskanalen | Det här arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Den utlöses var 6: e timme mellan 1:00 och 24:00. Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
+| **Antal aktiva faktureringsprofiler**  (billingActiveContactCount) | erbjudandemotor (interaktion) | Det här arbetsflödet räknar antalet aktiva profiler. Den utlöses varje natt klockan 1:00 som standard. ”Profil” innebär ett register över information (såsom en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller framtida kund. Fakturering gäller endast profiler som är &quot;aktiva&quot;. En profil betraktas som&quot;aktiv&quot; om profilen har delats eller kommunicerats via någon kanal under de senaste tolv månaderna. Facebook- och Twitter-kanaler beaktas inte. Du kan få en översikt över antalet aktiva profiler på menyn Administration > Kampanjhantering > Kundstatistik. |
+| **Erbjudandemeddelande**  (offerMgt) | Leverans | Det här arbetsflödet distribuerar godkända erbjudanden i onlinemiljön samt i alla kategorier i erbjudandekatalogen. |
+| **Rensa**  pausade arbetsflöden (cleanupPausedWorkflows) | Leverans | Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5. Mer information finns i [Hantera pausade arbetsflöden](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows). |
+| **Rensa**  sekretessbegäran (cleanupPrivacyRequests) | Sekretessdataskyddsförordningen | Det här arbetsflödet raderar filer för åtkomstbegäran som är äldre än 90 dagar. |
+| **Bearbetar grupphändelser**  (batchEventsProcessing) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du placera grupphändelser i en kö innan du associerar dem med en meddelandemall. |
+| **Bearbeta realtidshändelser**  (rtEventsProcessing) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du placera realtidshändelser i en kö innan du associerar dem med en meddelandemall. |
+| **Propositionssynkronisering**  (propositionSynch) | Kontroll över erbjudandemotorn med körningsinstans | Det här arbetsflödet synkroniserar förslag mellan marknadsinstansen och körningsinstansen som används för interaktioner. |
+| **Återställning av webbhändelser**  (webAnalyticsGetWebEvents) | Web Analytics-anslutningar | Varje timme laddar det här arbetsflödet ned segment för internetanvändare på en viss webbplats, placerar dem i Adobe Campaign-databasen och startar arbetsflödet för ommarknadsföring. |
+| **Uppdatera för levererbarhet** (deliverabilityUpdate) | Leveransövervakning (e-postleverans) | När paketet för leveransövervakning (e-postleverans) har installerats körs det här arbetsflödet varje natt för att regelbundet uppdatera listan över regler och för att aktivt hantera plattformsleveransen. |
+| **Rapporteringsaggregat**  (reportingAggregates) | Leverans | Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag klockan 2 som standard. |
+| **Skicka indikatorer och kampanjattribut**  (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan du skicka indikatorer för e-postkampanjer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Genesis Connector. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
+| **Stock: Beställningar och varningar**  (stockMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar. |
+| **Synkronisera Facebook-fans**  (syncFacebookFans) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Facebook-fans till Adobe Campaign varje dag kl. 7.00. |
+| **Synkronisera Facebook-sidor**  (syncFacebook) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00. |
+| **Synkronisera Twitter-sidor**  (syncTwitter) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Twitter-följare till Adobe Campaign varje dag kl. 7.00. |
+| **Aktivitetsmeddelande**  (taskMgt) | Marknadsföringsresurser | Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer. |
+| **Spårning**  (spårning) | Leverans | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |
+| **Uppdatera händelsestatus**  (updateEventsStatus) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du tilldela en status till en händelse. Händelsestatus är följande:<ul><li>Väntande: händelsen finns i en kö. Ingen meddelandemall har ännu kopplats till den.</li><li>Väntande leverans: Om händelsen finns i en kö har en meddelandemall kopplats till den och bearbetas av leveransen.</li><li>Skickat: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</li><li>Ignoreras av leveransen: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</li><li>Leveransfel: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</li><li>Händelsen omfattas inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</li></ul> |
+| **Uppdatering för levererbarhet** (deliverabilityUpdate) | Leverans | Med det här arbetsflödet kan du skapa en lista över regler för studsmeddelanden samt en lista över domäner och MX:er på plattformen. Det här arbetsflödet fungerar bara om HTTPS-porten är öppen. De här listorna uppdateras inte om inte leveransmodulen är installerad. |
+| **Uppdatera startnätverk för Inbox Rendering** (updateRenderingSeeds) | Inkorgsåtergivning (IR) | Det här arbetsflödet uppdaterar e-postadresser som används för inkorgsåtergivning och fungerar bara om HTTPS-porten är öppen för deliverability.neolane.net. |
