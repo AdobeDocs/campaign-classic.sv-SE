@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
+source-git-commit: 87d9196fac69b549014a8acb5f13b9bff97a846b
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -24,6 +24,24 @@ Om du migrerar från en gammal version rekommenderar vi att du först uppgradera
 Den här sidan listar Gold Standard-versioner.
 
 Se [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) för mer information om Campaign Gold Standard.
+
+## ![](assets/do-not-localize/limited_2.png) Gold Standard version 11{#gs-11}
+
+_22 december 2020_
+
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+
+Version 9032@2a2a028 innehåller följande förbättringar och korrigeringar:
+
+* Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+
+* Integreringsautentisering för utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
+
+* När stödet för iOS APN:er för det äldre binära protokollet har upphört, uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
+
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard version 10{#gs-10}
 
