@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,6 +65,10 @@ _27 oktober 2020_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 21 mars 2021.
+
 **Säkerhetsförbättringar**
 
 * Säker inläsning av bibliotek: för att skydda dig mot DLL preloading-angrepp läser Campaign nu endast in Windows DLL-filer från Windows standardiserade DLL-sökväg när Campaign Client (nlclient) läses in. [Läs mer](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -94,11 +98,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 **Förbättringar**
 
 * Flera förbättringar har gjorts i **klientkonsolen**:
-   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
-
-      >[!CAUTION]
-      >
-      >Efter uppdateringen av anslutningsprotokollet är uppgradering obligatorisk (server och konsol) för att kunna ansluta från 21 mars 2020.
+   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen. Uppgradering av server- och klientkonsol är obligatoriskt för anslutning efter 21 mars 2021.
    * För att förhindra inkompatibilitet med vissa begränsningar i grupprincipobjekt (GPO) för internetsäkerhet har inloggningsskärmen på klientkonsolen i Campaign ersatts av ett inbyggt standardformulär för Windows.
    * Korrigerade ett problem vid kopiera/klistra in aktiviteter i ett arbetsflöde med 64 bitars klientkonsol. (NEO-27635)
    * På menyn **Om** har information lagts till för att skilja på 64 bitars och 32 bitars konsoler.
