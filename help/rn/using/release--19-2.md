@@ -7,15 +7,26 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: b6f0a3afd6e41f41730009c576ae77fa0a9897cb
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1376'
 ht-degree: 8%
 
 ---
 
 
 # Version 19.2{#release-19-2}
+
+## ![](assets/do-not-localize/limited_2.png) Version 19.2.4 – build 9082 {#release-19-2-4-build-9082}
+
+_23 december 2020_
+
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll:  uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+
+* Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.2.3 – build 9081 {#release-19-2-3-build-9081}
 
