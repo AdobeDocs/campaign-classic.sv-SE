@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 5%
 
 ---
 
@@ -30,29 +30,24 @@ Den här integreringen gäller endast från och med **Campaign Classic 20.3- och
 
 Kontrollera att du har:
 
-* ett giltigt IMSOrgID: Organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO).
-* en utvecklare har tillgång till IMS-organisationen.
-
->[!NOTE]
+* en giltig **organisationsidentifierare**: organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **Developer access** to your Organization.  Om du behöver begära behörighet som systemadministratör för IMS-organisationen följer du proceduren [på den här sidan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) för att ge åtkomst till alla produktprofiler.
 >
->Om du behöver begära behörighet som systemadministratör för IMS-organisationen följer du proceduren [på den här sidan](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) för att ge åtkomst till alla produktprofiler.
-
-
 ## Steg 1: Skapa/uppdatera Adobe I/O Project {#creating-adobe-io-project}
 
-1. Öppna Adobe I/O och logga in med systemadministratörsbehörighet för IMSorg.
+1. Öppna Adobe I/O och logga in med systemadministratörsbehörighet för IMS-organisationen.
 
    >[!NOTE]
    >
-   > Kontrollera att du är inloggad på rätt IMSorg-portal.
+   > Se till att du är inloggad på rätt organisationsportal.
 
-1. Extrahera befintligt integrationsklient-ID från instanskonfigurationsfilen ims/authIMSTAClientId. Ett attribut som inte finns eller är tomt anger att klient-ID inte har konfigurerats.
+1. Extrahera befintligt integrationsklient-ID från instanskonfigurationsfilen ims/authIMSTAClientId. Ett attribut som inte finns eller är tomt anger att klientidentifieraren inte har konfigurerats.
 
    >[!NOTE]
    >
-   >Om ditt klient-ID är tomt kan du direkt **[!UICONTROL Create a New project]** i Adobe I/O.
+   >Om klientidentifieraren är tom kan du direkt **[!UICONTROL Create a New project]** i Adobe I/O.
 
-1. Identifiera det befintliga projektet med hjälp av det extraherade klient-ID:t. Sök efter befintliga projekt med samma klient-ID som det som extraherades i föregående steg.
+1. Identifiera det befintliga projektet med hjälp av den extraherade klientidentifieraren. Leta efter befintliga projekt med samma klientidentifierare som det som extraherades i föregående steg.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
