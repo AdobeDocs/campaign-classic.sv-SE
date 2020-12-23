@@ -7,15 +7,26 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 8d4fd855df2f373c2684fd8dfaf54ffe42e196f1
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1403'
 ht-degree: 6%
 
 ---
 
 
 # Version 20.1{#release-20-1}
+
+## ![](assets/do-not-localize/limited_2.png) Version 20.1.4 – build 9126 {#release-20-1-4-build-9126}
+
+_24 december 2020_
+
+>[!CAUTION]
+>
+>Den här versionen innehåller ett nytt anslutningsprotokoll:  uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+
+* Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.1.3 – build 9124{#release-20-1-3-build-9124}
 
