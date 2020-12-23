@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ _22 december 2020_
 
 >[!CAUTION]
 >
->Den här versionen innehåller ett nytt anslutningsprotokoll:  uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2020
+>Den här versionen innehåller ett nytt anslutningsprotokoll:  uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 21 mars 2021.
 
 **Förbättringar**
 
