@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 Din version av Adobe Campaign Classic stöder inte pipeline.
 
 1. Kontrollera om [!DNL pipelined]-elementet finns i konfigurationsfilen. Annars betyder det att det inte stöds.
-1. Uppgradera till version 6.11 build 8705 eller senare.
+1. Uppgradera till Campaign 20.3 eller Gold Standard 11.
 
 **Pipelined misslyckas med &#39;&#39; aurait d¢commencer par  `[` ou  `{` (iRc=16384)&quot;**
 
@@ -31,7 +31,7 @@ Ställ in JSON-konfigurationen i alternativet **NmsPipeline_Config**. Se&quot;ro
 
 **Överföringen misslyckas med &quot;ämnet måste vara en giltig organisation eller kund&quot;**
 
-IMSOrgid-konfigurationen är inte giltig.
+Organisationsidentifierarkonfigurationen är inte giltig.
 
 1. Kontrollera att IMSOrgId har angetts i serverConf.xml.
 1. Leta efter ett tomt IMSOrgId i instansens konfigurationsfil som kan åsidosätta standardvärdet. Ta i så fall bort den.
@@ -85,4 +85,3 @@ I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskam
 1. Leta efter fel i pipelined.log som kan orsaka nya försök. Åtgärda eventuella fel.
 1. Kontrollera storleken på kön på statussidan för [!DNL pipelined]. Om köstorleken är stor kan du förbättra JS-prestanda.
 1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna i Analytics med färre meddelanden.
-Bilagor
