@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -75,23 +75,23 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    **omstart av webbserver**
 
    >[!NOTE]
-   > 
-   >    * Om instansen inte anges används standardinstansen.
-   >    * I en nödsituation använder du alternativet **-direct** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **döda -9**).
-   >    * Använd alternativet **-noconsole** för att försäkra dig om att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via modulen **syslogd**.
-   >    * Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
+   >
+   >* Om instansen inte anges används standardinstansen.
+   >* I en nödsituation använder du alternativet **-direct** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **döda -9**).
+   >* Använd alternativet **-noconsole** för att försäkra dig om att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via modulen **syslogd**.
+   >* Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
 
-      >    
-      >      
+      >
+      >   
       Exempel:
-      >    
-      >      
+      >
+      >   
       **webbverbose för omstart av nlserver**
-      >    
-      >      
+      >
+      >   
       **nlserver start mta@myinstance -verbose**
-      >    
-      >      
+      >
+      >   
       Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
 
 
