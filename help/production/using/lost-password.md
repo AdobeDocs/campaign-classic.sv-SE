@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b7f44f4c18bef4cc412af878846b2c4305a17787
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '155'
+ht-degree: 9%
 
 ---
 
@@ -18,48 +18,56 @@ ht-degree: 3%
 # Lösenordet har tappats bort{#lost-password}
 
 Du kan ändra eller återställa ett förlorat lösenord.
-
 Det finns två möjliga scenarier:
 
-* Lösenord som har gått förlorat av en Adobe Campaign-operator.
+* **Lösenord som gått förlorat av en Adobe Campaign-operatör**
 
-   I så fall kan du ändra lösenordet för den berörda operatorn. Det gör du genom att ansluta via en operator med administratörsbehörighet, högerklicka på en operator, välja **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och ange operatörens nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter.
+I så fall kan du ändra lösenordet för den berörda operatorn.
+Följ stegen nedan för att göra detta:
+
+1. Anslut via en operator med administratörsbehörighet.
+1. Högerklicka på en operator.
+1. Välj **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
-* **Förlorat** internt lösenord (endast lokala kunder).
+1. Ange operatorns nya lösenord. Vi rekommenderar att operatorerna ändrar sitt lösenord när de först återansluter.
 
-   Om det interna **lösenordet för** försvinner måste du initiera om det. Gör så här:
+* **Intern lösenordsförlust (endast lokala kunder)**
 
-   1. Redigera filen **/usr/local/neolane/nl6/conf/serverConf.xml**.
-   1. Gå till raden **internalPassword**.
+Om det interna lösenordet går förlorat måste du initiera om det.
+Gör så här:
 
-      ```
-      <!-- XTK authentication mode internalPassword : Password of internal account -->
-       <xtk internalPassword="myPassword"/>
-      ```
+1. Redigera filen **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-   1. Ta bort strängen inom citattecken, i det här fallet: **myPassword**
+1. Gå till raden **internalPassword**.
 
-      Du får alltså följande rad:
+   ```
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword="myPassword"/>
+   ```
 
-      ```
-      !-- XTK authentication mode internalPassword : Password of internal account -->
-      <xtk internalPassword=""/
-      ```
+1. Ta bort strängen inom citattecken, i det här fallet: **myPassword**
 
-   1. Spara ändringarna och stäng filen.
-   1. Konfigurera det nya lösenordet. Ange följande kommandon om du vill göra det:
+   Du får alltså följande rad:
 
-      ```
-      nlserver config -internalpassword
-      HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
-      Enter current password.
-      Password: (empty)
-      Enter the new password.
-      Password: 
-      Confirmation 
-      ```
+   ```
+   !-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/
+   ```
 
-   1. Du kan nu använda ditt nya lösenord för att ansluta i läget **Intern**.
+1. Spara ändringarna och stäng filen.
 
+1. Konfigurera det nya lösenordet. Ange följande kommandon om du vill göra det:
+
+   ```
+   nlserver config -internalpassword
+   HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+   Enter current password.
+   Password: (empty)
+   Enter the new password.
+   Password: 
+   Confirmation 
+   ```
+
+1. Du kan nu använda ditt nya lösenord för att ansluta i läget **Intern**.
