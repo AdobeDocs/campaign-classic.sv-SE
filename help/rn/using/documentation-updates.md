@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
+source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
-source-wordcount: '3729'
-ht-degree: 98%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,16 @@ ht-degree: 98%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
 
 Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
+
+## Januari 2021 {#jan,2021}
+
+Aktivitetsavsnittet **[!UICONTROL Fork]** har berikats med ytterligare information. En anteckning har lagts till för att ange att utgående övergångar inte ska köras samtidigt och att aktiviteten därför inte ska användas för att förbättra arbetsflödenas prestanda. [Läs mer](../../workflow/using/fork.md)
+
+The Locating Tomcat version section has been move [here](../../production/using/locate-tomcat-version.md).
+
+Listan över tekniska arbetsflöden med tillhörande paket har organiserats om till en enda sida. [Läs mer](../../workflow/using/about-technical-workflows.md)
+
+Felsökningsavsnittet i övervakningsguiden har organiserats om och förbättrats med en landningssida. [Läs mer](../../production/using/troubleshooting.md).
 
 ## December 2020 {#dec-2020}
 
@@ -149,7 +159,7 @@ Ett användningsfall om hur man automatiskt uppdaterar en lista med en inkrement
 
 Ett nytt avsnitt har lagts till med riktlinjer gällande att övervaka Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
-Avsnittet Sekretess och samtycke har förbättrats med mer detaljerad information och användbara länkar. [Läs mer](../../platform/using/privacy-and-recommendations.md).
+Avsnittet Sekretess och samtycke har förbättrats med mer detaljerad information och användbara länkar. [Läs mer](../../platform/using/privacy-and-recommendations.md)
 
 Sekretesshanteringen på sidan Campaign Classic har uppdaterats med information om fältet ”reglering” som nu är tillgängligt när du använder API:et, så att det går att konfigurera en automatisk process för förfrågan om användarens information. [Läs mer](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -167,7 +177,7 @@ Användningsfall har lagts till om hur data [krypteras](../../workflow/using/how
 
 Sidan för integration av utlösare i Experience Cloud och Adobe Campaign Classic har flyttats [hit](../../integrations/using/about-triggers.md).
 
-## juli 2020 {#release-20-2}
+## Juli 2020 {#release-20-2}
 
 **Nya funktioner i version 20.2**
 
