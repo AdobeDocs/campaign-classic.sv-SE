@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -19,10 +19,10 @@ ht-degree: 8%
 
 De flesta prestandaproblem är kopplade till databasunderhåll. Här är fyra huvudtips som hjälper dig att hitta orsaken till långsamma prestanda:
 
-* Konfiguration,
-* Installation och konfigurering av Adobe Campaign-plattformen,
-* Databasunderhåll,
-* Realtidsdiagnos.
+* Konfiguration
+* Installation och konfigurering av Adobe Campaign-plattformen
+* Databasunderhåll
+* Realtidsdiagnos
 
 ## Konfiguration {#configuration}
 
