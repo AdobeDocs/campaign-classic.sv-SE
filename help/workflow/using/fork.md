@@ -7,20 +7,33 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
 
 # Förgrening{#fork}
 
-Med en gaffel kan du aktivera alla dess utgående aktiviteter parallellt.
+Med aktiviteten **[!UICONTROL Fork]** kan du skapa flera utgående övergångar, så att du kan utföra flera aktiviteter oberoende av varandra i samma arbetsflöde.
 
-Du kan till exempel använda aktiviteten när innehåll skapas och skickas automatiskt, för att starta målberäkningen och innehållsskapandet samtidigt. Ett användningsexempel finns i [det här avsnittet](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+Du kan till exempel använda aktiviteten efter en fråga för att utföra två åtgärder parallellt:
+
+* Spara resultatet av frågan till en målgrupp,
+* Utför en segmentering av resultatet för att skicka flera leveranser.
+
+Du kan också använda aktiviteten när du skapar innehåll och skickar ut automatisering för att starta målberäkningen och skapa innehåll parallellt. Ett användningsexempel finns i [det här avsnittet](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+
+>[!WARNING]
+>
+>Kom ihåg att utgående övergångar som läggs till efter en Fork-aktivitet inte körs samtidigt.
+>
+>Aktiviteten bör därför inte användas för att förbättra arbetsflödets prestanda, utan för att utföra flera aktiviteter oberoende av varandra och så småningom förena dem innan resten av arbetsflödet körs.
 
 Om du vill konfigurera aktiviteten öppnar du den och definierar sedan antal och etikett för de utgående övergångarna.
 
 ![](assets/s_user_segmentation_fork.png)
+
+Du kan sedan konfigurera varje utgående övergång och sedan förena dem med en [AND-join](../../workflow/using/and-join.md)-aktivitet om det behövs. På så sätt körs resten av arbetsflödet bara när **[!UICONTROL Fork]**-aktivitetens utgående övergångar har slutförts.
