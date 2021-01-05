@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -158,8 +158,8 @@ ht-degree: 97%
       + [Kom igång med leveransövervakning](delivery/using/about-delivery-monitoring.md)
       + [Åtkomst till listan över leveranser](delivery/using/list-of-deliveries.md)
       + [Kontrollpanel för leverans](delivery/using/delivery-dashboard.md)
-      + [Bästa praxis för leverans](delivery/using/delivery-performances.md)
-      + [Felsökning av leverans](delivery/using/delivery-troubleshooting.md)
+      + [Bästa praxis för leveransprestanda](delivery/using/delivery-performances.md)
+      + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
       + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
@@ -698,18 +698,18 @@ ht-degree: 97%
       + Element och attribut {#elements-attributes}
          + [Introduktion](configuration/using/schema-introduction.md)
          + [Attribut](configuration/using/schema/attribute.md)
-         + [Beräkningssträng](configuration/using/schema/compute-string.md)
+         + [Databeräkningssträng](configuration/using/schema/compute-string.md)
          + [Villkor](configuration/using/schema/condition.md)
          + [Databasindex](configuration/using/schema/db-index.md)
          + [Element](configuration/using/schema/element.md)
          + [Uppräkning](configuration/using/schema/enumeration.md)
          + [Hjälp](configuration/using/schema/help.md)
-         + [Hörn](configuration/using/schema/join.md)
+         + [Gå med](configuration/using/schema/join.md)
          + [Nyckel](configuration/using/schema/key.md)
          + [Nyckelfält](configuration/using/schema/keyfield.md)
          + [Metod](configuration/using/schema/method.md)
          + [Metoder](configuration/using/schema/methods.md)
-         + [Param](configuration/using/schema/param.md)
+         + [Param.](configuration/using/schema/param.md)
          + [Parametrar](configuration/using/schema/parameters.md)
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
