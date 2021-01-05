@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 3%
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # Prestanda- och genomströmningsproblem{#performance-and-throughput-issues}
 
->[!NOTE]
->
->Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna. Mer information om innehållet i respektive release finns i [versionsinformationen](../../rn/using/latest-release.md).
+Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna.
+
+Mer information om innehållet i respektive release finns i [versionsinformationen](../../rn/using/latest-release.md).
 
 ## Maskinvara och infrastruktur {#hardware-and-infrastructure}
 
-Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns i den här [artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
 Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakta konsult- eller supportteamen om du behöver det här verktyget. Här är några viktiga saker du bör kontrollera med det här verktyget:
 
@@ -33,7 +33,7 @@ Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur m
 
 Adobe Campaign har också ett [verktyg](../../production/using/monitoring-processes.md#manual-monitoring) för att kontrollera processor- och RAM-användning. Använd det här verktyget och se specifika indikatorer som: **Minne**, **Växla minne**, **disk**, **Aktiva processer**. Om värdena är för höga kan du försöka minska antalet arbetsflöden eller schemalägga arbetsflöden att starta vid olika tidpunkter.
 
-## Databasprestanda {#database-performances}
+## Databaskontroll {#database-performances}
 
 För det mesta är prestandaproblem kopplade till databasunderhåll. Här är de viktigaste objekten att kontrollera:
 
@@ -68,4 +68,3 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 >[!NOTE]
 >
 >Se även avsnittet [Leveransnyckelpunkter](../../delivery/using/deliverability-key-points.md).
-
