@@ -7,17 +7,17 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 90%
+ht-degree: 86%
 
 ---
 
 
-# Gold Standard-version{#gold-standard}
+# Gold Standard-versioner{#gold-standard}
 
-Gold Standard är versionen av Campaign Classic med långsiktig support. Som Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. Kunder med lokala installationer eller hybridlösningar kan också dra nytta av Gold Standard-versioner.
+Gold Standard är versionen av Campaign Classic med långsiktig support. Som värd för Gold Standard-användare har du automatiskt tillgång till uppgraderingen Gold Standard med den senaste stabila versionen utan någon åtgärd. Lokala kunder och Hybrid-kunder kan också dra nytta av Gold Standard-releaser.
 
 Om du migrerar från en gammal version rekommenderar vi att du först uppgraderar till den här versionen.
 
