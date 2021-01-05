@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
+source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 99%
+source-wordcount: '2202'
+ht-degree: 98%
 
 ---
 
@@ -669,23 +669,31 @@ ht-degree: 99%
       + [Typ av underhåll](production/using/types-of-maintenance.md)
       + [RDBMS-specifika rekommendationer](production/using/rdbms-specific-recommendations.md)
       + [Programobjekt](production/using/application-objects.md)
-   + Felsökning {#troubleshooting}
-      + [Prestanda- och genomströmningsproblem](production/using/performance-and-throughput-issues.md)
-      + [Bilder saknas](production/using/images-missing.md)
-      + [Bildvisningsproblem](production/using/image-display-issues.md)
-      + [Tillfälliga filer](production/using/temporary-files.md)
-      + [Databasprestanda](production/using/database-performances.md)
-      + [Moduler och vanliga problem](production/using/modules-and-frequent-issues.md)
-      + [Loggprecision](production/using/log-precision.md)
-      + [Spåra loggproblem](production/using/tracking-logs-issues.md)
-      + [Arbetsflödeskörning](production/using/workflow-execution.md)
-      + [Det gick inte att ansluta](production/using/failure-to-connect.md)
-      + [Anslutningsgränser](production/using/connection-thresholds.md)
-      + [Stackspårning i Linux](production/using/stack-trace-in-linux.md)
-      + [Kodning av Oracle-databasen](production/using/encoding-of-the-oracle-database.md)
-      + [Konsoluppdatering](production/using/console-update.md)
-      + [Lösenordet har tappats bort](production/using/lost-password.md)
-      + [JSP-beteende](production/using/jsp-behavior.md)
+   + Felsökning {#troubleshooting-toc}
+      + [Översikt över felsökning av produktion](production/using/troubleshooting.md)
+      + Vanliga och allmänna problem {#common-general-issues-toc}
+         + [Moduler och vanliga problem](production/using/modules-and-frequent-issues.md)
+         + [Arbetsflödeskörning](production/using/workflow-execution.md)
+         + [Lösenordet har tappats bort](production/using/lost-password.md)
+         + [Konsoluppdatering](production/using/console-update.md)
+      + Leveransfelsökning {#delivery-troubleshooting-toc}
+         + [Prestanda- och genomströmningsproblem](production/using/performance-and-throughput-issues.md)
+         + [Bildvisningsproblem](production/using/image-display-issues.md)
+         + [Bilder saknas](production/using/images-missing.md)
+         + [Tillfälliga filer](production/using/temporary-files.md)
+      + Arbeta med loggar {#working-with-log-toc}
+         + [Loggprecision](production/using/log-precision.md)
+         + [Spåra loggproblem](production/using/tracking-logs-issues.md)
+      + Databasproblem {#database-issues-toc}
+         + [Databasprestanda](production/using/database-performances.md)
+         + [Kodning av Oracle-databasen](production/using/encoding-of-the-oracle-database.md)
+      + Anslutningsförbättringar {#connection-improvements-toc}
+         + [Det gick inte att ansluta](production/using/failure-to-connect.md)
+         + [Anslutningsgränser](production/using/connection-thresholds.md)
+      + Teknisk felsökning {#technical-troubleshooting-toc}
+         + [Stackspårning i Linux](production/using/stack-trace-in-linux.md)
+         + [JSP-beteende](production/using/jsp-behavior.md)
+         + [Söker efter Tomcat-version](production/using/locate-tomcat-version.md)
 + Utvecklarhandbok {#configuring-campaign-classic}
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
