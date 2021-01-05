@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -21,11 +21,13 @@ För servrar med stor belastning kan anslutningens tröskelvärde överskridas. 
 
 Det finns tre olika tröskelvärden:
 
-1. Tröskelvärdet för webbanslutning, konfigurerat på webbservern. Kontakta systemadministratören om du vill ändra den.
-1. Tröskelvärde för databasanslutning. Kontakta databasadministratören om du vill ändra den.
-1. Tröskelvärdet för Adobe Campaign-anslutning finns på två platser:
+* Tröskelvärdet **för webbanslutning**, konfigurerat på webbservern. Kontakta systemadministratören om du vill ändra den.
 
-   * Tomcat side: alla frågor som faktiskt kommer från Adobe Campaign Tomcat-klienten.
+* Tröskelvärdet för **databasanslutning**. Kontakta databasadministratören om du vill ändra den.
+
+* **Adobe Campaign-anslutningströskeln**, finns på två platser:
+
+   * **** Tomcatside: alla frågor som faktiskt kommer från Adobe Campaign Tomcat-klienten.
 
       Detta tröskelvärde konfigureras i filen **nl6/tomcat-8/conf/server.xml**. Med attributet **maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
 
@@ -41,7 +43,7 @@ Det finns tre olika tröskelvärden:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * Databas: alla anslutningar som är öppna samtidigt i databasen av en process.
+   * **Databas**: alla anslutningar som är öppna samtidigt i databasen av en process.
 
       Detta tröskelvärde konfigureras i filen **nl6/conf/serverConf.xml**. Med attributet **maxCnx** i **datakällpoolen** kan du öka tröskeln för frågor som behandlas samtidigt.
 
