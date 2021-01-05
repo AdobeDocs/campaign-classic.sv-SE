@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -19,15 +19,16 @@ ht-degree: 13%
 
 Det kan finnas flera orsaker till att loggar inte vidarebefordras. Vi rekommenderar att du kontrollerar följande information:
 
-* Har arbetsflödet **Spårning** fel?
+* **Har****spårningsarbetsflödet fel?**
 
-   Se [Övervaka tekniska arbetsflöden](../../workflow/using/monitoring-technical-workflows.md).
+Se [Övervaka tekniska arbetsflöden](../../workflow/using/monitoring-technical-workflows.md).
 
-   ![](assets/tracking_scheduled_task.png)
+![](assets/tracking_scheduled_task.png)
 
-* Körs modulen **spårningslogd** på servern?
+* **Är modulen****trackinglogg på servern?**
 
-   Se [Loggfiler](../../production/using/log-files.md).
+Se [Loggfiler](../../production/using/log-files.md).
 
-* Har ändringar gjorts? De kan utlösa en förlust av anslutningen till servrarna med hjälp av spårningsaliaset.
+* **Har ändringar gjorts?**
 
+De kan utlösa en förlust av anslutningen till servrarna med hjälp av spårningsaliaset.
