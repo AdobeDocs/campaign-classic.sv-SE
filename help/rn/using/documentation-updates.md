@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/usin
 
 ## December 2020 {#dec-2020}
 
-Avsnittet för leveransövervakning har omorganiserats i tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
+Avsnittet Leveransövervakning har omorganiserats med tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
 
-Ett användningsexempel har lagts till om hur du lägger till avsändarens IP-adresser i leveransloggarna. [Läs mer](../../delivery/using/delivery-dashboard.md#use-case)
+Ett användningsfall har lagts till om hur du lägger till avsändarnas IP-adresser i leveransloggarna. [Läs mer](../../delivery/using/delivery-dashboard.md#use-case)
 
 Frågor och svar om sekretess har flyttats till [det här avsnittet](../../platform/using/privacy-faq.md).
 
