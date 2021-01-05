@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 # Tillfälliga filer{#temporary-files}
 
-Om felmeddelanden som följande visas (särskilt i leveransloggar) när systemet aktiveras:
+Felmeddelanden som följande kan visas (särskilt i leveransloggar) när systemet tas i produktion:
 
-**Det går inte att byta namn på filen /tmp/tmp0000.tmp till /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;(errno=18, Invalid cross-device link) (iRc=-52)**
+*Det går inte att byta namn på filen /tmp/tmp0000.tmp till /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;(errno=18, Invalid cross-device link) (iRc=-52)*
 
 Orsaken är följande:
 
