@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,15 @@ Om du behöver använda flera kanaler måste du installera och konfigurera relat
 
 ## Lägga till en leveranskanal {#adding-a-delivery-channel}
 
-Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras innan du installerar Transactional-meddelandepaketet. Om du har startat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan bestämmer dig under projektet för att lägga till en ny kanal måste du följa dessa steg:
+Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras innan du installerar Transactional-meddelandepaketet.
+
+Adobe rekommenderar att du alltid lägger till leveranskanalpaketet innan du installerar Transactional-meddelandepaketet.
+
+Om du har påbörjat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan bestämmer dig under projektet för att lägga till en ny kanal, kan du följa stegen nedan.
+
+>[!NOTE]
+>
+>Den här proceduren gäller endast kunder som använder en Windows NLServer som är installerad på samma dator som de arbetar på.
 
 1. Installera den kanal du behöver, till exempel **Mobile channel**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
 1. Utför en filimport ( **[!UICONTROL Tools > Advanced > Import package... > File]**) och välj filen **datakitnms **`[Your language]`**packageCenter.xml**.
