@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '111'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ För kunder som använder värdtjänster påverkas inte. Läs följande för anl
 
 **Apache-användare:**
 
-Apache-användare påverkas inte om de använder angiven **apache_neolane.conf**
+Apache-användare påverkas inte om de använder angiven **apache_neolane.conf**.
 
 **IIS-användare:**
 
@@ -31,4 +31,3 @@ För IIS-användare (i Windows) visas flera ikoner som saknas i konsolen efter b
 
 1. Efter bygguppdateringen dubbelklickar du på **iis_neolane_setup.vbs** i installationskatalogen för Campaign. Standardsökvägen är C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
 1. Starta om IIS-webbplatsen som uppdaterades i föregående steg.
-
