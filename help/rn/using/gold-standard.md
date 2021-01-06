@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ Den här sidan listar Gold Standard-versioner.
 
 Se [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) för mer information om Campaign Gold Standard.
 
-## ![](assets/do-not-localize/limited_2.png) Gold Standard version 11{#gs-11}
+## ![](assets/do-not-localize/green_2.png) Gold Standard version 11{#gs-11}
 
 _22 december 2020_
 
@@ -33,7 +33,7 @@ _22 december 2020_
 >
 >Den här versionen innehåller ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 21 mars 2021.
 
-Version 9032@2a2a028 innehåller följande förbättringar och korrigeringar:
+Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
 
@@ -43,7 +43,7 @@ Version 9032@2a2a028 innehåller följande förbättringar och korrigeringar:
 
 * Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/green_2.png) Gold Standard version 10{#gs-10}
+## ![](assets/do-not-localize/red_2.png) Gold Standard version 10{#gs-10}
 
 _7 juli 2020_
 
