@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 94%
@@ -29,7 +29,7 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-versionerna** är: [Gold Standard version 10](../../rn/using/gold-standard.md#gs-10) och [Campaign version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+De **senaste GA-versionerna** är: [Gold Standard version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
