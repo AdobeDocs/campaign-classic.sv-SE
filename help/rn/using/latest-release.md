@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 97%
+source-wordcount: '1911'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,14 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som ing�
 
 Se [den här sidan](../../rn/using/gold-standard.md) för versionen Campaign Classic Gold Standard (senaste GA-builden).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.3.1 – build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/blue_2.png) Version 20.3.3 – build 9234 {#release-20-3-3-build-9234}
+
+_11 januari 2021_
+
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
+* Korrigerade ett regressionsproblem relaterat till sändningsgenereringsprocessen som kunde få MTA-processen att krascha.
+
+## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
 
