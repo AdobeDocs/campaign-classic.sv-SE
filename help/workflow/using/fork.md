@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Du kan till exempel använda aktiviteten efter en fråga för att utföra två �
 
 Du kan också använda aktiviteten när du skapar innehåll och skickar ut automatisering för att starta målberäkningen och skapa innehåll parallellt. Ett användningsexempel finns i [det här avsnittet](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >Kom ihåg att utgående övergångar som läggs till efter en Fork-aktivitet inte körs samtidigt.
 >
