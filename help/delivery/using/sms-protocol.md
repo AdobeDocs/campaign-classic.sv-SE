@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
+source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
 workflow-type: tm+mt
 source-wordcount: '8424'
 ht-degree: 0%
@@ -102,7 +102,7 @@ I det avgränsade läget **Transmitter+receiver** beror anslutningen på vilken 
 
 När du till exempel skickar en MT används sändaranslutningen och `RESP` som bekräftar att MT också skickas via sändningskanalen. När du tar emot ett flerlägesobjekt (eller ett SR) används mottagaranslutningen för att ta emot flerlägesobjektet och skicka `RESP` som bekräftar flerlägesobjektet.
 
-![](assets/sms_protocol_1.png)
+![](assets/do-not-localize/sms_protocol_1.png)
 
 I Adobe Campaign Classic, för att länka SR med motsvarande MT, returneras ett ID av SMSC med stegen `SUBMIT_SM_RESP` och `DELIVER_SM`. Identifieraren lagras i fältet `providerId` i tabellen `nms::providerMsgId` och är länkad till `broadLogId` och `deliveryId`. Denna matchningsåtgärd utförs av SMS-processen när den skriver till databasen.
 
@@ -505,7 +505,7 @@ Fönstret är det antal `SUBMIT_SM PDU`s som kan skickas utan att vänta på en 
 
 Exempel på en överföring med ett maximalt fönster på 4:
 
-![](assets/sms_protocol_2.png)
+![](assets/do-not-localize/sms_protocol_2.png)
 
 Fönstret hjälper till att öka genomströmningen när nätverkslänken har hög latens.  Fönstrets värde måste vara minst antalet SMS/s multiplicerat med länkens latens
 i sekunder så att kopplingen aldrig väntar på en `SUBMIT_SM_RESP` innan nästa meddelande skickas.
@@ -772,7 +772,7 @@ Giltighetsperioden överförs i fältet `validity_period` i `SUBMIT_SM PDU`. Dat
 
 ## Utökad allmän SMPP-anslutning {#acc-extended-connector}
 
-![](assets/sms_protocol_4.png)
+![](assets/do-not-localize/sms_protocol_4.png)
 
 Pilar representerar dataflöden.
 
