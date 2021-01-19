@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
+source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2293'
+ht-degree: 94%
 
 ---
 
@@ -68,10 +68,22 @@ ht-degree: 98%
       + [Exportera och importera profiler](platform/using/exporting-and-importing-profiles.md)
       + [Skapa och hantera listor](platform/using/creating-and-managing-lists.md)
    + Importera och exportera data {#importing-and-exporting-data}
-      + [Allmän import och export](platform/using/generic-imports-and-exports.md)
-      + [Exportera data](platform/using/exporting-data.md)
-      + [Importera data](platform/using/importing-data.md)
-      + [Använda en SFTP-server](platform/using/sftp-server-usage.md)
+      + [Kom igång med import och export av data](platform/using/get-started-data-import-export.md)
+      + [Importera och exportera data med hjälp av arbetsflöden](platform/using/import-export-workflows.md)
+      + Arbeta med generiska importer och exporter {generic-importing-exporting}
+         + [Kom igång med generiska importer och exporter](platform/using/about-generic-imports-exports.md)
+         + [Skapa import- och exportmallar](platform/using/creating-import-export-templates.md)
+         + [Skapa import- och exportjobb](platform/using/creating-import-export-jobs.md)
+         + [Konfigurerar importjobb](platform/using/executing-import-jobs.md)
+         + [Konfigurerar exportjobb](platform/using/executing-export-jobs.md)
+         + [Övervaka körning av jobb](platform/using/monitoring-jobs-execution.md)
+         + [Allmänna importexempel](platform/using/import-operations-samples.md)
+      + Hantera datakryptering och komprimering {managing-data-encryption-compression}
+         + [Zippa upp eller dekryptera en fil före bearbetning](platform/using/unzip-decrypt.md)
+         + [Zippa eller kryptera en fil före bearbetning](platform/using/zip-encrypt.md)
+      + God praxis och felsökning {best-practices}
+         + [Importera och exportera metodtips](platform/using/import-export-best-practices.md)
+         + [Bästa praxis och felsökning för SFTP-servrar](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
       + [Filtreringsalternativ](platform/using/filtering-options.md)
       + [Skapa filter](platform/using/creating-filters.md)
@@ -86,7 +98,10 @@ ht-degree: 98%
       + [Hantera uppräkningar](platform/using/managing-enumerations.md)
    + Kopplingar {#connectors}
       + [Om kopplingar](platform/using/about-connectors.md)
-      + [CRM-kopplingar](platform/using/crm-connectors.md)
+      + CRM-kopplingar{#crm-connectors}
+         + [Kom igång med CRM Connectors](platform/using/crm-connectors.md)
+         + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Synkronisera data med CRM](platform/using/crm-data-sync.md)
       + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
@@ -114,8 +129,8 @@ ht-degree: 98%
    + Skicka meddelanden på mobiltelefoner {#sending-messages-on-mobiles}
       + [SMS-kanal](delivery/using/sms-channel.md)
       + [LINE-kanal](delivery/using/line-channel.md)
-      + [Protokoll och inställningar för SMS-anslutning](delivery/using/sms-protocol.md)
-      + [Felsökning av SMS](delivery/using/troubleshooting-sms.md)
+      + [Protokoll och inställningar för SMS-koppling](delivery/using/sms-protocol.md)
+      + [Felsöka SMS](delivery/using/troubleshooting-sms.md)
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
       + [Integrera Campaign SDK i den mobila applikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -347,13 +362,11 @@ ht-degree: 98%
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
-   + Introduktion {#introduction}
-      + [Kom igång med arbetsflöden](workflow/using/about-workflows.md)
+   + Kom igång med arbetsflöden {#introduction}
+      + [Om arbetsflöden](workflow/using/about-workflows.md)
       + [Om aktiviteter](workflow/using/about-activities.md)
-   + Allmän åtgärd {#general-operation}
       + [Bygga ett arbetsflöde](workflow/using/building-a-workflow.md)
       + [Målinrikta data](workflow/using/targeting-data.md)
-      + [Importera data](workflow/using/importing-data.md)
       + [Så använder du arbetsflödesdata](workflow/using/how-to-use-workflow-data.md)
       + [Bästa praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
    + Köra ett arbetsflöde {#executing-a-workflow}
@@ -441,6 +454,7 @@ ht-degree: 98%
          + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
          + [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](workflow/using/deduplication-merge.md)
+         + [Konfigurera ett återkommande importarbetsflöde](workflow/using/recurring-import-workflow.md)
       + Utforma frågor {#designing-queries}
          + [Kvartalsvis listuppdatering med en inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Målinriktning {#designing-queries}
