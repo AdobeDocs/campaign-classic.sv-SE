@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '2157'
 ht-degree: 2%
@@ -291,7 +291,7 @@ Klicka på **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen 
 
 Om du vill exportera data från en lista måste du använda en exportguide. Om du vill komma åt den markerar du de element som ska exporteras från listan, högerklickar och väljer **[!UICONTROL Export...]**.
 
-Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/generic-imports-and-exports.md).
+Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
