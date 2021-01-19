@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -21,7 +21,7 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 
 * **Fråga**: gör att du kan köra en fråga. Se [Skapa en fråga](../../workflow/using/query.md#creating-a-query).
 * **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se avsnittet [Inkrementell fråga](../../workflow/using/incremental-query.md).
-* **Läslista**: gör att du kan använda data i en lista. Se [Använda data från en lista: Läs listan](../../workflow/using/importing-data.md#using-data-from-a-list--read-list).
+* **Läslista**: gör att du kan använda data i en lista. Se [Använda data från en lista: Läs listan](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 * **Förena**: Med kan du gruppera resultatet av flera aktiviteter till ett enda mål. Se avsnittet [Union](../../workflow/using/union.md).
 * **Skärningspunkt**: gör att du bara kan extrahera populationen med samma inkommande aktivitetsresultat. Se avsnittet [Skärning](../../workflow/using/intersection.md).
 * **Uteslutning**: Med kan du skapa ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från. Se avsnittet [Skärning](../../workflow/using/intersection.md).
