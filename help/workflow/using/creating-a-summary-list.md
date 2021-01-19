@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Dessa data finns i textfilen&quot;Purchases.txt&quot;.
 
    Med aktiviteten **Datainläsning(fil)** kan du utöka arbetsflödets arbetsregister med insamlade data.
 
-   Mer information om den här aktiviteten finns i [Läsa in data från en fil](../../workflow/using/importing-data.md#loading-data-from-a-file).
+   Mer information om den här aktiviteten finns i [Läsa in data från en fil](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Konfigurera aktiviteten **Filinsamlaren** för att samla in textfiler (*.txt) från den valda katalogen.
 
