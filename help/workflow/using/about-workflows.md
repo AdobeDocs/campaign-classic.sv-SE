@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 18%
@@ -73,7 +73,7 @@ I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera p
 
 * Läs mer om arbetsflödesaktiviteter i [den här sidan](../../workflow/using/how-to-use-workflow-data.md).
 * Lär dig hur du skapar ett arbetsflöde i [det här avsnittet](../../workflow/using/building-a-workflow.md).
-* Lär dig hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../workflow/using/importing-data.md).
+* Lär dig hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../platform/using/import-export-workflows.md).
 * De effektivaste arbetsflödena beskrivs i [den här sidan](../../workflow/using/workflow-best-practices.md).
 * Hitta vägledning om arbetsflödeskörning i [det här avsnittet](../../workflow/using/starting-a-workflow.md).
 * Lär dig hur du övervakar arbetsflöden i [den här sidan](../../workflow/using/monitoring-workflow-execution.md).
