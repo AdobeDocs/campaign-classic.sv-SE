@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 10%
+source-wordcount: '1525'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,6 @@ Du kan ställa in följande typer av externa konton:
 * [Externt Adobe Experience Manager-konto](#adobe-experience-manager-external-account)
 * [Externt konto för Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Externt Microsoft Dynamics CRM-konto](#microsoft-dynamics-crm-external-account)
-* [Oracle on demand-konto](#oracle-on-demand-external-account)
 * [Externt konto för Salesforce CRM](#salesforce-crm-external-account)
 
 ## Skapa ett externt konto {#creating-an-external-account}
@@ -297,7 +296,7 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 ## Externt konto för Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan konfigureras i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
 
 ![](assets/ext_account_3.png)
 
@@ -331,35 +330,11 @@ Mer information om var du hittar nyckel-ID:t och den hemliga åtkomstnyckeln fin
 
 Med det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-Konfigurationen för Microsoft Dynamics-anslutningen som ska fungera med Adobe Campaign beror på vilken distributionstyp du har.
-Med distributionstyperna **[!UICONTROL On-premise]** och **[!UICONTROL Office 365]** måste du ange följande information:
+Läs mer om Campaign - Microsoft Dynamics CRM Connector på den här [sidan](../../platform/using/crm-ms-dynamics.md).
 
-![](assets/ext_account_21.png)
-
-* **[!UICONTROL Account]**
-
-   Konto som används för att logga in i Microsoft CRM.
-
-* **[!UICONTROL Server]**
-
-   URL till din Microsoft CRM-server.
-
-* **[!UICONTROL Password]**
-
-   Lösenord som används för att logga in på Microsoft CRM.
-
-* **[!UICONTROL Company name]** för lokal driftsättning och Office 365-driftsättning
-
-   Namn på ditt företag.
-
-* **[!UICONTROL Organization name]** för lokal driftsättning
-
-   Organisationens namn.
-Organisationsnamn som finns i kontrollpanelen för utvecklarresurser i Microsoft Dynamics, **[!UICONTROL Unique Name]**-fältet.
-
-* **[!UICONTROL CRM version]** för lokal
-
-   CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
+>[!NOTE]
+>
+> **[!UICONTROL On-premise]** och  **[!UICONTROL Office 365]** distributionstyperna är nu föråldrade. [Läs mer](../../rn/using/deprecated-features.md).
 
 Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Password credentials]** måste du ange följande information:
 
@@ -405,29 +380,7 @@ Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL 
 
    CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
-
-## Oracle on demand externt konto {#oracle-on-demand-external-account}
-
-Med det externa **[!UICONTROL Oracle on demand]**-kontot kan du importera och exportera Oracle-data till Adobe Campaign.
-
-![](assets/ext_account_18.png)
-
-Om du vill konfigurera det externa kontot för Oracle on demand så att det fungerar med Adobe Campaign måste du ange följande information:
-
-* **[!UICONTROL Account]**
-
-   Konto som används för att logga in på Oracle CRM on demand.
-
-* **[!UICONTROL Server]**
-
-   URL:en till din Oracle CRM-server på begäran.
-
-* **[!UICONTROL Password]**
-
-   Lösenord som används för att logga in på Oracle CRM on demand.
-
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md).
 
 ## Externt Salesforce CRM-konto {#salesforce-crm-external-account}
 
@@ -459,4 +412,4 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md).
