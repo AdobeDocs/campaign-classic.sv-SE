@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 2%
@@ -104,7 +104,7 @@ Så här gör du:
 
 1. När du importerar mottagarna klickar du på länken **[!UICONTROL File format definition...]** för att markera och konfigurera den externa filen.
 
-   Mer information om dataimport finns i [det här avsnittet](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Mer information om dataimport finns i [det här avsnittet](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Klicka på **[!UICONTROL Finish]** och konfigurera leveransen som en standardleverans.
 
