@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1173'
 ht-degree: 5%
 
 ---
@@ -122,6 +122,11 @@ I följande tabell visas alla inbyggda Campaign-paket.
   <tr> 
    <td> Mobilkanal (SMS) <br /> </td> 
    <td> Skickar leveranser via Mobile/SMS-kanalen med Adobe Campaign. Valfritt. <a href="../../delivery/using/sms-channel.md">Läs mer</a> <br /> </td> 
+   <td> Alla<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> Telefonkanal<br /> </td> 
+   <td> Skickar leveranser via telefonkanalen med Adobe Campaign. Används för callcenter. Valfritt. <a href="../../delivery/using/communication-channels.md">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
