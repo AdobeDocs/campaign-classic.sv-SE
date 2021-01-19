@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde 
 >
 >Kuponghantering är ett paket som måste installeras. Kontrollera **[!UICONTROL Administration > Configuration > Package management > Installed packages.]** för att bekräfta att du har kuponghantering
 >
->Kupongdata kan importeras och exporteras med CSV- och XML-format. Mer information om import och export finns i [det här avsnittet](../../platform/using/generic-imports-and-exports.md).
+>Kupongdata kan importeras och exporteras med CSV- och XML-format. Mer information om import och export finns i [det här avsnittet](../../platform/using/get-started-data-import-export.md).
 
 ## Skapa en kupong {#creating-a-coupon}
 
@@ -58,7 +58,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
 
    >[!NOTE]
    >
-   >Enskilda kuponger kan importeras i grupp. Mer information om import och export finns i [det här avsnittet](../../platform/using/generic-imports-and-exports.md).
+   >Enskilda kuponger kan importeras i grupp. Mer information om import och export finns i [det här avsnittet](../../platform/using/get-started-data-import-export.md).
 
 ### Konfigurera enskilda kuponger {#configuring-individual-coupons}
 
