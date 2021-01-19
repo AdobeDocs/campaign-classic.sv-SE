@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Lär dig att orkestrera processer och uppgifter med arbetsflöden i Adobe Campai
 
 ## Hur kan jag importera data i Campaign? {#how-can-i-import-data-in-campaign-}
 
-[I det här avsnittet](../../workflow/using/importing-data.md) kan du lära dig bästa praxis för att importera data via ett arbetsflöde i Campaign.
+Lär dig de bästa sätten att importera data i [det här avsnittet](../../platform/using/import-export-best-practices.md).
 
 ## Kan jag övervaka körningen av arbetsflödet? {#can-i-monitor-workflow-execution-}
 
@@ -59,7 +59,7 @@ Läs mer om hur man delar upp ett mål i flera undergrupper [i det här avsnitte
 
 Du kan ändra vissa fält i en tabell i Campaign med värden från en extern textfil.
 
-[Klicka här för att läsa mer](../../platform/using/importing-data.md#example--enrich-the-values-with-those-of-an-external-file).
+[Klicka här för att läsa mer](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
 ## Hur kan jag identifiera och rikta in mig på nya mottagare? {#how-can-i-identify-and-target-new-recipients-}
 
