@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 64%
+source-wordcount: '207'
+ht-degree: 62%
 
 ---
 
@@ -52,10 +52,11 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Skapa en sammanfattningslista](../../workflow/using/creating-a-summary-list.md)
 * [Berika data](../../workflow/using/enriching-data.md)
 * [Använda aggregat](../../workflow/using/using-aggregates.md)
-* [Importera data krypterade med en nyckel som genererats av Kontrollpanelen](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [Importera data krypterade med en nyckel som genererats av Kontrollpanelen](../../platform/using/unzip-decrypt.md)
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Kvartalsvis listuppdatering med en inkrementell fråga](../../workflow/using/quarterly-list-update.md)
 * [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](../../workflow/using/deduplication-merge.md)
+* [Konfigurera ett återkommande importarbetsflöde](../../workflow/using/recurring-import-workflow.md)
 
 ## Målinriktning {#designing-queries}
 
