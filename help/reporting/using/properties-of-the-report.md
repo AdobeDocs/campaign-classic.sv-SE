@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Redigeringsspråket är det språk du skriver på. När du lägger till ett spr�
 
 På fliken **[!UICONTROL Rendering]** kan du anpassa sidans datavisningsläge. Du kan välja:
 
-* Diagramåtergivningsmotorn: Adobe Campaign har två olika lägen för att generera diagramåtergivning. Som standard är återgivningsmotorn HTML 5. Om det behövs kan du välja Flash-återgivning.
+* Diagramåtergivningsmotorn: som standard är återgivningsmotorn HTML 5.
 * Navigeringstypen i rapporten: via knappar eller länkar.
 * Standardpositionen för etiketter för rapportelement. Den här positionen kan laddas över för varje element.
 * Den mall eller det tema som används för att generera rapportsidor.
