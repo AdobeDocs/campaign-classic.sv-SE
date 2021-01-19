@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1210'
 ht-degree: 11%
 
 ---
@@ -88,7 +88,11 @@ Med onlinekanaler kan du skapa meddelanden (e-post, SMS, leveransmeddelanden fö
 
 ## Andra kanaler {#other-channels}
 
-Adobe Campaign erbjuder mallar för extern leverans. Om du använder dessa kanaler måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct mail channel](../../delivery/using/about-direct-mail-channel.md).
+Adobe Campaign erbjuder en mall för telefonleverans som används för att skapa externa leveranser. Om du använder den här kanalen måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct mail channel](../../delivery/using/about-direct-mail-channel.md).
+
+>[!NOTE]
+>
+>Telefonkanalen är inte tillgänglig direkt. För att genomföra detta krävs att Adobe Consulting eller en Adobe Partner deltar. Kontakta din Adobe-representant för mer information.
 
 För leveranser av typen Annan används dessutom en specifik teknisk mall som inte utför någon process: på så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign.
 
