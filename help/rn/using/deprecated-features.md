@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 99%
 
 ---
 
@@ -47,12 +47,13 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </tr>
   <tr>
   <td>CRM-kopplingar<br></td>
-   <td><p>Från och med Campaign version 20.3 har följande CRM-kopplingar tagits bort:</p>
+   <td><p>Från och med Campaign 20.3 har följande CRM-anslutningar tagits bort i Campaign:</p>
    <ul>
    <li>Soap API – lokal: 2007, 2015 och 2016</li>
    <li>Soap API – online: 2015 och 2016</li>
    <li>Webb-API – Microsoft Dynamics CRM lokalt: 2016, 2016 uppdatering 1</li>
    <li>Webb-API – Microsoft Dynamics CRM online: 2016, 2016 uppdatering 1</li>
+   <li>Oracle On Demand-API</li>
    </ul>
   <p><em>Måldatum för borttagning: april 2021</em></p>
   </td>
