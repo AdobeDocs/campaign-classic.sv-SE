@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '145'
 ht-degree: 15%
 
 ---
@@ -23,13 +23,13 @@ Du kan [använda arbetsflöden](#use-workflows) för att importera eller exporte
 
 ## Använd arbetsflöden{#use-workflows}
 
-Export och import konfigureras i dedikerade mallar som körs via arbetsflöden via aktiviteterna **[!UICONTROL Import]** och **[!UICONTROL Export]**. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. [Läs mer](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+Export och import konfigureras i dedikerade mallar som körs via arbetsflöden via import- och exportaktiviteter. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. [Läs mer](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Om det behövs kan du skapa ett enstaka import- eller exportjobb via funktionen **[!UICONTROL Generic imports and exports]** som beskrivs nedan.
 
 ## Skapa jobb{#create-jobs}
 
-Om du vill konfigurera och köra import- och exportjobb för data går du till fliken **[!UICONTROL Profiles and targets]** och klickar på länken **[!UICONTROL Jobs]**. [Läs mer](../../platform/using/generic-imports-and-exports.md)
+Om du vill konfigurera och köra import- och exportjobb för data går du till fliken **[!UICONTROL Profiles and targets]** och klickar på länken **[!UICONTROL Jobs]**. [Läs mer](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
