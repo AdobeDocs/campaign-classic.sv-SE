@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
+source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
 workflow-type: tm+mt
-source-wordcount: '3814'
-ht-degree: 96%
+source-wordcount: '3869'
+ht-degree: 94%
 
 ---
 
@@ -19,31 +19,39 @@ ht-degree: 96%
 
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
 
-Du kan även läsa [Versionsinformation om Adobe Campaign Classic](../../rn/using/latest-release.md) för mer information.
+Läs [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) för versionsrelaterade uppdateringar.
 
-## Januari 2021 {#jan,2021}
+## Januari 2021 {#jan-2021}
 
-Aktivitetsavsnittet **[!UICONTROL Fork]** har berikats med ytterligare information. En anteckning har lagts till för att ange att utgående övergångar inte ska köras samtidigt och att aktiviteten därför inte ska användas för att förbättra arbetsflödenas prestanda. [Läs mer](../../workflow/using/fork.md)
+Aktivitetsavsnittet **[!UICONTROL Fork]** har berikats med bästa praxis. [Läs mer](../../workflow/using/fork.md)
 
-The Locating Tomcat version section has been move [here](../../production/using/locate-tomcat-version.md).
+Avsnittet **CRM Connectors** har uppdaterats, förbättrats och omorganiserats. [Läs mer](../../platform/using/crm-connectors.md).
 
-Listan över tekniska arbetsflöden med tillhörande paket har organiserats om till en enda sida. [Läs mer](../../workflow/using/about-technical-workflows.md)
+Steg för att ansluta **Adobe Campaign och Microsoft Dynamics** beskrivs nu på en dedikerad sida. [Läs mer](../../platform/using/crm-ms-dynamics.md).
 
-Felsökningsavsnittet i övervakningsguiden har organiserats om och förbättrats med en landningssida. [Läs mer](../../production/using/troubleshooting.md).
+Oracle On Demand-API är nu föråldrat som CRM ansluten till Campaign. [Läs mer](../../rn/using/deprecated-features.md).
+
+Lär dig hur du tar reda på den aktuella versionen av den inbäddade Tomcat-webbservern som används i en instans av Adobe Campaign [här](../../production/using/locate-tomcat-version.md).
+
+Listan över tekniska arbetsflöden med tillhörande paket har förbättrats och centraliserats till en enda sida. [Läs mer](../../workflow/using/about-technical-workflows.md)
+
+Felsökningsavsnittet i guiden **Övervakning** har organiserats om och förbättrats med en startsida. [Läs mer](../../production/using/troubleshooting.md).
+
+Det finns ett nytt **avsnitt där du kan importera och exportera data** med nya sidor som rör arbetsflöden, datakomprimering, kryptering och import av bästa praxis. [Läs mer](../../platform/using/get-started-data-import-export.md)
 
 ## December 2020 {#dec-2020}
 
-Avsnittet Leveransövervakning har omorganiserats med tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
+Avsnittet **Leveransövervakning** har omorganiserats till tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
 
 Ett användningsfall har lagts till om hur du lägger till avsändarnas IP-adresser i leveransloggarna. [Läs mer](../../delivery/using/delivery-dashboard.md#use-case)
 
 Frågor och svar om sekretess har flyttats till [det här avsnittet](../../platform/using/privacy-faq.md).
 
-Ett användningsexempel har lagts till om hur du använder sammanfogningsfunktionen för aktiviteten Deduplicering. [Läs mer](../../workflow/using/deduplication-merge.md)
+Ett användningsexempel har lagts till om hur du använder **[!UICONTROL Deduplication]**-aktivitetens sammanfogningsfunktion. [Läs mer](../../workflow/using/deduplication-merge.md)
 
-Protokollet och inställningssidan för SMS-anslutningen har flyttats [här](../../delivery/using/sms-protocol.md).
+Den fullständiga beskrivningen av protokollen och inställningssidan för SMS-anslutningsprogrammet är nu tillgänglig [här](../../delivery/using/sms-protocol.md).
 
-En anteckning har lagts till i avsnittet Transactional Messaging som varnar för att händelsemapparna inte får anges som vyer för körningsinstanserna, för att undvika problem med åtkomsträttigheterna. [Läs mer](../../message-center/using/event-collection.md)
+En anteckning har lagts till i avsnittet **Transactional messaging** som varnar för att händelsemapparna inte får anges som vyer för körningsinstanserna för att undvika problem med åtkomsträttigheterna. [Läs mer](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
@@ -173,7 +181,7 @@ Bästa praxis har lagts till i aktivitetsavsnittet **[!UICONTROL Scheduler]**. [
 
 Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inkluderar förtydligande av de fall där adresser automatiskt tas bort från karantänlistan. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Användningsfall har lagts till om hur data [krypteras](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) och [dekrypteras](../../workflow/using/importing-data.md#use-case-gpg-decrypt) med Kontrollpanelen och arbetsflödena i Campaign.
+Användningsfall har lagts till om hur data [krypteras](../../platform/using/zip-encrypt.md) och [dekrypteras](../../platform/using/unzip-decrypt.md) med Kontrollpanelen och arbetsflödena i Campaign.
 
 Sidan för integration av utlösare i Experience Cloud och Adobe Campaign Classic har flyttats [hit](../../integrations/using/about-triggers.md).
 
