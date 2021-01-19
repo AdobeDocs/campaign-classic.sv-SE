@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
+source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 99%
 
 ---
 
@@ -178,19 +178,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </td>
 </tr>
 <tr>
-<td>SFDC API</td>
-<td>
-<p>API-version 21</p>
-<p>API-version 15</p>
-</td>
-</tr>
-<tr><td>Oracle On Demand-API</td>
-<td>
-<p>API för Webbtjänster v1.0</p>
-</td>
-</tr>
-<tr>
-<td>MS Dynamics</td>
+<td>Microsoft Dynamics-anslutning</td>
 <td>
 <p>Webb-API: Dynamics 365 lokalt och online</p>
 </td>
