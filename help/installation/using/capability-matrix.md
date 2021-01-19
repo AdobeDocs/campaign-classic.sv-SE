@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -33,8 +33,8 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 | Hantera en plattform med flera leverantörer | On-demand | On-demand | Tillgänglig | [Läs mer](../../installation/using/mid-sourcing-server.md) |
 | Inkorgsåtergivning via Litmus | On-demand | On-demand | Tillgänglig | [Läs mer](../../delivery/using/inbox-rendering.md) |
 | Integrera med IMS (Adobe ID) | On-demand | On-demand | On-demand | [Läs mer](../../integrations/using/about-adobe-id.md) |
-| Kryptera/dekryptera data för filöverföringar | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| Zippa/zippa upp filer | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Kryptera/dekryptera data för filöverföringar | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../platform/using/unzip-decrypt.md) |
+| Zippa/zippa upp filer | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../platform/using/unzip-decrypt.md) |
 | Delegering av domännamn | On-demand | On-demand | Inte tillgängligt | [Läs mer](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html) |
 | Installera SpamAssassin | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../delivery/using/spamassassin.md) |
 | Åtkomst till leveransrapporter | Tillgänglig | On-demand | Tillgänglig | [Läs mer](../../delivery/using/monitoring-deliverability.md) |
