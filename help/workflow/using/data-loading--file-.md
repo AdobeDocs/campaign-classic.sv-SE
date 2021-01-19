@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -35,7 +35,7 @@ Du kan definiera en förprocess som ska utföras under filimport, t.ex. för att
 
 ![](assets/preprocessing-dataloading.png)
 
-Mer information finns i följande avsnitt: [Zippa upp eller dekryptera en fil innan du bearbetar](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Mer information finns i följande avsnitt: [Zippa upp eller dekryptera en fil innan du bearbetar](../../platform/using/unzip-decrypt.md).
 
 ## Definiera filformatet {#defining-the-file-format}
 
@@ -113,7 +113,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
    * den första kolumnen innehåller en kod som sammanfaller med händelsen: inköp (mer eller mindre än 3 000 euro), inget inköp eller någon återbetalning för ett eller flera inköp.
    * De fyra följande kolumnerna innehåller klientens förnamn, efternamn, e-postadress och kontonummer.
 
-   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid dataimport i Adobe Campaign. Mer information om detta hittar du i det här [avsnittet](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Formatkonfigurationen för filen som ska läsas in sammanfaller med den som definieras vid dataimport i Adobe Campaign. Mer information om detta hittar du i det här [avsnittet](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. I den delade aktiviteten anger du de delmängder som ska skapas enligt kolumnvärdet **Event**.
 
