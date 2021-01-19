@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1266'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ Följande fälttyper är tillgängliga:
 
 ## Infoga HTML-innehåll {#inserting-html-content}
 
-Du kan inkludera HTML-innehåll på en formulärsida: hypertextlänkar, bilder, formaterade stycken, video- eller Flash-objekt osv.
+Du kan inkludera HTML-innehåll på en formulärsida: hypertextlänkar, bilder, formaterade stycken, videoklipp med mera.
 
 Med HTML-redigeraren kan du ange det innehåll som ska infogas på formulärsidan. Om du vill öppna redigeraren klickar du på **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
