@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '2926'
 ht-degree: 1%
@@ -455,7 +455,7 @@ Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för d
 
 >[!NOTE]
 >
->Mer information om export finns i avsnittet [Komma igång](../../platform/using/generic-imports-and-exports.md).
+>Mer information om export finns i avsnittet [Komma igång](../../platform/using/get-started-data-import-export.md).
 
 #### Självstudievideo {#create-email-video}
 
