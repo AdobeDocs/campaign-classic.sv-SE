@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -130,7 +130,7 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 * Prenumerera automatiskt på en uppsättning mottagare för den här tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller en direktmarkering med hjälp av musen. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, markera den aktuella tjänsten och starta åtgärden.
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importguiden.
 
-   Mer information om detta finns i [det här avsnittet](../../platform/using/importing-data.md#import-wizard).
+   Mer information om detta finns i [det här avsnittet](../../platform/using/executing-import-jobs.md).
 
 * Använd ett webbformulär så att mottagarna kan prenumerera på en tjänst.
 
