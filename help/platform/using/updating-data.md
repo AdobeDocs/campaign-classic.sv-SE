@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -92,7 +92,7 @@ Innehållet i en lista kan exporteras. Så här konfigurerar och kör du exporte
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Mer information om hur du konfigurerar exportguiden finns i [Exportguiden](../../platform/using/exporting-data.md#export-wizard).
+   Mer information om hur du konfigurerar exportguiden finns i [det här avsnittet](../../platform/using/executing-export-jobs.md).
 
 ## Prenumerera på en tjänst {#subscribing-to-a-service}
 
