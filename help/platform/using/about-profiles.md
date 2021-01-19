@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 17%
@@ -45,7 +45,7 @@ De viktigaste metoderna för att skapa mottagarprofiler är följande:
 
 >[!NOTE]
 >
->Mer information om hur filer och webbformulär importeras finns i [Allmän import och export](../../platform/using/generic-imports-and-exports.md).
+>Mer information om hur filer och webbformulär importeras finns i [Allmän import och export](../../platform/using/get-started-data-import-export.md).
 
 ## Profiler och mål {#profiles-and-targets}
 
@@ -58,7 +58,7 @@ Du får även tillgång till
 * förteckningar, se [Skapa och hantera listor](../../platform/using/creating-and-managing-lists.md),
 * prenumerationstjänster, hänvisa till [den här sidan](../../delivery/using/managing-subscriptions.md),
 * webbapplikationer, hänvisa till [den här sidan](../../web/using/about-web-applications.md),
-* Import och export (sysselsättning). hänvisa till [Allmän import och export](../../platform/using/generic-imports-and-exports.md),
+* Import och export (sysselsättning). hänvisa till [Allmän import och export](../../platform/using/about-generic-imports-exports.md),
 * riktade arbetsflöden, hänvisar till [den här sidan](../../workflow/using/building-a-workflow.md#implementation-steps-).
 
 På mottagarsidan kan du utföra vanliga åtgärder på profiler: redigeringar, uppdateringar, tillägg, borttagningar, sortering.
