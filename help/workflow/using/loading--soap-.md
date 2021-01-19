@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -43,7 +43,7 @@ Aktiviteten **Loading (SOAP)** används utöver aktiviteten **datainläsning (RD
 
    Om du vill uppdatera exemplet väljer du **[!UICONTROL Re-analyze the example]**.
 
-   Du kan också anpassa formatet för kolumndata via länken **[!UICONTROL Advanced parameters]**. Mer information om hur du formaterar importerade data finns i [avsnittet](../../platform/using/importing-data.md#import-wizard).
+   Du kan också anpassa formatet för kolumndata via länken **[!UICONTROL Advanced parameters]**. Mer information om hur du formaterar importerade data finns i [avsnittet](../../platform/using/executing-import-jobs.md).
 
 1. Du kan använda radnumret som en identifierare och/eller ange att SOAP-anropet returnerar flera element.
 1. Ange följande tabbskript efter funktion:
