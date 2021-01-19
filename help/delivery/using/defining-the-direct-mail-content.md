@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 14%
@@ -37,4 +37,4 @@ Det går att infoga en personlig URL i extraheringsfilen. Mer information om det
 
 >[!NOTE]
 >
->Den här guiden innehåller stegen i exportguiden som beskrivs i avsnittet [Komma igång](../../platform/using/exporting-data.md#export-wizard).
+>Den här guiden innehåller stegen i exportguiden som beskrivs i avsnittet [Komma igång](../../platform/using/executing-export-jobs.md).
