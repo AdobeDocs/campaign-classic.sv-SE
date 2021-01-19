@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -46,7 +46,7 @@ Vid direktutskick läggs startadresser till under extraheringen och blandas i ut
 >För direktreklam måste extraheringsfilformatet uppfylla följande begränsningar:
 >
 >* Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Om elementsamlingar extraheras har dessa fält ett tomt värde för startadresserna, såvida inte alternativet **[!UICONTROL Single row (expert user)]** är markerat. Mer information om detta finns i [det här avsnittet](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Om elementsamlingar extraheras har dessa fält ett tomt värde för startadresserna, såvida inte alternativet **[!UICONTROL Single row (expert user)]** är markerat. Mer information om detta finns i [det här avsnittet](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 
 >
 
