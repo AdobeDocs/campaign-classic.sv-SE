@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -616,11 +616,11 @@ Alla standardrapporter använder för närvarande återgivningsmotorn v6.x. Om d
 
 ### Personaliserade rapporter {#personalized-reports}
 
-Om du vill ha den blå banderollen från v7 (som ger dig tillgång till universum) måste du publicera om rapporter. Om du råkar ut för problem kan du tvinga fram v6.0-återgivningsmotorn. Det gör du genom att gå till **[!UICONTROL Properties]** i rapporten, klicka på **[!UICONTROL Rendering]** och välja återgivningsmotorn **[!UICONTROL Version 6.0 (Flash & OpenOffice)]**.
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-Om du vill dra nytta av de nya rapportfunktionerna måste du välja v.6.x-renderingsmotorn. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller PDF-export fungerar detta inte längre med den nya PDF-exportmotorn (PhantomJS) om du har lagt till ett specifikt skript för OpenOffice.
+-->
+Om du vill dra nytta av de nya rapportfunktionerna måste du publicera om rapporterna. Om du vill göra det redigerar du rapporten **[!UICONTROL Properties]**, klickar på **[!UICONTROL Rendering]** och väljer v.6.x-renderingsmotorn. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller PDF-export fungerar detta inte längre med den nya PDF-exportmotorn (PhantomJS) om du har lagt till ett specifikt skript för Open Office.
 
 ## Webbapplikationer {#web-applications}
 
@@ -664,7 +664,7 @@ sessionTokenOnly="false"
 
 ### Anonyma webbprogram {#anonymous-web-applications}
 
-Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
+Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja återgivningsmotorn v6.x och dra nytta av dess nya funktioner.
 
 >[!NOTE]
 Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
