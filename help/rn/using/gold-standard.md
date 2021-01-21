@@ -6,20 +6,20 @@ description: Versionsinformation om Campaign Classic Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# Gold Standard-versioner{#gold-standard}
+# Versionen Gold Standard{#gold-standard}
 
-Gold Standard är versionen av Campaign Classic med långsiktig support. Som värd för Gold Standard-användare har du automatiskt tillgång till uppgraderingen Gold Standard med den senaste stabila versionen utan någon åtgärd. Lokala kunder och Hybrid-kunder kan också dra nytta av Gold Standard-releaser.
+Gold Standard är versionen av Campaign Classic med långsiktig support. Som värdbaserad Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. Kunder med lokala installationer eller hybridlösningar kan också dra nytta av Gold Standard-versioner.
 
-Om du migrerar från en gammal version rekommenderar vi att du först uppgraderar till den här versionen.
+Om du migrerar från en gammal version rekommenderar vi att du uppgraderar till den här versionen först.
 
 Den här sidan listar Gold Standard-versioner.
 
@@ -31,7 +31,7 @@ _22 december 2020_
 
 >[!CAUTION]
 >
->Den här versionen innehåller ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 21 mars 2021.
+>Den här versionen innehåller ett nytt anslutningsprotokoll: att uppgradera är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2021.
 
 Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
@@ -39,9 +39,9 @@ Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
 * Integreringsautentisering för utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
 
-* När stödet för iOS APN:er för det äldre binära protokollet har upphört, uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
+* Då support för det äldre binära protokollet i iOS APN:er har upphört uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
 
-* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard version 10{#gs-10}
 
@@ -77,11 +77,11 @@ _29 april 2020_
 
 Build 9032@3a9dc9c har följande korrigeringar:
 
-* Förbättrad säkerhet vid spårning av länkar i e-postmeddelanden. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som kan aktiveras genom att kontakta kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder som vill aktivera den finns i [checklistan över säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Förbättrad säkerhet vid spårning av länkar i e-postmeddelanden. Detta är aktiverat som standard för alla kunder. Det finns ytterligare en förbättrad säkerhetsfunktion som kan aktiveras genom att kontakta kundtjänst. Mer information om funktionen och stegen för icke-värdbaserade kunder som vill aktivera den finns i [checklistan över säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Om du upplever problem med push-meddelanden när du använder spårningslänkar eller leveranser med ankartaggar rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårningslänkar. Förfarandet beskrivs [på den här sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Om du upplever problem med push-meddelanden när du använder spårningslänkar eller leveranser med ankartaggar rekommenderar vi att du inaktiverar den nya signaturfunktionen för spårningslänkar. Förfarandet beskrivs [på den här sidan](https://helpx.adobe.com/se/campaign/kb/acc-security.html#signature-mechanism)
 
 * Korrigerade ett problem som kunde förhindra att bilder visades i Line-leveranser. (NEO-23207)
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
