@@ -6,11 +6,11 @@ description: Läs mer om uppgraderingar till Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Som lokal användare kan du utföra uppgraderingen. För att göra detta måste 
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Som värdbaserad Gold Standard-användare har du automatiskt nytta av uppgraderingen av Gold Standard med [den senaste GA Gold Standard-versionen](../../rn/using/gold-standard.md#gs-10) utan någon åtgärd. [Läs mer](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
+Som en värdbaserad Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den [senaste stabila versionen av Gold Standard](../../rn/using/gold-standard.md#gs-10) utan någon åtgärd. [Läs mer](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >Kompatibilitetsmatrisen för Gold Standard finns i [GA-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
