@@ -6,11 +6,11 @@ description: Senaste versionsinformationen om Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1911'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Se [den här sidan](../../rn/using/gold-standard.md) för versionen Campaign Cla
 
 _11 januari 2021_
 
-* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SRF (Server Side Request Forgery). (NEO-27777)
-* Korrigerade ett regressionsproblem relaterat till sändningsgenereringsprocessen som kunde få MTA-processen att krascha.
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
+* Korrigerade ett regressionsproblem relaterat till genereringsprocessen av leveransloggar som kunde få MTA-processen att krascha.
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – build 9228 {#release-20-3-1-build-9228}
 
@@ -74,7 +74,7 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
->Den här versionen innehåller ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 21 mars 2021.
+>Den här versionen innehåller ett nytt anslutningsprotokoll: att uppgradera är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2021.
 
 **Säkerhetsförbättringar**
 
@@ -105,7 +105,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 **Förbättringar**
 
 * Flera förbättringar har gjorts i **klientkonsolen**:
-   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen. Uppgradering av server- och klientkonsol är obligatoriskt för anslutning efter 21 mars 2021.
+   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen. Att uppgradera servern och klientkonsolen är obligatoriskt för att kunna ansluta efter 21 mars 2021.
    * För att förhindra inkompatibilitet med vissa begränsningar i grupprincipobjekt (GPO) för internetsäkerhet har inloggningsskärmen på klientkonsolen i Campaign ersatts av ett inbyggt standardformulär för Windows.
    * Korrigerade ett problem vid kopiera/klistra in aktiviteter i ett arbetsflöde med 64 bitars klientkonsol. (NEO-27635)
    * På menyn **Om** har information lagts till för att skilja på 64 bitars och 32 bitars konsoler.
