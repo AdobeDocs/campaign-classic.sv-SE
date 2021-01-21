@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
+source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 94%
+source-wordcount: '2290'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 94%
    + Importera och exportera data {#importing-and-exporting-data}
       + [Kom igång med import och export av data](platform/using/get-started-data-import-export.md)
       + [Importera och exportera data med hjälp av arbetsflöden](platform/using/import-export-workflows.md)
-      + Arbeta med generiska importer och exporter {generic-importing-exporting}
+      + Arbeta med generiska importer och exporter {#generic-imports-exports}
          + [Kom igång med generiska importer och exporter](platform/using/about-generic-imports-exports.md)
          + [Skapa import- och exportmallar](platform/using/creating-import-export-templates.md)
          + [Skapa import- och exportjobb](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 94%
          + [Konfigurerar exportjobb](platform/using/executing-export-jobs.md)
          + [Övervaka körning av jobb](platform/using/monitoring-jobs-execution.md)
          + [Allmänna importexempel](platform/using/import-operations-samples.md)
-      + Hantera datakryptering och komprimering {managing-data-encryption-compression}
+      + Hantera datakryptering och komprimering {#managing-data-encryption-compression}
          + [Zippa upp eller dekryptera en fil före bearbetning](platform/using/unzip-decrypt.md)
          + [Zippa eller kryptera en fil före bearbetning](platform/using/zip-encrypt.md)
-      + God praxis och felsökning {best-practices}
+      + Bästa tillvägagångssätt och felsökning {#best-practices}
          + [Importera och exportera metodtips](platform/using/import-export-best-practices.md)
          + [Bästa praxis och felsökning för SFTP-servrar](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
@@ -453,7 +453,7 @@ ht-degree: 94%
          + [Skapa en sammanfattningslista](workflow/using/creating-a-summary-list.md)
          + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
-         + [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](workflow/using/deduplication-merge.md)
+         + [Använda funktionen Sammanfoga för aktiviteten Avduplicering](workflow/using/deduplication-merge.md)
          + [Konfigurera ett återkommande importarbetsflöde](workflow/using/recurring-import-workflow.md)
       + Utforma frågor {#designing-queries}
          + [Kvartalsvis listuppdatering med en inkrementell fråga](workflow/using/quarterly-list-update.md)
@@ -618,7 +618,7 @@ ht-degree: 94%
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
       + [Konfiguration av kampanjservern](installation/using/campaign-server-configuration.md)
       + [Driftsätta en instans](installation/using/deploying-an-instance.md)
-      + [Installera inbyggda Campaign Classic-paket](installation/using/installing-campaign-standard-packages.md)
+      + [Installera inbyggda paket i Campaign Classic](installation/using/installing-campaign-standard-packages.md)
    + Ytterligare konfigurationer {#additional-configurations}
       + [Konfigurera Campaign-servern](installation/using/configuring-campaign-server.md)
       + [Ansluta via LDAP](installation/using/connecting-through-ldap.md)
@@ -684,7 +684,7 @@ ht-degree: 94%
       + [RDBMS-specifika rekommendationer](production/using/rdbms-specific-recommendations.md)
       + [Programobjekt](production/using/application-objects.md)
    + Felsökning {#troubleshooting-toc}
-      + [Översikt över felsökning av produktion](production/using/troubleshooting.md)
+      + [Översikt över produktionsfelsökning](production/using/troubleshooting.md)
       + Vanliga och allmänna problem {#common-general-issues-toc}
          + [Moduler och vanliga problem](production/using/modules-and-frequent-issues.md)
          + [Arbetsflödeskörning](production/using/workflow-execution.md)
@@ -707,7 +707,7 @@ ht-degree: 94%
       + Teknisk felsökning {#technical-troubleshooting-toc}
          + [Stackspårning i Linux](production/using/stack-trace-in-linux.md)
          + [JSP-beteende](production/using/jsp-behavior.md)
-         + [Söker efter Tomcat-version](production/using/locate-tomcat-version.md)
+         + [Hitta versionen av Tomcat](production/using/locate-tomcat-version.md)
 + Utvecklarhandbok {#configuring-campaign-classic}
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
