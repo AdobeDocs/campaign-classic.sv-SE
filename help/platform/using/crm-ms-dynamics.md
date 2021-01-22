@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 7478ae37aee5e8b0d9c904f5b9d810375d9d6481
+source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -188,3 +188,22 @@ Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkroni
 I den här videon får du lära dig hur du integrerar Dynamics 365 med Adobe Campaign Classic i samband med en Office 365-distribution.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
+
+
+## Fältdatatyper som stöds {#ms-dyn-supported-types}
+
+För attributtyper som stöds/inte stöds i Microsoft Dynamics 365 anges nedan:
+
+
+| Attributtyp | Stöds |
+| --------------------------------------------------------------------------------- | --------- |
+| Grundläggande typer: boolean, datetime, decimal, float, double, integer, bigint , string | Ja |
+| Pengar (som dubbla) | Ja |
+| memo, entityname , primarykey, uniqueidentifier (som strängar) | Ja |
+| Status, picklist (vi lagrar möjliga värden i uppräkningar), state (sträng) | Ja |
+| ägare (som sträng) | Ja |
+| Uppslag (endast referenssökningar för en enhet) | Ja |
+| kund | Nej |
+| Angående | Nej |
+| PartyList | Nej |
+| ManagedProperty | Nej |
