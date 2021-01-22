@@ -7,17 +7,17 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
+source-git-commit: d25210f7f5c9378565ddacd39e4b1662d8204001
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 96%
 
 ---
 
 
 # Kompatibilitetsmatris för Gold Standard{#compatibility-matrix-gs}
 
-Det här dokumentet listar alla system och komponenter som stöds för version 19.1 av **Adobe Campaign Classic Gold Standard**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
+Det här dokumentet listar alla system och komponenter som stöds för version 19.1 av **Adobe Campaign Classic Gold Standard**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med den här versionen av Adobe Campaign.
 
 ## Viktiga anteckningar{#important-notes-gs}
 
@@ -117,6 +117,11 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 
 <table>
 <tbody>
+<tr>
+<td>Amazon Redshift</td>
+<td><p> </p>
+</td>
+</tr>
 <tr>
 <td>Oracle</td>
 <td>
