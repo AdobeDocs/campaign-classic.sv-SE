@@ -6,11 +6,11 @@ description: Senaste versionsinformationen om Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: ht
-source-wordcount: '1911'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '1937'
+ht-degree: 97%
 
 ---
 
@@ -31,6 +31,17 @@ _11 januari 2021_
 ## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
+
+>[!CAUTION]
+>
+> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **21 mars 2021**.
+   >
+   > 
+* Den här versionen innehåller en säkerhetskorrigering: uppgradering är obligatoriskt för att öka din miljösäkerhet.
+
+>
+
+
 
 **Nyheter**
 
@@ -71,10 +82,6 @@ _27 oktober 2020_
 </tr> 
 </tbody> 
 </table>
-
->[!CAUTION]
->
->Den här versionen innehåller ett nytt anslutningsprotokoll: att uppgradera är obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter 21 mars 2021.
 
 **Säkerhetsförbättringar**
 
