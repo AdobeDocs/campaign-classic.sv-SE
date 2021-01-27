@@ -7,15 +7,17 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 24%
 
 ---
 
 
 # Om Adobe ID{#about-adobe-id}
+
+Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
 Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Integreringen ger följande fördelar:
 
@@ -24,11 +26,21 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 * Säkrare policy för lösenordshantering.
 * Använda Federated ID-konton (extern ID-leverantör).
 
-Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
 >[!IMPORTANT]
 >
->Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna i Adobe. Kontakta din Adobe-chef för att starta implementeringsprocessen.
+>Om du ansluter till Campaign via Adobe Identity Service (IMS) måste du uppgradera till den senaste versionen för att kunna ansluta till Campaign efter **21 mars 2021**. Den här uppgraderingen är obligatorisk för både Campaign-servern och klientkonsolen. Beroende på vilken version du har måste du uppgradera till någon av följande utgåvor:
+>
+> * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
+> * [Kampanj 20.3.3](../../rn/using/latest-release.md)
+> * [Kampanj 20.2.4](../../rn/using/release--20-2.md)
+> * [Kampanj 20.1.4](../../rn/using/release--20-1.md)
+> * [Kampanj 19.2.4](../../rn/using/release--19-2.md)
+> * [Kampanj 19.1.8](../../rn/using/release--19-1.md)
+
+>
+
+
 
 ## Relaterade ämnen
 
