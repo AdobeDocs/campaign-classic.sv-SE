@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,12 @@ ht-degree: 0%
 Med Digital Content Editor kan du infoga och formatera sidelement och mappa databasfält med element från en HTML-sida. Den här redigeraren är tillgänglig när du skapar en sida för ett webbprogram eller när du skapar leveranser som baseras på en DCE-mall.
 
 >[!NOTE]
->>Använd anpassningsblock om du behöver lägga till JavaScript-kod på serversidan. [Läs mer](../../delivery/using/personalization-blocks.md).
 >
+>Använd anpassningsblock om du behöver lägga till JavaScript-kod på serversidan. [Läs mer](../../delivery/using/personalization-blocks.md).
+
 >[!CAUTION]
-Alla externa resurser måste refereras med en HTTPS-URL.
+>
+>Alla externa resurser måste refereras med en HTTPS-URL.
 
 ## Viktiga steg för att använda redigeraren för digitalt innehåll {#content-editor-general-operation}
 
@@ -43,7 +45,8 @@ Om du vill skapa ett enkelt **webbprogram** måste du:
 1. Publicera webbprogrammet - [Läs mer](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-Ett fullständigt implementeringsexempel i kontexten för ett webbprogram finns i [det här avsnittet](../../web/using/creating-a-landing-page.md).
+>
+>Ett fullständigt implementeringsexempel i kontexten för ett webbprogram finns i [det här avsnittet](../../web/using/creating-a-landing-page.md).
 
 Om du vill skapa en **e-postleverans** måste du:
 
@@ -53,4 +56,5 @@ Om du vill skapa en **e-postleverans** måste du:
 1. Skicka leveransen - [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
-Ett fullständigt implementeringsexempel i samband med en e-postleverans finns i [det här användningsexemplet](../../web/using/use-case--creating-an-email-delivery.md).
+>
+>Ett fullständigt implementeringsexempel i samband med en e-postleverans finns i [det här användningsexemplet](../../web/using/use-case--creating-an-email-delivery.md).
