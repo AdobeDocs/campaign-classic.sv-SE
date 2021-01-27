@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 66%
+source-wordcount: '291'
+ht-degree: 60%
 
 ---
 
@@ -19,13 +19,15 @@ ht-degree: 66%
 
 ## Nyheter
 
+* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 21 mars 2021 **.
+
+* **[Campaign Security ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> BulletinUppdatera till de senaste byggen för att säkra er Campaign-plattform.
+
 * **[Ta bort felaktiga ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> hårdvarustudsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Gmail-avbrott
 
-* **[Uppdatera ](integrations/using/configuring-adobe-io.md)**<br/> integreringen av Adobe Experience Cloud TriggersDen gamla autenticeringstjänsten har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O
+* **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integreringDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
 
 * **[Gå till HTTP/2-baserad APNs-provider ](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> APILläs hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APNs-providern
-
-* **[Lägg till uttryckssymboler i ](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> meddelandenNu kan du infoga uttryckssymboler i meddelanden och ämnesrader
 
 * **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
