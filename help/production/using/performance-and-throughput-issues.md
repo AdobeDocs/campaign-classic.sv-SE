@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '692'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Mer information om innehållet i respektive release finns i [versionsinformation
 
 Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
-Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakta konsult- eller supportteamen om du behöver det här verktyget. Här är några viktiga saker du bör kontrollera med det här verktyget:
+Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du behöver det här verktyget implementerat. Här är några viktiga saker du bör kontrollera med det här verktyget:
 
 * Om indexstorleken är större än tabellstorleken krävs ett vakuum.
 * Kontrollera de tabeller som har den maximala blotten. Om dessa tabeller används ofta måste de semitueras.
