@@ -1,20 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protokoll och inställningar för SMS-anslutning
+title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '8424'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
 
-# SMS-anslutningsprotokoll och inställningar {#sms-connector-protocol}
+# Protokoll och inställningar för SMS-koppling {#sms-connector-protocol}
 
 >[!NOTE]
 >
@@ -356,7 +356,7 @@ Den största tillåtna storleken för ett meddelande beror på dess kodning. I t
 | Kodning | Vanlig data_coding | Meddelandestorlek (tecken) | Delstorlek för multipart-SMS | Tillgängliga tecken |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Grundläggande GSM7-teckenuppsättning + tillägg (utökade tecken tar 2 tecken) |
-| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varierar från telefon till telefon) |
 
 ## SMPP:s externa kontoparametrar {#SMPP-parameters-external}
@@ -819,7 +819,7 @@ Om du har flera konton på samma Adobe Campaign-instans som ansluter till samma 
 ### Aktivera utförliga SMPP-spår under kontroller {#enable-verbose}
 
 Du bör alltid aktivera utförliga SMPP-spår under kontroller.
-Även om du inte kan kontrollera loggarna själv är det enklare för supporten att hjälpa dig.
+Även om du inte kan kontrollera loggarna själv är det enklare för [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) att hjälpa dig.
 
 ### Testa ditt SMS {#test}
 
