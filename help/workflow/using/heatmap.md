@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -41,23 +41,6 @@ Mer exakt hjälper det plattformsadministratörerna att:
 Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](../../workflow/using/about-workflows.md), [Aktiviteter](../../workflow/using/about-activities.md) och [Bästa praxis för arbetsflöden](../../workflow/using/workflow-best-practices.md).
 
 Workflow HeatMap är tillgängligt som standard i Adobe Campaign från och med version 18.10. Om du har ett build-värde mellan 8 700 och 8 977 (18,10) kan du också utnyttja den här funktionen. Om du vill begära motsvarande paket kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) och följer instruktionerna från [den här sidan](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) för att få veta hur du installerar det.
-
-När du först öppnar Workflow HeatMap visas följande popup-fönster. Detta avtal tillåter överföring och lagring i USA som gör att Adobe Campaign kan:
-
-* övervaka instanser för att undersöka eventuella prestandaproblem.
-* samla in data för avvikelseidentifiering.
-
-Observera att överföringen av dina data endast är tillgänglig för användare som ansluter till Adobe Campaign via sin Adobe ID.
-
-![](assets/wf_monitoring_agreement.png)
-
-Tre alternativ är tillgängliga:
-
-* **[!UICONTROL Accept]** : Genom att godkänna det här avtalet ger du Adobe Campaign tillstånd att samla in dina data och överföra dem till USA för att kunna hjälpa dig om avvikelser upptäcks.
-* **[!UICONTROL Refuse]** : Om du avböjer avtalet kommer dina data inte att överföras, men du kan fortfarande använda heatmap-kartan för arbetsflöde.
-* **[!UICONTROL Do not show this message again]** : Genom att klicka  **[!UICONTROL Do not show this message again]** visas inte popup-fönstret vid åtkomst till heatmap-kartan för arbetsflöde, men det är fortfarande tillgängligt från  **[!UICONTROL Term of use]** knappen.
-
-Det här alternativet är inte slutgiltigt. Du kan alltid ändra det genom att klicka på knappen **[!UICONTROL Term of use]**.
 
 ## Använda HeatMap {#using-the-heatmap}
 
