@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna för kommersiella tjänster, slutprodukter och Adobe Campaign support.
+   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste du agera omedelbart och varna för kommersiella tjänster, slutprodukter och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [https://www.uribl.com/](https://www.uribl.com/)
 
-   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör omedelbart informera om leveranstjänster och Adobe Campaign support.
+   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **SURBL**
 
    Se [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör omedelbart informera om leveranstjänster och Adobe Campaign support.
+   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **iX Manitu**
 
