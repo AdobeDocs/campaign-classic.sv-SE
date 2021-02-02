@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 1%
+source-wordcount: '3019'
+ht-degree: 2%
 
 ---
 
@@ -123,6 +123,11 @@ Använd fliken **[!UICONTROL Access rights]** för att uppdatera grupper och nam
 Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt följande alternativ:
 
 * Med alternativet **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: Han kommer inte längre att ha tillgång till Adobe Campaign.
+
+   >[!NOTE]
+   >
+   >Även om det här kontot är inaktiverat kan operatorn fortfarande få aviseringar eller meddelanden från Campaign. Om du inte längre vill skicka Campaign-meddelanden till den här operatorn rekommenderar Adobe att du tar bort e-postadressen från den här profilen.
+
 * Med alternativet **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
 * Det går att länka en säkerhetszon till operatören. Se denna [sida](../../installation/using/configuring-campaign-server.md#defining-security-zones) för mer information om detta.
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
