@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3127'
 ht-degree: 20%
 
 ---
@@ -24,12 +24,8 @@ _16 december 2020_
 >[!CAUTION]
 >
 > * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **21 mars 2021**.
-   >
-   > 
-* Den här versionen innehåller en säkerhetskorrigering: uppgradering är obligatoriskt för att öka din miljösäkerhet.
-
->
-
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatoriskt för att öka din miljösäkerhet.
+> * Om du använder Experience Cloug Triggers-integrering via autentisering måste du gå över till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell kommer att upphöra den 30 april 2021 **.**
 
 
 
