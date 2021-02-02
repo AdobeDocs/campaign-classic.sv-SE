@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '773'
 ht-degree: 2%
 
 ---
@@ -71,17 +71,12 @@ Den information som tillhandahålls är i realtid, vilket möjliggör en proakti
 
 ## Övervakningsrapport för teknisk leverans {#technical-deliverability-monitoring}
 
-Den tekniska leveransövervakningsrapporten uppdateras dagligen och är tillgänglig genom att gå till **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** och klicka på länken **[!UICONTROL Technical monitoring]** på fliken Adobe Campaign **[!UICONTROL Home]**. Det innehåller ett antal kvalitetsindikatorer för er plattform.
+Rapporten **Technical Deliverability Monitoring** innehåller ett antal kvalitetsindikatorer för din plattform. Du kan få den här dagliga rapporten via e-post. Om du vill begära det öppnar du ett specifikt [supportärende](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) och anger:
 
-Dessa indikatorer uppdateras dagligen kl. 9.00.
+* instansens namn
+* e-postadresserna som rapporten ska skickas till
 
->[!NOTE]
->
->Dessutom kan du få en daglig rapport via e-post till en angiven adress. Informera oss om den begärda e-postadressen via e-post eller via Adobe Campaign Extranet.
-
-![](assets/s_tn_del_monitoring.png)
-
-Följande indikatorer används i rapporten:
+Rapporten innehåller följande indikatorer:
 
 * **[!UICONTROL Reverse DNS]** : Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att detta korrekt pekar tillbaka till IP-adressen.
 
@@ -92,6 +87,9 @@ Följande indikatorer används i rapporten:
 * **[!UICONTROL IP and RBL domain]** (Blackutjämlista i realtid): En lista över IP-adresser och domäner som flaggats av organisationer i blockeringslista för dåligt sändande rykte. Listorna hanteras av särskilda organisationer som Spamhaus, Spampolis, SURBL/URIBL osv. Adobe Campaign bearbetar för närvarande kontroller mot RBL:er som har en betydande påverkan på leveransen. Dessa URL:er återspeglar avsändarens anseende och kan refereras av Internet-leverantörer innan de godkänner att få dina e-postmeddelanden.
 
 * **[!UICONTROL SNDS]** (Data Services för smarta nätverk): En  [Windows Live Hotmail-tjänst mot skräppost](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail är den enda Internet-leverantör som tillhandahåller den här typen av information. Benchmark-poängen är ett grönt filterresultat, en klagofrekvens på mindre än 0,1 % och noll skräppostsvällningar.
+
+Dessa indikatorer uppdateras dagligen kl. 9.00.
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
