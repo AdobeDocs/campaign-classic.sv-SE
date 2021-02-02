@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 9%
+source-wordcount: '1102'
+ht-degree: 8%
 
 ---
 
@@ -98,11 +98,11 @@ I avsnittet nedan visas den information som ska kontrolleras och tillhandahålla
    >
    >Med nätverksverktyget kan du enkelt hantera nätverksanslutningar på olika operativsystem (se [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med Adobe Support-team.
+   Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande stöter på anslutningsproblem kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet.
 
 1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för tillåtelselista.
 1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Därför rekommenderar vi starkt att du använder nyckelbaserad autentisering (se [SFTP-serverns bästa praxis](#sftp-server-best-practices)).
-1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för Adobe Support-teamet för instanskonfigurationen.
+1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
 
 ## Felet &quot;Det gick inte att matcha värdnamnet&quot;
