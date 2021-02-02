@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Om du alltid får samma felmeddelande för en Internet-leverantör, kan din e-po
 * Uppdatera dina prenumerationsformulär för att upptäcka eventuella fel i de angivna domännamnen (till exempel: gmaul.com eller yaho.com).
 * Om du märker fel som anger att dina meddelanden har deklarerats som skräppost, eller att dina meddelanden alltid är blockerade, kan du försöka utesluta mottagare som inte har öppnat eller klickat i något av dina meddelanden de senaste 12 månaderna från målet.
 
-Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, Adobe Campaign Client Care eller Adobe Campaign support.
+Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Blockeringslista kontra karantän {#denylist-versus-quarantine}
 
