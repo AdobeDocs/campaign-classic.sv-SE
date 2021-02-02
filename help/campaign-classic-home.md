@@ -1,13 +1,13 @@
 ---
-keywords: Campaign Classic;home;popular topics
+keywords: Campaign Classic;hem;populära ämnen
 solution: Campaign Classic
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 59%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 59%
 
 ## Nyheter
 
-* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 21 mars 2021 **.
+* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 31 mars 2021 **.
 
 * **[Skydda era Campaign-](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
 
