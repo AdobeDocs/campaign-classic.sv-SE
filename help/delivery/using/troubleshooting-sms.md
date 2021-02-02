@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protokoll och inställningar för SMS-anslutning
+title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 96ad3208c792efb47097768bc779bec59d9ca313
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2751'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Med hexadecimala tecken kan du se skillnaden mellan liknande tecken. En gemener 
 
 Om du vill konvertera Unicode till hexadecimal kan du använda onlineverktyg som [Unicode-kodkonverteraren](https://r12a.github.io/app-conversion/)-webbplatsen. Skriv texten, kontrollera att det inte finns någon PII-fil, till exempel telefonnummer, och klicka på **Konvertera**. De hexadecimala värdena visas längst ned (UTF-32-zon).
 
-När du öppnar biljetter om kodningsproblem, oavsett om det gäller leverantören eller supporten för Adobe Campaign, ska du alltid inkludera en hexadecimal version av det du skriver och det du ser.
+När du öppnar biljetter om kodningsproblem, oavsett om det gäller leverantören eller [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), ska du alltid inkludera en hexadecimal version av det du skriver och det du ser.
 
 **Steg 3: Ta reda på vad du ska skicka**
 
