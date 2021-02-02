@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 24%
 
 ---
@@ -29,7 +29,7 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 
 >[!IMPORTANT]
 >
->Om du ansluter till Campaign via Adobe Identity Service (IMS) måste du uppgradera till den senaste versionen för att kunna ansluta till Campaign efter **21 mars 2021**. Den här uppgraderingen är obligatorisk för både Campaign-servern och klientkonsolen. Beroende på vilken version du har måste du uppgradera till någon av följande utgåvor:
+>Om du ansluter till Campaign via Adobe Identity Service (IMS) måste du uppgradera till den senaste versionen för att kunna ansluta till Campaign efter **31 mars 2021**. Den här uppgraderingen är obligatorisk för både Campaign-servern och klientkonsolen. Beroende på vilken version du har måste du uppgradera till någon av följande utgåvor:
 >
 > * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
 > * [Kampanj 20.3.3](../../rn/using/latest-release.md)
