@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Du måste konfigurera en säkerhetszon så att den här operatorn kan ansluta ti
 >
 >Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationshandboken [guide](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Om din Campaign-instans hanteras av Adobe kontaktar du Adobe support. Om du använder Campaign lokalt följer du stegen nedan:
+Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet. Om du använder Campaign lokalt följer du stegen nedan:
 
 1. Öppna konfigurationsfilen **serverConf.xml**.
 1. Få åtkomst till attributet **allowUserPassword** för den markerade säkerhetszonen och ange det till **true**.
