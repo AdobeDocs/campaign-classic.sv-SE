@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2440'
-ht-degree: 16%
+source-wordcount: '2446'
+ht-degree: 15%
 
 ---
 
@@ -297,7 +297,7 @@ Adobe Campaign meddelandeserver tillämpar en enskild **domänhanteringsregel** 
 * Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar för att kontrollera domännamnet, till exempel **avsändar-ID**, **DomainKeys**, **DKIM** och **S/MIME**.
 * Med parametrarna **SMTP relay** kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-post från Microsoft. Om alternativet **[!UICONTROL Sender ID]** är aktiverat avmarkerar du motsvarande ruta och kontaktar Adobe Campaign support. Leveransen påverkas inte.
+Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-post från Microsoft. Om alternativet **[!UICONTROL Sender ID]** är aktiverat avmarkerar du motsvarande ruta och kontaktar [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Leveransen påverkas inte.
 
 >[!IMPORTANT]
 >
