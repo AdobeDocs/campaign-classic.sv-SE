@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud
-description: Lär dig konfigurera Adobe I/O för Adobe Experience Cloud-utlösare
+description: Lär dig konfigurera Adobe I/O för Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 5%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -22,11 +22,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Om du använder en äldre version av integreringen av utlösare via autentisering, **måste du flytta till Adobe I/O enligt beskrivningen nedan**. Det äldre autentiseringsläget för autentisering kommer att upphöra den 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Om du använder en äldre version av integreringen av utlösare via autentisering, **måste du flytta till Adobe I/O enligt beskrivningen nedan**. Det äldre autentiseringsläget för autentisering upphör 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>
+>Observera att under den här flytten till Adobe I/O kan vissa inkommande utlösare gå förlorade.
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
-Den här integreringen gäller endast från och med **Campaign Classic 20.3- och Gold Standard 11-utgåvorna**.
+Den här integreringen gäller endast från och med **Campaign Classic 20.3, 20.2.4, 19.1.8 och Gold Standard 11**.
 
 Kontrollera att du har:
 
@@ -41,7 +43,7 @@ Kontrollera att du har:
    >
    > Se till att du är inloggad på rätt organisationsportal.
 
-1. Extrahera befintligt integrationsklient-ID från instanskonfigurationsfilen ims/authIMSTAClientId. Ett attribut som inte finns eller är tomt anger att klientidentifieraren inte har konfigurerats.
+1. Extrahera befintlig integrationsklientidentifierare (klient-ID) från instanskonfigurationsfilen ims/authIMSTAClientId. Ett attribut som inte finns eller är tomt anger att klientidentifieraren inte har konfigurerats.
 
    >[!NOTE]
    >
@@ -63,7 +65,7 @@ Kontrollera att du har:
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett offentligt och privat nyckelpar.
+1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett nyckelpar för offentlig och privat nyckel.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -83,17 +85,21 @@ Kontrollera att du har:
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
+>[!NOTE]
+>
+>Adobe I/O-certifikatet upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
+
 ## Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
 
 Om du vill lägga till projektautentiseringsuppgifterna i Adobe Campaign kör du följande kommando som &quot;neolane&quot;-användare på alla behållare i Adobe Campaign-instansen för att infoga **[!UICONTROL Technical Account]**-autentiseringsuppgifterna i instanskonfigurationsfilen.
 
 ```
-nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
+nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
 >[!NOTE]
 >
->Du bör koda den privata nyckeln i base64 UTF-8-format. Kom ihåg att ta bort den nya raden från nyckeln innan du kodar den, förutom den privata nyckeln. Den privata nyckeln måste vara densamma som användes för att skapa integreringen.
+>Du bör koda den privata nyckeln i base64 UTF-8-format. Kom ihåg att ta bort den nya raden från nyckeln innan du kodar den, förutom den privata nyckeln. Den privata nyckeln måste vara densamma som användes för att skapa integreringen. Om du vill testa base64-kodningen för den privata nyckeln kan du använda [den här webbplatsen](https://www.base64encode.org/).
 
 ## Steg 3: Uppdatera tagg för pipelines {#update-pipelined-tag}
 
