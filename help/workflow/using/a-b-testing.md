@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,7 @@ Så här skapar du A/B-testet:
 * [Steg 3: Skapa två leveransmallar](#step-3--creating-two-delivery-templates)
 * [Steg 4: Konfigurera leveranser i arbetsflödet](#step-4--configuring-the-deliveries-in-the-workflow)
 * [Steg 5: Skapa skriptet](#step-5--creating-the-script)
+* [Steg 6: Definiera den slutliga leveransen](#step-6--defining-the-final-delivery)
 * [Steg 7: Starta arbetsflödet](#step-7--starting-the-workflow)
 * [Steg 8: Analyserar resultatet](#step-8--analyzing-the-result).
 
@@ -49,7 +50,7 @@ Du måste skapa ett arbetsflöde på fliken **[!UICONTROL Targeting and Workflow
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Ändra etiketten för det befintliga arbetsflödet eller klicka på **[!UICONTROL Add]** för att skapa en ny (mer information finns i [avsnittet](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Ändra etiketten för det befintliga arbetsflödet eller klicka på **[!UICONTROL Add]** för att skapa en ny.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -183,7 +184,7 @@ Valet av leveransinnehåll som är avsett för den återstående populationen be
 
 ### Exempel på ett skript {#example-of-a-script}
 
-Följande skript kan användas på samma sätt som i målarbetsflödet. Mer information finns i [Implementering](#implementation).
+Följande skript kan användas på samma sätt som i målarbetsflödet (se [Konfigurera skriptet](../../workflow/using/a-b-testing.md#configuring-script)).
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ Följande skript kan användas på samma sätt som i målarbetsflödet. Mer info
    vars.deliveryId = delivery.id
 ```
 
-En detaljerad förklaring av skriptet finns i [Information om skriptet](#details-of-the-script).
+En detaljerad förklaring av skriptet finns i [det här avsnittet](../../workflow/using/a-b-testing.md#details-of-the-script).
 
-### Implementering {#implementation}
+### Konfigurera skriptet {#configuring-script}
 
 1. Öppna din **[!UICONTROL JavaScript code]**-aktivitet.
-1. Kopiera skriptet som finns i [Exempel på ett skript](#example-of-a-script) till fönstret **[!UICONTROL JavaScript code]**.
+1. Kopiera skriptet som visades [tidigare](../../workflow/using/a-b-testing.md#example-of-a-script) till fönstret **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
