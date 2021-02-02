@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1977'
 ht-degree: 95%
@@ -34,7 +34,7 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **21 mars 2021**.
+> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 31 mars 2021 **.**
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatoriskt för att öka din miljösäkerhet.
 > * Om du använder Experience Cloug Triggers-integrering via autentisering måste du gå över till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell kommer att upphöra den 30 april 2021 **.**
 
@@ -108,7 +108,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 **Förbättringar**
 
 * Flera förbättringar har gjorts i **klientkonsolen**:
-   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen. Att uppgradera servern och klientkonsolen är obligatoriskt för att kunna ansluta efter 21 mars 2021.
+   * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen. Att uppgradera servern och klientkonsolen är obligatoriskt för att kunna ansluta efter 31 mars 2021.
    * För att förhindra inkompatibilitet med vissa begränsningar i grupprincipobjekt (GPO) för internetsäkerhet har inloggningsskärmen på klientkonsolen i Campaign ersatts av ett inbyggt standardformulär för Windows.
    * Korrigerade ett problem vid kopiera/klistra in aktiviteter i ett arbetsflöde med 64 bitars klientkonsol. (NEO-27635)
    * På menyn **Om** har information lagts till för att skilja på 64 bitars och 32 bitars konsoler.
