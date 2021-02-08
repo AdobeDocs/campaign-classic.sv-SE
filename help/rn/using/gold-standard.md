@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1039'
 ht-degree: 86%
 
 ---
@@ -48,6 +48,8 @@ Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 * Efter [slutet på stödet för iOS APN:er i det äldre binära protokollet](https://developer.apple.com/news/?id=c88acm2b) uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
 
 * Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
+
+* Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard version 10{#gs-10}
 
