@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 9%
+source-wordcount: '295'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,13 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
 Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för att få åtkomst till push-meddelandekanalen i Campaign som hybridkund/värdkund.
 
-Som lokal kund måste du utföra följande installationssteg:
+Som lokal kund måste du installera ett inbyggt paket.
+
+>[!CAUTION]
+>
+>Läs mer om Campaigns inbyggda paket, metodtips och rekommendationer i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+
+Installationsstegen är:
 
 1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** i Adobe Campaign klientkonsol.
 
