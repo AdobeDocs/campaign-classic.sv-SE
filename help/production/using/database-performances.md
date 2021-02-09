@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -46,9 +46,9 @@ Kontrollera att databasrensningen fungerar. Om du vill göra det läser du loggf
 
 Kontrollera att databasunderhållet är korrekt schemalagt och att det körs. Kontakta databasadministratören om du vill veta mer om:
 
-* underhållsschema,
-* underhållsplaner som tidigare har genomförts,
-* visa skriptloggarna.
+* Deras underhållsplan
+* Underhållsplaner som körts tidigare
+* Visa skriptloggarna
 
 Mer information om detta finns i [det här avsnittet](../../production/using/recommendations.md).
 
@@ -60,9 +60,9 @@ Mer information om detta finns i [det här avsnittet](../../production/using/rec
 
 Kontrollera antal och storlek på arbetsregister. När de överskrider en viss storlek påverkas databasens prestanda. De här tabellerna skapas av arbetsflöden och leveranser. De finns kvar i databasen medan arbetsflöden och leveranser är aktiva. Om du vill begränsa storleken på arbetsregister kan du utföra följande åtgärder:
 
-* stoppa eller ta bort leveranser med följande status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** eller **[!UICONTROL Paused]** .
-* stoppa eller ta bort arbetsflöden som pausats på grund av ett fel,
-* stoppa alla arbetsflöden som används för tester som inte innehåller en **[!UICONTROL End]**-aktivitet och vars status därför förblir **[!UICONTROL Paused]**.
+* Stoppa eller ta bort leveranser med följande status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** eller **[!UICONTROL Paused]**.
+* Stoppa eller ta bort arbetsflöden som pausats på grund av ett fel.
+* Stoppa alla arbetsflöden som används för tester som inte innehåller en **[!UICONTROL End]**-aktivitet och vars status därför förblir **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
@@ -72,14 +72,13 @@ Kontrollera antal och storlek på arbetsregister. När de överskrider en viss s
 
 Beroende på Adobe Campaign installationsinställningar kan två verktyg användas för plattformsövervakning:
 
-* produktionssidan för instansen. Mer information finns i [Manuell övervakning](../../production/using/monitoring-processes.md#manual-monitoring).
-* Netreport-skriptet. Mer information finns i [Automatisk övervakning via Adobe Campaign-skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Produktionssidan för instansen. Mer information finns i [Manuell övervakning](../../production/using/monitoring-processes.md#manual-monitoring).
+* *netreport*-skriptet. Mer information finns i [Automatisk övervakning via Adobe Campaign-skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifikationer {#specifics}
 
 Det kan bli nödvändigt att köra en realtidsdiagnos för att identifiera orsaken till problemet. Börja med att kontrollera process- och plattformsloggfilerna och övervaka sedan databasaktiviteten medan problemet återskapas. Var särskilt uppmärksam på följande:
 
-* planen för utförande av underhåll,
-* SQL-frågor som körs,
-* huruvida externa processer körs samtidigt (rensning, import, sammanställd beräkning osv.).
-
+* Planen för utförande av underhåll
+* SQL-frågor som körs
+* Huruvida externa processer körs samtidigt (rensning, import, sammanställd beräkning osv.).
