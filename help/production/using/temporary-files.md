@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -25,7 +25,9 @@ Orsaken är följande:
 
 Adobe Campaign genererar temporära filer under **/tmp** och byter namn på dem sedan så att de flyttas till **/usr/local/neolane/nl6/var**. Det här felet inträffar när båda mapparna (**/tmp** och **/usr/local/neolane/nl6/var**, som i själva verket är en symbolisk länk till **/var/nl6**) motsvarar olika enheter. Kommandot **df** används för verifiering.
 
-För att åtgärda det här problemet måste de temporära filerna genereras på samma enhet som målet. Genom att köra:
+För att åtgärda det här problemet måste de temporära filerna genereras på samma enhet som målet.
+
+Kör till exempel följande:
 
 ```
 $ cd ~/nl6/var
@@ -33,9 +35,8 @@ $ mkdir tmp
 $ vi ~/nl6/customer.sh
 ```
 
-och sedan lägga till:
+Lägg sedan till:
 
 ```
 export TMPDIR=/usr/local/neolane/nl6/var/tmp 
 ```
-
