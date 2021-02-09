@@ -2,110 +2,39 @@
 solution: Campaign Classic
 product: campaign
 title: Skicka ett e-postmeddelande med Adobe Campaign Classic
-description: Läs mer om parametrar för e-postleverans
+description: Lär dig hur du bekräftar leveransen av ett e-postmeddelande och hur du kan leverera e-postmeddelanden.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 8%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
 
-# Skicka ett e-postmeddelande{#sending-an-email}
+# Bekräfta e-postleverans {#confirming-email-delivery}
 
-Om du vill godkänna e-postmeddelandet och skicka det till mottagarna av den leverans som skapas klickar du på **[!UICONTROL Send]**.
+När e-postmeddelandet har skapats och konfigurerats kan du skicka det till huvudmålet. I det här avsnittet beskrivs de viktigaste stegen för att bekräfta leveransen av ett e-postmeddelande.
 
-Den detaljerade processen för att validera och skicka en leverans presenteras i avsnitten nedan:
+1. Kontrollera att du har konfigurerat alla inställningar som är specifika för e-postleverans. Mer information finns i [E-postparametrar](../../delivery/using/email-parameters.md).
+1. När e-postmeddelandet är klart, innan det skickas till huvudmålet, bör du upptäcka eventuella fel genom att skicka korrektur. Mer information finns i [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-* [Verifierar leveransen](../../delivery/using/steps-validating-the-delivery.md)
-* [Skicka leveransen](../../delivery/using/steps-sending-the-delivery.md)
+1. När du är klar måste du validera e-postmeddelandet genom att starta analysen. Det gör du genom att klicka på **[!UICONTROL Send]**, markera en åtgärd och klicka på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Avsnitten nedan beskriver de parametrar som är specifika för att leverera e-postmeddelanden.
+1. När analysen är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen till målmottagarna. Mer information finns i [Bekräfta leverans](../../delivery/using/steps-sending-the-delivery.md#confirming-delivery).
 
-## Hemlig kopia av e-post {#archiving-emails}
-
-Med Adobe Campaign kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. När alternativet är aktiverat sparas en exakt kopia av alla skickade meddelanden för den här leveransen.
-
-Mer information om konfiguration av BCC för e-post och metodtips finns i [det här avsnittet](../../installation/using/email-archiving.md).
+   <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->Hemlig kopia via e-post är en valfri funktion. Kontrollera licensavtalet och kontakta eran kontoansvarige om du vill aktivera det.
+>Hela processen för att validera en leverans beskrivs i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md). Detaljerade anvisningar för hur du konfigurerar och skickar en leverans finns i [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md).
 
-När du skapar en ny leverans- eller leveransmall är e-postkopia inte aktiverat som standard. Du måste aktivera det manuellt på e-postleveransnivå eller leveransmallnivå.
-
-Följ stegen nedan för att aktivera e-postkopia för en e-postleveransmall:
-
-1. Gå till **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** eller **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Välj leveransen eller duplicera den färdiga **mallen** E-postleverans och välj sedan den duplicerade mallen.
-1. Klicka på knappen **Egenskaper**.
-1. Klicka på fliken **[!UICONTROL Delivery]**.  
-1. Markera alternativet **E-post i hemlig kopia**. En kopia av alla skickade meddelanden för varje leverans som baseras på den här mallen skickas till den konfigurerade e-post-BCC-adressen.
-
-   ![](assets/s_ncs_user_wizard_archiving.png)
-
-   >[!NOTE]
-   >
-   >Om e-postmeddelanden som skickas till BCC-adressen öppnas och klickas igenom, kommer detta att beaktas i **[!UICONTROL Total opens]** och **[!UICONTROL Clicks]** från sändningsanalysen, vilket kan orsaka felberäkningar.
-
-## Genererar spegelsidan {#generating-the-mirror-page}
-
-Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet.
-
-Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [Personaliseringsblock](../../delivery/using/personalization-blocks.md).
-
-I leveransegenskaperna kan du ändra genereringsläget för den här sidan i fältet **[!UICONTROL Mode]** på fliken **[!UICONTROL Validity]**.
-
-![](assets/s_ncs_user_wizard_miror_page_mode.png)
-
->[!CAUTION]
->
->Ett HTML-innehåll måste ha definierats för leveransen för den spegelsida som ska skapas.
-
-Förutom standardläget är följande alternativ också tillgängliga:
-
-* **[!UICONTROL Force the generation of the mirror page]** : även om ingen länk till spegelsidan infogas i leveransen, skapas spegelsidan.
-* **[!UICONTROL Do not generate the mirror page]** : ingen spegelsida genereras, även om länken finns i leveransen.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : Med det här alternativet kan du komma åt spegelsidans innehåll, med anpassningsinformation, i leveransloggfönstret. Det gör du genom att klicka på fliken **[!UICONTROL Delivery]** efter leveransens slut och markera raden för mottagaren vars spegelsida du vill visa. Klicka på länken **[!UICONTROL Display the mirror page for this message...]**.
-
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
-
-## Hantera studsmeddelanden {#managing-bounce-emails}
-
-På fliken **[!UICONTROL SMTP]** i leveransparametrarna kan du konfigurera hanteringen av studsmeddelanden.
-
-![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
-
-Som standard tas studsade e-postmeddelanden emot i standardfelrutan för plattformen, men du kan definiera en specifik feladress för en leverans.
-
-Du kan också definiera en specifik adress från den här skärmen för att undersöka orsaken till avhoppsmeddelanden när dessa inte automatiskt kunde kvalificeras av programmet. För vart och ett av dessa fält kan du lägga till personaliseringsparametrar med ikonen Lägg till anpassade fält.
-
-## Teckenkodning {#character-encoding}
-
-På fliken **[!UICONTROL SMTP]** i leveransparametrarna kan du ange en specifik kodning i avsnittet **[!UICONTROL Character encoding]**.
-
-Standardkodningen är UTF-8. Om vissa av mottagarnas e-postleverantörer inte har stöd för UTF-8-standardkodning kanske du vill ställa in en specifik kodning så att specialtecknen visas korrekt för mottagarna av e-postmeddelanden.
-
-Du vill till exempel skicka ett e-postmeddelande som innehåller japanska tecken. Om du vill vara säker på att alla tecken visas korrekt för mottagarna i Japan kan du använda en kodning som stöder de japanska tecknen i stället för standard UTF-8.
-
-Det gör du genom att välja alternativet **[!UICONTROL Force the encoding used for messages]** i **[!UICONTROL Character encoding]**-avsnittet och välja en kodning i listrutan som visas.
-
-![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
-
-## Lägger till SMTP-rubriker {#adding-smtp-headers}
-
-Det går att lägga till SMTP-huvuden i leveranserna. Det gör du genom att använda relevant avsnitt på fliken **[!UICONTROL SMTP]** i leveransen.
-
-Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande formulär: **name:value**.
-
-Värden kodas automatiskt om det behövs.
-
->[!CAUTION]
->
->Tillägg av ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
->
->Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: Inget oanvänt utrymme, ingen tom rad, o.s.v.
+I följande avsnitt beskrivs inställningar och konfigurationer som är specifika för att leverera e-postmeddelanden:
+<!--* [Generating the mirror page](../../delivery/using/generating-mirror-page.md)
+* [Email BCC](../../delivery/using/email-bcc.md)-->
+* [E-postparametrar](../../delivery/using/email-parameters.md)
+* [Skicka e-post med den förbättrade MTA-filen](../../delivery/using/sending-with-enhanced-mta.md)
+* [Skicka e-post till japanska mobiler](../../delivery/using/sending-emails-on-japanese-mobiles.md)
