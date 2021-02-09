@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Se till att du justerar parametrarna efter e-postsändningens genomströmning. I
 
 ## Konfigurerar e-postadressen för BCC (lokalt) {#configuring-the-bcc-email-address--on-premise-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
 
@@ -125,7 +125,7 @@ I filen **config-`<instance name>.xml`** använder du följande parametrar för 
 
 ## Flyttar till den nya BCC för e-post {#updated-email-archiving-system--bcc-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >E-postarkiveringssystemet (BCC) har ändrats med Adobe Campaign 17.2 (build 8795). Om du uppgraderar från en äldre version och redan har använt e-postarkiveringsfunktioner måste du uppgradera manuellt till det nya systemet för e-postarkivering.
 
