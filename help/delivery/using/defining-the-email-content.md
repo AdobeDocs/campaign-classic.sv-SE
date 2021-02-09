@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
 
 
-# Definiera e-postinnehållet{#defining-the-email-content}
+# Definiera e-postinnehållet {#defining-the-email-content}
 
 ## Avsändare {#sender}
 
@@ -111,42 +111,29 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
-### Infoga uttryckssymboler i ett e-postmeddelande {#inserting-emoticons}
+<!--## Selecting message formats {#selecting-message-formats}
 
-Du kan infoga uttryckssymboler i ditt e-postinnehåll.
-
-1. Klicka på ikonen **[!UICONTROL Insert emoticon]**.
-1. Välj en uttryckssymbol i popup-fönstret.
-
-   ![](assets/emoticon_4.png)
-
-1. Klicka på knappen **[!UICONTROL Close]** när du är klar.
-
-Om du vill anpassa uttryckslistan läser du i den här [sidan](../../delivery/using/customizing-emoticon-list.md).
-
-## Välja meddelandeformat {#selecting-message-formats}
-
-Du kan ändra formatet för skickade e-postmeddelanden. Om du vill göra det redigerar du leveransegenskaperna och klickar på fliken **[!UICONTROL Delivery]**.
+You can change the format of email messages sent. To do this, edit the delivery properties and click the **[!UICONTROL Delivery]** tab.
 
 ![](assets/s_ncs_user_wizard_email_param.png)
 
-Välj formatet för e-postmeddelandet i fönstrets nedre del:
+Select the format of the email in the lower section of the window:
 
-* **[!UICONTROL Use recipient preferences]** (standardläge)
+* **[!UICONTROL Use recipient preferences]** (default mode)
 
-   Meddelandeformatet definieras enligt data som lagras i mottagarprofilen och lagras som standard i fältet **[!UICONTROL email format]** (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
+  The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). If a recipient wishes to receive messages in a certain format, this is the format sent. If the field is not filled in, a multipart-alternative message is sent (see below).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   Meddelandet innehåller båda formaten: text och HTML. Formatet som visas vid mottagning beror på konfigurationen av mottagarens e-postprogramvara (multipart-option).
+  The message contains both formats: text and HTML. The format displayed on reception depends on the configuration of the recipient's mail software (multipart-alternative).
 
-   >[!IMPORTANT]
-   >
-   >Det här alternativet inkluderar båda versionerna av dokumentet. Det påverkar därför leveransgraden eftersom meddelandestorleken är större.
+  >[!IMPORTANT]
+  >
+  >This option includes both versions of the document. It therefore impacts the delivery rate, because the message size is greater.
 
 * **[!UICONTROL Send all messages in text format]**
 
-   Meddelandet skickas i textformat. HTML-formatet skickas inte, utan används bara för spegelsidan när mottagaren klickar på meddelandet.
+  The message is sent in text format. HTML format will not be sent, but used for the mirror page only when the recipient clicks on the message.-->
 
 ## Definiera interaktivt innehåll {#amp-for-email-format}
 
@@ -167,6 +154,19 @@ Med en extra flik kan du ange innehåll som automatiskt ska integreras och forma
 >[!NOTE]
 >
 >Mer information om innehållshantering i Adobe Campaign finns i [det här avsnittet](../../delivery/using/about-content-management.md).
+
+## Infoga uttryckssymboler {#inserting-emoticons}
+
+Du kan infoga uttryckssymboler i ditt e-postinnehåll.
+
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]**.
+1. Välj en uttryckssymbol i popup-fönstret.
+
+   ![](assets/emoticon_4.png)
+
+1. Klicka på knappen **[!UICONTROL Close]** när du är klar.
+
+Om du vill anpassa uttryckslistan läser du i den här [sidan](../../delivery/using/customizing-emoticon-list.md).
 
 ## Lägga till bilder {#adding-images}
 
@@ -324,98 +324,97 @@ När dessa element har konfigurerats kan du slutföra e-postmeddelandet och skic
 
 ![](assets/barcode_insert_11.png)
 
-## Skicka e-post till japanska mobiler {#sending-emails-on-japanese-mobiles}
+<!--## Sending emails on Japanese mobiles {#sending-emails-on-japanese-mobiles}
 
-### E-postformat för japanska mobiler {#email-formats-for-japanese-mobiles}
+### Email formats for Japanese mobiles {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign hanterar tre specifika japanska format för e-post på mobiler: **Deco-mail** (DoCoMo-mobiler), **Decore Mail** (Softbank-mobiler) och **Decoration Mail** (KDDI AU-mobiler). Dessa format medför särskilda begränsningar för kodning, struktur och storlek. Läs mer om begränsningar och rekommendationer i [det här avsnittet](#limitations-and-recommendations).
+Adobe Campaign manages three specific Japanese formats for email on mobiles: **Deco-mail** (DoCoMo mobiles), **Decore Mail** (Softbank mobiles) and **Decoration Mail** (KDDI AU mobiles). These formats impose particular coding, structure, and size constraints. Learn more about limitations and recommendations in [this section](#limitations-and-recommendations).
 
-För att mottagaren ska kunna ta emot meddelanden i något av dessa format rekommenderar vi att du väljer **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** eller **[!UICONTROL Decoration Mail (KDDI AU)]** i motsvarande profil:
+In order for the recipient to correctly receive messages in one of these formats, we recommend selecting **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** or **[!UICONTROL Decoration Mail (KDDI AU)]** in the corresponding profile:
 
 ![](assets/deco-mail_03.png)
 
-Om du låter alternativet **[!UICONTROL Email format]** vara **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** identifierar Adobe Campaign automatiskt (när du skickar e-postmeddelandet) det japanska formatet som ska användas så att meddelandet visas korrekt.
+However, if you leave the **[!UICONTROL Email format]** option as **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** or **[!UICONTROL Text]**, Adobe Campaign will automatically detect (when sending the email) the Japanese format to use so that the message is correctly displayed.
 
-Det här automatiska identifieringssystemet baseras på listan med fördefinierade domäner som definieras i **[!UICONTROL Management of Email Formats]**-postregeluppsättningen. Mer information om hur du hanterar e-postformat finns på [den här sidan](../../installation/using/email-deliverability.md#managing-email-formats).
+This automatic detection system is based on the list of predefined domains defined in the **[!UICONTROL Management of Email Formats]** mail rule set. For more on managing email formats, refer to [this page](../../installation/using/email-deliverability.md#managing-email-formats).
 
-### Begränsningar och rekommendationer {#limitations-and-recommendations}
+### Limitations and recommendations {#limitations-and-recommendations}
 
-Ett visst antal begränsningar gäller för att skicka e-postmeddelanden som ska läsas på en mobil som drivs av en japansk leverantör (Softbank, DoCoMo, KDDI AU).
+A certain number of constraints apply for sending emails that will be read on a mobile operated by a Japanese provider (Softbank, DoCoMo, KDDI AU).
 
-Därför måste du:
+Therefore, you must:
 
-* Använd endast bilder i JPEG- eller GIF-format
-* Skapa en leverans med text och HTML-avsnitt som är strikt mindre än 10 000 byte (för KDDI AU och DoCoMo)
-* Använd bilder med en total storlek (före kodning) som är mindre än 100 kB
-* Använd inte fler än 20 bilder per meddelande
-* Använd ett HTML-format med reducerad storlek (ett begränsat antal taggar finns för varje operator)
+* Only use images in JPEG or GIF format
+* Create a delivery with text and HTML sections that are strictly lower than 10 000 bytes (for KDDI AU and DoCoMo)
+* Use images with a total size (before encoding) that is lower than 100 KB
+* Do not use more than 20 images per message
+* Use a reduced size HTML format (a limited number of tags are available for each operator)
 
 >[!NOTE]
 >
->Begränsningar som är specifika för varje operator ska beaktas när meddelandet skapas. Se:
+>Limitations specific to each operator are to be taken into account when creating your message. Refer to:  
 >
->* För DoCoMo, se [den här sidan](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
->* För KDDI AU, se [den här sidan](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
->* För Softbank, se [den här sidan](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
+>* For DoCoMo, refer to [this page](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
+>* For KDDI AU, refer to [this page](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
+>* For Softbank, refer to [this page](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
 
+### Testing the email content {#testing-the-email-content}
 
-### Testa e-postinnehållet {#testing-the-email-content}
+#### Previewing the message {#previewing-the-message}
 
-#### Förhandsgranska meddelandet {#previewing-the-message}
+Adobe Campaign allows you to check that your message format is adapted to be sent to a Japanese mobile.
 
-Med Adobe Campaign kan du kontrollera att meddelandeformatet är anpassat för att skickas till en japansk mobiltelefon.
+Once you have defined your content and entered the email subject, you can check the display and formatting when the message is created.
 
-När du har definierat innehållet och angett ämnet för e-postmeddelandet kan du kontrollera visningen och formateringen när meddelandet skapas.
+In the **[!UICONTROL Preview]** tab of the content editing window, clicking **[!UICONTROL More... > Deco-mail diagnostic]** allows you to:
 
-På fliken **[!UICONTROL Preview]** i fönstret för innehållsredigering kan du klicka på **[!UICONTROL More... > Deco-mail diagnostic]** för att:
+* Check that the HTML content tags conform to the Japanese format restrictions
+* Check that the number of images in the message does not exceed the limit imposed by the format (20 images)
+* Check the total message size (less than 100kB)
 
-* Kontrollera att HTML-innehållstaggarna följer de japanska formatbegränsningarna
-* Kontrollera att antalet bilder i meddelandet inte överstiger gränsen för formatet (20 bilder)
-* Kontrollera den totala meddelandestorleken (mindre än 100 kB)
+  ![](assets/deco-mail_06.png)
 
-   ![](assets/deco-mail_06.png)
+#### Running typology rule {#running-typology-rule}
 
-#### Kör typologiregel {#running-typology-rule}
-
-Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar ett bevis eller en leverans: en specifik typologiregel, **[!UICONTROL Deco-mail check]**, startas under analysen.
+In addition to the previewing diagnosis, a second check is carried out when sending a proof or a delivery: a specific typology rule, **[!UICONTROL Deco-mail check]**, is started during the analysis.
 
 >[!IMPORTANT]
 >
->Den här typologiregeln körs bara om minst en av mottagarna har konfigurerats att ta emot e-post i formatet **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** eller **[!UICONTROL Decoration Mail (KDDI AU)]**.
+>This typology rule is only executed if at least one of the recipients is configured to receive emails in **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** or **[!UICONTROL Decoration Mail (KDDI AU)]** format.
 
-Med den här typologiregeln kan du se till att leveransen respekterar de [formatbegränsningar](#limitations-and-recommendations) som definieras av de japanska operatorerna, särskilt i relation till den totala storleken på e-postmeddelandet, storleken på HTML- och textavsnitten, antalet bilder i meddelandena samt taggarna i HTML-innehållet.
+This typology rule allows you to make sure that the delivery respects the [format constraints](#limitations-and-recommendations) defined by the Japanese operators, particularly in relation to the total size of the email, the size of the HTML and text sections, the number of images in the messages, and the tags in the HTML content.
 
-#### Skicka korrektur {#sending-proofs}
+#### Sending proofs {#sending-proofs}
 
-Du kan skicka korrektur för att testa leveransen. När du skickar korrekturet anger du adresser som motsvarar e-postformatet för den profil som används, om du använder ersättningsadresser.
+You can send proofs to test your delivery. When you send the proof, if you are using substitution addresses, please enter addresses that correspond to the email format of the profile used.
 
-Du kan till exempel ersätta en profils adress med test@softbank.ne.jp om e-postformatet för den här profilen har definierats i förväg på **[!UICONTROL Decore Mail (Softbank)]**.
+For example, you can replace a profile's address by test@softbank.ne.jp if the email format for this profile was defined beforehand on **[!UICONTROL Decore Mail (Softbank)]**.
 
 ![](assets/deco-mail_05.png)
 
-### Skicka meddelanden {#sending-messages}
+### Sending messages {#sending-messages}
 
-Om du vill skicka ett e-postmeddelande till mottagare med japanska e-postformat med Campaign kan du välja mellan två alternativ:
+To send an email to recipients with Japanese email formats with Campaign, two options are possible:
 
-* Skapa två leveranser: en enbart för japanska mottagare och en annan för andra mottagare - se [det här avsnittet](#designing-a-specific-delivery-for-japanese-formats).
-* Skapa en enskild leverans så identifierar Adobe Campaign automatiskt vilket format som ska användas - se [det här avsnittet](#designing-a-delivery-for-all-formats).
+* Create two deliveries: one only for Japanese recipients and another for other recipients - refer to [this section](#designing-a-specific-delivery-for-japanese-formats).
+* Create a single delivery and Adobe Campaign will automatically detect the format to use - refer to [this section](#designing-a-delivery-for-all-formats).
 
-#### Designa en specifik leverans för japanska format {#designing-a-specific-delivery-for-japanese-formats}
+#### Designing a specific delivery for Japanese formats {#designing-a-specific-delivery-for-japanese-formats}
 
-Du kan skapa ett arbetsflöde som innehåller två leveranser: en som ska läsas på japanska mobiler och en annan för mottagare med ett standardformat för e-post.
+You can create a workflow that contains two deliveries: one to be read on a Japanese mobile and another for recipients with a standard email format.
 
-Det gör du genom att använda aktiviteten **[!UICONTROL Split]** i arbetsflödet och definiera de japanska e-postformaten (Deco-mail, Decoration Mail och Decore Mail) som filtreringsvillkor.
+To do this, use the **[!UICONTROL Split]** activity in your workflow and define the Japanese email formats (Deco-mail, Decoration Mail and Decore Mail) as filtering conditions.
 
 ![](assets/deco-mail_08.png)
 
 ![](assets/deco-mail_07.png)
 
-#### Designa en leverans för alla format {#designing-a-delivery-for-all-formats}
+#### Designing a delivery for all formats {#designing-a-delivery-for-all-formats}
 
-När Adobe Campaign dynamiskt hanterar formaten enligt domänen (profiler med e-postformat som är definierade som **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** ) kan du skicka samma leverans till alla dina mottagare.
+When Adobe Campaign dynamically manages the formats according to the domain (profiles with email formats defined as **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** or **[!UICONTROL Text]** ), you can send the same delivery to all of your recipients.
 
-Meddelandekontakten visas korrekt för användare på japanska mobiler, precis som för standardmottagare.
+The message contact will display correctly for the users on Japanese mobiles, just as for the standard recipients.
 
 >[!IMPORTANT]
 >
->Se till att du respekterar de specialfunktioner som är associerade med alla japanska e-postformat (Deco-mail, Decoration Mail och Decore Mail). Mer information om begränsningar finns i [det här avsnittet](#limitations-and-recommendations).
+>Make sure to respect the special features associated with each Japanese email format (Deco-mail, Decoration Mail, and Decore Mail). For more information on limitations, refer to [this section](#limitations-and-recommendations).-->
