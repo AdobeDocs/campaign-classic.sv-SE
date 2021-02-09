@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Endast leveransägaren kan påbörja en leverans. För att en annan operator (eller operatörsgrupp) ska kunna starta en leverans måste du lägga till dem som granskare i fältet **[!UICONTROL Delivery start:]**.
->
->Mer information finns i [det här avsnittet](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+>Endast leveransägaren kan påbörja en leverans. För att en annan operator (eller operatörsgrupp) ska kunna starta en leverans måste du lägga till dem som granskare i fältet **[!UICONTROL Delivery start:]**. Mer information finns i [det här avsnittet](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Ytterligare parametrar för leverans {#delivery-additiona-parameters}
 
@@ -33,7 +31,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
 * **[!UICONTROL Message batch quantity]**: Med det här alternativet kan du definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >När leveransen dupliceras återställs parametern.
 
@@ -43,15 +41,19 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
    >[!NOTE]
    >
-   >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data.
-   >
-   >Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
-När leveransen är konfigurerad och klar att skickas kontrollerar du att du har kört [leveransanalysen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery). När du är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
+## Bekräfta leverans {#confirming-delivery}
+
+Kontrollera att du har kört leveransanalysen när leveransen är konfigurerad och klar att skickas.
+
+Om du vill göra det klickar du på **[!UICONTROL Send]**, väljer önskad åtgärd och klickar på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
+
+När du är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
 
 Du kan sedan stänga leveransguiden och spåra leveransen från fliken **[!UICONTROL Delivery]**, som du kommer åt via leveransinformationen eller leveranslistan.
 
@@ -73,7 +75,7 @@ Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för
 
 1. Du kan sedan starta leveransanalysen och bekräfta leveransen. Leveranssändningen börjar dock inte förrän det datum som anges i fältet **[!UICONTROL Contact date]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >När du har startat analysen är det kontaktdatum som du har definierat fixerat. Om du ändrar det här datumet måste du starta om analysen så att dina ändringar beaktas.
 
@@ -133,7 +135,7 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
       ![](assets/s_ncs_user_wizard_waves_create.png)
    En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, som har konfigurerats på fliken **[!UICONTROL Typology]** i leveransegenskaperna, presenteras i [valideringsprocessen med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Kontrollera att de sista påfyllnaderna inte överskrider leveransdeadline, som definieras på fliken **[!UICONTROL Validity]**. Annars kanske vissa meddelanden inte skickas.
    >
@@ -169,18 +171,15 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
 Tillfälligt olevererade meddelanden på grund av ett **mjukt**- eller **Ignorerat**-fel kan göras om automatiskt. Typer av leveransfel och orsaker visas i det här [avsnittet](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-I den centrala delen av fliken **[!UICONTROL Delivery]** för leveransparametrar anges hur många försök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan försök.
+>[!IMPORTANT]
+>
+>Om du har uppgraderat till [Förbättrat MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
+
+För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre kampanjavtalet MTA, visar det centrala avsnittet på fliken **[!UICONTROL Delivery]** för leveransparametrar hur många återförsök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan återförsök.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Som standard schemaläggs fem återförsök till leveransdagens första dag med ett minsta intervall på en timme som sprids ut över dagens 24 timmar. Ett nytt försök per dag programmeras efter detta och fram till leveransdatumet, som definieras på fliken **[!UICONTROL Validity]** (se [Definiera giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)).
-
->[!NOTE]
->
->Om du har uppgraderat till Förbättrat MTA används inte längre inställningarna för nya försök i leveransen för värdbaserade eller hybridinstallationer i Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
->
->Alla konsekvenser beskrivs i dokumentet [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html).
-
+Som standard schemaläggs fem återförsök till leveransdagens första dag med ett minsta intervall på en timme som sprids ut över dagens 24 timmar. Ett nytt försök per dag programmeras efter detta och fram till leveransdatumet, som definieras på fliken **[!UICONTROL Validity]** (se [Definiera giltighetsperiod](#defining-validity-period)).
 
 ## Definiera giltighetsperiod {#defining-validity-period}
 
@@ -192,12 +191,10 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
    Du kan också välja att ange datum. Välj **[!UICONTROL Explicitly set validity dates]** om du vill göra det. I det här fallet kan du även ange datum för leveransdatum och giltighetsgräns. Den aktuella tiden används som standard, men du kan ändra den direkt i indatafältet.
 
+   >[!IMPORTANT]
+   >
+   >Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridbaserade installationer, kommer inställningen **[!UICONTROL Delivery duration]** i e-postleveranserna för Campaign endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
+
 * **Resursernas** giltighetstid: Fältet  **[!UICONTROL Validity limit]** används för överförda resurser, huvudsakligen för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
 
    Värdena i det här fältet kan uttryckas i de enheter som anges i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#default-units).
-
->[!NOTE]
->
->Om du har uppgraderat till Förbättrat MTA för värdbaserade installationer eller hybridinstallationer kommer inställningen **[!UICONTROL Delivery duration]** i kampanjleveranserna endast att användas om den är inställd på **3.5** dagar eller mindre. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
->
->Alla konsekvenser beskrivs i dokumentet [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
