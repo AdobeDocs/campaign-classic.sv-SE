@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -62,13 +62,13 @@ Loggarna för dessa kommandon lagras i modulens loggfil.
 
 Här är ett exempel som är specifikt för modulen Webb. De övriga modulerna fungerar enligt ovan.
 
-Innan du skickar det här kommandot bör du kontrollera att inga pågående jobb påverkas.
+Innan du skickar det här kommandot bör du kontrollera att inga pågående jobb påverkas:
 
 ```
 nlserver pdump -who
 ```
 
-Stäng sedan av och starta om modulen i **TraceFilter**-läge.
+Stäng sedan av och starta om modulen i **TraceFilter**-läge:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
