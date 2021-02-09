@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 2%
@@ -147,7 +147,7 @@ Du bör därför vänta tills giltighetsperiodens slut för att se det sista **[
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-## Leveransflöde
+### Leveransflöde
 
 Dataflödesdiagrammet för Campaign Delivery visar inte längre dataflödet för dina e-postmottagare. I det diagrammet visas nu dataöverföringshastigheten för vidarebefordran av meddelanden från Campaign till det förbättrade MTA-avtalet.
 
@@ -163,7 +163,7 @@ När ett meddelande har varit i Enhanced MTA-kön i 3,5 dagar och inte kunnat le
 
 Mer information om giltighetsperioden finns i [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
 
-## DKIM-signering
+### DKIM-signering
 
 DKIM (DomainKeys Identified Mail) signering av e-postautentisering görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
 Mer information om DKIM finns i [det här avsnittet](../../delivery/using/technical-recommendations.md#dkim).
