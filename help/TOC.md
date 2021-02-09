@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classic
+breadcrumb-title: Hjälpcenter
 product: campaign
 title: Guide om Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
+source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 95%
+source-wordcount: '2347'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,11 @@ ht-degree: 95%
       + [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
       + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
       + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
-      + [Skicka meddelanden](delivery/using/sending-messages.md)
+      + Skicka ett e-postmeddelande {#sending-an-email}
+         + [Bekräfta e-postleverans](delivery/using/sending-messages.md)
+         + [E-postparametrar](delivery/using/email-parameters.md)
+         + [Skicka med Förbättrad MTA](delivery/using/sending-with-enhanced-mta.md)
+         + [Skicka på japanska mobiler](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Bifoga filer](delivery/using/attaching-files.md)
    + Skicka meddelanden på mobiltelefoner {#sending-messages-on-mobiles}
       + [SMS-kanal](delivery/using/sms-channel.md)
@@ -165,6 +169,19 @@ ht-degree: 95%
       + [Använda en extern mottagartabell](delivery/using/using-an-external-recipient-table.md)
       + [Användningsfall: välja fröadresser enligt villkor](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Användningsfall: konfigurera fältersättning](delivery/using/use-case--configuring-the-field-substitution.md)
+   + A/B-test {#a-b-testing}
+      + [Kom igång med A/B-tester](delivery/using/get-started-a-b-testing.md)
+      + [Konfigurera A/B-testning](delivery/using/configuring-a-b-testing.md)
+      + Användningsfall {#use-case}
+         + [Om det här användningsexemplet](delivery/using/a-b-testing-use-case.md)
+         + [Skapa ett målarbetsflöde](delivery/using/a-b-testing-uc-targeting-workflow.md)
+         + [Konfigurerar populationsexempel](delivery/using/a-b-testing-uc-population-samples.md)
+         + [Skapa leveransmallar](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [Konfigurera leveranser](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [Skapa skriptet](delivery/using/a-b-testing-uc-script.md)
+         + [Definiera den slutliga leveransen](delivery/using/a-b-testing-uc-final-delivery.md)
+         + [Starta arbetsflödet](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Analysera resultatet](delivery/using/a-b-testing-uc-analyzing.md)
    + Prenumerationer och hänvisningar {#subscriptions-and-referrals}
       + [Om tjänster och prenumerationer](delivery/using/about-services-and-subscriptions.md)
       + [Hantera prenumerationer](delivery/using/managing-subscriptions.md)
@@ -195,7 +212,7 @@ ht-degree: 95%
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Bästa praxis för förnyat engagemang](delivery/using/re-engagement-best-practices.md)
-      + [Databaser i blockeringslistan](delivery/using/block-list-databases.md)
+      + [Blockeringslista-databaser](delivery/using/block-list-databases.md)
       + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
@@ -439,7 +456,6 @@ ht-degree: 95%
       + [Om användningsfall för arbetsflöden](workflow/using/about-workflow-use-cases.md)
       + Leveranser {#deliveries}
          + [Använda den lokala godkännandeaktiviteten](workflow/using/using-the-local-approval-activity.md)
-         + [A/B-test](workflow/using/a-b-testing.md)
          + [Skicka ett födelsedagsmeddelande](workflow/using/sending-a-birthday-email.md)
          + [Läsa in leveransinnehåll](workflow/using/loading-delivery-content.md)
          + [Arbetsflöde för leveranser över flera kanaler](workflow/using/cross-channel-delivery-workflow.md)
