@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -251,9 +251,9 @@ Som standard har Adobe Campaign leverans- och spårningsloggar en kvarhållnings
 * Om du vill att loggarna ska sparas längre bör detta beslut fattas med stor noggrannhet beroende på databasstorleken och mängden meddelanden som skickas. Som påminnelse är Adobe Campaign-sekvensen ett 32-bitars heltal.
 * Vi rekommenderar att du inte har mer än 1 miljard poster samtidigt i dessa tabeller (cirka 50 % av de 2,14 miljarder ID som finns) för att begränsa riskerna med att använda alla tillgängliga ID:n. Detta kräver att vissa kunder minskar kvarhållningstiden till mindre än 180 dagar.
 
-Läs mer om datalagring i [Riktlinjer för integritet och säkerhet för kampanjer](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent).
+Läs mer om datalagring i [Riktlinjer för integritet och säkerhet för kampanjer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#consent).
 
-Läs mer om rensningsarbetsflödet [i det här avsnittet](../../production/using/database-cleanup-workflow.md).
+Läs mer om rensningsarbetsflödet [i det här avsnittet](../../production/using/database-cleanup-workflow.md) för Campaign Data base.
 
 >[!IMPORTANT]
 >
