@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -56,7 +56,7 @@ Om du har flera innehåll för en e-postleverans kan du använda A/B-testning f�
 
 * Välj den som har högst framgångsfrekvens och skicka den till resten av ditt mål
 
-Läs mer [i det här avsnittet](../../workflow/using/a-b-testing.md).
+Läs mer [i det här avsnittet](../../delivery/using/get-started-a-b-testing.md).
 
 ## Se till att ditt meddelande levereras {#make-sure-your-message-is-delivered}
 
