@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
@@ -28,7 +28,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 * [Använda den lokala godkännandeaktiviteten](../../workflow/using/using-the-local-approval-activity.md)
-* [A/B-test](../../workflow/using/a-b-testing.md)
+* [A/B-test](../../delivery/using/a-b-testing-use-case.md)
 * [Skicka ett födelsedagsmeddelande](../../workflow/using/sending-a-birthday-email.md)
 * [Läsa in leveransinnehåll](../../workflow/using/loading-delivery-content.md)
 * [Arbetsflöde för leveranser över flera kanaler](../../workflow/using/cross-channel-delivery-workflow.md)
@@ -55,7 +55,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Importera data krypterade med en nyckel som genererats av Kontrollpanelen](../../platform/using/unzip-decrypt.md)
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Kvartalsvis listuppdatering med en inkrementell fråga](../../workflow/using/quarterly-list-update.md)
-* [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](../../workflow/using/deduplication-merge.md)
+* [Använda funktionen Sammanfoga för aktiviteten Avduplicering](../../workflow/using/deduplication-merge.md)
 * [Konfigurera ett återkommande importarbetsflöde](../../workflow/using/recurring-import-workflow.md)
 
 ## Målinriktning {#designing-queries}
