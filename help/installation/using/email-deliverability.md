@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 0%
@@ -25,7 +25,7 @@ I följande avsnitt ges en översikt över den konfiguration som krävs för att
 >
 >Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
 
-Mer information om koncept och bästa metoder för att leverera finns i det här [avsnittet](../../delivery/using/about-deliverability.md).
+Mer information om koncept och bästa metoder för att leverera finns i [avsnittet](../../delivery/using/about-deliverability.md).
 
 Alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via en Adobe Campaign-plattform finns i detta [avsnitt](../../delivery/using/technical-recommendations.md).
 
@@ -131,15 +131,15 @@ Som standard avlyssnar statistikservern port 7777. Den här porten kan ändras i
 
 ## MX-konfiguration {#mx-configuration}
 
+>[!IMPORTANT]
+>
+>Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre leveransgenomströmningsreglerna för **[!UICONTROL MX management]**. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
+
+Avsnitten nedan gäller endast lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA.
+
 ### Om MX-regler {#about-mx-rules}
 
 MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en sändande server och en mottagande server.
-
->[!IMPORTANT]
->
->Om du har uppgraderat till Enhanced MTA används inte längre leveransgenomströmningsreglerna **[!UICONTROL MX management]** för värdbaserade eller hybridbaserade installationer. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
->
->Mer information om Adobe Campaign Enhanced MTA finns i det här [dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Dessa regler läses in automatiskt varje morgon kl. 6.00 (servertid) för att klientinstansen ska kunna levereras regelbundet.
 
@@ -158,7 +158,7 @@ user:~ user$ host -t mx yahoo.com
                 yahoo.com mail is handled by 1 mta7.am0.yahoodns.net.
 ```
 
-MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta till Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
+MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
 
 ```
 user:~ user$ host -t a mta5.am0.yahoodns.net
