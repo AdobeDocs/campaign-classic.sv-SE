@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2427'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,10 @@ Det är värt att notera att det kan ta upp till 48 timmar att ta hänsyn till p
 
 ### DKIM {#dkim}
 
+>[!IMPORTANT]
+>
+>Om du har uppgraderat till [Förbättrat MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridbaserade installationer, signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
+
 DKIM-autentisering (DomainKeys Identified Mail) är en efterföljare till SPF och använder kryptografi med offentlig nyckel som gör att den mottagande e-postservern kan verifiera att ett meddelande verkligen skickades av den person eller enhet som det hävdades ha skickats av, och huruvida meddelandeinnehållet ändrades mellan den tidpunkt då det ursprungligen skickades (och DKIM &quot;signerade&quot;) och den tidpunkt det togs emot. Den här standarden använder vanligtvis domänen i huvudet Från eller Avsändare. 1024b är den rekommenderade krypteringsstorleken enligt Best Practices för att säkerställa att DKIM:s säkerhetsnivå är korrekt. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
 
 DKIM kommer från en kombination av DomainKeys, Yahoo! och Cisco identifierade autentiseringsprinciper för Internet Mail och används för att kontrollera avsändardomänens autenticitet och garantera meddelandets integritet.
@@ -87,10 +91,6 @@ DKIM kräver vissa förutsättningar:
 >* Du behöver inte aktivera både DomainKeys och DKIM för samma domän som DKIM är en förbättrad version av DomainKeys.
 >* Följande domäner validerar för närvarande DKIM: AOL, Gmail.
 
-
->[!IMPORTANT]
->
->Om du har uppgraderat till [Förbättrat MTA](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html) för värdbaserade eller hybridbaserade installationer, signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
 
 ### DMARC {#dmarc}
 
