@@ -1,0 +1,53 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Konfigurera leveranser
+description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
+audience: delivery
+content-type: reference
+topic-tags: a-b-testing
+translation-type: tm+mt
+source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 0%
+
+---
+
+
+# Konfigurera leveranser i arbetsflödet {#step-4--configuring-the-deliveries-in-the-workflow}
+
+Nästa steg är att konfigurera leveranserna. De är avsedda för de tre populationer som skapades under det föregående steget: [Steg 2: Konfigurerar populationsexempel](#step-2--configuring-population-samples). De första två leveranserna gör att du kan skicka olika innehåll till populationen A och B. Den tredje leveransen är avsedd för den population som varken erhöll A eller B. Innehållet beräknas med ett skript och är identiskt med antingen A eller B, beroende på vilken som har den högsta öppna frekvensen. Vi måste konfigurera en vänteperiod för den tredje leveransen för att ta reda på resultatet av leveranserna A och B. Det är därför den tredje leveransen innehåller en **[!UICONTROL Wait]**-aktivitet.
+
+1. Gå till aktiviteten **[!UICONTROL Split]** och länka övergången som är avsedd för population A till en av de e-postleveranser som redan finns i arbetsflödet.
+
+   ![](assets/use_case_abtesting_createdeliveries_001.png)
+
+1. Dubbelklicka på leveransen för att öppna den.
+1. Välj mall för leverans A i listrutan.
+
+   ![](assets/use_case_abtesting_createdeliveries_003.png)
+
+1. Klicka på **[!UICONTROL Continue]** för att visa leveransen och spara den.
+
+   ![](assets/use_case_abtesting_createdeliveries_002.png)
+
+1. Länka övergången för aktiviteten **[!UICONTROL Split]** som är avsedd för population B till den andra e-postleveransen.
+
+   ![](assets/use_case_abtesting_createdeliveries_004.png)
+
+1. Öppna leveransen, välj mallen i leverans B och spara sedan leveransen.
+
+   ![](assets/use_case_abtesting_createdeliveries_005.png)
+
+1. Länka övergången som är avsedd för den återstående populationen till aktiviteten **[!UICONTROL Wait]**.
+
+   ![](assets/use_case_abtesting_createdeliveries_006.png)
+
+1. Öppna aktiviteten **[!UICONTROL Wait]** och konfigurera en vänteperiod på 5 dagar.
+
+   ![](assets/use_case_abtesting_createdeliveries_007.png)
+
+1. Länka aktiviteten **[!UICONTROL Wait]** till aktiviteten **[!UICONTROL JavaScript code]**.
+
+   ![](assets/use_case_abtesting_createdeliveries_008.png)
