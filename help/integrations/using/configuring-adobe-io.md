@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
+source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Kontrollera att du har:
 
 * en giltig **organisationsidentifierare**: organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **Developer access** to your Organization.  Om du behöver begära behörighet som systemadministratör för IMS-organisationen följer du proceduren [på den här sidan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) för att ge åtkomst till alla produktprofiler.
->
+
 ## Steg 1: Skapa/uppdatera Adobe I/O Project {#creating-adobe-io-project}
 
 1. Öppna Adobe I/O och logga in med systemadministratörsbehörighet för IMS-organisationen.
