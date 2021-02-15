@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3348156f020d4c8af7e1d57c46cba99205422696
+source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -85,7 +85,7 @@ Kontrollera att du har:
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
->[!NOTE]
+>[!CAUTION]
 >
 >Adobe I/O-certifikatet upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
 
