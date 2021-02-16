@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
+source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2349'
 ht-degree: 93%
 
 ---
@@ -201,6 +201,7 @@ ht-degree: 93%
       + [Personalisera URL-spårning](delivery/using/personalizing-url-tracking.md)
       + [Åtkomst till spårningsloggarna](delivery/using/accessing-the-tracking-logs.md)
       + [Testa spårning](delivery/using/testing-tracking.md)
+      + [Felsökning av spårning](delivery/using/tracking-troubleshooting.md)
    + Leveranshantering {#deliverability-management}
       + [Om leverans](delivery/using/about-deliverability.md)
       + [Viktiga punkter att kontrollera](delivery/using/deliverability-key-points.md)
