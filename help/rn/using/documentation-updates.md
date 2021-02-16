@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3947'
 ht-degree: 93%
 
 ---
@@ -26,6 +26,10 @@ Läs [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-r
 Ett nytt avsnitt har lagts till med detaljerad information om hur A/B-tester kan utföras med arbetsflöden. [Läs mer](../../delivery/using/get-started-a-b-testing.md)
 
 Avsnittet Adobe Campaign Enhanced MTA har flyttats [här](../../delivery/using/sending-with-enhanced-mta.md).
+
+En ny sida har lagts till för att ge en översikt över spårningsfunktionerna i [!DNL Campaign Classic]. [Läs mer](../../delivery/using/about-message-tracking.md)
+
+Ett felsökningsavsnitt har lagts till för att hjälpa dig att lösa vanliga problem med spårning. [Läs mer](../../delivery/using/tracking-troubleshooting.md)
 
 Avsnittet **Skicka ett e-postmeddelande** har ordnats om och förtydligats med nya underavsnitt. [Läs mer](../../delivery/using/sending-messages.md)
 
