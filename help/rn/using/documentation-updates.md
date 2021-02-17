@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
 
-Läs [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) för versionsrelaterade uppdateringar.
+Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## Februari 2021 {#feb-2021}
 
@@ -37,33 +37,33 @@ Avsnittet **Skicka ett e-postmeddelande** har ordnats om och förtydligats med n
 
 Aktivitetsavsnittet **[!UICONTROL Fork]** har berikats med bästa praxis. [Läs mer](../../workflow/using/fork.md)
 
-Avsnittet **CRM Connectors** har uppdaterats, förbättrats och omorganiserats. [Läs mer](../../platform/using/crm-connectors.md).
+Avsnittet **CRM-kopplingar** har uppdaterats, förbättrats och omorganiserats. [Läs mer](../../platform/using/crm-connectors.md).
 
-Steg för att ansluta **Adobe Campaign och Microsoft Dynamics** beskrivs nu på en dedikerad sida. [Läs mer](../../platform/using/crm-ms-dynamics.md).
+Steg för att ansluta **Adobe Campaign och Microsoft Dynamics** beskrivs nu på en egen sida. [Läs mer](../../platform/using/crm-ms-dynamics.md).
 
-Oracle On Demand-API är nu föråldrat som CRM ansluten till Campaign. [Läs mer](../../rn/using/deprecated-features.md).
+Oracle On Demand-API:et är nu föråldrat som en CRM-koppling till Campaign. [Läs mer](../../rn/using/deprecated-features.md).
 
-Lär dig hur du tar reda på den aktuella versionen av den inbäddade Tomcat-webbservern som används i en instans av Adobe Campaign [här](../../production/using/locate-tomcat-version.md).
+Läs [här](../../production/using/locate-tomcat-version.md) om hur du tar reda på den aktuella versionen av den inbäddade Tomcat-webbservleten som används i en instans i Adobe Campaign.
 
 Listan över tekniska arbetsflöden med tillhörande paket har förbättrats och centraliserats till en enda sida. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
-Felsökningsavsnittet i guiden **Övervakning** har organiserats om och förbättrats med en startsida. [Läs mer](../../production/using/troubleshooting.md).
+Avsnittet Felsökning i användarhandboken **Övervakning** har omorganiserats och förbättrats med en landningssida. [Läs mer](../../production/using/troubleshooting.md).
 
-Det finns ett nytt **avsnitt där du kan importera och exportera data** med nya sidor som rör arbetsflöden, datakomprimering, kryptering och import av bästa praxis. [Läs mer](../../platform/using/get-started-data-import-export.md)
+Det finns ett nytt avsnitt gällande att **importera och exportera data** med nya sidor som rör bästa praxis för arbetsflöden, datakomprimering, kryptering och import. [Läs mer](../../platform/using/get-started-data-import-export.md)
 
 ## December 2020 {#dec-2020}
 
-Avsnittet **Leveransövervakning** har omorganiserats till tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
+Avsnittet **Leveransövervakning** har omorganiserats med tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
 
 Ett användningsfall har lagts till om hur du lägger till avsändarnas IP-adresser i leveransloggarna. [Läs mer](../../delivery/using/delivery-dashboard.md#use-case)
 
 Frågor och svar om sekretess har flyttats till [det här avsnittet](../../platform/using/privacy-faq.md).
 
-Ett användningsexempel har lagts till om hur du använder **[!UICONTROL Deduplication]**-aktivitetens sammanfogningsfunktion. [Läs mer](../../workflow/using/deduplication-merge.md)
+Ett användningsfall har lagts till om hur du använder **[!UICONTROL Deduplication]**-aktivitetens funktioner för sammanslagning. [Läs mer](../../workflow/using/deduplication-merge.md)
 
-Den fullständiga beskrivningen av protokollen och inställningssidan för SMS-anslutningsprogrammet är nu tillgänglig [här](../../delivery/using/sms-protocol.md).
+Protokoll- och inställningssidan med en fullständig beskrivning beträffande SMS-kopplingen finns nu tillgänglig [här](../../delivery/using/sms-protocol.md).
 
-En anteckning har lagts till i avsnittet **Transactional messaging** som varnar för att händelsemapparna inte får anges som vyer för körningsinstanserna för att undvika problem med åtkomsträttigheterna. [Läs mer](../../message-center/using/event-collection.md)
+Information har lagts till i avsnittet **Transaktionsmeddelanden** som varnar för att händelsemapparna inte får anges som vyer över körningsinstanserna för att undvika problem med åtkomsträttigheter. [Läs mer](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
