@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
 source-wordcount: '2349'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -74,15 +74,15 @@ ht-degree: 93%
          + [Kom igång med generiska importer och exporter](platform/using/about-generic-imports-exports.md)
          + [Skapa import- och exportmallar](platform/using/creating-import-export-templates.md)
          + [Skapa import- och exportjobb](platform/using/creating-import-export-jobs.md)
-         + [Konfigurerar importjobb](platform/using/executing-import-jobs.md)
-         + [Konfigurerar exportjobb](platform/using/executing-export-jobs.md)
+         + [Konfigurera importjobb](platform/using/executing-import-jobs.md)
+         + [Konfigurera exportjobb](platform/using/executing-export-jobs.md)
          + [Övervaka körning av jobb](platform/using/monitoring-jobs-execution.md)
-         + [Allmänna importexempel](platform/using/import-operations-samples.md)
-      + Hantera datakryptering och komprimering {#managing-data-encryption-compression}
-         + [Zippa upp eller dekryptera en fil före bearbetning](platform/using/unzip-decrypt.md)
-         + [Zippa eller kryptera en fil före bearbetning](platform/using/zip-encrypt.md)
-      + Bästa tillvägagångssätt och felsökning {#best-practices}
-         + [Importera och exportera metodtips](platform/using/import-export-best-practices.md)
+         + [Generiska importexempel](platform/using/import-operations-samples.md)
+      + Hantera datakryptering och -komprimering {#managing-data-encryption-compression}
+         + [Packa upp eller dekryptera en fil före bearbetning](platform/using/unzip-decrypt.md)
+         + [Komprimera eller kryptera en fil före bearbetning](platform/using/zip-encrypt.md)
+      + Bästa praxis och felsökning {#best-practices}
+         + [Bästa praxis för import och export](platform/using/import-export-best-practices.md)
          + [Bästa praxis och felsökning för SFTP-servrar](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
       + [Filtreringsalternativ](platform/using/filtering-options.md)
@@ -99,9 +99,9 @@ ht-degree: 93%
    + Kopplingar {#connectors}
       + [Om kopplingar](platform/using/about-connectors.md)
       + CRM-kopplingar{#crm-connectors}
-         + [Kom igång med CRM Connectors](platform/using/crm-connectors.md)
+         + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Synkronisera data med CRM](platform/using/crm-data-sync.md)
+         + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
@@ -471,7 +471,7 @@ ht-degree: 93%
          + [Berika data](workflow/using/enriching-data.md)
          + [Använda aggregat](workflow/using/using-aggregates.md)
          + [Använda funktionen Sammanfoga för aktiviteten Avduplicering](workflow/using/deduplication-merge.md)
-         + [Konfigurera ett återkommande importarbetsflöde](workflow/using/recurring-import-workflow.md)
+         + [Konfigurera ett arbetsflöde för återkommande import](workflow/using/recurring-import-workflow.md)
       + Utforma frågor {#designing-queries}
          + [Kvartalsvis listuppdatering med en inkrementell fråga](workflow/using/quarterly-list-update.md)
       + Målinriktning {#designing-queries}
