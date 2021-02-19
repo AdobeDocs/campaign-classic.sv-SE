@@ -88,7 +88,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> Om du anger "1" som värde kan du utesluta mottagare som inte längre vill bli kontaktade.<br /> </td> 
+   <td> Om du anger "1" som värde kan du exkludera mottagare som inte längre vill bli kontaktade.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
@@ -413,7 +413,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XTKSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
-   <td> Om 1 är markerat inaktiverar det här alternativet ACL-kontroller under en filhämtning (via fileDownload.jsp).<br /> </td> 
+   <td> Om du väljer 1 inaktiveras ACL-kontroller under en filhämtning (via fileDownload.jsp).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_JSFileSandboxing</span> <br /> </td> 
@@ -682,7 +682,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">datatyp:</span> heltal</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (text)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
