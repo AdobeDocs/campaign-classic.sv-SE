@@ -108,13 +108,13 @@ Tre olika lägen finns tillgängliga:
 
 ## Adobe Campaign v7-trädstruktur {#campaign-vseven-tree-structure}
 
-Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen, och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
+Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
 
 Ett alternativ har lagts till för att inaktivera automatisk migrering av navigeringsträdet. Den här åtgärden är nu manuell. Föråldrade mappar tas inte bort och nya mappar läggs inte till. Det här alternativet bör endast användas om det färdiga v5-navigeringsträdet har genomgått för många ändringar. Lägg till alternativet i konsolen innan du migrerar i noden **[!UICONTROL Administration > Options]**:
 
 * Internt namn: NlMigration_KeepFolderStructure
 * Datatyp: Heltal
-* Värde (text): 3
+* Värde (text): 1
 
 Om du använder det här alternativet måste du efter migreringen ta bort gamla mappar, lägga till nya mappar och köra alla nödvändiga kontroller.
 
