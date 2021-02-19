@@ -158,7 +158,7 @@ Så här konfigurerar du Azure synapse på Debian:
    sudo apt-get install apt-transport-https ca-certificates
    ```
 
-1. Nu måste du installera mssql-tools med följande kommandon. Mssq-tools behövs för att använda BCP-verktyget och köra frågor.
+1. Nu måste du installera mssql-tools med följande kommandon. Mssq-tools behövs för att använda BCP-verktyget (bulkkopieringsprogrammet) och för att köra frågor.
 
    ```
    sudo ACCEPT_EULA=Y apt-get install mssql-tools
@@ -198,7 +198,7 @@ Med det externa [!DNL Azure Synapse]-kontot kan du ansluta Campaign-instansen ti
 
 Följ stegen nedan för att skapa ditt externa [!DNL Azure Synapse]-konto:
 
-1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]** &lt;a3/> i Campaign **[!UICONTROL Explorer]**.
+1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
