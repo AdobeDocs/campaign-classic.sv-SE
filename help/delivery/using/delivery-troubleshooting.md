@@ -33,7 +33,7 @@ När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta läng
 
 * Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. Kontrollera i så fall dina utskick och läs [det här avsnittet](../../delivery/using/about-deliverability.md).
 
-* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa med hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit. Läs Adobe Campaign [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md) om du vill veta mer om riktlinjer för innehåll.
+* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Läs Adobe Campaign [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md) om du vill veta mer om riktlinjer för innehåll.
 
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
