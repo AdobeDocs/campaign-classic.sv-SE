@@ -43,7 +43,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 
@@ -175,7 +175,7 @@ Tillfälligt olevererade meddelanden på grund av ett **mjukt**- eller **Ignorer
 >
 >Om du har uppgraderat till [Förbättrat MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
-För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre kampanjavtalet MTA, visar det centrala avsnittet på fliken **[!UICONTROL Delivery]** för leveransparametrar hur många återförsök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan återförsök.
+För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA, visar det centrala avsnittet på fliken **[!UICONTROL Delivery]** för leveransparametrar hur många återförsök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan återförsök.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
