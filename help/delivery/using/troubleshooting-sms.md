@@ -149,7 +149,7 @@ Minska antalet dubbletter när ett nytt försök görs:
 
 ## Problem vid behandling av SR (leveranskvitton) {#issue-process-SR}
 
-* Du måste ha aktiverat SMPP-spår för att kunna utföra någon typ av SR-felsökning.
+* SMPP-spår måste vara aktiverade för att du ska kunna utföra någon typ av SR-felsökning.
 
 * Kontrollera att `DELIVER_SM PDU` kommer från providern och att den är korrekt formaterad.
 
@@ -245,7 +245,7 @@ Nätverksinspelning behövs inte alltid, vanligen räcker det med omfattande SMP
 
 * Anslutningsproblem, men de detaljerade meddelandena visar inga `BIND_RESP PDU`.
 
-* Oförklarliga frånkopplingar utan felmeddelande, det vanliga beteendet för kopplingen när ett lågnivåprotokollfel upptäcks.
+* Oförklarliga frånkopplingar utan felmeddelande, det vanliga beteendet för kopplingen när den upptäcker ett protokollfel på låg nivå.
 
 * Providern klagar över avbindnings-/frånkopplingsprocessen.
 
