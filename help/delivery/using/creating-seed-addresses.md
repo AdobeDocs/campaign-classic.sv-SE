@@ -21,7 +21,7 @@ Seed-adresser hanteras inte via standardprofiler och -mål, utan i en dedikerad 
 
 Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på noden **[!UICONTROL Seed addresses]** och väljer **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** för att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. Mer information finns i [Definiera adresser](#defining-addresses).
 
-Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven för de aktuella leveranserna och kampanjerna. Se [Skapa dirigerade adressmallar](#creating-seed-address-templates).
+Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Se [Skapa dirigerade adressmallar](#creating-seed-address-templates).
 
 ## Definiera adresser {#defining-addresses}
 
