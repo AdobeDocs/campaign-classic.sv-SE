@@ -75,7 +75,7 @@ Det här läget är kostsamt när det gäller beräkning vid loggavstämning.
 
 **Egenskaper för det anonyma webbspårningsläget:**
 
-I det här webbspårningsläget kan du hämta en spårningslogg som är länkad till anonym surfning i Adobe Campaign. En spårningslogg skapas automatiskt för varje klick på en spårad URL. Den här loggen har bara värdet uuid230. Under en marknadsföringskampanj skapas en spårningslogg automatiskt med all identifieringsinformation (se sessionsspårning). Adobe Campaign söker automatiskt i tidigare loggar efter ett uuid230-värde som är lika med värdet från spårningsloggen för den här marknadsföringskampanjen. Om identiska värden hittas, anges alla tidigare spårningsloggar med all information från loggen för marknadsföringskampanjer.
+I det här webbspårningsläget kan du hämta en spårningslogg som är länkad till anonym surfning i Adobe Campaign. En spårningslogg skapas automatiskt för varje klick på en spårad URL. Den här loggen har bara värdet uuid230. Under en marknadsföringskampanj skapas en spårningslogg automatiskt med all identifieringsinformation (se sessionsspårning). Adobe Campaign söker automatiskt i tidigare loggar efter ett uuid230-värde som är lika med värdet från spårningsloggen för den här marknadsföringskampanjen. Om identiska värden hittas, anges alla tidigare spårningsloggar tillsammans med all information från spårningsloggen för marknadsföringskampanjer.
 
 Det här läget är det mest kostsamma när det gäller beräkning och volym.
 
