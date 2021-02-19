@@ -77,7 +77,7 @@ Så här väljer du vilken koppling du vill använda:
 
    ![](assets/nmac_ios.png)
 
-1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtypen.
+1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtyp.
 
    ![](assets/nmac_service_2.png)
 
