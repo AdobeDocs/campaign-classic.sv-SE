@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 
@@ -65,4 +65,4 @@ Gå till avsnitten nedan för att läsa mer om mer specifika problem:
 
 * [Stackspårning i Linux](../../production/using/stack-trace-in-linux.md)
 * [JSP-beteende](../../production/using/jsp-behavior.md)
-* [Söker efter Tomcat-version](../../production/using/locate-tomcat-version.md)
+* [Hitta versionen av Tomcat](../../production/using/locate-tomcat-version.md)
