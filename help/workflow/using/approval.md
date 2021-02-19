@@ -33,7 +33,7 @@ Om det behövs kan du tilldela godkännandeuppgiften till en enda operator eller
    >
    >Endast den valda operatorn kommer att få behörighet att godkänna uppgiften.
 
-* Du kan definiera en fråga för filtrering av godkännandeoperatorer. Det gör du genom att markera **[!UICONTROL Filter]**-värdet i fältet **[!UICONTROL Assignment type]** och klicka på länken **[!UICONTROL Advanced parameters...]** för att definiera filtreringsvillkoren enligt följande exempel:
+* Du kan definiera en fråga för filtrering av godkännandeoperatorer. Det gör du genom att markera **[!UICONTROL Filter]**-värdet i fältet **[!UICONTROL Assignment type]** och klicka på länken **[!UICONTROL Advanced parameters...]** för att definiera filtreringsvillkoren, vilket visas i följande exempel:
 
    ![](assets/s_advuser_validation_box_filter.png)
 
