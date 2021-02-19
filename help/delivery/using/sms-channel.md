@@ -21,7 +21,7 @@ Med Adobe Campaign kan ni utföra massutskick av personaliserade SMS-meddelanden
 
 >[!NOTE]
 >
->Med Adobe Campaign kan du även skicka meddelanden på mobilterminaler via alternativet **Adobe Campaign Mobile App Channel (NMAC)**.
+>I Adobe Campaign kan du även skicka meddelanden på mobilterminaler via alternativet **Adobe Campaign Mobile App Channel (NMAC)**.
 > 
 >Mer information finns i [Om mobilappskanalen](../../delivery/using/about-mobile-app-channel.md).
 
@@ -157,7 +157,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
