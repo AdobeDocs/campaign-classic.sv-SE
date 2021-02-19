@@ -330,7 +330,7 @@ Klicka på en PublicId-identifierare för att visa mer information.
 
 >[!NOTE]
 >
->Procentandelen fel representeras av två diagram. Den första är en vågrät förloppsindikator på en svart bakgrund. Det andra diagrammet är kronologiskt. Den markerade perioden är uppdelad i tolv tidsintervall, där vart och ett representeras av en lodrät förloppsindikator. I båda representationerna är stapeln svart om inget fel har identifierats. Färgen på stapeln beror på hur många procent fel som har inträffat (gult, orange och slutligen rött). Färggrått innebär att ingen signifikant datavolym har hittats. Du kan visa den exakta procentandelen fel genom att placera markören i diagrammet.
+>Procentandelen fel representeras av två diagram. Den första är en vågrät förloppsindikator på en svart bakgrund. Det andra diagrammet är kronologiskt. Den markerade perioden delas in i tolv tidsintervall, som alla representeras av en lodrät förloppsindikator. I båda representationerna är stapeln svart om inget fel har identifierats. Färgen på stapeln beror på hur många procent fel som har inträffat (gult, orange och slutligen rött). Färggrått innebär att ingen signifikant datavolym har hittats. Du kan visa den exakta procentandelen fel genom att placera markören i diagrammet.
 
 >[!NOTE]
 >
@@ -386,7 +386,7 @@ wfserver@prod
 
 #### /r/test {#r-test}
 
-Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan också användas för att testa en lastdispatcher.
+Sidan **http(s)://`<application>`/r/test** används för att testa omdirigeringsservern. Vi rekommenderar att du använder samma metod för att testa frontservrarna som används för spårning. Den här sidan kan även användas för att testa en lastdispatcher.
 
 Här visas en rad som den här i XML-format:
 
@@ -541,7 +541,7 @@ Här är ett konfigurationsexempel:
 
 >[!NOTE]
 >
->Du kan ange olika konfigurationer genom att lägga till ett suffix till filen **netconf.xml**, till exempel **netconf-dev.xml**, **netconf-prod.xml**, osv. Ange sedan den konfiguration som ska användas för att köra netreport i **netreport.bat** eller **netreport.sh**-filerna genom att lägga till **$JAVA_HOME/bin/java netreport dev** eller **@%JAVA_HOME%binjava netreport prod** som exempel .
+>Du kan ange olika konfigurationer genom att lägga till ett suffix till filen **netconf.xml**, till exempel **netconf-dev.xml**, **netconf-prod.xml**, osv. Ange sedan den konfiguration som ska användas för att köra netreport i **netreport.bat** eller **netreport.sh**-filerna genom att lägga till **$JAVA_HOME/bin/java netreport dev** eller **@%JAVA_HOME%binjava netreport prod** .
 
 >[!IMPORTANT]
 >
