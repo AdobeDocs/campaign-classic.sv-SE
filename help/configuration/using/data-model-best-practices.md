@@ -57,7 +57,7 @@ Vilka data ska skickas till Adobe Campaign? Det är viktigt att kunna avgöra vi
 >
 >Adobe Campaign är varken ett data warehouse eller ett rapportverktyg. Därför ska du inte importera alla möjliga kunder och tillhörande information till Adobe Campaign, eller importera data som bara ska användas för att skapa rapporter.
 
-Om du vill avgöra om ett attribut behövs eller inte i Adobe Campaign, frågar du dig själv om det hamnar i någon av följande kategorier:
+Om du vill avgöra om ett attribut behövs eller inte i Adobe Campaign, frågar du dig själv om det skulle ingå i någon av dessa kategorier:
 
 * Attribut som används för **segmentering**
 * Attribut som används för **datahanteringsprocesser** (t.ex. aggregerad beräkning)
@@ -238,7 +238,7 @@ Definiera en länk med en kardinalitet (1-N) i schemat på (1) sidan. Relationen
 
 Observera att en länks omvända kardinalitet är (N) som standard. Det går att definiera en länk (1-1) genom att lägga till attributet revCardinality=&#39;single&#39; till länkdefinitionen.
 
-Om den omvända länken inte ska vara synlig för användaren kan du dölja den med länkdefinitionen revLink=&#39;_NONE_&#39;. Ett bra exempel för detta är att definiera en länk från mottagaren till den senast slutförda transaktionen. Du behöver bara se länken från mottagaren till den sista transaktionen och ingen omvänd länk krävs för att kunna visas från transaktionsregistret.
+Om den omvända länken inte ska vara synlig för användaren kan du dölja den med länkdefinitionen revLink=&#39;_NONE_&#39;. Ett bra exempel för detta är att definiera en länk från mottagaren till den senaste transaktionen som har slutförts. Du behöver bara se länken från mottagaren till den sista transaktionen och ingen omvänd länk krävs för att kunna visas från transaktionsregistret.
 
 Länkar som utför en extern koppling (1-0..1) bör användas med försiktighet eftersom det påverkar systemets prestanda.
 
