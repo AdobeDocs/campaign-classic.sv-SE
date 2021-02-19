@@ -43,7 +43,7 @@ Dessa underhållsförfaranden skall utföras regelbundet och skall omfatta följ
 
 ### Underhållsschema {#maintenance-schedule}
 
-Du måste hitta rätt kortplatser för att kunna utföra dessa underhållsaktiviteter. De kan påverka databasens prestanda avsevärt när programmet körs eller till och med blockeras (på grund av låsning).
+Du måste hitta lämpliga platser för att utföra dessa underhållsaktiviteter. De kan påverka databasens prestanda avsevärt när programmet körs eller till och med blockeras (på grund av låsning).
 
 Dessa uppgifter körs vanligtvis en gång i veckan under en period med låg aktivitet som inte kolliderar med säkerhetskopiering, datainläsning eller aggregeringsberäkning. Vissa system som är mycket efterfrågade kräver oftare underhåll.
 
