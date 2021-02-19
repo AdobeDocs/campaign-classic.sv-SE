@@ -53,7 +53,7 @@ Det är standardtabellen som används för **mottagare av leveranser**. Den inne
 
 Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körningsmapp. Mer information finns i [XtkFolder](#XtkFolder).
 
-Fältet sCountryCode är ISO-koden 3166-1 Alpha 2 (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet &#39;XX&#39; (och används i stället för en nollpost).
+Fältet sCountryCode är ISO-koden 3166-1 Alpha 2 (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet&quot;XX&quot; (och används i stället för en nollpost).
 
 Mer information om mottagartabellen finns i [det här avsnittet](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -121,7 +121,7 @@ Den här tabelluppsättningen är länkad till **modulen marknadsföringskampanj
 
 * **NmsOperation**: Den här tabellen matchar  **nms:** operationSchema. Det innehåller data från marknadsföringskampanjer.
 * **NmsDeliveryOutline**: Tabellen matchar  **nms:** deliveryOutlineschema. Den innehåller de utökade egenskaperna för leveransen (leveransdisposition).
-* **NmsDlvOutlineItem**: Tabellen matchar schemat  **nms:** dlvOutlineItem. Den innehåller artiklarna i en leveransdisposition.
+* **NmsDlvOutlineItem**: Den här tabellen matchar schemat  **nms:** dlvOutlineItem. Den innehåller artiklarna i en leveransdisposition.
 * **NmsDeliveryCustomization**: Tabellen matchar  **nms:** deliveryCustomizationSchema. Det innehåller personaliseringsfälten för en leverans.
 * **NmsBudget**: Tabellen matchar  **nms:** budgetschema. Den innehåller data från en budget för en kampanj, en plan, ett program, en aktivitet och/eller leveranser.
 * **NmsDocument**: Tabellen matchar  **nms:** documents-schemat. Det innehåller kampanjens marknadsföringsdokument i form av filer (bilder, Excel- eller ordfiler etc.)
