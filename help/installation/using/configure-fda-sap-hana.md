@@ -64,7 +64,7 @@ För att ansluta till en extern SAP HANA-databas i FDA krävs vissa ytterligare 
 
 Med SAP HANA externa konto kan du ansluta Campaign-instansen till din externa SAP HANA-databas.
 
-1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]** &lt;a3/> i Campaign **[!UICONTROL Explorer]**.
+1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
 
