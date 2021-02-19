@@ -44,7 +44,7 @@ Detta är vad modulen **stat** gör: den vidarebefordrar alla anslutningsbegära
 
 ### Leveransservrar {#delivery-servers}
 
-Modulen **mta** distribuerar meddelanden till dess **mtachild** underordnade moduler. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
+Modulen **mta** distribuerar meddelanden till de underordnade modulerna **mtachild**. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
 
 Stegen är följande:
 
@@ -158,7 +158,7 @@ user:~ user$ host -t mx yahoo.com
                 yahoo.com mail is handled by 1 mta7.am0.yahoodns.net.
 ```
 
-MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
+MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta till Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
 
 ```
 user:~ user$ host -t a mta5.am0.yahoodns.net
