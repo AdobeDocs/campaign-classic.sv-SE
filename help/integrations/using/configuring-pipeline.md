@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '908'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 
 Kontrollera att du använder:
 
-* Adobe Campaign 20.3 eller Gold Standard 11, minimum
+* Adobe Campaign 20.3, 20.2.4, 19.1.8 eller Gold Standard 11 minimum
 * Adobe Analytics Standard
 
 Du behöver också:
@@ -49,7 +49,7 @@ Autentisering stöds för Marketing Cloud via Adobe I/O Project.
 
 För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integreringen av utlösare.
 
-För On Premise-kunder, se sidan [Konfigurera Adobe I/O för Adobe Experience Cloud-utlösare](../../integrations/using/configuring-adobe-io.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe I/O-autentiseringsuppgifter.
+För On Premise-kunder, se sidan [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe I/O-autentiseringsuppgifter.
 
 ## Steg 2: Konfigurerar alternativet för NmsPipeline_Config-pipeline {#configuring-nmspipeline}
 
