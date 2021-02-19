@@ -27,7 +27,7 @@ XML-dokumentet i indataformuläret måste innehålla rotelementet `<form>` med a
 </form>
 ```
 
-Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema**-attributet för `<form>`-elementet till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
+Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema**-attributet för `<form>`-elementet till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat&quot;cus:mottagare&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
