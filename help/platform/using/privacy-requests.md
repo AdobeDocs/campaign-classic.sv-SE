@@ -57,7 +57,7 @@ Om du vill använda den här funktionen måste du installera **[!UICONTROL Priva
 Två nya mappar, som är specifika för sekretess, skapas under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**:
 
 * **[!UICONTROL Privacy Requests]**: Här skapar du dina förfrågningar om sekretess och följer deras utveckling.
-* **[!UICONTROL Namespaces]**: Här definierar du det fält som ska användas för att identifiera den registrerade i Adobe Campaign-databasen.
+* **[!UICONTROL Namespaces]**: Här definierar du vilket fält som ska användas för att identifiera den registrerade i Adobe Campaign-databasen.
 
 ![](assets/privacy-folders.png)
 
