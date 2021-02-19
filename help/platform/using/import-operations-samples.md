@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Allmänna importexempel
+title: Generiska importexempel
 description: Läs mer om generiska importer som du kan utföra med importjobb.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Allmänna importexempel {#import-operations-samples}
+# Generiska importexempel {#import-operations-samples}
 
 ## Importera från en lista med mottagare {#example--import-from-a-list-of-recipients}
 
