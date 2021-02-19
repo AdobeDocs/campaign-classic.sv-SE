@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
 **Relaterade ämnen:**
 
 * [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
-* [Felsökning av leverans](../../delivery/using/delivery-troubleshooting.md)
+* [Leveransfelsökning](../../delivery/using/delivery-troubleshooting.md)
 * [Om leverans](../../delivery/using/about-deliverability.md)
 
 ## Lista över leveransstatus {#list-delivery-statuses}
