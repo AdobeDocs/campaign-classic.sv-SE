@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '3127'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -23,9 +23,9 @@ _16 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 31 mars 2021 **.**
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatoriskt för att öka din miljösäkerhet.
-> * Om du använder Experience Cloug Triggers-integrering via autentisering måste du gå över till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell kommer att upphöra den 30 april 2021 **.**
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **31 mars 2021**.
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O såsom beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
 
 
 
@@ -257,7 +257,7 @@ _30 maj 2019_
 * Ett problem med att ta bort ID när dirigerade adresser används i en leverans har korrigerats. (NEO-11842)
 * Ett problem med kompatibilitet mellan phantomjs och Debian 9 har korrigerats.
 * Korrigerade ett fel vid godkännande av innehållet i ett korrektur. (NEO-12725)
-* Ett problem med arbetsflödesfunktionen Exkludera den här delmängden från ifyllningen har korrigerats. (NEO-12441)
+* Ett problem med arbetsflödesfunktionen Uteslut den här delmängden från ifyllningen har korrigerats. (NEO-12441)
 * Korrigerade ett problem med HTTPRequest-wait-API som inte väntade på att alla återanrop skulle slutföras. (NEO-12628)
 * Korrigerade ett problem med aktiviteten Uppdatera delad publik i en delad aktivitet. (NEO-11562)
 * Korrigerade ett webbserverkraschproblem. (NEO-12904)
