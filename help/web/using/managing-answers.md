@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Lagra insamlade svar {#storing-collected-answers}
 
-Förutom de vanliga lagringslägena som är gemensamma för alla webbformulär i Adobe Campaign (databasfält och lokal variabel), möjliggör enkäter den dynamiska utökningen av datamodellen med arkiverade fält.
+Förutom de vanliga lagringslägena som är gemensamma för alla webbformulär i Adobe Campaign (databasfält och lokal variabel), möjliggör enkäter det dynamiska tillägget av datamodellen med arkiverade fält.
 
 >[!CAUTION]
 >
