@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurerar importjobb
+title: Konfigurera importjobb
 description: Lär dig hur du konfigurerar och kör importjobb i Campaign Classic.
 audience: platform
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Konfigurerar importjobb {#executing-import-jobs}
+# Konfigurera importjobb {#executing-import-jobs}
 
 Med Adobe Campaign kan du importera data till databasen från en eller flera filer i text-, CSV-, TAB- eller XML-format. De här filerna är kopplade till en tabell (huvud eller länkad) och varje fält i källfilen/källfilerna är kopplat till ett fält i databasen.
 
