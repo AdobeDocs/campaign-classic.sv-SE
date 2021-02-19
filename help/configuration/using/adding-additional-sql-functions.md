@@ -89,7 +89,7 @@ Funktioner som ska läggas till finns i **&quot;paketfilen** i XML-format. Här 
 
 >[!IMPORTANT]
 >
->Se till att du slutför attributet @label: det här namnet visas i listan över tillgängliga funktioner. Om du inte anger något får gruppen inget namn. Om du anger ett annat namn än det befintliga, ändras dock namnet på hela gruppen.
+>Se till att du slutför attributet @label: det här namnet visas i listan över tillgängliga funktioner. Om du inte anger något får gruppen inget namn. Om du däremot anger ett annat namn än det befintliga, ändras namnet på hela gruppen.
 
 Om du vill lägga till funktioner i flera olika grupper kan du göra så att flera `<group>`-element spåras i samma lista.
 
