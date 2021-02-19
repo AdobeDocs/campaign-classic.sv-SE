@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Om Adobe Experience Cloud-utlösare
-description: Kom igång med implementeringen av Adobe Experience Cloud Triggers
+description: Kom igång med Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
