@@ -41,7 +41,7 @@ Så här godkänner du erbjudandeinnehållet:
 
    ![](assets/offer_validate_002.png)
 
-1. Använd listrutan för att markera de representationer som du vill fortsätta redigera eller de som du vill publicera i den aktiva miljön och klicka sedan på **[!UICONTROL Content approval]**.
+1. I listrutan väljer du de representationer som du vill fortsätta redigera eller de som du vill publicera i den aktiva miljön och klickar sedan på **[!UICONTROL Content approval]**.
 
    ![](assets/offer_validate_003.png)
 
