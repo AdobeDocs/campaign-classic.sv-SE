@@ -60,7 +60,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
    Om ett Windows Shell visas och fortsätter att visas i några sekunder väntar du tills installationen och uppdateringen har slutförts och klickar sedan på **Enter**.
 
-   Om Windows Shell inte visas eller inte visas innan den försvinner, dubbelklickar du på filen **portableShell.bat** för att visa ett Windows Shell och kontrollerar att Shell-sökvägen motsvarar den mapp där filen **spamassassin.zip** har packats upp. Om så inte är fallet kan du komma åt det med kommandot **cd**.
+   Om Windows Shell inte visas eller inte visas innan den försvinner, dubbelklickar du på filen **portableShell.bat** för att visa ett Windows Shell och kontrollerar att Shell-sökvägen motsvarar mappen där filen **spamassassin.zip** har packats upp. Om så inte är fallet kan du komma åt det med kommandot **cd**.
 
    Ange **run_me.bat** och klicka sedan på **Enter** för att starta installations- och uppdateringsprocessen. Åtgärden returnerar ett av följande värden för att ange resultatet av uppdateringen.
 
