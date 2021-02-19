@@ -124,7 +124,7 @@ Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig 
 
 ## Integritetshantering {#privacy-management}
 
-Integritetshantering avser alla processer och verktyg som kan hjälpa er att följa integritetsbestämmelser (GDPR, CCPA, etc.). Få en översikt över vilken sekretesshantering som finns på [den här sidan](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html).
+Integritetshantering avser alla processer och verktyg som kan hjälpa er att följa integritetsbestämmelser (GDPR, CCPA, etc.). Få en översikt över vad integritetshantering är på [denna sida](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html).
 
 Adobe Campaign tillhandahåller olika funktioner för integritetshantering:
 * Medgivandehantering, datalagring och användarroller. Se [det här avsnittet](#consent).
