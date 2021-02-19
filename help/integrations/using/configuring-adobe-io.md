@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Om du använder en äldre version av integreringen av utlösare via autentisering, **måste du flytta till Adobe I/O enligt beskrivningen nedan**. Det äldre autentiseringsläget för autentisering upphör 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Om du använder en äldre version av integreringen av utlösare via autentisering, **måste du flytta till Adobe I/O enligt beskrivningen nedan**. Äldre oAuth-autentiseringsmodeller upphör 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >Observera att under den här flytten till Adobe I/O kan vissa inkommande utlösare gå förlorade.
 
