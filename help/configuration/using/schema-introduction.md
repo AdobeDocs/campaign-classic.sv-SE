@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 7%
+ht-degree: 27%
 
 ---
 
@@ -24,18 +24,18 @@ Som standard är alla booleska typattribut&quot;false&quot; i Adobe Campaign-sch
 Referenslista:
 
 * [Attribut](schema/attribute.md)
-* [Beräkningssträng](schema/compute-string.md)
+* [Databeräkningssträng](schema/compute-string.md)
 * [Villkor](schema/condition.md)
 * [Databasindex](schema/db-index.md)
 * [Element](schema/element.md)
 * [Uppräkning](schema/enumeration.md)
 * [Hjälp](schema/help.md)
-* [Hörn](schema/join.md)
+* [Gå med](schema/join.md)
 * [Nyckel](schema/key.md)
 * [Nyckelfält](schema/keyfield.md)
 * [Metod](schema/method.md)
 * [Metoder](schema/methods.md)
-* [Param](schema/param.md)
+* [Param.](schema/param.md)
 * [Parametrar](schema/parameters.md)
 * [SrcSchema](schema/srcschema.md)
 * [Sysfilter](schema/sysfilter.md)
