@@ -77,7 +77,7 @@ Marie&#39;s open visas i följande logg:
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Mellanliggande summa | 0 | 0 | 3 |
+| Mellanliggande summa | 0 | 0 | 1 |
 
 ## Steg 3: Florian {#step-3--florian}
 
@@ -100,7 +100,7 @@ Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att sa
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Mellanliggande summa | 3 | 3 | 2 |
+| Mellanliggande summa | 1 | 1 | 2 |
 
 Följande loggar sammanfaller med de öppna och två klick som utförts av den person som Florian vidarebefordrade e-postmeddelandet till:
 
@@ -122,7 +122,7 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Okänd person | - | +1 | - |
-| Mellanliggande summa | 3 | 2 | 2 |
+| Mellanliggande summa | 1 | 2 | 2 |
 
 ## Steg 4: Henry {#step-4--henry}
 
@@ -157,7 +157,7 @@ På leveransnivå har vi följande resultat:
 
 * **[!UICONTROL Clicks]** (mottagare som klickade): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (personer som klickade): 6
-* **[!UICONTROL Distinct opens for the population reached]** (mottagare som öppnat): 3
+* **[!UICONTROL Distinct opens for the population reached]** (mottagare som öppnat): 1
 
 Raw-reaktivitet och uppskattning av framåtriktade beräkningar görs enligt följande:
 
