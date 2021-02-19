@@ -161,7 +161,7 @@ För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från A
 * Förlorad anslutning under leveransen: det nya försöket utfördes, felorsaken är **[!UICONTROL Unreachable]**.
 * Problem med tjänstkonfiguration (ogiltigt certifikat, ogiltigt certifikatlösenord, inget certifikat): inget nytt försök, felorsaken är **[!UICONTROL Unreachable]**.
 
-APN-servern meddelar asynkront Adobe Campaign om att en enhetstoken har avregistrerats (när mobilprogrammet har avinstallerats av användaren). Arbetsflödet **[!UICONTROL mobileAppOptOutMgt]** körs var sjätte timme för att kontakta APN:s feedbacktjänster för att uppdatera tabellen **AppSubscriptionRcp**. För alla inaktiverade token är fältet **Inaktiverat** inställt på **Sant** och prenumerationen som är länkad till den enhetstoken exkluderas automatiskt från framtida leveranser.
+APN-servern meddelar asynkront Adobe Campaign om att en enhetstoken har avregistrerats (när mobilprogrammet har avinstallerats av användaren). Arbetsflödet **[!UICONTROL mobileAppOptOutMgt]** körs var sjätte timme för att kontakta APN:s feedbacktjänster för att uppdatera tabellen **AppSubscriptionRcp**. För alla inaktiverade token är fältet **Inaktiverat** inställt på **Sant** och prenumerationen som är länkad till enhetstoken exkluderas automatiskt från framtida leveranser.
 
 **För iOS - HTTP/V2-anslutning**
 
