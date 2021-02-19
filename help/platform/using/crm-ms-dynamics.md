@@ -22,7 +22,7 @@ På den här sidan får du lära dig att ansluta Campaign Classic till **Microso
 Möjliga distributioner är:
 
 * via **webb-API** (rekommenderas). Läs [avsnittet nedan](#microsoft-dynamics-implementation-step) om du vill veta mer om hur du konfigurerar anslutningen till Microsoft Dynamics.
-* med **Office 365**. Se [den här videon](#microsoft-dynamics-office-365) om du vill lära dig hur du konfigurerar integreringen.
+* med **Office 365**. Se [den här videon](#microsoft-dynamics-office-365) om du vill veta hur du konfigurerar integreringen.
 * för en **lokal**-distribution använder du nyckelstegen för Office 365.
 
 Datasynkronisering utförs via en dedikerad arbetsflödesaktivitet. [Läs mer](../../platform/using/crm-data-sync.md).
