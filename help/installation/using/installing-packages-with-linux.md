@@ -81,7 +81,7 @@ Så här installerar du 64-bitars Adobe Campaign på ett 64-bitars Debian-operat
    * **nlserver6-v7-XXXX-linux-2.6-amd64.** debfor v7.
    * **nlserver6-XXXX-linux-2.6-amd64.** debfor v6.1.
 
-   **adobe campaign** build number.
+   **Adobe Campaign** build number.
 
    >[!CAUTION]
    >
