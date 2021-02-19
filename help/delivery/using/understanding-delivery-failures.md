@@ -172,7 +172,7 @@ Möjliga orsaker till leveransfel är:
   <tr> 
    <td> Okänd användare </td> 
    <td> Hård </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Adressen finns inte. Inga fler leveransförsök kommer att göras för den här profilen.<br /> </td> 
   </tr> 
  </tbody> 
