@@ -26,7 +26,7 @@ Efter en migrering kan du behöva återställa den tidigare versionen av Campaig
 Så här återställer du v6.1 från v7.
 
 1. Återställ säkerhetskopian av databasen och återställ den.
-1. Återställ mappen **Adobe Campaign v6.back** (**nl6.back** i Linux), byt namn på den till **Adobe Campaign v6** (&lt;a6/>nl6 **i Linux) och återställ den till den ursprungliga platsen.**
+1. Återställ mappen **Adobe Campaign v6.back** (**nl6.back** i Linux), byt namn på den till **Adobe Campaign v6** (**nl6** i Linux) och återställ den till den ursprungliga platsen.
 1. Konfigurera om IIS genom att tilldela lyssnarportarna igen för att återupprätta integreringen av Adobe Campaign v6.1 på IIS-webbplatsnivå.
 1. Stoppa tjänsten Adobe Campaign v7.
 1. Starta om IIS.
@@ -37,7 +37,7 @@ Så här återställer du v6.1 från v7.
 Så här återställer du v6.02 från en v7.
 
 1. Återställ säkerhetskopian av databasen och återställ den.
-1. Återställ mappen **Neolane v6.back** (**nl6.back** i Linux), byt namn på den till **Neolane v6** (&lt;a6/>nl6 **i Linux) och återställ den till den ursprungliga platsen.**
+1. Återställ mappen **Neolane v6.back** (**nl6.back** i Linux), byt namn på den till **Neolane v6** (**nl6** i Linux) och återställ den till den ursprungliga platsen.
 1. Konfigurera om IIS genom att tilldela lyssningsporten på nytt för att återupprätta integreringen av Adobe Campaign v6.02 på IIS-webbplatsnivå.
 1. Stoppa tjänsten Adobe Campaign v6.1.
 1. Starta om IIS.
