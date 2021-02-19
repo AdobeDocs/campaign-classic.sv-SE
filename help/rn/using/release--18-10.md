@@ -74,7 +74,7 @@ ht-degree: 7%
 * Åtgärdade inkonsekvenser i hanteringen av hemliga nycklar.
 * Ett problem med anrikningsaktiviteten när ett fält skrevs som: xml=true och calculate=true
 * Korrigerade ett problem med teckenigenkänning när push-meddelanden skickades till ett mobilprogram.
-* Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt MID-källkonto.
+* Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt konto med medelkälla.
 
 ## Version 18.10.2 – build 8978{#release-18-10-2-build-8978}
 
@@ -131,7 +131,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> Arbetsflödesövervakning<br /> </td> 
-   <td> <p>Med nya Adobe Campaign Workflow HeatMap kan plattformsadministratörerna snabbt visa upp alla samtidiga arbetsflöden, vilket gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar den finns på <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
+   <td> <p>Med nya Adobe Campaign Workflow HeatMap har plattformsadministratörerna en snabb grafisk representation av alla samtidiga arbetsflöden, som gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar den finns på <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
