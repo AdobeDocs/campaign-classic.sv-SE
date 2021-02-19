@@ -58,7 +58,7 @@ I de specificerade listfälten kan du ange andra värden än uppräkningsvärden
 
 Det angivna värdet är då antingen:
 
-* Tillagt i de specificerade listvärdena: i det här fallet måste alternativet **[!UICONTROL Open]** vara markerat,
+* Tillagda till värden i den specificerade listan: i det här fallet måste alternativet **[!UICONTROL Open]** vara markerat,
 * eller ersätts automatiskt av motsvarande alias: I det här fallet måste det definieras på fliken **[!UICONTROL Alias]** i den specificerade listan.
 * eller lagras i listan över alias: ett alias som kan tilldelas det senare.
 
