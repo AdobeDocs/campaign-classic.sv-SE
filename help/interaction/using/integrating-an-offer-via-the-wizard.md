@@ -102,7 +102,7 @@ Mer information om leveransdispositioner finns i guiden [Kampanj - MRM](../../ca
 
    >[!NOTE]
    >
-   >Beroende på typ av leverans finns det här alternativet på menyn **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** (t.ex. för e-postleveranser).
+   >Beroende på typ av leverans hittar du det här alternativet på menyn **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** (t.ex. för e-postleveranser).
 
    ![](assets/int_compo_offre2.png)
 
