@@ -81,7 +81,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 
 Med:
 
-* **`<server>`**: adobe campaign programserver (nlserver web)
+* **`<server>`**: Adobe Campaign programserver (nlserver web)
 * **`<schema>`**: schema-ID-nyckel (namespace:schema_name)
 
 ### Exempel på metoden ExecuteQuery i schemat xtk:queryDef {#example-on-the--executequery--method-of-schema--xtk-querydef-}
