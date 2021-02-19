@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 
-# Bästa praxis för SFTP-server och felsökning {#sftp-server-usage}
+# Bästa praxis och felsökning för SFTP-servrar {#sftp-server-usage}
 
 ## Globala rekommendationer för SFTP-servern {#global-recommendations}
 
