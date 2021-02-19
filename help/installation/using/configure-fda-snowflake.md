@@ -82,7 +82,7 @@ Följ stegen nedan för att konfigurera [!DNL Snowflake] för CentOS:
 
 Du måste skapa ett externt [!DNL Snowflake]-konto för att ansluta Campaign-instansen till din externa [!DNL Snowflake]-databas.
 
-1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]** &lt;a3/> i Campaign **[!UICONTROL Explorer]**.
+1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
