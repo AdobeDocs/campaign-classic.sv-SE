@@ -31,7 +31,7 @@ Det finns tre möjliga insättningslägen:
 
 1. Importera adressmallar och anpassa dem efter dina behov.
 
-   Det gör du genom att klicka på länken **[!UICONTROL Import seed templates...]** och välja den mapp som innehåller adressmallarna. Mer information finns i [Skapa dirigerade adressmallar](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   Om du vill göra det klickar du på länken **[!UICONTROL Import seed templates...]** och väljer den mapp som innehåller adressmallarna. Mer information finns i [Skapa dirigerade adressmallar](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
    När de har lagts till kan du dubbelklicka på dem eller klicka på knappen **[!UICONTROL Detail...]** för att anpassa innehållet i respektive adress.
 
