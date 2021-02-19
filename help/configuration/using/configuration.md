@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Konfiguration{#configuration}
 
-De typer av mappar som används i navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i schemat **xtk:navtree**.
+De typer av mappar som används i navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree**-schemat.
 
 XML-dokumentet är strukturerat på följande sätt:
 
