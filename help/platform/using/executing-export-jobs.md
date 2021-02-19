@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurerar exportjobb
+title: Konfigurera exportjobb
 description: Lär dig hur du konfigurerar och kör exportjobb i Campaign Classic.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Konfigurerar exportjobb {#executing-export-jobs}
+# Konfigurera exportjobb {#executing-export-jobs}
 
 Med exportjobben kan du komma åt och extrahera data från databasen: kontakter, kunder, listor, segment osv.
 
