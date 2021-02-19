@@ -103,7 +103,7 @@ Du kan välja mellan två meddelandetyper:
 
 ### Konfigurera textmeddelandeleverans {#configuring-a-text-message-delivery}
 
-Ett **textmeddelande** radleverans är ett meddelande som skickas till mottagare i textformat.
+Ett **textmeddelande**-radleveransmeddelande är ett meddelande som skickas till mottagare i textformat.
 
 ![](assets/line_message_02.png)
 
@@ -115,7 +115,7 @@ En **Image and link** LINE-leverans är ett meddelande som skickas till mottagar
 
 Du kan använda:
 
-* en **personlig bild**,
+* a **Anpassad bild**,
 
    >[!NOTE]
    >
