@@ -152,7 +152,7 @@ Attributet **ref** för elementet som ska refereras måste fyllas med sökvägen
 
 Kapitelstrukturen flyttas till elementet med namnet &quot;section&quot; utanför huvudelementet. Kapitlet och avsnittet refererar till avsnittselementet.
 
-## Beräkna sträng {#compute-string}
+## Databeräkningssträng {#compute-string}
 
 En **beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en innehållsinstans.
 
