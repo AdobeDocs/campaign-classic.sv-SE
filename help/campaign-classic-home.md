@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 59%
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 31 mars 2021 **.
 
-* **[Skydda era Campaign-](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
+* **[Skydda era Campaign-](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
 
 * **[Ta bort felaktiga ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> hårdvarustudsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Gmail-avbrott
 
