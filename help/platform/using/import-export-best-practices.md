@@ -1,7 +1,7 @@
 ---
 solution: Campaign Standard
 product: campaign
-title: Importera och exportera metodtips
+title: Bästa praxis för import och export
 description: Läs mer om de bästa sätten att följa när du importerar eller exporterar data.
 audience: automating
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Importera och exportera metodtips {#import-export-best-practices}
+# Bästa praxis för import och export {#import-export-best-practices}
 
 Genom att vara försiktig och följa de få enkla regler som beskrivs nedan kan du till stor del säkerställa att data är konsekventa i databasen och undvika vanliga fel under databasuppdatering eller dataexport.
 
