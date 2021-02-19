@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
 
-# Kom igång med dataimport och export {#get-started-data-import-export}
+# Kom igång med import och export av data {#get-started-data-import-export}
 
-Adobe Campaign Classic har funktioner för datahantering som gör att du kan importera och exportera data. Dessa åtgärder kan utföras med antingen arbetsflöden eller allmän import och export.
+Adobe Campaign Classic har funktioner för datahantering som gör att du kan importera och exportera data. Dessa åtgärder kan utföras med antingen arbetsflöden eller generiska import- och exporteringar.
 
 >[!IMPORTANT]
 >
@@ -59,7 +59,7 @@ Mer information om detta hittar du i dessa avsnitt.
 * [Zippa upp eller dekryptera en fil](../../platform/using/unzip-decrypt.md)
 * [Zippa eller kryptera en fil](../../platform/using/zip-encrypt.md)
 
-## Bästa tillvägagångssätt och felsökning {#best-practices-troubleshooting}
+## Bästa praxis och felsökning {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
