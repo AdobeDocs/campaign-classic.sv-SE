@@ -47,7 +47,7 @@ Läs mer [i det här avsnittet](../../rn/using/rn-overview.md).
 
 ## Är en bygguppgradering samma sak som en versionsuppgradering?
 
-Nej. En versionsuppgradering är en stegvis uppdatering i en viss större version, medan en versionsuppgradering är en förändring från en större version till en annan. Uppgraderingar är enkla eftersom de vanligtvis inte innebär några större förändringar i arkitektur, teknik eller datamodell.
+Nej. En versionsuppgradering är en stegvis uppdatering i en viss större version, medan en versionsuppgradering är en förändring från en större version till en annan. Uppgraderingar är enkla eftersom de vanligtvis inte innebär några större förändringar av arkitektur, teknik eller datamodell.
 
 Versionsuppgraderingar å andra sidan har ofta betydande tekniska ändringar och, beroende på hur detaljerad konfigurationen är för en viss kund, kan kräva betydande konfigurationsändringar och/eller partiell omimplementering.
 
