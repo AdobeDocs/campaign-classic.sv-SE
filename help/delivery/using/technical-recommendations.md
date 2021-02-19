@@ -83,7 +83,7 @@ DKIM kräver vissa förutsättningar:
 
 * **Säkerhet**: Kryptering är en viktig del av DKIM och för att försäkra sig om att DKIM:s säkerhetsnivå sedan våren 2013 är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
 * **Anseende**: anseendet baseras på IP-adressen och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: Undvik att behålla&quot;standardinställningen&quot; som kan användas av alla och därför har ett mycket svagt rykte. Du måste implementera en annan väljare för **kvarhållning jämfört med förvärvsinformation** och för autentisering.
-* **Adobe Campaign-alternativdeklaration**: i kampanjen Adobe baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering i varken plattformen eller e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
+* **Adobe Campaign-alternativdeklaration**: i kampanjen Adobe baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering på varken plattformen eller i e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
 
 >[!NOTE]
 >
