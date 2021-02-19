@@ -395,7 +395,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
       >[!NOTE]
       >
-      >Beroende på hur konfigurationen ser ut kan du antingen välja de tidigare markerade tabellerna eller alla tabeller i databasen.
+      >Beroende på hur konfigurationen ser ut kan du välja antingen de tidigare markerade tabellerna eller alla tabeller i databasen.
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
