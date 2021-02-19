@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Bästa praxis för leverans
+title: Bästa praxis för leveransprestanda
 description: Läs mer om leveransresultat och bästa praxis.
 audience: delivery
 content-type: reference
@@ -10,19 +10,19 @@ translation-type: tm+mt
 source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 
-# Bästa praxis för leveransresultat {#delivery-performances}
+# Bästa praxis för leveransprestanda {#delivery-performances}
 
 Vi rekommenderar att du följer riktlinjerna nedan för att försäkra dig om att leveranserna fungerar bra, samt de kontroller som utförs om leveransproblem uppstår.
 
 **Relaterade ämnen:**
 
 * [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
-* [Felsökning av leverans](../../delivery/using/delivery-troubleshooting.md)
+* [Leveransfelsökning](../../delivery/using/delivery-troubleshooting.md)
 * [Om leverans](../../delivery/using/about-deliverability.md)
 
 ## Bästa tillvägagångssätt för prestanda {#best-practices-performance}
