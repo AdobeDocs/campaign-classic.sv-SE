@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -56,5 +56,5 @@ Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) fö
 * [Versionsinformation](../../rn/using/latest-release.md)
 * [Campaign Classic-uppgraderingar](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
-* [Gold Standard-versioner](../../rn/using/gold-standard.md)
+* [Versionen Gold Standard](../../rn/using/gold-standard.md)
 * [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html)
