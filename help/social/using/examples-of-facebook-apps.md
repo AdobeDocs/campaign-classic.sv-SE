@@ -100,7 +100,7 @@ I exempel 1 anpassade vi visningen av Facebook-sidan enligt värdet i fältet **
 
 Låt oss ta ett exempel på ett företag som bestämmer sig för att skicka en e-postkampanj. I leveransen pekar en länk mot Facebook-programmet. Den här länken är personlig tack vare parametern **[!UICONTROL app_data]** som läggs till i slutet av URL:en. Värdet på den här parametern kan vara en indikator som speglar kundens betydelse. I vårt exempel är värdena för parametern **[!UICONTROL app_data]** **[!UICONTROL big]** (signifikant kund) och **[!UICONTROL small]** (mindre viktig kund).
 
-När webbadressen har anpassats ser den ut så här:
+När URL:en har anpassats ser den ut så här:
 
 * `http://<path of the Facebook application>&app_data=big` (för en betydande kund)
 * `http://<path of the Facebook application>&app_data=small` (för en mindre viktig kund)
@@ -200,7 +200,7 @@ Med det här alternativet kan du återställa data för en profil som finns i be
 
 **Facebook**
 
-Med det här alternativet kan du definiera den Facebook-profilinformation som ska samlas in, bland annat den som användaren har gått med på att dela, för att kunna spara den.
+Med det här alternativet kan du definiera den Facebook-profilinformation som ska samlas in, bland annat den som användaren har gått med på att dela, för att spara den.
 
 ![](assets/social_webapp_025.png)
 
