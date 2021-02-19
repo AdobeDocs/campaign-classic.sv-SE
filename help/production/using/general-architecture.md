@@ -21,7 +21,7 @@ ht-degree: 4%
 
 Adobe Campaign har minst följande konfigurationer:
 
-* adobe campaign programserver,
+* Adobe Campaign programserver,
 * databasen.
 
    ![](assets/formation_exploitation.png)
