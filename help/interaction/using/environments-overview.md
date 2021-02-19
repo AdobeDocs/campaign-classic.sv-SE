@@ -19,7 +19,7 @@ ht-degree: 6%
 
 I det här kapitlet beskrivs hur du hanterar erbjudandemiljöer i Interaction.
 
-Flera olika användarprofiler är involverade i hanteringen och användningen av erbjudanden. Det första steget handlar därför om att se till att dessa profiler finns, och om inte, skapa dem.
+Flera olika användarprofiler används vid hantering och användning av erbjudanden. Det första steget handlar därför om att se till att dessa profiler finns, och om inte, skapa dem.
 
 >[!IMPORTANT]
 >
