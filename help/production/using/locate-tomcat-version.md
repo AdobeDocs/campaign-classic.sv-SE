@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Söker efter Tomcat-version{#locate-tomcat-version}
+# Hitta versionen av Tomcat{#locate-tomcat-version}
 
 Adobe Campaign använder en **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive Klientkonsol, spårade URL-länkar, SOAP-anrop med flera). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
 
