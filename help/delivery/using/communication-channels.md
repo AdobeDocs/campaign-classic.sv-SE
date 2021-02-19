@@ -106,7 +106,7 @@ Det finns tre typer av leveransobjekt i Campaign:
 
 ### Enkel leverans {#single-delivery}
 
-En **leverans** är ett fristående leveransobjekt som körs en gång. Den kan dupliceras, förberedas på nytt, men så länge den är i det slutliga tillståndet (avbryts, stoppas, slutförd) kan den inte återanvändas.
+En **leverans** är ett fristående leveransobjekt som körs en gång. Den kan dupliceras, förberedas igen, men så länge den är i det slutliga tillståndet (avbryts, stoppas, slutförd) kan den inte återanvändas.
 
 Leveranser kan skapas antingen från listan över leveranser eller i ett arbetsflöde via en [Delivery](../../workflow/using/delivery.md)-aktivitet.
 
