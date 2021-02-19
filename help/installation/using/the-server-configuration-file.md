@@ -1189,7 +1189,7 @@ Här är de olika parametrarna för noden **inMail**. Detta är konfigurationen 
   </tr> 
   <tr> 
    <td> ignoreSize<br /> </td> 
-   <td> Ignorera meddelandestorlek: används för att ignorera storleken på ett meddelande som returneras av POP3-servrar. I det här fallet förväntar sig modulen"." i slutet av meddelandena. <br /> </td> 
+   <td> Ignorera meddelandestorlek: används för att ignorera storleken på ett meddelande som returneras av POP3-servrar. I det här fallet förväntar sig modulen en "." i slutet av meddelandena. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1806,7 +1806,7 @@ Konfigurera följande parametrar i noden **mta > child > smtp**. Detta är konfi
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Tidsgräns för inaktiv session. Den här parametern används bara om sessionen återanvänds för att skicka flera meddelanden till en viss domän. När MTA har slutfört meddelandeöverföringen stängs inte den SMTP-session som den har använt systematiskt. Om ett meddelande är klart att skickas för samma domän återanvänds samma SMTP-session och därför stängs sessionen inte automatiskt. Med parametern IdleSessionTimeout kan du definiera den tid under vilken en SMTP-session kan vara aktiv och vänta på ett annat meddelande. När tiden har gått ut stängs sessionen automatiskt.<br /> </td> 
+   <td> Tidsgräns för inaktiv session. Den här parametern används bara om sessionen återanvänds för att skicka flera meddelanden till en viss domän. När MTA har slutfört meddelandeöverföringen stängs inte den SMTP-session som den har använt systematiskt. Om ett meddelande är klart att skickas för samma domän återanvänds samma SMTP-session och därför stängs inte sessionen automatiskt. Med parametern IdleSessionTimeout kan du definiera den tid under vilken en SMTP-session kan vara aktiv och vänta på ett annat meddelande. När tiden har gått ut stängs sessionen automatiskt.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
