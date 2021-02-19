@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 65%
+ht-degree: 68%
 
 ---
 
@@ -56,7 +56,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Kvartalsvis listuppdatering med en inkrementell fråga](../../workflow/using/quarterly-list-update.md)
 * [Använda funktionen Sammanfoga för aktiviteten Avduplicering](../../workflow/using/deduplication-merge.md)
-* [Konfigurera ett återkommande importarbetsflöde](../../workflow/using/recurring-import-workflow.md)
+* [Konfigurera ett arbetsflöde för återkommande import](../../workflow/using/recurring-import-workflow.md)
 
 ## Målinriktning {#designing-queries}
 
