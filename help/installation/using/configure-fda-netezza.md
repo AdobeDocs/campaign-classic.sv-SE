@@ -73,7 +73,7 @@ För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigu
 
 Med Netezza externa konto kan du ansluta Campaign-instansen till din externa Netezza-databas.
 
-1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]** &lt;a3/> i Campaign **[!UICONTROL Explorer]**.
+1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
 
