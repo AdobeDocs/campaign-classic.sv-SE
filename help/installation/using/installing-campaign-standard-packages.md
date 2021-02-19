@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Installera inbyggda Campaign Classic-paket
+title: Installera inbyggda paket i Campaign Classic
 description: Lär dig hur du installerar inbyggda Campaign-paket
 audience: installation
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# Installera inbyggda Campaign Classic-paket{#installing-campaign-standard-packages}
+# Installera inbyggda paket i Campaign Classic{#installing-campaign-standard-packages}
 
 ## Om inbyggda paket {#campaign-standard-packages}
 
