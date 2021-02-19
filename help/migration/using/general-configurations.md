@@ -664,7 +664,7 @@ sessionTokenOnly="false"
 
 ### Anonyma webbprogram {#anonymous-web-applications}
 
-Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja återgivningsmotorn v6.x och dra nytta av dess nya funktioner.
+Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
 
 >[!NOTE]
 Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
