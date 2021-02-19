@@ -116,7 +116,7 @@ Det finns två typer av implementering för ACS Connector. Båda genomförs allt
 >
 >Det här avsnittet är endast avsett för expertanvändare, så att de får en global bild av implementeringsprocessen och dess huvudsteg.
 >
->Försök inte på något sätt själv utföra någon av dessa implementeringar. Det är förbehållet Adobe Campaign konsulter.
+>Försök inte på något sätt själv att utföra någon av dessa implementeringar. Det är förbehållet Adobe Campaign konsulter.
 
 Med **den grundläggande implementeringen** kan du replikera mottagare (körklara fält), tjänster och prenumerationer, webbprogram och målgrupper. Detta är en envägsreplikering från Campaign v7 till Campaign Standard.
 
