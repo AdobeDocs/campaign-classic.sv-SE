@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ Om du vill mäta den hastighet med vilken meddelandena levereras kan du styra le
 
 * Försök inte schemalägga stora leveranser tillsammans. Observera att det kan ta 5 till 10 minuter att sprida belastningen jämnt över systemet.
 
-## Felsökning av leverans {#delivery-troubleshooting}
+## Leveransfelsökning {#delivery-troubleshooting}
 
 Du kan utföra specifika åtgärder när du stöter på leveransproblem:
 
