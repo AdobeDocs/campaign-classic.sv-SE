@@ -196,7 +196,7 @@ Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATI
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   Klicka på **[!UICONTROL Add]** och välj WEBAPP-höger som du just har skapat. Spara sedan ändringarna.
+   Klicka på **[!UICONTROL Add]** och välj WEBAPP till höger som du just har skapat. Spara sedan ändringarna.
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -406,7 +406,7 @@ Om alternativet **[!UICONTROL System folder]** är markerat på fliken **[!UICON
 
 ### Om mappar {#about-folders}
 
-Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerklicka på trädet via menyn **[!UICONTROL Add new folder]**. Som standard gör den första menyn att du kan lägga till mappen som motsvarar den aktuella kontexten.
+Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerklicka på trädet via menyn **[!UICONTROL Add new folder]**. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
