@@ -64,7 +64,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
    ![](assets/nmac_ios.png)
 
-1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtypen.
+1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtyp.
 
    ![](assets/nmac_service_2.png)
 
