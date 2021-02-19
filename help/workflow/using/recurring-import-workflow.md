@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Konfigurera ett återkommande importarbetsflöde {#setting-up-a-recurring-import}
+# Konfigurera ett arbetsflöde för återkommande import {#setting-up-a-recurring-import}
 
 Det är bäst att använda en arbetsflödesmall om du behöver importera filer med samma struktur regelbundet.
 
