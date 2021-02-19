@@ -123,7 +123,7 @@ Följ stegen nedan för att göra detta:
 
    >[!NOTE]
    >
-   >Partitionen **[!UICONTROL Temp]** kan också rensas regelbundet med ett arbetsflöde.
+   >Partitionen **[!UICONTROL Temp]** kan också rensas regelbundet med hjälp av ett arbetsflöde.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
