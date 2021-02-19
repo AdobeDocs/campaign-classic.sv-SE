@@ -23,7 +23,7 @@ Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICO
 
 >[!NOTE]
 >
->Enkla datamodeller kan bara tas bort av en administratör i Adobe Campaign Classic-konsolen.
+>Datamaterial som inte finns i kartongen kan bara tas bort av en administratör för din Adobe Campaign Classic-konsol.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
