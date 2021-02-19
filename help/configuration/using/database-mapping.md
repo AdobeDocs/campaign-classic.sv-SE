@@ -506,7 +506,7 @@ Länka till en mapp (&quot;xtk:folder&quot;-schema):
 
 Standardvärdet returnerar identifieraren för den första giltiga parametertypfilen som anges i funktionen &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Exempel 5 {#example-5}
+### Exempel 4 {#example-5}
 
 I det här exemplet vill vi skapa en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;email&quot;):
 
