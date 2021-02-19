@@ -221,7 +221,7 @@ Lägg till så många alternativknappar som det finns etiketter för. Fördelen 
 >[!NOTE]
 >
 >Webbformulär tillåter inte att du väljer flera värden. Flera markeringar kan bara aktiveras för formulär av typen **Undersökning**. Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).\
->Det är dock möjligt att infoga ett **[!UICONTROL Multiple choice]**-typfält i ett webbprogram. men utan att godkänna valet av flera värden: alternativen kan väljas med alternativknappar.
+>Det är dock möjligt att infoga ett **[!UICONTROL Multiple choice]**-typfält i ett webbprogram. men utan att godkänna valet av flera värden: de tillgängliga alternativen kan väljas med alternativknappar.
 
 ## Lägga till stödraster {#adding-grids}
 
