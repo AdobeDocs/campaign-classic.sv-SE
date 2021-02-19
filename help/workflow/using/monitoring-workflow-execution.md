@@ -111,7 +111,7 @@ Arbetstabellerna i arbetsflödet tas bort automatiskt när arbetsflödet försä
 
 ## Hantera fel {#managing-errors}
 
-När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar till rött. I arbetsflödesöversikten (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** link) kan du visa arbetsflöden med enbart fel, vilket visas nedan.
+När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar. I arbetsflödesöversikten (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** link) kan du visa arbetsflöden med enbart fel, vilket visas nedan.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
