@@ -106,7 +106,7 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
 
 * **[!UICONTROL Link to mirror page]** : infogar en länk till spegelsidan: &quot;Om du inte kan visa det här meddelandet korrekt klickar du här&quot;.
 * **[!UICONTROL Unsubscription link]** : infogar en länk som gör det möjligt att avbryta prenumerationen på alla leveranser (blockeringslista).
-* **[!UICONTROL Formatting function for proper nouns]** : genererar  **[!UICONTROL toSmartCase]** JavaScript-funktionen, som ändrar den första bokstaven i varje ord till versaler. Det här blocket måste infogas i källkoden för leveransen, i **`<script>...</script>`**-taggar.
+* **[!UICONTROL Formatting function for proper nouns]** : genererar  **[!UICONTROL toSmartCase]** JavaScript-funktionen, som ändrar den första bokstaven i varje ord till versaler. Det här blocket måste infogas i källkoden för leveransen i **`<script>...</script>`**-taggar.
 
    I exemplet nedan används funktionen för att ersätta elementet&quot;Min rubrik&quot; med&quot;Min nya rubrik&quot; med versaler vid varje ord:
 
@@ -144,7 +144,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    ![](assets/s_ncs_user_personalized_block.png)
 
-   * Ange blockets etikett. Den här etiketten visas i fönstret för infogning av anpassningsfält.
+   * Ange blockets etikett. Den här etiketten visas i fönstret där personaliseringsfältet infogas.
    * Välj **[!UICONTROL Visible in the customization menus]** om du vill göra det här blocket tillgängligt från ikonen för infogning av anpassningsfält.
    * Om det behövs väljer du **[!UICONTROL The content of the personalization block depends upon the format]** för att definiera två separata block för e-postmeddelanden i HTML-format och de i textformat.
 
