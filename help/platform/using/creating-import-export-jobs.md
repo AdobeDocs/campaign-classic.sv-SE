@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# Skapar import- och exportjobb {#creating-import-export-jobs}
+# Skapa import- och exportjobb {#creating-import-export-jobs}
 
 När mallarna har konfigurerats kan import- och exportåtgärder startas i flera sammanhang i Adobe Campaign.
 
