@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -34,12 +34,12 @@ Du kan sedan använda kommandon eller kod på fliken **[!UICONTROL Script]** fö
 
 **Relaterade ämnen:**
 
-* [Zippa upp eller dekryptera en fil före bearbetning](../../platform/using/unzip-decrypt.md)
+* [Packa upp eller dekryptera en fil före bearbetning](../../platform/using/unzip-decrypt.md)
 * [Dataextraheringsaktivitet](../../workflow/using/extraction--file-.md).
 
 ## Användningsfall: Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen {#use-case-gpg-encrypt}
 
-I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera data med en nyckel som är installerad på Kontrollpanelen.
+I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera data med en nyckel som installeras på Kontrollpanelen.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
 
