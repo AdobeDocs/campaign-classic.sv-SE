@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 5%
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 
 Arbetsflödet för **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [listan över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign är kompatibelt med både binära och HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Datasökväg {#data-path}
 
@@ -85,14 +85,7 @@ Följande information finns i Adobe Campaign:
 
 ![](assets/nmac_delivery_view.png)
 
-Adobe Campaign-servern måste kunna kontakta APN-servern på följande portar:
-
-* 2195 (sändning) och 2186 (feedbacktjänst) för binär iOS-anslutning
-* 443 för iOS HTTP/2-anslutning
-
-   >[!NOTE]
-   >
-   > Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
+Adobe Campaign-servern måste kunna kontakta APN-servern på 443-porten för iOS HTTP/2-anslutningen.
 
 Använd följande kommandon för att kontrollera att den fungerar som den ska:
 
@@ -108,7 +101,5 @@ Använd följande kommandon för att kontrollera att den fungerar som den ska:
    telnet gateway.push.apple.com
    ```
 
-Om en binär iOS-anslutning används måste MTA- och webbservern kunna kontakta APN:er på port 2195 (skicka), arbetsflödesservern måste kunna kontakta APN:er på port 2196 (feedbacktjänst).
-
-Om en iOS HTTP/2-anslutning används måste MTA-, webbservern och arbetsflödesservern kunna kontakta APN:erna på port 443.
+Med iOS HTTP/2-kontakten måste MTA, webbservern och arbetsflödesservern kunna kontakta APN på port 443.
 
