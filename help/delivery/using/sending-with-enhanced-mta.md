@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
+source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1880'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ Den implementeras för att förbättra skalbarheten, öka leveransflödet och hj
 Om du har etablerats en Campaign Classic-instans efter september 2018 använder du Förbättrad MTA. För alla andra Campaign Classic-kunder, se [Vanliga frågor](#enhanced-mta-faq) nedan.
 
 Den förbättrade MTA-implementeringen kan påverka vissa av de befintliga Campaign-funktionerna. Mer information finns i [Förbättrade MTA-specifikationer](#enhanced-mta-impacts).
+
+>[!NOTE]
+>
+>Om du är slutanvändare av Adobe Campaign och vill veta om din instans har uppgraderats till Förbättrat MTA, kontaktar du den interna Campaign-administratören.
 
 ## Frågor och svar {#enhanced-mta-faq}
 
@@ -129,24 +133,6 @@ Studskompetensen i tabellen Campaign **[!UICONTROL Delivery log qualification]**
 
 Mer information om studskompetens finns i [det här avsnittet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
 
-### Skickad status med Förbättrad MTA
-
-I vyn **[!UICONTROL Summary]** för en e-postleverans [dashboard](../../delivery/using/delivery-dashboard.md) är procentandelen **[!UICONTROL Success]** 100 % och går sedan successivt ned under leveransens [giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), allt eftersom de mjuka och hårda studenterna rapporteras från det förbättrade MTA till Campaign.
-
-Alla meddelanden visas som **[!UICONTROL Sent]** i de [avsändande loggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) så snart de har vidarebefordrats från Campaign till det utökade MTA-numret. De har den statusen såvida inte eller tills ett [studs](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
-
-När hårda studsmeddelanden rapporteras tillbaka från det förbättrade MTA:et ändras deras status från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** och procentandelen **[!UICONTROL Success]** minskas därefter.
-
-När meddelanden med mjuk studsning rapporteras tillbaka från Förbättrat MTA visas de fortfarande som **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** har ännu inte uppdaterats. Mjuka studsmeddelanden skickas sedan [på nytt](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) under leveransens giltighetsperiod:
-
-* Om ett nytt försök lyckas innan giltighetsperioden är slut förblir meddelandestatusen **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** oförändrad.
-
-* I annat fall ändras statusen till **[!UICONTROL Failed]** och procentandelen **[!UICONTROL Success]** minskas därefter.
-
-Du bör därför vänta tills giltighetsperiodens slut för att se det sista **[!UICONTROL Success]** procentvärdet och det slutliga antalet meddelanden som faktiskt är **[!UICONTROL Sent]** och **[!UICONTROL Failed]**.
-
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
 ### Leveransflöde
 
 Dataflödesdiagrammet för Campaign Delivery visar inte längre dataflödet för dina e-postmottagare. I det diagrammet visas nu dataöverföringshastigheten för vidarebefordran av meddelanden från Campaign till det förbättrade MTA-avtalet.
@@ -167,3 +153,78 @@ Mer information om giltighetsperioden finns i [det här avsnittet](../../deliver
 
 DKIM (DomainKeys Identified Mail) signering av e-postautentisering görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
 Mer information om DKIM finns i [det här avsnittet](../../delivery/using/technical-recommendations.md#dkim).
+
+### Rapport om lyckade leveranser
+
+I vyn **[!UICONTROL Summary]** för en e-postleverans [dashboard](../../delivery/using/delivery-dashboard.md) är procentandelen **[!UICONTROL Success]** 100 % och går sedan successivt ned under leveransens [giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), allt eftersom de mjuka och hårda studenterna rapporteras från det förbättrade MTA till Campaign.
+
+Alla meddelanden visas som **[!UICONTROL Sent]** i de [avsändande loggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) så snart de har vidarebefordrats från Campaign till det utökade MTA-numret. De har den statusen såvida inte eller tills ett [studs](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
+
+När hårda studsmeddelanden rapporteras tillbaka från det förbättrade MTA:et ändras deras status från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** och procentandelen **[!UICONTROL Success]** minskas därefter.
+
+När meddelanden med mjuk studsning rapporteras tillbaka från Förbättrat MTA visas de fortfarande som **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** har ännu inte uppdaterats. Mjuka studsmeddelanden skickas sedan [på nytt](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) under leveransens giltighetsperiod:
+
+* Om ett nytt försök lyckas innan giltighetsperioden är slut förblir meddelandestatusen **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** oförändrad.
+
+* I annat fall ändras statusen till **[!UICONTROL Failed]** och procentandelen **[!UICONTROL Success]** minskas därefter.
+
+Du bör därför vänta tills giltighetsperiodens slut för att se det sista **[!UICONTROL Success]** procentvärdet och det slutliga antalet meddelanden som faktiskt är **[!UICONTROL Sent]** och **[!UICONTROL Failed]**.
+
+<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
+
+### Tjänsten för e-postfeedback (beta) {#email-feedback-service}
+
+Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för varje e-postmeddelande korrekt, eftersom feedback hämtas direkt från den förbättrade MTA-agenten (Message Transfer Agent).
+
+>[!IMPORTANT]
+>
+>Tjänsten för e-postfeedback är för närvarande tillgänglig som en betafunktion.
+>
+>Om du är intresserad av att delta i betaprogrammet fyller du i [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
+
+När leveransen har startat ändras inte procentandelen **[!UICONTROL Success]** när meddelandet har skickats från Campaign till den förbättrade MTA-filen.
+
+<!--![](assets/efs-sending.png)-->
+
+Leveransloggarna visar **[!UICONTROL Taken into account by the service provider]**-statusen för varje måladress.
+
+<!--![](assets/efs-pending.png)-->
+
+När meddelandet levereras till målprofilerna och när informationen har rapporterats i realtid från Förbättrat MTA visar leveransloggarna statusen **[!UICONTROL Sent]** för varje adress som har tagit emot meddelandet. Procentandelen **[!UICONTROL Success]** ökas för varje slutförd leverans.
+
+När hårda studsmeddelanden rapporteras tillbaka från det förbättrade MTA:et ändras deras loggstatus från **[!UICONTROL Taken into account by the service provider]** till **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+
+När meddelanden med mjuk studsning rapporteras tillbaka från Förbättrat MTA ändras inte loggstatusen (**[!UICONTROL Taken into account by the service provider]**): endast [felorsaken](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) uppdateras<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Procentvärdet **[!UICONTROL Success]** ändras inte. Ett nytt försök att studsa meddelanden görs sedan under leveransens [giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
+
+* Om ett nytt försök lyckas före giltighetsperiodens slut ändras meddelandets status till **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** ökas i enlighet med detta.
+
+* Annars ändras statusen till **[!UICONTROL Failed]**. Procentandelen **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->ändras inte.
+
+>[!NOTE]
+>
+>Mer information om hårda och mjuka studsar finns i [det här avsnittet](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Mer information om återförsök efter ett tillfälligt leveransfel finns i [det här avsnittet](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+
+
+Tabellerna nedan visar ändringar i KPI:er och överföring av loggstatus som införts av EFS-funktionen.
+
+**Med tjänsten för e-postfeedback**
+
+| Steg i sändningsprocessen | KPI-sammanfattning | Loggstatus skickas |
+|--- |--- |--- |
+| Meddelandet har vidarebefordrats från Campaign till det förbättrade MTA-meddelandet | **[!UICONTROL Success]** procentandelen visas inte (börjar vid 0 %) | Tjänsteleverantören har tagit hänsyn till |
+| Hårdstudsmeddelanden rapporteras tillbaka från Förbättrad MTA | Ingen ändring i **[!UICONTROL Success]**-procenttal | Misslyckades |
+| Mjuka studsmeddelanden rapporteras tillbaka från Förbättrat MTA | Ingen ändring i **[!UICONTROL Success]**-procenttal | Tjänsteleverantören har tagit hänsyn till |
+| Mjuka studsmeddelanden - återförsök har slutförts | **[!UICONTROL Success]** procentandelen ökas därefter | Skickat |
+| Mjukt studsande meddelanden återförsök misslyckas | Ingen ändring i **[!UICONTROL Success]**-procenttal | Misslyckades |
+
+**Utan tjänsten för e-postfeedback**
+
+| Steg i sändningsprocessen | KPI-sammanfattning | Loggstatus skickas |
+|--- |--- |--- |
+| Meddelandet har vidarebefordrats från Campaign till det förbättrade MTA-meddelandet | **[!UICONTROL Success]** procent börjar vid 100 % | Skickat |
+| Hårdstudsmeddelanden rapporteras tillbaka från Förbättrad MTA | **[!UICONTROL Success]** procentandelen minskas därefter | Misslyckades |
+| Mjuka studsmeddelanden rapporteras tillbaka från Förbättrat MTA | Ingen ändring i **[!UICONTROL Success]**-procenttal | Skickat |
+| Mjuka studsmeddelanden - återförsök har slutförts | Ingen ändring i **[!UICONTROL Success]**-procenttal | Skickat | **[!UICONTROL Success]** procentandelen ökas därefter | Skickat |
+| Mjukt studsande meddelanden återförsök misslyckas | **[!UICONTROL Success]** procentandelen minskas därefter | Misslyckades |
