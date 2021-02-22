@@ -2,15 +2,14 @@
 solution: Campaign Classic
 product: campaign
 title: Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud
-description: Lär dig konfigurera Adobe I/O för Adobe Experience Cloud Triggers
+description: Lär dig hur du konfigurerar Adobe I/O för Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 6%
@@ -22,9 +21,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Om du använder en äldre version av integreringen av utlösare via autentisering, **måste du flytta till Adobe I/O enligt beskrivningen nedan**. Äldre oAuth-autentiseringsmodeller upphör 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O enligt beskrivningen nedan**. Äldre oAuth-autentiseringsmodeller upphör 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->Observera att under den här flytten till Adobe I/O kan vissa inkommande utlösare gå förlorade.
+>Observera att under den här flyttningen till Adobe I/O kan vissa inkommande utlösare gå förlorade.
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
@@ -35,7 +34,7 @@ Kontrollera att du har:
 * en giltig **organisationsidentifierare**: organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **Developer access** to your Organization.  Om du behöver begära behörighet som systemadministratör för IMS-organisationen följer du proceduren [på den här sidan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) för att ge åtkomst till alla produktprofiler.
 
-## Steg 1: Skapa/uppdatera Adobe I/O Project {#creating-adobe-io-project}
+## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
 1. Öppna Adobe I/O och logga in med systemadministratörsbehörighet för IMS-organisationen.
 
@@ -47,7 +46,7 @@ Kontrollera att du har:
 
    >[!NOTE]
    >
-   >Om klientidentifieraren är tom kan du direkt **[!UICONTROL Create a New project]** i Adobe I/O.
+   >Om din klientidentifierare är tom kan du direkt **[!UICONTROL Create a New project]** i Adobe I/O.
 
 1. Identifiera det befintliga projektet med hjälp av den extraherade klientidentifieraren. Leta efter befintliga projekt med samma klientidentifierare som det som extraherades i föregående steg.
 
@@ -87,7 +86,7 @@ Kontrollera att du har:
 
 >[!CAUTION]
 >
->Adobe I/O-certifikatet upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
+>Adobe I/O certifikat upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
 
 ## Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
 
