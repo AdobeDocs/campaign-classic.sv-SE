@@ -5,9 +5,8 @@ title: Konfigurera integrering med Adobe Experience Manager
 description: Lär dig hur du konfigurerar Campaign-AEM-integrering
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
