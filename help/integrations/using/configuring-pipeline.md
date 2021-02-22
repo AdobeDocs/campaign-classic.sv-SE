@@ -5,9 +5,8 @@ title: Konfigurera pipeline
 description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
+source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 1%
@@ -45,11 +44,11 @@ Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud.
 Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare.
 Autentisering stöds för Marketing Cloud via Adobe I/O Project.
 
-## Steg 1: Skapa/uppdatera Adobe I/O Project {#creating-adobe-io-project}
+## Steg 1: Skapar/uppdaterar Adobe I/O-projekt {#creating-adobe-io-project}
 
-För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integreringen av utlösare.
+För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integrering av utlösare.
 
-För On Premise-kunder, se sidan [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe I/O-autentiseringsuppgifter.
+För On Premise-kunder, se sidan [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe I/O-autentiseringsuppgifterna.
 
 ## Steg 2: Konfigurerar alternativet för NmsPipeline_Config-pipeline {#configuring-nmspipeline}
 
