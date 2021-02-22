@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
   </tr> 
   <tr> 
    <td> Tjänsteleverantören<br /> har tagit hänsyn till </td> 
-   <td> SMS-tjänstleverantören tog emot leveransen.<br /> </td> 
+   <td> SMS-tjänstleverantören tog emot leveransen.<br /> Om du har uppgraderat till  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Förbättrat MTA</a> för värdbaserade eller hybridbaserade installationer vidarebefordrades meddelandet från Campaign till det förbättrade MTA-avtalet.</td> 
   </tr> 
   <tr> 
    <td> Mottaget på mobilen<br /> </td> 
