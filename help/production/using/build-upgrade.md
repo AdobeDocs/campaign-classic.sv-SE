@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ Innan du påbörjar uppgraderingen måste lokala kunder utföra följande förbe
 
 1. Hämta den senaste versionen av din [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md).
 
-1. Ladda ned den senaste versionen. [Läs mer om Hämtningscenter](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. [Ladda ned den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
 Du måste också känna till alla [praktiska kommandorader](../../installation/using/command-lines.md) innan du påbörjar en bygguppgradering:
 
@@ -163,7 +163,7 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
 
 ### Uppgradera Adobe Campaign Server-programmet
 
-1. Kör filen **Setup.exe**. Om du behöver ladda ned den här filen går du till [Hämtningscenter](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. Kör filen **Setup.exe**. Om du behöver ladda ned den här filen går du till [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
 
 1. Välj installationsläge: **Uppdatera** eller **Reparera**.
 
@@ -365,8 +365,8 @@ Det finns olika typer av sammanslagningar:
 #### Var hittar du koden?
 
 1. Inbyggd kod lagras i XML-filer i datamappen. Hitta XML-filen som matchar objektet som är i konflikt. Exempel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Hämta originalversionen: via [Hämtningscenter](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) eller någon annan ej uppgraderad installation av produkten.
-1. Hämta den nya versionen: via [Hämtningscenter](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) eller kundens installerade filer.
+1. Hämta originalversionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller någon annan ej uppgraderad installation av produkten.
+1. Hämta den nya versionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller kundens installerade filer.
 1. Hämta den anpassade versionen: hämta objektets källkod från Campaign-klienten.
 
 ### Hur skiljer jag dig från mängden?
