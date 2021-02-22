@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Om du vill skicka till en mobiltelefon behöver du:
 
 1. Ett externt konto som anger en koppling och typ av meddelande.
 
-   Observera att följande anslutningar kommer att bli inaktuella från och med version 20.2: NetSize, Generic SMPP (stöd för binärt läge i SMPP version 3.4), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 och iOS. Det finns fortfarande funktioner som inte längre används, men de kommer inte att förbättras ytterligare eller stödjas. Se denna [sida](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) för mer information om detta.
+   Observera att följande anslutningar kommer att bli inaktuella från och med version 20.2: Generic SMPP (SMPP version 3.4 med stöd för binärt läge), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 och iOS. Det finns fortfarande funktioner som inte längre används, men de kommer inte att förbättras ytterligare eller stödjas. Se denna [sida](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html) för mer information om detta.
 
 1. En leveransmall där det här externa kontot refereras.
 
@@ -137,7 +137,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
@@ -157,7 +157,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
