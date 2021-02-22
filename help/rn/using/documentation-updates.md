@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '3947'
-ht-degree: 98%
+source-wordcount: '4045'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,19 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
-## Februari 2021 {#feb-2021}
+## Februari 2021 {#release-21.1}
+
+**Dokumentationsuppdateringar i version 21.1**
+
+Den nya funktionen **E-postfeedbacktjänst** (privat beta) finns [här](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
+
+Avsnittet **Serverkonfigurationsfilen** har uppdaterats med de konfigurationsparametrar som behövs för att Campaign ska kunna ansluta till en annan tjänst med IMS. [Läs mer](../../installation/using/the-server-configuration-file.md#ims)
+
+I listan över leveransstatus har beskrivningen för **som tagits med i beräkningen av tjänsteleverantören** uppdaterats: den här statusen används nu även för e-postleveranser som skickas med [tjänsten för e-postfeedback](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Läs mer](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+
+De kortkommandon som finns på den nya inloggningsskärmen för att ansluta till Adobe Campaign är nu dokumenterade. [Läs mer](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+
+**Andra uppdateringar**
 
 Ett nytt avsnitt har lagts till med detaljerad information om hur A/B-tester kan utföras med arbetsflöden. [Läs mer](../../delivery/using/get-started-a-b-testing.md)
 
@@ -100,7 +112,7 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](../../rn/using/compatibility
 Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/using/deprecated-features.md)
 
 Versionsinformation och kompatibilitetsmatris för utgåvan Gold Standard finns nu i ett särskilt avsnitt.
-[Läs mer](../../rn/using/gold-standard.md#gs-10).
+[Läs mer](../../rn/using/gold-standard.md#gs-11).
 
 Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
 
