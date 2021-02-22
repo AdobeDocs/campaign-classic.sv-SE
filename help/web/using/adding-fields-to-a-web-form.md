@@ -381,7 +381,6 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 >* Adobe Campaign kontrollerar inte storleken eller typen av resurs som överförts: Därför rekommenderar vi att du endast använder överföringsfält för säkra intranätplatser.
 >* Om flera servrar är länkade till instansen (belastningsutjämningsarkitektur) måste du se till att anrop till webbformuläret kommer fram på samma server.
 >* Dessa implementeringar kräver hjälp av Adobe Campaign Consulting-teamet.
-
 >
 
 

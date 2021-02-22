@@ -80,7 +80,6 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 >
 >* Under siddesignen kan du visa den slutliga återgivningen på fliken **[!UICONTROL Preview]**. Spara formuläret först om du vill se ändringarna. Eventuella fel visas på fliken **[!UICONTROL Log]**.
 >* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. Det gör du genom att gå till underfliken **[!UICONTROL Preview]** och markera rutan **[!UICONTROL Enable debug mode]**: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
-
 >
 
 

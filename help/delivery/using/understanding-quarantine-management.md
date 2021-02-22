@@ -70,7 +70,7 @@ Följande information finns för varje adress:
 >Ökningen av antalet karantän är en normal effekt som har samband med databasens slitage. Om en e-postadress till exempel anses ha en livslängd på tre år och mottagartabellen ökar med 50 % varje år, kan ökningen av antalet karantän beräknas enligt följande:
 >
 >Slutet av år 1: (1*0.33)/(1+0.5)=22 %.
-Slutet av år 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
+>Slutet av år 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### Identifiera adresser i karantän i leveransrapporter {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -113,7 +113,8 @@ Adresserna tas automatiskt bort från karantänlistan i följande fall:
 Deras status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL On denylist]**-status kommer aldrig att tas bort, även om de får ett e-postmeddelande.
+>
+>Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL On denylist]**-status kommer aldrig att tas bort, även om de får ett e-postmeddelande.
 
 Du kan ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i distributionsguiden (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
 
@@ -152,7 +153,8 @@ Objekten som sätts i karantän är enhetstoken.
 **För iOS - binär anslutning**
 
 >[!NOTE]
-Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
+>
+>Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
 För varje meddelande tar Adobe Campaign emot synkrona och asynkrona fel från APN-servern. För följande synkrona fel genererar Adobe Campaign mjuka fel:
 
@@ -269,10 +271,11 @@ Arbetsflödet **[!UICONTROL mobileAppOptOutMgt]** körs var sjätte timme för a
 Under leveransanalysen läggs alla enheter som är undantagna från målet automatiskt till i tabellen **excludeLogAppSubRcp**.
 
 >[!NOTE]
-Här är olika typer av fel för kunder som använder Baidu-kontakten:
-* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, nytt försök utförs.
-* Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, nytt försök utförs.
-* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
+>
+>Här är olika typer av fel för kunder som använder Baidu-kontakten:
+>* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, nytt försök utförs.
+>* Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, nytt försök utförs.
+>* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 
 Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
@@ -492,7 +495,8 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
 Karantänmekanismen för SMS-meddelanden är globalt densamma som den allmänna processen. Se [Om karantäner](#about-quarantines). Specifikationerna för SMS anges nedan.
 
 >[!NOTE]
-Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allmänna **utökade SMPP**-kopplingen.
+>
+>Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allmänna **utökade SMPP**-kopplingen.
 
 <table> 
  <tbody> 
@@ -550,8 +554,9 @@ SMPP-kopplingen hämtar data från SR-meddelandet (statusrapport) som returneras
 Innan en ny typ av fel kvalificeras är felorsaken alltid inställd på **Refused** som standard.
 
 >[!NOTE]
-Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Leveransfel, typer och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
-Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
+>
+>Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Leveransfel, typer och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
 
 Exempel på ett genererat meddelande:
 

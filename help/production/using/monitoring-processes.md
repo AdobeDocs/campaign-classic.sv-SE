@@ -255,7 +255,6 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 >
 >* Information om SMTP-övervakning är bara tillgänglig om e-postkanalen har aktiverats.
 >* **[!UICONTROL SMTP sending statistics]** erbjuds bara om statistikservern har startats på instansen.
-
 >
 
 

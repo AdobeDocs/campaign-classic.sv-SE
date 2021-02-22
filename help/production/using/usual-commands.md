@@ -29,7 +29,6 @@ Parametern **`<command>`** motsvarar modulen.
 >
 >* I vilket fall som helst kan du lägga till argumentet **-noconsole** för att ta bort kommentarer som visas när modulerna har startats.
 >* Omvänt kan du lägga till argumentet **-verbose** om du vill visa mer information.
-
 >
 
 
@@ -163,8 +162,6 @@ Så här ändrar du det interna **lösenordet:** nlserver config -internalpasswo
 >* I allmänhet kan du använda kommandot **config** i stället för att ändra konfigurationsfilerna manuellt
 >* Använd **- om du vill visa parameterlistan?** parameter:  **nlserver config -?**
 >* Om det är en Oracle-databas får du inte ange kontot. Syntaxen är följande:
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver config -setdblogin:Oracle:test6@dbserver
 

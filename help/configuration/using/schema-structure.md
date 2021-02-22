@@ -486,7 +486,6 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 >
 >* **location/@** cityis not valid; använd  **`[location/@city]`**
 >* **`[@email]`** och  **@** emailare-motsvarighet
-
 >
 
 

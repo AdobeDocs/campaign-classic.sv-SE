@@ -37,7 +37,6 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 > * [Kampanj 20.1.4](../../rn/using/release--20-1.md)
 > * [Kampanj 19.2.4](../../rn/using/release--19-2.md)
 > * [Kampanj 19.1.8](../../rn/using/release--19-1.md)
-
 >
 
 

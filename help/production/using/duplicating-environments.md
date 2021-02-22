@@ -69,7 +69,6 @@ Följande steg måste utföras med stor noggrannhet: vissa processer kanske fort
 >
 >* Följande procedur gäller för PostgreSQL-språk. Om SQL-språket är ett annat (t.ex. Oracle) måste SQL-frågorna anpassas.
 >* Nedanstående kommandon används i kontexten för en **prod**-instans och en **dev**-instans under PostgreSQL.
-
 >
 
 

@@ -50,6 +50,7 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
       **iisreset /stop**
 
    * Adobe Campaign: **net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >Du måste också se till att omdirigeringsservern (webmdl) är stoppad så att filen **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
@@ -172,10 +173,8 @@ Om du vill göra det kör du följande kommando:
 >
 >* Skriptet kan heta **httpd** i stället för **apache**.
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
-
-   >
-   >   
-   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
+>
+>   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
 
 
 Starta sedan om Apache:

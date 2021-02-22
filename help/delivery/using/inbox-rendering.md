@@ -84,7 +84,6 @@ Varje gång du använder funktionen **[!UICONTROL Inbox rendering]** i en levera
 >
 >* Varje gång rapporten för inkorgsåtergivning skapas dras en token per meddelandeklient av: en token för Outlook 2000-återgivning, en för Outlook 2010-återgivningen, en för Apple Mail 9-återgivningen och så vidare.
 >* Om du genererar återgivningen av Inkorgen igen för samma leverans minskas antalet tillgängliga tokens igen med antalet genererade återgivningar.
-
 >
 
 

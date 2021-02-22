@@ -95,7 +95,6 @@ vacuum full nmsdelivery;
 >* Kommandona **vakuum** och **reindex** låser tabellen, vilket pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfullt** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YYYNmsBroadLogXx**.
 >* Underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
-
 >
 
 

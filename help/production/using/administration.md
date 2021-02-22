@@ -80,19 +80,14 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >* I en nödsituation använder du alternativet **-direct** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **döda -9**).
    >* Använd alternativet **-noconsole** för att försäkra dig om att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via modulen **syslogd**.
    >* Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
-
-      >
-      >   
-      Exempel:
-      >
-      >   
-      **webbverbose för omstart av nlserver**
-      >
-      >   
-      **nlserver start mta@myinstance -verbose**
-      >
-      >   
-      Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
+   >
+   >   Exempel:
+   >
+   >   **webbverbose för omstart av nlserver**
+   >
+   >   **nlserver start mta@myinstance -verbose**
+   >
+   >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
 
 
 * Starta alla Adobe Campaign-processer (motsvarar att starta tjänsten **nlserver6**):

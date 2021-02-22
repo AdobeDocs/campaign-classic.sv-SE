@@ -456,7 +456,8 @@ Det finns tre möjliga sätt att lösa en konflikt:
 * **[!UICONTROL Keep the current version]**: betyder att uppdateringen inte godkänns.
 
    >[!IMPORTANT]
-   Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
+   >
+   >Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
@@ -502,12 +503,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje representationsschema (**nms:emailOfferView**). I v7 finns innehållet nu i erbjudandeschemat. Efter uppgraderingen visas därför inte innehållet i gränssnittet. Efter uppgraderingen måste du återskapa erbjudandeinnehållet eller utveckla ett skript som automatiskt flyttar innehållet från det publiceringsschema som visas till erbjudandeschemat.
 
 >[!IMPORTANT]
-Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kan utnyttja alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
+>
+>Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kan utnyttja alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
 Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i mappen Adobe Campaign v7. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande (fälten **[!UICONTROL htmlSource]** och **[!UICONTROL textSource]**). Innehållet som fanns i tabellen **NmsEmailOfferView** har flyttats till erbjudandetabellen.
 
 >[!NOTE]
-Om du använder det här skriptet kan du inte utnyttja alternativen för innehållshantering och återgivningsfunktioner. För att kunna dra nytta av dessa funktioner måste du tänka om katalogen erbjuder, särskilt erbjudandeinnehållet och konfigurationsutrymmena.
+>
+>Om du använder det här skriptet kan du inte utnyttja alternativen för innehållshantering och återgivningsfunktioner. För att kunna dra nytta av dessa funktioner måste du tänka om katalogen erbjuder, särskilt erbjudandeinnehållet och konfigurationsutrymmena.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +609,8 @@ Så här gör du när du har flyttat erbjudandeinnehållet om du bara har en mil
 1. Utför omfattande tester.
 
    >[!NOTE]
-   Namnen på kategorier och erbjudanden online ändras när de publicerats. Uppdatera alla referenser till erbjudanden och kategorier i den inkommande kanalen.
+   >
+   >Namnen på kategorier och erbjudanden online ändras när de publicerats. Uppdatera alla referenser till erbjudanden och kategorier i den inkommande kanalen.
 
 ## Rapporter {#reports}
 
@@ -634,7 +638,8 @@ Det finns två webbprogramfamiljer:
 Precis som för rapporter (se [Rapporter](#reports)) måste du, om du har lagt till JavaScript, kontrollera och anpassa om det behövs. Om du vill använda den blå v7-banderollen (som innehåller universum) måste du publicera webbprogrammet igen. Om JavaScript-koden fungerar kan du välja v6.x-återgivningsmotorn. Om så inte är fallet kan du använda v6.0-renderingsmotorn när du anpassar koden och sedan använda v6.x-renderingsmotorn.
 
 >[!NOTE]
-Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
+>
+>Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
 
 Anslutningsmetoderna för webbprogrammet har ändrats i v7. Om du stöter på anslutningsproblem i dina identifierade webbprogram måste du tillfälligt aktivera alternativen **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml**-filen. Ändra följande alternativvärden efter uppgraderingen:
 
@@ -667,7 +672,8 @@ sessionTokenOnly="false"
 Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
 
 >[!NOTE]
-Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
+>
+>Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 

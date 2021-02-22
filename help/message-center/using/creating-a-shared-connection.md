@@ -21,7 +21,6 @@ ht-degree: 2%
 >
 >* Schematillägg som gjorts i scheman som används av [Message Center tekniska arbetsflöden](../../message-center/using/technical-workflows.md) för antingen kontroll- eller körningsinstanser måste dupliceras i de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
 >* Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
-
 >
 
 

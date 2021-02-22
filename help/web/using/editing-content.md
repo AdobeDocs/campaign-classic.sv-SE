@@ -137,7 +137,6 @@ Anpassningsblock och fält kan bara infogas i textblock.
 >* Nytt fönster (_blank)
 >* Aktuellt fönster (_self)
 >* Standardwebbläsarbeteende
-
 >
 
 
@@ -203,9 +202,8 @@ De tillgängliga alternativen är följande:
 >[!NOTE]
 >
 >* **Ta** bort ikon: tar bort blocket och allt dess innehåll.
-   >
-   >
-* **** Duplicateikon: duplicerar blocket samt alla format som hör till blocket.
+>
+>* **** Duplicateikon: duplicerar blocket samt alla format som hör till blocket.
 
 
 ## Hantera bilder och animeringar {#managing-images-and-animations}

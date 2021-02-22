@@ -47,7 +47,6 @@ Vid direktutskick läggs startadresser till under extraheringen och blandas i ut
 >
 >* Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Om elementsamlingar extraheras har dessa fält ett tomt värde för startadresserna, såvida inte alternativet **[!UICONTROL Single row (expert user)]** är markerat. Mer information om detta finns i [det här avsnittet](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
-
 >
 
 

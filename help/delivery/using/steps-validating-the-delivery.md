@@ -135,7 +135,6 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 >
 >* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 

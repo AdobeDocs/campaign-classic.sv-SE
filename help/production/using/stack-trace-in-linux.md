@@ -23,7 +23,6 @@ En **stackspårning** representerar en spårning som finns i en **core**-typfil.
 >
 >* En **core**-fil heter **core.`<num>`**.
 >* **gdb - GNU-** felsökaren måste vara installerad på datorn.
-
 >
 
 
