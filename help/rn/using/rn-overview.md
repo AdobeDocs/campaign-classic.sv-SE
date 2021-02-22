@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Som lokal användare kan du utföra uppgraderingen. För att göra detta måste 
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Som en värdbaserad Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den [senaste stabila versionen av Gold Standard](../../rn/using/gold-standard.md#gs-10) utan någon åtgärd. [Läs mer](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
+Som en värdbaserad Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den [senaste stabila versionen av Gold Standard](../../rn/using/gold-standard.md#gs-11) utan någon åtgärd. [Läs mer](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >Kompatibilitetsmatrisen för Gold Standard finns i [GA-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
