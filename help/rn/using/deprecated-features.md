@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 99%
+source-wordcount: '1717'
+ht-degree: 94%
 
 ---
 
@@ -45,6 +45,14 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Funktion</strong></td>
    <td><strong>Ersättning</strong></td>
   </tr>
+    <tr>
+  <td>Övervakningsrapport för teknisk leverans<br></td>
+   <td><p>Från och med Campaign 21.1 har övervakningsrapporten för teknisk leverans tagits bort.</p>
+   <p>Om det behövs kan du få den här rapporten via e-post varje dag fram till datumet då funktionen togs bort. Du begär det genom att öppna ett specifikt <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen/e-postadresserna som rapporten ska skickas till.</p> 
+   <p>Adobe rekommenderar att ni samarbetar med Deliverability Team för att definiera de bästa verktygen för att övervaka instansens leveransförmåga.</p>
+  <p><em>Datum för målborttagning: I slutet av 2021</em></p>
+  </td>
+ </tr>
   <tr>
   <td>CRM-kopplingar<br></td>
    <td><p>Från och med Campaign 20.3 har följande CRM-anslutningar tagits bort i Campaign:</p>
@@ -83,7 +91,6 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td>SMS-kopplingar<br></td>
   <td><p> Från och med Campaign version 20.2 har följande SMS-kopplingar tagits bort.<p>
    <ul>
-   <li>NetSize</li>
    <li>Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
    <li>Sybase365 (SAP SMS 365)</li>
    <li>CLX Communications</li>
