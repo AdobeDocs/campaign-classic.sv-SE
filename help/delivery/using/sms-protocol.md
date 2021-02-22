@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
-source-wordcount: '8432'
+source-wordcount: '8458'
 ht-degree: 0%
 
 ---
@@ -356,7 +356,7 @@ Den största tillåtna storleken för ett meddelande beror på dess kodning. I t
 | Kodning | Vanlig data_coding | Meddelandestorlek (tecken) | Delstorlek för multipart-SMS | Tillgängliga tecken |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Grundläggande GSM7-teckenuppsättning + tillägg (utökade tecken tar 2 tecken) |
-| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varierar från telefon till telefon) |
 
 ## SMPP:s externa kontoparametrar {#SMPP-parameters-external}
@@ -597,6 +597,12 @@ När TLS är aktiverat hoppar du över alla certifikatkontroller.
 När det här alternativet är markerat är anslutningen inte längre säker, utan bör inte aktiveras i produktionen.
 
 Den kan vara användbar för felsökning och testning.
+
+Du kan välja mellan tre olika värden för certifikatverifieringen:
+
+* Fullständig certifieringskontroll (inklusive värdnamnet), standard.
+* Hoppa över verifieringen av värdnamnet.
+* Hoppa över certifikatverifieringen.
 
 #### Bind TON/NPI {#bind-ton-npi}
 
