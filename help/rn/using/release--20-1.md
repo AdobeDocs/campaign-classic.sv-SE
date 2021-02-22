@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -24,8 +24,9 @@ _23 december 2020_
 >[!CAUTION]
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **31 mars 2021**.
->
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
+   >
+   > 
+* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
 
 
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
@@ -67,12 +68,12 @@ _17 februari 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Förbättringar av hadoop FDA Connector</strong><br /> </th> 
+   <th> <strong>Förbättringar av Hadoop FDA Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Hadoop FDA Connector har förbättrats med stöd för Hadoop 3.0 och Cloudera.</p>
+   <td> <p>Hadoop FDA Connector har förbättrats för att stödja Hadoop 3.0 och Cloudera.</p>
     <p>Mer information finns i den <a href="../../installation/using/configure-fda-hadoop.md">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
@@ -131,7 +132,7 @@ _17 februari 2020_
 
 **Felkorrigeringar**
 
-* Ett krypteringsfel för kontonycklar har korrigerats när Hadoop-anslutningen användes.
+* Ett krypteringsfel för kontonycklar har korrigerats när anslutningen till Hadoop användes.
 
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 
