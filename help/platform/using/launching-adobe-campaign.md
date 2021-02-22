@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '558'
 ht-degree: 8%
 
 ---
@@ -33,7 +33,7 @@ Du kan ansluta till Adobe Campaign med din Adobe ID. Se denna [sida](../../integ
 
 Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 
-1. Ange operatorkontots identifierare i fältet **[!UICONTROL login]**.
+1. Ange operatorkontots identifierare i fältet **[!UICONTROL Login]**.
 
    Din identifierare anges av administratören för din Adobe Campaign-plattform.
 
@@ -41,9 +41,14 @@ Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 
    Första gången du öppnar databasen är ditt lösenord det du får av administratören. När du är ansluten kan du ändra ditt lösenord via menyn **[!UICONTROL Tools > Change password...]**. Information om operatorer och anslutningar finns i [Åtkomsthantering](../../platform/using/access-management.md).
 
-1. Bekräfta genom att klicka på **[!UICONTROL LOG IN]**.
+1. Bekräfta genom att klicka på **[!UICONTROL LOG IN]**.<!--You can also press the **Enter** key to launch connection.-->
 
 Nu kan du komma åt [Adobe Campaign-arbetsytan](../../platform/using/adobe-campaign-workspace.md).
+
+Vissa kortkommandon finns på **[!UICONTROL Sign in screen]**:
+* Alla objekt som kan användas kan markeras med tangenterna **Tabb** (uppifrån och ned) eller **Tabb** + **Skift** (nerifrån och upp).
+* Du kan också starta anslutningen genom att trycka på **Enter**.
+* Du kan använda tangenten **Esc** om du vill återställa fälten **[!UICONTROL Login]** och **[!UICONTROL Password]** till de senast godkända anslutningsvärdena.
 
 ## Konfigurera anslutningar {#setting-up-connections}
 
@@ -101,5 +106,5 @@ Läs mer om Gold Standard [i den här artikeln](https://helpx.adobe.com/se/campa
 **Relaterade ämnen**:
 
 * [Adobe Campaign hjälp- och supportalternativ](https://helpx.adobe.com/se/campaign/kb/ac-support.html#acc-support)
-* [Adobe Software Distribution](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
