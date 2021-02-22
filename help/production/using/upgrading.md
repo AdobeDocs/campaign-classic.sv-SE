@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,6 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
       **iisreset /stop**
 
    * Adobe Campaign: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >Du måste också se till att omdirigeringsservern (webmdl) är stoppad så att filen **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
@@ -71,7 +70,7 @@ Så här kör du uppgraderingsfilen:
 
 1. Kör **setup.exe**.
 
-   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/downloads) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
 1. Klicka på **[!UICONTROL Next]** .
@@ -125,7 +124,7 @@ Information om hur du uppdaterar klientkonsolen finns i [det här avsnittet](../
 
 ### Hämta uppdaterade paket {#obtain-updated-packages}
 
-Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: ansluta till [programdistributionsportalen](https://experience.adobe.com/downloads) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: ansluta till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Filen är **nlserver6-v7-XXX.rpm**
 
@@ -173,8 +172,10 @@ Om du vill göra det kör du följande kommando:
 >
 >* Skriptet kan heta **httpd** i stället för **apache**.
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
->
->   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
+
+   >
+   >   
+   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
 
 
 Starta sedan om Apache:
