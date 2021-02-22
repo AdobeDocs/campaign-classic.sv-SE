@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: df7c27e763e7e0c02189ed972f33eb03ca2a915f
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -128,7 +128,7 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
    >Det här blocket kan bara användas för leveranser till besökare.
 
 * **[!UICONTROL Registration confirmation]** : infogar en länk som bekräftar prenumerationen.
-* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, Twitter, Google + och LinkedIn (se  [Viral marketing: till en vän](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, Twitter och LinkedIn (se  [Viral marketing: till en vän](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** och  **[!UICONTROL Notification style]** : generera kod som formaterar ett e-postmeddelande med fördefinierade HTML-format. Dessa block måste infogas i källkoden för leveransen, i avsnittet **[!UICONTROL ...]**, i **`<style>...</style>`**-taggar.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : infogar en URL som gör det möjligt att ange ett interaktionserbjudande  **[!UICONTROL Accepted]** (se  [det här avsnittet](../../interaction/using/offer-analysis-report.md)).
 
