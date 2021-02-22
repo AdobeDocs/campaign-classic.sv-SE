@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 8%
+source-wordcount: '789'
+ht-degree: 4%
 
 ---
 
@@ -32,10 +32,6 @@ Så här konfigurerar du den här kopplingen:
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**.
 1. Välj det externa **[!UICONTROL iOS routing]**-kontot.
 1. På fliken **[!UICONTROL Connector]** fyller du i fältet **[!UICONTROL Access URL of the connector]** med följande URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
-
-   >[!NOTE]
-   >
-   > Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
