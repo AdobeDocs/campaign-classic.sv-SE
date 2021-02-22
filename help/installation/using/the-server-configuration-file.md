@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
+source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
 workflow-type: tm+mt
-source-wordcount: '7846'
+source-wordcount: '7929'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,7 @@ De första parametrarna finns inuti noden **shared**. Dessa är relaterade till 
 * [dnsConfig](#dnsconfig)
 * [exec](#exec)
 * [htmlToPdf](#htmltopdf)
+* [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
 * [modul](#module)
@@ -336,7 +337,7 @@ Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
+   <td> Typ (uppräkning). Möjliga värden är Oracle, MSSQL (Microsoft SQL Server), PostgreSQL (PostgreSQL, Greenplum), Teradata, DB2, MySQL, Netezza, AsterData, SAPHANA (SAP HANA), RedShift (Amazon Redshift), ODBC (ODBC) (Sybase) E, Sybase IQ), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -637,6 +638,71 @@ Exempel på fantomjs:
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
 ```
+
+## ims {#ims}
+
+Här är de olika parametrarna för noden **ims**. Detta är konfigurationen för Campaign som ansluter till en annan tjänst med [IMS](../../integrations/using/about-adobe-id.md).
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Parameter </th> 
+   <th> Beskrivning </th> 
+   <th> Typ </th> 
+   <th> Standardvärde </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> authIMSClientId<br /> </td> 
+   <td> Klient-ID<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSClientSecret<br /> </td> 
+   <td> Hemlig nyckel (krypterad i AES)<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSCode<br /> </td> 
+   <td> Auktoriseringskod (krypterad i AES)<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSEndpoint<br /> </td> 
+   <td> URL för IMS-server<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> https://ims-na1.adobelogin.com'<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientId<br /> </td> 
+   <td> Klient-ID för tekniskt konto<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientSecret<br /> </td> 
+   <td> Teknisk kontohemlig nyckel (krypterad i AES)<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAId<br /> </td> 
+   <td> Tekniskt konto-ID<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAPrivateKey<br /> </td> 
+   <td> Privat nyckel för tekniskt konto (krypterat i AES)<br /> </td> 
+   <td> Sträng<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ## javaScript {#javascript}
 
