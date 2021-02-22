@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 14%
@@ -24,8 +24,9 @@ _23 december 2020_
 >[!CAUTION]
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **31 mars 2021**.
->
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
+   >
+   > 
+* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
 
 
 
@@ -118,7 +119,7 @@ _2 december 2019_
 * Optimering av minnesförbrukning för push-meddelanden.
 * Hanteringen av filen **logins.log** har förbättrats för optimering av prestanda och lagring. Filen delas nu upp i flera filer, en gång om dagen med högst 365 filer bevarade. [Läs mer](../../production/using/log-files.md)
 * Det externa Microsoft Dynamics CRM-kontot kan nu konfigureras med hjälp av lösenordsautentiseringsuppgifter (lösenord + användarnamn) eller certifikat (privat nyckel). [Läs mer](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Vissa förbättringar har lagts till i Hadoop FDA-anslutningen för att förbättra tillförlitligheten
+* Vissa förbättringar har lagts till i Hadoop FDA-kontakten för att förbättra tillförlitligheten
 * En särskild skyddsmodul har lagts till för att kontrollera diskutrymmet innan offentliga resurser kan överföras till servern.
 * Nya [kampanjalternativ](../../installation/using/configuring-campaign-options.md) har lagts till:
    * Med konfigurationsalternativet **WdbcKillSessionPolicy** kan du påverka **ovillkorlig Stop**-funktion för alla arbetsflöden och PostgreSQL-databasfrågor.
@@ -147,7 +148,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 
 * Korrigerade ett kraschproblem när fältet **Lägg till länkad tabell** var tomt i arbetsflödesaktiviteten **Datainläsning (RDBMS)**. (NEO-12213)
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
-* Korrigerade ett problem i databasrensningsarbetsflödet när frågebandningsalternativet användes med Teradata. (NEO-12399)
+* Ett problem i databasrensningsarbetsflödet när frågebandningsalternativet används med Teradata har korrigerats. (NEO-12399)
 * Ett problem som påverkade leveransanalysen med typologiregeln inklusive domänen ne.jp har korrigerats. (NEO-12609)
 * Korrigerade ett problem relaterat till SMS över TLS-uppdateringar som innebar en mer restriktiv certifikatprincip. Uppdateringarna kan leda till ett anslutningsfel mellan marknadsförings- och mellanleverantörsservrar om certifikatet är inaktuellt. (NEO-17698)
 * Ett problem har korrigerats när knappen **Testa anslutningen** användes på ett externt konto i en miljö med flera källor och vaultautentisering användes. (NEO-12722)
@@ -172,7 +173,7 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Ett problem som påverkade CRM Connector med Salesforce har korrigerats. (NEO-17712)
 * Ett timeout-problem vid import av data från en extern SFTP har korrigerats. (NEO-19723)
 * Ett problem har korrigerats vid åtkomst till prediktiva modeller. (NEO-19713)
-* Korrigerade ett problem som påverkade slumpmässig sampling i **Dela** arbetsflödesaktivitet med Hadoop FDA-databas. (NEO-16636)
+* Korrigerade ett problem som påverkade slumpmässig sampling i **Dela**-arbetsflödesaktivitet med Hadoop FDA-databas. (NEO-16636)
 * Korrigerade en regression på Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
 
 
