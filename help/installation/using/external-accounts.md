@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 11%
@@ -147,7 +147,7 @@ Externa databaser som är kompatibla med Campaign listas i [kompatibilitetsmatri
 
 Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Läs mer i följande avsnitt:
 
-* Konfigurera åtkomst till [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Konfigurera åtkomst till [Azure Synapse](../../installation/using/configure-fda-synapse.md)
 * Konfigurera åtkomst till [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Konfigurera åtkomst till [Oracle](../../installation/using/configure-fda-oracle.md)
 * Konfigurera åtkomst till [Netezza](../../installation/using/configure-fda-netezza.md)
@@ -408,7 +408,7 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 * **[!UICONTROL API version]**
 
-   Version av API mellan **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** eller **[!UICONTROL Version 15]**.
+   Version av API mellan **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** eller **[!UICONTROL Version 15]**.
 
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
