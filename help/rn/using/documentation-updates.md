@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '4045'
-ht-degree: 96%
+source-wordcount: '4066'
+ht-degree: 95%
 
 ---
 
@@ -62,6 +62,8 @@ Listan över tekniska arbetsflöden med tillhörande paket har förbättrats och
 Avsnittet Felsökning i användarhandboken **Övervakning** har omorganiserats och förbättrats med en landningssida. [Läs mer](../../production/using/troubleshooting.md).
 
 Det finns ett nytt avsnitt gällande att **importera och exportera data** med nya sidor som rör bästa praxis för arbetsflöden, datakomprimering, kryptering och import. [Läs mer](../../platform/using/get-started-data-import-export.md)
+
+Information har lagts till om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md).
 
 ## December 2020 {#dec-2020}
 
