@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 2%
 
 ---
 
@@ -80,3 +80,5 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
    * Ändra etiketten för att ange att den här populationen varken innehåller A eller B och klicka på **[!UICONTROL OK]** för att stänga aktiviteten.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
+
+Nu kan du skapa två leveransmallar (se [Steg 3: Skapa två leveransmallar](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
