@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Var:
 
 Objektet kan vara:
 
-* *&quot;leverans&quot;: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
+* &quot;leverans&quot;: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
 * &quot;provider&quot;: för aktuell leveransleverantör/routning (nms:externalAccount).
 * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägg till objekt i körningskontexten**.
 * Objekt i foreach-slingan: se avsnittet [Foreach](#<%@-foreach) nedan.
