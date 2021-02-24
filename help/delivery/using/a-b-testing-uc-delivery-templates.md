@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 8%
 
 ---
 
@@ -31,3 +31,5 @@ Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Em
 1. Upprepa den här processen om du vill skapa en mall för leverans B.
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
+
+Du kan nu konfigurera leveranser i arbetsflödet (se [Steg 4: Konfigurera leveranser i arbetsflödet](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
