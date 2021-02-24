@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
+source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 97%
+source-wordcount: '2368'
+ht-degree: 96%
 
 ---
 
@@ -199,7 +199,11 @@ ht-degree: 97%
    + Spåra meddelanden {#tracking-messages}
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
       + [Så konfigurerar man spårade länkar](delivery/using/how-to-configure-tracked-links.md)
-      + [Personalisera URL-spårning](delivery/using/personalizing-url-tracking.md)
+      + Spåra anpassade länkar {#tracking-personalized-links}
+         + [Kom igång med personaliserad länkspårning](delivery/using/tracking-personalized-links.md)
+         + [Identifiera spårnings-URL:er](delivery/using/detecting-tracking-urls.md)
+         + [Anvisningar för förbearbetning av spårning](delivery/using/pre-processing-instructions.md)
+      + [Konfigurera alternativ för URL-spårning](delivery/using/personalizing-url-tracking.md)
       + [Åtkomst till spårningsloggarna](delivery/using/accessing-the-tracking-logs.md)
       + [Testa spårning](delivery/using/testing-tracking.md)
       + [Felsökning av spårning](delivery/using/tracking-troubleshooting.md)
