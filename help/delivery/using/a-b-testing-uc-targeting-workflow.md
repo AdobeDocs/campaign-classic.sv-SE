@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 9%
+source-wordcount: '136'
+ht-degree: 8%
 
 ---
 
@@ -34,3 +34,5 @@ Du måste skapa ett arbetsflöde på fliken **[!UICONTROL Targeting and Workflow
 1. Använd musen för att dra och släppa aktiviteter i arbetsflödesdiagrammet, inklusive en **[!UICONTROL Query]** (**[!UICONTROL Target]**-flik), en **[!UICONTROL Split]** (**[!UICONTROL Target]**-flik), två **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]**-flik), en **[!UICONTROL Wait]**-aktivitet (**[!UICONTROL Flow Control]**-flik), en **[!UICONTROL JavaScript code]**-aktivitet (**[!UICONTROL Actions]**) och en &lt;a &lt;a10///// > aktivitet (**[!UICONTROL Actions]**-flik).**[!UICONTROL Delivery]**
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
+
+Du kan nu konfigurera populationsexemplen (se [Steg 2: Konfigurera populationsexempel (a1/>).](../../delivery/using/a-b-testing-uc-population-samples.md)
