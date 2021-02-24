@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ Spårningsalternativen kan konfigureras genom att aktivera eller inaktivera spå
 
 **Spårad länkpersonalisering**
 
-Med spårningsfunktionerna i Campaign Classic kan du lägga till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Med spårningsfunktionerna i Campaign Classic kan du lägga till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md)
 
 **Spårningsloggar**
 
