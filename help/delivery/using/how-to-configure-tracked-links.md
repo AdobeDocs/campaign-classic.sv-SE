@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '478'
 ht-degree: 11%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 11%
 
 För varje leverans kan du spåra mottagningen av meddelanden och aktiveringen av länkarna som har infogats i meddelandets innehåll. På så sätt kan du spåra mottagarnas beteende beroende på de leveransåtgärder de har fått som mål.
 
+Spårning gäller för meddelanden, men med webbspårning kan du övervaka hur mottagarna surfar på en webbplats (besökta sidor, inköp). Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+
 >[!NOTE]
 >
->Spårning gäller för meddelanden, men med webbspårning kan du övervaka hur mottagarna surfar på en webbplats (besökta sidor, inköp).
->
->Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+>Länkarna i e-postinnehåll som innehåller personalisering måste spåras med specifik syntax. Mer information om hur du lägger till länkar i e-postmeddelanden som kan anpassas och som stöder spårning finns i [det här avsnittet](../../delivery/using/tracking-personalized-links.md).
+
+
+
 
 Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att anpassa hur URL-adresser spåras:
 
