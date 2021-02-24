@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,14 @@ Testet som beskrivs i det här fallet avser endast två leveranser, men du kan t
 
 De viktigaste stegen för att utföra den här åtgärden är:
 
-* [Steg 1: Skapa ett målarbetsflöde](#step-1--creating-a-targeting-workflow)
-* [Steg 2: Konfigurera populationsexempel](#step-2--configuring-population-samples)
-* [Steg 3: Skapa två leveransmallar](#step-3--creating-two-delivery-templates)
-* [Steg 4: Konfigurera leveranser i arbetsflödet](#step-4--configuring-the-deliveries-in-the-workflow)
-* [Steg 5: Skapa skriptet](#step-5--creating-the-script)
-* [Steg 7: Starta arbetsflödet](#step-7--starting-the-workflow)
-* [Steg 8: Analysera resultatet](#step-8--analyzing-the-result).
+* [Steg 1: Skapa ett målarbetsflöde](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [Steg 2: Konfigurera populationsexempel](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [Steg 3: Skapa två leveransmallar](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+* [Steg 4: Konfigurera leveranser i arbetsflödet](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [Steg 5: Skapa skriptet](../../delivery/using/a-b-testing-uc-script.md)
+* [Steg 6: Definiera den slutliga leveransen](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [Steg 7: Starta arbetsflödet](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [Steg 8: Analysera resultatet](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **Relaterade ämnen:**
 
