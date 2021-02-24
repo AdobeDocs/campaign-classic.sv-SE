@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '4066'
 ht-degree: 95%
@@ -45,6 +45,8 @@ Ett felsökningsavsnitt har lagts till för att hjälpa dig att lösa vanliga pr
 
 Avsnittet **Skicka ett e-postmeddelande** har ordnats om och förtydligats med nya underavsnitt. [Läs mer](../../delivery/using/sending-messages.md)
 
+Information har lagts till om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md).
+
 ## Januari 2021 {#jan-2021}
 
 Aktivitetsavsnittet **[!UICONTROL Fork]** har berikats med bästa praxis. [Läs mer](../../workflow/using/fork.md)
@@ -62,8 +64,6 @@ Listan över tekniska arbetsflöden med tillhörande paket har förbättrats och
 Avsnittet Felsökning i användarhandboken **Övervakning** har omorganiserats och förbättrats med en landningssida. [Läs mer](../../production/using/troubleshooting.md).
 
 Det finns ett nytt avsnitt gällande att **importera och exportera data** med nya sidor som rör bästa praxis för arbetsflöden, datakomprimering, kryptering och import. [Läs mer](../../platform/using/get-started-data-import-export.md)
-
-Information har lagts till om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md).
 
 ## December 2020 {#dec-2020}
 
