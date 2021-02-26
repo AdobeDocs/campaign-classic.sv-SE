@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 333d2221d4f86fe18232473385653ed8409adf54
+source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '484'
 ht-degree: 6%
 
 ---
@@ -96,19 +96,9 @@ Om du vill lägga till projektautentiseringsuppgifterna i Adobe Campaign kör du
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
-Den privata nyckeln ska kodas i base64 UTF-8-format. För att göra detta:
-
-1. Använd den privata nyckeln som genererats i [steg 1: Skapa/uppdatera projektavsnittet för Adobe I/O](#creating-adobe-io-project). Den privata nyckeln måste vara samma som den som används för att skapa integreringen.
-
-1. Använd denna [webbplats](https://www.base64encode.org/) och kopiera och klistra in din privata nyckel till motsvarande fält.
-
-   >[!NOTE]
-   >
-   >En extra rad kan ibland läggas till automatiskt när du kopierar/klistrar in den privata nyckeln. Kom ihåg att ta bort den innan du kodar din privata nyckel.
-
-1. Klicka på **[!UICONTROL Encode]**.
-
-1. Använd den nyligen genererade privata nyckeln som är kodad i base64 UTF-8-format för att köra kommandot som beskrivs ovan.
+>[!NOTE]
+>
+>Du bör koda den privata nyckeln i base64 UTF-8-format. Kom ihåg att ta bort den nya raden från nyckeln innan du kodar den, förutom den privata nyckeln. Den privata nyckeln måste vara densamma som användes för att skapa integreringen. Om du vill testa base64-kodningen för den privata nyckeln kan du använda [den här webbplatsen](https://www.base64encode.org/).
 
 ## Steg 3: Uppdatera tagg för pipelines {#update-pipelined-tag}
 
