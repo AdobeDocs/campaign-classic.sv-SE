@@ -34,8 +34,10 @@ _22 december 2020_
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **31 mars 2021**.
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
 > * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O såsom beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
+
 >
->Läs mer i [Vanliga frågor och svar om att uppgradera till Gold Standard 11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html).
+>
+Läs mer i [Vanliga frågor och svar om att uppgradera till Gold Standard 11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html).
 
 Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
