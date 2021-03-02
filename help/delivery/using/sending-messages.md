@@ -7,17 +7,17 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 
-# Bekräfta e-postleverans {#confirming-email-delivery}
+# De viktigaste stegen för att skicka ett e-postmeddelande {#confirming-email-delivery}
 
-När e-postmeddelandet har skapats och konfigurerats kan du skicka det till huvudmålet. I det här avsnittet beskrivs de viktigaste stegen för att bekräfta leveransen av ett e-postmeddelande.
+När e-postmeddelandet har skapats och konfigurerats kan du skicka det till huvudmålet. I det här avsnittet beskrivs de viktigaste stegen för att kontrollera och bekräfta leveransen av ett e-postmeddelande.
 
 1. Kontrollera att du har konfigurerat alla inställningar som är specifika för e-postleverans. Mer information finns i [E-postparametrar](../../delivery/using/email-parameters.md).
 1. När e-postmeddelandet är klart, innan det skickas till huvudmålet, bör du upptäcka eventuella fel genom att skicka korrektur. Mer information finns i [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
