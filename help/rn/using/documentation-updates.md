@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4092'
 ht-degree: 95%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 95%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
+
+## Mars 2021 {#march-2021}
+
+Information har lagts till i **[!UICONTROL Advanced JavaScript]**-aktivitetsavsnittet om hur du använder metoden task.setCompleted() för att avsluta aktiviteten och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 ## Februari 2021 {#release-21.1}
 
