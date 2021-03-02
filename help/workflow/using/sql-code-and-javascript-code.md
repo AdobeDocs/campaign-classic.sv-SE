@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
@@ -59,3 +59,12 @@ Om du vill ignorera den här gränsen måste du ange värdet **0**.
 * **[!UICONTROL Next calls]**: Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
 * **[!UICONTROL Transitions]**: Du kan definiera flera aktivitetsutdatagränser.
 * **[!UICONTROL Schedule]**: På  **[!UICONTROL Schedule]** fliken kan du schemalägga när aktiviteten ska utlösas.
+
+Avancerad JavaScript är en beständig uppgift och återkommer regelbundet om den inte har markerats som slutförd. Om du vill avsluta aktiviteten och förhindra framtida återkallningar måste du använda metoden **task.setCompleted()** i avsnittet **[!UICONTROL Next calls]**:
+
+```
+task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
+task.setCompleted();
+
+return 0;
+```
