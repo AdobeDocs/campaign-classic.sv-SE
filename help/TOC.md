@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2372'
 ht-degree: 96%
 
 ---
@@ -125,8 +125,8 @@ ht-degree: 96%
       + [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
       + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
       + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
-      + Skicka ett e-postmeddelande {#sending-an-email}
-         + [Bekräfta e-postleverans](delivery/using/sending-messages.md)
+      + Skicka e-postleverans {#sending-an-email}
+         + [De viktigaste stegen för att skicka e-post](delivery/using/sending-messages.md)
          + [E-postparametrar](delivery/using/email-parameters.md)
          + [Skicka med Förbättrad MTA](delivery/using/sending-with-enhanced-mta.md)
          + [Skicka på japanska mobiler](delivery/using/sending-emails-on-japanese-mobiles.md)
