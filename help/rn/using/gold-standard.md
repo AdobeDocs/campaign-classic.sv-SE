@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
+source-git-commit: 23ba4091a1ffaa0245c58e8d346c60b54f79b4a2
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1112'
+ht-degree: 91%
 
 ---
 
@@ -27,15 +27,30 @@ Se [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard version 11{#gs-11}
 
+_2 mars 2021_
+
+Build 9032@10c2709 har följande korrigering:
+
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildupplösning i leveranser. (NEO-31453 och NEO-31454)
+
+**Endast konsoluppgradering är obligatoriskt. Ingen serveruppgradering krävs.**
+
+>[!NOTE]
+>
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Lär dig hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+
+
 _22 december 2020_
 
 >[!CAUTION]
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **31 mars 2021**.
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O såsom beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
+> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
+
 >
->Läs mer i [Vanliga frågor och svar om att uppgradera till Gold Standard 11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html).
+>
+Läs mer i [Vanliga frågor och svar om att uppgradera till Gold Standard 11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html).
 
 Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
