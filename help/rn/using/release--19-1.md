@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '3127'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -25,7 +25,7 @@ _16 december 2020_
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **31 mars 2021**.
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O såsom beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
+> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
 
 
 
@@ -41,7 +41,7 @@ _16 december 2020_
 * Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
 * Korrigerade ett problem i arbetsflöden när poster hämtades från en extern databas och infogades i databasen i Campaign. (NEO-26359)
 * Korrigerade ett problem med serverkraschar genom att förhindra minnesfel när uttrycksanalysen rensades.
-* Korrigerade ett fel som förhindrade funktionen **NoNull** från att arbeta i Oracle-databaser efter uppgradering till build 9032. (NEO-26488)
+* Korrigerade ett fel som förhindrade funktionen **NoNull** från att arbeta i Oraclets databaser efter uppgradering till build 9032. (NEO-26488)
 * Korrigerade ett problem som uppstod när man redigerade en beskrivning av en kampanjmall som hindrade knappen **Spara** från att visas när symboler såsom japanska tecken kopierades och klistrades in. (NEO-27071)
 * Korrigerade ett problem som förhindrade att beskrivningen av en kampanj eller kampanjmall sparades när användaren klickade utanför fönstret innan denne klickade på knappen **Spara**. (NEO-27449)
 * Korrigerade ett problem med proxykonfigurationen som förhindrade dig från att logga in på Adobe Campaign efter den senaste Windows 10-uppdateringen. (NEO-27813)
@@ -111,7 +111,7 @@ _13 augusti 2019_
 * Ett problem med installationen av paketet midEmitter via kommandoraden har korrigerats.
 * Ett nytt autentiseringsalternativ har lagts till som stöd för OAuth-autentiseringsuppgifter i AC-anslutningen med Microsoft Dynamics. (NEO-11982)
 * Korrigerade ett problem med UUID-hantering (Unik universell identifierare) som gjorde att arbetsflödesaktiviteterna för fråga och data misslyckades med Hive FDA.
-* Korrigerade en regression på Oracle som gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
+* Korrigerade en regression för Oraclet, vilket gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
 * Korrigerade en regression som ledde till att en felaktig tidszon plockades när tiden angavs i en arbetsflödesaktivitet i schemaläggaren.
 
 ## ![](assets/do-not-localize/green_2.png) Version 19.1.4 – build 9032{#release-19-1-4-build-9032}
@@ -242,7 +242,7 @@ _30 maj 2019_
 * Korrigerade ett problem som hindrade dig från att ta bort ett webbprogram även om du hade rätt åtkomstbehörighet. (NEO-12072)
 * Korrigerade ett problem som kunde göra att vissa värden skrevs över vid export och sedan import av ett objekt via XML. Alternativet XtkExport_IncludeDefaultValues har lagts till. Om du anger True (standardbeteende) exporteras alla värden. Om värdet är Falskt skrivs ändringarna över med standardvärdet. (NEO-11979)
 * Korrigerade ett problem som gjorde att arbetsflödesaktiviteten **[!UICONTROL Alert]** misslyckades när en anrikningsaktivitet lades till efter en fråga. (NEO-12132)
-* Korrigerade ett fel i Oracle-inställningar där förskjutningar för pipeline (utlösare) inte hämtades från databasen och orsakade dubbletter. (NEO-12121)
+* Korrigerade ett fel i Oraclena där förskjutningar för pipeline (utlösare) inte hämtades från databasen och orsakade dubbletter. (NEO-12121)
 * Korrigerade ett problem som kunde orsaka visningsfel i pivottabeller när Analytics-integrering användes (NEO-12103)
 * Korrigerade ett problem med den beskrivande analysrapporten. (NEO-11414)
 * Korrigerade ett problem med CRM-anslutningar när fjärrtabellen innehöll ett fält med ett understreck i namnet.
