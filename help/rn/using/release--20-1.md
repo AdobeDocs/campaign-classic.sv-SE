@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -68,12 +68,12 @@ _17 februari 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Förbättringar av Hadoop FDA Connector</strong><br /> </th> 
+   <th> <strong>Förbättringar av hadoopets FDA Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Hadoop FDA Connector har förbättrats för att stödja Hadoop 3.0 och Cloudera.</p>
+   <td> <p>Hadoopet FDA Connector har förbättrats med stöd för både Hadoop 3.0 och Cloudera.</p>
     <p>Mer information finns i den <a href="../../installation/using/configure-fda-hadoop.md">detaljerade dokumentationen</a>.</p>
    </td> 
   </tr> 
@@ -132,7 +132,7 @@ _17 februari 2020_
 
 **Felkorrigeringar**
 
-* Ett krypteringsfel för kontonycklar har korrigerats när anslutningen till Hadoop användes.
+* Ett krypteringsfel för kontonycklar har korrigerats när Hadoopet används.
 
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 
