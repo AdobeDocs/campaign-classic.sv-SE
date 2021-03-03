@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '494'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,8 @@ Följ stegen nedan för att hämta och installera Adobe Campaign klientkonsol:
 
 >[!NOTE]
 >
->I Windows kan du starta filen **nlclient.exe** direkt från katalogen `[INSTALL]/bin` på en Windows-server, där `[INSTALL]` är åtkomstsökvägen för Adobe Campaign-installationsmappen.
+>Du kan föreslå att alla användare av Campaign-klientkonsolen uppdaterar den senaste versionen genom att kopiera den körbara konsolfilen till en specifik mapp på Campaign Marketing-servern. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
+
 
 ## Skapa anslutningen{#create-the-connection}
 
