@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Hantera rättigheter
-description: Hantera rättigheter
+title: Hantera arbetsflödesbehörigheter
+description: Lär dig hur du hanterar arbetsflödesbehörigheter
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# Hantera rättigheter{#managing-rights}
+# Hantera arbetsflödesbehörigheter{#managing-rights}
 
 Om de inte är administratörer behöver Adobe Campaign-operatorer åtkomstbehörighet för att skapa, köra eller ändra arbetsflöden.
 
