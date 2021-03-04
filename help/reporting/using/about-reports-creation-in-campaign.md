@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 9%
+source-wordcount: '167'
+ht-degree: 5%
 
 ---
 
 
-# Om att skapa rapporter i Campaign{#about-reports-creation-in-campaign}
+# Viktiga steg för att skapa en rapport{#about-reports-creation-in-campaign}
 
 Om du vill producera statistik över data i din Campaign-databas kan du skapa rapporter och anpassa deras innehåll och layout utifrån dina behov. Dessa rapporter kan delas med andra operatorer.
 
