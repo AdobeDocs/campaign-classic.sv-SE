@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1101'
 ht-degree: 3%
 
 ---
 
 
-# LINE-kanal{#line-channel}
+# Skapa radleveranser{#line-channel}
 
 LINE är ett program för gratis snabbmeddelanden, röst- och videosamtal som finns på alla smarttelefoner (iPhone, Android, Windows Phone, Blackberry, Nokia) och på datorn. Med Adobe Campaign kan du skicka LINE-meddelanden.
 
