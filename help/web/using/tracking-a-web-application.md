@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '411'
+ht-degree: 1%
 
 ---
 
 
-# Spåra en webbapplikation{#tracking-a-web-application}
+# Spåra besök i ett webbprogram{#tracking-a-web-application}
 
 Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE etc.).
 
