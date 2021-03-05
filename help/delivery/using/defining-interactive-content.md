@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1578'
 ht-degree: 3%
 
 ---
@@ -205,8 +205,8 @@ Om du till exempel har tagit med en produktlista i e-postmeddelandet justeras pr
 
 ## Självstudievideo {#amp-email-video}
 
-I videon nedan förklaras hur du aktiverar och använder AMP i Adobe Campaign Classic.
+I videon nedan förklaras hur du aktiverar och använder AMP i Adobe Campaign 
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare utbildningsvideor för Campaign finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
