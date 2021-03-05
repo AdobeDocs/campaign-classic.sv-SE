@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '4014'
+source-wordcount: '4010'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Adobe Campaign-datamodell.
 
-Om du vill ha en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa avsnittet [Campaign Classic datamodell](../../configuration/using/about-data-model.md).
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det här avsnittet](../../configuration/using/about-data-model.md)-avsnittet.
 
 Läs [den här dokumentationen](../../configuration/using/about-schema-reference.md) för att komma igång med Campaign-scheman. Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell i [det här dokumentet](../../configuration/using/about-schema-edition.md).
 
@@ -148,7 +148,7 @@ Därför skulle en kund som skickar 6 miljarder e-postmeddelanden årligen med e
 
 När en anpassad tabell skapas i Adobe Campaign med en primärnyckel som autoPK, bör en anpassad dedikerad sekvens systematiskt kopplas till den tabellen.
 
-Som standard har en anpassad sekvens värden mellan +1 000 och +2,1BB. Tekniskt sett är det möjligt att få ett fullständigt urval av 4BB genom att aktivera negativa ID:n. Detta bör användas med försiktighet och ett ID kommer att förloras vid övergång från negativa till positiva tal: posten 0 ignoreras vanligtvis av Adobe Campaign Classic i genererade SQL-frågor.
+Som standard har en anpassad sekvens värden mellan +1 000 och +2,1BB. Tekniskt sett är det möjligt att få ett fullständigt urval av 4BB genom att aktivera negativa ID:n. Detta bör användas med försiktighet och ett ID kommer att förloras vid övergång från negativa till positiva tal: posten 0 ignoreras vanligtvis av Adobe Campaign i genererade SQL-frågor.
 
 **Relaterade ämnen:**
 * Mer information om funktionen **Sequence auto-generation** finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
