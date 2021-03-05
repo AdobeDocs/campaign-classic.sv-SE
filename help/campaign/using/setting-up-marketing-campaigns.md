@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurera marknadsföringskampanjer
-description: Konfigurera marknadsföringskampanjer
+title: Skapa marknadsföringskampanjer
+description: Lär dig hur du skapar och genomför marknadsföringskampanjer
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 1%
+source-wordcount: '1253'
+ht-degree: 2%
 
 ---
 
 
-# Konfigurera marknadsföringskampanjer{#setting-up-marketing-campaigns}
+# Kom igång med marknadsföringskampanjer{#setting-up-marketing-campaigns}
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
@@ -23,33 +23,21 @@ Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahe
 
 Så här skapar du en marknadsföringskampanj:
 
-1. Skapa en kampanj: identifiera kampanjer och deras egenskaper: etikett, typ, start- och slutdatum, budget, associerade resurser, chefer och deltagare.
+1. Skapa en kampanj: identifiera kampanjer och deras egenskaper: etikett, typ, start- och slutdatum, budget, associerade resurser, chefer och deltagare. [Läs mer](#creating-a-campaign).
 
-   Se [Skapa en kampanj](#creating-a-campaign).
+1. Definiera målpopulationer: skapa ett arbetsflöde med riktade frågor. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Definiera målpopulationer: skapa ett arbetsflöde med riktade frågor.
+1. Skapa leveranser: markera kanaler och definiera innehållet som ska skickas. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-   Se [Markera målpopulationen](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Godkänn leveranser. [Läs mer](../../campaign/using/marketing-campaign-approval.md).
 
-1. Skapa leveranser: markera kanaler och definiera innehållet som ska skickas.
+1. Övervaka leveranser. [Läs mer](../../campaign/using/marketing-campaign-monitoring.md).
 
-   Se [Skapa leveranser](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Planera kampanjer och tillhörande kostnader. [Läs mer](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-1. Godkänn leveranser.
+När dessa steg har slutförts kan du starta leveranserna (se [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), kontrollera data, processer och information som hör till leveranserna och, om det behövs, hantera tillhörande dokument (se [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Du kan också spåra körningen av processerna för kampanjer och leveranser (se [det här avsnittet](../../campaign/using/marketing-campaign-monitoring.md)).
 
-   Se [Godkännandeprocess](../../campaign/using/marketing-campaign-approval.md#approval-process).
-
-1. Övervaka leveranser.
-
-   Se [Övervakning](../../campaign/using/marketing-campaign-monitoring.md).
-
-1. Planera kampanjer och tillhörande kostnader.
-
-   Se [Skapa tjänsteleverantörer och deras kostnadsstrukturer](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
-
-När dessa steg har slutförts kan du starta leveranserna (se [Starta en leverans](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), kontrollera data, processer och information som hör till leveranserna och, om det behövs, hantera tillhörande dokument (se [Hantera associerade dokument](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Du kan också spåra körningen av processerna för kampanjer och leveranser (se [Spåra](../../campaign/using/marketing-campaign-monitoring.md)).
-
-## Skapar plan- och programhierarki {#creating-plan-and-program-hierarchy}
+## Skapa plan- och programhierarki {#creating-plan-and-program-hierarchy}
 
 Så här konfigurerar du din mapphierarki för marknadsföringsplaner och program:
 
@@ -71,7 +59,7 @@ Så här konfigurerar du din mapphierarki för marknadsföringsplaner och progra
 
 ## Skapa en kampanj {#creating-a-campaign}
 
-### Lägga till en kampanj {#adding-a-campaign}
+### Lägg till en kampanj {#adding-a-campaign}
 
 Du kan skapa en kampanj via listan med kampanjer. Om du vill visa den här vyn väljer du menyn **[!UICONTROL Campaigns]** på kontrollpanelen **[!UICONTROL Campaigns]**.
 
@@ -197,7 +185,7 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
 
 En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du kan skapa kampanjinstanser baserat på ett körschema. Kampanjinstanser skapas automatiskt baserat på en mall för periodiska kampanjer, beroende på den frekvens som definieras i mallschemat.
 
-#### Skapar kampanjmallen {#creating-the-campaign-template-1}
+#### Skapa kampanjmallen {#creating-the-campaign-template-1}
 
 1. Skapa en **[!UICONTROL Periodic]**-kampanjmall, helst genom att duplicera en befintlig kampanjmall.
 
@@ -239,4 +227,4 @@ Den här videon visar hur du skapar en marknadsföringsplan, ett program och en 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare utbildningsvideor för Campaign finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
