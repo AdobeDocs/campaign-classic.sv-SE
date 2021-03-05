@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 1%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ På fliken **[!UICONTROL Tracking]** kan du visa alla jobb och deras status för
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Underfliken **[!UICONTROL Tasks]** grupperar alla aktiviteter som är länkade till kampanjen. I den här vyn kan du redigera eller ta bort dem. Uppgifter finns tillgängliga med MRM-programmet. De beskrivs i [Skapa och hantera uppgifter](../../campaign/using/creating-and-managing-tasks.md).
+* Underfliken **[!UICONTROL Tasks]** grupperar alla aktiviteter som är länkade till kampanjen. I den här vyn kan du redigera eller ta bort dem. Uppgifter finns tillgängliga med MRM-programmet. De beskrivs i [det här avsnittet](../../campaign/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -49,10 +49,10 @@ Om du vill kontrollera status för en leverans redigerar du den och visar kontro
 
 >[!NOTE]
 >
->Information om leveransdetaljer finns i avsnittet [Skicka meddelanden](../../delivery/using/about-message-tracking.md).
+>Information om leveransdetaljer finns i [det här avsnittet](../../delivery/using/about-message-tracking.md).
 
 ## Körningsspårning {#execution-tracking}
 
 Du kan kontrollera leveransstatus genom att klicka på **[!UICONTROL Deliveries]**, som du kommer åt via Adobe Campaign hemsida. Se [Leveransspårning](#delivery-tracking).
 
-Information om de processer som körs i en kampanj samlas in på fliken **[!UICONTROL Edit > Audit]** i kampanjen. Där kan du se en lista över leveranser i kampanjen. Se [Spåra en kampanj](#tracking-a-campaign).
+Information om de processer som körs i en kampanj samlas in på fliken **[!UICONTROL Edit > Audit]** i kampanjen. Där kan du se en lista över leveranser i kampanjen. [Läs mer](#tracking-a-campaign).
