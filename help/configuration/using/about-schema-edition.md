@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1004'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign använder datascheman för att
 * Definiera länkar mellan olika dataobjekt i programmet Campaign.
 * Definiera och beskriva de enskilda fälten som ingår i varje objekt.
 
-Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i datamodellen [Campaign Classic](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
 
 ## Utöka eller skapa scheman {#extending-or-creating-schemas}
 
