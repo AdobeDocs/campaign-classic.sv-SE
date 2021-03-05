@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '495'
 ht-degree: 13%
 
 ---
@@ -67,7 +67,7 @@ Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfy
 
 ### Ställa in trötthetshantering med typologiregler
 
-I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic genom att utnyttja typologiregler.
+I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign genom att utnyttja typologiregler.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
@@ -78,7 +78,7 @@ I den här videon förklaras hur du implementerar trötthetshantering i Adobe Ca
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare utbildningsvideor för Campaign finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
 **Relaterat ämne**
 
