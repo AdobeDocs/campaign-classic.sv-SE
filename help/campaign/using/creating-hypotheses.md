@@ -2,14 +2,14 @@
 solution: Campaign Classic
 product: campaign
 title: Skapa hypoteser
-description: Skapa hypoteser
+description: Lär dig hur du skapar hypoteser i svarshanteraren för Campaign
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Det finns olika möjligheter att skapa/länka hypoteser till ett kampanjerbjudan
 
 Hypoeser kan bara beräknas när marknadsföringskampanjen har startats och mottagarna har fått leveransen. Om hypotesen bygger på ett erbjudande måste det åtminstone presenteras och fortfarande vara aktivt. Hypoteser om erbjudanden och leveranser skapas via mappen **[!UICONTROL Measurement hypotheses]** och baseras på en hypotesmall. Det är dock möjligt att hänvisa till en hypotes direkt i leveransen eller kampanjen innan kampanjen börjar. I det här fallet beräknas hypoteserna automatiskt när marknadsföringskampanjen startas, baserat på körningsinställningar (mer information finns i [Inställningar för körning av hypotesmall](../../campaign/using/hypothesis-templates.md#hypothesis-template-execution-settings)).
 
-## Skapa en hypotes i farten på en leverans {#creating-a-hypothesis-on-the-fly-on-a-delivery}
+## Skapa en hypotes direkt vid leverans {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
 Gör så här om du vill skapa en hypotes om en befintlig leverans:
 
@@ -80,7 +80,7 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
 
 Du kan referera till en hypotes i en marknadsföringskampanj innan den börjar. I det här fallet kommer hypotesen att startas automatiskt när leveransen skickas, baserat på de körningsinställningar som definierats i hypotesmallen. Gör så här om du vill skapa en hypotes i en leverans:
 
-1. Beroende på dina behov kan du skapa en eller flera **[!UICONTROL Delivery]**-typmallar enligt beskrivningen i [Skapa en hypotesmodell](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)
+1. Beroende på dina behov kan du skapa en eller flera **[!UICONTROL Delivery]**-typmallar, enligt beskrivningen i [det här avsnittet](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)
 1. Skapa en marknadsföringskampanj och arbetsflöden för målinriktning.
 1. Klicka på ikonen **[!UICONTROL Delivery measurement]** i leveransfönstret.
 1. Välj hypotesmallen (frågan som är konfigurerad i modellen visas i hypotesfönstret).
@@ -89,7 +89,7 @@ Du kan referera till en hypotes i en marknadsföringskampanj innan den börjar. 
 
    ![](assets/response_hypothesis_instance_creation_008.png)
 
-## Lägga till en standardhypotes i leveranser för en kampanj {#adding-a-default-hypothesis-to-deliveries-for-a-campaign}
+## Lägg till en standardhypotes i leveranser för en kampanj {#adding-a-default-hypothesis-to-deliveries-for-a-campaign}
 
 Ni kan hänvisa direkt till en hypotes på kampanjnivå. I det här fallet kommer hypotesen automatiskt att länkas till alla leveranser som skapats i kampanjen. Så här gör du:
 
@@ -108,13 +108,13 @@ Ni kan hänvisa direkt till en hypotes på kampanjnivå. I det här fallet komme
 
 Ögonblicksresultaten kan visas på flikarna **[!UICONTROL General]** och **[!UICONTROL Reactions]** i hypotesen (se [Avstavningsspårning](../../campaign/using/hypothesis-tracking.md))
 
-Mer information finns också i [Exempel: skapa en hypotes kopplad till en leverans](#example--creating-a-hypothesis-linked-to-a-delivery).
+Mer information finns också i [det här exemplet](#example--creating-a-hypothesis-linked-to-a-delivery).
 
 ## Skapa en hypotes om ett erbjudande {#creating-a-hypothesis-on-an-offer}
 
 Att skapa en hypotes om ett offertförslag liknar att skapa en hypotes på direkten. Hypotesen kan verkställas så länge som erbjudandet är aktivt. Beräkningsperioden baseras på offertens förslagsdatum. När hypotesen låter dig länka en mottagare till ett köp kan status för det erbjudande som sannolikt accepteras ändras automatiskt (mer information finns i [Transaktioner](../../campaign/using/hypothesis-templates.md#transactions)).
 
-1. Skapa en eller flera **[!UICONTROL Offer]**-typmodeller enligt beskrivningen i [Skapa en hypotesmodell](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
+1. Skapa en eller flera **[!UICONTROL Offer]**-typmodeller enligt beskrivningen i [det här avsnittet](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
 1. Gå till noden **[!UICONTROL Campaign management > Measurement hypotheses]**.
 1. Skapa en **[!UICONTROL Offers]**-typografi genom att välja den modell som skapades tidigare.
 
@@ -140,9 +140,9 @@ Att skapa en hypotes om ett offertförslag liknar att skapa en hypotes på direk
 
 ## Exempel: skapa en hypotes kopplad till en leverans {#example--creating-a-hypothesis-linked-to-a-delivery}
 
-I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Den här hypotesen kommer att baseras på den modell som skapats tidigare (se [Exempel: skapa en hypotesmall för en leverans](../../campaign/using/hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)). Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en hypotes om en viss artikel i inköpstabellen.
+I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Den här hypotesen kommer att baseras på den modell som skapats tidigare (se [det här exemplet](../../campaign/using/hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)). Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en hypotes om en viss artikel i inköpstabellen.
 
-1. Skapa en kampanj och en leverans (mer information finns i [Skapa en kampanj](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Skapa en kampanj och en leverans (mer information finns i [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
 
    Vi använder till exempel en direktutskick.
 
@@ -174,7 +174,7 @@ I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Den här 
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Starta målarbetsflödet och kör nödvändiga kontroller tills kampanjen är klar (mer information finns i [Starta en leverans](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)).
+1. Starta målarbetsflödet och kör de kontroller som krävs tills kampanjen är klar (mer information finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)).
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
