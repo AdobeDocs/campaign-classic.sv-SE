@@ -2,14 +2,14 @@
 solution: Campaign Classic
 product: campaign
 title: Beskrivning av Adobe Campaign Classic datamodell
-description: I det här dokumentet beskrivs Adobe Campaign Classic datamodell.
+description: I det här dokumentet beskrivs Adobe Campaign datamodell.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2374'
 ht-degree: 1%
 
 ---
