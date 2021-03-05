@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2391'
 ht-degree: 58%
 
 ---
@@ -237,10 +237,12 @@ ht-degree: 58%
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Få tillgång till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
    + Orkestrera kampanjer {#orchestrate-campaigns}
-      + [Ställ in marknadsföringskampanjer](campaign/using/setting-up-marketing-campaigns.md)
-      + [Mallar för marknadsföringskampanjer](campaign/using/marketing-campaign-templates.md)
-      + [Leveranser av marknadsföringskampanjer](campaign/using/marketing-campaign-deliveries.md)
-      + [Godkännande av marknadsföringskampanj](campaign/using/marketing-campaign-approval.md)
+      + [Kom igång med marknadsföringskampanjer](campaign/using/setting-up-marketing-campaigns.md)
+      + [Skapa och konfigurera mallar](campaign/using/marketing-campaign-templates.md)
+      + [Lägg till leveranser](campaign/using/marketing-campaign-deliveries.md)
+      + [Välj målgrupp](campaign/using/marketing-campaign-target.md)
+      + [Hantera dokument och resurser](campaign/using/marketing-campaign-assets.md)
+      + [Konfigurera och hantera godkännanden](campaign/using/marketing-campaign-approval.md)
       + [Övervaka era kampanjer](campaign/using/marketing-campaign-monitoring.md)
       + [Leverantörer, lager och budgetar](campaign/using/providers--stocks-and-budgets.md)
    + Uppgifter, resurser och budgetar {#tasks--resources-and-budgets}
