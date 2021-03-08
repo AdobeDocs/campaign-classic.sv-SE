@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1045'
 ht-degree: 1%
 
 ---
@@ -27,11 +27,11 @@ När du har anslutit till Adobe Campaign visas startsidan.
 
 ![](assets/campaign_global_view.png)
 
-Klicka på länkarna i navigeringsfältet för att komma åt de olika universum.
+Klicka på länkarna i navigeringsfältet för att komma åt de olika funktionerna.
 
-Kampanjelement finns i **[!UICONTROL Campaigns]**-universum: här kan du se en översikt över marknadsföringsprogram och -kampanjer samt deras undergrupper. Ett marknadsföringsprogram består av kampanjer, som består av leveranser, uppgifter, länkade resurser osv. När det gäller hantering av marknadsföringskampanjer med Campaign finns det information om leveranser, budgetar, granskare och länkade dokument i kampanjerna.
+Kampanjelement finns på fliken **[!UICONTROL Campaigns]**: här kan du se en översikt över marknadsföringsprogram och -kampanjer samt deras undergrupper. Ett marknadsföringsprogram består av kampanjer, som består av leveranser, uppgifter, länkade resurser osv. När det gäller hantering av marknadsföringskampanjer med Campaign finns det information om leveranser, budgetar, granskare och länkade dokument i kampanjerna.
 
-Navigeringsblocket för **[!UICONTROL Campaigns]**-universum erbjuder olika poster, beroende på vilka moduler som är installerade på instansen. Du kan till exempel få åtkomst till:
+**[!UICONTROL Browsing]**-blocket på fliken **[!UICONTROL Campaigns]** erbjuder olika poster, beroende på vilka moduler som är installerade på instansen. Du kan till exempel få åtkomst till:
 
 * **Kampanjkalender**: planeringskalender, marknadsföringsprogram, leveranser och kampanjer. Se [Kampanjkalender](#campaign-calendar).
 * **Kampanjer**: tillgång till kampanjer i alla marknadsföringsprogram.
@@ -46,7 +46,7 @@ Navigeringsblocket för **[!UICONTROL Campaigns]**-universum erbjuder olika post
 
 ### Kampanjkalender {#campaign-calendar}
 
-Varje kampanj tillhör ett program som i sin tur tillhör en plan. Planer, program och kampanjer nås via menyn **[!UICONTROL Campaign calendar]** i **Campaigns**-universum.
+Varje kampanj tillhör ett program som i sin tur tillhör en plan. Planer, program och kampanjer nås via menyn **[!UICONTROL Campaign calendar]** på fliken **Kampanjer**.
 
 Om du vill redigera en plan, ett program, en kampanj eller en leverans klickar du på namnet i kalendern och sedan på **[!UICONTROL Open...]**. Den visas sedan på en ny flik, enligt nedan:
 
@@ -95,7 +95,7 @@ Kampanjer kan nås via kampanjkalendern, fliken **[!UICONTROL Schedule]** i prog
    ![](assets/campaign_op_edit.png)
 
 1. Via fliken **[!UICONTROL Schedule]** i programmet är redigeringsläget detsamma som via kampanjkalendern.
-1. Klicka på namnet på den kampanj du vill redigera via länken **[!UICONTROL Campaigns]** för **[!UICONTROL Campaigns]**-universum.
+1. Klicka på namnet på den kampanj du vill redigera via länken **[!UICONTROL Campaigns]** på fliken **[!UICONTROL Campaigns]**.
 
    ![](assets/campaign_edit_from_list.png)
 
@@ -119,7 +119,7 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkänn
 
 #### Schemalägg {#schedule}
 
-En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global översikt över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
+En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global vy över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
 
 ![](assets/campaign_planning_tab.png)
 
