@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
 * Aktiviteten är endast tillgänglig för fjärrdatakällor. Paketet **[!UICONTROL FDA]** (Federated Data Access) måste därför installeras på din instans. [Läs mer](../../installation/using/about-fda.md).
 * Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas. [Läs mer](../../configuration/using/about-schema-reference.md).
-* Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven behörighet. [Läs mer](../../platform/using/access-management.md#named-rights).
+* Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven behörighet. [Läs mer](../../platform/using/access-management-named-rights.md).
 
 ## Konfigurera SQL Data Management-aktiviteten {#configuring-the-sql-data-management-activity}
 
