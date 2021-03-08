@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Mer information om hur du lägger till en mall finns i [Globala alternativ](../.
 
 När du har konfigurerat en leverans kan du spara den som en mall och återanvända den för framtida leveranser.
 
-Öppna den valda leveransen i **Campaigns**-universum. Klicka på knappen **Spara som mall**, ge mallen ett namn och spara sedan.
+Öppna den valda leveransen på fliken **Kampanjer**. Klicka på knappen **Spara som mall**, ge mallen ett namn och spara sedan.
 
 ![](assets/dce_save_model.png)
 
