@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1383'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ För varje marknadsföringsresurs som hanteras via Adobe Campaign kan du när so
 
 ## Lägga till en marknadsföringsresurs {#adding-a-marketing-resource}
 
-Marknadsföringsresurser nås via Campaigns-universum.
+Marknadsföringsresurser nås via fliken **[!UICONTROL Campaigns]**.
 
 Klicka på knappen **[!UICONTROL Create]** om du vill lägga till en resurs.
 
