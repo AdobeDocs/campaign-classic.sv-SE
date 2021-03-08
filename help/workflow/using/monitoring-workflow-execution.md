@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Arbetstabellerna i arbetsflödet tas bort automatiskt när arbetsflödet försä
 
 ## Hantera fel {#managing-errors}
 
-När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar. I arbetsflödesöversikten (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** link) kan du visa arbetsflöden med enbart fel, vilket visas nedan.
+När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar. I arbetsflödesöversikten, under fliken **[!UICONTROL Monitoring]** - **[!UICONTROL Workflows]**, kan du endast visa arbetsflöden med fel, vilket visas nedan.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ Om det är möjligt rekommenderar vi att du startar om arbetsflödet när du har
 
 På sidan **[!UICONTROL Instance supervision]** kan du visa Adobe Campaign serveraktivitet och visa en lista över arbetsflöden och leveranser med fel.
 
-Gå till universum **[!UICONTROL Monitoring]** och klicka på länken **[!UICONTROL General view]** för att komma åt den här sidan.
+Gå till fliken **[!UICONTROL Monitoring]** och klicka på länken **[!UICONTROL General view]** för att komma åt sidan.
 
 ![](assets/wf-monitoring_from-homepage.png)
 
