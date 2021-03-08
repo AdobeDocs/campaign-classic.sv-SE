@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 58%
+source-wordcount: '2412'
+ht-degree: 57%
 
 ---
 
@@ -94,7 +94,11 @@ ht-degree: 58%
       + [Steg för att skapa en fråga](platform/using/steps-to-create-a-query.md)
       + [Definiera filtervillkor](platform/using/defining-filter-conditions.md)
    + Behörigheter {#permissions}
-      + [Åtkomsthantering](platform/using/access-management.md)
+      + [Kom igång med behörigheter](platform/using/access-management.md)
+      + [Skapa och hantera operatorer](platform/using/access-management-operators.md)
+      + [Skapa och hantera grupper](platform/using/access-management-groups.md)
+      + [Använd namngivna rättigheter för att ställa in behörigheter](platform/using/access-management-named-rights.md)
+      + [Hantera åtkomst till mappar](platform/using/access-management-folders.md)
    + Datapaket och uppräkningar {#administration-basics}
       + [Datapaket](platform/using/working-with-data-packages.md)
       + [Uppräkningar](platform/using/managing-enumerations.md)
