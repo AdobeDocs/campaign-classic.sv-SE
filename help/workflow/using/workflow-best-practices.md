@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 5%
@@ -120,7 +120,7 @@ I arbetsflödesegenskaperna väljer du en supervisor-grupp, antingen standardgru
 
 Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. Mer information finns i [Hantera fel](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Kontrollera regelbundet **[!UICONTROL Monitoring]**-universum för att se den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Kontrollera regelbundet fliken **[!UICONTROL Monitoring]** för att visa den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
 Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Mer information finns i [Arbetsflödesövervakning](../../workflow/using/heatmap.md).
 
