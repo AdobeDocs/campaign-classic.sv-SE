@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Möjliga alternativ är:
 
 * **[!UICONTROL Anonymous access]**: det här alternativet ger obegränsad åtkomst till rapporten. Det går dock inte att manipulera något.
 
-   Rättigheterna för den tekniska operatorn &#39;webapp&#39; används för att visa rapportelement. Läs mer [i det här avsnittet](../../platform/using/access-management.md#default-operators).
+   Behörigheter för den tekniska operatorn&quot;webbapp&quot; används för att visa rapportelement. Läs mer [i det här avsnittet](../../platform/using/access-management-operators.md).
 
 * **[!UICONTROL Access control]**: Med det här alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
 * **[!UICONTROL Specific account]**: Med det här alternativet kan du köra rapporten med rättigheter för den operator som är vald i  **[!UICONTROL Operator]** fältet.
