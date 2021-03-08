@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -143,7 +143,7 @@ Slutligen kan du konfigurera en kostnadsberäkning utifrån det totala antalet m
 
 Du kan associera information om processerna som är kopplade till tjänsten via fliken **[!UICONTROL Processes]**.
 
-Om du vill göra det klickar du på fliken **[!UICONTROL Processes]** för att konfigurera överföring av information till routern.
+Det gör du genom att klicka på fliken **[!UICONTROL Processes]** för att konfigurera överföring av information till routern.
 
 ![](assets/s_ncs_user_supplier_node_02.png)
 
@@ -206,7 +206,7 @@ Förfarandet för att upprätta lager- och orderhantering i Adobe Campaign samt 
 
 ### Stock-hantering {#stock-management}
 
-Adobe Campaign kan meddela en grupp operatorer om beståndet har tagit slut eller uppnått ett minimivärde. Stock-nivåer är tillgängliga via länken **[!UICONTROL Stocks]** i **[!UICONTROL Campaigns]**-universum via länken **[!UICONTROL Other choices]** i navigeringsområdet.
+Adobe Campaign kan meddela en grupp operatorer om beståndet har tagit slut eller uppnått ett minimivärde. Stock-nivåer är tillgängliga via länken **[!UICONTROL Stocks]** på fliken **[!UICONTROL Campaigns]** via länken **[!UICONTROL Other choices]** i navigeringsområdet.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
