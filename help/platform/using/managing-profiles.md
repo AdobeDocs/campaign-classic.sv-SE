@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Varje nod sammanfaller med en mapp. Data från varje mapp måste anses vara part
 
 >[!NOTE]
 >
->Om du vill visa listan över alla mottagare i databasen måste du skapa en vy. Se [Mappar och vyer](../../platform/using/access-management.md#folders-and-views).
+>Om du vill visa listan över alla mottagare i databasen måste du skapa en vy. Läs mer i [Mappar och vyer](../../platform/using/access-management-folders.md).
 
 ## Flyttar mottagare {#moving-recipients}
 
