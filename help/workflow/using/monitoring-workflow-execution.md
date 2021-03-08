@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -271,7 +271,7 @@ Så här gör du:
 
 1. Högerklicka på den mapp där du vill lägga till vyn.
 1. I **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]** väljer du den vy som du vill lägga till.
-1. När mappen har lagts till i trädet måste du konfigurera den som en vy, så att alla arbetsflöden visas, oavsett ursprungsmapp.Mer information om hur du konfigurerar vyer finns i [det här avsnittet](../../platform/using/access-management.md#adding-folders-and-creating-views).
+1. När mappen har lagts till i trädet måste du konfigurera den som en vy, så att alla arbetsflöden visas, oavsett ursprungsmapp.Mer information om hur du konfigurerar vyer finns i [det här avsnittet](../../platform/using/access-management-folders.md).
 
 Utöver dessa vyer kan du skapa filtermappar så att du kan filtrera listan med arbetsflöden utifrån deras körningsstatus. Så här gör du:
 
