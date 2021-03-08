@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -39,7 +39,7 @@ På fliken **[!UICONTROL Edit]** klickar du på länken **[!UICONTROL Advanced c
 
 Välj webbgränssnittet **Efter formulär**. Med den här typen av gränssnitt kan du skapa anpassningsfält som ska användas av lokala enheter när du beställer en kampanj. Se [Skapa en lokal kampanj (efter formulär)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
-Spara kampanjen. Du kan nu använda den från vyn **Campaign packages** i **Campaign**-universum genom att klicka på knappen **[!UICONTROL Create]**.
+Spara kampanjen. Du kan nu använda den från vyn **Kampanjpaket** på fliken **Kampanj** genom att klicka på knappen **[!UICONTROL Create]**.
 
 I vyn **[!UICONTROL Campaign Package]** kan du använda lokala kampanjmallar (körklara eller duplicerade) samt referenskampanjer för samarbetskampanjer, i syfte att skapa kampanjer för olika organisationsenheter.
 
@@ -93,7 +93,7 @@ Lägg till ett fält för varje lokal enhet och ange värdet på fliken **[!UICO
 
 Du kan lägga till en andra **målgodkännande** efter **leveransaktiviteten** för att konfigurera en rapport för den.
 
-I meddelandet om att kampanjen har skapats får den lokala enheten en kontaktlista som har fördefinierats av de centrala enhetsparametrarna.
+I meddelandet om att kampanjen har skapats får den lokala enheten en kontaktlista som har fördefinierats av parametrarna för den centrala enheten.
 
 ![](assets/mkg_dist_mutual_op_by_valid1.png)
 
@@ -131,7 +131,7 @@ För **samarbetskampanjer** måste den centrala enheten ange deadline för regis
 
 ### Målgrupp {#audience}
 
-Den centrala enheten måste ange vilka lokala enheter som deltar per kampanj så snart en samarbetskampanj har skapats.
+Den centrala enheten måste specificera de lokala enheter som är inblandade per kampanj så snart en samarbetskampanj har skapats.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry2.png)
 
