@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -616,7 +616,7 @@ Alla standardrapporter använder för närvarande återgivningsmotorn v6.x. Om d
 
 ### Personaliserade rapporter {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ Det finns två webbprogramfamiljer:
 
 ### Identifierade webbprogram {#identified-web-applications}
 
-Precis som för rapporter (se [Rapporter](#reports)) måste du, om du har lagt till JavaScript, kontrollera och anpassa om det behövs. Om du vill använda den blå v7-banderollen (som innehåller universum) måste du publicera webbprogrammet igen. Om JavaScript-koden fungerar kan du välja v6.x-återgivningsmotorn. Om så inte är fallet kan du använda v6.0-renderingsmotorn när du anpassar koden och sedan använda v6.x-renderingsmotorn.
+Precis som för rapporter ([läs mer](#reports)) måste du kontrollera och anpassa om du har lagt till JavaScript. Om du vill använda den blå v7-banderollen (som innehåller de blå flikarna) måste du publicera webbprogrammet igen. Om JavaScript-koden fungerar kan du välja v6.x-återgivningsmotorn. Om så inte är fallet kan du använda v6.0-renderingsmotorn när du anpassar koden och sedan använda v6.x-renderingsmotorn.
 
 >[!NOTE]
 Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
