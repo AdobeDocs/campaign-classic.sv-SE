@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Innan du startar en migreringsprocess måste du **säkerhetskopiera dina data.**
 
 ### Miljö {#environment}
 
-* Det går inte att ändra databasmotortypen (DBMS). Du kan till exempel inte växla från en PostgreSQL-motor till en Oracle-motor. Du kan dock växla från en Oracle 8-motor till en Oracle 10-motor.
+* Det går inte att ändra databasmotortypen (DBMS). Du kan till exempel inte växla från en PostgreSQL-motor till en Oraclena motor. Du kan dock växla från en Oracle 8-motor till en Oracle 10-motor.
 * Det går inte att gå från en icke-Unicode-databas till en Unicode-databas.
 
 ### Rekommendation {#recommendation}
@@ -77,5 +77,5 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier) och [Om behörigheter](../../platform/using/access-management.md#about-permissions).
+>Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md).
 
