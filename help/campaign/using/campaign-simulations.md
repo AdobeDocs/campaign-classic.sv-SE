@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1242'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Med simulering kan du övervaka och jämföra effekterna av leveranser.
 
 Så här skapar du en simulering:
 
-1. Gå till **[!UICONTROL Campaigns]**-universum, klicka på länken **[!UICONTROL More]** i **[!UICONTROL Create]**-avsnittet och välj alternativet **[!UICONTROL Simulation]**.
+1. Öppna fliken **[!UICONTROL Campaigns]**, klicka på länken **[!UICONTROL More]** i **[!UICONTROL Create]**-avsnittet och välj alternativet **[!UICONTROL Simulation]**.
 
    ![](assets/simu_campaign_opti_01.png)
 
