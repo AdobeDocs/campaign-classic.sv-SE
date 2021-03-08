@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '138'
 ht-degree: 4%
 
 ---
@@ -28,4 +28,4 @@ När de har samlats in delas händelser upp, efter tekniska arbetsflöden, mella
 
 >[!NOTE]
 >
->I körningsinstanserna får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer eftersom detta kan leda till [åtkomstproblem](../../platform/using/access-management.md#about-permissions). Mer information om hur du anger en mapp som en vy finns i [Om vyer](../../platform/using/access-management.md#about-views).
+>I körningsinstanserna får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer eftersom detta kan leda till problem med åtkomst. Mer information om hur du anger en mapp som en vy finns i [det här avsnittet](../../platform/using/access-management-folders.md).
