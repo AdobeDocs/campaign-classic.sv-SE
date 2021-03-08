@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande.
 
 Så här kör du en simulering av dina erbjudanden:
 
-1. Klicka på länken **[!UICONTROL Simulations]** i **[!UICONTROL Profiles and Targets]**-universum och klicka sedan på knappen **[!UICONTROL Create]**.
+1. Klicka på länken **[!UICONTROL Simulations]** på fliken **[!UICONTROL Profiles and Targets]** och klicka sedan på knappen **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
@@ -50,7 +50,7 @@ Så här kör du en simulering av dina erbjudanden:
 
    ![](assets/offer_simulation_004.png)
 
-1. Lägg till rapporteringsaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
+1. Lägg till rapportaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
 
    Mer information finns i [Lägga till rapporteringsaxlar](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
