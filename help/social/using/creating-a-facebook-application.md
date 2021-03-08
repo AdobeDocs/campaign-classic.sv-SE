@@ -7,7 +7,7 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -109,7 +109,7 @@ Konfigurationsstegen är följande:
 
 Med Adobe Campaign Facebook-programmet kan du visa anpassat innehåll i ditt Facebook-program. För varje Facebook-program måste du skapa ett webbprogram i Adobe Campaign. Så här skapar du ett Facebook-webbprogram:
 
-1. Gå till **[!UICONTROL Social networks]**-universum, klicka på länken **[!UICONTROL Applications]** och sedan på knappen **[!UICONTROL Create]**.
+1. Gå till fliken **[!UICONTROL Social networks]**, klicka på länken **[!UICONTROL Applications]** och sedan på knappen **[!UICONTROL Create]**.
 
    ![](assets/social_webapp_001.png)
 
