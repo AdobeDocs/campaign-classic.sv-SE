@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
 workflow-type: tm+mt
-source-wordcount: '4092'
-ht-degree: 95%
+source-wordcount: '4151'
+ht-degree: 93%
 
 ---
 
@@ -22,6 +22,15 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## Mars 2021 {#march-2021}
+
+[kapitlet om behörighetshantering](../../platform/using/access-management.md) har förbättrats och delats upp i avsnitt, inklusive information om [operatorer](../../platform/using/access-management-operators.md), [operatorgrupper](../../platform/using/access-management-groups.md), [Namngivna rättigheter](../../platform/using/access-management-named-rights.md) och [Mapphantering](../../platform/using/access-management-folders.md).
+
+Lär dig hur du skapar och hanterar kampanjer via dessa nya sidor:
+* [Skapa och konfigurera kampanjmallar](../../campaign/using/marketing-campaign-templates.md)
+* [Leveranser av marknadsföringskampanjer](../../campaign/using/marketing-campaign-deliveries.md)
+* [Välj målgrupp för era kampanjer](../../campaign/using/marketing-campaign-target.md)
+* [Hantera associerade dokument](../../campaign/using/marketing-campaign-assets.md)
+* [Ställ in och hantera godkännandeprocessen](../../campaign/using/marketing-campaign-approval.md)
 
 Information har lagts till i **[!UICONTROL Advanced JavaScript]**-aktivitetsavsnittet om hur du använder metoden task.setCompleted() för att avsluta aktiviteten och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
