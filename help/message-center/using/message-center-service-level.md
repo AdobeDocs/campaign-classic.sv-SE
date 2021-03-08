@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # Tjänstenivå för meddelandecentret{#message-center-service-level}
 
-Den här rapporten innehåller leveransstatistik för transaktionsmeddelanden samt felinformation. Du kan klicka på en feltyp för att visa information om den. Den här rapporten, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]**-universum i kontrollinstansen.
+Den här rapporten innehåller leveransstatistik för transaktionsmeddelanden samt felinformation. Du kan klicka på en feltyp för att visa information om den. Den här rapporten, som riktar sig till tekniska administratörer, kan också nås via fliken **[!UICONTROL Monitoring]** i kontrollinstansen.
 
 ![](assets/mc_reports_1.png)
 
