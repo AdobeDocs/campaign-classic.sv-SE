@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '4092'
 ht-degree: 95%
@@ -287,7 +287,7 @@ Ett användningsfall har lagts till om hur du kan integrera ett dynamiskt erbjud
 
 Ett nytt avsnitt finns nu tillgängligt som beskriver de olika språk som finns i Adobe Campaign. [Läs mer](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Riktlinjerna för åtkomsthantering har uppdaterats med mer information om namngivna rättigheter. [Läs mer](../../platform/using/access-management.md#named-rights)
+Riktlinjerna för åtkomsthantering har uppdaterats med mer information om namngivna rättigheter. [Läs mer](../../platform/using/access-management-named-rights.md)
 
 ## Februari 2020 {#february-2020}
 
@@ -405,7 +405,7 @@ En varning har lagts till i avsnitten [Multiplexering av mid-sourcing-servern](.
 
 Ett nytt avsnitt har lagts till som beskriver hur man forcerar teckenkodningen som används för att skicka e-postmeddelanden. [Läs mer](../../delivery/using/sending-messages.md#character-encoding)
 
-Avsnittet Åtkomsthantering har uppdaterats med **Rättigheten till personuppgifter**. [Läs mer](../../platform/using/access-management.md#named-rights)
+Avsnittet Åtkomsthantering har uppdaterats med **Rättigheten till personuppgifter**. [Läs mer](../../platform/using/access-management-named-rights.md)
 
 Information har lagts till för att specificera att innehåll i personaliseringsfält högst får innehålla 1 024 tecken. [Läs mer](../../delivery/using/personalization-fields.md)
 
