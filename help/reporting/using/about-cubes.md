@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -89,7 +89,7 @@ Kuber lagras i noden **[!UICONTROL Administration > Configuration > Cubes]**.
 
 De huvudsakliga användningsområdena för kuber är följande:
 
-* Dataexport kan utföras direkt i en rapport som utformats i **[!UICONTROL Reports]**-universum för Adobe Campaign-plattformen.
+* Dataexport kan utföras direkt i en rapport som är utformad på fliken **[!UICONTROL Reports]** på Adobe Campaign-plattformen.
 
    Om du vill göra det skapar du en ny rapport och väljer den kub som du vill använda.
 
