@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1564'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ Hitta leveransens HTML. I **[!UICONTROL Delivery > Current order > Additional fi
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Spara kampanjmallen. Nu kan du använda den från vyn **Campaign packages** i **Campaigns**-universum genom att klicka på knappen **[!UICONTROL Create]**.
+Spara kampanjmallen. Du kan nu använda den från vyn **[!UICONTROL Campaign packages]** på fliken **[!UICONTROL Campaigns]** genom att klicka på knappen **[!UICONTROL Create]**.
 
 ![](assets/mkt_distr_9.png)
 
@@ -270,7 +270,7 @@ Så här beställer du en kampanj:
 
    Mer information finns i avsnittet [Godkännandeprocess](#approval-process).
 
-1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgänglighet finns i listan över kampanjpaket i **Campaigns**-universum. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](../../campaign/using/accessing-campaigns.md).
+1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgängligheten finns i listan över kampanjpaket på fliken **Kampanjer**. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](../../campaign/using/accessing-campaigns.md).
 
    Med alternativet **[!UICONTROL Start targeting with order approval]** kan den lokala enheten köra kampanjen så snart ordern har godkänts.
 
@@ -280,7 +280,7 @@ Så här beställer du en kampanj:
 
 Den centrala enheten måste godkänna en kampanjorder för att bekräfta den.
 
-Med översikten **[!UICONTROL Campaign orders]**, som nås via **Campaigns**-universum, kan du visa status för kampanjorder och godkänna dem.
+Med översikten **[!UICONTROL Campaign orders]**, som nås via fliken **Kampanjer**, kan du visa status för kampanjorder och godkänna dem.
 
 >[!NOTE]
 >
