@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Du kan spåra leveransen via olika rapporter som du når via leveransöversikten. Gör så här för att visa rapporter:
 
-1. Gå till **[!UICONTROL Campaigns]**-universum och klicka på länken **[!UICONTROL Delivery]** för att visa listan över leveranser.
+1. Gå till fliken **[!UICONTROL Campaigns]** och klicka på länken **[!UICONTROL Delivery]** för att visa listan över leveranser.
 1. Klicka på namnet på den leverans som du vill visa för att visa informationen.
 
    ![](assets/s_ncs_user_detailled_report.png)
