@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 2%
 >
 >* Schematillägg som gjorts i scheman som används av [Message Center tekniska arbetsflöden](../../message-center/using/technical-workflows.md) för antingen kontroll- eller körningsinstanser måste dupliceras i de andra instanser som används av Adobe Campaign transaktionsmeddelandemodul.
 >* Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
+
 >
 
 
@@ -72,7 +73,7 @@ Så här skapar du ett externt konto av instanstypen körning:
 
    >[!NOTE]
    >
-   >Observera att när du använder FDA över HTTP stöds endast körningsinstanser med en PostgreSQL-databas. MSSQL- eller Oracle-databaser stöds inte.
+   >Observera att när du använder FDA över HTTP stöds endast körningsinstanser med en PostgreSQL-databas. MSSQL- eller Oraclena-databaser stöds inte.
 
    Den andra metoden rekommenderas om kontrollinstansen har direktåtkomst till databasen för körningsinstanserna. Välj i annat fall webbtjänståtkomst. Det FDA-konto som ska anges sammanfaller med anslutningen till databaserna för de olika körningsinstanserna som skapas i kontrollinstansen.
 
@@ -137,11 +138,11 @@ I trädet för alla körningsinstanser skapar du en mapp per operator (**Mapp 1*
 
 Om du vill använda flera kontrollinstanser måste den här konfigurationen utföras på ALLA körningsinstanser.
 
-1. Skapa en mapp per operator i noden **[!UICONTROL Administration > Production > Message Center]**: **Mapp 1** och **Mapp 2**. Mer information om hur du skapar mappar och vyer finns i [Plattform](../../platform/using/access-management.md#folders-and-views).
+1. Skapa en mapp per operator i noden **[!UICONTROL Administration > Production > Message Center]**: **Mapp 1** och **Mapp 2**. Mer information om hur du skapar mappar och vyer finns på [den här sidan](../../platform/using/access-management-folders.md).
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Skapa operatorerna **mc1** och **mc2** genom att duplicera operatorn för meddelandecenter som anges som standard (**mc**). Mer information om hur du skapar operatorer finns i [det här avsnittet](../../platform/using/access-management.md#operators).
+1. Skapa operatorerna **mc1** och **mc2** genom att duplicera operatorn för meddelandecenter som anges som standard (**mc**). Mer information om hur du skapar operatorer finns i [det här avsnittet](../../platform/using/access-management-operators.md).
 
    ![](assets/messagecenter_multi_control_4.png)
 
