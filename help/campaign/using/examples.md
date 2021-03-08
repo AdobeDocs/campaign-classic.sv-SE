@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 #### Publicera kampanjen {#publishing-the-campaign}
 
-Nu kan du lägga till ett **kampanjpaket** från **Campaigns**-universum.
+Du kan nu lägga till ett **kampanjpaket** från fliken **[!UICONTROL Campaigns]**.
 
 1. Välj din **[!UICONTROL Reference campaign]**. På fliken **[!UICONTROL Edit]** i ditt paket kan du välja **[!UICONTROL Approval mode]** som ska användas för din kampanj:
 
