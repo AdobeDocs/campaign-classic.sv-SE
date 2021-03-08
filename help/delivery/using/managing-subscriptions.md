@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Det finns tre olika sätt att prenumerera på/ta bort abonnemang:
 
 Du kan skapa och hantera prenumerationer på informationstjänster med tillhörande bekräftelsemeddelanden eller automatiska leveranser till prenumeranter.
 
-Om du vill komma åt informationstjänstkartan går du till **[!UICONTROL Profiles and Targets]**-universum och klickar på länken **[!UICONTROL Services and Subscriptions]**.
+Öppna fliken **[!UICONTROL Profiles and Targets]** och klicka på länken **[!UICONTROL Services and Subscriptions]** för att komma åt informationstjänstkartan.
 
 ![](assets/s_ncs_user_services_new.png)
 
