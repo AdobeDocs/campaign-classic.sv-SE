@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De måste också mappas till namngivna rättigheter som sammanfaller med de åtg
 
 Mer information om hur du hanterar operatorer och behörigheter finns i [avsnittet](../../platform/using/access-management.md).
 
-## Operatorgrupper {#operator-groups}
+## Operatorgrupper {#operator-groups-wf}
 
 Följande operatorgrupper är kopplade till arbetsflödet:
 
