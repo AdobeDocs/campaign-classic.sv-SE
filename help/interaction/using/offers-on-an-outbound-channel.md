@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
@@ -64,7 +64,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
 ## Simulera erbjudanden {#perform-an-offer-simulation}
 
-1. Klicka på länken **[!UICONTROL Simulations]** i **[!UICONTROL Profiles and Targets]**-universum och klicka sedan på knappen **[!UICONTROL Create]**.
+1. Klicka på länken **[!UICONTROL Simulations]** på fliken **[!UICONTROL Profiles and Targets]** och klicka sedan på knappen **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
