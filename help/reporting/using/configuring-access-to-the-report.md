@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Definiera rapportens visningssammanhang på Adobe Campaign-plattformen med hjäl
 
 * **[!UICONTROL Single selection]** : rapporten är bara tillgänglig när en viss enhet har valts.
 * **[!UICONTROL Multiple selection]** : rapporten nås när flera enheter väljs.
-* **[!UICONTROL Global]** : rapporten hämtas via en lista över tillgängliga rapporter i rapportuniversum.
+* **[!UICONTROL Global]** : rapporten öppnas via en lista med tillgängliga rapporter på  **[!UICONTROL Reports]** fliken.
 
 ### Visningssekvens {#display-sequence}
 
@@ -63,7 +63,7 @@ Rapporten kan också delas med specifika operatorer eller grupper av operatorer 
 
 ### Definiera filtreringsalternativen {#defining-the-filtering-options}
 
-Universum **[!UICONTROL Reports]** visar alla tillgängliga rapporter på plattformen och för vilka den anslutna operatorn har åtkomstbehörighet.
+På fliken **[!UICONTROL Reports]** visas alla tillgängliga rapporter på plattformen och för vilka den anslutna operatorn har åtkomstbehörighet.
 
 Som standard sorteras de efter relevans, men du kan använda andra typer av filter: i bokstavsordning, efter ålder osv.
 
