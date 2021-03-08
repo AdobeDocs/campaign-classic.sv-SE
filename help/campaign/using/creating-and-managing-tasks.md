@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3732'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Uppgifter kan skapas, visas och övervakas från listan med uppgifter eller kont
 
 Aktiviteter är kopplade till kampanjen och kan ha beroenden, dvs. associerade uppgifter. Varje uppgift har en status, prioritet, uppskattad belastning och relaterade kostnader.
 
-Alla uppgifter grupperas i en lista som är tillgänglig via **Campaigns**-universum. Mer information finns i [Åtkomst till uppgifter](#accessing-tasks).
+Alla uppgifter grupperas i en lista som är tillgänglig via fliken **Kampanjer**. Mer information finns i [Åtkomst till uppgifter](#accessing-tasks).
 
 De kan visas i schemat för det program de tillhör.
 
@@ -35,7 +35,7 @@ De kan visas i schemat för det program de tillhör.
 
 ### Visa uppgifter {#displaying-tasks}
 
-Uppgifterna visas i uppgiftslistan som är tillgängliga via **[!UICONTROL Campaigns]**-universum.
+Uppgifterna visas i uppgiftslistan som du kommer åt via fliken **[!UICONTROL Campaigns]**.
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
@@ -57,7 +57,7 @@ Klicka på en uppgift för att redigera den.
 
 ## Skapar en ny aktivitet {#creating-a-new-task}
 
-Om du vill skapa en uppgift klickar du på länken **[!UICONTROL Tasks]** i Campaigns-universum och väljer **[!UICONTROL Create]**.
+Om du vill skapa en uppgift klickar du på länken **[!UICONTROL Tasks]** på fliken **[!UICONTROL Campaigns]** och väljer **[!UICONTROL Create]**.
 
 ![](assets/s_ncs_user_task_create_new.png)
 
