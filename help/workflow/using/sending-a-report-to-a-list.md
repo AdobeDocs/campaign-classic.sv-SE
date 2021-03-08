@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -29,7 +29,7 @@ De viktigaste implementeringsstegen för det här användningsexemplet är:
 
 ## Steg 1: Skapar mottagarlistan {#step-1--creating-the-recipient-list}
 
-Gå till **[!UICONTROL Profiles and targets]**-universum, klicka på länken **[!UICONTROL Lists]** och sedan på knappen **[!UICONTROL Create]**. Välj **[!UICONTROL New list]** och skapa en ny mottagarlista för rapporten som ska skickas till.
+Gå till fliken **[!UICONTROL Profiles and targets]**, klicka på länken **[!UICONTROL Lists]** och sedan på knappen **[!UICONTROL Create]**. Välj **[!UICONTROL New list]** och skapa en ny mottagarlista för rapporten som ska skickas till.
 
 ![](assets/use_case_report_1.png)
 
