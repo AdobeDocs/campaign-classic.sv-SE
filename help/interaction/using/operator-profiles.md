@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Det finns två typer av operatorer som använder Interaction: erbjuder chefer oc
 * **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i operatorgruppen **[!UICONTROL Administrator]** eller **[!UICONTROL Offer managers]** för att arbetsflödet ska kunna köras.
 * **[!UICONTROL Delivery manager]** : godkänner och använder erbjudanden
 
-Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Mer information om detta finns i [det här avsnittet](../../platform/using/access-management.md#creating-an-operator). Rättigheterna konfigureras när operatorn skapas.
+Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Mer information om detta finns i [det här avsnittet](../../platform/using/access-management.md). Rättigheterna konfigureras när operatorn skapas.
 
 ## Erbjudandehanteraren {#offer-manager}
 
