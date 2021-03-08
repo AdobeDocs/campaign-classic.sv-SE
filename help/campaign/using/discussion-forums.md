@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -95,7 +95,7 @@ Genom att prenumerera på ett forum kan du följa diskussioner. Du får ett e-po
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Mer information om personliga instrumentpaneler finns i [det här avsnittet](../../platform/using/access-management.md#operators).
+   Mer information om personliga instrumentpaneler finns i [det här avsnittet](../../platform/using/access-management-operators.md).
 
 * Om du vill se vem som prenumererar på ett forum klickar du på länken **[!UICONTROL List of subscribers to this discussion forum]** ovanför listan med meddelanden.
 
