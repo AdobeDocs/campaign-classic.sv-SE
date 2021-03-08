@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -191,7 +191,7 @@ Läs mer i [kompatibilitetsmatrisen i Campaign](https://helpx.adobe.com/se/campa
 
 * Du kan inte längre använda ditt eget Litmus-konto för att etablera och använda Inkorgsåtergivning i Adobe Campaign. [Läs mer](../../delivery/using/inbox-rendering.md).
 
-* Färgen på visningsnamnen har ändrats från mörkblått till mörk cyan för att göra det lättare att skilja vyer från mappar. [Läs mer](../../platform/using/access-management.md#about-views)
+* Färgen på visningsnamnen har ändrats från mörkblått till mörk cyan för att göra det lättare att skilja vyer från mappar. [Läs mer](../../platform/using/access-management-folders.md)
 
 * Campaign Classic kan nu anslutas till Microsoft Dynamics CRM-konton i Storbritannien, Indien och Kanada. Detta gäller driftsättningstyperna Office 365 och lokalt (Dynamics 2015).
 
