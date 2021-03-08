@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 94%
 
 ---
 
@@ -74,7 +74,7 @@ I de fall där medgivande behövs för vissa marknadsföringsaktiviteter måste 
 
 Det kan till och med finnas tillfällen då vissa medgivanden behöver uppdateras för att kunna fortsätta använda data i framtiden.
 
-I stället för att tänka på dessa ökade krav på medgivande som en risk för storleken på marknadsföringen bör marknadsförare använda dem som en indikator på verkligt varumärkesengagemang och varumärkeslojalitet lika väl som kundnöjdhet och förtroende.
+Marknadsförarna bör ta hänsyn till dessa krav på ökat medgivande som en sann indikator på varumärkesengagemang och varumärkeslojalitet, samt på kundnöjdhet och förtroende.
 
 ## Hantera medgivande {#manage-consent}
 
