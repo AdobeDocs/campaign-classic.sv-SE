@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -121,7 +121,7 @@ När kuben har konfigurerats kan den användas som mall för att skapa en ny rap
 
 Så här gör du:
 
-1. Klicka på **[!UICONTROL Create]**-knappen för **[!UICONTROL Reports]**-universum och välj den kub du just har skapat.
+1. Klicka på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Reports]** och välj den kub du just har skapat.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
