@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 17%
@@ -83,7 +83,7 @@ Den allmänna layouten för Adobe Campaign Explorer visas i [Använda Adobe Camp
 >
 >Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [Använda Adobe Campaign Utforskaren](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
->Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [Mappar och vyer](../../platform/using/access-management.md#folders-and-views).
+>Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [Mappar och vyer](../../platform/using/access-management-folders.md).
 
 ## Aktiva profiler {#active-profiles}
 
