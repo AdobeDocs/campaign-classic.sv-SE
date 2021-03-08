@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2958'
+source-wordcount: '2960'
 ht-degree: 0%
 
 ---
@@ -291,7 +291,7 @@ I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data sk
 
       >[!NOTE]
       >
-      >Standardmappen för en operator är den första mappen som operatorn har skrivåtkomst till. Se [Hantering av mappåtkomst](../../platform/using/access-management.md#folder-access-management).
+      >Standardmappen för en operator är den första mappen som operatorn har skrivåtkomst till. Läs mer i [Hantering av mappåtkomst](../../platform/using/access-management-folders.md).
 
       Om du vill välja importmappen klickar du på pilen till höger om fältet **[!UICONTROL Folder]** och väljer den aktuella mappen. Du kan också använda ikonen **[!UICONTROL Select link]** för att visa trädet i ett nytt fönster eller skapa en ny mapp.
 
