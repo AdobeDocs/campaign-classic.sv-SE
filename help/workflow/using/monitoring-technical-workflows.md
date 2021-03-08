@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -23,7 +23,7 @@ Ytterligare sätt att övervaka de olika Campaign-processerna presenteras på [d
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-Instansövervakningens kontrollpanel kan nås via **[!UICONTROL Monitoring]**-universum.
+Instansövervakningens kontrollpanel kan nås via fliken **[!UICONTROL Monitoring]**.
 
 ![](assets/monitoring_technical_workflows1.png)
 
