@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ På så sätt kan de
 
 ## Filterpaket {#filter-packages}
 
-Från **[!UICONTROL Campaigns universe]** kan du visa listan **[!UICONTROL Campaign packages]** som grupperar alla befintliga distribuerade marknadsföringskampanjer. Du kan filtrera den här listan så att den endast visar kampanjer som antingen är publicerade, sena, väntar på godkännande osv. Det gör du genom att klicka på länkarna i den övre delen av den här vyn eller genom att använda länken **[!UICONTROL Filter list]** och välja den kampanjpaketstatus som ska visas.
+På fliken **[!UICONTROL Campaigns]** kan du visa listan **[!UICONTROL Campaign packages]** som grupperar alla befintliga distribuerade marknadsföringskampanjer. Du kan filtrera den här listan så att den endast visar kampanjer som antingen är publicerade, sena, väntar på godkännande osv. Det gör du genom att klicka på länkarna i den övre delen av den här vyn eller genom att använda länken **[!UICONTROL Filter list]** och välja den kampanjpaketstatus som ska visas.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
