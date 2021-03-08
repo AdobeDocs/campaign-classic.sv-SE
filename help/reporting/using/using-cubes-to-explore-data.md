@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera 
 
 ### Steg 1 - Skapa en rapport baserad på en kub {#step-1---creating-a-report-based-on-a-cube}
 
-Om du vill skapa en rapport baserad på en kub klickar du på knappen **[!UICONTROL Create]** i **[!UICONTROL Reports]**-universum och väljer den kub som du vill använda.
+Om du vill skapa en rapport baserad på en kub klickar du på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Reports]** och väljer den kub som du vill använda.
 
 Processen beskrivs här: [Skapa en rapport baserad på en kub](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
@@ -152,7 +152,7 @@ Gör så här om du vill gruppera en population i en lista:
 
    Du kan antingen spara innehållet i kundvagnen eller tömma den.
 
-   Den relevanta listan nås via **[!UICONTROL Profiles and targets]**-universum.
+   Den relevanta listan nås via fliken **[!UICONTROL Profiles and targets]**.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
