@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 
    >[!NOTE]
    >
-   >Mer information om **navtree**-typfiler finns på [den här sidan](../../configuration/using/about-navigation-hierarchy.md).
+   >Mer information om **navtree**-typfiler finns på [den här sidan](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
    I det aktuella exemplet måste filen **navtree** baseras på schemat **cus:individual** och därför ha följande format:
 
