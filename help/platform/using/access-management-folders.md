@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Hantera åtkomst till mappar{#folder-access-management}
 
-Varje mapp i trädet har behörighet att läsa, skriva och ta bort. För att få åtkomst till en fil måste en operator eller grupp av operatorer åtminstone ha läsåtkomst till den.
+Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och ta bort. För att få åtkomst till en fil måste en operator eller grupp av operatorer åtminstone ha läsåtkomst till den.
 
 ## Behörigheter för en mapp
 
@@ -71,7 +71,7 @@ Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerkl
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-Du kan ge dessa mappar behörigheter som i alla andra mappar i trädet. Se [Hantering av mappåtkomst](#folder-access-management).
+Du kan anpassa utforskarens navigeringsträd. Lär dig konfigurationssteg och bästa praxis [i det här avsnittet](adobe-campaign-workspace.md).
 
 ### Om vyer {#about-views}
 
