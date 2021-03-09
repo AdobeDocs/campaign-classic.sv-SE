@@ -6,7 +6,7 @@ description: Lär dig hur du konfigurerar händelser för anpassad implementerin
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -217,7 +217,7 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 
 >[!NOTE]
 >
->Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../configuration/using/about-navigation-hierarchy.md) och [Redigera formulär](../../configuration/using/editing-forms.md).
+>Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy). och [Redigera formulär](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
