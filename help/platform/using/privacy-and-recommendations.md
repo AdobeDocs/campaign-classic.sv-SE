@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2038'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket 
 
 * Undvik att skicka oönskade e-postmeddelanden, push-meddelanden och SMS-meddelanden (”spam”). Adobe tror starkt på principerna om auktoriserad marknadsföring när det gäller att främja kundens livstidsvärde och -lojalitet och vi förbjuder därför strikt att Adobe Campaign används för att skicka oönskade meddelanden.
 
-Ta dig tid att gå igenom [checklistan för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html) för att lära dig grunderna i att kontrollera säkerhet och integritet.
+Ta dig tid att gå igenom [checklistan för säkerhet och integritet](../../installation/using/get-started-security-privacy.md) för att lära dig grunderna i att kontrollera säkerhet och integritet.
 
 ### Integritetsregler {#privacy-regulations}
 
