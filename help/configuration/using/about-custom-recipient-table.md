@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
 
 
-# Om anpassad mottagartabell{#about-custom-recipient-table}
+# Använda en anpassad mottagartabell{#about-custom-recipient-table}
 
 I det här avsnittet beskrivs principerna för användning av en mottagartabell som inte är standard.
 
