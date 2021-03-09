@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4170'
 ht-degree: 93%
 
 ---
@@ -22,6 +22,8 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## Mars 2021 {#march-2021}
+
+Ett nytt avsnitt har lagts till med bästa praxis och kontroller för att utföra säkerhets- och sekretessåtgärder. [Läs mer](../../installation/using/get-started-security-privacy.md)
 
 [kapitlet om behörighetshantering](../../platform/using/access-management.md) har förbättrats och delats upp i avsnitt, inklusive information om [operatorer](../../platform/using/access-management-operators.md), [operatorgrupper](../../platform/using/access-management-groups.md), [Namngivna rättigheter](../../platform/using/access-management-named-rights.md) och [Mapphantering](../../platform/using/access-management-folders.md).
 
