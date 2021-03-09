@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 57%
+source-wordcount: '2457'
+ht-degree: 56%
 
 ---
 
@@ -42,20 +42,22 @@ ht-degree: 57%
    + Börja med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Starta Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Arbetsyta i Adobe Campaign](platform/using/adobe-campaign-workspace.md)
-      + Vanliga frågor och svar {#faq}
-         + [De vanligaste frågorna](platform/using/common-questions.md)
-         + [Globala begrepp](platform/using/faq-key-concepts.md)
-         + [Builduppgradering](platform/using/faq-build-upgrade.md)
-         + [Integritet](platform/using/privacy-faq.md)
-         + [Publiker](platform/using/faq-audiences.md)
-         + [Utforma meddelanden](platform/using/faq-designing.md)
-         + [Skicka meddelanden](platform/using/faq-messages.md)
-         + [Arbetsflöden](platform/using/faq-workflows.md)
-         + [Konfiguration](platform/using/faq-campaign-config.md)
-         + [Rapporter](platform/using/faq-reporting.md)
-         + [Utveckling](platform/using/faq-developers.md)
-      + [Självstudiekurser](platform/using/tutorials.md)
+      + Arbetsyta i Adobe Campaign{#campaign-workspace}
+         + [Kom igång med Campaign-gränssnittet](platform/using/adobe-campaign-workspace.md)
+         + [Bläddra bland och anpassa listor](platform/using/adobe-campaign-ui-lists.md)
+         + Vanliga frågor och svar {#faq}
+            + [De vanligaste frågorna](platform/using/common-questions.md)
+            + [Globala begrepp](platform/using/faq-key-concepts.md)
+            + [Builduppgradering](platform/using/faq-build-upgrade.md)
+            + [Integritet](platform/using/privacy-faq.md)
+            + [Publiker](platform/using/faq-audiences.md)
+            + [Utforma meddelanden](platform/using/faq-designing.md)
+            + [Skicka meddelanden](platform/using/faq-messages.md)
+            + [Arbetsflöden](platform/using/faq-workflows.md)
+            + [Konfiguration](platform/using/faq-campaign-config.md)
+            + [Rapporter](platform/using/faq-reporting.md)
+            + [Utveckling](platform/using/faq-developers.md)
+         + [Självstudiekurser](platform/using/tutorials.md)
    + Integritet {#privacy}
       + [Integritet och medgivande](platform/using/privacy-and-recommendations.md)
       + [Integritetshantering](platform/using/privacy-management.md)
@@ -140,6 +142,7 @@ ht-degree: 57%
       + [SMS-kanal](delivery/using/sms-channel.md)
       + [Protokoll och inställningar för SMS-koppling](delivery/using/sms-protocol.md)
       + [Felsöka SMS](delivery/using/troubleshooting-sms.md)
+      + [Migrera till den utökade allmänna SMPP-anslutningen](delivery/using/unsupported-connector-migration.md)
    + [Skicka LINE-meddelanden](delivery/using/line-channel.md)
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
@@ -674,6 +677,14 @@ ht-degree: 57%
       + [Anslut till databasen](installation/using/connecting-to-database.md)
       + [Skapa dataschemat](installation/using/creating-data-schema.md)
       + [Definiera datamappning](installation/using/defining-data-mapping.md)
+   + Checklista för säkerhet och sekretess {#security-privacy}
+      + [Kom igång med säkerhet och integritet](installation/using/get-started-security-privacy.md)
+      + [Integritet](installation/using/privacy.md)
+      + [Åtkomsthantering](installation/using/access-management.md)
+      + [Riktlinjer för skript och kodning](installation/using/scripting-coding-guidelines.md)
+      + [Nätverk, databaser och SSL/TLS](installation/using/network-database.md)
+      + [Serverkonfiguration](installation/using/server-configuration.md)
+      + [Webbserverkonfiguration](installation/using/web-server-configuration.md)
    + Tillägg {#appendices}
       + [Fil för serverkonfiguration](installation/using/the-server-configuration-file.md)
       + [Nätverksslutpunkter i Campaign](installation/using/campaign-network-endpoints.md)
@@ -790,9 +801,8 @@ ht-degree: 57%
       + [SOAP-metoder i JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Lägga till ytterligare SQL-funktioner](configuration/using/adding-additional-sql-functions.md)
    + Navigeringshierarki {#navigation-hierarchy}
-      + [Om navigeringshierarki](configuration/using/about-navigation-hierarchy.md)
-      + [Konfiguration](configuration/using/configuration.md)
-      + [Utgåva](configuration/using/edition.md)
+      + [Konfigurera Utforskarhierarkin](configuration/using/configuration.md)
+      + [Redigera hierarkin Utforskaren](configuration/using/edition.md)
    + Använda en anpassad mottagartabell {#use-a-custom-recipient-table}
       + [Om anpassad mottagartabell](configuration/using/about-custom-recipient-table.md)
       + [Schemaegenskaper](configuration/using/schema-characteristics.md)
