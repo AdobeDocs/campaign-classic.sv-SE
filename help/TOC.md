@@ -9,7 +9,7 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
+source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 56%
@@ -45,18 +45,18 @@ ht-degree: 56%
       + Arbetsyta i Adobe Campaign{#campaign-workspace}
          + [Kom igång med Campaign-gränssnittet](platform/using/adobe-campaign-workspace.md)
          + [Bläddra bland och anpassa listor](platform/using/adobe-campaign-ui-lists.md)
-         + Vanliga frågor och svar {#faq}
-            + [De vanligaste frågorna](platform/using/common-questions.md)
-            + [Globala begrepp](platform/using/faq-key-concepts.md)
-            + [Builduppgradering](platform/using/faq-build-upgrade.md)
-            + [Integritet](platform/using/privacy-faq.md)
-            + [Publiker](platform/using/faq-audiences.md)
-            + [Utforma meddelanden](platform/using/faq-designing.md)
-            + [Skicka meddelanden](platform/using/faq-messages.md)
-            + [Arbetsflöden](platform/using/faq-workflows.md)
-            + [Konfiguration](platform/using/faq-campaign-config.md)
-            + [Rapporter](platform/using/faq-reporting.md)
-            + [Utveckling](platform/using/faq-developers.md)
+      + Vanliga frågor och svar {#faq}
+         + [De vanligaste frågorna](platform/using/common-questions.md)
+         + [Globala begrepp](platform/using/faq-key-concepts.md)
+         + [Builduppgradering](platform/using/faq-build-upgrade.md)
+         + [Integritet](platform/using/privacy-faq.md)
+         + [Publiker](platform/using/faq-audiences.md)
+         + [Utforma meddelanden](platform/using/faq-designing.md)
+         + [Skicka meddelanden](platform/using/faq-messages.md)
+         + [Arbetsflöden](platform/using/faq-workflows.md)
+         + [Konfiguration](platform/using/faq-campaign-config.md)
+         + [Rapporter](platform/using/faq-reporting.md)
+         + [Utveckling](platform/using/faq-developers.md)
          + [Självstudiekurser](platform/using/tutorials.md)
    + Integritet {#privacy}
       + [Integritet och medgivande](platform/using/privacy-and-recommendations.md)
