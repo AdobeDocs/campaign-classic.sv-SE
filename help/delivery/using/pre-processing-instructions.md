@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Det finns tre typer av instruktioner:
 
 De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
-## &lt;>{#<%@-include}
+## &lt;>{#include}
 
 Följande exempel är bland de vanligaste:
 
@@ -43,7 +43,7 @@ Följande exempel är bland de vanligaste:
 
 Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
 
-## &lt;>{#<%@-value}
+## &lt;>{#value}
 
 Den här instruktionen ger åtkomst till parametrar för leveransen som är konstanta för alla mottagare.
 
@@ -62,7 +62,7 @@ Objektet kan vara:
 * &quot;leverans&quot;: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
 * &quot;provider&quot;: för aktuell leveransleverantör/routning (nms:externalAccount).
 * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägg till objekt i körningskontexten**.
-* Objekt i foreach-slingan: se avsnittet [Foreach](#<%@-foreach) nedan.
+* Objekt i foreach-slingan: se avsnittet [Foreach](#foreach) nedan.
 
 ### &quot;delivery&quot;, objekt {#delivery-object}
 
@@ -82,7 +82,7 @@ För `<%@ value object="delivery" xpath="@myCustomField" %>`-instruktionen finns
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#<%@-value-in-javascript}
+### &lt;>{#value-in-javascript}
 
 Om du vill tillåta att &lt;%@-värdet används i skriptavsnitt ersätts två specialobjekt med &lt;% och %>:
 
@@ -96,7 +96,7 @@ Exempel:
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#<%@-foreach}
+## &lt;>{#foreach}
 
 Den här instruktionen tillåter upprepning i en array med objekt som lästs in i leveransen för att spåra enskilda länkar som är relaterade till objekten.
 
