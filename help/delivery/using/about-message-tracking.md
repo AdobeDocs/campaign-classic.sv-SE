@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -41,7 +41,7 @@ Om du vill konfigurera spårning måste instansen deklareras och registreras hos
 
 **Spårning sparas**
 
-När spårning har konfigurerats och URL:erna har fyllts i måste spårningsservern registreras. [Läs mer](../../installation/using/deploying-an-instance.md#tracking-configuration#saving-tracking)
+När spårning har konfigurerats och URL:erna har fyllts i måste spårningsservern registreras. [Läs mer](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ## Meddelandespårning {#message-tracking}
 
