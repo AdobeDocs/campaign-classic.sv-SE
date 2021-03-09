@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
 
 
-# Konfiguration{#configuration}
+# Konfigurera navigeringsträdet i Campaign Explorer{#configuration}
+
+Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
+
+Läs mer om Campaign Explorer och navigeringshierarkin [i det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
 De typer av mappar som används i navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree**-schemat.
 
