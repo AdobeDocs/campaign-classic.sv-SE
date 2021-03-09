@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '3148'
+source-wordcount: '3131'
 ht-degree: 20%
 
 ---
@@ -40,7 +40,7 @@ Om du vill skicka till en mobiltelefon behöver du:
 ### Skapar ett SMPP-externt konto {#creating-an-smpp-external-account}
 
 Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
-Mer information om SMS-protokoll och inställningar finns i den här [tekniska informationen](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html).
+Mer information om SMS-protokoll och inställningar finns på den här [sidan](../../delivery/using/sms-protocol.md).
 
 Följ stegen nedan för att göra detta:
 
@@ -56,7 +56,7 @@ Följ stegen nedan för att göra detta:
 
    >[!CAUTION]
    >
-   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]**-kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/sms-connector.html).
+   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]**-kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](../../delivery/using/unsupported-connector-migration.md).
 
 1. Med alternativet **[!UICONTROL Enable verbose SMPP traces in the log file]** kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att kunna felsöka anslutningen och jämföra med den trafik som leverantören ser.
 
@@ -94,7 +94,7 @@ Följ stegen nedan för att göra detta:
 
    Eftersom vissa leverantörer kräver att&quot;+&quot;-prefixet används, bör du kontakta din leverantör och föreslå att du aktiverar det här alternativet om det behövs.
 
-   Med kryssrutan **[!UICONTROL Enable TLS over SMPP]** kan du kryptera SMPP-trafik. Mer information finns i den här [tekniska kommentaren](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+   Med kryssrutan **[!UICONTROL Enable TLS over SMPP]** kan du kryptera SMPP-trafik. Se denna [sida](../../delivery/using/sms-protocol.md) för mer information om detta.
 
 1. Om du konfigurerar en **[!UICONTROL Extended generic SMPP]**-anslutning kan du konfigurera automatiska svar.
 
