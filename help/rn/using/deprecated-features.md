@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1712'
 ht-degree: 94%
 
 ---
@@ -99,7 +99,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <li>iOS</li>
    </ul>
   <p>Om du använder någon av dessa kopplingar måste implementeringen anpassas i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Läs mer</a></p> 
-  <p>Läs mer om hur man migrerar äldre kopplingar i <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector.html">det här tekniska dokumentet</a>.</p>
+  <p>Läs mer om hur man migrerar äldre kopplingar i <a href="../../delivery/using/unsupported-connector-migration.md">det här tekniska dokumentet</a>.</p>
   <p><em>Måldatum för borttagning: april 2021</em></p>
   </td> 
  </tr>
