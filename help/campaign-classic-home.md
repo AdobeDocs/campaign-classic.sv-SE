@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 60%
+source-wordcount: '312'
+ht-degree: 54%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 60%
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Nyheter
+
+* **[Uppdatera APN-](technotes/ios-certificate-update.md)**<br/> certifikatetDen 29 mars 2021 kommer en APN-uppdatering att påverka Campaign iOS-kanalen. Du måste uppdatera konfigurationen för att undvika avbrott i push-kanalen i iOS.
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 31 mars 2021 **.
 
@@ -87,7 +89,6 @@ Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och be
 | [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Kom igång med Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementeringsguide](https://helpx.adobe.com/se/campaign/kb/acc-implementation.html) |
 | [Gold Standard-uppgradering](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
 | [Inaktuella funktioner](rn/using/deprecated-features.md) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html) |
 | [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
