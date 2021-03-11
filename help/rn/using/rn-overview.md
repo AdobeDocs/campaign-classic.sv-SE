@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -35,7 +35,7 @@ De **senaste GA-versionerna** är: [Gold Standard version 11](../../rn/using/gol
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidat** (RC) – senaste versionen med nya funktioner.
 
-Den **senaste RC-versionen** är [Campaign Classic version 20.3.](../../rn/using/latest-release.md)
+Den **senaste RC-versionen** är [Campaign Classic version 21.1.](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Inaktuell** – ingen distribution. Befintliga implementeringar måste uppgraderas.
 
