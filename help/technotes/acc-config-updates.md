@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
+source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -50,7 +50,7 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
    Den nya versionen är kompatibel med minst Campaign Classic 17.9, men för att undvika säkerhetsbrister rekommenderar Adobe starkt att du uppgraderar alla instanser till en ny version. 
 
-* Som en lokal kund ombeds ni uppgradera alla instanser av marknadsföring och mellanprodukter till en ny version.
+* Som en lokal kund ombeds ni uppgradera alla instanser av marknadsföring och mellanprodukter till en nyare version.
 
 >[!CAUTION]
 >
