@@ -5,7 +5,7 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 54%
@@ -21,7 +21,7 @@ ht-degree: 54%
 
 * **[Uppdatera APN-](technotes/ios-certificate-update.md)**<br/> certifikatetDen 29 mars 2021 kommer en APN-uppdatering att påverka Campaign iOS-kanalen. Du måste uppdatera konfigurationen för att undvika avbrott i push-kanalen i iOS.
 
-* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 31 mars 2021 **.
+* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **.
 
 * **[Skydda era Campaign-](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
 
