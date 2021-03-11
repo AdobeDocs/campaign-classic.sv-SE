@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 87844fae046dff69193d3462c802057499f406ef
+source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -69,23 +69,33 @@ Adobe Identity Service (IMS) kommer inte längre att ha stöd för äldre Intern
 
 **Påverkas du?**
 
-Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md), via Adobe Identity Service (IMS), måste du uppgradera till en av de nya versionerna ovan för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
+Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Service (IMS) är en uppgradering till en av de nya versionerna som listas ovan obligatorisk. Den här versionen har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
 
 **Hur uppdaterar jag?**
 
 Som värdkund behövs ingen åtgärd: Adobe har redan uppgraderat dina instanser till en senare version.
 
-Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna utnyttja den nya klientkonsolen och säkerställa en smidig övergång **före 31 mars 2021**.
+Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna utnyttja den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
+
+När alla instanser har uppgraderats måste klientkonsolen också uppgraderas till den här versionen.
+
+* Lär dig hur du får åtkomst till [Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+
+* [Lär dig hur du installerar Campaign Client-konsolen](../installation/using/installing-the-client-console.md).
 
 ## Integrering med utlösare från Experience Cloud
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln, den upphör 30 juni 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 juni 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
 **Påverkas du?**
 
 Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O**.
 
 **Hur uppdaterar jag?**
+
+När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren för att gå över till det nya autentiseringsläget](../integrations/using/configuring-adobe-io.md). Detta kräver att den nya Adobe I/O-token genereras och används i implementeringen.  
+
+För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurerad på en instans av mellanleverantörer. [Läs mer](../integrations/using/configuring-pipeline.md).
 
 [Lär dig hur du migrerar till Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
@@ -119,4 +129,4 @@ Som värdkund behövs ingen åtgärd: Adobe har redan införlivat det nya rotcer
 
 Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa en sömlös övergång **före den 29 mars 2021**.
 
-[Lär dig hur du infogar det nya certifikatet](ios-certificate-update.md)
+[Lär dig hur du infogar det nya certifikatet](ios-certificate-update.md).
