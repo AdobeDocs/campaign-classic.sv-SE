@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 93dc5a16ce4880c132f4f91c72794892b00e7259
+source-git-commit: 87844fae046dff69193d3462c802057499f406ef
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 5%
@@ -38,22 +38,23 @@ Som lokal kund/hybridkund måste du uppgradera till någon av versionerna ovan. 
 
 De senaste Campaign-versionerna har en säkerhetskorrigering som stärker skyddet mot problem med SSRF (Server Side Request Forgery). Läs mer [på den här sidan](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
 
-### Påverkas du?
+**Påverkas du?**
 
 Om miljön är på en lägre nivå än Campaign 21.1 påverkas du.
 
-## Hur uppdaterar jag?
+**Hur uppdaterar jag?**
 
 Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 * Som hybridkund kommer Adobe att uppgradera mellanleverantörsinstansen till den nya versionen och du rekommenderas att uppgradera deras marknadsinstans också.
-Den nya versionen är kompatibel med minst Campaign Classic 17.9, men för att undvika säkerhetsbrister rekommenderar Adobe starkt att du uppgraderar alla instanser till en ny version. 
+
+   Den nya versionen är kompatibel med minst Campaign Classic 17.9, men för att undvika säkerhetsbrister rekommenderar Adobe starkt att du uppgraderar alla instanser till en ny version. 
 
 * Som en lokal kund ombeds ni uppgradera alla instanser av marknadsföring och mellanprodukter till en ny version.
 
 >[!CAUTION]
 >
->Om du inte kan uppgradera för tillfället **måste du kontakta kundtjänstteamet på Adobe för att manuellt tillämpa en säkerhetskorrigering på dina instanser**.
+>Om du inte kan uppgradera just nu **måste du kontakta kundtjänstteamet på Adobe för att manuellt tillämpa en säkerhetskorrigering på dina instanser**.
 
 
 ## Uppdatering av Campaign Client Console
@@ -64,13 +65,13 @@ Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindr
 
 ## Anslut till Campaign via IMS
 
-Adobe Identity Service (IMS) kommer inte längre att ha stöd för äldre Internet Explorer-versioner från och med den 31 mars 2021. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Campaign Console har uppdaterats för att säkerställa kompatibilitet med IMS.
+Adobe Identity Service (IMS) kommer inte längre att ha stöd för äldre Internet Explorer-versioner från och med 30 juni 2021. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Campaign Console har uppdaterats för att säkerställa kompatibilitet med IMS.
 
-### Påverkas du?
+**Påverkas du?**
 
-Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md), via Adobe Identity Service (IMS), måste du uppgradera till en av de nya versionerna som listas ovan för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 31 mars 2021 **.**
+Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md), via Adobe Identity Service (IMS), måste du uppgradera till en av de nya versionerna ovan för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
 
-### Hur uppdaterar jag?
+**Hur uppdaterar jag?**
 
 Som värdkund behövs ingen åtgärd: Adobe har redan uppgraderat dina instanser till en senare version.
 
@@ -78,13 +79,13 @@ Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för a
 
 ## Integrering med utlösare från Experience Cloud
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln och kommer att upphöra den 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln, den upphör 30 juni 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
-### Påverkas du?
+**Påverkas du?**
 
 Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O**.
 
-### Hur uppdaterar jag?
+**Hur uppdaterar jag?**
 
 [Lär dig hur du migrerar till Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
@@ -92,11 +93,11 @@ Om du använder en äldre version av utlösare-integrering via autentisering, **
 
 APN:er (Apple Push Notification service) stöder inte längre det äldre binära protokollet från och med den 31 mars 2021. [Läs mer](https://developer.apple.com/news/?id=c88acm2b).
 
-### Påverkas du?
+**Påverkas du?**
 
 Om dina instanser körs på en äldre version än Campaign 21.1 och skickar push-meddelanden med det äldre binära Apple-protokollet, måste du uppdatera till HTTP/2-baserade API:er för APN-providern.
 
-### Hur uppdaterar jag?
+**Hur uppdaterar jag?**
 
 Som värdkund behövs ingen åtgärd: Adobe har redan uppdaterat dina instanser till det HTTP/2-baserade API:t.
 
@@ -108,11 +109,11 @@ Den 29 mars 2021 kommer en infrastrukturuppdatering för Apple Push Notification
 
 Läs mer om ändringar av APN:er [på den här sidan](https://developer.apple.com/news/?id=7gx0a2lp).
 
-### Påverkas du?
+**Påverkas du?**
 
 Om du använder Campaign för att skicka push-meddelanden på iOS-enheter påverkas du.
 
-### Hur uppdaterar jag?
+**Hur uppdaterar jag?**
 
 Som värdkund behövs ingen åtgärd: Adobe har redan införlivat det nya rotcertifikatet i din miljö.
 
