@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '918'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # Konfigurationsuppdateringar för Adobe Campaign - mars 2021 {#acc-config-updates}
 
-Du måste hålla din infrastruktur och dina inställningar uppdaterade med de senaste byggen och produktkorrigeringarna. Dessa korrigeringar är obligatoriska för att säkerställa tjänstens kontinuitet och säkerhet.
+Du måste hålla din infrastruktur och dina inställningar uppdaterade med de senaste byggnaderna och produktkorrigeringarna. Dessa korrigeringar är obligatoriska för att säkerställa tjänstens kontinuitet och säkerhet.
 
 Kampanjanvändare måste uppgradera till en av de senaste versionerna nedan:
 
@@ -32,7 +32,11 @@ Dessa byggen säkerställer kontinuiteten för vissa kampanjtjänster: Integreri
 
 Som värdkund kommer Adobe att informera dig om nödvändiga bygguppgraderingar med jämna mellanrum. Ni måste uppgradera i enlighet med rekommendationerna för att säkerställa regelefterlevnaden.
 
-Som lokal kund/hybridkund måste du uppgradera till någon av versionerna ovan. Dessutom måste några manuella uppgifter utföras för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
+Som lokal kund/hybridkund måste du uppgradera till någon av versionerna ovan. Dessutom måste några manuella åtgärder utföras för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
+
+>[!NOTE]
+>
+>Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du har frågor om dessa ändringar.
 
 ## Säkerhetsuppdateringar
 
@@ -69,7 +73,7 @@ Adobe Identity Service (IMS) kommer inte längre att ha stöd för äldre Intern
 
 **Påverkas du?**
 
-Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Service (IMS) är en uppgradering till en av de nya versionerna som listas ovan obligatorisk. Den här versionen har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
+Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Service (IMS) är en uppgradering till en av de nya versionerna som listas ovan obligatorisk. De här versionerna har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
 
 **Hur uppdaterar jag?**
 
