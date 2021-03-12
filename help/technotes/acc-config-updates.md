@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
+source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -85,7 +85,7 @@ När alla instanser har uppgraderats måste klientkonsolen också uppgraderas ti
 
 ## Integrering med utlösare från Experience Cloud
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 juni 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 april 2021 **.** [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
 **Påverkas du?**
 
