@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
+source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
 workflow-type: tm+mt
-source-wordcount: '7929'
+source-wordcount: '7970'
 ht-degree: 5%
 
 ---
@@ -337,7 +337,7 @@ Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Typ (uppräkning). Möjliga värden är Oracle, MSSQL (Microsoft SQL Server), PostgreSQL (PostgreSQL, Greenplum), Teradata, DB2, MySQL, Netezza, AsterData, SAPHANA (SAP HANA), RedShift (Amazon Redshift), ODBC (ODBC) (Sybase) E, Sybase IQ), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
+   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC) ASE, Sybase IQ), Relay (HTTP-relä till fjärrdatabas).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -1690,6 +1690,8 @@ Konfigurera följande parametrar i noden **cache**. Detta är den lokala filcach
 ### relä {#relay}
 
 Konfigurera följande parametrar i noden **mta > relay**. Detta är konfigurationen för e-postservern för meddelandeleveransen.
+
+Listan hanteras på samma sätt som en lista över MX som returneras av en MX DNS-fråga. Vanligtvis används den första MX så länge den är tillgänglig, sedan används nästa så vidare.
 
 Mer information finns i [SMTP-relä](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
