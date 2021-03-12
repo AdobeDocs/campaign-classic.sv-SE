@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,9 @@ Kampanjanvändare måste uppgradera till en av de senaste versionerna nedan:
 
 Dessa byggen säkerställer kontinuiteten för vissa kampanjtjänster: Integrering av Experience Cloud-utlösare, APN-autentisering och det nya anslutningsprotokollet som påverkar autentiseringsmekanismen för Adobe Identity Management Service (IMS).
 
-Som värdkund behövs ingen åtgärd: Adobe äger uppgraderings- och konfigurationsuppdateringarna åt dig.
+Som värdkund kommer Adobe att informera dig om nödvändiga bygguppgraderingar med jämna mellanrum. Ni måste uppgradera i enlighet med rekommendationerna för att säkerställa regelefterlevnaden.
 
-Som lokal kund/hybridkund måste du uppgradera till någon av versionerna ovan. Dessutom behöver du utföra några manuella åtgärder för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
+Som lokal kund/hybridkund måste du uppgradera till någon av versionerna ovan. Dessutom måste några manuella uppgifter utföras för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
 
 ## Säkerhetsuppdateringar
 
