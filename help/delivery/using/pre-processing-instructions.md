@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,9 @@ De gäller endast för leveransinnehåll. Det är det enda sättet att skripta U
 
 Det finns tre typer av instruktioner:
 
-* &quot;**include**&quot;: huvudsakligen för att faktorisera viss kod i alternativ, anpassningsblock, externa filer eller sidor
-* &quot;**värde**&quot;: för att ge åtkomst till fält för leverans, leveransvariabler och anpassade objekt som lästs in i leveransen
-* &quot;**foreach**&quot;: för att slinga en array som lästs in som ett anpassat objekt.
+* **[!DNL include]**: främst för att faktorisera viss kod i alternativ, anpassningsblock, externa filer eller sidor. [Läs mer](#include)
+* &quot;**[!DNL value]**&quot;: för att ge åtkomst till fält för leverans, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
+* &quot;**[!DNL foreach]**&quot;: för att slinga en array som lästs in som ett anpassat objekt. [Läs mer](#foreach)
 
 De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
@@ -33,15 +33,33 @@ De kan testas direkt från leveransguiden. De används i innehållsförhandsgran
 
 Följande exempel är bland de vanligaste:
 
-* Inklusive spegelsidans länk: `<%@ include view="MirrorPage" %>`
-* URL för speglingssida: &quot;Visa som en `<a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page"`
-* Oanvändbar url för avprenumeration: `<%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>`
-* Andra exempel:
-   * `<%@ include file='http://www.google.com' %>`
-   * `<%@ include file='file:///X:/france/service/test.html' %>`
-   * `<%@ include option='NmsServer_URL' %>`
+* Inklusive spegelsidans länk:
 
-Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
+   ```
+   <%@ include view="MirrorPage" %>  
+   ```
+
+* URL för speglingssida:
+
+   ```
+   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+   ```
+
+* Oanvändbar url för avprenumeration:
+
+   ```
+   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+   ```
+
+* Andra exempel:
+
+   ```
+   <%@ include file='http://www.google.com' %>
+   <%@ include file='file:///X:/france/service/test.html' %>
+   <%@ include option='NmsServer_URL' %>
+   ```
+
+   Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
 
 ## [!DNL value] {#value}
 
@@ -49,7 +67,9 @@ Den här instruktionen ger åtkomst till parametrar för leveransen som är kons
 
 Syntax:
 
-`<%@ value object="myObject" xpath="@myField" index="1" %>`
+```
+<%@ value object="myObject" xpath="@myField" index="1" %>
+```
 
 Var:
 
@@ -66,19 +86,30 @@ Objektet kan vara:
 
 För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
 
-* I JavaScript. Exempel: `<%= delivery.myField %>`.
+* Använda JavaScript:
+
+   ```
+   <%= delivery.myField %>`.
+   ```
 
    I JavaScript-objektet stöds inte anpassade fält för leverans. De fungerar i förhandsgranskningen, men inte i MTA eftersom MTA bara kan komma åt leveransschemat som är klart att användas.
 
-* Genom `<%@ value object="delivery"` förbearbetning.
+* Med förbehandling:
 
-För `<%@ value object="delivery" xpath="@myCustomField" %>`-instruktionen finns det en annan begränsning för leveranser som skickas via mellanleverantörer. Det anpassade fältet @myCustomField måste läggas till i nms:delivery-schemat på både marknadsförings- och medelkällplattformar.
+   ```
+   <%@ value object="delivery"
+   ```
+
 
 >[!NOTE]
 >
->Använd följande syntax för leveransparametrar/variabler (med leveransobjektet):
+>* För `<%@ value object="delivery" xpath="@myCustomField" %>`-instruktionen finns det en annan begränsning för leveranser som skickas via mellanleverantörer. Det anpassade fältet @myCustomField måste läggas till i nms:delivery-schemat på både marknadsförings- och medelkällplattformar.
+   >
+   >
+* Använd följande syntax för leveransparametrar/variabler (med leveransobjektet):
 >
->`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+>
+`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
 ### [!DNL value] i ett Javascript-avsnitt  {#value-in-javascript}
 
@@ -100,14 +131,16 @@ Den här instruktionen tillåter upprepning i en array med objekt som lästs in 
 
 Syntax:
 
-`<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>`
+```
+<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
+```
 
 Var:
 
-* &quot;object&quot;: namnet på objektet som ska börja från, vanligtvis ett extra skriptobjekt, men det kan vara en leverans.
-* &quot;xpath&quot; (valfritt): xpath för den samling som ska slingas. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
-* &quot;index&quot; (valfritt): om xpath inte är &quot;.&quot; och objektet är en array, objektindex för objektet (börjar vid 0).
-* &quot;objekt&quot; (valfritt): namnet på ett nytt objekt som är tillgängligt med värdet &lt;%@ inuti förgreningsslingan. Standard med länknamnet i schemat.
+* **[!DNL object]**: namnet på objektet som ska börja från, vanligtvis ett extra skriptobjekt, men det kan vara en leverans.
+* **[!DNL xpath]** (valfritt): xpath för den samling som ska slingas. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
+* **[!DNL index]** (valfritt): om xpath inte är &quot;.&quot; och objektet är en array, objektindex för objektet (börjar vid 0).
+* **[!DNL item]** (valfritt): namnet på ett nytt objekt som är tillgängligt med  &lt;> Standard med länknamnet i schemat.
 
 Exempel:
 
