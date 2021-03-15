@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ De senaste Campaign-versionerna har en säkerhetskorrigering som stärker skydde
 
 **Påverkas du?**
 
-Om miljön är på en lägre nivå än Campaign 21.1 påverkas du.
+Om miljön är på en lägre nivå än Campaign 19.1.8, 19.2.4, 20.1.4, 20.2.4, 20.3.3 eller Gold Standard 11 påverkas du.
 
 **Hur uppdaterar jag?**
 
@@ -66,6 +66,11 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindrade användningen av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. Konsoluppgradering är obligatoriskt.
 
 [Läs mer](../rn/using/gold-standard.md).
+
+
+>[!NOTE]
+>
+>Uppdateringar för andra versioner kommer snart.
 
 ## Anslut till Campaign via IMS
 
@@ -93,7 +98,7 @@ Den gamla autentiseringstjänsten för autentisering har nått slutet av livscyk
 
 **Påverkas du?**
 
-Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O**.
+Om miljön är på en lägre nivå än Campaign 19.1.8, 20.2.4, Gold Standard 11 använder du en äldre version av Triggers-integrering via Autentisering: **du måste flytta till Adobe I/O**.
 
 **Hur uppdaterar jag?**
 
