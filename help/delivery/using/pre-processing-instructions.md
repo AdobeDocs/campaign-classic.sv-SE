@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -24,8 +24,8 @@ De gäller endast för leveransinnehåll. Det är det enda sättet att skripta U
 Det finns tre typer av instruktioner:
 
 * **[!DNL include]**: främst för att faktorisera viss kod i alternativ, anpassningsblock, externa filer eller sidor. [Läs mer](#include)
-* &quot;**[!DNL value]**&quot;: för att ge åtkomst till fält för leverans, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
-* &quot;**[!DNL foreach]**&quot;: för att slinga en array som lästs in som ett anpassat objekt. [Läs mer](#foreach)
+* **[!DNL value]**: för att ge åtkomst till fält för leverans, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
+* **[!DNL foreach]**: för att slinga en array som lästs in som ett anpassat objekt. [Läs mer](#foreach)
 
 De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
@@ -75,8 +75,8 @@ Var:
 
 * **[!DNL object]**: objektets namn (exempel: leverans, provider och så vidare).
 Objektet kan vara:
-   * &quot;leverans&quot;: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
-   * &quot;provider&quot;: för aktuell leveransleverantör/routning (nms:externalAccount).
+   * **[!DNL delivery]**: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
+   * **[!DNL provider]**: för aktuell leveransleverantör/routning (nms:externalAccount).
    * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägg till objekt i körningskontexten**.
    * Objekt i foreach-slingan: se avsnittet [Foreach](#foreach) nedan.
 * **[!DNL xpath]**: fältets xpath.
@@ -101,22 +101,28 @@ För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
    ```
 
 
->[!NOTE]
->
->* För `<%@ value object="delivery" xpath="@myCustomField" %>`-instruktionen finns det en annan begränsning för leveranser som skickas via mellanleverantörer. Det anpassade fältet @myCustomField måste läggas till i nms:delivery-schemat på både marknadsförings- och medelkällplattformar.
-   >
-   >
-* Använd följande syntax för leveransparametrar/variabler (med leveransobjektet):
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**Varning**
+
+Om du använder följande instruktion för leveranser som skickas via mellanleverantörer måste det anpassade fältet **@myCustomField** läggas till i nms:delivery-schemat på både marknadsförings- och mellanleverantörsplattformar:
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+Använd följande syntax för leveransparametrar/variabler (med leveransobjektet):
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] i ett Javascript-avsnitt  {#value-in-javascript}
 
 Om du vill tillåta användning av &lt;%@ värde i JavaScript-avsnitt ersätts två specialobjekt med &lt;% och %>:
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 Exempel:
 
