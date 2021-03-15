@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
+source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '974'
+ht-degree: 5%
 
 ---
 
@@ -63,22 +63,21 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 ## Uppdatering av Campaign Client Console
 
-Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindrade användningen av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. Konsoluppgradering är obligatoriskt.
+Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindrade användningen av vissa komponenter i Clien Console, till exempel datumväljaren och bildhantering i leveranser. Konsoluppgradering är obligatoriskt.
 
 [Läs mer](../rn/using/gold-standard.md).
 
-
 >[!NOTE]
 >
->Uppdateringar för andra versioner kommer snart.
+>Den nya klientkonsolen för andra versioner är snart tillgänglig.
 
 ## Anslut till Campaign via IMS
 
-Adobe Identity Service (IMS) kommer inte längre att ha stöd för äldre Internet Explorer-versioner från och med 30 juni 2021. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Campaign Console har uppdaterats för att säkerställa kompatibilitet med IMS.
+Adobe Identity Service (IMS) kommer inte att ha stöd för äldre Internet Explorer-versioner från och med den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Campaign Client Console har uppdaterats för att säkerställa kompatibilitet med Adobe IMS.
 
 **Påverkas du?**
 
-Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Service (IMS) är en uppgradering till en av de nya versionerna som listas ovan obligatorisk. De här versionerna har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och klientkonsolen ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
+Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Service (IMS) är en uppgradering till en av de nya versionerna som listas ovan obligatorisk. De här versionerna har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och Client Console ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
 
 **Hur uppdaterar jag?**
 
@@ -86,11 +85,11 @@ Som värdkund behövs ingen åtgärd: Adobe har redan uppgraderat dina instanser
 
 Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna utnyttja den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
 
-När alla instanser har uppgraderats måste klientkonsolen också uppgraderas till den här versionen.
+När alla instanser har uppgraderats måste även klientkonsolen uppgraderas till den här versionen.
 
 * Lär dig hur du får åtkomst till [Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
-* [Lär dig hur du installerar Campaign Client-konsolen](../installation/using/installing-the-client-console.md).
+* [Lär dig hur du installerar Campaign Client Console](../installation/using/installing-the-client-console.md).
 
 ## Integrering med utlösare från Experience Cloud
 
@@ -110,7 +109,7 @@ För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurer
 
 ## HTTP/2-baserat API för APNs-provider
 
-APN:er (Apple Push Notification service) stöder inte längre det äldre binära protokollet från och med den 31 mars 2021. [Läs mer](https://developer.apple.com/news/?id=c88acm2b).
+Apple Push Notification-tjänsten (APN:er) stöder inte längre det äldre binära protokollet den 31 mars 2021 **.** [Läs mer](https://developer.apple.com/news/?id=c88acm2b).
 
 **Påverkas du?**
 
@@ -139,3 +138,11 @@ Som värdkund behövs ingen åtgärd: Adobe har redan införlivat det nya rotcer
 Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa en sömlös övergång **före den 29 mars 2021**.
 
 [Lär dig hur du infogar det nya certifikatet](ios-certificate-update.md).
+
+
+## Användbara länkar
+
+* [Uppgradera din miljö](../production/using/build-upgrade.md)
+* [Vanliga frågor om uppgradering av bygge](../platform/using/faq-build-upgrade.md)
+* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Gör den nya klientkonsolen tillgänglig för användare](../installation/using/client-console-availability-for-windows.md)
