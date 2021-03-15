@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '772'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign har en uppsättning verktyg som hjälper dig att följa integrite
 
 Se [den här sidan](../../platform/using/privacy-management.md) för allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personerna.
 
-## URL-anpassning
+## URL-anpassning {#url-personalization}
 
 När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel ska aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
 
@@ -57,7 +57,7 @@ För att förbättra säkerheten har en ny signaturmekanism för att spåra län
 >
 >När användaren klickar på en felformaterad signerad URL returneras följande fel: &quot;Begärd URL &#39;.. &#39; kunde inte hittas.&quot;
 
-Dessutom kan värdkunder och hybridkunder i bygge 19.1.4 (9032@3a9dc9c och 9032@800be2e) och i Campaign 20.2 använda en förbättring för att inaktivera URL:er som genererats från tidigare byggen. Det här alternativet är inaktiverat som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
+Från och med Campaign 20.2 och Gold Standard kan kunder som har värdtjänster och hybrider använda en förbättring för att inaktivera URL:er som genererats från tidigare versioner. Det här alternativet är inaktiverat som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
 
 För att aktivera den här nya mekanismen måste lokala kunder följa dessa steg på alla Campaign-servrar:
 
@@ -65,7 +65,7 @@ För att aktivera den här nya mekanismen måste lokala kunder följa dessa steg
 1. Starta om tjänsten **nlserver**.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
-Kunder som kör Build 19.1.4 (9032@3a9dc9c) kan få problem med push-meddelandeleveranser med hjälp av spårningslänk eller leveranser med ankartaggar. I så fall rekommenderar Adobe att du inaktiverar den nya signaturfunktionen för att spåra länkar:
+Kunder som använder Gold Standard 19.1.4 kan få problem med push-meddelanden som levereras via spårningslänk eller leveranser med ankartaggar. I så fall rekommenderar Adobe att du inaktiverar den nya signaturfunktionen för att spåra länkar:
 
 **Värdbaserade och hybridkunder** måste kontakta  [Customer ](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) Careto för att denna mekanism ska vara inaktiverad.
 
