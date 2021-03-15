@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Identifiera spårnings-URL:er
-description: Läs mer om rekommenderat mönster för att spåra URL:er.
+title: Identifiera URL:er för spårning
+description: Läs mer om rekommenderat mönster för att spåra URL:er
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
 
-# Identifiera spårnings-URL:er
+# Identifiera URL:er för spårning
 
 ## Exempel på icke-identifiering
 
@@ -35,14 +35,14 @@ Efter bearbetning av `<%@`-instruktioner har URL:en som ska spåras följande sy
 >
 >Alla andra mönster stöds inte av Adobe och bör undvikas för att förhindra potentiella säkerhetsluckor.
 
-## Varningar för http://&lt;%=myURL%>-mönster
+## Oskyddat mönster
 
-Syntaxen `<a href="http://<%=myURL%>">` är inte säker och rekommenderas inte eftersom:
+När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Läs mer i [den här sidan](../../installation/using/privacy.md#url-personalization).
 
+Syntaxen `<a href="http://<%=myURL%>">` är till exempel **inte säker** och måste undvikas.
+
+* Om du använder den här syntaxen kan det leda till säkerhetsproblem om länken som genereras av Adobe Campaign innehåller en eller flera parametrar.
 * Tidy kan korrigera vissa av länkarna felaktigt, vilket kan hända slumpmässigt. Det typiska symtomet är HTML-kod som visas i e-postkorrekturet men inte i förhandsgranskningen.
 * Det går inte att ta bort URL-adressen eftersom vissa tecken i URL-adressen kan orsaka problem.
 * Du kan inte ha en parameter med namnet ID som står i konflikt med parametern i omdirigerings-URL:en.
 * Spårningsintresset begränsas sedan till leveransstatistik eftersom Adobe Campaign automatiskt spårar alla möjliga värden för myURL.
-
-Mer information finns på [den här sidan](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
-
