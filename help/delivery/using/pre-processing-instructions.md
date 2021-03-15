@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Instruktioner för förbehandling {#pre-processing-instructions}
 
-Instruktionerna för &lt;%@ är inte JavaScript. Syntaxen är specifik för Adobe Campaign.
+Du kan använda en specifik syntax i leveransinnehållet för att lägga till instruktioner och skripta URL:en för det spårade e-postmeddelandet. &lt;%@-instruktionerna är inte JavaScript: syntaxen är specifik för Adobe Campaign.
 
 De gäller endast för leveransinnehåll. Det är det enda sättet att skripta URL:en för ett e-postmeddelande och fortfarande spåra den (förutom URL-parametrar). De kan ses som en automatisk kopiera/klistra in som tillämpas under leveransanalysen innan länkarna som ska spåras identifieras.
 
@@ -29,7 +29,7 @@ Det finns tre typer av instruktioner:
 
 De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
-## &lt;>{#include}
+## [!DNL include] {#include}
 
 Följande exempel är bland de vanligaste:
 
@@ -43,7 +43,7 @@ Följande exempel är bland de vanligaste:
 
 Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
 
-## &lt;>{#value}
+## [!DNL value] {#value}
 
 Den här instruktionen ger åtkomst till parametrar för leveransen som är konstanta för alla mottagare.
 
@@ -53,18 +53,16 @@ Syntax:
 
 Var:
 
-* &quot;object&quot;: objektets namn (exempel: leverans, provider och så vidare).
-* &quot;xpath&quot;: fältets xpath.
-* &quot;index&quot; (valfritt): Om &quot;object&quot; är en array (för extra skriptobjekt), objektindex i arrayen (Börjar på 0).
-
+* **[!DNL object]**: objektets namn (exempel: leverans, provider och så vidare).
 Objektet kan vara:
+   * &quot;leverans&quot;: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
+   * &quot;provider&quot;: för aktuell leveransleverantör/routning (nms:externalAccount).
+   * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägg till objekt i körningskontexten**.
+   * Objekt i foreach-slingan: se avsnittet [Foreach](#foreach) nedan.
+* **[!DNL xpath]**: fältets xpath.
+* **[!DNL index]** (valfritt): om  **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (Börjar på 0).
 
-* &quot;leverans&quot;: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
-* &quot;provider&quot;: för aktuell leveransleverantör/routning (nms:externalAccount).
-* Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägg till objekt i körningskontexten**.
-* Objekt i foreach-slingan: se avsnittet [Foreach](#foreach) nedan.
-
-### &quot;delivery&quot;, objekt {#delivery-object}
+### [!DNL delivery] object {#delivery-object}
 
 För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
 
@@ -82,9 +80,9 @@ För `<%@ value object="delivery" xpath="@myCustomField" %>`-instruktionen finns
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#value-in-javascript}
+### [!DNL value] i ett Javascript-avsnitt  {#value-in-javascript}
 
-Om du vill tillåta att &lt;%@-värdet används i skriptavsnitt ersätts två specialobjekt med &lt;% och %>:
+Om du vill tillåta användning av &lt;%@ värde i JavaScript-avsnitt ersätts två specialobjekt med &lt;% och %>:
 
 * `<%@ value object='startScript' %>`
 * `<%@ value object='endScript' %>`
@@ -96,7 +94,7 @@ Exempel:
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#foreach}
+## [!DNL foreach] {#foreach}
 
 Den här instruktionen tillåter upprepning i en array med objekt som lästs in i leveransen för att spåra enskilda länkar som är relaterade till objekten.
 
