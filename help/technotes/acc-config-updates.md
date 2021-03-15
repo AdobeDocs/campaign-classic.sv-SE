@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
+source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 6%
+source-wordcount: '1026'
+ht-degree: 7%
 
 ---
 
@@ -105,7 +105,15 @@ Den gamla autentiseringstjänsten för autentisering har nått slutet av livscyk
 
 **Påverkas du?**
 
-Om dina instanser körs på en **äldre version än Campaign 19.1.8, 20.2.4, Gold Standard 11** använder du en äldre version av Triggers-integrering via Autentisering: **Du måste flytta till Adobe I/O**.
+Om dina instanser körs på en **äldre version än Campaign 19.1.8, 20.2.4, Gold Standard 11** använder du en äldre version av Triggers-integrering via Autentisering: **du måste uppgradera till en nyare version och gå till Adobe I/O**.
+
+Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
+
+* Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
+* Campaign 21.1.1-utgåvan. [Läs mer](../rn/using/latest-release.md)
+* Campaign 20.3.3-utgåvan. [Läs mer](../rn/using/release--20-3.md)
+* Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
+* Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
 **Hur uppdaterar jag?**
 
