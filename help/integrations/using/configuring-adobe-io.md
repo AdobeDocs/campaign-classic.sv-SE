@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
+source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '580'
 ht-degree: 6%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O enligt beskrivningen nedan**. Äldre oAuth-autentiseringsmodeller upphör 30 april 2021. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O enligt beskrivningen nedan**. Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**. [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 >
->Observera att under den här flyttningen till Adobe I/O kan vissa inkommande utlösare gå förlorade.
+>Observera att under den här flyttningen till [!DNL Adobe I/O] kan vissa inkommande utlösare gå förlorade.
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
@@ -36,7 +36,7 @@ Kontrollera att du har:
 
 ## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
-1. Öppna Adobe I/O och logga in med systemadministratörsbehörighet för IMS-organisationen.
+1. Åtkomst till [!DNL Adobe I/O] och inloggning med systemadministratörsbehörighet för IMS-organisationen.
 
    >[!NOTE]
    >
@@ -66,17 +66,22 @@ Kontrollera att du har:
 
 1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett nyckelpar för offentlig och privat nyckel.
 
+   Nycklarna laddas sedan ned automatiskt med ett standardutgångsdatum på 365 dagar. När det har gått ut måste du skapa ett nytt nyckelpar och uppdatera integreringen i konfigurationsfilen. Med alternativ 2 kan du välja att manuellt skapa och överföra din **[!UICONTROL Public key]** med ett längre förfallodatum.
+
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. Ladda upp din offentliga nyckel och klicka på **[!UICONTROL Next]**.
+1. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Välj produktprofilen **Analytics-&lt; Org Name >** och klicka på **[!UICONTROL Save configured API]**.
+1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Klicka sedan på **[!UICONTROL Save configured API]**.
+
+   Mer information om [!DNL Analytics] **[!UICONTROL Product Profiles]** finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Välj **[!UICONTROL Service Account (JWT)]** i projektet och kopiera följande information:
+1. Välj **[!UICONTROL Adobe Analytics]** i projektet och kopiera följande information under **[!UICONTROL Service Account (JWT)]**:
+
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -96,9 +101,17 @@ Om du vill lägga till projektautentiseringsuppgifterna i Adobe Campaign kör du
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
->[!NOTE]
->
->Du bör koda den privata nyckeln i base64 UTF-8-format. Kom ihåg att ta bort den nya raden från nyckeln innan du kodar den, förutom den privata nyckeln. Den privata nyckeln måste vara densamma som användes för att skapa integreringen. Om du vill testa base64-kodningen för den privata nyckeln kan du använda [den här webbplatsen](https://www.base64encode.org/).
+Den privata nyckeln ska kodas i base64 UTF-8-format. För att göra detta:
+
+1. Använd den privata nyckeln som genererats i [steg 1: Skapa/uppdatera projektavsnittet för Adobe I/O](#creating-adobe-io-project). Den privata nyckeln måste vara samma som den som används för att skapa integreringen.
+
+1. Koda den privata nyckeln med följande kommando: ```base64 ./private.key```.
+
+   >[!NOTE]
+   >
+   >Extra rader kan ibland läggas till automatiskt när du kopierar/klistrar in den privata nyckeln. Kom ihåg att ta bort den innan du kodar din privata nyckel.
+
+1. Använd den nyligen genererade privata nyckeln som är kodad i base64 UTF-8-format för att köra kommandot som beskrivs ovan.
 
 ## Steg 3: Uppdatera tagg för pipelines {#update-pipelined-tag}
 
