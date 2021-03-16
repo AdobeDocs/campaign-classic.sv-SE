@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ Som en värdbaserad Gold Standard-användare har du automatiskt tillgång till u
 
 ## Support och andra användbara länkar{#support}
 
-* [Hjälp och support](https://helpx.adobe.com/se/campaign/kb/ac-support.html#acc-support)
+* [Hjälp och support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
 * [Versioner av Kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html)
 * [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
