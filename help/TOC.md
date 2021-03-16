@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
-ht-degree: 56%
+source-wordcount: '2467'
+ht-degree: 57%
 
 ---
 
@@ -114,6 +114,7 @@ ht-degree: 56%
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+   + [Hjälp- och supportalternativ](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
    + Viktiga steg när man skapar en leverans {#key-steps-when-creating-a-delivery}
@@ -185,7 +186,7 @@ ht-degree: 56%
       + [Kom igång med A/B-tester](delivery/using/get-started-a-b-testing.md)
       + [Konfigurera A/B-testning](delivery/using/configuring-a-b-testing.md)
       + Användningsfall {#use-case}
-         + [Om det här användningsexemplet](delivery/using/a-b-testing-use-case.md)
+         + [Om det här användningsfallet](delivery/using/a-b-testing-use-case.md)
          + [Skapa ett målarbetsflöde](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [Konfigurera populationsexempel](delivery/using/a-b-testing-uc-population-samples.md)
          + [Skapa leveransmallar](delivery/using/a-b-testing-uc-delivery-templates.md)
@@ -211,7 +212,7 @@ ht-degree: 56%
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
       + [Så konfigurerar man spårade länkar](delivery/using/how-to-configure-tracked-links.md)
       + Spåra anpassade länkar {#tracking-personalized-links}
-         + [Kom igång med personaliserad länkspårning](delivery/using/tracking-personalized-links.md)
+         + [Kom igång med spårning av personaliserade länkar](delivery/using/tracking-personalized-links.md)
          + [Identifiera spårnings-URL:er](delivery/using/detecting-tracking-urls.md)
          + [Anvisningar för förbearbetning av spårning](delivery/using/pre-processing-instructions.md)
       + [Konfigurera alternativ för URL-spårning](delivery/using/personalizing-url-tracking.md)
@@ -229,7 +230,7 @@ ht-degree: 56%
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Bästa praxis för förnyat engagemang](delivery/using/re-engagement-best-practices.md)
-      + [Blockeringslista-databaser](delivery/using/block-list-databases.md)
+      + [Databaser med blockeringslista](delivery/using/block-list-databases.md)
       + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
