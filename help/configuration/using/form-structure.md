@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -235,7 +235,7 @@ Exempel på villkorssyntax:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneolane.net&#39;&quot;**: testar likhet för strängtypsdata. Jämförelsevärdet måste anges inom citattecken.
 * **visibleIf=&quot;@kön >= 1 och @kön != 2&quot;**: villkor för ett numeriskt värde.
-* **visibleIf=&quot;@boolean1==true eller @boolean2==false&quot;**: test on Boolean fields.
+* **visibleIf=&quot;@boolean1=true eller @boolean2=false&quot;**: test on Boolean fields.
 
 #### Aktiverar behållare {#enabling-container}
 
@@ -555,9 +555,9 @@ Körningen av ett inmatningsformulär initierar ett XML-dokument som innehåller
 
 ### Uppdaterar kontexten {#updating-the-context}
 
-Om du vill ändra formulärets kontext använder du taggen **`<set expr="<value>" xpath="<field>"/>`**, där **`<field>`** är målfältet och **`<value>`** är uppdateringsuttrycket eller uppdateringsvärdet.
+Om du vill ändra formulärets kontext använder du taggen `<set expr="<value>" xpath="<field>"/>`, där `<field>` är målfältet och `<value>` är uppdateringsuttrycket eller uppdateringsvärdet.
 
-Exempel på användning av taggen **`<set>`**:
+Exempel på användning av taggen `<set>`:
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**: placerar värdet för Test på den temporära platsen /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: uppdaterar entiteten för attributet lastName med värdet Test
