@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 93%
+source-wordcount: '4193'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,8 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per må
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## Mars 2021 {#march-2021}
+
+En ny sida har lagts till med riktlinjer och referenser för att få stöd för Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
 
 Ett nytt avsnitt har lagts till med bästa praxis och kontroller för att utföra säkerhets- och sekretessåtgärder. [Läs mer](../../installation/using/get-started-security-privacy.md)
 
@@ -38,13 +40,13 @@ Information har lagts till i **[!UICONTROL Advanced JavaScript]**-aktivitetsavsn
 
 ## Februari 2021 {#release-21.1}
 
-**Dokumentationsuppdateringar i version 21.1**
+**Dokumentationsuppdateringar kommer med utgåvan 21.1**
 
-Den nya funktionen **E-postfeedbacktjänst** (privat beta) finns [här](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
+Den nya funktionen **Feedback via e-post** (privat beta) finns dokumenterad [här](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
 
 Avsnittet **Serverkonfigurationsfilen** har uppdaterats med de konfigurationsparametrar som behövs för att Campaign ska kunna ansluta till en annan tjänst med IMS. [Läs mer](../../installation/using/the-server-configuration-file.md#ims)
 
-I listan över leveransstatus har beskrivningen för **som tagits med i beräkningen av tjänsteleverantören** uppdaterats: den här statusen används nu även för e-postleveranser som skickas med [tjänsten för e-postfeedback](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Läs mer](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+I listan över leveransstatus har beskrivningen av **Har tagits med i beräkningen av tjänsteleverantören** uppdaterats: den här statusen används nu även för e-postleveranser som skickas med tjänsten [Feedback via e-post](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Läs mer](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
 De kortkommandon som finns på den nya inloggningsskärmen för att ansluta till Adobe Campaign är nu dokumenterade. [Läs mer](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
@@ -52,7 +54,7 @@ De kortkommandon som finns på den nya inloggningsskärmen för att ansluta till
 
 Ett nytt avsnitt har lagts till med detaljerad information om hur A/B-tester kan utföras med arbetsflöden. [Läs mer](../../delivery/using/get-started-a-b-testing.md)
 
-Avsnittet Adobe Campaign Enhanced MTA har flyttats [här](../../delivery/using/sending-with-enhanced-mta.md).
+Avsnittet Avancerad MTA i Adobe Campaign har flyttats [hit](../../delivery/using/sending-with-enhanced-mta.md).
 
 En ny sida har lagts till för att ge en översikt över spårningsfunktionerna i [!DNL Campaign Classic]. [Läs mer](../../delivery/using/about-message-tracking.md)
 
@@ -60,7 +62,7 @@ Ett felsökningsavsnitt har lagts till för att hjälpa dig att lösa vanliga pr
 
 Avsnittet **Skicka ett e-postmeddelande** har ordnats om och förtydligats med nya underavsnitt. [Läs mer](../../delivery/using/sending-messages.md)
 
-Information har lagts till om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md).
+Information har lagts till om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som har stöd för spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md).
 
 ## Januari 2021 {#jan-2021}
 
