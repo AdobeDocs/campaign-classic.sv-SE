@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 2%
 
 ---
@@ -414,5 +414,5 @@ Så här utför du en komplex sammanfogning:
 
 * [Vanliga frågor om uppgradering av bygge](../../platform/using/faq-build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
-* [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
 * [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html)
