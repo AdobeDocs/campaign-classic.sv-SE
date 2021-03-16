@@ -6,9 +6,9 @@ description: Kompatibilitetsmatris för Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 07a13f206ada24dbfe54be754afe4f97834a23e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
 ht-degree: 100%
 
