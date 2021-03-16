@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Behöver du hjälp eftersom du arbetar med Campaign Classic? Läs de tio vanliga
 * [Bläddra bland självhjälpsalternativ](../../platform/using/tutorials.md#how-to-videos)
 * [Läs avsnittet komma igång och användningsfall](../../platform/using/tutorials.md#step-by-step-guides)
 * Hittar du inte svaret? [Fråga experten](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* Behöver du support? [Mer information finns i hjälpen och supportalternativen i Campaign](https://helpx.adobe.com/se/campaign/kb/ac-support.html#acc-support)
+* Behöver du support? [Mer information finns i hjälpen och supportalternativen i Campaign](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
 
 ## 1. Hur uppgraderar jag Campaign till den senaste versionen? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
