@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
+source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 14%
@@ -38,8 +38,8 @@ För varje leverans finns en dedikerad kontrollpanel tillgänglig. Du kan överv
 
 Flera riktlinjer bör följas för att leveranserna ska gå bra. Vanliga problem som kan uppstå när du skickar leveranser är också tillgängliga för att hjälpa dig att skicka leveranser på ett effektivt sätt.
 
-* [Leveransresultat och bästa praxis](../../delivery/using/list-of-deliveries.md)
-* [Felsökning av leverans](../../delivery/using/delivery-dashboard.md)
+* [Leveransresultat och bästa praxis](../../delivery/using/delivery-performances.md)
+* [Felsökning av leverans](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
