@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats d
 
 Behörigheterna gäller för operatorprofiler eller operatorgrupper.
 
-De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. Mer information om säkerhetszoner i [den här sidan](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutningsläge till Adobe Campaign. Mer information om säkerhetszoner i [den här sidan](../../installation/using/security-zones.md).
 
 Det finns två typer av behörigheter som du kan ge en användare:
 
