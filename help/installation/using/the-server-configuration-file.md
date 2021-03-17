@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Den övergripande konfigurationen för Adobe Campaign definieras i filen **serve
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosted-model.md).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller beskrivs i det här [avsnittet](../../installation/using/hosting-models.md).
 
 De första parametrarna finns inuti noden **shared**. Dessa är relaterade till instansen. De kan användas av alla nlserver-kommandon (nlserver web, nlserver wfserver osv.). De andra avsnitten är relaterade till ett specifikt underkommando på servern.
 
@@ -2193,7 +2193,7 @@ Här är de olika parametrarna för noden **repair**. Detta är konfigurationen 
 
 Här är de olika parametrarna för noden **securityZone**.
 
-Mer information finns i [Definiera säkerhetszoner](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Mer information finns i [Definiera säkerhetszoner](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ Här är standardkonfigurationen:
 
 Här är de olika parametrarna för noden **securityZone > subNetwork**.
 
-Mer information finns i [Definiera säkerhetszoner](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Mer information finns i [Definiera säkerhetszoner](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
