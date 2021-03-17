@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1156'
 ht-degree: 3%
 
 ---
@@ -29,8 +29,6 @@ ht-degree: 3%
 >
 >
 Följ stegen i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
-
-Mer information om hur du använder användargränssnittet för självbetjäning för säkerhetszoner för att hantera poster i konfigurationen för VPN-säkerhetszon finns i [den här tekniken](https://helpx.adobe.com/se/campaign/kb/configuring-security-zones-self-service.html).
 
 * Kontrollera att din omvända proxy inte tillåts i subNetwork. Om så är fallet kommer **all**-trafik att identifieras från den här lokala IP-adressen, så den kommer att betraktas som tillförlitlig.
 
@@ -127,6 +125,6 @@ Med Adobe Campaign kan du ange ett vanligt lösenord i `<dbcnx .../>`-elementet.
 
 Som standard fäster inte Adobe Campaign en session vid en viss IP-adress, men du kan aktivera den för att förhindra att sessionen blir stulen. I filen [serverConf.xml](../../installation/using/the-server-configuration-file.md) anger du attributet checkIPConsistent till **true** i noden `<authentication>`.
 
-Som standard använder inte Adobe Campaign MTA en skyddad anslutning för att skicka innehåll till SMTP-servern. Du måste aktivera den här funktionen (kan minska leveranshastigheten). Det gör du genom att ange enableTLS till tr**ue i noden `<smtp ...>`.
+Som standard använder inte Adobe Campaign MTA en skyddad anslutning för att skicka innehåll till SMTP-servern. Du måste aktivera den här funktionen (kan minska leveranshastigheten). Om du vill göra det anger du **enableTLS** till **true** i noden `<smtp ...>`.
 
 Du kan minska livstiden för en session i autentiseringsnoden (attributet sessionTimeOutSec).
