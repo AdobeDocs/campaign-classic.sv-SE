@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Arbetsflödet för databasrensning raderar föråldrade data för att undvika ex
 
 ## 3. Hur konfigurerar jag säkerhetszoner? {#how-can-i-configure-security-zones-}
 
-Självbetjäningsgränssnittet i Säkerhetszoner kan användas för att hantera poster i konfigurationen av VPN-säkerhetszoner för en driftsättning av Adobe Campaign Classic. Läs [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones) för att veta mer om säkerhetszoner i Campaign.
+Självbetjäningsgränssnittet i Säkerhetszoner kan användas för att hantera poster i konfigurationen av VPN-säkerhetszoner för en driftsättning av Adobe Campaign Classic. Läs [det här avsnittet](../../installation/using/security-zones.md) för att veta mer om säkerhetszoner i Campaign.
 
 [Klicka här för att läsa mer](https://helpx.adobe.com/se/campaign/kb/configuring-security-zones-self-service.html) om självbetjäningsgränssnittet i Säkerhetszoner.
 
