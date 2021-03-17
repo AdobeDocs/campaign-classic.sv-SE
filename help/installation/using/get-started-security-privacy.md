@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Kom igång med säkerhet och sekretess {#get-started-security-privacy}
 
-I det här avsnittet beskrivs de viktigaste elementen för att kontrollera säkerhet och integritet.
+I det här avsnittet beskrivs de viktigaste elementen för att kontrollera säkerhet och integritet. Vissa konfigurationer kan bara utföras av lokala kunder.
 
 ## Integritet
 
@@ -54,7 +54,7 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: Lär dig hur du lägger till bilder på dina offentliga landningssidor och prenumerationssidor.
+* **Lägg till bildtexter i webbprogram**: Lär dig hur du lägger till bilder på dina offentliga landningssidor och prenumerationssidor.
 
 [Läs mer](../../installation/using/scripting-coding-guidelines.md)
 
@@ -92,9 +92,9 @@ Konfigurationen måste utföras på alla servrar. Konfigurationsfilerna är av t
 
 Flera metodtips bör följas när du konfigurerar webbservern (Apache/IIS):
 
-* Inaktivera tidigare SSL-version och ciphers:
-* Ta bort metoden TRACE:
-* Ta bort banderollen:
-* Begränsa frågestorleken för att förhindra att viktiga filer överförs:
+* Inaktivera gammal SSL-version och ciphers
+* Ta bort metoden TRACE
+* Ta bort banderollen
+* Begränsa frågestorleken för att förhindra att viktiga filer överförs
 
 [Läs mer](../../installation/using/web-server-configuration.md)
