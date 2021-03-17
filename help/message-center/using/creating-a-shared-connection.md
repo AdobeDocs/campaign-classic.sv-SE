@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 2%
@@ -93,7 +93,7 @@ Så här skapar du ett externt konto av instanstypen körning:
 
 För att kontrollinstansen ska kunna ansluta till körningsinstansen utan att behöva ange ett lösenord anger du bara IP-adressen för kontrollinstansen i **Message Center**-åtkomsträttighetsavsnittet. Tomma lösenord tillåts dock inte som standard.
 
-Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>`-typanslutningar. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>`-typanslutningar. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Om du vill använda flera kontrollinstanser måste den här konfigurationen utf�
 
    >[!NOTE]
    >
-   >**mc1** - och  **mc2** -operatorer måste ha  **[!UICONTROL Message Center execution]** rättigheter och kan inte komma åt Adobe Campaign klientkonsol. En operator måste alltid länkas till en säkerhetszon. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >**mc1** - och  **mc2** -operatorer måste ha  **[!UICONTROL Message Center execution]** rättigheter och kan inte komma åt Adobe Campaign klientkonsol. En operator måste alltid länkas till en säkerhetszon. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
 
 1. För varje operator markerar du rutan **[!UICONTROL Restrict to information found in sub-folders of]** och väljer lämplig mapp (**Mapp 1** för operatorn **mc1** och **Mapp 2** för operatorn **mc2**).
 
