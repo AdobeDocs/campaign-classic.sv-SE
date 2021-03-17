@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -188,7 +188,7 @@ Delen `<service>` beskriver tjänsten XtkQueryDef med dess URI på URL:en för A
 
 ## Anslutning {#connectivity}
 
-Adobe Campaign har ökat säkerheten för autentiseringsmekanismer genom att införa säkerhetszoner (se **Definiera säkerhetszoner** i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones)) samt inställningar för sessionshantering.
+Adobe Campaign har ökat säkerheten för autentiseringsmekanismer genom att införa säkerhetszoner (se **Definiera säkerhetszoner** i [det här avsnittet](../../installation/using/security-zones.md)) samt inställningar för sessionshantering.
 
 Det finns två autentiseringslägen:
 
