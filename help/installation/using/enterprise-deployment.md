@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 0%
+source-wordcount: '1221'
+ht-degree: 1%
 
 ---
 
@@ -165,12 +165,7 @@ Stegen för installation av den första servern är:
 
    Mer information finns i [Kampanjserverkonfiguration](../../installation/using/campaign-server-configuration.md).
 
-1. Kopiera klientkonsolens installationsprogram (**setup-client-7.XX**, **YYY.exe** for v7 eller **setup-client-6.XX**, **YYYY.exe** for v6.1) till **/data/nl/enl g/jsp**-mapp.
-
-   Mer information finns i följande avsnitt:
-
-   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: [Tillgänglighet för klientkonsolen för Windows](../../installation/using/client-console-availability-for-windows.md).
+1. Kopiera klientkonsolens installationsprogram (**setup-client-7.XX**, **YYY.exe** for v7 eller **setup-client-6.XX**, **YYYY.exe** for v6.1) till **/data/nl/enl g/jsp**-mapp. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
 1. Starta Adobe Campaign-servern (**net start nlserver6** i Windows, **/etc/init.d/nlserver6 start** i Linux) och kör kommandot **nlserver pdump** en gång till för att kontrollera om alla aktiverade moduler finns.
 
@@ -194,16 +189,11 @@ Stegen för installation av den första servern är:
 
 1. Testa webbmodulen **nlserver** med URL:en: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
-   Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet.
+   Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
    Ange **intern**-inloggning och tillhörande lösenord när du kommer till åtkomstkontrollsidan.
 
    ![](assets/s_ncs_install_access_client.png)
-
-   Mer information finns i följande avsnitt:
-
-   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### Installera och konfigurera programservern 2 {#installing-and-configuring-the-application-server-2}
 
