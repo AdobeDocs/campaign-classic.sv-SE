@@ -6,7 +6,7 @@ description: Lär dig hur du konfigurerar Campaign-AEM-integrering
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -52,7 +52,7 @@ Du måste konfigurera en säkerhetszon så att den här operatorn kan ansluta ti
 
 >[!CAUTION]
 >
->Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationshandboken [guide](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+>Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationshandboken [guide](../../installation/using/security-zones.md).
 
 Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet. Om du använder Campaign lokalt följer du stegen nedan:
 
