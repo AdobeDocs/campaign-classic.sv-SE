@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1159'
 ht-degree: 2%
 
 ---
@@ -116,7 +116,7 @@ Så här uppdaterar du Adobe Campaign i en ny version när en ny version leverer
 * [Uppdatera](#perform-an-update),
 * [Starta om webbservern](#reboot-the-web-server).
 
-Information om hur du uppdaterar klientkonsolen finns i [det här avsnittet](../../installation/using/client-console-availability-for-linux.md).
+[Läs mer om tillgänglighet](../../installation/using/client-console-availability-for-windows.md) för klientkonsolen.
 
 >[!NOTE]
 >
