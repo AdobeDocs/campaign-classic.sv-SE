@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Adobe Campaign v7 innehåller begreppet **säkerhetszoner**. Varje användare m�
 
 **Efter uppgraderingen**  (innan servern startas om) måste du konfigurera säkerhetszonerna.
 
-Säkerhetszonskonfigurationen finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Säkerhetszonskonfigurationen finns i [det här avsnittet](../../installation/using/security-zones.md).
 
 ### Användarlösenord {#user-passwords}
 
