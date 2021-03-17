@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -101,11 +101,6 @@ Med alternativet **[!UICONTROL The file content is personalized and converted in
 Använd följande konfigurationssteg för den här typen av bifogad fil:
 
 1. Markera filen som ska överföras.
-
-   >[!NOTE]
-   >
-   >Källfilen måste skapas i LibraryOffice. Instansen måste konfigureras enligt de krav som anges i [det här avsnittet](../../installation/using/before-starting.md).
-
 1. Ange etiketten om det behövs.
 1. Välj **[!UICONTROL Upload file on the server]** och klicka sedan på **[!UICONTROL Update on server]** för att starta överföringen.
 1. Du kan visa en förhandsgranskning. Välj en mottagare om du vill göra det.
