@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 57%
+source-wordcount: '2470'
+ht-degree: 55%
 
 ---
 
@@ -380,11 +380,6 @@ ht-degree: 57%
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
-   + Anslut via en Adobe ID {#connecting-via-an-adobe-id}
-      + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Konfigurera Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementera Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
-      + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
    + ACS-koppling {#acs-connector}
       + [[!DNL ACS Connector] Principer och datacykel](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
@@ -562,7 +557,7 @@ ht-degree: 57%
       + [Skapa en testmiljö](interaction/using/creating-a-test-environment.md)
       + [Krokar](interaction/using/hooks.md)
       + [Distribuerade arkitekturer](interaction/using/distributed-architectures.md)
-      + [Databuffertzon](interaction/using/data-buffer-zone.md)
+      + [Konfigurering av databuffert](installation/using/interaction---data-buffer.md)
    + Användningsfall {#case-study}
       + [Presentationsregler](interaction/using/presentation-rules.md)
       + [Erbjudanden på en inkommande kanal](interaction/using/offers-on-an-inbound-channel.md)
@@ -620,16 +615,8 @@ ht-degree: 57%
    + Arkitekturprinciper {#architecture-and-hosting-models}
       + [Allmän arkitektur](installation/using/general-architecture.md)
       + Värdbaserade modeller{#hosting-models-lp}
-         + [Om värdbaserade modeller](installation/using/hosting-models.md)
-         + [Hybridmodell](installation/using/hybrid-model.md)
-         + [Värdbaserad modell](installation/using/hosted-model.md)
+         + [Kampanjvärdmodeller](installation/using/hosting-models.md)
          + [Funktionsmatris](installation/using/capability-matrix.md)
-   + Riktlinjer för driftsättning {#deployment-guidelines}
-      + [Förhandskrav](installation/using/before-starting.md)
-      + [Databasserver](installation/using/database.md)
-      + [Programserver](installation/using/application-server.md)
-      + [Meddelandeserver](installation/using/messaging-server.md)
-      + [Nätverkskonfiguration](installation/using/network-configuration.md)
    + Driftsättningstyper {#deployment-types-}
       + [Om driftsättningstyper](installation/using/about-deployment-types.md)
       + [Fristående driftsättning](installation/using/standalone-deployment.md)
@@ -637,58 +624,70 @@ ht-degree: 57%
       + [Driftsättning i företagsklass](installation/using/enterprise-deployment.md)
       + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campaign i Windows {#installing-campaign-in-windows-}
-      + [Innan du installerar Campaign i Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
-      + [Installera servern](installation/using/installing-the-server.md)
-      + [Integrera i en webbserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
-      + [Klientkonsolens tillgänglighet för Windows](installation/using/client-console-availability-for-windows.md)
-      + [Installera klientkonsolen](installation/using/installing-the-client-console.md)
-   + Campaign i Linux  {#installing-campaign-in-linux-}
-      + [Innan du installerar Campaign i Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
-      + [Installera paket](installation/using/installing-packages-with-linux.md)
-      + [Integrera i en webbserver (Linux)](installation/using/integration-into-a-web-server-for-linux.md)
-      + [Klientkonsolens tillgänglighet för Linux](installation/using/client-console-availability-for-linux.md)
-   + Inledande konfiguration {#initial-configuration}
+   + Checklista för säkerhet och sekretess {#security-privacy}
+      + [Kom igång med säkerhet och integritet](installation/using/get-started-security-privacy.md)
+      + [Personalisering och integritet](installation/using/privacy.md)
+      + [Säker åtkomsthantering](installation/using/access-management.md)
+      + [Riktlinjer för skript och kodning](installation/using/scripting-coding-guidelines.md)
+      + [Nätverk, databaser och SSL/TLS](installation/using/network-database.md)
+      + [Säkerhetsinställningar för server](installation/using/server-configuration.md)
+      + [Säkerhetsinställningar för webbserver](installation/using/web-server-configuration.md)
+   + Installera kampanj (lokal){#install-campaign-on-prem}
+      + Riktlinjer för driftsättning {#deployment-guidelines}
+         + [Databasserver](installation/using/database.md)
+         + [Programserver](installation/using/application-server.md)
+         + [Meddelandeserver](installation/using/messaging-server.md)
+         + [Nätverkskonfiguration](installation/using/network-configuration.md)
+      + Campaign i Windows {#installing-campaign-in-windows-}
+         + [Komma igång](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+         + [Installera servern](installation/using/installing-the-server.md)
+         + [Integrera i en webbserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
+         + [Klientkonsolens tillgänglighet för Windows](installation/using/client-console-availability-for-windows.md)
+      + Campaign i Linux {#installing-campaign-in-linux-}
+         + [Förhandskrav](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+         + [Installera paket](installation/using/installing-packages-with-linux.md)
+         + [Integrera i en webbserver](installation/using/integration-into-a-web-server-for-linux.md)
+      + [Hantera tidszoner](installation/using/time-zone-management.md)
+      + [Installera en server för mellanlagring](installation/using/mid-sourcing-server.md)
+   + Distribuera kampanj (lokalt) {#initial-configuration}
       + [Om inledande konfiguration](installation/using/about-initial-configuration.md)
       + [Skapa en instans och logga in](installation/using/creating-an-instance-and-logging-on.md)
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
-      + [Konfiguration av kampanjservern](installation/using/campaign-server-configuration.md)
+      + [Konfigurera Campaign-server](installation/using/campaign-server-configuration.md)
       + [Distribuera en instans](installation/using/deploying-an-instance.md)
-      + [Installera inbyggda Campaign Classic-paket](installation/using/installing-campaign-standard-packages.md)
-   + Ytterligare konfigurationer {#additional-configurations}
-      + [Konfigurera Campaign-server](installation/using/configuring-campaign-server.md)
-      + [Anslut via LDAP](installation/using/connecting-through-ldap.md)
+      + [Installera inbyggda paket](installation/using/installing-campaign-standard-packages.md)
+   + Konfigurera kampanj {#additional-configurations}
+      + [Inställningar för kampanjserver](installation/using/configuring-campaign-server.md)
+      + [Definiera säkerhetszoner](installation/using/security-zones.md)
       + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
-      + [E-postarkivering](installation/using/email-archiving.md)
-      + [Hantera tidszoner](installation/using/time-zone-management.md)
+      + [Konfigurera e-postkopia](installation/using/email-archiving.md)
       + [Konfigurera SpamAssassin](installation/using/configuring-spamassassin.md)
-      + [Server för mid-sourcing](installation/using/mid-sourcing-server.md)
-      + [Interaktion – databuffert](installation/using/interaction---data-buffer.md)
+   + Anslut till kampanj{#connect-to-campaign}
+      + [Installera klientkonsolen](installation/using/installing-the-client-console.md)
+      + Anslut via en Adobe ID {#connecting-via-an-adobe-id}
+         + [Om [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Konfigurera Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
+         + [Implementera Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
+         + [IMS-felsökning](integrations/using/ims-troubleshooting.md)
+      + [Anslut via LDAP](installation/using/connecting-through-ldap.md)
+   + Anslut kampanj till externa system {#accessing-external-database}
       + [Konfigurera externa konton](installation/using/external-accounts.md)
-   + Åtkomst till en extern databas {#accessing-external-database}
-      + [Kom igång med FDA](installation/using/about-fda.md)
-      + Konfigurationsriktlinjer {#config-databases}
-         + [Konfigurationssteg](installation/using/configure-fda.md)
-         + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
-         + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
-         + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
-         + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
-         + [Konfigurera Netezza](installation/using/configure-fda-netezza.md)
-         + [Konfigurera Sybase IQ](installation/using/configure-fda-sybase.md)
-         + [Konfigurera Teradata](installation/using/configure-fda-teradata.md)
-         + [Konfigurera SAP HANA](installation/using/configure-fda-sap-hana.md)
-      + [Fjärråtkomsträttigheter](installation/using/remote-database-access-rights.md)
-      + [Anslut till databasen](installation/using/connecting-to-database.md)
-      + [Skapa dataschemat](installation/using/creating-data-schema.md)
-      + [Definiera datamappning](installation/using/defining-data-mapping.md)
-   + Checklista för säkerhet och sekretess {#security-privacy}
-      + [Kom igång med säkerhet och integritet](installation/using/get-started-security-privacy.md)
-      + [Integritet](installation/using/privacy.md)
-      + [Åtkomsthantering](installation/using/access-management.md)
-      + [Riktlinjer för skript och kodning](installation/using/scripting-coding-guidelines.md)
-      + [Nätverk, databaser och SSL/TLS](installation/using/network-database.md)
-      + [Serverkonfiguration](installation/using/server-configuration.md)
-      + [Webbserverkonfiguration](installation/using/web-server-configuration.md)
+      + Konfigurera åtkomst till federerade data{#configure-fda}
+         + [Kom igång med Federated Data Access](installation/using/about-fda.md)
+         + Konfigurationsriktlinjer {#config-databases}
+            + [Konfigurationssteg](installation/using/configure-fda.md)
+            + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
+            + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
+            + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
+            + [Konfigurera Netezza](installation/using/configure-fda-netezza.md)
+            + [Konfigurera Sybase IQ](installation/using/configure-fda-sybase.md)
+            + [Konfigurera Teradata](installation/using/configure-fda-teradata.md)
+            + [Konfigurera SAP HANA](installation/using/configure-fda-sap-hana.md)
+         + [Fjärråtkomsträttigheter](installation/using/remote-database-access-rights.md)
+         + [Anslut till databasen](installation/using/connecting-to-database.md)
+         + [Skapa dataschemat](installation/using/creating-data-schema.md)
+         + [Definiera datamappning](installation/using/defining-data-mapping.md)
    + Tillägg {#appendices}
       + [Fil för serverkonfiguration](installation/using/the-server-configuration-file.md)
       + [Nätverksslutpunkter i Campaign](installation/using/campaign-network-endpoints.md)
