@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Exempelelement att kontrollera:
 * Attributet **tabellutrymme** tar tillbaka sina värden som standard, det vill säga de som definieras i distributionsguiden.
 * Om du har lagt till en referensvy i NmsRecipient-tabellen måste du ta bort den innan du migrerar.
 
-Den här varningen gäller även Oracle-användare: Om du har lagt till alternativet **usetimestamptz:1** under en efteruppgradering (se [Tidszoner](../../migration/using/general-configurations.md#time-zones)), återskapas alla tabeller som innehåller minst ett **datum+tid**-fält.
+Denna varning gäller även användare av Oraclet: Om du har lagt till alternativet **usetimestamptz:1** under en efteruppgradering (se [Tidszoner](../../migration/using/general-configurations.md#time-zones)), återskapas alla tabeller som innehåller minst ett **datum+tid**-fält.
 
 ## Före migreringen {#before-the-migration}
 
@@ -39,7 +39,7 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
 
    Om du vill använda läget &quot;multi-timezone&quot; läser du avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones).
 
-   Om du använder Oracle som databas kontrollerar du att Oracle tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. Mer information finns i avsnittet [Oracle](../../migration/using/general-configurations.md#oracle).
+   Om du använder Oracle som databas kontrollerar du att Oraclets tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. Mer information finns i avsnittet [Oracle](../../migration/using/general-configurations.md#oracle).
 
 * Säkerhetszoner
 
@@ -109,7 +109,7 @@ När du har kört **postupgrade** måste följande element beaktas och motsvaran
 
 * Säkerhetszoner.
 
-   Innan du startar servern måste du konfigurera säkerhetszonerna. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#defining-security-zones) och [Security](../../migration/using/general-configurations.md#security).
+   Innan du startar servern måste du konfigurera säkerhetszonerna. Mer information finns i [det här avsnittet](../../installation/using/security-zones.md) och [Security](../../migration/using/general-configurations.md#security).
 
 * Scheman
 
