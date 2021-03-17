@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 0%
+source-wordcount: '1090'
+ht-degree: 1%
 
 ---
 
@@ -164,12 +164,7 @@ Använd följande steg:
 
    Mer information finns i [Kampanjserverkonfiguration](../../installation/using/campaign-server-configuration.md).
 
-1. Kopiera klientkonsolens installationsprogram (**setup-client-7.XX**, **YYY.exe** for v7 eller **setup-client-6.XX**, **YYYY.exe** for v6.1) till **/data/nl/enl g/jsp**-mapp.
-
-   Mer information finns i följande avsnitt:
-
-   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md)
+1. Kopiera klientkonsolens installationsprogram (**setup-client-7.XX**, **YYY.exe** for v7 eller **setup-client-6.XX**, **YYYY.exe** for v6.1) till **/data/nl/enl g/jsp**-mapp. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
@@ -212,14 +207,9 @@ Använd följande steg:
 
    Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet.
 
-   Ange **intern**-inloggning och tillhörande lösenord när du kommer till åtkomstkontrollsidan.
+   Ange **intern**-inloggning och tillhörande lösenord när du kommer till åtkomstkontrollsidan. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
    ![](assets/s_ncs_install_access_client.png)
-
-   Mer information finns i följande avsnitt:
-
-   * För Linux: [Klientkonsoltillgänglighet för Linux](../../installation/using/client-console-availability-for-linux.md)
-   * För Windows: [Klientkonsolens tillgänglighet för Windows](../../installation/using/client-console-availability-for-windows.md)
 
 1. Starta Adobe Campaign klientkonsol (från föregående nedladdningssida eller direkt från servern för en Windows-installation), ange serveranslutningens URL till https://console.campaign.net och anslut med inloggningen **internal**.
 
