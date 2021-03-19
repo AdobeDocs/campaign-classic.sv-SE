@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic – dokumentationsuppdateringar
-description: Den här sidan visar alla nya funktioner och dokumentationsuppdateringar för varje version av Adobe Campaign Classic
-audience: rns
-content-type: reference
-topic-tags: latest-documentation-updates
+description: På den här sidan visas alla nya funktioner och uppdateringar i Adobe Campaign Classic-dokumentationen
+feature: Översikt
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '4193'
-ht-degree: 97%
+source-wordcount: '4194'
+ht-degree: 96%
 
 ---
 
