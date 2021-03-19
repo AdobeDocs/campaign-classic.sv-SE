@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Senaste versionen
 description: Senaste versionsinformationen om Campaign Classic
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Översikt
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 99%
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Om du är intresserad av att delta i den här privata betaversionen ska du fylla
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* Korrigerade ett problem som förhindrade att nya leveranser med måldatapersonalisering skickades.
+* Korrigerade ett fel som förhindrade att nya leveranser med måldataanpassning skickades (NEO-30323).
 * Korrigerade ett problem där flera krascher inträffade i marknadsföringsinstansen som orsakade en minnesdump.
 * Korrigerade ett problem som medförde att arbetsflödet **Spårning** misslyckades med följande fel (NEO-25206):
 
