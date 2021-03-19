@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 'Gold Standard-version '
+title: Versionsinformation om Gold Standard
 description: Versionsinformation om Campaign Classic Gold Standard
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Översikt
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 88%
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
 
 # Versionen Gold Standard{#gold-standard}
 
-Gold Standard är versionen av Campaign Classic med långsiktig support. Som värdbaserad Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den senaste stabila versionen utan någon åtgärd. Kunder med lokala installationer eller hybridlösningar kan också dra nytta av Gold Standard-versioner.
-
-Om du migrerar från en gammal version rekommenderar vi att du uppgraderar till den här versionen först.
-
-Den här sidan listar Gold Standard-versioner.
-
-Se [den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) för mer information om Campaign Gold Standard.
+Den här sidan listar Gold Standard-versioner. Läs mer om Campaign Gold Standard [på den här sidan](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard version 11{#gs-11}
 
@@ -46,7 +40,7 @@ _22 december 2020_
 >
 > * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.**
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre oAuth-autentiseringsmodeller upphör **30 april 2021**.
+> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign upphör den 30 november 2021 **.**
 
 >
 >
