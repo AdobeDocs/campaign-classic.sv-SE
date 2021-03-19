@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2474'
 ht-degree: 55%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 55%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + Gold Standard-version {#gs-release}
+      + [Vad är Gold Standard?](rn/using/gs-overview.md)
       + [Versionsinformation om Gold Standard](rn/using/gold-standard.md)
       + [Kompatibilitetsmatris för Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
