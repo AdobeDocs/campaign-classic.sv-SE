@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 7%
@@ -25,6 +25,7 @@ Som lokal kund/hybridkund måste du av säkerhetsskäl uppgradera till en av ver
 >[!NOTE]
 >
 >Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du har frågor om dessa ändringar.
+
 
 ## Säkerhetsuppdateringar
 
@@ -101,7 +102,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 ## Integrering med utlösare från Experience Cloud
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Integreringsautentiseringen för utlösare, som ursprungligen baserades på autentiseringsinställningarna för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 april 2021 **.** [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 november 2021 **.** [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Påverkas du?**
 
