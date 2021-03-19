@@ -1,15 +1,18 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Version 18.6
-description: Version 18.6
+title: Versionsinformation för Campaign 18.6
+description: Versionsinformation för Campaign 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
+feature: Översikt
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '803'
 ht-degree: 6%
 
 ---
@@ -37,7 +40,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> Frågeband<br /> </td> 
-   <td> <p>När flera Campaign-användare ansluter till samma FDA Teradata-externa konto kan du nu skicka ett frågeband (nyckel/värde-par) som är specifikt för varje användare. Varje gång en Campaign-användare utför en fråga i Teradata-databasen kan Adobe Campaign nu skicka metadata som är kopplade till användaren. Dessa data, som består av en lista med nycklar och värden, kan sedan användas av Teradata-administratörer för revision eller för att hantera åtkomsträttigheter, till exempel.</p><p>Mer information finns i den <a href="../../installation/using/external-accounts.md">detaljerade dokumentationen</a>.</p> </td>
+   <td> <p>När flera Campaign-användare ansluter till samma externa FDA-Teradata-konto kan du nu skicka ett frågeband (nyckel/värde-par) som är specifikt för varje användare. Varje gång en Campaign-användare utför en fråga i Teradata-databasen kan Adobe Campaign nu skicka metadata som är kopplade till användaren. Dessa data, som består av en lista med nycklar och värden, kan sedan användas av Teradata-administratörer för revision eller för att hantera åtkomsträttigheter, till exempel.</p><p>Mer information finns i den <a href="../../installation/using/external-accounts.md">detaljerade dokumentationen</a>.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -60,12 +63,12 @@ ht-degree: 6%
 
 Frågeränder
 
-En specifik nyckel (PROXYUSER eller PROXYROLE) används för att associera en Teradata-användare eller -roll med en Campaign-användare. En ny behörighet har lagts till för att använda den här proxyanvändaren/rollen. Du måste lägga till behörigheten GRANT CONNECT VIA till databaskontot (den som definieras i Teradata externa konto).
+En specifik nyckel (PROXYUSER eller PROXYROLE) används för att associera en Teradata användare eller roll med en Campaign-användare. En ny behörighet har lagts till för att använda den här proxyanvändaren/rollen. Du måste lägga till behörigheten GRANT CONNECT VIA till databaskontot (den som definieras i Teradatans externa konto).
 
-En ny flik har lagts till i Teradata externa konton. Fliken **[!UICONTROL Query banding]** innehåller följande alternativ:
+En ny flik har lagts till i Teradatans externa konton. Fliken **[!UICONTROL Query banding]** innehåller följande alternativ:
 
 * **[!UICONTROL Active]**: om du vill aktivera funktionen.
-* **[!UICONTROL Default]**: Ange ett standardfrågeband som ska användas om en användare inte har något associerat frågeband. Om det inte finns någon standardfrågebanding definierad kan de användare som inte har någon associerad frågebanding inte använda Teradata.
+* **[!UICONTROL Default]**: Ange ett standardfrågeband som ska användas om en användare inte har något associerat frågeband. Om inget standardfrågeband har definierats kan de användare som inte har något associerat frågeband inte använda Teradata.
 * **[!UICONTROL Users]**: för varje användare anger du ett frågefält. Du kan lägga till så många nyckel-/värdepar du behöver. Till exempel: &quot;priority=1;workload=high;&quot;
 
 Mer information om frågeflätning finns i följande artiklar:
