@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Du kan konfigurera lagringskatalogen (**var** katalog) för Adobe Campaign-data 
 
    Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
-## Aktiverar processer {#enabling-processes}
+## Aktivera processer {#enabling-processes}
 
 Adobe Campaign-processer på servern aktiveras (och inaktiveras) via filerna **config-default.xml** och **`config-<instance>.xml`**.
 
@@ -122,6 +122,6 @@ Leveransparametrarna måste konfigureras i mappen **serverConf.xml**.
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Övriga leveransparametrar som är tillgängliga i den här filen presenteras i [Anpassa leveransparametrar](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+Övriga leveransparametrar som är tillgängliga i den här filen visas i [Anpassa leveransparametrar](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 Se även [E-postleverans](../../installation/using/email-deliverability.md).
