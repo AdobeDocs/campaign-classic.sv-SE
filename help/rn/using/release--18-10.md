@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Version 18.10
-description: Version 18.10
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Versionsinformation för Campaign 18.10
+description: Versionsinformation för Campaign 18.10
+feature: Översikt
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2375'
 ht-degree: 7%
 
 ---
@@ -220,9 +220,9 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Korrigerade ett problem som kunde förhindra sökning av en mottagare på skärmen **Profiler och Mål**. (NEO-8228)
 * Korrigerade ett problem som kunde leda till ett timeout-fel vid åtkomst till mappen Händelsehistorik i ett stort antal poster. (NEO-11738)
 * Korrigerade ett problem som kunde leda till att mottagare av LINE-leverans felaktigt returnerades som &quot;Onåbar&quot;. (NEO-10833)
-* Ett problem har korrigerats när en arbetsflödesfråga kördes med en extra kolumn i Oracle. (NEO-11615)
+* Ett problem har korrigerats när en arbetsflödesfråga kördes med en extra kolumn i Oraclet. (NEO-11615)
 * En förbättring har gjorts för att säkerställa att stängda anslutningar inte sparas i anslutningspoolen under för lång tid. (NEO-11392)
-* Ett problem har korrigerats vid användning av en arbetsflödesaktivitet med mål (fråga, datainläsning (RDBMS) osv.) via FDA ansluts till en extern Oracle-tabell som innehåller UTF8-tecken (i tabellnamnet, fältnamnet osv.) och som även innehåller en primärnyckelbegränsning med ett systemgenererat standardbegränsningsnamn. (NEO-10714)
+* Ett problem har korrigerats vid användning av en arbetsflödesaktivitet med mål (fråga, datainläsning (RDBMS) osv.) via FDA ansluts till en extern Oraclena tabell som innehåller UTF8-tecken (i tabellnamnet, fältnamnet osv.) och som även innehåller en primärnyckelbegränsning med ett systemgenererat standardbegränsningsnamn. (NEO-10714)
 * Korrigerade ett problem som kunde förhindra att HTML-innehållet i en leverans togs bort. (NEO-11327)
 * Korrigerade ett problem med förhandsgranskningen av XML- och CSV-filer i ett direktbrev efter att en kampanj har körts. (NEO-11290)
 * Ett problem har korrigerats vid sortering av data i en arbetsflödesaktivitet för berikning. (NEO-11394)
@@ -233,7 +233,7 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Ett problem som uppstod när datainläsningsaktiviteten användes för att importera en kolumn med datatypen&quot;time&quot; har korrigerats: tidsavgränsaren återställs även sedan den tagits bort. (NEO-10743)
 * Ett problem som gjorde att mappen Leveranser inte kunde visas i körningsmappslistan i leveransegenskaperna när en återkommande leverans redigerades har åtgärdats. (NEO-11094)
 * Korrigerade ett problem som gjorde att visningsfönstret inte kunde visa mer än 200 poster som resultatmål för en Query-aktivitet i ett arbetsflöde. (NEO-11195)
-* Korrigerade ett fel i Oracle som förhindrade att en DELETE-fråga kördes med över 1 000 valda element. (NEO-11171)
+* Korrigerade ett fel i Oraclet som förhindrade att en DELETE-fråga kördes med fler än 1 000 markerade element. (NEO-11171)
 * Korrigerade ett problem som ledde till att URL:er kodades som spårade URL:er i de ytterligare parametrarna för en leverans av ett push-meddelande från Android. (NEO-11468)
 * Korrigerade ett skriptfel som uppstod i rapporten för användaraktiviteter när parametrarna angavs till&quot;Ett dagintervall&quot; och&quot;Öppnar&quot;. (NEO-11655)
 * Korrigerade ett problem som uppstod vid anslutning till servern med mellanlagring eller till meddelandecentret via en autentiserad webbproxy. (NEO-11309)
