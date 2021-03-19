@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 55%
 
 ---
@@ -651,7 +651,7 @@ ht-degree: 55%
       + [Hantera tidszoner](installation/using/time-zone-management.md)
       + [Installera en server för mellanlagring](installation/using/mid-sourcing-server.md)
    + Distribuera kampanj (lokalt) {#initial-configuration}
-      + [Om inledande konfiguration](installation/using/about-initial-configuration.md)
+      + [Viktiga steg](installation/using/about-initial-configuration.md)
       + [Skapa en instans och logga in](installation/using/creating-an-instance-and-logging-on.md)
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
       + [Konfigurera Campaign-server](installation/using/campaign-server-configuration.md)
