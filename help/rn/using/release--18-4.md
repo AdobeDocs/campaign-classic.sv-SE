@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Version 18.4
-description: Version 18.4
-audience: rn
-content-type: reference
-topic-tags: latest-release-notes
+title: Versionsinformation för Campaign 18.4
+description: Versionsinformation för Campaign 18.4
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2267'
 ht-degree: 7%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 7%
 * Korrigerade ett problem som gjorde att webbspårning inte kunde användas för &quot;com.au&quot;-domäner (NEO-4385).
 * Ett problem med frysning av klient som kan uppstå när komplexa arbetsflöden används har åtgärdats. (NEO-11847)
 * Korrigerade ett Oracle-fel när en ny leverans sparades efter att ett element i ett specifikt schema har valts (NEO-11682).
-* Korrigerade ett problem vid sökning efter ett fält som innehåller tecken med accenter (FDA/Teradata). Med det externa kontot kan du nu ändra kodningen som används för att kommunicera med Teradata-drivrutinen. (NEO-11818).
+* Ett problem har korrigerats vid sökning efter ett fält som innehåller tecken med accenter (FDA/Teradata). Med det externa kontot kan du nu ändra kodningen som används för att kommunicera med Teradata-drivrutinen. (NEO-11818).
 * Korrigerade ett spårningsproblem vid överföring av URL:er i ytterligare variabler i ett push-meddelande som kunde leda till felaktigt formaterade eller felaktiga data som togs emot av mobilprogrammet. (NEO-11468 och NEO-11960)
 * Korrigerade ett problem som orsakade ett visningsproblem vid användning av en värdefördelning med en 1:N-länk. (NEO-11820)
 * Korrigerade ett problem som förhindrade massbelastning från att arbeta med Teradata 16.
@@ -59,7 +59,7 @@ ht-degree: 7%
 * Ett problem har korrigerats när data som lagrats i XML användes i en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet. (NEO-10816)
 * Ett problem som uppstod när servern skulle uppgraderas med build 8935 har korrigerats.
 * Korrigerade ett problem som visade oanvändbara fel i efteruppgraderingsloggen när en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet inte var fullständigt konfigurerad.
-* FDA Teradata: åtgärdade ett problem med automatiskt inkrementerade fält och index i SQL-tabeller.
+* FDA-Teradata: åtgärdade ett problem med automatiskt inkrementerade fält och index i SQL-tabeller.
 
 ## Version 18.4.3 – build 8935{#release-18-4-3-build-8935}
 
@@ -134,7 +134,7 @@ ht-degree: 7%
 **Andra ändringar**
 
 * Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket tillåter cirkulära beroenden (rekommenderas inte för stora paket). Mer information finns i avsnittet&quot;Tekniska lösningar&quot;. (NEO-8979)
-* Förbättrade prestanda för stor datainläsning i Teradata och åtgärdade ett problem som hindrade från att visa rätt värde för data som bearbetats i loggen. (NEO-10429)
+* Förbättrade prestanda för stor datainläsning vid Teradata och åtgärdade ett problem som hindrade från att visa rätt värde för data som bearbetats i loggen. (NEO-10429)
 * Nu går det att importera målgrupper från Audience Manager med delade filer. Tidigare importerades bara den sista filen i segmentet av det tekniska arbetsflödet importSharedAudience. (NEO-10156)
 * I Windows har standardinstallationssökvägen för Campaign-servern ändrats. När du startar 64-bitarsversionen är standardinstallationssökvägen nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** i stället för **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * MX-standardreglerna har förbättrats så att fler domäner inkluderas och genomströmningen optimeras.
@@ -195,7 +195,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 
 * Ett synkroniseringsproblem har korrigerats vid replikering av leverans- och spårningsloggar från Adobe Campaign Standard till Adobe Campaign Classic. (NEO-10023)
 * Korrigerade ett problem med hanteringen av fel- och loggtabeller i Teradata när ett ETL-arbetsflöde återupptogs efter ett fel vid en snabb inläsning. Tabellerna Fel och Logg tas nu bort korrekt varje gång arbetsflödet återupptas. (NEO-10672)
-* Korrigerade ett efteruppgraderingsfel som innebar att Hive-paketet (som behövs för Hadoop) skulle installeras automatiskt om FDA-paketet installerades. (NEO-10592)
+* Korrigerade ett efteruppgraderingsfel som innebar att Hive-paketet (som behövs för Hadoopet) skulle installeras automatiskt om FDA-paketet installerades. (NEO-10592)
 * Korrigerade ett fel som behandlade ogiltiga domäner som ett **Inte definierat**-fel. (NEO-10248)
 * Korrigerade ett problem som duplicerade loggar i tabellen deliveryLogStats när push-leveranser för android skickades. (NEO-10234)
 * Korrigerade ett problem som kunde leda till att vissa streckkodsformat inte kunde läsas av streckkodsläsare. (NEO-10125)
