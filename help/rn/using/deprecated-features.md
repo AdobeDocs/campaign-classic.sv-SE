@@ -2,17 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Funktioner som är inaktuella och har ersatts i Campaign Classic
-description: Den här sidan visar inaktuella och borttagna funktioner i Adobe Campaign Classic
-audience: rn
-content-type: reference
-topic-tags: campaign-classic-deprecated-features
-internal: n
-snippet: y
+description: På den här sidan visas borttagna och borttagna funktioner i Adobe Campaign Classic
+feature: Översikt
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 94%
+source-wordcount: '1716'
+ht-degree: 93%
 
 ---
 
