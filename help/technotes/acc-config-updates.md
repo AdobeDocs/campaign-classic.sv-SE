@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1025'
 ht-degree: 7%
 
 ---
@@ -60,13 +60,13 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 ## Uppdatering av Campaign Client Console
 
-Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindrade användningen av vissa komponenter i Clien Console, till exempel datumväljaren och bildhantering i leveranser. Konsoluppgradering är obligatoriskt.
+Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindrade användningen av vissa komponenter i klientkonsolen, till exempel datumväljaren och bildhantering i leveranser. Konsoluppgradering är obligatoriskt.
 
 [Läs mer](../rn/using/gold-standard.md).
 
 >[!NOTE]
 >
->Den här korrigeringen finns även i de senaste [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) och [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126). Den nya klientkonsolen för andra versioner är snart tillgänglig.
+>Den här korrigeringen finns även i de senaste [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) och [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126).
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
