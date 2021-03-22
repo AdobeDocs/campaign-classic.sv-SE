@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1484'
 ht-degree: 11%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 11%
 # Version 19.2{#release-19-2}
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.2.4 – build 9082 {#release-19-2-4-build-9082}
+
+_22 mars 2021_
+
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildupplösning i leveranser. (NEO-31453 och NEO-31454)
+
+**Endast konsoluppgradering är obligatoriskt. Ingen serveruppgradering krävs.**
+
+>[!NOTE]
+>
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Lär dig hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _23 december 2020_
 
