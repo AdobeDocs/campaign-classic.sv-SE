@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
+source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1068'
 ht-degree: 7%
 
 ---
@@ -43,6 +43,8 @@ Om miljön är på en lägre nivå än de som anges nedan påverkas du:
 * Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
 * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
+Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 **Hur uppdaterar jag?**
 
 Du måste uppgradera till en av de nyare byggen som listas ovan.
@@ -60,13 +62,12 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 ## Uppdatering av Campaign Client Console
 
-Den senaste versionen av Gold Standard 11 åtgärdar en regression som förhindrade användningen av vissa komponenter i klientkonsolen, till exempel datumväljaren och bildhantering i leveranser. Konsoluppgradering är obligatoriskt.
+I följande versioner korrigeras en regression som förhindrade användningen av vissa komponenter i klientkonsolen, till exempel datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
-[Läs mer](../rn/using/gold-standard.md).
-
->[!NOTE]
->
->Den här korrigeringen finns även i de senaste [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) och [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126).
+* Senaste Gold Standard 11 build 9032@10c2709. [Läs mer](../rn/using/gold-standard.md)
+* Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
+* Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
+* Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
@@ -87,6 +88,8 @@ Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe
 * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
 De här versionerna har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och Client Console ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
+
+Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
@@ -116,6 +119,8 @@ Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 * Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
 * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
+Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 **Hur uppdaterar jag?**
 
 När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren för att gå över till det nya autentiseringsläget](../integrations/using/configuring-adobe-io.md). Detta kräver att den nya Adobe I/O-token genereras och används i implementeringen.  
@@ -133,6 +138,8 @@ Apple Push Notification-tjänsten (APN:er) stöder inte längre det äldre binä
 **Påverkas du?**
 
 Om dina instanser körs på en **äldre version än Campaign 21.1,** och skickar push-meddelanden med det gamla binära Apple-protokollet, måste du uppdatera till det HTTP/2-baserade API:t för APN-providern.
+
+Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
@@ -157,7 +164,6 @@ Som värdkund behövs ingen åtgärd: Adobe har redan införlivat det nya rotcer
 Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa en sömlös övergång **före den 29 mars 2021**.
 
 [Lär dig hur du infogar det nya certifikatet](ios-certificate-update.md).
-
 
 ## Användbara länkar
 
