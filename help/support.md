@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3a65bc08fd3b6cedfd7ef05a51fd8378f19daa85
+source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 10%
 
 ---
 
@@ -38,50 +38,58 @@ Få support via våra Frågor och svar, bästa praxis, onlineresurser och suppor
 
 Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörningen? vilket är arbetsflödet för databasrensning?.. [Läs de 10 viktigaste frågorna](platform/using/common-questions.md).
 
-### Ämnen Frågor och svar
-
-Läs frågor och svar:
-
-* [Viktiga begrepp](platform/using/faq-key-concepts.md)
-* [Kampanjinställningar](platform/using/faq-campaign-config.md)
-* [Rapportering](platform/using/faq-reporting.md)
-* [Builduppgradering](platform/using/faq-build-upgrade.md)
-* [Testa, skicka och spåra meddelanden](platform/using/faq-messages.md)
-* [Arbetsflöden](platform/using/faq-workflows.md)
-* [Utvecklare](platform/using/faq-developers.md)
-* [levererbarhet](delivery/using/monitoring-deliverability.md)
-
-### Vanliga problem
-
-* [Prestanda- och genomströmningsproblem](production/using/performance-and-throughput-issues.md)
-* [Leveransprestanda](delivery/using/delivery-performances.md)
-* [Optimera arbetsflödets prestanda](workflow/using/workflow-best-practices.md)
-* [Felsökning av arbetsflödeskörning](workflow/using/monitoring-workflow-execution.md)
-* [Använda en SFTP-server](platform/using/sftp-server-usage.md)
-* [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
-
-### Bästa praxis
-
-* [Bäst praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
-* [Övervakning av tekniskt arbetsflöde](workflow/using/monitoring-technical-workflows.md)
-* [Hantering av spårning](delivery/using/about-message-tracking.md)
-* [Upptäck övervakningsverktyg](production/using/monitoring-guidelines.md)
-* [Importera data med arbetsflöden](platform/using/import-export-workflows.md)
-* [Skicka meddelanden i flera påfyllnader  ](delivery/using/steps-sending-the-delivery.md)
-* [Designa e-postinnehåll](delivery/using/defining-the-email-content.md)
-* [Bästa praxis för leverans](delivery/using/delivery-best-practices.md)
-
-### Instruktioner
-
-* [Uppgradera till den senaste versionen](production/using/build-upgrade.md)
-* [Vanliga frågor om uppgradering av bygge](platform/using/faq-build-upgrade.md)
-* [Övervaka leverans](delivery/using/about-delivery-monitoring.md)
-* [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
-* [Checklista för säkerhet och integritet](installation/using/get-started-security-privacy.md)
-* [Sekretess och samtyckeshantering](platform/using/privacy-management.md)
-* [Utforma en fråga](platform/using/steps-to-create-a-query.md)
-* [Förfrågningsexempel](workflow/using/querying-recipient-table.md)
-* [Bygg ett arbetsflöde](workflow/using/building-a-workflow.md)
+<table>
+    <tr><td><strong>Ämnen Frågor och svar</strong></td><td><strong>Vanliga problem</strong></td><td><strong>Bästa praxis</strong></td><td><strong>Instruktioner</strong></td></tr>
+    <tr>
+    <td valign="top">
+        <ul>
+        <li><a href="platform/using/faq-key-concepts.md">Viktiga begrepp</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">Kampanjinställningar</a></li>
+        <li><a href="platform/using/faq-reporting.md">Rapportering</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Builduppgradering</a></li>
+        <li><a href="platform/using/faq-messages.md">Testa, skicka och spåra meddelanden</a></li>
+        <li><a href="platform/using/faq-workflows.md">Arbetsflöden</a></li>
+        <li><a href="platform/using/faq-developers.md">Utvecklare</a></li>
+        <li><a href="delivery/using/monitoring-deliverability.md">levererbarhet</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/performance-and-throughput-issues.md">Prestanda- och genomströmningsproblem</a></li>
+        <li><a href="delivery/using/delivery-performances.md">Leveransprestanda</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">Optimera arbetsflödets prestanda</a></li>
+        <li><a href="workflow/using/monitoring-workflow-execution.md">Felsökning av arbetsflödeskörning</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">Använda en SFTP-server</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Förstå leveransfel</a></li>
+        </ul>
+    </td>
+   <td valign="top">
+        <ul>
+        <li><a href="workflow/using/workflow-best-practices.md">Bäst praxis för arbetsflöden</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">Övervakning av tekniskt arbetsflöde</a></li>
+        <li><a href="delivery/using/about-message-tracking.md">Hantering av spårning</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">Upptäck övervakningsverktyg</a></li>
+        <li><a href="platform/using/import-export-workflows.md">Importera data med arbetsflöden</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">Skicka meddelanden i flera påfyllnader</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">Designa e-postinnehåll</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Bästa praxis för leverans</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/build-upgrade.md">Uppgradera till den senaste versionen</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Vanliga frågor om uppgradering av bygge</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Övervaka leverans</a></li>
+        <li><a href="delivery/using/understanding-quarantine-management.md">Förstå karantänhantering</a></li>
+        <li><a href="installation/using/get-started-security-privacy.md">Checklista för säkerhet och integritet</a></li>
+        <li><a href="platform/using/privacy-management.md">Sekretess och samtyckeshantering</a></li>
+        <li><a href="platform/using/steps-to-create-a-query.md">Utforma en fråga</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">Förfrågningsexempel</a></li>
+        <li><a href="workflow/using/building-a-workflow.md">Bygg ett arbetsflöde</a></li>
+        </ul>
+    </td>
+    </tr>
+</table>
 
 ## Kontrollpanelen i Campaign {#control-panel}
 
@@ -122,7 +130,7 @@ Lär dig hur du hanterar inställningarna för Campaign Classic-instanser på Ko
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Det nya fästingsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Om du inte kan logga in med din Adobe ID begär du åtkomst via Experience League, så kommer kundtjänstteamet att få dig konfigurerad så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
+Det nya fästingsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Om du inte kan logga in med din Adobe ID begär du åtkomst via Experience League, så kommer kundtjänstteamet att få dig konfigurerad så snart som möjligt. [Läs mer](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 
 ### Fråga experterna!
 
@@ -130,17 +138,11 @@ Gå med i Campaign Classic Community: söka efter svar i befintliga frågor elle
 
 ### Access Campaign Download Center
 
-Från och med juni 2020 ersätter Experience Cloud Solution Software Distribution det gamla Neolane Download Center och ger en effektivare upplevelse för att hitta och ladda ned programvara, paket och verktyg.
-
-[Klicka ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) här för att få åtkomst till Experience Cloud Software Distribution.
+Från och med juni 2020 ersätter Experience Cloud Solution Software Distribution det gamla Neolane Download Center och ger en effektivare upplevelse för att hitta och ladda ned programvara, paket och verktyg. [Klicka ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) här för att få åtkomst till Experience Cloud Software Distribution.
 Läs mer om nya Download Center [på den här sidan](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html).
 
 ### Skapa en biljett eller starta en chatt
 
-Om du skapar ett ärende kan du kontakta Adobe kundsupport om du har problem med dina Adobe-produkter.
+Om du skapar ett ärende kan du kontakta Adobe kundsupport om du har problem med dina Adobe-produkter. Adobe Admin Console hjälper dig att lösa eller felsöka problem genom att chatta med Adobe kundsupport.
 
-För att du ska kunna lösa eller felsöka dina problem kan du chatta med [Adobe kundsupport](https://adminconsole.adobe.com/overview).
-
-Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/overview).
-
-Följ den detaljerade proceduren som beskrivs i [den här sidan](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/overview). Följ den detaljerade proceduren som beskrivs i [den här sidan](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
