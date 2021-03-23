@@ -7,10 +7,10 @@ feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-versionerna** är: [Gold Standard version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+De **senaste GA-versionerna** är: [[!DNL Gold Standard]  version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
@@ -53,12 +53,12 @@ Som värdbaserad kund (Managed Service eller hybrid) måste du kontakta kundtjä
 
 Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila builden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
 
-### Gold Standard{#upgrade-for-gold-standard-users}
+### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Som en värdbaserad Gold Standard-användare har du automatiskt tillgång till uppgraderingen av Gold Standard med den [senaste stabila versionen av Gold Standard](../../rn/using/gold-standard.md#gs-11) utan någon åtgärd. [Läs mer](../../rn/using/gs-overview.md).
+Som [!DNL Gold Standard]-värdanvändare har du automatiskt nytta av [!DNL Gold Standard]-uppgraderingen med den [senaste GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) utan någon åtgärd. [Läs mer](../../rn/using/gs-overview.md).
 
 >[!NOTE]
->Kompatibilitetsmatrisen för Gold Standard finns i [GA-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
+>Kompatibilitetsmatrisen för [!DNL Gold Standard] finns i [GA-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
 
 ## Support och andra användbara länkar{#support}
 
