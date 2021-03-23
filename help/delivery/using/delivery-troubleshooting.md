@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -37,7 +37,7 @@ När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta läng
 
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
-   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/deliverability-faq.md) . Mer information om MX-regler finns på [den här sidan](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/deliverability-faq.md). Mer information om MX-regler finns i [det här avsnittet](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har påträffat fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed riskerar att blocklist.
 
