@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 3%
 
 ---
 
@@ -87,7 +87,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
  </tbody> 
 </table>
 
-Läs Adobe Campaign [Guide](../../delivery/using/deliverability-key-points.md) och [den här sidan](../../delivery/using/about-deliverability.md) om du vill veta hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden.
+Mer information om hur du optimerar leveransen av dina e-postmeddelanden från Adobe Campaign finns i [det här avsnittet](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 ## Väntande status {#pending-status}
 
