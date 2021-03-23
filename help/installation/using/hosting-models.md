@@ -7,9 +7,9 @@ feature: Översikt
 role: Arkitekt
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe
 
 * Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/configuring-multibranding.md).
 * Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
-* Läs mer om leveransverktygen och de effektivaste strategierna i [guiden ](../../delivery/using/deliverability-key-points.md) och [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
+* Läs mer om verktyg för slutprodukter och bästa praxis i [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
 * Konfigurera kampanjalternativ: hänvisa [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
 * Konfigurera CRM-anslutningar: hänvisa [till detta avsnitt](../../platform/using/crm-connectors.md).
 
@@ -65,7 +65,7 @@ Som hybrid-kund utförs de flesta installations- och konfigurationsstegen av Ado
 * Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/configuring-multibranding.md).
 * Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
 * Installera inbyggda paket: hänvisa [till detta avsnitt](../../installation/using/installing-campaign-standard-packages.md).
-* Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om leveransverktygen och de effektivaste strategierna i [guiden ](../../delivery/using/deliverability-key-points.md) och [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
+* Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om verktyg för slutprodukter och bästa praxis i [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
 * Konfigurera kampanjalternativ: hänvisa [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
 * Konfigurera en extern databas (Federated Data Access): hänvisa [till detta avsnitt](../../installation/using/about-fda.md).
 * Konfigurerar CRM-anslutningar: hänvisa [till detta avsnitt](../../platform/using/crm-connectors.md).
