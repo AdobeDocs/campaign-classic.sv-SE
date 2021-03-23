@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -41,9 +41,9 @@ Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Cam
 
 ## Hur konfigurerar man e-postmeddelandets levererbarhet? {#how-to-configure-email-deliverability-}
 
-Förutom avsnittet [Konfiguration av levererbarhet](../../delivery/using/about-deliverability.md#configuration) kan du läsa de tekniska rekommendationerna för leveranser för att förstå hur du konfigurerar instansen för att maximera levererbarheten i Campaign.
+Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) kan du läsa tekniska rekommendationer för leveransförmåga för att förstå hur du konfigurerar instansen för att maximera leveransen av Campaign-funktioner.
 
-[Klicka här för att läsa mer](../../delivery/using/technical-recommendations.md).
+[Klicka här för att läsa mer](../../delivery/using/about-deliverability.md).
 
 ## Hur kan jag implementera innehållsgodkännande? {#how-can-i-implement-content-approval-}
 
