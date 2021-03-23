@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
+source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1114'
 ht-degree: 7%
 
 ---
@@ -16,20 +16,22 @@ ht-degree: 7%
 
 # Konfigurationsuppdateringar för Adobe Campaign - mars 2021 {#acc-config-updates}
 
-Du måste hålla din infrastruktur och dina inställningar uppdaterade med de senaste byggnaderna och produktkorrigeringarna. Dessa korrigeringar är obligatoriska för att säkerställa tjänstens kontinuitet och säkerhet. Dessutom måste ni anpassa implementeringen så att den överensstämmer med ändringar från tredje part.
+Infrastruktur och inställningar bör uppdateras regelbundet med de senaste byggnaderna och produktkorrigeringarna. Dessa korrigeringar är nödvändiga för att säkerställa kontinuitet i service och säkerhet. Dessutom måste man uppgradera för att anpassa sig till ändringar från tredje part.
 
-Som värdkund kommer Adobe att informera dig om nödvändiga bygguppgraderingar med jämna mellanrum. Ni måste uppgradera i enlighet med rekommendationerna för att säkerställa regelefterlevnaden.
+Som **värd- eller Managed Services-kund** informerar Adobe dig om att du bygger uppgraderingar med regelbundna intervall. Du måste uppgradera i enlighet med rekommendationerna för att säkerställa regelefterlevnaden.
 
-Som lokal kund/hybridkund måste du av säkerhetsskäl uppgradera till en av versionerna på den här sidan. Dessutom måste några manuella åtgärder utföras för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
+Som **lokal- eller hybridkund** bör du uppgradera implementeringen med regelbundna intervall i enlighet med de senaste versionerna.
+
+Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Förutom de vanliga uppgraderingsstegen måste du utföra några manuella uppgifter för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
 
 >[!NOTE]
 >
->Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du har frågor om dessa ändringar.
+>Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Säkerhetsuppdateringar
 
-De senaste Campaign-versionerna har en säkerhetskorrigering som stärker skyddet mot problem med SSRF (Server Side Request Forgery). Läs mer [på den här sidan](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
+De senaste Campaign-versionerna har en säkerhetskorrigering som förstärker skyddet mot problem med SSRF (Server Side Request Forgery). Läs mer [på den här sidan](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
 
 **Påverkas du?**
 
@@ -49,20 +51,20 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/usin
 
 Du måste uppgradera till en av de nyare byggen som listas ovan.
 
-* Som hybridkund uppgraderar Adobe marknadsinstansen till den nya versionen och du rekommenderas att uppgradera deras marknadsinstans också.
+* Som hybridkund informerar Adobe dig om de schemalagda uppgraderingsdatumen för dina mellanleverantörer. Adobe rekommenderar starkt att du uppgraderar din marknadsinstans också.
 
-   Den nya versionen är kompatibel med minst Campaign Classic 17.9, men för att undvika säkerhetsbrister rekommenderar Adobe starkt att du uppgraderar alla instanser till en ny version. 
+   Den nya versionen är bakåtkompatibel med version 17.9 av Campaign Classic, men Adobe rekommenderar starkt en uppgradering för alla instanser för att åtgärda säkerhetsluckor
 
-* Som en lokal kund ombeds ni uppgradera alla instanser av marknadsföring och mellanprodukter till en nyare version.
+* Som lokal kund ombeds ni att uppgradera alla instanser av marknadsföring och mellanprodukter till den senaste versionen.
 
 >[!CAUTION]
 >
->Om du inte kan uppgradera just nu **måste du kontakta kundtjänstteamet på Adobe för att manuellt tillämpa en säkerhetskorrigering på dina instanser**.
+>Om du inte kan uppgradera inom den rekommenderade tidsramen, **bör du kontakta Adobe kundtjänstteam för att göra en kortsiktig manuell säkerhetskorrigering för dina instanser**.
 
 
-## Uppdatering av Campaign Client Console
+## Campaign Classic Client Console - uppdatering
 
-I följande versioner korrigeras en regression som förhindrade användningen av vissa komponenter i klientkonsolen, till exempel datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
+**Nu tillgängliga**-konsolversionerna nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
 * Senaste Gold Standard 11 build 9032@10c2709. [Läs mer](../rn/using/gold-standard.md)
 * Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
@@ -71,9 +73,9 @@ I följande versioner korrigeras en regression som förhindrade användningen av
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
-Adobe Identity Service (IMS) kommer inte att ha stöd för äldre Internet Explorer-versioner från och med den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) kommer inte längre att ha stöd för gamla Internet Explorer-versioner från och med den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
-Campaign Client Console har uppdaterats för att säkerställa kompatibilitet med Adobe IMS.
+Det krävs en uppgradering av Campaign Client Console för att säkerställa kompatibilitet med Adobe IMS.
 
 **Påverkas du?**
 
@@ -93,7 +95,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/usin
 
 **Hur uppdaterar jag?**
 
-Som värdkund behövs ingen åtgärd: Adobe har redan uppgraderat dina instanser till en senare version.
+Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen inom kort.
 
 Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna utnyttja den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
 
@@ -123,7 +125,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/usin
 
 **Hur uppdaterar jag?**
 
-När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren för att gå över till det nya autentiseringsläget](../integrations/using/configuring-adobe-io.md). Detta kräver att den nya Adobe I/O-token genereras och används i implementeringen.  
+När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren för att gå över till det nya autentiseringsläget](../integrations/using/configuring-adobe-io.md). Detta kräver att du skapar den nya Adobe I/O-token och använder den i implementeringen.  
 
 För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurerad på en instans av mellanleverantörer. [Läs mer](../integrations/using/configuring-pipeline.md).
 
@@ -137,13 +139,13 @@ Apple Push Notification-tjänsten (APN:er) stöder inte längre det äldre binä
 
 **Påverkas du?**
 
-Om dina instanser körs på en **äldre version än Campaign 21.1,** och skickar push-meddelanden med det gamla binära Apple-protokollet, måste du uppdatera till det HTTP/2-baserade API:t för APN-providern.
+Om dina instanser körs på en **äldre version än Campaign 21.1,** och du skickar push-meddelanden med det äldre binära Apple-protokollet, måste du uppdatera till det HTTP/2-baserade API:t för APN-providern.
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
-Som värdkund behövs ingen åtgärd: Adobe har redan uppdaterat dina instanser till det HTTP/2-baserade API:t.
+Om du är en värdkund och har uppgraderat till den nya versionen har Adobe redan uppdaterat dina instanser till det HTTP/2-baserade API:t.
 
 Som en lokal/värdbaserad kund måste du uppdatera din konfiguration. [Lär dig hur du migrerar till HTTP/2](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
