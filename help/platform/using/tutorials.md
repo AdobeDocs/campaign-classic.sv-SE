@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Kom igång med Adobe Campaign genom att läsa våra intuitiva stegvisa guider.
 * [Redigera e-postinnehåll med Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Lär dig grunderna för att komma igång med integrationen mellan Adobe Campaign och Experience Manager.
 * [Sekretesshantering](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html): Upptäck vad Adobe Campaign Classic tillhandahåller för att hjälpa dig att uppfylla din sekretesskrav när du använder vår tjänst.
 * [Integrera dynamiskt innehåll i ett e-postmeddelande](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Upptäck grunderna för att komma igång med integrationen mellan Campaign Classic och Target Standard.
-* [Leveranshantering](../../delivery/using/deliverability-key-points.md): Lär dig mer om koncept och bästa metoder för att leverera samt de verktyg som Adobe Campaign Classic erbjuder för att optimera leveransen.
+* [Leveranshantering](../../delivery/using/about-deliverability.md): Lär dig mer om koncept och bästa metoder för att leverera samt de verktyg som Adobe Campaign Classic erbjuder för att optimera leveransen.
 * [Bästa praxis](../../delivery/using/delivery-best-practices.md): Lär dig mer om de bästa metoderna för leveransdesign och att skicka med Adobe Campaign Classic.
 * [Utföra en bygguppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html): Den här guiden presenterar de viktigaste stegen och de bästa metoderna för att utföra en bygguppgradering med Campaign Classic.
 * [Checklista](https://helpx.adobe.com/se/campaign/kb/acc-security.html) för säkerhetskonfiguration: identifiera nyckelelement för att kontrollera säkerhetskonfigurationen och åtkomsten till driftsättningen på plats
