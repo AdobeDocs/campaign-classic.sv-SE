@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 
 Kontrollera att du använder:
 
-* Adobe Campaign 20.3, 20.2.4, 19.1.8 eller Gold Standard 11 minimum
+* Adobe Campaign 20.3, 20.2.4, 19.1.8 eller [!DNL Gold Standard] minst 11
 * Adobe Analytics Standard
 
 Du behöver också:
