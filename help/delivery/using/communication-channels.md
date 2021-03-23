@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1204'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ De viktigaste funktionerna är målinriktning, definition och personalisering av
 
 >[!NOTE]
 >
->Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Mer information finns i [Deliverability getting started](../../delivery/using/deliverability-key-points.md) och [Deliverability management](../../delivery/using/about-deliverability.md).
+>Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Läs mer i [det här avsnittet](../../delivery/using/about-deliverability.md).
 
 Leveransprocessen kan automatiseras genom att man förbereder en leverans och/eller skickar den i ett arbetsflöde. Mer information om aktiviteter av leveranstyp i arbetsflöden finns i [det här avsnittet](../../workflow/using/about-action-activities.md).
 
