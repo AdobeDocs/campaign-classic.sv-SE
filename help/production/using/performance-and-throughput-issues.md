@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 3%
+source-wordcount: '711'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +52,7 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
 
 * MTA och MTAChild-processer och minne: modulen **mta** distribuerar meddelanden till sina underordnade **mtachild**-moduler. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem. Mer information finns på den här [sidan](../../installation/using/email-deliverability.md).
 * TLS-konfiguration: Du bör inte aktivera TLS globalt eftersom det kan minska genomströmningen. I stället bör TLS-inställningar per domän, som hanteras av leveransteamet, justeras efter behov. Mer information finns på den här [sidan](../../installation/using/email-deliverability.md#mx-configuration).
-* DKIM: 1024b är den rekommenderade krypteringsstorleken enligt Best Practices för att säkerställa att DKIM:s säkerhetsnivå är. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se denna [sida](../../delivery/using/technical-recommendations.md#dkim) och denna [Tech](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html).
+* DKIM: 1024b är det bästa sättet att rekommendera krypteringsstorlek för att försäkra sig om att DKIM:s säkerhetsnivå är. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se [den här sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Leveransproblem {#deliverability-issues}
 
@@ -67,4 +67,4 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 
 >[!NOTE]
 >
->Se även avsnittet [Leveransnyckelpunkter](../../delivery/using/deliverability-key-points.md).
+>Se även avsnittet [Slutprodukt](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
