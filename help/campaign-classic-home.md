@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 5097eea4cf842b93af77ee828693f76a7182a8fe
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 52%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 54%
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **.
 
-* **[Skydda era Campaign-](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
+* **[Skydda era Campaign-](technotes/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
 
 * **[Ta bort felaktiga ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> hårdvarustudsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Gmail-avbrott
 
@@ -89,6 +89,6 @@ Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och be
 | [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Gold Standard-uppgradering](https://helpx.adobe.com/se/campaign/kb/gold-standard.html) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
+| [[!DNL Gold Standard] uppgradera](rn/using/gs-overview.md) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
 | [Inaktuella funktioner](rn/using/deprecated-features.md) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html) |
 | [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
