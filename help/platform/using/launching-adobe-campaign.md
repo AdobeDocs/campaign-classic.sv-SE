@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 8%
+source-wordcount: '548'
+ht-degree: 7%
 
 ---
 
@@ -97,11 +97,11 @@ På **[!UICONTROL Help > About...]**-menyn kan du komma åt följande informatio
 
 När du kontaktar kundtjänstteamet på Adobe måste du ange versionsnummer och build-nummer för Adobe Campaign klientkonsol och programserver.
 
-Om du kör på [Campaign Gold Standard-versionen](../../rn/using/gold-standard.md) måste du också dela SHA/1-tecknen som visas i rutan **[!UICONTROL About]**. Exempel: för Guld **Standard 10** kommer build-numret att visa **build 9032@efd8a94**, vilket visas nedan:
+Om du kör [Campaign [!DNL Gold Standard] version](../../rn/using/gold-standard.md) måste du även dela SHA/1-tecknen som visas i rutan **[!UICONTROL About]**. Exempel: för Guld **Standard 10** kommer build-numret att visa **build 9032@efd8a94**, vilket visas nedan:
 
 ![](assets/about-acc-gs.png)
 
-Läs mer om Gold Standard [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/gold-standard.html).
+Läs mer om [!DNL Gold Standard] [i den här artikeln](../../rn/using/gs-overview.md)).
 
 **Relaterade ämnen**:
 
