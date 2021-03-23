@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 2%
+source-wordcount: '1892'
+ht-degree: 3%
 
 ---
 
 
-# Skicka med den förbättrade MTA {#sending-with-enhanced-mta}
+# Skicka med förbättrad MTA {#sending-with-enhanced-mta}
 
 Med **Adobe Campaign Enhanced MTA** (Mail Transfer Agent) får du en uppgraderad sändningsinfrastruktur som möjliggör förbättrad leveransförmåga, renommé, dataflöde, rapportering, studshantering, IP-rampkonfigurering och hantering av anslutningsinställningar.
 
@@ -152,7 +152,7 @@ Mer information om giltighetsperioden finns i [det här avsnittet](../../deliver
 ### DKIM-signering
 
 DKIM (DomainKeys Identified Mail) signering av e-postautentisering görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
-Mer information om DKIM finns i [det här avsnittet](../../delivery/using/technical-recommendations.md#dkim).
+Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Rapport om lyckade leveranser
 
