@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2613'
 ht-degree: 14%
 
 ---
@@ -125,7 +125,7 @@ Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som ti
 * **Kritisk avvikelse**: motsvarande e-postadress skickas omedelbart till karantänen.
 * **Icke-kritisk avvikelse**: En icke-kritiskt avvikelse skickar inte en adress till karantän omedelbart men ökar dock felräknaren.  Mer information finns i [Mjuk felhantering](#soft-error-management).
 
-Om en användare kvalificerar ett e-postmeddelande som en skräppost ([Feedback-slinga](../../delivery/using/technical-recommendations.md#feedback-loop)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
+Om en användare kvalificerar ett e-postmeddelande som en skräppost ([feedbackslinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen.
 
 I listan med adresser i karantän anger fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän. Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
 
