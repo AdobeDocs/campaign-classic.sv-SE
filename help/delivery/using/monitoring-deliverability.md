@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: fa5679d91808edb8e3916d5f0e0f54c73198e934
+source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '531'
 ht-degree: 2%
 
 ---
@@ -17,16 +17,23 @@ ht-degree: 2%
 
 # Övervaka levererbarhet{#monitoring-deliverability}
 
-Nedan finns information om de olika övervakningsverktygen i Adobe Campaign samt ytterligare riktlinjer för leveransövervakning.
+Nedan hittar du information om de olika övervakningsverktygen i Adobe Campaign samt ytterligare riktlinjer för hur du utnyttjar de funktioner som Adobe Campaign erbjuder för att övervaka din plattforms leveransbarhet.
 
-## Övervakningsverktyg {#monitoring-tools}
+## Övervaka levererbarhet {#configuration}
 
-Använd de funktioner som Adobe Campaign erbjuder för att övervaka plattformens leveransbarhet.
+Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
+* För värdbaserade klienter och hybridklienter konfigureras **Leveransövervakning** av Adobe tekniska support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
+
+* För lokala installationer måste du installera **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-paketet via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**-menyn. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+
+I Adobe Campaign Classic hanteras **Leveransövervakning** av arbetsflödet **[!UICONTROL Refresh for deliverability]**. Det installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, domänlistan och listan över MX:er. När **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-paketet har installerats körs det här arbetsflödet varje natt för att regelbundet uppdatera listan över regler och göra det möjligt att aktivt hantera plattformsleveransen.
 
 Leveranspaketet ger dig tillgång till:
 
 * Återgivningsrapporten [Inkorgen](../../delivery/using/inbox-rendering.md) som gör att du kan förhandsgranska meddelanden på större e-postklienter för att skanna innehåll och anseende.
 * Översikt över meddelandekvalitet (inkorg, skräppost).
+
+## Övervakningsverktyg {#monitoring-tools}
 
 Du kan även använda följande verktyg:
 
@@ -48,24 +55,10 @@ Här följer ytterligare riktlinjer för leveransövervakning:
 * Kontrollera regelbundet [leveransflödet](../../reporting/using/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den stämmer överens med den ursprungliga konfigurationen.
 * Kontrollera att [återförsök](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) är rätt inställda (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
 * Kontrollera regelbundet att postlådan [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
-* Kontrollera varje leveransflöde för att säkerställa att det stämmer överens med leveransinnehållets giltighet (t.ex. &quot;flash sales&quot; ska levereras på några minuter, inte dagar).
+* Kontrollera varje leveransflöde som du når från [kontrollpanelen](../../delivery/using/delivery-dashboard.md) för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. &quot;flash sales&quot; ska levereras på några minuter, inte dagar).
 * När du använder [vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
 * Kontrollera att antalet fel och nya [karantäner](../../delivery/using/understanding-quarantine-management.md) stämmer överens med andra leveranser.
 * Läs noga igenom [leveransloggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, antispam-regler osv.).
-
-## Signalspam {#signal-spam}
-
-Signal Spam är en fransk tjänst som erbjuder anonymiserad rapportering av feedback-slingor för franska internetleverantörer (Orange, SFR).
-
-* Med den här tjänsten kan ni följa de franska internetleverantörernas rykte och följa kundens aktivitetsutveckling.
-
-* Signal Spam ger också direkta klagomål som slutanvändarna loggar via ett dedikerat gränssnitt. Dessa klagomål sätts sedan i karantän från e-postadressdatabasen.
-
-## 250ok {#deliverability-250ok}
-
-[250](https://250ok.com/) okis är en kompletterande övervakningslösning för de interna verktygen för Adobe-leverans som tillhandahåller IP- och domänbaserade blockeringslista, och för anseendeindikatorer.
-
-Den information som tillhandahålls är i realtid, vilket möjliggör en proaktiv hjälp.
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
