@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kompatibilitetsmatris för Campaign Gold Standard
-description: Kompatibilitetsmatris för Gold Standard-versionen av Campaign Classic
+title: Kompatibilitetsmatris för kampanj [!DNL Gold Standard]
+description: Kompatibilitetsmatris för Campaign Classic för [!DNL Gold Standard] release
 feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '512'
 ht-degree: 98%
 
 ---
 
 
-# Kompatibilitetsmatris för Gold Standard{#compatibility-matrix-gs}
+# [!DNL Gold Standard] Kompatibilitetsmatris{#compatibility-matrix-gs}
 
-Det här dokumentet listar alla system och komponenter som stöds för version 19.1 av **Adobe Campaign Classic Gold Standard**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med den här versionen av Adobe Campaign.
+Det här dokumentet listar alla system och komponenter som stöds för version 19.1 av **Adobe Campaign Classic[!DNL Gold Standard]**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med den här versionen av Adobe Campaign.
 
 ## Viktiga anteckningar{#important-notes-gs}
 
