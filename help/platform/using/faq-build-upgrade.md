@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2015'
+source-wordcount: '2034'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [vers
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
-Vi startade därför [Gold Standard](https://helpx.adobe.com/se/campaign/kb/gold-standard.html)-programmet för att samarbeta med våra kunder för att proaktivt och regelbundet uppgradera deras miljöer.
+[!DNL Gold Standard] är Campaign Classic Långsiktig supportrelease. Som [!DNL Gold Standard]-värd-användare har du automatiskt nytta av [!DNL Gold Standard]-uppgraderingen med den senaste stabila versionen utan någon åtgärd. Lokala kunder och Hybrid-kunder kan också dra nytta av [!DNL Gold Standard]-releaser. Om du migrerar från en gammal version rekommenderar vi att du uppgraderar till den här versionen först. [Läs mer](../../rn/using/gs-overview.md).
 
 ## Vad är en bygguppgradering?
 
@@ -209,4 +209,4 @@ allt innehåll visas och visas.
 * [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
-* [Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
