@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 6%
@@ -50,7 +50,7 @@ Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost 
 
    * När du kontrollerar om e-postmeddelandet kan levereras vill du fokusera på fyra huvudkategorier: datakvalitet, meddelande och innehåll, utskick av infrastruktur och anseende. Mer information om detta avsnitt finns i [det här avsnittet](../../delivery/using/about-deliverability.md).
 
-* Använd de rekommendationer som är detaljerade [i det här dokumentet](../../delivery/using/deliverability-key-points.md).
+* Använd de rekommendationer som är detaljerade [i det här dokumentet](../../delivery/using/about-deliverability.md).
 
 * Kontakta din Adobe-representant om du behöver hjälp.
 
