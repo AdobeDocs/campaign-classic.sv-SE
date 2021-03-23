@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1278'
 ht-degree: 7%
 
 ---
@@ -114,7 +114,7 @@ Kontrollera följande element för att undvika vanliga formateringsfel:
 
 * Användning av **tillåtna tecken** i e-postmeddelanden: listan med giltiga tecken för e-postadresser definieras i alternativet XtkEmail_Characters. Lär dig hur du kommer åt Campaign-alternativen [i det här avsnittet](../../installation/using/configuring-campaign-options.md). För att specialtecken ska kunna hanteras på rätt sätt måste Adobe Campaign vara installerat i Unicode.
 
-* Konfiguration av **E-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM-autentisering (Domain Keys Identified Mail) kan den mottagande e-postservern verifiera att ett meddelande verkligen skickades av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet ändrades mellan den tidpunkt det ursprungligen skickades (och DKIM &quot;signerade&quot;) och den tidpunkt det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information om detta finns i [det här avsnittet](../../delivery/using/technical-recommendations.md#dkim).
+* Konfiguration av **E-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM-autentisering (Domain Keys Identified Mail) kan den mottagande e-postservern verifiera att ett meddelande verkligen skickades av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet ändrades mellan den tidpunkt det ursprungligen skickades (och DKIM &quot;signerade&quot;) och den tidpunkt det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Responsiv e-postdesign
 
