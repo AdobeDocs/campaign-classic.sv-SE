@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -17,23 +17,24 @@ ht-degree: 2%
 
 # Uppgraderar till en ny version (lokalt){#upgrading}
 
-Innan du startar uppgraderingsprocessen bör du fastställa och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md).
+Innan du startar uppgraderingsprocessen bör du kontrollera och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
->Vi rekommenderar att du gör en säkerhetskopiering av databasen för varje instans innan du uppdaterar. Mer information finns i [Säkerhetskopiera](../../production/using/backup.md).\
->Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
+>* Adobe rekommenderar starkt att du gör en säkerhetskopia av databasen för varje instans innan du uppdaterar. Mer information hittar du i [det här avsnittet](../../production/using/backup.md).
+>* Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
+>* Läs [det här avsnittet](../../installation/using/general-architecture.md) och kapitlet [build upgrade](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) innan du startar.
 
->[!NOTE]
 >
->Se även [installationshandboken](../../installation/using/general-architecture.md) och [build upgrade](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) getting started.
+
+
 
 ## Windows {#in-windows}
 
-Om du vill uppdatera Adobe Campaign i en ny version när du skickar en ny version bör du göra följande i Windows:
+I en Windows-miljö följer du stegen nedan för att uppdatera Adobe Campaign till en ny version:
 
 * [Stäng av tjänster](#shut-down-services),
-* [Uppgradera Adobe Campaign serverprogram](#upgrade-the-adobe-campaign-server-application),
+* [Uppgradera programservern](#upgrade-the-adobe-campaign-server-application),
 * [Synkronisera resurser](#synchronize-resources),
 * [Starta om tjänsterna](#restart-services).
 
@@ -88,9 +89,9 @@ Använd följande kommandorad:
 
 Detta gör att du kan utföra följande åtgärder:
 
-* Synkronisera resurser,
-* uppdateringsscheman,
-* uppdatera databasen.
+* Synkronisera resurser
+* Uppdatera scheman
+* uppdatera databasen
 
 >[!NOTE]
 >
@@ -110,9 +111,9 @@ De tjänster som ska startas om är:
 
 ## Linux {#in-linux}
 
-Så här uppdaterar du Adobe Campaign i en ny version när en ny version levereras:
+I en Linux-miljö följer du stegen nedan för att uppdatera Adobe Campaign till en ny version:
 
-* [Hämta uppdaterade paket](#obtain-updated-packages),
+* [Ladda ned de uppdaterade paketen](#obtain-updated-packages),
 * [Uppdatera](#perform-an-update),
 * [Starta om webbservern](#reboot-the-web-server).
 
@@ -138,7 +139,7 @@ Filen är **nlserver6-v7-XXX.rpm**
    $rpm -Uvh nlserver6-v7-XXXX.rpm
    ```
 
-   där XXX är versionen av filen.
+   Där XXX är versionen av filen.
 
    RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
 
@@ -156,7 +157,7 @@ Filen är **nlserver6-v7-XXX.rpm**
 
 >[!NOTE]
 >
->Fullständiga installationsprocedurer beskrivs i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lösa uppgraderingskonflikter](#resolving-upgrade-conflicts).
+>Fullständiga installationsprocedurer beskrivs i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lös uppgraderingskonflikter](#resolving-upgrade-conflicts).
 
 ### Starta om webbservern {#reboot-the-web-server}
 
@@ -184,7 +185,7 @@ Starta sedan om Apache:
 /etc/init.d/apache start
 ```
 
-## Lösa uppgraderingskonflikter {#resolving-upgrade-conflicts}
+## Lös uppgraderingskonflikter {#resolving-upgrade-conflicts}
 
 Under resurssynkroniseringen kan du med kommandot **postupgrade** identifiera om synkroniseringen har genererat fel eller varningar.
 
@@ -207,7 +208,7 @@ Det finns två sätt att visa synkroniseringsresultatet:
 
 * Loggfilen **postupgrade_`<server version number>_<time of postupgrade>`.log** innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **`<installation directory>/var/<instance/postupgrade`**. Fel och varningar indikeras av fel- och varningsattributen.
 
-### Lösa konflikter {#resolving-conflicts}
+### Lös konflikter {#resolving-conflicts}
 
 Använd följande process för att lösa konflikter:
 
@@ -247,11 +248,7 @@ En Unicode-databas får till exempel inte bara tillåta lagring av LATIN1-data.
 
 ### Windows {#in-windows-1}
 
-Hämta och kopiera filen på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad
-
-**setup-client-6.XXXX.exe**
-
-in **[sökväg till programmet]**datakitnlengthjsp
+Hämta och kopiera filen **setup-client-6.XXXX.exe** i **[sökvägen till programmet]/data/nl/eng/jsp** på den dator där Adobe Campaign-programservern är installerad (**nlserver web**).
 
 Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar användarna om tillgängligheten till en uppdatering och ger dem möjlighet att ladda ned och installera den.
 
@@ -261,11 +258,7 @@ Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar anv
 
 ### Linux {#in-linux-1}
 
-Hämta följande paket på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad:
-
-**setup-client-6.XXXX.exe**
-
-och kopiera den, spara som **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+Hämta **setup-client-6.XXXX.exe**-paketet och kopiera det, spara som **/usr/local/neolane/nl6/datakit/nl/eng/jsp** på den dator där Adobe Campaign-programservern (**nlserver web** är installerad:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
