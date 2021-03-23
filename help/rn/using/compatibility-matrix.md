@@ -7,10 +7,10 @@ feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 99%
+source-wordcount: '527'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 Det här dokumentet listar alla system och komponenter som stöds för [den senaste versionen](../../rn/using/latest-release.md) av **Adobe Campaign Classic**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
-Om du använder Gold Standard kan du se [kompatibilitetsmatrisen för Gold Standard](../../rn/using/compatibility-matrix-gs.md).
+Om du är [!DNL Gold Standard]-användare, se [[!DNL Gold Standard] Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
 
 ## Viktiga anteckningar{#important-notes}
 
