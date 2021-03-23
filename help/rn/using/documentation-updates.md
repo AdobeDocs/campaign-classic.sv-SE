@@ -7,10 +7,10 @@ feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 96%
+source-wordcount: '4250'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +37,8 @@ Lär dig hur du skapar och hanterar kampanjer via dessa nya sidor:
 * [Ställ in och hantera godkännandeprocessen](../../campaign/using/marketing-campaign-approval.md)
 
 Information har lagts till i **[!UICONTROL Advanced JavaScript]**-aktivitetsavsnittet om hur du använder metoden task.setCompleted() för att avsluta aktiviteten och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
+Avsnittet [Deliverability](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). All generisk information om slutbarhet som kan användas för olika Adobe-lösningar har flyttats till [Best Practice Guide Appendix](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Februari 2021 {#release-21.1}
 
@@ -130,7 +132,7 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](../../rn/using/compatibility
 
 Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/using/deprecated-features.md)
 
-Versionsinformation och kompatibilitetsmatris för utgåvan Gold Standard finns nu i ett särskilt avsnitt.
+Versionsinformation och kompatibilitetsmatris för [!DNL Gold Standard]-versionen finns nu i ett dedikerat avsnitt.
 [Läs mer](../../rn/using/gold-standard.md#gs-11).
 
 Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
@@ -167,7 +169,7 @@ En anteckning har lagts till om användningen av ytterligare data med fröadress
 
 Läs om de bästa metoderna för leveransdesign och att skicka med Campaign i ett särskilt avsnitt. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
-Landningssidan gällande bästa praxis för levererbarhet har förbättrats för att underlätta åtkomsten till underavsnitt. [Läs mer](../../delivery/using/deliverability-key-points.md)
+Landningssidan gällande bästa praxis för levererbarhet har förbättrats för att underlätta åtkomsten till underavsnitt. [Läs mer](../../delivery/using/about-deliverability.md)
 
 Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
@@ -206,7 +208,7 @@ Aktivitetsavsnittet **[!UICONTROL AND-join]** har berikats med ytterligare infor
 
 Ett användningsfall om hur man automatiskt uppdaterar en lista med en inkrementell fråga har lagts till i användningsfallen om arbetsflöde. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
 
-[Versionsinformationen](../../rn/using/latest-release.md) har omorganiseras: en [översiktssida](../../rn/using/latest-release.md) med information om buildstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [Gold Standard-versioner](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
+[Versionsinformationen](../../rn/using/latest-release.md) har omorganiseras: en [översiktssida](../../rn/using/latest-release.md) med information om buildstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [[!DNL Gold Standard] releaser](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
 
 Ett nytt avsnitt har lagts till med riktlinjer gällande att övervaka Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
@@ -266,7 +268,7 @@ Avsnittet Övervaka levererbarhet har flyttats och förbättrats. [Läs mer](../
 
 Avsnittet Felsöka levererbarhet har flyttats och förbättrats. [Läs mer](../../delivery/using/deliverability-faq.md)
 
-Avsnittet Riktlinjer för levererbarhet när du startar en ny plattform har förbättrats. [Läs mer](../../delivery/using/starting-new-platform.md)
+Riktlinjer för leveransbarhet när du startar en ny plattform har förbättrats. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
 
 Avsnittet Skicka transaktionsmeddelanden med bilagor har flyttats och uppdaterats. [Läs mer](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -476,7 +478,7 @@ Ett avsnitt har lagts till som beskriver installations- och konfigurationsstegen
 
 Ett avsnitt har lagts till som beskriver avinstallation av Campaign-servern. [Läs mer](../../installation/using/uninstalling-campaign.md)
 
-Starthandböckerna [Säkerhet](https://helpx.adobe.com/se/campaign/kb/acc-security.html), [Leverans](../../delivery/using/deliverability-key-points.md) och [Sekretess](../../platform/using/privacy-management.md) har uppdaterats.
+Starthandböckerna [Säkerhet](https://helpx.adobe.com/se/campaign/kb/acc-security.html), [Leverans](../../delivery/using/about-deliverability.md) och [Sekretess](../../platform/using/privacy-management.md) har uppdaterats.
 
 Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats för att återspegla produktändringar. [Läs mer](../../workflow/using/data-loading--file-.md)
 
