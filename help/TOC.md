@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 55%
+source-wordcount: '2448'
+ht-degree: 54%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 55%
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
-   + Gold Standard-version {#gs-release}
-      + [Vad är Gold Standard?](rn/using/gs-overview.md)
-      + [Versionsinformation om Gold Standard](rn/using/gold-standard.md)
-      + [Kompatibilitetsmatris för Gold Standard](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] release  {#gs-release}
+      + [Vad är [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard] versionsinformation](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] kompatibilitetsmatris](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
       + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
@@ -221,17 +221,11 @@ ht-degree: 55%
       + [Testspårning](delivery/using/testing-tracking.md)
       + [Felsökning av spårning](delivery/using/tracking-troubleshooting.md)
    + Leveranshantering {#deliverability-management}
-      + [Om leverans](delivery/using/about-deliverability.md)
-      + [Viktiga punkter att kontrollera](delivery/using/deliverability-key-points.md)
-      + [Starta en ny plattform](delivery/using/starting-new-platform.md)
+      + [Vad är leverans?](delivery/using/about-deliverability.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
-      + [Förbättra ryktet](delivery/using/improve-reputation.md)
-      + [Tekniska rekommendationer](delivery/using/technical-recommendations.md)
       + [Övervaka levererbarhet](delivery/using/monitoring-deliverability.md)
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [Bästa praxis för förnyat engagemang](delivery/using/re-engagement-best-practices.md)
-      + [Databaser med blockeringslista](delivery/using/block-list-databases.md)
       + [Felsökning](delivery/using/deliverability-faq.md)
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
