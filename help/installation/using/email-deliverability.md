@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ I följande avsnitt ges en översikt över den konfiguration som krävs för att
 >
 >Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
 
-Mer information om koncept och bästa metoder för att leverera finns i [avsnittet](../../delivery/using/about-deliverability.md).
+Mer information om koncept och bästa metoder för att leverera med Adobe Campaign finns i [avsnittet](../../delivery/using/about-deliverability.md).
 
-Alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via en Adobe Campaign-plattform finns i detta [avsnitt](../../delivery/using/technical-recommendations.md).
+Mer information om vad som kan levereras, inklusive alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via Adobe, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 ## Verksamhetsprincip {#operating-principle}
 
