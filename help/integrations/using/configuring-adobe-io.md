@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '577'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## Förutsättningar {#adobe-io-prerequisites}
 
-Den här integreringen gäller endast från och med **Campaign Classic 20.3, 20.2.4, 19.1.8 och Gold Standard 11**.
+Den här integreringen gäller endast från och med **Campaign Classic 20.3, 20.2.4, 19.1.8 och [!DNL Gold Standard] 11 versioner**.
 
 Kontrollera att du har:
 
