@@ -6,9 +6,9 @@ description: Technote
 hide: false
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: a21f970b6b81105517a11bcbd7f334173acc76e4
+source-git-commit: 08c6e84e07da2811c91aa58ddf40c5781de2b163
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,11 @@ Följ stegen nedan för att införliva det nya certifikatet:
 
 1. Hämta rotcertifikatet **AACertificateServices 5/12/2020** [från den här sidan](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
 
-1. Lägg till den i OS Trust Store.
+1. Kontrollera att AAA-certifikatet finns i både ditt operativsystem och JAVA-förvaltare. Om inte, lägg till den.
 
 1. Starta om Adobe Campaign webbtjänst:
 
    ```
    nlserver restart web
    ```
+
