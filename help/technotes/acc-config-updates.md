@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
+source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Föruto
 >Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
-## Säkerhetsuppdateringar
+## Säkerhetsuppdateringar {#acc-security-updates}
 
 De senaste Campaign-versionerna har en säkerhetskorrigering som förstärker skyddet mot problem med SSRF (Server Side Request Forgery). Läs mer [på den här sidan](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
 
@@ -62,7 +62,7 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 >Om du inte kan uppgradera inom den rekommenderade tidsramen, **bör du kontakta Adobe kundtjänstteam för att göra en kortsiktig manuell säkerhetskorrigering för dina instanser**.
 
 
-## Campaign Classic Client Console - uppdatering
+## Uppdatering av Campaign Classic Client Console {#acc-cc-updates}
 
 **Nu tillgängliga**-konsolversionerna nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
@@ -105,7 +105,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 * [Lär dig hur du installerar Campaign Client Console](../installation/using/installing-the-client-console.md).
 
-## Integrering med utlösare från Experience Cloud
+## Integrering med Experience Cloud-utlösare {#acc-triggers-updates}
 
 Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 november 2021 **.** [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -131,7 +131,7 @@ För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurer
 
 [Lär dig hur du migrerar till Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
-## APNs-uppdateringar
+## APNs-uppdateringar {#acc-apns-updates}
 
 ### HTTP/2-baserat API för APNs-provider
 
