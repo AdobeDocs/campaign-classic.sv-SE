@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 3%
+source-wordcount: '3765'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +19,15 @@ ht-degree: 3%
 
 I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
 
->[!IMPORTANT]
+Dessa konfigurationer måste utföras av administratörer och endast för värdmodeller av **On-lokalt**.
+
+För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
+
+>[!NOTE]
 >
->Dessa konfigurationer måste utföras av administratörer och endast för värdmodeller av **On-lokalt**.
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
+>Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 Mer information finns i följande avsnitt:
 
@@ -345,6 +349,12 @@ Hur du hanterar URL-behörigheter beror på din värdmodell:
 
 * **** Hybriddrift  **lokalt**: lägg till de URL:er som ska tillåtas i  **filen** serverConf.xml. Detaljerad information finns i avsnittet nedan.
 * **Värdbaserad**: lägg till de URL:er som ska tillåtas via  **Kontrollpanelen**. Se den [särskilda dokumentationen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) för mer information.
+
+   >[!NOTE]
+   >
+   >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+   >
+   >Observera att din instans måste ligga på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen. Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 Med **hybridvärdmodeller** och **On-lokalt** måste administratören referera till en ny **urlPermission** i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
