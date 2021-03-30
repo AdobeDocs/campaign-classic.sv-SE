@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,11 @@ ht-degree: 0%
 
 # Skapa filter{#creating-filters}
 
-## Introduktion {#introduction}
-
 När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]**-menyn på startsidan) visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
 
 >[!NOTE]
 >
->Visningskonfigurationen definieras lokalt på arbetsstationsnivå. Den lagras i dolda filer och det kan ibland vara nödvändigt att rensa upp dessa data, särskilt om det uppstår problem när data uppdateras. Använd menyn **[!UICONTROL File > Clear the local cache]** om du vill göra det.
+>Konfigurationsinställningarna för användargränssnittet definieras lokalt på enhetsnivå. Ibland kan det vara nödvändigt att rensa upp dessa data, särskilt om det uppstår problem när data uppdateras. Använd menyn **[!UICONTROL File > Clear the local cache]** om du vill göra det.
 
 ## Typologi för tillgängliga filter {#typology-of-available-filters}
 
@@ -33,7 +31,7 @@ Dessa filter kan användas en gång eller så kan du spara dem för framtida bru
 
 Följande filtertyper finns i Adobe Campaign:
 
-* Standardfilter
+* **Standardfilter**
 
    Standardfiltret **är tillgängligt via fälten ovanför listorna.** Du kan filtrera efter fördefinierade fält (för mottagarprofiler är dessa som standard namn och e-postadress). Du kan använda fälten för att ange tecken som ska filtreras eller för att välja filtervillkor från en nedrullningsbar lista.
 
@@ -45,7 +43,7 @@ Följande filtertyper finns i Adobe Campaign:
 -->
 Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra standardfiltret](#altering-the-default-filter).
 
-* Enkla filter
+* **Enkla filter**
 
    **Enkla** filter är engångsfilter i kolumnerna. De definieras med ett eller flera enkla sökvillkor i de kolumner som visas.
 
@@ -55,7 +53,7 @@ Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra sta
 
    Enkla filter beskrivs i [Skapa ett enkelt filter](#creating-a-simple-filter).
 
-* Avancerade filter
+* **Avancerade filter**
 
    **Avancerade** filter skapas med en fråga eller en kombination av frågor på data.
 
@@ -67,7 +65,7 @@ Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra sta
    >
    >Mer information om hur du skapar frågor i Adobe Campaign finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
 
-* Användarfilter
+* **Användarfilter**
 
    Ett **programfilter** är ett avancerat filter som har sparats för att använda och dela dess konfiguration med andra operatorer.
 
@@ -196,7 +194,7 @@ Avancerade filter kan använda funktioner; **filter med funktioner** skapas via 
 
       >[!NOTE]
       >
-      >Ett exempel på hur du skapar filter baserat på ett uttryck finns i [Identifiera mottagare vars födelsedag är](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
+      >Ett exempel på hur du skapar filter baserat på ett uttryck finns i [det här avsnittet](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
 
 ## Spara ett filter {#saving-a-filter}
 
@@ -222,9 +220,9 @@ Du kan kombinera filter genom att klicka på knappen **[!UICONTROL Filters]** oc
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Filtrerar mottagare {#filtering-recipients}
+## Filtrera mottagare {#filtering-recipients}
 
-Fördefinierade filter (se [Spara ett filter](#saving-a-filter)) gör att du kan filtrera profilerna för mottagarna i databasen. Du kan redigera filter från noden **[!UICONTROL Profiles and Targets > Predefined filters]** i trädet. Filtren visas i den övre delen av arbetsytan med knappen **[!UICONTROL Filters]**.
+Med fördefinierade filter (se [Spara ett filter](#saving-a-filter)) kan du filtrera profilerna för mottagarna i databasen. Du kan redigera filter från noden **[!UICONTROL Profiles and Targets > Predefined filters]** i trädet. Filtren visas i den övre delen av arbetsytan med knappen **[!UICONTROL Filters]**.
 
 Markera ett filter om du vill visa dess definition och få tillgång till en förhandsvisning av filtrerade data.
 
