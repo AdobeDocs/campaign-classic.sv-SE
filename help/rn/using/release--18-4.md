@@ -7,7 +7,7 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -144,7 +144,7 @@ ht-degree: 7%
 * Administratörernas möjlighet att ange eller återställa lösenordet för en operator har återställts. Om du vill göra det högerklickar du på en operator, väljer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och anger operatorns nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter. Mer information finns i den [detaljerade dokumentationen](../../production/using/lost-password.md).
 * För att ge stöd åt den nya multitenancy-funktionen i Adobe Target kan en ny&quot;at_property&quot;-parameter nu läggas till i URL:er när alternativ och externa konton konfigureras för integrering med Target. Det värde som ska användas för den här parametern finns i Adobe Target och kommer att användas av Campaign när anrop till Target görs. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
 * Du kan nu ange en standardstartsida som ska öppnas när du klickar på en bild som hanteras av Adobe Target. Tidigare ledde klickningen på den bilden till standardbilduppsättningen när e-postmeddelandet skapades i stället. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
-* **Aktivera kryssrutan SMPP-spår** i det externa kontot för att framtvinga spårningsutdata. Mer information finns i den [detaljerade dokumentationen](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* **Aktivera kryssrutan SMPP-spår** i det externa kontot för att framtvinga spårningsutdata. Mer information finns i den [detaljerade dokumentationen](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Tekniska utvecklingar**
 
