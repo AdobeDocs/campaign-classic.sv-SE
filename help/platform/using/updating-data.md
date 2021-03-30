@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Uppdaterar data{#updating-data}
+# Uppdatera data{#updating-data}
 
 De data som är länkade till en mottagares profil kan uppdateras manuellt eller automatiskt.
 
@@ -23,7 +23,7 @@ De data som är länkade till en mottagares profil kan uppdateras manuellt eller
 
 En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information om detta finns i [det här avsnittet](../../workflow/using/update-data.md).
 
-## Utföra en massuppdatering {#performing-a-mass-update}
+## Utför en massuppdatering {#performing-a-mass-update}
 
 Om du vill utföra manuella uppdateringar högerklickar du på de valda mottagarna för att använda snabbmenyn **[!UICONTROL Actions]** eller använder ikonen **[!UICONTROL Actions]**.
 
