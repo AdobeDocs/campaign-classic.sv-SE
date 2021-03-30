@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Varje nod sammanfaller med en mapp. Data från varje mapp måste anses vara part
 >
 >Om du vill visa listan över alla mottagare i databasen måste du skapa en vy. Läs mer i [Mappar och vyer](../../platform/using/access-management-folders.md).
 
-## Flyttar mottagare {#moving-recipients}
+## Flytta mottagare {#moving-recipients}
 
 Du kan markera en eller flera mottagare, dra dem från mottagarlistan och släppa dem i önskad mapp. Ett varningsmeddelande ber dig bekräfta den här åtgärden.
 
@@ -37,7 +37,7 @@ Du kan markera en eller flera mottagare, dra dem från mottagarlistan och släpp
 
 Du kan kopiera en mottagare i samma mapp genom att högerklicka på önskad mottagare och välja **[!UICONTROL Copy]**.
 
-## Tar bort mottagare {#deleting-recipients}
+## Ta bort mottagare {#deleting-recipients}
 
 Om du vill ta bort mottagare flyttar du dem till en viss mapp och tömmer sedan innehållet i den här mappen. Vi rekommenderar **att du inte använder** alternativet **[!UICONTROL Delete]** i det här fallet.
 
