@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2462'
 ht-degree: 54%
 
 ---
@@ -144,13 +144,16 @@ ht-degree: 54%
          + [Skicka via japanska mobiler](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Bifoga filer](delivery/using/attaching-files.md)
    + Skicka SMS {#sending-messages-on-mobiles}
-      + [SMS-kanal](delivery/using/sms-channel.md)
+      + [Kom igång med SMS](delivery/using/sms-channel.md)
+      + [Konfigurera SMS-kanal](delivery/using/sms-set-up.md)
+      + [Skapa ett SMS](delivery/using/sms-create.md)
+      + [Skicka och spåra SMS](delivery/using/sms-send.md)
       + [Protokoll och inställningar för SMS-koppling](delivery/using/sms-protocol.md)
       + [Felsöka SMS](delivery/using/troubleshooting-sms.md)
       + [Migrera till den utökade allmänna SMPP-anslutningen](delivery/using/unsupported-connector-migration.md)
    + [Skicka LINE-meddelanden](delivery/using/line-channel.md)
    + Skicka push-meddelanden {#sending-push-notifications}
-      + [Om mobilappskanalen](delivery/using/about-mobile-app-channel.md)
+      + [Kom igång med mobilappskanalen](delivery/using/about-mobile-app-channel.md)
       + [Integrera Campaign SDK i mobilapplikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Konfigurera mobilprogrammet{#configure-the-mobile-app}
          + [Kom igång med konfigurationen av appen](delivery/using/get-started-app-config.md)
