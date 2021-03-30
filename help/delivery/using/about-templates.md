@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -35,4 +35,4 @@ Det finns två typer av mallar:
 
 >[!NOTE]
 >
->Vilka mallar som är tillgängliga beror på din behörighet, instanskonfigurationen och kontexten. När du till exempel skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du får då bara åtkomst till mallar vars målmappning är prenumerationsmappningen. Mer information finns i [Välja målmappning](../../delivery/using/selecting-a-target-mapping.md) och [Om tjänster och prenumerationer](../../delivery/using/about-services-and-subscriptions.md).
+>Vilka mallar som är tillgängliga beror på din behörighet, instanskonfigurationen och kontexten. När du till exempel skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du får då bara åtkomst till mallar vars målmappning är prenumerationsmappningen. Mer information finns i [Välj en målmappning](../../delivery/using/selecting-a-target-mapping.md) och [Om tjänster och prenumerationer](../../delivery/using/about-services-and-subscriptions.md).
