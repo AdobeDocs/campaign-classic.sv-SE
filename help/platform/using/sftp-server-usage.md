@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 9%
+source-wordcount: '1158'
+ht-degree: 6%
 
 ---
 
@@ -43,9 +43,11 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 >[!NOTE]
 >
->Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
+>Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
->Följ stegen i [det här avsnittet](https://docs.adobe.com/content/help/sv-SE/control-panel/using/faq.html#ims-org-id) för att kontrollera om instanser har AWS som värd .
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 
