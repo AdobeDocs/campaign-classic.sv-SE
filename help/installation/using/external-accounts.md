@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1612'
 ht-degree: 11%
 
 ---
@@ -35,6 +35,7 @@ Du kan ställa in följande typer av externa konton:
 * [Externt konto för Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Externt Microsoft Dynamics CRM-konto](#microsoft-dynamics-crm-external-account)
 * [Externt konto för Salesforce CRM](#salesforce-crm-external-account)
+* [Externt konto för Azure Blob Storage ](#azure-blob-external-account)
 
 ## Skapa ett externt konto {#creating-an-external-account}
 
@@ -98,7 +99,7 @@ Med det externa **[!UICONTROL Routing]**-kontot kan du konfigurera varje kanal s
 Följande kanaler kan konfigureras:
 
 * [E-post](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobil (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [Mobil (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direktutskick](../../delivery/using/about-direct-mail-channel.md)
 * [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -147,7 +148,7 @@ Externa databaser som är kompatibla med Campaign listas i [kompatibilitetsmatri
 
 Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Läs mer i följande avsnitt:
 
-* Konfigurera åtkomst till [Azure Synapse](../../installation/using/configure-fda-synapse.md)
+* Konfigurera åtkomst till [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Konfigurera åtkomst till [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Konfigurera åtkomst till [Oracle](../../installation/using/configure-fda-oracle.md)
 * Konfigurera åtkomst till [Netezza](../../installation/using/configure-fda-netezza.md)
@@ -413,3 +414,23 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
 Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md).
+
+## Externt konto för Azure Blob Storage (#azure-blob-external-account)
+
+Det externa kontot **Azure Blob storage** kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/file-transfer.md).
+
+![](assets/ext_account_23.png)
+
+Om du vill konfigurera **[!UICONTROL Azure external account]** så att det fungerar med Adobe Campaign måste du ange följande information:
+
+* **[!UICONTROL Server]**
+
+   URL för din Azure Blob-lagringsserver.
+
+* **[!UICONTROL Encryption]**
+
+   Typ av vald kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
+
+* **[!UICONTROL Access key]**
+
+   Om du vill veta var du hittar **[!UICONTROL Access key]** kan du gå till den här [sidan](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
