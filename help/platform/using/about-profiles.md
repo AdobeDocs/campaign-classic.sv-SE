@@ -3,23 +3,25 @@ solution: Campaign Classic
 product: campaign
 title: Om profiler
 description: Om profiler
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profiler, målgrupper
+role: Affärsman, dataarkitekt
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 17%
+source-wordcount: '999'
+ht-degree: 12%
 
 ---
 
 
-# Om profiler{#about-profiles}
+# Kom igång med profiler{#about-profiles}
 
-Profiler (kunder, prospekt och prenumeranter på nyhetsbrev osv.) är centraliserade i databasen i Adobe Campaign. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PI-data i en samlad vy för att analysera och vidta åtgärder.
+Profilerna är centraliserade i Adobe Campaign-databasen. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PI-data i en samlad vy för att analysera och vidta åtgärder.
 
-I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Tack vare mottagardata som lagras i databasen kan du filtrera det mål som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
+&quot;**Profil**&quot; betyder en informationspost (t.ex.: en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead.
+
+I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Med mottagardata som lagras i databasen kan du filtrera målet som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
 ![](assets/do-not-localize/how-to-video.png) [Förstå begreppet profiler i video](#create-profiles-video)
 
@@ -55,11 +57,11 @@ Med länken **[!UICONTROL Profiles and targets]** kan du visa mottagare som lagr
 
 Du får även tillgång till
 
-* förteckningar, se [Skapa och hantera listor](../../platform/using/creating-and-managing-lists.md),
-* prenumerationstjänster, hänvisa till [den här sidan](../../delivery/using/managing-subscriptions.md),
-* webbapplikationer, hänvisa till [den här sidan](../../web/using/about-web-applications.md),
-* Import och export (sysselsättning). hänvisa till [Allmän import och export](../../platform/using/about-generic-imports-exports.md),
-* riktade arbetsflöden, hänvisar till [den här sidan](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* listor - [Läs mer](../../platform/using/creating-and-managing-lists.md)
+* prenumerationstjänster - [Läs mer](../../delivery/using/managing-subscriptions.md)
+* webbprogram - [Läs mer](../../web/using/about-web-applications.md)
+* import och export (jobb) - [Läs mer](../../platform/using/about-generic-imports-exports.md)
+* riktade arbetsflöden - [Läs mer](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 På mottagarsidan kan du utföra vanliga åtgärder på profiler: redigeringar, uppdateringar, tillägg, borttagningar, sortering.
 
@@ -67,35 +69,37 @@ För mer avancerade profiländringar måste du redigera Adobe Campaign-trädet. 
 
 Som standard lagras mottagarna i noden **[!UICONTROL Profiles and Targets > Recipients]** i trädet. Du kan skapa mottagare från den här vyn, liksom:
 
-* sortera och filtrera databasens profiler, se [Filtreringsalternativ](../../platform/using/filtering-options.md),
-* flytta, kopiera eller ta bort profiler från databasen, se [Hantera profiler](../../platform/using/managing-profiles.md),
-* uppdateringsprofiler; se [Uppdatera data](../../platform/using/updating-data.md),
-* Exportmottagare. se [Exportera och importera profiler](../../platform/using/exporting-and-importing-profiles.md),
-* skapa mottagargrupper, se [Skapa och hantera listor](../../platform/using/creating-and-managing-lists.md).
+* sortera och filtrera databasens profiler - [Läs mer](../../platform/using/filtering-options.md)
+* flytta, kopiera eller ta bort profiler från databasen - [Läs mer](../../platform/using/managing-profiles.md),
+* uppdateringsprofiler - [Läs mer](../../platform/using/updating-data.md)
+* exportmottagare - [Läs mer](../../platform/using/exporting-and-importing-profiles.md)
+* skapa mottagargrupper - [Läs mer](../../platform/using/creating-and-managing-lists.md)
 
 Om du vill komma åt avancerade funktioner och konfigurationer måste du klicka på ikonen **[!UICONTROL Explorer]**.
 
 ![](assets/d_ncs_user_interface01.png)
 
-Den allmänna layouten för Adobe Campaign Explorer visas i [Använda Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+Den allmänna layouten för Adobe Campaign Explorer visas i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 
 >[!NOTE]
 >
->Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [Använda Adobe Campaign Utforskaren](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
->Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [Mappar och vyer](../../platform/using/access-management-folders.md).
+>Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [det här avsnittet](../../platform/using/access-management-folders.md).
 
 ## Aktiva profiler {#active-profiles}
 
 Aktiva profiler är de profiler som räknas i faktureringssyfte.
 
+Antal aktiva profiler är endast tillgängligt för **Marknadsinstanser**. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
+
+Om du är värd för AWS kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. Mer information finns i [dokumentationen till kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+
 >[!NOTE]
 >
->Om du är värd på AWS och använder Campaign Classic från build 8931 kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. Mer information finns i [dokumentationen till kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->Observera att antalet aktiva profiler endast är tillgängligt för **Marknadsinstanser**. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
-
-&quot;**Profil**&quot; betyder en informationspost (t.ex.: en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead.
+>Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 Fakturering gäller endast profiler som är **aktiva**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
 
