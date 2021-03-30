@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 5%
+source-wordcount: '335'
+ht-degree: 6%
 
 ---
 
 
-# Lägga till fröadresser{#adding-seed-addresses}
+# Lägg till dirigerade adresser{#adding-seed-addresses}
 
 ## dirigerade adresser i en leverans {#seed-addresses-in-a-delivery}
 
@@ -31,7 +31,7 @@ Det finns tre möjliga insättningslägen:
 
 1. Importera adressmallar och anpassa dem efter dina behov.
 
-   Om du vill göra det klickar du på länken **[!UICONTROL Import seed templates...]** och väljer den mapp som innehåller adressmallarna. Mer information finns i [Skapa dirigerade adressmallar](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   Om du vill göra det klickar du på länken **[!UICONTROL Import seed templates...]** och väljer den mapp som innehåller adressmallarna. Mer information om detta finns i [det här avsnittet](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
    När de har lagts till kan du dubbelklicka på dem eller klicka på knappen **[!UICONTROL Detail...]** för att anpassa innehållet i respektive adress.
 
@@ -39,13 +39,13 @@ Det finns tre möjliga insättningslägen:
 
    Det gör du genom att klicka på länken **[!UICONTROL Edit the dynamic condition...]** och sedan ange startadressparametrarna. Du kan t.ex. inkludera alla dirigerade adresser i en viss mapp eller dirigerade adresser som tillhör en viss avdelning i organisationen.
 
-   Ett exempel visas i det här avsnittet: [Användningsfall: välja startadresser på villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Ett exempel visas i det här avsnittet: [Användningsfall: välj startadresser på villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
 >Det här alternativet används när den mottagartabell som används inte är standardtabellen **nms:mottagare** och du använder den inkorgsåtergivning som finns i Adobe Campaign **[!UICONTROL Deliverability]**-modulen.
 >
->Mer information finns i [Använda en extern mottagartabell](../../delivery/using/using-an-external-recipient-table.md) och i dokumentationen om [inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
+>Mer information finns i [Använd en extern mottagartabell](../../delivery/using/using-an-external-recipient-table.md) och i dokumentationen om [inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
 
 För leveranser kan du också anpassa hur adresser infogas i extraheringsfilen. Som standard infogas de i utdatafilens sorteringsordning, men du kan välja att infoga dem i slutet eller början av filen, eller slumpmässigt bland mottagarna av huvudmålet.
 
