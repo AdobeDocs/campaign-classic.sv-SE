@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Om frågor i Campaign
 description: Om frågor i Campaign
-audience: platform
-content-type: reference
-topic-tags: creating-queries
+feature: Frågeredigeraren
+role: Affärsman, dataarkitekt
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 86%
+source-wordcount: '184'
+ht-degree: 81%
 
 ---
 
 
-# Om frågor i Campaign{#about-queries-in-campaign}
+# Kom igång med frågor{#about-queries-in-campaign}
 
 Du kan hitta frågeverktyget i Adobe Campaign på flera nivåer i programmet. Du kan skapa en målgrupp, segmentera kunder, extrahera och filtrera spårningsloggar och bygga filter osv.
 
