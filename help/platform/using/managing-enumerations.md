@@ -7,17 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 
 # Hantera uppräkningar{#managing-enumerations}
-
-## Om uppräkningar {#about-enumerations}
 
 En uppräkning (kallas även&quot;lista med specificerade värden&quot;) är en lista med värden som föreslås av systemet för att fylla i vissa fält. Med uppräkningar kan du standardisera värdena för dessa fält och hjälpa till med inmatning eller användning av data i frågor.
 
@@ -46,7 +44,7 @@ Värdena för den här typen av fält definieras och den övergripande administr
 
 * Om alternativet **[!UICONTROL Closed]** är markerat kan användarna inte skapa nya värden, utan bara välja bland de tillgängliga värdena.
 
-## Standardiserar data {#standardizing-data}
+## Standardisera data {#standardizing-data}
 
 ### Om aliasrensning {#about-alias-cleansing}
 
@@ -90,7 +88,7 @@ Kontrollera parametrarna innan du bekräftar åtgärden.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-När en användare anger värdet **NEILSEN** i ett&quot;företag&quot;-fält (i Adobe Campaign-konsolen eller i ett formulär) ersätts det automatiskt av värdet **NIELSEN Ltd**. Värderelsersättning utförs av arbetsflödet **Aliasrensning**. Mer information finns i [Datarensning](#running-data-cleansing) körs.
+När en användare anger värdet **NEILSEN** i ett&quot;företag&quot;-fält (i Adobe Campaign-konsolen eller i ett formulär) ersätts det automatiskt av värdet **NIELSEN Ltd**. Värderelsersättning utförs av arbetsflödet **Aliasrensning**. Se [Kör datarensning](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -112,15 +110,15 @@ När körningen är klar läggs aliaset till i listan över alias.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### Hämtar aliasträffar {#retrieving-alias-hits}
+#### Hämta aliasträffar {#retrieving-alias-hits}
 
 De värden som anges av användarna kan konverteras till alias. Det innebär att om användaren anger ett värde som inte finns med i den specificerade listan lagras värdet på fliken **[!UICONTROL Alias]**.
 
-Det tekniska arbetsflödet för **Alias-rensning** återställer dessa värden varje kväll för att uppdatera den specificerade listan. Se [Köra datarensning](#running-data-cleansing)
+Det tekniska arbetsflödet för **Alias-rensning** återställer dessa värden varje kväll för att uppdatera den specificerade listan. Se [Kör datarensning](#running-data-cleansing)
 
 Om det behövs kan kolumnen **[!UICONTROL Hits]** visa hur många gånger det här värdet har angetts. Det kan ta både tid och minne att beräkna det här värdet. Mer information finns i [Beräkna postförekomster](#calculating-entry-occurrences).
 
-### Rensar {#running-data-cleansing}
+### Kör datarensning {#running-data-cleansing}
 
 Datarensning utförs av det tekniska arbetsflödet **[!UICONTROL Alias cleansing]**. De konfigurationer som definieras för uppräkningar tillämpas under körningen. Mer information finns i [Aliasrensningsarbetsflöde](#alias-cleansing-workflow).
 
@@ -134,7 +132,7 @@ Med länken **[!UICONTROL Advanced parameters...]** kan du ange det datum från 
 
 Klicka på knappen **[!UICONTROL Start]** för att köra datarensning.
 
-#### Beräknar postförekomster {#calculating-entry-occurrences}
+#### Beräkna postförekomster {#calculating-entry-occurrences}
 
 Underfliken **[!UICONTROL Alias]** för en specificerad lista kan visa antalet förekomster av ett alias bland alla värden som anges. Den här informationen är en uppskattning och kommer att visas i kolumnen **[!UICONTROL Hits]**.
 
