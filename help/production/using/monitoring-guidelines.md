@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 6%
+source-wordcount: '771'
+ht-degree: 5%
 
 ---
 
@@ -56,7 +56,9 @@ På Kontrollpanelen kan du hantera flera inställningar för din instans: hanter
 
 >[!NOTE]
 >
->Observera att Kontrollpanelen endast är tillgänglig för administratörsanvändare och för alla kunder som använder Adobes hanterade tjänster.
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Övervaka arbetsflöden {#monitoring-workflows}
 
