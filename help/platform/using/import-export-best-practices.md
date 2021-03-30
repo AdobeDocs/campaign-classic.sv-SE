@@ -7,7 +7,7 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 translation-type: tm+mt
-source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Du kan inte utgå från att inkommande data är konsekventa och korrekta eller a
 
 Ett exempel på en allmän arbetsflödesmall som utformats för import av data finns i [Exempel: Arbetsflödesmall för import av dataavsnitt](../../platform/using/creating-import-export-templates.md).
 
-## Använda platta filformat {#using-flat-file-formats}
+## Använd platta filformat {#using-flat-file-formats}
 
 Det mest effektiva formatet för import är platta filer. Platta filer kan importeras i gruppläge på databasnivå.
 
@@ -52,7 +52,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Använda komprimering {#using-compression}
+## Använd komprimering {#using-compression}
 
 Använd zippade filer för import och export när det är möjligt. GZIP stöds som standard. Du kan lägga till förbearbetning när du importerar filer eller efterbearbetning när du extraherar data i arbetsflödesaktiviteterna **[!UICONTROL Load file]** och **[!UICONTROL Extract file]**.
 
@@ -61,7 +61,7 @@ Använd zippade filer för import och export när det är möjligt. GZIP stöds 
 * [Aktivitet för inläsning av data (fil)](../../workflow/using/data-loading--file-.md)
 * [Aktivitet för dataextrahering (fil)](../../workflow/using/extraction--file-.md)
 
-## Importerar i Delta-läge {#importing-in-delta-mode}
+## Importera i deltaläge {#importing-in-delta-mode}
 
 Vanlig import måste ske i deltaläge. Det innebär att endast ändrade eller nya data skickas till Adobe Campaign, i stället för hela tabellen varje gång.
 
