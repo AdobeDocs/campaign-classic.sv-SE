@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2458'
-ht-degree: 3%
+source-wordcount: '2442'
+ht-degree: 2%
 
 ---
 
@@ -224,14 +224,12 @@ Slutligen kan du med attributet **@pkgStatus** definiera exportreglerna för des
 
 ## Hantera paketdefinitioner {#managing-package-definitions}
 
-### Om paketdefinitioner {#about-package-definitions}
-
 Med paketdefinitioner kan du skapa en paketstruktur där du lägger till entiteter som ska exporteras senare i ett paket. Du kan sedan importera det här paketet och alla tillagda enheter till en annan Campaign-instans.
 
 **Relaterade ämnen:**
 
 * [Skapa en paketdefinition](#creating-a-package-definition)
-* [Lägga till enheter i en paketdefinition](#adding-entities-to-a-package-definition)
+* [Lägga till entiteter i en paketdefinition](#adding-entities-to-a-package-definition)
 * [Konfigurera generering av paketdefinitioner](#configuring-package-definitions-generation)
 * [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)
 
@@ -247,13 +245,13 @@ Du kan sedan lägga till enheter i paketdefinitionen och exportera den till ett 
 
 **Relaterade ämnen:**
 
-* [Lägga till enheter i en paketdefinition](#adding-entities-to-a-package-definition)
+* [Lägga till entiteter i en paketdefinition](#adding-entities-to-a-package-definition)
 * [Konfigurera generering av paketdefinitioner](#configuring-package-definitions-generation)
 * [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)
 
-### Lägga till entiteter i en paketdefinition {#adding-entities-to-a-package-definition}
+### Lägg till entiteter i en paketdefinition {#adding-entities-to-a-package-definition}
 
-På fliken **[!UICONTROL Content]** klickar du på knappen **[!UICONTROL Add]** för att markera de enheter som ska exporteras med paketet. De bästa sätten att välja enheter visas i avsnittet [Exportera en uppsättning objekt i ett paket](#exporting-a-set-of-objects-in-a-package).
+På fliken **[!UICONTROL Content]** klickar du på knappen **[!UICONTROL Add]** för att markera de enheter som ska exporteras med paketet. De bästa sätten att välja enheter visas i [det här avsnittet](#exporting-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -267,11 +265,11 @@ Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. Entiteten läggs till i paketdefinitionen. Den exporteras med paketet (se [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)).
+1. Entiteten läggs till i paketdefinitionen, den exporteras med paketet (se [det här avsnittet](#exporting-packages-from-a-package-definition)).
 
    ![](assets/packagedefinition_entityadded.png)
 
-### Konfigurerar generering av paketdefinitioner {#configuring-package-definitions-generation}
+### Konfigurera paketdefinitionsgenerering {#configuring-package-definitions-generation}
 
 Paketgenerering kan konfigureras från fliken för paketdefinitionen **[!UICONTROL Content]**. Det gör du genom att klicka på länken **[!UICONTROL Generation parameters]**.
 
@@ -301,9 +299,7 @@ Om du vill exportera ett paket från en paketdefinition följer du stegen nedan:
 
    ![](assets/packagedefinition_packageexport.png)
 
-## Importerar paket {#importing-packages}
-
-### Om paketimport {#about-package-import}
+## Importera paket {#importing-packages}
 
 Guiden för paketimport är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Package import...]** i Adobe Campaign klientkonsol.
 
