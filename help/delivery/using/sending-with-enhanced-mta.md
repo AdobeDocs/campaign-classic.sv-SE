@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -98,7 +98,7 @@ För kunder som använder Adobe Campaign transaktionsmeddelandefunktioner köas 
 
 ### Förbättrade MTA-rubriker
 
-De senaste Campaign Classic-instanserna innehåller kod som lägger till de obligatoriska Enhanced MTA-rubrikerna i alla meddelanden. Om du använder Adobe Campaign 19.1 (build 9032) eller senare och om så inte är fallet, måste du lägga till parametern &quot;useMomentum=true&quot; i konfigurationen för marknadsföringsinstansen (i filen [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)).
+De senaste Campaign Classic-instanserna innehåller kod som lägger till de obligatoriska Enhanced MTA-rubrikerna i alla meddelanden. Om du använder Adobe Campaign 19.1 (build 9032) eller senare och om så inte är fallet, måste du begära [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) att lägga till parametern &quot;useMomentum=true&quot; i körningsinstanskonfigurationen (i filen [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), som kan vara din marknadsföringsinstans, [instans av mellanleverantörer](../../installation/using/mid-sourcing-server.md) eller [instans av körning av transaktionsmeddelanden](../../message-center/using/creating-a-shared-connection.md#execution-instance), beroende på din konfiguration.
 
 Om du använder en äldre instans som inte innehåller den här koden måste en ny typologiregel med namnet **[!UICONTROL Typology Rule for Enhanced MTAs]** läggas till i alla befintliga typologier i Campaign-instansen.
 Den här regeln läggs till av ett **[!UICONTROL Typology]**-paket som installeras som en del av uppgraderingen till det förbättrade MTA-paketet.
