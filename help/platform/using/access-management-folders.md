@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Hantera åtkomst till Campaign-mappar
 description: Lär dig hur du ger åtkomst till Campaign-mappar och skapar vyer
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Programinställningar
+role: Affärsledare, administratör
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -19,53 +19,9 @@ ht-degree: 0%
 
 Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och ta bort. För att få åtkomst till en fil måste en operator eller grupp av operatorer åtminstone ha läsåtkomst till den.
 
-## Behörigheter för en mapp
-
-### Redigera behörigheter i en mapp {#edit-permissions-on-a-folder}
-
-Följ stegen nedan om du vill redigera behörigheter i en viss mapp i trädet:
-
-1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
-
-   ![](assets/s_ncs_user_folder_properties.png)
-
-1. Klicka på fliken **[!UICONTROL Security]** för att visa behörigheter för den här mappen.
-
-   ![](assets/s_ncs_user_folder_properties_security.png)
-
-### Ändra behörigheter {#modify-permissions}
-
-Om du vill ändra behörigheter kan du:
-
-* **Ersätta en grupp eller en operator**. Det gör du genom att klicka på en av grupperna (eller operatorerna) med rättigheter till mappen och välja en ny grupp (eller en ny operator) i listrutan:
-
-   ![](assets/s_ncs_user_folder_properties_security02.png)
-
-* **Auktorisera en grupp eller en operator**. Det gör du genom att klicka på knappen **[!UICONTROL Add]** och markera gruppen eller operatorn som du vill tilldela behörigheter för den här mappen.
-* **Förbjud en grupp eller en operator**. Om du vill göra det klickar du på **[!UICONTROL Delete]** och väljer gruppen eller operatorn som du vill ta bort behörigheten för den här mappen från.
-* **Välj de rättigheter som tilldelats en grupp eller en operator**. Det gör du genom att klicka på gruppen eller operatorn i fråga och sedan markera de åtkomsträttigheter som du vill ge och avmarkera de andra.
-
-   ![](assets/s_ncs_user_folder_properties_security03.png)
-
-### Sprid behörigheter {#propagate-permissions}
-
-Du kan sprida auktoriseringar och åtkomsträttigheter. Det gör du genom att välja alternativet **[!UICONTROL Propagate]** i mappegenskaperna.
-
-Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas på alla undermappar i den aktuella noden. Du kan sedan överlagra dessa behörigheter för var och en av undermapparna.
-
->[!NOTE]
->
->Om du rensar det här alternativet för en mapp tas det inte bort automatiskt för undermapparna. Du måste rensa det explicit för var och en av undermapparna.
-
-### Bevilja åtkomst för alla operatorer {#grant-access-to-all-operators}
-
-Om alternativet **[!UICONTROL System folder]** är markerat på fliken **[!UICONTROL Security]** har alla operatorer åtkomst till dessa data, oavsett deras rättigheter. Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar för att de ska ha åtkomst.
-
-![](assets/s_ncs_user_folder_properties_security03b.png)
-
 ## Mappar och vyer {#folders-and-views}
 
-### Om mappar {#about-folders}
+### Vad är en mapp {#about-folders}?
 
 Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerklicka på trädet via menyn **[!UICONTROL Add new folder]**. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
 
@@ -73,7 +29,7 @@ Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerkl
 
 Du kan anpassa utforskarens navigeringsträd. Lär dig konfigurationssteg och bästa praxis [i det här avsnittet](adobe-campaign-workspace.md).
 
-### Om vyer {#about-views}
+### Vad är en vy {#about-views}?
 
 Dessutom kan du skapa vyer för att begränsa tillgången till data och ordna innehållet i trädet så att det passar dina behov. Du kan sedan tilldela behörighet till vyerna.
 
@@ -121,3 +77,49 @@ Följande leveranser visas i vyn:
 >[!NOTE]
 >
 >När du hanterar [transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md)-händelser får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer för körningsinstanserna, eftersom det kan leda till åtkomstproblem. Mer information om händelsesamling finns i [det här avsnittet](../../message-center/using/event-collection.md).
+
+
+
+## Behörigheter för en mapp
+
+### Redigera behörigheter i en mapp {#edit-permissions-on-a-folder}
+
+Följ stegen nedan om du vill redigera behörigheter i en viss mapp i trädet:
+
+1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
+
+   ![](assets/s_ncs_user_folder_properties.png)
+
+1. Klicka på fliken **[!UICONTROL Security]** för att visa behörigheter för den här mappen.
+
+   ![](assets/s_ncs_user_folder_properties_security.png)
+
+### Ändra behörigheter {#modify-permissions}
+
+Om du vill ändra behörigheter kan du:
+
+* **Ersätta en grupp eller en operator**. Det gör du genom att klicka på en av grupperna (eller operatorerna) med rättigheter till mappen och välja en ny grupp (eller en ny operator) i listrutan:
+
+   ![](assets/s_ncs_user_folder_properties_security02.png)
+
+* **Auktorisera en grupp eller en operator**. Det gör du genom att klicka på knappen **[!UICONTROL Add]** och markera gruppen eller operatorn som du vill tilldela behörigheter för den här mappen.
+* **Förbjud en grupp eller en operator**. Om du vill göra det klickar du på **[!UICONTROL Delete]** och väljer gruppen eller operatorn som du vill ta bort behörigheten för den här mappen från.
+* **Välj de rättigheter som tilldelats en grupp eller en operator**. Det gör du genom att klicka på gruppen eller operatorn i fråga och sedan markera de åtkomsträttigheter som du vill ge och avmarkera de andra.
+
+   ![](assets/s_ncs_user_folder_properties_security03.png)
+
+### Sprid behörigheter {#propagate-permissions}
+
+Du kan sprida auktoriseringar och åtkomsträttigheter. Det gör du genom att välja alternativet **[!UICONTROL Propagate]** i mappegenskaperna.
+
+Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas på alla undermappar i den aktuella noden. Du kan sedan överlagra dessa behörigheter för var och en av undermapparna.
+
+>[!NOTE]
+>
+>Om du rensar det här alternativet för en mapp tas det inte bort automatiskt för undermapparna. Du måste rensa det explicit för var och en av undermapparna.
+
+### Bevilja åtkomst för alla operatorer {#grant-access-to-all-operators}
+
+Om alternativet **[!UICONTROL System folder]** är markerat på fliken **[!UICONTROL Security]** har alla operatorer åtkomst till dessa data, oavsett deras rättigheter. Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar för att de ska ha åtkomst.
+
+![](assets/s_ncs_user_folder_properties_security03b.png)
