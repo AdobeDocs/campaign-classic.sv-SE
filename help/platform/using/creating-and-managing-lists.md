@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Skapa och hantera listor
 description: Lär dig hur du skapar och hanterar listor
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profiler
+role: Yrkesverksam
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '808'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # Skapa och hantera listor{#creating-and-managing-lists}
 
-## Om listor i Adobe Campaign {#about-lists-in-adobe-campaign}
+## Vad är en lista? {#about-lists-in-adobe-campaign}
 
 En lista är en statisk uppsättning profiler som kan användas för leveransåtgärder eller uppdateras under importåtgärder eller under arbetsflödeskörning. En grupp som har extraherats från databasen via en fråga kan till exempel innehålla en lista.
 
@@ -69,7 +69,7 @@ Du kan skapa nya profiler direkt från fönstret Lägg till profiler genom att k
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-Profillistan kan konfigureras precis som andra listor. Se [Konfigurera listor](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+Profillistan kan konfigureras precis som andra listor. Se [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ## Länka data till en lista {#linking-data-to-a-list}
 
@@ -136,7 +136,7 @@ Lär dig hur du skapar en målgrupp genom att konfigurera en lista med mottagare
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Skapa en lista med mottagare med ett arbetsflöde {#create-list-in-a-wf-video}
+### Skapa en lista med mottagare {#create-list-in-a-wf-video} med ett arbetsflöde
 
 Lär dig hur du skapar ett arbetsflöde för att rikta in dig på mottagare och hur du gör det återkommande innan du använder listan i ett e-postmål.
 
