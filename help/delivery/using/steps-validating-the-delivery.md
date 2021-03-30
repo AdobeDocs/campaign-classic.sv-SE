@@ -7,31 +7,31 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 5%
+source-wordcount: '1663'
+ht-degree: 4%
 
 ---
 
 
-# Verifierar leveransen {#validating-the-delivery}
+# Verifiera leveransen {#validating-the-delivery}
 
 När en leverans har skapats och konfigurerats måste du validera den innan du skickar den till huvudmålet.
 
 Så här gör du:
 
-1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. Se [Analysera leveransen](#analyzing-the-delivery).
+1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. [Läs mer](#analyzing-the-delivery).
 
    Reglerna som används under analysen visas i [det här avsnittet](#validation-process-with-typologies). De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode).
 
-1. **Skicka korrektur**: I det här steget kan du godkänna innehåll, URL:er, anpassningsfält osv. Se [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Skicka korrektur**: I det här steget kan du styra innehåll, URL-adresser, personalisering osv. Läs mer i [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
->Båda dessa steg måste nödvändigtvis utföras efter varje ändring av meddelandeinnehållet.
+>De två stegen ovan MÅSTE utföras efter varje ändring av meddelandeinnehållet.
 
-## Analyserar leveransen {#analyzing-the-delivery}
+## Analysera leveransen {#analyzing-the-delivery}
 
 Analysen är den fas då målpopulationen beräknas och leveransinnehållet färdigställs. När leveransen är klar kan den skickas.
 
@@ -83,7 +83,7 @@ När du har kontrollerat resultatet av analysen kan du klicka på **[!UICONTROL 
 >
 >Klicka på länken **[!UICONTROL Change the main delivery target]** om antalet meddelanden som ska skickas inte matchar din konfiguration. På så sätt kan du ändra definitionen av målpopulationen och starta om analysen.
 
-### Analysparametrar {#analysis-parameters}
+### Analysinställningar {#analysis-parameters}
 
 På fliken **[!UICONTROL Analysis]** i leveransegenskaperna kan du definiera en uppsättning information om hur meddelanden ska förberedas under analysfasen.
 
@@ -111,7 +111,7 @@ För närvarande är det här alternativet endast tillgängligt när följande v
 * Du kan inte ange en målgrupp som kommer från en extern fil som mål. För en enskild leverans klickar du på länken **[!UICONTROL To]** i **[!UICONTROL Email parameters]** och kontrollerar att alternativet **[!UICONTROL Defined in the database]** är markerat. Kontrollera att mottagarna är **[!UICONTROL Specified by the inbound event(s)]** på fliken **[!UICONTROL Delivery]** för en leverans som används i ett arbetsflöde.
 * Du måste använda en PostgreSQL-databas.
 
-### Konfigurerar analysprioriteten {#analysis-priority-}
+### Konfigurera analysprioriteten {#analysis-priority-}
 
 När leveransen är en del av en kampanj finns det ytterligare ett alternativ på fliken **[!UICONTROL Advanced]**. På så sätt kan du ordna bearbetningsordningen för leveranser i samma kampanj.
 
@@ -127,7 +127,7 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 >
 >Om du vill vara säker på att de större leveransanalyserna inte fördröjer arbetsflödena kan du schemalägga deras körningar genom att trycka på **[!UICONTROL Schedule execution for a time of low activity]**.
 
-## Utskick av korrektur {#sending-a-proof}
+## Skicka ett korrektur {#sending-a-proof}
 
 För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
@@ -135,6 +135,7 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 >
 >* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
@@ -196,7 +197,7 @@ Du kan visa och redigera godkännandereglerna, deras innehåll, deras körningso
 
 Du kan skapa nya regler och definiera nya typologier från den här noden. Dessa uppgifter är dock reserverade för expertanvändare som kan JavaScript.
 
-Mer information om typologiregler finns i [Om kampanjtypologier](../../campaign/using/about-campaign-typologies.md).
+Mer information om typologiregler finns på [den här sidan](../../campaign/using/about-campaign-typologies.md).
 
 Om du vill redigera den aktuella typologin klickar du på ikonen **[!UICONTROL Edit link]** till höger om fältet **[!UICONTROL Typology]**.
 
