@@ -7,20 +7,20 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
+
 
 # Protokoll och inställningar för SMS-koppling {#sms-connector-protocol}
 
 >[!NOTE]
 >
->**SMS-anslutningsprotokollet och inställningarna** för Adobe Campaign Standard finns på den här [sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-sms/sms-protocol.html#administrating).
->
 >I det här dokumentet hänvisar alla referenser till detaljer om protokollet, fältnamnen och värdena till [SMPP 3.4-specifikationen](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
+
 
 ## Översikt {#overview}
 
