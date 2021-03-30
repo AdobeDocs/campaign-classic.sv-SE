@@ -3,23 +3,23 @@ solution: Campaign Classic
 product: campaign
 title: Om kopplingar
 description: Om kopplingar
-audience: platform
-content-type: reference
-topic-tags: connectors
+feature: Översikt
+role: Affärsman, dataarkitekt
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 9%
+source-wordcount: '203'
+ht-degree: 8%
 
 ---
 
 
-# Om kopplingar{#about-connectors}
+# Kom igång med anslutningar{#about-connectors}
 
 Adobe Campaign har flera anslutningar som gör att du kan kommunicera med externa program, ansluta till databasmotorer och integrera med Adobe Analytics för att dela data.
 
-Dessa kopplingar är:
+Tillgängliga anslutningar visas nedan:
 
 * Med FDA Connector (**Federated Data Access**) kan du ansluta Campaign till en eller flera externa databaser och bearbeta information som lagras i dem utan att påverka dina Campaign-data. [Läs mer](../../installation/using/about-fda.md).
 * CRM-anslutningar gör det möjligt att utbyta data mellan Adobe Campaign och CRM-lösningen med hjälp av dedikerade arbetsflödesaktiviteter. [Läs mer](../../platform/using/crm-connectors.md).
