@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9ce945af1ed1cabd5041a28812e540f814211071
+source-git-commit: 9f1c4110ef49c87719f1cc84ad08f687865561d1
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 52%
+source-wordcount: '295'
+ht-degree: 51%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 52%
 
 * **[Gå till HTTP/2-baserad APNs-provider ](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> APILläs hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APNs-providern
 
-* **[Få support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)**<br/>
+* **[Få support](support.md)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
 
 [Fler uppdateringar](/help/rn/using/documentation-updates.md)
