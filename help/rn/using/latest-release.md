@@ -7,10 +7,10 @@ feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 96%
+source-wordcount: '902'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,15 @@ ht-degree: 96%
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som ingår i den **senaste versionen av Campaign Classic Release Candidate**.
 
-För Campaign Classic [!DNL Gold Standard] version (senaste GA-versionen), [se denna sida](../../rn/using/gold-standard.md).
+>[!NOTE]
+>
+>Kampanj **GA-byggen** är:
+>* [[!DNL Gold Standard] 11 release](../../rn/using/gold-standard.md#gs-11)
+>* [Campaign 20.2.4-utgåvan](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+
+>
+
+
 
 ## ![](assets/do-not-localize/blue_2.png) Version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
 
