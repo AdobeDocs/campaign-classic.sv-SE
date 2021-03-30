@@ -3,14 +3,11 @@ solution: Campaign Classic
 product: campaign
 title: 'Hjälp- och supportalternativ för Campaign Classic '
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '771'
 ht-degree: 10%
 
 ---
@@ -97,8 +94,14 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
 
 ### Vad är Kontrollpanelen?
 
-Kontrollpanelen hjälper dig att effektivisera arbetet som produktadministratör för Campaign Classic genom att göra det möjligt att hantera inställningar och spåra användningar för var och en av dina förekomster.
+Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratör för Campaign Classic genom att hantera inställningar och spåra användningen för var och en av instanserna.
 [Klicka ](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) här för mer information.
+
+>[!NOTE]
+>
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Hur kommer jag åt Kontrollpanelen?
 
