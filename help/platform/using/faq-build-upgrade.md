@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2024'
 ht-degree: 3%
 
 ---
@@ -168,7 +168,7 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 Om du får problem efter en uppgraderingsversion kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
-Läs mer i [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
+Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 
 ## Build upgrade checklist {#check-list}
 
@@ -208,5 +208,5 @@ allt innehåll visas och visas.
 
 * [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
-* [Hjälp- och supportalternativ för Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
+* [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
