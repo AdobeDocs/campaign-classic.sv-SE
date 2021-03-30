@@ -7,17 +7,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '934'
+ht-degree: 4%
 
 ---
 
 
-# Installerar klientkonsolen för Campaign{#installing-the-client-console}
+# Installera och uppdatera Campaign-klientkonsolen{#installing-the-client-console}
 
-Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar.
+
+Campaign Client Console är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar.
 
 Innan du startar måste du kontrollera Campaign [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html), hämta URL:en för Campaign-servern och inloggningsuppgifterna.
 
@@ -27,9 +28,70 @@ Innan du startar måste du kontrollera Campaign [kompatibilitetsmatrisen](https:
 
 ![](assets/do-not-localize/how-to-video.png) Lär dig installera och konfigurera Adobe Campaign Client i  [video](#video)
 
-## Hämta konsolen{#download-the-client-console}
+Processen att installera eller uppdatera klientkonsolen skiljer sig åt beroende på hur du implementerar Adobe Campaign Classic.
+Läs informationen nedan för att ta reda på vad som krävs för implementeringen.
 
-Följ stegen nedan för att hämta och installera Adobe Campaign klientkonsol:
+
+## Implementeringar som finns på Adobe {#hosted-customers}
+
+Så här installerar eller uppdaterar du klientkonsolerna:
+
+1. Adobe kan driftsätta direkt. När konsolen har uppdaterats uppmanas användarna att hämta den senaste klientkonsolversionen i ett popup-fönster.
+
+1. Du kan hämta till klientkonsolen/klientkonsolerna från [Programdistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+
+   **Användarna måste ha administratörsåtkomst för att kunna slutföra uppdateringen. Om användarna inte har administratörsbehörighet måste systemadministratören distribuera till alla klientkonsoler**
+
+
+
+## Hybrid- och helt lokala implementeringar {#hybrid-onprem-customers}
+
+För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen.
+
+### Göra konsolen tillgänglig för användare {#make-console-available}
+
+När datorn som används för att starta en Adobe Campaign-programserver (webbserver) tar emot användaranslutningar från klientkonsolen kan du konfigurera den så att installationsprogrammet för Adobe Campaign RIA-klienten blir tillgängligt via ett HTML-gränssnitt. När det finns en ny version av klientkonsolen får användarna en inbjudan att ladda ned den när de startar klientkonsolen.
+
+För att göra detta måste du:
+
+1. Välj det paket som innehåller installationsprogrammet för konsolen.
+
+   Den här filen kallas setup-client-7.X.XXXX.exe för v7 eller setup-client-6.X.XXXX.exe för v6.1, där X är underversionen av Adobe Campaign och XXXX är själva paketet   tal.
+
+1. Kopiera och klistra in det här paketet i installationsmappen för Adobe Campaign (på marknadsföringsservern för hybridinstallationer), under /datakit/nl/eng/jsp.
+
+1. Starta Adobe Campaign-servern.
+
+>[!CAUTION]
+>
+>  Adobe rekommenderar att du låter alternativet **[!UICONTROL No longer ask this question]** vara avmarkerat för att se till att alla användare får meddelanden när en ny version av konsolen är tillgänglig.  Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
+
+Om **[!UICONTROL No longer ask this question]** har valts kan du återställa den här uppmaningen. Det är bara systemadministratörer som kan redigera Windows-registret som kan göra följande ändringar:
+
+1. Öppna Registereditorn med kommandot **regedit** på menyn **[!UICONTROL Start > Run]**.
+
+1. Sök efter noden och expandera den.
+
+   ```
+   \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
+   ```
+
+1. Ta bort posten **confAdvisedUpgrade** och stäng Registereditorn.
+
+>[!NOTE]
+>
+>Om du använder en uppdaterad konsol för en befintlig implementering får användarna automatiskt en uppmaning om att uppdatera sin klientkonsol. Om ni implementerar Campaign för första gången måste användarna hämta konsolen. Nedan finns mer information om båda alternativen
+
+### Uppdatera konsolen - befintlig implementering{#update-the-client-console}
+
+När konsolen är tillgänglig i Campaign-servermappen uppmanas användarna att hämta den senaste klientkonsolversionen i ett popup-fönster.
+
+**Användarna måste ha administratörsåtkomst för att kunna slutföra uppdateringen. Om användarna inte har administratörsbehörighet måste systemadministratören distribuera till alla klientkonsoler**
+
+
+### Hämta konsolen - ny implementering{#download-the-client-console}
+
+Användare bör nu hämta och installera konsolen genom att följa stegen nedan:
 
 1. Öppna en webbläsare och hämta konsolen från följande adress:
 
@@ -45,12 +107,7 @@ Följ stegen nedan för att hämta och installera Adobe Campaign klientkonsol:
 1. Hämta och spara klientinstallationsfilen.
 1. Kör den hämtade filen på en dator i Windows: Installationen startar. Standardinstallationssökvägen för klientkonsolen är **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, där X är 6 eller 7 enligt din Adobe Campaign-version.
 
->[!NOTE]
->
->Du kan föreslå att alla användare av Campaign-klientkonsolen uppdaterar den senaste versionen genom att kopiera den körbara konsolfilen till en specifik mapp på Campaign Marketing-servern. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
-
-
-## Skapa anslutningen{#create-the-connection}
+### Skapa anslutningen - endast första gången användare{#create-the-connection}
 
 När klientkonsolen har installerats följer du stegen nedan för att skapa anslutningen till programservern:
 
@@ -78,7 +135,7 @@ Du kan lägga till så många anslutningar som behövs för att ansluta till tes
 >
 >Med knappen **[!UICONTROL Add]** kan du skapa **[!UICONTROL folders]** för att ordna alla dina anslutningar. Bara dra och släpp varje anslutning till en mapp.
 
-## Logga in på Adobe Campaign
+### Logga in på Adobe Campaign
 
 Så här loggar du in på en befintlig instans:
 
@@ -91,6 +148,8 @@ Så här loggar du in på en befintlig instans:
 1. Klicka på **[!UICONTROL Ok]**
 
 1. Ange dina inloggningsuppgifter och klicka på **[!UICONTROL Log in]**
+
+
 
 **Relaterade ämnen**
 
