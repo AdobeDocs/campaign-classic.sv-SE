@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
@@ -527,7 +527,7 @@ Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allm�
 
 **För den utökade generiska SMPP-anslutningen**
 
-När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt. Mer information om den utökade allmänna SMPP-anslutningen finns på [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt. Mer information om den utökade allmänna SMPP-anslutningen finns på [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 SMPP-kopplingen hämtar data från SR-meddelandet (statusrapport) som returneras med reguljära uttryck (regex) för att filtrera innehållet. Dessa data matchas sedan mot informationen som finns i tabellen **[!UICONTROL Delivery log qualification]** (tillgänglig via menyn **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**).
 
@@ -544,13 +544,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alla felmeddelanden börjar med **SR** för att skilja på SMS-felkoder och e-postfelkoder.
-* Den andra delen (**Allmänt** i det här exemplet) av felmeddelandet refererar till namnet på SMSC-implementeringen, som definieras i fältet **[!UICONTROL SMSC implementation name]** för det externa SMS-kontot. Läs [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Den andra delen (**Allmänt** i det här exemplet) av felmeddelandet refererar till namnet på SMSC-implementeringen, som definieras i fältet **[!UICONTROL SMSC implementation name]** för det externa SMS-kontot. Läs [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
    Eftersom samma felkod kan ha olika innebörd för varje provider kan du med det här fältet veta vilken provider som genererade felkoden. Du kan sedan hitta felet i den aktuella providerns dokumentation.
 
 * Den tredje delen (**DELIVRD** i det här exemplet) av felmeddelandet motsvarar statuskoden som hämtats från SR med statusextraheringsregex som definierats i det externa SMS-kontot.
 
-   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -558,7 +558,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Den fjärde delen (**000** i det här exemplet) av felmeddelandet motsvarar den felkod som extraheras från SR med den felkodsextraheringsregex som definieras i det externa SMS-kontot.
 
-   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
    Som standard extraherar regex fältet **err:** enligt definitionen i **Bilaga B** i **SMPP 3.4-specifikationen**.
 
