@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 7%
+source-wordcount: '543'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar. Lär dig hur du hämtar och konfigurerar klientkonsolen på [den här sidan](../../installation/using/installing-the-client-console.md).
 
-## Startar Adobe Campaign {#starting-adobe-campaign}
+## Starta Adobe Campaign {#starting-adobe-campaign}
 
 Du kan starta Adobe Campaign genom att välja **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
@@ -27,7 +27,7 @@ I klientkonsolens anslutningsfönster kan du välja eller konfigurera befintliga
 
 ![](assets/acc-logon.png)
 
-## Ansluter till Adobe Campaign {#connecting-to-adobe-campaign}
+## Anslut till Adobe Campaign {#connecting-to-adobe-campaign}
 
 Du kan ansluta till Adobe Campaign med din Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
 
@@ -74,7 +74,7 @@ Identifierare och lösenord för operatorer med åtkomst till programvaran och d
 
 Den här funktionen beskrivs i avsnittet [Åtkomsthantering](../../platform/using/access-management.md).
 
-## Kopplar från Adobe Campaign {#disconnecting-from-adobe-campaign}
+## Koppla från Adobe Campaign {#disconnecting-from-adobe-campaign}
 
 Om du vill koppla från Adobe Campaign använder du den första ikonen i ikonfältet.
 
@@ -105,6 +105,6 @@ Läs mer om [!DNL Gold Standard] [i den här artikeln](../../rn/using/gs-overvie
 
 **Relaterade ämnen**:
 
-* [Adobe Campaign hjälp- och supportalternativ](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
+* [Adobe Campaign hjälp- och supportalternativ](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
