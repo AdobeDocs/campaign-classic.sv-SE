@@ -7,25 +7,23 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 1%
+source-wordcount: '659'
+ht-degree: 0%
 
 ---
 
 
-# Om mobilappskanalen{#about-mobile-app-channel}
+# Kom igång med mobilappskanalen{#about-mobile-app-channel}
+
+Med **Mobile App Channel** kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
 
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta läser du den officiella Apple [dokumentationen](https://developer.apple.com/) och Android [dokumentationen](https://developer.android.com/index.html).
 
-Avsnitten nedan innehåller information som är specifik för mobilappskanalen.
-
-Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
-
-Med **Mobile App Channel** kan du använda Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Det finns två leveranskanaler:
+Det finns två leveranskanaler:
 
 * En iOS-kanal som gör att du kan skicka meddelanden till Apple-mobilenheter.
 
@@ -38,6 +36,7 @@ Med **Mobile App Channel** kan du använda Adobe Campaign-plattformen för att s
 Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsflödena:
 
 ![](assets/nmac_intro_3.png)
+
 
 >[!NOTE]
 >
@@ -56,7 +55,9 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 
 Arbetsflödet för **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [listan över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](../../delivery/using/configuring-the-mobile-application.md).
+
+Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Datasökväg {#data-path}
 
