@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # Definiera filtervillkor{#defining-filter-conditions}
 
-## Välja operatorn {#choosing-the-operator}
+## Välj operator {#choosing-the-operator}
 
 Inom filtervillkoren måste du länka samman två värden med hjälp av en operator.
 
@@ -117,7 +117,7 @@ Nedan finns en lista över tillgängliga operatorer:
  </tbody> 
 </table>
 
-## MED OCH, ELLER, UTOM {#using-and--or--except}
+## ANVÄND OCH, ELLER, UTOM {#using-and--or--except}
 
 För frågor som använder flera filtervillkor måste du definiera länkar mellan villkoren. Det finns tre möjliga länkar:
 
@@ -146,7 +146,7 @@ I det här exemplet visas ett filter som gör att du kan visa: mottagare som ant
 
 ![](assets/query_editor_nveau_31.png)
 
-## Prioriteringsvillkor {#prioritizing-conditions}
+## Prioritera villkor {#prioritizing-conditions}
 
 I det här avsnittet beskrivs hur du prioriterar villkor tack vare de blå pilarna i verktygsfältet.
 
@@ -165,7 +165,7 @@ Placera markören på **[!UICONTROL Gender (@gender) equal to Male]**-filtervill
 
 Villkoret **[!UICONTROL Gender (@gender) equal to Male]** har tagits bort ur parentesen. Den har flyttat till samma nivå som villkoret&quot;City equal to London&quot;. Dessa villkor är sammankopplade (**[!UICONTROL And]**).
 
-## Markera data som ska extraheras {#selecting-data-to-extract}
+## Välj data som ska extraheras {#selecting-data-to-extract}
 
 De tillgängliga fälten varierar mellan olika tabeller. Alla fält lagras i en huvudnod som kallas **[!UICONTROL Main element]**. I följande exempel finns de tillgängliga fälten i mottagartabellen. Fält visas alltid i bokstavsordning.
 
@@ -259,13 +259,13 @@ Länka till en tabell och ett samlingselement:
 
 >[!NOTE]
 >
->* Använd knappen **[!UICONTROL Add]** (ovanför sidikonfältet) för att lägga till en utdatakolumn där vi vill redigera uttrycket. Mer information om hur du redigerar ett uttryck finns i [Bygga uttryck](#building-expressions).
+>* Använd knappen **[!UICONTROL Add]** (ovanför sidikonfältet) för att lägga till en utdatakolumn där vi vill redigera uttrycket. Mer information om hur du redigerar ett uttryck finns i [det här avsnittet](#building-expressions).
 >* Ta bort en utdatakolumn genom att klicka på den röda x (**Ta bort**).
 >* Ändra ordningen på utdatakolumnerna med hjälp av pilarna.
 >* **[!UICONTROL Distribution of values]** fungerar som ett sätt att visa fördelningen av värdena för det valda fältet (t.ex. distributioner kopplade till mottagarorter, mottagarspråk osv.).
 
 
-## Skapar beräknade fält {#creating-calculated-fields}
+## Skapa beräknade fält {#creating-calculated-fields}
 
 Om det behövs lägger du till en kolumn under dataformatering. Ett beräkningsfält lägger till en kolumn i dataförhandsvisningsavsnittet. Klicka på **[!UICONTROL Add a calculated field]**.
 
@@ -306,7 +306,7 @@ Om du vill ta bort det här beräknade fältet klickar du på **[!UICONTROL Remo
 
 ![](assets/query_editor_nveau_58.png)
 
-## Skapar uttryck {#building-expressions}
+## Skapa uttryck {#building-expressions}
 
 Med uttrycksredigeringsverktyget kan du beräkna aggregeringar, generera funktioner eller redigera en formel med hjälp av ett uttryck.
 
