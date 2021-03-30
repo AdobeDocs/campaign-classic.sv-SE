@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 2%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 3%
 
 ## Konfigurera säkerhetszoner
 
->[!IMPORTANT]
->
->Från och med version 8977 är användargränssnittet för säkerhetszoner inte längre tillgängligt.
->
->* Om du är värd för AWS måste du lägga till IP till tillåtelselista på Kontrollpanelen. Se den [särskilda dokumentationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för mer information.
->* Om du inte är värd för AWS kan du kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
+Från och med version 8977 är användargränssnittet för säkerhetszoner inte längre tillgängligt. Om du inte är värd för AWS kan du kontakta Adobe supportteam för att lägga till IP i tillåtelselista. Annars måste du lägga till IP till tillåtelselista i [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
+Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+
+>[!NOTE]
+> 
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->
-Följ stegen i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 
 * Kontrollera att din omvända proxy inte tillåts i subNetwork. Om så är fallet kommer **all**-trafik att identifieras från den här lokala IP-adressen, så den kommer att betraktas som tillförlitlig.
 
