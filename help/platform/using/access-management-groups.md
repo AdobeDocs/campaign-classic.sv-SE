@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Skapa och hantera operatorgrupper
 description: Lär dig hur du ger åtkomst till operatörsgrupper
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Åtkomsthantering
+role: Affärsledare, administratör
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ Standardoperatorgrupperna är:
 
    * **[!UICONTROL INSERT FOLDERS]**: rätt att lägga in mappar i Adobe Campaign-trädet (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
    * **[!UICONTROL WORKFLOW]**: rätt att använda arbetsflöden.
-
    >[!NOTE]
    >
    >Den här gruppen tillåter inte att operatorer påbörjar leveranser.
@@ -100,6 +99,3 @@ Den här gruppen innehåller följande namngivna rättigheter:
 
    * **[!UICONTROL INSERT FOLDERS]**: Rätt att lägga in mappar i Adobe Campaign-trädet (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
    * **[!UICONTROL EDIT FOLDERS]**: Rätt att ändra mappegenskaper som internt namn, etikett, associerad bild, undermappsordning osv.
-
-
-
