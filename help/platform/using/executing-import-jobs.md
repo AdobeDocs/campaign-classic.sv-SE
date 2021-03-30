@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -244,7 +244,7 @@ Deduplicering gäller en post som finns både i källfilen och i databasen. Det 
 
 Alternativen **[!UICONTROL Reject]** och **[!UICONTROL Ignore]** fungerar enligt ovan.
 
-### Beteende i händelse av ett fel {#behavior-in-the-event-of-an-error}
+### Vid fel {#behavior-in-the-event-of-an-error}
 
 De flesta dataöverföringsåtgärder genererar olika typer av fel (inkonsekvent radformat, ogiltig e-postadress osv.). Alla fel och alla varningar som genereras av importmotorn lagras och länkas till importinstansen.
 
@@ -311,7 +311,7 @@ I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data sk
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Du kan skapa en ny lista för dessa mottagare genom att klicka på **[!UICONTROL Select link]** och sedan på **[!UICONTROL Create]**. Skapandet och hanteringen av listor beskrivs i [Skapa och hantera listor](../../platform/using/creating-and-managing-lists.md).
+      Du kan skapa en ny lista för dessa mottagare genom att klicka på **[!UICONTROL Select link]** och sedan på **[!UICONTROL Create]**. Skapandet och hanteringen av listor beskrivs i [det här avsnittet](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -335,4 +335,4 @@ I det sista steget i guiden kan du starta dataimport. Det gör du genom att klic
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Du kan sedan övervaka körningen av importjobbet (se [Övervaka jobbkörningen](../../platform/using/monitoring-jobs-execution.md).
+Du kan sedan övervaka importjobbets körning (se [Övervaka jobbkörning](../../platform/using/monitoring-jobs-execution.md).
