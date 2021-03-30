@@ -7,9 +7,9 @@ feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ Som [!DNL Gold Standard]-värdanvändare har du automatiskt nytta av [!DNL Gold 
 
 ## Support och andra användbara länkar{#support}
 
-* [Hjälp och support](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
+* [Hjälp och support](../../support.md)
 * [Versioner av Kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html)
 * [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
