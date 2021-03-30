@@ -7,10 +7,10 @@ feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4250'
-ht-degree: 94%
+source-wordcount: '4275'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,9 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## Mars 2021 {#march-2021}
 
-En ny sida har lagts till med riktlinjer och referenser för att få stöd för Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/ac-support.html)
+[Komma igång med SMS-avsnittet](../../delivery/using/sms-channel.md) har omstrukturerats och förbättrats. Nu kan du lära dig att [konfigurera SMS-kanalen](../../delivery/using/sms-set-up.md), [skapa ett SMS](../../delivery/using/sms-create.md), [skicka och spåra SMS](../../delivery/using/sms-send.md) i dedikerade avsnitt.
+
+Sidan&quot;Hjälp och support&quot; för Campaign Classic har integrerats i huvuddokumentationen. [Läs mer](../../support.md)
 
 Ett nytt avsnitt har lagts till med bästa praxis och kontroller för att utföra säkerhets- och sekretessåtgärder. [Läs mer](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ En ny sida med bästa praxis för datakopplingen i Adobe Analytics har lagts til
 
 Starthandboken Bästa praxis för leverans har flyttats och uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
-En rekommendation har lagts till i dokumentationen om SMS-kanaler för att undvika problem när flera externa konton använder kopplingen till Extended generic SMPP med samma leverantörskonto. [Läs mer](../../delivery/using/sms-channel.md#automatic-reply)
+En rekommendation har lagts till i dokumentationen om SMS-kanaler för att undvika problem när flera externa konton använder kopplingen till Extended generic SMPP med samma leverantörskonto. [Läs mer](../../delivery/using/sms-set-up.md#automatic-reply)
 
 Information om hur man förhindrar simultana exekveringar av arbetsflöden har lagts till i aktivitetsdokumentationen för Scheduler. [Läs mer](../../workflow/using/scheduler.md)
 
