@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 1%
@@ -131,4 +131,4 @@ Klicka på **[!UICONTROL Start]** för att starta dataexporten.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Du kan sedan övervaka körningen av importjobbet (se [Övervaka jobbkörningen](../../platform/using/monitoring-jobs-execution.md).
+Du kan sedan övervaka importjobbets körning (se [Övervaka jobbkörning](../../platform/using/monitoring-jobs-execution.md).
