@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 584c11cc46d3a0cea3dcbbaef2700200fbdb8201
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Gamla SMS-anslutningar använder Java SMS-kopplingen som överför webbprocessen
 >
 >Även om du kan transponera parametrarna kräver konfigurering av **[!UICONTROL Extended Generic SMPP]**-kopplingen att du pratar med leverantören som ger dig den information som behövs för att fylla i resten av parametrarna. Se denna [sida](../../delivery/using/sms-protocol.md) för mer information om detta.
 
-Först måste du skapa ett nytt externt **[!UICONTROL Extended Generic SMPP]**-konto och sedan kanske du kan ta med några parametrar. Du hittar detaljerad information på den här [sidan](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Först måste du skapa ett nytt externt **[!UICONTROL Extended Generic SMPP]**-konto och sedan kanske du kan ta med några parametrar. Du hittar detaljerad information på den här [sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 Du måste nu fylla i parametrarna på fliken **[!UICONTROL Mobile]** i det nya **[!UICONTROL Extended Generic SMPP]** externa kontot beroende på din tidigare anslutning.
 
