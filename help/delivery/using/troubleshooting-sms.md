@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protokoll och inställningar för SMS-koppling
-description: Läs mer om SMS-anslutningen och hur du konfigurerar den.
+title: Felsöka SMS
+description: Läs mer om felsökning av SMS-kanal
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
-source-wordcount: '2751'
+source-wordcount: '2744'
 ht-degree: 0%
 
 ---
