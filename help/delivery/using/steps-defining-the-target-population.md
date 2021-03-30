@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1599'
 ht-degree: 2%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 2%
 
 ## Om målpopulationer {#about-target-populations}
 
-För varje leverans kan du definiera flera typer av målpopulationer. Avsnittet nedan innehåller mer information om hur du väljer:
+För varje leverans kan du definiera flera typer av målpopulationer:
 
-* Leveransens huvudmottagare. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* Mottagarna av korrekturmeddelanden för att ställa in en valideringscykel. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-
-Om leveransen ingår i en marknadsföringskampanj kan du även definiera [dirigeringsadresser](../../delivery/using/about-seed-addresses.md) och [kontrollgrupper](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+* **Huvudmålgrupp**: profiler som tar emot meddelanden. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **Korrektur**: mottagare av korrekturmeddelanden som deltar i valideringscykeln. [Läs mer](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Fröadresser**: mottagare som ligger utanför leveransmålet men som kommer att få leveransen (endast inom ramen för en marknadsföringskampanj). [Läs mer](../../delivery/using/about-seed-addresses.md)
+* **Kontrollgrupper**: populationen som inte kommer att ta emot leveransen, används för att spåra beteenden och kampanjpåverkan (endast i samband med en marknadsföringskampanj). [Läs mer](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Välja huvudmottagare för leveransen {#selecting-the-main-target}
 
