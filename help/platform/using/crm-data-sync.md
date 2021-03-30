@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
 
 
-# Datasynkronisering mellan Campaign och CRM {#data-synchronization}
+# Synkronisera data mellan Campaign och CRM {#data-synchronization}
 
 Datasynkronisering mellan Adobe Campaign och CRM utförs via en dedikerad arbetsflödesaktivitet: [CRM-koppling](../../workflow/using/crm-connector.md).
 
@@ -82,9 +82,9 @@ För en importaktivitet är stegen för aktivitetskonfigurationen **[!UICONTROL 
 
    Mer information finns i [Variabelhantering](#variable-management).
 
-### Variabelhantering {#variable-management}
+### Hantera variabler {#variable-management}
 
-Om du aktiverar alternativet **[!UICONTROL Automatic index]** kan du bara samla in objekt som ändrats sedan den senaste importen.
+Aktivera alternativet **[!UICONTROL Automatic index]** om du bara vill samla in objekt som ändrats sedan den senaste importen.
 
 ![](assets/crm_task_import_option.png)
 
@@ -226,7 +226,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 
 Utdataövergången **[!UICONTROL Reject]** ger dig åtkomst till utdataschemat som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. För Salesforce.com är den här kolumnen **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
-## Importerar objekt som har tagits bort i CRM {#importing-objects-deleted-in-the-crm}
+## Importobjekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
 
 Om du vill kunna konfigurera en omfattande datasynkroniseringsprocess kan du importera objekt som tagits bort i CRM till Adobe Campaign.
 
@@ -242,7 +242,7 @@ Gör så här:
    >
    >Elementets raderingsperiod måste sammanfalla med de begränsningar som är specifika för CRM. Det innebär att för Salesforce.com kan element som togs bort för över 30 dagar sedan inte återställas.
 
-## Tar bort objekt i CRM {#deleting-objects-in-the-crm}
+## Ta bort objekt i CRM {#deleting-objects-in-the-crm}
 
 Om du vill ta bort objekt på CRM-sidan måste du ange primärnyckeln för de fjärrelement som ska tas bort.
 
