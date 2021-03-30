@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
 
-# Automatisera via arbetsflöden{#automating-via-workflows}
+# Automatisera med arbetsflöden{#automating-via-workflows}
 
 ## Innehållshanteringsaktivitet {#content-management-activity}
 
@@ -78,7 +78,7 @@ Med alternativet **Generera en utdataövergång** kan du lägga till en utdataö
 
 ## Exempel {#examples}
 
-### Automatisera skapande och leverans av innehåll {#automating-content-creation-and-delivery}
+### Automatisera framtagning och leverans av innehåll {#automating-content-creation-and-delivery}
 
 I följande exempel automatiseras skapandet och leveransen av ett innehållsblock.
 
@@ -160,7 +160,7 @@ Leveransinnehållet fylls i via den inkommande händelsen.
 
 Det sista steget i att slutföra aktiviteten är att förbereda och sedan starta leveransen.
 
-### Skapa innehåll och publicera det senare {#creating-content-and-publishing-it-later}
+### Skapa innehåll för senare publicering {#creating-content-and-publishing-it-later}
 
 I det här exemplet skapas ett innehållsblock och filpubliceringen startas efter en viss tidsfördröjning.
 
