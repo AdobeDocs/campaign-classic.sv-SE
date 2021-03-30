@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Kom igång med Campaign-operatorer
 description: Lär dig hur du skapar och hanterar kampanjanvändare
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Åtkomsthantering
+role: Affärsledare, administratör
+level: Nybörjare
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
