@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
@@ -96,7 +96,7 @@ Kontrollera att du har testat alla ändringar innan du skickar det
 Som standard uppfyller antalet tecken i ett SMS-meddelande GSM-standarden (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
 Transkriberingen ersätter ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan godkänna teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
-Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Läs mer [i det här avsnittet](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Tips**:
 
@@ -104,7 +104,7 @@ Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md#creating-an-
 
 * Om dina SMS-meddelanden innehåller många tecken som inte beaktas av GSM-standarden kan du aktivera transkribering för att begränsa kostnaderna för att skicka meddelanden.
 
-Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md#about-character-transliteration).
+Läs mer [i det här avsnittet](../../delivery/using/sms-set-up.md#about-character-transliteration).
 
 ## Arbeta med formatering {#formatting}
 
