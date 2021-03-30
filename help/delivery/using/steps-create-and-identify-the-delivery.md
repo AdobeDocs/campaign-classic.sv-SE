@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -52,7 +52,7 @@ Du måste ange parametrar för att kunna identifiera leveransen. Så här gör d
 Leveransinnehållet är klart att konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
 * [Definiera e-postinnehållet](../../delivery/using/defining-the-email-content.md)
-* [Definiera SMS-innehåll](../../delivery/using/sms-channel.md#defining-the-sms-content)
+* [Definiera SMS-innehåll](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [Definiera innehållet i direktutskick](../../delivery/using/defining-the-direct-mail-content.md)
 * [Push-meddelanden](../../delivery/using/about-mobile-app-channel.md)
 
