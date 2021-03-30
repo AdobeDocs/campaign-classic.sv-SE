@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om personalisering
-description: Om personalisering
+title: Kom igång med personalisering
+description: Lär dig hur du personaliserar meddelanden och använder villkorsstyrt innehåll i Campaign
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 49%
+source-wordcount: '138'
+ht-degree: 40%
 
 ---
 
 
-# Om personalisering{#about-personalization}
+# Kom igång med webbpersonalisering{#about-personalization}
 
 Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. För e-postleveranser kan du definiera elementen och anpassningsvillkoren för en leverans direkt i JavaScript på fliken **[!UICONTROL Source]** i meddelandet. I allmänhet kan du med Adobe Campaign:
 
