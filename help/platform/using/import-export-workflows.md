@@ -7,21 +7,21 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
 
-# Importera och exportera data med hjälp av arbetsflöden {#import-export-workflows}
+# Importera och exportera data med arbetsflöden {#import-export-workflows}
 
 ## Samlar in data {#collecting-data-workflows}
 
 Arbetsflöden kan vara ett användbart sätt att automatisera vissa importprocesser. Oavsett om du importerar data från en lokal fil eller från en SFTP kan du använda arbetsflöden för att standardisera datahanteringsprocesserna.
 
-### Använda data från en lista: Läslista {#using-data-from-a-list--read-list}
+### Använd data från en lista: Läslista {#using-data-from-a-list--read-list}
 
 Data som skickas i ett arbetsflöde kan komma från listor där data har förberetts och strukturerats.
 
