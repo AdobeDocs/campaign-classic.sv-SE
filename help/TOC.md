@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2481'
 ht-degree: 54%
 
 ---
@@ -113,6 +113,7 @@ ht-degree: 54%
       + CRM-kopplingar{#crm-connectors}
          + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
    + [Hjälp- och supportalternativ](support.md)
@@ -211,6 +212,7 @@ ht-degree: 54%
       + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
       + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
+      + [Uppdatera studskompetens efter ett avbrott i en Internet-leverantör](delivery/using/update-bounce-qualification.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
@@ -398,7 +400,7 @@ ht-degree: 54%
       + [Bygg ett arbetsflöde](workflow/using/building-a-workflow.md)
       + [Måldata](workflow/using/targeting-data.md)
       + [Använd arbetsflödesdata](workflow/using/how-to-use-workflow-data.md)
-      + [Bästa praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
+      + [God praxis för arbetsflöden](workflow/using/workflow-best-practices.md)
    + Kör ett arbetsflöde {#executing-a-workflow}
       + [Starta ett arbetsflöde](workflow/using/starting-a-workflow.md)
       + [Arbetsflödets livscykel](workflow/using/workflow-life-cycle.md)
@@ -658,6 +660,7 @@ ht-degree: 54%
       + [Inställningar för kampanjserver](installation/using/configuring-campaign-server.md)
       + [Definiera säkerhetszoner](installation/using/security-zones.md)
       + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
+      + [Använda MX-servrar med Campaign](installation/using/using-mx-servers.md)
       + [Konfigurera e-postkopia](installation/using/email-archiving.md)
       + [Konfigurera SpamAssassin](installation/using/configuring-spamassassin.md)
    + Anslut till kampanj{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 54%
       + [Konfigurera externa konton](installation/using/external-accounts.md)
       + Konfigurera åtkomst till federerade data{#configure-fda}
          + [Kom igång med Federated Data Access](installation/using/about-fda.md)
+         + [Bästa praxis och begränsningar](installation/using/fda-best-practices.md)
          + Konfigurationsriktlinjer {#config-databases}
             + [Konfigurationssteg](installation/using/configure-fda.md)
             + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
