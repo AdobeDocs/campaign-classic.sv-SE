@@ -6,14 +6,14 @@ description: Lär dig mer om leveransfel
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2614'
 ht-degree: 14%
 
 ---
-
 
 # Om leveransfel{#understanding-delivery-failures}
 
@@ -166,7 +166,7 @@ Möjliga orsaker till leveransfel är:
   <tr> 
    <td> Onåbar </td> 
    <td> Mjuk/hård </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Ett fel har uppstått i meddelandeleveranskedjan. Det kan vara en incident på SMTP-relä, en domän som inte går att nå för tillfället, osv. Enligt felet görs ett nytt försök att ange adressen tills felräknaren når 5 eller skickas direkt till karantän.<br /> </td> 
   </tr> 
   <tr> 
@@ -264,6 +264,10 @@ Studsade e-postmeddelanden kan ha följande kvalificeringsstatus:
 
 ![](assets/deliverability_qualif_status.png)
 
+>[!NOTE]
+>
+>Om en Internet-leverantör skulle råka ut för ett avbrott markeras e-post som skickas via Campaign felaktigt som studsar. För att korrigera detta måste du uppdatera studskompetens. Mer information finns på [den här sidan](../../delivery/using/update-bounce-qualification.md).
+
 ### Regler för e-posthantering {#email-management-rules}
 
 >[!IMPORTANT]
@@ -315,7 +319,7 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 * Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar för att kontrollera domännamnet, till exempel **avsändar-ID**, **DomainKeys**, **DKIM** och **S/MIME**.
 * Med parametrarna **SMTP relay** kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-post från Microsoft. Om alternativet **[!UICONTROL Sender ID]** är aktiverat avmarkerar du motsvarande ruta och kontaktar [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Leveransen påverkas inte.
+Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-post från Microsoft. Om alternativet **[!UICONTROL Sender ID]** är aktiverat avmarkerar du motsvarande ruta och kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Leveransen påverkas inte.
 
 #### MX-hantering {#mx-management}
 
