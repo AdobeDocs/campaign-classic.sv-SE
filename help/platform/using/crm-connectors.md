@@ -6,14 +6,14 @@ description: Kom igång med CRM Connectors i Campaign
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 24%
+source-wordcount: '158'
+ht-degree: 55%
 
 ---
-
 
 # CRM-kopplingar{#crm-connectors}
 
@@ -40,51 +40,5 @@ CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris
 
 Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics [i det här avsnittet](../../platform/using/crm-ms-dynamics.md)
 
-Om du vill använda CRM-anslutningar i Adobe Campaign gör du så här:
 
-1. Skapa ett nytt externt konto via noden **[!UICONTROL Administration > Platform > External accounts]** i Adobe Campaign-trädet.
-1. Välj det CRM-system som du vill ansluta Campaign till.
-1. Ange inställningar för att aktivera anslutningen.
-1. Kör konfigurationsguiden för att generera den tillgängliga CRM-tabellen: Med konfigurationsguiden kan du samla in tabeller och skapa det matchande schemat.
-
-   Exempel på **konfigurationsguiden för Salesforce**:
-
-   ![](assets/crm_connectors_sfdc_launch.png)
-
-   >[!NOTE]
-   >
-   >För att godkänna installationen måste du logga ut och sedan logga in på Adobe Campaign Console igen.
-
-1. Kontrollera schemat som genererats i Adobe Campaign i noden **[!UICONTROL Administration > Configuration > Data schemas]**.
-
-   Exempel för **Salesforce**-schema:
-
-   ![](assets/crm_connectors_sfdc_table.png)
-
-1. När schemat har skapats kan du synkronisera uppräkningar automatiskt via CRM till Adobe Campaign.
-
-   Det gör du genom att klicka på länken **[!UICONTROL Synchronizing enumerations...]** och välja den Adobe Campaign-uppräkning som matchar CRM-uppräkningen.
-
-   >[!NOTE]
-   >
-   >Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: Om du vill göra det väljer du **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Replace]**.
-
-   Exempel på **Salesforce**-uppräkningar:
-
-   ![](assets/crm_connectors_sfdc_enum.png)
-
-   Klicka på **[!UICONTROL Next]** och sedan på **[!UICONTROL Start]** för att börja importera listan.
-
-1. Kontrollera de importerade värdena på **[!UICONTROL Administration > Platform > Enumerations]**-menyn.
-
-   ![](assets/crm_connectors_sfdc_exe.png)
-
-   >[!NOTE]
-   >
-   > Flera urvalsuppräkningar i Salesforce stöds inte.
-
-1. Om du vill synkronisera data mellan Adobe Campaign-data och CRM-systemet måste du skapa ett arbetsflöde och använda aktiviteten **[!UICONTROL CRM connector]**.
-
-   ![](assets/crm_connectors_sfdc_wf.png)
-
-   Läs mer om datasynkronisering [på den här sidan](../../platform/using/crm-data-sync.md).
+Lär dig steg för steg hur du ansluter Campaign och Salesforce [i det här avsnittet](../../platform/using/crm-sfdc.md)
