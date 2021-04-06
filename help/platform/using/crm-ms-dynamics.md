@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Microsoft Dynamics CRM Connector
+title: Kampanj - Microsoft Dynamics CRM Connector
 description: Connect Campaign och Microsoft Dynamics
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 translation-type: tm+mt
-source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # Connect Campaign och Microsoft Dynamics 365{#connect-to-msdyn}
 
@@ -26,12 +26,6 @@ Möjliga distributioner är:
 * för en **lokal**-distribution använder du nyckelstegen för Office 365.
 
 Datasynkronisering utförs via en dedikerad arbetsflödesaktivitet. [Läs mer](../../platform/using/crm-data-sync.md).
-
-
->[!NOTE]
->
-> CRM-systemversioner som är kompatibla med Campaign visas i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#CRMconnectors).
-
 
 ## Implementeringssteg{#microsoft-dynamics-implementation-steps}
 
@@ -56,10 +50,10 @@ I Campaign Classic:
 
 
 >[!CAUTION]
->
 > När du ansluter Adobe Campaign med Microsoft Dynamics kan du inte:
 > * Installera plugin-program som kan ändra CRM-funktionens beteende och leda till kompatibilitetsproblem med Adobe Campaign
 > * Markera flera uppräkningar
+
 >
 
 
