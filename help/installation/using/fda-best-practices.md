@@ -6,14 +6,14 @@ description: Lär dig bästa praxis och begränsningar när du arbetar med en ex
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 translation-type: tm+mt
-source-git-commit: 0a92ebd6c9400f8caf43da8f633c7755a3fb77ce
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
 
 ---
-
 
 # Bästa praxis och begränsningar
 
@@ -60,4 +60,3 @@ Undvik de åtgärder som behöver använda både Adobe Campaign och den externa 
 Om du vill utföra personalisering i leveranser med data från den externa databasen, samlar du in data som ska användas i ett arbetsflöde för att göra dem tillgängliga i en tillfällig tabell. Använd sedan data från den tillfälliga tabellen för att anpassa leveransen.
 
 FDA-alternativet har begränsningar för det externa databassystem som du använder.
-
