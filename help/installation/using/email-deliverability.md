@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: E-postleverans
-description: E-postleverans
+title: Konfiguration av teknisk e-post
+description: Lär dig hur du konfigurerar Campaign för att styra utdata för dina instanser när du levererar e-postmeddelanden.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3022'
 ht-degree: 0%
 
 ---
-
 
 # Tekniska e-postkonfigurationer{#email-deliverability}
 
@@ -27,7 +27,7 @@ I följande avsnitt ges en översikt över den konfiguration som krävs för att
 
 Mer information om koncept och bästa metoder för att leverera med Adobe Campaign finns i [avsnittet](../../delivery/using/about-deliverability.md).
 
-Mer information om vad som kan levereras, inklusive alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via Adobe, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Mer information om vad som kan levereras, inklusive alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via Adobe, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -135,9 +135,11 @@ Som standard avlyssnar statistikservern port 7777. Den här porten kan ändras i
 >
 >Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre leveransgenomströmningsreglerna för **[!UICONTROL MX management]**. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
 
-Avsnitten nedan gäller endast lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA.
-
 ### Om MX-regler {#about-mx-rules}
+
+>[!NOTE]
+>
+>Detta avsnitt och avsnitten nedan gäller endast lokala installationer och hostinginstallationer/hybridinstallationer som använder det äldre Campaign MTA.
 
 MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en sändande server och en mottagande server.
 
@@ -301,6 +303,10 @@ Följande parametrar är tillgängliga för varje regel:
 Konfigurationsexempel:
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>Mer information om hur du använder MX-servrar med Adobe Campaign finns i [det här avsnittet](../../installation/using/using-mx-servers.md).
 
 ### Hantera e-postformat {#managing-email-formats}
 
