@@ -6,14 +6,14 @@ description: Connect Campaign och Salesforce.com
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 translation-type: tm+mt
-source-git-commit: 236e8d355b8cd89a0ebe88d5fca7ff78ca62db8e
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # Connect Campaign och Microsoft Dynamics 365{#connect-to-msdyn}
 
@@ -91,4 +91,3 @@ Om du vill synkronisera data mellan Adobe Campaign-data och SFDC måste du skapa
 ![](assets/crm_connectors_sfdc_wf.png)
 
 Läs mer om datasynkronisering [på den här sidan](../../platform/using/crm-data-sync.md).
-
