@@ -2,18 +2,18 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic – dokumentationsuppdateringar
-description: På den här sidan visas alla nya funktioner och uppdateringar i Adobe Campaign Classic-dokumentationen
+description: Den här sidan beskriver alla nya funktioner och uppdateringar i dokumentationen om Adobe Campaign Classic
 feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+role: Business Practitioner
+level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '4275'
-ht-degree: 93%
+source-wordcount: '4272'
+ht-degree: 96%
 
 ---
-
 
 # Dokumentationsuppdateringar{#documentation-updates}
 
@@ -27,18 +27,18 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 Sidan&quot;Hjälp och support&quot; för Campaign Classic har integrerats i huvuddokumentationen. [Läs mer](../../support.md)
 
-Ett nytt avsnitt har lagts till med bästa praxis och kontroller för att utföra säkerhets- och sekretessåtgärder. [Läs mer](../../installation/using/get-started-security-privacy.md)
+Ett nytt avsnitt har lagts till med god praxis och kontroller gällande säkerhet och sekretess. [Läs mer](../../installation/using/get-started-security-privacy.md)
 
-[kapitlet om behörighetshantering](../../platform/using/access-management.md) har förbättrats och delats upp i avsnitt, inklusive information om [operatorer](../../platform/using/access-management-operators.md), [operatorgrupper](../../platform/using/access-management-groups.md), [Namngivna rättigheter](../../platform/using/access-management-named-rights.md) och [Mapphantering](../../platform/using/access-management-folders.md).
+[Kapitlet om behörighetshantering](../../platform/using/access-management.md) har förbättrats och delats upp i avsnitt, inklusive information om [operatörer](../../platform/using/access-management-operators.md), [operatörsgrupper](../../platform/using/access-management-groups.md), [namngivna rättigheter](../../platform/using/access-management-named-rights.md) och [mapphantering](../../platform/using/access-management-folders.md).
 
-Lär dig hur du skapar och hanterar kampanjer via dessa nya sidor:
+Läs om hur du skapar och hanterar dina kampanjer via de här nya sidorna:
 * [Skapa och konfigurera kampanjmallar](../../campaign/using/marketing-campaign-templates.md)
 * [Leveranser av marknadsföringskampanjer](../../campaign/using/marketing-campaign-deliveries.md)
-* [Välj målgrupp för era kampanjer](../../campaign/using/marketing-campaign-target.md)
+* [Välj målgruppen för dina kampanjer](../../campaign/using/marketing-campaign-target.md)
 * [Hantera associerade dokument](../../campaign/using/marketing-campaign-assets.md)
-* [Ställ in och hantera godkännandeprocessen](../../campaign/using/marketing-campaign-approval.md)
+* [Konfigurera och hantera godkännandeprocessen](../../campaign/using/marketing-campaign-approval.md)
 
-Information har lagts till i **[!UICONTROL Advanced JavaScript]**-aktivitetsavsnittet om hur du använder metoden task.setCompleted() för att avsluta aktiviteten och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+Information har lagts till i avsnittet om **[!UICONTROL Advanced JavaScript]**-aktivitet om hur du använder metoden task.setCompleted() för att avsluta uppgiften och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 Avsnittet [Deliverability](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). All generisk information om slutbarhet som kan användas för olika Adobe-lösningar har flyttats till [Best Practice Guide Appendix](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
