@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Funktioner som är inaktuella och har ersatts i Campaign Classic
-description: På den här sidan visas borttagna och borttagna funktioner i Adobe Campaign Classic
+description: Den här sidan beskriver inaktuella och borttagna funktioner i Adobe Campaign Classic
 feature: Översikt
 role: Yrkesverksam
 level: Nybörjare
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1716'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,16 +44,16 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Ersättning</strong></td>
   </tr>
     <tr>
-  <td>Övervakningsrapport för teknisk leverans<br></td>
-   <td><p>Från och med Campaign 21.1 har övervakningsrapporten för teknisk leverans tagits bort.</p>
-   <p>Om det behövs kan du få den här rapporten via e-post varje dag fram till datumet då funktionen togs bort. Du begär det genom att öppna ett specifikt <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen/e-postadresserna som rapporten ska skickas till.</p> 
-   <p>Adobe rekommenderar att ni samarbetar med Deliverability Team för att definiera de bästa verktygen för att övervaka instansens leveransförmåga.</p>
-  <p><em>Datum för målborttagning: I slutet av 2021</em></p>
+  <td>Övervakningsrapport om teknisk levererbarhet<br></td>
+   <td><p>Övervakningsrapporten om teknisk levererbarhet är föråldrad från och med Campaign version 21.1.</p>
+   <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
+   <p>Adobe rekommenderar att du samarbetar med levererbarhetsteamet för att definiera de bästa verktygen för att övervaka instansens levererbarhetsförmåga.</p>
+  <p><em>Måldatum för borttagning: i slutet av 2021</em></p>
   </td>
  </tr>
   <tr>
   <td>CRM-kopplingar<br></td>
-   <td><p>Från och med Campaign 20.3 har följande CRM-anslutningar tagits bort i Campaign:</p>
+   <td><p>Följande CRM-kopplingar är föråldrade från och med Campaign version 20.3:</p>
    <ul>
    <li>Soap API – lokal: 2007, 2015 och 2016</li>
    <li>Soap API – online: 2015 och 2016</li>
@@ -97,7 +97,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <li>iOS</li>
    </ul>
   <p>Om du använder någon av dessa kopplingar måste implementeringen anpassas i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Läs mer</a></p> 
-  <p>Läs mer om hur man migrerar äldre kopplingar i <a href="../../delivery/using/unsupported-connector-migration.md">det här tekniska dokumentet</a>.</p>
+  <p>Läs om hur du migrerar föråldrade kopplingar i <a href="../../delivery/using/unsupported-connector-migration.md">det här tekniska dokumentet</a>.</p>
   <p><em>Måldatum för borttagning: april 2021</em></p>
   </td> 
  </tr>
