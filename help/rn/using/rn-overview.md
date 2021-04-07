@@ -4,16 +4,16 @@ product: campaign
 title: Kom igång med uppgraderingar
 description: Läs mer om uppgraderingar till Campaign Classic
 feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+role: Business Practitioner
+level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 93%
 
 ---
-
 
 # Kom igång med uppgraderingar{#rn-overview}
 
@@ -35,7 +35,7 @@ De **senaste GA-versionerna** är: [[!DNL Gold Standard]  version 11](../../rn/u
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidat** (RC) – senaste versionen med nya funktioner.
 
-Den **senaste RC-versionen** är [Campaign Classic version 21.1.](../../rn/using/latest-release.md)
+Den **senaste RC-builden** är [Campaign Classic version 21.1.](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Inaktuell** – ingen distribution. Befintliga implementeringar måste uppgraderas.
 
@@ -51,7 +51,7 @@ Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [in
 
 Som värdbaserad kund (Managed Service eller hybrid) måste du kontakta kundtjänst för att få din miljö uppgraderad.
 
-Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila builden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
+Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila builden](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
