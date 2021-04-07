@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kompatibilitetsmatris för kampanj [!DNL Gold Standard]
+title: Kompatibilitetsmatris för Campaign [!DNL Gold Standard]
 description: Kompatibilitetsmatris för Campaign Classic för [!DNL Gold Standard] release
 feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+role: Business Practitioner
+level: Beginner
+exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '509'
 ht-degree: 98%
 
 ---
-
 
 # [!DNL Gold Standard] Kompatibilitetsmatris{#compatibility-matrix-gs}
 
@@ -324,4 +324,4 @@ Internet Explorer 11 stöds.
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
 * [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
-* [Procedur för versionsuppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
+* [Procedur för versionsuppgradering](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html)
