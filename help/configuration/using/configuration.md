@@ -6,20 +6,20 @@ description: Konfiguration
 audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
+exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 translation-type: tm+mt
-source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 1%
 
 ---
 
-
 # Konfigurera navigeringsträdet i Campaign Explorer{#configuration}
 
 Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
 
-Läs mer om Campaign Explorer och navigeringshierarkin [i det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
+Läs mer om Campaign Explorer och navigeringshierarkin [i det här avsnittet](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
 De typer av mappar som används i navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree**-schemat.
 
@@ -312,4 +312,3 @@ Konfigurationen för **`<nodemodel>`** på länken för mappen med namnet &quot;
 ...
 </nodeModel>
 ```
-
