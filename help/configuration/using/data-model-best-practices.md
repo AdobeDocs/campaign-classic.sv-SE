@@ -6,14 +6,14 @@ description: Lär dig hur du arbetar med datamodellen Campaign Classic
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
+exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6768e9ac518ab0c5642241d1fd2086de5b1e6892
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 1%
 
 ---
-
 
 # Bästa praxis för datamodell{#data-model-best-practices}
 
@@ -104,7 +104,7 @@ Adobe Campaign-resurser har tre identifierare och det går att lägga till ytter
 
 I följande tabell beskrivs dessa identifierare och deras syfte.
 
-| Identifierare | Beskrivning | Bästa praxis |
+| Identifierare | Beskrivning | God praxis |
 |--- |--- |--- |
 | ID | <ul><li>ID är den fysiska primärnyckeln för en Adobe Campaign-tabell. För färdiga tabeller är det ett genererat 32-bitarsnummer från en sekvens</li><li>Den här identifieraren är vanligtvis unik för en viss Adobe Campaign-instans. </li><li>Ett automatiskt genererat ID kan vara synligt i en schemadefinition. Sök i attributet *autopk=&quot;true&quot;*.</li></ul> | <ul><li>Automatiskt genererade identifierare bör inte användas som referens i ett arbetsflöde eller i en paketdefinition.</li><li>Man bör inte anta att ID:t alltid blir ett ökande tal.</li><li>ID:t i en körklar tabell är ett 32-bitars tal och den här typen bör inte ändras. Numret hämtas från en sekvens som beskrivs i avsnittet med samma namn.</li></ul> |
 | Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel), kommer detta gemensamma namnutrymme att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk*.</li><li>När ett objekt inte har något namnutrymme (*arbetsflöde* eller *leverans* till exempel) läggs det här namnutrymmesbegreppet till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
@@ -251,7 +251,7 @@ Som standard har Adobe Campaign leverans- och spårningsloggar en kvarhållnings
 * Om du vill att loggarna ska sparas längre bör detta beslut fattas med stor noggrannhet beroende på databasstorleken och mängden meddelanden som skickas. Som påminnelse är Adobe Campaign-sekvensen ett 32-bitars heltal.
 * Vi rekommenderar att du inte har mer än 1 miljard poster samtidigt i dessa tabeller (cirka 50 % av de 2,14 miljarder ID som finns) för att begränsa riskerna med att använda alla tillgängliga ID:n. Detta kräver att vissa kunder minskar kvarhållningstiden till mindre än 180 dagar.
 
-Läs mer om datalagring i [Riktlinjer för integritet och säkerhet för kampanjer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#consent).
+Läs mer om datalagring i [Riktlinjer för sekretess och säkerhet för kampanjer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#consent).
 
 Läs mer om rensningsarbetsflödet [i det här avsnittet](../../production/using/database-cleanup-workflow.md) för Campaign Data base.
 
