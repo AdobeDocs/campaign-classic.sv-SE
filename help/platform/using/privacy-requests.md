@@ -6,14 +6,14 @@ description: Lär dig hur du hanterar sekretessförfrågningar
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2415'
 ht-degree: 21%
 
 ---
-
 
 # Hantera sekretessbegäranden {#privacy-requests}
 
@@ -23,9 +23,7 @@ Denna information gäller för GDPR, CCPA, PDPA och LGPD. Se [det här avsnittet
 
 [Det här avsnittet](#sale-of-personal-information-ccpa) förklarar avanmälan till försäljning av personuppgifter vilken är specifik för CCPA.
 
->[!IMPORTANT]
->
->De installationsförfaranden som beskrivs i detta dokument gäller från och med Campaign Classic 18.4 (build 8931+). Om du kör på en tidigare version kan du läsa denna [Tech](https://helpx.adobe.com/se/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).
+<!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
 ## Om sekretessförfrågningar {#about-privacy-requests}
 
