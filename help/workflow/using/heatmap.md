@@ -6,14 +6,14 @@ description: Övervaka era kampanjarbetsflöden med Workflow HeatMap
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 translation-type: tm+mt
-source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
+source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1128'
 ht-degree: 4%
 
 ---
-
 
 # Värmekarta för arbetsflöde {#workflow-heatmap}
 
@@ -40,7 +40,7 @@ Mer exakt hjälper det plattformsadministratörerna att:
 
 Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](../../workflow/using/about-workflows.md), [Aktiviteter](../../workflow/using/about-activities.md) och [Bästa praxis för arbetsflöden](../../workflow/using/workflow-best-practices.md).
 
-Workflow HeatMap är tillgängligt som standard i Adobe Campaign från och med version 18.10. Om du har ett build-värde mellan 8 700 och 8 977 (18,10) kan du också utnyttja den här funktionen. Om du vill begära motsvarande paket kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) och följer instruktionerna från [den här sidan](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) för att få veta hur du installerar det.
+<!--The Workflow HeatMap is available by default in Adobe Campaign starting 18.10 release. If you have a build between 8700 and 8977 (18.10), you can also benefit from this capability. To request the corresponding package, contact the [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and follow the instructions from [this page](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) to understand how to install it.-->
 
 ## Använda HeatMap {#using-the-heatmap}
 
