@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 
-# Definiera säkerhetszoner {#defining-security-zones}
+# Definiera säkerhetszoner (lokalt){#defining-security-zones}
 
 Varje operator måste länkas till en zon för att kunna logga in på en instans och operatörens IP-adress måste inkluderas i adresserna eller adressuppsättningarna som definieras i säkerhetszonen. Säkerhetszonskonfigurationen utförs i Adobe Campaign-serverns konfigurationsfil.
 
@@ -28,7 +28,7 @@ Operatorer är länkade till en säkerhetszon från sin profil i konsolen och ti
 >
 >Om du är **värd**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) kan du använda självbetjäningsgränssnittet för säkerhetszon. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->Andra **hybrid-/hosted**-kunder måste kontakta Adobe för att konfigurera säkerhetszoner för sin instans.
+>Andra **hybrid-/hosted**-kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
 
 
 ## Skapa säkerhetszoner {#creating-security-zones}
@@ -36,7 +36,7 @@ Operatorer är länkade till en säkerhetszon från sin profil i konsolen och ti
 En zon definieras av:
 
 * ett eller flera intervall med IP-adresser (IPv4 och IPv6)
-* ett tekniskt namn länkat till varje IP-adressintervall
+* ett tekniskt namn som är associerat med varje IP-adressintervall
 
 Säkerhetszoner är låsta, vilket innebär att om du definierar en ny zon inom en annan zon minskar antalet operatorer som kan logga in på den samtidigt som de rättigheter som tilldelats varje operator ökas.
 
@@ -218,3 +218,36 @@ När zonerna har definierats och **[!UICONTROL Security zone]**-uppräkningen ha
    ![](assets/zone_operator_selection.png)
 
 1. Klicka på **[!UICONTROL OK]** och spara ändringarna för att tillämpa ändringarna.
+
+
+
+## Rekommendationer
+
+* Kontrollera att din omvända proxy inte tillåts i subNetwork. Om så är fallet kommer **all**-trafik att identifieras från den här lokala IP-adressen, så den kommer att betraktas som tillförlitlig.
+
+* Minimera användningen av sessionTokenOnly=&quot;true&quot;:
+
+   * Varning: Om det här attributet är true kan operatorn exponeras för en **CRSF-attack**.
+   * Dessutom har cookie sessionToken inte angetts med flaggan httpOnly, vilket innebär att viss javascript-kod på klientsidan kan läsa den.
+   * Message Center i flera körningsceller behöver sessionTokenOnly: skapa en ny säkerhetszon med sessionTokenOnly inställd på &quot;true&quot; och lägg till **endast de IP-adresser som behövs** i den här zonen.
+
+* När det är möjligt anger du att alla allowHTTP, showErrors ska vara false (inte för localhost) och markerar dem.
+
+   * allowHTTP = &quot;false&quot;: tvingar operatorer att använda HTTPS
+   * showErrors = &quot;false&quot;: Döljer tekniska fel (inklusive SQL-fel). Det förhindrar att alltför mycket information visas, men minskar marknadsförarens förmåga att åtgärda fel (utan att be om mer information från en administratör)
+
+* Ange bara allowDebug till true för IP-adresser som används av marknadsföringsanvändare/administratörer som behöver skapa (faktiskt förhandsgranska) undersökningar, webApps och rapporter. Med den här flaggan kan dessa IP-adresser visa reläregler och felsöka dem.
+
+* Ange aldrig allowEmptyPassword, allowUserPassword, allowSQLInjection till true. Attributen är bara här för att möjliggöra en smidig migrering från v5 och v6.0:
+
+   * **Operatorer för** allowEmptyPassword har ett tomt lösenord. Om så är fallet ska du meddela alla operatorer att de måste ange ett lösenord med en tidsgräns. När den här tidsgränsen har passerats ändrar du attributet till false.
+
+   * **Operatorer** allowUserPasswordlets skickar sina inloggningsuppgifter som parametrar (så att de loggas av apache/IIS/proxy). Den här funktionen har använts tidigare för att förenkla API-användningen. Du kan kontrollera i din cookbook (eller i specifikationen) om några tredjepartsprogram använder det här. I så fall måste du meddela dem att de ska ändra hur de använder vårt API och så snart som möjligt ta bort den här funktionen.
+
+   * **Med** allowSQLInjection kan användaren utföra SQL-injektioner med en gammal syntax. Utför så snart som möjligt de korrigeringar som beskrivs i [den här sidan](../../migration/using/general-configurations.md) för att kunna ställa in attributet på false. Du kan använda /nl/jsp/ping.jsp?zone=true för att kontrollera säkerhetszonskonfigurationen. På den här sidan visas den aktiva statusen för säkerhetsåtgärder (beräknade med dessa säkerhetsflaggor) för den aktuella IP-adressen.
+
+* HttpOnly cookie/useSecurityToken: referera till flaggan **sessionTokenOnly**.
+
+* Minimera IP-adresser som läggs till i tillåtelselista: I säkerhetszoner har vi lagt till de tre intervallen för privata nätverk. Det är osannolikt att du kommer att använda alla dessa IP-adresser. Så behåll bara de du behöver.
+
+* Uppdatera operatorn webApp/internal så att den bara är tillgänglig i localhost.
