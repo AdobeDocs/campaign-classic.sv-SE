@@ -6,14 +6,14 @@ description: Konfigurera gränssnittet
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurera gränssnittet{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 
    >[!NOTE]
    >
-   >Mer information om **navtree**-typfiler finns på [den här sidan](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
+   >Mer information om **navtree**-typfiler finns på [den här sidan](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
    I det aktuella exemplet måste filen **navtree** baseras på schemat **cus:individual** och därför ha följande format:
 
@@ -91,4 +91,3 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
    ```
 
 1. Spara skapelsen.
-
