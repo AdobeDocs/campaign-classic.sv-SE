@@ -6,14 +6,14 @@ description: Webbtjänstanrop
 audience: configuration
 content-type: reference
 topic-tags: api
+exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
-
 
 # Webbtjänstanrop{#web-service-calls}
 
@@ -188,7 +188,7 @@ Delen `<service>` beskriver tjänsten XtkQueryDef med dess URI på URL:en för A
 
 ## Anslutning {#connectivity}
 
-Adobe Campaign har ökat säkerheten för autentiseringsmekanismer genom att införa säkerhetszoner (se **Definiera säkerhetszoner** i [det här avsnittet](../../installation/using/security-zones.md)) samt inställningar för sessionshantering.
+Adobe Campaign har ökat säkerheten för autentiseringsmekanismer genom att införa [säkerhetszoner](../../installation/using/security-zones.md) och inställningar för sessionshantering.
 
 Det finns två autentiseringslägen:
 
