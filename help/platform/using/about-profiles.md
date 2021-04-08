@@ -4,16 +4,16 @@ product: campaign
 title: Om profiler
 description: Om profiler
 feature: Profiler, målgrupper
-role: Affärsman, dataarkitekt
-level: Nybörjare
+role: Business Practitioner, Data Architect
+level: Beginner
+exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 12%
+source-wordcount: '994'
+ht-degree: 14%
 
 ---
-
 
 # Kom igång med profiler{#about-profiles}
 
@@ -79,11 +79,11 @@ Om du vill komma åt avancerade funktioner och konfigurationer måste du klicka 
 
 ![](assets/d_ncs_user_interface01.png)
 
-Den allmänna layouten för Adobe Campaign Explorer visas i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+Den allmänna layouten för Adobe Campaign Explorer visas på [den här sidan](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [den här sidan](../../platform/using/adobe-campaign-ui-lists.md).
 >
 >Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [det här avsnittet](../../platform/using/access-management-folders.md).
 
@@ -97,7 +97,7 @@ Om du är värd för AWS kan du även övervaka antalet aktiva profiler som anv�
 
 >[!NOTE]
 >
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
 >Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
