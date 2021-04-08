@@ -8,14 +8,14 @@ content-type: reference
 index: y
 internal: n
 snippet: y
+exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud {#configuring-adobe-io}
 
@@ -74,9 +74,9 @@ Kontrollera att du har:
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Klicka sedan på **[!UICONTROL Save configured API]**.
+1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för denna **[!UICONTROL Product profile]**. Mer information om [!DNL Analytics] **[!UICONTROL Product Profiles]** finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
-   Mer information om [!DNL Analytics] **[!UICONTROL Product Profiles]** finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
+   Klicka sedan på **[!UICONTROL Save configured API]**.
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
