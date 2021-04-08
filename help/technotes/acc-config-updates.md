@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1107'
 ht-degree: 8%
 
 ---
@@ -117,7 +117,6 @@ Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
 * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../rn/using/latest-release.md)
-* Campaign 20.3.3-utgåvan. [Läs mer](../rn/using/release--20-3.md)
 * Campaign 20.2.5-utgåvan. [Läs mer](../rn/using/release--20-2.md)
 * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurer
 
 ### HTTP/2-baserat API för APNs-provider
 
-Apple Push Notification-tjänsten (APN:er) stöder inte längre det äldre binära protokollet den 31 mars 2021 **.** [Läs mer](https://developer.apple.com/news/?id=c88acm2b).
+Sedan **31 mars 2021** stöder inte längre Apple Push Notification-tjänsten (APN:er) det äldre binära protokollet. [Läs mer](https://developer.apple.com/news/?id=c88acm2b).
 
 **Påverkas du?**
 
@@ -151,7 +150,7 @@ Som lokal/hybridkund måste du uppdatera din konfiguration. [Lär dig hur du mig
 
 ### Uppdateringar av APN:s rotcertifikat
 
-Den 29 mars 2021 kommer en infrastrukturuppdatering för Apple Push Notification service (APNs) att påverka Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatorisk** för att undvika avbrott i push-kanalen i iOS.
+Den 29 mars 2021 påverkade en infrastrukturuppdatering för Apple Push Notification service (APNs) Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatorisk** för att undvika avbrott i push-kanalen i iOS.
 
 Läs mer om ändringar av APN:er [på den här sidan](https://developer.apple.com/news/?id=7gx0a2lp).
 
