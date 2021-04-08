@@ -4,14 +4,14 @@ solution: Campaign Classic
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 topic: Premium
+exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: 9f1c4110ef49c87719f1cc84ad08f687865561d1
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 51%
 
 ---
-
 
 # Help Center {#campaign-classic-documentation}
 
@@ -19,13 +19,13 @@ ht-degree: 51%
 
 ## Nyheter
 
-* **[Uppdatera APN-](technotes/ios-certificate-update.md)**<br/> certifikatetDen 29 mars 2021 kommer en APN-uppdatering att påverka Campaign iOS-kanalen. Du måste uppdatera konfigurationen för att undvika avbrott i push-kanalen i iOS.
+* **[Uppdatera APN-](technotes/ios-certificate-update.md)**<br/> certifikatetDen 29 mars 2021 påverkades Campaign iOS-kanalen av en APN-uppdatering. Du måste uppdatera konfigurationen för att undvika avbrott i push-kanalen i iOS.
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **.
 
 * **[Skydda era Campaign-](technotes/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
 
-* **[Ta bort felaktiga ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> hårdvarustudsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Gmail-avbrott
+* **[Ta bort felaktiga ](https://helpx.adobe.com/se/campaign/kb/update-bounce-qualification.html)**<br/> hårdvarustudsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Gmail-avbrott
 
 * **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integreringDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
 
@@ -55,7 +55,7 @@ Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och be
   </td>
    <td>
     <a href="production/using/build-upgrade.md">
-      <img alt="Versionsuppgradering" src="platform/using/assets/upgrade.png" />
+      <img alt="Builduppgradering" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
       <a href="production/using/build-upgrade.md">
