@@ -5,14 +5,14 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
+exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
-
 
 # Konfigurationsuppdateringar för Adobe Campaign - mars 2021 {#acc-config-updates}
 
@@ -26,7 +26,7 @@ Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Föruto
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Säkerhetsuppdateringar {#acc-security-updates}
@@ -118,7 +118,7 @@ Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../rn/using/latest-release.md)
 * Campaign 20.3.3-utgåvan. [Läs mer](../rn/using/release--20-3.md)
-* Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
+* Campaign 20.2.5-utgåvan. [Läs mer](../rn/using/release--20-2.md)
 * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -147,7 +147,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/usin
 
 Om du är en värdkund och har uppgraderat till den nya versionen har Adobe redan uppdaterat dina instanser till det HTTP/2-baserade API:t.
 
-Som en lokal/värdbaserad kund måste du uppdatera din konfiguration. [Lär dig hur du migrerar till HTTP/2](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
+Som lokal/hybridkund måste du uppdatera din konfiguration. [Lär dig hur du migrerar till HTTP/2](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
 ### Uppdateringar av APN:s rotcertifikat
 
@@ -170,6 +170,6 @@ Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa 
 ## Användbara länkar
 
 * [Uppgradera din miljö](../production/using/build-upgrade.md)
-* [Vanliga frågor om uppgradering av bygge](../platform/using/faq-build-upgrade.md)
-* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Vanliga frågor och svar om builduppgradering](../platform/using/faq-build-upgrade.md)
+* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../installation/using/client-console-availability-for-windows.md)
