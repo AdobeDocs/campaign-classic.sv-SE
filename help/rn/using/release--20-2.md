@@ -4,39 +4,37 @@ product: campaign
 title: Version 20.2
 description: Version 20.2
 feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+role: Business Practitioner
+level: Beginner
+exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
+source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 84%
+source-wordcount: '2830'
+ht-degree: 88%
 
 ---
 
-
 # Version 20.2{#release-20-2}
-
-![](assets/do-not-localize/cp-icon.png) **Ny version av kontrollpanelen i oktober** med domänkonfiguration som använder CNAME och nya funktioner för databasövervakning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/green_2.png) Version 20.2.5 – build 9188 {#release-20-2-5-build-9188}
 
-_31 mars 2020_
+_31 mars 2021_
 
 **Förbättringar**
 
-* En förbättring har gjorts för att förhindra krascher vid ogiltiga tvålanrop. Detta kan få instansen att sluta fungera när du försöker köra specifika komplexa frågor. (NEO-28796 och NEO-30553)
+* En förbättring har gjorts för att förhindra krascher vid ogiltiga tvålanrop. Detta kan få instansen att sluta fungera när du försöker köra specifika komplexa frågor. (NEO-28796, NEO-30553)
 * Korrigerade en regression som förhindrade att SMS-leveranser med TLS skickades på grund av värdnamnsverifieringen. (NEO-29581)
-* Korrigerade ett problem som förhindrade signerad spårning av länkar från att arbeta med vissa e-postklienter. (NEO-28414 och NEO-29615)
+* Korrigerade ett problem som förhindrade signerad spårning av länkar från att arbeta med vissa e-postklienter. (NEO-28414, NEO-29615)
 * Korrigerade en spårnings-ID-sekvens när spårningstaggar för webApp användes, vilket kan orsaka konflikter med duplicerade ID:n. (NEO-27931)
 * Ett problem som gjorde att pågående arbetsflöden stoppades av den dagliga omstarten av wfserver har åtgärdats. (NEO-30047)
-* Korrigerade ett säkerhetsproblem med API-anrop från icke-adminanvändare när de försökte synkronisera mallar i Adobe Experience Manager. (NEO-32389 och NEO-23487)
+* Korrigerade ett säkerhetsproblem med API-anrop från icke-adminanvändare när de försökte synkronisera mallar i Adobe Experience Manager. (NEO-32389, NEO-23487)
 * Ett problem som gjorde att konsolen kraschade när en leveransdialogruta stängdes för en leverans som skapats med från en mall har åtgärdats. (NEO-31547)
 * Ett problem som uppstod när en leverans skapades och sparades på fliken **Mål och arbetsflöde** i en kampanj har korrigerats: förhandsgranskningen misslyckas med följande fel. (NEO-29440)
 * Korrigerade ett problem med att Tomcat 8.5 skickade ogiltiga svar som orsakade fel i transaktionsmeddelandeloggar. (NEO-30858)
 * Ett regressionsproblem som orsakade minnesfel i extern trådhantering och påverkade prestanda har åtgärdats.
-* Korrigerade ett problem som kunde göra att faktureringsarbetsflödet misslyckades när en anpassad målmappning användes. Primärnyckeln för det anpassade schemat lagras i kolumnen&quot;sourceId&quot; som bara tillåter heltalsvärden. Det tillåter nu både heltal och strängvärden. (NEO-25914 och NEO-28146)
-* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildupplösning i leveranser. (NEO-31453)
+* Korrigerade ett problem som kunde göra att faktureringsarbetsflödet misslyckades när en anpassad målmappning användes. Primärnyckeln för det anpassade schemat lagras i kolumnen&quot;sourceId&quot; som bara tillåter heltalsvärden. Det tillåter nu både heltal och strängvärden. (NEO-25914, NEO-28146)
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
 
@@ -44,9 +42,9 @@ _22 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.**
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign upphör den 30 november 2021 **.**
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
 
 
 **Förbättringar**
@@ -60,9 +58,11 @@ _22 december 2020_
 * Korrigerade ett problem som gjorde att servern kraschade när måldata visades som tillhörde resterna från en **delad** aktivitet i ett arbetsflöde.
 * Korrigerade ett problem som kunde visa ett felmeddelande när SMS-meddelanden skulle förhandsgranskas efter en fråga i ett annat schema än **mottagaren** (nms:recipient). (NEO-27517)
 * Korrigerade ett problem när en HTTPS-anslutningsbegäran med portnumret som uttryckligen definierats i värdnamnet gjordes. Anropet misslyckades med ett certifikatfel. (NEO-29146)
-* Korrigerade ett problem i hanteringen av POSIX-trådar som genererade stora kärndumpfiler på marknadsinstansen. (NEO-28117 och NEO-29281)
-* Korrigerade problem som kan få webbprocessen att krascha vid förberedelse av leveranser eller vid förhandsgranskning av återkommande leveranser. (NEO-27790 och NEO-27517)
+* Korrigerade ett problem i hanteringen av POSIX-trådar som genererade stora kärndumpfiler på marknadsinstansen. (NEO-28117, NEO-29281)
+* Korrigerade problem som kan få webbprocessen att krascha vid förberedelse av leveranser eller vid förhandsgranskning av återkommande leveranser. (NEO-27790, NEO-27517)
 * Korrigerade ett problem som orsakade att leveranser eller korrektur som skickades misslyckades när de utlöstes av en icke-adminoperator. (NEO-28597)
+
+![](assets/do-not-localize/cp-icon.png) **Ny version av kontrollpanelen i oktober** med domänkonfiguration som använder CNAME och nya funktioner för databasövervakning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
 
