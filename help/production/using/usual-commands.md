@@ -6,14 +6,14 @@ description: Vanliga kommandon
 audience: production
 content-type: reference
 topic-tags: production-procedures
+exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 3%
 
 ---
-
 
 # Vanliga kommandon{#usual-commands}
 
@@ -29,6 +29,7 @@ Parametern **`<command>`** motsvarar modulen.
 >
 >* I vilket fall som helst kan du lägga till argumentet **-noconsole** för att ta bort kommentarer som visas när modulerna har startats.
 >* Omvänt kan du lägga till argumentet **-verbose** om du vill visa mer information.
+
 >
 
 
@@ -155,13 +156,15 @@ Så här ändrar du det interna **lösenordet:** nlserver config -internalpasswo
 
 >[!IMPORTANT]
 >
->Om du vill logga in med identifieraren **Internal** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Om du vill logga in med identifieraren **Internal** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 >[!NOTE]
 >
 >* I allmänhet kan du använda kommandot **config** i stället för att ändra konfigurationsfilerna manuellt
 >* Använd **- om du vill visa parameterlistan?** parameter:  **nlserver config -?**
->* Om det är en Oracle-databas får du inte ange kontot. Syntaxen är följande:
+>* Om det är en Oraclena databas får du inte ange kontot. Syntaxen är följande:
+
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  
+nlserver config -setdblogin:Oracle:test6@dbserver
 
