@@ -6,14 +6,14 @@ description: Skapa och konfigurera databasen
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
 
 ---
-
 
 # Skapa och konfigurera databasen{#creating-and-configuring-the-database}
 
@@ -28,7 +28,7 @@ Konfigurationsstegen beskrivs nedan.
 >
 >Namn på databaser, användare och scheman får inte börja med en siffra eller innehålla specialtecken.
 >
->Det är bara identifieraren **internal** som kan utföra dessa åtgärder. Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Det är bara identifieraren **internal** som kan utföra dessa åtgärder. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Fall 1: Skapar/återanvänder en databas {#case-1--creating-recycling-a-database}
 
@@ -57,7 +57,7 @@ Identifiera servern och välj vilken typ av åtgärd som ska utföras. I det hä
 
 Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen variera.
 
-* Om du har en **Oracle**-motor fyller du i **TNS-namnet** som är definierat för programservern.
+* Ange **TNS-namnet** som definierats för programservern för en **Oraclena**-motor.
 * För en **PostgreSQL**- eller **DB2**-motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server**-motor måste du definiera: DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS`\<instance>`** (instansläge),
 
@@ -75,7 +75,7 @@ I fönstret **[!UICONTROL Server access]** definierar du databasserveråtkomsten
 
 Om du vill göra det anger du namnet och lösenordet för ett **administratörssystemkonto** som har behörighet att komma åt databaserna, dvs::
 
-* **system** för en Oracle-databas,
+* **system** för en Oraclena databas,
 * **söker** efter en Microsoft SQL Server-databas,
 * **** postgresfor a PostgreSQL database,
 * **db2inst1** för en DB2-databas.
@@ -101,9 +101,9 @@ Du måste definiera följande inställningar:
 
    >[!NOTE]
    >
-   >Med en Oracle-databas kan du med alternativet **[!UICONTROL Unicode storage]** använda textfälten **NCLOB** och **NVARCHAR**.
+   >Med hjälp av alternativet **[!UICONTROL Unicode storage]** kan du använda typfälten **NCLOB** och **NVARCHAR** för en Oraclena databas.
    > 
-   >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oracle-databasen aktivera datalagring för alla språk (AL32UTF8 rekommenderas).
+   >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oraclets databas aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
 
 * Välj en tidszon för databasen och ange om den ska vara i UTC (om tillgängligt).
 
@@ -123,7 +123,7 @@ I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skripte
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* För en Oracle-, Microsoft SQL Server- eller PostgreSQL-databas kan administratören också definiera de **lagringsparametrar** som ska användas när databasobjekt skapas.
+* För ett Oracle, Microsoft SQL Server eller PostgreSQL-databas, kan administratören också definiera de **lagringsparametrar** som ska användas när databasobjekt skapas.
 
    De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i noden **[!UICONTROL Administration > Platform > Options]** i följande alternativ (se [det här avsnittet](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -132,7 +132,7 @@ I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skripte
    * **WdbcOptions_TableSpaceWork**: arbetstabeller utan schema
    * **WdbcOptions_TableSpaceWorkIndex**: index för arbetstabeller utan schema
 
-* För en Oracle-databas måste Adobe Campaign-användaren ha tillgång till Oracle-biblioteken, vanligtvis som medlem i gruppen **oinstall**.
+* För en Oracle-databas måste Adobe Campaign-användaren ha tillgång till Oraclena, vanligtvis som medlem i **avinstallera**-gruppen.
 * Med alternativet **[!UICONTROL Set or change the administrator password]** kan du ange lösenordet som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
 
    Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
@@ -159,7 +159,7 @@ Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är l
 
 Databasen, liksom användaren, måste ha skapats av databasadministratören och behörigheterna måste vara korrekt konfigurerade.
 
-För en Oracle-databas är minimibehörigheten: GE CONNECT, RESURS OCH OBEGRÄNSAT TABLESPACE.
+För en Oraclena databas är minimibehörigheten: GE CONNECT, RESURS OCH OBEGRÄNSAT TABLESPACE.
 
 Så här använder du en befintlig databas:
 
@@ -181,7 +181,7 @@ Identifiera servern och välj vilken typ av åtgärd du vill utföra. I det här
 
 Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen variera.
 
-* Om du har en **Oracle**-motor fyller du i **TNS-namnet** som är definierat för programservern.
+* Ange **TNS-namnet** som definierats för programservern för en **Oraclena**-motor.
 * För en **PostgreSQL**- eller **DB2**-motor måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För en **Microsoft SQL Server**-motor måste du definiera:
 
@@ -204,7 +204,7 @@ Du måste definiera följande inställningar:
    >[!NOTE]
    >
    >Kontrollera att både schemanamnet och användarnamnet matchar. Rekommenderat sätt att skapa databaser är via kampanjkonsolklienten.
-   >För en Oracle-databas behöver du inte ange kontonamnet.
+   >För en Oraclena databas behöver du inte ange kontonamnet.
 
 * Ange om databasen ska vara Unicode eller inte.
 
@@ -223,7 +223,7 @@ I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skripte
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * För Oracle-, Microsoft SQL Server- eller PostgreSQL-databaser kan administratören definiera de **lagringsparametrar** som ska användas när databasobjekt skapas.
-* För en Oracle-databas måste Adobe Campaign-användaren ha tillgång till Oracle-biblioteken, vanligtvis som medlem i gruppen **oinstall**.
+* För en Oracle-databas måste Adobe Campaign-användaren ha tillgång till Oraclena, vanligtvis som medlem i **avinstallera**-gruppen.
 * Med alternativet **[!UICONTROL Set or change the administrator password]** kan du ange lösenordet som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
 
    Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
@@ -245,4 +245,3 @@ Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är l
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
