@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Serverkonfiguration
-description: Läs mer om de effektivaste strategierna för serverkonfiguration.
+title: Säkerhetskonfiguration för server
+description: Läs mer om de effektivaste strategierna för serverkonfiguration
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
-# Serverkonfiguration {#server-configuration}
+# Serverns säkerhetsinställningar {#server-configuration}
 
 ## Filöverföringsskydd
 
-Kontrollera med de operativa användarna vilken typ av filer de överför till servern med hjälp av klientens/webbgränssnittet. Som en påminnelse kan affärsbehoven vara:
+Kontrollera med de operativa användarna vilken typ av filer de överför till servern med Campaign Client Console eller webbgränssnittet. Som en påminnelse kan affärsbehoven vara:
 
 * bilder (jpg, gif, png, ...)
 * innehåll (zip, html, css, ...)
