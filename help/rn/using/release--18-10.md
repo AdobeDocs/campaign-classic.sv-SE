@@ -4,16 +4,16 @@ product: campaign
 title: Versionsinformation för Campaign 18.10
 description: Versionsinformation för Campaign 18.10
 feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+role: Business Practitioner
+level: Beginner
+exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2372'
 ht-degree: 7%
 
 ---
-
 
 # Version 18.10{#release-18-10}
 
@@ -45,7 +45,7 @@ ht-degree: 7%
 
 **Förbättringar**
 
-* Korrigerade ett problem med datorprocessen med spårningsindikatorer för transaktionsmeddelanden. (NEO-12529 och NEO-12581)
+* Korrigerade ett problem med datorprocessen med spårningsindikatorer för transaktionsmeddelanden. (NEO-12529, NEO-12581)
 * Korrigerade ett problem med HTTPRequest-API som inte väntade på att alla återanrop skulle slutföras. (NEO-12628)
 * Index lades till i kupongtemporära tabeller för att optimera leveransen. (NEO-12437)
 * Korrigerade ett fel vid analys av ett meddelande som riktade till mottagare för japanska (.JP)-domäner. (NEO-12246)
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Förbättringar**
 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
 * API:er i Campaign Classic finns nu på en [dedikerad sida](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
 * PostgreSQL 10, Debian 9 och Teradata 16.20 stöds nu. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
-* När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. Mer information finns i [detaljerad dokumentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
+* När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. Mer information finns i [detaljerad dokumentation](../../installation/using/file-res-management.md) (NEO-9868)
 * Alternativet **Formeln för datumberäkning** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktmeddelandeleverans. (NEO-9792)
 * Domännamnshanteringen har förbättrats för cookie-spårning och webbprogram. Mer information finns i avsnittet &quot;Technical Evolutions&quot; nedan.
 * Importen av Adobe Marketing Cloud delade resurser på en leverans- eller landningssida har förbättrats vad gäller säkerhet och prestanda.
@@ -240,4 +240,3 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Korrigerade ett Oracle-fel som uppstod när en ny leveranskomposition sparades efter att ett element i ett specifikt schema **hade valts baserat på en SQL-vy**. (NEO-11682)
 * Korrigerade ett problem som ledde till att genererade avvisningsfiler som innehöll falska positiv information vid bearbetning av en ZIP-fil som innehåller en CSV-fil via en inläsningsfilaktivitet med alternativet Dekomprimering.
 * xtkjoblog rensas nu av rensningen.
-
