@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -201,7 +201,7 @@ Här är de olika parametrarna för noden **dataStore**. Här definieras serverd
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> Auktoriserade filer som ska laddas ned avgränsade med ','. Strängen måste vara ett giltigt, reguljärt java-uttryck. Se <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Begränsa överförbara filer</a>.<br /> </td> 
+   <td> Auktoriserade filer som ska laddas ned avgränsade med ','. Strängen måste vara ett giltigt, reguljärt java-uttryck. Se <a href="file-res-management.md" target="_blank">Begränsa överförbara filer</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
@@ -425,7 +425,7 @@ Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataSt
 
 Här är de olika parametrarna för noden **dataStore > virtualDir**. Detta är konfigurationen av den virtuella katalogen till den verkliga katalogmappningen.
 
-Mer information finns i [Hantera offentliga resurser](../../installation/using/configuring-campaign-server.md#managing-public-resources).
+Mer information finns i [Hantera offentliga resurser](file-res-management.md).
 
 <table> 
  <thead> 
@@ -867,7 +867,7 @@ Här är de olika parametrarna för noden **oconv**. Detta är konfigurationen f
 
 Här är de olika parametrarna för noden **proxyConfig**. Detta är konfigurationen av proxyparametrar.
 
-Mer information finns i [Proxyanslutningskonfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+Mer information finns i [Proxyanslutningskonfiguration](file-res-management.md).
 
 <table> 
  <thead> 
@@ -904,7 +904,7 @@ Mer information finns i [Proxyanslutningskonfiguration](../../installation/using
 
 Konfigurera följande parametrar i noden **proxyConfig > HTTP Proxy / Secure proxy**.
 
-Mer information finns i [Proxyanslutningskonfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+Mer information finns i [Proxyanslutningskonfiguration](file-res-management.md).
 
 <table> 
  <thead> 
