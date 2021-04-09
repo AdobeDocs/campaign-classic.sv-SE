@@ -6,11 +6,10 @@ description: Kampanjens Tomcat-konfiguration
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 8ab0aab42accbd1253d53e8133f5af0a38c724ea
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -21,6 +20,11 @@ ht-degree: 0%
 Adobe Campaign använder en **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive Klientkonsol, spårade URL-länkar, SOAP-anrop med flera). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
 
 Läs mer om Tomcat i Campaign och hur du hittar din Tomcat-version i [den här sidan](../../production/using/locate-tomcat-version.md).
+
+>[!NOTE]
+>
+>Den här proceduren är begränsad till **lokala**-distributioner.
+
 
 ## Standardport för Apache Tomcat {#default-port-for-tomcat}
 
