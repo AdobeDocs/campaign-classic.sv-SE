@@ -6,14 +6,14 @@ description: Integrering med en webbserver för Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 2%
 
 ---
-
 
 # Integrering med en webbserver för Windows{#integration-into-a-web-server-for-windows}
 
@@ -23,7 +23,7 @@ Du kan använda den här integrerade Tomcat-servern för att hantera HTTP-begär
 
 I detta fall:
 
-* Standardlyssningsporten är 8080. Mer information finns i [Konfigurera Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* Standardlyssningsporten är 8080. Mer information finns i [det här avsnittet](../../installation/using/configure-tomcat.md).
 * Klientkonsolerna ansluter sedan med en URL som [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
 
 Av säkerhets- och administrationsskäl rekommenderar vi dock att du använder en dedikerad webbserver som huvudstartpunkt för HTTP-trafik när datorn som kör Adobe Campaign exponeras på Internet och du vill öppna konsolen utanför nätverket.
@@ -178,4 +178,3 @@ Använd följande konfiguration för att åtgärda detta och visa felet korrekt:
 1. Välj **PassThrough**-värdet på raden **existingResponse**.
 
 ![](assets/ins_iis_httperrors.png)
-
