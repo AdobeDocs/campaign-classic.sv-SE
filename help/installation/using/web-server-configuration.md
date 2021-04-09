@@ -6,14 +6,14 @@ description: Lär dig mer om de effektivaste strategierna för webbserverkonfigu
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Webbserverkonfiguration {#web-server-configuration}
 
@@ -58,7 +58,7 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
    * ServerSignature **Av**
    * ServerTokens **Prod**
 
-   **Utför följande konfiguration på IIS**  (se  [dokumentationen](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)):
+   **Utför följande konfiguration på IIS**:
 
    * Installera **URLScan**.
    * Redigera filen **Urlscan.ini** så att den har **RemoveServerHeader=1**
@@ -66,7 +66,7 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
 
 * Begränsa frågestorleken för att förhindra att viktiga filer överförs:
 
-   **I Apache**  (se  [dokumentationen](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody)) lägger du till direktivet  **** LimitRequestBodyi (storlek i byte) i katalogen /.
+   **I Apache** lägger du till direktivet  **** LimitRequestBodyi (storlek i byte) i katalogen /.
 
    ```
    <Directory />
