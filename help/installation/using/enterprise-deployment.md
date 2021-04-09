@@ -6,14 +6,14 @@ description: Driftsättning i företagsklass
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Driftsättning i företagsklass{#enterprise-deployment}
 
@@ -113,7 +113,7 @@ Stegen för installation av den första servern är:
    nlserver config -internalpassword
    ```
 
-   Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 1. Skapa instansen **demo** med DNS-masker för spårning (i det här fallet **tracking.campaign.net**) och åtkomst till klientkonsoler (i det här fallet **console.campaign.net**). Det finns två sätt att göra detta:
 
@@ -151,7 +151,7 @@ Stegen för installation av den första servern är:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och ange leveransdomänen. Ange sedan IP-adresserna (eller värdadresserna) för de DNS-servrar som används av MTA-modulen för att svara på DNS-frågor av MX-typ.
 
@@ -163,7 +163,7 @@ Stegen för installation av den första servern är:
    >
    >Parametrarna **nameServers** används bara i Windows.
 
-   Mer information finns i [Kampanjserverkonfiguration](../../installation/using/campaign-server-configuration.md).
+   Mer information finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
 1. Kopiera klientkonsolens installationsprogram (**setup-client-7.XX**, **YYY.exe** for v7 eller **setup-client-6.XX**, **YYYY.exe** for v6.1) till **/data/nl/enl g/jsp**-mapp. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
@@ -229,7 +229,7 @@ Använd följande steg:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och fyll i DNS-konfigurationen för MTA-modulen:
 
@@ -241,7 +241,7 @@ Använd följande steg:
    >
    >Parametern **nameServers** används bara i Windows.
 
-   Mer information finns i [Kampanjserverkonfiguration](../../installation/using/campaign-server-configuration.md).
+   Mer information finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
 1. Starta Adobe Campaign-servrarna.
 
@@ -290,4 +290,3 @@ Stegen är följande:
    * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Starta Adobe Campaign-servern.
-
