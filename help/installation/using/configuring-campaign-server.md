@@ -8,73 +8,153 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2810'
-ht-degree: 6%
+source-wordcount: '2575'
+ht-degree: 1%
 
 ---
 
-# Konfigurera Campaign-servern{#configuring-campaign-server}
+# Kom igång med Campaign-serverkonfigurationen{#gs-campaign-server-config}
 
-I avsnittet nedan beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
+I det här kapitlet beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
 
-Dessa konfigurationer måste utföras av administratörer och endast för värdmodeller av **On-lokalt**.
+## Begränsningar
 
-För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på kontrollpanelen (till exempel IP tillåtelselista-hantering eller URL-behörigheter).
+Dessa procedurer är begränsade till **lokala**/**hybriddistributioner** och kräver administrationsbehörigheter.
 
->[!NOTE]
->
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
->
->Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), till exempel IP tillåtelselista management eller URL permissions. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Mer information finns i följande avsnitt:
 
 * [Dokumentation för kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 * [Värdbaserade modeller](../../installation/using/hosting-models.md)
 * [Funktionsmatris för lokal och värdbaserad Campaign Classic](../../installation/using/capability-matrix.md)
-* [Konfigurationssteg för hybridmodeller och värdbaserade modeller](../../installation/using/hosting-models.md)
+
+## Konfigurationsfiler
 
 Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
 
 * **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna som listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (där  **** instansen är instansens namn): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
 
-## Konfigurerar Tomcat {#configuring-tomcat}
+Allmänna riktlinjer för serverkonfiguration finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
-### Standardport för Tomcat {#default-port-for-tomcat}
 
-När Tomcat-serverns 8080-lyssningsport redan är upptagen med ett annat program som krävs för din konfiguration, måste du ersätta 8080-porten med en kostnadsfri port (till exempel 8090). Om du vill ändra den redigerar du filen **server.xml** som har sparats i katalogen **/tomcat-8/conf** i installationsmappen för Adobe Campaign.
+## Konfigurationsomfattning
 
-Ändra sedan porten för JSP-reläsidorna. Det gör du genom att ändra filen **serverConf.xml** som har sparats i katalogen **/conf** i Adobe Campaign installationskatalog. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Konfigurera eller anpassa Campaign-servern beroende på dina behov och din konfiguration. Du kan:
+
+* Skydda den interna identifieraren [a1/>](#internal-identifier)
+* Aktivera [Kampanjprocesser](#enabling-processes)
+* Konfigurera [URL-behörigheter](url-permissions.md)
+* Definiera [säkerhetszoner](security-zones.md)
+* Konfigurera [Tomcat-inställningar](configure-tomcat.md)
+* Anpassa [Leveransparametrar](#delivery-settings)
+* Definiera [dynamisk sidsäkerhet och reläer](#dynamic-page-security-and-relays)
+* Begränsa listan med [tillåtna externa kommandon](#restricting-authorized-external-commands)
+* Ställ in [Spårning av överflödiga ](#redundant-tracking)
+* Hantera [Hög tillgänglighet och arbetsflödestillhörigheter](#high-availability-workflows-and-affinities)
+* Konfigurera filhantering - [Läs mer](#file-and-resmanagement)
+   * Begränsa filformat för överföring
+   * Ge åtkomst till offentliga resurser
+   * Konfigurera proxyanslutning
+* [Automatisk processomstart](#automatic-process-restart)
+
+
+## Intern identifierare {#internal-identifier}
+
+Identifieraren **internal** är en teknisk inloggning som ska användas för installation, administration och underhåll. Inloggningen är inte kopplad till någon instans.
+
+Operatörer som är anslutna med den här inloggningen har alla rättigheter för alla instanser. Den här inloggningen har inget lösenord vid en ny installation. Du måste definiera det här lösenordet manuellt.
+
+Använd följande kommando:
 
 ```
-<serverConf>
-   ...
-   <web controlPort="8005" httpPort="8090"...
-   <url ... targetUrl="http://localhost:8090"...
+nlserver config -internalpassword
 ```
 
-### Mappa en mapp i Tomcat {#mapping-a-folder-in-tomcat}
-
-Om du vill definiera kundspecifika inställningar kan du skapa en **user_contexts.xml**-fil i mappen **/tomcat-8/conf**, som även innehåller filen **contexts.xml**.
-
-Filen kommer att innehålla följande typ av information:
+Därefter visas följande information. Ange och bekräfta lösenordet:
 
 ```
- <Context path='/foo' docBase='../customers/foo'   crossContext='true' debug='0' reloadable='true' trusted='false'/>
+17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+Enter the current password.
+Password:
+Enter the new password.
+Password: XXXX
+Confirmation: XXXX
+17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-Om det behövs kan den här åtgärden reproduceras på serversidan.
+## Aktivera processer {#enabling-processes}
 
-## Anpassa leveransparametrar {#personalizing-delivery-parameters}
+Adobe Campaign-processer på servern aktiveras (och inaktiveras) via filerna **config-default.xml** och **`config-<instance>.xml`**.
 
-Leveransparametrarna definieras i konfigurationsfilen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Om du vill tillämpa ändringarna på de här filerna måste du köra kommandot **nlserver config -reload** om Adobe Campaign-tjänsten startas.
 
-Allmän serverkonfiguration och allmänna kommandon finns i [Kampanjserverkonfiguration](../../installation/using/campaign-server-configuration.md).
+Det finns två typer av processer: flera instanser och en instans.
 
-Du kan även göra följande konfigurationer beroende på dina behov och inställningar.
+* **flera instanser**: en enda process startas för alla instanser. Detta gäller för **web**, **syslogd** och **trackinglogd**-processer.
+
+   Aktivering kan konfigureras från filen **config-default.xml**.
+
+   Deklarera en Adobe Campaign-server för åtkomst till klientkonsoler och för omdirigering (spårning):
+
+   ```
+   vi nl6/conf/config-default.xml
+   <web args="-tomcat" autoStart="true"/>  
+   <!-- to start if the machine is also a redirection server -->  
+   <trackinglogd autoStart="true"/>
+   ```
+
+   I det här exemplet redigeras filen med ett **vi**-kommando i Linux. Den kan redigeras med en **.txt** eller **.xml**-redigerare.
+
+* **mono-instance**: en process startas för varje instans (moduler:  **mta**,  **wfserver**,  **inMail**,  **** smand  **stat**).
+
+   Aktivering kan konfigureras med hjälp av instansens konfigurationsfil:
+
+   ```
+   config-<instance>.xml
+   ```
+
+   Deklarera en server för leverans, köra arbetsflödesinstanser och återställa studentpost:
+
+   ```
+   <mta autoStart="true" statServerAddress="localhost"/>
+   <wfserver autoStart="true"/>  
+   <inMail autoStart="true"/>
+   <stat autoStart="true"/>
+   ```
+
+**Kampanjdatalagring**
+
+Du kan konfigurera lagringskatalogen (**var** katalog) för Adobe Campaign-data (loggar, hämtningar, omdirigeringar osv.). Det gör du genom att använda systemvariabeln **XTK_VAR_DIR**:
+
+* I Windows anger du följande värde i systemvariabeln **XTK_VAR_DIR**
+
+   ```
+   D:\log\AdobeCampaign
+   ```
+
+* I Linux går du till filen **customer.sh** och anger: **exportera XTK_VAR_DIR=/app/log/AdobeCampaign**.
+
+   Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+
+## Konfigurera leveransinställningar {#delivery-settings}
+
+Leveransparametrarna måste konfigureras i mappen **serverConf.xml**.
+
+* **DNS-konfiguration**: Ange leveransdomänen och IP-adresserna (eller värddatorn) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från  **`<dnsconfig>`** och med.
+
+   >[!NOTE]
+   >
+   >Parametern **nameServers** är nödvändig för en installation i Windows. För en installation i Linux måste den lämnas tom.
+
+   ```
+   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+   ```
+
+Du kan även göra följande konfigurationer beroende på dina behov och inställningar: konfigurera en [SMTP-relä](#smtp-relay), anpassa antalet [MTA-underordnade processer](#mta-child-processes), [Hantera utgående SMTP-trafik](#managing-outbound-smtp-traffic-with-affinities).
 
 ### SMTP-relä {#smtp-relay}
 
@@ -94,7 +174,7 @@ I det här fallet anges dessa parametrar genom att SMTP-servern konfigureras i *
 
 ### MTA-underordnade processer {#mta-child-processes}
 
-Det är möjligt att kontrollera populationen av underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
+Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -141,52 +221,13 @@ Gör så här:
    >
    >Du kan även läsa [Leveransserverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
-## URL-behörigheter {#url-permissions}
 
-Standardlistan med URL:er som kan anropas av JavaScript-koder (arbetsflöden osv.) från dina instanser i Campaign Classic är begränsad. Dessa är URL:er som gör det möjligt för dina instanser att fungerar korrekt.
-
-Som standard tillåts instanser endast att ansluta till interna URL:er. Det är dock möjligt att lägga till vissa externa URL:er i listan över auktoriserade URL:er, så att instansen kan ansluta till dem. Detta gör det möjligt för dig att ansluta instanserna i Campaign till externa system såsom SFTP-servrar eller webbplatser för att möjliggöra fil- och/eller dataöverföring.
-
-När en URL har lagts till refereras den i instansens konfigurationsfil (serverConf.xml).
-
-Hur du hanterar URL-behörigheter beror på din värdmodell:
-
-* **** Hybriddrift  **lokalt**: lägg till de URL:er som ska tillåtas i  **filen** serverConf.xml. Detaljerad information finns i avsnittet nedan.
-* **Värdbaserad**: lägg till de URL:er som ska tillåtas via  **Kontrollpanelen**. Se den [särskilda dokumentationen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) för mer information.
-
-   >[!NOTE]
-   >
-   >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
-   >
-   >Observera att din instans måste ligga på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen. Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
-
-Med **hybridvärdmodeller** och **On-lokalt** måste administratören referera till en ny **urlPermission** i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-
-Det finns tre lägen för anslutningsskydd:
-
-* **Blockering**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
-* **Tillstånd**: Alla URL:er som inte tillhör tillåtelselista tillåts.
-* **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken skickar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
-
-```
-<urlPermission action="warn" debugTrace="true">
-  <url dnsSuffix="abc.company1.com" urlRegEx=".*" />
-  <url dnsSuffix="def.partnerA_company1.com" urlRegEx=".*" />
-  <url dnsSuffix="xyz.partnerB_company1.com" urlRegEx=".*" />
-</urlPermission>
-```
-
->[!IMPORTANT]
->
->Som standard använder nya kunders klient **blockeringsläget**. Om de behöver tillåta en ny URL-adress kontaktar de administratören för att lägga till den i tillåtelselista.
->
->Befintliga kunder som kommer från en migrering kan använda **varningsläget** en stund. Samtidigt måste de analysera utgående trafik innan de godkänner URL:erna. När listan över auktoriserade URL:er har definierats bör de kontakta sin administratör för att lägga till URL:erna i tillåtelselista och aktivera **blockeringsläget**.
 
 ## Dynamisk sidsäkerhet och reläer {#dynamic-page-security-and-relays}
 
-Som standard är alla dynamiska sidor automatiskt relaterade till den lokala **Tomcat-servern på den dator vars webbmodul har startats.** Den här konfigurationen anges i avsnittet **`<url>`** i frågereläkonfigurationen för filen **ServerConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Som standard är alla dynamiska sidor automatiskt relaterade till den lokala **Tomcat-servern på den dator vars webbmodul har startats.** Den här konfigurationen anges i avsnittet **`<url>`** i frågereläkonfigurationen för filen **ServerConf.xml**.
 
-för att vidarebefordra körning av den dynamiska sidan på en **fjärr**-server; om webbmodulen inte är aktiverad på datorn. För att göra detta måste du ersätta **localhost** med namnet på fjärrdatorn för JSP och JSSP, webbprogram, rapporter och strängar.
+Du kan vidarebefordra körningen av den dynamiska sidan på en **fjärr**-server; om webbmodulen inte är aktiverad på datorn. För att göra detta måste du ersätta **localhost** med namnet på fjärrdatorn för JSP och JSSP, webbprogram, rapporter och strängar.
 
 Mer information om de olika tillgängliga parametrarna finns i konfigurationsfilen **serverConf.xml**.
 
@@ -234,11 +275,24 @@ I det här exemplet sammanfaller **`<IP_addresses>`**-värdet med listan över I
 >
 >Värdena ska anpassas efter din konfiguration och dina nätverksbegränsningar, särskilt om specifika konfigurationer har utvecklats för din installation.
 
-## Begränsa tillåtna externa kommandon {#restricting-authorized-external-commands}
+### Hantera HTTP-rubriker {#managing-http-headers}
 
->[!NOTE]
->
->Följande konfiguration krävs bara för lokala installationer.
+Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubriker i svar som skickas via relä. Så här gör du:
+
+1. Gå till filen **serverConf.xml**.
+1. I noden **`<relay>`** går du till listan med vidarebefordrade HTTP-rubriker.
+1. Lägg till ett **`<responseheader>`**-element med följande attribut:
+
+   * **namn**: rubriknamn
+   * **värde**: värdenamn.
+
+   Exempel:
+
+   ```
+   <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
+   ```
+
+## Begränsa auktoriserade externa kommandon {#restricting-authorized-external-commands}
 
 Från och med bygge 8780 kan teknikadministratörer begränsa listan över auktoriserade externa kommandon som kan användas i Adobe Campaign.
 
@@ -283,22 +337,6 @@ Den här användaren måste läggas till i användarlistan för Adobe Campaign-o
 >
 >Du bör inte använda en anpassad sudo. En standardsudo måste installeras på datorn.
 
-## Hantera HTTP-rubriker {#managing-http-headers}
-
-Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubriker i svar som skickas via relä. Så här gör du:
-
-1. Gå till filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-1. I noden **`<relay>`** går du till listan med vidarebefordrade HTTP-rubriker.
-1. Lägg till ett **`<responseheader>`**-element med följande attribut:
-
-   * **namn**: rubriknamn
-   * **värde**: värdenamn.
-
-   Exempel:
-
-   ```
-   <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
-   ```
 
 ## Spårning av överflödig {#redundant-tracking}
 
@@ -308,7 +346,7 @@ När flera servrar används för omdirigering måste de kunna kommunicera med va
 >
 >När du använder standardarkitekturen eller företagsarkitekturen måste huvudprogramservern ha behörighet att överföra spårningsinformation på varje dator.
 
-URL:erna för de redundanta servrarna måste anges i omdirigeringskonfigurationen via filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+URL:erna för de redundanta servrarna måste anges i omdirigeringskonfigurationen via filen **serverConf.xml**.
 
 **Exempel:**
 
@@ -317,105 +355,31 @@ URL:erna för de redundanta servrarna måste anges i omdirigeringskonfiguratione
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-Egenskapen **enableIf** är valfri (tom som standard) och du kan bara aktivera anslutningen om resultatet är true; På så sätt kan du få en identisk konfiguration på alla omdirigeringsservrar.
+Egenskapen **enableIf** är valfri (tom som standard) och du kan bara aktivera anslutningen om resultatet är sant. På så sätt kan du få en identisk konfiguration på alla omdirigeringsservrar.
 
 Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**.
 
-## Hantera offentliga resurser {#managing-public-resources}
+## Fil- och resurshantering{#file-and-resmanagement}
 
-Offentliga resurser presenteras i [Hantera offentliga resurser](../../installation/using/deploying-an-instance.md#managing-public-resources).
+### Begränsa filformat för överföring {#limiting-uploadable-files}
 
-De lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
-
-Den matchande URL:en är: **http://server/res/instance** där **instance** är namnet på spårningsinstansen.
-
-Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<instance>`.xml** för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
-
-```
-<serverconf>
-  <shared>
-    <dataStore hosts="media*" lang="fra">
-      <virtualDir name="images" path="/var/www/images"/>
-     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
-    </dataStore>
-  </shared>
-</serverconf>
-```
-
-I det här fallet bör den nya URL:en för de offentliga resurserna som anges i den övre delen av fönstret i distributionsguiden peka på den här mappen.
-
-## Arbetsflöden och tillhörigheter med hög tillgänglighet {#high-availability-workflows-and-affinities}
-
-Du kan konfigurera flera arbetsflödesservrar (wfserver) och distribuera dem på två eller flera datorer. Om du väljer den här typen av arkitektur konfigurerar du anslutningsläget för belastningsutjämnarna enligt Adobe Campaign-åtkomsten.
-
-Om du vill få åtkomst från webben väljer du **belastningsutjämnarläget** för att begränsa anslutningstiderna.
-
-Om du öppnar via Adobe Campaign-konsolen väljer du **hash** eller **sticky ip**-läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
-
-Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera tillhörigheter för arbetsflödet eller aktiviteten.
-
-1. Skapa tillhörigheterna för arbetsflödet eller aktiviteten genom att ange dem i fältet **[!UICONTROL Affinity]**.
-
-   Du kan fritt välja tillhörighetsnamn. Se dock till att du inte använder blanksteg eller skiljetecken. Om du använder olika servrar anger du olika namn.
-
-   ![](assets/s_ncs_install_server_wf_affinity01.png)
-
-   ![](assets/s_ncs_install_server_wf_affinity02.png)
-
-   Listrutan innehåller tillhörigheter som tidigare använts. Den slutförs över tiden med de olika angivna värdena.
-
-1. Öppna filen **nl6/conf/config-`<instance>.xml`**.
-1. Ändra raden som matchar modulen **[!UICONTROL wfserver]** enligt följande:
-
-   ```
-   <wfserver autoStart="true" affinity="XXX,"/>
-   ```
-
-   Om du definierar flera tillhörigheter måste de avgränsas med kommatecken utan mellanslag:
-
-   ```
-   <wfserver autoStart="true" affinity="XXX,YYY,"/>
-   ```
-
-   Kommatecknet efter tillhörighetens namn är nödvändigt för körning av arbetsflöden där ingen tillhörighet har definierats.
-
-   Om du bara vill köra arbetsflöden för vilka en tillhörighet har definierats, ska du inte lägga till ett kommatecken i slutet av listan med dina tillhörigheter. Ändra till exempel raden enligt följande:
-
-   ```
-   <wfserver autoStart="true" affinity="XXX"/>
-   ```
-
-## Automatisk processomstart {#automatic-process-restart}
-
-Som standard startas de olika Adobe Campaign-processerna om automatiskt kl. 6.00 (servertid) varje dag.
-
-Du kan dock ändra den här konfigurationen.
-
-Det gör du genom att gå till filen **serverConf.xml** som finns i **conf**-databasen för din installation. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-
-Varje process som konfigureras i den här filen har ett **processRestartTime**-attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
-
->[!IMPORTANT]
->
->Ta inte bort det här attributet. Alla processer måste startas om varje dag.
-
-## Begränsa överförbara filer {#limiting-uploadable-files}
-
-Med ett nytt attribut **uploadWhiteList** kan du begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
+Använd attributet **uploadWhiteList** för att begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
 
 Det här attributet är tillgängligt i **dataStore**-elementet i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Standardvärdet för det här attributet är **.+** så att du kan överföra vilken filtyp som helst.
+Standardvärdet för det här attributet är **.+** och gör att du kan överföra vilken filtyp som helst.
 
-Om du vill begränsa antalet möjliga format måste du ersätta attributvärdet med ett giltigt reguljärt java-uttryck. Du kan ange flera värden genom att separera dem med kommatecken.
+Om du vill begränsa möjliga format ersätter du attributvärdet med ett giltigt reguljärt uttryck för java. Du kan ange flera värden genom att separera dem med kommatecken.
 
 Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format på servern. Inga andra format godtas.
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >I Internet Explorer måste den fullständiga filsökvägen verifieras av det reguljära uttrycket.
 
-## Proxyanslutningskonfiguration {#proxy-connection-configuration}
+Du kan också förhindra att viktiga filer överförs genom att konfigurera webbservern. [Läs mer](web-server-configuration.md)
+
+### Proxyanslutningskonfiguration {#proxy-connection-configuration}
 
 Du kan ansluta Campaign-servern till ett externt system via en proxy, till exempel med hjälp av en **filöverföringsaktivitet**-arbetsflödesaktivitet. För att uppnå detta måste du konfigurera **proxyConfig**-avsnittet i **serverConf.xml**-filen med ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
@@ -484,3 +448,81 @@ Om du använder samma proxy för flera anslutningstyper definieras bara proxyHTT
 Om du har interna anslutningar som ska gå igenom proxyn lägger du till dem i parametern override.
 
 Om du tillfälligt vill inaktivera proxyanslutningen anger du parametern enabled till &quot;false&quot; eller &quot;0&quot;.
+
+### Hantera offentliga resurser {#managing-public-resources}
+
+För att vara allmänt tillgängliga måste de bilder som används i e-postmeddelanden och offentliga resurser som är kopplade till kampanjer finnas på en externt tillgänglig server. De kan sedan vara tillgängliga för externa mottagare eller operatorer. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources).
+
+Offentliga resurser lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
+
+Den matchande URL:en är: **http://server/res/instance** där **instance** är namnet på spårningsinstansen.
+
+Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<instance>`.xml** för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
+
+```
+<serverconf>
+  <shared>
+    <dataStore hosts="media*" lang="fra">
+      <virtualDir name="images" path="/var/www/images"/>
+     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
+    </dataStore>
+  </shared>
+</serverconf>
+```
+
+I det här fallet bör den nya URL:en för de offentliga resurserna som anges i den övre delen av fönstret i distributionsguiden peka på den här mappen.
+
+## Arbetsflöden och tillhörigheter med hög tillgänglighet {#high-availability-workflows-and-affinities}
+
+Du kan konfigurera flera arbetsflödesservrar (wfserver) och distribuera dem på två eller flera datorer. Om du väljer den här typen av arkitektur konfigurerar du anslutningsläget för belastningsutjämnarna enligt Adobe Campaign-åtkomsten.
+
+Om du vill få åtkomst från webben väljer du **belastningsutjämnarläget** för att begränsa anslutningstiderna.
+
+Om du öppnar via Adobe Campaign-konsolen väljer du **hash** eller **sticky ip**-läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
+
+Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera tillhörigheter för arbetsflödet eller aktiviteten.
+
+1. Skapa tillhörigheterna för arbetsflödet eller aktiviteten genom att ange dem i fältet **[!UICONTROL Affinity]**.
+
+   Du kan välja vilket tillhörighetsnamn som helst, men se till att du inte använder blanksteg eller skiljetecken. Om du använder olika servrar anger du olika namn.
+
+   ![](assets/s_ncs_install_server_wf_affinity01.png)
+
+   ![](assets/s_ncs_install_server_wf_affinity02.png)
+
+   Listrutan innehåller tillhörigheter som tidigare använts. Den slutförs över tiden med de olika angivna värdena.
+
+1. Öppna filen **nl6/conf/config-`<instance>.xml`**.
+1. Ändra raden som matchar modulen **[!UICONTROL wfserver]** enligt följande:
+
+   ```
+   <wfserver autoStart="true" affinity="XXX,"/>
+   ```
+
+   Om du definierar flera tillhörigheter måste de avgränsas med kommatecken utan mellanslag:
+
+   ```
+   <wfserver autoStart="true" affinity="XXX,YYY,"/>
+   ```
+
+   Kommatecknet efter tillhörighetens namn är nödvändigt för körning av arbetsflöden där ingen tillhörighet har definierats.
+
+   Om du bara vill köra arbetsflöden för vilka en tillhörighet har definierats, ska du inte lägga till ett kommatecken i slutet av listan med dina tillhörigheter. Ändra till exempel raden enligt följande:
+
+   ```
+   <wfserver autoStart="true" affinity="XXX"/>
+   ```
+
+## Automatisk omstart {#automatic-process-restart}
+
+Som standard startas de olika Adobe Campaign-processerna om automatiskt kl. 6.00 (servertid) varje dag.
+
+Du kan dock ändra den här konfigurationen.
+
+Det gör du genom att gå till filen **serverConf.xml** som finns i **conf**-databasen för din installation.
+
+Varje process som konfigureras i den här filen har ett **processRestartTime**-attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
+
+>[!IMPORTANT]
+>
+>Ta inte bort det här attributet. Alla processer måste startas om varje dag.
