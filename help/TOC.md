@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2489'
 ht-degree: 97%
 
 ---
@@ -659,7 +659,9 @@ ht-degree: 97%
       + [Konfiguration av kampanjservern](installation/using/configuring-campaign-server.md)
       + [Definiera säkerhetszoner](installation/using/security-zones.md)
       + [Ange URL-behörigheter](installation/using/url-permissions.md)
+      + [Filer och resurser](installation/using/file-res-management.md)
       + [Konfigurera Tomcat](installation/using/configure-tomcat.md)
+      + [Konfigurera leveransinställningar](installation/using/configure-delivery-settings.md)
       + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
       + [Använda MX-servrar med Campaign](installation/using/using-mx-servers.md)
       + [Konfigurera dold e-postkopia](installation/using/email-archiving.md)
