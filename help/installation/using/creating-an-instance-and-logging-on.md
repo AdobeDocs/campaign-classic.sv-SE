@@ -6,14 +6,14 @@ description: Skapa en instans och logga in
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # Skapa en instans och logga in{#creating-an-instance-and-logging-on}
 
@@ -25,7 +25,7 @@ Så här skapar du en ny instans och en Adobe Campaign-databas:
 
 >[!NOTE]
 >
->Det är bara identifieraren **internal** som kan utföra dessa åtgärder. Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Det är bara identifieraren **internal** som kan utföra dessa åtgärder. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 När Adobe Campaign-konsolen startas kommer du åt en inloggningssida.
 
@@ -82,4 +82,3 @@ Så här skapar du en ny instans:
    >[!NOTE]
    >
    >Instansen kan skapas från kommandoraden. Mer information finns i [Kommandorader](../../installation/using/command-lines.md).
-
