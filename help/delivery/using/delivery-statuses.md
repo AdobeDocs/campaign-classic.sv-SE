@@ -6,14 +6,14 @@ description: Läs mer om de statusar som finns på din kontrollpanel för levera
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # Leveransstatus {#delivery-statuses}
 
@@ -87,7 +87,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
  </tbody> 
 </table>
 
-Mer information om hur du optimerar leveransen av dina e-postmeddelanden från Adobe Campaign finns i [det här avsnittet](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Mer information om hur du optimerar leveransen av dina e-postmeddelanden från Adobe Campaign finns i [det här avsnittet](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Väntande status {#pending-status}
 
@@ -127,7 +127,7 @@ Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det 
 
 * Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande servern.
 
-   I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#delivery-settings).
 
 * När för många kampanjer körs förblir leveransstatusen Väntande.
 
