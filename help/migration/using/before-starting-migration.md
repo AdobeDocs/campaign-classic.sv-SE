@@ -6,14 +6,14 @@ description: Innan du startar migreringen
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
+exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
 
 ---
-
 
 # Innan du startar migreringen{#before-starting-migration}
 
@@ -77,5 +77,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md).
-
+>Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/configuring-campaign-server.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md).
