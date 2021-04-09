@@ -6,14 +6,14 @@ description: Avancerade parametrar
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
-
 
 # Avancerade parametrar{#advanced-parameters}
 
@@ -49,7 +49,10 @@ De här alternativen är vanligtvis markerade i kundvagnen genom att högerklick
 
 ## Tillhörighet {#affinity}
 
-I det här fältet kan du framtvinga körning av en aktivitet på en viss dator. Mer information finns i: [Hantera benägenhet](../../workflow/using/managing-propensity.md).
+Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera egenskaper på arbetsflödesnivå eller för den aktuella aktiviteten.
+
+Arbetsflödeskonfigurationen för hög tillgänglighet beskrivs i det här [avsnittet](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+
 
 ## Max. körningsperiod {#max--execution-period}
 
