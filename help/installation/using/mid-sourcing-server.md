@@ -6,14 +6,14 @@ description: I det här avsnittet finns information om installation och konfigur
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Server för mid-sourcing{#mid-sourcing-server}
 
@@ -61,7 +61,7 @@ Du måste dock göra följande:
    </serverconf>
    ```
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 * Steg **6**, **9** och **10** är inte nödvändiga.
 * Under steg **12** och **13** måste du ange porten 8080 i anslutnings-URL:en (eftersom konsolen kommunicerar direkt med Tomcat, inte via webbservern). URL:en blir [http://console.campaign.net:8080](http://console.campaign.net). Under steg **13** markerar du **[!UICONTROL Issue towards Mid-sourcing]**-paketet samt de som ska installeras.
@@ -180,4 +180,3 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 Om leveransen av meddelanden ska hanteras av flera servrar med mellanleverantörer väljer du alternativet **[!UICONTROL Routing with alternating mid-sourcing accounts]** och anger de olika servrarna.
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)
-
