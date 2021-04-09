@@ -6,14 +6,14 @@ description: Allmänna konfigurationer
 audience: migration
 content-type: reference
 topic-tags: configuration
+exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # Allmänna konfigurationer{#general-configurations}
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier) och [det här avsnittet](../../platform/using/access-management.md).
+>Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier) och [det här avsnittet](../../platform/using/access-management.md).
 
 ### Nya funktioner i v7 {#new-features-in-v7}
 
@@ -473,7 +473,7 @@ Om du väljer att lösa konflikten manuellt gör du så här:
 
 ## Tomcat {#tomcat}
 
-Den integrerade Tomcat-servern i Adobe Campaign v7 har ändrat version (Tomcat 7). Installationsmappen (tomcat-6) har därför ändrats (tomcat 7). Efter efteruppgraderingen ska du kontrollera att sökvägarna länkar till den uppdaterade mappen (i filen **[!UICONTROL serverConf.xml]**):
+Den integrerade Tomcat-servern i Adobe Campaign v7 har ändrat version. Installationsmappen (tomcat-6) har därför ändrats (tomcat 7). Efter efteruppgraderingen ska du kontrollera att sökvägarna länkar till den uppdaterade mappen (i filen **[!UICONTROL serverConf.xml]**):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
