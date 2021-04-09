@@ -6,14 +6,14 @@ description: Standardiserad driftsättning
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Standardiserad driftsättning{#standard-deployment}
 
@@ -107,7 +107,7 @@ Stegen är följande:
 
 1. Ändra **internal** till samma som programservern.
 
-   Mer information finns i [Intern identifierare](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 1. Länka databasen till instansen:
 
@@ -117,7 +117,7 @@ Stegen är följande:
 
 1. I **config-default.xml** och **config-demo.xml**-filerna aktiverar du modulerna **web**, **trackinglogd** och **mta**.
 
-   Mer information finns i [Aktivera processer](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 1. Redigera filen **serverConf.xml** och fyll i den:
 
@@ -131,7 +131,7 @@ Stegen är följande:
       >
       >Parametern **nameServers** används bara i Windows.
 
-      Mer information finns i [Leveransinställningar](../../installation/using/campaign-server-configuration.md#delivery-settings).
+      Mer information finns i [Leveransinställningar](configuring-campaign-server.md#delivery-settings).
 
    * redundanta spårningsservrar i omdirigeringsparametrarna:
 
@@ -177,4 +177,3 @@ Stegen är följande:
    >[!NOTE]
    >
    >Vi använder den befintliga instansen av de två spårningsservrarna som har skapats tidigare och använder inloggningen **internal**.
-
