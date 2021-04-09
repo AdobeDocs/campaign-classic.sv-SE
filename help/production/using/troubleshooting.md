@@ -6,14 +6,14 @@ description: Upptäck felsökningsprocedurer för produktion i samband med konfi
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 translation-type: tm+mt
-source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
-
 
 # Felsökning av produktion{#troubleshooting}
 
@@ -65,4 +65,4 @@ Gå till avsnitten nedan för att läsa mer om mer specifika problem:
 
 * [Stackspårning i Linux](../../production/using/stack-trace-in-linux.md)
 * [JSP-beteende](../../production/using/jsp-behavior.md)
-* [Hitta versionen av Tomcat](../../production/using/locate-tomcat-version.md)
+* [Sök efter Tomcat-version](../../production/using/locate-tomcat-version.md)
