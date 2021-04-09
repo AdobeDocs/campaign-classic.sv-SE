@@ -6,14 +6,14 @@ description: Konfigurera och skicka leveransen
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
+exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
 
 ---
-
 
 # Konfigurera och skicka leveransen {#configuring-and-sending-the-delivery}
 
@@ -41,9 +41,9 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
    >[!NOTE]
    >
-   >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#delivery-settings).
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 
