@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 3%
@@ -28,7 +28,7 @@ Kontrollera med de operativa användarna vilken typ av filer de överför till s
 * ETL (txt, csv, tab, ...)
 * osv.
 
-Lägg till alla i serverConf/shared/datastore/@uploadAllowlist (giltigt reguljärt java-uttryck). Läs mer i [den här sidan](../../installation/using/configuring-campaign-server.md#limiting-uploadable-files).
+Lägg till alla i serverConf/shared/datastore/@uploadAllowlist (giltigt reguljärt java-uttryck). Läs mer i [den här sidan](../../installation/using/file-res-management.md).
 
 Adobe Campaign begränsar inte filstorleken. Men du kan göra det genom att konfigurera IIS/Apache. Läs mer i [det här avsnittet](../../installation/using/web-server-configuration.md).
 
