@@ -6,14 +6,14 @@ description: Upptäck riktlinjer och bästa metoder för att övervaka instans o
 audience: production
 content-type: reference
 topic-tags: introduction
+exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 5%
+source-wordcount: '770'
+ht-degree: 17%
 
 ---
-
 
 # Riktlinjer för övervakning {#monitoring-guidelines}
 
@@ -32,7 +32,7 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Övervaka arbetsflöden</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Bildskärmsleveranser</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Övervaka leveranser</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Övervaka databasen</a></p></td></tr>
 </table>
 
@@ -44,19 +44,19 @@ Det finns fler sätt att övervaka olika Campaign-processer. De innehåller fler
 
 **Automatiska övervakningsverktyg**
 
-Flera automatiska metoder är tillgängliga. som hjälper dig att övervaka instansen. Du kan till exempel skapa e-postrapporter med identifierade avvikelser, hämta en lista med indikatorer i XML-format osv. [Klicka ](../../production/using/monitoring-processes.md#automatic-monitoring) här för mer information.
+Flera automatiska metoder är tillgängliga. som hjälper dig att övervaka instansen. Du kan till exempel skapa e-postrapporter med identifierade avvikelser, hämta en lista med indikatorer i XML-format osv. [Klicka här](../../production/using/monitoring-processes.md#automatic-monitoring) för mer information.
 
 **Verifieringskedja**
 
-Med granskningsspåret kan du visualisera den fullständiga historiken över ändringar som rör alternativ, arbetsflöden och scheman i instansen. [Klicka ](../../production/using/audit-trail.md) här för mer information.
+Med granskningsspåret kan du visualisera den fullständiga historiken över ändringar som rör alternativ, arbetsflöden och scheman i instansen. [Klicka här](../../production/using/audit-trail.md) för mer information.
 
 **Kontrollpanelen**
 
-På Kontrollpanelen kan du hantera flera inställningar för din instans: hantera URL-behörigheter, kontrollera instansinformation som serverns build-versioner osv. Du kan också övervaka det tillgängliga utrymmet på de SFTP-servrar som är anslutna till din instans. [Klicka ](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html) här för mer information.
+På Kontrollpanelen kan du hantera flera inställningar för din instans: hantera URL-behörigheter, kontrollera instansinformation som serverns build-versioner osv. Du kan också övervaka det tillgängliga utrymmet på de SFTP-servrar som är anslutna till din instans. [Klicka här](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html) för mer information.
 
 >[!NOTE]
 >
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
 >Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
@@ -66,7 +66,7 @@ På Kontrollpanelen kan du hantera flera inställningar för din instans: hanter
 
 **Värmekarta för arbetsflöde**
 
-Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. [Klicka ](../../workflow/using/heatmap.md) här för mer information.
+Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. [Klicka här](../../workflow/using/heatmap.md) för mer information.
 
 **Verifieringskedja**
 
@@ -74,11 +74,11 @@ Med granskningsspåret kan du visualisera alla ändringar som har gjorts i arbet
 
 **Felsökning av arbetsflöden**
 
-Du kan utföra specifika åtgärder när du stöter på problem med arbetsflödeskörningen. [Klicka ](../../production/using/workflow-execution.md) här för mer information
+Du kan utföra specifika åtgärder när du stöter på problem med arbetsflödeskörningen. [Klicka här](../../production/using/workflow-execution.md) för mer information
 
 **Övervakning av arbetsflödesstatus**
 
-Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. [Klicka ](../../workflow/using/supervising-workflows.md) här för mer information.
+Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. [Klicka här](../../workflow/using/supervising-workflows.md) för mer information.
 
 **Allmänna riktlinjer**
 
@@ -111,23 +111,23 @@ leveranserSpecifika åtgärder kan utföras vid problem med leveranser:
 
 **Arbetsflöde för databasrensning**
 
-Med hjälp av arbetsflödet för att rensa databas kan du ta bort föråldrade data från databasen. Vi rekommenderar att du undviker exponentiell tillväxt i databasen. [Klicka ](../../production/using/database-cleanup-workflow.md) här för mer information.
+Med hjälp av arbetsflödet för att rensa databas kan du ta bort föråldrade data från databasen. Vi rekommenderar att du undviker exponentiell tillväxt i databasen. [Klicka här](../../production/using/database-cleanup-workflow.md) för mer information.
 
 **Felsökning av databasprestanda**
 
-Specifika åtgärder kan utföras när problem med databasprestanda påträffas. [Klicka ](../../production/using/database-performances.md) här för mer information.
+Specifika åtgärder kan utföras när problem med databasprestanda påträffas. [Klicka här](../../production/using/database-performances.md) för mer information.
 
 **Databasunderhåll**
 
 *enbart lokala och hybridhosting-modeller*
 
-Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika överförbrukning av diskutrymme, vilket påverkar databasåtkomsten. [Klicka ](../../production/using/recommendations.md) här för mer information.
+Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika överförbrukning av diskutrymme, vilket påverkar databasåtkomsten. [Klicka här](../../production/using/recommendations.md) för mer information.
 
 **Säkerhetskopiering och återställning**
 
 *enbart lokala och hybridhosting-modeller*
 
-Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka ](../../production/using/backup.md) här för mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
+Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka här](../../production/using/backup.md) för mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
 
 ## Campaign Classic tekniska principer {#campaign-classic-technical-principles}
 
@@ -142,7 +142,7 @@ Tekniska resurser finns i Campaign Classic dokumentation. Vi rekommenderar att d
 
 *Endast lokala och hybridhosting-modeller*
 
-* [Obligatoriska serverkonfigurationer](../../installation/using/campaign-server-configuration.md)
+* [Serverkonfigurationer](../../installation/using/configuring-campaign-server.md)
 * [Serverconf.xml, filkonfiguration](../../installation/using/the-server-configuration-file.md)
 * [Serverkonfiguration för leverans](../../installation/using/email-deliverability.md)
 * [Kommandorader för att skapa en instans och deklarera en databas](../../installation/using/command-lines.md)
