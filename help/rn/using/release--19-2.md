@@ -6,14 +6,14 @@ description: Versionsinformation för Campaign 19.2
 feature: null
 role: null
 level: null
+exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
-
 
 # Version 19.2{#release-19-2}
 
@@ -21,22 +21,22 @@ ht-degree: 11%
 
 _22 mars 2021_
 
-* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildupplösning i leveranser. (NEO-31453 och NEO-31454)
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453, NEO-31454)
 
-**Endast konsoluppgradering är obligatoriskt. Ingen serveruppgradering krävs.**
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
 
 >[!NOTE]
 >
-> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Lär dig hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _23 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.**
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.
    >
    > 
-* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
+* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 
 
 
@@ -138,7 +138,7 @@ _2 december 2019_
    * Alternativet **XtkCleanup_NoStats** har förbättrats för PostgreSQL för att bättre kunna styra beteendet för lagringsoptimeringssteget i databasrensningsarbetsflödet. [Läs mer](../../production/using/database-cleanup-workflow.md#statistics-update)
 * En mekanism för kontoutelåsning har lagts till i API:t **logon()**. Det förhindrar ytterligare inloggningsförsök efter ett visst antal misslyckade inloggningsförsök i följd inom en angiven tidsram.
 * Med ett nytt **alternativ för maximal körtid för personalisering** i leveransegenskaperna kan du definiera en timeout-period för personalisering, för att förhindra att personaliseringsfasen körs för länge. [Läs mer](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* Alternativet **ftp protocol** har lagts till så att du kan använda en proxykonfiguration för SFTP-anslutningar. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* Alternativet **ftp protocol** har lagts till så att du kan använda en proxykonfiguration för SFTP-anslutningar. [Läs mer](../../installation/using/file-res-management.md)
 * Nytt stöd för proxyåtkomst till en extern SFTP-server för lokala miljöer.
 * Ett specifikt skyddsutkast har lagts till för att förhindra installation av paket som inte är kompatibla med Campaign-instansen. [Läs mer](../../installation/using/installing-campaign-standard-packages.md)
 
@@ -152,7 +152,7 @@ Kontrollera att du har de versioner av alla system som stöds och som finns i de
 
 _Campaign Mobile SDK_
 
-Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få SDK.
+Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få SDK.
 
 **Felkorrigeringar**
 
@@ -185,5 +185,3 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Ett problem har korrigerats vid åtkomst till prediktiva modeller. (NEO-19713)
 * Korrigerade ett problem som påverkade slumpmässig sampling i **Dela**-arbetsflödesaktivitet med Hadoopets FDA-databas. (NEO-16636)
 * Korrigerade en regression för Oraclet, vilket gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
-
-
