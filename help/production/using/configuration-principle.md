@@ -6,14 +6,14 @@ description: Konfigurationsprincip
 audience: production
 content-type: reference
 topic-tags: production-procedures
+exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurationsprincip{#configuration-principle}
 
@@ -25,7 +25,7 @@ För en viss server finns det två element som är gemensamma för alla Adobe Ca
 
    >[!IMPORTANT]
    >
-   >Om du vill logga in med identifieraren **Internal** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   >Om du vill logga in med identifieraren **Internal** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 * Flera tekniska serverkonfigurationer: dessa konfigurationer kan alla överladdas i den specifika konfigurationen för en instans.
 
