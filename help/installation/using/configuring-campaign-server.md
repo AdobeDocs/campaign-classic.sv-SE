@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 1%
+source-wordcount: '1580'
+ht-degree: 2%
 
 ---
 
@@ -38,9 +38,6 @@ Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installat
 * **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna som listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (där  **** instansen är instansens namn): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
 
-Allmänna riktlinjer för serverkonfiguration finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
-
-
 ## Konfigurationsomfattning
 
 Konfigurera eller anpassa Campaign-servern beroende på dina behov och din konfiguration. Du kan:
@@ -50,12 +47,12 @@ Konfigurera eller anpassa Campaign-servern beroende på dina behov och din konfi
 * Konfigurera [URL-behörigheter](url-permissions.md)
 * Definiera [säkerhetszoner](security-zones.md)
 * Konfigurera [Tomcat-inställningar](configure-tomcat.md)
-* Anpassa [Leveransparametrar](#delivery-settings)
+* Anpassa [Leveransparametrar](configure-delivery-settings.md)
 * Definiera [dynamisk sidsäkerhet och reläer](#dynamic-page-security-and-relays)
 * Begränsa listan med [tillåtna externa kommandon](#restricting-authorized-external-commands)
 * Ställ in [Spårning av överflödiga ](#redundant-tracking)
 * Hantera [Hög tillgänglighet och arbetsflödestillhörigheter](#high-availability-workflows-and-affinities)
-* Konfigurera filhantering - [Läs mer](#file-and-resmanagement)
+* Konfigurera filhantering - [Läs mer](file-res-management.md)
    * Begränsa filformat för överföring
    * Ge åtkomst till offentliga resurser
    * Konfigurera proxyanslutning
@@ -139,88 +136,6 @@ Du kan konfigurera lagringskatalogen (**var** katalog) för Adobe Campaign-data 
 * I Linux går du till filen **customer.sh** och anger: **exportera XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
-
-## Konfigurera leveransinställningar {#delivery-settings}
-
-Leveransparametrarna måste konfigureras i mappen **serverConf.xml**.
-
-* **DNS-konfiguration**: Ange leveransdomänen och IP-adresserna (eller värddatorn) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från  **`<dnsconfig>`** och med.
-
-   >[!NOTE]
-   >
-   >Parametern **nameServers** är nödvändig för en installation i Windows. För en installation i Linux måste den lämnas tom.
-
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
-
-Du kan även göra följande konfigurationer beroende på dina behov och inställningar: konfigurera en [SMTP-relä](#smtp-relay), anpassa antalet [MTA-underordnade processer](#mta-child-processes), [Hantera utgående SMTP-trafik](#managing-outbound-smtp-traffic-with-affinities).
-
-### SMTP-relä {#smtp-relay}
-
-MTA-modulen fungerar som en intern e-postöverföringsagent för SMTP-sändning (port 25).
-
-Det är dock möjligt att ersätta den med en reläserver om säkerhetsprincipen kräver det. I så fall blir den globala genomströmningen relä (förutsatt att reläservergenomströmningen är lägre än Adobe Campaign).
-
-I det här fallet anges dessa parametrar genom att SMTP-servern konfigureras i **`<relay>`**-avsnittet. Du måste ange IP-adressen (eller värddatorn) för den SMTP-server som används för att överföra post och dess associerade port (25 som standard).
-
-```
-<relay address="192.0.0.3" port="25"/>
-```
-
->[!IMPORTANT]
->
->Det här operativläget innebär allvarliga leveransbegränsningar eftersom det kan minska genomströmningen avsevärt på grund av reläserverns inneboende prestanda (latens, bandwith...). Dessutom kommer kapaciteten att kvalificera synkrona leveransfel (som upptäcks genom analys av SMTP-trafik) att vara begränsad och det går inte att skicka om reläservern inte är tillgänglig.
-
-### MTA-underordnade processer {#mta-child-processes}
-
-Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
-
-```
-<master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
-```
-
-Se även [E-postoptimering](../../installation/using/email-deliverability.md#email-sending-optimization).
-
-### Hantera utgående SMTP-trafik med tillhörigheter {#managing-outbound-smtp-traffic-with-affinities}
-
->[!IMPORTANT]
->
->Tillhörighetskonfigurationen måste vara konsekvent från en server till en annan. Vi rekommenderar att du kontaktar Adobe för tillhörighetskonfiguration eftersom konfigurationsändringar bör replikeras på alla programservrar som kör MTA.
-
-Du kan förbättra utgående SMTP-trafik genom tillhörigheter med IP-adresser.
-
-Gör så här:
-
-1. Ange tillhörigheterna i **`<ipaffinity>`**-avsnittet i filen **serverConf.xml**.
-
-   En tillhörighet kan ha flera olika namn: om du vill separera dem använder du tecknet **;**.
-
-   Exempel:
-
-   ```
-    IPAffinity name="mid.Server;WWserver;local.Server">
-             <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
-   ```
-
-   Se filen **serverConf.xml** för att se de relevanta parametrarna.
-
-1. Om du vill aktivera tillhörighetsval i listrutorna måste du lägga till tillhörighetsnamn i uppräkningen **IPAfinity**.
-
-   ![](assets/ipaffinity_enum.png)
-
-   >[!NOTE]
-   >
-   >Uppräkningarna beskrivs i [det här dokumentet](../../platform/using/managing-enumerations.md).
-
-   Du kan sedan välja den tillhörighet som ska användas, som visas nedan för typologier:
-
-   ![](assets/ipaffinity_typology.png)
-
-   >[!NOTE]
-   >
-   >Du kan även läsa [Leveransserverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration).
-
 
 
 ## Dynamisk sidsäkerhet och reläer {#dynamic-page-security-and-relays}
@@ -359,118 +274,7 @@ Egenskapen **enableIf** är valfri (tom som standard) och du kan bara aktivera a
 
 Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**.
 
-## Fil- och resurshantering{#file-and-resmanagement}
 
-### Begränsa filformat för överföring {#limiting-uploadable-files}
-
-Använd attributet **uploadWhiteList** för att begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
-
-Det här attributet är tillgängligt i **dataStore**-elementet i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-
-Standardvärdet för det här attributet är **.+** och gör att du kan överföra vilken filtyp som helst.
-
-Om du vill begränsa möjliga format ersätter du attributvärdet med ett giltigt reguljärt uttryck för java. Du kan ange flera värden genom att separera dem med kommatecken.
-
-Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format på servern. Inga andra format godtas.
-
->[!NOTE]
->
->I Internet Explorer måste den fullständiga filsökvägen verifieras av det reguljära uttrycket.
-
-Du kan också förhindra att viktiga filer överförs genom att konfigurera webbservern. [Läs mer](web-server-configuration.md)
-
-### Proxyanslutningskonfiguration {#proxy-connection-configuration}
-
-Du kan ansluta Campaign-servern till ett externt system via en proxy, till exempel med hjälp av en **filöverföringsaktivitet**-arbetsflödesaktivitet. För att uppnå detta måste du konfigurera **proxyConfig**-avsnittet i **serverConf.xml**-filen med ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-
-Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Observera att från och med Campaign 20.2 är HTTP- och HTTPS-protokollparametrarna **inte längre tillgängliga**. Dessa parametrar nämns fortfarande nedan eftersom de fortfarande är tillgängliga i tidigare versioner - inklusive 9032.
-
->[!CAUTION]
->
->Endast det grundläggande autentiseringsläget stöds. NTLM-autentisering stöds inte.
->
->SOCKS-proxies stöds inte.
-
-
-Du kan använda följande kommando:
-
-```
-nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
-```
-
-protokollparametrar kan vara&quot;http&quot;,&quot;https&quot; eller&quot;ftp&quot;.
-
-Om du anger FTP på samma port som HTTP/HTTPS-trafik kan du använda följande:
-
-```
-nlserver config -setproxy:http/198.51.100.0:8080/user
-```
-
-Alternativen http och https används bara när protokollparametern är ftp och anger om tunnlingen på den angivna porten ska utföras via HTTPS eller via HTTP.
-
-Om du använder olika portar för FTP-/SFTP- och HTTP/HTTPS-trafik över proxyservern bör du ange protokollparametern ftp.
-
-
-Exempel:
-
-```
-nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
-```
-
-Ange sedan lösenordet.
-
-HTTP-anslutningar definieras i parametern proxyHTTP:
-
-```
-<proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
-<proxyHTTP address=“198.51.100.0" login=“user” password=“*******” port=“8080”/>
-</proxyConfig>
-```
-
-HTTPS-anslutningar definieras i parametern proxyHTTPS:
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyHTTPS address=“198.51.100.0” login=“user” password=“******” port=“8080"/>
-</proxyConfig>
-```
-
-FTP-/FTPS-anslutningar definieras i parametern proxyFTP:
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyFTP address=“198.51.100.0” login=“user” password=“******” port=“5555" https=”true”/>
-</proxyConfig>
-```
-
-Om du använder samma proxy för flera anslutningstyper definieras bara proxyHTTP med useSingleProxy inställt på &quot;1&quot; eller &quot;true&quot;.
-
-Om du har interna anslutningar som ska gå igenom proxyn lägger du till dem i parametern override.
-
-Om du tillfälligt vill inaktivera proxyanslutningen anger du parametern enabled till &quot;false&quot; eller &quot;0&quot;.
-
-### Hantera offentliga resurser {#managing-public-resources}
-
-För att vara allmänt tillgängliga måste de bilder som används i e-postmeddelanden och offentliga resurser som är kopplade till kampanjer finnas på en externt tillgänglig server. De kan sedan vara tillgängliga för externa mottagare eller operatorer. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources).
-
-Offentliga resurser lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
-
-Den matchande URL:en är: **http://server/res/instance** där **instance** är namnet på spårningsinstansen.
-
-Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<instance>`.xml** för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
-
-```
-<serverconf>
-  <shared>
-    <dataStore hosts="media*" lang="fra">
-      <virtualDir name="images" path="/var/www/images"/>
-     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
-    </dataStore>
-  </shared>
-</serverconf>
-```
-
-I det här fallet bör den nya URL:en för de offentliga resurserna som anges i den övre delen av fönstret i distributionsguiden peka på den här mappen.
 
 ## Arbetsflöden och tillhörigheter med hög tillgänglighet {#high-availability-workflows-and-affinities}
 
