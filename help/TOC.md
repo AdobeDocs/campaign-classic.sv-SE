@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -509,7 +509,6 @@ ht-degree: 98%
       + [Åtkomst till en extern databas](workflow/using/accessing-an-external-database--fda-.md)
       + [Hantera behörigheter](workflow/using/managing-rights.md)
       + [Hantera aktivitetsbilder](workflow/using/managing-activity-images.md)
-      + [Hantera benägenhet](workflow/using/managing-propensity.md)
       + [Hantera tidszoner](workflow/using/managing-time-zones.md)
       + [Tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
 + Hantera erbjudanden {#managing-offers}
@@ -625,7 +624,7 @@ ht-degree: 98%
       + [Driftsättning i företagsklass](installation/using/enterprise-deployment.md)
       + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Checklista för säkerhet och sekretess {#security-privacy}
+   + Säkerhets- och sekretessinställningar {#security-privacy}
       + [Kom igång med säkerhet och sekretess](installation/using/get-started-security-privacy.md)
       + [Personalisering och sekretess](installation/using/privacy.md)
       + [Säker åtkomsthantering](installation/using/access-management.md)
@@ -654,12 +653,13 @@ ht-degree: 98%
       + [Viktiga steg](installation/using/about-initial-configuration.md)
       + [Skapa en instans och logga in](installation/using/creating-an-instance-and-logging-on.md)
       + [Skapa och konfigurera databasen](installation/using/creating-and-configuring-the-database.md)
-      + [Konfigurera Campaign-servern](installation/using/campaign-server-configuration.md)
       + [Driftsätta en instans](installation/using/deploying-an-instance.md)
       + [Installera inbyggda paket](installation/using/installing-campaign-standard-packages.md)
    + Konfigurera Campaign {#additional-configurations}
-      + [Campaign-serverns inställningar](installation/using/configuring-campaign-server.md)
+      + [Konfiguration av kampanjservern](installation/using/configuring-campaign-server.md)
       + [Definiera säkerhetszoner](installation/using/security-zones.md)
+      + [Ange URL-behörigheter](installation/using/url-permissions.md)
+      + [Konfigurera Tomcat](installation/using/configure-tomcat.md)
       + [Tekniska e-postkonfigurationer](installation/using/email-deliverability.md)
       + [Använda MX-servrar med Campaign](installation/using/using-mx-servers.md)
       + [Konfigurera dold e-postkopia](installation/using/email-archiving.md)
