@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -2814,7 +2814,7 @@ Här är de olika parametrarna för **trackinglogd**-noden. Detta är konfigurat
 
 Här är de olika parametrarna för noden **web**. Detta är konfigurationen för webbmodulen.
 
-Mer information finns i [avsnittet](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+Mer information finns i [avsnittet](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ Mer information finns i [avsnittet](../../installation/using/configuring-campaig
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat-lyssningskontrollport: hänvisar till <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
+   <td> Tomcat-lyssningskontrollport: hänvisar till <a href="configure-tomcat.md" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-lyssningsport: hänvisar till <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
+   <td> Tomcat HTTP-lyssningsport: hänvisar till <a href="configure-tomcat.md" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ Mer information finns i [Dynamisk sidsäkerhet och reläer](../../installation/u
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> Målsidans URL: hänvisar till <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
+   <td> Målsidans URL: hänvisar till <a href="configure-tomcat.md" target="_blank">Konfigurera Tomcat</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> <br /> </td> 
   </tr> 
