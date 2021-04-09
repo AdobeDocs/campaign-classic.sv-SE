@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 88%
@@ -199,7 +199,7 @@ Läs mer i [kompatibilitetsmatrisen i Campaign](https://helpx.adobe.com/se/campa
 
 * Certifikat för mobila applikationer i iOS med iOS HTTP2-kopplingen valideras nu innan push-meddelanden skickas, vilket förhindrar att leveranser misslyckas på grund av utgångna certifikat.
 
-* Hanteringen av HTTP-proxyanslutningar har förbättrats. [Läs mer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Hanteringen av HTTP-proxyanslutningar har förbättrats. [Läs mer](../../installation/using/file-res-management.md).
 
 * Nytt alternativ i arbetsflödesaktiviteterna **[!UICONTROL Javascript Code]** och **[!UICONTROL Advanced Javascript Code]** för att stoppa körningen efter en gräns. Standardvärdet är 1 timme. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
