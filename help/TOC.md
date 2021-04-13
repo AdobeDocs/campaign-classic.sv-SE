@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
       + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
-      + [Uppdatera studskompetens efter ett avbrott i en Internet-leverantör](delivery/using/update-bounce-qualification.md)
+      + [Uppdatera studskrav efter ett avbrott hos en internetleverantör](delivery/using/update-bounce-qualification.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform Sources and Destinations {#aep-sources-destinations}
+      + [Kom igång med källor och mål](integrations/using/get-started-sources-destinations.md)
+      + [Engagera Adobe Experience Platform-målgrupper i Campaign](integrations/using/ingest-aep-data.md)
+      + [Exportera data från Campaign till Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Kom igång med arbetsflöden {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
