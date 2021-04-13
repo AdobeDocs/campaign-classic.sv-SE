@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 815648f97d2f5e15c1d5ddc340d384d440d0d6b2
 workflow-type: tm+mt
-source-wordcount: '4272'
-ht-degree: 96%
+source-wordcount: '4304'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 96%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
+
+## 2°21 april {#april-2021}
+
+Ett nytt avsnitt har handlar om hur man arbetar med Adobe Experience Platform Sources and Destinations för att dela data mellan Campaign Classic och Adobe Real-time Customer Data Platform (RTCDP). [Läs mer](../../integrations/using/get-started-sources-destinations.md)
 
 ## Mars 2021 {#march-2021}
 
@@ -40,7 +44,7 @@ Läs om hur du skapar och hanterar dina kampanjer via de här nya sidorna:
 
 Information har lagts till i avsnittet om **[!UICONTROL Advanced JavaScript]**-aktivitet om hur du använder metoden task.setCompleted() för att avsluta uppgiften och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-Avsnittet [Deliverability](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). All generisk information om slutbarhet som kan användas för olika Adobe-lösningar har flyttats till [Best Practice Guide Appendix](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
+Avsnittet [Levererbarhet](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv). All generisk information om levererbarhet som kan tillämpas på olika Adobe-lösningar har flyttats till [bilagan för Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv#additional-resources).
 
 ## Februari 2021 {#release-21.1}
 
