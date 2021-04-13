@@ -6,14 +6,14 @@ description: Använd andra Adobe-lösningar och kombinera deras olika funktioner
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
+exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '772'
 ht-degree: 8%
 
 ---
-
 
 # Kom igång med Adobe Campaign-integreringar {#about-campaign-integrations}
 
@@ -60,7 +60,7 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
  <tbody> 
   <tr> 
    <td> <strong>Adobe Real-time Customer Data Platform (RTCDP)</strong><br /> </td> 
-   <td> Integrationen mellan Adobe Campaign och Adobe Real-time Customer Data Platform (RTCDP) gör att du kan dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Läs </a> mer om Campaign - Integrering av kunddataplattformen i realtid med Adobe.</p><br /> </td> 
+   <td> Integrationen mellan Adobe Campaign och Adobe Real-time Customer Data Platform (RTCDP) gör att du kan dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Läs </a> mer om Campaign - Integrering av kunddataplattformen i realtid med Adobe.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management System (IMS) - Adobe ID</strong><br /> </td> 
@@ -96,4 +96,3 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
   </tr> 
  </tbody> 
 </table>
-
