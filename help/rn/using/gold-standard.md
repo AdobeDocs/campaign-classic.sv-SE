@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 96%
 På den här sidan visas [!DNL Gold Standard] versioner. Läs mer om Campaign [!DNL Gold Standard] [på den här sidan](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 release{#gs-11}
+
+_14 april 2021_
+
+Version 9032@d030c36 innehåller följande korrigering:
+
+* Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
+
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
 
 _2 mars 2021_
 
