@@ -6,36 +6,46 @@ description: Versionsinformation för Campaign 19.1
 feature: null
 role: null
 level: null
+exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
 translation-type: tm+mt
-source-git-commit: 631e7a0f89a365626401a6157ef84442fa0fd59f
+source-git-commit: 5271a23f7d815d432cfec00c57555c18be1fd3c7
 workflow-type: tm+mt
-source-wordcount: '3198'
-ht-degree: 20%
+source-wordcount: '3256'
+ht-degree: 25%
 
 ---
-
 
 # Version 19.1{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.1.8 – build 9039 {#release-19-1-8-build-9039}
 
-_22 mars 2021_
+_15 april 2021_
 
-* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildupplösning i leveranser. (NEO-31453 och NEO-31454)
+* Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
 
-**Endast konsoluppgradering är obligatoriskt. Ingen serveruppgradering krävs.**
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
 
 >[!NOTE]
 >
-> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Lär dig hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+
+_22 mars 2021_
+
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453, NEO-31454)
+
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
+
+>[!NOTE]
+>
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _16 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.**
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign upphör den 30 november 2021 **.**
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
 
 
 
@@ -239,7 +249,7 @@ _30 maj 2019_
 * Ett problem som kunde påverka SMS-transaktionsmeddelandets prestanda har åtgärdats. (NEO-9812)
 * Korrigerade en konsolkrasch som kunde inträffa när alternativet Definierad i en extern fil användes för huvudmålet för en leverans. (NEO-12349)
 * Korrigerade ett fel vid analys av ett meddelande som riktade till mottagare för japanska (.JP)-domäner. (NEO-12246)
-* Korrigerade ett visningsproblem vid användning av en värdefördelning med en 1:N-länk. (NEO-12212 och NEO-11820)
+* Korrigerade ett visningsproblem vid användning av en värdefördelning med en 1:N-länk. (NEO-12212, NEO-11820)
 * Korrigerade ett problem som kunde orsaka NmsMxDomain-fel i MTA-loggarna efter en efteruppgradering. (NEO-12752)
 * Ett problem har korrigerats när alternativet Behåll alla ytterligare data från huvuduppsättningen användes i en arbetsflödesaktivitet för anrikning. (NEO-13291)
 * Korrigerade ett Tomcat-kraschproblem när push-meddelanden skickades med HTTP2. (NEO-12701)
@@ -281,6 +291,6 @@ _30 maj 2019_
 * Korrigerade ett problem som gjorde att spårningsarbetsflödet misslyckades om URL:er hade felaktigt format.
 * Ett problem med externa konton har korrigerats efter import av mobilprogrampaketet.
 * Korrigerade ett problem när en tidszon tilldelades en operator. (NEO-12464)
-* Ett problem som kunde orsaka fel i datorloggarna har korrigerats. (NEO-11539 och NEO-8978)
+* Ett problem som kunde orsaka fel i datorloggarna har korrigerats. (NEO-11539, NEO-8978)
 * Ett problem som uppstod när du klickade på ikonen Historik i en sparad rapport korrigerades. (NEO-11620)
 * Ett problem har korrigerats vid redigering av en pivottabell i en rapport. (NEO-12068)
