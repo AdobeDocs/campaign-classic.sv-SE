@@ -8,16 +8,26 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
-source-wordcount: '2830'
-ht-degree: 88%
+source-wordcount: '2970'
+ht-degree: 87%
 
 ---
 
 # Version 20.2{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) Version 20.2.5 – build 9188 {#release-20-2-5-build-9188}
+
+_15 april 2021_
+
+* Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
+
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
+
+>[!NOTE]
+>
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _31 mars 2021_
 
@@ -37,6 +47,17 @@ _31 mars 2021_
 * Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
+
+_15 april 2021_
+
+* Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453, NEO-31454)
+
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
+
+>[!NOTE]
+>
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _22 december 2020_
 
