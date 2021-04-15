@@ -4,39 +4,49 @@ product: campaign
 title: Version 20.1
 description: Version 20.1
 feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+role: Business Practitioner
+level: Beginner
+exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: da87e8aac5d5419c8b21803e4041da166d8ffde9
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 10%
+source-wordcount: '1560'
+ht-degree: 18%
 
 ---
-
 
 # Version 20.1{#release-20-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Version 20.1.4 – build 9126 {#release-20-1-4-build-9126}
 
-_22 mars 2021_
+_15 april 2021_
 
-* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildupplösning i leveranser. (NEO-31453 och NEO-31454)
+* Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
 
-**Endast konsoluppgradering är obligatoriskt. Ingen serveruppgradering krävs.**
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
 
 >[!NOTE]
 >
-> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Lär dig hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+
+_22 mars 2021_
+
+* Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453, NEO-31454)
+
+**Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
+
+>[!NOTE]
+>
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _23 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.**
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.
    >
    > 
-* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
+* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 
 
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
