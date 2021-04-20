@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Kom igång med uppgraderingar
 description: Läs mer om uppgraderingar till Campaign Classic
-feature: Översikt
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499

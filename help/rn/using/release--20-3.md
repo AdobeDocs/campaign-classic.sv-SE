@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Versionsinformation om Campaign 20.3
 description: Versionsinformation för Campaign 20.3
-feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt

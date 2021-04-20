@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Om Adobe Campaign Classic
 description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer.
-feature: Översikt
-role: Yrkesverksam
-level: Nybörjare
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Funktioner som är inaktuella och har ersatts i Campaign Classic
 description: Den här sidan beskriver inaktuella och borttagna funktioner i Adobe Campaign Classic
-feature: Översikt
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645

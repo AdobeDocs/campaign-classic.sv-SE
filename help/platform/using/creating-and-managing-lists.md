@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Skapa och hantera listor
 description: Lär dig hur du skapar och hanterar listor
-feature: Profiler
-role: Yrkesverksam
-level: Nybörjare
+feature: Profiles
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt

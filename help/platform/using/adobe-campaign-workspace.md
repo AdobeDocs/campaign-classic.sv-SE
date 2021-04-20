@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Arbetsyta i Adobe Campaign
 description: Lär dig hur du använder och anpassar arbetsytan i Campaign
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13

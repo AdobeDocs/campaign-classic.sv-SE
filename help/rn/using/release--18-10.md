@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Versionsinformation för Campaign 18.10
 description: Versionsinformation för Campaign 18.10
-feature: Översikt
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb

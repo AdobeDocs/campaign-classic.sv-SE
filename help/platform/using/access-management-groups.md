@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Skapa och hantera operatorgrupper
 description: Lär dig hur du ger åtkomst till operatörsgrupper
-feature: Åtkomsthantering
-role: Affärsledare, administratör
-level: Nybörjare
+feature: Access Management
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

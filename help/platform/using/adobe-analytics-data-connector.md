@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Data-kopplingen i Adobe Analytics
 description: Data-kopplingen i Adobe Analytics
-feature: Översikt
-role: Affärsledare, administratör
-level: Nybörjare
+feature: Overview
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

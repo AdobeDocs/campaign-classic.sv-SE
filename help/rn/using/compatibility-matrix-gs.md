@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Kompatibilitetsmatris för Campaign [!DNL Gold Standard]
 description: Kompatibilitetsmatris för Campaign Classic för [!DNL Gold Standard] release
-feature: Översikt
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c

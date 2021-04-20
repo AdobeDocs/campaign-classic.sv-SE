@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Hantera åtkomst till Campaign-mappar
 description: Lär dig hur du ger åtkomst till Campaign-mappar och skapar vyer
-feature: Programinställningar
-role: Affärsledare, administratör
-level: Nybörjare
+feature: Application Settings
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
