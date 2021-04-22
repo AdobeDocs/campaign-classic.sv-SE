@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 96%
+source-wordcount: '2519'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 96%
    + [Tekniska anmärkningar](technotes/technote.md)
    + [Uppdatering av iOS-certifikat](technotes/ios-certificate-update.md)
    + [Konfigurationsuppdateringar i Campaign](technotes/acc-config-updates.md)
+   + [Uppdatering av spårade URL:er](technotes/tracked-urls.md)
 + Komma igång {#getting-started}
    + Kom igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -394,9 +395,9 @@ ht-degree: 96%
       + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform Sources and Destinations {#aep-sources-destinations}
-      + [Kom igång med källor och mål](integrations/using/get-started-sources-destinations.md)
-      + [Engagera Adobe Experience Platform-målgrupper i Campaign](integrations/using/ingest-aep-data.md)
+   + Källor och destinationer i Adobe Experience Platform {#aep-sources-destinations}
+      + [Kom igång med källor och destinationer](integrations/using/get-started-sources-destinations.md)
+      + [Mata in målgrupper från Adobe Experience Platform i Campaign](integrations/using/ingest-aep-data.md)
       + [Exportera data från Campaign till Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Kom igång med arbetsflöden {#introduction}
