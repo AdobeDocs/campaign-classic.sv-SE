@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: f47b0ecfd3e35d15a78779fd9f38cc93c798d5d2
+source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 6%
 
 ---
@@ -27,13 +27,13 @@ För att förbättra säkerheten introducerades signaturfunktionen för att spå
 
 Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 
-* Gold Standard 7 - 11. [Läs mer](../rn/using/gold-standard.md)
-* Kampanj 21.1.1 - 21.1.2-utgåvor. [Läs mer](../rn/using/latest-release.md)
-* Kampanj 20.3.1 - 20.3.3. [Läs mer](../rn/using/release--20-3.md)
-* Kampanj 20.2.1 - 20.2.3-utgåvor. [Läs mer](../rn/using/release--20-2.md)
-* Kampanj 20.1.1 - 21.1.3-utgåvor. [Läs mer](../rn/using/release--20-1.md)
-* Kampanj 19.2.2 - 19.2.3-utgåvor. [Läs mer](../rn/using/release--19-2.md)
-* Kampanj 19.1.5 - 19.1.7-utgåvor. [Läs mer](../rn/using/release--19-1.md)
+* Gold Standard 7 till 11. [Läs mer](../rn/using/gold-standard.md)
+* Kampanj 21.1.1 till 21.1.2. [Läs mer](../rn/using/latest-release.md)
+* Kampanjversionerna 20.3.1 och 20.3.3. [Läs mer](../rn/using/release--20-3.md)
+* Kampanj 20.2.1 till 20.2.3. [Läs mer](../rn/using/release--20-2.md)
+* Kampanjversionerna 20.1.1 och 21.1.3. [Läs mer](../rn/using/release--20-1.md)
+* Kampanj 19.2.2 till 19.2.3. [Läs mer](../rn/using/release--19-2.md)
+* Kampanj 19.1.5 till 19.1.7. [Läs mer](../rn/using/release--19-1.md)
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
