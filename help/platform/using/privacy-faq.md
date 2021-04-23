@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Integritet och medgivande
-description: Läs mer om sekretess och samtycke
+title: Sekretess och medgivande
+description: Läs mer om sekretess och medgivande
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Frågor och svar om integritet {#privacy-faq}
 
@@ -21,7 +21,7 @@ Här följer några av de vanligaste frågorna och svaren om integritet och medg
 
 ## Nyckelvillkor {#key-terms}
 
-### Vilka är nyckelvillkoren gällande integritet?
+### Vilka är de huvudsakliga villkoren gällande sekretess?
 
 Punkterna nedan är länkade till de viktigaste villkoren och begreppen relaterade till integritet och medgivande i Adobe Campaign:
 
@@ -32,7 +32,7 @@ Punkterna nedan är länkade till de viktigaste villkoren och begreppen relatera
 
 ## Beredskap för integritetsreglering{#privacy-regulations-readiness}
 
-### Vad föreslår Adobe Campaign för att följa den senaste integritetsregleringen?
+### Vad föreslår Adobe Campaign för att följa de senaste regelverken gällande sekretess?
 
 Adobe lämnar ingen juridisk rådgivning. Du bör samarbeta med eget juridiskt ombud för att säkerställa att de vidtar alla nödvändiga åtgärder gällande GDPR, CCPA, PDPA, LGPD eller någon annan tillämplig beredskap för reglering.
 
@@ -74,7 +74,7 @@ I de fall där medgivande behövs för vissa marknadsföringsaktiviteter måste 
 
 Det kan till och med finnas tillfällen då vissa medgivanden behöver uppdateras för att kunna fortsätta använda data i framtiden.
 
-Marknadsförarna bör ta hänsyn till dessa krav på ökat medgivande som en sann indikator på varumärkesengagemang och varumärkeslojalitet, samt på kundnöjdhet och förtroende.
+Marknadsförarna bör ta hänsyn till de här kraven på ökat medgivande som en sann indikator på varumärkesengagemang och varumärkeslojalitet, samt på kundnöjdhet och förtroende.
 
 ## Hantera medgivande {#manage-consent}
 
@@ -96,7 +96,7 @@ Tekniskt sett tas alla data bort som är länkade till den registrerade med `int
 
 Som personuppgiftsansvarig har du möjligheten att anpassa detta genom att ändra integriteten hos länkar som definieras i dataschemat (t.ex. om du har en affärsmässig motivering för att inte ta bort vissa data).
 
-### Hur påverkas rapporter när leverans- och spårningsloggar tas bort?
+### Hur påverkas rapporter när leverans- och spårningsloggar raderas?
 
 Rapporter i Adobe Campaign baseras på indikatorer som beräknas med aggregerade data från leverans- och spårningsloggar. Om du tar bort de enskilda loggarna påverkas därför inte de mätvärden som visas i rapporterna.
 
@@ -104,13 +104,13 @@ Rapporter i Adobe Campaign baseras på indikatorer som beräknas med aggregerade
 
 ### Måste jag tänka på att importera data igen vid ett senare datum?
 
-I Adobe Campaign laddas ofta poster upp från en extern datakälla.
+I Adobe Campaign laddas poster ofta upp från en extern datakälla.
 
 Som personuppgiftsansvarig måste du se till att radera alla nödvändiga data om den registrerade från alla dina system när du tar emot en begäran om radering.
 
 ## Anmäla sig igen {#opt-in-again}
 
-### Kan en registrerade som har raderats från Adobe Campaign anmäla sig senare?
+### Kan en registrerad vars data har raderats från Adobe Campaign anmäla sig igen?
 
 En registrerad kan anmäla sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
 
