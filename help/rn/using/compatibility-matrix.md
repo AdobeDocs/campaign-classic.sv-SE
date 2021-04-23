@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Kompatibilitetsmatris för Campaign Classic
 description: Kompatibilitetsmatris för Campaign Classic
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 Det här dokumentet listar alla system och komponenter som stöds för [den senaste versionen](../../rn/using/latest-release.md) av **Adobe Campaign Classic**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
-Om du är [!DNL Gold Standard]-användare, se [[!DNL Gold Standard] Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
+Se kompatibilitetsmatrisen för [[!DNL Gold Standard] ](../../rn/using/compatibility-matrix-gs.md), om du använder [!DNL Gold Standard].
 
 ## Viktiga anteckningar{#important-notes}
 
