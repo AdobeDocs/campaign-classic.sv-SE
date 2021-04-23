@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '[!DNL Gold Standard] uppgradera'
-description: 'Lär dig mer om Campaign Classic [!DNL Gold Standard] '
-feature: Overview
+title: Uppgradering av [!DNL Gold Standard]
+description: Läs om vad Campaign Classic  [!DNL Gold Standard]  är
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# [!DNL Gold Standard] releaser  {#gs-overviews}
+# [!DNL Gold Standard]-versioner {#gs-overviews}
 
 ## Vad är [!DNL Gold Standard]?
 
@@ -23,7 +23,7 @@ Adobe och Adobe Campaign strävar efter att ge dig bästa möjliga upplevelse oc
 
 Adobe Campaign Classic använder en rad olika teknologier för att leverera värde. Den här kombinationen av tekniker kräver att du regelbundet uppgraderar dina instanser i Campaign Classic för att säkerställa att de senaste versionerna används så att de kan leverera överlägsen säkerhet, stabilitet och prestanda.
 
-[!DNL Gold Standard] är Campaign Classic Långsiktig supportrelease. Som [!DNL Gold Standard]-värd-användare har du automatiskt nytta av [!DNL Gold Standard]-uppgraderingen med den senaste stabila versionen utan någon åtgärd. Lokala kunder och Hybrid-kunder kan också dra nytta av [!DNL Gold Standard]-releaser. Om du migrerar från en gammal build rekommenderar vi att du uppgraderar till den här versionen först.
+[!DNL Gold Standard] är versionen av Campaign Classic med långsiktig support. Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång till [!DNL Gold Standard]-uppgraderingen med den senaste stabila versionen utan någon åtgärd. Kunder med lokala installationer eller hybridlösningar kan också dra nytta av [!DNL Gold Standard]-versioner. Om du migrerar från en gammal build rekommenderar vi att du uppgraderar till den här versionen först.
 
 ## Varför behöver min organisation den här uppgraderingen?
 
@@ -100,6 +100,6 @@ Vi strävar efter att se till att du har relevant projekt- och kontaktinformatio
 
 ## Ytterligare resurser
 
-* [[!DNL Gold Standard] versionsinformation](gold-standard.md)
+* Versionsinformation om [[!DNL Gold Standard] ](gold-standard.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [[!DNL Gold Standard] kompatibilitetsmatris](compatibility-matrix-gs.md)
+* Kompatibilitetsmatris för [[!DNL Gold Standard] ](compatibility-matrix-gs.md)
