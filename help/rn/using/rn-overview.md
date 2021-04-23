@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Kom igång med uppgraderingar
 description: Läs mer om uppgraderingar till Campaign Classic
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-versionerna** är: [[!DNL Gold Standard]  version 11](../../rn/using/gold-standard.md) och [Campaign version 20.2.5](../../rn/using/release--20-2.md)
+De **senaste GA-builds** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md) och [Campaign version 20.2.5](../../rn/using/release--20-2.md)
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
@@ -51,11 +51,11 @@ Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [in
 
 Som värdbaserad kund (Managed Service eller hybrid) måste du kontakta kundtjänst för att få din miljö uppgraderad.
 
-Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila builden](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
+Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila builden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Som [!DNL Gold Standard]-värdanvändare har du automatiskt nytta av [!DNL Gold Standard]-uppgraderingen med den [senaste GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) utan någon åtgärd. [Läs mer](../../rn/using/gs-overview.md).
+Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång till [!DNL Gold Standard]-uppgraderingen med den senaste [GA [!DNL Gold Standard] -builden](../../rn/using/gold-standard.md#gs-11) utan någon åtgärd. [Läs mer](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >Kompatibilitetsmatrisen för [!DNL Gold Standard] finns i [GA-kompatibilitetsmatrisen](../../rn/using/compatibility-matrix-gs.md).
