@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Funktioner som är inaktuella och har ersatts i Campaign Classic
 description: Den här sidan beskriver inaktuella och borttagna funktioner i Adobe Campaign Classic
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1713'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <li>Webb-API – Microsoft Dynamics CRM online: 2016, 2016 uppdatering 1</li>
    <li>Oracle On Demand-API</li>
    </ul>
-  <p><em>Datum för målborttagning: Maj 2021</em></p>
+  <p><em>Måldatum för borttagning: maj 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -69,21 +69,21 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td><p>Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell.<p>
   <p> Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta.
   <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html">Läs mer</a></p>
-  <p><em>Datum för målborttagning: Maj 2021</em></p>
+  <p><em>Måldatum för borttagning: maj 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-domän<br></td>
   <td><p> Från och med Campaign version 20.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inaktuell.<p>
   <p>Om du använder demdex-domänen för dina externa import-/exportkonton måste du anpassa implementeringen därefter. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
-  <p><em>Datum för målborttagning: Maj 2021</em></p>
+  <p><em>Måldatum för borttagning: maj 2021</em></p>
   </td>
   <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
   <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
   <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
-  <p><em>Datum för målborttagning: Nov 2021</em></p>
+  <p><em>Måldatum för borttagning: nov 2021</em></p>
   </td>
   </tr>
   <td>SMS-kopplingar<br></td>
@@ -98,14 +98,14 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    </ul>
   <p>Om du använder någon av dessa kopplingar måste implementeringen anpassas i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Läs mer</a></p> 
   <p>Läs om hur du migrerar föråldrade kopplingar i <a href="../../delivery/using/unsupported-connector-migration.md">det här tekniska dokumentet</a>.</p>
-  <p><em>Datum för målborttagning: Maj 2021</em></p>
+  <p><em>Måldatum för borttagning: maj 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Faxkanal<br></td>
    <td><p>Från och med Campaign version 20.2 är faxkanalen inaktuell.</p> 
    <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
-   <p><em>Datum för målborttagning: Maj 2021</em></p></td>
+   <p><em>Måldatum för borttagning: maj 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
