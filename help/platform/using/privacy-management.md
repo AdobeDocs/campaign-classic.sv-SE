@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Integritetshantering
+title: Sekretesshantering
 description: Läs mer om sekretesshantering
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
-# Integritetshantering {#privacy-management}
+# Sekretesshantering {#privacy-management}
 
 Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [integritetsregleringen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA och LGPD).
 
@@ -28,7 +28,7 @@ Här följer de fem viktigaste funktionerna som Adobe Campaign erbjuder för att
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-Mer information finns i [Åtkomst och rättighet att bli glömd](#right-access-forgotten) och [Samtycke, kvarhållning och roller](#consent-retention-roles).
+Mer information finns i [Åtkomsträttighet och rätt att glömmas](#right-access-forgotten) och [Medgivande, kvarhållning och roller](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
@@ -80,9 +80,9 @@ Funktionerna som hjälper till att hantera vissa aspekter av medgivandet har var
 
 ![](assets/privacy-consent-management.png)
 
-Mer information om hantering av samtycke finns i [den detaljerade dokumentationen](../../delivery/using/managing-subscriptions.md).
+Mer information om medgivandehantering finns i den [detaljerade dokumentationen](../../delivery/using/managing-subscriptions.md).
 
-Förutom de verktyg för medgivandehantering som tillhandahålls av Adobe Campaign har du möjligheten att spåra om en konsument har avanmält sig till försäljning av personuppgifter. Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Förutom verktygen för medgivandehantering som finns i Adobe Campaign har du möjligheten att spåra om en konsument har avanmält sig till försäljning av personuppgifter. Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Datalagring {#data-retention}
 
@@ -93,14 +93,14 @@ Följande är standardvärden gällande lagring för inbyggda tabeller. Var medv
 * **Konsoliderad spårning**: 1 år
 * **Leveransloggar**: 6 månader
 * **Spårningsloggar**: 1 år
-* **Borttagna leveranser**: 1 vecka
+* **Raderade leveranser**: 1 vecka
 * **Importavvisanden**: 6 månader
 * **Besökarprofiler**: 1 månad
 * **Erbjudandeförslag**: 1 år
 * **Händelser**: 1 månad
-* **Statistik för händelsebearbetning**: 1 år
+* **Statistik över händelsebearbetning**: 1 månader
 * **Arkiverade händelser**: 1 år
-* **Pipeline-händelser ignorerades**: 1 månad
+* **Ignorerade pipeline-händelser**: 1 månad
 
 Och på samma sätt som att ta bort kan man med standardiserad arbetsflödesfunktionalitet ställa in lagringsperioder för alla anpassade tabeller.
 
@@ -116,4 +116,4 @@ På samma sätt kan du med den här funktionen konfigurera olika funktioner för
 
 ![](assets/privacy-user-management.png)
 
-Mer information om åtkomsthantering finns i [den detaljerade dokumentationen](../../platform/using/access-management.md).
+Mer information om åtkomsthantering finns i den [detaljerade dokumentationen](../../platform/using/access-management.md).
