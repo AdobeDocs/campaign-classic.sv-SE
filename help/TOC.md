@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 97%
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
-   + [!DNL Gold Standard] release  {#gs-release}
-      + [Vad är [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] versionsinformation](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] kompatibilitetsmatris](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] version {#gs-release}
+      + [Vad är  [!DNL Gold Standard]](rn/using/gs-overview.md)?
+      + Versionsinformation om [[!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + Kompatibilitetsmatris för [[!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
       + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
@@ -214,7 +214,7 @@ ht-degree: 97%
       + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
       + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
-      + [Uppdatera studskrav efter ett avbrott hos en internetleverantör](delivery/using/update-bounce-qualification.md)
+      + [Uppdatera studskvalificering efter ett avbrott hos en internetleverantör](delivery/using/update-bounce-qualification.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
@@ -227,8 +227,8 @@ ht-degree: 97%
       + [Åtkomst till spårningsloggarna](delivery/using/accessing-the-tracking-logs.md)
       + [Testspårning](delivery/using/testing-tracking.md)
       + [Felsökning av spårning](delivery/using/tracking-troubleshooting.md)
-   + Leveranshantering {#deliverability-management}
-      + [Vad är leverans?](delivery/using/about-deliverability.md)
+   + Levererbarhetshantering {#deliverability-management}
+      + [Vad är levererbarhet?](delivery/using/about-deliverability.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
       + [Övervaka levererbarhet](delivery/using/monitoring-deliverability.md)
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
@@ -629,7 +629,7 @@ ht-degree: 97%
       + [Driftsättning i företagsklass](installation/using/enterprise-deployment.md)
       + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Säkerhets- och sekretessinställningar {#security-privacy}
+   + Inställningar om säkerhet och sekretess {#security-privacy}
       + [Kom igång med säkerhet och sekretess](installation/using/get-started-security-privacy.md)
       + [Personalisering och sekretess](installation/using/privacy.md)
       + [Säker åtkomsthantering](installation/using/access-management.md)
@@ -661,7 +661,7 @@ ht-degree: 97%
       + [Driftsätta en instans](installation/using/deploying-an-instance.md)
       + [Installera inbyggda paket](installation/using/installing-campaign-standard-packages.md)
    + Konfigurera Campaign {#additional-configurations}
-      + [Konfiguration av kampanjservern](installation/using/configuring-campaign-server.md)
+      + [Konfiguration av Campaign-server](installation/using/configuring-campaign-server.md)
       + [Definiera säkerhetszoner](installation/using/security-zones.md)
       + [Ange URL-behörigheter](installation/using/url-permissions.md)
       + [Filer och resurser](installation/using/file-res-management.md)
@@ -683,7 +683,7 @@ ht-degree: 97%
       + [Konfigurera externa konton](installation/using/external-accounts.md)
       + Konfigurera federerad dataåtkomst{#configure-fda}
          + [Kom igång med federerad dataåtkomst](installation/using/about-fda.md)
-         + [Bästa praxis och begränsningar](installation/using/fda-best-practices.md)
+         + [God praxis och begränsningar](installation/using/fda-best-practices.md)
          + Konfigurationsriktlinjer {#config-databases}
             + [Konfigurationssteg](installation/using/configure-fda.md)
             + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
