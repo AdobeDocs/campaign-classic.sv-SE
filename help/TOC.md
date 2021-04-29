@@ -25,9 +25,9 @@ ht-degree: 100%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + [!DNL Gold Standard] version {#gs-release}
-      + [Vad är  [!DNL Gold Standard]](rn/using/gs-overview.md)?
-      + Versionsinformation om [[!DNL Gold Standard] ](rn/using/gold-standard.md)
-      + Kompatibilitetsmatris för [[!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
+      + [Vad är  [!DNL Gold Standard]?](rn/using/gs-overview.md)
+      + [Versionsinformation om [!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + [Kompatibilitetsmatris för [!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
       + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
