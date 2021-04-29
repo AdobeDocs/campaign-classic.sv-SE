@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -53,7 +53,7 @@ Baserat på tidsramen för incidenten rekommenderas följande riktlinjer för fr
 * För Campaign-instanser med regelinformation för inkommande e-post i fältet **[!UICONTROL Error text]** i karantänlistan:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-postdomän (@domain)** lika med icloud.com&quot; ELLER e-postdomän (@domain) lika med me.com&quot; ELLER e-postdomän (@domain) lika med mac.com&quot;
+   * **E-postdomänen (@domain)** är lika med icloud.com ELLER  **e-postdomänen (@domain)** lika med me.com ELLER  **e-postdomänen (@domain)** lika med mac.com
    * **Uppdateringsstatus (@lastModified)** 2021-07:00:00
    * **Uppdateringsstatus (@lastModified)** den 26/4 2021 01:00:00 PM
 
