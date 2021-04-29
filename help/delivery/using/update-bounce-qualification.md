@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Uppdatera studskompetens efter ett avbrott i en Internet-leverantör
+title: Uppdatera studskvalificering efter ett avbrott hos en internetleverantör
 description: Lär dig hur du uppdaterar studskompetens efter ett avbrott i en Internet-leverantör.
 audience: delivery
 content-type: reference
@@ -9,35 +9,32 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '425'
+ht-degree: 4%
 
 ---
 
-# Uppdatera studskompetens efter ett internetleverantörsavbrott {#update-bounce-qualification.md}
+# Uppdatera studskvalificering efter ett avbrott hos en internetleverantör {#update-bounce-qualification.md}
 
 ## Kontext
 
 Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
-I december 2020 resulterade ett globalt problem på Gmail i att vissa e-postmeddelanden som skickades till giltiga Gmail-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Gmail-servrar med följande studssvar: *&quot;550-5.1.1 E-postkontot som du försökte nå finns inte.&quot;*
-
-Google har uppgett att de Gmail-avbrott och -avbrott som orsakade problemet började 14 december kl. 6:55 och slutade kl. 18:09 EST den 15 december. Vår dataanalys visade också en mycket kort topp i Gmail-studsar kl. 02:06 EST den 16 december, där majoriteten inträffar den 15 december mellan kl. 2:00 EST och kl. 18.30 EST.
+Den 26 april 2021 resulterade ett globalt problem hos Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studssvar: *&quot;550 5.1.1 <email address>: användarsökningen lyckades, men ingen användarpost hittades.&quot;*Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
 
 >[!NOTE]
 >
->Du kan kontrollera Google Workspace Status Dashboard på [den här sidan](https://www.google.com/appsstatus#hl=en&amp;v=status).
-
+>Du kan kontrollera Apple System Status Dashboard på [den här sidan](https://www.apple.com/support/systemstatus/).
 
 Med hjälp av standardlogik för studshantering har Adobe Campaign automatiskt lagt till de här mottagarna i karantänlistan med **[!UICONTROL Status]**-inställningen **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera karantäntabellen i Campaign genom att hitta och ta bort de här mottagarna, eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att de tas bort i nattrensningsarbetsflödet.
 
-Om du vill hitta de mottagare som påverkades av Gmail-problemet, eller om det skulle inträffa igen med någon annan Internet-leverantör, läser du instruktionerna nedan.
+Om du vill hitta de mottagare som påverkades av det här problemet, eller om det händer igen med någon annan Internet-leverantör, kan du läsa instruktionerna nedan.
 
 ## Process som ska uppdateras
 
-Du måste köra en fråga i karantäntabellen för att filtrera bort alla Gmail-mottagare (eller andra ISP-mottagare) som eventuellt påverkades av driftsavfallet så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för kampanjer.
+Du måste köra en fråga i din karantäntabell för att filtrera bort alla Apple-mottagare - inklusive @icloud.com, @me.com, @mac.com - som eventuellt påverkades av driftsavbrottet så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för Campaign.
 
 Baserat på tidsramen för incidenten rekommenderas följande riktlinjer för frågan.
 
@@ -47,16 +44,16 @@ Baserat på tidsramen för incidenten rekommenderas följande riktlinjer för fr
 
 * För Campaign-instanser med SMTP-studssvarsinformation i fältet **[!UICONTROL Error text]** i karantänlistan:
 
-   * **Feltexten (karantänstext)** innehåller&quot;550-5.1.1 E-postkontot som du försökte nå finns inte&quot; OCH  **feltexten (karantänstext)** innehåller&quot;support.google.com&quot; **
-   * **Uppdateringsstatus (@lastModified)** 2020-12-14 6:55:00
-   * **Uppdateringsstatus (@lastModified)** den 16 december 2020 kl. 6:00:00
+   * **Feltexten (karantänstext)** innehåller &quot;användarsökning lyckades men ingen användarpost hittades&quot; OCH  **feltexten (karantänstext)** innehåller &quot;support.apple.com&quot; **
+   * **Uppdateringsstatus (@lastModified)** 2021-07:00:00
+   * **Uppdateringsstatus (@lastModified)** den 26/4 2021 01:00:00 PM
 
 * För Campaign-instanser med regelinformation för inkommande e-post i fältet **[!UICONTROL Error text]** i karantänlistan:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-postdomän (@domain)** lika med &quot;gmail.com&quot; ELLER e-postdomän (@domain) lika med &quot;googlemail.com&quot;
-   * **Uppdateringsstatus (@lastModified)** 2020-12-14 6:55:00
-   * **Uppdateringsstatus (@lastModified)** den 16 december 2020 kl. 6:00:00
+   * **E-postdomän (@domain)** lika med icloud.com&quot; ELLER e-postdomän (@domain) lika med me.com&quot; ELLER e-postdomän (@domain) lika med mac.com&quot;
+   * **Uppdateringsstatus (@lastModified)** 2021-07:00:00
+   * **Uppdateringsstatus (@lastModified)** den 26/4 2021 01:00:00 PM
 
 När du har en lista över berörda mottagare kan du antingen ange statusen **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
 
