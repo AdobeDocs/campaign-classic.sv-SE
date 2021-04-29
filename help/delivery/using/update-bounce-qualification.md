@@ -9,27 +9,22 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
+source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 4%
+source-wordcount: '425'
+ht-degree: 3%
 
 ---
 
-# Uppdatera studskvalificering efter ett avbrott hos en internetleverantör {#update-bounce-qualification.md}
+# Uppdatera felaktiga hårddiskstudsar efter Apple-avbrott {#update-bounce-qualification.md}
 
 ## Kontext
 
-Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
-
-Den 26 april 2021 resulterade ett globalt problem hos Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studssvar:
-
-
-```
-“550 5.1.1 <email address>: user lookup success but no user record found.”
-```
+Den 26 april 2021 resulterade ett globalt problem hos Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studssvar:  &quot;550 5.1.1 <email address>: användarsökningen lyckades, men ingen användarpost hittades.&quot;
 
 Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
+
+Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
 >[!NOTE]
 >
