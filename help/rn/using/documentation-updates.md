@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic – dokumentationsuppdateringar
 description: Den här sidan beskriver alla nya funktioner och uppdateringar i dokumentationen om Adobe Campaign Classic
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4304'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## April 2021 {#april-2021}
 
-Ett nytt avsnitt har handlar om hur man arbetar med Adobe Experience Platform Sources and Destinations för att dela data mellan Campaign Classic och Adobe Real-time Customer Data Platform (RTCDP). [Läs mer](../../integrations/using/get-started-sources-destinations.md)
+Ett nytt avsnitt har lagts till som handlar om hur man arbetar med källor och destinationer i Adobe Experience Platform för att dela data mellan Campaign Classic och Adobes kunddataplattform i realtid (RTCDP). [Läs mer](../../integrations/using/get-started-sources-destinations.md)
 
 ## Mars 2021 {#march-2021}
 
-[Komma igång med SMS-avsnittet](../../delivery/using/sms-channel.md) har omstrukturerats och förbättrats. Nu kan du lära dig att [konfigurera SMS-kanalen](../../delivery/using/sms-set-up.md), [skapa ett SMS](../../delivery/using/sms-create.md), [skicka och spåra SMS](../../delivery/using/sms-send.md) i dedikerade avsnitt.
+[Avsnittet Komma igång med SMS](../../delivery/using/sms-channel.md) har omstrukturerats och förbättrats. Nu kan läsa om hur du [konfigurerar SMS-kanalen](../../delivery/using/sms-set-up.md), [skapar ett SMS](../../delivery/using/sms-create.md) samt [skickar och spårar SMS](../../delivery/using/sms-send.md) i dedikerade avsnitt.
 
-Sidan&quot;Hjälp och support&quot; för Campaign Classic har integrerats i huvuddokumentationen. [Läs mer](../../support.md)
+Sidan Hjälp- och supportalternativ för Campaign Classic har integrerats i huvuddokumentationen. [Läs mer](../../support.md)
 
 Ett nytt avsnitt har lagts till med god praxis och kontroller gällande säkerhet och sekretess. [Läs mer](../../installation/using/get-started-security-privacy.md)
 
@@ -138,7 +138,7 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](../../rn/using/compatibility
 
 Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/using/deprecated-features.md)
 
-Versionsinformation och kompatibilitetsmatris för [!DNL Gold Standard]-versionen finns nu i ett dedikerat avsnitt.
+Versionsinformation och kompatibilitetsmatris för [!DNL Gold Standard]-versionen finns nu i ett särskilt avsnitt.
 [Läs mer](../../rn/using/gold-standard.md#gs-11).
 
 Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
@@ -214,7 +214,7 @@ Aktivitetsavsnittet **[!UICONTROL AND-join]** har berikats med ytterligare infor
 
 Ett användningsfall om hur man automatiskt uppdaterar en lista med en inkrementell fråga har lagts till i användningsfallen om arbetsflöde. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
 
-[Versionsinformationen](../../rn/using/latest-release.md) har omorganiseras: en [översiktssida](../../rn/using/latest-release.md) med information om buildstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [[!DNL Gold Standard] releaser](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
+[Versionsinformationen](../../rn/using/latest-release.md) har omorganiseras: en [översiktssida](../../rn/using/latest-release.md) med information om buildstatus, uppgraderingsprocess, rekommendationer och viktiga länkar har lagts till. En dedikerad sida för [[!DNL Gold Standard] -versioner](../../rn/using/gold-standard.md) har också lagts till och [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) har integrerats.
 
 Ett nytt avsnitt har lagts till med riktlinjer gällande att övervaka Campaign Classic. [Läs mer](../../production/using/monitoring-guidelines.md)
 
@@ -274,7 +274,7 @@ Avsnittet Övervaka levererbarhet har flyttats och förbättrats. [Läs mer](../
 
 Avsnittet Felsöka levererbarhet har flyttats och förbättrats. [Läs mer](../../delivery/using/deliverability-faq.md)
 
-Riktlinjer för leveransbarhet när du startar en ny plattform har förbättrats. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
+Riktlinjer för levererbarhet när du startar en ny plattform har förbättrats. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv#transition-process)
 
 Avsnittet Skicka transaktionsmeddelanden med bilagor har flyttats och uppdaterats. [Läs mer](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -336,7 +336,7 @@ Handböckerna för [installation](../../installation/using/general-architecture.
 
 Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
 
-Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 Ett tips om IP-tillhörighet har lagts till i installationshandboken. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -354,7 +354,7 @@ Den nya parametern för rapportkonfigurationen av webbadresser har dokumenterats
 
 Sidan för den **Lokala och värdbaserade funktionsmatrisen i Campaign Classic** har uppdaterats med de nya FDA-kopplingarna. [Läs mer](../../installation/using/capability-matrix.md).
 
-Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 Det nya **[!UICONTROL Cleanup of Nmsaddress]**-arbetsflödet har dokumenterats [här](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -404,7 +404,7 @@ Säkra SMS-meddelanden (TLS) – [läs mer](https://helpx.adobe.com/se/campaign/
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Ett nytt avsnitt har lagts till om hur man felsöker ett arbetsflöde som finns i läget &quot;Starta så snart som möjligt&quot; i en kampanj. [Läs mer](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -466,7 +466,7 @@ Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har u
 
 **Nya funktioner i version 19.1**
 
-Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 
 Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
@@ -474,7 +474,7 @@ Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
 Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html)
 
-[Kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. [Kompatibilitetsmatrisen 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html) har arkiverats.
+[Kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. [Kompatibilitetsmatrisen 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html) har arkiverats.
 
 Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
 
@@ -529,7 +529,7 @@ Information har lagts till om faktureringsrapporten.
 Dokumentation om integrationen mellan delade publiker har uppdaterats.
 [Läs mer](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
