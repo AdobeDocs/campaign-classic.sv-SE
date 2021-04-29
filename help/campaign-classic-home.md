@@ -5,9 +5,9 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '288'
 ht-degree: 51%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 51%
 
 ## Nyheter
 
-* **[Ta bort felaktiga hårda ](https://helpx.adobe.com/se/campaign/kb/update-bounce-qualification.html)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
+* **[Ta bort felaktiga hårda ](delivery/using/update-bounce-qualification.md)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
 
 * **[Uppdatera APN-](technotes/ios-certificate-update.md)**<br/> certifikatetDen 29 mars 2021 påverkades Campaign iOS-kanalen av en APN-uppdatering. Du måste uppdatera konfigurationen för att undvika avbrott i push-kanalen i iOS.
 
