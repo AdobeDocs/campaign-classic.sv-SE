@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,14 @@ ht-degree: 4%
 
 Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
-Den 26 april 2021 resulterade ett globalt problem hos Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studssvar: *&quot;550 5.1.1 <email address>: användarsökningen lyckades, men ingen användarpost hittades.&quot;*Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
+Den 26 april 2021 resulterade ett globalt problem hos Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studssvar:
+
+
+```
+“550 5.1.1 <email address>: user lookup success but no user record found.”
+```
+
+Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
 
 >[!NOTE]
 >
@@ -44,7 +51,7 @@ Baserat på tidsramen för incidenten rekommenderas följande riktlinjer för fr
 
 * För Campaign-instanser med SMTP-studssvarsinformation i fältet **[!UICONTROL Error text]** i karantänlistan:
 
-   * **Feltexten (karantänstext)** innehåller &quot;användarsökning lyckades men ingen användarpost hittades&quot; OCH  **feltexten (karantänstext)** innehåller &quot;support.apple.com&quot; **
+   * **Feltexten (karantänstext)** innehåller &quot;användarsökning lyckades men ingen användarpost hittades&quot; OCH  **feltexten (karantänstext)** innehåller &quot;support.apple.com&quot;
    * **Uppdateringsstatus (@lastModified)** 2021-07:00:00
    * **Uppdateringsstatus (@lastModified)** den 26/4 2021 01:00:00 PM
 
