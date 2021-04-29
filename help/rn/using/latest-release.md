@@ -3,25 +3,25 @@ solution: Campaign Classic
 product: campaign
 title: Senaste versionen
 description: Senaste versionsinformationen om Campaign Classic
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Senaste versionen{#latest-release}
 
-Den här sidan listar nya funktioner, förbättringar och korrigeringar som ingår i den **senaste versionen av Campaign Classic Release Candidate**.
+Den här sidan beskriver nya funktioner, förbättringar och korrigeringar som ingår i den **senaste versionen av Campaign Classic Release Candidate**.
 
 >[!NOTE]
 >
->Kampanjbyggen **General Availability (GA)** är: [[!DNL Gold Standard] 11 release](../../rn/using/gold-standard.md#gs-11) och [Campaign 20.2.5 release](../../rn/using/release--20-2.md).
+>Builds av Campaign **General Availability (GA)** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 20.2.5](../../rn/using/release--20-2.md).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
 
