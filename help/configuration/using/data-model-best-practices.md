@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 translation-type: tm+mt
-source-git-commit: 6768e9ac518ab0c5642241d1fd2086de5b1e6892
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '4010'
+source-wordcount: '4009'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Det här dokumentet innehåller vanliga användningsexempel och metodtips om hur
 
 ## Datamodellarkitektur {#data-model-architecture}
 
-Adobe Campaign Standard är ett kraftfullt kanalövergripande kampanjhanteringssystem som kan hjälpa er att anpassa era online- och offlinestrategier för att skapa personaliserade kundupplevelser.
+Adobe Campaign är ett kraftfullt kanalövergripande kampanjhanteringssystem som kan hjälpa er att anpassa era online- och offlinestrategier för att skapa personaliserade kundupplevelser.
 
 ### Kundfokuserad metod {#customer-centric-approach}
 
