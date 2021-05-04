@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Om profiler
 description: Om profiler
-feature: Profiles, Audiences
+feature: Profiler, målgrupper
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 14%
+source-wordcount: '906'
+ht-degree: 12%
 
 ---
 
@@ -93,13 +93,7 @@ Aktiva profiler är de profiler som räknas i faktureringssyfte.
 
 Antal aktiva profiler är endast tillgängligt för **Marknadsinstanser**. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
 
-Om du är värd för AWS kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. Mer information finns i [dokumentationen till kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
-
->[!NOTE]
->
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
->
->Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Om du vill kontrollera om din instans finns på AWS följer du stegen som beskrivs i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+Om du är värd för AWS kan du även övervaka antalet aktiva profiler som används på dina instanser direkt från Kontrollpanelen. Mer information finns i [dokumentationen till kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 Fakturering gäller endast profiler som är **aktiva**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
 
@@ -109,7 +103,7 @@ De profiler som uteslöts under färdigställandet (typologiregler, karantänreg
 >
 >Facebook- och Twitter-kanaler beaktas inte.
 
-Du kan få en översikt över **[!UICONTROL Number of active profiles]** på Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**-menyn. Det faktiska antalet utförs av **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [det tekniska arbetsflödet](../../workflow/using/about-technical-workflows.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]**-menyn. Varje period varar i 12 månader.
+Du kan få en översikt över **[!UICONTROL Number of active profiles]** från menyn Campaign **[!UICONTROL Administration > Campaign Management > Customer metrics]**. Det faktiska antalet utförs av **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [det tekniska arbetsflödet](../../workflow/using/about-technical-workflows.md), som körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden på **[!UICONTROL Customer metrics]**-menyn. Varje period varar i 12 månader.
 
 ## Självstudievideo {#create-profiles-video}
 
