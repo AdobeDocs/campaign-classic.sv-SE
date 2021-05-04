@@ -6,14 +6,14 @@ description: Övervaka körning av arbetsflöde
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
 
 ---
-
 
 # Övervaka körning av arbetsflöde {#monitoring-workflow-execution}
 
@@ -261,7 +261,7 @@ Följande vyer är tillgängliga:
 * **[!UICONTROL Running]**: visar alla arbetsflöden som körs.
 * **[!UICONTROL Paused]**: visar alla pausade arbetsflöden.
 * **[!UICONTROL Failed]**: visar alla misslyckade arbetsflöden.
-* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med **Marketing campaign**-paketet (se [Installera Campaign-standardpaket](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med **marknadsföringskampanjer**-paketet (se [Installera Campaign-inbyggda paket](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
