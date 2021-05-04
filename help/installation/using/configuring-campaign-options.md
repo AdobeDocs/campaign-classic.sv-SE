@@ -6,14 +6,14 @@ description: Lär dig hur du konfigurerar Campaign-alternativ
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
 
 ---
-
 
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
 
@@ -627,11 +627,11 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som ska innehålla data från Adobe Campaign standardtabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla data från Adobe Campaign tabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign standardtabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign tabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
@@ -744,7 +744,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Teradata-anslutningsalternativ.<br /> </td> 
+   <td> Anslutningsalternativ för teradata.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
@@ -1042,4 +1042,3 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
   </tr> 
  </tbody> 
 </table>
-
