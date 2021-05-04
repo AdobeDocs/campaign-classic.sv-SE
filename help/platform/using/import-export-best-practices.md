@@ -1,19 +1,19 @@
 ---
-solution: Campaign Standard
+solution: Campaign Classic
 product: campaign
 title: Bästa praxis för import och export
 description: Läs mer om de bästa sätten att följa när du importerar eller exporterar data.
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
+exl-id: 03d35202-d221-4136-aad4-00704aabb356
 translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%
 
 ---
-
 
 # Bästa praxis för import och export {#import-export-best-practices}
 
