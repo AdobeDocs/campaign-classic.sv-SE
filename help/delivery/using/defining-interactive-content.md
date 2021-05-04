@@ -6,14 +6,14 @@ description: Lär dig hur du definierar interaktivt och dynamiskt e-postinnehål
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
+exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
 
 ---
-
 
 # Definiera interaktivt innehåll{#defining-interactive-content}
 
@@ -49,7 +49,7 @@ Mer information om AMP för e-postformat, specifikationer och krav finns i [doku
 ## Viktiga steg för att använda AMP för e-post med Adobe Campaign {#key-steps-to-use-amp}
 
 Följ stegen nedan för att testa och skicka ett AMP-e-postmeddelande med Adobe Campaign:
-1. Installera **[!UICONTROL AMP support]**-paketet. Se [Installera Campaign-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+1. Installera **[!UICONTROL AMP support]**-paketet. Se [Installera inbyggda Campaign-paket](../../installation/using/installing-campaign-standard-packages.md).
 1. Skapa ett e-postmeddelande och bygg ditt AMP-innehåll i Adobe Campaign. Se [Bygg e-postinnehåll för AMP med Adobe Campaign](#build-amp-email-content).
 1. Se till att du uppfyller alla leveranskrav från e-postleverantörer som stöder AMP-formatet. Se [AMP för leveranskrav för e-post](#amp-for-email-delivery-requirements).
 1. När du definierar målet måste du markera de mottagare som ska kunna visa AMP-formatet. Se [Ange ett AMP-e-postmeddelande](#targeting-amp-email) som mål.
