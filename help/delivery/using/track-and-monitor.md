@@ -5,14 +5,14 @@ title: Spåra och övervaka meddelanden
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
-
 
 # Spåra och övervaka {#track-and-monitor}
 
@@ -39,7 +39,7 @@ Tips: Kontrollera konfigurationen för trafikhantering (IP-tillhörighet). Mer i
 
 ## Spårning {#tracking-deliveries}
 
-Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en leverans: mottagning, öppning, klickningar på länkar, avbeställningar osv. I Campaign Classic visas den här informationen på fliken Spårning för mottagarna som leveransmålet gäller och på fliken Spårning för leveransen. I Campaign Standard visas den på fliken Spårningsloggar för leveransen.
+Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en leverans: mottagning, öppning, klickningar på länkar, avbeställningar osv. I Campaign Classic visas den här informationen på fliken Spårning för mottagarna som leveransmålet gäller och på fliken Spårning för leveransen.
 
 **Tips**: Spårning av meddelanden är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransguiden. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
 
