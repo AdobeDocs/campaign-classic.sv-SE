@@ -6,14 +6,14 @@ description: Personaliserade kuponger
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
 
 ---
-
 
 # Personaliserade kuponger{#personalized-coupons}
 
@@ -115,7 +115,7 @@ I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om 
 
       ![](assets/deliv_coup_11.png)
 
-      Kupongen infogas i meddelandet som kod i stället för det namn du tilldelade. Koden används i Campaigns standarddatamodell.
+      Kupongen infogas i meddelandet som kod i stället för det namn du tilldelade. Koden används i Campaign-objektets datamodell.
    ![](assets/deliv_coup_12.png)
 
 1. Kör ett test för att bekräfta namnet som du tilldelade kupongen. Gå till fliken **[!UICONTROL Preview]** och klicka på **[!UICONTROL Test personalization]**. Välj en mottagare för testet.
