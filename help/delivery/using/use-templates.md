@@ -5,14 +5,14 @@ title: Använd leveransmallar
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
-
 
 # Använda mallar {#use-templates}
 
@@ -26,7 +26,7 @@ Med en [leveransmall](../../delivery/using/creating-a-delivery-template.md) kan 
 
 När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du har en underdomän per varumärke. En bank kan till exempel ha flera underdomäner som motsvarar var och en av dess regionala myndigheter. Om en bank äger domänen bluebank.com kan dess underdomäner vara @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com osv. Med en leveransmall per underdomän kan ni alltid använda rätt förkonfigurerade parametrar för varje varumärke, vilket undviker fel och sparar tid.
 
-**Tips**: För att undvika konfigurationsfel i Campaign Standarden rekommenderar vi att du duplicerar en inbyggd mall och ändrar dess egenskaper i stället för att skapa en ny mall.
+**Tips**: För att undvika konfigurationsfel rekommenderar vi att du duplicerar en intern mall och ändrar dess egenskaper i stället för att skapa en ny mall.
 
 ## Konfigurera adresser
 
