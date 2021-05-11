@@ -7,11 +7,11 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 90%
 
 ---
 
@@ -270,21 +270,27 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </tbody>
 </table>
 
-## Operativsystem för klientkonsoler{#ClientConsoleoperatingsystems-gs}
+
+## Klientkonsol {#ClientConsoleoperatingsystems}
+
+Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
+
+### Operativsystem
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
-<p>Sju</p>
 <p>8</p>
 <p>10 (rekommenderas för japanska instanser)</p>
 </td>
@@ -292,7 +298,31 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK-gs}
+### Webbläsare
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Senaste versionen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+## Mobile SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -313,11 +343,54 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </tbody>
 </table>
 
-## Webbläsare{#Browsers-gs}
+## Webbläsare{#Browsers}
 
-Den senaste versionen har stöd i följande webbläsare: Microsoft Edge, Mozilla Firefox, Google Chrome och Safari.
+Följande webbläsare är kompatibla med Campaign for Web Access.
 
-Internet Explorer 11 stöds.
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Senaste versionen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>Senaste versionen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>Senaste versionen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>Senaste versionen</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Mer som detta{#Morelikethis-gs}
 
