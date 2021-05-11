@@ -6,35 +6,37 @@ description: Lär dig hur du installerar klientkonsolen
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 translation-type: tm+mt
-source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 4%
+source-wordcount: '973'
+ht-degree: 3%
 
 ---
 
-
 # Installera och uppdatera Campaign-klientkonsolen{#installing-the-client-console}
-
 
 Campaign Client Console är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar.
 
-Innan du startar måste du kontrollera Campaign [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html), hämta URL:en för Campaign-servern och inloggningsuppgifterna.
+Innan du börjar installera klientkonsolen måste du:
 
->[!CAUTION]
->
->Kampanjklientkonsolen och Campaign-programservern måste köras på samma produktversion. Adobe rekommenderar också att du använder samma produktbygge.
-
-![](assets/do-not-localize/how-to-video.png) Lär dig installera och konfigurera Adobe Campaign Client i  [video](#video)
+* Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Hämta webbadressen till Campaign-servern
+* Hämta inloggningsuppgifter
 
 Processen att installera eller uppdatera klientkonsolen skiljer sig åt beroende på hur du implementerar Adobe Campaign Classic.
 Läs informationen nedan för att ta reda på vad som krävs för implementeringen.
 
+![](assets/do-not-localize/how-to-video.png) Lär dig installera och konfigurera Adobe Campaign Client i  [video](#video)
 
-## Implementeringar som finns på Adobe {#hosted-customers}
+>[!CAUTION]
+>
+>Kampanjklientkonsolen och Campaign-programservern måste köra **på samma produktversion**. Adobe rekommenderar också att du använder **samma produktbygge**. Lär dig hur du kontrollerar dina Campaign Client- och Server-versioner i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-Så här installerar eller uppdaterar du klientkonsolerna:
+## Implementeringar för värdbaserade Adobe {#hosted-customers}
+
+Lägger till en värdkund har du två alternativ för att installera eller uppdatera klientkonsolerna:
 
 1. Adobe kan driftsätta direkt. När konsolen har uppdaterats uppmanas användarna att hämta den senaste klientkonsolversionen i ett popup-fönster.
 
@@ -42,9 +44,7 @@ Så här installerar eller uppdaterar du klientkonsolerna:
 
    **Användarna måste ha administratörsåtkomst för att kunna slutföra uppdateringen. Om användarna inte har administratörsbehörighet måste systemadministratören distribuera till alla klientkonsoler**
 
-
-
-## Hybrid- och helt lokala implementeringar {#hybrid-onprem-customers}
+## Hybrid- och On-Premise-implementeringar {#hybrid-onprem-customers}
 
 För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen.
 
@@ -62,9 +62,10 @@ För att göra detta måste du:
 
 1. Starta Adobe Campaign-servern.
 
->[!CAUTION]
->
->  Adobe rekommenderar att du låter alternativet **[!UICONTROL No longer ask this question]** vara avmarkerat för att se till att alla användare får meddelanden när en ny version av konsolen är tillgänglig.  Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
+
+### Fråga inte längre det här frågealternativet
+
+Adobe rekommenderar att du låter alternativet **[!UICONTROL No longer ask this question]** vara avmarkerat för att se till att alla användare får meddelanden när en ny version av konsolen är tillgänglig.  Om det här alternativet väljs informeras användaren inte om nya tillgängliga versioner.
 
 Om **[!UICONTROL No longer ask this question]** har valts kan du återställa den här uppmaningen. Det är bara systemadministratörer som kan redigera Windows-registret som kan göra följande ändringar:
 
@@ -82,14 +83,14 @@ Om **[!UICONTROL No longer ask this question]** har valts kan du återställa de
 >
 >Om du använder en uppdaterad konsol för en befintlig implementering får användarna automatiskt en uppmaning om att uppdatera sin klientkonsol. Om ni implementerar Campaign för första gången måste användarna hämta konsolen. Nedan finns mer information om båda alternativen
 
-### Uppdatera konsolen - befintlig implementering{#update-the-client-console}
+### Uppdatera konsolen för befintlig implementering{#update-the-client-console}
 
 När konsolen är tillgänglig i Campaign-servermappen uppmanas användarna att hämta den senaste klientkonsolversionen i ett popup-fönster.
 
 **Användarna måste ha administratörsåtkomst för att kunna slutföra uppdateringen. Om användarna inte har administratörsbehörighet måste systemadministratören distribuera till alla klientkonsoler**
 
 
-### Hämta konsolen - ny implementering{#download-the-client-console}
+### Hämta konsolen för ny implementering{#download-the-client-console}
 
 Användare bör nu hämta och installera konsolen genom att följa stegen nedan:
 
@@ -150,11 +151,10 @@ Så här loggar du in på en befintlig instans:
 1. Ange dina inloggningsuppgifter och klicka på **[!UICONTROL Log in]**
 
 
-
 **Relaterade ämnen**
 
 * [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
-* [Kompatibilitetsmatris](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [Kompatibilitetsmatris](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 ## Videokurs
 
