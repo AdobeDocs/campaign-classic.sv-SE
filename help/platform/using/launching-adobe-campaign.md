@@ -6,18 +6,23 @@ description: Starta Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c275751ab86e98652820bf461c617442480c725
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 6%
+source-wordcount: '558'
+ht-degree: 7%
 
 ---
-
 
 # Starta Adobe Campaign{#launching-adobe-campaign}
 
 Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar. Lär dig hur du hämtar och konfigurerar klientkonsolen på [den här sidan](../../installation/using/installing-the-client-console.md).
+
+
+>[!CAUTION]
+>
+>Kontrollera system- och verktygskompatibiliteten med Adobe Campaign Client Console i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Starta Adobe Campaign {#starting-adobe-campaign}
 
@@ -107,4 +112,4 @@ Läs mer om [!DNL Gold Standard] [i den här artikeln](../../rn/using/gs-overvie
 
 * [Adobe Campaign hjälp- och supportalternativ](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
