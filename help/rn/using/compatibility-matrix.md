@@ -8,9 +8,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 translation-type: tm+mt
-source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+source-git-commit: 548ed5710cced016606283198f81a8f13c65ac10
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 91%
 
 ---
@@ -277,7 +277,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## Klientkonsol {#ClientConsoleoperatingsystems}
 
-Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
+:varning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
 
 ### Operativsystem
 
@@ -288,8 +288,6 @@ Följande operativsystem och webbläsare krävs för att använda Campaign Clien
 <td>
 <p>2016</p>
 <p>2012</p>
-</td>
-<td>
 </td>
 </tr>
 <tr>
@@ -306,14 +304,6 @@ Följande operativsystem och webbläsare krävs för att använda Campaign Clien
 
 <table>
 <tbody>
-<tr>
-<td>
-<p>Microsoft Edge</p>
-</td>
-<td>
-<p>Senaste versionen</p>
-</td>
-</tr>
 <tr>
 <td>
 <p>Microsoft Internet Explorer</p>
