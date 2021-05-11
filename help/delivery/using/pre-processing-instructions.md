@@ -6,14 +6,14 @@ description: Läs mer om förbearbetningsinstruktioner som du kan använda för 
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
+exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 translation-type: tm+mt
-source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
+source-git-commit: fdcb96c3c4afed1f36529e658eda26766226c44f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
 
 ---
-
 
 # Instruktioner för förbehandling {#pre-processing-instructions}
 
@@ -185,6 +185,7 @@ Lösningen är att
    }
    <%@ value object='endScript' %>
    ```
+
 1. Visa artikeln genom att anropa funktionen.
 
    ```
@@ -195,4 +196,3 @@ Lösningen är att
    }
    %>
    ```
-
