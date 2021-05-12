@@ -436,7 +436,7 @@ Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../del
 
 ## Oktober 2019 {#october-2019}
 
-Listan med felmeddelanden i Campaign har uppdaterats. [Läs mer](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Listan över felmeddelanden i Campaign har uppdaterats. [Läs mer](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentation om sekretesshantering som inkluderar GDPR och CCPA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy.html)
 
@@ -496,7 +496,7 @@ Ytterligare information om SOAP-autentiseringsmetoder för transaktionsmeddeland
 
 Konfigurationsstegen för Apache har uppdaterats. [Läs mer](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-En ny sida har lagts till med listan över slutpunkter för Classic. [Läs mer](../../installation/using/campaign-network-endpoints.md)
+En ny sida har lagts till med en lista över slutpunkter i Classic. [Läs mer](../../installation/using/campaign-network-endpoints.md)
 
 Artikeln Bästa praxis för datapaket har uppdaterats. [Läs mer](../../configuration/using/data-model-best-practices.md)
 
