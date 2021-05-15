@@ -6,18 +6,21 @@ description: Om att hantera marknadsföringsresurser
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '374'
 ht-degree: 3%
 
 ---
 
+# Kom igång med Marketing Resource Management{#about-marketing-resource-management}
 
-# Om att hantera marknadsföringsresurser{#about-marketing-resource-management}
-
-## Introduktion {#introduction}
+<!--
+>[!AVAILABILITY]
+>
+>:warning: This capability is not available in Campaign v8. [Learn more](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)
+-->
 
 Med modulen **Marketing Resource Management (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
 
@@ -27,11 +30,11 @@ Inom ramen för programmen och delprogrammen i marknadsföringsplanerna kan uppg
 
 **Med** MRM kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: Resursernas integritet och övervakning sker via en särskild kontrollpanel.
 
-Slutligen har budgetförvaltningen utökats tack vare förvaltningen av mål- och utgiftsområden och ett utökat utbud av standardrapporter. på så sätt kan ni övervaka och mäta produktiviteten och resultatet för alla marknadsföringsaktiviteter på ett korrekt sätt.
+Slutligen utökas budgethanteringsfunktionen till hantering av mål- och utgiftsrader samt utökade inbyggda rapporter. Sedan kan ni övervaka och mäta produktiviteten och resultatet för alla marknadsföringsaktiviteter.
 
-## Kärnbegrepp {#core-concepts}
+## Koncept och terminologi {#core-concepts}
 
-I Adobe Campaign måste följande begrepp definieras:
+Följande koncept och termer är specifika för Adobe Campaign Marketing Resource Management:
 
 * **Uppgift**
 
@@ -47,17 +50,16 @@ I Adobe Campaign måste följande begrepp definieras:
 
 >[!NOTE]
 >
->Mer information om den övergripande Adobe Campaign-arbetsytan finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
+>Mer information om arbetsytan i Adobe Campaign finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >  
->Alla funktioner som är kopplade till leveranser och kommunikationskanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Leveranser och kommunikationskanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
->Alla kampanjrelaterade funktioner beskrivs i [Få tillgång till marknadsföringskampanjer](../../campaign/using/accessing-marketing-campaigns.md).
+>Funktionerna för marknadsföringskampanjer beskrivs i [det här avsnittet](../../campaign/using/accessing-marketing-campaigns.md).
 
-Dessutom erbjuder planer och program i Adobe Campaign extra funktioner:
+Med tillägget för Marketing Resource Management (MRM) har planer och program ytterligare funktioner som listas nedan:
 
-* Budgethantering. Mer information finns i [Kontrollera kostnader](../../campaign/using/controlling-costs.md)
+* **Budgethantering**. [Läs mer](../../campaign/using/controlling-costs.md)
 
-* Uppgiftshantering. Mer information finns i [Skapa och hantera uppgifter](../../campaign/using/creating-and-managing-tasks.md)
+* **Uppgiftshantering**. [läs mer](../../campaign/using/creating-and-managing-tasks.md)
 
-* Hantering av marknadsföringsresurser. Mer information finns i [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md)
-
+* **Resurshantering**. [Läs mer](../../campaign/using/managing-marketing-resources.md)
