@@ -6,22 +6,19 @@ description: Om responshanteraren
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
+source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '434'
 ht-degree: 3%
 
 ---
 
+# Kom igång med Campaign Response Manager{#about-response-manager}
 
-# Om responshanteraren{#about-response-manager}
+Adobe Campaign erbjuder ett tillägg för Response Management som gör att ni kan mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda erbjudanden över olika kommunikationskanaler: e-post, mobil, direktreklam osv.
 
-## Mål {#objectives}
-
-Adobe Campaign erbjuder en responshanteringsapplikation (Response Manager) som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda erbjudanden för alla kommunikationskanaler (e-post, mobil, telefon, direktreklam, fax, byrå, osv.).
-
-## Hypoeskoncept {#hypothesis-concept}
+## Hypotes {#hypothesis-concept}
 
 Hypoeser kan konfigureras under en viss period från kontaktdatumet för att minska beteendet hos de som anges efter att ha fått en leverans. Hypoteserna baseras på en **transaktion**-tabell som sparar inköp och information om dessa inköp.
 
@@ -41,7 +38,7 @@ Du kan också beräkna alla reaktioner för hela hushållet med mottagaren som t
 
 Varje hypotes är kopplad till en enda transaktionstabell. En leverans eller ett erbjudande kan vara kopplat till flera hypoteser.
 
-## Metod {#method}
+## Implementeringssteg {#method}
 
 Innan du börjar använda Svarshanteraren ska du läsa [Konfiguration](../../campaign/using/configuration.md) och utföra de nödvändiga konfigurationerna.
 
@@ -58,4 +55,3 @@ Använd följande process för att definiera och skapa mäthypoteser:
 
 1. Kontrollera hypotesresultaten. Se [Avstavningsspårning](../../campaign/using/hypothesis-tracking.md).
 1. Återlansera hypoteser om det behövs. Se [Skapa en hypotes direkt vid leverans](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
-
