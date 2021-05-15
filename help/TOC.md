@@ -8,16 +8,15 @@ user-guide-description: Utforma, planera, genomför, hantera och optimera markna
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-translation-type: ht
-source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: ht
-source-wordcount: '2519'
-ht-degree: 100%
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+workflow-type: tm+mt
+source-wordcount: '2521'
+ht-degree: 99%
 
 ---
 
 
-# Guide om Adobe Campaign Classic {#using}
+# Adobe Campaign Classic v7 Guide {#using}
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
@@ -25,9 +24,9 @@ ht-degree: 100%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + [!DNL Gold Standard] version {#gs-release}
-      + [Vad är  [!DNL Gold Standard]?](rn/using/gs-overview.md)
-      + [Versionsinformation om [!DNL Gold Standard] ](rn/using/gold-standard.md)
-      + [Kompatibilitetsmatris för [!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
+      + [Vad är [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [Versionsinformation om [!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [Kompatibilitetsmatris för [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
       + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
@@ -55,7 +54,7 @@ ht-degree: 100%
          + [De vanligaste frågorna](platform/using/common-questions.md)
          + [Globala begrepp](platform/using/faq-key-concepts.md)
          + [Builduppgradering](platform/using/faq-build-upgrade.md)
-         + [Integritet](platform/using/privacy-faq.md)
+         + [Sekretess](platform/using/privacy-faq.md)
          + [Publiker](platform/using/faq-audiences.md)
          + [Utforma meddelanden](platform/using/faq-designing.md)
          + [Skicka meddelanden](platform/using/faq-messages.md)
@@ -66,8 +65,8 @@ ht-degree: 100%
          + [Självstudiekurser](platform/using/tutorials.md)
    + Integritet {#privacy}
       + [Integritet och medgivande](platform/using/privacy-and-recommendations.md)
-      + [Integritetshantering](platform/using/privacy-management.md)
-      + [Förfrågan om användarens information](platform/using/privacy-requests.md)
+      + [Sekretesshantering](platform/using/privacy-management.md)
+      + [Förfrågningar om användarens information](platform/using/privacy-requests.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
@@ -167,7 +166,7 @@ ht-degree: 100%
    + Skicka direktutskick {#sending-direct-mail}
       + [Om direktutskickskanalen](delivery/using/about-direct-mail-channel.md)
       + [Skapa en leverans av direktutskick](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definiera innehållet i direktutskick](delivery/using/defining-the-direct-mail-content.md)
+      + [Definiera innehållet i direktmeddelanden](delivery/using/defining-the-direct-mail-content.md)
       + [Validera](delivery/using/validating.md)
    + Använd leveransmallar {#using-delivery-templates}
       + [Om mallar](delivery/using/about-templates.md)
@@ -415,20 +414,20 @@ ht-degree: 100%
       + [Arkitektur](workflow/using/architecture.md)
    + Målinriktade aktiviteter{#targeting-activities}
       + [Om målinriktade aktiviteter](workflow/using/about-targeting-activities.md)
-      + [Fråga](workflow/using/query.md)
+      + [Förfrågan](workflow/using/query.md)
       + [Inkrementell fråga](workflow/using/incremental-query.md)
       + [Läslista](workflow/using/read-list.md)
-      + [Union](workflow/using/union.md)
+      + [Sammanslutning](workflow/using/union.md)
       + [Skärningspunkt](workflow/using/intersection.md)
       + [Uteslutning](workflow/using/exclusion.md)
       + [Dela](workflow/using/split.md)
       + [Celler](workflow/using/cells.md)
       + [Erbjudanden per cell](workflow/using/offers-by-cell.md)
       + [Leveransbeskrivning](workflow/using/delivery-outline.md)
-      + [Berikande](workflow/using/enrichment.md)
+      + [Berikning](workflow/using/enrichment.md)
       + [Redigera schema](workflow/using/edit-schema.md)
       + [Erbjudandemotor](workflow/using/offer-engine.md)
-      + [Avduplicering](workflow/using/deduplication.md)
+      + [Deduplicering](workflow/using/deduplication.md)
       + [Dimensionsändring](workflow/using/change-dimension.md)
       + [Listuppdatering](workflow/using/list-update.md)
       + [Prenumerationstjänster](workflow/using/subscription-services.md)
@@ -436,11 +435,11 @@ ht-degree: 100%
       + [CRM-koppling](workflow/using/crm-connector.md)
    + Flödeskontrollaktiviteter {#flow-control-activities}
       + [Om flödeskontrollaktiviteter](workflow/using/about-flow-control-activities.md)
-      + [Start och slut](workflow/using/start-and-end.md)
-      + [Gaffel](workflow/using/fork.md)
+      + [Starta och sluta](workflow/using/start-and-end.md)
+      + [Förgrening](workflow/using/fork.md)
       + [AND-join](workflow/using/and-join.md)
-      + [Scheduler](workflow/using/scheduler.md)
-      + [Testa](workflow/using/test.md)
+      + [Schemaläggare](workflow/using/scheduler.md)
+      + [Test](workflow/using/test.md)
       + [Vänta](workflow/using/wait.md)
       + [Tidsbegränsning](workflow/using/time-constraint.md)
       + [Delarbetsflöde](workflow/using/sub-workflow.md)
@@ -481,7 +480,7 @@ ht-degree: 100%
          + [Läs in leveransinnehåll](workflow/using/loading-delivery-content.md)
          + [Arbetsflöde för leveranser över flera kanaler](workflow/using/cross-channel-delivery-workflow.md)
          + [E-postberikande med anpassade datumfält](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Övervaka {#monitoring}
+      + Övervakning {#monitoring}
          + [Skicka en rapport till en lista](workflow/using/sending-a-report-to-a-list.md)
          + [Övervaka dina arbetsflöden](workflow/using/supervising-workflows.md)
          + [Skicka personaliserade aviseringar till operatörer](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -644,7 +643,7 @@ ht-degree: 100%
          + [Meddelandeserver](installation/using/messaging-server.md)
          + [Nätverkskonfiguration](installation/using/network-configuration.md)
       + Campaign i Windows {#installing-campaign-in-windows-}
-         + [Kom igång](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+         + [Komma igång](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [Installera servern](installation/using/installing-the-server.md)
          + [Integrera i en webbserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Klientkonsolens tillgänglighet i Windows](installation/using/client-console-availability-for-windows.md)
@@ -765,7 +764,7 @@ ht-degree: 100%
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
       + [Beskrivning av datamodellen](configuration/using/data-model-description.md)
-      + [Bästa praxis](configuration/using/data-model-best-practices.md)
+      + [God praxis](configuration/using/data-model-best-practices.md)
    + Schemareferens {#schema-reference}
       + [Om schemareferens](configuration/using/about-schema-reference.md)
       + [Schemastruktur](configuration/using/schema-structure.md)
