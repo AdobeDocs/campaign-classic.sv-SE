@@ -1,23 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om distribuerad marknadsföring
-description: Om distribuerad marknadsföring
+title: Distribuerad marknadsföring för kampanj
+description: Kom igång med distribuerad marknadsföring
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: c166409b-e040-491e-840a-a41310935d75
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 1%
+source-wordcount: '1132'
+ht-degree: 0%
 
 ---
 
+# Kom igång med distribuerad marknadsföring{#about-distributed-marketing}
 
-# Om distribuerad marknadsföring{#about-distributed-marketing}
-
-## Introduktion {#introduction}
+<!--
+>[!AVAILABILITY]
+>
+>:warning: This capability is not available in Campaign v8. [Learn more](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)
+-->
 
 Adobe Campaign erbjuder en **Distributed Marketing**-applikation för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL list of campaign packages]**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
 
@@ -29,55 +32,55 @@ Den centrala enheten tillhandahåller kampanjer som lokala enheter kan använda.
 
 ## Terminologi {#terminology}
 
-### Centrala enheter {#central-entities}
+* **Centrala enheter**
 
-Centrala enheter består av marknadsföringsoperatörer som ansvarar för att specificera kommunikation och hjälpa lokala enheter att genomföra marknadsföringskampanjer.
+   Centrala enheter består av marknadsföringsoperatörer som ansvarar för att specificera kommunikation och hjälpa lokala enheter att genomföra marknadsföringskampanjer.
 
-Den distribuerade marknadsföringsmodulen gör det möjligt för den centrala enheten att:
+   Den distribuerade marknadsföringsmodulen gör det möjligt för den centrala enheten att:
 
-* skapa marknadsföringskampanjer för lokala enheter,
-* öka de lokala enheternas grad av självbestämmande när det gäller val av kommunikation, målgruppsanpassning, innehåll m.m. mellan kunder och potentiella kunder.
-* hantera och kontrollera kostnader,
-* hantera ett nätverk av myndigheter.
+   * skapa marknadsföringskampanjer för lokala enheter,
+   * öka de lokala enheternas grad av självbestämmande när det gäller val av kommunikation, målgruppsanpassning, innehåll m.m. mellan kunder och potentiella kunder.
+   * hantera och kontrollera kostnader,
+   * hantera ett nätverk av myndigheter.
 
-### Lokala enheter {#local-entities}
+* **Lokala enheter**
 
-Lokala enheter kan vara myndigheter, butiker eller grupper av specifika lokala aktörer (nationella eller regionala chefer, varumärkesansvariga osv.).
+   Lokala enheter kan vara myndigheter, butiker eller grupper av specifika lokala aktörer (nationella eller regionala chefer, varumärkesansvariga osv.).
 
-Distribuerad marknadsföring ger lokala enheter större självständighet samtidigt som man optimerar kostnaderna för att genomföra kampanjen.
+   Distribuerad marknadsföring ger lokala enheter större självständighet samtidigt som man optimerar kostnaderna för att genomföra kampanjen.
 
-### Lokalisering {#localization}
+* **Lokalisering**
 
-Lokalisering är en lokal enhets förmåga att ändra mål och innehåll för en kampanj. Möjlig lokaliseringsnivå beror på kampanjtypen och dess implementering.
+   Lokalisering är en lokal enhets förmåga att ändra mål och innehåll för en kampanj. Möjlig lokaliseringsnivå beror på kampanjtypen och dess implementering.
 
-### Lista över kampanjpaket {#list-of-campaign-packages}
+* **Lista över kampanjpaket**
 
-Listan över kampanjpaket innehåller kampanjer som är tillgängliga för lokala entiteter.
+   Listan över kampanjpaket innehåller kampanjer som är tillgängliga för lokala entiteter.
 
-### Kampanjpaket {#campaign-package}
+* **Kampanjpaket**
 
-Mall (eller kampanjinstans) som har skapats av en central enhet och gjorts tillgänglig för en uppsättning lokala enheter.
+   Mall (eller kampanjinstans) som har skapats av en central enhet och gjorts tillgänglig för en uppsättning lokala enheter.
 
-### Lokal kampanj {#local-campaign}
+* **Lokal kampanj**
 
-En lokal kampanj är en instans som skapats från en mall som refereras i listan **[!UICONTROL campaign packages]** med ett **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten.
+   En lokal kampanj är en instans som skapats från en mall som refereras i listan **[!UICONTROL campaign packages]** med ett **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten.
 
-Den lokala enhetens grad av självbestämmande beror på det genomförande som används.
+   Den lokala enhetens grad av självbestämmande beror på det genomförande som används.
 
-Se [Skapa en lokal kampanj](../../campaign/using/creating-a-local-campaign.md).
+   Se [Skapa en lokal kampanj](../../campaign/using/creating-a-local-campaign.md).
 
-### Samverkande kampanj {#collaborative-campaign}
+* **Samverkande kampanj**
 
-En samverkanskampanj är en kampanj vars **körningsschema definieras** av den centrala enheten, som den lokala enheten kan använda. Innehållet är detsamma för varje lokal enhet, men kostnaderna delas. Delta genom att lokala enheter prenumererar på samarbetskampanjen.
+   En samverkanskampanj är en kampanj vars **körningsschema definieras** av den centrala enheten, som den lokala enheten kan använda. Innehållet är detsamma för varje lokal enhet, men kostnaderna delas. Delta genom att lokala enheter prenumererar på samarbetskampanjen.
 
-* **[!UICONTROL Collaborative campaign (by form)]**: rekommenderas för kampanjer som omfattar upp till 300 lokala enheter. Den lokala enheten kan ange fördefinierade parametrar för målinriktning och innehållspersonalisering i ett webbformulär. Formuläret kan vara ett Adobe Campaign-formulär eller ett externt formulär (extranät-klient). En funktionell administratör kan definiera och konfigurera formuläret baserat på en formulärmall som definieras av integratorn. För att kunna beställa kampanjen behöver den lokala enheten bara webbåtkomst.
-* **[!UICONTROL Collaborative campaign (by campaign)]**: Rekommenderas för kampanjer som riktar sig till dussintals lokala enheter. Den här typen av kampanj skapar underordnade kampanjer för varje lokal enhet. När **[!UICONTROL collaborative campaign (by campaign)]** har godkänts av den centrala enheten görs kampanjen tillgänglig för den lokala enheten, som kan ändra den. Körningen synkroniseras automatiskt mellan överordnade och underordnade kampanjer. Den lokala enheten måste ha tillgång till en instans för att kunna beställa en kampanj och delta i den.
-* **[!UICONTROL Collaborative campaign (by target approval)]**: Rekommenderas för kampanjer som riktar sig till flera tusen lokala enheter. Lokal enhet tar emot en kontaktlista som har fördefinierats av den centrala enheten. Den lokala enheten avgör om vissa kontakter ska behållas eller inte baserat på kampanjinnehållet via ett webbformulär. Lokala enheter dras från listan med valda kontakter. För att delta i kampanjen behöver den lokala enheten bara tillgång till webben.
-* **[!UICONTROL Collaborative campaign (simple)]**: Detta läge garanterar kompatibilitet med specifika körningsprocesser i tidigare versioner.
+   * **[!UICONTROL Collaborative campaign (by form)]**: rekommenderas för kampanjer som omfattar upp till 300 lokala enheter. Den lokala enheten kan ange fördefinierade parametrar för målinriktning och innehållspersonalisering i ett webbformulär. Formuläret kan vara ett Adobe Campaign-formulär eller ett externt formulär (extranät-klient). En funktionell administratör kan definiera och konfigurera formuläret baserat på en formulärmall som definieras av integratorn. För att kunna beställa kampanjen behöver den lokala enheten bara webbåtkomst.
+   * **[!UICONTROL Collaborative campaign (by campaign)]**: Rekommenderas för kampanjer som riktar sig till dussintals lokala enheter. Den här typen av kampanj skapar underordnade kampanjer för varje lokal enhet. När **[!UICONTROL collaborative campaign (by campaign)]** har godkänts av den centrala enheten görs kampanjen tillgänglig för den lokala enheten, som kan ändra den. Körningen synkroniseras automatiskt mellan överordnade och underordnade kampanjer. Den lokala enheten måste ha tillgång till en instans för att kunna beställa en kampanj och delta i den.
+   * **[!UICONTROL Collaborative campaign (by target approval)]**: Rekommenderas för kampanjer som riktar sig till flera tusen lokala enheter. Lokal enhet tar emot en kontaktlista som har fördefinierats av den centrala enheten. Den lokala enheten avgör om vissa kontakter ska behållas eller inte baserat på kampanjinnehållet via ett webbformulär. Lokala enheter dras från listan med valda kontakter. För att delta i kampanjen behöver den lokala enheten bara tillgång till webben.
+   * **[!UICONTROL Collaborative campaign (simple)]**: Detta läge garanterar kompatibilitet med specifika körningsprocesser i tidigare versioner.
 
-Se [Skapa en samarbetskampanj](../../campaign/using/creating-a-collaborative-campaign.md).
+   Se [Skapa en samarbetskampanj](../../campaign/using/creating-a-collaborative-campaign.md).
 
-### Beställa kampanjpaket {#ordering-campaign-packages}
+**Beställa kampanjpaket**
 
 Om en lokal enhet registrerar för en kampanj görs detta i en order som grupperar all information som är relativ till kampanjlokaliseringen.
 
@@ -129,7 +132,7 @@ Distribuerade marknadsföringskampanjer skapas och publiceras av den centrala en
 
 Implementeringsproceduren beror på vilken typ av kampanjpaket som används och delegeringsnivåerna för den lokala enheten.
 
-### Integratorsida {#integrator-side}
+### Integreringsuppgifter {#integrator-side}
 
 1. Skapa lokala enheter.
 1. Länka mottagare med operatorer som hanterar lokala enheter.
@@ -148,7 +151,7 @@ Implementeringsproceduren beror på vilken typ av kampanjpaket som används och 
 
    För **samarbetskampanjer (med målgodkännande)** skapar du tabellen där godkännandena för varje lokal enhet sparas.
 
-### Funktionell administratörssida {#functional-administrator-side}
+### Funktionella administratörsuppgifter {#functional-administrator-side}
 
 Dessa steg måste utföras när varje kampanj skapas.
 
@@ -157,7 +160,7 @@ Dessa steg måste utföras när varje kampanj skapas.
 1. Konfigurera kampanjen med lokaliseringsfälten och formulärreferensen.
 1. Publicera kampanjen.
 
-### Lokal operatörssida {#local-operator-side}
+### Lokala operatoraktiviteter {#local-operator-side}
 
 Dessa steg måste utföras för varje kampanj.
 
@@ -165,4 +168,3 @@ Dessa steg måste utföras för varje kampanj.
 1. Utvärdera målet, budgeten osv.
 1. Förhandsgranska kampanjinnehåll.
 1. Beställ kampanjen.
-
