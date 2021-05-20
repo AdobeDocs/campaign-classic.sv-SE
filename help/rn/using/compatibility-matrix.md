@@ -7,11 +7,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -172,7 +171,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <table>
 <tbody>
 <tr>
-<td>API för Salesforce-anslutning</td>
+<td>Kopplings-API för Salesforce</td>
 <td>
 <p>API-version 49</p>
 </td>
@@ -275,7 +274,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </tbody>
 </table>
 
-## Klientkonsol {#ClientConsoleoperatingsystems}
+## Client Console {#ClientConsoleoperatingsystems}
 
 :varning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
 
@@ -316,7 +315,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </table>
 
 
-## Mobile SDK{#MobileSDK}
+## Mobilt SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -387,9 +386,9 @@ Följande webbläsare är kompatibla med Campaign for Web Access.
 </table>
 
 
-## Mer som detta{#Morelikethis}
+## Mer som det här{#Morelikethis}
 
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
 * [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
-* [Procedur för versionsuppgradering](../../production/using/build-upgrade.md)
+* [Procedur för builduppgradering](../../production/using/build-upgrade.md)
