@@ -7,11 +7,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-translation-type: tm+mt
 source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4297'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +43,7 @@ Läs om hur du skapar och hanterar dina kampanjer via de här nya sidorna:
 
 Information har lagts till i avsnittet om **[!UICONTROL Advanced JavaScript]**-aktivitet om hur du använder metoden task.setCompleted() för att avsluta uppgiften och förhindra framtida återkallningar. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-Avsnittet [Levererbarhet](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv). All generisk information om levererbarhet som kan tillämpas på olika Adobe-lösningar har flyttats till [bilagan för Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
+Avsnittet [Levererbarhet](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv). All generisk information om levererbarhet som kan tillämpas på olika Adobe-lösningar har flyttats till [bilagan för Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv#additional-resources).
 
 ## Februari 2021 {#release-21.1}
 
@@ -179,25 +178,25 @@ Landningssidan gällande bästa praxis för levererbarhet har förbättrats för
 
 Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
-* [Så ställer man in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
+* [Så ställer du in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
 
-* [Så skapar man ett e-postmeddelande i en kampanj](../../campaign/using/marketing-campaign-deliveries.md)
+* [Så skapar du ett e-postmeddelande i en kampanj](../../campaign/using/marketing-campaign-deliveries.md)
 
-* [Så skapar man ett flerspråkigt nyhetsbrev med villkorligt innehåll](../../delivery/using/conditional-content.md)
+* [Så skapar du ett flerspråkigt nyhetsbrev med villkorligt innehåll](../../delivery/using/conditional-content.md)
 
-* [Så konfigurerar och distribuera man en leveransmall](../../delivery/using/creating-a-delivery-template.md)
+* [Så konfigurerar och driftsätter du en leveransmall](../../delivery/using/creating-a-delivery-template.md)
 
-* [Så aktiverar och använder man AMP för e-postmeddelanden](../../delivery/using/defining-interactive-content.md)
+* [Så aktiverar och använder du AMP för e-postmeddelanden](../../delivery/using/defining-interactive-content.md)
 
-* [Så personaliserar man e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
+* [Så personaliserar du e-postmeddelanden med dynamiska innehållsblock](../../delivery/using/personalization-blocks.md)
 
-* [Så personaliserar man e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
+* [Så personaliserar du e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
 
-* [Så hanterar man frön och korrektur i ett e-postmeddelande](../../delivery/using/steps-defining-the-target-population.md)
+* [Så hanterar du frön och korrektur i ett e-postmeddelande](../../delivery/using/steps-defining-the-target-population.md)
 
-* [Så ställer man in en återkommande leverans](../../workflow/using/recurring-delivery.md)
+* [Så ställer du in en återkommande leverans](../../workflow/using/recurring-delivery.md)
 
-* [Så ställer man in en kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
+* [Så ställer du in en kontinuerlig leverans](../../workflow/using/continuous-delivery.md)
 
 Information har lagts till om de kontroller och åtgärder som ska utföras när man får felet ”Det gick inte att lösa värdnamnet” efter anslutning till en FTP-server. [Läs mer](../../platform/using/sftp-server-usage.md)
 
@@ -336,7 +335,7 @@ Handböckerna för [installation](../../installation/using/general-architecture.
 
 Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
 
-Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 Ett tips om IP-tillhörighet har lagts till i installationshandboken. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -354,7 +353,7 @@ Den nya parametern för rapportkonfigurationen av webbadresser har dokumenterats
 
 Sidan för den **Lokala och värdbaserade funktionsmatrisen i Campaign Classic** har uppdaterats med de nya FDA-kopplingarna. [Läs mer](../../installation/using/capability-matrix.md).
 
-Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 Det nya **[!UICONTROL Cleanup of Nmsaddress]**-arbetsflödet har dokumenterats [här](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -404,7 +403,7 @@ Säkra SMS-meddelanden (TLS) – [läs mer](https://helpx.adobe.com/se/campaign/
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Ett nytt avsnitt har lagts till om hur man felsöker ett arbetsflöde som finns i läget &quot;Starta så snart som möjligt&quot; i en kampanj. [Läs mer](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -466,7 +465,7 @@ Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har u
 
 **Nya funktioner i version 19.1**
 
-Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 
 Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
@@ -474,7 +473,7 @@ Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
 Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html)
 
-[Kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. [Kompatibilitetsmatrisen 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html) har arkiverats.
+[Kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. [Kompatibilitetsmatrisen 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html) har arkiverats.
 
 Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
 
@@ -529,7 +528,7 @@ Information har lagts till om faktureringsrapporten.
 Dokumentation om integrationen mellan delade publiker har uppdaterats.
 [Läs mer](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
