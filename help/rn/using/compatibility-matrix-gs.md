@@ -7,11 +7,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -271,7 +270,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </table>
 
 
-## Klientkonsol {#ClientConsoleoperatingsystems}
+## Client Console {#ClientConsoleoperatingsystems}
 
 :varning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
 
@@ -311,7 +310,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK}
+## Mobilt SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -381,9 +380,9 @@ Följande webbläsare är kompatibla med Campaign for Web Access.
 </tbody>
 </table>
 
-## Mer som detta{#Morelikethis-gs}
+## Mer som det här{#Morelikethis-gs}
 
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
 * [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
-* [Procedur för versionsuppgradering](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html)
+* [Procedur för builduppgradering](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html)
