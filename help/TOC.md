@@ -8,17 +8,17 @@ user-guide-description: Utforma, planera, genomför, hantera och optimera markna
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
+source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 100%
+source-wordcount: '2522'
+ht-degree: 99%
 
 ---
 
 
-# Användarhandbok om Adobe Campaign Classic v7 {#using}
+# Adobe Campaign Classic v7-dokumentation {#using}
 
-+ [Produktdokumentation](campaign-classic-home.md)
++ [Dokumentation för Campaign v7](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
