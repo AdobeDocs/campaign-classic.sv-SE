@@ -7,23 +7,24 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
 workflow-type: tm+mt
-source-wordcount: '3927'
+source-wordcount: '3941'
 ht-degree: 1%
 
 ---
 
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
 
-Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ.
+Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
->[!NOTE]
+>[!CAUTION]
 >
->Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
+>* Alternativ som inte finns med på den här sidan är bara interna och **får inte ändras**.
+   >
+   >
+* Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
 
-Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
 ## Leverans {#delivery}
 
@@ -682,7 +683,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
    <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">datatyp:</span> heltal</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (text)</span> : 3 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -827,7 +828,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
  </tbody> 
 </table>
 
-## Spårning {#tracking}
+## Spåra {#tracking}
 
 <table> 
  <thead> 
@@ -900,7 +901,7 @@ Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas til
  </tbody> 
 </table>
 
-## Integritet {#privacy}
+## Sekretess {#privacy}
 
 <table> 
  <thead> 
