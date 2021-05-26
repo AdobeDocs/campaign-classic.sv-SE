@@ -6,14 +6,13 @@ description: Vanliga frågor och svar om Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 99%
 
 ---
-
 
 # Viktiga begrepp {#key-concepts}
 
@@ -84,7 +83,7 @@ Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas
 
 [Klicka här för att får reda på mer](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Hur skickar jag SMS-meddelanden? {#how-to-send-sms-messages-}
 
