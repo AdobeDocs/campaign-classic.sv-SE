@@ -7,10 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1541'
 ht-degree: 8%
 
 ---
@@ -87,7 +86,7 @@ Följande kanaler kan konfigureras:
 * [E-post](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Mobil (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Direktutskick](../../delivery/using/about-direct-mail-channel.md)
+* [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
 * [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
@@ -189,7 +188,7 @@ Konfigurationsinställningarna för det externa kontot beror på databasmotorn. 
 * Konfigurera åtkomst till [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Konfigurera åtkomst till [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Facebook-anslutning {#facebook-connect-external-account}
+### Facebook Connect {#facebook-connect-external-account}
 
 Med det externa **[!UICONTROL Facebook Connect]**-kontot kan du visa anpassat innehåll i dina Facebook-program, vilket gör det enklare att hitta potentiella kunder via det här sociala nätverket.
 
@@ -207,9 +206,9 @@ För varje Facebook-program måste du skapa ett externt konto av typen **[!UICON
 
 * **[!UICONTROL Application secret]**
 
-   Apphemlighet för ditt Facebook-program.
+   Programhemlighet för ditt Facebook-program.
 
-Om du väljer värd för det här instansläget måste webbadressen för den säkra arbetsytan klistras in i fältet **Facebook-webbspel (https)** på Facebook
+Om du väljer värdserver för det här instansläget måste webbadressen för den säkra arbetsytan klistras in i fältet **Facebook webbspel (https)** i Facebook
 
 Om du vill veta var du hittar dessa autentiseringsuppgifter kan du gå till den här [sidan](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
@@ -243,7 +242,7 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID för din IMS-organisation. Se den här [sidan](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**Var hittar jag mitt IMS-organisations-ID?**) för att hitta ditt företags-ID.
+   ID för din IMS-organisation. Information om hur du hittar ditt organisations-ID finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Var hittar jag mitt IMS-organisations-ID?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -257,7 +256,7 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
    Namn på din Adobe Experience Cloud-klient.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../integrations/using/configuring-ims.md).
+Mer information om den här konfigurationen finns på [den här sidan](../../integrations/using/configuring-ims.md).
 
 ## Webbanalys {#web-analytics-external-account}
 
