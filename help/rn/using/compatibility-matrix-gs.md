@@ -7,9 +7,9 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: ht
-source-wordcount: '538'
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
@@ -143,7 +143,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Läs mer</a>.</p>
+<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux.</p>
 </td>
 </tr>
 <tr>
