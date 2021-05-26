@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '483'
 ht-degree: 13%
 
 ---
@@ -89,6 +89,5 @@ Ytterligare utbildningsvideor för Campaign finns [här](https://experienceleagu
 
 * [Använd automatiska affärsregler på leveranser i alla kanaler](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
-* [Om kampanjtypologier](../../campaign/using/pressure-rules.md)
+* [Kom igång med typologier och trötthetshantering](../../campaign/using/pressure-rules.md)
 
-* [Hantera reklamtrötthet med tryckregler](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
