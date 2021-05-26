@@ -5,14 +5,13 @@ title: Optimera meddelandeleveransen
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 6%
 
 ---
-
 
 # Optimera leverans {#optimize-delivery}
 
@@ -32,7 +31,7 @@ Flera faktorer kan direkt påverka serverprestanda och göra plattformen långsa
 
 * Arbetsflödets körning: övervakning av arbetsflödena är avgörande för att undvika problem med plattformens prestanda. Följ riktlinjerna som anges [i det här dokumentet](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Som värdkund kan du använda [funktionerna i panelen Kampanjkontroll](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) för att övervaka plattformen med [funktionerna för prestandaövervakning](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html).
+* Om du är berättigad kan du använda [panelfunktionerna för kampanjkontroll](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) för att övervaka plattformen med [funktioner för prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
 
 ## Kontrollerar nätverkskonfigurationen {#network-config}
 
@@ -40,7 +39,7 @@ Om du vill optimera leveransen när du hanterar e-post i stora volymer och undvi
 
 **Tips**: Använd en transparent avsändaradress som motsvarar ert varumärkes webbplats. Exempel: företaget TravelAgency hanterar hotellkedjan Valentino. Företaget äger domänen valentino.com för sin webbplats. För att marknadsföra alla hjärtans dag-hotell i Paris använder man underdomänen paris.valentino.com. Därför kan en relevant avsändaradress vara hotel@paris.valentino.com.
 
-## Leveranshantering {#deliverability-management}
+## Levererbarhetshantering {#deliverability-management}
 
 Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost måste du förbättra leveransfrekvensen för dina meddelanden.
 
