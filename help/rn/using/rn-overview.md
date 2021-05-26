@@ -7,11 +7,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: ht
-source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: ht
-source-wordcount: '415'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +62,7 @@ Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång
 ## Support och andra användbara länkar{#support}
 
 * [Hjälp och support](../../support.md)
-* [Versioner av Kontrollpanelen](https://docs.adobe.com/content/help/sv-SE/control-panel/using/release-notes.html)
+* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
 * [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
 
