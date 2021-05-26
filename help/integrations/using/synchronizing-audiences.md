@@ -6,14 +6,13 @@ description: Synkronisera publiker
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1131'
 ht-degree: 1%
 
 ---
-
 
 # Synkronisera publiker{#synchronizing-audiences}
 
@@ -29,7 +28,7 @@ Det här användningsexemplet visar hur du förbereder målet för leveransen i 
 >
 >Du kan också utöka data med aggregat och samlingar i Adobe Campaign Standard om alla data du behöver redan har replikerats.
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 För att uppnå detta behöver du:
 
@@ -139,16 +138,15 @@ Genom att skapa ett leveransarbetsflöde i Campaign Standard är det sedan möjl
 
 ## Skicka och övervaka leveransen {#send-and-monitor-your-delivery}
 
-När leveransen och dess innehåll är klara skickar du leveransen enligt beskrivningen i [det här avsnittet](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
+När leveransen och innehållet är klara skickar du leveransen:
 
 1. Kör leveransarbetsflödet. I det här steget förbereds e-postmeddelandet för att skickas.
 1. Bekräfta manuellt att leveransen kan skickas från kontrollpanelen för leverans.
 1. Övervaka rapporter och loggar för leveransen:
 
-   * **I Campaign Standard**: Få åtkomst till  [](https://docs.adobe.com/content/help/en/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) rapporter och  [](https://docs.adobe.com/content/help/en/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) loggar relaterade till leveransen som för alla leveranser.
+   * **I Campaign Standard**: Få åtkomst till  [](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) rapporter och  [](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) loggar relaterade till leveransen som för alla leveranser.
    * **i Campaign v7 och Campaign Standard**: Leverans-ID, breda e-postloggar och loggar för e-postspårning synkroniseras med Campaign v7. Sedan kan ni få en helhetsbild av era marknadsföringskampanjer från Campaign v7.
 
       Kvartalanger synkroniseras automatiskt tillbaka till Campaign v7. På så sätt kan information som inte kan levereras beaktas vid nästa målgruppsanpassning som utförs i Campaign v7.
 
-      Mer information om karantänhantering finns i Campaign Standard i [det här avsnittet](https://docs.adobe.com/content/help/en/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
-
+      Mer information om karantänhantering finns i Campaign Standard i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en).
