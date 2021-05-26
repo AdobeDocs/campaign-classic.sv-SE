@@ -6,20 +6,19 @@ description: Lär dig de viktigaste stegen för att uppgradera till en ny versio
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 1%
+source-wordcount: '2353'
+ht-degree: 2%
 
 ---
-
 
 # Utföra en uppgradering av din build{#performing-a-build-upgrade}
 
 I det här avsnittet får du en detaljerad genomgång av uppgraderingsprocessen och hur du identifierar och löser konflikter.
 
-Uppgraderingen av bygget måste utföras med försiktighet, dess effekter måste beaktas fullt ut i förväg och förfarandet måste avslutas med en hög nivå av disciplin. För att uppgraderingen ska lyckas måste du se till att endast expertanvändare utför de steg som beskrivs nedan. Dessutom rekommenderar vi att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan du påbörjar en uppgradering.
+Uppgraderingen av bygget måste utföras med försiktighet, dess effekter måste beaktas fullt ut i förväg och förfarandet måste avslutas med en hög nivå av disciplin. För att uppgraderingen ska lyckas måste du se till att endast expertanvändare utför de steg som beskrivs nedan. Dessutom rekommenderar vi att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan du påbörjar en uppgradering.
 
 Följande krav krävs:
 
@@ -84,7 +83,7 @@ Innan du påbörjar uppgraderingen måste lokala kunder utföra följande förbe
 
 1. Hämta den senaste versionen av din [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md).
 
-1. [Ladda ned den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. [Ladda ned den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 Du måste också känna till alla [praktiska kommandorader](../../installation/using/command-lines.md) innan du påbörjar en bygguppgradering:
 
@@ -412,7 +411,7 @@ Så här utför du en komplex sammanfogning:
 
 **Relaterade ämnen**
 
-* [Vanliga frågor om uppgradering av bygge](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
