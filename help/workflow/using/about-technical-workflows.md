@@ -6,14 +6,13 @@ description: Läs mer om de tekniska arbetsflödena för Campaign Classic-paket.
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: f57f52d8807eb771e2416b6648e1d746a206fa96
+exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1818'
 ht-degree: 5%
 
 ---
-
 
 # Tekniska arbetsflöden{#about-technical-workflows}
 
@@ -34,8 +33,8 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i [det dediker
 | Tekniskt arbetsflöde | Paket | Beskrivning |
 |------|--------|-----------|
 | **Aliasrensning** (aliasCleansing) | Leverans | Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard. |
-| **Fakturering**  (fakturering) | Leverans | Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses som standard den 25:e varje månad. |
-| **Beräkning av Twitter-statistik**  (statistikTwitter) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på Twitter. |
+| **Fakturering**  (fakturering) | Leverans | Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses den 25:e varje månad på marknadsinstansen. |
+| **Beräkning av Twitter-statistik**  (statsTwitter) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på Twitter. |
 | **Kampanjjobb**  (operationMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet hanterar jobben för marknadsföringskampanjer (lanserar målinriktning, filextrahering osv.). Det skapar också arbetsflöden för återkommande och periodiska kampanjer. |
 | **Samla in data för tjänsten**  HeatMap (collectDataHeatMapService) | Installerad som standard | Det här arbetsflödet hämtar data som krävs av HeatMap-tjänsten. |
 | **Samla in sekretessförfrågningar**  (collectPrivacyRequests) | Sekretessdataskyddsförordningen | Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på skärmen för sekretesspolicy. |
@@ -73,9 +72,9 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i [det dediker
 | **Rapporteringsaggregat**  (reportingAggregates) | Leverans | Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag klockan 2 som standard. |
 | **Skicka indikatorer och kampanjattribut**  (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan du skicka indikatorer för e-postkampanjer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Genesis Connector. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
 | **Stock: Beställningar och varningar**  (stockMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar. |
-| **Synkronisera Facebook-fans**  (syncFacebookFans) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Facebook-fans till Adobe Campaign varje dag kl. 7.00. |
+| **Synkronisera Facebook fans**  (syncFacebookFans) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 7.00. |
 | **Synkronisera Facebook-sidor**  (syncFacebook) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00. |
-| **Synkronisera Twitter-sidor**  (syncTwitter) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Twitter-följare till Adobe Campaign varje dag kl. 7.00. |
+| **Synkronisera Twitter-sidor**  (syncTwitter) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Twitter följare till Adobe Campaign varje dag kl. 7.00. |
 | **Aktivitetsmeddelande**  (taskMgt) | Marknadsföringsresurser | Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer. |
 | **Spårning**  (spårning) | Leverans | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |
 | **Uppdatera händelsestatus**  (updateEventsStatus) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du tilldela en status till en händelse. Händelsestatus är följande:<ul><li>Väntande: händelsen finns i en kö. Ingen meddelandemall har ännu kopplats till den.</li><li>Väntande leverans: Om händelsen finns i en kö har en meddelandemall kopplats till den och bearbetas av leveransen.</li><li>Skickat: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</li><li>Ignoreras av leveransen: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</li><li>Leveransfel: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</li><li>Händelsen omfattas inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</li></ul> |
