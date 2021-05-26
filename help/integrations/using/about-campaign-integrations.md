@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-translation-type: tm+mt
-source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 8%
+source-wordcount: '764'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 8%
 
 Adobe Experience Cloud är en omfattande uppsättning förstklassiga, integrerade lösningar som bygger på en gemensam dataplattform med en gemensam uppsättning kraftfulla bastjänster.
 
-Läs om funktionsintegreringar som finns mellan Adobe Campaign och [Adobe Experience Cloud lösningar](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) och [bastjänster](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html). Sedan kan ni modernisera era lösningar och implementera Experience Cloud så att ni kan använda funktioner som kundattribut och målgrupper.
+Läs om funktionsintegreringar som finns mellan Adobe Campaign och [Adobe Experience Cloud lösningar](https://experienceleague.adobe.com/docs/core-services/interface/marketing-cloud-integrations.html) och [bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html). Sedan kan ni modernisera era lösningar och implementera Experience Cloud så att ni kan använda funktioner som kundattribut och målgrupper.
 
 ![](assets/ExCloud-solutions.png)
 
@@ -34,17 +33,17 @@ En fullständig lista över Adobe-lösningar och bastjänster som kan integreras
 
 Flera lösningar kan kopplas till Adobe Experience Cloud. **organisationen** är den kundenhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
-Organisationshantering och länkning av Adobe Experience Cloud-konton beskrivs i [Adobe Experience Cloud hjälpportal](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+Organisationshantering och länkning av Adobe Experience Cloud-konton beskrivs i [Adobe Experience Cloud hjälpportal](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html).
 
 ## Hantering av identitet och cookies {#id-and-cookies}
 
-När du installerar Adobe Campaign eller integrerar en befintlig installation med Adobe Experience Cloud är [Adobe Experience Cloud identitetstjänst](https://docs.adobe.com/content/help/en/id-service/using/home.html) aktiverad. Den här tjänsten ersätter den permanenta cookie som framför allt används av Adobe Campaign för spårningsfunktionerna.
+När du installerar Adobe Campaign eller integrerar en befintlig installation med Adobe Experience Cloud är [Adobe Experience Cloud identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) aktiverad. Den här tjänsten ersätter den permanenta cookie som framför allt används av Adobe Campaign för spårningsfunktionerna.
 
 Adobe Experience Cloud ID-tjänst (Identity Service) är ett universellt, beständigt ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
 Ett unikt besökar-ID tilldelas mottagare som genererar spårningsloggar. Detta ID sparas i fältet **[!UICONTROL Requester UUID (@sourceID)]** i tabellen **[!UICONTROL nms:trackingLogRcp]**. **Spårningsdata för mottagare som fanns innan besökar-ID-tjänsten implementerades kommer därför inte längre att vara användbara**.
 
-ID:t känns sedan igen av de andra Adobe Experience Cloud-lösningarna med samma [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html).
+ID:t känns sedan igen av de andra Adobe Experience Cloud-lösningarna med samma CNAME. [Läs mer](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
 ## Experience Cloud-integreringar {#experience-cloud-integrations}
 
