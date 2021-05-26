@@ -6,14 +6,13 @@ description: Lär dig konfigurera integrering av delade målgrupper
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '482'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurera integrering med delade målgrupper i Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
@@ -87,6 +86,6 @@ Du måste kontrollera att Campaign Tracking Server är registrerad på domänen 
 
 ## Steg 4: Konfigurera besökar-ID-tjänsten {#step-4--configure-the-visitor-id-service}
 
-Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) och lära dig hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two):
+Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) och lära dig hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two):
 
 Din konfiguration och etablering är färdiga, och integreringen kan nu användas för att importera och exportera målgrupper eller segment.
