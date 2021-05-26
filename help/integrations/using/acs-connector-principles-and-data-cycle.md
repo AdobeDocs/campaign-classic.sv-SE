@@ -6,14 +6,13 @@ description: ACS Connector-principer och datasecykel
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1988'
 ht-degree: 0%
 
 ---
-
 
 # ACS Connector-principer och datasecykel{#acs-connector-principles-and-data-cycle}
 
@@ -85,7 +84,7 @@ Genom att replikera leverans-ID:n och e-postloggar får du åtkomst till leveran
 
 ACS Connector synkroniserar karantän mellan Campaign v7 och Campaign Standard.
 
-En profil som har replikerats från Campaign v7 till Campaign Standard innehåller till exempel en e-postadress. Om e-postadressen sätts i karantän som Campaign Standard skickas data till Campaign v7 under nästa synkronisering. Mer information om karantäner finns i [Karantänhantering](../../delivery/using/understanding-quarantine-management.md) och [Campaign Standard Quarantines](https://docs.adobe.com/content/help/en/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+En profil som har replikerats från Campaign v7 till Campaign Standard innehåller till exempel en e-postadress. Om e-postadressen sätts i karantän som Campaign Standard skickas data till Campaign v7 under nästa synkronisering. Mer information om karantäner finns i [Karantänhantering](../../delivery/using/understanding-quarantine-management.md) och [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
 ### Använda replikerade profiler {#using-replicated-profiles}
 
@@ -327,4 +326,3 @@ Med den grundläggande implementeringen replikeras tabellen med färdiga mottaga
 
 1. Om din behörighetshantering är mappbaserad går du till **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** och definierar en säkerhetsgrupp för de mappar som är länkade till dina anpassade tabeller. Se [Rättighetskonvertering](#rights-conversion).
 1. Använd arbetsflödet **[!UICONTROL New replication]** (inte mallen, utan själva arbetsflödesinstansen) för att inkludera den anpassade tabellen och de fält som ska replikeras. Se [Tekniska arbetsflöden och replikeringsarbetsflöden](#technical-and-replication-workflows).
-
