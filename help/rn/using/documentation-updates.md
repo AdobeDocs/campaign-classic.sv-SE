@@ -7,9 +7,9 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4367'
 ht-degree: 98%
 
 ---
@@ -441,7 +441,7 @@ Avsnittet Åtkomsthantering har uppdaterats med **Rättigheten till personuppgif
 
 Information har lagts till för att specificera att innehåll i personaliseringsfält högst får innehålla 1 024 tecken. [Läs mer](../../delivery/using/personalization-fields.md)
 
-Kontrollpanelens dokumentation har integrerats i den nya dokumentationsuppsättningen för samarbete. [Läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
+Kontrollpanelens dokumentation har integrerats i den nya dokumentationsuppsättningen för samarbete. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
@@ -477,7 +477,7 @@ Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har u
 
 **Nya funktioner i version 19.1**
 
-Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
 
 Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
