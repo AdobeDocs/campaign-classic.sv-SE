@@ -6,19 +6,18 @@ description: Läs mer om arbetsflödesaktiviteten Filöverföring
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
 
-
 # Filöverföring{#file-transfer}
 
 Med aktiviteten **Filöverföring** kan du ta emot eller skicka filer, testa om det finns filer eller lista över filer på en server. Det protokoll som används är antingen Amazon Simple Storage Service (S3), FTP eller SFTP.
-Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentationen](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+Med S3- eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 >[!NOTE]
 >
