@@ -6,14 +6,13 @@ description: Lär dig hur du skickar ett födelsedagsmeddelande med ett arbetsfl
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
-
 
 # Skicka ett födelsedagsmeddelande{#sending-a-birthday-email}
 
@@ -27,7 +26,7 @@ Vi har skapat följande arbetsflöde för målinriktning för att konfigurera de
 
 Det här arbetsflödet (daglig körning) markerar alla mottagare som har sin födelsedag det aktuella datumet.
 
-![](assets/do-not-localize/how-to-video.png) Det här användningsexemplet finns också i form av en video. Mer information finns i videon [Skapa ett arbetsflöde](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
+![](assets/do-not-localize/how-to-video.png) Det här användningsexemplet finns också i form av en video. Mer information finns i videon [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
 Det gör du genom att skapa en kampanj och klicka på fliken **[!UICONTROL Targeting and workflows]**. Mer information finns i avsnittet [Bygga huvudmålet i ett arbetsflöde](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
