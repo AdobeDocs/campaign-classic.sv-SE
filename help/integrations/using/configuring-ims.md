@@ -6,14 +6,13 @@ description: Lär dig ansluta via en Adobe ID
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurerar IMS{#configuring-ims}
 
@@ -21,12 +20,12 @@ ht-degree: 2%
 >
 >Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna i Adobe. Kontakta din Adobe-chef för att starta implementeringsprocessen.
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 Så här använder du integreringen med IMS:
 
 * Du måste ha en Adobe Experience Cloud-organisation och IMS-id (tillhandahålls när du ansluter till Adobe Experience Cloud första gången).
-* Du måste lägga till användare i Experience Cloud. Se denna [sida](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html) för mer information om detta.
+* Du måste lägga till användare i Experience Cloud. Se denna [sida](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) för mer information om detta.
 
 >[!NOTE]
 >
@@ -54,7 +53,7 @@ Konfigurera det externa kontot **Adobe Experience Cloud** i **[!UICONTROL Admini
 
 Ange följande information:
 
-* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe support. Mer information finns i [Vanliga frågor och svar för Adobe Experience Cloud-administratörer](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html).
+* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe support. Mer information finns i [Vanliga frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
    Adressen **[!UICONTROL Callback server]** måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
 
@@ -66,4 +65,3 @@ Ange följande information:
    >Kopplingsmasken är nödvändig för att anslutningen via Adobe ID ska fungera korrekt.
 
 * Adobe Experience Cloud anslutningsinformation, särskilt namnet på Adobe Experience Cloud-klienten.
-
