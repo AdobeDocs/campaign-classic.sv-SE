@@ -6,14 +6,13 @@ description: Lär dig övervaka Campaign-processer
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
-
 
 # Övervaka processer{#monitoring-processes}
 
@@ -255,6 +254,7 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 >
 >* Information om SMTP-övervakning är bara tillgänglig om e-postkanalen har aktiverats.
 >* **[!UICONTROL SMTP sending statistics]** erbjuds bara om statistikservern har startats på instansen.
+
 >
 
 
@@ -337,7 +337,7 @@ Klicka på en PublicId-identifierare för att visa mer information.
 
 ## Faktureringsrapport {#billing-report}
 
-Det tekniska arbetsflödet **[!UICONTROL Billing]** skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den aktiveras som standard den 25:e varje månad.
+Det tekniska arbetsflödet **[!UICONTROL Billing]** skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den aktiveras som standard den 25:e varje månad på marknadsinstansen.
 
 Det tekniska arbetsflödet finns i en undermapp till följande nod: **Administration** > **Produktion** > **Tekniska arbetsflöden**.
 
