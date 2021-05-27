@@ -116,7 +116,7 @@ ht-degree: 99%
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
-      + [Data-kopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+      + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
    + [Hjälp- och supportalternativ](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
@@ -217,7 +217,7 @@ ht-degree: 99%
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
-      + [Så här konfigurerar man spårade länkar](delivery/using/how-to-configure-tracked-links.md)
+      + [Så här konfigurerar du spårade länkar](delivery/using/how-to-configure-tracked-links.md)
       + Spåra personaliserade länkar {#tracking-personalized-links}
          + [Kom igång med spårning av personaliserade länkar](delivery/using/tracking-personalized-links.md)
          + [Identifiera spårnings-URL:er](delivery/using/detecting-tracking-urls.md)
@@ -266,7 +266,7 @@ ht-degree: 99%
    + Kampanjoptimering {#campaign-optimization}
       + [Om kampanjtypologier](campaign/using/about-campaign-typologies.md)
       + [Tryckregler](campaign/using/pressure-rules.md)
-      + [Konsistensregler](campaign/using/consistency-rules.md)
+      + [Konsekvensregler](campaign/using/consistency-rules.md)
       + [Kontrollregler](campaign/using/control-rules.md)
       + [Filtreringsregler](campaign/using/filtering-rules.md)
       + [Tillämpa regler](campaign/using/applying-rules.md)
@@ -376,7 +376,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Om [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om  [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -412,7 +412,7 @@ ht-degree: 99%
       + [Datas livscykel](workflow/using/data-life-cycle.md)
       + [Definiera godkännanden](workflow/using/defining-approvals.md)
       + [Arkitektur](workflow/using/architecture.md)
-   + Målinriktade aktiviteter{#targeting-activities}
+   + Målinriktade aktiviteter {#targeting-activities}
       + [Om målinriktade aktiviteter](workflow/using/about-targeting-activities.md)
       + [Fråga](workflow/using/query.md)
       + [Inkrementell fråga](workflow/using/incremental-query.md)
@@ -469,7 +469,7 @@ ht-degree: 99%
       + [Om händelseaktiviteter](workflow/using/about-event-activities.md)
       + [Filhämtare](workflow/using/file-collector.md)
       + [Filöverföring](workflow/using/file-transfer.md)
-      + [Webbnedladdning](workflow/using/web-download.md)
+      + [Webbhämtning](workflow/using/web-download.md)
       + [Inkommande e-postmeddelanden](workflow/using/inbound-emails.md)
       + [Inkommande SMS](workflow/using/inbound-sms.md)
    + Användningsfall {#use-cases}
@@ -628,7 +628,7 @@ ht-degree: 99%
       + [Driftsättning i företagsklass](installation/using/enterprise-deployment.md)
       + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Inställningar om säkerhet och sekretess {#security-privacy}
+   + Inställningar för säkerhet och sekretess {#security-privacy}
       + [Kom igång med säkerhet och sekretess](installation/using/get-started-security-privacy.md)
       + [Personalisering och sekretess](installation/using/privacy.md)
       + [Säker åtkomsthantering](installation/using/access-management.md)
