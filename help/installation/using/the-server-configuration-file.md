@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Serverkonfigurationsfilen
 description: Serverkonfigurationsfilen
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -822,7 +820,7 @@ Här är de olika parametrarna för **övervaknings**-noden. Detta är övervakn
  </tbody> 
 </table>
 
-## oconv {#ooconv}
+## ooconv {#ooconv}
 
 Här är de olika parametrarna för noden **oconv**. Detta är konfigurationen för dokumentkonverteringsservern.
 
@@ -1076,7 +1074,7 @@ Här är de olika parametrarna för noden **xtkJobs**. Detta är konfigurationen
  </tbody> 
 </table>
 
-## arkiverar {#archiving}
+## arkivering {#archiving}
 
 Här är de olika parametrarna för noden **archiving**. Detta är konfigurationen för de slutförda arkiveringsåtgärderna i bakgrunden.
 
@@ -1775,7 +1773,7 @@ Mer information finns i [avsnittet](../../installation/using/configuring-campaig
  </tbody> 
 </table>
 
-### underordnad {#child}
+### child {#child}
 
 Konfigurera följande parametrar i noden **mta > child**. Detta är konfigurationen för underordnade servrar.
 
@@ -2166,7 +2164,7 @@ Här är de olika parametrarna för noden **pipelined**. Det här är konfigurat
  </tbody> 
 </table>
 
-## reparera {#repair}
+## reparation {#repair}
 
 Här är de olika parametrarna för noden **repair**. Detta är konfigurationen för databasreparationsmodulen.
 
@@ -2454,7 +2452,7 @@ Här är de olika parametrarna för noden **sms > netsize**.
  </tbody> 
 </table>
 
-## status {#stat}
+## stat {#stat}
 
 Här är de olika parametrarna för noden **stat**. Detta är konfigurationen för MTA-statistikmodulen.
 
@@ -2590,7 +2588,7 @@ Här är de olika parametrarna för noden **syslogd**. Detta är konfigurationen
  </tbody> 
 </table>
 
-## spåra {#tracking}
+## spårning {#tracking}
 
 Här är de olika parametrarna för noden **tracking**. Detta är spårningsserverns konfiguration.
 
@@ -2721,7 +2719,7 @@ Här är de olika parametrarna för noden **tracking**. Detta är spårningsserv
  </tbody> 
 </table>
 
-## trackinglog {#trackinglogd}
+## trackinglogd {#trackinglogd}
 
 Här är de olika parametrarna för **trackinglogd**-noden. Detta är konfigurationen för spårningsloggens skrivdaemon.
 
