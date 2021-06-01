@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Krav för installationen av Campaign i Windows
 description: Krav för installationen av Campaign i Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
-translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+exl-id: a7cf59cc-9260-4109-af4c-b2e2a9c999da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 8%
 
 ---
-
 
 # Kom igång med att installera Campaign i Windows {#prerequisites-of-campaign-installation-in-windows}
 
@@ -31,4 +29,3 @@ När installationen är klar måste du konfigurera instanserna, databasen och se
 >[!NOTE]
 >
 >När Adobe Campaign distribueras till en Windows-miljö kan användare med nödvändiga åtkomsträttigheter använda UNC-syntax (Universal.Uniform Naming Convention) för åtkomstsökvägar under filhantering i nätverket.
-
