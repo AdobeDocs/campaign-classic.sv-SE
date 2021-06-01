@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Inläsning av data (fil)
+title: Läsa in data (fil)
 description: Läs mer om arbetsflödesaktiviteten Datainläsning (fil)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
 
 ---
 
-
-# Inläsning av data (fil){#data-loading-file}
+# Läsa in data (fil){#data-loading-file}
 
 ## Använd {#use}
 
@@ -132,4 +130,3 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 1. Ange sedan de processer som ska utföras för varje typ av population. I vårt exempel kommer vi att **[!UICONTROL Update the data]** i databasen. Det gör du genom att placera en **[!UICONTROL Update data]**-aktivitet i slutet av varje utgående övergång från den delade aktiviteten.
 
    Aktiviteten **[!UICONTROL Update data]** beskrivs i avsnittet [Uppdatera data](../../workflow/using/update-data.md).
-
