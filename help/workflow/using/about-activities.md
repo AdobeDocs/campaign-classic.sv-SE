@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om aktiviteter
 description: Om aktiviteter
 audience: workflow
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 14%
 
 ---
-
 
 # Om aktiviteter{#about-activities}
 
