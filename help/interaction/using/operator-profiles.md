@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Operatörsprofiler
 description: Operatörsprofiler
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
 
 ---
-
 
 # Operatörsprofiler{#operator-profiles}
 
@@ -183,4 +181,3 @@ Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem at
   </tr> 
  </tbody> 
 </table>
-
