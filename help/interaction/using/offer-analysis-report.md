@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Analysrapport om erbjudande
 description: Analysrapport om erbjudande
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
 
 ---
-
 
 # Analysrapport om erbjudande{#offer-analysis-report}
 
@@ -40,4 +38,3 @@ Statistiken sorteras utifrån tre kriterier:
 Data kan filtreras baserat på de olika kriterier som finns i rapportens övre avsnitt. När du har valt önskat villkor klickar du på länken **[!UICONTROL Refresh]** för att tillämpa dem på rapporten.
 
 ![](assets/offer_report_criteria.png)
-
