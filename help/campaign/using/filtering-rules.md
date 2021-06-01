@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filtreringsregler
 description: Filtreringsregler
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 2%
 
 ---
-
 
 # Filtreringsregler{#filtering-rules}
 
@@ -93,4 +91,3 @@ Detta för att undvika att läggas till i blockeringslista på grund av skadlig 
 >[!NOTE]
 >
 >Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransanalysloggarna.
-
