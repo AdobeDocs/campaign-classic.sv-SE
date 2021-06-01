@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Uppdatera aggregat
 description: Läs mer om aktiviteten Uppdatera aggregerat arbetsflöde
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 4%
 
 ---
-
 
 # Uppdatera aggregat{#update-aggregate}
 
@@ -30,4 +28,3 @@ Som standard utförs en fullständig uppdatering under varje beräkning. Om du v
 **God praxis**: en  **[!UICONTROL Scheduler]** aktivitet kan användas för att ange frekvensen för uppdateringar av beräkningar.
 
 ![](assets/s_advuser_cube_agregate_04.png)
-
