@@ -3,17 +3,16 @@ solution: Campaign Classic
 product: campaign
 title: Hantera åtkomst till Campaign-mappar
 description: Lär dig hur du ger åtkomst till Campaign-mappar och skapar vyer
-feature: Application Settings
+feature: Applikationsinställningar
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
-
 
 # Hantera åtkomst till mappar{#folder-access-management}
 
@@ -76,9 +75,7 @@ Följande leveranser visas i vyn:
 
 >[!NOTE]
 >
->När du hanterar [transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md)-händelser får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer för körningsinstanserna, eftersom det kan leda till åtkomstproblem. Mer information om händelsesamling finns i [det här avsnittet](../../message-center/using/event-collection.md).
-
-
+>När du hanterar [transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md)-händelser får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer för körningsinstanserna, eftersom det kan leda till åtkomstproblem. Mer information om händelsesamling finns i [det här avsnittet](../../message-center/using/about-event-processing.md#event-collection).
 
 ## Behörigheter för en mapp
 
