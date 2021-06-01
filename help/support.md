@@ -1,11 +1,10 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Hjälp- och supportalternativ för Campaign Classic '
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 57%
