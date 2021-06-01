@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Översikt över erbjudandekatalogen
+title: Översikt över erbjudandekatalog
 description: Läs mer om erbjudandekatalogen i Campaign
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 4%
 
 ---
 
-
-# Översikt över erbjudandekatalogen{#offer-catalog-overview}
+# Översikt över erbjudandekatalog{#offer-catalog-overview}
 
 En erbjudandekatalog består alltid antingen av kategorier som sedan har underkategorier eller av erbjudanden direkt.
 
