@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om schemautgåva
 description: Kom igång med schemaversionen
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 7%
 
 ---
-
 
 # Om schemautgåva{#about-schema-edition}
 
@@ -204,7 +202,7 @@ Exempel på en extern koppling mellan mottagartabellen och en adresstabell som b
 
 Här motsvarar &quot;xpath-dst&quot; primärnyckeln i målschemat och &quot;xpath-src&quot; den externa nyckeln i källschemat.
 
-## Verifieringskedja {#audit-trail}
+## Granskningskedja {#audit-trail}
 
 Ett användbart element som du kanske vill ta med längst ned i schemat är ett spårningselement (granskningsspår).
 
@@ -225,4 +223,3 @@ Mer information om detta hittar du i avsnittet [Uppdatera databasstrukturen](../
 >[!NOTE]
 >
 >Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]**. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md).
-
