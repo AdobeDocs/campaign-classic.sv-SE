@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Grundläggande principer
 description: Grundläggande principer
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
 
 ---
-
 
 # Grundläggande principer{#fundamental-principles}
 
@@ -42,4 +40,3 @@ Dessa två typer av interaktioner kan utföras antingen i enhetligt läge (erbju
 Så snart ett erbjudande kan eller måste presenteras (i enlighet med de konfigurationer som gjorts) spelar den erbjudandemotorn rollen som mellanhand: beräknas automatiskt bästa möjliga erbjudande för en kontakt bland de tillgängliga genom att man kombinerar mottagna data om kontakten och de olika regler som kan tillämpas enligt applikationen.
 
 ![](assets/architecture_interaction2.png)
-
