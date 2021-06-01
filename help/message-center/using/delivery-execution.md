@@ -2,20 +2,19 @@
 solution: Campaign Classic
 product: campaign
 title: Leveranskörning
-description: Leveranskörning
+description: Läs mer om körning och övervakning av transaktionsmeddelanden.
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 7%
+source-wordcount: '233'
+ht-degree: 6%
 
 ---
 
-
-# Leveranskörning{#delivery-execution}
+# Leveranskörning {#delivery-execution}
 
 ## Transaktionsmeddelande som skickar {#transactional-message-send}
 
@@ -39,7 +38,7 @@ Som standard sorteras de i undermappar efter leveransmånad. Den här sorteringe
 
 ## Övervakning av transaktionsmeddelande {#transactional-message-monitoring}
 
-Kontrollera leveransloggarna om du vill övervaka dina transaktionsmeddelanden. Åtkomst till leveransloggarna presenteras i [det här avsnittet](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Kontrollera [leveransloggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) om du vill övervaka dina transaktionsmeddelanden.
 
 Transaktionsleveranser som skickas från körningsinstansen synkroniseras tillbaka till kontrollinstansen via ett tekniskt arbetsflöde (**[!UICONTROL Message Center execution instance]**) som körs varje timme.
 
@@ -73,3 +72,5 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+
+Information om hur du övervakar aktiviteten och körningen av körningsinstansen finns i [Transactional messaging reports](../../message-center/using/about-transactional-messaging-reports.md).
