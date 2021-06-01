@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Ordlista
 description: Ordlista
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
 
 ---
-
 
 # Ordlista{#glossary}
 
@@ -78,4 +76,3 @@ Nedan finns definitionen av de huvudsakliga interaktionselementen.
 * **Fördefinierade filter**: fördefinierade filtreringsregler kan ta hänsyn till erbjudandeparametrar (till exempel en erbjudandekod). De kan återanvändas efter att erbjudandena har skapats.
 * **Erbjudanderepresentation**: information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan skapas med hjälp av återgivningsfunktionen i det utrymme där erbjudandet finns representerat eller anges direkt i gränssnittet (t.ex. i HTML-blocket). Ett erbjudande kan representeras av space.
 * **Övergångsprocess**: en aktiverad process i en identifierad miljö som ansvarar för att dirigera anropet till en anonym miljö om kontakten inte uttryckligen och/eller implicit har identifierats.
-
