@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Du måste vidta flera försiktighetsåtgärder när du installerar Transactional
 >
 >Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
 
-Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Mer information finns i [Lägga till en leveranskanal](#adding-a-delivery-channel).
+Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Mer information finns i [Lägg till en leveranskanal](#adding-a-delivery-channel).
 
 ## Kontrollinstans {#control-instance}
 
@@ -57,7 +57,7 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 
 >[!NOTE]
 >
->Mer information om nödvändig konfiguration finns i [Använda flera kontrollinstanser](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Mer information om nödvändig konfiguration finns i [Använd flera kontrollinstanser](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Körningsinstans {#execution-instance}
 
@@ -181,7 +181,7 @@ Om du vill använda transaktionsmeddelandemodulen med LINE behöver du följande
 
 * Installera **[!UICONTROL LINE Connect]**-paketet på båda instanserna.
 * Installera **[!UICONTROL Transactional message control]**-paketet på din marknadsinstans och **[!UICONTROL Transactional message execution]**-paketet på körningsinstansen.
-* Skapa en LINE **extern konto** och **tjänst** för båda instanserna med samma namn för att de ska synkroniseras. Mer information om hur du skapar ett externt LINE-konto och -tjänst finns på den här [sidan](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
+* Skapa en LINE **extern konto** och **tjänst** för båda instanserna med samma namn för att de ska synkroniseras. Mer information om hur du skapar ett externt LINE-konto och -tjänst finns i [det här avsnittet](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Från **[!UICONTROL Explorer]**, i **[!UICONTROL Platform]** > **[!UICONTROL External account]**, måste du sedan konfigurera olika externa konton för båda instanserna:
 
@@ -248,4 +248,4 @@ Från **[!UICONTROL Explorer]**, i **[!UICONTROL Platform]** > **[!UICONTROL Ext
 
 
 
-1. Nu kan du börja skapa transaktionsmeddelanden. Se denna [sida](../../message-center/using/creating-the-message-template.md) för mer information om detta.
+1. Nu kan du börja [skapa transaktionsmeddelanden](../../message-center/using/creating-the-message-template.md).
