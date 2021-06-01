@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Globala rapporter
 description: Globala rapporter
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
 
 ---
-
 
 # Globala rapporter {#global-reports}
 
@@ -162,7 +160,7 @@ I värdetabellen används följande indikatorer:
 
 Med virusmarknadsföring kan mottagarna dela information med sina kontaktnätverk: kan de lägga till en länk till sin profil (Facebook, Twitter osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras inom leveransen. Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
 
-Den här rapporten visar hur delade och öppna meddelanden per socialt nätverk (Facebook, Twitter osv.) delas upp och/eller per e-post.
+Den här rapporten visar hur delade och öppna meddelanden per socialt nätverk (Facebook, Twitter, etc.) delas upp och/eller per e-post.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -195,7 +193,7 @@ I det här avsnittet finns två diagram som visar hur delningsaktiviteter delas 
 
 ## Statistik för delningsaktiviteter {#statistics-on-sharing-activities}
 
-Den här rapporten visar hur delningar har utvecklats till sociala nätverk (Facebook, Twitter, e-post osv.) i tid.
+Den här rapporten visar hur delningar har utvecklats till sociala nätverk (Facebook, Twitter, e-post etc.) i tid.
 
 Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
 
