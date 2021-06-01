@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bästa praxis för kampanjleverans
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 25%
 
 ---
-
 
 # Bästa praxis för leverans {#delivery-best-practices}
 
@@ -39,7 +37,7 @@ Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign
     </a>
     <div>
       <a href="use-templates.md">
-    <strong>Använda mallar</strong>
+    <strong>Använd mallar</strong>
     </a>
     </div>
     <p>
@@ -67,7 +65,7 @@ Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Definiera rätt publik</strong>
+    <strong>Definiera rätt målgrupp</strong>
     </a>
     </div>
     <p>
