@@ -1,22 +1,20 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Versionsinformation för Campaign 18.6
 description: Versionsinformation för Campaign 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 6%
+source-wordcount: '800'
+ht-degree: 7%
 
 ---
-
 
 # Version 18.6{#release-18-6}
 
@@ -26,7 +24,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
