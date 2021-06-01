@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om allmän import och export
 description: Läs mer om allmän import och export.
-feature: Overview
+feature: Översikt
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '118'
 ht-degree: 5%
 
 ---
-
 
 # Kom igång med import- och exportjobb {#about-generic-imports-exports}
 
@@ -29,5 +27,3 @@ Så här utför du allmänna import- och exportåtgärder:
 1. [Skapa ett import- eller exportjobb](../../platform/using/creating-import-export-jobs.md).
 1. Konfigurera och kör jobbet [import](../../platform/using/executing-import-jobs.md) eller [export](../../platform/using/executing-export-jobs.md).
 1. [Övervaka ](../../platform/using/monitoring-jobs-execution.md) körningen av jobbet.
-
-
