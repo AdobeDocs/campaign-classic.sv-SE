@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Kom igång med säkerhet och integritet
+title: Kom igång med säkerhet och sekretess
 description: Läs mer om de viktigaste elementen för att kontrollera säkerhet och integritet.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
+exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
-
 
 # Kom igång med säkerhet och sekretess {#get-started-security-privacy}
 
 I det här avsnittet beskrivs de viktigaste elementen för att kontrollera säkerhet och integritet. Vissa konfigurationer kan bara utföras av lokala kunder.
 
-## Integritet
+## Sekretess
 
 <img src="assets/do-not-localize/icon_privacy.svg" width="60px">
 
