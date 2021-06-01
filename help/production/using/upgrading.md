@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Uppgradera till en ny version
 description: Lär dig tekniska steg att uppgradera till en ny version
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
+exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
 
 ---
 
-
-# Uppgraderar till en ny version (lokalt){#upgrading}
+# Uppgradera till en ny version (lokalt){#upgrading}
 
 Innan du startar uppgraderingsprocessen bör du kontrollera och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md).
 
@@ -23,7 +21,7 @@ Innan du startar uppgraderingsprocessen bör du kontrollera och bekräfta vilken
 >
 >* Adobe rekommenderar starkt att du gör en säkerhetskopia av databasen för varje instans innan du uppdaterar. Mer information hittar du i [det här avsnittet](../../production/using/backup.md).
 >* Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
->* Läs [det här avsnittet](../../installation/using/general-architecture.md) och kapitlet [build upgrade](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) innan du startar.
+>* Läs [det här avsnittet](../../installation/using/general-architecture.md) och kapitlet [build upgrade](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html) innan du startar.
 
 >
 
@@ -269,4 +267,3 @@ Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar anv
 >[!NOTE]
 >
 >Kontrollera att Apache-användaren har rätt läsbehörighet för den här installationsfilen och läs [installationsguiden](../../installation/using/general-architecture.md) för mer information.
-
