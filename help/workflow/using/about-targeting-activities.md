@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om målinriktade aktiviteter
 description: Om målinriktade aktiviteter
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
 
 ---
-
 
 # Om målinriktade aktiviteter{#about-targeting-activities}
 
@@ -39,4 +37,3 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 * **Listuppdatering**: registrerar resultatet av inkommande aktiviteter i en lista. Se avsnittet [Listuppdatering](../../workflow/using/list-update.md).
 * **Uppdatera data**: gör att du kan uppdatera data i databasen avsevärt. Se avsnittet [Uppdatera data](../../workflow/using/update-data.md).
 * **CRM-koppling**: Med kan du konfigurera synkroniseringen mellan Adobe Campaign och en CRM. Se avsnittet [CRM Connector](../../workflow/using/crm-connector.md).
-
