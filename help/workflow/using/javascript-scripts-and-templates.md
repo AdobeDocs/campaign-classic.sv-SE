@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: JavaScript-skript och -mallar
-description: JavaScript-skript och -mallar
+title: JavaScript-skript och mallar
+description: JavaScript-skript och mallar
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 2%
 
 ---
 
-
-# JavaScript-skript och -mallar{#javascript-scripts-and-templates}
+# JavaScript-skript och mallar{#javascript-scripts-and-templates}
 
 Skript gör det möjligt att beräkna värden, utbyta data mellan olika uppgifter i processen och att utföra specifika åtgärder med SOAP-anrop.
 
