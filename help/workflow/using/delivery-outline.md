@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveransbeskrivning
 description: Läs mer om arbetsflödesaktiviteten i leveransutkast
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
 
 ---
-
 
 # Leveransbeskrivning{#delivery-outline}
 
@@ -48,4 +46,3 @@ Med aktiviteten **leveransdisposition**, som är tillgänglig i kampanjarbetsfl�
    Förhandsgranskningen tar hänsyn till antalet erbjudanden som anges i leveransen. När du kör ett arbetsflöde är det numret som anges i leveransdispositionen som beaktas.
 
    ![](assets/int_compo_offre_wf1.png)
-
