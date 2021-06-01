@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -44,7 +44,8 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : -indikator som är specifik för  **meddelandecentret**. Mer information finns i [det här avsnittet](../../message-center/using/monitoring-thresholds.md).
+* **[!UICONTROL Pending events queued]** : -indikator som är specifik för  **meddelandecentret**. Mer information finns i [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+
 * **[!UICONTROL Memory]** : Information om det fysiska minnet.
 
    **[!UICONTROL Current value]** : faktisk minnesförbrukning.
@@ -101,7 +102,8 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : -indikator som är specifik för  **meddelandecentret**. Mer information finns i [det här avsnittet](../../message-center/using/monitoring-thresholds.md).
+* **[!UICONTROL Pending events queued]** : -indikator som är specifik för  **meddelandecentret**. Mer information finns i [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+
 * **[!UICONTROL Load average (1/5/15 minutes)]** : Uppgifter om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter.
 
    **[!UICONTROL Current value]** : maskinens faktiska belastning.
