@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Celler
 description: Celler
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
 
 ---
-
 
 # Celler{#cells}
 
