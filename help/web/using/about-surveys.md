@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med undersökningar
 description: Kom igång med Campaign-enkäter
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
 
 ---
-
 
 # Kom igång med undersökningar{#about-surveys}
 
@@ -84,4 +82,3 @@ Undersökningar lagras i noden **[!UICONTROL Resources > Online > Web Applicatio
 >[!NOTE]
 >
 >Konfigurationsinformation finns i [det här avsnittet](../../web/using/about-web-forms.md).
-
