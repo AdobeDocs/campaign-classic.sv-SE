@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Användningsfall
 description: Användningsfall
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
 
 ---
-
 
 # Användningsfall{#use-cases}
 
@@ -286,4 +284,3 @@ Du kan till exempel visa domänerna för alla utelämnade adresser och sortera d
 Detta skulle generera följande typ av rapport:
 
 ![](assets/reporting_descriptive_exclusion_result.png)
-
