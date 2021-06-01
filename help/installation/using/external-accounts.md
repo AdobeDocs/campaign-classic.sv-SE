@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 8%
@@ -112,7 +112,7 @@ Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är l�
 
    Lösenord för kontot enligt definitionen i mappen operator.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../message-center/using/creating-a-shared-connection.md#control-instance).
+Mer information om den här konfigurationen finns på den här [sidan](../../message-center/using/configuring-instances.md#control-instance).
 
 
 ## Tillgång till externa systemkonton
