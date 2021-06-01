@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integrering via JavaScript (klientsida)
 description: Integrering via JavaScript (klientsida)
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
 
 ---
-
 
 # Integrering via JavaScript (klientsida){#integration-via-javascript-client-side}
 
@@ -327,4 +325,3 @@ Det går att använda en XML-återgivningsfunktion för att skapa en erbjudandep
    ```
 
 ![](assets/interaction_xmlmode_001.png)
-
