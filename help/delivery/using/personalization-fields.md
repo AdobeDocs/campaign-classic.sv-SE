@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Fält för personalisering
 description: Fält för personalisering
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 8%
 
 ---
-
 
 # Fält för personalisering{#personalization-fields}
 
