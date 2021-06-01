@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Distribuerade arkitekturer
 description: Distribuerade arkitekturer
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
 
 ---
-
 
 # Distribuerade arkitekturer{#distributed-architectures}
 
@@ -229,4 +227,3 @@ GO
 CREATE NONCLUSTERED INDEX NmsPropositionRcp_recipientId ON NmsPropositionRcp (iRecipientId)
 GO
 ```
-
