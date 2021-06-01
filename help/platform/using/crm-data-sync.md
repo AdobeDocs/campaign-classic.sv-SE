@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: CRM Connectors-datasynkronisering
 description: Hantera data mellan Campaign och CRM
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 0%
 
 ---
-
 
 # Synkronisera data mellan Campaign och CRM {#data-synchronization}
 
