@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en sammanfattningslista
 description: Skapa en sammanfattningslista
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
 
 ---
-
 
 # Skapa en sammanfattningslista{#creating-a-summary-list}
 
@@ -188,4 +186,3 @@ När arbetsflödet är klart kommer listan att innehålla:
 * en kolumn av typen&quot;Postnr&quot; angiven för alla butiker som finns i butiksreferensschemat.
 
 ![](assets/uc2_enrich_listfinal.png)
-
