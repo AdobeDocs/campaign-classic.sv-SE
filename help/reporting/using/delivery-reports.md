@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveransrapporter
 description: Leveransrapporter
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
 
 ---
-
 
 # Leveransrapporter {#delivery-reports}
 
