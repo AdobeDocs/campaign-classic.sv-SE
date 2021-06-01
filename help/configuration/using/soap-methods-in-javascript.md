@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SOAP-metoder i JavaScript
 description: SOAP-metoder i JavaScript
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 9%
 
 ---
-
 
 # SOAP-metoder i JavaScript{#soap-methods-in-javascript}
 
@@ -103,4 +101,3 @@ for each (var w in res.workflow)
    ```
    xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
    ```
-
