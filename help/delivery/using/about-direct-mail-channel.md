@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Om kanal för direktutskick
-description: Om kanal för direktutskick
+title: Om direktutskickskanalen
+description: Om direktutskickskanalen
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
 
 ---
 
-
-# Om kanal för direktutskick{#about-direct-mail-channel}
+# Om direktutskickskanalen{#about-direct-mail-channel}
 
 Med Adobe Campaign kan ni producera filer för att leverera personaliserade brev. Mottagarprofilerna måste innehålla minst namn och postadresser.
 
