@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Databasprestanda
 description: Databasprestanda
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
 
 ---
-
 
 # Databasprestanda{#database-performances}
 
