@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Felsökning av spårning
 description: I det här avsnittet finns vanliga frågor om spårning av konfiguration och implementering i Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
+exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Felsökning av spårning {#tracking-troubleshooting}
 
@@ -128,7 +126,7 @@ Följ de här stegen när du uppdaterar alternativet NmsTracking_Pointer:
 
 1. Starta om arbetsflödet för spårning.
 
-## Spårning verkar inte fungera med vissa WebMail {#webmail}
+## Spårning verkar inte fungera med vissa WebMail-filer {#webmail}
 
 Du kan anpassa uppföljningsformeln för klickningar och ange en anpassad Adobe Analytics-spårningsformel.
 
