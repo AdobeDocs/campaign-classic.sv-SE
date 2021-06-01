@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Översätta en webbapplikation
 description: Översätta en webbapplikation
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 82c5c610-8161-4686-aa79-1b690e763765
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
 
 ---
-
 
 # Översätta en webbapplikation{#translating-a-web-application}
 
@@ -61,4 +59,3 @@ Så här flaggar du strängar som ska översättas:
 1. Översätt och godkänn strängarna.
 
    Du kan sedan förhandsgranska översättningarna genom att välja önskat språk på fliken **[!UICONTROL Preview]** i webbprogrammet.
-
