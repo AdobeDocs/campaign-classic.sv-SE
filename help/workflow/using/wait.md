@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Vänta
 description: Läs mer om aktiviteten Vänta i arbetsflödet
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
-
 
 # Vänta{#wait}
 
@@ -32,4 +30,3 @@ I fältet **[!UICONTROL Duration]** kan värdet uttryckas i valfri enhet: (enlig
 * Om de regionala inställningarna till exempel är inställda på &quot;Français&quot;: **s** för sekunder, **mn** för minuter, **h** för timmar, **j** för dagar, **m** för månader, **a** för år. Vid tidpunkten för godkännandet konverteras värdet automatiskt till den mest läsbara enheten, som i exemplet ovan **90s** konverterades till **1mn 30s**.
 
    Standardenheten är dagen (**d**).
-
