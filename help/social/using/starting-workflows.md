@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Starta arbetsflöden
 description: Starta arbetsflöden
 audience: social
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a104d8ce-1c28-4da9-bcbf-c17adb1c85c1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 6%
 
 ---
-
 
 # Starta arbetsflöden{#starting-workflows}
 
@@ -26,4 +24,3 @@ Första gången du använder social marknadsföring stoppas dessa arbetsflöden 
 Om det finns ett socialt nätverk som du inte vill använda rekommenderar vi att du inte startar matchande arbetsflöden. Om du vill undvika att få en varning om att produktionsarbetsflöden har stoppats, väljer du allvarlighetsnivån **[!UICONTROL Normal]** på fliken **[!UICONTROL Execution]** för de aktuella arbetsflödenas egenskaper.
 
 ![](assets/social_start_workflows2.png)
-
