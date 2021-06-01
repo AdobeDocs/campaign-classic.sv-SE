@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Allmänna konfigurationer
 description: Allmänna konfigurationer
@@ -7,8 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 0%
@@ -487,7 +485,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ## Interaktion {#interaction}
 
-### Förutsättningar {#prerequisites}
+### Förhandskrav {#prerequisites}
 
 **Innan efteruppgraderingen** sker måste du ta bort alla schemareferenser från 6.02 som inte längre finns i v7.
 
