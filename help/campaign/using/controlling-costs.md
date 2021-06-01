@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kontrollera kostnader
 description: Kontrollera kostnader
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
 
 ---
-
 
 # Kontrollera kostnader{#controlling-costs}
 
@@ -335,7 +333,7 @@ När kampanjen har konfigurerats kan dess status uppdateras genom att den anges 
 
 #### Budgetgodkännande {#budget-approval}
 
-När godkännandet är aktiverat kan du via en särskild länk godkänna budgeten från kampanjinstrumentpanelen. Den här länken visas när målarbetsflödet har startats och direktutskick måste godkännas.
+När godkännandet är aktiverat kan du via en särskild länk godkänna budgeten från kampanjkontrollpanelen. Den här länken visas när målarbetsflödet har startats och direktutskick måste godkännas.
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
