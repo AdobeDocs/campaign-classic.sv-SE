@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använda avancerade parametrar
 description: Använda avancerade parametrar
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 232e2bfc-f497-40ad-811e-118dbfcabbcf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 7%
 
 ---
-
 
 # Använda avancerade parametrar{#using-advanced-parameters}
 
