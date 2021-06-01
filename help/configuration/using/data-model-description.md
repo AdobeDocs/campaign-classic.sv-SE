@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Beskrivning av Adobe Campaign Classic datamodell
 description: I det här dokumentet beskrivs Adobe Campaign datamodell.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
 
 ---
-
 
 # Beskrivning av kampanjdatamodell{#data-model-description}
 
@@ -83,7 +81,7 @@ Tabellen matchar schemat **nms:subscription**.
 
 Det gör att du kan hantera mottagarnas prenumerationer på informationstjänster.
 
-### NmsSubHistory {#NmsSubHisto}
+### NmsSubHisto {#NmsSubHisto}
 
 Tabellen matchar schemat **nms:subHistory**.
 
@@ -262,7 +260,7 @@ Den här tabelluppsättningen är länkad till **Mobile App Channel**, som gör 
 
 ## Modul för social marknadsföring {#social-marketing-module}
 
-Den här tabelluppsättningen är länkad till modulen **Hantera sociala nätverk**, som gör att du kan interagera med kunder och potentiella kunder via Facebook och Twitter. Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
+Tabelluppsättningen är länkad till modulen **Hantera sociala nätverk**, som gör att du kan interagera med kunder och prospects via Facebook och Twitter. Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
