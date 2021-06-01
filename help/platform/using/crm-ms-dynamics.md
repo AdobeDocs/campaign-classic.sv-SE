@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kampanj - Microsoft Dynamics CRM Connector
 description: Connect Campaign och Microsoft Dynamics
@@ -7,11 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -131,7 +129,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 1. Tilldela **program-ID** för [det program du skapade tidigare](#get-client-id-microsoft).
 1. Klicka på **Hantera roller** och välj rollen **Systemadministratör** för användaren.
 
-## Konfigurera kampanj {#configure-acc-for-microsoft}
+## Konfigurera Campaign {#configure-acc-for-microsoft}
 
 Om du vill ansluta till Microsoft Dynamics 365 och Campaign måste du skapa och konfigurera ett dedikerat externt konto i Campaign.
 
