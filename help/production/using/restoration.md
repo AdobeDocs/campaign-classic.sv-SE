@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Återställa
 description: Återställa
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ba4db1af-778c-4c34-9a3c-49f41faa49b5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 4%
 
 ---
-
 
 # Återställa{#restoration}
 
@@ -27,4 +25,3 @@ På en ren server är återställningsproceduren följande:
 * starta Adobe Campaign.
 
 Mer information finns i **installationshandboken**.
-
