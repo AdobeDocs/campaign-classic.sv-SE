@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Installera inbyggda paket i Campaign Classic
 description: Lär dig hur du installerar inbyggda Campaign-paket
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
 
 ---
-
 
 # Installera inbyggda paket i Campaign Classic{#installing-campaign-standard-packages}
 
@@ -255,4 +253,3 @@ Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal osv.) i
 >[!CAUTION]
 >
 >Leveransmallarna för LINE i Message Center är inte tillgängliga om Message Center-paketen har installerats före LINE
-
