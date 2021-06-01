@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Berika data
 description: Läs mer om arbetsflödesaktiviteten för anrikning
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
 
 ---
-
 
 # Berika data{#enriching-data}
 
@@ -125,4 +123,3 @@ Om du vill sortera mottagarna baserat på deras poäng läggs en **[!UICONTROL S
 1. Lägg till en **[!UICONTROL Delivery]**-typaktivitet för varje delmängd, med olika leveransmallar för varje.
 
    ![](assets/uc1_enrich_20.png)
-
