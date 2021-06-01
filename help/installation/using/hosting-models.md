@@ -3,17 +3,16 @@ solution: Campaign Classic
 product: campaign
 title: Värdbaserade modeller
 description: Upptäck värdmodeller för Campaign
-feature: Overview
+feature: Översikt
 role: Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
+exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '624'
 ht-degree: 2%
 
 ---
-
 
 # Värdbaserade modeller{#hosting-models}
 
@@ -31,7 +30,7 @@ Adobe Campaign kan distribueras som en hanterad tjänst: alla komponenter i Adob
 
 Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
 
-* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/configuring-multibranding.md).
+* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
 * Läs mer om verktyg för slutprodukter och bästa praxis i [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
 * Konfigurera kampanjalternativ: hänvisa [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
@@ -51,7 +50,7 @@ Innan du börjar driftsätta Campaign Classic som en lokal kund måste du uppfyl
 * Kontrollera att de nödvändiga lagren för databasåtkomst är installerade på servern och tillgängliga från Adobe Campaign-kontot. [Läs mer](../../installation/using/application-server.md).
 * Konfigurera dina nätverk eftersom vissa processer behöver kommunicera med andra eller för att få åtkomst till nätverket och Internet. Detta innebär att vissa TCP-portar måste vara öppna för dessa processer. [Läs ](../../installation/using/network-configuration.md) mer om kraven för nätverkskonfiguration.
 * Läs [Checklista för kampanjsäkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html).
-* Kontrollera allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+* Läs allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid
 
@@ -62,7 +61,7 @@ När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på pla
 Som hybrid-kund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
 
 * Konfigurera transaktionsmeddelanden: hänvisa [till detta avsnitt](../../message-center/using/transactional-messaging-architecture.md).
-* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/configuring-multibranding.md).
+* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
 * Installera inbyggda paket: hänvisa [till detta avsnitt](../../installation/using/installing-campaign-standard-packages.md).
 * Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om verktyg för slutprodukter och bästa praxis i [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
