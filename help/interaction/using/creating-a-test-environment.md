@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en testmiljö
 description: Skapa en testmiljö
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 10%
 
 ---
-
 
 # Skapa en testmiljö{#creating-a-test-environment}
 
@@ -36,4 +34,3 @@ Så här skapar du en testmiljö (sandlådeläge):
 1. När testerna är klara och du vill använda miljön i produktionen kan du duplicera erbjudandena och utrymmena i designmiljön. (Högerklicka > **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** ).
 
    ![](assets/migration_interaction_5.png)
-
