@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera leveranser
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Konfigurera leveranser i arbetsflödet {#step-4--configuring-the-deliveries-in-the-workflow}
 
