@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en leverans från en mall
 description: Skapa en leverans från en mall
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
 
 ---
-
 
 # Skapa en leverans från en mall{#creating-a-delivery-from-a-template}
 
