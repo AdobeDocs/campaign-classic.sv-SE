@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inkommande SMS
 description: Läs mer om arbetsflödesaktiviteten för inkommande SMS
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
 
 ---
-
 
 # Inkommande SMS{#inbound-sms}
 
