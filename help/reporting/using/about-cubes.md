@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om kuber
 description: Om kuber
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
 
 ---
-
 
 # Kom igång med kuber{#about-cubes}
 
@@ -110,4 +108,3 @@ De huvudsakliga användningsområdena för kuber är följande:
    ![](assets/s_advuser_cube_in_report.png)
 
    Mer information finns i [Utforska data i en rapport](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
-
