@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: AND-join
 description: AND-join
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
 
 ---
-
 
 # AND-join{#and-join}
 
