@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Felsöka SMS
 description: Läs mer om felsökning av SMS-kanal
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
 
 ---
-
 
 # SMS-felsökning {#troubleshooting-sms}
 
@@ -203,7 +201,7 @@ Med hexadecimala tecken kan du se skillnaden mellan liknande tecken. En gemener 
 
 Om du vill konvertera Unicode till hexadecimal kan du använda onlineverktyg som [Unicode-kodkonverteraren](https://r12a.github.io/app-conversion/)-webbplatsen. Skriv texten, kontrollera att det inte finns någon PII-fil, till exempel telefonnummer, och klicka på **Konvertera**. De hexadecimala värdena visas längst ned (UTF-32-zon).
 
-När du öppnar biljetter om kodningsproblem, oavsett om det gäller leverantören eller [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), ska du alltid inkludera en hexadecimal version av det du skriver och det du ser.
+När du öppnar biljetter om kodningsproblem, oavsett om det gäller leverantören eller [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), ska du alltid inkludera en hexadecimal version av det du skriver och det du ser.
 
 **Steg 3: Ta reda på vad du ska skicka**
 
