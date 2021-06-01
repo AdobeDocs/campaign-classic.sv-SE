@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Validera
 description: Validera
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
 
 ---
-
 
 # Validera{#validating}
 
