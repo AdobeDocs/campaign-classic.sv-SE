@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfiguration
 description: Konfiguration
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
 
 ---
-
 
 # Konfiguration{#configuration}
 
@@ -167,4 +165,3 @@ md5="1D4DED54FF8EC2432AED6736EDE6F547" name="remaHypothesis" namespace="demo" xt
     </element>
 </srcSchema>
 ```
-
