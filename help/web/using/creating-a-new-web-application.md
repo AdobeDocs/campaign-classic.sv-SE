@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en ny webbapplikation
 description: Skapa en ny webbapplikation
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
-
-# Skapa ett nytt webbprogram{#creating-a-new-web-application}
+# Skapa en ny webbapplikation{#creating-a-new-web-application}
 
 Webbprogramstyper väljs när de skapas.
 
@@ -49,9 +47,9 @@ Den här mallen avgör typen av webbprogram. Du kan skapa:
    >
    >**Survey** Manager är en Adobe Campaign-modul som tillval. Kontrollera licensavtalet.
 
-1. Facebook-program
+1. Facebook
 
-   Tack vare alternativet **Social Marketing** kan du med Adobe Campaign publicera personaliserat innehåll i ett Facebook-program. Mer information om detta finns i [det här avsnittet](../../social/using/about-social-marketing.md).
+   Tack vare alternativet **Social Marketing** kan du med Adobe Campaign publicera personaliserat innehåll i en Facebook-applikation. Mer information om detta finns i [det här avsnittet](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
