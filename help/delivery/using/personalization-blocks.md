@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Block för personalisering
 description: Block för personalisering
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: tm+mt
-source-git-commit: df7c27e763e7e0c02189ed972f33eb03ca2a915f
+exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 2%
 
 ---
-
 
 # Block för personalisering{#personalization-blocks}
 
