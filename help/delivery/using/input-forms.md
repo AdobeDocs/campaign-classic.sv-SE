@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inmatningsformulär
 description: Inmatningsformulär
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 2%
 
 ---
-
 
 # Inmatningsformulär{#input-forms}
 
@@ -73,7 +71,7 @@ Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme
 >
 >Indataformuläret måste referera till ett **type=&quot;contentForm&quot;**-attribut i **`<form>`**-elementet för att automatiskt lägga till den ram som krävs för att innehållet ska kunna anges.
 
-## Formatera {#formatting}
+## Formatering {#formatting}
 
 Ordningen på kontrollerna i förhållande till varandra ser ut som den ordning som används i HTML-tabeller, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller att ange hur tillgängligt utrymme ska användas. Tänk dock på att formatering endast tillåter fördelning av proportioner. Du kan inte ange fasta dimensioner för ett objekt.
 
