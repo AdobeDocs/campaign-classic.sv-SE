@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Synkronisera profiler
 description: Synkronisera profiler
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 3%
 
 ---
-
 
 # Synkronisera profiler{#synchronizing-profiles}
 
@@ -25,7 +23,7 @@ ACS Connector replikerar data från Campaign v7 till Campaign Standard. Data som
 * **Skapa en leverans i Campaign Standard**: Följ arbetsflödet för att slutföra leveransen. Se [Skapa en leverans](#creating-a-delivery).
 * **Verifiera avprenumerationslänken**: Använd ett Campaign v7-webbprogram för att kontrollera att mottagarens val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. Alternativet att sluta ta emot tjänsten replikeras till Campaign Standarden. Se [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 I följande avsnitt beskrivs hur ACS Connector hjälper dig att lägga till och redigera mottagare i Campaign v7 och sedan använda dem i en Campaign Standard. ACS Connector kräver följande:
 
@@ -177,4 +175,3 @@ Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skap
 1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
-
