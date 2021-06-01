@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Guiden Nytt fält
 description: Guiden Nytt fält
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
 
 ---
-
 
 # Guiden Nytt fält{#new-field-wizard}
 
@@ -50,4 +48,3 @@ En tilläggsfil som i vårt exempel kallas&quot;cus:mottagare&quot; skapas autom
 >[!NOTE]
 >
 >Som standard deklareras de tillagda fälten med egenskapen **användare** (med värdet &quot;true&quot;). Detta gör att du kan visa och redigera fältet i indataformuläret för det utökade schemat med hjälp av en kontroll av typen &quot;treeEdit&quot; (se Indataformulär).
-
