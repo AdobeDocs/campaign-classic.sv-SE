@@ -2,25 +2,48 @@
 solution: Campaign Classic
 product: campaign
 title: Skapa händelsetyper
-description: Skapa händelsetyper
+description: Lär dig hur du skapar händelsetyper som matchar de transaktionsmeddelanden som du vill skicka i Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 10%
+source-wordcount: '169'
+ht-degree: 3%
 
 ---
 
+# Skapa händelsetyper {#creating-event-types}
 
-# Skapa händelsetyper{#creating-event-types}
+För att vara säker på att varje händelse kan ändras till ett anpassat meddelande måste du först skapa **händelsetyper**.
 
-Händelsetyper som ska bearbetas av Adobe Campaign måste skapas i kontrollinstansen. Detta kan du göra via mappen **[!UICONTROL Administration > Platform > Enumerations]** i trädet. Varje händelsetyp matchar ett värde i **[!UICONTROL eventType]**-uppräkningen. Detta kan vara en orderbekräftelse, lösenord eller orderleveransändring osv.
+När [du skapar en meddelandemall](../../message-center/using/creating-the-message-template.md) väljer du den typ av händelse som matchar meddelandet som du vill skicka.
 
-![](assets/messagecenter_eventtype_enum_001.png)
+>[!IMPORTANT]
+>
+>Du måste skapa händelsetyper innan du kan använda dem i meddelandemallar.
 
-Mer information om specificerade listor finns i [Uppräkningshantering](../../platform/using/managing-enumerations.md).
+Följ stegen nedan för att skapa händelsetyper som ska bearbetas av Adobe Campaign:
 
-När de specificerade listvärdena har skapats loggar du ut och tillbaka till instansen för att det ska gå att skapa.
+1. Logga in på **kontrollinstansen**.
+
+1. Gå till mappen **[!UICONTROL Administration > Platform > Enumerations]** i trädet.
+
+1. Välj **[!UICONTROL Event type]** i listan.
+
+1. Klicka på **[!UICONTROL Add]** för att skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
+
+   ![](assets/messagecenter_eventtype_enum_001.png)
+
+   >[!IMPORTANT]
+   >
+   >Varje händelsetyp måste matcha ett värde i **[!UICONTROL Event type]**-uppräkningen.
+
+1. När de specificerade listvärdena har skapats loggar du ut och tillbaka till instansen för att det ska gå att skapa.
+
+>[!NOTE]
+>
+>Läs mer om specificerade listor i [Uppräkningshantering](../../platform/using/managing-enumerations.md).
+
+
