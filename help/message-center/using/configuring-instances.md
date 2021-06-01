@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Om du vill skapa ett externt konto av typen **[!UICONTROL Execution instance]** 
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Mer information om FDA (Federated Data Access) finns i [Åtkomst av en extern databas](../../installation/using/about-fda.md).
+   Mer information om FDA (Federated Data Access) finns i [det här avsnittet](../../installation/using/about-fda.md).
 
 1. Klicka på **[!UICONTROL Test the connection]** för att kontrollera att kontrollinstansen och körningsinstansen är länkade till varandra.
 
@@ -162,7 +162,7 @@ I trädet för alla körningsinstanser skapar du en mapp per operator (**Mapp 1*
 >
 >Stegen nedan måste utföras **på kontrollinstanserna**.
 
-1. Skapa ett externt konto per körningsinstans i kontrollinstansen **Control 1** och ange operatorn **mc1** i varje externt konto. Därefter skapas operatorn **mc1** för alla körningsinstanser (se [Konfigurera körningsinstanser](#configuring-execution-instances)).
+1. Skapa ett externt konto per körningsinstans i kontrollinstansen **Control 1** och ange operatorn **mc1** i varje externt konto. Operatorn **mc1** skapas sedan för alla körningsinstanser (se [Konfigurera körningsinstanser](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
