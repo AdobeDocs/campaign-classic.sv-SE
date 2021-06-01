@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definiera sidsekvenser för webbformulär
 description: Definiera sidsekvenser för webbformulär
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
 
 ---
-
 
 # Definiera sidsekvenser för webbformulär{#defining-web-forms-page-sequencing}
 
@@ -125,4 +123,3 @@ Om du vill anpassa den här sidan dubbelklickar du på **[!UICONTROL End]** och 
 
 * Du kan kopiera och klistra in befintligt HTML-innehåll. Det gör du genom att klicka på **[!UICONTROL Display source code]** och infoga HTML-koden.
 * Du kan använda en extern URL; Om du vill göra det väljer du motsvarande alternativ och anger URL-adressen till sidan som ska visas.
-
