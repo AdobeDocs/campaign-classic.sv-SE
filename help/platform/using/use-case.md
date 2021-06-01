@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Användningsfall
 description: Användningsfall
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 2%
 
 ---
-
 
 # Användningsfall{#use-case}
 
@@ -58,4 +56,3 @@ Använd följande steg:
    Namnet på det aktuella filtret visas ovanför listan. Om du vill avbryta filtret klickar du på ikonen **[!UICONTROL Delete this filter]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)
-
