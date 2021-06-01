@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa och identifiera leveransen
 description: Skapa och identifiera leveransen
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
 
 ---
-
 
 # Skapa och identifiera leveransen {#create-and-identify-the-delivery}
 
@@ -55,4 +53,3 @@ Leveransinnehållet är klart att konfigureras. Definitionen av leveransinnehål
 * [Definiera SMS-innehåll](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [Definiera innehållet i direktutskick](../../delivery/using/defining-the-direct-mail-content.md)
 * [Push-meddelanden](../../delivery/using/about-mobile-app-channel.md)
-
