@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera integrering med Adobe Experience Manager
 description: Lär dig hur du konfigurerar Campaign-AEM-integrering
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
-
 
 # Konfigurera integreringen{#configuring-the-integration}
 
@@ -54,7 +52,7 @@ Du måste konfigurera en säkerhetszon så att den här operatorn kan ansluta ti
 >
 >Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationshandboken [guide](../../installation/using/security-zones.md).
 
-Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet. Om du använder Campaign lokalt följer du stegen nedan:
+Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet. Om du använder Campaign lokalt följer du stegen nedan:
 
 1. Öppna konfigurationsfilen **serverConf.xml**.
 1. Få åtkomst till attributet **allowUserPassword** för den markerade säkerhetszonen och ange det till **true**.
@@ -130,4 +128,3 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 1. Konfigurera **tjänsten Externalizer**.
 
    Mer information om hur du konfigurerar den finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
-
