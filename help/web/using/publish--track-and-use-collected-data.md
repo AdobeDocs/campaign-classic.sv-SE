@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Publicera, spåra och använda insamlade data
-description: Publicera, spåra och använda insamlade data
+title: Publicera, spåra och använd insamlade data
+description: Publicera, spåra och använd insamlade data
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
 
 ---
 
-
-# Publicera, spåra och använda insamlade data{#publish-track-and-use-collected-data}
+# Publicera, spåra och använd insamlade data{#publish-track-and-use-collected-data}
 
 När formuläret har skapats, konfigurerats och publicerats kan du dela länken med målgruppen och spåra svaren.
 
