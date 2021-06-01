@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Vanliga frågor
 description: Vanliga frågor och svar om Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 20552812-5c58-4d48-9636-d5135197685d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
-
 
 # Vanliga frågor och svar för utvecklare {#dev-faq}
 
@@ -41,7 +39,7 @@ Läs mer i [Komma igång med tabeller och scheman](../../configuration/using/abo
 
 Du kan skapa och implementera en mottagartabell som inte är standard i Campaign för att skicka meddelanden.
 
-[Klicka här för att läsa mer](../../configuration/using/about-custom-recipient-table.md).
+[Klicka här för att läsa mer](../../configuration/using/about-custom-recipient-table.md)
 
 ## Vad är bästa praxis för att definiera frågor i Campaign? {#what-are-the-best-practices-to-define-queries-in-campaign-}
 
