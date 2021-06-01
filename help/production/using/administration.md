@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Administration
 description: Administration
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
+exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
 
 ---
-
 
 # Administration{#administration}
 
@@ -80,14 +78,19 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >* I en nödsituation använder du alternativet **-direct** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **döda -9**).
    >* Använd alternativet **-noconsole** för att försäkra dig om att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via modulen **syslogd**.
    >* Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
-   >
-   >   Exempel:
-   >
-   >   **webbverbose för omstart av nlserver**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
+
+      >
+      >   
+      Exempel:
+      >
+      >   
+      **webbverbose för omstart av nlserver**
+      >
+      >   
+      **nlserver start mta@myinstance -verbose**
+      >
+      >   
+      Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
 
 
 * Starta alla Adobe Campaign-processer (motsvarar att starta tjänsten **nlserver6**):
@@ -105,4 +108,3 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >[!NOTE]
    >
    >Vissa konfigurationsändringar beaktas inte dynamiskt. Adobe Campaign måste stängas av och sedan startas om.
-
