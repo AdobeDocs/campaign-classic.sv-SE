@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera åtkomst till Snowflake
 description: Lär dig hur du konfigurerar åtkomst till Snowflake i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 535339b5a9b39625100d630b0b831df143dbeb01
+exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 10%
 
 ---
-
 
 # Konfigurera åtkomst till Snowflake {#configure-access-to-snowflake}
 
