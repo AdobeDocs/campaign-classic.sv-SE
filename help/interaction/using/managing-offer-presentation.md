@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera en presentation av erbjudanden
 description: Hantera en presentation av erbjudanden
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
 
 ---
-
 
 # Hantera en presentation av erbjudanden{#managing-offer-presentation}
 
@@ -73,7 +71,7 @@ På fliken **[!UICONTROL Offer presentation]** måste du ange samma dimensioner 
 >
 >Du kan också använda tabeller som inte är standard. Om du vill använda en specifik målgruppsdimension måste du skapa tabeller och en dedikerad miljö med målmappningen. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-### Punkt {#period}
+### Period {#period}
 
 Detta är en glidande period som börjar på presentationsdatumet för erbjudandet. Det fastställer en tidsgräns för giltigheten för erbjudandeförslag. Regeln gäller inte för offertförslag som gjorts efter denna period.
 
@@ -157,4 +155,3 @@ Om du vill ange de förslag som ska räknas via en fråga klickar du på länken
 I följande exempel är de förslag som ska räknas efter två presentationer de som finns i kategorin **Specialerbjudanden** för utrymmet **Call center**, med en vikt under **20**.
 
 ![](assets/offer_typology_013.png)
-
