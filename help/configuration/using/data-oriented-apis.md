@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Dataorienterade API:er
 description: Dataorienterade API:er
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
 
 ---
-
 
 # Dataorienterade API:er{#data-oriented-apis}
 
@@ -43,7 +41,7 @@ Följande introduktionsschema innehåller information om utbyten på låg nivå 
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
-### Kör fråga {#executequery}
+### ExecuteQuery {#executequery}
 
 För kolumner och villkor kan du använda Frågor.
 
@@ -464,7 +462,7 @@ I stället för:
 
 ### Exempel på SOAP-meddelanden {#example-of-soap-messages}
 
-* Förfrågan:
+* Fråga:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -633,7 +631,7 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
 
 ### Exempel på SOAP-meddelanden {#example-of-soap-messages-1}
 
-* Förfrågan:
+* Fråga:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -675,4 +673,3 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
      </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
