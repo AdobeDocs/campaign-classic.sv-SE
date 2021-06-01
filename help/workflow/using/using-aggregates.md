@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använda aggregat
 description: Lär dig använda aggregat
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
 
 ---
-
 
 # Använda aggregat{#using-aggregates}
 
