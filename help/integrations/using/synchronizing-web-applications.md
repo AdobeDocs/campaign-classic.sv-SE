@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Synkronisera webbapplikationer
 description: Synkronisera webbapplikationer
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%
 
 ---
-
 
 # Synkronisera webbapplikationer{#synchronizing-web-applications}
 
@@ -21,7 +19,7 @@ I det här fallet skickar vi ett meddelande med Campaign Standard som innehålle
 
 Om du har många tjänster och webbprogram i Campaign v7 kan du välja att inte återskapa dem alla i Campaign Standard. Med ACS Connector kan ni använda alla era befintliga webbprogram och tjänster i Campaign v7 och länka dem till en leverans som skickas via Campaign Standard.
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 För att uppnå detta behöver du:
 
@@ -134,4 +132,3 @@ När mottagaren uppdaterar sina data via webbprogrammet hämtar Adobe Campaign v
 1. Klicka på fliken **[!UICONTROL Subscriptions]**. Nyhetsbrevet visas nu.
 
    ![](assets/acs_connect_lp_21.png)
-
