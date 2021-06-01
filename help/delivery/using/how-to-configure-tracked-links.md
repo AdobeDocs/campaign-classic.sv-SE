@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Så konfigurerar man spårade länkar
-description: Så konfigurerar man spårade länkar
+title: Så här konfigurerar du spårade länkar
+description: Så här konfigurerar du spårade länkar
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
-
-# Så konfigurerar man spårade länkar{#how-to-configure-tracked-links}
+# Så här konfigurerar du spårade länkar{#how-to-configure-tracked-links}
 
 För varje leverans kan du spåra mottagningen av meddelanden och aktiveringen av länkarna som har infogats i meddelandets innehåll. På så sätt kan du spåra mottagarnas beteende beroende på de leveransåtgärder de har fått som mål.
 
