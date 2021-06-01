@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Viral och social marknadsföring
 description: Viral och social marknadsföring
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 2%
 
 ---
-
 
 # Viral och social marknadsföring{#viral-and-social-marketing}
 
@@ -101,4 +99,3 @@ Delning och åtkomst till delad information spåras. Denna information som Adobe
 * i en dedikerad **[!UICONTROL Sharing to social networks]**-rapport:
 
    ![](assets/s_ncs_user_viral_report.png)
-
