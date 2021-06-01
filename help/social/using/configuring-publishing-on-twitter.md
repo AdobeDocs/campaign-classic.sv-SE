@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera publicering på Twitter
 description: Konfigurera publicering på Twitter
 audience: social
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 2%
 
 ---
 
-
 # Konfigurera publicering på Twitter{#configuring-publishing-on-twitter}
 
 För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste du delegera skrivåtkomst till Adobe Campaign för dessa konton. Gör detta genom att utföra följande konfigurationssteg:
 
 * Skapa ett Twitter-konto.
-* Skapa ett Twitter-testkonto för att skicka korrektur.
+* Skapa ett test-Twitter-konto för att skicka korrektur.
 * Skapa ett Twitter-program per Twitter-konto.
 * Skapa en ny **[!UICONTROL Twitter]**-typtjänst för varje Twitter-program.
 
 ![](assets/social_diagram_twitter_service.png)
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 Börja med att skapa ett eller flera Twitter-konton att skicka tweetar till.
 
@@ -79,7 +77,7 @@ Det här steget kräver samtidig åtkomst till din Adobe Campaign-konsol och en 
 
    >[!NOTE]
    >
-   >Alternativet **[!UICONTROL Synchronize subscriptions]** är aktiverat som standard. När kryssrutan är markerad återställer arbetsflödet för kontosynkronisering på Twitter (se [Synkronisera Twitter-konton](#synchronizing-twitter-accounts)) listan över Twitter-följare så att du kan skicka direktmeddelanden till dem (se [Skicka direktmeddelanden till prenumeranter](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Om du inte vill återställa listan med följare avmarkerar du den här rutan.
+   >Alternativet **[!UICONTROL Synchronize subscriptions]** är aktiverat som standard. När kryssrutan är markerad återställs listan med Twitter-följare i arbetsflödet för kontosynkronisering (se [Synkronisera Twitter-konton](#synchronizing-twitter-accounts)) så att du kan skicka direktmeddelanden till dem (se [Skicka direktmeddelanden till prenumeranter](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Om du inte vill återställa listan med följare avmarkerar du den här rutan.
 
 1. Ange etiketten och det interna namnet på tjänsten.
 
@@ -90,7 +88,7 @@ Det här steget kräver samtidig åtkomst till din Adobe Campaign-konsol och en 
    >**[!UICONTROL Internal name]** för tjänsten måste vara identisk med namnet på Twitter-kontot. Följ stegen nedan för att vara säker på att det inte finns några inmatningsfel.
 
    * Klicka på knappen **[!UICONTROL Save]**.
-   * Klicka på den Twitter-typtjänst som du just har skapat i översikten över tjänster.
+   * Klicka på den Twitter-tjänst du nyss skapade i översikten över tjänster.
    * Klicka på fliken **[!UICONTROL Twitter page]**.  Twitter-kontot ska visas.
 
       ![](assets/social_twitter_service_010.png)
@@ -99,11 +97,11 @@ Det här steget kräver samtidig åtkomst till din Adobe Campaign-konsol och en 
 
    ![](assets/social_twitter_service_010_b.png)
 
-1. På Twitter kopierar du innehållet i fälten **[!UICONTROL Consumer Key (API Key)]** och **[!UICONTROL Consumer Secret (API Secret)]** och klistrar in det i fälten **[!UICONTROL Consumer key]** och **[!UICONTROL Consumer secret]** i konsolen.
+1. I Twitter kopierar du innehållet i fälten **[!UICONTROL Consumer Key (API Key)]** och **[!UICONTROL Consumer Secret (API Secret)]** och klistrar in det i fälten **[!UICONTROL Consumer key]** och **[!UICONTROL Consumer secret]** i konsolen.
 
    ![](assets/social_twitter_service_012.png)
 
-1. På Twitter kopierar du innehållet i fälten **[!UICONTROL Access Token]** och **[!UICONTROL Access Token Secret]** och klistrar in det i fälten **[!UICONTROL Access token]** och **[!UICONTROL Access token secret]** i konsolen.
+1. I Twitter kopierar du innehållet i fälten **[!UICONTROL Access Token]** och **[!UICONTROL Access Token Secret]** och klistrar in det i fälten **[!UICONTROL Access token]** och **[!UICONTROL Access token secret]** i konsolen.
 
    ![](assets/social_twitter_service_013.png)
 
@@ -121,7 +119,7 @@ Arbetsflödet i **[!UICONTROL Twitter account Synchronization]** synkroniserar T
 
 >[!IMPORTANT]
 >
->För att arbetsflödet ska kunna återskapa listan över Twitter-prenumeranter måste rutan **[!UICONTROL Twitter account synchronization]** vara markerad i redigeringsavsnittet för tjänsten som är länkad till kontot. Mer information finns i [Delegera skrivåtkomst till Adobe Campaign](#delegating-write-access-to-adobe-campaign).
+>För att arbetsflödet ska kunna återställa listan över Twitter-prenumeranter måste rutan **[!UICONTROL Twitter account synchronization]** vara markerad i redigeringsavsnittet för tjänsten som är länkad till kontot. Mer information finns i [Delegera skrivåtkomst till Adobe Campaign](#delegating-write-access-to-adobe-campaign).
 
 Med arbetsflödet **[!UICONTROL Twitter account synchronization]**, som nås via noden **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, kan du synkronisera Twitter-konton som konfigurerats tidigare med Adobe Campaign. Som standard aktiveras arbetsflödet varje torsdag kl. 7.30.
 
