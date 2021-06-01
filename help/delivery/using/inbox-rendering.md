@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inkorgsåtergivning i Campaign
 description: Lär dig hur du hämtar e-poståtergivningar och gör dem tillgängliga i en dedikerad rapport
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a3294e70-ac96-4e51-865f-b969624528ce
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
 
 ---
-
 
 # Inkorgsåtergivning{#inbox-rendering}
 
@@ -84,6 +82,7 @@ Varje gång du använder funktionen **[!UICONTROL Inbox rendering]** i en levera
 >
 >* Varje gång rapporten för inkorgsåtergivning skapas dras en token per meddelandeklient av: en token för Outlook 2000-återgivning, en för Outlook 2010-återgivningen, en för Apple Mail 9-återgivningen och så vidare.
 >* Om du genererar återgivningen av Inkorgen igen för samma leverans minskas antalet tillgängliga tokens igen med antalet genererade återgivningar.
+
 >
 
 
