@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definiera filtervillkor
 description: Definiera filtervillkor
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
 
 ---
-
 
 # Definiera filtervillkor{#defining-filter-conditions}
 
