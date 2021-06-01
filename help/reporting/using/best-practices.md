@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bästa praxis för rapportering
 description: Bästa praxis för kampanjrapportering
 audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
 
 ---
-
 
 # Rapportera bästa praxis{#best-practices-reporting}
 
