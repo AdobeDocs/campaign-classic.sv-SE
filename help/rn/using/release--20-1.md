@@ -1,17 +1,15 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Version 20.1
 description: Version 20.1
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-translation-type: tm+mt
-source-git-commit: da87e8aac5d5419c8b21803e4041da166d8ffde9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -27,7 +25,7 @@ _15 april 2021_
 
 >[!NOTE]
 >
-> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _22 mars 2021_
 
