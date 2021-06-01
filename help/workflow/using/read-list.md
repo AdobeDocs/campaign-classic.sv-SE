@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Läslista
 description: Läs mer om arbetsflödesaktiviteten Läs lista
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
 
 ---
-
 
 # Läslista{#read-list}
 
@@ -70,4 +68,3 @@ Profilerna i mappen **Nya kontakter** måste ha en leveransåtgärd som mål. De
    ![](assets/s_advuser_list_read_sample_4.png)
 
 1. Markera sedan fältet som motsvarar e-postadressen i de två uppsättningarna (Källa och Mål). Kolumnerna länkas sedan och de mottagare vars e-postadress finns i listan över importerade adresser exkluderas från målet.
-
