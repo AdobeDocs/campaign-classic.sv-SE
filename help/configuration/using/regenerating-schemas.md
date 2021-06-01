@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Återskapa scheman
 description: Återskapa scheman
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
 
 ---
-
 
 # Återskapa scheman{#regenerating-schemas}
 
