@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Instruktioner i rapporter
-description: Instruktioner i rapporter
+title: Åtgärder på rapporter
+description: Åtgärder på rapporter
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
-
-# Instruktioner i rapporter{#actions-on-reports}
+# Åtgärder på rapporter{#actions-on-reports}
 
 När du visar en rapport kan du utföra ett visst antal åtgärder med verktygsfältet. Dessa beskrivs nedan.
 
@@ -111,4 +109,3 @@ Arkivdatumen visas under ikonen för att visa/dölja. Klicka på arkivet för at
 Det går att ta bort ett rapportarkiv. Det gör du genom att gå till noden Adobe Campaign där dina rapporter lagras. Klicka på fliken **[!UICONTROL Archives]**, markera den du vill ta bort och klicka på **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
-
