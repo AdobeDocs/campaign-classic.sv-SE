@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -57,7 +57,7 @@ När adresserna har skapats kan du visa deras förhandsgranskning och personalis
 
 ## Personaliseringsdata {#personalization-data}
 
-Det går att använda data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Den här funktionen används för att generera en förhandsgranskning eller skicka ett korrektur. Du kan även visa återgivningen av meddelandet för olika Internetåtkomstleverantörer. Mer information finns i [rendering av inkorgen](../../delivery/using/inbox-rendering.md).
+Det går att använda data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Den här funktionen används för att generera en förhandsgranskning eller skicka ett korrektur. Du kan även visa återgivningen av meddelandet för olika Internetåtkomstleverantörer. Mer information finns i [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
 
 Syftet med dessa data är att testa dina meddelanden innan de levereras. Dessa meddelanden sammanfaller inte med faktiska data som ska behandlas. XML-strukturen måste dock vara identisk med den för händelsen som lagras i körningsinstansen, vilket visas nedan:
 
@@ -91,7 +91,7 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelandet för olika leverantörer av Internetåtkomst. Mer information finns i [rendering av inkorgen](../../delivery/using/inbox-rendering.md).
+Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelandet för olika leverantörer av Internetåtkomst. Mer information finns i [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
 
 ## Skicka ett bevis {#sending-a-proof}
 
