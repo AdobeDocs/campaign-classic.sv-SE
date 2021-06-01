@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa filter
 description: Skapa filter
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 6%
 
 ---
-
 
 # Skapa filter{#creating-filters}
 
@@ -26,4 +24,3 @@ Dessa filter kommer att vara tillgängliga i målurvalsfönstret med samma funkt
 1. Ange **[!UICONTROL Label]** för filtret och välj sedan det schema som matchar den externa mottagartabellen i fältet **[!UICONTROL Document type]**.
 1. Skapa din **[!UICONTROL filtering conditions]** baserat på fälten i ditt schema.
 1. Spara filtret.
-
