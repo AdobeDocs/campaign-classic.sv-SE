@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Övervaka marknadsföringskampanjer
 description: Övervaka marknadsföringskampanjer
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # Övervaka marknadsföringskampanjer {#monitoring-marketing-campaigns}
 
