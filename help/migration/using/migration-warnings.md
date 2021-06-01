@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Migreringsvarningar
 description: Migreringsvarningar
 audience: migration
 content-type: reference
 topic-tags: migration-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 46b46fc9-c7c9-4c74-b5f3-7935d5368520
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
 
 ---
-
 
 # Migreringsvarningar{#migration-warnings}
 
@@ -27,4 +25,3 @@ ht-degree: 3%
 >[!NOTE]
 >
 >Du måste också läsa avsnittet [Innan du startar migreringen](../../migration/using/before-starting-migration.md).
-
