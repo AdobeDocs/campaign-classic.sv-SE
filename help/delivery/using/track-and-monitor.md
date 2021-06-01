@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Spåra och övervaka meddelanden
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -37,7 +35,7 @@ Tips: Kontrollera konfigurationen för trafikhantering (IP-tillhörighet). Mer i
 >
 >Dessa steg kan bara utföras av en expertanvändare.
 
-## Spårning {#tracking-deliveries}
+## Spåra {#tracking-deliveries}
 
 Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en leverans: mottagning, öppning, klickningar på länkar, avbeställningar osv. I Campaign Classic visas den här informationen på fliken Spårning för mottagarna som leveransmålet gäller och på fliken Spårning för leveransen.
 
