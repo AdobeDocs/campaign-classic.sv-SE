@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa ett målarbetsflöde
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 8%
 
 ---
-
 
 # Skapa ett målarbetsflöde {#step-1--creating-a-targeting-workflow}
 
