@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Säkerhetskopiera
 description: Säkerhetskopiera
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 2%
 
 ---
-
 
 # Säkerhetskopiera{#backup}
 
