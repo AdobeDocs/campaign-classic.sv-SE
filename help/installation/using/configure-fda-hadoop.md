@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Konfigurera åtkomst till Hadoop
-description: Lär dig konfigurera åtkomst till Hadoop i FDA
+title: Konfigurera åtkomst till Hadoopet
+description: Lär dig hur du konfigurerar åtkomst till Hadoopet i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
+# Konfigurera åtkomst till Hadoopet {#configure-access-to-hadoop}
 
-# Konfigurera åtkomst till Hadoop {#configure-access-to-hadoop}
+Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Hadoopet.
 
-Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Hadoop.
-
-1. Konfigurera [Hadoop-databas](#configuring-hadoop)
-1. Konfigurera det externa Hadoop [kontot](#hadoop-external) i Campaign
+1. Konfigurera [Hadoopets databas](#configuring-hadoop)
+1. Konfigurera Hadoopet [externt konto](#hadoop-external) i Campaign
 
 ## Konfigurerar Hadoop 3.0 {#configuring-hadoop}
 
 För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurationer på Adobe Campaign-servern. Observera att den här konfigurationen är tillgänglig för både Windows och Linux.
 
-1. Hämta ODBC-drivrutinerna för Hadoop beroende på vilken operativsystemsversion du har. Drivrutiner finns på [den här sidan](https://www.cloudera.com/downloads.html).
+1. Hämta ODBC-drivrutinerna för Hadoop beroende på vilken OS-version du har. Drivrutiner finns på [den här sidan](https://www.cloudera.com/downloads.html).
 
 1. Du måste sedan installera ODBC-drivrutinerna och skapa ett DSN för din Hive-anslutning. Instruktioner finns på [den här sidan](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
@@ -39,9 +37,9 @@ För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurat
 
 1. I Campaign Classic kan du sedan konfigurera ditt externa [!DNL Hadoop]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#hadoop-external).
 
-## Hadoop externt konto {#hadoop-external}
+## Hadoopets externa konto {#hadoop-external}
 
-Med det externa [!DNL Hadoop]-kontot kan du ansluta Campaign-instansen till din externa Hadoop-databas.
+Med det externa [!DNL Hadoop]-kontot kan du ansluta Campaign-instansen till Hadoopets externa databas.
 
 1. Konfigurera ditt externa [!DNL Hadoop]-konto i Campaign Classic. Klicka på **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]** i **[!UICONTROL Explorer]**.
 
@@ -100,7 +98,7 @@ Om du behöver ansluta till Hadoop 2.1 följer du stegen som beskrivs nedan för
    User/Password: admin/<your password here>
    ```
 
-1. Skapa det externa Hadoop-kontot enligt beskrivningen i [det här avsnittet](#hadoop-external).
+1. Skapa Hadoopets externa konto enligt beskrivningen i [det här avsnittet](#hadoop-external).
 
 ### Hadoop 2.1 för Linux {#for-linux}
 
@@ -155,7 +153,7 @@ Om du behöver ansluta till Hadoop 2.1 följer du stegen som beskrivs nedan för
    >
    >Parametern **UseNativeQuery** här är mycket viktig. Campaign är Hive-medveten och fungerar inte korrekt om inte UseNativeQuery har angetts. Vanligtvis skriver drivrutinen eller Hive SQL Connector om frågor och ändrar kolumnordningen.
 
-   Inställningen av autentisering beror på Hive/Hadoop-konfigurationen. För HD Insight använder du till exempel AuthMech=6 för användar-/lösenordsautentisering enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   Inställningen av autentisering beror på konfigurationen av Hive/Hadoop. För HD Insight använder du till exempel AuthMech=6 för användar-/lösenordsautentisering enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Exportera variablerna.
 
@@ -187,5 +185,4 @@ Om du behöver ansluta till Hadoop 2.1 följer du stegen som beskrivs nedan för
    isql vorac -v
    ```
 
-1. Skapa det externa Hadoop-kontot enligt beskrivningen i [det här avsnittet](#hadoop-external).
-
+1. Skapa Hadoopets externa konto enligt beskrivningen i [det här avsnittet](#hadoop-external).
