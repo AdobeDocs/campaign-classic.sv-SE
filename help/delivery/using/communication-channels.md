@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kommunikationskanaler
 description: Skapa leveranser för att skicka personaliserade meddelanden i olika kanaler.
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 11%
 
 ---
-
 
 # Kommunikationskanaler{#communication-channels}
 
