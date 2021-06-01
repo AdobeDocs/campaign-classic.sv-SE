@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera Android-mobilprogrammet i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för Android
@@ -9,14 +8,13 @@ topic-tags: sending-push-notifications
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
+exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurationssteg för Android
 
