@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en landningssida
 description: Skapa en landningssida
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
 
 ---
-
 
 # Skapa en landningssida{#creating-a-landing-page}
 
