@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Migrera Adobe Campaign 7 i Windows
 description: Migrera Adobe Campaign 7 i Windows
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
 
 ---
-
 
 # Migrera Adobe Campaign 7 i Windows{#migrating-in-windows-for-adobe-campaign}
 
@@ -397,4 +395,3 @@ Innan du tar bort och rensar installationen av Adobe Campaign v6 måste du följ
    ![](assets/migration_wizard_2.png)
 
 1. Starta om servern.
-
