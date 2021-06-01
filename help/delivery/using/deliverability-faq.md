@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Viktiga punkter vid hantering av slutprodukter i Adobe Campaign Classic
 description: Vilka är de viktigaste punkterna att kontrollera när man hanterar produkter i Adobe Campaign Classic?
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
+exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Felsökning av slutprodukter{#deliverability-faq}
 
@@ -42,7 +40,7 @@ Om du alltid får samma felmeddelande för en Internet-leverantör, kan din e-po
 * Uppdatera dina prenumerationsformulär för att upptäcka eventuella fel i de angivna domännamnen (till exempel: gmaul.com eller yaho.com).
 * Om du märker fel som anger att dina meddelanden har deklarerats som skräppost, eller att dina meddelanden alltid är blockerade, kan du försöka utesluta mottagare som inte har öppnat eller klickat i något av dina meddelanden de senaste 12 månaderna från målet.
 
-Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Blockeringslista kontra karantän {#denylist-versus-quarantine}
 
