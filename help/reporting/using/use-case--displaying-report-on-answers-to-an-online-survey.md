@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
 description: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
 
 ---
-
 
 # Användningsfall: visa en rapport om svar på en onlineundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -88,4 +86,3 @@ Du kan sedan skapa en rapport baserad på den här kuben och bearbeta data och i
 Anpassa informationen efter era behov.
 
 ![](assets/reporting_usecase_3_02.png)
-
