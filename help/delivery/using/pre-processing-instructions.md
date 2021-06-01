@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Förbearbetningsinstruktioner för spårade URL:er
 description: Läs mer om förbearbetningsinstruktioner som du kan använda för att skripta URL:en för ett e-postmeddelande och fortfarande spåra den.
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-translation-type: tm+mt
-source-git-commit: fdcb96c3c4afed1f36529e658eda26766226c44f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
