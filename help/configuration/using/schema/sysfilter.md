@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Element och attribut
 description: Element och attribut
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: a0069688-fd05-42e9-91dd-adc10bea3461
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 18%
 
 ---
-
 
 # sysfilter-element {#sysfilter--element}
 
