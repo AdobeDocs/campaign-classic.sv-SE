@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Driftsätta en instans
 description: Läs mer om guiden för Campaign-driftsättning
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 1%
 
 ---
-
 
 # Driftsätta en instans{#deploying-an-instance}
 
