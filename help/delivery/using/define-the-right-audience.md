@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Definiera rätt publik
+title: Definiera rätt målgrupp
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+exl-id: c0533148-b027-4158-9b95-8d2df769e963
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
 
 ---
 
-
-# Definiera rätt publik {#define-the-right-audience}
+# Definiera rätt målgrupp {#define-the-right-audience}
 
 Målgruppen är följande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 
