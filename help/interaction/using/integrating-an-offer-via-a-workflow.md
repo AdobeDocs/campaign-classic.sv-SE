@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integrera ett erbjudande via ett arbetsflöde
 description: Integrera ett erbjudande via ett arbetsflöde
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
 
 ---
-
 
 # Integrera ett erbjudande via ett arbetsflöde{#integrating-an-offer-via-a-workflow}
 
@@ -173,4 +171,3 @@ Gör så här:
       ![](assets/int_offer_per_cell1.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Mer information finns i avsnittet [Infoga ett erbjudandeförslag i en leverans](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
-
