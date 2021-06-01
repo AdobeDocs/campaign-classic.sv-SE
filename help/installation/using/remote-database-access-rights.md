@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Behörigheter för åtkomst till en extern databas
 description: Behörigheter för extern databasåtkomst
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 1%
 
 ---
-
 
 # Åtkomsträttigheter till fjärrdatabas {#remote-database-access-rights}
 
@@ -29,7 +27,7 @@ För det första, så att användaren kan utföra åtgärder på en extern datab
 
       >[!NOTE]
       >
-      >Delen **:base** är valfri i Oracle.
+      >Delen **:base** är valfri i Oraclet.
 
 1. Spara den namngivna höger och länka den sedan till den valda användaren från noden **[!UICONTROL Administration > Access Management > Operators]** i Adobe Campaign Explorer.
 
