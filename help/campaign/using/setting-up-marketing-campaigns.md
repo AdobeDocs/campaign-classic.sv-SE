@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa marknadsföringskampanjer
 description: Lär dig hur du skapar och genomför marknadsföringskampanjer
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
 
 ---
-
 
 # Kom igång med marknadsföringskampanjer{#setting-up-marketing-campaigns}
 
@@ -221,7 +219,7 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
 
 Varje periodisk kampanj innehåller samma element. När den väl har skapats hanteras den som en standardkampanj.
 
-## Självstudievideo {#video}
+## Videokurs {#video}
 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 
