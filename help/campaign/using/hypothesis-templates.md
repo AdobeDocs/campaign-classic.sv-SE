@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hypotesmallar
 description: Hypotesmallar
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
 
 ---
-
 
 # Hypotesmallar{#hypothesis-templates}
 
@@ -235,4 +233,3 @@ I det här exemplet ska vi skapa en hypotesmall för direktreklam. Transaktionst
    Den mall som skapas gör att du kan göra hypoteser om produkterna eller artiklarna i inköpstabellen.
 
 1. Klicka på **[!UICONTROL Save]** för att spela in mallen.
-
