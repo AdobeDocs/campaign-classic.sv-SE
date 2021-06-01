@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en profillista med ett arbetsflöde
 description: Lär dig hur du skapar en profillista i ett arbetsflöde
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 10%
 
 ---
-
 
 # Skapa en profillista med ett arbetsflöde{#creating-a-profile-list-with-a-workflow}
 
@@ -46,5 +44,3 @@ Följ stegen nedan för att skapa ett målarbetsflöde och uppdatera mottagare i
    Kontrollpanelen anger schemat som listan baseras på, vilket visas nedan:
 
    ![](assets/mapping_list_view.png)
-
-
