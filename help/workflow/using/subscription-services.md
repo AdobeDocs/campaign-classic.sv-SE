@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Prenumerationstjänster
 description: Läs mer om arbetsflödesaktiviteten för prenumerationstjänster
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
 
 ---
-
 
 # Prenumerationstjänster{#subscription-services}
 
