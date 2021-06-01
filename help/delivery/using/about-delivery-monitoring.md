@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med leveransövervakning
 description: Läs mer om funktioner för leveransövervakning i Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
+exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
-
 
 # Kom igång med leveransövervakning {#about-delivery-monitoring}
 
