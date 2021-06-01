@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-postberikande med anpassade datumfält
 description: Lär dig att förbättra e-postmeddelanden med anpassade datumfält
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
 
 ---
-
 
 # E-postberikande med anpassade datumfält{#email-enrichment-with-custom-date-fields}
 
