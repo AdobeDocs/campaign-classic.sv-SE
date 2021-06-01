@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om anpassad mottagartabell
 description: Om anpassad mottagartabell
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
+exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
 
 ---
 
-
-# Använda en anpassad mottagartabell{#about-custom-recipient-table}
+# Använd en anpassad mottagartabell{#about-custom-recipient-table}
 
 I det här avsnittet beskrivs principerna för användning av en mottagartabell som inte är standard.
 
@@ -77,4 +75,3 @@ Exempel:
 * Anpassningsblocket **[!UICONTROL Unsubscription link]** måste anpassas.
 * Målmappningen för standardleveransmallarna måste ändras.
 * V4-formulär är inte kompatibla med en extern mottagartabell: du måste använda webbprogram.
-
