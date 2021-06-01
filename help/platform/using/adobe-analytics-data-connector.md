@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Data-kopplingen i Adobe Analytics
-description: Data-kopplingen i Adobe Analytics
-feature: Overview
+title: Datakopplingen i Adobe Analytics
+description: Datakopplingen i Adobe Analytics
+feature: Översikt
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1658'
 ht-degree: 1%
 
 ---
 
-
-# Data-kopplingen i Adobe Analytics{#adobe-analytics-data-connector}
+# Datakopplingen i Adobe Analytics{#adobe-analytics-data-connector}
 
 ## Om integrering med Data Connector {#about-data-connector-integration}
 
@@ -282,4 +280,3 @@ Adobe Campaign tillhandahåller skräddarsydda leveransmallar som ni kan använd
 **[!UICONTROL Re-marketing efficiency]**-rapporten nås via den globala rapportsidan. Här kan du se antalet konverterade kontakter (dvs. ha köpt något) i relation till antalet övergivna kundvagnar efter Adobe Campaign marknadsföringskampanj. Konverteringsgraden beräknas per vecka, månad eller sedan synkroniseringen mellan Adobe Campaign och webbanalysverktygen startades.
 
 ![](assets/webanalytics_reporting.png)
-
