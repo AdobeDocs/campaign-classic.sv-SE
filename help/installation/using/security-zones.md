@@ -7,8 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -98,7 +97,7 @@ Alla rättigheter som definierar en zon är följande:
 >
 >I en zondefinition minskar varje attribut med **true**-värdet säkerheten.
 
-Om det finns flera körningsinstanser i Message Center måste du skapa en extra säkerhetszon med attributet **sessionTokenOnly** definierat som **true**, där endast de nödvändiga IP-adresserna ska läggas till. Mer information om hur du konfigurerar instanser finns i [det här dokumentet](../../message-center/using/creating-a-shared-connection.md).
+Om det finns flera körningsinstanser i Message Center måste du skapa en extra säkerhetszon med attributet **sessionTokenOnly** definierat som **true**, där endast de nödvändiga IP-adresserna ska läggas till. Mer information om hur du konfigurerar instanser finns i [det här dokumentet](../../message-center/using/configuring-instances.md).
 
 ## Bästa tillvägagångssätt för säkerhetszoner {#best-practices-for-security-zones}
 
