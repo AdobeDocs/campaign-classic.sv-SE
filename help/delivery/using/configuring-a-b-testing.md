@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Konfigurera A/B-testning
+title: Konfigurera A/B-tester
 description: Lär dig hur du konfigurerar A/B-testning i Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
+exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-
-# Konfigurerar A/B-testning {#configuring-a-b-testing}
+# Konfigurera A/B-tester {#configuring-a-b-testing}
 
 I det här avsnittet beskrivs hur du skapar ett arbetsflöde för A/B-testning.
 
