@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Förfrågan
+title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 0%
 
 ---
 
-
-# Förfrågan{#query}
+# Fråga{#query}
 
 ## Skapa en fråga {#creating-a-query}
 
@@ -24,7 +22,7 @@ Mer information om frågeexempel finns i det här [avsnittet](../../workflow/usi
 
 >[!NOTE]
 >
->Frågeaktiviteter är inte kompatibla med CLOB-fält när Oracle används.
+>Frågeaktiviteter är inte kompatibla med CLOB-fält när Oraclet används.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
