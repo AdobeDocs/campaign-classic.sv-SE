@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Anpassa listan med uttryckssymboler
 description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
 
 ---
-
 
 # Anpassa listan med uttryckssymboler {#customize-emoticons}
 
