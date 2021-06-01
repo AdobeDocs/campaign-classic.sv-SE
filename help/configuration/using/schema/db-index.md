@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Element och attribut
 description: Element och attribut
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
 
 ---
-
 
 # dbindex-element {#dbindex--element}
 
