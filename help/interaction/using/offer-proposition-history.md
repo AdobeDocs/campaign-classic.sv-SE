@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Historik över erbjudandeförslag
 description: Historik över erbjudandeförslag
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 480d49e7-0237-4c87-abe8-445b7bf91a30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 15%
 
 ---
-
 
 # Historik över erbjudandeförslag{#offer-proposition-history}
 
@@ -34,4 +32,3 @@ När dina offertförslag är klara kan du se presentationshistoriken.
 * Klicka på fliken **[!UICONTROL Propositions]** på erbjudandeutrymmesnivån.
 
    ![](assets/offer_space_prop_001_b.png)
-
