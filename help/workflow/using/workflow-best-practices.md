@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bästa praxis för arbetsflöden
 description: Lär dig mer om arbetsflöden för kampanjer
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Bäst praxis för arbetsflöden{#workflow-best-practices}
 
@@ -37,7 +35,7 @@ Det finns ytterligare två lösningar:
 
    >[!CAUTION]
    >
-   >Det här alternativet får aldrig checkas in i ett produktionsarbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller stagingmiljöer.
+   >Det här alternativet får aldrig kontrolleras i ett produktionsarbetsflöde. Det här alternativet används för att analysera resultaten och är utformat endast för teständamål och ska därför endast användas i utvecklings- eller stagingmiljöer.
 
 * **Logga SQL-frågor i journalen**
 
