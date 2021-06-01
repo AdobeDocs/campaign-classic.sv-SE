@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud
 description: Lär dig hur du konfigurerar Adobe I/O för Adobe Experience Cloud Triggers
@@ -9,8 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-translation-type: tm+mt
-source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 4%
