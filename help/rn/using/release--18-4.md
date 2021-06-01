@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Versionsinformation för Campaign 18.4
 description: Versionsinformation för Campaign 18.4
 feature: null
 role: null
 level: null
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
 
 ---
-
 
 # Version 18.4{#release-18-4}
 
@@ -36,7 +34,7 @@ ht-degree: 7%
 * Ett problem med frysning av klient som kan uppstå när komplexa arbetsflöden används har åtgärdats. (NEO-11847)
 * Korrigerade ett Oracle-fel när en ny leverans sparades efter att ett element i ett specifikt schema har valts (NEO-11682).
 * Ett problem har korrigerats vid sökning efter ett fält som innehåller tecken med accenter (FDA/Teradata). Med det externa kontot kan du nu ändra kodningen som används för att kommunicera med Teradata-drivrutinen. (NEO-11818).
-* Korrigerade ett spårningsproblem vid överföring av URL:er i ytterligare variabler i ett push-meddelande som kunde leda till felaktigt formaterade eller felaktiga data som togs emot av mobilprogrammet. (NEO-11468 och NEO-11960)
+* Korrigerade ett spårningsproblem vid överföring av URL:er i ytterligare variabler i ett push-meddelande som kunde leda till felaktigt formaterade eller felaktiga data som togs emot av mobilprogrammet. (NEO-11468, NEO-11960)
 * Korrigerade ett problem som orsakade ett visningsproblem vid användning av en värdefördelning med en 1:N-länk. (NEO-11820)
 * Korrigerade ett problem som förhindrade massbelastning från att arbeta med Teradata 16.
 * Ökade buffertstorleken för tidsstämpling på Teradata för att undvika bindningsproblem med drivrutinen 15.10.
@@ -53,7 +51,7 @@ ht-degree: 7%
 * Loggarna för e-postarkivering har förbättrats, vilket gör det enklare och tydligare att kontrollera vilka e-postmeddelanden som har levererats eller misslyckats via BCC-arkivering. (NEO-10675)
 * Korrigerade ett problem som ledde till att IP-adresser för belastningsutjämnare visades i stället för IP-adresser för kunder i spårningsloggarna. (NEO-11295)
 * Korrigerade ett fel med LATIN1-kodning vid användning av en FDA-anslutning till en PostgreSQL-databas. (NEO-11299)
-* Ett problem som uppstod när leveransalternativet **[!UICONTROL Prepare the personalization data with a workflow]** användes har korrigerats. (NEO-11047 och NEO-11301)
+* Ett problem som uppstod när leveransalternativet **[!UICONTROL Prepare the personalization data with a workflow]** användes har korrigerats. (NEO-11047, NEO-11301)
 * Korrigerade ett slumpmässigt problem som medförde att egenskaperna för en leverans skrevs över felaktigt. (NEO-11015)
 * Ett problem har korrigerats vid användning av beräknade fält i en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet. (NEO-11382)
 * Ett problem har korrigerats när data som lagrats i XML användes i en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet. (NEO-10816)
