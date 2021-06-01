@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Prestanda- och genomströmningsproblem
-description: Prestanda- och genomströmningsproblem
+title: Prestanda- och dataflödesproblem
+description: Prestanda- och dataflödesproblem
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-
-# Prestanda- och genomströmningsproblem{#performance-and-throughput-issues}
+# Prestanda- och dataflödesproblem{#performance-and-throughput-issues}
 
 Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna.
 
@@ -25,7 +23,7 @@ Mer information om innehållet i respektive release finns i [versionsinformation
 
 Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
-Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du behöver det här verktyget implementerat. Här är några viktiga saker du bör kontrollera med det här verktyget:
+Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du behöver det här verktyget implementerat. Här är några viktiga saker du bör kontrollera med det här verktyget:
 
 * Om indexstorleken är större än tabellstorleken krävs ett vakuum.
 * Kontrollera de tabeller som har den maximala blotten. Om dessa tabeller används ofta måste de semitueras.
@@ -67,4 +65,4 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 
 >[!NOTE]
 >
->Se även avsnittet [Slutprodukt](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+>Se även avsnittet [Slutprodukt](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
