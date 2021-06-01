@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera din plattform
 description: Konfigurera din plattform
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurera din plattform{#configuring-your-platform}
 
@@ -119,7 +117,7 @@ När du har kört **postupgrade** måste följande element beaktas och motsvaran
 
    Om du migrerar från en v5.11-plattform måste du styra körningskatalogen för arbetsflöden. Mer information finns i avsnittet [Arbetsflöden](../../migration/using/specific-configurations-in-v5-11.md#workflows).
 
-* Spårning
+* Spåra
 
    Om du migrerar från en v5.11-plattform måste du konfigurera spårningsläget. Mer information finns i avsnittet [Spårning](../../migration/using/specific-configurations-in-v5-11.md#tracking).
 
@@ -130,4 +128,3 @@ När du har kört **postupgrade** måste följande element beaktas och motsvaran
 * Interaktion
 
    Om du använder **Interaktion** måste du justera alla parametrar efter migreringen. Mer information finns i avsnittet [Interaktion](../../migration/using/general-configurations.md#interaction).
-
