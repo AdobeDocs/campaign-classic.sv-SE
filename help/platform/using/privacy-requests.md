@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Förfrågningar om användarens information
 description: Läs om hur du hanterar förfrågningar om användarens information
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-translation-type: ht
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
 
@@ -42,7 +40,7 @@ Adobe Campaign erbjuder personuppgiftsansvariga två möjligheter att utföra f�
 >
 >Mer information om personuppgifter och de olika enheter som hanterar data (personuppgiftsansvarig, personuppgiftsbiträde och registrerad) finns i [Personuppgifter och personer](../../platform/using/privacy-and-recommendations.md#personal-data).
 
-### Förutsättningar {#prerequesites}
+### Förhandskrav {#prerequesites}
 
 Adobe Campaign erbjuder verktyg för personuppgiftsansvarig som låter dig skapa och bearbeta förfrågningar om användarens information gällande data som lagras i Adobe Campaign. Det är dock den personuppgiftsansvariges ansvar att hantera relationen med den registrerade (e-post, kundtjänst eller en webbportal).
 
