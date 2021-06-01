@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Svar från webbformulär
 description: Svar från webbformulär
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
 
 ---
-
 
 # Svar från webbformulär{#web-forms-answers}
 
@@ -142,4 +140,3 @@ Du kan välja en sökmapp för avstämning och skapandemappen för nya profiler.
 >Möjliga åtgärder är: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >Operatorns standardmapp är den första mappen som operatorn har skrivbehörighet för.\
 >Se [det här avsnittet](../../platform/using/access-management.md).
-
