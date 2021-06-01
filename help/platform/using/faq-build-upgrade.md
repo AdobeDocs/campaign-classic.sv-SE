@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Vanliga frågor om uppgradering av bygge
+title: Vanliga frågor och svar om builduppgradering
 description: Vanliga frågor om uppgraderingar av Campaign-versioner
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # Vanliga frågor om uppgradering av bygge {#build-upgrade-faq}
 
@@ -21,7 +19,7 @@ Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [vers
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
-[!DNL Gold Standard] är Campaign Classic Långsiktig supportrelease. Som [!DNL Gold Standard]-värd-användare har du automatiskt nytta av [!DNL Gold Standard]-uppgraderingen med den senaste stabila versionen utan någon åtgärd. Lokala kunder och Hybrid-kunder kan också dra nytta av [!DNL Gold Standard]-releaser. Om du migrerar från en gammal version rekommenderar vi att du uppgraderar till den här versionen först. [Läs mer](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] är versionen av Campaign Classic med långsiktig support. Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång till [!DNL Gold Standard]-uppgraderingen med den senaste stabila versionen utan någon åtgärd. Kunder med lokala installationer eller hybridlösningar kan också dra nytta av [!DNL Gold Standard]-versioner. Om du migrerar från en gammal build rekommenderar vi att du uppgraderar till den här versionen först. [Läs mer](../../rn/using/gs-overview.md).
 
 ## Vad är en bygguppgradering?
 
@@ -83,7 +81,7 @@ Uppgradering är en tvåstegsprocess:
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
-Mer information finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html).
 
 ## Vilka resurser behövs för uppgraderingen?
 
@@ -166,7 +164,7 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 ## Vem ska jag kontakta för att öppna uppgraderingsbiljetten?
 
-Om du får problem efter en uppgraderingsversion kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
+Om du får problem efter en uppgraderingsversion kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
 Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 
