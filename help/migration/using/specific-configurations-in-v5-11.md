@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Specifika konfigurationer i version 5.11
 description: Specifika konfigurationer i version 5.11
 audience: migration
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
 
 ---
-
 
 # Specifika konfigurationer i version 5.11{#specific-configurations-in-v5-11}
 
@@ -88,7 +86,7 @@ I det här exemplet har en **NmcTrackingLogMessages**-vy skapats och har ett **T
 
 För att vara säker på att efteruppgraderingen fungerar måste du ta bort vyn före migreringen och återskapa den efter migreringen samtidigt som du anpassar den till TIMESTAMP MED TIMEZONE-läget.
 
-## Spårning {#tracking}
+## Spåra {#tracking}
 
 Spårningsformeln har ändrats. När du migrerar ersätts den gamla formeln (v5) med den nya (v7). Om du använder en anpassad formel i Adobe Campaign v5 måste den här konfigurationen anpassas i Adobe Campaign v7 (**NmsTracking_ClickFormula** och **NmsTracking_OpenFormula**-alternativ).
 
@@ -163,4 +161,3 @@ De föråldrade mappar som ska tas bort efter migreringen är följande:
 | nmsResourcesModels | Mallar | Campaign har installerats |
 | nmsRootPlan | Kampanjhantering | Campaign har installerats |
 | nmsOperator | Marknadsförare | MRM är installerat |
-
