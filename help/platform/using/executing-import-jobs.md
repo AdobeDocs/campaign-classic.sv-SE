@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera importjobb
 description: Lär dig hur du konfigurerar och kör importjobb i Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera importjobb {#executing-import-jobs}
 
