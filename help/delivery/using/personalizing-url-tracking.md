@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera alternativ för URL-spårning
 description: Konfigurera alternativ för URL-spårning
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 019c982dcf040fb2dc2a1c82d4a2ff5a964ec5fa
+exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 4%
+ht-degree: 12%
 
 ---
 
-
-# Konfigurerar alternativ för URL-spårning{#personalizing-url-tracking}
+# Konfigurera alternativ för URL-spårning{#personalizing-url-tracking}
 
 Avancerade inställningar för meddelandespårning är tillgängliga via ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet i leveransguiden.
 
