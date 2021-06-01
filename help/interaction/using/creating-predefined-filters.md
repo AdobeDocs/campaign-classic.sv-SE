@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa fördefinierade filter
 description: Skapa fördefinierade filter
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 399e9468-bf70-425d-af0b-72c29636b513
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 10%
 
 ---
-
 
 # Skapa fördefinierade filter{#creating-predefined-filters}
 
