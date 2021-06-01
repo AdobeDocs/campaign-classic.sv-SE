@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## Övervaka gränsvärden {#monitoring-thresholds}
 
-Du kan konfigurera varningströskeln (orange) och varningströsklar (röda) för de indikatorer som visas i **Message Center-servicenivån** och **Message Center-bearbetningstiden**-rapporter (se [Om transaktionsmeddelanderapporter](../../message-center/using/about-transactional-messaging-reports.md)).
+Du kan konfigurera varningströskeln (orange) och varningströsklar (röda) för de indikatorer som visas i **Message Center-servicenivån** och **Message Center-bearbetningstiden**-rapporter (se [Åtkomst till transaktionsmeddelanderapporter](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Följ stegen nedan för att göra detta:
 
@@ -109,7 +109,7 @@ Följ stegen nedan på körningsinstansen/körningsinstanserna:
 
    >[!NOTE]
    >
-   >Lär dig hur du skapar ett externt konto av typen körningsinstans i [avsnittet Kontrollinstans](../../message-center/using/configuring-instances.md#control-instance).
+   >Lär dig hur du skapar ett externt konto av typen körningsinstans i [det här avsnittet](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Utöka schemat nms:extAccount för att lägga till spårnings-URL:
 
