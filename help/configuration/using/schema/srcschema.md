@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Element och attribut
 description: Element och attribut
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
 
 ---
-
 
 # srcschema-element {#srcschema--element}
 
