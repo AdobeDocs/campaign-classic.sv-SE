@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Specifika konfigurationer i version 6.10
 description: Specifika konfigurationer i version 6.10
 audience: migration
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 63e515c8-4391-412e-a1ba-2444f47aa7fd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 12%
 
 ---
-
 
 # Specifika konfigurationer i version 6.10{#specific-configurations-in-v6-10}
 
