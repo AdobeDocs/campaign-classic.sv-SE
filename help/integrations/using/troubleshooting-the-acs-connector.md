@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Felsöka ACS Connector
 description: Felsöka ACS Connector
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
-
 
 # Felsöka ACS Connector{#troubleshooting-the-acs-connector}
 
@@ -112,4 +110,3 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 * **Jag kan inte redigera en profil, en målgrupp eller en landningssida i Campaign Standarden. Vad betyder det?**
 
    Resurser som synkroniseras från Campaign v7 är i skrivskyddat läge i Campaign Standard för att säkerställa att data är konsekventa. Om du behöver redigera något av dessa element kan du göra det i Campaign v7 och sedan replikera ändringen av Campaign Standarden.
-
