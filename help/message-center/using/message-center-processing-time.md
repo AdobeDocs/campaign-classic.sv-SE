@@ -2,26 +2,29 @@
 solution: Campaign Classic
 product: campaign
 title: Bearbetningstid för meddelandecentret
-description: Bearbetningstid för meddelandecentret
+description: Läs mer i rapporten om bearbetningstid för Message Center.
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 5%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
+# Bearbetningstid för meddelandecentret {#message-center-processing-time}
 
-# Bearbetningstid för meddelandecentret{#message-center-processing-time}
+Den här rapporten innehåller de viktigaste indikatorerna för realtidskön.
 
-Den här rapporten innehåller de viktigaste indikatorerna för realtidskön. Den här rapporten, som riktar sig till tekniska administratörer, kan också nås via fliken **[!UICONTROL Monitoring]** i kontrollinstansen.
+Den här rapporten, som riktar sig till tekniska administratörer, kan också nås via fliken **[!UICONTROL Monitoring]** i kontrollinstansen.
 
 ![](assets/mc_reports_2.png)
 
-Precis som för **[!UICONTROL Message Center service level]**-rapporten kan du välja att visa den övergripande statistiken för en viss körningsinstans. Du kan också filtrera data efter kanal och under en viss period. Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** beräknas för den valda perioden:
+Precis som för **[!UICONTROL Message Center service level]**-rapporten kan du välja att visa den övergripande statistiken för en viss körningsinstans. Du kan också filtrera data efter kanal och under en viss period.
+
+Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** beräknas för den valda perioden:
 
 * **[!UICONTROL Average queuing time]** : Genomsnittlig tid som har bearbetat händelser som har ägnats åt i meddelandecentret. Endast bearbetningstiden beaktas.
 * **[!UICONTROL Average message sending time (s)]** : Genomsnittlig tid som har bearbetat händelser som har ägnats åt i meddelandecentret. Endast den maximala leveranstiden beaktas.
@@ -32,5 +35,4 @@ Precis som för **[!UICONTROL Message Center service level]**-rapporten kan du v
 
 >[!NOTE]
 >
->Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i Adobe Campaign distributionsguide. Se [Övervakningströsklar](../../message-center/using/monitoring-thresholds.md).
-
+>Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i Adobe Campaign distributionsguide. Se [Övervakningströsklar](../../message-center/using/additional-configurations.md#monitoring-thresholds).
