@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Mallhantering
 description: Mallhantering
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
 
 ---
-
 
 # Mallhantering{#template-management}
 
