@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Versionsinformation om Campaign 20.3
 description: Versionsinformation för Campaign 20.3
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '1949'
+ht-degree: 98%
 
 ---
-
 
 # Version 20.3{#release-20-3}
 
@@ -30,9 +28,9 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen innehåller ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.**
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): uppgradering är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud-utlösare via autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign upphör den 30 november 2021 **.**
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
 
 
 **Nyheter**
