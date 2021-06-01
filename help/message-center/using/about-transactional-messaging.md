@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -40,7 +40,7 @@ Funktioner för transaktionsmeddelanden är utformade för att stödja skalbarhe
 
 Adobe Campaign Transactional Messaging-modulen integreras i ett informationssystem som returnerar händelser som ska ändras till personaliserade transaktionsmeddelanden. Dessa meddelanden kan skickas individuellt eller gruppvis via e-post, SMS eller push-meddelanden.
 
-Den här funktionen är beroende av en specifik arkitektur, där **körningsinstansen** är separerad från **kontrollinstansen**. Distributionen ger högre tillgänglighet och bättre lasthantering. Mer information finns i [Transactional messaging instances](../../message-center/using/transactional-messaging-architecture.md).
+Den här funktionen är beroende av en specifik arkitektur, där **körningsinstansen** är separerad från **kontrollinstansen**. Distributionen ger högre tillgänglighet och bättre lasthantering. Mer information finns i [Transactional messaging architecture](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
@@ -81,8 +81,8 @@ På **kontrollinstansen** måste du utföra följande åtgärder:
 
 När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudstegen nedan på **körningsinstansen** om en motsvarande händelse aktiveras:
 
-1. När händelsen genereras av det externa informationssystemet skickas relevanta data till Campaign via metoderna **PushEvent** och **PushEvents**. Se [Händelsesamling](#event-collection).
-1. Händelsen är länkad till rätt meddelandemall. Se [Cirkulera mot en mall](#routing-towards-a-template).
+1. När händelsen genereras av det externa informationssystemet skickas relevanta data till Campaign via metoderna **PushEvent** och **PushEvents**. Se [Händelsesamling](../../message-center/using/about-event-processing.md#event-collection).
+1. Händelsen är länkad till rätt meddelandemall. Se [Cirkulera mot en mall](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. När anrikningsfasen är klar skickas leveransen. Se [Leveranskörning](../../message-center/using/delivery-execution.md). Varje mottagare får ett personligt meddelande.
 
 ## Relaterade ämnen {#related-topics}
@@ -90,4 +90,4 @@ När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudst
 * [Kom igång med kommunikationskanaler](../../delivery/using/communication-channels.md)
 * [Nyckelsteg för att skapa leverans](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Transaktionsmeddelandens arkitektur](../../message-center/using/transactional-messaging-architecture.md)
-* [Om rapporter om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging-reports.md)
+* [Få tillgång till transaktionsrapporter](../../message-center/using/about-transactional-messaging-reports.md)
