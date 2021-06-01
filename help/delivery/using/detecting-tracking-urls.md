@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Identifiera URL:er för spårning
 description: Läs mer om rekommenderat mönster för att spåra URL:er
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
 
 ---
-
 
 # Identifiera URL:er för spårning
 
