@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Verifieringskedja
-description: Verifieringskedja
+title: Granskningskedja
+description: Granskningskedja
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
 
 ---
 
-
-# Verifieringskedja{#audit-trail}
+# Granskningskedja{#audit-trail}
 
 I Adobe Campaign ger **[!UICONTROL Audit trail]** tillgång till den fullständiga historiken över ändringar som gjorts i din instans.
 
@@ -107,4 +105,3 @@ För att göra detta:
    ![](assets/audit_trail_6.png)
 
 1. Klicka på **[!UICONTROL Save]** .
-
