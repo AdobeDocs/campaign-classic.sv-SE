@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skicka, övervaka och spåra SMS
 description: Lär dig hur du skickar, övervakar och spårar SMS i Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Skicka, övervaka och spåra SMS-leveranser{#sms-properties}
 
@@ -62,7 +60,7 @@ Följande alternativ är tillgängliga:
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Övervaka leverans](../../delivery/using/about-delivery-monitoring.md)
+* [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
 * [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
 * [Om att spåra meddelanden](../../delivery/using/about-message-tracking.md)
 
