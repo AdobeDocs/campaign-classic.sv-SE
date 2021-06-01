@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om webbtjänster
 description: Om webbtjänster
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
 
 ---
-
 
 # Om webbtjänster{#about-web-services}
 
@@ -28,7 +26,7 @@ Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det
 >Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Se denna [sida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) för mer information om detta.\
 >En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 Innan du använder Adobe Campaign API:er måste du känna till följande:
 
