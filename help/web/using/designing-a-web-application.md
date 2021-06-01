@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Designa en webbapplikation
 description: Designa en webbapplikation
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Designa ett webbprogram{#designing-a-web-application}
+# Designa en webbapplikation{#designing-a-web-application}
 
 Webbprogram skapas och hanteras enligt samma princip som [onlineundersökningar](../../web/using/about-surveys.md).
 
