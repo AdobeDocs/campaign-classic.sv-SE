@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Fråga med grupperingshantering
 description: Lär dig hur du utför frågor med hjälp av grupperingshantering
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
 
 ---
-
 
 # Fråga med grupperingshantering {#querying-using-grouping-management}
 
