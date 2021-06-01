@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Läsa in (SOAP)
 description: Läsa in (SOAP)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
 
 ---
-
 
 # Läsa in (SOAP){#loading-soap}
 
@@ -54,4 +52,3 @@ Aktiviteten **Loading (SOAP)** används utöver aktiviteten **datainläsning (RD
       Koden för den här fliken anropas i en slinga av Adobe Campaign tills ett XML-objekt som är null returneras.
 
    * **[!UICONTROL Finalization]**: stänger anslutningen och/eller frigör andra resurser som skapas under bearbetningen.
-
