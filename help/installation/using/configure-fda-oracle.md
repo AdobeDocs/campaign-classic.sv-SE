@@ -1,37 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Konfigurera åtkomst till Oracle
-description: Lär dig konfigurera åtkomst till Oracle i FDA
+title: Konfigurera åtkomst till Oraclet
+description: Lär dig hur du konfigurerar åtkomst till Oraclet i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
+# Konfigurera åtkomst till Oraclet {#configure-access-to-oracle}
 
-# Konfigurera åtkomst till Oracle {#configure-access-to-oracle}
-
-Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Oracle.
+Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Oraclet.
 
 1. Konfigurera Oracle på [Linux](#oracle-linux) eller [Windows](#azure-windows)
-1. Konfigurera det externa Oracle [kontot](#oracle-external) i Campaign
+1. Konfigurera Oraclet [externt konto](#oracle-external) i Campaign
 
 ## Oracle i Linux {#oracle-linux}
 
-För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
+Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
-1. Installera den fullständiga Oracle-klienten som motsvarar din version av Oracle.
-1. Lägg till dina TNS-definitioner i installationen. Om du vill göra det anger du dem i en **namnfil.ora**-fil i /etc/oracle-databasen. Om den här databasen inte finns skapar du den.
+1. Installera Oraclets fullständiga klient som motsvarar din version av Oraclet.
+1. Lägg till dina TNS-definitioner i installationen. Om du vill göra det anger du dem i en **namnfil.ora**-fil i databasen /etc/oracle. Om den här databasen inte finns skapar du den.
 
    Skapa sedan en ny TNS_ADMIN-miljövariabel: exportera TNS_ADMIN=/etc/oracle och starta om datorn.
 
-1. Integrera Oracle i Adobe Campaign-servern (nlserver). Det gör du genom att kontrollera att filen **customer.sh** finns i mappen &quot;nl6&quot; i Adobe Campaign serverträdstruktur och att den innehåller länkarna till Oracle-biblioteken.
+1. Integrera Oracle med Adobe Campaign-servern (nlserver). Det gör du genom att kontrollera att filen **customer.sh** finns i mappen &quot;nl6&quot; i Adobe Campaign serverträdstruktur och att den innehåller länkar till Oraclena i biblioteken.
 
    Exempel: för en klient i 11.2:
 
@@ -45,7 +43,7 @@ För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigur
    >
    >Dessa värden (särskilt ORACLE_HOME) beror på installationsdatabaserna. Kontrollera trädstrukturen innan du refererar till dessa värden.
 
-1. Installera de bibliotek som krävs för Oracle:
+1. Installera de bibliotek som behövs för Oraclet:
 
    * **libclntsh.so**
 
@@ -66,19 +64,19 @@ För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigur
 
 ## Oracle i Windows {#oracle-windows}
 
-För att ansluta till en extern Oracle-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
+Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
 1. Installera Oracle-klienten.
 
-1. I mappen C:Oracle skapar du en **namnnames.ora**-fil som innehåller din TNS-definition.
+1. Skapa en **namnnames.ora**-fil som innehåller TNS-definitionen i mappen C:Oracle.
 
 1. Lägg till en TNS_ADMIN-miljövariabel med C:Oracle som värde och starta om datorn.
 
 1. I Campaign Classic kan du sedan konfigurera ditt externa [!DNL Oracle]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#oracle-external).
 
-## Oracle externt konto {#oracle-external}
+## Oraclets externa konto {#oracle-external}
 
-Med det externa [!DNL Oracle]-kontot kan du ansluta Campaign-instansen till din externa Oracle-databas.
+Med det externa [!DNL Oracle]-kontot kan du ansluta Campaign-instansen till Oraclets externa databas.
 
 1. I Campaign **[!UICONTROL Explorer]** väljer du **[!UICONTROL Administration]** **[!UICONTROL Platform]** > **[!UICONTROL External accounts]**.
 
@@ -97,6 +95,4 @@ Med det externa [!DNL Oracle]-kontot kan du ansluta Campaign-instansen till din 
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
    * **[!UICONTROL Time zone]**: Tidszon för server
-
    ![](assets/oracle_config.png)
-
