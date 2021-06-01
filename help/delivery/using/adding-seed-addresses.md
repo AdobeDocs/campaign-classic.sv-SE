@@ -6,14 +6,13 @@ description: Lägga till fröadresser
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 6%
+source-wordcount: '327'
+ht-degree: 5%
 
 ---
-
 
 # Lägg till dirigerade adresser{#adding-seed-addresses}
 
@@ -27,7 +26,7 @@ Det finns tre möjliga insättningslägen:
 
 1. Ange enskilda dirigeringsadresser.
 
-   Det gör du genom att klicka på knappen **[!UICONTROL Add]** och definiera innehållet i adressfälten. Upprepa för varje adress. Mer information om detta finns i [det här avsnittet](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   Det gör du genom att klicka på knappen **[!UICONTROL Add]** och definiera innehållet i adressfälten. Upprepa för varje adress.
 
 1. Importera adressmallar och anpassa dem efter dina behov.
 
