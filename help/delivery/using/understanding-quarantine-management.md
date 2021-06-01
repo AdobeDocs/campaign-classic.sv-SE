@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om karantänshantering
 description: Om karantänshantering
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
 
 ---
-
 
 # Om karantänshantering{#understanding-quarantine-management}
 
