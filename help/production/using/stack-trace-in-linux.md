@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Stackspårning i Linux
 description: Stackspårning i Linux
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
 
 ---
-
 
 # Stackspårning i Linux{#stack-trace-in-linux}
 
@@ -23,6 +21,7 @@ En **stackspårning** representerar en spårning som finns i en **core**-typfil.
 >
 >* En **core**-fil heter **core.`<num>`**.
 >* **gdb - GNU-** felsökaren måste vara installerad på datorn.
+
 >
 
 
@@ -67,4 +66,3 @@ Exempel:
 ```
 gdb nlserver.1823 <coreFile>
 ```
-
