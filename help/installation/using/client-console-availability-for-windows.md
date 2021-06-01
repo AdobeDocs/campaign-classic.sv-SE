@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Klientkonsolens tillgänglighet för Windows
-description: Klientkonsolens tillgänglighet för Windows
+title: Klientkonsolens tillgänglighet i Windows
+description: Klientkonsolens tillgänglighet i Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
-translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
 
 ---
 
-
-# Klientkonsolens tillgänglighet för Windows{#client-console-availability-for-windows}
+# Klientkonsolens tillgänglighet i Windows{#client-console-availability-for-windows}
 
 För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen.
 
@@ -58,4 +56,3 @@ Om alternativet har valts kan du återställa den här uppmaningen. Det är bara
    ```
 
 1. Ta bort posten **confAdvisedUpgrade** och stäng Registereditorn.
-
