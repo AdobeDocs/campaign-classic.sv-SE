@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Användningsfall: skapa ett referensformulär"'
 description: '"Användningsfall: skapa ett referensformulär"'
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Användningsfall: skapa ett hänvisningsformulär{#use-case-creating-a-refer-a-friend-form}
 
@@ -126,4 +124,3 @@ Så här konfigurerar och skapar du referensblocket:
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Deras profil innehåller den information som anges av deras referent. Den lagras baserat på de konfigurationer som anges i formulärskriptet. Om de bestämmer sig för att prenumerera på nyhetsbrevet sparas de i mottagartabellen.
-
