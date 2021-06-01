@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 3%
@@ -34,4 +34,4 @@ Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** 
 
 >[!NOTE]
 >
->Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i distributionsguiden. Se [Övervakningströsklar](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i distributionsguiden. Se [Skärmtrösklar](../../message-center/using/additional-configurations.md#monitoring-thresholds).
