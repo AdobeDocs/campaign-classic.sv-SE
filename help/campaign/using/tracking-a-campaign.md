@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Spåra en kampanj
 description: Spåra en kampanj
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
 
 ---
-
 
 # Spåra en kampanj{#tracking-a-campaign}
 
@@ -104,4 +102,3 @@ Kampanjpaket som redan har publicerats kan initieras om, ändras och göras till
 >[!NOTE]
 >
 >Du kan även initiera om avbrutna kampanjpaket.
-
