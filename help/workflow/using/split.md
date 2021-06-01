@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
 
 ---
-
 
 # Dela{#split}
 
