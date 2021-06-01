@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Spåra en webbapplikation
 description: Spåra en webbapplikation
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-
-# Spåra besök i ett webbprogram{#tracking-a-web-application}
+# Spåra besök i en webbapplikation{#tracking-a-web-application}
 
 Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE etc.).
 
@@ -74,4 +72,3 @@ När du använder webbgränssnittet måste spårningstaggar infogas från sidege
 Med ikonen **[!UICONTROL Display blocks]** kan du visa antalet spårningstaggar som har definierats för sidan.
 
 ![](assets/trackers_4.png)
-
