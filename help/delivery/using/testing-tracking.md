@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Testa spårning
 description: Testa spårning
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 3%
 
 ---
-
 
 # Testa spårning{#testing-tracking}
 
@@ -39,4 +37,3 @@ Du kan testa spårning på spegelsidor, e-postloggar och länkar. Så här gör 
    Om du vill kontrollera spårningen av e-postloggen söker du efter värdena **Öppna** och **[!UICONTROL Email click]** i kolumnen **Typ**.
 
    Om de öppna loggarna inte visas går du till leveransen och öppnar dess **Egenskaper** för att kontrollera att både **Aktivera spårning** och **[!UICONTROL Opens tracking]** alternativ är markerade.
-
