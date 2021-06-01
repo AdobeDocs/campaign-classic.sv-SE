@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schemastruktur
 description: Schemastruktur
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
 
 ---
-
 
 # Schemastruktur{#schema-structure}
 
@@ -486,6 +484,7 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 >
 >* **location/@** cityis not valid; använd  **`[location/@city]`**
 >* **`[@email]`** och  **@** emailare-motsvarighet
+
 >
 
 
@@ -529,4 +528,3 @@ Resultat av beräknad sträng för en mottagare: **Gör John (john.doe@aol.com)*
 >[!NOTE]
 >
 >Om schemat inte innehåller någon beräkningssträng fylls en beräkningssträng i som standard med värdena för schemats primärnyckel.
-
