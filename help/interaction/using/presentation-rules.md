@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Presentationsregler
 description: Presentationsregler
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
 
 ---
-
 
 # Presentationsregler{#presentation-rules}
 
