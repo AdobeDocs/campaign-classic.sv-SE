@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Övervaka körning av jobb
 description: Lär dig hur du övervakar körning av import- och exportjobb.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# Körning av övervakningsjobb {#monitoring-job-execution}
+# Övervaka körning av jobb {#monitoring-job-execution}
 
 Du kan spåra körningen av import- och exportjobb direkt i listan över import-/exportjobb.
 
