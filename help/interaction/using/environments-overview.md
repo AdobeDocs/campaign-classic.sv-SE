@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Miljööversikt
 description: Miljööversikt
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
 
 ---
-
 
 # Miljööversikt{#environments-overview}
 
