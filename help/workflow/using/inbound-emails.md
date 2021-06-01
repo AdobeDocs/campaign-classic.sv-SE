@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inkommande e-postmeddelanden
 description: Läs mer om arbetsflödesaktiviteten för inkommande e-post
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
 
 ---
-
 
 # Inkommande e-postmeddelanden{#inbound-emails}
 
@@ -79,4 +77,3 @@ På den första fliken i aktiviteten **Inkommande e-post** kan du ange parametra
    ![](assets/email_rec_edit_3.png)
 
    Konfigurationen är densamma som för schemaläggningsaktiviteten. Se [Förfallodatum](../../workflow/using/defining-approvals.md).
-
