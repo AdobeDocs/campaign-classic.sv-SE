@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Indikatorberäkning
 description: Indikatorberäkning
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2972'
 ht-degree: 1%
 
 ---
-
 
 # Indikatorberäkning {#indicator-calculation}
 
@@ -246,7 +244,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> Summan av alla @totalClicks för vilka URL-kategorin är lika med "twitter".<br /> </td> 
+   <td> Summan av alla @totalClicks som URL-kategorin är lika med "twitter".<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -371,8 +369,8 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
   <tr> 
    <td> Aktier<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> URL-kategorin ingår i "email", "facebook", "twitter", "delicious", "digg", "google", "linkedin"<br /> Antal alla @totalClicks med en URL-kategori som är lika med "email", "facebook", "twitter", "delicious", "digg", "google" eller "linkedin". a1/&gt;<br /> </td> 
-   <td> count (Iif([url/@category] IN (email, 'facebook', 'twitter', 'delicious', 'digg', 'google', 'linkedin'), @totalClicks, 0))<br /> </td> 
+   <td> URL-kategorin ingår i"email","facebook","twitter","delicious","digg","google","linkedin"<br /> Antal alla @totalClicks med en URL-kategori som är lika med"email", "facebook", "twitter", "delicious", "digg", "google" eller "linkedin".<br /> </td> 
+   <td> count (Iif([url/@category] IN (email', 'facebook', 'twitter', 'delicious', 'digg', 'google', 'linkedin'), @totalClicks, 0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
