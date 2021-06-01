@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Moduler och vanliga problem
 description: Moduler och vanliga problem
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 5%
 
 ---
-
 
 # Moduler och vanliga problem{#modules-and-frequent-issues}
 
@@ -85,4 +83,3 @@ Här är en lista över moduler som påverkas av vanliga problem:
   </tr> 
  </tbody> 
 </table>
-
