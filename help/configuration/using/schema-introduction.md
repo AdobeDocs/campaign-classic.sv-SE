@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Element och attribut
 description: Element och attribut
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
-
 
 # Schemareferens {#schema-reference}
 
@@ -30,12 +28,12 @@ Referenslista:
 * [Element](schema/element.md)
 * [Uppräkning](schema/enumeration.md)
 * [Hjälp](schema/help.md)
-* [Gå med](schema/join.md)
+* [Sammanfoga](schema/join.md)
 * [Nyckel](schema/key.md)
 * [Nyckelfält](schema/keyfield.md)
 * [Metod](schema/method.md)
 * [Metoder](schema/methods.md)
-* [Param.](schema/param.md)
+* [Param](schema/param.md)
 * [Parametrar](schema/parameters.md)
 * [SrcSchema](schema/srcschema.md)
 * [Sysfilter](schema/sysfilter.md)
