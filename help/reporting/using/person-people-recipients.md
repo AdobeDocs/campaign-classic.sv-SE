@@ -98,7 +98,7 @@ Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att sa
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Mellanliggande summa | 3 | 1 | 2 |
+| Mellanliggande summa | 1 | 3 | 2 |
 
 Följande loggar sammanfaller med de öppna och två klick som utförts av den person som Florian vidarebefordrade e-postmeddelandet till:
 
@@ -120,7 +120,7 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Okänd person | - | +1 | - |
-| Mellanliggande summa | 3 | 2 | 2 |
+| Mellanliggande summa | 1 | 2 | 2 |
 
 ## Steg 4: Henry {#step-4--henry}
 
@@ -145,7 +145,7 @@ De öppna och fyra klick som Henry utför visas i följande loggar:
 | Florian | +1 | +1 | +1 |
 | Okänd person | - | +1 | - |
 | Henry | +1 | +4 | +1 |
-| Mellanliggande summa | 2 | 6 | 3 |
+| Mellanliggande summa | 2 | 6 | 1 |
 
 ## Sammanfattning {#summary}
 
