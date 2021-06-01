@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använda kuber för att utforska data
 description: Använda kuber för att utforska data
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
 
 ---
-
 
 # Använda kuber för att utforska data{#using-cubes-to-explore-data}
 
@@ -169,4 +167,3 @@ Så här skapar du en tabell och utforskar data i en kub:
    ![](assets/s_advuser_cube_in_report_02.png)
 
    Detta gör att du kan skapa rapporten som ska visas. Mer information finns i [Steg 2 - Markera rader och kolumner](#step-2---selecting-lines-and-columns).
-
