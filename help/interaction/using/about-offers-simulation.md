@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om att simulera erbjudanden
 description: Om att simulera erbjudanden
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
 
 ---
-
 
 # Om att simulera erbjudanden{#about-offers-simulation}
 
@@ -50,7 +48,7 @@ Så här kör du en simulering av dina erbjudanden:
 
    ![](assets/offer_simulation_004.png)
 
-1. Lägg till rapportaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
+1. Lägg till rapporteringsaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
 
    Mer information finns i [Lägga till rapporteringsaxlar](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
