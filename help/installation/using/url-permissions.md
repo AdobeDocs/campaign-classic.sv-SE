@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera URL-behörigheter
 description: Lär dig hur du konfigurerar URL-behörigheter
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814,6fe8da3b-57b9-4a69-8602-a03993630b27
-translation-type: tm+mt
-source-git-commit: 5d8d9e6ba41f94179bbf5f6d41f86267381b9b93
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 23%
@@ -57,6 +55,6 @@ Mer information finns i följande avsnitt:
 
 * [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 * [Värdbaserade modeller](hosting-models.md)
-* [Konfiguration av kampanjservern](configuring-campaign-server.md)
+* [Konfiguration av Campaign-server](configuring-campaign-server.md)
 * [Konfigurationsfilsparametrar för kampanjserver](the-server-configuration-file.md)
 * [Checklista för säkerhet och integritet](get-started-security-privacy.md)
