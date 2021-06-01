@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Uppdatera data
 description: Läs mer om arbetsflödesaktiviteten Uppdatera data
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
 
 ---
-
 
 # Uppdatera data{#update-data}
 
