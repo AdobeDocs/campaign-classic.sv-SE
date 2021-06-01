@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: fded088a-11a2-4b87-a368-7b197334aca4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
 
 ---
-
 
 # Protokoll och inställningar för SMS-koppling {#sms-connector-protocol}
 
@@ -825,7 +823,7 @@ Om du har flera konton på samma Adobe Campaign-instans som ansluter till samma 
 ### Aktivera utförliga SMPP-spår under kontroller {#enable-verbose}
 
 Du bör alltid aktivera utförliga SMPP-spår under kontroller.
-Även om du inte kan kontrollera loggarna själv är det enklare för [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) att hjälpa dig.
+Även om du inte kan kontrollera loggarna själv är det enklare för [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) att hjälpa dig.
 
 ### Testa ditt SMS {#test}
 
