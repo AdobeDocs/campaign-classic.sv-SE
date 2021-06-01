@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om flödeskontrollaktiviteter
 description: Om flödeskontrollaktiviteter
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 7%
 
 ---
-
 
 # Om flödeskontrollaktiviteter{#about-flow-control-activities}
 
@@ -32,4 +30,3 @@ Följande aktiviteter är databasaktiviteter: Deras huvuduppgift är att samordn
 * **Godkännande**: Med kan du skicka ett e-postmeddelande till en operator eller en grupp operatorer och vänta på godkännande för att fortsätta med körningen. Se avsnittet [Godkännande](../../workflow/using/approval.md).
 * **Varning**: gör att du kan skicka en varning till en operator eller grupp med operatorer. Se avsnittet [Varning](../../workflow/using/alert.md).
 * **Aktivitet**: I kan du konfigurera körning av uppgifter. Se avsnittet [Aktivitet](../../workflow/using/task.md).
-
