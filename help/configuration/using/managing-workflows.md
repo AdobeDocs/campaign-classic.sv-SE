@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera arbetsflöden
 description: Hantera arbetsflöden
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%
 
 ---
-
 
 # Hantera arbetsflöden{#managing-workflows}
 
@@ -28,4 +26,3 @@ Alla aktiviteter som används i arbetsflödet använder därför din anpassade t
 Mer information om arbetsflöden finns i [det här avsnittet](../../workflow/using/about-workflows.md).
 
 ![](assets/cfg_external_table_workflow.png)
-
