@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använda den lokala godkännandeaktiviteten
 description: Lär dig hur du använder den lokala godkännandeaktiviteten
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
 
 ---
-
 
 # Använda den lokala godkännandeaktiviteten{#using-the-local-approval-activity}
 
@@ -219,4 +217,3 @@ På den här fliken visas följande information:
 På fliken **[!UICONTROL Targeted]** i godkännandeloggen visas en lista över målmottagare och deras godkännandestatus. Du kan ändra den här statusen om det behövs.
 
 ![](assets/local_validation_admin_6.png)
-
