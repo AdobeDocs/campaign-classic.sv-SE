@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Funktionsmatris för Campaign On-lokalt, Hybrid och Hosted
 description: Lär dig de viktigaste skillnaderna mellan värdbaserade och lokala distributioner
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
-
 
 # Kapacitetsmatris per modell{#capability-matrix-per-model}
 
@@ -27,7 +25,7 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 
 | Funktion | Värdbaserad | Hybrid | Lokalt | Detaljer |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Konfigurera Campaign-server | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/the-server-configuration-file.md) |
+| Konfigurera Campaign-servern | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/the-server-configuration-file.md) |
 | BCC för e-post | On-demand | On-demand | Tillgänglig | [Läs mer](../../installation/using/email-archiving.md) |
 | Hantera körningsinstans för Message Center | On-demand | On-demand | Tillgänglig | [Läs mer](../../message-center/using/about-transactional-messaging.md) |
 | Hantera en plattform med flera leverantörer | On-demand | On-demand | Tillgänglig | [Läs mer](../../installation/using/mid-sourcing-server.md) |
@@ -56,5 +54,5 @@ Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) fö
 * [Versionsinformation](../../rn/using/latest-release.md)
 * [Campaign Classic-uppgraderingar](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard] releaser](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard]-versioner ](../../rn/using/gold-standard.md)
 * [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
