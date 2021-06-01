@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kontrollregler
 description: Kontrollregler
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
 
 ---
-
 
 # Kontrollregler{#control-rules}
 
@@ -29,7 +27,7 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 * **[!UICONTROL Message size approval]** (mobil): kontrollerar storleken på SMS-meddelanden.
 * **[!UICONTROL Validity period check]** (e-post): kontrollerar att giltighetsperioden för leveransen är tillräckligt lång för att skicka alla meddelanden.
 * **[!UICONTROL Proof size check]** (alla kanaler): genererar ett felmeddelande om målgruppen för korrektur överstiger 100 mottagare.
-* **[!UICONTROL Wave scheduling check]** (e-post): kontrollerar att den sista leveranshastigheten är planerad att påbörjas före utgången av giltighetsperioden, om leveransen delas upp i flera vågor.
+* **[!UICONTROL Wave scheduling check]** (e-post): kontrollerar att den sista leveranspvågen är planerad att påbörjas före utgången av giltighetsperioden, om leveransen delas upp i flera vågor.
 * **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälan (avanmälan)-URL i varje innehåll (HTML och Text).
 
 ## Skapa en kontrollregel {#creating-a-control-rule}
@@ -73,4 +71,3 @@ Använd följande steg:
    När analysen är klar är knappen **[!UICONTROL Confirm delivery]** inte tillgänglig.
 
    ![](assets/campaign_opt_create_control_06.png)
-
