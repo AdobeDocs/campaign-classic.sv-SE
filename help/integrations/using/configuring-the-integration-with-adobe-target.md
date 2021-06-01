@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera integreringen med Adobe Target
 description: Konfigurera integreringen med Adobe Target
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-
 # Konfigurera integreringen med Adobe Target{#configuring-the-integration-with-adobe-target}
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 För att kunna använda integrationen mellan Adobe Campaign och Adobe Target måste du ha:
 
@@ -34,6 +32,4 @@ Så här konfigurerar du Adobe Campaign:
 
    * **[!UICONTROL TNT_EdgeServer]** : Adobe Target-server som används för integreringen. Det här alternativet är redan markerat som standard. Detta värde motsvarar Adobe Target **[!UICONTROL Domain Server]**, följt av värdet **/m2**. Till exempel: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** : Adobe Target organisationsnamn. Detta värde motsvarar namnet på Adobe Target **[!UICONTROL Client]**.
-
    ![](assets/tar_options.png)
-
