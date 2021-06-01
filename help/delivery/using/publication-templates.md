@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Publiceringsmallar
 description: Publiceringsmallar
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
 
 ---
-
 
 # Publiceringsmallar{#publication-templates}
 
@@ -53,7 +51,7 @@ En omformningsmall måste läggas till för varje utdatadokument. Du kan skapa s
 
 Fältet **[!UICONTROL Name of template]** är en kostnadsfri etikett som beskriver återgivningstypen vid utdata. Publikationsinställningarna är tillgängliga på flikarna för varje omformningsmall.
 
-### Återger {#rendering}
+### Återgivning {#rendering}
 
 Välj fliken **[!UICONTROL Rendering]**:
 
