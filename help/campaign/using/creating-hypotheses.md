@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa hypoteser
 description: Lär dig hur du skapar hypoteser i svarshanteraren för Campaign
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
 
 ---
-
 
 # Skapa hypoteser{#creating-hypotheses}
 
@@ -181,4 +179,3 @@ I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Den här 
 1. Gå till noden **[!UICONTROL Campaign management > Measurement hypotheses]** i Adobe Campaign-trädet för att kontrollera indikatorerna som beräknats med hypotesen.
 
    ![](assets/response_hypothesis_delivery_example_010.png)
-
