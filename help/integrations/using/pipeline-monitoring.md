@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera integreringen
 description: Konfigurera integreringen
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+exl-id: 84399496-33fd-4936-85e7-32de8503740f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
 
 ---
-
 
 # Övervaka pipelines {#pipeline-monitoring}
 
