@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Om fröadresser
-description: Om fröadresser
+title: Om dirigerade adresser
+description: Om dirigerade adresser
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
 
 ---
 
-
-# Om fröadresser{#about-seed-addresses}
+# Om dirigerade adresser{#about-seed-addresses}
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör.
 
