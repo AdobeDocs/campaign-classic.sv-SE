@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Interaktion och erbjudandehantering
 description: Skicka de bästa erbjudandena till dina kontakter baserat på regler för behörighet.
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 6%
 
 ---
-
 
 # Interaktion och erbjudandehantering{#interaction-and-offer-management}
 
