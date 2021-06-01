@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om leveransbarhet i Adobe Campaign Classic
 description: Läs mer om hur du hanterar leveranser i Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: d6a581ae86e50c17ac20fe54baf305b864e11790
+exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 4%
 
 ---
-
 
 # Kontrollera meddelandeinnehåll{#control-message-content}
 
