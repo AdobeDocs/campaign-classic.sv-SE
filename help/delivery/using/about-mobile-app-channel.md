@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om mobilappskanal i Adobe Campaign Classic
 description: I det här avsnittet finns allmän information om mobilappskanalen i Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Kom igång med mobilappskanalen{#about-mobile-app-channel}
 
@@ -103,4 +101,3 @@ Använd följande kommandon för att kontrollera att den fungerar som den ska:
    ```
 
 Med iOS HTTP/2-kontakten måste MTA, webbservern och arbetsflödesservern kunna kontakta APN på port 443.
-
