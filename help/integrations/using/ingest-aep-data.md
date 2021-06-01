@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Infoga Adobe Experience Platform-segment i Campaign
 description: Lär dig hur du kan få in Adobe Experience Platform-målgrupper i Campaign Classic.
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 9b3254c16eed784846db87d27f9f5de009dafdc3
+exl-id: 6db8a653-b649-402c-8814-24826edadba7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
 
 ---
-
 
 # Infoga Adobe Experience Platform-segment i Campaign {#destinations}
 
