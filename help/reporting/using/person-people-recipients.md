@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rapporter om leveranser
 description: Rapporter om leveranser
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 6%
 
 ---
-
 
 # Person/personer och mottagare {#person-people-and-recipients}
 
@@ -100,7 +98,7 @@ Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att sa
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Mellanliggande summa | 1 | 1 | 2 |
+| Mellanliggande summa | 3 | 1 | 2 |
 
 Följande loggar sammanfaller med de öppna och två klick som utförts av den person som Florian vidarebefordrade e-postmeddelandet till:
 
@@ -122,7 +120,7 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Okänd person | - | +1 | - |
-| Mellanliggande summa | 1 | 2 | 2 |
+| Mellanliggande summa | 3 | 2 | 2 |
 
 ## Steg 4: Henry {#step-4--henry}
 
@@ -157,7 +155,7 @@ På leveransnivå har vi följande resultat:
 
 * **[!UICONTROL Clicks]** (mottagare som klickade): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (personer som klickade): 6
-* **[!UICONTROL Distinct opens for the population reached]** (mottagare som öppnat): 1
+* **[!UICONTROL Distinct opens for the population reached]** (mottagare som öppnat): 3
 
 Raw-reaktivitet och uppskattning av framåtriktade beräkningar görs enligt följande:
 
@@ -173,3 +171,4 @@ Raw-reaktivitet och uppskattning av framåtriktade beräkningar görs enligt fö
 >* A representerar indikatorn **[!UICONTROL Clicks]** (mottagarna som klickade).
 >* B representerar indikatorn **[!UICONTROL Distinct clicks for the population reached]** (personer som klickade).
 >* C representerar indikatorn **[!UICONTROL Distinct opens for the population reached]** (mottagarna som öppnade).
+
