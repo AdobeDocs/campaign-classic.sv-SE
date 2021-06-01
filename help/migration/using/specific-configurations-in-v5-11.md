@@ -112,7 +112,7 @@ Ett alternativ har lagts till för att inaktivera automatisk migrering av navige
 
 * Internt namn: NlMigration_KeepFolderStructure
 * Datatyp: Heltal
-* Värde (text): 1
+* Värde (text): 3
 
 Om du använder det här alternativet måste du efter migreringen ta bort gamla mappar, lägga till nya mappar och köra alla nödvändiga kontroller.
 
