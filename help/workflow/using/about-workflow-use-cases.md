@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om användningsfall för arbetsflöden
 description: Lär dig mer om användningsfall som du kan använda med arbetsflöden i Campaign Classic.
@@ -8,14 +7,13 @@ content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 68%
 
 ---
-
 
 # Om användningsfall för arbetsflöden {#about-workflow-use-cases}
 
@@ -35,7 +33,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [E-postberikande med anpassade datumfält](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 * [Automatisera skapande, redigering och publicering av innehåll](../../delivery/using/automating-via-workflows.md#examples)
 
-## Övervaka {#monitoring}
+## Övervakning {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
