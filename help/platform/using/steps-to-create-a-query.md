@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Steg för att skapa en fråga
 description: Steg för att skapa en fråga
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
 
 ---
-
 
 # Steg för att skapa en fråga{#steps-to-create-a-query}
 
@@ -138,4 +136,3 @@ I det här exemplet sorteras data i stigande ordning baserat på mottagarens ål
 >[!NOTE]
 >
 >Som standard visas endast de första 200 raderna i **[!UICONTROL Data preview]**-fönstret. Om du vill ändra detta anger du ett tal i rutan **[!UICONTROL Lines to display]** och klickar på **[!UICONTROL Start the preview of the data]**.
-
