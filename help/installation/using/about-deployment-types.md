@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om driftsättningstyper
 description: Om driftsättningstyper
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 6%
 
 ---
-
 
 # Om driftsättningstyper{#about-deployment-types}
 
@@ -26,4 +24,3 @@ Om det finns en konfiguration på flera datorer behöver du inte använda samma 
 >De huvudsakliga installationskonfigurationsstegen kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att konfigurera server- och instanskonfigurationsfilerna.
 >
 >Mer information om de viktigaste skillnaderna mellan distributioner finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [Funktionsskillnaderna för värdbaserade och lokala distributioner](../../installation/using/capability-matrix.md).
-
