@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med A/B-tester
 description: Läs mer om A/B-testning i Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-
-# Kom igång med A/B-testning {#get-started-a-b-testing}
+# Kom igång med A/B-tester {#get-started-a-b-testing}
 
 A/B-testning gör det möjligt att jämföra flera versioner av en leverans med varandra för att identifiera vilken som kommer att få störst effekt på målpopulationen.
 
