@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bästa praxis för innehållsredigering
 description: Bästa praxis för innehållsredigering
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
 
 ---
-
 
 # Bästa praxis för innehållsredigering{#content-editing-best-practices}
 
@@ -94,4 +92,3 @@ I den övre delen av redigeraren visas meddelanden om innehållets status. Färg
 * Det finns inga fält eller anpassningsblock att konfigurera.
 * Leveransinnehållet är klart. Kör analysen igen för att tillämpa ändringarna.
 * Leveransen är klar att skickas.
-
