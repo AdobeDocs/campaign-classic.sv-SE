@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definiera ett webbformulärs layout
 description: Definiera ett webbformulärs layout
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 2%
 
 ---
-
 
 # Definiera ett webbformulärs layout{#defining-web-forms-layout}
 
@@ -91,4 +89,3 @@ Följande justeringar stöds:
 * Vänster/höger: etiketten placeras till höger eller till vänster om fältet,
 * Över/under: Etiketten är placerad ovanför eller under fältet.
 * Dold: etiketten inte visas.
-
