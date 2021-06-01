@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Åtkomst till marknadsföringskampanjer
 description: Åtkomst till marknadsföringskampanjer
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 1%
 
 ---
-
 
 # Åtkomst till marknadsföringskampanjer{#accessing-marketing-campaigns}
 
@@ -117,7 +115,7 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkänn
 >
 >Konfigurationen av kampanjmallar presenteras i [Kampanjmallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-#### Schemalägg {#schedule}
+#### Schema {#schedule}
 
 En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global vy över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
 
