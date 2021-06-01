@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Vanliga frågor och svar om inställningar i Campaign
 description: Vanliga frågor och svar om Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
-
 
 # Vanliga frågor och svar om inställningar i Campaign {#settings-faq}
 
@@ -41,7 +39,7 @@ Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Cam
 
 ## Hur konfigurerar man e-postmeddelandets levererbarhet? {#how-to-configure-email-deliverability-}
 
-Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) kan du läsa tekniska rekommendationer för leveransförmåga för att förstå hur du konfigurerar instansen för att maximera leveransen av Campaign-funktioner.
+Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) kan du läsa tekniska rekommendationer för leveransförmåga för att förstå hur du konfigurerar instansen för att maximera leveransen av Campaign-funktioner.
 
 [Klicka här för att läsa mer](../../delivery/using/about-deliverability.md).
 
