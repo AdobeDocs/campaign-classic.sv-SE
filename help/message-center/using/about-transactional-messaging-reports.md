@@ -1,22 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Om rapporter om transaktionsmeddelanden
-description: Om rapporter om transaktionsmeddelanden
+title: Få tillgång till transaktionsrapporter
+description: Lär dig hur du får tillgång till transaktionsrapporter från Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+exl-id: 42d43d67-7660-4d81-9280-10f030aa8f0e
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 26%
+source-wordcount: '51'
+ht-degree: 0%
 
 ---
 
+# Få åtkomst till transaktionsmeddelanderapporter {#about-transactional-messaging-reports}
 
-# Om rapporter om transaktionsmeddelanden{#about-transactional-messaging-reports}
+Adobe Campaign erbjuder flera rapporter som gör att du kan styra aktiviteten och köra körningsinstanserna smidigt.
 
-Adobe Campaign erbjuder flera rapporter som gör att du kan styra aktiviteten och köra körningsinstanserna smidigt. Du kommer åt dessa rapporter från meddelandecentret via fliken **[!UICONTROL Reports]** i kontrollinstansen.
+Du kommer åt dessa Message Center-rapporter på fliken **[!UICONTROL Reports]** i **kontrollinstansen**.
 
 ![](assets/messagecenter_reporting_002.png)
