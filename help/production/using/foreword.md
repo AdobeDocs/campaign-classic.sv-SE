@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Förord
 description: Förord
 audience: production
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c9e92fec-383e-46ba-bce1-183ac8f637de
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 3%
 
 ---
-
 
 # Förord{#foreword}
 
