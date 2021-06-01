@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Anslutningsgränser
 description: Anslutningsgränser
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
 
 ---
-
 
 # Anslutningsgränser{#connection-thresholds}
 
@@ -58,4 +56,3 @@ Det finns tre olika tröskelvärden:
               <pool aliveTestDelaySec="600" freeCnx="0" maxCnx="90" maxIdleDelaySec="1200"/>
             </dataSource>
       ```
-
