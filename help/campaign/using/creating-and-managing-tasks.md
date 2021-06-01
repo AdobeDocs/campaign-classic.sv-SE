@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa och hantera uppgifter
 description: Skapa och hantera uppgifter
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3732'
 ht-degree: 0%
 
 ---
-
 
 # Skapa och hantera uppgifter{#creating-and-managing-tasks}
 
@@ -511,4 +509,3 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
    >[!NOTE]
    >
    >När en uppgift är slutförd kan den ansvariga personen återinitiera dess livscykel. Det gör du genom att öppna aktiviteten och klicka på länken **[!UICONTROL Reset task to execute it again...]** längst ned på kontrollpanelen.
-
