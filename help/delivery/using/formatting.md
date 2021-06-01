@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Formatera
-description: Formatera
+title: Formatering
+description: Formatering
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
 
 ---
 
-
-# Formatera{#formatting}
+# Formatering{#formatting}
 
 ## JavaScript-mallar {#javascript-templates}
 
