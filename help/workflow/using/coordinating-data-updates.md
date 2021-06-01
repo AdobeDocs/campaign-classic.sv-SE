@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Samordna datauppdateringar
 description: Samordna datauppdateringar
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
 
 ---
-
 
 # Samordna datauppdateringar{#coordinating-data-updates}
 
@@ -57,4 +55,3 @@ Följ stegen nedan för att skapa arbetsflödet:
 
 * [Förhindra samtidiga körningar](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
 * [Uppdatera dataaktivitet](../../workflow/using/update-data.md)
-
