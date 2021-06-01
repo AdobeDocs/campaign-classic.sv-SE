@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skicka med förbättrad MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och detaljerna med att skicka e-post med Adobe Campaign Enhanced MTA.
@@ -7,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
