@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datascheman
 description: Datascheman
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
 
 ---
-
 
 # Datascheman{#data-schemas}
 
@@ -167,7 +165,7 @@ Här är vårt exempelschema med dess **beräkningssträng**:
 </srcSchema>
 ```
 
-## Redigera scheman{#editing-schemas}
+## Redigera scheman {#editing-schemas}
 
 I redigeringsfältet kan du ange XML-innehållet i källschemat:
 
