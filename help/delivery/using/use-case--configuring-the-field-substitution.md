@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Användningsfall: konfigurera fältersättning"'
 description: '"Användningsfall: konfigurera fältersättning"'
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
 
 ---
-
 
 # Användningsfall: konfigurera fältersättning{#use-case-configuring-the-field-substitution}
 
