@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definiera egenskaper för webbformulär
 description: Definiera egenskaper för webbformulär
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
 
 ---
-
 
 # Definiera egenskaper för webbformulär{#defining-web-forms-properties}
 
@@ -123,7 +121,7 @@ Med alternativet **[!UICONTROL Use a specific account]** kan du begränsa läs- 
 
 ## Formulär-URL-parametrar {#form-url-parameters}
 
-Du kan lägga till ytterligare parametrar i URL:en för ett formulär för att anpassa dess innehåll och initiera ett sammanhang (språk, krypterat mottagar-ID, företag, beräknad formel som lagras i en variabel osv.). Detta gör att du kan ge åtkomst till ett formulär via flera olika URL:er och anpassa sidinnehållet baserat på värdet på de parametrar som anges i URL:en.
+Du kan lägga till ytterligare parametrar i URL:en för ett formulär för att anpassa dess innehåll och initiera ett sammanhang (språk, krypterat mottagar-ID, företag, beräknad formel som lagras i en variabel osv.). På så sätt kan du ge åtkomst till ett formulär via flera olika URL:er och anpassa sidinnehållet baserat på värdet på de parametrar som anges i URL:en.
 
 Som standard har Adobe Campaign parametrar för att förhandsgranska formuläret och kontrollera fel. Du kan skapa nya inställningar som är länkade till formuläret, som kan använda värdena för ett fält i databasen eller en lokal variabel.
 
@@ -175,4 +173,3 @@ Om du vill konfigurera det här formuläret skapar du en testruta och placerar d
 I testrutan kan du konfigurera sidordningsvillkoren:
 
 ![](assets/s_ncs_admin_survey_test_box.png)
-
