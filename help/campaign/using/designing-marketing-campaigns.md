@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Utforma och genomför marknadsföringskampanjer
 description: Definiera, optimera, genomför och analysera marknadsföringskampanjer.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
-
 
 # Utforma och genomför marknadsföringskampanjer{#designing-marketing-campaigns}
 
