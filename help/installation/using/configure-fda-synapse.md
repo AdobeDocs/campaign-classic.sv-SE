@@ -1,28 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera åtkomst till Synapse
 description: Lär dig hur du konfigurerar åtkomst till Synapse i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
 
 ---
 
-
 # Konfigurera åtkomst till Azure synapse {#configure-access-to-azure-synapse}
 
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Microsoft Azure synapse Analytics.
 
 1. Konfigurera Azure synapse på [CentOS](#azure-centos), [Windows](#azure-windows) eller [Debian](#azure-debian)
-1. Konfigurera det externa Azure synapse [kontot](#azure-external) i Campaign
+1. Konfigurera det externa Azure synapse-kontot [i Campaign](#azure-external)
 
-## azure synapse i CentOS {#azure-centos}
+## azure synapse på CentOS {#azure-centos}
 
 >[!CAUTION]
 >
@@ -98,7 +96,7 @@ Så här konfigurerar du Azure synapse i CentOS:
 
    >[!NOTE]
    >
-   >För att tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Om det är iptables kör du följande kommando:
 
@@ -189,7 +187,7 @@ Så här konfigurerar du Azure synapse på Debian:
 
    >[!NOTE]
    >
-   >För att tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till din offentliga IP-adress i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 
 ## azure synapse externt konto {#azure-external}
@@ -210,11 +208,10 @@ Följ stegen nedan för att skapa ditt externa [!DNL Azure Synapse]-konto:
 
    * **[!UICONTROL Type]**: azure synapse Analytics
 
-   * **[!UICONTROL Server]**: URL för Azure synapse-servern
+   * **[!UICONTROL Server]**: AZURE SYNAPSE-serverns URL
 
    * **[!UICONTROL Account]**: Användarens namn
 
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
    * **[!UICONTROL Database]**: Namn på databasen
-
