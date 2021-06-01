@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med behörigheter
 description: Lär dig hur du ger tillgång till Campaign-funktioner
-feature: Access Management
+feature: Åtkomsthantering
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 2%
+source-wordcount: '255'
+ht-degree: 5%
 
 ---
-
 
 # Kom igång med behörigheter{#access-management}
 
