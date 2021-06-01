@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Live-/designmiljöer
-description: Live-/designmiljöer
+title: Live- och designmiljöer
+description: Live- och designmiljöer
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
 
 ---
 
-
-# Live-/designmiljöer{#live-design-environments}
+# Live- och designmiljöer{#live-design-environments}
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -67,4 +65,3 @@ Som standard levereras Interaction med en förkonfigurerad miljö för att rikta
 >[!NOTE]
 >
 >Mer information om anonyma interaktioner i en inkommande kanal finns i [Anonyma interaktioner](../../interaction/using/anonymous-interactions.md).
-
