@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Dataextrahering (fil)
 description: Läs mer om arbetsflödesaktiviteten för dataextrahering (fil)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
 
 ---
-
 
 # Dataextrahering (fil){#extraction-file}
 
@@ -66,4 +64,3 @@ Här följer en lista över tillgängliga sammanställningsfunktioner:
 * **[!UICONTROL Minimum value]** beräkna minimivärdena för ett fält (numeriskt eller på annat sätt),
 * **[!UICONTROL Maximum value]** att beräkna de högsta värdena för ett fält (numeriskt eller på annat sätt),
 * **[!UICONTROL Average]** för att beräkna medelvärdet för ett numeriskt fälts värden.
-
