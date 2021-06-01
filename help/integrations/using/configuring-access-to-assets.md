@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera åtkomst till resurser
 description: Konfigurera åtkomst till resurser
@@ -7,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -31,7 +30,7 @@ I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign 
 
 ## Integrera med Experience Cloud Assets {#integrating-with-experience-cloud-assets}
 
-För att kunna använda integrationen mellan Adobe Campaign och Experience Cloud Assets måste du ha:
+För att kunna använda integreringen mellan Adobe Campaign och Experience Cloud Assets måste du ha:
 
 * En Adobe Experience Cloud-organisation
 * Verifieringsläget Adobe IMS är aktiverat
