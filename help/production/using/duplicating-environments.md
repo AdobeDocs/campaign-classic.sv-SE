@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Duplicera miljöer
 description: Duplicera miljöer
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
 
 ---
-
 
 # Duplicera miljöer{#duplicating-environments}
 
@@ -67,8 +65,9 @@ Följande steg måste utföras med stor noggrannhet: vissa processer kanske fort
 
 >[!IMPORTANT]
 >
->* Följande procedur gäller för PostgreSQL-språk. Om SQL-språket är ett annat (t.ex. Oracle) måste SQL-frågorna anpassas.
+>* Följande procedur gäller för PostgreSQL-språk. Om SQL-språket är ett annat (till exempel Oracle) måste SQL-frågorna anpassas.
 >* Nedanstående kommandon används i kontexten för en **prod**-instans och en **dev**-instans under PostgreSQL.
+
 >
 
 
