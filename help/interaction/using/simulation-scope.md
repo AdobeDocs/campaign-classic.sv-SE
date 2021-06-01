@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Simuleringsomfång
 description: Simuleringsomfång
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 2%
 
 ---
-
 
 # Simuleringsomfång{#simulation-scope}
 
@@ -51,4 +49,3 @@ Du kan förbättra simuleringsanalysen genom att lägga till rapportaxlar på m�
 Det gör du genom att klicka på knappen **[!UICONTROL Add]** och välja lämpliga fält. Axlar används för att beräkna simuleringen och visas i analysrapporten. Mer information finns i [Simuleringsspårning](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
-
