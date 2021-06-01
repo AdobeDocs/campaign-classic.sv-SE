@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera åtkomst till rapporten
 description: Konfigurera åtkomst till rapporten
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurera åtkomst till rapporten{#configuring-access-to-the-report}
 
@@ -136,4 +134,3 @@ Det är obligatoriskt att publicera rapporten för att dela den med andra operat
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
 1. Klicka på ikonen **[!UICONTROL Enlarge]** för att öppna rapporten i en webbläsare.
-
