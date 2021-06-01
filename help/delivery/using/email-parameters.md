@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera e-postparametrar i Adobe Campaign Classic
 description: Lär dig mer om alternativ och inställningar som är specifika för e-postleverans.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: e84387c7c396c60c429c3f625870a97a7fdaef5a
+exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
 
 ---
-
 
 # E-postparametrar {#email-parameters}
 
