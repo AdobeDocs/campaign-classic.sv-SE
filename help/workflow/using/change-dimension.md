@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Dimensionsändring
-description: Dimensionsändring
+title: Ändra dimension
+description: Ändra dimension
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
 
 ---
 
-
-# Dimensionsändring{#change-dimension}
+# Ändra dimension{#change-dimension}
 
 Med aktiviteten för att ändra dimension kan du ändra måldimensionen under målkonstruktionscykeln. Axelväxling beror på datamallen och indatamängden. På så sätt kan du till exempel växla från dimensionen &quot;kontrakt&quot; till dimensionen &quot;kunder&quot;.
 
@@ -80,4 +78,3 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
    ![](assets/wf_change-dimension_sample_06.png)
 
    ![](assets/wf_change-dimension_sample_07.png)
-
