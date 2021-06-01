@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Förgrening
 description: Läs mer om arbetsflödesaktiviteten för gafflar
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
+exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
 
 ---
-
 
 # Förgrening{#fork}
 
