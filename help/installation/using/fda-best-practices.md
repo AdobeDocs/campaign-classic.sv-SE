@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bästa praxis och begränsningar för FDA-kampanjer
 description: Lär dig bästa praxis och begränsningar när du arbetar med en extern databas (FDA)
@@ -7,8 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
