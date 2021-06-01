@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hoppa (startpunkt och slutpunkt)
 description: Hoppa (startpunkt och slutpunkt)
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
 
 ---
-
 
 # Hoppa (startpunkt och slutpunkt){#jump-start-point-and-end-point}
 
