@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 5%
+ht-degree: 35%
 
 ---
 
-# Spårade URL:er signaturproblem {#tracked-urls}
+# Signaturproblem med spårade URL:er {#tracked-urls}
 
 Efter de senaste ändringarna kan spårade URL-adresser misslyckas när URL-signaturen är aktiv i Campaign. Vissa postlådor kan påverkas mer än andra eftersom vissa företag har särskilda säkerhetsverktyg som kan påverka länkar och ändra URL-signaturmekanismen.
 
@@ -58,7 +56,7 @@ Följ stegen nedan:
 >Filen **config-`<instance>`.xml** åsidosätter inställningarna för **serverConf.xml**. Om **signEmailLinks** finns i **config-`<instance>`.xml** (där **instance** är namnet på din instans) måste den också vara **false**.
 
 
-**Vilken är effekten?**
+**Vad ändras?**
 
 Underhåll kräver högst 25 minuters driftstopp och under den här perioden fungerar inte alla leveranser, spårningslänkar och API-anrop.
 
@@ -66,5 +64,5 @@ När uppdateringen är klar fungerar alla länkar som förväntat.
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
