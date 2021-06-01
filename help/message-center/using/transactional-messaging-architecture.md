@@ -1,36 +1,52 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Campaign Classic transaktionsmeddelandearkitektur
-description: I det här avsnittet beskrivs Adobe Campaign Classic transaktionsmeddelandearkitektur.
+title: Transaktionsmeddelandens arkitektur
+description: I det här avsnittet beskrivs Adobe Campaign Classic transaktionsmeddelandearkitektur och de tillgängliga kanalerna för att leverera transaktionsmeddelanden.
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 2d30a70f8fbfb7a916638697c0f7a5060c2458ee
+exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
 
+# Transaktionsmeddelandens arkitektur {#transactional-messaging-architecture}
 
-# Transaktionsmeddelandets arkitektur{#transactional-messaging-architecture}
+Transaktionsmeddelanden bygger på en specifik arkitektur som består av flera instanser:
 
-## Om körnings- och kontrollinstanser {#about-execution-and-control-instances}
+* En **kontrollinstans** som meddelandemallarna skapas på.
 
-I Adobe Campaign har funktioner för transaktionsmeddelanden (även kallat Message Center) utformats för att stödja skalbarhet och tillhandahålla en tjänst dygnet runt. Den består av flera instanser:
-
-* en kontrollinstans som meddelandemallarna skapas i,
-* en eller flera körningsinstanser som tar emot händelser och levererar meddelanden.
-
-För att kunna använda dessa funktioner loggar Adobe Campaign-användare in på kontrollinstansen för att skapa transaktionsmeddelandemallar, generera meddelandeförhandsvisningen med hjälp av en startlista, visa rapporter och övervaka körningsinstanser.
-
-Körningsinstanser tar emot händelser, länkar dem till transaktionsmeddelandemallar och skickar ett personligt meddelande till varje mottagare.
+* En eller flera **körningsinstanser** som tar emot händelser och levererar meddelanden.
 
 ![](assets/messagecenter_diagram.png)
 
-## Stöd för flera kontrollinstanser {#supporting-several-control-instances}
+| Kontrollinstans | Körningsinstans |
+|--- |--- |
+| Adobe Campaign-användare loggar in på kontrollinstansen för att: <ul><li>Skapa mallar för transaktionsmeddelanden</li><li>Generera förhandsgranskning av meddelande med hjälp av en startvärdeslista</li><li>Visa rapporter</li><li>Övervaka körningsinstanserna</li></ul> | Körningsinstanser finns här för att: <ul><li>Ta emot händelser</li><li>Länka dem till transaktionsmeddelandemallar</li><li>Skicka ett personligt meddelande till varje mottagare</li></ul> |
+
+## Installera instanser {#installing-instances}
+
+Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe för mer information.
+
+>[!IMPORTANT]
+>
+>Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
+
+Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Mer information finns i [Lägga till en leveranskanal](#adding-a-delivery-channel).
+
+## Kontrollinstans {#control-instance}
+
+Om du vill installera kontrollinstansen på datorn väljer du **[!UICONTROL Transactional message control]**-paketet via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+
+![](assets/messagecenter_install_controlinstance_001.png)
+
+Detaljerade anvisningar för hur du konfigurerar kontrollinstansen finns i [det här avsnittet](../../message-center/using/configuring-instances.md#control-instance).
+
+### Stöd för flera kontrollinstanser {#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -42,31 +58,27 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 
 >[!NOTE]
 >
->Mer information om nödvändig konfiguration finns i [Använda flera kontrollinstanser](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances).
+>Mer information om nödvändig konfiguration finns i [Använda flera kontrollinstanser](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
-## Installerar instanser {#installing-instances}
+## Körningsinstans {#execution-instance}
 
-Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe för mer information.
+Om du vill installera en körningsinstans på datorn väljer du **[!UICONTROL Transactional message execution]**-paketet via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+
+![](assets/messagecenter_install_executioninstance_001.png)
+
+Detaljerade anvisningar för hur du konfigurerar en körningsinstans finns i [det här avsnittet](../../message-center/using/configuring-instances.md#execution-instance).
+
+## Tillgängliga leveranskanaler
+
+E-postkanalen är som standard tillgänglig. Om du vill leverera dina transaktionsmeddelanden i flera kanaler kan du lägga till andra kanaler (mobilkanal, mobilappskanal osv.).
 
 >[!IMPORTANT]
 >
->Kontrollinstansen och körningsinstansen/körningsinstanserna måste vara installerade på olika datorer. De kan inte dela samma Campaign-instans.
+>Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras innan du installerar Transactional-meddelandepaketet.
 
-Om du behöver använda flera kanaler måste du installera och konfigurera relaterade paket innan du installerar Transactional-meddelandepaket. Se [Lägga till en leveranskanal](#adding-a-delivery-channel).
+### Lägg till en leveranskanal {#adding-a-delivery-channel}
 
-* Om du vill installera kontrollinstansen på datorn väljer du modulen **[!UICONTROL Transactional message control]**.
-
-   ![](assets/messagecenter_install_controlinstance_001.png)
-
-* Om du vill installera körningsinstansen på datorn väljer du modulen **[!UICONTROL Transactional message execution]**.
-
-   ![](assets/messagecenter_install_executioninstance_001.png)
-
-## Lägga till en leveranskanal {#adding-a-delivery-channel}
-
-Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras innan du installerar Transactional-meddelandepaketet.
-
-Adobe rekommenderar att du alltid lägger till leveranskanalpaketet innan du installerar Transactional-meddelandepaketet.
+Adobe rekommenderar att du alltid lägger till leveranskanalpaketet **innan du installerar Transactional message package**.
 
 Om du har påbörjat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan bestämmer dig under projektet för att lägga till en ny kanal, kan du följa stegen nedan.
 
@@ -115,7 +127,7 @@ Create your delivery templates the way you would for an email campaign:
 
 You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
-## Transaktionsmeddelanden och push-meddelanden {#transactional-messaging-and-push-notifications}
+### Push-meddelanden för transaktioner {#transactional-messaging-and-push-notifications}
 
 I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 
@@ -162,7 +174,7 @@ Här är ett exempel på en händelse som innehåller den här informationen:
 >
 >Meddelandemallar skapas inte på samma sätt.
 
-## Transactional messaging and LINE {#transactional-messaging-and-line}
+### Transactional messaging and LINE {#transactional-messaging-and-line}
 
 I kombination med LINE Channel kan du med transaktionsmeddelanden skicka meddelanden i realtid på LINE-appen som är installerad på konsumentmobilenheter. Detta används för att skicka välkomstmeddelandet när en LINE-användare lägger till varumärkets sida.
 
@@ -237,4 +249,4 @@ Från **[!UICONTROL Explorer]**, i **[!UICONTROL Platform]** > **[!UICONTROL Ext
 
 
 
-1. Nu kan du börja skapa transaktionsmeddelanden. Se denna [sida](../../message-center/using/introduction.md) för mer information om detta.
+1. Nu kan du börja skapa transaktionsmeddelanden. Se denna [sida](../../message-center/using/creating-the-message-template.md) för mer information om detta.
