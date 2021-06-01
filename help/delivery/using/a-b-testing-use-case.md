@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Om det här användningsexemplet
+title: Om det här användningsfallet
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
-
 
 # Om det här användningsfallet {#about-use-case}
 
@@ -41,4 +39,4 @@ De viktigaste stegen för att utföra den här åtgärden är:
 **Relaterade ämnen:**
 
 * [Kom igång med A/B-tester](../../delivery/using/get-started-a-b-testing.md)
-* [Konfigurera A/B-testning](../../delivery/using/configuring-a-b-testing.md)
+* [Konfigurera A/B-tester](../../delivery/using/configuring-a-b-testing.md)
