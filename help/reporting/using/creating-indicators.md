@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa indikatorer
 description: Skapa indikatorer
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
 
 ---
-
 
 # Skapa indikatorer{#creating-indicators}
 
@@ -136,4 +134,3 @@ Så här gör du:
    Använd lämpliga ikoner för att göra detta.
 
    ![](assets/s_advuser_cube_wz_16.png)
-
