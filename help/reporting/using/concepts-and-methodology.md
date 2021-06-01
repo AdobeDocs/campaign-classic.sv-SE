@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Koncept och metodik
 description: Koncept och metodik
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
 
 ---
-
 
 # Bästa tillvägagångssätt för kuber{#concepts-and-methodology}
 
@@ -273,4 +271,3 @@ Om du vill markera en rad, kolumn eller cell vänsterklickar du på den. Om du v
 Filtret tillämpas automatiskt och läggs till i filterzonen ovanför rapporten.
 
 ![](assets/neolap_create_filter_display.png)
-
