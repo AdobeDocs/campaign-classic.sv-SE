@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Läge för webbspårning
 description: Läge för webbspårning
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 1%
 
 ---
-
 
 # Läge för webbspårning{#web-tracking-mode}
 
