@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Version 19.2
 description: Versionsinformation för Campaign 19.2
@@ -7,11 +6,10 @@ feature: null
 role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-translation-type: tm+mt
-source-git-commit: 6f5a536a5ac1286cdf6f1c9f53377fe8d0f55bed
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -27,7 +25,7 @@ _15 april 2021_
 
 >[!NOTE]
 >
-> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _22 mars 2021_
 
