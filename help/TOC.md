@@ -8,10 +8,10 @@ user-guide-description: Utforma, planera, genomför, hantera och optimera markna
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2477'
+ht-degree: 98%
 
 ---
 
@@ -567,40 +567,26 @@ ht-degree: 99%
       + [Erbjudanden på en inkommande kanal](interaction/using/offers-on-an-inbound-channel.md)
       + [Erbjudanden på en utgående kanal](interaction/using/offers-on-an-outbound-channel.md)
 + Transaktionsmeddelanden {#transactional-messaging}
-   + Kom igång med transaktionsmeddelanden {#introduction}
-      + [Om transaktionsmeddelanden](message-center/using/about-transactional-messaging.md)
+   + [Kom igång med transaktionsmeddelanden](message-center/using/about-transactional-messaging.md)
+   + Konfigurera transaktionsmeddelanden {#configure-transactional-messaging}
       + [Transaktionsmeddelandens arkitektur](message-center/using/transactional-messaging-architecture.md)
-      + [Händelsebeskrivning](message-center/using/event-description.md)
-   + Konfigurera instansen {#instance-configuration}
-      + [Skapa en delad anslutning](message-center/using/creating-a-shared-connection.md)
-      + [Identifiera körningsinstanser](message-center/using/identifying-execution-instances.md)
-      + [Övervaka gränsvärden](message-center/using/monitoring-thresholds.md)
-      + [Rensa händelser](message-center/using/purging-events.md)
-      + [Tekniska arbetsflöden](message-center/using/technical-workflows.md)
-      + [Skapa händelsetyper](message-center/using/creating-event-types.md)
-      + [Konfigurera multibranding](message-center/using/configuring-multibranding.md)
+      + [Konfigurera instanser](message-center/using/configuring-instances.md)
+      + [Ytterligare konfigurationer](message-center/using/additional-configurations.md)
    + Meddelandemallar {#message-templates}
-      + [Om mallar för transaktionsmeddelanden](message-center/using/introduction.md)
-      + [Skapa meddelandemallen](message-center/using/creating-the-message-template.md)
-      + [Skapa meddelandeinnehåll](message-center/using/creating-message-content.md)
-      + [Hantera dirigerade adresser i transaktionsmeddelanden](message-center/using/managing-seed-addresses-in-transactional-messages.md)
-      + [Personaliseringsdata](message-center/using/personalization-data.md)
-      + [Förhandsgranskning av transaktionsmeddelande](message-center/using/transactional-message-preview.md)
-      + [Skicka ett bevis](message-center/using/sending-a-proof.md)
-      + [Publicera mall](message-center/using/template-publication.md)
-      + [Ta bort publiceringen av en mall](message-center/using/template-unpublication.md)
-   + Händelsebearbetning {#event-processing}
-      + [Om händelsebearbetning](message-center/using/about-event-processing.md)
-      + [Händelsesamling](message-center/using/event-collection.md)
-      + [Routning mot en mall](message-center/using/routing-towards-a-template.md)
+      + [Skapa händelsetyper](message-center/using/creating-event-types.md)
+      + [Designa meddelandemallar](message-center/using/creating-the-message-template.md)
+      + [Testa meddelandemallar](message-center/using/testing-message-templates.md)
+      + [Publicera meddelandemallar](message-center/using/publishing-message-templates.md)
+   + Transaktionshändelsebearbetning {#processing}
+      + [Händelsebeskrivning](message-center/using/event-description.md)
+      + [Händelsebearbetning](message-center/using/about-event-processing.md)
       + [Leveranskörning](message-center/using/delivery-execution.md)
    + Rapporter {#reports}
-      + [Om rapporter om transaktionsmeddelanden](message-center/using/about-transactional-messaging-reports.md)
+      + [Få tillgång till transaktionsrapporter](message-center/using/about-transactional-messaging-reports.md)
       + [Historik om händelser i meddelandecentret](message-center/using/history-of-message-center-events.md)
       + [Tjänstenivå för meddelandecentret](message-center/using/message-center-service-level.md)
       + [Bearbetningstid för meddelandecentret](message-center/using/message-center-processing-time.md)
-   + Användningsfall {#use-case}
-      + [Skicka transaktionsmeddelanden med bilagor via e-post](message-center/using/transactional-email-with-attachments.md)
+   + [Användningsfall](message-center/using/transactional-email-with-attachments.md)
 + Integrering med sociala medier {#integrating-with-social-media}
    + [Om social marknadsföring](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
