@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Utforma en undersökning
 description: Utforma en undersökning
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
 
 ---
-
 
 # Utforma en undersökning{#building-a-survey}
 
@@ -137,4 +135,3 @@ När sidan uppdateras är de visade frågorna inte desamma.
 >[!CAUTION]
 >
 >När du visar en fråga slumpmässigt (**[!UICONTROL Display randomly]** alternativ markerat på sidan) ska du se till att inte använda flervalsfrågor där en eller flera markeringar är obligatoriska.
-
