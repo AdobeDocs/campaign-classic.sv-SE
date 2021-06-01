@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Fröadresser
-description: Fröadresser
+title: Dirigerade adresser
+description: Dirigerade adresser
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
-
-# Fröadresser{#seed-addresses}
+# Dirigerade adresser{#seed-addresses}
 
 Om mottagartabellen är en anpassad tabell krävs ytterligare konfigurationer. Schemat **[!UICONTROL nms:seedMember]** måste utökas. Ytterligare en flik läggs till i startadresserna för att definiera lämpliga fält, vilket visas nedan:
 
