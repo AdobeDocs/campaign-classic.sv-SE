@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Växla till Unicode
 description: Växla till Unicode
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
 
 ---
-
 
 # Växla till Unicode{#switching-to-unicode}
 
@@ -99,4 +97,3 @@ För en befintlig **prod**-instans i Linux/PostgreSQL är stegen för att växla
 
    * kontrollera att data visas korrekt, särskilt de framhävda tecknen:
    * starta en leverans och kontrollera att spårningshämtningen fungerar.
-
