@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inkrementell fråga
 description: Läs mer om arbetsflödesaktiviteten Inkrementell fråga
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
 
 ---
-
 
 # Inkrementell fråga{#incremental-query}
 
