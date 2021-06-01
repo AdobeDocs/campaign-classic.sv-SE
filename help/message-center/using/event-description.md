@@ -1,25 +1,24 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Beskrivning av meddelandecenter för händelse
-description: Läs mer om transaktionshändelser
+title: Händelsebeskrivning
+description: Lär dig hur transaktionsmeddelandehändelser hanteras i Adobe Campaign Classic med SOAP-metoder.
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 3a9c435a6469f291c4ecdb30eceb83c4f000f5e0
+exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
+# Händelsebeskrivning {#event-description}
 
-# Händelsebeskrivning{#event-description}
+## Datamodell för transaktionsmeddelanden {#about-transactional-messaging-datamodel}
 
-## Om datamodellen för transaktionsmeddelanden {#about-transactional-messaging-datamodel}
-
-Transactional messaging förlitar sig på Adobe Campaign datamodell och använder ytterligare två separata tabeller. Dessa [tabeller](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** och **NmsBatchEvent** innehåller samma fält och gör att du kan hantera realtidshändelser å ena sidan och batchhändelser å den andra.
+Transactional messaging förlitar sig på Adobe Campaign datamodell och använder ytterligare två separata tabeller. Dessa [tabeller](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** och **NmsBatchEvent** innehåller samma fält och gör att du kan hantera realtidshändelser å ena sidan och batchhändelser å andra sidan.
 
 ## SOAP-metoder {#soap-methods}
 
@@ -228,4 +227,3 @@ Om händelsen inte kan bearbetas returnerar metoden ett felmeddelande eller ett 
       </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
