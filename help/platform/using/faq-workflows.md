@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Vanliga frågor och svar om arbetsflöden
 description: Vanliga frågor och svar om Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 97%
 
 ---
-
 
 # Vanliga frågor och svar om arbetsflöden {#workflows-faq}
 
