@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Arbetsflödeskörning
 description: Arbetsflödeskörning
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+exl-id: b5aa5663-1902-4f50-9202-783e73a28838
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
 
 ---
-
 
 # Arbetsflödeskörning{#workflow-execution}
 
