@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Starta Adobe Campaign
 description: Starta Adobe Campaign
@@ -7,8 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-translation-type: tm+mt
-source-git-commit: 2c275751ab86e98652820bf461c617442480c725
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 7%
