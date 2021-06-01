@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datainläsning (RDBMS)
 description: Läs mer om arbetsflödesaktivitet för datainläsning (RDBMS)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
 
 ---
-
 
 # Datainläsning (RDBMS){#data-loading-rdbms}
 
@@ -38,4 +36,3 @@ För att förbättra prestandan rekommenderar vi att du använder frågeaktivite
 1. Du kan definiera ett filter för dessa data. Det gör du genom att klicka på länken **[!UICONTROL Edit query....]**.
 
    De data som samlas in på det här sättet kan användas under hela arbetsflödets livscykel.
-
