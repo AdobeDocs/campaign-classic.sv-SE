@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Arbeta med datapaket
 description: Arbeta med datapaket
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
 
 ---
-
 
 # Arbeta med datapaket{#working-with-data-packages}
 
