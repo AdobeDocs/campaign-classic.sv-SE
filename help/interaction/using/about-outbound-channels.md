@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om utgående kanaler
 description: Om utgående kanaler
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
 
 ---
-
 
 # Om utgående kanaler{#about-outbound-channels}
 
