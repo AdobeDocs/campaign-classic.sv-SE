@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använda en extern mottagartabell
 description: Använda en extern mottagartabell
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b6aabc68-707d-4c6c-b008-277609166c6c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 18%
 
 ---
-
 
 # Använda en extern mottagartabell{#using-an-external-recipient-table}
 
