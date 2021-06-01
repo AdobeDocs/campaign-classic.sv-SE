@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Listuppdatering
 description: Listuppdatering
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
+exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
 
 ---
-
 
 # Listuppdatering{#list-update}
 
@@ -69,7 +67,7 @@ Identifierar populationen som ska sparas i gruppen.
 
 * groupId: Gruppidentifierare.
 
-## Självstudievideo {#video}
+## Videokurs {#video}
 
 I den här videon visas hur du skapar en lista med mottagare från Utforskaren.
 
