@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Meddelandeserver
 description: Meddelandeserver
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d9ffa58d-81e3-4291-8502-3cb7c326b666
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 3%
 
 ---
-
 
 # Meddelandeserver{#messaging-server}
 
