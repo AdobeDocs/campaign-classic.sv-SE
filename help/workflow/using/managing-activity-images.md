@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera aktivitetsbilder
 description: Hantera aktivitetsbilder
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 5%
 
 ---
-
 
 # Hantera aktivitetsbilder{#managing-activity-images}
 
@@ -48,4 +46,3 @@ De bilder som används i diagrammen för de olika arbetsflödena kan ändras. De
 >De bilder som sparas i noden **[!UICONTROL Administration > Configuration > Images]** i trädet kan väljas.
 >  
 >Bilderna måste vara i PNG-format med 48 x 48 pixlar, 16 miljoner färger och en genomskinlig bakgrund.
-
