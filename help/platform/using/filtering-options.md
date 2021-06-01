@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filtreringsalternativ
 description: Filtreringsalternativ
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 2%
 
 ---
-
 
 # Filtreringsalternativ{#filtering-options}
 
