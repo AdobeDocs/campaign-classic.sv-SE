@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa nya instanser
 description: Skapa nya instanser
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
 
 ---
-
 
 # Skapa nya instanser{#creating-new-instances}
 
@@ -28,4 +26,3 @@ Om du vill göra det loggar du in på en befintlig databas och utför följande 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
    Ange parametrarna för den nya instansen. Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
-
