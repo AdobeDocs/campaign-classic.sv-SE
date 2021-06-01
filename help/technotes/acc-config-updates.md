@@ -1,16 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -26,7 +24,7 @@ Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Föruto
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Säkerhetsuppdateringar {#acc-security-updates}
@@ -170,5 +168,5 @@ Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa 
 
 * [Uppgradera din miljö](../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../platform/using/faq-build-upgrade.md)
-* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html)
+* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../installation/using/client-console-availability-for-windows.md)
