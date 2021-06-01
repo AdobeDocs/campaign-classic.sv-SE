@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Målinrikta data
 description: Läs mer om måldata i ett arbetsflöde
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 4%
 
 ---
-
 
 # Målinrikta data{#targeting-data}
 
@@ -256,4 +254,3 @@ Identifierade och insamlade data kan berikas, aggregeras och ändras för att op
 * Med aktiviteten **[!UICONTROL Enrichment]** kan du snabbt lägga till kolumner i ett schema och lägga till information i vissa element. Den beskrivs i avsnittet [Enrichment](../../workflow/using/enrichment.md) i aktivitetsdatabasen.
 * Med aktiviteten **[!UICONTROL Edit schema]** kan du ändra strukturen för ett schema. Den beskrivs i avsnittet [Redigera schema](../../workflow/using/edit-schema.md) i aktivitetsdatabasen.
 * Med aktiviteten **[!UICONTROL Change dimension]** kan du ändra måldimensionen under målkonstruktionscykeln. Den beskrivs i avsnittet [Ändra dimension](../../workflow/using/change-dimension.md).
-
