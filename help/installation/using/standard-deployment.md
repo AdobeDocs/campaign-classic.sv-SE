@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Standardiserad driftsättning
 description: Standardiserad driftsättning
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -43,7 +41,7 @@ Den här typen av konfiguration kan hantera ett stort antal mottagare (500 000 t
 
 ## Installations- och konfigurationssteg {#installation-and-configuration-steps}
 
-### Förutsättningar {#prerequisites}
+### Förhandskrav {#prerequisites}
 
 * JDK på alla tre datorerna,
 * Webbserver (IIS, Apache) på båda frontalerna,
