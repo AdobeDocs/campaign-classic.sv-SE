@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera och skicka leveransen
 description: Konfigurera och skicka leveransen
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -43,7 +41,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 
@@ -60,7 +58,7 @@ Du kan sedan stänga leveransguiden och spåra leveransen från fliken **[!UICON
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
 * [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
 * [Om att spåra meddelanden](../../delivery/using/about-message-tracking.md)
 
 ## Schemalägger leveransen som skickar {#scheduling-the-delivery-sending}
