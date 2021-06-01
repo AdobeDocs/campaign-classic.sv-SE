@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -85,7 +85,7 @@ I **Händelsehistoriken**, under **[!UICONTROL Message Center]** > **[!UICONTROL
    * En händelse som precis har samlats in och som ännu inte har bearbetats. Kolumnen **[!UICONTROL Number of errors]** visar värdet 0. E-postmallen har ännu inte länkats.
    * En händelse bearbetades men vars bekräftelse är felaktig. Kolumnen **[!UICONTROL Number of errors]** visar ett värde som inte är 0. Om du vill veta när den här händelsen ska behandlas igen kan du läsa kolumnen **[!UICONTROL Process requested on]**.
 
-* **Väntande leverans**: Händelsen bearbetades och leveransmallen är länkad. E-postmeddelandet väntar på att levereras och den klassiska leveransprocessen tillämpas. Du kan öppna [leveransen](../../delivery/using/about-message-tracking.md) om du vill ha mer information.
+* **Väntande leverans**: Händelsen bearbetades och leveransmallen är länkad. E-postmeddelandet väntar på att levereras och den klassiska leveransprocessen tillämpas. Du kan öppna leveransen om du vill ha mer information.
 * **Skickat**,  **** ignorerat och  **leveransfel**: Dessa leveransstatusvärden återställs via arbetsflödet  **** updateEventsStatus. Mer information får du genom att öppna den relevanta leveransen.
 * **Händelsen omfattas** inte: Transactional Messaging-routningsfasen misslyckades. Adobe Campaign hittade till exempel inte e-postmeddelandet som fungerar som mall för händelsen.
 * **Händelsen har upphört att gälla**: Det maximala antalet sändningsförsök har uppnåtts. Händelsen betraktas som null.
