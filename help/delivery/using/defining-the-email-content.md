@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definiera e-postinnehållet i Adobe Campaign Classic
 description: Lär dig hur du definierar e-postinnehåll när du använder Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
+exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
 
 ---
-
 
 # Definiera e-postinnehållet {#defining-the-email-content}
 
