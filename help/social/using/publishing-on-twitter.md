@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Publicera på Twitter
 description: Publicera på Twitter
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
-translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 5%
 
 ---
 
-
 # Publicera på Twitter{#publishing-on-twitter}
 
 ## Publicera på dina Twitter-konton {#publishing-on-your-twitter-accounts}
 
-När konfigurationen är klar kan du med Social Marketing skicka tweets till dina Twitter-konton.
+När konfigurationen är klar kan du skicka tweets till dina Twitter-konton via Social Marketing.
 
 ### Begränsningar {#limitations}
 
@@ -62,7 +60,7 @@ På fliken **[!UICONTROL Target of the proofs]** kan du definiera det Twitter-ko
 
 >[!NOTE]
 >
->Om du använder samma Twitter-testkonto för alla leveranser kan du spara korrekturmålet i leveransmallen **[!UICONTROL Tweet]**, som du kommer åt via noden **[!UICONTROL Resources > Templates > Delivery templates]**. Korrekturmålet anges sedan som standard för varje ny leverans.
+>Om du använder samma Twitter-testkonto för alla leveranser kan du spara korrekturmålet i leveransmallen **[!UICONTROL Tweet]** som du når via noden **[!UICONTROL Resources > Templates > Delivery templates]**. Korrekturmålet anges sedan som standard för varje ny leverans.
 
 ### Definiera meddelandeinnehållet {#defining-the-message-content}
 
@@ -77,7 +75,7 @@ På fliken **[!UICONTROL Preview]** kan du visa en återgivning av tweeten.
 1. Klicka på fliken **[!UICONTROL Preview]**.
 1. Klicka på listrutan **[!UICONTROL Test personalization]** och välj **[!UICONTROL Service]**.
 1. I fältet **[!UICONTROL Folder]** väljer du den tjänstmapp som innehåller ditt Twitter-konto.
-1. Välj det Twitter-konto som du vill testa förhandsvisningen med.
+1. Välj det Twitter-konto som du vill testa förhandsgranskningen med.
 
 ![](assets/social_twitter_delivery_008.png)
 
@@ -101,7 +99,7 @@ Spårningskonfigurationen är densamma som för en e-postleverans. Mer informati
 
 ### Skicka korrektur {#sending-the-proof}
 
-Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att få en exakt återgivning av publikationen på en privat Twitter-testsida. Mer information om hur du skapar ett privat Twitter-konto finns i [Skapa ett testkonto på Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för att välja korrekturmål beskrivs i [Välja korrekturmålets mål](#selecting-the-target-of-the-proof).
+Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att få en exakt återgivning av publikationen på en privat testsida från Twitter. Mer information om hur du skapar ett privat Twitter-konto finns i [Skapa ett testkonto på Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för att välja korrekturmål beskrivs i [Välja korrekturmålets mål](#selecting-the-target-of-the-proof).
 
 Korrekturleveranser är identiska med e-postleveranser. Se [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -125,13 +123,13 @@ Korrekturleveranser är identiska med e-postleveranser. Se [det här avsnittet](
 
 ### Verksamhetsprincip {#operating-principle}
 
-Arbetsflödet för **[!UICONTROL Synchronize Twitter accounts]** (se [Synkronisera Twitter-konton](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) återställer listan över Twitter-prenumeranter så att du kan skicka direktmeddelanden till dem. De återskapade följarna lagras i en specifik tabell: besökstabellen. Om du vill visa listan med Twitter-följare går du till noden **[!UICONTROL Profiles and Targets > Visitors]**.
+Arbetsflödet **[!UICONTROL Synchronize Twitter accounts]** (se [Synkronisera Twitter-konton](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) återställer listan över Twitter-prenumeranter så att du kan skicka direktmeddelanden till dem. De återskapade följarna lagras i en specifik tabell: besökstabellen. Gå till noden **[!UICONTROL Profiles and Targets > Visitors]** om du vill visa listan över Twitter-följare.
 
 ![](assets/social_twitter_visitors_001.png)
 
 >[!IMPORTANT]
 >
->För att arbetsflödet ska kunna återskapa listan med Twitter-följare måste rutan **[!UICONTROL Synchronize Twitter accounts]** vara markerad på skärmen Redigera för den tjänst som är länkad till kontot. Mer information finns i: [Delegerar skrivåtkomst till Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
+>För att arbetsflödet ska kunna återskapa listan med Twitter följare måste rutan **[!UICONTROL Synchronize Twitter accounts]** vara markerad i fönstret Redigera för den tjänst som är länkad till kontot. Mer information finns i: [Delegerar skrivåtkomst till Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
 För varje följare återställer Adobe Campaign följande information:
 
@@ -192,7 +190,7 @@ På fliken **[!UICONTROL Target of the proofs]** kan du välja den följare som 
 
 >[!NOTE]
 >
->Om du vill skicka alla dina korrektur för direktmeddelanden till samma Twitter-följare kan du spara korrekturmålet i leveransmallen **[!UICONTROL Tweet (Direct Message)]** som du kommer åt via noden **[!UICONTROL Resources > Templates > Delivery templates]**. Korrekturmålet anges sedan som standard för varje ny leverans.
+>Om du vill skicka alla dina korrektur för direktmeddelanden till samma Twitter-följare kan du spara korrekturmålet i leveransmallen **[!UICONTROL Tweet (Direct Message)]** som nås via noden **[!UICONTROL Resources > Templates > Delivery templates]**. Korrekturmålet anges sedan som standard för varje ny leverans.
 
 ### Definiera meddelandeinnehåll {#defining-message-content-}
 
@@ -204,4 +202,4 @@ Anpassningsfält kan användas på samma sätt som för e-postleveranser, t.ex. 
 
 ![](assets/social_twitter_delivery_021.png)
 
-Följande steg är samma som när du skickar en tweet till ett Twitter-konto. Se [Publicera på Twitter-konton](#publishing-on-your-twitter-accounts).
+Följande steg är samma som när du skickar en tweet till ett Twitter-konto. Se [Publicera på dina Twitter-konton](#publishing-on-your-twitter-accounts).
