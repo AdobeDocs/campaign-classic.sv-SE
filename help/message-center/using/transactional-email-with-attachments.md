@@ -1,21 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Lägga till bilagor i transaktionsmeddelanden med Adobe Campaign Classic
-description: Lär dig hur du skickar transaktionsmejl med personliga och/eller personliga bilagor med Adobe Campaign Classic
+title: Skicka transaktionsmeddelanden med bilagor via e-post
+description: Lär dig hur du skickar transaktionsmejl med personliga och/eller personliga bilagor med Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: use-case
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
-
-# Användningsfall: Skicka transaktionsmeddelanden med bilagor{#transactional-email-with-attachments}
+# Användningsfall: Skicka transaktionsmejl med bilagor {#transactional-email-with-attachments}
 
 Syftet med det här användningsexemplet är att lägga till e-postbilagor direkt till utgående utskick.
 
