@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Element och attribut
 description: Element och attribut
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 7%
 
 ---
-
 
 # nyckelfältselement {#keyfield--element}
 
