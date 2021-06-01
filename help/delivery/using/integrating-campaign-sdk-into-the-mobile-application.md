@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integrera Campaign SDK
 description: Lär dig hur du integrerar Campaign SDK med din mobilapp
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
 
 ---
-
 
 # Integrera Campaign SDK med din app {#integrating-campaign-sdk-into-the-mobile-application}
 
@@ -21,7 +19,7 @@ Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Ch
 
 >[!NOTE]
 >
->Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få Campaign SDK (tidigare Neolane SDK).
+>Kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få Campaign SDK (tidigare Neolane SDK).
 
 Målet med SDK är att underlätta integreringen av mobilapplikationer i Adobe Campaign.
 
