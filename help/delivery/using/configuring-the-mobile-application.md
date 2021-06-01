@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera iOS-mobilprogrammet i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för iOS
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurationssteg för iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
