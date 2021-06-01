@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa skriptet
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Skriptet {#step-5--creating-the-script} skapas
+# Skapa skriptet {#step-5--creating-the-script}
 
 Valet av leveransinnehåll som är avsett för den återstående populationen beräknas av ett skript. Det här skriptet återställer information om leveransen med det högsta antalet öppningar och kopierar innehållet till den slutliga leveransen.
 
