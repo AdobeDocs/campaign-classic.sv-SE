@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bifoga filer
 description: Bifoga filer
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: db65e83e-276f-4163-98c3-3658a48acffc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
 
 ---
-
 
 # Bifoga filer i ett e-postmeddelande{#attaching-files}
 
