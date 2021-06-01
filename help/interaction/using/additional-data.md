@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Ytterligare data
 description: Ytterligare data
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
-
 
 # Ytterligare data{#additional-data}
 
@@ -123,4 +121,3 @@ I kolumnen **[!UICONTROL Storage path]** markerar du lagringsfältet i förslags
 Du kan hämta samtalsdata när förslaget genereras eller när det godkänns (när personen klickar på erbjudandet).
 
 ![](assets/ita_calldata_storage.png)
-
