@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Godkänna marknadsföringskampanjer
 description: Lär dig hantera godkännanden av marknadsföringskampanjer
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 67364f80ddc51d4792e73bbf39d388bdf4297005
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera och hantera godkännandeprocessen {#approving-marketing-campaigns}
 
