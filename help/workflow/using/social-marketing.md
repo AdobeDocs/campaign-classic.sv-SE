@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Social marknadsföring
 description: Läs mer om tekniska arbetsflöden för social marknadsföring
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 5%
@@ -29,12 +27,12 @@ Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social 
   <tr> 
    <td> <span class="uicontrol">Beräkning av Facebook-statistik</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
-   <td> Det här arbetsflödet beräknar statistik som är länkad till interaktioner med Facebook-fans.<br /> </td> 
+   <td> Det här arbetsflödet beräknar statistik som är länkad till interaktioner med Facebook fans.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Synkroniserar Facebook-fans</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
-   <td> Det här arbetsflödet importerar Facebook-fans till Adobe Campaign varje dag kl. 07.00.<br /> </td> 
+   <td> Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 07.00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Synkronisera Facebook-sidor</span> <br /> </td> 
@@ -49,7 +47,7 @@ Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social 
   <tr> 
    <td> <span class="uicontrol">Synkronisera Twitter-sidor</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> Det här arbetsflödet importerar Twitter-följare till Adobe Campaign varje dag kl. 07.00.<br /> </td> 
+   <td> Det här arbetsflödet importerar Twitter följare till Adobe Campaign varje dag kl. 07.00.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
