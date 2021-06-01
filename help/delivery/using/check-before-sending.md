@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kontrollera före sändning
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
 
 ---
-
 
 # Utför alla kontroller innan du skickar {#perform-all-checks}
 
