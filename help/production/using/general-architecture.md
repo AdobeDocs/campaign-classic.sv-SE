@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Allmän arkitektur
 description: Allmän arkitektur
 audience: production
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 4%
 
 ---
-
 
 # Allmän arkitektur{#general-architecture}
 
@@ -56,4 +54,3 @@ Distributionen av moduler på flera datorer ger stor flexibilitet och förbättr
 | 8005/tcp (lokal) | Adobe Campaign: webbmodul | JA |
 | 8080/tcp | Adobe Campaign: webbmodul (tomcat) | JA |
 | 7777 | Statistikserver (startserver) | JA |
-
