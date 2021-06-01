@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datascheman
 description: Datascheman
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
 
 ---
-
 
 # Datascheman{#data-schemas}
 
@@ -121,4 +119,3 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    ![](assets/s_ncs_configuration_structure.png)
 
 1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. Mer information finns i [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md).
-
