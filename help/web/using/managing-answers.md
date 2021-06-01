@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera svar
 description: Hantera svar
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 1%
 
 ---
-
 
 # Hantera svar{#managing-answers}
 
@@ -165,4 +163,3 @@ Bakgrundsmusik kan användas i tester och skript.
    ![](assets/s_ncs_admin_survey_score_exd.png)
 
    ![](assets/s_ncs_admin_survey_score_exg.png)
-
