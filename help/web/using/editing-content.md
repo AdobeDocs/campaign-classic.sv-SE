@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Redigera innehåll
 description: Redigera innehåll
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
 
 ---
-
 
 # Redigera innehåll{#editing-content}
 
@@ -137,6 +135,7 @@ Anpassningsblock och fält kan bara infogas i textblock.
 >* Nytt fönster (_blank)
 >* Aktuellt fönster (_self)
 >* Standardwebbläsarbeteende
+
 >
 
 
@@ -202,8 +201,9 @@ De tillgängliga alternativen är följande:
 >[!NOTE]
 >
 >* **Ta** bort ikon: tar bort blocket och allt dess innehåll.
->
->* **** Duplicateikon: duplicerar blocket samt alla format som hör till blocket.
+   >
+   >
+* **** Duplicateikon: duplicerar blocket samt alla format som hör till blocket.
 
 
 ## Hantera bilder och animeringar {#managing-images-and-animations}
