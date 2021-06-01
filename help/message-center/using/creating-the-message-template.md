@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Mallar för transaktionsmeddelanden innehåller den information som krävs för 
    >
    >En händelsetyp kan inte länkas till mer än en mall.
 
-1. Ange en natur och en beskrivning och klicka sedan på **[!UICONTROL Continue]** för att skapa meddelandetexten (se [Skapa meddelandeinnehållet](#creating-message-content)).
+1. Ange en typ och en beskrivning och klicka sedan på **[!UICONTROL Continue]** för att skapa meddelandetexten (se [Skapa meddelandeinnehållet](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
