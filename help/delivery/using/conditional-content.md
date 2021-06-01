@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Villkorligt innehåll
 description: Villkorligt innehåll
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 4%
 
 ---
-
 
 # Villkorligt innehåll{#conditional-content}
 
