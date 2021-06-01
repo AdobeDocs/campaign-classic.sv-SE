@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Återgå till föregående version
 description: Lär dig hur du återställer till den tidigare versionen
 audience: migration
 content-type: reference
 topic-tags: rollback
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # Återgå till föregående version{#about-rollback}
 
