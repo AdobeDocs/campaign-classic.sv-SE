@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med webbformulär
 description: Kom igång med webbformulär i Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
 
 ---
-
 
 # Kom igång med webbformulär{#about-web-forms}
 
@@ -80,6 +78,7 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 >
 >* Under siddesignen kan du visa den slutliga återgivningen på fliken **[!UICONTROL Preview]**. Spara formuläret först om du vill se ändringarna. Eventuella fel visas på fliken **[!UICONTROL Log]**.
 >* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. Det gör du genom att gå till underfliken **[!UICONTROL Preview]** och markera rutan **[!UICONTROL Enable debug mode]**: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
+
 >
 
 
@@ -97,4 +96,3 @@ I det här fallet börjar du med att välja vilken typ av fält som ska läggas 
 Klicka på **[!UICONTROL Ok]** för att godkänna markeringen.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
-
