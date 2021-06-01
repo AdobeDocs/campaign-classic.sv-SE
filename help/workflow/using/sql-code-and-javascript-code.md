@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SQL-kod och JavaScript-kod
 description: Läs mer om arbetsflödesaktiviteter för SQL- och JavaScript-koder
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
 
 ---
-
 
 # SQL-kod och JavaScript-kod{#sql-code-and-javascript-code}
 
