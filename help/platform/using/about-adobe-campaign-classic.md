@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om Adobe Campaign Classic
 description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer.
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '912'
 ht-degree: 95%
 
 ---
-
 
 # Kom igång med Campaign Classic{#about-adobe-campaign-classic}
 
@@ -87,7 +85,7 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [Webbtjänster](../../configuration/using/about-web-services.md) – använd Campaign via API:er/webbtjänster,
 * [Rapportering](../../reporting/using/about-adobe-campaign-reporting-tools.md) – få tillgång till inbyggda rapporter, analysera data och utforma egna rapporter.
 
-## Självstudievideo {#video}
+## Videokurs {#video}
 
 I den här videon visas huvudfunktionerna och funktionerna för Campaign Classic.
 
