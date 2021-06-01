@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Övervaka arbetsflöden
 description: Lär dig hur ni övervakar Campaign-arbetsflöden
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
-
 
 # Användningsfall: övervaka dina arbetsflöden{#supervising-workflows}
 
@@ -181,4 +179,3 @@ Dubbelklicka på aktiviteten **Delivery** och välj följande alternativ:
 När övervakningsarbetsflödet har startats skickas följande sammanfattning till mottagaren:
 
 ![](assets/uc_monitoring_workflow_mailfinal.png)
-
