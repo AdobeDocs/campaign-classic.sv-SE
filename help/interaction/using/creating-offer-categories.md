@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa erbjudandekategorier
 description: Skapa erbjudandekategorier
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
 
 ---
-
 
 # Skapa erbjudandekategorier{#creating-offer-categories}
 
@@ -60,4 +58,3 @@ Om du vill skapa ytterligare en kategori gör du så här:
 En sammanfattning av reglerna för behörighet finns på kontrollpanelen för de erbjudanden som ingår i kategorin. Om du vill visa dem klickar du på länken **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ![](assets/offer_create_006.png)
-
