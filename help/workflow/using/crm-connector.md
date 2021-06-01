@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: CRM-koppling
 description: Läs mer om CRM Connector och konfigurera datasynkronisering
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 3%
 
 ---
-
 
 # CRM-koppling{#crm-connector}
 
