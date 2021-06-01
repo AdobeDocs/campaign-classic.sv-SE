@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en tabell
 description: Skapa en tabell
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
 
 ---
-
 
 # Skapa en tabell{#creating-a-table}
 
