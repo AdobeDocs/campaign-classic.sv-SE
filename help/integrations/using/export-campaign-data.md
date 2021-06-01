@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Exportera data från Campaign till Adobe Experience Platform
 description: Lär dig hur du exporterar data från Campaign Classic till Adobe Experience Platform.
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 1c07c3b10a6d38ca67c20746a51301d71aec0015
+exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # Exportera data från Campaign till Adobe Experience Platform {#sources}
 
