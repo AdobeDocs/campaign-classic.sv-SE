@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Implementeringssteg
 description: Implementeringssteg
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 3%
 
 ---
-
 
 # Implementeringssteg{#implementation-steps}
 
@@ -58,4 +56,3 @@ ht-degree: 3%
 
 1. Skapa en kampanj.
 1. Referera till ett erbjudande i en kampanj eller en kampanjleverans. Mer information finns i [Om utgående kanaler](../../interaction/using/about-outbound-channels.md).
-
