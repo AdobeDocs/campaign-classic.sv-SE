@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lista över rapporter
 description: Lista över rapporter
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
 
 ---
-
 
 # Förteckning över rapporter{#list-of-reports}
 
@@ -361,7 +359,7 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
   <tr> 
    <td> Historik över förvärv av sociala potentiella kunder (socialVisitorStatistics)<br /> </td> 
-   <td> Historik över köp av potentiella Twitter- och Facebook-kunder beror på tillägget för social marknadsföring.<br /> </td> 
+   <td> Historiken över köp av potentiella kunder från Twitter och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
@@ -371,4 +369,3 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
  </tbody> 
 </table>
-
