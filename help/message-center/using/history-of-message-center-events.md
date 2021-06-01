@@ -2,20 +2,19 @@
 solution: Campaign Classic
 product: campaign
 title: Historik om händelser i meddelandecentret
-description: Historik om händelser i meddelandecentret
+description: Läs mer i historiken för händelserapporten i meddelandecentret.
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 11%
+source-wordcount: '140'
+ht-degree: 7%
 
 ---
 
-
-# Historik om händelser i meddelandecentret{#history-of-message-center-events}
+# Historik om händelser i meddelandecentret {#history-of-message-center-events}
 
 Rapporten **[!UICONTROL History of Message Center events]** ger dig en översikt över meddelandecenteraktiviteten, dvs. antalet händelser som bearbetas och levereras som transaktionsmeddelanden.
 
