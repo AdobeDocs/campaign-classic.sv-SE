@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använd namngivna rättigheter för att ställa in behörigheter
 description: Lär dig hur du använder namngivna rättigheter för att ställa in behörigheter
-feature: Access Management
+feature: Åtkomsthantering
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 4%
+source-wordcount: '505'
+ht-degree: 6%
 
 ---
 
-
-# Använd namngivna rättigheter för att konfigurera behörigheter{#named-rights}
+# Använd namngivna rättigheter för att ställa in behörigheter{#named-rights}
 
 Som standard föreslår Adobe Campaign en uppsättning namngivna rättigheter som gör att du kan definiera de behörigheter som tilldelats operatorer och grupper av operatorer. Dessa rättigheter kan redigeras från noden **[!UICONTROL Administration > Access management > Named rights]** i trädet.
 
