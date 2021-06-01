@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Webbspårningstagg: definition"'
 description: '"Webbspårningstagg: definition"'
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 4%
 
 ---
-
 
 # Webbspårningstagg: definition{#web-tracking-tag-definition}
 
@@ -133,4 +131,3 @@ Följande metoder är möjliga:
 
 * Infoga URL:en i attributet **&quot;src&quot;** för en HTML **`<img>`**-tagg som ingår i den webbsida som du vill spåra.
 * Direktanrop till omdirigeringsservern när webbsidan som du vill spåra genereras.
-
