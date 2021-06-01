@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Felsökning
 description: Lär dig mer om leveransresultat och hur du felsöker problem som rör leveransövervakning.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
-
 
 # Felsökning av leverans {#delivery-troubleshooting}
 
@@ -25,7 +23,7 @@ Kontrollera dessutom att du följer de bästa metoderna och checklistan som besk
 
 * [Leveransstatus](../../delivery/using/delivery-statuses.md)
 * [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
 
 ## Långsam leverans {#slow-deliveries}
 
