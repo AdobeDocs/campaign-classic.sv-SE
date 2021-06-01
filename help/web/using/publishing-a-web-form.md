@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Publicera ett webbformulär
 description: Publicera ett webbformulär
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
 
 ---
-
 
 # Publicera ett webbformulär{#publishing-a-web-form}
 
@@ -160,4 +158,3 @@ Du kan bearbeta svarsloggarna i frågor, till exempel för att endast rikta sig 
 >[!NOTE]
 >
 >Om du vill ha en fullständig spårning av svaren kan du exportera svaren och visa eller skapa dedikerade rapporter med hjälp av den valfria modulen **Survey**. Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).
-
