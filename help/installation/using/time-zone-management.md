@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Hantera tidszoner
-description: Hantera tidszoner
+title: Hantering av tidszoner
+description: Hantering av tidszoner
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
 
 ---
 
-
-# Hantera tidszoner{#time-zone-management}
+# Hantering av tidszoner{#time-zone-management}
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -68,7 +66,7 @@ Markera alternativet **[!UICONTROL UTC database (date fields with time zone)]** 
 
 >[!IMPORTANT]
 >
->Om du använder **Oracle** måste tidszonsfilerna (.dat) för Oracle-klientlager vara kompatibla med de tidszonsfiler som är installerade på servern.
+>Om du använder **Oracle** måste tidszonsfilerna (.dat) för Oraclets klientlager vara kompatibla med de tidszonsfiler som är installerade på servern.
 
 Om databasen inte är UTC kan du välja en av de tidszoner som finns i listrutan. Du kan också använda serverns tidszon eller välja alternativet UTC (Coordinated Universal Time).
 
@@ -99,4 +97,3 @@ Exempel på möjliga värden:
 * America/New_York, osv.
 
    Dessa värden hämtas från tz-databasen (Olson). Mer information finns i [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
-
