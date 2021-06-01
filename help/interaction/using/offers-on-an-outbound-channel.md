@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erbjudanden på en utgående kanal
 description: Erbjudanden på en utgående kanal
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
 
 ---
-
 
 # Erbjudanden på en utgående kanal{#offers-on-an-outbound-channel}
 
@@ -126,4 +124,3 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 1. Om du vill spara simuleringsdata använder du historik- eller exportfunktionerna som finns i rapporten.
 
    ![](assets/offer_simulation_example_013.png)
-
