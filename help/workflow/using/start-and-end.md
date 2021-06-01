@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Starta och sluta
+title: Start och slut
 description: Läs mer om Start- och slutarbetsflödesaktiviteter
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
 
 ---
-
 
 # Starta och sluta{#start-and-end}
 
@@ -34,4 +32,3 @@ Med aktiviteterna **[!UICONTROL Start]** och **[!UICONTROL End]** kan du grafisk
    Data i arbetstabellen tas bort automatiskt när slutaktiviteten är aktiverad. Om det inte är nödvändigt och för att undvika onödiga inläsningar kan du välja att inaktivera övergången vid den senaste aktivitetsutdata. Om ingen process är schemalagd vid en utleverans avmarkerar du det relevanta alternativet enligt nedan:
 
    ![](assets/s_advuser_delivery_option_no_output.png)
-
