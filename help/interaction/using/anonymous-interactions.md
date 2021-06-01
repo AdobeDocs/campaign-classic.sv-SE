@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Anonyma interaktioner
 description: Anonyma interaktioner
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
 
 ---
-
 
 # Anonyma interaktioner{#anonymous-interactions}
 
@@ -60,4 +58,3 @@ Om det inte finns något element som gör att du kan identifiera en kontakt, ell
 Om du vill göra det kontrollerar du **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** och anger sedan den miljö som är dedikerad till de oidentifierade besökarna i **[!UICONTROL Linked anonymous space]** när du anger ett erbjudandeutrymme.
 
 ![](assets/anonymous_to_anonymous_environment.png)
-
