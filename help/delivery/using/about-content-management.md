@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om innehållshantering
 description: Om innehållshantering
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
 
 ---
-
 
 # Om innehållshantering{#about-content-management}
 
@@ -45,4 +43,3 @@ Det här sättet att skapa innehåll har dock vissa begränsningar. bland annat 
 
 * Begränsad frihet när det gäller den slutliga dokumentdesignen.
 * Kravanalysen måste vara rigorös så att slutanvändarna inte drabbas av en funktion som saknas.
-
