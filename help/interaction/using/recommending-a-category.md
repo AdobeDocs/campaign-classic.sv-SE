@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rekommendera en kategori
 description: Rekommendera en kategori
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cb062cb2-dfea-46aa-8d9e-580e4dc7bb25
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 5%
 
 ---
-
 
 # Rekommendera en kategori{#recommending-a-category}
 
@@ -26,4 +24,3 @@ Om du alltid vill inkludera en kategori i rekommendationerna gör du så här:
 1. Slutför och godkänn genom att klicka på **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)
-
