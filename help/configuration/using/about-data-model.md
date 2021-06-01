@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med datamodellen Campaign Classic
 description: Lär dig hur du utökar datamodellen för Campaign, redigerar scheman, använder API:er med mera
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 4%
 
 ---
-
 
 # Kom igång med Campaign-datamodell{#about-data-model}
 
