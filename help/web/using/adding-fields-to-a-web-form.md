@@ -265,7 +265,7 @@ Du kan välja datum via en kalender eller listruta. Du kan också ange dem direk
 
 >[!NOTE]
 >
->Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar är tillgängliga på alla språk som används. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+>Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar finns tillgängliga på alla språk som används. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
 
 I vissa fall kan det dock vara enklare att använda nedrullningsbara listor (till exempel när du anger födelsedatum).
 
