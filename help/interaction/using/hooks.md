@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Krokar
-description: Krokar
+title: Hookar
+description: Hookar
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
 
 ---
 
-
-# Krokar{#hooks}
+# Hookar{#hooks}
 
 Med kopplingar i interaktion kan du ändra **standardmotorbeteendet**.
 
@@ -149,4 +147,3 @@ var product = getUrl("https://EXTERNAL_SYSTEM?offerCode=" + encodeURIComponent(x
 if( product )
   return [{offer_id: parseInt(String(xmlOffer.@id)), weight: dWeight, productId: product}];
 ```
-
