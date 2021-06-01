@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Godkänna och aktivera ett erbjudande
 description: Godkänna och aktivera ett erbjudande
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
 
 ---
-
 
 # Godkänna och aktivera ett erbjudande{#approving-and-activating-an-offer}
 
@@ -130,4 +128,3 @@ Du kan även inaktivera en kategori direkt genom att gå till fliken **[!UICONTR
 >När ett erbjudande tas bort i en designmiljö inaktiveras det automatiskt i den länkade onlinemiljön. Efter en kvarhållningsperiod tas de inaktiverade erbjudandena bort från onlinemiljön.
 
 ![](assets/offer_preview_deactivate.png)
-
