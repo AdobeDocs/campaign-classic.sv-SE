@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Målkartläggning
+title: Målmappning
 description: Lär dig hur du skapar en målmappning
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 38333669-5598-4811-a121-b677c1413f56
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
 
 ---
 
-
-# Målkartläggning{#target-mapping}
+# Målmappning{#target-mapping}
 
 Målmappning måste skapas i två fall:
 
