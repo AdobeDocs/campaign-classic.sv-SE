@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Frågar med hjälp av en många-till-många-relation
 description: Lär dig hur du utför frågor med hjälp av en många-till-många-relation
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # Frågar med hjälp av en många-till-många-relation {#querying-using-a-many-to-many-relationship}
 
