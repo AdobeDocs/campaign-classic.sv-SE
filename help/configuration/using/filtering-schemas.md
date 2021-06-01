@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filtreringsscheman
 description: Filtreringsscheman
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Filterscheman{#filtering-schemas}
 
@@ -113,4 +111,3 @@ Du kan fortfarande ändra systemfiltren för de färdiga scheman som som standar
 1. Skapa ett tillägg för det aktuella schemat eller öppna ett befintligt tillägg.
 1. Lägg till ett underordnat element **`<sysfilter name="<filter name>" _operation="delete"/>`** i huvudelementet för att ta bort programmet för filtret under samma element i det ursprungliga schemat.
 1. Om du vill kan du lägga till ett nytt filter, enligt beskrivningen i [Systemfilter](#system-filters).
-
