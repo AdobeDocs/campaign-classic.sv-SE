@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Resurser och principer för Content Manager
-description: Resurser och principer för Content Manager
+title: Resurser och principer för innehållshanteraren
+description: Resurser och principer för innehållshanteraren
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 6%
 
 ---
 
-
-# Resurser och principer för Content Manager{#content-manager-resources-and-principles}
+# Resurser och principer för innehållshanteraren{#content-manager-resources-and-principles}
 
 Du måste definiera en publikationsmall som innehåller omformningsmallar för varje innehåll.
 
