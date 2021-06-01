@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera mallar för erbjudanden
 description: Hantera mallar för erbjudanden
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 5%
 
 ---
-
 
 # Hantera mallar för erbjudanden{#managing-offer-templates}
 
@@ -44,4 +42,3 @@ Så här duplicerar du en offertmall (som är färdig eller inte):
 Den här mallen kommer nu att erbjudas när du skapar ett erbjudande.
 
 ![](assets/offer_modelcreated_001.png)
-
