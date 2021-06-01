@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Simuleringsspårning
 description: Simuleringsspårning
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 10%
 
 ---
-
 
 # Simuleringsspårning{#simulation-tracking}
 
@@ -32,4 +30,3 @@ En pivottabell ger en snabb överblick över antalet erbjudanden per rankning. P
 Mer information om detta finns i [det här avsnittet](../../reporting/using/actions-on-reports.md).
 
 ![](assets/offer_simulation_013.png)
-
