@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa en leveransmall
 description: Skapa en leveransmall
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
+exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 7%
 
 ---
-
 
 # Skapa en leveransmall{#creating-a-delivery-template}
 
