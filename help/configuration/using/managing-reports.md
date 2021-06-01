@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera rapporter
 description: Hantera rapporter
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
 
 ---
-
 
 # Hantera rapporter{#managing-reports}
 
@@ -32,4 +30,3 @@ Följande rapporter berörs:
 * **[!UICONTROL Offer analysis]** (offerAnalysis): analys av erbjudanden per datum och kanal.
 * **[!UICONTROL Reactivity rate]** (mobileAppDistribution): reaktivitetsgrad för de senaste leveranserna.
 * **[!UICONTROL Breakdown of subscriptions]** (mobileAppDistribution): Uppdelning av aktiva prenumerationer per mobilapplikation.
-
