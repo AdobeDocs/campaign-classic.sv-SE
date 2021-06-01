@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Användningsfall: välja fröadresser enligt villkor"'
 description: '"Användningsfall: välja fröadresser enligt villkor"'
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
 
 ---
-
 
 # Användningsfall: välja fröadresser enligt villkor{#use-case-selecting-seed-addresses-on-criteria}
 
