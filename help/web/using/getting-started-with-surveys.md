@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Viktiga steg för att skapa en undersökning
 description: Skapa din första enkät med Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 1%
 
 ---
-
 
 # Viktiga steg för att skapa en undersökning{#getting-started-with-surveys}
 
@@ -152,4 +150,3 @@ Du kan sedan övervaka användarsvar via rapporter och loggar. Se [Svarsspårnin
 >Den offentliga URL:en innehåller undersökningens interna namn. När det interna namnet ändras uppdateras URL-adressen automatiskt: Alla länkar till undersökningen måste också uppdateras.
 >
 >Om leveranser som innehåller länken till formuläret redan har skickats, fungerar inte den här länken längre.
-
