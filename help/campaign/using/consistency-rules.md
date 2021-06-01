@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Konsistensregler
-description: Konsistensregler
+title: Konsekvensregler
+description: Konsekvensregler
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 2%
 
 ---
 
-
-# Konsistensregler{#consistency-rules}
+# Konsekvensregler{#consistency-rules}
 
 ## Konsekvensregler {#about-consistency-rules}
 
