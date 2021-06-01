@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa erbjudandeplatser
 description: Skapa erbjudandeplatser
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
 
 ---
-
 
 # Skapa erbjudandeplatser{#creating-offer-spaces}
 
