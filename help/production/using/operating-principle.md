@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verksamhetsprincip
 description: Verksamhetsprincip
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
 
 ---
-
 
 # Verksamhetsprincip{#operating-principle}
 
@@ -126,4 +124,3 @@ Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]
 -filter : applies the XTK filter contained in the file during loading of the schema entities.
 -setactivationkey : sets the activation key
 ```
-
