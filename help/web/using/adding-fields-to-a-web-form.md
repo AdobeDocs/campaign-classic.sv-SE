@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lägga till fält i ett webbformulär
 description: Lägga till fält i ett webbformulär
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # Lägga till fält i ett webbformulär{#adding-fields-to-a-web-form}
 
@@ -323,7 +321,7 @@ Användaren prenumererar på tjänsten genom att markera det relevanta alternati
 
 >[!CAUTION]
 >
->Om användaren redan prenumererar på en informationstjänst och rutan som är länkad till den här tjänsten inte är markerad när han eller hon godkänner formuläret, kommer han/hon att avbeställa prenumerationen.
+>Om användaren redan prenumererar på en informationstjänst och kryssrutan som är länkad till den här tjänsten inte är markerad när han eller hon godkänner formuläret, kommer han/hon att avbeställa prenumerationen.
 
 Exempel på prenumerationer och hänvisningar finns i [det här avsnittet](../../web/using/about-surveys.md).
 
@@ -381,6 +379,7 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 >* Adobe Campaign kontrollerar inte storleken eller typen av resurs som överförts: Därför rekommenderar vi att du endast använder överföringsfält för säkra intranätplatser.
 >* Om flera servrar är länkade till instansen (belastningsutjämningsarkitektur) måste du se till att anrop till webbformuläret kommer fram på samma server.
 >* Dessa implementeringar kräver hjälp av Adobe Campaign Consulting-teamet.
+
 >
 
 
@@ -396,4 +395,3 @@ Det gör du genom att placera en **konstant** på sidan och ange värdet och lag
 I följande exempel fylls fältet **origin** i mottagarprofilen i automatiskt när en användare godkänner den här sidan. Konstanten visas inte på sidan.
 
 ![](assets/s_ncs_admin_survey_constante.png)
-
