@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erbjudanden per cell
 description: Erbjudanden per cell
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 8%
 
 ---
-
 
 # Erbjudanden per cell{#offers-by-cell}
 
@@ -33,4 +31,3 @@ Så här gör du:
       ![](assets/int_offer_per_cell1.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](../../workflow/using/cross-channel-deliveries.md).
-
