@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Infoga en delad resurs
 description: Infoga en delad resurs
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
 
 ---
-
 
 # Infoga en delad resurs{#inserting-a-shared-asset}
 
@@ -48,4 +46,3 @@ Resurser som delas från Adobe Experience Cloud kan användas i e-postmeddelande
 >[!NOTE]
 >
 >Om du använder integreringen med Adobe Target kan du använda en delad bild som standardbild. Se [den här sidan](../../integrations/using/integrating-with-adobe-target.md).
-
