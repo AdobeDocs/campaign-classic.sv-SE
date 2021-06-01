@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera pipeline
 description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurera pipeline {#configuring-pipeline}
 
@@ -24,7 +22,7 @@ Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e
 >
 >Om Hybrid distribueras måste du se till att pipeline är konfigurerad på en mellaninstans.
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 Kontrollera att du använder:
 
