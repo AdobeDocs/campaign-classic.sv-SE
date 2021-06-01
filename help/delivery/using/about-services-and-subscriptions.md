@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om tjänster och prenumerationer
 description: Om tjänster och prenumerationer
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
 
 ---
-
 
 # Om tjänster och prenumerationer{#about-services-and-subscriptions}
 
@@ -23,4 +21,4 @@ Du kan också göra det möjligt för leveransmottagarna att dela dem med medlem
 
 >[!NOTE]
 >
->Den här funktionaliteten ingår som standard i Adobe Campaign. Med det valfria programmet, Social Marketing, kan ni kontakta kunder och potentiella kunder via Facebook och Twitter.
+>Den här funktionaliteten ingår som standard i Adobe Campaign. Med det valfria programmet Social Marketing (Social Marketing) kan ni kontakta kunder och potentiella kunder via Facebook och Twitter.
