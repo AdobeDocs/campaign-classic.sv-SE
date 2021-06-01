@@ -7,7 +7,7 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4367'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Ett användningsfall har lagts till om hur du använder **[!UICONTROL Deduplicat
 
 Protokoll- och inställningssidan med en fullständig beskrivning beträffande SMS-kopplingen finns nu tillgänglig [här](../../delivery/using/sms-protocol.md).
 
-Information har lagts till i avsnittet **Transaktionsmeddelanden** som varnar för att händelsemapparna inte får anges som vyer över körningsinstanserna för att undvika problem med åtkomsträttigheter. [Läs mer](../../message-center/using/event-collection.md)
+Information har lagts till i avsnittet **Transaktionsmeddelanden** som varnar för att händelsemapparna inte får anges som vyer över körningsinstanserna för att undvika problem med åtkomsträttigheter. [Läs mer](../../message-center/using/about-event-processing.md#event-collection)
 
 ## November 2020 {#nov-2020}
 
@@ -259,7 +259,7 @@ Integritetslagar för Thailand och Brasilien – [läs mer](https://helpx.adobe.
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Det nya alternativet för att avpublicera en mall för transaktionsmeddelanden beskrivs i [det här avsnittet](../../message-center/using/template-unpublication.md).
+Det nya alternativet för att avpublicera en mall för transaktionsmeddelanden beskrivs i [det här avsnittet](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 De nya alternativen som gör det möjligt att ange begränsningar när du skickar e-postmeddelanden som innehåller bilder som hämtas från en personlig webbadress och bilagor har lagts till i listan med alternativ i Campaign Classic. [Läs mer](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -519,7 +519,7 @@ Avsnittet Underliggande arbetsflödesaktivitet har förbättrats med ett exempel
 
 Sidan med en [matris för lokala och värdbaserade funktioner i Campaign Classic](../../installation/using/capability-matrix.md) har uppdaterats med information om e-postmeddelanden som är osynliga för leveransmottagarna.
 
-Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](../../message-center/using/template-publication.md)
+Dokumentationen om transaktionsmeddelanden har uppdaterats med ett kort avsnitt om mallpublicering. [Läs mer](../../message-center/using/publishing-message-templates.md#template-publication)
 
 Avsnittet Obearbetade och ej levererade e-postmeddelanden har uppdaterats med mer information om fälten Vidarebefordringsadress och Adress för fel. [Läs mer](../../installation/using/deploying-an-instance.md)
 
