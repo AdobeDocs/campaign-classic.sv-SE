@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Konfigurera den mobila applikationen i Adobe Campaign '
 description: Lär dig hur du börjar med konfigurationen för mobilprogrammet
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
+exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
-
 
 # Kom igång med konfigurationen av appen
 
@@ -35,7 +33,7 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
 ![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för att få åtkomst till push-meddelandekanalen i Campaign som hybridkund/värdkund.
+Kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för att få åtkomst till push-meddelandekanalen i Campaign som hybridkund/värdkund.
 
 Som lokal kund måste du installera ett inbyggt paket.
 
