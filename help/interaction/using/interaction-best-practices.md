@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic Interaction best practices
 description: I det här avsnittet beskrivs de bästa sätten att hantera interaktionsmodulen i Adobe Campaign Classic.
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 98413cde-50c9-416c-8316-85837f724c27
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
 
 ---
-
 
 # Bästa praxis för interaktion{#interaction-best-practices}
 
