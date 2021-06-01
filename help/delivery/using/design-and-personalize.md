@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa personaliserat innehåll
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
+exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
 
 ---
-
 
 # Skapa personaliserat innehåll {#build-personalized-content}
 
