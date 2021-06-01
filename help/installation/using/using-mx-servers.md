@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Använda MX-servrar med Campaign
 description: Lär dig hur MX-servrar fungerar med Adobe Campaign Classic.
@@ -8,15 +7,14 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Använda MX-servrar med kampanj {#using-mx-servers}
+# Använda MX-servrar med Campaign {#using-mx-servers}
 
 Lär dig hur MX-servrar fungerar med Adobe Campaign Classic.
 
