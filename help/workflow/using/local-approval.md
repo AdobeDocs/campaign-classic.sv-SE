@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lokalt godkännande
 description: Lokalt godkännande
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
 
 ---
-
 
 # Lokalt godkännande{#local-approval}
 
