@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Felsökning av produktion
 description: Upptäck felsökningsprocedurer för produktion i samband med konfiguration, övervakning, uppgradering, databehandling och databasunderhåll av Adobe Campaign.
@@ -7,8 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
