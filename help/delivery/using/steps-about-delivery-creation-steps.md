@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om steg för att skapa leveranser i Adobe Campaign Classic
 description: Upptäck de viktigaste stegen för leveransframtagning i Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
-
 
 # Om steg för att skapa leveranser {#about-delivery-creation}
 
