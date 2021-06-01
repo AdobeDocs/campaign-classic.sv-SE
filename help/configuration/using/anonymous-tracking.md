@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Anonym spårning
 description: Anonym spårning
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 6%
 
 ---
-
 
 # Anonym spårning{#anonymous-tracking}
 
@@ -34,4 +32,3 @@ Om du vill aktivera anonym webbspårning för din instans måste följande eleme
 * Webbformulär och enkäter måste publiceras och köras på spårningsservern. Matchningsalternativet måste väljas i distributionsguiden.
 
    ![](assets/webtracking_publication_set_for_webapps.png)
-
