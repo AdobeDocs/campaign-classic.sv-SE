@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Spåra hypoteser
-description: Spåra hypoteser
+title: Spårning av hypoteser
+description: Spårning av hypoteser
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 1%
 
 ---
 
-
-# Spåra hypoteser{#hypothesis-tracking}
+# Spårning av hypoteser{#hypothesis-tracking}
 
 Resultatet av hypotesberäkningarna finns på olika nivåer i Adobe Campaign: Indikatorer som beräknas utifrån hypoteser och målpopulationens reaktioner är synliga via den faktiska hypotesen, liksom i hypotesrapporter som är tillgängliga via kampanjer och leveranser.
 
