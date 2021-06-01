@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Fil- och resurshantering
 description: Lär dig hur du konfigurerar fil- och resurshantering i Campaign
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-translation-type: tm+mt
-source-git-commit: 401e1be234d52f04cbdf8dfa97f51ac227836cd5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
