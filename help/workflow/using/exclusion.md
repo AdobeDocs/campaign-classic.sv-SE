@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Uteslutning
 description: Läs mer om arbetsflödesaktiviteten Uteslutning
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # Uteslutning{#exclusion}
 
