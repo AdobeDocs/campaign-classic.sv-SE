@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Power Booster och Power Cluster
 description: Power Booster och Power Cluster
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
 
 ---
-
 
 # Power Booster och Power Cluster{#power-booster-and-power-cluster}
 
@@ -87,4 +85,3 @@ Alternativen Power Booster och Power Cluster kan användas av följande program:
 * En körningsinstans måste dedikeras till en tjänst. Du kan inte installera ett paket för en tjänst som du inte har prenumererat på. Om du till exempel prenumererar på alternativet **Power Booster** för tjänsten **Message Center**, kan du bara installera paketet **[!UICONTROL Execution of transactional messages]** på den dedikerade körningsinstansen. Kontrollera licensavtalet.
 * Eftersom dedikerade instanser (eller kluster) är Adobe Campaign-instanser är rekommendationerna samma som för en huvudinstans. Mer information finns i [det här dokumentet](../../production/using/foreword.md).
 * Kontakta Adobe Campaign Professional Services om du vill konfigurera instansen från en databas-/maskinvarukomponentvy.
-
