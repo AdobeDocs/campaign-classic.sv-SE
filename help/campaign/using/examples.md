@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Exempel
 description: Exempel
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
 
 ---
-
 
 # Exempel{#examples}
 
@@ -252,4 +250,3 @@ Stegen är följande:
 1. Godkänn paketet för att publicera det.
 
    ![](assets/mkg_dist_use_case_form_6.png)
-
