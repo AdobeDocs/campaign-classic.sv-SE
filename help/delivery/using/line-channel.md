@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: LINE-kanal
 description: LINE-kanal
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 3%
 
 ---
-
 
 # Skapa radleveranser{#line-channel}
 
