@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Godkännande
 description: Godkännande
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Godkännande{#approval}
 
@@ -76,4 +74,3 @@ Ett exempel på godkännande visas i [Definiera godkännanden](../../workflow/us
 * **[!UICONTROL responseOperator]**
 
    Identifierare för den operator som svarade. Det här fältet är ett numeriskt värde, men ett **[!UICONTROL String]**-fält.
-
