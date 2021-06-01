@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Läsa in leveransinnehåll
 description: Läsa in leveransinnehåll
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 3%
 
 ---
-
 
 # Läsa in leveransinnehåll{#loading-delivery-content}
 
@@ -39,7 +37,7 @@ Så här gör du:
 
    * Leverans: Beroende på dina behov kan det vara en specifik leverans som redan har skapats i systemet eller en ny leverans som baseras på en befintlig mall.
    * Mottagare: I det här exemplet anses målet vara angivet i själva leveransen.
-   * Innehåll: Även om innehållet importeras i den tidigare aktiviteten väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver, har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
+   * Innehåll: Även om innehållet importeras i den tidigare aktiviteten väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
    * Åtgärd som ska utföras: Välj **[!UICONTROL Save]** om du vill spara leveransen och kunna komma åt den från **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** när arbetsflödet har körts.
 
    ![](assets/delivery_loadcontent_activityexample.png)
