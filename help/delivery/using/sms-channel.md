@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med SMS-kanal
 description: Kom igång med SMS-kanal
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
-
 
 # Kom igång med SMS-kanal{#sms-channel}
 
@@ -43,4 +41,3 @@ Global information om hur du skapar en leverans finns i [det här avsnittet](../
 >I Adobe Campaign kan du även skicka meddelanden på mobilterminaler via alternativet **Adobe Campaign Mobile App Channel (NMAC)**.
 > 
 >Mer information finns i [Komma igång med mobilappskanalen](../../delivery/using/about-mobile-app-channel.md).
-
