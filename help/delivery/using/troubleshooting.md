@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Felsökning
 description: Felsökning
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
 
 ---
-
 
 # Felsökning{#troubleshooting}
 
