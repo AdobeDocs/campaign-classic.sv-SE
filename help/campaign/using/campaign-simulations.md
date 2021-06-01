@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Kampanjsimuleringar
-description: Kampanjsimuleringar
+title: Simuleringar i Campaign
+description: Simuleringar i Campaign
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 1%
 
 ---
 
-
-# Kampanjsimuleringar{#campaign-simulations}
+# Simuleringar i Campaign{#campaign-simulations}
 
 ## Om simuleringar {#about-simulations}
 
