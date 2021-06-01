@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Om instruktionsaktiviteter
-description: Om instruktionsaktiviteter
+title: Om åtgärdsaktiviteter
+description: Om åtgärdsaktiviteter
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 2%
 
 ---
 
-
-# Om instruktionsaktiviteter{#about-action-activities}
+# Om åtgärdsaktiviteter{#about-action-activities}
 
 * **Leverans**: I kan du konfigurera en leveransåtgärd. Se avsnittet [Delivery](../../workflow/using/delivery.md).
 * **Leveranskontroll**: Med kan du starta, pausa eller stoppa en leverans. Se avsnittet [Leveranskontroll](../../workflow/using/delivery-control.md).
