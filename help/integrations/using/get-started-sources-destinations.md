@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Kom igång med källor och mål
+title: Kom igång med källor och destinationer
 description: Läs mer om Adobe Experience Platform Sources and Destinations.
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b4da54c122e75a175f6f586a05955b3dfed00c1e
+exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# Kom igång med källor och mål {#rtcdp}
+# Kom igång med källor och destinationer {#rtcdp}
 
 ## Om Källor och mål
 
