@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skicka begäran till Adobe
 description: Skicka begäran till Adobe
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 10%
 
 ---
-
 
 # Skicka begäran till Adobe{#submitting-request-to-adobe}
 
