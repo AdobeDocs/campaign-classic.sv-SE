@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveransbarhet i Campaign
 description: Lär dig god praxis vad gäller leverans
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
+exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
-
-# Vad är leveransbarhet{#about-deliverability}?
+# Vad är levererbarhet?{#about-deliverability}
 
 Leveransmöjligheterna gör att ni kan mäta framgången för era kampanjer som når mottagarnas inkorgar utan att studsa, eller markeras som skräppost. [Läs varför levererbarhet är viktigt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
 Mer exakt är att e-postleverans är en uppsättning egenskaper som avgör hur ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
 
-Mer information om leveransvillkor och leveranssätt finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Mer information om leveransvillkor och leveranssätt finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Så här förbättrar du leveransen {#deliverability-key-points}
 
@@ -59,7 +57,7 @@ Adobe Campaign har flera verktyg för att spåra och förbättra plattformens le
 
 När du konfigurerar, utformar och testar ett meddelande måste du följa de riktlinjer som beskrivs i avsnitten nedan. Genom att utnyttja alla funktioner i Adobe Campaign kan ni förbättra leveransen.
 
-* [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md)
+* [God praxis för leverans](../../delivery/using/delivery-best-practices.md)
 * [Kontrollera e-postinnehåll](../../delivery/using/control-message-content.md)
 * [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md)
 * [Skicka en korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
@@ -68,7 +66,7 @@ När du konfigurerar, utformar och testar ett meddelande måste du följa de rik
 
 För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en mekanism för dubbel anmälan. Med den här metoden kan du säkerställa att mottagarna prenumererar avsiktligt.
 
-Mer information finns i [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 Mer information om de bästa sätten att samla in data från dina kunder finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 
@@ -82,8 +80,8 @@ Vissa internetleverantörer betraktar automatisk e-post som skräppost om antale
 
 Mer information finns i följande avsnitt:
 
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Förstå karantänhantering](../../delivery/using/understanding-quarantine-management.md)
+* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Om karantänshantering](../../delivery/using/understanding-quarantine-management.md)
 * [Karantän mot blockeringslista](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Använd övervaknings- och rapporteringsverktyg
