@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Återkommande leverans
 description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 11%
 
 ---
-
 
 # Återkommande leverans{#recurring-delivery}
 
@@ -53,4 +51,3 @@ I den här videon förklaras hur du konfigurerar en återkommande leverans och e
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
-
