@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om inkommande kanaler
 description: Om inkommande kanaler
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 33247728-b865-4dfd-814f-2900965a7187
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
 
 ---
-
 
 # Om inkommande kanaler{#about-inbound-channels}
 
