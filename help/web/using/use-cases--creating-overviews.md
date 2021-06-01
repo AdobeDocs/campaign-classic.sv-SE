@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Användningsfall: skapa översikter"'
 description: '"Användningsfall: skapa översikter"'
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
 
 ---
-
 
 # Användningsexempel: skapa översiktssidor{#use-cases-creating-overviews}
 
@@ -224,4 +222,3 @@ Dessa två element grupperas i samma behållare för att grafiskt grupperas i ö
 Webbprogrammet är nu konfigurerat. Du kan förhandsgranska fliken **[!UICONTROL Preview]**.
 
 ![](assets/s_ncs_configuration_webapp_result.png)
-
