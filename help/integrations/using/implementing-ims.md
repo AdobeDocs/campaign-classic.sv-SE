@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Implementera IMS
 description: Implementera IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
 
 ---
-
 
 # Implementera IMS{#implementing-ims}
 
@@ -32,4 +30,3 @@ ht-degree: 0%
 Om du vill inaktivera anslutning via Adobe ID kopplar du från klickar du på **[!UICONTROL File > Connections]** och avmarkerar **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)
-
