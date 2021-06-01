@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera FDA-anslutningar
 description: Lär dig konfigurationssteg för FDA
@@ -7,8 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-translation-type: tm+mt
-source-git-commit: 7ce5a01b57092043b8d9b52761b243f771cf74f2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 5%
