@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verifierar leveransen
 description: Verifierar leveransen
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
+exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# Verifiera leveransen {#validating-the-delivery}
+# Validera leveransen {#validating-the-delivery}
 
 När en leverans har skapats och konfigurerats måste du validera den innan du skickar den till huvudmålet.
 
@@ -127,7 +125,7 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 >
 >Om du vill vara säker på att de större leveransanalyserna inte fördröjer arbetsflödena kan du schemalägga deras körningar genom att trycka på **[!UICONTROL Schedule execution for a time of low activity]**.
 
-## Skicka ett korrektur {#sending-a-proof}
+## Skicka ett bevis {#sending-a-proof}
 
 För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
