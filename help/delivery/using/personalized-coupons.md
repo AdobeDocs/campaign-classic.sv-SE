@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Personaliserade kuponger
 description: Personaliserade kuponger
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
