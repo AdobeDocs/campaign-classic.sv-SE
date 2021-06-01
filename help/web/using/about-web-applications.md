@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Kom igång med webbapplikationer '
 description: Skapa och dela dynamiska webbapplikationer, landningssidor och enkäter
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
 
 ---
-
 
 # Kom igång med webbapplikationer {#about-web-applications}
 
@@ -102,4 +100,3 @@ Med guiden Skapa kan du välja de alternativ som du vill aktivera, vilket visas 
 >[!CAUTION]
 >
 >Vilka program som är tillgängliga beror på vilka alternativ och moduler du har. Kontrollera licensavtalet.
-
