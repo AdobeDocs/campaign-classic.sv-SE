@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa direktutskick
 description: Skapa direktutskick
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 27%
 
 ---
-
 
 # Skapa direktutskick{#creating-a-direct-mail-delivery}
 
