@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa ett Experience Manager-nyhetsbrev
 description: Skapa ett Experience Manager-nyhetsbrev
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
 
 ---
-
 
 # Skapa ett Experience Manager-nyhetsbrev{#creating-an-experience-manager-newsletter}
 
