@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Inställningsfaser
-description: Inställningsfaser
+title: Konfigurationsfaser
+description: Konfigurationsfaser
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 2%
 
 ---
 
-
-# Inställningsfaser{#setup-stages}
+# Konfigurationsfaser{#setup-stages}
 
 Den grundläggande principen är att infoga webbspårningstaggar på vissa sidor på webbplatsen.
 
@@ -50,4 +48,3 @@ window.location.protocol + "//tsupport/r/" +
 Math.random().toString() + "?tagid=" + escape(_t) + "'/>")
 </script>
 ```
-
