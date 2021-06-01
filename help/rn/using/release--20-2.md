@@ -3,15 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Version 20.2
 description: Version 20.2
-feature: Overview
+feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: tm+mt
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -27,7 +26,7 @@ _15 april 2021_
 
 >[!NOTE]
 >
-> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/sv/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
+> Anslut till [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) för att hämta den nya versionen. Läs om hur du föreslår en konsoluppdatering för alla slutanvändare [på den här sidan](../../installation/using/client-console-availability-for-windows.md).
 
 _31 mars 2021_
 
@@ -202,7 +201,7 @@ Läs mer i [kompatibilitetsmatrisen i Campaign](https://helpx.adobe.com/se/campa
 
 **Förbättringar**
 
-* Transaktionsmeddelanden har förbättrats för en bättre användarupplevelse. En mall för transaktionsmeddelanden kan nu avpubliceras. Detta tar bort den från körningsinstanserna. [Läs mer](../../message-center/using/template-unpublication.md).
+* Transaktionsmeddelanden har förbättrats för en bättre användarupplevelse. En mall för transaktionsmeddelanden kan nu avpubliceras. Detta tar bort den från körningsinstanserna. [Läs mer](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 * Det finns nya alternativ för att ange begränsningar när e-postmeddelanden skickas och de innehåller bilder eller bilagor. Dessa skydd kan undvika prestandaproblem, vilket är särskilt användbart för transaktionsmeddelanden. [Läs mer](../../installation/using/configuring-campaign-options.md#delivery)
 
