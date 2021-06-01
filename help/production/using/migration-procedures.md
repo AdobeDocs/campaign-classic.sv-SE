@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Migreringsförfaranden
 description: Migreringsförfaranden
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b71a4d3-b340-4742-bd69-4073ce271cf3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 20%
 
 ---
-
 
 # Migreringsförfaranden{#migration-procedures}
 
@@ -24,6 +22,5 @@ Om du uppgraderar från Adobe Campaign v6 till v7 rekommenderar vi följande rik
 
 Mer information om migreringsprocedurer och bästa metoder finns i:
 
-* [Utföra en uppgradering av din build](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
+* [Utföra en uppgradering av din build](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html)
 * [Migreringsöversikt](../../migration/using/about-migration.md)
-
