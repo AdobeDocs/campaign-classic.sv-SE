@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kontrollpanel för leverans
 description: Läs mer om hur du använder kontrollpanelen för leverans för att övervaka leveranser.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
 
 ---
-
 
 # Kontrollpanel för leverans {#delivery-dashboard}
 
@@ -34,9 +32,9 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 
 **Relaterade ämnen:**
 
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Förstå karantänhantering](../../delivery/using/understanding-quarantine-management.md)
-* [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md)
+* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Om karantänshantering](../../delivery/using/understanding-quarantine-management.md)
+* [God praxis för leverans](../../delivery/using/delivery-best-practices.md)
 * [Hantera levererbarhet](../../delivery/using/about-deliverability.md)
 
 ## Sammanfattning av leverans {#delivery-summary}
