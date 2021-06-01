@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: RDBMS-specifika rekommendationer
 description: RDBMS-specifika rekommendationer
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 1%
 
 ---
-
 
 # RDBMS-specifika rekommendationer{#rdbms-specific-recommendations}
 
@@ -95,6 +93,7 @@ vacuum full nmsdelivery;
 >* Kommandona **vakuum** och **reindex** låser tabellen, vilket pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfullt** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YYYNmsBroadLogXx**.
 >* Underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+
 >
 
 
@@ -357,7 +356,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Kontakta din databasadministratör för att ta reda på vilka procedurer som passar bäst för din version av Oracle.
+Kontakta databasadministratören för att få information om de procedurer som är bäst för din version av Oraclet.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
