@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Det gick inte att ansluta
 description: Det gick inte att ansluta
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
-
 
 # Det gick inte att ansluta{#failure-to-connect}
 
 Orsaken till ett anslutningsproblem kan vara flera och beror på olika sammanhang.
 
-Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
