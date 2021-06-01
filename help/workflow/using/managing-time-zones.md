@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera tidszoner
 description: Hantera tidszoner
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 3%
 
 ---
-
 
 # Hantera tidszoner{#managing-time-zones}
 
