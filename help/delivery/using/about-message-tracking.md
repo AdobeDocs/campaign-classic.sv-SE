@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kom igång med spårning
 description: Läs mer om de allmänna riktlinjerna för spårning i Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
+exl-id: 43779505-9917-4e99-af25-b00a9d29a645
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
 
 ---
-
 
 # Kom igång med meddelandespårning {#get-started-tracking}
 
@@ -75,7 +73,7 @@ Innan du skickar meddelanden med din spårning kan du testa spårningen på din 
 
 Du kan också spåra och mäta besök på webbprogramsidor med hjälp av spårningstaggar. Den här funktionen kan användas för alla typer av webbprogram, t.ex. formulär och onlineundersökningar. [Läs mer](../../web/using/tracking-a-web-application.md)
 
-**Välja att inte delta i spårning av webbapplikation**
+**Välj att inte delta i spårning av webbapplikation**
 
 Med avanmälan om spårning av webbprogram kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning. Du kan inkludera möjligheten att visa en banderoll i webbprogram eller landningssidor så att användarna kan välja bort den. [Läs mer](../../web/using/web-application-tracking-opt-out.md)
 
