@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Spåra loggproblem
 description: Spåra loggproblem
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
+exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
 
 ---
-
 
 # Spåra loggproblem{#tracking-logs-issues}
 
