@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Diskussionsforum
 description: Diskussionsforum
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
 
 ---
-
 
 # Diskussionsforum{#discussion-forums}
 
@@ -111,6 +109,4 @@ Om operatorer som prenumererar på ett forum inte får meddelanden som förvänt
 
    * Gå till **[!UICONTROL Campaigns > Navigation > Deliveries]** på Adobe Campaign hemsida och öppna sedan **[!UICONTROL Discussion forum notification]**-leveransen.
    * Gå till **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** i Utforskaren och klicka sedan på **[!UICONTROL Discussion forum notifications]**.
-
    I rutan **[!UICONTROL Discussion forum notifications]** finns leveransloggarna på fliken **[!UICONTROL Edit > Delivery]**. Du kan även visa flikarna **[!UICONTROL Tracking > Log]** och **[!UICONTROL Exclusion causes]**.
-
