@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Statiska element i ett webbformulär
 description: Statiska element i ett webbformulär
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
 
 ---
-
 
 # Statiska element i ett webbformulär{#static-elements-in-a-web-form}
 
@@ -115,19 +113,19 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
    >[!CAUTION]
    >
-   >Den här funktionen är bara tillgänglig om du har installerat **[!UICONTROL Social Marketing]**-programmet. Om du vill använda det här alternativet måste du skapa ett Facebook-program tillsammans med ett **[!UICONTROL Facebook Connect]**-typspecifikt externt konto. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
+   >Den här funktionen är bara tillgänglig om du har installerat **[!UICONTROL Social Marketing]**-programmet. Om du vill använda det här alternativet måste du skapa ett Facebook-program tillsammans med ett externt konto av typen **[!UICONTROL Facebook Connect]**. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
 
    Med alternativet **[!UICONTROL Preload with Facebook]** kan du infoga en knapp i ett formulär för att förhandsladda fält med hjälp av Facebook-profilinformation.
 
    ![](assets/web_social_webapp_037.png)
 
-   När en användare klickar på knappen **[!UICONTROL Fill in automatically]** öppnas fönstret för Facebook-begäran om behörighet.
+   När en användare klickar på knappen **[!UICONTROL Fill in automatically]** öppnas Facebook behörighetsfönster.
 
    ![](assets/web_social_webapp_029.png)
 
    >[!NOTE]
    >
-   >Det går att ändra listan med utökade rättigheter när det externa kontot konfigureras. Om du inte anger några utökade behörigheter vidarebefordrar Facebook grundläggande profilinformation som standard.\
+   >Det går att ändra listan med utökade rättigheter när det externa kontot konfigureras. Om du inte anger några utökade behörigheter vidarebefordrar Facebook basprofilinformationen som standard.\
    >Klicka här om du vill visa en lista över utökade rättigheter och syntax för dem: [https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
 
    Om användaren går med på att dela sin information är formulärfälten förinlästa.
