@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Värmekarta för kampanjarbetsflöde
 description: Övervaka arbetsflödena med Workflow HeatMap
@@ -7,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: e6969a3ed61bde692b2f72b3711f12ce46a0025f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
