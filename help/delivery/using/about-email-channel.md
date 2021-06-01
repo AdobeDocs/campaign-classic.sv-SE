@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om e-postkanal i Adobe Campaign Classic
 description: I det här avsnittet finns allmän information om e-postkanalen i Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
 
 ---
 
-
-# Om e-postkanal{#about-email-channel}
+# Om e-postkanalen{#about-email-channel}
 
 Med Adobe Campaign kan ni massleverera personaliserade elektroniska meddelanden till en målgrupp.
 
