@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tabeller att underhålla
 description: Tabeller att underhålla
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
 
 ---
-
 
 # Tabeller att underhålla{#tables-to-maintain}
 
