@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integrera med Adobe Target
 description: Integrera med Adobe Target
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 4%
 
 ---
-
 
 # Integrera med Adobe Target{#integrating-with-adobe-target}
 
