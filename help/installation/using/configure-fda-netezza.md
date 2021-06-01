@@ -1,30 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera åtkomst till Netezza
-description: Lär dig konfigurera åtkomst till Netezza i FDA
+description: Lär dig hur du konfigurerar åtkomst till Netezza i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
-
 # Konfigurera åtkomst till Netezza {#configure-access-to-netezza}
 
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Netezza.
 
 1. Installera och konfigurera [Netezza-drivrutiner](#netezza-config)
-1. Konfigurera det externa Netezza [kontot](#netezza-external) i Campaign
+1. Konfigurera det externa Netezza-kontot [i Campaign](#netezza-external)
 
-## Netezza configuration {#netezza-config}
+## Netezza-konfiguration {#netezza-config}
 
-För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
+För anslutning till en extern Netezza-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
 
 1. Installera ODBC-drivrutinerna för Netezza enligt det operativsystem du använder:
 
@@ -71,7 +69,7 @@ För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigu
 
 ## Netezza externt konto {#netezza-external}
 
-Med Netezza externa konto kan du ansluta Campaign-instansen till din externa Netezza-databas.
+Med det externa Netezza-kontot kan du ansluta Campaign-instansen till din externa Netezza-databas.
 
 1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
 
@@ -81,7 +79,7 @@ Med Netezza externa konto kan du ansluta Campaign-instansen till din externa Net
 
    * **[!UICONTROL Type]**: Netezza
 
-   * **[!UICONTROL Server]**: URL för Netezza-servern
+   * **[!UICONTROL Server]**: NETEZZA-serverns URL
 
    * **[!UICONTROL Account]**: Användarens namn
 
@@ -93,4 +91,4 @@ Med Netezza externa konto kan du ansluta Campaign-instansen till din externa Net
 >
 >Åtgärder för scheman som innehåller automatiskt genererade primärnycklar beaktas inte.
 >
->Tabellen använder **Organize on**-satsen på det första indexet som definieras i schemat. Eftersom den här satsen är begränsad till 1 till 4 kolumner med Netezza, får indexet inte innehålla fler än 4 kolumner.
+>Tabellen använder **Organize on**-satsen på det första indexet som definieras i schemat. Eftersom den här satsen är begränsad till 1 till 4 kolumner med Netezza får indexet inte innehålla fler än 4 kolumner.
