@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hantera prenumerationer
 description: Hantera prenumerationer
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
 
 ---
-
 
 # Hantera prenumerationer{#managing-subscriptions}
 
@@ -52,11 +50,11 @@ Om du vill redigera en befintlig tjänst klickar du på dess namn. Om du vill sk
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Ange namnet på tjänsten i fältet **[!UICONTROL Label]** och välj leveranskanalen: e-post, mobil, Facebook, Twitter eller mobilappar.
+* Ange namnet på tjänsten i fältet **[!UICONTROL Label]** och välj leveranskanalen: e-post, mobilappar, Facebook, Twitter och mobilappar.
 
    >[!NOTE]
    >
-   >Prenumerationer på Facebook och Twitter beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
+   >Facebook- och Twitter-prenumerationer beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
 
 * För en tjänst av typen E-post väljer du **Leveransläge**. Möjliga lägen är: **[!UICONTROL Newsletter]** eller **[!UICONTROL Viral]**.
 * Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller ett avabonnemang. För att göra detta väljer du de leveransmallar som ska användas för att skapa motsvarande leveranser från fälten **[!UICONTROL Subscription]** och **[!UICONTROL Unsubscription]**. Dessa mallar måste konfigureras med en **[!UICONTROL Subscription]**-målmappning utan ett definierat mål. Se avsnitt [Om e-postkanal](../../delivery/using/about-email-channel.md).
