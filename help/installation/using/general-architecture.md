@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Allmän arkitektur
 description: Lär dig hur du installerar och konfigurerar Campaign Classic.
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
 
 ---
-
 
 # Allmän arkitektur{#general-architecture}
 
