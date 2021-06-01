@@ -1,30 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera åtkomst till SAP HANA
-description: Lär dig konfigurera åtkomst till SAP HANA i FDA
+description: Lär dig hur du konfigurerar åtkomst till SAP HANA i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-
 # Konfigurera åtkomst till SAP HANA {#configure-access-to-sap-hana}
 
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till SAP HANA.
 
 1. Konfigurera [SAP HANA-databas](#sap-config)
-1. Konfigurera det externa SAP HANA [kontot](#sap-external) i Campaign
+1. Konfigurera det externa SAP HANA-kontot [i Campaign](#sap-external)
 
 ## SAP HANA-drivrutiner {#sap-config}
 
-För att ansluta till en extern SAP HANA-databas i FDA krävs vissa ytterligare konfigurationer på Adobe Campaign-servern:
+Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfigurationer på Adobe Campaign-servern:
 
 1. Installera ODBC-drivrutinerna för SAP HANA enligt det operativsystem du använder:
 
@@ -60,9 +58,9 @@ För att ansluta till en extern SAP HANA-databas i FDA krävs vissa ytterligare 
    * **LD_LIBRARY_PATH**: Den bör innehålla länken till SAP Hana-klienten (/usr/sap/hdbclient/libodbcHDB.so) som standard.
    * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
 
-## SAP HANA externt konto{#sap-external}
+## Externt SAP HANA-konto{#sap-external}
 
-Med SAP HANA externa konto kan du ansluta Campaign-instansen till din externa SAP HANA-databas.
+Med det externa SAP HANA-kontot kan du ansluta Campaign-instansen till din externa SAP HANA-databas.
 
 1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
 
