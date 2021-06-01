@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bilder saknas
 description: Bilder saknas
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+exl-id: 6ccda57d-f7a3-4501-b2f4-59fcb05f9013
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 5%
 
 ---
-
 
 # Bilder saknas{#images-missing}
 
