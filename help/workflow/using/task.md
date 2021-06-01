@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Uppgift
 description: Läs mer om aktivitetsarbetsflödesaktiviteten
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
 
 ---
-
 
 # Uppgift{#task}
 
