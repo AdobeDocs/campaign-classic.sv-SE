@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gränssnitt för innehållsredigeraren
 description: Gränssnitt för innehållsredigeraren
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: c93931820887306c0ef64ef05d4f0ba2ca5a98aa
+exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 3%
 
 ---
-
 
 # Gränssnitt för innehållsredigeraren{#content-editor-interface}
 
@@ -87,4 +85,3 @@ Verktygsfältet är ett **popup-element** i DCE-gränssnittet som visar olika fu
 >[!CAUTION]
 >
 >Du kan formatera HTML-innehållet med vissa verktygsfältsfunktioner. Om sidan innehåller en CSS-formatmall kan det emellertid visa sig att **instruktionerna** från formatmallen **prioriterar** framför instruktionerna som anges i verktygsfältet.
-
