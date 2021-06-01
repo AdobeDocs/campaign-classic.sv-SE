@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kontinuerlig leverans
 description: Kontinuerlig leverans
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 6%
 
 ---
-
 
 # Kontinuerlig leverans{#continuous-delivery}
 
@@ -50,7 +48,7 @@ Den här uppsättningen med tre värden identifierar det mål som uppstår vid l
 
 Övergången som är associerad med komplementet har samma parametrar.
 
-## Så ställer man in en kontinuerlig leverans
+## Så ställer du in en kontinuerlig leverans
 
 I det här avsnittet beskrivs hur du konfigurerar en kontinuerlig leverans.
 
