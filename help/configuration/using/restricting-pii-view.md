@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Begränsa PII-vyn
 description: Begränsa PII-vyn
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
 
 ---
-
 
 # Begränsa PI-vyn{#restricting-pii-view}
 
@@ -92,4 +90,3 @@ Nedan visas ett exempel på ett loggtabellstillägg som implementerar detta:
 >[!NOTE]
 >
 >Denna begränsning gäller icke-tekniska användare: en teknisk användare med tillhörande behörigheter kan hämta data. Denna metod är därför inte helt säker.
-
