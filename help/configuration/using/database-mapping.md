@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Databaskartläggning
-description: Databaskartläggning
+title: Databasmappning
+description: Databasmappning
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 728b509f-2755-48df-8b12-449b7044e317
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
 
 ---
 
-
-# Databaskartläggning{#database-mapping}
+# Databasmappning{#database-mapping}
 
 SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
@@ -305,7 +303,7 @@ Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i d
 
 >[!NOTE]
 >
->En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** till exempel) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **Ids**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa filerna **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** som följer med programmet i katalogen **datakit/nms/eng/sql/** för att återskapa exemplet en NmsTrackingLogId-sekvens skapas för varje databasmotor.
+>En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** till exempel) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **Ids**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa filerna **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** som följer med programmet i katalogen **datakit/nms/eng/sql/** för att återställa exemplet för en NmsTrackingLogId-sekvens som skapas för varje databasmotor.
 
 Om du vill deklarera en unik nyckel fyller du i attributet **autopk** (med värdet &quot;true&quot;) för huvudelementet i dataschemat.
 
@@ -506,7 +504,7 @@ Länka till en mapp (&quot;xtk:folder&quot;-schema):
 
 Standardvärdet returnerar identifieraren för den första giltiga parametertypfilen som anges i funktionen &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Exempel 4 {#example-5}
+### Exempel 5 {#example-5}
 
 I det här exemplet vill vi skapa en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;email&quot;):
 
