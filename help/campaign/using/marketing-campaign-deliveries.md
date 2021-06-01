@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
 
 ---
-
 
 # Leveranser av marknadsföringskampanjer {#marketing-campaign-deliveries}
 
