@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skicka en rapport till en lista
 description: Lär dig hur du skickar en rapport till en lista med ett arbetsflöde
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
 
 ---
-
 
 # Skicka en rapport till en lista{#sending-a-report-to-a-list}
 
@@ -128,6 +126,4 @@ Följande arbetsflöde skapades för det här användningsfallet. Den har tre ve
    * För fälten **[!UICONTROL Recipients]** och **[!UICONTROL Content]** väljer du **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]**: välj  **[!UICONTROL Prepare and start]**.
    * Avmarkera **[!UICONTROL Generate an outbound transition]** och **[!UICONTROL Process errors]**.
-
    ![](assets/use_case_report_11.png)
-
