@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Driftsättning via mid-sourcing
 description: Driftsättning via mid-sourcing
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
 
 ---
-
 
 # Driftsättning via mid-sourcing{#mid-sourcing-deployment}
 
@@ -56,7 +54,7 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
 ## Installations- och konfigurationssteg {#installation-and-configuration-steps-}
 
-### Förutsättningar {#prerequisites}
+### Förhandskrav {#prerequisites}
 
 * JDK på programservern.
 * Åtkomst till en databasserver på programservern.
