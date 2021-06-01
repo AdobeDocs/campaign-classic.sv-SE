@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa ett arbetsflöde
 description: Lär dig hur du skapar ett arbetsflöde
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
 
 ---
-
 
 # Skapa ett arbetsflöde {#building-a-workflow}
 
@@ -64,7 +62,7 @@ Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga f
 
 Så här skapar du diagrammet
 
-1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp.
+1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
 
    Lägg till en **Start**-aktivitet och sedan en **Delivery**-aktivitet i diagrammet.
 
