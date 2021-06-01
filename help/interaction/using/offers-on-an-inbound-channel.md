@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erbjudanden på en inkommande kanal
 description: Erbjudanden på en inkommande kanal
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 90afced3-465d-4370-8a33-51a7e4356135
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
 
 ---
-
 
 # Erbjudanden på en inkommande kanal{#offers-on-an-inbound-channel}
 
