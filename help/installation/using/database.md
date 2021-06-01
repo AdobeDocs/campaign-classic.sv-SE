@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rekommendationer för Campaign Classic-databasen
 description: Databasrekommendationer
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
 
 ---
-
 
 # Databas{#database}
 
@@ -45,7 +43,7 @@ Följande åtkomst-DLL måste finnas: **sqlncli11.dll**.
 
 Parametrarna **NLS_NCHAR_CHARACTERSET** och **NLS_CHARACTERSET** måste vara korrekt konfigurerade för att databasen ska fungera i Unicode eller ANSI.
 
-Adobe Campaign använder Oracle standardkodning. Om du använder annan kodning kan kompatibilitetsproblem uppstå: Kontakta då teknisk support.
+Adobe Campaign använder standardkodning för Oraclen. Om du använder annan kodning kan kompatibilitetsproblem uppstå: Kontakta då teknisk support.
 
 Använd följande **sqlplus**-kommando för att ta reda på om kodningen:
 
@@ -66,7 +64,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Om du vill logga in på **sqlplus** använder du Oracle-användarprofil:
+Om du vill logga in på **sqlplus** använder du Oraclets användarprofil:
 
 ```
 su - oracle 
