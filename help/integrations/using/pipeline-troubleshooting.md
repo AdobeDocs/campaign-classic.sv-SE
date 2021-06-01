@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera integreringen
 description: Konfigurera integreringen
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
 
 ---
-
 
 # Felsöka pipelines {#pipeline-troubleshooting}
 
