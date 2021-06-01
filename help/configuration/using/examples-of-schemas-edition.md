@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Exempel på scheman
-description: Exempel på scheman
+title: Exempel på schemautgåvor
+description: Exempel på schemautgåvor
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
 
 ---
 
-
-# Exempel på scheman{#examples-of-schemas-edition}
+# Exempel på schemautgåvor{#examples-of-schemas-edition}
 
 ## Utöka en tabell {#extending-a-table}
 
