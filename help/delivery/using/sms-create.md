@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Skapa SMS med Campaign
 description: Lär dig hur du skapar SMS med Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
+exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 3%
 
 ---
-
 
 # Skapa en SMS-leverans {#creating-a-sms-delivery}
 
@@ -72,4 +70,3 @@ Den detaljerade processen när målpopulationen för en leverans väljs visas i 
 Mer information om användning av anpassningsfält finns i [det här avsnittet](../../delivery/using/about-personalization.md).
 
 Mer information om att ta med en startvärdeslista finns på [den här sidan](../../delivery/using/about-seed-addresses.md).
-
