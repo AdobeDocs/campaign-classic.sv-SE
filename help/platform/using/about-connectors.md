@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om kopplingar
 description: Om kopplingar
-feature: Overview
+feature: Översikt
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '198'
 ht-degree: 8%
 
 ---
-
 
 # Kom igång med anslutningar{#about-connectors}
 
@@ -34,4 +32,3 @@ Du kan också integrera Campaign med flera andra system, som:
 >[!NOTE]
 >
 >Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. Se [Kampanjens lokala värdfunktioner, matris](../../installation/using/capability-matrix.md).
-
