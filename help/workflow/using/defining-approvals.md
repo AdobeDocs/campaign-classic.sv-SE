@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definiera godkännanden
 description: Godkännanden gör det möjligt för operatorer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
+exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # Definiera godkännanden {#defining-approvals}
 
