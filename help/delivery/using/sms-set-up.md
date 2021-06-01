@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurera kampanj-SMS-kanal
 description: Lär dig konfigurera SMS-kanalen i Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
+exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 34%
 
 ---
-
 
 # Konfigurera SMS-kanal {#setting-up-sms-channel}
 
@@ -145,7 +143,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
