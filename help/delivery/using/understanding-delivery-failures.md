@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Om leveransfel
 description: Lär dig mer om leveransfel
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-translation-type: tm+mt
-source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -172,7 +170,7 @@ Möjliga orsaker till leveransfel är:
   <tr> 
    <td> Okänd användare </td> 
    <td> Hård </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Adressen finns inte. Inga fler leveransförsök kommer att göras för den här profilen.<br /> </td> 
   </tr> 
  </tbody> 
