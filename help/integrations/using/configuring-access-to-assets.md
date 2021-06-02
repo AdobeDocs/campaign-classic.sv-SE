@@ -30,7 +30,7 @@ I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign 
 
 ## Integrera med Experience Cloud Assets {#integrating-with-experience-cloud-assets}
 
-För att kunna använda integrationen mellan Adobe Campaign och Experience Cloud Assets måste du ha:
+För att kunna använda integreringen mellan Adobe Campaign och Experience Cloud Assets måste du ha:
 
 * En Adobe Experience Cloud-organisation
 * Verifieringsläget Adobe IMS är aktiverat
