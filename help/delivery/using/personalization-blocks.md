@@ -104,7 +104,7 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
 
 * **[!UICONTROL Link to mirror page]** : infogar en länk till spegelsidan: &quot;Om du inte kan visa det här meddelandet korrekt klickar du här&quot;.
 * **[!UICONTROL Unsubscription link]** : infogar en länk som gör det möjligt att avbryta prenumerationen på alla leveranser (blockeringslista).
-* **[!UICONTROL Formatting function for proper nouns]** : genererar  **[!UICONTROL toSmartCase]** JavaScript-funktionen, som ändrar den första bokstaven i varje ord till versaler. Det här blocket måste infogas i källkoden för leveransen i **`<script>...</script>`**-taggar.
+* **[!UICONTROL Formatting function for proper nouns]** : genererar  **[!UICONTROL toSmartCase]** JavaScript-funktionen, som ändrar den första bokstaven i varje ord till versaler. Det här blocket måste infogas i källkoden för leveransen, i **`<script>...</script>`**-taggar.
 
    I exemplet nedan används funktionen för att ersätta elementet&quot;Min rubrik&quot; med&quot;Min nya rubrik&quot; med versaler vid varje ord:
 
