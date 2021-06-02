@@ -32,7 +32,7 @@ När du skickar ett e-postmeddelande upprättar programservern en anslutning til
 
 I anslutningsprotokollet måste regler iakttas för att förhindra spamning och monopolering av servrar. De viktigaste är följande:
 
-* **Högsta antal tillåtna** anslutningar: När det här numret respekteras finns IP-adresser inte på blockeringslista och e-postmeddelanden nekas inte på grund av extra anslutningar.
+* **Högsta antal tillåtna** anslutningar: När det här numret respekteras finns IP-adresser inte på blockeringslista och e-post nekas inte på grund av extra anslutningar.
 * **Maximalt antal meddelanden**: Under anslutningen måste antalet meddelanden som får skickas definieras. Om det här numret inte är definierat skickas så många som möjligt av servern. Detta leder till att Internet-leverantören identifierar den som en skräppost och lägger till den i blockeringslista.
 * **Meddelanden per timme**: För att matcha ditt rykte kommer Adobe Campaign att kontrollera antalet e-postmeddelanden som IP-adresser kan skicka per timme. Det här systemet kommer att skydda dig mot e-postavslag eller/och blockeringslista.
 
