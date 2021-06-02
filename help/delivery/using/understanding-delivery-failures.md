@@ -164,13 +164,13 @@ Möjliga orsaker till leveransfel är:
   <tr> 
    <td> Onåbar </td> 
    <td> Mjuk/hård </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Ett fel har uppstått i meddelandeleveranskedjan. Det kan vara en incident på SMTP-relä, en domän som inte går att nå för tillfället, osv. Enligt felet görs ett nytt försök att ange adressen tills felräknaren når 5 eller skickas direkt till karantän.<br /> </td> 
   </tr> 
   <tr> 
    <td> Okänd användare </td> 
    <td> Hård </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Adressen finns inte. Inga fler leveransförsök kommer att göras för den här profilen.<br /> </td> 
   </tr> 
  </tbody> 
