@@ -75,7 +75,7 @@ Så här utför du det här exemplet:
 
    * Återställ spårningsloggar under en viss period för en viss leverans. Tre filtervillkor krävs: Två datumvillkor för att fastställa söktiden mellan två veckor före dagens datum och dagen före dagens datum. och ett annat villkor som begränsar sökningen till en viss leverans.
 
-      I fönstret **[!UICONTROL Target element]** konfigurerar du det datum som börjar när spårningsloggar ska beaktas. Klicka på **[!UICONTROL Add]**. En villkorslinje visas. Redigera kolumnen **[!UICONTROL Expression]** genom att klicka på funktionen **[!UICONTROL Edit expression]**. Välj **[!UICONTROL Date (@logDate)]** i fönstret **[!UICONTROL Field to select]**.
+      I fönstret **[!UICONTROL Target element]** anger du det datum som börjar när spårningsloggar ska användas. Klicka på **[!UICONTROL Add]**. En villkorslinje visas. Redigera kolumnen **[!UICONTROL Expression]** genom att klicka på funktionen **[!UICONTROL Edit expression]**. Välj **[!UICONTROL Date (@logDate)]** i fönstret **[!UICONTROL Field to select]**.
 
       ![](assets/query_editor_nveau_23.png)
 
