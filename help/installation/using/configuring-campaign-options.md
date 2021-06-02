@@ -682,7 +682,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">datatyp:</span> heltal</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (text)</span> : 3 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
