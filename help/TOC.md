@@ -10,14 +10,14 @@ type: Documentation
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7-dokumentation {#using}
+# Dokumentation om Adobe Campaign Classic v7 {#using}
 
-+ [Dokumentation för Campaign v7](campaign-classic-home.md)
++ [Dokumentation om Campaign v7](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
