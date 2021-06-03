@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4396'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -25,19 +25,19 @@ Avsnittet **Transactional Messaging** har organiserats om och förtydligats med 
 
 ## Maj 2021 {#may-2021}
 
-Rapportdokumentationen för heatmap för arbetsflöde har uppdaterats och förbättrats. [Läs mer](../../workflow/using/heatmap.md)
+Rapportdokumentationen för värmekartor för arbetsflöden har uppdaterats och förbättrats. [Läs mer](../../workflow/using/heatmap.md)
 
 Kraven för Campaign Client Console har uppdaterats i kompatibilitetsmatrisen. [Läs mer](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-Installationen av Campaign Client Console för steg har förbättrats och klargjorts. [Läs mer](../../installation/using/installing-the-client-console.md)
+Steg för steg-installationen av Campaign Client Console har förbättrats och klargjorts. [Läs mer](../../installation/using/installing-the-client-console.md)
 
-Ett nytt meddelande om signeringsproblemet för spårade URL:er har skapats. [Läs mer](../../technotes/tracked-urls.md)
+Ett nytt tekniskt meddelande har skapats om signeringsproblemet för spårade URL:er. [Läs mer](../../technotes/tracked-urls.md)
 
 ## April 2021 {#april-2021}
 
 Ett nytt avsnitt har lagts till som handlar om hur man arbetar med källor och destinationer i Adobe Experience Platform för att dela data mellan Campaign Classic och Adobes kunddataplattform i realtid (RTCDP). [Läs mer](../../integrations/using/get-started-sources-destinations.md)
 
-En ny teknologi har skapats för att lära sig hur man uppdaterar studskompetens efter ett avbrott i en Internet-leverantör. [Läs mer](../../delivery/using/update-bounce-qualification.md)
+Ett nytt tekniskt meddelande har skapats för att beskriva hur man uppdaterar studskompetens efter ett avbrott i en internetleverantör. [Läs mer](../../delivery/using/update-bounce-qualification.md)
 
 ## Mars 2021 {#march-2021}
 
@@ -444,7 +444,7 @@ Avsnittet Åtkomsthantering har uppdaterats med **Rättigheten till personuppgif
 
 Information har lagts till för att specificera att innehåll i personaliseringsfält högst får innehålla 1 024 tecken. [Läs mer](../../delivery/using/personalization-fields.md)
 
-Kontrollpanelens dokumentation har integrerats i den nya dokumentationsuppsättningen för samarbete. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Kontrollpanelens dokumentation har integrerats i den nya dokumentationsuppsättningen för samarbete. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
 
 Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
