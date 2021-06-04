@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3961'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,10 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: anpassad_nms_mottagare.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> BCC-e-postadress dit Enhanced MTA skickar en rå kopia av skickade e-postmeddelanden. <br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
