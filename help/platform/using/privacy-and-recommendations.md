@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
@@ -76,7 +76,7 @@ När integritet hanteras är det viktigt att definiera vilka data som ska hanter
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information som är relaterad till en individs ras, politiska åsikter, religiösa övertygelser, kriminella bakgrund, genetiska uppgifter, hälsodata, sexuella preferenser, biometrisk information samt medlemskap i fackföreningar.
 
-När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som till exempel [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager eller den grundläggande tjänsten People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar med [CRM-kopplingar](../../platform/using/crm-connectors.md) måste du vara extra noga med att skydda personuppgifter.
+När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som till exempel [Adobe Analytics](../../platform/using/adobe-analytics-connector.md), [Audience Manager eller den grundläggande tjänsten People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar med [CRM-kopplingar](../../platform/using/crm-connectors.md) måste du vara extra noga med att skydda personuppgifter.
 
 De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
 * Ett **personuppgiftsansvarig** är den myndighet som bestämmer syftet med att samla in, använda och dela personuppgifter och hur det ska göras.
