@@ -6,9 +6,9 @@ feature: Översikt
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '194'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ Tillgängliga anslutningar visas nedan:
 
 * Med FDA Connector (**Federated Data Access**) kan du ansluta Campaign till en eller flera externa databaser och bearbeta information som lagras i dem utan att påverka dina Campaign-data. [Läs mer](../../installation/using/about-fda.md).
 * CRM-anslutningar gör det möjligt att utbyta data mellan Adobe Campaign och CRM-lösningen med hjälp av dedikerade arbetsflödesaktiviteter. [Läs mer](../../platform/using/crm-connectors.md).
-* Med Analytics Data Connectors (var **Adobe Genesis**) kan du dela data mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-data-connector.md).
+* Med Analytics Connectors kan ni dela data mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-connector.md).
 
 Du kan också integrera Campaign med flera andra system, som:
 
