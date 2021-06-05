@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 5%
+source-wordcount: '1700'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,6 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i [det dediker
 | **Mid-sourcing (leveransräknare)** (defaultMidSourcingDlv) | Överföring till mid-sourcing | Det här arbetsflödet samlar in räkningsinformation för leveranser på servern för mellanlagring. Räkningsinformation omfattar allmänna leveransindikatorer, t.ex. antalet skickade leveranser. Spårningsinformation som öppningar inkluderas inte. Den aktiveras var tionde minut som standard. |
 | **Mid-sourcing (leveransloggar)** (defaultMidSourcingLog) | Överföring till mid-sourcing | Det här arbetsflödet samlar in leveransloggar på servern med mellanleverantörer. Den aktiveras som standard varje timme. |
 | **Hantering**  av NMAC-avanmälan (mobileAppOptOutMgt) | Mobilappskanalen | Det här arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Den utlöses var 6: e timme mellan 1:00 och 24:00. Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
-| **Antal aktiva faktureringsprofiler**  (billingActiveContactCount) | Leverans | Det här arbetsflödet räknar antalet aktiva profiler. Den utlöses varje natt klockan 1:00 som standard. ”Profil” innebär ett register över information (såsom en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller framtida kund. Fakturering gäller endast profiler som är &quot;aktiva&quot;. En profil betraktas som&quot;aktiv&quot; om profilen har delats eller kommunicerats via någon kanal under de senaste tolv månaderna. Facebook- och Twitter-kanaler beaktas inte. Du kan få en översikt över antalet aktiva profiler på menyn Administration > Kampanjhantering > Kundstatistik. |
 | **Erbjudandemeddelande**  (offerMgt) | Leverans | Det här arbetsflödet distribuerar godkända erbjudanden i onlinemiljön samt i alla kategorier i erbjudandekatalogen. |
 | **Rensa**  pausade arbetsflöden (cleanupPausedWorkflows) | Leverans | Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5. Mer information finns i [Hantera pausade arbetsflöden](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Rensa**  sekretessbegäran (cleanupPrivacyRequests) | Sekretessdataskyddsförordningen | Det här arbetsflödet raderar filer för åtkomstbegäran som är äldre än 90 dagar. |
@@ -69,7 +68,7 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i [det dediker
 | **Propositionssynkronisering**  (propositionSynch) | Kontroll över erbjudandemotorn med körningsinstans | Det här arbetsflödet synkroniserar förslag mellan marknadsinstansen och körningsinstansen som används för interaktioner. |
 | **Återställning av webbhändelser**  (webAnalyticsGetWebEvents) | Web Analytics-anslutningar | Varje timme laddar det här arbetsflödet ned segment för internetanvändare på en viss webbplats, placerar dem i Adobe Campaign-databasen och startar arbetsflödet för ommarknadsföring. |
 | **Rapporteringsaggregat**  (reportingAggregates) | Leverans | Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag klockan 2 som standard. |
-| **Skicka indikatorer och kampanjattribut**  (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan du skicka indikatorer för e-postkampanjer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Genesis Connector. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
+| **Skicka indikatorer och kampanjattribut**  (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
 | **Stock: Beställningar och varningar**  (stockMgt) | Marknadsföringskampanjer (Campaign) | Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar. |
 | **Synkronisera Facebook fans**  (syncFacebookFans) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 7.00. |
 | **Synkronisera Facebook-sidor**  (syncFacebook) | Sociala nätverk (social marknadsföring) | Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00. |
