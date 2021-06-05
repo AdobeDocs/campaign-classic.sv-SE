@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3972'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 1%
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
 
 Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
+
 
 >[!CAUTION]
 >
@@ -400,6 +401,14 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
  </thead> 
  <tbody> 
   <tr> 
+   <td> <span class="uicontrol">RestrictEditingOOTBSchema</span> <br /> </td> 
+   <td> (från och med version 21.1.3) Om 1 är valt (standardvärde) inaktiverar det här alternativet utgåvan av inbyggda scheman.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
+   <td> (från och med version 21.1.3) Om 1 är valt (standardvärde) inaktiverar det här alternativet utgåva av inbyggda javascript-koder.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPassword</span> <br /> </td> 
    <td> (Kompatibilitetsläge för installation: build&gt;6000) När det är aktiverat (värdet "1") tillåter det här alternativet användning av gamla lösenord som lagras i databasen för anslutning till externa konton eller till instansen.<br /> </td> 
   </tr> 
@@ -682,7 +691,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">datatyp:</span> heltal</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (text)</span> : 3 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
