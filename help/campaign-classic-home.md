@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 49%
+source-wordcount: '250'
+ht-degree: 56%
 
 ---
 
@@ -16,17 +16,15 @@ ht-degree: 49%
 
 ## Nyheter
 
+* **[Juniversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
+
 * **[Ta bort felaktiga hårda ](delivery/using/update-bounce-qualification.md)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
 
-* **[Uppdatera APN-](technotes/ios-certificate-update.md)**<br/> certifikatetDen 29 mars 2021 påverkades Campaign iOS-kanalen av en APN-uppdatering. Du måste uppdatera konfigurationen för att undvika avbrott i push-kanalen i iOS.
+* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **
 
-* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **.
-
-* **[Skydda era Campaign-](technotes/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform.
+* **[Skydda era Campaign-](technotes/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform
 
 * **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integreringDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
-
-* **[Gå till HTTP/2-baserad APNs-provider ](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)**<br/> APILläs hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er för APNs-providern
 
 * **[Få support](support.md)**<br/>
 Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
@@ -88,4 +86,4 @@ Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och be
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | Uppgradering av [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
 | [Inaktuella funktioner](rn/using/deprecated-features.md) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html) |
-| [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
+| [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
