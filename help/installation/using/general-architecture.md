@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Den hanterar också regelbundet genomförda tekniska arbetsflöden, inklusive:
 
 * Spårning: Återställer och konsoliderar spårningsloggar. Det gör att du kan hämta loggarna från omdirigeringsservern och skapa de aggregerade indikatorer som används av rapportmodulen.
 * Rensa: Databasrengöring. Används för att rensa gamla poster och undvika att databasen växer exponentiellt.
-* Fakturering: Automatisk sändning av en aktivitetsrapport för plattformen (databasstorlek, antal marknadsföringsåtgärder osv.).
+* Fakturering: Automatisk sändning av en aktivitetsrapport för plattformen (databasstorlek, antal marknadsföringsåtgärder, antal aktiva profiler osv.).
 
 **Delivery Server** (nlserver mta)
 
