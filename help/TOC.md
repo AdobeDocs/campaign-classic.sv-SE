@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Utforma, planera, genomför, hantera och optimera marknadsföringskampanjer över flera kanaler som levererar hög avkastning på marknadsföringsinvesteringar.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2485'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,8 @@ ht-degree: 99%
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
-      + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Hjälp- och supportalternativ](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 99%
          + [Bästa praxis och begränsningar](installation/using/fda-best-practices.md)
          + Konfigurationsriktlinjer {#config-databases}
             + [Konfigurationssteg](installation/using/configure-fda.md)
+            + [Konfigurera vertikalt](installation/using/configure-fda-vertica.md)
             + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
+            + [Konfigurera Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
             + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
