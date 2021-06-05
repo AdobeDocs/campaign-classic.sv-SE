@@ -6,126 +6,178 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 3%
+source-wordcount: '1162'
+ht-degree: 2%
 
 ---
 
 # Skapa radleveranser{#line-channel}
 
-LINE är ett program för gratis snabbmeddelanden, röst- och videosamtal som finns på alla smarttelefoner (iPhone, Android, Windows Phone, Blackberry, Nokia) och på datorn. Med Adobe Campaign kan du skicka LINE-meddelanden.
+>[!NOTE]
+>
+>[!DNL LINE] är endast tillgängligt för installationer av anläggningstjänster eller hanterade tjänster.
 
-LINE är endast tillgängligt för installation av lokala eller hanterade tjänster.
+[!DNL LINE] är ett program för kostnadsfria snabbmeddelanden, röst- och videosamtal som finns i alla operativsystem för mobila enheter och på datorn.
 
-LINE kan också kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden på LINE-appen som är installerad på konsumentmobilenheter. Se denna [sida](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line) för mer information om detta.
+[!DNL LINE] kan även kombineras med transaktionsmeddelandemodulen för att skicka realtidsmeddelanden till  [!DNL LINE] appen som är installerad på konsumentmobilenheter. Se denna [sida](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line) för mer information om detta.
 
 ![](assets/line_message.png)
 
-Avsnitten nedan innehåller information som är specifik för LINE-kanalen. Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Stegen för att använda kanalen [!DNL LINE] är:
 
-Stegen för LINE-kanalen är:
-
-1. Skapa en leverans
-1. Konfigurera meddelandeinnehållet
-1. Välja målpopulation
-1. Skicka meddelanden
-1. Övervaka leveransen (spårning, karantän, rapporter osv.).
+1. [Konfigurera LINE-kanal](#setting-up-line-channel)
+1. [Skapa en leverans](#creating-the-delivery)
+1. [Konfigurera innehållstypen](#defining-the-content)
+1. [Övervaka leveransen (spårning, karantän, rapporter osv.)](#accessing-reports)
 
 ## Konfigurera LINE-kanal {#setting-up-line-channel}
 
-### Skapa ett LINE-konto och ett externt konto {#creating-a-line-account-and-an-external-account-}
+Innan du skapar ett [!DNL LINE]-konto och ett externt konto måste du först installera LINE-paketet på din instans. Mer information finns i avsnittet [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) i installationshandboken.
 
->[!NOTE]
->
->Innan du skapar ett LINE-konto och ett externt konto måste du först installera LINE-paketet på din instans. Mer information finns i avsnittet [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) i installationshandboken.
+Du måste först skapa ett [!DNL LINE]-konto så att du kan länka det till Adobe Campaign. Sedan kan du skicka [!DNL LINE]-meddelanden till de användare som har lagt till ditt [!DNL LINE]-konto i deras mobilprogram. Externa konton och [!DNL LINE]-konto kan bara hanteras av plattformens funktionsadministratör.
 
-Du måste först skapa ett LINE-konto så att du kan länka det till Adobe Campaign. Sedan kan du skicka LINE-meddelanden till de användare som har lagt till ditt LINE-konto i mobilprogrammet. Externa konton och LINE-konton kan bara hanteras av plattformens funktionsadministratör.
+Information om hur du skapar och konfigurerar ett [!DNL LINE]-konto finns i [LINE-utvecklardokumentation](https://developers.line.me/).
 
-Information om hur du skapar och konfigurerar ett LINE-konto finns i [https://developers.line.me/](https://developers.line.me/).
+### Skapa och konfigurera LINE-tjänsten {#configure-line-service}
 
-Mer information om hur du skapar och konfigurerar en LINE-tjänst finns i [Hantera prenumerationer](../../delivery/using/managing-subscriptions.md).
+Så här skapar du din [!DNL LINE]-tjänst:
 
-![](assets/line_service.png)
+1. På Adobe Campaign Classic hemsida väljer du fliken **[!UICONTROL Profiles and Targets]**.
 
-Slutligen, för att skapa ett externt konto på Adobe Campaign:
+1. Välj **[!UICONTROL Services and Subscriptions]** på den vänstra menyn och klicka på **[!UICONTROL Create]**.
 
-1. Klicka på fliken **Externa konton** i trädstrukturen **Administration** > **Plattform**.
-1. Klicka sedan på ikonen **Nytt**.
+   ![](assets/line_service_1.png)
+
+1. Lägg till en **[!UICONTROL Label]** och **[!UICONTROL Internal name]** till den nya tjänsten.
+
+1. Välj **[!UICONTROL LINE]** i listrutan **[!UICONTROL Type]**.
+
+   ![](assets/line_service_2.png)
+
+1. Klicka på **[!UICONTROL Save]**.
+
+Mer information om prenumerationer och tjänster finns i [Hantera prenumerationer](../../delivery/using/managing-subscriptions.md).
+
+### Konfigurera externt LINE-konto {#configure-line-external}
+
+När du har skapat din [!DNL LINE]-tjänst måste du konfigurera det externa [!DNL LINE]-kontot på Adobe Campaign:
+
+1. Klicka på fliken **[!UICONTROL External Accounts]** i trädstrukturen **[!UICONTROL Platform]**.**[!UICONTROL Administration]**
+
+1. Välj det inbyggda externa **[!UICONTROL LINE V2 routing]**-kontot.
 
    ![](assets/line_config.png)
 
-1. Fyll i fälten **Etikett** och **Internt namn**.
-1. Välj Routning i fältet **[!UICONTROL Type]** och välj LINE i fältet **Kanal**.
-1. Klicka på **[!UICONTROL Save]** om du vill skapa ett externt LINE-konto.
-1. Ett **LINE**-anpassningsfält visas sedan under ikonen **Allmänt** och fyller i följande fält:
+1. Klicka på fliken **[!UICONTROL LINE]** från ditt externa konto för att börja konfigurera ditt externa konto. Fyll i följande fält:
 
    ![](assets/line_config_2.png)
 
-   * **Kanalalias**: tillhandahålls via ditt LINE-konto på  **[!UICONTROL Channels]** >- **[!UICONTROL Technical configuration]** fliken.
-   * **Kanal-ID**: visas via ditt LINE-konto på fliken  **Channel** >  **Basic Information** Panel.
-   * **Kanalhemlig nyckel**: visas via ditt LINE-konto på fliken  **Channel** >  **Basic Information** Panel.
-   * **Åtkomsttoken**: visas via ditt LINE-konto i utvecklarportalen eller genom att klicka på  **[!UICONTROL Get access token]** knappen.
-   * **Utgångsdatum** för åtkomsttoken: gör att du kan ange förfallodatum för åtkomsttoken.
-   * **Prenumerationstjänst**: gör att du kan ange vilka tjänster som användarna ska prenumerera på.
+   * **[!UICONTROL Channel Alias]**: tillhandahålls via ditt  [!DNL LINE] konto på  **[!UICONTROL Channels]** >- **[!UICONTROL Technical configuration]** fliken.
+   * **[!UICONTROL Channel ID]**: tillhandahålls via ditt  [!DNL LINE] konto på  **[!UICONTROL Channels]** >- **[!UICONTROL Basic Information panel]** fliken.
+   * **[!UICONTROL Channel secret key]**: tillhandahålls via ditt  [!DNL LINE] konto på  **[!UICONTROL Channels]** >- **[!UICONTROL Basic Information panel]** fliken.
+   * **[!UICONTROL Access token]**: visas via ditt  [!DNL LINE] konto på utvecklarportalen eller genom att klicka på  **[!UICONTROL Get access token]** knappen.
+   * **[!UICONTROL Access token expiration date]**: gör att du kan ange förfallodatum för åtkomsttoken.
+   * **[!UICONTROL LINE subscription service]**: gör att du kan ange vilka tjänster som användarna ska prenumerera på.
+
+1. När konfigurationen är klar klickar du på **[!UICONTROL Save]**.
+
+1. I **[!UICONTROL Explorer]** väljer du **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL LINE workflows]** för att kontrollera om arbetsflödena **[!UICONTROL LINE V2 access token update (updateLineAccessToken)]** och **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** har startats.
+
+[!DNL LINE] är nu konfigurerat i Adobe Campaign och du kan börja skapa och skicka LINE-leveranser till prenumeranter.
+
+## Skapa radleverans {#creating-the-delivery}
 
 >[!NOTE]
 >
->Du måste verifiera att arbetsflödena **[!UICONTROL LINE access token update (updateLineAccessToken)]** och **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** har startats. Klicka på **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** i Utforskaren för att kontrollera arbetsflödenas status.
+>När du skickar en [!DNL LINE]-leverans till en ny mottagare för första gången måste du lägga till det officiella LINE-meddelandet om användningsvillkoren och samtycke i leveransen. Det officiella meddelandet finns på länken [som följer](https://terms.line.me/OA_privacy/).
 
-## Skapa leveransen {#creating-the-delivery}
-
-Om du vill skapa en **LINE**-leverans måste du följa dessa steg:
-
->[!NOTE]
->
->Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Om du vill skapa en [!DNL LINE]-leverans måste du följa dessa steg:
 
 1. På fliken **[!UICONTROL Campaigns]** väljer du **[!UICONTROL Deliveries]** och klickar sedan på knappen **[!UICONTROL Create]**.
-1. I det fönster som visas väljer du **[!UICONTROL LINE V2 delivery]** leveransmall.
+
+   ![](assets/line_message_07.png)
+
+1. Välj **[!UICONTROL LINE V2 delivery]** leveransmall.
 
    ![](assets/line_message_01.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** och **[!UICONTROL Description]**. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+
 1. Klicka på **[!UICONTROL Continue]** för att skapa leveransen.
 
-## Definiera innehållet {#defining-the-content}
+1. Välj **[!UICONTROL To]** i leveransredigeraren för att ange [!DNL LINE]-leveransens mottagare som mål. Målinriktning utförs på **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-Om du vill definiera innehållet i en LINE-leverans måste du först lägga till meddelandetypen till leveransen. Varje LINE-leverans kan innehålla upp till 5 meddelanden.
+   Mer information finns i [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
 
-Du kan välja mellan två meddelandetyper:
+   ![](assets/line_message_08.png)
 
-* Textmeddelande
-* Bild och länk
+1. Klicka på **[!UICONTROL Add]** för att välja din **[!UICONTROL Delivery target population]**.
+
+   ![](assets/line_message_09.png)
+
+1. Välj om du vill ange [!DNL LINE] som abonnent direkt eller om du vill ange användare som mål beroende på deras [!DNL LINE]-prenumeration och klicka på **[!UICONTROL Next]**. I det här exemplet har vi valt **[!UICONTROL By LINE V2 subscription]**.
+
+1. Välj **[!UICONTROL Line-V2]** i listrutan **[!UICONTROL Folder]** och sedan din [!DNL LINE]-tjänst. Klicka på **[!UICONTROL Finish]** och **[!UICONTROL Ok]** för att börja personalisera leveransen.
+
+   ![](assets/line_message_10.png)
+
+1. Klicka på **[!UICONTROL Add]** i leveransredigeraren för att lägga till ett eller flera meddelanden och välj **[!UICONTROL Content type]**.
+
+   Mer information om de olika **[!UICONTROL Content type]** som är tillgängliga finns i [Definiera innehållstypen](#defining-the-content).
+
+   ![](assets/line_message_11.png)
+
+1. När leveransen har skapats och konfigurerats på rätt sätt kan du skicka den till det mål som definierades tidigare.
+
+   Mer information om hur du skickar en leverans finns i [Skicka meddelanden](../../delivery/using/sending-messages.md).
+
+1. När du har skickat meddelandet kan du visa rapporten och mäta hur effektiv leveransen är.
+
+   Mer information om [!DNL LINE]-rapporter finns i [Åtkomstrapporter](#accessing-reports).
+
+## Definiera innehållstypen {#defining-the-content}
+
+Om du vill definiera innehållet i en [!DNL LINE]-leverans måste du först lägga till meddelandetypen i leveransen. Varje [!DNL LINE]-leverans kan innehålla upp till 5 meddelanden.
+
+Du kan välja mellan tre meddelandetyper:
+
+* [Textmeddelande](#configuring-a-text-message-delivery)
+* [Bild och länk](#configuring-an-image-and-link-delivery)
+* [Videomeddelande](#configuring-a-video-message-delivery)
 
 ### Konfigurera textmeddelandeleverans {#configuring-a-text-message-delivery}
 
-Ett **textmeddelande**-radleveransmeddelande är ett meddelande som skickas till mottagare i textformat.
+>[!NOTE]
+>
+>Med syntaxen `<%@ include option='NmsServer_URL' %>/webApp/APP3?id=<%=escapeUrl(cryptString(visitor.id))%>` kan du inkludera en länk till ett webbprogram i ett LINE-meddelande.
+
+En **[!UICONTROL Text message]** [!DNL LINE]-leverans är ett meddelande som skickas till mottagare i textform.
 
 ![](assets/line_message_02.png)
 
-Konfigurationen för den här meddelandetypen liknar konfigurationen för **texten** i ett e-postmeddelande. Mer information finns på den här [sidan](../../delivery/using/defining-the-email-content.md#message-content).
+Konfigurationen för den här meddelandetypen liknar konfigurationen för **[!UICONTROL Text]** i ett e-postmeddelande. Mer information finns på den här [sidan](../../delivery/using/defining-the-email-content.md#message-content).
 
 ### Konfigurera en bild- och länkleverans {#configuring-an-image-and-link-delivery}
 
-En **Image and link** LINE-leverans är ett meddelande som skickas till mottagare i form av en bild som kan innehålla en eller flera URL:er.
+En **[!UICONTROL Image and link]** [!DNL LINE]-leverans är ett meddelande som skickas till mottagarna i form av en bild som kan innehålla en eller flera URL:er.
 
 Du kan använda:
 
-* a **Anpassad bild**,
+* a **[!UICONTROL Personalized image]**,
 
    >[!NOTE]
    >
-   >Du kan använda variabeln **%SIZE%**: Med den här variabeln kan du optimera bildvisningen enligt skärmstorleken för mottagarens mobila enhet.
+   >Du kan använda variabeln **%SIZE%** för att optimera bildvisningen enligt skärmstorleken för mottagarens mobila enhet.
 
    ![](assets/line_message_04.png)
 
-* en **bild-URL**,
+* en **[!UICONTROL Image URL]**-skärmstorlek per enhet,
 
    ![](assets/line_message_03.png)
 
-   Med bild-URL:erna kan du använda olika bildupplösningar för att optimera synligheten för leverans på mobila enheter. Endast bilder med samma höjd och bredd stöds.
+   Med alternativet **[!UICONTROL Define images per device screen size]** kan du använda olika bildupplösningar för att optimera synligheten för leverans på mobila enheter. Endast bilder med samma höjd och bredd stöds.
 
    Bilder kan definieras enligt skärmstorleken:
 
@@ -135,7 +187,7 @@ Du kan använda:
    * 300px
    * 240px
 
-   >[!NOTE]
+   >[!CAUTION]
    >
    >Storleken 1 040 × 1 040 px är obligatorisk för varje LINE-bild med länk.
 
@@ -143,45 +195,41 @@ Du kan använda:
 
 * och **[!UICONTROL Links]**.
 
+   I **[!UICONTROL Links]**-avsnittet kan du välja mellan olika layouter som delar upp bilden i flera klickbara områden. Du kan sedan tilldela var och en av dem en dedikerad **[!UICONTROL Link URL]**.
+
    ![](assets/line_message_05.png)
 
-   I **[!UICONTROL Links]**-avsnittet kan du välja mellan olika layouter som delar upp bilden i flera klickbara områden. Sedan kan du tilldela var och en av dem en dedikerad länk.
+### Konfigurera leverans av videomeddelande {#configuring-a-video-message-delivery}
 
->[!NOTE]
->
->Med syntaxen &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id)%> kan du inkludera en länk till ett webbprogram i ett LINE-meddelande.
+En **[!UICONTROL Video message]** [!DNL LINE]-leverans är ett meddelande som skickas till mottagare i form av en video som kan innehålla en URL.
 
-### Rekommendationer {#recommendations}
+I fältet **[!UICONTROL Preview Image URL]** kan du lägga till URL:en för en förhandsvisningsbild med en teckengräns på 1 000. JPEG och PNG stöds med en filstorleksgräns på 1 MB.
 
-* När du skickar en LINE-leverans till en ny mottagare för första gången måste du lägga till det officiella LINE-meddelandet om användningsvillkoren och samtycke i leveransen. Det officiella meddelandet finns på följande länk: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
+I fältet **[!UICONTROL Video Image URL]** kan du lägga till URL-adressen för videofilen med en teckengräns på 1 000. Endast mp4-format stöds med en filstorleksgräns på 200 MB.
 
-## Välja målpopulationen {#selecting-the-target-population}
+Observera att breda eller höga videor kan beskäras när de spelas upp på vissa enheter.
 
-Att välja mottagare för en LINE-leverans liknar att definiera mottagare för e-postleverans. Mer information finns i [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
-
-Målinriktning utförs på **besökare**.
-
-## Skicka meddelanden {#sending-messages}
-
-När leveransen har skapats och konfigurerats på rätt sätt kan du skicka den till det mål som definierades tidigare.
-
-Att skicka radleveranser liknar att skicka e-postmeddelanden. Mer information om hur du skickar meddelanden finns i [Skicka meddelanden](../../delivery/using/sending-messages.md).
+![](assets/line_message_06.png)
 
 ## Åtkomst till rapporter {#accessing-reports}
 
-Du kan visa rapporter om LINE-tjänsten genom att klicka på **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** i Utforskaren. Klicka sedan på ikonen **[!UICONTROL Reports]** i LINE-tjänsten.
+När du har skickat leveransen kan du visa dina [!DNL LINE]-rapporter via menyn **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** från **[!UICONTROL Explorer]**.
 
-![](assets/line_reports.png)
-
-Om du vill visa rapporter om radleveranser klickar du på **[!UICONTROL Campaign Management > Deliveries]** och väljer sedan önskad leverans. Spårningsrapporterna visar klickfrekvensen. LINE tar inte hänsyn till den öppna tariffen.
+>[!NOTE]
+>
+>Spårningsrapporterna visar klickfrekvensen. [!DNL LINE] tar inte hänsyn till den öppna räntan.
 
 ![](assets/line_reports_01.png)
+
+För [!DNL LINE]-tjänstrapporter öppnar du menyn **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]** från fliken **[!UICONTROL Explorer]**. Klicka sedan på ikonen **[!UICONTROL Reports]** i tjänsten [!DNL LINE].
+
+![](assets/line_reports.png)
 
 ## Exempel: skapa och skicka ett anpassat LINE-meddelande {#example--create-and-send-a-personalized-line-message}
 
 I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild som innehåller data som ska anpassas efter mottagaren.
 
-1. Skapa din LINE-leverans genom att klicka på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Campaign]**.
+1. Skapa din [!DNL LINE]-leverans genom att klicka på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Campaign]**.
 
    ![](assets/line_usecase.png)
 
@@ -191,25 +239,28 @@ I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild 
 
 1. Välj målpopulation i konfigurationsfönstret för leveransen.
 
+   Mer information finns i [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
+
    ![](assets/line_usecase_02.png)
 
-1. Klicka på **[!UICONTROL Add]** för att skapa meddelandet och välj **[!UICONTROL Message type]**.
+1. Klicka på **[!UICONTROL Add]** för att skapa meddelandet och välj **[!UICONTROL Content type]**.
 
-   Här vill vi först skapa ett textmeddelande.
+   Här vill vi först skapa en **[!UICONTROL Text message]**.
 
    ![](assets/line_usecase_03.png)
 
-1. Placera markören på den plats där du vill infoga den anpassade texten och klicka sedan på listruteikonen **[!UICONTROL Visitor > First name]**.
+1. Placera markören där du vill infoga den anpassade texten och klicka på listruteikonen och välj **[!UICONTROL Visitor]** > **[!UICONTROL First name]**.
 
    ![](assets/line_usecase_05.png)
 
 1. Gör så här för att lägga till en bild och välja **[!UICONTROL Image and links]** i listrutan **[!UICONTROL Message type]**.
 
-   Lägg till din bild-URL.
+   Lägg till din **[!UICONTROL Image URL]**.
 
    ![](assets/line_usecase_07.png)
 
 1. I avsnittet **[!UICONTROL Links]** väljer du den layout som ska dela upp bilden i flera klickbara områden.
+
 1. Tilldela en URL till varje område i bilden.
 
    ![](assets/line_usecase_08.png)
@@ -219,3 +270,4 @@ I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild 
    Leveransen skickas till målet.
 
    ![](assets/line_usecase_06.png)
+
