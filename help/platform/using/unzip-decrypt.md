@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '722'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan d
 
 Så här kan du göra:
 
-1. Använd [Kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att generera ett nyckelpar för offentlig/privat nyckel.
+1. Använd [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att generera ett nyckelpar för offentlig/privat nyckel.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ I det här fallet skapar vi ett arbetsflöde för att importera data som har kry
 
 Så här utför du det här användningsfallet:
 
-1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i [dokumentationen till kontrollpanelen](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i [dokumentationen till kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * Den offentliga nyckeln delas med det externa systemet, som kommer att använda den för att kryptera data som ska skickas till Campaign.
    * Den privata nyckeln används av Campaign Classic för att dekryptera inkommande krypterade data.
