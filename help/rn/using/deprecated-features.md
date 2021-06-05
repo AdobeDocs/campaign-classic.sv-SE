@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1629'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +42,13 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Ersättning</strong></td>
   </tr>
     <tr>
+  <td>Datakopplingen i Adobe Analytics<br></td>
+   <td><p>Från och med Campaign 21.1 är Adobe Analytics Data Connector föråldrat.</p>
+   <p>Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
+  <p><em>Måldatum för borttagning: 2022</em></p>
+  </td>
+ </tr>
+    <tr>
   <td>Övervakningsrapport om teknisk levererbarhet<br></td>
    <td><p>Övervakningsrapporten om teknisk levererbarhet är föråldrad från och med Campaign version 21.1.</p>
    <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
@@ -50,60 +57,12 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </td>
  </tr>
   <tr>
-  <td>CRM-kopplingar<br></td>
-   <td><p>Följande CRM-kopplingar är föråldrade från och med Campaign version 20.3:</p>
-   <ul>
-   <li>Soap API – lokal: 2007, 2015 och 2016</li>
-   <li>Soap API – online: 2015 och 2016</li>
-   <li>Webb-API – Microsoft Dynamics CRM lokalt: 2016, 2016 uppdatering 1</li>
-   <li>Webb-API – Microsoft Dynamics CRM online: 2016, 2016 uppdatering 1</li>
-   <li>Oracle On Demand-API</li>
-   </ul>
-  <p><em>Måldatum för borttagning: maj 2021</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>Äldre binär iOS-fil<br></td>
-  <td><p>Från och med Campaign version 20.3 är den gamla binära kopplingen för iOS inaktuell.<p>
-  <p> Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta.
-  <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html">Läs mer</a></p>
-  <p><em>Måldatum för borttagning: maj 2021</em></p>
-  </td>
- </tr>
-   <tr>
-  <td>Demdex-domän<br></td>
-  <td><p> Från och med Campaign version 20.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inaktuell.<p>
-  <p>Om du använder demdex-domänen för dina externa import-/exportkonton måste du anpassa implementeringen därefter. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
-  <p><em>Måldatum för borttagning: maj 2021</em></p>
-  </td>
-  <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
   <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
   <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
   <p><em>Måldatum för borttagning: nov 2021</em></p>
   </td>
-  </tr>
-  <td>SMS-kopplingar<br></td>
-  <td><p> Från och med Campaign version 20.2 har följande SMS-kopplingar tagits bort.<p>
-   <ul>
-   <li>Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)</li>
-   <li>Sybase365 (SAP SMS 365)</li>
-   <li>CLX Communications</li>
-   <li>Tele2</li>
-   <li>O2</li>
-   <li>iOS</li>
-   </ul>
-  <p>Om du använder någon av dessa kopplingar måste implementeringen anpassas i enlighet med detta. <a href="../../delivery/using/sms-channel.md">Läs mer</a></p> 
-  <p>Läs om hur du migrerar föråldrade kopplingar i <a href="../../delivery/using/unsupported-connector-migration.md">det här tekniska dokumentet</a>.</p>
-  <p><em>Måldatum för borttagning: maj 2021</em></p>
-  </td> 
- </tr>
-  <tr>  
-   <td>Faxkanal<br></td>
-   <td><p>Från och med Campaign version 20.2 är faxkanalen inaktuell.</p> 
-   <p>Om du använder den här kanalen måste du anpassa implementeringen i enlighet med detta. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a> om kanaler i Campaign.</p>
-   <p><em>Måldatum för borttagning: maj 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -113,11 +72,20 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
 I det här avsnittet visas funktioner som har tagits bort från Campaign Classic.
 
 <table> 
- <tbody> 
+ <tbody>
   <tr> 
    <td><strong>Område – funktion</strong></td>
    <td><strong>Ersättning</strong></td> 
-  </tr> 
+  </tr>
+  <tr>  
+   <td>Faxkanal<br></td>
+   <td><p>Faxkanalen är inte längre tillgänglig från och med Campaign 21.1.3. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a></p>
+  <tr>
+  <td>Demdex-domän<br></td>
+  <td><p> Från och med Campaign 21.1.3 är demodomänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inte längre tillgänglig. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
+  </td>
+  </td>
+  </tr>
    <tr> 
    <td>Windows NT-autentisering<br></td>
    <td><p>Från och med Campaign version 20.3 har Windows NT-autentisering tagits bort från de tillgängliga autentiseringsmetoderna när en ny databas konfigureras med en Microsoft SQL-server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Läs mer</a></p></td>
@@ -158,7 +126,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    <tr> 
    <td>Mobilkanal – LINE v1</td>
    <td>Från och med Campaign 18.4 är LINE Connect-paketet inte längre tillgängligt. Adobe rekommenderar att du använder det nya LINE Channel-paketet som ersättning. <a href="../../delivery/using/line-channel.md">Läs mer</a></td>
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -186,8 +154,9 @@ Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande sy
 >[!NOTE]
 >Från och med Campaign version 20.1 är klientkonsolen i Campaign Classic som körs med 32 bitar inte längre kompatibel med de senaste versionerna av Campaign. Du måste använda klientkonsolen med 64 bitar.
 
-
 ### Operativsystem {#o-s-eol}
+
+Från och med version 21.1.3 är stödet för Debian 8 föråldrat.
 
 Från och med version 19.1 är Adobe Campaign inte längre kompatibelt med följande operativsystem.
 
@@ -209,7 +178,7 @@ Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med
 Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande verktyg.
 
 * Java JDK 7. [Läs mer](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5/4.3/5.x utom när det är inbäddat i ett annat verktyg. [Läs mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Library Office 3.5 / 4.3 / 5.x, utom när det är inbäddat i ett annat verktyg. [Läs mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Databasmotorer {#dbe-eol}
 
@@ -243,6 +212,11 @@ Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtk
 * AsterData 5.0. AsterData har nått slutet av sin livscykel. [Läs mer](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2, 15.4 och 15.5 samt Sybase ASE 15.0. Stöd finns för senare versioner av Sybase via federerad dataåtkomst (FDA). [Läs mer](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL: Hadoop 2.7.3 och HiveSQL 1.2.1. Adobe Campaign Classic har fortfarande stöd för de listade versionerna av Hadoop via HiveSQL via federerad dataåtkomst (FDA). Dessa versioner slås dock ihop med: HortonWorks (HDP 2.4.X, 2.5.x och 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5) och 3.6 (HDP 2.6)
+* Soap API – lokal: 2007, 2015 och 2016
+* Soap API – online: 2015 och 2016
+* Webb-API – Microsoft Dynamics CRM lokalt: 2016, 2016 uppdatering 1
+* Webb-API – Microsoft Dynamics CRM online: 2016, 2016 uppdatering 1
+* Oracle On Demand-API&lt;
 
 **RDBMS-SERVER**
 
@@ -252,3 +226,14 @@ Adobe Campaign är inte kompatibelt med följande RDBMS-servrar:
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+### SMS-kopplingar {#sms-eol}
+
+Adobe Campaign är inte kompatibelt med följande SMS-anslutningar:
+
+* Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)
+* Sybase365 (SAP SMS 365)
+* CLX Communications
+* Tele2
+* O2
+* iOS
