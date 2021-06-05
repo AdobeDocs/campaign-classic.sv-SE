@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '757'
 ht-degree: 7%
 
 ---
@@ -89,8 +89,8 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
    <td> Integrationen mellan <strong>Triggers core service</strong> och Adobe Campaign gör att du kan skicka personaliserade e-postmeddelanden till dina kunder som en reaktion på specifika beteenden som spåras på din webbplats av Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/se/campaign/kb/triggers-and-campaign.html">Läs </a> mer om integrationen mellan Adobe Campaign och Experience Cloud.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics - Dataanslutningar</strong><br /> </td> 
-   <td> <strong>Med datakopplingar</strong>  (som tidigare kallades Adobe Genesis) kan Adobe Campaign och Adobe Analytics interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics - Dataanslutning.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Läs </a> mer om Campaign - Integrering med Data Connectors.</p><br /> </td> 
+   <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connectorgör att Adobe Campaign och Adobe Analytics kan interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Läs </a> mer om Campaign - Integrering med Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
