@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '381'
 ht-degree: 7%
 
 ---
@@ -74,18 +74,13 @@ Ett dataschema identifieras med sitt namn och namnutrymme.
 
 Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Namnutrymmet **cus** används till exempel för kundspecifik konfiguration (**kunder**).
 
+Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **cus:mottagare**.
+
 >[!IMPORTANT]
 >
->Som standard måste namnutrymmets namn vara kortfattat och får endast innehålla tillåtna tecken i enlighet med XML-namngivningsreglerna.
+>Namnutrymmets namn måste vara kortfattat och får endast innehålla tillåtna tecken enligt reglerna för XML-namngivning.
 >
 >Identifierare får inte börja med numeriska tecken.
+>
+>Följande namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera och får inte användas: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
 
-Vissa namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera:
-
-* **xtk**: när det gäller plattformssystemdata,
-* **nl**: om den övergripande användningen av ansökan,
-* **nms**: om leverans (mottagare, leverans, spårning osv.),
-* **ncm**: om innehållshantering,
-* **temp**: reserveras för temporära scheman.
-
-Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **cus:mottagare**.
