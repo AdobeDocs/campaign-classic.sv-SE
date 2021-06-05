@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -189,7 +189,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Web Analytics-anslutningar<br /> </td> 
-   <td> Gör att Adobe Campaign och Adobe Analytics kan interagera via Web Analytics-anslutningspaketet. Inte kompatibelt med Transactional Messaging (Message Center-paket). <a href="../../platform/using/adobe-analytics-data-connector.md">Läs mer</a><br /> </td> 
+   <td> Gör att Adobe Campaign och Adobe Analytics kan interagera via Web Analytics-anslutningspaketet. Inte kompatibelt med Transactional Messaging (Message Center-paket). <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
