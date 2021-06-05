@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Konfigurationen beror på den valda åtgärden.
 
    ![](assets/file_transfert_edit.png)
 
-   Markera **[!UICONTROL Use an external account]** om du vill välja ett konto från de S3-, FTP- eller SFTP-konton som är konfigurerade i noden **[!UICONTROL Administration > Platform > External accounts]** i trädet. Ange sedan vilken katalog på servern som innehåller de filer som ska hämtas.
+   Markera **[!UICONTROL Use an external account]** om du vill välja ett konto från Azure Blob Storage-, S3-, FTP- eller SFTP-konton som konfigurerats i noden **[!UICONTROL Administration > Platform > External accounts]** i trädet. Ange sedan vilken katalog på servern som innehåller de filer som ska hämtas.
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ Med länken **[!UICONTROL Advanced parameters...]** kan du komma åt följande a
 
 * **[!UICONTROL Display the session logs]**
 
-   Gör att du kan återställa loggarna för S3-, FTP- eller SFTP-överföringen och inkludera dem i arbetsflödesloggarna.
+   Gör att du kan återställa loggarna för Azure Blob Storage, S3, FTP eller SFTP och inkludera dem i arbetsflödesloggarna.
 
 * **[!UICONTROL Disable passive mode]**
 
