@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4396'
-ht-degree: 99%
+source-wordcount: '4421'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,10 @@ Kraven för Campaign Client Console har uppdaterats i kompatibilitetsmatrisen. [
 Steg för steg-installationen av Campaign Client Console har förbättrats och klargjorts. [Läs mer](../../installation/using/installing-the-client-console.md)
 
 Ett nytt tekniskt meddelande har skapats om signeringsproblemet för spårade URL:er. [Läs mer](../../technotes/tracked-urls.md)
+
+**Dokumentationsuppdateringar kommer med utgåvan 21.1.3**
+
+Den tekniska arbetsflödesbeskrivningen Fakturering (fakturering) omfattar nu de uppgifter som ursprungligen utfördes av Antal aktiva faktureringsprofiler (faktureringActiveContactCount). [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 ## April 2021 {#april-2021}
 
@@ -456,7 +460,7 @@ Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentatio
 
 En ny sida med felsökning har lagts till för spårning i Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/classic-tracking-troubleshooting.html).
 
-En ny sida med bästa praxis för datakopplingen i Adobe Analytics har lagts till. [Läs mer om datakopplingen i Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)
+En ny sida med bästa praxis för Adobe Analytics Connector har lagts till. [Läs mer om Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
 Starthandboken Bästa praxis för leverans har flyttats och uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
@@ -534,8 +538,8 @@ Två nya alternativ har lagts till i listan över alternativ i Campaign: XtkSecu
 Information har lagts till om de olika externa konton som är tillgängliga i Campaign Classic och hur de konfigureras.
 [Läs mer](../../installation/using/external-accounts.md)
 
-Avsnittet Analysverktyg för datakoppling har uppdaterats för att återspegla ändringar i gränssnittet.
-[Läs mer](../../platform/using/adobe-analytics-data-connector.md)
+Avsnittet Analytics Connector har uppdaterats för att återspegla gränssnittsändringar.
+[Läs mer](../../platform/using/adobe-analytics-connector.md)
 
 Information har lagts till om faktureringsrapporten.
 [Läs mer](../../production/using/monitoring-processes.md)
