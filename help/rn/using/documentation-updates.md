@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 98%
+source-wordcount: '4470'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,18 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 Avsnittet **Transactional Messaging** har organiserats om och förtydligats med ett nytt Get started-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att få en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
 
+**Dokumentationsuppdateringar kommer med utgåvan 21.1.3**
+
+Integrering med Adobe Journey Orchestration - [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Ett steg-för-steg-exempel visas i [den här sidan](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+
+Förbättringar av LINE-kanaler - [Läs mer](../../delivery/using/line-channel.md)
+
+Ny Vertica FDA-koppling - [Läs mer](../../installation/using/configure-fda-vertica.md)
+
+Ny Google Big Query FDA-koppling - [Läs mer](../../installation/using/configure-fda-google-big-query.md)
+
+Den tekniska arbetsflödesbeskrivningen Fakturering (fakturering) omfattar nu de uppgifter som ursprungligen utfördes av Antal aktiva faktureringsprofiler (faktureringActiveContactCount). [Läs mer](../../workflow/using/about-technical-workflows.md)
+
 ## Maj 2021 {#may-2021}
 
 Rapportdokumentationen för värmekartor för arbetsflöden har uppdaterats och förbättrats. [Läs mer](../../workflow/using/heatmap.md)
@@ -32,10 +44,6 @@ Kraven för Campaign Client Console har uppdaterats i kompatibilitetsmatrisen. [
 Steg för steg-installationen av Campaign Client Console har förbättrats och klargjorts. [Läs mer](../../installation/using/installing-the-client-console.md)
 
 Ett nytt tekniskt meddelande har skapats om signeringsproblemet för spårade URL:er. [Läs mer](../../technotes/tracked-urls.md)
-
-**Dokumentationsuppdateringar kommer med utgåvan 21.1.3**
-
-Den tekniska arbetsflödesbeskrivningen Fakturering (fakturering) omfattar nu de uppgifter som ursprungligen utfördes av Antal aktiva faktureringsprofiler (faktureringActiveContactCount). [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 ## April 2021 {#april-2021}
 
