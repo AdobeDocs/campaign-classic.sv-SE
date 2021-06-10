@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -61,16 +61,16 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Åtkomst till klientdata** | VÄLJ BEHÖRIGHET FÖR (FRAMTIDA) TABELL(ER) ELLER VY(ER) | VÄLJ privilegium | VÄLJ ELLER VÄLJ ETT TABELLprivilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
 | **Åtkomst till metadata** | VÄLJ BEHÖRIGHET FÖR INFORMATION_SCHEMA SCHEMA | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA DEFINITIONSTILLSTÅND | Det krävs inget privilegium för att använda kommandot &quot;\d table&quot; | VÄLJ privilegium |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | Växter | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Ansluter till fjärrdatabas** | CONNECT | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för programsatsen CONNECT | Inget privilegium krävs | CONNECT privilegium | CONNECT privilegium |
-| **Skapa tabeller** | CREATETAB-utfärdare | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium | SKAPA privilegium |
-| **Skapa index** | INDEX-privilegium | CREATE INDEX or INDEX keyword | INDEX-privilegium | RESURSutfärdare och SKAPA behörighet | INDEX-privilegium | SKAPA privilegium | SKAPA privilegium |
-| **Skapa funktioner** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | CREATE FUNCTION or FUNCTION, nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG eller DBA-myndighet för Java-funktioner | BEHÖRIGHET FÖR FUNKTION | Behörighet att använda | SKAPA FUNKTIONSHINDER |
-| **Skapa procedurer** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | SKAPA nyckelordet PROCEDUR eller PROCEDURE | SKAPA ROUTINprivilegium | RESURSANSVARIG | BEHÖRIGHET FÖR FÖRFARANDE | Behörighet att använda | SKAPA FUNKTIONSHINDER |
-| **Ta bort objekt (tabeller, index, funktioner, procedurer)** | DROPIN-behörighet eller BEHÖRIGHET för KONTROLL eller ägande av objektet | DROP &lt; object > eller objektrelaterat nyckelord | DROP-privilegium | Äger objektet eller DBA-utfärdaren | DROP-privilegium | Äga objektet | Äga objektet |
-| **Övervaka körningar** | FÖRKLARING | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium | Endast en systemadministratör kan köra sp_showplan | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen |
-| **Skriver data** | INFOGA- och UPPDATERINGSbehörigheter eller DATAACCESS-utfärdare | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
-| **Läsa in data i tabeller** | BELASTNINGSTILLSTÅND | SELECT- och INSERT-behörighet för att använda COPY TO- respektive COPY FROM-satser | FILE-privilegium | Var ägare av tabellen eller behörigheten ALTER. Beroende på alternativet -gl kan LOAD TABLE bara utföras om användaren har DBA-behörighet | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER |
-| **Åtkomst till klientdata** | INSERT/UPDATE-behörighet eller DATAACCESS-utfärdare | VÄLJ privilegium | VÄLJ privilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium | VÄLJ privilegium |
-| **Åtkomst till metadata** | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | Det krävs inget privilegium för att använda kommandot &quot;\d table&quot; | Det krävs inget privilegium för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Ansluter till fjärrdatabas** | CONNECT | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för programsatsen CONNECT | Inget privilegium krävs | CONNECT privilegium |
+| **Skapa tabeller** | CREATETAB-utfärdare | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium |
+| **Skapa index** | INDEX-privilegium | CREATE INDEX or INDEX keyword | INDEX-privilegium | RESURSutfärdare och SKAPA behörighet | INDEX-privilegium | SKAPA privilegium |
+| **Skapa funktioner** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | CREATE FUNCTION or FUNCTION, nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG eller DBA-myndighet för Java-funktioner | BEHÖRIGHET FÖR FUNKTION | SKAPA FUNKTIONSHINDER |
+| **Skapa procedurer** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | SKAPA nyckelordet PROCEDUR eller PROCEDURE | SKAPA ROUTINprivilegium | RESURSANSVARIG | BEHÖRIGHET FÖR FÖRFARANDE | SKAPA FUNKTIONSHINDER |
+| **Ta bort objekt (tabeller, index, funktioner, procedurer)** | DROPIN-behörighet eller BEHÖRIGHET för KONTROLL eller ägande av objektet | DROP &lt; object > eller objektrelaterat nyckelord | DROP-privilegium | Äger objektet eller DBA-utfärdaren | DROP-privilegium | Äga objektet |
+| **Övervaka körningar** | FÖRKLARING | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium | Endast en systemadministratör kan köra sp_showplan | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen |
+| **Skriver data** | INFOGA- och UPPDATERINGSbehörigheter eller DATAACCESS-utfärdare | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
+| **Läsa in data i tabeller** | BELASTNINGSTILLSTÅND | SELECT- och INSERT-behörighet för att använda COPY TO- respektive COPY FROM-satser | FILE-privilegium | Var ägare av tabellen eller behörigheten ALTER. Beroende på alternativet -gl kan LOAD TABLE bara utföras om användaren har DBA-behörighet | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER |
+| **Åtkomst till klientdata** | INSERT/UPDATE-behörighet eller DATAACCESS-utfärdare | VÄLJ privilegium | VÄLJ privilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
+| **Åtkomst till metadata** | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | Det krävs inget privilegium för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |
