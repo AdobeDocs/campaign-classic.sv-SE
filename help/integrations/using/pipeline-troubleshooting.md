@@ -5,9 +5,9 @@ description: Konfigurera integreringen
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -82,3 +82,9 @@ I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskam
 1. Leta efter fel i pipelined.log som kan orsaka nya försök. Åtgärda eventuella fel.
 1. Kontrollera storleken på kön på statussidan för [!DNL pipelined]. Om köstorleken är stor kan du förbättra JS-prestanda.
 1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna i Analytics med färre meddelanden.
+
+**Uppgraderar sceninstanser från äldre autentisering till Adobe IO-autentisering**
+
+Om du ändrar integreringsautentiseringen på sceninstansen påverkas inte konfigurationen av produktionsinstansen. Du kan välja att uppgradera din sceninstans och sedan uppdatera autentiseringen till Adobe IO och testa utlösarna på din sceninstans.
+
+Din produktionsinstans kommer att fortsätta använda den gamla autentiseringen och påverkas inte av den här ändringen.
