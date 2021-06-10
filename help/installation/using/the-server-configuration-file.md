@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '7970'
+source-wordcount: '7969'
 ht-degree: 5%
 
 ---
@@ -335,7 +335,7 @@ Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC) ASE, Sybase IQ), Relay (HTTP-relä till fjärrdatabas).<br /> </td> 
+   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ)), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
