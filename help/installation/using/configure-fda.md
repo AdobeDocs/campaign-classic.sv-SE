@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '331'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,10 @@ När dataschemat har skapats kan data bearbetas i Adobe Campaign arbetsflöden. 
 Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaign måste du utföra vissa specifika konfigurationer. Dessa konfigurationer innebär i princip att installera drivrutiner och deklarera miljövariabler som tillhör varje RDBMS på Adobe Campaign-servern samt att konfigurera det externa kontot.
 
 Följ länkarna nedan om du vill veta mer:
+
+* Connect Campaign och [Vertica](../../installation/using/configure-fda-vertica.md)
+
+* Connect Campaign och [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 
 * Connect Campaign och [Azure synapse](../../installation/using/configure-fda-synapse.md)
 
