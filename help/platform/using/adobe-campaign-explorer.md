@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ För optimal navigering och användbarhet rekommenderar Adobe att du använder e
 
 >[!CAUTION]
 >
->Upplösningar på mindre än 1 600 × 900 pixlar stöds av Adobe Campaign.
+>Upplösningar på mindre än 1 600 × 900 pixlar stöds inte av Adobe Campaign.
 
 Om vissa delar av **[!UICONTROL Details]**-zonen verkar vara trunkerade på arbetsytan **[!UICONTROL Explorer]** expanderar du den med pilen över zonen eller klickar på knappen **[!UICONTROL Enlarge]**.
 
