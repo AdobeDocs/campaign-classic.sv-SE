@@ -6,24 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '409'
 ht-degree: 4%
 
 ---
 
 # Bästa praxis och begränsningar
-
-## Skapa temporära scheman {#create-temporary-schemas}
-
-Du kan hantera flera åtkomster av den externa Greenplum-databasen via FDA. Med ett dedikerat alternativ kan du skapa ett arbetsschema direkt när du konfigurerar det externa kontot.
-
-![](assets/fda_work_table.png)
-
->[!NOTE]
->
->Det här alternativet är bara tillgängligt med PostgreSQL Greenplum.
 
 ## Optimera e-postpersonalisering med externa data {#optimizing-email-personalization-with-external-data}
 
