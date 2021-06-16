@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: Hjälpcenter
+breadcrumb-title: Dokumentation för Campaign Classic v7
 product: campaign
-title: Guide om Campaign Classic
+title: Användarhandbok för Campaign Classic v7
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Utforma, planera, genomför, hantera och optimera marknadsföringskampanjer över flera kanaler som levererar hög avkastning på marknadsföringsinvesteringar.
+user-guide-description: Med Adobe Campaign kan ni använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha - via e-post, mobiler, offlinekanaler med mera.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 98%
+source-wordcount: '2498'
+ht-degree: 97%
 
 ---
 
