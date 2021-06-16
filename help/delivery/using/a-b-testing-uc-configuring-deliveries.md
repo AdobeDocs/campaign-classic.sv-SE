@@ -1,21 +1,21 @@
 ---
 product: campaign
 title: Konfigurera leveranser
-description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
+description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 1%
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 # Konfigurera leveranser i arbetsflödet {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Nästa steg är att konfigurera leveranserna. De är avsedda för de tre populationer som skapades under det föregående steget: [Steg 2: Konfigurerar populationsexempel](#step-2--configuring-population-samples). De första två leveranserna gör att du kan skicka olika innehåll till populationen A och B. Den tredje leveransen är avsedd för den population som varken erhöll A eller B. Innehållet beräknas med ett skript och är identiskt med antingen A eller B, beroende på vilken som har den högsta öppna frekvensen. Vi måste konfigurera en vänteperiod för den tredje leveransen för att ta reda på resultatet av leveranserna A och B. Det är därför den tredje leveransen innehåller en **[!UICONTROL Wait]**-aktivitet.
+När [populationer har skapats](a-b-testing-uc-population-samples.md) kan du konfigurera leveranserna. I det här fallet gör de två första leveranserna att du kan skicka olika innehåll till populationen A och B. Den tredje leveransen är reservleveransen: det skickas till mottagare som inte tillhör A eller B. Innehållet beräknas med ett skript och är identiskt med antingen A eller B, beroende på vilken som har den högsta öppna frekvensen. Vi måste konfigurera en vänteperiod för den tredje leveransen för att ta reda på resultatet av leveranserna A och B. Det är därför den tredje leveransen innehåller en **[!UICONTROL Wait]**-aktivitet.
 
 1. Gå till aktiviteten **[!UICONTROL Split]** och länka övergången som är avsedd för population A till en av de e-postleveranser som redan finns i arbetsflödet.
 
@@ -50,4 +50,4 @@ Nästa steg är att konfigurera leveranserna. De är avsedda för de tre populat
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-Nu kan du skapa skriptet (se [Steg 5: Skapa skriptet](../../delivery/using/a-b-testing-uc-script.md)).
+Nu kan du skapa skriptet. [Läs mer](a-b-testing-uc-script.md).
