@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 8%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 7%
 
 Flerkanalsleveranser är tillgängliga på fliken **[!UICONTROL Deliveries]** för kampanjarbetsflödesaktiviteter.
 
-Med dem kan du skapa en leverans som är specifik för en viss kanal. Du kan ange den mall som du vill basera leveransen på samt innehållet i den, på samma sätt som med en klassisk leveransguide.
-
 De olika kanalerna är:
 
 * [E-post](../../delivery/using/about-email-channel.md)
-* [Direktreklam](../../delivery/using/about-direct-mail-channel.md)
+* [Direktutskick](../../delivery/using/about-direct-mail-channel.md)
 * [Mobil](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [Android](../../delivery/using/create-notifications-android.md)
+
+Välj den mall som du vill basera leveransen på och definiera innehållet i mallen.
 
 Du kan ange ett mål för leveransen uppströms arbetsflödet med hjälp av olika målinriktningsaktiviteter.
 
-Här skapar vi t.ex. ett arbetsflöde för att skicka ett e-postmeddelande eller ett SMS för prenumeranter på push-meddelanden, och sedan ett push-meddelande en vecka senare. Så här gör du:
+I exemplet nedan skapar vi ett arbetsflöde för att skicka ett e-postmeddelande eller ett SMS för prenumeranter på push-meddelanden och sedan ett push-meddelande en vecka senare. Så här gör du:
 
 1. Skapa en kampanj.
 1. Lägg till en **[!UICONTROL Query]** i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen.
@@ -39,7 +39,7 @@ Här skapar vi t.ex. ett arbetsflöde för att skicka ett e-postmeddelande eller
 
    >[!NOTE]
    >
-   >Kom ihåg att använda måldimensionen **för prenumerationsprogram** för push-meddelanden.
+   >Använd måldimensionen **för prenumerantprogram** för push-meddelanden.
 
    ![](assets/cross_channel_delivery_1.png)
 
