@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 7%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
@@ -26,4 +26,4 @@ När skriptet har skapats för att välja vinnare av A/B-tester kan du definiera
 
 Genom att förbereda leveransen som anges i övergången (definieras via aktiviteten **[!UICONTROL Javascript Code]**) kan du sedan godkänna den och starta sändningen, enligt beskrivningen i nästa steg.
 
-Du kan nu starta arbetsflödet (se [Steg 7: Starta arbetsflödet](../../delivery/using/a-b-testing-uc-start-workflow.md)).
+Du kan nu starta arbetsflödet. [Läs mer](a-b-testing-uc-start-workflow.md).
