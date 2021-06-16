@@ -3,14 +3,14 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
+source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 56%
+source-wordcount: '252'
+ht-degree: 55%
 
 ---
 
-# Help Center {#campaign-classic-documentation}
+# Campaign Classic v7-dokumentation {#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
