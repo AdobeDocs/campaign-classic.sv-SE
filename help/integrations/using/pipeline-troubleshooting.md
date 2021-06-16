@@ -5,9 +5,9 @@ description: Konfigurera integreringen
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
+source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Parametern @authPrivateKey i instanskonfigurationsfilen är felaktig.
 
 1. Kontrollera att authPrivateKey har angetts.
 1. Kontrollera att authPrivateKey: börjar med @, slutar med = och är ca 4 000 tecken långt.
-1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4096 bitar långt och börjar med —BEGIN RSA PRIVATE KEY—.
+1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4096 bitar lång och börjar med `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics.
 1. Kontrollera att nyckeln har kodats i samma instans som [!DNL pipelined]. <br>Om det behövs kan du göra om kodningen med JavaScript eller arbetsflödet.
 
@@ -51,6 +51,21 @@ Den privata nyckeln har ett ogiltigt format.
 1. Kör stegen för nyckelkryptering på den här sidan.
 1. Kontrollera att nyckeln är krypterad på samma instans.
 1. Kontrollera att authPrivateKey i konfigurationsfilen matchar den genererade nyckeln. <br>Se till att använda OpenSSL för att generera nyckelparet. PuttyGen genererar till exempel inte rätt format.
+
+**Pipelined misslyckas med &quot;is not long allowed get access token&quot;**
+
+Loggarna ska vara som följer:
+
+```
+2021-05-31T08:42:18.124Z        66462   66501   1       error   log     Listener: JWT Token is empty. (iRc=16384)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     Unknown authentication mode: 'Bearer realm="Adobe Analytics"'. (iRc=-55)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     BAS-010007 Function not implemented (iRc=-55)
+2021-05-31T08:42:48.582Z        66462   66501   1       warning log     Connection seems to have been lost. Attempting to reconnect.
+2021-05-31T08:43:09.156Z        66462   66501   1       error   log     INT-150012 The HTTP query returned a 'Forbidden' type error (403) (iRc=-53)
+2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
+```
+
+Det här felmeddelandet betyder att autentiseringen har konfigurerats med den gamla Omniture base OAuth. Se [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md)-dokumentationen för att uppgradera din autentisering.
 
 **Inga utlösare har hämtats**
 
