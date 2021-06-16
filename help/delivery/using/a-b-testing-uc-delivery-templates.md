@@ -6,18 +6,18 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 17%
+source-wordcount: '86'
+ht-degree: 20%
 
 ---
 
-# Skapa leveransmallar {#step-3--creating-two-delivery-templates}
+# Skapa leveransmallarna {#step-3--creating-two-delivery-templates}
 
-Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]**-aktivitet som är länkad till **[!UICONTROL Split]**-aktiviteten. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/about-templates.md).
+Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]**-aktivitet som är länkad till **[!UICONTROL Split]**-aktiviteten. Mer information om detta finns i [det här avsnittet](about-templates.md).
 
-1. Gå till mappen **[!UICONTROL Resources > Delivery template]**.
+1. Bläddra till mappen **[!UICONTROL Resources > Delivery template]**.
 1. Duplicera leveransmallen **[!UICONTROL Email]**.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
@@ -30,4 +30,4 @@ Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Em
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-Du kan nu konfigurera leveranser i arbetsflödet (se [Steg 4: Konfigurera leveranser i arbetsflödet](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
+Du kan nu konfigurera leveranser i arbetsflödet. [Läs mer](a-b-testing-uc-configuring-deliveries.md).
