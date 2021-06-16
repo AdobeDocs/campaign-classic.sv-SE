@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 4%
+source-wordcount: '656'
+ht-degree: 5%
 
 ---
 
@@ -19,9 +19,18 @@ När paketet har installerats kan du definiera dina iOS-appinställningar i Adob
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar din app för Android och hur du skapar en leverans för Android finns i [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md).
+>Mer information om hur du konfigurerar din app för Android och hur du skapar en leverans för Android finns i [avsnittet](configuring-the-mobile-application-android.md).
 
-## Konfigurerar det externa iOS-kontot {#configuring-external-account-ios}
+Viktiga steg är:
+
+1. [Konfigurera det externa iOS-kontot](#configuring-external-account-ios)
+1. [Konfigurera iOS-tjänsten](#configuring-ios-service)
+1. [Integrera iOS-mobilappen i Campaign](#creating-ios-app)
+
+Du kan sedan [skapa ett push-meddelande för iOS-enheter](create-notifications-ios.md).
+
+
+## Konfigurera externt iOS-konto {#configuring-external-account-ios}
 
 För iOS skickar iOS HTTP/2-anslutningen meddelanden till HTTP/2 APN:er.
 
@@ -37,7 +46,7 @@ Så här konfigurerar du den här kopplingen:
 
 Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
-## Konfigurerar iOS-tjänsten {#configuring-ios-service}
+## Konfigurera iOS-tjänsten {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -64,9 +73,9 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
 1. Skapa iOS-utvecklings- och produktionsprogram. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
 
-## Skapar iOS-mobilprogram {#creating-ios-app}
+## Skapa iOS-mobilapp {#creating-ios-app}
 
-När du har skapat tjänsten måste du nu skapa iOS-programmet:
+Skapa iOS-programmet i Campaign när du har skapat tjänsten. Följ stegen nedan:
 
 1. Klicka på knappen **[!UICONTROL Add]** för att välja programtyp i den nya tjänsten.
 
@@ -118,40 +127,3 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 1. Klicka på **[!UICONTROL Finish]**.
 
 iOS-programmet är nu klart att användas i Campaign Classic.
-
-## Skapa ett iOS-meddelande {#creating-ios-delivery}
-
-I iOS 10 eller senare är det möjligt att generera omfattande meddelanden. Adobe Campaign kan skicka meddelanden med variabler som gör att enheten kan visa ett omfattande meddelande.
-
-Nu måste du skapa en ny leverans och länka den till mobilappen som du har skapat.
-
-1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
-
-1. Klicka på **[!UICONTROL New]**.
-
-   ![](assets/nmac_android_3.png)
-
-1. Välj **[!UICONTROL Deliver on iOS (ios)]** i listrutan **[!UICONTROL Delivery template]**. Lägg till en **[!UICONTROL Label]** i leveransen.
-
-1. Klicka på **[!UICONTROL To]** för att definiera målpopulationen. Som standard används målmappningen **[!UICONTROL Subscriber application]**. Klicka på **[!UICONTROL Add]** för att välja den tjänst som vi skapade tidigare.
-
-   ![](assets/nmac_ios_9.png)
-
-1. I fönstret **[!UICONTROL Target type]** väljer du **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** och klickar på **[!UICONTROL Next]**.
-
-1. I listrutan **[!UICONTROL Service]** väljer du den tjänst som du skapade tidigare, sedan det program som du vill ha som mål och klickar på **[!UICONTROL Finish]**.
-**[!UICONTROL Application variables]** läggs till automatiskt beroende på vad som lades till under konfigurationsstegen.
-
-   ![](assets/nmac_ios_6.png)
-
-1. Redigera dina meddelanden.
-
-   ![](assets/nmac_ios_7.png)
-
-1. Markera rutan **[!UICONTROL Mutable content]** i fönstret för redigeringsmeddelanden om du vill att mobilprogrammet ska kunna hämta medieinnehåll.
-
-1. Klicka på **[!UICONTROL Save]** och skicka leveransen.
-
-Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumerantens mobila iOS-enheter.
-
-![](assets/nmac_ios_8.png)
