@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '330'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ Valet av leveransinnehåll som är avsett för den återstående populationen be
 
 ## Exempel på ett skript {#example-of-a-script}
 
-Följande skript kan användas på samma sätt som i målarbetsflödet. Mer information finns i [Implementering](#implementation).
+Följande skript kan användas på samma sätt som i målarbetsflödet. Mer information om detta finns i [det här avsnittet](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ Följande skript kan användas på samma sätt som i målarbetsflödet. Mer info
    vars.deliveryId = delivery.id
 ```
 
-En detaljerad förklaring av skriptet finns i [Information om skriptet](#details-of-the-script).
+En detaljerad förklaring av skriptet finns i [det här avsnittet](#details-of-the-script).
 
 ## Implementering {#implementation}
 
@@ -168,4 +168,4 @@ I exemplet ovan kan du välja innehållet i en leverans baserat på öppningshas
 * Lägsta prenumerationsavgift: `[indicators/@optOutRatio]`,
 * Transaktionsbelopp: `[indicators/@amount]`.
 
-Nu kan du definiera den slutliga leveransen (se [Steg 6: Definiera den slutliga leveransen](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+Nu kan du definiera den slutliga leveransen. [Läs mer](a-b-testing-uc-final-delivery.md).
