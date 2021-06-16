@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Om du vill skapa en sammanfattningslista måste du följa dessa steg:
 1. Förbättra&quot;Kontaktdata&quot; med en sammanställd beräkning från tabellen&quot;Inköp&quot;
 1. Skapa en sammanfattningslista
 
-## Steg 1: Läsa in filen och stämma av importerade data {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Steg 1: Läs in filen och stämma av importerade data {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 De data som ska läsas in är&quot;Inköpsrelaterade&quot; data i följande format:
 
@@ -59,7 +59,7 @@ Dessa data finns i textfilen&quot;Purchases.txt&quot;.
 
    Med aktiviteten **Datainläsning(fil)** kan du utöka arbetsflödets arbetsregister med insamlade data.
 
-   Mer information om den här aktiviteten finns i [Läsa in data från en fil](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
+   Mer information om den här aktiviteten finns i [Läs in data från en fil](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Konfigurera aktiviteten **Filinsamlaren** för att samla in textfiler (*.txt) från den valda katalogen.
 
@@ -110,7 +110,7 @@ Informationen i arbetsflödets arbetsregister efter denna berikning är följand
 
 ![](assets/uc2_enrich_population1.png)
 
-## Steg 2: Skriver inhämtade data till tabellen&quot;Inköp&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Steg 2: Skriv data som berikats i tabellen &#39;Inköp&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
 
 I det här steget beskrivs hur du skriver importerade och berikade data till tabellen&quot;Inköp&quot;. För att göra detta måste vi använda en **Uppdatera data**-aktivitet.
 
@@ -134,7 +134,7 @@ I aktiviteten **Uppdatera data** krävs följande konfiguration:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Steg 3: Förbättrar &#39;Kontaktdata&#39; {#step-3--enriching--contact--data-}
+## Steg 3: Fyll i &#39;Kontakt&#39;-data {#step-3--enriching--contact--data-}
 
 Schemat&quot;Kontakter&quot; är fysiskt länkat till schemat&quot;Inköp&quot;. Det innebär att du kan använda ett annat alternativ för alternativet &quot;Anrikning&quot;: lägga till data som är länkade till filtreringsdimensionen.
 
@@ -170,7 +170,7 @@ Om du vill förbereda sammanfattningslistan måste du lägga till fält från f�
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Steg 4: Skapa och lägga till i en sammanfattningslista {#step-4--creating-and-adding-to-a-summary-list}
+## Steg 4: Skapa och lägg till i en sammanfattningslista {#step-4--creating-and-adding-to-a-summary-list}
 
 Det sista steget är att skriva alla data som berikats till en lista.
 
