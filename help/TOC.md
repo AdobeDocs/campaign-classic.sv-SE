@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan ni använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha - via e-post, mobiler, offlinekanaler med mera.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2512'
 ht-degree: 97%
 
 ---
@@ -161,7 +161,9 @@ ht-degree: 97%
          + [Kom igång med konfigurationen av appen](delivery/using/get-started-app-config.md)
          + [Konfigurationssteg för iOS](delivery/using/configuring-the-mobile-application.md)
          + [Konfigurationssteg för Android](delivery/using/configuring-the-mobile-application-android.md)
-      + [Skapa meddelanden](delivery/using/creating-notifications.md)
+      + Skapa ett push-meddelande{#create-a-push-msg}
+         + [Skapa ett push-meddelande för iOS](delivery/using/create-notifications-ios.md)
+         + [Skapa ett push-meddelande för Android](delivery/using/create-notifications-android.md)
       + [Felsöka](delivery/using/troubleshooting.md)
    + Skicka direktutskick {#sending-direct-mail}
       + [Om direktutskickskanalen](delivery/using/about-direct-mail-channel.md)
