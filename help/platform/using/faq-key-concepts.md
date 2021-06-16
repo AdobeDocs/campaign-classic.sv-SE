@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 99%
@@ -90,7 +90,7 @@ Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md) om hur man 
 
 ## Hur skickar jag push-meddelanden? {#how-to-send-push-notifications-}
 
-Läs mer om hur man använder Adobe Campaign för att [skicka personaliserade push-meddelanden](../../delivery/using/creating-notifications.md) till iOS- och Android-enheter via appar.
+Läs mer om hur man använder Adobe Campaign för att [skicka personaliserade push-meddelanden](../../delivery/using/create-notifications-ios.md) till iOS- och Android-enheter via appar.
 
 ## Hur utformar och delar man en undersökning online? {#how-to-design-and-share-an-online-survey-}
 
