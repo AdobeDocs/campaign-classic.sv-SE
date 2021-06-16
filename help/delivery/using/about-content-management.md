@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Om innehållshantering{#about-content-management}
 
-Adobe Campaign Content Manager-modulen är ett specifikt Campaign Classic [standardpaket](../../installation/using/installing-campaign-standard-packages.md) som du kan installera för att skapa återkommande nyhetsbrev eller webbplatser. Det kan hjälpa dig att skapa, validera och publicera meddelanden.
+Adobe Campaign Content Manager-modulen är ett särskilt Campaign Classic [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md) som du kan installera för att skapa återkommande nyhetsbrev eller webbplatser. Det kan hjälpa dig att skapa, validera och publicera meddelanden.
 
 >[!NOTE]
 >
