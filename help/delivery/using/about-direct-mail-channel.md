@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -22,4 +22,4 @@ Med Adobe Campaign kan ni producera filer för att leverera personaliserade brev
 >Postadresser är beräkningsfält. En adress kan som standard innehålla upp till sex rader: den första innehåller förnamnet och efternamnet, de följande raderna innehåller postadressen (väg etc.) och den sista raden innehåller postnumret och ort eller stad.\
 >En adress anses vara fullständig om fälten för namn, postnummer och ort inte är tomma.
 
-Avsnitten nedan innehåller information som är specifik för direktreklamkanalen. Global information om hur du skapar och skickar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Avsnitten nedan innehåller information som är specifik för direktreklamkanalen. Global information om hur du skapar och skickar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
