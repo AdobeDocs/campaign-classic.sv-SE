@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -23,7 +23,7 @@ I exemplet nedan har leveransmålet delats upp i två grupper som representerar 
 
 ![](assets/a-b-testing-schema.png)
 
-Med Campaign Classic implementeras A/B-testning via arbetsflöden, där du anger målpopulationen samt de grupper som ska ta emot varje variant (se [Konfigurera a/b-testning](../../delivery/using/configuring-a-b-testing.md)).
+Med Campaign Classic implementeras A/B-testning via arbetsflöden, där du anger målpopulationen samt de grupper som ska ta emot varje variant (se [Konfigurera a/b-testning](configuring-a-b-testing.md)).
 
 Huvudstegen är:
 
@@ -37,4 +37,4 @@ Huvudstegen är:
 
 >[!NOTE]
 >
->Med arbetsflöden kan ni också automatisera era processer genom att automatiskt identifiera den bättre levererade varianten och sedan skicka den till den återstående populationen. Mer information finns i det här dedikerade [användningsexemplet](../../delivery/using/a-b-testing-use-case.md).
+>Med arbetsflöden kan ni också automatisera era processer genom att automatiskt identifiera den bättre levererade varianten och sedan skicka den till den återstående populationen. Mer information finns i det här dedikerade [användningsexemplet](a-b-testing-use-case.md).
