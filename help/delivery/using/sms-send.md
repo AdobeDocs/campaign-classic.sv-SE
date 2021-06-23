@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
@@ -21,8 +21,8 @@ Om du vill godkänna meddelandet och skicka det till mottagarna av den leverans 
 
 Den detaljerade processen för att validera och skicka en leverans presenteras i avsnitten nedan:
 
-* [Validera leveransen](../../delivery/using/steps-validating-the-delivery.md)
-* [Skicka leveransen](../../delivery/using/steps-sending-the-delivery.md)
+* [Validera leveransen](steps-validating-the-delivery.md)
+* [Skicka leveransen](steps-sending-the-delivery.md)
 
 ## Avancerade parametrar {#advanced-parameters}
 
@@ -60,9 +60,9 @@ Följande alternativ är tillgängliga:
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om att spåra meddelanden](../../delivery/using/about-message-tracking.md)
+* [Övervaka en leverans](about-delivery-monitoring.md)
+* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Om att spåra meddelanden](about-message-tracking.md)
 
 ## Bearbeta inkommande meddelanden {#processing-inbound-messages}
 
@@ -108,7 +108,7 @@ InSMS-schemat innehåller information som är relevant för inkommande SMS. En b
 * **operatorCode**: operatörens nätverkskod.
 * **linkedSmsId**: Adobe Campaign-identifierare (broadlogId) länkad till utgående SMS, där detta SMS är svaret.
 
-## Hantera automatiska svar (amerikansk regel) {#managing-automatic-replies--american-regulation-}
+## Hantera automatiska svar (amerikansk förordning) {#managing-automatic-replies--american-regulation-}
 
 När prenumeranterna svarar på ett SMS-meddelande som skickats till dem via Adobe Campaign och använder ett nyckelord som STOP, HELP eller YES, är det nödvändigt att konfigurera meddelanden som returneras automatiskt på den amerikanska marknaden.
 
@@ -165,6 +165,6 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 
 >[!IMPORTANT]
 >
->Den här typen av automatiska meddelanden sparar ingen historik. Därför visas de inte på kontrollpanelen för leveranser. [Läs mer](../../delivery/using/delivery-dashboard.md).
+>Den här typen av automatiska meddelanden sparar ingen historik. Därför visas de inte på kontrollpanelen för leveranser. [Läs mer](delivery-dashboard.md).
 >
 >Dessa meddelanden tas inte med i de kommersiella tryckreglerna. [Läs mer](../../campaign/using/pressure-rules.md).
