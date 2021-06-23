@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Om leveransfel
+title: Förstå leveransfel
 description: Lär dig mer om leveransfel
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
 
 ---
 
-# Om leveransfel{#understanding-delivery-failures}
+# Förstå leveransfel{#understanding-delivery-failures}
 
 ## Om leveransfel {#about-delivery-failures}
 
@@ -31,13 +31,13 @@ Meddelanden kan också uteslutas under färdigställandet av leveransen om en ad
 
 **Relaterade ämnen:**
 
-* [Leveransloggar och historik](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
-* [Misslyckad status](../../delivery/using/delivery-performances.md#failed-status)
+* [Leveransloggar och historik](delivery-dashboard.md#delivery-logs-and-history)
+* [Misslyckad status](delivery-performances.md#failed-status)
 * [Typ av leveransfel och orsaker](#delivery-failure-types-and-reasons)
 
 ## Typ av leveransfel och orsaker {#delivery-failure-types-and-reasons}
 
-Det finns tre typer av fel när ett meddelande misslyckas. Varje feltyp avgör om en adress skickas till karantän. Mer information finns i [Villkor för att skicka en adress till karantän](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
+Det finns tre typer av fel när ett meddelande misslyckas. Varje feltyp avgör om en adress skickas till karantän. Mer information finns i [Villkor för att skicka en adress till karantän](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
 * **Hård**: Ett &quot;hårt&quot; fel indikerar en ogiltig adress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel: &quot;Okänd användare&quot;.
 * **Mjuk**: Detta kan vara ett tillfälligt fel eller ett fel som inte gick att kategorisera, till exempel: &quot;Ogiltig domän&quot; eller &quot;Postlådan är full&quot;.
@@ -186,11 +186,11 @@ Om ett meddelande misslyckas på grund av ett tillfälligt **Soft**- eller **Ign
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Förbättrat MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
+>Om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
-För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA går du till de avancerade parametrarna för leverans- eller leveransmallen och anger önskad varaktighet i motsvarande fält för att ändra varaktigheten för en leverans. Se [Definiera giltighetsperiod](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA går du till de avancerade parametrarna för leverans- eller leveransmallen och anger önskad varaktighet i motsvarande fält för att ändra varaktigheten för en leverans. Se [Definiera giltighetsperiod](steps-sending-the-delivery.md#defining-validity-period).
 
-Standardkonfigurationen tillåter fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet återförsök kan ändras globalt (kontakta den tekniska administratören för Adobe) eller för varje leverans- eller leveransmall (se [Konfigurera återförsök](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
+Standardkonfigurationen tillåter fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet återförsök kan ändras globalt (kontakta den tekniska administratören för Adobe) eller för varje leverans- eller leveransmall (se [Konfigurera återförsök](steps-sending-the-delivery.md#configuring-retries)).
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -207,9 +207,9 @@ Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att
 
    >[!NOTE]
    >
-   >Klagomålshantering beskrivs i avsnittet [Deliverability management](../../delivery/using/about-deliverability.md).
+   >Klagomålshantering beskrivs i avsnittet [Deliverability management](about-deliverability.md).
 
-## Hantering av studsmeddelanden {#bounce-mail-management}
+## E-posthantering {#bounce-mail-management}
 
 På Adobe Campaign-plattformen kan du hantera e-postleveransfel via studsfunktionen.
 
@@ -219,13 +219,13 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) används inte längre de flesta regler för e-posthantering för värdbaserade eller hybridinstallationer. Mer information finns i [det här avsnittet](#email-management-rules).
+>Om du har uppgraderat till [Enhanced MTA](sending-with-enhanced-mta.md) används inte längre de flesta regler för e-posthantering för värdbaserade eller hybridinstallationer. Mer information finns i [det här avsnittet](#email-management-rules).
 
 ### Kvalifikation av studsmeddelanden {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
->För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrat MTA](../../delivery/using/sending-with-enhanced-mta.md):
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md):
 >
 >* Studskompetensen i tabellen **[!UICONTROL Delivery log qualification]** används inte längre för **synkrona** leveransfelmeddelanden. Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
    >
@@ -264,13 +264,13 @@ Studsade e-postmeddelanden kan ha följande kvalificeringsstatus:
 
 >[!NOTE]
 >
->Om en Internet-leverantör skulle råka ut för ett avbrott markeras e-post som skickas via Campaign felaktigt som studsar. För att korrigera detta måste du uppdatera studskompetens. Mer information finns på [den här sidan](../../delivery/using/update-bounce-qualification.md).
+>Om en Internet-leverantör skulle råka ut för ett avbrott markeras e-post som skickas via Campaign felaktigt som studsar. För att korrigera detta måste du uppdatera studskompetens. Mer information finns på [den här sidan](update-bounce-qualification.md).
 
 ### Regler för e-posthantering {#email-management-rules}
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) används inte längre de flesta regler för e-posthantering för värdbaserade eller hybridinstallationer. Mer information finns i avsnitten nedan.
+>Om du har uppgraderat till [Enhanced MTA](sending-with-enhanced-mta.md) används inte längre de flesta regler för e-posthantering för värdbaserade eller hybridinstallationer. Mer information finns i avsnitten nedan.
 
 E-postregler nås via noden **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**. Regler för e-posthantering visas i fönstrets nedre del.
 
@@ -292,7 +292,7 @@ Standardreglerna är följande.
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer och om din instans har **Webhooks/EFS**-funktioner, används inte längre **[!UICONTROL Inbound email]**-reglerna för synkrona felmeddelanden vid leverans. Mer information finns i [det här avsnittet](#bounce-mail-qualification).
+>Om du har uppgraderat till [Enhanced MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer och om din instans har **Webhooks/EFS**-funktioner, används inte längre **[!UICONTROL Inbound email]**-reglerna för synkrona felmeddelanden vid leverans. Mer information finns i [det här avsnittet](#bounce-mail-qualification).
 
 För lokala installationer och värdbaserade/hybridinstallationer som använder det gamla Campaign MTA-systemet innehåller dessa regler en lista med teckensträngar som kan returneras av fjärrservrar och som gör att du kan kvalificera felet (**Hård**, **Mjuk** eller **Ignorerad**).
 
@@ -308,7 +308,7 @@ Mer information om studentkvalifikationer finns i [det här avsnittet](#bounce-m
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) används inte längre **[!UICONTROL Domain management]**-reglerna för värdbaserade eller hybridinstallationer. **DKIM-signering (DomainKeys Identified Mail)** för e-postautentisering görs av den utökade MTA:n för alla meddelanden med alla domäner. Det signerar inte med **Avsändar-ID**, **DomainKeys** eller **S/MIME** om inte annat anges på den förbättrade MTA-nivån.
+>Om du har uppgraderat till [Enhanced MTA](sending-with-enhanced-mta.md) används inte längre **[!UICONTROL Domain management]**-reglerna för värdbaserade eller hybridinstallationer. **DKIM-signering (DomainKeys Identified Mail)** för e-postautentisering görs av den utökade MTA:n för alla meddelanden med alla domäner. Det signerar inte med **Avsändar-ID**, **DomainKeys** eller **S/MIME** om inte annat anges på den förbättrade MTA-nivån.
 
 För lokala installationer och värdbaserade/hybridinstallationer som använder den äldre Campaign MTA-metoden tillämpar Adobe Campaign meddelandeserver en enda **domänhanteringsregel** på alla domäner.
 
@@ -323,7 +323,7 @@ Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsända
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre leveransgenomströmningsreglerna för **[!UICONTROL MX management]**. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
+>Om du har uppgraderat till [Enhanced MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre leveransgenomströmningsreglerna för **[!UICONTROL MX management]**. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
 
 För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre kampanjavtalet MTA:
 
