@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Om karantänshantering
-description: Om karantänshantering
+title: Förstå karantänshantering
+description: Förstå karantänshantering
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
 
 ---
 
-# Om karantänshantering{#understanding-quarantine-management}
+# Förstå karantänshantering{#understanding-quarantine-management}
 
 ## Om karantäner {#about-quarantines}
 
@@ -29,7 +29,7 @@ De profiler vars e-postadresser eller telefonnummer är i karantän exkluderas a
 
 Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer.
 
-Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta felaktiga telefonnummer från leveranser. Mer information om de bästa sätten för att skydda och optimera leveranser finns på [den här sidan](../../delivery/using/delivery-best-practices.md) .
+Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta felaktiga telefonnummer från leveranser. Mer information om de bästa sätten för att skydda och optimera leveranser finns på [den här sidan](delivery-best-practices.md) .
 
 ### Karantän mot blockeringslista {#quarantine-vs-denylist}
 
@@ -49,7 +49,7 @@ Adresser i karantän kan användas för en viss leverans eller för hela plattfo
 
 ### Identifiera adresser i karantän för en leverans {#identifying-quarantined-addresses-for-a-delivery}
 
-Adresser i karantän för en viss leverans listas i leveransloggarna på leveransinstrumentpanelen under leveransfasen (se [Leveransloggar och historik](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)).
+Adresser i karantän för en viss leverans listas i leveransloggarna på leveransinstrumentpanelen under leveransfasen (se [Leveransloggar och historik](delivery-dashboard.md#delivery-logs-and-history)).
 
 ### Identifiera adresser i karantän för hela plattformen {#identifying-quarantined-addresses-for-the-entire-platform}
 
@@ -90,7 +90,7 @@ Du kan slå upp status för e-postadressen för alla mottagare. Det gör du geno
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Tar bort en adress i karantän {#removing-a-quarantined-address}
+### Ta bort en adress i karantän {#removing-a-quarantined-address}
 
 Om det behövs kan du ta bort en adress manuellt från karantänlistan. Dessutom tas adresser som matchar specifika villkor automatiskt bort från karantänlistan av arbetsflödet **[!UICONTROL Database cleanup]**.
 
@@ -117,7 +117,7 @@ Du kan ändra antalet fel och perioden mellan två fel. Om du vill göra det än
 
 ## Villkor för att skicka en adress till karantän {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som tilldelats vid kvalificering av felmeddelanden (se [Bedragningskvalifikation](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) och [Leveransfel och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som tilldelats vid kvalificering av felmeddelanden (se [Bedragningskvalifikation](understanding-delivery-failures.md#bounce-mail-qualification)) och [Leveransfel och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 * **Ignorerad avvikelse**: ignorerade avvikelser skickar ingen adress till karantänen.
 * **Kritisk avvikelse**: motsvarande e-postadress skickas omedelbart till karantänen.
@@ -135,11 +135,11 @@ I motsats till hårda fel skickar inte mjuka fel en adress direkt till karantän
 
 * När felräknaren når gränsvärdet sätts adressen i karantän.
 * I standardkonfigurationen anges tröskelvärdet till fem avvikelser, där två avvikelser klassas som viktiga om de inträffar med minst 24 timmars mellanrum.        Adressen sätts i karantän vid den femte avvikelsen.    
-* Tröskelvärdet för felräknaren kan ändras.  Mer information finns i [Försök igen efter ett tillfälligt leveransfel](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+* Tröskelvärdet för felräknaren kan ändras.  Mer information finns i [Försök igen efter ett tillfälligt leveransfel](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **Giltig** och tas bort från listan över karantäner i arbetsflödet för **Databasrensning**.
 
-## Kantlinje för push-meddelanden {#push-notification-quarantines}
+## Kantlinjer för push-meddelanden {#push-notification-quarantines}
 
 Karantänmekanismen för push-meddelanden är globalt densamma som den allmänna processen. Se [Om karantäner](#about-quarantines). Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-postmeddelanden.
 
@@ -525,14 +525,14 @@ Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allm�
 
 **För den utökade generiska SMPP-anslutningen**
 
-När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt. Mer information om den utökade allmänna SMPP-anslutningen finns på [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt. Mer information om den utökade allmänna SMPP-anslutningen finns på [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
 SMPP-kopplingen hämtar data från SR-meddelandet (statusrapport) som returneras med reguljära uttryck (regex) för att filtrera innehållet. Dessa data matchas sedan mot informationen som finns i tabellen **[!UICONTROL Delivery log qualification]** (tillgänglig via menyn **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**).
 
 Innan en ny typ av fel kvalificeras är felorsaken alltid inställd på **Refused** som standard.
 
 >[!NOTE]
-Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Leveransfel, typer och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Leveransfel, typer och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
 
 Exempel på ett genererat meddelande:
@@ -542,13 +542,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alla felmeddelanden börjar med **SR** för att skilja på SMS-felkoder och e-postfelkoder.
-* Den andra delen (**Allmänt** i det här exemplet) av felmeddelandet refererar till namnet på SMSC-implementeringen, som definieras i fältet **[!UICONTROL SMSC implementation name]** för det externa SMS-kontot. Läs [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+* Den andra delen (**Allmänt** i det här exemplet) av felmeddelandet refererar till namnet på SMSC-implementeringen, som definieras i fältet **[!UICONTROL SMSC implementation name]** för det externa SMS-kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
    Eftersom samma felkod kan ha olika innebörd för varje provider kan du med det här fältet veta vilken provider som genererade felkoden. Du kan sedan hitta felet i den aktuella providerns dokumentation.
 
 * Den tredje delen (**DELIVRD** i det här exemplet) av felmeddelandet motsvarar statuskoden som hämtats från SR med statusextraheringsregex som definierats i det externa SMS-kontot.
 
-   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -556,10 +556,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Den fjärde delen (**000** i det här exemplet) av felmeddelandet motsvarar den felkod som extraheras från SR med den felkodsextraheringsregex som definieras i det externa SMS-kontot.
 
-   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Den här regionen anges på fliken **[!UICONTROL SMSC specificities]** för det externa kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
    Som standard extraherar regex fältet **err:** enligt definitionen i **Bilaga B** i **SMPP 3.4-specifikationen**.
 
-* Allt som kommer efter rörsymbolen (|) visas bara i kolumnen **[!UICONTROL First text]** i tabellen **[!UICONTROL Delivery log qualification]**. Det här innehållet ersätts alltid av **#MESSAGE#** efter att meddelandet har normaliserats. Med den här processen undviker du att ha flera poster för liknande fel och den är samma som för e-postmeddelanden. Mer information finns i [studsbehörighet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
+* Allt som kommer efter rörsymbolen (|) visas bara i kolumnen **[!UICONTROL First text]** i tabellen **[!UICONTROL Delivery log qualification]**. Det här innehållet ersätts alltid av **#MESSAGE#** efter att meddelandet har normaliserats. Med den här processen undviker du att ha flera poster för liknande fel och den är samma som för e-postmeddelanden. Mer information finns i [studsbehörighet](understanding-delivery-failures.md#bounce-mail-qualification).
 
 Den utökade generiska SMPP-anslutningen använder en heuristisk metod för att hitta rimliga standardvärden: om statusen börjar med **DELIV** anses den vara lyckad eftersom den matchar de vanliga statusvärdena **DELIVRD** eller **DELIVERED** som används av de flesta leverantörer. All annan status leder till ett allvarligt fel.
