@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Skapa meddelanden för iOS{#create-notifications-ios}
 
-I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande beskrivs i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 Börja med att skapa en ny leverans.
 
@@ -37,7 +37,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
    >
    >Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
    >
-   >Mer information om att ta med en startvärdeslista finns i [Om startadresser](../../delivery/using/about-seed-addresses.md).
+   >Mer information om att ta med en startvärdeslista finns i [Om startadresser](about-seed-addresses.md).
 
 1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan iOS-versionen av programmet.
 
@@ -63,7 +63,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
    >
    >**[!UICONTROL Badge]** och  **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
 
-1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [det här avsnittet](../../delivery/using/customizing-emoticon-list.md)
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [det här avsnittet](customizing-emoticon-list.md)
 
 1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** fält för nyttolasten). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apple-dokumentationen](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1).
 1. I fältet **[!UICONTROL Play a sound]** väljer du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
@@ -92,9 +92,9 @@ Använd samma process som för e-postleveranser om du vill skicka ett korrektur 
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Kantlinjer för push-meddelanden](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Kantlinjer för push-meddelanden](understanding-quarantine-management.md#push-notification-quarantines)
+* [Övervaka en leverans](about-delivery-monitoring.md)
+* [Förstå leveransfel](understanding-delivery-failures.md)
 
 
 ## Skapa ett iOS-meddelande {#creating-ios-delivery}
