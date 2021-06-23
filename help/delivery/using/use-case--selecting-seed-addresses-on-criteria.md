@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -30,7 +30,7 @@ Om du vill använda det dynamiska villkoret måste du ha:
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
-Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md).
+Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](creating-an-email-delivery.md).
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet och valt mottagare.
 
