@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
@@ -21,7 +21,7 @@ Du kan hämta information om en leverans och redigera den om det behövs. Observ
 
 Här är den information du kan övervaka med hjälp av flera flikar som är tillgängliga på kontrollpanelen:
 
-* [Sammanfattning av leverans](#delivery-summary)
+* [Leveranssammanfattning](#delivery-summary)
 * [Leveransrapporter](#delivery-reports)
 * [Leveransloggar, spegelsidor, undantag](#delivery-logs-and-history)
 * [Loggar och historik för leveransspårning](#tracking-logs)
@@ -32,12 +32,12 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 
 **Relaterade ämnen:**
 
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om karantänshantering](../../delivery/using/understanding-quarantine-management.md)
-* [God praxis för leverans](../../delivery/using/delivery-best-practices.md)
-* [Hantera levererbarhet](../../delivery/using/about-deliverability.md)
+* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Förstå karantänshantering](understanding-quarantine-management.md)
+* [God praxis för leverans](delivery-best-practices.md)
+* [Hantera levererbarhet](about-deliverability.md)
 
-## Sammanfattning av leverans {#delivery-summary}
+## Leveranssammanfattning {#delivery-summary}
 
 Fliken **[!UICONTROL Summary]** innehåller egenskaper för leveransen: leveransstatus, kanal som används, information om avsändare, ämne, information om exekvering.
 
@@ -53,7 +53,7 @@ Innehållet på den här fliken kan konfigureras enligt dina krav. Mer informati
 
 Fliken **[!UICONTROL Delivery]** ger en historik över förekomsterna i den här leveransen. Den innehåller leveransloggarna, dvs. en lista över skickade meddelanden och deras status samt tillhörande meddelanden.
 
-För en leverans kan du till exempel bara visa mottagare med en misslyckad leverans eller en adress i karantän. Det gör du genom att klicka på knappen **[!UICONTROL Filters]** och välja **[!UICONTROL By state]**. Välj sedan läget i listrutan. Olika statusvärden listas i [den här sidan](../../delivery/using/delivery-statuses.md).
+För en leverans kan du till exempel bara visa mottagare med en misslyckad leverans eller en adress i karantän. Det gör du genom att klicka på knappen **[!UICONTROL Filters]** och välja **[!UICONTROL By state]**. Välj sedan läget i listrutan. Olika statusvärden listas i [den här sidan](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ För en leverans kan du till exempel bara visa mottagare med en misslyckad lever
 
 Med länken **[!UICONTROL Display the mirror page for this message...]** kan du visa spegelsidan för innehållet i leveransen som valts i listan i ett nytt fönster.
 
-Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information finns i [Generera spegelsidan](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information finns i [Generera spegelsidan](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -75,7 +75,7 @@ På fliken **[!UICONTROL Tracking]** visas spårningshistoriken för den här le
 >
 >Om spårning inte är aktiverat för en leverans visas inte den här fliken.
 
-Spårningskonfigurationen utförs i rätt steg i leveransguiden. Se [Konfigurera spårade länkar](../../delivery/using/how-to-configure-tracked-links.md).
+Spårningskonfigurationen utförs i rätt steg i leveransguiden. Se [Konfigurera spårade länkar](how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** data tolkas i leveransrapporterna. Se [det här avsnittet](../../reporting/using/delivery-reports.md).
 
@@ -87,7 +87,7 @@ På fliken **[!UICONTROL Inbox rendering]** kan du förhandsgranska meddelandet 
 
 På så sätt kan du se till att ditt meddelande visas för mottagarna på ett optimalt sätt på en mängd olika webbklienter, webbmejl och enheter.
 
-Mer information om återgivning av inkorgar finns på [den här sidan](../../delivery/using/inbox-rendering.md)
+Mer information om återgivning av inkorgar finns på [den här sidan](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -97,7 +97,7 @@ Fliken **[!UICONTROL Audit]** innehåller leveransloggen och alla meddelanden so
 
 Med knappen **[!UICONTROL Refresh]** kan du uppdatera data. Använd knappen **[!UICONTROL Filters]** för att definiera ett filter för data.
 
-Med särskilda ikoner kan du identifiera fel och varningar. Se [Analysera leveransen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Med särskilda ikoner kan du identifiera fel och varningar. Se [Analysera leveransen](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Med underfliken **[!UICONTROL Proofs]** kan du visa listan med korrektur som har skickats.
 
@@ -105,7 +105,7 @@ Med underfliken **[!UICONTROL Proofs]** kan du visa listan med korrektur som har
 
 Du kan ändra informationen som visas i det här fönstret (och informationen på flikarna **[!UICONTROL Delivery]** och **[!UICONTROL Tracking]**) genom att markera kolumnerna som ska visas. Det gör du genom att klicka på ikonen **[!UICONTROL Configure list]** i det nedre högra hörnet. Mer information om hur du konfigurerar listvisning finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## Synkronisering av kontrollpanelen för leverans {#delivery-dashboard-synchronization}
+## Synkronisering av kontrollpanel för leverans {#delivery-dashboard-synchronization}
 
 Från kontrollpanelen för leverans vill du kontrollera de bearbetade meddelandena och leveransloggarna för att vara säker på att leveransen har skickats.
 
@@ -121,7 +121,7 @@ Vissa indikatorer eller status kan vara felaktiga eller inte aktuella. Lösninge
 
 Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. Mer information om detta hittar du i det här [avsnittet](../../reporting/using/delivery-reports.md).
 
-## Användningsfall: Lägger till avsändarens IP-adresser i loggarna {#use-case}
+## Användningsfall: Lägga till avsändarens IP-adresser i loggarna {#use-case}
 
 I det här avsnittet får du lära dig hur du lägger till information i leveransloggarna om IP-adressen som skickade varje e-postmeddelande i en leverans.
 
