@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # Validera{#validating}
 
-Globala koncept vid validering av en leverans visas i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md).
+Globala koncept vid validering av en leverans visas i [det här avsnittet](steps-validating-the-delivery.md).
 
-Utdatafilen för en direktpostleverans genereras under leveransanalysen. Filens innehåll beror på de markerade utdatakolumnerna (se [Extraktionsfil](../../delivery/using/defining-the-direct-mail-content.md#extraction-file)).
+Utdatafilen för en direktpostleverans genereras under leveransanalysen. Filens innehåll beror på de markerade utdatakolumnerna (se [Extraktionsfil](defining-the-direct-mail-content.md#extraction-file)).
 
 >[!NOTE]
 >
->Analysfasen beskrivs i [Analysera leveransen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+>Analysfasen beskrivs i [Analysera leveransen](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Under analysfasen genereras filen, men information om mottagare (dvs. leveransloggar) uppdateras inte. Du kan därför avbryta det här jobbet utan att köra några risker.
 
