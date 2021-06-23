@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -79,7 +79,7 @@ Så här väljer du vilken koppling du vill använda:
 
    ![](assets/nmac_service_2.png)
 
-1. Skapa ett Android-program. Mer information om detta finns i [det här avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app).
+1. Skapa ett Android-program. Mer information om detta finns i [det här avsnittet](configuring-the-mobile-application-android.md#creating-android-app).
 
 ## Skapa Android-mobilprogrammet {#creating-android-app}
 
@@ -93,7 +93,7 @@ När du har skapat tjänsten måste du nu skapa ditt Android-program:
 
    ![](assets/nmac_android.png)
 
-1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information om detta finns i [det här avsnittet](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information om detta finns i [det här avsnittet](integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -111,8 +111,8 @@ Som standard sparar Adobe Campaign en nyckel i fältet **[!UICONTROL User identi
 
 När du har skapat en tjänst och ett nytt mobilprogram måste du konfigurera ditt mobilprogram beroende på den valda API-versionen.
 
-* **HTTP v1** configuration is detailed in  [this section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-* **HTTP-** konfiguration (äldre) beskrivs i  [det här avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+* **HTTP v1** configuration is detailed in  [this section](configuring-the-mobile-application-android.md#android-service-httpv1).
+* **HTTP-** konfiguration (äldre) beskrivs i  [det här avsnittet](configuring-the-mobile-application-android.md#android-service-http).
 
 #### Konfigurera HTTP v1 API{#android-service-httpv1}
 
@@ -188,4 +188,4 @@ Du måste utöka **appsubscriptionRcp** för att definiera nya fält för att la
 
    >[!CAUTION]
    >
-   >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är samma som i mobilprogramkoden. Se [det här avsnittet](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+   >Kontrollera att konfigurationsnamnen på fliken **[!UICONTROL Subscription parameters]** är samma som i mobilprogramkoden. Se [det här avsnittet](integrating-campaign-sdk-into-the-mobile-application.md).
