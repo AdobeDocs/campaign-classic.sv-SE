@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 5%
@@ -71,7 +71,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
    ![](assets/nmac_service_2.png)
 
-1. Skapa iOS-utvecklings- och produktionsprogram. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
+1. Skapa iOS-utvecklings- och produktionsprogram. Mer information om detta hittar du i det här [avsnittet](configuring-the-mobile-application.md#creating-ios-app).
 
 ## Skapa iOS-mobilapp {#creating-ios-app}
 
@@ -100,7 +100,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
 1. Klicka på **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: [Integrera Campaign SDK i mobilprogrammet](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
+1. Se till att samma **[!UICONTROL Integration key]** är definierat i Adobe Campaign och i programkoden via SDK. Mer information finns i: [Integrera Campaign SDK i mobilprogrammet](integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
 
    >[!NOTE]
    >
