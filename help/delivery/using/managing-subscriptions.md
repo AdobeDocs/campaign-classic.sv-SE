@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Det finns tre olika sätt att prenumerera på/ta bort abonnemang:
 >
 >Ett exempel på hur du skapar ett prenumerationsformulär med dubbel anmälan finns i [det här avsnittet](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
 
-## Skapar en informationstjänst {#creating-an-information-service}
+## Skapa en informationstjänst {#creating-an-information-service}
 
 Du kan skapa och hantera prenumerationer på informationstjänster med tillhörande bekräftelsemeddelanden eller automatiska leveranser till prenumeranter.
 
@@ -54,10 +54,10 @@ Om du vill redigera en befintlig tjänst klickar du på dess namn. Om du vill sk
 
    >[!NOTE]
    >
-   >Facebook- och Twitter-prenumerationer beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
+   >Facebook- och Twitter-prenumerationer beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanal](about-mobile-app-channel.md).
 
 * För en tjänst av typen E-post väljer du **Leveransläge**. Möjliga lägen är: **[!UICONTROL Newsletter]** eller **[!UICONTROL Viral]**.
-* Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller ett avabonnemang. För att göra detta väljer du de leveransmallar som ska användas för att skapa motsvarande leveranser från fälten **[!UICONTROL Subscription]** och **[!UICONTROL Unsubscription]**. Dessa mallar måste konfigureras med en **[!UICONTROL Subscription]**-målmappning utan ett definierat mål. Se avsnitt [Om e-postkanal](../../delivery/using/about-email-channel.md).
+* Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller ett avabonnemang. För att göra detta väljer du de leveransmallar som ska användas för att skapa motsvarande leveranser från fälten **[!UICONTROL Subscription]** och **[!UICONTROL Unsubscription]**. Dessa mallar måste konfigureras med en **[!UICONTROL Subscription]**-målmappning utan ett definierat mål. Se avsnitt [Om e-postkanal](about-email-channel.md).
 * Som standard är prenumerationerna obegränsade. Du kan avmarkera alternativet **[!UICONTROL Unlimited]** om du vill definiera en giltighetslängd för tjänsten. Längden kan anges i dagar (**[!UICONTROL d]**) eller månader (**[!UICONTROL m]**).
 
 När tjänsten har sparats läggs den till i listan Tjänster och prenumerationer: Klicka på namnet för att redigera det. Flera flikar är tillgängliga. På fliken **[!UICONTROL Subscriptions]** kan du visa en lista över prenumeranter på informationstjänsten (**[!UICONTROL Active subscriptions]**-fliken) eller historiken för prenumerationer/avprenumerationer (**[!UICONTROL History]**-fliken). Du kan också lägga till och ta bort prenumeranter på den här fliken. Se [Lägga till och ta bort prenumeranter](#adding-and-deleting-subscribers).
@@ -84,7 +84,7 @@ I båda fallen kan du skicka ett bekräftelsemeddelande till de berörda använd
 
 Se [Prenumerations- och avprenumerationsmekanismer](#subscription-and-unsubscription-mechanisms).
 
-## Leverera till prenumeranterna av en tjänst {#delivering-to-the-subscribers-of-a-service}
+## Leverera till abonnenterna av en tjänst {#delivering-to-the-subscribers-of-a-service}
 
 Om du vill leverera till abonnenterna av en informationstjänst kan du rikta abonnenterna till den berörda informationstjänsten, som i följande exempel:
 
@@ -117,7 +117,7 @@ Du kan ställa in prenumerations- och avprenumerationsmekanismer för att automa
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
-### Prenumerera på en mottagare på en tjänst {#subscribing-a-recipient-to-a-service}
+### Prenumerera på en tjänst {#subscribing-a-recipient-to-a-service}
 
 Om du vill registrera mottagare för en informationstjänst kan du:
 
@@ -146,9 +146,9 @@ Om du vill registrera mottagare för en informationstjänst kan du:
 
 e-postleveranser måste innehålla en länk för att avsluta prenumerationen enligt lag. Mottagarna kan klicka på den här länken för att uppdatera sin profil och uteslutas från målen för framtida leveranser.
 
-Standardlänken för att avbryta prenumerationen infogas via den sista knappen i verktygsfältet i innehållsredigeraren som finns i leveransguiden (se [Om anpassning](../../delivery/using/about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
+Standardlänken för att avbryta prenumerationen infogas via den sista knappen i verktygsfältet i innehållsredigeraren som finns i leveransguiden (se [Om anpassning](about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
 
-Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad länk för att avbryta prenumerationen (se [Personaliseringsblock](../../delivery/using/personalization-blocks.md)).
+Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad länk för att avbryta prenumerationen (se [Personaliseringsblock](personalization-blocks.md)).
 
 Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. Det gör du genom att klicka på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markera den eller de berörda informationstjänsterna och klicka på **[!UICONTROL Delete]**.
 
