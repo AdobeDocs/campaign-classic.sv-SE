@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Målgruppen är följande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 
-Läs mer om målpopulationer [i detta avsnitt](../../delivery/using/steps-defining-the-target-population.md)
+Läs mer om målpopulationer [i detta avsnitt](steps-defining-the-target-population.md)
 
 ## Rikta er till rätt målgrupp {#target-the-right-audience}
 
@@ -30,28 +30,28 @@ I Campaign Classic är leveransmallarna som standard **mottagare** som mål. Ado
 
 Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-Dessa mappningar visas [i det här avsnittet](../../delivery/using/selecting-a-target-mapping.md).
+Dessa mappningar visas [i det här avsnittet](selecting-a-target-mapping.md).
 
 Du kan också skapa och använda en anpassad målmappning. Mer information om detta finns i [det här avsnittet](../../configuration/using/target-mapping.md).
 
 ## Externa mottagare {#external-recipients}
 
-Du kan leverera till mottagare som lagras i en extern fil i stället för att sparas i databasen. Läs mer [i det här avsnittet](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Du kan leverera till mottagare som lagras i en extern fil i stället för att sparas i databasen. Läs mer [i det här avsnittet](steps-defining-the-target-population.md#selecting-external-recipients).
 
-## Skicka till dina prenumeranter {#send-to-subscribers}
+## Skicka till prenumeranterna {#send-to-subscribers}
 
-Om du vill skicka meddelanden till prenumeranterna på ett nyhetsbrev kan du rikta dem direkt till motsvarande informationstjänst. Läs mer [i det här avsnittet](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
+Om du vill skicka meddelanden till prenumeranterna på ett nyhetsbrev kan du rikta dem direkt till motsvarande informationstjänst. Läs mer [i det här avsnittet](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
-## Testmottagare och startadresser {#test-recipients-seed-addresses}
+## Testa mottagare och startadresser {#test-recipients-seed-addresses}
 
 Om du vill testa leveransen använder du korrektur innan du skickar till huvudmålet.
 
-Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare visas [i det här avsnittet](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
+Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare visas [i det här avsnittet](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [i det här avsnittet](../../delivery/using/about-seed-addresses.md).
+Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [i det här avsnittet](about-seed-addresses.md).
 
-## Ta bort dubblettadresser {#deduplicate-addresses}
+## Deduplicera adresser {#deduplicate-addresses}
 
 Det är viktigt att undvika att ha dubbla e-postadresser, eftersom detta kan påverka ditt mål:
 
