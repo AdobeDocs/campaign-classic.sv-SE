@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Den namngivna rättigheten **[!UICONTROL Privacy Data Right]** har lagts till i 
 
 ### Namnrymder {#namesspaces}
 
-Innan du skapar förfrågningar om användarens information måste du definiera den namnrymd som ska användas. Det här är nyckeln som används för att identifiera den registrerade i databasen i Adobe Campaign.
+Innan du skapar förfrågningar om användarens information måste du definiera det namnutrymme som ska användas. Det här är nyckeln som används för att identifiera den registrerade i databasen i Adobe Campaign.
 
 Tre namnutrymmen är tillgängliga direkt: e-post, telefon och mobiltelefon. Om du behöver ett annat namnutrymme (till exempel ett anpassat mottagarfält) kan du skapa ett nytt från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
@@ -165,7 +165,7 @@ Informationen är tillgänglig i databasen i 90 dagar. När förfrågan har rens
 
 Här är ett exempel på en registrerad persons datafil:
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 Personuppgiftsansvariga kan enkelt skapa en webbapplikation med motsvarande JSSP-URL för att göra den registrerades datafil tillgänglig från en webbplats.
 
@@ -257,7 +257,7 @@ Först och främst måste du utföra autentiseringen via API:et:
 
 1. Använd metoden Logon och ange ett användarnamn och lösenord som parametrar i förfrågan. Du får ett svar som innehåller en sessionstoken. Här är ett exempel som använder SoapUI.
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. Använd den returnerade sessionstoken som autentisering för alla efterföljande API-anrop. Den går ut efter 24 timmar.
 
@@ -269,7 +269,7 @@ Anropa sedan sekretess-API:et:
 
    Här är ett exempel som använder **[!UICONTROL CreateRequestByName]**. Observera hur vi använder sessionstoken ovan som autentisering. Svaret är ID:et för den skapade förfrågan.
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    Om du vill ha hjälp med att utföra stegen ovan bör du tänka på följande:
 
