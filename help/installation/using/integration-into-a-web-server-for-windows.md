@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 2%
+source-wordcount: '971'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ På samma sätt måste du använda en webbserver när du vill använda spårning
 >
 >Om du inte använder spårningsfunktionen kan du utföra en standardinstallation av Apache eller IIS med en omdirigering till Campaign. Modulen för spårning av webbservertillägg krävs inte.
 
-## Konfigurerar IIS-webbservern {#configuring-the-iis-web-server}
+## Konfigurera IIS-webbservern {#configuring-the-iis-web-server}
 
 Konfigurationsproceduren för en IIS-webbserver är vanligtvis grafisk. Det handlar om att använda en webbplats (som redan har skapats eller väntar på att skapas) för att komma åt Adobe Campaign-serverns resurser: Java-filer (.jsp), formatmallar (.css, .xsl), bilder (.png), ISAPI DLL för omdirigering osv.
 
@@ -101,13 +101,16 @@ Gör så här:
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### Startar webbservern och testar konfigurationen {#launching-the-web-server-and-testing-the-configuration}
+### Starta webbservern och testa konfigurationen {#launching-the-web-server-and-testing-the-configuration}
 
 Du måste nu testa om konfigurationen är korrekt.
 
 Gör så här:
 
 1. Starta om IIS-servern med kommandoraden **iisreset**.
+
+1. Starta tjänsten Adobe Campaign och kontrollera att den körs.
+
 1. Testa spårningsmodulen genom att infoga följande URL i en webbläsare:
 
    ```
@@ -164,7 +167,7 @@ I så fall måste du öka den här gränsen:
 >
 >Mer information om det här IIS-alternativet finns i avsnittet &quot;Använda&quot; i [den officiella dokumentationen](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
-### Konfigurerar visningen av http-felmeddelande {#configuring-http-error-message-display}
+### Konfigurera visning av http-felmeddelande {#configuring-http-error-message-display}
 
 Om du använder en IIS-server av version 6.1 kan genererade felmeddelanden vara svåra att läsa eftersom en oönskad HTML-kod visas i meddelandet.
 
