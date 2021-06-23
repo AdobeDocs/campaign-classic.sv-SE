@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -73,7 +73,7 @@ Värdena för **[!UICONTROL status]**, **[!UICONTROL channel]** och **[!UICONTRO
 
 ## Infoga en kupong i en e-postleverans {#inserting-a-coupon-into-an-email-delivery}
 
-I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md). Du kan också lägga till en kupong i en leverans i ett arbetsflöde.
+I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om hur du skapar en leverans finns i [det här avsnittet](about-email-channel.md). Du kan också lägga till en kupong i en leverans i ett arbetsflöde.
 
 1. Gå till **[!UICONTROL Campaigns]** och välj **[!UICONTROL Deliveries]**.
 1. Klicka på **[!UICONTROL Create]**.
