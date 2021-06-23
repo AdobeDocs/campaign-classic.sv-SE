@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Följande steg är nödvändiga för att skapa innehållshantering i Adobe Campa
 * [Steg 5 - Skapa publiceringsmallen](#step-5---creating-the-publication-template),
 * [Steg 6 - Skapa innehåll](#step-6---creating-contents).
 
-## Steg 1 - Analyserar innehållet som ska produceras {#step-1---analyzing-the-content-to-be-produced}
+## Steg 1 - Analysera innehållet som ska produceras {#step-1---analyzing-the-content-to-be-produced}
 
 Innan du börjar måste du göra en exakt analys av innehållet som ska produceras: identifiera de element som ska visas, studera de begränsningar som är kopplade till dem, definiera en typ för varje element osv. Du måste också skilja på statiska element och variabla element.
 
@@ -58,7 +58,7 @@ Ett dataschema är ett XML-dokument som är kopplat till innehållet. Den beskri
 >
 >Mer information om hur du skapar och konfigurerar datamappningar i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
 >
->Konfigurationselement som är specifika för innehållshantering beskrivs i [Datamodeller](../../delivery/using/data-schemas.md).
+>Konfigurationselement som är specifika för innehållshantering beskrivs i [Datamodeller](data-schemas.md).
 
 Så här skapar du ett dataschema:
 
@@ -82,7 +82,7 @@ Så här skapar du ett dataschema:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Mer information finns i [Redigera scheman](../../delivery/using/data-schemas.md#editing-schemas).
+   Mer information finns i [Redigera scheman](data-schemas.md#editing-schemas).
 
    För varje element som innehållet refererar till måste du välja en matchande typ.
 
@@ -170,7 +170,7 @@ Beskrivningen av ett formulär är ett strukturerat XML-dokument som observerar 
 >
 >Mer information om hur du skapar och konfigurerar formulär i Adobe Campaign finns i [det här avsnittet](../../configuration/using/identifying-a-form.md).
 >
->Konfigurationselement som är specifika för innehållshantering beskrivs i [Indataformulär](../../delivery/using/input-forms.md).
+>Konfigurationselement som är specifika för innehållshantering beskrivs i [Indataformulär](input-forms.md).
 
 Så här skapar du ett indataformulär för innehållshantering:
 
@@ -220,7 +220,7 @@ I det här exemplet vill vi använda en JavaScript-mall för att definiera datak
 
 >[!NOTE]
 >
->Begränsningar som är kopplade till dokumentbyggen (JavaScript- eller XSL-mallar) beskrivs i [Formatering](../../delivery/using/formatting.md).
+>Begränsningar som är kopplade till dokumentbyggen (JavaScript- eller XSL-mallar) beskrivs i [Formatering](formatting.md).
 
 Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
 
@@ -231,7 +231,7 @@ Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
 1. Ange ett mallnamn och välj det schema som du har skapat för innehållshantering.
 1. Importera det uppsatta innehåll som du vill visa i meddelandet.
 
-   Lägg till variabelelementen utan att ta hänsyn till syntaxen i [JavaScript-mallar](../../delivery/using/formatting.md#javascript-templates).
+   Lägg till variabelelementen utan att ta hänsyn till syntaxen i [JavaScript-mallar](formatting.md#javascript-templates).
 
    För att visa innehållet som visas i vårt exempel måste JavaScript-mallen innehålla följande element:
 
@@ -324,7 +324,7 @@ Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
    </html>
    ```
 
-   Genom att anropa en funktion i början av en mall kan du skapa ett anrop till personaliseringsdata som hämtas från Adobe Campaign-databasen (i det här fallet: mottagare.firstName och mottagare.lastName) så att det kan tolkas när det används i en leverans. Mer information finns i [Inkludera en JavaScript-mall](../../delivery/using/formatting.md#including-a-javascript-template).
+   Genom att anropa en funktion i början av en mall kan du skapa ett anrop till personaliseringsdata som hämtas från Adobe Campaign-databasen (i det här fallet: mottagare.firstName och mottagare.lastName) så att det kan tolkas när det används i en leverans. Mer information finns i [Inkludera en JavaScript-mall](formatting.md#including-a-javascript-template).
 
    I det här exemplet innehåller funktionen följande kod:
 
@@ -347,13 +347,13 @@ Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Steg 5 - Skapa publikationsmallen {#step-5---creating-the-publication-template}
+## Steg 5 - Skapa publiceringsmallen {#step-5---creating-the-publication-template}
 
 Nästa steg är att skapa en mall för innehållspublikationer som länkar upp schemat, formuläret och mallen för innehållskonstruktion. Den här publiceringsmallen kan ha flera utdataformat.
 
 >[!NOTE]
 >
->Mer information om mallar för innehållspublikationer finns i [Publikationsmallar](../../delivery/using/publication-templates.md).
+>Mer information om mallar för innehållspublikationer finns i [Publikationsmallar](publication-templates.md).
 
 I det här exemplet är stegen följande:
 
@@ -373,15 +373,15 @@ I det här exemplet är stegen följande:
 
 1. Klicka på **[!UICONTROL Save]** för att skapa publikationsmallen.
 
-## Steg 6 - Skapar innehåll {#step-6---creating-contents}
+## Steg 6 - Skapa innehåll {#step-6---creating-contents}
 
 Nu kan du skapa innehåll baserat på den här publiceringsmallen.
 
 >[!NOTE]
 >
->Mer information om hur du skapar innehåll finns i [Använda en innehållsmall](../../delivery/using/using-a-content-template.md).
+>Mer information om hur du skapar innehåll finns i [Använda en innehållsmall](using-a-content-template.md).
 
-### Skapar innehåll i leveransguiden {#creating-content-in-the-delivery-wizard}
+### Skapa innehåll i leveransguiden {#creating-content-in-the-delivery-wizard}
 
 Så här skapar du innehåll direkt i leveranserna:
 
