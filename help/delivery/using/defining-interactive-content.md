@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -27,11 +27,12 @@ Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. P
 
 >[!NOTE]
 >
-> För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mittkällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/configuring-instances.md#execution-instance). Kontakta er kontoansvarige.
+> För hybridarkitekturer och värdbaserade arkitekturer måste paketet installeras på alla servrar, inklusive [mittkällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/configuring-instances.md#execution-instance).
+
 
 ## Om AMP för e-post {#about-amp-for-email}
 
-Med det nya formatet **AMP for Email** kan AMP-komponenter inkluderas i meddelanden för att förbättra e-postupplevelsen med avancerat och användbart innehåll. Med de moderna appliknande funktioner som finns direkt tillgängliga i e-postmeddelanden kan mottagarna interagera dynamiskt med innehållet i själva meddelandet.
+Med det nya formatet **AMP for Email** kan AMP-komponenter inkluderas i meddelanden för att förbättra e-postupplevelsen med avancerat och användbart innehåll. Med de moderna app-funktioner som finns direkt tillgängliga i e-postmeddelanden kan mottagarna interagera dynamiskt med innehållet i själva meddelandet.
 
 Exempel:
 * E-postmeddelanden som skrivits med AMP kan innehålla interaktiva element som bildkaruseller.
@@ -126,7 +127,7 @@ Följ stegen nedan för att skapa ett e-postmeddelande i AMP-format.
    >
    >Om e-postmeddelandet inte innehåller någon HTML- eller oformaterad textversion förutom AMP-innehållet, kan det inte skickas.
 
-## AMP för leveranskrav för e-post {#amp-for-email-delivery-requirements}
+## AMP för leveranskrav via e-post {#amp-for-email-delivery-requirements}
 
 När du skapar ditt AMP-innehåll i Adobe Campaign måste du uppfylla villkoren för att ett dynamiskt e-postmeddelande ska kunna levereras, som är specifikt för mottagarnas e-postleverantörer.
 
@@ -141,7 +142,7 @@ Bland annat måste följande krav vara uppfyllda:
 
 Du kan även läsa [Tips och kända begränsningar för Gmail](https://developers.google.com/gmail/ampemail/tips) och [AMP:s metodtips för Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/best-practices).
 
-## Ange ett AMP-e-postmeddelande {#targeting-amp-email} som mål
+## Ange ett AMP-e-postmeddelande {#targeting-amp-email}
 
 För närvarande kan du experimentera med att skicka ett AMP-mejl i två steg:
 
@@ -169,7 +170,7 @@ Mer information finns i dokumentationen för [Gmail](https://developers.google.c
 
 Om du vill testa att skicka ett AMP-e-postmeddelande till en Mail.ru-adress följer du stegen i [Mail.ru-utvecklardokumentationen](https://postmaster.mail.ru/amp/?lang=en#howto) (**Om du är användare**).
 
-### Leverera AMP-e-post genom att registrera hos en e-postleverantör {#delivering-amp-emails-by-registering}
+### Leverera AMP-mejl genom att registrera hos en e-postleverantör {#delivering-amp-emails-by-registering}
 
 Du kan experimentera med att leverera dynamiska e-postmeddelanden genom att registrera dig hos de e-postleverantörer som stöds så att din avsändardomän läggs till i tillåtelselista.
 
@@ -201,7 +202,7 @@ Om du till exempel har tagit med en produktlista i e-postmeddelandet justeras pr
 >
 >Alternativet **[!UICONTROL AMP inclusion]** är som standard inställt på **[!UICONTROL No]**.
 
-## Självstudievideo {#amp-email-video}
+## Videokurs {#amp-email-video}
 
 I videon nedan förklaras hur du aktiverar och använder AMP i Adobe Campaign 
 
