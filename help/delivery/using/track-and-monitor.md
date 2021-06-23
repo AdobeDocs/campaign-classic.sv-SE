@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Klickade du på knappen **Skicka**? Låt oss se vad som händer. När leveransen
 För att kunna styra era kampanjer måste ni se till att meddelandet verkligen har levererats till mottagarna.
 
 På kontrollpanelen för kampanjleverans kan du kontrollera bearbetade meddelanden och leveransgranskningsloggar.
-Du kan också styra status för meddelandena i leveransloggarna. [Läs mer](../../delivery/using/about-delivery-monitoring.md).
+Du kan också styra status för meddelandena i leveransloggarna. [Läs mer](about-delivery-monitoring.md).
 
 Vad händer om leveranserna inte skickas och deras status förblir **Väntande**?
 
@@ -41,7 +41,7 @@ Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en
 
 **Tips**: Spårning av meddelanden är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransguiden. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
 
-Mer information finns i avsnittet [Configuring tracking](../../delivery/using/how-to-configure-tracked-links.md) och beskrivningen av [spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
+Mer information finns i avsnittet [Configuring tracking](how-to-configure-tracked-links.md) och beskrivningen av [spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Leveransprestanda {#delivery-performances}
 
@@ -63,6 +63,6 @@ Du kan utföra specifika åtgärder när du stöter på leveransproblem:
 
 * [Bildvisningsproblem](../../production/using/image-display-issues.md)
 
-* [Problem med leveransresultat](../../delivery/using/delivery-performances.md)
+* [Problem med leveransresultat](delivery-performances.md)
 
 * [Temporära filproblem](../../production/using/temporary-files.md)  - endast  *lokala kunder*
