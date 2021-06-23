@@ -6,16 +6,16 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
 
 # RDBMS-specifika rekommendationer{#rdbms-specific-recommendations}
 
-För att du lättare ska kunna konfigurera underhållsplaner innehåller det här avsnittet rekommendationer/bästa praxis som är anpassade till de olika RDBMS-motorer som Adobe Campaign stöder. Detta är dock bara rekommendationer. Det är upp till er att anpassa dem efter era behov, i enlighet med era interna rutiner och begränsningar. Databasadministratören ansvarar för att skapa och genomföra dessa planer.
+I det här avsnittet beskrivs några rekommendationer och bästa metoder som är anpassade till de olika RDBMS-motorer som Adobe Campaign stöder, så att du enklare kan konfigurera underhållsplaner. Detta är dock bara rekommendationer. Det är upp till er att anpassa dem efter era behov, i enlighet med era interna rutiner och begränsningar. Din databasadministratör har ansvaret för att skapa och köra dessa planer.
 
 ## PostgreSQL {#postgresql}
 
@@ -36,74 +36,132 @@ För att du lättare ska kunna konfigurera underhållsplaner innehåller det hä
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. Om du kör följande kommando kan du identifiera stora tabeller och index:
+1. Du kan köra den här frågan för att identifiera stora tabeller och index:
 
    ```
-   select * from uvSpace;
+   SELECT * FROM uvSpace;
+   ```
+
+   Du kan också köra den här frågan om du vill se alla indexstorlekar tillsammans:
+
+   ```
+   SELECT
+      tablename,
+      sum(size_mbytes) AS "sizeMB_all",
+      (
+         SELECT sum(size_mbytes)
+         FROM uvspace
+         AS uv2
+         WHERE
+            INDEXNAME IS NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS "sizeMB_data",
+      (
+         SELECT sum(size_mbytes)
+         FROM uvspace 
+         AS uv2 
+         WHERE
+            INDEXNAME IS NOT NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS "sizeMB_index",
+      (
+         SELECT ROW_COUNT
+         FROM uvspace
+         AS uv2
+         WHERE
+            INDEXNAME IS NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS ROWS FROM uvspace AS uv1
+      GROUP BY tablename
+      ORDER BY 2 DESC
    ```
 
 ### Enkelt underhåll {#simple-maintenance}
 
-Under PostgreSQL är de vanliga kommandona som du kan använda **vakuum full** och **reindex**.
+I PostgreSQL kan du använda följande vanliga nyckelord:
 
-Här är ett typiskt exempel på en SQL-underhållsplan som ska utföras regelbundet med dessa två kommandon:
+* VACUUM (FULL, ANALYS, VERBOSE)
+* REINDEX
+
+Om du vill köra VACUUM-åtgärden, analysera och tida den kan du använda den här syntaxen:
 
 ```
-vacuum full nmsdelivery;
- reindex table nmsdelivery;
- 
- vacuum full nmsdeliverystat;
- reindex table nmsdeliverystat;
- 
- vacuum full xtkworkflow;
- reindex table xtkworkflow;
- 
- vacuum full xtkworkflowevent;
- reindex table xtkworkflowevent;
- 
- vacuum full xtkworkflowjob;
- reindex table xtkworkflowjob;
- 
- vacuum full xtkworkflowlog;
- reindex table xtkworkflowlog;
- 
- vacuum full xtkworkflowtask;
- reindex table xtkworkflowtask;
- 
- vacuum full xtkjoblog;
- reindex table xtkjoblog;
- 
- vacuum full xtkjob;
- reindex table xtkjob;
- 
- vacuum full nmsaddress;
- reindex table nmsaddress;
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) <table>;
+```
 
- vacuum full nmsdeliverypart;
- reindex table nmsdeliverypart;
- 
- vacuum full nmsmirrorpageinfo;
- reindex table nmsmirrorpageinfo;
+Vi rekommenderar att du inte utelämnar ANALYZE. I annat fall lämnas den tomma tabellen utan statistik. Orsaken är att en ny tabell skapas och den gamla tas bort. Därför ändras tabellens objekt-ID (OID), men ingen statistik beräknas. Det innebär att du omedelbart får prestandaproblem.
+
+Här är ett typiskt exempel på en SQL-underhållsplan som ska utföras regelbundet:
+
+```
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
+REINDEX TABLE nmsdelivery;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
+REINDEX TABLE nmsdeliverystat;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
+REINDEX TABLE xtkworkflow;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
+REINDEX TABLE xtkworkflowevent;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
+REINDEX TABLE xtkworkflowjob;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
+REINDEX TABLE xtkworkflowlog;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
+REINDEX TABLE xtkworkflowtask;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
+REINDEX TABLE xtkjoblog;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
+REINDEX TABLE xtkjob;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
+REINDEX TABLE nmsaddress;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
+REINDEX TABLE nmsdeliverypart;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
+REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe rekommenderar att du börjar med mindre tabeller: På så sätt har åtminstone en del av underhållet slutförts om processen misslyckas på stora tabeller (där risken för fel är störst).
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
->* Kommandona **vakuum** och **reindex** låser tabellen, vilket pausar vissa processer medan underhåll utförs.
->* För mycket stora tabeller (vanligtvis över 5 GB) kan **vakuumfullt** bli ganska ineffektivt och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YYYNmsBroadLogXx**.
->* Underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet (mer information finns i [det här avsnittet](../../workflow/using/architecture.md)). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* Programsatserna VACUUM och REINDEX låser tabellen, som pausar vissa processer medan underhåll utförs.
+>* För mycket stora tabeller (vanligtvis över 5 Gbit) kan VACUUM FULL-satsen bli ganska ineffektiv och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YYYNmsBroadLogXx**.
+>* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 
 >
 
 
 
-### Återskapar en databas {#rebuilding-a-database}
+### Återskapa en databas {#rebuilding-a-database}
 
-PostgreSQL erbjuder inte ett enkelt sätt att utföra en omgenerering av en tabell online eftersom **vakuumfullt** låser tabellen, vilket förhindrar normal produktion. Detta innebär att underhåll måste utföras när tabellen inte används. Du kan antingen:
+PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom VACUUM FULL-satsen låser tabellen, vilket förhindrar normal produktion. Detta innebär att underhåll måste utföras när tabellen inte används. Du kan antingen:
 
 * utföra underhåll när Adobe Campaign-plattformen stoppas,
-* stoppa de olika Adobe Campaign-undertjänster som kan tänkas skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
+* stoppa de olika Adobe Campaign-undertjänster som troligen kommer att skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
 
 Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera den DDL som krävs för att återskapa en tabell.
 
@@ -367,18 +425,18 @@ Kontakta databasadministratören för att få information om de procedurer som �
 Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan version kontaktar du databasadministratören för att få reda på mer om underhållsrutiner.
 
 1. Anslut först till Microsoft SQL Server Management Studio med administratörsbehörighet.
-1. Gå till mappen **[!UICONTROL Management > Maintenance Plans]**, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**
+1. Gå till mappen **[!UICONTROL Management > Maintenance Plans]**, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**.
 1. Klicka på **[!UICONTROL Next]** när den första sidan visas.
 1. Välj den typ av underhållsplan som du vill skapa (separata scheman för varje aktivitet eller enskilt schema för hela planen) och klicka sedan på knappen **[!UICONTROL Change...]**.
-1. I fönstret **[!UICONTROL Job schedule properties]** väljer du önskade körningsinställningar och klickar på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]** .
-1. Välj de underhållsåtgärder du vill utföra och klicka sedan på **[!UICONTROL Next]** .
+1. I fönstret **[!UICONTROL Job schedule properties]** väljer du önskade körningsinställningar och klickar på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]**.
+1. Välj de underhållsåtgärder du vill utföra och klicka sedan på **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
    >Vi rekommenderar att du utför åtminstone de underhållsåtgärder som visas nedan. Du kan också välja statistikuppdateringsuppgiften, även om den redan har utförts i arbetsflödet för databasrensning.
 
-1. I listrutan väljer du den databas där du vill köra **[!UICONTROL Database Check Integrity]**-aktiviteten.
-1. Markera databasen och klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]** .
+1. I listrutan väljer du den databas där du vill köra uppgiften **[!UICONTROL Database Check Integrity]**.
+1. Markera databasen och klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]**.
 1. Konfigurera den maximala storlek som databasen tilldelas och klicka sedan på **[!UICONTROL Next]**.
 
    >[!NOTE]
@@ -389,7 +447,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
    * Om indexfragmenteringsgraden är mellan 10 % och 40 % rekommenderas en omorganisering.
 
-      Välj vilka databaser och objekt (tabeller eller vyer) du vill ordna om och klicka sedan på **[!UICONTROL Next]** .
+      Välj vilka databaser och objekt (tabeller eller vyer) du vill ordna om och klicka sedan på **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
@@ -397,18 +455,18 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
-      Välj de alternativ som du vill använda för indexåterskapningsaktiviteten och klicka sedan på **[!UICONTROL Next]** .
+      Välj de alternativ som du vill använda för indexåterskapningsaktiviteten och klicka sedan på **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
-      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Markera alternativet **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
+      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Välj alternativet **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
 
-1. Välj de alternativ som du vill visa i aktivitetsrapporten och klicka sedan på **[!UICONTROL Next]** .
+1. Välj de alternativ som du vill visa i aktivitetsrapporten och klicka sedan på **[!UICONTROL Next]**.
 1. Kontrollera listan över uppgifter som har konfigurerats för underhållsplanen och klicka sedan på **[!UICONTROL Finish]**.
 
    En sammanfattning av underhållsplanen och statusvärdena för de olika stegen visas.
 
-1. När underhållsplanen är klar klickar du på **[!UICONTROL Close]** .
+1. När underhållsplanen är klar klickar du på **[!UICONTROL Close]**.
 1. Dubbelklicka på mappen **[!UICONTROL Management > Maintenance Plans]** i Microsoft SQL Server Explorer.
 1. Välj Adobe Campaign underhållsplan: de olika stegen beskrivs i ett arbetsflöde.
 
@@ -428,6 +486,6 @@ Med alternativet **WdbcOptions_TempDbName** kan du konfigurera en separat databa
 
 Det här alternativet kan användas om du vill att arbetsregister (t.ex. tabeller som skapas när ett arbetsflöde körs) ska skapas i en annan databas.
 
-När du anger alternativet &quot;tempdb.dbo.&quot; skapas arbetstabeller i standarddatabasen för Microsoft SQL Server. Databasadministratören måste tillåta skrivåtkomst till tempdb-databasen.
+När du anger alternativet &quot;tempdb.dbo&quot; skapas arbetsregistren i standarddatabasen för temporära Microsoft SQL Server. Databasadministratören måste tillåta skrivåtkomst till tempdb-databasen.
 
-Om alternativet är inställt används det på alla Microsoft SQL Server-databaser som är konfigurerade i Adobe Campaign (huvuddatabas och externa konton). Observera att om två externa konton delar samma server kan konflikter uppstå (eftersom tempdb blir unik). På samma sätt kan konflikter uppstå om två Campaign-instanser använder samma MSSQL-server om de använder samma tempdb.
+Om alternativet är inställt används det på alla Microsoft SQL Server-databaser som är konfigurerade i Adobe Campaign (huvuddatabas och externa konton). Observera att om två externa konton delar samma server kan konflikter uppstå (eftersom tempdb är unikt). På samma sätt kan konflikter uppstå om två Campaign-instanser använder samma MSSQL-server om de använder samma tempdb.
