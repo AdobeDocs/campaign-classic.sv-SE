@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Felsökning
-description: Felsökning
+title: Felsöka
+description: Felsöka
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
 
 ---
 
-# Felsökning{#troubleshooting}
+# Felsöka{#troubleshooting}
 
 Om din mobila enhet är ansluten till ett trådlöst nätverk och du inte får några meddelanden kontrollerar du att FCM-/APN-portarna inte blockeras av din brandvägg.
 
@@ -28,4 +28,4 @@ HTTP/2-anslutning: du måste tillåta kommunikation till och från följande ser
 
 >[!NOTE]
 >
->Mer information om de två anslutningarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+>Mer information om de två anslutningarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](configuring-the-mobile-application.md).
