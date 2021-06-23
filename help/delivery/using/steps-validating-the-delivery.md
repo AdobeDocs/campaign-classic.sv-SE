@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Så här gör du:
 
    Reglerna som används under analysen visas i [det här avsnittet](#validation-process-with-typologies). De tillgängliga valideringslägena beskrivs i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode).
 
-1. **Skicka korrektur**: I det här steget kan du styra innehåll, URL-adresser, personalisering osv. Läs mer i [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Skicka korrektur**: I det här steget kan du styra innehåll, URL-adresser, personalisering osv. Läs mer i [Skicka ett korrektur](steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
@@ -48,7 +48,7 @@ Analysen är den fas då målpopulationen beräknas och leveransinnehållet fär
 
    >[!NOTE]
    >
-   >Valideringsreglerna som används vid analysen beskrivs i avsnittet [Valideringsprocess med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   >Valideringsreglerna som används vid analysen beskrivs i avsnittet [Valideringsprocess med typologier](steps-validating-the-delivery.md#validation-process-with-typologies).
 
 1. Du kan när som helst stoppa analysen genom att klicka på **[!UICONTROL Stop]**.
 
@@ -92,12 +92,12 @@ På den här fliken finns följande alternativ:
 * **[!UICONTROL Label and code of the delivery]** : Alternativen i detta avsnitt används för att beräkna värdena för dessa fält under leveransanalysfasen. Fältet **[!UICONTROL Compute the execution folder during the delivery analysis]** beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
 * **[!UICONTROL Approval mode]** : I det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar. Valideringslägena visas i avsnittet [Ändra godkännandeläge](#changing-the-approval-mode).
 * **[!UICONTROL Prepare the delivery parts in the database]** : Med det här alternativet kan du förbättra resultatet för leveransanalysen. Mer information finns i [det här avsnittet](#improving-delivery-analysis).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde, vilket kan göra att du kan uppnå en avsevärd prestandaökning för personalisering. Mer information finns i [Optimera personalisering](../../delivery/using/personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde, vilket kan göra att du kan uppnå en avsevärd prestandaökning för personalisering. Mer information finns i [Optimera personalisering](personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du påbörja leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign programserverprocess (webbserver). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Med det här alternativet läggs SQL-frågeloggarna till i leveransjournalen under analysfasen.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv introduceras med taggen **&lt;%=**).
 
-### Förbättra leveransanalysens prestanda {#improving-delivery-analysis}
+### Förbättra resultatet av leveransanalysen {#improving-delivery-analysis}
 
 Om du vill påskynda leveransförberedelsen kan du kontrollera **[!UICONTROL Prepare the delivery parts in the database]**-alternativet innan du startar analysen.
 
@@ -131,8 +131,8 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 
 >[!NOTE]
 >
->* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
->* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+>* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](steps-validating-the-delivery.md#changing-the-approval-mode).
+>* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >
 
@@ -140,15 +140,15 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 
 Följ stegen nedan för att skicka ett bevis:
 
-1. Kontrollera att korrekturmålet har konfigurerats enligt beskrivningen i [Definiera ett specifikt korrekturmål](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. Kontrollera att korrekturmålet har konfigurerats enligt beskrivningen i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 1. Klicka på **[!UICONTROL Send a proof]** i det övre fältet i leveransguiden.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
-1. Starta meddelandeanalys. Se [Analysera leveransen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
-1. Du kan nu skicka leveransen (se [Skicka leveransen](../../delivery/using/steps-sending-the-delivery.md)).
+1. Starta meddelandeanalys. Se [Analysera leveransen](steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Du kan nu skicka leveransen (se [Skicka leveransen](steps-sending-the-delivery.md)).
 
-   När leveransen är skickad visas korrekturet i leveranslistan och skapas och numreras automatiskt. Den kan redigeras om du vill komma åt dess innehåll och egenskaper. Se denna [sida](../../delivery/using/about-delivery-monitoring.md) för mer information om detta.
+   När leveransen är skickad visas korrekturet i leveranslistan och skapas och numreras automatiskt. Den kan redigeras om du vill komma åt dess innehåll och egenskaper. Se denna [sida](about-delivery-monitoring.md) för mer information om detta.
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -173,7 +173,7 @@ På fliken **[!UICONTROL Advanced]** i leveransegenskaperna kan du definiera ege
 Följande alternativ är tillgängliga:
 
 * Det första alternativet gör att du kan behålla korrekturet dubblerar.
-* Med båda av följande alternativ kan du hålla mottagare som är på blockeringslista och adresser i karantän. Se beskrivningen av dessa alternativ för huvudmålet i [Anpassa undantagsinställningar](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Till skillnad från målet för en leverans, där dessa adresser exkluderas som standard, behålls de som standard som mål för ett korrektur.
+* Med båda av följande alternativ kan du hålla mottagare som är på blockeringslista och adresser i karantän. Se beskrivningen av dessa alternativ för huvudmålet i [Anpassa undantagsinställningar](steps-defining-the-target-population.md#customizing-exclusion-settings). Till skillnad från målet för en leverans, där dessa adresser exkluderas som standard, behålls de som standard som mål för ett korrektur.
 * Med alternativet **[!UICONTROL Keep the delivery code for the proof]** kan du ge korrekturet samma leveranskod som den som har definierats för den leverans som det hör till. Den här koden anges i det första steget i leveransguiden.
 * Som standard anges korrekturens ämne med &quot;Korrekturnr&quot;, där # är korrekturets nummer. Du kan ändra det här prefixet i fältet **[!UICONTROL Label prefix]**.
 
