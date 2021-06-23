@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.
-Det finns uttryckssymboler tillgängliga för e-post och för mer information om detta finns på [sidan](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+Det finns uttryckssymboler tillgängliga för e-post och för mer information om detta finns på [sidan](defining-the-email-content.md#inserting-emoticons).
 
 ## Lägga till en ny uttryckssymbol {#add-new-emoticon}
 
@@ -61,7 +61,7 @@ Din nya uttryckssymbol placeras automatiskt i butiken.
 
 1. Ta hänsyn till dina ändringar genom att koppla från och sedan ansluta igen från Adobe Campaign Classic. Om din nya uttryckssymbol fortfarande inte visas i popup-fönstret **[!UICONTROL Insert emoticon]** kanske du måste rensa cacheminnet. Mer information om detta hittar du i det här [avsnittet](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. Din nya uttryckssymbol finns nu i leveranserna i popup-fönstret **[!UICONTROL Insert emoticon]** i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns på den här [sidan](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+1. Din nya uttryckssymbol finns nu i leveranserna i popup-fönstret **[!UICONTROL Insert emoticon]** i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns på den här [sidan](defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 
