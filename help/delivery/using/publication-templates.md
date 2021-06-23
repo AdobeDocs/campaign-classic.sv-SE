@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Följande publiceringsalternativ är tillgängliga:
 
    >[!NOTE]
    >
-   >Mer information om generering av innehåll finns i [Skapa en innehållsinstans](../../delivery/using/using-a-content-template.md#creating-a-content-instance).
+   >Mer information om generering av innehåll finns i [Skapa en innehållsinstans](using-a-content-template.md#creating-a-content-instance).
 
 ### Leverans {#delivery}
 
@@ -95,13 +95,13 @@ På den här fliken kan du välja ett scenario för att starta en leverans direk
 
 >[!NOTE]
 >
->Ett exempel på hur leverans skapas baserat på ett innehåll finns i [Leverera en innehållsinstans](../../delivery/using/using-a-content-template.md#delivering-a-content-instance).
+>Ett exempel på hur leverans skapas baserat på ett innehåll finns i [Leverera en innehållsinstans](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregator {#aggregator}
 
 Genom att samla data från ett skript eller en frågelista kan du utöka XML-dokumentet med innehållsdata. Syftet är att komplettera viss information som länkar refererar till eller att lägga till element från databasen.
 
-### Generering av flera filer {#multi-file-generation}
+### Skapa flera filer samtidigt {#multi-file-generation}
 
 Om du vill aktivera flera filgenereringar väljer du alternativet **[!UICONTROL Multi-file generation]** i publikationsmodellen. Med det här alternativet kan du ange partitioneringstaggar i formatmallen för början av varje sida i utdatadokumentet. När innehållet genereras skapas en fil för varje partitioneringstagg som påträffas.
 
