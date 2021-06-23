@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 2%
@@ -28,7 +28,7 @@ I Adobe Campaign Classic hanteras **Leveransövervakning** av arbetsflödet **[!
 
 Leveranspaketet ger dig tillgång till:
 
-* Återgivningsrapporten [Inkorgen](../../delivery/using/inbox-rendering.md) som gör att du kan förhandsgranska meddelanden på större e-postklienter för att skanna innehåll och anseende.
+* Återgivningsrapporten [Inkorgen](inbox-rendering.md) som gör att du kan förhandsgranska meddelanden på större e-postklienter för att skanna innehåll och anseende.
 * Översikt över meddelandekvalitet (inkorg, skräppost).
 
 ## Övervakningsverktyg {#monitoring-tools}
@@ -41,22 +41,22 @@ Du kan även använda följande verktyg:
    * **[!UICONTROL Soft bounces]** ange anseende. Talet får inte vara högre än 10 % för någon ISP.
 
    Mer information finns i avsnittet [Leveransstatistik](../../reporting/using/global-reports.md#delivery-statistics).
-* Mer generellt ger [kontrollpanelen](../../delivery/using/about-delivery-monitoring.md) åtkomst till:
-   * [leveranssammanfattning](../../delivery/using/delivery-dashboard.md#delivery-summary), som visar hur detaljerad sändningen är och hur många meddelanden som ska skickas, bearbetas och skickas.
-   * Leveransloggarna och historiken [som visar vilket mål som har uteslutits och varför.](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
-   * [spårningsloggar](../../delivery/using/delivery-dashboard.md#tracking-logs) som visar spårningsinformation som öppningar och klick.
+* Mer generellt ger [kontrollpanelen](about-delivery-monitoring.md) åtkomst till:
+   * [leveranssammanfattning](delivery-dashboard.md#delivery-summary), som visar hur detaljerad sändningen är och hur många meddelanden som ska skickas, bearbetas och skickas.
+   * Leveransloggarna och historiken [som visar vilket mål som har uteslutits och varför.](delivery-dashboard.md#delivery-logs-and-history)
+   * [spårningsloggar](delivery-dashboard.md#tracking-logs) som visar spårningsinformation som öppningar och klick.
 
 ## Riktlinjer för övervakning {#monitoring-guidelines}
 
 Här följer ytterligare riktlinjer för leveransövervakning:
 
 * Kontrollera regelbundet [leveransflödet](../../reporting/using/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den stämmer överens med den ursprungliga konfigurationen.
-* Kontrollera att [återförsök](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) är rätt inställda (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
-* Kontrollera regelbundet att postlådan [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
-* Kontrollera varje leveransflöde som du når från [kontrollpanelen](../../delivery/using/delivery-dashboard.md) för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. &quot;flash sales&quot; ska levereras på några minuter, inte dagar).
-* När du använder [vågor](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
-* Kontrollera att antalet fel och nya [karantäner](../../delivery/using/understanding-quarantine-management.md) stämmer överens med andra leveranser.
-* Läs noga igenom [leveransloggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, antispam-regler osv.).
+* Kontrollera att [återförsök](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) är rätt inställda (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
+* Kontrollera regelbundet att postlådan [bounce](understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
+* Kontrollera varje leveransflöde som du når från [kontrollpanelen](delivery-dashboard.md) för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. &quot;flash sales&quot; ska levereras på några minuter, inte dagar).
+* När du använder [vågor](steps-sending-the-delivery.md#sending-using-multiple-waves) måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
+* Kontrollera att antalet fel och nya [karantäner](understanding-quarantine-management.md) stämmer överens med andra leveranser.
+* Läs noga igenom [leveransloggarna](delivery-dashboard.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, antispam-regler osv.).
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
