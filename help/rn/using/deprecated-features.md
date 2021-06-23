@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 94%
+source-wordcount: '1634'
+ht-degree: 99%
 
 ---
 
@@ -42,10 +42,10 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Ersättning</strong></td>
   </tr>
     <tr>
-  <td>Datakopplingen i Adobe Analytics<br></td>
-   <td><p>Från och med Campaign 21.1 är Adobe Analytics Data Connector föråldrat.</p>
-   <p>Om du använder den här kopplingen måste du anpassa implementeringen i enlighet med detta. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
-  <p><em>Måldatum för borttagning: 2022</em></p>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>Från och med Campaign 21.1.3 är Adobe Analytics Data Connector inaktuell.</p>
+   <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
+  <p><em>Datum för målborttagning: 1 mars 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -82,7 +82,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    <td><p>Faxkanalen är inte längre tillgänglig från och med Campaign 21.1.3. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a></p>
   <tr>
   <td>Demdex-domän<br></td>
-  <td><p> Från och med Campaign 21.1.3 är demodomänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inte längre tillgänglig. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
+  <td><p> Från och med Campaign version 21.1.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inaktuell. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
   </td>
   </td>
   </tr>
@@ -134,7 +134,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
 
 Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
 
-### Adobe Campaign version 20.2 {#compat-20-2-release}
+### Adobe Campaign version 20.2  {#compat-20-2-release}
 
 Från och med version 20.2 har äldre SMS-kopplingar blivit inaktuella. Se [avsnittet Inaktuella funktioner](#deprecated-features)
 
@@ -178,7 +178,7 @@ Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med
 Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande verktyg.
 
 * Java JDK 7. [Läs mer](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Library Office 3.5 / 4.3 / 5.x, utom när det är inbäddat i ett annat verktyg. [Läs mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5/4.3/5.x utom när det är inbäddat i ett annat verktyg. [Läs mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Databasmotorer {#dbe-eol}
 
@@ -220,7 +220,7 @@ Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtk
 
 **RDBMS-SERVER**
 
-Från och med vårutgåvan 19.1 är Adobe Campaign inte längre kompatibelt med följande RDBMS-servrar:
+Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande RDBMS-servrar:
 
 * Oracle 10GR2
 * PostgreSQL 9.0 till 9.3
@@ -230,7 +230,7 @@ Från och med vårutgåvan 19.1 är Adobe Campaign inte längre kompatibelt med 
 
 ### SMS-kopplingar {#sms-eol}
 
-Adobe Campaign är inte kompatibelt med följande SMS-anslutningar:
+Adobe Campaign är inte kompatibelt med följande SMS-servrar:
 
 * Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)
 * Sybase365 (SAP SMS 365)
