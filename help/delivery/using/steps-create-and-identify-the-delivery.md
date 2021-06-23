@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -30,7 +30,7 @@ En standardmall finns för varje kanal som du har installerat: direktreklam, e-p
 >
 >Vilka kanaler som erbjuds i listan beror på ditt licensavtal.
 
-Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov. Mer information om mallar finns i [det här avsnittet](../../delivery/using/about-templates.md).
+Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar så att de passar dina behov. Mer information om mallar finns i [det här avsnittet](about-templates.md).
 
 ## Identifiera leveransen {#identifying-the-delivery}
 
@@ -49,7 +49,7 @@ Du måste ange parametrar för att kunna identifiera leveransen. Så här gör d
 
 Leveransinnehållet är klart att konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
-* [Definiera e-postinnehållet](../../delivery/using/defining-the-email-content.md)
-* [Definiera SMS-innehåll](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [Definiera innehållet i direktutskick](../../delivery/using/defining-the-direct-mail-content.md)
-* [Push-meddelanden](../../delivery/using/about-mobile-app-channel.md)
+* [Definiera e-postinnehållet](defining-the-email-content.md)
+* [Definiera SMS-innehåll](sms-create.md#defining-the-sms-content)
+* [Definiera innehållet i direktutskick](defining-the-direct-mail-content.md)
+* [Push-meddelanden](about-mobile-app-channel.md)
