@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Det finns två möjliga fall:
 
 >[!NOTE]
 >
->Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Om mallar](../../delivery/using/about-templates.md).
+>Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Om mallar](about-templates.md).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 
@@ -54,7 +54,7 @@ När filen är markerad överförs den direkt till servern för att vara tillgä
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
-## Skapar en beräknad bifogad fil {#creating-a-calculated-attachment}
+## Skapa en beräknad bilaga {#creating-a-calculated-attachment}
 
 När du skapar en beräknad bilaga kan namnet på den bifogade filen beräknas under analys eller leverans av varje meddelande och kan bero på mottagaren. Den kan också personaliseras och konverteras till PDF.
 
@@ -90,7 +90,7 @@ Om den bifogade filen är en lokal fil väljer du alternativet: **[!UICONTROL Fi
 
 Filen är sedan tillgänglig på servern för att bifogas till de olika leveranser som skapas från den här mallen.
 
-### Bifoga ett anpassat meddelande {#attach-a-personalized-message}
+### Bifoga ett personligt meddelande {#attach-a-personalized-message}
 
 Med alternativet **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kan du välja en fil med anpassningsfält, till exempel efternamnet och förnamnet för den avsedda mottagaren.
 
