@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 1%
@@ -53,9 +53,9 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 
 Arbetsflödet för **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [listan över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](configuring-the-mobile-application.md).
 
-Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 ## Datasökväg {#data-path}
 
