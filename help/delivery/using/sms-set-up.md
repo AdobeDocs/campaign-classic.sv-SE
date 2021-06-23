@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -26,7 +26,7 @@ Om du vill skicka till en mobiltelefon behöver du:
 ## Skapa ett externt SMPP-konto {#creating-an-smpp-external-account}
 
 Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
-Mer information om SMS-protokoll och inställningar finns på den här [sidan](../../delivery/using/sms-protocol.md).
+Mer information om SMS-protokoll och inställningar finns på den här [sidan](sms-protocol.md).
 
 Följ stegen nedan för att göra detta:
 
@@ -42,7 +42,7 @@ Följ stegen nedan för att göra detta:
 
    >[!CAUTION]
    >
-   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]**-kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](../../delivery/using/unsupported-connector-migration.md).
+   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]**-kontakten. Mer information om hur du migrerar till den rekommenderade anslutningen finns på den här [sidan](unsupported-connector-migration.md).
 
 1. Med alternativet **[!UICONTROL Enable verbose SMPP traces in the log file]** kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att kunna felsöka anslutningen och jämföra med den trafik som leverantören ser.
 
@@ -80,7 +80,7 @@ Följ stegen nedan för att göra detta:
 
    Eftersom vissa leverantörer kräver att&quot;+&quot;-prefixet används, bör du kontakta din leverantör och föreslå att du aktiverar det här alternativet om det behövs.
 
-   Med kryssrutan **[!UICONTROL Enable TLS over SMPP]** kan du kryptera SMPP-trafik. Se denna [sida](../../delivery/using/sms-protocol.md) för mer information om detta.
+   Med kryssrutan **[!UICONTROL Enable TLS over SMPP]** kan du kryptera SMPP-trafik. Se denna [sida](sms-protocol.md) för mer information om detta.
 
 1. Om du konfigurerar en **[!UICONTROL Extended generic SMPP]**-anslutning kan du konfigurera automatiska svar.
 
@@ -143,7 +143,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
@@ -345,7 +345,7 @@ Stegen för att konfigurera ett externt konto med den utökade generiska SMPP-an
 
 ## Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i avsnittet [Om mallar](../../delivery/using/about-templates.md).
+Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i avsnittet [Om mallar](about-templates.md).
 
 Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen refereras.
 
