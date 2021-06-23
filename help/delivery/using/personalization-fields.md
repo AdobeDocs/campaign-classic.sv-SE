@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -75,7 +75,7 @@ Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och 
 
 ## Optimera personalisering {#optimizing-personalization}
 
-Ni kan optimera personaliseringen med ett dedikerat alternativ: **[!UICONTROL Prepare the personalization data with a workflow]**, som finns på fliken **[!UICONTROL Analysis]** i leveransegenskaperna. Mer information om hur du analyserar leveransen finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Ni kan optimera personaliseringen med ett dedikerat alternativ: **[!UICONTROL Prepare the personalization data with a workflow]**, som finns på fliken **[!UICONTROL Analysis]** i leveransegenskaperna. Mer information om hur du analyserar leveransen finns i [det här avsnittet](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i FDA.
 
@@ -102,7 +102,7 @@ När analysen är klar går du till arbetsflödet **[!UICONTROL Properties]** oc
 
 ![](assets/perso_optimization_temp_table.png)
 
-## Tidsgränsen för personaliseringsfasen är {#timing-out-personalization}
+## Tidsgränsen för personalisering har uppnåtts {#timing-out-personalization}
 
 Om du vill förbättra leveransskyddet kan du ange en tidsgräns för personaliseringsfasen.
 
@@ -116,9 +116,9 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Självstudievideo {#personalization-fields-video}
+## Videokurs {#personalization-fields-video}
 
-Lär dig hur du lägger till ett anpassningsfält på ämnesraden och innehållet i en e-postleverans.
+Lär dig hur du lägger till ett personaliseringsfält på ämnesraden och i innehållet i en e-postleverans.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
