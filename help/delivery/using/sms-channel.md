@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -21,7 +21,7 @@ Använd Adobe Campaign för att skicka personaliserade SMS-meddelanden.
 Innan du börjar skicka SMS:
 
 * Kontrollera att mottagarprofilerna innehåller minst en mobiltelefon i profilen.
-* Läs mer om Adobe Campaign [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md).
+* Läs mer om Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md).
 
 De viktigaste stegen för att skicka ett SMS är följande:
 
@@ -34,10 +34,10 @@ De viktigaste stegen för att skicka ett SMS är följande:
 
 Dessutom måste du känna till SMS-protokoll och inställningar. Gå igenom anslutningskonfigurationen mellan Adobe Campaign och en SMPP-leverantör i [det här dokumentet](sms-protocol.md)
 
-Global information om hur du skapar en leverans finns i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
 >I Adobe Campaign kan du även skicka meddelanden på mobilterminaler via alternativet **Adobe Campaign Mobile App Channel (NMAC)**.
 > 
->Mer information finns i [Komma igång med mobilappskanalen](../../delivery/using/about-mobile-app-channel.md).
+>Mer information finns i [Komma igång med mobilappskanalen](about-mobile-app-channel.md).
