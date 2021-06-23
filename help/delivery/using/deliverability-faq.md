@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -49,15 +49,15 @@ Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfun
    * Statusen **[!UICONTROL Denylisted]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
 
    * Statusen **[!UICONTROL Quarantined]** är ett resultat av ett mjukt eller hårt studsande.
-   Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
+   Mer information finns i [det här avsnittet](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Vad betyder de olika anledningarna till karantänfel?**
 
    Här följer tio möjliga orsaker: inte definierad, okänd av användare, ogiltig domän, avslagen på blockeringslista, ignorerat fel, ej tillgänglig, kontot inaktiverat, postlådan full, inte ansluten.
 
-   Mer information finns i [Om karantänhantering](../../delivery/using/understanding-quarantine-management.md).
+   Mer information finns i [Om karantänhantering](understanding-quarantine-management.md).
 
-## Tar bort från blockeringslista {#remove-from-denylist}
+## Ta bort från blockeringslista {#remove-from-denylist}
 
 * **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från denyisten så att jag kan börja skicka dem igen?**
 
