@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9703e9d5cf0dba91d3f38d265756bdae69267c28
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
@@ -164,7 +164,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <table>
 <tbody>
 <tr>
-<td>API för Salesforce-anslutning</td>
+<td>Kopplings-API för Salesforce</td>
 <td>
 <p>API-version 37</p>
 </td>
@@ -174,11 +174,6 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 <td>
 <p>API-version 21</p>
 <p>API-version 15</p>
-</td>
-</tr>
-<tr><td>Oracle On Demand-API</td>
-<td>
-<p>API för Webbtjänster v1.0</p>
 </td>
 </tr>
 <tr>
@@ -271,7 +266,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 
 ## Client Console {#ClientConsoleoperatingsystems}
 
-:varning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
+:warning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
 
 ### Operativsystem
 
