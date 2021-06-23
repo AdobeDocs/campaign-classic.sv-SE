@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
@@ -29,7 +29,7 @@ Välj önskad katalog i fältet **[!UICONTROL Folder]** eller klicka på ikonen 
 
 Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
-## Kör mallen {#executing-the-template}
+## Köra mallen {#executing-the-template}
 
 Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Om du vill göra det väljer du den mall som ska köras och högerklickar. Välj **[!UICONTROL Actions>Execute the delivery template...]**.
 
@@ -43,4 +43,4 @@ Den här åtgärden genererar en leverans i den mapp som är kopplad till mallen
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar en leverans finns i [Definiera e-postinnehållet](../../delivery/using/defining-the-email-content.md).
+>Mer information om hur du konfigurerar en leverans finns i [Definiera e-postinnehållet](defining-the-email-content.md).
