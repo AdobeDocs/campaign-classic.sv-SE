@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 5%
+source-wordcount: '889'
+ht-degree: 4%
 
 ---
 
@@ -47,27 +47,35 @@ Exempel:
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### Signaturmekanism
+### URL-signatur
 
-För att förbättra säkerheten har en ny signaturmekanism för att spåra länkar i e-postmeddelanden introducerats i version 19.1.4 (9032@3a9dc9c), som finns i version 19.1.4 (9032@3a9dc9c) och Campaign 20.2. Det här alternativet är aktiverat som standard för alla kunder.
+För att förbättra säkerheten har en signaturmekanism införts för att spåra länkar i e-postmeddelanden. Det finns i version 19.1.4 (9032@3a9dc9c) och Campaign 20.2. Den här funktionen är aktiverad som standard.
 
 >[!NOTE]
 >
->När användaren klickar på en felformaterad signerad URL returneras följande fel: &quot;Begärd URL &#39;.. &#39; kunde inte hittas.&quot;
+>När användaren klickar på en felformaterad URL returneras följande fel: &quot;Begärd URL &#39;..&#39; hittades inte.&quot;
 
-Från och med Campaign 20.2 och [!DNL Gold Standard] kan värdkunder och hybridkunder använda en förbättring för att inaktivera URL:er som genererats från tidigare byggen. Det här alternativet är inaktiverat som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
+Sedan Campaign 20.2 och [!DNL Gold Standard]-versionen kan du dessutom använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
 
-För att aktivera den här nya mekanismen måste lokala kunder följa dessa steg på alla Campaign-servrar:
+Om du kör [!DNL Gold Standard] 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
+
+Oavsett om ni kör Campaign lokalt eller i en hybridarkitektur måste ni kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signaturen.
+
+Om du kör Campaign i en hybridarkitektur måste du se till att den värdbaserade mellankällinstansen har uppgraderats enligt följande innan du aktiverar URL-signatur:
+* Före den lokala marknadsinstansen
+* Till samma version som den lokala marknadsinstansen eller till en något högre version
+
+I annat fall kan följande problem uppstå:
+* Innan mellankällinstansen uppgraderas skickas URL:er utan signatur via den här instansen.
+* När mellankällinstansen har uppgraderats och URL-signatur har aktiverats för båda instanserna, avvisas de URL:er som tidigare har skickats utan signatur. Orsaken är att en signatur begärs av de spårningsfiler som har tillhandahållits av marknadsinstansen.
+
+Om du vill inaktivera URL:er som har skapats i tidigare versioner följer du de här stegen på alla Campaign-servrar samtidigt:
 
 1. I serverkonfigurationsfilen (serverConf.xml) ändrar du **blockRedirectForUnsignedTrackingLink** till **true**.
 1. Starta om tjänsten **nlserver**.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
-Kunder som kör [!DNL Gold Standard] 19.1.4 kan få problem med push-meddelandeleveranser med hjälp av spårningslänk eller leveranser med ankartaggar. I så fall rekommenderar Adobe att du inaktiverar den nya signaturfunktionen för att spåra länkar:
-
-**Värdbaserade och hybridkunder** måste kontakta  [Customer ](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) Careto för att denna mekanism ska vara inaktiverad.
-
-**Lokala** kunder kan följa steget nedan:
+Om du vill aktivera URL-signering följer du de här stegen på alla Campaign-servrar samtidigt:
 
 1. I serverkonfigurationsfilen (serverConf.xml) ändrar du **signEmailLinks** till **false**.
 1. Starta om tjänsten **nlserver**.
