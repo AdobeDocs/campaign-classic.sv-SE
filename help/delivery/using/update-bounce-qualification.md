@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -45,18 +45,18 @@ Baserat på tidsramen för incidenten rekommenderas följande riktlinjer för fr
 * För Campaign-instanser med SMTP-studssvarsinformation i fältet **[!UICONTROL Error text]** i karantänlistan:
 
    * **Feltexten (karantänstext)** innehåller &quot;användarsökning lyckades men ingen användarpost hittades&quot; OCH  **feltexten (karantänstext)** innehåller &quot;support.apple.com&quot;
-   * **Uppdateringsstatus (@lastModified)** 2021-07:00:00
-   * **Uppdateringsstatus (@lastModified)** den 26/4 2021 01:00:00 PM
+   * **Uppdateringsstatus (@lastModified)** 2021 07:00:00-04-26
+   * **Uppdateringsstatus (@lastModified)** den 26/4021 01 :00:00 PM eller tidigare
 
 * För Campaign-instanser med regelinformation för inkommande e-post i fältet **[!UICONTROL Error text]** i karantänlistan:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-postdomänen (@domain)** är lika med icloud.com ELLER  **e-postdomänen (@domain)** lika med me.com ELLER  **e-postdomänen (@domain)** lika med mac.com
-   * **Uppdateringsstatus (@lastModified)** 2021-07:00:00
-   * **Uppdateringsstatus (@lastModified)** den 26/4 2021 01:00:00 PM
+   * **Uppdateringsstatus (@lastModified)** 2021 07:00:00-04-26
+   * **Uppdateringsstatus (@lastModified)** den 26/4021 01 :00:00 PM eller tidigare
 
 När du har en lista över berörda mottagare kan du antingen ange statusen **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
 
 **Relaterade ämnen:**
-* [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Kvalifikation av studsmeddelanden](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
+* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Kvalifikation av studsmeddelanden](understanding-delivery-failures.md#bounce-mail-qualification)
