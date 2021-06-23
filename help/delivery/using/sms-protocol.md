@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -52,11 +52,11 @@ Du måste skilja mellan bekräftelser (RESP PDU, en del av SMPP-protokollet) och
 
 Både bekräftelser och SR kan utlösa fel, och om man skiljer mellan dem blir det lättare att felsöka.
 
-### Information som medföljer ett SMS {#information-sms}
+### Information som medförs av ett sms {#information-sms}
 
 Ett SMS innehåller mer information än text. Här följer en lista över vad du kan förvänta dig i ett SMS:
 
-* Texten, som är begränsad till 140 byte, vilket innebär mellan 70 och 160 tecken beroende på kodningen. Mer information och begränsningar finns i [SMS-textkodning](../../delivery/using/sms-protocol.md#sms-text-encoding) nedan.
+* Texten, som är begränsad till 140 byte, vilket innebär mellan 70 och 160 tecken beroende på kodningen. Mer information och begränsningar finns i [SMS-textkodning](sms-protocol.md#sms-text-encoding) nedan.
 
 * En mottagaradress som ibland kallas `ADC` eller `MSISDN`. Det är numret på den mobil som kommer att ta emot SMS:et.
 
@@ -176,7 +176,7 @@ Anteckningsbara fält i en `SUBMIT_SM` PDU:
 
 * **registered_delivery**: anger om en SR begärs eller inte. Adobe Campaign anger alltid den här flaggan förutom för automatiska svar. För multipart-meddelanden är flaggan bara inställd för den första delen. Alla versioner har samma beteende.
 
-* **data_coding**: används för att ange den kodning som används i textfältet. Mer information finns i avsnittet [SMS-textkodning](../../delivery/using/sms-protocol.md#sms-text-encoding).
+* **data_coding**: används för att ange den kodning som används i textfältet. Mer information finns i avsnittet [SMS-textkodning](sms-protocol.md#sms-text-encoding).
 
 * **short_message**: texten i meddelandet. Om UDH används innehåller detta även UHD-huvudet.
 
@@ -208,7 +208,7 @@ De flesta fält har samma betydelse som motsvarande `SUBMIT_SM`. Här är en lis
 
 * **sm_class**: används för att avgöra om PDU:n är en MO eller en SR.
 
-* **short_message**: texten i meddelandet. För SR innehåller detta data som beskrivs i tillägg B till SMPP-protokollspecifikationen. Mer information finns i [SR error management](../../delivery/using/sms-protocol.md#sr-error-management).
+* **short_message**: texten i meddelandet. För SR innehåller detta data som beskrivs i tillägg B till SMPP-protokollspecifikationen. Mer information finns i [SR error management](sms-protocol.md#sr-error-management).
 
 Adobe Campaign kan läsa meddelande-ID i det valfria fältet `receipted_message_id` med viss konfiguration.
 
@@ -230,7 +230,7 @@ Den här PDU:n bekräftar att anslutningen lever.
 
 ### Multipart SMS (long SMS) {#multipart}
 
-Multipart SMS, eller lång SMS, är SMS som skickas i flera delar. På grund av tekniska begränsningar i mobilnätverksprotokollet kan ett SMS inte vara större än 140 byte, annars måste det delas. Läs avsnittet [SMS-textkodning](../../delivery/using/sms-protocol.md#sms-text-encoding) om du vill veta mer om hur många tecken som får plats i ett SMS.
+Multipart SMS, eller lång SMS, är SMS som skickas i flera delar. På grund av tekniska begränsningar i mobilnätverksprotokollet kan ett SMS inte vara större än 140 byte, annars måste det delas. Läs avsnittet [SMS-textkodning](sms-protocol.md#sms-text-encoding) om du vill veta mer om hur många tecken som får plats i ett SMS.
 
 Varje del av ett långt meddelande är ett individuellt SMS. Dessa delar är oberoende av varandra på nätet och har monterats av den mottagande mobiltelefonen. För att hantera återförsök och anslutningsproblem skickar Adobe Campaign dessa delar i omvänd ordning och begär en SR endast i den första delen av meddelandet, den sista som skickas. Eftersom mobiltelefonen bara visar ett meddelande när den första delen tas emot, kommer nya försök med ytterligare delar inte att skapa dubbletter på mobiltelefonen.
 
@@ -242,13 +242,13 @@ Det finns två sätt att skicka långt SMS:
 
 * **message_payload**: sättet att skicka hela det långa meddelandet i ett enda  `SUBMIT_SM PDU`. Leverantören måste då dela upp den, vilket innebär att det är omöjligt för Adobe Campaign att veta exakt hur många delar som har skickats. Vissa leverantörer kräver det här läget, men vi rekommenderar att du bara använder det om de inte stöder UDH.
 
-Mer information om protokoll och format finns i beskrivningen av fälten `esm_class`, `short_message` och `message_payload` i [SUBMIT_SM PDU](../../delivery/using/sms-protocol.md#information-pdu).
+Mer information om protokoll och format finns i beskrivningen av fälten `esm_class`, `short_message` och `message_payload` i [SUBMIT_SM PDU](sms-protocol.md#information-pdu).
 
-### Fästning och fönsterkontroll av dataflöde {#throughput-capping}
+### Plattor och fönsterrutor {#throughput-capping}
 
-De flesta leverantörer kräver en genomströmningsgräns för varje SMPP-anslutning. Detta kan uppnås genom att ange ett antal SMS i det externa kontot. Observera att genomströmningsbegränsning inträffar per anslutning. Den totala effektiva genomströmningen är gränsen per anslutning multiplicerad med det totala antalet anslutningar. Detta beskrivs i avsnittet [Samtidiga anslutningar](../../delivery/using/sms-protocol.md#connection-settings).
+De flesta leverantörer kräver en genomströmningsgräns för varje SMPP-anslutning. Detta kan uppnås genom att ange ett antal SMS i det externa kontot. Observera att genomströmningsbegränsning inträffar per anslutning. Den totala effektiva genomströmningen är gränsen per anslutning multiplicerad med det totala antalet anslutningar. Detta beskrivs i avsnittet [Samtidiga anslutningar](sms-protocol.md#connection-settings).
 
-För att uppnå maximal genomströmning måste du finjustera det maximala sändningsfönstret. Det sändande fönstret är det antal `SUBMIT_SM PDU`s som kan skickas utan att vänta på en `SUBMIT_SM_RESP`. Mer information finns i avsnittet [Skicka fönsterinställning](../../delivery/using/sms-protocol.md#throughput-timeouts).
+För att uppnå maximal genomströmning måste du finjustera det maximala sändningsfönstret. Det sändande fönstret är det antal `SUBMIT_SM PDU`s som kan skickas utan att vänta på en `SUBMIT_SM_RESP`. Mer information finns i avsnittet [Skicka fönsterinställning](sms-protocol.md#throughput-timeouts).
 
 ### SR och felhantering (&quot;Bilaga B&quot;) {#sr-error-management}
 
@@ -289,7 +289,7 @@ Felfältet innehåller den providerspecifika felkoden. Leverantören måste ge e
 
 Slutligen innehåller textfältet vanligtvis början av texten i MT. Detta ignoreras av Adobe Campaign och vissa leverantörer skickar inte det för att undvika PII-läckage och bandbreddsförbrukning i nätverket. Den kan användas under felsökning för att identifiera SR-matchning av ett test MT enklare genom att läsa det här fältet.
 
-### Exempel på SR-bearbetning i Adobe Campaign Classic Extended generisk SMPP {#sr-processing}
+### Exempel på SR-bearbetning i Adobe Campaign Classic Extended allmän SMPP {#sr-processing}
 
 I det här exemplet visas fallet med en implementering som följer rekommendationerna i tillägg B, standardvärden i det externa kontot och ett godkänt SMS MT.
 
@@ -354,7 +354,7 @@ Den största tillåtna storleken för ett meddelande beror på dess kodning. I t
 | Kodning | Vanlig data_coding | Meddelandestorlek (tecken) | Delstorlek för multipart-SMS | Tillgängliga tecken |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Grundläggande GSM7-teckenuppsättning + tillägg (utökade tecken tar 2 tecken) |
-| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varierar från telefon till telefon) |
 
 ## SMPP:s externa kontoparametrar {#SMPP-parameters-external}
@@ -367,7 +367,7 @@ Varje implementering av SMPP-protokollet har många variationer. För att förb�
 
 Det går att ange en gräns för hur många MTA-instanser som tillåts ansluta till SMPP-providern. När det här alternativet är markerat kan du ange hur många MTA som högst får användas.
 
-Det här alternativet ger bättre kontroll över antalet anslutningar, se [Samtidiga anslutningar](../../delivery/using/sms-protocol.md#connection-settings).
+Det här alternativet ger bättre kontroll över antalet anslutningar, se [Samtidiga anslutningar](sms-protocol.md#connection-settings).
 
 Om du anger ett värde som är högre än antalet MTA:er som körs, körs alla MTA:er som vanligt: det här alternativet är bara en gräns och kan inte ge ytterligare MTA.
 
@@ -377,7 +377,7 @@ Om du behöver kontrollera exakt antalet anslutningar, t.ex. leverantörskrav, b
 
 #### SMSC-implementeringsnamn {#smsc-implementation-name}
 
-Anger namnet på SMSC-implementeringen. Den ska anges med namnet på din leverantör. Kontakta administratören eller leveransgruppen om du vill veta vad du ska lägga till i det här fältet. Fältets roll beskrivs i [SR error management](../../delivery/using/sms-protocol.md#sr-error-management)-avsnittet.
+Anger namnet på SMSC-implementeringen. Den ska anges med namnet på din leverantör. Kontakta administratören eller leveransgruppen om du vill veta vad du ska lägga till i det här fältet. Fältets roll beskrivs i [SR error management](sms-protocol.md#sr-error-management)-avsnittet.
 
 #### Server {#server}
 
@@ -425,7 +425,7 @@ Den här inställningen dumpar all SMPP-trafik i loggfiler. Det krävs ofta att 
 
 I Adobe Campaign Classic finns loggutdata i MTA-loggen för MT-relaterad trafik och i SMS-loggen för MO- och SR-relaterad trafik.
 
-### Inställning för mottagarens anslutning {#receiver-connection}
+### Inställning för mottagaranslutning {#receiver-connection}
 
 Det här avsnittet är bara synligt i separerat **sändare+mottagare**-läge.
 
@@ -441,7 +441,7 @@ De här inställningarna gäller för mottagaren i läget sändare+mottagare. De
 
 ### SMPP-kanalinställningar {#smpp-channel-settings}
 
-#### Tillåt teckentransformering {#allow-character-transliteration}
+#### Tillåt teckenomläsning {#allow-character-transliteration}
 
 Translitterering är processen att hitta tecken som är likvärdiga med dem som saknas. Det franska specialtecknet&quot;ê&quot; (e med cirkumflex) saknas till exempel i GSM-kodningen, men det kan ersättas med&quot;e&quot; utan att det försämrar läsbarheten.
 
@@ -449,7 +449,7 @@ När den här rutan är avmarkerad misslyckas textkodningen om strängen inte ka
 
 När den här rutan är markerad försöker textkodningen att konvertera strängen till en ungefärlig version i stället för att misslyckas. Om vissa tecken inte har någon motsvarighet i målkodningen kommer textkodningen att misslyckas.
 
-Se [Definiera en specifik mappning av kodningsinställningen](../../delivery/using/sms-protocol.md#SMSC-specifics) för en mer allmän förklaring av kodningsprocessen.
+Se [Definiera en specifik mappning av kodningsinställningen](sms-protocol.md#SMSC-specifics) för en mer allmän förklaring av kodningsprocessen.
 
 #### Lagra inkommande MO i databasen {#incoming-mo-storing}
 
@@ -497,7 +497,7 @@ Det här fältet överförs som det är i fältet `service_type` i `SUBMIT_SM PD
 
 Dessa inställningar styr alla timingaspekter av SMPP-kanalen. Vissa leverantörer kräver mycket exakt kontroll över meddelandehastighet, fönster och tidsinställningar för nya försök. Dessa inställningar bör anges till värden som matchar leverantörens kapacitet och villkoren som anges i deras kontrakt.
 
-#### Skickar fönster {#sending-window}
+#### Skicka fönster {#sending-window}
 
 Fönstret är det antal `SUBMIT_SM PDU`s som kan skickas utan att vänta på en matchande `SUBMIT_SM_RESP`.
 
@@ -531,7 +531,7 @@ Det rekommenderas i allmänhet att denna inställning hålls under 1000, efterso
 
 När TCP-anslutningen bryts väntar anslutningen i så många sekunder innan ett anslutningsförsök görs.
 
-#### Förfallotid för MT {#expiration-period}
+#### MT:s förfalloperiod {#expiration-period}
 
 Timeout mellan `SUBMIT_SM` och dess matchande `SUBMIT_SM_RESP`. Om `RESP` inte tas emot i tid, kommer meddelandet att betraktas som misslyckat och den globala återförsöksprincipen för MTA gäller.
 
@@ -549,7 +549,7 @@ Dessa inställningar är avancerade inställningar som anpassar Adobe Campaign-a
 
 **Definiera en specifik mappning av kodningar**
 
-Mer information om textkodning finns i avsnittet [SMS-textkodning](../../delivery/using/sms-protocol.md#sms-text-encoding).
+Mer information om textkodning finns i avsnittet [SMS-textkodning](sms-protocol.md#sms-text-encoding).
 
 Med den här inställningen kan du definiera en anpassad kodmappning, som skiljer sig från specifikationen. Du kan deklarera en lista med kodningar tillsammans med deras `data_coding`-värde.
 
@@ -576,7 +576,7 @@ Om meddelandet inte kan kodas i GSM kodas det i UCS-2 och ställs in `data_codin
 
 Om alternativet inte är markerat delas lång SMS upp av MTA och skickas i flera `SUBMIT_SM PDU`s med UDH. Meddelandet kommer att disponeras om av mobiltelefonen efter UDH-data.
 
-När det här alternativet är markerat skickas lång SMS i en SUBMIT_SM PDU, vilket placerar texten i det valfria fältet message_payload. Mer information om detta finns i [SMPP-specifikationen](../../delivery/using/sms-protocol.md#ACS-SMPP-connector).
+När det här alternativet är markerat skickas lång SMS i en SUBMIT_SM PDU, vilket placerar texten i det valfria fältet message_payload. Mer information om detta finns i [SMPP-specifikationen](sms-protocol.md#ACS-SMPP-connector).
 
 Om den här funktionen är aktiverad kan Adobe Campaign inte räkna SMS-delar individuellt: alla meddelanden räknas som skickade i en del.
 
@@ -602,7 +602,7 @@ Du kan välja mellan tre olika värden för certifikatverifieringen:
 * Hoppa över verifieringen av värdnamnet.
 * Hoppa över certifikatverifieringen.
 
-#### Bind TON/NPI {#bind-ton-npi}
+#### Bindning TON/NPI {#bind-ton-npi}
 
 TON (Number Type of Number) och NPI (Numbering Plan Indicator) beskrivs i avsnitt 5.2.5 i [SMPP 3.4-specifikationen](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (sidan 117). Dessa värden ska ställas in efter vad providern behöver.
 
@@ -640,7 +640,7 @@ Om du ställer in det här fältet på 1 kommer kopplingen alltid att svara &quo
 
 #### Extraheringsregion för ID i SR {#regex-extraction}
 
-SR-formatet används inte strikt av SMPP-protokollspecifikationen. Det är bara en rekommendation som beskrivs i [Bilaga B](../../delivery/using/sms-protocol.md#sr-error-management) (sidan 167) i specifikationen. Vissa SMPP-implementerare formaterar det här fältet annorlunda, så Adobe Campaign behöver ett sätt att extrahera rätt fält.
+SR-formatet används inte strikt av SMPP-protokollspecifikationen. Det är bara en rekommendation som beskrivs i [Bilaga B](sms-protocol.md#sr-error-management) (sidan 167) i specifikationen. Vissa SMPP-implementerare formaterar det här fältet annorlunda, så Adobe Campaign behöver ett sätt att extrahera rätt fält.
 
 Som standard hämtas upp till 10 alfanumeriska tecken efter `id:`.
 
@@ -650,11 +650,11 @@ När du justerar den här inställningen måste du ta med så mycket kontext som
 
 Om det inte finns tillräckligt med sammanhang i regionen kan det medföra ett litet säkerhetsfel: det faktiska innehållet i meddelandet kan inkluderas i meddelandet. Om du bara matchar ett specifikt ID-format utan kontext, t.ex. ett UUID, kan det bero på att det faktiska textinnehållet parsas, t.ex. ett UUID som är inbäddat i textfältet, i stället för ID:t.
 
-#### Regex används för att avgöra status för lyckat/fel {#regex-applied}
+#### Regex används för att fastställa status för lyckat/fel {#regex-applied}
 
 När meddelanden med en okänd kombination av stat/fel-fält påträffas, används dessa regex i statusfältet för att avgöra om SR lyckades eller inte. SR med statusvärden som inte matchar någon av dessa regexter ignoreras.
 
-Som standard anger du värden som börjar med `DELIV`, t.ex. `DELIVRD` i [Bilaga B](../../delivery/using/sms-protocol.md#sr-error-management) kommer att betraktas som korrekt levererad och alla statusvärden som matchar fel, t.ex. `REJECTED`, `UNDELIV` betraktas som fel.
+Som standard anger du värden som börjar med `DELIV`, t.ex. `DELIVRD` i [Bilaga B](sms-protocol.md#sr-error-management) kommer att betraktas som korrekt levererad och alla statusvärden som matchar fel, t.ex. `REJECTED`, `UNDELIV` betraktas som fel.
 
 #### ID-format i MT-bekräftelse {#id-format-mt}
 
@@ -712,7 +712,7 @@ Tillåter att en anpassad TLV läggs till. Det här fältet anger taggdelen. Vä
 
 Med den här inställningen kan du bara lägga till ett TLV-alternativ per meddelande.
 
-### Automatiskt svar skickat till MO{#automatic-reply}
+### Automatiskt svar skickat till MO {#automatic-reply}
 
 >[!IMPORTANT]
 >
@@ -738,7 +738,7 @@ Alla poster i tabellen bearbetas i den angivna ordningen tills en regel matchar.
 
 Vissa parametrar kan anges per leveransmall.
 
-### Från fältet {#from-field}
+### Från fält {#from-field}
 
 Det här fältet är valfritt. Det tillåter åsidosättande av avsändaradress (oADC). Innehållet i det här fältet placeras i fältet `source_addr` i `SUBMIT_SM PDU`.
 
@@ -852,7 +852,7 @@ Detta steg är nödvändigt vid anslutning till en leverantör som inte var ansl
 
 Kontrollera att `BIND_* PDUs` har skickats korrekt. Det viktigaste att kontrollera är att providern alltid returnerar lyckad `BIND_*_RESP PDUs` (command_status = 0).
 
-Kontrollera att det inte finns för många `BIND_* PDU`s. Om det finns för många av dem kan det tyda på att anslutningen är instabil. Mer information finns i avsnittet [Problem med instabila anslutningar](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+Kontrollera att det inte finns för många `BIND_* PDU`s. Om det finns för många av dem kan det tyda på att anslutningen är instabil. Mer information finns i avsnittet [Problem med instabila anslutningar](sms-protocol.md#issues-unstable-connection).
 
 #### INQUIRE_LINK {#enquire-link-pdus}
 
