@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -40,7 +40,7 @@ Komplettera:
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-## God praxis {#best-practices}
+## Bästa praxis {#best-practices}
 
 Vid borttagning av dubbletter behandlas inkommande flöden separat. Om till exempel mottagare A hittas i resultatet av fråga 1 och i resultatet av fråga 2, kommer de inte att dedupliceras.
 
@@ -107,7 +107,7 @@ Om du vill konfigurera en borttagning av dubbletter anger du dess etikett, metod
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Exempel: Identifiera dubbletterna före en leverans {#example--identify-the-duplicates-before-a-delivery}
+## Exempel: Identifiera dubbletter före leverans {#example--identify-the-duplicates-before-a-delivery}
 
 I följande exempel gäller borttagningen av dubbletter kombinationen av tre frågor.
 
