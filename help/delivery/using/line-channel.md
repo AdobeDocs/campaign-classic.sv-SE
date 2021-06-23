@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Så här skapar du din [!DNL LINE]-tjänst:
 
 1. Klicka på **[!UICONTROL Save]**.
 
-Mer information om prenumerationer och tjänster finns i [Hantera prenumerationer](../../delivery/using/managing-subscriptions.md).
+Mer information om prenumerationer och tjänster finns i [Hantera prenumerationer](managing-subscriptions.md).
 
 ### Konfigurera externt LINE-konto {#configure-line-external}
 
@@ -103,13 +103,13 @@ Om du vill skapa en [!DNL LINE]-leverans måste du följa dessa steg:
 
    ![](assets/line_message_01.png)
 
-1. Identifiera leveransen med en **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** och **[!UICONTROL Description]**. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** och **[!UICONTROL Description]**. Mer information om detta finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 
 1. Klicka på **[!UICONTROL Continue]** för att skapa leveransen.
 
 1. Välj **[!UICONTROL To]** i leveransredigeraren för att ange [!DNL LINE]-leveransens mottagare som mål. Målinriktning utförs på **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-   Mer information finns i [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
+   Mer information finns i [Identifiera målpopulationer](steps-defining-the-target-population.md).
 
    ![](assets/line_message_08.png)
 
@@ -131,7 +131,7 @@ Om du vill skapa en [!DNL LINE]-leverans måste du följa dessa steg:
 
 1. När leveransen har skapats och konfigurerats på rätt sätt kan du skicka den till det mål som definierades tidigare.
 
-   Mer information om hur du skickar en leverans finns i [Skicka meddelanden](../../delivery/using/sending-messages.md).
+   Mer information om hur du skickar en leverans finns i [Skicka meddelanden](sending-messages.md).
 
 1. När du har skickat meddelandet kan du visa rapporten och mäta hur effektiv leveransen är.
 
@@ -147,7 +147,7 @@ Du kan välja mellan tre meddelandetyper:
 * [Bild och länk](#configuring-an-image-and-link-delivery)
 * [Videomeddelande](#configuring-a-video-message-delivery)
 
-### Konfigurera textmeddelandeleverans {#configuring-a-text-message-delivery}
+### Konfigurera leverans av textmeddelande {#configuring-a-text-message-delivery}
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ En **[!UICONTROL Text message]** [!DNL LINE]-leverans är ett meddelande som ski
 
 ![](assets/line_message_02.png)
 
-Konfigurationen för den här meddelandetypen liknar konfigurationen för **[!UICONTROL Text]** i ett e-postmeddelande. Mer information finns på den här [sidan](../../delivery/using/defining-the-email-content.md#message-content).
+Konfigurationen för den här meddelandetypen liknar konfigurationen för **[!UICONTROL Text]** i ett e-postmeddelande. Mer information finns på den här [sidan](defining-the-email-content.md#message-content).
 
 ### Konfigurera en bild- och länkleverans {#configuring-an-image-and-link-delivery}
 
@@ -199,7 +199,7 @@ Du kan använda:
 
    ![](assets/line_message_05.png)
 
-### Konfigurera leverans av videomeddelande {#configuring-a-video-message-delivery}
+### Konfigurera leverans av videomeddelanden {#configuring-a-video-message-delivery}
 
 En **[!UICONTROL Video message]** [!DNL LINE]-leverans är ett meddelande som skickas till mottagare i form av en video som kan innehålla en URL.
 
@@ -225,7 +225,7 @@ För [!DNL LINE]-tjänstrapporter öppnar du menyn **[!UICONTROL Profiles and Ta
 
 ![](assets/line_reports.png)
 
-## Exempel: skapa och skicka ett anpassat LINE-meddelande {#example--create-and-send-a-personalized-line-message}
+## Exempel: skapa och skicka ett personligt LINE-meddelande {#example--create-and-send-a-personalized-line-message}
 
 I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild som innehåller data som ska anpassas efter mottagaren.
 
@@ -239,7 +239,7 @@ I det här exemplet ska vi skapa och konfigurera ett textmeddelande och en bild 
 
 1. Välj målpopulation i konfigurationsfönstret för leveransen.
 
-   Mer information finns i [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
+   Mer information finns i [Identifiera målpopulationer](steps-defining-the-target-population.md).
 
    ![](assets/line_usecase_02.png)
 
