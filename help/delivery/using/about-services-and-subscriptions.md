@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -15,9 +15,9 @@ ht-degree: 8%
 
 # Om tjänster och prenumerationer{#about-services-and-subscriptions}
 
-Med Adobe Campaign kan du skapa och administrera informationstjänster som nyhetsbrev och hantera prenumerationer på dessa tjänster. Flera tjänster kan definieras parallellt, till exempel: särskilda nyhetsbrev för vissa produktkategorier, teman eller områden på en webbplats, prenumerationer på olika typer av varningsmeddelanden och meddelanden i realtid. Se [Hantera prenumerationer](../../delivery/using/managing-subscriptions.md).
+Med Adobe Campaign kan du skapa och administrera informationstjänster som nyhetsbrev och hantera prenumerationer på dessa tjänster. Flera tjänster kan definieras parallellt, till exempel: särskilda nyhetsbrev för vissa produktkategorier, teman eller områden på en webbplats, prenumerationer på olika typer av varningsmeddelanden och meddelanden i realtid. Se [Hantera prenumerationer](managing-subscriptions.md).
 
-Du kan också göra det möjligt för leveransmottagarna att dela dem med medlemmar i deras sociala eller professionella nätverk. Om du vill göra det infogar du länkarna i leveransen. Du kan sedan följa upp denna delningsprocess samt antalet besök på de berörda sidorna. Mer information finns i [Viral and social marketing](../../delivery/using/viral-and-social-marketing.md).
+Du kan också göra det möjligt för leveransmottagarna att dela dem med medlemmar i deras sociala eller professionella nätverk. Om du vill göra det infogar du länkarna i leveransen. Du kan sedan följa upp denna delningsprocess samt antalet besök på de berörda sidorna. Mer information finns i [Viral and social marketing](viral-and-social-marketing.md).
 
 >[!NOTE]
 >
