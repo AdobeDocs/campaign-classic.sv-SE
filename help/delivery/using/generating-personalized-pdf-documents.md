@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Följande tillägg stöds: &quot;.docx&quot;, &quot;.doc&quot; och &quot;.odt&qu
 
 För att personalisera dina dokument finns samma JavaScript-funktioner som för e-postpersonalisering.
 
-Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](../../delivery/using/attaching-files.md).
+Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](attaching-files.md).
 
 Exempel på en anpassning av en fakturarubrik:
 
