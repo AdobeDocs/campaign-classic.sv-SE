@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -37,7 +37,7 @@ SpamAssassin utnyttjar en mängd olika tekniker för skräppostavkänning, bland
 
 När du har skapat din e-postleverans och definierat innehållet följer du stegen nedan för att utvärdera riskerna.
 
-Mer information om hur du skapar och utformar en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md).
+Mer information om hur du skapar och utformar en leverans finns i [det här avsnittet](about-email-channel.md).
 
 1. Gå till fliken **[!UICONTROL Preview]**.
 1. Välj en mottagare om du vill förhandsgranska leveransen.
