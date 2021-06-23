@@ -3,20 +3,22 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 55%
+source-wordcount: '262'
+ht-degree: 48%
 
 ---
 
-# Campaign Classic v7-dokumentation {#campaign-classic-documentation}
+# Dokumentation för Campaign Classic v7 {#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Nyheter
 
 * **[Juniversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
+
+* **[Frågor och ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> svar om Apples integritetsskyddHitta den första vägledningen som svar på Apples meddelande om iOS 15
 
 * **[Ta bort felaktiga hårda ](delivery/using/update-bounce-qualification.md)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
 
@@ -25,9 +27,6 @@ ht-degree: 55%
 * **[Skydda era Campaign-](technotes/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform
 
 * **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integreringDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
-
-* **[Få support](support.md)**<br/>
-Få åtkomst till vanliga frågor och svar, bästa praxis, hjälpresurser och begäran om hjälp
 
 [Fler uppdateringar](/help/rn/using/documentation-updates.md)
 
