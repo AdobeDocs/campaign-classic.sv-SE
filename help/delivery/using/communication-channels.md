@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 11%
@@ -21,18 +21,18 @@ De viktigaste funktionerna är målinriktning, definition och personalisering av
 
 >[!NOTE]
 >
->Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Läs mer i [det här avsnittet](../../delivery/using/about-deliverability.md).
+>Adobe Campaign har en uppsättning verktyg för att övervaka leveransen och optimera e-postutskick. Läs mer i [det här avsnittet](about-deliverability.md).
 
 Leveransprocessen kan automatiseras genom att man förbereder en leverans och/eller skickar den i ett arbetsflöde. Mer information om aktiviteter av leveranstyp i arbetsflöden finns i [det här avsnittet](../../workflow/using/about-action-activities.md).
 
 Adobe Campaign erbjuder följande leveranskanaler:
 
-1. **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. Mer information finns i [Om e-postkanal](../../delivery/using/about-email-channel.md).
-1. **Direktpostkanal**: Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen. Mer information finns i [Om direktmeddelandekanal](../../delivery/using/about-direct-mail-channel.md).
-1. **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserade SMS- eller LINE-meddelanden till målpopulationen. Se [SMS-kanal](../../delivery/using/sms-channel.md).
-1. **Mobil programkanal**: mobilappsleveranser gör att du kan skicka meddelanden till iOS- och Android-system. Se kapitlet [Mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
+1. **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. Mer information finns i [Om e-postkanal](about-email-channel.md).
+1. **Direktpostkanal**: Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen. Mer information finns i [Om direktmeddelandekanal](about-direct-mail-channel.md).
+1. **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserade SMS- eller LINE-meddelanden till målpopulationen. Se [SMS-kanal](sms-channel.md).
+1. **Mobil programkanal**: mobilappsleveranser gör att du kan skicka meddelanden till iOS- och Android-system. Se kapitlet [Mobilappskanal](about-mobile-app-channel.md).
 
-   Andra kanaler beskrivs på [den här sidan](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels).
+   Andra kanaler beskrivs på [den här sidan](steps-about-delivery-creation-steps.md#other-channels).
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Externa konton konfigureras via noden **[!UICONTROL Administration > Platform > 
 
 ## E-postleveranser {#email-deliveries}
 
-[E-postkanalen](../../delivery/using/about-email-channel.md) är en av huvudkanalerna i Adobe Campaign, vilket gör att du kan schemalägga och skicka personaliserade e-postmeddelanden till specifika mål.
+[E-postkanalen](about-email-channel.md) är en av huvudkanalerna i Adobe Campaign, vilket gör att du kan schemalägga och skicka personaliserade e-postmeddelanden till specifika mål.
 
 Du kan skicka olika typer av e-postmeddelanden:
 
@@ -57,13 +57,13 @@ Du kan skicka olika typer av e-postmeddelanden:
 * Återkommande e-postmeddelanden: i en kampanj skicka samma e-postmeddelande regelbundet och sammanställa varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. Mer information finns i [Återkommande leveranser](../../workflow/using/recurring-delivery.md).
 * Transactional emails: enhetliga e-postmeddelanden som triggas utifrån kundernas beteende. Se [Transactional messaging](../../message-center/using/about-transactional-messaging.md).
 
-Om du vill veta mer om leveransanvändning och rekommendationer kan du läsa Campaign [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md).
+Om du vill veta mer om leveransanvändning och rekommendationer kan du läsa Campaign [Bästa praxis för leverans](delivery-best-practices.md).
 
 Mer information om olika typer av leveranser finns i [det här avsnittet](#types-of-deliveries).
 
 ## Mobila leveranser {#mobile-deliveries}
 
-Med Adobe Campaign kan du leverera [SMS](../../delivery/using/sms-channel.md) och [LINE](../../delivery/using/line-channel.md)-meddelanden på mobiler.
+Med Adobe Campaign kan du leverera [SMS](sms-channel.md) och [LINE](line-channel.md)-meddelanden på mobiler.
 
 För SMS-meddelanden kan du skapa, ändra och anpassa meddelanden endast i textformat. Du kan även förhandsgranska dina SMS-meddelanden innan de skickas.
 
@@ -76,17 +76,17 @@ För att kunna leverera SMS- eller LINE-meddelanden till en mobiltelefon behöve
 
 ## Push-meddelanden {#push-notifications}
 
-Med Adobe Campaign kan du skicka personaliserade och segmenterade [push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på iOS- och Android-mobilenheter via dedikerade appar. När konfigurations- och integrationsstegen är klara kan iOS- och Android-leveranser skapas och skickas. Du kan också utforma avancerade meddelanden med bilder eller videoklipp.
+Med Adobe Campaign kan du skicka personaliserade och segmenterade [push-meddelanden](about-mobile-app-channel.md) på iOS- och Android-mobilenheter via dedikerade appar. När konfigurations- och integrationsstegen är klara kan iOS- och Android-leveranser skapas och skickas. Du kan också utforma avancerade meddelanden med bilder eller videoklipp.
 
 ## Direktmeddelande {#direct-mail}
 
-[Direktmeddelanden är en offlinekanal som gör att du kan anpassa och generera den fil som leverantören av direktmeddelanden behöver.  ](../../delivery/using/about-direct-mail-channel.md) Det ger dig möjligheten att blanda online- och offline-kanaler i kundresorna.
+[Direktmeddelanden är en offlinekanal som gör att du kan anpassa och generera den fil som leverantören av direktmeddelanden behöver.  ](about-direct-mail-channel.md) Det ger dig möjligheten att blanda online- och offline-kanaler i kundresorna.
 
 Med onlinekanaler kan du skapa meddelanden (e-post, SMS, leveransmeddelanden för mobilappar etc.)  och skicka dem till din målgrupp direkt från Adobe Campaign.  Med offlinekanaler fungerar det annorlunda.  När du förbereder ett direktutskick genererar Adobe Campaign en fil som innehåller samtliga målprofiler och den valda kontaktinformationen (exempelvis postadress).  Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.
 
 ## Andra kanaler {#other-channels}
 
-Adobe Campaign erbjuder en mall för telefonleverans som används för att skapa externa leveranser. Om du använder den här kanalen måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct mail channel](../../delivery/using/about-direct-mail-channel.md).
+Adobe Campaign erbjuder en mall för telefonleverans som används för att skapa externa leveranser. Om du använder den här kanalen måste du konfigurera dedikerade metoder för att bearbeta utdatafiler. Konfigurationsstegen är desamma som för [Direct mail channel](about-direct-mail-channel.md).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Den här kanalen är avsedd endast för beskrivande syften, till exempel för at
 
 Det finns tre typer av leveransobjekt i Campaign:
 
-### Enkel leverans {#single-delivery}
+### Enskild leverans {#single-delivery}
 
 En **leverans** är ett fristående leveransobjekt som körs en gång. Den kan dupliceras, förberedas igen, men så länge den är i det slutliga tillståndet (avbryts, stoppas, slutförd) kan den inte återanvändas.
 
