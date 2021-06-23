@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 13%
+source-wordcount: '582'
+ht-degree: 10%
 
 ---
 
@@ -21,10 +21,17 @@ Spårning gäller för meddelanden, men med webbspårning kan du övervaka hur m
 
 >[!NOTE]
 >
->Länkarna i e-postinnehåll som innehåller personalisering måste spåras med specifik syntax. Mer information om hur du lägger till länkar i e-postmeddelanden som kan anpassas och som stöder spårning finns i [det här avsnittet](../../delivery/using/tracking-personalized-links.md).
+>Länkarna i e-postinnehåll som innehåller personalisering måste spåras med specifik syntax. Mer information om hur du lägger till länkar i e-postmeddelanden som kan anpassas och som stöder spårning finns i [det här avsnittet](tracking-personalized-links.md).
 
+Vi rekommenderar att du omsluter URL:er i avgränsare på fliken **[!UICONTROL Text content]** innan du använder spårningsformeln. De URL-avgränsare som du anger på den här fliken används av Adobe Campaign för att identifiera URL:er i teckensträngar. Du kan använda dessa par med avgränsare:
+* Parenteser ( )
+* Hakparenteser [ ]
+* Klammerparenteser {}
 
-
+I det här exemplet följs URL:en https://www.adobe.com av ett semikolon (;). Halvkolonet kan tolkas av mottagarens e-postklienter som en del av URL:en. Därför kan länken brytas. För att undvika det här problemet kan du omge URL-adressen i avgränsare på något av följande sätt:
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att anpassa hur URL-adresser spåras:
 
