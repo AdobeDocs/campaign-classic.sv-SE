@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Skapa meddelanden för Android{#create-notificaations-android}
 
-Använd Adobe Campaign för att skicka push-meddelanden på Android-enheter. Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+Använd Adobe Campaign för att skicka push-meddelanden på Android-enheter. Globala koncept för leveransskapande beskrivs i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 Börja med att skapa en ny leverans.
 
@@ -70,7 +70,7 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 >[!NOTE]
 >
->Ytterligare alternativ för meddelanden är bara tillgängliga med HTTP v1 API-konfiguration. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+>Ytterligare alternativ för meddelanden är bara tillgängliga med HTTP v1 API-konfiguration. Mer information om detta hittar du i det här [avsnittet](configuring-the-mobile-application-android.md#android-service-httpv1).
 
 ![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande för Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
