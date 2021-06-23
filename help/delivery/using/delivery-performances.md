@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -19,9 +19,9 @@ Vi rekommenderar att du följer riktlinjerna nedan för att försäkra dig om at
 
 **Relaterade ämnen:**
 
-* [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
-* [Leveransfelsökning](../../delivery/using/delivery-troubleshooting.md)
-* [Om leverans](../../delivery/using/about-deliverability.md)
+* [Kontrollpanel för leverans](delivery-dashboard.md)
+* [Leveransfelsökning](delivery-troubleshooting.md)
+* [Om levererbarhet](about-deliverability.md)
 
 ## Bästa tillvägagångssätt för prestanda {#best-practices-performance}
 
@@ -51,6 +51,6 @@ Om leveransresultaten är felaktiga kan du kontrollera:
 
 * **Leveransens** storlek: Stora leveranser kan ta längre tid att slutföra. MTA-underordnade är konfigurerade att hantera en standardbatchstorlek, som fungerar för de flesta instanser, men som måste kontrolleras när leveranserna är konstant långsamma.
 * **Målet för leveransen**: Förbud mot leveransprestanda påverkas av mjuka studsfel som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
-* **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i [det här avsnittet](../../delivery/using/about-deliverability.md) och i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+* **Den totala plattformsbelastningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i [det här avsnittet](about-deliverability.md) och i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 Plattforms- och databasunderhåll kan också påverka leveransresultaten. Se denna [sida](../../production/using/database-performances.md) för mer information om detta.
