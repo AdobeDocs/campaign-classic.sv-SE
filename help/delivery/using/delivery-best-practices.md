@@ -5,14 +5,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 25%
 
 ---
 
-# Bästa praxis för leverans {#delivery-best-practices}
+# God praxis för leverans {#delivery-best-practices}
 
 Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign. Använd länkarna nedan för att navigera bland ämnen och hitta vägledning.
 
@@ -103,8 +103,8 @@ Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign
 
 Se även:
 
-* [Kom igång med Deliverability](../../delivery/using/about-deliverability.md)
+* [Kom igång med Deliverability](about-deliverability.md)
 
-* [Steg för att skapa leverans](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Steg för att skapa leverans](steps-about-delivery-creation-steps.md)
 
 * [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html)
