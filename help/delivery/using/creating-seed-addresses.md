@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Följ stegen nedan för att skapa dirigerade adresser:
    >
    >Kontrollera att ytterligare måldata har definierats med ett alias som börjar med @ i aktiviteten **[!UICONTROL Enrichment]**. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
 
-## Skapar mallar för dirigerade adresser {#creating-seed-address-templates}
+## Skapa mallar för dirigerade adresser {#creating-seed-address-templates}
 
 Om du vill skapa adressmallar som ska importeras och ändras för varje leverans, är processen densamma som när du definierar en ny dirigeringsadress. Den enda skillnaden är att adresser för startadressmallar måste lagras i en mapp av typen &quot;Mall&quot;.
 
@@ -58,4 +58,4 @@ Så här definierar du en mallmapp:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Adresser som lagras i den här mappen kan nu användas som adressmallar. Du kan importera dem till leveranser eller kampanjer och anpassa dem baserat på specifika behov för de aktuella leveranserna och kampanjerna (se [Lägga till dirigerade adresser](../../delivery/using/adding-seed-addresses.md)).
+   Adresser som lagras i den här mappen kan nu användas som adressmallar. Du kan importera dem till leveranser eller kampanjer och anpassa dem baserat på specifika behov för de aktuella leveranserna och kampanjerna (se [Lägga till dirigerade adresser](adding-seed-addresses.md)).
