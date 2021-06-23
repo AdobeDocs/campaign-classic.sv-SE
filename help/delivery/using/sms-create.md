@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 3%
@@ -15,20 +15,20 @@ ht-degree: 3%
 
 # Skapa en SMS-leverans {#creating-a-sms-delivery}
 
-## Välj leveranskanalen {#selecting-the-delivery-channel}
+## Välj leveranskanal {#selecting-the-delivery-channel}
 
 Följ stegen nedan för att skapa en ny SMS-leverans:
 
 >[!NOTE]
 >
->Globala koncept för leveransskapande beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Globala koncept för leveransskapande beskrivs i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
 1. Välj leveransmallen **Skickat till mobiler (SMPP)** som du skapade tidigare. Mer information finns i avsnittet [Ändra leveransmallen](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicka på **[!UICONTROL Continue]** för att bekräfta informationen och visa meddelandekonfigurationsfönstret.
 
 ## Definiera SMS-innehållet {#defining-the-sms-content}
@@ -39,7 +39,7 @@ Följ stegen nedan för att skapa innehållet i SMS:et:
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   Användningen av anpassningsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
+   Användningen av anpassningsfält beskrivs i [Om personalisering](about-personalization.md).
 
 1. Klicka på **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering. Om du vill starta förhandsgranskningen väljer du en mottagare med knappen **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
 
@@ -63,10 +63,10 @@ Följ stegen nedan för att skapa innehållet i SMS:et:
 
 1. Om du använder NetSize-anslutningen eller en SMPP-anslutning kan du anpassa namnet på leveransavsändaren. Mer information finns i avsnittet [Avancerade parametrar](#advanced-parameters).
 
-## Välj målpopulationen {#selecting-the-target-population}
+## Välj målpopulation {#selecting-the-target-population}
 
-Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](../../delivery/using/steps-defining-the-target-population.md).
+Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](steps-defining-the-target-population.md).
 
-Mer information om användning av anpassningsfält finns i [det här avsnittet](../../delivery/using/about-personalization.md).
+Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
 
-Mer information om att ta med en startvärdeslista finns på [den här sidan](../../delivery/using/about-seed-addresses.md).
+Mer information om att ta med en startvärdeslista finns på [den här sidan](about-seed-addresses.md).
