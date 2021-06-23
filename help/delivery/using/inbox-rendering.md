@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Inkorgsåtergivning{#inbox-rendering}
 
-## Om återgivning av inkorgen {#about-inbox-rendering}
+## Om inkorgsåtergivning {#about-inbox-rendering}
 
 Innan du klickar på knappen **Skicka** måste du se till att ditt meddelande visas för mottagarna på ett optimalt sätt på olika webbklienter, webbmejl och enheter.
 
@@ -27,9 +27,9 @@ De mobil-, meddelande- och webbpostklienter som är tillgängliga för **Inkorgs
 
 >[!NOTE]
 >
->Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personaliseringen kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och [korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personaliseringen kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och [korrektur](steps-validating-the-delivery.md#sending-a-proof).
 
-## Aktiverar inkorgsåtergivning {#activating-inbox-rendering}
+## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
 
 För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobe teknisk support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
 
@@ -93,18 +93,18 @@ Antalet återstående tillgängliga token visas i **[!UICONTROL General summary]
 
 Återgivningsfunktionen i Inkorgen används vanligtvis för att testa HTML-ramverket i ett nyligen utformat e-postmeddelande. Varje återgivning kräver ungefär 70 token (beroende på hur många miljöer som testas i allmänhet). I vissa fall kan du dock behöva flera rapporter om inkorgsåtergivning för att kunna testa leveransen. Det kan därför ta fler tokens att slutföra flera kontroller.
 
-## Åtkomst till rapporten för inkorgsåtergivning {#accessing-the-inbox-rendering-report}
+## Få åtkomst till rapporten för inkorgsåtergivning {#accessing-the-inbox-rendering-report}
 
 När du har skapat e-postleveransen och definierat innehållet samt målpopulationen följer du stegen nedan.
 
-Mer information om hur du skapar, utformar och anger mål för en leverans finns i [det här avsnittet](../../delivery/using/about-email-channel.md).
+Mer information om hur du skapar, utformar och anger mål för en leverans finns i [det här avsnittet](about-email-channel.md).
 
 1. Klicka på knappen **[!UICONTROL Inbox rendering]** längst upp i leveransfältet.
 1. Välj **[!UICONTROL Analyze]** för att starta hämtningsprocessen.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [det här avsnittet](steps-validating-the-delivery.md#sending-a-proof).
 
 1. När du har skickat korrekturet visas det i leveranslistan. Dubbelklicka på den.
 
