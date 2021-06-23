@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -41,13 +41,13 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 
 Kontrollera att du har kört leveransanalysen när leveransen är konfigurerad och klar att skickas.
 
-Om du vill göra det klickar du på **[!UICONTROL Send]**, väljer önskad åtgärd och klickar på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Om du vill göra det klickar du på **[!UICONTROL Send]**, väljer önskad åtgärd och klickar på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -57,11 +57,11 @@ Du kan sedan stänga leveransguiden och spåra leveransen från fliken **[!UICON
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Övervaka en leverans](../../delivery/using/about-delivery-monitoring.md)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om att spåra meddelanden](../../delivery/using/about-message-tracking.md)
+* [Övervaka en leverans](about-delivery-monitoring.md)
+* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Om att spåra meddelanden](about-message-tracking.md)
 
-## Schemalägger leveransen som skickar {#scheduling-the-delivery-sending}
+## Schemalägga leveransen som skickas {#scheduling-the-delivery-sending}
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 
@@ -131,15 +131,15 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
       I exemplet nedan representerar den första vågen 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, som har konfigurerats på fliken **[!UICONTROL Typology]** i leveransegenskaperna, presenteras i [valideringsprocessen med typologier](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, som har konfigurerats på fliken **[!UICONTROL Typology]** i leveransegenskaperna, presenteras i [valideringsprocessen med typologier](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
    >
    >Kontrollera att de sista påfyllnaderna inte överskrider leveransdeadline, som definieras på fliken **[!UICONTROL Validity]**. Annars kanske vissa meddelanden inte skickas.
    >
-   >Du måste också ge tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Se [det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+   >Du måste också ge tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Se [det här avsnittet](steps-sending-the-delivery.md#configuring-retries).
 
-1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](delivery-dashboard.md#delivery-logs-and-history).
 
    Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och leveranser som ska skickas i de återstående påfyllnaderna (**[!UICONTROL Pending]** status).
 
@@ -167,11 +167,11 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
 ## Konfigurerar återförsök {#configuring-retries}
 
-Tillfälligt olevererade meddelanden på grund av ett **mjukt**- eller **Ignorerat**-fel kan göras om automatiskt. Typer av leveransfel och orsaker visas i det här [avsnittet](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Tillfälligt olevererade meddelanden på grund av ett **mjukt**- eller **Ignorerat**-fel kan göras om automatiskt. Typer av leveransfel och orsaker visas i det här [avsnittet](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Förbättrat MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
+>Om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
 För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA, visar det centrala avsnittet på fliken **[!UICONTROL Delivery]** för leveransparametrar hur många återförsök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan återförsök.
 
@@ -191,7 +191,7 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
    >[!IMPORTANT]
    >
-   >Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridbaserade installationer, kommer inställningen **[!UICONTROL Delivery duration]** i e-postleveranserna för Campaign endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
+   >Om du har uppgraderat till [Enhanced MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridbaserade installationer, kommer inställningen **[!UICONTROL Delivery duration]** i e-postleveranserna för Campaign endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
 
 * **Resursernas** giltighetstid: Fältet  **[!UICONTROL Validity limit]** används för överförda resurser, huvudsakligen för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
 
