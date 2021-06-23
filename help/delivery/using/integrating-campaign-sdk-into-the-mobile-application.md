@@ -7,14 +7,14 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
-# Integrera Campaign SDK med din app {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrera Campaign SDK med er app {#integrating-campaign-sdk-into-the-mobile-application}
 
 Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Channel.
 
@@ -54,7 +54,7 @@ Mer information om vilka olika Android- och iOS-versioner som stöds finns i [ko
    >
    >För version 1.0.25 av SDK är de fyra arkitekturerna tillgängliga i filen **Neolane_SDK.h**.
 
-## Deklarera integreringsinställningar {#declaring-integration-settings}
+## Deklarera integrationsinställningar {#declaring-integration-settings}
 
 För att integrera Campaign SDK i mobilappen måste den funktionella administratören lämna följande information till utvecklaren:
 
@@ -62,7 +62,7 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
    >[!NOTE]
    >
-   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md).
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign-spårningsservern.
 * **En marknadsförings-URL**: för att aktivera insamling av prenumerationer.
@@ -290,7 +290,7 @@ Registreringsfunktionen gör att du kan:
 
    >[!NOTE]
    >
-   >När funktionen **application:didReceiveRemoteNotification:fetchCompletionHandler** har implementerats från version 7.0 anropas endast den här funktionen av operativsystemet. Funktionen **application:didReceiveRemoteNotification** anropas därför inte.
+   >När funktionen **application:didReceiveRemoteNotification:fetchCompletionHandler** har implementerats från version 7.0 anropas funktionen endast av operativsystemet. Funktionen **application:didReceiveRemoteNotification** anropas därför inte.
 
 ## Spårning av tyst meddelande {#silent-notification-tracking}
 
@@ -530,7 +530,7 @@ Så här implementerar du **registerDeviceStatus**-delegaten:
 
 ## Variabler {#variables}
 
-Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
+Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
 * **I Android**:
 
@@ -610,7 +610,7 @@ Mediet måste hämtas på meddelanditjänstens tilläggsnivå.
     // Perform the download to local storage
 ```
 
-## Meddelandeinnehållstillägg {#notification-content-extension}
+## Tillägg för meddelandeinnehåll {#notification-content-extension}
 
 **För iOS**
 
