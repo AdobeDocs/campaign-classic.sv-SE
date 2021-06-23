@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -30,15 +30,15 @@ Om du vill använda slumpmässig fältersättning måste du ha:
 * en leverans med ett eller flera personaliseringsfält,
 * dirigerade adresser vars **dataschema** ändras enligt de anpassningsfält som används i leveransen.
 
-## Skapar en leverans {#step-1---creating-a-delivery}
+## Skapa en leverans {#step-1---creating-a-delivery}
 
-Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md).
+Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](creating-an-email-delivery.md).
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet.
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## Redigera dirigeringsadressens datarema {#editing-the-seed-addresses-data-schema}
+## Redigera dataschemat för dirigerade adresser {#editing-the-seed-addresses-data-schema}
 
 Instruktionerna för hur du ändrar ett dataschema finns i avsnittet.
 
@@ -51,9 +51,9 @@ I det här exemplet får dataschemat för dirigerade adresser ett värde som ska
 
 Med den här uppräkningen kan användaren ange klienternas favoritlitterära genre.
 
-För att den här datarchemaändringen ska kunna visas i dirigerade adresser **Indataformulär** måste du uppdatera den. Se avsnittet [Uppdatera indataformuläret](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
+För att den här datarchemaändringen ska kunna visas i dirigerade adresser **Indataformulär** måste du uppdatera den. Se avsnittet [Uppdatera indataformuläret](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
-## Konfigurerar personalisering {#configuring-personalization}
+## Konfigurera personalisering {#configuring-personalization}
 
 1. Öppna en leverans.
 
@@ -61,7 +61,7 @@ För att den här datarchemaändringen ska kunna visas i dirigerade adresser **I
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Konfigurera leveranslistan och dina dirigerade adresser. Se [Identifiera målpopulationer](../../delivery/using/steps-defining-the-target-population.md).
+1. Konfigurera leveranslistan och dina dirigerade adresser. Se [Identifiera målpopulationer](steps-defining-the-target-population.md).
 
    I det här exemplet väljer användaren användare vars **favoritlitterära genre** är Sci-Fi som huvudmålpopulation.
 
@@ -73,7 +73,7 @@ För att den här datarchemaändringen ska kunna visas i dirigerade adresser **I
 
    >[!NOTE]
    >
-   >Mer information om länken **[!UICONTROL Edit the dynamic condition...]** finns i [Användningsfall: välja startadresser på villkor](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Mer information om länken **[!UICONTROL Edit the dynamic condition...]** finns i [Användningsfall: välja startadresser på villkor](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Klicka på fliken **[!UICONTROL Preview]** och välj sedan en startadress för att testa personaliseringen.
 
