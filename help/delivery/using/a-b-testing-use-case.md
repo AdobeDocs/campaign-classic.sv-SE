@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -27,16 +27,16 @@ Testet som beskrivs i det här fallet avser endast två leveranser, men du kan t
 
 De viktigaste stegen för att utföra den här åtgärden är:
 
-* [Steg 1: Skapa ett målarbetsflöde](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [Steg 2: Konfigurera populationsexempel](../../delivery/using/a-b-testing-uc-population-samples.md)
-* [Steg 3: Skapa två leveransmallar](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [Steg 4: Konfigurera leveranser i arbetsflödet](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
-* [Steg 5: Skapa skriptet](../../delivery/using/a-b-testing-uc-script.md)
-* [Steg 6: Definiera den slutliga leveransen](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [Steg 7: Starta arbetsflödet](../../delivery/using/a-b-testing-uc-start-workflow.md)
-* [Steg 8: Analysera resultatet](../../delivery/using/a-b-testing-uc-analyzing.md)
+* [Steg 1: Skapa ett målarbetsflöde](a-b-testing-uc-targeting-workflow.md)
+* [Steg 2: Konfigurera populationsexempel](a-b-testing-uc-population-samples.md)
+* [Steg 3: Skapa två leveransmallar](a-b-testing-uc-delivery-templates.md)
+* [Steg 4: Konfigurera leveranser i arbetsflödet](a-b-testing-uc-configuring-deliveries.md)
+* [Steg 5: Skapa skriptet](a-b-testing-uc-script.md)
+* [Steg 6: Definiera den slutliga leveransen](a-b-testing-uc-final-delivery.md)
+* [Steg 7: Starta arbetsflödet](a-b-testing-uc-start-workflow.md)
+* [Steg 8: Analysera resultatet](a-b-testing-uc-analyzing.md)
 
 **Relaterade ämnen:**
 
-* [Kom igång med A/B-tester](../../delivery/using/get-started-a-b-testing.md)
-* [Konfigurera A/B-tester](../../delivery/using/configuring-a-b-testing.md)
+* [Kom igång med A/B-tester](get-started-a-b-testing.md)
+* [Konfigurera A/B-tester](configuring-a-b-testing.md)
