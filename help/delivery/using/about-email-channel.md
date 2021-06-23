@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -25,10 +25,10 @@ Innan du börjar skicka e-post:
 
 De viktigaste stegen för att skicka e-post är följande:
 
-* [Skapa en e-postleverans](../../delivery/using/creating-an-email-delivery.md)
-* [Definiera målpopulationen](../../delivery/using/steps-defining-the-target-population.md)
-* [Definiera e-postinnehållet](../../delivery/using/defining-the-email-content.md)
-* [Skicka e-postmeddelandet](../../delivery/using/sending-messages.md)
-* [Övervaka leveransen](../../delivery/using/about-delivery-monitoring.md)
+* [Skapa en e-postleverans](creating-an-email-delivery.md)
+* [Definiera målpopulationen](steps-defining-the-target-population.md)
+* [Definiera e-postinnehållet](defining-the-email-content.md)
+* [Skicka e-postmeddelandet](sending-messages.md)
+* [Övervaka leveransen](about-delivery-monitoring.md)
 
 Avsnitten nedan innehåller information som är specifik för e-postkanalen. Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
