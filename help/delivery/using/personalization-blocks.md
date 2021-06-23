@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Ni kan definiera nya block som gör att ni kan optimera er leveranspersonaliseri
 >
 >Anpassningsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]**. Se denna [sida](../../web/using/editing-content.md#inserting-a-personalization-block) för mer information om detta.
 
-## Infogar anpassningsblock {#inserting-personalization-blocks}
+## Infoga personaliseringsblock {#inserting-personalization-blocks}
 
 Följ stegen nedan om du vill infoga ett anpassningsblock i ett meddelande:
 
@@ -56,7 +56,7 @@ HTML-källkoden infogas i leveransinnehållet. Personaliseringsblocket **[!UICON
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
-## Exempel på anpassningsblock {#personalization-blocks-example}
+## Exempel på personaliseringsblock {#personalization-blocks-example}
 
 I det här exemplet skapar vi ett e-postmeddelande där vi använder personaliseringsblock för att göra det möjligt för mottagaren att visa spegelsidan, dela nyhetsbrevet i sociala nätverk och avbryta prenumerationen på framtida leveranser.
 
@@ -68,7 +68,7 @@ För att göra detta måste vi infoga följande personaliseringsblock:
 
 >[!NOTE]
 >
->Mer information om generering av spegelsida finns i [Generera spegelsidan](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+>Mer information om generering av spegelsida finns i [Generera spegelsidan](sending-messages.md#generating-the-mirror-page).
 
 1. Skapa en ny leverans eller öppna en befintlig e-posttypsleverans.
 1. Klicka på **[!UICONTROL Subject]** i leveransguiden för att redigera meddelandets ämne och ange ett ämne.
@@ -100,24 +100,12 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
 
    >[!NOTE]
    >
-   >Mer information om generering av spegelsida finns i [Generera spegelsidan](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+   >Mer information om generering av spegelsida finns i [Generera spegelsidan](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : infogar en länk till spegelsidan: &quot;Om du inte kan visa det här meddelandet korrekt klickar du här&quot;.
 * **[!UICONTROL Unsubscription link]** : infogar en länk som gör det möjligt att avbryta prenumerationen på alla leveranser (blockeringslista).
-* **[!UICONTROL Formatting function for proper nouns]** : genererar  **[!UICONTROL toSmartCase]** JavaScript-funktionen, som ändrar den första bokstaven i varje ord till versaler. Det här blocket måste infogas i källkoden för leveransen, i **`<script>...</script>`**-taggar.
-
-   I exemplet nedan används funktionen för att ersätta elementet&quot;Min rubrik&quot; med&quot;Min nya rubrik&quot; med versaler vid varje ord:
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Registration page URL]** : infogar en prenumerations-URL (se  [Om tjänster och prenumerationer](../../delivery/using/about-services-and-subscriptions.md)).
+* **[!UICONTROL Formatting function for proper nouns]** : genererar  **[!UICONTROL toSmartCase]** JavaScript-funktionen, som ändrar den första bokstaven i varje ord till versaler.
+* **[!UICONTROL Registration page URL]** : infogar en prenumerations-URL (se  [Om tjänster och prenumerationer](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]** : infogar en prenumerationslänk. som har definierats när instansen konfigureras.
 * **[!UICONTROL Registration link (with referrer)]** : infogar en prenumerationslänk som gör det möjligt att identifiera besökaren och leveransen. Länken har definierats när instansen konfigureras.
 
@@ -126,11 +114,11 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
    >Det här blocket kan bara användas för leveranser till besökare.
 
 * **[!UICONTROL Registration confirmation]** : infogar en länk som bekräftar prenumerationen.
-* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, Twitter och LinkedIn (se  [Viral marketing: till en vän](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, Twitter och LinkedIn (se  [Viral marketing: till en vän](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** och  **[!UICONTROL Notification style]** : generera kod som formaterar ett e-postmeddelande med fördefinierade HTML-format. Dessa block måste infogas i källkoden för leveransen, i avsnittet **[!UICONTROL ...]**, i **`<style>...</style>`**-taggar.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : infogar en URL som gör det möjligt att ange ett interaktionserbjudande  **[!UICONTROL Accepted]** (se  [det här avsnittet](../../interaction/using/offer-analysis-report.md)).
 
-## Definiera anpassade anpassningsblock {#defining-custom-personalization-blocks}
+## Definiera anpassade personaliseringsblock {#defining-custom-personalization-blocks}
 
 Du kan definiera nya anpassningsfält som ska infogas från den anpassade fältikonen via menyn **[!UICONTROL Include...]**. Dessa fält definieras i personaliseringsblock.
 
@@ -152,7 +140,7 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
 
    * Ange innehållet (i HTML, text, JavaScript osv.) av anpassningsblocket/personaliseringsblocken och klicka på **[!UICONTROL Save]**.
 
-## Självstudievideo {#personalization-blocks-video}
+## Videokurs {#personalization-blocks-video}
 
 Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för att anpassa innehållet i e-postleveransen.
 
