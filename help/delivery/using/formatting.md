@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -364,7 +364,7 @@ I det här exemplet beskrivs följande steg:
 
 1. Du kan sedan använda den här innehållsmallen i dina leveranser.
 
-   Mer information finns i [Använda en innehållsmall](../../delivery/using/using-a-content-template.md).
+   Mer information finns i [Använda en innehållsmall](using-a-content-template.md).
 
 ## XSL-formatmallar {#xsl-stylesheets}
 
@@ -450,7 +450,7 @@ I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom 
 >
 >Mer information om XSLT-språket finns i ett XSLT-referensdokument.
 
-### Visar HTML/XML {#displaying-html-xml}
+### Visa HTML/XML {#displaying-html-xml}
 
 Om du vill visa ett **html**-fält använder du alternativet **disable-output-escape=&quot;yes&quot;** i **`<xsl:value-of>`**-direktivet. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
 
@@ -476,7 +476,7 @@ Exempel:
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
    ```
 
-### Inkluderar formatmallar {#including-stylesheets}
+### Inkludera formatmallar {#including-stylesheets}
 
 Du kan skapa ett bibliotek med mallar eller variabler som ska delas mellan flera formatmallar. Mallen &quot;longMonth&quot; ****, som presenteras ovan, är ett typiskt exempel på fördelen med att fjärrleta upp en mall i en formatmall så att den kan återanvändas senare.
 
@@ -513,7 +513,7 @@ Om du vill generera en förhandsgranskning av utdatadokumentet markerar du en in
 
 ## Bildhantering {#image-management}
 
-### Bildreferering {#image-referencing}
+### Bildreferenser {#image-referencing}
 
 De bilder som anges i HTML-utdatadokumentet kan refereras med absoluta eller relativa referenser.
 
