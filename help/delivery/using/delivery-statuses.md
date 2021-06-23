@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -23,13 +23,13 @@ När en leverans har skickats visar kontrollpanelen en status som gör att du ka
 
 ![](assets/delivery-status.png)
 
-Mer information om olika leveransfel som du kan träffa på och hur du löser dem finns på [den här sidan](../../delivery/using/understanding-delivery-failures.md).
+Mer information om olika leveransfel som du kan träffa på och hur du löser dem finns på [den här sidan](understanding-delivery-failures.md).
 
 **Relaterade ämnen:**
 
-* [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
-* [Leveransfelsökning](../../delivery/using/delivery-troubleshooting.md)
-* [Om leverans](../../delivery/using/about-deliverability.md)
+* [Kontrollpanel för leverans](delivery-dashboard.md)
+* [Leveransfelsökning](delivery-troubleshooting.md)
+* [Om levererbarhet](about-deliverability.md)
 
 ## Lista över leveransstatus {#list-delivery-statuses}
 
@@ -51,7 +51,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
   </tr> 
   <tr> 
    <td> Misslyckades<br /> </td> 
-   <td> Leveransen kunde inte nå mottagaren på grund av en ogiltig adress eller en fullständig inkorg, till exempel. Den kan även länkas till ett problem med personaliseringsblock eftersom de kan generera fel när scheman inte matchar leveransmappningen. Se <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Förstå leveransfel</a><br /> </td> 
+   <td> Leveransen kunde inte nå mottagaren på grund av en ogiltig adress eller en fullständig inkorg, till exempel. Den kan även länkas till ett problem med personaliseringsblock eftersom de kan generera fel när scheman inte matchar leveransmappningen. Se <a href="understanding-delivery-failures.md" target="_blank">Förstå leveransfel</a><br /> </td> 
   </tr>
   <tr> 
    <td> Väntande<br /> </td> 
@@ -67,7 +67,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
   </tr> 
   <tr> 
    <td> Tjänsteleverantören<br /> har tagit hänsyn till </td> 
-   <td> SMS-tjänstleverantören tog emot leveransen.<br /> Om du har uppgraderat till  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Förbättrat MTA</a> för värdbaserade eller hybridbaserade installationer vidarebefordrades meddelandet från Campaign till det förbättrade MTA-avtalet.</td> 
+   <td> SMS-tjänstleverantören tog emot leveransen.<br /> Om du har uppgraderat till  <a href="sending-with-enhanced-mta.md" target="_blank">Förbättrat MTA</a> för värdbaserade eller hybridbaserade installationer vidarebefordrades meddelandet från Campaign till det förbättrade MTA-avtalet.</td> 
   </tr> 
   <tr> 
    <td> Mottaget på mobilen<br /> </td> 
@@ -85,13 +85,13 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
  </tbody> 
 </table>
 
-Mer information om hur du optimerar leveransen av dina e-postmeddelanden från Adobe Campaign finns i [det här avsnittet](../../delivery/using/about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+Mer information om hur du optimerar leveransen av dina e-postmeddelanden från Adobe Campaign finns i [det här avsnittet](about-deliverability.md). En djupdykning i leveransförmåga finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Väntande status {#pending-status}
 
 När du har bekräftat leveransen ser du att leveransstatus är **[!UICONTROL Pending]**. Den här statusen innebär att körningsprocessen väntar på att vissa resurser ska vara tillgängliga.
 
-**[!UICONTROL Pending]**-statusen kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i avsnittet [Leveransplanering](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+**[!UICONTROL Pending]**-statusen kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i avsnittet [Leveransplanering](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
 Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det bero på:
 
@@ -137,5 +137,5 @@ Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det 
 **Relaterade ämnen:**
 
 * [Leveransloggar och historik](#delivery-logs-and-history)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Typ av leveransfel och orsaker](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Typ av leveransfel och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
