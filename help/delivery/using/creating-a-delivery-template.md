@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -29,7 +29,7 @@ Den här åtgärden skapar en leveransmall av den valda leveransen. Du måste an
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Mer information om konfigurationsläget finns i [Länka mallen till en leverans](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Mer information om konfigurationsläget finns i [Länka mallen till en leverans](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## Skapa en ny mall {#creating-a-new-template}
 
