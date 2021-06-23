@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan ni använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha - via e-post, mobiler, offlinekanaler med mera.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 97%
+source-wordcount: '2518'
+ht-degree: 98%
 
 ---
 
@@ -38,9 +38,11 @@ ht-degree: 97%
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
    + [Tekniska anmärkningar](technotes/technote.md)
+   + [Vanliga frågor om Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Uppdatering av iOS-certifikat](technotes/ios-certificate-update.md)
    + [Konfigurationsuppdateringar i Campaign](technotes/acc-config-updates.md)
    + [Uppdatering av spårade URL:er](technotes/tracked-urls.md)
+   + [IMS-uppdateringar](technotes/ims-updates.md)
 + Komma igång {#getting-started}
    + Kom igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -584,7 +586,7 @@ ht-degree: 97%
       + [Händelsebearbetning](message-center/using/about-event-processing.md)
       + [Leveranskörning](message-center/using/delivery-execution.md)
    + Rapporter {#reports}
-      + [Få tillgång till transaktionsrapporter](message-center/using/about-transactional-messaging-reports.md)
+      + [Om rapporter om transaktionsmeddelanden](message-center/using/about-transactional-messaging-reports.md)
       + [Historik om händelser i meddelandecentret](message-center/using/history-of-message-center-events.md)
       + [Tjänstenivå för meddelandecentret](message-center/using/message-center-service-level.md)
       + [Bearbetningstid för meddelandecentret](message-center/using/message-center-processing-time.md)
@@ -673,7 +675,7 @@ ht-degree: 97%
          + [Bästa praxis och begränsningar](installation/using/fda-best-practices.md)
          + Konfigurationsriktlinjer {#config-databases}
             + [Konfigurationssteg](installation/using/configure-fda.md)
-            + [Konfigurera vertikalt](installation/using/configure-fda-vertica.md)
+            + [Konfigurera Vertica](installation/using/configure-fda-vertica.md)
             + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
             + [Konfigurera Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
