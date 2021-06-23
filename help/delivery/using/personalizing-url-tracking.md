@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 12%
@@ -19,7 +19,7 @@ Avancerade inställningar för meddelandespårning är tillgängliga via ikonen 
 
 >[!NOTE]
 >
->Hanteringen av bilder i e-postmeddelanden är också konfigurerad i det här fönstret. Se [Lägga till bilder](../../delivery/using/defining-the-email-content.md#adding-images).
+>Hanteringen av bilder i e-postmeddelanden är också konfigurerad i det här fönstret. Se [Lägga till bilder](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -37,7 +37,7 @@ Du kan konfigurera spårningsalternativen:
 
 De spårade URL:erna visas i det centrala fönstret i trädform.
 
-Du kan aktivera eller inaktivera spårning individuellt för varje URL för meddelandet. Mer information om detta finns i [det här avsnittet](../../delivery/using/how-to-configure-tracked-links.md).
+Du kan aktivera eller inaktivera spårning individuellt för varje URL för meddelandet. Mer information om detta finns i [det här avsnittet](how-to-configure-tracked-links.md).
 
 På fliken **[!UICONTROL Advanced]** kan du anpassa beräkningsformlerna för de spårade URL:erna och den inledande URL:en.
 
