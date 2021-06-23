@@ -12,14 +12,13 @@ discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 32a14eb99847dc04a582623204bc856c29fa4359
+exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
-
 
 # Använda sammanfogningsfunktionen för aktiviteten Deduplicering {#deduplication-merge}
 
@@ -100,7 +99,7 @@ Så här konfigurerar du de här reglerna:
 När du har konfigurerat dessa regler tas följande data emot i slutet av **[!UICONTROL Deduplication]**-aktiviteten.
 
 | Ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
------|------------|-----------|-------|--------------|------|
+|-----|------------|-----------|-------|--------------|------|
 | 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
 | 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
 | 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
