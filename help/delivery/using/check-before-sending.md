@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -18,13 +18,13 @@ När meddelandet är klart ser du till att innehållet visas korrekt på alla en
 
 Innan du skickar meddelandet måste du se till att parametrarna och konfigurationen stämmer överens med leveransen.
 
-## Varför validering är nyckel {#validation-is-key}
+## Varför validering är avgörande {#validation-is-key}
 
 Innan du skickar en leverans måste du se till att mottagarna får det meddelande som du verkligen vill skicka. För att göra detta måste du validera meddelandets innehåll och leveransparametrar.
 
 Med det här steget kan du identifiera eventuella fel och åtgärda dem innan du levererar till huvudmålet.
 
-Stegen för validering av leverans visas [i det här avsnittet](../../delivery/using/steps-validating-the-delivery.md).
+Stegen för validering av leverans visas [i det här avsnittet](steps-validating-the-delivery.md).
 
 ## Inkorgsåtergivning {#inbox-and-email-rendering}
 
@@ -36,13 +36,13 @@ Med inkorgsåtergivning kan du förhandsgranska meddelanden på större e-postkl
 
 * Återgivningsfunktioner för inkorgen är avgörande för att du ska kunna identifiera om dina e-postkampanjer fungerar som de ska med filtren hos viktiga internetleverantörer (Internet Service Providers) och webbposttjänster. Sådana verktyg skickar en kopia av ett e-postmeddelande till ett nätverk av testinkorgar, så att du kan se hur meddelandet kommer att visas, eller återges, i alla dessa tjänster. De kan även innehålla rapporter och kodkorrigeringsalternativ som hjälper dig att snabbt identifiera och göra korrigeringar som förbättrar leveransen.
 
-Läs mer [i det här avsnittet](../../delivery/using/inbox-rendering.md).
+Läs mer [i det här avsnittet](inbox-rendering.md).
 
 ## Korrekturmeddelanden {#proof-messages}
 
 Genom att skicka korrektur kan du kontrollera länken för avanmälan, spegelsidan och alla andra länkar, validera meddelandet, verifiera att bilder visas, upptäcka eventuella fel osv. Du kanske också vill kontrollera din design och återgivning på olika enheter.
 
-Läs mer [i det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Läs mer [i det här avsnittet](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Ställ in A/B-testleveranser {#a-b-testing-deliveries}
 
@@ -54,7 +54,7 @@ Om du har flera innehåll för en e-postleverans kan du använda A/B-testning f�
 
 * Välj den som har högst framgångsfrekvens och skicka den till resten av ditt mål
 
-Läs mer [i det här avsnittet](../../delivery/using/get-started-a-b-testing.md).
+Läs mer [i det här avsnittet](get-started-a-b-testing.md).
 
 ## Se till att ditt meddelande levereras {#make-sure-your-message-is-delivered}
 
@@ -66,7 +66,7 @@ Du kan definiera en fullständig valideringsprocess där Adobe Campaign-operator
 
 ### Använd vågor
 
-Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du att meddelanden markeras som skräppost eller när du vill begränsa antalet meddelanden per dag. Med vågor kan du dela upp leveranser i flera grupper i stället för att skicka stora mängder meddelanden samtidigt. Läs mer [i det här avsnittet](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du att meddelanden markeras som skräppost eller när du vill begränsa antalet meddelanden per dag. Med vågor kan du dela upp leveranser i flera grupper i stället för att skicka stora mängder meddelanden samtidigt. Läs mer [i det här avsnittet](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Prioritera meddelanden
 
