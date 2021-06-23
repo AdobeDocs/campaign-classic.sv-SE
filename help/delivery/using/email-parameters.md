@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 I det här avsnittet visas alternativ och parametrar som är specifika för e-postleverans.
 
-## Hemlig kopia av e-post {#email-bcc}
+## BCC för e-post {#email-bcc}
 
 Med Adobe Campaign kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet.
 
@@ -71,13 +71,13 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 >[!NOTE]
 >
->Mer information om hur du definierar e-postinnehållet finns i [det här avsnittet](../../delivery/using/defining-the-email-content.md).
+>Mer information om hur du definierar e-postinnehållet finns i [det här avsnittet](defining-the-email-content.md).
 
-## Genererar spegelsidan {#generating-mirror-page}
+## Generera spegelsidan {#generating-mirror-page}
 
 Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet.
 
-Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [Personaliseringsblock](../../delivery/using/personalization-blocks.md).
+Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [Personaliseringsblock](personalization-blocks.md).
 
 I leveransegenskaperna kan du ändra genereringsläget för den här sidan i fältet **[!UICONTROL Mode]** på fliken **[!UICONTROL Validity]**.
 
@@ -117,9 +117,9 @@ Du kan också definiera en specifik adress från den här skärmen för att unde
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Mer information om hantering av studsade e-postmeddelanden finns i [det här avsnittet](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Mer information om hantering av studsade e-postmeddelanden finns i [det här avsnittet](understanding-delivery-failures.md#bounce-mail-management).
 
-## Lägger till SMTP-rubriker {#adding-smtp-headers}
+## Lägga till SMTP-rubriker {#adding-smtp-headers}
 
 Det går att lägga till SMTP-huvuden i leveranserna. Det gör du genom att använda relevant avsnitt på fliken **[!UICONTROL SMTP]** i leveransen.
 
