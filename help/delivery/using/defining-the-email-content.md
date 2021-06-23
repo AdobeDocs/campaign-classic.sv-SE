@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Klicka på länken **[!UICONTROL From]** om du vill definiera namn och adress f�
 
 I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Den här informationen kan anpassas. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
 
-Information om hur du infogar och använder anpassningsfält finns i [Om personalisering](../../delivery/using/about-personalization.md)-avsnittet.
+Information om hur du infogar och använder anpassningsfält finns i [Om personalisering](about-personalization.md)-avsnittet.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ I meddelandet ovan anpassas till exempel meddelandets ämne för varje mottagare
 
 >[!NOTE]
 >
->Användningen av anpassningsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
+>Användningen av anpassningsfält beskrivs i [Om personalisering](about-personalization.md).
 
 Du kan också infoga uttryckssymboler på ämnesraden med popup-fönstret **[!UICONTROL Insert emoticon]**.
 
@@ -91,7 +91,7 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
    >[!NOTE]
    >
-   >Användningen av anpassningsfält beskrivs i [Om personalisering](../../delivery/using/about-personalization.md).
+   >Användningen av anpassningsfält beskrivs i [Om personalisering](about-personalization.md).
 
    Med flikarna längst ned på sidan kan du visa HTML-koden för sidan som skapas och visa återgivningen av meddelandet med dess anpassning. Om du vill starta den här visningen klickar du på **[!UICONTROL Preview]** och väljer en mottagare med knappen **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
 
@@ -137,7 +137,7 @@ Select the format of the email in the lower section of the window:
 
 Med Adobe Campaign kan du testa det nya interaktiva [AMP för e-post](https://amp.dev/about/email/)-formatet, som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
-Mer information finns i [det här avsnittet](../../delivery/using/defining-interactive-content.md).
+Mer information finns i [det här avsnittet](defining-interactive-content.md).
 
 ## Använda innehållshantering {#using-content-management}
 
@@ -151,7 +151,7 @@ Med en extra flik kan du ange innehåll som automatiskt ska integreras och forma
 
 >[!NOTE]
 >
->Mer information om innehållshantering i Adobe Campaign finns i [det här avsnittet](../../delivery/using/about-content-management.md).
+>Mer information om innehållshantering i Adobe Campaign finns i [det här avsnittet](about-content-management.md).
 
 ## Infoga uttryckssymboler {#inserting-emoticons}
 
@@ -164,7 +164,7 @@ Du kan infoga uttryckssymboler i ditt e-postinnehåll.
 
 1. Klicka på knappen **[!UICONTROL Close]** när du är klar.
 
-Om du vill anpassa uttryckslistan läser du i den här [sidan](../../delivery/using/customizing-emoticon-list.md).
+Om du vill anpassa uttryckslistan läser du i den här [sidan](customizing-emoticon-list.md).
 
 ## Lägga till bilder {#adding-images}
 
@@ -215,7 +215,7 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](../../delivery/using/attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Här följer ett exempel på en leverans med fyra bilder:
 
