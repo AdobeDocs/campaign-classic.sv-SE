@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 16%
@@ -27,8 +27,8 @@ Med listan över leveranser kan du se alla skapade leveranser till en enda plats
 
 För varje leverans finns en dedikerad kontrollpanel tillgänglig. Du kan övervaka eventuella problem som uppstår under sändningen samt olika typer av information om leveransen: rapporter, spegelsidor, undantag, spårningsloggar, återgivning osv.
 
-* [Åtkomst till listan över leveranser](../../delivery/using/list-of-deliveries.md)
-* [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
+* [Åtkomst till listan över leveranser](list-of-deliveries.md)
+* [Kontrollpanel för leverans](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
@@ -36,8 +36,8 @@ För varje leverans finns en dedikerad kontrollpanel tillgänglig. Du kan överv
 
 Flera riktlinjer bör följas för att leveranserna ska gå bra. Vanliga problem som kan uppstå när du skickar leveranser är också tillgängliga för att hjälpa dig att skicka leveranser på ett effektivt sätt.
 
-* [Leveransresultat och bästa praxis](../../delivery/using/delivery-performances.md)
-* [Felsökning av leverans](../../delivery/using/delivery-troubleshooting.md)
+* [Leveransresultat och bästa praxis](delivery-performances.md)
+* [Felsökning av leverans](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
@@ -45,7 +45,7 @@ Flera riktlinjer bör följas för att leveranserna ska gå bra. Vanliga problem
 
 När det inte går att skicka ett meddelande till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och kvalificeras för att avgöra om e-postadressen eller telefonnumret ska sättas i karantän eller inte.
 
-[Att förstå leveransfel ](../../delivery/using/understanding-delivery-failures.md) är ett viktigt steg som hjälper er att förbättra era marknadsföringskampanjer.
+[Att förstå leveransfel ](understanding-delivery-failures.md) är ett viktigt steg som hjälper er att förbättra era marknadsföringskampanjer.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ När det inte går att skicka ett meddelande till en profil skickar fjärrserver
 
 Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål.
 
-I [det här avsnittet](../../delivery/using/understanding-quarantine-management.md) hittar du information om hur du identifierar och hanterar adresser i karantän, och du får lära dig mer om villkoren för att skicka en adress till karantän.
+I [det här avsnittet](understanding-quarantine-management.md) hittar du information om hur du identifierar och hanterar adresser i karantän, och du får lära dig mer om villkoren för att skicka en adress till karantän.
