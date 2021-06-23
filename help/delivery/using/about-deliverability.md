@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -21,7 +21,7 @@ Mer exakt är att e-postleverans är en uppsättning egenskaper som avgör hur e
 
 Mer information om leveransvillkor och leveranssätt finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
-## Så här förbättrar du leveransen {#deliverability-key-points}
+## Hur man förbättrar leveransen {#deliverability-key-points}
 
 Leveransproblem är vanligtvis kopplade till skyddsåtgärder mot skräppost som implementeras av Internetleverantörer och e-postserveradministratörer.
 
@@ -40,11 +40,11 @@ Leveransgraden är antalet meddelanden som når mottagarnas inkorgar jämfört m
 Med Adobe Campaign beror leveransgraden på många faktorer, bland annat:
 
 * Korrekt konfiguration av dina instanser: kontakta din Adobe-representant för att få hjälp.
-* Legitimal nätverkskonfiguration: se [det här avsnittet](../../delivery/using/optimize-delivery.md#network-config) och [Domänkonfiguration och -strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* Legitimal nätverkskonfiguration: se [det här avsnittet](optimize-delivery.md#network-config) och [Domänkonfiguration och -strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
 * Din IP-adress: se [IP-strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
-* Kvaliteten på adresserna: se [Karantänhantering](../../delivery/using/optimize-delivery.md#quarantine-management).
+* Kvaliteten på adresserna: se [Karantänhantering](optimize-delivery.md#quarantine-management).
 * Låga [antal klagomål](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) och [antal studsar](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces).
-* Ditt meddelandeinnehåll: se [Kontrollera e-postinnehåll](../../delivery/using/control-message-content.md).
+* Ditt meddelandeinnehåll: se [Kontrollera e-postinnehåll](control-message-content.md).
 * Meddelandeautentisering (SPF, DKIM, DMARC): se [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 * Avsändarens rykte: Om du vill veta mer om hur viktiga Internet-leverantörer utvärderar ett avsändarrykte kan du läsa [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
@@ -57,12 +57,12 @@ Adobe Campaign har flera verktyg för att spåra och förbättra plattformens le
 
 När du konfigurerar, utformar och testar ett meddelande måste du följa de riktlinjer som beskrivs i avsnitten nedan. Genom att utnyttja alla funktioner i Adobe Campaign kan ni förbättra leveransen.
 
-* [God praxis för leverans](../../delivery/using/delivery-best-practices.md)
-* [Kontrollera e-postinnehåll](../../delivery/using/control-message-content.md)
-* [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md)
-* [Skicka en korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [God praxis för leverans](delivery-best-practices.md)
+* [Kontrollera e-postinnehåll](control-message-content.md)
+* [Inkorgsåtergivning](inbox-rendering.md)
+* [Skicka en korrektur](steps-validating-the-delivery.md#sending-a-proof)
 
-### Verifiera samtycke via dubbel anmälan {#double-opt-in}
+### Verifiera samtycke genom dubbel anmälan {#double-opt-in}
 
 För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en mekanism för dubbel anmälan. Med den här metoden kan du säkerställa att mottagarna prenumererar avsiktligt.
 
@@ -80,9 +80,9 @@ Vissa internetleverantörer betraktar automatisk e-post som skräppost om antale
 
 Mer information finns i följande avsnitt:
 
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Om karantänshantering](../../delivery/using/understanding-quarantine-management.md)
-* [Karantän mot blockeringslista](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Förstå karantänshantering](understanding-quarantine-management.md)
+* [Karantän mot blockeringslista](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Använd övervaknings- och rapporteringsverktyg
 
@@ -92,8 +92,8 @@ Med Adobe Campaign kan ni kontrollera hur era leveranser fungerar med hjälp av 
 
 Mer information finns i följande avsnitt:
 
-* [Övervaka levererbarhet](../../delivery/using/monitoring-deliverability.md)
-* [Om leveransövervakning](../../delivery/using/about-delivery-monitoring.md)
+* [Övervaka levererbarhet](monitoring-deliverability.md)
+* [Om leveransövervakning](about-delivery-monitoring.md)
 * [Om inbyggda rapporter i Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
