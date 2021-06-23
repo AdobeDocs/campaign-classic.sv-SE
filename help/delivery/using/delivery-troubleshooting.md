@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Felsökning
+title: Felsöka
 description: Lär dig mer om leveransresultat och hur du felsöker problem som rör leveransövervakning.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -17,25 +17,25 @@ ht-degree: 1%
 
 I det här avsnittet beskrivs vanliga problem som du kan stöta på när du skickar leveranser och hur du felsöker dem.
 
-Kontrollera dessutom att du följer de bästa metoderna och checklistan som beskrivs i [den här sidan](../../delivery/using/delivery-performances.md) för att försäkra dig om att leveranserna fungerar bra.
+Kontrollera dessutom att du följer de bästa metoderna och checklistan som beskrivs i [den här sidan](delivery-performances.md) för att försäkra dig om att leveranserna fungerar bra.
 
 **Relaterade ämnen:**
 
-* [Leveransstatus](../../delivery/using/delivery-statuses.md)
-* [Kontrollpanel för leverans](../../delivery/using/delivery-dashboard.md)
-* [Om leveransfel](../../delivery/using/understanding-delivery-failures.md)
+* [Leveransstatus](delivery-statuses.md)
+* [Kontrollpanel för leverans](delivery-dashboard.md)
+* [Förstå leveransfel](understanding-delivery-failures.md)
 
-## Långsam leverans {#slow-deliveries}
+## Långsamma leveranser {#slow-deliveries}
 
 När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
 
-* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. Kontrollera i så fall dina utskick och läs [det här avsnittet](../../delivery/using/about-deliverability.md).
+* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. Kontrollera i så fall dina utskick och läs [det här avsnittet](about-deliverability.md).
 
-* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Läs Adobe Campaign [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md) om du vill veta mer om riktlinjer för innehåll.
+* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Läs Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md) om du vill veta mer om riktlinjer för innehåll.
 
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
-   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](../../delivery/using/deliverability-faq.md). Mer information om MX-regler finns i [det här avsnittet](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Väntade meddelanden (**[!UICONTROL quotas met]** meddelande): Kvoter som deklarerats av de deklarativa MX-regler som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](deliverability-faq.md). Mer information om MX-regler finns i [det här avsnittet](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Väntade meddelanden (**[!UICONTROL dynamic flow control]** meddelande): Kampanj-MTA har påträffat fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika en alltför hög feltäthet och därmed riskerar att blocklist.
 
