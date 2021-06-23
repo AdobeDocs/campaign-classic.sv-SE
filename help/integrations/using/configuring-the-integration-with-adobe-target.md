@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ För att kunna använda integrationen mellan Adobe Campaign och Adobe Target må
 * Adobe Experience Cloud- och Adobe Target-organisationer
 * En Adobe Target-ruta har angetts för att upprätta anslutningen till Adobe Campaign
 
-## Konfigurerar Adobe Campaign {#configuring-adobe-campaign}
+## Konfigurera Adobe Campaign {#configuring-adobe-campaign}
 
 Så här konfigurerar du Adobe Campaign:
 
@@ -32,4 +32,9 @@ Så här konfigurerar du Adobe Campaign:
 
    * **[!UICONTROL TNT_EdgeServer]** : Adobe Target-server som används för integreringen. Det här alternativet är redan markerat som standard. Detta värde motsvarar Adobe Target **[!UICONTROL Domain Server]**, följt av värdet **/m2**. Till exempel: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** : Adobe Target organisationsnamn. Detta värde motsvarar namnet på Adobe Target **[!UICONTROL Client]**.
+
    ![](assets/tar_options.png)
+
+>[!CAUTION]
+>
+>För hybridarkitekturer och värdbaserade arkitekturer måste dessa alternativ anges på alla servrar, inklusive [mittkällservern](../../installation/using/mid-sourcing-server.md) och [körningsinstansen](../../message-center/using/configuring-instances.md#execution-instance).
