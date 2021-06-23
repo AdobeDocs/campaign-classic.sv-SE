@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
 
 ---
 
-# SMS-felsökning {#troubleshooting-sms}
+# Felsökning av SMS {#troubleshooting-sms}
 
 ## Konflikt mellan olika externa konton {#external-account-conflict}
 
@@ -45,7 +45,7 @@ Du måste kontakta leverantören för att diagnostisera potentiella konflikter h
    * Vissa externa konton har samma kombination av inloggning och lösenord.
 Leverantören kan inte avgöra från vilket externt konto som `BIND PDU` kommer, så de behandlar alla anslutningar från flera konton som ett enda. De kan ha cirkulerat MO och SR slumpmässigt över de två kontona, vilket kan orsaka problem.
 Om providern stöder flera korta koder för samma kombination av inloggning/lösenord måste du fråga var den korta koden ska placeras i `BIND PDU`. Observera att den här informationen måste placeras inuti `BIND PDU`, och inte i `SUBMIT_SM`, eftersom `BIND PDU` är den enda plats där du kan dirigera MO:er korrekt.
-Se [Information i varje typ av PDU](../../delivery/using/sms-protocol.md#information-pdu) ovan för att ta reda på vilket fält som är tillgängligt i `BIND PDU`, vanligtvis lägger du till den korta koden i `address_range`, men det kräver särskild support från leverantören. Kontakta dem för att få veta hur de förväntar sig att skicka flera korta koder oberoende av varandra.
+Se [Information i varje typ av PDU](sms-protocol.md#information-pdu) ovan för att ta reda på vilket fält som är tillgängligt i `BIND PDU`, vanligtvis lägger du till den korta koden i `address_range`, men det kräver särskild support från leverantören. Kontakta dem för att få veta hur de förväntar sig att skicka flera korta koder oberoende av varandra.
 Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 
 ## Problem med externt konto i allmänhet {#external-account-issues}
@@ -67,7 +67,7 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 * Undersök (i /postupgrade directory) om systemet har uppgraderats och när
 * Undersök om några paket som påverkar SMS kan ha uppgraderats nyligen (/var/log/dpkg.log).
 
-## Problem med medelkällkod (värdbaserad){#issue-mid-sourcing}
+## Problem med hosting (hosted){#issue-mid-sourcing}
 
 * Om problemet inträffar i en miljö med medelhög källkod måste du se till att leveransloggarna och de breda loggarna skapas och uppdateras på servern med mellanlagring. Om så inte är fallet är detta inte ett SMS-problem.
 
@@ -83,7 +83,7 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 
 * Kontrollera **inställningarna för externt konto**. Fråga leverantören vilket värde fälten har.
 
-* Om anslutningen lyckas men inte fungerar kontrollerar du [problemet med instabila anslutningar](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Om anslutningen lyckas men inte fungerar kontrollerar du [problemet med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection).
 
 * Om det är svårt att diagnostisera anslutningsproblem kan nätverksinhämtningen ge information. Se till att nätverksinhämtningen körs samtidigt medan problemet uppstår så att det kan analyseras effektivt. Du bör också notera exakt när problemet uppstår.
 
@@ -113,11 +113,11 @@ Så här åtgärdar du problem med anslutningsstabilitet:
 
 * Om providern stänger anslutningen efter att ha skickat ett rent fel som `DELIVER_SM_RESP` med en felkod måste de åtgärda sin koppling, annars förhindras andra typer av meddelanden från att överföras och MTA-begränsning aktiveras. Detta är särskilt viktigt i sändningsläge där stängning av anslutningen påverkar både MT och SR.
 
-## Problem vid sändning av MT (vanlig SMS skickad till en slutanvändare){#issue-MT}
+## Problem vid sändning av MT (vanlig SMS skickas till en slutanvändare){#issue-MT}
 
-* Kontrollera att anslutningen är stabil. En SMPP-anslutning bör vara kontinuerligt uppkopplad i minst en timme, med undantag för sändare på Adobe Campaign Classic. Se avsnittet [Problem med instabila anslutningar](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Kontrollera att anslutningen är stabil. En SMPP-anslutning bör vara kontinuerligt uppkopplad i minst en timme, med undantag för sändare på Adobe Campaign Classic. Se avsnittet [Problem med instabila anslutningar](sms-protocol.md#issues-unstable-connection).
 
-* Om du startar om MTA så att sändning av MT fungerar igen under en liten tidsperiod, har du antagligen strypning på grund av en instabil anslutning. Se avsnittet [Problem med instabila anslutningar](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Om du startar om MTA så att sändning av MT fungerar igen under en liten tidsperiod, har du antagligen strypning på grund av en instabil anslutning. Se avsnittet [Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection).
 
 * Kontrollera att den breda loggen finns och att den har rätt status med rätt datum. Annars kan det vara ett leveransproblem.
 
@@ -133,19 +133,19 @@ Så här åtgärdar du problem med anslutningsstabilitet:
 
 * Om det fungerar men flödet inte är konsekvent kan du försöka justera sändande fönster och sänka MT-flödet. Du måste arbeta med leverantören för att justera det. Adobe Campaign kan skicka meddelanden mycket snabbt så att det kan uppstå prestandaproblem på leverantörens utrustning.
 
-## MT är duplicerat (samma SMS skickas flera gånger i rad){#duplicated-MT}
+## MT dupliceras (samma SMS skickas flera gånger i rad){#duplicated-MT}
 
 Dubbletter orsakas ofta av återförsök. Det är normalt att ha dubbletter när du försöker göra om meddelanden. Försök i stället att ta bort grundorsaken till nya försök.
 
 * Om dubbletter skickas med exakt 60 sekunders mellanrum är det antagligen ett problem på leverantörssidan, de skickar inte ett `SUBMIT_SM_RESP`-meddelande tillräckligt snabbt.
 
-* Om du ser många `BIND/UNBIND` har du en instabil anslutning. Se avsnittet[Problem med instabila anslutningar](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) för lösningar innan du försöker lösa problem med dubblettmeddelanden.
+* Om du ser många `BIND/UNBIND` har du en instabil anslutning. Se avsnittet[Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection) för lösningar innan du försöker lösa problem med dubblettmeddelanden.
 
 Minska antalet dubbletter när ett nytt försök görs:
 
 * Sänk sändningsfönstret. Sändningsfönstret ska vara tillräckligt stort för att täcka `SUBMIT_SM_RESP`-fördröjning. Dess värde representerar det maximala antalet meddelanden som kan dupliceras om ett fel inträffar när fönstret är fullt.
 
-## Problem vid behandling av SR (leveranskvitton) {#issue-process-SR}
+## Utfärda vid behandling av SR (leveranskvitton) {#issue-process-SR}
 
 * SMPP-spår måste vara aktiverade för att du ska kunna utföra någon typ av SR-felsökning.
 
@@ -159,7 +159,7 @@ Om `DELIVER_SM PDU` inte godkänns bör du kontrollera följande:
 
 * Kontrollera att fel har etablerats korrekt i tabellen `broadLogMsg`.
 
-Om `DELIVER_SM PDU` har bekräftats av Adobe Campaign Classic utökade SMPP-anslutare men breda loggar inte uppdateras korrekt kontrollerar du ID-avstämningsprocessen som beskrivs i avsnittet [Matchande MT-, SR- och broadcast-poster](../../delivery/using/sms-protocol.md#matching-mt).
+Om `DELIVER_SM PDU` har bekräftats av Adobe Campaign Classic utökade SMPP-anslutare men breda loggar inte uppdateras korrekt kontrollerar du ID-avstämningsprocessen som beskrivs i avsnittet [Matchande MT-, SR- och broadcast-poster](sms-protocol.md#matching-mt).
 
 Om du har korrigerat allt men vissa ogiltiga SR fortfarande finns i providerns buffertar kan du hoppa över dem genom att använda alternativet&quot;Ogiltigt antal ID-bekräftelser&quot;. Detta ska användas med försiktighet och återställas till 0 så fort som möjligt efter att buffertarna har tömts.
 
@@ -177,9 +177,9 @@ Om du har korrigerat allt men vissa ogiltiga SR fortfarande finns i providerns b
 
 * Om `SUBMIT_SM MT PDU` som innehåller svaret finns i spårningarna men SMS:et inte kommer till mobiltelefonen, måste du kontakta leverantören för hjälp med felsökning.
 
-## Problem vid leveransförberedelse, med undantag för mottagare i karantän (som står i karantän av funktionen för autosvar) {#issue-delivery-preparation}
+## Problem vid färdigställande av leveransen, med undantag för mottagare i karantän (i karantän enligt funktionen för autosvar) {#issue-delivery-preparation}
 
-* Kontrollera att telefonnummerformatet är exakt detsamma i karantäntabellen och i leveransloggen. Om så inte är fallet, gå till det här [avsnittet](../../delivery/using/sms-protocol.md#automatic-reply) om du har problem med plusprefixet för det internationella telefonnummerformatet.
+* Kontrollera att telefonnummerformatet är exakt detsamma i karantäntabellen och i leveransloggen. Om så inte är fallet, gå till det här [avsnittet](sms-protocol.md#automatic-reply) om du har problem med plusprefixet för det internationella telefonnummerformatet.
 
 * Kontrollera korta koder. Undantag kan inträffa om den korta koden för mottagaren antingen är densamma som den är definierad i det externa kontot eller om den är tom (tom = valfri kortkod). Om bara en kort kod används för hela Adobe Campaign-instansen är det enklare att lämna alla **kortkodsfält** tomma.
 
@@ -237,7 +237,7 @@ När du behöver hjälp med ett SMS-problem, oavsett om det gäller att öppna e
 
 * Inkludera alla ändringar eller förbättringar som gjorts på plattformen. Ta även med eventuella ändringar som leverantören kan ha gjort på sin sida.
 
-### Nätverkskarta {#network-capture}
+### Nätverksinspelning {#network-capture}
 
 Nätverksinspelning behövs inte alltid, vanligen räcker det med omfattande SMPP-meddelanden. Här följer några riktlinjer som hjälper dig att avgöra om en nätverksinhämtning behövs:
 
@@ -289,7 +289,7 @@ Ange följande parametrar i `config-instance.xml`-filen:
 <sms args="-tracefilter:SMPP"/>
 ```
 
-## Kontrollera antalet öppna anslutningar för en behållare {#open-connections}
+## Kontrollera antalet öppna anslutningar i en behållare {#open-connections}
 
 Om du vill kontrollera antalet öppna anslutningar i en behållare kan du använda det här kommandot:
 
