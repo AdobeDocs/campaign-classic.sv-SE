@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -39,13 +39,13 @@ Mer information om borttagna och borttagna funktioner finns på den här [sidan]
 
 Gamla SMS-anslutningar använder Java SMS-kopplingen som överför webbprocessen. Om du migrerar till den nya **[!UICONTROL Extended Generic SMPP]**-anslutningen flyttas den här inläsningen till MTA som kan stödja den.
 
-## Migrerar till den utökade allmänna SMPP-anslutningen {#migrating-extended-generic-smpp}
+## Migrera till den utökade allmänna SMPP-anslutningen {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->Även om du kan transponera parametrarna kräver konfigurering av **[!UICONTROL Extended Generic SMPP]**-kopplingen att du pratar med leverantören som ger dig den information som behövs för att fylla i resten av parametrarna. Se denna [sida](../../delivery/using/sms-protocol.md) för mer information om detta.
+>Även om du kan transponera parametrarna kräver konfigurering av **[!UICONTROL Extended Generic SMPP]**-kopplingen att du pratar med leverantören som ger dig den information som behövs för att fylla i resten av parametrarna. Se denna [sida](sms-protocol.md) för mer information om detta.
 
-Först måste du skapa ett nytt externt **[!UICONTROL Extended Generic SMPP]**-konto och sedan kanske du kan ta med några parametrar. Du hittar detaljerad information på den här [sidan](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Först måste du skapa ett nytt externt **[!UICONTROL Extended Generic SMPP]**-konto och sedan kanske du kan ta med några parametrar. Du hittar detaljerad information på den här [sidan](sms-set-up.md#creating-an-smpp-external-account).
 
 Du måste nu fylla i parametrarna på fliken **[!UICONTROL Mobile]** i det nya **[!UICONTROL Extended Generic SMPP]** externa kontot beroende på din tidigare anslutning.
 
@@ -97,7 +97,7 @@ På fliken **[!UICONTROL SMSC specificities]**:
 * **[!UICONTROL Coding when sending]** motsvarar  **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** motsvarar  **[!UICONTROL ID Format in the SR]**
 
-### Från Sybase365-kopplingen {#from-sybase}
+### Från Sybase365-kontakten {#from-sybase}
 
 Från din **[!UICONTROL Sybase365]**-anslutning kan du omvandla till ditt nyligen skapade **[!UICONTROL Extended SMPP]**-konto:
 
@@ -134,7 +134,7 @@ På fliken **[!UICONTROL SMSC specificities]**:
 * **[!UICONTROL Coding when sending]** motsvarar  **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** motsvarar  **[!UICONTROL ID Format in the SR]**
 
-### Från Tele2-anslutningen {#from-tele2}
+### Från Tele2-kontakten {#from-tele2}
 
 Från din **[!UICONTROL Tele2]**-anslutning kan du omvandla till ditt nyligen skapade **[!UICONTROL Extended SMPP]**-konto:
 
@@ -159,7 +159,7 @@ På fliken **[!UICONTROL Mapping of Encoding]**:
 
 * **[!UICONTROL Outbound SMS coding]**
 
-### Från O2-kopplingen {#from-O2}
+### Från O2-kontakten {#from-O2}
 
 Från din **[!UICONTROL O2]**-anslutning kan du omvandla till ditt nyligen skapade **[!UICONTROL Extended SMPP]**-konto:
 
