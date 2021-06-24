@@ -3,7 +3,7 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 48%
@@ -20,9 +20,9 @@ ht-degree: 48%
 
 * **[Frågor och ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> svar om Apples integritetsskyddHitta den första vägledningen som svar på Apples meddelande om iOS 15
 
-* **[Ta bort felaktiga hårda ](delivery/using/update-bounce-qualification.md)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
+* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](technotes/ims-updates.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **
 
-* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](integrations/using/about-adobe-id.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **
+* **[Ta bort felaktiga hårda ](delivery/using/update-bounce-qualification.md)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
 
 * **[Skydda era Campaign-](technotes/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform
 
