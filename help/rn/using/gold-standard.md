@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 På den här sidan visas [!DNL Gold Standard]-versioner. Läs mer om Campaign [!DNL Gold Standard] [på den här sidan](gs-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] version 11{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 release{#gs-11}
 
 _14 april 2021_
 
@@ -43,11 +43,13 @@ _22 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 > * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
+
 >
->Läs mer i Vanliga frågor och svar om uppgradering till [[!DNL Gold Standard]  11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html).
+>
+Läs mer i Vanliga frågor och svar om uppgradering till [[!DNL Gold Standard]  11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html).
 
 Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
@@ -61,7 +63,7 @@ Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
 * Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 10{#gs-10}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10-versionen{#gs-10}
 
 _7 juli 2020_
 
@@ -73,7 +75,7 @@ Korrigerade ett problem som hindrade spårning från att fungera när signaturfu
 >
 >Vi rekommenderar att du uppgraderar klientkonsolen till den som finns i den här versionen. Se [den här sidan](../../installation/using/installing-the-client-console.md)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 9{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9 release{#gs-9}
 
 _22 juni 2020_
 
@@ -89,7 +91,7 @@ Följande korrigeringar är relaterade till spårningslänkens säkerhetsmekanis
 * Korrigerade ett problem med tjänsten mot nätfiske. (NEO-25283)
 * Korrigerade ett problem med spårning när särskilda anpassade spårningsformler användes. (NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 8{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8 release{#gs-8}
 
 _29 april 2020_
 
@@ -114,7 +116,7 @@ Build 9032@3a9dc9c har följande korrigeringar:
 * Korrigerade en regression som fick arbetsflödet för rensning att krascha.
 * Korrigerade en mindre regression i loggfilerna för arbetsflödet för rensning.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6 releaser{#gs-6}
 
 _9 mars 2020_
 
@@ -122,7 +124,7 @@ Build 9032@19f73c5 har följande korrigering:
 
 * Korrigerade ett problem med externa konton som använder FTP över SSL. (NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5 utgåvor{#gs-5}
 
 _17 december 2019_
 
@@ -130,7 +132,7 @@ Build 9032@d6b8062 har följande korrigering:
 
 * Korrigerade ett problem med spårning i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4 utgåvor{#gs-4}
 
 _11 december 2019_
 
@@ -138,7 +140,7 @@ Build 9032@bc4a935 har följande korrigering:
 
 * Korrigerade ett problem med prestandan när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3 utgåvor{#gs-3}
 
 _20 november 2019_
 
@@ -148,7 +150,7 @@ Build 9032@3468c7b har följande korrigeringar:
 * Korrigerade ett problem när kumulativa rapporter för flera leveranser visades. (NEO-18165)
 * Korrigerade ett problem som kunde blockera eller få webbservern att krascha.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 2{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2 releaser{#gs-2}
 
 _19 september 2019_
 
