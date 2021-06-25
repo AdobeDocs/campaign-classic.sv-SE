@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ För att uppnå detta behöver du:
 * Rätt att köra arbetsflöden i både Campaign v7 och Campaign Standard.
 * Rätt att skapa och köra en leverans i Campaign Standard.
 
-## Skapa ett målarbetsflöde med ytterligare data i Campaign v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
+## Skapa ett arbetsflöde för målinriktning med ytterligare data i Campaign v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
 Komplex målinriktning med ytterligare data som inte replikeras i Campaign Standard kan bara uppnås med Campaign v7.
 
@@ -90,7 +90,7 @@ Så här får du den slutliga målgruppen och dess ytterligare data:
 
 1. Spara arbetsflödet. I nästa avsnitt visas hur du delar populationen med ACS.
 
-## Dela målet med Campaign Standarden {#share-the-target-with-campaign-standard}
+## Dela målet med Campaign Standard {#share-the-target-with-campaign-standard}
 
 När målpopulationen har definierats kan du dela den med ACS via en **[!UICONTROL List update]**-aktivitet.
 
@@ -121,7 +121,7 @@ Genom att skapa ett leveransarbetsflöde i Campaign Standard är det sedan möjl
 
    Den här aktiviteten används för att hämta data för den valda målgruppen. Du kan även använda ytterligare **[!UICONTROL Source Filtering]** om det behövs genom att använda aktivitetens flik enligt.
 
-1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet och konfigurera den som en annan [e-postleveransaktivitet](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet och konfigurera den som en annan [e-postleveransaktivitet](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Öppna leveransinnehållet.
 1. Lägg till ett personaliseringsfält.  Leta reda på noden **[!UICONTROL Additional data (targetData)]** på popup-menyn. Den här noden innehåller ytterligare data om målgruppen som beräknades i det inledande målarbetsflödet. Du kan använda dem som vilket annat personaliseringsfält som helst.
 
