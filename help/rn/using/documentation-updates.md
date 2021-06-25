@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '4470'
-ht-degree: 97%
+source-wordcount: '4466'
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,19 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## Juni 2021 {#june-2021}
 
-Avsnittet **Transactional Messaging** har organiserats om och förtydligats med ett nytt Get started-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att få en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
+Avsnittet **Transaktionella meddelanden** har organiserats om och förtydligats med ett nytt Kom igång-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att få en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
 
 **Dokumentationsuppdateringar kommer med utgåvan 21.1.3**
 
 Integrering med Adobe Journey Orchestration - [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Ett steg-för-steg-exempel visas i [den här sidan](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
 
-Förbättringar av LINE-kanaler - [Läs mer](../../delivery/using/line-channel.md)
+Förbättringar av -kanaler - [Läs mer](../../delivery/using/line-channel.md)
 
 Ny Vertica FDA-koppling - [Läs mer](../../installation/using/configure-fda-vertica.md)
 
 Ny Google Big Query FDA-koppling - [Läs mer](../../installation/using/configure-fda-google-big-query.md)
 
-Den tekniska arbetsflödesbeskrivningen Fakturering (fakturering) omfattar nu de uppgifter som ursprungligen utfördes av Antal aktiva faktureringsprofiler (faktureringActiveContactCount). [Läs mer](../../workflow/using/about-technical-workflows.md)
+Den tekniska arbetsflödesbeskrivningen &quot;Fakturering (fakturering)&quot; omfattar nu de uppgifter som ursprungligen utfördes av &quot;Antal aktiva faktureringsprofiler (billingActiveContactCount)”. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 ## Maj 2021 {#may-2021}
 
@@ -468,7 +468,7 @@ Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentatio
 
 En ny sida med felsökning har lagts till för spårning i Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/classic-tracking-troubleshooting.html).
 
-En ny sida med bästa praxis för Adobe Analytics Connector har lagts till. [Läs mer om Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
+En ny sida med bästa övningarna för Adobe Analytics Connector har lagts till. [Läs mer om Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
 Starthandboken Bästa praxis för leverans har flyttats och uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
@@ -492,7 +492,7 @@ Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har u
 
 **Nya funktioner i version 19.1**
 
-Kontrollpanel – [läs mer](https://docs.adobe.com/content/help/sv-SE/control-panel/using/control-panel-home.html)
+Kontrollpanel – [läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
@@ -546,7 +546,7 @@ Två nya alternativ har lagts till i listan över alternativ i Campaign: XtkSecu
 Information har lagts till om de olika externa konton som är tillgängliga i Campaign Classic och hur de konfigureras.
 [Läs mer](../../installation/using/external-accounts.md)
 
-Avsnittet Analytics Connector har uppdaterats för att återspegla gränssnittsändringar.
+Avsnittet Analytics Connector har uppdaterats för att återspegla ändringar i gränssnittet.
 [Läs mer](../../platform/using/adobe-analytics-connector.md)
 
 Information har lagts till om faktureringsrapporten.
@@ -599,4 +599,4 @@ Avsnittet &quot;Arbetsflödesövervakning&quot; har uppdaterats med ett meddelan
 
 Ett användningsfall har lagts till om hur du skickar ett e-postmeddelande med anpassade datafält med hjälp av berikandeaktiviteten i ett arbetsflöde. [Läs mer](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-Videor med funktioner har flyttats [hit](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/overview.html).
+Videor med funktioner har flyttats [hit](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
