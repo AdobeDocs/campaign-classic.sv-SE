@@ -6,7 +6,7 @@ feature: Översikt
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Adobe Campaign kan driftsättas lokalt: alla komponenter i Adobe Campaign, inklu
 
 ![](assets/deployment_onpremise.png)
 
-Innan du börjar driftsätta Campaign Classic som en lokal kund måste du uppfylla följande krav och rekommendationer:
+Som lokal kund, innan du börjar distribuera Campaign Classic, tar du hand om följande krav och rekommendationer:
 
 * Läs igenom [Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) som visar alla versioner av de system och komponenter som stöds för Adobe Campaign.
 * Beroende på din miljö kan du läsa [förutsättningarna för Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) och [förutsättningarna för Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
