@@ -6,10 +6,10 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1d25bdaf0d118ec5788d467c48c3c40c5891e46d
+source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 99%
+source-wordcount: '549'
+ht-degree: 96%
 
 ---
 
@@ -155,7 +155,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Läs mer</a>.</p>
+<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## Client Console {#ClientConsoleoperatingsystems}
 
-:varning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
+:warning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
 
 ### Operativsystem
 
