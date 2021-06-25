@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 92%
 
 ---
 
@@ -21,11 +21,11 @@ Lär dig att rikta in dig på en grupp och hantera publiker inom Adobe Campaign.
 
 Du kan importera mottagare eller skapa dem manuellt med hjälp av klientkonsolen i Campaign. Läs [det här avsnittet](../../platform/using/about-profiles.md) och lär dig hur du skapar och hanterar profiler i Campaign.
 
-## Så importerar man profiler. {#how-to-import-profiles-}
+## Så här importerar du profiler? {#how-to-import-profiles-}
 
 Upptäck enkla användningsfall för att [importera profiler](../../platform/using/import-operations-samples.md) i din databas.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Hur definierar jag målgruppen för en marknadsföringskampanj? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -38,7 +38,7 @@ En lista är en statisk uppsättning mottagare som kan användas för leveranså
 
 [Klicka här för att läsa mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) och [även i den här videon](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) och [även i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Hur kan jag avduplicera en grupp innan jag skickar ett meddelande? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
