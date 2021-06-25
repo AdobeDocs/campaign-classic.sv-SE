@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1195'
 ht-degree: 3%
 
 ---
@@ -39,13 +39,13 @@ När en mottagare klickar på länken för att avbryta prenumerationen i ett e-p
 >
 >Be din konsult konfigurera webbprogrammet för avprenumerationstjänsten innan du följer stegen nedan.
 
-## Skapar en ny mottagare {#creating-a-new-recipient}
+## Skapa en ny mottagare {#creating-a-new-recipient}
 
 1. Skapa en ny mottagare i Campaign v7 för replikering till Campaign Standard. Ange så mycket information som möjligt, inklusive mottagarens efternamn, förnamn, e-postadress och postadress. Välj emellertid inte en **[!UICONTROL Salutation]** eftersom den kommer att läggas till i nästa avsnitt, [Redigera en mottagare](#editing-a-recipient). Mer information finns i [Lägga till mottagare](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Bekräfta att den nya mottagaren har lagts till i Campaign Standarden. När du granskar profilen bör du kontrollera att de data du angav i Campaign v7 också är tillgängliga i Campaign Standard. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/sv-SE/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Bekräfta att den nya mottagaren har lagts till i Campaign Standarden. När du granskar profilen bör du kontrollera att de data du angav i Campaign v7 också är tillgängliga i Campaign Standard. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -59,7 +59,7 @@ Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Ca
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Bekräfta att mottagarens namn har uppdaterats i Campaign Standard. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Bekräfta att mottagarens namn har uppdaterats i Campaign Standard. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -85,7 +85,7 @@ Mer information och fullständiga anvisningar om arbetsflöden för Campaign Sta
    * Dra **[!UICONTROL Profiles]** till arbetsytan. Använd listrutan i fältet för att välja **[!UICONTROL Is external resource]** för att hitta profiler som replikerats från Campaign v7.
    * Dra andra frågeparametrar om du vill ange de replikerade profilerna som mål ytterligare.
 
-## Skapar en leverans {#creating-a-delivery}
+## Skapa en leverans {#creating-a-delivery}
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
 
    ![](assets/acs_connect_profile_sync_19.png)
 
-## Verifierar avprenumerationstjänsten {#verifying-the-unsubscription-service}
+## Verifiera avprenumerationstjänsten {#verifying-the-unsubscription-service}
 
 Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skapa en leverans](#creating-a-delivery) innan du går vidare till stegen nedan.
 
@@ -172,6 +172,6 @@ Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skap
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standard finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
