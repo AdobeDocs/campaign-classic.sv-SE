@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 99%
+source-wordcount: '881'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Läs [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/campaign-priva
 
 Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://docs.adobe.com/content/help/sv-SE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hur väljer jag publiken för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -128,6 +128,6 @@ Adobe utvärderar ständigt funktionerna i produkten. Adobe gör detta för att 
 
 ## Finns det nya dokumentationsuppdateringar och hjälpmaterial? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De senaste dokumentationsuppdateringarna för Campaign Classic listas [på den här sidan](https://docs.adobe.com/content/help/sv-SE/campaign-classic/using/documentation-updates.html).
+De senaste dokumentationsuppdateringarna för Campaign Classic listas [på den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 Du kan även se de senaste tekniska dokumenten som finns [på den här sidan](https://helpx.adobe.com/se/campaign/kb/article-list.html).
