@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Tillgångstjänster:
 
 När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i bastjänsten Assets eller Adobe Experience Manager Assets.
 
-De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html).
+De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
 
 Läs avsnittet [Konfigurera åtkomst till resurser](../../integrations/using/configuring-access-to-assets.md) om du vill veta mer om de detaljer som är länkade till varje bibliotek.
 
