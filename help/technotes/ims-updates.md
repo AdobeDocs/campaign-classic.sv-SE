@@ -4,7 +4,7 @@ title: Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 hide: true
 hidefromtoc: true
-source-git-commit: b8f3ba60e34f6c5429c63ed934083ebae180cf43
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -38,13 +38,13 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
    Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
    * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
-   * Campaign 20.3.3-utgåvan. [Läs mer](../rn/using/release--20-3.md)
+   * Campaign 21.1.3-utgåvan. [Läs mer](../rn/using/latest-release.md)
    * Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
    * Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
    * Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
    * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
 
-Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter den 30 juni 2021 **.**
+   Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter den 30 juni 2021 **.**
 
 Dessutom måste den senaste uppdateringen av [Windows-versionen](../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd, vara installerad på varje användares dator.
 
