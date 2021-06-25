@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 98bbbb36c9f8156cc34e826a024ff6e6e3f3fee3
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -28,7 +28,7 @@ Vi rekommenderar att du omsluter URL:er i avgränsare på fliken **[!UICONTROL T
 * Hakparenteser [ ]
 * Klammerparenteser {}
 
-I det här exemplet följs URL:en https://www.adobe.com av ett semikolon (;). Halvkolonet kan tolkas av mottagarens e-postklienter som en del av URL:en. Därför kan länken brytas. För att undvika det här problemet kan du omge URL-adressen i avgränsare på något av följande sätt:
+I det här exemplet följs URL:en https://www.adobe.com av ett semikolon. Semikolon kan tolkas av mottagarens e-postklienter som en del av URL:en. Därför kan länken brytas. För att undvika det här problemet kan du omge URL-adressen i avgränsare på något av följande sätt:
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
