@@ -5,9 +5,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1099'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,6 @@ Om miljön är på en lägre nivå än de som anges nedan påverkas du:
 
 * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../rn/using/latest-release.md)
-* Campaign 20.3.3-utgåvan. [Läs mer](../rn/using/release--20-3.md)
 * Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
 * Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
 * Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
@@ -60,7 +59,7 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 >Om du inte kan uppgradera inom den rekommenderade tidsramen, **bör du kontakta Adobe kundtjänstteam för att göra en kortsiktig manuell säkerhetskorrigering för dina instanser**.
 
 
-## Uppdatering av Campaign Classic Client Console {#acc-cc-updates}
+## Campaign Classic Client Console - uppdatering  {#acc-cc-updates}
 
 **Nu tillgängliga**-konsolversionerna nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
@@ -81,7 +80,6 @@ Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe
 
 * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../rn/using/latest-release.md)
-* Campaign 20.3.3-utgåvan. [Läs mer](../rn/using/release--20-3.md)
 * Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
 * Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
 * Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
@@ -103,7 +101,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 * [Lär dig hur du installerar Campaign Client Console](../installation/using/installing-the-client-console.md).
 
-## Integrering med Experience Cloud-utlösare {#acc-triggers-updates}
+## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
 Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 november 2021 **.** [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -167,6 +165,6 @@ Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa 
 ## Användbara länkar
 
 * [Uppgradera din miljö](../production/using/build-upgrade.md)
-* [Vanliga frågor och svar om builduppgradering](../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om Builduppgradering](../platform/using/faq-build-upgrade.md)
 * [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../installation/using/client-console-availability-for-windows.md)
