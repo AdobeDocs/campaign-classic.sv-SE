@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 100%
@@ -59,7 +59,7 @@ För att underlätta beredskapen gällande din integritet kan du hantera förfr�
 
 Se [implementeringsstegen](../../platform/using/privacy-requests.md) för att läsa om hur du kan skapa förfrågningar om **åtkomst** och **borttagning** och hur Adobe Campaign bearbetar dem.
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
 
 ## Medgivande, lagring och roller {#consent-retention-roles}
