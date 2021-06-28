@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Kampanjelement finns på fliken **[!UICONTROL Campaigns]**: här kan du se en ö
 * **Kampanjkalender**: planeringskalender, marknadsföringsprogram, leveranser och kampanjer. Se [Kampanjkalender](#campaign-calendar).
 * **Kampanjer**: tillgång till kampanjer i alla marknadsföringsprogram.
 * **Leveranser**: åtkomst till leveranser som är kopplade till kampanjerna.
-* **Webbprogram**: tillgång till webbapplikationer (formulär, undersökningar osv.).
+* **Webbprogram**: tillgång till webbapplikationer (formulär, landningssidor osv.).
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Kampanjer kan nås via kampanjkalendern, fliken **[!UICONTROL Schedule]** i prog
 
    ![](assets/campaign_edit_from_list.png)
 
-### Kontrollera en kampanj {#controlling-a-campaign}
+### Styra en kampanj {#controlling-a-campaign}
 
 #### Kontrollpanel {#dashboard}
 
@@ -125,7 +125,7 @@ En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger sche
 
 För varje kampanj kan operatörerna utbyta meddelanden via ett särskilt forum.
 
-Mer information finns i [Diskussionsforum](../../campaign/using/discussion-forums.md).
+Mer information finns i [Diskussionsforum](../../mrm/using/discussion-forums.md).
 
 #### Rapporter {#reports}
 
