@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 2%
+source-wordcount: '965'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Följande identifieringsmetoder är möjliga:
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   Du kan lägga till fält i formuläregenskaperna via fliken **[!UICONTROL Parameters]** (se [Lägga till parametrar](../../web/using/defining-web-forms-properties.md#adding-parameters)). De placeras i formulärets URL-adress eller indatazoner.
+   Du kan lägga till fält i formuläregenskaperna via fliken **[!UICONTROL Parameters]** (se [Lägga till parametrar](defining-web-forms-properties.md#adding-parameters)). De placeras i formulärets URL-adress eller indatazoner.
 
    >[!CAUTION]
    >
@@ -71,17 +71,17 @@ Du kan till exempel förhandsladda mottagarens kön och automatiskt dirigera hon
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
-## Hantera distribution och spårning av webbformulär{#managing-web-forms-delivery-and-tracking}
+## Hantera distribution och spårning av webbformulär {#managing-web-forms-delivery-and-tracking}
 
 När formuläret har skapats, konfigurerats och publicerats kan du leverera det och spåra användarsvar.
 
-### Livscykel för ett formulär {#life-cycle-of-a-form}
+### Formulärets livscykel {#life-cycle-of-a-form}
 
 En forms livscykel består av tre steg:
 
 1. **Formuläret redigeras**
 
-   Detta är den inledande designfasen. När ett nytt formulär skapas är det i redigeringsfasen. Åtkomst till formuläret, endast i testningssyfte, kräver sedan att parametern **[!UICONTROL __uuid]** används i dess URL. Den här URL:en är tillgänglig på underfliken **[!UICONTROL Preview]**. Se [Formulär-URL-parametrar](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Detta är den inledande designfasen. När ett nytt formulär skapas är det i redigeringsfasen. Åtkomst till formuläret, endast i testningssyfte, kräver sedan att parametern **[!UICONTROL __uuid]** används i dess URL. Den här URL:en är tillgänglig på underfliken **[!UICONTROL Preview]**. Se [Formulär-URL-parametrar](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -123,7 +123,7 @@ För att användarna ska kunna komma åt formuläret måste det vara i produktio
 
 * Klicka på länken **[!UICONTROL Personalize the message displayed if the form is closed...]** för att definiera felmeddelandet som ska visas om användaren försöker få åtkomst till formuläret medan det inte är giltigt.
 
-   Se [Formulärets tillgänglighet](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
+   Se [Formulärets tillgänglighet](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Leverera ett formulär via e-post {#delivering-a-form-via-email}
 
@@ -135,7 +135,7 @@ När du skickar en inbjudan via e-post kan du använda alternativet **[!UICONTRO
 
 I det här fallet måste avstämningsnyckeln för datalagring vara mottagarens krypterade identifierare. Mer information finns i [Förhandsladda formulärdata](#pre-loading-the-form-data).
 
-I så fall måste du markera alternativet **[!UICONTROL Update the preloaded record]** i postrutan. Mer information finns i [Spara svar på webbformulär](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+I så fall måste du markera alternativet **[!UICONTROL Update the preloaded record]** i postrutan. Mer information finns i [Spara svar på webbformulär](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
@@ -154,7 +154,3 @@ Markera en mottagare och klicka på knappen **[!UICONTROL Detail...]** för att 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 Du kan bearbeta svarsloggarna i frågor, till exempel för att endast rikta sig till icke-svarande när du skickar påminnelser, eller för att endast erbjuda specifik kommunikation till svaranden.
-
->[!NOTE]
->
->Om du vill ha en fullständig spårning av svaren kan du exportera svaren och visa eller skapa dedikerade rapporter med hjälp av den valfria modulen **Survey**. Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).
