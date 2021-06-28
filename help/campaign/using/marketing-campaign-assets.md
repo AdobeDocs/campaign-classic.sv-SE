@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -25,9 +25,9 @@ I en kampanj kan du även hänvisa till andra saker, som kampanjkuponger, specia
 
 >[!NOTE]
 >
->Om du använder modulen för hantering av marknadsföringsresurser för Campaign kan du även hantera ett bibliotek med marknadsföringsresurser som är tillgängliga för flera användare för samarbete. [Läs mer](../../campaign/using/managing-marketing-resources.md).
+>Om du använder modulen för hantering av marknadsföringsresurser för Campaign kan du även hantera ett bibliotek med marknadsföringsresurser som är tillgängliga för flera användare för samarbete. [Läs mer](../../mrm/using/managing-marketing-resources.md).
 
-## Lägg till dokument {#adding-documents}
+## Lägga till dokument {#adding-documents}
 
 Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på programnivå (allmänna dokument).
 
@@ -54,7 +54,7 @@ På kontrollpanelen grupperas dokument som är kopplade till kampanjen i avsnitt
 
 De kan också redigeras och ändras i den här vyn.
 
-## Associera och strukturera resurser som är länkade via en leveransdisposition {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+## Associera och strukturera resurser som är länkade via en leveransöversikt {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ En disposition kan innehålla objekt och personaliseringsfält, resurser och erb
 
    >[!NOTE]
    >
-   >Mer information om marknadsföringsresurser finns i [det här avsnittet](../../campaign/using/managing-marketing-resources.md).
+   >Mer information om marknadsföringsresurser finns i [det här avsnittet](../../mrm/using/managing-marketing-resources.md).
 
 ### Markera en kontur {#selecting-an-outline}
 
