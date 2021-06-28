@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # Spåra besök i en webbapplikation{#tracking-a-web-application}
 
-Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla webbapplikationstyper (formulär, onlineundersökningar, webbsidor som skapats med DCE etc.).
+Med Adobe Campaign kan du spåra och mäta besök på webbprogramsidor genom att infoga spårningstaggar. Den här funktionen kan användas för alla typer av webbprogram (formulär, webbsidor etc.).
 
 Därför kan du definiera flera navigeringsvägar och utvärdera hur de fungerar. Återskapade data är sedan tillgängliga i rapporter för respektive program.
 
@@ -55,13 +55,11 @@ För att identifiera trafikkällan i ett webbprogram söker Adobe Campaign efter
 
 >[!NOTE]
 >
->Kom ihåg att anonym spårning bara är möjligt om motsvarande alternativ har aktiverats i distributionsguiden.
->
->Mer information finns i [Installationsguiden](../../installation/using/deploying-an-instance.md).
+>Anonym spårning är bara tillgängligt om alternativet har aktiverats i distributionsguiden när Campaign installeras.
 
 ## Webbprogram utformade med DCE (Digital Content Editor) {#web-applications-designed-with-digital-content-editor--dce-}
 
-När ett webbprogram skapas med HTML-redigeraren - **Digital Content Editor (DCE)** - infogas spårningstaggar från fliken **[!UICONTROL Properties]** i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](../../web/using/about-campaign-html-editor.md).
+När ett webbprogram skapas med HTML-redigeraren - **Digital Content Editor (DCE)** - infogas spårningstaggar från fliken **[!UICONTROL Properties]** i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
