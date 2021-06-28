@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3048'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
 
-## Distributionsguiden {#deployment-wizard}
+## Distributionsguide {#deployment-wizard}
 
 Med en grafisk guide, som är tillgänglig i Adobe Campaign klientkonsol, kan du definiera parametrarna för den instans som du ska ansluta till.
 
@@ -204,7 +204,7 @@ Med en arkitektur som bygger på flera källor kan ni externalisera spårningsha
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
-### Sparar spårning {#saving-tracking}
+### Spårning sparas {#saving-tracking}
 
 När URL-adresserna har fyllts i måste du registrera spårningsservern.
 
@@ -275,7 +275,7 @@ Ange följande information:
 * **[!UICONTROL Label]** : Ange ett namn för det här SMS-/Wap-push-kontot. Du kanske vill använda namnet på routern.
 * För fälten **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]**: Kontakta tjänsteleverantören för att få de inställningar som krävs.
 
-### Parametrar för SMS skickade {#parameters-of-sms-sent}
+### Parametrar för SMS har skickats {#parameters-of-sms-sent}
 
 I listrutan **Prioritet**: Välj &quot;Normal&quot;, &quot;Hög&quot; eller &quot;Urgent&quot; för att använda det på de meddelanden som ska skickas.
 
@@ -292,7 +292,7 @@ Konfigurationsalternativen för karantän är följande:
 * **[!UICONTROL Time between two significant errors]** : Ange ett standardvärde (som standard &quot;1d&quot;: dag) för att definiera tiden som programmet väntar innan räknaren ökas för ett fel.
 * **[!UICONTROL Maximum number of errors before quarantine]** : När det här värdet har nåtts sätts mobilnumret i karantän (som standard&quot;5&quot;: talet sätts i karantän vid det sjätte felet). Det innebär att kontakten automatiskt utesluts från framtida leveranser.
 
-## Regionala inställningar {#regional-settings}
+## Nationella inställningar {#regional-settings}
 
 I det här steget kan du ange inställningar för dataprofiler.
 
@@ -357,7 +357,7 @@ I en leverans kan du använda bilder som lagras i resursbiblioteket eller någon
 
 * För offentliga resurser anger URL:en **https://** server **/res/** instance ****där **instance**är namnet på spårningsinstansen.
 
-### Avbildningsidentifiering för leverans {#delivery-image-detection}
+### Avbildningsidentifiering {#delivery-image-detection}
 
 I en leverans kan du använda bilder som lagras i resursbiblioteket eller någon annan lokal bild eller bild som lagras på en server.
 
@@ -372,7 +372,7 @@ Du kan ange flera URL-masker genom att använda kommatecken för att skilja på 
 
 ### Publiceringslägen {#publication-modes}
 
-I det nedre avsnittet av guiden kan du välja publiceringsalternativ för offentliga resurser och bilder. Dessa alternativ är också tillgängliga för webbformulär och enkäter.
+I det nedre avsnittet av guiden kan du välja publiceringsalternativ för offentliga resurser och bilder.
 
 Följande publiceringslägen är tillgängliga:
 
