@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2222'
 ht-degree: 1%
 
 ---
@@ -163,7 +163,7 @@ Den består av tre grenar:
 * **[!UICONTROL application parameter equals 'thanks']** : Om du vill lägga ett visningsfel som är länkat till Facebook pekar webbprogrammets slutsida mot URL:en för det Facebook-program som  **[!UICONTROL app_data]** parametern läggs till i med  **[!UICONTROL thanks]** värdet (mer information finns i:  [Avsluta aktivitet](#end-activity)). I den andra grenen kan du ta reda på om användaren kommer från aktiviteten **[!UICONTROL End]** i den första grenen (och just har anmält sig till tävlingen) för att visa ett tackmeddelande. Mer information om hur du använder ytterligare URL-parametrar finns i: [Hur vidarebefordrar jag inställningar till ett Facebook-program?](#how-to-forward-settings-to-a-facebook-application-).
 * **[!UICONTROL Default branch]** : Om användaren redan har anmält sig till tävlingen (ID har redan angetts) vid ett tidigare datum (en annan programparameter än  **[!UICONTROL thanks]**) visas en sida som anger att användaren redan har anmält sig.
 
-### Konkurrenssidan {#competition-page}
+### Konkurrenssida {#competition-page}
 
 Om du vill gå åt sidan av det visningsfel som är länkat till Facebook måste du även välja **[!UICONTROL Parent window]** eller **[!UICONTROL In the top window]** i fältet **[!UICONTROL Window]** på tävlingssidan.
 
@@ -257,7 +257,7 @@ I vårt exempel är det värde som används **tack**.
 
 ![](assets/social_webapp_027.png)
 
-### Skärmen Detaljer för en besökare {#details-screen-of-a-visitor}
+### Besökarens informationsskärm {#details-screen-of-a-visitor}
 
 Precis som för Twitter följare (se: [Funktionsprincip](../../social/using/publishing-on-twitter.md#operating-principle)), återställda Facebook-profiler lagras i besökartabellen. Om du vill visa listan över besökare går du till noden **[!UICONTROL Profiles and Targets > Visitors]**.
 
@@ -297,7 +297,7 @@ Skärmen **[!UICONTROL Activities]** på en besökares informationssida innehål
    >
    >För att Adobe Campaign ska kunna samla in en fan-ins måste du klicka på knappen **[!UICONTROL Subscribe]** på skärmen för tjänstkonfiguration. Mer information finns i [Konfigurera externa konton](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
-## Läs in formulärfälten i förväg med Facebook profildata {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
+## Hur man läser in ett formulär i förväg med hjälp av Facebook profildata {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
 Med **[!UICONTROL Social Marketing]**-programmet kan du även lägga till en knapp i ett formulär för att läsa in fält i förväg med hjälp av Facebook profilinformation. Det här alternativet, som är tillgängligt i alla webbprogrammallar (**[!UICONTROL Page]** typaktiviteter), beskrivs i [det här avsnittet](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
@@ -306,3 +306,55 @@ Med **[!UICONTROL Social Marketing]**-programmet kan du även lägga till en kna
 >[!NOTE]
 >
 >Innan du börjar använda den här funktionen måste du skapa ett Facebook-program och ett externt konto av typen **[!UICONTROL Facebook Connect]**. Mer information finns i [Konfigurera externa konton](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+**Läs in formulärfälten i förväg med data från Facebook-profilen**
+
+Du skapar ett webbformulär och inkluderar element som användaren inte har någon interaktion med på formulärets sidor; det är statiska element som bilder, HTML-innehåll, ett vågrätt fält eller en hypertextlänk. Läs mer om statiska element i ett webbformulär i [den här sidan](../../web/using/static-elements-in-a-web-form.md).
+
+När du infogar ett statiskt element kan du med **[!UICONTROL Preload with Facebook]**-alternativet infoga en knapp i ett formulär för att förhandsladda fält med hjälp av Facebook-profilinformation.
+
+![](assets/web_social_webapp_037.png)
+
+När en användare klickar på knappen **[!UICONTROL Fill in automatically]** öppnas Facebook behörighetsfönster.
+
+![](assets/web_social_webapp_029.png)
+
+>[!NOTE]
+>
+>Du kan ändra listan med utökade rättigheter när du konfigurerar det externa kontot. Om inga utökade behörigheter har konfigurerats vidarebefordrar Facebook basprofilinformationen som standard.\
+>[Se Facebook-dokumentationen](https://developers.facebook.com/docs/reference/api/permissions) om du vill visa en lista över utökade rättigheter och deras syntax.
+
+Om användaren går med på att dela sin information är formulärfälten förinlästa.
+
+![](assets/web_social_webapp_030.png)
+
+I det här fallet har vi skapat ett webbprogram som består av följande element:
+
+* en sida som innehåller formuläret
+* en **[!UICONTROL Record]**-aktivitet
+* en **[!UICONTROL End]**-aktivitet
+
+![](assets/social_webapp_031.png)
+
+Så här lägger du till en förinläsningsknapp:
+
+1. Skapa ett formulär.
+
+   ![](assets/social_webapp_032.png)
+
+1. Gå till samma nivå som fälten i formuläret och lägg till en länk.
+
+   ![](assets/social_webapp_033.png)
+
+1. Ange etiketten och välj typen **[!UICONTROL Button]**.
+
+   ![](assets/social_webapp_034.png)
+
+1. Gå till fältet **[!UICONTROL Action]** och välj **[!UICONTROL Preload with Facebook]**.
+
+   ![](assets/social_webapp_035.png)
+
+1. Gå till fältet **[!UICONTROL Application]** och välj det externa konto av typen **[!UICONTROL Facebook Connect]** som skapades tidigare. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
+
+   ![](assets/social_webapp_036.png)
+
