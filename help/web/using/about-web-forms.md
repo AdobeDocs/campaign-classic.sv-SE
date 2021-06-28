@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -57,22 +57,22 @@ Så här definierar du konfigurationen och innehållet i webbformuläret:
 
 * Definiera sidsekvenser och villkor för visningen.
 
-   Det här steget beskrivs i [Definiera sidsekvenser för webbformulär](../../web/using/defining-web-forms-page-sequencing.md).
+   Det här steget beskrivs i [Definiera sidsekvenser för webbformulär](defining-web-forms-page-sequencing.md).
 
 * Översätt innehållet om det behövs.
 
-   Det här steget beskrivs i [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+   Det här steget beskrivs i [Översätta ett webbformulär](translating-a-web-form.md).
 
-## Om webbformulär som designar {#about-web-forms-designing}
+## Om webbformulär {#about-web-forms-designing}
 
-Formulärets sidor skapas via en specifik redigerare där du kan definiera och konfigurera indatagränser (text), urvalsfält (listor, kryssrutor osv.) och statiska element (bilder, HTML-innehåll osv.). De kan grupperas i behållare och deras layout ändras efter dina behov (mer information finns i [Skapa behållare](../../web/using/defining-web-forms-layout.md#creating-containers)).
+Formulärets sidor skapas via en specifik redigerare där du kan definiera och konfigurera indatagränser (text), urvalsfält (listor, kryssrutor osv.) och statiska element (bilder, HTML-innehåll osv.). De kan grupperas i behållare och deras layout ändras efter dina behov (mer information finns i [Skapa behållare](defining-web-forms-layout.md#creating-containers)).
 
 I följande avsnitt beskrivs hur du definierar innehåll och layout för formulärskärmar:
 
-* [Lägga till fält i ett webbformulär](../../web/using/adding-fields-to-a-web-form.md),
-* [Infoga HTML-innehåll](../../web/using/static-elements-in-a-web-form.md#inserting-html-content),
-* [Statiska element i ett webbformulär](../../web/using/static-elements-in-a-web-form.md),
-* [Definiera ett webbformulärs layout](../../web/using/defining-web-forms-layout.md).
+* [Lägga till fält i ett webbformulär](adding-fields-to-a-web-form.md),
+* [Infoga HTML-innehåll](static-elements-in-a-web-form.md#inserting-html-content),
+* [Statiska element i ett webbformulär](static-elements-in-a-web-form.md),
+* [Definiera ett webbformulärs layout](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
