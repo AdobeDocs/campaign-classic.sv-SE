@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Detta innebär att om användaren väljer ett nyttofordon, erbjuder formuläret 
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## Använda insamlad information {#using-collected-information}
+## Använda insamlade uppgifter {#using-collected-information}
 
 För varje formulär kan svaren återanvändas i fälten eller etiketterna. Följande syntaxer måste användas:
 
@@ -107,7 +107,7 @@ För varje formulär kan svaren återanvändas i fälten eller etiketterna. Föl
    >
    >Till skillnad från andra fält där `<%=`-tecken ersätts med escape-tecken, sparas HTML-innehållet som det är med syntaxen `<%==`.
 
-## Sparar svar på webbformulär {#saving-web-forms-answers}
+## Spara svar på webbformulär {#saving-web-forms-answers}
 
 Om du vill spara den information som samlas in på sidorna i ett formulär måste du placera en lagringsruta i diagrammet.
 
@@ -115,9 +115,9 @@ Om du vill spara den information som samlas in på sidorna i ett formulär måst
 
 Det finns två sätt att använda den här rutan:
 
-* Om webbformuläret nås via en länk som skickas i ett e-postmeddelande, och om användaren som använder programmet redan finns i databasen, kan du markera alternativet **[!UICONTROL Update the preloaded record]**. Mer information finns i [Leverera ett formulär via e-post](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Om webbformuläret nås via en länk som skickas i ett e-postmeddelande, och om användaren som använder programmet redan finns i databasen, kan du markera alternativet **[!UICONTROL Update the preloaded record]**. Mer information finns i [Leverera ett formulär via e-post](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   I det här fallet använder Adobe Campaign den krypterade primärnyckeln för användarprofilen, som är en unik identifierare som tilldelas varje profil av Adobe Campaign. Du måste konfigurera informationen så att den kan läsas in i förväg via förinläsningsrutan. Mer information finns i [Förhandsladda formulärdata](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+   I det här fallet använder Adobe Campaign den krypterade primärnyckeln för användarprofilen, som är en unik identifierare som tilldelas varje profil av Adobe Campaign. Du måste konfigurera informationen så att den kan läsas in i förväg via förinläsningsrutan. Mer information finns i [Förhandsladda formulärdata](publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
