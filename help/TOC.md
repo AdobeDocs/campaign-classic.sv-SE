@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan ni använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha - via e-post, mobiler, offlinekanaler med mera.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -261,12 +261,6 @@ ht-degree: 98%
       + [Konfigurera och hantera godkännanden](campaign/using/marketing-campaign-approval.md)
       + [Övervaka dina kampanjer](campaign/using/marketing-campaign-monitoring.md)
       + [Leverantörer, lager och budgetar](campaign/using/providers--stocks-and-budgets.md)
-   + Uppgifter, resurser och budgetar {#tasks--resources-and-budgets}
-      + [Om att hantera marknadsföringsresurser](campaign/using/about-marketing-resource-management.md)
-      + [Skapa och hantera uppgifter](campaign/using/creating-and-managing-tasks.md)
-      + [Kontrollera kostnader](campaign/using/controlling-costs.md)
-      + [Hantera marknadsföringsresurser](campaign/using/managing-marketing-resources.md)
-      + [Diskussionsforum](campaign/using/discussion-forums.md)
    + Kampanjoptimering {#campaign-optimization}
       + [Om kampanjtypologier](campaign/using/about-campaign-typologies.md)
       + [Tryckregler](campaign/using/pressure-rules.md)
@@ -275,20 +269,26 @@ ht-degree: 98%
       + [Filtreringsregler](campaign/using/filtering-rules.md)
       + [Tillämpa regler](campaign/using/applying-rules.md)
       + [Simuleringar i Campaign](campaign/using/campaign-simulations.md)
-   + Distribuerad marknadsföring {#distributed-marketing}
-      + [Om distribuerad marknadsföring](campaign/using/about-distributed-marketing.md)
-      + [Skapa en lokal kampanj](campaign/using/creating-a-local-campaign.md)
-      + [Skapa en samverkanskampanj](campaign/using/creating-a-collaborative-campaign.md)
-      + [Publicera kampanjpaketet](campaign/using/publishing-the-campaign-package.md)
-      + [Åtkomst till kampanjer](campaign/using/accessing-campaigns.md)
-      + [Spåra en kampanj](campaign/using/tracking-a-campaign.md)
-      + [Användningsfall](campaign/using/examples.md)
-   + Responshanteraren {#response-manager}
-      + [Kom igång med responshanteraren](campaign/using/about-response-manager.md)
-      + [Konfiguration](campaign/using/configuration.md)
-      + [Hypotesmallar](campaign/using/hypothesis-templates.md)
-      + [Skapa hypoteser](campaign/using/creating-hypotheses.md)
-      + [Spårning av hypoteser](campaign/using/hypothesis-tracking.md)
++ Hantering av marknadsföringsresurser {#mrm}
+   + [Om att hantera marknadsföringsresurser](mrm/using/about-marketing-resource-management.md)
+   + [Skapa och hantera uppgifter](mrm/using/creating-and-managing-tasks.md)
+   + [Kontrollera kostnader](mrm/using/controlling-costs.md)
+   + [Hantera marknadsföringsresurser](mrm/using/managing-marketing-resources.md)
+   + [Diskussionsforum](mrm/using/discussion-forums.md)
++ Distribuerad marknadsföring {#distributed-marketing}
+   + [Om distribuerad marknadsföring](campaign/using/about-distributed-marketing.md)
+   + [Skapa en lokal kampanj](campaign/using/creating-a-local-campaign.md)
+   + [Skapa en samverkanskampanj](campaign/using/creating-a-collaborative-campaign.md)
+   + [Publicera kampanjpaketet](campaign/using/publishing-the-campaign-package.md)
+   + [Åtkomst till kampanjer](campaign/using/accessing-campaigns.md)
+   + [Spåra en kampanj](campaign/using/tracking-a-campaign.md)
+   + [Användningsfall](campaign/using/examples.md)
++ Responshanteraren {#response-manager}
+   + [Kom igång med responshanteraren](campaign/using/about-response-manager.md)
+   + [Konfiguration](campaign/using/configuration.md)
+   + [Hypotesmallar](campaign/using/hypothesis-templates.md)
+   + [Skapa hypoteser](campaign/using/creating-hypotheses.md)
+   + [Spårning av hypoteser](campaign/using/hypothesis-tracking.md)
 + Designa och dela rapporter {#reporting}
    + Kom igång med rapportering {#reporting-in-adobe-campaign}
       + [Rapporteringsverktyg](reporting/using/about-adobe-campaign-reporting-tools.md)
@@ -326,7 +326,6 @@ ht-degree: 98%
       + [Skapa indikatorer](reporting/using/creating-indicators.md)
       + [Använd kuber för att utforska data](reporting/using/using-cubes-to-explore-data.md)
       + [Koncept och metodik](reporting/using/concepts-and-methodology.md)
-      + [Användningsfall: visa rapport om svar på en onlineundersökning](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
       + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
@@ -357,14 +356,15 @@ ht-degree: 98%
       + [Definiera egenskaper för webbformulär](web/using/defining-web-forms-properties.md)
       + [Översätt ett webbformulär](web/using/translating-a-web-form.md)
       + [Användningsfall: webbformulär](web/using/use-cases--web-forms.md)
-   + Onlineundersökningar {#online-surveys}
-      + [Kom igång med undersökningar](web/using/about-surveys.md)
-      + [Viktiga steg för att skapa en undersökning](web/using/getting-started-with-surveys.md)
-      + [Designa en undersökning](web/using/building-a-survey.md)
-      + [Hantera svar](web/using/managing-answers.md)
-      + [Publicera, spåra och använd insamlade data](web/using/publish--track-and-use-collected-data.md)
-      + [Konfigurera undersökningar](web/using/configuring-surveys.md)
-      + [Användningsfall: skapa ett hänvisningsformulär](web/using/use-case--creating-a-refer-a-friend-form.md)
++ Skapa onlineundersökningar {#online-surveys}
+   + [Kom igång med undersökningar](surveys/using/about-surveys.md)
+   + [Viktiga steg för att skapa en undersökning](surveys/using/getting-started-with-surveys.md)
+   + [Designa en undersökning](surveys/using/building-a-survey.md)
+   + [Hantera svar](surveys/using/managing-answers.md)
+   + [Publicera, spåra och använd insamlade data](surveys/using/publish--track-and-use-collected-data.md)
+   + [Konfigurera undersökningar](surveys/using/configuring-surveys.md)
+   + [Användningsfall: skapa ett hänvisningsformulär](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [Användningsfall: visa rapport om svar på en onlineundersökning](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Om integreringar i Campaign](integrations/using/about-campaign-integrations.md)
    + Dela målgrupper {#audience-sharing}
