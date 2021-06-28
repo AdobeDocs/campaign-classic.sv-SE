@@ -4,9 +4,9 @@ title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
 hide: true
 hidefromtoc: true
-source-git-commit: 248bd7774c01adb44ce33d0499c2b01d013e75bd
+source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '840'
 ht-degree: 5%
 
 ---
@@ -22,12 +22,12 @@ Du måste migrera till den nya integreringen av Adobe Analytics Connector på Ad
 
 >[!NOTE]
 >
->Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Läs [Frågor och svar](#faq-aa) om du har frågor om dessa ändringar. Mer information får du om du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Vad har ändrats?
 
-Nu finns det en ny integrering mellan Campaign Classic och Adobe Analytics. Större förändringar visas nedan.
+Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. Större förändringar visas nedan.
 
 * Integrationen mellan Adobe Campaign Classic- och Adobe Analytics-autentisering har flyttats från användare/lösenord till Adobe Identity Management-tjänst (IMS). Därför måste du implementera Adobe IMS och ansluta till Campaign [via en Adobe ID](../integrations/using/about-adobe-id.md) innan du startar implementeringen av Analytics Connector.
 
@@ -58,7 +58,7 @@ Som lokalt/hybridkund måste ni uppgradera till en av de nyare versionerna för 
 När alla instanser har uppgraderats kan du [implementera den nya integrationen](../platform/using/adobe-analytics-connector.md) till Adobe Analytics Connector och säkerställa en smidig övergång.
 
 
-## Vanliga frågor och svar 
+## Vanliga frågor och svar {#faq-aa}
 
 **Hur får jag tag i loggar?**
 
@@ -71,17 +71,21 @@ Som lokal användare kan du implementera det utförliga läget enligt följande:
 * Så här aktiverar du utförligt läge för användargränssnittet: kör om `web`-processen i utförligt läge.
 * Så här aktiverar du ett detaljerat läge för arbetsflödena **webAnalytics**: välj alternativet **Kör i motorn** i arbetsflödesegenskaperna och kör om `wfserver` i detaljerat läge.
 
-**Integrationsägare är inte administratör**
+**Vad innebär felet &#39;Integrationsägare inte administratör&#39;?**
 
 Läs mer om felet &quot;Integrationsägare inte administratör&quot; i [den här sidan](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
-**Befintliga e-var/händelser/rapportsviten som finns i analyser är inte synliga i Campaign**
+**Vad händer med gamla data och rapportsviter när migreringen till den nya kopplingen är klar?**
+
+Efter migreringen kommer en ny koppling (migrerad från den gamla kopplingen) att börja skicka data till samma rapportserie och befintliga data påverkas inte: kommer att läggas till befintliga data.
+
+**Vissa befintliga evars/händelser/rapportsviter i Analytics är inte synliga i Campaign. Vad ska jag göra?**
 
 Integrationen bygger på data i Token för det tekniska kontot för den dagliga driften. Om det saknas behörighet för en dimension-/mätnings-/rapportsvit från produktprofilen som är kopplad till Technical Account User, kommer API:er som vi använder att helt enkelt misslyckas för dessa förfrågningar.
 
 Om vi läser information om en Analytics-komponent (som mått/dimensioner/segment/rapportsviter) returnerar API inte dessa komponenter i resultatet (vilket kan se ut som om något har tagits bort på Analytics-sidan eller inte finns). Analys-API:t kommer att ignorera dessa begäranden och felmeddelanden.
 
-Lösningen är att uppdatera produktprofilen i Analytics User Context of Technical User Token med de nya/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/).
+Lösningen är att uppdatera **produktprofilen** i användarkontexten för Analytics för teknisk användartoken med de nyskapade/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/). Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill ha mer vägledning.
 
 ## Användbara länkar
 
