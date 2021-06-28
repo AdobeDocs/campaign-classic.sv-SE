@@ -6,7 +6,7 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 95%
@@ -25,7 +25,7 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
 
-## Viktiga funktioner {#key-capabilities}
+## Viktiga möjligheter {#key-capabilities}
 
 Adobe Campaign erbjuder en plattform för att utforma kundupplevelser över flera kanaler och tillhandahåller en miljö för orkestrering av visuella kampanjer, interaktionshantering i realtid och verkställande över flera kanaler.
 
@@ -33,7 +33,7 @@ Cykeln för marknadsföringskampanjer i Adobe Campaign illustrerar de viktigaste
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Integrerad kundprofil {#integrated-customer-profile}
+### Integrated Customer Profile {#integrated-customer-profile}
 
 Profiler (kunder, prospekt och prenumeranter på nyhetsbrev osv.) är centraliserade i databasen i Adobe Campaign. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan du integrera marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PII-data i en enda samlad vy för att analysera och vidta åtgärder.
 
@@ -53,7 +53,7 @@ Med Adobe Campaign kan du utforma och orkestrera målinriktade och personalisera
 
 ### Personalisering och interaktion i realtid {#personalization-and-real-time-interaction}
 
-Locka till dig kundernas uppmärksamhet och förbättra svarsfrekvensen tack vare den avancerade personaliseringen av meddelandets innehåll och rubriker baserade på kundprofiler och preferenser. Mer information om innehållshantering och personalisering av meddelanden finns på [den här sidan](../../delivery/using/about-personalization.md). Samarbete kring innehållshantering, meddelanden och godkännandekretsar beskrivs i [detta avsnitt](../../campaign/using/about-marketing-resource-management.md).
+Locka till dig kundernas uppmärksamhet och förbättra svarsfrekvensen tack vare den avancerade personaliseringen av meddelandets innehåll och rubriker baserade på kundprofiler och preferenser. Mer information om innehållshantering och personalisering av meddelanden finns på [den här sidan](../../delivery/using/about-personalization.md). Samarbete kring innehållshantering, meddelanden och godkännandekretsar beskrivs i [detta avsnitt](../../mrm/using/about-marketing-resource-management.md).
 
 ### Analys och rapportering {#analysis-and-reporting}
 
@@ -71,13 +71,13 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 
 * [Kanaler](../../delivery/using/steps-about-delivery-creation-steps.md) – utforma och skicka leveranser via olika kanaler: e-post, SMS, Line, mobilappar och direktutskick,
 * [Campaign](../../campaign/using/designing-marketing-campaigns.md) – orkestrera kampanjer över flera kanaler,
-* [MRM](../../campaign/using/about-marketing-resource-management.md) – hantera marknadsföringsresurser och budgetar,
+* [MRM](../../mrm/using/about-marketing-resource-management.md) – hantera marknadsföringsresurser och budgetar,
 * [Interaktion](../../interaction/using/interaction-and-offer-management.md) – hantera erbjudanden med Campaign,
 * [Meddelandecenter](../../message-center/using/about-transactional-messaging.md) – skicka transaktionsmeddelanden via e-post, SMS eller mobilappar,
 * [Social marknadsföring](../../social/using/about-social-marketing.md) – kommunicera i sociala medier: Facebook och Twitter,
 * [Arbetsflöde](../../workflow/using/about-workflows.md)/datahantering – automatisera processer och hantera data med arbetsflöden,
 * [Webbapplikationer](../../web/using/about-web-applications.md) – skapa webbsidor och formulär,
-* [Survey Manager](../../web/using/about-surveys.md) – skapa undersökningar och omröstningar online,
+* [Survey Manager](../../surveys/using/about-surveys.md) – skapa undersökningar och omröstningar online,
 * [Content Manager](../../delivery/using/about-content-management.md) – hantera e-postinnehåll,
 * [Distribuerad marknadsföring](../../campaign/using/about-distributed-marketing.md) – samordna kampanjer för centrala/lokala myndigheter,
 * [Response Manager](../../campaign/using/about-response-manager.md) – hantera kundsvar,
