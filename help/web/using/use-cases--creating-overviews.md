@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -25,7 +25,7 @@ I följande exempel skapar vi webbprogram av översiktstyp som visar alla webbpr
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## Skapa ett enkelsidigt webbprogram {#creating-a-single-page-web-application}
+## Skapa ett webbprogram med en sida {#creating-a-single-page-web-application}
 
 1. Skapa ett enda **[!UICONTROL Page]**-webbprogram och inaktivera utgående övergångar och övergångar till nästa sida.
 
@@ -169,7 +169,7 @@ Dessa två element grupperas i samma behållare för att grafiskt grupperas i ö
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Mer information om elementlayout finns i [det här avsnittet](../../web/using/about-web-forms.md).
+   Mer information om elementlayout finns i [det här avsnittet](about-web-forms.md).
 
 1. Använd **prickatFilter**.
 
@@ -205,7 +205,7 @@ Dessa två element grupperas i samma behållare för att grafiskt grupperas i ö
 >
 >Webbprogramanvändaren måste vara en identifierad operator med rätt Adobe Campaign-behörighet för att få tillgång till informationen. Den här typen av konfiguration fungerar inte för anonyma webbprogram.
 
-### Skapar en uppdateringslänk {#creating-a-refresh-link}
+### Skapa en uppdateringslänk {#creating-a-refresh-link}
 
 1. Placera markören på behållaren och infoga en **[!UICONTROL Link]** via menyn **[!UICONTROL Static elements]**.
 1. Ändra etiketten.
