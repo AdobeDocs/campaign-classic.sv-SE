@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -68,7 +68,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Marknadsföringsresurser (MRM)<br /> </td> 
-   <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="../../campaign/using/about-marketing-resource-management.md">Läs mer</a> <br /> </td> 
+   <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="../../mrm/using/about-marketing-resource-management.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Onlineundersökningar (Survey Manager)<br /> </td> 
-   <td> Skapar och hanterar onlineformulär för att lägga till eller ändra profilinformation, för att prenumerera, för att avbeställa eller för att fylla i ett tävlingsformulär. Valfritt. <a href="../../web/using/about-surveys.md">Läs mer</a> <br /> </td> 
+   <td> Skapar och hanterar onlineformulär för att lägga till eller ändra profilinformation, för att prenumerera, för att avbeställa eller för att fylla i ett tävlingsformulär. Valfritt. <a href="../../surveys/using/about-surveys.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
