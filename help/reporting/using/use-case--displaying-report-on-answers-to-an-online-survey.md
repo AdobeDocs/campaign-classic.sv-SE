@@ -6,14 +6,14 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
 
 ---
 
-# Användningsfall: visa en rapport om svar på en onlineundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Användningsfall: visa en rapport om svar på en nätundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 Svar på Adobe Campaign enkäter kan samlas in och analyseras med hjälp av särskilda rapporter.
 
@@ -35,7 +35,7 @@ Innan du börjar använda det här användningsexemplet måste du ha tillgång t
 
 Så här samlar du in svaren på enkäten:
 
-1. Skapa ett arbetsflöde och placera en **[!UICONTROL Answers to a survey]**-aktivitet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Skapa ett arbetsflöde och placera en **[!UICONTROL Answers to a survey]**-aktivitet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Redigera aktiviteten och välj den undersökning vars svar du vill analysera.
 1. Aktivera alternativet **[!UICONTROL Select all the answer data]** för att samla in all information.
 
