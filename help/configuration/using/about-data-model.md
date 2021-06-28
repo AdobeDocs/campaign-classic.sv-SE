@@ -6,14 +6,14 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '980'
 ht-degree: 4%
 
 ---
 
-# Kom igång med Campaign-datamodell{#about-data-model}
+# Kom igång med datamodellen i Campaign {#about-data-model}
 
 Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Huvudtabeller och begrepp listas på den här sidan.
 
@@ -31,7 +31,7 @@ Mer information om mottagartabellen finns i [det här avsnittet](#default-recipi
 
 Datamodellen innehåller också en del som är avsedd för lagring av alla marknadsföringsaktiviteter. Vanligtvis är det leveranstabellen (**NmsDelivery**). Varje post i den här tabellen representerar en leveransåtgärd eller en leveransmall. Den innehåller alla parametrar som krävs för att utföra leveranser som mål, innehåll osv.
 
-### Loggar tabeller {#log-tables}
+### Loggtabeller {#log-tables}
 
 En annan del av datamodellen gör det möjligt att tillfälligt lagra alla loggar som är associerade med kampanjkörningen.
 
@@ -43,13 +43,13 @@ Leveransloggar och spårningsloggar tas bort efter en viss period, som anges i A
 
 Slutligen består en del av datamodellen av tekniska data som används för ansökningsprocessen, inklusive operatorer och användarrättigheter (**NmsGroup**), mappar (**XtkFolder**).
 
-## Använda standardmottagartabellen {#default-recipient-table}
+## Använda den inbyggda mottagartabellen {#default-recipient-table}
 
-Registret Mottagare som är klar att användas i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
+Den inbyggda mottagartabellen i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
 
-Fördelarna med att använda den vanliga mottagartabellen är följande:
+Fördelarna med att använda den inbyggda mottagartabellen är följande:
 
-* Arbeta direkt med funktioner som prenumerationer, listor, undersökningar, sociala medier och så vidare.
+* Arbeta med funktioner som prenumerationer, listor med mera.
 * Tillhandahåller en marknadsföringsdatabas med en mottagarcentrerad datamodell.
 * Snabbare implementering.
 * Enkelt underhåll av support och partners.
