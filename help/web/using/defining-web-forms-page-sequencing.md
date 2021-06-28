@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ För varje sida kan du ta bort knapparna **[!UICONTROL Next]** eller **[!UICONTR
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-Du kan ersätta de här knapparna med länkar. Se [Infoga HTML-innehåll](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Du kan ersätta de här knapparna med länkar. Se [Infoga HTML-innehåll](static-elements-in-a-web-form.md#inserting-html-content).
 
 ## Infoga ett hopp {#inserting-a-jump}
 
@@ -55,7 +55,7 @@ I följande exempel vill vi konfigurera ett webbformulär som, när det godkänn
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Lägg till en parameter (**next**) som lagras i en lokal variabel (**next**) i formuläregenskaperna. Lokala variabler beskrivs i [Lagra data i en lokal variabel](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+1. Lägg till en parameter (**next**) som lagras i en lokal variabel (**next**) i formuläregenskaperna. Lokala variabler beskrivs i [Lagra data i en lokal variabel](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -73,7 +73,7 @@ I följande exempel vill vi konfigurera ett webbformulär som, när det godkänn
 
 ## Infoga en länk till en annan sida i formuläret {#inserting-a-link-to-another-page-of-the-form}
 
-Du kan infoga länkar till andra sidor i formuläret. Det gör du genom att lägga till ett statiskt **[!UICONTROL Link]**-tytelement på sidan. Mer information finns i [Infoga en länk](../../web/using/static-elements-in-a-web-form.md#inserting-a-link).
+Du kan infoga länkar till andra sidor i formuläret. Det gör du genom att lägga till ett statiskt **[!UICONTROL Link]**-tytelement på sidan. Mer information finns i [Infoga en länk](static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Villkorlig sidvisning {#conditional-page-display}
 
@@ -89,7 +89,7 @@ Du kan antingen lagra informationen i ett fält i databasen eller använda en lo
 
 >[!NOTE]
 >
->Lagringslägena beskrivs i [Svarslagringsfält](../../web/using/web-forms-answers.md#response-storage-fields).
+>Lagringslägena beskrivs i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
 
 I vårt exempel vill vi använda en variabel:
 
@@ -107,13 +107,13 @@ Definiera sedan sidsekvensen när ett eller flera av villkoren är true, till ex
 
 ### Visa baserat på parametrar {#display-based-on-parameters}
 
-Du kan också anpassa sidordningen enligt webbformulärets initieringsparametrar eller enligt de värden som lagras i databasen. Se [Formulär-URL-parametrar](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+Du kan också anpassa sidordningen enligt webbformulärets initieringsparametrar eller enligt de värden som lagras i databasen. Se [Formulär-URL-parametrar](defining-web-forms-properties.md#form-url-parameters).
 
 ## Lägga till skript {#adding-scripts}
 
 Med **[!UICONTROL Script]**-objektet kan du ange ett JavaScript-skript direkt, t.ex. för att ändra ett fälts värde, hämta data från databasen eller anropa ett Adobe Campaign-API.
 
-## Slutsidan {#personalizing-the-end-page} anpassas
+## Anpassa slutsidan {#personalizing-the-end-page}
 
 Du måste placera en slutsida i slutet av diagrammet. Slutsidan visas när användaren klickar på knappen **[!UICONTROL Approve]** i webbformuläret.
 
