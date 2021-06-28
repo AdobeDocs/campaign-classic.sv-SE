@@ -6,28 +6,22 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 4%
 
 ---
 
 # Designa en webbapplikation{#designing-a-web-application}
 
-Webbprogram skapas och hanteras enligt samma princip som [onlineundersökningar](../../web/using/about-surveys.md).
-
-De funktionella skillnaderna är dock följande:
-
-* Webbprogram använder inga arkiverade fält. Data kan därför bara lagras i databasfält eller lokala variabler.
-* Det finns inga inbyggda rapporter om webbprogram.
-* Ytterligare fält erbjuds, huvudsakligen för att skapa tabeller och diagram.
+Webbprogram skapas och hanteras enligt samma princip som [webbformulär](about-web-forms.md).
 
 >[!CAUTION]
 >
->Vi rekommenderar starkt att de konfigurationer som används kontrolleras kontinuerligt för att upptäcka eventuella fel tidigt i konstruktionsprocessen för webbapplikationer. Om du vill kontrollera återgivningen av en ändring sparar du programmet och klickar sedan på underfliken **[!UICONTROL Preview]**.
+>Använd underfliken **[!UICONTROL Preview]** om du vill kontrollera fel under designen av webbprogram.
 >
->Innan webbprogrammet har publicerats kan inte slutanvändaren se ändringarna.
+>Ändringarna visas inte för slutanvändarna förrän webbprogrammet har publicerats.
 
 ## Infoga diagram i ett webbprogram {#inserting-charts-in-a-web-application}
 
@@ -70,4 +64,3 @@ Redigera webbtillämpningar för ett extranät kännetecknas av:
 
    Medan webbapplikationer av typen &quot;Översikt&quot; alla har en enda sida kan redigeringsformulären innehålla en serie sidor som bygger på specifika kriterier (tester, val, profil för ansluten operator osv.).
 
-Åtgärden för den här typen av webbprogram liknar **undersökningar**, men utan historikhantering eller fältarkivering. Användarna kommer vanligtvis åt den via en inloggningssida där de måste identifiera sig själva.
