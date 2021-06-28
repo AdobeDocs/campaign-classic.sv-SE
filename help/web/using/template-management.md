@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -21,7 +21,7 @@ När du skapar ett webbprogram av typen Landningssida kan användaren välja nå
 
 ![](assets/dce_popup_templatechoice.png)
 
-Mer information om hur du lägger till en mall finns i [Globala alternativ](../../web/using/content-editor-interface.md#global-options).
+Mer information om hur du lägger till en mall finns i [Globala alternativ](content-editor-interface.md#global-options).
 
 ## Spara en leverans som en mall {#saving-a-delivery-as-a-template}
 
