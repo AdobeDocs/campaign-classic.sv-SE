@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter din
 >
 >Om du vill skapa en egen banderoll måste du anpassa den färdiga banderollen.
 
-Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper. Se avsnittet [Designa ett webbprogram](../../web/using/designing-a-web-application.md).
+Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper. Se avsnittet [Designa ett webbprogram](designing-a-web-application.md).
 
 Om spårning av webbsidor är aktiverat kan du antingen ha:
 
@@ -64,9 +64,9 @@ Standardbanderollen har följande struktur:
 
 Du måste ersätta **Infoga meddelandet här** med blocket som innehåller din spårningsinformation. Ersättningen ska utföras i det nya anpassningsblocket som hör till avanvisningsbanderollen.
 
-Banderollen levereras med en specifik CSS. Du kan dock skriva över formaten när du skapar och konfigurerar en webbsida. Se [den här sidan](../../web/using/content-editor-interface.md).
+Banderollen levereras med en specifik CSS. Du kan dock skriva över formaten när du skapar och konfigurerar en webbsida. Se [den här sidan](content-editor-interface.md).
 
-## Ange avanmälningscookie med API {#setting-the-opt-out-cookie-using-api}
+## Ange avanmälnings-cookie med API {#setting-the-opt-out-cookie-using-api}
 
 Adobe Campaign levereras med API:er som gör att du kan hantera cookie-värdet och hämta användarinställningar.
 
