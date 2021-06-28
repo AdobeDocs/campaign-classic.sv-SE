@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 97%
@@ -94,7 +94,7 @@ Läs mer om hur man använder Adobe Campaign för att [skicka personaliserade pu
 
 ## Hur utformar och delar man en undersökning online? {#how-to-design-and-share-an-online-survey-}
 
-Läs mer om de viktigaste stegen för hur man [skapar en undersökning online](../../web/using/getting-started-with-surveys.md) för att utforma och publicera den med Campaign Classic.
+Läs mer om de viktigaste stegen för hur man [skapar en undersökning online](../../surveys/using/getting-started-with-surveys.md) för att utforma och publicera den med Campaign Classic.
 
 ## Hur skapar man landningssidor? {#how-to-create-landing-page-}
 
