@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -207,7 +207,7 @@ Fliken **[!UICONTROL Rule]** innehåller en lista med de typologiregler som ska 
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. Mer information om detta finns i [det här avsnittet](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** typologier används inom ramen för hantering av försäljningstryck. Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
 
 ## Ändra godkännandeläge {#changing-the-approval-mode}
 
