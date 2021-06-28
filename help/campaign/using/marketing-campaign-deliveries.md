@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -29,11 +29,11 @@ Om du vill skapa en leverans som är länkad till en kampanj klickar du på län
 
 De föreslagna konfigurationerna passar för olika typer av leveranser: direktreklam, e-post, mobila kanaler. [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Startar en leverans {#starting-a-delivery}
+## Starta en leverans {#starting-a-delivery}
 
 När alla godkännanden har beviljats är leveransen klar att startas. Leveransproceduren beror sedan på typen av leverans. Information om leveranser via e-post eller mobilkanal finns i [Starta en onlineleverans](#starting-an-online-delivery) och för leveranser via direktreklam finns i [Starta en offlineleverans](#starting-an-offline-delivery).
 
-### Startar en onlineleverans {#starting-an-online-delivery}
+### Starta en onlineleverans {#starting-an-online-delivery}
 
 När alla godkännandebegäranden har beviljats ändras leveransstatusen till **[!UICONTROL Pending confirmation]** och kan startas av en operator. I tillämpliga fall meddelas den Adobe Campaign-operatör (eller grupp av operatörer) som utsetts till granskare för att påbörja leveransen att en leverans är klar att påbörjas.
 
@@ -126,7 +126,7 @@ I en kampanj kan du även hänvisa till andra poster, t.ex. kampanjkuponger, spe
 
 >[!NOTE]
 >
->Om du använder MRM kan du även hantera ett bibliotek med marknadsföringsresurser som är tillgängliga för flera deltagare för samarbete. Se [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md).
+>Om du använder MRM kan du även hantera ett bibliotek med marknadsföringsresurser som är tillgängliga för flera deltagare för samarbete. Se [Hantera marknadsföringsresurser](../../mrm/using/managing-marketing-resources.md).
 
 ### Lägga till dokument {#adding-documents}
 
@@ -155,7 +155,7 @@ På kontrollpanelen grupperas dokument som är kopplade till kampanjen i avsnitt
 
 De kan också redigeras och ändras i den här vyn.
 
-### Associera och strukturera resurser som är länkade via en leveransdisposition {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+### Associera och strukturera resurser som är länkade via en leveransöversikt {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ En disposition kan innehålla objekt och personaliseringsfält, resurser och erb
 
    >[!NOTE]
    >
-   >Mer information om marknadsföringsresurser finns i [Hantera marknadsföringsresurser](../../campaign/using/managing-marketing-resources.md).
+   >Mer information om marknadsföringsresurser finns i [Hantera marknadsföringsresurser](../../mrm/using/managing-marketing-resources.md).
 
 #### Markera en kontur {#selecting-an-outline}
 
@@ -233,7 +233,7 @@ Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för d
 >
 >Mer information om export finns i avsnittet [Komma igång](../../platform/using/get-started-data-import-export.md).
 
-#### Självstudievideo {#create-email-video}
+#### Videokurs {#create-email-video}
 
 I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign.
 
