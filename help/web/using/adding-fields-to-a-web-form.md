@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2371'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Följande fälttyper är tillgängliga:
 * Knappen Hämta. [Överför en fil](#uploading-a-file).
 * Dold konstant. Se [Infoga en dold konstant](#inserting-a-hidden-constant).
 
-Ange svarslagringsläget: uppdaterar ett fält i databasen (lagrar endast det senast sparade värdet) eller lagrar det i en variabel (svaret lagras inte). Mer information finns i [Svarslagringsfält](../../web/using/web-forms-answers.md#response-storage-fields).
+Ange svarslagringsläget: uppdaterar ett fält i databasen (lagrar endast det senast sparade värdet) eller lagrar det i en variabel (svaret lagras inte). Mer information finns i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Klicka på **[!UICONTROL Finish]** för att infoga det markerade fältet på sid
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
-## Lägger till inmatningsfält {#adding-input-fields}
+## Lägga till inmatningsfält {#adding-input-fields}
 
 Om du vill lägga till ett inmatningsfält klickar du på knappen **[!UICONTROL Input control]** och väljer den typ av fält som du vill lägga till.
 
@@ -74,7 +74,7 @@ Fem olika typer av textfält kan infogas på en formulärsida:
 
 * **Antal**: gör att användaren kan ange ett nummer på en rad. Mer information finns i [Lägga till tal](#adding-numbers).
 
-   När sidan har godkänts kontrolleras fältinnehållet för att kontrollera att det angivna värdet är kompatibelt med fältet. Mer information finns i [Definiera kontrollinställningar](../../web/using/form-rendering.md#defining-control-settings).
+   När sidan har godkänts kontrolleras fältinnehållet för att kontrollera att det angivna värdet är kompatibelt med fältet. Mer information finns i [Definiera kontrollinställningar](form-rendering.md#defining-control-settings).
 
 * **Lösenord**: gör att användaren kan skriva text på en rad. Under textinmatning ersätts tecknen med punkter:
 
@@ -90,9 +90,7 @@ Fem olika typer av textfält kan infogas på en formulärsida:
 
    >[!CAUTION]
    >
-   >Flerradiga textfält är specifika fält som kan innehålla vagnreturer. Deras lagringsutrymme måste associeras med ett fält som är mappat till ett XML-element, inte ett XML-attribut. Mer information om datatyperna i scheman finns i kapitlet &quot;Schemareferens&quot; i [det här avsnittet](../../configuration/using/about-schema-reference.md).
-   >   
-   >Om du använder modulen **Undersökning** kan du lagra den här typen av fält i ett arkiverat fält som automatiskt anpassar sig till formatet. Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).
+   >Flerradiga textfält är specifika fält som kan innehålla vagnreturer. Deras lagringsutrymme måste associeras med ett fält som är mappat till ett XML-element, inte ett XML-attribut.
 
 * **Flerradig text**: gör att användaren kan skriva text med en layout som ska sparas i HTML-format.
 
@@ -118,9 +116,9 @@ Svarslagringsläget kan ändras via länken **[!UICONTROL Edit storage...]**. V�
 
 >[!NOTE]
 >
->Lagringslägen anges i [fält för svarslagring](../../web/using/web-forms-answers.md#response-storage-fields)
+>Lagringslägen anges i [fält för svarslagring](web-forms-answers.md#response-storage-fields)
 
-På fliken **[!UICONTROL Advanced]** kan du definiera visningsparametrar för fältet (placering av etiketter, justering osv.). Se [Definiera webbformulärslayout](../../web/using/defining-web-forms-layout.md).
+På fliken **[!UICONTROL Advanced]** kan du definiera visningsparametrar för fältet (placering av etiketter, justering osv.). Se [Definiera webbformulärslayout](defining-web-forms-layout.md).
 
 ## Lägga till nedrullningsbara listor {#adding-drop-down-lists}
 
@@ -206,9 +204,9 @@ Om du vill lägga till en alternativknapp på en formulärsida går du till meny
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-Alternativknappar konfigureras på ungefär samma sätt som kryssrutor (se [Lägga till kryssrutor](#adding-checkboxes)). Inget värde tilldelas dock om alternativet inte är markerat. Om flera knappar ska vara beroende av varandra, d.v.s. om du markerar en av dem avmarkeras de andra automatiskt, måste de lagras i samma fält. Om de inte lagras i databasen måste samma lokala variabel användas för tillfällig lagring. Se [Svarslagringsfält](../../web/using/web-forms-answers.md#response-storage-fields).
+Alternativknappar konfigureras på ungefär samma sätt som kryssrutor (se [Lägga till kryssrutor](#adding-checkboxes)). Inget värde tilldelas dock om alternativet inte är markerat. Om flera knappar ska vara beroende av varandra, d.v.s. om du markerar en av dem avmarkeras de andra automatiskt, måste de lagras i samma fält. Om de inte lagras i databasen måste samma lokala variabel användas för tillfällig lagring. Se [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
 
-### Lägg till en lista med knappar {#add-a-list-of-buttons}
+### Lägga till en lista med knappar {#add-a-list-of-buttons}
 
 Om du vill lägga till alternativknappar via en lista går du till menyn **[!UICONTROL Selection controls>Multiple choice]** i verktygsfältet i sidredigeraren.
 
@@ -218,8 +216,8 @@ Lägg till så många alternativknappar som det finns etiketter för. Fördelen 
 
 >[!NOTE]
 >
->Webbformulär tillåter inte att du väljer flera värden. Flera markeringar kan bara aktiveras för formulär av typen **Undersökning**. Mer information om detta finns i [det här avsnittet](../../web/using/about-surveys.md).\
->Det är dock möjligt att infoga ett **[!UICONTROL Multiple choice]**-typfält i ett webbprogram. men utan att godkänna valet av flera värden: de tillgängliga alternativen kan väljas med alternativknappar.
+>Du kan inte aktivera flerval i ett webbprogram.
+>Det går dock att infoga ett **[!UICONTROL Multiple choice]**-typfält i ett webbprogram, men det gör inte att användaren kan välja flera värden.
 
 ## Lägga till stödraster {#adding-grids}
 
@@ -239,7 +237,7 @@ Endast ett alternativ kan väljas per stödlinje.
 
 >[!NOTE]
 >
->I vårt exempel är rutnätets etikett dold. Det gör du genom att gå till fliken **[!UICONTROL Advanced]** och visa **[!UICONTROL Label position]** är definierad som **[!UICONTROL Hidden]**. Se [Definiera placeringen av etiketter](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>I vårt exempel är rutnätets etikett dold. Det gör du genom att gå till fliken **[!UICONTROL Advanced]** och visa **[!UICONTROL Label position]** är definierad som **[!UICONTROL Hidden]**. Se [Definiera placeringen av etiketter](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Lägga till datum och nummer {#adding-dates-and-numbers}
 
@@ -265,7 +263,7 @@ Du kan välja datum via en kalender eller listruta. Du kan också ange dem direk
 
 >[!NOTE]
 >
->Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar finns tillgängliga på alla språk som används. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+>Som standard anges datum som används i formulär via en kalender. För flerspråkiga formulär bör du kontrollera att kalendrar finns tillgängliga på alla språk som används. Se [Översätta ett webbformulär](translating-a-web-form.md).
 
 I vissa fall kan det dock vara enklare att använda nedrullningsbara listor (till exempel när du anger födelsedatum).
 
@@ -323,8 +321,6 @@ Användaren prenumererar på tjänsten genom att markera det relevanta alternati
 >
 >Om användaren redan prenumererar på en informationstjänst och kryssrutan som är länkad till den här tjänsten inte är markerad när han eller hon godkänner formuläret, kommer han/hon att avbeställa prenumerationen.
 
-Exempel på prenumerationer och hänvisningar finns i [det här avsnittet](../../web/using/about-surveys.md).
-
 ## Infoga en captcha {#inserting-a-captcha}
 
 Syftet med **captcha**-tester är att förhindra bedräglig användning av dina webbformulär.
@@ -361,7 +357,7 @@ Du kan skapa ett felmeddelande som ska visas. Det gör du genom att använda lä
 >
 >Bildtexter är alltid åtta tecken långa. Du kan inte ändra det här värdet.
 
-## Överför en fil {#uploading-a-file}
+## Överföra en fil {#uploading-a-file}
 
 Du kan lägga till ett överföringsfält på en sida. Den här funktionen kan vara användbar för fildelning i intranät.
 
