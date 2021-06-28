@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Vårt sista mål är att skapa en leverans med en personlig mall som innehåller
 >
 >Innan du börjar måste du ha minst en **HTML-mall** konfigurerad som värd för innehållet i framtida leveranser.
 >
->Kontrollera att **[!UICONTROL Content editing mode]** (på fliken **[!UICONTROL Advanced]**) är inställt på **[!UICONTROL DCE]** i leveransen **[!UICONTROL Properties]**. Mer information om hur du optimerar redigeringsprogrammet finns i [Bästa praxis för redigering av innehåll](../../web/using/content-editing-best-practices.md).
+>Kontrollera att **[!UICONTROL Content editing mode]** (på fliken **[!UICONTROL Advanced]**) är inställt på **[!UICONTROL DCE]** i leveransen **[!UICONTROL Properties]**. Mer information om hur du optimerar redigeringsprogrammet finns i [Bästa praxis för redigering av innehåll](content-editing-best-practices.md).
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
@@ -42,7 +42,7 @@ Välj en leveransmall och ge sedan leveransen ett namn. Det här namnet visas en
 
 ![](assets/dce_delivery_model.png)
 
-## Steg 3 - Välj ett innehåll {#step-3---selecting-a-content}
+## Steg 3 - Markera ett innehåll {#step-3---selecting-a-content}
 
 Redigeraren för digitalt innehåll innehåller olika färdiga mallar med olika strukturer (kolumner, textområden osv.).
 
@@ -54,13 +54,13 @@ Du kan även importera HTML-innehåll som har skapats utanför Adobe Campaign ge
 
 ![](assets/dce_select_from_file_template.png)
 
-Du kan spara innehållet som en mall för framtida bruk. När du har skapat en personlig innehållsmall kan du förhandsgranska den i listan med mallar. Mer information finns i [Mallhantering](../../web/using/template-management.md).
+Du kan spara innehållet som en mall för framtida bruk. När du har skapat en personlig innehållsmall kan du förhandsgranska den i listan med mallar. Mer information finns i [Mallhantering](template-management.md).
 
 >[!CAUTION]
 >
 >Om du använder **Adobe Campaign webbgränssnitt** måste du importera en ZIP-fil som innehåller HTML-innehållet och relaterade bilder.
 
-## Steg 4 - Designa meddelandet {#step-4---designing-the-message}
+## Steg 4 - Utforma meddelandet {#step-4---designing-the-message}
 
 * Visa de första och andra namnen på mottagarna
 
@@ -70,7 +70,7 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
 
 * Infoga en länk i en bild
 
-   Om du vill dirigera mottagare till en extern adress via en bild, klickar du på den relevanta bilden för att visa popup-verktygsfältet, placerar markören på den första ikonen och klickar sedan på **[!UICONTROL Link to an external URL]**. Mer information finns i [Lägga till en länk](../../web/using/editing-content.md#adding-a-link).
+   Om du vill dirigera mottagare till en extern adress via en bild, klickar du på den relevanta bilden för att visa popup-verktygsfältet, placerar markören på den första ikonen och klickar sedan på **[!UICONTROL Link to an external URL]**. Mer information finns i [Lägga till en länk](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
@@ -80,7 +80,7 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
 
 * Infoga en länk i text
 
-   Om du vill integrera en extern länk i texten i leveransen markerar du en del text eller ett textblock och klickar sedan på den första ikonen i popup-verktygsfältet. Klicka på **[!UICONTROL Link to an external URL]** och ange länkadressen i fältet **[!UICONTROL URL]**. Mer information finns i [Lägga till en länk](../../web/using/editing-content.md#adding-a-link).
+   Om du vill integrera en extern länk i texten i leveransen markerar du en del text eller ett textblock och klickar sedan på den första ikonen i popup-verktygsfältet. Klicka på **[!UICONTROL Link to an external URL]** och ange länkadressen i fältet **[!UICONTROL URL]**. Mer information finns i [Lägga till en länk](editing-content.md#adding-a-link).
 
    Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
 
@@ -102,7 +102,7 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
 
 * Integrera en länk till ett webbprogram
 
-   Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida. Mer information finns i [Länka till ett webbprogram](../../web/using/editing-content.md#link-to-a-web-application).
+   Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida. Mer information finns i [Länka till ett webbprogram](editing-content.md#link-to-a-web-application).
 
    Markera ett textfält för länken till ett webbprogram och klicka sedan på den första ikonen. Välj **[!UICONTROL Link to a Web application]** och välj sedan önskat program genom att klicka på ikonen i slutet av fältet **Webbprogram**.
 
@@ -114,6 +114,6 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
    >
    >I det här steget måste du spara minst ett webbprogram i förväg. Dessa finns på fliken **[!UICONTROL Campaigns > Web applications]** i konsolen.
 
-## Steg 5 - Sparar leveransen {#step-5---saving-the-delivery}
+## Steg 5 - Spara leveransen {#step-5---saving-the-delivery}
 
 När innehållet är integrerat sparar du leveransen genom att klicka på **Spara**. Den visas nu i din lista över leveranser på fliken **[!UICONTROL Campaigns > Deliveries]**.
