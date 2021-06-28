@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -35,7 +35,7 @@ De här villkoren använder XTK-uttryckssyntaxen (till exempel **ctx.receive.@em
 >
 >Det går inte att redigera icke-synliga dynamiska block, till exempel nedrullningsbara menyer.
 
-## Lägga till en kantlinje och bakgrund {#adding-a-border-and-background}
+## Lägga till en kant och bakgrund {#adding-a-border-and-background}
 
 Du kan lägga till en **kantlinje** till ett markerat block. Kanterna definieras med tre alternativ: stil, storlek och färg.
 
@@ -47,7 +47,7 @@ Du kan också definiera en **bakgrundsfärg** genom att välja en färg i färgd
 
 ## Redigera formulär {#editing-forms}
 
-### Ändra dataegenskaperna för ett formulär {#changing-the-data-properties-for-a-form}
+### Ändra dataegenskaper för ett formulär {#changing-the-data-properties-for-a-form}
 
 Du kan länka databasfält med indatazon, alternativknapp eller kryssrutetypblock.
 
@@ -91,7 +91,7 @@ Det innebär att du kan:
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
-## Lägga till en åtgärd för en knapp {#adding-an-action-to-a-button}
+## Lägga till en åtgärd till en knapp {#adding-an-action-to-a-button}
 
 När användaren klickar på en knapp kan du definiera en associerad åtgärd. Det gör du genom att välja åtgärden som ska utföras i listrutan.
 
@@ -241,7 +241,7 @@ När du markerar ett block som innehåller en bild får du tillgång till följa
 
    ![](assets/dce_popup_imgsize.png)
 
-## Lägger till innehåll för personalisering {#adding-personalization-content}
+## Lägga till innehåll för personalisering {#adding-personalization-content}
 
 ### Infoga ett personaliserat fält {#inserting-a-personalization-field}
 
@@ -253,9 +253,9 @@ Som standard finns fälten från tabellen **[!UICONTROL Recipient]**. Redigera w
 
 Fältnamnet visas i redigeraren, markerat med gult. Den ersätts av målmottagarens profil när personaliseringen genereras (t.ex. när en landningssida förhandsgranskas).
 
-Ett exempel visas i avsnittet [Infoga ett anpassningsfält](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field).
+Ett exempel visas i avsnittet [Infoga ett anpassningsfält](creating-a-landing-page.md#inserting-a-personalization-field).
 
-### Infoga ett anpassningsblock {#inserting-a-personalization-block}
+### Infoga ett personaliseringsblock {#inserting-a-personalization-block}
 
 Med alternativet **Personaliseringsblock** kan du infoga dynamiska och personliga block i innehållet. Du kan till exempel lägga till en logotyp eller ett gratulationsmeddelande. Det är inte tillgängligt för textblock.
 
