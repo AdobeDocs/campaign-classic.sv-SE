@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -59,7 +59,7 @@ I fälten **[!UICONTROL Position]** kan du definiera elementens placering i sidh
 
 ## Anpassa formuläråtergivning {#customizing-form-rendering}
 
-### Ändra layouten för elementen {#changing-the-layout-of-elements}
+### Ändra layout för element {#changing-the-layout-of-elements}
 
 Du kan överlagra formatmallen för varje element i formuläret (inmatningsfält, bilder, alternativknappar etc.).
 
@@ -69,9 +69,9 @@ Använd fliken **[!UICONTROL Advanced]** för att göra detta.
 
 Här kan du definiera följande egenskaper:
 
-* **[!UICONTROL Label position]**: Se  [Definiera placeringen av etiketter](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+* **[!UICONTROL Label position]**: Se  [Definiera placeringen av etiketter](defining-web-forms-layout.md#defining-the-position-of-labels).
 * **[!UICONTROL Label format]**: Radbyte eller Ingen radbrytning,
-* **[!UICONTROL Number of cells]** : se  [Placera fälten på sidan](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Number of cells]** : se  [Placera fälten på sidan](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontal alignment]** (Vänster, Höger, Centrerad) och  **[!UICONTROL Vertical alignment]** (Hög, Låg, Mitten),
 * **[!UICONTROL Width]** för zonen: detta kan uttryckas i procent eller i måttenheter, punkter eller pixlar (standardvärde),
 * Maximalt **[!UICONTROL Length]**: Högsta antal tillåtna tecken (för typografierna Text, Number och Password),
@@ -88,7 +88,7 @@ Fönstrets rubrik måste anges på fliken **[!UICONTROL Page]** i fönstret för
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
-### Lägga till element i HTML-huvudet {#adding-elements-to-html-header}
+### Lägga till element i HTML-rubriken {#adding-elements-to-html-header}
 
 Du kan ange ytterligare element som ska infogas i HTML-huvudet på en formulärsida. Om du vill göra det anger du elementen på fliken **[!UICONTROL Header]** på den aktuella sidan.
 
@@ -130,7 +130,7 @@ Om du till exempel skapar en **[!UICONTROL Number]**-kontroll för att lagra kli
 
 Användaren måste ange ett heltal i formulärfältet.
 
-## Definiera villkorlig fältvisning {#defining-fields-conditional-display}
+## Definiera villkorlig visning av fält {#defining-fields-conditional-display}
 
 Du kan konfigurera visningen av fält på sidan som ska visas baserat på de värden som användaren väljer. Detta kan gälla ett fält eller en grupp av fält (när de grupperas i en behållare).
 
@@ -146,17 +146,17 @@ I fältvalsfönstret kan du välja bland följande data:
 
 * Huvudträdet innehåller parametrarna för formulärkontexten. Standardparametrarna är identifieraren (som matchar mottagarens krypterade identifierare), språk och ursprung.
 
-   Se denna [sida](../../web/using/defining-web-forms-properties.md#form-url-parameters) för mer information om detta.
+   Se denna [sida](defining-web-forms-properties.md#form-url-parameters) för mer information om detta.
 
 * Underträdet **[!UICONTROL Recipients]** innehåller indatafälten som infogats i formuläret och lagrats i databasen.
 
-   Mer information finns i [Lagra data i databasen](../../web/using/web-forms-answers.md#storing-data-in-the-database).
+   Mer information finns i [Lagra data i databasen](web-forms-answers.md#storing-data-in-the-database).
 
-* Underträdet **[!UICONTROL Variables]** innehåller de tillgängliga variablerna för det här formuläret. Mer information finns i [Lagra data i en lokal variabel](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+* Underträdet **[!UICONTROL Variables]** innehåller de tillgängliga variablerna för det här formuläret. Mer information finns i [Lagra data i en lokal variabel](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Mer information finns i användningsexemplet här: [Visa olika alternativ beroende på de valda värdena](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Mer information finns i användningsexemplet här: [Visa olika alternativ beroende på de valda värdena](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-Du kan också ange villkor för hur formulärsidor ska visas med objektet **[!UICONTROL Test]**. Se denna [sida](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
+Du kan också ange villkor för hur formulärsidor ska visas med objektet **[!UICONTROL Test]**. Se denna [sida](defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
 
 ## Importera element från ett befintligt formulär {#importing-elements-from-an-existing-form}
 
