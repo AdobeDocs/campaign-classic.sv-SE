@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 * **Dela**: Med kan du dela upp ett mål i flera deluppsättningar. Se avsnittet [Dela](../../workflow/using/split.md).
 * **Celler**: ger en vy över de olika delmängderna i form av datakolumner och underlättar hanteringen av dessa delmängder när det finns många sådana. Mer information finns i avsnittet [Celler](../../workflow/using/cells.md).
 * **Erbjudanden per cell**: Med kan du länka olika erbjudanden till varje delmängd av en population. Se avsnittet [Erbjudanden per cell](../../workflow/using/offers-by-cell.md).
-* **Svar**: Med kan du återställa information som samlats in under en undersökning. Mer information om detta hittar du i det här [avsnittet](../../web/using/getting-started-with-surveys.md).
+* **Svar**: Med kan du återställa information som samlats in under en undersökning. Mer information om detta hittar du i det här [avsnittet](../../surveys/using/getting-started-with-surveys.md).
 * **Leveransöversikt**: Med kan du lägga till en leveransdisposition. Se avsnittet [Leveransdisposition](../../workflow/using/delivery-outline.md).
 * **Anrikning**: I kan du lägga till kolumner i en arbetstabell eller ett arbetsflöde. Se avsnittet [Enrichment](../../workflow/using/enrichment.md).
 * **Redigera schema**: kan du omvandla, standardisera och vid behov förbättra data. Mer information finns i avsnittet [Redigera schema](../../workflow/using/edit-schema.md).
