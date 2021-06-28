@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -51,7 +51,7 @@ På fliken **[!UICONTROL Translations]** kan du ange översättningar för de te
 
 Första gången du öppnar den här fliken innehåller den inga data. Klicka på länken **[!UICONTROL Collect the strings to translate]** för att uppdatera strängarna i webbprogrammet.
 
-Adobe Campaign samlar in etiketter för fält och strängar som definieras på flikarna **[!UICONTROL Texts]** för alla statiska element: HTML-block, Javascript osv. Statiska element beskrivs i [Statiska element i ett webbformulär](../../web/using/static-elements-in-a-web-form.md).
+Adobe Campaign samlar in etiketter för fält och strängar som definieras på flikarna **[!UICONTROL Texts]** för alla statiska element: HTML-block, Javascript osv. Statiska element beskrivs i [Statiska element i ett webbformulär](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -77,7 +77,7 @@ Välj översättningsspråk i listrutan **[!UICONTROL Language]**.
 
 Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate]** i listrutan **[!UICONTROL Status]**. Du kan även visa endast översatta eller godkända strängar.
 
-### Översätter strängar {#translating-strings}
+### Översätta strängar {#translating-strings}
 
 1. Om du vill översätta ett ord dubbelklickar du på raden i stränglistan.
 
@@ -93,7 +93,7 @@ Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate
 
    Översättningar som inte är godkända visas som **[!UICONTROL Translated]**. Godkända översättningar visas som **[!UICONTROL Approved]**.
 
-## Externaliserar översättning {#externalizing-translation}
+## Extern översättning {#externalizing-translation}
 
 Du kan exportera och importera teckensträngar för att översätta dem med ett annat verktyg än Adobe Campaign.
 
@@ -101,7 +101,7 @@ Du kan exportera och importera teckensträngar för att översätta dem med ett 
 >
 >När du har exporterat strängarna ska du inte göra några översättningar med det integrerade verktyget. Detta skulle leda till en konflikt när du importerar översättningarna på nytt och dessa kommer att gå förlorade.
 
-### Exporterar filer {#exporting-files}
+### Exportera filer {#exporting-files}
 
 1. Markera det eller de webbprogram vars strängar du vill exportera, högerklicka och välj sedan **[!UICONTROL Actions > Export strings for translation...]**
 
@@ -134,7 +134,7 @@ Du kan exportera och importera teckensträngar för att översätta dem med ett 
 
 När du exporterar filer i **CSV-format** länkas varje språk till status och godkännandestatus. **Godkänn?** kan du godkänna en översättning. Den här kolumnen kan innehålla värdena **Yes** eller **No**. När det gäller den integrerade redigeraren (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)) är godkännande av översättningar valfritt och blockerar inte processen.
 
-### Importerar filer {#importing-files}
+### Importera filer {#importing-files}
 
 När den externa översättningen är klar kan du importera de översatta filerna.
 
@@ -437,7 +437,7 @@ Du kan lägga till **?lang=es** eller **?lang=de** för att visa det på spanska
 >
 >Det här avsnittet är endast avsett för expertanvändare.
 
-### Översätta systemsträngarna {#translating-the-system-strings}
+### Översätta systemsträngar {#translating-the-system-strings}
 
 Systemsträngar är färdiga teckensträngar som används i alla webbprogram. Till exempel: **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knappar, **[!UICONTROL Loading]** meddelanden osv. Som standard innehåller vissa språk en ordlista med översättningar för dessa strängar. Listan med språk finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
 
