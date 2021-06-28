@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Om du väljer minst ett ytterligare språk via fliken **[!UICONTROL Localization
 
 Med det här alternativet kan du ange om blockinnehållet måste översättas eller inte.
 
-Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via fliken **[!UICONTROL Translations]** i programmet. Se denna [sida](../../web/using/translating-a-web-form.md) för mer information om detta.
+Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via fliken **[!UICONTROL Translations]** i programmet. Se denna [sida](translating-a-web-form.md) för mer information om detta.
 
 Så här flaggar du strängar som ska översättas:
 
