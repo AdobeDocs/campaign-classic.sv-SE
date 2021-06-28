@@ -4,9 +4,9 @@ title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
 hide: true
 hidefromtoc: true
-source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
+source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -71,9 +71,9 @@ Som lokal användare kan du implementera det utförliga läget enligt följande:
 * Så här aktiverar du utförligt läge för användargränssnittet: kör om `web`-processen i utförligt läge.
 * Så här aktiverar du ett detaljerat läge för arbetsflödena **webAnalytics**: välj alternativet **Kör i motorn** i arbetsflödesegenskaperna och kör om `wfserver` i detaljerat läge.
 
-**Vad innebär felet &#39;Integrationsägare inte administratör&#39;?**
+**Vad betyder felet &#39;Integrationsägare inte administratör&#39;?**
 
-Läs mer om felet &quot;Integrationsägare inte administratör&quot; i [den här sidan](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Läs mer om felet i `Integration Owner Not Admin` i [den här sidan](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
 **Vad händer med gamla data och rapportsviter när migreringen till den nya kopplingen är klar?**
 
