@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Skapa en landningssida{#creating-a-landing-page}
 
-## Om att skapa landningssidor {#about-landing-pages-creation}
+## Skapa landningssidor {#about-landing-pages-creation}
 
 I det här exemplet visas hur du använder Digital Editor för att skapa en landningssida från Adobe Campaign-konsolen.
 
@@ -23,7 +23,7 @@ Innan du börjar konfigurera landningssidan i Adobe Campaign ska du kontrollera 
 
 Huvudsyftet med det här användningsexemplet är att göra så att formulärfälten för landningssidan motsvarar de interna fälten i Adobe Campaign med funktionerna i DCE.
 
-## Skapar landningssidan {#creating-the-landing-page}
+## Skapa landningssidan {#creating-the-landing-page}
 
 Så här skapar du ett nytt webbprogram av typen Landing Page:
 
@@ -47,7 +47,7 @@ Därefter får du följande ordningsföljd:
 
 >[!NOTE]
 >
->Mer information om hur du skapar ett webbprogram finns i [det här avsnittet](../../web/using/creating-a-new-web-application.md).
+>Mer information om hur du skapar ett webbprogram finns i [det här avsnittet](creating-a-new-web-application.md).
 
 ## Steg 1 - Välja och läsa in mallar {#step-1---selecting-and-loading-templates}
 
