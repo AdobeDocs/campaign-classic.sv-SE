@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 3%
@@ -15,15 +15,15 @@ ht-degree: 3%
 
 # Gränssnitt för innehållsredigeraren{#content-editor-interface}
 
-## Redigeringsfönstret {#editing-window}
+## Redigeringsfönster {#editing-window}
 
 DCE-redigeringsfönstret är indelat i tre olika avsnitt. De gör att du kan visa, ändra och kontrollera innehållets status.
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. Avsnittet **top** är ett visningsområde för meddelanden till användaren. Dessa meddelanden anger status för webbprogrammet eller leveransen som skapas, liksom varningar och felmeddelanden för innehållet. Mer information finns i [HTML-innehållsstatus](../../web/using/content-editing-best-practices.md#html-content-statuses).
-1. Avsnittet till **vänster** i fönstret är området där du redigerar innehåll. I det här området kan användaren interagera direkt med innehållet via popup-verktygsfältet: infoga en länk i en bild, ändra teckensnitt, ta bort ett fält osv. Mer information finns i [Redigera formulär](../../web/using/editing-content.md#editing-forms).
-1. Avsnittet till **höger** i fönstret är kontrollpanelsområdet. I det här området grupperas de olika alternativen för redigeraren, särskilt de som gäller konfigurering av sidrubriken och allmänna alternativ för ett block: lägga till en kant, länka ett databasfält med en indatazon, få åtkomst till egenskaper för webbsidor, osv. Mer information finns i avsnitten [Globala alternativ](#global-options) och [Redigera innehåll](../../web/using/editing-content.md).
+1. Avsnittet **top** är ett visningsområde för meddelanden till användaren. Dessa meddelanden anger status för webbprogrammet eller leveransen som skapas, liksom varningar och felmeddelanden för innehållet. Mer information finns i [HTML-innehållsstatus](content-editing-best-practices.md#html-content-statuses).
+1. Avsnittet till **vänster** i fönstret är området där du redigerar innehåll. I det här området kan användaren interagera direkt med innehållet via popup-verktygsfältet: infoga en länk i en bild, ändra teckensnitt, ta bort ett fält osv. Mer information finns i [Redigera formulär](editing-content.md#editing-forms).
+1. Avsnittet till **höger** i fönstret är kontrollpanelsområdet. I det här området grupperas de olika alternativen för redigeraren, särskilt de som gäller konfigurering av sidrubriken och allmänna alternativ för ett block: lägga till en kant, länka ett databasfält med en indatazon, få åtkomst till egenskaper för webbsidor, osv. Mer information finns i avsnitten [Globala alternativ](#global-options) och [Redigera innehåll](editing-content.md).
 
 ## Globala alternativ {#global-options}
 
@@ -71,12 +71,12 @@ Avsnittet till höger om redigeraren grupperar huvudalternativen som gör att du
 
 Du kan:
 
-* Kontrollera visningen av ett eller flera block i [Definiera ett synlighetsvillkor](../../web/using/editing-content.md#defining-a-visibility-condition),
-* Definiera kanter och ramar, se [Lägga till en kant och bakgrund](../../web/using/editing-content.md#adding-a-border-and-background),
-* Definiera bildattribut (storlek, bildtext), se [Redigera bildegenskaper](../../web/using/editing-content.md#editing-image-properties),
-* Länka databasen till ett formulärelement (indatazon, kryssruta), se [Ändra dataegenskaper för ett formulär](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Gör en del av ett formulär obligatorisk, se [Ändra dataegenskaperna för ett formulär](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Definiera en åtgärd för en knapp i [Lägga till en åtgärd för en knapp](../../web/using/editing-content.md#adding-an-action-to-a-button).
+* Kontrollera visningen av ett eller flera block i [Definiera ett synlighetsvillkor](editing-content.md#defining-a-visibility-condition),
+* Definiera kanter och ramar, se [Lägga till en kant och bakgrund](editing-content.md#adding-a-border-and-background),
+* Definiera bildattribut (storlek, bildtext), se [Redigera bildegenskaper](editing-content.md#editing-image-properties),
+* Länka databasen till ett formulärelement (indatazon, kryssruta), se [Ändra dataegenskaper för ett formulär](editing-content.md#changing-the-data-properties-for-a-form),
+* Gör en del av ett formulär obligatorisk, se [Ändra dataegenskaperna för ett formulär](editing-content.md#changing-the-data-properties-for-a-form),
+* Definiera en åtgärd för en knapp i [Lägga till en åtgärd för en knapp](editing-content.md#adding-an-action-to-a-button).
 
 ## Verktygsfältet Innehåll {#content-toolbar}
 
