@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Med Adobe Campaign kan ni definiera tjänsteleverantörer som ska delta i de jobb som utförs i kampanjer. Information om tjänsteleverantörerna och de tillhörande kostnadsstrukturerna definieras av Adobe Campaign-administratören ur huvudsynvinkel. Tjänsteleverantören hänvisas till från leveransen, och dess kostnadsstrukturer gör det möjligt att beräkna kostnaderna i samband med denna leverans samt förvaltningen av det berörda lagret.
 
-## Skapar tjänsteleverantörer och deras kostnadsstrukturer {#creating-service-providers-and-their-cost-structures}
+## Skapa tjänsteleverantörer och deras kostnadsstrukturer {#creating-service-providers-and-their-cost-structures}
 
 Varje tjänsteleverantör sparas i en fil med kontaktinformation, tjänstmallar och relaterade jobb.
 
@@ -43,7 +43,7 @@ De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt
 
 ### Skapa en tjänsteleverantör och dess kostnadskategorier {#creating-a-service-provider-and-its-cost-categories}
 
-#### Lägger till en tjänsteleverantör {#adding-a-service-provider}
+#### Lägga till en tjänsteleverantör {#adding-a-service-provider}
 
 Du kan skapa så många tjänsteleverantörer som behövs för dina leveranser. Så här lägger du till en tjänsteleverantör:
 
@@ -131,13 +131,13 @@ Konfigurationen blir följande:
 
 Om du vill lägga till ett tröskelvärde klickar du på **[!UICONTROL Add]** till höger om listan.
 
-#### Konstantstruktur efter tröskelvärde {#constant-structure-by-threshold}
+#### Konstant struktur efter tröskelvärde {#constant-structure-by-threshold}
 
 Slutligen kan du konfigurera en kostnadsberäkning utifrån det totala antalet meddelanden. Välj en **[!UICONTROL Constant by threshold]**-beräkningsstruktur för att göra detta. Kostnaden sätts till exempel till ett fast belopp på 12,00 för 1 till 100 meddelanden och till 100,00 för leverans av 101 till 1000 meddelanden och till 500,00 för alla leveranser av över 1000 meddelanden, oavsett totalt antal.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
-### Konfigurera processer som är associerade med en tjänst {#configuring-processes-associated-with-a-service}
+### Konfigurera processer som är kopplade till en tjänst {#configuring-processes-associated-with-a-service}
 
 Du kan associera information om processerna som är kopplade till tjänsten via fliken **[!UICONTROL Processes]**.
 
@@ -180,7 +180,7 @@ Du kan införa obligatoriskt val av en kostnadstyp under definitionen av kostnad
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
-## Hantering av lager och order {#stock-and-order-management}
+## Lager- och orderhantering {#stock-and-order-management}
 
 Kostnadstyperna kan kopplas till lagerrader för att hantera aviseringar, spåra leveranser och startorder.
 
@@ -221,7 +221,7 @@ Så här skapar du en ny aktie:
    >
    >Mer information finns i [Skapa tjänsteleverantörer och deras kostnadsstrukturer](#creating-service-providers-and-their-cost-structures).
 
-#### Lägger till aktierader {#adding-stock-lines}
+#### Lägga till aktierader {#adding-stock-lines}
 
 En aktie består av olika stocklinjer. En lagerrad innehåller en ursprunglig kvantitet resurser som förbrukas av leveranser. Varje lagerrad anger förbrukad kvantitet, lagerkvantitet och beställd kvantitet.
 
@@ -247,7 +247,7 @@ För en viss tjänsteleverantör kan en aktierad refereras till av en av kostnad
 
 ![](assets/s_ncs_user_stocks_select_from_supplier.png)
 
-### Spårning av lager {#stock-tracking}
+### Stock-spårning {#stock-tracking}
 
 #### Varningsoperatorer {#alerting-operators}
 
@@ -285,8 +285,8 @@ Leveranskostnaderna för en kampanj konsolideras på kampanjnivå och kostnadern
 
 ### Implementering {#implementation}
 
-När du väljer budget i en kampanj måste du ange det ursprungliga beloppet. De beräknade kostnaderna uppdateras automatiskt i enlighet med åtagandenivån för de angivna beloppen (utgifter som gjorts, förväntades, reserverades, gjordes). Se [Beräkna belopp](../../campaign/using/controlling-costs.md#calculating-amounts).
+När du väljer budget i en kampanj måste du ange det ursprungliga beloppet. De beräknade kostnaderna uppdateras automatiskt i enlighet med åtagandenivån för de angivna beloppen (utgifter som gjorts, förväntades, reserverades, gjordes). Se [Beräkna belopp](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->Hur du skapar budgetar beskrivs i [Skapa en budget](../../campaign/using/controlling-costs.md#creating-a-budget).
+>Hur du skapar budgetar beskrivs i [Skapa en budget](../../mrm/using/controlling-costs.md#creating-a-budget).
