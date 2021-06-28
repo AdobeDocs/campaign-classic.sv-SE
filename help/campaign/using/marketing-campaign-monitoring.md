@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -27,7 +27,7 @@ På fliken **[!UICONTROL Tracking]** kan du visa alla jobb och deras status för
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Underfliken **[!UICONTROL Tasks]** grupperar alla aktiviteter som är länkade till kampanjen. I den här vyn kan du redigera eller ta bort dem. Uppgifter finns tillgängliga med MRM-programmet. De beskrivs i [det här avsnittet](../../campaign/using/creating-and-managing-tasks.md).
+* Underfliken **[!UICONTROL Tasks]** grupperar alla aktiviteter som är länkade till kampanjen. I den här vyn kan du redigera eller ta bort dem. Uppgifter finns tillgängliga med MRM-programmet. De beskrivs i [det här avsnittet](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
