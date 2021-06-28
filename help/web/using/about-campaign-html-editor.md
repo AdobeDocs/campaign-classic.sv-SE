@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: cbfaf6a2c187ad62f7b6c9042b69f5e522fcfd02
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Med Digital Content Editor kan du infoga och formatera sidelement och mappa data
 >
 >Alla externa resurser måste refereras med en HTTPS-URL.
 
-## Viktiga steg för att använda redigeraren för digitalt innehåll {#content-editor-general-operation}
+## Viktiga steg för att använda Digital Content Editor {#content-editor-general-operation}
 
 I det här avsnittet beskrivs de viktigaste stegen för att redigera och överföra innehåll som redigeras med DCE, i samband med webbprogram och leveransdesign.
 
@@ -37,22 +37,22 @@ Den allmänna åtgärden är följande:
 
 Om du vill skapa ett enkelt **webbprogram** måste du:
 
-1. Skapa ett webbprogram - [Läs mer](../../web/using/creating-a-landing-page.md)
-1. Välj befintligt innehåll eller skapa innehåll från en standardmall - [Läs mer](../../web/using/template-management.md)
-1. Redigera och konfigurera innehåll - [Läs mer](../../web/using/editing-content.md)
-1. Publicera webbprogrammet - [Läs mer](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
+1. Skapa ett webbprogram - [Läs mer](creating-a-landing-page.md)
+1. Välj befintligt innehåll eller skapa innehåll från en standardmall - [Läs mer](template-management.md)
+1. Redigera och konfigurera innehåll - [Läs mer](editing-content.md)
+1. Publicera webbprogrammet - [Läs mer](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->Ett fullständigt implementeringsexempel i kontexten för ett webbprogram finns i [det här avsnittet](../../web/using/creating-a-landing-page.md).
+>Ett fullständigt implementeringsexempel i kontexten för ett webbprogram finns i [det här avsnittet](creating-a-landing-page.md).
 
 Om du vill skapa en **e-postleverans** måste du:
 
-1. Skapa en leverans från en DCE-mall - [Läs mer](../../web/using/use-case--creating-an-email-delivery.md)
-1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](../../web/using/template-management.md)
+1. Skapa en leverans från en DCE-mall - [Läs mer](use-case--creating-an-email-delivery.md)
+1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](template-management.md)
 1. Redigera och konfigurera onlinematerial
 1. Skicka leveransen - [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Ett fullständigt implementeringsexempel i samband med en e-postleverans finns i [det här användningsexemplet](../../web/using/use-case--creating-an-email-delivery.md).
+>Ett fullständigt implementeringsexempel i samband med en e-postleverans finns i [det här användningsexemplet](use-case--creating-an-email-delivery.md).
