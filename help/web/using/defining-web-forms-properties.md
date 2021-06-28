@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
@@ -27,7 +27,7 @@ På fliken **[!UICONTROL General]** i egenskapsfönstret kan du ändra **Label**
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-Formulärmallen väljs när formuläret skapas. Den kan inte ändras senare. Mer information om hur du skapar och hanterar formulärmallar finns i [Använda en webbformulärmall](../../web/using/using-a-web-form-template.md).
+Formulärmallen väljs när formuläret skapas. Den kan inte ändras senare. Mer information om hur du skapar och hanterar formulärmallar finns i [Använda en webbformulärmall](using-a-web-form-template.md).
 
 ## Lagring av formulärdata {#form-data-storage}
 
@@ -53,7 +53,7 @@ Innehållet i strängarna som visas definieras på fliken **[!UICONTROL Error pa
 
 På fliken **[!UICONTROL Localization]** kan du välja design- och visningsspråk för webbformuläret.
 
-Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+Se [Översätta ett webbformulär](translating-a-web-form.md).
 
 ## Bläddra bland och återge formulär {#form-browsing-and-rendering}
 
@@ -77,21 +77,21 @@ Dessa element visas längst ned på varje sida. Deras positioner kan ändras. Om
 
 I fältet **[!UICONTROL Template]** på fliken **[!UICONTROL Rendering]** kan du välja ett av de tillgängliga temana.
 
-Teman sparas i noden **[!UICONTROL Administration>Configuration>Form rendering]** i trädet. Se [Välja formuläråtergivningsmall](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+Teman sparas i noden **[!UICONTROL Administration>Configuration>Form rendering]** i trädet. Se [Välja formuläråtergivningsmall](form-rendering.md#selecting-the-form-rendering-template)
 
 En exempelåtergivning visas i den nedre delen av egenskapsfönstret. Med ikonen **[!UICONTROL Edit link]** kan du visa konfigurationen för det valda temat.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
-## Texter i formatet {#texts-in-the-form}
+## Texter i formuläret {#texts-in-the-form}
 
-På fliken **[!UICONTROL Page]** kan du definiera innehållet i formulärsidhuvudet och -sidfoten. Se [Definiera sidhuvuden och sidfötter](../../web/using/form-rendering.md#defining-headers-and-footers).
+På fliken **[!UICONTROL Page]** kan du definiera innehållet i formulärsidhuvudet och -sidfoten. Se [Definiera sidhuvuden och sidfötter](form-rendering.md#defining-headers-and-footers).
 
-Du kan också hantera översättningar. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+Du kan också hantera översättningar. Se [Översätta ett webbformulär](translating-a-web-form.md).
 
 ## Formulärets tillgänglighet {#accessibility-of-the-form}
 
-Ett webbformulär är tillgängligt för användare om det är **[!UICONTROL Online]** och om det aktuella datumet är inom giltighetsperioden. Formulärets status ändras under publiceringssteget (se [Publicera ett formulär](../../web/using/publishing-a-web-form.md#publishing-a-form)). Statusen visas i avsnittet **Projekt** på fliken **[!UICONTROL General]** i egenskapsfönstret.
+Ett webbformulär är tillgängligt för användare om det är **[!UICONTROL Online]** och om det aktuella datumet är inom giltighetsperioden. Formulärets status ändras under publiceringssteget (se [Publicera ett formulär](publishing-a-web-form.md#publishing-a-form)). Statusen visas i avsnittet **Projekt** på fliken **[!UICONTROL General]** i egenskapsfönstret.
 
 Giltighetsperioden löper från **[!UICONTROL Start]**-datumet till **[!UICONTROL End date]**. Om inga datum anges i dessa fält har formuläret permanent giltighet.
 
@@ -101,7 +101,7 @@ Giltighetsperioden löper från **[!UICONTROL Start]**-datumet till **[!UICONTRO
 >
 >Om formuläret är stängt och dess giltighetsperiod därför inte har nåtts eller löpt ut, eller om det stängts av Adobe Campaign-operatorn, visas ett meddelande när användaren försöker få åtkomst till det. Du kan anpassa det här meddelandet genom att klicka på **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
-## Åtkomstkontroll för formulär {#form-access-control}
+## Åtkomstkontroll {#form-access-control}
 
 Som standard görs åtkomsten till webbformulären i anonymt läge: alla operatorer som har åtkomst till formuläret tilldelas WebApp-operatörsrättigheter.
 
@@ -119,7 +119,7 @@ Med alternativet **[!UICONTROL Use a specific account]** kan du begränsa läs- 
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
-## Formulär-URL-parametrar {#form-url-parameters}
+## URL-parametrar för formulär {#form-url-parameters}
 
 Du kan lägga till ytterligare parametrar i URL:en för ett formulär för att anpassa dess innehåll och initiera ett sammanhang (språk, krypterat mottagar-ID, företag, beräknad formel som lagras i en variabel osv.). På så sätt kan du ge åtkomst till ett formulär via flera olika URL:er och anpassa sidinnehållet baserat på värdet på de parametrar som anges i URL:en.
 
@@ -144,13 +144,13 @@ Följande parametrar är tillgängliga som standard:
    >
    >När formuläret visas via en URL med parametern **_uid** tvingas värdet för parametern **[!UICONTROL origin]** till **Adobe Campaign**.
 
-## Lägger till parametrar {#adding-parameters}
+## Lägga till parametrar {#adding-parameters}
 
 Parametrar kan läggas till via fliken **[!UICONTROL Parameters...]** i formulärets egenskapsfönster. De kan göras obligatoriska enligt nedan:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-Du måste ange en lagringsplats som parametervärdet hämtas från. Välj ett av lagringsalternativen och klicka sedan på fliken **[!UICONTROL Storage]** för att markera fältet eller variabeln i fråga. Lagringsalternativen finns i [Svarslagringsfält](../../web/using/web-forms-answers.md#response-storage-fields).
+Du måste ange en lagringsplats som parametervärdet hämtas från. Välj ett av lagringsalternativen och klicka sedan på fliken **[!UICONTROL Storage]** för att markera fältet eller variabeln i fråga. Lagringsalternativen finns i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
 
 Svarandens status (0, 1 eller något annat värde) kan sedan läggas till i URL:en för att komma åt formuläret. Informationen kan återanvändas på formulärets sidor eller i en testruta. De sidor som visas kan villkoras baserat på värdet för sammanhanget, vilket visas nedan:
 
