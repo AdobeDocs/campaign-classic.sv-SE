@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 4%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ Om du vill infoga ett databasfält använder du personaliseringsknappen.
 
 >[!NOTE]
 >
->Strängarna som anges i HTML-redigeraren översätts bara om de definieras i underfliken **[!UICONTROL Texts]**. Annars samlas de inte in. Mer information finns i [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+>Strängarna som anges i HTML-redigeraren översätts bara om de definieras i underfliken **[!UICONTROL Texts]**. Annars samlas de inte in. Mer information finns i [Översätta ett webbformulär](translating-a-web-form.md).
 
 ### Infoga en länk {#inserting-a-link}
 
@@ -85,7 +85,7 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   Du kan dölja knapparna **[!UICONTROL Next]** och/eller **[!UICONTROL Back]** om de ska ersättas av en länk. Se den här [sidan](../../web/using/defining-web-forms-page-sequencing.md).
+   Du kan dölja knapparna **[!UICONTROL Next]** och/eller **[!UICONTROL Back]** om de ska ersättas av en länk. Se den här [sidan](defining-web-forms-page-sequencing.md).
 
    Länken ersätter den **[!UICONTROL Next]**-knapp som används som standard.
 
@@ -107,60 +107,7 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
    >[!NOTE]
    >
-   >Mer information om sidordningsföljd i ett webbformulär finns i [Definiera sidsekvenser för webbformulär](../../web/using/defining-web-forms-page-sequencing.md).
-
-* Läs in formulärfälten i förväg med data från Facebook-profilen
-
-   >[!CAUTION]
-   >
-   >Den här funktionen är bara tillgänglig om du har installerat **[!UICONTROL Social Marketing]**-programmet. Om du vill använda det här alternativet måste du skapa ett Facebook-program tillsammans med ett externt konto av typen **[!UICONTROL Facebook Connect]**. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
-
-   Med alternativet **[!UICONTROL Preload with Facebook]** kan du infoga en knapp i ett formulär för att förhandsladda fält med hjälp av Facebook-profilinformation.
-
-   ![](assets/web_social_webapp_037.png)
-
-   När en användare klickar på knappen **[!UICONTROL Fill in automatically]** öppnas Facebook behörighetsfönster.
-
-   ![](assets/web_social_webapp_029.png)
-
-   >[!NOTE]
-   >
-   >Det går att ändra listan med utökade rättigheter när det externa kontot konfigureras. Om du inte anger några utökade behörigheter vidarebefordrar Facebook basprofilinformationen som standard.\
-   >Klicka här om du vill visa en lista över utökade rättigheter och syntax för dem: [https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
-
-   Om användaren går med på att dela sin information är formulärfälten förinlästa.
-
-   ![](assets/web_social_webapp_030.png)
-
-I det här fallet har vi skapat ett webbprogram som består av följande element:
-
-* en sida som innehåller formuläret
-* en **[!UICONTROL Record]**-aktivitet
-* en **[!UICONTROL End]**-aktivitet
-
-![](assets/social_webapp_031.png)
-
-Så här lägger du till en förinläsningsknapp:
-
-1. Skapa ett formulär.
-
-   ![](assets/social_webapp_032.png)
-
-1. Gå till samma nivå som fälten i formuläret och lägg till en länk.
-
-   ![](assets/social_webapp_033.png)
-
-1. Ange etiketten och välj typen **[!UICONTROL Button]**.
-
-   ![](assets/social_webapp_034.png)
-
-1. Gå till fältet **[!UICONTROL Action]** och välj **[!UICONTROL Preload with Facebook]**.
-
-   ![](assets/social_webapp_035.png)
-
-1. Gå till fältet **[!UICONTROL Application]** och välj det externa konto av typen **[!UICONTROL Facebook Connect]** som skapades tidigare. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
-
-   ![](assets/social_webapp_036.png)
+   >Mer information om sidordningsföljd i ett webbformulär finns i [Definiera sidsekvenser för webbformulär](defining-web-forms-page-sequencing.md).
 
 ### Anpassa HTML-innehåll {#personalizing-html-content}
 
@@ -168,7 +115,7 @@ Du kan anpassa HTML-innehållet på en formulärsida med data som registrerats p
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Använd anpassningsfält för att mata in användarnamnet och det valda varumärket på nytt på nästa sida. Vilken syntax som ska användas beror på informationslagringsläget. Mer information finns i [Använda insamlad information](../../web/using/web-forms-answers.md#using-collected-information).
+Använd anpassningsfält för att mata in användarnamnet och det valda varumärket på nytt på nästa sida. Vilken syntax som ska användas beror på informationslagringsläget. Mer information finns i [Använda insamlad information](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
@@ -191,7 +138,7 @@ Detta ger följande resultat:
 
 På fliken **[!UICONTROL Text]** kan du skapa variabelfält som kan användas i HTML mellan &lt;%=- och %>-tecken med följande syntax: **$(IDENTIFIER)**.
 
-Använd den här metoden om du enkelt vill att strängarna ska vara lokaliserade. Se [Översätta ett webbformulär](../../web/using/translating-a-web-form.md)
+Använd den här metoden om du enkelt vill att strängarna ska vara lokaliserade. Se [Översätta ett webbformulär](translating-a-web-form.md)
 
 Du kan till exempel skapa ett **kontaktfält** som gör att du kan visa strängen &quot;Datum för senaste kontakt:&quot; för HTML-innehållet. Följ stegen nedan för att göra detta:
 
@@ -214,7 +161,7 @@ Du kan till exempel skapa ett **kontaktfält** som gör att du kan visa stränge
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-I det här läget kan du bara definiera texten i webbformulär en gång och hantera översättningar med det integrerade översättningsverktyget. Mer information finns i [Översätta ett webbformulär](../../web/using/translating-a-web-form.md).
+I det här läget kan du bara definiera texten i webbformulär en gång och hantera översättningar med det integrerade översättningsverktyget. Mer information finns i [Översätta ett webbformulär](translating-a-web-form.md).
 
 ## Infoga bilder {#inserting-images}
 
