@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 4%
@@ -111,7 +111,7 @@ Du kan indexera antalet auktoriserade meddelanden beroende på vilket segment mo
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Om du vill definiera tröskelvärdet kan du använda en dimension som är länkad till måldimensionen: om du till exempel vill inkludera meddelanden som levereras till mottagarprofiler som lagras i besökstabellen (mer information om besökstabellen finns i [det här avsnittet](../../web/using/use-case--creating-a-refer-a-friend-form.md)) eller för att undvika att skicka mer än ett meddelande per vecka till samma hushåll (som kan referera till flera e-postadresser) som identifieras i en dimension länkad till mottagarnas.
+Om du vill definiera tröskelvärdet kan du använda en dimension som är länkad till måldimensionen: om du till exempel vill inkludera meddelanden som levereras till mottagarprofiler som lagras i besökstabellen (mer information om besökstabellen finns i [det här avsnittet](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) eller för att undvika att skicka mer än ett meddelande per vecka till samma hushåll (som kan referera till flera e-postadresser) som identifieras i en dimension länkad till mottagarnas.
 
 Om du vill göra det väljer du alternativet **[!UICONTROL Count messages on a linked dimension]** och väljer sedan besökaren eller kontakttabellen.
 
@@ -137,7 +137,7 @@ I följande exempel vill vi länka vikten på nyhetsbrev på musik till mottagar
 
 1. Använd den här regeln för meddelanden med följande ämne: nyhetsbrev, specialerbjudanden osv. Vikten av dessa leveranser, och därmed deras prioritet, beror på varje mottagares benägenhetspoäng.
 
-## Ställa in perioden {#setting-the-period}
+## Ange period {#setting-the-period}
 
 Tryckregler definieras i **n**-dagars rullande perioder.
 
@@ -198,7 +198,7 @@ Om ingen gruppering är markerad skickas inte bara **nyhetsbrevet no.4**, efters
 >
 >När du ändrar definitionen för en typologiregel kan du skapa en **simulering** för att kontrollera hur den påverkar leveranserna och övervaka hur leveranserna påverkar varandra. Mer information finns i [Kampanjsimuleringar](../../campaign/using/campaign-simulations.md).
 
-## Uteslutning efter medling {#exclusion-after-arbitration}
+## Uteslutning efter skiljedom {#exclusion-after-arbitration}
 
 Skiljeförfarandet tillämpas varje kväll via det tekniska arbetsflödet **[!UICONTROL Forecasting]** och arbetsflödet **[!UICONTROL Campaign jobs]**.
 
@@ -216,7 +216,7 @@ Om det här antalet överskrider tröskelvärdet tillämpas de skiljeregler som 
 
 ## Användningsfall för tryckregler {#use-cases-on-pressure-rules}
 
-### Justera tröskelvärdet baserat på kriteriet {#adapting-the-threshold-based-on-criterion}
+### Anpassning av tröskelvärdet baserat på kriterium {#adapting-the-threshold-based-on-criterion}
 
 Vi vill skapa en typologiregel för att förhindra att fler än fyra meddelanden per vecka skickas till kunder och två meddelanden per vecka till potentiella kunder.
 
@@ -286,7 +286,7 @@ Vid leveransanalys utesluts leveransmottagarna vid behov från leveransen, beroe
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Beräkna leveransvikten baserat på beteende {#calculating-the-delivery-weight-based-on-behavior}
+### Beräkna leveransvikt baserat på beteende {#calculating-the-delivery-weight-based-on-behavior}
 
 Du kan definiera tryckregler baserat på mottagarens beteende: Det innebär att en leverans kan anpassas till kriterier som varierar mellan olika mottagare. Du kan till exempel bestämma dig för att skicka ett meddelande beroende på om en mottagare besökt din webbplats eller inte, klickat i ett visst avsnitt av det senaste nyhetsbrevet, prenumererat på en informationstjänst eller till och med baserat på svar på en undersökning, ett onlinespel osv.
 
