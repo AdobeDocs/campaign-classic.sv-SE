@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Läs mer om hur du kan [utforskar data](../../reporting/using/using-cubes-to-exp
 
 ## Kan jag skapa en rapport från svaren på en undersökning online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Läs om [det här användningsfallet](../../reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md) och lär dig hur du skapar en rapport som visar svar på en undersökning online.
+Läs om [det här användningsfallet](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md) och lär dig hur du skapar en rapport som visar svar på en undersökning online.
 
 ## Hur kan jag dela åtkomst till min rapport via gränssnittet i Campaign? {#how-can-i-share-access-to-my-report}
 
