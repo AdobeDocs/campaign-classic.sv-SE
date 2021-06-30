@@ -7,7 +7,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -99,5 +99,5 @@ Vi strävar efter att se till att du har relevant projekt- och kontaktinformatio
 ## Ytterligare resurser
 
 * [Versionsinformation om [!DNL Gold Standard]](gold-standard.md)
-* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Kompatibilitetsmatris för [!DNL Gold Standard]](compatibility-matrix-gs.md)
