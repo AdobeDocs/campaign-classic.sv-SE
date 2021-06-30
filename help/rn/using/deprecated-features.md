@@ -51,7 +51,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
     <tr>
   <td>Övervakningsrapport om teknisk levererbarhet<br></td>
    <td><p>Övervakningsrapporten om teknisk levererbarhet är föråldrad från och med Campaign version 21.1.</p>
-   <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
+   <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
    <p>Adobe rekommenderar att du samarbetar med levererbarhetsteamet för att definiera de bästa verktygen för att övervaka instansens levererbarhetsförmåga.</p>
   <p><em>Måldatum för borttagning: i slutet av 2021</em></p>
   </td>
@@ -82,7 +82,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    <td><p>Faxkanalen är inte längre tillgänglig från och med Campaign 21.1.3. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a></p>
   <tr>
   <td>Demdex-domän<br></td>
-  <td><p> Från och med Campaign version 21.1.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inaktuell. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
+  <td><p> Från och med Campaign version 21.1.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inte längre tillgänglig. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
   </td>
   </td>
   </tr>
