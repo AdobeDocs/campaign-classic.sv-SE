@@ -7,9 +7,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1953'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Den här sidan beskriver nya funktioner, förbättringar och korrigeringar som i
 
 ## ![](assets/do-not-localize/blue_2.png) Version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
 
-_5 juni 2021_
+_5 june 2021_
 
 **Nyheter**
 
@@ -36,9 +36,9 @@ _5 juni 2021_
 <tbody>
 <tr>
 <td>
-<p>Integrationen mellan Journey Orchestration och Adobe Campaign Classic är nu GA. Det gör att Journey Orchestration kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Classic Transactional Messaging-funktioner.</p>
-<p>Anslutningen mellan Journey Orchestration och Campaign Classic är konfigurerad av Adobe vid etableringstidpunkten.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">Journey Orchestration-dokumentationen</a>. Ett steg-för-steg-exempel visas i det här <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">avsnittet</a></p>
+<p>Integrationen mellan Journey Orchestration och Adobe Campaign Classic är nu GA. Det gör att Journey Orchestration kan skicka e-post, push-meddelanden och SMS med transaktionella meddelandefunktioner i Adobe Campaign Classic </p>
+<p>Kopplingen mellan Journey Orchestration och instanser i Campaign Classic är konfigurerad av Adobe vid etableringstidpunkten.</p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=sv">dokumentationen om Journey Orchestration</a>. Ett steg-för-steg-exempel visas i det här <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=sv">avsnittet</a></p>
 </td>
 </tr>
 </tbody>
@@ -57,7 +57,7 @@ _5 juni 2021_
 <ul> 
 <li><p>Stöd för videomeddelandetypen LINE</p></li>
 <li><p>Stöd för API för partnerregistrering för LINE</p></li>
-<li><p>Stöd för återförsök av meddelanden som skickas i händelse av fel på serversidan i LINE eller timeout i nätverket</p></li>
+<li><p>Stöd för att skicka meddelanden igen i händelse av fel på serversidan i LINE eller timeout i nätverket</p></li>
 </ul>
 <p>Mer information finns i den <a href="../../delivery/using/line-channel.md">detaljerade dokumentationen</a>.</p>
 </td> 
@@ -73,7 +73,7 @@ _5 juni 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Nu kan du ansluta din Adobe Campaign Classic-instans till din externa Vertica-databas. Denna anslutning hanteras via ett nytt externt konto.</p>
+<td> <p>Nu kan du ansluta din instans i Adobe Campaign Classic till din externa Vertica-databas. Den här anslutningen hanteras via ett nytt externt konto.</p>
 <p>Mer information finns i den <a href="../../installation/using/configure-fda-vertica.md">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 
@@ -88,7 +88,7 @@ _5 juni 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Nu kan du ansluta din Adobe Campaign Classic-instans till din externa Google Big Query-databas. Denna anslutning hanteras via ett nytt externt konto.
+<td> <p>Nu kan du ansluta din instans i Adobe Campaign Classic till din externa Google Big Query-databas. Den här anslutningen hanteras via ett nytt externt konto.
 </p>
 <p>Mer information finns i den <a href="../../installation/using/configure-fda-google-big-query.md">detaljerade dokumentationen</a>.</p>
 </td> 
@@ -99,9 +99,9 @@ _5 juni 2021_
 **Säkerhetsförbättringar**
 
 * Åtkomst till API-metoden **xtk:session#GetCnxInfo** som returnerar den fullständiga anslutningsinformationen för databasen är nu begränsad till enbart administratörsanvändare. (NEO-27779)
-* Funktionen decryptString har ersatts med decryptPassword i CRM-relaterade JavaScript-filer.
-* Funktionen för att spåra signaturer har förbättrats för att minska risken att spåra omdirigeringsfel när tredjepartsverktyg (e-postklienter, webbläsare, säkra länksäkerhetsverktyg) ändrar den spårade länken.
-* Korrigerade ett problem som kunde förhindra att spårade URL:er fungerar när de innehöll versaler. Signeringsfunktionen för spårade URL-adresser är nu skiftlägeskänslig. (NEO-28414)
+* Den inaktuella funktionen decryptString har ersatts med decryptPassword i CRM-relaterade JavaScript-filer.
+* Funktionen för att spåra signaturer har förbättrats för att minska risken för fel vid spårning av omdirigering när tredjepartsverktyg (e-postklienter, webbläsare, säkerhetsverktyg för säkra länkar) ändrar den spårade länken.
+* Korrigerade ett problem som kunde förhindra att spårade URL:er fungerade när de innehöll versaler. Signeringsfunktionen för spårade URL:er är nu skiftlägeskänslig. (NEO-28414)
 
 **Kompatibilitetsuppdateringar**
 
@@ -114,9 +114,9 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 
 **Inaktuella funktioner**
 
-* Från och med Campaign 21.1 är Adobe Analytics Data Connector föråldrat. Om du använder den här anslutningen måste du anpassa implementeringen med den nya anslutningen Adobe Analytics Connector.
+* Från och med Campaign 21.1 är Adobe Analytics Data Connector inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen med den nya kopplingen Adobe Analytics Connector.
 Mer information finns i den [detaljerade dokumentationen](../../platform/using/adobe-analytics-connector.md).
-* Stöd för Debian 8 är nu föråldrat.
+* Stöd för Debian 8 är nu inaktuellt.
 * Efter borttagningen av Oracle CRM i 20.3 har det relaterade externa kontot tagits bort från gränssnittet.
 
 Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../rn/using/deprecated-features.md).
@@ -124,39 +124,39 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 **Förbättringar**
 
 * Extra kontroller har lagts till när ett arbetsflöde sparas för att säkerställa att aktivitetsnamnen är unika och att övergångar alltid följs av en aktivitet.
-* Det tekniska arbetsflödet **Fakturering (fakturering)** innehåller nu de uppgifter som ursprungligen utfördes av arbetsflödet **Antal aktiva faktureringsprofiler** (faktureringActiveContactCount) som har tagits bort. E-postrapporten som skickas varje månad av arbetsflödet innehåller nu information om antalet aktiva profiler för instansen. [Läs mer](../../workflow/using/about-technical-workflows.md).
+* Det tekniska arbetsflödet **Fakturering (billing)** innehåller nu de uppgifter som ursprungligen utfördes av arbetsflödet **Antal aktiva faktureringsprofiler** (billingActiveContactCount) som har tagits bort. E-postrapporten som skickas varje månad av arbetsflödet innehåller nu information om antalet aktiva profiler för instansen. [Läs mer](../../workflow/using/about-technical-workflows.md).
 * Det nya attributet **_keyOnMData** har lagts till för att kunna använda en nyckel för åtgärder på PM-data.
 
 **Andra ändringar**
 
 * Den öppna tredjepartsversionen för Windows har uppdaterats till version 1.1.1h.
-* I Debian-paketbeskrivningen har ingen lserver ändrats till Adobe Campaign Classic-server.
+* I Debian-paketbeskrivningen har nlserver ändrats till Adobe Campaign Classic-server.
 
 **Felkorrigeringar**
 
 * Ett problem har korrigerats vid redigering av tidsgränsen för sessionen för att logga ut användare efter en viss tid där användarna var inloggade även efter den angivna tiden.
 * Korrigerade ett problem där leveranser visades som skrivskyddade men fortfarande kunde redigeras i leveransegenskaperna.
-* Korrigerade ett fel som gjorde att redigeringsverktygsfältet försvann när du designade ett webbprogram.
+* Korrigerade ett fel som gjorde att redigeringsverktygsfältet försvann när ett webbprogram designades.
 * Korrigerade ett fel som visade textversionen av ett e-postmeddelande med Adobe Campaign Classic-rubriker när en länk till ett e-postmeddelande lades till. (NEO-29211
-* När du använder FDA över HTTP-anslutningar låstes arbetsflödet **Mid-sourcing (leveransloggar)** (defaultMidSourcingLog) i den tidsram som angetts av alternativet **NmsMidSourcing_LogsPeriodHour**. Detta förhindrar att poster uppdateras med data som har inträffat efter den här angivna tidsramen. (NEO-30833)
-* Ett problem som uppstod efter att arbetsflödet för meddelandecentersynkronisering kördes har korrigerats. Varje gång en leveransobjektsmapp flyttas till en anpassad mapp, flyttar arbetsflödet leveranserna tillbaka till den generiska **transaktionsmeddelandehistoriken**-mappen. (NEO-27445)
+* När du använder FDA över HTTP-anslutningar låstes arbetsflödet **Mid-sourcing (leveransloggar)** (defaultMidSourcingLog) i den tidsram som angetts av alternativet **NmsMidSourcing_LogsPeriodHour**. Detta förhindrade att poster uppdaterades med data som inträffade efter den här angivna tidsramen. (NEO-30833)
+* Ett problem som uppstod efter att arbetsflödet för meddelandecentersynkronisering kördes har korrigerats. Varje gång en leveransobjektsmapp flyttades till en anpassad mapp, flyttade arbetsflödet leveranserna tillbaka till den generiska **transaktionsmeddelandehistoriken**-mappen. (NEO-27445)
 * Korrigerade ett fel som visade ett felmeddelande när **Sändningsstatistik**, **Spåra indikatorer** och **Statistik för delningsaktiviteterna** skulle visas.
 * Arbetsflödesaktiviteten **Oracle On Demand** har tagits bort från gränssnittet efter borttagning av Oracle CRM-koppling.
 * Korrigerade ett problem som stoppade körningen av arbetsflöden efter den dagliga omstarten av arbetsflödesservermodulen (wfserver). (NEO-30047)
 * Korrigerade ett fel som förhindrade att MX-hanteringsdokumentet uppdaterades, vilket kunde påverka IP-anseendet negativt. (NEO-29897)
-* Åtgärdade problem som orsakade webbprocesskrascher när ett SOAP-anrop togs emot. (NEO-28796) (NEO-29600)
+* Åtgärdade problem som orsakade webbprocesskrascher när ett SOAP-anrop togs emot. (NEO-28796 och NEO-29600)
 * Korrigerade ett problem som gjorde att skapandet av FDA-index i SAP HANA misslyckades. (NEO-29664)
-* Korrigerade ett problem som kunde behålla transaktionsmeddelanden i **Väntar**-läge när SOAP-anrop som innehåller en rubrik utfördes. (NEO-28737)
-* Ett problem som uppstod när Teradata FDA-anslutningen användes har korrigerats: alla temporära tabeller skapades endast på en nod i klustret, vilket kan göra att hela poolutrymmet förbrukas och Teradatan kraschar. De temporära tabellerna genereras nu på många noder. (NEO-28230)
+* Korrigerade ett problem som kunde behålla transaktionsmeddelanden i **Väntar**-läge när SOAP-anrop som innehöll en rubrik utfördes. (NEO-28737)
+* Ett problem som uppstod när Teradata FDA-kopplingen användes har korrigerats: alla temporära tabeller skapades endast på en nod i klustret, vilket kan göra att hela poolutrymmet förbrukas och Teradata kraschar. De temporära tabellerna genereras nu på många noder. (NEO-28230)
 * Ett problem har korrigerats vid användning av webbprogram som ledde till att spårningstaggar genererade felaktiga primärnycklar till schemat **nms:trackingURL**. (NEO-27931)
 * Kompatibiliteten med ODBC 3.x har förbättrats för att säkerställa felmeddelandets exakthet.
 * Korrigerade ett problem som kunde leda till konsolkrascher när anpassade innehållsmallar användes i e-postleveranser. (NEO-31547)
 * Korrigerade ett problem som hindrade Tomcat från att skicka giltiga svar på grund av en långsam anslutning eller stor svarsstorlek.
 * Korrigerade ett problem som kunde inträffa vid läsning av UUID från en PostgreSQL-databas.
-* Korrigerade ett problem som kan leda till prestandaproblem vid sökning efter offertdata som är länkade till erbjudanden. (NEO-27554)
+* Korrigerade ett problem som kunde leda till prestandaproblem vid sökning efter offertdata som var länkade till erbjudanden. (NEO-27554)
 * Korrigerade ett problem som ledde till att webbprocessen inte svarade när IMS-tjänsten aktiverades men inte svarade.
-* Korrigerade ett problem som hindrade dig från att skicka en leverans med en grupp korrektur på grund av en specifik kopplingsmekanism som inte kunde leverera personalisering. (NEO-14391)
-* Korrigerade ett problem som inte kunde skicka en avisering med aviseringsaktiviteten om en fråga och en anrikningsaktivitet riktade till leveransregistret. (NEO-25157)
+* Korrigerade ett problem som hindrade dig från att skicka en leverans med en grupp korrektur på grund av en specifik kopplingsmekanism som inte kunde leverera personanpassning. (NEO-14391)
+* Korrigerade ett problem där en avisering inte kunde skickas med aviseringsaktiviteten om en fråga och en berikningsaktivitet var riktade till leveransregistret. (NEO-25157)
 
 ## ![](assets/do-not-localize/red_2.png) Version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
 
