@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Punkterna nedan är länkade till de viktigaste villkoren och begreppen relatera
 * [Åtkomsträttigheter och rätt att glömmas](../../platform/using/privacy-management.md#right-access-forgotten)
 * [Medgivande, lagring och roller](../../platform/using/privacy-management.md#consent-retention-roles)
 
-## Beredskap för integritetsreglering{#privacy-regulations-readiness}
+## Beredskap för integritetsreglering {#privacy-regulations-readiness}
 
 ### Vad föreslår Adobe Campaign för att följa de senaste regelverken gällande sekretess?
 
