@@ -7,9 +7,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,8 +61,8 @@ Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång
 ## Support och andra användbara länkar{#support}
 
 * [Hjälp och support](../../support.md)
-* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv)
 * [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
 
-Prenumerera på [produktuppdateringen Adobe Priority](https://www.adobe.com/subscription/priority-product-update.html) för att få information om nya versioner av Experience Cloud.
+Prenumerera på [produktuppdateringen Adobe Priority](https://www.adobe.com/se/subscription/priority-product-update.html) för att få information om nya versioner av lösningen Experience Cloud.
