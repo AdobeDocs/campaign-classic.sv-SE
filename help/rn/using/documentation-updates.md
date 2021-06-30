@@ -21,19 +21,19 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## Juni 2021 {#june-2021}
 
-Avsnittet **Transaktionella meddelanden** har organiserats om och förtydligats med ett nytt Kom igång-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att få en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
+Avsnittet **Transaktionella meddelanden** har organiserats om och förtydligats med ett nytt Kom igång-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att ge en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
 
 **Dokumentationsuppdateringar kommer med utgåvan 21.1.3**
 
-Integrering med Adobe Journey Orchestration - [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Ett steg-för-steg-exempel visas i [den här sidan](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+Integrering med Adobe Journey Orchestration – [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=sv). Ett steg-för-steg-exempel visas på [den här sidan](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=sv)
 
-Förbättringar av -kanaler - [Läs mer](../../delivery/using/line-channel.md)
+Förbättringar av LINE-kanaler – [Läs mer](../../delivery/using/line-channel.md)
 
-Ny Vertica FDA-koppling - [Läs mer](../../installation/using/configure-fda-vertica.md)
+Ny Vertica FDA-koppling – [Läs mer](../../installation/using/configure-fda-vertica.md)
 
-Ny Google Big Query FDA-koppling - [Läs mer](../../installation/using/configure-fda-google-big-query.md)
+Ny Google Big Query FDA-koppling – [Läs mer](../../installation/using/configure-fda-google-big-query.md)
 
-Den tekniska arbetsflödesbeskrivningen &quot;Fakturering (fakturering)&quot; omfattar nu de uppgifter som ursprungligen utfördes av &quot;Antal aktiva faktureringsprofiler (billingActiveContactCount)”. [Läs mer](../../workflow/using/about-technical-workflows.md)
+Den tekniska arbetsflödesbeskrivningen &quot;Fakturering (fakturering)&quot; omfattar nu de uppgifter som ursprungligen utfördes av &quot;Antal aktiva faktureringsprofiler (billingActiveContactCount)&quot;. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 ## Maj 2021 {#may-2021}
 
@@ -468,7 +468,7 @@ Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentatio
 
 En ny sida med felsökning har lagts till för spårning i Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/classic-tracking-troubleshooting.html).
 
-En ny sida med bästa övningarna för Adobe Analytics Connector har lagts till. [Läs mer om Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
+En ny sida med bästa praxis för Adobe Analytics Connector har lagts till. [Läs mer om Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
 Starthandboken Bästa praxis för leverans har flyttats och uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
