@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i en
 * [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (amerikansk lagstiftning gällande regler och krav på kommersiell e-post)
 * [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
 * [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (Thailand Personal Data Protection Act)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)  (den brasilianska allmänna dataskyddslagen) – träder i kraft från och med den 16 augusti 2020
+* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (den brasilianska allmänna dataskyddslagen) – träder i kraft från och med den 16 augusti 2020
 
 >[!NOTE]
 >
