@@ -586,7 +586,7 @@ ht-degree: 97%
       + [Händelsebearbetning](message-center/using/about-event-processing.md)
       + [Leveranskörning](message-center/using/delivery-execution.md)
    + Rapporter {#reports}
-      + [Om rapporter om transaktionsmeddelanden](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporter om transaktionsmeddelanden](message-center/using/about-transactional-messaging-reports.md)
       + [Historik om händelser i meddelandecentret](message-center/using/history-of-message-center-events.md)
       + [Tjänstenivå för meddelandecentret](message-center/using/message-center-service-level.md)
       + [Bearbetningstid för meddelandecentret](message-center/using/message-center-processing-time.md)
