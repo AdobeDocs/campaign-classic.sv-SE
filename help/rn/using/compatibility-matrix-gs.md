@@ -379,4 +379,4 @@ Följande webbläsare är kompatibla med Campaign for Web Access.
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Installationshandbok](../../installation/using/general-architecture.md)
 * [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
-* [Procedur för builduppgradering](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html)
+* [Procedur för builduppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html)
