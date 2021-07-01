@@ -6,9 +6,9 @@ feature: Översikt
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4466'
+source-wordcount: '4456'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../del
 
 ## Oktober 2019 {#october-2019}
 
-Listan över felmeddelanden i Campaign har uppdaterats. [Läs mer](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Listan över felmeddelanden i Campaign har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentation om sekretesshantering som inkluderar GDPR och CCPA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy.html)
 
@@ -516,7 +516,7 @@ Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats fö
 
 Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
-Listan med felmeddelanden har uppdaterats. [Läs mer](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Listan med felmeddelanden har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Ytterligare information om SOAP-autentiseringsmetoder för transaktionsmeddelanden har lagts till. [Läs mer](../../message-center/using/event-description.md)
 
