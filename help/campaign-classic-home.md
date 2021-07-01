@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 48%
+source-wordcount: '257'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 48%
 
 * **[Juniversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
 
-* **[Frågor och ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> svar om Apples integritetsskyddHitta den första vägledningen som svar på Apples meddelande om iOS 15
+* **[Vanliga frågor och svar om integritetsskydd i Apple Mail ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=sv)**<br/> Hitta inledande vägledning som svar på Apples meddelande om iOS 15
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](technotes/ims-updates.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **
 
@@ -80,7 +80,7 @@ ht-degree: 48%
 
 | Användbara sidor | Resurser för utvecklare |
 |---|---|
-| [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
+| [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) |
 | [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | Uppgradering av [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
