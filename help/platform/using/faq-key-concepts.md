@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '876'
 ht-degree: 97%
 
 ---
@@ -114,7 +114,7 @@ Läs [checklistan för säkerhetskonfiguration](https://helpx.adobe.com/se/campa
 
 ## Hur översätter jag ett felmeddelande? {#how-to-translate-an-error-message-}
 
-Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html).
+Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html).
 
 ## Kan jag skapa ett webbformulär och samla svar i Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
