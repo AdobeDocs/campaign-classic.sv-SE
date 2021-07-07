@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan över
 
 Du kan också förhindra att viktiga filer överförs genom att konfigurera webbservern. [Läs mer](web-server-configuration.md)
 
-## Proxyanslutningskonfiguration {#proxy-connection-configuration}
+## Konfiguration för proxyanslutning {#proxy-connection-configuration}
 
 Du kan ansluta Campaign-servern till ett externt system via en proxy, till exempel med hjälp av en **filöverföringsaktivitet**-arbetsflödesaktivitet. För att uppnå detta måste du konfigurera **proxyConfig**-avsnittet i **serverConf.xml**-filen med ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
@@ -102,6 +102,19 @@ Om du använder samma proxy för flera anslutningstyper definieras bara proxyHTT
 Om du har interna anslutningar som ska gå igenom proxyn lägger du till dem i parametern override.
 
 Om du tillfälligt vill inaktivera proxyanslutningen anger du parametern enabled till &quot;false&quot; eller &quot;0&quot;.
+
+Om du behöver använda iOS HTTP/2-anslutningen via en proxy stöds följande HTTP-proxylägen:
+
+* HTTP utan autentisering
+* Grundläggande HTTP-autentisering
+
+Om du vill aktivera proxyläget måste följande ändring göras i filen `serverconf.xml`:
+
+```
+<nmac useHTTPProxy="true">
+```
+
+Mer information om denna iOS HTTP/2-anslutning finns på den här [sidan](../../delivery/using/about-mobile-app-channel.md).
 
 ## Hantera offentliga resurser {#managing-public-resources}
 
