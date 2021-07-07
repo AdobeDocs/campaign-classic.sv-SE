@@ -6,14 +6,18 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 46c8807a433d87a091a06fe60cf684919fddb5c6
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 7%
+source-wordcount: '240'
+ht-degree: 6%
 
 ---
 
 # Infoga en delad resurs{#inserting-a-shared-asset}
+
+>[!CAUTION]
+>
+> Experience Cloud Assets är nu avvecklat. För ny implementering kan du inte längre integrera Experience Cloud Assets med Adobe Campaign Classic.
 
 Resurser som delas från Adobe Experience Cloud kan användas i e-postmeddelanden och på landningssidor enligt följande:
 
