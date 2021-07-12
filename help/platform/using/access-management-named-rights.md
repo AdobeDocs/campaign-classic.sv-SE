@@ -3,10 +3,10 @@ product: campaign
 title: Använd namngivna rättigheter för att ställa in behörigheter
 description: Lär dig hur du använder namngivna rättigheter för att ställa in behörigheter
 feature: Åtkomsthantering
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 6%
