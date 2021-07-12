@@ -3,17 +3,17 @@ product: campaign
 title: Uppgradering av [!DNL Gold Standard]
 description: Läs om vad Campaign Classic  [!DNL Gold Standard]  är
 feature: Översikt
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
 ---
 
-# [!DNL Gold Standard]-versioner {#gs-overviews}
+# [!DNL Gold Standard]-versioner  {#gs-overviews}
 
 ## Vad är [!DNL Gold Standard]?
 
