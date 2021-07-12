@@ -3,10 +3,10 @@ product: campaign
 title: Hantera åtkomst till Campaign-mappar
 description: Lär dig hur du ger åtkomst till Campaign-mappar och skapar vyer
 feature: Applikationsinställningar
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och
 
 ## Mappar och vyer {#folders-and-views}
 
-### Vad är en mapp {#about-folders}?
+### Vad är en mapp? {#about-folders}
 
 Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerklicka på trädet via menyn **[!UICONTROL Add new folder]**. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
 
@@ -27,7 +27,7 @@ Mappar är noder i Adobe Campaign-trädet. Dessa noder skapas genom att högerkl
 
 Du kan anpassa utforskarens navigeringsträd. Lär dig konfigurationssteg och bästa praxis [i det här avsnittet](adobe-campaign-workspace.md).
 
-### Vad är en vy {#about-views}?
+### Vad är en vy? {#about-views}
 
 Dessutom kan du skapa vyer för att begränsa tillgången till data och ordna innehållet i trädet så att det passar dina behov. Du kan sedan tilldela behörighet till vyerna.
 
@@ -114,7 +114,7 @@ Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas 
 >
 >Om du rensar det här alternativet för en mapp tas det inte bort automatiskt för undermapparna. Du måste rensa det explicit för var och en av undermapparna.
 
-### Bevilja åtkomst för alla operatorer {#grant-access-to-all-operators}
+### Ge åtkomst till alla operatorer {#grant-access-to-all-operators}
 
 Om alternativet **[!UICONTROL System folder]** är markerat på fliken **[!UICONTROL Security]** har alla operatorer åtkomst till dessa data, oavsett deras rättigheter. Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar för att de ska ha åtkomst.
 
