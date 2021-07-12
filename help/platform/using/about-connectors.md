@@ -3,17 +3,17 @@ product: campaign
 title: Om kopplingar
 description: Om kopplingar
 feature: Översikt
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 8%
 
 ---
 
-# Kom igång med anslutningar{#about-connectors}
+# Kom igång med kontakter{#about-connectors}
 
 Adobe Campaign har flera anslutningar som gör att du kan kommunicera med externa program, ansluta till databasmotorer och integrera med Adobe Analytics för att dela data.
 
