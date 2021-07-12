@@ -3,10 +3,10 @@ product: campaign
 title: Skapa och hantera listor
 description: Lär dig hur du skapar och hanterar listor
 feature: Profiler
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 9%
@@ -124,7 +124,7 @@ Du kan ta bort en eller flera listor från grupplistan i Adobe Campaign-trädet.
 >
 >När du tar bort en lista påverkas inte profilerna i listan, men data i deras profil uppdateras.
 
-## Självstudievideo {#create-list-video}
+## Videokurs {#create-list-video}
 
 ### Skapa en lista med mottagare
 
@@ -134,7 +134,7 @@ Lär dig hur du skapar en målgrupp genom att konfigurera en lista med mottagare
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Skapa en lista med mottagare {#create-list-in-a-wf-video} med ett arbetsflöde
+### Så här skapar du en lista med mottagare i ett arbetsflöde {#create-list-in-a-wf-video}
 
 Lär dig hur du skapar ett arbetsflöde för att rikta in dig på mottagare och hur du gör det återkommande innan du använder listan i ett e-postmål.
 
