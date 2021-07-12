@@ -3,10 +3,10 @@ product: campaign
 title: Kom igång med Campaign-operatorer
 description: Lär dig hur du skapar och hanterar kampanjanvändare
 feature: Åtkomsthantering
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Skapa och hantera operatörer {#operators}
 
-## Kom igång med Campaign-operatorer {#about-operators}
+## Kom igång med Campaign-operatorer  {#about-operators}
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 
@@ -104,7 +104,7 @@ Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt föl
    >Även om det här kontot är inaktiverat kan operatorn fortfarande få aviseringar eller meddelanden från Campaign. Om du inte längre vill skicka Campaign-meddelanden till den här operatorn rekommenderar Adobe att du tar bort e-postadressen från den här profilen.
 
 * Med alternativet **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
-* Det går att länka en säkerhetszon till operatören. Se denna [sida](../../installation/using/security-zones.md) för mer information om detta.
+* Det går att länka en säkerhetszon till operatören. Mer information finns på [den här sidan](../../installation/using/security-zones.md).
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
 
    Operatören kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
