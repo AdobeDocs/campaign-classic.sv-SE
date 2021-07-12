@@ -3,13 +3,13 @@ product: campaign
 title: Om profiler
 description: Om profiler
 feature: Profiler och målgrupper
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -49,7 +49,7 @@ De viktigaste metoderna för att skapa mottagarprofiler är följande:
 
 ## Profiler och mål {#profiles-and-targets}
 
-Med länken **[!UICONTROL Profiles and targets]** kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. Se denna [sida](../../platform/using/editing-a-profile.md) för mer information om detta.
+Med länken **[!UICONTROL Profiles and targets]** kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. Mer information finns på [den här sidan](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -105,7 +105,7 @@ Antal aktiva profiler är endast tillgängligt för **Marknadsinstanser**. Den �
 >
 >Du kan också övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [dokumentationen till kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
-## Självstudievideo {#create-profiles-video}
+## Videokurs {#create-profiles-video}
 
 Lär dig hur du får åtkomst till profildata, sorterar och filtrerar profiler och skapar och hanterar profiler manuellt.
 
