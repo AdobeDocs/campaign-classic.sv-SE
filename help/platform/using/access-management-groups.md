@@ -3,10 +3,10 @@ product: campaign
 title: Skapa och hantera operatorgrupper
 description: Lär dig hur du ger åtkomst till operatörsgrupper
 feature: Åtkomsthantering
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
