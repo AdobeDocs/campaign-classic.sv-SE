@@ -6,9 +6,9 @@ feature: Översikt
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: c5e1b10b82c8ea1cf8bcb617ee48fe13e16fbfd9
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1066'
 ht-degree: 95%
 
 ---
@@ -24,19 +24,19 @@ _14 april 2021_
 Build 9032@d030c36 innehåller följande korrigering:
 
 * Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
+* Konsolbygget krävs för att upprätthålla [IMS-åtkomst](../../technotes/ims-updates.md).
 
 **Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
 
 >[!CAUTION]
 >
-> * Om du ansluter till Campaign med din Adobe ID via Adobe Identity Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen att kunna ansluta till Campaign efter den 30 juni 2021 **.** [Läs mer](../../technotes/ims-updates.md)
+> * Om du ansluter till Campaign med din Adobe ID via Adobe Identity Management Service (IMS) är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter den 30 juni 2021 **.** [Läs mer](../../technotes/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 > * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
 
 >
 >
 Läs mer i Vanliga frågor och svar om uppgradering till [[!DNL Gold Standard]  11](https://helpx.adobe.com/se/campaign/kb/gold-standard-upgrade.html)
-
 
 _2 mars 2021_
 
