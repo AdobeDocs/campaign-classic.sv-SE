@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 >[!NOTE]
 >
->PostgreSQL är den standardiserade databasservern för värdbaserade miljöer.
+>PostgreSQL är standarddatabasservern för värdbaserade miljöer.
 
 ## CRM-kopplingar{#CRMconnectors}
 
@@ -284,7 +284,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## Client Console {#ClientConsoleoperatingsystems}
 
-:warning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
+:warning: Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign.
 
 ### Operativsystem
 
