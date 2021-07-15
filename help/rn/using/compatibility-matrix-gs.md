@@ -9,7 +9,7 @@ exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 
 >[!NOTE]
 >
->PostgreSQL är den standardiserade databasservern för värdbaserade miljöer.
+>PostgreSQL är standarddatabasservern för värdbaserade miljöer.
 
 ## CRM-kopplingar{#CRMconnectors-gs}
 
@@ -266,7 +266,7 @@ Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas p�
 
 ## Client Console {#ClientConsoleoperatingsystems}
 
-:warning: Följande operativsystem och webbläsare krävs för att använda Campaign Client Console.
+:warning: Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign.
 
 ### Operativsystem
 
