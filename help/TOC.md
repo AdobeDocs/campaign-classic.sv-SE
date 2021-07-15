@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: Dokumentation för Campaign Classic v7
+breadcrumb-title: Dokumentation om Campaign Classic v7
 product: campaign
 title: Användarhandbok för Campaign Classic v7
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Med Adobe Campaign kan ni använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha - via e-post, mobiler, offlinekanaler med mera.
-sub-product: Adobe Campaign Classic
+user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
+sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
    + [Tekniska anmärkningar](technotes/technote.md)
-   + [Vanliga frågor om Adobe Analytics Connector](technotes/aa-connector-migration.md)
+   + [Vanliga frågor och svar om Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Uppdatering av iOS-certifikat](technotes/ios-certificate-update.md)
    + [Konfigurationsuppdateringar i Campaign](technotes/acc-config-updates.md)
    + [Uppdatering av spårade URL:er](technotes/tracked-urls.md)
@@ -269,7 +269,7 @@ ht-degree: 97%
       + [Filtreringsregler](campaign/using/filtering-rules.md)
       + [Tillämpa regler](campaign/using/applying-rules.md)
       + [Simuleringar i Campaign](campaign/using/campaign-simulations.md)
-+ Hantering av marknadsföringsresurser {#mrm}
++ Hantera marknadsföringsresurser {#mrm}
    + [Om att hantera marknadsföringsresurser](mrm/using/about-marketing-resource-management.md)
    + [Skapa och hantera uppgifter](mrm/using/creating-and-managing-tasks.md)
    + [Kontrollera kostnader](mrm/using/controlling-costs.md)
