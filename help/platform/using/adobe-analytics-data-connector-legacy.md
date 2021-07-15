@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Med Data Connector (tidigare Adobe Genesis) kan Adobe Campaign och Adobe Analyti
 
 Med hjälp av Data Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Tack vare dessa integreringar kan Adobe Campaign inhämta data om besökares beteende för en eller flera webbplatser efter en marknadsföringskampanj och (efter analys) köra återmarknadsföringskampanjer i syfte att konvertera dem till köpare. Omvänt gör webbanalysverktygen att Adobe Campaign kan vidarebefordra indikatorer och kampanjattribut till sina plattformar.
 
-Mer information om hur du implementerar integreringen av Adobe Analytics med Adobe Campaign finns i den här [dokumentationen](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html).
+Mer information om hur du implementerar integreringen av Adobe Analytics med Adobe Campaign finns i den här [dokumentationen](https://helpx.adobe.com/se/marketing-cloud/how-to/analytics-ac.html).
 
 Åtgärdsfälten för varje verktyg är följande:
 
@@ -54,7 +54,7 @@ Om du vill konfigurera datakopplingen måste du ansluta till din Adobe Campaign-
 * [Steg 2: Skapa det externa kontot i Campaign](#step-2--create-the-external-account-in-campaign)
 * [Steg 3: Synkronisera Adobe Campaign och Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### Steg 1: Konfigurera integrering i Analytics {#step-1--configure-integration-in-analytics}
+### Steg 1: konfigurera integrering i Analytics {#step-1--configure-integration-in-analytics}
 
 I följande steg beskrivs konfigurationen av datakopplingen med hjälp av en guide.
 
@@ -68,7 +68,7 @@ I följande steg beskrivs konfigurationen av datakopplingen med hjälp av en gui
 
 1. På fliken **[!UICONTROL Admin]** väljer du **[!UICONTROL Data Connectors]**.
 
-   Du måste ha följande behörigheter för analysverktygen för att komma åt **[!UICONTROL Data Connectors]**-menyn. Se denna [sida](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) för mer information om detta
+   Du måste ha följande behörigheter för analysverktygen för att komma åt **[!UICONTROL Data Connectors]**-menyn. Se denna [sida](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=sv) för mer information om detta
    * Integreringar (skapa)
    * Integreringar (uppdatera)
    * Integreringar (ta bort)
@@ -117,7 +117,7 @@ Kontrollera att **[!UICONTROL Events]** är av numerisk typ, annars visas de int
 
    Datakopplingen är nu konfigurerad.
 
-### Steg 2: Skapa det externa kontot i Campaign {#step-2--create-the-external-account-in-campaign}
+### Steg 2: skapa det externa kontot i Campaign {#step-2--create-the-external-account-in-campaign}
 
 Integreringen av Adobe Campaign i Analytics-plattformarna görs med hjälp av en koppling. Använd följande process om du vill synkronisera programmen:
 
@@ -155,7 +155,7 @@ Integreringen av Adobe Campaign i Analytics-plattformarna görs med hjälp av en
 >
 >Om du använder flera målgruppsmätningsverktyg kan du välja **[!UICONTROL Other]** i listrutan **[!UICONTROL Partners]** när du skapar det externa kontot. Du får endast referera till ett externt konto i leveransegenskaperna: du måste därför anpassa formeln för spårade URL-adresser genom att lägga till de parametrar som förväntas av Adobe och alla andra mätverktyg som används.
 
-### Steg 3: Synkronisera Adobe Campaign och Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
+### Steg 3: synkronisera Adobe Campaign och Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 När du har skapat det externa kontot måste du synkronisera båda programmen.
 
