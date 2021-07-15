@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Mer information finns i [Åtkomsträttighet och rätt att glömmas](#right-acces
 
 It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
 
-## Bestämmelser om integritetshantering {#privacy-management-regulations}
+## Bestämmelser om sekretesshantering {#privacy-management-regulations}
 
 Funktionerna i Adobe Campaign hjälper dig att efterleva följande regler:
 
@@ -104,7 +104,7 @@ Och på samma sätt som att ta bort kan man med standardiserad arbetsflödesfunk
 
 Kontakta Adobes konsulter eller teknikadministratörer för att veta mer om lagring eller om ni behöver ställa in lagring för anpassade tabeller.
 
-### Hantering av rättigheter {#rights-management}
+### Right Management {#rights-management}
 
 Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller.
 
