@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Från och med Campaign 21.1.3 är Adobe Analytics Data Connector inaktuell.</p>
    <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
-  <p><em>Datum för målborttagning: 1 mars 2022</em></p>
+  <p><em>Måldatum för borttagning: 1 mars 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -138,7 +138,7 @@ Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen]
 
 Från och med version 20.2 har äldre SMS-kopplingar blivit inaktuella. Se [avsnittet Inaktuella funktioner](#deprecated-features)
 
-## Slut på kompatibilitet {#end-of-compatibility}
+## Kompatibilitet upphör {#end-of-compatibility}
 
 >[!CAUTION]
 >
