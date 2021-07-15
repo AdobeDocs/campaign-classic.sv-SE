@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Adobe Campaign Classic – dokumentationsuppdateringar
+title: Dokumentationsuppdateringar för Adobe Campaign Classic
 description: Den här sidan beskriver alla nya funktioner och uppdateringar i dokumentationen om Adobe Campaign Classic
 feature: Översikt
 role: User
@@ -9,13 +9,13 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Dokumentationsuppdateringar{#documentation-updates}
 
-Den här sidan visar alla nya funktioner och dokumentationsuppdateringar per månad och version av Campaign.
+Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
@@ -462,7 +462,7 @@ Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../del
 
 ## Oktober 2019 {#october-2019}
 
-Listan över felmeddelanden i Campaign har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+Listan över felmeddelanden i Campaign har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv)
 
 Starthandboken GDPR har förbättrats och berikats. Det finns nu en dokumentation om sekretesshantering som inkluderar GDPR och CCPA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy.html)
 
