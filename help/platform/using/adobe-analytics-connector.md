@@ -23,9 +23,8 @@ Adobe Analytics Connector gör att Adobe Campaign och Adobe Analytics kan intera
 >[!CAUTION]
 >
 >* Adobe Analytics Connector är inte kompatibel med transaktionsmeddelanden (meddelandecentret).
-   >
-   >
-* Innan du börjar ska du se till att Adobe Identity Management System (IMS) är implementerat i Campaign. [Läs mer på den här sidan](../../integrations/using/about-adobe-id.md).
+>
+>* Innan du börjar ska du se till att Adobe Identity Management System (IMS) är implementerat i Campaign. [Läs mer på den här sidan](../../integrations/using/about-adobe-id.md).
 
 
 Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Tack vare dessa integreringar kan Adobe Campaign inhämta data om besökares beteende för en eller flera webbplatser efter en marknadsföringskampanj och (efter analys) köra återmarknadsföringskampanjer i syfte att konvertera dem till köpare. Omvänt gör webbanalysverktygen att Adobe Campaign kan vidarebefordra indikatorer och kampanjattribut till sina plattformar.
