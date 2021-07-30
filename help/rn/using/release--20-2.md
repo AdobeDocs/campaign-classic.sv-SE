@@ -6,7 +6,7 @@ feature: Översikt
 role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 92ec5df08d188b6786158d85103ed858d34c6106
 workflow-type: tm+mt
 source-wordcount: '2968'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 # Version 20.2{#release-20-2}
 
-## ![](assets/do-not-localize/green_2.png) Version 20.2.5 – build 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/limited_2.png) version 20.2.5 – build 9188 {#release-20-2-5-build-9188}
 
 _15 april 2021_
 
@@ -44,7 +44,7 @@ _31 mars 2021_
 * Korrigerade ett problem som kunde göra att faktureringsarbetsflödet misslyckades när en anpassad målmappning användes. Primärnyckeln för det anpassade schemat lagras i kolumnen&quot;sourceId&quot; som bara tillåter heltalsvärden. Det tillåter nu både heltal och strängvärden. (NEO-25914, NEO-28146)
 * Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
 
 _15 april 2021_
 
@@ -83,7 +83,7 @@ _22 december 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Ny version av kontrollpanelen i oktober** med domänkonfiguration som använder CNAME och nya funktioner för databasövervakning. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv).
 
-## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
@@ -96,7 +96,7 @@ _11 september 2020_
 * Korrigerade en regression under efteruppgraderingen som orsakade en felaktig start av lserver (felloggar).
 * Uppdateringshanteringen för delat minne har förbättrats. De ytterligare steg som krävdes i 20.2 behövs inte längre.
 
-## ![](assets/do-not-localize/red_2.png) Version 20.2.2 – build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) version 20.2.2 – build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
@@ -121,7 +121,7 @@ _22 juli 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) version 20.2.1 – build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
