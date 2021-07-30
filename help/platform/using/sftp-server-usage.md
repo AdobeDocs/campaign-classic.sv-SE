@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 14%
@@ -15,13 +15,13 @@ ht-degree: 14%
 
 # Bästa praxis och felsökning för SFTP-servrar {#sftp-server-usage}
 
-## Globala rekommendationer för SFTP-servern {#global-recommendations}
+## Globala rekommendationer för SFTP-server {#global-recommendations}
 
 När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFTP-värdserver som tillhandahålls av Adobe. Se till att du följer rekommendationerna nedan när du använder SFTP-servrar.
 
 * Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs däremot att du delar lösenordet med alla enheter som du hanterar.
 
-   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att kunna överföra den till Campaign-servern.
+   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att kunna överföra den till Campaign-servern.
 
 * Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
 
@@ -45,7 +45,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 
@@ -64,7 +64,7 @@ När du i Campaign Classic anger en sökväg till en extern SFTP-server skiljer 
 * Om SFTP-servern är på **Windows** ska du alltid använda en relativ sökväg.
 * Om STP-servern är på **Linux** ska du alltid använda en sökväg som är relativ till hemmet (med början från &quot;~/&quot;) eller en absolut sökväg (med början från &quot;/&quot;).
 
-## Anslutningsproblem med värdserver för SFTP-Adobe {#sftp-server-troubleshooting}
+## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
 
 I avsnittet nedan visas den information som ska kontrolleras och tillhandahållas till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när anslutningsproblem med värdbaserade SFTP-servrar från Adobe inträffar.
 
