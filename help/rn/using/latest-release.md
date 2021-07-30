@@ -6,22 +6,22 @@ feature: Översikt
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: f2fae5954fbbab4b8a4f9444404316ff1576d5e4
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
 # Senaste versionen{#latest-release}
 
-Den här sidan beskriver nya funktioner, förbättringar och korrigeringar som ingår i den **senaste versionen av Campaign Classic Release Candidate**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **den senaste Campaign Classic-versionen**.
 
 >[!NOTE]
 >
->Builds av Campaign **General Availability (GA)** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 20.2.5](../../rn/using/release--20-2.md).
+>Builds av Campaign **General Availability (GA)** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330).
 
-## ![](assets/do-not-localize/blue_2.png) Version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
 
 _5 june 2021_
 
@@ -158,14 +158,14 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 * Korrigerade ett problem som hindrade dig från att skicka en leverans med en grupp korrektur på grund av en specifik kopplingsmekanism som inte kunde leverera personanpassning. (NEO-14391)
 * Korrigerade ett problem där en avisering inte kunde skickas med aviseringsaktiviteten om en fråga och en berikningsaktivitet var riktade till leveransregistret. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/red_2.png) version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
 
 _15 april 2021_
 
 * Lösenordshanteringen har förbättrats för att optimera säkerheten.
 * Korrigerade ett problem som kunde orsaka MTA-krascher.
 
-## ![](assets/do-not-localize/red_2.png) Version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
+## ![](assets/do-not-localize/red_2.png) version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
 
 _22 februari 2021_
 
