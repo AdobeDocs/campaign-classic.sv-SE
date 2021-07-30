@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 11%
@@ -25,9 +25,9 @@ Så här kan du göra:
    >
    >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
    >
-   >Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+   >Observera att din instans måste vara värd för AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
 
-1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få nödvändiga verktyg installerade på servern.
+1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få nödvändiga verktyg installerade på servern.
 1. Om du har en installation av Adobe Campaign installerad installerar du verktyget som du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
 
 Du kan sedan använda de förbehandlingskommandon du vill i dina arbetsflöden:
