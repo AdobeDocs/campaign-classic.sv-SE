@@ -6,7 +6,7 @@ feature: Översikt
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
@@ -27,7 +27,7 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-builds** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md) och [Campaign version 20.2.5](../../rn/using/release--20-2.md)
+De **senaste GA-builds** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md) och [Campaign version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330).
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
