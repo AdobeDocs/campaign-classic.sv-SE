@@ -4,10 +4,10 @@ title: 'Hjälp- och supportalternativ för Campaign Classic '
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -73,13 +73,13 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
     <td valign="top">
         <ul>
         <li><a href="production/using/build-upgrade.md">Uppgradera till den senaste versionen</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">Vanliga frågor och svar om builduppgradering</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Vanliga frågor och svar om Builduppgradering</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Övervaka en leverans</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">Förstå karantänhantering</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Checklista för säkerhet och sekretess</a></li>
         <li><a href="platform/using/privacy-management.md">Sekretess- och medgivandehantering</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">Utforma en fråga</a></li>
-        <li><a href="workflow/using/querying-recipient-table.md">Förfrågningsexempel</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">Exempel på frågor</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Bygg ett arbetsflöde</a></li>
         </ul>
     </td>
@@ -99,7 +99,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste vara värd på AWS och uppgraderas med den senaste [Gold Standard](rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1)](rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste vara värd för AWS och uppgraderas med den senaste [Gold Standard](rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1.3)](rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
 
 ### Hur kommer jag åt Kontrollpanelen?
 
@@ -116,7 +116,7 @@ På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna til
 ### Underdomäner och certifikat
 
 Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sidor:
-* [Märkning av underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
+* [Märkning av underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=sv)
 * [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
 * [Övervaka SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
 
