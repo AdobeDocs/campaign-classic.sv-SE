@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 8%
+source-wordcount: '1636'
+ht-degree: 7%
 
 ---
 
@@ -93,7 +93,7 @@ Följande kanaler kan konfigureras:
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
 
-### Körningsinstans {#execution-instance-external-account}
+### Körningsinstans  {#execution-instance-external-account}
 
 Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är länkade till kontrollinstansen och ansluta dem. Mallar för transaktionsmeddelanden distribueras till körningsinstansen
 
@@ -288,19 +288,17 @@ Med det externa **[!UICONTROL AEM (AEM instance)]**-kontot kan du hantera inneh�
 
 Mer information om detta hittar du i det här [avsnittet](../../integrations/using/about-adobe-experience-manager.md).
 
-
-
 ## Externa konton för CRM Connector
 
 ### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
-Med det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
-
-Läs mer om Campaign - Microsoft Dynamics CRM Connector på den här [sidan](../../platform/using/crm-ms-dynamics.md).
-
 >[!NOTE]
 >
 > **[!UICONTROL On-premise]** och  **[!UICONTROL Office 365]** distributionstyperna är nu föråldrade. [Läs mer](../../rn/using/deprecated-features.md).
+
+Med det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
+
+Läs mer om Campaign - Microsoft Dynamics CRM Connector på den här [sidan](../../platform/using/crm-ms-dynamics.md).
 
 Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Password credentials]** måste du ange följande information:
 
@@ -314,13 +312,15 @@ Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL 
 
    URL till din Microsoft CRM-server.
 
+   Om du vill hitta din Microsoft CRM **[!UICONTROL Server URL]** öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och väljer din app. Du kan sedan hitta din **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
+
 * **[!UICONTROL Client identifier]**
 
    Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
-   CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
+   Välj **[!UICONTROL Dynamics CRM 365]** CRM-version.
 
 Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Certificate]** måste du ange följande information:
 
@@ -330,9 +330,13 @@ Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL 
 
    URL till din Microsoft CRM-server.
 
+   Om du vill hitta din Microsoft CRM **[!UICONTROL Server URL]** öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och väljer din app. Du kan sedan hitta din **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
+
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   Privat nyckel kodad till Base64
+   Observera att den privata nyckeln måste kodas till Base64.
+
+   Det gör du genom att använda en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -348,7 +352,7 @@ Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL 
 
 Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md).
 
-### Salesforce.com CRM {#salesforce-crm-external-account}
+### Salesforce.com CRM  {#salesforce-crm-external-account}
 
 Med det externa **[!UICONTROL Salesforce CRM]**-kontot kan du importera och exportera Salesforce-data till Adobe Campaign.
 
