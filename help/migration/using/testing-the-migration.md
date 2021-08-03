@@ -6,16 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
 
 # Testa migreringen{#testing-the-migration}
 
-## Allmän procedur {#general-procedure}
+## Allmänt förfarande {#general-procedure}
 
 Beroende på konfigurationen finns det flera sätt att utföra migreringstester.
 
@@ -70,7 +70,7 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 >
 >Du måste använda alternativet **-instance:`<instanceame>`**. Vi rekommenderar inte att du använder alternativet **-allinstances**.
 
-### -showCustomEntities och -showDeletedEntities-alternativen {#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities och -showDeletedEntities, alternativ {#showcustomentities-and--showdeletedentities-options}
 
 * Alternativet **-showCustomEntities** visar listan över alla objekt som inte är standard:
 
@@ -156,7 +156,13 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Den här typen av fel leder till ett migreringsfel. Se <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Om du får felloggar av översiktstyp för webbprogram (migrering från v6.02), se <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Webbprogram</a>.<br /> </td> 
+   <td> Den här typen av fel leder till ett migreringsfel. Se <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Om du får felloggar av översiktstyp för webbprogram (migrering från v6.02), se <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Konfigurera kampanj</a>.<br /> </td> 
+  </tr>
+  <tr> 
+   <td> crmDeploymentType="lokal"<br /> </td> 
+   <td> PU-0007<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> Den här typen av distribution stöds inte längre. Distributionstypen för Office 365 och lokal Microsoft CRM-anslutning har nu tagits bort</a>. Information om hur du ändrar till Web API-distribution finns i <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webbprogram</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
@@ -175,6 +181,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >Vi rekommenderar att du använder absoluta mappsökvägar och behåller mappträdsstrukturen. Till exempel: backupFolder\nms\srcSchema\billing.xml.
 
-### Återupptar migreringen {#resuming-migration}
+### Återupptar migrering {#resuming-migration}
 
 Om du startar om efteruppgraderingen efter ett migreringsfel återupptas den från samma plats som den stoppades.
