@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+workflow-type: tm+mt
+source-wordcount: '2525'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
    + [Tekniska anmärkningar](technotes/technote.md)
-   + [Vanliga frågor och svar om Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Uppdatering av iOS-certifikat](technotes/ios-certificate-update.md)
    + [Konfigurationsuppdateringar i Campaign](technotes/acc-config-updates.md)
    + [Uppdatering av spårade URL:er](technotes/tracked-urls.md)
@@ -117,8 +116,10 @@ ht-degree: 100%
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
-      + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
+      + Adobe Analytics Connector{#analytics-connector}
+         + [Integrering med Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Så här migrerar du till Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Hjälp- och supportalternativ](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
