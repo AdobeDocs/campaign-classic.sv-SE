@@ -2,9 +2,7 @@
 product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
-hide: true
-hidefromtoc: true
-source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
+source-git-commit: e61f9facac61f942d26b4ffcb5a84a43ede6872d
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 5%
@@ -22,7 +20,7 @@ Du måste migrera till den nya integreringen av Adobe Analytics Connector på Ad
 
 >[!NOTE]
 >
->Läs [Frågor och svar](#faq-aa) om du har frågor om dessa ändringar. Mer information får du om du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Läs [Frågor och svar](#faq-aa) om du har frågor om dessa ändringar. Mer information får du om du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Vad har ändrats?
