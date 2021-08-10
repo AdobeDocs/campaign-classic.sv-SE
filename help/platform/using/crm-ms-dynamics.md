@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1097'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Om du vill ansluta Microsoft Dynamics 365 till Adobe Campaign via **webb-API** m
 
 I Microsoft Dynamics CRM:
 1. Hämta klient-ID för Microsoft Dynamics
-1. Generera Microsoft Dynamics-klienthemlighet
+1. Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat
 1. Konfigurera behörigheter
 1. Skapa en appanvändare
 1. Koda den privata nyckeln
@@ -66,9 +66,9 @@ När du har sparat får du ett **program-ID** som är Klient-ID för Campaign.
 
 Läs mer i [den här sidan](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
-### Generera Microsoft Dynamics-klienthemlighet {#config-client-secret-microsoft}
+### Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat {#config-certificate-key-id}
 
-Klienthemligheten är nyckeln som är unik för klient-ID:t. Följ stegen nedan för att hämta identifieraren för certifikatnyckeln:
+Följ stegen nedan för att hämta **identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)**:
 
 1. Navigera till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
 1. Klicka på **Certifikat och hemlighet**.
@@ -88,6 +88,8 @@ Klienthemligheten är nyckeln som är unik för klient-ID:t. Följ stegen nedan 
 1. Sedan måste du koda den i base64. Det gör du genom att använda en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
 
 1. Klicka på länken **Manifest** för att hämta **identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)**.
+
+**Identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)** kommer att behövas senare för att konfigurera det externa Microsoft Dynamics CRM-kontot med certifikatet **[!UICONTROL CRM O-Auth type]**.
 
 ### Konfigurera behörigheter {#config-permissions-microsoft}
 
@@ -192,6 +194,10 @@ Om du vill ansluta till Microsoft Dynamics 365 och Campaign måste du skapa och 
    ![](assets/crm_connectors_msdynamics_06.png)
 
 Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen. Läs mer i avsnittet [Datasynkronisering](../../platform/using/crm-data-sync.md).
+
+>[!NOTE]
+>
+> Du måste se till att lägga till två URL-adresser i tillåtelselista: serverns URL och `login.microsoftonline.com` i serverkonfigurationen.
 
 ## Datatyper för fält som stöds {#ms-dyn-supported-types}
 
