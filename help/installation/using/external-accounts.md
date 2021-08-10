@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 7%
@@ -92,7 +92,6 @@ Följande kanaler kan konfigureras:
 * [iOS-kanal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### Körningsinstans  {#execution-instance-external-account}
 
 Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är länkade till kontrollinstansen och ansluta dem. Mallar för transaktionsmeddelanden distribueras till körningsinstansen
@@ -112,7 +111,6 @@ Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är l�
    Lösenord för kontot enligt definitionen i mappen operator.
 
 Mer information om den här konfigurationen finns på den här [sidan](../../message-center/using/configuring-instances.md#control-instance).
-
 
 ## Tillgång till externa systemkonton
 
