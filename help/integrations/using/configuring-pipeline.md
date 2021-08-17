@@ -5,9 +5,9 @@ description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Kontrollera att du använder:
 
 * Minst en av följande Adobe Campaign-byggen:
    * 19.1.8.9039
-   * 19.1.4.9032.GS.11
+   * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
    * 20.3.1
 * Adobe Analytics Standard
@@ -46,7 +46,7 @@ Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud.
 Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare.
 Autentisering stöds för Marketing Cloud via Adobe I/O Project.
 
-## Steg 1: Skapar/uppdaterar Adobe I/O-projekt {#creating-adobe-io-project}
+## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
 För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integrering av utlösare.
 
@@ -144,7 +144,7 @@ Listan med valfria parametrar finns nedan:
 | retryPeriodSec | Fördröjning mellan återförsök vid fel vid bearbetning. <br>Standardvärdet är 30 (sekunder) |
 | retryValiditySec | Ignorera meddelandet om det inte har bearbetats korrekt efter den här perioden (för många försök). <br>Standardvärdet är 300 (sekunder) |
 
-### Automatisk start av process i pipeline {#pipelined-process-autostart}
+### Automatisk processstart i pipeline {#pipelined-process-autostart}
 
 Processen med rörlig orientering måste startas automatiskt.
 
