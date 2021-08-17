@@ -4,7 +4,7 @@ title: Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -39,7 +39,7 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
 
    * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
    * Campaign 21.1.3-utgåvan. [Läs mer](../rn/using/latest-release.md)
-   * Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
+   * Campaign 20.2.5-utgåvan. [Läs mer](../rn/using/release--20-2.md)
    * Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
    * Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
    * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
@@ -83,7 +83,7 @@ Om du ser en sådan varning måste du installera de senaste uppdateringarna av d
 
 >[!NOTE]
 >
->Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Användbara länkar
