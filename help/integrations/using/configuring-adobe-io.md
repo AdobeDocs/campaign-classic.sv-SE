@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 4%
@@ -23,9 +23,9 @@ ht-degree: 4%
 >
 >Observera att under den här flyttningen till [!DNL Adobe I/O] kan vissa inkommande utlösare gå förlorade.
 
-## Förutsättningar {#adobe-io-prerequisites}
+## Förhandskrav {#adobe-io-prerequisites}
 
-Den här integreringen gäller endast från och med **Campaign Classic 20.3, 20.2.4, 19.1.8 och [!DNL Gold Standard] 11 versioner**.
+Den här integreringen gäller endast från och med **Campaign Classic 20.3, 19.1.8 och [!DNL Gold Standard] 11 versioner**.
 
 Kontrollera att du har:
 
@@ -96,7 +96,7 @@ procedur som beskrivs [på den här sidan](https://helpx.adobe.com/enterprise/ad
 >
 >Adobe I/O certifikat upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
 
-## Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
+## Steg 2: Lägg till projektautentiseringsuppgifter i Adobe Campaign {#add-credentials-campaign}
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Den privata nyckeln ska kodas i base64 UTF-8-format. För att göra detta:
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## Steg 3: Uppdatera tagg för pipelines {#update-pipelined-tag}
+## Steg 3: Uppdatera tagg för pipeline {#update-pipelined-tag}
 
 >[!NOTE]
 >
