@@ -5,7 +5,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 11%
@@ -24,12 +24,12 @@ Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Föruto
 
 >[!NOTE]
 >
->Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Säkerhetsuppdateringar {#acc-security-updates}
 
-De senaste Campaign-versionerna har en säkerhetskorrigering som förstärker skyddet mot problem med SSRF (Server Side Request Forgery). Läs mer [på den här sidan](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
+De senaste Campaign-versionerna har en säkerhetskorrigering som förstärker skyddet mot problem med SSRF (Server Side Request Forgery). Läs mer [på den här sidan](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html).
 
 **Påverkas du?**
 
@@ -80,7 +80,7 @@ Om du ansluter till Campaign [via en Adobe ID](../integrations/using/about-adobe
 
 * Gold Standard 11. [Läs mer](../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../rn/using/latest-release.md)
-* Campaign 20.2.4-utgåvan. [Läs mer](../rn/using/release--20-2.md)
+* Campaign 20.2.5-utgåvan. [Läs mer](../rn/using/release--20-2.md)
 * Campaign 20.1.4-utgåvan. [Läs mer](../rn/using/release--20-1.md)
 * Campaign 19.2.4-utgåvan. [Läs mer](../rn/using/release--19-2.md)
 * Campaign 19.1.8-utgåvan. [Läs mer](../rn/using/release--19-1.md)
