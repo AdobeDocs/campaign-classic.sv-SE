@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
+source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '703'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 3%
 >Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O enligt beskrivningen nedan**.
 >Observera att under den här flyttningen till [!DNL Adobe I/O] kan vissa inkommande utlösare gå förlorade.
 >
->Äldre autentiseringsmodell med Campaign kommer att upphöra den 18 augusti 2021 **för hybridmiljöer och lokala miljöer och den 30 november 2021** för värdmiljöer. **** [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
-
+>Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den 18 augusti 2021 **.** Värdmiljöer drar nytta av ett tillägg till och med den 30 november 2021 **.** Kontakta Adobe kundtjänst om du är kund på plats eller som hybridkund för att förlänga supporten till den 30 november 2021. Du måste ange [AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 ## Förhandskrav {#adobe-io-prerequisites}
 
