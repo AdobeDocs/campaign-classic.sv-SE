@@ -5,9 +5,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1110'
 ht-degree: 11%
 
 ---
@@ -103,7 +103,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 ## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 30 november 2021 **.** [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Den upphör den 18 augusti 2021 **för hybridmiljöer och lokala miljöer och den 30 november 2021** för värdmiljöer. **** [Läs mer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Påverkas du?**
 
