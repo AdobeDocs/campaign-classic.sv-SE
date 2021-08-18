@@ -6,16 +6,16 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '3252'
-ht-degree: 26%
+source-wordcount: '3263'
+ht-degree: 25%
 
 ---
 
 # Version 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Version 19.1.8 – build 9039 {#release-19-1-8-build-9039}
+## ![](assets/do-not-localize/limited_2.png) version 19.1.8 – build 9039 {#release-19-1-8-build-9039}
 
 _15 april 2021_
 
@@ -42,8 +42,8 @@ _16 december 2020_
 >[!CAUTION]
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/ims-updates.md)
-> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign kommer att upphöra den 18 augusti 2021 **för hybridmiljöer och lokala miljöer och den 30 november 2021** för värdmiljöer.****
 
 
 
@@ -71,7 +71,7 @@ Tomcat har uppdaterats från version 7 (7.0.103) till version 8 (8.5.57). Katalo
 
 I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar paketet 19.1.8. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1.7 – build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/red_2.png) version 19.1.7 – build 9036 {#release-19-1-7-build-9036}
 
 _15 september 2020_
 
@@ -101,7 +101,7 @@ _15 september 2020_
 * Korrigerade ett problem med en efteruppgradering som stängde av Apache och webbservern innan webbapplikationens publicering. (NEO-27155)
 * Korrigerade en regression som ledde till att en felaktig tidszon plockades när tiden angavs i en **schemaläggaraktivitet**.
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1.6 – build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) version 19.1.6 – build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -117,7 +117,7 @@ _3 oktober 2019_
 * Korrigerade ett problem som kunde leda till att vissa meddelanden inte bearbetades av servern för medelkällkod. (NEO-12395)
 * Ett problem som förhindrade att SQL Data Management-aktiviteten användes fullt ut har åtgärdats (namngiven SQL Data Management-behörighet saknas).
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1.5 – build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) version 19.1.5 – build 9033{#release-19-1-5-build-9033}
 
 _13 augusti 2019_
 
@@ -132,14 +132,14 @@ _13 augusti 2019_
 * Korrigerade en regression för Oraclet, vilket gjorde att vissa funktioner ansågs vara ogiltiga efter efteruppgraderingen. (NEO-12759)
 * Korrigerade en regression som ledde till att en felaktig tidszon plockades när tiden angavs i en arbetsflödesaktivitet i schemaläggaren.
 
-## ![](assets/do-not-localize/green_2.png) Version 19.1.4 – build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) version 19.1.4 – build 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
 >19.1.4 [!DNL Gold Standard]-versioner visas på den här [sidan](../../rn/using/gold-standard.md).
 
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) version 19.1.2 – build 9029{#release-19-1-2-build-9029}
 
 _21 juni 2019_
 
@@ -155,7 +155,7 @@ _21 juni 2019_
 * Nu kan vi ta bort dummy-poster som skapats i Microsoft Dynamics under importarbetsflödet.
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 
-## ![](assets/do-not-localize/red_2.png) Version 19.1 – build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) version 19.1 – build 9026{#release-19-1-build-9026}
 
 _30 maj 2019_
 
