@@ -6,10 +6,10 @@ feature: Översikt
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
+source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 97%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ _27 oktober 2020_
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign kommer att upphöra den 18 augusti 2021 **för hybridmiljöer och lokala miljöer och den 30 november 2021** för värdmiljöer.****
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det föråldrade autentiseringsläget med oAuth i Campaign upphör den **30 november 2021**.
 
 
 **Nyheter**
