@@ -2,11 +2,8 @@
 product: campaign
 title: Versionsinformation för Campaign 18.4
 description: Versionsinformation för Campaign 18.4
-feature: null
-role: null
-level: null
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -15,7 +12,7 @@ ht-degree: 7%
 
 # Version 18.4{#release-18-4}
 
-## Version 18.4.5 – build 8937{#release-18-4-5-build-8937}
+## version 18.4.5 – build 8937{#release-18-4-5-build-8937}
 
 21 november 2018
 
@@ -42,7 +39,7 @@ ht-degree: 7%
 * Förbättrat delat minne som är tillgängligt under den underordnade processerna.
 * Korrigerade ett möjligt dödläge i Apache (spårning).
 
-## Version 18.4.4 – build 8936{#release-18-4-4-build-8936}
+## version 18.4.4 – build 8936{#release-18-4-4-build-8936}
 
 1 augusti 2018
 
@@ -59,7 +56,7 @@ ht-degree: 7%
 * Korrigerade ett problem som visade oanvändbara fel i efteruppgraderingsloggen när en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet inte var fullständigt konfigurerad.
 * FDA-Teradata: åtgärdade ett problem med automatiskt inkrementerade fält och index i SQL-tabeller.
 
-## Version 18.4.3 – build 8935{#release-18-4-3-build-8935}
+## version 18.4.3 – build 8935{#release-18-4-3-build-8935}
 
 22 juni 2018
 
@@ -73,7 +70,7 @@ ht-degree: 7%
 * Ett problem har korrigerats vid synkronisering av erbjudanden från marknadsinstansen till interaktionsinstansen. (NEO-11162)
 * Förbättrad hantering av index för långa namn under efteruppgradering
 
-## Version 18.4.2 – build 8932{#release-18-4-2-build-8932}
+## version 18.4.2 – build 8932{#release-18-4-2-build-8932}
 
 22 maj 2018
 
@@ -84,7 +81,7 @@ ht-degree: 7%
 * Korrigerade ett prestandaproblem som kan uppstå med inMail-processen när en server för studsade meddelanden används. (NEO-10641)
 * Korrigerade ett databasuppgraderingsfel som kan inträffa vid uppgradering av fler än 1 000 scheman.
 
-## Version 18.4 – build 8931{#release-18-4-build-8931}
+## version 18.4 – build 8931{#release-18-4-build-8931}
 
 24 apr 2018
 
@@ -104,7 +101,7 @@ ht-degree: 7%
     <ul> 
      <li> <p>Åtkomst: ger den registrerade möjlighet att få en kopia av sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive uppgifter som lagrats i Adobe Campaign.</p> </li> 
      <li> <p>Höger att ta bort: ger den registrerade rätt att få sina personuppgifter som samlats in av personuppgiftsansvariga raderade, inklusive data som lagrats i Adobe Campaign.</p> </li> 
-    </ul> Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">detaljerade dokumentationen</a>.<br /> </td> 
+    </ul> Mer information finns i <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">detaljerad dokumentation</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aktiva profiler<br /> </td> 
