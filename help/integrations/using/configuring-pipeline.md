@@ -5,9 +5,9 @@ description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 1%
 Autentiseringsparametrar som kund-ID, privat nyckel och autentiseringsslutpunkt konfigureras i instanskonfigurationsfilerna.
 Listan med utlösare som ska bearbetas konfigureras i ett alternativ i JSON-format.
 Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e-post. Kampanjen är konfigurerad så att en kund som har båda utlösarhändelserna får ett e-postmeddelande.
-
->[!CAUTION]
->
->Om Hybrid distribueras måste du se till att pipeline är konfigurerad på en mellaninstans.
 
 ## Förhandskrav {#prerequisites}
 
