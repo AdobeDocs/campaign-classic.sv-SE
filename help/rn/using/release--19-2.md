@@ -2,11 +2,8 @@
 product: campaign
 title: Version 19.2
 description: Versionsinformation för Campaign 19.2
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 21%
@@ -15,7 +12,7 @@ ht-degree: 21%
 
 # Version 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/limited_2.png) Version 19.2.4 – build 9082 {#release-19-2-4-build-9082}
+## ![](assets/do-not-localize/limited_2.png) version 19.2.4 – build 9082 {#release-19-2-4-build-9082}
 
 _15 april 2021_
 
@@ -44,14 +41,14 @@ _23 december 2020_
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/ims-updates.md)
    >
    > 
-* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
+* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 
 
 
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
 * Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) Version 19.2.3 – build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) version 19.2.3 – build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -60,7 +57,7 @@ _7 februari 2020_
 * Korrigerade ett regressionsproblem på grund av implementeringen av SSL-certifieringen som gjorde att användaranslutningen misslyckades på Windows-servern. (NEO-20629)
 * Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
 
-## ![](assets/do-not-localize/red_2.png) Version 19.2 – build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) version 19.2 – build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
@@ -160,7 +157,7 @@ Kontrollera att du har de versioner av alla system som stöds och som finns i de
 
 _Campaign Mobile SDK_
 
-Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få SDK.
+Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi lagt till stöd för iOS 13. Den nya versionen har nu stöd för meddelandeprioritet och den nya processen för hantering av registreringstoken för push-meddelanden i iOS 13. Om du kör program på en tidigare version av SDK måste du kompilera om programmen med den nya SDK:n. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få SDK.
 
 **Felkorrigeringar**
 
