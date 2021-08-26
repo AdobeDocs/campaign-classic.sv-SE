@@ -2,18 +2,20 @@
 product: campaign
 title: Versionsinformation om Campaign 20.3
 description: Versionsinformation för Campaign 20.3
-feature: Översikt
+feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
+source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 96%
+source-wordcount: '2006'
+ht-degree: 95%
 
 ---
 
 # Version 20.3{#release-20-3}
+
+![](../../assets/v7-only.svg)
 
 ## ![](assets/do-not-localize/red_2.png) version 20.3.3 – build 9234 {#release-20-3-3-build-9234}
 
@@ -28,7 +30,7 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/ims-updates.md)
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 > * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den 18 augusti 2021 **.** Värdmiljöer drar nytta av ett tillägg till och med den 30 november 2021 **.** Kontakta Adobe kundtjänst om du är kund på plats eller som hybridkund för att förlänga supporten till den 30 november 2021. Du måste ange [AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
@@ -167,3 +169,4 @@ I Linux finns nu _apache_neolane.conf_ installerat i katalogen `conf`.
 * Korrigerade ett problem som gjorde att servern kraschade när måldata visades som tillhörde resterna från en **delad** aktivitet i ett arbetsflöde.
 * Korrigerade ett problem med serverkraschar genom att förhindra minnesfel när uttrycksanalysen rensades. (NEO-26856)
 * Korrigerade ett problem i anrikningsaktiviteten där icke-adminanvändare definierade instansvariabler. (NEO-25653)
+* Korrigerade en regression som kunde blockera arbetsflödesdataexporten till en FDA-databas (Teradate, Snowflake).
