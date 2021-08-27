@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 91%
+source-wordcount: '1160'
+ht-degree: 87%
 
 ---
 
@@ -18,6 +18,15 @@ ht-degree: 91%
 ![](../../assets/v7-only.svg)
 
 På den här sidan visas [!DNL Gold Standard]-versioner. Läs mer om Campaign [!DNL Gold Standard] [på den här sidan](gs-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] version 12{#gs-12}
+
+_27 augusti 2021_
+
+Version 9032@99a3894 innehåller följande korrigeringar:
+
+* Funktionen för att spåra signaturer har förbättrats för att förhindra att fel länkas till hur tredjepartsverktyg (e-postklienter, webbläsare osv.) fungerar hantera specialtecken. URL-parametrar är nu kodade.
+* Korrigerade ett problem med datumväljare som kunde resultera i att konsolen visade felmeddelandet för blockering. (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] version 11{#gs-11}
 
