@@ -3,7 +3,7 @@ product: campaign
 title: Versionsinformation för Campaign 19.1
 description: Versionsinformation för Campaign 19.1
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '3308'
 ht-degree: 25%
@@ -19,7 +19,7 @@ ht-degree: 25%
 _15 april 2021_
 
 * Korrigerade en klientkonsolregression som orsakade bestående felmeddelanden på IMS-anslutningsskärmen. (NEO-34821)
-* Korrigerade en regression som kunde blockera arbetsflödesdataexporten till en FDA-databas (Teradate, Snowflake).
+* Korrigerade en regression som kunde blockera arbetsflödesdataexporten till en FDA-databas (Teradata, Snowflake).
 
 **Endast konsoluppgraderingen är obligatorisk. Ingen serveruppgradering krävs.**
 

@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 95%
@@ -169,4 +169,4 @@ I Linux finns nu _apache_neolane.conf_ installerat i katalogen `conf`.
 * Korrigerade ett problem som gjorde att servern kraschade när måldata visades som tillhörde resterna från en **delad** aktivitet i ett arbetsflöde.
 * Korrigerade ett problem med serverkraschar genom att förhindra minnesfel när uttrycksanalysen rensades. (NEO-26856)
 * Korrigerade ett problem i anrikningsaktiviteten där icke-adminanvändare definierade instansvariabler. (NEO-25653)
-* Korrigerade en regression som kunde blockera arbetsflödesdataexporten till en FDA-databas (Teradate, Snowflake).
+* Korrigerade en regression som kunde blockera arbetsflödesdataexporten till en FDA-databas (Teradata, Snowflake).
