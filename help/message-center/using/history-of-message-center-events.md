@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # Historik om händelser i meddelandecentret {#history-of-message-center-events}
+
+![](../../assets/v7-only.svg)
 
 Rapporten **[!UICONTROL History of Message Center events]** ger dig en översikt över meddelandecenteraktiviteten, dvs. antalet händelser som bearbetas och levereras som transaktionsmeddelanden.
 

@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
 
 ---
 
-# Förteckning över rapporter{#list-of-reports}
+# Lista över rapporter{#list-of-reports}
+
+![](../../assets/common.svg)
 
 ## Rapporter om leveranser {#reports-on-deliveries}
 
@@ -336,7 +338,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](..
  </tbody> 
 </table>
 
-## Andra rotationsrapporter {#other-ootb-reports}
+## Andra rapporter {#other-ootb-reports}
 
 Följande rapporter finns också inbyggda. Mer information finns i dokumentet om de funktioner som berörs.
 

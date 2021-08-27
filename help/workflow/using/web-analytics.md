@@ -5,7 +5,7 @@ description: Läs mer om Web Analytics-paketet
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 
 
 # Webbanalys{#web-analytics}
+
+![](../../assets/common.svg)
 
 Arbetsflödena som beskrivs nedan installeras som standard med **Web Analytics-anslutningarna**-modulen. Mer information om den här modulen finns i [avsnittet](../../platform/using/adobe-analytics-connector.md).
 

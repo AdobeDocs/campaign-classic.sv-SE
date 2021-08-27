@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Fråga om leveransinformation {#querying-delivery-information}
+
+![](../../assets/common.svg)
 
 ## Antal klick för en viss leverans {#number-of-clicks-for-a-specific-delivery}
 
@@ -114,7 +116,7 @@ Så här utför du det här exemplet:
 
    Det högsta antalet loggar för en användare är 6 för den här leveransen. 5 olika användare öppnade e-postmeddelandet eller klickade på någon av länkarna i e-postmeddelandet.
 
-## Mottagare som inte öppnade någon leverans {#recipients-who-did-not-open-any-delivery}
+## Mottagare som inte har öppnat någon leverans {#recipients-who-did-not-open-any-delivery}
 
 I det här exemplet vill vi filtrera mottagare som inte har öppnat ett e-postmeddelande de senaste 7 dagarna.
 

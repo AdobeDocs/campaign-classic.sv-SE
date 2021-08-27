@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # dbindex-element {#dbindex--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-3}
 
@@ -31,7 +33,7 @@ dbindex:==nyckelfält
 
 `<element>`
 
-## Underordnade {#children-3}
+## Barn {#children-3}
 
 `<keyfield>`
 
@@ -39,7 +41,7 @@ dbindex:==nyckelfält
 
 Med det här elementet kan du definiera ett index som är länkat till en tabell.
 
-## Använd och använd {#use-and-context-of-use-3}
+## Användning och användningssammanhang {#use-and-context-of-use-3}
 
 Du kan definiera flera index. Ett index kan referera till ett eller flera fält i tabellen. Indexdeklarationen följer vanligtvis definitionen för huvudschemaelementet.
 

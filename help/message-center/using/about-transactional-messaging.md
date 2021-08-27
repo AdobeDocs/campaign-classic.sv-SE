@@ -6,15 +6,17 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
 # Kom igång med transaktionsmeddelanden {#about-transactional-messaging}
+
+![](../../assets/v7-only.svg)
 
 ## Översikt {#overview}
 
@@ -44,7 +46,7 @@ Den här funktionen är beroende av en specifik arkitektur, där **körningsinst
 
 >[!NOTE]
 >
->Om du vill skapa nya användare för Message Center-körningsinstanser på Adobe Cloud måste du kontakta [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till **[!UICONTROL Real time events (nmsRtEvent)]**-mappar.
+>Om du vill skapa nya användare för Message Center-körningsinstanser på Adobe Cloud måste du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till **[!UICONTROL Real time events (nmsRtEvent)]**-mappar.
 
 Den övergripande processen för transaktionsmeddelanden beskrivs på följande sätt:
 
@@ -90,4 +92,4 @@ När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudst
 * [Kom igång med kommunikationskanaler](../../delivery/using/communication-channels.md)
 * [Nyckelsteg för att skapa leverans](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Transaktionsmeddelandens arkitektur](../../message-center/using/transactional-messaging-architecture.md)
-* [Få tillgång till transaktionsrapporter](../../message-center/using/about-transactional-messaging-reports.md)
+* [Rapporter om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging-reports.md)

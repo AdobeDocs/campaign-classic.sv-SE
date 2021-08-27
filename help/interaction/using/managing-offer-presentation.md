@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
 # Hantera en presentation av erbjudanden{#managing-offer-presentation}
+
+![](../../assets/v7-only.svg)
 
 ## Översikt över presentationsregler {#presentation-rules-overview}
 
@@ -45,7 +47,7 @@ Med interaktion kan ni styra flödet av erbjudandeförslag med hjälp av present
 
 ## Inställningar för presentationsregel {#presentation-rule-settings}
 
-### Programkriterier {#application-criteria-}
+### Ansökningsvillkor {#application-criteria-}
 
 Med de programvillkor som finns på fliken **[!UICONTROL General]** kan du ange vilka erbjudanden presentationsregeln ska gälla för. För att kunna göra detta måste du skapa en fråga och välja de aktuella erbjudandena enligt beskrivningen nedan.
 
@@ -59,7 +61,7 @@ Med de programvillkor som finns på fliken **[!UICONTROL General]** kan du ange 
 
    ![](assets/offer_typology_008.png)
 
-### Erbjud dimensioner {#offer-dimensions}
+### Erbjudandedimensioner {#offer-dimensions}
 
 På fliken **[!UICONTROL Offer presentation]** måste du ange samma dimensioner för presentationsregeln som de som konfigurerats i miljön.
 
@@ -84,7 +86,7 @@ Använd pilarna för att ändra antalet dagar eller ange en punkt direkt (&quot;
 
 ![](assets/offer_typology_010.png)
 
-### Antal förslag {#number-of-propositions}
+### Antal offerter {#number-of-propositions}
 
 Det är möjligt att fastställa det högsta antal anbud som kan lämnas innan de berörda erbjudandena utesluts.
 
@@ -92,7 +94,7 @@ Använd pilarna för att ändra antalet offertförslag.
 
 ![](assets/offer_typology_011.png)
 
-## Definiera befattningar och mottagare {#defining-propositions-and-recipients}
+## Definiera förslag och mottagare {#defining-propositions-and-recipients}
 
 I **[!UICONTROL Propositions to count]**-avsnittet kan du ange både mottagare och förslag som kommer att leda till att erbjudanden som definierats på fliken **[!UICONTROL General]** utesluts om de visas ett visst antal gånger i förslagshistoriken.
 
@@ -148,7 +150,7 @@ Om du vill ange mottagare klickar du på länken **[!UICONTROL Edit the query fr
 
 ![](assets/offer_typology_012.png)
 
-### Skapa en fråga för förslag {#creating-a-query-on-propositions}
+### Skapa en fråga om förslag {#creating-a-query-on-propositions}
 
 Om du vill ange de förslag som ska räknas via en fråga klickar du på länken **[!UICONTROL Limit propositions...]** och anger de villkor som ska beaktas.
 

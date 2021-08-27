@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -14,6 +14,8 @@ ht-degree: 17%
 ---
 
 # Åtkomst till spårningsloggarna{#accessing-the-tracking-logs}
+
+![](../../assets/common.svg)
 
 När leveransen har skickats och spårningen aktiverats ansvarar det tekniska arbetsflödet för **[!UICONTROL Tracking]** för att hämta spårningsdata. Den körs som standard varje timme.
 

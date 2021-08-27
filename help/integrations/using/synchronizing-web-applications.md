@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Synkronisera webbapplikationer{#synchronizing-web-applications}
+
+![](../../assets/v7-only.svg)
 
 I det här fallet skickar vi ett meddelande med Campaign Standard som innehåller en länk till ett Campaign v7-webbprogram. När mottagaren klickar på länken i e-postmeddelandet visar webbprogrammet ett formulär som innehåller flera fält som är förinlästa med mottagarens data samt en prenumerationslänk till ett nyhetsbrev. Mottagaren kan uppdatera sina data och prenumerera på tjänsten. Hans profil kommer att uppdateras i Campaign v7 och informationen kommer att återges i Campaign Standard.
 
@@ -27,7 +29,7 @@ För att uppnå detta behöver du:
 * en tjänst och ett webbprogram som skapats och publicerats i Campaign v7.
 * webbprogrammet måste innehålla en **[!UICONTROL Pre-loading]**-aktivitet med identifieringsmetoden **[!UICONTROL Adobe Campaign encryption]**.
 
-## Skapar webbprogrammet och tjänsten {#creating-the-web-application-and-service}
+## Skapa webbprogrammet och webbtjänsten {#creating-the-web-application-and-service}
 
 I Campaign v7 kan du skapa webbprogram där mottagarna kan prenumerera på en tjänst. Webbprogrammet och webbtjänsten är utformade och lagrade i Campaign v7 och du kan uppdatera tjänsten via en Campaign Standard. Mer information om webbprogram i Campaign v7 finns i [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -56,7 +58,7 @@ I Campaign v7 har följande objekt skapats:
 
    ![](assets/acs_connect_lp_6.png)
 
-## Replikerar data {#replicating-the-data}
+## Replikera data {#replicating-the-data}
 
 För att replikera nödvändiga data mellan Campaign v7 och Campaign Standard finns flera arbetsflödesmallar för replikering tillgängliga. Arbetsflödet **[!UICONTROL Profiles replication]** replikerar automatiskt alla Campaign v7-mottagare till Campaign Standarden. Se [Tekniska arbetsflöden och replikeringsarbetsflöden](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Med arbetsflödet **[!UICONTROL Landing pages replication]** kan du replikera de webbprogram som du vill använda i Campaign Standarden.
 
@@ -80,7 +82,7 @@ Följ de här stegen i Campaign Standarden för att kontrollera att data har rep
 
    ![](assets/acs_connect_lp_10.png)
 
-## Utforma och skicka e-postmeddelandet {#designing-and-sending-the-email}
+## Designa och skicka e-postmeddelanden {#designing-and-sending-the-email}
 
 I den här delen får vi se hur vi kan inkludera en länk, i ett e-postmeddelande med Campaign Standard, till landningssidan som replikeras från en Campaign v7-webbapplikation.
 
@@ -104,7 +106,7 @@ Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för
 
    ![](assets/acs_connect_lp_15.png)
 
-## Hämtar den uppdaterade informationen {#retrieving-the-updated-information}
+## Hämtar uppdaterad information {#retrieving-the-updated-information}
 
 När mottagaren uppdaterar sina data via webbprogrammet hämtar Adobe Campaign v7 synkront den uppdaterade informationen. Den replikeras sedan från Campaign v7 till Campaign Standard.
 

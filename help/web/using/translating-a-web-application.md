@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
@@ -15,13 +15,15 @@ ht-degree: 5%
 
 # Översätta en webbapplikation{#translating-a-web-application}
 
+![](../../assets/common.svg)
+
 Du kan översätta webbprogramsidor som skapats med Adobe Campaign Digital Content Editor (DCE).
 
 Om du väljer minst ett ytterligare språk via fliken **[!UICONTROL Localization]** i **[!UICONTROL Properties]** för ett webbprogram blir ett nytt alternativ tillgängligt när du lägger till ett HTML-innehållsblock på en sida som redigerats med DCE.
 
 Med det här alternativet kan du ange om blockinnehållet måste översättas eller inte.
 
-Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via fliken **[!UICONTROL Translations]** i programmet. Se denna [sida](translating-a-web-form.md) för mer information om detta.
+Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via fliken **[!UICONTROL Translations]** i programmet. Mer information finns på [den här sidan](translating-a-web-form.md).
 
 Så här flaggar du strängar som ska översättas:
 

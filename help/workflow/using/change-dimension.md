@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Ändra dimension{#change-dimension}
+
+![](../../assets/common.svg)
 
 Med aktiviteten för att ändra dimension kan du ändra måldimensionen under målkonstruktionscykeln. Axelväxling beror på datamallen och indatamängden. På så sätt kan du till exempel växla från dimensionen &quot;kontrakt&quot; till dimensionen &quot;kunder&quot;.
 
@@ -55,7 +57,7 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
 
       >[!NOTE]
       >
-      >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägga till data](../../workflow/using/query.md#adding-data).
+      >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägga till data](query.md#adding-data).
 
    * Markera föregående måldimension (före axelväxling) och välj **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]**-underträd och klicka sedan på **[!UICONTROL Edit expression]**.
 

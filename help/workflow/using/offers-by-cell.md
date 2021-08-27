@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Erbjudanden per cell{#offers-by-cell}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **[!UICONTROL Offers by cell]** kan du distribuera den inkommande populationen (från en fråga till exempel) till flera segment och ange ett erbjudande som ska visas för vart och ett av dessa segment.
 
@@ -30,4 +32,4 @@ Så här gör du:
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](cross-channel-deliveries.md).

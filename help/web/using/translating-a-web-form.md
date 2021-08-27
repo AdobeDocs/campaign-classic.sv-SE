@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Översätta ett webbformulär{#translating-a-web-form}
+
+![](../../assets/common.svg)
 
 Det går att lokalisera ett webbprogram till flera språk.
 
@@ -69,7 +71,7 @@ För teckensträngar som aldrig har översatts är fältet **[!UICONTROL Text]**
 
 ### Filtrera strängar {#filtering-strings}
 
-Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på knappen **[!UICONTROL Filters]** och klicka sedan på **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Se denna [sida](../../platform/using/creating-filters.md#creating-an-advanced-filter) för mer information om detta.
+Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på knappen **[!UICONTROL Filters]** och klicka sedan på **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Mer information finns på [den här sidan](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

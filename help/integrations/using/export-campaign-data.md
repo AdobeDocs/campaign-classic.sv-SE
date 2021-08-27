@@ -5,7 +5,7 @@ description: Lär dig hur du exporterar data från Campaign Classic till Adobe E
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 ---
 
 # Exportera data från Campaign till Adobe Experience Platform {#sources}
+
+![](../../assets/common.svg)
 
 Om du vill exportera Campaign Classic-data till Adobe Real-time Customer Data Platform (RTCDP) måste du först skapa ett arbetsflöde i Campaign Classic för att exportera de data du vill dela till din S3- eller Azure-blob-lagringsplats.
 

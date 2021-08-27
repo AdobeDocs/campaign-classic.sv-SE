@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Globala rapporter {#global-reports}
+
+![](../../assets/common.svg)
 
 Dessa rapporter gäller aktiviteten hos data i hela databasen. Gå till fliken **[!UICONTROL Reports]** om du vill visa rapportkontrollpanelen.
 
@@ -41,7 +43,7 @@ Om du vill visa rapporter klickar du på deras namn. Följande rapporter är til
 * **[!UICONTROL Delivery statistics]** : se  [Leveransstatistik](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : se  [Indelning av öppningar](#breakdown-of-opens).
 
-## Leveransflöde {#delivery-throughput}
+## Leveranskapacitet {#delivery-throughput}
 
 Den här rapporten innehåller information om leveransflödet för hela plattformen under en viss period. För att mäta den hastighet med vilken meddelandena levereras är kriterierna antalet meddelanden som skickas per timme och meddelandets storlek (i bitar per sekund). I exemplet nedan visar det första diagrammet de lyckade leveranserna i blått och antalet felaktiga leveranser i orange.
 
@@ -61,7 +63,7 @@ Följande alternativ är tillgängliga:
 * **[!UICONTROL Clicks]** : Totalt antal klick på länkar i leveranser. Klickningar på prenumerationslänkar och spegelsidor beaktas inte.
 * **[!UICONTROL Transactions]** : Totalt antal transaktioner efter att ett meddelande har tagits emot. För att en transaktion ska kunna beaktas måste en webbspårningstagg för transaktionstypen infogas på den matchande webbsidan. Webbspårningskonfigurationen visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
-## Ej levererbara filer och studsningar {#non-deliverables-and-bounces}
+## Ej levererbara och studsningar {#non-deliverables-and-bounces}
 
 I den här rapporten visas uppdelningen av icke-levererbara produkter samt en uppdelning av belopp per Internetdomän.
 
@@ -191,7 +193,7 @@ I kolumnen **[!UICONTROL Opens]** har vi följande indikatorer:
 
 I det här avsnittet finns två diagram som visar hur delningsaktiviteter delas upp och öppnas per socialt nätverk.
 
-## Statistik för delningsaktiviteter {#statistics-on-sharing-activities}
+## Statistik om delningsaktiviteter {#statistics-on-sharing-activities}
 
 Den här rapporten visar hur delningar har utvecklats till sociala nätverk (Facebook, Twitter, e-post etc.) i tid.
 
@@ -291,7 +293,7 @@ Följande indikatorer används:
 * **[!UICONTROL Clicks]** : procentandelen personer som klickade på en leverans minst en gång jämfört med antalet meddelanden som bearbetades.
 * **[!UICONTROL Unsubscription]** : procent av antalet klick på en länk för att avbryta prenumerationen jämfört med antalet meddelanden som har bearbetats.
 
-## Uppdelning av öppningar {#breakdown-of-opens}
+## Indelning av öppningar {#breakdown-of-opens}
 
 Denna rapport visar hur öppningarna fördelats efter operativsystem, enhet och webbläsare under den aktuella perioden. För varje kategori används två diagram. Den första visar statistik om öppningar på datorer och mobila enheter. Den andra visar statistik som endast gäller öppningar på mobila enheter.
 

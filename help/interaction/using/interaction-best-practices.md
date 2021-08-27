@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Bästa praxis för interaktion{#interaction-best-practices}
+
+![](../../assets/v7-only.svg)
 
 ## Allmänna rekommendationer {#general-recommendations}
 
@@ -30,7 +32,7 @@ Nedan visas viktiga element som du bör tänka på när du implementerar och kon
 * Katalogdesignen har stor inverkan på Adobe Campaign Classic prestanda.
 * När det finns många erbjudanden kan du dela upp dem i flera olika erbjudandekataloger.
 
-### Kvalifikationsregler {#eligibility-rules}
+### Villkor {#eligibility-rules}
 
 Nedan visas några tips om de effektivaste strategierna när det gäller regler för behörighet.
 
@@ -58,7 +60,7 @@ Nedan visas några metodtips om förslagstabellen.
 
 I det här avsnittet finns mer detaljerad information om hur du hanterar erbjudanden och använder interaktionsmodulen i Adobe Campaign Classic.
 
-### Använda flera erbjudandemellanslag i en e-postleverans {#multiple-offer-spaces}
+### Använda flera erbjudandeplatser i e-postleveranser {#multiple-offer-spaces}
 
 När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i kampanjen via en anrikningsaktivitet (eller en annan liknande aktivitet).
 

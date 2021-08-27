@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Deduplicering{#deduplication}
+
+![](../../assets/common.svg)
 
 Borttagning av dubbletter tar bort dubbletter från resultatet av inkommande aktiviteter. Deduplicering kan utföras på e-postadressen, telefonnumret eller något annat fält.
 
@@ -139,7 +141,7 @@ Med funktionen **[!UICONTROL Merge]** kan du konfigurera en uppsättning regler 
 
 Om du till exempel har en uppsättning dubblettposter kan du välja att behålla det äldsta telefonnumret eller det senaste namnet.
 
-Ett användningsexempel som utnyttjar den här funktionen finns i [det här avsnittet](../../workflow/using/deduplication-merge.md).
+Ett användningsexempel som utnyttjar den här funktionen finns i [det här avsnittet](deduplication-merge.md).
 
 Följ dessa steg för att göra detta:
 
@@ -155,7 +157,7 @@ Följ dessa steg för att göra detta:
 
 1. När du har aktiverat funktionen läggs en **[!UICONTROL Merge]**-flik till i **[!UICONTROL Deduplication]**-aktiviteten. Det gör att du kan definiera grupper av fält som ska sammanfogas och tillhörande regler.
 
-   Mer information finns i avsnittet [här](../../workflow/using/deduplication-merge.md).
+   Mer information finns i avsnittet [här](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 

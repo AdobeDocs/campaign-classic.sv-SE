@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '3972'
+source-wordcount: '3991'
 ht-degree: 1%
 
 ---
 
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
+
+![](../../assets/v7-only.svg)
 
 Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
@@ -21,9 +23,8 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
 >[!CAUTION]
 >
 >* Alternativ som inte finns med på den här sidan är bara interna och **får inte ändras**.
-   >
-   >
-* Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
+>
+>* Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
 
 
 ## Leverans {#delivery}
@@ -52,6 +53,10 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: anpassad_nms_mottagare.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> BCC-e-postadress dit Enhanced MTA skickar en rå kopia av skickade e-postmeddelanden. <br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
@@ -732,7 +737,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> Det här alternativet används vid import av data från ett tredjepartssystem via en CRM-anslutning. Om du aktiverar alternativet kan du bara samla in objekt som har ändrats sedan den senaste importen. Det här alternativet måste skapas och fyllas i manuellt enligt nedan: 
     <ul> 
      <li> <p> <span class="uicontrol">Internt namn</span> : LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för den senaste importen, med formatet åååå/MM/dd hh:mm:ss. </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för den senaste importen, med formatet åååå/MM/dd :mm:hss. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Hookar{#hooks}
+
+![](../../assets/v7-only.svg)
 
 Med kopplingar i interaktion kan du ändra **standardmotorbeteendet**.
 
@@ -55,7 +57,7 @@ Data som samlas in måste infogas i anropsdatanoden (interaktionsnod). Integrato
   interaction.@additionalData = additionalData;
 ```
 
-## Efterbearbetning av offert {#proposition-post-processing-}
+## Föreslå efterbehandling {#proposition-post-processing-}
 
 Med den här funktionen kan du kontrollera konsekvens och kompatibilitet för giltiga förslag i en viss interaktion. Här kan du också definiera en ny funktion för beräkning av poäng eller sannolikhet.
 

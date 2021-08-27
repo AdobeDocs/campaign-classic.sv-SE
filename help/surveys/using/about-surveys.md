@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -15,20 +15,21 @@ ht-degree: 4%
 
 # Kom igång med undersökningar{#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign innehåller en grafisk modul för att definiera och publicera webbapplikationer. Detta används för att skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Använd den här funktionen för att utforma och publicera webbsidor där användarna kan söka efter eller ange information.
 
 Med det valfria tillägget **Survey** kan du skapa en ny typ av webbprogram för att skapa och hantera onlineenkäter, t.ex. formulär för att lägga till eller ändra profilinformation, för att prenumerera på eller avbryta en prenumeration på en informationstjänst eller ett tävlingsformulär. När svaren har samlats in lagras de i databasen eller i lokala variabler. Datamodellen kan utökas dynamiskt via svar på enkäter. Du kan visa resultaten i realtid, filtrera svaren och analysera dem med dedikerade diagram.
 
 I det här kapitlet beskrivs hur du skapar och hanterar **undersökningar**, fält- och sidhantering, lagringslägen och poster.
 
-[!DNL :bulb:] Lär dig hur du skapar din första enkät på  [den här sidan](getting-started-with-surveys.md).
+Lär dig hur du skapar din första enkät i [den här sidan](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
 >* Detaljerade steg för hur du skapar ett standardwebbformulär finns i [det här dokumentet](../../web/using/about-web-forms.md).
-   >
-   >
-* Hantering av webbprogram beskrivs i [det här dokumentet](../../web/using/about-web-applications.md). Mer information finns i det här kapitlet.
+>
+>* Hantering av webbprogram beskrivs i [det här dokumentet](../../web/using/about-web-applications.md). Mer information finns i det här kapitlet.
 
 
 ## Funktionsomfång {#campaign-surveys-scope}

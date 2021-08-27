@@ -5,7 +5,7 @@ description: Läs mer om standardarbetsflöden för leveranser
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 
 
 # Leveranser{#deliveries}
+
+![](../../assets/common.svg)
 
 Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser**.
 
@@ -57,7 +59,7 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser
   <tr> 
    <td> <span class="uicontrol">Rensa pausade arbetsflöden</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i <a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Hantera pausade arbetsflöden</a>.</p></td> 
+   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Hantera pausade arbetsflöden</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Meddelande om erbjudande</span> <br /> </td> 

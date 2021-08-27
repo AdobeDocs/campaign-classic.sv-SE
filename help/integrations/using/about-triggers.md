@@ -5,7 +5,7 @@ description: Kom igång med Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 16%
@@ -13,6 +13,8 @@ ht-degree: 16%
 ---
 
 # Kom igång med Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
+
+![](../../assets/common.svg)
 
 [!DNL Triggers] är en integrering mellan Adobe Campaign och Adobe Analytics. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
 
@@ -25,7 +27,7 @@ ht-degree: 16%
 Det ger smidigare integrering eftersom konfigurationen är minimal och en tredje part inte berörs.
 Det stöder också stora trafikvolymer utan att påverka marknadsföringsaktiviteternas resultat. Integrationen kan till exempel behandla en miljon utlösare per timme.
 
-## [!DNL Triggers] arkitektur  {#triggers-architecture}
+## [!DNL Triggers] arkitektur {#triggers-architecture}
 
 Processen [!DNL pipelined] körs alltid på Adobe Campaign marknadsföringsserver. Den ansluter till pipeline, hämtar händelserna och bearbetar dem direkt.
 

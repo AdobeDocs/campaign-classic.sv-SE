@@ -2,20 +2,22 @@
 product: campaign
 title: Version 20.1
 description: Version 20.1
-feature: Översikt
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 20%
+source-wordcount: '1559'
+ht-degree: 19%
 
 ---
 
 # Version 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/limited_2.png) Version 20.1.4 – build 9126 {#release-20-1-4-build-9126}
+![](../../assets/v7-only.svg)
+
+## ![](assets/do-not-localize/limited_2.png) version 20.1.4 – build 9126 {#release-20-1-4-build-9126}
 
 _15 april 2021_
 
@@ -41,28 +43,27 @@ _23 december 2020_
 
 >[!CAUTION]
 >
-> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/ims-updates.md)
-   >
-   > 
-* Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
+> * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/using/ims-updates.md)
+>
+> * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
 
 
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
 * Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) Version 20.1.3 – build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) version 20.1.3 – build 9124{#release-20-1-3-build-9124}
 
 _6 maj 2020_
 
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) Version 20.1.2 – build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) version 20.1.2 – build 9123{#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
 * Korrigerade ett problem som förhindrade versionshantering på Red Hat 7-servrar. (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) Version 20.1 – build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) version 20.1 – build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 

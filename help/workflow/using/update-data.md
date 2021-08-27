@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Uppdatera data{#update-data}
+
+![](../../assets/common.svg)
 
 En **aktivitet av typen Uppdatera data** utför en massuppdatering av fälten i databasen.
 
@@ -31,7 +33,7 @@ I fältet **[!UICONTROL Operation type]** kan du välja vilken process som ska u
 
 I fältet **[!UICONTROL Batch size]** kan du välja antalet inkommande övergångselement som ska uppdateras. Om du till exempel anger 500 uppdateras de första 500 posterna som behandlas.
 
-## Registrera identifiering {#record-identification}
+## Registrerings-ID {#record-identification}
 
 Ange hur posterna i databasen ska identifieras:
 
@@ -116,7 +118,7 @@ Data för sekundära poster kopplas till huvudposten om de definierade reglerna 
 
 ## Exempel: Uppdatera data efter en anrikning {#example--update-data-following-an-enrichment}
 
-[Steg 2: Om data skrivs till tabellen&quot;Inköp&quot;](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) i användningsexemplet där detaljerad information om hur du skapar en lista med sammanfattning innehåller ett exempel på en datauppdatering efter en anrikningsaktivitet.
+[Steg 2: Om data skrivs till tabellen&quot;Inköp&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) i användningsexemplet där detaljerad information om hur du skapar en lista med sammanfattning innehåller ett exempel på en datauppdatering efter en anrikningsaktivitet.
 
 ## Indataparametrar {#input-parameters}
 

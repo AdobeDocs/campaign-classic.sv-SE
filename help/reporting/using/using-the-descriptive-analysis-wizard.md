@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Använda guiden för beskrivande analys{#using-the-descriptive-analysis-wizard}
+
+![](../../assets/common.svg)
 
 Använd den dedikerade guiden för att skapa en beskrivande analysrapport. Konfigurationen beror på vilka data som ska analyseras och på önskad återgivning.
 
@@ -33,7 +35,7 @@ Om du vill producera statistik för en del av data kan du definiera ett filter: 
 
 Analysen gäller endast mottagare som är 16 år eller äldre och som bor i London.
 
-## Analyserar en datauppsättning {#analyzing-a-set-of-data}
+## Analysera en datauppsättning {#analyzing-a-set-of-data}
 
 Du kan använda den beskrivande analysguiden i ett annat sammanhang: en lista, en arbetsflödesövergång, en eller flera leveranser, ett urval av mottagare osv.
 

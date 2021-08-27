@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 # Konfigurera FDA-kopplingar {#specific-configurations-by-database-type}
 
+![](../../assets/v7-only.svg)
+
 Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaign måste du utföra vissa specifika konfigurationer. Dessa konfigurationer innebär i princip att installera drivrutiner och deklarera miljövariabler som tillhör varje RDBMS på Adobe Campaign-servern.
 
 Som regel måste du installera motsvarande klientlager på den externa databasen på Adobe Campaign-servern.
@@ -22,7 +24,6 @@ Som regel måste du installera motsvarande klientlager på den externa databasen
 >[!NOTE]
 >
 >Kompatibla versioner listas i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
-
 
 ## Konfigurationssteg {#fda-configuration-steps}
 

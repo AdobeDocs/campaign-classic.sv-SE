@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 40%
@@ -14,6 +14,8 @@ ht-degree: 40%
 ---
 
 # Kom igång med personalisering{#about-personalization}
+
+![](../../assets/common.svg)
 
 Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. För e-postleveranser kan du definiera elementen och anpassningsvillkoren för en leverans direkt i JavaScript på fliken **[!UICONTROL Source]** i meddelandet. I allmänhet kan du med Adobe Campaign:
 

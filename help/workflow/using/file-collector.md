@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Filhämtare{#file-collector}
+
+![](../../assets/common.svg)
 
 **Filinsamlaren** övervakar en eller flera filers ankomst till en katalog och aktiverar övergången för varje mottagen fil. För varje händelse innehåller en **[!UICONTROL filename]**-variabel det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
 
@@ -23,7 +25,7 @@ Filerna måste finnas på den server där den servermodul som ansvarar för det 
 
 ## Egenskaper {#properties}
 
-På den första fliken i **[!UICONTROL File collector]**-aktiviteten kan du välja källkatalogen och vid behov filtrera de insamlade filerna. De andra flikarna finns på [Inkommande e-postmeddelanden](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]**- och **[!UICONTROL Expiry]**-flikar).
+På den första fliken i **[!UICONTROL File collector]**-aktiviteten kan du välja källkatalogen och vid behov filtrera de insamlade filerna. De andra flikarna finns på [Inkommande e-postmeddelanden](inbound-emails.md) (**[!UICONTROL Schedule]**- och **[!UICONTROL Expiry]**-flikar).
 
 ![](assets/file_collect_edit.png)
 
@@ -67,7 +69,7 @@ På den första fliken i **[!UICONTROL File collector]**-aktiviteten kan du väl
 
 1. **Historik**
 
-   Se **[!UICONTROL File historization]**-steget här: [Webbhämtning](../../workflow/using/web-download.md).
+   Se **[!UICONTROL File historization]**-steget här: [Webbhämtning](web-download.md).
 
 Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättning filer sekventiellt använder du alternativet **[!UICONTROL Stop as soon as a file has been processed]** och skapar en slinga. I så fall bearbetas filerna i alfabetisk ordning. Med alternativet **[!UICONTROL Process file nonexistence]** kan du slutföra itereringen.
 

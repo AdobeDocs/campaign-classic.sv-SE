@@ -5,17 +5,23 @@ description: Läs mer om tekniska arbetsflöden för social marknadsföring
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 5%
+source-wordcount: '118'
+ht-degree: 6%
 
 ---
 
 
 # Social marknadsföring{#social-marketing}
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social Marketing**. Mer information om den här modulen finns i [avsnittet](../../social/using/starting-workflows.md).
+![](../../assets/common.svg)
+
+>[!AVAILABILITY]
+>
+>:warning: Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../social/using/about-social-marketing.md)
+
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social Marketing**.
 
 <table> 
  <tbody> 

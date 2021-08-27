@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 2%
@@ -15,9 +15,11 @@ ht-degree: 2%
 
 # Utföra en uppgradering av din build{#performing-a-build-upgrade}
 
+![](../../assets/v7-only.svg)
+
 I det här avsnittet får du en detaljerad genomgång av uppgraderingsprocessen och hur du identifierar och löser konflikter.
 
-Uppgraderingen av bygget måste utföras med försiktighet, dess effekter måste beaktas fullt ut i förväg och förfarandet måste avslutas med en hög nivå av disciplin. För att uppgraderingen ska lyckas måste du se till att endast expertanvändare utför de steg som beskrivs nedan. Dessutom rekommenderar vi att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan du påbörjar en uppgradering.
+Uppgraderingen av bygget måste utföras med försiktighet, dess effekter måste beaktas fullt ut i förväg och förfarandet måste avslutas med en hög nivå av disciplin. För att uppgraderingen ska lyckas måste du se till att endast expertanvändare utför de steg som beskrivs nedan. Dessutom rekommenderar vi att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan du påbörjar en uppgradering.
 
 Följande krav krävs:
 
@@ -255,7 +257,6 @@ I en miljö med flera leverantörer behöver du utföra följande steg för att 
 >
 >Servern för medelhög källkod måste alltid ha samma version (eller senare) som marknadsföringsservrarna.
 
-
 ## Vid konflikter
 
 ### Identifiera konflikter
@@ -343,7 +344,6 @@ Det finns tre alternativ för att lösa konflikter: **Acceptera den nya versione
 >[!IMPORTANT]
 >Vi rekommenderar att du löser konflikter.
 
-
 ### Utför en sammanslagning{#perform-a-merge}
 
 Det finns olika typer av sammanslagningar:
@@ -407,10 +407,9 @@ Så här utför du en komplex sammanfogning:
 >[!IMPORTANT]
 >Det krävs utvecklingskunskaper för att utföra komplexa sammanfogningar.
 
-
 **Relaterade ämnen**
 
-* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)

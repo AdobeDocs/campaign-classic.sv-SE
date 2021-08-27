@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Övervaka tekniska arbetsflöden {#monitoring-technical-workflows}
+
+![](../../assets/common.svg)
 
 Tekniska arbetsflöden måste övervakas, och åtgärder måste vidtas när de misslyckas.
 
@@ -37,26 +39,26 @@ Tekniska arbetsflöden är tillgängliga från **[!UICONTROL Administration]** >
 
 Beroende på det tekniska arbetsflödet följer du stegen nedan för att kontrollera att allt fungerar som det ska.
 
-Mer information om vad varje tekniskt arbetsflöde ska göra finns i det här [avsnittet](../../workflow/using/about-technical-workflows.md).
+Mer information om vad varje tekniskt arbetsflöde ska göra finns i det här [avsnittet](about-technical-workflows.md).
 
 För **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Kontrollera att arbetsflödet **[!UICONTROL Database Cleanup]** körs och avslutas varje dag. Se denna [sida](../../workflow/using/delivery.md) för mer information om detta.
+1. Kontrollera att arbetsflödet **[!UICONTROL Database Cleanup]** körs och avslutas varje dag. Se denna [sida](delivery.md) för mer information om detta.
 1. Titta i journalen för att kontrollera att förfluten tid är relativt konstant över tid och inte stör andra arbetsflöden.
 1. Mer information finns på den här [sidan](../../production/using/database-cleanup-workflow.md).
 
 För **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som standard) och att journalen inte visar återkommande fel. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/delivery.md).
+Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som standard) och att journalen inte visar återkommande fel. Mer information om detta hittar du i det här [avsnittet](delivery.md).
 
 För **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Kontrollera att arbetsflödet **[!UICONTROL Deliverability update]** körs och avslutas varje dag. Se denna [sida](../../workflow/using/delivery.md) för mer information om detta.
+1. Kontrollera att arbetsflödet **[!UICONTROL Deliverability update]** körs och avslutas varje dag. Se denna [sida](delivery.md) för mer information om detta.
 1. Kontrollera i journalen att reglerna uppdateras regelbundet.
 
 För **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Titta på alla arbetsflöden som finns under mappen **[!UICONTROL Campaign process]**. Se denna [sida](../../workflow/using/about-technical-workflows.md) för mer information om detta.
+1. Titta på alla arbetsflöden som finns under mappen **[!UICONTROL Campaign process]**. Se denna [sida](about-technical-workflows.md) för mer information om detta.
 1. Kontrollera att arbetsflödena körs som schemalagda och att journalen inte visar återkommande fel.
 
 ## Arbetsflödesövervakning {#workflow-supervision}

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # uppräkningselement {#enumeration--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-5}
 
@@ -32,7 +34,7 @@ uppräkning:==(help| value)
 
 `<srcschema>`
 
-## Underordnade {#children-5}
+## Barn {#children-5}
 
 * `<help>`
 * `<value>`
@@ -41,7 +43,7 @@ uppräkning:==(help| value)
 
 Med det här elementet kan vi definiera en värdeuppräkning. En uppräkning tillhör schemat som den är definierad i, men är tillgänglig via ett annat schema.
 
-## Använd och använd {#use-and-context-of-use-4}
+## Användning och användningssammanhang {#use-and-context-of-use-4}
 
 Uppräkningar definieras i början av ett schema (innan huvudelementet definieras).
 

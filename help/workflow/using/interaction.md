@@ -5,17 +5,26 @@ description: Interaktion
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 6%
 
 ---
 
 
 # Interaktion{#interaction}
 
-Arbetsflödena som anges nedan installeras som standard med modulen **Erbjudandemotor (interaktion)**. Mer information om den här modulen finns i [avsnittet](../../interaction/using/interaction-and-offer-management.md).
+![](../../assets/common.svg)
+
+Arbetsflödena som anges nedan installeras som standard med **erbjudandemotorn (interaktion)**-tillägget.
+
+Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+
+![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+
+![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+
 
 <table> 
  <tbody> 

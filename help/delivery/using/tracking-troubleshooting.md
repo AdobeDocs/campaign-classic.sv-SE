@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # Felsökning av spårning {#tracking-troubleshooting}
 
+![](../../assets/common.svg)
+
 I det här avsnittet hittar du vanliga frågor om spårning av konfiguration och implementering i Adobe Campaign Classic.
 
-## Spårningsarbetsflödet misslyckas {#tracking-workflow-failing}
+## Arbetsflödet för spårning misslyckas {#tracking-workflow-failing}
 
 Mitt arbetsflöde för spårning misslyckas, hur kan jag identifiera skadade rader i spårningsfilen?
 
@@ -79,7 +81,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 Du kan sedan stoppa arbetsflödet för spårning, ta bort skadade rader och starta om arbetsflödet.
 
-## Spårning av länkar misslyckas ibland {#tracking-links-fail-intermittently}
+## Spåra länkar misslyckas ibland {#tracking-links-fail-intermittently}
 
 När du försöker komma åt spårningslänkarna visas följande meddelande:
 

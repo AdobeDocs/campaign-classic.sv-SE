@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Åtgärder på rapporter{#actions-on-reports}
+
+![](../../assets/common.svg)
 
 När du visar en rapport kan du utföra ett visst antal åtgärder med verktygsfältet. Dessa beskrivs nedan.
 
@@ -39,7 +41,7 @@ Exportalternativen nås via **[!UICONTROL Page]**-aktiviteterna i rapporten på 
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
-### Exporterar till Microsoft Excel {#exporting-into-microsoft-excel}
+### Exportera till Microsoft Excel {#exporting-into-microsoft-excel}
 
 För **[!UICONTROL List with group]**-typrapporter som ska exporteras till Excel gäller följande rekommendationer och begränsningar:
 
@@ -90,7 +92,7 @@ Du får ett bättre resultat om du redigerar utskriftsalternativen i Internet Ex
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## Skapar rapportarkiv {#creating-report-archives}
+## Skapa rapportarkiv {#creating-report-archives}
 
 Genom att arkivera en rapport kan du skapa en vy av rapporten under olika perioder, t.ex. för att visa statistik för en viss tidsperiod.
 

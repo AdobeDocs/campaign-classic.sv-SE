@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # Godkänna och aktivera ett erbjudande{#approving-and-activating-an-offer}
 
+![](../../assets/v7-only.svg)
+
 När innehållet i erbjudandet är klart måste du godkänna det för att det ska kunna dupliceras i den aktiva miljön och levereras. Godkännandet avser erbjudandeinnehållet och dess behörighet.
 
 Banderollen på instrumentpanelen för erbjudanden anger om erbjudandet behöver gå igenom godkännandecykeln eller inte.
 
 ![](assets/offer_validate_001.png)
 
-## Innehåll {#approving-offer-content} för godkännande av erbjudande
+## Godkänna erbjudandeinnehåll {#approving-offer-content}
 
 Att godkänna erbjudandeinnehåll innebär att välja den eller de representationer som du vill göra tillgängliga i den aktiva miljön.
 
@@ -51,7 +53,7 @@ Så här godkänner du erbjudandeinnehållet:
    >
    >**[!UICONTROL Content approved]**-omnämnandet betyder inte att alla offertrepresentationer har aktiverats och godkänts. Det visar att processen för godkännande av innehåll har uppnåtts, oavsett om alla erbjudanden har aktiverats/godkänts eller inte.
 
-## Godkänner erbjudande {#approving-offer-eligibility}
+## Godkänna anbudsberättigande {#approving-offer-eligibility}
 
 Godkännande av berättigande för erbjudanden innebär att acceptera eller avvisa erbjudandevikter och att reglerna för behörighet också har konfigurerats i erbjudandet eller ärvts från reglerna som skapats i den överordnade kategorin.
 
@@ -115,7 +117,7 @@ Klicka på erbjudandeetiketten för att visa erbjudandet som finns i den aktiva 
 
 ![](assets/offer_golive_002.png)
 
-## Inaktiverar ett erbjudande {#disabling-an-offer}
+## Inaktivera ett erbjudande {#disabling-an-offer}
 
 När erbjudandet har godkänts kan du inaktivera det.
 

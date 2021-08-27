@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Bästa praxis för innehållsredigering{#content-editing-best-practices}
+
+![](../../assets/common.svg)
 
 För att säkerställa att redigeraren fungerar optimalt rekommenderar vi att du följer följande riktlinjer:
 
@@ -40,7 +42,7 @@ För att säkerställa att redigeraren fungerar optimalt rekommenderar vi att du
 * Kontrollera att det bara finns en `<body> </body>` på sidan.
 * När en CSS- eller JS-fil överförs, överförs inte bilderna i zip-filen. Referenserna till dessa bilder i CSS uppdateras därför inte.
 
-## Format {#content-editor-supported-formats} som stöds av innehållsredigeraren
+## Format som stöds av Content Editor {#content-editor-supported-formats}
 
 Digital Content Editor stöder HTML-formatet: Du kan när som helst växla till **källäget**.
 
@@ -77,7 +79,7 @@ I den övre delen av redigeraren visas meddelanden om innehållets status. Färg
 * **Blått meddelande**: informationsmeddelande som rör det innehåll som redigeras.
 * **Gult meddelande**: varning eller felmeddelande som kräver åtgärd för användarens räkning.
 
-### Lista med meddelanden när du redigerar ett webbprogram {#list-of-messages-when-editing-a-web-application}
+### Lista över meddelanden när du redigerar ett webbprogram {#list-of-messages-when-editing-a-web-application}
 
 * HTML-innehållet fungerar.
 * Webbprogrammet har inte publicerats och går inte att komma åt online.

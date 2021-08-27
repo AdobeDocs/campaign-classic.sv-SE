@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Designa transaktionsmeddelandemallar {#creating-the-message-template}
+
+![](../../assets/v7-only.svg)
 
 För att vara säker på att varje händelse kan ändras till ett anpassat meddelande måste du skapa en meddelandemall som matchar varje händelsetyp.
 

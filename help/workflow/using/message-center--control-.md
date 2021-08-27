@@ -5,19 +5,27 @@ description: Meddelandecenter (kontroll)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 7%
+source-wordcount: '155'
+ht-degree: 10%
 
 ---
 
 
 # Meddelandecenter (kontroll){#message-center-control}
 
-Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control**-modulen som standard. Mer information om den här modulen finns i [avsnittet](../../message-center/using/about-transactional-messaging.md).
+![](../../assets/common.svg)
 
-Mer information om hur du konfigurerar tekniska arbetsflöden för modulen Meddelandecenter finns på [den här sidan](../../message-center/using/technical-workflows.md).
+Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control**-modulen som standard.
+
+
+Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+
+![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+
 
 <table> 
  <tbody> 

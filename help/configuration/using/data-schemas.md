@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Datascheman{#data-schemas}
+
+![](../../assets/v7-only.svg)
 
 ## Principer {#principles}
 
@@ -43,7 +45,7 @@ Förhandsgranskningen genererar automatiskt det utökade schemat:
 
 Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md).
 
-## Exempel: skapar en kontraktstabell {#example--creating-a-contract-table}
+## Exempel: skapa en kontraktstabell {#example--creating-a-contract-table}
 
 I följande exempel vill vi skapa en ny tabell för **kontrakt** i databasmodellen för Adobe Campaign-databasen. I den här tabellen kan du lagra förnamn och efternamn samt e-postadresser för innehavare och medarbetare för varje kontrakt.
 

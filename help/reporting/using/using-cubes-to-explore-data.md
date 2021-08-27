@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Använda kuber för att utforska data{#using-cubes-to-explore-data}
+
+![](../../assets/common.svg)
 
 Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera och välja data från databasen via kuber. Detta gör att du kan:
 
@@ -72,7 +74,7 @@ Med knapparna **[!UICONTROL Add]** på varje axel kan du lägga till dimensioner
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### Steg 3 - Konfigurera de mått som ska visas{#step-3---configuring-the-measures-to-display}
+### Steg 3 - Konfigurera de mått som ska visas {#step-3---configuring-the-measures-to-display}
 
 När raderna och kolumnerna är på plats anger du de mått som du vill visa samt deras visningsläge.
 
@@ -158,7 +160,7 @@ Gör så här om du vill gruppera en population i en lista:
 
 Så här skapar du en tabell och utforskar data i en kub:
 
-1. Skapa en ny rapport med en enda sida och infoga en pivottabell i den. Se denna [sida](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table) för mer information om detta.
+1. Skapa en ny rapport med en enda sida och infoga en pivottabell i den. Mer information finns på [den här sidan](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table).
 
    ![](assets/s_advuser_cube_in_report_01.png)
 

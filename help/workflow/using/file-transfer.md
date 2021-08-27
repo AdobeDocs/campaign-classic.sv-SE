@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Filöverföring{#file-transfer}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **Filöverföring** kan du ta emot eller skicka filer, testa om det finns filer eller lista över filer på en server. Det protokoll som används är antingen Azure Blob Storage, Amazon Simple Storage Service (S3), FTP eller SFTP.
 Med S3, Azure Blob Storage eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
@@ -71,7 +73,7 @@ Konfigurationen beror på den valda åtgärden.
 Det finns två möjliga alternativ för alla filöverföringsalternativ:
 
 * Alternativet **[!UICONTROL Process missing file]** lägger till en övergång som aktiveras om ingen fil hittas i den angivna katalogen.
-* Alternativet **[!UICONTROL Process errors]** finns i [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* Alternativet **[!UICONTROL Process errors]** finns i [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 Med länken **[!UICONTROL Advanced parameters...]** kan du komma åt följande alternativ:
 
@@ -93,7 +95,7 @@ Med länken **[!UICONTROL Advanced parameters...]** kan du komma åt följande a
 
    Gör att du kan ange anslutningsporten som ska användas för dataöverföring.
 
-Länken **[!UICONTROL File historization settings...]** ger åtkomst till alternativen som beskrivs i [Webbhämtning](../../workflow/using/web-download.md) (**[!UICONTROL File historization]** steg).
+Länken **[!UICONTROL File historization settings...]** ger åtkomst till alternativen som beskrivs i [Webbhämtning](web-download.md) (**[!UICONTROL File historization]** steg).
 
 ## Indataparametrar {#input-parameters}
 

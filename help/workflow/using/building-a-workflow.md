@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Skapa ett arbetsflöde {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 I det här avsnittet beskrivs de viktigaste principerna och de bästa metoderna för att skapa ett arbetsflöde i Campaign.
 
@@ -55,10 +57,10 @@ Du måste nu definiera de olika aktiviteterna och koppla samman dem i diagrammet
 
 Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga flikar och aktiviteter kan variera beroende på arbetsflödestyp (teknik, målgruppsanpassning eller kampanjarbetsflöde).
 
-* Den första fliken innehåller målgrupps- och datahanteringsaktiviteter. Dessa aktiviteter beskrivs i [Målaktiviteter](../../workflow/using/about-targeting-activities.md).
-* På den andra fliken finns schemaläggningsaktiviteter, som huvudsakligen används för att samordna andra aktiviteter. Dessa aktiviteter beskrivs i [Flödeskontrollaktiviteter](../../workflow/using/about-flow-control-activities.md).
-* Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa aktiviteter beskrivs i [Åtgärdsaktiviteter](../../workflow/using/about-action-activities.md).
-* Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs i [Händelseaktiviteter](../../workflow/using/about-event-activities.md).
+* Den första fliken innehåller målgrupps- och datahanteringsaktiviteter. Dessa aktiviteter beskrivs i [Målaktiviteter](about-targeting-activities.md).
+* På den andra fliken finns schemaläggningsaktiviteter, som huvudsakligen används för att samordna andra aktiviteter. Dessa aktiviteter beskrivs i [Flödeskontrollaktiviteter](about-flow-control-activities.md).
+* Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa aktiviteter beskrivs i [Åtgärdsaktiviteter](about-action-activities.md).
+* Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs i [Händelseaktiviteter](about-event-activities.md).
 
 Så här skapar du diagrammet
 
@@ -104,7 +106,7 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Bildhantering**
 
-   Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Hantera aktivitetsbilder](../../workflow/using/managing-activity-images.md).
+   Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Hantera aktivitetsbilder](managing-activity-images.md).
 
 ## Konfigurera aktiviteter {#configuring-activities}
 
@@ -112,7 +114,7 @@ Dubbelklicka på en aktivitet för att konfigurera den eller högerklicka och v�
 
 >[!NOTE]
 >
->Kampanjarbetsflödesaktiviteter beskrivs i [det här avsnittet](../../workflow/using/about-activities.md).
+>Kampanjarbetsflödesaktiviteter beskrivs i [det här avsnittet](about-activities.md).
 
 Den första fliken innehåller den grundläggande konfigurationen. Fliken **[!UICONTROL Advanced]** innehåller ytterligare parametrar, som används särskilt för att definiera beteenden när ett fel påträffas, ange körningstid för en aktivitet och för att ange ett initieringsskript.
 
@@ -124,13 +126,13 @@ Om du vill få en bättre förståelse för aktiviteterna och om du vill förbä
 
 Med målarbetsflöden kan du skapa flera leveransmål. Du kan skapa frågor, definiera fackföreningar eller undantag baserat på specifika villkor, lägga till schemaläggning tack vare arbetsflödesaktiviteter. Resultatet av den här målsättningen kan automatiskt överföras till en lista som kan fungera som mål för leveransåtgärder
 
-Förutom dessa aktiviteter kan du med alternativen för datahantering hantera data och komma åt avancerade funktioner för att tillgodose komplexa målgruppsproblem. Mer information finns i [Datahantering](../../workflow/using/targeting-data.md#data-management).
+Förutom dessa aktiviteter kan du med alternativen för datahantering hantera data och komma åt avancerade funktioner för att tillgodose komplexa målgruppsproblem. Mer information finns i [Datahantering](targeting-data.md#data-management).
 
 Alla dessa aktiviteter finns på den första arbetsflödesfliken.
 
 >[!NOTE]
 >
->Målinriktade aktiviteter beskrivs i [det här avsnittet](../../workflow/using/about-activities.md).
+>Målinriktade aktiviteter beskrivs i [det här avsnittet](about-activities.md).
 
 Målarbetsflöden kan skapas och redigeras via noden **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** i Adobe Campaign-trädet eller via menyn **[!UICONTROL Profiles and Targets > Targeting workflows]** på startsidan.
 
@@ -142,15 +144,15 @@ Målarbetsflöden inom ramen för en kampanj lagras med alla kampanjarbetsflöde
 
 Steg för att skapa ett arbetsflöde för målinriktning finns i följande avsnitt:
 
-1. **Identifiera data** i databasen - Se  [Skapa frågor](../../workflow/using/targeting-data.md#creating-queries)
-1. **Förbereda** data efter leveransbehov - Se  [Förbättra och ändra data](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **Använd** data för att utföra uppdateringar eller inom en leverans - Se  [Uppdatera databasen](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **Identifiera data** i databasen - Se  [Skapa frågor](targeting-data.md#creating-queries)
+1. **Förbereda** data efter leveransbehov - Se  [Förbättra och ändra data](targeting-data.md#enriching-and-modifying-data)
+1. **Använd** data för att utföra uppdateringar eller inom en leverans - Se  [Uppdatera databasen](how-to-use-workflow-data.md#updating-the-database)
 
-Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](../../workflow/using/data-life-cycle.md#target-data)
+Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](data-life-cycle.md#target-data)
 
 ### Målinriktning och filtrering {#targeting-and-filtering-dimensions}
 
-Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Med filterdimensionen kan du välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
+Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Filtreringsdimensionen gör att du kan välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
 
 Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
 
@@ -194,7 +196,7 @@ Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som
 
 >[!NOTE]
 >
->En lista över tekniska arbetsflöden som installeras med varje modul finns i ett [dedikerat avsnitt](../../workflow/using/about-technical-workflows.md).
+>En lista över tekniska arbetsflöden som installeras med varje modul finns i ett [dedikerat avsnitt](about-technical-workflows.md).
 
 Du kan skapa andra tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Den här processen är dock reserverad för expertanvändare.
 

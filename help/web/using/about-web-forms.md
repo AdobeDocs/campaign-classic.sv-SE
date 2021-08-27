@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Kom igång med webbformulär{#about-web-forms}
+
+![](../../assets/common.svg)
 
 Adobe Campaign integrerar en grafisk modul för att definiera och publicera webbformulär för att skapa sidor som innehåller inmatnings- och urvalsfält, och som kan innehålla data i databasen. På så sätt kan du utforma och publicera webbsidor som användare kan komma åt för att visa eller ange information.
 
@@ -80,7 +82,6 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 >* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. Det gör du genom att gå till underfliken **[!UICONTROL Preview]** och markera rutan **[!UICONTROL Enable debug mode]**: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
 
 >
-
 
 
 ### Använda ikonerna i verktygsfältet {#using-the-icons-in-the-toolbar}

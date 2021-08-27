@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # Ytterligare konfigurationer {#mc-additional-configurations}
+
+![](../../assets/v7-only.svg)
 
 ## Övervaka gränsvärden {#monitoring-thresholds}
 
@@ -58,7 +60,7 @@ Du måste se till att de tekniska arbetsflödena för kontrollinstansen och de o
 
 De olika tekniska arbetsflödena för transaktionsmeddelanden (Message Center) är uppdelade mellan kontrollinstansen och körningsinstansen/instanserna.
 
-### Kontrollera instansarbetsflöden {#control-instance-workflows}
+### Styra instansarbetsflöden {#control-instance-workflows}
 
 Om du har en eller flera instanser registrerade för körning i kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]**-externt konto. Klicka på knappen **[!UICONTROL Create the archiving workflow]** för att skapa och starta arbetsflödet.
 
@@ -72,7 +74,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ![](assets/messagecenter_archiving_001.png)-->
 
-### Arbetsflöden för körningsinstans {#execution-instance-workflows}
+### Arbetsflöden för körningsinstanser {#execution-instance-workflows}
 
 På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena för transaktionsmeddelanden från mappen **Administration > Produktion > Meddelandecenter**. Du behöver bara starta dem. Arbetsflödena i listan är:
 

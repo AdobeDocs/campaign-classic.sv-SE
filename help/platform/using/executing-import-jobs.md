@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # Konfigurera importjobb {#executing-import-jobs}
 
+![](../../assets/common.svg)
+
 Med Adobe Campaign kan du importera data till databasen från en eller flera filer i text-, CSV-, TAB- eller XML-format. De här filerna är kopplade till en tabell (huvud eller länkad) och varje fält i källfilen/källfilerna är kopplat till ett fält i databasen.
 
 >[!NOTE]
 >
->Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas exklusivt i arbetsflöden via objektet **[!UICONTROL Read list]**. Se denna [sida](../../workflow/using/read-list.md) för mer information om detta.
+>Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas exklusivt i arbetsflöden via objektet **[!UICONTROL Read list]**. Mer information finns på [den här sidan](../../workflow/using/read-list.md).
 
 Med importguiden kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
 
@@ -125,7 +127,7 @@ Du kan visa resultatet av konfigurationen i förhandsvisningszonen i fönstrets 
 
 Klicka på **[!UICONTROL OK]** för att spara formateringen och klicka sedan på **[!UICONTROL Next]** för att visa nästa steg.
 
-## Steg 3 - fältmappning {#step-3---field-mapping}
+## Steg 3 - Fältmappning {#step-3---field-mapping}
 
 Du måste sedan välja målschemat och mappa data för varje kolumn till fält i databasen.
 
@@ -181,7 +183,7 @@ Det finns särskilda alternativ för varje nod (tabell eller fält). När du kli
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
-### Typer av åtgärd {#types-of-operation}
+### Typ av åtgärd {#types-of-operation}
 
 För varje tabell som berörs av importen måste du definiera typen av åtgärd. Följande åtgärder är tillgängliga för databasens huvudelement:
 
@@ -271,7 +273,7 @@ Du kan generera en fil som innehåller dessa poster via ikonen **[!UICONTROL Exp
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-## Steg 5 - Ytterligare steg vid import av mottagare {#step-5---additional-step-when-importing-recipients}
+## Steg 5 - ytterligare steg vid import av mottagare {#step-5---additional-step-when-importing-recipients}
 
 I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data ska importeras, automatiskt mappa importerade mottagare med en (ny eller befintlig) lista och prenumerera på mottagare för en tjänst.
 

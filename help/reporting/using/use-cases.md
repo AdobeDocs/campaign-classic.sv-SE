@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Användningsfall{#use-cases}
 
-## Analyserar en population {#analyzing-a-population}
+![](../../assets/common.svg)
+
+## Analysera en population {#analyzing-a-population}
 
 I följande exempel kan du utforska populationen som har en uppsättning nyhetsbrev som mål med hjälp av den beskrivande analysguiden.
 
@@ -67,7 +69,7 @@ I det här fallet väljer du histogrammet.
 
 Möjliga konfigurationer av de olika bilderna finns i avsnittet [alternativ för analysrapportdiagram](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
 
-### Konfigurerar statistiken för att beräkna {#configuring-the-statistic-to-calculate}
+### Konfigurera statistiken som ska beräknas {#configuring-the-statistic-to-calculate}
 
 Ange sedan de beräkningar som ska tillämpas på de insamlade uppgifterna. Som standard utför den beskrivande analysguiden ett enkelt antal värden.
 
@@ -269,7 +271,7 @@ Gör så här:
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
-## Analyserar undantagsloggar för leverans {#analyzing-delivery-exclusion-logs}
+## Analyserar exkluderingsloggar för leverans {#analyzing-delivery-exclusion-logs}
 
 Om analysen gäller en leverans kan du analysera den uteslutna populationen. Om du vill göra det väljer du de leveranser som ska analyseras och högerklickar för att öppna menyn **[!UICONTROL Action > Explore exclusions]**.
 

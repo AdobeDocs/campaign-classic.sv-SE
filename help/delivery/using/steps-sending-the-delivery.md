@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Konfigurera och skicka leveransen {#configuring-and-sending-the-delivery}
+
+![](../../assets/common.svg)
 
 >[!NOTE]
 >
@@ -41,7 +43,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-postmeddelanden på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 

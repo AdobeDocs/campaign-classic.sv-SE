@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # nyckelelement {#key--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-8}
 
@@ -32,7 +34,7 @@ nyckel:==nyckelfält
 
 `<element>`
 
-## Underordnade {#children-8}
+## Barn {#children-8}
 
 `<keyfield>`
 
@@ -42,7 +44,7 @@ Med det här elementet kan du definiera en nyckel för att identifiera en post i
 
 En tabell måste ha minst en nyckel.
 
-## Använd och använd {#use-and-context-of-use-6}
+## Användning och användningssammanhang {#use-and-context-of-use-6}
 
 Nycklar deklareras som regel efter huvudelementet i schemat och indexen.
 

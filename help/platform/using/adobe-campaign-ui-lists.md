@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Hantera och anpassa listor{#manage-and-customize-lists}
+
+![](../../assets/common.svg)
 
 Du kan komma åt listor med poster i Campaign-databasen med Utforskaren. Du kan filtrera dessa listor, köra sökningar, lägga till information, filtrera och sortera data.
 
@@ -39,7 +41,7 @@ Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICO
 >
 >Beroende på antalet poster kan tiden för inläsning av den fullständiga listan vara lång.
 
-### Ändra standardantalet poster {#change-default-number-of-records}
+### Ändra standardantal poster {#change-default-number-of-records}
 
 Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan.
 
@@ -196,7 +198,7 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ ste
 
 1. Klicka på **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
 
-### Söker efter element {#running-a-search}
+### Söka efter element {#running-a-search}
 
 Du kan köra en sökning i de tillgängliga fälten i en redigerare med hjälp av fältet **[!UICONTROL Search]** ovanför listan med fält. Tryck på **Enter** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
 

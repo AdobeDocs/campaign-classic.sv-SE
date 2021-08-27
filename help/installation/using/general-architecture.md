@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Allmän arkitektur{#general-architecture}
+
+![](../../assets/v7-only.svg)
 
 Den typiska driftsättningen av Adobe Campaign-lösningar består av följande komponenter:
 
@@ -119,7 +121,7 @@ Den här processen innehåller statistik om antalet anslutningar, de meddelanden
 >
 >Den fullständiga listan med Adobe Campaign-moduler finns i [det här dokumentet](../../production/using/operating-principle.md).
 
-## Beständiga lager {#persistence-layer}
+## Beständigt lager {#persistence-layer}
 
 Databasen används som ett beständigt lager och innehåller nästan all information som hanteras av Adobe Campaign. Detta omfattar både funktionell information (profiler, prenumerationer, innehåll osv.), teknisk information (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads).
 

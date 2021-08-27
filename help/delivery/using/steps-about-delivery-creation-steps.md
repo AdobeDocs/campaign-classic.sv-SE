@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # Om steg för att skapa leveranser {#about-delivery-creation}
+
+![](../../assets/common.svg)
 
 De viktigaste stegen när du skapar en leverans är följande:
 

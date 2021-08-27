@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Publicera på Facebook{#publishing-on-facebook}
+
+![](../../assets/v7-only.svg)
 
 När konfigurationen är klar kan du med Social Marketing publicera publikationer på Facebook-sidans väggar.
 
@@ -30,7 +32,7 @@ Skapa en ny leverans med leveransmallen **[!UICONTROL Publish to a brand page]**
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Välja huvudmålet {#selecting-the-main-target}
+## Välja huvudmål {#selecting-the-main-target}
 
 Du måste markera de sidor du vill publicera publikationen på.
 
@@ -90,7 +92,7 @@ Följande typer av leveranser är tillgängliga:
 * a **[!UICONTROL Status with a YouTube link]**
 * a **[!UICONTROL Photo album]**
 
-### Publicerar en status {#publishing-a-status}
+### Publicera en status {#publishing-a-status}
 
 Leverans av en statustyp kan bara innehålla text, som i exemplet nedan:
 
@@ -200,7 +202,7 @@ Spårningskonfigurationen är densamma som för en e-postleverans. Mer informati
 >
 >Spårning är aktiverat som standard i leveransmallen **[!UICONTROL Publish to a brand page]**.
 
-## Skicka korrektur {#sending-the-proof}
+## Skicka korrekturet {#sending-the-proof}
 
 Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att se exakt hur den återges på en privat testsida i Facebook. Mer information om hur du skapar en privat testsida för Facebook finns i [Skapa en testsida för Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Stegen för att välja provtryck finns i [Välja provmålet](#selecting-the-proof-target).
 

@@ -6,31 +6,33 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
 
 ---
 
-# Konfigurerar IMS{#configuring-ims}
+# Konfigurera IMS{#configuring-ims}
+
+![](../../assets/common.svg)
 
 >[!IMPORTANT]
 >
->Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna i Adobe. Kontakta din Adobe-chef för att starta implementeringsprocessen.
+>Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna på Adobe. Kontakta din Adobe-chef för att starta implementeringsprocessen.
 
 ## Förhandskrav {#prerequisites}
 
 Så här använder du integreringen med IMS:
 
 * Du måste ha en Adobe Experience Cloud-organisation och IMS-id (tillhandahålls när du ansluter till Adobe Experience Cloud första gången).
-* Du måste lägga till användare i Experience Cloud. Se denna [sida](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) för mer information om detta.
+* Du måste lägga till användare i Experience Cloud. Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!NOTE]
 >
 >Se till att dina användare är länkade till de Adobe Experience Cloud-grupper som ska synkroniseras med Adobe Campaign. Se [Konfigurera det externa kontot](#configuring-the-external-account).
 
-## Konsolen {#updating-the-console} uppdateras
+## Konsolen uppdateras {#updating-the-console}
 
 Om du vill använda den här funktionen måste du installera den senaste versionen av konsolen.
 
@@ -40,7 +42,7 @@ Du måste installera **[!UICONTROL Integration with the Adobe Experience Cloud]*
 
 ![](assets/ims_6.png)
 
-## Konfigurerar det externa kontot {#configuring-the-external-account}
+## Konfigurera det externa kontot {#configuring-the-external-account}
 
 Konfigurera det externa kontot **Adobe Experience Cloud** i **[!UICONTROL Administration > Platform > External accounts]**.
 

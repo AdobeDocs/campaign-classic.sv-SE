@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
@@ -37,11 +37,11 @@ ht-degree: 99%
       + [Version 18.4](rn/using/release--18-4.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
-   + [Tekniska anmärkningar](technotes/technote.md)
-   + [Uppdatering av iOS-certifikat](technotes/ios-certificate-update.md)
-   + [Konfigurationsuppdateringar i Campaign](technotes/acc-config-updates.md)
-   + [Uppdatering av spårade URL:er](technotes/tracked-urls.md)
-   + [IMS-uppdateringar](technotes/ims-updates.md)
+   + [Tekniska anmärkningar](technotes/using/technote.md)
+   + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
+   + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
+   + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
+   + [IMS-uppdateringar](technotes/using/ims-updates.md)
 + Komma igång {#getting-started}
    + Kom igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -118,7 +118,7 @@ ht-degree: 99%
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Integrering med Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
-         + [Så här migrerar du till Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Så här migrerar du till Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Hjälp- och supportalternativ](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
@@ -263,13 +263,13 @@ ht-degree: 99%
       + [Övervaka dina kampanjer](campaign/using/marketing-campaign-monitoring.md)
       + [Leverantörer, lager och budgetar](campaign/using/providers--stocks-and-budgets.md)
    + Kampanjoptimering {#campaign-optimization}
-      + [Om kampanjtypologier](campaign/using/about-campaign-typologies.md)
-      + [Tryckregler](campaign/using/pressure-rules.md)
-      + [Konsekvensregler](campaign/using/consistency-rules.md)
-      + [Kontrollregler](campaign/using/control-rules.md)
-      + [Filtreringsregler](campaign/using/filtering-rules.md)
-      + [Tillämpa regler](campaign/using/applying-rules.md)
-      + [Simuleringar i Campaign](campaign/using/campaign-simulations.md)
+      + [Om kampanjtypologier](campaign-opt/using/about-campaign-typologies.md)
+      + [Tryckregler](campaign-opt/using/pressure-rules.md)
+      + [Konsekvensregler](campaign-opt/using/consistency-rules.md)
+      + [Kontrollregler](campaign-opt/using/control-rules.md)
+      + [Filtreringsregler](campaign-opt/using/filtering-rules.md)
+      + [Tillämpa regler](campaign-opt/using/applying-rules.md)
+      + [Simuleringar i Campaign](campaign-opt/using/campaign-simulations.md)
 + Hantera marknadsföringsresurser {#mrm}
    + [Om att hantera marknadsföringsresurser](mrm/using/about-marketing-resource-management.md)
    + [Skapa och hantera uppgifter](mrm/using/creating-and-managing-tasks.md)
@@ -277,19 +277,19 @@ ht-degree: 99%
    + [Hantera marknadsföringsresurser](mrm/using/managing-marketing-resources.md)
    + [Diskussionsforum](mrm/using/discussion-forums.md)
 + Distribuerad marknadsföring {#distributed-marketing}
-   + [Om distribuerad marknadsföring](campaign/using/about-distributed-marketing.md)
-   + [Skapa en lokal kampanj](campaign/using/creating-a-local-campaign.md)
-   + [Skapa en samverkanskampanj](campaign/using/creating-a-collaborative-campaign.md)
-   + [Publicera kampanjpaketet](campaign/using/publishing-the-campaign-package.md)
-   + [Åtkomst till kampanjer](campaign/using/accessing-campaigns.md)
-   + [Spåra en kampanj](campaign/using/tracking-a-campaign.md)
-   + [Användningsfall](campaign/using/examples.md)
+   + [Om distribuerad marknadsföring](distributed/using/about-distributed-marketing.md)
+   + [Skapa en lokal kampanj](distributed/using/creating-a-local-campaign.md)
+   + [Skapa en samverkanskampanj](distributed/using/creating-a-collaborative-campaign.md)
+   + [Publicera kampanjpaketet](distributed/using/publishing-the-campaign-package.md)
+   + [Åtkomst till kampanjer](distributed/using/accessing-campaigns.md)
+   + [Spåra en kampanj](distributed/using/tracking-a-campaign.md)
+   + [Användningsfall](distributed/using/examples.md)
 + Responshanteraren {#response-manager}
-   + [Kom igång med responshanteraren](campaign/using/about-response-manager.md)
-   + [Konfiguration](campaign/using/configuration.md)
-   + [Hypotesmallar](campaign/using/hypothesis-templates.md)
-   + [Skapa hypoteser](campaign/using/creating-hypotheses.md)
-   + [Spårning av hypoteser](campaign/using/hypothesis-tracking.md)
+   + [Kom igång med responshanteraren](response/using/about-response-manager.md)
+   + [Konfiguration](response/using/configuration.md)
+   + [Hypotesmallar](response/using/hypothesis-templates.md)
+   + [Skapa hypoteser](response/using/creating-hypotheses.md)
+   + [Spårning av hypoteser](response/using/hypothesis-tracking.md)
 + Designa och dela rapporter {#reporting}
    + Kom igång med rapportering {#reporting-in-adobe-campaign}
       + [Rapporteringsverktyg](reporting/using/about-adobe-campaign-reporting-tools.md)

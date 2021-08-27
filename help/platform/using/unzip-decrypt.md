@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Zippa upp eller dekryptera en fil {#unzipping-or-decrypting-a-file-before-processing}
+
+![](../../assets/common.svg)
 
 Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas in i en [datainläsning (fil)](../../workflow/using/data-loading--file-.md)-aktivitet kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
 

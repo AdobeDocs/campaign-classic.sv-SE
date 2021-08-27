@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
 
 # Allmänna konfigurationer{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 om du migrerar från en v5.11 eller en v6.02.
 
@@ -24,7 +26,7 @@ Dessutom:
 
 ## Tidszoner {#time-zones}
 
-### Läge för flertidszon {#multi-time-zone-mode}
+### Läge för flera tidszoner {#multi-time-zone-mode}
 
 I v6.02 var läget &quot;multi time zone&quot; bara tillgängligt för PostgreSQL-databasmotorer. Det erbjuds nu oavsett vilken typ av databasmotor som används. Vi rekommenderar att du omvandlar din bas till en&quot;multi-timezone&quot;-bas.
 
@@ -438,7 +440,7 @@ Synkroniseringsresultatet kan visas på två sätt:
 
 * Filen **postupgrade_`<server version number>`_time of postupgrade`>`.log** innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installationskatalog/var/`<instance>`efteruppgradering**. Fel och varningar indikeras av attributen **error** och **varning**.
 
-### Lös en konflikt {#resolve-a-conflict}
+### Lösa en konflikt {#resolve-a-conflict}
 
 Lösning av konflikter får endast utföras av avancerade operatorer och sådana som har fått administratörsbehörighet.
 
@@ -660,7 +662,7 @@ allowUserPassword="false"
 sessionTokenOnly="false"
 ```
 
-### Anonyma webbprogram {#anonymous-web-applications}
+### Anonyma webbapplikationer {#anonymous-web-applications}
 
 Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
 

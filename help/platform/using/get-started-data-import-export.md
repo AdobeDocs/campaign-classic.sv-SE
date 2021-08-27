@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # Kom igång med dataimport och export {#get-started-data-import-export}
+
+![](../../assets/common.svg)
 
 Adobe Campaign Classic har funktioner för datahantering som gör att du kan importera och exportera data. Dessa åtgärder kan utföras med antingen arbetsflöden eller generiska import- och exporteringar.
 

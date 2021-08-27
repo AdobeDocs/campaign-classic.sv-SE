@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Transaktionsmeddelandens arkitektur {#transactional-messaging-architecture}
+
+![](../../assets/v7-only.svg)
 
 Transaktionsmeddelanden bygger på en specifik arkitektur som består av flera instanser:
 
@@ -126,7 +128,7 @@ Create your delivery templates the way you would for an email campaign:
 
 You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
-### Push-meddelanden för transaktioner {#transactional-messaging-and-push-notifications}
+### Push-transaktionsmeddelanden {#transactional-messaging-and-push-notifications}
 
 I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 

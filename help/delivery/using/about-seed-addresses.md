@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # Om dirigerade adresser{#about-seed-addresses}
+
+![](../../assets/common.svg)
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör.
 
@@ -45,7 +47,5 @@ Vid direktutskick läggs startadresser till under extraheringen och blandas i ut
 >
 >* Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Om elementsamlingar extraheras har dessa fält ett tomt värde för startadresserna, såvida inte alternativet **[!UICONTROL Single row (expert user)]** är markerat. Mer information om detta finns i [det här avsnittet](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
-
 >
-
 

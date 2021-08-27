@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Datascheman{#data-schemas}
+
+![](../../assets/common.svg)
 
 Nedan följer några allmänna principer för användningen av datarotor i Adobe Campaign.
 
@@ -122,7 +124,7 @@ I vårt exempel är elementen **`<chapter>`** och **`<page>`** samlingselement. 
 >
 >Om det finns ett **ordered=&quot;true&quot;**-attribut kan du ordna de infogade samlingselementen.
 
-## Elementet refererar till {#element-referencing}
+## Elementreferens {#element-referencing}
 
 Elementreferenser används ofta i innehållsscheman. Det gör att du kan faktorisera definitionen av ett **`<element>`**-element så att det kan refereras till andra element med samma struktur.
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Installera paket med Linux{#installing-packages-with-linux}
+
+![](../../assets/v7-only.svg)
 
 Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Linux. Installera 64-bitarsversionen av Adobe Campaign för en 64-bitarsplattform för Linux.
 
@@ -298,7 +300,7 @@ När Adobe Campaign inte startas är svaret:
 no task
 ```
 
-## Första start av servern {#first-start-up-of-the-server}
+## Serverns första start {#first-start-up-of-the-server}
 
 När installationstestet är klart anger du följande kommando:
 
@@ -353,7 +355,7 @@ Därefter visas följande information:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Lösenord för den interna identifieraren {#password-for-the-internal-identifier}
+## Lösenord för intern identifierare {#password-for-the-internal-identifier}
 
 Adobe Campaign-servern definierar en teknisk inloggning med namnet **internal** som har alla rättigheter för alla instanser. Precis efter installationen har inloggningen inget lösenord. Det är obligatoriskt att definiera en.
 

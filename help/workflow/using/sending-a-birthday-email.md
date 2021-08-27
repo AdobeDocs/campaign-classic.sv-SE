@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Skicka ett födelsedagsmeddelande{#sending-a-birthday-email}
+
+![](../../assets/common.svg)
 
 ## Introduktion {#introduction}
 
@@ -31,14 +33,14 @@ Det gör du genom att skapa en kampanj och klicka på fliken **[!UICONTROL Targe
 
 Följ sedan dessa steg:
 
-## Schemalägger sändning {#configuring-the-scheduler}
+## Schemalägga sändning {#configuring-the-scheduler}
 
 1. Lägg först till en **schemaläggare** som utlöser sändning varje dag. I exemplet nedan skapas leveransen varje dag kl. 6.00.
 
    ![](assets/recur_delivery2.png)
 
 
-## Identifiera mottagare vars födelsedag är {#identifying-recipients-whose-birthday-it-is}
+## Identifiera mottagare vars födelsedag det är {#identifying-recipients-whose-birthday-it-is}
 
 När du har konfigurerat aktiviteten **[!UICONTROL Scheduler]** så att arbetsflödet startar varje dag, identifierar du alla mottagare vars födelsedatum är lika med det aktuella datumet.
 
@@ -124,7 +126,7 @@ När du har konfigurerat aktiviteten **[!UICONTROL Scheduler]** så att arbetsfl
 
 Väljer mottagare vars födelsedag motsvarar det aktuella datumet visas i avsnittet [Identifiera mottagare vars födelsedag är](#identifying-recipients-whose-birthday-it-is).
 
-### Steg 2: Välj om det är ett skottår {#step-2--select-whether-or-not-it-is-a-leap-year} eller inte
+### Steg 2: Välj om det är ett skottår eller inte {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 Med aktiviteten **[!UICONTROL Test]** kan du kontrollera om det är ett skottår och om det aktuella datumet är den 1 mars eller inte.
 
@@ -196,13 +198,13 @@ Kombinera resultaten med en **[!UICONTROL Union]**-aktivitet.
 
 Länka resultaten från de två **[!UICONTROL Test]** aktivitetsgrenarna till en **[!UICONTROL Email delivery]**-aktivitet för att skicka ett e-postmeddelande till listan över alla dina mottagare på deras födelsedag, även till dem som föddes den 29 februari under ett år utan hopp.
 
-## Skapar en återkommande leverans {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Skapa en återkommande leverans {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
 Lägg till en **Återkommande leverans**-aktivitet baserat på e-postmallen för födelsedagar som du vill skicka.
 
 >[!CAUTION]
 >
->För att arbetsflödena ska kunna köras måste de tekniska arbetsflödena för Campaign-paketet startas. Mer information finns i avsnittet [Lista över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
+>För att arbetsflödena ska kunna köras måste de tekniska arbetsflödena för Campaign-paketet startas. Mer information finns i avsnittet [Lista över tekniska arbetsflöden](about-technical-workflows.md).
 >
 >Om godkännandestegen är aktiverade för kampanjen skickas leveranserna först när dessa steg har bekräftats. Mer information finns i avsnittet [Välja de processer som ska godkännas](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 

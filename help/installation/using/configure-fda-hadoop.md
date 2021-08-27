@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -15,12 +15,14 @@ ht-degree: 1%
 
 # Konfigurera åtkomst till Hadoopet {#configure-access-to-hadoop}
 
+![](../../assets/v7-only.svg)
+
 Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Hadoopet.
 
 1. Konfigurera [Hadoopets databas](#configuring-hadoop)
 1. Konfigurera Hadoopet [externt konto](#hadoop-external) i Campaign
 
-## Konfigurerar Hadoop 3.0 {#configuring-hadoop}
+## Konfigurera Hadoop 3.0 {#configuring-hadoop}
 
 För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurationer på Adobe Campaign-servern. Observera att den här konfigurationen är tillgänglig för både Windows och Linux.
 

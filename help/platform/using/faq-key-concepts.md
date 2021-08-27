@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 97%
@@ -14,6 +14,8 @@ ht-degree: 97%
 ---
 
 # Viktiga begrepp {#key-concepts}
+
+![](../../assets/common.svg)
 
 Lär dig viktiga steg för att komma igång med Adobe Campaign.
 
@@ -114,7 +116,7 @@ Läs [checklistan för säkerhetskonfiguration](https://helpx.adobe.com/se/campa
 
 ## Hur översätter jag ett felmeddelande? {#how-to-translate-an-error-message-}
 
-Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html).
+Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv).
 
 ## Kan jag skapa ett webbformulär och samla svar i Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # JavaScript-skript och mallar{#javascript-scripts-and-templates}
+
+![](../../assets/common.svg)
 
 Skript gör det möjligt att beräkna värden, utbyta data mellan olika uppgifter i processen och att utföra specifika åtgärder med SOAP-anrop.
 
@@ -65,11 +67,11 @@ Klicka på **[!UICONTROL OK]** för att stänga guiden och starta sedan arbetsfl
 
 Variablerna är de kostnadsfria egenskaperna för objekten **[!UICONTROL instance]**, **[!UICONTROL task]** och **[!UICONTROL event]**. De JavaScript-typer som är tillåtna för dessa variabler är **[!UICONTROL string]**, **[!UICONTROL number]** och **[!UICONTROL Date]**.
 
-### Instansvariabler {#instance-variables}
+### Förekomstvariabler {#instance-variables}
 
 Instansvariablerna (**[!UICONTROL instance.vars.xxx]**) är jämförbara med globala variabler. De delas av alla aktiviteter.
 
-### Aktivitetsvariabler {#task-variables}
+### Uppgiftsvariabler {#task-variables}
 
 Aktivitetsvariablerna (**[!UICONTROL task.vars.xxx]**) är jämförbara med lokala variabler. De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
 
@@ -79,17 +81,17 @@ Händelsevariablerna (**[!UICONTROL vars.xxx]**) möjliggör datautbyte mellan d
 
 >[!CAUTION]
 >
->När det gäller [AND-join](../../workflow/using/and-join.md)-typaktiviteter sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är obestämt.
+>När det gäller [AND-join](and-join.md)-typaktiviteter sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är obestämt.
 
 Händelsen är de vanligaste variablerna och bör användas i stället för förekomstvariabler.
 
-Vissa händelsevariabler ändras eller läses av de olika aktiviteterna. Dessa är alla strängtypsvariabler. En export ställer till exempel in variabeln **[!UICONTROL vars.filename]** med det fullständiga namnet på filen som just har exporterats. Alla dessa lästa eller ändrade variabler beskrivs i [Om aktiviteter](../../workflow/using/about-activities.md) i avsnitten **Indataparametrar** och **Utdataparametrar** för aktiviteterna.
+Vissa händelsevariabler ändras eller läses av de olika aktiviteterna. Dessa är alla strängtypsvariabler. En export ställer till exempel in variabeln **[!UICONTROL vars.filename]** med det fullständiga namnet på filen som just har exporterats. Alla dessa lästa eller ändrade variabler beskrivs i [Om aktiviteter](about-activities.md) i avsnitten **Indataparametrar** och **Utdataparametrar** för aktiviteterna.
 
 ### Användningsfall {#example}
 
 >[!NOTE]
 >
->Fler arbetsflödesanvändningsexempel finns i [det här avsnittet](../../workflow/using/about-workflow-use-cases.md).
+>Fler arbetsflödesanvändningsexempel finns i [det här avsnittet](about-workflow-use-cases.md).
 
 **Exempel 1**
 

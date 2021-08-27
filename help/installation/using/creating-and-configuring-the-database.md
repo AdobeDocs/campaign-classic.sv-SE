@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Skapa och konfigurera databasen{#creating-and-configuring-the-database}
+
+![](../../assets/v7-only.svg)
 
 När du skapar en databas finns det två olika alternativ i Adobe Campaign:
 
@@ -28,7 +30,7 @@ Konfigurationsstegen beskrivs nedan.
 >
 >Det är bara identifieraren **internal** som kan utföra dessa åtgärder. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## Fall 1: Skapar/återanvänder en databas {#case-1--creating-recycling-a-database}
+## Fall 1: Skapa/återvinna en databas {#case-1--creating-recycling-a-database}
 
 Stegen för att skapa en databas eller återvinna en befintlig bas beskrivs nedan. Vissa konfigurationer beror på vilken databasmotor som används:
 
@@ -41,7 +43,7 @@ Följande steg ingår:
 * [Steg 5 - Skapa steg](#step-5---creation-steps),
 * [Steg 6 - Skapa databasen](#step-6---creating-the-database).
 
-### Steg 1 - Välj databasmotorn {#step-1---selecting-the-database-engine}
+### Steg 1 - Välja databasmotor {#step-1---selecting-the-database-engine}
 
 Välj databasmotorn bland dem i listrutan.
 
@@ -78,7 +80,7 @@ Om du vill göra det anger du namnet och lösenordet för ett **administratörss
 * **** postgresfor a PostgreSQL database,
 * **db2inst1** för en DB2-databas.
 
-### Steg 3 - Anslutning och egenskaper för databasen {#step-3---connection-and-characteristics-of-the-database}
+### Steg 3 - Databasens anslutning och egenskaper {#step-3---connection-and-characteristics-of-the-database}
 
 I följande steg kan du konfigurera inställningarna för inloggning i databasen.
 
@@ -115,7 +117,7 @@ Se licensavtalet för att se vilka lösningar och alternativ du har rätt att in
 
 ![](assets/s_ncs_install_modules.png)
 
-### Steg 5 - skapa steg {#step-5---creation-steps}
+### Steg 5 - Skapa steg {#step-5---creation-steps}
 
 I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skriptet som används för att skapa tabellerna.
 
@@ -214,7 +216,7 @@ Se licensavtalet för att se vilka lösningar och alternativ du har rätt att in
 
 ![](assets/s_ncs_install_modules.png)
 
-### Steg 4 - skapa steg {#step-4---creation-steps}
+### Steg 4 - Skapa steg {#step-4---creation-steps}
 
 I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skriptet som används för att skapa tabellerna.
 

@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2972'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Indikatorberäkning {#indicator-calculation}
+
+![](../../assets/common.svg)
 
 ## Användaraktiviteter {#user-activities-1}
 
@@ -50,7 +52,7 @@ ht-degree: 1%
 
 Den här rapporten baseras på tabellen **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Den här sammanställda tabellen används av prestandaskäl när rapporter visas, i stället för tabellen **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), och den beräknas inte i realtid. Tabellen genereras några minuter efter att spårningsloggarna har hämtats. Om indikatorerna är aktuella blir resultatet samma som för indikatorerna i **spårningsindikatorerna**-rapporten. Indikatorn @totalclicks uttrycker det totala antalet klick under en femminutersperiod.
 
-## Ej levererbara filer och studsningar {#non-deliverables-and-bounces-1}
+## Ej levererbara och studsningar {#non-deliverables-and-bounces-1}
 
 **Uppdelning efter feltyp**
 
@@ -340,7 +342,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:deliver
  </tbody> 
 </table>
 
-## Statistik för delningsaktiviteter {#statistics-on-sharing-activities-1}
+## Statistik om delningsaktiviteter {#statistics-on-sharing-activities-1}
 
 Den här rapporten baseras på tabellerna **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) och **[!UICONTROL Web tracking]** (nms:webTrackingLog).
 
@@ -562,13 +564,13 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
   </tr> 
   <tr> 
    <td> Öppnar<br /> </td> 
-   <td> @receiveÖppna<br /> </td> 
+   <td> @recipientOpen<br /> </td> 
    <td> Antal alla @broadLog-id i alla spårningsloggar.<br /> </td> 
    <td> Motskild ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klicka<br /> </td> 
-   <td> @receiveClick<br /> </td> 
+   <td> @recipientClick<br /> </td> 
    <td> Distinkt antal @broadLog-id med en URL-typ som är lika med "Email click". <br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
@@ -580,7 +582,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
   </tr> 
   <tr> 
    <td> distinkta klickningar på populationen uppnåddes<br /> </td> 
-   <td> @personKlicka<br /> </td> 
+   <td> @personClick<br /> </td> 
    <td> Antal alla @source-id med en URL-kategori som är lika med "Email click".<br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @source-id, 0))<br /> </td> 
   </tr> 
@@ -689,7 +691,7 @@ Den här rapporten baseras på tabellerna **[!UICONTROL Delivery and tracking st
  </tbody> 
 </table>
 
-## URL:er och klickbara strömmar {#urls-and-click-streams-1}
+## URL:er och klickströmmar {#urls-and-click-streams-1}
 
 Den här rapporten baseras på tabellen **[!UICONTROL Delivery]** (nms:delivery).
 
@@ -736,7 +738,7 @@ Den här rapporten baseras på tabellen **[!UICONTROL Delivery]** (nms:delivery)
  </tbody> 
 </table>
 
-## Sammanfattning av leverans {#delivery-summary-1}
+## Leveranssammanfattning {#delivery-summary-1}
 
 Den här rapporten baseras på tabellen **[!UICONTROL Delivery]** (nms:delivery).
 
@@ -789,7 +791,7 @@ Den här rapporten baseras på tabellen **[!UICONTROL Delivery]** (nms:delivery)
  </tbody> 
 </table>
 
-## Snabbklickningar {#hot-clicks-1}
+## Snabbklick {#hot-clicks-1}
 
 Den här rapporten baseras på tabellerna Delivery(nms:delivery) och **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
@@ -846,7 +848,7 @@ Den här rapporten baseras på tabellen **[!UICONTROL Delivery and tracking stat
  <tbody> 
   <tr> 
    <td> E-postmeddelanden som bearbetats<br /> </td> 
-   <td> @bearbetad<br /> </td> 
+   <td> @processed<br /> </td> 
    <td> Totalt antal meddelanden med en status som är lika med "Klart", "Skickat" eller "Misslyckat".<br /> </td> 
    <td> @preparerad + @error + @success<br /> </td> 
   </tr> 
@@ -889,7 +891,7 @@ Den här rapporten baseras på tabellen **[!UICONTROL Delivery and tracking stat
  </tbody> 
 </table>
 
-## Uppdelning av öppningar {#breakdown-of-opens-1}
+## Indelning av öppningar {#breakdown-of-opens-1}
 
 Den här rapporten baseras på tabellerna **Leveranser** (nms:delivery) och **spårningsloggar** (nms:trackingLogRcp).
 
@@ -916,17 +918,17 @@ Den här rapporten baseras på tabellerna **Leveranser** (nms:delivery) och **sp
 
 Indikatorn **Skickat** (@skickat), som nås via noden **Leveranser (nms:delivery) > Indikatorer**, motsvarar det totala antalet SMS som skickas till tjänstleverantören. Den här indikatorn används endast för SMS-leveranser och får inte användas för andra typer av leveranser (ska inte förväxlas med indikatorerna **@success** och **@processed**).
 
-## Indikatorsynkronisering {#indicator-synchronization}
+## Synkronisering av indikator {#indicator-synchronization}
 
 Om vissa indikatorer inte är synkroniserade eller inte överensstämmer väljer du den aktuella leveransen i Utforskaren i Adobe Campaign, högerklickar och väljer **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klicka på **[!UICONTROL Next]** och sedan på **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
-## Spårning öppnas {#tracking-opens-}
+## Spårningsöppningar {#tracking-opens-}
 
 För att Adobe Campaign ska kunna upptäcka att ett meddelande öppnas måste mottagaren hämta bilderna i e-postmeddelandet. HTML och Multipart/Alternative emails innehåller en bild på 0 pixlar, som gör att du kan identifiera meddelanden som har öppnats. Eftersom meddelanden i textformat inte innehåller några bilder går det inte att se om de har öppnats eller inte. Värden som beräknas baserat på det meddelande som öppnas är alltid uppskattningar på grund av den felmarginal som är länkad till bildvisningen.
 
-## Målpersoner/mottagare {#targeted-persons---recipients}
+## Målgrupper/mottagare {#targeted-persons---recipients}
 
 I vissa rapporter skiljer Adobe Campaign ut målgruppsanpassade personer och målgruppsinriktade mottagare.
 

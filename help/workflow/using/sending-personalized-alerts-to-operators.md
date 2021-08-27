@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Skicka personaliserade aviseringar till operatörer{#sending-personalized-alerts-to-operators}
+
+![](../../assets/common.svg)
 
 I det här exemplet vill vi skicka en varning till en operator som ska innehålla namnet på profiler som öppnade ett nyhetsbrev men som inte klickade på länken som det innehåller.
 
@@ -28,7 +30,7 @@ Processen är att skapa ett arbetsflöde enligt nedan:
 
 ![](assets/uc_operator_1.png)
 
-## Sparar populationen i instansvariabeln {#saving-the-population-to-the-instance-variable}
+## Spara populationen i instansvariabeln {#saving-the-population-to-the-instance-variable}
 
 Lägg till koden nedan i aktiviteten **[!UICONTROL JavaScript code]**.
 
@@ -65,7 +67,7 @@ Följ stegen nedan för att hämta informationen:
 
    ![](assets/uc_operator_6.png)
 
-## Testa populationsantalet {#testing-the-population-count}
+## Testning av populationsantal {#testing-the-population-count}
 
 Lägg till koden nedan i aktiviteten **[!UICONTROL Test]** för att kontrollera om målpopulationen innehåller minst en profil.
 

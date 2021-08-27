@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Tekniska e-postkonfigurationer{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## Översikt {#overview}
 
@@ -42,7 +44,7 @@ Detta är vad modulen **stat** gör: den vidarebefordrar alla anslutningsbegära
 
 ### Leveransservrar {#delivery-servers}
 
-Modulen **mta** distribuerar meddelanden till de underordnade modulerna **mtachild**. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
+Modulen **mta** distribuerar meddelanden till dess **mtachild** underordnade moduler. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
 
 Stegen är följande:
 
@@ -75,7 +77,7 @@ Leveransstatistik finns för varje mål-MX och för varje käll-IP. Om måldomä
 
 Källans IP-adress matchar den offentliga IP-adressen, dvs. adressen som den visas av fjärre-postservern. Den här IP-adressen kan skilja sig från adressen för den dator som är värd för **mta**, om en NAT-router anges. Det är därför statistikservern använder en identifierare som matchar det offentliga IP-värdet (**publicId**). Associationen mellan den lokala adressen och den här identifieraren deklareras i konfigurationsfilen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-## Leveransutdata som styr {#delivery-output-controlling}
+## Leveransstyrning {#delivery-output-controlling}
 
 För att kunna leverera meddelanden till e-postservrar begär **Email Traffic Shaper**-komponenten en anslutning från statistikservern. När begäran har godkänts öppnas anslutningen.
 
@@ -115,7 +117,7 @@ Statistikservern kan användas av flera instanser: den måste konfigureras obero
 
 Börja med att definiera den Adobe Campaign-databas som ska vara värd för konfigurationen.
 
-### Starta konfigurationen {#start-configuration}
+### Starta konfiguration {#start-configuration}
 
 Som standard startas modulen **stat** för varje instans. När instanser mutualiseras på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
 
@@ -208,7 +210,7 @@ Dessa meddelanden kommer att levereras så snabbt som möjligt.
 
 ![](assets/s_ncs_traffic_shaping.png)
 
-### Konfigurerar MX-hantering {#configuring-mx-management}
+### Konfigurera MX-hantering {#configuring-mx-management}
 
 Reglerna som ska följas för MX definieras i **[!UICONTROL MX management]**-dokumentet för **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**-noden i trädet.
 
@@ -229,7 +231,7 @@ Om du vill läsa in konfigurationen på nytt utan att starta om statistikservern
 >
 >Den här kommandoraden är att föredra framför **omstart av nlserver**. Den förhindrar att statistik som samlats in innan omstarten går förlorad och undviker toppar som kan gå mot kvoter som definieras i MX-reglerna.
 
-### Konfigurerar MX-regler {#configuring-mx-rules}
+### Konfigurera MX-regler {#configuring-mx-rules}
 
 I **[!UICONTROL MX management]**-dokumentet visas alla domäner som är länkade till en MX-regel.
 
@@ -339,7 +341,7 @@ Det här alternativet används särskilt av den japanska marknaden för **Deco-m
 
 Klockorna för alla servrar som utgör Adobe Campaign-plattformen (inklusive databasen) måste synkroniseras och deras system måste vara inställda på samma tidszon.
 
-### Koordinater för statistikservern {#coordinates-of-the-statistics-server}
+### Statistikserverns koordinater {#coordinates-of-the-statistics-server}
 
 Statistikserverns adress måste anges i **mta**.
 
@@ -408,7 +410,7 @@ Om till exempel den första adressen inte kan användas för ett givet MX, skick
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-## Optimering av e-postsändning {#email-sending-optimization}
+## Optimering av e-postutskick {#email-sending-optimization}
 
 Adobe Campaign interna arkitektur **mta** påverkar konfigurationen för optimering av e-postleverans. Här är några tips om hur du kan förbättra dina leveranser.
 

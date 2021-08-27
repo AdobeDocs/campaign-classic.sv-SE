@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Arbeta med datapaket{#working-with-data-packages}
+
+![](../../assets/common.svg)
 
 ## Om datapaket {#about-data-packages}
 
@@ -23,7 +25,7 @@ Med datapaket kan enheter i databasen i Adobe Campaign visas via filer i XML-for
 
 Principen med **datapaket** är att exportera en datakonfiguration och integrera den i ett annat Adobe Campaign-system. Lär dig hur du upprätthåller en konsekvent uppsättning datapaket i det här [avsnittet](#data-package-best-practices).
 
-### Typer av paket {#types-of-packages}
+### Typ av paket {#types-of-packages}
 
 Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket och administratörspaket.
 
@@ -247,7 +249,7 @@ Du kan sedan lägga till enheter i paketdefinitionen och exportera den till ett 
 * [Konfigurera generering av paketdefinitioner](#configuring-package-definitions-generation)
 * [Exportera paket från en paketdefinition](#exporting-packages-from-a-package-definition)
 
-### Lägg till entiteter i en paketdefinition {#adding-entities-to-a-package-definition}
+### Lägga till entiteter i en paketdefinition {#adding-entities-to-a-package-definition}
 
 På fliken **[!UICONTROL Content]** klickar du på knappen **[!UICONTROL Add]** för att markera de enheter som ska exporteras med paketet. De bästa sätten att välja enheter visas i [det här avsnittet](#exporting-a-set-of-objects-in-a-package).
 
@@ -267,7 +269,7 @@ Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen
 
    ![](assets/packagedefinition_entityadded.png)
 
-### Konfigurera paketdefinitionsgenerering {#configuring-package-definitions-generation}
+### Konfigurera generering av paketdefinitioner {#configuring-package-definitions-generation}
 
 Paketgenerering kan konfigureras från fliken för paketdefinitionen **[!UICONTROL Content]**. Det gör du genom att klicka på länken **[!UICONTROL Generation parameters]**.
 
@@ -390,7 +392,7 @@ Därför rekommenderar vi att du skapar ett uppdateringspaket som bara innehåll
 
 En uppdatering kan inte bara vara en korrigering, utan även ett nytt element i ditt enhets-/funktions-/kampanjpaket. Du kan undvika att distribuera hela paketet genom att exportera ett uppdateringspaket.
 
-### Namngivningskonventioner {#data-package-naming}
+### Namnkonventioner {#data-package-naming}
 
 Nu när typerna är definierade bör vi ange en namnkonvention. Adobe Campaign tillåter inte att du skapar undermappar för paketspecifikationer, vilket innebär att tal är den bästa lösningen för att hålla ordning. Numreringsprefixpaketnamn. Du kan använda följande konvention:
 
@@ -417,7 +419,7 @@ För att underlätta importen bör entitetspaketen sorteras när de importeras. 
 >
 >Forms bör endast importeras efter schemauppdateringar.
 
-#### Paket 200 {#package-200}
+#### Package 200 {#package-200}
 
 Paketnummer 200 ska inte användas för en viss kampanj: det här numret kommer att användas för att uppdatera något som gäller alla kampanjer.
 

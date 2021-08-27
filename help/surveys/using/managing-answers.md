@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # Hantera svar{#managing-answers}
 
+![](../../assets/v7-only.svg)
+
 ## Lagra insamlade svar {#storing-collected-answers}
 
-Förutom de vanliga lagringslägena som är gemensamma för alla webbformulär i Adobe Campaign (databasfält och lokal variabel), möjliggör enkäter den dynamiska utökningen av datamodellen med arkiverade fält.
+Förutom de vanliga lagringslägena som är gemensamma för alla webbformulär i Adobe Campaign (databasfält och lokal variabel), möjliggör enkäter det dynamiska tillägget av datamodellen med arkiverade fält.
 
 >[!CAUTION]
 >

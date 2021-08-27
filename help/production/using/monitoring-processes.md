@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Övervaka processer{#monitoring-processes}
+
+![](../../assets/v7-only.svg)
 
 Programservern och omdirigeringsservern (**spårning**) kan övervakas manuellt eller automatiskt.
 
@@ -259,8 +261,7 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 >
 
 
-
-### SMTP skickar statistik {#smtp-sending-statistics}
+### SMTP-överföringsstatistik {#smtp-sending-statistics}
 
 Med **[!UICONTROL SMTP sending statistics]**-rapporten kan du styra serveraktiviteten. Den visar en syntes av varje dator.
 
@@ -382,7 +383,7 @@ stat@prod
 wfserver@prod
 ```
 
-### Information publicerad av servern {#information-published-by-the-server}
+### Information som publiceras av servern {#information-published-by-the-server}
 
 #### /r/test {#r-test}
 
@@ -567,7 +568,7 @@ Det här elementet används för att fylla i konfigurationen av e-postmeddelande
 >
 >Attributet **persistHtmlFile** med värdet &quot;true&quot; för elementet **`<property>`** används för att registrera den senaste övervakningsstatusen i filen **netreport.md**. Filen sparas i installationskatalogen.
 
-#### &#39;Instance&#39;-element {#instance--element}
+#### Instance-element {#instance--element}
 
 Med det här elementet kan du gruppera om flera datorer (värdar) till samma instans. Instansnamnen visas i den första delen av övervaknings-e-postmeddelandet. Du kan klicka på namnet på en instans för att få information om varje dator.
 
@@ -625,7 +626,7 @@ Om du vill konfigurera den redigerar du den här filen och anger vilken katalog 
 
 Om du vill starta övervakning kör du filen **netreport.bat** eller **netreport.sh** med regelbundna intervall via ett skript. En rapport skickas efter den första körningen och sedan endast om statusen ändras.
 
-### Testar övervakning {#testing-monitoring}
+### Testövervakning {#testing-monitoring}
 
 Testa övervakningen genom att köra filen **netreport.bat** eller **netreport.sh**.
 

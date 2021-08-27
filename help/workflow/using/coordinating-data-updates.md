@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Koordinera datauppdateringar{#coordinating-data-updates}
+
+![](../../assets/common.svg)
 
 I det här användningsexemplet beskrivs hur du skapar ett arbetsflöde där du kan hantera komponentuppdateringar när du använder flera körningar av ett arbetsflöde.
 
@@ -53,5 +55,5 @@ Följ stegen nedan för att skapa arbetsflödet:
 
 **Relaterade ämnen:**
 
-* [Förhindra samtidiga körningar](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
-* [Uppdatera dataaktivitet](../../workflow/using/update-data.md)
+* [Förhindra samtidiga körningar](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
+* [Uppdatera dataaktivitet](update-data.md)

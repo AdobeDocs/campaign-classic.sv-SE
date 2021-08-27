@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Databasmappning{#database-mapping}
+
+![](../../assets/v7-only.svg)
 
 SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
@@ -174,7 +176,7 @@ Indexen följer följande regler:
    </srcSchema>
    ```
 
-## Hantering av nycklar {#management-of-keys}
+## Nyckelhantering {#management-of-keys}
 
 En tabell måste ha minst en nyckel för att identifiera en post i tabellen.
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Skicka e-post till japanska mobiler {#sending-emails-on-japanese-mobiles}
+
+![](../../assets/common.svg)
 
 ## E-postformat för japanska mobiler {#email-formats-for-japanese-mobiles}
 
@@ -74,7 +76,7 @@ Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar
 
 Med den här typologiregeln kan du se till att leveransen respekterar de [formatbegränsningar](#limitations-and-recommendations) som definieras av de japanska operatorerna, särskilt i relation till den totala storleken på e-postmeddelandet, storleken på HTML- och textavsnitten, antalet bilder i meddelandena samt taggarna i HTML-innehållet.
 
-### Skicka korrektur {#sending-proofs}
+### Skicka bevis {#sending-proofs}
 
 Du kan skicka korrektur för att testa leveransen. När du skickar korrekturet anger du adresser som motsvarar e-postformatet för den profil som används, om du använder ersättningsadresser.
 

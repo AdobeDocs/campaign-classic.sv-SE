@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Installera och uppdatera Campaign-klientkonsolen{#installing-the-client-console}
+
+![](../../assets/v7-only.svg)
 
 Campaign Client Console är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar.
 
@@ -32,7 +34,7 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 >
 >Kampanjklientkonsolen och Campaign-programservern måste köra **på samma produktversion**. Adobe rekommenderar också att du använder **samma produktbygge**. Lär dig hur du kontrollerar dina Campaign Client- och Server-versioner i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-## Implementeringar för värdbaserade Adobe {#hosted-customers}
+## Implementeringar via Adobe Hosted {#hosted-customers}
 
 Lägger till en värdkund har du två alternativ för att installera eller uppdatera klientkonsolerna:
 
@@ -106,7 +108,7 @@ Användare bör nu hämta och installera konsolen genom att följa stegen nedan:
 1. Hämta och spara klientinstallationsfilen.
 1. Kör den hämtade filen på en dator i Windows: Installationen startar. Standardinstallationssökvägen för klientkonsolen är **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, där X är 6 eller 7 enligt din Adobe Campaign-version.
 
-### Skapa anslutningen - endast första gången användare{#create-the-connection}
+### Skapa anslutningen - endast för första gången{#create-the-connection}
 
 När klientkonsolen har installerats följer du stegen nedan för att skapa anslutningen till programservern:
 

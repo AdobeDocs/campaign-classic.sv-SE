@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Om social marknadsföring{#about-social-marketing}
+
+![](../../assets/v7-only.svg)
 
 Programmet **Hantera sociala nätverk** (Social Marketing) som är utformat för att hantera sociala nätverk gör att du kan interagera med kunder och potentiella kunder via Facebook och Twitter.
 

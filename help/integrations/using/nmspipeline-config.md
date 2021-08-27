@@ -4,7 +4,7 @@ title: Konfigurera integreringen
 description: Konfigurera integreringen
 audience: integrations
 content-type: reference
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 
 
 # Pipelinealternativet NmsPipeline_Config {#nmspipeline_config}
+
+![](../../assets/common.svg)
 
 När autentiseringen fungerar kan [!DNL pipelined] hämta händelserna och bearbeta dem. Den behandlar endast utlösare som har konfigurerats i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och flyttats till pipeline i förväg.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
@@ -66,13 +68,13 @@ Det andra exemplet fångar upp alla utlösare.
 >
 >UID-värdet [!DNL Trigger] till ett specifikt utlösarnamn i Analytics-gränssnittet finns som en del av URL-frågesträngsparametrarna i utlösargränssnittet. triggerType-UID skickas i pipeline-dataströmmen och kod kan skrivas till pipeline.JS för att mappa utlösar-UID till en användarvänlig etikett som kan lagras i en utlösarnamnskolumn i pipelineEvents-schemat.
 
-## Konsumentparametern {#consumer-parameter}
+## Parametern Consumer {#consumer-parameter}
 
 Rörledningen fungerar med en modell som&quot;leverantör och konsument&quot;. Det kan finnas många konsumenter i samma kö. Meddelanden&quot;förbrukas&quot; endast av en enskild kund. Varje konsument får sin egen&quot;kopia&quot; av budskapen.
 
 Parametern&quot;Consumer&quot; identifierar förekomsten som en av dessa konsumenter. Det är identiteten på instansen som anropar pipelinen. Du kan fylla den med instansnamnet. Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument. Genom att använda olika konsumenter för olika instanser ser du till att alla meddelanden skickas till varje instans.
 
-## Konfigurera alternativet för pipeline {#configure-pipeline-option}
+## Konfigurera alternativet Pipeline {#configure-pipeline-option}
 
 Lägg till eller redigera Experience Cloud-utlösare under arrayen&quot;triggers&quot;, redigera inte resten.
 Kontrollera att JSON är giltig med hjälp av denna [webbplats](http://jsonlint.com/).

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Starta ett arbetsflöde {#starting-a-workflow}
 
-Ett arbetsflöde startas alltid manuellt. När den startas kan den dock förbli inaktiv beroende på den information som anges via en schemaläggare (se [Schemaläggare](../../workflow/using/scheduler.md)) eller aktivitetsplanering.
+![](../../assets/common.svg)
+
+Ett arbetsflöde startas alltid manuellt. När den startas kan den dock förbli inaktiv beroende på den information som anges via en schemaläggare (se [Schemaläggare](scheduler.md)) eller aktivitetsplanering.
 
 Åtgärder för att målinrikta arbetsflödeskörning (starta, stoppa, pausa osv.) är **asynkrona** processer: beställningen registreras och träder i kraft så snart servern är tillgänglig för att använda den.
 
@@ -25,7 +27,7 @@ Listan med tillgängliga alternativ på **[!UICONTROL Actions]**-menyn och höge
 
 >[!IMPORTANT]
 >
->Tänk på att när en operator utför en åtgärd i ett arbetsflöde (starta, stoppa, pausa osv.) utförs inte åtgärden direkt, utan i stället placeras i en kö för att kunna bearbetas av [arbetsflödesmodulen](../../workflow/using/architecture.md).
+>Tänk på att när en operator utför en åtgärd i ett arbetsflöde (starta, stoppa, pausa osv.) utförs inte åtgärden direkt, utan i stället placeras i en kö för att kunna bearbetas av [arbetsflödesmodulen](architecture.md).
 
 ## Verktygsfältet Åtgärder {#actions-toolbar}
 
@@ -57,7 +59,7 @@ Verktygsfältsknapparna beskrivs i det här [avsnittet](../../campaign/using/mar
 
 * **[!UICONTROL Purge history]**
 
-   Med den här åtgärden kan du rensa arbetsflödeshistoriken. Mer information finns i [Rensa loggarna](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Med den här åtgärden kan du rensa arbetsflödeshistoriken. Mer information finns i [Rensa loggarna](monitoring-workflow-execution.md#purging-the-logs).
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -91,7 +93,7 @@ Följande alternativ är tillgängliga på högerklicksmenyn:
 
 **[!UICONTROL Open]**: Med det här alternativet kan du komma åt aktivitetsegenskaperna.
 
-**[!UICONTROL Display logs:]** Med det här alternativet kan du visa loggen för uppgiftskörning för den valda aktiviteten. Se [Visa loggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** Med det här alternativet kan du visa loggen för uppgiftskörning för den valda aktiviteten. Se [Visa loggar](monitoring-workflow-execution.md#displaying-logs).
 
 **[!UICONTROL Execute pending task(s) now:]** Med den här åtgärden kan du starta väntande uppgifter så snart som möjligt.
 
@@ -101,7 +103,7 @@ Följande alternativ är tillgängliga på högerklicksmenyn:
 
 **[!UICONTROL Copy as bitmap:]** Med det här alternativet kan du ta en skärmbild av alla aktiviteter.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** Dessa alternativ är också tillgängliga på  **[!UICONTROL Advanced]** fliken för aktivitetsegenskaperna. De beskrivs i [Körning](../../workflow/using/advanced-parameters.md#execution).
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** Dessa alternativ är också tillgängliga på  **[!UICONTROL Advanced]** fliken för aktivitetsegenskaperna. De beskrivs i [Körning](advanced-parameters.md#execution).
 
 **[!UICONTROL Save / Cancel:]** Med kan du spara eller avbryta ändringar som gjorts i ett arbetsflöde.
 

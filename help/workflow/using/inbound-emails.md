@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Inkommande e-postmeddelanden{#inbound-emails}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **Inkommande e-post** kan du hämta och bearbeta e-postmeddelanden från en POP3-e-postserver.
 
@@ -68,7 +70,7 @@ På den första fliken i aktiviteten **Inkommande e-post** kan du ange parametra
 
    Om du vill definiera ett schema för aktiviteten klickar du på fliken **[!UICONTROL Scheduling]** och markerar **[!UICONTROL Plan execution]**. Klicka på knappen **[!UICONTROL Change]** för att konfigurera schemat.
 
-   Schemaläggningskonfigurationen är densamma som för schemaläggningsaktiviteten. Se [Schemaläggaren](../../workflow/using/scheduler.md).
+   Schemaläggningskonfigurationen är densamma som för schemaläggningsaktiviteten. Se [Schemaläggaren](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
@@ -76,4 +78,4 @@ På den första fliken i aktiviteten **Inkommande e-post** kan du ange parametra
 
    ![](assets/email_rec_edit_3.png)
 
-   Konfigurationen är densamma som för schemaläggningsaktiviteten. Se [Förfallodatum](../../workflow/using/defining-approvals.md).
+   Konfigurationen är densamma som för schemaläggningsaktiviteten. Se [Förfallodatum](defining-approvals.md).

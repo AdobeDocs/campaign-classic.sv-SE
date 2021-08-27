@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 8%
@@ -15,13 +15,15 @@ ht-degree: 8%
 
 # Borttappat lösenord{#lost-password}
 
+![](../../assets/v7-only.svg)
+
 Du kan ändra eller återställa ett förlorat lösenord.
 Det finns två möjliga scenarier:
 
 * [Lösenord som gått förlorat av en Adobe Campaign-operatör](#password-lost-by-campaign-operator)
 * [Internt lösenord har gått förlorat](#internal-password-lost)  (endast lokala kunder)
 
-## Lösenordet har gått förlorat av en kampanjoperator {#password-lost-by-campaign-operator}
+## Lösenord som har gått förlorat av en kampanjoperator {#password-lost-by-campaign-operator}
 
 Om en Adobe Campaign-operator förlorar sitt lösenord kan du ändra det.
 Följ stegen nedan för att göra detta:
@@ -34,7 +36,7 @@ Följ stegen nedan för att göra detta:
 
 1. Ange operatorns nya lösenord. Vi rekommenderar att operatorn ändrar sitt lösenord när han/hon först ansluter igen.
 
-## Det interna lösenordet har tagits bort {#internal-password-lost}
+## Lösenordet har tagits bort {#internal-password-lost}
 
 >[!NOTE]
 >

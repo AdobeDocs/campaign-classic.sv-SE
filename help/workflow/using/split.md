@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # Dela{#split}
 
+![](../../assets/common.svg)
+
 Med en **aktivitet av typen Dela** kan du dela upp ett mål i flera deluppsättningar. Målet konstrueras med alla mottagna resultat: Alla tidigare aktiviteter måste därför ha avslutats för att denna aktivitet ska kunna utföras.
 
 Denna aktivitet utlöser inte någon union av inkommande populationer. Om flera övergångar landar i en delad aktivitet rekommenderar vi att du infogar en **[!UICONTROL Union]**-aktivitet framför den.
 
-Ett exempel på den delade aktivitet som används finns i [Skapa delmängder med aktiviteten Dela](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity).
+Ett exempel på den delade aktivitet som används finns i [Skapa delmängder med aktiviteten Dela](targeting-data.md#creating-subsets-using-the-split-activity).
 
-Ett exempel som illustrerar hur du använder den delade aktiviteten för att segmentera målet i olika populationer med filtervillkor beskrivs i [det här avsnittet](../../workflow/using/cross-channel-delivery-workflow.md).
+Ett exempel som illustrerar hur du använder den delade aktiviteten för att segmentera målet i olika populationer med filtervillkor beskrivs i [det här avsnittet](cross-channel-delivery-workflow.md).
 
-Ett exempel som visar hur du använder en instansvariabel i en delad aktivitet finns i [det här avsnittet](../../workflow/using/javascript-scripts-and-templates.md).
+Ett exempel som visar hur du använder en instansvariabel i en delad aktivitet finns i [det här avsnittet](javascript-scripts-and-templates.md).
 
 Om du vill konfigurera den här aktiviteten definierar du delmängdens innehåll och etikett på fliken **[!UICONTROL Subsets]** och väljer sedan måldimensionen på fliken **[!UICONTROL General]**.
 
-## Skapar delmängder {#creating-subsets}
+## Skapa delmängder {#creating-subsets}
 
 Så här skapar du en delmängd:
 
@@ -124,7 +126,7 @@ Om du till exempel väljer fältet **[!UICONTROL Language]** som ett gruppfält 
 
 Om grupperingsfälten innehåller för många värden eller om du vill undvika att återställa värden för varje ny delad aktivitet, kan du skapa en begränsning per datadistribution i Adobe Campaign. När du väljer datagränsvärden (mer information om det här ämnet finns i avsnittet [Skapa delmängder](#creating-subsets)) väljer du alternativet **[!UICONTROL By data distribution]** och väljer en mall i listrutan. Nedan visas hur du skapar en mall för datadistribution.
 
-Ett exempel på **[!UICONTROL Local approval]**-aktiviteten med en distributionsmall finns i [Använda den lokala godkännandeaktiviteten](../../workflow/using/using-the-local-approval-activity.md).
+Ett exempel på **[!UICONTROL Local approval]**-aktiviteten med en distributionsmall finns i [Använda den lokala godkännandeaktiviteten](using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
    * **[!UICONTROL Targeting dimension]**: Ange måldimensionen som datafördelningen ska tillämpas på,  **[!UICONTROL Recipient]** till exempel. Det här schemat måste alltid vara kompatibelt med de data som används i målarbetsflödet.
    * **[!UICONTROL Distribution field]**: markera ett fält via måldimensionen. Om du till exempel markerar fältet **[!UICONTROL Email domain]** kommer listan över mottagare att delas upp efter domän.
    * **[!UICONTROL Distribution type]**: Välj hur målets begränsningsvärde ska brytas ned på  **[!UICONTROL Distribution]** fliken:  **[!UICONTROL Percentage]** eller  **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: välj tilldelningstypen för datadistribution. Du kan välja mellan tilldelning efter grupp eller operator eller tilldelning efter lokal enhet. Tilldelning med lokal enhet används i **Distributed Marketing**. Mer information finns i [avsnittet](../../campaign/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: Om du använder en  **[!UICONTROL Local approval]** aktivitet i målarbetsflödet (se  [Lokalt godkännande](../../workflow/using/local-approval.md)) anger du det schema som godkännanderesultaten ska lagras i. Du måste ange ett lagringsschema per målschema. Om du använder målschemat **[!UICONTROL Recipients]** anger du standardlagringsschemat för **[!UICONTROL Local approval of recipients]**.
+   * **[!UICONTROL Assignment type]**: välj tilldelningstypen för datadistribution. Du kan välja mellan tilldelning efter grupp eller operator eller tilldelning efter lokal enhet. Tilldelning med lokal enhet används i **Distributed Marketing**. Mer information finns i [avsnittet](../../distributed/using/about-distributed-marketing.md).
+   * **[!UICONTROL Approval storage]**: Om du använder en  **[!UICONTROL Local approval]** aktivitet i målarbetsflödet (se  [Lokalt godkännande](local-approval.md)) anger du det schema som godkännanderesultaten ska lagras i. Du måste ange ett lagringsschema per målschema. Om du använder målschemat **[!UICONTROL Recipients]** anger du standardlagringsschemat för **[!UICONTROL Local approval of recipients]**.
 
       Om en enkel begränsning är för datagruppen utan lokalt godkännande behöver du inte ange fältet **[!UICONTROL Approvals storage]**.
 
-1. Om du använder en **[!UICONTROL Local approval]**-aktivitet (se [Lokalt godkännande](../../workflow/using/local-approval.md)) anger du **[!UICONTROL Advanced settings]** för distributionsmallen:
+1. Om du använder en **[!UICONTROL Local approval]**-aktivitet (se [Lokalt godkännande](local-approval.md)) anger du **[!UICONTROL Advanced settings]** för distributionsmallen:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
       Den här kolumnen definieras av fältet **[!UICONTROL Distribution type]** på fliken **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: Ange den etikett som är länkad till varje värde.
-   * **[!UICONTROL Group or operator]**: Om du använder en  **[!UICONTROL Local approval]** aktivitet (se  [Lokalt godkännande](../../workflow/using/local-approval.md)) väljer du den operator eller grupp av operatorer som tilldelats varje distributionsvärde.
+   * **[!UICONTROL Group or operator]**: Om du använder en  **[!UICONTROL Local approval]** aktivitet (se  [Lokalt godkännande](local-approval.md)) väljer du den operator eller grupp av operatorer som tilldelats varje distributionsvärde.
 
       Om en enkel begränsning är för datagruppen utan lokalt godkännande behöver du inte ange fältet **[!UICONTROL Group or operator]**.
 
@@ -197,7 +199,7 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
       >
       >Se till att operatorerna har tilldelats rätt behörighet.
 
-   * **[!UICONTROL Local entity]**: välj den lokala entitet som tilldelats varje distributionsvärde. Lokala enheter används i **Distribuerad marknadsföring**. Mer information finns i [avsnittet](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: välj den lokala entitet som tilldelats varje distributionsvärde. Lokala enheter används i **Distribuerad marknadsföring**. Mer information finns i [avsnittet](../../distributed/using/about-distributed-marketing.md).
 
 ## Filtreringsparametrar {#filtering-parameters}
 

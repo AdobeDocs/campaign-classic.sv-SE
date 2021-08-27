@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Live- och designmiljöer{#live-design-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -36,7 +38,7 @@ Som standard levereras Interaction med en **[!UICONTROL Design]**-miljö och en 
 
 Erbjudandeansvariga och leveranschefer har tillgång till olika miljövyer. Leveransansvariga kan bara visa erbjudandemiljön **[!UICONTROL Live]** och använda erbjudanden för att leverera dem. Erbjudandehanterare kan visa och ändra **[!UICONTROL Design]**-miljön och visa **[!UICONTROL Live]**-miljön. Mer information finns i [Operatorprofiler](../../interaction/using/operator-profiles.md).
 
-## Skapar en erbjudandemiljö {#creating-an-offer-environment}
+## Skapa en erbjudandemiljö {#creating-an-offer-environment}
 
 Som standard levereras Interaction med en förkonfigurerad miljö för att rikta sig till mottagartabellen (identifierade erbjudanden). Om du vill ha en annan tabell som mål (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda följande konfigurationer:
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # Konfigurera leveransinställningar {#delivery-settings}
+
+![](../../assets/v7-only.svg)
 
 Leveransparametrarna måste konfigureras i mappen **serverConf.xml**.
 
@@ -45,7 +47,7 @@ I det här fallet anges dessa parametrar genom att SMTP-servern konfigureras i *
 >
 >Det här operativläget innebär allvarliga leveransbegränsningar eftersom det kan minska genomströmningen avsevärt på grund av reläserverns inneboende prestanda (latens, bandwith...). Dessutom kommer kapaciteten att kvalificera synkrona leveransfel (som upptäcks genom analys av SMTP-trafik) att vara begränsad och det går inte att skicka om reläservern inte är tillgänglig.
 
-## MTA-underordnade processer {#mta-child-processes}
+## MTA-underprocesser {#mta-child-processes}
 
 Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
 

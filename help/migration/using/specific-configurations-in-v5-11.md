@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Specifika konfigurationer i version 5.11{#specific-configurations-in-v5-11}
+
+![](../../assets/v7-only.svg)
 
 I det här avsnittet beskrivs den ytterligare konfiguration som krävs vid migrering från v5.11. Du bör även konfigurera inställningarna som anges i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md).
 
@@ -104,9 +106,9 @@ Tre olika lägen finns tillgängliga:
 >
 >Mer information om dessa tre lägen finns i [det här avsnittet](../../configuration/using/about-web-tracking.md).
 
-## Adobe Campaign v7-trädstruktur {#campaign-vseven-tree-structure}
+## Trädstruktur för Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
-Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
+Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen, och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
 
 Ett alternativ har lagts till för att inaktivera automatisk migrering av navigeringsträdet. Den här åtgärden är nu manuell. Föråldrade mappar tas inte bort och nya mappar läggs inte till. Det här alternativet bör endast användas om det färdiga v5-navigeringsträdet har genomgått för många ändringar. Lägg till alternativet i konsolen innan du migrerar i noden **[!UICONTROL Administration > Options]**:
 

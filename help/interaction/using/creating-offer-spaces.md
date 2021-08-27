@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Skapa erbjudandeplatser{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 Det går endast att skapa utrymme för erbjudandet av en **teknisk administratör** med åtkomst till undermappen för erbjudandeutrymme. Utrymmen kan bara skapas i designmiljön och dupliceras automatiskt till den aktiva miljön när erbjudandet godkänns.
 
@@ -138,7 +140,7 @@ Så snart en besökare klickar på erbjudandet, och därmed URL:en, tillämpas s
 >
 >Om du vill ange en annan status på URL:en (till exempel om ett erbjudande avvisas) använder du värdet som motsvarar önskad status. Exempel: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; och så vidare.
 >
->Statuser och deras värden kan hämtas i **[!UICONTROL Offer propositions (nms)]**-dataschemat. Se denna [sida](../../configuration/using/data-schemas.md) för mer information om detta.
+>Statuser och deras värden kan hämtas i **[!UICONTROL Offer propositions (nms)]**-dataschemat. Mer information finns på [den här sidan](../../configuration/using/data-schemas.md).
 
 **Utgående interaktion**
 
@@ -148,7 +150,7 @@ Om det gäller en utgående interaktion kan du automatiskt tillämpa **[!UICONTR
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## Förhandsgranska per blanksteg {#offer-preview-per-space}
+## Förhandsgranska per utrymme {#offer-preview-per-space}
 
 På den här fliken kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offerter via post.
 

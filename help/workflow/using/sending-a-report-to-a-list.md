@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Skicka en rapport till en lista{#sending-a-report-to-a-list}
+
+![](../../assets/common.svg)
 
 Här finns information om hur du skapar en månadsvis **[!UICONTROL Tracking indicators]**-rapport i PDF-format och hur du skickar den till en lista med mottagare.
 
@@ -25,7 +27,7 @@ De viktigaste implementeringsstegen för det här användningsexemplet är:
 * Skapa en leveransmall som gör att du kan generera en ny leverans varje gång arbetsflödet körs (se: [Steg 2: Skapar leveransmallen](#step-2--creating-the-delivery-template)).
 * Skapa ett arbetsflöde som gör att du kan generera rapporten i PDF-format och skicka den till listan över mottagare (se: [Steg 3: Skapar arbetsflödet](#step-3--creating-the-workflow)).
 
-## Steg 1: Skapar mottagarlistan {#step-1--creating-the-recipient-list}
+## Steg 1: Skapa mottagarlistan {#step-1--creating-the-recipient-list}
 
 Gå till fliken **[!UICONTROL Profiles and targets]**, klicka på länken **[!UICONTROL Lists]** och sedan på knappen **[!UICONTROL Create]**. Välj **[!UICONTROL New list]** och skapa en ny mottagarlista för rapporten som ska skickas till.
 
@@ -33,7 +35,7 @@ Gå till fliken **[!UICONTROL Profiles and targets]**, klicka på länken **[!UI
 
 Mer information om hur du skapar listor finns i det här [avsnittet](../../platform/using/creating-and-managing-lists.md).
 
-## Steg 2: Skapar leveransmallen {#step-2--creating-the-delivery-template}
+## Steg 2: Skapa leveransmallen {#step-2--creating-the-delivery-template}
 
 1. Gå till noden **[!UICONTROL Resources > Templates > Delivery templates]** i Adobe Campaign Utforskaren och duplicera mallen **[!UICONTROL Email delivery]** som inte är installerad.
 
@@ -71,7 +73,7 @@ Mer information om hur du skapar listor finns i det här [avsnittet](../../platf
 
       ![](assets/use_case_report_6bis.png)
 
-## Steg 3: Skapar arbetsflödet {#step-3--creating-the-workflow}
+## Steg 3: Skapa arbetsflödet {#step-3--creating-the-workflow}
 
 Följande arbetsflöde skapades för det här användningsfallet. Den har tre verksamheter:
 
@@ -89,7 +91,7 @@ Följande arbetsflöde skapades för det här användningsfallet. Den har tre ve
 
    ![](assets/use_case_report_9.png)
 
-   Mer information om hur du konfigurerar schemaläggaren finns i [Schemaläggaren](../../workflow/using/scheduler.md).
+   Mer information om hur du konfigurerar schemaläggaren finns i [Schemaläggaren](scheduler.md).
 
 1. Lägg sedan till en **[!UICONTROL JavaScript code]**-typaktivitet.
 

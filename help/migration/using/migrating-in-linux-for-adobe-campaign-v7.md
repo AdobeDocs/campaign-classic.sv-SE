@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Migrera Adobe Campaign 7 i Linux{#migrating-in-linux-for-adobe-campaign-v}
 
-## Allmän procedur {#general-procedure}
+![](../../assets/v7-only.svg)
+
+## Allmänt förfarande {#general-procedure}
 
 Migreringsstegen i Linux är följande:
 
@@ -143,7 +145,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrerar från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Logga in som **neolane** och gör en säkerhetskopia av katalogen **nl6** med följande kommando:
@@ -239,7 +241,7 @@ I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.02- eller v6.1
       rprm -ev nlserver6 nlthirdparty6
       ```
 
-## Distribuerar Adobe Campaign v7 {#deploying-adobe-campaign-v7}
+## Distribuera Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
@@ -448,7 +450,7 @@ Så här distribuerar du Adobe Campaign:
    >
    >Flertidszonsläget var endast tillgängligt i v6.02 för PostgreSQL-databasmotorer. Det är nu tillgängligt oavsett vilken version av databasmotorn som används. Vi rekommenderar starkt att du uppgraderar din bas till&quot;multi-timezone&quot;. Mer information om tidszonsalternativ finns i avsnittet [Tidszoner](../../migration/using/general-configurations.md#time-zones).
 
-### Migrerar från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
+### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
 
 Distribuera Adobe Campaign i två steg:
 
@@ -512,7 +514,7 @@ Så här distribuerar du Adobe Campaign:
    nlserver config -postupgrade -instance:<instance name>
    ```
 
-## Migrerar omdirigeringsservern (Apache) {#migrating-the-redirection-server--apache-}
+## Migrera omdirigeringsservern (Apache) {#migrating-the-redirection-server--apache-}
 
 >[!NOTE]
 >
@@ -574,7 +576,7 @@ I det här skedet måste Apache stoppas. Se: [Tjänststopp](#service-stop).
 
 Om du migrerar från v6.02 eller tidigare måste du konfigurera dina säkerhetszoner innan du startar tjänster. Mer information finns i [Säkerhet](../../migration/using/general-configurations.md#security).
 
-## Tjänster startas om {#re-starting-services}
+## Tjänster som startas om {#re-starting-services}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
@@ -640,7 +642,7 @@ Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 Testa den nya installationen fullständigt, kontrollera att den inte går tillbaka och se till att allt fungerar korrekt genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md).
 
-### Migrerar från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
+### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
 
 Starta Apache och Adobe Campaign på var och en av följande servrar:
 

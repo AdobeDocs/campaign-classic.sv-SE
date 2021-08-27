@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # Skärningspunkt{#intersection}
 
+![](../../assets/common.svg)
+
 En aktivitet av typen **Skärning** skapar ett mål från skärningspunkten för de mottagna målen.
 
 Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas innan skärningen kan utföras. Om du vill konfigurera den här aktiviteten måste du ange en etikett för den samt alternativ för resultatet.
 
 ![](assets/s_user_segmentation_inter.png)
 
-Mer information om hur du konfigurerar och använder skärningsaktiviteten finns i [Extrahera leddata (skärning)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
+Mer information om hur du konfigurerar och använder skärningsaktiviteten finns i [Extrahera leddata (skärning)](targeting-data.md#extracting-joint-data--intersection-).
 
 Markera alternativet **[!UICONTROL Generate complement]** om du vill bearbeta den återstående populationen. Komplementet ska innehålla en kombination av resultaten av alla inkommande aktiviteter minus skärningspunkten. En ytterligare utgående övergång läggs sedan till i aktiviteten enligt följande:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
-## Skärningsexempel {#intersection-example}
+## Exempel på skärning {#intersection-example}
 
 I följande exempel är syftet med skärningen att beräkna mottagarna som är gemensamma för tre enkla frågor för att skapa en lista.
 

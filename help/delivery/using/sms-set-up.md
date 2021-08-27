@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 35%
@@ -15,11 +15,13 @@ ht-degree: 35%
 
 # Konfigurera SMS-kanal {#setting-up-sms-channel}
 
+![](../../assets/common.svg)
+
 Om du vill skicka till en mobiltelefon behöver du:
 
 1. Ett externt konto som anger en koppling och typ av meddelande.
 
-   Observera att äldre anslutningar nu är inaktuella. Det finns fortfarande funktioner som inte längre används, men de kommer inte att förbättras ytterligare eller stödjas. Läs mer [på den här sidan](../../rn/using/deprecated-features.md).
+   Observera att äldre anslutningar nu är inaktuella. De föråldrade funktionerna är fortfarande tillgängliga, men de kommer inte att förbättras ytterligare eller stödjas. Läs mer [på den här sidan](../../rn/using/deprecated-features.md).
 
 1. En leveransmall där det här externa kontot refereras.
 
@@ -143,7 +145,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 

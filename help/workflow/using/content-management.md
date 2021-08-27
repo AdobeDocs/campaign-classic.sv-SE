@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Innehållshantering{#content-management}
+
+![](../../assets/common.svg)
 
 Med en **Content management**-aktivitet kan du skapa och ändra ett innehåll och generera filer baserat på det här innehållet. Innehållet kan sedan levereras via en &#39;Delivery&#39;-aktivitet.
 

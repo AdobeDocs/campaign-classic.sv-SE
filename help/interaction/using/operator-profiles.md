@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 # Operatörsprofiler{#operator-profiles}
 
+![](../../assets/v7-only.svg)
+
 Det finns två typer av operatorer som använder Interaction: erbjuder chefer och leveransansvariga. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
 
 * **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i operatorgruppen **[!UICONTROL Administrator]** eller **[!UICONTROL Offer managers]** för att arbetsflödet ska kunna köras.
@@ -22,7 +24,7 @@ Det finns två typer av operatorer som använder Interaction: erbjuder chefer oc
 
 Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Mer information om detta finns i [det här avsnittet](../../platform/using/access-management.md). Rättigheterna konfigureras när operatorn skapas.
 
-## Erbjudandehanteraren {#offer-manager}
+## Erbjudandehanterare {#offer-manager}
 
 1. Skapa en ny operator.
 1. Gå till fönstret **[!UICONTROL Groups and named rights]**, klicka på **[!UICONTROL Add]** och välj gruppen **[!UICONTROL Offer manager]**.
@@ -60,7 +62,7 @@ Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem at
    >
    >Leveranshanteraren kan bara godkänna ett erbjudande om han har definierats som granskare under konfigurationen av erbjudandet.
 
-## Rättighetsåterbetalning enligt operator {#recap-of-rights-according-to-operator}
+## Återvinning av rättigheter enligt operatör {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
@@ -105,7 +107,7 @@ Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem at
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Regler för typologi<br /> </td> 
+   <td> Typologiregler<br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -165,7 +167,7 @@ Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem at
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Regler för typologi<br /> </td> 
+   <td> Typologiregler<br /> </td> 
    <td> </td> 
    <td> Läs<br /> </td> 
   </tr> 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Dataextrahering (fil){#extraction-file}
+
+![](../../assets/common.svg)
 
 Du kan extrahera data från en arbetsflödestabell i en extern fil med aktiviteten **[!UICONTROL Data extraction (file)]**.
 
@@ -48,7 +50,7 @@ Så här konfigurerar du dataextrahering:
 
 Du kan definiera en efterprocess som ska köras under dataextraheringen så att du kan komprimera eller kryptera filerna. För att göra detta måste det önskade kommandot läggas till på aktivitetens **[!UICONTROL Script]**-flik.
 
-Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Bästa tillvägagångssätt för kuber{#concepts-and-methodology}
+
+![](../../assets/common.svg)
 
 ## Databindning {#data-binning}
 
@@ -66,7 +68,7 @@ Så här skapar du den här typen av värdebindning:
 
    När uppräkningsvärdena uppdateras anpassas de matchande binderna automatiskt.
 
-### Skapar värdeintervall {#creating-value-ranges}
+### Skapa värdeintervall {#creating-value-ranges}
 
 Du kan gruppera värdena i intervall baserat på önskat intervall.
 
@@ -196,7 +198,7 @@ Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyt
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### Konfigurerar visningen {#configuring-the-display}
+### Konfigurera visningen {#configuring-the-display}
 
 Mätningarna, linjerna och kolumnerna kan konfigureras individuellt för varje mått eller totalt. En specifik ikon ger dig åtkomst till markeringsfönstret för visningsläge.
 

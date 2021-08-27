@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Leveransrapporter {#delivery-reports}
+
+![](../../assets/common.svg)
 
 Du kan spåra leveransen via olika rapporter som du når via leveransöversikten. Gör så här för att visa rapporter:
 
@@ -116,7 +118,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 I det här avsnittet visas antalet meddelanden som delas i alla sociala nätverk. Mer information finns i [Dela till sociala nätverk](../../reporting/using/global-reports.md#sharing-to-social-networks).
 
-## URL:er och klickbara strömmar {#urls-and-click-streams}
+## URL:er och klickströmmar {#urls-and-click-streams}
 
 Den här rapporten innehåller en lista över besökta sidor efter en leverans.
 
@@ -146,7 +148,7 @@ Den centrala tabellen innehåller följande information:
 
 I det här diagrammet visas indelningen av kumulerade klickningar per dag.
 
-## Sammanfattning av leverans {#delivery-summary}
+## Leveranssammanfattning {#delivery-summary}
 
 Den här rapporten innehåller all huvudinformation om leveransen.
 
@@ -172,7 +174,7 @@ Detta avsnitt innehåller följande indikatorer:
 * **[!UICONTROL Errors]** : Totalt antal fel som ackumulerats under leveranser och automatisk återinläsning. Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
 * **[!UICONTROL New quarantines]** : Antal adresser i karantän efter misslyckad leverans (okänd användare, ogiltig domän). Den associerade frekvensen är förhållandet till antalet meddelanden som ska levereras.
 
-## Snabbklickningar {#hot-clicks}
+## Snabbklick {#hot-clicks}
 
 Den här rapporten visar meddelandeinnehållet (HTML och/eller text) med procentandelen klickningar på länkar för varje länk. Personalisering blockerar prenumerationslänkar, länkar till spegelsidor och erbjudandelänkar som tas med i beräkningen i det totala antalet klickningar, men visas inte i rapporten.
 

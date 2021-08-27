@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
 
 ---
 
-# Starta och sluta{#start-and-end}
+# Start och slut{#start-and-end}
+
+![](../../assets/common.svg)
 
 Med aktiviteterna **[!UICONTROL Start]** och **[!UICONTROL End]** kan du grafiskt markera början och slutet av ett arbetsflöde. Dessa aktiviteter har ingen funktionell inverkan och är därför valfria.
 

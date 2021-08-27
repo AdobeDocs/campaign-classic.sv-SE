@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Formulärstruktur{#form-structure}
+
+![](../../assets/v7-only.svg)
 
 Beskrivningen av ett formulär är ett strukturerat XML-dokument som observerar formulärschemats grammatik **xtk:form**.
 
@@ -25,7 +27,7 @@ XML-dokumentet i indataformuläret måste innehålla rotelementet `<form>` med a
 </form>
 ```
 
-Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema**-attributet för `<form>`-elementet till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat&quot;cus:mottagare&quot;:
+Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema**-attributet för `<form>`-elementet till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -156,7 +158,7 @@ Exempel med tillägget &quot;xpath&quot; i elementet &quot;location&quot;:
 </container>
 ```
 
-### Typer av behållare {#types-of-container}
+### Behållartyper {#types-of-container}
 
 Behållare används för att skapa komplexa kontroller med hjälp av en uppsättning fält som är formaterade på sidor.
 
@@ -235,7 +237,7 @@ Exempel på villkorssyntax:
 * **visibleIf=&quot;@kön >= 1 och @kön != 2&quot;**: villkor för ett numeriskt värde.
 * **visibleIf=&quot;@boolean1=true eller @boolean2=false&quot;**: test on Boolean fields.
 
-#### Aktiverar behållare {#enabling-container}
+#### Aktivera behållare {#enabling-container}
 
 Med den här behållaren kan du aktivera eller inaktivera en uppsättning data från ett dynamiskt villkor. Om du inaktiverar en kontroll kan du inte redigera den. I följande exempel visas aktiveringen av kontroller från värdet i fältet Genus:
 
@@ -308,7 +310,7 @@ Du kan även sortera listan med elementet **`<orderby>`**:
 * **noZoom**: inget redigeringsformulär på länken (med värdet &quot;true&quot;)
 * **formulär**: överför målelementets redigeringsform
 
-## Lista över länkar {#list-of-links}
+## Länklista {#list-of-links}
 
 En länk som anges i dataschemat som ett samlingselement (unbound=&quot;true&quot;) måste gå igenom en lista för att alla element som är associerade med den ska kunna visas.
 
@@ -547,7 +549,7 @@ Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck; taggen **`<i
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
 ```
 
-## Kontext för formulär {#context-of-forms}
+## Formulärsammanhang {#context-of-forms}
 
 Körningen av ett inmatningsformulär initierar ett XML-dokument som innehåller data för enheten som redigeras. Det här dokumentet representerar formulärets kontext och kan användas som en arbetsyta.
 

@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Skapa ett Facebook-program{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 Tack vare webbapplikationer kan ni med Social Marketing visa personaliserat innehåll i era Facebook-applikationer, vilket gör det enklare att hitta potentiella kunder via detta sociala nätverk. Fler exempel på webbprogram av Facebook-typ finns i [Exempel på Facebook-program](../../social/using/examples-of-facebook-apps.md).
 
@@ -90,7 +92,7 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
 
    ![](assets/social_webapp_fb_013.png)
 
-## Ange länkar för användarvillkor och sekretesspolicy {#entering-the-terms-of-service-and-privacy-policy-links}
+## Ange länkar till användarvillkor och sekretesspolicy {#entering-the-terms-of-service-and-privacy-policy-links}
 
 Vi rekommenderar att du lägger till länkarna **[!UICONTROL Terms of service]** och **[!UICONTROL Privacy policy]**, som ska visas på Facebook behörighetsbegärandeskärm.
 

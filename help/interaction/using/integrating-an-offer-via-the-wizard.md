@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -15,12 +15,14 @@ ht-degree: 2%
 
 # Integrera ett erbjudande via guiden{#integrating-an-offer-via-the-wizard}
 
+![](../../assets/v7-only.svg)
+
 När du skapar en leverans finns det två möjliga metoder för att integrera erbjudanden:
 
 * Anropa erbjudandemotorn i en leverans.
 * Referera till erbjudanden via kampanjens leveranskonturer. Den här metoden används vanligtvis för papperskampanjer.
 
-## Leverera med ett anrop till erbjudandemotorn {#delivering-with-a-call-to-the-offer-engine}
+## Leverera med ett samtal till erbjudandemotorn {#delivering-with-a-call-to-the-offer-engine}
 
 Om du vill presentera ett erbjudande under en marknadsföringskampanj skapar du bara en klassisk leveransåtgärd utifrån den valda kanalen. Erbjudandemotorn anropas när leveransinnehållet har definierats genom att klicka på ikonen **[!UICONTROL Offers]** som finns i verktygsfältet.
 
@@ -75,7 +77,7 @@ Så här infogar du offertförslag i en leverans:
 * **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera exkluderingen av mottagare för vilka det inte finns tillräckligt med giltiga erbjudanden. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
 * **[!UICONTROL Do not display anything if no offer is selected]** : Med det här alternativet kan du välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
 
-### Infoga ett erbjudande i en leverans {#inserting-an-offer-proposition-into-a-delivery}
+### Infoga ett offertförslag i en leverans {#inserting-an-offer-proposition-into-a-delivery}
 
 Representationen av de erbjudanden som ska presenteras infogas i leveransinnehållet via kopplingsfälten. Antalet offerter definieras i parametrarna för anropet till erbjudandemotorn.
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 2%
+source-wordcount: '1305'
+ht-degree: 3%
 
 ---
 
-# Hemlig kopia av e-post {#email-archiving}
+# Konfigurera dold e-postkopia {#email-archiving}
+
+![](../../assets/v7-only.svg)
 
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform.
 
@@ -98,7 +100,7 @@ När den lokala mappsökvägen har definierats lägger du till och redigerar fö
 
 Se till att du justerar parametrarna efter e-postsändningens genomströmning. I en konfiguration där MTA skickar 30 000 e-postmeddelanden per timme kan du ange parametern **pollDelay** till 600, parametern **obtainLimit** till 5 000 och parametern **smtpNbConnection** till 2 . Det innebär att med 2 SMTP-anslutningar skickas 5 000 e-postmeddelanden till BCC-adressen var 10:e minut.
 
-## Konfigurerar e-postadressen för BCC (lokalt) {#configuring-the-bcc-email-address--on-premise-}
+## Konfigurera e-postadressen för den lokala kopian (lokal) {#configuring-the-bcc-email-address--on-premise-}
 
 >[!IMPORTANT]
 >
@@ -121,7 +123,7 @@ I filen **config-`<instance name>.xml`** använder du följande parametrar för 
 >
 >Dessutom tilldelar reläet en **[!UICONTROL Sent]**-status till alla e-postmeddelanden, även de som inte skickas. Därför arkiveras alla meddelanden.
 
-## Flyttar till den nya BCC för e-post {#updated-email-archiving-system--bcc-}
+## Gå till den nya e-postkontrollen {#updated-email-archiving-system--bcc-}
 
 >[!IMPORTANT]
 >
@@ -135,7 +137,7 @@ Gör följande ändringar i **`config-<instance>.xml`**-filen:
 
 När du har konfigurerat BCC för e-post måste du markera alternativet **[!UICONTROL Email BCC]** i leveransmallen eller leveransmallen. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Bästa praxis för e-postkopia {#best-practices}
+## Bästa praxis för BCC-e-postmarknadsföring {#best-practices}
 
 * **BCC-adresspostlåda**: Se till att den har tillräcklig mottagningskapacitet för att arkivera alla e-postmeddelanden som skickas av MTA.
 * **MTA-mutualisering**: arkiveringsfunktionen i innehållsförteckningen fungerar på MTA-nivå. Du kan duplicera alla e-postmeddelanden som skickas av MTA. Eftersom MTA kan mutualiseras i flera instanser (t.ex. dev, test eller prod) eller till och med i flera klienter (i en miljö där flera leverantörer finns) påverkar konfigurationen säkerheten:
@@ -145,3 +147,31 @@ När du har konfigurerat BCC för e-post måste du markera alternativet **[!UICO
 
 * **E-post per anslutning**: BCC-arkivering av e-post fungerar genom att öppna en anslutning och försöka skicka alla e-postmeddelanden via den anslutningen. Adobe rekommenderar att du kontaktar din interna tekniska kontakt för att kontrollera antalet e-postmeddelanden som accepteras för en viss anslutning. Om du ökar det här antalet kan det påverka genomströmningen av BCC avsevärt.
 * **BCC skickar IP**: För närvarande skickas inte BCC-e-post via de vanliga MTA-proxyadresserna. I stället öppnas en direktanslutning från MTA-servern till målservern för e-post. Det innebär att du kan behöva lägga till ytterligare IP-adresser till tillåtelselista i nätverket, beroende på din e-postserverkonfiguration.
+
+<!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
+
+For **hosted and hybrid architectures**, if you have the latest instance of Adobe Campaign, or if you have upgraded to the Enhanced MTA and using Adobe Campaign 19.2 or later, you can use Email BCC with Enhanced MTA, which is more reliable, efficient, and has lower latency.
+
+### Activating Email BCC with Enhanced MTA
+
+To activate this feature, you must contact your account executive to communicate the BCC email address to be used for archiving.
+
+>[!NOTE]
+>
+>If you were already using BCC email archiving, you can provide the same address as you were using before or use a new one. If you keep the same, you still have to contact your account executive to set it up for you.
+
+### Specificities and recommendations
+
+Email BCC with Enhanced MTA is not activated at the delivery level: once this feature is enabled, **all sent deliveries** are sent to the BCC email address. There is no need to select the **[!UICONTROL Email BCC]** option in the delivery template or in the delivery.
+
+If you were already using BCC and if you keep the same address, you could see a significant increase in the volumes sent to the BCC address.
+
+Consequently, make sure:
+* The BCC address has enough reception capacity to archive all the emails that are sent.
+* You have the required MTA infrastructure capacity to receive 100% of your email volume delivered to a single address.
+
+### Limitations
+
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+
+* There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

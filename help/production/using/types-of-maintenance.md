@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Typ av underhåll{#types-of-maintenance}
+
+![](../../assets/v7-only.svg)
 
 ## Programunderhåll {#application-maintenance}
 
@@ -47,7 +49,7 @@ Dessa uppgifter körs vanligtvis en gång i veckan under en period med låg akti
 
 Mer ingående underhåll, till exempel fullständiga tabellversioner, kan utföras en gång i månaden, helst med program som är helt stoppade eftersom systemet ändå inte kan användas.
 
-### Återskapar en tabell {#rebuilding-a-table}
+### Återskapa en tabell {#rebuilding-a-table}
 
 Flera strategier är tillgängliga:
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera åtkomst till Netezza {#configure-access-to-netezza}
+
+![](../../assets/v7-only.svg)
 
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Netezza.
 
@@ -67,7 +69,7 @@ För anslutning till en extern Netezza-databas i FDA krävs ytterligare konfigur
    * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: platsen för filen odbc.ini. Netezza kräver också den andra variabeln för att använda filen odbc.ini.
 
-## Netezza externt konto {#netezza-external}
+## Netezza external account {#netezza-external}
 
 Med det externa Netezza-kontot kan du ansluta Campaign-instansen till din externa Netezza-databas.
 

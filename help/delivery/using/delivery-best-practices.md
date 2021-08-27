@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 25%
@@ -13,6 +13,8 @@ ht-degree: 25%
 ---
 
 # God praxis för leverans {#delivery-best-practices}
+
+![](../../assets/common.svg)
 
 Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign. Använd länkarna nedan för att navigera bland ämnen och hitta vägledning.
 

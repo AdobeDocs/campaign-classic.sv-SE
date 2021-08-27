@@ -6,17 +6,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 7%
+source-wordcount: '532'
+ht-degree: 8%
 
 ---
 
 # Starta Adobe Campaign{#launching-adobe-campaign}
 
-Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar. Lär dig hur du hämtar och konfigurerar klientkonsolen på [den här sidan](../../installation/using/installing-the-client-console.md).
+![](../../assets/v7-only.svg)
 
+Campaign Client-konsolen är
 
 >[!CAUTION]
 >
@@ -32,7 +33,7 @@ I klientkonsolens anslutningsfönster kan du välja eller konfigurera befintliga
 
 ## Anslut till Adobe Campaign {#connecting-to-adobe-campaign}
 
-Du kan ansluta till Adobe Campaign med din Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
+Du kan ansluta till Adobe Campaign med din Adobe ID. Mer information finns på [den här sidan](../../integrations/using/about-adobe-id.md).
 
 Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 
@@ -67,11 +68,11 @@ Du måste sedan definiera anslutningsinställningarna. Så här gör du:
 
 1. Lägg till adressen till programservern i fältet **[!UICONTROL URL]**. Kontakta administratören om du inte känner till anslutnings-URL:en.
 
-1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** för att se om operatorerna kan ansluta till konsolen med sin Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
+1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** för att se om operatorerna kan ansluta till konsolen med sin Adobe ID. Mer information finns på [den här sidan](../../integrations/using/about-adobe-id.md).
 
 1. Klicka på **[!UICONTROL OK]** för att validera.
 
-## Operatorer och behörigheter {#operators-and-permissions}
+## Operatörer och behörigheter {#operators-and-permissions}
 
 Identifierare och lösenord för operatorer med åtkomst till programvaran och deras respektive behörigheter definieras av din Adobe Campaign-systemadministratör i noden **[!UICONTROL Administration > Access management > Operators]** i Adobe Campaign-trädet.
 
@@ -87,7 +88,7 @@ Om du vill koppla från Adobe Campaign använder du den första ikonen i ikonfä
 >
 >Du kan också stänga programmet utan att logga ut först.
 
-## Hämta din Adobe Campaign-version {#getting-your-campaign-version}
+## Skaffa en Adobe Campaign-version {#getting-your-campaign-version}
 
 På **[!UICONTROL Help > About...]**-menyn kan du komma åt följande information:
 
@@ -110,4 +111,4 @@ Läs mer om [!DNL Gold Standard] [i den här artikeln](../../rn/using/gs-overvie
 
 * [Adobe Campaign hjälp- och supportalternativ](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)

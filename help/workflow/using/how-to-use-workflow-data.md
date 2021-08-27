@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Så använder du arbetsflödesdata{#how-to-use-workflow-data}
+
+![](../../assets/common.svg)
 
 ## Uppdaterar databasen {#updating-the-database}
 
@@ -29,21 +31,21 @@ Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras me
 
    ![](assets/s_user_create_list.png)
 
-   Se [Listuppdatering](../../workflow/using/list-update.md).
+   Se [Listuppdatering](list-update.md).
 
 * Aktiviteten **[!UICONTROL Update data]** utför en massuppdatering av fälten i databasen.
 
-   Mer information finns i [Uppdatera data](../../workflow/using/update-data.md).
+   Mer information finns i [Uppdatera data](update-data.md).
 
-### Hantering av prenumeration/avprenumeration {#subscription-unsubscription-management}
+### Prenumerations-/prenumerationshantering {#subscription-unsubscription-management}
 
-Om du vill veta mer om att prenumerera på och avsluta prenumerationer på en informationstjänst via ett arbetsflöde kan du läsa [Prenumerationstjänster](../../workflow/using/subscription-services.md).
+Om du vill veta mer om att prenumerera på och avsluta prenumerationer på en informationstjänst via ett arbetsflöde kan du läsa [Prenumerationstjänster](subscription-services.md).
 
 ## Skicka via ett arbetsflöde {#sending-via-a-workflow}
 
 ### Leveransaktivitet {#delivery-activity}
 
-Leveransaktiviteten anges i [Delivery](../../workflow/using/delivery.md).
+Leveransaktiviteten anges i [Delivery](delivery.md).
 
 ### Förbättra och målinrikta leveranser {#enriching-and-targeting-deliveries}
 
@@ -57,7 +59,7 @@ Förutom de vanliga personaliseringsfälten kan du lägga till anpassningsfält 
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData**. Mer information finns i [Måldata](../../workflow/using/data-life-cycle.md#target-data).
+Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData**. Mer information finns i [Måldata](data-life-cycle.md#target-data).
 
 Inom ramen för e-postleverans kan personaliseringsfält även använda data från måltillägg som har utförts i arbetsflödesfaserna för målanpassning, vilket visas i exemplet nedan:
 

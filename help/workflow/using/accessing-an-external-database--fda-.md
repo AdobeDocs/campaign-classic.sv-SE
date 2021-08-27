@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 53%
 
 ---
 
-# Åtkomst till en extern databas (FDA){#accessing-an-external-database-fda}
+# Komma åt en extern databas (FDA){#accessing-an-external-database-fda}
+
+![](../../assets/common.svg)
 
 Adobe Campaign tillhandahåller alternativet federerad dataåtkomst (FDA) för att bearbeta information som lagras i en eller flera externa databaser. Du kan få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign.
 

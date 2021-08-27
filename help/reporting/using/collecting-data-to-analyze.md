@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Samla in data som ska analyseras{#collecting-data-to-analyze}
+
+![](../../assets/common.svg)
 
 De data som ska användas för att skapa rapporten kan väljas direkt på rapportsidan (mer information finns i [Använda kontexten](../../reporting/using/using-the-context.md)) eller samlas in via en eller flera frågor.
 
@@ -23,7 +25,7 @@ Den här aktiviteten erbjuder tre olika metoder:
 1. Bearbetar data i en lista.
 1. Använda data i en befintlig kub.
 
-Vilken metod som väljs beror på vilken typ av beräkning det är, datavolymen och hur länge de är giltiga osv. Alla dessa parametrar måste granskas noggrant för att undvika att överbelasta Adobe Campaign-databasen och för att optimera genereringen och hanteringen av de skapade rapporterna. Se denna [sida](../../reporting/using/best-practices.md#optimizing-report-creation) för mer information om detta.
+Vilken metod som väljs beror på vilken typ av beräkning det är, datavolymen och hur länge de är giltiga osv. Alla dessa parametrar måste granskas noggrant för att undvika att överbelasta Adobe Campaign-databasen och för att optimera genereringen och hanteringen av de skapade rapporterna. Mer information finns på [den här sidan](../../reporting/using/best-practices.md#optimizing-report-creation).
 
 I samtliga fall samlas data in via en **[!UICONTROL Query]**-typaktivitet.
 

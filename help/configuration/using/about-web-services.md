@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Om webbtjänster{#about-web-services}
+
+![](../../assets/v7-only.svg)
 
 ## Definition av Adobe Campaign API:er {#definition-of-adobe-campaign-apis}
 
@@ -23,7 +25,7 @@ Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det
 
 >[!IMPORTANT]
 >
->Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Se denna [sida](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) för mer information om detta.\
+>Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
 >En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Förhandskrav {#prerequisites}
@@ -167,7 +169,7 @@ catch (SoapException e)
 }
 ```
 
-## URL för webbtjänstservern (eller EndPoint) {#url-of-web-service-server--or-endpoint-}
+## Webbtjänstserverns URL (eller EndPoint) {#url-of-web-service-server--or-endpoint-}
 
 Om du vill skicka webbtjänsten måste du kontakta den Adobe Campaign-server som implementerar motsvarande tjänstmetod.
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -15,16 +15,17 @@ ht-degree: 2%
 
 # Uppgradera till en ny version (lokalt){#upgrading}
 
+![](../../assets/v7-only.svg)
+
 Innan du startar uppgraderingsprocessen bör du kontrollera och bekräfta vilken version av Adobe Campaign som ska uppgraderas till och läsa [versionsinformationen](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
 >* Adobe rekommenderar starkt att du gör en säkerhetskopia av databasen för varje instans innan du uppdaterar. Mer information hittar du i [det här avsnittet](../../production/using/backup.md).
 >* Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
->* Läs [det här avsnittet](../../installation/using/general-architecture.md) och kapitlet [build upgrade](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html) innan du startar.
+>* Läs [det här avsnittet](../../installation/using/general-architecture.md) och kapitlet [build upgrade](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) innan du startar.
 
 >
-
 
 
 ## Windows {#in-windows}
@@ -173,8 +174,7 @@ Om du vill göra det kör du följande kommando:
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
 
    >
-   >   
-   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
+   >   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
 
 
 Starta sedan om Apache:
@@ -236,13 +236,13 @@ Om du väljer att lösa konflikten manuellt gör du så här:
 1. Gå till konflikten som du har löst. Klicka på ikonen **[!UICONTROL Actions]** och välj **[!UICONTROL Declare as resolved]** .
 1. Spara ändringarna: konflikten är nu löst.
 
-### God praxis {#best-practices}
+### Bästa praxis {#best-practices}
 
 Ett uppdateringsfel kan vara länkat till databaskonfigurationen. Kontrollera att konfigurationerna som utförs av den tekniska administratören och databasadministratören är kompatibla.
 
 En Unicode-databas får till exempel inte bara tillåta lagring av LATIN1-data.
 
-## Varna klientkonsolerna för den tillgängliga uppdateringen {#warn-the-client-consoles-of-the-available-update}
+## Varna klientkonsolerna om den tillgängliga uppdateringen {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

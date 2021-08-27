@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Webbtjänstanrop{#web-service-calls}
+
+![](../../assets/v7-only.svg)
 
 ## Allmän information {#general-information}
 
@@ -207,7 +209,7 @@ Sessionstoken har följande egenskaper:
    * sessionstoken blir en permanent token, och tas inte bort när webbläsaren stängs
    * den placeras i en HTTP-ONLY-cookie (cookies måste aktiveras för operatorer)
 
-### Säkerhetstokenens egenskaper {#security-token-characteristics}
+### Egenskaper för säkerhetstoken {#security-token-characteristics}
 
 Säkerhetstoken har följande egenskaper:
 
@@ -236,7 +238,7 @@ Från ett SOAP-anrop:
 
 * det läggs till för att ringa rubriker
 
-### Exempel på samtal {#call-examples}
+### Exempel på utlysningar {#call-examples}
 
 * Använda **HttpSoapConnection/SoapService**:
 

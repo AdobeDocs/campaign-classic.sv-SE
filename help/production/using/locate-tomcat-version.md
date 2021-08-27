@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
 
-# Hitta Tomcat-version{#locate-tomcat-version}
+# Sök efter Tomcat-version{#locate-tomcat-version}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign använder en **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive Klientkonsol, spårade URL-länkar, SOAP-anrop med flera). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
 
@@ -53,7 +55,7 @@ Filen *ServerInfo.properties* för Adobe Campaign innehåller till exempel följ
 
 *server.number=8.5.X.Y*
 
-*server.built=MM DD YY HH:MM:SS*
+*server.built=MM DD YYY :MM:HHSS*
 
 När du kan fastställa den exakta versionen av Tomcat som används i en viss instans kan det hjälpa dig med felsökningen av Tomcat-relaterade problem.
 

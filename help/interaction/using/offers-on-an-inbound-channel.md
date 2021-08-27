@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Erbjudanden på en inkommande kanal{#offers-on-an-inbound-channel}
+
+![](../../assets/v7-only.svg)
 
 ## Presentera ett erbjudande för en anonym besökare {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -27,7 +29,7 @@ För att lägga upp den här interaktionen kommer vi att:
 1. [Skapa anonyma erbjudanden.](#creating-anonymous-offers)
 1. [Konfigurera webbplatsens erbjudanden](#configure-the-web-offer-space-on-the-website)
 
-### Skapar en anonym miljö {#creating-an-anonymous-environment}
+### Skapa en anonym miljö {#creating-an-anonymous-environment}
 
 Följ anvisningarna i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment) för att skapa en anonym miljö baserat på dimensionerna **Besökare**.
 
@@ -35,7 +37,7 @@ Du får en trädstruktur som innehåller din nya miljö:
 
 ![](assets/offer_env_anonymous_003.png)
 
-### Skapar anonyma erbjudandeblanksteg {#creating-anonymous-offer-spaces}
+### Skapa anonyma erbjudandeplatser {#creating-anonymous-offer-spaces}
 
 1. I din anonyma miljö (**Besökare**) går du till noden **[!UICONTROL Administration]** > **[!UICONTROL Spaces]**.
 1. Klicka på **[!UICONTROL New]** för att skapa anropskanaler.
@@ -91,7 +93,7 @@ Du får en trädstruktur som innehåller din nya miljö:
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
-### Skapar anonyma erbjudanden {#creating-anonymous-offers}
+### Skapa anonyma erbjudanden {#creating-anonymous-offers}
 
 1. Gå till kategorin som du nyss skapade.
 1. Klicka på **[!UICONTROL New]**.
@@ -147,7 +149,7 @@ När en besökare kommer åt webbplatsens hemsida visas erbjudandena med temat *
 
 En användare som besöker sidan flera gånger kommer att se antingen det ena eller det andra erbjudandet i kategorin eftersom båda har tilldelats samma vikt.
 
-## Växla till en anonym miljö om oidentifierade kontakter är {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
+## Byta till en anonym miljö om det finns oidentifierade kontakter {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
 
 Företaget Neobank vill skapa marknadsföringserbjudanden för två olika mål. Den vill visa generiska erbjudanden för sina anonyma webbläsare. Om någon av dessa användare visar sig vara kund med identifierare från Neobank vill företaget att de ska få personaliserade erbjudanden så fort de loggar in.
 
@@ -191,13 +193,13 @@ Använd följande steg:
    1. [Konfigurera erbjudandeutrymmen på webbsidan](#configuring-offer-spaces-on-the-web-page)
    1. [Ange avancerade inställningar för de identifierade erbjudandeutrymmena](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
 
-### Skapar en miljö för anonyma kontakter {#creating-an-environment-for-anonymous-contacts}
+### Skapa en miljö för anonyma kontakter {#creating-an-environment-for-anonymous-contacts}
 
 1. Skapa en erbjudandemiljö för anonym inkommande interaktion via guiden för leveranskarta (**Visitor**-mappning). Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
-### Konfigurera erbjudandeutrymmen för den anonyma miljön {#configuring-offer-spaces-for-the-anonymous-environment}
+### Konfigurera erbjudandeplatser för den anonyma miljön {#configuring-offer-spaces-for-the-anonymous-environment}
 
 Erbjudandena som måste presenteras på webbplatsen tillhör två olika kategorier: **Bästa erbjudande** och **Partner**. I det här exemplet ska vi skapa ett specifikt erbjudandeutrymme för varje kategori.
 
@@ -295,7 +297,7 @@ Om du vill skapa de två erbjudandeutrymmena använder du samma procedur som fö
 
    ![](assets/offer_inbound_fallback_example_007.png)
 
-### Ange de avancerade inställningarna för de identifierade erbjudandeutrymmena {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
+### Ange avancerade inställningar för de identifierade erbjudandeutrymmena {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
 
 I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adobe Campaign-databasen. Gör så här om du vill lägga till mottagarens e-postadress i utrymmet:
 
@@ -326,7 +328,7 @@ Vi ska skapa två olika kategorier: kategorin **Bästa erbjudande** och kategori
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
-### Skapa anpassade erbjudanden {#creating-personalized-offers}
+### Skapa personaliserade erbjudanden {#creating-personalized-offers}
 
 Vi vill skapa två personaliserade erbjudanden för varje kategori, nämligen fyra.
 

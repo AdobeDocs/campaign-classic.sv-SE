@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
 # SQL-datahantering{#sql-data-management}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **SQL Data Management** kan du skriva egna SQL-skript för att skapa och fylla i arbetsregister.
 
@@ -22,7 +24,14 @@ Med aktiviteten **SQL Data Management** kan du skriva egna SQL-skript för att s
 Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är uppfyllda:
 
 * Aktiviteten är endast tillgänglig för fjärrdatakällor. Paketet **[!UICONTROL FDA]** (Federated Data Access) måste därför installeras på din instans. [Läs mer](../../installation/using/about-fda.md).
-* Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas. [Läs mer](../../configuration/using/about-schema-reference.md).
+
+   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+
+* Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas.
 * Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven behörighet. [Läs mer](../../platform/using/access-management-named-rights.md).
 
 ## Konfigurera SQL Data Management-aktiviteten {#configuring-the-sql-data-management-activity}

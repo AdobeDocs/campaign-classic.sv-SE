@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # SQL-kod och JavaScript-kod{#sql-code-and-javascript-code}
+
+![](../../assets/common.svg)
 
 ## SQL-kod {#sql-code}
 
@@ -27,11 +29,11 @@ En **[!UICONTROL SQL code]**-aktivitet kör ett SQL-skript. Skriptet är en JST-
 
 * **[!UICONTROL Processing errors]**
 
-   Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Se [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-kod och avancerad JavaScript-kod {#javascript-code}
 
-**[!UICONTROL JavaScript code]** och  **[!UICONTROL Advanced JavaScript code]** aktiviteter kör ett JavaScript-skript i ett arbetsflödes sammanhang. Mer information om skript finns i avsnittet [JavaScript-skript och mallar](../../workflow/using/javascript-scripts-and-templates.md).
+**[!UICONTROL JavaScript code]** och  **[!UICONTROL Advanced JavaScript code]** aktiviteter kör ett JavaScript-skript i ett arbetsflödes sammanhang. Mer information om skript finns i avsnittet [JavaScript-skript och mallar](javascript-scripts-and-templates.md).
 
 ### Körningsfördröjning {#exec-delay}
 
@@ -47,7 +49,7 @@ Om du vill ignorera den här gränsen måste du ange värdet **0**.
 
 * **[!UICONTROL Script]**: Redigerarens centrala del innehåller skriptet som ska köras.
 
-* **[!UICONTROL Process errors]**: Se  [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**: Se  [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 ### Avancerad JavaScript-kod {#adv-js-code-desc}
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Avancerade parametrar{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 Egenskapsskärmen för en aktivitet har en **[!UICONTROL Advanced]**-flik som gör att du kan definiera ett beteende i händelse av fel, körningsperioden för aktiviteten; och gör att du kan ange ett initieringsskript. Det finns två versioner av den här fliken:
 
@@ -33,7 +35,7 @@ Det här fältet innehåller aktivitetens interna namn.
 
 ## Bild {#image}
 
-I det här fältet kan du ändra bilden som är länkad till en aktivitet. Mer information finns i: [Hantera aktivitetsbilder](../../workflow/using/managing-activity-images.md).
+I det här fältet kan du ändra bilden som är länkad till en aktivitet. Mer information finns i: [Hantera aktivitetsbilder](managing-activity-images.md).
 
 ## Körning {#execution}
 
@@ -65,7 +67,7 @@ I det här fältet kan du definiera det beteende som ska användas för asynkron
 
 ## Tidszon {#time-zone}
 
-I det här fältet kan du välja aktivitetens tidszon. Mer information: [Hantera tidszoner](../../workflow/using/managing-time-zones.md).
+I det här fältet kan du välja aktivitetens tidszon. Mer information: [Hantera tidszoner](managing-time-zones.md).
 
 ## Vid fel {#in-case-of-errors}
 
@@ -76,7 +78,7 @@ I det här fältet kan du definiera vilken åtgärd som ska utföras när aktivi
 
 ## Initieringsskript {#initialization-script}
 
-I det här fältet kan du initiera variabler eller ändra aktivitetsegenskaper. Mer information finns i: [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md).
+I det här fältet kan du initiera variabler eller ändra aktivitetsegenskaper. Mer information finns i: [JavaScript-skript och -mallar](javascript-scripts-and-templates.md).
 
 ## Kommentar {#comment}
 

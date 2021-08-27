@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Felsökning av SMS {#troubleshooting-sms}
+
+![](../../assets/common.svg)
 
 ## Konflikt mellan olika externa konton {#external-account-conflict}
 
@@ -201,7 +203,7 @@ Med hexadecimala tecken kan du se skillnaden mellan liknande tecken. En gemener 
 
 Om du vill konvertera Unicode till hexadecimal kan du använda onlineverktyg som [Unicode-kodkonverteraren](https://r12a.github.io/app-conversion/)-webbplatsen. Skriv texten, kontrollera att det inte finns någon PII-fil, till exempel telefonnummer, och klicka på **Konvertera**. De hexadecimala värdena visas längst ned (UTF-32-zon).
 
-När du öppnar biljetter om kodningsproblem, oavsett om det gäller leverantören eller [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), ska du alltid inkludera en hexadecimal version av det du skriver och det du ser.
+När du öppnar biljetter om kodningsproblem, oavsett om det gäller leverantören eller [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), ska du alltid inkludera en hexadecimal version av det du skriver och det du ser.
 
 **Steg 3: Ta reda på vad du ska skicka**
 

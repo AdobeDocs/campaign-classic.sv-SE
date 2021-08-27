@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Integrera ett erbjudande via ett arbetsflöde{#integrating-an-offer-via-a-workflow}
+
+![](../../assets/v7-only.svg)
 
 Förutom själva leveransaktiviteten kan du definiera hur erbjudandena presenteras i flera arbetsflödesaktiviteter:
 
@@ -111,7 +113,7 @@ Gör så här:
    >
    >Antalet tillgängliga offerter för förhandsgranskningen beror på konfigurationen som utförs i leveransen.
 
-### Rankningar och vikter för lagringserbjudanden {#storing-offer-rankings-and-weights}
+### Rankning och vikter för erbjudanden {#storing-offer-rankings-and-weights}
 
 När en **anrikning**-aktivitet används för att leverera erbjudanden lagras deras rankningar och deras vikter inte i förslagstabellen.
 

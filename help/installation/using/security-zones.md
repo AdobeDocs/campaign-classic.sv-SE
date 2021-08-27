@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -16,6 +16,8 @@ ht-degree: 0%
 
 # Definiera säkerhetszoner (lokalt){#defining-security-zones}
 
+![](../../assets/v7-only.svg)
+
 Varje operator måste länkas till en zon för att kunna logga in på en instans och operatörens IP-adress måste inkluderas i adresserna eller adressuppsättningarna som definieras i säkerhetszonen. Säkerhetszonskonfigurationen utförs i Adobe Campaign-serverns konfigurationsfil.
 
 Operatorer är länkade till en säkerhetszon från sin profil i konsolen och tillgängliga i noden **[!UICONTROL Administration > Access management > Operators]**. [Läs mer](#linking-a-security-zone-to-an-operator).
@@ -24,10 +26,9 @@ Operatorer är länkade till en säkerhetszon från sin profil i konsolen och ti
 >
 >Den här proceduren är begränsad till **lokala**-distributioner.
 >
->Om du är **värd**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) kan du använda självbetjäningsgränssnittet för säkerhetszon. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>Om du är **värd**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet för säkerhetszon. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
 >Andra **hybrid-/hosted**-kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
-
 
 ## Skapa säkerhetszoner {#creating-security-zones}
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Programobjekt{#application-objects}
+
+![](../../assets/v7-only.svg)
 
 Inbyggda objekt bör övervakas och det är viktigt att förhindra att de växer för mycket.
 
@@ -49,7 +51,7 @@ Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta k
 
 Om ett arbetsflöde importerar filer och inte använder standardfunktionerna måste det rensas för att diskutrymmet ska bli så litet som möjligt.
 
-## Transaktionsdata och -loggar {#transactional-data-and-logs}
+## Transaktionsdata och transaktionsloggar {#transactional-data-and-logs}
 
 Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek ökar.
 

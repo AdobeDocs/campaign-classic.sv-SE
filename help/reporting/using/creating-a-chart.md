@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # Skapa ett diagram{#creating-a-chart}
 
+![](../../assets/common.svg)
+
 Data i databasen kan också samlas in och visas i ett diagram. Adobe Campaign har en uppsättning grafiska representationer. Deras konfiguration beskrivs nedan.
 
 Diagram infogas direkt på en rapportsida via högerklicksmenyn eller verktygsfältet.
 
-## Skapandesteg {#creation-steps}
+## Skapa steg {#creation-steps}
 
 Så här skapar du ett diagram i en rapport:
 

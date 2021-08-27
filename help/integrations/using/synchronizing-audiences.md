@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Synkronisera publiker{#synchronizing-audiences}
+
+![](../../assets/v7-only.svg)
 
 Ni kan skapa en avancerad lista med de avancerade funktionerna i Campaign v7 och dela den som en målgrupp direkt och i realtid med Campaign Standard (inklusive ytterligare data) på ett smidigt sätt. Din Campaign Standard kan sedan konsumera publiken i Adobe Campaign Standard.
 

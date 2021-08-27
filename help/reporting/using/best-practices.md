@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Rapportera bästa praxis{#best-practices-reporting}
 
-## Analyserar behov{#analyzing-needs}
+![](../../assets/common.svg)
+
+## Analysera behov{#analyzing-needs}
 
 Användningen av ett rapporteringsverktyg beror på mängden data som ska ändras, dess komplexitet och på vilken typ av rapportering som ska skapas.
 
@@ -110,6 +112,6 @@ Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
    Mer information om rensning och datalagring finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Exporterar rapporter {#exporting-reports}
+### Exportera rapporter {#exporting-reports}
 
 Recommendations som är specifikt för att exportera rapporter beskrivs i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).

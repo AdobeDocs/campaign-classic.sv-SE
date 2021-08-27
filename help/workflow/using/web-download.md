@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Webbhämtning{#web-download}
+
+![](../../assets/common.svg)
 
 Aktiviteten **Webbnedladdning** startar nedladdningen av en fil på en explicit URL, ett externt konto eller en Adobe Campaign-instans. HTTP-protokollet används. Det kan vara en nedladdning av GET eller POST.
 
@@ -61,7 +63,7 @@ Aktiviteten **Webbnedladdning** startar nedladdningen av en fil på en explicit 
 
    ![](assets/download_web_edit_advanced.png)
 
-   Alternativet **[!UICONTROL Process errors]** finns i [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Alternativet **[!UICONTROL Process errors]** finns i [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 ## Utdataparametrar {#output-parameters}
 

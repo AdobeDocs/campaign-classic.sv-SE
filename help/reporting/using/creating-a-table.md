@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Skapa en tabell{#creating-a-table}
 
+![](../../assets/common.svg)
+
 Du kan lägga till en tabell i en rapport för att visa data. Detta kan vara en pivottabell som skapas baserat på kubmått, en lista med en grupp eller en tabell som innehåller en uppdelning av värden.
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Skapa en lista med gruppen {#creating-a-list-with-group}
+## Skapa en lista med en grupp {#creating-a-list-with-group}
 
 Med en **[!UICONTROL List with group]**-typtabell kan du gruppera data i tabellen och producera statistik för den. Du kan t.ex. skapa summor och delsummor för data. Varje grupp har sin egen rubrik, detalj- och sidfotsrad.
 
@@ -116,7 +118,7 @@ Använd menyposten **[!UICONTROL Expression]** för att välja de värden som sk
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### Definierar cellformat {#defining-cell-format}
+### Definiera cellformat {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -458,10 +460,10 @@ Om du klickar på länken för någon av dessa leveranser visas ett diagram med 
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## Skapar en nedbrytning- eller pivottabell {#creating-a-breakdown-or-pivot-table}
+## Skapa en detaljtabell eller pivottabell {#creating-a-breakdown-or-pivot-table}
 
 Med den här tabelltypen kan du visa statistik som beräknas på data i databasen.
 
-Konfigurationen för de här typerna av rapporter liknar den som används för den beskrivande analysguiden. Se denna [sida](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) för mer information om detta.
+Konfigurationen för de här typerna av rapporter liknar den som används för den beskrivande analysguiden. Mer information finns på [den här sidan](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
 Mer information om hur du skapar en pivottabell finns i [det här avsnittet](../../reporting/using/using-cubes-to-explore-data.md).

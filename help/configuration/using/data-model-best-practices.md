@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Bästa praxis för datamodell
+title: God praxis för datamodell
 description: Lär dig hur du arbetar med datamodellen Campaign Classic
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
 
 ---
 
-# Bästa praxis för datamodell{#data-model-best-practices}
+# God praxis för datamodell{#data-model-best-practices}
+
+![](../../assets/v7-only.svg)
 
 I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Adobe Campaign-datamodell.
 
@@ -31,7 +33,7 @@ Det här dokumentet innehåller vanliga användningsexempel och metodtips om hur
 
 Adobe Campaign är ett kraftfullt kanalövergripande kampanjhanteringssystem som kan hjälpa er att anpassa era online- och offlinestrategier för att skapa personaliserade kundupplevelser.
 
-### Kundfokuserad metod {#customer-centric-approach}
+### Kundfokuserat tillvägagångssätt {#customer-centric-approach}
 
 De flesta e-postleverantörer kommunicerar med kunderna via en listcentrerad strategi, men Adobe Campaign förlitar sig på en relationsdatabas för att få en bredare bild av kunderna och deras attribut.
 
@@ -296,7 +298,7 @@ Nedan följer några vanliga metodtips som bör följas när du utformar din dat
 * Använd alltid numeriska data i stället för teckensträngar för kopplingsnycklar.
 * Minska så mycket du kan av djupet för loggbevarande. Om du behöver mer detaljerad historik kan du sammanställa beräkningar och/eller hantera anpassade loggtabeller för att lagra större historik.
 
-### Storlek på tabeller {#size-of-tables}
+### Tabellstorlek {#size-of-tables}
 
 Tabellstorleken är en kombination av antalet poster och antalet kolumner per post. Båda kan påverka prestanda för frågor.
 

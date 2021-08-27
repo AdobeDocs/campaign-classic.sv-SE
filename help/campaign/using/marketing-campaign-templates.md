@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Skapa och konfigurera kampanjmallar {#campaign-templates}
+
+![](../../assets/common.svg)
 
 Alla marknadsföringskampanjer bygger på en mall som lagrar de viktigaste egenskaperna och funktionerna. Kampanjmallar är centraliserade i noden **[!UICONTROL Resources > Templates > Campaign templates]**. En standardmall anges som standard. Du kan skapa en ny kampanj med hjälp av alla tillgängliga moduler (dokument, uppgifter, dirigerade adresser osv.), men vilka moduler som erbjuds beror på dina rättigheter och konfigurationen av din Adobe Campaign-plattform.
 
@@ -91,7 +93,7 @@ Följande länkar och flikar visas:
 
 ![](assets/s_ncs_user_op_template_tab2.3ex.png)
 
-## Typologi för moduler {#typology-of-enabled-modules}
+## Modultyper {#typology-of-enabled-modules}
 
 * **Kontrollgrupp**
 

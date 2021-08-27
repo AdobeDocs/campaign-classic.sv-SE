@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Distribuerade arkitekturer{#distributed-architectures}
+
+![](../../assets/v7-only.svg)
 
 ## Princip {#principle}
 
@@ -28,7 +30,7 @@ För att få stöd för skalbarhet och dygnet runt-service på den inkommande ka
 >
 >Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Alla instanser av exekvering är oberoende och dedikerade till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
 
-## Propositionssynkronisering {#proposition-synchronization}
+## Förslagssynkronisering {#proposition-synchronization}
 
 Synkronisering av erbjudanden utförs via paket. I körningsinstanser föregås alla katalogobjekt av det externa kontonamnet. Detta innebär att flera kontrollinstanser (till exempel utvecklings- och produktionsinstanser) kan stödjas på samma körningsinstans.
 

@@ -2,20 +2,22 @@
 product: campaign
 title: Versionsinformation för Campaign 18.10
 description: Versionsinformation för Campaign 18.10
-feature: Översikt
+feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2369'
 ht-degree: 7%
 
 ---
 
 # Version 18.10{#release-18-10}
 
-## Version 18.10.6 - build 8985{#release-18-10-6-build-8985}
+![](../../assets/v7-only.svg)
+
+## version 18.10.6 – build 8985{#release-18-10-6-build-8985}
 
 12 juli 2019
 
@@ -27,7 +29,7 @@ ht-degree: 7%
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 * Ett problem som kunde orsaka fel i datorloggarna har korrigerats. (NEO-8978)
 
-## Version 18.10.5 - build 8984{#release-18-10-5-build-8984}
+## version 18.10.5 – build 8984{#release-18-10-5-build-8984}
 
 23 april 2019
 
@@ -37,7 +39,7 @@ ht-degree: 7%
 * 10 000 poster har tagits bort i heatmap-kartan för arbetsflöde för att åtgärda ett problem med saknade data. (NEO-12329)
 * Ett problem har korrigerats när alternativet Behåll alla ytterligare data från huvuduppsättningen användes i en arbetsflödesaktivitet för anrikning. (NEO-13291)
 
-## Version 18.10.4 - build 8983{#release-18-10-4-build-8983}
+## version 18.10.4 – build 8983{#release-18-10-4-build-8983}
 
 15 april 2019
 
@@ -50,7 +52,7 @@ ht-degree: 7%
 * I Analytics-integreringen är det nu tillåtet att hämta AAM segmentdata med tecknet %. (NEO-12025)
 * Korrigerade ett Tomcat-kraschproblem när push-meddelanden skickades med HTTP2. (NEO-12701)
 
-## Version 18.10.3 - build 8981{#release-18-10-3-build-8981}
+## version 18.10.3 – build 8981{#release-18-10-3-build-8981}
 
 29 januari 2019
 
@@ -74,7 +76,7 @@ ht-degree: 7%
 * Korrigerade ett problem med teckenigenkänning när push-meddelanden skickades till ett mobilprogram.
 * Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt konto med medelkälla.
 
-## Version 18.10.2 - build 8978{#release-18-10-2-build-8978}
+## version 18.10.2 – build 8978{#release-18-10-2-build-8978}
 
 6 december 2018
 
@@ -96,7 +98,7 @@ ht-degree: 7%
 * Korrigerade ett problem med beräkningen av arbetsflödets varaktighet i Workflow HeatMap.
 
 
-## Version 18.10 - build 8977{#release-18-10-build-8977}
+## version 18.10 – build 8977{#release-18-10-build-8977}
 
 5 nov 2018
 

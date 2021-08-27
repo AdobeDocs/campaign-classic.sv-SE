@@ -5,7 +5,7 @@ description: Lär dig hur du kan få in Adobe Experience Platform-målgrupper i 
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Infoga Adobe Experience Platform-segment i Campaign {#destinations}
+
+![](../../assets/common.svg)
 
 Om du vill importera Adobe Experience Platform till Campaign och använda dem i dina arbetsflöden måste du först ansluta Adobe Campaign som ett Adobe Experience Platform **mål** och konfigurera det med segmentet som ska exporteras.
 

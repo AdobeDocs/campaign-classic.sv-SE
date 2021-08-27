@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Användningsfall: skapa en e-postleverans{#use-case-creating-an-email-delivery}
+
+![](../../assets/common.svg)
 
 I det här fallet får du lära dig hur du utformar en e-postleverans med Adobe Campaign Digital Content Editor (DCE).
 

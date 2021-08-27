@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Exempel på Facebook-appar{#examples-of-facebook-apps}
+
+![](../../assets/v7-only.svg)
 
 När en användare klickar på fliken i ett Facebook-program visas den i ett utrymme som är 810 pixlar brett. Adobe Campaign använder ett webbprogram av Facebook-typ för att du ska kunna definiera och anpassa det innehåll som visas i Facebook-programmet, vilket gör det enklare att hämta profiler.
 
@@ -354,7 +356,7 @@ Så här lägger du till en förinläsningsknapp:
 
    ![](assets/social_webapp_035.png)
 
-1. Gå till fältet **[!UICONTROL Application]** och välj det externa konto av typen **[!UICONTROL Facebook Connect]** som skapades tidigare. Se denna [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) för mer information om detta.
+1. Gå till fältet **[!UICONTROL Application]** och välj det externa konto av typen **[!UICONTROL Facebook Connect]** som skapades tidigare. Mer information finns på [den här sidan](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
    ![](assets/social_webapp_036.png)
 

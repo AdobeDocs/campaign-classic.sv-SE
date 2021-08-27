@@ -5,7 +5,7 @@ description: Plattform för mid-sourcing
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 
 
 # Plattform för mid-sourcing{#mid-sourcing-platform}
+
+![](../../assets/common.svg)
 
 Arbetsflödet som beskrivs nedan installeras som standard med modulen **Mid-Source**. Mer information om den här modulen finns i [avsnittet](../../installation/using/mid-sourcing-deployment.md).
 

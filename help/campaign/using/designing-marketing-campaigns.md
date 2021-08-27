@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 8%
@@ -15,7 +15,9 @@ ht-degree: 8%
 
 # Utforma och genomför marknadsföringskampanjer{#designing-marketing-campaigns}
 
-Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../campaign/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
+![](../../assets/common.svg)
+
+Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
 

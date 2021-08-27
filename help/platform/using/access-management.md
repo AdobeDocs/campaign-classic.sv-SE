@@ -2,18 +2,20 @@
 product: campaign
 title: Kom igång med behörigheter
 description: Lär dig hur du ger tillgång till Campaign-funktioner
-feature: Åtkomsthantering
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '253'
 ht-degree: 5%
 
 ---
 
 # Kom igång med behörigheter{#access-management}
+
+![](../../assets/common.svg)
 
 Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats de olika operatorerna. Detta är en uppsättning rättigheter och begränsningar som tillåter eller nekar:
 
@@ -51,7 +53,7 @@ Lär dig hur du ger åtkomst och konfigurerar behörigheter i följande avsnitt:
 Se även:
 
 * [Hantera behörigheter för arbetsflöden](../../workflow/using/managing-rights.md)
-* [Hantera behörigheter för distribuerad marknadsföring](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
+* [Hantera behörigheter för distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
 * [Hantera behörigheter för interaktionsmodulen](../../interaction/using/operator-profiles.md)
 * [Filtrera åtkomst till scheman](../../configuration/using/filtering-schemas.md)
 * [Begränsa PI-vyn](../../configuration/using/restricting-pii-view.md)

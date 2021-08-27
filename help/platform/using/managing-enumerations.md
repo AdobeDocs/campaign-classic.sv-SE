@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Hantera uppräkningar{#managing-enumerations}
+
+![](../../assets/common.svg)
 
 En uppräkning (kallas även&quot;lista med specificerade värden&quot;) är en lista med värden som föreslås av systemet för att fylla i vissa fält. Med uppräkningar kan du standardisera värdena för dessa fält och hjälpa till med inmatning eller användning av data i frågor.
 
@@ -90,7 +92,7 @@ När en användare anger värdet **NEILSEN** i ett&quot;företag&quot;-fält (i 
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
-#### Konverterar värden till alias {#converting-values-into-aliases}
+#### Konvertera värden till alias {#converting-values-into-aliases}
 
 Om du vill konvertera ett uppräkningsvärde till ett alias högerklickar du i listan med värden och väljer **[!UICONTROL Convert values into aliases...]**.
 
@@ -130,7 +132,7 @@ Med länken **[!UICONTROL Advanced parameters...]** kan du ange det datum från 
 
 Klicka på knappen **[!UICONTROL Start]** för att köra datarensning.
 
-#### Beräkna postförekomster {#calculating-entry-occurrences}
+#### Beräkna anmälningsförekomster {#calculating-entry-occurrences}
 
 Underfliken **[!UICONTROL Alias]** för en specificerad lista kan visa antalet förekomster av ett alias bland alla värden som anges. Den här informationen är en uppskattning och kommer att visas i kolumnen **[!UICONTROL Hits]**.
 

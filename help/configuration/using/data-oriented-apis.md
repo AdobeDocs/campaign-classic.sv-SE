@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Dataorienterade API:er{#data-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Med dataorienterade API:er kan du hantera hela datamodellen.
 
@@ -35,7 +37,7 @@ En presentation av datamodellen finns i [Adobe Campaign datamodell](../../config
 
 Läs den här artikeln om du vill skapa en struktur: [Så här skapar du en datamodell eller en datamordlista](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
-## Fråga och författare {#query-and-writer}
+## Fråga och skrivprogram {#query-and-writer}
 
 Följande introduktionsschema innehåller information om utbyten på låg nivå för läsning (ExecuteQuery) och skrivning (Writer) mellan databas och kund (webbsidor eller Adobe Campaign klientkonsol).
 
@@ -79,7 +81,7 @@ Definition av metoden &quot;ExecuteQuery&quot; i schemat &quot;xtk:queryDef&quot
 >
 >Detta är en const-metod. Indataparametrarna inkluderas i ett XML-dokument i formatet för xtk:queryDef-schemat.
 
-### Format för XML-dokumentet för indatafrågan {#format-of-the-xml-document-of-the-input-query}
+### Format för XML-dokumentet i indatafrågan {#format-of-the-xml-document-of-the-input-query}
 
 XML-dokumentets struktur för frågan beskrivs i schemat &quot;xtk:queryDef&quot;. I det här dokumentet beskrivs satserna i en SQL-fråga: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
@@ -142,7 +144,7 @@ Den önskade typen av åtgärd anges i attributet **operation** och innehåller 
 
 Syntaxen **XPath** används för att hitta data baserat på indatabildsläget. Mer information om XPaths finns i [Datascheman](../../configuration/using/data-schemas.md).
 
-#### Exempel med åtgärden get {#example-with-the--get--operation}
+#### Exempel på åtgärden get {#example-with-the--get--operation}
 
 Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:ecifikt&quot; schema) med ett filter i e-postmeddelandet.
 
@@ -257,7 +259,7 @@ Frågan kan förenklas genom att attributet **groupBy** läggs till direkt i fä
 >
 >Du behöver inte längre fylla i `<groupby>`-elementet.
 
-#### Klamrar i villkor {#bracketing-in-conditions}
+#### Brackering under förhållanden {#bracketing-in-conditions}
 
 Här är två exempel på hakparenteser på samma villkor.
 
@@ -547,7 +549,7 @@ Det går att framtvinga typen av åtgärd genom att fylla i attributet **_operat
 * **delete**: tar bort posterna,
 * **ingen**: används endast för länkavstämning, utan uppdatering eller infogning.
 
-### Exempel med Write-metoden {#example-with-the--write--method}
+### Exempel med metoden &#39;Write&#39; {#example-with-the--write--method}
 
 Uppdatera eller infoga en mottagare (implicit&quot;insertOrUpdate&quot;-åtgärd) med e-postadress, födelsedatum och ort:
 

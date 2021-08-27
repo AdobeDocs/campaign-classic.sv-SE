@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Använda en analysrapport{#processing-a-report}
+
+![](../../assets/common.svg)
 
 ## Spara en analysrapport {#saving-an-analysis-report}
 
@@ -121,7 +123,7 @@ Om du vill exportera data från en analysrapport klickar du på listrutan och v�
 
 ![](assets/s_ncs_user_report_wizard_09.png)
 
-Se denna [sida](../../reporting/using/actions-on-reports.md) för mer information om detta.
+Mer information finns på [den här sidan](../../reporting/using/actions-on-reports.md).
 
 ## Återanvända befintliga rapporter och analyser {#re-using-existing-reports-and-analyses}
 
@@ -136,7 +138,7 @@ Om du vill skapa beskrivande analysrapporter måste den beskrivande analysguiden
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## Arkiverar analysrapporter {#archiving-analysis-reports}
+## Arkiveringsanalysrapporter {#archiving-analysis-reports}
 
 När du skapar en beskrivande analys baserad på en befintlig analys kan du skapa arkiv för att lagra data och jämföra rapportresultat.
 

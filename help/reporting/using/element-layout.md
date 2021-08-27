@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # Elementlayout{#element-layout}
 
+![](../../assets/common.svg)
+
 Förutom de olika diagram som beskrivs här: [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants), kan du anpassa visningen och lägga till element på rapportsidorna.
 
 Du kan använda behållare: Med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [det här avsnittet](../../web/using/defining-web-forms-layout.md#creating-containers).
 
 Du kan konfigurera rapportlayouten i roten av trädet och överlagra den för varje behållare. Sidorna sorteras i kolumner. Behållare sorteras också i kolumner. Endast statiska och grafiska objekt sorteras i celler.
 
-## Definiera alternativen för varje sida {#defining-the-options-for-each-page}
+## Definiera alternativ för varje sida {#defining-the-options-for-each-page}
 
 Du kan använda alternativen på varje sida i rapporten.
 

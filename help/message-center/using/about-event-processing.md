@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Händelsebearbetning {#about-event-processing}
+
+![](../../assets/v7-only.svg)
 
 I kontexten för transaktionsmeddelanden genereras en händelse av ett externt informationssystem och skickas till Adobe Campaign via metoderna **[!UICONTROL PushEvent]** och **[!UICONTROL PushEvents]** (se [Händelsebeskrivning](../../message-center/using/event-description.md)).
 
@@ -23,7 +25,7 @@ Exempel på händelsedata:
 
 ![](assets/messagecenter_events_request_001.png)
 
-## Händelsebearbetningssteg {#event-processing}
+## Steg för händelsebearbetning {#event-processing}
 
 För att bearbeta transaktionsmeddelandehändelser tillämpas följande steg på körningsinstansen/instanserna:
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Inkrementell fråga{#incremental-query}
+
+![](../../assets/common.svg)
 
 Med en stegvis fråga kan du regelbundet välja ett mål baserat på ett villkor, samtidigt som du utesluter de personer som redan är målinriktade för det här kriteriet.
 
@@ -23,8 +25,8 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 **Relaterade ämnen:**
 
-* [Användningsfall: Kvartalslistuppdatering med inkrementell fråga](../../workflow/using/quarterly-list-update.md)
-* [Skapa en fråga](../../workflow/using/query.md#creating-a-query)
+* [Användningsfall: Kvartalslistuppdatering med inkrementell fråga](quarterly-list-update.md)
+* [Skapa en fråga](query.md#creating-a-query)
 
 >[!CAUTION]
 >

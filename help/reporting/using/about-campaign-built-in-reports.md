@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Om inbyggda rapporter i Campaign{#about-campaign-built-in-reports}
+
+![](../../assets/common.svg)
 
 I det här kapitlet finns en lista med Adobe Campaign inbyggda rapporter, deras innehåll och sammanhang. Med hjälp av informationen nedan kan du undvika att skapa rapporter som redan är tillgängliga på plattformen.
 

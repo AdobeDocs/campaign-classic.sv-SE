@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Vanliga frågor och svar om builduppgradering
+title: Vanliga frågor och svar om Builduppgradering
 description: Vanliga frågor om uppgraderingar av Campaign-versioner
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 5%
 
 ---
 
-# Vanliga frågor om uppgradering av bygge {#build-upgrade-faq}
+# Vanliga frågor om uppgradering {#build-upgrade-faq}
+
+![](../../assets/common.svg)
 
 Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [versionsinformation](../../rn/using/rn-overview.md) är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
@@ -81,7 +83,7 @@ Uppgradering är en tvåstegsprocess:
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
-Mer information finns i [det här dokumentet](https://helpx.adobe.com/sv/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
 
 ## Vilka resurser behövs för uppgraderingen?
 
@@ -164,11 +166,11 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 ## Vem ska jag kontakta för att öppna uppgraderingsbiljetten?
 
-Om du får problem efter en uppgraderingsversion kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
+Om du får problem efter en uppgraderingsversion kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
 Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 
-## Build upgrade checklist {#check-list}
+## Bygg checklista för uppgradering {#check-list}
 
 ### Checklista för efteruppgradering av molnmeddelandeserver
 

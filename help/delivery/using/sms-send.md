@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Skicka, övervaka och spåra SMS-leveranser{#sms-properties}
+
+![](../../assets/common.svg)
 
 ## Skicka SMS-meddelanden {#sending-sms-messages}
 
@@ -167,4 +169,4 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 >
 >Den här typen av automatiska meddelanden sparar ingen historik. Därför visas de inte på kontrollpanelen för leveranser. [Läs mer](delivery-dashboard.md).
 >
->Dessa meddelanden tas inte med i de kommersiella tryckreglerna. [Läs mer](../../campaign/using/pressure-rules.md).
+>Dessa meddelanden tas inte med i de kommersiella tryckreglerna. [Läs mer](../../campaign-opt/using/pressure-rules.md).

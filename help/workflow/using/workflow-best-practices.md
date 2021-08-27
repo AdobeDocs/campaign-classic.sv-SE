@@ -1,25 +1,27 @@
 ---
 product: campaign
-title: Bästa praxis för arbetsflöden
+title: God praxis för arbetsflöden
 description: Lär dig mer om arbetsflöden för kampanjer
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1612'
 ht-degree: 6%
 
 ---
 
-# Bäst praxis för arbetsflöden{#workflow-best-practices}
+# God praxis för arbetsflöden{#workflow-best-practices}
+
+![](../../assets/common.svg)
 
 ## Körning och prestanda {#execution-and-performance}
 
 Nedan visas allmänna riktlinjer för hur du optimerar Campaign-prestanda, inklusive bästa praxis för dina arbetsflöden.
 
-Felsökningsriktlinjer för arbetsflödeskörning finns också i [det här avsnittet](../../production/using/workflow-execution.md).
+Felsökningsriktlinjer för arbetsflödeskörning finns också i [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
 
 ### Loggar {#logs}
 
@@ -42,7 +44,7 @@ Det finns ytterligare två lösningar:
    Det här alternativet är tillgängligt på fliken **[!UICONTROL Execution]** för arbetsflödesegenskaper. Alla SQL-frågor som genereras av verktyget loggas från de olika aktiviteterna. Det är ett bra sätt att se vad som faktiskt utförs av plattformen. Detta alternativ bör dock endast användas tillfälligt under utvecklingen och inte aktiveras i produktionen.
 
 Rensa loggarna när de inte behövs längre. Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via menyn **[!UICONTROL File > Actions]** eller genom att klicka på knappen Åtgärder i verktygsfältet ovanför listan. Välj Rensa historik.
-Mer information om hur du tömmer dina loggar finns i den här [dokumentationen](../../workflow/using/starting-a-workflow.md).
+Mer information om hur du tömmer dina loggar finns i den här [dokumentationen](starting-a-workflow.md).
 
 ### Arbetsflödesplanering {#workflow-planning}
 
@@ -116,17 +118,17 @@ Alla schemalagda arbetsflöden som körs i produktionsmiljöer bör övervakas f
 
 I arbetsflödesegenskaperna väljer du en supervisor-grupp, antingen standardgruppen **[!UICONTROL Workflow supervisors]** eller en anpassad grupp. Se till att minst en operator tillhör den här gruppen, med en e-postkonfiguration.
 
-Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. Mer information finns i [Hantera fel](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
+Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. Mer information finns i [Hantera fel](monitoring-workflow-execution.md#managing-errors).
 
-Kontrollera regelbundet fliken **[!UICONTROL Monitoring]** för att visa den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Kontrollera regelbundet fliken **[!UICONTROL Monitoring]** för att visa den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](monitoring-workflow-execution.md#instance-supervision).
 
-Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Mer information finns i [Arbetsflödesövervakning](../../workflow/using/heatmap.md).
+Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Mer information finns i [Arbetsflödesövervakning](heatmap.md).
 
 ## Använda aktiviteter {#using-activities}
 
 >[!CAUTION]
 >
->Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. Vi rekommenderar i stället att du **duplicerar** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](../../workflow/using/building-a-workflow.md#duplicating-workflows).
+>Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. Vi rekommenderar i stället att du **duplicerar** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](building-a-workflow.md#duplicating-workflows).
 
 ### Namn på aktiviteten {#name-of-the-activity}
 
@@ -137,11 +139,11 @@ Aktivitetsnamnet finns på fliken **[!UICONTROL Advanced]**. Låt dem inte ha na
 ### Första och sista aktiviteten {#first-and-last-activities}
 
 * Starta alltid arbetsflödet med en **[!UICONTROL Start]**-aktivitet eller en **[!UICONTROL Scheduler]**-aktivitet. När det är relevant kan du även använda en **[!UICONTROL External signal]**-aktivitet.
-* När du skapar arbetsflödet ska du bara använda en **[!UICONTROL Scheduler]**-aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra) så multipliceras antalet uppgifter som ska utföras exponentiellt vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även för alla aktiviteter med en **[!UICONTROL Scheduling & History]**-flik. Läs mer om [Schemaläggning](../../workflow/using/scheduler.md).
+* När du skapar arbetsflödet ska du bara använda en **[!UICONTROL Scheduler]**-aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra) så multipliceras antalet uppgifter som ska utföras exponentiellt vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även för alla aktiviteter med en **[!UICONTROL Scheduling & History]**-flik. Läs mer om [Schemaläggning](scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
-* Använd **[!UICONTROL End]**-aktiviteter för varje arbetsflöde. På så sätt kan Adobe Campaign frigöra temporärt utrymme som används för beräkningar i arbetsflöden. Mer information finns i: [Start och slut](../../workflow/using/start-and-end.md).
+* Använd **[!UICONTROL End]**-aktiviteter för varje arbetsflöde. På så sätt kan Adobe Campaign frigöra temporärt utrymme som används för beräkningar i arbetsflöden. Mer information finns i: [Start och slut](start-and-end.md).
 
 ### Javascript inom en aktivitet {#javascript-within-an-activity}
 

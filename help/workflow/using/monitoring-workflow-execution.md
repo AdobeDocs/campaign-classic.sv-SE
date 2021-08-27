@@ -1,29 +1,31 @@
 ---
 product: campaign
-title: Övervaka körning av arbetsflöde
-description: Övervaka körning av arbetsflöde
+title: Övervaka arbetsflödeskörning
+description: Övervaka arbetsflödeskörning
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
 
-# Övervaka körning av arbetsflöde {#monitoring-workflow-execution}
+# Övervaka arbetsflödeskörning {#monitoring-workflow-execution}
+
+![](../../assets/common.svg)
 
 I det här avsnittet finns information om hur du övervakar arbetsflödenas körning.
 
-Ett användningsexempel om hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot; finns också i [det här avsnittet](../../workflow/using/supervising-workflows.md#supervising-workflows).
+Ett användningsexempel om hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot; finns också i [det här avsnittet](supervising-workflows.md#supervising-workflows).
 
-Administratörer för instansen kan dessutom använda **granskningsspåret** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Mer information finns i [dedikerat avsnitt](../../production/using/audit-trail.md).
+Administratörer för instansen kan dessutom använda **granskningsspåret** för att kontrollera aktiviteter och senaste ändringar av arbetsflöden, arbetsflödenas status. Mer information finns i [Campaign Classic v7 Production Guide](../../production/using/audit-trail.md).
 
-Ytterligare sätt att övervaka de olika Campaign-processerna presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
+Ytterligare sätt att övervaka olika Campaign-processer finns i [Campaign Classic v7 Production Guide](../../production/using/monitoring-guidelines.md).
 
-## Visar förlopp {#displaying-progress}
+## Visa förlopp {#displaying-progress}
 
 Du kan övervaka körningen genom att visa förloppet med lämplig ikon i verktygsfältet.
 
@@ -35,7 +37,7 @@ När det här alternativet är markerat visas utförda aktiviteter i blått, vä
 
 ![](assets/s_user_segmentation_results.png)
 
-## Visar loggar {#displaying-logs}
+## Visa loggar {#displaying-logs}
 
 Loggen innehåller historiken eller granskningsspåret för arbetsflödet. Den registrerar alla användaråtgärder, alla åtgärder som utförts och fel som påträffats. Du kan:
 
@@ -95,7 +97,7 @@ I loggen visas den kronologiska listan med körningsmeddelanden som rör arbetsf
 
 ## Rensar loggarna {#purging-the-logs}
 
-Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via menyn **[!UICONTROL File > Actions]** eller genom att klicka på knappen **[!UICONTROL Actions]** i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**.  Alternativen som finns på **[!UICONTROL Actions]**-menyn beskrivs i [verktygsfältet Åtgärder](../../workflow/using/starting-a-workflow.md).
+Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via menyn **[!UICONTROL File > Actions]** eller genom att klicka på knappen **[!UICONTROL Actions]** i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**.  Alternativen som finns på **[!UICONTROL Actions]**-menyn beskrivs i [verktygsfältet Åtgärder](starting-a-workflow.md).
 
 ![](assets/purge_historique.png)
 
@@ -105,7 +107,7 @@ Arbetsflödet konverterar arbetstabeller som kan ändras via vissa aktiviteter. 
 
 Det går också att skapa länkar mellan olika arbetsdimensioner och definiera dimensionsändringar. För varje kontrakt som registreras i databasen anger du t.ex. huvudinnehavaren och använder uppgifter om medägare i den ytterligare informationen.
 
-Arbetstabellerna i arbetsflödet tas bort automatiskt när arbetsflödet försätts i viloläge. Om du vill behålla en arbetstabell sparar du den i en lista via aktiviteten **[!UICONTROL List update]** (se [Listuppdatering](../../workflow/using/list-update.md)).
+Arbetstabellerna i arbetsflödet tas bort automatiskt när arbetsflödet försätts i viloläge. Om du vill behålla en arbetstabell sparar du den i en lista via aktiviteten **[!UICONTROL List update]** (se [Listuppdatering](list-update.md)).
 
 ## Hantera fel {#managing-errors}
 
@@ -141,7 +143,7 @@ I det här fallet avbryts felaktiviteten. Det här läget passar särskilt bra f
 >
 >Du kan använda den här konfigurationen separat för varje aktivitet. Det gör du genom att redigera aktivitetsegenskaperna och välja felhanteringsläget på fliken **[!UICONTROL Advanced]**.
 
-Mer information om felsökning av arbetsflödenas körning finns i [det dedikerade avsnittet](../../production/using/workflow-execution.md).
+Mer information om felsökning av arbetsflödenas körning finns i [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
 
 ## Bearbetningsfel {#processing-errors}
 
@@ -179,7 +181,7 @@ Klicka på länken i ett arbetsflöde med fel för att öppna det och visa logge
 
 ![](assets/wf-monitoring_edit-task-wf.png)
 
-## Förhindra samtidig körning av flera körningar {#preventing-simultaneous-multiple-executions}
+## Förhindra samtidiga körningar {#preventing-simultaneous-multiple-executions}
 
 Ett arbetsflöde kan ha flera körningar samtidigt. I vissa fall bör du förhindra att detta händer.
 
@@ -228,29 +230,29 @@ Observera att:
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar](../../workflow/using/coordinating-data-updates.md).
+Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar](coordinating-data-updates.md).
 
 ## Databasunderhåll {#database-maintenance}
 
 I arbetsflöden används många arbetstabeller som förbrukar utrymme och gör att hela plattformen blir långsammare om den inte underhålls. Mer information om databasunderhåll finns i [avsnittet](../../production/using/tables-to-maintain.md).
 
-Med hjälp av arbetsflödet **Databasrensning** som är tillgänglig via noden **Administration > Produktion > Tekniska arbetsflöden** kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något. Se det här [avsnittet](../../production/using/database-cleanup-workflow.md).
+Med hjälp av arbetsflödet **Databasrensning** som är tillgänglig via noden **Administration > Produktion > Tekniska arbetsflöden** kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något. Se [Campaign Classic v7 Production Guide](../../production/using/database-cleanup-workflow.md).
 
-Du kan också skapa specifika tekniska arbetsflöden för att rensa bort onödiga datamängder. Se det här [avsnittet](../../production/using/application-objects.md) och den här [sidan](#purging-the-logs).
+Du kan också skapa specifika tekniska arbetsflöden för att rensa bort onödiga datamängder. Se [Campaign Classic v7 Production Guide](../../production/using/application-objects.md) och det här [avsnittet](#purging-the-logs).
 
 ## Hantering av pausade arbetsflöden {#handling-of-paused-workflows}
 
 Om ett arbetsflöde pausas rensas aldrig arbetsflödets arbetsregister som standard. Från och med bygge 880 stoppas automatiskt arbetsflöden som har pausats för länge och arbetsflödena töms. Detta beteende aktiveras enligt följande:
 
 * Arbetsflöden som har pausats sedan mer än 7 dagar visas som en varning på kontrollpanelen (och övervaknings-API:t) och ett meddelande skickas till den övervakande gruppen.
-* Samma sak händer varje vecka när det tekniska arbetsflödet **[!UICONTROL cleanupPausedWorkflows]** aktiveras. Mer information om arbetsflödet finns i [det här avsnittet](../../workflow/using/delivery.md).
+* Samma sak händer varje vecka när det tekniska arbetsflödet **[!UICONTROL cleanupPausedWorkflows]** aktiveras. Mer information om arbetsflödet finns i [det här avsnittet](delivery.md).
 * Efter fyra meddelanden (en månad i pausat läge som standard) stoppas arbetsflödet villkorslöst. En logg visas i arbetsflödet när det har stoppats. Tabellerna rensas vid nästa körnings **[!UICONTROL cleanup]**-arbetsflöde
 
 Dessa punkter kan konfigureras via alternativet NmsServer_PausedWorkflowPeriod.
 
 Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista användaren som ändrade det meddelas också. Administratörer får inte meddelanden.
 
-## Filtrera arbetsflöden efter deras status {#filtering-workflows-status}
+## Filtrera arbetsflöden utifrån deras status {#filtering-workflows-status}
 
 Med Campaign Classic-gränssnittet kan du övervaka körningsstatusen för alla arbetsflöden på instansen med fördefinierade **vyer**. Öppna noden **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** för att få åtkomst till dessa vyer.
 
@@ -259,7 +261,7 @@ Följande vyer är tillgängliga:
 * **[!UICONTROL Running]**: visar alla arbetsflöden som körs.
 * **[!UICONTROL Paused]**: visar alla pausade arbetsflöden.
 * **[!UICONTROL Failed]**: visar alla misslyckade arbetsflöden.
-* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med **marknadsföringskampanjer**-paketet (se [Installera Campaign-inbyggda paket](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med **marknadsföringskampanjer**-paketet. Läs mer i [installationshandboken för Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 

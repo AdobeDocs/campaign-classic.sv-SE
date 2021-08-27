@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Skapa ett erbjudande{#creating-an-offer}
+
+![](../../assets/v7-only.svg)
 
 ## Skapa erbjudandet {#creating-the-offer}
 
@@ -39,7 +41,7 @@ Så här skapar du ett erbjudande:
 
    ![](assets/offer_create_004.png)
 
-## Konfigurerar anbudsberättigande {#configuring-offer-eligibility}
+## Konfigurera anbudsberättigande {#configuring-offer-eligibility}
 
 På fliken **[!UICONTROL Eligibility]** definierar du den period som erbjudandet gäller för och kan visas, vilka filter som ska gälla för målet och erbjudandevikten.
 
@@ -109,7 +111,7 @@ Så här skapar du en vikt i ett erbjudande:
    >
    >Om ett mål kan få flera vikter för ett valt erbjudande behåller motorn den bästa (högsta) vikten. Vid anrop till erbjudandemotorn väljs ett erbjudande högst en gång per kontakt.
 
-### Sammanfattning av regler för att välja erbjudande {#a-summary-of-offer-eligibility-rules}
+### Sammanfattning av regler för erbjudandekvalificering {#a-summary-of-offer-eligibility-rules}
 
 När konfigurationen är klar finns en sammanfattning av berättigandereglerna på instrumentpanelen för erbjudanden.
 
@@ -117,7 +119,7 @@ Om du vill visa den klickar du på länken **[!UICONTROL Schedule and eligibilit
 
 ![](assets/offer_eligibility_create_005.png)
 
-## Skapa erbjudandeinnehållet {#creating-the-offer-content}
+## Skapa erbjudandeinnehåll {#creating-the-offer-content}
 
 1. Klicka på fliken **[!UICONTROL Edit]** och sedan på fliken **[!UICONTROL Content]**.
 
@@ -181,6 +183,6 @@ Du kan skapa hypoteser om dina erbjudanden. På så sätt kan du avgöra hur era
 
 Hypoeser som utförs på ett erbjudande refereras på fliken **[!UICONTROL Measure]**.
 
-Skapa hypoteser beskrivs i [den här sidan](../../campaign/using/about-response-manager.md).
+Skapa hypoteser beskrivs i [den här sidan](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

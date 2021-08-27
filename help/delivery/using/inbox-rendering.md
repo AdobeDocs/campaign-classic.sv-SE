@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Inkorgsåtergivning{#inbox-rendering}
+
+![](../../assets/common.svg)
 
 ## Om inkorgsåtergivning {#about-inbox-rendering}
 
@@ -84,7 +86,6 @@ Varje gång du använder funktionen **[!UICONTROL Inbox rendering]** i en levera
 >* Om du genererar återgivningen av Inkorgen igen för samma leverans minskas antalet tillgängliga tokens igen med antalet genererade återgivningar.
 
 >
-
 
 
 Antalet återstående tillgängliga token visas i **[!UICONTROL General summary]** i [rapporten för inkorgsåtergivning](#inbox-rendering-report).

@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 19%
@@ -14,6 +14,8 @@ ht-degree: 19%
 ---
 
 # Skapa en ny webbapplikation{#creating-a-new-web-application}
+
+![](../../assets/common.svg)
 
 Webbprogramstyper väljs när de skapas.
 
@@ -37,7 +39,7 @@ Den här mallen avgör typen av webbprogram. Du kan skapa:
 
 1. Landningssidor
 
-   En landningssida är en HTML-sida vars innehåll är tillgängligt på en webbplats och som gör det möjligt för användare att ange information som ska lagras i Adobe Campaign databasprofil. Innehållet på den här typen av sidor skapas vanligtvis av en specialiserad webbbyrå innan det importeras till Adobe Campaign för publicering, hantering och uppföljning. Se denna [sida](creating-a-landing-page.md) för mer information om detta.
+   En landningssida är en HTML-sida vars innehåll är tillgängligt på en webbplats och som gör det möjligt för användare att ange information som ska lagras i Adobe Campaign databasprofil. Innehållet på den här typen av sidor skapas vanligtvis av en specialiserad webbbyrå innan det importeras till Adobe Campaign för publicering, hantering och uppföljning. Mer information finns på [den här sidan](creating-a-landing-page.md).
 
 1. Undersökningar
 

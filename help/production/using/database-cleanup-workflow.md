@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Arbetsflöde för databasrensning{#database-cleanup-workflow}
+
+![](../../assets/v7-only.svg)
 
 ## Introduktion {#introduction}
 
@@ -44,7 +46,7 @@ Som standard är arbetsflödet **[!UICONTROL Database cleanup]** konfigurerat at
 >
 >Arbetsflödesmotorn (wfserver) måste startas för att arbetsflödet **[!UICONTROL Database cleanup]** ska starta vid det datum och den tid som definieras i schemaläggaren. Om så inte är fallet kommer ingen databasrensning att utföras förrän nästa gång arbetsflödesmotorn startas.
 
-### Distributionsguiden {#deployment-wizard}
+### Distributionsguide {#deployment-wizard}
 
 Med **[!UICONTROL Deployment wizard]**, som du kommer åt via menyn **[!UICONTROL Tools > Advanced]**, kan du konfigurera hur länge data sparas för. Värdena anges i dagar. Om dessa värden inte ändras används standardvärdena i arbetsflödet.
 
@@ -120,7 +122,7 @@ Den första åtgärden som körs av arbetsflödet **[!UICONTROL Database cleanup
 
    där **$(l)** är listidentifieraren
 
-### Rensa leveranser som ska tas bort eller återvinnas {#cleanup-of-deliveries-to-be-deleted-or-recycled}
+### Rensa leveranser som ska raderas eller återvinnas {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
 Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
@@ -170,7 +172,7 @@ Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
    där **$(l)** är leveransens identifierare.
 
-#### Leveranser med medelkälla {#deliveries-using-mid-sourcing}
+#### Leveranser med medelhög källkod {#deliveries-using-mid-sourcing}
 
 Arbetsflödet **[!UICONTROL Database cleanup]** tar även bort leveranser på mellankällservern/mellankällservern/mittkällservrarna.
 
@@ -297,7 +299,7 @@ Den här aktiviteten tar bort alla arbetsregister som matchar leveranser vars st
    DROP TABLE wkDlv_15487_1;
    ```
 
-### Rensa nekanden som genererats av importer {#cleanup-of-rejects-generated-by-imports-}
+### Rensa nekanden som genererats av import {#cleanup-of-rejects-generated-by-imports-}
 
 I det här steget kan du ta bort poster som inte bearbetades av alla data under importen.
 
@@ -384,7 +386,7 @@ Den här uppgiften tar bort arbetsflödesinloggningar med följande fråga:
 DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM XtkWorkflow)
 ```
 
-### Rensa tabeller för överblivna verk {#cleanup-of-orphan-work-tables}
+### Rensa tabeller över överblivna arbeten {#cleanup-of-orphan-work-tables}
 
 Den här aktiviteten tar bort överblivna arbetsregister som är länkade till grupper. Registret **NmsGroup** lagrar de grupper som ska rensas (med en annan typ än 0). Prefixet för tabellnamnen är **grp**. Följande fråga används för att identifiera de grupper som ska rensas:
 
@@ -402,7 +404,7 @@ DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WH
 
 där **$(tsDate)** är det aktuella serverdatumet, från vilket vi subtraherar den period som definierats för alternativet **NmsCleanup_VisitorPurgeDelay**.
 
-### Rensa NPAI {#cleanup-of-npai}
+### Rengöring av NPAI {#cleanup-of-npai}
 
 Med den här aktiviteten kan du ta bort poster som matchar giltiga adresser från tabellen **NmsAddress**. Följande fråga används för att utföra massborttagning:
 
@@ -412,7 +414,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 där **status 2** matchar statusen **[!UICONTROL Valid]** är **$(tsDate1)** aktuellt serverdatum och **$(tsDate2)** matchar alternativet **NmsCleanup_LastCleanup**.
 
-### Rensning av prenumerationer {#cleanup-of-subscriptions-}
+### Rensa prenumerationer {#cleanup-of-subscriptions-}
 
 Den här aktiviteten tar bort alla prenumerationer som tagits bort av användaren från tabellen **NmsSubscription** med massborttagning. Följande fråga används:
 
@@ -473,7 +475,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
 
    där **$(option)** matchar det datum som definierats för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [Distributionsguiden](#deployment-wizard)).
 
-### Rensa tabellen NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
+### Rensning av tabellen NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
 Den här aktiviteten rensar tabellen **NmsEmailErrorStat**. Huvudprogrammet (**coalesceErrors**) definierar två datum:
 
@@ -521,7 +523,7 @@ Slingan och aktivitetsstoppet.
 
 Rensningar utförs i tabellerna **NmsEmailError** och **cleanupNmsMxDomain**.
 
-### Rensa NmsEmailError-tabellen {#cleanup-of-the-nmsemailerror-table-}
+### Rensning av tabellen NmsEmailError {#cleanup-of-the-nmsemailerror-table-}
 
 Följande fråga används:
 

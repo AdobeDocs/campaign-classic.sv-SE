@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '551'
 ht-degree: 1%
 
 ---
 
 # Egenskaper för arbetsflöde{#workflow-properties}
+
+![](../../assets/common.svg)
 
 ## Fliken Körning {#execution-tab}
 
@@ -39,7 +41,7 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
    Om installationen innehåller flera arbetsflödesservrar använder du det här fältet för att välja vilken dator arbetsflödet ska köras på. Om värdet som definieras i det här fältet inte finns på någon server, kommer arbetsflödet att förbli väntande.
 
-   Se det här [avsnittet](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Se den här [installationshandboken för Campaign Classic v7](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 

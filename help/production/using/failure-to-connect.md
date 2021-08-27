@@ -6,18 +6,20 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
 
 # Det gick inte att ansluta{#failure-to-connect}
 
+![](../../assets/v7-only.svg)
+
 Orsaken till ett anslutningsproblem kan vara flera och beror på olika sammanhang.
 
-Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Nätverkskonfiguration{#network-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## Kommunikation mellan processer {#communication-between-processes}
 
@@ -119,7 +121,7 @@ För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öp
  </tbody> 
 </table>
 
-### Rich client {#rich-client}
+### Rich Client {#rich-client}
 
 För Adobe Campaign-klienten (**nlclient**) måste följande portar vara öppna:
 

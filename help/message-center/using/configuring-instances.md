@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 
 # Konfigurera instanser {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 Om du vill använda funktionerna för transaktionsmeddelanden måste du konfigurera instanser för kontroll och körning. Du kan använda antingen:
 * [En kontrollinstans ](#control-instance) associerad med en eller flera körningsinstanser
@@ -148,7 +150,7 @@ Om du vill använda ett tomt lösenord går du till körningsinstanserna och def
 
 Om du använder flera körningsinstanser upprepar du dessa steg för varje körningsinstans.
 
-## Använd flera kontrollinstanser {#using-several-control-instances}
+## Använda flera kontrollinstanser {#using-several-control-instances}
 
 Du kan dela ett körningskluster med olika kontrollinstanser. Den här typen av arkitektur kräver följande konfiguration.
 

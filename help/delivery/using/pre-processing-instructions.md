@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Instruktioner för förbehandling {#pre-processing-instructions}
+
+![](../../assets/common.svg)
 
 Du kan använda en specifik syntax i leveransinnehållet för att lägga till instruktioner och skripta URL:en för det spårade e-postmeddelandet. &lt;%@-instruktionerna är inte JavaScript: syntaxen är specifik för Adobe Campaign.
 
@@ -113,7 +115,7 @@ Använd följande syntax för leveransparametrar/variabler (med leveransobjektet
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] i ett Javascript-avsnitt  {#value-in-javascript}
+### [!DNL value] i ett Javascript-avsnitt {#value-in-javascript}
 
 Om du vill tillåta användning av &lt;%@ värde i JavaScript-avsnitt ersätts två specialobjekt med &lt;% och %>:
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera och hantera godkännandeprocessen {#approving-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 Varje steg i en leverans kan godkännas för att säkerställa full övervakning och kontroll av kampanjens olika processer: målgruppsanpassning, innehåll, budget, extrahering och utskick av ett bevis.
 
@@ -85,7 +87,7 @@ Kontrollera den information som ska godkännas, välj om du vill godkänna eller
 >
 >Om en process redan har godkänts av en annan operator är godkännandelänken inte tillgänglig.
 
-### Godkännande via aviseringsmeddelanden {#approval-via-notification-messages}
+### Godkännande via meddelanden {#approval-via-notification-messages}
 
 Klicka på länken som finns i meddelandet (se [Meddelanden](#notifications)). Du måste logga in enligt nedan:
 
@@ -183,7 +185,6 @@ Nu är kampanjens status **[!UICONTROL To validate]**.
 >
 >Om du vill välja de processer som kräver ett godkännande ändrar du kampanjmallen. Mer information finns i [Kampanjmallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
 >[!NOTE]
@@ -253,7 +254,6 @@ Om du vill välja en lista med operatorer klickar du på länken **[!UICONTROL E
 >* Du kan lägga till påminnelser från det här avsnittet.
 
 >
-
 
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)

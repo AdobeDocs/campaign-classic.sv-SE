@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Simuleringsomfång{#simulation-scope}
+
+![](../../assets/v7-only.svg)
 
 ## Definition av omfattningen {#definition-of-the-scope}
 
@@ -42,7 +44,7 @@ Du kan också välja att utföra simuleringen för alla erbjudanden eller endast
 >
 >Du måste ange ett kontaktdatum. Detta gör att interaktionsmotorn kan sortera erbjudandena i den valda miljön eller kategorin. Om inget datum är konfigurerat genereras ett fel vid simuleringen.
 
-## Lägger till rapporteringsaxlar {#adding-reporting-axes}
+## Lägga till rapporteringsaxlar {#adding-reporting-axes}
 
 Du kan förbättra simuleringsanalysen genom att lägga till rapportaxlar på målet eller själva erbjudandena via fliken **[!UICONTROL Calculations]**.
 

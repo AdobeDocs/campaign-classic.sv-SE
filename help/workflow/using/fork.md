@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Förgrening{#fork}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **[!UICONTROL Fork]** kan du skapa flera utgående övergångar, så att du kan utföra flera aktiviteter oberoende av varandra i samma arbetsflöde.
 
@@ -32,4 +34,4 @@ Om du vill konfigurera aktiviteten **[!UICONTROL Fork]** öppnar du den och defi
 
 ![](assets/s_user_segmentation_fork.png)
 
-Du kan sedan konfigurera varje utgående övergång och sedan förena dem med en [AND-join](../../workflow/using/and-join.md)-aktivitet om det behövs. På så sätt körs resten av arbetsflödet bara när **[!UICONTROL Fork]**-aktivitetens utgående övergångar är klara.
+Du kan sedan konfigurera varje utgående övergång och sedan förena dem med en [AND-join](and-join.md)-aktivitet om det behövs. På så sätt körs resten av arbetsflödet bara när **[!UICONTROL Fork]**-aktivitetens utgående övergångar är klara.

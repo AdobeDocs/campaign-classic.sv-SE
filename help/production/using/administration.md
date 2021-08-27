@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Administration{#administration}
+
+![](../../assets/v7-only.svg)
 
 Automatisk start av Adobe Campaign-modulerna (**webb**, **mta**, **wfserver**, osv.) tillhandahålls av **nlserver**-servern.
 
@@ -80,17 +82,13 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >* Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
 
       >
-      >   
-      Exempel:
+      >   Exempel:
       >
-      >   
-      **webbverbose för omstart av nlserver**
+      >   **webbverbose för omstart av nlserver**
       >
-      >   
-      **nlserver start mta@myinstance -verbose**
+      >   **nlserver start mta@myinstance -verbose**
       >
-      >   
-      Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
+      >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
 
 
 * Starta alla Adobe Campaign-processer (motsvarar att starta tjänsten **nlserver6**):

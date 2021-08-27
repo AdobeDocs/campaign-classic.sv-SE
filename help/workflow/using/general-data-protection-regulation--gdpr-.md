@@ -5,7 +5,7 @@ description: Läs mer om arbetsflödena i förordningen om skydd av personuppgif
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 
 
 # Sekretessdataskyddsförordningen{#general-data-protection-regulation-gdpr}
+
+![](../../assets/common.svg)
 
 Arbetsflödena som beskrivs nedan installeras som standard med modulen **Sekretessdataskydd**. Mer information om den här modulen finns i den här [artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 

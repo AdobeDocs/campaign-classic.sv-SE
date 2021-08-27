@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 1%
+source-wordcount: '1291'
+ht-degree: 2%
 
 ---
 
 # Berikning{#enrichment}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till information i en profillista och länkar till en befintlig tabell (skapa en ny koppling). Avstämningskriterier med profiler i databasen kan också definieras.
 
@@ -50,15 +52,15 @@ Det finns fyra typer av länkar:
 
 Användningsexempel som beskriver hur anrikningsaktiviteter fungerar i sitt sammanhang finns också i följande avsnitt:
 
-* [E-postberikande med anpassade datumfält](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Berika data](../../workflow/using/enriching-data.md)
-* [Skapa en sammanfattningslista](../../workflow/using/creating-a-summary-list.md)
+* [E-postberikande med anpassade datumfält](email-enrichment-with-custom-date-fields.md).
+* [Berika data](enriching-data.md)
+* [Skapa en sammanfattningslista](creating-a-summary-list.md)
 
-## Lägger till information {#adding-information}
+## Lägga till information {#adding-information}
 
 Använd aktiviteten **[!UICONTROL Enrichment]** för att lägga till kolumner i en arbetstabell: den här aktiviteten kan användas som komplement till en frågeaktivitet.
 
-Konfigurationen av ytterligare kolumner beskrivs i [Lägga till data](../../workflow/using/query.md#adding-data).
+Konfigurationen av ytterligare kolumner beskrivs i [Lägga till data](query.md#adding-data).
 
 I fältet **[!UICONTROL Primary set]** kan du välja den inkommande övergången: uppgifterna om den här aktivitetens arbetsyta skall berikas.
 
@@ -151,13 +153,13 @@ Om flera kopplingsvillkor anges måste ALLA verifieras så att data kan länkas 
 
 Med anrikningsaktiviteten kan du lägga till erbjudanden eller länkar till erbjudanden för mottagare.
 
-Mer information om anrikningsaktiviteten finns i [avsnittet](../../workflow/using/enrichment.md).
+Mer information om anrikningsaktiviteten finns i [avsnittet](enrichment.md).
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
 ![](assets/int_enrichment_offer1.png)
 
-När du har konfigurerat frågan (se [avsnittet](../../workflow/using/query.md)):
+När du har konfigurerat frågan (se [avsnittet](query.md)):
 
 1. Lägg till och öppna en anrikningsaktivitet.
 1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
@@ -176,7 +178,7 @@ När du har konfigurerat frågan (se [avsnittet](../../workflow/using/query.md))
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](cross-channel-deliveries.md).
 
    Antalet tillgängliga offerter för förhandsgranskningen beror på konfigurationen som utförs i anrikningsaktiviteten snarare än eventuell konfiguration som utförs direkt i leveransen.
 
@@ -198,13 +200,13 @@ Så här gör du:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Leveranser i flera kanaler](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
    >Antalet tillgängliga offerter för förhandsgranskningen beror på konfigurationen som utförs i leveransen.
 
-## Rankningar och vikter för lagringserbjudanden {#storing-offer-rankings-and-weights}
+## Rankning och vikter för erbjudanden {#storing-offer-rankings-and-weights}
 
 När en **anrikning**-aktivitet används för att leverera erbjudanden lagras deras rankningar och deras vikter inte i förslagstabellen.
 
@@ -212,7 +214,7 @@ Aktiviteten **[!UICONTROL Offer engine]** lagrar den här informationen som stan
 
 Du kan dock lagra den här informationen på följande sätt:
 
-1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. Se det här [avsnittet](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet.
 1. Välj **[!UICONTROL Edit additional data...]** i aktivitetens huvudfönster.
 
    ![](assets/ita_enrichment_rankweight_1.png)

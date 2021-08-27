@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Installera servern{#installing-the-server}
 
-## Kör installationsprogrammet {#executing-the-installation-program}
+![](../../assets/v7-only.svg)
+
+## Köra installationsprogrammet {#executing-the-installation-program}
 
 Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Windows. Installera Adobe Campaign 64-bitarsversionen för en 64-bitarsplattform för Windows.
 
@@ -76,7 +78,7 @@ Om Adobe Campaign inte startas är svaret:
 No task
 ```
 
-## Första start av servern {#first-start-up-of-the-server}
+## Serverns första start {#first-start-up-of-the-server}
 
 När installationstestet är klart öppnar du en kommandotolk via menyn **[!UICONTROL Start > Programs > Adobe Campaign]** och anger följande kommando:
 
@@ -133,13 +135,13 @@ Följande information visas:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Lösenord för den interna identifieraren {#password-for-the-internal-identifier}
+## Lösenord för intern identifierare {#password-for-the-internal-identifier}
 
 Adobe Campaign-servern definierar en teknisk inloggning med namnet **internal** som har alla rättigheter för alla instanser. Precis efter installationen har inloggningen inget lösenord. Det är obligatoriskt att definiera en.
 
 Läs mer i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## Startar Adobe Campaign-tjänster {#starting-adobe-campaign-services}
+## Startar Adobe Campaign tjänster {#starting-adobe-campaign-services}
 
 Om du vill starta Adobe Campaign-tjänsterna kan du använda tjänsthanteraren eller ange följande på kommandoraden (med rätt behörighet):
 

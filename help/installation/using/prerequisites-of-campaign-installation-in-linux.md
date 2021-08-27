@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Krav för att installera Campaign på Linux{#prerequisites-of-campaign-installation-in-linux}
+
+![](../../assets/v7-only.svg)
 
 ## Programvarukrav {#software-prerequisites}
 
@@ -160,7 +162,7 @@ Följande konfigurationer är nödvändiga med CentOS:
    yum install ipa-gothic-fonts ipa-mincho-fonts
    ```
 
-## Lager för databasåtkomst {#database-access-layers}
+## Åtkomstlager för databaser {#database-access-layers}
 
 Åtkomstlagren för databasmotorn som du använder måste vara installerade på servern och tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
 

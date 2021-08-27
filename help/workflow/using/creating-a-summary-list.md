@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Skapa en sammanfattningslista{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 I det här exemplet beskrivs hur du skapar ett arbetsflöde som du kan skapa en sammanfattningslista genom att samla in filer och följa flera förbättringar. Exemplet är baserat på en lista med kontakter som har köpt i en butik.
 
@@ -92,7 +94,7 @@ Lägg till anrikningsaktiviteten och konfigurera den enligt följande:
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Mer information om de olika typerna av länkar finns i [Förbättra och ändra data](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
+Mer information om de olika typerna av länkar finns i [Förbättra och ändra data](targeting-data.md#enriching-and-modifying-data).
 
 I följande fönster måste du skapa ett kopplingsvillkor genom att välja källfältet (i huvuduppsättningen) och målfältet (som tillhör schemat &quot;Stores&quot;) för att konfigurera datavstämningen.
 
@@ -110,7 +112,7 @@ Informationen i arbetsflödets arbetsregister efter denna berikning är följand
 
 ![](assets/uc2_enrich_population1.png)
 
-## Steg 2: Skriv data som berikats i tabellen &#39;Inköp&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Steg 2: Skriv data i registret &#39;Inköp&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
 
 I det här steget beskrivs hur du skriver importerade och berikade data till tabellen&quot;Inköp&quot;. För att göra detta måste vi använda en **Uppdatera data**-aktivitet.
 
@@ -134,7 +136,7 @@ I aktiviteten **Uppdatera data** krävs följande konfiguration:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Steg 3: Fyll i &#39;Kontakt&#39;-data {#step-3--enriching--contact--data-}
+## Steg 3: Berika kontaktdata {#step-3--enriching--contact--data-}
 
 Schemat&quot;Kontakter&quot; är fysiskt länkat till schemat&quot;Inköp&quot;. Det innebär att du kan använda ett annat alternativ för alternativet &quot;Anrikning&quot;: lägga till data som är länkade till filtreringsdimensionen.
 
@@ -170,7 +172,7 @@ Om du vill förbereda sammanfattningslistan måste du lägga till fält från f�
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Steg 4: Skapa och lägg till i en sammanfattningslista {#step-4--creating-and-adding-to-a-summary-list}
+## Steg 4: Skapa och lägga till i en sammanfattningslista {#step-4--creating-and-adding-to-a-summary-list}
 
 Det sista steget är att skriva alla data som berikats till en lista.
 

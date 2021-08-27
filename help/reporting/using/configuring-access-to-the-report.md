@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Konfigurera åtkomst till rapporten{#configuring-access-to-the-report}
 
-## Rapportvisningssammanhang {#report-display-context}
+![](../../assets/common.svg)
+
+## Rapportens visningssammanhang {#report-display-context}
 
 Definiera rapportens visningssammanhang på Adobe Campaign-plattformen med hjälp av fliken **[!UICONTROL Display]**. Åtkomsten till en rapport beror på dess urvalstyp, visningsvillkor och åtkomstauktoriseringar.
 
@@ -49,7 +51,7 @@ I följande exempel visas rapporten om huvudkampanjkanalen är e-post.
 
 Det innebär att om kampanjens huvudkanal är direktreklam kommer rapporten inte att vara tillgänglig i kampanjrapporterna.
 
-### Åtkomstauktorisering {#access-authorization}
+### Åtkomstbehörighet {#access-authorization}
 
 Rapporten kan delas med andra operatorer.
 
@@ -121,7 +123,7 @@ Med specifika inställningar kan du kontrollera fel. Inställningen **_uid** fin
 
 Mer information om de här inställningarna finns i avsnittet **Definiera egenskaper för webbformulär** i kapitlet [Webbformulär](../../web/using/about-web-forms.md).
 
-## Publicerar rapporten {#publishing-the-report}
+## Publicera rapporten {#publishing-the-report}
 
 Det är obligatoriskt att publicera rapporten för att dela den med andra operatorer och visa den i listan över tillgängliga rapporter (se även [Rapportvisningssammanhang](#report-display-context)). Denna åtgärd måste utföras igen varje gång rapporten ändras.
 

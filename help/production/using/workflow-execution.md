@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Arbetsflödeskörning{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 I avsnittet nedan visas information om vanliga problem som rör körning av arbetsflöden och hur du felsöker dem.
 
@@ -24,7 +26,7 @@ Mer information om arbetsflöden finns i följande avsnitt:
 * [Arbetsflödets livscykel](../../workflow/using/workflow-life-cycle.md)
 * [Bästa tillvägagångssätt när du använder arbetsflöden](../../workflow/using/workflow-best-practices.md)
 
-## Starta så snart som möjligt i kampanjer {#start-as-soon-as-possible-in-campaigns}
+## Börja så snart som möjligt i kampanjer {#start-as-soon-as-possible-in-campaigns}
 
 I vissa fall startar inte arbetsflöden som körs från en kampanj när du klickar på knappen **[!UICONTROL Start]**. I stället för att börja går den till läget&quot;Starta så snart som möjligt&quot;.
 
@@ -110,7 +112,7 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
    Mer information om hur du startar om moduler finns i [det här avsnittet](../../production/using/usual-commands.md#module-launch-commands).
 
-## Arbetsflödet misslyckades {#failed-workflow}
+## Misslyckat arbetsflöde {#failed-workflow}
 
 Om ett arbetsflöde misslyckas gör du så här:
 

@@ -2,18 +2,20 @@
 product: campaign
 title: Värdbaserade modeller
 description: Upptäck värdmodeller för Campaign
-feature: Översikt
+feature: Overview
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 2%
 
 ---
 
 # Värdbaserade modeller{#hosting-models}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign erbjuder ett urval av tre värdmodeller som ger flexibilitet och frihet att välja den bästa modellen, eller modeller som passar företagets behov.
 

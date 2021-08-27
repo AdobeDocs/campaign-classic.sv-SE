@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Ytterligare data{#additional-data}
+
+![](../../assets/v7-only.svg)
 
 Under ett anrop till interaktionsmotorn kan du överföra sammanhangsberoende ytterligare information. Dessa data kan komma från måldata som lagras i arbetsflödets arbetstabell (utgående kanal) eller de anropsdata som skickas av webbplatsen under anropet (inkommande kanal). Du kan använda dessa ytterligare data i reglerna för behörighet, i personalisering av erbjudanden, och du kan även lagra dem i en förslagstabell.
 
@@ -76,7 +78,7 @@ Du måste skapa ett målarbetsflöde som läser in ytterligare data i arbetstabe
 
 ## Använda ytterligare data {#using-additional-data}
 
-### Kvalifikationsregler {#eligibility-rules}
+### Villkor {#eligibility-rules}
 
 Du kan använda ytterligare data i reglerna för behörighet för erbjudanden, kategorier och vikter.
 

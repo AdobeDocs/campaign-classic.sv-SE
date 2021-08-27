@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # srcschema-element {#srcschema--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-14}
 
@@ -27,7 +29,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), e
 
 Ingen
 
-## Underordnade {#children-14}
+## Barn {#children-14}
 
 * `<attribute>`
 * `<createdby>`
@@ -43,7 +45,7 @@ Ingen
 
 `<srcschema>` är rotelementet i ett schema. Det är indatapunkten för definitionen av schemat.
 
-## Använd och använd {#use-and-context-of-use-9}
+## Användning och användningssammanhang {#use-and-context-of-use-9}
 
 Schemapresentation är tillgänglig i [Om schemareferens](../../../configuration/using/about-schema-reference.md) och [Schemastruktur](../../../configuration/using/schema-structure.md).
 

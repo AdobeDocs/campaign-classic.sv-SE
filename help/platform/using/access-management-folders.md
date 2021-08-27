@@ -2,18 +2,20 @@
 product: campaign
 title: Hantera åtkomst till Campaign-mappar
 description: Lär dig hur du ger åtkomst till Campaign-mappar och skapar vyer
-feature: Applikationsinställningar
+feature: Application Settings
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
 # Hantera åtkomst till mappar{#folder-access-management}
+
+![](../../assets/common.svg)
 
 Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och ta bort. För att få åtkomst till en fil måste en operator eller grupp av operatorer åtminstone ha läsåtkomst till den.
 

@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # Använd en webbformulärsmall{#using-a-web-form-template}
+
+![](../../assets/common.svg)
 
 Formulärmallar är återanvändbara konfigurationer där du kan skapa nya formulär. Som standard lagras formulärmallar med webbprogrammallar i noden **[!UICONTROL Resources > Templates > Web application templates]**.
 

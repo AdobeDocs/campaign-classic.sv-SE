@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Skicka med förbättrad MTA {#sending-with-enhanced-mta}
+
+![](../../assets/common.svg)
 
 Med **Adobe Campaign Enhanced MTA** (Mail Transfer Agent) får du en uppgraderad sändningsinfrastruktur som möjliggör förbättrad leveransförmåga, renommé, dataflöde, rapportering, studshantering, IP-rampkonfigurering och hantering av anslutningsinställningar.
 
@@ -96,7 +98,7 @@ För kunder som använder Adobe Campaign transaktionsmeddelandefunktioner köas 
 
 ### Förbättrade MTA-rubriker
 
-De senaste Campaign Classic-instanserna innehåller kod som lägger till de obligatoriska Enhanced MTA-rubrikerna i alla meddelanden. Om du använder Adobe Campaign 19.1 (build 9032) eller senare och om så inte är fallet, måste du begära [Adobe Customer Care](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) att lägga till parametern &quot;useMomentum=true&quot; i körningsinstanskonfigurationen (i filen [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), som kan vara din marknadsföringsinstans, [instans av mellanleverantörer](../../installation/using/mid-sourcing-server.md) eller [instans av körning av transaktionsmeddelanden](../../message-center/using/configuring-instances.md#execution-instance), beroende på din konfiguration.
+De senaste Campaign Classic-instanserna innehåller kod som lägger till de obligatoriska Enhanced MTA-rubrikerna i alla meddelanden. Om du använder Adobe Campaign 19.1 (build 9032) eller senare och om så inte är fallet, måste du begära [Adobe Customer Care](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) att lägga till parametern &quot;useMomentum=true&quot; i körningsinstanskonfigurationen (i filen [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), som kan vara din marknadsföringsinstans, [instans av mellanleverantörer](../../installation/using/mid-sourcing-server.md) eller [instans av körning av transaktionsmeddelanden](../../message-center/using/configuring-instances.md#execution-instance), beroende på din konfiguration.
 
 Om du använder en äldre instans som inte innehåller den här koden måste en ny typologiregel med namnet **[!UICONTROL Typology Rule for Enhanced MTAs]** läggas till i alla befintliga typologier i Campaign-instansen.
 Den här regeln läggs till av ett **[!UICONTROL Typology]**-paket som installeras som en del av uppgraderingen till det förbättrade MTA-paketet.
@@ -113,7 +115,7 @@ Om du är en hybridklient kommer Adobe Campaign-teamet att ge dig anvisningar om
 >
 >Instruktioner från Adobe Campaign-teamet om hur du installerar **[!UICONTROL Typology]**-paketet bör följas noggrant. Annars kan du råka ut för större problem med dina IP-adresser som används för att skicka e-post.
 
-Mer information om typologier finns i [det här avsnittet](../../campaign/using/about-campaign-typologies.md).
+Mer information om typologier finns i [det här avsnittet](../../campaign-opt/using/about-campaign-typologies.md).
 
 ### Nya MX-regler
 

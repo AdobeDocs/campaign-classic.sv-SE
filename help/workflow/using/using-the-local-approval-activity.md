@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Använda den lokala godkännandeaktiviteten{#using-the-local-approval-activity}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **[!UICONTROL Local approval]** som är integrerad i ett arbetsflöde för målinriktning kan du konfigurera en process för mottagarnas godkännande innan leveransen skickas.
 
@@ -47,11 +49,11 @@ Huvudstegen i den lokala godkännandeprocessen är:
 
    ![](assets/local_validation_intro_5.png)
 
-## Steg 1: Skapar datadistributionsmallen {#step-1--creating-the-data-distribution-template-}
+## Steg 1: Skapa en mall för datadistribution {#step-1--creating-the-data-distribution-template-}
 
 Med mallen för datadistribution kan du begränsa den population som blir resultatet av målgruppsanpassning baserat på datagruppering samtidigt som du kan tilldela varje värde till en lokal ansvarig. I det här exemplet har vi definierat fältet **[!UICONTROL Email address domain]** som ett distributionsfält och tilldelat en domän till varje lokal ansvarig
 
-Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 1. Om du vill skapa en mall för datadistribution går du till noden **[!UICONTROL Resources > Campaign management > Data distribution]** och klickar på **[!UICONTROL New]**.
 
@@ -85,7 +87,7 @@ Mer information om hur du skapar en mall för datadistribution finns i [Begräns
       >
       >Se till att operatorerna har tilldelats rätt behörighet.
 
-## Steg 2: Skapa målarbetsflödet {#step-2--creating-the-targeting-workflow}
+## Steg 2: Skapa målarbetsflöde {#step-2--creating-the-targeting-workflow}
 
 Vi har skapat följande arbetsflöde för målinriktning för att konfigurera det här användningsexemplet:
 
@@ -102,11 +104,11 @@ Följande aktiviteter lades till:
 * En andra **[!UICONTROL Local approval]**-aktivitet,
 * En **[!UICONTROL End]**-aktivitet.
 
-### Frågor, korsning och delning {#queries--intersection-and-split}
+### Frågor, skärning och delning {#queries--intersection-and-split}
 
 Uppströms målgruppsanpassning består av två frågor, en skärningspunkt och en delning. Populationen som är ett resultat av målinriktning kan begränsas med hjälp av en **[!UICONTROL Split]**-aktivitet med hjälp av en datamall för distribution.
 
-Mer information om hur du konfigurerar en delad aktivitet finns i [Dela](../../workflow/using/split.md). Skapandet av en datadistributionsmall beskrivs i [Begränsa antalet delmängdsposter per datadistribution](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Mer information om hur du konfigurerar en delad aktivitet finns i [Dela](split.md). Skapandet av en datadistributionsmall beskrivs i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 Om du inte vill begränsa fyllningen från frågan behöver du inte använda aktiviteterna **[!UICONTROL Query]**, **[!UICONTROL Intersection]** och **[!UICONTROL Split]**. I det här fallet ska du fylla i datamallen i den första **[!UICONTROL Local approval]**-aktiviteten.
 
@@ -134,7 +136,7 @@ I distributionsmallen har vi valt att begränsa populationen till 10 % per grupp
 
 Med aktiviteten **[!UICONTROL Local approval]** kan du skicka ett meddelande till varje lokal ansvarig.
 
-Mer information om hur du konfigurerar aktiviteten **[!UICONTROL Local approval]** finns i [Lokalt godkännande](../../workflow/using/local-approval.md).
+Mer information om hur du konfigurerar aktiviteten **[!UICONTROL Local approval]** finns i [Lokalt godkännande](local-approval.md).
 
 ![](assets/local_validation_workflow_2.png)
 
@@ -158,7 +160,7 @@ Med vänteaktiviteten kan du skjuta upp starten av den andra lokala godkännande
 
 ![](assets/local_validation_workflow_3.png)
 
-### Feedbackmeddelande {#feedback-notification}
+### Feedback-meddelande {#feedback-notification}
 
 Den andra **[!UICONTROL Local approval]**-aktiviteten gör att du kan skicka feedback för leveransen till varje lokal ansvarig.
 
@@ -174,7 +176,7 @@ När den konfigurerade tidsgränsen i vänteaktiviteten har nåtts skickar den a
 
 ![](assets/local_validation_intro_3.png)
 
-### Godkännandespårning av administratören {#approval-tracking-by-the-administrator}
+### Administratörens godkännandespårning {#approval-tracking-by-the-administrator}
 
 Varje gång den lokala godkännandeaktiviteten startar skapas en godkännandeuppgift. Administratören kan styra alla dessa godkännandeåtgärder.
 

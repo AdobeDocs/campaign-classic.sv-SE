@@ -6,19 +6,21 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
 
 # Fråga{#query}
 
+![](../../assets/common.svg)
+
 ## Skapa en fråga {#creating-a-query}
 
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
-Mer information om frågeexempel finns i det här [avsnittet](../../workflow/using/querying-recipient-table.md).
+Mer information om frågeexempel finns i det här [avsnittet](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsnin
 
    Filtreringsdimensionen gör det möjligt att samla in dessa element, t.ex. information om målpersonen (kontrakt, fullständiga och slutliga kvittningar osv.).
 
-   Mer information finns i [Målinriktning och filtrering](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+   Mer information finns i [Målinriktning och filtrering](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsnin
 
 1. Om du har valt **[!UICONTROL Filtering conditions]** i steg 1 eller använder alternativet **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** måste du lägga till filtervillkor manuellt senare.
 
-   Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i [avsnittet](../../workflow/using/querying-using-grouping-management.md).
+   Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i [avsnittet](querying-using-grouping-management.md).
 
    Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsvisa **[!UICONTROL Corresponding SQL query...]** för villkorskombinationen. Mer information finns i [avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -73,7 +75,7 @@ Börja med att välja vilken typ av data som ska läggas till:
 ![](assets/wf_add_data_1st_option.png)
 
 * Välj **[!UICONTROL Data linked to the filtering dimension]** för att markera data i Adobe Campaign-databasen.
-* Välj **[!UICONTROL External data]** om du vill lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt alternativet **Åtkomst till externa data**. Mer information finns i [Åtkomst till en extern databas (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+* Välj **[!UICONTROL External data]** om du vill lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt alternativet **Åtkomst till externa data**. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
 * Välj alternativet **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner där du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt modulen **Interaktion**.
 
 Om ingen valfri modul är installerad på plattformen visas inte det här steget. Du kommer att gå direkt till nästa steg.
@@ -90,10 +92,10 @@ Så här lägger du till data från Adobe Campaign-databasen:
 
    Du kan lägga till:
 
-   * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Du kan till exempel gå till [Markera data](../../workflow/using/targeting-data.md#selecting-data).
+   * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Du kan till exempel gå till [Markera data](targeting-data.md#selecting-data).
    * Ett nytt fält som skapats med knappen **[!UICONTROL Add]** till höger om listan med utdatakolumner.
 
-      Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](../../workflow/using/targeting-data.md#editing-additional-data).
+      Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-data.md#editing-additional-data).
 
 Så här lägger du till en samling information som är länkad till en målpopulation:
 
@@ -123,13 +125,13 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
 1. Om du har valt alternativet **[!UICONTROL Limit the line count]** anger du i vilken ordning de insamlade data ska filtreras. När antalet rader som samlas in är fler än antalet rader som du har angett att de ska behållas kan du ange vilka rader som ska behållas i filtreringsordningen.
 
-## Exempel: Ange enkla mottagarattribut {#example--targeting-on-simple-recipient-attributes}
+## Exempel: Riktning på enkla mottagarattribut {#example--targeting-on-simple-recipient-attributes}
 
 I följande exempel syftar frågan till att identifiera män mellan 18 och 30 år och som bor i Frankrike. Den här frågan kommer att användas i ett arbetsflöde som t.ex. syftar till att göra dem till ett exklusivt erbjudande.
 
 >[!NOTE]
 >
->Ytterligare frågeexempel presenteras i [det här avsnittet](../../workflow/using/querying-recipient-table.md).
+>Ytterligare frågeexempel presenteras i [det här avsnittet](querying-recipient-table.md).
 
 1. Ge frågan ett namn och välj sedan länken **[!UICONTROL Edit query...]**.
 1. Välj **[!UICONTROL Filtering conditions]** i listan över tillgängliga filtertyper.
@@ -165,7 +167,7 @@ Den här uppsättningen med tre värden identifierar den population som frågan 
 
 Det här värdet är arbetstabellens schema. Den här parametern är giltig för alla övergångar med **[!UICONTROL tableName]** och **[!UICONTROL schema]**.
 
-## Optimera dina frågor {#optimizing-queries}
+## Optimera frågor {#optimizing-queries}
 
 I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågor som körs på Adobe Campaign för att begränsa arbetsbelastningen i databasen och förbättra användarupplevelsen.
 
@@ -184,7 +186,11 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
    Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
-Mer information finns i avsnitten[Bästa praxis för datamodell](https://helpx.adobe.com/se/campaign/kb/acc-data-model-best-practices.html) och [Databasmappning](../../configuration/using/database-mapping.md).
+   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funktioner {#functions}
 
@@ -211,7 +217,7 @@ Motsvarigheten till filterdimensionen i SQL är den inre kopplingen:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Mer information om filtreringsdimensioner finns i [det här avsnittet](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Mer information om filtreringsdimensioner finns i [det här avsnittet](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### Arkitektur {#architecture}
 

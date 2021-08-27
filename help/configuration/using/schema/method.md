@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
 
 ---
 
-# metodelement {#method--element}
+# method-element {#method--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-10}
 
@@ -35,7 +37,7 @@ method:==( help | parametrar)
 
 `<methods>`  ,  `<interface />`
 
-## Underordnade {#children-10}
+## Barn {#children-10}
 
 * `<help>`
 * `<parameters>`
@@ -44,7 +46,7 @@ method:==( help | parametrar)
 
 Med det här elementet kan du definiera en SOAP-metod.
 
-## Använd och använd {#use-and-context-of-use-7}
+## Användning och användningssammanhang {#use-and-context-of-use-7}
 
 SOAP-metoder möjliggör programprocesser.
 

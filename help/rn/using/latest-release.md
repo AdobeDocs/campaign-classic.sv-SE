@@ -2,18 +2,20 @@
 product: campaign
 title: Senaste versionen
 description: Senaste versionsinformationen om Campaign Classic
-feature: Översikt
+feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 99%
 
 ---
 
 # Senaste versionen{#latest-release}
+
+![](../../assets/v7-only.svg)
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **den senaste Campaign Classic-versionen**.
 
@@ -115,7 +117,7 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 **Inaktuella funktioner**
 
 * Från och med Campaign 21.1 är Adobe Analytics Data Connector inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen med den nya kopplingen Adobe Analytics Connector.
-Mer information finns i den [detaljerade dokumentationen](../../technotes/aa-connector-migration.md).
+Mer information finns i den [detaljerade dokumentationen](../../technotes/using/aa-connector-migration.md).
 * Stöd för Debian 8 är nu inaktuellt.
 * Efter borttagningen av Oracle CRM i 20.3 har det relaterade externa kontot tagits bort från gränssnittet.
 

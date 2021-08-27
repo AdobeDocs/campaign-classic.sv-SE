@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Block för personalisering{#personalization-blocks}
+
+![](../../assets/common.svg)
 
 Personaliseringsblock är dynamiska, personaliserade och innehåller en specifik rendering som du kan infoga i leveranserna. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Se [Infoga anpassningsblock](#inserting-personalization-blocks).
 
@@ -25,7 +27,7 @@ Ni kan definiera nya block som gör att ni kan optimera er leveranspersonaliseri
 
 >[!NOTE]
 >
->Anpassningsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]**. Se denna [sida](../../web/using/editing-content.md#inserting-a-personalization-block) för mer information om detta.
+>Anpassningsblock finns också tillgängliga från **[!UICONTROL Digital Content Editor (DCE)]**. Mer information finns på [den här sidan](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Infoga personaliseringsblock {#inserting-personalization-blocks}
 

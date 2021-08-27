@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1924'
 ht-degree: 4%
 
 ---
 
 # Målinrikta data{#targeting-data}
 
+![](../../assets/common.svg)
+
 ## Skapa frågor {#creating-queries}
 
 ### Markera data {#selecting-data}
 
-Med en **[!UICONTROL Query]**-aktivitet kan du välja grundläggande data för att skapa målpopulationen. Mer information finns i [Skapa en fråga](../../workflow/using/query.md#creating-a-query).
+Med en **[!UICONTROL Query]**-aktivitet kan du välja grundläggande data för att skapa målpopulationen. Mer information finns i [Skapa en fråga](query.md#creating-a-query).
 
-Du kan även använda följande aktiviteter för att fråga efter och finjustera data från databasen: [Inkrementell fråga](../../workflow/using/incremental-query.md), [Läslista](../../workflow/using/read-list.md).
+Du kan även använda följande aktiviteter för att fråga efter och finjustera data från databasen: [Inkrementell fråga](incremental-query.md), [Läslista](read-list.md).
 
-Det är möjligt att samla in ytterligare data som ska vidarebefordras och behandlas under arbetsflödets hela livscykel. Mer information finns i [Lägga till data](../../workflow/using/query.md#adding-data) och [Redigera ytterligare data](#editing-additional-data).
+Det är möjligt att samla in ytterligare data som ska vidarebefordras och behandlas under arbetsflödets hela livscykel. Mer information finns i [Lägga till data](query.md#adding-data) och [Redigera ytterligare data](#editing-additional-data).
 
 ### Redigera ytterligare data {#editing-additional-data}
 
@@ -69,7 +71,7 @@ Under datavstämningsfaserna (**[!UICONTROL Union]**, **[!UICONTROL Intersection
 
 ![](assets/select-column-and-join.png)
 
-### Skapar delmängder {#creating-subsets}
+### Skapa delmängder {#creating-subsets}
 
 Med aktiviteten **[!UICONTROL Split]** kan du skapa delmängder på villkor som definierats via extraheringsfrågor. När du redigerar ett filtervillkor för populationen för varje delmängd får du sedan tillgång till standardfrågeaktiviteten som gör att du kan definiera målsegmenteringsvillkoren.
 
@@ -117,7 +119,7 @@ Följande datavstämningsalternativ är tillgängliga:
 
    ![](assets/join_limit_nb_priority.png)
 
-### Extraherar leddata (skärning) {#extracting-joint-data--intersection-}
+### Extrahera leddata (skärning) {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -125,7 +127,7 @@ Med skärningspunkten kan du bara återställa de linjer som delas av population
 
 Dessutom är det bara möjligt att behålla ett urval av kolumner, eller bara de kolumner som delas av den inkommande populationen.
 
-Skärningsaktiviteten beskrivs i avsnittet [Skärning](../../workflow/using/intersection.md).
+Skärningsaktiviteten beskrivs i avsnittet [Skärning](intersection.md).
 
 ### Utesluta en population (Uteslutning) {#excluding-a-population--exclusion-}
 
@@ -157,7 +159,7 @@ För att konfigurera det måste du först välja villkor:
 
    ![](assets/split-subset-config-all-data.png)
 
-   Ett exempel som visar hur du använder filtervillkor i **[!UICONTROL Split]**-aktiviteten för att segmentera målet i olika populationer beskrivs i [det här avsnittet](../../workflow/using/cross-channel-delivery-workflow.md).
+   Ett exempel som visar hur du använder filtervillkor i **[!UICONTROL Split]**-aktiviteten för att segmentera målet i olika populationer beskrivs i [det här avsnittet](cross-channel-delivery-workflow.md).
 
    I fältet **[!UICONTROL Label]** kan du ge den nyskapade delmängden ett namn som matchar den utgående övergången.
 
@@ -175,7 +177,11 @@ För att konfigurera det måste du först välja villkor:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Mer information om detta hittar du i det här [avsnittet](../../installation/using/about-fda.md).
+   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
 
 Sedan måste vi lägga till nya delmängder:
 
@@ -193,7 +199,7 @@ Sedan måste vi lägga till nya delmängder:
 
    >[!NOTE]
    >
-   >Om du har skaffat alternativet **Federated Data Access** kan du skapa delmängder baserat på informationen i en extern bas. Det gör du genom att välja schemat för den externa tabellen i fältet **[!UICONTROL Targeting dimension]**. Mer information finns i [Åtkomst till en extern databas (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+   >Om du har skaffat alternativet **Federated Data Access** kan du skapa delmängder baserat på informationen i en extern bas. Det gör du genom att välja schemat för den externa tabellen i fältet **[!UICONTROL Targeting dimension]**. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
 
 När deluppsättningar har skapats visar den delade aktiviteten som standard så många utdataövergångar som det finns deluppsättningar:
 
@@ -207,7 +213,7 @@ Du kan till exempel placera en enda leveransaktivitet och anpassa leveransinneh�
 
 ![](assets/wf_split_single_output.png)
 
-Deluppsättningar kan också skapas med aktiviteten **[!UICONTROL Cells]**. Mer information finns i avsnittet [Celler](../../workflow/using/cells.md).
+Deluppsättningar kan också skapas med aktiviteten **[!UICONTROL Cells]**. Mer information finns i avsnittet [Celler](cells.md).
 
 ### Använda måldata {#using-targeted-data}
 
@@ -215,15 +221,15 @@ När data har identifierats och beretts kan de användas i följande sammanhang:
 
 * Du kan uppdatera data i databasen efter dataändringar i de olika arbetsflödesstegen.
 
-   Mer information finns i [Uppdatera data](../../workflow/using/update-data.md).
+   Mer information finns i [Uppdatera data](update-data.md).
 
 * Du kan även uppdatera innehållet i befintliga listor.
 
-   Mer information finns i [Listuppdatering](../../workflow/using/list-update.md).
+   Mer information finns i [Listuppdatering](list-update.md).
 
 * Du kan förbereda eller starta leveranser direkt i arbetsflödet.
 
-   Mer information finns i [Delivery](../../workflow/using/delivery.md), [Delivery control](../../workflow/using/delivery-control.md) och [Continuous delivery](../../workflow/using/continuous-delivery.md).
+   Mer information finns i [Delivery](delivery.md), [Delivery control](delivery-control.md) och [Continuous delivery](continuous-delivery.md).
 
 ## Datahantering {#data-management}
 
@@ -235,9 +241,9 @@ I Adobe Campaign kombinerar datahanteringen en uppsättning aktiviteter för att
 
 För att genomföra dessa åtgärder erbjuder Adobe Campaign
 
-* Datainsamling: [Filöverföring](../../workflow/using/file-transfer.md), [Datainläsning (fil)](../../workflow/using/data-loading--file-.md), [Datainläsning (RDBMS)](../../workflow/using/data-loading--rdbms-.md), [Uppdatera data](../../workflow/using/update-data.md). Detta första steg i datainsamlingen förbereder data så att de kan behandlas i andra aktiviteter. Flera parametrar måste övervakas för att arbetsflödet ska fungera korrekt och ge de förväntade resultaten. När du till exempel importerar data måste primärnyckeln (Pkey) för dessa data vara unik för varje post.
-* Målinriktade aktiviteter har förbättrats med datahanteringsalternativ: [Fråga](../../workflow/using/query.md), [Förena](../../workflow/using/union.md), [Skärning](../../workflow/using/intersection.md), [Dela](../../workflow/using/split.md). På så sätt kan du konfigurera en union eller en skärning mellan data från flera olika måldimensioner, så länge datavstämning är möjligt.
-* Dataomvandlingsaktiviteter: [Berikning](../../workflow/using/enrichment.md), [Ändra dimension](../../workflow/using/change-dimension.md).
+* Datainsamling: [Filöverföring](file-transfer.md), [Datainläsning (fil)](data-loading--file-.md), [Datainläsning (RDBMS)](data-loading--rdbms-.md), [Uppdatera data](update-data.md). Detta första steg i datainsamlingen förbereder data så att de kan behandlas i andra aktiviteter. Flera parametrar måste övervakas för att arbetsflödet ska fungera korrekt och ge de förväntade resultaten. När du till exempel importerar data måste primärnyckeln (Pkey) för dessa data vara unik för varje post.
+* Målinriktade aktiviteter har förbättrats med datahanteringsalternativ: [Fråga](query.md), [Förena](union.md), [Skärning](intersection.md), [Dela](split.md). På så sätt kan du konfigurera en union eller en skärning mellan data från flera olika måldimensioner, så länge datavstämning är möjligt.
+* Dataomvandlingsaktiviteter: [Berikning](enrichment.md), [Ändra dimension](change-dimension.md).
 
 >[!CAUTION]
 >
@@ -247,10 +253,10 @@ För att genomföra dessa åtgärder erbjuder Adobe Campaign
 
 ### Förbättra och ändra data {#enriching-and-modifying-data}
 
-Förutom måldimensionen kan du med filtreringsdimensionen ange vilken typ av insamlade data som ska användas. Se [Målinriktning och filtrering](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Förutom måldimensionen kan du med filtreringsdimensionen ange vilken typ av insamlade data som ska användas. Se [Målinriktning och filtrering](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 Identifierade och insamlade data kan berikas, aggregeras och ändras för att optimera målkonstruktionen. För att göra detta använder du följande, förutom de datahanteringsaktiviteter som beskrivs i avsnittet [Segmentera data](#segmenting-data):
 
-* Med aktiviteten **[!UICONTROL Enrichment]** kan du snabbt lägga till kolumner i ett schema och lägga till information i vissa element. Den beskrivs i avsnittet [Enrichment](../../workflow/using/enrichment.md) i aktivitetsdatabasen.
-* Med aktiviteten **[!UICONTROL Edit schema]** kan du ändra strukturen för ett schema. Den beskrivs i avsnittet [Redigera schema](../../workflow/using/edit-schema.md) i aktivitetsdatabasen.
-* Med aktiviteten **[!UICONTROL Change dimension]** kan du ändra måldimensionen under målkonstruktionscykeln. Den beskrivs i avsnittet [Ändra dimension](../../workflow/using/change-dimension.md).
+* Med aktiviteten **[!UICONTROL Enrichment]** kan du snabbt lägga till kolumner i ett schema och lägga till information i vissa element. Den beskrivs i avsnittet [Enrichment](enrichment.md) i aktivitetsdatabasen.
+* Med aktiviteten **[!UICONTROL Edit schema]** kan du ändra strukturen för ett schema. Den beskrivs i avsnittet [Redigera schema](edit-schema.md) i aktivitetsdatabasen.
+* Med aktiviteten **[!UICONTROL Change dimension]** kan du ändra måldimensionen under målkonstruktionscykeln. Den beskrivs i avsnittet [Ändra dimension](change-dimension.md).

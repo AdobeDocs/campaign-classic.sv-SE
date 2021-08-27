@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # Förstå leveransfel{#understanding-delivery-failures}
+
+![](../../assets/common.svg)
 
 ## Om leveransfel {#about-delivery-failures}
 
@@ -228,12 +230,10 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md):
 >
 >* Studskompetensen i tabellen **[!UICONTROL Delivery log qualification]** används inte längre för **synkrona** leveransfelmeddelanden. Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
-   >
-   >
-* **** Asynkrona studsningar är fortfarande kvalificerade inMail-processen enligt **[!UICONTROL Inbound email]**-reglerna. Mer information finns i [Regler för e-posthantering](#email-management-rules).
-   >
-   >
-* För instanser som använder Förbättrat MTA **utan Webhooks/EFS** kommer **[!UICONTROL Inbound email]**-reglerna också att användas för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
+>
+>* **** Asynkrona studsningar är fortfarande kvalificerade inMail-processen enligt **[!UICONTROL Inbound email]**-reglerna. Mer information finns i [Regler för e-posthantering](#email-management-rules).
+>
+>* För instanser som använder Förbättrat MTA **utan Webhooks/EFS** kommer **[!UICONTROL Inbound email]**-reglerna också att användas för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
 
 
 För lokala installationer och värdbaserade/hybridinstallationer som använder den äldre Campaign MTA får Adobe Campaign-leveransservern ett felmeddelande från meddelandeservern eller fjärr-DNS-servern när leveransen av ett e-postmeddelande misslyckas. Listan med fel består av strängar i meddelandet som returneras av fjärrservern. Feltyper och orsaker tilldelas till varje felmeddelande.
@@ -317,7 +317,7 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 * Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar för att kontrollera domännamnet, till exempel **avsändar-ID**, **DomainKeys**, **DKIM** och **S/MIME**.
 * Med parametrarna **SMTP relay** kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-post från Microsoft. Om alternativet **[!UICONTROL Sender ID]** är aktiverat avmarkerar du motsvarande ruta och kontaktar [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Leveransen påverkas inte.
+Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändaradressen kontrollerar du att du inte signerar dina e-postmeddelanden med **avsändar-ID**, som är den inaktuella autentiseringsstandarden för e-post från Microsoft. Om alternativet **[!UICONTROL Sender ID]** är aktiverat avmarkerar du motsvarande ruta och kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Leveransen påverkas inte.
 
 #### MX-hantering {#mx-management}
 

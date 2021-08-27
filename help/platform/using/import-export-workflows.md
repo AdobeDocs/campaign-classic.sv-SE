@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # Importera och exportera data med arbetsflöden {#import-export-workflows}
 
-## Samlar in data {#collecting-data-workflows}
+![](../../assets/common.svg)
+
+## Samla in data {#collecting-data-workflows}
 
 Arbetsflöden kan vara ett användbart sätt att automatisera vissa importprocesser. Oavsett om du importerar data från en lokal fil eller från en SFTP kan du använda arbetsflöden för att standardisera datahanteringsprocesserna.
 
@@ -43,7 +45,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-När data har samlats in kan du använda dem i dina arbetsflöden, till exempel för att förbättra en leverans eller uppdatera databasen. Se denna [sida](../../workflow/using/how-to-use-workflow-data.md) för mer information om detta.
+När data har samlats in kan du använda dem i dina arbetsflöden, till exempel för att förbättra en leverans eller uppdatera databasen. Mer information finns på [den här sidan](../../workflow/using/how-to-use-workflow-data.md).
 
 ## Exportera data {#exporting-data-via-a-workflow}
 

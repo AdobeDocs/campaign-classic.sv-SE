@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Lägga till fält i ett webbformulär{#adding-fields-to-a-web-form}
+
+![](../../assets/common.svg)
 
 I ett webbformulär gör fälten det möjligt för användare att ange information och välja alternativ. Webbformulär kan innehålla inmatningsfält, urvalsfält, statiskt och avancerat innehåll (bildtexter, prenumerationer osv.).
 
@@ -377,7 +379,6 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 >* Dessa implementeringar kräver hjälp av Adobe Campaign Consulting-teamet.
 
 >
-
 
 
 ## Infoga en dold konstant {#inserting-a-hidden-constant}

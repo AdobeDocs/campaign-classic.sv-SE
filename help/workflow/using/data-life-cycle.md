@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Datas livscykel {#data-life-cycle}
+
+![](../../assets/common.svg)
 
 ## Arbetsregister {#work-table}
 
@@ -31,7 +33,7 @@ Välj den relevanta menyn för att göra detta:
 
    ![](assets/wf-right-click-display.png)
 
-   Mer information finns i [Arbetstabeller och arbetsflödesschema](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
+   Mer information finns i [Arbetstabeller och arbetsflödesschema](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Analysera målet
 

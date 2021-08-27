@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Schemastruktur{#schema-structure}
+
+![](../../assets/v7-only.svg)
 
 Grundstrukturen för en `<srcschema>` är följande:
 
@@ -166,7 +168,7 @@ Här är vårt exempelschema med de angivna typerna:
 </srcSchema>
 ```
 
-### Mappa typer av Adobe Campaign/DBMS-data {#mapping-the-types-of-adobe-campaign-dbms-data}
+### Mappa typer av Adobe Campaign-/DBMS-data {#mapping-the-types-of-adobe-campaign-dbms-data}
 
 Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe Campaign för de olika databashanteringssystemen.
 
@@ -406,7 +408,7 @@ Uppräkningsvärdena deklareras i **`<value>`**-elementet med följande attribut
 * **namn**: Namnet på det internt lagrade värdet.
 * **label**: etikett som visas via det grafiska gränssnittet.
 
-#### dbenum enumeration {#dbenum-enumeration}
+#### dbenum-uppräkning {#dbenum-enumeration}
 
 * Med egenskapen **dbenum** kan du definiera en uppräkning vars egenskaper liknar egenskaperna för egenskapen **enum**.
 
@@ -462,7 +464,7 @@ Med projektion av XML-innehållet:
 <group label="Group2"/>
 ```
 
-## Refererar med XPath {#referencing-with-xpath}
+## Referera med XPath {#referencing-with-xpath}
 
 XPath-språket används i Adobe Campaign för att referera till ett element eller attribut som tillhör ett dataschema.
 
@@ -486,7 +488,6 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 >* **`[@email]`** och  **@** emailare-motsvarighet
 
 >
-
 
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:

@@ -5,7 +5,7 @@ description: Lär dig hur du konfigurerar händelser för anpassad implementerin
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera händelser för anpassad implementering {#events}
+
+![](../../assets/common.svg)
 
 Delar av den här konfigurationen är en anpassad utveckling som kräver följande:
 
@@ -68,7 +70,7 @@ Exempel:
  </trigger>
 ```
 
-### Dataformatsberikning {#enrichment-format}
+### Berikning av dataformat {#enrichment-format}
 
 >[!NOTE]
 >
@@ -184,7 +186,7 @@ Kontexten för detta JavaScript är begränsad. Alla funktioner i API:t är inte
 
 För att möjliggöra snabbare bearbetning körs flera trådar i det här skriptet samtidigt. Koden måste vara trådsäker.
 
-## Lagra händelserna {#store-events}
+## Lagra händelser {#store-events}
 
 >[!NOTE]
 >
@@ -219,7 +221,7 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 
 ![](assets/triggers_7.png)
 
-## Bearbetar händelserna {#processing-the-events}
+## Bearbeta händelserna {#processing-the-events}
 
 ### Avstämningsarbetsflöde {#reconciliation-workflow}
 
@@ -238,7 +240,7 @@ Det kan vara svårt att implementera om inget index anges för shopper_id. Om vi
 
 Utlösare bearbetas inom en timme. Volymen kan vara cirka 1 miljon utlösare per timme. Det förklarar varför ett rensningsarbetsflöde måste införas. Tömningen körs en gång per dag och alla utlösare som är äldre än tre dagar tas bort.
 
-### Kampanjarbetsflöde {#campaign-workflow}
+### Arbetsflöde för kampanj {#campaign-workflow}
 
 Arbetsflödet för utlösarkampanjer liknar ofta andra återkommande kampanjer som har använts.
 Den kan till exempel börja med en fråga om utlösare som letar efter specifika händelser under den sista dagen. Målet används för att skicka e-postmeddelandet. Anrikningar eller data kan komma från utlösaren. Det kan användas säkert av Marketing eftersom det inte kräver någon konfiguration.

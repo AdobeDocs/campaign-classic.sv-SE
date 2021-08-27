@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Verksamhetsorienterade API:er{#business-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Business API är specifikt för varje typ av objekt. De har en effekt på:
 
@@ -203,7 +205,7 @@ XML-indatadokumentet är ett leveransmallfragment som följer strukturen i schem
 
 Anropet returnerar inga data, förutom fel.
 
-### Exempel på XML-dokument {#xml-document-example}
+### XML-dokumentexempel {#xml-document-example}
 
 Det här exemplet är baserat på en anpassad leveransmall från en extern datakälla (en fil i det här fallet). Konfigurationen beskrivs i sin helhet i leveransmallen, så allt som återstår att skicka när anropet görs är innehållet i filen från `<externalsource>`-elementet.
 

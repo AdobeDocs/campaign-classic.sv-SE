@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Validera leveransen {#validating-the-delivery}
+
+![](../../assets/common.svg)
 
 När en leverans har skapats och konfigurerats måste du validera den innan du skickar den till huvudmålet.
 
@@ -137,7 +139,6 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 >
 
 
-
 Följ stegen nedan för att skicka ett bevis:
 
 1. Kontrollera att korrekturmålet har konfigurerats enligt beskrivningen i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
@@ -195,7 +196,7 @@ Du kan visa och redigera godkännandereglerna, deras innehåll, deras körningso
 
 Du kan skapa nya regler och definiera nya typologier från den här noden. Dessa uppgifter är dock reserverade för expertanvändare som kan JavaScript.
 
-Mer information om typologiregler finns på [den här sidan](../../campaign/using/about-campaign-typologies.md).
+Mer information om typologiregler finns på [den här sidan](../../campaign-opt/using/about-campaign-typologies.md).
 
 Om du vill redigera den aktuella typologin klickar du på ikonen **[!UICONTROL Edit link]** till höger om fältet **[!UICONTROL Typology]**.
 

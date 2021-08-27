@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Lägga till ett beräkningsfält av uppräkningstyp {#adding-an-enumeration-type-calculated-field}
+
+![](../../assets/common.svg)
 
 Här vill vi skapa en fråga med ett beräkningsfält av typen **[!UICONTROL Enumerations]**. Det här fältet genererar ytterligare en kolumn i förhandsgranskningsfönstret för data. Den här kolumnen anger de numeriska värden som returneras som resultat för varje mottagare (0, 1 och 2). Varje värde i den nya kolumnen tilldelas ett kön: &quot;Man&quot; för &quot;1&quot;, &quot;kvinna&quot; för &quot;2&quot; eller &quot;Inte angivet&quot; om värdet är lika med &quot;0&quot;.
 

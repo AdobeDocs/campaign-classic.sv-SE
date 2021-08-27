@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
 # Kontinuerlig leverans{#continuous-delivery}
+
+![](../../assets/common.svg)
 
 Med en **åtgärd av typen kontinuerlig leverans** kan du lägga till nya mottagare i en befintlig leverans. Med den här leveranstypen slipper du skapa en ny leverans varje gång: Det här läget är ofta mer effektivt, särskilt när det gäller meddelanden om låga volymer eller meddelanden som skickas ut vid behov.
 
@@ -58,9 +60,9 @@ En kontinuerlig leverans skapar en enda leverans- och leveranslogg (broadLog) oc
 
 ![Kontinuerlig leverans](assets/delivery_continuous.jpg)
 
-## Självstudievideo {#continuous-delivery-video}
+## Videokurs {#continuous-delivery-video}
 
-I den här videon visas hur du konfigurerar en kontinuerlig leverans med en stegvis fråga.
+Den här videon visar hur du konfigurerar en kontinuerlig leverans med en stegvis frågeställning.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Ansluta till databasen {#connecting-to-the-database}
+
+![](../../assets/v7-only.svg)
 
 Om du vill aktivera en anslutning till den externa databasen måste du ange anslutningsparametrarna, dvs. måldatakällan och namnet på tabellen med data som behöver läsas in.
 
@@ -44,7 +46,7 @@ Om du vill aktivera en anslutning till en delad extern databas kan du komma åt 
 
 Du kan definiera särskilda arbetskatalogutrymmen för tabellerna och för indexet på fliken **[!UICONTROL Parameters]**.
 
-## Skapar en tillfällig anslutning {#creating-a-temporary-connection}
+## Skapa en tillfällig anslutning {#creating-a-temporary-connection}
 
 Du kan definiera en anslutning till en extern databas direkt från arbetsflödesaktiviteter. I det här fallet kommer den att finnas i en lokal extern databas som är reserverad för att användas i ett aktuellt arbetsflöde: den sparas inte på externa konton. Den här typen av punktanslutning kan skapas för olika aktiviteter i arbetsflödet, särskilt **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]**-aktiviteten eller **[!UICONTROL Split]**-aktiviteten.
 

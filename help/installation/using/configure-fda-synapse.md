@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Konfigurera åtkomst till Azure synapse {#configure-access-to-azure-synapse}
+
+![](../../assets/v7-only.svg)
 
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Microsoft Azure synapse Analytics.
 
@@ -190,7 +192,7 @@ Så här konfigurerar du Azure synapse på Debian:
    >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 
-## azure synapse externt konto {#azure-external}
+## azure synapse external account {#azure-external}
 
 Med det externa [!DNL Azure Synapse]-kontot kan du ansluta Campaign-instansen till din externa Azure synapse-databas.
 

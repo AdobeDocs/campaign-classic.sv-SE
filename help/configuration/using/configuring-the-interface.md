@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Konfigurera gränssnittet{#configuring-the-interface}
+
+![](../../assets/v7-only.svg)
 
 Om du vill visa och öppna en dialogruta med den nya mottagartabellen i Adobe Campaign-gränssnittet gör du så här:
 
@@ -60,7 +62,7 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 
 1. Spara skapelsen.
 
-## Skapar en ny typ av mapp i navigeringshierarkin {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
+## Skapa en ny typ av mapp i navigeringshierarkin {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. Gå till noden **[!UICONTROL Administration>Configuration>Navigation hierarchies]**.
 1. Skapa ett nytt **xtk:navtree** typ **navtree**-dokument.

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 5%
@@ -15,13 +15,15 @@ ht-degree: 5%
 
 # Åtkomsthantering {#access-management}
 
+![](../../assets/v7-only.svg)
+
 ## Webbprogramsoperatör
 
 WebApp-operatorn är administratör. Följ dessa riktlinjer för att förbättra säkerheten:
 
 * Ersätt administratören med namnet right från den här operatorn med en ny (kan heta &#39;webapp&#39;). För mer information om detta hittar du i [det här avsnittet](../../platform/using/access-management.md).
 
-* Lägg till operatorn webApp i mappar (främst mottagarmappar) för att ge mottagare läs- och skrivåtkomst. Se denna [sida](../../platform/using/access-management.md) för mer information om detta.
+* Lägg till operatorn webApp i mappar (främst mottagarmappar) för att ge mottagare läs- och skrivåtkomst. Mer information finns på [den här sidan](../../platform/using/access-management.md).
 
 * Om du använder en instans med flera varumärken (eller flera geo) kanske du vill dela upp webbprogramåtkomsten till olika mottagarmappar. För att göra detta:
 

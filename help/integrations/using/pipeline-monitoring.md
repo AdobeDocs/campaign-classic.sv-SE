@@ -5,7 +5,7 @@ description: Konfigurera integreringen
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # Övervaka pipelines {#pipeline-monitoring}
+
+![](../../assets/common.svg)
 
 Statuswebbtjänsten [!DNL pipelined] ger information om statusen för [!DNL pipelined]-processen.
 
@@ -69,7 +71,7 @@ Dessa statusvärden visas per processtråd.
    * retry-validity-duration-ms: längden från den tidpunkt då bearbetningen görs om tills meddelandet ignoreras.
    * Rapport över försäljningsförloppsmeddelanden
 
-## Rapport över pipeline-meddelanden {#pipeline-report}
+## Rapport över försäljningsförloppsmeddelanden {#pipeline-report}
 
 Den här rapporten visar antalet meddelanden per timme under de senaste fem dagarna.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Beskrivning av kampanjdatamodell{#data-model-description}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i Adobe Campaign datamodell och hur de fungerar.
 
@@ -127,9 +129,9 @@ Den här tabelluppsättningen är länkad till **modulen marknadsföringskampanj
 * **NmsTask**: Tabellen matchar  **nms:** taskschema. Den innehåller definitionen av en marknadsföringsuppgift.
 * **NmsAsset**: Tabellen matchar  **nms:** assetschema. Den innehåller definitionen av en marknadsföringsresurs.
 
-## Kommunikationskonsekvens {#communication-consistency}
+## Enhetlig kommunikation {#communication-consistency}
 
-Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Mer information finns i [Om kampanjtyper](../../campaign/using/about-campaign-typologies.md).
+Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Mer information finns i [Om kampanjtyper](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -141,7 +143,7 @@ Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som
 
 ## Svarshantering {#response-management}
 
-Den här tabelluppsättningen är kopplad till **Response Manager**-modulen som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda förslag för alla kommunikationskanaler. Mer information finns i [Om svarshanteraren](../../campaign/using/about-response-manager.md).
+Den här tabelluppsättningen är kopplad till **Response Manager**-modulen som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda förslag för alla kommunikationskanaler. Mer information finns i [Om svarshanteraren](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 

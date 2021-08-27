@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Standardiserad driftsättning{#standard-deployment}
+
+![](../../assets/v7-only.svg)
 
 För den här konfigurationen krävs tre datorer:
 
@@ -54,7 +56,7 @@ Den här typen av konfiguration kan hantera ett stort antal mottagare (500 000 t
 
 * Brandväggen har konfigurerats för att öppna STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i avsnittet [Databasåtkomst](../../installation/using/network-configuration.md#database-access).
 
-### Installerar programservern {#installing-the-application-server}
+### Installera programservern {#installing-the-application-server}
 
 Följ stegen för att installera en fristående instans från Adobe Campaign-programservern när du skapar databasen (steg 12). Se [Installera och konfigurera (en dator)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 

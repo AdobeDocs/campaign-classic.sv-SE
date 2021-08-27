@@ -6,7 +6,7 @@ description: Lär dig konfigurera åtkomst till Google BigQuery i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 911302475b5ece96d527575148ee611fdb839753
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -16,6 +16,8 @@ ht-degree: 2%
 
 # Konfigurera åtkomst till Google BigQuery {#configure-fda-google-big-query}
 
+![](../../assets/v7-only.svg)
+
 Använd alternativet Adobe Campaign Classic **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Google BigQuery].
 
 1. Konfigurera [!DNL Google BigQuery] på [Windows](#google-windows) eller [Linux](#google-linux)
@@ -24,7 +26,7 @@ Använd alternativet Adobe Campaign Classic **FDA (Federated Data Access**) om d
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] anslutningsprogrammet är tillgängligt för hybriddistributioner och driftsättningar på plats. Se denna [sida](../../installation/using/capability-matrix.md) för mer information om detta.
+> [!DNL Google BigQuery] anslutningsprogrammet är tillgängligt för hybriddistributioner och driftsättningar på plats. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -34,7 +36,7 @@ Använd alternativet Adobe Campaign Classic **FDA (Federated Data Access**) om d
 
 1. Hämta [ODBC-drivrutinen för Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
-1. Konfigurera ODBC-drivrutinen i Windows. Se denna [sida](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf) för mer information om detta.
+1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns på [den här sidan](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf).
 
 1. För att [!DNL Google BigQuery]-anslutningen ska fungera måste Adobe Campaign Classic ha följande parametrar för att ansluta:
 
@@ -82,7 +84,7 @@ Verktyget Bulk Load ger snabbare överföring, vilket uppnås med Google Cloud S
 
 ## Google BigQuery i Linux {#google-linux}
 
-### Drivrutinen har konfigurerats för Linux {#driver-linux}
+### Drivrutinen har konfigurerats i Linux {#driver-linux}
 
 1. Innan du installerar ODBC-drivrutinen måste du uppdatera datorn. Kör följande kommando i Linux eller CentOS:
 
@@ -204,7 +206,7 @@ Verktyget Bulk Load ger snabbare överföring, vilket uppnås med Google Cloud S
 
 1. I Adobe Campaign Classic kan du sedan konfigurera ditt externa [!DNL Google BigQuery]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#google-external).
 
-### Massinläsning har konfigurerats för Linux {#bulk-load-linux}
+### Massinläsning konfigurerad för Linux {#bulk-load-linux}
 
 >[!NOTE]
 >

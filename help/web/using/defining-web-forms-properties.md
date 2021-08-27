@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Definiera egenskaper för webbformulär{#defining-web-forms-properties}
+
+![](../../assets/common.svg)
 
 Webbformulären är fullt konfigurerbara och anpassningsbara för att uppfylla era behov. Parametrarna måste anges i egenskapsfönstret.
 

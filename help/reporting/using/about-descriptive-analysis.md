@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Om beskrivande analys{#about-descriptive-analysis}
+
+![](../../assets/common.svg)
 
 Om du vill producera statistik över data i databasen skapar du beskrivande analysrapporter med den dedikerade guiden och anpassar innehållet och presentationen efter dina behov.
 

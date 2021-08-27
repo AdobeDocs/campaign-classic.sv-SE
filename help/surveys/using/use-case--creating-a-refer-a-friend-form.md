@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Användningsfall: skapa ett hänvisningsformulär{#use-case-creating-a-refer-a-friend-form}
+
+![](../../assets/v7-only.svg)
 
 I det här exemplet vill vi erbjuda mottagarna i databasen en tävling. Webbformuläret innehåller ett avsnitt där du kan ange svar och ett annat där du kan hänvisa en vän genom att ange dennes e-postadress.
 

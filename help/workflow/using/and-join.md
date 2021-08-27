@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # AND-join{#and-join}
+
+![](../../assets/common.svg)
 
 En join utlöser sin utgående övergång endast när alla inkommande övergångar är aktiverade, dvs. när alla tidigare aktiviteter är slutförda. På så sätt kan du se till att vissa aktiviteter har slutförts innan du fortsätter att köra arbetsflödet.
 
@@ -31,4 +33,4 @@ Den utgående övergången kan bara innehålla en av de ingående övergångspop
 
 >[!CAUTION]
 >
->När det gäller aktiviteter av typen **AND-join** sammanfogas händelsvariablerna, men om samma variabel har definierats två gånger uppstår en konflikt och värdet är obestämt. Mer information om detta finns i [det här avsnittet](../../workflow/using/javascript-scripts-and-templates.md#event-variables).
+>När det gäller aktiviteter av typen **AND-join** sammanfogas händelsvariablerna, men om samma variabel har definierats två gånger uppstår en konflikt och värdet är obestämt. Mer information om detta finns i [det här avsnittet](javascript-scripts-and-templates.md#event-variables).

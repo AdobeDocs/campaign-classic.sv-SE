@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Berika data{#enriching-data}
 
-## Om att berika data {#about-enriching-data}
+![](../../assets/common.svg)
 
-Här finns information om möjliga användningar av **[!UICONTROL Enrichment]**-aktiviteten i ett målarbetsflöde. Mer information om hur du använder aktiviteten **[!UICONTROL Enrichment]** finns i: [Berikning](../../workflow/using/enrichment.md).
+## Om att förbättra data {#about-enriching-data}
 
-Det finns också ett användningsexempel om hur du kan förbättra e-postleveransen med anpassade datum i [det här avsnittet](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+Här finns information om möjliga användningar av **[!UICONTROL Enrichment]**-aktiviteten i ett målarbetsflöde. Mer information om hur du använder aktiviteten **[!UICONTROL Enrichment]** finns i: [Berikning](enrichment.md).
+
+Det finns också ett användningsexempel om hur du kan förbättra e-postleveransen med anpassade datum i [det här avsnittet](email-enrichment-with-custom-date-fields.md).
 
 Kontakterna i marknadsföringsdatabasen får en inbjudan att delta i en tävling via ett webbprogram. Konkurrensresultaten återvinnas i tabellen **[!UICONTROL Competition results]**. Den här tabellen är länkad till kontakttabellen (**[!UICONTROL Recipients]**). Tabellen **[!UICONTROL Competition results]** innehåller följande fält:
 

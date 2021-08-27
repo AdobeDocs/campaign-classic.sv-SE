@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # Villkorligt innehåll{#conditional-content}
+
+![](../../assets/common.svg)
 
 Genom att konfigurera fält för villkorligt innehåll kan du skapa dynamisk personalisering baserat på mottagarens profil, till exempel. Textblock och/eller bilder ersätts när ett visst villkor uppfylls.
 
@@ -75,7 +77,7 @@ Klicka på **[!UICONTROL Preview]** och välj en mottagare för att visa det vil
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## Skapar flerspråkig e-post {#creating-multilingual-email}
+## Skapa flerspråkig e-post {#creating-multilingual-email}
 
 I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
@@ -107,9 +109,9 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
 
-## Självstudievideo {#conditionnal-content-video}
+## Videokurs {#conditionnal-content-video}
 
-Lär dig hur du lägger till villkorligt innehåll i en leverans med ett exempel på ett flerspråkigt nyhetsbrev.
+Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exempel som visar ett flerspråkigt nyhetsbrev.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 

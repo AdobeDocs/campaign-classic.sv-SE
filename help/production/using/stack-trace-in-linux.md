@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Stackspårning i Linux{#stack-trace-in-linux}
+
+![](../../assets/v7-only.svg)
 
 En **stackspårning** representerar en spårning som finns i en **core**-typfil. Den här filen genereras om ett datorfel inträffar. Den kan identifiera felets ursprung.
 
@@ -23,7 +25,6 @@ En **stackspårning** representerar en spårning som finns i en **core**-typfil.
 >* **gdb - GNU-** felsökaren måste vara installerad på datorn.
 
 >
-
 
 
 Adobe Campaign tekniska support kan be dig om denna **stackspårning**. Hämta den genom att ange följande kommandon i Linux:

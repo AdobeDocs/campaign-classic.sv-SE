@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Hantering av tidszoner{#time-zone-management}
+
+![](../../assets/v7-only.svg)
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -56,7 +58,7 @@ Ur teknisk synvinkel finns det två sätt att lagra typinformation **Datum+tid**
 >
 >Observera att den här ändringen kan leda till problem med datakonsekvens och synkronisering.
 
-### Skapar en ny instans {#creating-a-new-instance}
+### Skapa en ny instans {#creating-a-new-instance}
 
 För att flera internationella användare ska kunna arbeta med samma instans måste du konfigurera tidszoner när du skapar instansen för att hantera tidsförskjutningar mellan länder. När instansen skapas väljer du datum- och tidshanteringsläget i **[!UICONTROL Time zone]**-avsnittet på databaskonfigurationsscenen.
 

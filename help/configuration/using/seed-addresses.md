@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Dirigerade adresser{#seed-addresses}
+
+![](../../assets/v7-only.svg)
 
 Om mottagartabellen är en anpassad tabell krävs ytterligare konfigurationer. Schemat **[!UICONTROL nms:seedMember]** måste utökas. Ytterligare en flik läggs till i startadresserna för att definiera lämpliga fält, vilket visas nedan:
 

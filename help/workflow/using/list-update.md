@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Listuppdatering{#list-update}
+
+![](../../assets/common.svg)
 
 En **aktivitet för listuppdatering** lagrar populationen som anges i övergången i en lista över mottagare.
 
@@ -41,7 +43,7 @@ I följande exempel följer listuppdateringsaktiviteten en fråga som riktar sig
 
 1. Lägg till en **[!UICONTROL list update activity]** direkt efter en fråga och öppna den sedan för att redigera den.
 
-   Mer information om hur du skapar en fråga i ett arbetsflöde finns i [Fråga](../../workflow/using/query.md).
+   Mer information om hur du skapar en fråga i ett arbetsflöde finns i [Fråga](query.md).
 
 1. Du kan välja en etikett för aktiviteten.
 1. Välj alternativet **[!UICONTROL Create the list if necessary (Calculated name)]** om du vill visa att listan skapas när det första arbetsflödet har körts och sedan uppdateras med följande körningar.

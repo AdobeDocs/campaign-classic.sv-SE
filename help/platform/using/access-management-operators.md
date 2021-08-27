@@ -2,18 +2,20 @@
 product: campaign
 title: Kom igång med Campaign-operatorer
 description: Lär dig hur du skapar och hanterar kampanjanvändare
-feature: Åtkomsthantering
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1146'
 ht-degree: 2%
 
 ---
 
 # Skapa och hantera operatörer {#operators}
+
+![](../../assets/common.svg)
 
 ## Kom igång med Campaign-operatorer  {#about-operators}
 
@@ -45,7 +47,7 @@ Så här skapar du en ny operator och tilldelar behörigheter:
 
 1. Ange **[!UICONTROL Identification parameters]** för användaren: användar-ID, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]**-menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden behandlas.
 
-   I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns på [den här sidan](../../campaign/using/about-distributed-marketing.md).
+   I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns på [den här sidan](../../distributed/using/about-distributed-marketing.md).
 
 1. Välj behörigheter för operatorn i avsnittet **[!UICONTROL Operator access rights]**.
 

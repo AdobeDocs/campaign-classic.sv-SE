@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Programserver{#application-server}
+
+![](../../assets/v7-only.svg)
 
 De nödvändiga lagren för databasåtkomst måste vara installerade på servern och tillgängliga från Adobe Campaign-kontot.
 
@@ -61,7 +63,7 @@ yum install java-1.8.0-openjdk
 
 I Linux måste OpenSSL vara installerat. De versioner som stöds av Adobe Campaign är **OpenSSL 1.0.1** och **OpenSSL 0.9.8**. Underversionerna 0.9.8g till 0.9.8o godkänns.
 
-## Exporterar rapporter {#exporting-reports}
+## Exportera rapporter {#exporting-reports}
 
 Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och Adobe PDF-format. Adobe Campaign använder **LibraryOffice** för Microsoft Excel-formatet. För Adobe PDF-formatet använder Adobe Campaign konverteraren **PhantomJS**. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** process).
 

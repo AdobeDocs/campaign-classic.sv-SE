@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Extern signal{#external-signal}
+
+![](../../assets/common.svg)
 
 Med aktiviteten **Extern signal** kan du utlösa körning av en uppsättning uppgifter i ett arbetsflöde enligt ett schema.
 
@@ -25,9 +27,9 @@ Du kan konfigurera den här aktiviteten för att definiera händelser om ingen s
 
 ![](assets/edit_signal.png)
 
-Konfigurationen av förfallodatum anges i [Förfallodatum](../../workflow/using/defining-approvals.md).
+Konfigurationen av förfallodatum anges i [Förfallodatum](defining-approvals.md).
 
-I fältet **Fördröjning** kan du ange en förfallofördröjning i valfria enheter. Se [Vänta](../../workflow/using/wait.md).
+I fältet **Fördröjning** kan du ange en förfallofördröjning i valfria enheter. Se [Vänta](wait.md).
 
 Varje rad motsvarar en typ av förfallodatum och sammanfaller med en övergång.
 

@@ -6,14 +6,16 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
 
 # Bästa praxis för import och export {#import-export-best-practices}
+
+![](../../assets/common.svg)
 
 Genom att vara försiktig och följa de få enkla regler som beskrivs nedan kan du till stor del säkerställa att data är konsekventa i databasen och undvika vanliga fel under databasuppdatering eller dataexport.
 
@@ -38,7 +40,7 @@ Exempel:
 * Avgränsare: tabb eller semikolon
 * Första raden med rubriker
 * Ingen strängavgränsare
-* Datumformat: YYYY/MM/DD HH:mm:SS
+* Datumformat: ÅÅÅ/MM/DD HH:mm:SS
 
 Exempel på fil som ska importeras:
 
@@ -59,7 +61,7 @@ Använd zippade filer för import och export när det är möjligt. GZIP stöds 
 * [Aktivitet för inläsning av data (fil)](../../workflow/using/data-loading--file-.md)
 * [Aktivitet för dataextrahering (fil)](../../workflow/using/extraction--file-.md)
 
-## Importera i deltaläge {#importing-in-delta-mode}
+## Importera i Delta-läge {#importing-in-delta-mode}
 
 Vanlig import måste ske i deltaläge. Det innebär att endast ändrade eller nya data skickas till Adobe Campaign, i stället för hela tabellen varje gång.
 

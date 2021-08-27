@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Publicera på Facebook-väggar{#publishing-on-facebook-walls}
+
+![](../../assets/v7-only.svg)
 
 För att Adobe Campaign ska kunna skicka publikationer till Facebook väggar måste du delegera skrivåtkomsten för dessa sidor till Adobe Campaign. Detta inbegriper följande konfigurationssteg:
 
@@ -33,7 +35,7 @@ Börja med att skapa ett Facebook-konto och flera sidor: dessa kommer att använ
 
    ![](assets/social_diagram_fb_external_account.png)
 
-## Skapa en testsida på Facebook {#creating-a-test-facebook-page}
+## Skapa en testsida för Facebook {#creating-a-test-facebook-page}
 
 Vi rekommenderar att du skapar en privat Facebook-sida för att skicka ut korrektur (mer information finns i [Skicka korrektur](../../social/using/publishing-on-facebook.md#sending-the-proof)).
 
@@ -74,7 +76,7 @@ För att Adobe Campaign ska kunna publicera på sidorna måste du skapa ett Face
 
    ![](assets/social_create_facebook_app_004.png)
 
-## Delegerar skrivåtkomst till Adobe Campaign {#delegating-write-access-to-adobe-campaign}
+## Delegera skrivåtkomst till Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 Om du vill delegera skrivåtkomst till Adobe Campaign för publicering på sidornas väggar måste du ange parametrarna för det tidigare skapade Facebook-programmet.
 
@@ -143,7 +145,7 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
 
 Arbetsflödet i **[!UICONTROL Synchronization of Facebook pages]** synkroniserar alla sidor som administreras av Facebook-kontot så att du kan publicera dem direkt via Adobe Campaign. Mer information finns i [Synkronisera Facebook-sidor](#synchronizing-facebook-pages).
 
-## Synkroniserar Facebook-sidor {#synchronizing-facebook-pages}
+## Synkronisera Facebook-sidor {#synchronizing-facebook-pages}
 
 Med arbetsflödet **[!UICONTROL Synchronization of Facebook pages]**, som nås via noden **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, kan du synkronisera (i Adobe Campaign) sidorna i det Facebook-konto som konfigurerats tidigare. Som standard är det här arbetsflödet konfigurerat att köras en gång om dagen eller när en administratör klickar på länken **[!UICONTROL Request an authorization from the application]** på tjänstkonfigurationsskärmen (se [Delegera skrivåtkomst till Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
 

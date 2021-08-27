@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Migrera Adobe Campaign 7 i Windows{#migrating-in-windows-for-adobe-campaign}
 
-## Allmän procedur {#general-procedure}
+![](../../assets/v7-only.svg)
+
+## Allmänt förfarande {#general-procedure}
 
 För Windows är migreringsstegen följande:
 
@@ -165,7 +167,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrerar från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Säkerhetskopiera katalogen **Adobe Campaign v6** med följande kommando:
@@ -184,7 +186,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    sc config nlserver6 start= disabled
    ```
 
-## Distribuerar Adobe Campaign v7 {#deploying-adobe-campaign-v7}
+## Distribuera Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
 Distribuera Adobe Campaign i två steg:
 
@@ -341,7 +343,7 @@ Starta IIS- och Adobe Campaign-tjänsterna på följande servrar:
 
 Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md).
 
-## Ta bort och rensa Adobe Campaign tidigare version {#deleting-and-cleansing-adobe-campaign-previous-version}
+## Ta bort och rensa tidigare version av Adobe Campaign {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 

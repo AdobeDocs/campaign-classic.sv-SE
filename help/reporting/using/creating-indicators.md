@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Skapa indikatorer{#creating-indicators}
+
+![](../../assets/common.svg)
 
 Om du vill göra en kub funktionell måste du identifiera relevanta mått och mått och skapa dem i kuben.
 
@@ -28,7 +30,7 @@ I det här exemplet visas hur du snabbt skapar en enkel kub i en rapport för at
 
 Implementeringsstegen beskrivs nedan. Det finns omfattande alternativ och beskrivningar i de andra avsnitten i detta kapitel.
 
-## Välja arbetstabell {#selecting-the-work-table}
+## Markera arbetsregistret {#selecting-the-work-table}
 
 Om du vill skapa en kub klickar du på **[!UICONTROL New]** ovanför listan med kuber.
 
@@ -90,7 +92,7 @@ Klicka på knappen **[!UICONTROL Add]** för att skapa en ny dimension och klick
 
    Mer information finns i [Hantera behållare dynamiskt](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Byggindikatorer {#building-indicators}
+## Byggnadsindikatorer {#building-indicators}
 
 När dimensionerna har definierats måste du ange ett beräkningssätt för de värden som ska visas i cellerna. Det gör du genom att skapa matchande indikatorer på fliken **[!UICONTROL Measures]**: skapa så många mått som det finns kolumner att visa i rapporten som ska använda kuben.
 

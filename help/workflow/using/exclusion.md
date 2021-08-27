@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Uteslutning{#exclusion}
+
+![](../../assets/common.svg)
 
 En **Uteslutning**-typaktivitet skapar ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från.
 
@@ -23,7 +25,7 @@ Om du vill konfigurera den här aktiviteten anger du dess etikett och väljer hu
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar och använder exkluderingsaktiviteten finns i [Exkludera en population (Uteslutning)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
+>Mer information om hur du konfigurerar och använder exkluderingsaktiviteten finns i [Exkludera en population (Uteslutning)](targeting-data.md#excluding-a-population--exclusion-).
 
 Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja den återstående populationen. Komplementet kommer att innehålla den huvudsakliga inkommande populationen minus den utgående populationen. En ytterligare övergång till utdata läggs sedan till i aktiviteten enligt följande:
 

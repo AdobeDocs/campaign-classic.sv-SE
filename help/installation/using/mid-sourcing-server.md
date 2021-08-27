@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Server för mid-sourcing{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 I det här avsnittet beskrivs installation och konfiguration av en server med mellanlagring samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i **mellankällsläge**-läge.
 
@@ -35,7 +37,7 @@ När du installerar en server med mellanlagring utförs samma process som när d
 
 I proceduren nedan beskrivs en konfiguration som använder en enda server för mellanlagring. Det går också att använda flera servrar. Det går också att skicka vissa meddelanden (till exempel arbetsflödesmeddelanden) från en intern konfiguration.
 
-### Installerar och konfigurerar programservern för installation på mellannivå {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
+### Installera och konfigurera programservern för installation på mellannivå {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
 Installationsproceduren är identisk med den för en fristående instans. Se [Installera och konfigurera (en dator)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
@@ -70,7 +72,7 @@ Du måste dock göra följande:
    >
    >Standardroutningen för tekniska leveranser ersätts automatiskt med e-postroutning via Mid-sourcing.
 
-### Installation och konfigurering av servern {#installing-and-configuring-the-mid-sourcing-server} för mellanleverantörer
+### Installera och konfigurera servern för mellanlagring {#installing-and-configuring-the-mid-sourcing-server}
 
 På klientkonsolen letar du reda på **e-postroutningen med mittkällkonto** (i mappen **/Administration/Externa konton/**). Fyll i **URL:en för server**, **konto**, **lösenord** och **Spegla sidans URL**-inställningar med informationen från serverprovidern som är värd för mittkällservern. Testa anslutningen.
 
@@ -78,7 +80,7 @@ På klientkonsolen letar du reda på **e-postroutningen med mittkällkonto** (i 
 >
 >Alternativet **midsourcingEmitter** skapar två **Mid-sourcing**-arbetsflöden. Det är en process som körs som standard var 1 timme och 20:e minut och som samlar in leveransinformation på servern med mellanlagring.
 
-## Distribuera en server {#deploying-a-mid-sourcing-server} från mellanleverantörer
+## Distribuera en server med mellanleverantörer {#deploying-a-mid-sourcing-server}
 
 1. Installerar programservern:
 
@@ -96,7 +98,7 @@ På klientkonsolen letar du reda på **e-postroutningen med mittkällkonto** (i 
 
    Alternativet **Plattform för mellanpublicering** skapar standardmapparna för lagring av skickade leveranser och standardoperatorn som utför skickade leveranser.
 
-## Multiplexing av servern {#multiplexing-the-mid-sourcing-server} från mitten
+## Multiplexing av servern med mellanlagring {#multiplexing-the-mid-sourcing-server}
 
 >[!CAUTION]
 >
@@ -141,7 +143,7 @@ Attributet &#39;@name&#39; måste följa följande regler:
 
 Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas.
 
-## Konfigurerar spårning på en server {#configuring-tracking-on-a-mid-sourcing-server} med mellankällor
+## Konfigurera spårning på en server med flera källor {#configuring-tracking-on-a-mid-sourcing-server}
 
 **Konfigurera servern för mellanlagring**
 

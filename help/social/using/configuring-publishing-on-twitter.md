@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Konfigurera publicering på Twitter{#configuring-publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste du delegera skrivåtkomst till Adobe Campaign för dessa konton. Gör detta genom att utföra följande konfigurationssteg:
 
@@ -41,7 +43,7 @@ Vi rekommenderar även att du skapar ett privat Twitter-konto som kan användas 
 
 ![](assets/social_twitter_test_page.png)
 
-## Skapa ett program på Twitter {#creating-an-application-on-twitter}
+## Skapa ett program i Twitter {#creating-an-application-on-twitter}
 
 För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste du skapa ett Twitter-program per Twitter-konto. Gör så här:
 
@@ -57,7 +59,7 @@ För att Adobe Campaign ska kunna skicka tweets till dina Twitter-konton måste 
 
    ![](assets/social_create_twitter_app_002.png)
 
-## Delegerar skrivåtkomst till Adobe Campaign {#delegating-write-access-to-adobe-campaign}
+## Delegera skrivåtkomst till Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 För varje Twitter-program måste du skapa en annan **[!UICONTROL Twitter]**-typtjänst som inkluderar programinställningarna.
 

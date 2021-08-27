@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Serverkonfigurationsfilen{#the-server-configuration-file}
+
+![](../../assets/v7-only.svg)
 
 Den övergripande konfigurationen för Adobe Campaign definieras i filen **serverConf.xml** som finns i katalogen **conf** i installationskatalogen. I det här avsnittet visas alla olika noder och parametrar för filen **serverConf.xml**.
 
@@ -898,7 +900,7 @@ Mer information finns i [Proxyanslutningskonfiguration](file-res-management.md).
  </tbody> 
 </table>
 
-### HTTP-proxy / Säker proxy {#http-proxy---secure-proxy-}
+### HTTP-proxy/säker proxy {#http-proxy---secure-proxy-}
 
 Konfigurera följande parametrar i noden **proxyConfig > HTTP Proxy / Secure proxy**.
 

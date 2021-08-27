@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Redigera en profil{#editing-a-profile}
+
+![](../../assets/common.svg)
 
 Om du vill visa information om en profil klickar du på profilens namn i profillistan.
 
@@ -39,7 +41,7 @@ Den här skärmen innehåller alla allmänna data om den valda profilen. Den inn
 
 >[!NOTE]
 >
->När alternativet **[!UICONTROL No longer contact (by any channel)]** är markerat innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Se denna [sida](../../delivery/using/understanding-quarantine-management.md) för mer information om detta.
+>När alternativet **[!UICONTROL No longer contact (by any channel)]** är markerat innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
 
 ## Fliken Kontaktinformation {#contact-information-tab}
 
@@ -49,7 +51,7 @@ Den här skärmen innehåller den valda profilens e-postadress. Det ser ut så h
 
 På den här skärmen visas adressens kvalitetsindex samt hur många fel adressen innehåller. Denna information används direkt av postföretaget baserat på antalet fel som påträffats under tidigare leveranser och kan inte ändras manuellt.
 
-## Annan flik {#other-tab}
+## Fliken Annan {#other-tab}
 
 Den här skärmen innehåller användardefinierade fält som kan anpassas efter behov. Du kan också ändra namn på fälten och definiera deras format via **[!UICONTROL Field properties...]**, vilket visas nedan:
 
@@ -75,7 +77,7 @@ Den här skärmen innehåller de informationstjänster som profilen har prenumer
 
 Knappen **[!UICONTROL Detail]** visar egenskaperna för den valda prenumerationen. Knappen **[!UICONTROL Add]** används för att lägga till en ny prenumeration manuellt.
 
-Se denna [sida](../../delivery/using/managing-subscriptions.md) för mer information om detta.
+Mer information finns på [den här sidan](../../delivery/using/managing-subscriptions.md).
 
 ## Fliken Leveranser {#deliveries-tab}
 

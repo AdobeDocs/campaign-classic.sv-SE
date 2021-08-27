@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Leverans{#delivery}
 
-Med en **leveransaktivitet**-typ kan du skapa en leveransåtgärd. Den kan konstrueras med indataelement.
+![](../../assets/common.svg)
+
+Med en **leveransaktivitet**-typ kan du skapa en leveransåtgärd. Den kan skapas med indataelement.
 
 Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativen.
 
@@ -81,7 +83,7 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
    * **[!UICONTROL Send a proof]**: Med det här alternativet kan du skicka ett bevis på leveransen. Den här åtgärden motsvarar att klicka på knappen **[!UICONTROL Send a proof]** i verktygsfältet för en leverans med **Delivery**
    * **[!UICONTROL Prepare and start]**: Med det här alternativet startas hela analysprocessen (målberäkning och förberedelse av innehåll) och leveransen skickas. Den här åtgärden motsvarar att klicka på **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** och **[!UICONTROL Confirm delivery]** när du skickar en leverans till huvudmålet med **Leverans**.
 
-   Med aktiviteten **[!UICONTROL Act on a delivery]** som används ytterligare i arbetsflödet kan du starta alla återstående steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Mer information finns i [Leveranskontroll](../../workflow/using/delivery-control.md).
+   Med aktiviteten **[!UICONTROL Act on a delivery]** som används ytterligare i arbetsflödet kan du starta alla återstående steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Mer information finns i [Leveranskontroll](delivery-control.md).
 
    Följande alternativ är också tillgängliga:
 
@@ -95,12 +97,12 @@ Om du vill konfigurera den redigerar du aktiviteten och anger leveransalternativ
 
    * **[!UICONTROL Processing errors]**
 
-      Se [Leveranskontroll](../../workflow/using/delivery-control.md).
+      Se [Leveranskontroll](delivery-control.md).
    På fliken **Skript** kan du ändra leveransparametrarna.
 
    ![](assets/edit_diffusion_fil_script.png)
 
-## Exempel: leveransarbetsflöde {#example--delivery-workflow}
+## Exempel: arbetsflöde för leverans {#example--delivery-workflow}
 
 Skapa ett nytt arbetsflöde och lägg till aktiviteter enligt bilden nedan:
 
@@ -125,11 +127,11 @@ Klicka på **[!UICONTROL OK]** för att stänga egenskapsfönstret. Du har just 
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Detta är ett meddelande som innehåller ett uttryck skrivet i JavaScript: **[!UICONTROL vars.recCount]** är antalet mottagare som har angetts som mål för leveransen av föregående aktivitet. Mer information om JavaScript-uttryck finns i [JavaScript-skript och -mallar](../../workflow/using/javascript-scripts-and-templates.md).
+   Detta är ett meddelande som innehåller ett uttryck skrivet i JavaScript: **[!UICONTROL vars.recCount]** är antalet mottagare som har angetts som mål för leveransen av föregående aktivitet. Mer information om JavaScript-uttryck finns i [JavaScript-skript och -mallar](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   Godkännandeaktiviteten beskrivs i [Godkännande](../../workflow/using/approval.md).
+   Godkännandeaktiviteten beskrivs i [Godkännande](approval.md).
 
 ## Indataparametrar {#input-parameters}
 

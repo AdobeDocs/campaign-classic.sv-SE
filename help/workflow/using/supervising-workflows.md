@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# Användningsfall: övervaka dina arbetsflöden{#supervising-workflows}
+# Användningsfall: övervaka era arbetsflöden{#supervising-workflows}
+
+![](../../assets/common.svg)
 
 Här beskrivs hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot;.
 
@@ -31,11 +33,11 @@ Om du vill övervaka statusen för en uppsättning arbetsflöden måste du följ
 
 >[!NOTE]
 >
->Utöver arbetsflödet kan du med Campaign **Workflow Heatmap** analysera arbetsflöden som körs. Mer information finns i [dedikerat avsnitt](../../workflow/using/heatmap.md).
+>Utöver arbetsflödet kan du med Campaign **Workflow Heatmap** analysera arbetsflöden som körs. Mer information finns i [dedikerat avsnitt](heatmap.md).
 >
->Mer information om hur du **övervakar arbetsflödenas körning** finns i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md).
+>Mer information om hur du **övervakar arbetsflödenas körning** finns i [det här avsnittet](monitoring-workflow-execution.md).
 
-## Steg 1: Skapar övervakningsarbetsflödet {#step-1--creating-the-monitoring-workflow}
+## Steg 1: Skapa övervakningsarbetsflödet {#step-1--creating-the-monitoring-workflow}
 
 Mappen för arbetsflöde som vi ska övervaka är mappen **&quot;CustomWorkflows&quot;** som lagras i noden **Administration > Produktion > Tekniska arbetsflöden**. Den här mappen innehåller en uppsättning affärsarbetsflöden.
 
@@ -115,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Steg 3: Skapar aktiviteten Test {#step-3--creating-the--test--activity}
+## Steg 3: Skapa aktiviteten Test {#step-3--creating-the--test--activity}
 
 Med aktiviteten Testa kan du avgöra om en leverans behöver skickas eller om övervakningsarbetsflödet behöver köra en annan cykel baserat på aktiviteten Vänta.
 

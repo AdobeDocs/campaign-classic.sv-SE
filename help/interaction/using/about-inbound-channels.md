@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Om inkommande kanaler{#about-inbound-channels}
+
+![](../../assets/v7-only.svg)
 
 Erbjudandena kan presenteras på olika erbjudandeplatser via en ingående eller utgående kanal. I det här kapitlet beskrivs några specifika funktioner för inkommande kanaler.
 

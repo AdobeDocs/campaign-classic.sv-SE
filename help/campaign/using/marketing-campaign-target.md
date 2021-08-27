@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Välj målgruppen för dina kampanjer {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 I en marknadsföringskampanj kan ni för varje leverans definiera:
 
@@ -167,7 +169,7 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet.
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-## Lägg till en kontrollgrupp {#defining-a-control-group}
+## Lägga till en kontrollgrupp {#defining-a-control-group}
 
 En kontrollgrupp är en population som inte kommer att få leveransen. Det används för att spåra beteenden och kampanjeffekter efter leverans genom att göra en jämförelse med beteendet hos målpopulationen, som har fått leveransen.
 
@@ -236,7 +238,7 @@ Du kan definiera en ny population som ska användas som kontrollgrupp. Den här 
 >Adobe Campaign frågeredigerare presenteras i [det här avsnittet](../../workflow/using/query.md).
 
 
-#### Självstudievideo {#create-email-video}
+#### Videokurs {#create-email-video}
 
 I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i Adobe Campaign.
 

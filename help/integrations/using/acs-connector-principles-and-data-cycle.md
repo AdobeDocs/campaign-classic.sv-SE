@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # ACS Connector-principer och datasecykel{#acs-connector-principles-and-data-cycle}
+
+![](../../assets/v7-only.svg)
 
 ## Introduktion {#introduction}
 
@@ -126,7 +128,7 @@ Med **den avancerade implementeringen** kan du utföra mer komplexa användnings
 
 Alla tekniska element som är relaterade till ACS Connector är tillgängliga i noden **[!UICONTROL Administration > ACS Connector]** i Utforskaren.
 
-### Arbetsflöden för teknik och replikering {#technical-and-replication-workflows}
+### Tekniska arbetsflöden och arbetsflöden för replikering {#technical-and-replication-workflows}
 
 Efter installationen av paketet finns två tekniska arbetsflöden under **[!UICONTROL Administration > ACS Connector > Process]**.
 

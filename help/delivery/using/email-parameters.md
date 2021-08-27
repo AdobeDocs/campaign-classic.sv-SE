@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '905'
 ht-degree: 8%
 
 ---
 
 # E-postparametrar {#email-parameters}
+
+![](../../assets/common.svg)
 
 I det här avsnittet visas alternativ och parametrar som är specifika för e-postleverans.
 
@@ -30,6 +32,10 @@ Mer information om konfiguration av BCC för e-post och metodtips finns i [det h
 >Hemlig kopia via e-post är en valfri funktion. Kontrollera licensavtalet och kontakta eran kontoansvarige om du vill aktivera det.
 
 När du skapar en ny leverans- eller leveransmall är e-postkopia inte aktiverat som standard. Du måste aktivera det manuellt på e-postleveransnivå eller leveransmallnivå.
+
+>[!NOTE]
+>
+>Om du använder e-postkopia med förbättrad MTA aktiveras det här alternativet automatiskt för alla leveranser.
 
 Följ stegen nedan för att aktivera e-postkopia för en e-postleveransmall:
 

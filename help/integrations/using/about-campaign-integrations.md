@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
 # Kom igång med Adobe Campaign-integreringar {#about-campaign-integrations}
+
+![](../../assets/common.svg)
 
 Adobe Experience Cloud är en omfattande uppsättning förstklassiga, integrerade lösningar som bygger på en gemensam dataplattform med en gemensam uppsättning kraftfulla bastjänster.
 
@@ -27,8 +29,7 @@ En fullständig lista över Adobe-lösningar och bastjänster som kan integreras
 >
 >De flesta av dessa integreringar kräver att Adobe Identity Management System (IMS) implementeras för att logga in via Adobe ID. [Läs mer på den här sidan](../../integrations/using/about-adobe-id.md).
 
-
-## Länka dina lösningar {#working-with-experience-cloud-solutions}
+## Länka lösningar {#working-with-experience-cloud-solutions}
 
 Flera lösningar kan kopplas till Adobe Experience Cloud. **organisationen** är den kundenhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
@@ -90,7 +91,7 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>Adobe Analytics </strong> Connectorgör att Adobe Campaign och Adobe Analytics kan interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Läs </a> mer om Campaign - Integrering med Analytics Connectors.</p><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connectorgör att Adobe Campaign och Adobe Analytics kan interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer från Adobe Campaign till Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Läs </a> mer om Campaign - Integrering med Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>

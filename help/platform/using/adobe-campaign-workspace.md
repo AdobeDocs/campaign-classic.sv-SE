@@ -2,18 +2,20 @@
 product: campaign
 title: Arbetsyta i Adobe Campaign
 description: Lär dig hur du använder och anpassar arbetsytan i Campaign
-feature: Översikt
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '825'
 ht-degree: 4%
 
 ---
 
 # Arbetsyta i Adobe Campaign{#adobe-campaign-workspace}
+
+![](../../assets/common.svg)
 
 ## Utforska Adobe Campaign gränssnitt {#about-adobe-campaign-interface}
 
@@ -110,7 +112,7 @@ Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att 
 
 Språket i din Adobe Campaign Classic-instans påverkar datum- och tidsformat.
 
-Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. Se denna [sida](../../installation/using/creating-an-instance-and-logging-on.md) för mer information om detta.
+Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. Mer information finns på [den här sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
 De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 
@@ -141,7 +143,7 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
  </tbody> 
 </table>
 
-### Lägg till värden i en uppräkning {#add-values-in-an-enumeration}
+### Lägga till värden i en uppräkning {#add-values-in-an-enumeration}
 
 Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** för en mottagarprofil kan du till exempel ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
 

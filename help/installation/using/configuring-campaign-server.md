@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Kom igång med Campaign-serverkonfigurationen{#gs-campaign-server-config}
+
+![](../../assets/v7-only.svg)
 
 I det här kapitlet beskrivs serverkonfigurationer som kan utföras för att passa dina behov och dina miljöegenskaper.
 
@@ -25,7 +27,7 @@ För **värdbaserade**-distributioner kan inställningarna på serversidan endas
 
 Mer information finns i följande avsnitt:
 
-* [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
 * [Värdbaserade modeller](../../installation/using/hosting-models.md)
 * [Funktionsmatris för lokal och värdbaserad Campaign Classic](../../installation/using/capability-matrix.md)
 
@@ -81,7 +83,7 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## Aktivera processer {#enabling-processes}
+## Möjliggör processer {#enabling-processes}
 
 Adobe Campaign-processer på servern aktiveras (och inaktiveras) via filerna **config-default.xml** och **`config-<instance>.xml`**.
 
@@ -136,7 +138,7 @@ Du kan konfigurera lagringskatalogen (**var** katalog) för Adobe Campaign-data 
    Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
-## Dynamisk sidsäkerhet och reläer {#dynamic-page-security-and-relays}
+## Dynamisk sidsäkerhet och vidarebefordran {#dynamic-page-security-and-relays}
 
 Som standard är alla dynamiska sidor automatiskt relaterade till den lokala **Tomcat-servern på den dator vars webbmodul har startats.** Den här konfigurationen anges i avsnittet **`<url>`** i frågereläkonfigurationen för filen **ServerConf.xml**.
 
@@ -188,7 +190,7 @@ I det här exemplet sammanfaller **`<IP_addresses>`**-värdet med listan över I
 >
 >Värdena ska anpassas efter din konfiguration och dina nätverksbegränsningar, särskilt om specifika konfigurationer har utvecklats för din installation.
 
-### Hantera HTTP-rubriker {#managing-http-headers}
+### Hantera HTTP-huvuden {#managing-http-headers}
 
 Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubriker i svar som skickas via relä. Så här gör du:
 
@@ -205,7 +207,7 @@ Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubr
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## Begränsa auktoriserade externa kommandon {#restricting-authorized-external-commands}
+## Begränsa behöriga externa kommandon {#restricting-authorized-external-commands}
 
 Från och med bygge 8780 kan teknikadministratörer begränsa listan över auktoriserade externa kommandon som kan användas i Adobe Campaign.
 
@@ -251,7 +253,7 @@ Den här användaren måste läggas till i användarlistan för Adobe Campaign-o
 >Du bör inte använda en anpassad sudo. En standardsudo måste installeras på datorn.
 
 
-## Spårning av överflödig {#redundant-tracking}
+## Spårning av överflödiga {#redundant-tracking}
 
 När flera servrar används för omdirigering måste de kunna kommunicera med varandra via SOAP-anrop för att kunna dela information från de URL:er som ska omdirigeras. När leveransen påbörjas är det möjligt att inte alla omdirigeringsservrar är tillgängliga. därför kanske de inte har samma informationsnivå.
 
@@ -274,7 +276,7 @@ Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**
 
 
 
-## Arbetsflöden och tillhörigheter med hög tillgänglighet {#high-availability-workflows-and-affinities}
+## Arbetsflöden och tillhörighet med hög tillgänglighet {#high-availability-workflows-and-affinities}
 
 Du kan konfigurera flera arbetsflödesservrar (wfserver) och distribuera dem på två eller flera datorer. Om du väljer den här typen av arkitektur konfigurerar du anslutningsläget för belastningsutjämnarna enligt Adobe Campaign-åtkomsten.
 

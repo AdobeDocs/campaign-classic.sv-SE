@@ -2,26 +2,31 @@
 product: campaign
 title: Om Adobe Campaign Classic
 description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer.
-feature: Översikt
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 95%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
 # Kom igång med Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 För att kunna leverera en hög grad av kundengagemang och fantastiska upplevelser måste varumärken skapa enhetliga kundupplevelser på alla kontaktytor. De som marknadsför kan nu effektivt utforma, planera, genomföra, hantera och optimera marknadsföringskampanjer över flera kanaler som ger hög avkastning på marknadsföringsinvesteringar och ökar lojaliteten.
 
 Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringskampanjer. Adobe Campaign har innovativa funktioner för att modellera, effektivisera och automatisera processerna för marknadsföring och kundkommunikation.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Adobe Campaign Classic finns i version 6.11 och 7. Förutom när det anges gäller hjälpmaterialet båda versionerna i den [senaste versionen](../../rn/using/latest-release.md). Skärmbilderna återspeglar användargränssnittet i Campaign Classic version 7.
+>* Hjälpmaterialen i den här samlingen gäller för Campaign Classic v7 i den [senaste versionen](../../rn/using/latest-release.md). Ett specifikt märke finns när ett avsnitt också gäller Campaign v8.
+>
+>* Adobe Campaign v8-dokumentation finns [här](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html).
+
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
 
@@ -79,8 +84,8 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [Webbapplikationer](../../web/using/about-web-applications.md) – skapa webbsidor och formulär,
 * [Survey Manager](../../surveys/using/about-surveys.md) – skapa undersökningar och omröstningar online,
 * [Content Manager](../../delivery/using/about-content-management.md) – hantera e-postinnehåll,
-* [Distribuerad marknadsföring](../../campaign/using/about-distributed-marketing.md) – samordna kampanjer för centrala/lokala myndigheter,
-* [Response Manager](../../campaign/using/about-response-manager.md) – hantera kundsvar,
+* [Distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md) – samordna kampanjer för centrala/lokala myndigheter,
+* [Response Manager](../../response/using/about-response-manager.md) – hantera kundsvar,
 * [Kopplingar](../../platform/using/about-connectors.md) – använd kopplingar för att kommunicera med externa lösningar och databasmotorer,
 * [Webbtjänster](../../configuration/using/about-web-services.md) – använd Campaign via API:er/webbtjänster,
 * [Rapportering](../../reporting/using/about-adobe-campaign-reporting-tools.md) – få tillgång till inbyggda rapporter, analysera data och utforma egna rapporter.

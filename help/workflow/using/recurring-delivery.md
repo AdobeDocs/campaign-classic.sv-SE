@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
 # Återkommande leverans{#recurring-delivery}
+
+![](../../assets/common.svg)
 
 Med en **[!UICONTROL Recurring delivery]**-aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
 
@@ -31,7 +33,7 @@ Så här gör du:
 
 Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en leveransmall utifrån tillgängliga alternativ. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/about-templates.md).
 
-Ett exempel på den här aktiviteten som används finns i [avsnittet](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Ett exempel på den här aktiviteten som används finns i [avsnittet](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Så här ställer du in återkommande leverans
 

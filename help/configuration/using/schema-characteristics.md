@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Schemaegenskaper{#schema-characteristics}
+
+![](../../assets/v7-only.svg)
 
 Egenskaperna för ett schema som refererar till en befintlig tabell är följande:
 
@@ -25,7 +27,7 @@ Egenskaperna för ett schema som refererar till en befintlig tabell är följand
 >
 >Ta inte bort fält i standardmottagartabellen, även om de är oanvändbara. Detta kan orsaka beteendefel i Adobe Campaign-databasen.
 
-## Vyattributet {#the-view-attribute}
+## Attributet view {#the-view-attribute}
 
 Källscheman accepterar attributet **view** för rotelementet **srcSchema**. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. Attributet **view=&quot;true&quot;** instruerar databasstrukturuppdateringsguiden att ignorera schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
 

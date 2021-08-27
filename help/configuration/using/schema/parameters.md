@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 17%
 
 ---
 
-# parameterelement {#parameters--element}
+# parameters-element {#parameters--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-13}
 
@@ -27,7 +29,7 @@ Ingen
 
 `<method>`
 
-## Underordnade {#children-13}
+## Barn {#children-13}
 
 `<param>`
 
@@ -35,7 +37,7 @@ Ingen
 
 Det här elementet definierar en grupp med `<parameter>`-element.
 
-## Använd och använd {#use-and-context-of-use-8}
+## Användning och användningssammanhang {#use-and-context-of-use-8}
 
 Det här elementet är obligatoriskt, även för ett enskilt `<param>`-underordnat element till `<method>`-elementet.
 

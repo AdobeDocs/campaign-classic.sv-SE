@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 17%
 
 ---
 
-# help element {#help--element}
+# help-element {#help--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-6}
 
@@ -27,7 +29,7 @@ Ingen
 
 `<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`,       `<method />`
 
-## Underordnade {#children-6}
+## Barn {#children-6}
 
 Ingen
 

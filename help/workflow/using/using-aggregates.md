@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -15,20 +15,22 @@ ht-degree: 2%
 
 # Använda aggregat{#using-aggregates}
 
+![](../../assets/common.svg)
+
 Här finns information om hur du automatiskt identifierar de sista mottagarna som har lagts till i databasen.
 
 Med hjälp av följande process jämförs skapandedatumet för mottagarna i databasen med det senaste kända datumet då en mottagare skapades med en sammanställning. Alla mottagare som skapas samma dag markeras också.
 
 Om du vill utföra ett **skapandedatum = max (skapandedatum)**-typfilter på mottagarna måste du köra ett arbetsflöde för att följa dessa steg:
 
-1. Hämta databasmottagare med en enkel fråga. Mer information om det här steget finns i [Skapa en fråga](../../workflow/using/query.md#creating-a-query).
+1. Hämta databasmottagare med en enkel fråga. Mer information om det här steget finns i [Skapa en fråga](query.md#creating-a-query).
 1. Beräkna det senaste kända datumet som en mottagare skapades med resultatet som genererats från aggregeringsfunktionen **max (Skapad)**.
 1. Länka varje mottagare till aggregeringsfunktionens resultat i samma schema.
 1. Filtrera mottagare med sammanställningen via det redigerade schemat.
 
 ![](assets/datamanagement_usecase_1.png)
 
-## Steg 1: Beräknar aggregeringsresultatet {#step-1--calculating-the-aggregate-result}
+## Steg 1: Beräkna sammanställningsresultatet {#step-1--calculating-the-aggregate-result}
 
 1. Skapa en fråga. Här är målet att beräkna det senaste kända skapandedatumet från alla mottagare i databasen. Frågan innehåller därför inget filter.
 1. Välj **[!UICONTROL Add data]**.

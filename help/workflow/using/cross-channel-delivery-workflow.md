@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # Arbetsflöde för leveranser över flera kanaler{#cross-channel-delivery-workflow}
 
-I det här användningsexemplet visas ett exempel med ett arbetsflöde för flerkanalsleverans. Det allmänna konceptet för flerkanalsleveranser beskrivs i [det här avsnittet](../../workflow/using/cross-channel-deliveries.md).
+![](../../assets/common.svg)
+
+I det här användningsexemplet visas ett exempel med ett arbetsflöde för flerkanalsleverans. Det allmänna konceptet för flerkanalsleveranser beskrivs i [det här avsnittet](cross-channel-deliveries.md).
 
 Målet är att segmentera en målgrupp från mottagarna av databasen i olika grupper i syfte att skicka ett e-postmeddelande till en grupp och ett SMS-meddelande till en annan grupp.
 
@@ -31,12 +33,12 @@ De huvudsakliga implementeringsstegen för det här fallet är följande:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Steg 1: Målgrupp {#step-1--targeting-the-audience}
+## Steg 1: Målgruppsanpassning {#step-1--targeting-the-audience}
 
 Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
 1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Lägg till en **Query**-aktivitet i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
+1. Lägg till en **Query**-aktivitet i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](query.md).
 1. Definiera de mottagare som ska ta emot leveranserna. Välj till exempel Guldmedlemmar som måldimension.
 1. Lägg till filtervillkor i frågan. I det här exemplet väljer du mottagare som har en e-postadress och ett mobilnummer.
 
@@ -65,11 +67,11 @@ Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Steg 3: Segmentera den slutliga målgruppen {#step-3--segmenting-the-resulting-audience}
+## Steg 3: Segmentera målgruppen {#step-3--segmenting-the-resulting-audience}
 
 När målet har identifierats och första leveransen har skapats måste du segmentera målet i olika populationer med filtervillkoren.
 
-1. Lägg till en **delad**-aktivitet i arbetsflödet och öppna den. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/split.md).
+1. Lägg till en **delad**-aktivitet i arbetsflödet och öppna den. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](split.md).
 1. Skapa tre segment från populationen som beräknas uppströms i frågan.
 
    ![](assets/wkf_cross-channel_6.png)

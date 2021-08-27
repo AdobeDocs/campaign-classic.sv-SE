@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Publicera på Twitter{#publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 ## Publicera på dina Twitter-konton {#publishing-on-your-twitter-accounts}
 
@@ -32,7 +34,7 @@ Skapa en ny leverans baserat på leveransmallen **[!UICONTROL Tweet (twitter)]**
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Välja huvudmålet {#selecting-the-main-target}
+### Välja huvudmål {#selecting-the-main-target}
 
 Markera det eller de konton som du vill skicka tweets till.
 
@@ -97,7 +99,7 @@ Spårningskonfigurationen är densamma som för en e-postleverans. Mer informati
 >
 >Vi kan inte skilja på robotar som analyserar tweets och användare som faktiskt klickar.
 
-### Skicka korrektur {#sending-the-proof}
+### Skicka korrekturet {#sending-the-proof}
 
 Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att få en exakt återgivning av publikationen på en privat testsida från Twitter. Mer information om hur du skapar ett privat Twitter-konto finns i [Skapa ett testkonto på Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för att välja korrekturmål beskrivs i [Välja korrekturmålets mål](#selecting-the-target-of-the-proof).
 
@@ -156,7 +158,7 @@ Skapa en ny leverans baserat på leveransmallen **[!UICONTROL Tweet (Direct Mess
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Välja huvudmålet {#selecting-the-main-target-1}
+### Välja huvudmål {#selecting-the-main-target-1}
 
 Välj de följare som du vill skicka ditt direktmeddelande till.
 

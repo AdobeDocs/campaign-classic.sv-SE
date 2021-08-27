@@ -2,18 +2,20 @@
 product: campaign
 title: Dokumentationsuppdateringar för Adobe Campaign Classic
 description: Den här sidan beskriver alla nya funktioner och uppdateringar i dokumentationen om Adobe Campaign Classic
-feature: Översikt
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4465'
+source-wordcount: '4464'
 ht-degree: 100%
 
 ---
 
 # Dokumentationsuppdateringar{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter månad och version av Campaign.
 
@@ -48,7 +50,7 @@ Kraven för Campaign Client Console har uppdaterats i kompatibilitetsmatrisen. [
 
 Steg för steg-installationen av Campaign Client Console har förbättrats och klargjorts. [Läs mer](../../installation/using/installing-the-client-console.md)
 
-Ett nytt tekniskt meddelande har skapats om signeringsproblemet för spårade URL:er. [Läs mer](../../technotes/tracked-urls.md)
+Ett nytt tekniskt meddelande har skapats om signeringsproblemet för spårade URL:er. [Läs mer](../../technotes/using/tracked-urls.md)
 
 ## April 2021 {#april-2021}
 
@@ -210,7 +212,7 @@ Landningssidan gällande bästa praxis för levererbarhet har förbättrats för
 
 Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
-* [Så ställer du in trötthetshantering med typologiregler och fördefinierade filter](../../campaign/using/about-campaign-typologies.md)
+* [Så ställer du in trötthetshantering med typologiregler och fördefinierade filter](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [Så skapar du ett e-postmeddelande i en kampanj](../../campaign/using/marketing-campaign-deliveries.md)
 

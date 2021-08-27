@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # Konfigurera populationsexempel {#step-2--configuring-population-samples}
 
-## Konfigurera frågeaktiviteten {#configuring-the-query-activity}
+![](../../assets/common.svg)
+
+## Konfigurera aktiviteten Fråga {#configuring-the-query-activity}
 
 * Dubbelklicka på aktiviteten **[!UICONTROL Query]**.
 
@@ -29,7 +31,7 @@ ht-degree: 7%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## Konfigurera den delade aktiviteten {#configuring-the-split-activity}
+## Konfigurera aktiviteten Dela {#configuring-the-split-activity}
 
 Med den här aktiviteten kan du skapa flera populationer: den som får A, den som får B, och den återstående befolkningen. Om du använder slumpmässig markering kan du bara rikta in dig på en del av populationen av varje leverans.
 

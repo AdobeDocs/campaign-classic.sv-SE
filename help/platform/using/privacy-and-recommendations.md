@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
 
 ---
 
 # Integritet och medgivande{#privacy-and-recommendations}
+
+![](../../assets/common.svg)
 
 ## Allmänna rekommendationer {#general-recommendations}
 
@@ -25,7 +27,7 @@ Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket 
 
 Ta dig tid att gå igenom [Checklistan för säkerhet och sekretess](../../installation/using/get-started-security-privacy.md) för att lära dig grunderna i att kontrollera säkerhet och sekretess.
 
-### Integritetsregler {#privacy-regulations}
+### Integritetsbestämmelser {#privacy-regulations}
 
 För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i enlighet med lagstiftningen i den eller de regioner där du bedriver verksamhet. Dessa regler omfattar:
 * [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) (Europeiska allmänna dataskyddsförordningen)
@@ -122,7 +124,7 @@ Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig 
 
 ## Integritetshantering {#privacy-management}
 
-Integritetshantering avser alla processer och verktyg som kan hjälpa er att följa integritetsbestämmelser (GDPR, CCPA, etc.). Få en översikt över vad integritetshantering är på [denna sida](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html).
+Integritetshantering avser alla processer och verktyg som kan hjälpa dig att följa integritetsbestämmelser (GDPR, CCPA, osv.). Få en översikt över vad integritetshantering är på [denna sida](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html).
 
 Adobe Campaign tillhandahåller olika funktioner för integritetshantering:
 * Medgivandehantering, datalagring och användarroller. Se [det här avsnittet](#consent).

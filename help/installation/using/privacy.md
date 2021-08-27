@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Sekretess {#privacy}
+
+![](../../assets/v7-only.svg)
 
 ## Sekretessförfrågningar
 
@@ -55,7 +57,7 @@ För att förbättra säkerheten har en signaturmekanism införts för att spår
 >
 >När användaren klickar på en felformaterad URL returneras följande fel: &quot;Begärd URL &#39;..&#39; hittades inte.&quot;
 
-Sedan Campaign 20.2 och [!DNL Gold Standard]-versionen kan du dessutom använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
+Sedan Campaign 20.2 och [!DNL Gold Standard]-versionen kan du dessutom använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
 
 Om du kör [!DNL Gold Standard] 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 

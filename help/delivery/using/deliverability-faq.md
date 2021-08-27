@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Felsökning av slutprodukter{#deliverability-faq}
+
+![](../../assets/common.svg)
 
 Har du något leveransproblem? Du kan hitta lösningen här.
 
@@ -40,7 +42,7 @@ Om du alltid får samma felmeddelande för en Internet-leverantör, kan din e-po
 * Uppdatera dina prenumerationsformulär för att upptäcka eventuella fel i de angivna domännamnen (till exempel: gmaul.com eller yaho.com).
 * Om du märker fel som anger att dina meddelanden har deklarerats som skräppost, eller att dina meddelanden alltid är blockerade, kan du försöka utesluta mottagare som inte har öppnat eller klickat i något av dina meddelanden de senaste 12 månaderna från målet.
 
-Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, [Adobe kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Om problemet kvarstår kontaktar du den kommersiella tjänsten eller leveransfunktionen, [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Blockeringslista kontra karantän {#denylist-versus-quarantine}
 

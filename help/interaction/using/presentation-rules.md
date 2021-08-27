@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Presentationsregler{#presentation-rules}
+
+![](../../assets/v7-only.svg)
 
 ## Skapa en presentationsregel {#creating-a-presentation-rule}
 
@@ -76,7 +78,7 @@ Vi ska konfigurera vår regel så att resan till Kanada endast erbjuds en gång 
 
    ![](assets/offer_typology_example_014.png)
 
-## Använder presentationsregeln {#applying-the-presentation-rule}
+## Använda presentationsregeln {#applying-the-presentation-rule}
 
 Här är ett programexempel på den typologiregel som skapades tidigare.
 

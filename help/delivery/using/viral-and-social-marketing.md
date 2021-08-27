@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Viral och social marknadsföring{#viral-and-social-marketing}
+
+![](../../assets/common.svg)
 
 ## Om viral marknadsföring {#about-viral-marketing}
 
@@ -88,7 +90,7 @@ Använd följande steg:
 
    Referensen läggs till i mappen **Mottagare** i databasen och prenumereras (som standard) på informationstjänsten **Newsletter**.
 
-## Spåra delning av sociala nätverk {#tracking-social-network-sharing}
+## Spåra delning via sociala nätverk {#tracking-social-network-sharing}
 
 Delning och åtkomst till delad information spåras. Denna information som Adobe Campaign samlar in finns tillgänglig på två ställen:
 

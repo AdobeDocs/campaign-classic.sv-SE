@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Användningsfall: Skicka transaktionsmejl med bilagor {#transactional-email-with-attachments}
+
+![](../../assets/v7-only.svg)
 
 Syftet med det här användningsexemplet är att lägga till e-postbilagor direkt till utgående utskick.
 
@@ -75,7 +77,7 @@ Om du vill lägga till en e-postbilaga i ett transaktionsmeddelande följer du s
 1. På skärmen **[!UICONTROL Attachment definition]** anger du parametern SOAP attachment:
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. När meddelandet bearbetas hämtar systemet filen från fjärrplatsen (tredjepartsserver) och bifogar den till det enskilda meddelandet.

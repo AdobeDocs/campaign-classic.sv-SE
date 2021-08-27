@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Användningsfall: webbformulär{#use-cases-web-forms}
+
+![](../../assets/common.svg)
 
 ## Skapa ett prenumerationsformulär med dubbel anmälan {#create-a-subscription--form-with-double-opt-in}
 
@@ -24,7 +26,7 @@ Det här exemplet baseras på följande scenario:
 1. Skapa ett prenumerationsformulär för nyhetsbrev på en webbplats som innehåller en kryssruta för att prenumerera på en tillfällig tjänst. Med den här tjänsten kan du leverera bekräftelsemeddelanden för prenumerationer.
 1. Skapa bekräftelseleveransen för prenumerationen med en leveransmall som är länkad till webbformuläret. Den innehåller bekräftelselänken som anropar formuläret för prenumeration på nyhetsbrev och visar ett meddelande om godkännande av prenumeration.
 
-### Steg 1 - Skapar informationstjänster {#step-1---creating-information-services}
+### Steg 1 - Skapa informationstjänster {#step-1---creating-information-services}
 
 1. Skapa prenumerationstjänsten för nyhetsbrev som ska erbjudas dina mottagare. Mer information om hur du skapar ett nyhetsbrev finns i [det här avsnittet](../../delivery/using/about-services-and-subscriptions.md).
 
@@ -34,7 +36,7 @@ Det här exemplet baseras på följande scenario:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### Steg 2 - Skapar bekräftelsemeddelanden {#step-2---creating-confirmation-messages}
+### Steg 2 - Skapa bekräftelsemeddelanden {#step-2---creating-confirmation-messages}
 
 Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till på tillfällig tjänstnivå.
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # Leveranskontroll{#delivery-control}
 
+![](../../assets/common.svg)
+
 Med åtgärden **Leveranskontroll** kan du starta, pausa eller stoppa en leverans.
 
-Detta kan vara leveransen som anges i övergången, en leverans som valts uttryckligen eller en leverans som beräknas av ett skript. Mer information finns i [Leverans](../../workflow/using/delivery.md).
+Detta kan vara leveransen som anges i övergången, en leverans som valts uttryckligen eller en leverans som beräknas av ett skript. Mer information finns i [Leverans](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-Om du väljer **[!UICONTROL Start]** utför aktiviteten alla steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Om några av dessa steg redan har utförts av en tidigare arbetsflödesaktivitet, kommer de inte att utföras igen. Om måluppskattningen till exempel redan utfördes av en **[!UICONTROL Delivery]**-typaktivitet (se [Leverans](../../workflow/using/delivery.md)) startar aktiviteten **[!UICONTROL Act on the delivery]** de återstående stegen (förberedelse och leverans av innehåll).
+Om du väljer **[!UICONTROL Start]** utför aktiviteten alla steg som krävs för att starta leveransen (målberäkning, förberedelse av innehåll, leverans). Om några av dessa steg redan har utförts av en tidigare arbetsflödesaktivitet, kommer de inte att utföras igen. Om måluppskattningen till exempel redan utfördes av en **[!UICONTROL Delivery]**-typaktivitet (se [Leverans](delivery.md)) startar aktiviteten **[!UICONTROL Act on the delivery]** de återstående stegen (förberedelse och leverans av innehåll).
 
 Följande alternativ är tillgängliga:
 
@@ -31,7 +33,7 @@ Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Processing errors]**
 
-   Se [Bearbetningsfel](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Se [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 ## Indataparametrar {#input-parameters}
 

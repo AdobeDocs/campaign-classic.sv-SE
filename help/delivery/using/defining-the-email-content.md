@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f2300b265fa97e5b208519ab2446927d14f5f91c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Definiera e-postinnehållet {#defining-the-email-content}
+
+![](../../assets/common.svg)
 
 ## Avsändare {#sender}
 
@@ -187,9 +189,8 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 >[!IMPORTANT]
 >
 >* Sökvägarna för bildåtkomst ändras vid manuell överföring eller när meddelanden skickas.
-   > 
-   >
-* För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+> 
+>* För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 
 **Användningsfall: skicka ett meddelande med bilder**

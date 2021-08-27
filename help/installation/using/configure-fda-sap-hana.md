@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera åtkomst till SAP HANA {#configure-access-to-sap-hana}
+
+![](../../assets/v7-only.svg)
 
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till SAP HANA.
 
@@ -58,7 +60,7 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
    * **LD_LIBRARY_PATH**: Den bör innehålla länken till SAP Hana-klienten (/usr/sap/hdbclient/libodbcHDB.so) som standard.
    * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
 
-## Externt SAP HANA-konto{#sap-external}
+## SAP HANA external account{#sap-external}
 
 Med det externa SAP HANA-kontot kan du ansluta Campaign-instansen till din externa SAP HANA-databas.
 

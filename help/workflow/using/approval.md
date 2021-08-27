@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Godkännande{#approval}
+
+![](../../assets/common.svg)
 
 En **Approval**-aktivitet kräver att en operator deltar. Operatorn tilldelas en uppgift och kan svara via e-post, via den webbsida som är länkad i e-postmeddelandet eller via konsolen.
 
@@ -63,7 +65,7 @@ Klicka på länken **[!UICONTROL Advanced parameters...]** för att välja den l
 
 Den här mallen kan ändras för att anpassa meddelandelayouten, men du bör skapa en kopia. Målinriktningsmekanismen (extern fil, målmappning) får inte ändras eftersom den krävs för att meddelanden ska fungera korrekt.
 
-Ett exempel på godkännande visas i [Definiera godkännanden](../../workflow/using/defining-approvals.md).
+Ett exempel på godkännande visas i [Definiera godkännanden](defining-approvals.md).
 
 ## Utdataparametrar {#output-parameters}
 

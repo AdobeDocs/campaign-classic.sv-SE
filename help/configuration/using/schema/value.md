@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # värdeelement {#value--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-16}
 
@@ -33,7 +35,7 @@ value:==help
 
 `<enumeration>`
 
-## Underordnade {#children-16}
+## Barn {#children-16}
 
 `<help>`
 

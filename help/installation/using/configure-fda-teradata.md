@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # Konfigurera åtkomst till Teradata {#configure-access-to-teradata}
 
+![](../../assets/v7-only.svg)
+
 Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Teradata.
 
 1. Installera och konfigurera [Teradata-drivrutiner](#teradata-config)
 1. Konfigurera Teradatan [externt konto](#teradata-external) i Campaign
 1. Konfigurera [ytterligare konfiguration](#teradata-additional-configurations) för Teradata- och kampanjservern
 
-## Teradata-konfiguration {#teradata-config}
+## Teradata {#teradata-config}
 
 Du måste installera drivrutiner för att Teradatan ska kunna ansluta till Campaign.
 
@@ -67,7 +69,6 @@ Du måste installera drivrutiner för att Teradatan ska kunna ansluta till Campa
 >[!NOTE]
 >
 >För att ansluta till en extern Teradata-databas i FDA krävs ytterligare konfigurationssteg på Adobe Campaign-servern. [Läs mer](#teradata-additional-configurations).
-
 
 ## Teradatans externa konto{#teradata-external}
 
@@ -115,7 +116,7 @@ Så här konfigurerar du Query-ränder:
 
 1. Markera rutan **[!UICONTROL Active]** om du vill aktivera den här funktionen
 
-#### Felsökning av externt konto {#external-account-troubleshooting}
+#### Felsökning av externa konton {#external-account-troubleshooting}
 
 Om följande fel uppstår när anslutningen testas **TIM-030008 Datum &#39;2&#39;: tecken som saknas (iRc=-53)** kontrollera att ODBC-drivrutinen är korrekt installerad och att LD_LIBRARY_PATH (Linux) / PATH (Windows) är inställd för Campaign-servern.
 
@@ -262,7 +263,7 @@ Så här installerar du ODBC-drivrutinen:
 
 1. Kör setup_wrapper.sh.
 
-### Teradata tools and utilities installation {#teradata-tools-installation}
+### Installation av verktyg och verktyg för teradata {#teradata-tools-installation}
 
 Så här installerar du verktyg:
 

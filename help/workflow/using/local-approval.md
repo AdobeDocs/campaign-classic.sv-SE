@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Lokalt godkännande{#local-approval}
+
+![](../../assets/common.svg)
 
 När den är integrerad i ett målarbetsflöde kan du med aktiviteten **[!UICONTROL Local approval]** konfigurera en process för mottagarnas godkännande innan leveransen skickas.
 
@@ -23,7 +25,7 @@ När den är integrerad i ett målarbetsflöde kan du med aktiviteten **[!UICONT
 >
 >För att kunna använda den här aktiviteten måste du ha köpt modulen Distribuerad marknadsföring, som är ett kampanjalternativ. Kontrollera licensavtalet.
 
-Ett exempel på **[!UICONTROL Local approval]**-aktiviteten med en distributionsmall finns i [Använda den lokala godkännandeaktiviteten](../../workflow/using/using-the-local-approval-activity.md).
+Ett exempel på **[!UICONTROL Local approval]**-aktiviteten med en distributionsmall finns i [Använda den lokala godkännandeaktiviteten](using-the-local-approval-activity.md).
 
 Börja med att ange en etikett för aktiviteten och fältet **[!UICONTROL Action to execute]**:
 
@@ -33,7 +35,7 @@ Börja med att ange en etikett för aktiviteten och fältet **[!UICONTROL Action
 
    ![](assets/local_validation_intro_2.png)
 
-* **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se avsnittet [Inkrementell fråga](../../workflow/using/incremental-query.md).
+* **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se avsnittet [Inkrementell fråga](incremental-query.md).
 
    ![](assets/local_validation_intro_3.png)
 
@@ -49,7 +51,7 @@ De fält som ska anges vid ett meddelande om målgodkännande är:
 
 * **[!UICONTROL Distribution context]**: markera  **[!UICONTROL Specified in the transition]** alternativet om du använder en  **[!UICONTROL Split]** typaktivitet för att begränsa målpopulationen. I det här fallet anges distributionsmallen i den delade aktiviteten. Om du inte begränsar målpopulationen väljer du alternativet **[!UICONTROL Explicit]** här och anger distributionsmallen i fältet **[!UICONTROL Data distribution]**.
 
-   Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+   Mer information om hur du skapar en mall för datadistribution finns i [Begränsa antalet delmängdsposter per datadistribution](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
@@ -81,9 +83,9 @@ Följande fält måste anges om det finns en leveransfeedback-rapport:
 * Välj alternativet **[!UICONTROL Specified in the transition]** om leveransen angavs under en tidigare aktivitet. Välj **[!UICONTROL Explicit]** för att ange leveransen i den lokala godkännandeaktiviteten.
 * Välj leveransmall och objekt för e-postmeddelandet. Det finns en standardmall: **[!UICONTROL Local approval notification]**.
 
-## Exempel: Godkänna arbetsflödesleverans {#example--approving-a-workflow-delivery}
+## Exempel: Godkänna leverans av arbetsflöde {#example--approving-a-workflow-delivery}
 
-I det här exemplet visas hur du ställer in en godkännandeprocess för en arbetsflödesleverans. Mer information om hur du skapar leveransarbetsflöden finns i [Exempel: leveransarbetsflöde](../../workflow/using/delivery.md#example--delivery-workflow).
+I det här exemplet visas hur du ställer in en godkännandeprocess för en arbetsflödesleverans. Mer information om hur du skapar leveransarbetsflöden finns i [Exempel: leveransarbetsflöde](delivery.md#example--delivery-workflow).
 
 En operator kan godkänna en leverans på ett av två sätt: med webbsidan som är länkad i e-postmeddelandet eller via konsolen.
 

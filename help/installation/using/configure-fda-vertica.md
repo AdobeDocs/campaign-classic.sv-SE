@@ -6,7 +6,7 @@ description: Lär dig konfigurera åtkomst till Vertica i FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 4%
@@ -16,6 +16,8 @@ ht-degree: 4%
 
 # Konfigurera åtkomst till Vertica {#configure-fda-vertica}
 
+![](../../assets/v7-only.svg)
+
 Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Vertica].
 
 1. Konfigurera [!DNL Vertica] på [CentOS](#vertica-centos), [Windows](#vertica-windows) eller [Debian](#vertica-debian)
@@ -24,7 +26,7 @@ Använd alternativet Campaign **FDA (Federated Data Access**) om du vill bearbet
 
 >[!NOTE]
 >
->[!DNL Vertica] anslutningsprogrammet är tillgängligt för hybriddistributioner och driftsättningar på plats. Se denna [sida](../../installation/using/capability-matrix.md) för mer information om detta.
+>[!DNL Vertica] anslutningsprogrammet är tillgängligt för hybriddistributioner och driftsättningar på plats. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -82,11 +84,11 @@ Följ stegen nedan för att konfigurera [!DNL Vertica] för CentOS:
 
 1. I Adobe Campaign kan du sedan konfigurera ditt externa [!DNL Vertica]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
 
-## Vertikalt i Windows {#vertica-windows}
+## Vertica on Windows {#vertica-windows}
 
 1. Hämta [ODBC-drivrutinen för Windows](https://www.vertica.com/download/vertica/client-drivers/). Om du vill installera drivrutinen för Windows måste du aktivera .NET Framework 3.5, annars försöker installationsguiden automatiskt aktivera och hämta den.
 
-1. Konfigurera ODBC-drivrutinen i Windows. Se denna [sida](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm) för mer information om detta
+1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns på [den här sidan](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
 1. I Adobe Campaign kan du sedan konfigurera ditt externa [!DNL Vertica]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertical-external).
 

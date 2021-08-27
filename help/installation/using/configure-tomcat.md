@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf,b4a422b4-4b8b-4883-8d74-0dccda4a5ef3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 
 # Konfigurera Apache Tomcat {#configuring-tomcat}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign använder en **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive Klientkonsol, spårade URL-länkar, SOAP-anrop med flera). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
 
 Läs mer om Tomcat i Campaign och hur du hittar din Tomcat-version i [den här sidan](../../production/using/locate-tomcat-version.md).
@@ -22,7 +24,6 @@ Läs mer om Tomcat i Campaign och hur du hittar din Tomcat-version i [den här s
 >[!NOTE]
 >
 >Den här proceduren är begränsad till **lokala**-distributioner.
-
 
 ## Standardport för Apache Tomcat {#default-port-for-tomcat}
 

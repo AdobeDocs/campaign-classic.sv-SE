@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Konfigurera SpamAssassin{#configuring-spamassassin}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -37,14 +39,14 @@ Om du använder SpamAssassin i Adobe Campaign får du en indikation på det möj
 
 För att kunna distribuera SpamAssassin och dess moduler i Perl krävs Adobe Campaign-programservrar med Internetåtkomst via en HTTP-anslutning (TCP/80-flöde).
 
-## Installerar på en Windows-dator {#installing-on-a-windows-machine}
+## Installera på en Windows-dator {#installing-on-a-windows-machine}
 
 Så här installerar och konfigurerar du SpamAssets på Windows för att aktivera integrering med Adobe Campaign:
 
 1. Installera SpamAssassin
 1. Integrera SpamAssassin i Adobe Campaign
 
-### Installerar SpamAssassin {#installing-spamassassin}
+### Installera SpamAssassin {#installing-spamassassin}
 
 1. Anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 1. Hämta filen **Neolane Spam Assassin (Windows-installation) (2.0)** (neolane_spamassassin.2.0.zip).

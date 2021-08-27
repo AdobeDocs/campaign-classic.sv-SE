@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Duplicera miljöer{#duplicating-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Introduktion {#introduction}
 
@@ -57,7 +59,7 @@ För att den här processen ska fungera måste käll- och målmiljöerna ha samm
 
 ## Implementering {#implementation}
 
-### Överföringsprocedur {#transfer-procedure}
+### Överföringsförfarande {#transfer-procedure}
 
 I det här avsnittet får du hjälp med att förstå hur du överför en källmiljö till en målmiljö via en fallstudie: Vi har som mål att återställa en produktionsmiljö (**prod**-instans) till en utvecklingsmiljö (**dev**-instans) så att den fungerar i ett sammanhang som ligger så nära den aktiva plattformen som möjligt.
 
@@ -69,7 +71,6 @@ Följande steg måste utföras med stor noggrannhet: vissa processer kanske fort
 >* Nedanstående kommandon används i kontexten för en **prod**-instans och en **dev**-instans under PostgreSQL.
 
 >
-
 
 
 ### Steg 1 - Säkerhetskopiera källmiljöns (prod) data {#step-1---make-a-backup-of-the-source-environment--prod--data}
@@ -154,7 +155,7 @@ Använd följande kommando för att återställa källdatabaserna i målmiljön:
 psql mydatabase < mydatabase.sql
 ```
 
-### Steg 5 - Anpassa målmiljön (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Steg 5 - Skapa målmiljön automatiskt (dev) {#step-5---cauterize-the-target-environment--dev-}
 
 För att undvika felfunktioner får de processer som är länkade till leverans och körning av arbetsflöden inte köras automatiskt när målmiljön aktiveras.
 
@@ -164,7 +165,7 @@ Kör följande kommando för att göra detta:
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### Steg 6 - Kontrollera autentisering {#step-6---check-cauterization}
+### Steg 6 - Kontrollera auktorisering {#step-6---check-cauterization}
 
 1. Kontrollera att den enda leveransen är den vars ID är inställt på 0:
 

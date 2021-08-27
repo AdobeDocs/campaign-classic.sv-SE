@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
 
 # Synkronisera data mellan Campaign och CRM {#data-synchronization}
+
+![](../../assets/common.svg)
 
 Datasynkronisering mellan Adobe Campaign och CRM utförs via en dedikerad arbetsflödesaktivitet: [CRM-koppling](../../workflow/using/crm-connector.md).
 
@@ -92,7 +94,7 @@ Datumet för den senaste synkroniseringen lagras som standard i ett alternativ s
 >
 >Den här anteckningen gäller endast för den allmänna **[!UICONTROL CRM Connector]**-aktiviteten. För andra CRM-aktiviteter är processen automatisk.
 >
->Det här alternativet måste skapas och fyllas i manuellt under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Det måste vara ett textalternativ och dess värde måste matcha följande format: **ååå/MM/dd hh:mm:ss**.
+>Det här alternativet måste skapas och fyllas i manuellt under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Det måste vara ett textalternativ och dess värde måste matcha följande format: **åååå/MM/dd hh:mm:ss**.
 > 
 >Du måste uppdatera det här alternativet manuellt för ytterligare import.
 
@@ -111,7 +113,7 @@ När du aktiverar alternativet **[!UICONTROL Automatic index]** genereras tre va
 
    >[!NOTE]
    >
-   >Dessa datum visas i följande format: **ååå/MM/dd hh:mm:ss**.
+   >Dessa datum visas i följande format: **åååå/MM/dd hh:mm:ss**.
 
 ### Filtrera data {#filtering-data}
 
@@ -141,7 +143,7 @@ Sorteringsordningen för kolumnerna i listan är:
 
 ![](assets/crm_import_order.png)
 
-### Registrera identifiering {#record-identification}
+### Registrerings-ID {#record-identification}
 
 I stället för att importera element som ingår (och eventuellt filtreras) i CRM kan du använda en population som beräknas i förväg i arbetsflödet.
 
@@ -151,7 +153,7 @@ Markera sedan fälten för den inkommande ifyllning som du vill importera, så s
 
 ![](assets/crm_wf_import_calculated_population.png)
 
-## Exporterar till CRM {#exporting-to-the-crm}
+## Exportera till CRM {#exporting-to-the-crm}
 
 Genom att exportera Adobe Campaign-data till CRM kan du kopiera hela innehållet till en CRM-databas.
 
@@ -202,7 +204,7 @@ Andra konverteringar är:
 * **[!UICONTROL Without time offset]**: I det här läget avbryts den tidszonshantering som används i standardläget.
 * **[!UICONTROL Copy/Paste]**: I det här läget används rådata som strängar (ingen konvertering).
 
-### Fel vid bearbetning av {#error-processing}
+### Felbearbetning {#error-processing}
 
 Inom ramen för import och export av data kan du tillämpa en specifik process på fel och avslag. Det gör du genom att välja alternativen **[!UICONTROL Process rejects]** och **[!UICONTROL Process errors]** på fliken **[!UICONTROL Behavior]**.
 
@@ -224,7 +226,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 
 Utdataövergången **[!UICONTROL Reject]** ger dig åtkomst till utdataschemat som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. För Salesforce.com är den här kolumnen **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
-## Importobjekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
+## Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
 
 Om du vill kunna konfigurera en omfattande datasynkroniseringsprocess kan du importera objekt som tagits bort i CRM till Adobe Campaign.
 
@@ -251,4 +253,3 @@ På fliken **[!UICONTROL Behavior]** kan du aktivera bearbetning av avslag. Det 
 >[!NOTE]
 >
 >Även om alternativet **[!UICONTROL Process rejects]** är inaktiverat genereras en varning för varje avvisad kolumn.
-

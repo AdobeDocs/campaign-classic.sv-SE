@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
 ---
 
-# Validera, skicka och spåra meddelanden{#validate-send-track}
+# Validera, skicka och spåra meddelanden {#validate-send-track}
+
+![](../../assets/common.svg)
 
 ## Testa och validera {#test-and-validate-before-sending}
 
@@ -31,7 +33,7 @@ Adobe rekommenderar starkt att du skapar korrekturmeddelanden för att testa lev
 
 [Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Så använder du fröadresser i Adobe Campaign. {#how-to-use-seed-addresses-in-adobe-campaign-}
+### Så använder du fröadresser i Adobe Campaign.  {#how-to-use-seed-addresses-in-adobe-campaign-}
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. Dessa mottagare läggs till i målgruppen. De kan importeras eller skapas direkt i leveransen eller kampanjen. För leveranser med direktutskick läggs de till vid extraheringen och blandas i dokumentet med utdata.
 
@@ -52,7 +54,7 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 
 För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar i enlighet med företagets kommunikationspolicyer.
 
-[Klicka här för att läsa mer](../../campaign/using/about-campaign-typologies.md).
+[Klicka här för att läsa mer](../../campaign-opt/using/about-campaign-typologies.md).
 
 ## Skicka meddelanden {#send-your-messages}
 
@@ -68,7 +70,7 @@ När e-postleveransen har skapats och validerats kan du skicka den. Du kan välj
 
 [Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Så schemalägger man en leverans. {#how-to-schedule-a-delivery-}
+### Så schemalägger man en leverans.  {#how-to-schedule-a-delivery-}
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Värmekarta för arbetsflöde {#workflow-heatmap}
+
+![](../../assets/common.svg)
 
 Värdkarta för kampanjarbetsflöde består av en färgkodad grafisk representation av alla arbetsflöden som körs för närvarande. Det är bara tillgängligt för **kampanjadministratörer**.
 
@@ -29,16 +31,16 @@ Mer exakt hjälper det plattformsadministratörerna att:
 * filtrera arbetsflöden per varaktighet för att se vilka arbetsflöden som kan stöta på problem
 * Filtrera aktiviteter efter varaktighet för att se vilka aktiviteter som kan stöta på problem
 * enkelt hitta enskilda arbetsflöden och alla relaterade aktiviteter (med deras varaktighet)
-* Filtrera efter arbetsflödestyp: [tekniska arbetsflöden](../../workflow/using/building-a-workflow.md#technical-workflows) eller [kampanjarbetsflöden](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Filtrera efter arbetsflödestyp: [tekniska arbetsflöden](building-a-workflow.md#technical-workflows) eller [kampanjarbetsflöden](building-a-workflow.md#campaign-workflows)
 * leta efter ett specifikt arbetsflöde att analysera
 
 >[!NOTE]
 >
->Utöver **heatmap** för arbetsflöde kan du skapa ett arbetsflöde som gör att du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till ansvariga. Mer information finns i [dedikerat avsnitt](../../workflow/using/supervising-workflows.md).
+>Utöver **heatmap** för arbetsflöde kan du skapa ett arbetsflöde som gör att du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till ansvariga. Mer information finns i [dedikerat avsnitt](supervising-workflows.md).
 
-Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](../../workflow/using/about-workflows.md), [Aktiviteter](../../workflow/using/about-activities.md) och [Bästa praxis för arbetsflöden](../../workflow/using/workflow-best-practices.md).
+Om du använder Workflow HeatMap måste du ha god förståelse för följande koncept: [Arbetsflöden](about-workflows.md), [Aktiviteter](about-activities.md) och [Bästa praxis för arbetsflöden](workflow-best-practices.md).
 
-## Anpassa HeatMap för arbetsflöde {#using-the-heatmap}
+## Anpassa Workflow HeatMap {#using-the-heatmap}
 
 >[!NOTE]
 >
@@ -75,8 +77,8 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
 
 1. Du kan även filtrera på **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Endast  [färdiga, tekniska ](../../workflow/using/building-a-workflow.md#technical-workflows) arbetsflöden och  [datahanteringsarbetsflöden ](../../workflow/using/targeting-data.md#data-management) visas.
-   * **[!UICONTROL Marketing]** : Endast arbetsflöden som är kopplade till en marknadsföringskampanj, som kallas  [kampanjarbetsflöden](../../workflow/using/building-a-workflow.md#campaign-workflows), visas.
+   * **[!UICONTROL Technical]** : Endast  [färdiga, tekniska ](building-a-workflow.md#technical-workflows) arbetsflöden och  [datahanteringsarbetsflöden ](targeting-data.md#data-management) visas.
+   * **[!UICONTROL Marketing]** : Endast arbetsflöden som är kopplade till en marknadsföringskampanj, som kallas  [kampanjarbetsflöden](building-a-workflow.md#campaign-workflows), visas.
 
 1. Om du vill söka efter ett specifikt arbetsflöde efter namn kan du även använda fältet **[!UICONTROL Workflow name filter]**.
 
@@ -110,7 +112,7 @@ I exemplet nedan körs tre arbetsflöden mellan 08:05 och 8:05 (oavsett hur lån
 1. Klicka på arbetsflödes-ID:t eller namnet för att öppna ett arbetsflöde direkt.
 1. Om du vill gå tillbaka till vyn **[!UICONTROL Campaign Workflow HeatMap]** klickar du på knappen **[!UICONTROL Home]**.
 
-## Användningsexempel: använd HeatMap för att utföra åtgärder {#use-cases--using-the-heatmap-to-take-actions}
+## Användningsexempel: använda HeatMap för att vidta åtgärder {#use-cases--using-the-heatmap-to-take-actions}
 
 Det finns två huvudfall där HeatMap för kampanjarbetsflödet kan vara användbart.
 
@@ -129,7 +131,7 @@ Som Campaign-administratör kan Workflow HeatMap hjälpa dig att förstå belast
    * Om du stöter på prestandaproblem och om en eller flera röda celler visas i stödrastret bör du ändra starttiderna för flera arbetsflöden. Be marknadsföringsanvändarna att flytta manuella arbetsflöden från upptagna (&quot;heta&quot;) perioder till mer tillgängliga tidsrymder. Detta bör upprätthålla en stabil aktivitetsnivå under dagen.
    * För att undvika toppar och förhindra att instansen överbelastas bör du titta på HeatMap innan du planerar nya arbetsflöden och välja den bästa tiden. Överväg tidsrymder som motsvarar grå eller gröna celler i rutnätet för att starta nya arbetsflöden.
 
-### Hitta tidskrävande arbetsflöden som påverkar prestanda {#finding-long-running-workflows-that-impact-performance}
+### Hitta tidskrävande arbetsflöden som påverkar prestandan {#finding-long-running-workflows-that-impact-performance}
 
 Som kampanjadministratör hjälper Workflow HeatMap dig att hitta de längsta arbetsflödena som kan göra aktiviteten långsammare.
 

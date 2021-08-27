@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Om att simulera erbjudanden{#about-offers-simulation}
+
+![](../../assets/v7-only.svg)
 
 Med modulen **Simulering** kan du testa distributionen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna.
 
@@ -48,7 +50,7 @@ Så här kör du en simulering av dina erbjudanden:
 
    ![](assets/offer_simulation_004.png)
 
-1. Lägg till rapporteringsaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
+1. Lägg till rapportaxlar för att förbättra **[!UICONTROL Offer distribution by rank]**-rapporten (valfritt).
 
    Mer information finns i [Lägga till rapporteringsaxlar](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 

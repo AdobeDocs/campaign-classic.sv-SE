@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Händelsebeskrivning {#event-description}
+
+![](../../assets/v7-only.svg)
 
 ## Datamodell för transaktionsmeddelanden {#about-transactional-messaging-datamodel}
 
@@ -152,7 +154,7 @@ Exempel på data:
     </ctx>
 ```
 
-## Information som returneras av SOAP-anropet {#information-returned-by-the-soap-call}
+## Information som returnerats av SOAP-anropet {#information-returned-by-the-soap-call}
 
 När Adobe Campaign tar emot en händelse genereras ett unikt retur-ID. Detta är ID:t för den arkiverade versionen av händelsen.
 

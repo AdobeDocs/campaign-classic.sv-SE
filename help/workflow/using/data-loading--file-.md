@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # Läsa in data (fil){#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## Använd {#use}
 
@@ -88,7 +90,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
    Fliken **[!UICONTROL Directory]** innehåller information om de filer som ska återställas. I det här exemplet återställs alla filer i textformat vars namn innehåller ordet &quot;kunder&quot; och som lagras i katalogen tmp/Adobe/Data/files på servern.
 
-   Användningen av **[!UICONTROL File collector]** beskrivs i avsnittet [Filinsamlare](../../workflow/using/file-collector.md).
+   Användningen av **[!UICONTROL File collector]** beskrivs i avsnittet [Filinsamlare](file-collector.md).
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
    Det gör du genom att klicka på knappen **[!UICONTROL Change...]** längst ned till höger i redigeringsverktyget och konfigurera schemat.
 
-   Mer information finns i [Schemaläggaren](../../workflow/using/scheduler.md).
+   Mer information finns i [Schemaläggaren](scheduler.md).
 
 1. Konfigurera sedan aktiviteten för inläsning av data (fil) för att ange hur de insamlade filerna ska läsas. Det gör du genom att markera en exempelfil med samma struktur som de filer som ska läsas in.
 
@@ -129,4 +131,4 @@ I följande exempel kan du samla in en fil på servern varje dag, läsa in dess 
 
 1. Ange sedan de processer som ska utföras för varje typ av population. I vårt exempel kommer vi att **[!UICONTROL Update the data]** i databasen. Det gör du genom att placera en **[!UICONTROL Update data]**-aktivitet i slutet av varje utgående övergång från den delade aktiviteten.
 
-   Aktiviteten **[!UICONTROL Update data]** beskrivs i avsnittet [Uppdatera data](../../workflow/using/update-data.md).
+   Aktiviteten **[!UICONTROL Update data]** beskrivs i avsnittet [Uppdatera data](update-data.md).

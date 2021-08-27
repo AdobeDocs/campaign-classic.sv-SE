@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Implementera IMS{#implementing-ims}
 
-## Aktiverar IMS-anslutningen {#enabling-the-ims-connection}
+![](../../assets/common.svg)
+
+## Aktivera IMS-anslutningen {#enabling-the-ims-connection}
 
 1. Om du vill aktivera anslutning via IMS-programmet markerar du **[!UICONTROL Connect with an Adobe ID]** i konsolens anslutningsfönster.
 

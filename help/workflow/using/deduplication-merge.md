@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 5%
@@ -22,11 +22,13 @@ ht-degree: 5%
 
 # Använda sammanfogningsfunktionen för aktiviteten Deduplicering {#deduplication-merge}
 
+![](../../assets/common.svg)
+
 ## Om det här användningsfallet {#about-this-use-case}
 
 I det här användningsexemplet beskrivs hur du använder funktionen **[!UICONTROL Merge]** i **[!UICONTROL Deduplication]**-aktiviteten.
 
-Mer information om teckensnittet finns i [det här avsnittet](../../workflow/using/deduplication.md#merging-fields-into-single-record).
+Mer information om teckensnittet finns i [det här avsnittet](deduplication.md#merging-fields-into-single-record).
 
 Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från en datauppsättning. I det här fallet dupliceras de data som visas nedan baserat på fältet E-post.
 

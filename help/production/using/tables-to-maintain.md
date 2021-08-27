@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Tabeller att underhålla{#tables-to-maintain}
+
+![](../../assets/v7-only.svg)
 
 Listan med tabeller som ska behållas beror på vilken version av Adobe Campaign du har, hur du använder den och på datamodellkonfigurationen.
 

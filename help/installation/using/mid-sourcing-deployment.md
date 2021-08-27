@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Driftsättning via mid-sourcing{#mid-sourcing-deployment}
+
+![](../../assets/v7-only.svg)
 
 Denna konfiguration är en optimal mellanlösning mellan en värdkonfiguration (ASP) och internalisering. Utomvända körningskomponenter utförs på en&quot;server med mellanleverantörer&quot; på Adobe Campaign.
 
@@ -26,7 +28,7 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 ![](assets/s_ncs_install_midsourcing.png)
 
 * Modulerna för exekvering och studshantering är inaktiverade på instansen.
-* Programmet är konfigurerat att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
+* Programmet är konfigurerat för att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
 
 ## Funktioner {#features}
 
@@ -60,6 +62,6 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 * Åtkomst till en databasserver på programservern.
 * Brandväggen är konfigurerad att öppna HTTP- (80) eller HTTPS-portar (443) till mittkällservern.
 
-### Installera och konfigurera (distribuering från mellanleverantörer) {#installing-and-configuring--mid-sourcing-deployment-}
+### Installera och konfigurera (driftsättning från mellanleverantörer) {#installing-and-configuring--mid-sourcing-deployment-}
 
 Se [Mid-sourcing-server](../../installation/using/mid-sourcing-server.md).

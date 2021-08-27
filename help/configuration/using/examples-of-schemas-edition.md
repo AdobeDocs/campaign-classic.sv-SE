@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Exempel på schemautgåvor{#examples-of-schemas-edition}
+
+![](../../assets/v7-only.svg)
 
 ## Utöka en tabell {#extending-a-table}
 
@@ -197,7 +199,7 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## Spill table {#overflow-table}
+## Spilltabell {#overflow-table}
 
 En flödestabell är en tilläggstabell (kardinalitet 1-1), men deklarationen av länken till tabellen som ska utökas fylls i schemat för flödestabellen.
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Kom igång med kuber{#about-cubes}
+
+![](../../assets/common.svg)
 
 Utforska data i databasen via modulen **Marketing Analytics**. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
@@ -79,7 +81,7 @@ När du arbetar med kuber måste du känna till följande begrepp:
 
    Mått kan beräknas: Antagandegraden för ett erbjudande är förhållandet mellan antalet gånger det presenterades och antalet gånger det accepterades.
 
-## Kubarbetsyta {#cube-workspace}
+## Arbetsytan Kub {#cube-workspace}
 
 Kuber lagras i noden **[!UICONTROL Administration > Configuration > Cubes]**.
 
