@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 661a53b19e0fd8c6038c0957dbe2656152b0814c
+source-git-commit: a53ad78121c530469dc1fdc1aadd71d7d4426890
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 55%
+source-wordcount: '257'
+ht-degree: 57%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 55%
 
 * **[Septemberversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
 
-* **[Vanliga frågor och svar om integritetsskydd i Apple Mail ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/> Hitta inledande vägledning som svar på Apples meddelande om iOS 15
+* **[Vanliga frågor och svar om integritetsskydd i Apple Mail ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=sv)**<br/> Hitta inledande vägledning som svar på Apples meddelande om iOS 15
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](technotes/using/ims-updates.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **
 
