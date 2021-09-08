@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 98%
+source-wordcount: '1664'
+ht-degree: 97%
 
 ---
 
@@ -80,12 +80,16 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    <td><strong>Ersättning</strong></td> 
   </tr>
   <tr>  
+   <td>Rapportering<br></td>
+   <td><p>Efter Adobe Flash Player EOL är mätarrapporten och diagramåtergivningsmotorn inte längre tillgängliga. <a href="../../reporting/using/creating-a-new-report.md">Läs mer</a></p>
+  </tr>
+  <tr>  
    <td>Faxkanal<br></td>
    <td><p>Faxkanalen är inte längre tillgänglig från och med Campaign 21.1.3. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Läs mer</a></p>
+  </tr>
   <tr>
   <td>Demdex-domän<br></td>
   <td><p> Från och med Campaign version 21.1.3 är demdex-domänen som används för att importera och exportera målgrupper till Adobe Experience Cloud inte längre tillgänglig. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Läs mer</a></p> 
-  </td>
   </td>
   </tr>
    <tr> 

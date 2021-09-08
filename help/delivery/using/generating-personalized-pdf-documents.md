@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Om variabla PDF-dokument {#about-variable-pdf-documents}
 
-Med Adobe Campaign kan du generera variabla PDF-dokument (för e-postbilagor, direktutskick) från dokument i LibraryOffice eller Microsoft Word.
+Med Adobe Campaign kan du generera variabla PDF-dokument för e-postbilagor från dokument i LibraryOffice eller Microsoft Word.
 
 Följande tillägg stöds: &quot;.docx&quot;, &quot;.doc&quot; och &quot;.odt&quot;.
 

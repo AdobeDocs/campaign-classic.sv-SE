@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
+source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 87%
+source-wordcount: '1191'
+ht-degree: 84%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 87%
 På den här sidan visas [!DNL Gold Standard]-versioner. Läs mer om Campaign [!DNL Gold Standard] [på den här sidan](gs-overview.md).
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] version 12{#gs-12}
+
+_7 september 2021_
+
+Version 9032@554dbcd innehåller följande korrigering:
+
+* Korrigerade ett problem som ledde till ett 500-fel när länken till ett webbprogram öppnades i en radleverans med spårning aktiverat.
 
 _27 augusti 2021_
 

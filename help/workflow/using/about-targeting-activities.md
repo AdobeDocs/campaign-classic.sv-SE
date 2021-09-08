@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 3%
 
 ---
 
@@ -29,13 +29,14 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 * **Celler**: ger en vy över de olika delmängderna i form av datakolumner och underlättar hanteringen av dessa delmängder när det finns många sådana. Mer information finns i avsnittet [Celler](cells.md).
 * **Erbjudanden per cell**: Med kan du länka olika erbjudanden till varje delmängd av en population. Se avsnittet [Erbjudanden per cell](offers-by-cell.md).
 * **Svar**: Med kan du återställa information som samlats in under en undersökning. Mer information om detta hittar du i det här [avsnittet](../../surveys/using/getting-started-with-surveys.md).
-* **Leveransöversikt**: Med kan du lägga till en leveransdisposition. Se avsnittet [Leveransdisposition](delivery-outline.md).
-* **Anrikning**: I kan du lägga till kolumner i en arbetstabell eller ett arbetsflöde. Se avsnittet [Enrichment](enrichment.md).
-* **Redigera schema**: kan du omvandla, standardisera och vid behov förbättra data. Mer information finns i avsnittet [Redigera schema](edit-schema.md).
-* **Erbjudandemotor**: I kan du anropa interaktionserbjudandemotorn i ett arbetsflöde. Se avsnittet [Erbjudandemotor](offer-engine.md).
-* **Deduplicering**: Med kan du ta bort dubbletter från inkommande aktiviteter. Se avsnittet [Deduplicering](deduplication.md).
-* **Ändra dimension**: gör att du kan ändra målinriktningsdimensionen under arbetsflödets konstruktionscykel. Se avsnittet [Ändra dimension](change-dimension.md).
-* **Prenumerationstjänster**: I kan du hantera målprenumerationer och avbryta prenumerationer på en informationstjänst. Se avsnittet [Prenumerationstjänster](subscription-services.md).
-* **Listuppdatering**: registrerar resultatet av inkommande aktiviteter i en lista. Se avsnittet [Listuppdatering](list-update.md).
-* **Uppdatera data**: gör att du kan uppdatera data i databasen avsevärt. Se avsnittet [Uppdatera data](update-data.md).
-* **CRM-koppling**: Med kan du konfigurera synkroniseringen mellan Adobe Campaign och en CRM. Se avsnittet [CRM Connector](crm-connector.md).
+* **Leveransöversikt**: Med kan du lägga till en leveransdisposition. Se avsnittet [Leveransdisposition](../../workflow/using/delivery-outline.md).
+* **Anrikning**: I kan du lägga till kolumner i en arbetstabell eller ett arbetsflöde. Se avsnittet [Enrichment](../../workflow/using/enrichment.md).
+* **Redigera schema**: kan du omvandla, standardisera och vid behov förbättra data. Mer information finns i avsnittet [Redigera schema](../../workflow/using/edit-schema.md).
+* **Erbjudandemotor**: I kan du anropa interaktionserbjudandemotorn i ett arbetsflöde. Se avsnittet [Erbjudandemotor](../../workflow/using/offer-engine.md).
+* **Deduplicering**: Med kan du ta bort dubbletter från inkommande aktiviteter. Se avsnittet [Deduplicering](../../workflow/using/deduplication.md).
+* **Ändra dimension**: gör att du kan ändra målinriktningsdimensionen under arbetsflödets konstruktionscykel. Se avsnittet [Ändra dimension](../../workflow/using/change-dimension.md).
+* **Prenumerationstjänster**: I kan du hantera målprenumerationer och avbryta prenumerationer på en informationstjänst. Se avsnittet [Prenumerationstjänster](../../workflow/using/subscription-services.md).
+* **Listuppdatering**: registrerar resultatet av inkommande aktiviteter i en lista. Se avsnittet [Listuppdatering](../../workflow/using/list-update.md).
+* **Uppdatera data**: gör att du kan uppdatera data i databasen avsevärt. Se avsnittet [Uppdatera data](../../workflow/using/update-data.md).
+* **CRM-koppling**: Med kan du konfigurera synkroniseringen mellan Adobe Campaign och en CRM. Se avsnittet [CRM Connector](../../workflow/using/crm-connector.md).
+* **[!UICONTROL Change data source]**: gör att du kan ändra datakällan för ett arbetsflöde  **[!UICONTROL Working table]**. Detta ger större flexibilitet att hantera data över olika datakällor, som FDA, FFDA och lokala databaser. Se avsnittet [CRM Connector](../../workflow/using/change-data-source.md).

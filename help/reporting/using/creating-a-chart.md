@@ -6,10 +6,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 2%
+source-wordcount: '522'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ Så här skapar du ett diagram i en rapport:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Om du vill använda sammanhangsberoende data markerar du det här alternativet och klickar på länken **[!UICONTROL Advanced settings...]**. Välj sedan de data som statistiken ska beröra.
+   * Om du vill använda sammanhangsberoende data väljer du **[!UICONTROL Context data]** i listrutan **[!UICONTROL Source]** och klickar på länken **[!UICONTROL Advanced settings...]**. Välj sedan de data som statistiken ska beröra.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -118,32 +118,6 @@ Om det behövs kan du invertera värdevisningssekvensen. Om du vill göra det v�
 ### Konvertering: tratt {#conversion--funnel}
 
 Med den här typen av diagram kan du spåra konverteringsgraden för uppmätta element.
-
-### Förlopp: mått {#progress--gauge}
-
-Med den här typen av diagram kan du visa förloppet för ett värde jämfört med ett definierat mål. I exemplet nedan visar det svarta numret hur många leveranser som har skickats (76) av målet 100 leveranser. Mätaren är uppdelad i tre intervall som motsvarar specifika statusvärden.
-
-![](assets/reporting_graph_type_gauge.png)
-
-Dessa element definieras när diagrammet konfigureras.
-
-![](assets/reporting_graph_type_gauge1.png)
-
-* Fältet **[!UICONTROL Value]** representeras av en svart uppringning i diagrammet. Den representerar det element vars förlopp du vill beräkna. Värdet som ska representeras måste redan ha sparats för att kunna användas.
-* Fältet **[!UICONTROL Goal]** representerar det högsta värdet som ska uppnås.
-* Med fältet **[!UICONTROL Other mark]** kan du lägga till en andra indikator i diagrammet.
-* I fälten **[!UICONTROL Display range]** kan du ange de värden mellan vilka rapporten beräknas.
-* I fältet **[!UICONTROL Value ranges]** kan du attribuera statusvärden (None, Bad, Acceptable, Good) till en uppsättning värden som bättre visar förloppet.
-
-I avsnittet **[!UICONTROL Display settings]** kan du med **[!UICONTROL Change appearance...]** konfigurera hur diagrammet visas.
-
-![](assets/reporting_graph_type_gauge2.png)
-
-Med alternativet **[!UICONTROL Display the value below the gauge]** kan du visa värdeförloppet nedanför diagrammet.
-
-Med fältet **[!UICONTROL Aperture ratio]**, som måste vara mellan 0 och 1, kan du redigera rapportens bländare i en cirkel som är mer eller mindre fullständig. I exemplet ovan motsvarar värdet 0,50 en halvcirkel.
-
-I fältet **[!UICONTROL Width]** kan du redigera diagramstorleken.
 
 ## Interaktion med diagrammet {#interaction-with-the-chart}
 

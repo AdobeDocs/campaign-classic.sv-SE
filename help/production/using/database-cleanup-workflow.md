@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f232588b981d262ef67ff8b7a6f39ff3ea2505d3
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -435,7 +435,7 @@ Den här uppgiften tar bort inaktuella poster från loggtabellerna för spårnin
 1. Massborttagning används för att rensa alla tabeller i listan med tidigare återskapade tabeller. Följande fråga används:
 
    ```
-   DELETE FROM XtkTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM XtkTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
+   DELETE FROM NmsTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM NmsTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
    där **$(tsDate)** är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för alternativet **NmsCleanup_TrackingLogPurgeDelay**.

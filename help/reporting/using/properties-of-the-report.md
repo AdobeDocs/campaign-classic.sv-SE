@@ -6,9 +6,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,6 @@ Redigeringsspråket är det språk du skriver på. När du lägger till ett spr�
 
 På fliken **[!UICONTROL Rendering]** kan du anpassa sidans datavisningsläge. Du kan välja:
 
-* Diagramåtergivningsmotorn: som standard är återgivningsmotorn HTML 5.
 * Navigeringstypen i rapporten: via knappar eller länkar.
 * Standardpositionen för etiketter för rapportelement. Den här positionen kan laddas över för varje element.
 * Den mall eller det tema som används för att generera rapportsidor.

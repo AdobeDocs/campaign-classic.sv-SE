@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 99%
 
 ---
@@ -438,6 +438,7 @@ ht-degree: 99%
       + [Prenumerationstjänster](workflow/using/subscription-services.md)
       + [Uppdatera data](workflow/using/update-data.md)
       + [CRM-koppling](workflow/using/crm-connector.md)
+      + [Ändra datakälla](workflow/using/change-data-source.md)
    + Flödeskontrollaktiviteter {#flow-control-activities}
       + [Om flödeskontrollaktiviteter](workflow/using/about-flow-control-activities.md)
       + [Start och slut](workflow/using/start-and-end.md)

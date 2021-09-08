@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
 workflow-type: tm+mt
-source-wordcount: '4464'
-ht-degree: 100%
+source-wordcount: '4542'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,19 @@ ht-degree: 100%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
+
+## Augusti 2021{#aug-2021}
+
+Ny arbetsflödesaktivitet har lagts till: Ändra datakälla - [Läs mer](../../workflow/using/change-data-source.md)
+
+Tillämplighetsemblem har lagts till på dokumentationssidorna: **Gäller endast v7** för Campaign Classic v7-funktioner och **Gäller för v7 och v8** för gemensamma funktioner.
+
+Lade till ett meddelande om integrationen mellan Campaign och AEM Assets, som har tagits bort från och med Adobe Experience Manager 6.4. [Läs mer](../../integrations/using/configuring-access-to-assets.md)
+
+Skärmbilder och parametrar för rapporter och webbprogram har uppdaterats efter att Adobe Flash har tagits bort.
+
+Diagramtypen **Mätare** har tagits bort.
+
 
 ## Juli 2021 {#july-2021}
 

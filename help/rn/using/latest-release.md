@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2403'
+ht-degree: 81%
 
 ---
 
@@ -19,15 +19,65 @@ ht-degree: 99%
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **den senaste Campaign Classic-versionen**.
 
->[!NOTE]
->
->Builds av Campaign **General Availability (GA)** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330).
+Förstå status för kampanjbygge i [den här sidan](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
+
+_7 september 2021_
+
+**Säkerhetsförbättring**
+
+* Korrigerade ett säkerhetsproblem för att förstärka skyddet mot kataloggenombrottsangrepp. (NEO-28547)
+
+**Förbättringar**
+
+* Efter att livscykeln upphört har Flash tagits bort från alla relaterade Campaign-funktioner och -komponenter och ersatts med HTML5. Diagramtypen **Mätare** har tagits bort. (NEO-30330) [Läs mer](../../reporting/using/creating-a-chart.md)
+* När du installerar klientkonsolen i Windows kontrollerar installationsprogrammet nu om det finns en överordnad registernod och skapar en om den saknas. Detta förhindrar potentiella problem när konsolen startas. (NEO-34854)
+* Funktionen för att spåra signaturer har förbättrats för att förhindra att fel länkas till hur tredjepartsverktyg (e-postklienter, webbläsare osv.) fungerar hantera specialtecken. URL-parametrar är nu kodade.
+
+**Andra ändringar**
+
+* Tidigare borttagna Microsoft CRM-anslutningar (Office 365- och On-Local-distributioner) har tagits bort från gränssnittet. [Läs mer](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Efter migreringen till Tomcat 8 har IIS-installationsskriptet uppdaterats för att åtgärda IIS-integreringsproblem. (NEO-31019)
+* Ett skyddsförslag har lagts till för att endast tillåta att det [tekniska arbetsflödet](../../production/using/monitoring-processes.md#billing-report) för fakturering körs på marknadsinstansen.
+* Identifieringen av datakällan har förbättrats på flikarna data och schema i arbetsflödesövergångarnas **Visa ifyllning**-fönster.
+* Databasindex som saknas har lagts till i följande scheman för att förhindra problem med databasuppdatering: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+
+**Felkorrigeringar**
+
+* Korrigerade ett problem som förhindrade att Hot Click-rapporten fungerade när erbjudandena länkades till leveransen. (NEO-26295)
+* Korrigerade ett problem med aktiviteten **Delarbetsflöde** när körningen inte genererade någon utdatatabell. (NEO-36242)
+* Åtgärdade olika problem vid export av **Beskrivande analys**-rapporten till PDF. (NEO-25847)
+* Korrigerade ett problem som kan leda till att leveranser misslyckas när en extern e-postleverans används. (NEO-37435)
+* Ett fel har korrigerats vid anslutning till Microsoft CRM med webb-API. Felmeddelandet har tagits bort eftersom funktioner inte påverkades.
+* Ett problem med borttagning av dubbletter i spårningsloggar när mittservern angavs som relä mellan spårnings- och marknadsföringsservrar har åtgärdats. (NEO-36285)
+* Korrigerade en regression som förhindrade att Vault användes som ett specifikt kodarkiv.
+* Korrigerade ett problem som förhindrade dig från att använda variabler i en **arbetsflödesaktivitet för berikning** när den inkommande övergången kom från en FDA-datakälla.
+* Korrigerade ett problem som kunde leda till trasiga URL:er i e-postmeddelanden.
+
+## ![](assets/do-not-localize/red_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
 
 _5 june 2021_
 
 **Nyheter**
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Ny arbetsflödesaktivitet: Ändra datakälla</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med den nya arbetsflödesaktiviteten <b>Ändra datakälla</b> kan du ändra datakällan för arbetsflödets arbetsregister. Detta ger större flexibilitet vid datahantering över olika datakällor (FDA och lokal databas).</p>
+<p>I Adobe Campaign-arbetsflöden hanteras data med hjälp av fungerande (eller tillfälliga) tabeller. När arbetsflödet körs delar arbetsregister data mellan arbetsflödesaktiviteter. Som standard skapas arbetstabeller i samma databas som källan för de data som vi vill fråga efter.</p>
+<p>Mer information finns i den <a href="../../workflow/using/change-data-source.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
