@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 96%
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 # Vanliga frågor och svar om inställningar i Campaign {#settings-faq}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Lär dig viktiga konfigurationer för att ställa in instansen i Campaign så att den passar dina behov.
 
