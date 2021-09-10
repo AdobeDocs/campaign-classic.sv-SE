@@ -3,7 +3,7 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a53ad78121c530469dc1fdc1aadd71d7d4426890
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 57%
@@ -26,7 +26,7 @@ ht-degree: 57%
 
 * **[Skydda era Campaign-](technotes/using/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform
 
-* **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integreringDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln. Lär dig hur du migrerar till Adobe I/O.
+* **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integrationDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O.
 
 [Fler uppdateringar](/help/rn/using/documentation-updates.md)
 

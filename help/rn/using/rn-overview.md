@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 21c985d628f672f3c3864fff1a14ab71a24ccfc7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
+source-wordcount: '422'
+ht-degree: 95%
 
 ---
 
@@ -35,9 +35,9 @@ De **senaste GA-builds** är: [[!DNL Gold Standard] version 12](../../rn/using/g
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidat** (RC) – senaste versionen med nya funktioner.
 
-Den **senaste RC-builden** är [Campaign Classic version 21.1.](../../rn/using/latest-release.md)
+![](assets/do-not-localize/orange3.png) **Inte längre tillgängligt**  - Ingen distribution. Inga felkorrigeringar. Vi rekommenderar att du uppdaterar till en nyare version.
 
-![](assets/do-not-localize/red3.png) **Inaktuell** – ingen distribution. Befintliga implementeringar måste uppgraderas.
+![](assets/do-not-localize/red3.png) **Inaktuell** – ingen distribution. Inga felkorrigeringar. Befintliga implementeringar måste uppgraderas.
 
 ## Rekommendationer{#recommendations}
 

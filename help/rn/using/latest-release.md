@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
 ht-degree: 81%
@@ -55,7 +55,7 @@ _7 september 2021_
 * Korrigerade ett problem som förhindrade dig från att använda variabler i en **arbetsflödesaktivitet för berikning** när den inkommande övergången kom från en FDA-datakälla.
 * Korrigerade ett problem som kunde leda till trasiga URL:er i e-postmeddelanden.
 
-## ![](assets/do-not-localize/red_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
 
 _5 june 2021_
 
