@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >Om du använder en äldre version av utlösare-integrering via autentisering, **måste du gå till Adobe I/O enligt beskrivningen nedan**.
 >Observera att under den här flyttningen till [!DNL Adobe I/O] kan vissa inkommande utlösare gå förlorade.
 >
->Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den 18 augusti 2021 **.** Värdmiljöer drar nytta av ett tillägg till och med den 30 november 2021 **.** Kontakta Adobe kundtjänst om du är kund på plats eller som hybridkund för att förlänga supporten till den 30 november 2021. Du måste ange [AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+>Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den 18 augusti 2021 **.** Värdmiljöer drar nytta av ett tillägg till och med den 30 november 2021 **.** Kontakta Adobe kundtjänst om du är kund på plats eller som hybridkund för att förlänga supporten till den 30 november 2021. Du måste [ange AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 ## Förhandskrav {#adobe-io-prerequisites}
 
@@ -33,8 +33,7 @@ Den här integreringen gäller endast från och med **Campaign Classic 20.3, 20.
 Kontrollera att du har:
 
 * en giltig **organisationsidentifierare**: organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Developer access** to your Organization. Systemadministratören för IMS-organisationen måste följa **Lägg till utvecklare i en enskild produktprofil**
-procedur som beskrivs [på den här sidan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) för att ge utvecklare åtkomst till `Analytics - {tenantID}` produktprofilen för den Adobe Analytics-produkt som är kopplad till utlösare.
+* a **Developer access** to your Organization. Systemadministratören för IMS-organisationen måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [på den här sidan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) för att ge utvecklare åtkomst till `Analytics - {tenantID}` produktprofilen för den Adobe Analytics-produkt som är kopplad till utlösare.
 
 ## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
