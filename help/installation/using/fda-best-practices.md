@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 4%
 
 ---
 
-# Bästa praxis och begränsningar
+# God praxis och begränsningar
+
+![](../../assets/v7-only.svg)
 
 ## Optimera e-postpersonalisering med externa data {#optimizing-email-personalization-with-external-data}
 
@@ -27,9 +29,9 @@ Det här alternativet förbättrar prestanda avsevärt när personaliseringssteg
 
 I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras i en extern databas.
 
-* **Filtrera på externa data**  - Med  [](../../workflow/using/targeting-data.md#selecting-data) frågeaktiviteten kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Se denna [sida](../../workflow/using/targeting-data.md#selecting-data) för mer information om detta.
+* **Filtrera på externa data**  - Med  [](../../workflow/using/targeting-data.md#selecting-data) frågeaktiviteten kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns på [den här sidan](../../workflow/using/targeting-data.md#selecting-data).
 
-* **Skapa delmängder**  - Med  [](../../workflow/using/split.md) Delningsaktiviteten kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Se denna [sida](../../workflow/using/split.md) för mer information om detta.
+* **Skapa delmängder**  - Med  [](../../workflow/using/split.md) Delningsaktiviteten kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Mer information finns på [den här sidan](../../workflow/using/split.md).
 
 * **Läs in extern databas**  - Du kan använda externa data i aktiviteten  [Datainläsning](../../workflow/using/data-loading--rdbms-.md)  (RDBMS). Läs mer i [den här sidan](../../workflow/using/data-loading--rdbms-.md).
 
