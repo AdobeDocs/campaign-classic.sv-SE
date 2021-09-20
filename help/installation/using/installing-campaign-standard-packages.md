@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Inbyggda paket innehåller en uppsättning funktioner som kan installeras efter 
 
 Så här installerar du ett inbyggt paket:
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Package import...]** i Adobe Campaign klientkonsol.
+1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
 1. Välj **[!UICONTROL Install a standard package]**.
 1. Markera de paket som du vill installera i paketlistan.
    >[!NOTE]

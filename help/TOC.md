@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2531'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 99%
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
    + [Tekniska anmärkningar](technotes/using/technote.md)
    + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
+   + [Sekretessskydd för e-post i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
    + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
    + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + [IMS-uppdateringar](technotes/using/ims-updates.md)
