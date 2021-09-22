@@ -4,10 +4,10 @@ title: 'Hjälp- och supportalternativ för Campaign Classic '
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 60%
+source-wordcount: '801'
+ht-degree: 61%
 
 ---
 
@@ -136,7 +136,7 @@ Det nya fästingsystemet har startats via [Adobe Admin Console](https://admincon
 
 ### Fråga experterna!
 
-Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Delta i konversationen](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
 ### Access Campaign Download Center
 

@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2535'
 ht-degree: 99%
 
 ---
@@ -118,6 +118,7 @@ ht-degree: 99%
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
+         + [Adobe Analytics Connector-etablering](platform/using/adobe-analytics-provisioning.md)
          + [Integrering med Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Så här migrerar du till Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)

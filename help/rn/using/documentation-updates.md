@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4513'
 ht-degree: 98%
 
 ---
@@ -268,7 +268,7 @@ Avsnittet Sekretess och samtycke har förbättrats med mer detaljerad informatio
 
 Sekretesshanteringen på sidan Campaign Classic har uppdaterats med information om fältet ”reglering” som nu är tillgängligt när du använder API:et, så att det går att konfigurera en automatisk process för förfrågan om användarens information. [Läs mer](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-Sidan Översikt över integritetshantering har uppdaterats med information om Thailands lag för persondataskydd (PDPA) och Brasiliens Lei Geral de Proteção de Dados (LGPD). [Läs mer](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+Sidan Översikt över integritetshantering har uppdaterats med information om Thailands lag för persondataskydd (PDPA) och Brasiliens Lei Geral de Proteção de Dados (LGPD). [Läs mer](../../platform/using/privacy-and-recommendations.md)
 
 Information har lagts till om loggar om delarbetsflöden och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
 
@@ -520,9 +520,9 @@ Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
 Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html)
 
-[Kompatibilitetsmatrisen](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. [Kompatibilitetsmatrisen 19.0](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix-19-0.html) har arkiverats.
+[Kompatibilitetsmatrisen](compatibility-matrix.md) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. Kompatibilitetsmatrisen 19.0 har arkiverats.
 
-Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html)
+Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](deprecated-features.md)
 
 Beskrivningen om serverkonfigurationsfilen har lagts till i installationshandboken. [Läs mer](../../installation/using/the-server-configuration-file.md)
 
@@ -579,7 +579,7 @@ Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -i
 
 Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
-Inställningsproceduren för domännamnet i Campaign har förbättrats och uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html)
+Inställningsproceduren för domännamnet i Campaign har förbättrats och uppdaterats.
 
 Migreringsproceduren för Android-appar från Google Cloud Messaging (GCM) till Firebase Cloud Messaging (FCM) har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html)
 

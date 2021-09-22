@@ -3,7 +3,7 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 1d662f2f6d4b664e1cc2977cd3207d1b71983b04
+source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 48%
@@ -28,7 +28,7 @@ ht-degree: 48%
 
 * **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integrationDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O.
 
-[Fler uppdateringar](/help/rn/using/documentation-updates.md)
+[Fler uppdateringar](rn/using/documentation-updates.md)
 
 ## De vanligaste sidorna
 
@@ -80,7 +80,7 @@ ht-degree: 48%
 
 | Användbara sidor | Resurser för utvecklare |
 |---|---|
-| [Versionsinformation](/help/rn/using/latest-release.md) | [Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) |
+| [Versionsinformation](rn/using/latest-release.md) | [Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) |
 | [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | Uppgradering av [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |

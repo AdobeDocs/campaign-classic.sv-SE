@@ -2,14 +2,15 @@
 product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
+source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 5%
+source-wordcount: '850'
+ht-degree: 4%
 
 ---
 
-# Så här migrerar du till Adobe Analytics Connector {#acc-aa-faq}
+# Så här migrerar du befintliga Genesis-integreringar till Adobe Analytics Connector {#acc-aa-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -49,12 +50,10 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 Du måste uppgradera till Campaign 21.1.3 (eller mer) **före 1 mars 2022**.
 
-Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen.
+Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen. Du kan sedan använda [Adobe Analytics-anslutning](../../platform/using/adobe-analytics-connector.md).
 
 Som lokalt/hybridkund måste ni uppgradera till en av de nyare versionerna för att dra nytta av den nya integreringen.
-
-När alla instanser har uppgraderats kan du [implementera den nya integrationen](../../platform/using/adobe-analytics-connector.md) till Adobe Analytics Connector och säkerställa en smidig övergång.
-
+När alla instanser har uppgraderats kan du [implementera den nya integrationen](../../platform/using/adobe-analytics-provisioning.md) till Adobe Analytics Connector och säkerställa en smidig övergång.
 
 ## Vanliga frågor och svar {#faq-aa}
 

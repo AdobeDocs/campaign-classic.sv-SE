@@ -5,10 +5,10 @@ description: Läs mer om standardarbetsflöden för leveranser
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 
@@ -35,11 +35,6 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser
    <td> <span class="uicontrol">Fakturering</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
    <td> Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses som standard den 25:e varje månad.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Fakturering (aktiva profiler)</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet räknar antalet aktiva profiler. Den utlöses varje natt klockan 1:00 som standard.</p> <p>"<strong>Profil</strong>" betyder en informationspost (t.ex.: en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead. Fakturering gäller endast profiler som är "aktiva". En profil betraktas som"aktiv" om profilen har delats eller kommunicerats via någon kanal under de senaste tolv månaderna.</p> <p>Facebook- och Twitter-kanaler beaktas inte.</p> <p>Du kan få en översikt över <span class="uicontrol">antalet aktiva profiler</span> från <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Kampanjhantering</span> &gt; <span class="uicontrol">Kundstatistik</span>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa alias</span> <br /> </td> 

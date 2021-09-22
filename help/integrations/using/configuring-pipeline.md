@@ -5,7 +5,7 @@ description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -113,7 +113,7 @@ Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument.
 Så här konfigurerar du alternativet för pipeline:
 
 * Lägg till eller redigera utlösare under **[!UICONTROL Triggers]**, du bör inte redigera resten.
-* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se till exempel den här [webbplatsen](http://jsonlint.com/).
+* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se till exempel den här [webbplatsen](https://jsonlint.com/).
 * &quot;name&quot; motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
 * &quot;Consumer&quot; motsvarar namnet på den anropande instansen eller det anropande programmet.
 * Pipelined har också stöd för ämnet&quot;alias&quot;.

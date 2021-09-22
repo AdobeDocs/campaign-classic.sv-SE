@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Om du vill hämta klient-ID:t måste du registrera en app i Azure Active Directo
 
 När du har sparat får du ett **program-ID** som är Klient-ID för Campaign.
 
-Läs mer i [den här sidan](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Läs mer i [den här sidan](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
 ### Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat {#config-certificate-key-id}
 
@@ -115,7 +115,7 @@ Följ stegen nedan för att hämta **identifieraren för certifikatnyckeln (cust
 
 1. Klicka på **Bevilja administratörens samtycke**.
 
-Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
+Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
 
 ### Skapa en appanvändare {#create-app-user-microsoft}
 
@@ -155,7 +155,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 
 >[!NOTE]
 >
-> När [RDS har tagits bort från Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint) är de lokala och Office 365-typerna av CRM-distributioner inte längre kompatibla med Campaign. Adobe Campaign har nu endast stöd för Web API-distribution för CRM-versionen **Dynamic CRM 365**. [Läs mer](../../rn/using/deprecated-features.md#crm-connectors).
+> När [RDS har tagits bort från Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint) är de lokala och Office 365-typerna av CRM-distributioner inte längre kompatibla med Campaign. Adobe Campaign har nu endast stöd för Web API-distribution för CRM-versionen **Dynamic CRM 365**. [Läs mer](../../rn/using/deprecated-features.md#crm-connectors).
 
 Om du vill ansluta till Microsoft Dynamics 365 och Campaign måste du skapa och konfigurera en dedikerad **[!UICONTROL External Account]** i Campaign.
 

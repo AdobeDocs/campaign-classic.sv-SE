@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 14%
+source-wordcount: '836'
+ht-degree: 15%
 
 ---
 
@@ -93,13 +93,11 @@ Aktiva profiler är de profiler som räknas i faktureringssyfte.
 
 Fakturering gäller endast profiler som är **aktiva**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
 
-De profiler som uteslöts under färdigställandet (typologiregler, karantänregler) beaktas inte. En profil som har valts av flera leveranser räknas bara en gång.
+En profil som har valts av flera leveranser räknas bara en gång.
 
 >[!NOTE]
 >
 >Facebook- och Twitter-kanaler beaktas inte.
-
-Bläddra i **[!UICONTROL Administration > Campaign Management > Customer metrics]** från Campaign Explorer för att få en översikt över antalet aktiva profiler. Det faktiska antalet utförs av det **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [tekniska arbetsflödet](../../workflow/using/about-technical-workflows.md). Det här arbetsflödet körs varje dag och lägger till nya data i den befintliga rapporten för den aktuella perioden i mappen **[!UICONTROL Customer metrics]**.
 
 Antal aktiva profiler är endast tillgängligt för **Marknadsinstanser**. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
 

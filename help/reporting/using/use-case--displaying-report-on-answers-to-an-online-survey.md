@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -41,23 +41,23 @@ Så här samlar du in svaren på enkäten:
 1. Redigera aktiviteten och välj den undersökning vars svar du vill analysera.
 1. Aktivera alternativet **[!UICONTROL Select all the answer data]** för att samla in all information.
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
 1. Markera de kolumner som ska extraheras (i det här fallet: välj: alla arkiverade fält. Det här är fälten som innehåller svaren.
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
 1. När svarssamlingsrutan har konfigurerats placerar du en **[!UICONTROL List update]**-typaktivitet för att spara data.
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
    I den här aktiviteten anger du listan som ska uppdateras och avmarkerar alternativet **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: svaren läggs till i den befintliga tabellen. Med det här alternativet kan du referera till listan i en kub. Schemat som är länkat till listan genereras inte om för varje uppdatering, vilket garanterar integriteten för kuben som använder den här listan.
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
 1. Starta arbetsflödet för att bekräfta dess konfiguration.
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_05.png)
 
    Den angivna listan skapas och innehåller schemat för svaren på enkäten.
 
@@ -71,11 +71,11 @@ Sedan kan du skapa kuben och konfigurera dess mått: De kommer att användas fö
 
 I det här exemplet baseras kuben på data i listan som matats av det arbetsflöde som skapats tidigare.
 
-![](assets/reporting_usecase_2_01.png)
+![](../../surveys/using/assets/reporting_usecase_2_01.png)
 
 Definiera måtten och måtten som ska visas i rapporten. Här vill vi visa avtalsdatumet och svarandens land.
 
-![](assets/reporting_usecase_2_02.png)
+![](../../surveys/using/assets/reporting_usecase_2_02.png)
 
 På fliken **[!UICONTROL Preview]** kan du styra rapportens återgivning.
 
@@ -83,8 +83,8 @@ På fliken **[!UICONTROL Preview]** kan du styra rapportens återgivning.
 
 Du kan sedan skapa en rapport baserad på den här kuben och bearbeta data och information.
 
-![](assets/reporting_usecase_3_01.png)
+![](../../surveys/using/assets/reporting_usecase_3_01.png)
 
 Anpassa informationen efter era behov.
 
-![](assets/reporting_usecase_3_02.png)
+![](../../surveys/using/assets/reporting_usecase_3_02.png)

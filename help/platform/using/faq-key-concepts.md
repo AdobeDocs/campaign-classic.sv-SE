@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '866'
 ht-degree: 97%
 
 ---
@@ -56,7 +56,7 @@ Detta är en uppsättning rättigheter och begränsningar som tillåter eller ne
 
 Adobe Campaign har en uppsättning verktyg som hjälper dig att följa integritetsefterlevnaden i GDPR och CCPA.
 
-Läs [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-overview.html) för att få en förståelse av de verktyg och funktioner som Adobe Campaign erbjuder, samt bästa praxis, för att hjälpa dig att uppfylla GDPR-kraven när du använder vår tjänst. Implementeringsstegen för Campaign Classic beskrivs i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
+Läs [det här dokumentet](privacy-and-recommendations.md) för att få en förståelse av de verktyg och funktioner som Adobe Campaign erbjuder, samt bästa praxis, för att hjälpa dig att uppfylla GDPR-kraven när du använder vår tjänst. Implementeringsstegen för Campaign Classic beskrivs i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
 ## Vilka är koncepten för användargränssnitt i Campaign som jag bör känna till? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -126,7 +126,7 @@ Läs mer om hur man [skapar ett webbformulär](../../web/using/about-web-forms.m
 
 Adobe utvärderar ständigt funktionerna i produkten. Adobe gör detta för att med tiden planera att ersätta funktioner med kraftfullare versioner eller bestämma sig för att implementera utvalda delar på nytt för att bli bättre förberedda på framtida förväntningar eller tillägg. Eftersom Campaign fungerar med verktyg från tredje part uppdateras kompatibiliteten regelbundet, vilket innebär att endast de versioner som stöds kan implementeras.
 
-[Klicka här för att läsa mer](https://helpx.adobe.com/se/campaign/kb/deprecated-and-removed-features.html).
+[Klicka här för att läsa mer](../../rn/using/deprecated-features.md).
 
 ## Finns det nya dokumentationsuppdateringar och hjälpmaterial? {#are-there-new-documentation-updates-and-help-materials-released-}
 

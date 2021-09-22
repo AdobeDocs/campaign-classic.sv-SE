@@ -4,9 +4,9 @@ title: Konfigurera integreringen
 description: Konfigurera integreringen
 audience: integrations
 content-type: reference
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Parametern&quot;Consumer&quot; identifierar förekomsten som en av dessa konsume
 ## Konfigurera alternativet Pipeline {#configure-pipeline-option}
 
 Lägg till eller redigera Experience Cloud-utlösare under arrayen&quot;triggers&quot;, redigera inte resten.
-Kontrollera att JSON är giltig med hjälp av denna [webbplats](http://jsonlint.com/).
+Kontrollera att JSON är giltig med hjälp av denna [webbplats](https://jsonlint.com/).
 
 * &quot;name&quot; är utlösar-ID. Ett jokertecken (*) fångar upp alla utlösare.
 * &quot;Consumer&quot; är en unik sträng som unikt identifierar nlserver-instansen. Det kan vanligtvis vara själva instansnamnet. För flera miljöer (dev/stage/prod) måste du se till att det är unikt för var och en av dem så att varje instans får en kopia av meddelandet.

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   </tr> 
   <tr> 
    <td>Webbapplikationer – mikrowebbplatser</td>
-   <td>Från och med Campaign 18.10 är mikrowebbplatser inte längre tillgängliga. Du kan förbättra säkerheten genom att begränsa åtkomsten till enbart dedikerade domäner i konfigurationsfiler i Adobe Campaign och använda anpassade webbadresser i Campaign genom att använda DNS-alias. <a href="https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html">Läs mer</a></td>
+   <td>Från och med Campaign 18.10 är mikrowebbplatser inte längre tillgängliga. Du kan förbättra säkerheten genom att begränsa åtkomsten till enbart dedikerade domäner i konfigurationsfiler i Adobe Campaign och använda anpassade webbadresser i Campaign genom att använda DNS-alias.</td>
   </tr> 
   <tr> 
    <td>Push-meddelanden – iOS Binary-koppling</td>
@@ -183,7 +183,7 @@ Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med
 
 Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande verktyg.
 
-* Java JDK 7. [Läs mer](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7. [Läs mer](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5/4.3/5.x utom när det är inbäddat i ett annat verktyg. [Läs mer](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Databasmotorer {#dbe-eol}
@@ -201,14 +201,14 @@ Från och med version 20.2 är Adobe Campaign inte längre kompatibelt med följ
 Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande FDA-servrar:
 
 * PostgreSQL 9.3. [Läs mer](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Läs mer](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Läs mer](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5. [Läs mer](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5. [Läs mer](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14–14.1. [Läs mer](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtkomst (FDA).
 
-* DB2 UDB 9.5 och 9.7. Stöd finns för senare versioner av DB2 via federerad dataåtkomst (FDA). [Läs mer](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i och 10G R2. Stöd finns för senare versioner av Oracle Server via federerad dataåtkomst (FDA). [Läs mer](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5 och 9.7. Stöd finns för senare versioner av DB2 via federerad dataåtkomst (FDA). [Läs mer](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i och 10G R2. Stöd finns för senare versioner av Oracle Server via federerad dataåtkomst (FDA). [Läs mer](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3, 8.4, 9.0, 9.1 och 9.2. Stöd finns för senare versioner av PostgreSQL via federerad dataåtkomst (FDA). [Läs mer](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005 och 2008 R2. Stöd finns för senare versioner av SQL Server via federerad dataåtkomst (FDA). [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1. Stöd finns för senare versioner av MySQL via federerad dataåtkomst (FDA). [Läs mer](https://en.wikipedia.org/wiki/InfiniDB)

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 97%
+source-wordcount: '512'
+ht-degree: 96%
 
 ---
 
@@ -74,4 +74,4 @@ Du kan komma åt den senaste versionsinformationen om Campaign Classic [på den 
 En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik (transaktionsmeddelanden och marknadsföringsinformation osv.).
 Adobe tar hänsyn till domännamnssystemet (DNS) för e-postleverans vilket innebär att klienten kan behålla sitt varumärkes stil genom att använda ett DNS-alias med sina domännamn. Adobe kan även självständigt implementera alla tekniska bästa praxis som gör att kunden kan optimera levererbarheten under e-postutskick.
 
-[Klicka här för att läsa mer](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html).
+[Klicka här för att läsa mer](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html).
