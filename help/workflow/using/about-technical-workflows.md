@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56470602e3acf777d5b00c293060c644c1fbbc37
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1712'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 3%
 De arbetsflöden som beskrivs i det här avsnittet installeras med olika inbyggda Adobe Campaign-paket. Dessa paket och tillhörande tekniska arbetsflöden beror på licensavtalet. Inbyggda paket beskrivs i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md).
 
 Som standard är tekniska arbetsflöden tillgängliga i en undermapp till följande nod: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+
+Observera att tekniska arbetsflöden bara kan startas och ändras av operatorer med administrationsbehörighet. Mer information om behörigheter finns i [avsnittet](../../platform/using/access-management-groups.md#default-groups).
 
 >[!NOTE]
 >
