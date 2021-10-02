@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Med den här ersättningen sparar du tid när du skapar leveransen: I stället f
 
 I det här fallet vill webbplatsen **Mitt onlinebibliotek** skicka en rabatt till sina kunder, baserat på deras favoritlitterära genre.
 
-Leveranshanteraren har integrerat ett anpassningsfält som är länkat till en favoritgenre i sitt e-postmeddelande. Han skulle vilja använda några frön-adresser. Dessa dirigerade adresser har anpassningsfältet i sin tabell, men inget värde sparas där.
+Leveranshanteraren har integrerat ett anpassningsfält som är länkat till en favoritgenre i sitt e-postmeddelande. Målet är att använda vissa dirigerade adresser: Dessa dirigerade adresser har anpassningsfältet i sin tabell, men inget värde sparas där.
 
 Om du vill använda slumpmässig fältersättning måste du ha:
 

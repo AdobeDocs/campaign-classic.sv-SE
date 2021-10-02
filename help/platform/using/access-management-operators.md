@@ -6,9 +6,9 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Använd fliken **[!UICONTROL Access rights]** för att uppdatera grupper och nam
 
 Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt följande alternativ:
 
-* Med alternativet **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: Han kommer inte längre att ha tillgång till Adobe Campaign.
+* Med alternativet **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: den här användaren inte längre kommer att få åtkomst till Adobe Campaign.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt föl
 
    >[!IMPORTANT]
    >
-   >Detta är en mycket noggrann restriktion som måste användas med försiktighet. En operator som är inloggad med den här typen av rättigheter kan BARA se innehållet i den angivna mappen och har inte åtkomst till någon annan nod i trädet via Utforskaren. Beroende på vilka funktioner han har tillgång till (t.ex.: arbetsflöden) kan han visa data som vanligtvis lagras i noder som han inte kan se.
+   >Detta är en mycket noggrann restriktion som måste användas med försiktighet. En operator som är inloggad med den här typen av rättigheter kan BARA se innehållet i den angivna mappen och har inte åtkomst till någon annan nod i trädet via Utforskaren. Beroende på vilka funktioner som den här operatorn har åtkomst till (till exempel: arbetsflöden) kan användaren visa data som vanligtvis lagras i noder som inte är tillgängliga.
 
 ### Kontrollera inställningar {#check-settings}
 

@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '207'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Erbjudandena kan presenteras på olika erbjudandeplatser via en ingående eller 
 
 För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det godkännas och vara tillgängligt i en live-miljö Mer information finns i [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
 
-När en kontakt är inkommande kan två utfall uppstå. Det första är att användaren inte identifieras av den webbplats han surfar på och det andra är att han identifieras. Erbjudandemotorn ger olika erbjudanden beroende på om användaren identifieras eller inte.
+När en kontakt är inkommande kan det finnas två möjliga utfall: Den användare som bläddrar bland sidorna kan identifieras av webbplatsen eller inte. Erbjudandemotorn ger olika erbjudanden beroende på om användaren identifieras eller inte.
 
 Innan du kan presentera erbjudanden på en inkommande kanal måste du konfigurera det erbjudandemotorsamtal där du vill att erbjudandena ska presenteras. I de flesta fall för inkommande interaktion är detta webbsidan.
 

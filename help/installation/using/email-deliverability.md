@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3023'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Detta är vad modulen **stat** gör: den vidarebefordrar alla anslutningsbegära
 
 ### Leveransservrar {#delivery-servers}
 
-Modulen **mta** distribuerar meddelanden till dess **mtachild** underordnade moduler. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
+Modulen **mta** distribuerar meddelanden till de underordnade modulerna **mtachild**. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
 
 Stegen är följande:
 
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-För den här posten kan användaren kontakta 8 peer-IP-adresser. Eftersom han har 2 offentliga IP-adresser ger det honom 8 * 2 = 16 kombinationer för att nå e-postservrarna på yahoo.com. Var och en av dessa kombinationer kallas en bana.
+För den här posten kan användaren kontakta 8 peer-IP-adresser. Eftersom användaren har 2 offentliga IP-adresser ger detta honom/henne 8 * 2 = 16 kombinationer för att nå e-postservrarna på yahoo.com. Var och en av dessa kombinationer kallas en bana.
 
 Den andra MX-posten visas som:
 

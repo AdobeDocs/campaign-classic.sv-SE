@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Det finns två typer av mallar:
 
 1. Fördefinierade leveransmallar
 
-   Adobe Campaign-administratören kan skapa nya leveransmallar. De kan återanvändas av operatorer (de med lämpliga åtkomsträttigheter) eller automatiskt av serverprocesser. Du kan till exempel konfigurera en mall för e-postleverans, och när användaren skapar en leverans med den här mallen behöver han bara ange texten eller HTML-innehållet och sedan skicka den; de andra alternativen redan har definierats av administratören.
+   Adobe Campaign-administratören kan skapa nya leveransmallar. De kan återanvändas av operatorer (de med lämpliga åtkomsträttigheter) eller automatiskt av serverprocesser. Du kan till exempel konfigurera en mall för e-postleverans, och när användare skapar en leverans med den här mallen behöver de bara ange texten eller HTML-innehållet och sedan leverera det; de andra alternativen redan har definierats av administratören.
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ I Campaign v7 har följande objekt skapats:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Gå till **[!UICONTROL Profiles and Targets > Recipient]** och välj en mottagare. Ni kan se att han ännu inte har anmält sig till tjänsten.
+1. Gå till **[!UICONTROL Profiles and Targets > Recipient]** och välj en mottagare. Du kan se att den här profilen inte har prenumererat på tjänsten än.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ Följ de här stegen i Campaign Standarden för att kontrollera att data har rep
 
    ![](assets/acs_connect_lp_7.png)
 
-1. Sök efter Campaign v7-mottagaren och kontrollera att han/hon visas i Campaign Standarden.
+1. Sök efter Campaign v7-mottagaren och kontrollera att mottagaren visas i Campaign Standarden.
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -102,7 +102,7 @@ Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för
 
    ![](assets/acs_connect_lp_14.png)
 
-1. Han lägger till ett telefonnummer och kontrollerar prenumerationsrutan för nyhetsbrevet.
+1. Mottagaren lägger till ett telefonnummer och markerar prenumerationsrutan för nyhetsbrevet.
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ När mottagaren uppdaterar sina data via webbprogrammet hämtar Adobe Campaign v
 
    ![](assets/acs_connect_lp_17.png)
 
-1. På fliken **[!UICONTROL Subscriptions]** ser vi även att han har prenumererat på nyhetsbrevet.
+1. På fliken **[!UICONTROL Subscriptions]** ser vi även att den här mottagaren har prenumererat på nyhetsbrevet.
 
    ![](assets/acs_connect_lp_18.png)
 

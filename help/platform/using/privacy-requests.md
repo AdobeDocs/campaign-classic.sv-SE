@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '2415'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '2413'
+ht-degree: 99%
 
 ---
 
@@ -384,7 +384,7 @@ Konfigurationen och användningen av förfrågningar gällande åtkomst och bort
 
 Förutom verktygen för [medgivandehantering](../../platform/using/privacy-management.md#consent-management) som finns i Adobe Campaign har du möjligheten att spåra om en konsument har avanmält sig till försäljning av personuppgifter.
 
-En konsument bestämmer genom ert system att denne inte tillåter att sina personuppgifter säljs till tredje part. I Adobe Campaign kan du lagra och spåra den här informationen.
+Kontakter kan via ditt system bestämma att de inte tillåter att deras personuppgifter säljs till tredje part. I Adobe Campaign kan du lagra och spåra den här informationen.
 
 För att det här ska fungera måste du utöka profiltabellen och lägga till ett **[!UICONTROL Opt-Out for CCPA]**-fält.
 

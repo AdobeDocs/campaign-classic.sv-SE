@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Om du vill skapa kategorier och mellanslag använder du samma process som för i
 
 Anonyma besökare kan bli föremål för en process för identifiering av cookies när de ansluter. Den här implicita igenkänningen baseras på besökarens webbläsarhistorik.
 
-Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall är besökaren erkänd (han identifieras sedan implicit), i andra fall är han inte erkänd (och förblir därför anonym).
+Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall identifieras besökare (de identifieras sedan implicit), i andra fall identifieras de inte (och förblir därför anonyma).
 
 Om du vill köra den här analysen kontrollerar du alternativet **[!UICONTROL Implicitly identify the individual based on their browser history]** för erbjudandeutrymme.
 

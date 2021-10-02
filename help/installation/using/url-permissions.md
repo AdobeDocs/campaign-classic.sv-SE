@@ -5,11 +5,10 @@ description: Lär dig hur du konfigurerar URL-behörigheter
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814,6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 26%
+ht-degree: 28%
 
 ---
 
@@ -25,7 +24,7 @@ Som standard tillåts instanser endast att ansluta till interna URL:er. Det är 
 >
 >Den här proceduren är begränsad till **lokala**-distributioner.
 >
->Om du är **värd**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>Om du är **värd**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 >
 >Andra **hybrid-/hosted**-kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
 

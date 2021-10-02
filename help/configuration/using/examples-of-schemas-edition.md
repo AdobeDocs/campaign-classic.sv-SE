@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -327,7 +327,7 @@ I alla tabeller som använder den här referenstabellen definierar du en länk o
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-Användargränssnittet visar inte en länk utan ett fält. När användaren väljer det fältet kan han eller hon välja ett värde i referenstabellen eller använda funktionen Komplettera automatiskt.
+Användargränssnittet visar inte en länk utan ett fält. När användarna väljer det fältet kan de välja ett värde i referenstabellen eller använda funktionen Komplettera automatiskt.
 
 ![](assets/schema-edition-ex.png)
 

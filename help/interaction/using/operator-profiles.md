@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 5%
 
 ---
@@ -52,15 +52,15 @@ Rättigheterna som tilldelats den som ansvarar för erbjudandet gör att de kan 
 
    ![](assets/offer_operators_create_002.png)
 
-Rättigheterna som tilldelats leveransansvarig är/gör det möjligt för dem att utföra följande uppgifter:
+De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem att utföra följande uppgifter:
 
 * Visa **[!UICONTROL Live]**-miljöer.
 * Visa och ändra erbjudandekategorier.
-* Godkänn erbjudanden om han/hon har angetts som en av dess granskare.
+* Godkänn erbjudanden om den här leveranshanteraren har angetts som en av dess granskare.
 
    >[!NOTE]
    >
-   >Leveranshanteraren kan bara godkänna ett erbjudande om han har definierats som granskare under konfigurationen av erbjudandet.
+   >Leveransansvariga kan bara godkänna ett erbjudande om de har definierats som granskare under konfigurationen av erbjudandet.
 
 ## Återvinning av rättigheter enligt operatör {#recap-of-rights-according-to-operator}
 

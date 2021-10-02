@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3729'
 ht-degree: 0%
 
 ---
@@ -247,7 +247,7 @@ Så här skapar du en uppgift som är länkad direkt till ett program:
 
 ### Operatörens tillgänglighet {#operator-availability}
 
-En ikon bredvid operatorns namn på kontrollpanelen för uppgifter anger att de redan arbetar med en annan uppgift eller händelse under den period som aktiviteten omfattar. (Uppgifter som verksamhetsutövaren ansvarar för eller deltar i: visas i fältet **[!UICONTROL Assigned to]** eller i rutan **[!UICONTROL Resources]**.
+En ikon bredvid operatorns namn på kontrollpanelen för uppgifter anger att de redan arbetar med en annan uppgift eller händelse under den period som aktiviteten omfattar. Uppgiften som operatorn ansvarar för eller deltar i visas i fältet **[!UICONTROL Assigned to]** eller i rutan **[!UICONTROL Resources]**.
 
 ![](assets/mrm_task_alert_operator_busy.png)
 
