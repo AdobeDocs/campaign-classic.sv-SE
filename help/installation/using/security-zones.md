@@ -5,9 +5,9 @@ description: Lär dig konfigurera säkerhetszoner
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ När zonerna har definierats och **[!UICONTROL Security zone]**-uppräkningen ha
 * Minimera användningen av sessionTokenOnly=&quot;true&quot;:
 
    * Varning: Om det här attributet är true kan operatorn exponeras för en **CRSF-attack**.
-   * Dessutom har cookie sessionToken inte angetts med flaggan httpOnly, vilket innebär att viss javascript-kod på klientsidan kan läsa den.
+   * Dessutom har cookien sessionToken inte angetts med flaggan httpOnly, vilket innebär att viss JavaScript-kod på klientsidan kan läsa den.
    * Message Center i flera körningsceller behöver sessionTokenOnly: skapa en ny säkerhetszon med sessionTokenOnly inställd på &quot;true&quot; och lägg till **endast de IP-adresser som behövs** i den här zonen.
 
 * När det är möjligt anger du att alla allowHTTP, showErrors ska vara false (inte för localhost) och markerar dem.

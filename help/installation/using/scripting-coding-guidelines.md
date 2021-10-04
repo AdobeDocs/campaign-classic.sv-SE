@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '754'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ Om du skriptar med arbetsflöde, webbprogram, jssp, ska du följa dessa rutiner:
    cnx.dispose()
    ```
 
-För att undvika SQL-injektioner måste SQL-funktioner läggas till i tillåtelselista för att användas i Adobe Campaign. När de har lagts till i tillåtelselista blir de synliga för dina operatorer i uttrycksredigeraren. Se [den här sidan](../../configuration/using/adding-additional-sql-functions.md).
+För att undvika SQL-injektioner måste SQL-funktioner läggas till i tillåtelselista som ska användas i Adobe Campaign. När de har lagts till i tillåtelselista blir de synliga för dina operatorer i uttrycksredigeraren. Se [den här sidan](../../configuration/using/adding-additional-sql-functions.md).
 
 >[!IMPORTANT]
 >
@@ -228,6 +228,6 @@ Om du vill använda JSON.parse måste du inkludera&quot;shared/json2.js&quot; i 
 
 ![](assets/scripting-captcha6.png)
 
-Sedan build 8797 måste du lägga till den i tillåtelselista i filen serverConf för att kunna använda URL:en för verifierings-API genom att lägga till den i noden urlPermission:
+Sedan build 8797 måste du lägga till den i tillåtelselista i filen serverConf för att kunna använda URL:en för verifierings-API:t genom att lägga till den i noden urlPermission:
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

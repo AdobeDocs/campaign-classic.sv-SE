@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 19%
@@ -119,7 +119,7 @@ _17 februari 2020_
 
 * Förbättrad karantänhantering och rensning av tabeller som används av funktionen för push-meddelanden (nms:address och nms:appSubscriptionRcp). I iOS (endast HTTP2-anslutning) hanteras nu inaktiverade tokens på samma sätt som för Android. Inaktiveringsflaggan har nu angetts i tabellen NmsAppSubscriptionRcp. [Läs mer](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Ett nytt alternativ har lagts till i **JavaScript-koden** och **avancerad JavaScript-kod**-arbetsflödesaktiviteter för att definiera en timeout-period. Detta förhindrar att javascript-körningsfasen körs för länge. Om tidsgränsen överskrids stoppas arbetsflödet. Standardtidsgränsen är 1 timme. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md)
+* Ett nytt alternativ har lagts till i **JavaScript-koden** och **avancerad JavaScript-kod**-arbetsflödesaktiviteter för att definiera en timeout-period. Detta förhindrar att JavaScript-körningsfasen körs för länge. Om tidsgränsen överskrids stoppas arbetsflödet. Standardtidsgränsen är 1 timme. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md)
 
 * Leveransanalysen stoppas nu när ingen matchande tillhörighet hittas på mittkällservern, med motsvarande felmeddelande.
 

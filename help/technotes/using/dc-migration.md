@@ -2,11 +2,11 @@
 product: campaign
 title: Migrering till Public Cloud
 description: Läs mer om migrering av Campaign Classic till Public Cloud
-hidefromtoc: true
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: a4e7fb474d83be821343babacc493fd43c02857d
+exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 2%
@@ -218,4 +218,3 @@ Normalt har domänen som används för att skicka e-post (del till höger om @-t
 * [Migrering till Adobe Managed Services (Public Cloud) - frågor och svar](dc-migration-faq.md)
 * [Gold Standard - uppgradering](../../rn/using/gs-overview.md)
 * [Vanliga frågor om uppgradering](../../platform/using/faq-build-upgrade.md)
-

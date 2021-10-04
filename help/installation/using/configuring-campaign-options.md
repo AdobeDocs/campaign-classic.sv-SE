@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 1%
@@ -411,7 +411,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
-   <td> (från och med version 21.1.3) Om 1 är valt (standardvärde) inaktiverar det här alternativet utgåva av inbyggda javascript-koder.<br /> </td> 
+   <td> (från och med version 21.1.3) Om 1 är valt (standardvärde) inaktiverar det här alternativet utgåva av inbyggda JavaScript-koder.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPassword</span> <br /> </td> 
@@ -423,7 +423,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XTKSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> Om 1 är markerat tillåter det här alternativet privilegieskalering i javascript.<br /> </td> 
+   <td> Om 1 är markerat tillåter det här alternativet privilegieskalering i JavaScript.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XTKSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
@@ -696,7 +696,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">datatyp:</span> heltal</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (text)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 

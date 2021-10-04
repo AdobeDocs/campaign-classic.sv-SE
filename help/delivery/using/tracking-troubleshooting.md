@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -132,7 +132,7 @@ Följ de här stegen när du uppdaterar alternativet NmsTracking_Pointer:
 
 Du kan anpassa uppföljningsformeln för klickningar och ange en anpassad Adobe Analytics-spårningsformel.
 
-Den sortens anpassning måste göras med försiktighet för att undvika att lägga till extra radmatade tecken. Alla radmatade tecken som finns utanför javascript-uttrycket finns i den slutliga formeln.
+Den sortens anpassning måste göras med försiktighet för att undvika att lägga till extra radmatade tecken. Alla länkade tecken som finns utanför JavaScript-uttrycket finns i den slutliga formeln.
 
 Den här typen av extra radbrytningstecken i spårnings-URL:en kommer att leda till problem i vissa webMail-filer (AOL, GMail osv.).
 
@@ -159,7 +159,7 @@ Den här typen av extra radbrytningstecken i spårnings-URL:en kommer att leda t
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-För att förstå var den extra raden finns kan du ersätta javascript-uttrycket med en fast strängSTRING.
+För att förstå var den extra raden finns kan du ersätta JavaScript-uttrycket med en fast sträng STRING.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-För att förstå var den extra raden finns kan du ersätta javascript-uttrycket med en fast strängSTRING.
+För att förstå var den extra raden finns kan du ersätta JavaScript-uttrycket med en fast sträng STRING.
 
 ```
 // Incorrect

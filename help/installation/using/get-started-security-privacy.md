@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Kom igång med säkerhet och sekretess
+title: Checklista för säkerhet och sekretess
 description: Läs mer om de viktigaste elementen för att kontrollera säkerhet och integritet.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 8%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
-# Kom igång med säkerhet och sekretess {#get-started-security-privacy}
+# Checklista för säkerhet och sekretess{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -67,6 +67,10 @@ En mycket viktig sak att kontrollera när du distribuerar en lokal typ av arkite
 Det är också viktigt att du följer datasäkerheten för databasmotorn.
 
 [Läs mer](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>Från och med den 14 juli 2021 förlorar alla klientsystem som inte har stöd för TLS 1.2-protokollet åtkomst till alla Adobe-produkter och -tjänster. Kontrollera att alla användar- och klientsystem är TLS 1.2-kompatibla före detta datum. [Läs mer](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
 
 ## Serverkonfiguration
 

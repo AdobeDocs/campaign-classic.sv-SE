@@ -7,12 +7,13 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
+source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 99%
+source-wordcount: '2569'
+ht-degree: 98%
 
 ---
+
 
 # Dokumentation om Adobe Campaign Classic v7 {#using}
 
@@ -36,12 +37,6 @@ ht-degree: 99%
       + [Version 18.4](rn/using/release--18-4.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
-   + [Tekniska anmärkningar](technotes/using/technote.md)
-   + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
-   + [Sekretessskydd för e-post i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-   + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
-   + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
-   + [IMS-uppdateringar](technotes/using/ims-updates.md)
 + Komma igång {#getting-started}
    + Kom igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -850,6 +845,16 @@ ht-degree: 99%
       + [Specifika konfigurationer i version 6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
+   + [Rekommendationer för maskinvarustorlek](technotes/using/hardware-sizing.md)
+   + Uppgraderingar och migreringar{#technote-migration}
+      + [Tekniska anmärkningar](technotes/using/technote.md)
+      + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
+      + [IMS-uppdateringar](technotes/using/ims-updates.md)
+   + E-postmeddelanden och push-meddelanden{#technotes-email}
+      + [Sekretessskydd för e-post i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Frågor och svar om Apples sekretesskydd](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
+      + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobes hanterade tjänster{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
       + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
