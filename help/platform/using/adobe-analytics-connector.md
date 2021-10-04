@@ -104,7 +104,7 @@ Du måste konfigurera dina **[!UICONTROL Conversion variables]** och **[!UICONTR
 
    ![](assets/analytics_connnector_6.png)
 
-1. Klicka på  **[!UICONTROL Save]** när du är klar.
+1. Klicka på **[!UICONTROL Save]** när du är klar.
 
 1. Skapa sedan **[!UICONTROL Success events]** genom att välja **[!UICONTROL Conversion]** > **[!UICONTROL Success events]** från knappen **[!UICONTROL Edit settings]**.
 
@@ -131,7 +131,7 @@ Du måste konfigurera dina **[!UICONTROL Conversion variables]** och **[!UICONTR
 
    ![](assets/analytics_connnector_8.png)
 
-1. Klicka på  **[!UICONTROL Save]** när du är klar.
+1. Klicka på **[!UICONTROL Save]** när du är klar.
 
 När du har konfigurerat **[!UICONTROL Conversion variables]** och **[!UICONTROL Success events]** kontrollerar du att variablerna ingår i **[!UICONTROL Product Profile]** som skapats för Analytics Connector. Mer information finns i [Skapa en Adobe Analytics-produktprofil](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile).
 
@@ -222,7 +222,7 @@ De finns i Adobe Campaign-trädet, under mappen **[!UICONTROL Administration]** 
 ![](assets/webanalytics_workflows.png)
 
 * **[!UICONTROL Recovering of web events]**: en gång i timmen hämtar det här arbetsflödet segment om hur användare beter sig på en viss webbplats, inkluderar dem i Adobe Campaign-databasen och startar arbetsflödet för återmarknadsföring.
-* **[!UICONTROL Event purge]**: med det här arbetsflödet kan du ta bort alla händelser från databasen beroende på vilken period som har konfigurerats i  **[!UICONTROL Lifespan]** fältet. Mer information finns i [Konfigurera ditt externa konto i Adobe Campaign Classic](#external-account-classic).
+* **[!UICONTROL Event purge]**: med det här arbetsflödet kan du ta bort alla händelser från databasen beroende på vilken period som har konfigurerats i **[!UICONTROL Lifespan]** fältet. Mer information finns i [Konfigurera ditt externa konto i Adobe Campaign Classic](#external-account-classic).
 * **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. Data som samlas in av det här arbetsflödet är tillgängliga i **[!UICONTROL Re-marketing efficiency]**-rapporten, se den här [sidan](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Sending of indicators and campaign attributes]**: låter dig skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 

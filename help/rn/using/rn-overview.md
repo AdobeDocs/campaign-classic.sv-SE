@@ -29,7 +29,7 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-builds** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+De **senaste GA-builderna** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 

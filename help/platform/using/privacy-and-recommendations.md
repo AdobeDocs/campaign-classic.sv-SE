@@ -44,7 +44,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i en
 
 ### Integritet i Adobe Experience Cloud {#experience-cloud-privacy}
 
-Adobe Campaign ingår som en del av Adobe Experience Cloud. Sättet på vilket sekretess hanteras i Campaign följer Experience Clouds allmänna principer som till exempel följande:
+Adobe Campaign ingår som en del av Adobe Experience Cloud-lösningarna. Sättet på vilket sekretess hanteras i Campaign följer Experience Clouds allmänna principer som till exempel följande:
 
 * **Vilken information samlas in när Adobe Experience Cloud används**
 

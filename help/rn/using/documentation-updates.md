@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## Augusti 2021{#aug-2021}
 
-Ny arbetsflödesaktivitet har lagts till: Ändra datakälla - [Läs mer](../../workflow/using/change-data-source.md)
+Ny arbetsflödesaktivitet har lagts till: Ändra datakälla – [Läs mer](../../workflow/using/change-data-source.md)
 
-Tillämplighetsemblem har lagts till på dokumentationssidorna: **Gäller endast v7** för Campaign Classic v7-funktioner och **Gäller för v7 och v8** för gemensamma funktioner.
+Tillämplighetsemblem har lagts till på dokumentationssidorna: **Gäller endast v7** för Campaign Classic v7-funktioner och **gäller för v7 och v8** för gemensamma funktioner.
 
-Lade till ett meddelande om integrationen mellan Campaign och AEM Assets, som har tagits bort från och med Adobe Experience Manager 6.4. [Läs mer](../../integrations/using/configuring-access-to-assets.md)
+Ett meddelande har lagts till om integrationen mellan Campaign och AEM Assets, som har tagits bort från och med Adobe Experience Manager 6.4. [Läs mer](../../integrations/using/configuring-access-to-assets.md)
 
 Skärmbilder och parametrar för rapporter och webbprogram har uppdaterats efter att Adobe Flash har tagits bort.
 
