@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
+source-git-commit: 37115de5871d773dc7b97c5150ef1eab583e3104
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2567'
 ht-degree: 98%
 
 ---
@@ -617,7 +617,7 @@ ht-degree: 98%
       + [Driftsättning via mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster och Power Cluster](installation/using/power-booster-and-power-cluster.md)
    + Inställningar för säkerhet och sekretess {#security-privacy}
-      + [Kom igång med säkerhet och sekretess](installation/using/get-started-security-privacy.md)
+      + [Checklista för säkerhet och sekretess](installation/using/get-started-security-privacy.md)
       + [Personalisering och sekretess](installation/using/privacy.md)
       + [Säker åtkomsthantering](installation/using/access-management.md)
       + [Riktlinjer för skript och kodning](installation/using/scripting-coding-guidelines.md)
