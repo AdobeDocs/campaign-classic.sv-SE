@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
+source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 85%
+source-wordcount: '600'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </tbody>
 </table>
 
-## RDBMS-servrar{#RDBMSservers}
+## RDBMS (Relation Database Management Systems){#RDBMSservers}
 
 <table>
 <tbody>
@@ -133,10 +133,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </td>
 </tr>
 <tr>
-<td>
-<p>PostgreSQL</p>
-<p>Standarddatabasserver för värdbaserade miljöer</p>
-</td>
+<td>PostgreSQL</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -145,7 +142,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>Obs! Du kan också använda Amazon RDS för PostgreSQL med de versioner som anges ovan.</p>
+<p><strong>Obs!</strong> Du kan också använda Amazon RDS för PostgreSQL med de versioner som anges ovan.</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +153,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p>Varning: Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Viktigt:</strong> Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -164,7 +161,10 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 >[!NOTE]
 >
->RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
+>* RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
+>
+>* PostgreSQL är RDBMS för värdmiljöer.
+
 
 ## CRM-kopplingar{#CRMconnectors}
 
