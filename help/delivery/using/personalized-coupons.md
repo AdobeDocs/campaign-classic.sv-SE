@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,9 @@ Så här bekräftar du att leveransen lyckades:
 
 >[!NOTE]
 >
->Som standard använder kuponghanteringsmodulen en **nms:mottagare**-tabell. Instruktioner om hur du använder andra tabeller finns i [Redigera scheman](../../configuration/using/data-schemas.md).
+>Som standard använder kuponghanteringsmodulen en **nms:mottagare**-tabell. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
+>
+>Lär dig hur du använder en anpassad mottagartabell [på den här sidan](../../configuration/using/about-custom-recipient-table.md).
 
 ## Hantera otillräckliga kuponger {#managing-insufficient-coupons}
 

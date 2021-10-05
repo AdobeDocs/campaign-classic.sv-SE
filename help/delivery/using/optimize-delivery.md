@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Flera faktorer kan direkt påverka serverprestanda och göra plattformen långsa
 
 * Arbetsflödets körning: övervakning av arbetsflödena är avgörande för att undvika problem med plattformens prestanda. Följ riktlinjerna som anges [i det här dokumentet](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Om du är berättigad kan du använda [panelfunktionerna för kampanjkontroll](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) för att övervaka plattformen med [funktioner för prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
+* Om du är berättigad kan du använda [Campaign Control Panel-funktionerna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) för att övervaka din plattform med [prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)-funktioner.
 
 ## Kontrollerar nätverkskonfiguration {#network-config}
 

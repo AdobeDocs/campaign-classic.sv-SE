@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign 
 För att kunna använda integreringen mellan Adobe Campaign och Experience Cloud Assets måste du ha:
 
 * En Adobe Experience Cloud-organisation
-* Verifieringsläget Adobe IMS är aktiverat
+* Autentiseringsläget för Adobe IMS är aktiverat
 
 Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Cloud konfigurerar du anslutningen via IMS (Adobe ID anslutningstjänst). Den här konfigurationen beskrivs i [Ansluta via ett Adobe ID](../../integrations/using/about-adobe-id.md)-dokument. Den innehåller följande uppgifter:
 
@@ -51,7 +51,7 @@ Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Clou
 
 >[!CAUTION]
 >
->Funktionen har tagits bort från och med Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=en#removed-features)
+>Denna funktion har avvecklats från och med Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=en#removed-features)
 
 Om du vill integrera AEM Assets med Adobe Campaign måste du först konfigurera integreringen mellan Adobe Experience Manager och Adobe Campaign. Den här konfigurationen kräver i huvudsak:
 

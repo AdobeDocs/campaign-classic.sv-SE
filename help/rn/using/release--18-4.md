@@ -3,7 +3,7 @@ product: campaign
 title: Versionsinformation för Campaign 18.4
 description: Versionsinformation för Campaign 18.4
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -103,7 +103,7 @@ ht-degree: 7%
     <ul> 
      <li> <p>Åtkomst: ger den registrerade möjlighet att få en kopia av sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive uppgifter som lagrats i Adobe Campaign.</p> </li> 
      <li> <p>Höger att ta bort: ger den registrerade rätt att få sina personuppgifter som samlats in av personuppgiftsansvariga raderade, inklusive data som lagrats i Adobe Campaign.</p> </li> 
-    </ul> Mer information finns i <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">detaljerad dokumentation</a>.<br /> </td> 
+    </ul> Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">detaljerade dokumentationen</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aktiva profiler<br /> </td> 
@@ -171,7 +171,7 @@ Den skulle implicit delas som (före 18.4-ändringarna):
    </select>
    <orderBy>
       <node expr="@logDate"/>
-      <node expr="@id"/> <!-- implicitely added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
+      <node expr="@id"/> <!-- implicitly added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
    </orderBy>
 </queryDef>
 ```

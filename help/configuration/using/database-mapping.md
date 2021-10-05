@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -305,7 +305,7 @@ Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i d
 
 >[!NOTE]
 >
->En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** till exempel) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **Ids**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa filerna **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** som följer med programmet i katalogen **datakit/nms/eng/sql/** för att återställa exemplet för en NmsTrackingLogId-sekvens som skapas för varje databasmotor.
+>En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** till exempel) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **Ids**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa filerna **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** som följer med programmet i katalogen **datakit/nms/eng/sql/** för att återställa exemplet av en NmsTrackingLogId-sekvens skapas för varje databasmotor.
 
 Om du vill deklarera en unik nyckel fyller du i attributet **autopk** (med värdet &quot;true&quot;) för huvudelementet i dataschemat.
 

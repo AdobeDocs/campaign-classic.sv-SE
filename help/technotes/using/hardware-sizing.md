@@ -2,14 +2,14 @@
 product: campaign
 title: Rekommendationer för maskinvarustorlek för Campaign Classic v7
 description: Rekommendationer för maskinvarustorlek för Campaign Classic v7
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Rekommendationer för maskinvarustorlek för Campaign Classic v7 {#hardware-sizing-reco}
+# Rekommendationer för maskinvarustorlek{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Den här guiden finns endast som en allmän exempelguide. Ni måste kontakta Adobe Campaign Customer Success Manager för att mäta den exakta storleken på er driftsättning innan ni påbörjar ert Campaign-projekt. **Gör** inga anspråk på eller driftsätt någon infrastruktur eller maskinvara tills detta är klart.
+>Den här artikeln finns endast som en allmän exempelguide. Ni måste kontakta Adobe Campaign Customer Success Manager för att mäta den exakta storleken på er driftsättning innan ni påbörjar ert Campaign-projekt. **Gör** inga anspråk på eller driftsätt någon infrastruktur eller maskinvara tills detta är klart.
 
-Det här dokumentet innehåller allmänna riktlinjer för Adobe Campaign Classic v7-distribution på ditt lokala datacenter eller i en virtualiserad molnmiljö. Den här typen av distribution, som kallas **hybrid** eller **mellanlagring**, placerar Campaign-marknadsföringsinstansen och marknadsföringsdatabasen under din operativa kontroll, medan Adobe Cloud Messaging-tjänster används för att skicka e-postmeddelanden, SMS- eller SMPP-meddelanden och för att samla in e-postmeddelanden som är öppna, studsa och klicka på spårningsdata.
+Det här dokumentet innehåller allmänna rekommendationer för Adobe Campaign Classic v7-distribution på ditt lokala datacenter eller i en virtualiserad molnmiljö. Den här typen av distribution, som kallas **hybrid** eller **mellanlagring**, placerar Campaign-marknadsföringsinstansen och marknadsföringsdatabasen under din operativa kontroll, medan Adobe Cloud Messaging-tjänster används för att skicka e-postmeddelanden, SMS- eller SMPP-meddelanden och för att samla in e-postmeddelanden som är öppna, studsa och klicka på spårningsdata.
 
 Marknadsföringsinstansen är den del av Adobe Campaign-arkitekturen som driver all marknadsföringsaktivitet och lagrar alla mottagardata och analysdata som returneras av kampanjer. Marknadsinstansen är en uppsättning lokala servrar som kör Adobe Campaign-tjänster och en relationsdatabas.
 
@@ -258,5 +258,6 @@ Adobe rekommenderar prestandatestning för virtualiserad driftsättning av Adobe
 ## Relaterade ämnen
 
 * [Processer för kampanjövervakning](../../production/using/monitoring-processes.md)
+* [Kampanjens allmänna arkitektur](../../installation/using/general-architecture.md)
 * [Prestanda- och genomströmningsproblem](../../production/using/performance-and-throughput-issues.md)
 * [Checklista för säkerhet och sekretess](../../installation/using/get-started-security-privacy.md)

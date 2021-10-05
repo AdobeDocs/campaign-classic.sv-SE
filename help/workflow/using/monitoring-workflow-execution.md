@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -246,7 +246,7 @@ Om ett arbetsflöde pausas rensas aldrig arbetsflödets arbetsregister som stand
 
 * Arbetsflöden som har pausats sedan mer än 7 dagar visas som en varning på kontrollpanelen (och övervaknings-API:t) och ett meddelande skickas till den övervakande gruppen.
 * Samma sak händer varje vecka när det tekniska arbetsflödet **[!UICONTROL cleanupPausedWorkflows]** aktiveras. Mer information om arbetsflödet finns i [det här avsnittet](delivery.md).
-* Efter fyra meddelanden (en månad i pausat läge som standard) stoppas arbetsflödet villkorslöst. En logg visas i arbetsflödet när det har stoppats. Tabellerna rensas vid nästa körnings **[!UICONTROL cleanup]**-arbetsflöde
+* Efter fyra meddelanden (en månad i pausat läge som standard) stoppas arbetsflödet ovillkorligt. En logg visas i arbetsflödet när det har stoppats. Tabellerna rensas vid nästa körnings **[!UICONTROL cleanup]**-arbetsflöde
 
 Dessa punkter kan konfigureras via alternativet NmsServer_PausedWorkflowPeriod.
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
 * **[!UICONTROL Pending events queued]** : -indikator som är specifik för  **meddelandecentret**. Mer information finns i [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds).
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** : Uppgifter om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter.
+* **[!UICONTROL Load average (1/5/15 minutes)]** : Information om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter.
 
    **[!UICONTROL Current value]** : maskinens faktiska belastning.
 
@@ -345,7 +345,7 @@ Det tekniska arbetsflödet finns i en undermapp till följande nod: **Administra
 
 ![](assets/billing.png)
 
-När arbetsflödet har startats var 25:e månad får din faktureringsoperatör följande rapport i inkorgen.
+När arbetsflödet har startats var 25:e månad får faktureringsoperatören följande rapport i sin inkorg.
 
 ![](assets/billing_2.png)
 
@@ -605,7 +605,7 @@ Detta element konfigurerar övervakningen av en viss server på värden, dvs.
 
 * **tcp**: kontrollerar om servern är upp eller ned. Du måste ange ett portnummer.
 * **http**: kontrollerar att webbservern finns (programservern fungerar).
-* **ncs**: kontrollerar processerna för instansen som anges i instansattributet (arbetsflödesfel, minnesanvändning osv.). Attributet **include** (mandatory) ger dig möjlighet att visa döda processer (&#39;true&#39; eller &#39;false&#39;-värden).
+* **ncs**: kontrollerar processerna för instansen som anges i instansattributet (arbetsflödesfel, minnesanvändning osv.). Attributet **included** (mandatory) ger dig möjlighet att visa döda processer (&#39;true&#39; eller &#39;false&#39;-värden).
 * **redir**: kontrollerar spårningen.
 
 I de flesta fall kan endast underelementen **ncs** och **redir** behållas.

@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -120,7 +120,7 @@ Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
 1. I **[!UICONTROL Mobile application creation wizard]**-fönstret väljer du **[!UICONTROL HTTPV1]** i listrutan **[!UICONTROL API version]**.
 
-1. Klicka på **[!UICONTROL Load project json file to extract projet details...]** om du vill läsa in JSON-nyckelfilen direkt. Mer information om hur du extraherar JSON-filen finns på [den här sidan](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+1. Klicka på **[!UICONTROL Load project json file to extract project details...]** om du vill läsa in JSON-nyckelfilen direkt. Mer information om hur du extraherar JSON-filen finns på [den här sidan](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
    Du kan även ange följande manuellt:
    * **[!UICONTROL Project Id]**

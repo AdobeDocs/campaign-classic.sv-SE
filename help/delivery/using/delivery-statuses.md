@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ajouter screenshot -->
 
-När en leverans har skickats visar kontrollpanelen en status som gör att du kan övervaka om sändningen har slutförts. Möjliga statusar beskrivs i avsnittet nedan.
+När en leverans har skickats visar kontrollpanelen en status som gör att du kan övervaka om sändningen har lyckats. Möjliga statusar beskrivs i avsnittet nedan.
 
 ![](assets/delivery-status.png)
 
@@ -97,7 +97,7 @@ När du har bekräftat leveransen ser du att leveransstatus är **[!UICONTROL Pe
 
 Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det bero på:
 
-* MTA-agenten (Message Transfert Agent) som kör moduler och processer på leveransservern och som hanterar e-postutskick kanske inte har startats eller behöver startas om.
+* MTA (Message Transfer Agent), som kör moduler och processer på leveransservern och som hanterar e-postutskick, kanske inte har startats eller behöver startas om.
 
    Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 

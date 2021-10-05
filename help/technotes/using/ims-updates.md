@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Uppdatera miljön för att ansluta till Adobe Campaign med IMS
+title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '591'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-Den 30 juni 2021 ändras inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
+Den 30 juni 2021 har ändringar gjorts i inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
 
 ## Vad har ändrats?
 
-Adobe Identity Management-tjänst (IMS) slutar stödja tidigare Internet Explorer-versioner från och med den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management-tjänsten (IMS) slutade stödja tidigare Internet Explorer-versioner den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe vill bevara IMS-funktionaliteten för alla kunder sedan 30 juni 2021. IMS är en del av säkerhetsramverket som gör att användare kan logga in på klientkonsolen, alltså Adobe Campaign.
 
@@ -78,7 +78,7 @@ Följande varningsmeddelande visas för användare som behöver uppdatera sin kl
 
 Om du ser en sådan varning måste du installera de senaste uppdateringarna av det operativsystem du använder. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
-**Efter 30 juni 2021** visas följande meddelande som inte längre kan anslutas till Adobe Campaign:
+Om du inte har uppdaterat din Internet Explorer-version visas följande meddelande och du kan inte längre ansluta till Adobe Campaign:
 
 ![](../../integrations/using/assets/do-not-localize/errorUpdateReq.png)
 

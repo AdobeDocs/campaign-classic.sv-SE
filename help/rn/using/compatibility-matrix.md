@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: ht
-source-wordcount: '545'
-ht-degree: 100%
+source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 86%
 
 ---
 
@@ -169,6 +169,8 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## CRM-kopplingar{#CRMconnectors}
 
+CRM-system som är kompatibla med Adobe Campaign listas nedan. [Läs ](../../platform/using/crm-connectors.md) mer om Campaign CRM-anslutningar.
+
 <table>
 <tbody>
 <tr>
@@ -187,6 +189,8 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </table>
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
+
+Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access Module](../../installation/using/about-fda.md) listas nedan.
 
 <table>
 <tbody>
@@ -286,7 +290,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## Client Console {#ClientConsoleoperatingsystems}
 
-:warning: Följande operativsystem och webbläsare krävs för att använda klientkonsolen i Campaign.
+Följande operativsystem och webbläsare **krävs** för att använda [Campaign Client Console](../../installation/using/installing-the-client-console.md).
 
 ### Operativsystem
 
@@ -311,6 +315,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ### Webbläsare
 
+[]
 <table>
 <tbody>
 <tr>
@@ -326,6 +331,8 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 
 ## Mobilt SDK{#MobileSDK}
+
+Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på de operativsystem som listas nedan med hjälp av den associerade [mobil-SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 <table>
 <tbody>
@@ -348,7 +355,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## Webbläsare{#Browsers}
 
-Följande webbläsare är kompatibla med Campaign for Web Access.
+Följande webbläsare är kompatibla med Campaign för [webbåtkomst](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -399,6 +406,7 @@ Följande webbläsare är kompatibla med Campaign for Web Access.
 ## Mer som det här{#Morelikethis}
 
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
-* [Installationshandbok](../../installation/using/general-architecture.md)
+* [Kampanjens allmänna arkitektur](../../installation/using/general-architecture.md)
+* [Rekommendationer för maskinvarustorlek](../../technotes/using/hardware-sizing.md)
 * [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
 * [Procedur för builduppgradering](../../production/using/build-upgrade.md)

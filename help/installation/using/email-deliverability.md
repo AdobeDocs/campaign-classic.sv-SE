@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Börja med att definiera den Adobe Campaign-databas som ska vara värd för konf
 
 ### Starta konfiguration {#start-configuration}
 
-Som standard startas modulen **stat** för varje instans. När instanser mutualiseras på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
+Som standard startas modulen **stat** för varje instans. När instanser samlas på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
 
 ### Definition av serverporten {#definition-of-the-server-port}
 

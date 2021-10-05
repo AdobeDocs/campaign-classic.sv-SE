@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -620,7 +620,7 @@ Alla standardrapporter använder för närvarande återgivningsmotorn v6.x. Om d
 
 ![](assets/migration_reports_1.png)
 -->
-Om du vill dra nytta av de nya rapportfunktionerna måste du publicera om rapporterna. Om du vill göra det redigerar du rapporten **[!UICONTROL Properties]**, klickar på **[!UICONTROL Rendering]** och väljer v.6.x-renderingsmotorn. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller PDF-export fungerar detta inte längre med den nya PDF-exportmotorn (PhantomJS) om du har lagt till ett specifikt skript för Open Office.
+Om du vill dra nytta av de nya rapportfunktionerna måste du publicera om rapporterna. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller PDF-export fungerar detta inte längre med den nya PDF-exportmotorn (PhantomJS) om du har lagt till ett specifikt skript för Open Office.
 
 ## Webbapplikationer {#web-applications}
 
@@ -631,10 +631,7 @@ Det finns två webbprogramfamiljer:
 
 ### Identifierade webbprogram {#identified-web-applications}
 
-Precis som för rapporter ([läs mer](#reports)) måste du kontrollera och anpassa om du har lagt till JavaScript. Om du vill använda den blå v7-banderollen (som innehåller de blå flikarna) måste du publicera webbprogrammet igen. Om JavaScript-koden fungerar kan du välja v6.x-återgivningsmotorn. Om så inte är fallet kan du använda v6.0-renderingsmotorn när du anpassar koden och sedan använda v6.x-renderingsmotorn.
-
->[!NOTE]
-Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
+Precis som för rapporter ([läs mer](#reports)) måste du kontrollera och anpassa om du har lagt till JavaScript. Om du vill använda den blå v7-banderollen (som innehåller de blå flikarna) måste du publicera webbprogrammet igen.
 
 Anslutningsmetoderna för webbprogrammet har ändrats i v7. Om du stöter på anslutningsproblem i dina identifierade webbprogram måste du tillfälligt aktivera alternativen **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml**-filen. Ändra följande alternativvärden efter uppgraderingen:
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### Anonyma webbapplikationer {#anonymous-web-applications}
 
-Om du råkar ut för problem publicerar du webbprogrammet igen. Om problemet kvarstår kan du välja v6.0-återgivningsmotorn. Eftersom du inte har lagt till JavaScript kan du välja renderingsmotorn v6.x och dra nytta av dess nya funktioner.
-
->[!NOTE]
-Stegen för att välja återgivningsmotor är desamma som för att välja rapporter. Se [Anpassade rapporter](#personalized-reports).
+Om du råkar ut för problem publicerar du webbprogrammet igen.
 
 ## Red-Hat {#red-hat}
 

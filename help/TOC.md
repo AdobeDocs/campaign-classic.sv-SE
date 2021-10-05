@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
+source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 98%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 98%
          + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
-         + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
+         + [Synkronisera data med CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Adobe Analytics Connector-etablering](platform/using/adobe-analytics-provisioning.md)
          + [Integrering med Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
@@ -213,7 +213,6 @@ ht-degree: 98%
       + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
       + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
-      + [Uppdatera studskvalificering efter ett avbrott hos en internetleverantör](delivery/using/update-bounce-qualification.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
    + Spåra meddelanden {#tracking-messages}
       + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
@@ -852,6 +851,7 @@ ht-degree: 98%
    + E-postmeddelanden och push-meddelanden{#technotes-email}
       + [Sekretessskydd för e-post i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Frågor och svar om Apples sekretesskydd](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Så här uppdaterar du felaktiga hårddiskmarkeringar](delivery/using/update-bounce-qualification.md)
       + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobes hanterade tjänster{#dc-migration}

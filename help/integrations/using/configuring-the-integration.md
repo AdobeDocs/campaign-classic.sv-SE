@@ -5,7 +5,7 @@ description: Lär dig hur du konfigurerar Campaign-AEM-integrering
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
@@ -65,7 +65,7 @@ Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https
 
 **[!UICONTROL AEM integration]**-paketet skapade det externa kontot för Adobe Experience Cloud. Nu måste du konfigurera den för att ansluta till din Adobe Experience Manager-instans.
 
-Följ stegen nedan för att konfigurera det AEM externa kontot:
+Så här konfigurerar du det AEM externa kontot:
 
 1. Klicka på knappen **[!UICONTROL Explorer]**.
 

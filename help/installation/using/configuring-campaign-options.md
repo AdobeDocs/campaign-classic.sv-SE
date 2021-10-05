@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 1%
@@ -685,7 +685,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
-   <td> Alla anpassade scheman, som skapats efter den här tiden, med autopk="true" och utan attributet "pkSequence" får den automatiskt genererade sekvensen "auto_ 
+   <td> Alla anpassade scheman, som skapats efter den här tiden, med autopk="true" och utan attributet "pkSequence" får den autogenererade sekvensen "auto_ 
     &lt;schemanamespace&gt; 
      &lt;schemanamn&gt;
        _seq. 

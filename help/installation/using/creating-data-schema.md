@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d2d0ff575edbee18febb5ec895fcec1e0ae34de7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 9%
+source-wordcount: '180'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,13 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Ange ett namn och en beskrivning för schemat och välj det externa konto som ska aktivera anslutningen till databasen. Detta ger åtkomst till listan med tabeller som är tillgängliga i den externa basen. Välj den tabell som innehåller de data som ska samlas in.
+1. Ange en **[!UICONTROL Namespace]** och **[!UICONTROL Name]** för schemat och välj **[!UICONTROL External account]** som aktiverar anslutningen till databasen. Detta ger åtkomst till listan med tabeller som är tillgängliga i den externa basen.
+
+   ![](assets/wf_new_schema_select_table_fda.png)
+
+1. I fältet **[!UICONTROL Table name]** väljer du den tabell som innehåller de data som ska samlas in.
+
+   Med Snowflake kan du här välja dina vyer om databasanvändaren har fått rätt behörighet. Observera att när du använder vyer kommer Adobe Campaign inte att kunna generera XML-schemat automatiskt, utan du måste själv skapa det. Mer information om vyer finns i [Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

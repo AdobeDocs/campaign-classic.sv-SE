@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 0%
@@ -340,7 +340,7 @@ Följ exemplet nedan för att spåra ditt tysta meddelande:
 >
 >Observera att detta endast gäller iOS.
 
-I iOS ger delegatprotokollet dig möjlighet att få resultatet av anropet **registerDevice** och kan användas för att ta reda på om ett fel uppstod under registreringen.
+I iOS gör delegatprotokollet att du kan få resultatet av anropet **registerDevice** och använda det för att ta reda på om ett fel uppstod under registreringen.
 
 Prototypen **registerDeviceStatus** är:
 

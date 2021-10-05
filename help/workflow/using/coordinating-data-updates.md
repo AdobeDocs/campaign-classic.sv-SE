@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-I det här användningsexemplet beskrivs hur du skapar ett arbetsflöde där du kan hantera komponentuppdateringar när du använder flera körningar av ett arbetsflöde.
+I det här användningsexemplet beskrivs hur du skapar ett arbetsflöde som gör att du kan hantera samtidiga uppdateringar när du använder flera körningar av ett arbetsflöde.
 
 Syftet är att kontrollera att uppdateringsprocessen har avslutats innan en annan uppdateringsåtgärd körs. För att göra detta skapar vi en instansvariabel och låter arbetsflödet testa om instansen körs för att bestämma om körningen av arbetsflödet ska fortsätta eller inte och utföra uppdateringen.
 

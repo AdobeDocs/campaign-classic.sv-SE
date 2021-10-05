@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 1%
@@ -232,7 +232,7 @@ sh
 
 I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i attributet **svartlistFile**.
 
-**Endast** för Linux: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som ska köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i noden **exec** i konfigurationsfilen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+**Endast** för Linux: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som är dedikerad till att köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i noden **exec** i konfigurationsfilen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >

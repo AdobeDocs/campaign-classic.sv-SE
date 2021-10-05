@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Loggfilerna för en instans visas i följande tabell:
 | wfserver.log | Loggar för arbetsflödesservermodulen |
 | runwf.log | Körningsloggar för arbetsflöde |
 | inMail.log | Logg för studsande e-postmodul |
-| logins.log | Loggar alla inloggningsförsök till Adobe Campaign (genomförda eller inte) |
+| logins.log | Loggar alla inloggningsförsök till Adobe Campaign (vare sig de lyckas eller inte) |
 
 >[!IMPORTANT]
 >

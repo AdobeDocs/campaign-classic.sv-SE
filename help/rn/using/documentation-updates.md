@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Dokumentationsuppdateringar för Adobe Campaign Classic
+title: Adobe Campaign Classic v7 - Dokumentationsuppdateringar
 description: Den här sidan beskriver alla nya funktioner och uppdateringar i dokumentationen om Adobe Campaign Classic
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
 workflow-type: tm+mt
-source-wordcount: '4513'
-ht-degree: 100%
+source-wordcount: '4560'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,22 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter m
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
+## Oktober 2021{#oct-2021}
+
+Befintliga tekniker har grupperats i det nya avsnittet **Technote**.
+
+Sidan **Rekommendationer för storleksändring av maskinvara** har uppdaterats och lagts till i avsnittet **Technotes**. [Läs mer](../../technotes/using/hardware-sizing.md)
+
+## September 2021{#sept-2021}
+
+**Dokumentationsuppdateringar kommer med utgåvan 21.1.4**
+
+Diagramtypen **Mätare** har tagits bort.
+
+Skärmbilder och parametrar för rapporter och webbprogram har uppdaterats efter att Adobe Flash har tagits bort.
+
+[Beskrivningen av det tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) har uppdaterats med ett nytt skyddsförslag.
+
 ## Augusti 2021{#aug-2021}
 
 Ny arbetsflödesaktivitet har lagts till: Ändra datakälla – [Läs mer](../../workflow/using/change-data-source.md)
@@ -28,10 +44,6 @@ Ny arbetsflödesaktivitet har lagts till: Ändra datakälla – [Läs mer](../..
 Tillämplighetsemblem har lagts till på dokumentationssidorna: **Gäller endast v7** för Campaign Classic v7-funktioner och **gäller för v7 och v8** för gemensamma funktioner.
 
 Ett meddelande har lagts till om integrationen mellan Campaign och AEM Assets, som har tagits bort från och med Adobe Experience Manager 6.4. [Läs mer](../../integrations/using/configuring-access-to-assets.md)
-
-Skärmbilder och parametrar för rapporter och webbprogram har uppdaterats efter att Adobe Flash har tagits bort.
-
-Diagramtypen **Mätare** har tagits bort.
 
 
 ## Juli 2021 {#july-2021}
@@ -270,7 +282,7 @@ Sekretesshanteringen på sidan Campaign Classic har uppdaterats med information 
 
 Sidan Översikt över integritetshantering har uppdaterats med information om Thailands lag för persondataskydd (PDPA) och Brasiliens Lei Geral de Proteção de Dados (LGPD). [Läs mer](../../platform/using/privacy-and-recommendations.md)
 
-Information har lagts till om loggar om delarbetsflöden och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
+Information har lagts till i delarbetsflödets loggar och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
 
 Bästa praxis har lagts till i aktivitetsavsnittet **[!UICONTROL Scheduler]**. [Läs mer](../../workflow/using/scheduler.md)
 
@@ -380,7 +392,7 @@ Förbättringar på Hadoop FDA-koppling – [läs mer](../../installation/using/
 
 Handböckerna för [installation](../../installation/using/general-architecture.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används vid uppstart av tjänsten nlserver. /Etc/init.d/nlserver6 kan fortfarande användas men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med tjänsten nlserver.
 
-Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
+Installationsguiden har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
 
 Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 

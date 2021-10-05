@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '3007'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -65,7 +65,7 @@ _22 december 2020_
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.  [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den 18 augusti 2021 **.** Värdmiljöer drar nytta av ett tillägg till och med den 30 november 2021 **.** Kontakta Adobe kundtjänst om du är kund på plats eller som hybridkund för att förlänga supporten till den 30 november 2021. Du måste ange [AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den **september 2021**. Värdmiljöer drar nytta av ett tillägg till och med den **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 
 **Förbättringar**
@@ -91,7 +91,7 @@ _11 september 2020_
 
 * Korrigerade en regression som gjorde att leveransförberedelser blockerades på grund av en felfunktion på leveransdelen, vilket ledde till överbelastning av minnet. (NEO-27346)
 * Korrigerade ett problem med en efteruppgradering som stängde av Apache och webbservern innan webbapplikationens publicering. (NEO-27155)
-* Korrigerade en regression i HTML-mallhantering som ledde till att URL:er för spårning blev synliga på grund av en felaktig tolkning av flikar. (NEO-25909)
+* Korrigerade en regression av HTML-mallhantering som ledde till att URL:er för spårning blev synliga på grund av en feltolkning av flikarna. (NEO-25909)
 * Korrigerade ett problem med arbetsflödet för databasrensning som kunde sluta fungera på grund av en ohanterad datakälla. (NEO-23160 och NEO-23364)
 * Arbetsflödet för rensning tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
 * Korrigerade en regression som förhindrade dig från att ändra det interna namnet på ett externt konto. (NEO-27323)
@@ -321,7 +321,7 @@ Ett exempel för Linux finns på den här [sidan](../../configuration/using/addi
 * Korrigerade en regression som fick arbetsflödet för rensning att krascha.
 * Korrigerade ett problem som kunde inträffa när en mall publicerades på en körningsinstans.
 * Korrigerade ett problem som kunde förhindra att det tekniska arbetsflödet collectPrivacyRequests kördes. (NEO-20513 och NEO-25169)
-* Korrigerade ett problem som kunde inträffa när du försökte ansluta till Audience Manager efter att ha uppgraderat till build 9080. (NEO-20511 och NEO-25167)
+* Korrigerade problem som kunde inträffa vid försök att ansluta till Audience Manager efter uppgradering till build 9080. (NEO-20511 och NEO-25167)
 * Korrigerade ett problem som kunde uppstå vid export av rapporter i PDF- eller XLS-format. (NEO-20982, NEO-23493 och NEO-23348)
 * Korrigerade ett problem som kunde visa en leverans två gånger i leveranslistan efter att den hade skickats.
 * Korrigerade ett problem med leveransförberedelser som kunde inträffa när routningskonfigurationen var inställd på att skicka leveransen via mid-sourcing.

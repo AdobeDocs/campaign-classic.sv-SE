@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9b914099f6755d6ae83f98697a3a38f8cfa625e1
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Välja formuläråtergivningsmall {#selecting-the-form-rendering-template}
 
-Med formulärinställningarna kan du välja den mall som ska användas för att generera sidorna. Du öppnar dem genom att klicka på knappen **[!UICONTROL Settings]** i verktygsfältet för formulärinformation och välja fliken **[!UICONTROL Rendering]**. Som standard finns det ett antal mallar (formatmallar).
+Med formulärinställningarna kan du välja den mall som ska användas för att generera sidorna. Du öppnar dem genom att klicka på knappen **[!UICONTROL Properties]** i verktygsfältet för formulärinformation och välja fliken **[!UICONTROL Rendering]**. Som standard finns det ett antal mallar (formatmallar).
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 

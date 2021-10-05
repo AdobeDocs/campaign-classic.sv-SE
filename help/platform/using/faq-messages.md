@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ För varje URL i meddelandet kan du till exempel välja om du vill aktivera spå
 
 ### Var kan jag komma åt leverans- och spårningsloggar? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Läs mer om hur man spårar leveranser och förstår mottagarnas beteende på [den här sidan](../../delivery/using/delivery-dashboard.md).
+Lär dig spåra dina leveranser och förstå mottagarnas beteende [från den här sidan](../../delivery/using/delivery-dashboard.md).
 
 ### Var kan jag få leveransrapporter? {#where-can-i-get-delivery-reports-}
 

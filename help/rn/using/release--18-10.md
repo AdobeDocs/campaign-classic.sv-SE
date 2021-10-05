@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2369'
 ht-degree: 7%
@@ -123,7 +123,7 @@ ht-degree: 7%
      <li> <p>Spåra tysta meddelanden i iOS </p> </li> 
      <li> <p>Skicka feedback vid registreringssamtal iOS</p> </li> 
      <li> <p>Förbättra förberedelsehastigheten för iOS-leverans</p> </li> 
-    </ul> <p>Som en del av GCM-avskrivningen av Google tillåter nu Android V2-kopplingen bara anslutningar till FCM-servern.</p><p>Mer information finns i <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">den detaljerade dokumentationen</a>. Den manuella uppgraderingen till FCM finns i den här <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html">artikeln</a>. </p> </td> 
+    </ul> <p>Som en del av GCM-avskrivningen av Google tillåter nu Android V2-kopplingen bara anslutningar till FCM-servern.</p><p>Mer information finns i den <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">detaljerade dokumentationen</a>. Den manuella uppgraderingen till FCM finns i den här <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html">artikeln</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL Data Management-aktivitet<br /> </td> 

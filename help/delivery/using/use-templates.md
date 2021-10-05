@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
 1. I fältet **[!UICONTROL From]** använder du ett namn som är lätt att identifiera för mottagarna, till exempel ditt varumärkes namn, för att öka öppningshastigheten för dina leveranser. Om du vill förbättra mottagarens upplevelse ytterligare kan du lägga till en persons namn, till exempel&quot;Emma from Megastore&quot;.
 
-1. I **[!UICONTROL Reply address text]**-fälten används avsändarens adress som standard för svar. Adobe rekommenderar dock att man använder en befintlig riktig adress som till exempel kundtjänst för ert varumärke. Om en mottagare skickar ett svar kan kundtjänst hantera det.
+1. I fälten **[!UICONTROL Reply address text]** används avsändarens adress som standard för svar. Adobe rekommenderar dock att man använder en befintlig riktig adress som till exempel kundtjänst för ert varumärke. Om en mottagare skickar ett svar kan kundtjänst hantera det.
 
 ### Konfigurera en kontrollgrupp
 

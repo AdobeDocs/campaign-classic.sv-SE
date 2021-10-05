@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -34,8 +34,8 @@ Med Adobe Campaign kan ni dela målgrupper och segment med Adobe Experience Clou
 
 Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
-* **Besökar-ID**: den här typen av identifierare används för att anpassa Adobe Experience Cloud-besökare till Adobe Campaign-mottagare.
-* **Deklarerat ID**: den här typen av identifierare kan stämma av alla typer av data med element från Adobe Campaign-databasen. Den representeras i Adobe Campaign som en fördefinierad avstämningsnyckel.
+* **Besökar-ID**: den här typen av identifierare förenar Adobe Experience Cloud-besökare med Adobe Campaign-mottagare.
+* **Deklarerat ID**: den här typen av identifierare förenar alla typer av data med element från Adobe Campaign-databasen. Den representeras i Adobe Campaign som en fördefinierad avstämningsnyckel.
 
    >[!NOTE]
    >

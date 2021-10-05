@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -98,7 +98,7 @@ När målpopulationen har definierats kan du dela den med ACS via en **[!UICONTR
 
 1. Lägg till en **[!UICONTROL List update]**-aktivitet i det arbetsflöde som skapats tidigare och ange den lista som du vill uppdatera eller skapa.
 
-   Ange i vilken mapp du vill spara listan i Campaign v7. Listor omfattas av mappmappmappningen som definieras under implementeringen, vilket kan påverka deras synlighet när de väl har delats i Campaign Standard. Se avsnittet [Rättighetskonvertering](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion).
+   Ange i vilken mapp du vill spara listan i Campaign v7. Listor omfattas av mappmappmappningen som definieras under implementeringen, vilket kan påverka deras synlighet när de delas i Campaign Standard. Se avsnittet [Rättighetskonvertering](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion).
 
 1. Kontrollera att alternativet **[!UICONTROL Share with ACS]** är markerat. Den är markerad som standard.
 
