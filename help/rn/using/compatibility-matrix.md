@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 86%
+source-wordcount: '596'
+ht-degree: 85%
 
 ---
 
@@ -121,10 +121,6 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## RDBMS-servrar{#RDBMSservers}
 
->[!NOTE]
->
->RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
-
 <table>
 <tbody>
 <tr>
@@ -137,7 +133,10 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </td>
 </tr>
 <tr>
-<td>PostgreSQL</td>
+<td>
+<p>PostgreSQL</p>
+<p>Standarddatabasserver för värdbaserade miljöer</p>
+</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -165,7 +164,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 >[!NOTE]
 >
->PostgreSQL är standarddatabasservern för värdbaserade miljöer.
+>RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
 
 ## CRM-kopplingar{#CRMconnectors}
 
@@ -315,7 +314,6 @@ Följande operativsystem och webbläsare **krävs** för att använda [Campaign 
 
 ### Webbläsare
 
-[]
 <table>
 <tbody>
 <tr>
