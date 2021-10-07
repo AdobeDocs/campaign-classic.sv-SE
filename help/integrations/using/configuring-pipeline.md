@@ -5,7 +5,7 @@ description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -127,7 +127,7 @@ Listan med valfria parametrar finns nedan:
 
 | Alternativ | Beskrivning |
 |:-:|:-:|
-| appName(Legacy) | AppID för OAuth-programmet som är registrerat i det äldre Oath-programmet där den offentliga nyckeln överfördes. Se denna [sida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) för mer information om detta |
+| appName(Legacy) | AppID för OAuth-programmet som är registrerat i det äldre Oath-programmet där den offentliga nyckeln överfördes. Se denna [sida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) för mer information om detta |
 | authGatewayEndpoint(Legacy) | URL för att hämta gatewaytoken. Standard: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | Den privata nyckeln, den offentliga delen som överförts i det äldre Oath-programmet, AES som krypterats med alternativet XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Inaktivera autentisering, anslutning utan gatewaytoken accepteras bara av vissa slutpunkter i utvecklingsfasen. |
