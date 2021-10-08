@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
+source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 98%
+source-wordcount: '2459'
+ht-degree: 97%
 
 ---
 
@@ -28,9 +28,9 @@ _8 oktober 2021_
 
 **Felkorrigeringar**
 
-* Korrigerade ett problem som kunde förhindra att offertförslag kunde sparas när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+* Ett problem som kunde förhindra en korrekt hantering av erbjudanden när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md) har åtgärdats. (NEO-39263)
 
-* Korrigerade ett fel: &quot;Det gick inte att hitta ipaffinity xxx på mellanservern xxx&quot;, vilket kan inträffa om mer än en IP-tillhörighet används på mellankällinstansen. (NEO-37514)
+* Korrigerade ett fel: &quot;Det gick inte att hitta ipaffinity xxx på mittservern xxx&quot; som kan inträffa vid leverans när mer än en IP-tillhörighet används på en instans med flera källor. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
