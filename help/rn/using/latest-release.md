@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
+source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
 workflow-type: tm+mt
-source-wordcount: '2403'
-ht-degree: 100%
+source-wordcount: '2457'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,19 @@ Den här sidan beskriver nya funktioner, förbättringar och korrigeringar som i
 
 Förstå buildstatus för Campaign på [den här sidan](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
+
+## ![](assets/do-not-localize/green_2.png) version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
+
+_8 oktober 2021_
+
+**Felkorrigeringar**
+
+* Korrigerade ett problem som kunde förhindra att offertförslag kunde sparas när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+
+* Korrigerade ett fel: &quot;Det gick inte att hitta ipaffinity xxx på mellanservern xxx&quot;, vilket kan inträffa om mer än en IP-tillhörighet används på mellankällinstansen. (NEO-37514)
+
+
+## ![](assets/do-not-localize/orange_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
 
 _7 september 2021_
 
