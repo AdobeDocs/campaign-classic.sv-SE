@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ En status är associerad med varje build. Du hittar statuslistan nedan och hur d
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
-De **senaste GA-builderna** är: [[!DNL Gold Standard] version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+De **senaste GA-versionerna** är: [[!DNL Gold Standard]  version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidat** (RC) – senaste versionen med nya funktioner.
 
-![](assets/do-not-localize/orange3.png) **Inte längre tillgängligt**  - Ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version.
+![](assets/do-not-localize/orange3.png) **Inte längre tillgängligt** – ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version.
 
 ![](assets/do-not-localize/red3.png) **Inaktuell** – ingen distribution. Ingen felkorrigering. Befintliga implementeringar måste uppgraderas.
 
