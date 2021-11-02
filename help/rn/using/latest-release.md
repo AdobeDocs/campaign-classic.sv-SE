@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ Den här sidan beskriver nya funktioner, förbättringar och korrigeringar som i
 Förstå buildstatus för Campaign på [den här sidan](rn-overview.md).
 
 
-## ![](assets/do-not-localize/green_2.png) version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
+## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
 
 _8 oktober 2021_
 
 **Felkorrigeringar**
 
-* Ett problem som kunde förhindra en korrekt hantering av erbjudanden när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md) har åtgärdats. (NEO-39263)
+* Ett problem har åtgärdats som kunde förhindra en korrekt hantering av erbjudanden när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
-* Korrigerade ett fel: &quot;Det gick inte att hitta ipaffinity xxx på mittservern xxx&quot; som kan inträffa vid leverans när mer än en IP-tillhörighet används på en instans med flera källor. (NEO-37514)
+* Korrigerade ett fel: ”Det gick inte att hitta IP-tillhörigheten xxx på mittservern xxx” som kan inträffa vid leverans när mer än en IP-tillhörighet används på en instans med flera källor. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
