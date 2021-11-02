@@ -7,9 +7,9 @@ user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata f
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ ht-degree: 97%
          + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
          + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
-         + [Synkronisera data med CRM](platform/using/crm-data-sync.md)
+         + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Adobe Analytics Connector-etablering](platform/using/adobe-analytics-provisioning.md)
+         + [Etablering av Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
          + [Integrering med Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Så här migrerar du till Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -843,17 +843,17 @@ ht-degree: 97%
       + [Specifika konfigurationer i version 6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
-   + [Rekommendationer för maskinvarustorlek](technotes/using/hardware-sizing.md)
+   + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
    + Uppgraderingar och migreringar{#technote-migration}
       + [Tekniska anmärkningar](technotes/using/technote.md)
       + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
       + [IMS-uppdateringar](technotes/using/ims-updates.md)
    + E-postmeddelanden och push-meddelanden{#technotes-email}
-      + [Sekretessskydd för e-post i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Frågor och svar om Apples sekretesskydd](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
-      + [Så här uppdaterar du felaktiga hårddiskmarkeringar](delivery/using/update-bounce-qualification.md)
+      + [Sekretesskydd för Mail i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Vanliga frågor om sekretesskydd för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)
+      + [Så här uppdaterar du felaktiga hårda studsar](delivery/using/update-bounce-qualification.md)
       + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
-   + Migrering till Adobes hanterade tjänster{#dc-migration}
+   + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
       + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
