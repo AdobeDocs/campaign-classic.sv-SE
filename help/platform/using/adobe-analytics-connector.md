@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1515'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analy
 
 >[!IMPORTANT]
 >
-> För hybridimplementeringar och lokala implementeringar ska du följa anvisningarna för etablering i den här [sidan](../../platform/using/adobe-analytics-provisioning.md).
+> För hybridimplementeringar och lokala implementeringar ska du följa anvisningarna för etablering på den här [sidan](../../platform/using/adobe-analytics-provisioning.md).
 
 Om du vill konfigurera datakopplingen måste du ansluta till din Adobe Campaign-instans och utföra följande åtgärder:
 
@@ -133,7 +133,7 @@ Du måste konfigurera dina **[!UICONTROL Conversion variables]** och **[!UICONTR
 
 1. Klicka på **[!UICONTROL Save]** när du är klar.
 
-När du har konfigurerat **[!UICONTROL Conversion variables]** och **[!UICONTROL Success events]** kontrollerar du att variablerna ingår i **[!UICONTROL Product Profile]** som skapats för Analytics Connector. Mer information finns i [Skapa en Adobe Analytics-produktprofil](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile).
+När du har konfigurerat **[!UICONTROL Conversion variables]** och **[!UICONTROL Success events]** ska du kontrollerar du att variablerna ingår i **[!UICONTROL Product Profile]** som har skapats för Analytics Connector. Mer information finns i [Skapa en Adobe Analytics-produktprofil](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile).
 
 Du måste sedan konfigurera **[!UICONTROL External accounts]** i Adobe Campaign Classic.
 
@@ -161,7 +161,7 @@ Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://e
 
 1. Klicka på **[!UICONTROL Configure]** bredvid listrutan **[!UICONTROL Integration]**.
 
-1. Mappa ditt externa konto med din rapportsserie från fönstret **[!UICONTROL Configure Analytics integration]** med följande information:
+1. Mappa det externa kontot från fönstret **[!UICONTROL Configure Analytics integration]** med rapportsviten och ge följande information:
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
