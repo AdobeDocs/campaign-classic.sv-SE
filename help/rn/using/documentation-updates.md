@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Adobe Campaign Classic v7 - Dokumentationsuppdateringar
+title: Dokumentation om Adobe Campaign Classic v7-uppdateringar
 description: Den här sidan beskriver alla nya funktioner och uppdateringar i dokumentationen om Adobe Campaign Classic
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4560'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## Oktober 2021{#oct-2021}
 
-Befintliga tekniker har grupperats i det nya avsnittet **Technote**.
+Befintliga tekniska anmärkningar har grupperats i det nya avsnittet **Technote**.
 
 Sidan **Rekommendationer för storleksändring av maskinvara** har uppdaterats och lagts till i avsnittet **Technotes**. [Läs mer](../../technotes/using/hardware-sizing.md)
 
@@ -35,7 +35,7 @@ Diagramtypen **Mätare** har tagits bort.
 
 Skärmbilder och parametrar för rapporter och webbprogram har uppdaterats efter att Adobe Flash har tagits bort.
 
-[Beskrivningen av det tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) har uppdaterats med ett nytt skyddsförslag.
+Beskrivningen av de [tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) har uppdaterats med ett nytt skyddsförslag.
 
 ## Augusti 2021{#aug-2021}
 
@@ -282,7 +282,7 @@ Sekretesshanteringen på sidan Campaign Classic har uppdaterats med information 
 
 Sidan Översikt över integritetshantering har uppdaterats med information om Thailands lag för persondataskydd (PDPA) och Brasiliens Lei Geral de Proteção de Dados (LGPD). [Läs mer](../../platform/using/privacy-and-recommendations.md)
 
-Information har lagts till i delarbetsflödets loggar och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
+Information har lagts till om loggar om delarbetsflöden och beteende vid fel. [Läs mer](../../workflow/using/sub-workflow.md)
 
 Bästa praxis har lagts till i aktivitetsavsnittet **[!UICONTROL Scheduler]**. [Läs mer](../../workflow/using/scheduler.md)
 
@@ -392,9 +392,9 @@ Förbättringar på Hadoop FDA-koppling – [läs mer](../../installation/using/
 
 Handböckerna för [installation](../../installation/using/general-architecture.md), [produktion](../../production/using/foreword.md) och [konfiguration](../../configuration/using/additional-parameters.md) har uppdaterats med den nya systemenheten som används vid uppstart av tjänsten nlserver. /Etc/init.d/nlserver6 kan fortfarande användas men Adobe rekommenderar att du nu använder kommandot systemctl för att interagera med tjänsten nlserver.
 
-Installationsguiden har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Stöd för nya system har lagts till. Förekomster av system som inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
+Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Nya system som stöds har lagts till. Förekomster av system som är inaktuella och inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
 
-Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 Ett tips om IP-tillhörighet har lagts till i installationshandboken. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -412,7 +412,7 @@ Den nya parametern för rapportkonfigurationen av webbadresser har dokumenterats
 
 Sidan för den **Lokala och värdbaserade funktionsmatrisen i Campaign Classic** har uppdaterats med de nya FDA-kopplingarna. [Läs mer](../../installation/using/capability-matrix.md).
 
-Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
 Det nya **[!UICONTROL Cleanup of Nmsaddress]**-arbetsflödet har dokumenterats [här](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -462,7 +462,7 @@ Säkra SMS-meddelanden (TLS) – [läs mer](https://helpx.adobe.com/se/campaign/
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Ett nytt avsnitt har lagts till om hur man felsöker ett arbetsflöde som finns i läget &quot;Starta så snart som möjligt&quot; i en kampanj. [Läs mer](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -524,15 +524,15 @@ Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har u
 
 **Nya funktioner i version 19.1**
 
-Kontrollpanel – [läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Kontrollpanel – [läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
 
 Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](https://helpx.adobe.com/se/campaign/kb/build-upgrade-faq.html)
+Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/faq/faq-build-upgrade.html?lang=sv)
 
-[Kompatibilitetsmatrisen](compatibility-matrix.md) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. Kompatibilitetsmatrisen 19.0 har arkiverats.
+[Kompatibilitetsmatrisen](compatibility-matrix.md) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. Kompatibilitetsmatris 19.0 har arkiverats.
 
 Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](deprecated-features.md)
 
@@ -542,13 +542,13 @@ Ett avsnitt har lagts till som beskriver installations- och konfigurationsstegen
 
 Ett avsnitt har lagts till som beskriver avinstallation av Campaign-servern. [Läs mer](../../installation/using/uninstalling-campaign.md)
 
-Starthandböckerna [Säkerhet](https://helpx.adobe.com/se/campaign/kb/acc-security.html), [Leverans](../../delivery/using/about-deliverability.md) och [Sekretess](../../platform/using/privacy-management.md) har uppdaterats.
+Starthandböckerna [Säkerhet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv), [Leverans](../../delivery/using/about-deliverability.md) och [Sekretess](../../platform/using/privacy-management.md) har uppdaterats.
 
 Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats för att återspegla produktändringar. [Läs mer](../../workflow/using/data-loading--file-.md)
 
 Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
-Listan med felmeddelanden har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+Listan med felmeddelanden har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv)
 
 Ytterligare information om SOAP-autentiseringsmetoder för transaktionsmeddelanden har lagts till. [Läs mer](../../message-center/using/event-description.md)
 
@@ -587,7 +587,7 @@ Information har lagts till om faktureringsrapporten.
 Dokumentation om integrationen mellan delade publiker har uppdaterats.
 [Läs mer](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
