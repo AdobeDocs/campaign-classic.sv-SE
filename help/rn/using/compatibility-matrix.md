@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </tbody>
 </table>
 
-## RDBMS (Relation Database Management Systems){#RDBMSservers}
+## Relation Database Management Systems (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -153,7 +153,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p><strong>Viktigt:</strong> Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -163,12 +163,12 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 >
 >* RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
 >
->* PostgreSQL är RDBMS för värdmiljöer.
+>* PostgreSQL är RDBMS för värdbaserade miljöer.
 
 
 ## CRM-kopplingar{#CRMconnectors}
 
-CRM-system som är kompatibla med Adobe Campaign listas nedan. [Läs ](../../platform/using/crm-connectors.md) mer om Campaign CRM-anslutningar.
+CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../../platform/using/crm-connectors.md) om CRM-kopplingar i Campaign.
 
 <table>
 <tbody>
@@ -289,7 +289,7 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 
 ## Client Console {#ClientConsoleoperatingsystems}
 
-Följande operativsystem och webbläsare **krävs** för att använda [Campaign Client Console](../../installation/using/installing-the-client-console.md).
+Följande operativsystem och webbläsare **krävs** för att använda [klientkonsolen i Campaign](../../installation/using/installing-the-client-console.md).
 
 ### Operativsystem
 
@@ -330,7 +330,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [Campaign 
 
 ## Mobilt SDK{#MobileSDK}
 
-Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på de operativsystem som listas nedan med hjälp av den associerade [mobil-SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på de operativsystem som listas nedan med hjälp av den associerade [mobil-SDK:en](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 <table>
 <tbody>
@@ -353,7 +353,7 @@ Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using
 
 ## Webbläsare{#Browsers}
 
-Följande webbläsare är kompatibla med Campaign för [webbåtkomst](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Följande webbläsare är kompatibla med Campaign för [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -404,7 +404,7 @@ Följande webbläsare är kompatibla med Campaign för [webbåtkomst](../../camp
 ## Mer som det här{#Morelikethis}
 
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
-* [Kampanjens allmänna arkitektur](../../installation/using/general-architecture.md)
-* [Rekommendationer för maskinvarustorlek](../../technotes/using/hardware-sizing.md)
+* [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
+* [Rekommendationer på maskinvarustorlek](../../technotes/using/hardware-sizing.md)
 * [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
 * [Procedur för builduppgradering](../../production/using/build-upgrade.md)
