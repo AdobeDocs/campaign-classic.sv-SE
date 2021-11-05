@@ -14,7 +14,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## version 18.4.5 – build 8937{#release-18-4-5-build-8937}
+## Version 18.4.5 – build 8937{#release-18-4-5-build-8937}
 
 21 november 2018
 
@@ -41,7 +41,7 @@ ht-degree: 7%
 * Förbättrat delat minne som är tillgängligt under den underordnade processerna.
 * Korrigerade ett möjligt dödläge i Apache (spårning).
 
-## version 18.4.4 – build 8936{#release-18-4-4-build-8936}
+## Version 18.4.4 – build 8936{#release-18-4-4-build-8936}
 
 1 augusti 2018
 
@@ -50,15 +50,15 @@ ht-degree: 7%
 * Loggarna för e-postarkivering har förbättrats, vilket gör det enklare och tydligare att kontrollera vilka e-postmeddelanden som har levererats eller misslyckats via BCC-arkivering. (NEO-10675)
 * Korrigerade ett problem som ledde till att IP-adresser för belastningsutjämnare visades i stället för IP-adresser för kunder i spårningsloggarna. (NEO-11295)
 * Korrigerade ett fel med LATIN1-kodning vid användning av en FDA-anslutning till en PostgreSQL-databas. (NEO-11299)
-* Ett problem som uppstod när leveransalternativet **[!UICONTROL Prepare the personalization data with a workflow]** användes har korrigerats. (NEO-11047, NEO-11301)
+* Ett problem som uppstod när **[!UICONTROL Prepare the personalization data with a workflow]** leveransalternativ. (NEO-11047, NEO-11301)
 * Korrigerade ett slumpmässigt problem som medförde att egenskaperna för en leverans skrevs över felaktigt. (NEO-11015)
-* Ett problem har korrigerats vid användning av beräknade fält i en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet. (NEO-11382)
-* Ett problem har korrigerats när data som lagrats i XML användes i en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet. (NEO-10816)
+* Ett problem har korrigerats när beräknade fält används i en **[!UICONTROL Survey answers]** arbetsflödesaktivitet. (NEO-11382)
+* Ett problem har korrigerats när data som lagrats i XML i en **[!UICONTROL Survey answers]** arbetsflödesaktivitet. (NEO-10816)
 * Ett problem som uppstod när servern skulle uppgraderas med build 8935 har korrigerats.
-* Korrigerade ett problem som visade oanvändbara fel i efteruppgraderingsloggen när en **[!UICONTROL Survey answers]**-arbetsflödesaktivitet inte var fullständigt konfigurerad.
+* Ett problem som visade oanvändbara fel i efteruppgraderingsloggen när en **[!UICONTROL Survey answers]** arbetsflödesaktiviteten har inte konfigurerats fullständigt.
 * FDA-Teradata: åtgärdade ett problem med automatiskt inkrementerade fält och index i SQL-tabeller.
 
-## version 18.4.3 – build 8935{#release-18-4-3-build-8935}
+## Version 18.4.3 – build 8935{#release-18-4-3-build-8935}
 
 22 juni 2018
 
@@ -68,22 +68,22 @@ ht-degree: 7%
 * Ett problem med bildlänkspersonalisering i LINE-leveranser har korrigerats. (NEO-11077)
 * Ett problem som gjorde att ID-sekvensgenereringsmekanismen inte fungerade korrekt har korrigerats. (NEO-11115)
 * Korrigerade ett problem som hindrade sekretessbegäranden (GDPR) från att fungera när ett anpassat namnutrymme med en heltalstypsavstämningsnyckel användes. (NEO-11123)
-* Korrigerade ett fel som kunde inträffa när alternativet **[!UICONTROL Distribution of values]** användes i **[!UICONTROL Query]**-arbetsflödesaktiviteter. (NEO-10958)
+* Ett fel som kan inträffa när **[!UICONTROL Distribution of values]** alternativ i **[!UICONTROL Query]** arbetsflödesaktiviteter. (NEO-10958)
 * Ett problem har korrigerats vid synkronisering av erbjudanden från marknadsinstansen till interaktionsinstansen. (NEO-11162)
 * Förbättrad hantering av index för långa namn under efteruppgradering
 
-## version 18.4.2 – build 8932{#release-18-4-2-build-8932}
+## Version 18.4.2 – build 8932{#release-18-4-2-build-8932}
 
 22 maj 2018
 
 **Förbättringar**
 
 * Ett problem som gjorde att Windows Server-uppdateringen inte fungerade korrekt har korrigerats.
-* Korrigerade ett problem i **[!UICONTROL Survey Result]**-aktiviteten när data som lagrats i XML användes. Rapporten visades felaktigt. (NEO-10816)
+* Ett problem i **[!UICONTROL Survey Result]** när du använder data som lagras i XML. Rapporten visades felaktigt. (NEO-10816)
 * Korrigerade ett prestandaproblem som kan uppstå med inMail-processen när en server för studsade meddelanden används. (NEO-10641)
 * Korrigerade ett databasuppgraderingsfel som kan inträffa vid uppgradering av fler än 1 000 scheman.
 
-## version 18.4 – build 8931{#release-18-4-build-8931}
+## Version 18.4 – build 8931{#release-18-4-build-8931}
 
 24 apr 2018
 
@@ -92,7 +92,7 @@ ht-degree: 7%
 <table> 
  <thead> 
   <tr> 
-   <th> Funktion<br /> </th> 
+   <th> Funktionalitet<br /> </th> 
    <th> Beskrivning<br /> </th> 
   </tr> 
  </thead> 
@@ -110,7 +110,7 @@ ht-degree: 7%
    <td> <p>Adobe Campaign tillhandahåller nu en lista över aktiva profiler som uppdateras varje månad via ett dedikerat arbetsflöde.</p> <p>Mer information finns i den <a href="../../platform/using/about-profiles.md#active-profiles">detaljerade dokumentationen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> Förbättrad Android-push-koppling<br /> </td> 
+   <td> Förbättrad push-koppling för Android<br /> </td> 
    <td> <p>Android-anslutningen har förbättrats med stöd för högre genomströmning. </p> <p>Mer information finns i den <a href="../../delivery/using/configuring-the-mobile-application.md">detaljerade dokumentationen</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -125,8 +125,8 @@ ht-degree: 7%
 
 **Förbättringar**
 
-* **LINE-kanal - förbättrad** arkitektur: Liksom för alla andra kanaler i Adobe Campaign stöds nu LINE-kanalen för alla distributionstyper: värdbaserad, hybridbaserad och lokal.
-* **Automatisk sekvensgenerering**: ID-genereringsmekanismen har förbättrats för att öka livscykeln för Campaign-instanser med stora mängder objekt. Mer information finns i denna [technote](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
+* **LINE-kanal - förbättrad arkitektur**: Liksom för alla andra kanaler i Adobe Campaign stöds nu LINE-kanalen för alla distributionstyper: värdbaserad, hybridbaserad och lokal.
+* **Automatisk sekvensgenerering**: ID-genereringsmekanismen har förbättrats för att öka livscykeln för Campaign-instanser med stora mängder objekt. Mer information finns i [technote](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
 
 **Andra ändringar**
 
@@ -138,10 +138,10 @@ ht-degree: 7%
 * Tvingade åtkomstbegränsningar för distributionsguidens SOAP-anrop (xtk:serverOptions#SaveOptions).
 * Det föråldrade biblioteket weka.jar har tagits bort och OpenSSL-biblioteket har uppdaterats för säkerhetsoptimering.
 * Förbättrat tekniskt arbetsflöde för fakturering för att säkra instansernas prestanda.
-* Administratörernas möjlighet att ange eller återställa lösenordet för en operator har återställts. Om du vill göra det högerklickar du på en operator, väljer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och anger operatorns nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter. Mer information finns i den [detaljerade dokumentationen](../../production/using/lost-password.md).
+* Administratörernas möjlighet att ange eller återställa lösenordet för en operator har återställts. Om du vill göra det högerklickar du på en operator och väljer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** och ange operatorns nya lösenord. Vi rekommenderar att operatorer ändrar sina lösenord när de först återansluter. Mer information finns i den [detaljerade dokumentationen](../../production/using/lost-password.md).
 * För att ge stöd åt den nya multitenancy-funktionen i Adobe Target kan en ny&quot;at_property&quot;-parameter nu läggas till i URL:er när alternativ och externa konton konfigureras för integrering med Target. Det värde som ska användas för den här parametern finns i Adobe Target och kommer att användas av Campaign när anrop till Target görs. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
 * Du kan nu ange en standardstartsida som ska öppnas när du klickar på en bild som hanteras av Adobe Target. Tidigare ledde klickningen på den bilden till standardbilduppsättningen när e-postmeddelandet skapades i stället. Mer information finns i den [detaljerade dokumentationen](../../integrations/using/inserting-a-dynamic-image.md).
-* **Aktivera kryssrutan SMPP-spår** i det externa kontot för att framtvinga spårningsutdata. Mer information finns i den [detaljerade dokumentationen](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+* Tillagd **Aktivera SMPP-spår** -kryssrutan i det externa kontot för att framtvinga spårningsutdata. Mer information finns i den [detaljerade dokumentationen](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Tekniska utvecklingar**
 
@@ -182,7 +182,7 @@ JavaScript-funktionen urlEncode fungerade inte korrekt för icke-ASCII-tecken. D
 
 Nytt läge för paketimport
 
-Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket tillåter cirkulära beroenden (rekommenderas inte för stora paket). Befintliga funktioner behålls. För sådana paket med cirkelberoenden har en ny flagga **-usejs** lagts till i kommandoradspaketimporten. När den körs används JSEngine på samma sätt som när paketimporten utförs från gränssnittet.
+Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket tillåter cirkulära beroenden (rekommenderas inte för stora paket). Befintliga funktioner behålls. En ny flagga för sådana paket med cirkelberoenden **-usejs** har lagts till i kommandoradspaketimporten. När den körs används JSEngine på samma sätt som när paketimporten utförs från gränssnittet.
 
 ```
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
@@ -193,14 +193,14 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Ett synkroniseringsproblem har korrigerats vid replikering av leverans- och spårningsloggar från Adobe Campaign Standard till Adobe Campaign Classic. (NEO-10023)
 * Korrigerade ett problem med hanteringen av fel- och loggtabeller i Teradata när ett ETL-arbetsflöde återupptogs efter ett fel vid en snabb inläsning. Tabellerna Fel och Logg tas nu bort korrekt varje gång arbetsflödet återupptas. (NEO-10672)
 * Korrigerade ett efteruppgraderingsfel som innebar att Hive-paketet (som behövs för Hadoopet) skulle installeras automatiskt om FDA-paketet installerades. (NEO-10592)
-* Korrigerade ett fel som behandlade ogiltiga domäner som ett **Inte definierat**-fel. (NEO-10248)
+* Ett fel som behandlade ogiltiga domäner som en **Ej definierad** fel. (NEO-10248)
 * Korrigerade ett problem som duplicerade loggar i tabellen deliveryLogStats när push-leveranser för android skickades. (NEO-10234)
 * Korrigerade ett problem som kunde leda till att vissa streckkodsformat inte kunde läsas av streckkodsläsare. (NEO-10125)
 * Ett problem med JavaScript-funktionen urlEncode har korrigerats när icke-ASCII-tecken användes. Mer information finns i avsnittet&quot;Tekniska lösningar&quot;. (NEO-10123)
 * Ett problem som orsakade att en fråga kördes med sha256-funktioner i Teradata-databaser har korrigerats. (NEO-10119)
 * Ett arbetsflödesminnesfel som kan uppstå i SalesForce-aktiviteten när mycket stora SalesForce-tabeller används har åtgärdats. (NEO-9900)
-* Ett problem med alternativet **Generera komplement** har korrigerats i syfte att skapa arbetsflödesaktiviteter när FDA används. (NEO-9878)
-* Korrigerade ett problem som kunde leda till att värdena **Behandlad** och **Lyckades** inte uppdaterades på marknadsinstansen när mellanleverantörer användes. (NEO-9454)
+* Ett problem med **Generera komplement** för arbetsflödesaktiviteter när FDA används. (NEO-9878)
+* Ett problem som kunde leda till **Behandlad** och **Lyckades** mätvärden uppdateras inte i marknadsföringsinstansen när mellanleverantörer används. (NEO-9454)
 * Fasta regler för icke-reproposition av interaktion när över 10 kB totalt erbjuder i plattformen (NEO-9352)
 * Ett problem som kunde förhindra att målet för en leverans angavs när en extern XML-fil användes har åtgärdats. (NEO-9312)
 * Korrigerade ett problem som kunde leda till arbetsflödesfel när en hypotes kördes på ett erbjudande och status för förslaget uppdaterades. (NEO-9304)

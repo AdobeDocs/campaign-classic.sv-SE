@@ -17,7 +17,7 @@ ht-degree: 19%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) version 20.1.4 – build 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) Version 20.1.4 – build 9126 {#release-20-1-4-build-9126}
 
 _15 april 2021_
 
@@ -51,19 +51,19 @@ _23 december 2020_
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
 * Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) version 20.1.3 – build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) Version 20.1.3 – build 9124{#release-20-1-3-build-9124}
 
 _6 maj 2020_
 
 * Ett problem med **filöverföringar** som hindrade SFTP-nyckelbaserad autentisering från att fungera i Debian 9 har korrigerats. (NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) version 20.1.2 – build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) Version 20.1.2 – build 9123{#release-20-1-2-build-9123}
 
 _13 mars 2020_
 
 * Korrigerade ett problem som förhindrade versionshantering på Red Hat 7-servrar. (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) version 20.1 – build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) Version 20.1 – build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
@@ -78,7 +78,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Snowflake är ett helt hanterat moln data warehouse som bygger på både lagrings- och beräkningsnivå. Med denna nya kontakt kan Adobe Campaign nu utnyttja Snowflake kraft att utföra Big Data Segmentation. Den här kontakten är tillgänglig för alla kunder, inklusive via Adobe.</p>
-    <p>Mer information finns i <a href="../../installation/using/configure-fda-snowflake.md">den detaljerade dokumentationen</a> och <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">självstudievideon</a>.</p>
+    <p>Mer information finns i <a href="../../installation/using/configure-fda-snowflake.md">detaljerad dokumentation</a> och <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">video med självstudiekurser</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -117,21 +117,21 @@ _17 februari 2020_
 
 * iOS 13 stöds nu med HTTP2-anslutningen.
 
-* Förbättrad karantänhantering och rensning av tabeller som används av funktionen för push-meddelanden (nms:address och nms:appSubscriptionRcp). I iOS (endast HTTP2-anslutning) hanteras nu inaktiverade tokens på samma sätt som för Android. Inaktiveringsflaggan har nu angetts i tabellen NmsAppSubscriptionRcp. [Läs mer](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* Förbättrad karantänhantering och rensning av tabeller som används av funktionen för push-meddelanden (nms:address och nms:appSubscriptionRcp). För iOS (endast HTTP2-anslutning) hanteras nu inaktiverade tokens på samma sätt som för Android. Inaktiveringsflaggan har nu angetts i tabellen NmsAppSubscriptionRcp. [Läs mer](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Ett nytt alternativ har lagts till i **JavaScript-koden** och **avancerad JavaScript-kod**-arbetsflödesaktiviteter för att definiera en timeout-period. Detta förhindrar att JavaScript-körningsfasen körs för länge. Om tidsgränsen överskrids stoppas arbetsflödet. Standardtidsgränsen är 1 timme. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md)
+* Ett nytt alternativ har lagts till i **JavaScript-kod** och **Avancerad JavaScript-kod** arbetsflödesaktiviteter för att definiera en timeout-period. Detta förhindrar att JavaScript-körningsfasen körs för länge. Om tidsgränsen överskrids stoppas arbetsflödet. Standardtidsgränsen är 1 timme. [Läs mer](../../workflow/using/sql-code-and-javascript-code.md)
 
 * Leveransanalysen stoppas nu när ingen matchande tillhörighet hittas på mittkällservern, med motsvarande felmeddelande.
 
 * Databasredundans för Postgres stöds nu: när databasservern kraschar och startas om kopplas Campaign nu automatiskt tillbaka till den.
 
-* Vyn **Starta väntande** har lagts till i noden Administration > Granskning > Arbetsflödesstatus. Detta gör att du kan övervaka alla arbetsflöden på instansen som väntar på att startas av processen **operationMgt**. Den här vyn levereras med paketet med marknadsföringskampanjer. [Läs mer](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* The **Påbörja väntande** vyn har lagts till i noden Administration > Granskning > Arbetsflödesstatus. Detta gör att du kan övervaka alla arbetsflöden på instansen som väntar på att startas av **operationMgt** -processen. Den här vyn levereras med paketet med marknadsföringskampanjer. [Läs mer](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Andra ändringar**
 
 * I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar 20.1-paketet. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
 
-* De vanligaste anpassade tabellerna har flyttats från **xtkNewId**-sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* De mest använda anpassade tabellerna har flyttats från **xtkNewId** till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Förbättrade frågeprestanda som kan påverkas av onödiga databasanslutningar.
 
@@ -159,7 +159,7 @@ _17 februari 2020_
 
 * Korrigerade ett kodningsproblem när frågor kördes via Netezza FDA-anslutningen. (NEO-19594)
 
-* Ett problem som orsakade ett fel när metoden POST användes i aktiviteten **Webbhämtning** arbetsflödeshändelse har korrigerats.
+* Ett problem som orsakade ett fel när metoden POST i **Web Download** händelseaktivitet i arbetsflöde.
 
 * Ett problem med generering av erbjudandeförslag har korrigerats. (NEO-18176)
 
@@ -167,25 +167,25 @@ _17 februari 2020_
 
 * Ett problem som orsakade att URL:er i innehållet i kontinuerliga leveranser tolkades har åtgärdats. (NEO-16910)
 
-* Ett problem har korrigerats med fälten **Start** och **End** som inte beräknades när en ny kampanj skapades.
+* Ett problem med **Starta** och **End** fält som inte beräknas när en ny kampanj skapas.
 
-* Korrigerade ett problem med arbetsflödesaktiviteten **Filhämtning** när en URL användes.
+* Ett problem med **Filhämtning** arbetsflödesaktivitet när en URL används.
 
 * Ett problem har korrigerats vid förhandsgranskning av en importerad lista i en frågeaktivitet i en rapport. (NEO-13119)
 
-* Korrigerade ett fel som visade en föråldrad bild när du valde **Powered by Campaign**-anpassningsblocket i e-postredigeraren.
+* Ett problem som visade en föråldrad bild vid val av **Powered by Campaign** personaliseringsblock i e-postredigeraren.
 
 * Nätverkskommunikationen mellan klienten och servern har förbättrats.
 
 * Ett problem har korrigerats när för många arbetsflöden skapades i samma kampanj. Nu kan du inte skapa fler än 28 arbetsflöden. En varning visas.
 
-* Ett problem har korrigerats vid användning av **Ett urval kolumner** avstämningsalternativ i en **unionsarbetsflödesaktivitet**.
+* Ett problem som uppstod när **En markering med kolumner** avstämningsalternativ i **Union** arbetsflödesaktivitet.
 
 * Korrigerade ett kraschproblem i konsolen som kan inträffa när en skadad anrikningslista används i ett arbetsflöde. (NEO-18096)
 
 * Åtgärdade olika kraschproblem i konsolen som kan uppstå i arbetsflöden (NEO-18010, NEO-18032)
 
-* Korrigerade ett problem som medgav körning av en **extern signal**-arbetsflödesaktivitet även när den inaktiverades. (NEO-17524)
+* Ett problem som gjorde att en **Extern signal** arbetsflödesaktivitet även när den inaktiverades. (NEO-17524)
 
 * Ett problem har korrigerats när ett nytt schema skapades.
 
@@ -203,29 +203,29 @@ _17 februari 2020_
 
 * Korrigerade ett problem som förhindrade överföring av data till offentliga resurser om överföringskatalogen var en delad fjärrplats. (NEO-19361)
 
-* Ett problem som orsakade att **det tekniska arbetsflödet för att importera målgrupper från Adobe Experience Cloud** inte fungerade korrekt har åtgärdats. (NEO-18463)
+* Ett problem som orsakade **Importera målgrupper från Adobe Experience Cloud** det tekniska arbetsflödet misslyckas ständigt. (NEO-18463)
 
 * Korrigerade ett problem som förhindrade att leveranser skickades när mallar som importerats från Experience Manager användes. (NEO-17540)
 
 * Korrigerade ett fel som uppstod efter uppgraderingen till build 9032 och förhindrade instansen från att ansluta till FTP-servern via SSL-protokollet. (NEO-20498)
 
-* Ett problem som uppstod när en stor mängd data skulle tas bort, infogas eller uppdateras med aktiviteten **Uppdatera data** i ett arbetsflöde med ett FDA-schema som måldimension har åtgärdats. (NEO-13280)
+* Ett problem som uppstod när en stor mängd data skulle tas bort, infogas eller uppdateras med **Uppdatera data** i ett arbetsflöde med ett FDA-schema som måldimension. (NEO-13280)
 
-* Korrigerade ett problem som förhindrade att e-post skickades när det fanns Javascript-kod utanför HTML-innehållstaggen. (NEO-18628)
+* Ett problem som förhindrade att e-post skickades när det fanns Javascript-kod utanför innehållstaggen för HTML har åtgärdats. (NEO-18628)
 
 * Korrigerade ett fel som uppstod när spegelsidan skulle visas från leveransloggarna för ett skickat meddelande. (NEO-17976)
 
-* Ett problem som gjorde att **länken till sidan**-anpassningsblocket inte kunde visas på fliken **Textinnehåll** efter att du klickat på **Importera HTML** i en leverans har åtgärdats. (NEO-17568)
+* Ett problem som förhindrade **Länk till spegelsida** Personaliseringsblocket visas inte i **Textinnehåll** tabb efter klickning **Importera HTML** i en leverans. (NEO-17568)
 
 * Felmeddelandet som visas när du klickar på en länk till en spegelsida som har gått ut har klargjorts. (NEO-17340)
 
-* Ett problem som gjorde att vissa knappar inte kunde användas i **skärmen för att skapa**-data har åtgärdats.
+* Ett problem som gjorde att vissa knappar inte kunde användas i **Datadistribution** skärmen.
 
 * Ett problem som uppstod när en leveransaktivitet schemalades i en instans med Asien/Kolkata som tidszon har åtgärdats. (NEO-20001)
 
 * Ett fel visas nu när en leverans har ett tillhörighetskonfigurationsproblem.
 
-* Ett problem som visade ett felaktigt versionstaggnummer på menyn **Om** har korrigerats.
+* Ett problem som visade ett felaktigt versionstaggnummer i **Om** -menyn.
 
 * Korrigerade ett problem som uppstod när routningskontot skulle uppdateras från egenskaperna för en återkommande leverans i ett arbetsflöde. (NEO-18684)
 

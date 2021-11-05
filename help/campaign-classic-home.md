@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 48%
+ht-degree: 51%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 48%
 
 * **[Septemberversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
 
-* **[Frågor ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** och  **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> svar om Apples sekretesskydd för Apple MailHitta en första vägledning som svar på Apples meddelande om iOS 15
+* **[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)** och **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Som svar på Apple meddelande om iOS 15 hittar du en första vägledning
 
-* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](technotes/using/ims-updates.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter den** 30 juni 2021 **
+* **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](technotes/using/ims-updates.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 30 juni 2021 **
 
-* **[Ta bort felaktiga hårda ](delivery/using/update-bounce-qualification.md)**<br/> studsarLär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apples avbrott
+* **[Ta bort felaktiga hårda studsar](delivery/using/update-bounce-qualification.md)**<br/> Lär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apple driftstopp
 
-* **[Skydda era Campaign-](technotes/using/acc-config-updates.md)**<br/> instanserUppdatera till de senaste byggen för att säkra er Campaign-plattform
+* **[Skydda era Campaign-instanser](technotes/using/acc-config-updates.md)**<br/> Uppdatera till de senaste byggen för att säkra er Campaign-plattform
 
-* **[Uppdatera din Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integrationDen gamla autentiseringsfunktionen för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O.
+* **[Uppdatera integreringen med Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O.
 
 [Fler uppdateringar](rn/using/documentation-updates.md)
 

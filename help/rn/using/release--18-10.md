@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## version 18.10.6 – build 8985{#release-18-10-6-build-8985}
+## Version 18.10.6 – build 8985{#release-18-10-6-build-8985}
 
 12 juli 2019
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 * Förbättrade behörigheter för att köra säkerhetszonspaketet när ett internt konto används.
 * Ett problem som kunde orsaka fel i datorloggarna har korrigerats. (NEO-8978)
 
-## version 18.10.5 – build 8984{#release-18-10-5-build-8984}
+## Version 18.10.5 – build 8984{#release-18-10-5-build-8984}
 
 23 april 2019
 
@@ -39,7 +39,7 @@ ht-degree: 7%
 * 10 000 poster har tagits bort i heatmap-kartan för arbetsflöde för att åtgärda ett problem med saknade data. (NEO-12329)
 * Ett problem har korrigerats när alternativet Behåll alla ytterligare data från huvuduppsättningen användes i en arbetsflödesaktivitet för anrikning. (NEO-13291)
 
-## version 18.10.4 – build 8983{#release-18-10-4-build-8983}
+## Version 18.10.4 – build 8983{#release-18-10-4-build-8983}
 
 15 april 2019
 
@@ -52,13 +52,13 @@ ht-degree: 7%
 * I Analytics-integreringen är det nu tillåtet att hämta AAM segmentdata med tecknet %. (NEO-12025)
 * Korrigerade ett Tomcat-kraschproblem när push-meddelanden skickades med HTTP2. (NEO-12701)
 
-## version 18.10.3 – build 8981{#release-18-10-3-build-8981}
+## Version 18.10.3 – build 8981{#release-18-10-3-build-8981}
 
 29 januari 2019
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md)  eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Förbättringar**
 
@@ -76,13 +76,13 @@ ht-degree: 7%
 * Korrigerade ett problem med teckenigenkänning när push-meddelanden skickades till ett mobilprogram.
 * Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt konto med medelkälla.
 
-## version 18.10.2 – build 8978{#release-18-10-2-build-8978}
+## Version 18.10.2 – build 8978{#release-18-10-2-build-8978}
 
 6 december 2018
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Förbättringar**
 
@@ -98,20 +98,20 @@ ht-degree: 7%
 * Korrigerade ett problem med beräkningen av arbetsflödets varaktighet i Workflow HeatMap.
 
 
-## version 18.10 – build 8977{#release-18-10-build-8977}
+## Version 18.10 – build 8977{#release-18-10-build-8977}
 
 5 nov 2018
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. [Uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
 <table> 
  <thead> 
   <tr> 
-   <th> Funktion<br /> </th> 
+   <th> Funktionalitet<br /> </th> 
    <th> Beskrivning<br /> </th> 
   </tr> 
  </thead> 
@@ -121,17 +121,17 @@ ht-degree: 7%
    <td> Ett antal förbättringar har implementerats för push-meddelanden i Adobe Campaign:<br /> 
     <ul> 
      <li> <p>Spåra tysta meddelanden i iOS </p> </li> 
-     <li> <p>Skicka feedback vid registreringssamtal iOS</p> </li> 
-     <li> <p>Förbättra förberedelsehastigheten för iOS-leverans</p> </li> 
-    </ul> <p>Som en del av GCM-avskrivningen av Google tillåter nu Android V2-kopplingen bara anslutningar till FCM-servern.</p><p>Mer information finns i den <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">detaljerade dokumentationen</a>. Den manuella uppgraderingen till FCM finns i den här <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html">artikeln</a>. </p> </td> 
+     <li> <p>Skicka feedback vid registreringssamtal i iOS</p> </li> 
+     <li> <p>Snabbare färdigställande av iOS</p> </li> 
+    </ul> <p>Som en del av GCM-avskrivningen av Google tillåter nu Android V2-kopplingen bara anslutningar till FCM-servern.</p><p>Mer information finns i den <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">detaljerade dokumentationen</a>. Manuell uppgradering till FCM beskrivs i detta <a href="https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL Data Management-aktivitet<br /> </td> 
-   <td> <p>En ny datahanteringsarbetsflödesaktivitet har lagts till. Med aktiviteten <strong>SQL Data Management</strong> kan du skriva eller kopiera och klistra in dina egna SQL-skript för att skapa och fylla i arbetstabeller (endast FDA). </p> <p>Mer information finns i den <a href="../../workflow/using/sql-data-management.md">detaljerade dokumentationen</a>.</p></td> 
+   <td> <p>En ny datahanteringsarbetsflödesaktivitet har lagts till. The <strong>SQL Data Management</strong> kan du skriva eller kopiera och klistra in egna SQL-skript för att skapa och fylla i arbetstabeller (endast FDA). </p> <p>Mer information finns i den <a href="../../workflow/using/sql-data-management.md">detaljerade dokumentationen</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Arbetsflödesövervakning<br /> </td> 
-   <td> <p>Med nya Adobe Campaign Workflow HeatMap har plattformsadministratörerna en snabb grafisk representation av alla samtidiga arbetsflöden, som gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar den finns på <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
+   <td> <p>Med nya Adobe Campaign Workflow HeatMap har plattformsadministratörerna en snabb grafisk representation av alla samtidiga arbetsflöden, som gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar det finns i <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,7 +140,7 @@ ht-degree: 7%
 
 * Korrigerade ett säkerhetsproblem som kunde leda till sårbarheter för attacker med SSRF (Server Side Request Forgery) och DoS-attacker (denial of service). (NEO-11453)
 * Innehåll (spåra omdirigering, spegelsidor, undersökningar osv.) kommer nu att hanteras av Campaign med X-Robots-Tag: nocache-huvud. Detta förhindrar att innehållet indexeras av sökmotorer på Internet. (NEO-11101)
-* Korrigerade ett XTK-injektionsproblem i prenumerations-API (nms:subscription:Unsubscribe and nms:subscription:Subscribe).
+* Ett XTK-injektionsproblem i prenumerations-API har korrigerats (nms):subscription:Avbeställ prenumerationer och telefonnummer:subscription:Prenumerera).
 * Korrigerade ett XTK-injektionsproblem i webbprogrammet för avprenumeration.
 * Lösenord som inte visades på ett säkert sätt i vissa SMS-loggar har tagits bort.
 
@@ -149,7 +149,7 @@ ht-degree: 7%
 * API:er i Campaign Classic finns nu på en [dedikerad sida](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
 * PostgreSQL 10, Debian 9 och Teradata 16.20 stöds nu. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 * När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. Mer information finns i [detaljerad dokumentation](../../installation/using/file-res-management.md) (NEO-9868)
-* Alternativet **Formeln för datumberäkning** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktmeddelandeleverans. (NEO-9792)
+* The **Formel för datumberäkning** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktleverans. (NEO-9792)
 * Domännamnshanteringen har förbättrats för cookie-spårning och webbprogram. Mer information finns i avsnittet &quot;Technical Evolutions&quot; nedan.
 * Importen av Adobe Marketing Cloud delade resurser på en leverans- eller landningssida har förbättrats vad gäller säkerhet och prestanda.
 * Det finns en ny kryssruta i det externa kontot för mobilkanaler som gör att du kan aktivera detaljerade SMPP-spår i loggfilen, vilket gör att dessa utdata är direkt tillgängliga från Adobe Campaign-gränssnittet.
@@ -170,7 +170,7 @@ Hantering av domännamn
 
 Domännamnshanteringen har förbättrats för cookie-spårning och webbprogram.
 
-Nu stöds alla domännamn på andrahandsnivå med två bokstäver som standard (till exempel .aa.com). För mer komplexa domännamn (t.ex. domäner på andrahandsnivå med tre bokstäver som .com.au) måste du lägga till dem i alternativet **cookieDomains** för serverConf (under taggen redirection). Här är ett exempel:
+Nu stöds alla domännamn på andrahandsnivå med två bokstäver som standard (till exempel .aa.com). För mer komplexa domännamn (t.ex. domäner på andrahandsnivå med tre bokstäver som .com.au) måste du lägga till dem i **cookieDomains** alternativet för serverConf (under taggen redirection). Här är ett exempel:
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -197,8 +197,8 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 
 **Felkorrigeringar**
 
-* Korrigerade ett fel som förhindrade att filer från arbetsflödesaktiviteten **Webbhämtning** hämtades. (NEO-11105)
-* Korrigerade ett fel som ibland lämnade arbetsflödet **Skicka indikatorer och kampanjattribut** i feltillstånd (NEO-10820).
+* Ett fel som förhindrade filer från **Webbnedladdning** arbetsflödesaktiviteten hämtas. (NEO-11105)
+* Ett fel som ibland lämnade **Skicka indikatorer och kampanjattribut** arbetsflödet i feltillstånd (NEO-10820).
 * Korrigerade ett problem som tog bort mottagarlistan som skapades efter att Listuppdateringsaktiviteten kördes i ett arbetsflöde. (NEO-11696)
 * Korrigerade ett problem som felaktigt visade kampanjerna en månad framåt i Campaign-kalendern (på en japansk instans). (NEO-11445)
 * Ett problem som gjorde att Analytics-konfigurationen inte kunde visas på fliken Web Analytics i leveransegenskaperna har korrigerats. (NEO-11619)
@@ -217,7 +217,7 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Ett problem som uppstod när ett externt mobilkanalskonto konfigurerades med den utökade allmänna SMPP-anslutningen har åtgärdats: om du angav att använda olika parametrar för mottagaren skulle sändaren felaktigt använda dessa parametrar i stället för sina egna parametrar.
 * Korrigerade ett problem som gjorde att schemalagda leveranser misslyckades när en frekvens för tryckregeln angavs, eftersom leveranserna hela tiden räknades om efter den första skiljedomsförfarandet. (NEO-10016)
 * Korrigerade ett problem som gjorde att IIS-webbservern kraschade under programpoolens återvinningsprocess (i biblioteket nlsrvmod.dll). (NEO-10862)
-* Korrigerade ett problem som kunde förhindra sökning av en mottagare på skärmen **Profiler och Mål**. (NEO-8228)
+* Korrigerat ett problem som kunde förhindra sökning av en mottagare i **Profiler och mål** skärm. (NEO-8228)
 * Korrigerade ett problem som kunde leda till ett timeout-fel vid åtkomst till mappen Händelsehistorik i ett stort antal poster. (NEO-11738)
 * Korrigerade ett problem som kunde leda till att mottagare av LINE-leverans felaktigt returnerades som &quot;Onåbar&quot;. (NEO-10833)
 * Ett problem har korrigerats när en arbetsflödesfråga kördes med en extra kolumn i Oraclet. (NEO-11615)
@@ -237,6 +237,6 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Korrigerade ett problem som ledde till att URL:er kodades som spårade URL:er i de ytterligare parametrarna för en leverans av ett push-meddelande från Android. (NEO-11468)
 * Korrigerade ett skriptfel som uppstod i rapporten för användaraktiviteter när parametrarna angavs till&quot;Ett dagintervall&quot; och&quot;Öppnar&quot;. (NEO-11655)
 * Korrigerade ett problem som uppstod vid anslutning till servern med mellanlagring eller till meddelandecentret via en autentiserad webbproxy. (NEO-11309)
-* Korrigerade ett Oracle-fel som uppstod när en ny leveranskomposition sparades efter att ett element i ett specifikt schema **hade valts baserat på en SQL-vy**. (NEO-11682)
+* Korrigerade ett Oracle-fel som inträffade när en ny leveranskomposition sparades efter att ett element i ett specifikt schema markerats **baserat på en SQL-vy**. (NEO-11682)
 * Korrigerade ett problem som ledde till att genererade avvisningsfiler som innehöll falska positiv information vid bearbetning av en ZIP-fil som innehåller en CSV-fil via en inläsningsfilaktivitet med alternativet Dekomprimering.
 * xtkjoblog rensas nu av rensningen.

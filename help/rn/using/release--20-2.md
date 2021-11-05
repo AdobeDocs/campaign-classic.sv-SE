@@ -17,7 +17,7 @@ ht-degree: 86%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) version 20.2.5 – build 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/limited_2.png) Version 20.2.5 – build 9188 {#release-20-2-5-build-9188}
 
 _15 april 2021_
 
@@ -40,13 +40,13 @@ _31 mars 2021_
 * Ett problem som gjorde att pågående arbetsflöden stoppades av den dagliga omstarten av wfserver har åtgärdats. (NEO-30047)
 * Korrigerade ett säkerhetsproblem med API-anrop från icke-adminanvändare när de försökte synkronisera mallar i Adobe Experience Manager. (NEO-32389, NEO-23487)
 * Ett problem som gjorde att konsolen kraschade när en leveransdialogruta stängdes för en leverans som skapats med från en mall har åtgärdats. (NEO-31547)
-* Ett problem som uppstod när en leverans skapades och sparades på fliken **Mål och arbetsflöde** i en kampanj har korrigerats: förhandsgranskningen misslyckas med följande fel. (NEO-29440)
+* Ett problem som uppstod när en leverans skapades och sparades i **Målgruppsanpassning och arbetsflöde** fliken för en kampanj: förhandsgranskningen misslyckas med följande fel. (NEO-29440)
 * Korrigerade ett problem med att Tomcat 8.5 skickade ogiltiga svar som orsakade fel i transaktionsmeddelandeloggar. (NEO-30858)
 * Ett regressionsproblem som orsakade minnesfel i extern trådhantering och påverkade prestanda har åtgärdats.
 * Korrigerade ett problem som kunde göra att faktureringsarbetsflödet misslyckades när en anpassad målmappning användes. Primärnyckeln för det anpassade schemat lagras i kolumnen&quot;sourceId&quot; som bara tillåter heltalsvärden. Det tillåter nu både heltal och strängvärden. (NEO-25914, NEO-28146)
 * Korrigerade en regression som förhindrade användning av vissa komponenter i konsolen, som datumväljaren och bildhantering i leveranser. (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – build 9187 {#release-20-2-4-build-9187}
 
 _15 april 2021_
 
@@ -65,7 +65,7 @@ _22 december 2020_
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**.  [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den **september 2021**. Värdmiljöer drar nytta av ett tillägg till och med den **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 
 **Förbättringar**
@@ -85,20 +85,20 @@ _22 december 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Ny version av kontrollpanelen i oktober** med domänkonfiguration som använder CNAME och nya funktioner för databasövervakning. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv).
 
-## ![](assets/do-not-localize/red_2.png) version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – build 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
 * Korrigerade en regression som gjorde att leveransförberedelser blockerades på grund av en felfunktion på leveransdelen, vilket ledde till överbelastning av minnet. (NEO-27346)
 * Korrigerade ett problem med en efteruppgradering som stängde av Apache och webbservern innan webbapplikationens publicering. (NEO-27155)
-* Korrigerade en regression av HTML-mallhantering som ledde till att URL:er för spårning blev synliga på grund av en feltolkning av flikarna. (NEO-25909)
+* Korrigerade en regression i mallhanteringen i HTML som ledde till att URL:er blev synliga på grund av en feltolkning av flikarna. (NEO-25909)
 * Korrigerade ett problem med arbetsflödet för databasrensning som kunde sluta fungera på grund av en ohanterad datakälla. (NEO-23160 och NEO-23364)
 * Arbetsflödet för rensning tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
 * Korrigerade en regression som förhindrade dig från att ändra det interna namnet på ett externt konto. (NEO-27323)
 * Korrigerade en regression under efteruppgraderingen som orsakade en felaktig start av lserver (felloggar).
 * Uppdateringshanteringen för delat minne har förbättrats. De ytterligare steg som krävdes i 20.2 behövs inte längre.
 
-## ![](assets/do-not-localize/red_2.png) version 20.2.2 – build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Version 20.2.2 – build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
@@ -123,7 +123,7 @@ _22 juli 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) version 20.2.1 – build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 

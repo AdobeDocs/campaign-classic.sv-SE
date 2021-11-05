@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
+source-git-commit: 9d019109e51f4c579ef775e17ccbb10f7e30a2e2
 workflow-type: tm+mt
 source-wordcount: '2006'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 95%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/red_2.png) version 20.3.3 – build 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) Version 20.3.3 – build 9234 {#release-20-3-3-build-9234}
 
 _11 januari 2021_
 
 * Korrigerade ett säkerhetsproblem för att förstärka skyddet mot problem med SSRF (Server Side Request Forgery). (NEO-27777)
 * Korrigerade ett regressionsproblem relaterat till genereringsprocessen av leveransloggar som kunde få MTA-processen att krascha.
 
-## ![](assets/do-not-localize/red_2.png) version 20.3.1 – build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
 
@@ -32,7 +32,7 @@ _27 oktober 2020_
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den 18 augusti 2021 **.** Värdmiljöer drar nytta av ett tillägg till och med den 30 november 2021 **.** Kontakta Adobe kundtjänst om du är kund på plats eller som hybridkund för att förlänga supporten till den 30 november 2021. Du måste ange [AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 
 **Nyheter**
