@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För ut
 1. Säkerhetskopiera utvecklingsmiljödatabasen.
 1. Stoppa alla Adobe Campaign-processer i utvecklingsinstansen.
 1. Säkerhetskopiera produktionsmiljödatabasen och återställ den som en utvecklingsmiljö.
-1. Innan du startar Adobe Campaign-tjänsterna kör du **frysinstansen.js**-autentiseringsskriptet som gör att du kan rensa databasen för alla objekt som kördes när säkerhetskopieringen startades.
+1. Innan du startar Adobe Campaign-tjänsterna kör du **ezeInstance.js** autentiseringsskript som gör att du kan rensa databasen för alla objekt som kördes när säkerhetskopieringen startades.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För ut
 
    >[!NOTE]
    >
-   >Kommandot startar som standard i läget **dry** och visar alla begäranden som har utförts av det kommandot, utan att starta dem. Använd **run** i kommandot för att köra autentiseringsbegäranden.
+   >Kommandot startar som standard i **torr** och visar alla förfrågningar som har utförts av det kommandot, utan att starta dem. Om du vill utföra autentiseringsbegäranden använder du **run** i kommandot.
 
 1. Kontrollera att säkerhetskopiorna är korrekta genom att försöka återställa dem. Se till att du har tillgång till din databas, dina tabeller, dina data osv.
 1. Testa migreringsproceduren i utvecklingsmiljön.
 
-   De fullständiga procedurerna beskrivs i avsnittet [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
+   De fullständiga förfarandena beskrivs i [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) -avsnitt.
 
 1. Om migreringen av utvecklingsmiljön lyckas kan du migrera produktionsmiljön.
 
@@ -50,13 +50,13 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För ut
 
 >[!NOTE]
 >
->Med Adobe Campaign-uppdateringskommandot (**postupgrade**) kan du synkronisera resurser och uppdateringsscheman samt databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats kan du med kommandot **postupgrade** identifiera om synkroniseringen genererar fel eller varningar.
+>Adobe Campaign-uppdateringskommandot (**postuppgradering**) kan du synkronisera resurser och uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
 
 ## Migreringsverktyg {#migration-tools}
 
 Med olika alternativ kan du mäta effekten av en migrering och identifiera potentiella problem. Dessa alternativ ska utföras:
 
-* i kommandot **config**:
+* i **config** kommando:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,11 +70,11 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 
 >[!NOTE]
 >
->Du måste använda alternativet **-instance:`<instanceame>`**. Vi rekommenderar inte att du använder alternativet **-allinstances**.
+>Du måste använda **-instance:`<instanceame>`** alternativ. Vi rekommenderar inte att du använder **-allinstances** alternativ.
 
 ### -showCustomEntities och -showDeletedEntities, alternativ {#showcustomentities-and--showdeletedentities-options}
 
-* Alternativet **-showCustomEntities** visar listan över alla objekt som inte är standard:
+* The **-showCustomEntities** visas en lista med alla objekt som inte är standard:
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -86,7 +86,7 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* Alternativet **-showDeletedEntities** visar listan med alla standardobjekt som saknas i databasen eller filsystemet. För varje objekt som saknas anges sökvägen.
+* The **-showDeletedEntities** visas en lista med alla standardobjekt som saknas i databasen eller filsystemet. För varje objekt som saknas anges sökvägen.
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -137,16 +137,16 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> Det här biblioteket får inte användas.<br /> </td> 
   </tr> 
   <tr> 
-   <td> logon(<br />) </td> 
+   <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Varning<br /> </td> 
    <td> Den här anslutningsmetoden får inte längre användas. Se <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Identifierade webbprogram</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall(<br /> </td> 
+   <td> new SoapMethodCall()<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Varning<br /> </td> 
-   <td> Den här funktionen stöds bara när den används i JavaScript-kod som körs från en säkerhetszon i läget <strong>sessionTokenOnly</strong>.<br /> </td> 
+   <td> Den här funktionen stöds bara när den används i JavaScript-kod som körs från en säkerhetszon i <strong>sessionTokenOnly</strong> läge.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -164,7 +164,9 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> crmDeploymentType="lokal"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Den här typen av distribution stöds inte längre. Distributionstypen för Office 365 och lokal Microsoft CRM-anslutning har nu tagits bort</a>. Information om hur du ändrar till Web API-distribution finns i <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webbprogram</a>.<br /> </td>
+   <td> Den här typen av distribution stöds inte längre. Distributionstypen för Office 365- och On-Local Microsoft CRM Connector har nu tagits bort. 
+   </br>Om du använder någon av de här inaktuella distributionstyperna i ett externt konto bör det externa kontot tas bort och du bör sedan köra <b>postuppgradering</b> -kommando. 
+   </br>Information om hur du ändrar till Web API-distribution finns i <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webbprogram</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

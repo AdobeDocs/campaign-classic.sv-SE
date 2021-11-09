@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Kontrollregler{#control-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Kontrollregler för analys och skiljeförfarande {#analysis-and-arbitration-control-rules}
 
@@ -34,7 +34,7 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 
 ## Skapa en kontrollregel {#creating-a-control-rule}
 
-Det går att skapa nya kontrollregler som passar dina behov. Det gör du genom att skapa en **[!UICONTROL Control]**-typologiregel och ange kontrollformeln i SQL på fliken **[!UICONTROL Code]**.
+Det går att skapa nya kontrollregler som passar dina behov. Om du vill göra det skapar du en **[!UICONTROL Control]** typologiregel och ange kontrollformeln i SQL i **[!UICONTROL Code]** -fliken.
 
 **Exempel:**
 
@@ -42,11 +42,11 @@ I följande exempel ska vi skapa en regel som förhindrar att ett SMS-erbjudande
 
 Använd följande steg:
 
-1. Skapa en **[!UICONTROL Control]**-typologiregel. Välj en **[!UICONTROL Warning]**-varningsnivå.
+1. Skapa en **[!UICONTROL Control]** typologiregel. Välj en **[!UICONTROL Warning]** varningsnivå.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. På fliken **[!UICONTROL Code]** anger du det skript som ska använda det önskade tröskelvärdet, som visas nedan:
+1. I **[!UICONTROL Code]** anger du det skript som ska använda det önskade tröskelvärdet enligt nedan:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,6 +70,6 @@ Använd följande steg:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   När analysen är klar är knappen **[!UICONTROL Confirm delivery]** inte tillgänglig.
+   När analysen är klar ska **[!UICONTROL Confirm delivery]** kommer inte att vara tillgänglig.
 
    ![](assets/campaign_opt_create_control_06.png)

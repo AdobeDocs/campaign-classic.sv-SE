@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 17%
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 # Om kampanjtypologier{#about-campaign-typologies}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera och övervaka leveransen. För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.
 
@@ -29,10 +29,10 @@ Kampanjoptimering är Adobe Campaign-modulen som gör att ni kan styra, filtrera
 
 Med Adobe Campaign kan du utforma och tillämpa fyra typologiregler:
 
-* **Filtreringsregler** som gör att du kan utesluta delar av målet baserat på villkor. Mer information finns i [Filtreringsregler](filtering-rules.md).
-* **Tryckreglage** som gör att man kan kontrollera reklamtrötthet. Mer information finns i [Tryckregler](pressure-rules.md).
-* **Kapacityrregler** som gör att du kan begränsa lasterna för att garantera optimala bearbetningsförhållanden. Mer information finns i [Kontrollera kapacitet](consistency-rules.md#controlling-capacity).
-* **Med** kontrollregler kan du kontrollera giltigheten för meddelanden innan de skickas. Mer information finns i [Kontrollregler](control-rules.md).
+* **Filtrering** regler som gör att du kan utesluta delar av målet baserat på kriterier. Mer information finns i [Filtreringsregler](filtering-rules.md).
+* **Tryck** regler som gör att ni kan kontrollera reklamtrötthet. Mer information finns i [Tryckregler](pressure-rules.md).
+* **Kapacitet** regler som gör att du kan begränsa lasterna för att garantera optimala bearbetningsförhållanden. Mer information finns i [Kontrollera kapacitet](consistency-rules.md#controlling-capacity).
+* **Kontroll** regler som gör att du kan kontrollera giltigheten för meddelanden innan de skickas. Mer information finns i [Kontrollregler](control-rules.md).
 
 När typologireglerna har skapats grupperas de i kampanjtypologier som refereras i leveranser. Se [Använda typologier](#applying-typologies).
 
@@ -40,7 +40,7 @@ När typologireglerna har skapats grupperas de i kampanjtypologier som refereras
 
 En kampanjtypologi kan innehålla flera [typologiregler](#typology-rules), men en leverans kan bara referera till en typologi.
 
-På fliken **[!UICONTROL Rules]** kan du lägga till, ta bort eller visa de typologiregler som ska användas.
+The **[!UICONTROL Rules]** kan du lägga till, ta bort eller visa de typologiregler som ska användas.
 
 ![](assets/campaign_opt_rules_tab.png)
 
@@ -50,18 +50,18 @@ Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
 
 1. Skapa typologiregler.
 
-   Typologiregler finns i noden **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**.
+   Typologiregler finns i **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** nod.
 
    Olika regler som är tillgängliga i Campaign beskrivs i följande avsnitt: [regler för försäljningstryck](pressure-rules.md), [kapacitetsregler](consistency-rules.md#controlling-capacity), [kontrollregler](control-rules.md) och [filtreringsregler](filtering-rules.md).
 
 1. Skapa en typologi och referera till reglerna som du skapade i den.
 
-   Typologier nås via noden **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
+   Typologier nås via **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** nod.
 
 1. Konfigurera leveransen för att använda den typologi du skapade. Mer information om detta finns i [det här avsnittet](applying-rules.md#applying-a-typology-to-a-delivery).
 1. Testa och kontrollera beteendet med kampanjsimuleringar. Mer information om kampanjsimuleringar finns i [det här avsnittet](campaign-simulations.md).
 
-Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka uteslutningar. Exempel på användningsområden för typologiregler för tryck finns på [den här sidan](pressure-rules.md#use-cases-on-pressure-rules).
+Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka uteslutningar. Exempel på användningsområden för regler för trycktypologi finns i [den här sidan](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## Självstudievideor {#typologies-video}
 
@@ -73,12 +73,11 @@ I den här videon förklaras hur du implementerar trötthetshantering i Adobe Ca
 
 ### Konfigurera trötthetshantering med fördefinierade filter
 
-Trötthetshanteringen styr frekvens och antal meddelanden för att undvika överbelastning av mottagaren. Om du inte har kampanjoptimeringsmodulen i din kampanjinstans kan du konfigurera ett fördefinierat filter som filtrerar målpopulationen efter antalet mottagna meddelanden
-I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic med hjälp av filter.
+Trötthetshanteringen styr frekvens och antal meddelanden för att undvika överbelastning av mottagaren. Om du inte har kampanjoptimeringsmodulen i din kampanjinstans kan du konfigurera ett fördefinierat filter som filtrerar målpopulationen efter antalet meddelanden som tas emot I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic med hjälp av filter.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Ytterligare utbildningsvideor för Campaign finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
 **Relaterat ämne**
 
