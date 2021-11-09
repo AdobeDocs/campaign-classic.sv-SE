@@ -3,7 +3,7 @@ product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
+source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 4%
@@ -48,7 +48,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 ## Hur uppdaterar jag?
 
-Du måste uppgradera till Campaign 21.1.3 (eller mer) **före den 1 mars 2022**.
+Du måste uppgradera till Campaign 21.1.3 (eller mer) **före augusti 2022**.
 
 Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen. Du kan sedan använda [Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md).
 
