@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
 
-Läs mer om Campaign Explorer och navigeringshierarkin [i det här avsnittet](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Läs mer om Campaign Explorer och navigeringshierarki [i det här avsnittet](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-De typer av mappar som används i navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree**-schemat.
+De typer av mappar som används i navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree** schema.
 
 XML-dokumentet är strukturerat på följande sätt:
 
@@ -45,9 +45,9 @@ XML-dokumentet är strukturerat på följande sätt:
 </navtree>
 ```
 
-XML-dokumentet innehåller rotelementet **`<navtree>`** med attributen **name** och **namespace** för att ange dokumentnamnet och namnutrymmet. Namnet och namnutrymmet utgör dokumentets ID-nyckel.
+XML-dokumentet innehåller **`<navtree>`** rotelementet med **name** och **namespace** attribut för att ange dokumentnamnet och namnutrymmet. Namnet och namnutrymmet utgör dokumentets ID-nyckel.
 
-Programmets globala kommandon deklareras i dokumentet från elementet **`<commands>`**.
+Programmets globala kommandon deklareras i dokumentet från **`<commands>`** -element.
 
 Deklarationen av filtyper är strukturerad i dokumentet med följande element: **`<model>`** och **`<nodemodel>`**.
 
@@ -55,7 +55,7 @@ Deklarationen av filtyper är strukturerad i dokumentet med följande element: *
 
 Med ett globalt kommando kan du starta ett funktionsmakro. Den här åtgärden kan vara ett indataformulär eller ett SOAP-anrop.
 
-Globala kommandon är tillgängliga på huvudmenyn **[!UICONTROL Tools]**.
+Globala kommandon är tillgängliga från huvudsidan **[!UICONTROL Tools]** -menyn.
 
 Kommandokonfigurationsstrukturen är följande:
 
@@ -80,24 +80,24 @@ Kommandokonfigurationsstrukturen är följande:
 </commands>
 ```
 
-Beskrivningen av ett globalt kommando anges i **`<command>`**-elementet med följande egenskaper:
+Beskrivningen av ett globalt kommando anges i **`<command>`** element med följande egenskaper:
 
-* **namn**: kommandots interna namn: namnet måste anges och vara unikt
+* **name**: kommandots interna namn: namnet måste anges och vara unikt
 * **label**: kommandots etikett.
 * **desc**: beskrivning som visas från huvudskärmens statusfält.
 * **formulär**: formulär som ska startas: det värde som ska anges är inmatningsformulärets identifieringsnyckel (t.ex. &quot;cus:mottagare&quot;)
-* **rättigheter**: lista med namngivna rättigheter (avgränsade med kommatecken) som tillåter åtkomst till det här kommandot. Listan över tillgängliga rättigheter finns i mappen **[!UICONTROL Administration > Access management > Named rights]**.
+* **rättigheter**: lista med namngivna rättigheter (avgränsade med kommatecken) som tillåter åtkomst till det här kommandot. Listan över tillgängliga rättigheter finns på **[!UICONTROL Administration > Access management > Named rights]** mapp.
 * **promptLabel**: visar en bekräftelseruta innan kommandot körs.
 
-Ett **`<command>`**-element kan innehålla **`<command>`**-underelement. I det här fallet kan du med det överordnade elementet visa en undermeny som består av dessa underordnade element.
+A **`<command>`** element kan innehålla **`<command>`** delelement. I det här fallet kan du med det överordnade elementet visa en undermeny som består av dessa underordnade element.
 
 Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
-Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;**-värdet som finns i kommandoetiketten.
+Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;** i kommandoetiketten.
 
-Den valfria förekomsten av taggen **`<soapcall>`** med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. Mer information om SOAP API finns i [Kampanj-JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Den valfria närvaron av **`<soapcall>`** -taggen med indataparametrarna definierar anropet till en SOAP-metod som ska köras. Mer information om SOAP API finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
-Formulärkontexten kan uppdateras vid initieringen från taggen **`<enter>`**. Mer information om den här taggen finns i dokumentationen om indataformulär.
+Formulärkontexten kan uppdateras vid initiering från **`<enter>`** -tagg. Mer information om den här taggen finns i dokumentationen om indataformulär.
 
 **Exempel**:
 
@@ -107,7 +107,7 @@ Formulärkontexten kan uppdateras vid initieringen från taggen **`<enter>`**. M
    <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
    ```
 
-   Ett kortkommando deklareras för&quot;I&quot;-tecknet om **&amp;** finns i kommandoetiketten.
+   Ett kortkommando deklareras för&quot;I&quot;-tecknet om det finns **&amp;** i kommandoetiketten.
 
 * Exempel på en undermeny med en avgränsare:
 
@@ -157,33 +157,33 @@ Konfigurationsstrukturen för mapptypen är följande:
 </model>
 ```
 
-Mapptypsdeklarationen måste anges under ett **`<model>`**-element. Med det här elementet kan du definiera en hierarkisk organisation som visas på menyn **[!UICONTROL Add new folder]**. Ett **`<model>`**-element måste innehålla **`<nodemodel>`**-element och andra **`<model>`**-element.
+Mapptypsdeklarationen måste anges under en **`<model>`** -element. Med det här elementet kan du definiera en hierarkisk organisation som visas från **[!UICONTROL Add new folder]** -menyn. A **`<model>`** elementet måste innehålla **`<nodemodel>`** element och andra **`<model>`** -element.
 
-Attributen **name** och **label** fyller i elementets interna namn och etiketten som visas på menyn **[!UICONTROL Add new folder]**.
+The **name** och **label** attribut fyller i elementets interna namn och etiketten som visas i **[!UICONTROL Add new folder]** -menyn.
 
-**`<nodemodel>`**-elementet innehåller beskrivningen av mapptypen med följande egenskaper:
+The **`<nodemodel>`** -elementet innehåller en beskrivning av mapptypen med följande egenskaper:
 
-* **namn**: internt namn
-* **label**: etikett som används på  **[!UICONTROL Add new folder]** menyn och som standardetikett när du infogar en mapp.
+* **name**: internt namn
+* **label**: etikett som används i **[!UICONTROL Add new folder]** och som standardetikett när du infogar en mapp.
 * **img**: standardbild vid mappinfogning.
 * **hiddenCommands**: lista med kommandon (avgränsade med kommatecken) som ska maskeras. Möjliga värden: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; och &quot;adbdup&quot;.
-* **newFolderShortCuts**: lista med kortkommandon på modeller (**`<nodemodel>`** avgränsade med kommatecken) när mappar skapas.
-* **insertRight**,  **editRight**,  **deleteRight**: behörighet att infoga, redigera och ta bort mappar.
+* **newFolderShortCuts**: lista med kortkommandon på modeller (**`<nodemodel>`** avgränsade med kommatecken) när du skapar mappar.
+* **insertRight**, **editRight**, **deleteRight**: behörighet att infoga, redigera och ta bort mappar.
 
-**`<view>`**-elementet under **`<nodemodel>`**-elementet innehåller konfigurationen för listan som är associerad med vyn. Schemat för listan anges i **schema**-attributet för **`<view>`**-elementet.
+The **`<view>`** -element under **`<nodemodel>`** -elementet innehåller konfigurationen för listan som är associerad med vyn. Schemat för listan anges i **schema** attributet för **`<view>`** -element.
 
-Om du vill redigera posterna i listan används indataformuläret med samma namn som listschemat implicit. **type**-attributet i **`<view>`**-elementet påverkar visningen av formuläret. Möjliga värden är:
+Om du vill redigera posterna i listan används indataformuläret med samma namn som listschemat implicit. The **type** på **`<view>`** -elementet påverkar hur formuläret visas. Möjliga värden är:
 
 * **listdet**: visar formuläret längst ned i listan.
-* **lista**: visar listan ensam. Formuläret öppnas genom att man dubbelklickar eller via&quot;Öppna&quot; i menyn när man väljer listan.
+* **list**: visar listan ensam. Formuläret öppnas genom att man dubbelklickar eller via&quot;Öppna&quot; i menyn när man väljer listan.
 * **formulär**: visar ett skrivskyddat formulär.
 * **editForm**: visar ett formulär i redigeringsläge.
 
 >[!NOTE]
 >
->Namnet på indataformuläret kan överladdas genom att du anger attributet **form** i **`<view>`**-elementet.
+>Namnet på indataformuläret kan överladdas genom att du anger **formulär** i **`<view>`** -element.
 
-Standardkonfigurationen för listkolumnerna anges via elementet **`<columns>`**. En kolumn deklareras i ett **`<node>`**-element som innehåller **xpath**-attributet med fältet som ska refereras i schemat som dess värde.
+Standardkonfigurationen för listkolumnerna anges via **`<columns>`** -element. En kolumn deklareras på en **`<node>`** elementet som innehåller **xpath** attribut med fältet som ska refereras i schemat som dess värde.
 
 **Exempel**: en mapptypdeklaration i schemat &quot;nms:receive&quot;.
 
@@ -230,7 +230,7 @@ Filtrering och sortering kan användas när listan läses in:
 
 Med ett kortkommando kan du starta en åtgärd när du väljer listan. Åtgärden kan vara ett indataformulär eller ett SOAP-anrop.
 
-Kommandon är tillgängliga på menyn **[!UICONTROL Action]** i listan eller på den associerade menyknappen.
+Kommandon är tillgängliga via **[!UICONTROL Action]** menyn för listan eller den tillhörande menyknappen.
 
 Kommandokonfigurationsstrukturen är följande:
 
@@ -249,28 +249,28 @@ Kommandokonfigurationsstrukturen är följande:
 </nodeModel>
 ```
 
-Beskrivningen av ett kommando anges i **`<command>`**-elementet med följande egenskaper:
+Beskrivningen av ett kommando anges på **`<command>`** element med följande egenskaper:
 
-* **namn**: kommandots interna namn: namnet måste anges och vara unikt.
+* **name**: kommandots interna namn: namnet måste anges och vara unikt.
 * **label**: kommandots etikett.
 * **desc**: beskrivning som visas från huvudskärmens statusfält.
 * **formulär**: formulär som ska startas: det värde som ska anges är inmatningsformulärets identifieringsnyckel (t.ex. &quot;cus:mottagare&quot;).
-* **rättigheter**: lista med namngivna rättigheter (avgränsade med kommatecken) som tillåter åtkomst till det här kommandot. Listan över tillgängliga rättigheter finns i mappen **[!UICONTROL Administration > Access management > Named rights]**.
+* **rättigheter**: lista med namngivna rättigheter (avgränsade med kommatecken) som tillåter åtkomst till det här kommandot. Listan över tillgängliga rättigheter finns på **[!UICONTROL Administration > Access management > Named rights]** mapp.
 * **promptLabel**: visar en bekräftelseruta innan kommandot körs
 * **monoSelection**: tvingar enval (flerval som standard).
 * **refreshView**: Tvingar att läsa in listan igen efter att kommandot har körts.
 * **enabledIf**: aktiverar kommandot beroende på vilket uttryck som anges.
 * **img**: anger en bild som ger åtkomst till kommandot från listverktygsfältet.
 
-Ett **`<command>`**-element kan innehålla **`<command>`**-underelement. I det här fallet kan du med det överordnade elementet visa en undermeny som består av dessa underordnade element.
+A **`<command>`** element kan innehålla **`<command>`** delelement. I det här fallet kan du med det överordnade elementet visa en undermeny som består av dessa underordnade element.
 
 Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
-Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;**-värdet som finns i kommandoetiketten.
+Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;** i kommandoetiketten.
 
-Den valfria förekomsten av taggen **`<soapcall>`** med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. Mer information om SOAP API:er finns i [Kampanj-JSAPI-dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Den valfria närvaron av **`<soapcall>`** -taggen med indataparametrarna definierar anropet till en SOAP-metod som ska köras. Mer information om SOAP API:er finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
-Formulärkontexten kan uppdateras vid initieringen via taggen **`<enter>`**. Mer information om den här taggen finns i dokumentationen till indataformuläret.
+Formulärkontexten kan uppdateras vid initieringen via **`<enter>`** -tagg. Mer information om den här taggen finns i dokumentationen till indataformuläret.
 
 **Exempel**:
 
@@ -296,7 +296,7 @@ Det finns två typer av mapphanteringsåtgärder:
 1. Mappen är en vy: I listan visas alla poster som är associerade med schemat, med möjlighet till systemfiltrering som anges i mappegenskaperna.
 1. Mappen är länkad: posterna i listan filtreras implicit på mapplänken.
 
-För en länkad mapp måste attributet **folderLink** för **`<nodemodel>`**-elementet fyllas i. Det här attributet innehåller namnet på länken i mappen som är konfigurerad i dataschemat.
+För en länkad mapp visas **folderLink** på **`<nodemodel>`** -elementet måste fyllas i. Det här attributet innehåller namnet på länken i mappen som är konfigurerad i dataschemat.
 
 Exempel på deklaration av en länkad mapp i dataschemat:
 
@@ -304,7 +304,7 @@ Exempel på deklaration av en länkad mapp i dataschemat:
 <element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-Konfigurationen för **`<nodemodel>`** på länken för mappen med namnet &quot;folder&quot; är följande:
+Konfigurationen av **`<nodemodel>`** på länken till mappen &quot;folder&quot; är följande:
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"

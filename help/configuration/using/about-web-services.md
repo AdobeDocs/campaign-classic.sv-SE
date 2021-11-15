@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 4%
+source-wordcount: '655'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det
 >[!IMPORTANT]
 >
 >Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+>En lista över alla API:er med fullständig beskrivning finns i [denna dedikerade dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Förhandskrav {#prerequisites}
 
@@ -41,7 +41,7 @@ Innan du använder Adobe Campaign API:er måste du känna till följande:
 Adobe Campaign använder två typer av API:er:
 
 * API:er för allmän dataåtkomst för att fråga efter datamodelldata. Se [Dataorienterade API:er](../../configuration/using/data-oriented-apis.md).
-* Affärsspecifika API:er där du kan agera på varje objekt: leveranser, arbetsflöden, prenumerationer osv. Se [Affärsorienterade API:er](../../configuration/using/business-oriented-apis.md).
+* Affärsspecifika API:er där du kan agera på varje objekt: leveranser, arbetsflöden, prenumerationer osv. Se [Verksamhetsorienterade API:er](../../configuration/using/business-oriented-apis.md).
 
 Om du vill utveckla API:er och interagera med Adobe Campaign måste du känna till datamodellen. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [Beskrivning av modellen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
@@ -92,13 +92,13 @@ Mer information finns i [ExecuteQuery (xtk:queryDef)](../../configuration/using/
 </SOAP-ENV:Envelope>
 ```
 
-`<soap-env:envelope>`-elementet är det första elementet i meddelandet som representerar SOAP-kuvertet.
+The `<soap-env:envelope>` är det första elementet i meddelandet som representerar SOAP-kuvertet.
 
-`<soap-env:body>`-elementet är det första underordnade elementet i omslaget. Den innehåller beskrivningen av meddelandet, dvs. innehållet i frågan eller svaret.
+The `<soap-env:body>` är det första underordnade elementet i omslaget. Den innehåller beskrivningen av meddelandet, dvs. innehållet i frågan eller svaret.
 
-Den metod som ska anropas anges i `<executequery>`-elementet från texten i SOAP-meddelandet.
+Den metod som ska anropas anges i `<executequery>` -element från texten i SOAP-meddelandet.
 
-I SOAP identifieras parametrarna i den ordning de visas. Den första parametern, `<__sessiontoken>`, tar autentiseringskedjan, den andra parametern är XML-beskrivningen för frågan från `<querydef>`-elementet.
+I SOAP identifieras parametrarna i den ordning de visas. Den första parametern, `<__sessiontoken>`, tar autentiseringskedjan, den andra parametern är XML-beskrivningen av frågan från `<querydef>` -element.
 
 ### SOAP-svar {#soap-response}
 
@@ -115,7 +115,7 @@ I SOAP identifieras parametrarna i den ordning de visas. Den första parametern,
 </SOAP-ENV:Envelope>
 ```
 
-Resultatet av frågan anges från `<pdomoutput>`-elementet.
+Resultatet av frågan anges från `<pdomoutput>` -element.
 
 ## Felhantering {#error-management}
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-`<soap-env:fault>`-elementet i SOAP-meddelandets brödtext används för att förmedla felsignaler som uppstår under bearbetningen av webbtjänsten. Detta består av följande delelement:
+The `<soap-env:fault>` -elementet i SOAP-meddelandets brödtext används för att förmedla felsignaler som uppstår under bearbetningen av webbtjänsten. Detta består av följande delelement:
 
 * `<faultcode>` : anger feltypen. Feltyperna är:
 
@@ -147,7 +147,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 * `<faultstring>` : meddelande som beskriver felet
 * `<detail>` : långt felmeddelande
 
-Slutfört eller misslyckat anrop av tjänsten identifieras när elementet `<faultcode>` verifieras.
+Om serviceanropet lyckades eller misslyckades identifieras det när `<faultcode>` -elementet har verifierats.
 
 >[!IMPORTANT]
 >
@@ -177,4 +177,4 @@ Server-URL:en är följande:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Med **`<server>`** Adobe Campaign-programservern (**nlserver web**).
+Med **`<server>`** Adobe Campaign programserver (**nlserver web**).

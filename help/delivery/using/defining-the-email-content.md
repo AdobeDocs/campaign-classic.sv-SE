@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
@@ -19,18 +19,18 @@ ht-degree: 1%
 
 ## Avsändare {#sender}
 
-Klicka på länken **[!UICONTROL From]** om du vill definiera namn och adress för avsändaren som ska visas i meddelandehuvudet.
+Om du vill definiera namn och adress för avsändaren som ska visas i huvudet för skickade meddelanden klickar du på knappen **[!UICONTROL From]** länk.
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
 I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Den här informationen kan anpassas. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
 
-Information om hur du infogar och använder anpassningsfält finns i [Om personalisering](about-personalization.md)-avsnittet.
+Information om hur du infogar och använder anpassningsfält finns i [Om personalisering](about-personalization.md) -avsnitt.
 
 >[!NOTE]
 >
 >* Avsändarens adress används som standard för svar.
->* Huvudparametrarna får inte vara tomma. Som standard innehåller de värdeindata när distributionsguiden konfigureras. Mer information finns i [installationshandboken](../../installation/using/deploying-an-instance.md).
+>* Huvudparametrarna får inte vara tomma. Som standard innehåller de värdeindata när distributionsguiden konfigureras. Mer information finns i [Installationshandbok](../../installation/using/deploying-an-instance.md).
 >* Avsändarens adress är obligatorisk för att tillåta att ett e-postmeddelande skickas (RFC-standard).
 >* Adobe Campaign kontrollerar syntaxen för de e-postadresser som anges.
 
@@ -41,7 +41,7 @@ Information om hur du infogar och använder anpassningsfält finns i [Om persona
 
 ## Meddelandeämne {#message-subject}
 
-Meddelandets ämne är konfigurerat i motsvarande fält. Du kan ange det direkt i fältet eller klicka på länken **[!UICONTROL Subject]** för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
+Meddelandets ämne är konfigurerat i motsvarande fält. Du kan ange det direkt i fältet eller klicka på **[!UICONTROL Subject]** för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
 
 >[!IMPORTANT]
 >
@@ -55,9 +55,9 @@ I meddelandet ovan anpassas till exempel meddelandets ämne för varje mottagare
 
 >[!NOTE]
 >
->Användningen av anpassningsfält beskrivs i [Om personalisering](about-personalization.md).
+>Användningen av personaliseringsfält beskrivs i [Om personalisering](about-personalization.md).
 
-Du kan också infoga uttryckssymboler på ämnesraden med popup-fönstret **[!UICONTROL Insert emoticon]**.
+Du kan även infoga uttryckssymboler på ämnesraden med **[!UICONTROL Insert emoticon]** popup-fönster.
 
 ## Meddelandeinnehåll {#message-content}
 
@@ -67,35 +67,35 @@ Du kan också infoga uttryckssymboler på ämnesraden med popup-fönstret **[!UI
 
 Innehållet i meddelandet definieras i det nedre avsnittet av fönstret för leveranskonfiguration.
 
-Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](#selecting-message-formats).
+Meddelanden skickas som standard i HTML eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](#selecting-message-formats).
 
-* Om du vill importera ett HTML-innehåll använder du knappen **[!UICONTROL Open]**. Du kan också klistra in källkoden direkt i underfliken **[!UICONTROL Source]**.
+* Om du vill importera ett HTML-innehåll använder du **[!UICONTROL Open]** -knappen. Du kan också klistra in källkoden direkt i **[!UICONTROL Source]** underflik.
 
    Om du använder [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), se [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
    >[!IMPORTANT]
    >
-   >HTML-innehållet måste skapas i förväg och sedan importeras till Adobe Campaign. HTML-redigeraren är inte utformad för att skapa innehåll.
+   >Innehållet i HTML måste skapas i förväg och sedan importeras till Adobe Campaign. Redigeraren i HTML är inte utformad för att skapa innehåll.
 
-   Med underfliken **[!UICONTROL Preview]** kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
+   The **[!UICONTROL Preview]** Med underfliken kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
 
-   Verktygsfältsknapparna ger tillgång till standardåtgärder och formateringsparametrar för HTML-sidan.
+   Verktygsfältsknapparna ger åtkomst till standardåtgärder och formateringsparametrar för HTML-sidan.
 
    ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på ikonen **[!UICONTROL Image]** och väljer lämpligt alternativ.
+   Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på **[!UICONTROL Image]** och välj lämpligt alternativ.
 
    ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Du kan komma åt biblioteksbilder via mappen **[!UICONTROL Resources>Online>Public resources]** i mappträdet. Se även [Lägga till bilder](#adding-images).
+   Biblioteksbilder kan öppnas via **[!UICONTROL Resources>Online>Public resources]** i mappträdet. Se även [Lägga till bilder](#adding-images).
 
    Med den sista knappen i verktygsfältet kan du infoga anpassningsfält.
 
    >[!NOTE]
    >
-   >Användningen av anpassningsfält beskrivs i [Om personalisering](about-personalization.md).
+   >Användningen av personaliseringsfält beskrivs i [Om personalisering](about-personalization.md).
 
-   Med flikarna längst ned på sidan kan du visa HTML-koden för sidan som skapas och visa återgivningen av meddelandet med dess anpassning. Om du vill starta den här visningen klickar du på **[!UICONTROL Preview]** och väljer en mottagare med knappen **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
+   Med flikarna längst ned på sidan kan du visa HTML-koden för den sida som skapas och visa återgivningen av meddelandet med dess anpassning. Klicka på **[!UICONTROL Preview]** och välja en mottagare med **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
 
    ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -103,24 +103,24 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
    ![](assets/s_ncs_user_wizard_email01_140.png)
 
-* Om du vill importera ett textinnehåll använder du knappen **[!UICONTROL Open]** eller fliken **[!UICONTROL Text Content]** för att ange innehållet i meddelandet när det visas i textformat. Använd verktygsfältsknapparna för att komma åt åtgärder för innehållet. Med den sista knappen kan du infoga anpassningsfält.
+* Om du vill importera ett textinnehåll använder du **[!UICONTROL Open]** eller **[!UICONTROL Text Content]** för att ange meddelandets innehåll när det visas i textformat. Använd verktygsfältsknapparna för att komma åt åtgärder för innehållet. Med den sista knappen kan du infoga anpassningsfält.
 
    ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   När det gäller HTML-formatet klickar du på fliken **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess anpassning.
+   När det gäller formatet HTML klickar du på **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering.
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definiera interaktivt innehåll {#amp-for-email-format}
 
-Med Adobe Campaign kan du testa det nya interaktiva [AMP för e-post](https://amp.dev/about/email/)-formatet, som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
+Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://amp.dev/about/email/) format, som gör det möjligt att skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
 Mer information finns i [det här avsnittet](defining-interactive-content.md).
 
 ## Använda innehållshantering {#using-content-management}
 
-Du kan definiera innehållet i leveransen med hjälp av innehållshanteringsformulären, direkt i leveransguiden. För att göra detta måste du referera till publiceringsmallen för den innehållshantering som ska användas på fliken **[!UICONTROL Advanced]** i leveransegenskaperna.
+Du kan definiera innehållet i leveransen med hjälp av innehållshanteringsformulären, direkt i leveransguiden. För att göra detta måste du referera till publiceringsmallen för den innehållshantering som ska användas i **[!UICONTROL Advanced]** -fliken för leveransegenskaperna.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -136,33 +136,33 @@ Med en extra flik kan du ange innehåll som automatiskt ska integreras och forma
 
 Du kan infoga uttryckssymboler i ditt e-postinnehåll.
 
-1. Klicka på ikonen **[!UICONTROL Insert emoticon]**.
+1. Klicka på **[!UICONTROL Insert emoticon]** ikon.
 1. Välj en uttryckssymbol i popup-fönstret.
 
    ![](assets/emoticon_4.png)
 
-1. Klicka på knappen **[!UICONTROL Close]** när du är klar.
+1. Klicka på **[!UICONTROL Close]** när du är klar.
 
-Om du vill anpassa uttryckslistan läser du i den här [sidan](customizing-emoticon-list.md).
+Mer information om hur du anpassar uttryckslistan finns i [page](customizing-emoticon-list.md).
 
 ## Lägga till bilder {#adding-images}
 
-E-postleveranser i HTML-format kan innehålla bilder. Från leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via ikonen **[!UICONTROL Image]**.
+E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via **[!UICONTROL Image]** ikon.
 
 Bilderna kan vara:
 
 * En lokal bild eller en bild som anropats från en server
 * En bild som lagras i Adobe Campaign bibliotek för offentliga resurser
 
-   Offentliga resurser är tillgängliga via noden **[!UICONTROL Resources > Online]** i Adobe Campaign-hierarkin. De grupperas i ett bibliotek och kan inkluderas i e-postmeddelanden, men kan också användas för kampanjer eller uppgifter, eller för innehållshantering.
+   Offentliga resurser är tillgängliga via **[!UICONTROL Resources > Online]** noden i Adobe Campaign-hierarkin. De grupperas i ett bibliotek och kan inkluderas i e-postmeddelanden, men kan också användas för kampanjer eller uppgifter, eller för innehållshantering.
 
 * En resurs som delas med Adobe Experience Cloud. Se [det här avsnittet](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
 >[!IMPORTANT]
 >
->Om du vill inkludera bilder i e-postmeddelanden med leveransguiden måste Adobe Campaign-instansen konfigureras för att aktivera offentlig resurshantering. Den här proceduren kan utföras från distributionsguiden. Mer information om konfiguration finns i [det här avsnittet](../../installation/using/deploying-an-instance.md).
+>Om du vill inkludera bilder i e-postmeddelanden med leveransguiden måste Adobe Campaign-instansen konfigureras för att aktivera offentlig resurshantering. Den här proceduren kan utföras från distributionsguiden. Se [det här avsnittet](../../installation/using/deploying-an-instance.md) för mer information om konfiguration.
 
-Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på knappen **[!UICONTROL Image]** i verktygsfältet HTML-innehåll.
+Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Om du vill göra det klickar du på **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -172,17 +172,17 @@ Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i b
 
 Så här hanterar du bilder via leveransguiden:
 
-1. Klicka på ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet.
+1. Klicka på **[!UICONTROL Tracking & Images]** i verktygsfältet.
    ![](assets/s_ncs_user_email_del_img_param.png)
 
-1. Välj **[!UICONTROL Upload images]** på fliken **[!UICONTROL Images]**.
+1. Välj **[!UICONTROL Upload images]** i **[!UICONTROL Images]** -fliken.
 1. Du kan sedan välja om du vill inkludera bilderna i e-postmeddelandet.
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Det gör du genom att klicka på länken **[!UICONTROL Upload the images straightaway...]**.
-* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Det gör du genom att ange det i fältet **[!UICONTROL Images URL]**. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
+* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Om du vill göra det klickar du på **[!UICONTROL Upload the images straightaway...]** länk.
+* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i dialogrutan **[!UICONTROL Images URL]** fält. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
 
-När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande som ger dig möjlighet att ladda upp bilderna direkt enligt leveransparametrarna.
+När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande om du vill att bilderna ska kunna överföras direkt, enligt leveransparametrarna.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
@@ -190,7 +190,7 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 >
 >* Sökvägarna för bildåtkomst ändras vid manuell överföring eller när meddelanden skickas.
 > 
->* För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som hämtas direkt från en anpassad URL som [bilaga](attaching-files.md). Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>* För att undvika prestandaproblem bör du inkludera bilder som laddas ned direkt från en anpassad URL som [bifogad](attaching-files.md)bör varje bildstorlek som standard inte överstiga 100 000 byte. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 
 **Användningsfall: skicka ett meddelande med bilder**
@@ -199,17 +199,17 @@ Här följer ett exempel på en leverans med fyra bilder:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
-Dessa bilder kommer från en lokal katalog eller webbplats som du kan verifiera på fliken **[!UICONTROL Source]**.
+Dessa bilder kommer från en lokal katalog eller webbplats som du kan verifiera från **[!UICONTROL Source]** -fliken.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
-Klicka på ikonen **[!UICONTROL Tracking & Images]** och sedan på fliken **[!UICONTROL Images]** för att börja identifiera bilder i meddelandet.
+Klicka på **[!UICONTROL Tracking & Images]** -ikonen och sedan **[!UICONTROL Images]** för att börja identifiera bilder i meddelandet.
 
 För varje bild som identifieras kan du visa dess status:
 
-* Om en bild lagras lokalt eller finns på en annan server identifieras den som **[!UICONTROL Not yet online]** även om den här servern är synlig från utsidan (till exempel på en webbplats).
+* Om en bild lagras lokalt eller finns på en annan server identifieras den som **[!UICONTROL Not yet online]**.
 * Bilderna identifieras som **[!UICONTROL Already online]** om de överfördes tidigare när en annan leverans skapades.
-* I distributionsguiden kan du definiera URL:er för vilka bildidentifiering inte är aktiverat: vid överföring av dessa bilder är **[!UICONTROL Skipped]**.
+* I distributionsguiden kan du definiera URL:er för vilka bildidentifiering inte är aktiverat: ladda upp dessa bilder **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ För varje bild som identifieras kan du visa dess status:
 
 Under analysfasen överförs bilderna automatiskt till servern så att de är åtkomliga från utsidan, med undantag för de lokala bilderna som måste överföras i förväg.
 
-Du kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe Campaign-operatörer. Detta kan vara användbart om du arbetar tillsammans. Om du vill göra det klickar du på **[!UICONTROL Upload the images straightaway...]** för att överföra bilderna till servern.
+Du kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe Campaign-operatörer. Detta kan vara användbart om du arbetar tillsammans. Det gör du genom att klicka **[!UICONTROL Upload the images straightaway...]** för att överföra bilderna till servern.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -225,11 +225,11 @@ Du kan arbeta vidare och överföra bilder så att de kan visas av andra Adobe C
 >
 >URL:erna för bilderna i e-postmeddelandet, och deras namn i synnerhet, ändras sedan.
 
-När bilderna är online kan du visa ändringar i namn och sökvägar på fliken **[!UICONTROL Source]** i meddelandet.
+När bilderna är online kan du visa ändringar i deras namn och sökvägar via **[!UICONTROL Source]** meddelandets flik.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
-Om du väljer **[!UICONTROL Include the images in the email]** kan du välja vilka bilder som ska inkluderas i motsvarande kolumn.
+Om du väljer **[!UICONTROL Include the images in the email]** kan du välja vilka bilder som ska tas med i motsvarande kolumn.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
@@ -237,7 +237,7 @@ Om du väljer **[!UICONTROL Include the images in the email]** kan du välja vil
 >
 >Om det finns lokala bilder i meddelandet måste du bekräfta ändringarna i meddelandets källkod.
 
-## Infoga en streckkod i ett e-postmeddelande{#inserting-a-barcode-in-an-email}
+## Infoga en anpassad streckkod{#insert-a-barcode}
 
 Med modulen för streckkodsgenerering kan du skapa flera typer av streckkoder som följer många vanliga standarder, inklusive 2D-streckkoder.
 
@@ -272,25 +272,25 @@ Konfigurera sedan följande element efter dina behov:
       ![](assets/barcode_insert_12.png)
 
 1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: Om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
-1. I fältet **[!UICONTROL Value]** kan du definiera värdet för streckkoden. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
+1. The **[!UICONTROL Value]** I kan du definiera värdet för streckkoden. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
 
-   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på personaliseringsknappen till höger om fältet **[!UICONTROL Value]** och väljer **[!UICONTROL Recipient > Account number]**.
+   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på personaliseringsknappen till höger om **[!UICONTROL Value]** fält och markera **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. I fältet **[!UICONTROL Height]** kan du konfigurera höjden på streckkoden utan att ändra bredden, genom att ändra avståndet mellan varje fält.
+1. The **[!UICONTROL Height]** I kan du konfigurera höjden på streckkoden utan att ändra bredden genom att ändra avståndet mellan varje fält.
 
-   Det finns ingen begränsande inmatningskontroll beroende på streckkodstypen. Om ett streckkodsvärde är felaktigt visas det bara i läget **Förhandsgranska** där streckkoden stryks över med rött.
+   Det finns ingen begränsande inmatningskontroll beroende på streckkodstypen. Om ett streckkodsvärde är felaktigt visas det bara i **Förhandsgranska** där streckkoden stryks över i rött.
 
    >[!NOTE]
    >
    >Vilket värde som tilldelas en streckkod beror på dess typ. En EAN-8-typ ska till exempel ha exakt 8 siffror.
    >
-   >Med personaliseringsknappen till höger om fältet **[!UICONTROL Value]** kan du lägga till data utöver själva värdet. Detta förbättrar streckkoden, förutsatt att den accepteras av streckkodsstandarden.
+   >Knappen för personalisering till höger om **[!UICONTROL Value]** kan du lägga till data utöver själva värdet. Detta förbättrar streckkoden, förutsatt att den accepteras av streckkodsstandarden.
    >
-   >Om du till exempel använder en GS1-128-typstreckkod och vill ange kontonumret för en mottagare utöver värdet, klickar du på personaliseringsknappen och väljer **[!UICONTROL Recipient > Account number]**. Om kontonumret för den valda mottagaren anges korrekt kommer streckkoden att ta hänsyn till det.
+   >Om du till exempel använder en GS1-128-typstreckkod och vill ange en mottagares kontonummer utöver värdet, klickar du på knappen för anpassning och väljer **[!UICONTROL Recipient > Account number]**. Om kontonumret för den valda mottagaren anges korrekt kommer streckkoden att ta hänsyn till det.
 
-När dessa element har konfigurerats kan du slutföra e-postmeddelandet och skicka det. För att undvika fel ska du alltid se till att ditt innehåll visas korrekt innan du utför en leverans genom att klicka på fliken **[!UICONTROL Preview]**.
+När dessa element har konfigurerats kan du slutföra e-postmeddelandet och skicka det. För att undvika fel ska du alltid se till att innehållet visas korrekt innan du utför leveransen genom att klicka på knappen **[!UICONTROL Preview]** -fliken.
 
 ![](assets/barcode_insert_10.png)
 

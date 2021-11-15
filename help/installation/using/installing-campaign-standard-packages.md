@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1188'
 ht-degree: 6%
 
 ---
@@ -28,6 +28,8 @@ Inbyggda paket innehåller en uppsättning funktioner som kan installeras efter 
 >Installationen av ett nytt paket kan påverka hela plattformen: den måste testas och valideras innan den slutliga driftsättningen.
 >
 >När ett paket har installerats kan du inte avinstallera det.
+>
+>Kontakta Adobe för att driftsätta ett nytt inbyggt paket.
 
 Så här installerar du ett inbyggt paket:
 
@@ -37,9 +39,9 @@ Så här installerar du ett inbyggt paket:
    >[!NOTE]
    >
    >När ett paket är nedtonat innebär det att det redan är installerat eller att det inte är kompatibelt med din instans. Kompatibiliteten beskrivs i tabellen nedan.
-1. Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** för att starta paketinstallationen.
+1. Klicka **[!UICONTROL Next]** sedan **[!UICONTROL Start]** för att starta paketinstallationen.
 
-   När paketen har installerats visas **100 %** i förloppsindikatorn och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
+   När paketen har installerats visas förloppsindikatorn **100 %** och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** installationsfönstret.
 
@@ -69,7 +71,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring</td>
   </tr> 
   <tr> 
-   <td> Marknadsföringsresurser (MRM)<br /> </td> 
+   <td> Marknadsföringsresurser<br /> </td> 
    <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="../../mrm/using/about-marketing-resource-management.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
@@ -100,7 +102,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Alla</td> 
   </tr> 
   <tr> 
-   <td> Kontroll av transaktionsmeddelande (Message Center - Control)<br /> </td> 
+   <td> Kontroll av transaktionsmeddelanden (Message Center - Control)<br /> </td> 
    <td> Hanterar utlösarmeddelanden som genereras från händelser som utlöses från informationssystem. Valfritt. <a href="../../message-center/using/about-transactional-messaging.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
@@ -135,7 +137,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
-   <td> Innehållshanteraren<br /> </td> 
+   <td> Content Manager<br /> </td> 
    <td> Skapar återkommande nyhetsbrev eller webbplatser och validerar och publicerar sedan dina meddelanden. <a href="../../delivery/using/about-content-management.md">Läs mer</a> <br /> </td> 
    <td> </td>
   </tr> 
@@ -195,7 +197,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> AEM integrering<br /> </td> 
+   <td> AEM<br /> </td> 
    <td> Gör att du kan hantera innehållet i e-postleveranserna och formulären direkt i Adobe Experience Manager för att dra nytta av AEM funktioner för innehållsredigering och Adobe Campaign leveranskapacitet. <a href="../../integrations/using/about-adobe-experience-manager.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
@@ -215,7 +217,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Alla</td> 
   </tr> 
   <tr> 
-   <td> Överför till medelkälla <br /> </td> 
+   <td> Överföring till medelkälla <br /> </td> 
    <td> Detaljerar installation och konfiguration av en server med mellanlagring samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i mellankälläge. Valfritt. <a href="../../installation/using/mid-sourcing-server.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
@@ -239,16 +241,16 @@ I följande tabell visas alla inbyggda Campaign-paket.
 
 ### Paket för meddelandecenter {#message-center-package}
 
-Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal efteråt måste du följa dessa steg:
+Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal i efterhand måste du följa dessa steg:
 
-1. Installera den nya kanalen, till exempel **Mobile channel**, med guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Installera den nya kanalen, till exempel **Mobilkanal**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importera filen ( **[!UICONTROL Tools > Advanced > Import package > File]**) och välj:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. I **[!UICONTROL XML data content to import]** ska du bara behålla leveransmallen för Message Center som motsvarar den relaterade kanalen. Om du till exempel har lagt till **Mobile channel** ska du bara behålla elementet **entities** som motsvarar mallen **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **Mobile App Channel** ska du bara behålla **iOS-transaktionsmeddelandet**-mallarna (iosTriggerMessage) och **Android-transaktionsmeddelandet** (androidTriggerMessage).
+1. I **[!UICONTROL XML data content to import]** behåller du bara leveransmallen för Message Center som motsvarar den relaterade kanalen. Om du till exempel har lagt till **Mobilkanal**, behåller bara **enheter** element som motsvarar **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **Mobilappskanal**, behåller bara **iOS transaktionsmeddelande** mallar (iosTriggerMessage) och **Transaktionsmeddelande för Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
-workflow-type: ht
-source-wordcount: '1657'
-ht-degree: 100%
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+workflow-type: tm+mt
+source-wordcount: '1651'
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    </tr>
    <tr>
    <td>Dokumentation för API:er i Campaign – filen jsapi.chm</td>
-   <td>Från och med Campaign 19.1 finns API:er i Campaign Classic på en dedikerad sida. Om du använder den äldre filen jsapi.chm bör du nu använda <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">den nya versionen online</a>.</td>
+   <td>Från och med Campaign 19.1 finns API:er i Campaign Classic på en dedikerad sida. Om du använder den äldre filen jsapi.chm bör du nu använda <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">den nya versionen online</a>.</td>
   </tr> 
   <tr> 
    <td>Orkestrering i Campaign – förutsägande marknadsföring</td>
@@ -123,7 +123,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   <tr> 
    <td>API:et decryptString</td>
    <td><p>Från och med Campaign 18.6 är API:et <em>decryptString</em> av säkerhetsskäl inte längre tillgängligt som standard för nya installationer.</p> 
-   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Läs mer</a></p></td>
+   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Läs mer</a></p></td>
   </tr> 
    <tr> 
    <td>Mobilkanal – MMS- och WAP-push-meddelanden</td>

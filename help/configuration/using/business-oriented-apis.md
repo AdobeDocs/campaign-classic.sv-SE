@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Business API är specifikt för varje typ av objekt. De har en effekt på:
 
 * Leveranser:
 
-   * Se [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-) för att skapa en leveransåtgärd.
+   * Skapa en leveransåtgärd, se [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
    * skicka en kampanj (starta, pausa, stoppa, skicka bevis),
    * återställer leveransloggar.
 
@@ -33,14 +33,14 @@ Business API är specifikt för varje typ av objekt. De har en effekt på:
       Se [SOAP-metoder i JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Innehållshantering
-* Prenumerationshantering, se [Prenumerera (nms:subscription)](#subscribe--nms-subscription-) och [Avsluta prenumeration (nms:subscription)](#unsubscribe--nms-subscription-).
+* Prenumerationshantering, se [Prenumerera (nms:subscription)](#subscribe--nms-subscription-) och [Avbeställ prenumerationen (nms:subscription)](#unsubscribe--nms-subscription-).
 * Dataprocesser: import, export.
 
 I det här avsnittet beskrivs användningen av tjänsterna &quot;Subscribe&quot;, &quot;Unsubscribe&quot; och &quot;SubmitDelivery&quot;.
 
 >[!IMPORTANT]
 >
->[Kampanjens JSAPI-](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) dokumentation innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
+>[Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
 
 ## Prenumerera (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Beskrivning av prenumerationsmetoden i schemat nms:subscription:
 </method>
 ```
 
-Definitionen av avstämningsnyckeln måste anges via attributet _**key** för elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
+Definitionen av avstämningsnyckeln måste anges via _**key** på `<recipient>` -element i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
 
 Anropet returnerar inga data, förutom fel.
 
@@ -136,7 +136,7 @@ Beskrivning av metoden &quot;Unsubscribe&quot; i schemat &quot;nms:subscription&
 </method>
 ```
 
-Definitionen av avstämningsnyckeln måste anges via attributet _key i elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
+Definitionen av avstämningsnyckeln måste anges via attributet _key på `<recipient>` -element i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
 
 Om mottagaren inte finns i databasen eller inte prenumererar på den berörda informationstjänsten utför tjänsten ingen åtgärd och genererar inget fel.
 
@@ -207,7 +207,7 @@ Anropet returnerar inga data, förutom fel.
 
 ### XML-dokumentexempel {#xml-document-example}
 
-Det här exemplet är baserat på en anpassad leveransmall från en extern datakälla (en fil i det här fallet). Konfigurationen beskrivs i sin helhet i leveransmallen, så allt som återstår att skicka när anropet görs är innehållet i filen från `<externalsource>`-elementet.
+Det här exemplet är baserat på en anpassad leveransmall från en extern datakälla (en fil i det här fallet). Konfigurationen beskrivs i sin helhet i leveransmallen, så allt som återstår att skicka när anropet görs är innehållet i filen från `<externalsource>` -element.
 
 ```
 <delivery>

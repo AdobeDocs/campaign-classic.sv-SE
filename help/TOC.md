@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '2566'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ ht-degree: 100%
    + Skicka direktutskick {#sending-direct-mail}
       + [Om direktutskickskanalen](delivery/using/about-direct-mail-channel.md)
       + [Skapa en leverans av direktutskick](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definiera innehållet i direktutskick](delivery/using/defining-the-direct-mail-content.md)
+      + [Definiera innehållet i direktmeddelanden](delivery/using/defining-the-direct-mail-content.md)
       + [Validera](delivery/using/validating.md)
    + Använd leveransmallar {#using-delivery-templates}
       + [Om mallar](delivery/using/about-templates.md)

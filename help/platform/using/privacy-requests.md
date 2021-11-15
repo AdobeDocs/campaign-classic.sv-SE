@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
-workflow-type: ht
-source-wordcount: '2413'
-ht-degree: 100%
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+workflow-type: tm+mt
+source-wordcount: '2410'
+ht-degree: 99%
 
 ---
 
@@ -251,7 +251,7 @@ JS-API:t **[!UICONTROL CreateRequestByName]** definieras så här.
 
 ### Anropa API:et externt {#invoking-api-externally}
 
-Här är ett exempel på hur du kan anropa API:et externt (specifikt autentisering via API:et och information om sekretess-API:et). Mer information om sekretess-API:et finns i [API-dokumentationen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html). Du kan även läsa [dokumentationen om webbtjänstanrop](../../configuration/using/web-service-calls.md).
+Här är ett exempel på hur du kan anropa API:et externt (specifikt autentisering via API:et och information om sekretess-API:et). Mer information om sekretess-API:et finns i [API-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html). Du kan även läsa [dokumentationen om webbtjänstanrop](../../configuration/using/web-service-calls.md).
 
 Först och främst måste du utföra autentiseringen via API:et:
 

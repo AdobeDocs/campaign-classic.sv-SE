@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: c58daacb76f90478e218fe97008f3e263d8c76a1
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 0%
+source-wordcount: '1016'
+ht-degree: 1%
 
 ---
 
@@ -18,19 +18,25 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Kampanj-SDK för iOS och Android är en av komponenterna i modulen Mobile App Channel.
+Kampanj-SDK:er för iOS och Android är en av komponenterna i modulen Mobile App Channel.
 
 >[!NOTE]
 >
->Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få Campaign SDK (tidigare Neolane SDK).
+>Om du vill hämta Campaign SDK (tidigare kallat Neolane SDK) kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 Målet med SDK är att underlätta integreringen av mobilapplikationer i Adobe Campaign.
 
-Mer information om vilka olika Android- och iOS-versioner som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#MobileSDK).
+Mer information om vilka olika Android- och iOS-versioner som stöds finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#MobileSDK).
+
+>[!NOTE]
+>
+>Du kan också använda Adobe Experience Platform mobil-SDK genom att konfigurera tillägget Adobe Campaign i Adobe Launch. [Läs mer i Adobe Experience Platform-dokumentationen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}.
+>
+>Lär dig konfigurera och installera Adobe Experience Platform Mobile SDK [i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target=&quot;_blank&quot;}.
 
 ## Läser in kampanj-SDK {#loading-campaign-sdk}
 
-* **I Android**: filen  **neolane_sdk-release.** aarfile måste länkas till projektet.
+* **I Android**: den **neolane_sdk-release.aar** filen måste vara länkad till projektet.
 
    Följande behörighet ger åtkomst till Adobe Campaign-servern:
 
@@ -50,11 +56,11 @@ Mer information om vilka olika Android- och iOS-versioner som stöds finns i [ko
 
    Från och med version 1.0.26 av SDK används inte längre den här behörigheten.
 
-* **I iOS**: libNeolaneSDK. **and** Neolane_SDK. **** files måste länkas till projektet. Från version 1.0.24 av SDK är alternativet **ENABLE_BITCODE** aktiverat.
+* **I iOS**: den **libNeolaneSDK.a** och **Neolane_SDK.h** filer måste länkas till projektet. Från version 1.0.24 av SDK, alternativet **ENABLE_BITCODE** är aktiverat.
 
    >[!NOTE]
    >
-   >För version 1.0.25 av SDK är de fyra arkitekturerna tillgängliga i filen **Neolane_SDK.h**.
+   >För version 1.0.25 av SDK finns de fyra arkitekturerna i **Neolane_SDK.h** -fil.
 
 ## Deklarera integrationsinställningar {#declaring-integration-settings}
 
@@ -64,7 +70,7 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
    >[!NOTE]
    >
-   >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md).
+   >Integreringsnyckeln anges i Adobe Campaign-konsolen i **[!UICONTROL Information]** fliken med tjänster som är dedikerade till mobilprogrammet. Se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md).
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign-spårningsservern.
 * **En marknadsförings-URL**: för att aktivera insamling av prenumerationer.
@@ -108,7 +114,7 @@ Registreringsfunktionen gör att du kan:
    }
    ```
 
-   Om du använder FCM (Firebase Cloud Messaging) rekommenderar vi att du använder funktionen **registerDevice** när du anropar funktionen **onTokenRefresh** för att meddela Adobe Campaign om ändringen i användarens mobilenhetstoken.
+   Om du använder FCM (Firebase Cloud Messaging) rekommenderar vi att du använder **registerDevice** funktionen vid anrop av **onTokenRefresh** för att meddela Adobe Campaign om ändringen i användarens mobilenhetstoken.
 
    ```
    public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -148,7 +154,7 @@ Registreringsfunktionen gör att du kan:
 
    Med spårningsfunktionerna kan du spåra meddelandeaktiveringar (öppnar) och meddelandevisning (skärmbild).
 
-   Följ implementeringen nedan för att spåra visningen av meddelanden (genom att anropa funktionen **notifyReceive** i SDK:n). Observera att om du använder FCM (Firebase Cloud Messaging) rekommenderar vi att du använder funktionen **notifyReceive** när funktionen **onMessageReceived** anropas av Android-systemet.
+   Spåra meddelandevisningen (klart genom att anropa **notifyReceive** SDK:s funktion), följ implementeringen nedan. Observera att om du använder FCM (Firebase Cloud Messaging) rekommenderar vi att du använder **notifyReceive** funktionen när **onMessageReceived** Android-funktionen anropas av Android-systemet.
 
    ```
    package com.android.YourApplication;
@@ -244,7 +250,7 @@ Registreringsfunktionen gör att du kan:
    }
    ```
 
-   Här är ett implementeringsexempel för att spåra ett meddelande som är öppet (som körs genom att anropa funktionen **notifyOpening** i SDK). Klassen **NotificationActivity** motsvarar den som användes för att skapa **notifIntent**-objektet i föregående exempel.
+   Här är ett implementeringsexempel för att spåra ett meddelande som är öppet (som körs genom att anropa **notifyOpening** SDK:s funktion). The **NotificationActivity** motsvarar den som används för att skapa **notifIntent** -objektet i föregående exempel.
 
    ```
    public class NotificationActivity extends Activity {
@@ -292,7 +298,7 @@ Registreringsfunktionen gör att du kan:
 
    >[!NOTE]
    >
-   >När funktionen **application:didReceiveRemoteNotification:fetchCompletionHandler** har implementerats från version 7.0 anropas funktionen endast av operativsystemet. Funktionen **application:didReceiveRemoteNotification** anropas därför inte.
+   >Från version 7.0, en gång **program:didReceiveRemoteNotification:fetchCompletionHandler** -funktionen är implementerad och operativsystemet anropar bara den här funktionen. The **program:didReceiveRemoteNotification** funktionen anropas därför inte.
 
 ## Spårning av tyst meddelande {#silent-notification-tracking}
 
@@ -340,17 +346,17 @@ Följ exemplet nedan för att spåra ditt tysta meddelande:
 >
 >Observera att detta endast gäller iOS.
 
-I iOS gör delegatprotokollet att du kan få resultatet av anropet **registerDevice** och använda det för att ta reda på om ett fel uppstod under registreringen.
+I iOS kan du med delegatprotokollet få resultatet av **registerDevice** anrop och kan användas för att ta reda på om ett fel uppstod under registreringen.
 
-Prototypen **registerDeviceStatus** är:
+The **registerDeviceStatus** prototypen är:
 
 ```
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**Med** Status kan du veta om en registrering lyckades eller om ett fel uppstod.
+**Status** gör att du kan veta om en registrering lyckades eller om ett fel uppstod.
 
-**** ErrorReasonger dig mer information om de fel som uppstod. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
+**ErrorReason** innehåller mer information om felen. Mer information om tillgängliga fel och deras beskrivningar finns i tabellen nedan.
 
 <table> 
  <thead>
@@ -368,7 +374,7 @@ Prototypen **registerDeviceStatus** är:
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-   <td> Värdnamnet för ACC-marknadsföringsservern är tomt eller inte inställt.<br /> </td>
+   <td> Värdnamnet för ACC-marknadsföringsservern är tomt eller har inte angetts.<br /> </td>
    <td> TOM<br /> </td>
   </tr>
   <tr> 
@@ -394,7 +400,7 @@ Prototypen **registerDeviceStatus** är:
  </tbody>
 </table>
 
-**Definitionen av Neolane_** SDKDelegateprotocol och  **** registerDeviceStatusdelegate är följande:
+**Neolane_SDKDelegate** protokoll och **registerDeviceStatus** Delegatdefinitionen är följande:
 
 ```
 //  Neolane_SDK.h
@@ -426,7 +432,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 @end
 ```
 
-Så här implementerar du **registerDeviceStatus**-delegaten:
+Att implementera **registerDeviceStatus** delegat, följ dessa steg:
 
 1. Implementera **setDelegate** under SDK-initieringen.
 
@@ -457,7 +463,7 @@ Så här implementerar du **registerDeviceStatus**-delegaten:
    }
    ```
 
-1. Lägg till protokollet i **@interface** för klassen.
+1. Lägg till protokollet i **@interface** av din klass.
 
    ```
    //  AppDelegate.h
@@ -532,7 +538,7 @@ Så här implementerar du **registerDeviceStatus**-delegaten:
 
 ## Variabler {#variables}
 
-Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen på fliken **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
+Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
 * **I Android**:
 
@@ -620,11 +626,11 @@ På den här nivån måste du:
 
 * Koppla ditt innehållstillägg till kategorin som skickats av Adobe Campaign:
 
-   Om du vill att mobilprogrammet ska visa en bild kan du ange kategorivärdet som &quot;image&quot; i Adobe Campaign och i mobilprogrammet skapar du ett meddelandetillägg med parametern **UNNotificationExtensionCategory** inställd på &quot;image&quot;. När push-meddelandet tas emot på enheten anropas tillägget enligt det definierade kategorivärdet.
+   Om du vill att mobilprogrammet ska visa en bild kan du ange kategorivärdet som &quot;image&quot; i Adobe Campaign och i mobilprogrammet skapar du ett meddelandetillägg med **UNNotificationExtensionCategory** parametern inställd på &quot;image&quot;. När push-meddelandet tas emot på enheten anropas tillägget enligt det definierade kategorivärdet.
 
 * Definiera meddelandelayouten
 
-   Du måste definiera en layout med relevanta widgetar. För en bild heter widgeten **UImageView**.
+   Du måste definiera en layout med relevanta widgetar. Widgeten namnges för en bild **UImageView**.
 
 * Visa dina mediefiler
 

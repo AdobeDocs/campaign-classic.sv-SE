@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 7%
 * Åtgärdade inkonsekvenser i hanteringen av hemliga nycklar.
 * Ett problem med anrikningsaktiviteten när ett fält skrevs som: xml=true och calculate=true
 * Korrigerade ett problem med teckenigenkänning när push-meddelanden skickades till ett mobilprogram.
-* Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt konto med medelkälla.
+* Korrigerade ett problem som förhindrade växling från FDA till SOAP-synkroniseringsmetod i ett externt MID-källkonto.
 
 ## Version 18.10.2 – build 8978{#release-18-10-2-build-8978}
 
@@ -131,7 +131,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> Arbetsflödesövervakning<br /> </td> 
-   <td> <p>Med nya Adobe Campaign Workflow HeatMap har plattformsadministratörerna en snabb grafisk representation av alla samtidiga arbetsflöden, som gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar det finns i <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
+   <td> <p>Med nya Adobe Campaign Workflow HeatMap kan plattformsadministratörerna snabbt visa upp alla samtidiga arbetsflöden, vilket gör att de kan övervaka belastningen på instansen och planera arbetsflödena därefter.</p> <p>Mer information finns i den <a href="../../workflow/using/heatmap.md">detaljerade dokumentationen</a>.</p> <p>Workflow HeatMap-paketet är också tillgängligt på begäran för byggen före 8977 (med början build 8700). Mer information om hur du begär och installerar det finns i <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">den här sidan</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -146,7 +146,7 @@ ht-degree: 7%
 
 **Förbättringar**
 
-* API:er i Campaign Classic finns nu på en [dedikerad sida](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
+* API:er i Campaign Classic finns nu på en [dedikerad sida](https://experienceleague.adobe.com/developer/campaign-api/api/index.html). Om du använder filen jsapi.chm bör du nu använda den nya versionen online.
 * PostgreSQL 10, Debian 9 och Teradata 16.20 stöds nu. Se [kompatibilitetsmatrisen](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html).
 * När du skapar en SFTP-anslutning kan du nu använda proxyautentisering. Mer information finns i [detaljerad dokumentation](../../installation/using/file-res-management.md) (NEO-9868)
 * The **Formel för datumberäkning** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktleverans. (NEO-9792)
@@ -238,5 +238,5 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Korrigerade ett skriptfel som uppstod i rapporten för användaraktiviteter när parametrarna angavs till&quot;Ett dagintervall&quot; och&quot;Öppnar&quot;. (NEO-11655)
 * Korrigerade ett problem som uppstod vid anslutning till servern med mellanlagring eller till meddelandecentret via en autentiserad webbproxy. (NEO-11309)
 * Korrigerade ett Oracle-fel som inträffade när en ny leveranskomposition sparades efter att ett element i ett specifikt schema markerats **baserat på en SQL-vy**. (NEO-11682)
-* Korrigerade ett problem som ledde till att genererade avvisningsfiler som innehöll falska positiv information vid bearbetning av en ZIP-fil som innehåller en CSV-fil via en inläsningsfilaktivitet med alternativet Dekomprimering.
+* Korrigerade ett problem som ledde till att avvisade filer som innehöll falska positiva värden vid bearbetning av en ZIP-fil som innehåller en CSV-fil via en inläsningsfilaktivitet med alternativet Dekomprimering.
 * xtkjoblog rensas nu av rensningen.
