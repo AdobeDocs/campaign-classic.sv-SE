@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2565'
 ht-degree: 99%
 
 ---
@@ -373,11 +373,11 @@ ht-degree: 99%
       + [Konfigurera åtkomst till [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Infoga en delad resurs](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Om [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
       + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Integrera med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + ACS-koppling {#acs-connector}
@@ -387,14 +387,14 @@ ht-degree: 99%
       + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
       + [Felsök [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Utlösare i Adobe Experience Cloud {#experience-triggers}
-      + [Kom igång med [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Arbeta med [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
       + [Konfigurera Adobe I/O för [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
       + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
       + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
    + Källor och destinationer i Adobe Experience Platform {#aep-sources-destinations}
-      + [Kom igång med källor och destinationer](integrations/using/get-started-sources-destinations.md)
+      + [Arbeta med källor och destinationer](integrations/using/get-started-sources-destinations.md)
       + [Mata in målgrupper från Adobe Experience Platform i Campaign](integrations/using/ingest-aep-data.md)
       + [Exportera data från Campaign till Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
