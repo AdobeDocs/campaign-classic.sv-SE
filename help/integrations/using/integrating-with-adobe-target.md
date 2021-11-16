@@ -6,20 +6,23 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 0996cc313be93300bce2f094c97e45a794cd459e
+source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Integrera med Adobe Target{#integrating-with-adobe-target}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-Genom integrationen mellan Adobe Campaign och Adobe Target (Classic och Standard) i Adobe Experience Cloud kan du inkludera ett erbjudande från Adobe Target i en e-postutsändning från Adobe Campaign.
+Använd Adobe Campaign med Adobe Target för att optimera e-postinnehåll.
 
-Följande princip gäller: När en mottagare öppnar ett e-postmeddelande som skickas via Adobe Campaign kan du med ett anrop till Adobe Target visa en dynamisk version av innehållet. Den här dynamiska versionen beräknas utifrån de regler som anges i förväg när e-postmeddelandet skapas.
+Om du vill optimera ditt e-postinnehåll kan du skapa ett omdirigeringserbjudande i Adobe Target och sedan använda Adobe Campaign för att hantera e-posterbjudandena. Du kan t.ex. visa olika erbjudanden för män och kvinnor.
+
+Integrationen äger rum när e-postmeddelandet öppnas. När kunden öppnar e-postmeddelandet anropas Target och en dynamisk version av innehållet visas. Innehållet består av en statisk bild som stöds av alla webbläsare. Target spårar reaktionen på erbjudandet på målgrupps- eller sessionsnivå och att data finns tillgängliga i Target-rapporter. [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html).
+
 
 >[!NOTE]
 >
@@ -30,7 +33,3 @@ Adobe Target kan använda flera typer av data:
 * Data från Adobe Campaign datamart
 * Segment som är länkade till besökar-ID i Adobe Target, om de data som används inte omfattas av juridiska begränsningar
 * Adobe Target data: användaragent, IP-adress, geopositioneringsdata
-
->[!NOTE]
->
->Du kan även hitta information om integrationen mellan Adobe Campaign och Adobe Target på [Adobe Target hjälpsidor](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html).
