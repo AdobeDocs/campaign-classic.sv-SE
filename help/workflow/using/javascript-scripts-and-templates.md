@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1242'
 ht-degree: 2%
 
 ---
@@ -32,10 +32,10 @@ Skript är vanliga i ett arbetsflödesdiagram:
 
 JavaScript-skript som körs i ett arbetsflödes-sammanhang får tillgång till en serie ytterligare globala objekt.
 
-* **instans**: Representerar arbetsflödet som körs. Det här objektets schema är **xtk:workflow**.
+* **instance**: Representerar arbetsflödet som körs. Det här objektets schema är **xtk:arbetsflöde**.
 * **uppgift**: Representerar de uppgifter som körs. Det här objektets schema är **xtk:workflowTask**.
-* **händelse**: Representerar händelserna som aktiverade aktiviteten som körs. Det här objektets schema är **xtk:workflowEvent**. Det här objektet initieras inte för **AND-join**-typaktiviteter som har aktiverats från flera övergångar.
-* **händelser**: Representerar listan med händelser som har aktiverat den aktuella aktiviteten. Det här objektets schema är **xtk:workflowEvent**. Tabellen innehåller vanligtvis ett element men kan innehålla flera för **AND-join**-typaktiviteter som har aktiverats baserat på flera övergångar.
+* **event**: Representerar händelserna som aktiverade aktiviteten som körs. Det här objektets schema är **xtk:workflowEvent**. Det här objektet har inte initierats för **AND-join** typaktiviteter som har aktiverats från flera övergångar.
+* **händelser**: Representerar listan med händelser som har aktiverat den aktuella aktiviteten. Det här objektets schema är **xtk:workflowEvent**. Tabellen innehåller vanligtvis ett element men kan innehålla flera för **AND-join** typaktiviteter som har aktiverats baserat på flera övergångar.
 * **aktivitet**: Representerar modellen för aktiviteten som körs. Det här objektets schema beror på aktivitetstypen. Det här objektet kan ändras av initieringsskriptet, i andra skript, med obestämda effekter.
 
 De tillgängliga egenskaperna för dessa objekt kan visas i en nedrullningsbar lista genom att klicka på knappen till höger om skriptverktygsfältet.
@@ -48,50 +48,50 @@ De tillgängliga egenskaperna för dessa objekt kan visas i en nedrullningsbar l
 
 **Exempel**
 
-I det här exemplet, och i följande exempel, skapar du ett arbetsflöde som innehåller en **JavaScript-kod**-aktivitet och en **End**-aktivitet enligt bilden nedan.
+I det här exemplet och i följande exempel skapar du ett arbetsflöde som innehåller en **JavaScript-kod** aktivitet och **End** aktivitet enligt bilden nedan.
 
 ![](assets/script-1.png)
 
-Dubbelklicka på aktiviteten **JavaScript-kod** och infoga följande skript:
+Dubbelklicka på **JavaScript-kod** och infoga följande skript:
 
 ```
 logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-Funktionen **[!UICONTROL logInfo(message)]** infogar ett meddelande i loggen.
+The **[!UICONTROL logInfo(message)]** infogar ett meddelande i loggen.
 
-Klicka på **[!UICONTROL OK]** för att stänga guiden och starta sedan arbetsflödet med åtgärdsknapparna som finns högst upp till höger i listan med arbetsflöden. När körningen är klar, se loggen. Du bör se två meddelanden som motsvarar skriptet: den ena visar arbetsflödets etikett och den andra visar det datum då skriptet aktiverades.
+Klicka **[!UICONTROL OK]** när du vill stänga guiden startar du arbetsflödet med åtgärdsknapparna längst upp till höger i listan med arbetsflöden. När körningen är klar, se loggen. Du bör se två meddelanden som motsvarar skriptet: den ena visar arbetsflödets etikett och den andra visar det datum då skriptet aktiverades.
 
 ## Variabler {#variables}
 
-Variablerna är de kostnadsfria egenskaperna för objekten **[!UICONTROL instance]**, **[!UICONTROL task]** och **[!UICONTROL event]**. De JavaScript-typer som är tillåtna för dessa variabler är **[!UICONTROL string]**, **[!UICONTROL number]** och **[!UICONTROL Date]**.
+Variablerna är de kostnadsfria egenskaperna för **[!UICONTROL instance]**, **[!UICONTROL task]** och **[!UICONTROL event]** objekt. De JavaScript-typer som tillåts för dessa variabler är **[!UICONTROL string]**, **[!UICONTROL number]** och **[!UICONTROL Date]**.
 
 ### Förekomstvariabler {#instance-variables}
 
-Instansvariablerna (**[!UICONTROL instance.vars.xxx]**) är jämförbara med globala variabler. De delas av alla aktiviteter.
+förekomstvariablerna (**[!UICONTROL instance.vars.xxx]**) kan jämföras med globala variabler. De delas av alla aktiviteter.
 
 ### Uppgiftsvariabler {#task-variables}
 
-Aktivitetsvariablerna (**[!UICONTROL task.vars.xxx]**) är jämförbara med lokala variabler. De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
+Uppgiftsvariabler (**[!UICONTROL task.vars.xxx]**) kan jämföras med lokala variabler. De används bara av den aktuella uppgiften. Variablerna används av beständiga aktiviteter för att lagra data och används ibland för att utbyta data mellan olika skript för samma aktivitet.
 
 ### Händelsevariabler {#event-variables}
 
-Händelsevariablerna (**[!UICONTROL vars.xxx]**) möjliggör datautbyte mellan de elementära uppgifterna i en arbetsflödesprocess. Dessa variabler skickas av aktiviteten som aktiverade den pågående uppgiften. Det går att ändra dem och definiera nya. De överförs sedan till följande aktiviteter.
+Händelsevariabler (**[!UICONTROL vars.xxx]**) möjliggör datautbyte mellan de grundläggande uppgifterna i en arbetsflödesprocess. Dessa variabler skickas av aktiviteten som aktiverade den pågående uppgiften. Det går att ändra dem och definiera nya. De överförs sedan till följande aktiviteter.
 
 >[!CAUTION]
 >
->När det gäller [AND-join](and-join.md)-typaktiviteter sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är obestämt.
+>Om [AND-join](and-join.md) typaktiviteter sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är obestämt.
 
 Händelsen är de vanligaste variablerna och bör användas i stället för förekomstvariabler.
 
-Vissa händelsevariabler ändras eller läses av de olika aktiviteterna. Dessa är alla strängtypsvariabler. En export ställer till exempel in variabeln **[!UICONTROL vars.filename]** med det fullständiga namnet på filen som just har exporterats. Alla dessa lästa eller ändrade variabler beskrivs i [Om aktiviteter](about-activities.md) i avsnitten **Indataparametrar** och **Utdataparametrar** för aktiviteterna.
+Vissa händelsevariabler ändras eller läses av de olika aktiviteterna. Dessa är alla strängtypsvariabler. En export ställer till exempel in **[!UICONTROL vars.filename]** variabeln med det fullständiga namnet på den fil som just har exporterats. Alla dessa lästa eller ändrade variabler beskrivs i [Om aktiviteter](about-activities.md), i avsnitten **Indataparametrar** och **Utdataparametrar** av verksamheterna.
 
 ### Användningsfall {#example}
 
 >[!NOTE]
 >
->Fler användningsexempel för arbetsflöden finns i [det här avsnittet](about-workflow-use-cases.md).
+>Fler användningsexempel om arbetsflöden finns i [det här avsnittet](about-workflow-use-cases.md).
 
 **Exempel 1**
 
@@ -129,7 +129,7 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
 
 **Exempel 2**
 
-1. Ta arbetsflödet från föregående exempel och ersätt skriptet för aktiviteten **JavaScript-kod** med följande skript:
+1. Ta arbetsflödet från föregående exempel och ersätt skriptet för **JavaScript-kod** aktivitet med följande skript:
 
    ```
    instance.vars.foo = "bar1"
@@ -137,7 +137,7 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
    task.vars.foo = "bar3"
    ```
 
-1. Lägg till följande skript i initieringsskriptet för aktiviteten **End**:
+1. Lägg till följande skript i initieringsskriptet för **End** aktivitet:
 
    ```
    logInfo("instance.vars.foo = " + instance.vars.foo)
@@ -155,13 +155,13 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
    Starting workflow (operator 'admin')
    ```
 
-I det här exemplet visas att aktiviteten efter **JavaScript-kod** kommer åt instansvariablerna och händelsvariablerna, men aktivitetsvariablerna är inte tillgängliga utifrån (&#39;undefined&#39;).
+Det här exemplet visar att aktiviteten som följer **JavaScript-kod** får åtkomst till förekomstvariablerna och händelsvariablerna, men aktivitetsvariablerna är inte tillgängliga utifrån (&#39;undefined&#39;).
 
 ### Anropa en instansvariabel i en fråga {#calling-an-instance-variable-in-a-query}
 
 När du har angett en instansvariabel i en aktivitet kan du återanvända den i en arbetsflödesfråga.
 
-Om du vill anropa en variabel **instance.vars.xxx = &quot;yyy&quot;** i ett filter anger du **$(instance/vars/xxx)**.
+Så att anropa en variabel **instance.vars.xxx = &quot;yyy&quot;** i ett filter, ange **$(instance/vars/xxx)**.
 
 Exempel:
 
@@ -173,7 +173,7 @@ Exempel:
 
    Som påminnelse lagras den här informationen i leveransloggarna.
 
-   Om du vill referera till instansvariabeln i kolumnen **[!UICONTROL Value]** anger du **$(instance/vars/@deliveryIN)**.
+   Referera till instansvariabeln i **[!UICONTROL Value]** kolumn, ange **$(instance/vars/@deliveryIN)**.
 
    Arbetsflödet returnerar mottagarna av DM42-leveransen.
 
@@ -195,4 +195,7 @@ Under vissa omständigheter kan du ändra en aktivitetsegenskap vid körningen.
 
 De flesta aktivitetsegenskaperna kan beräknas dynamiskt, antingen med en JavaScript-mall eller eftersom arbetsflödesegenskaperna uttryckligen tillåter att värdet beräknas av ett skript.
 
-För andra egenskaper måste du dock använda initieringsskriptet. Skriptet utvärderas innan aktiviteten körs. Variabeln **[!UICONTROL activity]** refererar till aktiviteten som motsvarar aktiviteten. Egenskaperna för den här aktiviteten kan ändras och påverkar bara den här aktiviteten.
+För andra egenskaper måste du dock använda initieringsskriptet. Skriptet utvärderas innan aktiviteten körs. The **[!UICONTROL activity]** variabeln refererar till aktiviteten som motsvarar uppgiften. Egenskaperna för den här aktiviteten kan ändras och påverkar bara den här aktiviteten.
+
+**Relaterade ämnen**
+[Exempel på JavaScript-kod i arbetsflöden](javascript-in-workflows.md)

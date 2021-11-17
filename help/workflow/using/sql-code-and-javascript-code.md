@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## SQL-kod {#sql-code}
 
-En **[!UICONTROL SQL code]**-aktivitet kör ett SQL-skript. Skriptet är en JST-mall.
+An **[!UICONTROL SQL code]** aktiviteten kör ett SQL-skript. Skriptet är en JST-mall.
 
 ![](assets/sql_code.png)
 
@@ -33,15 +33,18 @@ En **[!UICONTROL SQL code]**-aktivitet kör ett SQL-skript. Skriptet är en JST-
 
 ## JavaScript-kod och avancerad JavaScript-kod {#javascript-code}
 
-**[!UICONTROL JavaScript code]** och  **[!UICONTROL Advanced JavaScript code]** aktiviteter kör ett JavaScript-skript i ett arbetsflödes sammanhang. Mer information om skript finns i avsnittet [JavaScript-skript och mallar](javascript-scripts-and-templates.md).
+**[!UICONTROL JavaScript code]** och **[!UICONTROL Advanced JavaScript code]** -aktiviteter kör ett JavaScript-skript i ett arbetsflödes kontext. Mer information om skript finns i följande avsnitt:
+
+* [JavaScript-skript och mallar](javascript-scripts-and-templates.md)
+* [Exempel på JavaScript-kod i arbetsflöden](javascript-in-workflows.md)
 
 ### Körningsfördröjning {#exec-delay}
 
-Från och med version 20.2 har en körningsfördröjning lagts till i aktiviteterna **[!UICONTROL JavaScript code]** och **[!UICONTROL Advanced JavaScript code]**. Som standard får körningsfasen inte överskrida 1 timme. Efter den här fördröjningen avbryts processen med ett felmeddelande och aktivitetskörningen misslyckas.
+Från och med version 20.2 har en körningsfördröjning lagts till i **[!UICONTROL JavaScript code]** och **[!UICONTROL Advanced JavaScript code]** verksamhet. Som standard får körningsfasen inte överskrida 1 timme. Efter den här fördröjningen avbryts processen med ett felmeddelande och aktivitetskörningen misslyckas.
 
-Du kan ändra den här fördröjningen i fältet **[!UICONTROL Stop execution after]** som är tillgängligt i de här aktiviteterna.
+Du kan ändra den här fördröjningen i **[!UICONTROL Stop execution after]** fält som är tillgängliga i dessa aktiviteter.
 
-Om du vill ignorera den här gränsen måste du ange värdet **0**.
+Om du vill ignorera den här gränsen måste du ange värdet till **0**.
 
 ### JavaScript-kod {#js-code-desc}
 
@@ -49,7 +52,7 @@ Om du vill ignorera den här gränsen måste du ange värdet **0**.
 
 * **[!UICONTROL Script]**: Redigerarens centrala del innehåller skriptet som ska köras.
 
-* **[!UICONTROL Process errors]**: Se  [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**: Se [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 ### Avancerad JavaScript-kod {#adv-js-code-desc}
 
@@ -58,9 +61,9 @@ Om du vill ignorera den här gränsen måste du ange värdet **0**.
 * **[!UICONTROL First call]**: Den första zonen i redigeraren innehåller skriptet som ska köras under det första anropet.
 * **[!UICONTROL Next calls]**: Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
 * **[!UICONTROL Transitions]**: Du kan definiera flera aktivitetsutdatagränser.
-* **[!UICONTROL Schedule]**: På  **[!UICONTROL Schedule]** fliken kan du schemalägga när aktiviteten ska utlösas.
+* **[!UICONTROL Schedule]**: The **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
 
-Avancerad JavaScript är en beständig uppgift och återkommer regelbundet om den inte har markerats som slutförd. Om du vill avsluta aktiviteten och förhindra framtida återkallningar måste du använda metoden **task.setCompleted()** i avsnittet **[!UICONTROL Next calls]**:
+Avancerad JavaScript är en beständig uppgift och återkommer regelbundet om den inte har markerats som slutförd. Om du vill avbryta uppgiften och förhindra att den återkallas i framtiden måste du använda **task.setCompleted()** metoden i **[!UICONTROL Next calls]** avsnitt:
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
