@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -33,9 +33,9 @@ XML-dokument lagras i databasens MEMO-typfält.
 
 Du måste känna till Adobe Campaign datamodell för att kunna adressera fälten i databasen i dina skript.
 
-En presentation av datamodellen finns i [Adobe Campaign datamodell](../../configuration/using/data-model-description.md).
+En presentation av datamodellen finns i [Beskrivning av Adobe Campaign datamodell](../../configuration/using/data-model-description.md).
 
-Läs den här artikeln om du vill skapa en struktur: [Så här skapar du en datamodell eller en datamordlista](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
+Läs den här artikeln om du vill skapa en struktur: [Så här skapar du en datamodell eller datamordlista](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
 ## Fråga och skrivprogram {#query-and-writer}
 
@@ -49,15 +49,15 @@ För kolumner och villkor kan du använda Frågor.
 
 Detta gör att du kan isolera den underliggande SQL-koden. Frågespråket är inte beroende av den underliggande motorn: vissa funktioner mappas om, vilket kan generera flera SELECT SQL-order.
 
-Mer information finns i [Exempel på metoden &#39;ExecuteQuery&#39; i schemat &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Mer information finns i [Exempel på metoden ExecuteQuery i schemat xtk:queryDef](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Metoden **ExecuteQuery** presenteras i [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
+The **ExecuteQuery** metoden presenteras i [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
 ### Skriv {#write}
 
 Med skrivkommandon kan du skriva enkla eller komplexa dokument, med poster i en eller flera tabeller i basen.
 
-Med transaktions-API:er kan du hantera avstämningar via kommandot **updateOrInsert**: med ett kommando kan du skapa eller uppdatera data. Du kan också konfigurera ändringssammanslagning (**merge**): I det här operativläget kan du godkänna partiella uppdateringar.
+Med transaktions-API:er kan du hantera avstämningar via **updateOrInsert** kommando: med ett kommando kan du skapa eller uppdatera data. Du kan också konfigurera ändringssammanfogning (**sammanfoga**): I det här operativläget kan du godkänna partiella uppdateringar.
 
 XML-strukturen ger en logisk vy av data och gör att du kan stega dig förbi den fysiska strukturen i SQL-tabellen.
 
@@ -115,7 +115,7 @@ XML-dokumentets struktur för frågan beskrivs i schemat &quot;xtk:queryDef&quot
 </queryDef>
 ```
 
-En underfråga ( `<subquery>`) kan definieras i ett `<condition> `-element. Syntaxen för en   `<subquery> `   -elementet är baserat på syntaxen för ett    `<querydef>`.
+En underfråga ( `<subquery>`  ) kan definieras i en  `<condition> `  -element. Syntaxen för en   `<subquery> `   -elementet är baserat på syntaxen för ett    `<querydef>`.
 
 Exempel på en `<subquery>  : </subquery>`
 
@@ -133,20 +133,20 @@ Exempel på en `<subquery>  : </subquery>`
   
 ```
 
-En fråga måste referera till ett startschema från attributet **schema**.
+En fråga måste referera till ett startschema från **schema** -attribut.
 
-Den önskade typen av åtgärd anges i attributet **operation** och innehåller ett av följande värden:
+Du anger önskad typ av åtgärd i **operation** och innehåller något av följande värden:
 
 * **get**: hämtar en post från tabellen och returnerar ett fel om data inte finns,
 * **getIfExists**: hämtar en post från tabellen och returnerar ett tomt dokument om data inte finns,
 * **välj**: skapar en markör som returnerar flera poster och returnerar ett tomt dokument om det inte finns några data,
 * **antal**: returnerar ett antal data.
 
-Syntaxen **XPath** används för att hitta data baserat på indatabildsläget. Mer information om XPaths finns i [Datascheman](../../configuration/using/data-schemas.md).
+The **XPath** syntaxen används för att hitta data baserat på indatabchemat. Mer information om XPaths finns i [Datamodeller](../../configuration/using/data-schemas.md).
 
 #### Exempel på åtgärden get {#example-with-the--get--operation}
 
-Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:ecifikt&quot; schema) med ett filter i e-postmeddelandet.
+Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:receimschema&quot;) med ett filter i e-postmeddelandet.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -165,7 +165,7 @@ Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:ecifikt&quot; sc
 
 #### Exempel med åtgärden select {#example-with-the--select--operation}
 
-Returnerar listan med mottagare filtrerade i en mapp och e-postdomänen med sortering i fallande ordning på födelsedatumet.
+Returnerar listan med mottagare filtrerade i en mapp och e-postdomänen med en sortering i fallande ordning på födelsedatumet.
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -190,7 +190,7 @@ Returnerar listan med mottagare filtrerade i en mapp och e-postdomänen med sort
 
 Uttryck kan vara enkla fält eller komplexa uttryck som aritmetiska operationer eller sammanfogning av strängar.
 
-Om du vill begränsa antalet poster som ska returneras lägger du till attributet **lineCount** i `<querydef>`-elementet.
+Lägg till **lineCount** attributet till `<querydef>` -element.
 
 Så här begränsar du antalet poster som returneras av frågan till 100:
 
@@ -199,7 +199,7 @@ Så här begränsar du antalet poster som returneras av frågan till 100:
 ...
 ```
 
-Om du vill hämta de följande 100 posterna kör du samma fråga igen och lägger till attributet **startLine**.
+Om du vill hämta de följande 100 posterna kör du samma fråga igen och lägger till **startLine** -attribut.
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -212,7 +212,7 @@ Så här räknar du antalet poster i en fråga:
 
 ```
 <queryDef schema="nms:recipient" operation="count"">
-  <!-- condition on the folder and domain of the e-mail -->
+  <!-- condition on the folder and domain of the email -->
   <where>  
     <condition expr="[@folder-id] = 1234" and @domain like 'Adobe%'"/>
   </where>
@@ -221,11 +221,11 @@ Så här räknar du antalet poster i en fråga:
 
 >[!NOTE]
 >
->Återigen använder vi villkoret från föregående exempel. Satserna `<select>` och används inte. `</select>`
+>Återigen använder vi villkoret från föregående exempel. The `<select>` och -satser används inte. `</select>`
 
 #### Datagrupper {#data-grouping}
 
-Så här hämtar du e-postadresser som refereras flera gånger:
+Så här hämtar du e-postadresser som refereras mer än en gång:
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -234,7 +234,7 @@ Så här hämtar du e-postadresser som refereras flera gånger:
     <node expr="count(@email)"/>
   </select>
 
-  <!-- e-mail grouping clause -->
+  <!-- email grouping clause -->
   <groupby>
     <node expr="@email"/>
   </groupby>
@@ -247,7 +247,7 @@ Så här hämtar du e-postadresser som refereras flera gånger:
 </queryDef>
 ```
 
-Frågan kan förenklas genom att attributet **groupBy** läggs till direkt i fältet som ska grupperas:
+Frågan kan förenklas genom att lägga till **groupBy** direkt till det fält som ska grupperas:
 
 ```
 <select>
@@ -257,7 +257,7 @@ Frågan kan förenklas genom att attributet **groupBy** läggs till direkt i fä
 
 >[!NOTE]
 >
->Du behöver inte längre fylla i `<groupby>`-elementet.
+>Du behöver inte längre fylla i `<groupby>` -element.
 
 #### Brackering under förhållanden {#bracketing-in-conditions}
 
@@ -271,7 +271,7 @@ Här är två exempel på hakparenteser på samma villkor.
    </where>
    ```
 
-* Den strukturerade versionen med `<condition>`-element:
+* Den strukturerade versionen med `<condition>` element:
 
    ```
    <where>
@@ -322,7 +322,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
    </select>
    ```
 
-* Samlingslänkar (1N): filtreringen av fälten i en samlingstabell måste utföras via operatorn **EXISTS** eller **NOT EXISTS**.
+* Samlingslänkar (1N): filtreringen av fälten i en samlingstabell måste utföras via **EXISTS** eller **FINNS INTE** -operator.
 
    Så här filtrerar du de mottagare som har prenumererat på informationstjänsten Newsletter:
 
@@ -334,7 +334,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
    </where>
    ```
 
-   Direkthämtning av fälten för en samlingslänk från `<select>`-satsen rekommenderas inte eftersom frågan returnerar en kardinalprodukt. Det används bara när den länkade tabellen bara innehåller en post (exempel `<node expr="">`).
+   Direkthämtning av fälten för en samlingslänk från `<select>` -satsen rekommenderas inte eftersom frågan returnerar en kardinalprodukt. Det används bara när den länkade tabellen bara innehåller en post (exempel) `<node expr="">`).
 
    Exempel på prenumerationslänken:
 
@@ -344,9 +344,9 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
    </select>
    ```
 
-   Det går att hämta en underlista som innehåller elementen i en samlingslänk i `<select>`-satsen. XPaths för de refererade fälten är sammanhangsberoende från samlingselementet.
+   Det går att hämta en underlista som innehåller elementen i en samlingslänk i `<select>` -sats. XPaths för de refererade fälten är sammanhangsberoende från samlingselementet.
 
-   Filtrerings- ( `<orderby>`) och restriktionselementen ( `<where>`) kan läggas till i samlingselementet.
+   Filtreringen ( `<orderby>`  ) och begränsning (  `<where>`  ) kan läggas till i samlingselementet.
 
    I det här exemplet returnerar frågan e-post och en lista över informationstjänster som mottagaren prenumererar på:
 
@@ -374,7 +374,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
 Parametrarnas bindning gör att motorn kan ange värden för parametrarna som används i frågan. Detta är mycket användbart, eftersom motorn ansvarar för att värden undgås och det finns en ytterligare fördel med ett cache-minne för de parametrar som ska hämtas.
 
-När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[index]#` in postgres...) in the body of the SQL query.
+När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[index]#` in postgres..) i SQL-frågans brödtext.
 
 ```
 <select>
@@ -385,7 +385,7 @@ När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[i
 </select>
 ```
 
-För att undvika bindning av en parameter måste attributet &quot;noSqlBind&quot; fyllas i med värdet &quot;true&quot;.
+För att undvika bindning av en parameter måste attributet noSqlBind fyllas i med värdet true.
 
 >[!IMPORTANT]
 >
@@ -393,7 +393,7 @@ För att undvika bindning av en parameter måste attributet &quot;noSqlBind&quot
 
 #### Tips för frågeskapande: {#query-building-tip-}
 
-Om du vill ha hjälp med syntaxen för en fråga kan du skriva frågan med den generiska frågeredigeraren i Adobe Campaign klientkonsol ( **[!UICONTROL Tools/ Generic query editor...]**-menyn). Så här gör du:
+Om du vill ha hjälp med syntaxen i en fråga kan du skriva frågan med den generiska frågeredigeraren i Adobe Campaign klientkonsol ( **[!UICONTROL Tools/ Generic query editor...]** meny). Så här gör du:
 
 1. Välj de data som ska hämtas:
 
@@ -436,7 +436,7 @@ Exempel på ett dokument som returneras för en räkningstyp:
 
 #### Alias {#alias}
 
-Med ett alias kan du ändra platsen för data i utdatadokumentet. Attributet **alias** måste ange en XPath i motsvarande fält.
+Med ett alias kan du ändra platsen för data i utdatadokumentet. The **alias** -attributet måste ange en XPath i motsvarande fält.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -537,15 +537,15 @@ Definition av metoderna &quot;Write&quot; och &quot;WriteCollection&quot; i sche
 
 Datavstämningen utförs baserat på definitionen av nycklarna som anges i det associerade schemat. Skrivproceduren söker efter den första valbara nyckeln baserat på de data som anges i indatadokumentet. Enheten infogas eller uppdateras baserat på dess existens i databasen.
 
-Nyckeln till schemat för entiteten som ska uppdateras har slutförts baserat på attributet **xtkschema**.
+Nyckeln till schemat för den entitet som ska uppdateras har slutförts baserat på **xtkschema** -attribut.
 
-Avstämningsnyckeln kan därför framtvingas med attributet **_key** som innehåller listan med XPaths som utgör nyckeln (avgränsade med kommatecken).
+Avstämningsnyckeln kan därför tvingas med **tangent** -attribut som innehåller listan med XPaths som nyckeln består av (avgränsade med kommatecken).
 
-Det går att framtvinga typen av åtgärd genom att fylla i attributet **_operation** med följande värden:
+Det går att tvinga fram typen av åtgärd genom att fylla i **operation** -attribut med följande värden:
 
 * **infoga**: tvingar in posten (avstämningsnyckeln används inte),
 * **insertOrUpdate**: uppdaterar eller infogar posten beroende på avstämningsnyckeln (standardläge),
-* **uppdatering**: uppdaterar posten, gör ingenting om data inte finns,
+* **uppdatera**: uppdaterar posten, gör ingenting om data inte finns,
 * **delete**: tar bort posterna,
 * **ingen**: används endast för länkavstämning, utan uppdatering eller infogning.
 
@@ -595,7 +595,7 @@ Kopplar mappen till en mottagare baserat på dess interna namn (@name).
 
 Attributen&quot;_key&quot; och&quot;_operation&quot; kan anges för ett länkat element. Beteendet för det här elementet är detsamma som för huvudelementet i indatarammet.
 
-Definitionen av nyckeln för huvudentiteten (&quot;nms:receive&quot;) består av ett fält från en länkad tabell (elementet `<folder>` schema &quot;xtk:folder&quot;) och e-postmeddelandet.
+Definitionen av nyckeln för huvudentiteten (&quot;nms:receive&quot;) består av ett fält från en länkad tabell (element) `<folder>`  schema&quot;xtk:folder&quot;) och e-postadressen.
 
 >[!NOTE]
 >
@@ -625,7 +625,7 @@ Lägga till en mottagare i en grupp med grupprelationstabellen (&quot;nms:rcpGrp
 
 >[!NOTE]
 >
->Definitionen av nyckeln anges inte i `<rcpgroup>`-elementet eftersom en implicit nyckel baserad på gruppnamnet definieras i nms:group-schemat.
+>Definitionen av nyckeln anges inte i `<rcpgroup>` -element eftersom en implicit nyckel baserad på gruppnamnet har definierats i schemat &quot;nms:group&quot;.
 
 ### XML-samlingselement {#xml-collection-elements}
 

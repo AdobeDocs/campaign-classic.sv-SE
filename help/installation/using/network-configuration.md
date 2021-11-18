@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -59,7 +59,7 @@ För leveransservern (**nlserver mta**) måste följande portar vara öppna:
 
 ### Inkommande e-post {#inbound-mail}
 
-Följande portar måste vara öppna för processen för återställning av inkommande e-post (**nlserver inMail**):
+För processen för återställning av inkommande e-post (**nlserver inMail**) måste följande portar vara öppna:
 
 <table> 
  <tbody> 
@@ -70,12 +70,12 @@ Följande portar måste vara öppna för processen för återställning av inkom
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
-   <td> Server för intern e-post<br /> </td> 
+   <td> Intern e-postserver<br /> </td> 
    <td> POP3-trafik för att hämta studsmeddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> Server för intern e-post<br /> </td> 
+   <td> Intern e-postserver<br /> </td> 
    <td> SMTP-trafik för att skicka återstående studsmeddelanden som inte bearbetas automatiskt av de fördefinierade reglerna.<br /> </td> 
   </tr> 
  </tbody> 
@@ -83,7 +83,7 @@ Följande portar måste vara öppna för processen för återställning av inkom
 
 ### Programserver {#application-server}
 
-Följande portar måste vara öppna för programservern (**nlserver web**):
+För programservern (**nlserver web**) måste följande portar vara öppna:
 
 <table> 
  <tbody> 
@@ -123,7 +123,7 @@ För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öp
 
 ### Rich Client {#rich-client}
 
-För Adobe Campaign-klienten (**nlclient**) måste följande portar vara öppna:
+För Adobe Campaign Rich Client (**nlclient**) måste följande portar vara öppna:
 
 <table> 
  <tbody> 
@@ -175,7 +175,7 @@ Standardportarna är följande:
 
 ## Extern åtkomst {#external-access}
 
-Dessutom måste vissa komponenter vara tillgängliga via Internet så att e-postkampanjer som körs direkt från Adobe Campaign kan visas. Det innebär att vissa portar måste vara öppna för komponenter.
+Dessutom måste vissa komponenter vara tillgängliga från det publika Internet så att e-postkampanjer som körs direkt från Adobe Campaign kan visas. Det innebär att vissa portar måste vara öppna för komponenter.
 
 ### Omdirigeringsserver {#redirection-server}
 
@@ -226,7 +226,7 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
 
 ## Integrering med Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar den här integreringen finns i [den detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
+Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar integreringen finns i [detaljerad dokumentation](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 

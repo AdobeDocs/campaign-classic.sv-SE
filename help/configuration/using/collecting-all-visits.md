@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -29,11 +29,11 @@ En användare som är känd för plattformen är en mottagare som redan har fåt
 
 ## Serverkonfiguration {#server-configuration}
 
-Servrarna konfigureras genom att överlagra vissa element i filen **serverConf.xml**. Dessa filer sparas i underkatalogen **conf** i Adobe Campaign installationskatalog.
+Servrarna konfigureras genom att överlagra vissa element i **serverConf.xml** -fil. Dessa filer sparas i **conf** underkatalogen till Adobe Campaign installationskatalog.
 
 ### Omdirigeringsserver {#redirection-server}
 
-För omdirigeringsservern anger du **trackWebVisitors**-attributet för **redirection**-elementet till **true**.
+För omdirigeringsservern anger du **trackWebVisitors** attributet för **omdirigering** element till **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Om du vill visa spårningsinformation via klientkonsolen måste du:
 
-* Skapa en **overksam leverans** (leveransmappningen måste vara identisk med mappningen av målschemat),
-* Ange **det interna namnet** för den här leveransen i alternativet **NmsTracking_WebTrackingDelivery**.
+* Skapa en **provleverans** (leveransmappningen måste vara identisk med mappningen av målschemat),
+* Ange **internt namn** av leveransen i **NmsTracking_WebTrackingDelivery** alternativ.
 
 All information om webbplatsspårning som inte kommer direkt efter ett klick i ett e-postmeddelande kan visas i den dummy-leverans som skapas.

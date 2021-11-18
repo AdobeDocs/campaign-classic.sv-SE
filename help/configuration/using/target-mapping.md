@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Gör så här:
    </srcSchema>
    ```
 
-1. Deklarera schemat som en extern vy med attributet =&quot;true&quot;. Se [Vyattributet](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Deklarera schemat som en extern vy med attributet =&quot;true&quot;. Se [Attributet view](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -82,35 +82,35 @@ Gör så här:
       </element>
    ```
 
-1. Klicka på noden **[!UICONTROL Administration > Campaign management > Target mappings]**.
-1. Klicka på knappen **Nytt** för att öppna guiden för att skapa målmappning.
-1. Ange fältet **Etikett** och välj det schema som du just har skapat i fältet **Måldimension**.
+1. Klicka på **[!UICONTROL Administration > Campaign management > Target mappings]** nod.
+1. Klicka på **Nytt** för att öppna guiden för att skapa målmappning.
+1. Ange **Etikett** och välj det schema som du just har skapat i **Måldimension** fält.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. I fönstret **Redigera adressformulär** markerar du de fält i schemat som matchar de olika leveransadresserna. Här kan vi mappa fälten **@email** och **@mobile**.
+1. I **Redigera adressformulär** markerar du de fält i schemat som matchar de olika leveransadresserna. Här kan vi mappa **@email** och **@mobile** fält.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. I följande **lagringsfönster** anger du **suffixet för tilläggsscheman** för att skilja de nya scheman från de körklara scheman som tillhandahålls av Adobe Campaign.
+1. I följande **Lagring** -fönstret, ange **Tillägg** för att skilja de nya scheman från de färdiga scheman som tillhandahålls av Adobe Campaign.
 
-   Klicka på **[!UICONTROL Define new additional fields]** för att välja den dimension som du vill använda i leveransen.
+   Klicka **[!UICONTROL Define new additional fields]** för att välja den dimension som du vill ha som mål i leveransen.
 
    Som standard lagras undantagshantering i samma tabell som meddelanden.
 
-   Markera rutan **Generera ett lagringsschema för spårning** om du vill konfigurera lagring för spårningen som är länkad till målmappningen.
+   Kontrollera **Generera ett lagringsschema för spårning** om du vill konfigurera lagring för spårningen som är länkad till målmappningen.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns på sidan [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md).
+   >Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt. Mer information finns i [Rekommendationer och begränsningar](../../configuration/using/about-custom-recipient-table.md) sida.
 
-1. I fönstret **Tillägg** väljer du de valfria scheman som du vill generera (listan med tillgängliga scheman beror på vilka moduler som är installerade på Adobe Campaign-plattformen).
+1. I **Tillägg** väljer du de valfria scheman som du vill generera (listan med tillgängliga scheman beror på vilka moduler som är installerade på Adobe Campaign-plattformen).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Klicka på knappen **Spara** för att stänga guiden.
+1. Klicka på **Spara** för att stänga guiden.
 
    Guiden använder startschemat för att skapa alla andra scheman som behövs för att den nya målmappningen ska fungera.
 

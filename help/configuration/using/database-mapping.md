@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -28,7 +28,7 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
   </enumeration>  
 
   <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient e-mail address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
     <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
     <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
     <element label="Location" name="location">      
@@ -40,7 +40,7 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
 ## Beskrivning {#description}
 
-Schemats rotelement är inte längre **`<srcschema>`**, utan **`<schema>`**.
+Schemats rotelement är inte längre **`<srcschema>`**, men **`<schema>`**.
 
 Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av Adobe Campaign-programmet.
 
@@ -50,7 +50,7 @@ Namnreglerna för SQL är följande:
 
 * tabell: sammanfogning av schemanamnrymden och namnet
 
-   I vårt exempel anges namnet på tabellen via huvudelementet i schemat i attributet **sqltable**:
+   I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -58,10 +58,10 @@ Namnreglerna för SQL är följande:
 
 * fält: namnet på elementet föregås av ett prefix som definierats enligt typ (&#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.)
 
-   Fältnamnet anges via attributet **sqlname** för varje typ **`<attribute>`** och **`<element>`**:
+   Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
 
    ```
-   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
    ```
 
 >[!NOTE]
@@ -85,9 +85,9 @@ SQL-fältbegränsningarna är följande:
 
 ## XML-fält {#xml-fields}
 
-Som standard mappas alla typer av **`<attribute>`**- och **`<element>`**-element till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
+Som standard används alla typer **`<attribute>`** och **`<element>`** -elementet mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
 
-Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med värdet &quot;true&quot; till det aktuella elementet.
+Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
 
 **Exempel**: Här är två exempel på hur XML-fält används.
 
@@ -97,13 +97,13 @@ Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med 
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* Beskrivning av data i HTML-format:
+* Databeskrivning i HTML-format:
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Med typen html kan du lagra HTML-innehållet i en CDATA-tagg och visa en speciell HTML-redigeringskontroll i Adobe Campaign klientgränssnitt.
+   Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
 
@@ -126,7 +126,7 @@ Ett index deklareras från huvudelementet i dataschemat.
 Indexen följer följande regler:
 
 * Ett index kan referera till ett eller flera fält i tabellen.
-* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om attributet **unique** innehåller värdet &quot;true&quot;.
+* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om **unik** -attributet innehåller värdet &quot;true&quot;.
 * Indexets SQL-namn bestäms av tabellens SQL-namn och indexets namn.
 
 >[!NOTE]
@@ -149,7 +149,7 @@ Indexen följer följande regler:
          <keyfield xpath="location/@city"/> 
        </dbindex>
    
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
        <element name="location" label="Location">
          <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
        </element>
@@ -171,7 +171,7 @@ Indexen följer följande regler:
        </dbindex>
    
        <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
      </element>
    </srcSchema>
    ```
@@ -193,8 +193,8 @@ En nyckel deklareras från huvudelementet i dataschemat.
 Tangenter följer följande regler:
 
 * En nyckel kan referera till ett eller flera fält i tabellen.
-* En nyckel kallas&quot;primär&quot; (eller&quot;prioritet&quot;) när den är den första i schemat som ska fyllas i eller om den innehåller attributet **internal** med värdet &quot;true&quot;.
-* Ett unikt index deklareras implicit för varje nyckeldefinition. Det går inte att skapa ett index för nyckeln genom att lägga till attributet **noDbIndex** med värdet &quot;true&quot;.
+* En nyckel kallas för primär (eller prioritet) när den är den första i schemat som ska fyllas i eller om den innehåller **internal** -attribut med värdet &quot;true&quot;.
+* Ett unikt index deklareras implicit för varje nyckeldefinition. Det går inte att skapa ett index på nyckeln genom att lägga till **noDbIndex** -attribut med värdet &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Tangenter följer följande regler:
          <keyfield xpath="location/@city"/> 
        </key>
    
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
        <element name="location" label="Location">
          <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
        </element>
@@ -239,7 +239,7 @@ Tangenter följer följande regler:
        <keyfield xpath="location/@city"/>    
       </key>    
    
-      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
       <element label="Location" name="location">      
         <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
       </element>  
@@ -261,7 +261,7 @@ Tangenter följer följande regler:
        </key>
    
        <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
      </element>
    </srcSchema>
    ```
@@ -284,20 +284,20 @@ Tangenter följer följande regler:
        </key>    
    
        <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+       <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
      </element>
    </schema>
    ```
 
 ### Automatisk inkrementell nyckel {#auto-incremental-key}
 
-Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard SQL-funktionen **XtkNewId**) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
+Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard är **XtkNewId** SQL-funktion) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
 
 Fördelen med en inkrementell nyckel är att den ger en icke-modifierbar teknisk nyckel för kopplingarna mellan tabellerna. Dessutom tar den här nyckeln inte upp så mycket minne eftersom ett heltal med dubbla byte används.
 
-I källschemat kan du ange namnet på den sekvens som ska användas med attributet **pkSequence**. Om det här attributet inte anges i källschemat används standardsekvensen **XtkNewId**. Programmet använder dedikerade sekvenser för **nms:broadLog** och **nms:trackingLog**-scheman (**NmsBroadLogId** och **NmsTrackingLogId**) eftersom dessa är de tabeller som innehåller de flesta poster.
+I källschemat kan du ange namnet på den sekvens som ska användas med **pkSequence** -attribut. Om attributet inte anges i källschemat **XtkNewId** standardsekvens används. Programmet använder dedikerade sekvenser för **nms:broadLog** och **nms:trackingLog** scheman (**NmsBroadLogId** och **NmsTrackingLogId** eftersom dessa är de tabeller som innehåller flest poster.
 
-Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i de körklara scheman. Du kan nu skapa ett schema eller utöka ett befintligt schema med en dedikerad sekvens.
+Från ACC 18.10, **XtkNewId** är inte längre standardvärdet för sekvensen i scheman som är klara att användas. Du kan nu skapa ett schema eller utöka ett befintligt schema med en dedikerad sekvens.
 
 >[!IMPORTANT]
 >
@@ -305,9 +305,9 @@ Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i d
 
 >[!NOTE]
 >
->En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** till exempel) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **Ids**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa filerna **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** som följer med programmet i katalogen **datakit/nms/eng/sql/** för att återställa exemplet av en NmsTrackingLogId-sekvens skapas för varje databasmotor.
+>En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** t.ex.) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **ID**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** filer som ingår i programmet i **datakit/nms/eng/sql/** för att återställa exemplet på en NmsTrackingLogId-sekvensgenerering för varje databasmotor.
 
-Om du vill deklarera en unik nyckel fyller du i attributet **autopk** (med värdet &quot;true&quot;) för huvudelementet i dataschemat.
+Om du vill deklarera en unik nyckel fyller du i **autopk** attribute (with value &quot;true&quot;) on the main element of the data schema.
 
 **Exempel**:
 
@@ -382,29 +382,29 @@ En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabel
 
 Länkarna följer följande regler:
 
-* Definitionen av en länk anges på en **länk**-typ **`<element>`** med följande attribut:
+* Definitionen av en länk anges på en **link**-type **`<element>`** med följande attribut:
 
-   * **namn**: Namnet på länken från källtabellen.
-   * **mål**: målschemats namn,
+   * **name**: Namnet på länken från källtabellen.
+   * **target**: målschemats namn,
    * **label**: länketikett,
-   * **revLink**  (valfritt): Namn på omvänd länk från målschemat (dras automatiskt som standard).
-   * **integritet**  (valfritt): referensintegritet för källtabellens förekomst till måltabellens förekomst. Möjliga värden är följande:
+   * **revLink** (valfritt): Namn på omvänd länk från målschemat (dras automatiskt som standard).
+   * **integritet** (valfritt): referensintegritet för källtabellens förekomst till måltabellens förekomst. Möjliga värden är följande:
 
-      * **definiera**: det är möjligt att ta bort källförekomsten om den inte längre refereras av en målförekomst,
+      * **define**: det är möjligt att ta bort källförekomsten om den inte längre refereras av en målförekomst,
       * **normal**: Om du tar bort källförekomsten initieras nycklarna för länken till målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar.
       * **egen**: Om du tar bort källförekomsten tas målförekomsten bort.
-      * **owncopy**: samma som  **eget**  (vid borttagning) eller dubblerar förekomsterna (vid duplicering),
+      * **owncopy**: samma som **egen** (vid radering) eller dubblerar förekomsterna (vid dubblering),
       * **neutral**: gör ingenting.
-   * **revIntegrity**  (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
-   * **revCardinality**  (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typ 1-1 (1-N som standard).
-   * **externalJoin**  (valfritt): tvingar det yttre hörnet
-   * **revExternalJoin**  (valfritt): tvingar det yttre hörnet på den omvända länken
+   * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
+   * **revCardinality** (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typ 1-1 (1-N som standard).
+   * **externalJoin** (valfritt): tvingar det yttre hörnet
+   * **revExternalJoin** (valfritt): tvingar det yttre hörnet på den omvända länken
 
 
-* En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som ingår i join-elementet ( `<join>`) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
+* En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som utgör kopplingen ( `<join>`  -element) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
 * Ett index läggs automatiskt till i länkens sekundärnyckel i det utökade schemat.
 * En länk består av två halvlänkar, där den första deklareras från källschemat och den andra skapas automatiskt i målschemats utökade schema.
-* En join kan vara en yttre join om attributet **externalJoin** har lagts till, med värdet &quot;true&quot; (stöds i PostgreSQL).
+* Ett hörn kan vara ett yttre hörn om **externalJoin** -attributet läggs till med värdet &quot;true&quot; (stöds i PostgreSQL).
 
 >[!NOTE]
 >
@@ -467,9 +467,9 @@ Utökat schema för målet (&quot;cus:company&quot;):
 
 En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande parametrar:
 
-* **namn**: dras automatiskt från källschemats namn (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
+* **name**: dras automatiskt från källschemats namn (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
 * **revLink**: namn på omvänd länk
-* **mål**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
+* **target**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**: &quot;define&quot; som standard (kan framtvingas med attributet &quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
@@ -508,7 +508,7 @@ Standardvärdet returnerar identifieraren för den första giltiga parametertypf
 
 ### Exempel 5 {#example-5}
 
-I det här exemplet vill vi skapa en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;email&quot;):
+I det här exemplet vill vi skapa en nyckel på en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** och ett fält i tabellen (&quot;email&quot;):
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -543,7 +543,7 @@ Schemat som genererats:
       <keyfield xpath="@company-id"/>    
     </key>
 
-    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>
+    <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>
     <element label="Company" name="company" revLink="recipient" target="sfa:company" type="link">      
       <join xpath-dst="@id" xpath-src="@company-id"/>    
     </element>    

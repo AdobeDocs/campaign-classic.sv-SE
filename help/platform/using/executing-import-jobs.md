@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 
 >[!NOTE]
 >
->Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas exklusivt i arbetsflöden via objektet **[!UICONTROL Read list]**. Mer information finns på [den här sidan](../../workflow/using/read-list.md).
+>Du kan importera data utan att mappa dem till databasdata med **[!UICONTROL Import a list]** funktion. Data kan sedan användas exklusivt i arbetsflöden via **[!UICONTROL Read list]** -objekt. Mer information finns på [den här sidan](../../workflow/using/read-list.md).
 
 Med importguiden kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
 
@@ -39,19 +39,19 @@ I källfilen sammanfaller varje rad med en post. Data i poster avgränsas med av
 
 När du startar importguiden måste du först välja en mall. Om du till exempel vill konfigurera import av mottagare som har fått ett nyhetsbrev följer du stegen nedan:
 
-1. Välj mappen **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
-1. Klicka på **Nytt** och sedan på **Importera** för att skapa importmallen.
+1. Välj **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** mapp.
+1. Klicka **Nytt** och sedan klicka **Importera** för att skapa importmallen.
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
 
-1. Klicka på pilen till höger om fältet **[!UICONTROL Import template]** för att välja mallen eller klicka på **[!UICONTROL Select link]** för att bläddra i trädet.
+1. Klicka på pilen till höger om **[!UICONTROL Import template]** fält för att välja mallen eller klicka på **[!UICONTROL Select link]** för att bläddra i trädet.
 
-   Den interna mallen är **[!UICONTROL New text import]**. Den här mallen får inte ändras, men du kan duplicera den för att konfigurera en ny mall beroende på dina behov. Som standard sparas importmallar i noden **[!UICONTROL Profiles and targets > Templates > Job templates]**.
+   Den inbyggda mallen är **[!UICONTROL New text import]**. Den här mallen får inte ändras, men du kan duplicera den för att konfigurera en ny mall beroende på dina behov. Som standard sparas importmallar i **[!UICONTROL Profiles and targets > Templates > Job templates]** nod.
 
-1. Ange ett namn för den här importen i fältet **[!UICONTROL Label]**. Du kan lägga till en beskrivning.
-1. Välj importtyp i lämpligt fält. Det finns två typer av import: **[!UICONTROL Simple import]** om du bara vill importera en fil och **[!UICONTROL Multiple import]** om du vill importera flera filer i en enda körning.
+1. Ange ett namn för den här importen i dialogrutan **[!UICONTROL Label]** fält. Du kan lägga till en beskrivning.
+1. Välj importtyp i lämpligt fält. Det finns två typer av import: **[!UICONTROL Simple import]** för att importera endast en fil, och **[!UICONTROL Multiple import]** om du vill importera flera filer i en enda körning.
 
-   Om du vill importera flera filer väljer du **[!UICONTROL Multiple import]** i listrutan **[!UICONTROL Import type]** på första skärmen i importguiden.
+   Om du vill importera flera filer väljer du **[!UICONTROL Multiple import]** från **[!UICONTROL Import type]** nedrullningsbar lista på första skärmen i importguiden.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -59,7 +59,7 @@ När du startar importguiden måste du först välja en mall. Om du till exempel
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Varje gång en fil läggs till visas skärmen för **[!UICONTROL File to import]**-guiden. Se avsnitt [Steg 2 - Val av källfil](#step-2---source-file-selection) och följ stegen i guiden för att definiera importalternativ som för en enkel import.
+   Varje gång en fil läggs till visas skärmbilden för **[!UICONTROL File to import]** visas. Se avsnitt [Steg 2 - Välj källfil](#step-2---source-file-selection) och följ stegen i guiden för att definiera importalternativen på samma sätt som för en enkel import.
 
    >[!NOTE]
    >
@@ -67,7 +67,7 @@ När du startar importguiden måste du först välja en mall. Om du till exempel
 
 ### Avancerade parametrar {#advanced-parameters}
 
-Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alternativ:
+The **[!UICONTROL Advanced parameters]** kan du använda följande alternativ:
 
 * **[!UICONTROL General]** tab
 
@@ -93,13 +93,13 @@ Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alte
 
    >[!IMPORTANT]
    >
-   >Fliken **[!UICONTROL Variables]** är endast avsedd för programmering av arbetsflödestyp och bör endast konfigureras av expertanvändare.
+   >The **[!UICONTROL Variables]** -fliken är endast avsedd för programmering av arbetsflödestyp och bör konfigureras av enbart expertanvändare.
 
 ## Steg 2 - Välj källfil {#step-2---source-file-selection}
 
 Källfilen kan vara i textformat (txt, csv, tab, fixed columns) eller xml.
 
-Som standard är **[!UICONTROL Upload file on the server]** markerat. Klicka på mappen till höger om fältet **[!UICONTROL Local file]** för att bläddra på den lokala disken och markera filen som ska importeras. Du kan avmarkera det här alternativet om du vill ange åtkomstsökvägen och namnet på filen som ska importeras om den finns på servern.
+Som standard **[!UICONTROL Upload file on the server]** är markerat. Klicka på mappen till höger om **[!UICONTROL Local file]** om du vill bläddra på den lokala disken och välja den fil som ska importeras. Du kan avmarkera det här alternativet om du vill ange åtkomstsökvägen och namnet på filen som ska importeras om den finns på servern.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -112,12 +112,12 @@ Använd alternativen ovan för att konfigurera importen. De parametrar som defin
 * **[!UICONTROL Click here to change the file format...]** gör att du kan kontrollera filformatet och finjustera konfigurationen.
 * **[!UICONTROL Update on server...]** I kan du överföra den lokala filen till servern. Det här alternativet är bara tillgängligt om **[!UICONTROL Upload file on the server]** är markerat.
 * **[!UICONTROL Download]** är bara tillgängligt om filen har överförts till servern.
-* **[!UICONTROL Auto-detect format]** används för att initiera om datakällans format. Med det här alternativet kan du återanvända originalformaten på data som har formaterats med alternativet **[!UICONTROL Click here to change the file format...]**.
-* Med länken **[!UICONTROL Advanced parameters]** kan du filtrera källdata och komma åt avancerade alternativ. På den här skärmen kan du välja att bara importera en del av filen. Du kan också definiera ett filter, t.ex. för att importera endast användare av typen &quot;Prospect&quot; eller &quot;Customer&quot; enligt värdet för motsvarande rad. Dessa alternativ bör endast användas av JavaScript-expertanvändare.
+* **[!UICONTROL Auto-detect format]** används för att initiera om datakällans format. Med det här alternativet kan du återanvända originalformaten på data som har formaterats via **[!UICONTROL Click here to change the file format...]** alternativ.
+* The **[!UICONTROL Advanced parameters]** kan du filtrera källdata och komma åt avancerade alternativ. På den här skärmen kan du välja att bara importera en del av filen. Du kan också definiera ett filter, t.ex. för att importera endast användare av typen &quot;Prospect&quot; eller &quot;Customer&quot; enligt värdet för motsvarande rad. Dessa alternativ bör endast användas av JavaScript-expertanvändare.
 
 ### Ändra filformatet {#changing-the-file-format}
 
-Med alternativet **[!UICONTROL Click here to change the file format...]** kan du formatera källfilens data, särskilt för att ange kolumnavgränsaren och datatypen för varje fält. Den här konfigurationen utförs via följande fönster:
+The **[!UICONTROL Click here to change the file format...]** gör att du kan formatera källfilens data, och särskilt ange kolumnavgränsare och datatyp för varje fält. Den här konfigurationen utförs via följande fönster:
 
 ![](assets/s_ncs_user_import_wizard02_3.png)
 
@@ -125,7 +125,7 @@ I det här steget beskriver du hur värdena i filfälten ska läsas. Om det till
 
 Du kan visa resultatet av konfigurationen i förhandsvisningszonen i fönstrets nedre del.
 
-Klicka på **[!UICONTROL OK]** för att spara formateringen och klicka sedan på **[!UICONTROL Next]** för att visa nästa steg.
+Klicka **[!UICONTROL OK]** för att spara formateringen och sedan klicka **[!UICONTROL Next]** för att visa nästa steg.
 
 ## Steg 3 - Fältmappning {#step-3---field-mapping}
 
@@ -133,18 +133,18 @@ Du måste sedan välja målschemat och mappa data för varje kolumn till fält i
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* I fältet **[!UICONTROL Destination schema]** kan du välja det schema som data ska importeras till. Denna information är obligatorisk. Klicka på ikonen **[!UICONTROL Select link]** för att välja ett av de befintliga schemana. Klicka på **[!UICONTROL Edit link]** för att visa innehållet i den markerade tabellen.
+* The **[!UICONTROL Destination schema]** kan du välja det schema som data ska importeras till. Denna information är obligatorisk. Klicka på **[!UICONTROL Select link]** om du vill markera ett befintligt schema. Klicka **[!UICONTROL Edit link]** för att visa innehållet i den markerade tabellen.
 * I den centrala tabellen visas alla fält som definierats i källfilen. Markera de fält som ska importeras för att associera en målfil med dem. Dessa fält kan mappas manuellt eller automatiskt.
 
-   Om du vill mappa ett fält manuellt markerar du källfältet genom att klicka i kryssrutan och aktiverar sedan cellen som motsvarar det markerade fältet genom att klicka på den andra kolumnen. Klicka sedan på ikonen **[!UICONTROL Edit expression]** för att visa alla fält i den aktuella tabellen. Markera målfältet och klicka på **[!UICONTROL OK]** för att validera mappningen.
+   Om du vill mappa ett fält manuellt markerar du källfältet genom att klicka i kryssrutan och aktiverar sedan cellen som motsvarar det markerade fältet genom att klicka på den andra kolumnen. Klicka sedan på **[!UICONTROL Edit expression]** om du vill visa alla fält i den aktuella tabellen. Markera målfältet och klicka på **[!UICONTROL OK]** för att validera mappningen.
 
-   Om du vill associera källfälten och målfälten automatiskt klickar du på ikonen **[!UICONTROL Guess the destination fields]** till höger om listan med fält. De föreslagna fälten kan ändras vid behov.
+   Om du vill associera källfälten och målfälten automatiskt klickar du på knappen **[!UICONTROL Guess the destination fields]** till höger om fältlistan. De föreslagna fälten kan ändras vid behov.
 
    >[!IMPORTANT]
    >
    >Resultatet av den här åtgärden måste alltid valideras innan du fortsätter till nästa steg.
 
-* Du kan använda en omformning på de importerade fälten. Det gör du genom att klicka i cellen i kolumnen **[!UICONTROL Transformation]** som relaterar till det aktuella fältet och välja den omformning som ska användas.
+* Du kan använda en omformning på de importerade fälten. Det gör du genom att klicka i cellen i **[!UICONTROL Transformation]** kolumn som hör till det berörda fältet och välj den omformning som ska användas.
 
    ![](assets/s_ncs_user_import_wizard03_2.png)
 
@@ -167,7 +167,7 @@ Det finns fyra typer av beräknade fält:
 
    ![](assets/s_ncs_user_import_wizard03_3.png)
 
-   På fliken **[!UICONTROL Preview]** kan du visa resultatet av den definierade konfigurationen. Här har kolumnen **[!UICONTROL Subscription]** lagts till. Värdet beräknas från fältet **Status**.
+   The **[!UICONTROL Preview]** kan du visa resultatet av den definierade konfigurationen. Här är **[!UICONTROL Subscription]** kolumnen har lagts till. Värdet beräknas från **Status** fält.
 
    ![](assets/s_ncs_user_import_wizard03_4.png)
 
@@ -179,7 +179,7 @@ I importguidens avstämningssteg kan du definiera läget för att stämma av dat
 
 Skärmens centrala del innehåller ett träd med fälten och tabellerna i den Adobe Campaign-databas som data ska importeras till.
 
-Det finns särskilda alternativ för varje nod (tabell eller fält). När du klickar på den berörda noden i listan visas dess parametrar och en kort beskrivning nedan. Beteendet som definieras för varje element visas i motsvarande **[!UICONTROL Behavior]**-kolumn.
+Det finns särskilda alternativ för varje nod (tabell eller fält). När du klickar på den berörda noden i listan visas dess parametrar och en kort beskrivning nedan. Beteendet som definieras för varje element visas i motsvarande **[!UICONTROL Behavior]** kolumn.
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
@@ -201,7 +201,7 @@ Följande alternativ är tillgängliga för varje fält i den tabell som berörs
 
 >[!NOTE]
 >
->Definitionen för en avstämningsnyckel är alltid **obligatorisk**, utom vid infogning utan deduplicering.
+>Definitionen av en avstämningsnyckel är alltid **obligatoriskt**, utom vid infogning utan borttagning av dubbletter.
 
 ### Avstämningsnycklar {#reconciliation-keys}
 
@@ -229,18 +229,18 @@ Undvik att välja ett fält som kan ändras vid import. om detta inträffar kan 
 >
 >En dubblett är ett objekt som finns både i filen som ska importeras och i databasen.
 
-I fältet **[!UICONTROL Management of doubles]** kan du konfigurera borttagning av datadubbletter. Deduplicering avser poster som förekommer flera gånger **i källfilen** (eller källfiler vid import av flera filer), dvs. rader för vilka fälten i avstämningsnyckeln är identiska.
+The **[!UICONTROL Management of doubles]** I kan du konfigurera borttagning av datadubbletter. Deduplicering gäller poster som förekommer flera gånger **i källfilen** (eller källfiler vid import av flera filer), dvs. rader för vilka fälten i avstämningsnyckeln är identiska.
 
-* Duplicerad hantering i **[!UICONTROL Update]**-läge (standardläge) utför inte borttagning av dubbletter. Den sista posten har därför prioritet (eftersom den uppdaterar data från föregående poster). Räkning av dubbletter utförs inte i det här läget.
-* Duplicerad hantering i **[!UICONTROL Ignore]**-läge eller **[!UICONTROL Reject entity]** exkluderar dubbletter från importen. I det här fallet importeras ingen post.
-* I **[!UICONTROL Reject entity]**-läget importeras inte elementet och ett fel genereras i importloggarna.
-* I **[!UICONTROL Ignore]**-läget importeras inte elementet, men inga spår av felet behålls. I det här läget kan du optimera prestanda.
+* Duplicera hantering i **[!UICONTROL Update]** deduplicering utförs inte i standardläget. Den sista posten har därför prioritet (eftersom den uppdaterar data från föregående poster). Räkning av dubbletter utförs inte i det här läget.
+* Duplicera hantering i **[!UICONTROL Ignore]** läge eller **[!UICONTROL Reject entity]** undantar dubbletter från importen. I det här fallet importeras ingen post.
+* I **[!UICONTROL Reject entity]** -läget importeras inte elementet och ett fel genereras i importloggarna.
+* I **[!UICONTROL Ignore]** -läget importeras inte elementet, men inga spår av felet behålls. I det här läget kan du optimera prestanda.
 
 >[!IMPORTANT]
 >
 >Deduplicering utförs endast i minnet. Storleken på en import med borttagning av dubbletter är därför begränsad. Gränsen beror på flera parametrar (programserverns kapacitet, aktivitet, antalet fält i nyckeln, osv.). Den största tillåtna storleken för borttagning av dubbletter är 1 000 000 rader.
 
-Deduplicering gäller en post som finns både i källfilen och i databasen. Det gäller åtgärder med enbart uppdatering (dvs. **[!UICONTROL Update and insertion]** eller **[!UICONTROL Update]**). Med alternativet **[!UICONTROL Duplicate management]** kan du uppdatera eller ignorera posten om den finns både i källfilen och i databasen. Alternativet **[!UICONTROL Update or insert based on origin]** tillhör den valfria modulen och kan inte användas i en standardkontext.
+Deduplicering gäller en post som finns både i källfilen och i databasen. Det gäller åtgärder med enbart uppdatering (dvs. **[!UICONTROL Update and insertion]** eller **[!UICONTROL Update]**). The **[!UICONTROL Duplicate management]** kan du uppdatera eller ignorera posten om den finns både i källfilen och i databasen. The **[!UICONTROL Update or insert based on origin]** alternativet tillhör den valfria modulen och kan inte användas i en standardkontext.
 
 Alternativen **[!UICONTROL Reject]** och **[!UICONTROL Ignore]** fungerar enligt ovan.
 
@@ -250,11 +250,11 @@ De flesta dataöverföringsåtgärder genererar olika typer av fel (inkonsekvent
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
-Information om dessa avslag kan visas via fliken **[!UICONTROL Rejects]**.
+Information om dessa avslag kan visas via **[!UICONTROL Rejects]** -fliken.
 
 ![](assets/s_ncs_user_import_rejets_tab.png)
 
-Det finns två typer av avslag (typen visas i kolumnen **[!UICONTROL Connector]**):
+Det finns två typer av avslag (typen visas i **[!UICONTROL Connector]** kolumn):
 
 * Avvisanden av textkopplingen rör fel som inträffar när filraden bearbetas (beräkningsfält, dataanalys osv.). I det här fallet avvisas alltid hela raden om ett fel inträffar.
 * Databaskopplingen avvisar fel som inträffar under datavstämning eller skrivning till databasen. Om du importerar till flera tabeller kan refuseringen endast gälla en del av posten (t.ex. om du importerar mottagare och associerade händelser kan ett fel förhindra att en händelse uppdateras utan att mottagaren avvisas).
@@ -269,7 +269,7 @@ På datavstämningssidan kan du definiera önskat felhanteringstypfält efter f�
 
 Trädet på avvisningsskärmen för en importinstans anger vilka fält som avvisats och var felen inträffade.
 
-Du kan generera en fil som innehåller dessa poster via ikonen **[!UICONTROL Export rejects]**:
+Du kan generera en fil som innehåller dessa poster via **[!UICONTROL Export rejects]** ikon:
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
@@ -281,19 +281,19 @@ I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data sk
 
 >[!NOTE]
 >
->Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardmottagartabell (**nms:mottagare**).
+>Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardtabell för mottagare (**nms:mottagare**).
 
-* Klicka på **[!UICONTROL Edit]**-länkarna för att markera mappen, listan eller tjänsten som du vill associera eller prenumerera på mottagarna.
+* Klicka på **[!UICONTROL Edit]** länkar för att markera mappen, listan eller tjänsten som du vill associera eller abonnera på mottagarna till.
 
    1. Importera till en mapp
 
-      Med länken **[!UICONTROL Edit...]** i **[!UICONTROL Import into a folder]**-avsnittet kan du markera eller skapa den mapp som mottagarna ska importeras till. Om ingen partition är definierad importeras data som standard till operatörens standardmapp.
+      The **[!UICONTROL Edit...]** länk till **[!UICONTROL Import into a folder]** kan du markera eller skapa den mapp som mottagarna ska importeras till. Om ingen partition är definierad importeras data som standard till operatörens standardmapp.
 
       >[!NOTE]
       >
       >Standardmappen för en operator är den första mappen som operatorn har skrivåtkomst till. Läs mer i [Hantering av mappåtkomst](../../platform/using/access-management-folders.md).
 
-      Om du vill välja importmappen klickar du på pilen till höger om fältet **[!UICONTROL Folder]** och väljer den aktuella mappen. Du kan också använda ikonen **[!UICONTROL Select link]** för att visa trädet i ett nytt fönster eller skapa en ny mapp.
+      Om du vill välja importmappen klickar du på pilen till höger om **[!UICONTROL Folder]** och välj den berörda mappen. Du kan också använda **[!UICONTROL Select link]** om du vill visa trädet i ett nytt fönster eller skapa en ny mapp.
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
@@ -307,11 +307,11 @@ I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data sk
 
    1. Associera med en lista
 
-      Med länken **[!UICONTROL Edit...]** i avsnittet **[!UICONTROL Add recipients to a list]** kan du markera eller skapa en lista som mottagarna ska importeras till.
+      The **[!UICONTROL Edit...]** i **[!UICONTROL Add recipients to a list]** kan du markera eller skapa en lista som mottagarna ska importeras till.
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Du kan skapa en ny lista för dessa mottagare genom att klicka på **[!UICONTROL Select link]** och sedan på **[!UICONTROL Create]**. Skapandet och hanteringen av listor beskrivs i [det här avsnittet](../../platform/using/creating-and-managing-lists.md).
+      Du kan skapa en ny lista för dessa mottagare genom att klicka på **[!UICONTROL Select link]** sedan **[!UICONTROL Create]**. Framtagningen och hanteringen av listor presenteras i [det här avsnittet](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -319,20 +319,20 @@ I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data sk
 
    1. Prenumerera på en tjänst
 
-      Om du vill prenumerera alla importerade mottagare på en informationstjänst klickar du på länken **[!UICONTROL Edit...]** i **[!UICONTROL Subscribe recipients to a service]**-avsnittet för att markera eller skapa den informationstjänst som mottagarna ska prenumerera på. Du kan välja alternativet **[!UICONTROL Send a confirmation message]**: Innehållet i det här meddelandet definieras i den leveransmall som är kopplad till prenumerationstjänsten.
+      Om du vill prenumerera alla importerade mottagare på en informationstjänst klickar du på **[!UICONTROL Edit...]** länk till **[!UICONTROL Subscribe recipients to a service]** för att välja eller skapa den informationstjänst som mottagarna ska prenumerera på. Du kan välja **[!UICONTROL Send a confirmation message]** alternativ: Innehållet i det här meddelandet definieras i den leveransmall som är kopplad till prenumerationstjänsten.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      Du kan skapa en ny tjänst för dessa mottagare genom att klicka på **[!UICONTROL Select link]** och sedan på ikonen **[!UICONTROL Create]**. Hanteringen av informationstjänster presenteras i [det här avsnittet](../../delivery/using/managing-subscriptions.md).
+      Du kan skapa en ny tjänst för dessa mottagare genom att klicka på **[!UICONTROL Select link]** och sedan **[!UICONTROL Create]** ikon. Hanteringen av informationstjänster presenteras i [det här avsnittet](../../delivery/using/managing-subscriptions.md).
 
-* Använd fältet **[!UICONTROL Origin]** för att lägga till information om mottagarnas ursprung i deras profiler. Denna information är särskilt användbar vid import av flera produkter.
+* Använd **[!UICONTROL Origin]** om du vill lägga till information om mottagarnas ursprung i deras profiler. Denna information är särskilt användbar vid import av flera produkter.
 
-Klicka på **[!UICONTROL Next]** för att validera det här steget och visa följande steg.
+Klicka **[!UICONTROL Next]** för att validera det här steget och visa följande steg.
 
 ## Steg 6 - Starta importen {#step-6---launching-the-import}
 
-I det sista steget i guiden kan du starta dataimport. Det gör du genom att klicka på knappen **[!UICONTROL Start]**.
+I det sista steget i guiden kan du starta dataimport. Om du vill göra det klickar du på **[!UICONTROL Start]** -knappen.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Du kan sedan övervaka importjobbets körning (se [Övervaka jobbkörning](../../platform/using/monitoring-jobs-execution.md).
+Du kan sedan övervaka importjobbets körning (se [Övervaka körning av jobb](../../platform/using/monitoring-jobs-execution.md).

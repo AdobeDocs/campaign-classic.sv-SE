@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -41,13 +41,13 @@ Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Cam
 
 ## Hur konfigurerar man e-postmeddelandets levererbarhet? {#how-to-configure-email-deliverability-}
 
-Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) kan du läsa tekniska rekommendationer för leveransförmåga för att förstå hur du konfigurerar instansen för att maximera leveransen av Campaign-funktioner.
+Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv), läs igenom de tekniska rekommendationerna för leverans för att förstå hur ni ska konfigurera instansen för att maximera kapaciteten för kampanjleverans.
 
 [Klicka här för att läsa mer](../../delivery/using/about-deliverability.md).
 
 ## Hur kan jag implementera innehållsgodkännande? {#how-can-i-implement-content-approval-}
 
-Med Campaign kan du skapa godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen i samarbetsläge. För varje kampanj kan du godkänna leveransmålet, innehållet och kostnaderna. Operatörer som ansvarar för godkännande i Adobe Campaign kan meddelas via e-post och kan godkänna eller ej från konsolen eller via en webbanslutning.
+Med Campaign kan du skapa godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen i samarbetsläge. För varje kampanj kan du godkänna leveransmålet, innehållet och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan godkänna eller avvisa godkännanden från konsolen eller via en webbanslutning.
 
 [Klicka här för att läsa mer](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) och se hur du implementerar ditt godkännande av leveransinnehåll i Campaign.
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '3048'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
+>Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i [Värdmodeller](../../installation/using/hosting-models.md) avsnitt eller till [den här sidan](../../installation/using/capability-matrix.md).
 
 ## Distributionsguide {#deployment-wizard}
 
@@ -53,7 +53,7 @@ I fönstrets nedre del kan du välja vilka alternativ som ska aktiveras.
 
 * **[!UICONTROL Customer identifier used in billing]** : detta kan vara namnet på instansen och versionsnumret.
 * **[!UICONTROL Common name of the customer]** : Ange en teckensträng med företagets namn. Den här informationen kan användas i avprenumerationslänkarna.
-* **[!UICONTROL Namespace]** : Ange en kort identifierare i gemener. Målet är att skilja mellan din specifika konfiguration och fabrikskonfigurationen om du uppgraderar. Standardnamnutrymmet är **cus** - för kunden.
+* **[!UICONTROL Namespace]** : Ange en kort identifierare i gemener. Målet är att skilja mellan din specifika konfiguration och fabrikskonfigurationen om du uppgraderar. Standardnamnutrymmet är **kus** - för kunden.
 
 ### Tekniska alternativ {#technical-options}
 
@@ -80,25 +80,25 @@ Ange följande parametrar:
 
 * **[!UICONTROL Sender name]** : Avsändarens namn.
 * **[!UICONTROL Sender address]** : Avsändarens adress.
-* **[!UICONTROL Reply address text]** : Namnet, som kan anpassas, som kommer att användas när mottagaren klickar på  **[!UICONTROL Reply]** knappen i sin e-postklientprogramvara.
-* **[!UICONTROL Reply address]** : Den e-postadress som ska användas när mottagaren klickar på  **[!UICONTROL Reply]** knappen i sin e-postklientprogramvara,
+* **[!UICONTROL Reply address text]** : Namnet, som kan anpassas, som används när mottagaren klickar på **[!UICONTROL Reply]** knappen i klientprogramvaran för e-post,
+* **[!UICONTROL Reply address]** : E-postadressen som ska användas när mottagaren klickar på **[!UICONTROL Reply]** knappen i klientprogramvaran för e-post,
 * **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
 
-Utöver detta kan du ange de **masker** som är tillåtna för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.
+Förutom detta kan du ange **masker** som är behöriga för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.
 
 ### Tecken som är godkända i adresser {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-I Adobe Campaign-databasen måste alla e-postadresser skapas enligt följande: `x@y.z`. Tecknen **x**, **y** och **z** får inte vara tomma och får inte innehålla otillåtna tecken.
+I Adobe Campaign-databasen måste alla e-postadresser skapas enligt följande: `x@y.z`. The **x**, **y** och **z** får inte vara tomma och får inte innehålla otillåtna tecken.
 
-Här definierar du vilka tecken som är tillåtna (&#39;datapolicy&#39;) i databasens e-postfält. Tecken som inte finns med i listan kommer att förbjudas och nekas därför när information matas in i databasen via gränssnittet via ett webbformulär och när data importeras.
+Här definierar du vilka tecken som är tillåtna (&#39;datapolicy&#39;) i databasens e-postfält. Tecken som inte finns med i listan kommer att förbjudas och nekas därför när information matas in i databasen via gränssnittet, via ett webbformulär eller när data importeras.
 
-Två listor är tillgängliga: **Endast Europa** eller **Endast USA**. Andra tecken kan läggas till om det behövs.
+Två listor är tillgängliga: **Endast europeisk** eller **Endast USA**. Andra tecken kan läggas till om det behövs.
 
 ### Leveransparametrar {#delivery-parameters}
 
-**Avancerade parametrar..Med länken** får du tillgång till leveransalternativ, parametrar som är länkade till återförsök och karantän.
+The **Avancerade parametrar..** Med hjälp av länken kan du komma åt leveransalternativ, parametrar som är länkade till återförsök och karantän.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -113,7 +113,7 @@ Följande alternativ är tillgängliga:
 
 ### Försök igen med parametrar {#retry-parameters}
 
-Information om återställningar finns i fälten **Återställningsperioder** och **Antal återställningar**: när en mottagare inte kan nås, till exempel om inkorgen är full, försöker programmet som standard kontakta mottagaren fem gånger, med ett timmars intervall mellan varje försök (under den maximala leveranstiden). Dessa värden kan ändras efter behov.
+Information om återvinning finns i **Återställningsperioder** och **Antal återställningar** fält: när en mottagare inte kan nås, till exempel om inkorgen är full, försöker programmet som standard kontakta mottagaren fem gånger, med ett timmars intervall mellan varje försök (under den maximala leveranstiden). Dessa värden kan ändras efter behov.
 
 ### Karantänparametrar {#quarantine-parameters}
 
@@ -126,7 +126,7 @@ Konfigurationsalternativen för karantän är följande:
 
 För att kvalificera leveransfel är det mycket viktigt med studentpost. Felen kategoriseras i mappen NP@I när reglerna har fastställt orsaken.
 
-Det här steget är bara tillgängligt om hanteringsalternativen **E-postkanal** och **Skicka e-post** har valts i det första steget i distributionsguiden. Se [Allmänna parametrar](#general-parameters).
+Det här steget är bara tillgängligt om **E-postkanal** och **Studsa e-post** hanteringsalternativ väljs i det första steget i distributionsguiden. Se [Allmänna parametrar](#general-parameters).
 
 I det här steget kan du definiera inställningar för hantering av studsmeddelanden.
 
@@ -138,16 +138,16 @@ Ange de parametrar som ska anslutas till kontot för att hämta inkommande e-pos
 
 * **[!UICONTROL Label]** : Namn som innehåller alla parametrar som anges nedan.
 * **[!UICONTROL Server]** : Server som används för att hämta studentpost (inkommande e-post),
-* **[!UICONTROL Security]** : Om det behövs väljer du  **[!UICONTROL SSL]** i listrutan
+* **[!UICONTROL Security]** : Välj vid behov **[!UICONTROL SSL]** från listrutan,
 * **[!UICONTROL Port]** : serverport (vanligtvis 110),
 * **[!UICONTROL Account]** : Namn på det konto som används för studsmeddelanden.
 * **[!UICONTROL Password]** : Lösenord som är kopplat till kontot.
 
-När POP-inställningarna har angetts klickar du på **Testa** för att kontrollera att de är korrekta.
+När du har angett POP-inställningarna klickar du på **Testa** för att säkerställa att de är korrekta.
 
 ### Obearbetade studsmeddelanden {#unprocessed-bounce-mails}
 
-Satser hanteras automatiskt av Adobe Campaign och de regler som anges i noden **Administration > Kampanjhantering > Hantering av ej slutprodukter > Leveransloggens kvalifikation** tillämpas. Mer information finns i [Hantering av studentmeddelanden](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Satserna hanteras automatiskt av Adobe Campaign och de regler som anges i **Administration > Kampanjhantering > Hantering av ej slutprodukter > Leveranslogg** nod. Mer information finns i [E-posthantering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Obearbetade studsar visas inte i Adobe Campaign-gränssnittet. De tas automatiskt bort om de inte överförs till en tredje parts postlåda med följande fält:
 
@@ -157,13 +157,13 @@ Obearbetade studsar visas inte i Adobe Campaign-gränssnittet. De tas automatisk
 
 >[!IMPORTANT]
 >
->Om du vill vidarebefordra obearbetade studsmeddelanden rekommenderar Adobe att du bara fyller i fältet **[!UICONTROL Address for errors]**. Kontrollera dock att adressen som används kontrolleras regelbundet eftersom det kan medföra en stor belastning på e-postservern. Kontakta er kontoansvarige om du vill ha mer information.
+>Om du vill vidarebefordra obearbetade studsmeddelanden rekommenderar Adobe att du bara fyller i **[!UICONTROL Address for errors]** fält. Kontrollera dock att adressen som används kontrolleras regelbundet eftersom det kan medföra en stor belastning på e-postservern. Kontakta er kontoansvarige om du vill ha mer information.
 
 ## Spårningskonfiguration {#tracking-configuration}
 
 I nästa steg kan du konfigurera spårning för instansen. Instansen måste deklareras och registreras hos spårningsservern(arna).
 
-Det här steget visas bara när alternativen **E-postkanal** och **Spårning** har valts på den första sidan i distributionsguiden. Se [Allmänna parametrar](#general-parameters).
+Det här steget erbjuds endast när **E-postkanal** och **Spårning** alternativ väljs på den första sidan i distributionsguiden. Se [Allmänna parametrar](#general-parameters).
 
 Mer detaljerad information om webbspårning (spårningsläge, skapa och infoga taggar...) finns i [det här dokumentet](../../configuration/using/about-web-tracking.md).
 
@@ -173,7 +173,7 @@ När du aktiverar spårning för en instans ändras URL:erna i leveranserna unde
 
 * Informationen om externa URL:er (oavsett om de är säkra eller inte) som anges på den här sidan i distributionsguiden används för att skapa den nya URL:en. Förutom den här informationen innehåller den ändrade länken: Identifierare för leveransen, mottagaren och URL:en.
 
-   Spårningsinformation samlas in av Adobe Campaign på spårningsservrar för att berika mottagarprofiler och data som är länkade till leveransfliken ( **[!UICONTROL Tracking]**-flikar).
+   Spårningsinformation samlas in av Adobe Campaign på spårningsservrar för att berika mottagarprofiler och data som är länkade till leveransen ( **[!UICONTROL Tracking]** tabbar).
 
    Information om interna URL:er används endast av Adobe Campaign-programservern för att kontakta spårningsservern/-servrarna.
 
@@ -181,7 +181,7 @@ När du aktiverar spårning för en instans ändras URL:erna i leveranserna unde
 
 * När URL-adresserna har konfigurerats måste du aktivera spårning. För att göra detta måste instansen registreras på spårningsservern(arna).
 
-   Mer information finns i [Spara spårning](#saving-tracking).
+   Mer information finns i [Spårning sparas](#saving-tracking).
 
 ### Spårningsserver {#tracking-server}
 
@@ -190,19 +190,19 @@ När du aktiverar spårning för en instans ändras URL:erna i leveranserna unde
 För att säkerställa effektiviteten i spårningen för den här instansen måste följande information visas:
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
-* **[!UICONTROL External URL]** och/eller  **[!UICONTROL Secure external URL]** : Ange den omdirigerings-URL som ska användas i det e-postmeddelande som ska skickas.
+* **[!UICONTROL External URL]** och/eller **[!UICONTROL Secure external URL]** : Ange den omdirigerings-URL som ska användas i det e-postmeddelande som ska skickas.
 * **[!UICONTROL Internal URL(s)]** : URL:er som bara används av Adobe Campaign-servern för att kontakta spårningsservern/-servrarna för att samla in loggar och överföra URL:erna. Du behöver inte associera den med instansen.
 
    Om du inte anger någon URL används spårnings-URL som standard.
 
 Med en arkitektur som bygger på flera källor kan ni externalisera spårningshanteringen. Så här gör du:
 
-1. Välj alternativet **[!UICONTROL Externalize tracking management]**: Detta gör att du kan använda en server för mellanlagring som spårningsserver.
-1. Fyll i fälten **[!UICONTROL External account]** och **[!UICONTROL Instance name]** för att kunna ansluta till servern för mellanlagring.
+1. Välj alternativet **[!UICONTROL Externalize tracking management]** : Detta gör att du kan använda en server för mellanlagring som spårningsserver.
+1. Fyll i **[!UICONTROL External account]** och **[!UICONTROL Instance name]** fält för att kunna ansluta till servern.
 
-   Mer information finns i [Mid-sourcing-server](../../installation/using/mid-sourcing-server.md).
+   Mer information finns i [Server för mellanleverantörer](../../installation/using/mid-sourcing-server.md).
 
-1. Klicka på knappen **[!UICONTROL Enable the tracking instance]** för att godkänna anslutningen till servern.
+1. Klicka på **[!UICONTROL Enable the tracking instance]** för att godkänna anslutningen till servern.
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
@@ -210,7 +210,7 @@ Med en arkitektur som bygger på flera källor kan ni externalisera spårningsha
 
 När URL-adresserna har fyllts i måste du registrera spårningsservern.
 
-Klicka på länken **Registrering på spårningsservern/** och välj sedan ett av de tillgängliga alternativen.
+Klicka på länken **Registrering på spårningsservrar** och välj sedan ett av de tillgängliga alternativen.
 
 ![](assets/s_ncs_install_deployment_wiz_09.png)
 
@@ -222,7 +222,7 @@ Det finns tre möjliga typer av arkitektur för implementering av spårning:
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
-   Ange lösenordet för kontot **internal** på omdirigeringsservern(arna) för att konfigurera spårningsinstansen.
+   Ange lösenordet för **internal** konto på omdirigeringsservrar för att konfigurera spårningsinstansen.
 
    >[!NOTE]
    >
@@ -236,7 +236,7 @@ Det finns tre möjliga typer av arkitektur för implementering av spårning:
 
    ![](assets/s_ncs_install_deployment_wiz_10.png)
 
-   Ange lösenordet för kontot **internal** på omdirigeringsservern(arna) för att konfigurera spårningsinstansen.
+   Ange lösenordet för **internal** konto på omdirigeringsservrar för att konfigurera spårningsinstansen.
 
    >[!NOTE]
    >
@@ -246,13 +246,13 @@ Det finns tre möjliga typer av arkitektur för implementering av spårning:
 
 1. **Validera en spårningsinstans som redan är förkonfigurerad för dig**
 
-   Det här alternativet används när du inte har något lösenord för **det interna**-kontot; I det här fallet är ett spårningskonto förkonfigurerat för dig på spårningsservrarna. Ange lösenordet för spårningskontot för omdirigeringsservrarna för att validera spårningsinstansen.
+   Det här alternativet används när du inte har något lösenord för **internal** Konto. I det här fallet är ett spårningskonto förkonfigurerat för dig på spårningsservrarna. Ange lösenordet för spårningskontot för omdirigeringsservrarna för att validera spårningsinstansen.
 
    ![](assets/s_ncs_install_deployment_wiz_17.png)
 
    Ange namnet på den instans som ska valideras.
 
-Klicka på **Godkänn** för att starta inspelningsprocessen med spårningsservern.
+Klicka **Godkänn** för att starta inspelningsprocessen med spårningsservern.
 
 I föregående fönster bekräftar ett meddelande registreringen på spårningsservernivå:
 
@@ -275,19 +275,19 @@ I nästa steg kan du definiera standardinställningar för leveranser till mobil
 Ange följande information:
 
 * **[!UICONTROL Label]** : Ange ett namn för det här SMS-/Wap-push-kontot. Du kanske vill använda namnet på routern.
-* För fälten **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]**: Kontakta tjänsteleverantören för att få de inställningar som krävs.
+* För **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** fält: Kontakta tjänsteleverantören för att få de inställningar som krävs.
 
 ### Parametrar för SMS har skickats {#parameters-of-sms-sent}
 
-I listrutan **Prioritet**: Välj &quot;Normal&quot;, &quot;Hög&quot; eller &quot;Urgent&quot; för att använda det på de meddelanden som ska skickas.
+I **Prioritet** nedrullningsbar lista: Välj &quot;Normal&quot;, &quot;Hög&quot; eller &quot;Urgent&quot; för att använda det på de meddelanden som ska skickas.
 
 ### Avancerade parametrar {#advanced-parameters}
 
-**Avancerade parametrar..Med**-länken kan du komma åt alternativen Försök igen och karantän.
+The **Avancerade parametrar..** -länken gör att du kan komma åt alternativen för återförsök och karantän.
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
-Information om återförsök finns i fälten **Period med återförsök** och **Antal återförsök**: När det inte går att nå en mobil försöker programmet som standard igen fem gånger med intervall på minst 15 minuter (under den maximala leveransperioden). Dessa värden kan anpassas efter dina behov.
+Information om återförsök finns i **Period för återförsök** och **Antal återförsök** fält: När det inte går att nå en mobil försöker programmet som standard igen fem gånger med intervall på minst 15 minuter (under den maximala leveransperioden). Dessa värden kan anpassas efter dina behov.
 
 Konfigurationsalternativen för karantän är följande:
 
@@ -301,7 +301,7 @@ I det här steget kan du ange inställningar för dataprofiler.
 ![](assets/s_ncs_install_deployment_wiz_14.png)
 
 * **[!UICONTROL Consider all phone numbers as international ones]** : När det här alternativet är markerat används det internationella formatet på telefonnummer (landsprefixet är då obligatoriskt eftersom antalet siffror inte kontrolleras innan formateringen används). Om du inte väljer det här alternativet måste du själv ange &quot;+&quot; eller &quot;00&quot; som prefix för det internationella telefonnumret.
-* **[!UICONTROL Store all phone numbers using the international format]** : Det här alternativet gäller endast  **** telefonnummer som importeras eller redigeras. Ange om du vill använda ett nationellt format (till exempel 425 555 0150) eller det internationella formatet (till exempel +1 425 555 0150)
+* **[!UICONTROL Store all phone numbers using the international format]** : Detta alternativ gäller endast **inhemsk** telefonnummer som importeras eller redigeras. Ange om du vill använda ett nationellt format (till exempel 425 555 0150) eller det internationella formatet (till exempel +1 425 555 0150)
 
 ## Åtkomst från Internet {#access-from-the-internet}
 
@@ -339,11 +339,11 @@ För att kunna ses utifrån måste de bilder som används i e-postmeddelanden oc
 
 I det här steget måste du ange:
 
-1. Den nya URL:en för den offentliga resursen. Mer information finns i avsnittet [URL för offentliga resurser](#public-resources-url).
-1. Bildidentifieringsläget i en leverans. Mer information finns i avsnittet [Avläsning av leveransavbildning](#delivery-image-detection).
-1. Publiceringsalternativ. Mer information finns i avsnittet [Publiceringslägen](#publication-modes).
+1. Den nya URL:en för den offentliga resursen. Mer information finns i [URL för offentliga resurser](#public-resources-url) -avsnitt.
+1. Bildidentifieringsläget i en leverans. Mer information finns i [Avbildningsidentifiering](#delivery-image-detection) -avsnitt.
+1. Publiceringsalternativ. Mer information finns i [Publiceringslägen](#publication-modes) -avsnitt.
 
-Offentliga resurser är tillgängliga via noden **Administration > Resurser > Online > Offentliga resurser** i Adobe Campaign-trädet. De samlas in i ett bibliotek och kan inkluderas i e-postmeddelanden men också användas i kampanjer eller uppgifter, samt i innehållshantering.
+Offentliga resurser är tillgängliga via **Administration > Resurser > Online > Offentliga resurser** noden i Adobe Campaign-trädet. De samlas in i ett bibliotek och kan inkluderas i e-postmeddelanden men också användas i kampanjer eller uppgifter, samt i innehållshantering.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -353,17 +353,17 @@ I det första fältet kan du ange början på den URL som används för resurser
 
 I en leverans kan du använda bilder som lagras i resursbiblioteket eller någon annan lokal bild eller bild som lagras på en server.
 
-* För e-postbilder finns URL:en **https://** server **/res/img**.
+* För e-postbilder är **https://** server **/res/img** URL.
 
    Det här värdet kan åsidosättas för varje leverans.
 
-* För offentliga resurser anger URL:en **https://** server **/res/** instance ****där **instance**är namnet på spårningsinstansen.
+* För offentliga resurser finns URL:en **https://** server **/res/** instance ****där **instance**är namnet på spårningsinstansen.
 
 ### Avbildningsidentifiering {#delivery-image-detection}
 
 I en leverans kan du använda bilder som lagras i resursbiblioteket eller någon annan lokal bild eller bild som lagras på en server.
 
-I fältet **URL-masker** kan du ange en lista över URL-masker som ska hoppas över när bilder överförs automatiskt. Om du till exempel använder bilder som lagras på en plats som är tillgänglig från utsidan, särskilt på en webbplats, kan du ange webbplatsens URL i det här fältet.
+Fältet **URL-masker** I kan du ange en lista med URL-masker som ska hoppas över när bilder överförs automatiskt. Om du till exempel använder bilder som lagras på en plats som är tillgänglig från utsidan, särskilt på en webbplats, kan du ange webbplatsens URL i det här fältet.
 
 ![](assets/s_ncs_install_deployment_wiz_img_mask.png)
 
@@ -394,7 +394,7 @@ Följande publiceringslägen är tillgängliga:
 
    Ange sedan lösenordet.
 
-   Parametrarna för de dedikerade servrarna anges i fälten **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** och **[!UICONTROL Instance name]**.
+   Parametrarna för de dedikerade servrarna anges i **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** och **[!UICONTROL Instance name]** fält.
 
    ![](assets/s_ncs_install_images_upload_b.png)
 
@@ -415,9 +415,9 @@ Följande publiceringslägen är tillgängliga:
 
    * Kontrollera att skriptet är körbart i Unix.
 
-För bilder måste de kopieras från mappen &quot;images&quot; som anges via alternativet **NmsDelivery_ImageSubDirectory** till en eller flera frontservrar. Dessa servrar lagrar bilderna så att de blir tillgängliga via den nya konfigurerade URL:en.
+För bilder måste de kopieras från mappen &quot;images&quot; som anges via **NmsDelivery_ImageSubDirectory** till en eller flera frontservrar. Dessa servrar lagrar bilderna så att de blir tillgängliga via den nya konfigurerade URL:en.
 
-Om en leverans publiceras på en Adobe Campaign-server utan ett manuellt skript, lagras bilderna som standard i `$(XTK_INSTALL_DIR)/var/res/img/ directory`. Motsvarande URL är följande: **`https://server/res/img`**.
+Vid publicering på en Adobe Campaign-server utan ett manuellt skript lagras som standard bilderna i `$(XTK_INSTALL_DIR)/var/res/img/ directory`. Motsvarande URL är följande: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. Motsvarande URL är följande: **`https://server/res/instance`** där instansen är namnet på spårningsinstansen.
 
@@ -431,7 +431,7 @@ Med den här funktionen kan du **synkronisera offentliga resurser** på flera re
 
 Om det inte finns någon offentlig resurs på spårningsservern eller om resursen returnerar ett 404-fel, kommer spårningsservern att försöka hitta resursen på någon av de extra servrarna.
 
-Deklaration och konfigurering av reservservrar måste göras i marknadsföringsserverns **serverConf.xml**-fil. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Deklarering och konfigurering av reservservrar måste göras i marknadsföringsserverns **serverConf.xml** -fil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 **Deklaration**
 
@@ -443,7 +443,7 @@ Deklaration och konfigurering av reservservrar måste göras i marknadsföringss
 
 **Konfiguration**
 
-För varje offentlig resurs som måste synkroniseras måste du lägga till ett statusattribut i `<url>`-elementet i `<relay>`-delen:
+För varje offentlig resurs som måste synkroniseras måste du lägga till ett statusattribut i `<url>` -elementet i `<relay>` del:
 
 Statusattributet kan vara ett av tre värden:
 
@@ -451,7 +451,7 @@ Statusattributet kan vara ett av tre värden:
 
 * normal: Befintligt beteende (utan synkronisering)
 
-* svartlista: URL:en läggs till i blockeringslista om den returnerar ett 404-fel. Varaktigheten (i sekunder) för den URL som finns i blockeringslista definieras av ett **timeout**-attribut vars standardvärde är 60s.
+* svartlista: URL:en läggs till i blockeringslista om den returnerar ett 404-fel. Längden (i sekunder) på den URL som finns i blockeringslista definieras av en **timeout** attribut vars standardvärde är 60s.
 
 Synkroniseringens färdiga konfiguration är:
 
@@ -493,4 +493,4 @@ I det sista steget i distributionsguiden kan du konfigurera automatisk rensning 
 
 ![](assets/s_ncs_install_deployment_wiz_16.png)
 
-Data tas automatiskt bort via arbetsflödet för databasrensning. Mer information om hur du konfigurerar och hanterar det här arbetsflödet och information om borttagna objekt finns i det här [dokumentet](../../production/using/database-cleanup-workflow.md).
+Data tas automatiskt bort via arbetsflödet för databasrensning. Mer information om hur du konfigurerar och använder arbetsflödet samt information om borttagna objekt finns i [dokument](../../production/using/database-cleanup-workflow.md).
