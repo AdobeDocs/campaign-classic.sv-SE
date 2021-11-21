@@ -25,4 +25,4 @@ Om du migrerar från en 6.10-plattform och klientkonsolen är äldre än 8104-ve
 >
 >Om du avvisar uppdateringen kan du inte ansluta.
 
-Om du migrerar från en v6.10-plattform som är äldre än 8104-versionen måste du också läsa avsnittet [Nya funktioner i v7](../../migration/using/general-configurations.md#new-features-in-v7).
+Om du migrerar från en v6.10-plattform som är äldre än 8104-versionen måste du också läsa [Nya funktioner i v7](../../migration/using/general-configurations.md#new-features-in-v7) -avsnitt.

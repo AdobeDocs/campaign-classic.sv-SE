@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-När simuleringen är klar kan du analysera resultatet via fliken **[!UICONTROL Results]** som läggs till i simuleringsfönstret och **[!UICONTROL Breakdown of offers by rank]**-rapporten, som är tillgänglig via simuleringspanelen.
+När simuleringen är klar kan du analysera resultatet via **[!UICONTROL Results]** som läggs till i simuleringsfönstret och **[!UICONTROL Breakdown of offers by rank]** -rapport som är tillgänglig via kontrollpanelen för simuleringar.
 
 Simuleringsresultaten innehåller en uppdelning av förslag per rangordning och mottagare. Rapporteringsaxlar beaktas också och visas på den här fliken.
 
 Du kan spara dessa resultat och exportera dem om det behövs genom att skapa en beskrivande resultatanalys. Det gör du genom att klicka på lämplig länk i resultatfönstret.
 
-Mer information om den beskrivande analysguiden finns i [det här avsnittet](../../reporting/using/about-descriptive-analysis.md).
+Se [det här avsnittet](../../reporting/using/about-descriptive-analysis.md) om du vill ha mer information om guiden för beskrivande analys.
 
 ![](assets/offer_simulation_012.png)
 

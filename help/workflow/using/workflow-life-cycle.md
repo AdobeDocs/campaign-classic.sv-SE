@@ -31,16 +31,16 @@ Arbetsflödescykeln består av tre huvudsteg.
 
    Ett arbetsflöde är&quot;Slutfört&quot; när det inte längre finns några pågående uppgifter eller när en operator uttryckligen har stoppat instansen.
 
-Aktiviteterna **Start** och **Delivery** beskrivs till exempel medan aktiviteten **Approval** kraschar i arbetsflödet nedan.
+Till exempel **Starta** och **Leverans** aktiviteter anges medan **Godkännande** aktivitetsfel i arbetsflödet nedan.
 
 ![](assets/new-workflow-6.png)
 
 Detta innebär att de två första aktiviteterna har slutförts och att godkännande pågår, dvs. det har skapats men ännu inte slutförts.
 
-Tecknen **574 -OK** som visas ovanför övergången efter aktiviteten **Delivery** innebär att leveransförberedelsen har 574 mottagare som mål och att åtgärden har slutförts. Den här informationen, som läggs till i övergångarna när de körs, beräknas av aktiviteterna som bearbetar data.
+Tecknen **574 -OK** visas ovanför övergången efter **Leverans** aktiviteten innebär att leveransförberedelsen har 574 mottagare som mål och att åtgärden har slutförts utan fel. Den här informationen, som läggs till i övergångarna när de körs, beräknas av aktiviteterna som bearbetar data.
 
-Arbetsflödet startas och väntar på att en operator som tillhör gruppen som anges i aktiviteten **Approval** ska fatta ett beslut. Operatörer som tillhör gruppen och som har en e-postadress eller ett mobiltelefonnummer meddelas.
+Arbetsflödet startas och väntar på en operator som tillhör gruppen som anges i **Godkännande** att fatta ett beslut. Operatörer som tillhör gruppen och som har en e-postadress eller ett mobiltelefonnummer meddelas.
 
-Operatorhantering beskrivs i det här [avsnittet](../../platform/using/access-management.md).
+Operatörshantering beskrivs i detta [section](../../platform/using/access-management.md).
 
 Mer information om hur du övervakar arbetsflöden finns i [det här avsnittet](monitoring-workflow-execution.md).

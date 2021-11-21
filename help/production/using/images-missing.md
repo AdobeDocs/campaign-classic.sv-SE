@@ -23,11 +23,11 @@ För kunder som använder värdtjänster påverkas inte. Läs följande för anl
 
 **Apache-användare:**
 
-Apache-användare påverkas inte om de använder angiven **apache_neolane.conf**.
+Apache-användare påverkas inte om de använder den medföljande **apache_neolane.conf**.
 
 **IIS-användare:**
 
 För IIS-användare (i Windows) visas flera ikoner som saknas i konsolen efter bygguppdateringen. Ytterligare IIS-uppdateringssteg krävs:
 
-1. Efter bygguppdateringen dubbelklickar du på **iis_neolane_setup.vbs** i installationskatalogen för Campaign. Standardsökvägen är C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
+1. Efter bygguppdateringen dubbelklickar du **iis_neolane_setup.vbs** finns i installationskatalogen för Campaign. Standardsökvägen är C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
 1. Starta om IIS-webbplatsen som uppdaterades i föregående steg.

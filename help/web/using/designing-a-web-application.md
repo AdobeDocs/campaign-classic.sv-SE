@@ -21,7 +21,7 @@ Webbprogram skapas och hanteras enligt samma princip som [webbformulär](about-w
 
 >[!CAUTION]
 >
->Använd underfliken **[!UICONTROL Preview]** om du vill kontrollera fel under designen av webbprogram.
+>Använd **[!UICONTROL Preview]** underflik för att kontrollera fel under utformningen av webbprogram.
 >
 >Ändringarna visas inte för slutanvändarna förrän webbprogrammet har publicerats.
 
@@ -31,7 +31,7 @@ Du kan inkludera diagram i webbprogram. Det gör du genom att använda listrutan
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-Du kan också välja menyn **[!UICONTROL Add a chart]**.
+Du kan också välja **[!UICONTROL Add a chart]** -menyn.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -51,7 +51,7 @@ Adobe Campaign gränssnitt använder många webbprogram för att få åtkomst ti
 
 De visas i gränssnittet i form av kontrollpaneler med bara en sida.
 
-De färdiga webbprogrammen sparas i noden **[!UICONTROL Administration > Configuration > Web applications]**.
+De färdiga webbprogrammen lagras i **[!UICONTROL Administration > Configuration > Web applications]** nod.
 
 ## Redigera webbprogram av formulärtyp {#edit-forms-type-web-applications}
 

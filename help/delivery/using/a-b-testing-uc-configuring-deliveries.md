@@ -17,22 +17,22 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-När [populationer har skapats](a-b-testing-uc-population-samples.md) kan du konfigurera leveranserna. I det här fallet gör de två första leveranserna att du kan skicka olika innehåll till populationen A och B. Den tredje leveransen är reservleveransen: det skickas till mottagare som inte tillhör A eller B. Innehållet beräknas med ett skript och är identiskt med antingen A eller B, beroende på vilken som har den högsta öppna frekvensen. Vi måste konfigurera en vänteperiod för den tredje leveransen för att ta reda på resultatet av leveranserna A och B. Det är därför den tredje leveransen innehåller en **[!UICONTROL Wait]**-aktivitet.
+Once [populations are created](a-b-testing-uc-population-samples.md), you can configure the deliveries. In this use case, the first two deliveries enable you to send different contents to population A and B. The third delivery is the fall-back delivery: it will be sent to the recipients who do not belong to A nor B. Its content will be calculated by a script and will be identical to either A or B, depending on which one scored the highest open rate. Vi måste konfigurera en vänteperiod för den tredje leveransen för att ta reda på resultatet av leveranserna A och B. Det är därför den tredje leveransen innehåller **[!UICONTROL Wait]** aktivitet.
 
-1. Gå till aktiviteten **[!UICONTROL Split]** och länka övergången som är avsedd för population A till en av de e-postleveranser som redan finns i arbetsflödet.
+1. Go to the **[!UICONTROL Split]** activity and link the transition destined for population A to one of the email deliveries already in the workflow.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
-1. Dubbelklicka på leveransen för att öppna den.
-1. Välj mall för leverans A i listrutan.
+1. Double-click the delivery to open it.
+1. Using the drop-down list, select the template for delivery A.
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. Klicka på **[!UICONTROL Continue]** för att visa leveransen och spara den.
+1. Click **[!UICONTROL Continue]** to view the delivery, then save it.
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. Länka övergången för aktiviteten **[!UICONTROL Split]** som är avsedd för population B till den andra e-postleveransen.
+1. Länka övergången för **[!UICONTROL Split]** aktivitet avsedd för population B till den andra e-postleveransen.
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -40,15 +40,15 @@ När [populationer har skapats](a-b-testing-uc-population-samples.md) kan du kon
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. Länka övergången som är avsedd för den återstående populationen till aktiviteten **[!UICONTROL Wait]**.
+1. Länka övergången som är avsedd för den återstående populationen till **[!UICONTROL Wait]** aktivitet.
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. Öppna aktiviteten **[!UICONTROL Wait]** och konfigurera en vänteperiod på 5 dagar.
+1. Open the **[!UICONTROL Wait]** activity and configure a 5-day waiting period.
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. Länka aktiviteten **[!UICONTROL Wait]** till aktiviteten **[!UICONTROL JavaScript code]**.
+1. Link the **[!UICONTROL Wait]** activity to the **[!UICONTROL JavaScript code]** activity.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 

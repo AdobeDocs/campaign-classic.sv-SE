@@ -23,14 +23,14 @@ Syftet med det här användningsexemplet är att lägga till e-postbilagor direk
 
 I det här scenariot får du lära dig hur du skickar transaktionsmeddelanden med personliga och/eller personliga bilagor. Bifogade filer överförs inte i förväg till Transactional Messaging-servern: i stället genereras de direkt.
 
-När du hämtar kundinteraktioner eller kundinformation kan du behöva skicka tillbaka informationen till kunden i slutet av processen, till exempel i en PDF-fil som bifogas till ett e-postmeddelande.
+När du hämtar kundinteraktioner eller kundinformation kan du behöva skicka tillbaka den här informationen till kunden i slutet av processen, till exempel i en PDF-fil som bifogas till ett e-postmeddelande.
 
 Nedan beskrivs huvudstegen i det här scenariot:
 
 1. Kunden kommer till webbplatsen och hittar en produkt som han/hon vill köpa.
 1. Kunden väljer produkten och anpassar några alternativ.
 1. Kunden slutför transaktionen.
-1. Ett e-postmeddelande skickas till kunden som bekräftar transaktionen. Eftersom det inte rekommenderas att skicka ut PII (personligt identifierbar information) i e-postmeddelandet genereras en säker PDF-fil som bifogas till e-postmeddelandet.
+1. Ett e-postmeddelande skickas till kunden som bekräftar transaktionen. Eftersom det inte rekommenderas att skicka ut PII (personligt identifierbar information) i e-postmeddelandet genereras ett säkert PDF som bifogas i e-postmeddelandet.
 1. Kunden får det mejl och den bilaga som innehåller relevanta data.
 
 I det här scenariot är de bifogade filerna inte färdiga, utan läggs till direkt i de utgående e-postmeddelandena, vilket ger följande fördelar:
@@ -41,7 +41,7 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Rekommendationer {#important-notes}
 
@@ -54,7 +54,7 @@ Läs riktlinjerna nedan innan du implementerar detta scenario:
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementering {#implementation}
 
@@ -74,7 +74,7 @@ Om du vill lägga till en e-postbilaga i ett transaktionsmeddelande följer du s
 
 1. När du utformar e-postmeddelandet klickar du på **[!UICONTROL Attachment]**.
 
-1. På skärmen **[!UICONTROL Attachment definition]** anger du parametern SOAP attachment:
+1. I **[!UICONTROL Attachment definition]** på skärmen anger du parametern SOAP attachment:
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>

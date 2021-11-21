@@ -19,17 +19,17 @@ ht-degree: 1%
 
 Så här skapar du en rapport:
 
-1. Öppna Adobe Campaign Utforskaren och från noden **[!UICONTROL Administration > Configuration]** och välj sedan mappen **[!UICONTROL Reports]**.
-1. Klicka på knappen **[!UICONTROL New]** ovanför listan med rapporter.
+1. Öppna Adobe Campaign Explorer och från **[!UICONTROL Administration > Configuration]** nod, välj sedan **[!UICONTROL Reports]** mapp.
+1. Klicka på **[!UICONTROL New]** ovanför listan med rapporter.
 1. Markera **[!UICONTROL Create a new report from a template]** och klicka på **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
 1. Välj rapportmallen i listrutan.
 
-   * Med **[!UICONTROL Extended report]** kan du skapa en rapport som konfigurerats med hjälp av ett diagram.
-   * Med **[!UICONTROL Qualitative distribution]**-rapporten kan du skapa statistik baserat på alla typer av data (företagsnamn, e-postdomän osv.).
-   * Med **[!UICONTROL Quantitative distribution]**-rapporten kan du skapa statistik för data som kan mätas eller räknas (fakturabelopp, mottagarålder osv.).
+   * The **[!UICONTROL Extended report]** Med kan du skapa en rapport som har konfigurerats med hjälp av ett diagram.
+   * The **[!UICONTROL Qualitative distribution]** kan du skapa statistik baserat på alla typer av data (företagsnamn, e-postdomän osv.).
+   * The **[!UICONTROL Quantitative distribution]** kan du skapa statistik för data som kan mätas eller räknas (fakturabelopp, mottagarålder osv.).
 
    Mer information om de här rapportmallarna finns i [det här avsnittet](../../reporting/using/about-descriptive-analysis.md).
 
@@ -55,29 +55,29 @@ Aktiviteter länkas med övergångar, som representeras av pilar.
 
 Om du vill skapa en rapport, beroende på dess art och sammanhang, måste du identifiera de användbara elementen och ändra deras logiska sekvens.
 
-1. Använd aktiviteten **[!UICONTROL Start]** för att materialisera den första processen som ska utföras för att skapa rapporten. Du kan bara använda en av dessa aktiviteter per rapport.
+1. Använd **[!UICONTROL Start]** verksamhet för att förverkliga den första process som ska utföras för att utarbeta rapporten. Du kan bara använda en av dessa aktiviteter per rapport.
 
    Det är obligatoriskt om diagrammet innehåller en slinga.
 
-1. Lägg till en eller flera **[!UICONTROL Query]**-aktiviteter för att samla in data som är användbara när du skapar rapporten. Data kan samlas in antingen direkt via en fråga i ett databasschema eller via en importerad lista eller en befintlig kub.
+1. Lägg till en eller flera **[!UICONTROL Query]** aktiviteter för att samla in data som är användbara för att skapa rapporten. Data kan samlas in antingen direkt via en fråga i ett databasschema eller via en importerad lista eller en befintlig kub.
 
    Mer information finns i [Samla in data som ska analyseras](../../reporting/using/collecting-data-to-analyze.md).
 
    Dessa data visas (eller inte) i rapporten beroende på sidkonfigurationen.
 
-1. Placera en eller flera **[!UICONTROL Page]**-aktiviteter för att definiera den grafiska representationen av insamlade data. Du kan infoga tabeller, diagram, inmatningsfält och villkora visningen av en eller flera sidor eller element på sidan. Innehållet som visas kan konfigureras fullständigt.
+1. Montera en eller flera **[!UICONTROL Page]** aktiviteter för att definiera den grafiska representationen av insamlade data. Du kan infoga tabeller, diagram, inmatningsfält och villkora visningen av en eller flera sidor eller element på sidan. Innehållet som visas kan konfigureras fullständigt.
 
    Mer information finns i [Statiska element](#static-elements).
 
-1. Använd en **[!UICONTROL Test]**-aktivitet för att definiera villkoren för att visa eller komma åt data.
+1. Använd en **[!UICONTROL Test]** aktivitet för att definiera villkoren för att visa eller få tillgång till data.
 
-   Mer information finns i [Villkorssidvisning](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
+   Mer information finns i [Villkorsstyrd sidvisning](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. Om det behövs lägger du till anpassade skript via aktiviteten **[!UICONTROL Script]**, t.ex. för att beräkna namnet på en rapport, för att filtrera visningen av resultatet i en viss kontext osv.
+1. Om det behövs lägger du till egna skript via **[!UICONTROL Script]** aktivitet, t.ex. för att beräkna namnet på en rapport, för att filtrera visningen av resultatet i en viss kontext osv.
 
    Mer information finns i [Skriptaktivitet](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Slutligen kan du enklare läsa komplexa rapporter genom att infoga en eller flera av **[!UICONTROL Jump]**-typaktiviteter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. Aktiviteten **[!UICONTROL Jump]** kan också användas för att visa en annan rapport.
+1. Slutligen kan du infoga en eller flera **[!UICONTROL Jump]** typaktiviteter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. The **[!UICONTROL Jump]** kan även användas för att visa en annan rapport.
 
    Mer information finns i [Hoppaktivitet](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -91,11 +91,11 @@ Du kan dock placera flera grenar. Endast en av dem kommer att köras:
 
 ## Skapa en sida {#creating-a-page}
 
-Innehållet konfigureras via aktiviteter som finns i diagrammet. Mer information finns i [Modelizing the chart](#modelizing-the-chart).
+Innehållet konfigureras via aktiviteter som finns i diagrammet. Mer information finns i [Flyttar diagrammet](#modelizing-the-chart).
 
 Om du vill konfigurera en aktivitet dubbelklickar du på dess ikon.
 
-Innehållet som visas definieras i aktiviteterna av typen **Sida**.
+Innehållet som visas definieras i **Sida** typaktiviteter.
 
 En rapport kan innehålla en eller flera sidor. Sidorna skapas med en dedikerad redigerare där du kan infoga inmatningsfält, urvalsfält, statiska element, diagram eller tabeller i en trädstruktur. Behållare hjälper dig att definiera layouten. Mer information finns i [Elementlayout](../../reporting/using/element-layout.md).
 
@@ -111,12 +111,12 @@ Du kan också högerklicka på noden där du vill lägga till komponenten och v�
 >
 >Om rapporten ska exporteras i Excel-format rekommenderar vi att du inte använder komplex HTML-formatering. Mer information finns i [Exportera en rapport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-En **[!UICONTROL Page]** kan innehålla följande element:
+A **[!UICONTROL Page]** kan innehålla följande element:
 
-* Stolpdiagram, cirkelformad kurvtyp **[!UICONTROL charts]** osv.
-* pivottar; Lista med grupp eller uppdelning **[!UICONTROL tables]**.
+* Stapel, cirkelformad, kurvtyp **[!UICONTROL charts]**, osv.
+* pivottar; Lista med grupper eller uppdelningar **[!UICONTROL tables]**.
 * Text- eller nummertyp **[!UICONTROL Input controls]**.
-* Nedrullningsbar lista, kryssruta, alternativknapp, flerval, datum eller matristyp **[!UICONTROL Selection controls]**.
+* Nedrullningsbar lista, kryssruta, alternativknapp, flervalstyp, datum eller matristyp **[!UICONTROL Selection controls]**.
 * Länkredigerare, konstant, mappvalstyp **[!UICONTROL Advanced controls]**.
 * Värde, länk, HTML, bild osv. **[!UICONTROL Static elements]**.
 * **[!UICONTROL Containers]** som gör att du kan styra komponentlayouten.
@@ -129,13 +129,13 @@ Med verktygsfältet kan du lägga till eller ta bort kontroller och ordna deras 
 
 ### Statiska element {#static-elements}
 
-Med statiska element kan du visa information i rapporten, t.ex. grafiska element eller skript, som användaren inte interagerar med. Mer information finns i [det här avsnittet](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Med statiska element kan du visa information i rapporten, t.ex. grafiska element eller skript, som användaren inte interagerar med. Se [det här avsnittet](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) för mer information.
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
 ### Filtrera information i en rapport {#filtering-information-in-a-report}
 
-Med indata- och markeringskontrollerna kan du filtrera den information som visas i rapporten. Mer information om hur du implementerar den här typen av filtrering finns i [Filteralternativ i frågorna](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
+Med indata- och markeringskontrollerna kan du filtrera den information som visas i rapporten. Mer information om hur du implementerar den här typen av filtrering finns i [Filtreringsalternativ i frågor](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
 Mer information om hur du skapar och konfigurerar inmatningsfält och urvalsfält finns i [det här avsnittet](../../web/using/about-web-forms.md).
 

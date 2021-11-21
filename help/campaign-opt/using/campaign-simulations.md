@@ -125,7 +125,7 @@ När körningen är klar öppnar du simuleringen och klickar på **[!UICONTROL R
    ![](assets/simu_campaign_opti_14.png)
 
 1. The **[!UICONTROL Alerts]** underfliken grupperar alla varningsmeddelanden som genereras under simuleringen. Varningsmeddelanden kan skickas vid kapacitetsöverbelastning (om antalet mottagare som är mål överstiger den angivna kapaciteten, till exempel).
-1. The **[!UICONTROL Exploration of the exclusions]** kan du skapa en resultatanalystabell. Användaren måste ange variabler i axeln abscissa/ordinates.
+1. The **[!UICONTROL Exploration of the exclusions]** Med subtab kan du skapa en resultatanalystabell. Användaren måste ange variabler i axeln abscissa/ordinates.
 
    Ett exempel på hur analystabellen skapas finns i slutet av [Utforska resultat](#exploring-results).
 

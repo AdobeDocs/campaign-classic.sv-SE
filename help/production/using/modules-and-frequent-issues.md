@@ -24,14 +24,14 @@ Här är en lista över moduler som påverkas av vanliga problem:
   <tr> 
    <th> Modul </th> 
    <th> Körningsomfång </th> 
-   <th> Felsöka </th> 
+   <th> Felsökning </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> export </td> 
    <td> Körning av en exportprocess<br /> </td> 
-   <td> Operatorn som har schemalagt den här exporten måste starta om den. Delta eller fullständig omstart.<br /> </td> 
+   <td> Operatorn som har schemalagt den här exporten måste starta om den. Antingen delta eller fullständig omstart.<br /> </td> 
   </tr> 
   <tr> 
    <td> import </td> 
@@ -60,28 +60,28 @@ Här är en lista över moduler som påverkas av vanliga problem:
   </tr> 
   <tr> 
    <td> spårning </td> 
-   <td> Konsoliderar och hämtar spårningsloggar<br /> </td> 
+   <td> Konsolidera och hämta spårningsloggar<br /> </td> 
    <td> Markera den här modulen om spårningsloggar inte längre vidarebefordras.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
-   <td> Spåra loggskrivning och rensningsserver<br /> </td> 
+   <td> Spåra loggskrivnings- och tömningsserver<br /> </td> 
    <td> Markera den här modulen om spårningsloggar inte längre vidarebefordras och det inte finns några spårningar av loggar i filerna på servern. Se <a href="../../production/using/tracking-logs-issues.md" target="_blank">Spåra loggproblem</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> övervakningsenhet </td> 
    <td> Instans för start och övervakning<br /> </td> 
-   <td> Kontrollera den här modulen om inga processer startar.<br /> </td> 
+   <td> Markera den här modulen om inga processer startar.<br /> </td> 
   </tr> 
   <tr> 
    <td> webb </td> 
    <td> Programserver (HTTP och SOAP)<br /> </td> 
-   <td> Markera den här modulen om konsolen och webbanslutningen inte fungerar och utlöser ett <strong>xtk:session</strong>-typfel<br /> </td> 
+   <td> Markera den här modulen om konsolen och webbanslutningarna inte fungerar och utlöser en <strong>xtk:session</strong> typfel<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
-   <td> Kontrollerar körning av arbetsflödesinstansen.<br /> </td> 
-   <td> Starta om den här modulen om du råkar ut för problem. Om det behövs använder du proceduren för att öka precisionen för loggarna som anges i avsnittet <a href="../../production/using/log-precision.md" target="_blank">Log precision</a>.<br /> </td> 
+   <td> Styr körning av arbetsflödesinstansen.<br /> </td> 
+   <td> Starta om den här modulen om du råkar ut för problem. Om det behövs använder du proceduren för att öka precisionen hos loggarna som beskrivs i <a href="../../production/using/log-precision.md" target="_blank">Loggprecision</a> -avsnitt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

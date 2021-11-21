@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)**. Mer information om den här modulen finns i [avsnittet](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** som standard. Mer information om den här modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 

@@ -47,22 +47,22 @@ Användningen av en extern mottagartabell har följande begränsningar:
 
    Vi rekommenderar:
 
-   * Dedikerar **[!UICONTROL nms:BroadLogRcp]**- och **[!UICONTROL nms:TrackingLogRcp]**-scheman till den körklara **[!UICONTROL nms:Recipientschema]**. Dessa två loggtabeller ska inte länkas till någon annan anpassad mottagartabell.
-   * Definiera dedikerade anpassade sändnings- och spårningsloggscheman för varje nytt anpassat mottagarschema. Detta kan göras automatiskt när du konfigurerar målmappningen, se [Målmappning](../../configuration/using/target-mapping.md).
+   * Dedikerar **[!UICONTROL nms:BroadLogRcp]** och **[!UICONTROL nms:TrackingLogRcp]** scheman till användningsklara **[!UICONTROL nms:Recipientschema]**. Dessa två loggtabeller ska inte länkas till någon annan anpassad mottagartabell.
+   * Definiera dedikerade anpassade sändnings- och spårningsloggscheman för varje nytt anpassat mottagarschema. Detta kan du göra automatiskt när du ställer in målmappningen, se [Målmappning](../../configuration/using/target-mapping.md).
 
-* Du kan inte använda standarden **[!UICONTROL Services and Subscriptions]** som finns i produkten.
+* Du kan inte använda standarden **[!UICONTROL Services and Subscriptions]** som ingår i produkten.
 
-   Det innebär att den övergripande åtgärden som beskrivs i [det här avsnittet](../../delivery/using/managing-subscriptions.md) inte är tillämplig.
+   Detta innebär den övergripande operationen som beskrivs i [det här avsnittet](../../delivery/using/managing-subscriptions.md) är inte tillämpligt.
 
-* Länken med tabellen **[!UICONTROL visitor]** fungerar inte.
+* Länken med **[!UICONTROL visitor]** tabellen fungerar inte.
 
-   Om du vill använda modulen **[!UICONTROL Social Marketing]** måste du därför konfigurera lagringssteget så att det refererar till rätt tabell.
+   Därför ska du använda **[!UICONTROL Social Marketing]** -modulen måste du konfigurera lagringssteget så att det refererar till rätt tabell.
 
    På samma sätt måste standardmallen för inledande meddelandeöverföring anpassas när hänvisningsfunktioner används.
 
 * Du kan inte lägga till profiler manuellt i en lista.
 
-   Därför gäller proceduren som beskrivs i [det här avsnittet](../../platform/using/creating-and-managing-lists.md) inte utan ytterligare konfiguration.
+   Därför beskrivs det förfarande som beskrivs i [det här avsnittet](../../platform/using/creating-and-managing-lists.md) är inte tillämpligt utan ytterligare konfiguration.
 
    >[!NOTE]
    >
@@ -72,8 +72,8 @@ Vi rekommenderar också att du kontrollerar standardvärdena som används i de o
 
 Exempel:
 
-* Vissa standardrapporter, särskilt de som finns i **Interaction** och **Mobile Applications**, måste utvecklas om. Se avsnittet [Hantera rapporter](../../configuration/using/managing-reports.md).
-* Standardkonfigurationerna för vissa arbetsflödesaktiviteter refererar till standardmottagartabellen (**[!UICONTROL nms:recipient]**): dessa konfigurationer måste ändras när de används för en extern mottagartabell. Se avsnittet [Hantera arbetsflöden](../../configuration/using/managing-workflows.md).
-* Anpassningsblocket **[!UICONTROL Unsubscription link]** måste anpassas.
+* Vissa standardrapporter, särskilt de som tillhandahålls av **Interaktion** och **Mobila program** måste utvecklas. Se [Hantera rapporter](../../configuration/using/managing-reports.md) -avsnitt.
+* Standardkonfigurationerna för vissa arbetsflödesaktiviteter refererar till standardmottagartabellen (**[!UICONTROL nms:recipient]**): dessa konfigurationer måste ändras när de används för en extern mottagartabell. Se [Hantera arbetsflöden](../../configuration/using/managing-workflows.md) -avsnitt.
+* Standarden **[!UICONTROL Unsubscription link]** Personaliseringsblocket måste anpassas.
 * Målmappningen för standardleveransmallarna måste ändras.
 * V4-formulär är inte kompatibla med en extern mottagartabell: du måste använda webbprogram.

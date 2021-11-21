@@ -151,8 +151,8 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* Adobe rekommenderar att du börjar med mindre tabeller: På så sätt har åtminstone en del av underhållet slutförts om processen misslyckas på stora tabeller (där risken för fel är störst).
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
 >* Programsatserna VACUUM och REINDEX låser tabellen, som pausar vissa processer medan underhåll utförs.
->* För mycket stora tabeller (vanligtvis över 5 Gbit) kan VACUUM FULL-satsen bli ganska ineffektiv och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YYYNmsBroadLogXx**.
->* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* För mycket stora tabeller (vanligtvis över 5 Gbit) kan VACUUM FULL-satsen bli ganska ineffektiv och ta mycket lång tid. Adobe rekommenderar inte att du använder den för **YyyNmsBroadLogXx** tabell.
+>* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]** aktivitet. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 
 >
 
@@ -162,7 +162,7 @@ REINDEX TABLE nmsmirrorpageinfo;
 PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom VACUUM FULL-satsen låser tabellen, vilket förhindrar normal produktion. Detta innebär att underhåll måste utföras när tabellen inte används. Du kan antingen:
 
 * utföra underhåll när Adobe Campaign-plattformen stoppas,
-* stoppa de olika Adobe Campaign-undertjänster som troligen kommer att skriva i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
+* stoppa de olika Adobe Campaign-undertjänster som troligen kommer att skrivas i tabellen som återskapas (**nlserver stop wfserver instance_name** för att stoppa arbetsflödesprocessen).
 
 Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2**, som kan användas för att generera den DDL som krävs för att återskapa en tabell.
 
@@ -384,7 +384,7 @@ Här är ett exempel på tabelldefragmentering som använder specifika funktione
  $$ LANGUAGE plpgsql;
 ```
 
-Följande exempel kan användas i ett arbetsflöde för att återskapa de tabeller som krävs i stället för att använda kommandot **vakuum/rebuild**:
+Följande exempel kan användas i ett arbetsflöde för att återskapa de tabeller som behövs i stället för att använda **vakuum/återskapande** kommando:
 
 ```
 function sqlGetMemo(strSql)
@@ -415,30 +415,30 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Kontakta databasadministratören för att få information om de procedurer som är bäst för din version av Oraclet.
+Kontakta databasadministratören för att få information om de procedurer som passar bäst för din version av Oraclet.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 >[!NOTE]
 >
->För Microsoft SQL Server kan du använda den underhållsplan som finns på [den här sidan](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>För Microsoft SQL Server kan du använda underhållsplanen som finns i [den här sidan](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan version kontaktar du databasadministratören för att få reda på mer om underhållsrutiner.
 
 1. Anslut först till Microsoft SQL Server Management Studio med administratörsbehörighet.
-1. Gå till mappen **[!UICONTROL Management > Maintenance Plans]**, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**.
-1. Klicka på **[!UICONTROL Next]** när den första sidan visas.
-1. Välj den typ av underhållsplan som du vill skapa (separata scheman för varje aktivitet eller enskilt schema för hela planen) och klicka sedan på knappen **[!UICONTROL Change...]**.
-1. I fönstret **[!UICONTROL Job schedule properties]** väljer du önskade körningsinställningar och klickar på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]**.
+1. Gå till **[!UICONTROL Management > Maintenance Plans]** mapp, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**.
+1. Klicka **[!UICONTROL Next]** när den första sidan visas.
+1. Välj den typ av underhållsplan som du vill skapa (separata scheman för varje aktivitet eller ett enda schema för hela planen) och klicka sedan på **[!UICONTROL Change...]** -knappen.
+1. I **[!UICONTROL Job schedule properties]** väljer du önskade körningsinställningar och klickar på **[!UICONTROL OK]** och sedan klicka **[!UICONTROL Next]**.
 1. Välj de underhållsåtgärder du vill utföra och klicka sedan på **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
    >Vi rekommenderar att du utför åtminstone de underhållsåtgärder som visas nedan. Du kan också välja statistikuppdateringsuppgiften, även om den redan har utförts i arbetsflödet för databasrensning.
 
-1. I listrutan väljer du den databas där du vill köra uppgiften **[!UICONTROL Database Check Integrity]**.
-1. Markera databasen och klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Next]**.
-1. Konfigurera den maximala storlek som databasen tilldelas och klicka sedan på **[!UICONTROL Next]**.
+1. I listrutan väljer du den databas som du vill köra **[!UICONTROL Database Check Integrity]** uppgift.
+1. Markera databasen och klicka på **[!UICONTROL OK]** och sedan klicka **[!UICONTROL Next]**.
+1. Konfigurera den maximala storleken som tilldelats databasen och klicka sedan på **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
@@ -452,15 +452,15 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
       >[!NOTE]
       >
-      >Beroende på hur konfigurationen ser ut kan du välja antingen de tidigare markerade tabellerna eller alla tabeller i databasen.
+      >Beroende på hur konfigurationen ser ut kan du antingen välja de tidigare markerade tabellerna eller alla tabeller i databasen.
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
-      Välj de alternativ som du vill använda för indexåterskapningsaktiviteten och klicka sedan på **[!UICONTROL Next]**.
+      Välj de alternativ du vill använda för att återskapa index och klicka sedan på **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
-      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Välj alternativet **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
+      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Välj **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
 
 1. Välj de alternativ som du vill visa i aktivitetsrapporten och klicka sedan på **[!UICONTROL Next]**.
 1. Kontrollera listan över uppgifter som har konfigurerats för underhållsplanen och klicka sedan på **[!UICONTROL Finish]**.
@@ -468,14 +468,14 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
    En sammanfattning av underhållsplanen och statusvärdena för de olika stegen visas.
 
 1. När underhållsplanen är klar klickar du på **[!UICONTROL Close]**.
-1. Dubbelklicka på mappen **[!UICONTROL Management > Maintenance Plans]** i Microsoft SQL Server Explorer.
+1. Dubbelklicka på **[!UICONTROL Management > Maintenance Plans]** mapp.
 1. Välj Adobe Campaign underhållsplan: de olika stegen beskrivs i ett arbetsflöde.
 
-   Observera att ett objekt har skapats i mappen **[!UICONTROL SQL Server Agent > Jobs]**. Med det här objektet kan du starta underhållsplanen. I vårt exempel finns det bara ett objekt eftersom alla underhållsåtgärder ingår i samma plan.
+   Observera att ett objekt har skapats i **[!UICONTROL SQL Server Agent > Jobs]** mapp. Med det här objektet kan du starta underhållsplanen. I vårt exempel finns det bara ett objekt eftersom alla underhållsåtgärder ingår i samma plan.
 
    >[!IMPORTANT]
    >
-   >Microsoft SQL Server-agenten måste vara aktiverad för att det här objektet ska kunna köras.
+   >För att det här objektet ska kunna köras måste Microsoft SQL Server-agenten aktiveras.
 
 **Konfigurera en separat databas för arbetsregister**
 
@@ -483,7 +483,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 >
 >Den här konfigurationen är valfri.
 
-Med alternativet **WdbcOptions_TempDbName** kan du konfigurera en separat databas för fungerande tabeller på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering.
+The **WdbcOptions_TempDbName** gör att du kan konfigurera en separat databas för arbetsregister på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering.
 
 Det här alternativet kan användas om du vill att arbetsregister (t.ex. tabeller som skapas när ett arbetsflöde körs) ska skapas i en annan databas.
 

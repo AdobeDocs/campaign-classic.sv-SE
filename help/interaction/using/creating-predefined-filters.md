@@ -21,7 +21,7 @@ Med fördefinierade filter kan du skapa regler för berättigande för målpopul
 
 Så här skapar du ett filter:
 
-1. Gå till mappen **[!UICONTROL Administration]** och välj **[!UICONTROL Pre-defined offer filters]**.
+1. Gå till **[!UICONTROL Administration]** mapp och markera **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -41,7 +41,7 @@ Så här skapar du ett filter:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Klicka på **[!UICONTROL Preview]** för att visa resultatet av filtret.
+1. Klicka **[!UICONTROL Preview]** om du vill visa resultatet av filtret.
 
    ![](assets/offer_filter_create_006.png)
 

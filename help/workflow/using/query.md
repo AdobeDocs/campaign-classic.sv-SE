@@ -20,7 +20,7 @@ ht-degree: 0%
 ## Skapa en fråga {#creating-a-query}
 
 Med en fråga kan du välja ett mål enligt villkor. Du kan koppla en segmentkod till frågeresultatet och infoga ytterligare data i den.
-Mer information om frågeexempel finns i det här [avsnittet](querying-recipient-table.md).
+Mer information om frågeexempel finns i [det här avsnittet](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Mer information om frågeexempel finns i det här [avsnittet](querying-recipient
 
 Mer information om hur du använder och hanterar ytterligare data finns i [Lägga till data](#adding-data).
 
-Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsningar och urvalskriterier för populationen på följande sätt:
+The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begränsningarna och urvalskriterierna för populationen på följande sätt:
 
 1. Välj målinriktning och filtreringsdimension. Som standard är målet markerat bland mottagarna. Listan med begränsningsfilter är densamma som de som används för leveransmål.
 
@@ -42,21 +42,21 @@ Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsnin
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   En fråga kan baseras på data från den inkommande övergången, om det behövs, genom att välja **[!UICONTROL Temporary schema]** när du väljer mål- och filtreringsdimensioner.
+   En fråga kan vid behov baseras på data från den inkommande övergången genom att välja **[!UICONTROL Temporary schema]** när du väljer målinriktning och filtreringsdimensioner.
 
    ![](assets/query_temporary_table.png)
 
-1. Definiera populationerna med guiden. Fälten som ska anges kan variera beroende på måltyp. Du kan förhandsgranska målpopulationen med dina aktuella villkor på fliken **[!UICONTROL Preview]**.
+1. Definiera populationerna med guiden. Fälten som ska anges kan variera beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
 
-   Mer information om hur du skapar och använder filter och frågor finns i det här [avsnittet](../../platform/using/filtering-options.md).
+   Mer information om hur du skapar och använder filter och frågor finns i [section](../../platform/using/filtering-options.md).
 
    ![](assets/s_user_segmentation_wizard.png)
 
-1. Om du har valt **[!UICONTROL Filtering conditions]** i steg 1 eller använder alternativet **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** måste du lägga till filtervillkor manuellt senare.
+1. Om du har valt **[!UICONTROL Filtering conditions]** i steg 1 eller med **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** måste du lägga till filtervillkor manuellt senare.
 
-   Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i [avsnittet](querying-using-grouping-management.md).
+   Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i [section](querying-using-grouping-management.md).
 
-   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsvisa **[!UICONTROL Corresponding SQL query...]** för villkorskombinationen. Mer information finns i [avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsgranska **[!UICONTROL Corresponding SQL query...]** för din villkorskombination. Mer information om detta finns i [section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
    Spara filtret om du vill återanvända det senare.
 
@@ -66,7 +66,7 @@ Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsnin
 
 Med de extra kolumnerna kan du samla in ytterligare information om målpopulationen, t.ex. avtalsnummer, prenumerationer på nyhetsbrev eller ursprung. Dessa data kan lagras i Adobe Campaign-databasen eller i en extern databas.
 
-Med länken **[!UICONTROL Add data...]** kan du välja vilka ytterligare data som ska samlas in.
+The **[!UICONTROL Add data...]** kan du välja vilka ytterligare data som ska samlas in.
 
 ![](assets/wf_add_data_link.png)
 
@@ -75,8 +75,8 @@ Börja med att välja vilken typ av data som ska läggas till:
 ![](assets/wf_add_data_1st_option.png)
 
 * Välj **[!UICONTROL Data linked to the filtering dimension]** för att markera data i Adobe Campaign-databasen.
-* Välj **[!UICONTROL External data]** om du vill lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt alternativet **Åtkomst till externa data**. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
-* Välj alternativet **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner där du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt modulen **Interaktion**.
+* Välj **[!UICONTROL External data]** för att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt **Åtkomst till federerade data** alternativ. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
+* Välj **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner som gör att du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt **Interaktion** -modul.
 
 Om ingen valfri modul är installerad på plattformen visas inte det här steget. Du kommer att gå direkt till nästa steg.
 
@@ -92,21 +92,21 @@ Så här lägger du till data från Adobe Campaign-databasen:
 
    Du kan lägga till:
 
-   * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Du kan till exempel gå till [Markera data](targeting-data.md#selecting-data).
-   * Ett nytt fält som skapats med knappen **[!UICONTROL Add]** till höger om listan med utdatakolumner.
+   * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Till exempel, gå till [Markera data](targeting-data.md#selecting-data).
+   * Ett nytt fält som skapats med **[!UICONTROL Add]** till höger om listan med utdatakolumner.
 
       Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-data.md#editing-additional-data).
 
 Så här lägger du till en samling information som är länkad till en målpopulation:
 
-1. I det första steget i guiden väljer du alternativet **[!UICONTROL Data linked to the filtering dimension]**:
+1. I det första steget i guiden väljer du **[!UICONTROL Data linked to the filtering dimension]** alternativ:
 1. Markera tabellen som innehåller den information som du vill samla in och klicka på **[!UICONTROL Next]**.
 
    ![](assets/wf_add_data_linked_table.png)
 
-1. Om det behövs anger du antalet element i samlingen som du vill behålla genom att välja ett av värdena i fältet **[!UICONTROL Data collected]**. Som standard återskapas alla rader i samlingen och filtreras sedan enligt villkoren som anges i följande steg.
+1. Ange vid behov antalet element i samlingen som du vill behålla genom att välja ett av värdena i **[!UICONTROL Data collected]** fält. Som standard återskapas alla rader i samlingen och filtreras sedan enligt villkoren som anges i följande steg.
 
-   * Om ett enskilt element i samlingen sammanfaller med filtervillkoren för den här samlingen väljer du **[!UICONTROL Single row]** i fältet **[!UICONTROL Data collected]**.
+   * Om ett enskilt element i samlingen sammanfaller med filtervillkoren för den här samlingen väljer du **[!UICONTROL Single row]** i **[!UICONTROL Data collected]** fält.
 
       >[!IMPORTANT]
       >
@@ -114,8 +114,8 @@ Så här lägger du till en samling information som är länkad till en målpopu
       >
       >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
 
-   * Om du väljer att återställa flera rader (**[!UICONTROL Limit the line count]**) kan du ange antalet rader som ska samlas in.
-   * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda värdet **[!UICONTROL Aggregates]**.
+   * Om du väljer att återställa flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
+   * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda **[!UICONTROL Aggregates]** värde.
 
    ![](assets/query_add_collection_param.png)
 
@@ -123,7 +123,7 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
    ![](assets/query_add_columns_collection_filter.png)
 
-1. Om du har valt alternativet **[!UICONTROL Limit the line count]** anger du i vilken ordning de insamlade data ska filtreras. När antalet rader som samlas in är fler än antalet rader som du har angett att de ska behållas kan du ange vilka rader som ska behållas i filtreringsordningen.
+1. Om du har valt **[!UICONTROL Limit the line count]** anger du i vilken ordning de insamlade uppgifterna ska filtreras. När antalet rader som samlas in är fler än antalet rader som du har angett att de ska behållas kan du ange vilka rader som ska behållas i filtreringsordningen.
 
 ## Exempel: Riktning på enkla mottagarattribut {#example--targeting-on-simple-recipient-attributes}
 
@@ -133,11 +133,11 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 >
 >Ytterligare frågeexempel presenteras i [det här avsnittet](querying-recipient-table.md).
 
-1. Ge frågan ett namn och välj sedan länken **[!UICONTROL Edit query...]**.
+1. Ge frågan ett namn och välj sedan **[!UICONTROL Edit query...]** länk.
 1. Välj **[!UICONTROL Filtering conditions]** i listan över tillgängliga filtertyper.
 1. Ange olika villkor för det föreslagna målet. Här kombineras villkor med alternativet AND. För att kunna inkluderas i urvalet måste mottagarna uppfylla följande fyra villkor:
 
-   * Mottagare vars titel är &quot;Mr.&quot; (kan också hittas med fältet **Kön** och välja **Man** som värde).
+   * Mottagare vars titel är &quot;Mr.&quot; (kan också hittas med **Kön** fält och markera **Man** som ett värde).
    * Mottagare under 30 år.
    * Mottagare över 18 år.
    * Mottagare som bor i Frankrike.
@@ -152,7 +152,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 
    ![](assets/query_example_preview.png)
 
-1. Spara filtren så att du kan använda dem igen vid ett senare tillfälle genom att klicka på **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
+1. Spara dina filter så att du kan använda dem igen vid ett senare tillfälle genom att klicka på **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
 1. Fortsätt redigera arbetsflödet genom att lägga till andra aktiviteter i det. När det har startats och föregående frågesteg är klart visas antalet mottagare. Du kan visa mer information med hjälp av snabbmenyn (högerklicka på övergången > **[!UICONTROL Display the target...]**).
 
    ![](assets/query_example_result.png)
@@ -163,7 +163,7 @@ I följande exempel syftar frågan till att identifiera män mellan 18 och 30 å
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna,  **[!UICONTROL schema]** är populationens schema (vanligtvis nms:mottagare) och  **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar den population som frågan riktar sig till. **[!UICONTROL tableName]** är namnet på den tabell som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
 
 Det här värdet är arbetstabellens schema. Den här parametern är giltig för alla övergångar med **[!UICONTROL tableName]** och **[!UICONTROL schema]**.
 
@@ -180,9 +180,9 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 * Undvik yttre kopplingar. Använd posten med noll-ID när det är möjligt för att få en yttre kopplingsfunktion.
 * Använd rätt datatyp för kopplingar.
 
-   Kontrollera att `where`-satsen är av samma typ som fältet.
+   Se till att `where` -satsen är av samma typ som fältet.
 
-   Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält och `3` anger ett textvärde.
+   Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält, och `3` anger ett textvärde.
 
    Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
@@ -194,7 +194,7 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
 ### Funktioner {#functions}
 
-* Var uppmärksam på funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
+* Se upp för funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
 * Kontrollera frågor med &quot;gilla&quot;-instruktionen eller &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Upper&quot; på användarindata, inte i databasfältet.
 
    Mer information om funktioner finns i [det här avsnittet](../../platform/using/defining-filter-conditions.md#list-of-functions).

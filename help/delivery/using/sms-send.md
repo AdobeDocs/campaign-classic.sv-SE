@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## Skicka SMS-meddelanden {#sending-sms-messages}
 
-Om du vill godkänna meddelandet och skicka det till mottagarna av den leverans som skapas klickar du på **[!UICONTROL Send]**.
+Om du vill godkänna meddelandet och skicka det till mottagarna av det som skapas klickar du på **[!UICONTROL Send]**.
 
 Den detaljerade processen för att validera och skicka en leverans presenteras i avsnitten nedan:
 
@@ -28,7 +28,7 @@ Den detaljerade processen för att validera och skicka en leverans presenteras i
 
 ## Avancerade parametrar {#advanced-parameters}
 
-Knappen **[!UICONTROL Properties]** ger åtkomst till den avancerade leveransparametern. Parametrarna som är specifika för SMS-leveranser finns i avsnittet **[!UICONTROL SMS parameters]** på fliken **[!UICONTROL Delivery]**.
+The **[!UICONTROL Properties]** ger åtkomst till den avancerade parametern för leverans. Parametrarna som är specifika för SMS-leveranser finns i **[!UICONTROL SMS parameters]** i **[!UICONTROL Delivery]** -fliken.
 
 Följande alternativ är tillgängliga:
 
@@ -44,7 +44,7 @@ Följande alternativ är tillgängliga:
 
 * **Överföringsläge**: meddelandeöverföring via SMS.
 * **Prioritet**: prioritetsnivå som tilldelats ett meddelande. **[!UICONTROL Normal]** som standard är prioritet vald. Fråga tjänsteleverantören om kostnaden för SMS som skickas med **[!UICONTROL High]** prioritet.
-* **Typ av program**: välj det program som du vill tilldela din SMS-leverans. Alternativet **[!UICONTROL Direct Marketing]** är valt som standard och är det vanligaste alternativet.
+* **Typ av tillämpning**: välj det program som du vill tilldela din SMS-leverans. The **[!UICONTROL Direct Marketing]** är markerat som standard och är det vanligaste alternativet.
 
 **Parametrar som är specifika för NetSize-kopplingen**
 
@@ -68,7 +68,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
 ## Bearbeta inkommande meddelanden {#processing-inbound-messages}
 
-Modulen **nlserver sms** frågar SMS-routern med regelbundna intervall. Detta gör att Adobe Campaign kan följa upp leveransförloppet och hantera statusrapporter och mottagarnas begäran om att ta bort prenumerationen.
+The **nlserver sms** Modulen frågar SMS-routern med regelbundna intervall. Detta gör att Adobe Campaign kan följa upp leveransförloppet och hantera statusrapporter och mottagarnas begäran om att ta bort prenumerationen.
 
 * **Statusrapporter**: visa leveransloggar för att kontrollera status för dina meddelanden.
 
@@ -80,19 +80,19 @@ Modulen **nlserver sms** frågar SMS-routern med regelbundna intervall. Detta g�
    > * Ett SMS-konto kan bara länkas till ett enda externt konto för att säkerställa att statusrapporter tilldelas rätt konto
 
 
-* **Avbeställ**: Mottagare som inte längre vill ta emot SMS-leveranser kan returnera ett meddelande som innehåller ordet STOP. Om din leverantör tillåter det enligt avtalsvillkoren kan du hämta meddelanden via arbetsflödesaktiviteten **Inkommande SMS** och sedan skapa en fråga för att aktivera alternativet **Kontakta inte längre den här mottagaren** för de berörda mottagarna.
+* **Avsluta prenumeration**: Mottagare som inte längre vill ta emot SMS-leveranser kan returnera ett meddelande som innehåller ordet STOP. Om din leverantör tillåter det enligt avtalsvillkoren kan du hämta meddelanden via **Inkommande SMS** arbetsflödesaktivitet och skapa sedan en fråga för att aktivera **Kontakta inte längre den här mottagaren** möjlighet för de berörda mottagarna.
 
-   Se guiden [Arbetsflöden](../../workflow/using/architecture.md).
+   Se [Arbetsflöden](../../workflow/using/architecture.md) guide.
 
 ## InSMS-schema {#insms-schema}
 
 InSMS-schemat innehåller information som är relevant för inkommande SMS. En beskrivning av dessa fält är tillgänglig via attributet desc.
 
-* **meddelande**: det SMS som togs emot.
+* **message**: det SMS som togs emot.
 * **ursprung**: mobilnummer i meddelandets ursprung.
 * **providerId**: Identifierare för det meddelande som returneras av SMSC (meddelandecenter).
 * **skapad**: datum då inkommande meddelande infogades i Adobe Campaign.
-* **TextAccount**: Adobe Campaign externa konto.
+* **extAccount**: Adobe Campaign externa konto.
 
    >[!IMPORTANT]
    >
@@ -120,7 +120,7 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 
 >[!IMPORTANT]
 >
->Följande detaljerade procedur gäller bara för SMPP-anslutningar, utom för den utökade generiska SMPP-anslutningen. Mer information finns i avsnittet [Skapa ett externt SMPP-konto](sms-set-up.md#creating-an-smpp-external-account).
+>Följande detaljerade procedur gäller bara för SMPP-anslutningar, utom för den utökade generiska SMPP-anslutningen. Mer information finns i [Skapa ett externt SMPP-konto](sms-set-up.md#creating-an-smpp-external-account) -avsnitt.
 >
 >Det utgör en del av den certifieringsprocess som utförs av amerikanska aktörer för marknadsföringskampanjer i USA. Dessa svar på SMS-meddelanden som innehåller nyckelordet måste skickas tillbaka till prenumeranten omedelbart efter att ett meddelande har tagits emot.
 
@@ -142,9 +142,9 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
    </autoreply>
    ```
 
-1. För attributet **name** för taggen **`<shortcode>`** anger du den korta kod som ska visas i stället för meddelandets avsändarnamn.
+1. För **name** attributet för **`<shortcode>`** anger du den korta kod som ska visas i stället för meddelandets avsändarnamn.
 
-   I varje **`<reply>`**-tagg anger du **nyckelordsattributet** med ett nyckelord och **text**-attributet med meddelandet som du vill skicka för det här nyckelordet.
+   I varje **`<reply>`** -taggen, ange **nyckelord** attribut med ett nyckelord och **text** attribut med meddelandet som du vill skicka för det här nyckelordet.
 
    >[!NOTE]
    >
@@ -159,11 +159,11 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. När du är klar sparar du den här filen under namnet **smsAutoReply.xml**.
+1. När du är klar sparar du filen under namnet **smsAutoReply.xml**.
 
    Observera att filens namn är skiftlägeskänsligt i Linux.
 
-1. Kopiera den här filen till katalogen **conf** i Adobe Campaign, på samma plats som webbservern.
+1. Kopiera den här filen till **conf** i Adobe Campaign, på samma plats som webbservern.
 
 >[!IMPORTANT]
 >

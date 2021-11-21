@@ -17,23 +17,23 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-![](assets/do-not-localize/how-to-video.png) Titta på den här  [](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) videon för att få en översikt över hur erbjudanden levereras till identifierade och anonyma mål.
+![](assets/do-not-localize/how-to-video.png) Titta på detta [video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) för att få en översikt över hur erbjudanden levereras till identifierade och anonyma mål.
 
 ## Målgruppsanpassning och lagring av en miljö för anonym interaktion {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
 Som standard levereras Interaction med en förkonfigurerad miljö för att rikta sig till mottagartabellen (identifierade erbjudanden). Om du vill skapa en annan tabell (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda guiden för målmappning för att skapa miljön. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-När du skapar en anonym miljö via guiden för att skapa mappningen markeras rutan **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatiskt på miljöns **[!UICONTROL General]**-flik.
+När du skapar en anonym miljö via guiden för att skapa mappningar **[!UICONTROL Environment dedicated to incoming anonymous interactions]** -rutan markeras automatiskt i miljöns **[!UICONTROL General]** -fliken.
 
-**[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
+The **[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
 
-Fältet **[!UICONTROL Visitor folder]** visas. Det slutförs automatiskt för att länka till mappen **[!UICONTROL Visitors]**. I det här fältet kan du välja var besökarprofiler ska sparas.
+The **[!UICONTROL Visitor folder]** visas. Det fylls automatiskt i för att länka till **[!UICONTROL Visitors]** mapp. I det här fältet kan du välja var besökarprofiler ska sparas.
 
 ![](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
->Om du vill filtrera flera typer av besökare, till exempel om anonyma erbjudanden presenteras för ett eller flera varumärken, måste du skapa en miljö för varje varumärke och en **[!UICONTROL Visitors]**-typmapp för varje miljö.
+>Om du vill filtrera flera typer av besökare, till exempel om anonyma erbjudanden presenteras för ett eller flera varumärken, måste du skapa en miljö för varje varumärke och en **[!UICONTROL Visitors]** typmapp för varje miljö.
 
 ## Erbjud katalog för anonyma interaktioner {#offer-catalog-for-anonymous-interactions}
 
@@ -47,7 +47,7 @@ Anonyma besökare kan bli föremål för en process för identifiering av cookie
 
 Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall identifieras besökare (de identifieras sedan implicit), i andra fall identifieras de inte (och förblir därför anonyma).
 
-Om du vill köra den här analysen kontrollerar du alternativet **[!UICONTROL Implicitly identify the individual based on their browser history]** för erbjudandeutrymme.
+Om du vill köra den här analysen kontrollerar du **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
 
 ![](assets/identification_anonymous_visitors.png)
 
@@ -57,6 +57,6 @@ Om ingen anonym besökare identifieras efter analysen kan du lagra deras data i 
 
 Om det inte finns något element som gör att du kan identifiera en kontakt, eller om du inte vill föreslå ett identifierat erbjudande till en kontakt som kan identifieras implicit, kan du välja att göra en reservlösning i en anonym miljö.
 
-Om du vill göra det kontrollerar du **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** och anger sedan den miljö som är dedikerad till de oidentifierade besökarna i **[!UICONTROL Linked anonymous space]** när du anger ett erbjudandeutrymme.
+Om du vill göra det går du till **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** anger du sedan den miljö som är dedikerad till de oidentifierade besökarna i **[!UICONTROL Linked anonymous space]** när du anger ett erbjudandeutrymme.
 
 ![](assets/anonymous_to_anonymous_environment.png)

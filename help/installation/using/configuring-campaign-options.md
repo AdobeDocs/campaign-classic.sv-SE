@@ -17,12 +17,12 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
+The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
 
 >[!CAUTION]
 >
->* Alternativ som inte finns med på den här sidan är bara interna och **får inte ändras**.
+>* Alternativ som inte visas på den här sidan är bara interna och **får inte ändras**.
 >
 >* Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
 
@@ -39,11 +39,11 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgDate</span> <br /> </td> 
-   <td> Datum för den senaste bredaLogMsg-filen som har hämtats från leveransinstansen.<br /> </td> 
+   <td> Datum för den senaste bredaLogMsg som hämtats från leveransinstansen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
-   <td> Datum för det senaste bredaLogMsg-objektet som skickades till slutprodukten.<br /> </td> 
+   <td> Datum för den senaste bredaLogMsg som skickades till deliverability-instansen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span> <br /> </td> 
@@ -51,7 +51,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
-   <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: anpassad_nms_mottagare.<br /> </td> 
+   <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: custom_nms_receive.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
@@ -66,7 +66,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
-   <td> Minsta antal mottagare för att en leverans ska betraktas som den viktigaste i faktureringsrapporten.<br /> </td> 
+   <td> Minsta antal mottagare för att en leverans ska anses vara den viktigaste i faktureringsrapporten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
@@ -78,7 +78,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Infogning (i tabell) av loggar (bredaLogs) per transaktioner: antal rader att bearbeta per batch.<br /> </td> 
+   <td> Infogning (i tabell) av loggar (bredaLogs) per transaktioner: antal rader som ska bearbetas per batch.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -94,7 +94,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> Om du anger "1" som värde kan du exkludera mottagare som inte längre vill bli kontaktade.<br /> </td> 
+   <td> Om du anger "1" som värde kan du utesluta mottagare som inte längre vill bli kontaktade.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
@@ -130,15 +130,15 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_NoCountBroadLogMsgPush</span> <br /> </td> 
-   <td> Inaktivera BredLogMsg-antalet för push-meddelanden.<br /> </td> 
+   <td> Inaktivera värdet för broadLogMsg för push-meddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDeliveryWizard_ShowDeliveryWeight</span> <br /> </td> 
-   <td> Visa meddelandets vikt i leveransguiden.<br /> </td> 
+   <td> Visa meddelandevikten i leveransguiden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span> <br /> </td> 
-   <td> Standarde-postadressen för felmeddelanden på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> Standardadressen för felmeddelanden på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
@@ -150,7 +150,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Kundens namn. Används i vissa varningsmeddelanden som visas för mottagarna.<br /> "Du får det här meddelandet eftersom du har varit i kontakt med **** eller ett närstående företag. Om du inte längre vill ta emot meddelanden från ****".<br /> </td> 
+   <td> Kundens namn. Används i vissa varningsmeddelanden som visas för mottagarna.<br /> "Du får det här meddelandet eftersom du har varit i kontakt med **** eller ett närstående företag. Att inte längre ta emot meddelanden från ****".<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -166,11 +166,11 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
-   <td> Period för nya försök för e-postmeddelanden.<br /> </td> 
+   <td> Period med återförsök för e-postmeddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsForecast_MsgWeightFormula</span> <br /> </td> 
-   <td> Formel som används för att beräkna viktningen för ett meddelande för en preliminär leverans.<br /> </td> 
+   <td> Formel som används för att beräkna viktningen av ett meddelande för en preliminär leverans.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
@@ -186,7 +186,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> I kanalen "email" (använd som standard): Minimal tid som har använts sedan föregående SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
+   <td> I kanalen "email" (använd som standard): Minimal tid som har använts sedan föregående refererade SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
@@ -194,7 +194,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> On channel "mobile" : Minimal tid som har använts sedan föregående SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
+   <td> On channel "mobile" : Minimal tid som har använts sedan föregående refererade SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -210,7 +210,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
+   <td><p>Det här alternativet används av <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> tekniskt arbetsflöde när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -222,7 +222,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine4</span> <br /> </td> 
-   <td> Rad 4 i avsändarens adress.<br /> </td> 
+   <td> Rad 4 på avsändarens adress.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine6</span> <br /> </td> 
@@ -230,7 +230,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
-   <td> Rad 7 i avsändarens adress.<br /> </td> 
+   <td> Rad 7 på avsändarens adress.<br /> </td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
@@ -246,15 +246,15 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryPeriod</span> <br /> </td> 
-   <td> Den period under vilken nya försök att skicka SMS-meddelanden ska utföras.<br /> </td> 
+   <td> Den period under vilken nya försök med SMS-meddelanden kommer att utföras.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Senaste konsolideringsdatum för <span class="uicontrol">NmsUserAgent</span>-statistik.<br /> </td> 
+   <td> Senaste konsolideringsdatum för <span class="uicontrol">NmsUserAgent</span> statistik.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
-   <td> Namnet på alternativet som innehåller webbsegmenten och deras lägen.<br /> </td> 
+   <td> Namnet på det alternativ som innehåller webbsegmenten och deras lägen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
@@ -266,7 +266,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Lägg till det här alternativet med värdet "0" för att inaktivera XML-koden för leveransutgåvan (högerklicka / <span class="uicontrol">Redigera XML-källa</span> eller <span class="uicontrol">CTRL + F4</span>-genväg).<br /> </td> 
+   <td> Lägg till det här alternativet med värdet "0" för att inaktivera XML-koden för leveransutgåvan (högerklicka / <span class="uicontrol">Redigera XML-källa</span> eller <span class="uicontrol">CTRL+F4</span> genväg).<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -293,11 +293,11 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Sökväg till resurser för förhandsgranskning i Adobe Campaign klientkonsol. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
+   <td> Plats för resurser för förhandsgranskning i Adobe Campaign klientkonsol. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> Lista över URL-masker för de bilder som hoppades över under överföringen.<br /> </td> 
+   <td> Lista med URL-masker för de bilder som hoppats över under överföringen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
@@ -305,19 +305,19 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> Mappen som bilderna på servern ska lagras i.<br /> </td> 
+   <td> Mappen där bilderna på servern ska lagras.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
-   <td> Utrymme för att visa logotyper.<br /> </td> 
+   <td> Blanksteg för att visa logotyper.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Rotmapp för publikationer.<br /> Mer information om generering av HTML- och textinnehåll finns i  <a href="../../delivery/using/using-a-content-template.md">det här avsnittet</a>.<br /> </td> 
+   <td> Rotmapp för publikationer.<br /> Mer information om generering av HTML och textinnehåll finns i <a href="../../delivery/using/using-a-content-template.md">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Gör att du kan definiera på vilken server bilderna som används i leveranserna ska lagras så att webbläsaren kan hämta dem.<br /> För byggversioner  &lt;&gt;<br /> För byggversioner &gt; 5098 använder vi i stället leveransens offentliga URL eller  <span class="uicontrol">XtkFileRes_Public_</span> URLoptions URL.<br /> </td> 
+   <td> Gör att du kan definiera på vilken server bilderna som används i leveranserna ska lagras så att webbläsaren kan hämta dem.<br /> För byggversioner &lt;= 5098 använder vi URL:en för bilderna som överfördes till instansen.<br /> För byggversioner &gt; 5098 använder vi i stället leveransens offentliga URL eller <span class="uicontrol">XtkFileRes_Public_URL</span> alternativets URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -325,7 +325,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaPassword</span> <br /> </td> 
-   <td> Gör att du kan konfigurera lösenordet för bildöverföring.<br /> </td> 
+   <td> Här kan du konfigurera lösenordet för bildöverföring.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaServers</span> <br /> </td> 
@@ -354,7 +354,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">CrmMarketingActivityWindow</span> <br /> </td> 
-   <td> Marknadshistorik som visas för det här antalet månader.<br /> </td> 
+   <td> Marknadsföringshistorik visas för detta antal månader.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span> <br /> </td> 
@@ -362,15 +362,15 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span> <br /> </td> 
-   <td> Maximalt antal leverans-/arbetsflödes-/hypotes-/simuleringsjobb som kan bearbetas i taget, startat av operationMgt-arbetsflödet.<br /> </td> 
+   <td> Maximalt antal leverans-/arbetsflödes-/hypotes-/simuleringsjobb som kan bearbetas i taget, som startas av operationMgt-arbetsflödet.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Gör att du kan övervaka den tekniska arbetsflödeskörningen för <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. När det är aktiverat (värdet "1") loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
+   <td> Låter dig övervaka <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> teknisk arbetsflödeskörning. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
-   <td> Tidsperiod för mål- och extraheringsvillkor i schemalagt läge.<br /> </td> 
+   <td> Tidsperiod för målinriktning och extraheringsvillkor i schemalagt läge.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Workflow_AnalysisThreshold</span> <br /> </td> 
@@ -382,7 +382,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
-   <td> Antal dagar att vänta mellan kontroller för pausade arbetsflöden.<br /> </td> 
+   <td> Antal dagar mellan kontroller för pausade arbetsflöden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
@@ -435,11 +435,11 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_SaveOptions_AllowNonAdmin</span> <br /> </td> 
-   <td> Om värdet är "true" kan en auktoriserad icke-admin-operator uppdatera xtkOption-värdena via distributionsguiden.<br /> </td> 
+   <td> Om värdet är true kan en auktoriserad icke-admin-operator uppdatera xtkOption-värdena via distributionsguiden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
-   <td> Om 1 är markerat tillåter det här alternativet att dekryptera vissa lösenord med hjälp av decryptString.<br /> </td> 
+   <td> Om 1 är markerat kan du med det här alternativet använda dekrypptString för att dekryptera vissa lösenord.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
@@ -462,20 +462,20 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
    <td> JavaScript-bibliotek som ska anpassas för att berika händelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : berikar och sparar händelser i databasen (där  <span class="uicontrol"></span> aiEventIdmotsvarar tabellen med händelser i realtid som bearbetas).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : registrerar och sparar händelser i databasen (där  <span class="uicontrol"></span> aiEventIdmotsvarar ID-tabellen för grupphändelser som bearbetas).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : registrerar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid (bearbetade).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : registrerar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för grupphändelser som bearbetats).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastUpdateFromBL</span> <br /> </td> 
-   <td> Datum för den senaste statusuppdateringen av händelser via leveransloggar.<br /> </td> 
+   <td> Datum för den senaste händelsestatusuppdateringen via leveransloggar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
    <td> JavaScript-bibliotek som ska anpassas för routningshändelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som har valts för att bearbeta realtidshändelsen (där  <span class="uicontrol"></span> iEventId motsvarar ID:t för realtidshändelsen som bearbetas).</p> </li> 
-     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som valts för att bearbeta batchhändelsen (där  <span class="uicontrol"></span> iEventId motsvarar ID:t för batchhändelsen som bearbetas).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som valts för att bearbeta realtidshändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för den bearbetade realtidshändelsen).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som har valts för att bearbeta batchhändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för batchhändelsen som bearbetas).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -496,7 +496,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> Varningströskelvärde för det genomsnittliga antalet händelser i realtid som står i kö.<br /> </td> 
+   <td> Varningströskelvärde för det genomsnittliga antalet händelser i realtid som köas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -504,11 +504,11 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeWarning</span> <br /> </td> 
-   <td> Varningströskelvärde för genomsnittlig kötid för realtidshändelser.<br /> </td> 
+   <td> Varningströskel för genomsnittlig kötid för realtidshändelser.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueWarning</span> <br /> </td> 
-   <td> Varningströskel för det genomsnittliga antalet händelser i realtid som står i kö.<br /> </td> 
+   <td> Varningströskel för det genomsnittliga antalet händelser i realtid som köas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span> <br /> </td> 
@@ -548,7 +548,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThrottputWarning</span> <br /> </td> 
-   <td> Varningströskelvärde för händelsegenomströmning i realtid.<br /> </td> 
+   <td> Varningströskel för händelsegenomströmning i realtid.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMessageCenter_RoutingBatchSize</span> <br /> </td> 
@@ -556,7 +556,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastRtEventStat</span> <br /> </td> 
-   <td> Uppdateringspekare för RtEvent-status (senaste datum tills data hämtades).<br /> </td> 
+   <td> Uppdatera pekaren för RtEvent-status (senaste datumet tills data hämtades).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span> <br /> </td> 
@@ -641,19 +641,19 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som är avsett att innehålla data från Adobe Campaign tabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla data från Adobe Campaign tabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign tabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign tabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som ska innehålla data från Adobe Campaign arbetstabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
+   <td> Namnet på det tabellutrymme som ska innehålla data från Adobe Campaign arbetstabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign arbetstabeller.<br />Se  <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
+   <td> Namnet på det tabellutrymme som är avsett att innehålla indexen för Adobe Campaign arbetstabeller.<br />Se <a href="../../installation/using/creating-and-configuring-the-database.md">Skapa och konfigurera databasen</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -677,35 +677,35 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> Prefixet har lagts till i interna namn som genereras automatiskt.<br /> </td> 
+   <td> Prefixet läggs till i interna namn som genereras automatiskt.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
-   <td> Högsta antal resultat som returneras av en fråga på xtk:schema och xtk:srcSchema.<br /> </td> 
+   <td> Maximalt antal resultat som returneras av en fråga i xtk:schema och xtk:srcSchema.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
    <td> Alla anpassade scheman, som skapats efter den här tiden, med autopk="true" och utan attributet "pkSequence" får den autogenererade sekvensen "auto_ 
     &lt;schemanamespace&gt; 
-     &lt;schemanamn&gt;
+     &lt;schemaname&gt;
        _seq. 
    </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
+   <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort föråldrade mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">datatyp:</span> heltal</p> </li> 
+     <li> <p> <span class="uicontrol">Datatyp:</span> Heltal</p> </li> 
      <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
     </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
-   <td> Senaste bearbetningsdatum för tabellrensningen <span class="uicontrol">NmsEmailErrorStat</span>.<br /> </td> 
+   <td> Senaste bearbetningsdatum för <span class="uicontrol">NmsEmailErrorStat</span> tabellrensning.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Information om felet som uppstod i Poengrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The lessThan/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
+   <td> Information om felet som inträffade i Podumgrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -726,18 +726,18 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typer av AEM resurser som kan användas i Adobe Campaign. Värden måste avgränsas med kommatecken.<br /> </td> 
+   <td> Typer av AEM resurser som kan användas i Adobe Campaign. Värdena måste avgränsas med kommatecken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Så här använder du Experience Cloud-utlösare med Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Så här använder du Experience Cloud Triggers med Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">LASTIMPORT_&lt;&gt;_&lt;&gt;</span> <br /> </td> 
+   <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
    <td> Det här alternativet används vid import av data från ett tredjepartssystem via en CRM-anslutning. Om du aktiverar alternativet kan du bara samla in objekt som har ändrats sedan den senaste importen. Det här alternativet måste skapas och fyllas i manuellt enligt nedan: 
     <ul> 
-     <li> <p> <span class="uicontrol">Internt namn</span> : LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för den senaste importen, med formatet åååå/MM/dd :mm:hss. </p> </li> 
+     <li> <p> <span class="uicontrol">Internt namn</span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
+     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för senaste import, med åååå/MM/dd:mm:ss-format. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
@@ -762,7 +762,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
-   <td> Alternativ för Hive-koppling.<br /> </td> 
+   <td> Kopplingsalternativ för Hive.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -795,7 +795,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_UseDaemon</span> <br /> </td> 
-   <td> Aktivera/inaktivera asynkron offert-skrivning ("0" för att inaktivera, "1" för att aktivera).<br /> </td> 
+   <td> Aktivera/inaktivera asynkron skrivåtgärd ("0" för att inaktivera,"1" för att aktivera).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsModule_CouponsEnabled</span> <br /> </td> 
@@ -828,7 +828,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
-   <td> Kontextinstansens byggnummer före den senaste uppgraderingen.<br /> </td> 
+   <td> Byggnummer för AC-instansen före den senaste uppgraderingen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
@@ -836,7 +836,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkPassUnknownSQLFunactionsToRDBMS</span> <br /> </td> 
-   <td> Gör att du kan fortsätta använda gamla odeklarerade SQL-funktioner efter migrering. Vi rekommenderar att du inte använder det här alternativet på grund av säkerhetsriskerna som det medför.<br /> </td> 
+   <td> Gör att du kan fortsätta använda gamla odeklarerade SQL-funktioner efter migrering. Vi rekommenderar starkt att du inte använder det här alternativet på grund av de säkerhetsrisker det medför.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -857,7 +857,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> Spårad URL-beräkningsskript.<br /> </td> 
+   <td> Beräkningsskript för spårad URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -865,7 +865,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Instance</span> <br /> </td> 
-   <td> Gör att du kan definiera instansnamnet på spårningsservern.<br /> </td> 
+   <td> Här kan du definiera instansnamnet på spårningsservern.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_LastConsolidation</span> <br /> </td> 
@@ -909,7 +909,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebTrackingMode</span> <br /> </td> 
-   <td> Gör att du kan definiera webbspårningsläget.<br /> </td> 
+   <td> Här kan du definiera webbspårningsläget.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -967,7 +967,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> Aktivera automatiskt skapande av operatorer och rättigheter i Adobe Campaign.<br /> </td> 
+   <td> Möjliggör automatiskt skapande av operatorer och rättigheter i Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -1007,7 +1007,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsFilter</span> <br /> </td> 
-   <td> Sökfilter för användarauktoriseringar.<br /> </td> 
+   <td> Sök efter användarauktoriseringar i filtret.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
@@ -1036,7 +1036,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkUseScrollBar</span> <br /> </td> 
-   <td> Värdet 1 tillåter att rullningslisten läggs till i detaljformulär.<br /> </td> 
+   <td> Värdet 1 tillåter rullningslist förutom detaljformulär.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Instance</span> <br /> </td> 
@@ -1044,7 +1044,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Password</span> <br /> </td> 
-   <td> Lösenord för instansen som ska användas för webformulärogiltigförklaring i läget 'andra servrar'.<br /> </td> 
+   <td> Lösenord för instansen som ska användas för webbartidentifiering i läget 'andra servrar'.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 

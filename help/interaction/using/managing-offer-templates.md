@@ -17,25 +17,25 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-Mallar för erbjudanden levereras i Adobe Campaign. Du kan använda dem när du har skapat dina erbjudanden, duplicerat dem eller anpassat deras konfiguration efter dina behov. Du kan också skapa egna mallar. Mallerbjudanden lagras i mappen **Resources** > **Mallar** > **Erbjudandemallar**.
+Mallar för erbjudanden levereras i Adobe Campaign. Du kan använda dem när du har skapat dina erbjudanden, duplicerat dem eller anpassat deras konfiguration efter dina behov. Du kan också skapa egna mallar. Mallerbjudanden lagras i mappen **Resurser** > **Mallar** > **Erbjudandemallar**.
 
 ## Skapa en erbjudandemall {#creating-an-offer-template}
 
 Så här skapar du ett mallerbjudande:
 
-1. Gå till **Resources** > **Mallar** > **Erbjudandemallar**.
-1. Klicka på ikonen **Nytt**.
+1. Gå till **Resurser** > **Mallar** > **Erbjudandemallar**.
+1. Klicka på **Nytt** ikon.
 
    ![](assets/offer_model_001.png)
 
-1. Konfigurera mallen genom att tillämpa samma process som för ett vanligt erbjudande och spara det sedan genom att klicka på **Spara**.
+1. Konfigurera mallen genom att tillämpa samma process som för ett normalt erbjudande och spara det sedan genom att klicka på **Spara**.
 
 ## Duplicera en befintlig mall {#duplicate-an-existing-template}
 
 Så här duplicerar du en offertmall (som är färdig eller inte):
 
 1. Gå till **Resurser > Mallar > Erbjudandemallar**.
-1. Använd musen för att högerklicka på mallen som du vill duplicera och välj **Duplicera** i listrutan.
+1. Högerklicka med musen på mallen som du vill duplicera och välj **Duplicera** i listrutan.
 
    ![](assets/offer_model_002.png)
 

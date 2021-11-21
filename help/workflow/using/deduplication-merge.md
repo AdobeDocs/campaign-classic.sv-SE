@@ -26,11 +26,11 @@ ht-degree: 5%
 
 ## Om det här användningsfallet {#about-this-use-case}
 
-I det här användningsexemplet beskrivs hur du använder funktionen **[!UICONTROL Merge]** i **[!UICONTROL Deduplication]**-aktiviteten.
+Det här användningsexemplet beskriver hur du använder **[!UICONTROL Merge]** i **[!UICONTROL Deduplication]** aktivitet.
 
 Mer information om den här funktionen finns i [det här avsnittet](deduplication.md#merging-fields-into-single-record).
 
-Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från en datauppsättning. I det här fallet dupliceras de data som visas nedan baserat på fältet E-post.
+The **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från en datauppsättning. I det här fallet dupliceras de data som visas nedan baserat på fältet E-post.
 
 | Senaste ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
 |-----|------------|-----------|-------|--------------|------|
@@ -38,24 +38,24 @@ Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubblettrad
 | 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
 | 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
 
-Med funktionerna **[!UICONTROL Merge]** för borttagning av dubbletter kan du konfigurera en uppsättning regler för borttagning av dubbletter för att definiera en grupp med fält som ska sammanfogas till en enda resulterande datapost. Om du till exempel har en uppsättning dubblettposter kan du välja att behålla det äldsta telefonnumret eller det senaste namnet.
+Med dedupliceringsaktivitetens **[!UICONTROL Merge]** kan du konfigurera en uppsättning regler för borttagning av dubbletter för att definiera en grupp med fält som ska sammanfogas till en enda resulterande datapost. Om du till exempel har en uppsättning dubblettposter kan du välja att behålla det äldsta telefonnumret eller det senaste namnet.
 
 ## Aktivera sammanfogningsfunktionen {#activating-merge}
 
 
-Om du vill aktivera sammanfogningsfunktionen måste du först konfigurera **[!UICONTROL Deduplication]**-aktiviteten. Följ dessa steg för att göra detta:
+Om du vill aktivera sammanfogningsfunktionen måste du först konfigurera **[!UICONTROL Deduplication]** aktivitet. Följ dessa steg för att göra detta:
 
-1. Öppna aktiviteten och klicka sedan på länken **[Redigera konfiguration]**.
+1. Öppna aktiviteten och klicka sedan på **[Redigera konfiguration]** länk.
 
 1. Välj det avstämningsfält som ska användas för dedupliceringen och klicka sedan på **[!UICONTROL Next]**. I det här exemplet vill vi ta bort dubbletter baserat på e-postfältet.
 
    ![](assets/uc_merge_edit.png)
 
-1. Klicka på länken **[!UICONTROL Advanced parameters]** och aktivera sedan alternativen **[!UICONTROL Merge records]** och **[!UICONTROL Use several record merging criteria]**.
+1. Klicka på **[!UICONTROL Advanced parameters]** aktivera sedan **[!UICONTROL Merge records]** och **[!UICONTROL Use several record merging criteria]** alternativ.
 
    ![](assets/uc_merge_advanced_parameters.png)
 
-1. Fliken **[!UICONTROL Merge]** läggs till i konfigurationsskärmen för **[!UICONTROL Deduplication]**. Vi använder den här fliken för att ange de data som ska sammanfogas när vi utför borttagning av dubbletter.
+1. The **[!UICONTROL Merge]** -fliken läggs till i **[!UICONTROL Deduplication]** konfigurationsskärmen. Vi använder den här fliken för att ange de data som ska sammanfogas när vi utför borttagning av dubbletter.
 
 ## Konfigurera fälten som ska sammanfogas {#configuring-rules}
 
@@ -68,7 +68,7 @@ Här är de regler vi vill använda för att sammanfoga data till en enda post:
 
 Så här konfigurerar du de här reglerna:
 
-1. Öppna fliken **[!UICONTROL Merge]** och klicka sedan på knappen **[!UICONTROL Add]**.
+1. Öppna **[!UICONTROL Merge]** klickar du på **[!UICONTROL Add]** -knappen.
 
    ![](assets/uc_merge_add.png)
 
@@ -98,7 +98,7 @@ Så här konfigurerar du de här reglerna:
 
 ## Resultat {#results}
 
-När du har konfigurerat dessa regler tas följande data emot i slutet av **[!UICONTROL Deduplication]**-aktiviteten.
+När dessa regler har konfigurerats tas följande data emot i slutet av **[!UICONTROL Deduplication]** aktivitet.
 
 | Ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
 |-----|------------|-----------|-------|--------------|------|

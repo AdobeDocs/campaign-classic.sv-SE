@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Med en guide som är tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** kan du lägga till ett eller flera fält i en tabell i databasen.
+En guide tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** I kan du lägga till ett eller flera fält i en tabell i databasen.
 
 När du validerar guiden uppdateras tilläggsschemat för den tabell som ska utökas och SQL-skriptet startas för att ändra databasens fysiska struktur.
 
@@ -35,7 +35,7 @@ Guiderna innehåller följande steg:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Bekräfta ändringarna genom att klicka på knappen **[!UICONTROL Finish]**.
+1. Bekräfta ändringarna genom att klicka på **[!UICONTROL Finish]** -knappen.
 
 En tilläggsfil som i vårt exempel kallas&quot;cus:mottagare&quot; skapas automatiskt och motsvarande SQL-skript körs:
 

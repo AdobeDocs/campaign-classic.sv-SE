@@ -82,11 +82,11 @@ Uppräkningar definieras i början av ett schema (innan huvudelementet definiera
    * tidsintervall
    * uuid
 
-* **default (string)**: Standardvärde. Standardvärdet kan också vara ett av de värden som definieras i uppräkningen.
+* **default (sträng)**: Standardvärde. Standardvärdet kan också vara ett av de värden som definieras i uppräkningen.
 * **desc (sträng)**: uppräkningsbeskrivning.
 * **label (string)**: uppräkningsetikett.
-* **name (string)**: uppräkningens interna namn.
-* **template (string)**: det här attributet definierar en referens till ett  `<enumeration>` element som delas av flera scheman. Definitionen kopieras automatiskt till det aktuella schemat.
+* **name (sträng)**: uppräkningens interna namn.
+* **template (string)**: this-attributet definierar en referens till en `<enumeration>` element som delas av flera scheman. Definitionen kopieras automatiskt till det aktuella schemat.
 
 ## Exempel {#examples-4}
 

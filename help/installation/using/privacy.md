@@ -21,11 +21,11 @@ ht-degree: 4%
 
 Adobe Campaign har en uppsättning verktyg som hjälper dig att följa integritetsefterlevnaden i GDPR och CCPA.
 
-Se [den här sidan](../../platform/using/privacy-management.md) för allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personerna.
+Se [den här sidan](../../platform/using/privacy-management.md) om du vill ha allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personerna.
 
 ## URL-anpassning {#url-personalization}
 
-När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel ska aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
+När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel får aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -35,7 +35,7 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ### Rekommendation
 
-Om du vill validera och försäkra dig om att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/steps-to-create-a-query.md) eller skapar ett arbetsflöde med filtervillkor i [frågeaktiviteten](../../workflow/using/query.md).
+Om du vill validera och se till att du inte använder ovanstående kör du en fråga i URL-spårningstabellen via [Kampanjallmän frågeredigerare](../../platform/using/steps-to-create-a-query.md) eller skapa ett arbetsflöde med filtervillkor i [frågeaktivitet](../../workflow/using/query.md).
 
 Exempel:
 
@@ -45,7 +45,7 @@ Exempel:
 
 1. Kör arbetsflödet och kontrollera om det finns några resultat.
 
-1. I så fall öppnar du utdataövergången för att visa listan över URL-adresser.
+1. I så fall öppnar du utdataövergången för att visa en lista med URL-adresser.
 
 <img src="assets/privacy-query-dynamic-url.png">
 
@@ -57,11 +57,11 @@ För att förbättra säkerheten har en signaturmekanism införts för att spår
 >
 >När användaren klickar på en felformaterad URL returneras följande fel: &quot;Begärd URL &#39;..&#39; hittades inte.&quot;
 
-Sedan Campaign 20.2 och [!DNL Gold Standard]-versionen kan du dessutom använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
+Sedan Campaign 20.2 och [!DNL Gold Standard] kan du använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan nå ut till [Kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
 
-Om du kör [!DNL Gold Standard] 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
+Om du kör [!DNL Gold Standard] 19.1.4 kan du få problem med push-meddelanden som levereras med hjälp av spårningslänkar eller leveranser med hjälp av ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 
-Oavsett om ni kör Campaign lokalt eller i en hybridarkitektur måste ni kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signaturen.
+Oavsett om ni kör Campaign lokalt eller i en hybridarkitektur måste ni kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signatur.
 
 Om du kör Campaign i en hybridarkitektur måste du se till att den värdbaserade mellankällinstansen har uppgraderats enligt följande innan du aktiverar URL-signatur:
 * Före den lokala marknadsinstansen
@@ -74,13 +74,13 @@ I annat fall kan följande problem uppstå:
 Om du vill inaktivera URL:er som har skapats i tidigare versioner följer du de här stegen på alla Campaign-servrar samtidigt:
 
 1. I serverkonfigurationsfilen (serverConf.xml) ändrar du **blockRedirectForUnsignedTrackingLink** till **true**.
-1. Starta om tjänsten **nlserver**.
+1. Starta om **nlserver** service.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
 Om du vill aktivera URL-signering följer du de här stegen på alla Campaign-servrar samtidigt:
 
 1. I serverkonfigurationsfilen (serverConf.xml) ändrar du **signEmailLinks** till **false**.
-1. Starta om tjänsten **nlserver**.
+1. Starta om **nlserver** service.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
 ## Databegränsning
@@ -91,7 +91,7 @@ Med den här begränsningen kan du ta bort lösenordsfält men låta det externa
 
 1. Gå in **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
-1. Skapa en ny **[!UICONTROL Extension of a schema]**.
+1. Skapa ett nytt **[!UICONTROL Extension of a schema]**.
 
    ![](assets/privacy-data-restriction.png)
 
@@ -99,7 +99,7 @@ Med den här begränsningen kan du ta bort lösenordsfält men låta det externa
 
 1. I den sista guideskärmen kan du redigera det nya srcSchema för att begränsa åtkomsten till alla lösenordsfält:
 
-   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) med:
+   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) av:
 
    ```
    <element name="extAccount">
@@ -152,7 +152,7 @@ Med den här begränsningen kan du ta bort lösenordsfält men låta det externa
 
    >[!NOTE]
    >
-   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` så att alla användare med administratörsbehörighet kan se dessa lösenord.
+   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` för att tillåta alla användare med administratörsbehörighet att se dessa lösenord.
 
 ## Skydda sidor som innehåller PII
 
@@ -174,12 +174,12 @@ Följ de här stegen för att skydda sidorna:
    *Disallow: /
    ```
 
-   Information om IIS finns på [den här sidan](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Information om IIS finns i [den här sidan](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
    För Apache kan du placera filen i **/var/www/robots.txt** (Debian).
 
-1. Ibland räcker det inte att lägga till en **robots.txt**-fil när det gäller säkerhet. Om en annan webbplats till exempel innehåller en länk till sidan kan den visas i ett sökresultat.
+1. Ibland lägger du till en **robots.txt** filen inte är tillräcklig vad gäller säkerhet. Om en annan webbplats till exempel innehåller en länk till sidan kan den visas i ett sökresultat.
 
-Förutom filen **robots.txt** bör du lägga till en **X-Robots-Tag**-rubrik. Du kan göra det i Apache eller IIS och i konfigurationsfilen **serverConf.xml**.
+Förutom **robots.txt** bör du lägga till en **X-Robots-tag** header. Du kan göra det i Apache eller IIS och i **serverConf.xml** konfigurationsfil.
 
 Mer information finns i [den här artikeln](https://developers.google.com/search/reference/robots_meta_tag).

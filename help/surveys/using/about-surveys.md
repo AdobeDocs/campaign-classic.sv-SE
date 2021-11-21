@@ -19,9 +19,9 @@ ht-degree: 4%
 
 Adobe Campaign innehåller en grafisk modul för att definiera och publicera webbapplikationer. Detta används för att skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Använd den här funktionen för att utforma och publicera webbsidor där användarna kan söka efter eller ange information.
 
-Med det valfria tillägget **Survey** kan du skapa en ny typ av webbprogram för att skapa och hantera onlineenkäter, t.ex. formulär för att lägga till eller ändra profilinformation, för att prenumerera på eller avbryta en prenumeration på en informationstjänst eller ett tävlingsformulär. När svaren har samlats in lagras de i databasen eller i lokala variabler. Datamodellen kan utökas dynamiskt via svar på enkäter. Du kan visa resultaten i realtid, filtrera svaren och analysera dem med dedikerade diagram.
+Valfritt **Undersökning** Med kan du skapa en ny typ av webbprogram för att skapa och hantera onlineenkäter, t.ex. formulär för att lägga till eller ändra profilinformation, för att prenumerera på eller avbryta en prenumeration på en informationstjänst eller ett tävlingsformulär. När svaren har samlats in lagras de i databasen eller i lokala variabler. Datamodellen kan utökas dynamiskt via svar på enkäter. Du kan visa resultaten i realtid, filtrera svaren och analysera dem med dedikerade diagram.
 
-I det här kapitlet beskrivs hur du skapar och hanterar **undersökningar**, fält- och sidhantering, lagringslägen och poster.
+I det här kapitlet beskrivs hur du skapar och hanterar **Undersökningar**, fält- och sidhantering, lagringslägen och poster.
 
 Lär dig hur du skapar din första enkät i [den här sidan](getting-started-with-surveys.md).
 
@@ -29,12 +29,12 @@ Lär dig hur du skapar din första enkät i [den här sidan](getting-started-wit
 >
 >* Detaljerade steg för hur du skapar ett standardwebbformulär finns i [det här dokumentet](../../web/using/about-web-forms.md).
 >
->* Hantering av webbprogram beskrivs i [det här dokumentet](../../web/using/about-web-applications.md). Mer information finns i det här kapitlet.
+>* Hantering av webbapplikationer beskrivs i [det här dokumentet](../../web/using/about-web-applications.md). Mer information finns i det här kapitlet.
 
 
 ## Funktionsomfång {#campaign-surveys-scope}
 
-I Adobe Campaign använder du [Webbprogram](../../web/using/about-web-forms.md) för att:
+I Adobe Campaign använder du [Webbprogram](../../web/using/about-web-forms.md) till:
 
 * Skapa flersidiga formulär,
 * Hantera flerspråkiga formulär med ett integrerat översättningsverktyg,
@@ -73,7 +73,7 @@ Mer information om konfiguration och sekvensering av dessa steg finns i [det hä
 
 ## Inställningar {#settings}
 
-Enkäter är som standard tillgängliga i noden **[!UICONTROL Resources > Online > Web Applications]** i Adobe Campaign-trädet.
+Enkäter är som standard tillgängliga i **[!UICONTROL Resources > Online > Web Applications]** noden i Adobe Campaign-trädet.
 
 Inställningarna sparas i följande mappar:
 

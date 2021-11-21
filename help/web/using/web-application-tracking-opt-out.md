@@ -23,7 +23,7 @@ Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar 
 
 >[!NOTE]
 >
->När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>När du använder skript ska du alltid följa riktlinjerna i [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Konfigurera banderollen {#configuring-the-banner-}
 
@@ -35,7 +35,7 @@ Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter din
 >
 >Om du vill skapa en egen banderoll måste du anpassa den färdiga banderollen.
 
-Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper. Se avsnittet [Designa ett webbprogram](designing-a-web-application.md).
+Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper. Se [Utforma ett webbprogram](designing-a-web-application.md) -avsnitt.
 
 Om spårning av webbsidor är aktiverat kan du antingen ha:
 
@@ -64,7 +64,7 @@ Standardbanderollen har följande struktur:
       
 ```
 
-Du måste ersätta **Infoga meddelandet här** med blocket som innehåller din spårningsinformation. Ersättningen ska utföras i det nya anpassningsblocket som hör till avanvisningsbanderollen.
+Du måste ersätta **Infoga ditt meddelande här** med blocket som innehåller din spårningsinformation. Ersättningen ska utföras i det nya anpassningsblocket som hör till avanvisningsbanderollen.
 
 Banderollen levereras med en specifik CSS. Du kan dock skriva över formaten när du skapar och konfigurerar en webbsida. Se [den här sidan](content-editor-interface.md).
 
@@ -95,7 +95,7 @@ Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
    **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript.
 
-   Den returnerar HTML-koden för avanmälningsbanderollkoden som måste skrivas ut på sidan.
+   Den returnerar HTML till den avanmälningsbanderollkod som måste skrivas ut på sidan.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 

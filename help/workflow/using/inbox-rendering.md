@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Arbetsflödet som beskrivs nedan installeras som standard med modulen **Inkorgsåtergivning (IR)**. Mer information om återgivning av inkorgen finns i [avsnittet](../../delivery/using/inbox-rendering.md).
+Arbetsflödet som beskrivs nedan installeras med **Inkorgsåtergivning (IR)** som standard. Mer information om inkorgsåtergivning finns i [section](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 

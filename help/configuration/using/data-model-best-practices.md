@@ -19,9 +19,9 @@ ht-degree: 1%
 
 I det här dokumentet beskrivs viktiga rekommendationer när du utformar din Adobe Campaign-datamodell.
 
-Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det här avsnittet](../../configuration/using/about-data-model.md)-avsnittet.
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [det här avsnittet](../../configuration/using/about-data-model.md) -avsnitt.
 
-Läs [den här dokumentationen](../../configuration/using/about-schema-reference.md) för att komma igång med Campaign-scheman. Lär dig hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell i [det här dokumentet](../../configuration/using/about-schema-edition.md).
+Läs [den här dokumentationen](../../configuration/using/about-schema-reference.md) för att komma igång med Campaign-scheman. Lär dig hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen i [det här dokumentet](../../configuration/using/about-schema-edition.md).
 
 ## Översikt {#overview}
 
@@ -37,17 +37,17 @@ Adobe Campaign är ett kraftfullt kanalövergripande kampanjhanteringssystem som
 
 De flesta e-postleverantörer kommunicerar med kunderna via en listcentrerad strategi, men Adobe Campaign förlitar sig på en relationsdatabas för att få en bredare bild av kunderna och deras attribut.
 
-Detta kundcentrerade tillvägagångssätt visas i tabellen nedan. Tabellen **Mottagare** i grått representerar huvudkundtabellen som allting byggs runt:
+Detta kundcentrerade tillvägagångssätt visas i tabellen nedan. The **Mottagare** tabellen i grått är den viktigaste kundtabellen som allt byggs kring:
 
 ![](assets/customer-centric-data-model.png)
 
-Gå till **[!UICONTROL Admin > Configuration > Data schemas]**, markera en resurs i listan och klicka på fliken **[!UICONTROL Documentation]** om du vill få åtkomst till beskrivningen av varje tabell.
+Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, välj en resurs i listan och klicka på **[!UICONTROL Documentation]** -fliken.
 
 Adobe Campaign standarddatamodell presenteras i [det här dokumentet](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Adobe Campaign Classic gör det möjligt att skapa en anpassad kundtabell. I de flesta fall bör du emellertid använda standarden [mottagartabell](../../configuration/using/about-data-model.md#default-recipient-table) som redan har fördefinierade ytterligare tabeller och funktioner.
+>Adobe Campaign Classic gör det möjligt att skapa en anpassad kundtabell. I de flesta fall rekommenderas dock att man använder [Mottagarregister](../../configuration/using/about-data-model.md#default-recipient-table) som redan har färdiga tabeller och funktioner.
 
 ### Data för Adobe Campaign {#data-for-campaign}
 
@@ -57,7 +57,7 @@ Vilka data ska skickas till Adobe Campaign? Det är viktigt att kunna avgöra vi
 >
 >Adobe Campaign är varken ett data warehouse eller ett rapportverktyg. Därför ska du inte importera alla möjliga kunder och tillhörande information till Adobe Campaign, eller importera data som bara ska användas för att skapa rapporter.
 
-Om du vill avgöra om ett attribut behövs eller inte i Adobe Campaign, frågar du dig själv om det skulle ingå i någon av dessa kategorier:
+Om du vill avgöra om ett attribut behövs eller inte i Adobe Campaign, frågar du dig själv om det hamnar i någon av följande kategorier:
 
 * Attribut som används för **segmentering**
 * Attribut som används för **datahanteringsprocesser** (t.ex. aggregerad beräkning)
@@ -70,21 +70,21 @@ Om du inte hamnar i något av dessa behöver du troligen inte det här attribute
 Följ de bästa metoderna nedan för att konfigurera data i Adobe Campaign för att säkerställa att din systemarkitektur och prestanda är bra.
 
 * En stor tabell ska i de flesta fall ha numeriska fält och innehålla länkar till referenstabeller (när du arbetar med värdelista).
-* Med attributet **expr** kan du definiera ett schemaattribut som ett beräkningsfält i stället för ett fysiskt uppsättningsvärde i en tabell. Detta gör att du kan komma åt information i ett annat format (till exempel ålder och födelsedatum) utan att behöva lagra båda värdena. Detta är ett bra sätt att undvika att duplicera fält. I mottagartabellen används till exempel ett uttryck för domänen, som redan finns i e-postfältet.
-* När uttrycksberäkningen är komplex bör du dock inte använda attributet **expr** eftersom beräkningen kan påverka frågeprestanda.
-* Typen **XML** är ett bra sätt att undvika att skapa för många fält. Men det tar också upp diskutrymme när en CLOB-kolumn används i databasen. Det kan även leda till komplexa SQL-frågor och kan påverka prestanda.
-* Längden för ett **strängfält**-fält ska alltid definieras med kolumnen. Som standard är maxlängden i Adobe Campaign 255, men Adobe rekommenderar att du håller fältet kortare om du redan vet att storleken inte kommer att överskrida en kortare längd.
+* The **expr** Med -attribut kan du definiera ett schemaattribut som ett beräknat fält i stället för ett fysiskt uppsättningsvärde i en tabell. Detta gör att du kan komma åt information i ett annat format (till exempel ålder och födelsedatum) utan att behöva lagra båda värdena. Detta är ett bra sätt att undvika att duplicera fält. I mottagartabellen används till exempel ett uttryck för domänen, som redan finns i e-postfältet.
+* När uttrycksberäkningen är komplex bör du dock inte använda **expr** attribut som on-the-fly-beräkning kan påverka hur dina frågor fungerar.
+* The **XML** text är ett bra sätt att undvika att skapa för många fält. Men det tar också upp diskutrymme när en CLOB-kolumn används i databasen. Det kan även leda till komplexa SQL-frågor och kan påverka prestanda.
+* Längden på en **string** -fältet ska alltid definieras med kolumnen. Som standard är maxlängden i Adobe Campaign 255, men Adobe rekommenderar att du håller fältet kortare om du redan vet att storleken inte kommer att överskrida en kortare längd.
 * Det går bra att ha ett fält som är kortare i Adobe Campaign än i källsystemet om du är säker på att storleken i källsystemet var för stor och inte skulle nås. Detta kan betyda en kortare sträng eller ett mindre heltal i Adobe Campaign.
 
 ### Val av fält {#choice-of-fields}
 
 Ett fält måste lagras i en tabell om det har ett syfte att målinrikta eller personalisera. Det innebär att om ett fält inte används för att skicka ett anpassat e-postmeddelande eller används som ett kriterium i en fråga tar det upp diskutrymme medan det är oanvändbart.
 
-För hybridinstanser och lokala instanser täcker FDA (Federated Data Access, en valfri funktion som ger åtkomst till externa data) behovet av att lägga till ett fält&quot;direkt&quot; under en kampanjprocess. Du behöver inte importera allt om du har FDA. Mer information om detta finns i [Om dataåtkomst med federerade data](../../installation/using/about-fda.md).
+För hybridinstanser och lokala instanser täcker FDA (Federated Data Access, en valfri funktion som ger åtkomst till externa data) behovet av att lägga till ett fält&quot;direkt&quot; under en kampanjprocess. Du behöver inte importera allt om du har FDA. Mer information finns i [Om åtkomst till federerade data](../../installation/using/about-fda.md).
 
 ### Val av nycklar {#choice-of-keys}
 
-Förutom **autopk** som är definierad som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
+Förutom **autopk** som definieras som standard i de flesta tabeller bör du överväga att lägga till några logiska nycklar eller affärsnycklar (kontonummer, klientnummer osv.). Den kan användas senare för import/avstämning eller datapaket. Mer information finns i [Identifierare](#identifiers).
 
 Effektiva nycklar är viktiga för prestanda. Numeriska datatyper bör alltid vara att föredra som nycklar för tabeller.
 
@@ -106,8 +106,8 @@ I följande tabell beskrivs dessa identifierare och deras syfte.
 
 | Identifierare | Beskrivning | Bästa praxis |
 |--- |--- |--- |
-| ID | <ul><li>ID är den fysiska primärnyckeln för en Adobe Campaign-tabell. För färdiga tabeller är det ett genererat 32-bitarsnummer från en sekvens</li><li>Den här identifieraren är vanligtvis unik för en viss Adobe Campaign-instans. </li><li>Ett automatiskt genererat ID kan vara synligt i en schemadefinition. Sök i attributet *autopk=&quot;true&quot;*.</li></ul> | <ul><li>Automatiskt genererade identifierare bör inte användas som referens i ett arbetsflöde eller i en paketdefinition.</li><li>Man bör inte anta att ID:t alltid blir ett ökande tal.</li><li>ID:t i en körklar tabell är ett 32-bitars tal och den här typen bör inte ändras. Numret hämtas från en sekvens som beskrivs i avsnittet med samma namn.</li></ul> |
-| Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel), kommer detta gemensamma namnutrymme att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>När ett objekt inte har något namnutrymme (*arbetsflöde* eller *leverans* till exempel) läggs det här namnutrymmesbegreppet till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
+| ID | <ul><li>ID är den fysiska primärnyckeln för en Adobe Campaign-tabell. För färdiga tabeller är det ett genererat 32-bitarsnummer från en sekvens</li><li>Den här identifieraren är vanligtvis unik för en viss Adobe Campaign-instans. </li><li>Ett automatiskt genererat ID kan vara synligt i en schemadefinition. Sök i *autopk=&quot;true&quot;* -attribut.</li></ul> | <ul><li>Automatiskt genererade identifierare bör inte användas som referens i ett arbetsflöde eller i en paketdefinition.</li><li>Man bör inte anta att ID:t alltid blir ett ökande tal.</li><li>ID:t i en körklar tabell är ett 32-bitars tal och den här typen bör inte ändras. Numret hämtas från en sekvens som beskrivs i avsnittet med samma namn.</li></ul> |
+| Namn (eller internt namn) | <ul><li>Den här informationen är en unik identifierare för en post i en tabell. Värdet kan uppdateras manuellt, vanligtvis med ett genererat namn.</li><li>Den här identifieraren behåller sitt värde när den distribueras i en annan instans av Adobe Campaign och får inte vara tom.</li></ul> | <ul><li>Byt namn på den post som genererats av Adobe Campaign om objektet ska distribueras från en miljö till en annan.</li><li>När ett objekt har ett namnutrymmesattribut (*schema* till exempel) kommer det här gemensamma namnutrymmet att utnyttjas för alla anpassade objekt som skapas. Vissa reserverade namnutrymmen bör inte användas: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>När ett objekt inte har något namnutrymme (*arbetsflöde* eller *leverans* till exempel) skulle det här namnutrymmesbegreppet läggas till som ett prefix för ett internt namnobjekt: *namespaceMyObjectName*.</li><li>Använd inte specialtecken som blanksteg&quot;, halvkolumn &quot;:&quot; eller bindestreck &quot;-&quot;. Alla dessa tecken ersätts med understrecket&quot;_&quot; (tillåtet tecken). &quot;abc-def&quot; och &quot;abc:def&quot; skulle till exempel lagras som &quot;abc_def&quot; och skrivas över varandra.</li></ul> |
 | Etikett | <ul><li>Etiketten är affärsidentifieraren för ett objekt eller en post i Adobe Campaign.</li><li>Det här objektet tillåter mellanslag och specialtecken.</li><li>Det garanterar inte att ett register är unikt.</li></ul> | <ul><li>Vi rekommenderar att du bestämmer en struktur för objektetiketterna.</li><li>Detta är den mest användarvänliga lösningen för att identifiera en post eller ett objekt för en Adobe Campaign-användare.</li></ul> |
 
 ## Anpassade interna nycklar {#custom-internal-keys}
@@ -132,10 +132,10 @@ När du skapar en anpassad tabell finns det två alternativ:
 
 Adobe Campaign primärnyckel är ett automatiskt genererat ID för alla färdiga tabeller och kan vara samma för anpassade tabeller. Mer information finns i [det här avsnittet](#identifiers).
 
-Det här värdet hämtas från en sekvens som kallas **sequence**, som är ett databasobjekt som används för att generera en nummersekvens.
+Det här värdet hämtas från det som kallas **sekvens**, som är ett databasobjekt som används för att generera en nummersekvens.
 
 Det finns två typer av sekvenser:
-* **Delad**: fler än en tabell skulle välja sitt ID från samma sekvens. Det innebär att om ett ID &#39;X&#39; används av en tabell, så har ingen annan tabell som delar samma sekvens en post med ID &#39;X&#39;. **Xtk** NewIdis är standardsekvensen som är tillgänglig i Adobe Campaign.
+* **Delad**: fler än en tabell skulle välja sitt ID från samma sekvens. Det innebär att om ett ID &#39;X&#39; används av en tabell, så har ingen annan tabell som delar samma sekvens en post med ID &#39;X&#39;. **XtkNewId** är standardsekvensen som är tillgänglig i Adobe Campaign.
 * **Dedikerad**: bara en tabell plockar sina ID:n från sekvensen. Sekvensnamnet innehåller vanligtvis tabellnamnet.
 
 >[!IMPORTANT]
@@ -151,8 +151,8 @@ När en anpassad tabell skapas i Adobe Campaign med en primärnyckel som autoPK,
 Som standard har en anpassad sekvens värden mellan +1 000 och +2,1BB. Tekniskt sett är det möjligt att få ett fullständigt urval av 4BB genom att aktivera negativa ID:n. Detta bör användas med försiktighet och ett ID kommer att förloras vid övergång från negativa till positiva tal: posten 0 ignoreras vanligtvis av Adobe Campaign i genererade SQL-frågor.
 
 **Relaterade ämnen:**
-* Mer information om funktionen **Sequence auto-generation** finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
-* Titta på den här videon[om du vill veta mer om sekvensöverstrålning.](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)
+* Mer information finns på **Automatisk sekvensgenerering** funktion, se [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
+* Om du vill ha mer information om sekvensöverstrålning kan du titta på [den här videon](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Index {#indexes}
 
@@ -177,18 +177,18 @@ Tänk dock på följande:
 
 Det kan bli mycket komplicerat att hantera index, och det är därför viktigt att förstå hur de fungerar. För att illustrera denna komplexitet kan vi ta ett grundläggande exempel, som att söka efter mottagare genom att filtrera på förnamn och efternamn. Så här gör du:
 1. Gå till mappen som visar alla mottagare i databasen. Mer information finns i [Hantera profiler](../../platform/using/managing-profiles.md).
-1. Högerklicka på fältet **[!UICONTROL First name]**.
+1. Högerklicka på **[!UICONTROL First name]** fält.
 1. Välj **[!UICONTROL Filter on this field]**.
 
    ![](assets/data-model-index-example.png)
 
-1. Upprepa den här åtgärden för fältet **[!UICONTROL Last name]**.
+1. Upprepa den här åtgärden för **[!UICONTROL Last name]** fält.
 
 De två motsvarande filtren läggs till ovanpå skärmen.
 
 ![](assets/data-model-index-search.png)
 
-Nu kan du utföra sökfiltrering i fälten **[!UICONTROL First name]** och **[!UICONTROL Last name]** enligt de olika filtervillkoren.
+Nu kan du använda sökfiltrering på **[!UICONTROL First name]** och **[!UICONTROL Last name]** fält enligt de olika filtervillkoren.
 
 Nu kan du lägga till index för att snabba upp sökningen efter dessa filter. Men vilka index ska användas?
 
@@ -228,7 +228,7 @@ Som standard skapar Adobe Campaign en länk med den externa tabellens primärnyc
 
 Ett index läggs till i de attribut som används i en länk.
 
-The   länkar skapade av och senast ändrade av finns i många tabeller. Det går att inaktivera indexet genom att använda attributet noDbIndex på länken, om den här informationen inte används av företaget.
+Länkarna som skapades av och ändrades senast av finns i många tabeller. Det går att inaktivera indexet genom att använda attributet noDbIndex på länken, om den här informationen inte används av företaget.
 
 ### Kardinalitet {#cardinality}
 
@@ -238,7 +238,7 @@ Definiera en länk med en kardinalitet (1-N) i schemat på (1) sidan. Relationen
 
 Observera att en länks omvända kardinalitet är (N) som standard. Det går att definiera en länk (1-1) genom att lägga till attributet revCardinality=&#39;single&#39; till länkdefinitionen.
 
-Om den omvända länken inte ska vara synlig för användaren kan du dölja den med länkdefinitionen revLink=&#39;_NONE_&#39;. Ett bra exempel för detta är att definiera en länk från mottagaren till den senaste transaktionen som har slutförts. Du behöver bara se länken från mottagaren till den sista transaktionen och ingen omvänd länk krävs för att kunna visas från transaktionsregistret.
+Om den omvända länken inte ska vara synlig för användaren kan du dölja den med länkdefinitionen revLink=&#39;_INGEN_&#39;. Ett bra exempel för detta är att definiera en länk från mottagaren till den senast slutförda transaktionen. Du behöver bara se länken från mottagaren till den sista transaktionen och ingen omvänd länk krävs för att kunna visas från transaktionsregistret.
 
 Länkar som utför en extern koppling (1-0..1) bör användas med försiktighet eftersom det påverkar systemets prestanda.
 
@@ -251,9 +251,9 @@ Som standard har Adobe Campaign leverans- och spårningsloggar en kvarhållnings
 * Om du vill att loggarna ska sparas längre bör detta beslut fattas med stor noggrannhet beroende på databasstorleken och mängden meddelanden som skickas. Som påminnelse är Adobe Campaign-sekvensen ett 32-bitars heltal.
 * Vi rekommenderar att du inte har mer än 1 miljard poster samtidigt i dessa tabeller (cirka 50 % av de 2,14 miljarder ID som finns) för att begränsa riskerna med att använda alla tillgängliga ID:n. Detta kräver att vissa kunder minskar kvarhållningstiden till mindre än 180 dagar.
 
-Läs mer om datalagring i [Riktlinjer för sekretess och säkerhet för kampanjer](../../platform/using/privacy-and-recommendations.md).
+Läs mer om datalagring i [Riktlinjer för kampanjsekretess och -säkerhet](../../platform/using/privacy-and-recommendations.md).
 
-Läs mer om rensningsarbetsflödet [i det här avsnittet](../../production/using/database-cleanup-workflow.md) för Campaign Data base.
+Läs mer om rensningsarbetsflödet för Campaign Data base [i det här avsnittet](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
@@ -302,12 +302,12 @@ Nedan följer några vanliga metodtips som bör följas när du utformar din dat
 
 Tabellstorleken är en kombination av antalet poster och antalet kolumner per post. Båda kan påverka prestanda för frågor.
 
-* En **tabell med liten storlek** påminner om leveranstabellen.
-* En **medelstor tabell** är samma som storleken på mottagartabellen. Det finns en post per kund.
-* En **tabell med stor storlek** påminner om den allmänna loggtabellen. Det finns många poster per kund.
+* A **liten storlek** tabellen liknar tabellen Delivery.
+* A **medelstor storlek** tabellen är densamma som storleken på mottagartabellen. Det finns en post per kund.
+* A **stor** tabellen påminner om den allmänna loggtabellen. Det finns många poster per kund.
 Om din databas till exempel innehåller 10 miljoner mottagare innehåller den stora loggtabellen cirka 100 till 200 miljoner meddelanden och leveranstabellen innehåller några tusen poster.
 
-I PostgreSQL får en rad inte överskrida 8 kB för att undvika mekanismen [TOAST](https://wiki.postgresql.org/wiki/TOAST). Försök därför att så mycket som möjligt minska antalet kolumner och storleken på varje rad för att behålla optimala prestanda för systemet (minne och processor).
+I PostgreSQL får en rad inte överskrida 8 kB för att undvika [TOST](https://wiki.postgresql.org/wiki/TOAST) mekanism. Försök därför att så mycket som möjligt minska antalet kolumner och storleken på varje rad för att behålla optimala prestanda för systemet (minne och processor).
 
 Antalet rader påverkar även prestandan. Adobe Campaign-databasen är inte utformad för att lagra historiska data som inte aktivt används för målinriktning eller personalisering - det här är en operativ databas.
 
@@ -325,9 +325,9 @@ Här är ett exempel:
 ![](assets/transaction-table-example.png)
 
 I det här exemplet:
-* Tabellerna *Transaktion* och *Transaktionsobjekt* är stora: över 10 miljoner.
-* Tabellerna *Produkt* och *Store* är mindre: mindre än 10 000.
-* Produktetiketten och referensen har placerats i tabellen *Produkt*.
-* Tabellen *Transaktionsobjekt* har bara en länk till tabellen *Produkt*, som är numerisk.
+* The *Transaktion* och *Transaktionsobjekt* tabeller är stora: över 10 miljoner.
+* The *Produkt* och *Butik* tabeller är mindre: mindre än 10 000.
+* Produktetiketten och referensen har placerats i *Produkt* tabell.
+* The *Transaktionsobjekt* tabellen har bara en länk till *Produkt* tabell, som är numerisk.
 
 <!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

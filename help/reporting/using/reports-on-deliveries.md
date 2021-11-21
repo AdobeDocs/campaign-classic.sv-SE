@@ -21,11 +21,11 @@ Adobe Campaign erbjuder flera typer av rapporter som är tillgängliga via kundk
 
 Följande typer av rapporter är tillgängliga:
 
-* Rapporter om hela plattformen finns i [Globala rapporter](../../reporting/using/global-reports.md).
+* Rapporter om hela plattformen finns på [Globala rapporter](../../reporting/using/global-reports.md).
 * Leveransrapporter, se [Leveransrapporter](../../reporting/using/delivery-reports.md).
-* Kumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
+* Ackumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
 
-Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Mer information finns i [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md).
+Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) för mer information.
 
 ## Använda rapporter {#using-reports}
 

@@ -28,7 +28,7 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 ![](assets/s_ncs_install_midsourcing.png)
 
 * Modulerna för exekvering och studshantering är inaktiverade på instansen.
-* Programmet är konfigurerat för att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
+* Programmet är konfigurerat att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
 
 ## Funktioner {#features}
 
@@ -64,4 +64,4 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
 ### Installera och konfigurera (driftsättning från mellanleverantörer) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Se [Mid-sourcing-server](../../installation/using/mid-sourcing-server.md).
+Se [Server för mellanleverantörer](../../installation/using/mid-sourcing-server.md).

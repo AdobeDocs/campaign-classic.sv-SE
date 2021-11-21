@@ -19,7 +19,7 @@ ht-degree: 20%
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-Fliken **[!UICONTROL Monitoring]**, som är tillgänglig från Campaign Classic hemsida, är den viktigaste startpunkten som hjälper dig att övervaka din instans.
+The **[!UICONTROL Monitoring]** -fliken, som är tillgänglig från Campaign Classic hemsida, är den viktigaste startpunkten som hjälper dig att övervaka din instans.
 
 Här finns en kontrollpanel för vad som händer i din instans: status (version av bygge, installerade paket osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
 
@@ -58,7 +58,7 @@ På Kontrollpanelen kan du hantera flera inställningar för din instans: hanter
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste vara värd för AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste ligga på AWS och uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md) eller [senaste GA-bygge (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
 
 ### Övervaka arbetsflöden {#monitoring-workflows}
 
@@ -96,14 +96,14 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../..
 
 **Bästa praxis**
 
-[De bästa sätten att skicka och ](../../delivery/using/delivery-best-practices.md) designa kan hjälpa er att förbättra deras prestanda.
+[Bästa sättet att leverera, skicka och designa](../../delivery/using/delivery-best-practices.md) kan hjälpa dig att förbättra deras prestanda.
 
-**Felsökning av**
-leveranserSpecifika åtgärder kan utföras vid problem med leveranser:
+**Felsökning av leverans**
+Specifika åtgärder kan utföras vid problem med leveranser:
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Bildvisningsproblem](../../production/using/image-display-issues.md)
 * [Problem med leveransresultat](../../delivery/using/delivery-performances.md)
-* [Temporära filproblem](../../production/using/temporary-files.md)  - endast  *lokala värdmodeller*
+* [Temporära filproblem](../../production/using/temporary-files.md) - *endast lokala värdmodeller*
 
 ### Övervaka databasen {#monitoring-database}
 

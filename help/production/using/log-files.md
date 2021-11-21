@@ -21,11 +21,11 @@ Loggfilerna är ordnade enligt följande:
 
 ![](assets/d_ncs_directory.png)
 
-Varje **nlserver**-modul genererar en loggfil som har sparats i följande katalog: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Varje **nlserver** I modulen genereras en loggfil som har sparats i följande katalog: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-Modulen **nlserver syslogd** sparar loggarna på disken. Den här modulen liknar Unix **syslog daemon**, men har anpassats för kompatibilitet mellan Unix och Windows. De andra Adobe Campaign-modulerna sparar inte sina loggar på disken. de delegerar den här aktiviteten till modulen **syslogd** genom att skicka UDP-paket.
+The **nlserver syslogd** sparas loggarna på disken. Den här modulen liknar Unix **syslog daemon**, men har anpassats för kompatibilitet mellan Unix och Windows. De andra Adobe Campaign-modulerna sparar inte sina loggar på disken. de delegerar uppgiften till **syslogd** genom att skicka UDP-paket.
 
-Som standard har Adobe Campaign-plattformen **syslogd**-modulen installerad, men det går att använda en annan **syslog-daemon**. Den här modulen skapar loggfilerna i katalogen **log**.
+Som standard har Adobe Campaign **syslogd** som är installerad på den, men det går att använda en annan **syslog daemon**. Den här modulen skapar loggfilerna i **logg** katalog.
 
 Loggarna för moduler med flera instanser lagras i följande katalog: **`<installation directory>`/var/default/log/**. Samma loggfil delas av alla instanser (t.ex. **web.log**).
 
@@ -53,14 +53,14 @@ Loggfilerna för en instans visas i följande tabell:
 
 >[!IMPORTANT]
 >
->Katalogen **redir** finns bara på omdirigeringsservrar. Underkatalogen **url** innehåller matchningar för de URL:er som ska omdirigeras, och underkatalogen **log** innehåller spårningsloggarna. Om du vill generera spårningsloggar måste modulen **trackinglogd** köras.
+>The **redir** katalogen finns bara på omdirigeringsservrar. The **url** underkatalogen innehåller matchningarna för de URL:er som ska omdirigeras samt underkatalogen **logg** innehåller spårningsloggarna. Om du vill generera spårningsloggar **trackinglogd** modulen måste köras.
 
-För optimering av prestanda och lagring delas filen logins.log upp i flera filer, en varje dag (logins.yy-mm-dd.log) med högst 365 filer. Antalet dagar kan ändras i serverConf.xml under syslogd (**maxNumberOfLoginsFiles** option). Se dokumentationen för [serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md#syslogd).
+För optimering av prestanda och lagring delas filen logins.log upp i flera filer, en varje dag (logins.yy-mm-dd.log) med högst 365 filer. Antalet dagar kan ändras i serverConf.xml, under syslogd (**maxNumberOfLoginsFiles** ). Läs dokumentationen på [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md#syslogd).
 
 Som standard är loggarna begränsade till två 10 MB-filer per modul och per instans. Den andra filen anropas: **`<modulename>`_2.log**. Storleken på loggarna är därför begränsad till 2*10 MB per modul och per instans.
 
-Du kan dock behålla större filer. Om du vill aktivera det här ändrar du värdet för **maxFileSizeMb=&quot;10&quot;** i **syslogd**-noden för **conf/serverConf.xml**-filen. Detta värde representerar den största tillåtna storleken i MB för en loggfil.
+Du kan dock behålla större filer. Om du vill aktivera det här ändrar du värdet för **maxFileSizeMb=&quot;10&quot;** i **syslogd** nod på **conf/serverConf.xml** -fil. Detta värde representerar den största tillåtna storleken i MB för en loggfil.
 
-Om du vill behålla fler detaljnivåer i loggarna kan du starta Adobe Campaign-modulerna med parametern **-verbose**:
+Om du vill behålla fler detaljnivåer i loggarna kan du starta Adobe Campaign-modulerna med **-verbose** parameter:
 
-**nlserver start  `<MODULE>`@`<INSTANCE>` -verbose**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**

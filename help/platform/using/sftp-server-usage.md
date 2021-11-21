@@ -23,7 +23,7 @@ När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFT
 
 * Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs däremot att du delar lösenordet med alla enheter som du hanterar.
 
-   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att kunna överföra den till Campaign-servern.
+   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till Adobe Support via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill att den ska överföras till Campaign-servern.
 
 * Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
 
@@ -43,11 +43,11 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 >[!NOTE]
 >
->Om din instans finns på AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Om din instans ligger hos AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gs-overview.md) eller [senaste GA-bygge (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 
@@ -63,14 +63,14 @@ Om du använder en egen SFTP-server måste du följa rekommendationerna ovan så
 
 När du i Campaign Classic anger en sökväg till en extern SFTP-server skiljer sig dessutom sökvägssyntaxen åt beroende på operativsystemet för SFTP-servern:
 
-* Om SFTP-servern är på **Windows** ska du alltid använda en relativ sökväg.
-* Om STP-servern är på **Linux** ska du alltid använda en sökväg som är relativ till hemmet (med början från &quot;~/&quot;) eller en absolut sökväg (med början från &quot;/&quot;).
+* Om SFTP-servern är på **Windows** använder du alltid en relativ sökväg.
+* Om STP-servern är på **Linux** använder du alltid en sökväg som är relativ till hemmet (som börjar med &quot;~/&quot;) eller en absolut sökväg (som börjar med &quot;/&quot;).
 
 ## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
 
-I avsnittet nedan visas den information som ska kontrolleras och tillhandahållas till supportteamet via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när anslutningsproblem med värdbaserade SFTP-servrar från Adobe inträffar.
+I avsnittet nedan listas den information som ska kontrolleras och tillhandahållas Adobe supportteam via [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när du stöter på anslutningsproblem med värdbaserade SFTP-servrar i Adobe.
 
-1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan göra ett **[!UICONTROL GET]**-anrop på instansen **[!UICONTROL /r/test]**-slutpunkten:
+1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan skapa en **[!UICONTROL GET]** anrop till instansen **[!UICONTROL /r/test]** slutpunkt:
 
    ```
    https://instanceUrl/r/test
@@ -100,11 +100,11 @@ I avsnittet nedan visas den information som ska kontrolleras och tillhandahålla
    >
    >Med nätverksverktyget kan du enkelt hantera nätverksanslutningar på olika operativsystem (se [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande stöter på anslutningsproblem kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet.
+   Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
 1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för tillåtelselista.
-1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Därför rekommenderar vi starkt att du använder nyckelbaserad autentisering (se [SFTP-serverns bästa praxis](#sftp-server-best-practices)).
-1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet för instanskonfigurationen.
+1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Vi rekommenderar därför starkt att du använder nyckelbaserad autentisering (se [Bästa praxis för SFTP-server](#sftp-server-best-practices)).
+1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
 
 ## Felet &quot;Det gick inte att matcha värdnamnet&quot;
@@ -125,7 +125,7 @@ Det här felet inträffar när du försöker ansluta FTP-servern från ett arbet
 
 Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så här felsöker du:
 
-1. Felsök **DNS-serverkonfiguration**:
+1. Felsökning **DNS-serverkonfiguration**:
 
    1. Kontrollera om servernamnet har lagts till i den lokala DNS-servern.
    1. Om ja, kör följande kommando på Adobe Campaign-servern för att hämta IP-adressen:
@@ -134,10 +134,10 @@ Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så 
 
       Detta bekräftar att FTP-servern fungerar och kan nås från Adobe Campaign programserver.
 
-1. Felsök **sessionsloggar**:
+1. Felsökning **sessionsloggar**:
 
-   1. Dubbelklicka på aktiviteten [Filöverföring](../../workflow/using/file-transfer.md) i arbetsflödet.
-   1. Gå till fliken **[!UICONTROL File Transfer]** och klicka sedan på **[!UICONTROL Advanced Parameters]**.
+   1. Dubbelklicka på [Filöverföring](../../workflow/using/file-transfer.md) aktivitet.
+   1. Gå till **[!UICONTROL File Transfer]** tabbtangenten och sedan klicka **[!UICONTROL Advanced Parameters]**.
    1. Markera alternativet **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)

@@ -27,13 +27,13 @@ Följande identifieringsmetoder är möjliga:
 
    Den här krypteringsmetoden använder den krypterade Adobe Campaign-identifieraren (ID). Den här metoden kan bara användas på ett Adobe Campaign-objekt och det krypterade ID:t kan bara genereras av Adobe Campaign-plattformen.
 
-   När du använder den här metoden måste du anpassa formulärets URL för att kunna leverera till e-postadressen genom att lägga till parametern **`<%=escapeUrl(recipient.cryptedId) %>`**. Mer information finns i [Leverera ett formulär via e-post](#delivering-a-form-via-email).
+   När du använder den här metoden måste du anpassa formulärets URL för att kunna leverera till e-postadressen genom att lägga till **`<%=escapeUrl(recipient.cryptedId) %>`** parameter. Mer information finns i [Leverera ett formulär via e-post](#delivering-a-form-via-email).
 
 * **[!UICONTROL DES encryption]**
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Den här krypteringsmetoden använder en extern identifierare (ID) som är länkad till en nyckel som delas av Adobe Campaign och den externa providern. I fältet **[!UICONTROL Des key]** kan du ange den här krypteringsnyckeln.
+   Den här krypteringsmetoden använder en extern identifierare (ID) som är länkad till en nyckel som delas av Adobe Campaign och den externa providern. The **[!UICONTROL Des key]** kan du ange den här krypteringsnyckeln.
 
 * **[!UICONTROL List of fields]**
 
@@ -41,11 +41,11 @@ Följande identifieringsmetoder är möjliga:
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   Du kan lägga till fält i formuläregenskaperna via fliken **[!UICONTROL Parameters]** (se [Lägga till parametrar](defining-web-forms-properties.md#adding-parameters)). De placeras i formulärets URL-adress eller indatazoner.
+   Fält kan läggas till i formuläregenskaperna via **[!UICONTROL Parameters]** flik (se [Lägga till parametrar](defining-web-forms-properties.md#adding-parameters)). De placeras i formulärets URL-adress eller indatazoner.
 
    >[!CAUTION]
    >
-   >Data i de markerade fälten är inte krypterade. Den får inte anges i krypterad form eftersom Adobe Campaign inte kan dekryptera den om alternativet **[!UICONTROL Field list]** är markerat.
+   >Data i de markerade fälten är inte krypterade. Den får inte tillhandahållas i krypterad form eftersom Adobe Campaign inte kan dekryptera den om **[!UICONTROL Field list]** är markerat.
 
    I följande exempel baseras förinläsningen av profiler på e-postadressen.
 
@@ -59,15 +59,15 @@ Följande identifieringsmetoder är möjliga:
 
    >[!CAUTION]
    >
-   >Om flera fält anges i listan måste data i **ALLA FÄLT** matcha data som lagras i databasen för att profilen ska kunna uppdateras. I annat fall skapas en ny profil.
+   >Om flera fält anges i listan är data från **ALLA FÄLT** måste matcha de data som lagras i databasen för att profilen ska kunna uppdateras. I annat fall skapas en ny profil.
    > 
    >Den här funktionen är särskilt användbar för webbprogram, men rekommenderas inte för offentliga formulär. Det valda åtkomstkontrollalternativet måste vara &quot;Aktivera åtkomstkontroll&quot;.
 
-Alternativet **[!UICONTROL Skip preloading if no ID]** måste vara markerat om du inte vill uppdatera profiler. I det här fallet läggs alla profiler som anges till i databasen när formuläret har godkänts. Det här alternativet används till exempel när formuläret publiceras på en webbplats.
+The **[!UICONTROL Skip preloading if no ID]** Du måste markera alternativet om du inte vill uppdatera profiler. I det här fallet läggs alla profiler som anges till i databasen när formuläret har godkänts. Det här alternativet används till exempel när formuläret publiceras på en webbplats.
 
-Med alternativet **[!UICONTROL Auto-load data referenced in the form]** kan du automatiskt förhandsladda data som matchar inmatnings- och kopplingsfält i formuläret. Data som refereras i **[!UICONTROL Script]**- och **[!UICONTROL Test]**-aktiviteter berörs dock inte. Om det här alternativet inte är markerat måste du definiera fälten med alternativet **[!UICONTROL Load additional data]**.
+The **[!UICONTROL Auto-load data referenced in the form]** kan du automatiskt förhandsladda data som matchar inmatnings- och kopplingsfält i formuläret. Data som refereras i **[!UICONTROL Script]** och **[!UICONTROL Test]** verksamheten inte berörs. Om det här alternativet inte är markerat måste du definiera fälten med **[!UICONTROL Load additional data]** alternativ.
 
-Med alternativet **[!UICONTROL Load additional data]** kan du lägga till information som inte används på formulärets sidor, men som ändå kommer att läsas in i förväg.
+The **[!UICONTROL Load additional data]** Med kan du lägga till information som inte används på formulärets sidor, men som ändå kommer att läsas in i förväg.
 
 Du kan till exempel förhandsladda mottagarens kön och automatiskt dirigera honom eller henne till rätt sida via en testruta.
 
@@ -83,7 +83,7 @@ En forms livscykel består av tre steg:
 
 1. **Formuläret redigeras**
 
-   Detta är den inledande designfasen. När ett nytt formulär skapas är det i redigeringsfasen. Åtkomst till formuläret, endast i testningssyfte, kräver sedan att parametern **[!UICONTROL __uuid]** används i dess URL. Den här URL:en är tillgänglig på underfliken **[!UICONTROL Preview]**. Se [Formulär-URL-parametrar](defining-web-forms-properties.md#form-url-parameters).
+   Detta är den inledande designfasen. När ett nytt formulär skapas är det i redigeringsfasen. Åtkomst till formuläret, endast i testsyfte, kräver sedan parametern **[!UICONTROL __uuid]** som ska användas i dess URL. Den här URL:en finns i **[!UICONTROL Preview]** underflik. Se [URL-parametrar för formulär](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -93,11 +93,11 @@ En forms livscykel består av tre steg:
 
    När designfasen är klar kan blanketten skickas. För det första måste det publiceras. Mer information finns i [Publicera ett formulär](#publishing-a-form).
 
-   Formuläret är **[!UICONTROL Live]** tills det upphör att gälla.
+   Formuläret kommer att **[!UICONTROL Live]** tills det upphör att gälla.
 
    >[!CAUTION]
    >
-   >URL:en för undersökningen får inte innehålla parametern **[!UICONTROL __uuid]** för att kunna levereras.
+   >URL:en till undersökningen får inte innehålla **[!UICONTROL __uuid]** parameter.
 
 1. **Formuläret är inte tillgängligt**
 
@@ -111,47 +111,47 @@ Ett formulärs publiceringsstatus visas i formulärlistan.
 
 ### Publicera ett formulär {#publishing-a-form}
 
-Om du vill ändra ett formulärs status måste du publicera det. Om du vill göra det klickar du på **[!UICONTROL Publication]** ovanför listan med webbformulär och väljer läge i listrutan.
+Om du vill ändra ett formulärs status måste du publicera det. Om du vill göra det klickar du på **[!UICONTROL Publication]** ovanför listan med webbformulär och välj läge i listrutan.
 
 ![](assets/webapp_publish_webform.png)
 
 ### Göra ett formulär tillgängligt online {#making-a-form-available-online}
 
-För att användarna ska kunna komma åt formuläret måste det vara i produktion och ha startats, dvs. inom giltighetsperioden. Giltighetsdatumen anges via länken **[!UICONTROL Properties]** i formuläret.
+För att användarna ska kunna komma åt formuläret måste det vara i produktion och ha startats, dvs. inom giltighetsperioden. Giltighetsdatumen anges via **[!UICONTROL Properties]** formulärets länk.
 
-* Använd fälten i **[!UICONTROL Project]**-avsnittet för att ange start- och slutdatum för formuläret.
+* Använd fälten i **[!UICONTROL Project]** för att ange start- och slutdatum för formuläret.
 
    ![](assets/webapp_availability_date.png)
 
-* Klicka på länken **[!UICONTROL Personalize the message displayed if the form is closed...]** för att definiera felmeddelandet som ska visas om användaren försöker få åtkomst till formuläret medan det inte är giltigt.
+* Klicka på **[!UICONTROL Personalize the message displayed if the form is closed...]** länk för att definiera felmeddelandet som ska visas om användaren försöker få åtkomst till formuläret medan det inte är giltigt.
 
    Se [Formulärets tillgänglighet](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Leverera ett formulär via e-post {#delivering-a-form-via-email}
 
-När du skickar en inbjudan via e-post kan du använda alternativet **[!UICONTROL Adobe Campaign Encryption]** för datavstämning. Det gör du genom att gå till leveransguiden och anpassa länken till formuläret genom att lägga till följande parameter:
+När du skickar en inbjudan via e-post kan du använda **[!UICONTROL Adobe Campaign Encryption]** alternativ för datavstämning. Det gör du genom att gå till leveransguiden och anpassa länken till formuläret genom att lägga till följande parameter:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
-I det här fallet måste avstämningsnyckeln för datalagring vara mottagarens krypterade identifierare. Mer information finns i [Förhandsladda formulärdata](#pre-loading-the-form-data).
+I det här fallet måste avstämningsnyckeln för datalagring vara mottagarens krypterade identifierare. Mer information finns i [Läs in formulärdata i förväg](#pre-loading-the-form-data).
 
-I så fall måste du markera alternativet **[!UICONTROL Update the preloaded record]** i postrutan. Mer information finns i [Spara svar på webbformulär](web-forms-answers.md#saving-web-forms-answers).
+I så fall måste du kontrollera **[!UICONTROL Update the preloaded record]** i postrutan. Mer information finns i [Spara svar på webbformulär](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Loggsvar {#log-responses}
 
-Svarsspårning kan aktiveras på en dedikerad flik för att övervaka effekten av webbformuläret. Det gör du genom att klicka på länken **[!UICONTROL Advanced parameters...]** i fönstret för formuläregenskaper och välja alternativet **[!UICONTROL Log responses]**.
+Svarsspårning kan aktiveras på en dedikerad flik för att övervaka effekten av webbformuläret. Om du vill göra det klickar du på **[!UICONTROL Advanced parameters...]** i fönstret för formuläregenskaper och välj **[!UICONTROL Log responses]** alternativ.
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
-Fliken **[!UICONTROL Responses]** visas så att du kan visa svarandens identitet.
+The **[!UICONTROL Responses]** visas så att du kan visa respondenternas identitet.
 
 ![](assets/s_ncs_admin_survey_trace_tab.png)
 
-Markera en mottagare och klicka på knappen **[!UICONTROL Detail...]** för att visa svaren.
+Välj en mottagare och klicka på **[!UICONTROL Detail...]** för att visa de svar som ges.
 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 

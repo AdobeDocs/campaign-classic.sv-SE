@@ -9,7 +9,7 @@ exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -35,7 +35,7 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 | Integrera med IMS (Adobe ID) | On-demand | On-demand | On-demand | [Läs mer](../../integrations/using/about-adobe-id.md) |
 | Kryptera/dekryptera data för filöverföringar | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../platform/using/unzip-decrypt.md) |
 | Zippa/zippa upp filer | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../platform/using/unzip-decrypt.md) |
-| Delegering av domännamn | On-demand | On-demand | Inte tillgängligt | [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html) |
+| Delegering av domännamn | On-demand | On-demand | Inte tillgängligt | [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv) |
 | Installera SpamAssassin | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../delivery/using/spamassassin.md) |
 | Åtkomst till leveransrapporter | Tillgänglig | On-demand | Tillgänglig | [Läs mer](../../delivery/using/monitoring-deliverability.md) |
 | Konfigurerar LDAP-autentisering | Inte tillgängligt | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/connecting-through-ldap.md) |
@@ -43,11 +43,11 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 
 ## Federerad dataåtkomst{#fda}
 
-Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign. [Läs mer](../../installation/using/about-fda.md)
+Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign. [Läs mer](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Åtkomst till en extern databas via FDA är bara möjlig för lokala eller hybridinstallationer, förutom med [Snowflake-anslutaren](../../installation/using/configure-fda-snowflake.md).
+>Åtkomst till en extern databas via FDA är endast möjlig för anläggningsinstallationer eller hybridinstallationer, utom med [Snowflake-kontakt](../../installation/using/configure-fda-snowflake.md).
 
 
 **Se även**

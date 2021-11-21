@@ -26,8 +26,8 @@ Med Adobe Campaign kan du länka insamlade webbspårningsdata till en mottagare 
 
 Om du vill aktivera anonym webbspårning för din instans måste följande element konfigureras:
 
-* **trackWebVisitors**-parametern för **redirection**-elementet i **serverConf.xml**-filen för spårningsservern måste anges till **true** för att en permanent cookie ska placeras (**uid230**) i webbläsarna för okända internetanvändare som besöker webbplatsen.
-* Läget **Anonym webbspårning** måste väljas på spårningskonfigurationsskärmen i distributionsguiden.
+* The **trackWebVisitors** parametern för **omdirigering** -elementet i **serverConf.xml** spårningsserverns fil måste anges till **true**&#39;, för att placera en permanent cookie (**uuid230**) i webbläsarna för okända internetanvändare som besöker webbplatsen.
+* The **Anonym webbspårning** Du måste välja läge på spårningskonfigurationsskärmen i distributionsguiden.
 
    ![](assets/webtracking_anonymous_set.png)
 

@@ -28,7 +28,7 @@ Facebook har följande begränsningar:
 
 ## Skapa leveransen {#creating-the-delivery}
 
-Skapa en ny leverans med leveransmallen **[!UICONTROL Publish to a brand page]**.
+Skapa en ny leverans med **[!UICONTROL Publish to a brand page]** leveransmall.
 
 ![](assets/social_facebook_delivery_001.png)
 
@@ -48,25 +48,25 @@ Du måste markera de sidor du vill publicera publikationen på.
 
    ![](assets/social_facebook_delivery_012.png)
 
-1. I fältet **[!UICONTROL Folder]** väljer du den tjänstmapp som innehåller Facebook-sidan. Som standard lagras sidorna i roten för **[!UICONTROL Facebook]**-tjänstmappen. Markera sedan den Facebook-sida som du vill publicera på.
+1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller Facebook-sidan. Som standard lagras sidorna i roten av **[!UICONTROL Facebook]** tjänstmapp. Markera sedan den Facebook-sida som du vill publicera på.
 
    ![](assets/social_facebook_delivery_013.png)
 
 ## Välja korrekturmål {#selecting-the-proof-target}
 
-På fliken **[!UICONTROL Target of the proofs]** kan du definiera den Facebook-sida som du vill använda för att testa leveranser innan du skickar ut dem. Vi rekommenderar att du skapar en dedikerad privat Facebook-sida för detta ändamål. Mer information om hur du skapar en privat Facebook-sida finns i [Skapa en test-Facebook-sida](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Om du vill välja korrekturmålet ska du utföra samma steg som för huvudmålet: [Markera huvudmålet](#selecting-the-main-target).
+The **[!UICONTROL Target of the proofs]** På -fliken kan du definiera den Facebook-sida som du vill använda för att testa leveranser innan du skickar ut dem. Vi rekommenderar att du skapar en dedikerad privat Facebook-sida för detta ändamål. Mer information om hur du skapar en privat Facebook-sida finns i [Skapa en testsida för Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Om du vill välja korrekturmålet ska du utföra samma steg som för huvudmålet: [Välja huvudmål](#selecting-the-main-target).
 
 ![](assets/social_facebook_delivery_004.png)
 
 >[!NOTE]
 >
->Om du använder samma Facebook-testsida för alla leveranser kan du spara korrekturmålet i leveransmallen **[!UICONTROL Publish to a brand page]**, som nås via noden **[!UICONTROL Resources > Templates > Delivery templates]**. Korrekturmålet anges som standard för varje ny leverans.
+>Om du använder samma Facebook-testsida för alla leveranser kan du spara korrekturmålet i **[!UICONTROL Publish to a brand page]** leveransmall som du kommer åt via **[!UICONTROL Resources > Templates > Delivery templates]** nod. Korrekturmålet anges som standard för varje ny leverans.
 
 ## Definiera målgruppen {#defining-the-audience}
 
 Om du vill använda lokala segment för att förfina den typ av publik som har behörighet att visa publikationen rekommenderar vi att du skapar en Facebook-sida per segment (till exempel: Adobe Campaign Paris, Adobe Campaign London osv.).
 
-Men det går också att använda målgruppsfiltren som används av Facebook. På fliken **[!UICONTROL Audience]** i **[!UICONTROL Select target window]** finns fyra filter:
+Men det går också att använda målgruppsfiltren som används av Facebook. The **[!UICONTROL Audience]** -fliken i **[!UICONTROL Select target window]** har fyra filter:
 
 * **[!UICONTROL Country]**
 * **[!UICONTROL Regions]**
@@ -75,13 +75,13 @@ Men det går också att använda målgruppsfiltren som används av Facebook. På
 
 >[!IMPORTANT]
 >
->Använd den här funktionen med försiktighet. I leveransrapporter kommer indikatorn **[!UICONTROL Number of fans]** inte att ta hänsyn till dessa Facebook-filter.
+>Använd den här funktionen med försiktighet. I leveransrapporter **[!UICONTROL Number of fans]** Indikatorn tar inte hänsyn till dessa Facebook-filter.
 >
 >Facebook kan ändra listan över målgruppsfilter och deras värden.
 
 ## Definiera meddelandeinnehåll {#defining-message-content}
 
-Välj typ av publikation med listrutan **[!UICONTROL Content type]**.
+Välj typ av publikation med **[!UICONTROL Content type]** nedrullningsbar meny.
 
 ![](assets/social_facebook_delivery_006.png)
 
@@ -114,29 +114,29 @@ Ange de olika fälten:
 >
 >Alla URL-adresser måste börja med **&quot;http://&quot;** eller **&quot;https://&quot;**.
 
-1. I fältet **[!UICONTROL Status]** anger du den text som ska visas under sidans namn.
-1. Ange publikationstiteln i fältet **[!UICONTROL Name]**.
-1. I fältet **[!UICONTROL Link]** anger du den URL som publikationen pekar på.
+1. I **[!UICONTROL Status]** anger du den text som ska visas under sidans namn.
+1. I **[!UICONTROL Name]** anger du publikationens titel.
+1. I **[!UICONTROL Link]** anger du den URL som publikationen pekar på.
 
    >[!NOTE]
    >
-   >Om du vill lägga till fältet **[!UICONTROL Link]** i URL:en för ett Facebook-program för att marknadsföra det rekommenderar vi att du anpassar det efter villkoren för smartphone-visning:
+   >Om du vill lägga till **[!UICONTROL Link]** om du vill uppgradera ett Facebook-program till webbadressen för det rekommenderar vi att du anpassar det efter smarttelefonens visningsvillkor:
    >
-   >1. Markera Facebook [https://developers.facebook.com/apps](https://developers.facebook.com/apps) och välj fliken **[!UICONTROL Settings > Basic]**.
-   >1. Ange fältet **[!UICONTROL Namespace]**.
-   >1. Ange fältet **[!UICONTROL Mobile Site URL]**: När en användare klickar på publiceringslänken på sin smarttelefon dirigeras de automatiskt om av Facebook till den URL som definieras i det här fältet.
+   >1. Markera Facebook-programmet [https://developers.facebook.com/apps](https://developers.facebook.com/apps)och väljer **[!UICONTROL Settings > Basic]** -fliken.
+   >1. Ange **[!UICONTROL Namespace]** fält.
+   >1. Ange **[!UICONTROL Mobile Site URL]** fält: När en användare klickar på publiceringslänken på sin smarttelefon dirigeras de automatiskt om av Facebook till den URL som definieras i det här fältet.
    >1. Skapa webbprogrammet så att Facebook-skärmen anpassas efter den enhet som används (smartphone eller PC).
-   >1. Gå till fältet **[!UICONTROL Link]** för publikationen via Adobe Campaign-konsolen och ange URL:en för fältet **[!UICONTROL Canvas page]**.
+   >1. Gå till **[!UICONTROL Link]** för publiceringen via Adobe Campaign-konsolen anger du URL:en för **[!UICONTROL Canvas page]** fält.
 
 
-1. I fältet **[!UICONTROL Image]** anger du URL-adressen till bilden som ska visas till vänster om publikationen.
+1. I **[!UICONTROL Image]** anger du URL-adressen till bilden som ska visas till vänster om publikationen.
 
    >[!IMPORTANT]
    >
    >Bilden måste lagras på en offentlig webbplats för att Facebook ska kunna överföra den.
 
-1. I fältet **[!UICONTROL Caption]** anger du den text som ska visas i slutet av publikationen.
-1. Gå till fältet **[!UICONTROL Description]** och ange texten som ska visas under rubriken.
+1. I **[!UICONTROL Caption]** anger du den text som ska visas i slutet av publikationen.
+1. Gå till **[!UICONTROL Description]** och ange den text som ska visas under rubriken.
 
 ![](assets/social_facebook_delivery_005.png)
 
@@ -152,11 +152,11 @@ Ange de olika fälten:
 >
 >Alla URL-adresser måste börja med **&quot;http://&quot;** eller **&quot;https://&quot;**.
 
-1. I fältet **[!UICONTROL Status]** anger du den text som ska visas under sidans namn.
-1. Ange publikationstiteln i fältet **[!UICONTROL Name]**.
-1. I fältet **[!UICONTROL Video code]** anger du koden för YouTube-videon. För exempelvis https://www.youtube.com/watch?v=abc123456&#39; blir videokoden abc123456.
-1. I fältet **[!UICONTROL Caption]** anger du den text som ska visas i slutet av publikationen.
-1. Gå till fältet **[!UICONTROL Description]** och ange texten som ska visas under rubriken.
+1. I **[!UICONTROL Status]** anger du den text som ska visas under sidans namn.
+1. I **[!UICONTROL Name]** anger du publikationens titel.
+1. I **[!UICONTROL Video code]** anger du koden för YouTube-videon. För exempelvis https://www.youtube.com/watch?v=abc123456&#39; blir videokoden abc123456.
+1. I **[!UICONTROL Caption]** anger du den text som ska visas i slutet av publikationen.
+1. Gå till **[!UICONTROL Description]** och ange den text som ska visas under rubriken.
 
 ![](assets/social_facebook_delivery_youtube.png)
 
@@ -170,56 +170,56 @@ Ange de olika fälten:
 
 1. Börja med att ange **[!UICONTROL Album name]**.
 1. Ange sedan **[!UICONTROL Description]** som ska visas ovanför fotona.
-1. Om du vill lägga till ett foto klickar du på knappen **[!UICONTROL Add]**, markerar fotot och klickar på **[!UICONTROL Open]**.
+1. Om du vill lägga till ett foto klickar du på **[!UICONTROL Add]** markerar du fotot och klickar på **[!UICONTROL Open]**.
 1. En bildtext kan läggas till i varje foto.
 
 ![](assets/social_facebook_delivery_photos.png)
 
 ## Förhandsgranska {#previewing}
 
-På fliken **[!UICONTROL Preview]** kan du visa återgivningen av publikationen.
+The **[!UICONTROL Preview]** kan du visa hur publikationen återges.
 
-1. Klicka på fliken **[!UICONTROL Preview]**.
-1. Klicka på listrutan **[!UICONTROL Test personalization]** och välj **[!UICONTROL Service]**.
-1. I fältet **[!UICONTROL Folder]** väljer du den tjänstmapp som innehåller dina Facebook-sidor. Som standard lagras sidorna i roten i **[!UICONTROL Facebook]**-tjänstmappen.
+1. Klicka på **[!UICONTROL Preview]** -fliken.
+1. Klicka på **[!UICONTROL Test personalization]** nedrullningsbar meny och välj **[!UICONTROL Service]**.
+1. I **[!UICONTROL Folder]** markerar du den tjänstmapp som innehåller dina Facebook-sidor. Som standard lagras sidorna i roten av **[!UICONTROL Facebook]** tjänstmapp.
 1. Markera den Facebook-sida där du vill testa förhandsvisningen.
 
 ![](assets/social_facebook_delivery_008.png)
 
 >[!NOTE]
 >
->Förhandsgranskningen kan skilja sig något från den slutliga Facebook-publikationen. Vi rekommenderar starkt att du skickar ett bevis före slutleverans för en exakt återgivning av publikationen. Se [Skicka korrektur](#sending-the-proof).
+>Förhandsgranskningen kan skilja sig något från den slutliga Facebook-publikationen. Vi rekommenderar starkt att du skickar ett bevis före slutleverans för en exakt återgivning av publikationen. Se [Skicka korrekturet](#sending-the-proof).
 
 ## Konfigurerar spårning {#configuring-tracking}
 
-Spårning kan visas i leveransrapporterna och på fliken **[!UICONTROL Edit > Tracking]** för leverans och tjänst.
+Spårning kan visas i leveransrapporterna och i **[!UICONTROL Edit > Tracking]** fliken för leveransen och tjänsten.
 
-Klickningar på URL:en som finns i leveransen mäts av Adobe Campaign. Antalet klick på **[!UICONTROL Like]**-knappen, antalet kommentarer och antalet fans mäts av Facebook.
+Klickningar på URL:en som finns i leveransen mäts av Adobe Campaign. Antalet klick på **[!UICONTROL Like]** , antalet kommentarer och antalet fans mäts av Facebook.
 
 Spårningskonfigurationen är densamma som för en e-postleverans. Mer information om detta finns i [det här avsnittet](../../delivery/using/about-delivery-monitoring.md).
 
 >[!NOTE]
 >
->Spårning är aktiverat som standard i leveransmallen **[!UICONTROL Publish to a brand page]**.
+>I **[!UICONTROL Publish to a brand page]** leveransmall, spårning är aktiverat som standard.
 
 ## Skicka korrekturet {#sending-the-proof}
 
-Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att se exakt hur den återges på en privat testsida i Facebook. Mer information om hur du skapar en privat testsida för Facebook finns i [Skapa en testsida för Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Stegen för att välja provtryck finns i [Välja provmålet](#selecting-the-proof-target).
+Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att se exakt hur den återges på en privat testsida i Facebook. Mer information om hur du skapar en privat testsida för Facebook finns i [Skapa en testsida för Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Stegen för val av provtryck finns i [Välja korrekturmål](#selecting-the-proof-target).
 
 Korrekturleveranser är identiska med e-postleveranser. Se [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ## Skicka meddelandet {#sending-the-message}
 
-1. När innehållet har godkänts klickar du på **[!UICONTROL Send]**.
-1. Välj **[!UICONTROL Deliver as soon as possible]** och klicka på knappen **[!UICONTROL Analyze]**.
+1. När innehållet är godkänt klickar du på **[!UICONTROL Send]** -knappen.
+1. Välj **[!UICONTROL Deliver as soon as possible]** och klicka på **[!UICONTROL Analyze]** -knappen.
 
    >[!NOTE]
    >
-   >Med alternativet **[!UICONTROL Postpone the delivery]** kan du skjuta upp leveransen till ett senare datum.
+   >The **[!UICONTROL Postpone the delivery]** kan du skjuta upp leveransen till ett senare datum.
 
    ![](assets/social_facebook_delivery_009.png)
 
 1. Kontrollera resultatet när analysen är klar.
-1. Klicka på **[!UICONTROL Confirm delivery]** och sedan på **[!UICONTROL Yes]**.
+1. Klicka **[!UICONTROL Confirm delivery]** och sedan klicka **[!UICONTROL Yes]**.
 
    ![](assets/social_facebook_delivery_016.png)

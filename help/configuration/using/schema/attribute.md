@@ -39,15 +39,15 @@ _operation (sträng), advanced (boolesk), applicableIf (sträng), autoIncrement 
 
 ## Användning och användningssammanhang {#use-and-context-of-use}
 
-`<attribute>` -element måste deklareras i ett  `<element>` element.
+`<attribute>` måste deklareras i en `<element>` -element.
 
-Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar inte den sekvens i vilken fält skapas i databasen. Sekvensen som skapas kommer att vara i alfabetisk ordning.
+Den sekvens i vilken `<attribute>` -element definieras i en `<srcschema>` påverkar inte fältgenereringssekvensen i databasen. Sekvensen som skapas kommer att vara i alfabetisk ordning.
 
 ## Attributbeskrivning {#attribute-description}
 
-* **_operation (sträng)**: definierar typen av skrivning i databasen.
+* **operation (sträng)**: definierar typen av skrivning i databasen.
 
-   Det här attributet används främst vid utökning av scheman som ligger utanför boxen.
+   Det här attributet används främst vid utökning av scheman som ligger utanför rutan.
 
    Tillgängliga värden är:
 
@@ -58,10 +58,10 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
    * &quot;delete&quot;: borttagning. Det innebär att Adobe Campaign återställer och tar bort element.
 
 * **avancerat (booleskt)**: när det här alternativet är aktiverat (@advanced=&quot;true&quot;) kan du dölja attributet i listan med tillgängliga fält som kan användas för att konfigurera en lista i ett formulär.
-* **applicableIf (string)**: Med det här attributet kan du göra fält valfria. `<attribute>`-elementet kommer att beaktas när databasen uppdateras när villkoret uppfylls. &quot;applicableIf&quot; tar emot ett XTK-uttryck.
-* **autoIncrement (boolean)**: om det här alternativet är aktiverat blir fältet räknare. Detta gör att du kan öka ett värde (mest ID). (extern användning)
+* **applicableIf (string)**: Med det här attributet kan du göra fält valfria. The `<attribute>` -elementet kommer att beaktas när databasen uppdateras när villkoret uppfylls. &quot;applicableIf&quot; tar emot ett XTK-uttryck.
+* **autoIncrement (booleskt)**: om det här alternativet är aktiverat blir fältet räknare. Detta gör att du kan öka ett värde (mest ID). (extern användning)
 * **tillhörTo (sträng)**: använder namnet och namnutrymmet för tabellen som delar fältet och fyller i schemat där attributet deklareras. (används endast i en `<schema>`).
-* **dataPolicy (string)**: gör att du kan ange godkännandebegränsningar för värden som tillåts i SQL- eller XML-fältet. Värdena för det här attributet är:
+* **dataPolicy (sträng)**: gör att du kan ange godkännandebegränsningar för värden som tillåts i SQL- eller XML-fältet. Värdena för det här attributet är:
 
    * &quot;none&quot;: inget värde
    * &quot;smartCase&quot;: versaler
@@ -74,11 +74,11 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
 
 * **dbEnum (sträng)**: tar emot det interna namnet på en sluten uppräkning. Uppräkningsvärdena måste definieras i `<srcschema>`.
 * **defOnDuplicate (boolesk)**: om det här attributet aktiveras, kommer standardvärdet (definierat i @default) automatiskt att tillämpas på posten när en post dupliceras.
-* **default (string)**: Här kan du definiera värdet för standardfältet (anrop till en funktion, standardvärde). Det här attributet tar emot ett XTK-uttryck.
+* **default (sträng)**: Här kan du definiera värdet för standardfältet (anrop till en funktion, standardvärde). Det här attributet tar emot ett XTK-uttryck.
 * **desc (sträng)**: I kan du infoga en beskrivning av attributet. Beskrivningen visas i gränssnittets statusfält.
 * **edit (string)**: det här attributet anger vilken typ av indata som ska användas i formuläret som är länkat till schemat.
-* **enum (string)**: tar emot namnet på uppräkningen som är länkad till fältet. Uppräkningen kan infogas i samma schema eller i ett fjärrschema.
-* **expr (string)**: definierar ett förberäkningsuttryck för fält. Det här attributet tar emot en Xpath eller ett XTK-uttryck.
+* **enum (sträng)**: tar emot namnet på uppräkningen som är länkad till fältet. Uppräkningen kan infogas i samma schema eller i ett fjärrschema.
+* **expr (sträng)**: definierar ett förberäkningsuttryck för fält. Det här attributet tar emot en Xpath eller ett XTK-uttryck.
 * **funktion (sträng)**: definierar ett egenskapsfält: Dessa fält används för att utöka data i en befintlig tabell, men med lagring i en bilagetabell. Godkända värden är:
 
    * &quot;shared&quot;: innehållet lagras i en delad tabell per datatyp
@@ -94,9 +94,9 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
    När en egenskap definieras i ett schema måste schemat ha en huvudnyckel baserad på ett enskilt fält (sammansatta nycklar tillåts inte).
 
 * **featureDate (boolean)**: attribut länkat till egenskapsfältet &quot;@feature&quot;. Om värdet är &quot;true&quot; kan du ta reda på när värdet senast uppdaterades.
-* **img (string)**: I kan du definiera en sökväg för en bild som är länkad till ett fält (namnutrymme + bildnamn) (exempel: img=&quot;cus:mypicture.jpg&quot;). I praktiken måste bilden importeras till programservern.
+* **img (sträng)**: I kan du definiera en sökväg för en bild som är länkad till ett fält (namnutrymme + bildnamn) (exempel: img=&quot;cus:mypicture.jpg&quot;). I praktiken måste bilden importeras till programservern.
 * **label (string)**: etikett länkad till fältet, som oftast är avsedd för användaren i gränssnittet. Du kan undvika namnbegränsningar.
-* **length (string)**: max. antal tecken för ett värde av typen &quot;string&quot; i SQL-fältet. Om attributet @length inte anges skapas ett fält med 255 tecken automatiskt i Adobe Campaign.
+* **length (sträng)**: max. antal tecken för ett värde av typen &quot;string&quot; i SQL-fältet. Om attributet @length inte anges skapas ett fält med 255 tecken automatiskt i Adobe Campaign.
 * **lokaliserbar (boolesk)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
 * **name (MNTOKEN)**: namnet på det attribut som ska matcha namnet på fältet i tabellen. Värdet för attributet &quot;@name&quot; måste vara kort, helst på engelska, och måste uppfylla villkoren för XML-namngivning.
 
@@ -109,21 +109,21 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
 
    Om du vill definiera namnet på fältet i tabellen ska du använda alternativet @sqlname när du definierar ett attribut.
 
-* **notNull (boolean)**: Med kan du definiera om Adobe Campaign beteende för hantering av NULL-poster i databasen. Som standard är numeriska fält inte null och sträng- och datumtypsfält kan vara null.
+* **notNull (booleskt)**: Med kan du definiera om Adobe Campaign beteende för hantering av NULL-poster i databasen. Som standard är numeriska fält inte null och sträng- och datumtypsfält kan vara null.
 * **pkgStatus (sträng)**: vid paketexport beaktas värden beroende på värdet för @pkgStatus:
 
    * &quot;always&quot;: finns alltid
    * &quot;never&quot;: aldrig presentera
    * &quot;standard (eller ingenting)&quot;: värdet exporteras förutom om det är standardvärdet eller om det inte är ett internt fält som inte är kompatibelt med andra instanser.
 
-* **ref (sträng)**: det här attributet definierar en referens till ett  `<attribute>` element som delas av flera scheman (definitionsfactoring). Definitionen kopieras inte till det aktuella schemat.
+* **ref (sträng)**: this-attributet definierar en referens till en `<attribute>` element som delas av flera scheman (definitionsfactoring). Definitionen kopieras inte till det aktuella schemat.
 * **required (boolean)**: om attributet är aktiverat (@required=&quot;true&quot;) markeras fältet i gränssnittet. Fältets etikett blir röd i formulär.
 * **sql (boolesk)**: om det här attributet är aktiverat (@sql=&quot;true&quot;) tvingas SQL-attributet att lagras, även om elementet som innehåller attributet har egenskapen xml=&quot;true&quot;.
 * **sqlDefault (sträng)**: Med det här attributet kan du definiera standardvärdet som ska beaktas vid uppdatering av databasen om attributet @notNull aktiveras. Om det här attributet läggs till efter att attributet har skapats ändras inte schemabeteendet ens för de nya posterna. Om du vill ändra schemat och uppdatera värdet för nya poster måste du ta bort och skapa attributet igen.
 * **sqlname (sträng)**: av fältet när register skapas. Om @sqlname inte anges används värdet för attributet &quot;@name&quot; som standard. När schemat skrivs i databasen läggs prefix till automatiskt beroende på fälttypen.
-* **template (string)**: det här attributet definierar en referens till ett  `<attribute>` element som delas av flera scheman. Definitionen kopieras automatiskt till det aktuella schemat.
+* **template (string)**: this-attributet definierar en referens till en `<attribute>` element som delas av flera scheman. Definitionen kopieras automatiskt till det aktuella schemat.
 * **translatedDefault (sträng)**: Om ett @default-attribut hittas kan du med &quot;@translatedDefault&quot; definiera om ett uttryck så att det matchar det som definierats i @default, som samlas in med översättningsverktyget (intern användning).
-* **translatExpr (sträng)**: Om det finns ett @expr-attribut kan du med attributet @translr definiera om ett uttryck så att det matchar det som definierats i @expr, som ska samlas in med översättningsverktyget (intern användning).
+* **translateExpr (sträng)**: Om det finns ett @expr-attribut kan du med attributet @translr definiera om ett uttryck så att det matchar det som definierats i @expr, som ska samlas in med översättningsverktyget (intern användning).
 * **type (MNTOKEN)**: fälttyp.
 
    Fälttyper är generiska. Beroende på vilken typ av databas som är installerad, ändrar Adobe Campaign den definierade typen till ett värde som är specifikt för den databas som är installerad under strukturuppdateringen.
@@ -162,7 +162,7 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
    Om fältet är av STRING-typ och fältets namn inte anges av närvaron av attributet &quot;@sqlname&quot;, kommer namnet på fältet i databasen automatiskt att föregås av ett s. Det här operativläget liknar det för textfälten INTEGER (i), DOUBLE (d) och DATES (ts).
 
 * **userEnum (sträng)**: tar emot det interna namnet på en open-uppräkning. Uppräkningens värden kan definieras av användaren i gränssnittet.
-* **visibleIf (string)**: definierar ett villkor i form av ett XTK-uttryck som visar eller döljer attributet.
+* **visibleIf (sträng)**: definierar ett villkor i form av ett XTK-uttryck som visar eller döljer attributet.
 
    >[!IMPORTANT]
    >

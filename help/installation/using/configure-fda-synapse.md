@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Konfigurera åtkomst till Synapse
-description: Lär dig hur du konfigurerar åtkomst till Synapse i FDA
+description: Learn how to configure access to Synapse in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -17,10 +17,10 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Microsoft Azure synapse Analytics.
+Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Follow the steps below to configure access to Microsoft Azure Synapse Analytics.
 
 1. Konfigurera Azure synapse på [CentOS](#azure-centos), [Windows](#azure-windows) eller [Debian](#azure-debian)
-1. Konfigurera det externa Azure synapse-kontot [i Campaign](#azure-external)
+1. Konfigurera Azure synapse [externt konto](#azure-external) i Campaign
 
 ## azure synapse på CentOS {#azure-centos}
 
@@ -33,7 +33,7 @@ Använd alternativet Campaign [FDA (Federated Data Access](../../installation/us
 
 Så här konfigurerar du Azure synapse i CentOS:
 
-1. Installera först ODBC-drivrutinen. Du hittar den på den här [sidan](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Installera först ODBC-drivrutinen. Du hittar den i det här [page](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
    >[!NOTE]
    >
@@ -81,15 +81,15 @@ Så här konfigurerar du Azure synapse i CentOS:
    sudo yum install unixODBC-devel
    ```
 
-1. När du har installerat drivrutinerna kan du testa och verifiera ODBC-drivrutinen och fråga databasen om det behövs. Kör följande kommando:
+1. After installing the drivers, you can test and verify your ODBC Driver and query your database if needed. Run the following command:
 
    ```
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. I Campaign kan du sedan konfigurera ditt externa [!DNL Azure Synapse]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign kan du sedan konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
-1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten på din brandvägg. Använd följande kommando:
+1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten på din brandvägg. Use the following command:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -98,7 +98,7 @@ Så här konfigurerar du Azure synapse i CentOS:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >To allow communication from Azure Synapse Analytics&#39; side you might need to add your public IP to the allowlist. Om du vill göra det går du till [Azure-dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Om det är iptables kör du följande kommando:
 
@@ -112,11 +112,11 @@ Så här konfigurerar du Azure synapse i CentOS:
 >
 >Detta gäller endast version 13 av ODBC-drivrutinen, men Adobe Campaign Classic kan även använda drivrutinerna 11.0 och 10.0 för SQL Server Native Client.
 
-Så här konfigurerar du Azure synapse i Windows:
+To configure Azure Synapse on Windows:
 
-1. Installera först Microsoft ODBC-drivrutinen. Du hittar den på [den här sidan](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. First, install the Microsoft ODBC driver. You can find it in [this page](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
-1. Välj följande filer att installera:
+1. Choose the following files to install:
 
    ```
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
@@ -124,24 +124,24 @@ Så här konfigurerar du Azure synapse i Windows:
 
 1. När ODBC-drivrutinen har installerats kan du testa den om det behövs. Se denna [sida](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) för mer information om detta.
 
-1. I Campaign Classic kan du sedan konfigurera ditt externa [!DNL Azure Synapse]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign Classic kan du sedan konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
-1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. Mer information finns i [Windows-dokumentationen](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. Mer information finns i [Windows-dokumentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-## azure synapse på Debian {#azure-debian}
+## Azure Synapse on Debian {#azure-debian}
 
 **Förhandskrav:**
 
-* Du måste ha rotbehörighet för att installera en ODBC-drivrutin.
+* You will need root privileges to install a ODBC driver.
 * Rullning krävs för att installera paketet mSolbcsql. Om du inte har det installerat kör du följande kommando:
 
    ```
    sudo apt-get install curl
    ```
 
-Så här konfigurerar du Azure synapse på Debian:
+To configure Azure Synapse on Debian:
 
-1. Installera först Microsoft ODBC-drivrutinen för SQL Server. Använd följande kommandon för att installera ODBC-drivrutinen 13.1 för SQL Server:
+1. First, install the Microsoft ODBC driver for SQL Server. Använd följande kommandon för att installera ODBC-drivrutinen 13.1 för SQL Server:
 
    ```
    sudo su
@@ -152,13 +152,13 @@ Så här konfigurerar du Azure synapse på Debian:
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. Om du får följande fel **&quot;Metoddrivrutinen /usr/lib/apt/methods/https could not found&quot;** vid anrop till **sudo apt-get update** bör du köra kommandot:
+1. Om du får följande fel **&quot;Det gick inte att hitta metoddrivrutinen /usr/lib/apt/methods/https&quot;** vid anrop **sudo apt-get update** ska du köra kommandot:
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
    ```
 
-1. Nu måste du installera mssql-tools med följande kommandon. Mssq-tools behövs för att använda BCP-verktyget (bulkkopieringsprogrammet) och för att köra frågor.
+1. You now need to install mssql-tools with the following commands. Mssq-tools behövs för att använda BCP-verktyget och köra frågor.
 
    ```
    sudo ACCEPT_EULA=Y apt-get install mssql-tools
@@ -179,7 +179,7 @@ Så här konfigurerar du Azure synapse på Debian:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. I Campaign Classic kan du nu konfigurera ditt externa [!DNL Azure Synapse]-konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign Classic kan du nu konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
 1. Aktivera den utgående TCP 1433-porten för värdnamnet med följande kommando för att konfigurera iptables på Debian för att säkerställa anslutningen med Azure synapse Analytics:
 
@@ -189,24 +189,24 @@ Så här konfigurerar du Azure synapse på Debian:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det läser du [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det går du till [Azure-dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 
 ## azure synapse external account {#azure-external}
 
-Med det externa [!DNL Azure Synapse]-kontot kan du ansluta Campaign-instansen till din externa Azure synapse-databas.
+The [!DNL Azure Synapse] external account allows you to connect your Campaign instance to your Azure Synapse external database.
 
-Följ stegen nedan för att skapa ditt externa [!DNL Azure Synapse]-konto:
+Skapa [!DNL Azure Synapse] externt konto följer du stegen nedan:
 
-1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
+1. From Campaign **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som **[!UICONTROL Type]** för ditt externa konto.
+1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
 
    ![](assets/azure_1.png)
 
-1. Konfigurera det externa [!DNL Azure Synapse]-kontot måste du ange:
+1. Configure the [!DNL Azure Synapse] external account, you must specify:
 
    * **[!UICONTROL Type]**: azure synapse Analytics
 
@@ -216,4 +216,4 @@ Följ stegen nedan för att skapa ditt externa [!DNL Azure Synapse]-konto:
 
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
-   * **[!UICONTROL Database]**: Namn på databasen
+   * **[!UICONTROL Database]**: Name of the database

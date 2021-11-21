@@ -27,10 +27,10 @@ Det finns två typer av taggar:
 Använd följande steg för att konfigurera de här taggarna:
 
 1. Identifiera de sidor som du vill spåra och fastställa deras typ (WEB eller TRANSACTION).
-1. Avgör vilken ytterligare information du vill samla in och utöka schemat **nms:webTrackingLog** med en beskrivning av informationen. Som standard kan det här schemat lagra transaktionsbelopp och antal artiklar per transaktion.
+1. Bestäm vilken ytterligare information du vill samla in och utöka **nms:webTrackingLog** schema med en beskrivning av informationen. Som standard kan det här schemat lagra transaktionsbelopp och antal artiklar per transaktion.
 1. Skapa webbspårningstaggar. Det finns två sätt att göra detta:
 
-   * Infoga de URL:er som motsvarar dessa sidor på din Adobe Campaign-plattform och generera och extrahera sedan de associerade webbspårningstaggarna (från noden **[!UICONTROL Campaign execution>Resources>Web tracking tags]** i klientkonsolen).
+   * Infoga de URL:er som motsvarar dessa sidor på din Adobe Campaign-plattform och generera och extrahera sedan de associerade webbspårningstaggarna (från **[!UICONTROL Campaign execution>Resources>Web tracking tags]** klientkonsolens nod).
    * Skapa webbspårningstaggarna själv i läget&quot;när du skapar&quot;: URL:erna som motsvarar dessa sidor infogas automatiskt på din Adobe Campaign-plattform.
 
 1. Lägg till dessa taggar statiskt eller dynamiskt på de sidor som du vill spåra.

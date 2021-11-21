@@ -47,11 +47,11 @@ Med det här elementet kan du definiera de värden som lagras i en uppräkning.
 
 * **applicableIf (string)**: Med det här attributet kan du göra ett uppräkningsvärde valfritt. Det tar emot ett XTK-uttryck.
 * **desc (sträng)**: beskrivning av uppräkningsvärdet.
-* **enabledIf (string)**: villkor för aktivering av uppräkningsvärdet.
-* **img (string)**: bild länkad till uppräkningen i formuläret &quot;namespace:image_name&quot;. Bilden måste importeras till programservern.
+* **enabledIf (sträng)**: villkor för aktivering av uppräkningsvärdet.
+* **img (sträng)**: bild länkad till uppräkningen i formuläret &quot;namespace:image_name&quot;. Bilden måste importeras till programservern.
 * **label (string)**: uppräkningsvärdets etikett.
-* **name (string)**: uppräkningsvärdets interna namn.
-* **value (string)**: uppräkningsvärdets värde. Värdetypen definieras baserat på uppräkningstypen. Om uppräkningen är av strängtyp kan den bara innehålla teckensträngtypsvärden.
+* **name (sträng)**: uppräkningsvärdets interna namn.
+* **värde (sträng)**: uppräkningsvärdets värde. Värdetypen definieras baserat på uppräkningstypen. Om uppräkningen är av strängtyp kan den bara innehålla teckensträngtypsvärden.
 
 ## Exempel {#examples-13}
 

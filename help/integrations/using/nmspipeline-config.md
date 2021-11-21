@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-När autentiseringen fungerar kan [!DNL pipelined] hämta händelserna och bearbeta dem. Den behandlar endast utlösare som har konfigurerats i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och flyttats till pipeline i förväg.
+När autentiseringen fungerar, [!DNL pipelined] kan hämta händelser och bearbeta dem. Den behandlar endast utlösare som har konfigurerats i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och flyttats till pipeline i förväg.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
 Konfigurationen av utlösarna görs i ett alternativ, under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Alternativnamnet är **[!UICONTROL NmsPipeline_Config]**. Datatypen är&quot;lång text&quot; i JSON-format.
@@ -66,7 +66,7 @@ Det andra exemplet fångar upp alla utlösare.
 
 >[!NOTE]
 >
->UID-värdet [!DNL Trigger] till ett specifikt utlösarnamn i Analytics-gränssnittet finns som en del av URL-frågesträngsparametrarna i utlösargränssnittet. triggerType-UID skickas i pipeline-dataströmmen och kod kan skrivas till pipeline.JS för att mappa utlösar-UID till en användarvänlig etikett som kan lagras i en utlösarnamnskolumn i pipelineEvents-schemat.
+>The [!DNL Trigger] UID-värdet till ett visst utlösarnamn i Analytics-gränssnittet finns som en del av URL-frågesträngsparametrarna i Triggers-gränssnittet. triggerType-UID skickas i pipeline-dataströmmen och kod kan skrivas till pipeline.JS för att mappa utlösar-UID till en användarvänlig etikett som kan lagras i en utlösarnamnskolumn i pipelineEvents-schemat.
 
 ## Parametern Consumer {#consumer-parameter}
 
@@ -77,10 +77,10 @@ Parametern&quot;Consumer&quot; identifierar förekomsten som en av dessa konsume
 ## Konfigurera alternativet Pipeline {#configure-pipeline-option}
 
 Lägg till eller redigera Experience Cloud-utlösare under arrayen&quot;triggers&quot;, redigera inte resten.
-Kontrollera att JSON är giltig med hjälp av denna [webbplats](https://jsonlint.com/).
+Se till att JSON är giltig med hjälp av det här [webbplats](https://jsonlint.com/).
 
 * &quot;name&quot; är utlösar-ID. Ett jokertecken (*) fångar upp alla utlösare.
 * &quot;Consumer&quot; är en unik sträng som unikt identifierar nlserver-instansen. Det kan vanligtvis vara själva instansnamnet. För flera miljöer (dev/stage/prod) måste du se till att det är unikt för var och en av dem så att varje instans får en kopia av meddelandet.
 * [!DNL Pipelined] har också stöd för avsnittet&quot;alias&quot;.
 
-Starta om [!DNL pipelined] när du har gjort ändringarna.
+Starta om [!DNL pipelined] efter att ha gjort ändringar.

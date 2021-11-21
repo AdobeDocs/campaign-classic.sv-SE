@@ -19,13 +19,13 @@ ht-degree: 7%
 
 När mallarna har konfigurerats kan import- och exportåtgärder startas i flera sammanhang i Adobe Campaign.
 
-* Klicka på länken **[!UICONTROL Jobs]** i **[!UICONTROL Profiles and targets]**-avsnittet på Adobe Campaign-arbetsytan: detta tar dig till listan över befintliga importer och exporter.
+* I **[!UICONTROL Profiles and targets]** i Adobe Campaign klickar du på **[!UICONTROL Jobs]** länk: detta tar dig till listan över befintliga importer och exporter.
 
-   Klicka på knappen **[!UICONTROL Create]** och välj den typ av jobb som du vill utföra.
+   Klicka på **[!UICONTROL Create]** och välj vilken typ av jobb du vill utföra.
 
    ![](assets/s_ncs_user_import_from_home.png)
 
-* Du kan också starta import och export från **[!UICONTROL Monitoring]**-delen av arbetsytan: två dedikerade länkar gör att du kan starta importen eller exporten direkt.
+* Du kan också starta import och export från **[!UICONTROL Monitoring]** på arbetsytan: två dedikerade länkar gör att du kan starta importen eller exporten direkt.
 
    ![](assets/s_ncs_user_import_from_production.png)
 

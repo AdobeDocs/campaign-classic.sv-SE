@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Du kan använda aktiviteten **[!UICONTROL Fork]** för att skapa flera utgående övergångar och köra flera aktiviteter oberoende av varandra i samma arbetsflöde.
+Du kan använda **[!UICONTROL Fork]** aktivitet för att skapa flera utgående övergångar och för att köra flera aktiviteter oberoende av varandra i samma arbetsflöde.
 
 >[!IMPORTANT]
 >
->De utgående övergångar som du lägger till efter en **[!UICONTROL Fork]**-aktivitet körs inte samtidigt. Det här beteendet kan påverka arbetsflödets prestanda. Använd aktiviteten **[!UICONTROL Fork]** om du behöver köra flera aktiviteter oberoende av varandra. Du kan även ansluta till de utgående aktiviteterna före den efterföljande delen av arbetsflödet.
+>De utgående övergångar som du lägger till efter en **[!UICONTROL Fork]** aktiviteten inte körs samtidigt. Det här beteendet kan påverka arbetsflödets prestanda. Använd **[!UICONTROL Fork]** om du behöver köra flera aktiviteter oberoende av varandra. Du kan även ansluta till de utgående aktiviteterna före den efterföljande delen av arbetsflödet.
 
-Så här konfigurerar du en **[!UICONTROL Fork]**-aktivitet och dess relaterade aktiviteter:
+Så här konfigurerar du en **[!UICONTROL Fork]** följer dessa steg när det gäller verksamhet och tillhörande verksamheter:
 
-1. Öppna aktiviteten **[!UICONTROL Fork]** och definiera namn och etikett för utgående övergångar.
+1. Öppna **[!UICONTROL Fork]** och definiera namn och etikett för utgående övergångar.
 
    ![](assets/s_user_segmentation_fork.png)
 
@@ -36,7 +36,7 @@ Så här konfigurerar du en **[!UICONTROL Fork]**-aktivitet och dess relaterade 
 
 ## Exempel: segmentering
 
-I det här exemplet skickas olika e-postmeddelanden till olika populationsgrupper. En **[!UICONTROL Fork]**-aktivitet används efter en fråga för att utföra två parallella åtgärder:
+I det här exemplet skickas olika e-postmeddelanden till olika populationsgrupper. A **[!UICONTROL Fork]** -aktiviteten används efter en fråga för att utföra två parallella åtgärder:
 
 * Spara frågeresultatet
 * Segmentera resultatet för att skicka flera leveranser
@@ -66,17 +66,17 @@ Arbetsflödet omfattar följande:
 
 ## Användningsfall: skicka ett födelsedagsmeddelande
 
-Ett återkommande e-postmeddelande skickas till en lista över mottagare på deras födelsedag. En **[!UICONTROL Fork]**-aktivitet används för att inkludera mottagare som är födda den 29 februari på ett skottår. [Läs ](sending-a-birthday-email.md) mer om det här användningsexemplet.
+Ett återkommande e-postmeddelande skickas till en lista över mottagare på deras födelsedag. A **[!UICONTROL Fork]** aktiviteten används för att inkludera mottagare som är födda den 29 februari ett skottår. [Läs mer](sending-a-birthday-email.md) om det här användningsexemplet.
 
 ![Aktiviteten för förgreningar följer en testaktivitet och föregår två frågeaktiviteter.](assets/birthday-workflow_usecase_1.png)
 
 ## Användningsfall: automatisera innehåll med ett arbetsflöde
 
-Skapandet och leveransen av ett innehållsblock sker automatiskt. En **[!UICONTROL Fork]**-aktivitet används för att beräkna målet och, parallellt, skapa innehållet. [Läs ](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) mer om det här användningsexemplet.
+Skapandet och leveransen av ett innehållsblock sker automatiskt. A **[!UICONTROL Fork]** används för att beräkna målet och, parallellt, för att skapa innehållet. [Läs mer](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) om det här användningsexemplet.
 
 ![Aktiviteten för förgreningar följer en leveransaktivitet och föregår en frågeaktivitet och en innehållshanteringsaktivitet, som båda förenas via en AND-join-aktivitet.](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
-Du kan sedan konfigurera varje utgående övergång och sedan förena dem med en [AND-join](and-join.md)-aktivitet om det behövs. På så sätt körs resten av arbetsflödet bara när **[!UICONTROL Fork]**-aktivitetens utgående övergångar är klara.
+Du kan sedan konfigurera varje utgående övergång och sedan förena dem med en [AND-join](and-join.md) aktivitet, om det behövs. På så sätt körs resten av arbetsflödet bara en gång **[!UICONTROL Fork]** utgående övergångar för aktiviteten är färdiga.
 
 ## Relaterade ämnen
 

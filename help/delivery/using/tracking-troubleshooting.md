@@ -27,7 +27,7 @@ Mitt arbetsflöde för spårning misslyckas, hur kan jag identifiera skadade rad
 >
 >Endast för Windows
 
-Den skadade loggfilen för spårning .../nl6/var/&lt;instansnamn>/redir/log/0x0000-loggen kan stoppa arbetsflödet för spårning. Om du enkelt vill identifiera skadade rader och ta bort dem för att återuppta arbetsflödet för spårning kan du använda kommandona nedan.
+Den skadade loggfilen för spårning .../nl6/var/&lt;instance_name>Loggen /redir/log/0x0000 kan stoppa arbetsflödet för spårning. Om du enkelt vill identifiera skadade rader och ta bort dem för att återuppta arbetsflödet för spårning kan du använda kommandona nedan.
 
 ### Jag vet i vilken fil den skadade raden finns
 
@@ -87,7 +87,7 @@ När du försöker komma åt spårningslänkarna visas följande meddelande:
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Gå till URL:en för &lt;redirection_server>/r/test och kontrollera om build-numret och localhost returnerades av begäran.
+1. Åtkomst &lt;redirection_server>/r/test URL och kontrollera om build-numret och localhost returnerades av begäran.
 
 1. Kontrollera konfigurationen reserveServer i filen serverConf.xml för spårningsservern. Den här konfigurationen bör vara i omdirigeringsläge.
 
@@ -104,13 +104,13 @@ När du försöker komma åt spårningslänkarna visas följande meddelande:
    </redirection>
    ```
 
-1. Kontrollera manuellt om &lt;deliveryID>.xml-filen finns på datorn i .../nl6/var/&lt;instansnamn>/redir/url/&lt;ÅÅÅ> katalog (ÅÅÅÅ representerar leveransår).
+1. Kontrollera manuellt om &lt;deliveryid>XML-filen finns på datorn i .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> katalog (YYYY representerar leveransår).
 
-1. Kontrollera manuellt om &lt;trackingUrlId> kan hittas i filen &lt;deliveryID>.xml.
+1. Kontrollera manuellt om &lt;trackingurlid> finns i &lt;deliveryid>XML-fil.
 
 1. Kontrollera manuellt förekomst av broadcastID i relaterad leverans-ID.
 
-1. Kontrollera &lt;deliveryID>.xml-filbehörigheter i .../nl6/var/&lt;instansnamn>/redir/url/year-katalog.
+1. Kontrollera &lt;deliveryid>.xml-filbehörigheter i .../nl6/var/&lt;instance_name>/redir/url/year-katalog.
 
    De bör ha minst 644 behörigheter så att Apache kan läsa spårnings-URL:er för att omdirigera begärd länk.
 

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-I Adobe Campaign ger **[!UICONTROL Audit trail]** tillgång till den fullständiga historiken över ändringar som gjorts i din instans.
+I Adobe Campaign **[!UICONTROL Audit trail]** ger dig tillgång till den fullständiga historiken över ändringar som gjorts i instansen.
 
 **[!UICONTROL Audit trail]** i realtid innehåller en omfattande lista över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt att komma åt en datahistorik som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad gjorde användarna i instansen.
 
@@ -28,11 +28,11 @@ I Adobe Campaign ger **[!UICONTROL Audit trail]** tillgång till den fullständi
 
 Granskningsspårning består av tre komponenter:
 
-* **Schemagranskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna av dina scheman.
+* **Schema - granskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna av dina scheman.
 
-   Mer information om scheman finns på den här [sidan](../../configuration/using/data-schemas.md).
+   Mer information om scheman finns i [page](../../configuration/using/data-schemas.md).
 
-* **Arbetsflödets granskningsspår**: Kontrollera aktiviteter och de senaste ändringarna av arbetsflöden, och dessutom status för dina arbetsflöden, till exempel:
+* **Granskningsspår för arbetsflöde**: Kontrollera aktiviteter och de senaste ändringarna av arbetsflöden, och dessutom status för dina arbetsflöden, till exempel:
 
    * Starta
    * Pausa
@@ -43,30 +43,30 @@ Granskningsspårning består av tre komponenter:
    * Aktivering som är lika med åtgärden Kör väntande uppgifter nu
    * Ovillkorligt stopp
 
-   Mer information om arbetsflöden finns på den här [sidan](../../workflow/using/about-workflows.md).
+   Mer information om arbetsflöden finns i [page](../../workflow/using/about-workflows.md).
 
-   Mer information om hur du övervakar arbetsflöden finns i [det dedikerade avsnittet](../../workflow/using/monitoring-workflow-execution.md).
+   Mer information om hur du övervakar arbetsflöden finns i [dedikerad sektion](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Granskningsspår** för alternativ: Kontrollera aktiviteterna och de senaste ändringarna som du gjort.
+* **Alternativ granskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna som du gjort.
 
-   Mer information om alternativen finns på den här [sidan](../../installation/using/configuring-campaign-options.md).
+   Mer information om alternativen finns i [page](../../installation/using/configuring-campaign-options.md).
 
 ## Åtkomst till granskningsspår {#accessing-audit-trail}
 
-Så här kommer du åt instansens **[!UICONTROL Audit trail]**:
+Så här kommer du åt instansens **[!UICONTROL Audit trail]** :
 
-1. Gå till **[!UICONTROL Explorer]**-menyn för din instans.
-1. Välj **[!UICONTROL Audit]** på menyn **[!UICONTROL Administration]**.
+1. Öppna **[!UICONTROL Explorer]** -menyn för instansen.
+1. Under **[!UICONTROL Administration]** meny, välja **[!UICONTROL Audit]** .
 
    ![](assets/audit_trail_1.png)
 
-1. Fönstret **[!UICONTROL Audit trail]** öppnas med listan över dina enheter. Adobe Campaign granskar åtgärderna för att skapa, redigera och ta bort för arbetsflöden, alternativ och scheman.
+1. The **[!UICONTROL Audit trail]** öppnas med listan över dina enheter. Adobe Campaign granskar åtgärderna för att skapa, redigera och ta bort för arbetsflöden, alternativ och scheman.
 
    Välj en av enheterna om du vill veta mer om de senaste ändringarna.
 
    ![](assets/audit_trail_2.png)
 
-1. Fönstret **[!UICONTROL Audit entity]** ger dig mer detaljerad information om den valda enheten, till exempel:
+1. The **[!UICONTROL Audit entity]** I fönstret finns mer detaljerad information om den valda enheten, till exempel:
 
    * **[!UICONTROL Type]** : Arbetsflöde, alternativ eller scheman.
    * **[!UICONTROL Entity]** : Internt namn på dina aktiviteter.
@@ -80,7 +80,7 @@ Så här kommer du åt instansens **[!UICONTROL Audit trail]**:
 
 >[!NOTE]
 >
->Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]**. Mer information om hur du ändrar kvarhållningsperioden finns på den här [sidan](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]** . Mer information om hur du ändrar kvarhållningsperioden finns i [page](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
 ## Aktivera/inaktivera granskningsspår {#enable-disable-audit-trail}
 
@@ -88,8 +88,8 @@ Granskningsspårning kan enkelt aktiveras eller inaktiveras för en viss aktivit
 
 För att göra detta:
 
-1. Gå till **[!UICONTROL Explorer]**-menyn för din instans.
-1. Välj **[!UICONTROL Platform]** och sedan **[!UICONTROL Options]** på menyn **[!UICONTROL Administration]**.
+1. Öppna **[!UICONTROL Explorer]** -menyn för instansen.
+1. Under **[!UICONTROL Administration]** meny, välja **[!UICONTROL Platform]** sedan **[!UICONTROL Options]** .
 
    ![](assets/audit_trail_4.png)
 
@@ -102,7 +102,7 @@ För att göra detta:
 
    ![](assets/audit_trail_5.png)
 
-1. Ändra **[!UICONTROL Value]** till 1 om du vill aktivera entiteten eller till 0 om du vill inaktivera den.
+1. Ändra **[!UICONTROL Value]** till 1 om du vill aktivera enheten eller till 0 om du vill inaktivera den.
 
    ![](assets/audit_trail_6.png)
 

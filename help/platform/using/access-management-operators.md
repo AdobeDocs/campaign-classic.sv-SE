@@ -21,7 +21,7 @@ ht-degree: 2%
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 
-Som standard lagras operatorer i noden **[!UICONTROL Administration > Access management > Operators]**.
+Som standard lagras operatorer i **[!UICONTROL Administration > Access management > Operators]** nod.
 
 ![](assets/s_ncs_user_list_operators.png)
 
@@ -29,11 +29,11 @@ Operatorer kan skapas manuellt eller mappas på en befintlig LDAP-katalog.
 
 En fullständig procedur för att skapa en operator beskrivs i [den här sidan](#creating-an-operator).
 
-Mer information om integrering av Adobe Campaign och LDAP finns på [den här sidan](../../installation/using/connecting-through-ldap.md).
+Mer information om Adobe Campaign- och LDAP-integrering finns i [den här sidan](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->Operatorer måste länkas till en säkerhetszon för att kunna logga in på en instans. Mer information om säkerhetszoner i Adobe Campaign finns på [den här sidan](../../installation/using/security-zones.md).
+>Operatorer måste länkas till en säkerhetszon för att kunna logga in på en instans. Mer information om säkerhetszoner i Adobe Campaign finns i [den här sidan](../../installation/using/security-zones.md).
 
 Användare kan även ansluta direkt till Adobe Campaign via sin Adobe ID. Se denna [sida](../../integrations/using/about-adobe-id.md) för mer information om detta.
 
@@ -41,45 +41,45 @@ Användare kan även ansluta direkt till Adobe Campaign via sin Adobe ID. Se den
 
 Så här skapar du en ny operator och tilldelar behörigheter:
 
-1. Klicka på knappen **[!UICONTROL New]** ovanför listan med operatorer och ange information om operatorn new.
+1. Klicka på **[!UICONTROL New]** ovanför listan med operatorer och ange information om operatorn new.
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Ange **[!UICONTROL Identification parameters]** för användaren: användar-ID, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]**-menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden behandlas.
+1. Ange **[!UICONTROL Identification parameters]** för användaren: användar-ID, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]** -menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden behandlas.
 
-   I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns på [den här sidan](../../distributed/using/about-distributed-marketing.md).
+   I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns i [den här sidan](../../distributed/using/about-distributed-marketing.md).
 
-1. Välj behörigheter för operatorn i avsnittet **[!UICONTROL Operator access rights]**.
+1. Välj behörigheter för operatorn i dialogrutan **[!UICONTROL Operator access rights]** -avsnitt.
 
-   Om du vill tilldela behörigheter till operatorn klickar du på knappen **[!UICONTROL Add]** ovanför listan över rättigheter och väljer sedan en grupp med operatorer i listan över tillgängliga grupper:
+   Klicka på knappen **[!UICONTROL Add]** ovanför behörighetslistan och välj sedan en grupp operatorer i listan över tillgängliga grupper:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   Du kan också välja en eller flera namngivna rättigheter (se [Namngivna rättigheter](#named-rights)). Det gör du genom att klicka på pilen till höger om fältet **[!UICONTROL Folder]** och välja **[!UICONTROL Named rights]**:
+   Du kan också välja en eller flera namngivna rättigheter (se [Namngivna rättigheter](#named-rights)). Klicka på pilen till höger om **[!UICONTROL Folder]** fält och markera **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   Markera grupper och/eller namngivna rättigheter som ska tilldelas och klicka på **[!UICONTROL OK]** för att validera.
+   Välj grupper och/eller namngivna rättigheter som ska tilldelas och klicka på **[!UICONTROL OK]** att validera.
 
-1. Klicka på **[!UICONTROL Ok]** för att skapa operatorn: profilen läggs till i listan över befintliga operatorer.
+1. Klicka **[!UICONTROL Ok]** så här skapar du operatorn: profilen läggs till i listan över befintliga operatorer.
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->Du kan ordna operatorerna efter dina behov genom att skapa nya operatormappar. Om du vill göra det högerklickar du på operatormappen och väljer **[!UICONTROL Add an 'Operators' folder]**.
+>Du kan ordna operatorerna efter dina behov genom att skapa nya operatormappar. Om du vill göra det högerklickar du på mappen operator och väljer **[!UICONTROL Add an 'Operators' folder]**.
 
-När operatörens profil har skapats kan du lägga till eller uppdatera informationen för den. Det gör du genom att klicka på fliken **[!UICONTROL Edit]**.
+När operatörens profil har skapats kan du lägga till eller uppdatera informationen för den. Om du vill göra det klickar du på **[!UICONTROL Edit]** -fliken.
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->I fältet **[!UICONTROL Session timeout]** kan du justera fördröjningen före FDA-sessionens timeout. Mer information om detta finns i [Om dataåtkomst med federerade data](../../installation/using/about-fda.md).
+>The **[!UICONTROL Session timeout]** I kan du justera fördröjningen innan tidsgränsen för FDA-sessionen överskrids. Mer information finns i [Om åtkomst till federerade data](../../installation/using/about-fda.md).
 
 ## Definiera operatorns tidszon {#time-zone-of-the-operator}
 
-På fliken **[!UICONTROL General]** kan du välja operatörens tidszon. Som standard arbetar operatorer i serverns tidszon. Det går dock att välja en annan tidszon i listrutan.
+I **[!UICONTROL General]** kan du välja operatörens tidszon. Som standard arbetar operatorer i serverns tidszon. Det går dock att välja en annan tidszon i listrutan.
 
 Konfigurationen av tidszoner beskrivs i [den här sidan](../../installation/using/time-zone-management.md).
 
@@ -89,23 +89,23 @@ Konfigurationen av tidszoner beskrivs i [den här sidan](../../installation/usin
 >
 >Begränsningar och rekommendationer som är kopplade till dessa sammanhang presenteras i relaterade avsnitt i Adobe Campaign-dokumentationen.
 
-I listrutan **[!UICONTROL Regional settings]** kan du dessutom välja format för att visa datum och nummer.
+Dessutom är **[!UICONTROL Regional settings]** I den nedrullningsbara listan kan du välja format för att visa datum och nummer.
 
 ## Lägg till behörigheter {#access-rights-options}
 
-Använd fliken **[!UICONTROL Access rights]** för att uppdatera grupper och namngivna rättigheter som är länkade till operatorn.
+Använd **[!UICONTROL Access rights]** för att uppdatera grupper och namngivna rättigheter som är länkade till operatorn.
 
 ![](assets/operator_profile_security_options.png)
 
-Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt följande alternativ:
+The **[!UICONTROL Edit the access parameters...]** kan du använda följande alternativ:
 
-* Med alternativet **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: den här användaren inte längre kommer att få åtkomst till Adobe Campaign.
+* The **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: den här användaren inte längre kommer att få åtkomst till Adobe Campaign.
 
    >[!NOTE]
    >
    >Även om det här kontot är inaktiverat kan operatorn fortfarande få aviseringar eller meddelanden från Campaign. Om du inte längre vill skicka Campaign-meddelanden till den här operatorn rekommenderar Adobe att du tar bort e-postadressen från den här profilen.
 
-* Med alternativet **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
+* The **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [Webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
 * Det går att länka en säkerhetszon till operatören. Mer information finns på [den här sidan](../../installation/using/security-zones.md).
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
 
@@ -119,7 +119,7 @@ Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt föl
    >
    >För att åtkomsten till din plattform ska vara säker måste det här alternativet användas med försiktighet.
 
-* Med alternativet **[!UICONTROL Restrict to information found in sub-folders of:]** kan du begränsa rättigheterna som tilldelats en mapps operator. Endast undermapparna för noden som anges i det här alternativet visas för användaren:
+* The **[!UICONTROL Restrict to information found in sub-folders of:]** kan du begränsa de rättigheter som tilldelas en mapps operator. Endast undermapparna för noden som anges i det här alternativet visas för användaren:
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -129,7 +129,7 @@ Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt föl
 
 ### Kontrollera inställningar {#check-settings}
 
-På fliken **[!UICONTROL Audit]** kan du visa information om operatorn. De olika flikarna läggs till automatiskt baserat på inställningarna som anges i operatorområdet.
+The **[!UICONTROL Audit]** Med -fliken kan du visa information om operatorn. De olika flikarna läggs till automatiskt baserat på inställningarna som anges i operatorområdet.
 
 Du kan komma åt:
 
@@ -139,7 +139,7 @@ Du kan komma åt:
 
    >[!NOTE]
    >
-   >Mer information finns i [Mappåtkomsthantering](#folder-access-management).
+   >Mer information finns i [Hantering av mappåtkomst](#folder-access-management).
 
 * Operatörens godkännandelogg.
 
@@ -161,19 +161,19 @@ Adobe Campaign använder tekniska operatorer med profiler som är konfigurerade 
 
 Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATION-behörighet, vilket kan leda till säkerhetsrisker. För att åtgärda det här problemet rekommenderar vi att du tar bort den här rättigheten. Så här gör du:
 
-1. Klicka på **[!UICONTROL New]** i noden **[!UICONTROL Administration > Access management > Named rights]** för att skapa en rättighet och ge den namnet WEBAPP.
+1. Från **[!UICONTROL Administration > Access management > Named rights]** nod, klicka **[!UICONTROL New]** för att skapa en rättighet och ge den namnet WEBAPP.
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   Namngivna rättigheter beskrivs i avsnittet [Namngivna rättigheter](#named-rights).
+   Namngivna rättigheter beskrivs i [Namngivna rättigheter](#named-rights) -avsnitt.
 
-1. I noden **[!UICONTROL Administration > Access management > Operators]** väljer du webbprogramagentens operator (&#39;webapp&#39;).
+1. Från **[!UICONTROL Administration > Access management > Operators]** väljer du webbprogramagentens operator (&#39;webapp&#39;).
 
-   Välj fliken **[!UICONTROL Edit]**, klicka på fliken **[!UICONTROL Access rights]** och ta bort den ADMINISTRATION som är namngiven direkt från listan.
+   Välj **[!UICONTROL Edit]** -fliken och sedan **[!UICONTROL Access rights]** och ta bort ADMINISTRATIONEN med namnet right från listan.
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   Klicka på **[!UICONTROL Add]** och välj WEBAPP till höger som du just har skapat. Spara sedan ändringarna.
+   Klicka **[!UICONTROL Add]** och väljer WEBAPP-höger som du just har skapat och sparar sedan ändringarna.
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -181,8 +181,8 @@ Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATI
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   Rättighetsändringar för trädmappar beskrivs i [Mappåtkomsthantering](#folder-access-management)-avsnittet.
+   Redigeringsrättigheter för trädmappar finns i [Hantering av mappåtkomst](#folder-access-management) -avsnitt.
 
 >[!NOTE]
 >
->Mer information om säkerhetsriktlinjer finns i [checklistan för Adobe Campaign-säkerhetskonfiguration](https://helpx.adobe.com/se/campaign/kb/acc-security.html).
+>Mer information om säkerhetsriktlinjerna finns i [Checklista för Adobe Campaign-säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).

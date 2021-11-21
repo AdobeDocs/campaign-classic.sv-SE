@@ -48,18 +48,18 @@ Autentisering stöds för Marketing Cloud via Adobe I/O Project.
 
 För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integrering av utlösare.
 
-För On Premise-kunder, se sidan [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe I/O-autentiseringsuppgifterna.
+För On Premise-kunder, se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) sida. Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe I/O-autentiseringsuppgifterna.
 
 ## Steg 2: Konfigurerar alternativet för NmsPipeline_Config-pipeline {#configuring-nmspipeline}
 
 När autentiseringen är klar hämtas händelserna. Det bearbetar bara utlösare som har konfigurerats i Adobe Campaign. Utlösaren måste ha genererats från Adobe Analytics och skickats till pipeline, som endast kommer att bearbeta utlösare som har konfigurerats i Adobe Campaign.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
-1. I Adobe Campaign går du till alternativmenyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i **[!UICONTROL Explorer]**.
+1. I Adobe Campaign finns alternativmenyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** i **[!UICONTROL Explorer]**.
 
-1. Välj alternativet **[!UICONTROL NmsPipeline_Config]**.
+1. Välj **[!UICONTROL NmsPipeline_Config]** alternativ.
 
-1. I fältet **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Du måste se till att ta bort kommentarer.
+1. I **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Du måste se till att ta bort kommentarer.
 
    ```
    {
@@ -104,7 +104,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 Rörledningen fungerar som en leverantör och en konsumentmodell. Meddelanden används endast för enskilda konsumenter: varje konsument får en egen kopia av budskapen.
 
-Parametern **Consumer** identifierar instansen som en av dessa konsumenter. Instansens identitet anropar pipeline. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
+The **Konsument** parameter identifierar förekomsten som en av dessa konsumenter. Instansens identitet anropar pipeline. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
 
 Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument. Om du använder olika konsumenter för olika instanser kan du se till att alla meddelanden skickas till varje instans.
 
@@ -112,8 +112,8 @@ Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument.
 
 Så här konfigurerar du alternativet för pipeline:
 
-* Lägg till eller redigera utlösare under **[!UICONTROL Triggers]**, du bör inte redigera resten.
-* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se till exempel den här [webbplatsen](https://jsonlint.com/).
+* Lägg till eller redigera utlösare under **[!UICONTROL Triggers]** ska du inte redigera resten.
+* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se [webbplats](https://jsonlint.com/) till exempel.
 * &quot;name&quot; motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
 * &quot;Consumer&quot; motsvarar namnet på den anropande instansen eller det anropande programmet.
 * Pipelined har också stöd för ämnet&quot;alias&quot;.
@@ -125,14 +125,14 @@ Du kan ändra vissa interna parametrar utifrån dina lastkrav, men se till att t
 
 Listan med valfria parametrar finns nedan:
 
-| Alternativ | Beskrivning |
+| Option | Beskrivning |
 |:-:|:-:|
 | appName(Legacy) | AppID för OAuth-programmet som är registrerat i det äldre Oath-programmet där den offentliga nyckeln överfördes. Se denna [sida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) för mer information om detta |
 | authGatewayEndpoint(Legacy) | URL för att hämta gatewaytoken. Standard: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | Den privata nyckeln, den offentliga delen som överförts i det äldre Oath-programmet, AES som krypterats med alternativet XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Inaktivera autentisering, anslutning utan gatewaytoken accepteras bara av vissa slutpunkter i utvecklingsfasen. |
 | discoverPipelineEndpoint | URL för att hitta slutpunkten för Pipeline Services som ska användas för den här klienten. Standard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Period mellan två dumpar av den interna tillståndsprocessen i ```var/INSTANCE/pipelined.json.``` <br> internt tillstånd är även tillgänglig på begäran här: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | Period mellan två dumpar av den interna tillståndsprocessen i ```var/INSTANCE/pipelined.json.``` <br> Den interna statusen är även tillgänglig på begäran här: ```http://INSTANCE:7781/pipelined/status``` |
 | forceradPipelineEndpoint | Inaktivera identifiering av PipelineServicesEndpoint för att framtvinga den |
 | monitorServerPort | Den rörliga processen avlyssnar den här porten för att tillhandahålla den interna tillståndsprocessen här: ```http://INSTANCE:PORT/pipelined/status```. <br>Standardvärdet är 7781 |
 | pointerFlushMessageCount | När det här antalet meddelanden bearbetas sparas förskjutningarna i databasen. <br> Standardvärdet är 1000 |
@@ -164,6 +164,6 @@ nlserver restart pipelined@instance
 
 Följ stegen nedan för att validera pipeline-konfigurationen för etablering:
 
-* Kontrollera att [!DNL pipelined]-processen körs.
+* Se till att [!DNL pipelined] processen körs.
 * Kontrollera om det finns anslutningsloggar för pipeline i filen pipelined.log.
 * Kontrollera anslutningen och om ping-filer tas emot. Värdkunder kan använda övervakning från klientkonsolen.

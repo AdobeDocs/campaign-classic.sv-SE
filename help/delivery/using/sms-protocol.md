@@ -304,7 +304,7 @@ id:1234567890 sub:001 dlvrd:001 submit date:1608011415 done date:1608011417 stat
 
 Först `id extraction` regex används för att extrahera ID:t och stämma av det med motsvarande MT.
 
-Then, the `status extraction` regex and `error code extraction` regex are applied to extract these fields and are appended to the string.
+Sedan `status extraction` regex och `error code extraction` regex används för att extrahera dessa fält och läggs till i strängen.
 
 Sändningsmeddelandet skapas med den här informationen och den ursprungliga oförändrade strängen läggs till som referens:
 
@@ -494,7 +494,7 @@ TON (typ av nummer) och NPI (Numreringsplansindikator) beskrivs i avsnitt 5.2.5 
 
 De överförs som de är `source_addr_ton`, `source_addr_npi`, `dest_addr_ton` och `dest_addr_npi` fälten i `SUBMIT_SM PDU`.
 
-#### Service type {#service-type}
+#### Tjänsttyp {#service-type}
 
 Det här fältet överförs som det är i `service_type` fält för `SUBMIT_SM PDU`. Ange detta efter leverantörens behov.
 
@@ -668,7 +668,7 @@ Detta anger formatet på det ID som returneras i `message_id` fält för `SUBMIT
 
 * **Decimaltal**: ID:t förväntas vara ett decimaltal i ASCII-format. Radavstånd och inledande nollor tas bort när den här inställningen används.
 
-* **Hexadecimal number**: The ID is expected to be a hexadecimal number in ASCII form, with no leading 0x nor trailing h. The ID is then converted to a decimal number before being stored in the database.
+* **Hexadecimalt tal**: ID:t förväntas vara ett hexadecimalt tal i ASCII-format, utan inledande 0x eller avslutande h. ID:t konverteras sedan till ett decimaltal innan det lagras i databasen.
 
 * **Hexadecimal sträng**: ID:t förväntas vara en ASCII-kodad text som i sin tur är en sträng med byte kodade som hexadecimala. I PDU:n hittar du t.ex. `0x34 0x31 0x34 0x32 0x34 0x33`, som motsvarar ASCII &quot;414243&quot;. Strängen avkodas sedan som en hexadecimal sträng med byte och du får &quot;ABC&quot; som ett resultat: Du kommer att lagra ID:t &quot;ABC&quot; i databasen.
 

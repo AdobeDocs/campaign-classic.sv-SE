@@ -29,13 +29,13 @@ Så här konfigurerar och skapar du referensblocket:
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   I fältet **Ditt meddelande** kan du ange ett meddelande till referenten. Referenten måste även ange sitt **efternamn**, **förnamn** och **e-post**.
+   The **Ditt meddelande** kan du skriva ett meddelande till referenten. Referenten måste även ange sin **Efternamn**, **Förnamn** och **E-post**.
 
    Informationen som anges i fälten lagras i en specifik tabell som kallas besökstabell.
 
    >[!NOTE]
    >
-   >Så länge mottagaren inte har gett sitt samtycke kan du inte lagra dem hos mottagarna i databasen. De kommer att lagras tillfälligt i tabellen **besökare** (**nms:besökare**) som är avsedd för virala marknadsföringskampanjer. Den här tabellen rensas regelbundet tack vare **rensning**-åtgärder.
+   >Så länge mottagaren inte har gett sitt samtycke kan du inte lagra dem hos mottagarna i databasen. De kommer att lagras tillfälligt i **besökare** tabell (**nms:besökare**) utformat för virala marknadsföringskampanjer. Det här registret rensas regelbundet tack vare **rensa** åtgärder.
    >
    >I det här exemplet vill vi att målmottagarna ska föreslå att de deltar i den tävling som rekommenderas av deras referent. I det här meddelandet vill vi dock även erbjuda dem en prenumeration på en av våra informationstjänster. Om de prenumererar kan de lagras i databasen.
 
@@ -65,7 +65,7 @@ Så här konfigurerar och skapar du referensblocket:
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Skapa sedan leveransmallen som är länkad till informationstjänsten som skapades under steg 1. Den markeras i fältet **[!UICONTROL Choose scenario]** i informationstjänsten.
+1. Skapa sedan leveransmallen som är länkad till informationstjänsten som skapades under steg 1. Den markeras i **[!UICONTROL Choose scenario]** informationstjänstens fält.
 
    Leveransmallen som används för att skapa meddelandet om hänvisningserbjudande innehåller följande information:
 
@@ -83,12 +83,12 @@ Så här konfigurerar och skapar du referensblocket:
 
    * Den här mallen innehåller en länk till tävlingsformuläret och prenumerationslänken för den som hänvisas till att prenumerera på nyhetsbrevet.
 
-      Prenumerationslänken infogas via ett anpassningsblock. Som standard kan du prenumerera på profiler i **nyhetsbrevet**. Det här anpassningsblocket kan ändras för att passa dina behov, till exempel för att prenumerera på en annan tjänst.
+      Prenumerationslänken infogas via ett anpassningsblock. Som standard kan du prenumerera på profiler på **nyhetsbrev** service. Det här anpassningsblocket kan ändras för att passa dina behov, till exempel för att prenumerera på en annan tjänst.
 
    * Det interna namnet (&#39;referrer&#39; here) används i meddelandets leveransskript enligt nedan.
    >[!NOTE]
    >
-   >Mer information om leveransmallar finns på [den här sidan](../../delivery/using/about-templates.md).
+   >Se [den här sidan](../../delivery/using/about-templates.md) för mer information om leveransmallar.
 
 1. Skapa det andra skriptet för att leverera prenumerationsmeddelandena.
 
@@ -117,7 +117,7 @@ Så här konfigurerar och skapar du referensblocket:
     </delivery>)
    ```
 
-1. Publicera tävlingsformuläret och skicka en inbjudan till mottagarna av det ursprungliga målet. När någon av dem bjuder in en vän skapas en leverans baserad på mallen **Referenserbjudande**.
+1. Publicera tävlingsformuläret och skicka en inbjudan till mottagarna av det ursprungliga målet. När någon av dem bjuder in en vän, en leverans baserad på **Referenserbjudande** -mallen skapas.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

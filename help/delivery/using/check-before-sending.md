@@ -74,7 +74,7 @@ Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du at
 
 Du kan ange avsändarordning för leveranser genom att ange prioritetsnivå. För att göra detta:
 
-1. Redigera leveransegenskaperna och välj fliken **[!UICONTROL Delivery]**.
+1. Redigera leveransegenskaperna och välj **[!UICONTROL Delivery]** -fliken.
 
 1. Definiera prioritetsnivån för leveransen på en skala från **[!UICONTROL Very low]** till **[!UICONTROL Very high]**.
 
@@ -92,7 +92,7 @@ Du kan:
 
 * Deklarera de IP-adresser som kan användas för varje IPAfinity-element. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* I den [typologi](../../campaign-opt/using/about-campaign-typologies.md) du väljer använder du fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* I [typologi](../../campaign-opt/using/about-campaign-typologies.md) du vill använda **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * När e-postmeddelandet har skickats kontrollerar du huvudet för att verifiera vilken IP-adress som leveransen skickades från. E-postadministratören bör hjälpa dig att få fram rubrikinformationen.
 

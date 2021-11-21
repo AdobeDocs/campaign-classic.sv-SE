@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-I Digital Content Editor finns **standardmallar** för webbprogram och leveranser.
+Digital Content Editor erbjuder **standardmallar** för webbapplikationer och leveranser.
 
 När du skapar ett webbprogram av typen Landningssida kan användaren välja någon av dessa mallar. Du kan också importera en HTML-mall som har skapats utanför Adobe Campaign.
 
@@ -29,8 +29,8 @@ Mer information om hur du lägger till en mall finns i [Globala alternativ](cont
 
 När du har konfigurerat en leverans kan du spara den som en mall och återanvända den för framtida leveranser.
 
-Öppna den valda leveransen på fliken **Kampanjer**. Klicka på knappen **Spara som mall**, ge mallen ett namn och spara sedan.
+I **Kampanjer** öppnar du den valda leveransen. Klicka på **Spara som mall** namnger du mallen och sparar den sedan.
 
 ![](assets/dce_save_model.png)
 
-Den nya mallen sparas under noden **Resurser > Mallar > Innehållsmallar** i Utforskaren.
+Den nya mallen sparas under **Resurser > Mallar > Innehållsmallar** i Utforskaren.

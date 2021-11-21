@@ -26,4 +26,4 @@ Med flera aktiviteter kan du interagera med data från en extern databas:
 * Berikning
 * Datainläsning
 
-Användningen av FDA-alternativet beror på din Adobe Campaign-licens. I det här [avsnittet](../../installation/using/about-fda.md) beskrivs hur du konfigurerar det här alternativet samt de bästa metoder och begränsningar som är kopplade till att använda det.
+Användningen av FDA-alternativet beror på din Adobe Campaign-licens. I den här artikeln beskrivs hur du konfigurerar det här alternativet samt de bästa metoder och begränsningar som är kopplade till att använda det [section](../../installation/using/about-fda.md).

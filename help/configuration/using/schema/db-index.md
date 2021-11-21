@@ -45,15 +45,15 @@ Med det här elementet kan du definiera ett index som är länkat till en tabell
 
 Du kan definiera flera index. Ett index kan referera till ett eller flera fält i tabellen. Indexdeklarationen följer vanligtvis definitionen för huvudschemaelementet.
 
-Ordningen på `<keyfield>`-elementen som definieras i en `<dbindex>` är mycket viktig. Den första `<keyfield>` måste vara indexeringskriteriet som frågorna huvudsakligen baseras på.
+Ordningen på `<keyfield>` element definierade i en `<dbindex>` är mycket viktigt. Den första `<keyfield>` måste vara indexeringskriteriet som frågorna huvudsakligen bygger på.
 
 Indexnamnet i databasen beräknas genom att sammanfoga tabellnamnet och indexnamnet. Till exempel: Tabellnamnet &quot;Sample&quot;, Namespace &quot;Cus&quot;, indexnamnet &quot;MyIndex&quot;-> namnet på indexfältet när en indexfråga skapas: &quot;CusSample_myIndex&quot;.
 
 ## Attributbeskrivning {#attribute-description-3}
 
-* **_operation (sträng)**: definierar typen av skrivning i databasen.
+* **operation (sträng)**: definierar typen av skrivning i databasen.
 
-   Det här attributet används främst vid utökning av scheman som ligger utanför boxen.
+   Det här attributet används främst vid utökning av scheman som ligger utanför rutan.
 
    Tillgängliga värden är:
 
@@ -70,7 +70,7 @@ Indexnamnet i databasen beräknas genom att sammanfoga tabellnamnet och indexnam
 
 ## Exempel {#examples-3}
 
-Skapande av ett index i fältet&quot;id&quot;. (attributet &quot;@unique&quot; i elementet `<dbindex>` utlöser tillägg av SQL-nyckelordet &quot;UNIQUE&quot; när indexet skapas i databasen (fråga).)
+Skapande av ett index i fältet&quot;id&quot;. (attributet &quot;@unique&quot; på `<dbindex>` -element utlöser tillägg av SQL-nyckelordet &quot;UNIQUE&quot; när indexet skapas i databasen (fråga).
 
 ```
 <element label="Sample" name="Sample">

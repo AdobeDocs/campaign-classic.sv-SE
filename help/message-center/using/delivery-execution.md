@@ -25,7 +25,7 @@ I exekveringsinstansen skickas leveransen när anrikningsfasen är slutförd och
 >
 >MTA prioriterar bearbetning av transaktionsmeddelanden framför annan leverans.
 
-Alla leveranser grupperas i mappen **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
+Alla leveranser grupperas i **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** mapp.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -35,17 +35,17 @@ Som standard sorteras de i undermappar efter leveransmånad. Den här sorteringe
 
 >[!NOTE]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridbaserade installationer, kan alla transaktionsmeddelanden också skickas med Adobe Campaign Enhanced MTA för förbättrad leverans, genomströmning och studshantering. Alla effekter är desamma som för vanliga marknadsföringsmeddelanden.        
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](../../delivery/using/sending-with-enhanced-mta.md), kan alla transaktionsmeddelanden också skickas med Adobe Campaign Enhanced MTA för förbättrad leveransbarhet, genomströmning och studshantering. Alla effekter är desamma som för vanliga marknadsföringsmeddelanden.        
 
 ## Övervakning av transaktionsmeddelanden {#transactional-message-monitoring}
 
-Kontrollera [leveransloggarna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) om du vill övervaka dina transaktionsmeddelanden.
+Om du vill övervaka dina transaktionsmeddelanden ska du kontrollera [leveransloggar](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-Transaktionsleveranser som skickas från körningsinstansen synkroniseras tillbaka till kontrollinstansen via ett tekniskt arbetsflöde (**[!UICONTROL Message Center execution instance]**) som körs varje timme.
+Transaktionsleveranser som skickas från körningsinstansen synkroniseras tillbaka till kontrollinstansen via ett tekniskt arbetsflöde (**[!UICONTROL Message Center execution instance]**) som går varje timme.
 
 >[!NOTE]
 >
->Leveranserna varje vecka samlar ihop händelserna baserat på den senaste händelseuppdateringen, och inte på datumet då händelsen skapades. När du extraherar leveransloggar för transaktionsmeddelanden från kontrollinstansen kan det leverans-ID som är kopplat till varje leveranslogg-ID därför ändras över tiden när loggen uppdateras (till exempel när en inkommande avhoppning tas emot för händelsen).
+>Leveranserna varje vecka samlar ihop händelserna baserat på den senaste händelseuppdateringen och inte på datumet då händelsen skapades. När du extraherar leveransloggar för transaktionsmeddelanden från kontrollinstansen kan det leverans-ID som är kopplat till varje leveranslogg-ID därför ändras över tiden när loggen uppdateras (till exempel när en inkommande avhoppning tas emot för händelsen).
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
@@ -74,4 +74,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-Information om hur du övervakar aktiviteten och körningen av körningsinstansen finns i [Transactional messaging reports](../../message-center/using/about-transactional-messaging-reports.md).
+Information om hur du övervakar aktiviteten och körningen av körningsinstansen finns i [Rapporter om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging-reports.md).

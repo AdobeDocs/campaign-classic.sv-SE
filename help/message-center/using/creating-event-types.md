@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-För att vara säker på att varje händelse kan ändras till ett anpassat meddelande måste du först skapa **händelsetyper**.
+För att vara säker på att varje händelse kan ändras till ett personligt meddelande måste du först skapa **händelsetyper**.
 
-När [du skapar en meddelandemall](../../message-center/using/creating-the-message-template.md) väljer du den typ av händelse som matchar meddelandet som du vill skicka.
+När [skapa en meddelandemall](../../message-center/using/creating-the-message-template.md)väljer du den typ av händelse som matchar meddelandet som du vill skicka.
 
 >[!IMPORTANT]
 >
@@ -27,19 +27,19 @@ När [du skapar en meddelandemall](../../message-center/using/creating-the-messa
 
 Följ stegen nedan för att skapa händelsetyper som ska bearbetas av Adobe Campaign:
 
-1. Logga in på **kontrollinstansen**.
+1. Logga in på **kontrollinstans**.
 
-1. Gå till mappen **[!UICONTROL Administration > Platform > Enumerations]** i trädet.
+1. Gå till **[!UICONTROL Administration > Platform > Enumerations]** mapp i trädet.
 
-1. Välj **[!UICONTROL Event type]** i listan.
+1. Välj **[!UICONTROL Event type]** från listan.
 
-1. Klicka på **[!UICONTROL Add]** för att skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
+1. Klicka **[!UICONTROL Add]** för att skapa ett uppräkningsvärde. Detta kan vara en orderbekräftelse, lösenordsändring, orderleveransändring osv.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!IMPORTANT]
    >
-   >Varje händelsetyp måste matcha ett värde i **[!UICONTROL Event type]**-uppräkningen.
+   >Varje händelsetyp måste matcha ett värde i **[!UICONTROL Event type]** uppräkning.
 
 1. När de specificerade listvärdena har skapats loggar du ut och tillbaka till instansen för att det ska gå att skapa.
 

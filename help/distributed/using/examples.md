@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Skapa en lokal kampanj (per formulär) {#creating-a-local-campaign--by-form-}
 
-I webbgränssnittet **Av typen formulär** används ett **webbprogram**. Beroende på hur det är konfigurerat kan det här webbprogrammet innehålla alla typer av definierade anpassade element. Du kan till exempel föreslå länkar för att utvärdera målet, budgeten, innehållet osv. via dedikerade API:er.
+The **Per formulär** webbgränssnitt av typen använder **webbprogram**. Beroende på hur det är konfigurerat kan det här webbprogrammet innehålla alla typer av definierade anpassade element. Du kan till exempel föreslå länkar för att utvärdera målet, budgeten, innehållet osv. via dedikerade API:er.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ I webbgränssnittet **Av typen formulär** används ett **webbprogram**. Beroend
 >
 >Webbprogrammet som används i det här exemplet är inte ett webbprogram som levereras med Adobe Campaign. Om du vill använda ett formulär i en kampanj måste du skapa det dedikerade webbprogrammet.
 
-När du skapar kampanjmallen klickar du på ikonen **[!UICONTROL Zoom]** i alternativet **[!UICONTROL Web interface]** för länken **[!UICONTROL Advanced campaign settings...]** för att få tillgång till information om webbprogrammet.
+När du skapar kampanjmallen klickar du på **[!UICONTROL Zoom]** -ikonen i **[!UICONTROL Web interface]** alternativ för **[!UICONTROL Advanced campaign settings...]** -länk för att komma åt information om webbprogrammet.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -35,11 +35,11 @@ När du skapar kampanjmallen klickar du på ikonen **[!UICONTROL Zoom]** i alter
 >
 >Webbprogramsparametrar är bara tillgängliga i kampanjmallen.
 
-På fliken **[!UICONTROL Edit]** väljer du aktiviteten **Kampanjorder** och öppnar den för att komma åt dess innehåll.
+I **[!UICONTROL Edit]** väljer du **Kampanjorder** och öppna den för att komma åt dess innehåll.
 
 ![](assets/mkg_dist_web_app1.png)
 
-I det här exemplet innehåller aktiviteten **Kampanjorder**:
+I det här exemplet **Kampanjorder** aktiviteten innefattar:
 
 * fält som ska anges av den lokala enheten under ordern,
 
@@ -96,7 +96,7 @@ Stegen är följande:
 
 **För den centrala enheten:**
 
-1. Skapa en **[!UICONTROL Data distribution]**-aktivitet.
+1. Skapa en **[!UICONTROL Data distribution]** aktivitet.
 1. Skapa en samarbetskampanj.
 1. Publicera kampanjen.
 
@@ -106,7 +106,7 @@ Stegen är följande:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Genom att klicka på länken **[!UICONTROL Access your contact list and approve targeting]** får den lokala enheten åtkomst (via webbläsaren) till listan över klienter som valts för kampanjen.
+1. Genom att klicka på **[!UICONTROL Access your contact list and approve targeting]** den lokala enheten ges åtkomst (via webbläsare) till listan över klienter som valts för kampanjen.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -120,23 +120,23 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 #### Skapa en datadistributionsaktivitet {#creating-a-data-distribution-activity}
 
-1. Om du vill skapa en samarbetskampanj (med målgodkännande) måste du först skapa en **[!UICONTROL Data distribution activity]**. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Resources > Campaign management > Data distribution]**.
+1. Om du vill konfigurera en samarbetskampanj (efter målgodkännande) måste du först skapa en **[!UICONTROL Data distribution activity]**. Klicka på **[!UICONTROL New]** ikonen i **[!UICONTROL Resources > Campaign management > Data distribution]** nod.
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
-1. På fliken **[!UICONTROL General]** måste du ange:
+1. I **[!UICONTROL General]** måste du ange:
 
-   * **[!UICONTROL Targeting dimension]**. Här utförs **datadistributionen** på **mottagarna**.
-   * **[!UICONTROL Distribution type]**. Du kan välja en **fast storlek** eller en **storlek i procent**.
-   * **[!UICONTROL Assignment type]**. Välj alternativet **Lokal entitet**.
-   * **[!UICONTROL Distribution type]**. Här är det **[!UICONTROL Origin (@origin)]**-fält som finns i mottagartabellen som gör att du kan identifiera relationen mellan kontakten och den lokala enheten.
-   * Fältet **[!UICONTROL Approval storage]**. Välj alternativet **Lokalt godkännande av mottagare**.
+   * den **[!UICONTROL Targeting dimension]**. Här är **Datadistribution** utförs på **Mottagare**.
+   * den **[!UICONTROL Distribution type]**. Du kan välja en **Fast storlek** eller en **Storlek i procent**.
+   * den **[!UICONTROL Assignment type]**. Välj **Lokal entitet** alternativ.
+   * den **[!UICONTROL Distribution type]**. Här är det **[!UICONTROL Origin (@origin)]** i mottagarregistret där du kan identifiera relationen mellan kontakten och den lokala enheten.
+   * The **[!UICONTROL Approval storage]** fält. Välj **Mottagarens lokala godkännande** alternativ.
 
-1. Ange följande på fliken **[!UICONTROL Breakdown]**:
+1. I **[!UICONTROL Breakdown]** -flik, ange:
 
-   * **[!UICONTROL Distribution field value]**, som motsvarar de lokala enheter som är inblandade i den kommande kampanjen.
+   * den **[!UICONTROL Distribution field value]**, vilket motsvarar de lokala enheter som deltar i den kommande kampanjen.
    * den lokala enheten **[!UICONTROL label]**.
-   * **[!UICONTROL Size]** (fast eller i procent). Standardvärdet **0** innebär att du väljer alla mottagare som är länkade till den lokala enheten.
+   * den **[!UICONTROL Size]** (fast eller i procent). The **0 standardvärde** markerar alla mottagare som är länkade till den lokala enheten.
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -144,12 +144,12 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 #### Skapa en samverkanskampanj {#creating-a-collaborative-campaign}
 
-1. Skapa en ny **[!UICONTROL collaborative campaign (by target approval)]**-nod från **[!UICONTROL Campaign management > Campaign]**.
-1. Skapa ett arbetsflöde för kampanjen på fliken **[!UICONTROL Targeting and workflows]**. Det här måste innehålla en **delad**-aktivitet där **[!UICONTROL Record count limitation]** definieras av aktiviteten **[!UICONTROL Data distribution]**.
+1. Från **[!UICONTROL Campaign management > Campaign]** nod, skapa en ny **[!UICONTROL collaborative campaign (by target approval)]**.
+1. I **[!UICONTROL Targeting and workflows]** skapar du ett arbetsflöde för kampanjen. Detta måste innehålla en **Dela** verksamhet där **[!UICONTROL Record count limitation]** definieras av **[!UICONTROL Data distribution]** aktivitet.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
-1. Lägg till en **[!UICONTROL Local approval]**-åtgärd där du kan ange:
+1. Lägg till en **[!UICONTROL Local approval]** åtgärd där du kan ange:
 
    * det meddelandeinnehåll som ska skickas till de lokala enheterna i meddelandet,
    * påminnelsen om godkännande,
@@ -161,16 +161,16 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 #### Publicera kampanjen {#publishing-the-campaign}
 
-Du kan nu lägga till ett **kampanjpaket** från fliken **[!UICONTROL Campaigns]**.
+Nu kan du lägga till en **kampanjpaket** från **[!UICONTROL Campaigns]** -fliken.
 
-1. Välj din **[!UICONTROL Reference campaign]**. På fliken **[!UICONTROL Edit]** i ditt paket kan du välja **[!UICONTROL Approval mode]** som ska användas för din kampanj:
+1. Välj **[!UICONTROL Reference campaign]**. I **[!UICONTROL Edit]** kan du välja **[!UICONTROL Approval mode]** som kan användas för er kampanj:
 
-   * i **Manuellt**-läge deltar de lokala enheterna i kampanjen om de accepterar inbjudan från den centrala enheten. De kan ta bort de redan valda kontakterna om de vill och om de behöver ett godkännande från chefen för att bekräfta att de deltar i kampanjen.
-   * i **Automatiskt**-läge måste de lokala enheterna delta i kampanjen, såvida de inte avregistrerar sig själva från den. De kan ta bort kontakter utan att behöva godkänna dem.
+   * in **Manuell** om de lokala enheterna accepterar inbjudan från den centrala enheten. De kan ta bort de redan valda kontakterna om de vill och om de behöver ett godkännande från chefen för att bekräfta att de deltar i kampanjen.
+   * in **Automatisk** måste de lokala enheterna delta i kampanjen, såvida de inte avregistrerar sig från den. De kan ta bort kontakter utan att behöva godkänna dem.
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
-1. På fliken **[!UICONTROL Description]** kan du lägga till en beskrivning av kampanjen samt alla dokument som ska skickas till de lokala entiteterna.
+1. I **[!UICONTROL Description]** kan du lägga till en beskrivning av kampanjen samt alla dokument som ska skickas till de lokala enheterna.
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
@@ -203,7 +203,7 @@ Stegen är följande:
 **För den centrala enheten:**
 
 1. Skapa en samarbetskampanj.
-1. Konfigurera **[!UICONTROL Advanced campaign settings...]** på samma sätt som för en lokal kampanj.
+1. Konfigurera **[!UICONTROL Advanced campaign settings...]** som ni skulle ha gjort för en lokal kampanj.
 1. Konfigurera kampanjarbetsflödet och leveransen på samma sätt som för en lokal kampanj.
 1. Uppdatera webbformuläret.
 1. Skapa kampanjpaketet och publicera det.
@@ -228,24 +228,24 @@ Stegen är följande:
 
 ### Central entitetssida {#central-entity-side-1}
 
-1. Om du vill implementera en samarbetskampanj (per formulär) måste du skapa en kampanj med mallen **Samarbetskampanj (per formulär)**.
+1. Om du vill genomföra en samarbetskampanj (per formulär) måste du skapa en kampanj med hjälp av **Samverkande kampanj (per formulär)** mall.
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. Klicka på länken **[!UICONTROL Advanced campaign settings...]** på fliken **[!UICONTROL Edit]** för att konfigurera den som en lokal kampanj. Se [Skapa en lokal kampanj (efter formulär)](#creating-a-local-campaign--by-form-).
+1. I kampanjens **[!UICONTROL Edit]** klickar du på **[!UICONTROL Advanced campaign settings...]** -länk för att konfigurera den som en lokal kampanj. Se [Skapa en lokal kampanj (per formulär)](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. Konfigurera kampanjarbetsflödet och webbformuläret. Se [Skapa en lokal kampanj (efter formulär)](#creating-a-local-campaign--by-form-).
+1. Konfigurera kampanjarbetsflödet och webbformuläret. Se [Skapa en lokal kampanj (per formulär)](#creating-a-local-campaign--by-form-).
 1. Skapa ett kampanjpaket genom att ange körningsschema och de lokala enheter som ingår.
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. Slutför paketkonfigurationen genom att välja godkännandeläge på fliken **[!UICONTROL Edit]**.
+1. Slutför paketkonfigurationen genom att välja godkännandeläge i **[!UICONTROL Edit]** -fliken.
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. På fliken **[!UICONTROL Description]** kan du ange en kampanjpaketsbeskrivning, ett meddelande som ska skickas till lokala entiteter när paketet publiceras och bifoga eventuella informativa dokument till kampanjpaketet.
+1. Från **[!UICONTROL Description]** kan du ange en kampanjpaketsbeskrivning, ett meddelande som ska skickas till lokala entiteter när paketet publiceras och bifoga informativa dokument till kampanjpaketet.
 
    ![](assets/mkg_dist_use_case_form_5.png)
 

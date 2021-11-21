@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ![](../../assets/v7-only.svg)
 
-Om vissa **jsp**-jobb inte kan köras måste du tvinga dem att kompilera om.
+Om vissa **jsp** jobb inte kan köras, du måste tvinga dem att kompilera om.
 
 Ange följande kommandon för detta:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-**jsp**-jobben återskapas nästa gång du ansluter.
+The **jsp** jobb genereras om nästa gång du ansluter.

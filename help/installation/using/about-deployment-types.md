@@ -25,4 +25,4 @@ Om det finns en konfiguration på flera datorer behöver du inte använda samma 
 >
 >De huvudsakliga installationskonfigurationsstegen kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att konfigurera server- och instanskonfigurationsfilerna.
 >
->Mer information om de viktigaste skillnaderna mellan distributioner finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [Funktionsskillnaderna för värdbaserade och lokala distributioner](../../installation/using/capability-matrix.md).
+>Mer information om de viktigaste skillnaderna mellan distributioner finns i [Värdmodeller](../../installation/using/hosting-models.md) eller till [Funktionsskillnader för värdbaserade och lokala distributioner](../../installation/using/capability-matrix.md).

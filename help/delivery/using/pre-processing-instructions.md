@@ -77,10 +77,10 @@ Var:
 Objektet kan vara:
    * **[!DNL delivery]**: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
    * **[!DNL provider]**: för aktuell leveransleverantör/routning (nms:externalAccount).
-   * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägg till objekt i körningskontexten**.
-   * Objekt i foreach-slingan: se avsnittet [Foreach](#foreach) nedan.
+   * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägga till objekt i körningskontexten**.
+   * Objekt i foreach-slingan: se [Foreach](#foreach) nedan.
 * **[!DNL xpath]**: fältets xpath.
-* **[!DNL index]** (valfritt): om  **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (Börjar på 0).
+* **[!DNL index]** (valfritt): if **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (börjar vid 0).
 
 ### [!DNL delivery] object {#delivery-object}
 
@@ -103,7 +103,7 @@ För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
 
 **Varning**
 
-Om du använder följande instruktion för leveranser som skickas via mellanleverantörer måste det anpassade fältet **@myCustomField** läggas till i nms:delivery-schemat på både marknadsförings- och mellanleverantörsplattformar:
+Om du använder följande anvisningar för leveranser som skickas via mellanleverantörer, är det anpassade fältet **@myCustomField** måste läggas till i nms:delivery-schemat på både marknadsförings- och mellanleverantörsplattformar:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -146,7 +146,7 @@ Var:
 * **[!DNL object]**: namnet på objektet som ska börja från, vanligtvis ett extra skriptobjekt, men det kan vara en leverans.
 * **[!DNL xpath]** (valfritt): xpath för den samling som ska slingas. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
 * **[!DNL index]** (valfritt): om xpath inte är &quot;.&quot; och objektet är en array, objektindex för objektet (börjar vid 0).
-* **[!DNL item]** (valfritt): namnet på ett nytt objekt som är tillgängligt med  &lt;> Standard med länknamnet i schemat.
+* **[!DNL item]** (valfritt): namnet på ett nytt objekt som är tillgängligt med värdet &lt;%@ inuti förgreningsslingan. Standard med länknamnet i schemat.
 
 Exempel:
 
@@ -167,7 +167,7 @@ Med den lösningen spåras länkarna till alla artiklar utan åtskillnad. Du vet
 
 Lösningen är att
 
-1. Läs in alla möjliga artiklar i en extra skriptmatris för leveransen i förväg - articleList[] - vilket innebär att det måste finnas ett begränsat antal möjliga artiklar.
+1. Läs in alla möjliga artiklar i en extra skriptmatris för leveransen - articleList[] - vilket innebär att det måste finnas ett begränsat antal möjliga artiklar.
 1. Skriv en JavaScript-funktion i början av innehållet.
 
    ```

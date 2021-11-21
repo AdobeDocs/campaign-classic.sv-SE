@@ -23,12 +23,12 @@ I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign 
 >
 >Dessa integreringar är samtidiga. Läs nedanstående information noggrant innan du gör någon konfiguration.
 
-* Integrering med **Experience Cloud Assets**: Med den här integreringen kan du infoga bilder från ditt Adobe Experience Cloud-bibliotek. Integrationen måste konfigureras genom att det inbyggda **[!UICONTROL Integration with the Adobe Experience Cloud]**-paketet installeras i Adobe Campaign.
-* Integrering med **AEM Assets**: Med den här integreringen kan du infoga bilder från ditt Adobe Experience Manager Assets-bibliotek. Integrationen måste konfigureras genom att det inbyggda **[!UICONTROL AEM Integration]**-paketet installeras i Adobe Campaign. Observera att den här integreringen inte längre är tillgänglig från och med Adobe Experience Manager 6.4.
+* Integration med **Experience Cloud Assets**: Med den här integreringen kan du infoga bilder från ditt Adobe Experience Cloud-bibliotek. Integrationen måste konfigureras genom att installera **[!UICONTROL Integration with the Adobe Experience Cloud]** inbyggt paket i Adobe Campaign.
+* Integration med **AEM Assets**: Med den här integreringen kan du infoga bilder från ditt Adobe Experience Manager Assets-bibliotek. Integrationen måste konfigureras genom att installera **[!UICONTROL AEM Integration]** inbyggt paket i Adobe Campaign. Observera att den här integreringen inte längre är tillgänglig från och med Adobe Experience Manager 6.4.
 
 >[!NOTE]
 >
->Om de två paketen (**[!UICONTROL AEM Integration]** och **[!UICONTROL Integration with the Adobe Experience Cloud]**) är installerade kan endast de resurser som är tillgängliga i Adobe Experience Cloud-biblioteket användas.
+>Om de två paketen (**[!UICONTROL AEM Integration]** och **[!UICONTROL Integration with the Adobe Experience Cloud]** ) är installerat kan endast de resurser som finns i Adobe Experience Cloud-biblioteket användas.
 
 ## Integrera med Experience Cloud Assets {#integrating-with-experience-cloud-assets}
 
@@ -37,9 +37,9 @@ För att kunna använda integreringen mellan Adobe Campaign och Experience Cloud
 * En Adobe Experience Cloud-organisation
 * Autentiseringsläget för Adobe IMS är aktiverat
 
-Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Cloud konfigurerar du anslutningen via IMS (Adobe ID anslutningstjänst). Den här konfigurationen beskrivs i [Ansluta via ett Adobe ID](../../integrations/using/about-adobe-id.md)-dokument. Den innehåller följande uppgifter:
+Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Cloud konfigurerar du anslutningen via IMS (Adobe ID anslutningstjänst). Den här konfigurationen beskrivs i [Ansluta via en Adobe ID](../../integrations/using/about-adobe-id.md) -dokument. Den innehåller följande uppgifter:
 
-* Installerar **[!UICONTROL Integration with the Adobe Experience Cloud]**-paketet.
+* Installera **[!UICONTROL Integration with the Adobe Experience Cloud]** paket.
 * Konfigurera ett externt Adobe Experience Cloud-konto.
 
 >[!NOTE]
@@ -55,22 +55,22 @@ Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Clou
 
 Om du vill integrera AEM Assets med Adobe Campaign måste du först konfigurera integreringen mellan Adobe Experience Manager och Adobe Campaign. Den här konfigurationen kräver i huvudsak:
 
-* Installera det inbyggda **[!UICONTROL AEM Integration]**-paketet
+* Installera **[!UICONTROL AEM Integration]** inbyggt paket
 * Konfigurera ett externt konto som är specifikt för Adobe Experience Manager
 
-Lär dig hur du integrerar Adobe Campaign och Adobe Experience Manager i [den detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
+Läs om hur du integrerar Adobe Campaign och Adobe Experience Manager i [detaljerad dokumentation](../../integrations/using/about-adobe-experience-manager.md).
 
 När integreringen är klar kan du konfigurera en ny leveransmall i Adobe Campaign så att den kan använda AEM Assets-biblioteket. Följ stegen nedan för att göra detta:
 
-1. Skapa en ny leveransmall - eller duplicera en befintlig. Mer information om leveransmallar finns på [den här sidan](../../delivery/using/about-templates.md).
-1. Redigera **egenskaperna** för den här mallen.
-1. På fliken **[!UICONTROL Advanced]** anger du **[!UICONTROL Content editing mode]** till **DCE**.
-1. Välj den externa **[!UICONTROL AEM account]** som du behöver använda för att komma åt ditt AEM Assets-bibliotek.
+1. Skapa en ny leveransmall - eller duplicera en befintlig. Mer information om leveransmallar finns i [den här sidan](../../delivery/using/about-templates.md).
+1. Redigera **Egenskaper** för den här mallen.
+1. I **[!UICONTROL Advanced]** -fliken, ange **[!UICONTROL Content editing mode]** till **DCE**.
+1. Välj externa **[!UICONTROL AEM account]** som du behöver använda för att få tillgång till ditt AEM Assets-bibliotek.
 
    ![](assets/dam_aem_assets1.png)
 
-När du infogar bilder i en leverans baserat på den här mallen kan du med **[!UICONTROL Select a shared asset]**-alternativet bläddra bland bilderna i AEM Assets-biblioteket. Läs mer i [det här avsnittet](../../integrations/using/inserting-a-shared-asset.md).
+När du infogar bilder i ett leveransinnehåll baserat på den här mallen **[!UICONTROL Select a shared asset]** kan du sedan bläddra bland bilderna i AEM Assets-biblioteket. Läs mer i [det här avsnittet](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >
->Om **[!UICONTROL Integration with the Adobe Experience Cloud]**-paketet också är installerat på din Adobe Campaign-instans kan du bara använda resurserna som finns i Adobe Experience Cloud-biblioteket. Om du även vill få tillgång till resurserna i ditt AEM Assets-bibliotek måste du synkronisera AEM Assets och Adobe Experience Cloud. Resurserna i AEM Assets finns sedan också i Adobe Experience Cloud bibliotek. I det här fallet behöver du inte skapa någon särskild leveransmall.
+>Om **[!UICONTROL Integration with the Adobe Experience Cloud]** paketet är även installerat på din Adobe Campaign-instans. Du kan bara använda resurserna som finns i Adobe Experience Cloud-biblioteket. Om du även vill få tillgång till resurserna i ditt AEM Assets-bibliotek måste du synkronisera AEM Assets och Adobe Experience Cloud. Resurserna i AEM Assets finns sedan också i Adobe Experience Cloud bibliotek. I det här fallet behöver du inte skapa någon särskild leveransmall.

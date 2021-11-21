@@ -26,13 +26,13 @@ Med JavaScript i e-postinnehåll (HTML eller Text) kan du generera och skicka dy
 
 Du kan lägga till specifika förbearbetningsinstruktioner för att skripta URL:en och spåra den. [Läs mer](pre-processing-instructions.md)
 
-För spårningsidentifiering bäddar Adobe Campaign in [Tidy](https://www.html-tidy.org/) för att tolka HTML-källan och identifiera mönstret. Här listas alla URL:er för innehållet så att de kan spåras individuellt. Adobe Campaign använder Tidy igen för att ersätta URL:en (`http://myurl.com`) med en URL som pekar på Adobe Campaign omdirigeringsserver.
+Adobe Campaign bäddar in [Tidy](https://www.html-tidy.org/) för att analysera HTML-källan och identifiera mönstret. Här listas alla URL:er för innehållet så att de kan spåras individuellt. Adobe Campaign använder Tidy igen för att ersätta URL:en (`http://myurl.com`) med en URL som pekar på Adobe Campaign omdirigeringsserver.
 
-I det ursprungliga innehållet: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` ersätts för en viss mottagare med: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
+I det ursprungliga innehållet: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` ersätts för en viss mottagare med `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
 Var:
 
-* &quot;h&quot; betyder HTML-innehåll (eller &quot;t&quot; för textinnehåll).
+* &quot;h&quot; betyder innehåll i HTML (eller &quot;t&quot; för textinnehåll).
 * 617791 är meddelande-ID:t / brustlogg-ID (hexadecimalt).
 * 71ffa3 är NmsDelivery-ID (hexadecimalt).
 * 71ffa8 är NmsTrackingUrl-ID:t (hexadecimalt).

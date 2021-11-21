@@ -161,7 +161,7 @@ Om du vill göra det klickar du på **[!UICONTROL Processes]** för att konfigur
 
 Tjänster är kopplade till kampanjer via leveranser eller aktiviteter. Tjänsteleverantörer är länkade till leveransmallar för att erbjuda sina tjänster i leveranser som skapas via den här mallen.
 
-När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post, osv.) visas automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
+När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post, osv.) anges automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
 
 >[!NOTE]
 >

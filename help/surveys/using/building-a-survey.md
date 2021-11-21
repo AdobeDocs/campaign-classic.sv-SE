@@ -19,11 +19,11 @@ ht-degree: 2%
 
 ## Skapa en ny undersökning {#creating-a-new-survey}
 
-I det här kapitlet beskrivs hur du utformar ett **undersökningsformulär** med Adobe Campaign, samt vilka alternativ och konfigurationer som är tillgängliga. Med Adobe Campaign kan du göra enkäten tillgänglig för användare och samla in och arkivera svar i databasen.
+I det här kapitlet beskrivs hur du utformar en **Undersökning** skriv formulär med Adobe Campaign, samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan du göra enkäten tillgänglig för användare och samla in och arkivera svar i databasen.
 
-Webbformulär nås via noden **[!UICONTROL Resources > Online > Web applications]** i trädet. Om du vill skapa en undersökning klickar du på **[!UICONTROL New]** ovanför listan med program eller högerklickar på listan och väljer **[!UICONTROL New]**.
+Webbformulär öppnas via **[!UICONTROL Resources > Online > Web applications]** trädnod. Om du vill skapa en undersökning klickar du på **[!UICONTROL New]** eller högerklicka på listan och välj **[!UICONTROL New]**.
 
-Välj undersökningsmallen (**[!UICONTROL newSurvey]** som standard).
+Välj undersökningsmall (**[!UICONTROL newSurvey]** som standard).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -35,7 +35,7 @@ Formulärets sidor skapas med en särskild redigerare där du kan definiera och 
 
 ## Lägg till fält {#adding-fields}
 
-Fälten i ett formulär gör det möjligt för användare att ange information och välja alternativ. För varje sida i formuläret skapas de via den första knappen i verktygsfältet med hjälp av menyn **[!UICONTROL Add using the wizard]**.
+Fälten i ett formulär gör det möjligt för användare att ange information och välja alternativ. För varje sida i formuläret skapas de via den första knappen i verktygsfältet med hjälp av **[!UICONTROL Add using the wizard]** -menyn.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -47,16 +47,16 @@ Fälten i ett formulär gör det möjligt för användare att ange information o
 
 När du lägger till ett fält i en undersökning måste du välja dess typ. Följande alternativ är tillgängliga:
 
-1. **[!UICONTROL Answer a question]**: Med det här alternativet kan du deklarera ett nytt fält (som kallas arkiverat fält) för att lagra svar. I det här fallet sparas alla insamlade värden, även när en deltagare fyller i formuläret mer än en gång. Det här lagringsläget är endast tillgängligt i **undersökningar**. [Läs mer](../../surveys/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Answer a question]**: Med det här alternativet kan du deklarera ett nytt fält (som kallas arkiverat fält) för att lagra svar. I det här fallet sparas alla insamlade värden, även när en deltagare fyller i formuläret mer än en gång. Det här lagringsläget är endast tillgängligt i **Undersökningar**. [Läs mer](../../surveys/using/managing-answers.md#storing-collected-answers).
 1. **[!UICONTROL Edit a recipient]**: Med det här alternativet kan du markera ett fält i databasen. I det här fallet lagras användarnas svar i det här fältet. För varje deltagare behålls endast det senast sparade värdet och läggs till i profildata.
 1. **[!UICONTROL Add a variable]**: Med det här alternativet kan du skapa en konfiguration så att information inte lagras i databasen. Lokala variabler kan deklareras uppströms. Du kan också lägga till dem direkt när du skapar fältet.
 1. **[!UICONTROL Import an existing question]**: Med det här alternativet kan du importera befintliga frågor som har skapats i andra undersökningar.
 
    >[!NOTE]
    >
-   >Lagringslägen och fältimporter beskrivs i [det här avsnittet](../../surveys/using/managing-answers.md#storing-collected-answers).
+   >Lagringslägen och fältimporter anges i [det här avsnittet](../../surveys/using/managing-answers.md#storing-collected-answers).
 
-Typ av fält som ska läggas till (nedrullningsbar lista, textfält, kryssrutor osv.) anpassar sig till det valda lagringsläget. Du kan ändra den med hjälp av fältet **[!UICONTROL Type]** på fliken **[!UICONTROL General]**, men se till att den är konsekvent med datatypen.
+Typ av fält som ska läggas till (nedrullningsbar lista, textfält, kryssrutor osv.) anpassar sig till det valda lagringsläget. Du kan ändra den med **[!UICONTROL Type]** fält för **[!UICONTROL General]** men se till att datatypen är konsekvent.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -68,7 +68,7 @@ Onlineundersökningar bygger på webbprogrammens funktioner. Undersökningsspeci
 
 ### Flera alternativ {#multiple-choice}
 
-För **[!UICONTROL Multiple choice]**-typkontroller kan du definiera ett minsta och högsta antal markeringar. Med det här alternativet kan du t.ex. tvinga markeringen till minst **2**-värden och högst **4**-värden från de tillgängliga alternativen:
+För **[!UICONTROL Multiple choice]** kan du definiera ett minsta och högsta antal markeringar. Med det här alternativet kan du t.ex. tvinga markeringen till minst **2** värden och högst **4** värden från de tillgängliga alternativen:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -84,13 +84,13 @@ Motsvarande konfiguration är följande:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
-Dessutom måste lagringsplatsen för det här inmatningsfältet vara av typen **[!UICONTROL Multiple values]** **arkiverat fält**:
+Dessutom måste lagringsplatsen för det här inmatningsfältet vara en **[!UICONTROL Multiple values]** type **arkiverat fält**:
 
 ![](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
->* Den här funktionen är bara tillgänglig för **enkät**-typformulär.
+>* Den här funktionen är bara tillgänglig för **Undersökning** typformulär.
 >* Det här alternativet är inte kompatibelt med slumpmässig frågevisning. [Läs mer](#adding-questions).
 
 
@@ -98,19 +98,19 @@ Dessutom måste lagringsplatsen för det här inmatningsfältet vara av typen **
 
 Det finns två typer av behållare: standard och fråga. Standardbehållare används för att konfigurera sidlayout och villkorsstyrd visning på en sida. [Läs mer](../../web/using/about-web-forms.md).
 
-Använd en **fråge**-behållare för att lägga till en fråga på sidan och för att infoga möjliga svar nedan i hierarkin. Användarsvar på frågor som placeras i den här typen av behållare kan analyseras i rapporter.
+Använd en **Fråga** behållare för att lägga till en fråga på sidan och för att infoga möjliga svar nedan i hierarkin. Användarsvar på frågor som placeras i den här typen av behållare kan analyseras i rapporter.
 
 >[!CAUTION]
 >
->Infoga aldrig en **Fråga**-behållare under en annan **Fråga**-behållare i hierarkin.
+>Infoga aldrig **Fråga** container below another **Fråga** i hierarkin.
 
 ![](assets/s_ncs_admin_question_label.png)
 
-Frågeetiketten anges i etikettfältet. I det här fallet används formatet från formulärets formatmall. Välj alternativet **[!UICONTROL Enter the title in HTML format]** för att anpassa det. Då får du tillgång till HTML-redigeraren.
+Frågeetiketten anges i etikettfältet. I det här fallet används formatet från formulärets formatmall. Välj **[!UICONTROL Enter the title in HTML format]** för att personalisera det. Då får du tillgång till redigeraren i HTML.
 
 >[!NOTE]
 >
->Mer information om hur du använder HTML-redigeraren finns i [det här dokumentet](../../web/using/about-web-forms.md).
+>Se [det här dokumentet](../../web/using/about-web-forms.md) om du vill ha mer information om hur du använder redigeraren i HTML.
 
 Exempel:
 
@@ -122,7 +122,7 @@ I exemplet ovan återges på följande sätt:
 
 >[!NOTE]
 >
->Varje fråga har en **Query**-typbehållare.
+>Varje fråga har **Fråga** typbehållare.
 
 Du kan aktivera slumpmässig anpassning av frågor via Adobe Campaign. Det går sedan att ange hur många frågor som ska visas på sidan i fältet längst ned i konfigurationsfönstret.
 
@@ -136,4 +136,4 @@ När sidan uppdateras är de visade frågorna inte desamma.
 
 >[!CAUTION]
 >
->När du visar en fråga slumpmässigt (**[!UICONTROL Display randomly]** alternativ markerat på sidan) ska du se till att inte använda flervalsfrågor där en eller flera markeringar är obligatoriska.
+>När du visar en fråga slumpmässigt (**[!UICONTROL Display randomly]** markerat på sidan), se till att du inte använder flervalsfrågor för vilka en eller flera markeringar är obligatoriska.

@@ -21,11 +21,11 @@ Adobe Campaign erbjuder ett tillägg för Response Management som gör att ni ka
 
 ## Hypotes {#hypothesis-concept}
 
-Hypoeser kan konfigureras under en viss period från kontaktdatumet för att minska beteendet hos de som anges efter att ha fått en leverans. Hypoteserna baseras på en **transaktion**-tabell som sparar inköp och information om dessa inköp.
+Hypoeser kan konfigureras under en viss period från kontaktdatumet för att minska beteendet hos de som anges efter att ha fått en leverans. Dessa hypoteser bygger på en **transaktion** register som sparar inköp och information om dessa inköp.
 
-Hypoesen är tidsbegränsad och kan tillämpas på en kontrollgrupp som ska jämföras med målpopulationen. Hypoesresultat tillhandahålls av **indikatorer** som uppdateras automatiskt när beräkningen är klar. Den avkastning som är kopplad till hypoteserna kommer att beaktas i kampanjrapporterna.
+Hypoesen är tidsbegränsad och kan tillämpas på en kontrollgrupp som ska jämföras med målpopulationen. Sammanfattande resultat från **indikatorer** som uppdateras automatiskt när beräkningen är klar. Den avkastning som är kopplad till hypoteserna kommer att beaktas i kampanjrapporterna.
 
-Med **rapporterna** från Response Manager kan du också sammanfatta informationen som är kopplad till omsättningsökning, marginalberäkning samt avkastningen på leveransen eller erbjudandet.
+Dessutom **rapporter** som ingår i Response Manager gör det möjligt att sammanfatta informationen som är kopplad till omsättningsökning, marginalberäkning samt avkastningen på leveransen eller erbjudandet.
 
 Tack vare inköpsdetaljraderna kan du dessutom ange att dina hypoteser bara ska fokuseras på en viss produkt.
 
@@ -33,7 +33,7 @@ Efter en leverans som befordrar en artikel vill vi till exempel utvärdera de in
 
 >[!CAUTION]
 >
->Svarshanteraren är ett **[!UICONTROL Campaign]**-alternativ. Kontrollera licensavtalet.
+>Svarshanteraren är en **[!UICONTROL Campaign]** alternativ. Kontrollera licensavtalet.
 
 Du kan också beräkna alla reaktioner för hela hushållet med mottagaren som tog emot leveransen eller erbjudandet.
 
@@ -41,7 +41,7 @@ Varje hypotes är kopplad till en enda transaktionstabell. En leverans eller ett
 
 ## Implementeringssteg {#method}
 
-Innan du börjar använda Svarshanteraren ska du läsa [Konfiguration](configuration.md) och utföra de nödvändiga konfigurationerna.
+Innan du börjar använda svarshanteraren bör du läsa [Konfiguration](configuration.md) och utföra nödvändiga konfigurationer.
 
 För att kunna inleda en hypotes om en leverans eller ett erbjudande måste ni definiera sammanhanget i en mall som ska användas för varje hypotes som ni skapar.
 

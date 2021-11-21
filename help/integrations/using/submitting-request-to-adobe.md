@@ -43,7 +43,7 @@ När IMS är aktiverat kan du begära etablering av People core service/Audience
   </tr> 
   <tr> 
    <td> <strong>AAM eller persontjänst</strong><br /> </td> 
-   <td> Exempel: Adobe Audience Manager. Var noga med att tala om för provisioneringsteamet om du äger Audience Manager-licens eller inte.</td> 
+   <td> Exempel: Adobe Audience Manager. Se till att tala om för provisioneringsteamet om du äger Audience Manager-licens eller inte.</td> 
   </tr> 
   <tr> 
    <td> <strong>Deklarerat ID eller besökar-ID</strong><br /> </td> 

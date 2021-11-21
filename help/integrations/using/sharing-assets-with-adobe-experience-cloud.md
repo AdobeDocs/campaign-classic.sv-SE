@@ -28,7 +28,7 @@ När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan 
 
 De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
 
-Läs avsnittet [Konfigurera åtkomst till resurser](../../integrations/using/configuring-access-to-assets.md) om du vill veta mer om de detaljer som är länkade till varje bibliotek.
+Läs [Konfigurera åtkomst till resurser](../../integrations/using/configuring-access-to-assets.md) om du vill veta mer om de specifika länkar som finns till varje bibliotek.
 
 >[!NOTE]
 >

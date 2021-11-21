@@ -31,7 +31,7 @@ Med webbtjänster kan du skapa många program från ett tredjepartssystem:
 
 Definitionen av de webbtjänster som implementeras på Adobe Campaign programserver finns i dataschemat.
 
-En webbtjänst beskrivs i datarappningens grammatik och är tillgänglig från elementet **`<methods>`**.
+En webbtjänst beskrivs i datamappningens grammatik och är tillgänglig från **`<methods>`** -element.
 
 ```
 <methods>
@@ -46,15 +46,15 @@ En webbtjänst beskrivs i datarappningens grammatik och är tillgänglig från e
 </methods>
 ```
 
-Här finns ett exempel på definitionen av metoden **GenerateForm**.
+Här finns ett exempel på definitionen av den anropade metoden **GenerateForm**.
 
-Tjänstens beskrivning börjar med elementet `<method>`. Listan med parametrar för metoden har slutförts från `<parameters>`-elementet. Varje parameter anges med ett namn, en typ (Boolean, sträng, DOMElement osv.) och en beskrivning. Med attributet &quot;inout&quot; med värdet &quot;out&quot; kan du ange att parametern &quot;result&quot; finns i SOAP-anropets utdata.
+Beskrivningen av tjänsten börjar med `<method>` -element. Listan över metodens parametrar finns i  `<parameters>` -element. Varje parameter anges med ett namn, en typ (Boolean, sträng, DOMElement osv.) och en beskrivning. Med attributet &quot;inout&quot; med värdet &quot;out&quot; kan du ange att parametern &quot;result&quot; finns i SOAP-anropets utdata.
 
 Förekomsten av attributet&quot;static&quot; (med värdet&quot;true&quot;) beskriver metoden som statisk, vilket betyder att alla parametrar för metoden måste deklareras.
 
 En const-metod har implicit ett XML-dokument i det associerade schemats format som indata.
 
-En fullständig beskrivning av `<method>`-elementet i ett Adobe Campaign-schema finns i kapitlet &quot;Schemareferenser&quot; under [Metod](../../configuration/using/schema/method.md)
+En fullständig beskrivning av `<method>` -elementet i ett Adobe Campaign-schema finns i kapitlet &quot;Schemareferenser&quot; under [Metod](../../configuration/using/schema/method.md)
 
 Exempel på &quot;const&quot;-typ &quot;ExecuteQuery&quot;-metoden från schemat &quot;xtk:queryDef&quot;:
 
@@ -94,7 +94,7 @@ En WSDL-beskrivning börjar med att definiera de typer som används för att ska
 
 #### Typer {#types}
 
-Typdefinitioner baseras på XML-scheman. I det här exemplet använder metoden&quot;ExecuteQuery&quot; strängen&quot;s:string&quot; och ett XML-dokument (`<s:complextype>`) som parametrar. Returvärdet för metoden (&quot;ExecuteQueryResponse&quot;) är ett XML-dokument ( `<s:complextype>`).
+Typdefinitioner baseras på XML-scheman. I det här exemplet använder metoden &quot;ExecuteQuery&quot; strängen &quot;s:string&quot; och ett XML-dokument (`<s:complextype>`) som parametrar. Returvärdet för metoden (&quot;ExecuteQueryResponse&quot;) är ett XML-dokument (  `<s:complextype>`).
 
 ```
 <types>
@@ -130,7 +130,7 @@ Typdefinitioner baseras på XML-scheman. I det här exemplet använder metoden&q
 
 #### Meddelanden {#messages}
 
-`<message>` beskriver namnen och typerna för en uppsättning fält som ska skickas. I metoden används två meddelanden för att skicka som en parameter (&quot;ExecuteQueryIn&quot;) och returvärdet (&quot;ExecuteQueryOut&quot;).
+The `<message>` beskriver namn och typer för en uppsättning fält som ska skickas. I metoden används två meddelanden för att skicka som en parameter (&quot;ExecuteQueryIn&quot;) och returvärdet (&quot;ExecuteQueryOut&quot;).
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ Typdefinitioner baseras på XML-scheman. I det här exemplet använder metoden&q
 
 #### PortType {#porttype}
 
-`<porttype>` associerar meddelandena för åtgärden ExecuteQuery som utlöses av frågan (&quot;input&quot;) som genererar ett svar (&quot;output&quot;).
+The `<porttype>` associerar meddelandena för åtgärden &quot;ExecuteQuery&quot; som utlöses av frågan (&quot;input&quot;) som genererar ett svar (&quot;output&quot;).
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ Typdefinitioner baseras på XML-scheman. I det här exemplet använder metoden&q
 
 #### Bindning {#binding}
 
-Delen `<binding>` anger SOAP-kommunikationsprotokollet ( `<soap:binding>` ), datatransporten i HTTP (värdet för attributet transport) och dataformatet för åtgärden ExecuteQuery. Innehållet i SOAP-kuvertet innehåller meddelandesegmenten direkt utan omformning.
+The `<binding>` part anger SOAP-kommunikationsprotokollet ( `<soap:binding>` ), datatransport i HTTP (värdet för attributet &quot;transport&quot;) och dataformatet för åtgärden &quot;ExecuteQuery&quot;. Innehållet i SOAP-kuvertet innehåller meddelandesegmenten direkt utan omformning.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ Delen `<binding>` anger SOAP-kommunikationsprotokollet ( `<soap:binding>` ), dat
 
 #### Tjänst {#service}
 
-Delen `<service>` beskriver tjänsten XtkQueryDef med dess URI på URL:en för Adobe Campaign-programservern.
+The `<service>` -delen beskriver XtkQueryDef-tjänsten med dess URI på URL:en för Adobe Campaign-programservern.
 
 ```
 <service name="XtkQueryDef">
@@ -192,11 +192,11 @@ Adobe Campaign har ökat säkerheten för autentiseringsmekanismer genom att inf
 
 Det finns två autentiseringslägen:
 
-* **via ett anrop till inloggningsmetoden()**. Det här läget genererar en sessionstoken och en säkerhetstoken. Det är det säkraste läget och därför det mest rekommenderade.
+* **via ett anrop till metoden logon()**. Det här läget genererar en sessionstoken och en säkerhetstoken. Det är det säkraste läget och därför det mest rekommenderade.
 
 eller
 
-* **via Adobe Campaign inloggning +** lösenord som skapar en sessionstoken. Sessionstoken upphör automatiskt efter en angiven period. Det här läget rekommenderas inte och kräver att säkerhetsinställningarna för vissa zoninställningar reduceras (allowUserPassword=&quot;true&quot; och sessionTokenOnly=&quot;true&quot;).
+* **via Adobe Campaign inloggning + lösenord** som skapar en sessionstoken. Sessionstoken upphör automatiskt efter en angiven period. Det här läget rekommenderas inte och kräver att säkerhetsinställningarna för vissa zoninställningar reduceras (allowUserPassword=&quot;true&quot; och sessionTokenOnly=&quot;true&quot;).
 
 ### Sessionstokensegenskaper {#session-token-characteristics}
 
@@ -277,7 +277,7 @@ Från ett SOAP-anrop:
 
 >[!NOTE]
 >
->De URL:er som används i följande **HttpServletRequest**-anrop måste finnas på tillåtelselista i behörighetssektionen url i filen **serverConf.xml**. Detta gäller även för serverns URL.
+>De URL:er som används i följande **HttpServletRequest** anrop måste finnas på tillåtelselista i delen URL-behörigheter i **serverConf.xml** -fil. Detta gäller även för serverns URL.
 
 Inloggningskörning():
 

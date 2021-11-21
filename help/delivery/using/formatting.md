@@ -23,11 +23,11 @@ En JavaScript-mall är ett HTML- eller textdokument som innehåller JavaScript-k
 
 ### Identifiering av en JavaScript-mall {#identification-of-a-javascript-template}
 
-En JavaScript-mall identifieras av sitt namn och namnutrymme på samma sätt som scheman och formulär. Vi rekommenderar dock att du lägger till alternativet **.js** i mallnamnet.
+En JavaScript-mall identifieras av sitt namn och namnutrymme på samma sätt som scheman och formulär. Vi rekommenderar dock att du lägger till **.js** till mallnamnet.
 
 ### Struktur för en JavaScript-mall {#structure-of-a-javascript-template}
 
-Exempel på en HTML-formateringsmall för JavaScript som baseras på &quot;cus:book&quot;-schemat:
+Exempel på en JavaScript HTML-formateringsmall som baseras på &quot;cus:book&quot;-schemat:
 
 ```
 <html>
@@ -45,10 +45,10 @@ Exempel på en HTML-formateringsmall för JavaScript som baseras på &quot;cus:b
 
 De olika JavaScript-direktiven visas i följande format:
 
-* Sammanfoga fält: visar innehållet i data med syntaxen **`<%= <source> %>`** där `<source>`är källfältet för de data som ska visas.
+* Sammanfoga fält: visar innehållet i data med **`<%= <source> %>`** syntax där `<source>`är källfältet för de data som ska visas.
 * Instruktionsblock: kör en serie JavaScript-instruktioner mellan taggarna &lt;% och %>.
 
-Objektet **content** representerar huvudelementet i XML-indatadokumentet.
+The **innehåll** -objektet representerar huvudelementet i XML-indatadokumentet.
 
 I följande exempel visas innehållet i namnet book name:
 
@@ -56,7 +56,7 @@ I följande exempel visas innehållet i namnet book name:
 <h1><%= content.@name %></h1>
 ```
 
-Följande kod itererar på samlingselementet `<chapter>`:
+Följande kod itererar på `<chapter>` samlingselement:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -69,15 +69,15 @@ Innehållets attribut och element representeras som JavaScript-objekt och följe
 **Exempel**:
 
 * **innehåll.@name**: hämtar värdet för &quot;name&quot;-attributet för huvudelementet
-* **innehåll.@`['name']`**: identiskt med **innehållet.Syntax för @name**
-* **content.chapter.length**: returnerar antalet element i  `<chapter` samlingselementet
-* **content.kapitel`[0]`.@name**: hämtar namnet på det första `<chapter>`-elementet
-* **chapter.name()**: returnerar namnet på  `<chapter>` elementet
-* **chapter.parent().name()**: returnerar namnet på det överordnade elementet för  `<chapter>`
+* **innehåll.@`['name']`**: identiskt med **innehåll.@name** syntax
+* **content.kapitel.length**: returnerar antalet element på `<chapter` samlingselement
+* **content.kapitel`[0]`.@name**: hämtar namnet på den första `<chapter>` element
+* **chapter.name()**: returnerar namnet på `<chapter>` element
+* **chapter.parent().name()**: returnerar namnet på det överordnade elementet för `<chapter>`
 
 >[!CAUTION]
 >
->Eftersom tecknet &#39;-&#39; är reserverat i JavaScript-språket måste alla attribut och element som innehåller det här tecknet återställas med syntaxen `['<field>']`.
+>Eftersom tecknet &#39;-&#39; är reserverat i JavaScript-språket måste alla attribut och element som innehåller det här tecknet återställas via `['<field>']` syntax.
 >
 >Exempel: `content.@['offer-id']`.
 
@@ -159,9 +159,9 @@ Exempel:
 
 ### Inkludera en JavaScript-mall {#including-a-javascript-template}
 
-Du kan skapa ett bibliotek med funktioner eller variabler för senare bruk. Om du vill göra det importerar du JavaScript-mallen med funktionen **eval**. På så sätt kan du förbättra kontexter med ytterligare funktioner som deklarerats i andra JavaScript-mallar.
+Du kan skapa ett bibliotek med funktioner eller variabler för senare bruk. Om du vill göra det importerar du JavaScript-mallen med **eval** funktion. På så sätt kan du förbättra kontexter med ytterligare funktioner som deklarerats i andra JavaScript-mallar.
 
-**Exempel**: importerar  **common.** jsptemplate.
+**Exempel**: importera **common.jsp** mall.
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -177,7 +177,7 @@ Med redigeringszonen kan du fylla i innehållet i JavaScript-mallen:
 >
 >Det associerade datamodellschemat måste fyllas i för initiering av JavaScript-objekt.
 
-Om du vill generera en förhandsgranskning av utdatadokumentet markerar du ett innehåll och ett utdataformat (HTML, Text, XML) och klickar sedan på **[!UICONTROL Generate]**:
+Om du vill generera en förhandsgranskning av utdatadokumentet markerar du ett innehåll och ett utdataformat (HTML, Text, XML) och klickar sedan på **[!UICONTROL Generate]** :
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -232,7 +232,7 @@ I det här exemplet beskrivs följande steg:
    </srcSchema>
    ```
 
-1. Skapa det länkade **[!UICONTROL Content management]**-typformuläret (**neo:news**)
+1. Skapa den länkade **[!UICONTROL Content management]** textform (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -264,9 +264,9 @@ I det här exemplet beskrivs följande steg:
    </form>
    ```
 
-1. Skapa JavaScript-mallar med meddelandeinnehåll för HTML- och textformat.
+1. Skapa JavaScript-mallarna med meddelandeinnehåll för HTML och textformat.
 
-   * I vårt exempel för HTML:
+   * I vårt exempel, för HTML:
 
       ```
       <html>     
@@ -376,13 +376,13 @@ Omformningen beskrivs i sin tur i XML i ett dokument som kallas formatmall.
 
 ### Identifiera en formatmall {#identifying-a-stylesheet}
 
-En formatmall identifieras av sitt namn och namnutrymme, precis som scheman och formulär. Vi rekommenderar dock att du lägger till tillägget **.xsl** i formatmallens namn.
+En formatmall identifieras av sitt namn och namnutrymme, precis som scheman och formulär. Vi rekommenderar dock att du lägger till **.xsl** tillägg till formatmallens namn.
 
 Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med kolon. till exempel: **cus:book.xsl**.
 
 ### Struktur för en formatmall {#structure-of-a-stylesheet}
 
-Exempel på en HTML-formateringsformatmall baserad på exempelschemat &quot;cus:book&quot;:
+Exempel på en formateringsmall för HTML baserad på exempelschemat &quot;cus:book&quot;:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -410,16 +410,16 @@ En formatmall är ett XML-dokument som följer följande regler:
 
 * attributvärdena ligger mellan citattecken,
 * ett element måste ha en öppningsmarkör och en slutmarkör,
-* ersätta tecknen &#39;&lt;&#39; eller &#39;&amp;&#39; med entiteterna **&#39;&lt;&#39;** eller **&#39;&amp;&#39;**,
-* Varje XSL-element måste använda namnutrymmet **xsl**.
+* ersätt tecknen &#39;&lt;&#39; eller &#39;&amp;&#39; med **&#39;&lt;&#39;** eller **&#39;&amp;&#39;** enheter,
+* varje XSL-element måste använda **xsl** namnutrymme.
 
-En formatmall måste börja med XSL-rotelementmarkören **`<xsl:stylesheet>`** och sluta med **`</xsl:stylesheet>`**-markören. XSL-namnutrymmet måste definieras i öppningsmarkören enligt följande:
+En formatmall måste börja med XSL-rotelementets markör **`<xsl:stylesheet>`** och avsluta med **`</xsl:stylesheet>`** markör. XSL-namnutrymmet måste definieras i öppningsmarkören enligt följande:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-**`<xsl:output>`**-elementet anger formatet för det dokument som skapas. Ange önskad teckenuppsättning och utdataformat.
+The **`<xsl:output>`** -element anger formatet för det dokument som genereras. Ange önskad teckenuppsättning och utdataformat.
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -444,7 +444,7 @@ Följande instruktioner beskriver formatmallens konfiguration för formateringen
 </xsl:template>
 ```
 
-Som standard söker XSLT-processorn efter den **mall** som gäller för roten eller huvudnoden i XML-indata-dokumentet. Byggandet av utdatadokumentet börjar med den här **mallen**.
+Som standard söker XSLT-processorn efter **mall** som gäller för rot- eller huvudnoden i XML-indatadokumentet. Byggandet av utdatadokumentet börjar med det här **mall**.
 
 I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom att bokens namn och listan med kapitel visas.
 
@@ -454,9 +454,9 @@ I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom 
 
 ### Visa HTML/XML {#displaying-html-xml}
 
-Om du vill visa ett **html**-fält använder du alternativet **disable-output-escape=&quot;yes&quot;** i **`<xsl:value-of>`**-direktivet. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
+Så här visar du en **html** fält, använd **disable-output-escape=&quot;yes&quot;** från **`<xsl:value-of>`** -direktivet. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
 
-**`<xsl:text>`**-direktivet med alternativet **disable-output-escape=&quot;yes&quot;** gör att du kan infoga JavaScript-taggar för personaliseringsfält eller villkorstester.
+The **`<xsl:text>`** med **disable-output-escape=&quot;yes&quot;** gör att du kan infoga JavaScript-taggar för anpassningsfält eller villkorstester.
 
 Exempel:
 
@@ -466,13 +466,13 @@ Exempel:
    <xsl:value-of select="summary" disable-output-escaping="yes"/>
    ```
 
-* Infogar anpassningsfältet **&lt;%= receive.email %>**:
+* Infoga anpassningsfältet **&lt;%= mottagare.email %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* Lägger till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;) `{` %>**:
+* Lägga till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;) `{` %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -480,9 +480,9 @@ Exempel:
 
 ### Inkludera formatmallar {#including-stylesheets}
 
-Du kan skapa ett bibliotek med mallar eller variabler som ska delas mellan flera formatmallar. Mallen &quot;longMonth&quot; ****, som presenteras ovan, är ett typiskt exempel på fördelen med att fjärrleta upp en mall i en formatmall så att den kan återanvändas senare.
+Du kan skapa ett bibliotek med mallar eller variabler som ska delas mellan flera formatmallar. The &quot;longMonth&quot; **mall**(se ovan) är ett typiskt exempel på fördelarna med att fjärrsöka efter en mall i en formatmall så att den kan återanvändas senare.
 
-**`<xsl:include>`**-direktivet anger namnet på den formatmall som ska inkluderas i dokumentet.
+The **`<xsl:include>`** -direktivet anger namnet på den formatmall som ska inkluderas i dokumentet.
 
 **Exempel**: inklusive formatmallen&quot;common.xsl&quot;.
 
@@ -505,7 +505,7 @@ Med redigeringszonen kan du fylla i formatmallens innehåll:
 
 ![](assets/d_ncs_content_form14.png)
 
-Om du vill generera en förhandsgranskning av utdatadokumentet markerar du en innehållsinstans och formatet (HTML, Text, XML) och klickar sedan på **[!UICONTROL Generate]**:
+Om du vill generera en förhandsgranskning av utdatadokumentet markerar du en innehållsinstans och formatet (HTML, Text, XML) och klickar sedan på **[!UICONTROL Generate]** :
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -517,18 +517,18 @@ Om du vill generera en förhandsgranskning av utdatadokumentet markerar du en in
 
 ### Bildreferenser {#image-referencing}
 
-De bilder som anges i HTML-utdatadokumentet kan refereras med absoluta eller relativa referenser.
+De bilder som anges i utdatadokumentet för HTML kan refereras med absoluta eller relativa referenser.
 
-Med Relativ referens kan du ange URL:en för servern som innehåller bilderna i alternativen **NcmRessourcesDir** och **NcmRessourcesDirPreview**. Dessa alternativ innehåller platsen för bilder som ska publiceras och förhandsgranskas i Adobe Campaign klientkonsol.
+Med Relativ referens kan du ange webbadressen till servern som innehåller bilderna i **NcmRessourcesDir** och **NcmRessourcesDirPreview** alternativ. Dessa alternativ innehåller platsen för bilder som ska publiceras och förhandsgranskas i Adobe Campaign klientkonsol.
 
-De här två alternativen är tillgängliga via alternativhanteringsskärmen i mappen **[!UICONTROL Administration > Platform > Options]**.
+De här två alternativen är tillgängliga via alternativhanteringsskärmen i dialogrutan **[!UICONTROL Administration > Platform > Options]** mapp.
 
 **Exempel**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-Under formatmallsbearbetningen fylls attributet **_resPath** i XML-dokumentets huvudelement automatiskt i med ett eller flera av alternativen beroende på sammanhanget (förhandsgranskning eller publikation).
+Vid bearbetning av formatmallar **_resPath** -attributet på huvudelementet i XML-indatadokumentet fylls automatiskt i med ett eller flera av alternativen beroende på sammanhanget (förhandsgranskning eller publicering).
 
 Exempel på hur du använder bildplaceringsalternativet och dess användning med en bild:
 
@@ -562,27 +562,27 @@ I formuläret läggs fältet för att välja bilden till med följande syntax:
 
 >[!NOTE]
 >
->Mer information om **[!UICONTROL Public resources]** och hur du konfigurerar och använder dem finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Om du vill ha mer information **[!UICONTROL Public resources]** och hur du konfigurerar och använder dem, se [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Datumvisning {#date-display}
 
-I XML-indatadokumentet sparas datumen i ett internt XML-format: **ÅÅÅ/MM/DD HH:MM:SS** (exempel 2018/10/01 12:23:30).
+I XML-indatadokumentet sparas datumen i ett internt XML-format: **YYYY/MM/DD HH:MM:SS** (exempel 2018/10/01 12):23:30).
 
 Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar som beskrivs nedan.
 
 ### JavaScript-datumformatering {#javascript-date-formatting}
 
-För att visa ett datum i det önskade formatet tillhandahåller Adobe Campaign funktionen **formatDate** som tar innehållet från datumet som indata och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
+För att visa ett datum i det önskade formatet innehåller Adobe Campaign **formatDate** funktion som tar innehållet i datumet och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exempel:
 
-* Visa datumet i formatet **31/10/2018**:
+* Visa datumet i **31/10/2018** format:
 
    ```
     <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
    ```
 
-* Visa datumet i formatet **juli 2018**:
+* Visa datumet i **Juli 2018** format:
 
    ```
    <%
@@ -607,13 +607,13 @@ Det finns ingen standardfunktion för datumhantering i XSLT-syntax. För att vis
 
 Exempel:
 
-* Så här visar du datumet i formatet **01/10/2018**:
+* Visa datumet i **01/10/2018** format:
 
    ```
    <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
    ```
 
-* Så här visar du datumet i formatet **juli 2018**:
+* Visa datumet i **Juli 2018** format:
 
    ```
    <!-- Returns the month in the form of a string with the month number as input -->

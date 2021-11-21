@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Nedan följer några allmänna principer för användningen av datarotor i Adobe Campaign.
 
-Mer information om hur du skapar och konfigurerar datamodeller i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
+Mer information om hur du skapar och konfigurerar datascheman i Adobe Campaign finns i [det här avsnittet](../../configuration/using/about-schema-edition.md).
 
 ## Schemastruktur {#schema-structure}
 
-XML-dokumentet i ett dataschema måste innehålla rotelementet **`<srcschema>`** med attributen **name** och **namespace** för att fylla i schemanamnet och dess namnutrymme.
+XML-dokumentet i ett dataschema måste innehålla **`<srcschema>`** rotelementet med **name** och **namespace** attribut för att fylla i schemanamnet och dess namnutrymme.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,13 +39,13 @@ I ett innehållshanteringsschema representeras huvudelementet av följande rad:
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-Med attributet **template** som anges i huvudelementet kan du utöka schemat med generiska egenskaper till alla innehållsdefinitioner, som namn, skapandedatum, författare, associerad sträng osv.
+The **mall** Med attribut som anges i huvudelementet kan du utöka schemat med generiska egenskaper till alla innehållsdefinitioner som namn, skapandedatum, författare, associerad sträng osv.
 
-Dessa egenskaper beskrivs i schemat **ncm:content**.
+Dessa egenskaper beskrivs i **ncm:innehåll** schema.
 
 >[!NOTE]
 >
->Förekomsten av attributet **xmlChildren** indikerar att den datastruktur som anges via huvudelementet lagras i ett XML-dokument i innehållsinstansen.
+>Förekomsten av **xmlChildren** anger att den datastruktur som anges via huvudelementet lagras i ett XML-dokument i innehållsinstansen.
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Här är ett exempel på ett innehållshanteringsschema där typerna är ifyllda
 
 ## Egenskaper {#properties}
 
-Olika egenskaper kan användas för att berika elementen **`<element>`** och **`<attribute>`** i dataschemat.
+Olika egenskaper kan användas för att berika **`<element>`** och **`<attribute>`** elementen i dataschemat.
 
 De huvudegenskaper som används i innehållshantering är följande:
 
@@ -110,7 +110,7 @@ Här är vårt exempelschema med egenskaperna ifyllda:
 
 En samling är en lista med element med samma namn och samma hierarkiska nivå.
 
-I vårt exempel är elementen **`<chapter>`** och **`<page>`** samlingselement. Attributet **unbound** måste därför läggas till i definitionen av dessa element:
+I vårt exempel **`<chapter>`** och **`<page>`** -element är samlingselement. The **obunden** Attributet måste därför läggas till i definitionen av dessa element:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -122,15 +122,15 @@ I vårt exempel är elementen **`<chapter>`** och **`<page>`** samlingselement. 
 
 >[!NOTE]
 >
->Om det finns ett **ordered=&quot;true&quot;**-attribut kan du ordna de infogade samlingselementen.
+>Förekomsten av **ordered=&quot;true&quot;** kan du ordna de infogade samlingselementen.
 
 ## Elementreferens {#element-referencing}
 
-Elementreferenser används ofta i innehållsscheman. Det gör att du kan faktorisera definitionen av ett **`<element>`**-element så att det kan refereras till andra element med samma struktur.
+Elementreferenser används ofta i innehållsscheman. Det gör att du kan faktorisera definitionen av en **`<element>`** så att det kan refereras till andra element med samma struktur.
 
-Attributet **ref** för elementet som ska refereras måste fyllas med sökvägen (XPath) för referenselementet.
+The **ref** -attributet i det element som ska refereras måste fyllas med sökvägen (XPath) för referenselementet.
 
-**Exempel**: tillägg av ett  **** tillägg med samma struktur som  **`<chapter>`** elementet i vårt exempelschema.
+**Exempel**: tillägg av **Bilaga** -avsnitt med samma struktur som **`<chapter>`** element i vårt exempelschema.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -154,9 +154,9 @@ Kapitelstrukturen flyttas till elementet med namnet &quot;section&quot; utanför
 
 ## Databeräkningssträng {#compute-string}
 
-En **beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en innehållsinstans.
+A **Beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en innehållsinstans.
 
-Här är vårt exempelschema med dess **beräkningssträng**:
+Här är vårt exempelschema med dess **Beräkningssträng**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +177,4 @@ När källschemat sparas startas generering av utökade scheman automatiskt.
 
 >[!NOTE]
 >
->Med redigeringskontrollen **Namn** kan du ange schematangenten som består av namnet och namnutrymmet. Attributen **name** och **namespace** för schemarotelementet uppdateras automatiskt i schemats XML-redigeringsfält.
+>The **Namn** Med redigeringskontrollen kan du ange nyckeln för schemat, bestående av namnet och namnutrymmet. The **name** och **namespace** attribut för schemarotelementet uppdateras automatiskt i schemats XML-redigeringsfält.

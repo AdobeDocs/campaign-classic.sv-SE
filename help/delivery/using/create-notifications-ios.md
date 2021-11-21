@@ -5,8 +5,8 @@ description: Lär dig hur du skapar push-meddelanden för iOS
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande beskrivs i [det här avsnittet](steps-about-delivery-creation-steps.md).
+I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 Börja med att skapa en ny leverans.
 
@@ -25,23 +25,23 @@ Börja med att skapa en ny leverans.
 
 Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
-1. Välj leveransmallen **[!UICONTROL Deliver on iOS]**.
+1. Välj **[!UICONTROL Deliver on iOS]** leveransmall.
 
    ![](assets/nmac_delivery_ios_1.png)
 
-1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
+1. Om du vill definiera målet för meddelandet klickar du på knappen **[!UICONTROL To]** klicka på **[!UICONTROL Add]**.
 
    ![](assets/nmac_delivery_ios_2.png)
 
    >[!NOTE]
    >
-   >Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](steps-defining-the-target-population.md).
+   >Den detaljerade processen när målpopulationen för en leverans väljs presenteras i [det här avsnittet](steps-defining-the-target-population.md).
    >
    >Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
    >
-   >Mer information om att ta med en startvärdeslista finns i [Om startadresser](about-seed-addresses.md).
+   >Mer information om hur du tar med en lista med startvärden finns i [Om dirigeringsadresser](about-seed-addresses.md).
 
-1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan iOS-versionen av programmet.
+1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** väljer du den tjänst som är relevant för ditt mobilprogram (i det här fallet Neotrips) och väljer sedan iOS-versionen av programmet.
 
    ![](assets/nmac_delivery_ios_3.png)
 
@@ -51,11 +51,11 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >I läget **Tyst push** kan ett tyst meddelande skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
+   >The **Tyst push** I läget kan ett tyst meddelande skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
 
-1. I fältet **[!UICONTROL Title]** anger du etiketten för titeln som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet för parametern **title** för iOS-meddelandenyttolasten.
+1. I **[!UICONTROL Title]** anger du etiketten för den titel som du vill ska visas i meddelandet. Den visas bara i listan över meddelanden som är tillgängliga från meddelandecentret. I det här fältet kan du definiera värdet för **title** -parametern för iOS-meddelandenyttolasten.
 
-1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för parametern **subtitle** för iOS-meddelandenyttolasten). Se [det här avsnittet](configuring-the-mobile-application.md).
+1. Om du använder HTTP/2-kopplingen kan du lägga till en underrubrik (värdet för **underrubrik** -parameter för iOS-meddelandenyttolast). Se [det här avsnittet](configuring-the-mobile-application.md).
 
 1. Ange sedan **[!UICONTROL Message]** och **[!UICONTROL Value of the badge]** baserat på den valda meddelandetypen.
 
@@ -63,24 +63,24 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >**[!UICONTROL Badge]** och  **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
+   >**[!UICONTROL Badge]** och **[!UICONTROL Alert and badge]** typmeddelanden gör att du kan ändra värdet på märket (numret ovanför mobilprogrammets logotyp). Om du vill uppdatera märket behöver du bara ange 0 som värde. Om fältet är tomt ändras inte badge-värdet.
 
-1. Klicka på ikonen **[!UICONTROL Insert emoticon]** för att infoga uttryckssymboler i push-meddelandet. Mer information om hur du anpassar uttryckslistan finns i [det här avsnittet](customizing-emoticon-list.md)
+1. Klicka på **[!UICONTROL Insert emoticon]** om du vill infoga uttryckssymboler i ditt push-meddelande. Information om hur du anpassar uttryckslistan finns i [det här avsnittet](customizing-emoticon-list.md)
 
-1. Med **[!UICONTROL Action button]** kan du definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** fält för nyttolasten). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apple-dokumentationen](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1).
-1. I fältet **[!UICONTROL Play a sound]** väljer du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+1. The **[!UICONTROL Action button]** gör att du kan definiera en etikett för åtgärdsknappen som visas i varningsmeddelanden (**action_loc_key** nyttolastens fält). Om ditt iOS-program hanterar lokaliserbara strängar (**Localizable.strings**) anger du motsvarande nyckel i det här fältet. Om programmet inte hanterar lokaliserbar text anger du den etikett som du vill se på åtgärdsknappen. Mer information om översättningsbara strängar finns i [Apple-dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
+1. I **[!UICONTROL Play a sound]** markerar du det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
 
    >[!NOTE]
    >
    >Ljud måste inkluderas i programmet och definieras när tjänsten skapas. Se [det här avsnittet](configuring-the-mobile-application.md#configuring-external-account-ios).
 
-1. I fältet **[!UICONTROL Application variables]** anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+1. I **[!UICONTROL Application variables]** anger du värdet för varje variabel. Med programvariabler kan du definiera meddelandebeteende: Du kan till exempel konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
    >[!NOTE]
    >
    >Programvariabler måste definieras i koden för mobilprogrammet och anges när tjänster skapas. Mer information om detta finns i [det här avsnittet](configuring-the-mobile-application.md).
 
-1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
+1. När meddelandet har konfigurerats klickar du på **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
 
    ![](assets/nmac_intro_2.png)
 
@@ -101,7 +101,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
 ## Skapa ett iOS-meddelande {#creating-ios-delivery}
 
-I iOS 10 eller senare är det möjligt att generera omfattande meddelanden. Adobe Campaign kan skicka meddelanden med variabler som gör att enheten kan visa ett omfattande meddelande.
+Med iOS 10 eller senare är det möjligt att generera omfattande meddelanden. Adobe Campaign kan skicka meddelanden med variabler som gör att enheten kan visa ett omfattande meddelande.
 
 Nu måste du skapa en ny leverans och länka den till mobilappen som du har skapat.
 
@@ -111,16 +111,16 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
    ![](assets/nmac_android_3.png)
 
-1. Välj **[!UICONTROL Deliver on iOS (ios)]** i listrutan **[!UICONTROL Delivery template]**. Lägg till en **[!UICONTROL Label]** i leveransen.
+1. Välj **[!UICONTROL Deliver on iOS (ios)]** i **[!UICONTROL Delivery template]** nedrullningsbar meny. Lägg till en **[!UICONTROL Label]** till leveransen.
 
-1. Klicka på **[!UICONTROL To]** för att definiera målpopulationen. Som standard används målmappningen **[!UICONTROL Subscriber application]**. Klicka på **[!UICONTROL Add]** för att välja den tjänst som vi skapade tidigare.
+1. Klicka **[!UICONTROL To]** för att definiera målpopulationen. Som standard är **[!UICONTROL Subscriber application]** målmappning används. Klicka **[!UICONTROL Add]** om du vill välja en tjänst som vi skapat tidigare.
 
    ![](assets/nmac_ios_9.png)
 
-1. I fönstret **[!UICONTROL Target type]** väljer du **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** och klickar på **[!UICONTROL Next]**.
+1. I **[!UICONTROL Target type]** fönster, markera **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** och klicka **[!UICONTROL Next]**.
 
-1. I listrutan **[!UICONTROL Service]** väljer du den tjänst som du skapade tidigare, sedan det program som du vill ha som mål och klickar på **[!UICONTROL Finish]**.
-**[!UICONTROL Application variables]** läggs till automatiskt beroende på vad som lades till under konfigurationsstegen.
+1. I **[!UICONTROL Service]** väljer du en tjänst som du har skapat tidigare, det program du vill ha som mål och klickar på **[!UICONTROL Finish]**.
+The **[!UICONTROL Application variables]** läggs till automatiskt beroende på vad som lades till under konfigurationsstegen.
 
    ![](assets/nmac_ios_6.png)
 
@@ -128,9 +128,9 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
    ![](assets/nmac_ios_7.png)
 
-1. Markera rutan **[!UICONTROL Mutable content]** i fönstret för redigeringsmeddelanden om du vill att mobilprogrammet ska kunna hämta medieinnehåll.
+1. Kontrollera **[!UICONTROL Mutable content]** i fönstret för redigeringsmeddelanden så att mobilprogrammet kan hämta medieinnehåll.
 
-1. Klicka på **[!UICONTROL Save]** och skicka leveransen.
+1. Klicka **[!UICONTROL Save]** och skicka leveransen.
 
 Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumerantens mobila iOS-enheter.
 

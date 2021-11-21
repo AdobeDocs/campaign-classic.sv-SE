@@ -4,7 +4,8 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: e7d4331b-7149-4768-8e46-2e2911319074
+source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -23,7 +24,7 @@ Observera att prenumerationslänkar inte kan användas som andra länkar. Frekve
 
 **Påverkas du?**
 
-För att förbättra säkerheten introducerades signaturfunktionen för att spåra länkar i e-postmeddelanden i [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - april 2020 - och är aktiverad som standard för alla kunder med början Build 19.1.4 (9032@3a9dc9c) och Campaign 20.2.
+För att förbättra säkerheten har signaturfunktionen för att spåra länkar i e-postmeddelanden introducerats i [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - April 2020 - och är aktiverat som standard för alla kunder från och med Build 19.1.4 (9032@3a9dc9c) och Campaign 20.2.
 
 Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 
@@ -39,14 +40,14 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 **Hur uppdaterar jag?**
 
-Som **värdkund** arbetar Adobe tillsammans med dig för att uppdatera din konfiguration inom kort.
+Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppdatera din konfiguration inom kort.
 
-Som **lokal/hybrid-kund** måste du uppdatera din konfiguration.
+Som en **lokal/hybridkund** måste du uppdatera konfigurationen.
 
 Följ stegen nedan:
 
-1. I [serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md) (serverConf.xml) ändrar du **signEmailLinks** till **false**.
-1. Starta om tjänsten **nlserver**.
+1. I [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md) (serverConf.xml), ändra **signEmailLinks** till **false**.
+1. Starta om **nlserver** service.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
    ```
@@ -55,7 +56,7 @@ Följ stegen nedan:
 
 >[!NOTE]
 >
->Filen **config-`<instance>`.xml** åsidosätter inställningarna för **serverConf.xml**. Om **signEmailLinks** finns i **config-`<instance>`.xml** (där **instance** är namnet på din instans) måste den också vara **false**.
+>The **config-`<instance>`.xml** filen åsidosätter **serverConf.xml** inställningar. Om **signEmailLinks** finns i  **config-`<instance>`.xml** (där **instance** är namnet på din instans) måste den också ändras till **false**.
 
 **Vad ändras?**
 

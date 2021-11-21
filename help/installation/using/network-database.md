@@ -19,7 +19,7 @@ ht-degree: 9%
 
 ## Nätverkskonfiguration
 
-Det är viktigt att kontrollera när du distribuerar en lokal typ av arkitektur [nätverkskonfigurationen](../../installation/using/network-configuration.md). Kontrollera att Tomcat-servern INTE är direkt tillgänglig utanför servern:
+Det är mycket viktigt att kontrollera när man installerar en lokal typ av arkitektur [nätverkskonfiguration](../../installation/using/network-configuration.md). Kontrollera att Tomcat-servern INTE är direkt tillgänglig utanför servern:
 
 * Stäng Tomcat-porten (8080) på externa IP-adresser (måste fungera på localhost)
 * Mappa inte standardporten för HTTP (80) till Tomcat (8080)
@@ -50,7 +50,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-Du kan också använda ett [sslyze](https://github.com/nabla-c0d3/sslyze/releases)-python-skript som gör båda.
+Du kan också använda en [saslyst](https://github.com/nabla-c0d3/sslyze/releases) Python-skript som gör båda.
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

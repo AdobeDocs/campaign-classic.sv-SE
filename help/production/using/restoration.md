@@ -26,4 +26,4 @@ På en ren server är återställningsproceduren följande:
 * skapa och återskapa databasen,
 * starta Adobe Campaign.
 
-Mer information finns i **installationshandboken**.
+Mer information finns i **Installationshandbok**.

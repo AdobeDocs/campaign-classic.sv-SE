@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Använd alternativet Campaign [FDA (Federated Data Access](../../installation/using/about-fda.md)) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till SAP HANA.
+Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till SAP HANA.
 
 1. Konfigurera [SAP HANA-databas](#sap-config)
-1. Konfigurera det externa SAP HANA-kontot [i Campaign](#sap-external)
+1. Konfigurera SAP HANA [externt konto](#sap-external) i Campaign
 
 ## SAP HANA-drivrutiner {#sap-config}
 
@@ -28,8 +28,8 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
 
 1. Installera ODBC-drivrutinerna för SAP HANA enligt det operativsystem du använder:
 
-   * **hdb_client_linux.** tgzfor Linux. När du har packat upp en fil startar du kommandot hdbinst och följer instruktionerna för att slutföra installationen av drivrutinerna.
-   * **hdb_client_windows.** zipfor Windows. Zippa upp filen och starta den körbara filen: **hdbinst.exe**. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
+   * **hdb_client_linux.tgz** för Linux. När du har packat upp en fil startar du kommandot hdbinst och följer instruktionerna för att slutföra installationen av drivrutinerna.
+   * **hdb_client_windows.zip** för Windows. Zippa upp filen och starta den körbara filen: **hdbinst.exe**. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
 
 1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: /etc/odbc.ini för allmänna parametrar och /etc/odbcinst.ini för att deklarera drivrutiner.
 
@@ -45,7 +45,7 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
       User:SYSTEM
       ```
 
-      &quot;InstallDir&quot; motsvarar platsen för filen **odbcinst.ini**.
+      &quot;InstallDir&quot; motsvarar platsen för **odbcinst.ini** -fil.
 
    * **/etc/odbcinst.ini**
 
@@ -64,11 +64,11 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
 
 Med det externa SAP HANA-kontot kan du ansluta Campaign-instansen till din externa SAP HANA-databas.
 
-1. Klicka på **[!UICONTROL Administration]** **[!UICONTROL Platform]** **[!UICONTROL External accounts]**  i Campaign **[!UICONTROL Explorer]**.
+1. Från kampanj **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
+1. Klicka **[!UICONTROL New]** och markera **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. Om du vill konfigurera det externa kontot **[!UICONTROL SAP Hana]** måste du ange:
+1. Så här konfigurerar du **[!UICONTROL SAP Hana]** externt konto måste du ange:
 
    * **[!UICONTROL Type]**: SAP Hana
 

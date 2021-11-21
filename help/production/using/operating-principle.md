@@ -23,17 +23,17 @@ Det finns många Adobe Campaign-moduler. Vissa arbetar kontinuerligt medan andra
 
 Det finns tre typer av Adobe Campaign-moduler:
 
-* Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **web**, **syslogd**, **trackinglogd** och **watchdog** (aktiviteter från filen **config-default.xml**).
-* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från **config-`<instance>`.xml**-filen ).
-* Verktygsmoduler: Detta är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensning**, **config**, hämtningsloggar osv.).
+* Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **webb**, **syslogd**, **trackinglogd** och **övervakningsenhet** (aktiviteter från **config-default.xml** fil).
+* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från **config-`<instance>`.xml** fil).
+* Verktygsmoduler: är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensa**, **config**, hämtar spårningsloggar osv.).
 
-Moduladministration utförs med kommandoradsverktyget **nlserver** som är installerat i katalogen **bin** i installationsmappen.
+Moduladministration utförs med kommandoradsverktyget **nlserver** installeras i **bin** installationsmappens katalog.
 
-Den allmänna syntaxen för **nlserver**-verktyget är följande:
+Den allmänna syntaxen för **nlserver** är följande:
 
-**nlserver  `<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
-Använd kommandot **nlserver** om du vill se en lista över tillgängliga moduler.
+I listan över tillgängliga moduler använder du **nlserver** -kommando.
 
 De tillgängliga modulerna beskrivs i följande tabell:
 

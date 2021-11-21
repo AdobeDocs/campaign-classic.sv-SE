@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ## Utforska Adobe Campaign gränssnitt {#about-adobe-campaign-interface}
 
-När du är ansluten till databasen kommer du till Adobe Campaign hemsida, som är en kontrollpanel: den består av länkar och genvägar som gör att du kan komma åt funktioner, beroende på installation och allmänna plattformskonfigurationer.
+När du är ansluten till databasen kommer du åt Adobe Campaign hemsida, som är en kontrollpanel: den består av länkar och genvägar som gör att du kan komma åt funktioner, beroende på installation och allmänna plattformskonfigurationer.
 
 Från den centrala delen av startsidan kan du använda länkar för att få åtkomst till webbdokumentationsportalen för Campaign, forumet och supportwebbplatsen.
 
@@ -63,7 +63,7 @@ Du kan välja mellan fem olika språk:
 
 Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information om detta hittar du i det här [avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-Mer information om hur du skapar en instans finns på den här [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
+Mer information om hur du skapar en instans finns i [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -79,15 +79,15 @@ Plattformens olika funktioner är uppdelade i kärnfunktioner: använd länkarna
 
 Listan över kärnfunktioner som du kan komma åt beror på vilka paket och tillägg du har installerat och på din åtkomstbehörighet.
 
-Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Länken **[!UICONTROL Profiles and targets]** leder dig till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
+Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Till exempel **[!UICONTROL Profiles and targets]** -länken ger dig tillgång till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
 
-Listorna är tillgängliga via länken **[!UICONTROL Lists]** i den vänstra delen av gränssnittet **[!UICONTROL Profiles and Targets]**.
+Listorna är tillgängliga via **[!UICONTROL Lists]** i den vänstra delen av **[!UICONTROL Profiles and Targets]** gränssnitt.
 
 ![](assets/recipient_list_overview.png)
 
 ### Använd tabbar {#using-tabs}
 
-* När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på knappen **[!UICONTROL Back]** i verktygsfältet. Klicka på knappen **[!UICONTROL Home]** om du vill gå tillbaka till startsidan.
+* När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på **[!UICONTROL Back]** i verktygsfältet. Om du vill gå tillbaka till startsidan klickar du på **[!UICONTROL Home]** -knappen.
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -97,11 +97,11 @@ Listorna är tillgängliga via länken **[!UICONTROL Lists]** i den vänstra del
 
 ### Skapa ett element {#creating-an-element}
 
-I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i avsnittet **[!UICONTROL Browsing]** för att göra detta. Med länken **[!UICONTROL Other choices]** kan du komma åt alla andra sidor, oavsett miljö.
+I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i dialogrutan **[!UICONTROL Browsing]** -avsnitt. The **[!UICONTROL Other choices]** kan du komma åt alla andra sidor, oavsett miljö.
 
-Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i **[!UICONTROL Create]**-avsnittet till vänster på skärmen. Använd knappen **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
+Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i **[!UICONTROL Create]** till vänster på skärmen. Använd **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
 
-Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att skapa en ny leverans.
+På leveranssidan kan du till exempel använda **[!UICONTROL Create]** för att skapa en ny leverans.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -145,19 +145,19 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 
 ### Lägga till värden i en uppräkning {#add-values-in-an-enumeration}
 
-Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** för en mottagarprofil kan du till exempel ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
+Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I **[!UICONTROL City]** fält för **[!UICONTROL General]** för en mottagarprofil kan du ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
-Om du klickar på **[!UICONTROL Yes]** är det här värdet tillgängligt i kombinationsrutan för det relevanta fältet (i det här fallet: **[!UICONTROL London]**).
+Om du klickar **[!UICONTROL Yes]** kommer detta värde att vara tillgängligt i kombinationsrutan för det relevanta fältet (i detta fall: **[!UICONTROL London]**).
 
 >[!NOTE]
 >
->Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]**-avsnittet. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
+>Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]** -avsnitt. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
 
 ### Standardenheter {#default-units}
 
-I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista datum för godkännande av en uppgift osv.) kan värdet uttryckas i följande **enheter**:
+I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista ansökningsdag för en uppgift osv.) kan värdet uttryckas i följande **enheter**:
 
 * **[!UICONTROL s]** i sekunder,
 * **[!UICONTROL mn]** i minuter,
@@ -172,4 +172,4 @@ I den här videon visas arbetsytan i Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

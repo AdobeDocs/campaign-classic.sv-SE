@@ -35,11 +35,11 @@ Ingen
 
 ## Beskrivning {#description-13}
 
-Det här elementet definierar en grupp med `<parameter>`-element.
+Det här elementet definierar en grupp med `<parameter>`  -element.
 
 ## Användning och användningssammanhang {#use-and-context-of-use-8}
 
-Det här elementet är obligatoriskt, även för ett enskilt `<param>`-underordnat element till `<method>`-elementet.
+Detta element är obligatoriskt, även för en `<param>` underordnat element för `<method>`  -element.
 
 ## Attributbeskrivning {#attribute-description-13}
 

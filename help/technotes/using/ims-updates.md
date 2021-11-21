@@ -14,19 +14,19 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-Den 30 juni 2021 har ändringar gjorts i inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
+Den 30 juni 2021 har ändringar gjorts i [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) Inloggningsfunktioner som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
 
 ## Vad har ändrats?
 
-Adobe Identity Management-tjänsten (IMS) slutade stödja tidigare Internet Explorer-versioner den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management-tjänsten (IMS) har slutat stödja tidigare Internet Explorer-versioner på **30 juni 2021**. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe vill bevara IMS-funktionaliteten för alla kunder sedan 30 juni 2021. IMS är en del av säkerhetsramverket som gör att användare kan logga in på klientkonsolen, alltså Adobe Campaign.
 
-För att bevara den här funktionen måste kunderna uppdatera klientkonsolen på varje användares dator och se till att den senaste uppdateringen av din [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd, är installerad på varje användares dator.
+För att bevara den här funktionen måste kunderna uppdatera klientkonsolen på varje användares dator och se till att den senaste uppdateringen av din [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
 
 ## Påverkas du?
 
-Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md) via Adobe Identity Management Service (IMS) och kör en äldre version av Campaign än de som listas nedan påverkas du.
+Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md), via Adobe Identity Management Service (IMS) och om du kör en äldre version av Campaign än de som listas nedan påverkas du.
 
 Om du redan har uppgraderat men använder en äldre version av Microsoft Internet Explorer måste du uppgradera till Internet Explorer 11.
 
@@ -34,7 +34,7 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
 
 * Som värdkund uppgraderade Adobe redan dina instanser till den nyare versionen.
 
-* Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna ovan för att kunna utnyttja den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
+* Som en lokal/hybridkund måste du uppgradera till en av de nyare versionerna ovan för att kunna dra nytta av den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
 
    Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
@@ -45,9 +45,9 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
    * Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--19-2.md)
    * Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
 
-   Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter den 30 juni 2021 **.**
+   Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter **30 juni 2021**.
 
-Dessutom måste den senaste uppdateringen av [Windows-versionen](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd, vara installerad på varje användares dator.
+Dessutom bör du se till att den senaste uppdateringen av [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
 
 ## Vanliga frågor och svar 
 
@@ -60,7 +60,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 Om du vill kontrollera anslutningsläget kan du:
 
-* Starta Campaign Client Console och få tillgång till dina instansanslutningsinställningar. Om alternativet **Anslut med en Adobe ID** är markerat använder du Adobe IMS.
+* Starta Campaign Client Console och få tillgång till dina instansanslutningsinställningar. Om **Anslut till en Adobe ID** om du väljer det här alternativet används Adobe IMS.
 
    ![](../../integrations/using/assets/ims_1.png)
 

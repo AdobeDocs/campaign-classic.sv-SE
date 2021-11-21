@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >:warning: Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../social/using/about-social-marketing.md)
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social Marketing**.
+Arbetsflödena nedan installeras tillsammans med **Social marknadsföring** som standard.
 
 <table> 
  <tbody> 
@@ -33,17 +33,17 @@ Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social 
   <tr> 
    <td> <span class="uicontrol">Beräkning av Facebook-statistik</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
-   <td> Det här arbetsflödet beräknar statistik som är länkad till interaktioner med Facebook fans.<br /> </td> 
+   <td> Det här arbetsflödet beräknar statistik som är kopplad till interaktioner med Facebook fans.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Synkroniserar Facebook-fans</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
-   <td> Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 07.00.<br /> </td> 
+   <td> Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Synkronisera Facebook-sidor</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
-   <td> Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 07.00.<br /> </td> 
+   <td> Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Beräkning av Twitter-statistik</span> <br /> </td> 
@@ -53,7 +53,7 @@ Arbetsflödena som beskrivs nedan installeras som standard med modulen **Social 
   <tr> 
    <td> <span class="uicontrol">Synkronisera Twitter-sidor</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> Det här arbetsflödet importerar Twitter följare till Adobe Campaign varje dag kl. 07.00.<br /> </td> 
+   <td> Det här arbetsflödet importerar Twitter följare till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

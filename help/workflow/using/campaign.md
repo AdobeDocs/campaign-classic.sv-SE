@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Arbetsflödena som anges nedan installeras som standard med modulen **Campaign**. Mer information om den här modulen finns i [avsnittet](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena nedan installeras tillsammans med **Campaign** som standard. Mer information om den här modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
@@ -48,7 +48,7 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Campaign**
   <tr> 
    <td> <span class="uicontrol">Kampanjjobb</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> Det här arbetsflödet hanterar jobben för marknadsföringskampanjer (lanserar målinriktning, filextrahering osv.). Det skapar också arbetsflöden som är relaterade till återkommande och periodiska kampanjer.<br /> </td> 
+   <td> Det här arbetsflödet hanterar jobben för marknadsföringskampanjer (lanserar målinriktning, filextrahering osv.). Det skapar också arbetsflöden för återkommande och periodiska kampanjer.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Jobb för tjänsteleverantörer</span> <br /> </td> 

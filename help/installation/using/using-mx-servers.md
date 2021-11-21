@@ -34,7 +34,7 @@ När du skickar ett e-postmeddelande upprättar programservern en anslutning til
 
 I anslutningsprotokollet måste regler iakttas för att förhindra spamning och monopolering av servrar. De viktigaste är följande:
 
-* **Högsta antal tillåtna** anslutningar: När det här numret respekteras finns IP-adresser inte på blockeringslista och e-post nekas inte på grund av extra anslutningar.
+* **Högsta antal tillåtna anslutningar**: När det här numret respekteras finns IP-adresser inte på blockeringslista och e-post nekas inte på grund av extra anslutningar.
 * **Maximalt antal meddelanden**: Under anslutningen måste antalet meddelanden som får skickas definieras. Om det här numret inte är definierat skickas så många som möjligt av servern. Detta leder till att Internet-leverantören identifierar den som en skräppost och lägger till den i blockeringslista.
 * **Meddelanden per timme**: För att matcha ditt rykte kommer Adobe Campaign att kontrollera antalet e-postmeddelanden som IP-adresser kan skicka per timme. Det här systemet kommer att skydda dig mot e-postavslag eller/och blockeringslista.
 
@@ -48,7 +48,7 @@ Det är den process som Adobe Campaign använder för att bearbeta fel under ser
 
 Feladressen bearbetar studsar som skickas tillbaka av Internet-leverantörer. Processen analyserar olika SMTP-felkoder och tillämpar rätt åtgärd enligt RegEx-standarden.
 
-En e-postadress har t.ex. en feedback om &quot;550 User Unknown&quot; som skickas av en Internet-leverantör. Felkoden behandlas av Adobe Campaign feladress (retursökvägsadress). Detta fel jämförs sedan med RegEx-standarden och rätt regel gäller. E-postmeddelandet betraktas som ett *Hårt studsande* (som matchar typen) och sedan *Okänd användare* (som matchar orsaken) och skickas i karantän efter den första slingan till systemet.
+En e-postadress har t.ex. en feedback om &quot;550 User Unknown&quot; som skickas av en Internet-leverantör. Felkoden behandlas av Adobe Campaign feladress (retursökvägsadress). Detta fel jämförs sedan med RegEx-standarden och rätt regel gäller. E-postmeddelandet betraktas som *Hård studs* (matcha typen) och sedan *Okänd användare* (matcha orsaken) och placerade i karantän efter den första slingan i systemet.
 
 ### Hur hanterar Adobe Campaign det?
 
@@ -62,7 +62,7 @@ Adobe Campaign hanterar den här processen med en matchning mellan en feltyp och
 
 >[!NOTE]
 >
->Mer information om leveransfel och orsaker finns i [avsnittet](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Mer information om leveransfel och orsaker finns i [section](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Leveransinstans
 
@@ -78,12 +78,12 @@ Det anpassade läget är till för avancerade klienter som vill ange sina egna M
 
 ## Studsa exempel
 
-* **Okänd**  användare (hård studs): 550 5.1.1 ... Användaren är okänd {mx003}
-* **Postlådan är full**  (mjuk studsa): 550 5.2.2 Användarkvoten har överskridits
-* **Inaktiv postlåda**  (mjuk studsa): 550 5.7.1: Mottagaradressen avvisades: Inaktiv MailBox, inte öppnad på mer än 6 månader
-* **Domänen är ogiltig**  (mjuk studs): DNS-frågan misslyckades för ourdan.com
-* **Avvisad**  (mjuk studs): Studsa inkommande e-post (regeln Feedback_loop_Hotmail har matchat detta studs)
-* **Onåbar**  (mjuk studsa): 421 4.16.55  [TS01] Meddelanden från x.x.x.x som tillfälligt skjutits upp på grund av alltför många klagomål från användare
+* **Okänd användare** (hård studs): 550 5.1.1 ... Användaren är okänd {mx003}
+* **Postlådan är full** (mjuk studs): 550 5.2.2 Användarkvoten har överskridits
+* **Inaktiv postlåda** (mjuk studs): 550 5.7.1: Mottagaradressen avvisades: Inaktiv MailBox, inte öppnad på mer än 6 månader
+* **Domänen är ogiltig** (mjuk studs): DNS-frågan misslyckades för ourdan.com
+* **Avvisad** (mjuk studs): Studsa inkommande e-post (regeln Feedback_loop_Hotmail har matchat detta studs)
+* **Onåbar** (mjuk studs): 421 4.16.55 [TS01] Meddelanden från x.x.x.x som tillfälligt skjutits upp på grund av för många användarklagomål
 
 **Relaterade ämnen:**
 * [MX-konfiguration](../../installation/using/email-deliverability.md#mx-configuration)

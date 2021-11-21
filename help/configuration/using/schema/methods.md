@@ -35,7 +35,7 @@ method
 
 ## Beskrivning {#description-11}
 
-Med det här elementet kan du definiera ett `<method>`-element. Det är obligatoriskt för deklaration av en metod.
+Med det här elementet kan du definiera en `<method>`  -element. Det är obligatoriskt för deklaration av en metod.
 
 ## Attributbeskrivning {#attribute-description-11}
 

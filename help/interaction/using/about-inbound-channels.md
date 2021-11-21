@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Erbjudandena kan presenteras på olika erbjudandeplatser via en ingående eller utgående kanal. I det här kapitlet beskrivs några specifika funktioner för inkommande kanaler.
 
-![](assets/do-not-localize/how-to-video.png) Du kan också titta på den här  [](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) videon som visar hur du kan leverera ett erbjudande via en inkommande kanal.
+![](assets/do-not-localize/how-to-video.png) Du kan också titta på det här [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) som beskriver hur man kan leverera ett erbjudande via en inkommande kanal.
 
 För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det godkännas och vara tillgängligt i en live-miljö Mer information finns i [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
 
@@ -31,4 +31,4 @@ Innan du kan presentera erbjudanden på en inkommande kanal måste du konfigurer
 >
 >För inkommande interaktioner måste du särskilt konfigurera erbjudandemotorn så att den kan presentera och uppdatera ett eller flera erbjudanden.
 >
->Du måste också aktivera enhetsläge på dina erbjudanden. Mer information finns i avsnittet [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
+>Du måste också aktivera enhetsläge på dina erbjudanden. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md) -avsnitt.

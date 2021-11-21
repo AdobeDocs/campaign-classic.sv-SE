@@ -23,12 +23,12 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Det finns två möjliga fall:
 
 * Välj en fil och bifoga den till leveransen som den är.
-* Anpassa innehållet i den bifogade filen för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras om du har alternativet **Variabel digital utskrift**.
+* Anpassa innehållet i den bifogade filen för varje mottagare. I det här fallet måste du skapa en **beräknad bilaga**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också personaliseras och konverteras till PDF-format vid leveransen om du har **Variabel digital utskrift** alternativ.
 
 >[!NOTE]
 >
@@ -44,15 +44,15 @@ Följ stegen nedan för att bifoga en lokal fil till en leverans.
 
 1. Klicka på länken **[!UICONTROL Attachments]**.
 1. Klicka på knappen **[!UICONTROL Add]**.
-1. Klicka på **[!UICONTROL File...]** för att välja filen som ska bifogas till leveransen.
+1. Klicka **[!UICONTROL File...]** för att välja den fil som ska bifogas leveransen.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-Du kan också dra och släppa filen direkt i leveransfältet **[!UICONTROL Attachments]** eller använda ikonen **[!UICONTROL Attach]** från leveransguideverktygsfältet,
+Du kan också dra och släppa filen direkt i leveransen **[!UICONTROL Attachments]** eller använd **[!UICONTROL Attach]** ikon från leveransguideverktygsfältet,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-När filen är markerad överförs den direkt till servern för att vara tillgänglig vid leveransen. Den visas i fältet **[!UICONTROL Attachments]**.
+När filen är markerad överförs den direkt till servern för att vara tillgänglig vid leveransen. Den listas i **[!UICONTROL Attachments]** fält.
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -65,8 +65,8 @@ När du skapar en beräknad bilaga kan namnet på den bifogade filen beräknas u
 Så här skapar du en personlig bifogad fil:
 
 1. Klicka på länken **[!UICONTROL Attachments]**.
-1. Klicka på knappen **[!UICONTROL Add]** och välj sedan **[!UICONTROL Calculated attachment]**.
-1. Välj beräkningstyp i listrutan **[!UICONTROL Type]**:
+1. Klicka på **[!UICONTROL Add]** knapp, markera **[!UICONTROL Calculated attachment]**.
+1. Välj typ av beräkning på menyn **[!UICONTROL Type]** nedrullningsbar lista:
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
 
@@ -81,12 +81,12 @@ Följande alternativ är tillgängliga:
 
 Om den bifogade filen är en lokal fil väljer du alternativet: **[!UICONTROL File name is specified when creating the delivery template]**. Filen markeras lokalt och överförs till servern. Följ stegen nedan:
 
-1. Markera filen som ska överföras i fältet **[!UICONTROL Local file]**.
+1. Markera filen som ska överföras i **[!UICONTROL Local file]** fält.
 1. Ange etiketten om det behövs. Etiketten ersätter filnamnet när den visas i meddelandesystem. Om inget anges används filnamnet som standard.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
-1. Om det behövs väljer du **[!UICONTROL Upload file on the server]** och klickar sedan på **[!UICONTROL Update on server]** för att starta överföringen.
+1. Välj vid behov **[!UICONTROL Upload file on the server]** och klicka sedan på **[!UICONTROL Update on server]** för att starta överföringen.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
@@ -94,7 +94,7 @@ Filen är sedan tillgänglig på servern för att bifogas till de olika leverans
 
 ### Bifoga ett personligt meddelande {#attach-a-personalized-message}
 
-Med alternativet **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kan du välja en fil med anpassningsfält, till exempel efternamnet och förnamnet för den avsedda mottagaren.
+Alternativet **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** Med kan du markera en fil med anpassningsfält, t.ex. efternamnet och förnamnet för den avsedda mottagaren.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -109,17 +109,17 @@ Använd följande konfigurationssteg för den här typen av bifogad fil:
 
 1. Analysera leveransen och starta den sedan.
 
-   Varje mottagare får en skräddarsydd PDF som bifogas leveransen.
+   Varje mottagare får en personlig PDF som är kopplad till leveransen.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
 >[!NOTE]
 >
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du inkluderar bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Bifoga en beräknad fil {#attach-a-calculated-file}
 
-Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. Om du vill göra det väljer du alternativet **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. Välj alternativet **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ När du markerar den bifogade filen kan du välja alternativet **[!UICONTROL The
 
 ### Inställningar för bifogade filer {#attachment-settings}
 
-För de första två alternativen kan du välja **[!UICONTROL Upload file on the server]** genom att välja lämpligt alternativ. Med länken **[!UICONTROL Update the file on the server]** kan du börja överföra.
+För de första två alternativen kan du välja **[!UICONTROL Upload file on the server]** genom att välja lämpligt alternativ. The **[!UICONTROL Update the file on the server]** kan du börja ladda upp via länk.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -177,9 +177,9 @@ Ett varningsmeddelande visas för en ändring av filen:
 
 ![](assets/s_ncs_user_wizard_email01_1372.png)
 
-På fliken **[!UICONTROL Advanced]** kan du definiera avancerade alternativ för bifogade filer:
+The **[!UICONTROL Advanced]** kan du definiera avancerade alternativ för bifogade filer:
 
-* Du kan definiera filteralternativ för att undvika att skicka den bifogade filen till alla mottagare. Alternativet **[!UICONTROL Enable filtering of recipients who will receive the attachment]** aktiverar ett inmatningsfält som används för att definiera ett mottagarurvalsskript, som måste anges i JavaScript.
+* Du kan definiera filteralternativ för att undvika att skicka den bifogade filen till alla mottagare. Alternativet **[!UICONTROL Enable filtering of recipients who will receive the attachment]** aktiverar ett indatafält som används för att definiera ett skript för mottagarval, som måste anges i JavaScript.
 * Du kan skripta namnet på filen för att anpassa den.
 
    Ange texten i fönstret och använd de anpassningsfält som finns i listrutan. I följande exempel anpassas filnamnet så att det innehåller dagens datum och namnet på mottagaren.

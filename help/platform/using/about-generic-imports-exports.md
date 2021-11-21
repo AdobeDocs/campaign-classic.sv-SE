@@ -21,11 +21,11 @@ Adobe Campaign Classic erbjuder allmän import och export. De gör att du till e
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-Allmän import och export hanteras från noden **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** i Adobe Campaign-trädet.
+Allmän import och export hanteras från **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** noden i Adobe Campaign-trädet.
 
 Så här utför du allmänna import- och exportåtgärder:
 
-1. [Skapa en import- eller exportmall](../../platform/using/creating-import-export-templates.md)  (valfritt).
+1. [Skapa en import- eller exportmall](../../platform/using/creating-import-export-templates.md) (valfritt).
 1. [Skapa ett import- eller exportjobb](../../platform/using/creating-import-export-jobs.md).
-1. Konfigurera och kör jobbet [import](../../platform/using/executing-import-jobs.md) eller [export](../../platform/using/executing-export-jobs.md).
-1. [Övervaka ](../../platform/using/monitoring-jobs-execution.md) körningen av jobbet.
+1. Konfigurera och kör [import](../../platform/using/executing-import-jobs.md) eller [export](../../platform/using/executing-export-jobs.md) jobb.
+1. [Bildskärm](../../platform/using/monitoring-jobs-execution.md) körningen av jobbet.

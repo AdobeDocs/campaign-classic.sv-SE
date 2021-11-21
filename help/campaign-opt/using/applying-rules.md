@@ -42,7 +42,7 @@ Om du vill tillämpa de typologiregler du har skapat måste du koppla den till e
 
 ## Definiera programvillkor {#defining-application-conditions}
 
-Du kan begränsa programfältet för en regel efter behov (förutom kontrollregler).
+Du kan begränsa programfältet för en regel efter dina behov (förutom kontrollregler).
 
 Det är möjligt att konfigurera typologiregler så att de endast gäller vissa leveranser som de är kopplade till, eller vissa mottagare bland målet för en leverans.
 
@@ -81,7 +81,7 @@ I standarddriftsläget används reglerna i följande sekvens:
 
    * Interna ansökningsregler för adresskvalifikation: angiven adress/overifierad adress/adress på blockeringslista/i karantän-adress/adresskvalitet.
    * Filtreringsregler som definieras av användaren.
-   * Regel för borttagning av dubbletter för adressen eller identifieraren (används om det behövs).
+   * Dedupliceringsregel för adressen eller identifieraren (används om det behövs).
 
 1. Tryckregler.
 1. Kapacitetsregler.

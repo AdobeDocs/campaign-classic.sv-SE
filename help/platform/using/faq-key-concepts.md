@@ -112,7 +112,7 @@ Läs mer om spårningshantering i Campaign på [den här sidan](https://helpx.ad
 
 ## Vad är bästa praxis för säkerhet (lokalt)? {#what-are-security-best-practices--on-premise--}
 
-Läs [checklistan för säkerhetskonfiguration](https://helpx.adobe.com/se/campaign/kb/acc-security.html) för att hitta de viktigaste elementen att kolla för säkerhetskonfigurationen och åtkomsten till lokala driftsättningar.
+Läs [checklistan för säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv) för att hitta de viktigaste elementen att kolla för säkerhetskonfigurationen och åtkomsten till lokala driftsättningar.
 
 ## Hur översätter jag ett felmeddelande? {#how-to-translate-an-error-message-}
 

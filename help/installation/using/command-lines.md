@@ -27,9 +27,9 @@ Det går att skapa instanser med kommandorader, med syntaxen:
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(där **eng** och **fra** är möjliga värden för parametern `[lang]`)
+(där **eng** och **fra** är möjliga värden för `[lang]` parameter)
 
-Med kommandot **nlserver config -addinstance:instance1/demo*/eng** kan du skapa en instans med namnet **instance1** på engelska med DNS-maskdemo*.
+Kommandot **nlserver config -addinstance:instance1/demo*/eng** gör att du kan skapa en instans med namnet **instance1** på engelska med DNS-maskdemo*.
 
 ## Deklarera en databas {#declaring-a-database}
 
@@ -39,14 +39,14 @@ Du kan associera en befintlig databas med en instans från kommandoraden med fö
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-Följande värden är möjliga för parametern **`[rdbms]`**:
+Följande värden är möjliga för **`[rdbms]`** parameter:
 
 * **postgresql**: för PostgreSQL,
 * **oracle**: för Oracle,
 * **mssql**: för Microsoft SQL Server,
 * **DB2**: för DB2-motorn.
 
-Följande kommando konfigurerar **demo**-instansen med SQL-typservern **base6**, som är länkad till **kampanjkontot** och dess **lösenord** på **dbsrv**-servern:
+Följande kommando konfigurerar **demo** instans med SQL-typservern känd som **base6**, länkad till **kampanj** konto och dess **lösenord** på **dbsrv** server:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

@@ -21,10 +21,10 @@ Det här avsnittet innehåller felsökningsprocedurer som rör Adobe Campaign al
 
 ## Vanliga och allmänna problem {#common-and-general-issues}
 
-* På den här [sidan](../../production/using/modules-and-frequent-issues.md) visas de vanligaste problemen som uppstått för modulerna i listan.
-* På den här [sidan](../../production/using/workflow-execution.md) visas vanliga felsökningsprocedurer som du bör följa vid problem med arbetsflödeskörning.
-* Den här [sidan](../../production/using/lost-password.md) innehåller information om hur du ändrar eller återställer ett förlorat lösenord.
-* Den här [sidan](../../production/using/console-update.md) innehåller information om hur du återaktiverar begäran om konsoluppdatering om du har inaktiverat motsvarande alternativ.
+* Detta [page](../../production/using/modules-and-frequent-issues.md) visar de vanligaste problemen som uppstått för de listade modulerna.
+* Detta [page](../../production/using/workflow-execution.md) visar vanliga felsökningsprocedurer som du bör följa när du stöter på problem med arbetsflödeskörning.
+* Detta [page](../../production/using/lost-password.md) information om hur du ändrar eller återställer ett förlorat lösenord.
+* Detta [page](../../production/using/console-update.md) innehåller information om hur du återaktiverar begäran om konsoluppdatering om du har inaktiverat motsvarande alternativ.
 
 ## Leveransfelsökning {#delivery-troubleshooting}
 
@@ -32,7 +32,7 @@ Specifika åtgärder kan utföras vid problem med leveranser:
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Bildvisningsproblem](../../production/using/image-display-issues.md)
 * [Bild saknas](../../production/using/images-missing.md)
-* [Temporära filproblem](../../production/using/temporary-files.md)  (endast *lokala* värdmodeller)
+* [Temporära filproblem](../../production/using/temporary-files.md) (*endast lokala värdmodeller*)
 
 **Relaterat ämne**:
 

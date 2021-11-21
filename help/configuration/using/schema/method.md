@@ -54,12 +54,12 @@ SOAP-metoder möjliggör programprocesser.
 
 ## Attributbeskrivning {#attribute-description-10}
 
-* **access (string)**: det här attributet definierar åtkomstkontroll för metoden. Om attributet saknas är identifiering obligatorisk. Tillgängliga värden är: &#39;anonymous&#39;, &#39;admin&#39; och &#39;sql&#39;.
+* **åtkomst (sträng)**: det här attributet definierar åtkomstkontroll för metoden. Om attributet saknas är identifiering obligatorisk. Tillgängliga värden är: &#39;anonymous&#39;, &#39;admin&#39; och &#39;sql&#39;.
 * **const (boolean)**: om det är aktiverat betyder det här attributet att den deklarerade metoden ändrar entiteten
 * **label (string)**: metodens etikett.
 * **bibliotek (sträng)**: den här metoden är inte inbyggd i programmet. Det här attributet tar värdet för det metodbibliotek där metoddefinitionen finns (nms:mylibrary.js).
 * **name (MNTOKEN)**: unikt metodnamn.
-* **statisk (boolesk)**: Om det här attributet aktiveras betraktas metoden som självständig, och alla parametrar måste anges för metoden när den anropas.
+* **static (boolesk)**: Om det här attributet aktiveras betraktas metoden som självständig, och alla parametrar måste anges för metoden när den anropas.
 
 ## Exempel {#examples-7}
 

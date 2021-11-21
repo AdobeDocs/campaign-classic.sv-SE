@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-I det här avsnittet beskrivs den ytterligare konfiguration som krävs vid migrering från v5.11. Du bör även konfigurera inställningarna som anges i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md).
+I det här avsnittet beskrivs den ytterligare konfiguration som krävs vid migrering från v5.11. Du bör även konfigurera inställningarna som anges i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
 
 ## Webbapplikationer {#web-applications}
 
@@ -29,7 +29,7 @@ The webApp ids have been modified during the migration process. Please make sure
 
 Vissa komponenter i webbprogram, till exempel de olika formelfälten, har @id-attribut. De används i XML-koden för webbprogram och genereras inte längre på samma sätt. De är inte synliga i gränssnittet och du får normalt inte använda dem. I vissa fall kan @id-attribut ha använts för att anpassa återgivningen av webbprogram, till exempel via en formatmall eller JavaScript-kod.
 
-Under migreringen måste du **kontrollera loggfilens sökväg som anges i varningen:**
+Under migreringen kan du **måste** Kontrollera loggfilens sökväg som anges i varningen:
 
 * **Filen är inte tom**: Den innehåller varningar som rör inkonsekvenser som registrerats före migreringen och som fortfarande finns. Detta kan vara JavaScript-kod i ett webbprogram som refererar till ett ID som inte finns. Varje fel måste kontrolleras och korrigeras.
 * **Filen är tom**: detta innebär att Adobe Campaign inte har upptäckt några problem.
@@ -38,7 +38,7 @@ Oavsett om filen är tom eller inte måste du kontrollera att dessa ID:n inte an
 
 ## Arbetsflöden {#workflows}
 
-Eftersom namnet på Adobe Campaign installationskatalog har ändrats kanske vissa arbetsflöden inte fungerar efter migreringen. Om ett arbetsflöde refererar till katalogen nl5 i någon av dess aktiviteter genereras ett fel. Ersätt den här referensen med **build**. Du kan köra en SQL-fråga för att identifiera dessa arbetsflöden (PostgreSQL-exempel):
+Eftersom namnet på Adobe Campaign installationskatalog har ändrats kanske vissa arbetsflöden inte fungerar efter migreringen. Om ett arbetsflöde refererar till katalogen nl5 i någon av dess aktiviteter genereras ett fel. Ersätt den här referensen med **bygga**. Du kan köra en SQL-fråga för att identifiera dessa arbetsflöden (PostgreSQL-exempel):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -66,19 +66,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Mer information finns på sidan [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html).
+>Mer information finns i [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) sida.
 
-Om databasstrukturen har ändrats, t.ex. under konfiguration (skapa specifika index, skapa SQL-vyer osv.), bör vissa försiktighetsåtgärder vidtas vid migrering. Vissa ändringar kan ha sin grund i inkompatibilitet med migreringsförfarandet. Att skapa SQL-vyer som innehåller **Tidsstämpel**-fält är till exempel inte kompatibelt med alternativet **usetimestamptz**. Vi rekommenderar därför att du följer rekommendationerna nedan:
+Om databasstrukturen har ändrats, t.ex. under konfiguration (skapa specifika index, skapa SQL-vyer osv.), bör vissa försiktighetsåtgärder vidtas vid migrering. Vissa ändringar kan ha sin grund i inkompatibilitet med migreringsförfarandet. Skapa t.ex. SQL-vyer som innehåller **Tidsstämpel** fälten är inte kompatibla med **usetimestamptz** alternativ. Vi rekommenderar därför att du följer rekommendationerna nedan:
 
 1. Innan du startar migreringen bör du säkerhetskopiera databasen.
 1. Ta bort SQL-ändringar.
-1. Utför efteruppgraderingen enligt proceduren som beskrivs i avsnittet [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
+1. Utför efteruppgraderingen enligt proceduren som beskrivs i  [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) -avsnitt.
    >[!NOTE]
    >
-   >Du måste följa de migreringssteg som beskrivs i avsnittet [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
+   >Du måste följa migreringsstegen i [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) -avsnitt.
 1. Återintegrera SQL-ändringar.
 
-I det här exemplet har en **NmcTrackingLogMessages**-vy skapats och har ett **Tidsstämpel**-fält med namnet **tslog**. I det här fallet misslyckas migreringsproceduren och följande felmeddelande visas:
+I det här exemplet **NmcTrackingLogMessages** vyn har skapats och har en **Tidsstämpel** fält namngivet **tslog**. I det här fallet misslyckas migreringsproceduren och följande felmeddelande visas:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ För att vara säker på att efteruppgraderingen fungerar måste du ta bort vyn 
 
 ## Spåra {#tracking}
 
-Spårningsformeln har ändrats. När du migrerar ersätts den gamla formeln (v5) med den nya (v7). Om du använder en anpassad formel i Adobe Campaign v5 måste den här konfigurationen anpassas i Adobe Campaign v7 (**NmsTracking_ClickFormula** och **NmsTracking_OpenFormula**-alternativ).
+Spårningsformeln har ändrats. När du migrerar ersätts den gamla formeln (v5) med den nya (v7). Om du använder en anpassad formel i Adobe Campaign v5 måste den här konfigurationen anpassas i Adobe Campaign v7 (**NmsTracking_ClickFormula** och **NmsTracking_OpenFormula** alternativ).
 
 Hanteringen av webbspårning har också ändrats. När migreringen till v7 har slutförts måste du starta distributionsguiden för att slutföra konfigurationen av webbspårningen.
 
@@ -98,9 +98,9 @@ Hanteringen av webbspårning har också ändrats. När migreringen till v7 har s
 
 Tre olika lägen finns tillgängliga:
 
-* **Sessionswebbspårning**: Om  **[!UICONTROL Leads]** paketet inte har installerats är det här alternativet valt som standard. Det här alternativet är det mest idealiska när det gäller prestanda och du kan begränsa spårningsloggarnas storlek.
+* **Sessionswebbspårning**: Om **[!UICONTROL Leads]** paketet har inte installerats. Det här alternativet är markerat som standard. Det här alternativet är det mest idealiska när det gäller prestanda och du kan begränsa spårningsloggarnas storlek.
 * **Permanent webbspårning**
-* **Anonym webbspårning**: Om  **[!UICONTROL Leads]** paketet är installerat är det här alternativet markerat som standard. Det är det mest resurskrävande alternativet. Som ovan måste kolumnen **sSourceId** indexeras (i spårningstabellen och tabellen **CrmIncomingLead**).
+* **Anonym webbspårning**: Om **[!UICONTROL Leads]** paketet är installerat. Det här alternativet är markerat som standard. Det är det mest resurskrävande alternativet. Som ovan **sSourceId** -kolumnen måste vara indexerad (i spårningstabellen och **CrmIncomingLead** tabell).
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Tre olika lägen finns tillgängliga:
 
 Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen, och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
 
-Ett alternativ har lagts till för att inaktivera automatisk migrering av navigeringsträdet. Den här åtgärden är nu manuell. Föråldrade mappar tas inte bort och nya mappar läggs inte till. Det här alternativet bör endast användas om det färdiga v5-navigeringsträdet har genomgått för många ändringar. Lägg till alternativet i konsolen innan du migrerar i noden **[!UICONTROL Administration > Options]**:
+Ett alternativ har lagts till för att inaktivera automatisk migrering av navigeringsträdet. Den här åtgärden är nu manuell. Föråldrade mappar tas inte bort och nya mappar läggs inte till. Det här alternativet bör endast användas om det färdiga v5-navigeringsträdet har genomgått för många ändringar. Lägg till alternativet i konsolen, innan du migrerar, i **[!UICONTROL Administration > Options]** nod:
 
 * Internt namn: NlMigration_KeepFolderStructure
 * Datatyp: Heltal

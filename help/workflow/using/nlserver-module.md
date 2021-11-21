@@ -17,6 +17,6 @@ ht-degree: 27%
 
 ![](../../assets/common.svg)
 
-En **nlserver-modul**-aktivitet startar en nlserver-modul med de parametrar som anges i det centrala fönstret.
+An **nlserver-modul** startar en servermodul med de parametrar som anges i det centrala fönstret.
 
 ![](assets/nlserver_module_edit.png)

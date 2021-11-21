@@ -23,9 +23,9 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 
 >[!AVAILABILITY]
 >
->* Hjälpmaterialen i den här samlingen gäller för Campaign Classic v7 i den [senaste versionen](../../rn/using/latest-release.md). Ett specifikt märke finns när ett avsnitt också gäller Campaign v8.
+>* Hjälpmaterialen i den här samlingen gäller för Campaign Classic v7 i dess [senaste versionen](../../rn/using/latest-release.md). Ett specifikt märke finns när ett avsnitt också gäller Campaign v8.
 >
->* Adobe Campaign v8-dokumentation finns [här](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html).
+>* Adobe Campaign v8-dokumentation finns tillgänglig [här](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=sv).
 
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
@@ -96,4 +96,4 @@ I den här videon visas huvudfunktionerna och funktionerna för Campaign Classic
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

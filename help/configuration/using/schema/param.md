@@ -47,12 +47,12 @@ Med det här elementet kan du definiera en parameter för att anropa en SOAP-met
 
 ## Attributbeskrivning {#attribute-description-12}
 
-* **desc (sträng)**: beskrivning som rör  `<param>` elementet.
+* **desc (sträng)**: beskrivning som gäller `<param>` -element.
 * **inout (sträng)**: det här attributet definierar om parametern finns vid indata (in) eller utdata (ut) för SOAP-anropet eller inte. Om det här attributet inte anges används standardparametern (&quot;@inout=in&quot;).
-* **label (string)**:  `<param>` label
-* **localizable (string)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
-* **name (MNTOKEN)**: internt namn på  `<param>`
-* **type (string)**: this-attributet definierar typen av  `<param>` element
+* **label (string)**: `<param>` label
+* **localizable (sträng)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
+* **name (MNTOKEN)**: internt namn på `<param>`
+* **type (sträng)**: this-attributet definierar typen av `<param>` element
 
    Lista över tillgängliga typer:
 

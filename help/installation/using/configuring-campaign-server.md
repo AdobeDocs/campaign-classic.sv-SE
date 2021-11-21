@@ -21,9 +21,9 @@ I det här kapitlet beskrivs serverkonfigurationer som kan utföras för att pas
 
 ## Begränsningar
 
-Dessa procedurer är begränsade till **lokala**/**hybriddistributioner** och kräver administrationsbehörigheter.
+Dessa förfaranden är begränsade till **lokal**/**hybrid** distribuerar och kräver administrationsbehörigheter.
 
-För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), till exempel IP tillåtelselista management eller URL permissions. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+För **värdbaserad** -distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i  [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), till exempel hantering av IP-tillåtelselista eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Mer information finns i följande avsnitt:
 
@@ -33,25 +33,25 @@ Mer information finns i följande avsnitt:
 
 ## Konfigurationsfiler
 
-Konfigurationsfilerna för Campaign Classic lagras i mappen **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
+Konfigurationsfiler för Campaign Classic lagras i **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
 
-* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna som listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (där  **** instansen är instansens namn): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
+* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna listas i detta [section](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** (där **instance** är namnet på instansen): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
 
 ## Konfigurationsomfattning
 
 Konfigurera eller anpassa Campaign-servern beroende på dina behov och din konfiguration. Du kan:
 
-* Skydda den interna identifieraren [a1/>](#internal-identifier)
+* Skydda [Intern identifierare](#internal-identifier)
 * Aktivera [Kampanjprocesser](#enabling-processes)
 * Konfigurera [URL-behörigheter](url-permissions.md)
-* Definiera [säkerhetszoner](security-zones.md)
+* Definiera [Säkerhetszoner](security-zones.md)
 * Konfigurera [Tomcat-inställningar](configure-tomcat.md)
 * Anpassa [Leveransparametrar](configure-delivery-settings.md)
-* Definiera [dynamisk sidsäkerhet och reläer](#dynamic-page-security-and-relays)
-* Begränsa listan med [tillåtna externa kommandon](#restricting-authorized-external-commands)
-* Ställ in [Spårning av överflödiga ](#redundant-tracking)
-* Hantera [Hög tillgänglighet och arbetsflödestillhörigheter](#high-availability-workflows-and-affinities)
+* Definiera [Dynamisk sidsäkerhet och vidarebefordran](#dynamic-page-security-and-relays)
+* Begränsa listan med [Tillåtna externa kommandon](#restricting-authorized-external-commands)
+* Konfigurera [Spårning av överflödiga](#redundant-tracking)
+* Hantera [Hög tillgänglighet och arbetsflöden](#high-availability-workflows-and-affinities)
 * Konfigurera filhantering - [Läs mer](file-res-management.md)
    * Begränsa filformat för överföring
    * Ge åtkomst till offentliga resurser
@@ -61,7 +61,7 @@ Konfigurera eller anpassa Campaign-servern beroende på dina behov och din konfi
 
 ## Intern identifierare {#internal-identifier}
 
-Identifieraren **internal** är en teknisk inloggning som ska användas för installation, administration och underhåll. Inloggningen är inte kopplad till någon instans.
+The **internal** identifierare är en teknisk inloggning som ska användas för installation, administration och underhåll. Inloggningen är inte kopplad till någon instans.
 
 Operatörer som är anslutna med den här inloggningen har alla rättigheter för alla instanser. Den här inloggningen har inget lösenord vid en ny installation. Du måste definiera det här lösenordet manuellt.
 
@@ -85,15 +85,15 @@ Confirmation: XXXX
 
 ## Möjliggör processer {#enabling-processes}
 
-Adobe Campaign-processer på servern aktiveras (och inaktiveras) via filerna **config-default.xml** och **`config-<instance>.xml`**.
+Adobe Campaign-processer på servern aktiveras (och inaktiveras) via **config-default.xml** och **`config-<instance>.xml`** filer.
 
-Om du vill tillämpa ändringarna på de här filerna måste du köra kommandot **nlserver config -reload** om Adobe Campaign-tjänsten startas.
+Om du vill tillämpa ändringarna på de här filerna måste du köra **nlserver config -reload** -kommando.
 
 Det finns två typer av processer: flera instanser och en instans.
 
-* **flera instanser**: en enda process startas för alla instanser. Detta gäller för **web**, **syslogd** och **trackinglogd**-processer.
+* **flera instanser**: en enda process startas för alla instanser. Detta är fallet för **webb**, **syslogd** och **trackinglogd** -processer.
 
-   Aktivering kan konfigureras från filen **config-default.xml**.
+   Aktivering kan konfigureras från **config-default.xml** -fil.
 
    Deklarera en Adobe Campaign-server för åtkomst till klientkonsoler och för omdirigering (spårning):
 
@@ -104,9 +104,9 @@ Det finns två typer av processer: flera instanser och en instans.
    <trackinglogd autoStart="true"/>
    ```
 
-   I det här exemplet redigeras filen med ett **vi**-kommando i Linux. Den kan redigeras med en **.txt** eller **.xml**-redigerare.
+   I det här exemplet redigeras filen med en **vi** i Linux. Den kan redigeras med valfritt **.txt** eller **.xml** redigerare.
 
-* **mono-instance**: en process startas för varje instans (moduler:  **mta**,  **wfserver**,  **inMail**,  **** smand  **stat**).
+* **mono-instance**: en process startas för varje instans (moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat**).
 
    Aktivering kan konfigureras med hjälp av instansens konfigurationsfil:
 
@@ -125,26 +125,26 @@ Det finns två typer av processer: flera instanser och en instans.
 
 **Kampanjdatalagring**
 
-Du kan konfigurera lagringskatalogen (**var** katalog) för Adobe Campaign-data (loggar, hämtningar, omdirigeringar osv.). Det gör du genom att använda systemvariabeln **XTK_VAR_DIR**:
+Du kan konfigurera lagringskatalogen (**var** katalog) med Adobe Campaign-data (loggar, nedladdningar, omdirigeringar etc.). Om du vill göra det använder du **XTK_VAR_DIR** systemvariabel:
 
-* I Windows anger du följande värde i systemvariabeln **XTK_VAR_DIR**
+* I Windows anger du följande värde i **XTK_VAR_DIR** systemvariabel
 
    ```
    D:\log\AdobeCampaign
    ```
 
-* I Linux går du till filen **customer.sh** och anger: **exportera XTK_VAR_DIR=/app/log/AdobeCampaign**.
+* I Linux går du till **customer.sh** och ange: **exportera XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamisk sidsäkerhet och vidarebefordran {#dynamic-page-security-and-relays}
 
-Som standard är alla dynamiska sidor automatiskt relaterade till den lokala **Tomcat-servern på den dator vars webbmodul har startats.** Den här konfigurationen anges i avsnittet **`<url>`** i frågereläkonfigurationen för filen **ServerConf.xml**.
+Som standard är alla dynamiska sidor automatiskt relaterade till **lokal** Tomcat-servern för datorn vars webbmodul har startats. Den här konfigurationen anges i **`<url>`** -avsnittet i frågereläkonfigurationen för **ServerConf.xml** -fil.
 
-Du kan vidarebefordra körningen av den dynamiska sidan på en **fjärr**-server; om webbmodulen inte är aktiverad på datorn. För att göra detta måste du ersätta **localhost** med namnet på fjärrdatorn för JSP och JSSP, webbprogram, rapporter och strängar.
+Du kan vidarebefordra körningen av den dynamiska sidan på en **fjärr** server, om webbmodulen inte är aktiverad på datorn. Om du vill göra det måste du ersätta **localhost** med namnet på fjärrdatorn för JSP och JSSP, webbprogram, rapporter och strängar.
 
-Mer information om de olika tillgängliga parametrarna finns i konfigurationsfilen **serverConf.xml**.
+Mer information om de olika parametrarna finns i **serverConf.xml** konfigurationsfil.
 
 För JSP-sidor är standardkonfigurationen:
 
@@ -166,7 +166,7 @@ De JSSP som används för Mobile App Channel är följande:
 
 **Exempel:**
 
-Det går att förhindra klientdatoranslutningar från utsidan. Det gör du genom att begränsa körningen av **soaprouter.jsp** och bara tillåta körning av spegelsidor, virala länkar, webbformulär och offentliga resurser.
+Det går att förhindra klientdatoranslutningar från utsidan. Det gör du genom att begränsa körningen av **soaprouter.jsp** och endast tillåta exekvering av spegelsidor, virala länkar, webbformulär och offentliga resurser.
 
 Parametrarna är följande:
 
@@ -184,7 +184,7 @@ Parametrarna är följande:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-I det här exemplet sammanfaller **`<IP_addresses>`**-värdet med listan över IP-adresser (avgränsade med kommatecken) som har behörighet att använda relämodulen för den här masken.
+I det här exemplet **`<IP_addresses>`** värdet sammanfaller med listan över IP-adresser (avgränsade med kommatecken) som är behöriga att använda relämodulen för den här masken.
 
 >[!NOTE]
 >
@@ -194,12 +194,12 @@ I det här exemplet sammanfaller **`<IP_addresses>`**-värdet med listan över I
 
 Som standard skickas inga HTTP-huvuden vidare. Du kan lägga till specifika rubriker i svar som skickas via relä. Så här gör du:
 
-1. Gå till filen **serverConf.xml**.
-1. I noden **`<relay>`** går du till listan med vidarebefordrade HTTP-rubriker.
-1. Lägg till ett **`<responseheader>`**-element med följande attribut:
+1. Gå till **serverConf.xml** -fil.
+1. I **`<relay>`** går du till listan med vidarebefordrade HTTP-rubriker.
+1. Lägg till en **`<responseheader>`** element med följande attribut:
 
-   * **namn**: rubriknamn
-   * **värde**: värdenamn.
+   * **name**: rubriknamn
+   * **value**: värdenamn.
 
    Exempel:
 
@@ -230,9 +230,9 @@ sh
 >
 >Denna lista är inte uttömmande.
 
-I noden **exec** i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i attributet **svartlistFile**.
+I **exec** noden i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i **svartlistFile** -attribut.
 
-**Endast** för Linux: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som är dedikerad till att köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i noden **exec** i konfigurationsfilen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+**Endast för Linux**: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som är dedikerad till att köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i **exec** konfigurationsfilens nod. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ När flera servrar används för omdirigering måste de kunna kommunicera med va
 >
 >När du använder standardarkitekturen eller företagsarkitekturen måste huvudprogramservern ha behörighet att överföra spårningsinformation på varje dator.
 
-URL:erna för de redundanta servrarna måste anges i omdirigeringskonfigurationen via filen **serverConf.xml**.
+De redundanta servrarnas URL måste anges i omdirigeringskonfigurationen via **serverConf.xml** -fil.
 
 **Exempel:**
 
@@ -270,7 +270,7 @@ URL:erna för de redundanta servrarna måste anges i omdirigeringskonfiguratione
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-Egenskapen **enableIf** är valfri (tom som standard) och du kan bara aktivera anslutningen om resultatet är sant. På så sätt kan du få en identisk konfiguration på alla omdirigeringsservrar.
+The **enableIf** -egenskapen är valfri (tom som standard) och gör att du bara kan aktivera anslutningen om resultatet är sant. På så sätt kan du få en identisk konfiguration på alla omdirigeringsservrar.
 
 Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**.
 
@@ -280,13 +280,13 @@ Om du vill hämta datorns värdnamn kör du följande kommando: **värdnamn -s**
 
 Du kan konfigurera flera arbetsflödesservrar (wfserver) och distribuera dem på två eller flera datorer. Om du väljer den här typen av arkitektur konfigurerar du anslutningsläget för belastningsutjämnarna enligt Adobe Campaign-åtkomsten.
 
-Om du vill få åtkomst från webben väljer du **belastningsutjämnarläget** för att begränsa anslutningstiderna.
+Om du vill få åtkomst från webben väljer du **belastningsutjämnare** läge för att begränsa anslutningstider.
 
-Om du öppnar via Adobe Campaign-konsolen väljer du **hash** eller **sticky ip**-läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
+Om du öppnar via Adobe Campaign Console väljer du **hash** eller **klibbig ip** läge. Detta gör att du kan upprätthålla anslutningen mellan klienten och servern och förhindra att en användarsession avbryts under en import- eller exportåtgärd, till exempel.
 
 Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflödesaktivitet på en viss dator. För att kunna göra detta måste du definiera en eller flera tillhörigheter för arbetsflödet eller aktiviteten.
 
-1. Skapa tillhörigheterna för arbetsflödet eller aktiviteten genom att ange dem i fältet **[!UICONTROL Affinity]**.
+1. Skapa arbetsflödets eller aktivitetens tillhörighet genom att ange dem i **[!UICONTROL Affinity]** fält.
 
    Du kan välja vilket tillhörighetsnamn som helst, men se till att du inte använder blanksteg eller skiljetecken. Om du använder olika servrar anger du olika namn.
 
@@ -296,8 +296,8 @@ Du kan välja att framtvinga körningen av ett arbetsflöde eller en arbetsflöd
 
    Listrutan innehåller tillhörigheter som tidigare använts. Den slutförs över tiden med de olika angivna värdena.
 
-1. Öppna filen **nl6/conf/config-`<instance>.xml`**.
-1. Ändra raden som matchar modulen **[!UICONTROL wfserver]** enligt följande:
+1. Öppna **nl6/conf/config-`<instance>.xml`** -fil.
+1. Ändra raden som matchar **[!UICONTROL wfserver]** modul enligt följande:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -323,9 +323,9 @@ Som standard startas de olika Adobe Campaign-processerna om automatiskt kl. 6.00
 
 Du kan dock ändra den här konfigurationen.
 
-Det gör du genom att gå till filen **serverConf.xml** som finns i **conf**-databasen för din installation.
+För att göra det går du till **serverConf.xml** -filen som finns i **conf** databas för din installation.
 
-Varje process som konfigureras i den här filen har ett **processRestartTime**-attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
+Varje process som konfigureras i den här filen har en **processRestartTime** -attribut. Du kan ändra värdet för det här attributet för att anpassa starttiden för varje process efter dina behov.
 
 >[!IMPORTANT]
 >

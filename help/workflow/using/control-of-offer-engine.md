@@ -17,7 +17,7 @@ ht-degree: 26%
 
 ![](../../assets/common.svg)
 
-Arbetsflödet som beskrivs nedan installeras som standard med **kontrollen av erbjudandemotorn med körningsinstansen**-modulen.
+Arbetsflödet som beskrivs nedan installeras med **Kontroll över erbjudandemotorn med körningsinstans** som standard.
 
 <table> 
  <tbody> 

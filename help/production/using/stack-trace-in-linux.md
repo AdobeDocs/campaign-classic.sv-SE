@@ -17,17 +17,17 @@ ht-degree: 11%
 
 ![](../../assets/v7-only.svg)
 
-En **stackspårning** representerar en spårning som finns i en **core**-typfil. Den här filen genereras om ett datorfel inträffar. Den kan identifiera felets ursprung.
+A **stackspårning** representerar en spårning i en **kärna** typfil. Den här filen genereras om ett datorfel inträffar. Den kan identifiera felets ursprung.
 
 >[!NOTE]
 >
->* En **core**-fil heter **core.`<num>`**.
->* **gdb - GNU-** felsökaren måste vara installerad på datorn.
+>* A **kärna** filen har ett namn **kärna.`<num>`**.
+>* **gdb - GNU-felsökning** måste vara installerat på datorn.
 
 >
 
 
-Adobe Campaign tekniska support kan be dig om denna **stackspårning**. Hämta den genom att ange följande kommandon i Linux:
+Adobe Campaign tekniska support kan be dig om detta **stackspårning**. Hämta den genom att ange följande kommandon i Linux:
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign tekniska support kan be dig köra det här kommandot med en specifik körbar fil (som vi ska tillhandahålla).
 
-I det här fallet kör du följande kommando genom att ersätta **nlserver** med den körbara filen från Adobe Campaign:
+I det här fallet kör du bara följande kommando genom att ersätta **nlserver** med den körbara filen från Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>

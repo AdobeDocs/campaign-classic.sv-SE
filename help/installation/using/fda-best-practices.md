@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ## Optimera e-postpersonalisering med externa data {#optimizing-email-personalization-with-external-data}
 
-Du kan förbearbeta meddelandepersonalisering i ett dedikerat arbetsflöde. Om du vill göra det använder du alternativet **[!UICONTROL Prepare the personalization data with a workflow]**, som finns på fliken **[!UICONTROL Analysis]** i leveransegenskaperna.
+Du kan förbearbeta meddelandepersonalisering i ett dedikerat arbetsflöde. Om du vill göra det använder du **[!UICONTROL Prepare the personalization data with a workflow]** alternativ, finns i **[!UICONTROL Analysis]** -fliken för leveransegenskaperna.
 
 Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i en extern databas.
 
@@ -29,13 +29,13 @@ Det här alternativet förbättrar prestanda avsevärt när personaliseringssteg
 
 I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras i en extern databas.
 
-* **Filtrera på externa data**  - Med  [](../../workflow/using/targeting-data.md#selecting-data) frågeaktiviteten kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns på [den här sidan](../../workflow/using/targeting-data.md#selecting-data).
+* **Filtrera på externa data** - [Fråga](../../workflow/using/targeting-data.md#selecting-data) Med -aktivitet kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns på [den här sidan](../../workflow/using/targeting-data.md#selecting-data).
 
-* **Skapa delmängder**  - Med  [](../../workflow/using/split.md) Delningsaktiviteten kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Mer information finns på [den här sidan](../../workflow/using/split.md).
+* **Skapa underuppsättningar** - [Dela](../../workflow/using/split.md) kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Mer information finns på [den här sidan](../../workflow/using/split.md).
 
-* **Läs in extern databas**  - Du kan använda externa data i aktiviteten  [Datainläsning](../../workflow/using/data-loading--rdbms-.md)  (RDBMS). Läs mer i [den här sidan](../../workflow/using/data-loading--rdbms-.md).
+* **Läs in extern databas** - Du kan använda externa data i [Datainläsning](../../workflow/using/data-loading--rdbms-.md) (RDBMS) aktivitet. Läs mer i [den här sidan](../../workflow/using/data-loading--rdbms-.md).
 
-* **Lägga till information och länkar**  - Med  [](../../workflow/using/enrichment.md) aktiviteten Berika kan du lägga till ytterligare data i arbetsflödet och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Läs mer i [den här sidan](../../workflow/using/enrichment.md).
+* **Lägga till information och länkar** - [Berikning](../../workflow/using/enrichment.md) Med -aktivitet kan du lägga till ytterligare data i arbetsflödet och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Läs mer i [den här sidan](../../workflow/using/enrichment.md).
 
 ## FDA-begränsningar {#limitations}
 

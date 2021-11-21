@@ -2,14 +2,15 @@
 product: campaign
 title: Rekommendationer för maskinvarustorlek för Campaign Classic v7
 description: Rekommendationer för maskinvarustorlek för Campaign Classic v7
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
+source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Rekommendationer för maskinvarustorlek{#hardware-sizing-reco}
+# Rekommendationer på maskinvarustorlek{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +18,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Den här artikeln finns endast som en allmän exempelguide. Ni måste kontakta Adobe Campaign Customer Success Manager för att mäta den exakta storleken på er driftsättning innan ni påbörjar ert Campaign-projekt. **Gör** inga anspråk på eller driftsätt någon infrastruktur eller maskinvara tills detta är klart.
+>Den här artikeln finns endast som en allmän exempelguide. Ni måste kontakta Adobe Campaign Customer Success Manager för att mäta den exakta storleken på er driftsättning innan ni påbörjar ert Campaign-projekt. **Gör inte** förvärva eller driftsätta infrastruktur eller maskinvara tills detta är klart.
 
-Det här dokumentet innehåller allmänna rekommendationer för Adobe Campaign Classic v7-distribution på ditt lokala datacenter eller i en virtualiserad molnmiljö. Den här typen av distribution, som kallas **hybrid** eller **mellanlagring**, placerar Campaign-marknadsföringsinstansen och marknadsföringsdatabasen under din operativa kontroll, medan Adobe Cloud Messaging-tjänster används för att skicka e-postmeddelanden, SMS- eller SMPP-meddelanden och för att samla in e-postmeddelanden som är öppna, studsa och klicka på spårningsdata.
+Det här dokumentet innehåller allmänna rekommendationer för Adobe Campaign Classic v7-distribution på ditt lokala datacenter eller i en virtualiserad molnmiljö. Den här typen av distribution, kallas **hybrid** eller **medelleverantörer**, placerar Campaign-marknadsföringsinstansen och marknadsföringsdatabasen under din operativa kontroll, samtidigt som du använder meddelandetjänster i Adobe Cloud för att skicka e-postmeddelanden, SMS eller SMPP och samlar in e-postmeddelanden som är öppna, studsar och klickar på spårningsdata.
 
 Marknadsföringsinstansen är den del av Adobe Campaign-arkitekturen som driver all marknadsföringsaktivitet och lagrar alla mottagardata och analysdata som returneras av kampanjer. Marknadsinstansen är en uppsättning lokala servrar som kör Adobe Campaign-tjänster och en relationsdatabas.
 
@@ -27,16 +28,16 @@ Marknadsföringsinstansen är den del av Adobe Campaign-arkitekturen som driver 
 >
 >Informationen i det här dokumentet gäller inte om du använder en Adobe Campaign-instans som är helt värd (distribuerad i Adobe-Cloud Services).
 
-Programvarukompatibilitet anges i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
+Programkompatibiliteten beskrivs i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
 
 ### Scenarier
 
 Distributionsdiagram och rekommendationer för maskinvarustorlek finns för tre representativa scenarier:
 
-1. [Måttlig storlek](#scenario-1)  - 5 miljoner aktiva mottagare i systemet
-1. [Storlek](#scenario-2)  - 20 miljoner aktiva mottagare i systemet
-1. [Företag](#scenario-3)  - 50 miljoner aktiva mottagare med transaktionsmeddelanden
+1. [Måttlig storlek](#scenario-1) - 5 miljoner aktiva mottagare i systemet
+1. [Stor storlek](#scenario-2) - 20 miljoner aktiva mottagare i systemet
+1. [Enterprise](#scenario-3) - 50 miljoner aktiva mottagare med transaktionsmeddelanden
 
 ### Antaganden
 
@@ -57,9 +58,9 @@ Programservrarna i din marknadsinstans kräver tillräckligt med processor och m
 
 Kampanjwebbprogram kan också distribueras på marknadsinstansens appservrar eller på separata webbserversystem. Eftersom arbetsbelastningar för webbapplikationer är i konflikt med kritiska arbetsflöden och Campaign Console-användare, kan webbapplikationer och inkommande interaktioner distribueras till separata servrar för att säkerställa att de centrala Campaign-funktionerna fungerar tillförlitligt med bra prestanda.
 
-För säkerhets- och tillgänglighetens skull rekommenderar Adobe att trafiken på Internet separeras från den trafik som genereras av företagsanvändarna. Av den anledningen innehåller diagrammen två grupper med servrar: webbservern (Internet-inriktad mot Web1 och Web2) och programservrarna (affärsprocesserna App1 och App2).
+För säkerhets- och tillgänglighetens skull rekommenderar Adobe att trafiken på Internet skiljs från den trafik som genereras av företagsanvändarna. Av den anledningen innehåller diagrammen två grupper med servrar: webbservern (Internet-inriktad mot Web1 och Web2) och programservrarna (affärsprocesserna App1 och App2).
 
-Det är ett juridiskt krav att e-postavsändare som är kommersiellt ska ha en funktionell avanmälningswebbsida. Adobe rekommenderar att det finns en redundant dator i varje gruppserver för redundansväxling. Det gäller särskilt om Adobe Campaign är värd för avanmälningssidorna.
+Det är ett juridiskt krav att e-postavsändare som är kommersiellt ska ha en fungerande avanmälningswebbsida. Adobe rekommenderar att det finns en redundant dator i varje gruppserver för redundansväxling. Det gäller särskilt om Adobe Campaign är värd för avanmälningssidorna.
 
 ### Invertera proxy
 
@@ -148,7 +149,7 @@ Programservrarna har direkt stöd för Campaign Console-användare och körning 
 
 Webbservrarna är värdar för Campaign-webbprogram som stöder de 10 miljoner aktiva mottagarna i systemet.
 
-Se [Scenario 1: Distribuering i måttlig storlek](#scenario-1) om du vill ha fler kommentarer om proxies, inställningar/prenumerationshantering och användning av diskutrymme.
+Se [Scenario 1: Distribuering i medelstor storlek](#scenario-1) om du vill ha fler kommentarer om proxies, inställningscenter/prenumerationshantering och användning av diskutrymme.
 
 ### Databas
 
@@ -176,7 +177,7 @@ Beräknad volym:
 | Högsta dagliga e-postvolym | 2,5 miljoner |
 
 
-Distributionen med stöd för 50 miljoner mottagare är i stort sett densamma som i [scenario 2](#scenario-2): Kampanjens webbapplikationstrafik dirigeras till webbservrar för Campaign, så webbtrafiken efter lanseringen av stora kampanjer påverkar inte arbetsflödena för Campaign och användarna av klientkonsolen.
+Driftsättningen med stöd för 50 miljoner mottagare är i stort sett densamma som i [Scenario 2](#scenario-2): Kampanjens webbapplikationstrafik dirigeras till webbservrar för Campaign, så webbtrafiken efter lanseringen av stora kampanjer påverkar inte arbetsflödena för Campaign och användarna av klientkonsolen.
 
 Den här distributionen innehåller även Message Center-samtal som drivs av dina egna webbplatser och applikationer.
 
@@ -196,7 +197,7 @@ Programservrarna har direkt stöd för Campaign Console-användare och körning 
 
 Webbservrarna är värdar för Campaign-webbprogram som stöder de 10 miljoner aktiva mottagarna i systemet.
 
-Se [Scenario 1: Distribuering i måttlig storlek](#scenario-1) om du vill ha fler kommentarer om proxies, inställningar/prenumerationshantering och användning av diskutrymme.
+Se [Scenario 1: Distribuering i medelstor storlek](#scenario-1) om du vill ha fler kommentarer om proxies, inställningscenter/prenumerationshantering och användning av diskutrymme.
 
 ### Databas
 
@@ -212,31 +213,31 @@ Det beräknas att det diskutrymme som krävs i databasen för att lagra alla Ado
 
 De antaganden som gjorts för dessa scenarier påverkar alla maskinvarurekommendationerna och driftsättningsarkitekturen avsevärt. I det här avsnittet behandlas riktlinjer kring olika antaganden. Kontakta Adobe Campaign Consulting-teamet för specifika rekommendationer.
 
-* **Antal**
-mottagareAktiva mottagare kräver både lagringsutrymme och buffertutrymme i databasen, så fler mottagare behöver vanligtvis mer minne och processorkapacitet på databasservern. Lagringsökningarna är relativt små för mottagarna själva, men kan vara betydande för händelsespårningsdata som lagras för e-postkampanjer.
+* **Antal mottagare**
+Aktiva mottagare kräver både lagringsutrymme och databasbuffertutrymme, så fler mottagare kräver vanligtvis mer minne och processorkapacitet på databasservern. Lagringsökningarna är relativt små för mottagarna själva, men kan vara betydande för händelsespårningsdata som lagras för e-postkampanjer.
 
-* **Storlek**
-på e-postkampanjHur ofta kampanjer startas påverkar databasserverns processorkrav. I kombination med direktutskick, inkommande interaktioner och andra arbetsflöden innebär segmenteringsåtgärder för e-postkampanjer en avsevärd belastning för databasservern.
+* **Storlek på e-postkampanj**
+Hur ofta kampanjer startas påverkar databasserverns processorkrav. I kombination med direktutskick, inkommande interaktioner och andra arbetsflöden innebär segmenteringsåtgärder för e-postkampanjer en avsevärd belastning för databasservern.
 
-* **Frekvens**
-för direktutskickFrekvensen för direktutskick kan påverka databasserverns processorkrav. I kombination med kampanjlanseringar och andra arbetsflöden innebär segmenteringsåtgärder för direktutskick en avsevärd belastning på databasservern.
+* **Frekvens för direktreklam**
+Hur ofta direktutskick skickas kan påverka databasserverns processorkrav. I kombination med kampanjlanseringar och andra arbetsflöden innebär segmenteringsåtgärder för direktutskick en avsevärd belastning på databasservern.
 
-* **SMS Message**
-VolumePrecis som storleken på e-postkampanjer gör SMS-meddelandevolymen att stora belastningar inte placeras på Campaign-servrar på plats. inläsningen görs huvudsakligen på Adobe Cloud Messaging-servrar i molnet. Segmentering för SMS-kampanjer, som e-post och direktreklam, kan innebära en avsevärd belastning för marknadsföringsdatabasen. Därför är frekvensen för lanseringar av SMS-kampanjer och komplexiteten i segmenteringen mer relevant än volymen för SMS-meddelanden.
+* **SMS-meddelandevolym**
+I likhet med storleken på e-postkampanjer gör inte SMS-meddelandevolymen att det finns stora belastningar på Campaign-servrar på plats. inläsningen görs huvudsakligen på Adobe Cloud Messaging-servrar i molnet. Segmentering för SMS-kampanjer, som e-post och direktreklam, kan innebära en avsevärd belastning för marknadsföringsdatabasen. Därför är frekvensen för lanseringar av SMS-kampanjer och komplexiteten i segmenteringen mer relevant än volymen för SMS-meddelanden.
 
-* **Komplexitet**
-för databasschemaMängden data för varje aktiv mottagare kräver både lagringsutrymme och buffertutrymme, så fler mottagare behöver vanligtvis mer minne och processorkapacitet på databasservern. Komplexa scheman kräver också att fler tabeller förenas för segmentering, så segmenteringsåtgärder kan köras mycket långsammare och kräver mer databasprocessor och minne när data sprids över flera tabeller.
+* **Komplexitet för databasschema**
+Mängden data för varje aktiv mottagare kräver både lagringsutrymme och buffertutrymme för databasen, så fler mottagare behöver vanligtvis mer minne och processorkapacitet på databasservern. Komplexa scheman kräver också att fler tabeller förenas för segmentering, så segmenteringsåtgärder kan köras mycket långsammare och kräver mer databasprocessor och minne när data sprids över flera tabeller.
 
    Databasserverminnet beräknas genom att säkerställa att databasbuffertpoolen kan vara tillräckligt stor för att innehålla alla mottagardata, plus tillfälliga tabeller för att köra arbetsflöden, plus en marginal för andra databasåtgärder.
 
-* **Utgående interaktionsanvändningsregler**
-för interaktion i batchläge utvärderas i arbetsflöden som överför all beräkningskomplexitet till databasen. Den största ansträngningsfaktorn för databasen är det totala antalet giltiga erbjudanden som beräknas under ett motoranrop (målstorlek X genomsnittligt antal erbjudanden per mottagare innan de bästa N-erbjudandena behålls). Databasserverns processorhastighet är den första prestandafaktionen.
+* **Användning av utgående interaktion**
+Regler för interaktion i gruppläge utvärderas i arbetsflöden som överför all beräkningskomplexitet till databasen. Den största ansträngningsfaktorn för databasen är det totala antalet giltiga erbjudanden som beräknas under ett motoranrop (målstorlek X genomsnittligt antal erbjudanden per mottagare innan de bästa N-erbjudandena behålls). Databasserverns processorhastighet är den första prestandafaktionen.
 
-* **Regler och erbjudanden för inkommande interaktioner eller SOAP API**
-UsageInbound Interaction utvärderas i marknadsföringsdatabasen, vilket kräver stora databasserverresurser, särskilt CPU. Kraftig användning av inkommande interaktioner eller SOAP API:er kräver separata webbservrar för att separera arbetsbelastningen från pågående Campaign-arbetsflöden.
+* **Inkommande interaktioner eller SOAP API-användning**
+Regler och erbjudanden för inkommande interaktion utvärderas i marknadsföringsdatabasen och kräver stora databasserverresurser, särskilt CPU. Kraftig användning av inkommande interaktioner eller SOAP API:er kräver separata webbservrar för att separera arbetsbelastningen från pågående Campaign-arbetsflöden.
 
-* **Kvarhållningsperiod**
-för spårning av dataOm du vill öka lagringen av spårningsdata i mer än 90 dagar krävs mer databaslagring och systemet kan bli långsammare eftersom nya spårningsdata läggs in i stora tabeller. Spårningsdata är inte användbara för kampanjsegmentering efter 90 dagar, så den kortare kvarhållningsperioden rekommenderas.
+* **Lagringsperiod för spårningsdata**
+Om du vill öka lagringen av spårningsdata i mer än 90 dagar krävs mer databaslagring och systemet kan bli långsammare eftersom nya spårningsdata läggs in i stora tabeller. Spårningsdata är inte användbara för kampanjsegmentering efter 90 dagar, så den kortare kvarhållningsperioden rekommenderas.
 
    Spårningsdata bör flyttas till Adobe Analytics eller något annat analyssystem om ni behöver en långsiktig analys av mottagarnas marknadsföringsupplevelser.
 
@@ -244,14 +245,14 @@ för spårning av dataOm du vill öka lagringen av spårningsdata i mer än 90 d
 
 Alla Campaign-servrar är bra lämpade för virtualisering. Flera frågor måste åtgärdas för att säkerställa lämplig tillgänglighet och prestanda.
 
-* **Konfiguration av**
-kluderade redundanskonfigurationsservrar, till exempel redundanta programservrar under en belastningsutjämnad proxy, måste distribueras på separat maskinvara för att säkerställa att båda virtuella datorer inte kraschar om maskinvarufel uppstår.
+* **Konfiguration av redundans**
+Klustrade servrar, till exempel redundanta programservrar under en belastningsutjämnad proxy, måste distribueras på separat maskinvara för att säkerställa att båda virtuella maskiner inte kraschar om maskinvarufel uppstår.
 
-* **I/O-**
-konfigurationAlla rekommenderade RAID-konfigurationer måste upprätthållas för databassäkerhet för att säkerställa att en förlust av en lagringsenhet inte orsakar dataförlust.
+* **I/O-konfiguration**
+Alla rekommenderade RAID-konfigurationer måste upprätthållas för databassäkerhet för att säkerställa att en förlust av en lagringsenhet inte orsakar dataförlust.
 
-* **I/O-**
-prestandaDen rekommenderade IOPS-klassificeringen för databaslagring måste iakttas. Molntjänster som Amazon EC2 kanske inte ger den prestanda som krävs och måste utvärderas noggrant. Amazon EC2-provisionerade SSD-volymer är till exempel för närvarande klassificerade till 20 000 IOPS var. Läs mer i [Amazon-dokumentation](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), så en RAID-konfiguration med 4 volymer skulle få värdet 80 000 IOPS, vilket kanske inte är tillräckligt.
+* **I/O-prestanda**
+Den rekommenderade IOPS-klassificeringen för databaslagring måste respekteras. Molntjänster som Amazon EC2 kanske inte ger den prestanda som krävs och måste utvärderas noggrant. Amazon EC2-provisionerade SSD-volymer är till exempel för närvarande klassificerade till 20 000 IOPS var. Läs mer i [Amazon-dokumentation](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)så en RAID-konfiguration med 4 volymer skulle få värdet 80 000 IOPS, vilket kanske inte är tillräckligt.
 
 Adobe rekommenderar prestandatestning för virtualiserad driftsättning av Adobe Campaign innan systemet börjar användas.
 

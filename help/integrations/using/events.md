@@ -30,13 +30,13 @@ Eftersom det krävs tekniska kunskaper för att redigera Javascript-koden bör d
 
 Pipeline använder en JavaScript-funktion för att bearbeta varje meddelande. Den här funktionen är användardefinierad.
 
-Den är konfigurerad i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Detta JavaScript anropas varje gång en händelse tas emot. Den körs av [!DNL pipelined]-processen.
+Den konfigureras i **[!UICONTROL NmsPipeline_Config]** under attributet &quot;JSConnector&quot;. Detta JavaScript anropas varje gång en händelse tas emot. Det är förbi [!DNL pipelined] -processen.
 
 Javascript-exempelfilen är cus:triggers.js.
 
 ### JavaScript-funktion {#function-js}
 
-JavaScript-koden [!DNL pipelined] måste börja med en specifik funktion.
+The [!DNL pipelined] Javascript måste börja med en viss funktion.
 
 Den här funktionen anropas en gång för varje händelse:
 
@@ -50,14 +50,14 @@ Den ska returnera som
 <undefined/>
 ```
 
-Du bör starta om [!DNL pipelined] när du har redigerat Javascript.
+Du bör starta om [!DNL pipelined] efter redigering av Javascript.
 
 ### Utlös dataformat {#trigger-format}
 
-[!DNL trigger]-data skickas till JS-funktionen i XML-format.
+The [!DNL trigger] data skickas till JS-funktionen i XML-format.
 
-* Attributet **[!UICONTROL @triggerId]** innehåller namnet på [!DNL trigger].
-* Elementet **enrichments** i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
+* The **[!UICONTROL @triggerId]** -attributet innehåller namnet på [!DNL trigger].
+* The **berikning** -elementet i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
 * **[!UICONTROL @offset]** är pekaren till meddelandet. Den anger ordningen för meddelandet i kön.
 * **[!UICONTROL @partition]** är en behållare med meddelanden i kön. Förskjutningen är relativ till en partition. <br>Det finns ungefär 15 partitioner i kön.
 
@@ -115,14 +115,14 @@ Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL p
 
 Den här pekaren är specifik för varje förekomst och varje konsument. När många instanser använder samma pipeline med olika konsumenter får de därför alla meddelanden och i samma ordning.
 
-Parametern **Consumer** för pipelinealternativet identifierar den anropande instansen.
+The **konsument** parametern för pipeline-alternativet identifierar den anropande instansen.
 
 Det finns för närvarande inget sätt att ha olika köer för olika miljöer som&quot;staging&quot; eller&quot;dev&quot;.
 
 ### Loggning och felhantering {#logging-error-handling}
 
-Loggar som logInfo() dirigeras till [!DNL pipelined]-loggen. Fel som logError() skrivs till [!DNL pipelined]-loggen och gör att händelsen placeras i en ny försökskö. I det här fallet bör du kontrollera loggen i pipeline.
-Felmeddelanden provas flera gånger under den varaktighet som angetts för [!DNL pipelined]-alternativen.
+Loggar som logInfo() dirigeras till [!DNL pipelined] log. Fel som logError() skrivs till [!DNL pipelined] logga och låt händelsen placeras i en kö för återförsök. I det här fallet bör du kontrollera loggen i pipeline.
+Felmeddelanden provas flera gånger under den varaktighet som anges i [!DNL pipelined] alternativ.
 
 För felsökning och övervakning skrivs alla utlösande data i utlösartabellen i fältet&quot;data&quot; i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
 

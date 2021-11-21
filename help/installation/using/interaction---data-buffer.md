@@ -19,21 +19,21 @@ ht-degree: 3%
 
 Du kan konfigurera en databuffertzon för att öka prestanda för inkommande interaktion genom att avsynkronisera offertförslagsberäkningar. Den här konfigurationen ska utföras i instansens egen konfigurationsfil (config-Instance.xml).
 
-I Adobe Campaign har en **databuffertzon** introducerats i interaktionsmodulen. På så sätt kan du **öka prestanda** för inkommande interaktion genom att avsynkronisera lager och erbjuda beräkningar.
+I Adobe Campaign **databuffertzon** har introducerats i interaktionsmodulen. På så sätt kan du **öka prestanda** av inkommande interaktion genom att avsynkronisera lager och erbjuda beräkningar.
 
 Det gäller bara inkommande interaktion, antingen via ett anrop (med eller utan anropsdata) eller via en statusuppdatering (updateStatus).
 
-För att undvika en kö när du skriver offerter för en mottagare, genererar en ny w-process en **databuffertzon** som tillåter att offerter skrivs **asynkront**. Den här databuffertzonen läses och töms regelbundet. Standardperioden är ungefär en sekund. Därför grupperas förslagsskrivning.
+För att undvika en kö när du skriver offerter för en mottagare, genererar en ny W-process en **databuffertzon** som tillåter förslag **skriven asynkront**. Den här databuffertzonen läses och töms regelbundet. Standardperioden är ungefär en sekund. Därför grupperas förslagsskrivning.
 
 >[!NOTE]
 >
 >Den här parametern är viktig om du använder Interaction med en distribuerad arkitektur.
 
-Databuffertzonen **konfiguration** kan göras i instansens konfigurationsfil (config-Instance.xml).
+Databuffertzon **konfiguration** kan göras i instansens konfigurationsfil (config-Instance.xml).
 
 >[!CAUTION]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i [Värdmodeller](../../installation/using/hosting-models.md) avsnitt eller till [den här sidan](../../installation/using/capability-matrix.md).
 >
 >Om konfigurationen ändras måste webbservern (Apache:IIS) och Adobe Campaign-processerna startas om.\
 >När du har konfigurerat databuffertzonen kontrollerar du att det finns en anpassad maskinvarukonfiguration tillgänglig. (det finns mycket minne).

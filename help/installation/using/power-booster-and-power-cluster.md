@@ -63,27 +63,27 @@ Alternativen Power Booster och Power Cluster kan användas av följande program:
   </tr> 
   <tr> 
    <td> Tillgänglighet<br /> </td> 
-   <td> Den primära databasens namn<br /> </td> 
+   <td> Den primära databasens placering<br /> </td> 
    <td> 24/7 utom underhållsfönster och driftstopp för körningsinstansen<br /> </td> 
-   <td> Tjänsten kan utföras dygnet runt, alla dagar, året om, <br /> </td> 
+   <td> Service 24/7/365 möjlig<br /> </td> 
   </tr> 
   <tr> 
    <td> Säkerhet<br /> </td> 
-   <td> Datamarknaden är potentiellt tillgänglig från det allmänna Internet<br /> </td> 
-   <td> Datamarkeringen är isolerad från frontalkomponenter som riktas mot Internet<br /> </td> 
-   <td> Datamarkeringen är isolerad från frontalkomponenter som riktas mot Internet<br /> </td> 
+   <td> Datamarknaden är potentiellt tillgänglig via internet<br /> </td> 
+   <td> Datamarknaden är isolerad från frontalkomponenter som riktas mot Internet<br /> </td> 
+   <td> Datamarknaden är isolerad från frontalkomponenter som riktas mot Internet<br /> </td> 
   </tr> 
   <tr> 
    <td> Distributionsmall<br /> </td> 
    <td> Alla på en plats (kan finnas lokalt eller i molnet)<br /> </td> 
-   <td> Marknadsföring på plats med körning i molnet är möjligt<br /> </td> 
-   <td> Marknadsföring lokalt med exekvering i molnet. exekvering i olika geografiska områden möjlig<br /> </td> 
+   <td> Marknadsföring på plats med körning i molnet möjligt<br /> </td> 
+   <td> Marknadsföring lokalt med exekvering i molnet. exekvering i olika geografiska områden<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Rekommendationer {#recommendations}
 
-* En körningsinstans måste dedikeras till en tjänst. Du kan inte installera ett paket för en tjänst som du inte har prenumererat på. Om du till exempel prenumererar på alternativet **Power Booster** för tjänsten **Message Center**, kan du bara installera paketet **[!UICONTROL Execution of transactional messages]** på den dedikerade körningsinstansen. Kontrollera licensavtalet.
+* En körningsinstans måste dedikeras till en tjänst. Du kan inte installera ett paket för en tjänst som du inte har prenumererat på. Om du till exempel prenumererar på **Power Booster** för **Meddelandecenter** kan du endast installera **[!UICONTROL Execution of transactional messages]** paket på den dedikerade körningsinstansen. Kontrollera licensavtalet.
 * Eftersom dedikerade instanser (eller kluster) är Adobe Campaign-instanser är rekommendationerna samma som för en huvudinstans. Mer information finns i [det här dokumentet](../../production/using/foreword.md).
 * Kontakta Adobe Campaign Professional Services om du vill konfigurera instansen från en databas-/maskinvarukomponentvy.

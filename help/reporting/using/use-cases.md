@@ -25,7 +25,7 @@ Implementeringsstegen beskrivs nedan, medan en uttömmande lista över alternati
 
 ### Identifiera populationen som ska analyseras {#identifying-the-population-to-analyze}
 
-I det här exemplet vill vi utforska målpopulationen för leveranser som ingår i mappen **Newsletters**.
+I det här exemplet vill vi utforska målpopulationen för de leveranser som ingår i **Nyhetsbrev** mapp.
 
 För att göra detta väljer du de aktuella leveranserna, högerklickar och väljer **[!UICONTROL Action > Explore the target...]**.
 
@@ -33,9 +33,9 @@ För att göra detta väljer du de aktuella leveranserna, högerklickar och väl
 
 ### Välja en analystyp {#selecting-a-type-of-analysis}
 
-I det första steget i assistenten kan du välja den beskrivande analysmall som ska användas. Som standard har Adobe Campaign två mallar: **[!UICONTROL Qualitative distribution]** och **[!UICONTROL Quantitative distribution]**. Mer information finns i avsnittet [Konfigurera den kvalitativa distributionsmallen](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template). De olika återgivningarna presenteras i avsnittet [Om beskrivande analys](../../reporting/using/about-descriptive-analysis.md).
+I det första steget i assistenten kan du välja den beskrivande analysmall som ska användas. Som standard har Adobe Campaign två mallar: **[!UICONTROL Qualitative distribution]** och **[!UICONTROL Quantitative distribution]**. Mer information finns i [Konfigurera den kvalitativa distributionsmallen](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) -avsnitt. De olika renderingarna presenteras i [Beskrivande analys](../../reporting/using/about-descriptive-analysis.md) -avsnitt.
 
-I det här exemplet väljer du mallen **[!UICONTROL Qualitative distribution]** och väljer en visning med ett diagram och en tabell (matris). Ge rapporten ett namn (&quot;Beskrivning analys&quot;) och klicka på **[!UICONTROL Next]**.
+I det här exemplet väljer du **[!UICONTROL Qualitative distribution]** och välj en visning med ett diagram och en tabell (matris). Ge rapporten ett namn (&quot;Beskrivning analys&quot;) och klicka på **[!UICONTROL Next]**.
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
@@ -43,13 +43,13 @@ I det här exemplet väljer du mallen **[!UICONTROL Qualitative distribution]** 
 
 I nästa steg kan du markera de data som ska visas i tabellen.
 
-Klicka på länken **[!UICONTROL Add...]** för att markera variabeln som innehåller de data som ska visas. Här vill vi visa städerna för våra mottagare på en rad:
+Klicka på **[!UICONTROL Add...]** för att markera variabeln som innehåller de data som ska visas. Här vill vi visa städerna för våra mottagare på en rad:
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
-Kolumnerna visar antalet inköp per företag. I det här exemplet aggregeras belopp i fältet **Webbköp**.
+Kolumnerna visar antalet inköp per företag. I det här exemplet aggregeras belopp i **Webbköp** fält.
 
-Här vill vi definiera resultatbindning för att förtydliga hur de visas. Om du vill göra det väljer du bindningsalternativet **[!UICONTROL Manual]** och anger beräkningsklasserna för segmenten som ska visas:
+Här vill vi definiera resultatbindning för att förtydliga hur de visas. Om du vill göra det väljer du **[!UICONTROL Manual]** bindningsalternativ och ange beräkningsklasser för segmenten som ska visas:
 
 ![](assets/reporting_descriptive_quickstart_step_2a.png)
 
@@ -67,7 +67,7 @@ I det här fallet väljer du histogrammet.
 
 ![](assets/reporting_descriptive_quickstart_step_3.png)
 
-Möjliga konfigurationer av de olika bilderna finns i avsnittet [alternativ för analysrapportdiagram](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
+Möjliga konfigurationer av de olika bilderna finns i [Alternativ för analysrapportdiagram](../../reporting/using/processing-a-report.md#analysis-report-chart-options) -avsnitt.
 
 ### Konfigurera statistiken som ska beräknas {#configuring-the-statistic-to-calculate}
 
@@ -77,7 +77,7 @@ I det här fönstret kan du definiera en lista med statistik som ska beräknas.
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]**. Mer information finns i [Statistikberäkning](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** -knappen. Mer information finns i [Statistikberäkning](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Visa och använda rapporten {#viewing-and-using-the-report}
 
@@ -93,19 +93,19 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 **Mål**: generera en analysrapport om var potentiella kunder eller kunder befinner sig.
 
-1. Öppna den beskrivande analysguiden och välj endast **[!UICONTROL Chart]**.
+1. Öppna den beskrivande analysguiden och välj **[!UICONTROL Chart]** endast.
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
-   Klicka på **[!UICONTROL Next]** för att godkänna det här steget.
+   Klicka **[!UICONTROL Next]** för att godkänna det här steget.
 
-1. Välj sedan alternativet **[!UICONTROL 2 variables]** och ange att **[!UICONTROL First variable (abscissa)]** ska referera till mottagarstatus (prospects/customers) och att den andra variabeln ska referera till landet.
-1. Välj **[!UICONTROL Cylinders]** som typ.
+1. Välj sedan **[!UICONTROL 2 variables]** och ange att **[!UICONTROL First variable (abscissa)]** avser mottagarstatus (prospects/customers) och den andra variabeln avser landet.
+1. Välj **[!UICONTROL Cylinders]** som en typ.
 
    ![](assets/s_ncs_user_report_wizard_05.png)
 
-1. Klicka på **[!UICONTROL Next]** och lämna standardvärdet för **[!UICONTROL Simple count]**.
-1. Klicka på **[!UICONTROL Next]** för att visa rapporten.
+1. Klicka **[!UICONTROL Next]** och lämna standardinställningen **[!UICONTROL Simple count]** statistik.
+1. Klicka **[!UICONTROL Next]** för att visa rapporten.
 
    ![](assets/s_ncs_user_report_wizard_04.png)
 
@@ -119,20 +119,20 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 **Mål**: analysera företagets e-postdomäner.
 
-1. Öppna den beskrivande analysguiden och välj endast visningsläget **[!UICONTROL Array]**.
+1. Öppna guiden för beskrivande analys och välj **[!UICONTROL Array]** endast visningsläget.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
-   Klicka på knappen **[!UICONTROL Next]** för att godkänna det här steget.
+   Klicka på **[!UICONTROL Next]** för att godkänna det här steget.
 
-1. Markera variabeln **[!UICONTROL Company]** som en kolumn och variabeln **[!UICONTROL Email domain]** som en rad.
-1. Behåll alternativet **[!UICONTROL By rows]** för statistikorientering: den statistiska beräkningen visas till höger om variabeln **[!UICONTROL Email domain]**.
+1. Välj **[!UICONTROL Company]** variabel som en kolumn och **[!UICONTROL Email domain]** variabel som rad.
+1. Behåll **[!UICONTROL By rows]** för statistikorientering: den statistiska beräkningen visas till höger om **[!UICONTROL Email domain]** variabel.
 
    ![](assets/s_ncs_user_report_wizard_03b.png)
 
-   Klicka på **[!UICONTROL Next]** för att godkänna det här steget.
+   Klicka **[!UICONTROL Next]** för att godkänna det här steget.
 
-1. Ange sedan statistiken som ska beräknas: behålla standardantalet och skapa en ny statistik. Om du vill göra det klickar du på **[!UICONTROL Add]** och väljer **[!UICONTROL Total percentage distribution]** som operator.
+1. Ange sedan statistiken som ska beräknas: behålla standardantalet och skapa en ny statistik. Det gör du genom att klicka **[!UICONTROL Add]** och markera **[!UICONTROL Total percentage distribution]** som -operatorn.
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -140,7 +140,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    ![](assets/s_ncs_user_report_wizard_014.png)
 
-1. Klicka på **[!UICONTROL Next]** för att visa rapporten.
+1. Klicka **[!UICONTROL Next]** för att visa rapporten.
 
    ![](assets/s_ncs_user_report_wizard_06.png)
 
@@ -160,17 +160,17 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
-   Klicka på knappen **[!UICONTROL Next]** för att godkänna det här steget.
+   Klicka på **[!UICONTROL Next]** för att godkänna det här steget.
 
-1. Markera variabeln **[!UICONTROL Age]** och ange dess etikett. Ange om det är ett heltal eller inte och klicka sedan på **[!UICONTROL Next]**.
+1. Välj **[!UICONTROL Age]** och ange dess etikett. Ange om det är ett heltal eller inte och klicka sedan på **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_report_wizard_011.png)
 
-1. Ta bort statistik för **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** och **[!UICONTROL Sum]**: De behövs inte här.
+1. Ta bort **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** och **[!UICONTROL Sum]** statistik: De behövs inte här.
 
    ![](assets/s_ncs_user_report_wizard_012.png)
 
-1. Klicka på **[!UICONTROL Next]** för att visa rapporten.
+1. Klicka **[!UICONTROL Next]** för att visa rapporten.
 
    ![](assets/s_ncs_user_report_wizard_013.png)
 
@@ -184,7 +184,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. Nu kan du antingen välja alternativet **[!UICONTROL Existing analyses and reports]** och använda rapporter som skapats tidigare (se [Återanvända befintliga rapporter och analyser](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) eller skapa en ny beskrivande analys. Om du vill göra det låter du alternativet **[!UICONTROL New descriptive analysis from a template]** vara markerat som standard.
+1. Nu kan du antingen välja **[!UICONTROL Existing analyses and reports]** och använda rapporter som skapats tidigare (se [Återanvända befintliga rapporter och analyser](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) eller skapa en ny beskrivande analys. Om du vill göra det lämnar du **[!UICONTROL New descriptive analysis from a template]** som standard.
 
    Resten av konfigurationen är densamma som för alla beskrivande analyser.
 
@@ -196,7 +196,7 @@ Analysen av en population i ett arbetsflöde kräver att populationen fortfarand
 
    ![](assets/s_ncs_user_report_wizard_018.png)
 
-* Ändra arbetsflödets egenskaper genom att välja alternativet **[!UICONTROL Keep the result of interim populations between two executions]**. Detta gör att du kan starta en analys av den övergång du vill använda, även om arbetsflödet är färdigt.
+* Ändra arbetsflödets egenskaper genom att välja **[!UICONTROL Keep the result of interim populations between two executions]** alternativ. Detta gör att du kan starta en analys av den övergång du vill använda, även om arbetsflödet är färdigt.
 
    ![](assets/s_ncs_user_report_wizard_020.png)
 
@@ -206,8 +206,8 @@ Analysen av en population i ett arbetsflöde kräver att populationen fortfarand
 
 >[!CAUTION]
 >
->Alternativet **[!UICONTROL Keep the result of interim populations between two executions]** får bara användas i utvecklingsfaser, men aldrig för en miljö i produktion.\
->Interimspopulationerna rensas automatiskt när tidsgränsen för kvarhållande har uppnåtts. Den här tidsgränsen anges på fliken för arbetsflödesegenskaper **[!UICONTROL Execution]**.
+>The **[!UICONTROL Keep the result of interim populations between two executions]** Alternativet får endast användas i utvecklingsfaser, men aldrig för en produktionsmiljö.\
+>Interimspopulationerna rensas automatiskt när tidsgränsen för kvarhållande har uppnåtts. Den här tidsgränsen anges i arbetsflödesegenskaperna **[!UICONTROL Execution]** -fliken.
 
 ## Analyserar loggar för mottagarspårning {#analyzing-recipient-tracking-logs}
 
@@ -217,7 +217,7 @@ I det här exemplet vill vi analysera reaktivitetsfrekvensen för nyhetsbrevets 
 
 Gör så här:
 
-1. Öppna den beskrivande analysguiden via menyn **[!UICONTROL Tools > Descriptive analysis]** och ändra standardarbetstabellen. Välj **[!UICONTROL Recipient tracking log]** och lägg till ett filter för att exkludera korrektur och inkludera nyhetsbrev.
+1. Öppna den beskrivande analysguiden via **[!UICONTROL Tools > Descriptive analysis]** och ändra standardarbetstabellen. Välj **[!UICONTROL Recipient tracking log]** och lägg till ett filter för att exkludera korrektur och inkludera nyhetsbrev.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -233,11 +233,11 @@ Gör så här:
 
    Här visas följande för varje nyhetsbrev: antalet öppningar, antalet klickningar och reaktivitetsfrekvensen (i procent).
 
-1. Lägg till statistik för att räkna antalet klick: Definiera det relevanta filtret på fliken **[!UICONTROL Filter]**.
+1. Lägg till statistik för att räkna antalet klick: definiera det relevanta filtret i **[!UICONTROL Filter]** -fliken.
 
    ![](assets/reporting_descriptive_sample_tracking_3.png)
 
-1. Klicka sedan på fliken **[!UICONTROL General]** för att byta namn på statistiketiketten och aliaset:
+1. Klicka sedan på **[!UICONTROL General]** om du vill byta namn på statistiketiketten och aliaset:
 
    ![](assets/reporting_descriptive_sample_tracking_4.png)
 
@@ -245,15 +245,15 @@ Gör så här:
 
    ![](assets/reporting_descriptive_sample_tracking_5.png)
 
-1. Klicka sedan på fliken **[!UICONTROL General]** för att byta namn på statistiketiketten och dess alias:
+1. Klicka sedan på **[!UICONTROL General]** om du vill byta namn på statistiketiketten och dess alias:
 
    ![](assets/reporting_descriptive_sample_tracking_6.png)
 
-1. Lägg till den tredje statistiken och välj operatorn **[!UICONTROL Calculated field]** för att mäta reaktivitetsfrekvensen.
+1. Lägg till den tredje statistiken och välj **[!UICONTROL Calculated field]** för att mäta reaktivitetsfrekvensen.
 
    ![](assets/reporting_descriptive_sample_tracking_7.png)
 
-   Gå till fältet **[!UICONTROL User function]** och ange följande formel:
+   Gå till **[!UICONTROL User function]** och ange följande formel:
 
    ```
    @clic / @open * 100
@@ -263,17 +263,17 @@ Gör så här:
 
    ![](assets/reporting_descriptive_sample_tracking_8.png)
 
-   Slutligen anger du om värdena ska visas i procent: Om du vill göra det avmarkerar du alternativet **[!UICONTROL Default formatting]** på fliken **[!UICONTROL Advanced]** och väljer **[!UICONTROL Percentage]** utan decimaltecken.
+   Slutligen anger du om värdena ska visas i procent: för att göra detta avmarkerar du **[!UICONTROL Default formatting]** i **[!UICONTROL Advanced]** och markera **[!UICONTROL Percentage]** utan decimalkomma.
 
    ![](assets/reporting_descriptive_sample_tracking_10.png)
 
-1. Klicka på **[!UICONTROL Next]** för att visa rapporten.
+1. Klicka **[!UICONTROL Next]** för att visa rapporten.
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
 ## Analyserar exkluderingsloggar för leverans {#analyzing-delivery-exclusion-logs}
 
-Om analysen gäller en leverans kan du analysera den uteslutna populationen. Om du vill göra det väljer du de leveranser som ska analyseras och högerklickar för att öppna menyn **[!UICONTROL Action > Explore exclusions]**.
+Om analysen gäller en leverans kan du analysera den uteslutna populationen. För att göra detta väljer du de leveranser som ska analyseras och högerklickar för att komma åt **[!UICONTROL Action > Explore exclusions]** -menyn.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 

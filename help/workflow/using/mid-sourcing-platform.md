@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-Arbetsflödet som beskrivs nedan installeras som standard med modulen **Mid-Source**. Mer information om den här modulen finns i [avsnittet](../../installation/using/mid-sourcing-deployment.md).
+Arbetsflödet som beskrivs nedan installeras med **Plattform för medelhög källkod** som standard. Mer information om den här modulen finns i [section](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Arbetsflödet som beskrivs nedan installeras som standard med modulen **Mid-Sour
   <tr> 
    <td> <span class="uicontrol">Leveransindikatorer</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Arbetsflödet aktiveras som standard varje timme.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -17,10 +17,10 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-Med en **tidsbegränsning**-aktivitet kan du skjuta upp eller avbryta körningen av en uppgift.
+A **Tidsbegränsning** kan du skjuta upp eller avbryta körningen av en uppgift.
 
 Ange aktivitetens etikett och ange den tidsram under vilken arbetsflödesuppgiften ska pausas.
 
-När alternativet **[!UICONTROL Try again later if outside of execution period]** är markerat kan du starta om aktiviteten utanför körningens tidsram. Om du vill att arbetsflödesåtgärden ska överges för gott efter att den har avbrutits, avmarkerar du det här alternativet.
+När **[!UICONTROL Try again later if outside of execution period]** om du väljer det här alternativet kan du starta om aktiviteten utanför körtidsramen. Om du vill att arbetsflödesåtgärden ska överges för gott efter att den har avbrutits, avmarkerar du det här alternativet.
 
 ![](assets/s_user_scheduled_wait.png)

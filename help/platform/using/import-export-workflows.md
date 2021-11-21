@@ -25,15 +25,15 @@ Arbetsflöden kan vara ett användbart sätt att automatisera vissa importproces
 
 Data som skickas i ett arbetsflöde kan komma från listor där data har förberetts och strukturerats.
 
-Den här listan kan ha skapats direkt i Adobe Campaign eller importerats med alternativet **[!UICONTROL Import a list]**. Mer information om det här alternativet finns på den här [sidan](../../platform/using/about-generic-imports-exports.md).
+Den här listan kan ha skapats direkt i Adobe Campaign eller importerats av **[!UICONTROL Import a list]** alternativ. Mer information om det här alternativet finns i [page](../../platform/using/about-generic-imports-exports.md).
 
-Mer information om hur du använder aktiviteten för läslista i ett arbetsflöde finns på [den här sidan](../../workflow/using/read-list.md).
+Mer information om hur du använder läslisteaktiviteten i ett arbetsflöde finns i [den här sidan](../../workflow/using/read-list.md).
 
 ### Läsa in data från en fil {#loading-data-from-a-file}
 
 Data som bearbetas i ett arbetsflöde kan extraheras från en strukturerad fil så att de kan importeras till Adobe Campaign.
 
-En beskrivning av dataaktiviteten som läses in finns i [avsnittet Datainläsning (fil)](../../workflow/using/data-loading--file-.md).
+En beskrivning av inläsningsdataaktiviteten finns i [Inläsning av data (fil)](../../workflow/using/data-loading--file-.md) -avsnitt.
 
 Exempel på strukturerad fil som ska importeras:
 
@@ -51,4 +51,4 @@ När data har samlats in kan du använda dem i dina arbetsflöden, till exempel 
 
 Arbetsflöden kan vara ett användbart sätt att automatisera vissa av dina exportprocesser eller exportera exakta datauppsättningar efter att ha använt några av de tillgängliga datahanteringsaktiviteterna för att omvandla data.
 
-Exportåtgärder utförs med en **[!UICONTROL Data extraction (file) activity]**. Mer information om hur du konfigurerar och använder aktiviteten finns på [den här sidan](../../workflow/using/extraction--file-.md).
+Exportåtgärder utförs med en **[!UICONTROL Data extraction (file) activity]**. Mer information om hur du konfigurerar och använder aktiviteten finns i [den här sidan](../../workflow/using/extraction--file-.md).

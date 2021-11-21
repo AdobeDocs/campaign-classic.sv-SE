@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Huvuduppgiften med dessa aktiviteter är att vänta på en händelse. Det kan till exempel vara att ta emot en fil, ett e-postmeddelande eller en signal som skickas av programmet.
 
-* Filinsamlare: övervakar hur en eller flera filer kommer in i en katalog och möjliggör övergång för varje mottagen fil. Se [Filinsamlaren](file-collector.md).
+* Filinsamlare: övervakar hur en eller flera filer kommer in i en katalog och möjliggör övergång för varje mottagen fil. Se [Filinsamlare](file-collector.md).
 * Filöverföring: överför en fil till en server. Se [Filöverföring](file-transfer.md).
-* Web Download: hämtar en fil från webben. Mer information finns i [Webbhämtning](web-download.md).
-* SMS och e-postmottagning: återställer och bearbetar e-post eller SMS. Se [Inkommande SMS](inbound-sms.md) och [Inkommande e-post](inbound-emails.md).
+* Web Download: hämtar en fil från webben. Se [Webbnedladdning](web-download.md).
+* SMS och e-postmottagning: återställer och bearbetar e-post eller SMS. Se [Inkommande SMS](inbound-sms.md) och [Inkommande e-postmeddelanden](inbound-emails.md).

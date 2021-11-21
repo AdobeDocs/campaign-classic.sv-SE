@@ -28,7 +28,7 @@ För att få stöd för skalbarhet och dygnet runt-service på den inkommande ka
 
 >[!NOTE]
 >
->Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Alla instanser av exekvering är oberoende och dedikerade till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
+>Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Varje instans för körning är oberoende och dedikerad till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
 
 ## Förslagssynkronisering {#proposition-synchronization}
 
@@ -62,9 +62,9 @@ Interaktionspaketet måste installeras på alla instanser (kontroll och körning
 
 >[!NOTE]
 >
->När paketet installeras blir **long**-typfälten i tabellen **nms:proposition**, till exempel förslags-ID, **int64**-typfält. Den här datatypen beskrivs i [det här avsnittet](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>När du installerar paketet **long** typfält för **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [det här avsnittet](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-Varaktigheten för datalagring måste konfigureras för varje instans (via fönstret **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
+Varaktigheten för datalagring måste konfigureras för varje instans (via **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 
 På kontrollinstanserna:
 
@@ -76,7 +76,7 @@ På kontrollinstanserna:
    * Markera **[!UICONTROL Execution instance]**.
    * Markera alternativet **[!UICONTROL Enabled]**.
    * Slutför anslutningsparametrarna för körningsinstansen.
-   * Alla körningsinstanser måste länkas till ett ID. Detta ID tilldelas när du klickar på knappen **[!UICONTROL Initialize connection]**.
+   * Alla körningsinstanser måste länkas till ett ID. Detta ID tilldelas när du klickar på **[!UICONTROL Initialize connection]** -knappen.
    * Kontrollera vilken typ av program som används: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** eller båda.
    * Ange det FDA-konto som används. En operator måste skapas för körningsinstanserna och måste ha följande läs- och skrivrättigheter i databasen för instansen i fråga:
 
@@ -99,7 +99,7 @@ På kontrollinstanserna:
       >
       >Om du råkar ut för ett fel kan du läsa arbetsflödena för synkronisering och visa meddelanden. Dessa finns i programmets tekniska arbetsflöden.
 
-Om bara en del av marknadsföringsdatabasen dupliceras på körningsinstanserna av optimeringsskäl kan du ange ett begränsat schema som är länkat till miljön, så att användarna bara kan använda data som är tillgängliga på körningsinstanserna. Du kan skapa ett erbjudande med data som inte är tillgängliga för körningsinstanser. Om du vill göra det måste du inaktivera regeln för de andra kanalerna genom att begränsa den här regeln på den utgående kanalen (**[!UICONTROL Taken into account if]**-fältet).
+Om bara en del av marknadsföringsdatabasen dupliceras på körningsinstanserna av optimeringsskäl kan du ange ett begränsat schema som är länkat till miljön, så att användarna bara kan använda data som är tillgängliga på körningsinstanserna. Du kan skapa ett erbjudande med data som inte är tillgängliga för körningsinstanser. Om du vill göra det måste du inaktivera regeln för de andra kanalerna genom att begränsa den här regeln för den utgående kanalen (**[!UICONTROL Taken into account if]** fält).
 
 ![](assets/ita_filtering.png)
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-Redigering av storleken på en **Number**-typ leder inte till värden eller att indexet skrivs om. Den är därför omedelbar.
+Redigera storleken på en **Nummer** typen leder inte till värden eller att indexet skrivs om. Den är därför omedelbar.
 
 Följande fråga ska köras:
 

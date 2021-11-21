@@ -25,7 +25,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_delivery_example_001.png)
 
-1. Redigera e-postleveransen och klicka på ikonen **[!UICONTROL Offers]**.
+1. Redigera e-postleveransen och klicka på **[!UICONTROL Offers]** ikon.
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -45,7 +45,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_delivery_example_006.png)
 
-1. Använd menyerna för att infoga ett första erbjudande och välj HTML-återgivningsfunktionen.
+1. Använd menyerna för att infoga ett första erbjudande och välj återgivningsfunktionen HTML.
 
    ![](assets/offer_delivery_example_007.png)
 
@@ -53,18 +53,18 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_delivery_example_008.png)
 
-1. Klicka på **[!UICONTROL Preview]** för att förhandsgranska erbjudandena i leveransen och välj sedan en mottagare som ska förhandsgranska erbjudandena allt eftersom de kommer att få dem.
+1. Klicka **[!UICONTROL Preview]** om du vill förhandsgranska dina erbjudanden i leveransen väljer du en mottagare som ska förhandsgranska erbjudandena allt eftersom de kommer att få dem.
 
    ![](assets/offer_delivery_example_009.png)
 
 1. Spara leveransen och starta arbetsflödet för målinriktning.
-1. Öppna leveransen och klicka på fliken **[!UICONTROL Audit]** för leveransen: ser du att erbjudandemotorn har valt vilka erbjudanden som ska göras från de olika erbjudandena i katalogen.
+1. Öppna leveransen och klicka på **[!UICONTROL Audit]** leveransflik: ser du att erbjudandemotorn har valt vilka erbjudanden som ska göras från de olika erbjudandena i katalogen.
 
    ![](assets/offer_delivery_example_010.png)
 
 ## Simulera erbjudanden {#perform-an-offer-simulation}
 
-1. Klicka på länken **[!UICONTROL Simulations]** på fliken **[!UICONTROL Profiles and Targets]** och klicka sedan på knappen **[!UICONTROL Create]**.
+1. I **[!UICONTROL Profiles and Targets]** klickar du på **[!UICONTROL Simulations]** klicka på **[!UICONTROL Create]** -knappen.
 
    ![](assets/offer_simulation_001.png)
 
@@ -76,7 +76,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_simulation_example_003.png)
 
-1. Klicka på fliken **[!UICONTROL Edit]** och sedan på **[!UICONTROL Scope]**.
+1. Klicka på **[!UICONTROL Edit]** tabben **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -91,7 +91,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 1. Ange giltighetsdatum. Du måste ange ett startdatum. Detta gör att erbjudandemotorfiltret kan erbjuda och välja vilka som är giltiga på ett visst datum.
 1. Ange vid behov ett eller flera teman för att begränsa antalet erbjudanden till dem som innehåller nyckelordet i inställningarna.
 
-   I vårt exempel innehåller kategorin **Resa** två underkategorier med två separata teman. Vi vill simulera erbjudanden med temat **Kunder>1 år**.
+   I vårt exempel **Resa** -kategorin innehåller två underkategorier med två separata teman. Vi vill simulera erbjudanden med **Kunder > 1 år** tema.
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -105,21 +105,21 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_simulation_example_009.png)
 
-1. Spara inställningarna och klicka sedan på **[!UICONTROL Start]** på fliken **[!UICONTROL Dashboard]** för att köra simuleringen.
+1. Spara inställningarna och klicka sedan på **[!UICONTROL Start]** i **[!UICONTROL Dashboard]** för att köra simuleringen.
 
    ![](assets/offer_simulation_example_010.png)
 
-1. När simuleringen är klar kan du läsa **[!UICONTROL Results]** för att få en detaljerad beskrivning av offerter per erbjudande.
+1. När simuleringen är klar, se **[!UICONTROL Results]** för en detaljerad uppdelning av anbud per erbjudande.
 
    I vårt exempel har offertmotorn baserat uppdelningen av erbjudanden på tre anbud.
 
    ![](assets/offer_simulation_example_011.png)
 
-1. Visa **[!UICONTROL Breakdown of offers by rank]** för att visa listan över erbjudanden som valts ut av erbjudandemotorn.
+1. Visa **[!UICONTROL Breakdown of offers by rank]** för att visa en lista över erbjudanden som valts ut av erbjudandemotorn.
 
    ![](assets/offer_simulation_example_012.png)
 
-1. Om det behövs kan du ändra scopeinställningarna och köra simuleringen igen genom att klicka på **[!UICONTROL Start simulation]**.
+1. Om det behövs kan du ändra omfångsinställningarna och köra simuleringen igen genom att klicka på **[!UICONTROL Start simulation]**.
 
    ![](assets/offer_simulation_example_010.png)
 

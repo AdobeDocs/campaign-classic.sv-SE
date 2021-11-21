@@ -24,9 +24,9 @@ ht-degree: 1%
 ## Varningar {#warnings}
 
 * Migreringsprocessen får endast utföras av expertanvändare. Du måste få hjälp av minst en databasexpert, en systemadministratör och en programutvecklare från Adobe Campaign.
-* Innan du startar migreringen bör du kontrollera att de system och systemkomponenter du använder är kompatibla med v7. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
+* Innan du startar migreringen bör du kontrollera att de system och systemkomponenter du använder är kompatibla med v7. Läs [kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 * Om du använder Adobe Campaign Cloud Messaging (mellanlagring) kontaktar du Adobe innan du påbörjar hela migreringsprocessen.
-* Innan du startar en migreringsprocess måste du **säkerhetskopiera dina data.**
+* Innan du startar en migreringsprocess bör du **måste** säkerhetskopiera dina data.
 * Det kan ta flera dagar innan migreringen är klar.
 * Adobe Campaign v7 är striktare än version 5.11 och 6.02 vad gäller konfiguration. Detta gäller främst för att undvika problem som till exempel dataskador och för att bevara databasens dataintegritet. Följaktligen kanske vissa funktioner som erbjuds i v5.11 och v6.02 inte längre fungerar i v7 och därför behöver anpassas efter migreringen. Innan du sätter något i produktion rekommenderar vi att du systematiskt testar alla konfigurationer, särskilt arbetsflöden som är nödvändiga för att använda Adobe Campaign.
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 
 Innan du migrerar bör du installera den senaste versionen av den aktuella versionen som du använder.
 
-Kontrollera versionen på servern genom att gå till menyn **[!UICONTROL Help> About]** på klientkonsolen med kommandot **nlserver pdump**.
+Kontrollera versionen på servern genom att gå till **[!UICONTROL Help> About]** på klientkonsolen med **nlserver pdump** -kommando.
 
 ### Säkerhetskopiering av data {#data-backup}
 
-Innan du startar en migreringsprocess måste du **säkerhetskopiera dina data.**
+Innan du startar en migreringsprocess bör du **måste** säkerhetskopiera dina data.
 
 ### Miljö {#environment}
 
@@ -51,17 +51,17 @@ Eftersom migreringsproceduren är känslig rekommenderar vi att du läser det h�
 
 ## Migreringssteg {#migration-steps}
 
-Migreringsproceduren måste utföras på **alla**-servrar och i en viss ordning.
+Migreringsförfarandet måste genomföras på **alla** servrar och i en viss ordning.
 
-* När det gäller en **fristående plattform** (endatorläge) migreras programmet i sin helhet.
-* För en **standardplattform** (enterprise) är migreringsstegen följande:
+* Om **fristående plattform** (endatorläge) migreras programmet i sin helhet.
+* Om **standardplattform** (enterprise) är migreringsstegen följande:
 
    1. Migrera marknadsföringsservern.
    1. Migrera e-postservern (mta).
    1. Migrera omdirigerings- och spårningsservrar (Apache/IIS).
 
-* När det gäller en **Cloud Messaging-plattform** är körningsservrarna värdbaserade på Adobe Campaign. Kontakta Adobe Campaign för att koordinera migreringen mellan olika servrar.
-* För en **Power Booster- eller Power Cluster-plattform** är migreringsstegen följande:
+* Om **Plattformen Cloud Messaging**, är exekveringsservrarna på Adobe Campaign. Kontakta Adobe Campaign för att koordinera migreringen mellan olika servrar.
+* Om **Power Booster- eller Power Cluster-plattform**&#x200B;är migreringsstegen följande:
 
    1. Migrera omdirigerings- och spårningsservrar (Apache/IIS).
    1. Migrera Power Booster-/klusterservrarna.
@@ -69,7 +69,7 @@ Migreringsproceduren måste utföras på **alla**-servrar och i en viss ordning.
 
 ## Användarlösenord {#user-passwords}
 
-I v7 måste operatoranslutningen **internal** och **admin** vara skyddad med ett lösenord. Vi rekommenderar att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kommer du inte att kunna ansluta. Om du vill tilldela ett lösenord till **internal** anger du följande kommando:
+In v7, **internal** och **admin** -operatoranslutningen måste skyddas av ett lösenord. Vi rekommenderar starkt att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kommer du inte att kunna ansluta. Så här tilldelar du ett lösenord till **internal** anger du följande kommando:
 
 ```
 nlserver config -internalpassword
@@ -77,4 +77,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Lösenordet för **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/configuring-campaign-server.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md).
+>The **internal** lösenordet måste vara identiskt för alla spårningsservrar. Mer information finns i [Intern identifierare](../../installation/using/configuring-campaign-server.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md) -avsnitt.

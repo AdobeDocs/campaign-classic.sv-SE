@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Automatisk start av Adobe Campaign-modulerna (**webb**, **mta**, **wfserver**, osv.) tillhandahålls av **nlserver**-servern.
+Automatisk start av Adobe Campaign-modulerna (**webb**, **mta**, **wfserver**, osv.) tillhandahålls av **nlserver** server.
 
-När du installerar Adobe Campaign konfigureras datorn automatiskt så att tjänsten **nlserver** startar under startsekvensen.
+Om du installerar Adobe Campaign konfigureras datorn automatiskt så att **nlserver** startar under startsekvensen.
 
 Följande kommandon används för att starta och stänga av Adobe Campaign-tjänsten manuellt:
 
@@ -39,12 +39,12 @@ Följande kommandon används för att starta och stänga av Adobe Campaign-tjän
 
 Här är en lista med vanliga administrationskommandon som är tillgängliga i Linux (som **Adobe Campaign**):
 
-* Visa alla påbörjade Adobe Campaign-moduler: **/etc/init.d/nlserver6 pdump** eller **/etc/init.d/nlserver6 status**
+* Visa alla påbörjade Adobe Campaign-moduler: **/etc/init.d/nlserver6 pdump** eller **/etc/init.d/nlserver6-status**
 
    >[!NOTE]
    >
-   >Genom att lägga till parametern **-who** i kommandot **pdump** kan du samla in information om aktuella anslutningar (användare och processer).\
-   >Kommandot **/etc/init.d/nlserver6 status** (utan parametern &quot;-who&quot;) returnerar:
+   >Lägga till **-vem** parametern till **pdump** Med -kommandot kan du samla in information om aktuella anslutningar (användare och processer).\
+   >The **/etc/init.d/nlserver6-status** -kommandot (utan parametern -who) returneras:
    >
    >    * 0 om alla processer körs.
    >    * 1 om en process saknas.
@@ -52,13 +52,13 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >    * ett annat värde om ett fel uppstår.
 
 
-* Starta/stoppa en modul med flera instanser eller en instans (**web**, **trackinglog**, **syslogd**, **mta**, **wfserver**, **inmail**):
+* Starta/stoppa en modul med flera instanser eller en instans (**webb**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
 
    **nlserver start`<module>[@<instance>]`**
 
    **nlserver stop`<module>[@<instance>][-immediate][-noconsole]`**
 
-   Du kan också använda kommandot **nlserver start`<module>[@<instance>]`** för att starta om en modul.
+   Du kan också använda **omstart av nlserver`<module>[@<instance>]`** om du vill starta om en modul.
 
    Exempel:
 
@@ -77,28 +77,29 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >[!NOTE]
    >
    >* Om instansen inte anges används standardinstansen.
-   >* I en nödsituation använder du alternativet **-direct** för att framtvinga ett omedelbart stopp i processen (motsvarande Unix-kommandot **döda -9**).
-   >* Använd alternativet **-noconsole** för att försäkra dig om att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via modulen **syslogd**.
-   >* Använd alternativet **-verbose** om du vill visa ytterligare information om processåtgärder.
-   >
-   >   Exempel:
-   >
-   >   **webbverbose för omstart av nlserver**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan alternativet **-verbose** när du har hittat önskad information, för att undvika överlagring av loggar.
+   >* I händelse av en kris ska du använda **-omedelbar** möjlighet att framtvinga ett omedelbart stopp av processen (motsvarande Unix-kommandot) **döda -9**).
+   >* Använd **-noconsole** för att se till att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via **syslogd** -modul.
+   >* Använd **-verbose** om du vill visa ytterligare information om processåtgärder.
+
+      >
+      >   Exempel:
+      >
+      >   **webbverbose för omstart av nlserver**
+      >
+      >   **nlserver start mta@myinstance -verbose**
+      >
+      >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan **-verbose** för att undvika överlagring av loggar när du har hittat den önskade informationen.
 
 
-* Starta alla Adobe Campaign-processer (motsvarar att starta tjänsten **nlserver6**):
+* Starta alla Adobe Campaign-processer (motsvarar att starta **nlserver6** service):
 
    **nlserver watchdog -noconsole**
 
-* Stäng alla Adobe Campaign-processer (motsvarar att stänga av tjänsten **nlserver6**):
+* Stäng alla Adobe Campaign-processer (motsvarar att stänga av **nlserver6** service):
 
    **avstängning av nlserver**
 
-* Läs in modulkonfigurationen **nlserver web** (och webbservertilläggets modul, där det är tillämpligt) när filerna **serverConf.xml** och **config-`<instance>  .xml </instance>`** har redigerats.
+* Läs in **nlserver web** modulkonfiguration (och webbservertilläggsmodulen, om tillämpligt) när **serverConf.xml** och **config-`<instance>  .xml </instance>`** filer har redigerats.
 
    **nlserver config -reload**
 

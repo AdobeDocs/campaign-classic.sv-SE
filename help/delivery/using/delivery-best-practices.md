@@ -109,4 +109,4 @@ Se även:
 
 * [Steg för att skapa leverans](steps-about-delivery-creation-steps.md)
 
-* [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html)
+* [Checklista för säkerhet och integritet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv)

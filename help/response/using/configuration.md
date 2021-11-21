@@ -21,7 +21,7 @@ Detta avsnitt är avsett för personer som ansvarar för att konfigurera svarsha
 
 På så sätt kan du förstå hur du anpassar standarddatamodellen till den specifika karaktären hos en transaktionsregister som ligger utanför Adobe Campaign med tabellen över enskilda. Denna tabell över individer kan sammanfalla med tabellen över tillgängliga individer i Adobe Campaign eller med en annan tabell
 
-Måtthypotesen startas av åtgärdsprocessarbetsflödet ( **[!UICONTROL operationMgt]** ). Varje hypotes representerar en separat process som körs asynkront med körningsstatus (Redigeras, Väntar, Slutförd, Misslyckades osv.) och styrs av en schemaläggare som hanterar prioritetsbegränsningar, begränsning av antalet samtidiga processer, sidan med låg aktivitet och automatisk exekvering med frekvens.
+Mäthypotesen startas av arbetsflödet för operationsprocessen ( **[!UICONTROL operationMgt]** ). Varje hypotes representerar en separat process som körs asynkront med körningsstatus (Redigeras, Väntar, Slutförd, Misslyckades osv.) och styrs av en schemaläggare som hanterar prioritetsbegränsningar, begränsning av antalet samtidiga processer, sidan med låg aktivitet och automatisk exekvering med frekvens.
 
 ## Konfigurera scheman {#configuring-schemas}
 
@@ -33,9 +33,9 @@ Programintegrering krävs innan reaktionsmodulen används, för att definiera de
 
 ### Standardscheman {#standard-schemas}
 
-Schemat **[!UICONTROL nms:remaMatch]** som är klart att användas innehåller reaktionsloggtabellen, dvs. relationen mellan individer, hypotes och transaktionstabell. Detta schema ska användas som arvsschema för reaktionsloggarnas slutliga destinationstabell.
+En färdig lösning **[!UICONTROL nms:remaMatch]** schemat innehåller reaktionsloggtabellen, dvs. relationen mellan individer, hypotes och transaktionstabell. Detta schema ska användas som arvsschema för reaktionsloggarnas slutliga destinationstabell.
 
-Schemat **[!UICONTROL nms:remaMatchRcp]** är också standard och innehåller lagring av reaktionsloggar för Adobe Campaign-mottagare ( **[!UICONTROL nms:recipient]** ). För att kunna användas måste den utökas för att mappas till ett transaktionsregister (som innehåller inköp osv.).
+The **[!UICONTROL nms:remaMatchRcp]** schemat finns också som standard och innehåller lagring av reaktionsloggar för Adobe Campaign-mottagare ( **[!UICONTROL nms:recipient]** ). För att kunna användas måste den utökas för att mappas till ett transaktionsregister (som innehåller inköp osv.).
 
 ### Transaktionsregister och transaktionsinformation {#transaction-tables-and-transaction-details}
 
@@ -57,22 +57,22 @@ I följande schema visas kopplingar mellan de olika tabellerna när konfiguratio
 
 ### Svarshantering och mottagare {#response-management-with-adobe-campaign-recipients}
 
-I det här exemplet integrerar vi en tabell med inköp i svarsmodulen med den inbyggda mottagartabellen **[!UICONTROL nms:recipient]** för Adobe Campaign.
+I det här exemplet integrerar vi en tabell med inköp i svarsmodulen med den inbyggda mottagartabellen från Adobe Campaign **[!UICONTROL nms:recipient]**.
 
-Svarsloggtabellen på en **[!UICONTROL nms:remaMatchRcp]**-mottagare utökas för att lägga till en länk till inköpstabellschemat. I följande exempel kallas inköpstabellen **demo:purchase**.
+Svarstabellen loggar på en **[!UICONTROL nms:remaMatchRcp]** mottagaren utökas för att lägga till en länk till inköpstabellschemat. I följande exempel anropas inköpstabellen **demo:köp**.
 
 1. Via Adobe Campaign Explorer väljer du **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
-1. Högerklicka på **Mottagare** och välj **[!UICONTROL Actions]** och **[!UICONTROL Modify the options of the targeting dimensions]**.
+1. Högerklicka **Mottagare** välj **[!UICONTROL Actions]** och **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. Du kan anpassa **[!UICONTROL Extension namespace]** i nästa fönster och sedan klicka på **[!UICONTROL Next]**.
+1. Du kan anpassa **[!UICONTROL Extension namespace]** i nästa fönster klickar du på **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
-1. Kontrollera att rutan **[!UICONTROL Generate a storage schema for reactions]** är markerad i kategorin **[!UICONTROL Response management]**.
+1. I **[!UICONTROL Response management]** ska du se till att **[!UICONTROL Generate a storage schema for reactions]** är markerad.
 
-   Klicka sedan på **[!UICONTROL Define additional fields...]** för att markera de relaterade transaktionstabellerna och lägga till de önskade fälten i tillägget för nms:remaMatchRcp-schemat.
+   Klicka sedan på **[!UICONTROL Define additional fields...]** om du vill välja relaterade transaktionstabeller och lägga till önskade fält i tillägget för nms:remaMatchRcp-schemat.
 
    ![](assets/delivery_mapping3.png)
 
@@ -104,11 +104,11 @@ name="remaMatchRcp" namespace="cus">
 
 I det här exemplet integrerar vi en inköpstabell i svarsmodulen med hjälp av en annan tabell med personer än mottagartabellen i Adobe Campaign.
 
-* Skapa ett nytt svarsloggsschema som härleds från **[!UICONTROL nms:remaMatch]**-schemat.
+* Skapa ett nytt svarsloggsschema som härleds från **[!UICONTROL nms:remaMatch]** schema.
 
-   Eftersom tabellen med individer skiljer sig från tabellen med Adobe Campaign-mottagare måste du skapa ett nytt schema med svarsloggarna baserat på schemat **[!UICONTROL nms:remaMatch]**. Fyll sedan i den med länkar till leveransloggarna och inköpstabellen.
+   Eftersom tabellen med enskilda användare skiljer sig från tabellen med Adobe Campaign-mottagare är det nödvändigt att skapa ett nytt schema med svarsloggarna baserat på **[!UICONTROL nms:remaMatch]** schema. Fyll sedan i den med länkar till leveransloggarna och inköpstabellen.
 
-   I följande exempel använder vi schemat **demo:broadLogPers** och transaktionstabellen **demo:purchase**:
+   I följande exempel använder vi **demo:broadLogPers** schema och **demo:köp** transaktionsregister:
 
    ```
    <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -127,7 +127,7 @@ I det här exemplet integrerar vi en inköpstabell i svarsmodulen med hjälp av 
    </srcSchema>
    ```
 
-* Ändra hypotesformen i **[!UICONTROL nms:remaHypothesis]**-schemat.
+* Ändra hypotesformen i **[!UICONTROL nms:remaHypothesis]** schema.
 
    Som standard visas svarsloggarna i mottagarloggarna. Du måste därför ändra hypotesformuläret för att kunna visa de nya svarsloggarna som skapades under det föregående steget.
 

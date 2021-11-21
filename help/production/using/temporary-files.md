@@ -23,7 +23,7 @@ Felmeddelanden som följande kan visas (särskilt i leveransloggar) när systeme
 
 Orsaken är följande:
 
-Adobe Campaign genererar temporära filer under **/tmp** och byter namn på dem sedan så att de flyttas till **/usr/local/neolane/nl6/var**. Det här felet inträffar när båda mapparna (**/tmp** och **/usr/local/neolane/nl6/var**, som i själva verket är en symbolisk länk till **/var/nl6**) motsvarar olika enheter. Kommandot **df** används för verifiering.
+Adobe Campaign genererar tillfälliga filer under **/tmp** och byter sedan namn på dem för att flytta dem till **/usr/local/neolane/nl6/var**. Det här felet inträffar när båda mapparna (**/tmp** och **/usr/local/neolane/nl6/var**, som i själva verket är en symbolisk länk till **/var/nl6**) motsvarar olika enheter. The **df** -kommandot används för verifiering.
 
 För att åtgärda det här problemet måste de temporära filerna genereras på samma enhet som målet.
 

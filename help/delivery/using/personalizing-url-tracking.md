@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ![](../../assets/common.svg)
 
-Avancerade inställningar för meddelandespårning är tillgängliga via ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet i leveransguiden.
+Avancerade inställningar för meddelandespårning är tillgängliga via **[!UICONTROL Tracking & Images]** i verktygsfältet i leveransguiden.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Du kan konfigurera spårningsalternativen:
 
    >[!CAUTION]
    >
-   >När spårning inte är aktiverat för en leverans (dvs. **[!UICONTROL Activate tracking]**-alternativet är inte valt), rapporter och data som rör spårning är inte tillgängliga: Öppnar, snabbklicksrapporter och URL-rapporter för spårning visar inga data och **[!UICONTROL Tracking logs]** flikar visas inte för den här leveransen.
+   >När spårning inte är aktiverat för en leverans (dvs. **[!UICONTROL Activate tracking]** inte valt) är rapporter och data för spårning inte tillgängliga: Öppnar, snabbklickningar och spårade URL:er visar inga data, och **[!UICONTROL Tracking logs]** flikar visas inte för den här leveransen.
 
 * Aktivera/inaktivera spårning för meddelande öppnas.
 
@@ -41,7 +41,7 @@ De spårade URL:erna visas i det centrala fönstret i trädform.
 
 Du kan aktivera eller inaktivera spårning individuellt för varje URL för meddelandet. Mer information om detta finns i [det här avsnittet](how-to-configure-tracked-links.md).
 
-På fliken **[!UICONTROL Advanced]** kan du anpassa beräkningsformlerna för de spårade URL:erna och den inledande URL:en.
+The **[!UICONTROL Advanced]** kan du anpassa beräkningsformlerna för de spårade URL:erna och den inledande URL:en.
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 

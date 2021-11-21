@@ -79,8 +79,7 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Leveransidentifierare som ska användas om det inte finns någon sessionscookie. Det här värdet ska vara
-                                 uttrycks hexadecimalt.
+                              <p>Leveransidentifierare som ska användas om det inte finns någon sessionscookie. Detta värde ska uttryckas hexadecimalt.
                               </p> 
                            </td> 
                         </tr>
@@ -92,9 +91,7 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Parametern som används för att identifiera Internetanvändaren. Den här parameterns format är "name=value",
-                                 där namnet är ett fält i mottagarschemat. Den här parametern får högre prioritet
-                                 den identifierare som finns i sessionens cookie.
+                              <p>Parametern som används för att identifiera Internetanvändaren. Den här parameterns format är "name=value", där namnet är ett fält i mottagarschemat. Den här parametern har högre prioritet än identifieraren i sessionens cookie.
                               </p> 
                            </td> 
                         </tr> 
@@ -131,5 +128,5 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
 
 Följande metoder är möjliga:
 
-* Infoga URL:en i attributet **&quot;src&quot;** för en HTML **`<img>`**-tagg som ingår i den webbsida som du vill spåra.
+* Infoga URL-adressen i **&quot;src&quot;** attribut för HTML **`<img>`** -tagg som ingår i webbsidan som du vill spåra.
 * Direktanrop till omdirigeringsservern när webbsidan som du vill spåra genereras.

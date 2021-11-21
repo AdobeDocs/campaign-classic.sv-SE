@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-De arbetsflöden som beskrivs nedan installeras med tillägget **Message Center - Execution** som standard.
+Arbetsflödena nedan installeras tillsammans med **Meddelandecenter - körning** tillägg som standard.
 
 Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
@@ -42,7 +42,7 @@ Beroende på vilken Campaign-version du har finns mer information i följande av
      <li> <p><strong>Skickat</strong>: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</p> </li> 
      <li> <p><strong>Ignoreras av leveransen</strong>: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</p> </li> 
      <li> <p><strong>Leveransfel</strong>: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</p> </li> 
-     <li> <p><strong>Händelsen omfattas</strong> inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</p> </li> 
+     <li> <p><strong>Händelsen täcks inte</strong>: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

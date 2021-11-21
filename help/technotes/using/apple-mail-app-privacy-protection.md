@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Skydd av e-postsekretess i Apples e-postapp
-description: Lär dig hur dina kampanjer kan påverkas av Apples sekretessfunktion för e-post
+title: Skydd av e-postsekretess i appen Apple Mail
+description: Läs om hur era kampanjer kan påverkas av Apple funktion för skydd av personuppgifter för e-post
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Skydd av e-postsekretess i Apples e-postapp
+# Skydd av e-postsekretess i appen Apple Mail
 
 ![Gäller för v7 och v8](../../assets/common.svg)
 
 ## Vad har ändrats?
 
-2021 introducerade Apple nya funktioner för integritetsskydd för sin egen Mail-app. Den här appen innehåller nu Apples funktion för skydd av e-postsekretess. Avsändare kan i princip inte längre använda spårningspixlar för att samla in information om mottagare som har valt att aktivera Apples funktion för skydd av e-postsekretess. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}.
+2021 introducerade Apple nya funktioner för integritetsskydd för sina egna Mail-appar. Den här appen innehåller nu funktionen Apple sekretesskydd för e-post. Avsändare kan i princip inte längre använda spårningspixlar för att samla in information om mottagare som har valt att aktivera funktionen Apple skydd av personuppgifter. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv){target=&quot;_blank&quot;}.
 
 ## Hur påverkas mina kampanjer?
 
@@ -24,15 +24,15 @@ Adobe Campaign ger möjlighet att använda spårning av pixlar för att spåra e
 
 ## Vilka åtgärder ska jag vidta?
 
-Apples nya funktion är formen av saker som kommer att komma in i branschen när det gäller skydd av e-postsekretess. Vi rekommenderar starkt att du följer Adobe rekommendationer.
+Apple nya funktion är den form av saker som kommer att komma in i branschen när det gäller skydd av e-postsekretess. Vi rekommenderar starkt att du följer Adobe rekommendationer.
 
 ### Utvärdera effekten på era kampanjutlösare
 
-Utvärdera hur dessa ändringar påverkar era aktuella kampanjutlösare. Identifiera de arbetsflöden där e-postöppningar används som ett kriterium för segmentering, målinriktning eller återmarknadsföring. Läs [tipsen och tricks](#find-email-open-tracking).
+Utvärdera hur dessa ändringar påverkar era aktuella kampanjutlösare. Identifiera de arbetsflöden där e-postöppningar används som ett kriterium för segmentering, målinriktning eller återmarknadsföring. Läs [tips och tricks](#find-email-open-tracking).
 
 ### Bevara dina data
 
-Bevara era data och konsolidera era nuvarande kunskaper på olika enheter. Du kan basera nyckeltal för nyckeltal (KPI) på användaragenten. Du kan till exempel skapa nyckeltal runt profiler för personer som använder iOS och Apples Mail-app. Läs [tipsen och tricks](#preserve-tracking-data).
+Bevara era data och konsolidera era nuvarande kunskaper på olika enheter. Du kan basera nyckeltal för nyckeltal (KPI) på användaragenten. Du kan till exempel skapa nyckeltal runt profiler för personer som använder iOS och Apple Mail. Läs [tips och tricks](#preserve-tracking-data).
 
 ### Arkivera spårningsloggarna efter kvarhållningsperioden
 
@@ -44,8 +44,8 @@ Arkivera spårningsloggarna även efter Adobe Campaign kvarhållningsperiod:
 
 ### Utvärdera den aktuella trenden för öppna frekvenser
 
-Bestäm vilken andel av publiken som använder Apples Mail-app på en iOS-enhet.
-Med hjälp av den här utvärderingen kan du identifiera potentiella avvikelser och orsaken till dem. Du kan avgöra om en lucka beror på problem med kampanjprestanda eller på Apples sekretesskydd. Läs [tipsen och tricks](#measure-ios-footprint).
+Bestäm hur stor del av publiken som använder appen Apple Mail på en iOS-enhet.
+Med hjälp av den här utvärderingen kan du identifiera potentiella avvikelser och orsaken till dem. Du kan avgöra om en lucka beror på problem med kampanjprestanda eller på Apple sekretesspolicy. Läs [tips och tricks](#measure-ios-footprint).
 
 ### Utvärdera er kampanjstrategi och resultatstatistik
 
@@ -55,7 +55,7 @@ Vi rekommenderar att du utforskar tillgängliga data och utvärderar korrelation
 
 ## Tips och tricks
 
-### Mät det totala iOS-utrymmet {#measure-ios-footprint}
+### Mät iOS totala utrymme {#measure-ios-footprint}
 
 Om du vill samla in insikter från Adobe Campaign-data kan du använda färdiga rapporter:
 
@@ -81,7 +81,7 @@ Om du vill samla in insikter från Adobe Campaign-data kan du använda färdiga 
 
 Du kan identifiera de arbetsflöden där e-postöppningar används som ett kriterium för segmentering, målinriktning och återmarknadsföring.
 
-För att göra detta kan du använda attributet **[!UICONTROL type]** för den spårade länk-URL:en (**[!UICONTROL url/@type]**). För att e-post öppnas är det här attributet inställt på **[!UICONTROL Open]**. Det här attributet är tillgängligt från frågeredigeraren, aktiviteten **[!UICONTROL Query]** i ett arbetsflöde och fördefinierade filter. Du kan använda det här attributet som riktkriterium för marknadsföringskampanjer.
+Om du vill göra det kan du använda **[!UICONTROL type]** attribut för den spårade länkens URL (**[!UICONTROL url/@type]**). För att e-post öppnas är attributet inställt på **[!UICONTROL Open]**. Det här attributet är tillgängligt från frågeredigeraren, **[!UICONTROL Query]** i ett arbetsflöde och fördefinierade filter. Du kan använda det här attributet som riktkriterium för marknadsföringskampanjer.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -89,7 +89,7 @@ I det här exemplet vill en marknadsförare skicka ett belöningserbjudande till
 
 * Du kan använda e-postöppning som målvillkor i en fråga.
 
-   Du kan ange som filtreringsvillkor att URL-typen för spårningsloggarna för en viss leverans måste anges till **[!UICONTROL Open]**.
+   Du kan ange, som filtreringsvillkor, att URL-typen för spårningsloggarna för en viss leverans måste anges till **[!UICONTROL Open]**.
 
    ![](assets/identify-email-open-tracking-2.png)
 
@@ -105,7 +105,7 @@ I det här exemplet vill en marknadsförare skicka ett belöningserbjudande till
    >
    >Från ett arbetsflöde kan du inte visa målvillkoren för ett fördefinierat filter.
 
-Om du vill hämta listan över arbetsflöden där e-postöppningar används som målinriktningskriterier måste du fråga schemat `xtk:workflow`. Innehållet i arbetsflödet lagras i fältet **[!UICONTROL XML memo (data)]** i XML-format.
+Om du vill hämta en lista över arbetsflöden där e-postöppningar används som målinriktningskriterier måste du fråga `xtk:workflow` schema. Innehållet i arbetsflödet lagras i **[!UICONTROL XML memo (data)]** i XML-format.
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -113,7 +113,7 @@ Du kan ange att arbetsflödena måste innehålla följande innehåll:
 
 `expr="[url/@type] = 2"`
 
-Det här målinriktningskriteriet innebär att typen för den spårade URL:en måste anges till **[!UICONTROL Open]**.
+Det här målinriktningskriteriet innebär att den spårade URL-typen måste anges till **[!UICONTROL Open]**.
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -138,7 +138,7 @@ I det här exemplet visas en anpassad implementering i ett enda tekniskt arbetsf
 >
 >Vi rekommenderar att du testar och validerar det här paketet i en icke-produktionsmiljö.
 
-Hämta [exempelpaketet](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) och installera det. [Läs mer](../../platform/using/working-with-data-packages.md#importing-packages).
+Ladda ned [exempelpaket](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) och installera det. [Läs mer](../../platform/using/working-with-data-packages.md#importing-packages).
 
 När du har installerat paketet kan du komma åt arbetsflödet från den mapp som innehåller de färdiga tekniska arbetsflödena i din instans:
 
@@ -158,7 +158,7 @@ Arbetsflödet omfattar följande huvudsteg:
 
 Arbetsflödet omfattar följande detaljerade steg:
 
-1. Den initiala aktiviteten är en frågeaktivitet i `xtk:workflow`-schemat. Den här aktiviteten används för att hitta, i den aktuella instansen, explicita arbetsflödesfrågor som innehåller e-post som öppnas som ett målinriktningskriterium.
+1. Den inledande aktiviteten är en frågeaktivitet i `xtk:workflow` schema. Den här aktiviteten används för att hitta, i den aktuella instansen, explicita arbetsflödesfrågor som innehåller e-post som öppnas som ett målinriktningskriterium.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -294,7 +294,7 @@ Arbetsflödet omfattar följande detaljerade steg:
    instance.vars.workflowList = sWorkflowList;
    ```
 
-1. HTML-tabellen läggs till i meddelandemallen.
+1. Tabellen HTML läggs till i meddelandemallen.
 
    ```js
    <%= instance.vars.workflowLIst%>
@@ -328,8 +328,8 @@ Vi rekommenderar starkt att du bevarar dessa data av flera anledningar:
 
    Kontrollera konfigurationen av instansen. [Läs mer](../../platform/using/privacy-management.md#data-retention).
 
-* Förutom Apples senaste ändringar kan ni använda spårningsdata för att lägga till enorma värden för att öka målgruppens engagemang.
-* Apple kan göra ytterligare ändringar av den inbyggda e-postappen och funktionen för skydd av e-postsekretess.
+* Förutom Apple senaste ändringar kan ni använda spårningsdata för att skapa mervärde som ökar målgruppens engagemang.
+* Apple kan göra ytterligare ändringar av sina program för e-post och funktionen för skydd av e-postsekretess.
 
 Av alla dessa skäl rekommenderar vi starkt att du exporterar dessa data så snart som möjligt. Annars kan spårningsdata för en del av publiken påverkas negativt.
 
@@ -339,11 +339,11 @@ Om du vill bevara spårningsdata måste du exportera dem från Adobe Campaign ti
 
 >[!IMPORTANT]
 >
->I följande exempel fokuseras på `nms:Recipient`-schemat, som är standardprofilschemat, på körningen. Om du använder ytterligare anpassade målmappningar som är kopplade till anpassade profiler, rekommenderar vi att du utökar den här exportstrategin till alla anpassade loggtabeller. [Läs mer](../../configuration/using/target-mapping.md).
+>I följande exempel fokuseras på användningsknappen `nms:Recipient` schema, som är standardprofilschemat. Om du använder ytterligare anpassade målmappningar som är kopplade till anpassade profiler, rekommenderar vi att du utökar den här exportstrategin till alla anpassade loggtabeller. [Läs mer](../../configuration/using/target-mapping.md).
 
 ##### Princip
 
-Som standard är `nms:Recipient`-schemat länkat till tre scheman som du måste exportera:
+Som standard är `nms:Recipient` schemat är länkat till tre scheman som du måste exportera:
 
 | Schema | Innehåll |
 | --- | --- |
@@ -381,11 +381,11 @@ I det här exemplet visas hur du kan exportera spårningsdata från Adobe Campai
    Den inledande frågan används för att hämta spårningsloggarna för de senaste tre månaderna.
 Du kan använda en stegvis fråga för att extrahera endast de poster som du ännu inte har exporterat.
 
-   Lägg till all nödvändig information från noden **[!UICONTROL Additional data]**.
+   Lägg till all nödvändig information från **[!UICONTROL Additional data]** nod.
 
    ![](assets/export-tracking-data-2.png)
 
-1. Lägg till en **[!UICONTROL Data extraction (file)]**-aktivitet. Mappa alla data från frågan till ett extraheringsfilformat.
+1. Lägg till en **[!UICONTROL Data extraction (file)]** aktivitet. Mappa alla data från frågan till ett extraheringsfilformat.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -397,15 +397,15 @@ Du kan använda en stegvis fråga för att extrahera endast de poster som du än
 
 ![](assets/export-tracking-data-5.png)
 
-##### Avancerad implementering: nedbrytning på iOS-enhet
+##### Avancerad implementering: uppdelat efter iOS
 
-Du kan använda arbetsflöden för att avgöra om en mottagare använder Apples Mail-app. Du kan dela spårningsloggar efter enhet. Du kan till exempel använda frågefilter för att dela upp poster på en iOS-enhet:
+Du kan använda arbetsflöden för att avgöra om en mottagare använder appen Apple Mail. Du kan dela spårningsloggar efter enhet. Du kan till exempel använda frågefilter för att dela upp poster efter iOS-enhet:
 
 | Program | Operativsystem eller enhet  | Frågefilter |
 | --- | --- | --- |
 | Apple Mail | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
 | Apple Mail | iOS 14 eller iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
-| Apple Mail | iOS-mobilenheter: iPad, iPod och iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
+| Apple Mail | iOS mobila enheter: iPad, iPod och iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
 | Apple Mail | iPhone, iPad eller iPod | `browser (Browser) equal to 'AppleWebKit' and device (Browser) equal to iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad` |
 | Apple Mail | Mac | `browser (Browser) equal to 'AppleWebKit' and operating System (Browser) contains 'Mac'` |
 | Safari | macOS | `browser (Browser) equal to 'Safari' and device (Browser) equal to PC and operating System (Browser) contains 'Mac'` |
@@ -420,18 +420,18 @@ Du kan använda dessa regler för olika syften:
 * Skapa undertryckningslistor
 * Rapportering
 
-De här exemplen visar hur du kan använda arbetsflöden för att dela upp poster på en iOS-enhet:
+I följande exempel visas hur du kan använda arbetsflöden för att dela upp poster på iOS-enheter:
 
 * Det första exempelarbetsflödet omfattar följande aktiviteter:
 
-   1. Den inledande **[!UICONTROL Query]**-aktiviteten används för att välja alla e-postöppningar som ska öppnas de senaste tre månaderna.
-   1. En **[!UICONTROL Split]**-aktivitet används för att dela upp markeringen via e-postprogram, webbläsare, operativsystem och enhet.
+   1. Den inledande **[!UICONTROL Query]** används för att välja alla e-postöppningar som ska öppnas de senaste tre månaderna.
+   1. A **[!UICONTROL Split]** används för att dela upp urvalet via e-postprogram, webbläsare, operativsystem och enhet.
 
-   1. En **[!UICONTROL Deduplication]**-aktivitet följer varje **[!UICONTROL Split]**-aktivitet. Aktiviteten **[!UICONTROL Deduplication]** används för att ta bort dubbla e-postadresser.
+   1. A **[!UICONTROL Deduplication]** aktivitet följer varje **[!UICONTROL Split]** aktivitet. The **[!UICONTROL Deduplication]** används för att ta bort dubbla e-postadresser.
 
-      Aktiviteten **[!UICONTROL Deduplication]** placeras efter aktiviteten **[!UICONTROL Split]** för att undvika att förlora information om mottagare som använder olika enheter.
+      The **[!UICONTROL Deduplication]** aktiviteten placeras efter **[!UICONTROL Split]** för att undvika att förlora information om mottagare som använder olika enheter.
 
-   1. En **[!UICONTROL End]**-aktivitet följer varje **[!UICONTROL Deduplication]**-aktivitet.
+   1. An **[!UICONTROL End]** aktivitet följer varje **[!UICONTROL Deduplication]** aktivitet.
 
    Den här typen av arbetsflöde är användbart om du bara lagrar mottagare i den körklara mottagartabellen för målinriktning.
 
@@ -439,13 +439,13 @@ De här exemplen visar hur du kan använda arbetsflöden för att dela upp poste
 
 * Arbetsflödet i det andra exemplet omfattar följande aktiviteter:
 
-   1. Den inledande **[!UICONTROL Query]**-aktiviteten används för att välja alla e-postöppningar som ska öppnas de senaste tre månaderna.
-   1. En **[!UICONTROL Deduplication]**-aktivitet används för att ta bort dubbla e-postadresser.
-   1. En **[!UICONTROL Fork]**-aktivitet används:
+   1. Den inledande **[!UICONTROL Query]** används för att välja alla e-postöppningar som ska öppnas de senaste tre månaderna.
+   1. A **[!UICONTROL Deduplication]** används för att ta bort dubbla e-postadresser.
+   1. A **[!UICONTROL Fork]** används:
 
-      * I en övergång används aktiviteten **[!UICONTROL Change dimension]** för att hitta de mottagare som spårningsloggen refererar till.
-      * I den andra övergången används aktiviteten **[!UICONTROL Split]** för att dela upp markeringen via e-postprogram, webbläsare, operativsystem och enhet.
-   1. En **[!UICONTROL End]**-aktivitet följer varje övergång efter **[!UICONTROL Split]**-aktiviteten.
+      * I en och samma övergång **[!UICONTROL Change dimension]** används för att hitta de mottagare som spårningsloggen refererar till.
+      * I den andra övergången **[!UICONTROL Split]** används för att dela upp urvalet via e-postprogram, webbläsare, operativsystem och enhet.
+   1. An **[!UICONTROL End]** aktiviteten följer varje övergång efter **[!UICONTROL Split]** aktivitet.
 
    Den här typen av arbetsflöde är användbart om du lagrar mottagare i en annan tabell än den färdiga mottagartabellen.
 
@@ -453,4 +453,4 @@ De här exemplen visar hur du kan använda arbetsflöden för att dela upp poste
 
 ## Användbara länkar
 
-[Vanliga frågor om skydd av Apples sekretess](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
+[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}

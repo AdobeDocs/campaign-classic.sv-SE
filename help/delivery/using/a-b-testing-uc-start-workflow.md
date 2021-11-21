@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-1. Klicka på **[!UICONTROL Start]** i arbetsflödet.
+1. Klicka **[!UICONTROL Start]** arbetsflödet.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 

@@ -23,17 +23,17 @@ De filter som är tillgängliga i Adobe Campaign definieras via filtervillkor so
 >
 >Mer information om hur du skapar filter finns i [det här avsnittet](../../platform/using/filtering-options.md).
 
-Noden **[!UICONTROL Administration > Configuration > Predefined filters]** innehåller alla filter som används i listorna och översikterna.
+The **[!UICONTROL Administration > Configuration > Predefined filters]** noden innehåller alla filter som används i listorna och översikterna.
 
-Operatorlistan kan till exempel filtreras med **[!UICONTROL Active accounts]**:
+Operatorlistan kan till exempel filtreras efter **[!UICONTROL Active accounts]**:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-Det matchande filtret innehåller frågan för **[!UICONTROL Account disabled]**-värdet för **[!UICONTROL Operators]**-schemat:
+Det matchande filtret innehåller frågan på **[!UICONTROL Account disabled]** värdet på **[!UICONTROL Operators]** schema:
 
 ![](assets/query_editor_filter_sample_2.png)
 
-För samma lista kan du med filtret **[!UICONTROL By login or label]** filtrera data i listan baserat på det värde som anges i filterfältet:
+För samma lista **[!UICONTROL By login or label]** Med -filter kan du filtrera data i listan baserat på det värde som anges i filterfältet:
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -49,12 +49,12 @@ Om du vill matcha filtreringsvillkoren måste operatörskontot kontrollera någo
 
 >[!NOTE]
 >
->Med funktionen **[!UICONTROL Upper]** kan du inaktivera den skiftlägeskänsliga funktionen.
+>The **[!UICONTROL Upper]** kan du inaktivera skiftlägeskänslig funktion.
 
-Med **[!UICONTROL Taken into account if]**-kolumnen kan du definiera programvillkoren för dessa filtervillkor. Här representerar **$(/tmp/@text)**-tecknen innehållet i det inmatningsfält som är länkat till filtret:
+The **[!UICONTROL Taken into account if]** Med -kolumnen kan du definiera programvillkoren för dessa filtervillkor. Här är **$(/tmp/@text)** tecken representerar innehållet i det inmatningsfält som är länkat till filtret:
 
 ![](assets/query_editor_filter_sample_5.png)
 
-Här, **$(/tmp/@text)=&#39;byrå&#39;**
+Här, **$(/tmp/@text)=&#39;agent&#39;**
 
-**$(/tmp/@text)!=&#39;**-uttryck tillämpar varje villkor när inmatningsfältet inte är tomt.
+The **$(/tmp/@text)!=&#39;** -uttrycket använder varje villkor när indatafältet inte är tomt.

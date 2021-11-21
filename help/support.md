@@ -7,7 +7,7 @@ exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 
@@ -31,7 +31,7 @@ Få support via våra vanliga frågor och svar, god praxis, onlineresurser och s
 
 ### Vanliga frågor och svar
 
-Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörningen? vilket är arbetsflödet för databasrensning?.. [Läs de 10 viktigaste frågorna](platform/using/common-questions.md).
+Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörningen? vilket är arbetsflödet för databasrensning?.. [Läs de 10 vanligaste frågorna](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>Frågor och svar om ämnen</strong></td><td><strong>Vanliga problem</strong></td><td><strong>God praxis</strong></td><td><strong>Instruktioner</strong></td></tr>
@@ -99,7 +99,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste vara värd för AWS och uppgraderas med den senaste [Gold Standard](rn/using/gs-overview.md)-versionen eller den [senaste GA-versionen (21.1.4)](rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste ligga på AWS och uppgraderas med den senaste [Gold Standard](rn/using/gs-overview.md) eller [senaste GA-bygge (21.1.4)](rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
 
 ### Hur kommer jag åt Kontrollpanelen?
 
@@ -117,13 +117,13 @@ På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna til
 
 Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sidor:
 * [Märkning av underdomäner](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=sv)
-* [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Övervaka SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Konfigurera en ny underdomän](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv)
+* [Övervaka SSL-certifikat](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=sv)
 
 ### Instansinställningar
 
 Lär dig hur du hanterar inställningarna för Campaign Classic-instanser på Kontrollpanelen. Läs mer på dessa sidor:
-* [Lägg till IP-adresser i ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) listan för att komma åt dina Campaign-instanser
+* [Lägg till IP-adresser till tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
 * [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
 * [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
@@ -132,7 +132,7 @@ Lär dig hur du hanterar inställningarna för Campaign Classic-instanser på Ko
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Det nya fästingsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
+Det nya biljettsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
 
 ### Fråga experterna!
 
@@ -140,11 +140,11 @@ Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor elle
 
 ### Access Campaign Download Center
 
-Från och med juni 2020 ersätter Experience Cloud Solution Software Distribution det gamla Neolane Download Center och ger en effektivare upplevelse för att hitta och ladda ned programvara, paket och verktyg. [Klicka ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) här för att få åtkomst till Experience Cloud Software Distribution.
+Från och med juni 2020 ersätter Experience Cloud Solution Software Distribution det gamla Neolane Download Center och ger en effektivare upplevelse för att hitta och ladda ned programvara, paket och verktyg. [Klicka här](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få tillgång till Experience Cloud Software Distribution.
 Läs mer om nya Download Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 ### Skapa en biljett eller starta en chatt
 
 Om du skapar ett ärende kan du kontakta Adobe kundsupportteam om problem som du har med dina Adobe-produkter. Adobe Admin Console hjälper dig att lösa eller felsöka problemen genom att chatta med Adobe kundsupport.
 
-Anslut till [Adobe Admin Console](https://adminconsole.adobe.com/overview) för att logga ett problem eller starta en chattsession i det nya systemet. Följ den detaljerade proceduren som beskrivs i [den här sidan](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Anslut till [Adobe Admin Console](https://adminconsole.adobe.com/overview) för att logga ett problem eller starta en chattsession i det nya systemet. Följ den detaljerade proceduren som beskrivs på [den här sidan](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).

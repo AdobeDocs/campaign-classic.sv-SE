@@ -23,7 +23,7 @@ Du kan använda den här integrerade Tomcat-servern för att hantera HTTP-begär
 
 I detta fall:
 
-* Standardlyssningsporten är 8080. Mer information finns i [det här avsnittet](../../installation/using/configure-tomcat.md).
+* Standardlyssningsporten är 8080. Om du vill ändra den kan du läsa [det här avsnittet](../../installation/using/configure-tomcat.md).
 * Klientkonsolerna ansluter sedan med en URL som [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
 
 Av säkerhets- och administrationsskäl rekommenderar vi dock att du använder en dedikerad webbserver som huvudstartpunkt för HTTP-trafik när datorn som kör Adobe Campaign exponeras på Internet och du vill öppna konsolen utanför nätverket.
@@ -42,7 +42,7 @@ Konfigurationsproceduren för en IIS-webbserver är vanligtvis grafisk. Det hand
 
 I följande avsnitt beskrivs konfigurationen i IIS 7. Konfigurationen för IIS8 är i stort sett densamma.
 
-Om Web IIS-servern inte redan är installerad på datorn kan du installera den via **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]**-menyn.
+Om Web IIS-servern inte redan är installerad på datorn kan du installera den via **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** -menyn.
 
 I IIS 7 måste du, förutom standardtjänster, installera ISAPI-tillägg och ISAPI-filter.
 
@@ -52,7 +52,7 @@ I IIS 7 måste du, förutom standardtjänster, installera ISAPI-tillägg och ISA
 
 Använd följande konfigurationssteg:
 
-1. Öppna IIS via menyn **[!UICONTROL Control panel > Administrative tools > Services]**.
+1. Öppna IIS via **[!UICONTROL Control panel > Administrative tools > Services]** -menyn.
 1. Skapa och konfigurera platsen (t.ex. Adobe Campaign) beroende på nätverkets parametrar (TCP-anslutningsporten, DNS-värden, IP-adress).
 
    ![](assets/s_ncs_install_iis7_add_site.png)
@@ -65,7 +65,7 @@ Använd följande konfigurationssteg:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. Med ett **VBS**-skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Starta programmet genom att dubbelklicka på filen **iis_neolane_setup.vbs** som finns i mappen `[INSTALL]\conf`, där `[INSTALL]` är sökvägen till Adobe Campaign installationsmapp.
+1. A **VBS** Med hjälp av skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Starta programmet genom att dubbelklicka på **iis_neolane_setup.vbs** filen finns i `[INSTALL]\conf` mapp, var `[INSTALL]` är sökvägen till Adobe Campaign installationsmapp.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -73,7 +73,7 @@ Använd följande konfigurationssteg:
    >
    >Om du har en Windows Server 2008/IIS7-installation måste du vara inloggad som administratör för att köra VBS-skriptet eller köra skriptet som administratör.
 
-   Klicka på **[!UICONTROL OK]** om webbservern används som en omdirigeringsserver för spårning, och klicka annars på **[!UICONTROL Cancel]**.
+   Klicka **[!UICONTROL OK]** om webbservern används som en server för spårningsomdirigering, i annat fall klickar du **[!UICONTROL Cancel]**.
 
    När flera platser redan har konfigurerats på webbservern visas en mellanliggande sida som anger vilken webbplats som installationen gäller för: Ange numret som är länkat till platsen och klicka på **[!UICONTROL OK]**.
 
@@ -83,7 +83,7 @@ Använd följande konfigurationssteg:
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. Kontrollera att webbplatsen är korrekt konfigurerad med Adobe Campaign-resurserna på fliken **[!UICONTROL Content View]**:
+1. I **[!UICONTROL Content View]** kontrollerar du att webbplatsen är korrekt konfigurerad med Adobe Campaign resurser:
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
@@ -95,11 +95,11 @@ Du måste sedan konfigurera säkerhetsinställningarna för ISAPI DLL och för r
 
 Gör så här:
 
-1. Välj fliken **[!UICONTROL Features View]** och dubbelklicka på länken **Autentisering**.
+1. Välj **[!UICONTROL Features View]** och dubbelklicka på **Autentisering** länk.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. Kontrollera att anonym åtkomst är aktiverat på fliken **Katalogsäkerhet** på webbplatsen. Om det behövs klickar du på länken **[!UICONTROL Edit]** för att ändra inställningarna.
+1. I **Katalogsäkerhet** se till att anonym åtkomst är aktiverat. Klicka vid behov på **[!UICONTROL Edit]** om du vill ändra inställningarna.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -109,7 +109,7 @@ Du måste nu testa om konfigurationen är korrekt.
 
 Gör så här:
 
-1. Starta om IIS-servern med kommandoraden **iisreset**.
+1. Starta om IIS-servern med **iisreset** kommandorad.
 
 1. Starta tjänsten Adobe Campaign och kontrollera att den körs.
 
@@ -142,7 +142,7 @@ Du kan också kontrollera att ISAPI DLL har lästs in korrekt.
 
 Gör så här:
 
-1. Redigera ISAPI-filtren för Adobe Campaign-webbplatsen genom att klicka på ikonen **[!UICONTROL Driver mapping]**.
+1. Redigera ISAPI-filter för Adobe Campaign webbplats genom att klicka på **[!UICONTROL Driver mapping]** ikon.
 1. Kontrollera innehållet i ISAPI-filtret:
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
@@ -155,19 +155,19 @@ När du konfigurerar IIS-webbservern är en gräns på cirka 28 MB automatiskt f
 
 Detta kan påverka Adobe Campaign, särskilt om du vill överföra filer som är större än denna gräns.
 
-Om du till exempel använder en **datainläsning (fil)**-typaktivitet i ett arbetsflöde för att importera en 50 MB-fil kommer ett fel att stoppa arbetsflödet från att köras korrekt.
+Om du till exempel använder en **Inläsning av data (fil)** typaktivitet i ett arbetsflöde för att importera en 50 MB-fil kommer ett fel att stoppa arbetsflödet från att köras korrekt.
 
 I så fall måste du öka den här gränsen:
 
-1. Öppna IIS via menyn **[!UICONTROL Start > (Control panel) > Administration tools]**.
-1. I rutan **Anslutningar** markerar du platsen som skapades för installationen av Adobe och dubbelklickar sedan på **Begär filtrering** i huvudfönstret.
-1. I rutan **Åtgärder** väljer du **Redigera funktionsinställningar** om du vill kunna redigera värdet i fältet **Maximal tillåten innehållsstorlek (byte)**.
+1. Öppna IIS via **[!UICONTROL Start > (Control panel) > Administration tools]** -menyn.
+1. I **Anslutningar** väljer du den plats som du har skapat för Adobe-installationen och dubbelklickar sedan på **Begärandefiltrering** i huvudfönstret.
+1. I **Åtgärder** ruta, markera **Redigera funktionsinställningar** för att kunna redigera värdet i **Största tillåtna innehållsstorlek (byte)** fält.
 
    Om du till exempel vill tillåta att filer på 50 MB överförs måste du ange ett värde på mer än &quot;52428800&quot; byte.
 
 >[!NOTE]
 >
->Mer information om det här IIS-alternativet finns i avsnittet &quot;Använda&quot; i [den officiella dokumentationen](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
+>Mer information om det här IIS-alternativet finns i avsnittet &quot;Använda&quot; i [officiell dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
 ### Konfigurera visning av http-felmeddelande {#configuring-http-error-message-display}
 
@@ -175,9 +175,9 @@ Om du använder en IIS-server av version 6.1 kan genererade felmeddelanden vara 
 
 Använd följande konfiguration för att åtgärda detta och visa felet korrekt:
 
-1. Öppna IIS via menyn **[!UICONTROL Start > Control Panel > Administrative tools]**.
-1. I rutan **Anslutningar** markerar du platsen som skapades för din Adobe Campaign-installation och dubbelklickar sedan på **Konfigurationsredigeraren** i huvudfönstret.
-1. I listrutan **Avsnitt** väljer du **system.webServer** > **httpErrors**.
-1. Välj **PassThrough**-värdet på raden **existingResponse**.
+1. Öppna IIS via **[!UICONTROL Start > Control Panel > Administrative tools]** -menyn.
+1. I **Anslutningar** markerar du den webbplats som du har skapat för Adobe Campaign-installationen och dubbelklickar sedan på **Konfigurationsredigerare** i huvudfönstret.
+1. I **Avsnitt** nedrullningsbar lista, välja **system.webServer** > **httpErrors**.
+1. Välj **PassThrough** värdet vid **existingResponse** linje.
 
 ![](assets/ins_iis_httperrors.png)

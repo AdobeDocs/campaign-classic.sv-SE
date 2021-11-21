@@ -19,7 +19,7 @@ ht-degree: 7%
 
 I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell.
 
-Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i datamodellen [Campaign Classic](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [Campaign Classic datamodell](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
 
 Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign och som kallas **schema**.
 
@@ -46,9 +46,9 @@ I följande bild visas schemats placering i Adobe Campaign datasystem:
 
 ## Syntax för scheman {#syntax-of-schemas}
 
-Schemats rotelement är **`<srcschema>`**. Den innehåller underelementen **`<element>`** och **`<attribute>`**.
+Schemats rotelement är **`<srcschema>`**. Den innehåller **`<element>`** och **`<attribute>`** delelement.
 
-Det första **`<element>`**-underelementet sammanfaller med entitetens rot.
+Den första **`<element>`** delelement sammanfaller med entitetens rot.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ Det första **`<element>`**-underelementet sammanfaller med entitetens rot.
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-**`<element>`**-taggarna definierar namnen på entitetselementen. **`<attribute>`** -taggar i schemat definierar namnen på attributen i de  **`<element>`** taggar som de har länkats till.
+The **`<element>`** -taggar definierar namnen på enhetselement. **`<attribute>`** -taggar i schemat definierar namnen på attributen i **`<element>`** -taggar som de har länkats till.
 
 ## Identifiering av ett schema {#identification-of-a-schema}
 
 Ett dataschema identifieras med sitt namn och namnutrymme.
 
-Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Namnutrymmet **cus** används till exempel för kundspecifik konfiguration (**kunder**).
+Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Till exempel **kus** namnutrymme används för kundspecifik konfiguration (**kunder**).
 
 Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **cus:mottagare**.
 
@@ -84,5 +84,5 @@ Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet
 >
 >Identifierare får inte börja med numeriska tecken.
 >
->Följande namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera och får inte användas: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
+>Följande namnutrymmen är reserverade för beskrivningar av de systemenheter som krävs för att Adobe Campaign-programmet ska fungera och får inte användas: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
 

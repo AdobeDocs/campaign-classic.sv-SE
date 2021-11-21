@@ -17,19 +17,19 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-Leveransparametrarna måste konfigureras i mappen **serverConf.xml**.
+Leveransparametrarna måste konfigureras i **serverConf.xml** mapp.
 
-* **DNS-konfiguration**: Ange leveransdomänen och IP-adresserna (eller värddatorn) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från  **`<dnsconfig>`** och med.
+* **DNS-konfiguration**: ange leveransdomän och IP-adress (eller värd) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från **`<dnsconfig>`** och framåt.
 
    >[!NOTE]
    >
-   >Parametern **nameServers** är nödvändig för en installation i Windows. För en installation i Linux måste den lämnas tom.
+   >The **nameServers** -parametern är nödvändig för en installation i Windows. För en installation i Linux måste den lämnas tom.
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Du kan även göra följande konfigurationer beroende på dina behov och inställningar: konfigurera en [SMTP-relä](#smtp-relay), anpassa antalet [MTA-underordnade processer](#mta-child-processes), [Hantera utgående SMTP-trafik](#managing-outbound-smtp-traffic-with-affinities).
+Du kan även göra följande konfigurationer beroende på dina behov och inställningar: konfigurera en [SMTP-relä](#smtp-relay), anpassa antalet [MTA-underprocesser](#mta-child-processes), [Hantera utgående SMTP-trafik](#managing-outbound-smtp-traffic-with-affinities).
 
 ## SMTP-relä {#smtp-relay}
 
@@ -37,7 +37,7 @@ MTA-modulen fungerar som en intern e-postöverföringsagent för SMTP-sändning 
 
 Det är dock möjligt att ersätta den med en reläserver om säkerhetsprincipen kräver det. I så fall blir den globala genomströmningen relä (förutsatt att reläservergenomströmningen är lägre än Adobe Campaign).
 
-I det här fallet anges dessa parametrar genom att SMTP-servern konfigureras i **`<relay>`**-avsnittet. Du måste ange IP-adressen (eller värddatorn) för den SMTP-server som används för att överföra post och dess associerade port (25 som standard).
+I det här fallet ställs parametrarna in genom att SMTP-servern konfigureras i **`<relay>`** -avsnitt. Du måste ange IP-adressen (eller värddatorn) för den SMTP-server som används för att överföra post och dess associerade port (25 som standard).
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -49,13 +49,13 @@ I det här fallet anges dessa parametrar genom att SMTP-servern konfigureras i *
 
 ## MTA-underprocesser {#mta-child-processes}
 
-Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
+Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen ska göras i **`<master>`** i MTA-konfigurationen på varje enskild dator.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Se även [E-postoptimering](../../installation/using/email-deliverability.md#email-sending-optimization).
+Se även [Optimering av e-postutskick](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ## Hantera utgående SMTP-trafik med tillhörigheter {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -67,9 +67,9 @@ Du kan förbättra utgående SMTP-trafik genom tillhörigheter med IP-adresser.
 
 Gör så här:
 
-1. Ange tillhörigheterna i **`<ipaffinity>`**-avsnittet i filen **serverConf.xml**.
+1. Ange tillhörigheterna i **`<ipaffinity>`** i **serverConf.xml** -fil.
 
-   En tillhörighet kan ha flera olika namn: om du vill separera dem använder du tecknet **;**.
+   En tillhörighet kan ha flera olika namn: om du vill separera dem använder du **;** tecken.
 
    Exempel:
 
@@ -78,9 +78,9 @@ Gör så här:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Se filen **serverConf.xml** för att se de relevanta parametrarna.
+   Om du vill visa de relevanta parametrarna går du till **serverConf.xml** -fil.
 
-1. Om du vill aktivera tillhörighetsval i listrutorna måste du lägga till tillhörighetsnamn i uppräkningen **IPAfinity**.
+1. Om du vill aktivera val av tillhörighet i listrutorna måste du lägga till tillhörighetsnamnen i listan **IPAfinity** uppräkning.
 
    ![](assets/ipaffinity_enum.png)
 
@@ -94,7 +94,7 @@ Gör så här:
 
    >[!NOTE]
    >
-   >Du kan även läsa [Leveransserverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >Du kan även referera till [Leveransserverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **Relaterade ämnen**
 * [Tekniska e-postkonfigurationer](email-deliverability.md)

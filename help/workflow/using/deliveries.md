@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser**.
+Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser
   <tr> 
    <td> <span class="uicontrol">Rapporteringsaggregat</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag kl. 2.00 som standard.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag klockan 2 som standard.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Fakturering</span> <br /> </td> 
@@ -39,7 +39,7 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser
   <tr> 
    <td> <span class="uicontrol">Rensa alias</span> <br /> </td> 
    <td> <span class="uicontrol">aliasCleansing</span> <br /> </td> 
-   <td> Det här arbetsflödet standardiserar uppräkningsvärden. Den utlöses varje dag klockan tre som standard.<br /> </td> 
+   <td> Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Uppdatering för leverans</span> <br /> </td> 
@@ -49,22 +49,22 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Leveranser
   <tr> 
    <td> <span class="uicontrol">Databasrensning</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p> <p>Mer information finns på den här <a href="../../production/using/database-cleanup-workflow.md">sidan</a>.</p> </td> 
+   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p> <p>Mer information finns i <a href="../../production/using/database-cleanup-workflow.md">page</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa pausade arbetsflöden</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Hantera pausade arbetsflöden</a>.</p></td> 
+   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Hantering av pausade arbetsflöden</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Meddelande om erbjudande</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> Det här arbetsflödet distribuerar godkända erbjudanden till onlinemiljön samt alla kategorier i erbjudandekatalogen.<br /> </td> 
+   <td> Det här arbetsflödet distribuerar godkända erbjudanden i onlinemiljön samt i alla kategorier i erbjudandekatalogen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Prognos</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span><br /> </td> 
-   <td> Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses varje dag klockan 1:00 som standard.<br /> </td> 
+   <td> Det här arbetsflödet analyserar leveranser som sparats i den preliminära kalendern (skapar preliminära loggar). Den utlöses som standard varje dag klockan 1:00.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Spårning</span> <br /> </td> 

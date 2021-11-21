@@ -21,7 +21,7 @@ Med aggregatorer kan du utöka innehållet med externa data. Dessa data kommer f
 
 ## Allmänna frågor {#generic-queries}
 
-Frågor konfigureras via publiceringsmallen på fliken **[!UICONTROL Aggregator]**.
+Frågor konfigureras via publiceringsmallen i **[!UICONTROL Aggregator]** -fliken.
 
 De data som hämtas kommer att berika XML-utdatadokumentet via dess huvudelement.
 
@@ -37,7 +37,7 @@ Exempel på retur från en fråga i mottagarschemat (**nms:mottagare**):
 </book>
 ```
 
-**`<collection-recipient>`**-elementet representerar indataelementet för dokumentet som är ett resultat av en fråga. De data som hämtas returneras under detta element. i vårt exempel en mottagarlista.
+The **`<collection-recipient>`** -elementet representerar indataelementet i dokumentet som är ett resultat av en fråga. De data som hämtas returneras under detta element. i vårt exempel en mottagarlista.
 
 ### Lägga till en fråga {#adding-a-query}
 
@@ -49,7 +49,7 @@ Frågeparametrarna redigeras med en guide.
 
    >[!NOTE]
    >
-   >Redigeringsfältet **Sökväg** används för att byta namn på frågeutdataelementet.
+   >Redigeringsfältet **Bana** används för att byta namn på frågeutdataelementet.
 
 1. På nästa sida kan du välja vilka data som ska hämtas.
 
@@ -80,9 +80,9 @@ En innehållslänk deklareras i dataschemat enligt följande:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-Definitionen av länken fylls i på en **sträng**-typ **`<element>`** och attributet **expandSchemaTarget** refererar till målschemat (&quot;cus:chapter&quot; i vårt exempel). Det refererade schemat måste vara ett innehållsschema.
+Definitionen av länken fylls i på en **string**-type **`<element>`** och **expandSchemaTarget** -attribut refererar till målschemat (&quot;cus:chapter&quot; i vårt exempel). Det refererade schemat måste vara ett innehållsschema.
 
-Innehållet i målelementet berikar länkelementet, dvs. **`<chapter>`**-elementet i vårt exempelschema:
+Innehållet i målelementet berikar länkelementet, dvs. **`<chapter>`** element i vårt exempelschema:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +92,7 @@ Innehållet i målelementet berikar länkelementet, dvs. **`<chapter>`**-element
 
 >[!NOTE]
 >
->**Beräkningssträngen** för länken visas från attributet **computeString**.
+>The **Beräkningssträng** av länken visas på **computeString** -attribut.
 
 I indataformuläret deklareras redigeringskontrollen för länken enligt följande:
 
@@ -102,11 +102,11 @@ I indataformuläret deklareras redigeringskontrollen för länken enligt följan
 
 ![](assets/d_ncs_content_link.png)
 
-Med ikonen **[!UICONTROL Magnifier]** kan du öppna redigeringsformen för det länkade elementet.
+The **[!UICONTROL Magnifier]** Med ikonen kan du öppna redigeringsformuläret för det länkade elementet.
 
 #### Länksamling {#link-collection}
 
-Om du vill fylla i en samling länkar lägger du till attributet **unbound=&quot;true&quot;** i definitionen av länkelementet i dataschemat:
+Om du vill fylla i en samling länkar lägger du till **unbound=&quot;true&quot;** attribut till definitionen av länkelementet i dataschemat:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -128,7 +128,7 @@ I indataformuläret deklareras listkontroll enligt följande:
 
 ![](assets/d_ncs_content_link2.png)
 
-En standardkolumn visas för att visa **beräkningssträngen** för målelementen.
+En standardkolumn visas för att visa **Beräkningssträng** av målelementen.
 
 ### Länkar till externa tabeller {#links-to-external-tables}
 
@@ -138,11 +138,11 @@ En länk till en extern tabell deklareras i dataschemat enligt följande:
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-Definitionen av länken fylls i på en **länk**-typ **`<element>`** och attributet **target** refererar till målschemat (&quot;nms:receive&quot; i vårt exempel).
+Definitionen av länken fylls i på en **link**-type **`<element>`** och **target** attribute references the target schema (&quot;nms:receive&quot; in our example).
 
 Länkar måste deklareras som huvudelement i dataschemat.
 
-**Beräkningssträngen** och nyckeln för målelementet berikar attributen **`<name>-id`** och **`<name>-cs`** för huvudelementet.
+The **Beräkningssträng** och nyckeln till målelementet berikar **`<name>-id`** och **`<name>-cs`** -attribut för huvudelementet.
 
 I vårt exempel är länken ifylld i &quot;cus:book&quot;-schemat och innehållet i länkdata finns i attributen &quot;mainContact-id&quot; och &quot;mainContact-cs&quot;:
 
@@ -158,7 +158,7 @@ Länkredigeringskontrollen deklareras enligt följande:
 
 ![](assets/d_ncs_content_link3.png)
 
-Du kan begränsa valet av målelement genom att lägga till elementet **`<sysfilter>`** via länkdefinitionen i indataformuläret:
+Du kan begränsa valet av målelement genom att lägga till **`<sysfilter>`** via länkdefinitionen i indataformuläret:
 
 ```
 <input xpath="mainContact">
@@ -206,7 +206,7 @@ Innehållet i målelementet berikar varje samlingselement i utdatadokumentet:
 
 #### Länkaggregering {#link-aggregation}
 
-Innehållet i varje länk som refereras begränsas till den interna nyckeln och **beräkningssträngen** för målelementet.
+Innehållet i varje länk som refereras begränsas till den interna nyckeln och **Beräkningssträng** för målelementet.
 
 Ett JavaScript-skript används för att berika innehållet i länkarna via SOAP-frågor.
 
@@ -257,6 +257,6 @@ Resultatet som erhålls efter skriptkörning:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-Innehållet i JavaScript-koden läggs till via mappen **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** och måste fyllas i i publikationsmallen för varje omformning.
+Innehållet i JavaScript-koden läggs till via **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** och måste fyllas i i publikationsmallen för varje omformning.
 
 ![](assets/d_ncs_content_link5.png)

@@ -22,8 +22,8 @@ Med Adobe Campaign kan ni massleverera personaliserade elektroniska meddelanden 
 Innan du börjar skicka e-post:
 
 * Kontrollera att mottagarprofilerna innehåller minst en e-postadress.
-* Läs mer om Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md).
-* Läs mer om Deliverability: [Hantering av leveranssätt i Campaign](about-deliverability.md) och [Guide till bästa leveranssätt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+* Läs mer om Adobe Campaign [Bästa praxis](delivery-best-practices.md).
+* Läs mer om Deliverability: [Leveranshantering i Campaign](about-deliverability.md) och [Guide för bästa praxis vid leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 De viktigaste stegen för att skicka e-post är följande:
 

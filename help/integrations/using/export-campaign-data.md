@@ -8,7 +8,7 @@ exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Om du vill exportera Campaign Classic-data till Adobe Real-time Customer Data Platform (RTCDP) måste du först skapa ett arbetsflöde i Campaign Classic för att exportera de data du vill dela till din S3- eller Azure-blob-lagringsplats.
 
-När arbetsflödet har konfigurerats och data har skickats till din lagringsplats måste du ansluta din S3- eller Azure-blobblagringsplats som en **källa** i Adobe Experience Platform.
+När arbetsflödet har konfigurerats och data har skickats till din lagringsplats måste du ansluta din S3- eller Azure-blob-lagringsplats som en **Källa** i Adobe Experience Platform.
 
 >[!NOTE]
 >
@@ -30,11 +30,11 @@ Om du vill exportera data från Campaign Classic till din S3- eller Azure Blob-l
 
 Lägg till och konfigurera:
 
-* En **[!UICONTROL Data extraction (file)]**-aktivitet som extraherar måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
+* An **[!UICONTROL Data extraction (file)]** -aktivitet för att extrahera måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
 
    ![](assets/rtcdp-extract-file.png)
 
-* En **[!UICONTROL File transfer]**-aktivitet som överför CSV-filen till lagringsplatsen. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
+* A **[!UICONTROL File transfer]** -aktivitet för att överföra CSV-filen till lagringsplatsen. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
 
    ![](assets/rtcdp-file-transfer.png)
 
@@ -44,9 +44,9 @@ Arbetsflödet nedan extraherar till exempel regelbundet loggar in i en CSV-fil o
 
 ## Anslut lagringsplatsen som en källa
 
-De viktigaste stegen för att ansluta din S3- eller Azure-blobblagringsplats som **källa** i Adobe Experience Platform anges nedan. Detaljerad information om de här stegen finns i [dokumentationen för källanslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html).
+Huvudstegen för att ansluta din S3- eller Azure-blobblagringsplats som en **Källa** i Adobe Experience Platform listas nedan. Detaljerad information om varje steg finns i [Dokumentation för källkopplingar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.htmll?lang=sv).
 
-1. Skapa en anslutning till din lagringsplats på Adobe Experience-plattformens **[!UICONTROL Sources]**-meny:
+1. På Adobe Experience-plattformen **[!UICONTROL Sources]** skapar du en anslutning till lagringsplatsen:
 
    * [Skapa en Amazon S3-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob-koppling](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)

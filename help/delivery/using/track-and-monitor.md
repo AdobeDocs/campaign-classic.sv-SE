@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Klickade du på knappen **Skicka**? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
+Du klickade på **Skicka** -knapp? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
 
 ## Övervaka leveranser {#monitoring-deliveries}
 
@@ -25,7 +25,7 @@ För att kunna styra era kampanjer måste ni se till att meddelandet verkligen h
 På kontrollpanelen för kampanjleverans kan du kontrollera bearbetade meddelanden och leveransgranskningsloggar.
 Du kan också styra status för meddelandena i leveransloggarna. [Läs mer](about-delivery-monitoring.md).
 
-Vad händer om leveranserna inte skickas och deras status förblir **Väntande**?
+Vad händer om leveranserna inte skickas och deras status kvarstår **Väntande**?
 
 * Körningsprocessen väntar på att vissa resurser ska vara tillgängliga. MTA har kanske inte startats.
 Kontrollera att mta@instance startas på dina MTA-servrar och starta MTA-modulen om det behövs. [Läs mer](../../production/using/administration.md).
@@ -43,7 +43,7 @@ Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en
 
 **Tips**: Spårning av meddelanden är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransguiden. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
 
-Mer information finns i avsnittet [Configuring tracking](how-to-configure-tracked-links.md) och beskrivningen av [spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
+Mer information finns i [Konfigurerar spårning](how-to-configure-tracked-links.md) och [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators) description.
 
 ## Leveransprestanda {#delivery-performances}
 
@@ -59,7 +59,7 @@ Om du vill mäta den hastighet med vilken meddelandena levereras kan du styra le
 
 ## Leveransfelsökning {#delivery-troubleshooting}
 
-Du kan utföra specifika åtgärder när du stöter på leveransproblem:
+Specifika åtgärder kan utföras vid problem med leveranser:
 
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
@@ -67,4 +67,4 @@ Du kan utföra specifika åtgärder när du stöter på leveransproblem:
 
 * [Problem med leveransresultat](delivery-performances.md)
 
-* [Temporära filproblem](../../production/using/temporary-files.md)  - endast  *lokala kunder*
+* [Temporära filproblem](../../production/using/temporary-files.md) - *endast lokala kunder*

@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign.
+Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign.
 
 ## Förhandskrav {#operating-principle}
 
-Med FDA-alternativet kan du utöka din datamodell i en tredjepartsdatabas. Den identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna.
+Med FDA-alternativet kan du utöka din datamodell i en tredjepartsdatabas. Det identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna.
 
 För att kunna använda den här funktionen anges följande krav:
 
-* **Konfiguration**: förutom för Snowflake, behöver du en  **lokal** eller  **** överbryggningsmodell för att konfigurera Federated Data Access. [Läs mer](../../installation/using/hosting-models.md)
+* **Konfiguration**: förutom Snowflake, du behöver en **lokal** eller **hybrid** värdmodell för att konfigurera Federated Data Access. [Läs mer](../../installation/using/hosting-models.md)
 * **Extern databasversion**: du behöver en extern databas som är kompatibel med Adobe Campaign FDA-modulen. Listan över databassystem och kompatibla versioner finns i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
-* **Behörigheter**: -användare måste också ha  [nödvändig ](../../installation/using/remote-database-access-rights.md) behörighet i Adobe Campaign och i den externa databasen.
+* **Behörigheter**: användarna måste också ha [nödvändiga behörigheter](../../installation/using/remote-database-access-rights.md) i Adobe Campaign och i den externa databasen.
 

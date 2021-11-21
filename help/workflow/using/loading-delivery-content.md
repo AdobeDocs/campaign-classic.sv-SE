@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser.
+Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in det här innehållet i Adobe Campaign-leveranser.
 
 Så här gör du:
 
@@ -28,23 +28,23 @@ Så här gör du:
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Skapa ett nytt arbetsflöde, till exempel från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Lägg till en **[!UICONTROL File transfer]**-aktivitet i arbetsflödet och konfigurera den genom att ange
+1. Lägg till en **[!UICONTROL File transfer]** aktivitet i arbetsflödet och konfigurera det genom att ange
 
    * Det externa konto som ska användas för att ansluta till S3- eller (S)FTP-servern.
    * Sökvägen till filen på S3- eller (S)FTP-servern.
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Lägg till en **[!UICONTROL Delivery]**-aktivitet och koppla den till den utgående övergången för **[!UICONTROL File transfer]**-aktiviteten. Konfigurera den enligt följande:
+1. Lägg till en **[!UICONTROL Delivery]** och koppla den till den utgående övergången för **[!UICONTROL File transfer]** aktivitet. Konfigurera den enligt följande:
 
    * Leverans: Beroende på dina behov kan det vara en specifik leverans som redan har skapats i systemet eller en ny leverans som baseras på en befintlig mall.
    * Mottagare: I det här exemplet anses målet vara angivet i själva leveransen.
-   * Innehåll: Även om innehållet importeras i den tidigare aktiviteten väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver, har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
-   * Åtgärd som ska utföras: Välj **[!UICONTROL Save]** om du vill spara leveransen och kunna komma åt den från **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** när arbetsflödet har körts.
+   * Innehåll: Även om innehållet har importerats i föregående aktivitet väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
+   * Åtgärd som ska utföras: Välj **[!UICONTROL Save]** för att spara leveransen och kunna komma åt den från **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** när arbetsflödet är klart.
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. På fliken **[!UICONTROL Script]** i aktiviteten **[!UICONTROL Delivery]** lägger du till följande kommando för att läsa in innehållet i den importerade filen i leveransen:
+1. I **[!UICONTROL Script]** -fliken i **[!UICONTROL Delivery]** lägger du till följande kommando för att läsa in innehållet i den importerade filen i leveransen:
 
    ```
    delivery.content.md.source=loadFile(vars.filename)
@@ -56,4 +56,4 @@ Så här gör du:
 
 >[!NOTE]
 >
->Bästa praxis och felsökning för SFTP-serveranvändning finns i [på den här sidan](../../platform/using/sftp-server-usage.md).
+>De effektivaste strategierna och felsökningarna av användningen av SFTP-servrar är detaljerade [på den här sidan](../../platform/using/sftp-server-usage.md).

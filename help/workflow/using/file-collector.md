@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-**Filinsamlaren** övervakar en eller flera filers ankomst till en katalog och aktiverar övergången för varje mottagen fil. För varje händelse innehåller en **[!UICONTROL filename]**-variabel det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
+The **Filinsamlare** övervakar hur en eller flera filer kommer in i en katalog och aktiverar övergången för varje mottagen fil. För varje händelse, en **[!UICONTROL filename]** variabeln innehåller det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
 
-Som standard är filinsamlaren en beständig uppgift som testar förekomsten av filer vid de tidpunkter som anges i schemat.
+Som standard är filinsamlaren en beständig uppgift som testar om det finns filer vid de tidpunkter som anges i schemat.
 
 Filerna måste finnas på den server där den servermodul som ansvarar för det här arbetsflödet körs. Om flera wfserver-moduler distribueras på en enda instans måste tillhörigheten för de aktiviteter som använder dessa filer eller arbetsflödets totala tillhörighet anges.
 
 ## Egenskaper {#properties}
 
-På den första fliken i **[!UICONTROL File collector]**-aktiviteten kan du välja källkatalogen och vid behov filtrera de insamlade filerna. De andra flikarna finns på [Inkommande e-postmeddelanden](inbound-emails.md) (**[!UICONTROL Schedule]**- och **[!UICONTROL Expiry]**-flikar).
+Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog och vid behov filtrera de insamlade filerna. De andra flikarna beskrivs i [Inkommande e-postmeddelanden](inbound-emails.md) (**[!UICONTROL Schedule]** och **[!UICONTROL Expiry]** tabbar).
 
 ![](assets/file_collect_edit.png)
 
@@ -43,11 +43,11 @@ På den första fliken i **[!UICONTROL File collector]**-aktiviteten kan du väl
 
       Om det här alternativet är aktiverat avslutas aktiviteten när den första filen har tagits emot. Om det finns flera filer som motsvarar filtret i katalogen kommer endast en att tas med i beräkningen. Det här alternativet garanterar att endast en händelse skickas. Den fil som tas med i beräkningen är den första i listan i alfabetisk ordning.
 
-      Om det inte finns någon fil som matchar filtret i den angivna katalogen för en oschemalagd aktivitet och om alternativet **[!UICONTROL Process file nonexistence]** inte är aktiverat genereras ett fel.
+      Om det inte finns någon fil som matchar filtret i den angivna katalogen för en oschemalagd aktivitet, och om **[!UICONTROL Process file nonexistence]** om alternativet inte är aktiverat kommer ett fel att uppstå.
 
    * **[!UICONTROL Execution schedule]**
 
-      Bestämmer frekvensen för filnärvarokontrollen via parametrarna på fliken **[!UICONTROL Schedule]**.
+      Bestämmer frekvensen för filnärvarokontrollen via parametrarna för **[!UICONTROL Schedule]** -fliken.
 
 1. **Felhantering**
 
@@ -69,9 +69,9 @@ På den första fliken i **[!UICONTROL File collector]**-aktiviteten kan du väl
 
 1. **Historik**
 
-   Se **[!UICONTROL File historization]**-steget här: [Webbhämtning](web-download.md).
+   Se **[!UICONTROL File historization]** steg här: [Webbnedladdning](web-download.md).
 
-Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättning filer sekventiellt använder du alternativet **[!UICONTROL Stop as soon as a file has been processed]** och skapar en slinga. I så fall bearbetas filerna i alfabetisk ordning. Med alternativet **[!UICONTROL Process file nonexistence]** kan du slutföra itereringen.
+Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättning filer sekventiellt använder du **[!UICONTROL Stop as soon as a file has been processed]** och skapa en slinga. I så fall bearbetas filerna i alfabetisk ordning. The **[!UICONTROL Process file nonexistence]** gör att du kan avsluta iteration.
 
 ![](assets/file_collect_loop.png)
 

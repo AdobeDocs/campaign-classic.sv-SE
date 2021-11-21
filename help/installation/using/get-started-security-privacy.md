@@ -54,7 +54,7 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
 
-* **Lägg till bildtexter i webbprogram**: Lär dig hur du lägger till bilder på dina offentliga landningssidor och prenumerationssidor.
+* **Lägga till bildtexter i webbprogram**: Lär dig hur du lägger till bilder på dina offentliga landningssidor och prenumerationssidor.
 
 [Läs mer](../../installation/using/scripting-coding-guidelines.md)
 
@@ -84,9 +84,9 @@ Konfigurationen måste utföras på alla servrar. Konfigurationsfilerna är av t
 
 * **Relay**: finjustera reläkonfigurationen genom att inaktivera reläreglerna för oanvända moduler/program.
 
-* **Utgående anslutningsskydd** och  **kommandobegränsning**  (på serversidan)
+* **Skydd av utgående anslutning** och **Kommandobegränsning** (server-side)
 
-* Du kan också lägga till extra HTTP-huvuden, aktivera checkIPConsistent, enableTLS, sessionTimeOutSec osv. Mer information finns i [konfigurationsdokumentationen för kampanjservern](../../installation/using/configuring-campaign-server.md) och [beskrivningen av serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md).
+* Du kan också lägga till extra HTTP-huvuden, aktivera checkIPConsistent, enableTLS, sessionTimeOutSec osv. Se [Konfigurationsdokumentation för kampanjserver](../../installation/using/configuring-campaign-server.md) och [Beskrivning av serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md) för mer information.
 
 [Läs mer](../../installation/using/server-configuration.md)
 

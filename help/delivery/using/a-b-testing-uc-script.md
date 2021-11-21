@@ -71,12 +71,12 @@ En detaljerad förklaring av skriptet finns i [det här avsnittet](#details-of-t
 
 ## Implementering {#implementation}
 
-1. Öppna din **[!UICONTROL JavaScript code]**-aktivitet.
-1. Kopiera skriptet som finns i [Exempel på ett skript](#example-of-a-script) till fönstret **[!UICONTROL JavaScript code]**.
+1. Öppna **[!UICONTROL JavaScript code]** aktivitet.
+1. Kopiera skriptet som finns i [Exempel på ett skript](#example-of-a-script) till **[!UICONTROL JavaScript code]** -fönstret.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. I fältet **[!UICONTROL Label]** anger du namnet på skriptet, dvs.
+1. I **[!UICONTROL Label]** anger du namnet på skriptet, dvs.
 
    ```
    <%= vars.deliveryId %>
@@ -84,14 +84,14 @@ En detaljerad förklaring av skriptet finns i [det här avsnittet](#details-of-t
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Stäng aktiviteten **[!UICONTROL JavaScript code]**.
+1. Stäng **[!UICONTROL JavaScript code]** aktivitet.
 1. Spara arbetsflödet.
 
 ## Information om skriptet {#details-of-the-script}
 
 I det här avsnittet beskrivs de olika delarna av skriptet och deras operativsystem.
 
-* Den första delen av skriptet är en fråga. Med kommandot **queryDef** kan du från tabellen **NmsDelivery** återställa leveranser som skapats genom att målinriktningsarbetsflödet har körts och sortera dem baserat på deras beräknade öppningsfrekvens. Informationen från leveransen med den högsta öppningsfrekvensen återställs.
+* Den första delen av skriptet är en fråga. The **queryDef** kan du återställa från **NmsDelivery** Om du vill ange de leveranser som skapas genom att målinrikta-arbetsflödet utförs och sortera dem baserat på deras uppskattade öppningsfrekvens, återställs informationen från leveransen med den högsta öppningsfrekvensen.
 
    ```
    // query the database to find the winner (best open rate)
@@ -164,7 +164,7 @@ I exemplet ovan kan du välja innehållet i en leverans baserat på öppningshas
 
 * Bästa klickfrekvens: `[indicators/@recipientClickRatio]`,
 * Högsta reaktivitetsfrekvens (öppna e-post och klickningar i meddelandet): `[indicators/@reactivity]`,
-* Lägsta antal klagomål: `[indicators/@refusedRatio]` (använd false-värdet för attributet sortDesc),
+* Lägsta antal klagomål: `[indicators/@refusedRatio]` (använd värdet false för attributet sortDesc),
 * Högsta konverteringsgrad: `[indicators/@transactionRatio]`,
 * Antal sidor som besökts efter att ett meddelande tagits emot: `[indicators/@totalWebPage]`,
 * Lägsta prenumerationsavgift: `[indicators/@optOutRatio]`,

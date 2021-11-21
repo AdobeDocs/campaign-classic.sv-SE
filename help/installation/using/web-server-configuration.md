@@ -23,50 +23,50 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
 
 * Inaktivera tidigare SSL-version och ciphers:
 
-   **Redigera /etc/apache2/mods-available/ssl.conf i Apache**. Här är ett exempel:
+   **På Apache**, redigera /etc/apache2/mods-available/ssl.conf. Här är ett exempel:
 
    * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
    * SSLCipherSuite HIGH:MEDIUM:!NULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **Utför följande konfiguration på IIS**  (se  [dokumentationen](https://support.microsoft.com/en-us/kb/245030)):
+   **På IIS** (se [dokumentation](https://support.microsoft.com/en-us/kb/245030)) utför du följande konfiguration:
 
    * Lägg till registerundernyckel i HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
-   * Om du vill att systemet ska kunna använda de protokoll som inte ska förhandlas som standard (till exempel TLS 1.2) ändrar du DWORD-värdedata för värdet DisabledByDefault till 0x0 i följande registernycklar under nyckeln **Protokoll**:
+   * Om du vill att systemet ska kunna använda de protokoll som inte ska förhandlas som standard (till exempel TLS 1.2) ändrar du DWORD-värdedata för värdet DisabledByDefault till 0x0 i följande registernycklar under **Protokoll** nyckel:
 
-      SCHANNEL\Protocols\TLS 1.2\Client
+      SCHANNEL\Protokoll\TLS 1.2\Client
 
-      SCHANNEL\Protocols\TLS 1.2\Server
+      SCHANNEL\Protokoll\TLS 1.2\Server
    **Inaktivera SSL x.0**
 
-   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: 32-bitars DWORD-värde till 1
+   SCHANNEL\Protokoll\SSL 3.0\Client: DisabledByDefault: 32-bitars DWORD-värde till 1
 
-   SCHANNEL\Protocols\SSL 3.0\Server: Aktiverad: 32-bitars DWORD-värde till 0
+   SCHANNEL\Protokoll\SSL 3.0\Server: Aktiverad: 32-bitars DWORD-värde till 0
 
-* Ta bort metoden **TRACE**:
+* Ta bort **TRACE** metod:
 
-   **I Apache** kan du redigera i /etc/apache2/conf.d/security: TraceEnable  **Off**
+   **På Apache**, redigera i /etc/apache2/conf.d/security: TraceEnable **Av**
 
-   **Utför följande konfiguration på IIS**  (se  [dokumentationen](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)):
+   **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) utför du följande konfiguration:
 
-   * Kontrollera att **rolltjänsten eller funktionen Begär filtrering** är installerad.
-   * Klicka på fliken för HTTP-verb i rutan **Begär filtrering** och klicka sedan på Neka verb. Ange TRACE i den öppna dialogrutan i åtgärdsrutan.
+   * Se till att **Begärandefiltrering** rolltjänsten eller funktionen är installerad.
+   * I **Begärandefiltrering** klickar du på fliken för HTTP-verb och sedan på Neka verb. Ange TRACE i den öppna dialogrutan i åtgärdsrutan.
 
 * Ta bort banderollen:
 
-   **I Apache** kan du redigera /etc/apache2/conf.d/säkerhet:
+   **På Apache**, redigera /etc/apache2/conf.d/säkerhet:
 
    * ServerSignature **Av**
    * ServerTokens **Prod**
 
-   **Utför följande konfiguration på IIS**:
+   **På IIS** utför du följande konfiguration:
 
    * Installera **URLScan**.
-   * Redigera filen **Urlscan.ini** så att den har **RemoveServerHeader=1**
+   * Redigera **Urlscan.ini** fil att ha **RemoveServerHeader=1**
 
 
 * Begränsa frågestorleken för att förhindra att viktiga filer överförs:
 
-   **I Apache** lägger du till direktivet  **** LimitRequestBodyi (storlek i byte) i katalogen /.
+   **På Apache**, lägg till **LimitRequestBody** -direktiv (storlek i byte) i /-katalog.
 
    ```
    <Directory />
@@ -76,9 +76,9 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
    </Directory>
    ```
 
-   **I IIS**  (se  [dokumentationen](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)) anger du  **maxAllowedContentLength**  (maximal tillåten innehållslängd) i alternativen för innehållsfiltrering.
+   **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), ange **maxAllowedContentLength** (maximal tillåten innehållslängd) i alternativen för innehållsfiltrering.
 
 Relaterade ämnen:
 
 * [Adobe Marketing Cloud Compliance overview](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf) (PDF)
-* [Adobe Campaign Security overview](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf) (PDF)
+* [Adobe Campaign Security - översikt](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf) (PDF)

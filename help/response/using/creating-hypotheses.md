@@ -19,11 +19,11 @@ ht-degree: 3%
 
 Det finns olika möjligheter att skapa/länka hypoteser till ett kampanjerbjudande eller en kampanjleverans:
 
-* Via mappen **[!UICONTROL Measurement hypotheses]** genom att skapa en ny hypotes baserad på en befintlig mall och länka den till en befintlig leverans.
-* Via fliken **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** i en kampanj.
-* Via alternativet **[!UICONTROL Measurement]** för en leverans som skapats från en kampanj.
+* Via **[!UICONTROL Measurement hypotheses]** genom att skapa en ny hypotes baserad på en befintlig mall och länka den till en befintlig leverans.
+* Via **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** i en kampanj.
+* Via **[!UICONTROL Measurement]** alternativ för en leverans som skapats från en kampanj.
 
-Hypoeser kan bara beräknas när marknadsföringskampanjen har startats och mottagarna har fått leveransen. Om hypotesen bygger på ett erbjudande måste det åtminstone presenteras och fortfarande vara aktivt. Hypoteser om erbjudanden och leveranser skapas via mappen **[!UICONTROL Measurement hypotheses]** och baseras på en hypotesmall. Det är dock möjligt att hänvisa till en hypotes direkt i leveransen eller kampanjen innan kampanjen börjar. I det här fallet beräknas hypoteserna automatiskt när marknadsföringskampanjen startas, baserat på körningsinställningar. [Läs mer](hypothesis-templates.md#hypothesis-template-execution-settings)
+Hypoeser kan bara beräknas när marknadsföringskampanjen har startats och mottagarna har fått leveransen. Om hypotesen bygger på ett erbjudande måste det åtminstone presenteras och fortfarande vara aktivt. Erbjudande och leveranssätt skapas via **[!UICONTROL Measurement hypotheses]** och baseras på en hypotesmall. Det är dock möjligt att hänvisa till en hypotes direkt i leveransen eller kampanjen innan kampanjen börjar. I det här fallet beräknas hypoteserna automatiskt när marknadsföringskampanjen startas, baserat på körningsinställningar. [Läs mer](hypothesis-templates.md#hypothesis-template-execution-settings)
 
 ## Skapa en hypotes direkt vid leverans {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
@@ -33,8 +33,8 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
 >
 >Den här åtgärden är bara möjlig för väntande leveranser.
 
-1. Gå till **[!UICONTROL Campaign management > Measurement hypotheses]** i Adobe Campaign-trädet.
-1. Klicka på knappen **[!UICONTROL New]** eller högerklicka på hypoteslistan och välj **[!UICONTROL New]** i listrutan.
+1. Gå till Adobe Campaign **[!UICONTROL Campaign management > Measurement hypotheses]**.
+1. Klicka på **[!UICONTROL New]** eller högerklicka på listan med hypoteser och välj **[!UICONTROL New]** i listrutan.
 
    ![](assets/response_hypothesis_instance_creation_002.png)
 
@@ -54,15 +54,15 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
 
    ![](assets/response_hypothesis_instance_creation_005.png)
 
-1. Du kan anpassa din hypotes genom att redigera flikarna **[!UICONTROL General]**, **[!UICONTROL Transactions]** och **[!UICONTROL Scope]**. [Läs mer](hypothesis-templates.md#creating-a-hypothesis-model)
-1. Börja hypotesen genom att klicka på **[!UICONTROL Start]**.
+1. Du kan personalisera din hypotes genom att redigera **[!UICONTROL General]**, **[!UICONTROL Transactions]** och **[!UICONTROL Scope]** -tabbar. [Läs mer](hypothesis-templates.md#creating-a-hypothesis-model)
+1. Börja hypotesen genom att klicka **[!UICONTROL Start]**.
 
    Ett arbetsflöde skapas automatiskt för att utföra mätningen. Namnet definieras automatiskt beroende på hypotesens konfiguration.
 
    >[!CAUTION]
    >
-   >Du kommer åt detta om du har markerat rutan **[!UICONTROL Keep execution workflow]**.\
-   >Det här alternativet måste aktiveras endast i felsökningssyfte om fel uppstår när hypotesen körs. Arbetsflöden som genereras automatiskt sparas i mappen **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** i Utforskaren i Adobe Campaign.
+   >Du kan komma åt detta om du har markerat **[!UICONTROL Keep execution workflow]** box.\
+   >Det här alternativet måste aktiveras endast i felsökningssyfte om fel uppstår när hypotesen körs. Arbetsflöden som genereras automatiskt sparas i **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** i Adobe Campaign Utforskaren.
    > 
    >Dessutom får arbetsflöden som genereras automatiskt inte ändras. Eventuella ändringar kommer inte att beaktas någon annanstans vid senare beräkningar.
    >
@@ -80,9 +80,9 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
 
 Du kan referera till en hypotes i en marknadsföringskampanj innan den börjar. I det här fallet kommer hypotesen att startas automatiskt när leveransen skickas, baserat på de körningsinställningar som definierats i hypotesmallen. Gör så här om du vill skapa en hypotes i en leverans:
 
-1. Beroende på dina behov kan du skapa en eller flera **[!UICONTROL Delivery]**-typmallar, enligt beskrivningen i [det här avsnittet](hypothesis-templates.md#creating-a-hypothesis-model)
+1. Beroende på dina behov kan du skapa en eller flera **[!UICONTROL Delivery]** typmallar, enligt beskrivningen i [det här avsnittet](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Skapa en marknadsföringskampanj och arbetsflöden för målinriktning.
-1. Klicka på ikonen **[!UICONTROL Delivery measurement]** i leveransfönstret.
+1. I leveransfönstret klickar du på **[!UICONTROL Delivery measurement]** ikon.
 1. Välj hypotesmallen (frågan som är konfigurerad i modellen visas i hypotesfönstret).
 
    Hypotesen beräknas automatiskt när kampanjen är avslutad, baserat på de datum som konfigurerats i modellen. [Läs mer](hypothesis-templates.md#hypothesis-template-execution-settings)
@@ -93,12 +93,12 @@ Du kan referera till en hypotes i en marknadsföringskampanj innan den börjar. 
 
 Ni kan hänvisa direkt till en hypotes på kampanjnivå. I det här fallet kommer hypotesen automatiskt att länkas till alla leveranser som skapats i kampanjen. Så här gör du:
 
-1. Gå till fliken **[!UICONTROL Edit]** i kampanjen.
-1. Klicka på fliken **[!UICONTROL Default hypotheses]** i mätningsavsnittet.
+1. Gå till **[!UICONTROL Edit]** -fliken i kampanjen.
+1. Klicka på **[!UICONTROL Default hypotheses]** -fliken.
 
    ![](assets/response_hypothesis_instance_creation_010.png)
 
-1. Klicka på **[!UICONTROL Add]** och välj en hypotesmall.
+1. Klicka **[!UICONTROL Add]** och välja en hypotesmall.
 
    ![](assets/response_hypothesis_instance_creation_011.png)
 
@@ -106,17 +106,17 @@ Ni kan hänvisa direkt till en hypotes på kampanjnivå. I det här fallet komme
 
    ![](assets/response_hypothesis_instance_creation_012.png)
 
-Trottoarresultaten kan visas på flikarna **[!UICONTROL General]** och **[!UICONTROL Reactions]** i hypotesen. [Läs mer](hypothesis-tracking.md)
+Resultatet av hypotesen kan ses i **[!UICONTROL General]** och **[!UICONTROL Reactions]** hypotesens. [Läs mer](hypothesis-tracking.md)
 
-Mer information finns också i [det här exemplet](#example--creating-a-hypothesis-linked-to-a-delivery).
+Mer information finns i [det här exemplet](#example--creating-a-hypothesis-linked-to-a-delivery).
 
 ## Skapa en hypotes om ett erbjudande {#creating-a-hypothesis-on-an-offer}
 
 Att skapa en hypotes om ett offertförslag liknar att skapa en hypotes på direkten. Hypotesen kan verkställas så länge som erbjudandet är aktivt. Beräkningsperioden baseras på offertens förslagsdatum. När hypotesen låter dig länka en mottagare till ett köp, kan status för det erbjudande som troligtvis godkänns ändras automatiskt. [Läs mer](hypothesis-templates.md#transactions)
 
-1. Skapa en eller flera **[!UICONTROL Offer]**-typmodeller enligt beskrivningen i [det här avsnittet](hypothesis-templates.md#creating-a-hypothesis-model).
-1. Gå till noden **[!UICONTROL Campaign management > Measurement hypotheses]**.
-1. Skapa en **[!UICONTROL Offers]**-typografi genom att välja den modell som skapades tidigare.
+1. Skapa en eller flera **[!UICONTROL Offer]** typmodeller enligt beskrivningen i [det här avsnittet](hypothesis-templates.md#creating-a-hypothesis-model).
+1. Gå till **[!UICONTROL Campaign management > Measurement hypotheses]** nod.
+1. Skapa en **[!UICONTROL Offers]** gör en typografi genom att markera den tidigare skapade modellen.
 
    ![](assets/response_hypothesis_instance_offer_001.png)
 
@@ -129,14 +129,14 @@ Att skapa en hypotes om ett offertförslag liknar att skapa en hypotes på direk
    ![](assets/response_hypothesis_instance_offer_004.png)
 
 1. Förfina frågan om det behövs.
-1. Klicka på **[!UICONTROL Start]** för att köra hypotesen.
-1. Trottoarresultaten kan visas på flikarna **[!UICONTROL General]** och **[!UICONTROL Reactions]**. [Läs mer](hypothesis-tracking.md)
+1. Klicka **[!UICONTROL Start]** för att driva hypotesen.
+1. Resultaten av hypoteserna kan ses i **[!UICONTROL General]** och **[!UICONTROL Reactions]** -tabbar. [Läs mer](hypothesis-tracking.md)
 
-   Det finns referenser till hypoteser om ett erbjudande på fliken **[!UICONTROL Measurement]**.
+   Det finns referenser till hypoteser om ett erbjudande i **[!UICONTROL Measurement]** -fliken.
 
    ![](assets/response_hypothesis_instance_offer_007.png)
 
-   Om alternativet **[!UICONTROL Update offer proposition status]** var aktiverat i hypotesmallen ändras status för erbjudandeförslaget automatiskt, vilket ger återkoppling om kampanjens effekt (mer information finns i [Transaktioner](hypothesis-templates.md#transactions)).
+   Om **[!UICONTROL Update offer proposition status]** Alternativet aktiverades i hypotesmallen, status för erbjudandeförslaget ändras automatiskt, vilket ger återkoppling om kampanjens effekt (mer information om detta finns i [Transaktioner](hypothesis-templates.md#transactions)).
 
 ## Exempel: skapa en hypotes kopplad till en leverans {#example--creating-a-hypothesis-linked-to-a-delivery}
 
@@ -156,7 +156,7 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
    >
    >Mer information hittar du i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-1. Öppna **[!UICONTROL Direct mail delivery]** och klicka på ikonen **[!UICONTROL Delivery measurement]** och klicka sedan på **[!UICONTROL Add]**.
+1. Öppna **[!UICONTROL Direct mail delivery]** och klicka på **[!UICONTROL Delivery measurement]** ikonen och klicka sedan på **[!UICONTROL Add]**.
 
    ![](assets/response_hypothesis_delivery_example_002.png)
 
@@ -168,11 +168,11 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    ![](assets/response_hypothesis_delivery_example_005.png)
 
-1. Klicka på **[!UICONTROL Edit query...]** och förfina frågan genom att ange den produkt som hypotesen gäller.
+1. Klicka **[!UICONTROL Edit query...]** och förfina frågan genom att ange den produkt som hypotesen gäller.
 
    ![](assets/response_hypothesis_delivery_example_006.png)
 
-   Du kan kontrollera att hypotesen är länkad till leveransen på fliken **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** i kampanjen.
+   Du kan kontrollera att hypotesen är kopplad till leveransen i **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** -fliken i kampanjen.
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
@@ -180,6 +180,6 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
-1. Gå till noden **[!UICONTROL Campaign management > Measurement hypotheses]** i Adobe Campaign-trädet för att kontrollera indikatorerna som beräknats med hypotesen.
+1. Gå till Adobe Campaign **[!UICONTROL Campaign management > Measurement hypotheses]** nod för att kontrollera de indikatorer som beräknats av hypotesen.
 
    ![](assets/response_hypothesis_delivery_example_010.png)

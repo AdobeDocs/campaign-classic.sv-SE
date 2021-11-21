@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Med en **prenumerationstjänster**-typaktivitet kan du skapa eller ta bort en prenumeration på en informationstjänst för den population som anges i övergången.
+A **Prenumerationstjänster** Med aktivitet av -typ kan du skapa eller ta bort en prenumeration på en informationstjänst för den population som anges i övergången.
 
 Om du vill konfigurera den redigerar du aktiviteten och anger dess etikett och väljer sedan den åtgärd som ska utföras (prenumeration eller avprenumeration) och den aktuella tjänsten, som i följande exempel:
 
@@ -28,8 +28,8 @@ Om du vill konfigurera den redigerar du aktiviteten och anger dess etikett och v
 
    I allmänhet markerar målets prenumeration på en informationstjänst slutet av målarbetsflödet, vilket är varför alternativet inte aktiveras som standard.
 
-1. Klicka på **[!UICONTROL Subscription]** eller **[!UICONTROL Unsubscription]** om du vill prenumerera på eller avbryta prenumerationen på den angivna fyllningen i eller från den valda informationstjänsten.
-1. Välj **[!UICONTROL Send a confirmation message]** om du vill meddela mottagarna att de prenumererar på eller avbeställer en tjänst.
+1. Klicka **[!UICONTROL Subscription]** eller **[!UICONTROL Unsubscription]** om du vill prenumerera eller avbryta prenumerationen på den angivna populationen till eller från den valda informationstjänsten.
+1. Välj **[!UICONTROL Send a confirmation message]** för att meddela mottagarna att de prenumererar på eller avbeställer en tjänst.
 
    Innehållet i det här meddelandet anges i en leveransmall som är relaterad till informationstjänsten. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/managing-subscriptions.md).
 
@@ -56,14 +56,14 @@ Om du vill göra det måste du även utesluta mottagare som redan har prenumerer
 1. Infoga en prenumerationstjänstaktivitet och dubbelklicka sedan på den för att konfigurera den.
 1. Ange aktivitetsetiketten och välj **[!UICONTROL Subscription]**.
 
-   Om du vill kan du informera mottagarna om deras nyhetsbrevprenumeration genom att markera rutan **[!UICONTROL Send a confirmation message]**.
+   Om du vill kan du informera mottagarna om deras nyhetsbrevprenumeration genom att kontrollera **[!UICONTROL Send a confirmation message]** box.
 
 1. Markera den mapp som nyhetsbrevet finns i och välj sedan nyhetsbrevet i listan som visas.
-1. Låt **[!UICONTROL Generate outbound transition]** vara avmarkerat så att aktiviteten markerar slutet av arbetsflödet och klicka sedan på **[!UICONTROL Ok]**.
+1. Lämna **[!UICONTROL Generate outbound transition]** avmarkerad så att aktiviteten markerar slutet av arbetsflödet och sedan klickar du **[!UICONTROL Ok]**.
 
 Under arbetsflödeskörningen läggs de mottagare som motsvarar alla tre frågorna till i listan och prenumereras på nyhetsbrevet.
 
-Du kan kontrollera att prenumerationen lyckades genom att gå till fliken **[!UICONTROL Subscription]** för mottagarna.
+Du kan kontrollera att prenumerationen lyckades genom att gå till **[!UICONTROL Subscription]** -fliken för dina mottagare.
 
 ## Indataparametrar {#input-parameters}
 

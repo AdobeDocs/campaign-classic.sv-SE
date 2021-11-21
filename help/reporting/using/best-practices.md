@@ -58,7 +58,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
    Sedan måste du ta reda på vilken typ av data du vill visa: leveransindikatorer, rapporter om databasprofiler osv.
 
-   Du måste också känna till vilken typ av data det är (enkel, som ett resultat av en beräkning, signifikant osv.), dess plats (i Adobe Campaign, i ett tredjepartssystem), dess uppdateringsfrekvens för att definiera beräkningsfrekvensen (varje dag, varje vecka, varje gång) samt dess volym.
+   Du måste också känna till vilken typ av data det är (enkel, som är resultatet av en beräkning, signifikant osv.), dess plats (i Adobe Campaign, i ett tredjepartssystem), dess uppdateringsfrekvens för att definiera beräkningsfrekvensen (varje dag, varje vecka, varje gång) samt dess volym.
 
    De problem som är kopplade till datavolymer och uppdateringar måste undersökas noggrant för att undvika problem med rapportvisningen, särskilt i fråga om tid. Därför rekommenderar vi att man skapar aggregat för att förberäkna vissa data utanför rapporten. Tabeller som innehåller spårnings- och leveransloggar kan innehålla miljontals poster: Detta innebär att data måste aggregeras via ett arbetsflöde för att användas i en rapport.
 
@@ -114,4 +114,4 @@ Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
 ### Exportera rapporter {#exporting-reports}
 
-Recommendations som är specifikt för att exportera rapporter beskrivs i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Rapporter om export av Recommendations finns i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).

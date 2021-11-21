@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Med **Mobile App Channel** kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
+The **Mobilappskanal** Med kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
 
 >[!CAUTION]
 >
->I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta läser du den officiella Apple [dokumentationen](https://developer.apple.com/) och Android [dokumentationen](https://developer.android.com/index.html).
+>I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta, se den officiella Apple [dokumentation](https://developer.apple.com/) och Android [dokumentation](https://developer.android.com/index.html).
 
 Det finns två leveranskanaler:
 
-* En iOS-kanal som gör att du kan skicka meddelanden till Apple-mobilenheter.
+* En iOS-kanal som gör att du kan skicka meddelanden till Apple mobila enheter.
 
    ![](assets/nmac_intro_2.png)
 
@@ -53,11 +53,11 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 >* Varning: I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
 
 
-Arbetsflödet för **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [listan över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
+The **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) Arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om arbetsflödet finns i [förteckning över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](configuring-the-mobile-application.md).
+Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](configuring-the-mobile-application.md) -avsnitt.
 
-Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
+Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 ## Datasökväg {#data-path}
 
@@ -104,4 +104,4 @@ Använd följande kommandon för att kontrollera att den fungerar som den ska:
 
 Med iOS HTTP/2-kontakten måste MTA och webbservern kunna kontakta APN på port 443.
 
-Om du behöver använda iOS HTTP/2-kopplingen via en proxy, se den här [sidan](../../installation/using/file-res-management.md#proxy-connection-configuration).
+Om du behöver använda iOS HTTP/2-kontakten via en proxy, se denna [page](../../installation/using/file-res-management.md#proxy-connection-configuration).

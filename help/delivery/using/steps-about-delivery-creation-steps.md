@@ -32,7 +32,7 @@ De viktigaste stegen när du skapar en leverans är följande:
 
 1. **Skicka leveransen**. [Läs mer](steps-sending-the-delivery.md)
 
-1. **Övervaka leveransen**  (spårning, karantän, rapporter osv.). Mer information finns i avsnitten [Övervaka leveranser](about-delivery-monitoring.md) och [Spåra leveranser](about-message-tracking.md).
+1. **Övervaka leveransen** (spårning, karantän, rapporter osv.). Mer information finns i [Övervaka leveranser](about-delivery-monitoring.md) och [Spåra leveranser](about-message-tracking.md) -avsnitt.
 
 >[!NOTE]
 >

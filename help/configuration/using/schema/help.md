@@ -27,7 +27,7 @@ Ingen
 
 ## Överordnade {#parents-6}
 
-`<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`,       `<method />`
+`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
 ## Barn {#children-6}
 
@@ -35,7 +35,7 @@ Ingen
 
 ## Beskrivning {#description-6}
 
-Med det här elementet kan du beskriva en `<element>` eller `<attribute>`   -element. Den kan bara innehålla text och lagras i XML i databasen.
+Med det här elementet kan du beskriva en `<element>`  eller  `<attribute>`   -element. Den kan bara innehålla text och lagras i XML i databasen.
 
 ## Attributbeskrivning {#attribute-description-6}
 

@@ -17,17 +17,17 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-När du vill representera data i formatet **[!UICONTROL tables]** eller **[!UICONTROL charts]** kan de hämtas från två källor: en ny fråga (se [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data)) eller rapportkontexten (se [Använda kontextdata](#using-context-data)).
+När du vill representera data i form av **[!UICONTROL tables]** eller **[!UICONTROL charts]** kan den tas från två källor: en ny fråga (se [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data)) eller rapportsammanhanget (se [Använda kontextdata](#using-context-data)).
 
 ## Definiera ett direktfilter på data {#defining-a-direct-filter-on-data}
 
 ### Filtrera data {#filtering-data}
 
-Det är inte obligatoriskt att använda en **[!UICONTROL Query]**-typaktivitet när du skapar en rapport. Data kan filtreras direkt i de tabeller och diagram som rapporten består av.
+Använda en **[!UICONTROL Query]** typaktivitet är inte obligatoriskt när du skapar en rapport. Data kan filtreras direkt i de tabeller och diagram som rapporten består av.
 
-Detta gör att du kan välja vilka data som ska visas i rapporten direkt via aktiviteten **[!UICONTROL Page]** i rapporten.
+Detta gör att du kan välja vilka data som ska visas i rapporten direkt via **[!UICONTROL Page]** rapportens aktivitet.
 
-Det gör du genom att klicka på länken **[!UICONTROL Filter data...]** på fliken **[!UICONTROL Data]**: Med den här länken kan du komma åt uttrycksredigeraren för att definiera en fråga för de data som ska analyseras.
+Om du vill göra det klickar du på **[!UICONTROL Filter data...]** i **[!UICONTROL Data]** tab: Med den här länken kan du komma åt uttrycksredigeraren för att definiera en fråga för de data som ska analyseras.
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -35,7 +35,7 @@ Det gör du genom att klicka på länken **[!UICONTROL Filter data...]** på fli
 
 I följande exempel vill vi att diagrammet bara ska visa mottagarprofiler som bor i Frankrike och som har köpt något under året.
 
-Om du vill definiera det här filtret placerar du en sida i diagrammet och redigerar den. Klicka på länken **[!UICONTROL Filter data]** och skapa ett filter som matchar de data som du vill visa. Mer information om hur du skapar frågor i Adobe Campaign finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+Om du vill definiera det här filtret placerar du en sida i diagrammet och redigerar den. Klicka på **[!UICONTROL Filter data]** och skapa det filter som matchar de data som du vill visa. Mer information om hur du skapar frågor i Adobe Campaign finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -55,8 +55,8 @@ Använd följande steg:
 
 1. Placera en sida i diagrammet och redigera den.
 1. Skapa en pivottabell.
-1. Gå till fliken **[!UICONTROL Data]** och välj den kub som ska användas.
-1. Klicka på länken **[!UICONTROL Filter data...]** och definiera följande fråga för att ta bort Adobe från listan över företag.
+1. Gå till **[!UICONTROL Data]** och välj den kub som ska användas.
+1. Klicka på **[!UICONTROL Filter data...]** och definiera följande fråga för att ta bort Adobe från listan över företag.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -66,14 +66,14 @@ Endast mottagare som uppfyller filtervillkoren visas i rapporten.
 
 ## Använda kontextdata {#using-context-data}
 
-För att representera data i form av en **[!UICONTROL table]** eller en **[!UICONTROL chart]** kan data hämtas från rapportkontexten.
+Representera data i form av en **[!UICONTROL table]** eller en **[!UICONTROL chart]** kan data hämtas från rapportkontexten.
 
-På sidan som innehåller tabellen eller diagrammet kan du välja datakälla på fliken **[!UICONTROL Data]**.
+På sidan som innehåller tabellen eller diagrammet, **[!UICONTROL Data]** kan du välja datakälla.
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* Med alternativet **[!UICONTROL New query]** kan du skapa en fråga för att samla in data. Mer information finns i [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data).
-* Med alternativet **[!UICONTROL Context data]** kan du använda indata: rapportens sammanhang sammanfaller med informationen i den inkommande övergången på sidan som innehåller diagrammet eller tabellen. Den här kontexten kan till exempel innehålla data som samlats in via en **[!UICONTROL Query]**-aktivitet som placerats före **[!UICONTROL Page]**-aktiviteten och för vilken du måste ange tabellen och fälten som rapporten gäller.
+* The **[!UICONTROL New query]** kan du skapa en fråga för datainsamling. Mer information finns i [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data).
+* The **[!UICONTROL Context data]** kan du använda indata: rapportens sammanhang sammanfaller med informationen i den inkommande övergången på sidan som innehåller diagrammet eller tabellen. Det här sammanhanget kan t.ex. innehålla data som samlats in via en **[!UICONTROL Query]** aktivitet som placerats före **[!UICONTROL Page]** och för vilken du måste ange tabellen och fälten som rapporten gäller.
 
 Bygg till exempel följande fråga för mottagarna i en frågeruta:
 

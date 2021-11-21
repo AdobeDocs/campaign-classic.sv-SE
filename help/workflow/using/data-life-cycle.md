@@ -29,7 +29,7 @@ Välj den relevanta menyn för att göra detta:
 
 * Visa målet
 
-   Den här menyn visar tillgängliga data för målpopulationen samt arbetstabellens struktur (**[!UICONTROL Schema]**-flik).
+   På den här menyn visas tillgängliga data om målpopulationen samt arbetstabellens struktur (**[!UICONTROL Schema]** -fliken).
 
    ![](assets/wf-right-click-display.png)
 
@@ -41,7 +41,7 @@ Välj den relevanta menyn för att göra detta:
 
    Mer information om detta hittar du i det här [avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: markera alternativet **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
+Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: kontrollera **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
 
 Vi rekommenderar dock att du undviker att aktivera det här alternativet om det finns stora mängder data.
 
@@ -59,7 +59,7 @@ På så sätt kan du använda data som samlats in via en lista eller baserat på
 
 **[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i leveransens ingående övergång.
 
-Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på **[!UICONTROL Address substitution]**-läget så att personaliseringsdata kan anges. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på **[!UICONTROL Address substitution]** läge så att personaliseringsdata kan anges. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 I följande exempel ska vi samla in en lista med information om kunderna som ska användas i ett personaliserat e-postmeddelande.
 
@@ -85,7 +85,7 @@ Använd följande steg:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Konfigurera typaktiviteten **[!UICONTROL Enrichment]** för att stämma av insamlade data med data som redan finns i Adobe Campaign-databasen.
+1. Konfigurera **[!UICONTROL Enrichment]** typaktivitet för att stämma av insamlade data med data som redan finns i Adobe Campaign-databasen.
 
    Här är avstämningsnyckeln kontonumret:
 
@@ -97,11 +97,11 @@ Använd följande steg:
 
    >[!CAUTION]
    >
-   >Endast data i övergången får användas för att anpassa leveransen. **Anpassningsfält** för måldatatyp är bara tillgängliga för den inkommande populationen av  **[!UICONTROL Delivery]** aktiviteten.
+   >Endast data i övergången får användas för att anpassa leveransen. **targetData** typanpassningsfält är bara tillgängliga för den inkommande populationen i **[!UICONTROL Delivery]** aktivitet.
 
 1. Använd de fält som samlats in i arbetsflödet i leveransmallen.
 
-   Om du vill göra det infogar du **[!UICONTROL Target extension]**-typanpassningsfält.
+   Om du vill göra det infogar du **[!UICONTROL Target extension]** typanpassningsfält.
 
    ![](assets/wf-targetdata-sample-5.png)
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Felsöka
-description: Felsöka
+title: Felsökning
+description: Felsökning
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 ---
 
-# Felsöka{#troubleshooting}
+# Felsökning{#troubleshooting}
 
 ![](../../assets/common.svg)
 
@@ -30,4 +30,4 @@ HTTP/2-anslutning: du måste tillåta kommunikation till och från följande ser
 
 >[!NOTE]
 >
->Mer information om de två anslutningarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](configuring-the-mobile-application.md).
+>Mer information om de två kopplingarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](configuring-the-mobile-application.md).

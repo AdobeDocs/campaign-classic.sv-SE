@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control**-modulen som standard.
+Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control** som standard.
 
 
 Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
@@ -35,8 +35,8 @@ Beroende på vilken Campaign-version du har finns mer information i följande av
    <td> <strong>Beskrivning</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Meddelandecenter &lt;externt_kontonamn&gt;<br /> </td> 
-   <td> mcSynch_&lt;externt_kontonamn&gt;<br /> </td> 
+   <td> Meddelandecenter &lt;external_account_name&gt;<br /> </td> 
+   <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
    <td> Det här arbetsflödet:<br /> 
     <ul> 
      <li> <p>återställer listan över händelser som bearbetats av åtgärderna.</p> </li> 

@@ -23,6 +23,6 @@ Med Social Marketing kan ni skicka leveranser till olika Facebook-sidor och Twit
 >
 >Adobe Campaign ber dig att följa de användarvillkor som Facebook och Twitter har meddelat när det gäller meddelandeleverans.
 >
->Innan du skickar publikationer måste du följa konfigurationsstegen som beskrivs i [Starta arbetsflöden](../../social/using/starting-workflows.md).
+>Innan du skickar publikationer måste du följa de konfigurationssteg som beskrivs i [Starta arbetsflöden](../../social/using/starting-workflows.md).
 
 I det här avsnittet beskrivs de element som är specifika för en Facebook- och Twitter-leverans. Alla element som är identiska med e-postleveranser beskrivs i [det här avsnittet](../../delivery/using/about-email-channel.md).

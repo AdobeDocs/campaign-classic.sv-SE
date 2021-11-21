@@ -19,13 +19,13 @@ ht-degree: 7%
 
 ## Övervaka gränsvärden {#monitoring-thresholds}
 
-Du kan konfigurera varningströskeln (orange) och varningströsklar (röda) för de indikatorer som visas i **Message Center-servicenivån** och **Message Center-bearbetningstiden**-rapporter (se [Åtkomst till transaktionsmeddelanderapporter](../../message-center/using/about-transactional-messaging-reports.md)).
+Du kan konfigurera varningströskeln (orange) och varningströskeln (röd) för de indikatorer som visas i **Tjänstnivå för meddelandecenter** och **Bearbetningstid för meddelandecenter** rapporter (se [Få tillgång till transaktionsrapporter](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Följ stegen nedan för att göra detta:
 
-1. Öppna distributionsguiden på **körningsinstansen**.
+1. Öppna distributionsguiden på **körningsinstans**.
 
-1. Gå till sidan **[!UICONTROL Message Center]**.
+1. Gå till **[!UICONTROL Message Center]** sida.
 
 1. Använd pilarna för att ändra tröskelvärdena.
 
@@ -33,13 +33,13 @@ Följ stegen nedan för att göra detta:
 
 >[!NOTE]
 >
->Antalet väntande händelser i kö visas i avsnittet [Systemindikatorer](../../production/using/monitoring-processes.md#system-indicators) på sidan för Adobe Campaign processövervakning. Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Antalet väntande händelser i kön visas i [Systemindikatorer](../../production/using/monitoring-processes.md#system-indicators) på Adobe Campaign procesövervakningssida. Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Rensa händelser {#purging-events}
 
-Du kan använda [distributionsguiden](../../production/using/database-cleanup-workflow.md#deployment-wizard) för att konfigurera hur länge data ska lagras i databasen.
+Du kan använda [distributionsguide](../../production/using/database-cleanup-workflow.md#deployment-wizard) för att konfigurera hur länge data ska lagras i databasen.
 
-Händelserensning utförs automatiskt av [arbetsflödet för databasrensning](../../production/using/database-cleanup-workflow.md). Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
+Rensa händelser utförs automatiskt av [Arbetsflöde för databasrensning](../../production/using/database-cleanup-workflow.md). Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
 
 Använd pilarna för att ändra inställningarna för tömning.
 
@@ -62,11 +62,11 @@ De olika tekniska arbetsflödena för transaktionsmeddelanden (Message Center) �
 
 ### Styra instansarbetsflöden {#control-instance-workflows}
 
-Om du har en eller flera instanser registrerade för körning i kontrollinstansen måste du skapa ett arkiveringsarbetsflöde för varje **[!UICONTROL Message Center execution instance]**-externt konto. Klicka på knappen **[!UICONTROL Create the archiving workflow]** för att skapa och starta arbetsflödet.
+Oavsett om du har en eller flera instanser registrerade för körning måste du skapa ett arkiveringsarbetsflöde för varje instans **[!UICONTROL Message Center execution instance]** externt konto. Klicka på **[!UICONTROL Create the archiving workflow]** för att skapa och starta arbetsflödet.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Arbetsflödena kan sedan nås från mappen **Administration > Produktion > Meddelandecenter**. Arkiveringsarbetsflödena startas automatiskt när de har skapats.
+Du kommer sedan åt dessa arbetsflöden via **Administration > Produktion > Meddelandecenter** mapp. Arkiveringsarbetsflödena startas automatiskt när de har skapats.
 
 <!--**Minimal architecture**
 
@@ -76,11 +76,11 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### Arbetsflöden för körningsinstanser {#execution-instance-workflows}
 
-På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena för transaktionsmeddelanden från mappen **Administration > Produktion > Meddelandecenter**. Du behöver bara starta dem. Arbetsflödena i listan är:
+På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena för transaktionsmeddelanden via **Administration > Produktion > Meddelandecenter** mapp. Du behöver bara starta dem. Arbetsflödena i listan är:
 
-* **[!UICONTROL Processing batch events]** (internt namn:  **[!UICONTROL batchEventsProcessing]** ): Med det här arbetsflödet kan du dela upp grupphändelser i en kö innan de länkas till en meddelandemall.
-* **[!UICONTROL Processing real time events]** (internt namn:  **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du bryta ned realtidshändelser i en kö innan de länkas till en meddelandemall.
-* **[!UICONTROL Update event status]** (internt namn:  **[!UICONTROL updateEventStatus]** ): det här arbetsflödet gör att du kan tilldela en status till händelsen.
+* **[!UICONTROL Processing batch events]** (internt namn: **[!UICONTROL batchEventsProcessing]** ): Med det här arbetsflödet kan du dela upp grupphändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Processing real time events]** (internt namn: **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du bryta ned realtidshändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Update event status]** (internt namn: **[!UICONTROL updateEventStatus]** ): det här arbetsflödet gör att du kan tilldela en status till händelsen.
 
    Följande händelselägen är tillgängliga:
 
@@ -111,7 +111,7 @@ Följ stegen nedan på körningsinstansen/körningsinstanserna:
 
    >[!NOTE]
    >
-   >Lär dig hur du skapar ett externt konto av typen körningsinstans i [det här avsnittet](../../message-center/using/configuring-instances.md#control-instance).
+   >Lär dig hur du skapar ett externt konto av instanstypen körning i [det här avsnittet](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Utöka schemat nms:extAccount för att lägga till spårnings-URL:
 
@@ -122,7 +122,7 @@ Följ stegen nedan på körningsinstansen/körningsinstanserna:
 
    >[!NOTE]
    >
-   >Lär dig hur du utökar ett befintligt schema i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md).
+   >Lär dig hur du utökar ett befintligt schema i [Utöka ett schema](../../configuration/using/extending-a-schema.md) -avsnitt.
 
 1. Ändra formuläret nms:extAccount:
 
@@ -160,7 +160,7 @@ I kontrollinstansen måste du länka leveransmallar och externa konton.
 
 Följ stegen nedan för att göra detta:
 
-1. Skapa ett externt konto per varumärke med samma interna namn som definierats i [körningsinstansen](#execution-instance) (steg 1).
+1. Skapa ett externt konto per varumärke med samma interna namn som på [körningsinstans](#execution-instance) (steg 1).
 
 1. Skapa en standardleveransmall per varumärke.
 
@@ -168,4 +168,4 @@ Följ stegen nedan för att göra detta:
    >
    >    Lär dig hur du skapar en leveransmall i [det här avsnittet](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
 
-1. I leveransmallens **[!UICONTROL Properties]** anger du routningen till varumärkets externa konto.
+1. I leveransmallens **[!UICONTROL Properties]**, ange routningen till varumärkesets externa konto.

@@ -17,15 +17,15 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-## Om variabla PDF-dokument {#about-variable-pdf-documents}
+## Om PDF-dokument med variabel kod {#about-variable-pdf-documents}
 
-Med Adobe Campaign kan du generera variabla PDF-dokument för e-postbilagor från dokument i LibraryOffice eller Microsoft Word.
+Med Adobe Campaign kan du generera variabla PDF-dokument för e-postbilagor från dokument i LibreOffice eller Microsoft Word.
 
 Följande tillägg stöds: &quot;.docx&quot;, &quot;.doc&quot; och &quot;.odt&quot;.
 
 För att personalisera dina dokument finns samma JavaScript-funktioner som för e-postpersonalisering.
 
-Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](attaching-files.md).
+Du måste aktivera **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** alternativ. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i [Bifoga filer](attaching-files.md) -avsnitt.
 
 Exempel på en anpassning av en fakturarubrik:
 
@@ -38,7 +38,7 @@ Om du vill generera dynamiska tabeller eller inkludera bilder via en URL-adress 
 Så här genererar du dynamiska tabeller:
 
 * Skapa en tabell med tre rader och så många kolumner som behövs, och konfigurera sedan tabellens layout (kanter osv.).
-* Placera markören på tabellen och klicka på menyn **[!UICONTROL Table > Table properties]**. Gå till fliken **[!UICONTROL Table]** och ange ett namn som börjar med **NlJsTable**.
+* Placera markören på tabellen och klicka på **[!UICONTROL Table > Table properties]** -menyn. Gå till **[!UICONTROL Table]** och ange ett namn som börjar med **NlJsTable**.
 * I den första cellen på den första raden definierar du en slinga (&quot;for&quot;, till exempel) som aktiverar iteration på de värden som du vill visa i tabellen.
 * I varje cell på den andra raden i tabellen infogar du skript som returnerar de värden som ska visas.
 * Stäng slingan på tabellens tredje och sista rad.
@@ -64,15 +64,15 @@ För att göra detta måste du konfigurera ett personaliseringsblock och sedan t
 
 **Steg 2: skapa personaliseringsblocket:**
 
-* Gå till menyn **[!UICONTROL Resources > Campaign management > Personalization blocks]** i Adobe Campaign-konsolen.
+* Gå till **[!UICONTROL Resources > Campaign management > Personalization blocks]** Adobe Campaign-konsolens meny.
 * Skapa ett nytt anpassningsblock för&quot;Min logotyp&quot; med&quot;Min_logotyp&quot; som internt namn.
-* Klicka på länken **[!UICONTROL Advanced parameters...]** och markera sedan alternativet **[!UICONTROL "The content of the block is included in an attachment"]**. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
+* Klicka på **[!UICONTROL Advanced parameters...]** sedan kontrollera **[!UICONTROL "The content of the block is included in an attachment"]** alternativ. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
    Ni måste skilja på två typer av deklarationer inom personaliseringsblocket:
 
-   * Adobe Campaign-koden för de anpassningsfält för vilka&quot;öppna&quot; och&quot;stängda&quot;-texterna måste ersättas med escape-tecken (respektive `&lt;` och `&gt;`).
+   * Adobe Campaign-koden för de anpassningsfält där&quot;öppna&quot;- och&quot;stängda&quot;-texterna måste ersättas med escape-tecken (respektive) `&lt;` och `&gt;`).
    * Hela OpenOffice XML-koden kopieras till OpenOffice-dokumentet.
 
 I exemplet ser personaliseringsblocket ut så här:

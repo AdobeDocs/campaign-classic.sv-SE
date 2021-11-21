@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Kampanj - Microsoft Dynamics CRM Connector
+title: Campaign - Microsoft Dynamics CRM Connector
 description: Connect Campaign och Microsoft Dynamics
 audience: platform
 content-type: reference
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 På den här sidan får du lära dig att ansluta Campaign Classic till **Microsoft Dynamics CRM 365**.
 
-Möjlig distribution sker via **webb-API** (rekommenderas). Läs [avsnittet nedan](#microsoft-dynamics-implementation-step) om du vill veta mer om hur du konfigurerar anslutningen till Microsoft Dynamics.
+Möjlig distribution sker via **Webb-API** (rekommenderas). Se [avsnittet nedan](#microsoft-dynamics-implementation-step) om du vill lära dig steg för att konfigurera anslutningen till Microsoft Dynamics.
 
 Datasynkronisering utförs via en dedikerad arbetsflödesaktivitet. [Läs mer](../../platform/using/crm-data-sync.md).
 
 ## Implementeringssteg{#microsoft-dynamics-implementation-steps}
 
-Om du vill ansluta Microsoft Dynamics 365 till Adobe Campaign via **webb-API** måste du utföra följande steg:
+Koppla Microsoft Dynamics 365 till Adobe Campaign via **Webb-API** måste du utföra följande steg:
 
 I Microsoft Dynamics CRM:
 1. Hämta klient-ID för Microsoft Dynamics
@@ -53,28 +53,28 @@ I Campaign Classic:
 
 ## Konfigurera Microsoft Dynamics CRM {#config-crm-microsoft}
 
-Om du vill generera åtkomsttoken och nycklar för att konfigurera kontot måste du logga in på [Microsoft Azure Directory](https://portal.azure.com) med en **global administratör**-inloggningsinformation. Följ sedan instruktionerna nedan.
+Om du vill generera åtkomsttoken och nycklar för att konfigurera kontot måste du logga in på [Microsoft Azure-katalog](https://portal.azure.com) med **Global administratör** autentiseringsuppgifter. Följ sedan instruktionerna nedan.
 
 ### Hämta klient-ID för Microsoft Dynamics {#get-client-id-microsoft}
 
 Om du vill hämta klient-ID:t måste du registrera en app i Azure Active Directory. Klient-ID är samma som program-ID.
 
-1. Navigera till **Azure Active Directory > App Registrations** och klicka på **Ny programregistrering**.
+1. Navigera till **Azure Active Directory > App Registrations** och klicka  **Ny ansökningsregistrering**.
 1. Ge ett unikt namn som kan hjälpa till att identifiera en instans, till exempel **adobecampaign`<instance identifier>`**.
-1. Välj **Programtyp** som **Webbprogram/API**.
-1. Använd `http://localhost` för **inloggnings-URL**.
+1. Välj **Programtyp** as **Webbprogram/API**.
+1. Använd `http://localhost` for **Inloggnings-URL**.
 
-När du har sparat får du ett **program-ID** som är Klient-ID för Campaign.
+När du sparar får du en **Program-ID** som är klient-ID för Campaign.
 
 Läs mer i [den här sidan](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
 ### Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat {#config-certificate-key-id}
 
-Följ stegen nedan för att hämta **identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)**:
+För att få **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)** följer du stegen nedan:
 
-1. Navigera till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
+1. Navigera till **Azure Active Directory > App Registrations** och välj programmet som skapades tidigare.
 1. Klicka på **Certifikat och hemlighet**.
-1. Klicka på **Överför certifikat** och bläddra sedan och överför det offentliga certifikat som genererats.
+1. Klicka på **Överför certifikat** och sedan bläddra och ladda upp det offentliga certifikat som genererats.
 1. Om du vill generera certifikatet kan du använda openssl.
 
    Exempel:
@@ -85,25 +85,25 @@ Följ stegen nedan för att hämta **identifieraren för certifikatnyckeln (cust
 
    >[!NOTE]
    >
-   >Du kan ändra antalet dagar, här `-days 365`, i kodexemplet för en längre certifikatgiltighetsperiod.
+   >Du kan ändra antalet dagar här `-days 365`, i kodexemplet för en längre certifikatgiltighetsperiod.
 
-1. Sedan måste du koda den i base64. Det gör du genom att använda en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
+1. Sedan måste du koda den i base64. Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
 
-1. Klicka på länken **Manifest** för att hämta **identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)**.
+1. Klicka på **Manifest** länk för att hämta **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)**.
 
-**Identifieraren för certifikatnyckeln (customKeyIdentifier)** och **nyckel-ID (keyId)** kommer att behövas senare för att konfigurera det externa Microsoft Dynamics CRM-kontot med certifikatet **[!UICONTROL CRM O-Auth type]**.
+The **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)** behövs senare för att konfigurera ditt externa Microsoft Dynamics CRM-konto med hjälp av certifikatet **[!UICONTROL CRM O-Auth type]**.
 
 ### Konfigurera behörigheter {#config-permissions-microsoft}
 
-**Steg 1**: Konfigurera  **nödvändig** behörighet för det program som skapades.
+**Steg 1**: Konfigurera **Nödvändiga behörigheter** för programmet som skapades.
 
-1. Navigera till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
-1. Klicka på **Inställningar** överst till vänster.
-1. På **Nödvändiga behörigheter** klickar du på **Lägg till** och **Välj ett API > Dynamics CRM Online**.
-1. Klicka på **Markera**, aktivera **Använd Dynamics 365 som organisationsanvändare** och klicka på **Välj**.
-1. Välj sedan **Manifest** i **Hantera**-menyn i din app.
+1. Navigera till **Azure Active Directory > App Registrations** och välj programmet som skapades tidigare.
+1. Klicka **Inställningar** överst till vänster.
+1. På **Nödvändiga behörigheter**, klicka **Lägg till** och **Välj ett API > Dynamics CRM Online**.
+1. Klicka **Välj**, aktivera **Använd Dynamics 365 som organisationsanvändare** kryssruta och klicka **Välj**.
+1. Välj sedan **Manifest** under **Hantera** -menyn.
 
-1. I redigeraren **Manifest** anger du egenskapen `allowPublicClient` från `null` till `true` och klickar på **Spara**.
+1. Från **Manifest** redigeraren, ange `allowPublicClient` egenskap från `null` till `true` och klicka **Spara**.
 
 **Steg 2**: Medgivande från bidragsadministratör
 
@@ -111,63 +111,63 @@ Följ stegen nedan för att hämta **identifieraren för certifikatnyckeln (cust
 
 1. Välj det program som du vill ge innehavaromfattande administratörsgodkännande för.
 
-1. Välj **Behörigheter** under **Säkerhet** på den vänstra panelmenyn.
+1. Välj **Behörigheter** under **Säkerhet**.
 
-1. Klicka på **Bevilja administratörens samtycke**.
+1. Klicka **Medgivande från bidragsadministratör**.
 
-Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
+Mer information finns i [Azure-dokumentation](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
 
 ### Skapa en appanvändare {#create-app-user-microsoft}
 
 >[!NOTE]
 >
-> Det här steget är valfritt med **[!UICONTROL Password credentials]**-autentisering.
+> Det här steget är valfritt med **[!UICONTROL Password credentials]** autentisering.
 
 Appanvändaren är den användare som programmet som registrerats ovan kommer att använda. Alla ändringar som görs i Microsoft Dynamics med den app som registrerats ovan görs via den här användaren.
 
 **Steg 1**: Skapa en icke-interaktiv användare i azure Active Directory
 
-1. Klicka på **Azure Active Directory > Användare** och klicka på **Ny användare**.
+1. Klicka **Azure Active Directory > Användare** och klicka **Ny användare**.
 1. Ange ett egennamn som du vill använda och användarnamnet ska vara ett e-postformat.
-1. Välj **Dynamics 365 Administrator** i **katalogrollen**.
+1. Välj **Dynamics 365-administratör** i **Katalogroll**.
 
 **Steg 2**: Tilldela den skapade användaren en korrekt licens
 
-1. Från [Microsoft Azure](https://portal.azure.com), klicka på **Admin-appen**.
+1. Från [Microsoft Azure](https://portal.azure.com), klicka på **Administratörsapp**.
 1. Gå till **Användare > Aktiva användare** och klicka på den nyskapade användaren.
-1. Klicka på **Redigera produktlicenser** och välj **Dynamics 365 Customer Engagement Plan**.
-1. Klicka på **Stäng**.
+1. Klicka på **Redigera produktlicenser** och väljer **Dynamics 365 Customer Engagement Plan**.
+1. Klicka **Stäng**.
 
 **Steg 3**: Skapa en programanvändare i Dynamics CRM
 
-1. Navigera från [Microsoft Azure](https://portal.azure.com) till **Inställningar > Säkerhet > Användare**.
-1. Klicka på listrutan, välj **Programanvändare** och klicka på **Nytt**.
+1. Från [Microsoft Azure](https://portal.azure.com), navigera till **Inställningar > Dokumentskydd > Användare**.
+1. Klicka på listrutan och välj **Programanvändare** och klicka **Nytt**.
 1. Använd samma användarnamn som användaren skapade i den aktiva katalogen ovan
 
    >[!NOTE]
    >
    >Om du använder samma namn genereras ett dubblettnyckelfel, så använd ett annat användarnamn och fortsätt tills vi får en bekräftelse på om det här steget behövs.
 
-1. Tilldela **program-ID** för [det program du skapade tidigare](#get-client-id-microsoft).
-1. Klicka på **Hantera roller** och välj rollen **Systemadministratör** för användaren.
+1. Tilldela **Program-ID** for [det program du skapade tidigare](#get-client-id-microsoft).
+1. Klicka på **Hantera roller** och väljer **Systemadministratör** till användaren.
 
 ## Konfigurera Campaign {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
-> När [RDS har tagits bort från Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint) är de lokala och Office 365-typerna av CRM-distributioner inte längre kompatibla med Campaign. Adobe Campaign har nu endast stöd för Web API-distribution för CRM-versionen **Dynamic CRM 365**. [Läs mer](../../rn/using/deprecated-features.md#crm-connectors).
+> Lägg upp avvecklingen av [RDS från Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)är de lokala och Office 365-typerna av CRM-distributioner inte längre kompatibla med Campaign. Adobe Campaign har nu endast stöd för Web API-distribution för CRM-versionen **Dynamisk CRM 365**. [Läs mer](../../rn/using/deprecated-features.md#crm-connectors).
 
-Om du vill ansluta till Microsoft Dynamics 365 och Campaign måste du skapa och konfigurera en dedikerad **[!UICONTROL External Account]** i Campaign.
+Om du vill ansluta Microsoft Dynamics 365 och Campaign måste du skapa och konfigurera en dedikerad **[!UICONTROL External Account]** i Campaign.
 
 1. Navigera till **[!UICONTROL Administration > Platform > External accounts]**.
 
-1. Välj det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot. Markera alternativet **[!UICONTROL Enabled]**.
+1. Välj **[!UICONTROL Microsoft Dynamics CRM]** externt konto. Markera alternativet **[!UICONTROL Enabled]**.
 
 1. Fyll i den information som krävs för att ansluta Microsoft Dynamics 365 och Campaign.
 
    >[!NOTE]
    >
-   >Konfigurationen av det externa Microsoft Dynamics CRM-kontot med varje **[!UICONTROL CRM O-Auth type]** är detaljerad [i det här avsnittet](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
+   >Konfiguration av externt Microsoft Dynamics CRM-konto med varje **[!UICONTROL CRM O-Auth type]** är detaljerad [i det här avsnittet](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
@@ -179,7 +179,7 @@ Om du vill ansluta till Microsoft Dynamics 365 och Campaign måste du skapa och 
 
    ![](assets/crm_connectors_msdynamics_03.png)
 
-1. Klicka på **[!UICONTROL Next]** för att börja skapa motsvarande schema.
+1. Klicka **[!UICONTROL Next]** för att börja skapa motsvarande schema.
 
    ![](assets/crm_connectors_msdynamics_04.png)
 
@@ -191,19 +191,19 @@ Om du vill ansluta till Microsoft Dynamics 365 och Campaign måste du skapa och 
 
    ![](assets/crm_connectors_msdynamics_05.png)
 
-1. Klicka på länken **[!UICONTROL Synchronizing enumerations...]** för att starta synkroniseringen av uppräkningar mellan Adobe Campaign och Microsoft Dynamics.
+1. Klicka på **[!UICONTROL Synchronizing enumerations...]** för att starta synkroniseringen av uppräkningar mellan Adobe Campaign och Microsoft Dynamics.
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
-Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen. Läs mer i avsnittet [Datasynkronisering](../../platform/using/crm-data-sync.md).
+Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen. Läs mer i [Datasynkronisering](../../platform/using/crm-data-sync.md) -avsnitt.
 
 >[!NOTE]
 >
-> Du måste se till att lägga till två URL-adresser i tillåtelselista: serverns URL och `login.microsoftonline.com` i serverkonfigurationen.
+> Du måste se till att lägga till två URL-adresser i tillåtelselista: server-URL och `login.microsoftonline.com` i serverkonfigurationen.
 
 ## Datatyper för fält som stöds {#ms-dyn-supported-types}
 
-För attributtyper som stöds/inte stöds i Microsoft Dynamics 365 anges nedan:
+För Microsoft Dynamics 365 finns följande attributtyper som stöds/inte stöds:
 
 
 | Attributtyp | Stöds |

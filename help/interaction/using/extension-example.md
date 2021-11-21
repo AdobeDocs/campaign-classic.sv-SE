@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Vid inkommande kontakt (kundtjänst eller webbplats) föreslås de mest relevanta erbjudandena till en viss kontakt med hjälp av en uppsättning regler för behörighet. Om du vill utöka behörighetskriterierna för dina erbjudanden ska du utöka schemat **nms:interaction**.
+Vid inkommande kontakt (kundtjänst eller webbplats) föreslås de mest relevanta erbjudandena till en viss kontakt med hjälp av en uppsättning regler för behörighet. Om du vill utöka kriterierna för dina erbjudanden kan du utöka **nms:interaktion** schema.
 
-* Om du vill lägga till en ny interaktionskontext utökar du schemat **nms:interaction** och skapar så många **attribute**-element som behövs i schemat.
+* Om du vill lägga till en ny interaktionskontext utökar du **nms:interaktion** schema och skapa så många **attribute** element efter behov i schemat.
 
    I följande exempel är de villkor som lagts till landskoden och den senast besökta sidan.
 
@@ -31,4 +31,4 @@ Vid inkommande kontakt (kundtjänst eller webbplats) föreslås de mest relevant
 
    ![](assets/s_ncs_configuration_offer_context.png)
 
-* När du konfigurerar SOAP-anrop infogar du XML-elementet **context** för att referera till kontextinformation som lagts till i interaktionsschemat. Mer information finns i [Integrering via SOAP (serversidan)](../../interaction/using/integration-via-soap--server-side-.md).
+* När SOAP-anrop konfigureras infogar du **kontext** XML-element för att referera till kontextinformation som lagts till i interaktionsschemat. Mer information finns i [Integrering via SOAP (serversida)](../../interaction/using/integration-via-soap--server-side-.md).

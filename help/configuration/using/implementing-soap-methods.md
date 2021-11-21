@@ -90,7 +90,7 @@ Funktionens signatur måste innehålla ett argument för varje in- eller inout-p
 Specialfall:
 
 * **icke-statiska metoder**: funktionen måste innehålla ett extra argument först, som sammanfaller med den XML-entitet som skickas i form av ett XML-typobjekt (E4X).
-* **Typmetoder** av typen&quot;endast nyckel&quot;: funktionen måste innehålla ytterligare ett argument först, som sammanfaller med den tangent som skickas i form av teckensträngar.
+* **type-metoderna &quot;key only&quot;**: funktionen måste innehålla ytterligare ett argument först, som sammanfaller med den tangent som skickas i form av teckensträngar.
 
 **3. Returnerade värden**
 

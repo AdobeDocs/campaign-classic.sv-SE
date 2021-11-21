@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-Om du vill använda ändringarna i scheman startar du guiden för databasuppdatering. Den här guiden är tillgänglig via **[!UICONTROL Tools > Advanced > Update database structure]**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten.
+Om du vill använda ändringarna i scheman startar du guiden för databasuppdatering. Den här guiden är tillgänglig via **[!UICONTROL Tools > Advanced > Update database structure]** . Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten.
 
 ![](assets/d_ncs_integration_schema_update.png)
 
@@ -25,9 +25,9 @@ Modulerna i databasen fylls i och aktiveras automatiskt.
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-Alternativen **[!UICONTROL Add stored procedures]** och **[!UICONTROL Import initialization data]** används för att starta de inledande SQL-skripten och de datapaket som körs när databasen skapas.
+The **[!UICONTROL Add stored procedures]** och **[!UICONTROL Import initialization data]** används för att starta de inledande SQL-skripten och de datapaket som körs när databasen skapas.
 
-Du kan importera en uppsättning data från ett externt datapaket. Det gör du genom att välja **[!UICONTROL Import a package]** och ange paketets XML-fil.
+Du kan importera en uppsättning data från ett externt datapaket. Välj **[!UICONTROL Import a package]** och ange paketets XML-fil.
 
 Följ stegen och visa SQL-skriptet för databasuppdatering:
 

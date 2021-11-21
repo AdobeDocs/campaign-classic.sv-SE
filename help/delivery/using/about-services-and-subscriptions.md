@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Med Adobe Campaign kan du skapa och administrera informationstjänster som nyhetsbrev och hantera prenumerationer på dessa tjänster. Flera tjänster kan definieras parallellt, till exempel: särskilda nyhetsbrev för vissa produktkategorier, teman eller områden på en webbplats, prenumerationer på olika typer av varningsmeddelanden och meddelanden i realtid. Se [Hantera prenumerationer](managing-subscriptions.md).
 
-Du kan också göra det möjligt för leveransmottagarna att dela dem med medlemmar i deras sociala eller professionella nätverk. Om du vill göra det infogar du länkarna i leveransen. Du kan sedan följa upp denna delningsprocess samt antalet besök på de berörda sidorna. Mer information finns i [Viral and social marketing](viral-and-social-marketing.md).
+Du kan också göra det möjligt för leveransmottagarna att dela dem med medlemmar i deras sociala eller professionella nätverk. Om du vill göra det infogar du länkarna i leveransen. Du kan sedan följa upp denna delningsprocess samt antalet besök på de berörda sidorna. Mer information finns i [Virusmarknadsföring och social marknadsföring](viral-and-social-marketing.md).
 
 >[!NOTE]
 >

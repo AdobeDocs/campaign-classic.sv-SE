@@ -23,16 +23,16 @@ Genom att konfigurera mallen för hypoteser kan du definiera sammanhanget för a
 
 Så här skapar du en hypotesmall:
 
-1. Klicka på **[!UICONTROL Resources>Templates>Hypothesis templates]** i Utforskaren i Adobe Campaign.
+1. Klicka på **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
-1. Klicka på **[!UICONTROL New]** eller högerklicka i listan med mallar och välj **[!UICONTROL New]** i listrutan.
+1. Klicka **[!UICONTROL New]** eller högerklicka i listan med mallar och välj **[!UICONTROL New]** i listrutan.
 1. Ange hypotessetiketten.
 1. Ange om mallen är avsedd för hypoteser om erbjudanden eller leveranser via **[!UICONTROL Hypothesis type]**.
-1. För **[!UICONTROL Delivery]**-typmallar anger du om mätningar ska utföras med eller utan en kontrollgrupp. [Läs mer](#properties-of-a-hypothesis-template)
-1. För **[!UICONTROL Delivery]**-typmallar kan du välja en specifik kanal eller bestämma dig för att använda mallen på alla tillgängliga kanaler i Adobe Campaign med hjälp av listrutan **[!UICONTROL Channel]**. [Läs mer](#properties-of-a-hypothesis-template)
-1. Välj den **[!UICONTROL Execution folder]** som du vill skapa och kör automatiskt de hypoteser som ska skapas från den här mallen.
+1. För **[!UICONTROL Delivery]** typmallar, ange om mätningar ska utföras med eller utan en kontrollgrupp. [Läs mer](#properties-of-a-hypothesis-template)
+1. För **[!UICONTROL Delivery]** typmallar kan du välja en viss kanal eller bestämma dig för att använda mallen på alla tillgängliga kanaler i Adobe Campaign med **[!UICONTROL Channel]** nedrullningsbar lista. [Läs mer](#properties-of-a-hypothesis-template)
+1. Välj **[!UICONTROL Execution folder]** där du vill skapa och automatiskt köra de hypoteser som ska skapas från den här mallen.
 1. Välj körningsinställningar. [Läs mer](#hypothesis-template-execution-settings)
 1. Ange beräkningsperioden för hypotesen. [Läs mer](#hypothesis-template-execution-settings)
 
@@ -40,14 +40,14 @@ Så här skapar du en hypotesmall:
    >
    >Perioden bestäms från kontaktdatumet.
 
-1. På fliken **[!UICONTROL Transactions]** anger du de tabeller och fält som krävs för beräkningen av hypotesen. [Läs mer](#transactions)
-1. Om mallen är konfigurerad för **[!UICONTROL Offer]**-typografi kan du aktivera alternativet **[!UICONTROL Update offer proposition status]**: I så fall väljer du status för det erbjudande du vill ändra.
+1. I **[!UICONTROL Transactions]** anger du de tabeller och fält som krävs för beräkningen av hypotesen. [Läs mer](#transactions)
+1. Om mallen har konfigurerats för **[!UICONTROL Offer]** typografera kan du aktivera **[!UICONTROL Update offer proposition status]** alternativ: I så fall väljer du status för det erbjudande du vill ändra.
 1. Ange omfattningen av hypotestillämpningen. [Läs mer](#hypothesis-perimeter)
 1. Använd vid behov ett skript för att slutföra filtreringen. [Läs mer](#hypothesis-perimeter)
 
 ### Egenskaper för en hypotesmall {#properties-of-a-hypothesis-template}
 
-På mallens **[!UICONTROL General]**-flik kan du ange allmänna mallalternativ. De tillgängliga fälten är:
+Mallens **[!UICONTROL General]** kan du ange allmänna mallalternativ. De tillgängliga fälten är:
 
 * **[!UICONTROL Hypothesis type]**: Här kan du bestämma om mallen ska vara avsedd för hypoteser om leveranser eller erbjudanden.
 
@@ -55,7 +55,7 @@ På mallens **[!UICONTROL General]**-flik kan du ange allmänna mallalternativ. 
 
    >[!NOTE]
    >
-   >Om mallen gäller för erbjudanden är alternativet **[!UICONTROL Update offer proposition status]** tillgängligt på fliken **[!UICONTROL Transactions]**.
+   >Om mallen gäller för erbjudanden **[!UICONTROL Update offer proposition status]** finns i **[!UICONTROL Transactions]** -fliken.
 
 * **[!UICONTROL Measurement with control group]**: kan ni ange om en kontrollgrupp har definierats för leveransen eller kampanjen och inkludera den i mätningsindikatorer. Med kontrollgruppen, som inte tar emot leveranser, kan ni mäta effekten av kampanjen efter leveransen genom att jämföra den med målpopulationen som fick leveransen.
 
@@ -65,7 +65,7 @@ På mallens **[!UICONTROL General]**-flik kan du ange allmänna mallalternativ. 
 
    Mer information om hur du definierar och konfigurerar en kontrollgrupp finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-* **[!UICONTROL Channel]**: Du kan välja en viss kanal eller göra hypotesmallen tillgänglig för alla kanaler i Adobe Campaign-konsolen genom att välja  **[!UICONTROL All channels]** i listrutan. Om du konfigurerar mallen för en viss kanal kan du på så sätt automatiskt filtrera leveranser per kanal när du skapar hypotesen. [Läs mer](creating-hypotheses.md)
+* **[!UICONTROL Channel]**: Du kan välja en viss kanal eller göra hypotesmallen tillgänglig för alla kanaler i Adobe Campaign-konsolen genom att välja **[!UICONTROL All channels]** i listrutan. Om du konfigurerar mallen för en viss kanal kan du på så sätt automatiskt filtrera leveranser per kanal när du skapar hypotesen. [Läs mer](creating-hypotheses.md)
 
    ![](assets/response_properties_001.png)
 
@@ -74,7 +74,7 @@ På mallens **[!UICONTROL General]**-flik kan du ange allmänna mallalternativ. 
 
 ### Körningsinställningar för hypostermallar {#hypothesis-template-execution-settings}
 
-På mallens **[!UICONTROL General]**-flik kan du även ange parametrar för hypoteskörning. Följande alternativ är tillgängliga:
+Mallens **[!UICONTROL General]** Med -fliken kan du även ange parametrar för exekvering av hypoteser. Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Schedule execution for a time of low activity]**: Med kan du schemalägga lanseringen av hypotesen för att optimera Adobe Campaign prestanda. När det här alternativet är markerat utför bearbetningsarbetsflödet för kampanjer en hypotesberäkning under driftstopp.
 
@@ -90,7 +90,7 @@ På mallens **[!UICONTROL General]**-flik kan du även ange parametrar för hypo
 
    Om du vill ange ett schema använder du följande process:
 
-   1. Klicka på länken **[!UICONTROL Frequency of execution...]** och sedan på knappen **[!UICONTROL Change...]**.
+   1. Klicka på **[!UICONTROL Frequency of execution...]** länk, sedan **[!UICONTROL Change...]** -knappen.
 
       ![](assets/response_frequency_execution_001.png)
 
@@ -98,7 +98,7 @@ På mallens **[!UICONTROL General]**-flik kan du även ange parametrar för hypo
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. Klicka på **[!UICONTROL Finish]** för att spara schemat.
+   1. Klicka **[!UICONTROL Finish]** för att spara schemat.
 
       ![](assets/response_frequency_execution_003.png)
 
@@ -113,9 +113,9 @@ På mallens **[!UICONTROL General]**-flik kan du även ange parametrar för hypo
 
 ### Transaktioner {#transactions}
 
-Fliken innehåller de olika fälten och tabellerna som gör att du kan spara historiken över mottagarnas svar i termer av transaktioner. Mer information finns i [avsnittet](../../configuration/using/about-schema-reference.md) för tabeller som är dedikerade till svarshantering.
+Fliken innehåller de olika fälten och tabellerna som gör att du kan spara historiken över mottagarnas svar i termer av transaktioner. Se detta [section](../../configuration/using/about-schema-reference.md) om du vill ha mer information om tabellerna för hantering av svar.
 
-* **[!UICONTROL Schema (reaction log storage)]**: välj mottagarreaktionstabellen. Registret i körklart läge i Adobe Campaign är **NmsRemaMatchRcp**.
+* **[!UICONTROL Schema (reaction log storage)]**: välj mottagarreaktionstabellen. Den färdiga tabellen i Adobe Campaign är **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: Välj den tabell som hypoteserna ska avse, dvs. transaktionen eller inköpstabellen.
 * **[!UICONTROL Querying schema]**: Välj villkor för att filtrera hypotesen.
 * **[!UICONTROL Link to individuals]**: välj länken mellan individer och det register som används som transaktionsschema.
@@ -143,7 +143,7 @@ Fliken innehåller de olika fälten och tabellerna som gör att du kan spara his
 
 När du har definierat transaktionstabellen och de fält som hypotesen gäller, kan du förfina omfattningen av dina hypoteser genom att ange riktade transaktioner och leveranser med hjälp av filter. Du kan också använda ett JavaScript-skript för att uttryckligen peka på en produkt som det hänvisas till i transaktionstabellen.
 
-* **Filter på transaktioner**: på  **[!UICONTROL Scope]** fliken kan du konfigurera ett filter enligt hypotesen. Så här gör du:
+* **Filtrera på transaktioner**: i **[!UICONTROL Scope]** kan du konfigurera ett filter på hypotesen. Så här gör du:
 
    1. Klicka på länken **[!UICONTROL Edit query]**.
 
@@ -157,9 +157,9 @@ När du har definierat transaktionstabellen och de fält som hypotesen gäller, 
 
       ![](assets/response_scope_filtering_003.png)
 
-* **Filter på mottagare**: på  **[!UICONTROL Scope]** fliken kan du begränsa din hypotes till all information som är länkad till ett meddelande (leverans, mottagare, e-postadress, tjänst osv.):
+* **Filtrera efter mottagare**: i **[!UICONTROL Scope]** kan du begränsa din hypotes till all information som är länkad till ett meddelande (leverans, mottagare, e-postadress, tjänst osv.):
 
-   1. Klicka på länken **[!UICONTROL Add a filter]** och sedan på **[!UICONTROL Edit query]**.
+   1. Klicka på **[!UICONTROL Add a filter]** länk, sedan **[!UICONTROL Edit query]**.
 
       ![](assets/response_scope_filtering_004.png)
 
@@ -167,13 +167,13 @@ När du har definierat transaktionstabellen och de fält som hypotesen gäller, 
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. Klicka på **[!UICONTROL Finish]** för att spara frågan.
+   1. Klicka **[!UICONTROL Finish]** för att spara din fråga.
 
       ![](assets/response_scope_filtering_006.png)
 
 * **Skript**: du kan använda ett JavaScript-skript för att dynamiskt överlagra hypotesinställningarna under körningen.
 
-   Det gör du genom att klicka på länken **[!UICONTROL Advanced settings]** och sedan ange önskat skript.
+   Om du vill göra det klickar du på **[!UICONTROL Advanced settings]** anger sedan det önskade skriptet.
 
    >[!NOTE]
    >
@@ -183,10 +183,10 @@ När du har definierat transaktionstabellen och de fält som hypotesen gäller, 
 
 ## Exempel: skapa en hypotesmall för en leverans {#example--creating-a-hypothesis-template-on-a-delivery}
 
-I det här exemplet ska vi skapa en hypotesmall för direktreklam. Transaktionstabellen (**Inköp** i vårt exempel) som hypotesen baseras på innehåller inköpsrader som är länkade till artiklar eller produkter. Vi vill konfigurera vår modell för att skapa hypoteser om artiklar eller produkter i inköpstabellen.
+I det här exemplet ska vi skapa en hypotesmall för direktreklam. Transaktionsregistret (**Inköp** i vårt exempel) som hypotesen baseras på innehåller inköpsrader som är kopplade till artiklar eller produkter. Vi vill konfigurera vår modell för att skapa hypoteser om artiklar eller produkter i inköpstabellen.
 
-1. Gå till noden **[!UICONTROL Resources > Templates > Hypothesis templates]** i Adobe Campaign Explorer.
-1. Klicka på **[!UICONTROL New]** för att skapa en mall.
+1. I Adobe Campaign Explorer går du till **[!UICONTROL Resources > Templates > Hypothesis templates]** nod.
+1. Klicka **[!UICONTROL New]** för att skapa en mall.
 
    ![](assets/response_hypothesis_model_example_001.png)
 
@@ -196,21 +196,21 @@ I det här exemplet ska vi skapa en hypotesmall för direktreklam. Transaktionst
 
 1. Välj **[!UICONTROL Deliveries]** som en hypotestyp.
 1. Ange att leveransen kan innehålla en kontrollgrupp genom att markera rutan.
-1. Välj kanalen **[!UICONTROL Direct mail]**.
+1. Välj **[!UICONTROL Direct mail]** kanal.
 
    >[!NOTE]
    >
    >Eftersom mallen är specifik för direktreklam är det inte säkert att hypoteser som skapas med den här modellen länkas till någon annan leveranstyp.
 
-1. Markera mottagarsvarstabellen på fliken **[!UICONTROL Transactions]**.
+1. I **[!UICONTROL Transactions]** markerar du tabellen över mottagarnas svar.
 
    ![](assets/response_hypothesis_model_example_006.png)
 
-1. Välj inköpstabell i fältet **[!UICONTROL Transactions schema]**.
+1. I **[!UICONTROL Transactions schema]** väljer du inköpstabell.
 
    ![](assets/response_hypothesis_model_example_007.png)
 
-1. Välj inköpsrader i fältet **[!UICONTROL Querying schema]**.
+1. Välj inköpsrader i **[!UICONTROL Querying schema]** fält.
 
    ![](assets/response_hypothesis_model_example_008.png)
 
@@ -228,10 +228,10 @@ I det här exemplet ska vi skapa en hypotesmall för direktreklam. Transaktionst
 
    ![](assets/response_hypothesis_model_example_005.png)
 
-1. Klicka på **[!UICONTROL Edit query]** på fliken **[!UICONTROL Scope]** för att skapa ett filter för hypoteser.
+1. I **[!UICONTROL Scope]** flik, klicka **[!UICONTROL Edit query]** för att skapa ett filter på hypoteser.
 
    ![](assets/response_hypothesis_model_example_011.png)
 
    Den mall som skapas gör att du kan göra hypoteser om produkterna eller artiklarna i inköpstabellen.
 
-1. Klicka på **[!UICONTROL Save]** för att spela in mallen.
+1. Klicka **[!UICONTROL Save]** för att registrera din mall.

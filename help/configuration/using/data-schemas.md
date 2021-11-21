@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## Principer {#principles}
 
-Om du vill redigera, skapa och konfigurera scheman klickar du på noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign klientkonsol.
+Om du vill redigera, skapa och konfigurera scheman klickar du på knappen **[!UICONTROL Administration > Configuration > Data schemas]** noden i Adobe Campaign klientkonsol.
 
 >[!NOTE]
 >
->Datamaterial som inte finns i kartongen kan bara tas bort av en administratör för din Adobe Campaign Classic-konsol.
+>Enkla datamodeller kan bara tas bort av en administratör i Adobe Campaign Classic-konsolen.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
@@ -43,7 +43,7 @@ Förhandsgranskningen genererar automatiskt det utökade schemat:
 >
 >När källschemat sparas startas genereringen av det utökade schemat automatiskt.
 
-Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md).
+Om du behöver kontrollera hela strukturen för ett schema kan du använda fliken Förhandsgranska. Om schemat har utökats kan du visa alla dess tillägg. Som ett komplement visar fliken Dokumentation alla schemaattribut och -element och deras egenskaper (SQL-fält, typ/längd, etikett, beskrivning). Fliken Dokumentation gäller endast för genererade scheman. Mer information finns i [Återskapar scheman](../../configuration/using/regenerating-schemas.md) -avsnitt.
 
 ## Exempel: skapa en kontraktstabell {#example--creating-a-contract-table}
 
@@ -51,8 +51,8 @@ I följande exempel vill vi skapa en ny tabell för **kontrakt** i databasmodell
 
 För att göra detta måste du skapa tabellschemat och uppdatera databasstrukturen för att generera motsvarande tabell. Använd följande steg:
 
-1. Redigera noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet och klicka på **[!UICONTROL New]**.
-1. Välj alternativet **[!UICONTROL Create a new table in the data model]** och klicka på **[!UICONTROL Next]** .
+1. Redigera **[!UICONTROL Administration > Configuration > Data schemas]** noden i Adobe Campaign-trädet och klicka **[!UICONTROL New]** .
+1. Välj **[!UICONTROL Create a new table in the data model]** och klicka **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -64,7 +64,7 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    >
    >Som standard lagras scheman som skapas av användare i &#39;cus&#39;-namnutrymmet. Mer information finns i [Identifiering av ett schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Skapa tabellens innehåll. Vi rekommenderar att du använder anmälningsguiden för att kontrollera att inga inställningar saknas. Det gör du genom att klicka på knappen **[!UICONTROL Insert]** och välja vilken typ av inställning som ska läggas till.
+1. Skapa tabellens innehåll. Vi rekommenderar att du använder anmälningsguiden för att kontrollera att inga inställningar saknas. Om du vill göra det klickar du på **[!UICONTROL Insert]** och väljer vilken typ av inställning som ska läggas till.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,4 +120,4 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. Mer information finns i [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md).
+1. Uppdatera databasstrukturen för att skapa tabellen som schemat ska länkas till. Mer information finns i [Uppdaterar databasstrukturen](../../configuration/using/updating-the-database-structure.md).

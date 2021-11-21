@@ -9,7 +9,7 @@ exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Behöver du hjälp eftersom du arbetar med Campaign Classic? Läs de tio vanliga
 
 Adobe Campaign Classic använder en rad olika teknologier för att leverera värde. Den här kombinationen av tekniker kräver att du regelbundet uppgraderar dina instanser i Campaign Classic för att säkerställa att de senaste versionerna används så att de kan leverera överlägsen säkerhet, stabilitet och prestanda.
 
-Om du använder Adobes hanterade tjänster kan du dra nytta av uppgraderingen av Campaign [!DNL Gold Standard]. Mer information om detta finns i [den här artikeln](../../rn/using/gs-overview.md).
+Om du använder Adobes hanterade tjänster kan du dra nytta av Campaign [!DNL Gold Standard] uppgradera. Mer information om detta finns i [den här artikeln](../../rn/using/gs-overview.md).
 
 [Läs det här avsnittet](../../production/using/build-upgrade.md) för att lära dig hur du uppdaterar din miljö samt läs [vanliga frågor](../../platform/using/faq-build-upgrade.md) om det här specifika ämnet.
 
@@ -74,4 +74,4 @@ Du kan komma åt den senaste versionsinformationen om Campaign Classic [på den 
 En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik (transaktionsmeddelanden och marknadsföringsinformation osv.).
 Adobe tar hänsyn till domännamnssystemet (DNS) för e-postleverans vilket innebär att klienten kan behålla sitt varumärkes stil genom att använda ett DNS-alias med sina domännamn. Adobe kan även självständigt implementera alla tekniska bästa praxis som gör att kunden kan optimera levererbarheten under e-postutskick.
 
-[Klicka här för att läsa mer](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html).
+[Klicka här för att läsa mer](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv).

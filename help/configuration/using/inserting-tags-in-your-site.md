@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Enkel metod {#simple-method}
 
-Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga HTML-taggen **`<img>`** i HTML-källkoden för den webbsida som du vill spåra.
+Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga en **`<img>`** HTML i HTML-källkoden för webbsidan som du vill spåra.
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ När dina webbsidor genereras dynamiskt kan du lägga till spårningstaggen vid 
 
 Om du vill styra informationen som skickas till omdirigeringsservern är det mest tillförlitliga sättet att utföra HTTP-frågan synkront själv med ett sidgenereringsspråk.
 
-Den URL som du skapar måste följa de syntaxregler som definieras i [webbspårningstaggen: definition](../../configuration/using/web-tracking-tag--definition.md).
+Den URL som du skapar måste följa de syntaxregler som definieras i [Webbspårningstagg: definition](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

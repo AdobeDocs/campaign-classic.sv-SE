@@ -21,9 +21,9 @@ När du ändrar ett schema och sparar ändringarna genereras ett utökat schema 
 
 1. Välj de scheman som du vill återskapa.
 1. Högerklicka och välj **[!UICONTROL Actions > Regenerate selected schemas...]** .
-1. Klicka på **[!UICONTROL OK]** för att bekräfta och starta processen.
+1. Klicka **[!UICONTROL OK]** för att bekräfta och starta processen.
 
-Du kan sedan kontrollera strukturen för det genererade schemat på flikarna Förhandsgranska och Dokumentation. Mer information finns i avsnittet [Principles](../../configuration/using/data-schemas.md#principles).
+Du kan sedan kontrollera strukturen för det genererade schemat på flikarna Förhandsgranska och Dokumentation. Mer information finns i [Principer](../../configuration/using/data-schemas.md#principles) -avsnitt.
 
 >[!NOTE]
 >

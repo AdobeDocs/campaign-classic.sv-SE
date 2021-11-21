@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **LINE-kanal**. Mer information om den här modulen finns i [avsnittet](../../delivery/using/line-channel.md).
+Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om den här modulen finns i [section](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 

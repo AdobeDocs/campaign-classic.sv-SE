@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-Utforska data i databasen via modulen **Marketing Analytics**. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
+Utforska data i databasen via **Marknadsföringsanalys** -modul. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
 Kuber används för att generera vissa inbyggda rapporter, inklusive leveransrapporter (leveransspårning, klickningar, öppningar osv.). Rapporter som baseras på kuber får endast användas som standard för datavolymer under 5 miljoner faktarader.
 
@@ -27,7 +27,7 @@ När de har skapats och konfigurerats används kuber i frågeformulär för rapp
 
 >[!CAUTION]
 >
->**Marketing** Analytics är en Adobe Campaign-modul. Den måste installeras på din instans så att du kan använda de funktioner som beskrivs nedan.
+>**Marknadsföringsanalys** är en Adobe Campaign-modul. Den måste installeras på din instans så att du kan använda de funktioner som beskrivs nedan.
 
 Med modulen Marketing Analytics kan ni med Campaign
 
@@ -83,29 +83,29 @@ När du arbetar med kuber måste du känna till följande begrepp:
 
 ## Arbetsytan Kub {#cube-workspace}
 
-Kuber lagras i noden **[!UICONTROL Administration > Configuration > Cubes]**.
+Kuber lagras i **[!UICONTROL Administration > Configuration > Cubes]** nod.
 
 ![](assets/s_advuser_cube_node.png)
 
 De huvudsakliga användningsområdena för kuber är följande:
 
-* Dataexport kan utföras direkt i en rapport som är utformad på fliken **[!UICONTROL Reports]** på Adobe Campaign-plattformen.
+* Dataexport kan ske direkt i en rapport som utformas i **[!UICONTROL Reports]** på Adobe Campaign.
 
    Om du vill göra det skapar du en ny rapport och väljer den kub som du vill använda.
 
    ![](assets/cube_create_new.png)
 
-   Kuber visas som mallar baserade på vilka rapporter skapas. När du har valt en mall klickar du på **[!UICONTROL Create]** för att konfigurera och visa den matchande rapporten.
+   Kuber visas som mallar baserade på vilka rapporter skapas. När du har valt en mall klickar du på **[!UICONTROL Create]** för att konfigurera och visa matchande rapport.
 
    Du kan anpassa mått, ändra visningsläge eller konfigurera tabellen och sedan visa rapporten med huvudknappen.
 
    ![](assets/cube_display_new.png)
 
-* Du kan också referera till en kub i rutan **[!UICONTROL Query]** i en rapport för att använda dess indikatorer, vilket visas nedan:
+* Du kan även referera till en kub i **[!UICONTROL Query]** rutan för en rapport för att använda sina indikatorer, som visas nedan:
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
-* Du kan också infoga en pivottabell baserad på en kub på en rapportsida. Det gör du genom att referera till den kub som ska användas på fliken **[!UICONTROL Data]** i pivottabellen på den aktuella sidan.
+* Du kan också infoga en pivottabell baserad på en kub på en rapportsida. Det gör du genom att referera till kuben som ska användas i **[!UICONTROL Data]** pivottabellens flik på den berörda sidan.
 
    ![](assets/s_advuser_cube_in_report.png)
 

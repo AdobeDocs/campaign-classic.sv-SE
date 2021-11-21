@@ -54,12 +54,12 @@ Mer information om hur du skapar och utformar en leverans finns i [det här avsn
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Klicka på länken **[!UICONTROL More...]** bredvid varningen.
+1. Klicka på **[!UICONTROL More...]** länk bredvid varningen.
 1. Klicka på fliken **[!UICONTROL Anti-spam checking]**.  
-1. Gå till avsnittet **[!UICONTROL Points / Rule / Description]** för att se orsaken till risken.
+1. Gå till **[!UICONTROL Points / Rule / Description]** för att se orsakerna till denna risk.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Varje gång du klickar på **[!UICONTROL Anti-spam checking]** anropas tjänsten SpamAssassin och meddelandet analyseras igen för att identifiera skräppostskydd. Kontrollera att du har ändrat innehållet innan du kör skräppostanalysen igen.
+>Varje gång du klickar på **[!UICONTROL Anti-spam checking]**, anropas SpamAssassin-tjänsten och meddelandet analyseras igen för att upptäcka skräppost. Kontrollera att du har ändrat innehållet innan du kör skräppostanalysen igen.

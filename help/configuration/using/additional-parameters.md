@@ -21,12 +21,12 @@ ht-degree: 1%
 
 På din Adobe Campaign-plattform finns två parametrar av typen TRANSACTION som standard för webbspårning:
 
-* **belopp**: representerar beloppet för en transaktion,
+* **amount**: represents the amount of a transaction,
 * **artikel**: representerar antalet artiklar i en transaktion.
 
-Dessa parametrar definieras i schemat **nms:webTrackingLog** och är några av de indikatorer som visas i rapporteringen.
+Dessa parametrar definieras i **nms:webTrackingLog** och är några av de indikatorer som visas i rapporteringen.
 
-Om du vill definiera ytterligare parametrar måste du utöka det här schemat.
+To define additional parameters, you must extend this schema.
 
 **Exempel**:
 
@@ -42,9 +42,9 @@ Om du vill definiera ytterligare parametrar måste du utöka det här schemat.
 </srcSchema>
 ```
 
-Du kan visa parametrarnas värden genom att konfigurera spårningslogglistan (för en leverans eller mottagare).
+You can display the values of these parameters by configuring the tracking log list (of a delivery or recipient).
 
-## Omdirigeringsserverkonfiguration {#redirection-server-configuration}
+## Redirection server configuration {#redirection-server-configuration}
 
 I serverkonfigurationen kan du definiera det maximala antal tecken som ska beaktas för spårningsparametrarna för webben.
 
@@ -52,11 +52,11 @@ I serverkonfigurationen kan du definiera det maximala antal tecken som ska beakt
 >
 >Om du ökar det maximala antalet tecken som ska beaktas kan det påverka plattformens webbspårningsprestanda.
 
-Det gör du genom att ändra attributet **webTrackingParamSize** för **`<trackinglogd>`**-elementet i **serverConf.xml**-filen. Den här filen sparas i underkatalogen **conf** i Adobe Campaign installationskatalog.
+Om du vill göra det ändrar du **webTrackingParamSize** attributet för **`<trackinglogd>`** -elementet i **serverConf.xml** -fil. Den här filen sparas i **conf** underkatalogen till Adobe Campaign installationskatalog.
 
 **Exempel**:
 
-Standardvärdet är 64 tecken. Med det här värdet kan du ta hänsyn till standardparametrarna **amount** och **article** (&quot;amount=xxxxxx&amp;article=xxxxxxxx&quot;).
+Standardvärdet är 64 tecken. Med det här värdet kan du ta hänsyn till **belopp** och **artikel** (&quot;amount=xxxxxx&amp;article=xxxxxx&quot;) standardparametrar.
 
 Genom att ta hänsyn till båda parametrarna (storlek på namn + storlek på värde) som anges i exemplet ovan kan du ändra konfigurationen så att den tar 100 tecken (&quot;amount=xxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxx&quot;).
 
@@ -67,17 +67,17 @@ processRestartTime="06:00:00" purgeLogsPeriod="50000" runLevel="10"
 webTrackingParamSize="64"/>
 ```
 
-När konfigurationen har ändrats måste du:
+When the configuration has been modified, you must:
 
-* Stoppa webbservern som är värd för omdirigeringsmodulen (Apache, IIS osv.),
+* Stop the web server that hosts the redirection module (Apache, IIS, etc.),
 * Stoppa Adobe Campaign-servern: **net stop nlserver6** i Windows, **/etc/init.d/nlserver6 stop** i Linux,
 
    >[!NOTE]
    >
    >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
-* I Linux tar du bort de delade minnessegmenten med kommandot **ipcrm**,
-* Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 start** i Linux,
+* In Linux, delete the shared memory segments using the **ipcrm** command,
+* Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 - start** i Linux,
 
    >[!NOTE]
    >
@@ -111,4 +111,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Om du ökar storleken på parametrarna **webTrackingParamSize** eller **maxSharedLogs** för Linux kan du behöva öka storleken på det delade minnet (SHM).
+>For Linux, if you increase the size of the **webTrackingParamSize** or **maxSharedLogs** parameters, you may need to increase the size of the shared memory (SHM).

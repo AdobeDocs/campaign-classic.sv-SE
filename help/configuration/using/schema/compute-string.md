@@ -35,15 +35,15 @@ Ingen
 
 ## Beskrivning {#description-1}
 
-Med `<compute-string>`-elementet kan du generera en sträng baserat på ett XTK-uttryck som visar en inbyggd etikett i gränssnittet baserat på flera värden.
+The `<compute-string>` Med -element kan du generera en sträng baserat på ett XTK-uttryck som visar en&quot;inbyggd&quot; etikett i gränssnittet baserat på flera värden.
 
 ## Användning och användningssammanhang {#use-and-context-of-use-1}
 
-När ingen `<compute-string>` är definierad anges ett `<compute-string>`-element som standard med värdena för primärnyckeln i schemat.
+När nej `<compute-string>` är definierad, en `<compute-string>` -elementet anges som standard med värdena för primärnyckeln i schemat.
 
 ## Attributbeskrivning {#attribute-description-1}
 
-* **expr (string)**: XTK och/eller Xpath-uttryck
+* **expr (sträng)**: XTK och/eller Xpath-uttryck
 
 ## Exempel {#examples-1}
 

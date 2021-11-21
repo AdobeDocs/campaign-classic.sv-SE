@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Det går att automatisera skapandet, redigeringen och publiceringen med hjälp av ett arbetsflöde som konfigurerats via Adobe Campaign klientgränssnitt.
 
-Aktiviteten **Innehållshantering** nås via verktygsfältet **[!UICONTROL Tools]** i arbetsflödesdiagrammet.
+The **Innehållshantering** -aktiviteten nås via **[!UICONTROL Tools]** i arbetsflödesdiagrammet.
 
 Aktivitetsegenskaperna delas in i fyra steg:
 
@@ -40,7 +40,7 @@ Aktivitetsegenskaperna delas in i fyra steg:
 
 * **Explicit**
 
-   Här kan du välja innehåll som du skapat tidigare.
+   Gör att du kan välja innehåll som du skapat tidigare.
 
 * **Beräknas av ett skript**
 
@@ -74,7 +74,7 @@ Aktivitetsegenskaperna delas in i fyra steg:
 
 ### Övergång {#transition}
 
-Med alternativet **Generera en utdataövergång** kan du lägga till en utdataövergång i **[!UICONTROL Content management]**-aktiviteten för att länka en ny aktivitet till arbetsflödeskörningen. När du har markerat det här alternativet anger du en etikett för övergången.
+The **Generera en utdataövergång** kan du lägga till en utdataövergång i **[!UICONTROL Content management]** aktivitet som länkar en ny aktivitet till körning av arbetsflöde. När du har markerat det här alternativet anger du en etikett för övergången.
 
 ## Exempel {#examples}
 
@@ -90,7 +90,7 @@ Innehållet konfigureras via aktiviteten Innehållshantering:
 
 En ny innehållsinstans skapas via publiceringsmodellen och innehållssträngsmappen.
 
-I vårt exempel har vi överbelastat leveransämnet. Den kommer att tas med i stället för den som anges i **[!UICONTROL Delivery]**-mallen.
+I vårt exempel har vi överbelastat leveransämnet. Den kommer att tas med i stället för den som anges i **[!UICONTROL Delivery]** mall.
 
 Innehållet fylls i automatiskt av ett XML-flöde som kommer från den URL som anges:
 
@@ -103,7 +103,7 @@ Innehållet fylls i automatiskt av ett XML-flöde som kommer från den URL som a
 </book>
 ```
 
-Dataformatet matchar inte det dataschema som anges i publikationsmallen (**cus:book** i vårt exempel); elementet **`<section>`** måste ersättas med elementet **`<chapter>`**. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
+Dataformatet matchar inte det dataschema som anges i publiceringsmallen (**cus:bok** i vårt exempel), den **`<section>`** -elementet måste ersättas med **`<chapter>`** -element. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
 
 Källkod för XSLT-formatmallen som används:
 
@@ -142,17 +142,17 @@ Källkod för XSLT-formatmallen som används:
 
 Den sista åtgärden i aktiviteten är att spara innehållsinstansen och fortsätta till nästa uppgift.
 
-Målinriktning utförs via aktiviteten **Fråga**.
+Riktlinjerna genomförs via **Fråga** aktivitet.
 
-En **AND-join**-aktivitet lades till för att säkerställa att leveransen bara startas när målfrågan och innehållsuppdateringarna är klara.
+An **AND-join** aktiviteten lades till för att säkerställa att leveransen bara startas när målfrågan och innehållsuppdateringarna är klara.
 
-Leveransåtgärden har konfigurerats via aktiviteten **Leverans**:
+Leveransåtgärden konfigureras via **Leverans** aktivitet:
 
 ![](assets/d_ncs_content_workflow4.png)
 
 En ny leveransåtgärd skapas utifrån en mall.
 
-Leveransmallen för aktiviteten används för att välja omformningsmallarna för publiceringsmallen. Vid generering av innehåll beaktas alla HTML- och textmallar utan leveransmallar eller mallar som refereras till med samma mall som aktiviteten.
+Leveransmallen för aktiviteten används för att välja omformningsmallarna för publiceringsmallen. Vid generering av innehåll tas hänsyn till alla HTML- och textmallar utan leveransmallar eller mallar som refereras till med samma mall som aktiviteten.
 
 Målet som ska levereras anges via den inkommande händelsen.
 
@@ -166,13 +166,13 @@ I det här exemplet skapas ett innehållsblock och filpubliceringen startas efte
 
 ![](assets/d_ncs_content_workflow5.png)
 
-Den första **innehållshanteringsåtgärden** skapar en innehållsinstans.
+Den första **Innehållshantering** skapar en innehållsinstans.
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->Fliken **[!UICONTROL Publication]** i fönstret för omformningsmallar måste fyllas i med platsen för målet som ska genereras.
+>The **[!UICONTROL Publication]** -fliken i fönstret med omformningsmallar måste fyllas i med platsen för det mål som ska genereras.
 
 En väntande aktivitet läggs till för att pausa nästa övergång i en vecka.
 
@@ -188,7 +188,7 @@ Innehållet som ska publiceras anges via den inkommande övergången.
 
 Den sista åtgärden är att generera innehållet genom att tvinga fram publikationskatalogen.
 
-Aktiviteten **JavaScript-koden** hämtar det fullständiga namnet för varje genererad fil.
+The **JavaScript-kod** aktiviteten hämtar det fullständiga namnet för varje genererad fil.
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -198,11 +198,11 @@ I det här exemplet används samma koncept som i det första exemplet, men bara 
 
 ![](assets/d_ncs_content_workflow10.png)
 
-Den första **Skapa leverans**-aktiviteten skapar leveransåtgärden.
+Den första **Skapa leverans** skapar leveransåtgärden.
 
 Med gaffelaktiviteten kan du starta målberäkning och skapa innehållsinstansen parallellt.
 
-När åtgärderna har utförts aktiverar AND-join-rutan aktiviteten **Delivery** för att starta den tidigare leveransen på innehåll och målinriktning.
+När åtgärderna har utförts aktiverar AND-join-rutan **Leverans** för att lansera den tidigare leveransen av innehåll och målinriktning.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -216,7 +216,7 @@ Den sista åtgärden i aktiviteten är att förbereda och starta leveransen.
 
 ### Importera innehåll från FTP {#importing-content-from-ftp}
 
-Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i en HTML-fil på FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
 
 ### Importera innehåll från kopplingen för Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
@@ -228,11 +228,11 @@ Innehållsdata kan uppdateras i halvautomatiskt läge. Data återställs från e
 
 Aktiveringen av dataåterställning sker manuellt via inmatningsformuläret.
 
-Målet är att deklarera ett **editBtn** typ **`<input>`**-fält i formuläret. Den här kontrollen består av en redigeringszon och en knapp för att starta bearbetningen.
+Målet är att deklarera en **editBtn** type **`<input>`** i formuläret. Den här kontrollen består av en redigeringszon och en knapp för att starta bearbetningen.
 
 Med redigeringszonen kan du fylla i variabeldata som används för att skapa URL:en för XML-flödet med data som ska hämtas.
 
-Knappen kör metoden **GetAndTransform** SOAP som fylls i under taggen **`<input>`**.
+Knappen kör **GetAndTransform** SOAP-metod ifylld under **`<input>`** -tagg.
 
 Kontrolldeklarationen i formuläret är följande:
 
@@ -248,7 +248,7 @@ Kontrolldeklarationen i formuläret är följande:
 </input>
 ```
 
-Metoden **GetAndTransform** måste deklareras under elementet **`<enter>`** i taggen **`<input>`**. Den här taggen fungerar som parametrar för URL-återställningen av XML-data från ett uttryck som konstruerats dynamiskt. Den andra parametern för funktionen är valfri och refererar till en formatmall som används för en mellanliggande omformning när inkommande XML-data inte har samma format som innehållet.
+The **GetAndTransform** -metoden måste deklareras under **`<enter>`** -elementet i **`<input>`** -tagg. Den här taggen fungerar som parametrar för URL-återställningen av XML-data från ett uttryck som konstruerats dynamiskt. Den andra parametern för funktionen är valfri och refererar till en formatmall som används för en mellanliggande omformning när inkommande XML-data inte har samma format som innehållet.
 
 Utdata uppdaterar innehållet baserat på den sökväg som angavs i den sista parametern.
 

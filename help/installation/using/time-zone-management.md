@@ -23,11 +23,11 @@ Med Adobe Campaign kan du uttrycka datum som en funktion av deras tidszon: på s
 
 För att Adobe Campaign-plattformen ska kunna användas internationellt måste alla datum som används av systemen kunna länkas till en tidszon. Ett datum vars tidszon är känd kan alltså importeras till vilken annan tidszon som helst, eller oavsett tidszon.
 
-I Adobe Campaign kan du lagra datum/tid i UTC-format (Coordinated Universal Time). När data exponeras konverteras de till operatorns lokala datum/tid. Konverteringen utförs automatiskt när databasen har konfigurerats i UTC (se [Konfiguration](#configuration)). Om databasen inte är konfigurerad i UTC lagras information om tidszonen för datum på plattformen i ett alternativ.
+I Adobe Campaign kan du lagra datum/tid i UTC-format (Coordinated Universal Time). När data exponeras konverteras de till operatorns lokala datum/tid. Konverteringen utförs automatiskt när databasen är konfigurerad i UTC (se [Konfiguration](#configuration)). Om databasen inte är konfigurerad i UTC lagras information om tidszonen för datum på plattformen i ett alternativ.
 
-De viktigaste plattformsfunktionerna för hantering av tidszoner är: importera/exportera data, operatorer och arbetsflödeshantering. **arvskonceptet** är tillgängligt för import/export eller arbetsflöden. Som standard är de konfigurerade för databasserverns tidszon, men du kan definiera om nya tidszoner för ett arbetsflöde och till och med för en enda aktivitet.
+De viktigaste plattformsfunktionerna för hantering av tidszoner är: importera/exportera data, operatorer och arbetsflödeshantering. The **arvskoncept** är tillgängligt för import/export eller arbetsflöden. Som standard är de konfigurerade för databasserverns tidszon, men du kan definiera om nya tidszoner för ett arbetsflöde och till och med för en enda aktivitet.
 
-**Operatorn** kan ändra tidszoner under  **leveranskonfigurationen** och ange den specifika tidszon som leveransen ska köras i.
+**Operatorer** kan ändra tidszoner under **leveranskonfiguration** och kan ange i vilken tidszon leveransen ska utföras.
 
 >[!IMPORTANT]
 >
@@ -41,18 +41,18 @@ Om Adobe Campaign-plattformen inte kräver tidszonshantering kan du behålla ett
 
 Tidszoner kombinerar flera realiteter: uttrycket kan beskriva en konstant tidsfördröjning med UTC-datumet, eller tidpunkterna i ett område som kan ändras två gånger per år (sommartid).
 
-I postgreSQL tar kommandot **SET TIME ZONE &#39;Europe/Paris&#39;;** sommar- och vintertid i beaktande: Datumet kommer att anges i UTC+1 eller UTC+2 beroende på tidpunkten på året.
+I postgreSQL är **ANGE TIDSZON &quot;Europa/Paris&quot;;** Kommandot tar hänsyn till sommar- och vintertid: Datumet kommer att anges i UTC+1 eller UTC+2 beroende på tidpunkten på året.
 
-Om du däremot använder kommandot **SET TIME ZONE 0200;** kommer tidsfördröjningen alltid att vara UTC+2.
+Om du använder **ANGE TIDSZON 0200;** kommer tidsfördröjningen alltid att vara UTC+2.
 
 ## Konfiguration {#configuration}
 
 Lagringsläget för datum och tidpunkter väljs när databasen skapas (se [Skapa en ny instans](#creating-a-new-instance)). Vid migrering konverteras de timmar som är länkade till datum till lokala datum och timmar (se [Migrering](#migration)).
 
-Ur teknisk synvinkel finns det två sätt att lagra typinformation **Datum+tid** i databasen:
+Ur teknisk synvinkel finns det två sätt att lagra **Datum+tid** typinformation i databasen:
 
 1. TIDSSTÄMPEL MED TIMEZONE-format: databasmotorn lagrar datum i UTC. Varje session som öppnas har en tidszon och datumen konverteras enligt den.
-1. Lokalt format + lokal tidszon: alla datum lagras i det lokala formatet (ingen hantering av tidsfördröjning) och en enda tidszon tilldelas dem. Tidszonen lagras i alternativet **WdbcTimeZone** för Adobe Campaign-instansen och kan ändras via menyn **[!UICONTROL Administration > Platform > Options]** för trädet.
+1. Lokalt format + lokal tidszon: alla datum lagras i det lokala formatet (ingen hantering av tidsfördröjning) och en enda tidszon tilldelas dem. Tidszonen lagras i **WdbcTimeZone** Adobe Campaign-instansen och kan ändras via **[!UICONTROL Administration > Platform > Options]** Trädets meny.
 
 >[!IMPORTANT]
 >
@@ -60,9 +60,9 @@ Ur teknisk synvinkel finns det två sätt att lagra typinformation **Datum+tid**
 
 ### Skapa en ny instans {#creating-a-new-instance}
 
-För att flera internationella användare ska kunna arbeta med samma instans måste du konfigurera tidszoner när du skapar instansen för att hantera tidsförskjutningar mellan länder. När instansen skapas väljer du datum- och tidshanteringsläget i **[!UICONTROL Time zone]**-avsnittet på databaskonfigurationsscenen.
+För att flera internationella användare ska kunna arbeta med samma instans måste du konfigurera tidszoner när du skapar instansen för att hantera tidsförskjutningar mellan länder. När du skapar en instans väljer du datum- och tidshanteringsläget i **[!UICONTROL Time zone]** -avsnittet på databaskonfigurationsscenen.
 
-Markera alternativet **[!UICONTROL UTC database (date fields with time zone)]** om du vill lagra alla data med datum och tider i UTC-format (SQL-fält och XML-fält).
+Kontrollera **[!UICONTROL UTC database (date fields with time zone)]** för att lagra alla data med datum och tidpunkter i UTC-format (SQL-fält och XML-fält).
 
 ![](assets/install_wz_select_utc_option.png)
 
@@ -74,7 +74,7 @@ Om databasen inte är UTC kan du välja en av de tidszoner som finns i listrutan
 
 ![](assets/install_wz_unselect_utc_option.png)
 
-När alternativet **[!UICONTROL UTC Database (date fields with time zone)]** är markerat sparas SQL-fälten i TIMESTAMP WITH TIMEZONE-format.
+När **[!UICONTROL UTC Database (date fields with time zone)]** Om du väljer det här alternativet sparas SQL-fälten i TIMESTAMP WITH TIMEZONE-format.
 
 Annars lagras de i det lokala formatet och du måste välja vilken tidszon som ska användas för databasen.
 
@@ -82,11 +82,11 @@ Annars lagras de i det lokala formatet och du måste välja vilken tidszon som s
 
 När du migrerar till en tidigare version (utan tidszonshantering) måste du definiera lagringsläget för datum i databasen.
 
-För att garantera kompatibilitet med externa verktyg som använder Adobe Campaign-databasen förblir SQL-fält av typen **Datum+tid** lagrade i lokalt format som standard.
+För att garantera kompatibilitet med externa verktyg som har åtkomst till Adobe Campaign-databasen har **Datum+tid** SQL-fält av typen sparas som standard i lokalt format.
 
 XML-fält som innehåller datum lagras nu i UTC. Vid inläsning konverteras fält som inte är i UTC-format automatiskt med serverns tidszon. Det innebär att alla XML-fält konverteras stegvis till UTC-format.
 
-Om du vill använda en befintlig instans lägger du till alternativet **WdbcTimeZone** och anger instansens tidszon.
+Om du vill använda en befintlig instans lägger du till **WdbcTimeZone** och ange instansens tidszon.
 
 >[!IMPORTANT]
 >

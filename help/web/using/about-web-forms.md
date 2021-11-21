@@ -27,19 +27,19 @@ I det här kapitlet beskrivs hur du skapar och hanterar webbformulär, hur du ha
 
 ## Steg för att skapa ett webbformulär {#steps-for-creating-a-web-form}
 
-I det här kapitlet beskrivs de steg som krävs för att utforma ett **webForm**-typformulär i Adobe Campaign samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan du göra det här webbformuläret tillgängligt för användare samt samla in och arkivera svar i databasen.
+I det här kapitlet beskrivs stegen som krävs för att utforma en **webForm** skriv formuläret i Adobe Campaign, samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan du göra det här webbformuläret tillgängligt för användare samt samla in och arkivera svar i databasen.
 
 >[!CAUTION]
 >
 >När du konfigurerar webbprogram och webbformulär behöver du en lodrät upplösning på minst 900 pixlar (t.ex.: 1600x900).
 
-Webbformulär öppnas via menyn Webbprogram på fliken **Kampanjer**. I Adobe Campaign-trädet grupperas de under noden **[!UICONTROL Resources > Online > Web Applications]**.
+Webbformulären öppnas via webbprogrammenyn i **Kampanjer** -fliken. I Adobe Campaign-trädet grupperas de under **[!UICONTROL Resources > Online > Web Applications]** nod.
 
 Om du vill skapa ett webbformulär klickar du på **[!UICONTROL Create]** ovanför listan med webbprogram.
 
 ![](assets/webapp_create_new.png)
 
-Välj webbformulärmallen ( **[!UICONTROL newWebForm]** som standard).
+Välj webbformulärmall ( **[!UICONTROL newWebForm]** som standard).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -47,7 +47,7 @@ Du kommer då till formulärets kontrollpanel.
 
 ![](assets/webapp_empty_dashboard.png)
 
-På fliken **[!UICONTROL Edit]** kan du skapa ditt innehåll.
+The **[!UICONTROL Edit]** använder du för att skapa innehåll.
 
 ![](assets/webapp_edit_tab.png)
 
@@ -67,7 +67,7 @@ Så här definierar du konfigurationen och innehållet i webbformuläret:
 
 ## Om webbformulär {#about-web-forms-designing}
 
-Formulärets sidor skapas via en specifik redigerare där du kan definiera och konfigurera indatagränser (text), urvalsfält (listor, kryssrutor osv.) och statiska element (bilder, HTML-innehåll osv.). De kan grupperas i behållare och deras layout ändras efter dina behov (mer information finns i [Skapa behållare](defining-web-forms-layout.md#creating-containers)).
+Formulärets sidor skapas via en specifik redigerare där du kan definiera och konfigurera indatagränser (text), urvalsfält (listor, kryssrutor osv.) och statiska element (bilder, HTML-innehåll osv.). De kan grupperas i behållare och deras layout ändras efter dina behov (mer information finns i [Skapar behållare](defining-web-forms-layout.md#creating-containers)).
 
 I följande avsnitt beskrivs hur du definierar innehåll och layout för formulärskärmar:
 
@@ -78,8 +78,8 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 
 >[!NOTE]
 >
->* Under siddesignen kan du visa den slutliga återgivningen på fliken **[!UICONTROL Preview]**. Spara formuläret först om du vill se ändringarna. Eventuella fel visas på fliken **[!UICONTROL Log]**.
->* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. Det gör du genom att gå till underfliken **[!UICONTROL Preview]** och markera rutan **[!UICONTROL Enable debug mode]**: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
+>* Under siddesignen kan du visa den slutliga återgivningen i **[!UICONTROL Preview]** -fliken. Spara formuläret först om du vill se ändringarna. Eventuella fel visas i **[!UICONTROL Log]** -fliken.
+>* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. För att göra det går du till **[!UICONTROL Preview]** underfliken och kontrollera **[!UICONTROL Enable debug mode]** box: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
 
 >
 
@@ -94,6 +94,6 @@ I det här fallet börjar du med att välja vilken typ av fält som ska läggas 
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-Klicka på **[!UICONTROL Ok]** för att godkänna markeringen.
+Klicka **[!UICONTROL Ok]** för att godkänna markeringen.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)

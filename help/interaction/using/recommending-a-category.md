@@ -22,7 +22,7 @@ Det kan vara så att en mottagare inte anses berättigad till alla erbjudanden. 
 Om du alltid vill inkludera en kategori i rekommendationerna gör du så här:
 
 1. Öppna utforskaren och klicka på en erbjudandekatalog i trädstrukturen.
-1. Klicka på fliken **[!UICONTROL Eligibility]** och kryssa i rutan **[!UICONTROL Always include this category in the recommendations]**.
-1. Slutför och godkänn genom att klicka på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Eligibility]** tabba och kryssa för **[!UICONTROL Always include this category in the recommendations]** box.
+1. Slutför och godkänn genom att klicka **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)

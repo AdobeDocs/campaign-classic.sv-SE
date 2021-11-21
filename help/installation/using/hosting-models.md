@@ -21,21 +21,21 @@ Adobe Campaign erbjuder ett urval av tre värdmodeller som ger flexibilitet och 
 
 >[!NOTE]
 >
->För värdmiljöer i Adobe kan huvudinstallations- och konfigurationssteg bara utföras av Adobe, som att konfigurera servern och anpassa instanskonfigurationsfiler. Mer information om de viktigaste skillnaderna mellan distributionslägen finns på [den här sidan](../../installation/using/capability-matrix.md).
+>För värdmiljöer i Adobe kan huvudinstallations- och konfigurationssteg bara utföras av Adobe, som att konfigurera servern och anpassa instanskonfigurationsfiler. Mer information om de viktigaste skillnaderna mellan distributionslägen finns i [den här sidan](../../installation/using/capability-matrix.md).
 
 ## Managed Services / Hosted
 
-Adobe Campaign kan distribueras som en hanterad tjänst: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och kundens Campaign-databas är helt värdbaserade för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret för att avbryta prenumerationen och landningssidor.
+Adobe Campaign kan driftsättas as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och kundens Campaign-databas är helt värdbaserade för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret för att avbryta prenumerationen och landningssidor.
 
 ![](assets/deployment_hosted.png)
 
 Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
 
-* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
-* Läs mer om verktyg för slutprodukter och bästa praxis i [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
-* Konfigurera kampanjalternativ: hänvisa [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
-* Konfigurera CRM-anslutningar: hänvisa [till detta avsnitt](../../platform/using/crm-connectors.md).
+* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [till detta avsnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
+* Installera klientkonsolen: referera [till detta avsnitt](../../installation/using/installing-the-client-console.md).
+* Läs mer om verktygen för slutprodukter och bästa praxis i [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
+* Konfigurera kampanjalternativ: referera [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
+* Konfigurera CRM-anslutningar: referera [till detta avsnitt](../../platform/using/crm-connectors.md).
 
 ## Lokalt
 
@@ -45,13 +45,13 @@ Adobe Campaign kan driftsättas lokalt: alla komponenter i Adobe Campaign, inklu
 
 Som lokal kund, innan du börjar distribuera Campaign Classic, tar du hand om följande krav och rekommendationer:
 
-* Läs igenom [Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) som visar alla versioner av de system och komponenter som stöds för Adobe Campaign.
-* Beroende på din miljö kan du läsa [förutsättningarna för Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) och [förutsättningarna för Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
+* Läs mer om [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md) som innehåller alla versioner av de system och komponenter som stöds för Adobe Campaign.
+* Läs mer om [krav för Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) och [krav för Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * Läs rekommendationer om databasmotorer [i det här avsnittet](../../installation/using/database.md).
 * Kontrollera att de nödvändiga lagren för databasåtkomst är installerade på servern och tillgängliga från Adobe Campaign-kontot. [Läs mer](../../installation/using/application-server.md).
-* Konfigurera dina nätverk eftersom vissa processer behöver kommunicera med andra eller för att få åtkomst till nätverket och Internet. Detta innebär att vissa TCP-portar måste vara öppna för dessa processer. [Läs ](../../installation/using/network-configuration.md) mer om kraven för nätverkskonfiguration.
-* Läs [Checklista för kampanjsäkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html).
-* Läs allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+* Konfigurera dina nätverk eftersom vissa processer behöver kommunicera med andra eller för att få åtkomst till nätverket och Internet. Detta innebär att vissa TCP-portar måste vara öppna för dessa processer. [Läs mer](../../installation/using/network-configuration.md) om krav på nätverkskonfiguration.
+* Läs [Checklista för kampanjsäkerhet och sekretess](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).
+* Kontrollera allmänna riktlinjer för beräkning av maskinvarukrav för lokal driftsättning [i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid
 
@@ -61,12 +61,12 @@ När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på pla
 
 Som hybrid-kund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
 
-* Konfigurera transaktionsmeddelanden: hänvisa [till detta avsnitt](../../message-center/using/transactional-messaging-architecture.md).
-* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [det här avsnittet](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* Installera klientkonsolen: hänvisa [till detta avsnitt](../../installation/using/installing-the-client-console.md).
-* Installera inbyggda paket: hänvisa [till detta avsnitt](../../installation/using/installing-campaign-standard-packages.md).
-* Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om verktyg för slutprodukter och bästa praxis i [den detaljerade dokumentationen](../../delivery/using/about-deliverability.md).
-* Konfigurera kampanjalternativ: hänvisa [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
-* Konfigurera en extern databas (Federated Data Access): hänvisa [till detta avsnitt](../../installation/using/about-fda.md).
-* Konfigurerar CRM-anslutningar: hänvisa [till detta avsnitt](../../platform/using/crm-connectors.md).
-* Om du vill veta mer om principer för distribuering från mellanleverantörer kan du läsa [i det här avsnittet](../../installation/using/mid-sourcing-deployment.md).
+* Konfigurera transaktionsmeddelanden: referera [till detta avsnitt](../../message-center/using/transactional-messaging-architecture.md).
+* Konfigurera spårnings- och spegelsidiga URL:er per varumärke. För transaktionsmeddelanden, se [till detta avsnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
+* Installera klientkonsolen: referera [till detta avsnitt](../../installation/using/installing-the-client-console.md).
+* Installera inbyggda paket: referera [till detta avsnitt](../../installation/using/installing-campaign-standard-packages.md).
+* Leverans: konfigurera [MX-regler](../../installation/using/email-deliverability.md#mx-configuration) och [e-postformat](../../installation/using/email-deliverability.md#managing-email-formats). Läs mer om verktygen för slutprodukter och bästa praxis i [detaljerad dokumentation](../../delivery/using/about-deliverability.md).
+* Konfigurera kampanjalternativ: referera [till detta avsnitt](../../installation/using/configuring-campaign-options.md).
+* Konfigurera en extern databas (Federated Data Access): referera [till detta avsnitt](../../installation/using/about-fda.md).
+* Konfigurerar CRM-anslutningar: referera [till detta avsnitt](../../platform/using/crm-connectors.md).
+* Om du vill veta mer om principer för användning på mellanleverantörer kan du läsa [till detta avsnitt](../../installation/using/mid-sourcing-deployment.md).

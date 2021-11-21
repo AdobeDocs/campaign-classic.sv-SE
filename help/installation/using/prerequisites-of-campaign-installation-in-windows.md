@@ -17,9 +17,9 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-Den tekniska konfiguration och programvara som behövs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
+Den tekniska konfiguration och programvara som behövs för att installera Adobe Campaign finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
-Installationsprocessen för Adobe Campaign-servern för användning av flera instanser beskrivs nedan i [Installera servern](../../installation/using/installing-the-server.md).
+Adobe Campaign serverinstallationsprocess för användning av flera instanser beskrivs nedan [Installera servern](../../installation/using/installing-the-server.md).
 
 De huvudsakliga stegen är följande:
 

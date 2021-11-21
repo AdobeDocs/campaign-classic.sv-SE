@@ -19,10 +19,10 @@ ht-degree: 4%
 
 Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till Adobe Campaign Classic (v7), de ytterligare, nödvändiga och valfria inställningarna beroende på din konfiguration.
 
-Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan du påbörjar någon migreringsprocedur.
+Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan någon migreringsprocess inleds.
 
 Migreringen måste testas i utvecklingsmiljön i förväg för att se till att den fungerar smidigt och utan fel. Migrering av produktionsmiljön får endast utföras när den migrerade utvecklingsmiljön har validerats fullständigt.
 
 >[!NOTE]
 >
->Nya funktioner och lösningar för Adobe Campaign v7 beskrivs i [versionsinformationen](../../rn/using/latest-release.md).
+>Nya funktioner och utvecklingar för Adobe Campaign v7 beskrivs i [Versionsinformation](../../rn/using/latest-release.md).

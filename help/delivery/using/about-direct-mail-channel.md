@@ -24,4 +24,4 @@ Med Adobe Campaign kan ni producera filer för att leverera personaliserade brev
 >Postadresser är beräkningsfält. En adress kan som standard innehålla upp till sex rader: den första innehåller förnamnet och efternamnet, de följande raderna innehåller postadressen (väg etc.) och den sista raden innehåller postnumret och ort eller stad.\
 >En adress anses vara fullständig om fälten för namn, postnummer och ort inte är tomma.
 
-Avsnitten nedan innehåller information som är specifik för direktreklamkanalen. Global information om hur du skapar och skickar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
+Avsnitten nedan innehåller information som är specifik för direktreklamkanalen. Global information om hur du skapar och skickar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).

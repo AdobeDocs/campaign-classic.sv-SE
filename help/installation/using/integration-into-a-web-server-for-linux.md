@@ -23,7 +23,7 @@ Du kan använda den här integrerade Tomcat-servern för att hantera HTTP-begär
 
 I detta fall:
 
-* Standardlyssningsporten är 8080. Mer information finns i [det här avsnittet](configure-tomcat.md).
+* Standardlyssningsporten är 8080. Om du vill ändra den kan du läsa [det här avsnittet](configure-tomcat.md).
 * Klientkonsolerna ansluter sedan med en URL som:
 
    ```
@@ -52,13 +52,13 @@ Använd följande steg:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Kontrollera att **alias**, **authz_host** och **mime**-modulerna fortfarande är aktiverade. Använd följande kommando för att göra detta:
+   Se till att **alias**, **authz_host** och **mime** är fortfarande aktiverade. Använd följande kommando för att göra detta:
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. Skapa filen **nlsrv.load** i **/etc/apache2/mods-available** och infoga följande innehåll:
+1. Skapa filen **nlsrv.load** in **/etc/apache2/mods-available** och infoga följande innehåll:
 
    I Debian 8:
 
@@ -66,7 +66,7 @@ Använd följande steg:
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. Skapa filen **nlsrv.conf** i **/etc/apache2/mods-available** med följande kommando:
+1. Skapa filen **nlsrv.conf** in **/etc/apache2/mods-available** med följande kommando:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Använd följande steg:
     a2enmod nlsrv
    ```
 
-   Om du använder modulen **mod_rewrite** för Adobe Campaign-sidor måste du byta namn på **nlsrv.load** och **nlsrv.conf** till **zz-nlsrv.load** och **zz-nlsrv.conf**. Om du vill aktivera modulen kör du följande kommando:
+   Om du använder **mod_rewrite** för Adobe Campaign-sidor måste du byta namn på **nlsrv.load** och **nlsrv.conf** filer till **zz-nlsrv.load** och **zz-nlsrv.conf**. Om du vill aktivera modulen kör du följande kommando:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Redigera filen **/etc/apache2/envvars** och lägg till följande rader:
+1. Redigera **/etc/apache2/envvars** lägg till följande rader:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Den här proceduren gäller om du har installerat och skyddat Apache under ett R
 
 Använd följande steg:
 
-1. Aktivera följande Apache-moduler i filen `httpd.conf`:
+1. I `httpd.conf` aktiverar du följande Apache-moduler:
 
    ```
    alias
@@ -152,7 +152,7 @@ Använd följande steg:
    ForceLanguagePriority
    ```
 
-1. Skapa en Adobe Campaign-specifik konfigurationsfil i mappen `/etc/httpd/conf.d/`. Exempel `CampaignApache.conf`
+1. Skapa en Adobe Campaign-specifik konfigurationsfil i `/etc/httpd/conf.d/` mapp. Exempel `CampaignApache.conf`
 
 1. För **RHEL7** lägger du till följande instruktioner i filen:
 
@@ -163,7 +163,7 @@ Använd följande steg:
 
 1. För **RHEL7**:
 
-   Lägg till `/etc/systemd/system/httpd.service`-filen med följande innehåll:
+   Lägg till `/etc/systemd/system/httpd.service` fil med följande innehåll:
 
    ```
    .include /usr/lib/systemd/system/httpd.service

@@ -22,7 +22,7 @@ Läs mer om leveransmallar i [det här avsnittet](creating-a-delivery-template.m
 
 ## Kom igång med leveransmallar {#gs-templates}
 
-Med en [leveransmall](creating-a-delivery-template.md) kan du definiera en uppsättning tekniska och funktionella egenskaper som passar dina behov och som kan återanvändas för framtida leveranser. Sedan kan ni spara tid och standardisera leveranser vid behov.
+A [leveransmall](creating-a-delivery-template.md) Med kan du definiera en uppsättning tekniska och funktionella egenskaper som passar dina behov och som kan återanvändas för framtida leveranser. Sedan kan ni spara tid och standardisera leveranser vid behov.
 
 När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du har en underdomän per varumärke. En bank kan till exempel ha flera underdomäner som motsvarar var och en av dess regionala myndigheter. Om en bank äger domänen bluebank.com kan dess underdomäner vara @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com osv. Med en leveransmall per underdomän kan ni alltid använda rätt förkonfigurerade parametrar för varje varumärke, vilket undviker fel och sparar tid.
 
@@ -42,21 +42,21 @@ När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du h
 
 Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
-1. Klicka på länken **[!UICONTROL From]** i [leveransmallen](creating-a-delivery-template.md). I fönstret **[!UICONTROL Email header parameters]** fyller du i följande fält:
+1. I [leveransmall](creating-a-delivery-template.md)klickar du på **[!UICONTROL From]** länk. I **[!UICONTROL Email header parameters]** Fönster, fyll i följande fält:
 
    ![](assets/d_best_practices_email_header.png)
 
-1. I fältet **[!UICONTROL Sender address]** kontrollerar du att adressdomänen är densamma som den underdomän som du har delegerat till Adobe. Du kan ändra den del som föregår @ men inte domänadressen.
+1. I **[!UICONTROL Sender address]** ska du kontrollera att adressdomänen är densamma som den underdomän som du har delegerat till Adobe. Du kan ändra den del som föregår @ men inte domänadressen.
 
-1. I fältet **[!UICONTROL From]** använder du ett namn som är lätt att identifiera för mottagarna, till exempel ditt varumärkes namn, för att öka öppningshastigheten för dina leveranser. Om du vill förbättra mottagarens upplevelse ytterligare kan du lägga till en persons namn, till exempel&quot;Emma from Megastore&quot;.
+1. I **[!UICONTROL From]** används ett namn som lätt kan identifieras av mottagarna, till exempel ert varumärkes namn, för att öka öppningshastigheten för era leveranser. Om du vill förbättra mottagarens upplevelse ytterligare kan du lägga till en persons namn, till exempel&quot;Emma from Megastore&quot;.
 
-1. I fälten **[!UICONTROL Reply address text]** används avsändarens adress som standard för svar. Adobe rekommenderar dock att man använder en befintlig riktig adress som till exempel kundtjänst för ert varumärke. Om en mottagare skickar ett svar kan kundtjänst hantera det.
+1. I **[!UICONTROL Reply address text]** används avsändarens adress som standard för svar. Adobe rekommenderar dock att man använder en befintlig riktig adress som till exempel kundtjänst för ert varumärke. Om en mottagare skickar ett svar kan kundtjänst hantera det.
 
 ### Konfigurera en kontrollgrupp
 
 När leveransen har skickats kan du jämföra beteendet hos de uteslutna mottagarna med mottagarna som tog emot leveransen. Sedan kan ni mäta effektiviteten i era kampanjer. Läs mer om kontrollgrupper [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-Om du vill konfigurera en kontrollgrupp klickar du på länken **[!UICONTROL To]**. I fönstret **[!UICONTROL Select target]** väljer du fliken **[!UICONTROL Control group]**. Du kan extrahera en del av målet, till exempel ett slumpmässigt urval på 5 %.
+Om du vill konfigurera en kontrollgrupp klickar du på **[!UICONTROL To]** länk. I **[!UICONTROL Select target]** väljer du **[!UICONTROL Control group]** -fliken. Du kan extrahera en del av målet, till exempel ett slumpmässigt urval på 5 %.
 
 ![](assets/d_best_practices_control_group.png)
 
@@ -64,7 +64,7 @@ Om du vill konfigurera en kontrollgrupp klickar du på länken **[!UICONTROL To]
 
 En typologi innehåller kontrollregler som tillämpas under analysfasen innan ett meddelande skickas.
 
-Ändra standardtypologin efter behov på fliken **[!UICONTROL Typology]** för mallens egenskaper.
+I **[!UICONTROL Typology]** ändra standardtypologin efter behov på fliken för mallens egenskaper.
 
 Om du till exempel vill ha bättre kontroll över utgående trafik kan du definiera vilka IP-adresser som kan användas genom att definiera en tillhörighet per underdomän och skapa en typologi per tillhörighet. Tillhörigheterna definieras i instansens konfigurationsfil. Kontakta Adobe Campaign-administratören.
 

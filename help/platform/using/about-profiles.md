@@ -19,7 +19,7 @@ ht-degree: 15%
 
 Profilerna är centraliserade i Adobe Campaign-databasen. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PI-data i en samlad vy för att analysera och vidta åtgärder.
 
-&quot;**Profil**&quot; betyder en informationspost (t.ex.: en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead.
+&quot;**Profil**&quot; innebär ett register över information (t.ex. en post i nmsRecipient-tabellen eller en extern tabell som innehåller ett cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal) som representerar en slutkund, potentiell kund eller lead.
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Med mottagardata som lagras i databasen kan du filtrera målet som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
@@ -37,7 +37,7 @@ Profiler kan identifieras baserat på lagringsutrymme. Detta innebär att en pro
 
 Leveransmottagarna lagras i databasen som profiler med den information som är länkad till dem: efternamn, förnamn, adress, prenumerationer, leveranser osv. När du skapar kampanjer kan du definiera målet för leveranserna till ett urval av profilerna i basen enligt enkla eller avancerade kriterier.
 
-Du kan också skapa kampanjer som riktar sig till mottagare vars profiler inte lagras i databasen utan i filer. Dessa kallas för &quot;externa&quot; leveranser. Mer information om den här typen av leverans finns på [den här sidan](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Du kan också skapa kampanjer som riktar sig till mottagare vars profiler inte lagras i databasen utan i filer. Dessa kallas för &quot;externa&quot; leveranser. Mer information om den här typen av leverans finns i [den här sidan](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 De viktigaste metoderna för att skapa mottagarprofiler är följande:
 
@@ -47,11 +47,11 @@ De viktigaste metoderna för att skapa mottagarprofiler är följande:
 
 >[!NOTE]
 >
->Mer information om hur filer och webbformulär importeras finns i [Allmän import och export](../../platform/using/get-started-data-import-export.md).
+>Om du vill ta reda på hur filer och webbformulär importeras går du till [Allmän import och export](../../platform/using/get-started-data-import-export.md).
 
 ## Profiler och mål {#profiles-and-targets}
 
-Med länken **[!UICONTROL Profiles and targets]** kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. Mer information finns på [den här sidan](../../platform/using/editing-a-profile.md).
+The **[!UICONTROL Profiles and targets]** -länken kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. Mer information finns på [den här sidan](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -65,9 +65,9 @@ Du får även tillgång till
 
 På mottagarsidan kan du utföra vanliga åtgärder på profiler: redigeringar, uppdateringar, tillägg, borttagningar, sortering.
 
-För mer avancerade profiländringar måste du redigera Adobe Campaign-trädet. Det gör du genom att klicka på länken **[!UICONTROL Explorer]** på Adobe Campaign hemsida.
+För mer avancerade profiländringar måste du redigera Adobe Campaign-trädet. Om du vill göra det klickar du på **[!UICONTROL Explorer]** på Adobe Campaign hemsida.
 
-Som standard lagras mottagarna i noden **[!UICONTROL Profiles and Targets > Recipients]** i trädet. Du kan skapa mottagare från den här vyn, liksom:
+Som standard lagras mottagarna i **[!UICONTROL Profiles and Targets > Recipients]** trädnod. Du kan skapa mottagare från den här vyn, liksom:
 
 * sortera och filtrera databasens profiler - [Läs mer](../../platform/using/filtering-options.md)
 * flytta, kopiera eller ta bort profiler från databasen - [Läs mer](../../platform/using/managing-profiles.md),
@@ -75,15 +75,15 @@ Som standard lagras mottagarna i noden **[!UICONTROL Profiles and Targets > Reci
 * exportmottagare - [Läs mer](../../platform/using/exporting-and-importing-profiles.md)
 * skapa mottagargrupper - [Läs mer](../../platform/using/creating-and-managing-lists.md)
 
-Om du vill komma åt avancerade funktioner och konfigurationer måste du klicka på ikonen **[!UICONTROL Explorer]**.
+Om du vill komma åt avancerade funktioner och konfigurationer måste du klicka på **[!UICONTROL Explorer]** ikon.
 
 ![](assets/d_ncs_user_interface01.png)
 
-Den allmänna layouten för Adobe Campaign Explorer visas på [den här sidan](../../platform/using/adobe-campaign-explorer.md).
+Den allmänna layouten för Adobe Campaign Explorer presenteras i [den här sidan](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [den här sidan](../../platform/using/adobe-campaign-ui-lists.md).
+>Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på **[!UICONTROL Profiles and targets > Recipients]** länk. Listvisningen kan konfigureras så att den passar dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Konfigurationen för listvisning beskrivs i [den här sidan](../../platform/using/adobe-campaign-ui-lists.md).
 >
 >Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [det här avsnittet](../../platform/using/access-management-folders.md).
 
@@ -91,7 +91,7 @@ Den allmänna layouten för Adobe Campaign Explorer visas på [den här sidan](.
 
 Aktiva profiler är de profiler som räknas i faktureringssyfte.
 
-Fakturering gäller endast profiler som är **aktiva**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
+Fakturering gäller endast profiler som **aktiv**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
 
 En profil som har valts av flera leveranser räknas bara en gång.
 
@@ -99,11 +99,11 @@ En profil som har valts av flera leveranser räknas bara en gång.
 >
 >Facebook- och Twitter-kanaler beaktas inte.
 
-Antal aktiva profiler är endast tillgängligt för **Marknadsinstanser**. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
+Antal aktiva profiler är tillgängligt för **Marknadsföringsinstanser** endast. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
 
 >[!NOTE]
 >
->Du kan också övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [dokumentationen till kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>Du kan också övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Videokurs {#create-profiles-video}
 
@@ -113,7 +113,7 @@ I den här videon förklaras också Adobe Campaign Classic överensstämmelse me
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
 **Se även**
 

@@ -17,12 +17,12 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-Rapporten **[!UICONTROL History of Message Center events]** ger dig en översikt över meddelandecenteraktiviteten, dvs. antalet händelser som bearbetas och levereras som transaktionsmeddelanden.
+The **[!UICONTROL History of Message Center events]** rapporten ger dig en översikt över aktiviteten i meddelandecentret, dvs. antalet händelser som bearbetas och levereras som transaktionsmeddelanden.
 
 När rapporten öppnas sammanfaller den information som visas som standard med hastigheten för skickade transaktionsmeddelanden. Om du vill visa fler nivåer kan du öppna de olika noderna och placera markören på lämplig nivå för att markera den.
 
 ![](assets/messagecenter_reporting_001.png)
 
-Du kan visa data som är specifika för varje händelsetyp, per tidsperiod. Kolumnen **[!UICONTROL Events]** motsvarar antalet händelser som tas emot per kontrollinstans. Antalet händelser som har omvandlats till personaliserade transaktionsmeddelanden beskrivs i kolumnen **[!UICONTROL Sent]**.
+Du kan visa data som är specifika för varje händelsetyp, per tidsperiod. The **[!UICONTROL Events]** -kolumnen motsvarar antalet händelser som tas emot per kontrollinstans. Antalet händelser som omvandlats till personaliserade transaktionsmeddelanden beskrivs i **[!UICONTROL Sent]** kolumn.
 
-Rapporten **[!UICONTROL History of Message Center events]** är en pivottabelltypsrapport. Mer information finns i avsnittet [Analysera populationer](../../reporting/using/about-descriptive-analysis.md).
+The **[!UICONTROL History of Message Center events]** rapport är en pivottabelltypsrapport. Mer information finns i [Analyserar populationer](../../reporting/using/about-descriptive-analysis.md) -avsnitt.

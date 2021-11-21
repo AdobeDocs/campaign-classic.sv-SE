@@ -27,7 +27,7 @@ Det här exemplet hjälper dig att förstå skillnaden mellan en person/en perso
 
 >[!NOTE]
 >
->Dessa indikatorer används i **[!UICONTROL Tracking indicators]**-rapporten. Mer information finns i [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Dessa indikatorer används i **[!UICONTROL Tracking indicators]** rapport. Mer information finns i [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Tre länkar läggs till i en leverans. Det skickas till fyra mottagare:
 
@@ -100,7 +100,7 @@ Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att sa
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Mellanliggande summa | 1 | 3 | 2 |
+| Mellanliggande summa | 1 | 1 | 2 |
 
 Följande loggar sammanfaller med de öppna och två klick som utförts av den person som Florian vidarebefordrade e-postmeddelandet till:
 
@@ -110,7 +110,7 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Folk**: När det gäller klickningar ser vi att samma identifierare (UUID) har tilldelats alla loggar:  **`9ab648f9 [...]`**. Den här identifieraren har inte räknats än. En ny person läggs därför till i räkningen.
+**Folk**: När det gäller klickningar ser vi att samma identifierare (UUID) har tilldelats alla loggar: **`9ab648f9 [...]`**. Den här identifieraren har inte räknats än. En ny person läggs därför till i räkningen.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -122,7 +122,7 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Okänd person | - | +1 | - |
-| Mellanliggande summa | 3 | 2 | 2 |
+| Mellanliggande summa | 1 | 2 | 2 |
 
 ## Steg 4: Henry {#step-4--henry}
 
@@ -147,7 +147,7 @@ De öppna och fyra klick som Henry utför visas i följande loggar:
 | Florian | +1 | +1 | +1 |
 | Okänd person | - | +1 | - |
 | Henry | +1 | +4 | +1 |
-| Mellanliggande summa | 2 | 6 | 1 |
+| Mellanliggande summa | 2 | 6 | 3 |
 
 ## Sammanfattning {#summary}
 
@@ -157,20 +157,20 @@ På leveransnivå har vi följande resultat:
 
 * **[!UICONTROL Clicks]** (mottagare som klickade): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (personer som klickade): 6
-* **[!UICONTROL Distinct opens for the population reached]** (mottagare som öppnat): 1
+* **[!UICONTROL Distinct opens for the population reached]** (mottagare som öppnat): 3
 
 Raw-reaktivitet och uppskattning av framåtriktade beräkningar görs enligt följande:
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
-* **[!UICONTROL Estimation of forwards]** =  **B - A** (således 6 - 2 = 4)
-* **[!UICONTROL Raw reactivity]** =  **A / C** (alltså 2 / 3 = 66,67%)
+* **[!UICONTROL Estimation of forwards]** = **B - A** (alltså 6 - 2 = 4)
+* **[!UICONTROL Raw reactivity]** = **A / C** (alltså 2 / 3 = 66,67 %)
 
 >[!NOTE]
 >
 >I följande formler:
 >
->* A representerar indikatorn **[!UICONTROL Clicks]** (mottagarna som klickade).
->* B representerar indikatorn **[!UICONTROL Distinct clicks for the population reached]** (personer som klickade).
->* C representerar indikatorn **[!UICONTROL Distinct opens for the population reached]** (mottagarna som öppnade).
+>* A representerar **[!UICONTROL Clicks]** -indikator (mottagare som klickade).
+>* B representerar **[!UICONTROL Distinct clicks for the population reached]** -indikator (personer som klickade).
+>* C representerar **[!UICONTROL Distinct opens for the population reached]** -indikator (mottagare som öppnade).
 

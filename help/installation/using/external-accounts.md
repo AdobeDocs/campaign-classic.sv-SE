@@ -25,7 +25,7 @@ Externa konton används av tekniska processer som tekniska arbetsflöden eller C
 
 Följ stegen nedan om du vill skapa ett nytt externt konto. Detaljerade inställningar beror på typen av externt konto.
 
-1. I Campaign **[!UICONTROL Explorer]** väljer du **[!UICONTROL Administration]** **[!UICONTROL Platform]** > **[!UICONTROL External accounts]**.
+1. Från kampanj **[!UICONTROL Explorer]**, markera **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
    ![](assets/ext_account_1.png)
 
@@ -33,13 +33,13 @@ Följ stegen nedan om du vill skapa ett nytt externt konto. Detaljerade inställ
 
    ![](assets/ext_account_2.png)
 
-1. Ange en **[!UICONTROL Label]** och en **[!UICONTROL Internal Name]**.
-1. Välj det externa kontot **[!UICONTROL Type]** som du vill skapa.
+1. Ange **[!UICONTROL Label]** och **[!UICONTROL Internal Name]**.
+1. Välj ditt externa konto **[!UICONTROL Type]** vilken du vill skapa.
 1. Konfigurera åtkomsten till kontot genom att ange autentiseringsuppgifter beroende på vald extern kontotyp.
 
    Den nödvändiga informationen tillhandahålls vanligtvis av leverantören för den server som du ansluter till.
 
-1. Markera alternativet **[!UICONTROL Enabled]** för att aktivera anslutningen.
+1. Kontrollera **[!UICONTROL Enabled]** för att aktivera anslutningen.
 1. Klicka på **[!UICONTROL Save]**.
 
 Det externa kontot skapas och läggs till i listan över externa konton.
@@ -48,13 +48,13 @@ Det externa kontot skapas och läggs till i listan över externa konton.
 
 ### Studsmeddelanden {#bounce-mails-external-account}
 
-Det externa kontot **studs-e-post** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns på den här [sidan](../../workflow/using/inbound-emails.md).
+The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [page](../../workflow/using/inbound-emails.md).
 
 Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
 ![](assets/ext_account_6.png)
 
-Så här konfigurerar du det externa kontot **[!UICONTROL Bounce mails (defaultPopAccount)]**:
+Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** externt konto:
 
 * **[!UICONTROL Server]**
 
@@ -78,7 +78,7 @@ Så här konfigurerar du det externa kontot **[!UICONTROL Bounce mails (defaultP
 
 ### Dirigering{#routing-external-account}
 
-Med det externa **[!UICONTROL Routing]**-kontot kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
+The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
 
 ![](assets/ext_account_7.png)
 
@@ -91,7 +91,7 @@ Följande kanaler kan konfigureras:
 * [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS-kanal](../../delivery/using/configuring-the-mobile-application.md)
+* [iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
 ### Körningsinstans  {#execution-instance-external-account}
@@ -112,7 +112,7 @@ Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är l�
 
    Lösenord för kontot enligt definitionen i mappen operator.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../message-center/using/configuring-instances.md#control-instance).
+Mer information om den här konfigurationen finns i [page](../../message-center/using/configuring-instances.md#control-instance).
 
 ## Tillgång till externa systemkonton
 
@@ -144,7 +144,7 @@ Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska 
 
    Typ av vald kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
 
-Om du vill veta var du hittar dessa autentiseringsuppgifter kan du gå till den här [sidan](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
+Om du vill veta var du hittar dessa autentiseringsuppgifter kan du läsa detta [page](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
 ### SFTP {#sftp-external-account}
 
@@ -170,9 +170,9 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 
 ### Extern databas (FDA) {#external-database-external-account}
 
-Använd **extern databas** för att ansluta till en extern databas. Läs mer om FDA-alternativet (Federated Data Access) i [det här avsnittet](../../installation/using/about-fda.md).
+Använd **Extern databas** skriv ett externt konto för att ansluta till en extern databas. Läs mer om FDA-alternativet (Federated Data Access) i [det här avsnittet](../../installation/using/about-fda.md).
 
-Externa databaser som är kompatibla med Campaign listas i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md)
+Externa databaser som är kompatibla med Campaign listas i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
@@ -181,26 +181,26 @@ Konfigurationsinställningarna för det externa kontot beror på databasmotorn. 
 * Konfigurera åtkomst till [Vertica](../../installation/using/configure-fda-vertica.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Konfigurera åtkomst till [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-* Konfigurera åtkomst till [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Konfigurera åtkomst till [azure synapse](../../installation/using/configure-fda-synapse.md)
 * Konfigurera åtkomst till [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Konfigurera åtkomst till [Oracle](../../installation/using/configure-fda-oracle.md)
 * Konfigurera åtkomst till [Netezza](../../installation/using/configure-fda-netezza.md)
 * Konfigurera åtkomst till [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Konfigurera åtkomst till [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Konfigurera åtkomst till [sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Konfigurera åtkomst till [Teradata](../../installation/using/configure-fda-teradata.md)
 
 ### Facebook Connect {#facebook-connect-external-account}
 
-Med det externa **[!UICONTROL Facebook Connect]**-kontot kan du visa anpassat innehåll i dina Facebook-program, vilket gör det enklare att hitta potentiella kunder via det här sociala nätverket.
+The **[!UICONTROL Facebook Connect]** Med ett externt konto kan du visa personaliserat innehåll i dina Facebook-program, vilket gör det enklare att hitta potentiella kunder via det sociala nätverket.
 
-För varje Facebook-program måste du skapa ett externt konto av typen **[!UICONTROL Facebook Connect]**. Mer information finns på [sida](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+För varje Facebook-program måste du skapa en **[!UICONTROL Facebook Connect]** skriv ett externt konto. Mer information finns i [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
 * **[!UICONTROL Hosting mode]**
 
-   Programmets värdläge mellan **[!UICONTROL hosted by a partner]** eller **[!UICONTROL hosted by this instance]**.
+   Värdläge för programmet mellan **[!UICONTROL hosted by a partner]** eller **[!UICONTROL hosted by this instance]**.
 
 * **[!UICONTROL Application ID]**
 
@@ -210,15 +210,15 @@ För varje Facebook-program måste du skapa ett externt konto av typen **[!UICON
 
    Programhemlighet för ditt Facebook-program.
 
-Om du väljer värdserver för det här instansläget måste webbadressen för den säkra arbetsytan klistras in i fältet **Facebook webbspel (https)** i Facebook
+Om du väljer värdserver för det här instansläget måste webbadressen för den säkra arbetsytan klistras in i **Facebook webbspel (https)** fält på Facebook
 
-Om du vill veta var du hittar dessa autentiseringsuppgifter kan du gå till den här [sidan](https://developers.facebook.com/docs/facebook-login/access-tokens).
+Om du vill veta var du hittar dessa autentiseringsuppgifter kan du läsa detta [page](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Externa konton för integrering av lösningar i Adobe
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
-Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfigurera det externa kontot **[!UICONTROL Adobe Experience Cloud (MAC)]**.
+Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfigurera **[!UICONTROL Adobe Experience Cloud (MAC)]** externt konto.
 
 ![](assets/ext_account_9.png)
 
@@ -244,7 +244,7 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID för din IMS-organisation. Information om hur du hittar ditt organisations-ID finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Var hittar jag mitt IMS-organisations-ID?**).
+   ID för din IMS-organisation. Om du vill hitta ditt organisations-ID går du till [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Var hittar jag mitt IMS-organisations-ID?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -258,11 +258,11 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
    Namn på din Adobe Experience Cloud-klient.
 
-Mer information om den här konfigurationen finns på [den här sidan](../../integrations/using/configuring-ims.md).
+Mer information om den här konfigurationen finns i [den här sidan](../../integrations/using/configuring-ims.md).
 
 ## Webbanalys {#web-analytics-external-account}
 
-Med det externa **[!UICONTROL Web Analytics]**-kontot kan du vidarebefordra data från Adobe Analytics till Adobe Campaign i form av segment. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics Connector.
+The **[!UICONTROL Web Analytics]** Med ett externt konto kan du vidarebefordra data från Adobe Analytics till Adobe Campaign i form av segment. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics Connector.
 
 ![](assets/ext_account_10.png)
 
@@ -270,7 +270,7 @@ För det här externa kontot måste beräkningsformeln för spårade URL:er för
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
-Med det externa **[!UICONTROL AEM (AEM instance)]**-kontot kan du hantera innehållet i e-postleveranser och formulär direkt i Adobe Experience Manager.
+The **[!UICONTROL AEM (AEM instance)]** Med ett externt konto kan ni hantera innehållet i era e-postleveranser samt formulären direkt i Adobe Experience Manager.
 
 ![](assets/ext_account_5.png)
 
@@ -294,35 +294,35 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** och  **[!UICONTROL Office 365]** distributionstyperna är nu föråldrade. [Läs mer](../../rn/using/deprecated-features.md).
+> **[!UICONTROL On-premise]** och **[!UICONTROL Office 365]** distributionstyperna är nu inaktuella. [Läs mer](../../rn/using/deprecated-features.md).
 
-Med det externa **[!UICONTROL Microsoft Dynamics CRM]**-kontot kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
+The **[!UICONTROL Microsoft Dynamics CRM]** Med ett externt konto kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-Läs mer om Campaign - Microsoft Dynamics CRM Connector på den här [sidan](../../platform/using/crm-ms-dynamics.md).
+Läs mer om Campaign - Microsoft Dynamics CRM Connector i detta [page](../../platform/using/crm-ms-dynamics.md).
 
-Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Password credentials]** måste du ange följande information:
+Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Password credentials]** autentisering måste du ange följande information:
 
 ![](assets/ext_account_14.png)
 
 * **[!UICONTROL Account]**
 
-   Konto som används för att logga in i Microsoft CRM.
+   Det konto som används för att logga in på Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
    URL till din Microsoft CRM-server.
 
-   Om du vill hitta din Microsoft CRM **[!UICONTROL Server URL]** öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och väljer din app. Du kan sedan hitta din **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
+   Hitta Microsoft CRM **[!UICONTROL Server URL]**&#x200B;öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och välj din app. Du kan sedan hitta **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
-   Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
+   Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
 
 * **[!UICONTROL CRM version]**
 
    Välj **[!UICONTROL Dynamics CRM 365]** CRM-version.
 
-Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL Certificate]** måste du ange följande information:
+Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** autentisering måste du ange följande information:
 
 ![](assets/ext_account_22.png)
 
@@ -330,13 +330,13 @@ Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL 
 
    URL till din Microsoft CRM-server.
 
-   Om du vill hitta din Microsoft CRM **[!UICONTROL Server URL]** öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och väljer din app. Du kan sedan hitta din **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
+   Hitta Microsoft CRM **[!UICONTROL Server URL]**&#x200B;öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och välj din app. Du kan sedan hitta **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
    Observera att den privata nyckeln måste kodas till Base64.
 
-   Det gör du genom att använda en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
+   Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -344,17 +344,17 @@ Med distributionstypen **[!UICONTROL Web API]** och verifieringen **[!UICONTROL 
 
 * **[!UICONTROL Client identifier]**
 
-   Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
+   Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
 
 * **[!UICONTROL CRM version]**
 
    CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md).
+Mer information om den här konfigurationen finns i [page](../../platform/using/crm-connectors.md).
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
-Med det externa **[!UICONTROL Salesforce CRM]**-kontot kan du importera och exportera Salesforce-data till Adobe Campaign.
+The **[!UICONTROL Salesforce CRM]** Med ett externt konto kan du importera och exportera Salesforce-data till Adobe Campaign.
 
 ![](assets/ext_account_17.png)
 
@@ -370,11 +370,11 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 * **[!UICONTROL Client identifier]**
 
-   Om du vill veta var du hittar din klientidentifierare kan du gå till den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+   Om du vill veta var du kan hitta din klientidentifierare kan du läsa detta [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Om du vill veta var du hittar din säkerhetstoken kan du gå till den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+   Om du vill veta var du hittar din säkerhetstoken kan du läsa detta [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
@@ -382,7 +382,7 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
-Mer information om den här konfigurationen finns på den här [sidan](../../platform/using/crm-connectors.md).
+Mer information om den här konfigurationen finns i [page](../../platform/using/crm-connectors.md).
 
 ## Externa konton för dataöverföring
 
@@ -404,27 +404,27 @@ När du konfigurerar det nya externa kontot måste du ange följande information
 
 * **[!UICONTROL AWS access key ID]**
 
-   Information om var du hittar ditt ID för AWS-åtkomstnyckel finns på den här [sidan](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+   Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du läsa detta [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   Information om var du hittar din hemliga åtkomstnyckel till AWS finns på den här [sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+   Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa detta [page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   Mer information om AWS-regionen finns på den här [sidan](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   Läs mer om AWS [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
-* Med kryssrutan **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge.
+* The **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge.
 
-Mer information om var du hittar nyckel-ID och hemlig åtkomstnyckel finns i Amazon Web services [dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+Om du vill veta var du hittar nyckel-ID:t och den hemliga åtkomstnyckeln kan du läsa Amazon webbtjänster [dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-Det externa kontot **Azure Blob storage** kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/file-transfer.md).
+The **Azure Blob Storage** externt konto kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_23.png)
 
-Om du vill konfigurera **[!UICONTROL Azure external account]** så att det fungerar med Adobe Campaign måste du ange följande information:
+Så här konfigurerar du **[!UICONTROL Azure external account]** om du vill arbeta med Adobe Campaign måste du ange följande:
 
 * **[!UICONTROL Server]**
 
@@ -436,4 +436,4 @@ Om du vill konfigurera **[!UICONTROL Azure external account]** så att det funge
 
 * **[!UICONTROL Access key]**
 
-   Om du vill veta var du hittar **[!UICONTROL Access key]** kan du gå till den här [sidan](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   Ta reda på var du hittar **[!UICONTROL Access key]**, se [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

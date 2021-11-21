@@ -5,8 +5,8 @@ description: Lär dig använda Campaign Explorer
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
@@ -19,15 +19,15 @@ ht-degree: 3%
 
 Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 
-Arbetsytan **[!UICONTROL Explorer]** är uppdelad i tre zoner:
+The **[!UICONTROL Explorer]** arbetsytan är uppdelad i tre zoner:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information om detta finns i [det här avsnittet](#about-navigation-hierarchy).).
+**1 - träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information om detta finns i [det här avsnittet](#about-navigation-hierarchy).).
 
 **2 - Lista**: kan du filtrera den här listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
 
-**3 - Information**: Du kan visa information om det markerade elementet. Med ikonen i det övre högra avsnittet kan du visa den här informationen i helskärmsläge.
+**3 - Detaljer**: Du kan visa information om det markerade elementet. Med ikonen i det övre högra avsnittet kan du visa den här informationen i helskärmsläge.
 
 ## Mappar och navigeringsträd{#about-navigation-hierarchy}
 
@@ -76,7 +76,7 @@ För optimal navigering och användbarhet rekommenderar Adobe att du använder e
 >
 >Upplösningar på mindre än 1 600 × 900 pixlar stöds inte av Adobe Campaign.
 
-Om vissa delar av **[!UICONTROL Details]**-zonen verkar vara trunkerade på arbetsytan **[!UICONTROL Explorer]** expanderar du den med pilen över zonen eller klickar på knappen **[!UICONTROL Enlarge]**.
+I **[!UICONTROL Explorer]** arbetsytan, om vissa delar av **[!UICONTROL Details]** -zonen verkar vara trunkerad, expandera den med pilen ovanför zonen eller klicka på **[!UICONTROL Enlarge]** -knappen.
 
 ![](assets/s_ncs_user_resolution.png)
 

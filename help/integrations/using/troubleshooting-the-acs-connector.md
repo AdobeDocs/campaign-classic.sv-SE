@@ -36,15 +36,15 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
    <td> profiler<br /> </td> 
   </tr> 
   <tr> 
-   <td> lista<br /> </td> 
-   <td> målgrupp<br /> </td> 
+   <td> list<br /> </td> 
+   <td> publik<br /> </td> 
   </tr> 
   <tr> 
-   <td> kampanjarbetsflöden, målarbetsflöden<br /> </td> 
+   <td> kampanjarbetsflöden, målgruppsarbetsflöden<br /> </td> 
    <td> arbetsflöden<br /> </td> 
   </tr> 
   <tr> 
-   <td> åtgärder<br /> </td> 
+   <td> operationer<br /> </td> 
    <td> kampanjer<br /> </td> 
   </tr> 
   <tr> 
@@ -52,7 +52,7 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
    <td> landningssidor<br /> </td> 
   </tr> 
   <tr> 
-   <td> anpassad tabell och schematillägg<br /> </td> 
+   <td> anpassat tabell- och schematillägg<br /> </td> 
    <td> anpassad resurs och resurstillägg<br /> </td> 
   </tr> 
   <tr> 
@@ -74,25 +74,25 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 
    Som standard synkroniseras 20 fält från nms:mottagartabellen med Campaign Standard. Se den detaljerade listan över synkroniserade fält. Alla ytterligare fält som du behöver hämta i Campaign Standarden måste mappas och konfigureras av din konsult.
 
-   Du kan kontrollera att fältet som du vill använda är tillgängligt genom att kontrollera profilresursdefinitionen från **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+   Om du vill vara säker på att fältet som du vill använda är tillgängligt kan du kontrollera profilresursdefinitionen från **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
    Dessutom synkroniseras inte alla data som bifogas till mottagare och lagras i tabeller som är relaterade till nms:templates som standard med Campaign Standard.
 
-   Om du fortfarande vill kunna använda relaterade data kan du utföra målanpassningen i Campaign v7 och lägga till ytterligare data enligt beskrivningen i [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md), eller så kan du hänvisa till din konsult för att utforska anpassningsmöjligheterna.
+   Om du fortfarande vill kunna använda relaterade data kan du utföra målanpassningen i Campaign v7 och lägga till ytterligare data enligt anvisningarna i [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md) eller så kan du kontakta en konsult för att utforska olika anpassningsmöjligheter.
 
 * **Jag använder en annan profildimension än standardvärdet nms:receive i Campaign v7, hur kan jag synkronisera dem med Campaign Standard?**
 
-   Campaign Standarden använder en unik målresurs som heter **profiler**. Den grundläggande implementeringen av funktionen Campaign Standard Connect ger en standardmappning mellan Campaign v7-mottagare och Campaign Standard-profiler.
+   Campaign Standarden använder en unik målinriktningsresurs med namnet **profiler**. Den grundläggande implementeringen av funktionen Campaign Standard Connect ger en standardmappning mellan Campaign v7-mottagare och Campaign Standard-profiler.
 
    Om du använder en annan profildimension i Campaign v7, eller om du använder flera, måste alla mappas med Campaign Standard-profiler. Kontakta din konsult för att diskutera just detta behov.
 
 * **Jag vill dela en lista med profiler med Campaign Standard via ett arbetsflöde, men kan inte hitta min målgrupp i Campaign Standard**.
 
-   Publiker finns på **[!UICONTROL Audiences]**-menyn i Campaign Standarden. De har etiketten som anges i **[!UICONTROL List update]**-aktiviteten i Campaign v7-arbetsflödet. De omfattas av mappmappmappningen som definieras under implementeringen.
+   Målgrupper finns i **[!UICONTROL Audiences]** i Campaign Standard. De har etiketten som anges i **[!UICONTROL List update]** aktivitet i Campaign v7-arbetsflödet. De omfattas av mappmappmappningen som definieras under implementeringen.
 
-   Det första som ska kontrolleras är om arbetsflödet har slutförts utan fel. Om du märker ett fel i **[!UICONTROL List update]**-aktiviteten betyder det att synkroniseringen med Campaign Standarden kan ha misslyckats. Om du vill ha mer information om vad som gick fel går du till **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Den här mappen innehåller synkroniseringsarbetsflöden som utlöses av aktivitetskörningen **[!UICONTROL List update]**.
+   Det första som ska kontrolleras är om arbetsflödet har slutförts utan fel. Om du ser ett fel på **[!UICONTROL List update]** -aktiviteten, vilket innebär att synkroniseringen med Campaign Standarden kan ha misslyckats. Om du vill se mer information om vad som gick fel går du till **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Den här mappen innehåller synkroniseringsarbetsflöden som utlöses av **[!UICONTROL List update]** aktivitetskörning.
 
-   Kontrollera också att alternativet **[!UICONTROL Share with ACS]** är markerat i aktiviteten **[!UICONTROL List update]** och att arbetsflödet har körts korrekt.
+   Se även till att **[!UICONTROL Share with ACS]** alternativet är markerat i **[!UICONTROL List update]** och att arbetsflödet har körts korrekt.
 
    Observera att mottagarprofilerna i listan måste ha synkroniserats med Campaign Standarden innan arbetsflödet körs. När Campaign Standarden har delats med Campaign Standarden är mottagarna i listan avstämda med profiler, vilket innebär att de måste finnas där. Mottagare från listan som inte kan avstämas med profiler i Campaign Standarden ignoreras.
 

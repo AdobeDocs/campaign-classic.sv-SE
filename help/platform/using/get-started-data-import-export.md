@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-Adobe Campaign Classic har funktioner för datahantering som gör att du kan importera och exportera data. Dessa åtgärder kan utföras med antingen arbetsflöden eller generiska import- och exporteringar.
+Adobe Campaign Classic har funktioner för datahantering som gör att du kan importera och exportera data. Dessa åtgärder kan utföras med antingen arbetsflöden eller allmän import och export.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Adobe Campaign Classic har funktioner för datahantering som gör att du kan imp
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**** Arbetsflöden är ett användbart sätt att automatisera importprocesserna. Oavsett om du importerar data från en lokal fil eller från en SFTP kan du använda dem för att standardisera datahanteringsrutinerna.
+**Arbetsflöden** är ett användbart sätt att automatisera importprocesserna. Oavsett om du importerar data från en lokal fil eller från en SFTP kan du använda dem för att standardisera datahanteringsrutinerna.
 
 I arbetsflöden kan import- och exportåtgärder upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan flera informationssystem.
 
@@ -37,7 +37,7 @@ Mer information om detta finns i [det här avsnittet](../../platform/using/impor
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-Dessutom innehåller Campaign Classic **generiska importer och exporter** som gör att du kan skapa tillfälliga import- eller exportjobb.
+Dessutom tillhandahåller Campaign Classic **allmän import och export** som gör att du kan skapa tillfälliga import- eller exportjobb.
 
 Import och export konfigureras i dedikerade mallar som du kan konfigurera och använda för att starta och övervaka import- och exportjobb.
 
@@ -63,6 +63,6 @@ Mer information om detta hittar du i dessa avsnitt.
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-Du bör följa flera [metodtips](../../platform/using/import-export-best-practices.md) när du utför import- och exportåtgärder för att säkerställa att data är konsekventa i databasen och undvika vanliga fel vid uppdatering och export.
+Du bör följa flera [bästa praxis](../../platform/using/import-export-best-practices.md) när du importerar och exporterar för att säkerställa att data är konsekventa i databasen och undvika vanliga fel vid uppdatering och export.
 
 Dessutom finns rekommendationer och vanliga problem med användningen av SFTP-servrar i [det här avsnittet](../../platform/using/sftp-server-usage.md).

@@ -30,7 +30,7 @@ Arbetsflöden sker i olika sammanhang och under olika faser av kampanjhanterings
 Adobe Campaign använder arbetsflöden för att
 
 * Utför riktade kampanjer. [Läs mer](building-a-workflow.md#implementation-steps-)
-* Skapa kampanjer: för varje kampanj kan du på fliken **[!UICONTROL Workflow]** skapa målet och leveranserna. [Läs mer](building-a-workflow.md#campaign-workflows)
+* Skapa kampanjer: för varje kampanj, **[!UICONTROL Workflow]** kan du skapa målet och leverera. [Läs mer](building-a-workflow.md#campaign-workflows)
 * Utför tekniska processer: rensning, insamling av spårningsinformation eller preliminära beräkningar. [Läs mer](building-a-workflow.md#technical-workflows)
 
 Ett arbetsflöde kan betyda både en processdefinition (arbetsflödesmodellen, som är en representation av vad som ska hända) och en instans av den här processen (en arbetsflödesinstans, som är en representation av vad som faktiskt händer).
@@ -43,11 +43,11 @@ Varje arbetsflöde innehåller:
 
 * **[!UICONTROL Activities]**
 
-   En aktivitet beskriver en uppgiftsmall. De olika aktiviteterna som är tillgängliga visas i diagrammet med ikoner. Varje typ har gemensamma egenskaper och specifika egenskaper. Alla aktiviteter har till exempel ett namn och en etikett, men bara **[!UICONTROL Approval]**-aktiviteten har ett uppdrag.
+   En aktivitet beskriver en uppgiftsmall. De olika aktiviteterna som är tillgängliga visas i diagrammet med ikoner. Varje typ har gemensamma egenskaper och specifika egenskaper. Alla aktiviteter har till exempel ett namn och en etikett, men bara **[!UICONTROL Approval]** aktiviteten har ett uppdrag.
 
    I ett arbetsflödesdiagram kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande (periodiska) åtgärder.
 
-   Alla arbetsflödesaktiviteter listas i [det här avsnittet](about-activities.md), inklusive användningsexempel och exempel.
+   Alla arbetsflödesaktiviteter listas i [det här avsnittet](about-activities.md), inklusive användningsfall och prover.
 
 * **[!UICONTROL Transitions]**
 
@@ -73,8 +73,8 @@ I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera p
 
 * Läs mer om arbetsflödesaktiviteter i [den här sidan](how-to-use-workflow-data.md).
 * Lär dig hur du skapar ett arbetsflöde i [det här avsnittet](building-a-workflow.md).
-* Lär dig hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../platform/using/import-export-workflows.md).
-* De effektivaste arbetsflödena beskrivs i [den här sidan](workflow-best-practices.md).
+* Upptäck hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../platform/using/import-export-workflows.md).
+* De effektivaste strategierna för arbetsflöden beskrivs i [den här sidan](workflow-best-practices.md).
 * Hitta vägledning om arbetsflödeskörning i [det här avsnittet](starting-a-workflow.md).
-* Lär dig hur du övervakar arbetsflöden i [den här sidan](monitoring-workflow-execution.md).
-* Lär dig hur du ger användare åtkomst till arbetsflöden i [den här sidan](managing-rights.md).
+* Lär dig övervaka arbetsflöden i [den här sidan](monitoring-workflow-execution.md).
+* Lär dig hur du ger användare åtkomst att använda arbetsflöden i [den här sidan](managing-rights.md).

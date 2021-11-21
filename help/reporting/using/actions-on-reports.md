@@ -33,17 +33,17 @@ Välj det format som du vill exportera rapporten till i listrutan. (.xls, .pdf e
 
 När en rapport innehåller flera sidor måste du upprepa åtgärden för varje sida.
 
-Du kan konfigurera din rapport så att den exporteras i PDF-, Excel- eller OpenOffice-format. Öppna Adobe Campaign Utforskaren och välj den aktuella rapporten.
+Du kan konfigurera rapporten så att den exporteras i PDF-, Excel- eller OpenOffice-format. Öppna Adobe Campaign Utforskaren och välj den aktuella rapporten.
 
-Exportalternativen nås via **[!UICONTROL Page]**-aktiviteterna i rapporten på fliken **[!UICONTROL Advanced]**.
+Exportalternativen nås via **[!UICONTROL Page]** verksamheter i rapporten, i **[!UICONTROL Advanced]** -fliken.
 
-Ändra inställningarna för **[!UICONTROL Paper]** och **[!UICONTROL Margins]** så att de passar dina behov. Du kan även tillåta export av en sida endast i PDF-format. Det gör du genom att avmarkera alternativet **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
+Ändra inställningarna för **[!UICONTROL Paper]** och **[!UICONTROL Margins]** för att passa dina behov. Du kan också tillåta export av en sida endast i PDF-format. Om du vill göra det avmarkerar du **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** alternativ.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### Exportera till Microsoft Excel {#exporting-into-microsoft-excel}
 
-För **[!UICONTROL List with group]**-typrapporter som ska exporteras till Excel gäller följande rekommendationer och begränsningar:
+För **[!UICONTROL List with group]** typrapporter som ska exporteras till Excel, följande rekommendationer och begränsningar gäller:
 
 * Rapporterna får inte innehålla tomma rader.
 
@@ -53,8 +53,8 @@ För **[!UICONTROL List with group]**-typrapporter som ska exporteras till Excel
 
    ![](assets/export_limitations_hide_label.png)
 
-* Rapporterna behöver inte använda formatering som definierats på cellnivå. Du bör använda **[!UICONTROL Form rendering]** för att definiera formatet för cellerna i tabellen. Du kan komma åt **[!UICONTROL Form rendering]** via **[!UICONTROL Administration > Configuration > Form rendering]**.
-* Vi rekommenderar inte att du infogar HTML-innehåll.
+* Rapporterna behöver inte använda formatering som definierats på cellnivå. Det är att föredra att använda **[!UICONTROL Form rendering]** för att definiera formatet för cellerna i tabellen. The **[!UICONTROL Form rendering]** kan nås via **[!UICONTROL Administration > Configuration > Form rendering]**.
+* Vi rekommenderar inte att du infogar HTML innehåll.
 * Om en rapport innehåller flera tabeller, diagram osv. textelement exporteras de ena under de andra.
 * Du kan tvinga radmatningstecknen i celler: den här konfigurationen sparas i Excel. Mer information finns i [Definiera cellformat](../../reporting/using/creating-a-table.md#defining-cell-format).
 
@@ -66,23 +66,23 @@ Du kan skjuta upp exporten av en rapport, t.ex. för att vänta på asynkrona an
 document.nl_waitBeforeRender = true;
 ```
 
-Om du vill aktivera exporten och börja konvertera till en PDF-fil använder du funktionen **document.nl_renderToPdf()** utan någon parameter.
+Om du vill aktivera exporten och börja konvertera till PDF använder du **document.nl_renderToPdf()** utan någon parameter.
 
 ### Minnesallokering {#memory-allocation}
 
 När du exporterar vissa stora rapporter kan minnesallokeringsfel uppstå.
 
-I vissa instanser är standardvärdet **maxMB** (**SKMS** för värdinstanser) för JavaScript som anges i konfigurationsfilen **serverConf.xml** inställt på 64 MB. Om du råkar ut för otillräckligt minne när du exporterar en rapport kan det rekommenderas att du ökar den här siffran till 512 MB:
+I vissa instanser är standardvärdet **maxMB** (**SKMS** för värdbaserade instanser) av JavaScript som anges i **serverConf.xml** konfigurationsfilen är inställd på 64 MB. Om du råkar ut för otillräckligt minne när du exporterar en rapport kan det rekommenderas att du ökar den här siffran till 512 MB:
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-Om du vill tillämpa ändringar som gjorts i konfigurationen måste **nlserver**-tjänsten startas om.
+Om du vill tillämpa ändringar som gjorts i konfigurationen, **nlserver** måste startas om.
 
-Mer information om filen **serverConf.xml** finns i [det här avsnittet](../../production/using/configuration-principle.md).
+Läs mer om **serverConf.xml** -fil, se [det här avsnittet](../../production/using/configuration-principle.md).
 
-Mer information om **nlserver**-tjänsten finns i [det här avsnittet](../../production/using/administration.md).
+Läs mer om **nlserver** tjänst, se [det här avsnittet](../../production/using/administration.md).
 
 ## Skriva ut en rapport {#printing-a-report}
 
@@ -108,6 +108,6 @@ Arkivdatumen visas under ikonen för att visa/dölja. Klicka på arkivet för at
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-Det går att ta bort ett rapportarkiv. Det gör du genom att gå till noden Adobe Campaign där dina rapporter lagras. Klicka på fliken **[!UICONTROL Archives]**, markera den du vill ta bort och klicka på **[!UICONTROL Delete]**.
+Det går att ta bort ett rapportarkiv. Det gör du genom att gå till noden Adobe Campaign där dina rapporter lagras. Klicka på **[!UICONTROL Archives]** markerar du den du vill ta bort och klickar på **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)

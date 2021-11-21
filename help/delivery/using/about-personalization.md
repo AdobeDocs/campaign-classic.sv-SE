@@ -17,13 +17,13 @@ ht-degree: 40%
 
 ![](../../assets/common.svg)
 
-Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. För e-postleveranser kan du definiera elementen och anpassningsvillkoren för en leverans direkt i JavaScript på fliken **[!UICONTROL Source]** i meddelandet. I allmänhet kan du med Adobe Campaign:
+Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. För e-postleveranser kan du definiera elementen och anpassningsvillkoren för en leverans direkt i JavaScript från **[!UICONTROL Source]** meddelandets flik. I allmänhet kan du med Adobe Campaign:
 
 * Anpassa meddelandeformatet. Se [Meddelandeinnehåll](defining-the-email-content.md#message-content).
 * Infoga dynamiska personaliseringsfält. Se [Anpassningsfält](personalization-fields.md).
 * Infoga fördefinierade personaliseringsblock. Se [Personaliseringsblock](personalization-blocks.md).
-* Skapa villkorsstyrt innehåll. Se avsnittet [Villkorligt innehåll](conditional-content.md).
+* Skapa villkorsstyrt innehåll. Se [Villkorligt innehåll](conditional-content.md) -avsnitt.
 
 >[!CAUTION]
 >
->Följande variabler är interna variabler som kan användas för personalisering men som inte får ändras: **leverans**, **meddelande**, **dataSource**, **targetData**, **provider**, **kupong**, **kupongvärde&lt;aValue 13/>,** proposition **.**
+>Följande variabler är interna variabler som kan användas för personalisering men som inte får ändras: **leverans**, **message**, **dataSource**, **targetData**, **provider**, **kupong**, **couponValue**, **offert**.

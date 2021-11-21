@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Med aktiviteten **Inkommande SMS** kan du hämta och bearbeta textmeddelanden från ett externt konto.
+The **Inkommande SMS** kan du hämta och bearbeta textmeddelanden från ett externt konto.
 
 ## Egenskaper {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-På den första fliken i aktiviteten **Inkommande SMS** kan du ange routningsparametrar för SMS-meddelanden och ange det skript som ska köras när du tar emot varje meddelande. På den andra fliken kan du tilldela aktiviteten ett schema och på den tredje fliken definieras aktivitetens förfallovillkor.
+Den första fliken i **Inkommande SMS** Med -aktivitet kan du ange routningsparametrar för SMS-meddelanden och ange det skript som ska köras när du tar emot varje meddelande. På den andra fliken kan du tilldela aktiviteten ett schema och på den tredje fliken definieras aktivitetens förfallovillkor.
 
-1. **[!UICONTROL SMS routing]**: Välj det externa konto som ska användas för SMS-återställning. Externa konton konfigureras via noden **[!UICONTROL Administration > Platform > External accounts]** i trädet.
+1. **[!UICONTROL SMS routing]**: Välj det externa konto som ska användas för SMS-återställning. Externa konton konfigureras via **[!UICONTROL Administration > Platform > External accounts]** trädnod.
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -33,4 +33,4 @@ På den första fliken i aktiviteten **Inkommande SMS** kan du ange routningspar
 
 1. **[!UICONTROL Expiration]**
 
-Flikarna **[!UICONTROL Script]**, **[!UICONTROL Schedule]** och **[!UICONTROL Expiry]** finns i [Inkommande e-postmeddelanden](inbound-emails.md).
+The **[!UICONTROL Script]**, **[!UICONTROL Schedule]** och **[!UICONTROL Expiry]** -tabbar beskrivs i [Inkommande e-postmeddelanden](inbound-emails.md).

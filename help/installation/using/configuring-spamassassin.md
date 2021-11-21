@@ -19,11 +19,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe. Om du till exempel vill komma åt server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i [Värdmodeller](../../installation/using/hosting-models.md) avsnitt eller till [den här sidan](../../installation/using/capability-matrix.md).
 
 ## Översikt {#overview}
 
-SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign ge e-postmeddelanden poäng och avgöra om ett meddelande troligtvis inte är önskvärt innan det skickas. För att kunna göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler måste användas.
+SpamAssassin är en programvara som är utformad för att filtrera bort oönskade e-postmeddelanden. I kombination med den här programvaran kan Adobe Campaign ge e-postmeddelanden poäng och avgöra om ett meddelande troligtvis kommer att anses vara oönskat innan leveransen startas. För att kunna göra detta måste SpamAssassin installeras och konfigureras på programservrar i Adobe Campaign och ett visst antal ytterligare Perl-moduler måste användas.
 
 Distributionen och integreringen av SpamAssassin enligt beskrivningen i detta kapitel baseras på standardprogramvaruinstallation, liksom filtrerings- och poängregler, som tillhandahålls av SpamAssassin utan ändringar eller optimeringar. Poängattribuering och meddelandekvalificering baseras enbart på konfigurationen av SpamAssets-alternativen och på filtreringsregler. Nätverksadministratörer ansvarar för att anpassa dem till företagets behov.
 
@@ -48,21 +48,21 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 ### Installera SpamAssassin {#installing-spamassassin}
 
-1. Anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
-1. Hämta filen **Neolane Spam Assassin (Windows-installation) (2.0)** (neolane_spamassassin.2.0.zip).
+1. Anslut till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+1. Ladda ned **Neolane Spam Assassin (Windows-installation) (2.0)** file (neolane_spamassassin.2.0.zip).
 1. Kopiera den här filen till Adobe Campaign-servern och packa upp den.
 
    >[!NOTE]
    >
    >Du kan välja att packa upp filen var du vill, förutsatt att sökvägen består av något av följande reguljära uttryckstecken: **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. Installationssökvägen får inte innehålla blankstegstecken.
 
-1. Gå till filen där du packade upp filen och dubbelklicka sedan på filen **run_me.bat** för att starta installationsskriptet.
+1. Gå till den fil där du har packat upp filen och dubbelklicka sedan på **run_me.bat** för att starta installationsskriptet.
 
-   Om ett Windows Shell visas och fortsätter att visas i några sekunder väntar du tills installationen och uppdateringen har slutförts och klickar sedan på **Enter**.
+   Om ett Windows Shell visas och fortsätter att visas i några sekunder väntar du tills installationen och uppdateringen har slutförts och klickar sedan på **Retur**.
 
-   Om Windows Shell inte visas eller inte visas innan den försvinner, dubbelklickar du på filen **portableShell.bat** för att visa ett Windows Shell och kontrollerar att Shell-sökvägen motsvarar mappen där filen **spamassassin.zip** har packats upp. Om så inte är fallet kan du komma åt det med kommandot **cd**.
+   Om Windows Shell inte visas eller inte visas innan du försvinner så dubbelklickar du på knappen **portableShell.bat** -fil för att visa ett Windows-gränssnitt och kontrollera att Shell-sökvägen motsvarar den mapp där **spamassassin.zip** filen har packats upp. Om så inte är fallet kan du öppna det med **cd** -kommando.
 
-   Ange **run_me.bat** och klicka sedan på **Enter** för att starta installations- och uppdateringsprocessen. Åtgärden returnerar ett av följande värden för att ange resultatet av uppdateringen.
+   Retur **run_me.bat** sedan klicka **Retur** för att starta installations- och uppdateringsprocessen. Åtgärden returnerar ett av följande värden för att ange resultatet av uppdateringen.
 
    * **0**: en uppdatering har utförts.
    * **1**: Det finns ingen ny uppdatering.
@@ -89,7 +89,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
       XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
       ```
 
-   1. Dubbelklicka på filen **portableShell.bat** för att visa ett Windows Shell och starta sedan följande kommando (eller &quot;`<root>`&quot; anger den skapade mappen när du packar upp **spamassassin.zip**-filen):
+   1. Dubbelklicka på **portableShell.bat** för att visa ett Windows Shell och sedan starta följande kommando (eller &quot;`<root>`&quot; anger den skapade mappen när du packar upp  **spamassassin.zip** fil):
 
       ```
        "<root>\perl\site\bin\spamassassin" "C:\TestSpamMail.txt"
@@ -99,8 +99,8 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 ### Integrera SpamAssassin i Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
-1. Redigera **`[INSTALL]/conf/serverConf.xml`**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
-1. Ändra värdet för **spamCheck**-elementen&#39; **command**-attributet i **webb**-noden. Kör följande kommando för att göra detta:
+1. Redigera **`[INSTALL]/conf/serverConf.xml`** -fil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
+1. Ändra värdet för **spamCheck** elements&#39; **kommando** i **Webb** nod. Kör följande kommando för att göra detta:
 
    ```
    <spamCheck command='"<absolute path to the folder where you unzipped the zip file>\call_perl_with_args.bat" "<absolute path to nlserver>/spamcheck.pl"'/>
@@ -110,11 +110,11 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
    >
    >Alla sökvägar måste vara absoluta.
 
-   Stoppa och starta tjänsten **[!UICONTROL Adobe Campaign]**.
+   Stoppa och starta **[!UICONTROL Adobe Campaign]** service.
 
 1. Om du vill kontrollera integreringen av SpamAssassin i Adobe Campaign använder du ett GTBUE-test (Generic Test for Unsolicited Bulk Email):
 
-   Dubbelklicka på filen **portableshell.bat**. Detta aktiverar visningen av ett Windows-gränssnitt. Kör sedan följande kommando:
+   Dubbelklicka på **portableshell.bat** -fil. Detta aktiverar visningen av ett Windows-gränssnitt. Kör sedan följande kommando:
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
@@ -124,7 +124,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 1. Uppdatera SpamAssassin-filtrerings- och bedömningsregler
 
-   Om du vill få en inledande uppdatering av filtrerings- och poängsättningsreglerna startar du **portableShell.bat** och kör följande kommando:
+   En inledande uppdatering av filtrerings- och poängsättningsregler finns på **portableShell.bat** och kör följande kommando:
 
    ```
    sa-update --no-gpg
@@ -146,7 +146,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
    apt-get install spamassassin libxml-writer-perl
    ```
 
-* I **serverConf.xml**-filen (tillgänglig i `/usr/local/[INSTALL]/nl6/conf/`) ändrar du **spamCheck**-raden enligt följande:
+* I **serverConf.xml** fil (tillgänglig i `/usr/local/[INSTALL]/nl6/conf/`), ändra **spamCheck** rad enligt följande:
 
    ```
    <spamCheck command="perl
@@ -169,7 +169,7 @@ cpan Mail::SpamAssassin
 
 ### Uppdaterar filterregler {#updating-filter-rules}
 
-Filterregler kan uppdateras automatiskt med verktyget **sa-update**. Mer information finns på den officiella SpamAssassin-webbplatsen [https://spamassassin.apache.org/](https://spamassassin.apache.org/).
+Filterregler kan uppdateras automatiskt med **sa-update** verktyg. Se den officiella SpamAssassin-webbplatsen [https://spamassassin.apache.org/](https://spamassassin.apache.org/) för mer information.
 
 I Debian sker uppdateringar automatiskt varje dag.
 
@@ -181,7 +181,7 @@ test -x /usr/bin/sa-update || exit 0
 /usr/sbin/sa-update && /etc/init.d/spamassassin update
 ```
 
-Infoga det här skriptet i **crontab** med följande kommando:
+Infoga skriptet i **crontab** med följande kommando:
 
 ```
 crontab-e
@@ -189,7 +189,7 @@ crontab-e
 
 ### Prestandaoptimering {#performance-optimization}
 
-Om du vill förbättra prestanda i Linux redigerar du filen **/etc/spamassassin/local.cf** och lägger till följande rad i slutet av filen:
+Om du vill förbättra prestanda i Linux redigerar du **/etc/spamassassin/local.cf** och lägg till följande rad i slutet av filen:
 
 ```
 dns_available no

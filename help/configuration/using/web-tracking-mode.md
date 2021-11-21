@@ -31,7 +31,7 @@ Varje läge har specifika egenskaper. Det &quot;permanenta&quot; läget för web
 >
 >Du kan när som helst ändra standardläget i instansdistributionsguiden.
 
-Observera att om du använder spårningsläget **permanent webb** eller **anonym** måste du lägga till ett index i kolumnen&quot;sourceID&quot; (uuid230) i spårningstabellerna (trackingLogXXX):
+Observera att om du använder **permanent webb** eller **anonym** spårningsläget måste du lägga till ett index i kolumnen&quot;sourceID&quot; (uuid230) i spårningstabellerna (trackingLogXXX):
 
 1. Identifiera spårningstabellerna som berörs av permanent spårning.
 1. Utöka de scheman som matchar de här tabellerna genom att lägga till följande rader:
@@ -42,11 +42,11 @@ Observera att om du använder spårningsläget **permanent webb** eller **anonym
 </dbindex>
 ```
 
-**Spårningslägena** Permanent och  **** AnonymousWeb omfattar två alternativ:  **Tvingad** leverans och  **senaste leverans**.
+**Permanent** och **Anonym** Webbspårningslägena har två alternativ: **Tvingad leverans** och **Senaste leverans**.
 
-Med alternativet **Tvingad leverans** kan du ange identifieraren för leveransen (@jobid) under spårning.
+The **Tvingad leverans** gör att du kan ange identifieraren för leveransen (@jobid) under spårning.
 
-Med alternativet **Senaste leverans** kan du länka den aktuella spårningsloggen till den senast spårade leveransen.
+The **Senaste leverans** kan du länka den aktuella spårningsloggen till den senast spårade leveransen.
 
 **Egenskaper för sessionswebbspårning:**
 
@@ -81,7 +81,7 @@ Det här läget är det mest kostsamma när det gäller beräkning och volym.
 
 >[!NOTE]
 >
->Om **[!UICONTROL Leads]**-paketet är installerat måste du göra samma sak för aktivitetstabellen (**crm:inkommandeLead**)
+>Om **[!UICONTROL Leads]** paketet är installerat måste du göra samma sak med aktivitetstabellen (**crm:inkommandeLead**)
 
 I följande schema sammanfattas funktionerna för alla tre webbspårningslägena:
 

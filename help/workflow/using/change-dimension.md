@@ -27,7 +27,7 @@ Det går att definiera villkor för borttagning av dubbletter av data.
 
 Så här konfigurerar du ändringsdimensionsaktiviteten:
 
-1. Välj den nya måldimensionen via fältet **[!UICONTROL Change dimension]**.
+1. Välj den nya måldimensionen via **[!UICONTROL Change dimension]** fält.
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -37,7 +37,7 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
 
    När du väljer att bara behålla en post visas en samling i arbetsschemat: Den här samlingen representerar alla poster som inte kommer att användas som mål i det slutliga resultatet (eftersom endast en post behålls). I likhet med alla andra samlingar kan du med den här metoden beräkna aggregeringar eller återställa information i kolumner.
 
-   Om du till exempel ändrar dimensionen **[!UICONTROL Customers]** till dimensionen **[!UICONTROL Recipients]** kan du rikta in dig på kunder i en viss butik, samtidigt som du lägger till antalet inköp.
+   Om du till exempel ändrar **[!UICONTROL Customers]** dimension till **[!UICONTROL Recipients]** är det möjligt att rikta in sig på kunder i en viss butik samtidigt som man lägger till antalet inköp.
 
 1. Om du väljer att inte behålla all den här informationen kan du konfigurera det duplicerade hanteringsläget.
 
@@ -47,11 +47,11 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
 
    I exemplet ovan dedupliceras mottagarna först till sin e-postadress och sedan till sitt kontonummer om det behövs.
 
-1. På fliken **[!UICONTROL Result]** kan du lägga till ytterligare information.
+1. The **[!UICONTROL Result]** kan du lägga till ytterligare information.
 
-   Du kan till exempel återskapa regionen baserat på postnumret genom att använda en **delsträng**-typfunktion. Så här gör du:
+   Du kan till exempel återställa regionen baserat på postnumret genom att använda en **Delsträng** type-funktion. Så här gör du:
 
-   * Klicka på länken **[!UICONTROL Add data...]** och välj **[!UICONTROL Data linked to the filtering dimension]**.
+   * Klicka på **[!UICONTROL Add data...]** länk och markera **[!UICONTROL Data linked to the filtering dimension]**.
 
       ![](assets/wf_change-dimension_sample_01.png)
 
@@ -59,11 +59,11 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
       >
       >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägga till data](query.md#adding-data).
 
-   * Markera föregående måldimension (före axelväxling) och välj **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]**-underträd och klicka sedan på **[!UICONTROL Edit expression]**.
+   * Markera föregående måldimension (före axelväxling) och välj **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]** underträd, klicka sedan på **[!UICONTROL Edit expression]**.
 
       ![](assets/wf_change-dimension_sample_02.png)
 
-   * Klicka på **[!UICONTROL Advanced selection]** och välj **[!UICONTROL Edit the formula using an expression]**.
+   * Klicka **[!UICONTROL Advanced selection]** och välja **[!UICONTROL Edit the formula using an expression]**.
 
       ![](assets/wf_change-dimension_sample_03.png)
 

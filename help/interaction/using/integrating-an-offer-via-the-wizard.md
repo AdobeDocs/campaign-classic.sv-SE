@@ -24,7 +24,7 @@ När du skapar en leverans finns det två möjliga metoder för att integrera er
 
 ## Leverera med ett samtal till erbjudandemotorn {#delivering-with-a-call-to-the-offer-engine}
 
-Om du vill presentera ett erbjudande under en marknadsföringskampanj skapar du bara en klassisk leveransåtgärd utifrån den valda kanalen. Erbjudandemotorn anropas när leveransinnehållet har definierats genom att klicka på ikonen **[!UICONTROL Offers]** som finns i verktygsfältet.
+Om du vill presentera ett erbjudande under en marknadsföringskampanj skapar du bara en klassisk leveransåtgärd utifrån den valda kanalen. Erbjudandemotorn anropas när leveransinnehållet definieras genom att klicka på **[!UICONTROL Offers]** som finns i verktygsfältet.
 
 ![](assets/offer_delivery_009.png)
 
@@ -52,11 +52,11 @@ Så här infogar du offertförslag i en leverans:
 
    ![](assets/offer_delivery_005.png)
 
-1. Välj alternativet **[!UICONTROL Exclude non-eligible recipients]** om det behövs. Mer information finns i [Parametrar för anrop av erbjudandemotor](#parameters-for-calling-offer-engine).
+1. Välj **[!UICONTROL Exclude non-eligible recipients]** vid behov. Mer information finns i [Parametrar för anrop av erbjudandemotor](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. Om det behövs väljer du alternativet **[!UICONTROL Do not display anything if no offers are selected]**. Mer information finns i [Parametrar för anrop av erbjudandemotor](#parameters-for-calling-offer-engine).
+1. Om det behövs väljer du **[!UICONTROL Do not display anything if no offers are selected]** alternativ. Mer information finns i [Parametrar för anrop av erbjudandemotor](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -89,11 +89,11 @@ Leveransen kan anpassas med hjälp av erbjudandets fält eller, om det är ett e
 
 Du kan också presentera erbjudanden i en leverans med hjälp av leveranskonturer.
 
-Mer information om leveransdispositioner finns i guiden [Kampanj - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Mer information om leveransdispositioner finns i [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) guide.
 
 1. Skapa en ny kampanj eller få tillgång till en befintlig kampanj.
-1. Få åtkomst till leveransdispositionerna via kampanjens **[!UICONTROL Edit]** > **[!UICONTROL Documents]**-flik.
-1. Lägg till en disposition och infoga så många erbjudanden du vill genom att högerklicka på dispositionen och välja **[!UICONTROL New]** > **[!UICONTROL Offer]** och sedan spara kampanjen.
+1. Få åtkomst till leveransdispositionerna via kampanjens **[!UICONTROL Edit]** > **[!UICONTROL Documents]** -fliken.
+1. Lägg till en disposition och infoga så många erbjudanden du vill i den genom att högerklicka på dispositionen och markera **[!UICONTROL New]** > **[!UICONTROL Offer]** och spara sedan kampanjen.
 
    ![](assets/int_compo_offre1.png)
 
@@ -102,15 +102,15 @@ Mer information om leveransdispositioner finns i guiden [Kampanj - MRM](../../ca
 
    >[!NOTE]
    >
-   >Beroende på typ av leverans hittar du det här alternativet på menyn **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** (t.ex. för e-postleveranser).
+   >Beroende på typ av leverans finns det här alternativet i **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** meny (t.ex. för e-postleveranser).
 
    ![](assets/int_compo_offre2.png)
 
-1. Med knappen **[!UICONTROL Offers]** kan du konfigurera erbjudandeutrymmet och antalet erbjudanden som ska finnas i leveransen.
+1. Använda **[!UICONTROL Offers]** kan du sedan konfigurera erbjudandeutrymmet och antalet erbjudanden som ska visas i leveransen.
 
    ![](assets/int_compo_offre3.png)
 
-1. Lägg till offerterna i leveransbrödtexten med hjälp av anpassningsfälten (mer information finns i avsnittet [Infoga ett offertförslag i en leverans](#inserting-an-offer-proposition-into-a-delivery)), eller vid direktutskick, genom att redigera extraheringsfilformatet.
+1. Lägg till förslagen i leveransbrödtexten med hjälp av anpassningsfälten (mer information finns i [Infoga ett offertförslag i en leverans](#inserting-an-offer-proposition-into-a-delivery) eller vid direktutskick genom att redigera extraheringsfilens format.
 
    Propositioner väljs ut bland de erbjudanden som refereras i leveransdispositionen.
 

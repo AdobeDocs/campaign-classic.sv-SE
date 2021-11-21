@@ -19,7 +19,7 @@ I det här avsnittet hittar du ett konfigurationsexempel baserat på ett företa
 
 Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
-* Skapa en **[!UICONTROL Mobile application]**-typinformationstjänst för mobilprogrammet Neotrips. Se [det här avsnittet för iOS](configuring-the-mobile-application.md#configuring-ios-service). och [det här avsnittet för Android](configuring-the-mobile-application-android.md#configuring-android-service).
+* Skapa en **[!UICONTROL Mobile application]** Type Information Service för mobilappen Neotrips. Se [det här avsnittet för iOS](configuring-the-mobile-application.md#configuring-ios-service). och [det här avsnittet för Android](configuring-the-mobile-application-android.md#configuring-android-service).
 * Lägg till iOS- och Android-versionerna av programmet i den här tjänsten.
 * Skapa en leverans för [iOS](create-notifications-ios.md) och [Android](create-notifications-android.md).
 
@@ -27,19 +27,19 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 
 >[!NOTE]
 >
->Gå till fliken **[!UICONTROL Subscriptions]** i tjänsten för att visa listan över prenumeranter på tjänsten, dvs. alla personer som har installerat programmet på sin mobiltelefon och gått med på att ta emot meddelanden.
+>Gå till **[!UICONTROL Subscriptions]** -fliken för tjänsten om du vill visa en lista över prenumeranter på tjänsten, dvs. alla personer som har installerat programmet på mobilen och gått med på att ta emot meddelanden.
 
 ## Installera paketet {#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för att få åtkomst till push-meddelandekanalen i Campaign som hybridkund/värdkund.
+Som hybridkund/värdkund kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för att komma åt push-meddelandekanalen i Campaign.
 
 Som lokal kund måste du installera ett inbyggt paket.
 
 >[!CAUTION]
 >
->Läs mer om Campaigns inbyggda paket, metodtips och rekommendationer i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+>Läs mer om Campaigns inbyggda paket, bästa praxis och rekommendationer i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
 
 Installationsstegen är:
 
@@ -49,13 +49,13 @@ Installationsstegen är:
 
 1. Välj **[!UICONTROL Install a standard package]**.
 
-1. Markera **[!UICONTROL Mobile App Channel]** i listan som visas.
+1. I listan som visas markerar du **[!UICONTROL Mobile App Channel]**.
 
    ![](assets/package_ios_2.png)
 
-1. Klicka på **[!UICONTROL Next]** och **[!UICONTROL Start]** för att starta paketinstallationen.
+1. Klicka **[!UICONTROL Next]** sedan **[!UICONTROL Start]** för att starta paketinstallationen.
 
-   När paketen har installerats visas **100 %** i förloppsindikatorn och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
+   När paketen har installerats visas förloppsindikatorn **100 %** och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 

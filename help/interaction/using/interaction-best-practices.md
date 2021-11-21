@@ -62,29 +62,29 @@ I det här avsnittet finns mer detaljerad information om hur du hanterar erbjuda
 
 ### Använda flera erbjudandeplatser i e-postleveranser {#multiple-offer-spaces}
 
-När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i kampanjen via en anrikningsaktivitet (eller en annan liknande aktivitet).
+När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i flödet i Campaign-arbetsflödet via en Enrichment-aktivitet (eller en annan liknande aktivitet).
 
 När du väljer erbjudanden i en anrikningsaktivitet kan du välja vilket utrymme som ska användas. Oberoende av vilket utrymme som har valts beror menyn för leveransanpassning på hur mycket utrymme som finns i leveransformuläret.
 
-I exemplet nedan är det erbjudandeutrymme som valts i leveransen **[!UICONTROL Email (Environment - Recipient)]**:
+I exemplet nedan är erbjudandeutrymmet som valts i leveransen **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Om det lediga utrymme som du väljer i leveransen inte har någon HTML-återgivningsfunktion konfigurerad, visas det inte på leveransmenyn och kan inte väljas. Detta är oberoende av vilket erbjudandeutrymme som valts i anrikningsaktiviteten.
+Om det lediga utrymme som du har valt i leveransen inte har någon HTML-återgivningsfunktion kommer du inte att se det på leveransmenyn och det kommer inte att gå att välja det. Detta är oberoende av vilket erbjudandeutrymme som valts i anrikningsaktiviteten.
 
-I exemplet nedan är HTML-återgivningsfunktionen tillgänglig i listrutan eftersom det erbjudandeutrymme som valts i leveransen har en återgivningsfunktion:
+I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan eftersom det erbjudandeutrymme som valts i leveransen har en återgivningsfunktion:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-När du markerar förslaget blir värdet för attributet **[!UICONTROL view]** följande:
-* &quot;rendering/html&quot;: html-återgivning. Den använder HTML-återgivningsfunktionen.
-* &quot;offer/view/html&quot;: html-innehåll. Den använder inte HTML-återgivningsfunktionen. Det innehåller bara HTML-fältet.
+När du markerar förslaget, är värdet för **[!UICONTROL view]** är följande:
+* &quot;rendering/html&quot;: html-återgivning. Det använder återgivningsfunktionen HTML.
+* &quot;offer/view/html&quot;: html-innehåll. Återgivningsfunktionen HTML används inte. Det innehåller bara fältet HTML.
 
 När du inkluderar flera erbjudandeplatser i en och samma e-postleverans och om vissa av dem har återgivningsfunktioner och andra inte har det, måste du komma ihåg vilka erbjudanden som innehåller blanksteg och vilka som erbjuder återgivningsfunktioner.
 
-För att undvika eventuella problem rekommenderar vi att alla erbjudanden har en definierad HTML-återgivningsfunktion, även om utrymmet bara kräver HTML-innehåll.
+För att undvika eventuella problem rekommenderar vi att alla erbjudandeutrymmen har en HTML-återgivningsfunktion definierad, även om ditt erbjudandeutrymme endast kräver HTML.
 
 ### Ställa in rangordningen i förslagsloggtabellen {#rank-proposition-log-table}
 
@@ -123,7 +123,7 @@ När du använder Interaction och väljer erbjudanden manuellt kan användaren k
 ### Utöka nms:offer-schemat {#extending-nms-offer-schema}
 
 När du utökar schemat nms:offer måste du följa den färdiga strukturen som redan är konfigurerad:
-* Definiera alla nya fält för innehållslagring under `<element name="view">`.
+* Definiera nya fält för innehållslagring under `<element name="view">`.
 * Varje nytt fält måste definieras två gånger. En gång som ett vanligt XML-fält och en gång som ett CDATA XML-fält med &quot;_jst&quot; som tillägg till namnet. Exempel:
 
    ```

@@ -16,9 +16,9 @@ ht-degree: 12%
 
 Infrastruktur och inställningar bör uppdateras regelbundet med de senaste byggnaderna och produktkorrigeringarna. Dessa korrigeringar är nödvändiga för att säkerställa kontinuitet i service och säkerhet. Dessutom måste man uppgradera för att anpassa sig till ändringar från tredje part.
 
-Som **värd- eller Managed Services-kund** informerar Adobe dig om att du bygger uppgraderingar med regelbundna intervall. Du måste uppgradera i enlighet med rekommendationerna för att säkerställa regelefterlevnaden.
+Som **Hosted or Managed Services customer** kommer Adobe att informera dig om att bygga uppgraderingar med jämna mellanrum. Du måste uppgradera i enlighet med rekommendationerna för att säkerställa regelefterlevnaden.
 
-Som **lokal- eller hybridkund** bör du uppgradera implementeringen med regelbundna intervall i enlighet med de senaste versionerna.
+Som en **Lokal kund eller hybridkund** bör du uppgradera implementeringen med jämna mellanrum enligt de senaste versionerna.
 
 Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Förutom de vanliga uppgraderingsstegen måste du utföra några manuella uppgifter för att säkerställa att din miljö är säker och redo för kommande ändringar från Adobe eller tredjepartssystem.
 
@@ -55,11 +55,11 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 >[!CAUTION]
 >
->Om du inte kan uppgradera inom den rekommenderade tidsramen, **bör du kontakta Adobe kundtjänstteam för att göra en kortsiktig manuell säkerhetskorrigering för dina instanser**.
+>Om du inte kan uppgradera inom den rekommenderade tidsramen **kontakta kundtjänst på Adobe för att göra en kortsiktig manuell säkerhetskorrigering**.
 
 ## Campaign Classic Client Console - uppdatering  {#acc-cc-updates}
 
-**Nu tillgängliga**-konsolversionerna nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
+The **nu tillgänglig** Konsolversioner nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
 * Senaste Gold Standard 11 build 9032@10c2709. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--20-1.md)
@@ -68,13 +68,13 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
-Adobe Identity Service (IMS) kommer inte längre att ha stöd för gamla Internet Explorer-versioner från och med den 30 juni 2021 **.** [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+IMS-tjänsten (Adobe Identity Service) har inte längre stöd för äldre Internet Explorer-versioner från **30 juni 2021**. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Det krävs en uppgradering av Campaign Client Console för att säkerställa kompatibilitet med Adobe IMS.
 
 **Påverkas du?**
 
-Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md) via Adobe Identity Management Service (IMS) är en uppgradering till en av de nya versionerna som listas nedan obligatorisk:
+Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md)via Adobe Identity Management Service (IMS) är uppgradering till en av de nya versionerna som listas nedan obligatorisk:
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
@@ -83,7 +83,7 @@ Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-ad
 * Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--19-2.md)
 * Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
 
-De här versionerna har ett nytt anslutningsprotokoll: måste uppgraderas för att både Campaign-servern och Client Console ska kunna ansluta till Campaign efter den 30 juni 2021 **.**
+De här versionerna har ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och Client Console för att kunna ansluta till Campaign efter **30 juni 2021**.
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -91,21 +91,21 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen inom kort.
 
-Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna utnyttja den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
+Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna dra nytta av den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
 
 När alla instanser har uppgraderats måste även klientkonsolen uppgraderas till den här versionen.
 
-* Lär dig hur du får åtkomst till [Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+* Lär dig hur du får åtkomst [Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 * [Lär dig hur du installerar Campaign Client Console](../../installation/using/installing-the-client-console.md).
 
 ## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Det gamla autentiseringsläget Autentisering med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den **september 2021**. Värdmiljöer drar nytta av ett tillägg till och med den **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 **Påverkas du?**
 
-Om dina instanser körs på en **äldre version än Campaign 19.1.8, 20.2.4, Gold Standard 11** använder du en äldre version av Triggers-integrering via Autentisering: **du måste uppgradera till en nyare version och gå till Adobe I/O**.
+Om dina instanser körs på en **äldre version än Campaign 19.1.8, 20.2.4, Gold Standard 11** använder du en äldre version av integreringen av utlösare via autentisering: **du behöver uppgradera till en nyare version och gå över till Adobe I/O**.
 
 Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
@@ -118,7 +118,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 **Hur uppdaterar jag?**
 
-När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren för att gå över till det nya autentiseringsläget](../../integrations/using/configuring-adobe-io.md). Detta kräver att du skapar den nya Adobe I/O-token och använder den i implementeringen.  
+När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren flyttas till det nya autentiseringsläget](../../integrations/using/configuring-adobe-io.md). Detta kräver att du skapar den nya Adobe I/O-token och använder den i implementeringen.  
 
 För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurerad på en instans av mellanleverantörer. [Läs mer](../../integrations/using/configuring-pipeline.md).
 
@@ -132,7 +132,7 @@ Sedan **31 mars 2021** stöder inte längre Apple Push Notification-tjänsten (A
 
 **Påverkas du?**
 
-Om dina instanser körs på en **äldre version än Campaign 21.1,** och du skickar push-meddelanden med det äldre binära Apple-protokollet, måste du uppdatera till det HTTP/2-baserade API:t för APN-providern.
+Om dina instanser körs på en **äldre version än Campaign 21.1,** och du skickar push-meddelanden med det gamla binära Apple-protokollet måste du uppdatera till HTTP/2-baserade API:er för APN:er-providern.
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -144,9 +144,9 @@ Som lokal/hybridkund måste du uppdatera din konfiguration. [Lär dig hur du mig
 
 ### Uppdateringar av APN:s rotcertifikat
 
-Den 29 mars 2021 påverkade en infrastrukturuppdatering för Apple Push Notification service (APNs) Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatorisk** för att undvika avbrott i push-kanalen i iOS.
+Den 29 mars 2021 påverkade en infrastrukturuppdatering för Apple Push Notification service (APNs) Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatoriskt** för att undvika avbrott i iOS-kanaler.
 
-Läs mer om ändringar av APN:er [på den här sidan](https://developer.apple.com/news/?id=7gx0a2lp).
+Läs mer om ändringar i APN:er [på den här sidan](https://developer.apple.com/news/?id=7gx0a2lp).
 
 **Påverkas du?**
 
@@ -156,7 +156,7 @@ Om du använder Campaign för att skicka push-meddelanden på iOS-enheter påver
 
 Som värdkund behövs ingen åtgärd: Adobe har redan införlivat det nya rotcertifikatet i din miljö.
 
-Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa en sömlös övergång **före den 29 mars 2021**.
+Som lokal/hybridkund måste du uppdatera din konfiguration för att säkerställa en smidig övergång **före den 29 mars 2021**.
 
 [Lär dig hur du infogar det nya certifikatet](ios-certificate-update.md).
 

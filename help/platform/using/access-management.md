@@ -29,13 +29,13 @@ De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutning
 
 Det finns två typer av behörigheter som du kan ge en användare:
 
-* Du kan definiera grupper av operatorer som du tilldelar rättigheter till och sedan associera operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra användarprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler. Skapa och hantera grupper beskrivs i [det här avsnittet](access-management-groups.md).
+* Du kan definiera grupper av operatorer som du tilldelar rättigheter till och sedan associera operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra användarprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler. Framtagning och hantering av grupper presenteras i [det här avsnittet](access-management-groups.md).
 
 * Du kan tilldela namngivna rättigheter direkt till användare, i vissa fall för att överlagra rättigheterna som tilldelats via grupper. Dessa rättigheter presenteras i [den här sidan](access-management-named-rights.md).
 
 >[!NOTE]
 >
->Innan du börjar definiera behörigheter rekommenderar Adobe att du läser [checklistan för säkerhetskonfiguration](https://helpx.adobe.com/se/campaign/kb/acc-security.html).
+>Innan du börjar definiera behörigheter rekommenderar Adobe att du läser [Checklista för säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).
 
 Lär dig hur du ger åtkomst och konfigurerar behörigheter i följande avsnitt:
 

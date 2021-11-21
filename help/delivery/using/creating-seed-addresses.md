@@ -19,16 +19,16 @@ ht-degree: 1%
 
 Seed-adresser hanteras inte via standardprofiler och -mål, utan i en dedikerad nod i Adobe Campaign-hierarkin **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på noden **[!UICONTROL Seed addresses]** och väljer **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** för att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. Mer information finns i [Definiera adresser](#defining-addresses).
+Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på **[!UICONTROL Seed addresses]** nod och markera **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. Mer information finns i [Definiera adresser](#defining-addresses).
 
-Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Se [Skapa dirigerade adressmallar](#creating-seed-address-templates).
+Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Se [Skapa mallar för dirigerade adresser](#creating-seed-address-templates).
 
 ## Definiera adresser {#defining-addresses}
 
 Följ stegen nedan för att skapa dirigerade adresser:
 
-1. Klicka på knappen **[!UICONTROL New]** ovanför listan med dirigerade adresser.
-1. Ange data som är länkade till adressen i matchande fält från fliken **[!UICONTROL Recipient]**. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabellen): namn, förnamn, e-postadress osv.
+1. Klicka på **[!UICONTROL New]** ovanför listan med dirigerade adresser.
+1. Ange data som är länkade till adressen i matchande fält från **[!UICONTROL Recipient]** -fliken. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabellen): namn, förnamn, e-postadress osv.
 
    >[!NOTE]
    >
@@ -38,13 +38,13 @@ Följ stegen nedan för att skapa dirigerade adresser:
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. På fliken **[!UICONTROL Seed fields]** anger du de värden som ska infogas i leveransloggarna under analysfasen (i tabellen **[!UICONTROL nms:broadLog]**).
+1. I **[!UICONTROL Seed fields]** anger du de värden som ska infogas i leveransloggarna under analysfasen (i dialogrutan **[!UICONTROL nms:broadLog]** tabell).
 
-1. På fliken **[!UICONTROL Additional data]** anger du de personaliseringsdata som används för leveranser som skapas i arbetsflödena för datahantering och som du vill tilldela ett specifikt värde till.
+1. I **[!UICONTROL Additional data]** Ange de personaliseringsdata som används för leveranser som skapas i arbetsflödena för datahantering och som du vill tilldela ett specifikt värde till.
 
    >[!NOTE]
    >
-   >Kontrollera att ytterligare måldata har definierats med ett alias som börjar med @ i aktiviteten **[!UICONTROL Enrichment]**. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
+   >Kontrollera att ytterligare måldata har definierats med ett alias som börjar med @ i **[!UICONTROL Enrichment]** aktivitet. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
 
 ## Skapa mallar för dirigerade adresser {#creating-seed-address-templates}
 
@@ -52,12 +52,12 @@ Om du vill skapa adressmallar som ska importeras och ändras för varje leverans
 
 Så här definierar du en mallmapp:
 
-1. Skapa en ny typmapp för **[!UICONTROL Seed addresses]**, högerklicka på mappen och välj **[!UICONTROL Properties...]**.
+1. Skapa ett nytt **[!UICONTROL Seed addresses]** typmapp, högerklicka på mappen och välj **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_seedlist_template_folder.png)
 
-1. Klicka på fliken **[!UICONTROL Restriction]** och lägg till följande filtervillkor: **@isModel = true**.
+1. Klicka på **[!UICONTROL Restriction]** och lägga till följande filtervillkor: **@isModel = true**.
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Adresser som lagras i den här mappen kan nu användas som adressmallar. Du kan importera dem till leveranser eller kampanjer och anpassa dem baserat på specifika behov för de aktuella leveranserna och kampanjerna (se [Lägga till dirigerade adresser](adding-seed-addresses.md)).
+   Adresser som lagras i den här mappen kan nu användas som adressmallar. Du kan importera dem till leveranser eller kampanjer och anpassa dem baserat på de specifika behoven för aktuella leveranser och kampanjer (se [Lägga till dirigerade adresser](adding-seed-addresses.md)).

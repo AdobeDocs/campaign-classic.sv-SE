@@ -19,19 +19,19 @@ ht-degree: 1%
 
 För det första, så att användaren kan utföra åtgärder på en extern databas via FDA, måste den senare ha en specifik namngiven behörighet i Adobe Campaign.
 
-1. Markera noden **[!UICONTROL Administration > Access Management > Named Rights]** i Adobe Campaign Utforskaren.
+1. Välj **[!UICONTROL Administration > Access Management > Named Rights]** i Adobe Campaign Explorer.
 1. Skapa en ny rättighet genom att ange den valda etiketten.
-1. Fältet **[!UICONTROL Name]** måste ha följande format **användare:base@server**, där :
+1. The **[!UICONTROL Name]** fältet måste ha följande format **användare:base@server**, där
 
-   * **** motsvarar namnet på användaren i den externa databasen.
-   * **basecorresponds** med namnet på den externa databasen.
-   * **** servermotsvarar namnet på den externa databasservern.
+   * **användare** motsvarar namnet på användaren i den externa databasen.
+   * **bas** motsvarar namnet på den externa databasen.
+   * **server** motsvarar namnet på den externa databasservern.
 
       >[!NOTE]
       >
-      >Delen **:base** är valfri i Oraclet.
+      >The **:base** -delen är valfri i Oraclet.
 
-1. Spara den namngivna höger och länka den sedan till den valda användaren från noden **[!UICONTROL Administration > Access Management > Operators]** i Adobe Campaign Explorer.
+1. Spara den namngivna höger och länka den till den valda användaren från **[!UICONTROL Administration > Access Management > Operators]** noden i Adobe Campaign Explorer.
 
 Om du sedan vill bearbeta data i en extern databas måste Adobe Campaign-användaren ha minst skrivbehörighet för databasen för att kunna skapa arbetstabeller. Dessa tas bort automatiskt av Adobe Campaign.
 
@@ -41,9 +41,9 @@ I allmänhet är följande rättigheter nödvändiga:
 * **LÄS data**: skrivskyddad åtkomst till tabeller som innehåller kunddata,
 * **LÄS &#39;MetaData&#39;**: åtkomst till serverns datakataloger för att få fram tabellstrukturen,
 * **LADDA**: massinläsning i arbetstabeller (krävs vid arbete med samlingar och kopplingar),
-* **CREATE/** DROP **for TABLE/INDEX/PROCEDURE/FUNCTION** (endast för arbetstabeller som genererats av Adobe Campaign),
-* **EXPLAIN**  (rekommenderas): för övervakning av prestanda vid problem,
-* **SKRIV data**  (beroende på integrationsscenariot).
+* **SKAPA/SLÄPP** for **TABELL/INDEX/FÖRFARANDE/FUNKTION** (endast för arbetsblad som genererats av Adobe Campaign),
+* **FÖRKLARA** (rekommenderas): för övervakning av prestanda vid problem,
+* **SKRIV data** (beroende på integrationsscenariot).
 
 Databasadministratören måste se till att dessa rättigheter matchar de rättigheter som är specifika för varje databasmotor. Mer information finns i avsnittet nedan.
 
@@ -61,7 +61,7 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Skriver data** | INSERT- och/eller UPDATE-behörigheter (beroende på skrivåtgärd) | INSERT- och UPDATE-behörigheter | INFOGA OCH UPPDATERA ELLER INFOGA OCH UPPDATERA VALFRITT TABELLBEHÖRIGHET | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
 | **Läsa in data i tabeller** | SKAPA SCENEN I SCHEMA, MARKERA OCH INFOGA i målregisterprivilegier | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER | INFOGA, ADMINISTRERA BULK-ÅTGÄRDER OCH ALTER TABLE-behörigheter | VÄLJ OCH INFOGA BEHÖRIGHETER | FILE-privilegium |
 | **Åtkomst till klientdata** | VÄLJ BEHÖRIGHET FÖR (FRAMTIDA) TABELL(ER) ELLER VY(ER) | VÄLJ privilegium | VÄLJ ELLER VÄLJ ETT TABELLprivilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
-| **Åtkomst till metadata** | VÄLJ BEHÖRIGHET FÖR INFORMATION_SCHEMA SCHEMA | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA DEFINITIONSTILLSTÅND | Det krävs inget privilegium för att använda kommandot &quot;\d table&quot; | VÄLJ privilegium |
+| **Åtkomst till metadata** | VÄLJ BEHÖRIGHET FÖR INFORMATION_SCHEMA SCHEMA | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA DEFINITIONSTILLSTÅND | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | VÄLJ privilegium |
 
 |   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -75,4 +75,4 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Skriver data** | INFOGA- och UPPDATERINGSbehörigheter eller DATAACCESS-utfärdare | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
 | **Läsa in data i tabeller** | BELASTNINGSTILLSTÅND | SELECT- och INSERT-behörighet för att använda COPY TO- respektive COPY FROM-satser | FILE-privilegium | Var ägare av tabellen eller behörigheten ALTER. Beroende på alternativet -gl kan LOAD TABLE bara utföras om användaren har DBA-behörighet | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER |
 | **Åtkomst till klientdata** | INSERT/UPDATE-behörighet eller DATAACCESS-utfärdare | VÄLJ privilegium | VÄLJ privilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
-| **Åtkomst till metadata** | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | Det krävs inget privilegium för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |
+| **Åtkomst till metadata** | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |

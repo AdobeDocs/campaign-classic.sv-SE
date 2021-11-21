@@ -5,7 +5,8 @@ description: Lär dig hur du konfigurerar URL-behörigheter
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 29%
@@ -22,18 +23,18 @@ Som standard tillåts instanser endast att ansluta till interna URL:er. Det är 
 
 >[!NOTE]
 >
->Den här proceduren är begränsad till **lokala**-distributioner.
+>Den här proceduren är begränsad till **lokal** distributioner.
 >
->Om du är **värd**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
+>Som **värdbaserad** -kund, om du har åtkomst [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 >
->Andra **hybrid-/hosted**-kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
+>Övriga **hybrid/värd** Kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
 
-För **hybriddistributioner** och **lokala distributioner** måste administratören referera till en ny **urlPermission** i filen **serverConf.xml**.
+För **Hybrid** och **Lokalt** distributioner måste administratören referera till en ny **urlPermission** i **serverConf.xml** -fil.
 
 
 Tre lägen för anslutningsskydd är tillgängliga:
 
-* **Blockering**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Blockera**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
 * **Tillstånd**: Alla URL:er som inte tillhör tillåtelselista tillåts.
 * **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken skickar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
@@ -47,9 +48,9 @@ Tre lägen för anslutningsskydd är tillgängliga:
 
 >[!IMPORTANT]
 >
->Som standard används läget **Blockera** för nya implementeringar.
+>Som standard används **Blockera** läge.
 >
->Om en befintlig kund kommer från en migrering kan du tillfälligt använda läget **Varning**. Analysera utgående trafik innan URL-adresserna tillåts. När listan över tillåtna URL:er har definierats kan du lägga till URL:er till tillåtelselista och aktivera läget **Blockera**.
+>Som befintlig kund som kommer från en migrering kan du tillfälligt använda **Varning** läge. Analysera utgående trafik innan URL-adresserna tillåts. När listan över tillåtna URL:er har definierats kan du lägga till URL:er till tillåtelselista och aktivera **Blockera** läge.
 
 Mer information finns i följande avsnitt:
 

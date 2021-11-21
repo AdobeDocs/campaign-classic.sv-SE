@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Med kopplingar i interaktion kan du ändra **standardmotorbeteendet**.
+Med krokar i interaktion kan du ändra **standardmotorbeteende**.
 
-Hakarna **[!UICONTROL Target loading]** och **[!UICONTROL Proposition post-processing]** är konfigurerade i Adobe Campaign i erbjudandeutrymmet:
+The **[!UICONTROL Target loading]** och **[!UICONTROL Proposition post-processing]** Hokar konfigureras i Adobe Campaign i erbjudandeutrymmet:
 
 ![](assets/interaction_hooks_1.png)
 
-Haken **[!UICONTROL Dynamic offer]** är konfigurerad med erbjudandevikten i Adobe Campaign:
+The **[!UICONTROL Dynamic offer]** kroken är konfigurerad med erbjudandevikten i Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
@@ -46,7 +46,7 @@ Data som samlas in måste infogas i anropsdatanoden (interaktionsnod). Integrato
 
 >[!NOTE]
 >
->Parametern **xmlInteraction** innehåller både anropsdata och profilen för kontakten som lästes in av frågan som inte finns i kartongen.
+>The **xmlInteraction** -parametern innehåller både anropsdata och profilen för kontakten som lästes in av frågan.
 
 **Exempel:**
 
@@ -119,7 +119,7 @@ return aReturnedProps;
 
 Med den här funktionen kan du ringa ett samtal till en extern motor för att välja en lista över produkter som är kopplade till ett erbjudande. Det konfigureras i erbjudandet efter berättiganderegler och före typologiregelprogrammet.
 
-I förväg ska integratören utöka schemat **PropositionRcp** med ytterligare information om produkten. För att ange var dessa data ska lagras finns en **[!UICONTROL Proposition being processed]**-länk på fliken **[!UICONTROL Storage]** i utrymmet
+I förväg ska integratören utöka förslagen **PropositionRcp** med ytterligare information om produkten. Om du vill ange var dessa data ska lagras kan du **[!UICONTROL Proposition being processed]** länken är tillgänglig i **[!UICONTROL Storage]** -flik i utrymmet
 
 ![](assets/interaction_hooks_3.png)
 

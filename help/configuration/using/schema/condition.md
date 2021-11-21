@@ -41,13 +41,13 @@ Med det här elementet kan du definiera ett filtervillkor.
 
 ## Användning och användningssammanhang {#use-and-context-of-use-2}
 
-Ett `<sysfiler>`-element kan innehålla flera filtervillkor.
+Ett `<sysfiler>`  -element kan innehålla flera filtervillkor.
 
 ## Attributbeskrivning {#attribute-description-2}
 
-* **boolOperator (sträng)**: om flera  `<conditions>` är definierade inom samma   `<sysfilter>` element kan du kombinera dem med det här attributet. Som standard är den logiska länken mellan `<condition>`-element&quot;AND&quot;. Med attributet @boolOperator kan du kombinera länkarna OR och AND.
-* **enabledIf (string)**: aktiveringstest.
-* **expr (string)**: ett XTK-uttryck.
+* **boolOperator (sträng)**: om flera `<conditions>` definieras inom samma  `<sysfilter>` kan du kombinera dem med det här attributet. Som standard är den logiska länken mellan `<condition>` är &quot;AND&quot;. Med attributet @boolOperator kan du kombinera länkarna OR och AND.
+* **enabledIf (sträng)**: aktiveringstest.
+* **expr (sträng)**: ett XTK-uttryck.
 
 ## Exempel {#examples-2}
 

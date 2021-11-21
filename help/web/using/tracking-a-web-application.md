@@ -38,7 +38,7 @@ De viktigaste förbättringarna i den här versionen är följande:
    * **Studsfrekvens**: antal personer som endast visade det första steget
    * **Konverteringstratt**: förlustnivå mellan varje steg.
 
-   Dessutom visar ett **sektordiagram** populationen utifrån dess källa.
+   Dessutom har **Sektor** typdiagram visar populationen utifrån dess källa.
 
 ## Identifiera trafikkällan {#identifying-the-traffic-source}
 
@@ -61,7 +61,7 @@ För att identifiera trafikkällan i ett webbprogram söker Adobe Campaign efter
 
 ## Webbprogram utformade med DCE (Digital Content Editor) {#web-applications-designed-with-digital-content-editor--dce-}
 
-När ett webbprogram skapas med HTML-redigeraren - **Digital Content Editor (DCE)** - infogas spårningstaggar från fliken **[!UICONTROL Properties]** i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](about-campaign-html-editor.md).
+När ett webbprogram skapas med HTML-innehållsredigeraren - **Digital Content Editor (DCE)** - spårningstaggar infogas från **[!UICONTROL Properties]** -fliken i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -69,6 +69,6 @@ När du använder webbgränssnittet måste spårningstaggar infogas från sidege
 
 ![](assets/trackers_3.png)
 
-Med ikonen **[!UICONTROL Display blocks]** kan du visa antalet spårningstaggar som har definierats för sidan.
+The **[!UICONTROL Display blocks]** Med -ikonen kan du visa antalet spårningstaggar som har definierats för sidan.
 
 ![](assets/trackers_4.png)

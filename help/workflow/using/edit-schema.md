@@ -17,13 +17,13 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Data kan omformas, normaliseras och, om det behövs, berikas i arbetsflödet med hjälp av aktiviteten **[!UICONTROL Edit schema]**. Det används vanligtvis för att normalisera datastrukturen: Du kan byta namn på utdatakolumnerna eller ändra deras innehåll genom att till exempel beräkna medelvärdena för ett fält eller en mängd.
+Data kan omformas, normaliseras och vid behov berikas i arbetsflödet med **[!UICONTROL Edit schema]** aktivitet. Det används vanligtvis för att normalisera datastrukturen: Du kan byta namn på utdatakolumnerna eller ändra deras innehåll genom att till exempel beräkna medelvärdena för ett fält eller en mängd.
 
 Den här aktiviteten ändrar inte data i arbetstabellen, utan ändrar bara dess schema, dvs. den logiska vyn av data.
 
 ![](assets/wf_manipulation_box.png)
 
-Du kan också skapa kopplingar med andra arbetstabeller via fliken **[!UICONTROL Links]**.
+Du kan också skapa kopplingar med andra arbetstabeller via **[!UICONTROL Links]** -fliken.
 
 ![](assets/wf_manipulation_box_link_tab.png)
 

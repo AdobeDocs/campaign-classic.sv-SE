@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Inbyggda objekt bör övervakas och det är viktigt att förhindra att de växer för mycket.
+Built-in objects should be monitored and preventing them from growing too much is important.
 
-## Sekvens med ID:n {#sequence-of-ids}
+## Sequence of IDs {#sequence-of-ids}
 
 Adobe Campaign använder en ID-sekvens som måste användas i enlighet med detta: **xtkNewId**. Om sekvensen konsumeras mycket snabbt (t.ex. från 100 000 per dag) måste du kontrollera att den överensstämmer med dina affärskrav, t.ex. skicka miljontals e-postmeddelanden per dag. Det går att definiera en dedikerad sekvens för särskilda tabeller. Du kan konfigurera ett arbetsflöde för att övervaka ID-användningen.
 
 När sekvensen når över 2 miljarder (2 147 483 648 är det exakta talet) återgår den till noll. Det måste undvikas och skapar problem, och därför måste den här sekvensen övervakas.
 
-Du kan förhindra detta med stora tabeller genom att använda en viss sekvens. Detta kan göras med attributet **pkSequence** i schemat.
+Du kan förhindra detta med stora tabeller genom att använda en viss sekvens. Detta kan du göra med **pkSequence** i schemat.
 
 Högfrekventa arbetsflöden som skapar många loggar kommer att ta många ID:n i anspråk. Vi rekommenderar därför att du undviker alltför många loggar och höga frekvenser i arbetsflöden.
 
@@ -47,14 +47,14 @@ Leveranser som är äldre än två år ska rensas från instansen.
 
 Antalet filer på programserverdisken bör inte öka i oändlighet.
 
-Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standardaktiviteten [Filinsamlare](../../workflow/using/file-collector.md). Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
+Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standarden [Filinsamlare](../../workflow/using/file-collector.md) aktivitet. Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
 
-Om ett arbetsflöde importerar filer och inte använder standardfunktionerna måste det rensas för att diskutrymmet ska bli så litet som möjligt.
+If a workflow imports files and doesn&#39;t make use of the standard features, it needs to be purged in order to keep disk space to a minimum.
 
 ## Transaktionsdata och transaktionsloggar {#transactional-data-and-logs}
 
-Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek ökar.
+Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek växer.
 
-Kontrollera att arbetsflödena för rensning eller tömning körs och att posterna effektivt rensas. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+Kontrollera att arbetsflödena för att rensa eller rensa bort körs och att posterna rensas effektivt. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
 Håll utkik efter åldersfördelade transaktionsdata genom att kontrollera det äldsta skapandedatumet för posterna.

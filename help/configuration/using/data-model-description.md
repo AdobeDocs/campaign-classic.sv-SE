@@ -19,13 +19,13 @@ ht-degree: 1%
 
 Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i Adobe Campaign datamodell och hur de fungerar.
 
-Gå till **[!UICONTROL Admin > Configuration > Data schemas]**, markera en resurs i listan och klicka på fliken **[!UICONTROL Documentation]** om du vill få åtkomst till beskrivningen av varje tabell.
+Om du vill få åtkomst till beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, välj en resurs i listan och klicka på **[!UICONTROL Documentation]** -fliken.
 
 ![](assets/data-model_documentation-tab.png)
 
 >[!NOTE]
 >
->Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
+>Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Läs mer om Adobe Campaign scheman [det här avsnittet](../../configuration/using/about-schema-reference.md).
 
 ## Beskrivning av huvudtabellerna {#description-main-tables}
 
@@ -41,7 +41,7 @@ Den fördefinierade Adobe Campaign datamodellen innehåller huvudtabellerna som 
 
 ### NmsRecipient {#NmsRecipient}
 
-Tabellen matchar schemat **nms:receive**.
+Tabellen matchar **nms:mottagare** schema.
 
 Det är standardtabellen som används för **mottagare av leveranser**. Den innehåller därför den information som krävs för leveranser via de olika kanalerna:
 
@@ -59,9 +59,9 @@ Mer information om mottagartabellen finns i [det här avsnittet](../../configura
 
 ### NmsGroup {#NmsGroup}
 
-Tabellen matchar schemat **nms:group**.
+Tabellen matchar **nms:grupp** schema.
 
-Det gör att du kan skapa **statiska grupper med mottagare**. Det finns en många-till-många-relation mellan mottagare och grupper. En mottagare kan till exempel tillhöra flera grupper och en grupp kan innehålla flera mottagare. Grupper kan skapas manuellt, via en import eller via leveransanpassning. Grupper används ofta som leveransmål. Det finns ett unikt index i fältet som representerar det interna namnet för sName-gruppen. Gruppen är länkad till en mapp (nyckeln är iFolderId). Mer information finns i [XtkFolder](#XtkFolder)).
+Du kan skapa **statiska grupper av mottagare**. Det finns en många-till-många-relation mellan mottagare och grupper. En mottagare kan till exempel tillhöra flera grupper och en grupp kan innehålla flera mottagare. Grupper kan skapas manuellt, via en import eller via leveransanpassning. Grupper används ofta som leveransmål. Det finns ett unikt index i fältet som representerar det interna namnet för sName-gruppen. Gruppen är länkad till en mapp (nyckeln är iFolderId). Mer information finns i [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -69,7 +69,7 @@ Relationstabellen NmsRcpGrpRel innehåller bara de två fälten som motsvarar id
 
 ### NmsService {#NmsService}
 
-Tabellen matchar schemat **nms:service**.
+Tabellen matchar **nms:service** schema.
 
 I Adobe Campaign kan du skapa och hantera prenumerationer på informationstjänster (ämnen). Registret NmsService lagrar definitionen av de informationstjänster (ämnen) som du erbjuder dina mottagare att prenumerera på (till exempel ett nyhetsbrev).
 
@@ -79,19 +79,19 @@ Det finns ett unikt index i fältet som representerar det interna namnet för sN
 
 ### NmsSubscription {#NmsSubscription}
 
-Tabellen matchar schemat **nms:subscription**.
+Tabellen matchar **nms:prenumeration** schema.
 
 Det gör att du kan hantera mottagarnas prenumerationer på informationstjänster.
 
 ### NmsSubHisto {#NmsSubHisto}
 
-Tabellen matchar schemat **nms:subHistory**.
+Tabellen matchar **nms:subHistory** schema.
 
 Om prenumerationerna hanteras med webbformulär eller programmets gränssnitt, kommer alla prenumerationer och avbeställningar att sparas i NmsSubHistory-tabellen. I iAction-fältet anges den åtgärd (0 för prenumeration och 1 för prenumeration) som utfördes på det datum som lagras i fältet tsDate.
 
 ### NmsDelivery {#NmsDelivery}
 
-Tabellen matchar schemat **nms:delivery**.
+Tabellen matchar **nms:leverans** schema.
 
 Varje post i den här tabellen representerar en **leveransåtgärd** eller en **leveransmall**. Den innehåller alla parametrar som krävs för att utföra leveranser (mål, innehåll osv.). Leveransloggar (utsändning) (NmsBroadLog) och tillhörande spårnings-URL:er (NmsTrackingUrl) skapas under analysfasen (mer information om båda tabellerna finns nedan).
 
@@ -99,7 +99,7 @@ Det finns ett unikt index i fältet som representerar det interna namnet för sI
 
 ### XtkFolder {#XtkFolder}
 
-Den innehåller **alla mappar i trädet** som visas på fliken **Navigering** i konsolen.
+Innehåller **alla mappar i trädet** visas i **Navigering** -fliken i konsolen.
 
 Mapparna skrivs: värdet för sModel-fältet anger vilken typ av data som kan finnas i mappen. I det här fältet kan klientkonsolen visa data korrekt med motsvarande formulär. Möjliga värden för det här fältet definieras i navTree.
 
@@ -107,49 +107,49 @@ Trädet hanteras av fälten iParentId och iChildCount. Fältet sFullName ger den
 
 ## Leverans och spårning {#delivery-and-tracking}
 
-Den här tabelluppsättningen är länkad till modulen **Delivery**, som används för att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information finns i [Övervaka leveranser](../../delivery/using/about-delivery-monitoring.md). Mer information om spårning finns i [Spåra meddelanden](../../delivery/using/about-message-tracking.md).
+Den här tabelluppsättningen är länkad till **Leverans** som gör det möjligt att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information finns i [Övervaka leveranser](../../delivery/using/about-delivery-monitoring.md). Mer information om spårning finns i [Spåra meddelanden](../../delivery/using/about-message-tracking.md).
 
 ![](assets/data-model_delivery.png)
 
-**NmsBroadLogMsg**: Tabellen matchar  **nms:** broadLogMsgschema. Det är ett tillägg till leveransloggtabellen.
+**NmsBroadLogMsg**: Tabellen matchar **nms:broadLogMsg** schema. Det är ett tillägg till leveransloggtabellen.
 
 ## Kampanjhantering {#campaign-management}
 
-Den här tabelluppsättningen är länkad till **modulen marknadsföringskampanjer**, som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [Om marknadsföringskampanjer](../../campaign/using/designing-marketing-campaigns.md).
+Den här tabelluppsättningen är länkad till **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [Om marknadsföringskampanjer](../../campaign/using/designing-marketing-campaigns.md).
 
 ![](assets/data-model_campaign.png)
 
-* **NmsOperation**: Den här tabellen matchar  **nms:** operationSchema. Det innehåller data från marknadsföringskampanjer.
-* **NmsDeliveryOutline**: Tabellen matchar  **nms:** deliveryOutlineschema. Den innehåller de utökade egenskaperna för leveransen (leveransdisposition).
-* **NmsDlvOutlineItem**: Den här tabellen matchar schemat  **nms:** dlvOutlineItem. Den innehåller artiklarna i en leveransdisposition.
-* **NmsDeliveryCustomization**: Tabellen matchar  **nms:** deliveryCustomizationSchema. Det innehåller personaliseringsfälten för en leverans.
-* **NmsBudget**: Tabellen matchar  **nms:** budgetschema. Den innehåller data från en budget för en kampanj, en plan, ett program, en aktivitet och/eller leveranser.
-* **NmsDocument**: Tabellen matchar  **nms:** documents-schemat. Det innehåller kampanjens marknadsföringsdokument i form av filer (bilder, Excel- eller ordfiler etc.)
-* **XtkWorkflow**: Tabellen matchar  **xtk:** workflow-schemat. Det innehåller kampanjinriktning.
-* **NmsTask**: Tabellen matchar  **nms:** taskschema. Den innehåller definitionen av en marknadsföringsuppgift.
-* **NmsAsset**: Tabellen matchar  **nms:** assetschema. Den innehåller definitionen av en marknadsföringsresurs.
+* **NmsOperation**: Tabellen matchar **nms:operation** schema. Det innehåller data från marknadsföringskampanjer.
+* **NmsDeliveryOutline**: Tabellen matchar **nms:deliveryOutline** schema. Den innehåller de utökade egenskaperna för leveransen (leveransdisposition).
+* **NmsDlvOutlineItem**: Tabellen matchar **nms:dlvOutlineItem** schema. Den innehåller artiklarna i en leveransdisposition.
+* **NmsDeliveryCustomization**: Tabellen matchar **nms:deliveryCustomization** schema. Det innehåller personaliseringsfälten för en leverans.
+* **NmsBudget**: Tabellen matchar **nms:budget** schema. Den innehåller data från en budget för en kampanj, en plan, ett program, en aktivitet och/eller leveranser.
+* **NmsDocument**: Tabellen matchar **nms:dokument** schema. Det innehåller kampanjens marknadsföringsdokument i form av filer (bilder, Excel- eller ordfiler etc.)
+* **XtkWorkflow**: Tabellen matchar **xtk:arbetsflöde** schema. Det innehåller kampanjinriktning.
+* **NmsTask**: Tabellen matchar **nms:aktivitet** schema. Den innehåller definitionen av en marknadsföringsuppgift.
+* **NmsAsset**: Tabellen matchar **nms:resurs** schema. Den innehåller definitionen av en marknadsföringsresurs.
 
 ## Enhetlig kommunikation {#communication-consistency}
 
-Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Mer information finns i [Om kampanjtyper](../../campaign-opt/using/about-campaign-typologies.md).
+Den här tabelluppsättningen är länkad till **Kampanjoptimering** -modul som gör det möjligt att kontrollera, filtrera och övervaka leveransen. Mer information finns i [Om kampanjtypologier](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
-* **NmsTypologyRule**: Tabellen matchar  **nms:** typologyRuleschema. Det innehåller de regler som gäller för leveranser beroende på typologi.
-* **NmsTypology**: Tabellen matchar  **nms:** typologyschema. Den innehåller den uppsättning regler som ska tillämpas på leveranser som matchar typologin.
-* **NmsTypologyRuleRel**: Den här tabellen matchar  **nms:** typologyRuleRelschema. Det innehåller relationerna mellan typologier och deras regler.
-* **NmsVolumeLine**: Tabellen matchar  **nms:** volumeLineschema. Den innehåller en uppsättning tillgänglighetslinjer för kapacitetsreglerna.
-* **NmsVolumeCONSmed**: Den här tabellen matchar schemat  **nms:** volumeConsulmediated. Den innehåller alla förbrukningslinjer för kapacitetsreglerna.
+* **NmsTypologyRule**: Tabellen matchar **nms:typologyRule** schema. Det innehåller de regler som gäller för leveranser beroende på typologi.
+* **NmsTypology**: Tabellen matchar **nms:typologi** schema. Den innehåller den uppsättning regler som ska tillämpas på leveranser som matchar typologin.
+* **NmsTypologyRuleRel**: Tabellen matchar **nms:typologyRuleRel** schema. Det innehåller relationerna mellan typologier och deras regler.
+* **NmsVolumeLine**: Tabellen matchar **nms:volumeLine** schema. Den innehåller en uppsättning tillgänglighetslinjer för kapacitetsreglerna.
+* **NmsVolumeCONSmed**: Tabellen matchar **nms:volumeCONSmed** schema. Den innehåller alla förbrukningslinjer för kapacitetsreglerna.
 
 ## Svarshantering {#response-management}
 
-Den här tabelluppsättningen är kopplad till **Response Manager**-modulen som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda förslag för alla kommunikationskanaler. Mer information finns i [Om svarshanteraren](../../response/using/about-response-manager.md).
+Den här tabelluppsättningen är länkad till **Svarshanteraren** som gör det möjligt att mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda förslag för alla kommunikationskanaler. Mer information finns i [Om svarshanteraren](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
 ### NmsRemaHypothesis {#NmsRemaHypothesis}
 
-Den här tabellen sammanfaller med schemat **nms:remaHypothesis**. Den innehåller definitionen av mäthypotesen.
+Tabellen sammanfaller med **nms:remaHypothesis** schema. Den innehåller definitionen av mäthypotesen.
 
 Tabellen innehåller viktig information som lagras i XML, bland annat:
 
@@ -176,13 +176,13 @@ Skriptet för hypotesöverlagring är en JavaScript-kod som gör att du kan öve
 Följande indikatorer uppdateras automatiskt under hypoteskörningen:
 
 * Antal reaktioner: **iTransaction**. Antal rader i reaktionsloggtabellen.
-* Antal kontaktade: **iContactReactions**. Distinkt antal målkontakter i hypotesen.
-* Antal kontrollgrupper: **iProofReactions**. Distinkt antal riktade kontakter i kontrollgruppen i hypotesen.
+* Antal kontaktade: **iContactReached**. Distinkt antal målkontakter i hypotesen.
+* Antal kontrollgrupper: **iProofReached**. Distinkt antal riktade kontakter i kontrollgruppen i hypotesen.
 * Kontaktad svarsfrekvens: **dContactReactRate**. Svarsfrekvens för målkontakter i hypotesen.
-* Kontrollgruppens svarsfrekvens: **dProofReactionsRate**. Svarsfrekvens för den hypotetiska kontrollgruppen.
+* Kontrollgruppens svarsfrekvens: **dProofReactingRate**. Svarsfrekvens för kontrollgruppen för hypoteser.
 * De totala intäkterna för den befolkningsgrupp som kontaktas: **dContactReactingTotalAmount**. Sammanlagda intäkter från målkontakter i hypotesen.
 * Genomsnittlig intäkt för kontrollgruppen: **dContactReactingAvgAmount**. Genomsnittlig intäkt för målgruppskontakter i hypotesen.
-* Total intäkt för kontrollgruppen: **dProofReactingTotalAmount**. Sammanlagda intäkter för kontrollgruppen för hypoteser.
+* Total intäkt för kontrollgruppen: **dProofReachedTotalAmount**. Sammanlagda intäkter för kontrollgruppen för hypoteser.
 * Genomsnittlig intäkt för kontrollgruppen: **dProofReactingAvgAmount**. Genomsnittlig intäkt för kontrollgruppen för hypoteser.
 * Total marginal per kontakt: **dContactReactingTotalMargin**. Total marginal per kontakt som anges i hypotesen.
 * Genomsnittlig marginal per kontakt: **dContactReactingAvgMargin**. Genomsnittlig marginal per kontakt som anges i hypotesen.
@@ -197,47 +197,47 @@ Följande indikatorer uppdateras automatiskt under hypoteskörningen:
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
-Tabellen matchar schemat **nms:remaMatchRcp**.
+Tabellen matchar **nms:remaMatchRcp** schema.
 
 Det innehåller ett register som representerar en individs reaktion på en given hypotes. Dessa poster skapades under hypoteskörningen.
 
 ## Simulering och leverans {#simulation-and-delivery}
 
-Den här tabelluppsättningen är länkad till modulen **Simulering**, som gör att du kan testa fördelningen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna. Mer information finns i [Om erbjudandesimulering](../../interaction/using/about-offers-simulation.md).
+Den här tabelluppsättningen är länkad till **Simulering** , som gör att du kan testa fördelningen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna. Mer information finns i [Om erbjudandesimulering](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
-* **NmsSimulation**: Tabellen matchar  **nms:** simulationschemat. Det representerar en simulering för en uppsättning leveranser eller erbjudanden för en viss population.
-* **NmsDlvSimulationRel**: Tabellen matchar  **nms:** dlvSimulationRelschema. Den innehåller en förteckning över leveranser som har beaktats vid simuleringen. Simuleringens omfång lagras i XML.
-* **NmsOfferSimulationRel**: Tabellen matchar  **nms:** offerSimulationRelschema. Du kan länka ihop en simulering med ett erbjudande.
+* **NmsSimulation**: Tabellen matchar **nms:simulering** schema. Det representerar en simulering för en uppsättning leveranser eller erbjudanden för en viss population.
+* **NmsDlvSimulationRel**: Tabellen matchar **nms:dlvSimulationRel** schema. Den innehåller en förteckning över leveranser som har beaktats vid simuleringen. Simuleringens omfång lagras i XML.
+* **NmsOfferSimulationRel**: Tabellen matchar **nms:offerSimulationRel** schema. Du kan länka ihop en simulering med ett erbjudande.
 
 ## Interaktionsmodul {#interaction-module}
 
-Den här tabelluppsättningen är länkad till modulen **Interaktion**, som gör att du kan svara i realtid under en interaktion med en viss kontakt genom att göra dem till ett eller flera anpassade erbjudanden. Mer information finns i [Hantering av interaktioner och erbjudanden](../../interaction/using/interaction-and-offer-management.md).
+Den här tabelluppsättningen är länkad till **Interaktion** som gör det möjligt att svara i realtid under en interaktion med en viss kontakt genom att göra dem till ett eller flera anpassade erbjudanden. Mer information finns i [Hantering av samverkan och erbjudanden](../../interaction/using/interaction-and-offer-management.md).
 
-* **NmsOffer**: Tabellen matchar  **nms:** offerschema. Det innehåller definitionen av varje marknadsföringserbjudande.
-* **NmsPropositionRcp**: Tabellen matchar  **nms:** propositionRcpschema. Det innehåller en flerkanalslogg över de marknadsföringsförslag som skickas till varje enskild person. Posten skapas när ett förslag förbereds eller görs på ett effektivt sätt till en individ.
-* **NmsOfferSpace**: Tabellen matchar  **nms:** offerSpaceschema. Den innehåller definitionen av platser där förslag läggs fram.
-* **NmsOfferContext**: Den här tabellen matchar  **nms:** offerContextSchema. Den innehåller ytterligare kriterier om förslagets tillämplighet samt definitionen av viktberäkningsformeln.
-* **NmsOfferView**: Tabellen matchar  **nms:offerView**. Det innehåller erbjudanderepresentationerna.
-* **NmsOfferCategory**: Tabellen matchar  **nms:offerCategory**. Den innehåller erbjudandekategorierna.
-* **NmsOfferEnv**: Tabellen matchar  **nms:offerEnv**. Den innehåller erbjudandemiljöerna.
+* **NmsOffer**: Tabellen matchar **nms:offer** schema. Det innehåller definitionen av varje marknadsföringserbjudande.
+* **NmsPropositionRcp**: Tabellen matchar **nms:propositionRcp** schema. Det innehåller en flerkanalslogg över de marknadsföringsförslag som skickas till varje enskild person. Posten skapas när ett förslag förbereds eller görs på ett effektivt sätt till en individ.
+* **NmsOfferSpace**: Tabellen matchar **nms:offerSpace** schema. Den innehåller definitionen av platser där förslag läggs fram.
+* **NmsOfferContext**: Tabellen matchar **nms:offerContext** schema. Den innehåller ytterligare kriterier om förslagets tillämplighet samt definitionen av viktberäkningsformeln.
+* **NmsOfferView**: Tabellen matchar **nms:offerView**. Det innehåller erbjudanderepresentationerna.
+* **NmsOfferCategory**: Tabellen matchar **nms:offerCategory**. Den innehåller erbjudandekategorierna.
+* **NmsOfferEnv**: Tabellen matchar **nms:offerEnv**. Den innehåller erbjudandemiljöerna.
 
 ## Modul för meddelandecenter {#message-center-module}
 
-Följande tabelluppsättning är länkad till modulen **Transactional messaging** (Message Center) som gör att du kan hantera enskilda och unika meddelanden som skickas till en användare och som genereras från händelser som utlöses från informationssystem. Mer information finns i [Om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
+Följande tabelluppsättning är länkad till **Transaktionsmeddelanden** (Message Center), som gör det möjligt att hantera enskilda och unika meddelanden som skickas till en användare och som genereras från händelser som utlöses från informationssystem. Mer information finns i [Om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
 ![](assets/data-model_message-center_rt.png)
 
-Tabellen matchar schemat **nms:rtEvent**. Den innehåller en definition av händelser i realtid.
+Tabellen matchar **nms:rtEvent** schema. Den innehåller en definition av händelser i realtid.
 
 ### NmsBatchEvent {#NmsBatchEvent}
 
 ![](assets/data-model_message-center_batch.png)
 
-Tabellen matchar schemat **nms:batchEvent**. Den innehåller definitionen av händelser per grupp.
+Tabellen matchar **nms:batchEvent** schema. Den innehåller definitionen av händelser per grupp.
 
 <!--## Microsites Module {#microsites-module}
 
@@ -251,23 +251,23 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ## NMAC-modul {#nmac-module}
 
-Den här tabelluppsättningen är länkad till **Mobile App Channel**, som gör att du kan skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Mer information finns i [Om mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
+Den här tabelluppsättningen är länkad till **Mobilappskanal**, som gör det möjligt att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Mer information finns i [Om mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
 
-* **NmsMobileApp**: Tabellen matchar  **nms:** mobileAppschema. Den innehåller de mobilprogram som definieras i Adobe Campaign.
-* **NmsAppSubscription**: Tabellen matchar  **nms:** appSubscriptionschema. Det innehåller information om prenumeranter för ett eller flera program.
-* **NmsAppSubscriptionRcp**: Tabellen matchar  **nms:** appSubscriptionRcpschema. Det gör att du kan länka besökare som prenumererar på ett program till mottagartabellen.
-* **NmsExcludeLogAppSubRcp**: Den här tabellen matchar  **nms:** excludeLogAppSubRcpschema.
-* **NmsTrackingLogAppSubRcp**: Den här tabellen matchar  **nms:** trackingLogAppSubRcpschema.
-* **NmsBroadLogAppSubRcp**: Den här tabellen matchar  **nms:** broadLogAppSubRcpschema.
+* **NmsMobileApp**: Tabellen matchar **nms:mobileApp** schema. Den innehåller de mobilprogram som definieras i Adobe Campaign.
+* **NmsAppSubscription**: Tabellen matchar **nms:appSubscription** schema. Det innehåller information om prenumeranter för ett eller flera program.
+* **NmsAppSubscriptionRcp**: Tabellen matchar **nms:appSubscriptionRcp** schema. Det gör att du kan länka besökare som prenumererar på ett program till mottagartabellen.
+* **NmsExcludeLogAppSubRcp**: Tabellen matchar **nms:excludeLogAppSubRcp** schema.
+* **NmsTrackingLogAppSubRcp**: Tabellen matchar **nms:trackingLogAppSubRcp** schema.
+* **NmsBroadLogAppSubRcp**: Tabellen matchar **nms:broadLogAppSubRcp** schema.
 
 ## Modul för social marknadsföring {#social-marketing-module}
 
-Tabelluppsättningen är länkad till modulen **Hantera sociala nätverk**, som gör att du kan interagera med kunder och prospects via Facebook och Twitter. Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
+Den här tabelluppsättningen är länkad till **Hantera sociala nätverk** som gör det möjligt att interagera med kunder och potentiella kunder via Facebook och Twitter. Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
-* **NmsVisitor**: Tabellen matchar  **nms:** visitorschema. Det innehåller information om besökare.
-* **NmsVisitorSub**: Tabellen matchar  **nms:** visitorSubschema. Det gör att du kan länka en besökare till de tjänster som de har prenumererat på (Twitter eller Facebook).
-* **NmsFriendShipRel**: Tabellen matchar  **nms:** VänshipRelschema. Det gör att du kan länka besökare till deras vänner inom ramen för Facebook-tjänsten.
-* **NmsVisitorInterestRel**: Den här tabellen matchar  **nms:** visitorInterestRelschema. Det gör det möjligt för er att länka samman besökare och deras intressen.
-* **NmsInterest**: Tabellen matchar schemat  **nms:** interest. Den innehåller en lista med intressen för varje besökare.
+* **NmsVisitor**: Tabellen matchar **nms:besökare** schema. Det innehåller information om besökare.
+* **NmsVisitorSub**: Tabellen matchar **nms:visitorSub** schema. Det gör att du kan länka en besökare till de tjänster som de har prenumererat på (Twitter eller Facebook).
+* **NmsFriendShipRel**: Tabellen matchar **nms:vänskapRel** schema. Det gör att du kan länka besökare till deras vänner inom ramen för Facebook-tjänsten.
+* **NmsVisitorInterestRel**: Tabellen matchar **nms:visitorInterestRel** schema. Det gör det möjligt för er att länka samman besökare och deras intressen.
+* **NmsInterest**: Tabellen matchar **nms:interest** schema. Den innehåller en lista med intressen för varje besökare.

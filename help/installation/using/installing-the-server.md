@@ -46,7 +46,7 @@ Installationsstegen för Adobe Campaign-servern är följande:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Klicka på **[!UICONTROL Finish]** för att starta installationen:
+1. Klicka **[!UICONTROL Finish]** för att starta installationen:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +62,7 @@ Installationsstegen för Adobe Campaign-servern är följande:
    >
    >När serverinstallationen är klar krävs en omstart av servern för att undvika eventuella nätverksproblem.
 
-   När installationen är klar startar du Adobe Campaign för att skapa konfigurationsfilerna. Se [Första starten av servern](#first-start-up-of-the-server).
+   När installationen är klar startar du Adobe Campaign för att skapa konfigurationsfilerna. Se [Serverns första start](#first-start-up-of-the-server).
 
 ## Sammanfattad installationstestning {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## Serverns första start {#first-start-up-of-the-server}
 
-När installationstestet är klart öppnar du en kommandotolk via menyn **[!UICONTROL Start > Programs > Adobe Campaign]** och anger följande kommando:
+När installationstestet är klart öppnar du en kommandotolk via **[!UICONTROL Start > Programs > Adobe Campaign]** och ange följande kommando:
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ Följande information visas:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Tryck på **Ctrl+C** för att stoppa processen och ange sedan följande kommando:
+Tryck **Ctrl+C** om du vill stoppa processen anger du följande kommando:
 
 ```
 nlserver start web
@@ -137,7 +137,7 @@ Följande information visas:
 
 ## Lösenord för intern identifierare {#password-for-the-internal-identifier}
 
-Adobe Campaign-servern definierar en teknisk inloggning med namnet **internal** som har alla rättigheter för alla instanser. Precis efter installationen har inloggningen inget lösenord. Det är obligatoriskt att definiera en.
+Adobe Campaign-servern definierar en teknisk inloggning som kallas **internal** som har alla rättigheter för alla instanser. Precis efter installationen har inloggningen inget lösenord. Det är obligatoriskt att definiera en.
 
 Läs mer i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## Installerar LibraryOffice {#installing-libreoffice}
 
-Hämta LibreOffice, till exempel från [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) och följ de vanliga installationsstegen.
+Hämta LibreOffice, till exempel från [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) och följer de vanliga installationsstegen.
 
 Lägg till följande miljövariabel:
 

@@ -17,7 +17,7 @@ ht-degree: 22%
 
 ![](../../assets/v7-only.svg)
 
-Läs mer i avsnitten [Innan du startar migreringen](../../migration/using/before-starting-migration.md) och [Konfigurera plattformen](../../migration/using/configuring-your-platform.md) innan du kör en migrering.
+Innan du kör en migrering bör du läsa [Innan du startar migreringen](../../migration/using/before-starting-migration.md) och [Konfigurera din plattform](../../migration/using/configuring-your-platform.md) -avsnitt.
 
 När du migrerar från v6.02 till Adobe Campaign v7 levereras inte alla filer som levereras i förväg.
 

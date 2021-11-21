@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Programmet **Hantera sociala nätverk** (Social Marketing) som är utformat för att hantera sociala nätverk gör att du kan interagera med kunder och potentiella kunder via Facebook och Twitter.
+The **Hantera sociala nätverk** (Social Marketing) Med en applikation som är utformad för att hantera sociala nätverk kan ni interagera med kunder och potentiella kunder via Facebook och Twitter.
 
 1. **Skicka meddelanden**
 

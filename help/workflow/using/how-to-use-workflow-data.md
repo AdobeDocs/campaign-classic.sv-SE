@@ -25,7 +25,7 @@ Alla insamlade data kan användas för att uppdatera databasen eller i leveranse
 
 Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras med hjälp av två dedikerade aktiviteter:
 
-* Med aktiviteten **[!UICONTROL List update]** kan du lagra arbetstabeller i en datalist.
+* The **[!UICONTROL List update]** kan du lagra arbetsdokument i en datalist.
 
    Du kan välja en befintlig lista eller skapa den. I det här fallet beräknas namnet och eventuellt postmappen.
 
@@ -33,7 +33,7 @@ Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras me
 
    Se [Listuppdatering](list-update.md).
 
-* Aktiviteten **[!UICONTROL Update data]** utför en massuppdatering av fälten i databasen.
+* The **[!UICONTROL Update data]** aktiviteten utför en massuppdatering av fälten i databasen.
 
    Mer information finns i [Uppdatera data](update-data.md).
 
@@ -45,7 +45,7 @@ Om du vill veta mer om att prenumerera på och avsluta prenumerationer på en in
 
 ### Leveransaktivitet {#delivery-activity}
 
-Leveransaktiviteten anges i [Delivery](delivery.md).
+Leveransaktiviteten beskrivs i [Leverans](delivery.md).
 
 ### Förbättra och målinrikta leveranser {#enriching-and-targeting-deliveries}
 
@@ -59,12 +59,12 @@ Förutom de vanliga personaliseringsfälten kan du lägga till anpassningsfält 
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av länken **targetData**. Mer information finns i [Måldata](data-life-cycle.md#target-data).
+Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av **targetData** länk. Mer information finns i [Måldata](data-life-cycle.md#target-data).
 
 Inom ramen för e-postleverans kan personaliseringsfält även använda data från måltillägg som har utförts i arbetsflödesfaserna för målanpassning, vilket visas i exemplet nedan:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Om en segmentkod anges i en målaktivitet läggs den till i en specifik kolumn i arbetsflödestabellen och erbjuds tillsammans med anpassningsfälten. Om du vill visa alla anpassningsfält klickar du på länken **[!UICONTROL Target extension > Other...]** som är tillgänglig via personaliseringsknappen.
+Om en segmentkod anges i en målaktivitet läggs den till i en specifik kolumn i arbetsflödestabellen och erbjuds tillsammans med anpassningsfälten. Om du vill visa alla anpassningsfält klickar du på **[!UICONTROL Target extension > Other...]** via personaliseringsknappen.
 
 ![](assets/s_advuser_segment_code_select.png)

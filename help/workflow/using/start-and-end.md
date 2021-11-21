@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Med aktiviteterna **[!UICONTROL Start]** och **[!UICONTROL End]** kan du grafiskt markera början och slutet av ett arbetsflöde. Dessa aktiviteter har ingen funktionell inverkan och är därför valfria.
+The **[!UICONTROL Start]** och **[!UICONTROL End]** Med -aktiviteter kan du markera början och slutet av ett arbetsflöde grafiskt. Dessa aktiviteter har ingen funktionell inverkan och är därför valfria.
 
 * **[!UICONTROL Start]**
 
@@ -27,7 +27,7 @@ Med aktiviteterna **[!UICONTROL Start]** och **[!UICONTROL End]** kan du grafisk
 
 * **[!UICONTROL End]**
 
-   Du kan konfigurera **[!UICONTROL End]**-aktiviteten så att den avbryter alla pågående uppgifter. Det gör du genom att dubbelklicka på aktiviteten för att visa dess egenskaper och markera lämpligt alternativ.
+   Du kan konfigurera **[!UICONTROL End]** aktivitet för att avbryta alla pågående uppgifter. Det gör du genom att dubbelklicka på aktiviteten för att visa dess egenskaper och markera lämpligt alternativ.
 
    ![](assets/s_user_segmentation_end.png)
 

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Arbetsflödet som beskrivs nedan installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, listan över domäner och listan över MX:er. När **Deliverability Monitoring (Email Deliverability)**-paketet är installerat körs det här arbetsflödet varje natt. Mer information om leveransövervakning finns i [avsnittet](../../delivery/using/about-deliverability.md).
+Arbetsflödet som beskrivs nedan installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, listan över domäner och listan över MX:er. När **Leveransövervakning (e-postleverans)** paketet är installerat, det här arbetsflödet körs på natten. Mer information om övervakning av slutprodukter finns i [section](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Arbetsflödet som beskrivs nedan installeras som standard på alla instanser och
   <tr> 
    <td> <strong>Uppdatera för leverans</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  När <strong>Deliverability Monitoring (Email Deliverability)</strong>-paketet är installerat körs det här arbetsflödet varje natt för att regelbundet uppdatera listan över regler och gör att det går att aktivt hantera plattformsleveransen.<br /> </td> 
+   <td>  När <strong>Leveransövervakning (e-postleverans)</strong> paketet är installerat. Det här arbetsflödet körs på natten för att regelbundet uppdatera listan över regler och möjliggör aktiv hantering av plattformsleverans.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

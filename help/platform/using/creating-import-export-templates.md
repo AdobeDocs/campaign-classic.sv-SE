@@ -17,17 +17,17 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-Import- och exportmallar lagras i katalogen **[!UICONTROL Resources > Templates > Job templates]** i Adobe Campaign-trädet.
+Mallar för import och export lagras i **[!UICONTROL Resources > Templates > Job templates]** katalog i Adobe Campaign-trädet.
 
 Som standard finns det tre importmallar och en exportmall i den här katalogen. De får inte ändras.
 
 * Den inbyggda mallen **[!UICONTROL Import denylist]** har redan konfigurerats för att importera en lista med e-postadresser som har lagts till i blockeringslista.
 
-* Med hjälp av mallarna **[!UICONTROL New text import]** och **[!UICONTROL New text export]** kan du konfigurera en import- eller exportfunktion från början.
+* The **[!UICONTROL New text import]** och **[!UICONTROL New text export]** -mallar kan du konfigurera en import- eller exportfunktion från början.
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-Du kan duplicera befintliga mallar för att skapa egna mallar eller skapa en ny mall via menyn **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**.
+Du kan duplicera befintliga mallar för att skapa egna mallar eller skapa en ny mall via **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** -menyn.
 
 Processen att konfigurera en mall är då densamma som beskrivs i följande avsnitt:
 

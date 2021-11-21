@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-Skärmen för att skapa och konfigurera indataformulär är tillgänglig från mappen **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** i Adobe Campaign klientkonsol:
+Skärmen för att skapa och konfigurera inmatningsformulär är tillgänglig från **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** mapp på Adobe Campaign klientkonsol:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

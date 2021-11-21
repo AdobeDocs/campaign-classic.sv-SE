@@ -20,7 +20,7 @@ ht-degree: 6%
 
 ## Översikt {#overview}
 
-**Transactional Messaging**  (Message Center) är en Campaign-modul som är utformad för att hantera anpassade utlösarmeddelanden som genereras från händelser som skickas av ett externt informationssystem.
+**Transaktionsmeddelanden** (Message Center) är en Campaign-modul som är utformad för att hantera anpassade utlösarmeddelanden som genereras från händelser som skickas av ett externt informationssystem.
 
 Ett transaktionsmeddelande är en individ och en unik kommunikation som skickas i realtid av en leverantör, till exempel en webbplats. Det är särskilt väntat eftersom det innehåller viktig information som mottagaren vill kontrollera eller bekräfta.
 
@@ -42,11 +42,11 @@ Funktioner för transaktionsmeddelanden är utformade för att stödja skalbarhe
 
 Adobe Campaign Transactional Messaging-modulen integreras i ett informationssystem som returnerar händelser som ska ändras till personaliserade transaktionsmeddelanden. Dessa meddelanden kan skickas individuellt eller gruppvis via e-post, SMS eller push-meddelanden.
 
-Den här funktionen är beroende av en specifik arkitektur, där **körningsinstansen** är separerad från **kontrollinstansen**. Distributionen ger högre tillgänglighet och bättre lasthantering. Mer information finns i [Transactional messaging architecture](../../message-center/using/transactional-messaging-architecture.md).
+Den här funktionen är beroende av en viss arkitektur, där **körningsinstans** separeras från **kontrollinstans**. Distributionen ger högre tillgänglighet och bättre lasthantering. Mer information finns i [Arkitektur för transaktionsmeddelanden](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
->Om du vill skapa nya användare för Message Center-körningsinstanser på Adobe Cloud måste du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Message Center-användare är specifika operatorer som kräver dedikerad behörighet för att få åtkomst till **[!UICONTROL Real time events (nmsRtEvent)]**-mappar.
+>Om du vill skapa nya användare för Message Center-körningsinstanser på Adobe Cloud måste du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Message Center-användare är specifika operatorer som kräver dedikerad behörighet för åtkomst **[!UICONTROL Real time events (nmsRtEvent)]** mappar.
 
 Den övergripande processen för transaktionsmeddelanden beskrivs på följande sätt:
 
@@ -54,7 +54,7 @@ Den övergripande processen för transaktionsmeddelanden beskrivs på följande 
 
 Tänk dig att du är ett företag med en webbplats där kunderna kan köpa produkter.
 
-Med Adobe Campaign kan du skicka ett e-postmeddelande till kunder som har lagt till produkter i kundvagnen. När någon av dem lämnar er webbplats utan att gå igenom sina inköp (en extern händelse som utlöser en Campaign-händelse) skickas ett e-postmeddelande om att kunden överger en kundvagn automatiskt till dem (leverans av transaktionsmeddelanden).
+Med Adobe Campaign kan du skicka ett e-postmeddelande till kunder som har lagt till produkter i kundvagnen. När någon av dem lämnar er webbplats utan att gå igenom sina inköp (en extern händelse som utlöser en Campaign-händelse) skickas ett e-postmeddelande om att kunden har lämnat en kundvagn (leverans av transaktionsmeddelande).
 
 De viktigaste stegen för att implementera detta beskrivs nedan i [det här avsnittet](#key-steps).
 
@@ -68,7 +68,7 @@ De viktigaste stegen när du skapar och hanterar personaliserade transaktionsmed
 
 ### Steg som ska utföras på kontrollinstansen
 
-På **kontrollinstansen** måste du utföra följande åtgärder:
+På **kontrollinstans** måste du utföra följande åtgärder:
 
 1. [Skapa en händelsetyp](../../message-center/using/creating-event-types.md).
 1. [Skapa och utforma meddelandemallen](../../message-center/using/creating-the-message-template.md). Du måste länka en händelse till ditt meddelande under det här steget.
@@ -77,13 +77,13 @@ På **kontrollinstansen** måste du utföra följande åtgärder:
 
 >[!NOTE]
 >
->Alla steg ovan utförs på **kontrollinstansen**. Om du publicerar mallen på kontrollinstansen publiceras den också på alla **körningsinstanser**. Mer information om transaktionsmeddelandeinstanser finns i [Transactional messaging architecture](../../message-center/using/transactional-messaging-architecture.md).
+>Alla steg ovan utförs på **kontrollinstans**. När du publicerar mallen på kontrollinstansen publiceras den också på alla **körningsinstanser**. Mer information om transaktionsmeddelandeinstanser finns i [Arkitektur för transaktionsmeddelanden](../../message-center/using/transactional-messaging-architecture.md).
 
 ### Händelsebearbetning på körningsinstansen
 
-När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudstegen nedan på **körningsinstansen** om en motsvarande händelse aktiveras:
+När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudstegen nedan på **körningsinstans**:
 
-1. När händelsen genereras av det externa informationssystemet skickas relevanta data till Campaign via metoderna **PushEvent** och **PushEvents**. Se [Händelsesamling](../../message-center/using/about-event-processing.md#event-collection).
+1. När händelsen genereras av det externa informationssystemet skickas relevanta data till Campaign via **PushEvent** och **PushEvents** metoder. Se [Händelsesamling](../../message-center/using/about-event-processing.md#event-collection).
 1. Händelsen är länkad till rätt meddelandemall. Se [Cirkulera mot en mall](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. När anrikningsfasen är klar skickas leveransen. Se [Leveranskörning](../../message-center/using/delivery-execution.md). Varje mottagare får ett personligt meddelande.
 

@@ -29,7 +29,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Tabellnamn  </strong><br /> </th> 
+   <th> <strong>Tabellnamn </strong><br /> </th> 
    <th> <strong>Storlek</strong><br /> </th> 
    <th> <strong>Huvudtyp av verksamhet</strong><br /> </th> 
    <th> <strong>Kommentarer</strong><br /> </th> 
@@ -70,7 +70,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> XtkWorkflow<br /> </td> 
    <td> Liten<br /> </td> 
    <td> Uppdateringar<br /> </td> 
-   <td> Det finns en post per arbetsflödesinstans, så få poster. Tabellen uppdateras dock regelbundet för att återspegla status och förlopp.<br /> </td> 
+   <td> Det finns en post per arbetsflödesinstans, så få poster. Tabellen uppdateras dock regelbundet för att återspegla status och framsteg.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
@@ -88,7 +88,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> XtkWorkflowJob<br /> </td> 
    <td> Mycket liten <br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Det här registret är specifikt för arbetsflödesmotorn. Det gör det möjligt att skicka kommandon till arbetsflöden (till exempel Start, Stop, Pause). Även om den är liten beaktas den här tabellen när transaktionsregister som är länkade till arbetsflöden rensas.<br /> </td> 
+   <td> Det här registret är specifikt för arbetsflödesmotorn. Det gör det möjligt att skicka kommandon till arbetsflöden (till exempel Start, Stop, Pause). Även om den är liten beaktas den här tabellen när du tömmer transaktionsregister som är länkade till arbetsflöden.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
@@ -151,22 +151,22 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> Liknar de andra sändningstabellerna, men med NmsRtEvent i stället för NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsTrackingLogRtEvent( Message Center-körningsinstans)<br /> </td> 
+   <td> NmsTrackingLogRtEvent( körningsinstans i meddelandecenter)<br /> </td> 
    <td> Stor<br /> </td> 
    <td> Infogningar, borttagningar<br /> </td> 
    <td> Liknar de andra trackingLog-tabellerna, men med NmsRtEvent-tabellen i stället för NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsRtEvent (Message Center-körningsinstans)<br /> </td> 
+   <td> NmsRtEvent (körningsinstans för Message Center)<br /> </td> 
    <td> Stor<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
    <td> Tabell som innehåller händelsekön för meddelandecentret. Statusen för dessa händelser uppdateras av Message Center när de bearbetas. Borttagningar utförs under tömningen. Vi rekommenderar att du regelbundet återskapar indexet för den här tabellen och återskapar det.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHistory (Message Center-kontrollinstans)<br /> </td> 
+   <td> NmsEventHistory (kontrollinstansen Message Center)<br /> </td> 
    <td> Stor<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Liknar NmsRtEvent. Den här tabellen arkiverar alla händelser från alla körningsinstanser. Den används av ingen realtidsprocess, endast av rapporter.<br /> </td> 
+   <td> Liknar NmsRtEvent. Den här tabellen arkiverar alla händelser från alla körningsinstanser. Den används inte av någon realtidsprocess, utan endast av rapporter.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 

@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## Kontext
 
-Som värdefull kund hos Adobe Campaign Classic vill vi ge dig den bästa upplevelsen och det bästa värdet. Under årens lopp har vi insett värdet och tillförlitligheten med att vara värd för våra kunder i molnet.  Som en del av vårt [Gold Standard Initiative](../../rn/using/gold-standard.md) flyttar vi alla våra kunder till Adobe Managed Services (Public Cloud på AWS) för att erbjuda bättre och tillförlitligare tjänster.
+Som värdefull kund hos Adobe Campaign Classic vill vi ge dig den bästa upplevelsen och det bästa värdet. Under årens lopp har vi insett värdet och tillförlitligheten med att vara värd för våra kunder i molnet.  Som en del av [Gold Standard Initiative](../../rn/using/gold-standard.md)flyttar vi alla våra kunder till Adobe Managed Services (Public Cloud på AWS) för att erbjuda bättre och tillförlitligare tjänster.
 
 Det här programmet har tre huvudmål:
 
 * Som åtgärdar identifierade säkerhetsluckor genom att flytta infrastruktur till en säker och modern miljö (AWS).
-* Eliminera potentiellt krångliga skalningsprocesser, ge tillgång till våra [förbättrade MTA](../../delivery/using//sending-with-enhanced-mta.md) och förbättra alla underhållsnivåer.
+* Eliminera potentiellt krångliga skalningsprocesser, ge tillgång till våra [Förbättrade MTA:er](../../delivery/using//sending-with-enhanced-mta.md) och förbättra alla underhållsnivåer.
 * Förbered din instans för Adobe Campaign Classic framtid, inklusive fler automatiserade, regelbundna uppgraderingar som inte kräver så mycket resurser eller så mycket tid som möjligt.
 
 ### Ordlista
 
-* **Bygg uppgradering**  - När Adobe Campaign Classic-programvaran uppdateras till det senaste säkra versionsnumret finns den kvar på samma större/mindre nivå. Till exempel: Campaign v7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Läs mer](../../platform/using/faq-build-upgrade.md).
+* **Bygg uppgradering** - När Adobe Campaign Classic-programvaran uppdateras till det senaste säkra versionsnumret, men ändå ligger kvar på samma större/mindre nivå. Till exempel: Campaign v7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Läs mer](../../platform/using/faq-build-upgrade.md).
 * **MID/RT** - Meddelandekörningsservrar på Adobe Cloud (MID för batchkampanjer och RT för enhetsmeddelanden i realtid)
-* **Gold Standard-uppgradering**  - det här programmet ger bättre säkerhet, bättre support, bättre underhåll och stabilitet. Det underlättar också framtida uppgraderingar och ger tillgång till nya funktioner i Campaign.  [Läs mer](../../rn/using/gs-overview.md).
-* **AWS**  - Amazon Web Services (Amazon Public Cloud)
-* **SFTP**  - Secured File Transfer Protocol. [Läs mer](../../platform/using/sftp-server-usage.md).
+* **Uppgradering av Gold Standard** - det här programmet ger förbättrad säkerhet, förbättrad support, förbättrat underhåll och stabilitet. Det underlättar också framtida uppgraderingar och ger tillgång till nya funktioner i Campaign.  [Läs mer](../../rn/using/gs-overview.md).
+* **AWS** - Amazon Web Services (Amazon Public Cloud)
+* **SFTP** - Secured File Transfer Protocol. [Läs mer](../../platform/using/sftp-server-usage.md).
 
 
 >[!NOTE]
->Migrering från Campaign Classic v7 till Public Cloud påverkar endast kunder som använder **Adobes hanterade tjänster**.
+>Migrering från Campaign Classic v7 till Public Cloud påverkar kunder som använder **Adobes hanterade tjänster** endast.
 
 
 ## Fördelar
@@ -80,24 +80,24 @@ Migreringen till Adobe Managed Services (Public Cloud) sker 2020/2021 för berö
 
 För att få igång den här satsningen får konton som kräver den här migreringen ett e-postmeddelande från Adobe med en tidslinje och tillgång till dokumentation. Detta är ett meddelande om att ditt konto är schemalagt att migreras.
 
-En migrering kan initieras genom att [öppna en ny kundtjänstsupportbiljett](https://experienceleague.adobe.com/?support-solution=Campaign#support). Använd ämnesraden&quot;Migrate to AWS&quot;.
+En migrering kan initieras av [öppna ett nytt supportärende för kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support). Använd ämnesraden&quot;Migrera till AWS&quot;.
 
 ### Är migreringen obligatorisk?
 
-Den här migreringen till molnet är **det första steget till [Gold Standard-certifieringen](../../rn/using/gs-overview.md)** av dina Adobe Campaign-instanser. Migreringen är obligatorisk om du är värd i ett datacenter som inte är det offentliga molnet (AWS).
+Migreringen till molnet är **första steget till [Gold Standard-certifiering](../../rn/using/gs-overview.md)** av dina Adobe Campaign-förekomster. Migreringen är obligatorisk om du är värd i ett datacenter som inte är det offentliga molnet (AWS).
 
-Molnet för Adobe Managed Services ligger hos Amazon Web Services (AWS), en modern, säker och optimerad miljö. [Läs mer om AWS](https://aws.amazon.com/application-hosting/benefits/).
+Adobe Managed Services-molnet ligger på Amazon Web Services (AWS), en modern, säker och optimerad miljö. [Läs mer om AWS](https://aws.amazon.com/application-hosting/benefits/).
 
-Adobe planerar att avställa det gamla datacentret. Adobe Campaign-instanser som körs där måste överföras till det nya referensdatacentret, AWS.
+Adobe planerar att avveckla det gamla datacentret. Adobe Campaign-instanser som körs där måste överföras till det nya referensdatacentret, AWS.
 
-Detta är en viktig väg framåt eftersom din aktuella plats kan exponeras för **säkerhets- och prestandasårbarheter**.
+Detta är en viktig väg framåt eftersom din nuvarande plats kan exponeras för **säkerhets- och prestandaproblem**.
 
-Dessutom är migreringen nu en **förutsättning för framtida bygguppgraderingar** av din Adobe Campaign. Uppgradering av bygge är inte längre möjligt i äldre datacenter.
+Dessutom är migreringen nu en **en förutsättning för framtida uppgraderingar** av din Adobe Campaign. Uppgradering av bygge är inte längre möjligt i äldre datacenter.
 
 Adobe vill skydda era data och få er på rätt spår inför Adobe Campaign framtid. Vi behöver ert partnerskap för att göra det till en gemensam framgång!
 
 
-**Vi har organiserat ett** team med dedikerade kundtjänstassistenter, Customer Success Managers, Product Managers, Engineers, TechOps Specialist och Product Consultants för att hjälpa till och säkerställa att upplevelsen blir smidig och smidig. Vi strävar efter att se till att du har relevant projekt- och kontaktinformation.
+**Vi har organiserat ett team** av dedikerade kundtjänstassistenter, Customer Success Managers, Product Managers, Engineers, TechOps Specialist och Product Consultants för att hjälpa till och säkerställa att upplevelsen blir smidig och smidig. Vi strävar efter att se till att du har relevant projekt- och kontaktinformation.
 
 Vi har gjort stora ansträngningar för att utveckla tekniker som gör migreringen snabb, sömlös och säker.
 
@@ -105,9 +105,9 @@ Vi har gjort stora ansträngningar för att utveckla tekniker som gör migrering
 
 * Migreringen kommer att innebära ett oundvikligt driftstopp på plattformen. Syftet med denna plan är att ge vägledning om hur man minimerar driftstoppen.
 * IP-ändring för dataintegreringar.
-* Leveransavlastning av nya IP-sändningsadresser. Planen är dock att göra den här operationen transparent för företaget, till skillnad från den initiala påfarten som görs vid publicering.
+* Leveransavlastning av nya IP-sändningsadresser. Planen är dock att göra den här operationen genomskinlig för företaget, till skillnad från den initiala påfarten som görs vid publicering.
 
-Lär dig mer om Campaign-migrering till [Vanliga frågor om det offentliga molnet](dc-migration-faq.md).
+Läs mer i Campaign-migrering till [Vanliga frågor om Public Cloud](dc-migration-faq.md).
 
 
 ## Certifiering av resa till Gold Standard
@@ -147,7 +147,7 @@ I allmänhet innebär det att kunden bör kontrollera eventuella IP-begränsning
 
 **Kampanjservrar**
 
-Befintliga Campaign-servrar (behållare) kommer att flyttas till Public Cloud (AWS) på ett&quot;lift and shift&quot;-sätt. Det innebär att ingen ny serverinstallation behövs, men hela servern överförs till det nya datacentret. Åtgärden kräver inget mer arbete än teknisk omkonfiguration på låg nivå.
+Befintliga Campaign-servrar (behållare) kommer att flyttas till Public Cloud (AWS) på ett sätt som&quot;lyft-och-förskjutning&quot;. Det innebär att ingen ny serverinstallation behövs, men hela servern överförs till det nya datacentret. Åtgärden kräver inget mer arbete än teknisk omkonfiguration på låg nivå.
 
 **Servernamn**
 
@@ -170,8 +170,8 @@ Adobe kommer att tillhandahålla samma antal IP-adresser i det nya datacentret.
 
 Uppgraderingen av nya IP-adresser kan börja så snart de nya IP-adresserna har etablerats.
 
-**ProgramrensningDataöverföring**
-mellan datacenter är på driftstoppets kritiska väg.
+**Programrensning**
+Dataöverföring mellan datacenter är på driftstoppets kritiska väg.
 
 Data lagras på två sätt:
 
@@ -189,7 +189,7 @@ Förslag:
 
 **Pausa körningar**
 
-Vi rekommenderar att alla körningar pausas långsammare och idealiskt precis innan programmet stängs i det äldre datacentret: leveranser och arbetsflöden. Det underlättar omstarten på Public Cloud (AWS) eftersom processerna har fått tid att pausa&quot;på ett smidigt sätt&quot; och spara eventuella pågående körningstillstånd.
+Vi rekommenderar att alla körningar pausas långsammare och idealiskt precis innan programmet stängs i det äldre datacentret: leveranser och arbetsflöden. Det underlättar omstarten av Public Cloud (AWS) eftersom processerna har fått tid att pausa&quot;på ett bra sätt&quot; och spara eventuella pågående körningstillstånd.
 
 **Under migreringen**
 

@@ -19,15 +19,15 @@ ht-degree: 7%
 
 ## Konfigurera aktiviteten Fråga {#configuring-the-query-activity}
 
-* Dubbelklicka på aktiviteten **[!UICONTROL Query]**.
+* Dubbelklicka på **[!UICONTROL Query]** aktivitet.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Klicka på länken **[!UICONTROL Edit query]** och välj de mottagare som du vill ange som mål.
+* Klicka på **[!UICONTROL Edit query]** och markera de mottagare som du vill ange som mål.
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Länka aktiviteten **[!UICONTROL Query]** till aktiviteten **[!UICONTROL Split]**.
+* Länka **[!UICONTROL Query]** till **[!UICONTROL Split]** aktivitet.
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -37,7 +37,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar population A:
 
-   * Dubbelklicka på aktiviteten **[!UICONTROL Split]**.
+   * Dubbelklicka på **[!UICONTROL Split]** aktivitet.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -45,11 +45,11 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Välj alternativet **[!UICONTROL Limit the selected records]**.
+   * Välj **[!UICONTROL Limit the selected records]** alternativ.
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Klicka på länken **[!UICONTROL Edit]**, välj **[!UICONTROL Activate random sampling]** och klicka på **[!UICONTROL Next]**.
+   * Klicka på **[!UICONTROL Edit]** länk, markera **[!UICONTROL Activate random sampling]** och klicka **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
@@ -59,7 +59,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar population B:
 
-   * Klicka på **[!UICONTROL Add]** för att skapa en ny flik för population B.
+   * Klicka **[!UICONTROL Add]** för att skapa en ny flik för population B.
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 

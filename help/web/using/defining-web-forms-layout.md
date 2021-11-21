@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Med behållare kan du kombinera fälten på en sida och konfigurera deras layout; för att ordna elementen på sidan.
 
-För varje sida i formuläret skapas behållare med knappen **[!UICONTROL Containers]** i verktygsfältet.
+För varje sida i formuläret skapas behållare via **[!UICONTROL Containers]** i verktygsfältet.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
@@ -69,7 +69,7 @@ Du kan ändra formateringen i varje behållare. I vårt exempel kan du sprida in
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras på fliken **[!UICONTROL General]** eller fliken **[!UICONTROL Advanced]**, beroende på fälttypen:
+Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras i **[!UICONTROL General]** -fliken eller **[!UICONTROL Advanced]** -tabb, beroende på fälttyp:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -79,11 +79,11 @@ Du kan definiera justeringen av fält och etiketter i formuläret.
 
 Som standard ärvs visningsparametrarna för fält och annat innehåll på sidan från formulärets allmänna konfiguration, sidans konfiguration eller den överordnade behållarens konfiguration, om sådan finns.
 
-De globala visningsparametrarna för hela formuläret anges i rutan för formuläregenskaper. På fliken **[!UICONTROL Rendering]** kan du välja placering för etiketter.
+De globala visningsparametrarna för hela formuläret anges i rutan för formuläregenskaper. The **[!UICONTROL Rendering]** kan du välja placering för etiketter.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-Den här positionen kan överladdas för varje sida, varje behållare och varje fält via fliken **[!UICONTROL Advanced]**.
+Den här positionen kan överladdas för varje sida, varje behållare och varje fält via **[!UICONTROL Advanced]** -fliken.
 
 Följande justeringar stöds:
 

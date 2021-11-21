@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-Arbetsflödena som beskrivs nedan installeras som standard med modulen **Sekretessdataskydd**. Mer information om den här modulen finns i den här [artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
+Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för personuppgifter** som standard. Mer information om den här modulen finns i [artikel](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 

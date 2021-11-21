@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Det går att lokalisera ett webbprogram till flera språk.
 
-Du kan utföra översättningar direkt i Adobe Campaign-konsolen (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)) eller exportera och importera strängar för att externalisera översättning (se [Externalisera översättning](#externalizing-translation)).
+Du kan utföra översättningar direkt i Adobe Campaign-konsolen (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)), eller exportera och importera strängar för att externalisera översättning (se [Extern översättning](#externalizing-translation)).
 
 Listan över översättningsspråk som är tillgängliga som standard finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
 
@@ -33,7 +33,7 @@ Standardspråket är det språk som webbprogrammet visas på om ingen språkinst
 
 ## Välja språk {#choosing-languages}
 
-Om du vill definiera ett eller flera översättningsspråk klickar du på knappen **[!UICONTROL Properties]** i webbprogrammet och sedan på fliken **[!UICONTROL Localization]**. Klicka på knappen **[!UICONTROL Add]** för att definiera ett nytt översättningsspråk för webbprogrammet.
+Om du vill definiera ett eller flera översättningsspråk klickar du på **[!UICONTROL Properties]** webbprogrammets knapp, sedan **[!UICONTROL Localization]** -fliken. Klicka på **[!UICONTROL Add]** för att definiera ett nytt översättningsspråk för webbprogrammet.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Om du vill definiera ett eller flera översättningsspråk klickar du på knappe
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-När du lägger till översättningsspråk för ett webbprogram (eller när standardspråket och redigeringsspråket är olika) läggs en **[!UICONTROL Translation]**-underflik till på fliken **[!UICONTROL Edit]** för att hantera översättningar.
+När du lägger till översättningsspråk för ett webbprogram (eller när standardspråket och redigeringsspråket är olika), en **[!UICONTROL Translation]** underfliken läggs till i **[!UICONTROL Edit]** för att hantera översättningar.
 
 Adobe Campaign innehåller ett verktyg för översättning och hantering av flerspråkiga översättningar. Med den här redigeraren kan du visa strängarna som ska översättas eller godkännas, ange översättningar direkt i gränssnittet eller importera/exportera teckensträngar för att göra översättningar externt.
 
@@ -49,11 +49,11 @@ Adobe Campaign innehåller ett verktyg för översättning och hantering av fler
 
 ### Samlar in strängar {#collecting-strings}
 
-På fliken **[!UICONTROL Translations]** kan du ange översättningar för de teckensträngar som webbprogrammet består av.
+The **[!UICONTROL Translations]** -fliken gör att du kan ange översättningar för de teckensträngar som webbprogrammet består av.
 
-Första gången du öppnar den här fliken innehåller den inga data. Klicka på länken **[!UICONTROL Collect the strings to translate]** för att uppdatera strängarna i webbprogrammet.
+Första gången du öppnar den här fliken innehåller den inga data. Klicka på **[!UICONTROL Collect the strings to translate]** för att uppdatera strängarna i webbprogrammet.
 
-Adobe Campaign samlar in etiketter för fält och strängar som definieras på flikarna **[!UICONTROL Texts]** för alla statiska element: HTML-block, Javascript osv. Statiska element beskrivs i [Statiska element i ett webbformulär](static-elements-in-a-web-form.md).
+Adobe Campaign samlar in etiketter för fält och strängar som definieras i **[!UICONTROL Texts]** tabbar för alla statiska element: HTML block, Javascript osv. Statiska element beskrivs i [Statiska element i ett webbformulär](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -61,23 +61,23 @@ Adobe Campaign samlar in etiketter för fält och strängar som definieras på f
 >
 >Denna process kan ta flera minuter beroende på den datavolym som ska bearbetas.
 > 
->Om det visas en varning om att vissa översättningar saknas i systemordlistan finns mer information i [Översätta systemsträngarna](#translating-the-system-strings).
+>Om det visas en varning om att vissa översättningar saknas i systemordlistan finns det mer information i [Översätta systemsträngar](#translating-the-system-strings).
 
 Varje gång en sträng översätts läggs dess översättning till i översättningsordlistan.
 
-När samlingsprocessen upptäcker att en översättning redan finns visas den här översättningen i kolumnen **[!UICONTROL Text]** i strängen. Strängens status är **[!UICONTROL Translated]**.
+När samlingsprocessen upptäcker att en översättning redan finns visas den här översättningen i **[!UICONTROL Text]** -strängens -kolumn. Strängens status ändras till **[!UICONTROL Translated]**.
 
-För teckensträngar som aldrig har översatts är fältet **[!UICONTROL Text]** tomt och statusen är **[!UICONTROL To translate]**.
+För teckensträngar som aldrig har översatts visas **[!UICONTROL Text]** fältet är tomt och statusen är **[!UICONTROL To translate]**.
 
 ### Filtrera strängar {#filtering-strings}
 
-Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på knappen **[!UICONTROL Filters]** och klicka sedan på **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Mer information finns på [den här sidan](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på **[!UICONTROL Filters]** och sedan klicka **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Mer information finns på [den här sidan](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
-Välj översättningsspråk i listrutan **[!UICONTROL Language]**.
+Gå till **[!UICONTROL Language]** för att välja översättningsspråk.
 
-Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate]** i listrutan **[!UICONTROL Status]**. Du kan även visa endast översatta eller godkända strängar.
+Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate]** i **[!UICONTROL Status]** nedrullningsbar listruta. Du kan även visa endast översatta eller godkända strängar.
 
 ### Översätta strängar {#translating-strings}
 
@@ -87,13 +87,13 @@ Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate
 
    Källsträngen visas i fönstrets övre del.
 
-1. Ange översättningen i det nedre avsnittet. Kontrollera alternativet **[!UICONTROL Translation approved]** om du vill godkänna det.
+1. Ange översättningen i det nedre avsnittet. Kontrollera **[!UICONTROL Translation approved]** alternativ.
 
    >[!NOTE]
    >
    >Översättningsgodkännande är valfritt och blockerar inte processen.
 
-   Översättningar som inte är godkända visas som **[!UICONTROL Translated]**. Godkända översättningar visas som **[!UICONTROL Approved]**.
+   Ej godkända översättningar visas som **[!UICONTROL Translated]**. Godkända översättningar visas som **[!UICONTROL Approved]**.
 
 ## Extern översättning {#externalizing-translation}
 
@@ -109,7 +109,7 @@ Du kan exportera och importera teckensträngar för att översätta dem med ett 
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
-1. Välj en **[!UICONTROL Export strategy]**:
+1. Välj en **[!UICONTROL Export strategy]** :
 
    * **[!UICONTROL One file per language]**: vid exporten genereras en fil per översättningsspråk. Varje fil är gemensam för alla valda webbprogram.
    * **[!UICONTROL One file per Web application]**: vid exporten skapas en fil per valt webbprogram. Varje fil kommer att innehålla alla översättningsspråk.
@@ -125,16 +125,16 @@ Du kan exportera och importera teckensträngar för att översätta dem med ett 
       >
       >Den här typen av export är inte tillgänglig för XLIFF-export.
 
-1. Välj sedan **[!UICONTROL Target folder]** där filerna ska spelas in.
-1. Markera filformatet ( **[!UICONTROL CSV]** eller **[!UICONTROL XLIFF]**) och klicka på **[!UICONTROL Start]**.
+1. Välj sedan **[!UICONTROL Target folder]** var filerna ska registreras.
+1. Välj filformat ( **[!UICONTROL CSV]** eller **[!UICONTROL XLIFF]** ) och klicka på **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
->Namnen på exportfilerna genereras automatiskt. Om du utför samma export flera gånger kommer du att ersätta befintliga filer med de nya. Om du behöver behålla de tidigare filerna ändrar du **[!UICONTROL Target folder]** och klickar sedan på **[!UICONTROL Start]** igen för att köra exporten.
+>Namnen på exportfilerna genereras automatiskt. Om du utför samma export flera gånger kommer du att ersätta befintliga filer med de nya. Om du behöver behålla de tidigare filerna ändrar du **[!UICONTROL Target folder]** och sedan klicka **[!UICONTROL Start]** igen för att köra exporten.
 
-När du exporterar filer i **CSV-format** länkas varje språk till status och godkännandestatus. **Godkänn?** kan du godkänna en översättning. Den här kolumnen kan innehålla värdena **Yes** eller **No**. När det gäller den integrerade redigeraren (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)) är godkännande av översättningar valfritt och blockerar inte processen.
+När du exporterar filer i **CSV-format**&#x200B;är varje språk länkat till status och godkännandestatus. The **Godkänn?** kan du godkänna en översättning. Den här kolumnen kan innehålla värden **Ja** eller **Nej**. Vad gäller den inbyggda redigeraren (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)) är det valfritt att godkänna översättningar och processen blockeras inte.
 
 ### Importera filer {#importing-files}
 
@@ -158,7 +158,7 @@ När den externa översättningen är klar kan du importera de översatta filern
 
 ## Ändra visningsspråk för formulär {#changing-forms-display-language}
 
-Webbformulär visas på det standardspråk som anges på fliken **[!UICONTROL Localization]** i webbprogramsegenskaperna. Om du vill ändra språk måste du lägga till följande tecken i slutet av URL:en (där **xx** är symbolen för språket):
+Webbformulär visas på det standardspråk som anges i **[!UICONTROL Localization]** -fliken i webbprogrammets egenskaper. Om du vill ändra språk måste du lägga till följande tecken i slutet av URL:en (där **xx** är symbolen för språket):
 
 ```
 ?lang=xx
@@ -174,7 +174,7 @@ om det finns andra parametrar före språket i URL:en. Till exempel: **https://m
 
 De översättningsspråk och ordlistor som är tillgängliga som standard visas nedan.
 
-**Standardsystemordlista**: vissa språk innehåller en standardordlista som innehåller översättningen av systemsträngarna. Mer information finns i [Översätta systemsträngarna](#translating-the-system-strings).
+**Standardsystemordlista**: vissa språk innehåller en standardordlista som innehåller översättningen av systemsträngarna. Mer information finns i [Översätta systemsträngar](#translating-the-system-strings).
 
 **Kalenderhantering**: sidorna i ett webbprogram kan innehålla en kalender för att ange datum. Som standard är den här kalendern tillgänglig på flera språk (översättning av dagar, datumformat).
 
@@ -186,7 +186,7 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
    <td> <strong>Kalenderhantering</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Tyska (de)<br /> </td> 
+   <td> German (de)<br /> </td> 
    <td> ja<br /> </td> 
    <td> ja<br /> </td> 
   </tr> 
@@ -246,7 +246,7 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
    <td> ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Franska (Belgien) (fr_BE)<br /> </td> 
+   <td> French (Belgium) (fr_BE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -281,7 +281,7 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Italian (it)<br /> </td> 
+   <td> Italienska (it)<br /> </td> 
    <td> ja<br /> </td> 
    <td> ja<br /> </td> 
   </tr> 
@@ -331,7 +331,7 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Norwegian (Norway) (no_NO)<br /> </td> 
+   <td> Norska (Norge) (no_NO)<br /> </td> 
    <td> </td> 
    <td> ja<br /> </td> 
   </tr> 
@@ -376,12 +376,12 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
    <td> ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Swedish (Finland) (sv_FI)<br /> </td> 
+   <td> Svenska (Finland) (sv_FI)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Swedish (Sweden) (sv_SE)<br /> </td> 
+   <td> Svenska (Sverige) (sv_SE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -414,11 +414,11 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
 
 ## Exempel: visa ett webbprogram på flera språk {#example--displaying-a-web-application-in-several-languages}
 
-Följande webbformulär finns på fyra språk: Engelska, franska, tyska och spanska. Teckensträngarna har översatts via fliken **[!UICONTROL Translation]** i webbformuläret. Eftersom standardspråket är engelska kan du använda standard-URL:en för att visa den på engelska när enkäten publiceras.
+Följande webbformulär finns på fyra språk: Engelska, franska, tyska och spanska. Teckensträngarna har översatts via **[!UICONTROL Translation]** webbformulärets flik. Eftersom standardspråket är engelska kan du använda standard-URL:en för att visa den på engelska när enkäten publiceras.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
-Lägg till **?lang=fr** i slutet av URL:en för att visa den på franska:
+Lägg till **?lang=fr** till slutet av URL-adressen för att visa den på franska:
 
 >[!NOTE]
 >
@@ -426,7 +426,7 @@ Lägg till **?lang=fr** i slutet av URL:en för att visa den på franska:
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
-Du kan lägga till **?lang=es** eller **?lang=de** för att visa det på spanska eller tyska.
+Du kan lägga till **?lang=es** eller **?lang=de** för att visa den på spanska eller tyska.
 
 >[!NOTE]
 >
@@ -441,7 +441,7 @@ Du kan lägga till **?lang=es** eller **?lang=de** för att visa det på spanska
 
 ### Översätta systemsträngar {#translating-the-system-strings}
 
-Systemsträngar är färdiga teckensträngar som används i alla webbprogram. Till exempel: **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knappar, **[!UICONTROL Loading]** meddelanden osv. Som standard innehåller vissa språk en ordlista med översättningar för dessa strängar. Listan med språk finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
+Systemsträngar är färdiga teckensträngar som används i alla webbprogram. Till exempel: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knappar, **[!UICONTROL Loading]** meddelanden osv. Som standard innehåller vissa språk en ordlista med översättningar för dessa strängar. Listan med språk finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
 
 Om du översätter webbprogrammet till ett språk som inte har översatts av systemordlistan visas ett varningsmeddelande om att vissa översättningar saknas.
 
@@ -450,11 +450,11 @@ Om du översätter webbprogrammet till ett språk som inte har översatts av sys
 Så här lägger du till ett språk:
 
 1. Gå till Adobe Campaign-trädet och klicka på **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
-1. I fönstrets övre del väljer du den systemsträng som ska översättas och klickar sedan på **[!UICONTROL Add]** i det nedre avsnittet.
+1. I fönstrets övre del väljer du den systemsträng som ska översättas och klickar sedan på **[!UICONTROL Add]** i nedre delen.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Markera översättningsspråket och ange en översättning för strängen. Du kan godkänna översättningen genom att markera alternativet **[!UICONTROL Translation approved]**.
+1. Markera översättningsspråket och ange en översättning för strängen. Du kan godkänna översättningen genom att kontrollera **[!UICONTROL Translation approved]** alternativ.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -468,12 +468,12 @@ Så här lägger du till ett språk:
 
 ### Lägga till ett översättningsspråk {#adding-a-translation-language}
 
-Om du vill översätta webbprogram till andra språk än standardspråken (se [Ändra visningsspråk för formulär](#changing-forms-display-language)) måste du lägga till ett nytt översättningsspråk.
+Översätta webbprogram till andra språk än standardspråken (se [Ändra visningsspråk för formulär](#changing-forms-display-language)) måste du lägga till ett nytt översättningsspråk.
 
-1. Klicka på noden **[!UICONTROL Administration > Platform > Enumerations]** i Adobe Campaign-trädet och välj **[!UICONTROL Languages available for translation]** i listan. Listan med tillgängliga översättningar visas i fönstrets nedre del.
+1. Klicka på **[!UICONTROL Administration > Platform > Enumerations]** nod i Adobe Campaign-trädet och välj **[!UICONTROL Languages available for translation]** från listan. Listan med tillgängliga översättningar visas i fönstrets nedre del.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. Klicka på knappen **[!UICONTROL Add]** och ange sedan **[!UICONTROL Internal name]**, **[!UICONTROL Label]** och identifieraren för bilden (flaggan). Kontakta administratören om du vill lägga till en ny bild.
+1. Klicka på **[!UICONTROL Add]** och sedan ange **[!UICONTROL Internal name]**, **[!UICONTROL Label]** och bildens identifierare (flagga). Kontakta administratören om du vill lägga till en ny bild.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

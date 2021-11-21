@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-En lokal kampanj är en instans som skapats från en mall som refereras i listan **[!UICONTROL campaign packages]** med ett **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten. De viktigaste stegen för att genomföra en lokal åtgärd är följande:
+En lokal kampanj är en instans som skapats från en mall som refereras i listan med **[!UICONTROL campaign packages]** med **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten. De viktigaste stegen för att genomföra en lokal åtgärd är följande:
 
 **För den centrala enheten**
 
@@ -33,9 +33,9 @@ En lokal kampanj är en instans som skapats från en mall som refereras i listan
 
 ## Skapa en lokal kampanjmall {#creating-a-local-campaign-template}
 
-Om du vill skapa ett kampanjpaket måste du först skapa **kampanjmallen** via noden **[!UICONTROL Resources > Templates]**.
+Om du vill skapa ett kampanjpaket måste du först skapa **kampanjmall** via **[!UICONTROL Resources > Templates]** nod.
 
-Om du vill skapa en ny lokal mall duplicerar du standardmallen **[!UICONTROL Local campaign (opLocal)]**.
+Om du vill skapa en ny lokal mall duplicerar du standardmallen **[!UICONTROL Local campaign (opLocal)]** mall.
 
 ![](assets/mkg_dist_local_op_creation.png)
 
@@ -43,13 +43,13 @@ Ge kampanjmallen ett namn och fyll i de tillgängliga fälten.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-Klicka på fliken **[!UICONTROL Edit]** i kampanjfönstret och klicka sedan på länken **[!UICONTROL Advanced campaign settings...]**.
+Klicka på **[!UICONTROL Edit]** klickar du på **[!UICONTROL Advanced campaign settings...]** länk.
 
 ![](assets/mkt_distr_4.png)
 
 ### Webbgränssnitt {#web-interface}
 
-På fliken **Distribuerad marknadsföring** kan du välja typ av webbgränssnitt och ange standardvärden och parametrar som ska anges när en lokal enhet gör en beställning.
+I **Distribuerad marknadsföring** kan du välja typ av webbgränssnitt och ange standardvärden och parametrar som ska anges när en lokal enhet placerar en order.
 
 Webbgränssnittet motsvarar ett formulär som ska fyllas i av den lokala enheten när kampanjen beställs.
 
@@ -67,7 +67,7 @@ Det finns fyra typer av webbgränssnitt:
 
    ![](assets/mkt_distr_8.png)
 
-   Formuläret som erbjuds anges i ett webbprogram som måste väljas i en nedrullningsbar lista från fältet **[!UICONTROL web Interface]** i mallens **[!UICONTROL Advanced campaign settings...]**-länk. Se [Skapa en lokal kampanj (efter formulär)](examples.md#creating-a-local-campaign--by-form-).
+   Formuläret som erbjuds anges i ett webbprogram som måste väljas i en nedrullningsbar lista på menyn **[!UICONTROL web Interface]** i mallens **[!UICONTROL Advanced campaign settings...]** länk. Se [Skapa en lokal kampanj (per formulär)](examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
@@ -75,27 +75,27 @@ Det finns fyra typer av webbgränssnitt:
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : lokal enhet har åtkomst till kampanjparametrar i extranätet (inte Adobe Campaign). Dessa parametrar är identiska med parametrarna för en **lokal kampanj (efter formulär)**.
+* **[!UICONTROL By external form]** : lokal enhet har åtkomst till kampanjparametrar i extranätet (inte Adobe Campaign). De här parametrarna är identiska med parametrarna i en **lokal kampanj (per formulär)**.
 * **[!UICONTROL Pre-set]** : lokal enhet beställer kampanj med standardformuläret, utan att lokalisera den.
 
    ![](assets/mkt_distr_5.png)
 
 ### Standardvärden {#default-values}
 
-Markera **[!UICONTROL Default values]** som ska fyllas i av lokala entiteter. Exempel:
+Välj **[!UICONTROL Default values]** som ska fyllas i av lokala enheter. Exempel:
 
 * Kontakt- och extraktionsdatum.
 * målegenskaper (ålderssegment osv.).
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
-Fyll i fälten **[!UICONTROL Parent marketing program]** och **[!UICONTROL Charge]**.
+Slutför **[!UICONTROL Parent marketing program]** och **[!UICONTROL Charge]** fält.
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
 ### Godkännanden {#approvals}
 
-Från länken **[!UICONTROL Advanced parameters for campaign entry]** kan du ange maximalt antal granskare.
+Från **[!UICONTROL Advanced parameters for campaign entry]** kan du ange maximalt antal granskare.
 
 ![](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
@@ -107,7 +107,7 @@ Ange 0 om du inte vill namnge granskare för en kampanj.
 
 ### Dokument {#documents}
 
-Du kan tillåta lokala entitetsoperatorer att länka dokument (textfiler, kalkylblad, bilder, kampanjbeskrivningar osv.) till den lokala kampanjen när ordern skapas. Med länken **[!UICONTROL Advanced parameters for campaign entry...]** kan du begränsa antalet dokument. Om du vill göra det anger du det maximala antalet i fältet **[!UICONTROL Number of documents]**.
+Du kan tillåta lokala entitetsoperatorer att länka dokument (textfiler, kalkylblad, bilder, kampanjbeskrivningar osv.) till den lokala kampanjen när ordern skapas. The **[!UICONTROL Advanced parameters for campaign entry...]** kan du begränsa antalet dokument. Om du vill göra det anger du det maximala antalet i dialogrutan **[!UICONTROL Number of documents]** fält.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -115,31 +115,31 @@ När du beställer ett kampanjpaket föreslår formuläret att du länkar så m�
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-Om du inte vill visa ett dokumentöverföringsfält anger du **[!UICONTROL 0]** i fältet **[!UICONTROL Number of documents]**.
+Om du inte vill visa ett dokumentöverföringsfält anger du **[!UICONTROL 0]** i **[!UICONTROL Number of documents]** fält.
 
 >[!NOTE]
 >
->Du kan inaktivera **[!UICONTROL Advanced parameters for campaign entry]** genom att kontrollera **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
+>The **[!UICONTROL Advanced parameters for campaign entry]** kan inaktiveras genom kontroll **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### Arbetsflöde {#workflow}
 
-Skapa kampanjarbetsflödet som samlar in **[!UICONTROL Default values]** som anges i **[!UICONTROL Advanced campaign settings...]** på fliken **[!UICONTROL Targeting and workflows]** och skapar leveranserna.
+I **[!UICONTROL Targeting and workflows]** skapar du ett kampanjarbetsflöde som samlar in **[!UICONTROL Default values]** anges i **[!UICONTROL Advanced campaign settings...]** och skapar leveranserna.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-Dubbelklicka på aktiviteten **[!UICONTROL Query]** för att konfigurera den enligt den angivna **[!UICONTROL Default values]**.
+Dubbelklicka på **[!UICONTROL Query]** aktivitet som konfigurerar den enligt angivet **[!UICONTROL Default values]**.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### Leverans {#delivery}
 
-Klicka på ikonen **[!UICONTROL Detail...]** på fliken **[!UICONTROL Audit]** för att visa **[!UICONTROL Scheduling]** för den valda leveransen.
+I **[!UICONTROL Audit]** klickar du på **[!UICONTROL Detail...]** -ikonen för att visa **[!UICONTROL Scheduling]** för den valda leveransen.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-Med ikonen **[!UICONTROL Scheduling]** kan du konfigurera leveransens kontakt- och körningsdatum.
+The **[!UICONTROL Scheduling]** Med -ikonen kan du konfigurera leveransens kontakt- och körningsdatum.
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
@@ -147,11 +147,11 @@ Konfigurera vid behov maxstorleken för leveransen:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Hitta leveransens HTML. I **[!UICONTROL Delivery > Current order > Additional fields]** använder du till exempel fältet **[!UICONTROL Age segment]** för att hitta leveransen utifrån målets ålder.
+Hitta HTML. I **[!UICONTROL Delivery > Current order > Additional fields]**, använder du **[!UICONTROL Age segment]** för att hitta leveransen enligt målets ålder.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Spara kampanjmallen. Du kan nu använda den från vyn **[!UICONTROL Campaign packages]** på fliken **[!UICONTROL Campaigns]** genom att klicka på knappen **[!UICONTROL Create]**.
+Spara kampanjmallen. Du kan nu använda den från **[!UICONTROL Campaign packages]** visa i **[!UICONTROL Campaigns]** genom att klicka på **[!UICONTROL Create]** -knappen.
 
 ![](assets/mkt_distr_9.png)
 
@@ -165,14 +165,14 @@ För att kampanjmallen ska bli tillgänglig för lokala enheter måste den lägg
 
 Använd följande steg:
 
-1. Klicka på länken **[!UICONTROL Campaign packages]** i avsnittet **[!UICONTROL Navigation]** på sidan **Kampanjer**.
+1. I **[!UICONTROL Navigation]** i **Kampanjer** klickar du på **[!UICONTROL Campaign packages]** länk.
 1. Klicka på knappen **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. I avsnittet ovanför fönstret kan du välja den [tidigare](#creating-a-local-campaign-template) angivna kampanjpaketmallen.
+1. I avsnittet ovanför fönstret kan du välja [tidigare](#creating-a-local-campaign-template) angiven kampanjpaketmall.
 
-   Som standard används mallen **[!UICONTROL New local campaign package (localEmpty)]** för lokala kampanjer.
+   Som standard är **[!UICONTROL New local campaign package (localEmpty)]** -mall används för lokala kampanjer.
 
 1. Ange etikett, mapp och körningsschema för kampanjpaketet.
 
@@ -192,27 +192,27 @@ Denna information finns i det meddelande som skickas till lokala myndigheter, vi
 
 ### Målgrupp {#audience}
 
-För en lokal kampanj kan den centrala enheten ange de lokala enheter som ingår genom att kontrollera **[!UICONTROL Limit the package to a set of local entities]**.
+För en lokal kampanj kan den centrala enheten ange vilka lokala enheter som berörs genom att kontrollera **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
 ### Ytterligare inställningar {#additional-settings}
 
-När paketet har sparats kan den centrala enheten redigera det på fliken **[!UICONTROL Edit]**.
+När paketet har sparats kan den centrala enheten redigera det från **[!UICONTROL Edit]** -fliken.
 
 ![](assets/mkg_dist_edit_kit.png)
 
-Från fliken **[!UICONTROL General]** kan den centrala enheten:
+Från **[!UICONTROL General]** kan den centrala enheten
 
-* konfigurera granskare av kampanjpaket från länken **[!UICONTROL Approval parameters...]**,
+* konfigurera granskare av kampanjpaket från **[!UICONTROL Approval parameters...]** länk,
 * Granska körningsplanen.
 * lägga till eller ta bort lokala entiteter.
 
 >[!NOTE]
 >
->Som standard kan varje entitet endast beställa en **lokal kampanj** en gång.
+>Som standard kan varje enhet beställa en **lokal kampanj** bara en gång.
 >   
->Markera alternativet **[!UICONTROL Enable multiple creation]** om du vill tillåta att flera lokala kampanjer skapas från kampanjpaketet.
+>Kontrollera **[!UICONTROL Enable multiple creation]** möjlighet att tillåta att flera lokala kampanjer skapas från kampanjpaketet.
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
@@ -234,7 +234,7 @@ För att kunna använda en kampanj som erbjuds av den centrala enheten måste de
 
 Så här beställer du en kampanj:
 
-1. Klicka på **[!UICONTROL Order campaign]** i meddelandet eller på motsvarande knapp i Adobe Campaign.
+1. Klicka **[!UICONTROL Order campaign]** i meddelandet eller motsvarande knapp i Adobe Campaign.
 
    Ange ditt ID och lösenord för att beställa kampanjen. Gränssnittet består av en uppsättning sidor som definieras i ett webbprogram.
 
@@ -260,7 +260,7 @@ Så här beställer du en kampanj:
 
    ![](assets/mkg_dist_local_op_catalog_detail_1.png)
 
-   Fliken **[!UICONTROL Edit]** innehåller information som angetts av den lokala enheten när kampanjen beställdes.
+   The **[!UICONTROL Edit]** -fliken innehåller information som anges av den lokala enheten när kampanjen beställs.
 
    ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
@@ -268,11 +268,11 @@ Så här beställer du en kampanj:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Mer information finns i avsnittet [Godkännandeprocess](#approval-process).
+   Mer information finns i [Godkännandeprocess](#approval-process) -avsnitt.
 
-1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgängligheten finns i listan över kampanjpaket på fliken **Kampanjer**. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](accessing-campaigns.md).
+1. Den lokala operatorn meddelas sedan om att kampanjen är tillgänglig: kampanjtillgänglighet finns i listan över kampanjpaket i **Kampanjer** -fliken. Kampanjen kan sedan användas. Mer information finns i [Åtkomst till kampanjer](accessing-campaigns.md).
 
-   Med alternativet **[!UICONTROL Start targeting with order approval]** kan den lokala enheten köra kampanjen så snart ordern har godkänts.
+   The **[!UICONTROL Start targeting with order approval]** gör att den lokala enheten kan köra kampanjen så snart ordern har godkänts.
 
    ![](assets/mkg_dist_local_op_catalog_use.png)
 
@@ -280,7 +280,7 @@ Så här beställer du en kampanj:
 
 Den centrala enheten måste godkänna en kampanjorder för att bekräfta den.
 
-Med översikten **[!UICONTROL Campaign orders]**, som nås via fliken **Kampanjer**, kan du visa status för kampanjorder och godkänna dem.
+The **[!UICONTROL Campaign orders]** översikt, via **Kampanjer** kan du visa status för kampanjorder och godkänna dem.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ När en kampanj beställs av en lokal enhet meddelas dess granskare via e-post, 
 
 >[!NOTE]
 >
->Väljer granskare visas i [avsnittet Granskare](#reviewers). De kan godkänna eller avvisa ordern.
+>Välja granskare visas i [Granskare](#reviewers) -avsnitt. De kan godkänna eller avvisa ordern.
 
 ![](assets/mkg_dist_command_valid_web.png)
 
@@ -308,7 +308,7 @@ Beställningen kan också godkännas via konsolen i kampanjorderöversikten. Om 
 
 >[!NOTE]
 >
->Kampanjen kan fortfarande redigeras och konfigureras om fram till kampanjens tillgänglighetsdatum. Lokala enheter kan också avvisa kampanjen genom att klicka på knappen **[!UICONTROL Cancel]**.
+>Kampanjen kan fortfarande redigeras och konfigureras om fram till kampanjens tillgänglighetsdatum. Lokala enheter kan också avvisa kampanjen genom att klicka på **[!UICONTROL Cancel]** -knappen.
 
 #### Skapa en kampanj {#creating-a-campaign}
 
@@ -330,7 +330,7 @@ Information visas på sidan med kampanjpaket eller på sidan med kampanjorder. O
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-De kan visa den relaterade kommentaren på kampanjpaketets **[!UICONTROL Edit]**-flik.
+De kan visa den relaterade kommentaren i kampanjpaketets **[!UICONTROL Edit]** -fliken.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
@@ -346,8 +346,8 @@ För varje lokal enhet väljs granskarna ut för godkännande av kampanjorder oc
 
 ### Avbryta en order {#canceling-an-order}
 
-Centrala programkontoret kan avbryta en beställning med knappen **[!UICONTROL Delete]** som finns på orderkontrollpanelen.
+Centrala myndigheten kan annullera en order med **[!UICONTROL Delete]** på orderkontrollpanelen.
 
 ![](assets/mkg_dist_local_op_cancel.png)
 
-Detta avbryter kampanjen i vyn **[!UICONTROL Campaign orders]**.
+Detta avbryter kampanjen i **[!UICONTROL Campaign orders]** vy.

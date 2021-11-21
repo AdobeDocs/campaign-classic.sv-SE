@@ -52,7 +52,7 @@ De hjälper dig att identifiera de olika sammanhang i vilka arbetsflöden kan an
 * [Skapa en sammanfattningslista](creating-a-summary-list.md)
 * [Berika data](enriching-data.md)
 * [Använda aggregat](using-aggregates.md)
-* [Importera data krypterade med en nyckel som genererats av Kontrollpanelen](../../platform/using/unzip-decrypt.md)
+* [Importera data som krypterats med en nyckel som genererats av Kontrollpanelen](../../platform/using/unzip-decrypt.md)
 * [Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Kvartalsvis listuppdatering med en inkrementell fråga](quarterly-list-update.md)
 * [Använda funktionen Sammanfoga för aktiviteten Avduplicering](deduplication-merge.md)

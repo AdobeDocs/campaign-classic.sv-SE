@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-I följande avsnitt beskrivs den ytterligare konfiguration som krävs vid migrering från v6.02. Du bör även konfigurera inställningarna som anges i avsnittet [Allmänna konfigurationer](../../migration/using/general-configurations.md).
+I följande avsnitt beskrivs den ytterligare konfiguration som krävs vid migrering från v6.02. Du bör även konfigurera inställningarna som anges i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
 
 ## Webbapplikationer {#web-applications}
 
@@ -37,13 +37,13 @@ Om du inte använde dessa webbprogram kör du följande rensningsskript och kör
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Om du har ändrat dessa webbprogram och vill fortsätta använda dem i v7 måste du aktivera alternativet **allowSQLInjection** i dina olika säkerhetszoner och starta om efteruppgraderingen. Mer information finns i avsnittet [SQLData](../../migration/using/general-configurations.md#sqldata).
+Om du har ändrat dessa webbprogram och vill fortsätta använda dem i v7 måste du aktivera **allowSQLInjection** i dina olika säkerhetszoner och starta om efteruppgraderingen. Se [SQLData](../../migration/using/general-configurations.md#sqldata) om du vill ha mer information om detta.
 
 ## Användarvänlighet: Hemsida och navigering {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Om du vill fortsätta använda webbprogram av översiktstyp v6.02 måste du aktivera alternativet **allowSQLInjection** i dina olika säkerhetszoner före efteruppgraderingen. Se [Webbprogram](#web-applications).
+>Om du vill fortsätta använda webbprogram av översiktstyp v6.02 måste du aktivera **allowSQLInjection** i dina olika säkerhetszoner före uppgraderingen. Se [Webbprogram](#web-applications).
 
 Efter en migrering från version 6.02 visas inte längre startsidan för Adobe Campaign v6.02, men den är fortfarande tillgänglig och kompatibel med Adobe Campaign v7.
 
@@ -51,9 +51,9 @@ Om du vill fortsätta använda v6.02-startsidan måste du installera ett kompati
 
 Om du vill göra det importerar du kompatibilitetspaketet:
 
-Klicka på **[!UICONTROL Tools > Advanced > Import package]** och välj **campaignMigration.xml**-paketet i **`\nl\datakit\nms\[Your language]\package\optional`**.
+Klicka **[!UICONTROL Tools > Advanced > Import package]** och väljer **campaignMigration.xml** i **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-För att ge åtkomst till typgränssnitten för webbprogrammet v6.02 måste konfigurationsalternativet **sessionTokenOnly**-servern aktiveras i filen **serverConf.xml**:
+För att ge åtkomst till gränssnitt av typen v6.02 Web Application kan du **sessionTokenOnly** serverkonfigurationsalternativet måste aktiveras i **serverConf.xml** fil:
 
 ```
 sessionTokenOnly="true"
@@ -79,4 +79,4 @@ Om du vill lägga till ytterligare en översikt som konfigurerats i v6.02 måste
 
 Efter migrering av en kontrollinstans i Message Center måste du publicera om transaktionsmeddelandemallarna för att de ska fungera.
 
-I v7 har namnen på transaktionsmeddelandemallar för körningsinstanser ändrats. De prefixeras för närvarande av det operatörsnamn som motsvarar den kontrollinstans som de skapas i, till exempel **control1_template1_rt** (där **control1** är namnet på operatorn). Om du har ett stort antal mallar rekommenderar vi att du tar bort gamla mallar på kontrollinstanser.
+I v7 har namnen på transaktionsmeddelandemallar för körningsinstanser ändrats. De är för närvarande prefixerade av det operatörsnamn som motsvarar kontrollinstansen som de skapas i, till exempel **control1_template1_rt** (där **control1** är namnet på operatorn). Om du har ett stort antal mallar rekommenderar vi att du tar bort gamla mallar på kontrollinstanser.

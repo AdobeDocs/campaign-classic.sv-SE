@@ -17,16 +17,16 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Aggregat definieras på kubnivå för rapportering. En **[!UICONTROL Workflow]**-flik är tillgänglig när du konfigurerar en mängd.
+Aggregat definieras på kubnivå för rapportering. A **[!UICONTROL Workflow]** -fliken är tillgänglig när du konfigurerar en mängd.
 
-Mer information om kuber och hur du använder aggregat i Adobe Campaign finns i [avsnittet](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+Mer information om kuber och hur du använder aggregat i Adobe Campaign finns i [section](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
-Med aktiviteten **[!UICONTROL Update aggregate]** kan du välja det uppdateringsläge som ska användas: helt eller delvis.
+The **[!UICONTROL Update aggregate]** kan du välja vilket uppdateringsläge som ska användas: helt eller delvis.
 
 Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
 
 ![](assets/s_advuser_cube_agregate_05.png)
 
-**God praxis**: en  **[!UICONTROL Scheduler]** aktivitet kan användas för att ange frekvensen för uppdateringar av beräkningar.
+**God praxis**: a **[!UICONTROL Scheduler]** kan användas för att ange frekvensen för uppdateringar av beräkningar.
 
 ![](assets/s_advuser_cube_agregate_04.png)

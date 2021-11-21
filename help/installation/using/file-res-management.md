@@ -19,15 +19,15 @@ ht-degree: 0%
 
 ## Begränsa filformat för överföring {#limiting-uploadable-files}
 
-Använd attributet **uploadWhiteList** för att begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
+Använd **uploadWhiteList** för att begränsa vilka filtyper som kan överföras på Adobe Campaign-servern.
 
-Det här attributet är tillgängligt i **dataStore**-elementet i **serverConf.xml**-filen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Attributet är tillgängligt i **dataStore** -elementet i **serverConf.xml** -fil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 Standardvärdet för det här attributet är **.+** och gör att du kan överföra vilken filtyp som helst.
 
 Om du vill begränsa möjliga format ersätter du attributvärdet med ett giltigt reguljärt uttryck för java. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format på servern. Inga andra format godtas.
+Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Du kan också förhindra att viktiga filer överförs genom att konfigurera webb
 
 ## Konfiguration för proxyanslutning {#proxy-connection-configuration}
 
-Du kan ansluta Campaign-servern till ett externt system via en proxy, till exempel med hjälp av en **filöverföringsaktivitet**-arbetsflödesaktivitet. För att uppnå detta måste du konfigurera **proxyConfig**-avsnittet i **serverConf.xml**-filen med ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Du kan ansluta Campaign-servern till ett externt system via en proxy med hjälp av en **Filöverföring** arbetsflödesaktivitet till exempel. För att uppnå detta måste du konfigurera **proxyConfig** i **serverConf.xml** genom ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
-Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Observera att från och med Campaign 20.2 är HTTP- och HTTPS-protokollparametrarna **inte längre tillgängliga**. Dessa parametrar nämns fortfarande nedan eftersom de fortfarande är tillgängliga i tidigare versioner - inklusive 9032.
+Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Observera att från och med Campaign 20.2 är protokollparametrarna HTTP och HTTPS **inte längre tillgänglig**. Dessa parametrar nämns fortfarande nedan eftersom de fortfarande är tillgängliga i tidigare versioner - inklusive 9032.
 
 >[!CAUTION]
 >
@@ -109,23 +109,23 @@ Om du behöver använda iOS HTTP/2-anslutningen via en proxy stöds följande HT
 * HTTP utan autentisering
 * Grundläggande HTTP-autentisering
 
-Om du vill aktivera proxyläget måste följande ändring göras i filen `serverconf.xml`:
+Om du vill aktivera proxyläget måste följande ändring göras i `serverconf.xml` fil:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Mer information om denna iOS HTTP/2-anslutning finns på den här [sidan](../../delivery/using/about-mobile-app-channel.md).
+Mer information om denna iOS HTTP/2-anslutning finns i [page](../../delivery/using/about-mobile-app-channel.md).
 
 ## Hantera offentliga resurser {#managing-public-resources}
 
 För att vara allmänt tillgängliga måste de bilder som används i e-postmeddelanden och offentliga resurser som är kopplade till kampanjer finnas på en externt tillgänglig server. De kan sedan vara tillgängliga för externa mottagare eller operatorer. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Offentliga resurser lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
+Offentliga resurser lagras i **/var/res/instance** katalog i Adobe Campaign installationskatalog.
 
 Den matchande URL:en är: **http://server/res/instance** där **instance** är namnet på spårningsinstansen.
 
-Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<instance>`.xml** för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
+Du kan ange en annan katalog genom att lägga till en nod i **conf-`<instance>`.xml** fil för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
 
 ```
 <serverconf>

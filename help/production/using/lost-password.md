@@ -21,7 +21,7 @@ Du kan ändra eller återställa ett förlorat lösenord.
 Det finns två möjliga scenarier:
 
 * [Lösenord som gått förlorat av en Adobe Campaign-operatör](#password-lost-by-campaign-operator)
-* [Internt lösenord har gått förlorat](#internal-password-lost)  (endast lokala kunder)
+* [Lösenordet har tagits bort](#internal-password-lost) (endast lokala kunder)
 
 ## Lösenord som har gått förlorat av en kampanjoperator {#password-lost-by-campaign-operator}
 
@@ -45,9 +45,9 @@ Följ stegen nedan för att göra detta:
 Om det interna lösenordet går förlorat måste du initiera om det.
 Gör så här:
 
-1. Redigera filen **/usr/local/neolane/nl6/conf/serverConf.xml**.
+1. Redigera **/usr/local/neolane/nl6/conf/serverConf.xml** -fil.
 
-1. Gå till raden **internalPassword**.
+1. Gå till **internalPassword** linje.
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -77,4 +77,4 @@ Gör så här:
    Confirmation 
    ```
 
-1. Du kan nu använda ditt nya lösenord för att ansluta i läget **Intern**.
+1. Nu kan du använda ditt nya lösenord för att ansluta till **Intern** läge.

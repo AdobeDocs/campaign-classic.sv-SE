@@ -41,19 +41,19 @@ Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du [Ad
 </tr>
 <tr> 
 <td>svarar webbservern?</td> 
-<td>Anslut till Adobe Campaign server access URL med en webbläsare: <b>http(s)://&lt;urlserver&gt;</b>. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.</td>
+<td>Anslut till Adobe Campaign server access URL med en webbläsare: <b>http(s):// &lt;urlserver&gt;</b>. Om den inte svarar stoppas webbservern på datorn. Kontakta systemadministratören för värdföretaget för att starta om tjänsten.</td>
 </tr>
 <tr> 
 <td>Har Adobe Campaign integrerats korrekt?</td> 
-<td>Logga in på: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Servern ska returnera följande typ av meddelande: &lt;redir status='OK' date='YYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
-Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.</td>
+<td>Logga in på: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Servern ska returnera följande typ av meddelande: &lt;redir status="OK" date="YYYY/MM/DD HH&lt;span id="0" translate="no"/&gt;SS" build="XXXX" host="&lt;hostname&gt;" localhost="&lt;server&gt;" /&gt;
+Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.:MM:</td>
 </tr>
 <tr> 
-<td>Anslut till följande URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Anslut till följande URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
 <td>Om du får ett Tomcat Java-fel kontrollerar du om JAVA-integreringen är korrekt. Den är integrerad i filen [sökväg för programmet]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>Anslut till följande URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Anslut till följande URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
 <td>Om du får en tom sida kontrollerar du om Adobe Campaign webbmodul har startats. Kommandot nlserver pdump ska returnera Application Server för Adobe Campaign Classic (7.X YY.R build XXX@SHA1) av DD/MM/YYYY. Om inte startar du om modulen med kommandot nlserver som startar webben</td>
 </tr>
 <tr>

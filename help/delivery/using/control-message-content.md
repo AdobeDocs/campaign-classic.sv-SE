@@ -24,20 +24,20 @@ Följ nedanstående principer när du utformar ditt meddelandeinnehåll:
 * [Avsändarens adress](#sender-address): adressen måste uttryckligen identifiera avsändaren. Domänen måste ägas av och registreras hos avsändaren. Domänregistret får inte privatiseras.
 * [Personalisering](#personalization): genom att personalisera innehåll och definiera en sändningstid per mottagare ökar chanserna för att meddelandet öppnas.
 * Bilder och text: respekterar ett bra förhållande mellan text och bild (till exempel 60 % text och 40 % bilder).
-* [Unsubscription ](#opt-out) linkor and landing page: länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
-* Förhandsgranska: Använd verktygen från Adobe Campaign för att kontrollera och optimera innehållet i e-postmeddelandet ([Inkorgsåtergivning](#message-responsiveness), [SpamAssassin](#spamassassin)).
+* [Länk för att avbryta prenumeration](#opt-out) och landningssida: länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
+* Förhandsgranska: använda de verktyg som Adobe Campaign erbjuder för att kontrollera och optimera innehållet i e-postmeddelandet ([Inkorgsåtergivning](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Fler tips om hur du kan optimera slutprodukten när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
+Fler tips om hur du optimerar slutprodukten när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
 
 >[!NOTE]
 >
->Mer information om hur du redigerar e-postinnehåll finns i [Definiera e-postinnehållet](defining-the-email-content.md) och [Skapa anpassat innehåll](design-and-personalize.md).
+>Mer information om hur du redigerar e-postinnehåll finns i [Definiera e-postinnehållet](defining-the-email-content.md) och [Skapa personaliserat innehåll](design-and-personalize.md).
 
 ## Avsändarens adress {#sender-address}
 
-Vissa Internet-leverantörer kontrollerar giltigheten för avsändaradressen (**[!UICONTROL From]**) innan meddelanden accepteras. En felformaterad adress kan leda till att den nekas av den mottagande servern.
+Vissa Internetleverantörer kontrollerar avsändaradressens giltighet (**[!UICONTROL From]**) innan du accepterar meddelanden. En felformaterad adress kan leda till att den nekas av den mottagande servern.
 
-Du måste se till att rätt adress anges på förekomstnivå (meny **[!UICONTROL Tools > Advanced > Deployment wizard...]**) eller i de vanligaste scenarierna.
+Du måste se till att rätt adress anges på förekomstnivå (meny) **[!UICONTROL Tools > Advanced > Deployment wizard...]**) eller i de vanligaste scenarierna.
 
 Mer information finns i [Definiera avsändaren](defining-the-email-content.md).
 
@@ -51,9 +51,9 @@ Några tips om hur du kan optimera personaliseringen när du skapar ditt innehå
 
 ## Länk och formulär för avanmälan {#opt-out}
 
-Som standard kontrolleras om en avanmälningslänk har inkluderats när meddelandet analyseras och en [typologiregel](steps-validating-the-delivery.md#validation-process-with-typologies) genererar en varning om den saknas. Du kan ändra den här regeln så att ett fel uppstår i stället för en enkel varning och stoppa en leverans från att gå ut utan den här länken.
+Som standard är en [typologiregel](steps-validating-the-delivery.md#validation-process-with-typologies) kontrollerar om en avanmälningslänk har inkluderats och genererar en varning om den saknas. Du kan ändra den här regeln så att ett fel uppstår i stället för en enkel varning och stoppa en leverans från att gå ut utan den här länken.
 
-Du måste kontrollera att avanmälningslänken fungerar som den ska innan du skickar iväg den. När du t.ex. skickar korrekturet kontrollerar du att länken är giltig, att formuläret är online och att valideringen ändrar värdet för fältet **[!UICONTROL No longer contact this recipient]** till **[!UICONTROL Yes]**. Du bör göra den här kontrollen systematiskt eftersom det alltid är möjligt att göra mänskliga fel när du anger länken eller när du ändrar formuläret.
+Du måste kontrollera att avanmälningslänken fungerar som den ska innan du skickar iväg den. När du t.ex. skickar korrekturet ska du kontrollera att länken är giltig, att formuläret är online och att valideringen av detta ändrar värdet på **[!UICONTROL No longer contact this recipient]** fält till **[!UICONTROL Yes]**. Du bör göra den här kontrollen systematiskt eftersom det alltid är möjligt att göra mänskliga fel när du anger länken eller när du ändrar formuläret.
 
 Lär dig hur du infogar en länk för avanmälan [i det här avsnittet](personalization-blocks.md#personalization-blocks-example).
 
@@ -75,6 +75,6 @@ Mer information finns i [Inkorgsåtergivning](inbox-rendering.md).
 
 Adobe Campaign kan konfigureras för att fungera med SpamAssassin. Detta gör det möjligt att poängsätta e-postmeddelanden för att avgöra om ett meddelande löper risk att betraktas som skräppost av de antispam-verktyg som används vid mottagande.
 
-Innan du påbörjar en leverans kan du med fliken **[!UICONTROL Preview]** utvärdera riskerna. Ett varningsmeddelande ger resultatet av testet.
+Innan du påbörjar en leverans visas **[!UICONTROL Preview]** Med -fliken kan du utvärdera riskerna. Ett varningsmeddelande ger resultatet av testet.
 
-Läs mer i det här [avsnittet](spamassassin.md).
+Läs mer om detta [section](spamassassin.md).

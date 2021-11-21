@@ -26,7 +26,7 @@ Genom att konfigurera fält för villkorligt innehåll kan du skapa dynamisk per
 
 I exemplet nedan får du lära dig att skapa ett meddelande som dynamiskt anpassas efter mottagarens kön och intressen.
 
-* Visning som visar &quot;Mr.&quot; eller&quot;Fröken&quot; enligt värdet för fältet **[!UICONTROL Gender]** (M eller F) i datakällan,
+* Visning som visar &quot;Mr.&quot; eller&quot;Fröken&quot; enligt värdet på **[!UICONTROL Gender]** fält (M eller F) i datakällan,
 * Personligt anpassade nyhetsbrev eller kampanjerbjudanden enligt angivna eller identifierade intressen:
 
    * Ränta 1 - > Block 1
@@ -42,11 +42,11 @@ Om du vill skapa villkorligt innehåll enligt värdet för ett fält gör du så
 
    Anpassningselementen infogas i meddelandetexten. Du måste konfigurera dem nu.
 
-1. Fyll sedan i parametrarna för uttrycket **if**.
+1. Fyll sedan i parametrarna för **if** -uttryck.
 
    Så här gör du:
 
-   * Markera det första elementet i uttrycket, **`<field>`**, (som standard markeras det här elementet när uttrycket **if** infogas) och klicka på personaliseringsikonen för att ersätta det med testfältet.
+   * Markera det första elementet i uttrycket, **`<field>`**, (som standard markeras det här elementet när du infogar **if** och klicka på personaliseringsikonen för att ersätta den med testfältet.
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
@@ -55,7 +55,7 @@ Om du vill skapa villkorligt innehåll enligt värdet för ett fält gör du så
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Klicka på fliken **[!UICONTROL Preview]** för att visa innehållet i meddelandet enligt leveransmottagaren:
+1. Klicka på **[!UICONTROL Preview]** för att visa innehållet i meddelandet enligt leveransmottagaren:
 
    * Välja en mottagare för vilken villkoret är sant:
 
@@ -65,15 +65,15 @@ Om du vill skapa villkorligt innehåll enligt värdet för ett fält gör du så
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i ett eller flera fält. Använd **[!UICONTROL Conditional content > Else]** och **[!UICONTROL Conditional content > Else if]** för att göra detta. Uttrycken konfigureras på samma sätt som uttrycket **if**.
+Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i ett eller flera fält. Om du vill göra det använder du **[!UICONTROL Conditional content > Else]** och **[!UICONTROL Conditional content > Else if]**. Uttrycken är konfigurerade på samma sätt som **if** -uttryck.
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->Om du vill ta hänsyn till JavaScript-syntaxen måste du ta bort tecknen **%> &lt;%** efter att du har lagt till **Annars** och **Annars om** villkor.
+>Om du vill följa JavaScript-syntaxen **%> &lt;%** tecken måste tas bort efter att de har lagts till **Annars** och **Annars om** villkor.
 
-Klicka på **[!UICONTROL Preview]** och välj en mottagare för att visa det villkorliga innehållet.
+Klicka **[!UICONTROL Preview]** och välj en mottagare för att visa det villkorliga innehållet.
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
@@ -81,8 +81,8 @@ Klicka på **[!UICONTROL Preview]** och välj en mottagare för att visa det vil
 
 I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
-1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa en version eller den andra på värdet **Språk** för mottagarens profil. I det här exemplet är dessa värden inställda på **EN**, **FR**, **ES**.
-1. Klicka på fliken **[!UICONTROL Source]** i HTML-innehåll som skickas via e-post och klistra in följande kod:
+1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa en version eller den andra på **Språk** värdet för mottagarens profil. I det här exemplet är värdena inställda på **EN**, **FR**, **ES**.
+1. I e-postinnehållet i HTML klickar du på **[!UICONTROL Source]** och klistra in följande kod:
 
    ```
    <% if (language == "EN" ) { %>
@@ -103,7 +103,7 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    <% } %>
    ```
 
-1. Testa e-postinnehåll på fliken **[!UICONTROL Preview]** genom att välja mottagare med olika språk.
+1. Testa e-postinnehåll i **[!UICONTROL Preview]** genom att välja mottagare med olika språk.
 
    >[!NOTE]
    >
@@ -115,4 +115,4 @@ Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exemp
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Ytterligare Campaign Classic-instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

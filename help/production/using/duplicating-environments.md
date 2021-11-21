@@ -35,13 +35,13 @@ Gör så här:
 
 1. Skapa en kopia av databaserna för alla instanser i källmiljön,
 1. Återställ dessa kopior i alla instanser av målmiljön,
-1. Kör **nms:ezeInstance.js**-autentiseringsskriptet i målmiljön innan du startar det.
+1. Kör **nms:ezeInstance.js** autentiseringsskript i målmiljön innan det startas.
 
    Den här processen påverkar inte servrarna och deras konfiguration.
 
    >[!NOTE]
    >
-   >I Adobe Campaign kombinerar en **autentisering** åtgärder som gör att du kan stoppa alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.\
+   >Inom Adobe Campaign **auktorisering** kombinerar åtgärder som gör att du kan stoppa alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.\
    >Detta steg är nödvändigt för att undvika att leverera meddelanden flera gånger (en gång från den nominella miljön och en gång från den duplicerade miljön).
 
    >[!IMPORTANT]
@@ -61,14 +61,14 @@ För att den här processen ska fungera måste käll- och målmiljöerna ha samm
 
 ### Överföringsförfarande {#transfer-procedure}
 
-I det här avsnittet får du hjälp med att förstå hur du överför en källmiljö till en målmiljö via en fallstudie: Vi har som mål att återställa en produktionsmiljö (**prod**-instans) till en utvecklingsmiljö (**dev**-instans) så att den fungerar i ett sammanhang som ligger så nära den aktiva plattformen som möjligt.
+I det här avsnittet får du hjälp med att förstå hur du överför en källmiljö till en målmiljö via en fallstudie: målet är att återställa en produktionsmiljö (**prod** -instans) till en utvecklingsmiljö (**dev** -instans) för att arbeta i ett sammanhang som ligger så nära&quot;live&quot;-plattformen som möjligt.
 
 Följande steg måste utföras med stor noggrannhet: vissa processer kanske fortfarande pågår när källmiljöns databaser kopieras. Verifiering (steg 3 nedan) förhindrar att meddelanden skickas två gånger och upprätthåller datakonsekvensen.
 
 >[!IMPORTANT]
 >
 >* Följande procedur gäller för PostgreSQL-språk. Om SQL-språket är ett annat (till exempel Oracle) måste SQL-frågorna anpassas.
->* Nedanstående kommandon används i kontexten för en **prod**-instans och en **dev**-instans under PostgreSQL.
+>* Nedanstående kommandon används i ett **prod** -instans och en **dev** -instans under PostgreSQL.
 
 >
 
@@ -95,8 +95,8 @@ Med den här exporten kan du behålla dev-konfigurationen och bara uppdatera dev
 
 Det gör du genom att utföra en paketexport för följande två element:
 
-* Exportera tabellen **xtk:option** till en options_dev.xml-fil, utan posterna med följande interna namn: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; och &#39;NmsBroadcast_RegexRules&#39;.
-* I en &#39;extaccount_dev.xml&#39;-fil exporterar du tabellen **nms:extAccount** för alla poster vars ID är 0 (@id &lt;> 0).
+* Exportera **xtk:alternativ** till en options_dev.xml-fil, utan posterna med följande interna namn: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; och &#39;NmsBroadcast_RegexRules&#39;.
+* I en &#39;extaccount_dev.xml&#39;-fil exporterar du **nms:extAccount** för alla poster vars ID är 0 (@id &lt;> 0).
 
 Kontrollera att antalet exporterade alternativ/konton är lika med antalet rader som ska exporteras i varje fil.
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->I Windows kan processen **webmdl** fortfarande vara aktiv utan att påverka andra åtgärder.
+>I Windows **webmdl** -processen kan fortfarande vara aktiv utan att påverka andra åtgärder.
 
 Du kan även kontrollera att inga systemprocesser fortfarande körs.
 
 Gör så här:
 
-* I Windows: öppna **Aktivitetshanteraren** och kontrollera att det inte finns några **nlserver.exe**-processer.
-* I Linux: kör **ps aux | grep nlserver** och kontrollera att det inte finns några **nlserver**-processer.
+* I Windows: öppna **Aktivitetshanteraren** och kontrollera att det inte finns **nlserver.exe** -processer.
+* I Linux: kör **ps aux | grep nlserver** och kontrollera att det inte finns **nlserver** -processer.
 
 ### Steg 4 - Återställ databaserna i målmiljön (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +192,9 @@ Starta om Adobe Campaign-processerna för alla servrar i målmiljön.
 
 >[!NOTE]
 >
->Innan du startar om Adobe Campaign i **dev**-miljön kan du använda en extra säkerhetsprocedur: starta endast modulen **web**.
+>Innan du startar om Adobe Campaign på **dev** miljö kan du använda ytterligare en säkerhetsprocedur: starta **webb** endast modul.
 >  
->Det gör du genom att redigera instansens konfigurationsfil (**config-dev.xml**) och sedan lägga till tecknet &quot;_&quot; före alternativen autoStart=&quot;true&quot; för varje modul (mta, stat osv.).
+>Om du vill göra det redigerar du instansens konfigurationsfil (**config-dev.xml**) lägger du sedan till tecknet &quot;_&quot; före alternativen autoStart=&quot;true&quot; för varje modul (mta, stat osv.).
 
 Kör följande kommando för att starta webbprocessen:
 
@@ -223,11 +223,11 @@ Så här importerar du konfigurationen från målmiljödatabasen (dev):
 1. Öppna administrationskonsolen för databasen och rensa de externa konton (tabell nms:extAccount) vars ID är 0 (@id &lt;> 0).
 1. I Adobe Campaign-konsolen importerar du det options_dev.xml-paket som tidigare skapats via importpaketsfunktionen.
 
-   Kontrollera att alternativen verkligen har uppdaterats i noden **[!UICONTROL Administration > Platform > Options]**.
+   Kontrollera att alternativen verkligen har uppdaterats i **[!UICONTROL Administration > Platform > Options]** nod.
 
 1. I Adobe Campaign-konsolen importerar du den extaccount_dev.xml som tidigare skapats via importpaketsfunktionen
 
-   Kontrollera att externa databaser verkligen har importerats i **[!UICONTROL Administration > Platform > External accounts]**.
+   Kontrollera att externa databaser verkligen har importerats i **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Steg 9 - Starta om alla processer och ändra användare (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 

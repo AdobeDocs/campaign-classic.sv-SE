@@ -275,7 +275,7 @@ _30 maj 2019_
 * Ett problem med att ta bort ID när dirigerade adresser används i en leverans har korrigerats. (NEO-11842)
 * Ett problem med kompatibilitet mellan phantomjs och Debian 9 har korrigerats.
 * Korrigerade ett fel vid godkännande av innehållet i ett korrektur. (NEO-12725)
-* Ett problem med arbetsflödesfunktionen Uteslut den här delmängden från ifyllningen har korrigerats. (NEO-12441)
+* Ett problem med arbetsflödesfunktionen Exkludera den här delmängden från ifyllningen har korrigerats. (NEO-12441)
 * Korrigerade ett problem med HTTPRequest-wait-API som inte väntade på att alla återanrop skulle slutföras. (NEO-12628)
 * Korrigerade ett problem med aktiviteten Uppdatera delad publik i en delad aktivitet. (NEO-11562)
 * Korrigerade ett webbserverkraschproblem. (NEO-12904)

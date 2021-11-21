@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-Om du valde alternativet **[!UICONTROL Do not request console update]** och vill återaktivera uppdateringsbegäran gör du så här:
+Om du valde **[!UICONTROL Do not request console update]** och du vill återaktivera uppdateringsbegäran gör du så här:
 
-1. Öppna redigeraren för registerdatabasen med kommandot **regedit** i Windows **[!UICONTROL Start > Execute]**-menyn.
+1. Öppna registerdatabasens redigerare med **regedit** i Windows **[!UICONTROL Start > Execute]** -menyn.
 
    ![](assets/ncs_console_update_1.png)
 
-1. Visa alternativen för noden **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** i trädet.
-1. Ta bort **[!UICONTROL confAdvisedUpgrade]**-posten och stäng Registereditorn.
+1. Visa alternativen för **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** nod.
+1. Ta bort **[!UICONTROL confAdvisedUpgrade]** och stäng Registereditorn.
 
    ![](assets/ncs_console_update_2.png)

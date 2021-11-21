@@ -23,34 +23,34 @@ I följande avsnitt ges en översikt över den konfiguration som krävs för att
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i [Värdmodeller](../../installation/using/hosting-models.md) avsnitt eller till [den här sidan](../../installation/using/capability-matrix.md).
 
-Mer information om koncept och bästa metoder för att leverera med Adobe Campaign finns i [avsnittet](../../delivery/using/about-deliverability.md).
+Mer information om koncept och bästa metoder för slutprodukter med Adobe Campaign finns i [section](../../delivery/using/about-deliverability.md).
 
-Mer information om vad som kan levereras, inklusive alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via Adobe, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+En djupdykning i vad som kan levereras, inklusive alla tekniska rekommendationer om hur man på ett effektivt sätt kan skicka och ta emot e-post via en Adobe-plattform, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Verksamhetsprincip {#operating-principle}
 
-Det går att styra utdata från en eller flera Adobe Campaign-instanser för att begränsa antalet e-postmeddelanden som skickas beroende på en domän. Du kan till exempel begränsa utdata till 20 000 per timme för **yahoo.com**-adresser och konfigurera 100 000 meddelanden per timme för alla andra domäner.
+Det går att styra utdata från en eller flera Adobe Campaign-instanser för att begränsa antalet e-postmeddelanden som skickas beroende på en domän. Du kan till exempel begränsa utdata till 20 000 per timme i **yahoo.com** adresser, medan 100 000 meddelanden per timme konfigureras för alla andra domäner.
 
-Meddelandeutdata måste kontrolleras för varje IP-adress som används av leveransservrarna (**mta**). Flera **mta** som har delats upp på flera datorer och tillhör olika Adobe Campaign-instanser kan dela samma IP-adress för e-postleverans: En process måste skapas för att koordinera användningen av dessa IP-adresser.
+Meddelandeutdata måste kontrolleras för varje IP-adress som används av leveransservrarna (**mta**). Flera **mta** som delas upp på flera datorer och som tillhör olika Adobe Campaign-instanser kan dela samma IP-adress för e-postleverans: En process måste skapas för att koordinera användningen av dessa IP-adresser.
 
-Detta är vad modulen **stat** gör: den vidarebefordrar alla anslutningsbegäranden och meddelanden som ska skickas till e-postservrarna för en uppsättning IP-adresser. Statistikservern håller reda på leveranser och kan aktivera eller inaktivera sändning baserat på angivna kvoter.
+Det här är vad **stat** modulen gör: den vidarebefordrar alla anslutningsbegäranden och meddelanden som ska skickas till e-postservrarna för en uppsättning IP-adresser. Statistikservern håller reda på leveranser och kan aktivera eller inaktivera sändning baserat på angivna kvoter.
 
 ![](assets/s_ncs_install_mta.png)
 
 * Statistikservern (**stat**) är länkad till en Adobe Campaign-bas för att läsa in dess konfiguration.
-* Leveransservrarna (**mta**) använder en UDP för att kontakta en statistikserver som inte alltid tillhör sin egen instans.
+* Leveransservrarna (**mta**) använder du en UDP för att kontakta en statistikserver som inte alltid tillhör sin egen instans.
 
 ### Leveransservrar {#delivery-servers}
 
-Modulen **mta** distribuerar meddelanden till de underordnade modulerna **mtachild**. Varje **dator** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
+The **mta** för att distribuera meddelanden till **mtachild** underordnade moduler. Varje **mtachild** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
 
 Stegen är följande:
 
-1. **mta** väljer giltiga meddelanden och tilldelar dem en tillgänglig **mtachild**.
-1. **Mtachild** läser in all information som krävs för att skapa meddelandet (innehåll, anpassningselement, bilagor, bilder osv.) och vidarebefordrar meddelandet till **Email Traffic Shaper**.
-1. Så snart som e-posttrafikShaper tar emot statistikserverns auktorisering (**smtp stat**) skickas meddelandet till mottagaren.
+1. The **mta** väljer giltiga meddelanden och tilldelar dem en tillgänglig **mtachild**.
+1. The **mtachild** läser in all information som krävs för att skapa meddelandet (innehåll, anpassningselement, bilagor, bilder osv.) och vidarebefordrar meddelandet till **E-posttrafikschaper**.
+1. Så snart som e-posttrafikbladet får statistikserverns tillstånd (**smtp-status**) skickas meddelandet till mottagaren.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
 
@@ -75,35 +75,35 @@ Statistikservern kan kombinera flera instanser eller flera datorer med samma off
 
 Leveransstatistik finns för varje mål-MX och för varje käll-IP. Om måldomänen till exempel har 5 MX och plattformen kan använda tre olika IP-adresser, kan servern hantera upp till 15 serier med indikatorer för den här domänen.
 
-Källans IP-adress matchar den offentliga IP-adressen, dvs. adressen som den visas av fjärre-postservern. Den här IP-adressen kan skilja sig från adressen för den dator som är värd för **mta**, om en NAT-router anges. Det är därför statistikservern använder en identifierare som matchar det offentliga IP-värdet (**publicId**). Associationen mellan den lokala adressen och den här identifieraren deklareras i konfigurationsfilen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Källans IP-adress matchar den offentliga IP-adressen, dvs. adressen som den visas av fjärre-postservern. Den här IP-adressen kan skilja sig från adressen för datorn som är värd för **mta**, om det finns en NAT-router. Detta är orsaken till varför statistikservern använder en identifierare som matchar den offentliga IP-adressen (**publicId**). Associationen mellan den lokala adressen och den här identifieraren deklareras i **serverConf.xml** konfigurationsfil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 ## Leveransstyrning {#delivery-output-controlling}
 
-För att kunna leverera meddelanden till e-postservrar begär **Email Traffic Shaper**-komponenten en anslutning från statistikservern. När begäran har godkänts öppnas anslutningen.
+För att kunna leverera meddelanden till e-postservrar **E-posttrafikschaper** -komponenten begär en anslutning från statistikservern. När begäran har godkänts öppnas anslutningen.
 
 Innan meddelanden skickas begär modulen &#39;tokens&#39; från servern. Dessa består vanligtvis av minst 10 tokens, vilket minskar antalet frågor till servern.
 
 Servern sparar all statistik som hör till anslutningar och leveranser. Om du startar om går informationen tillfälligt förlorad: varje kund sparar en lokal kopia av sin sändningsstatistik och returnerar dem till servern regelbundet (varannan minut). Servern kan sedan samla in data på nytt.
 
-I följande avsnitt beskrivs hur ett meddelande behandlas av komponenten **Email Traffic Shaper**.
+I följande avsnitt beskrivs hur ett meddelande behandlas av **E-posttrafikschaper** -komponenten.
 
 ### Meddelandeleverans {#message-delivery}
 
 När ett meddelande skickas kan du få tre möjliga resultat:
 
-1. **Slutfört**: meddelandet har skickats Meddelandet uppdateras.
+1. **Lyckades**: meddelandet har skickats Meddelandet uppdateras.
 1. **Meddelandet misslyckades**: den kontaktade servern avvisade meddelandet för den valda mottagaren. Resultatet matchar returkoderna 550 till 599, men undantag kan definieras.
-1. **Sessionen misslyckades**  (för 5.11 uppåt): Om  **** meddelandet får ett svar på meddelandet, överges meddelandet (se  [Meddelande överges](#message-abandonment)). Meddelandet skickas till en annan sökväg eller anges till väntande om inga andra sökvägar är tillgängliga (se [Meddelande väntar](#message-pending)).
+1. **Sessionen misslyckades** (för 5.11 uppåt): om **mta** får ett svar på det här meddelandet. Meddelandet överges (se [Avbrutet meddelande](#message-abandonment)). Meddelandet skickas till en annan sökväg eller anges till väntande om inga andra sökvägar är tillgängliga (se [Meddelande väntar](#message-pending)).
 
    >[!NOTE]
    >
-   >En **sökväg** är en anslutning mellan Adobe Campaign **mta** och målet **mta**. Adobe Campaign **mta** kan välja mellan flera IP-startadresser och flera IP-måldomäner.
+   >A **bana** är en anslutning mellan Adobe Campaign **mta** och målet **mta**. Adobe Campaign **mta** kan välja mellan flera IP-startadresser och flera IP-måldomäner.
 
 ### Avbrutet meddelande {#message-abandonment}
 
-Övergivna meddelanden returneras till **mta** och hanteras inte längre av **mtachild**.
+Övergivna meddelanden skickas tillbaka till **mta** och hanteras inte längre av **mtachild**.
 
-**mta** bestämmer proceduren för det här meddelandet (återställning, övergivande, karantän osv.) beroende på svarskoden och reglerna.
+The **mta** besluta om förfarandet för detta meddelande (återkrav, övergivande, karantän etc.), beroende på svarskoden och reglerna.
 
 ### Meddelande väntar {#message-pending}
 
@@ -119,11 +119,11 @@ Börja med att definiera den Adobe Campaign-databas som ska vara värd för konf
 
 ### Starta konfiguration {#start-configuration}
 
-Som standard startas modulen **stat** för varje instans. När instanser samlas på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
+Som standard är **stat** för varje instans startas modulen. När instanser samlas på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
 
 ### Definition av serverporten {#definition-of-the-server-port}
 
-Som standard avlyssnar statistikservern port 7777. Den här porten kan ändras i filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
+Som standard avlyssnar statistikservern port 7777. Den här porten kan ändras i **serverConf.xml** -fil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 ```
 <stat port="1234"/>
@@ -133,7 +133,7 @@ Som standard avlyssnar statistikservern port 7777. Den här porten kan ändras i
 
 >[!IMPORTANT]
 >
->Om du har uppgraderat till [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallationer används inte längre leveransgenomströmningsreglerna för **[!UICONTROL MX management]**. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL MX management]** regler för leveransflöde används inte längre. Den utökade MTA-servern använder sina egna MX-regler som gör att den kan anpassa din genomströmning efter domän baserat på ditt eget historiska e-postrykte och på realtidsfeedback som kommer från de domäner där du skickar e-post.
 
 ### Om MX-regler {#about-mx-rules}
 
@@ -160,7 +160,7 @@ user:~ user$ host -t mx yahoo.com
                 yahoo.com mail is handled by 1 mta7.am0.yahoodns.net.
 ```
 
-MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta till Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
+MX-poster för yahoo.com talar om för oss att yahoo.com har 3 Mail Exchangers. För att ansluta Peer Mail Exchanger kommer MTA att begära dess IP-adress från DNS.
 
 ```
 user:~ user$ host -t a mta5.am0.yahoodns.net
@@ -212,16 +212,16 @@ Dessa meddelanden kommer att levereras så snabbt som möjligt.
 
 ### Konfigurera MX-hantering {#configuring-mx-management}
 
-Reglerna som ska följas för MX definieras i **[!UICONTROL MX management]**-dokumentet för **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**-noden i trädet.
+De regler som ska följas för MX anges i **[!UICONTROL MX management]** dokumentet **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** trädnod.
 
-Om **[!UICONTROL MX management]**-dokumentet inte finns i noden kan du skapa det manuellt. Så här gör du:
+Om **[!UICONTROL MX management]** dokumentet finns inte i noden, du kan skapa det manuellt. Så här gör du:
 
 1. Skapa en ny uppsättning e-postregler.
 1. Välj **[!UICONTROL MX management]**-läget.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
-1. Ange **defaultMXRules** i fältet **[!UICONTROL Internal name]**.
+1. Retur **defaultMXRules** i **[!UICONTROL Internal name]** fält.
 
 För att ändringarna ska kunna beaktas måste du starta om statistikservern.
 
@@ -233,7 +233,7 @@ Om du vill läsa in konfigurationen på nytt utan att starta om statistikservern
 
 ### Konfigurera MX-regler {#configuring-mx-rules}
 
-I **[!UICONTROL MX management]**-dokumentet visas alla domäner som är länkade till en MX-regel.
+The **[!UICONTROL MX management]** -dokument visar alla domäner som är länkade till en MX-regel.
 
 Dessa regler tillämpas i sekvens: den första regeln vars MX-mask är kompatibel med MX-målfilen används.
 
@@ -262,7 +262,7 @@ Följande parametrar är tillgängliga för varje regel:
    gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
    ```
 
-   I det här fallet används MX-regeln `*.google.com`. Som du ser matchar MX-regelmasken inte nödvändigtvis domänen i e-postmeddelandet. De MX-regler som används för e-postadresser på gmail.com är de som har masken `*.google.com`.
+   I det här fallet MX-regeln `*.google.com` kommer att användas. Som du ser matchar MX-regelmasken inte nödvändigtvis domänen i e-postmeddelandet. MX-reglerna som används för e-postadresserna gmail.com är de som används med masken `*.google.com`.
 
 * **[!UICONTROL Range of identifiers]**: Med det här alternativet kan du ange intervallet för identifierare (publicID) som regeln gäller för. Du kan ange:
 
@@ -273,7 +273,7 @@ Följande parametrar är tillgängliga för varje regel:
    >
    >Om fältet är tomt gäller regeln alla identifierare.
 
-   Ett offentligt ID är en intern identifierare för en offentlig IP som används av en eller flera MTA. Dessa ID:n definieras i MTA-servrarna i filen **config-instance.xml**.
+   Ett offentligt ID är en intern identifierare för en offentlig IP som används av en eller flera MTA. Dessa ID:n definieras i MTA-servrarna i **config-instance.xml** -fil.
 
    ![](assets/s_ncs_install_mta_ips.png)
 
@@ -312,24 +312,24 @@ Konfigurationsexempel:
 
 Du kan definiera formatet för skickade meddelanden så att innehållet som visas automatiskt anpassas efter domänen för varje mottagares adress.
 
-Det gör du genom att gå till **[!UICONTROL Management of email formats]**-dokumentet, som finns i **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
+För att göra det går du till **[!UICONTROL Management of email formats]** -dokument, som finns i **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
 Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. Mer information finns i [det här dokumentet](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 ![](assets/mail_rule_sets.png)
 
-Med parametern **MIME-struktur** (Multipurpose Internet Mail Extensions) kan du definiera den meddelandestruktur som ska skickas till de olika e-postklienterna. Det finns tre alternativ:
+The **MIME-struktur** (Multipurpose Internet Mail Extensions) gör att du kan definiera meddelandestrukturen som ska skickas till olika e-postklienter. Det finns tre alternativ:
 
-* **Multipart**: Meddelandet skickas i text- eller HTML-format. Om HTML-formatet inte godkänns kan meddelandet fortfarande visas i textformat.
+* **Multipart**: Meddelandet skickas i text- eller HTML-format. Om formatet HTML inte godkänns kan meddelandet fortfarande visas i textformat.
 
-   Som standard är multipart-strukturen **multipart/option**, men den blir automatiskt **multipart/related** när en bild läggs till i meddelandet. Vissa leverantörer förväntar sig formatet **multipart/related** som standard använder alternativet **[!UICONTROL Force multipart/related]** det här formatet även om ingen bild är kopplad.
+   Som standard är multipart-strukturen **multipart/option**, men det blir automatiskt **multipart/related** när en bild läggs till i meddelandet. Vissa leverantörer förväntar sig **multipart/related** som standard, **[!UICONTROL Force multipart/related]** detta format används även om ingen bild är kopplad.
 
-* **HTML**: Ett meddelande som bara innehåller HTML skickas. Om HTML-formatet inte godkänns visas inte meddelandet.
+* **HTML**: Ett meddelande som bara innehåller HTML skickas. Om HTML inte godkänns visas inte meddelandet.
 * **Text**: Ett meddelande i textformat skickas. Fördelen med textformatmeddelanden är att de är mycket små.
 
-Om alternativet **[!UICONTROL Image inclusion]** är aktiverat visas dessa direkt i e-postmeddelandet. Bilderna överförs sedan och URL-länkarna ersätts av innehållet.
+Om **[!UICONTROL Image inclusion]** är aktiverat visas dessa direkt i e-postmeddelandet. Bilderna överförs sedan och URL-länkarna ersätts av innehållet.
 
-Det här alternativet används särskilt av den japanska marknaden för **Deco-mail**, **Decore Mail** eller **Decoration Mail**. Mer information finns i [det här dokumentet](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Det här alternativet används särskilt av den japanska marknaden för **Deco-mail**, **Avböj e-post** eller **Dekoration Mail**. Mer information finns i [det här dokumentet](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 >[!IMPORTANT]
 >
@@ -345,7 +345,7 @@ Klockorna för alla servrar som utgör Adobe Campaign-plattformen (inklusive dat
 
 Statistikserverns adress måste anges i **mta**.
 
-Med egenskapen **statServerAddress** för elementet **mta** i konfigurationen kan du ange adress och nummer för den port som ska användas.
+The **statServerAddress** egenskapen för **mta** -elementet i konfigurationen gör att du kan ange adress och nummer för den port som ska användas.
 
 ```
 <mta statServerAddress="emailStatServer:7777">
@@ -353,7 +353,7 @@ Med egenskapen **statServerAddress** för elementet **mta** i konfigurationen ka
  </mta>
 ```
 
-Om du vill använda statistikservern på samma dator måste du ange åtminstone namnet på datorn med **localhost**-värdet:
+Om du vill använda statistikservern på samma dator måste du ange åtminstone namnet på datorn med **localhost** värde:
 
 ```
  <mta statServerAddress="localhost">
@@ -361,13 +361,13 @@ Om du vill använda statistikservern på samma dator måste du ange åtminstone 
 
 >[!IMPORTANT]
 >
->Om det här fältet inte fylls i startar inte **mta**.
+>Om fältet inte fylls i visas **mta** kommer inte att starta.
 
 ### Lista över IP-adresser som ska användas {#list-of-ip-addresses-to-use}
 
-Konfigurationen för trafikhantering finns i elementet **mta/child/smtp** i konfigurationsfilen.
+Konfigurationen för trafikledning finns i **mta/child/smtp** -element i konfigurationsfilen.
 
-För varje **IPAfinity**-element måste du deklarera de IP-adresser som kan användas för datorn.
+För varje **IPAfinity** måste du deklarera IP-adresserna som kan användas för datorn.
 
 Exempel:
 
@@ -384,7 +384,7 @@ Parametrarna är följande:
 * **adress**: Detta är IP-adressen till den MTA-värddator som ska användas.
 * **heloHost**: den här identifieraren representerar IP-adressen så som den kommer att ses av SMTP-servern.
 
-* **publicId**: den här informationen är användbar när en IP-adress delas av flera Adobe Campaign- **** datorer bakom en NAT-router. Statistikservern använder den här identifieraren för att memorera anslutningen och skicka statistik mellan den här startpunkten och målservern.
+* **publicId**: den här informationen är användbar när en IP-adress delas av flera Adobe Campaign **mtas** bakom en NAT-router. Statistikservern använder den här identifieraren för att memorera anslutningen och skicka statistik mellan den här startpunkten och målservern.
 * **vikt**: Här kan du definiera den relativa användningsfrekvensen för adressen. Som standard har alla adresser en vikt som är lika med 1.
 
 >[!NOTE]
@@ -393,20 +393,20 @@ Parametrarna är följande:
 
 I det föregående exemplet, med normala villkor, distribueras adresserna enligt följande:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;1&quot;: 5 / (5+5+1) = 45 %
+    * &quot;2&quot;: 5 / (5+5+1) = 45 %
     * &quot;3&quot;: 1 / (5+5+1) = 10 %
 
 Om till exempel den första adressen inte kan användas för ett givet MX, skickas meddelanden enligt följande:
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;2&quot;: 5 / (5+1) = 83 %
     * &quot;3&quot;: 1 / (5+1) = 17 %
 
 * **includeDomains**: Med kan du reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;*&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
 
    Exempel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
 
-* **excludeDomains**: utelämnar en lista över domäner för den här IP-adressen. Det här filtret tillämpas efter **includeDomains**-filtret.
+* **excludeDomains**: utelämnar en lista över domäner för den här IP-adressen. Det här filtret används efter **includeDomains** filter.
 
    ![](assets/s_ncs_install_mta_ips.png)
 
@@ -416,14 +416,14 @@ Adobe Campaign interna arkitektur **mta** påverkar konfigurationen för optimer
 
 ### Justera parametern maxWaitMessages {#adjust-the-maxwaitingmessages-parameter}
 
-Parametern **maxWaitMessages** anger det högsta antalet meddelanden som har förberetts av **mtachild**. Meddelanden tas bara bort från den här listan när de har skickats eller övergetts.
+The **maxWaitMessages** parameter anger det högsta antalet meddelanden som har förberetts av **mtachild**. Meddelanden tas bara bort från den här listan när de har skickats eller övergetts.
 
 Den här parametern är mycket viktig och särskilt viktig om meddelanden inte sorteras efter domän.
 
-När tröskelvärdet för **maxWorkingSetMb** (256) har uppnåtts slutar leveransservern att skicka meddelanden. Prestandan minskar avsevärt tills **mtachild** startas igen. Om du vill kringgå det här problemet kan du antingen öka tröskelvärdet för parametern **maxWorkingSetMb** eller minska tröskelvärdet för parametern **maxWaitMessages**.
+När **maxWorkingSetMb** (256) har nått tröskelvärdet och leveransservern slutar skicka meddelanden. Prestandan minskar avsevärt fram till **mtachild** börjar om. Du kan antingen öka tröskelvärdet för **maxWorkingSetMb** eller minska tröskelvärdet för **maxWaitMessages** parameter.
 
-Parametern **maxWorkingSetMb** beräknas empiriskt genom att det maximala antalet meddelanden multipliceras med den genomsnittliga meddelandestorleken och resultatet multipliceras med 2,5. Om ett meddelande till exempel har en genomsnittlig storlek på 50 kB och parametern **maxWaitMessages** är lika med 1 000, kommer det använda minnet att bli i genomsnitt 125 MB.
+The **maxWorkingSetMb** parametern beräknas empiriskt genom att det maximala antalet meddelanden multipliceras med den genomsnittliga meddelandestorleken och resultatet multipliceras med 2,5. Om ett meddelande till exempel har en genomsnittlig storlek på 50 kB och **maxWaitMessages** är lika med 1 000, vilket innebär att det använda minnet i genomsnitt är 125 MB.
 
 ### Justera antalet datorer {#adjust-the-number-of-mtachild}
 
-Antalet underordnade bör inte överstiga antalet processorer i datorn (ca. 1000 sessioner). Vi rekommenderar att du inte överskrider 8 **mtachild**. Du kan sedan öka antalet meddelanden per **underordnad** (**maxMsgPerChild**) för att uppnå en tillräcklig livstid.
+Antalet underordnade bör inte överstiga antalet processorer i datorn (ca. 1000 sessioner). Vi rekommenderar att du inte överskrider 8 **mtachild**. Sedan kan du öka antalet meddelanden per **child** (**maxMsgPerChild**) för att uppnå en tillräcklig livslängd.
