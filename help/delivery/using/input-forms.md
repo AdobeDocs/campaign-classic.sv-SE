@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ Forms beskrivs i [det här avsnittet](../../configuration/using/identifying-a-fo
 
 XML-dokumentet i ett indataformulär måste innehålla **`<form>`** rotelementet med **name** och **namespace** attribut för att fylla i formulärnamnet och dess namnutrymme.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
@@ -39,7 +39,7 @@ För att illustrera strukturen för ett indataformulär beskriver vi ett gränss
 
 Det här är motsvarande indataformulär:
 
-```
+```xml
 <form name="book" namespace="cus" type="contentForm">
   <input xpath="@name"/>
   <input xpath="@date"/>
@@ -89,7 +89,7 @@ Den här kontrollen visar en redigerbar kolumnlista med ett verktygsfält som in
 
 ![](assets/d_ncs_content_form4.png)
 
-```
+```xml
 <input xpath="chapter" type="list">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -108,7 +108,7 @@ Som standard justeras verktygsfältsknapparna lodrätt. De kan också justeras v
 
 ![](assets/d_ncs_content_form5.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -133,7 +133,7 @@ Redigera formulär i listor används i följande fall:
 
 ![](assets/d_ncs_content_form7.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter" zoom="true" zoomOnAdd="true">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -160,7 +160,7 @@ I den här listan visas redigeringen av samlingselement i form av flikar.
 
 ![](assets/d_ncs_content_form6.png)
 
-```
+```xml
 <container toolbarCaption="List of chapters" type="notebooklist" xpath="chapter" xpath-label="@name">
   <container colcount="2">
     <input xpath="@name"/>
@@ -197,3 +197,5 @@ I redigeringszonen kan du ange XML-innehållet i indataformuläret:
 The **[!UICONTROL Preview]** kan du visa indataformuläret:
 
 ![](assets/d_ncs_content_form13.png)
+
+Läs mer om [redigera formulär](../../configuration/using/editing-forms.md) och [formulärstruktur](../../configuration/using/form-structure.md).

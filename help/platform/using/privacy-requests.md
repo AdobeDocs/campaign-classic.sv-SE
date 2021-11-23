@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2420'
 ht-degree: 99%
 
 ---
@@ -76,6 +76,10 @@ Den namngivna rättigheten **[!UICONTROL Privacy Data Right]** har lagts till i 
 Innan du skapar förfrågningar om användarens information måste du definiera det namnutrymme som ska användas. Det här är nyckeln som används för att identifiera den registrerade i databasen i Adobe Campaign.
 
 Tre namnutrymmen är tillgängliga direkt: e-post, telefon och mobiltelefon. Om du behöver ett annat namnutrymme (till exempel ett anpassat mottagarfält) kan du skapa ett nytt från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
+
+>[!NOTE]
+>
+>För att få bästa möjliga prestanda bör du använda färdiga namnutrymmen.
 
 ## Skapa en förfrågan om användarens information {#create-privacy-request-ui}
 
@@ -251,7 +255,7 @@ JS-API:t **[!UICONTROL CreateRequestByName]** definieras så här.
 
 ### Anropa API:et externt {#invoking-api-externally}
 
-Här är ett exempel på hur du kan anropa API:et externt (specifikt autentisering via API:et och information om sekretess-API:et). Mer information om sekretess-API:et finns i [API-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html). Du kan även läsa [dokumentationen om webbtjänstanrop](../../configuration/using/web-service-calls.md).
+Här är ett exempel på hur du kan anropa API:et externt (specifikt autentisering via API:et och information om sekretess-API:et). Mer information om sekretess-API:et finns i [API-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=sv). Du kan även läsa [dokumentationen om webbtjänstanrop](../../configuration/using/web-service-calls.md).
 
 Först och främst måste du utföra autentiseringen via API:et:
 

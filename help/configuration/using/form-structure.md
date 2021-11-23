@@ -6,30 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 898353f80a93052cd25088098c9570c2b44ceac4
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2385'
 ht-degree: 0%
 
 ---
 
 # Formulärstruktur{#form-structure}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Beskrivningen av ett formulär är ett strukturerat XML-dokument som observerar formulärschemats grammatik **xtk:formulär**.
 
-XML-dokumentet i indataformuläret måste innehålla `<form>` rotelementet med  **name** och  **namespace** attribut för att fylla i formulärnamnet och namnutrymmet.
+XML-dokumentet i indataformuläret måste innehålla `<form>` rotelementet med **name** och **namespace** attribut för att fylla i formulärnamnet och namnutrymmet.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
 Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **enhetstabell** attributet för `<form>` -element till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -49,7 +49,7 @@ Indataformuläret baserat på exempelschemat:
 
 ![](assets/d_ncs_integration_form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -76,7 +76,7 @@ Så här visar du kontrollerna i exemplet ovan i två kolumner:
 
 ![](assets/d_ncs_integration_form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -92,7 +92,7 @@ The **kolspan** -attribut i en kontroll utökar kontrollen med antalet kolumner 
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -106,7 +106,7 @@ Genom att fylla i **type=&quot;frame&quot;** -attributet lägger behållaren til
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -120,7 +120,7 @@ A **`<static>`** -element kan användas för att formatera indataformuläret:
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -138,11 +138,11 @@ En hjälptext lades till med `<static>` med hjälptyp. Innehållet i texten ange
 
 Med behållare kan du gruppera en uppsättning kontroller. De representeras av **`<container>`** -element. De användes ovan för att formatera kontroller över flera kolumner.
 
-The **xpath** attribut på en `<container>` gör det enklare att referera till underordnade kontroller. Referensen för kontroller är sedan relativ till den överordnade `<container>` överordnad.
+The **xpath** attribut på en `<container>` gör det enklare att referera till underordnade kontroller. Referensen för kontroller är sedan relativ till den överordnade `<container>` -element.
 
 Exempel på en behållare utan &quot;xpath&quot;:
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -151,7 +151,7 @@ Exempel på en behållare utan &quot;xpath&quot;:
 
 Exempel med tillägget &quot;xpath&quot; i elementet &quot;location&quot;:
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -168,7 +168,7 @@ En flikbehållare formaterar data på sidor som är tillgängliga från flikar.
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -176,18 +176,19 @@ En flikbehållare formaterar data på sidor som är tillgängliga från flikar.
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location">
-    ...
+    …
   </container>
 </container>
 ```
 
 Huvudbehållaren definieras av **type=&quot;anteckningsbok&quot;** -attribut. Tabbar deklareras i de underordnade behållarna och etiketten för flikarna fylls i från **label** -attribut.
 
+![](assets/d_ncs_integration_form_exemple7.png)
+
 >[!NOTE]
 >
 >A **style=&quot;down|up**(som standard)**&quot;** -funktionen tvingar den lodräta placeringen av tabbetiketter under eller över kontrollen. Den här funktionen är valfri.  
->![](assets/d_ncs_integration_form_exemple7.png)
->`<container style="down" type="notebook">  ... </container>`
+>`<container style="down" type="notebook">  … </container>`
 
 #### Ikonlista {#icon-list}
 
@@ -195,7 +196,7 @@ Den här behållaren visar ett lodrätt ikonfält där du kan välja vilka sidor
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -203,7 +204,7 @@ Den här behållaren visar ett lodrätt ikonfält där du kan välja vilka sidor
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location" img="nms:msgfolder.png">
-    ...
+    …
   </container>
 </container>
 ```
@@ -220,12 +221,12 @@ Du kan maskera en uppsättning kontroller via ett dynamiskt villkor.
 
 I det här exemplet visas synligheten för kontroller av värdet i fältet &quot;Kön&quot;:
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
-  ...
+  …
 </container>
 <container type="visibleGroup" visibleIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -241,12 +242,12 @@ Exempel på villkorssyntax:
 
 Med den här behållaren kan du aktivera eller inaktivera en uppsättning data från ett dynamiskt villkor. Om du inaktiverar en kontroll kan du inte redigera den. I följande exempel visas aktiveringen av kontroller från värdet i fältet Genus:
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
-  ...
+  …
 </container>
 <container type="enabledGroup" enabledIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -256,7 +257,7 @@ En aktiveringsbehållare definieras av **type=&quot;enabledGroup&quot;** -attrib
 
 Kom ihåg att en länk deklareras i dataschemat enligt följande:
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
@@ -264,7 +265,7 @@ Redigeringskontrollen för länken i indataformuläret är följande:
 
 ![](assets/d_ncs_integration_form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -280,7 +281,7 @@ The **[!UICONTROL Edit link]** (förstorare) öppnar redigeringsformen för det 
 
 Du kan begränsa valet av målelement genom att lägga till **`<sysfilter>`** -element från länkdefinitionen i indataformuläret:
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -290,7 +291,7 @@ Du kan begränsa valet av målelement genom att lägga till **`<sysfilter>`** -e
 
 Du kan också sortera listan med **`<orderby>`** element:
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -318,9 +319,9 @@ Principen består i att visa listan med länkade element med optimerad datainlä
 
 Exempel på en samlingslänk i ett schema:
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
-...
+…
 </element>
 ```
 
@@ -328,7 +329,7 @@ Listan i indataformuläret:
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -349,7 +350,7 @@ The **[!UICONTROL Detail]** knappen läggs till automatiskt när **zoom=&quot;tr
 
 Filtrering och sortering kan användas när listan läses in:
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -370,7 +371,7 @@ Om du lägger till ett element i listan bör du därför kunna fylla i en lista 
 
 Exempel på en relationstabell i ett schema:
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -381,7 +382,7 @@ Vi börjar t.ex. med indataformen för &quot;cus:mottagare&quot;-schemat. Listan
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -417,7 +418,7 @@ Den här kontrollen visar en redigerbar kolumnlista med ett verktygsfält som in
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -436,7 +437,7 @@ Verktygsfältsknapparna kan justeras vågrätt:
 
 ![](assets/d_ncs_integration_form_exemple14.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -451,7 +452,7 @@ Du kan infoga och redigera data i en lista i ett separat redigeringsformulär.
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -463,7 +464,7 @@ Du kan infoga och redigera data i en lista i ett separat redigeringsformulär.
 </input>
 ```
 
-Redigeringsformuläret har fyllts i från `<form>`  element under listdefinition. Dess struktur är identisk med strukturen för ett indataformulär. The **[!UICONTROL Detail]** knappen läggs till automatiskt när **zoom=&quot;true&quot;** attributet har fyllts i på **`<input>`** -taggen i listan. Med det här attributet kan du starta redigeringsformuläret för den markerade raden.
+Redigeringsformuläret har fyllts i från `<form>` element under listdefinition. Dess struktur är identisk med strukturen för ett indataformulär. The **[!UICONTROL Detail]** knappen läggs till automatiskt när **zoom=&quot;true&quot;** attributet har fyllts i på **`<input>`** -taggen i listan. Med det här attributet kan du starta redigeringsformuläret för den markerade raden.
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Exempel på fältet&quot;Kön&quot;:
 
 ![](assets/d_ncs_integration_form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -499,7 +500,7 @@ Med en alternativknapp kan du välja mellan flera alternativ. The **`<input>`** 
 
 Exempel på fältet&quot;Kön&quot;:
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
@@ -511,12 +512,16 @@ Exempel på fältet&quot;Kön&quot;:
 
 En kryssruta återspeglar ett booleskt läge (markerat eller inte). Som standard används den här kontrollen av fälten &quot;Boolean&quot; (true/false). En variabel med standardvärdet 0 eller 1 kan kopplas till den här knappen. Det här värdet kan laddas över via **checkValue** attribut.
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
 ![](assets/d_ncs_integration_form_exemple20.png)
+
+## Uppräkning {#enumeration}
+
+<!-- to be completed -->
 
 ## Redigera navigeringshierarki {#navigation-hierarchy-edit}
 
@@ -524,7 +529,7 @@ Den här kontrollen skapar ett träd i en uppsättning fält som ska redigeras.
 
 Kontrollerna som ska redigeras grupperas i en **`<container>`** anges under **`<input>`** -tagg för trädkontrollen:
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -541,9 +546,9 @@ Kontrollerna som ska redigeras grupperas i en **`<container>`** anges under **`<
 
 ## Uttrycksfält {#expression-field}
 
-Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck; den **`<input>`** -taggen används med **xpath** för att ange sökvägen till fältet som ska uppdateras och ett **expr** attribut som innehåller uppdateringsuttrycket.
+Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck; den **`<input>`** -taggen används med **xpath** för att ange sökvägen till fältet som ska uppdateras och ett **visa** attribut som innehåller uppdateringsuttrycket.
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -566,21 +571,21 @@ Exempel på användning av `<set>` tagg:
 
 Formulärets sammanhang kan uppdateras när formuläret initieras och stängs via **`<enter>`** och **`<leave>`** -taggar.
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
-    <set...
+    <set…
   </enter>
-  ...
+  …
   <leave>
-    <set...
+    <set…
   </leave>
 </form>
 ```
 
 >[!NOTE]
 >
->The `<enter>`  och  `<leave>`   -taggar kan användas på `<container>` av sidor (&quot;anteckningsbok&quot; och&quot;ikon&quot;).
+>The `<enter>` och `<leave>` -taggar kan användas på `<container>` av sidor (&quot;anteckningsbok&quot; och&quot;ikon&quot;).
 
 ### Uttrycksspråk {#expression-language-}
 
@@ -588,7 +593,7 @@ Ett makrospråk kan användas i formulärdefinitionen för att utföra villkorst
 
 The **`<if expr="<expression>" />`** -taggen kör instruktionerna som anges under -taggen om uttrycket verifieras:
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -596,7 +601,7 @@ The **`<if expr="<expression>" />`** -taggen kör instruktionerna som anges unde
 
 The **`<check expr="<condition>" />`** -taggen kombinerat med **`<error>`** -taggen förhindrar validering av formuläret och visar ett felmeddelande om villkoret inte uppfylls:
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -604,22 +609,24 @@ The **`<check expr="<condition>" />`** -taggen kombinerat med **`<error>`** -tag
 </leave>
 ```
 
+<!-- changer exemple par un exemple plus parlant. cf. vidéo validation 02:27. noter aussi l'attribut required dans l'exemple de la vidéo. -->
+
 ## Guider {#wizards}
 
 En guide hjälper dig genom en uppsättning datainmatningssteg i form av sidor. De data som anges sparas när du validerar formuläret.
 
 En guide har följande struktur:
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
   </container>
   <container title="Title of page 2" desc="Long description of page 2">
-    ...
+    …
   </container>
-  ...
+  …
 </form>
 ```
 
@@ -635,10 +642,10 @@ Körning av SOAP-metoder kan startas från en ifylld **`<leave>`** -taggen i slu
 
 The **`<soapcall>`** -taggen innehåller anropet till metoden med följande indataparametrar:
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
-  <param type="<type>" exprIn="<xpath>"/>  
-  ...
+  <param  type="<type>" exprIn="<xpath>"/>  
+  …
 </soapCall>
 ```
 
@@ -661,12 +668,12 @@ The **exprIn** -attributet innehåller platsen för de data som ska skickas som 
 
 **Exempel**:
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
-    <param type="DOMElement" exprIn="/tmp/entityList"/>         
-    <param type="DOMElement" exprIn="/tmp/choiceList"/>         
-    <param type="boolean"    exprIn="true"/>       
+    <param  type="DOMElement"    exprIn="/tmp/entityList"/>         
+    <param  type="DOMElement"    exprIn="/tmp/choiceList"/>         
+    <param  type="boolean"       exprIn="true"/>       
   </soapCall>
 </leave>
 ```
