@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    </tr>
    <tr>
    <td>Dokumentation för API:er i Campaign – filen jsapi.chm</td>
-   <td>Från och med Campaign 19.1 finns API:er i Campaign Classic på en dedikerad sida. Om du använder den äldre filen jsapi.chm bör du nu använda <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">den nya versionen online</a>.</td>
+   <td>Från och med Campaign 19.1 finns API:er i Campaign Classic på en dedikerad sida. Om du använder den äldre filen jsapi.chm bör du nu använda <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv">den nya versionen online</a>.</td>
   </tr> 
   <tr> 
    <td>Orkestrering i Campaign – förutsägande marknadsföring</td>
