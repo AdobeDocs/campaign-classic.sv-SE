@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '903'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Börja med att skapa ett Facebook-konto och flera sidor: dessa kommer att använ
 
 ## Skapa en testsida för Facebook {#creating-a-test-facebook-page}
 
-Vi rekommenderar att du skapar en privat Facebook-sida för korrektur av publikationer (mer information finns i [Skicka korrekturet](../../social/using/publishing-on-facebook.md#sending-the-proof).
+Vi rekommenderar att du skapar en privat Facebook-sida för korrektur av publikationer (mer information finns i [det här avsnittet](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Logga in på det Facebook-konto som du använder för att administrera dina sidor.
 1. Skapa en ny Facebook-sida.
@@ -47,14 +47,14 @@ Vi rekommenderar att du skapar en privat Facebook-sida för korrektur av publika
 
 ![](assets/social_facebook_test_page.png)
 
-## Skapa ett Facebook-program {#creating-a-facebook-application}
+## Skapa en Facebook-applikation {#creating-a-facebook-application}
 
 För att Adobe Campaign ska kunna publicera på sidorna måste du skapa ett Facebook-program. Gör så här:
 
 1. Logga in på det Facebook-konto som du använder för att administrera sidor.
 1. Ange följande adress i webbläsaren: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Beroende på vilken typ av konto du har kan en eller flera auktoriseringar vara nödvändiga.
    >
@@ -82,7 +82,7 @@ Om du vill delegera skrivåtkomst till Adobe Campaign för publicering på sidor
 
 Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbläsare som är inloggad på det Facebook-konto som du använder för sidadministration:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Adobe Campaign-operatorn måste ha administrationsbehörighet för att kunna utföra den här konfigurationen.
 
@@ -102,7 +102,7 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Du får inte använda den osäkra URL:en under några omständigheter.
 
@@ -121,7 +121,7 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
    >
    >The **[!UICONTROL Marketing URL]** fältet är valfritt.
 
-1. I Adobe Campaign-konsolen klickar du på **[!UICONTROL Request the authorization from the application]** länken längst ned i **[!UICONTROL Connector]** -fliken. The **[!UICONTROL Synchronize Facebook pages]** arbetsflödet aktiveras automatiskt och alla Facebook-sidor som hanteras av administratören samlas in. Mer information finns i [Synkronisera Facebook-sidor](#synchronizing-facebook-pages).
+1. I Adobe Campaign-konsolen klickar du på **[!UICONTROL Request the authorization from the application]** länken längst ned i **[!UICONTROL Connector]** -fliken. The **[!UICONTROL Synchronize Facebook pages]** arbetsflödet aktiveras automatiskt och alla Facebook-sidor som hanteras av administratören samlas in. [Läs mer](#synchronizing-facebook-pages).
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,14 +143,16 @@ Det här steget kräver åtkomst till både Adobe Campaign-konsolen och en webbl
 >
 >Om Facebook-kontot administrerar flera sidor konfigurerar du bara ett externt konto så att du kan skriva på valfri sida i Facebook-kontot. För varje nytt Facebook-konto måste du skapa ett nytt **[!UICONTROL Routing]** skriv ett externt konto.
 
-The **[!UICONTROL Synchronization of Facebook pages]** arbetsflödet synkroniserar alla sidor som administreras av Facebook-kontot så att du kan publicera dem direkt via Adobe Campaign. Mer information finns i [Synkronisera Facebook-sidor](#synchronizing-facebook-pages).
+The **[!UICONTROL Synchronization of Facebook pages]** arbetsflödet synkroniserar alla sidor som administreras av Facebook-kontot så att du kan publicera dem direkt via Adobe Campaign. [Läs mer](#synchronizing-facebook-pages).
 
 ## Synkronisera Facebook-sidor {#synchronizing-facebook-pages}
 
-The **[!UICONTROL Synchronization of Facebook pages]** arbetsflöde, som du kommer åt via **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** kan du synkronisera (i Adobe Campaign) sidorna i det Facebook-konto som konfigurerats tidigare. Som standard är arbetsflödet konfigurerat att köras en gång om dagen eller när en administratör klickar på **[!UICONTROL Request an authorization from the application]** länk på skärmen för tjänstkonfiguration (se [Delegera skrivåtkomst till Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
+The **[!UICONTROL Synchronization of Facebook pages]** arbetsflöde, som du kommer åt via **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** kan du synkronisera (i Adobe Campaign) sidorna i det Facebook-konto som konfigurerats tidigare. Som standard är arbetsflödet konfigurerat att köras en gång om dagen eller när en administratör klickar på **[!UICONTROL Request an authorization from the application]** på skärmen för tjänstkonfiguration. [Läs mer](#delegating-write-access-to-adobe-campaign).
 
-När synkroniseringen är klar visas de insamlade sidorna i den tjänstmapp som angetts i det externa kontot (se [Delegera skrivåtkomst till Adobe Campaign](#delegating-write-access-to-adobe-campaign)). Som standard läggs sidor till i roten av **[!UICONTROL Facebook]** tjänstmappen som är tillgänglig via **[!UICONTROL Profiles and Targets > Services and subscriptions]** -menyn.
+När synkroniseringen är klar visas de insamlade sidorna i den tjänstmapp som har angetts i det externa kontot. [Läs mer](#delegating-write-access-to-adobe-campaign)).
+
+Som standard läggs sidor till i roten av **[!UICONTROL Facebook]** tjänstmappen som är tillgänglig via **[!UICONTROL Profiles and Targets > Services and subscriptions]** -menyn.
 
 ![](assets/social_facebook_service_002.png)
 
-Nu kan du publicera på Facebook väggar direkt via Adobe Campaign. Mer information finns i [Publicera på Facebook](#publishing-on-facebook-walls).
+Nu kan du publicera på Facebook väggar direkt via Adobe Campaign. [Läs mer](#publishing-on-facebook-walls).

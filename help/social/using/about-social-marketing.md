@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Om social marknadsföring
-description: Lär dig hur du använder Campaign för att interagera med kunder via Facebook och Twitter.
+description: Lär dig hur du använder Campaign för att interagera med kunder via Facebook och Twitter
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 4%

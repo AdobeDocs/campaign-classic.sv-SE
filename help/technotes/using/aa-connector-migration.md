@@ -3,7 +3,7 @@ product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Från och med version 21.1.3 av Campaign Classic är Adobe Analytics Data Connector föråldrat. [Läs mer](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Den 1 augusti 2021 har Adobe Campaign Classic tagits bort från det gamla användargränssnittet för Data Connectors, men befintliga Campaign-integreringar kommer att fortsätta samla in och skicka data till Adobe Analytics fram till augusti 2022. Efter detta datum upphör integreringen att samla in och skicka data till Adobe Analytics.
+Den 1 augusti 2021 har Adobe Campaign Classic tagits bort från det gamla användargränssnittet för Data Connectors, men befintliga Campaign-integreringar kommer att fortsätta samla in och skicka data till Adobe Analytics fram till den 17 augusti 2022. Efter detta datum upphör integreringen att samla in och skicka data till Adobe Analytics.
 
 Du **måste implementera** den nya integreringen av Adobe Analytics Connector på Adobe Exchange som ersätter den gamla integreringen av Data Connectors. Mer information om Adobe Analytics Connector finns i [den här sidan](../../platform/using/adobe-analytics-connector.md).
 
@@ -48,7 +48,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 ## Hur uppdaterar jag?
 
-Du måste uppgradera till Campaign 21.1.3 (eller mer) **före augusti 2022**.
+Du måste uppgradera till Campaign 21.1.3 (eller mer) **före 17 augusti 2022**.
 
 Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen. Du kan sedan använda [Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md).
 

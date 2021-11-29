@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Publicera på Facebook
-description: Publicera på Facebook
+description: Så här publicerar du på Facebook
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1138'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Skapa en ny leverans med **[!UICONTROL Publish to a brand page]** leveransmall.
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Välja huvudmål {#selecting-the-main-target}
+## Välj huvudmålet {#selecting-the-main-target}
 
 Du måste markera de sidor du vill publicera publikationen på.
 
@@ -52,9 +52,9 @@ Du måste markera de sidor du vill publicera publikationen på.
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Välja korrekturmål {#selecting-the-proof-target}
+## Välj korrekturmål {#selecting-the-proof-target}
 
-The **[!UICONTROL Target of the proofs]** På -fliken kan du definiera den Facebook-sida som du vill använda för att testa leveranser innan du skickar ut dem. Vi rekommenderar att du skapar en dedikerad privat Facebook-sida för detta ändamål. Mer information om hur du skapar en privat Facebook-sida finns i [Skapa en testsida för Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Om du vill välja korrekturmålet ska du utföra samma steg som för huvudmålet: [Välja huvudmål](#selecting-the-main-target).
+The **[!UICONTROL Target of the proofs]** På -fliken kan du definiera den Facebook-sida som du vill använda för att testa leveranser innan du skickar ut dem. Vi rekommenderar att du skapar en dedikerad privat Facebook-sida för detta ändamål. Mer information om hur du skapar en privat Facebook-sida finns i [den här sidan](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Om du vill välja korrekturmålet använder du samma steg som för huvudmålet. [Läs mer](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -73,7 +73,7 @@ Men det går också att använda målgruppsfiltren som används av Facebook. The
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Använd den här funktionen med försiktighet. I leveransrapporter **[!UICONTROL Number of fans]** Indikatorn tar inte hänsyn till dessa Facebook-filter.
 >
@@ -110,7 +110,7 @@ En statustyp som levereras med en länk kan innehålla text, bilder och en länk
 
 Ange de olika fälten:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Alla URL-adresser måste börja med **&quot;http://&quot;** eller **&quot;https://&quot;**.
 
@@ -131,7 +131,7 @@ Ange de olika fälten:
 
 1. I **[!UICONTROL Image]** anger du URL-adressen till bilden som ska visas till vänster om publikationen.
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Bilden måste lagras på en offentlig webbplats för att Facebook ska kunna överföra den.
 
@@ -148,7 +148,7 @@ Med den här typen av innehåll kan du publicera en länk till en YouTube-video.
 
 Ange de olika fälten:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Alla URL-adresser måste börja med **&quot;http://&quot;** eller **&quot;https://&quot;**.
 
@@ -175,7 +175,7 @@ Ange de olika fälten:
 
 ![](assets/social_facebook_delivery_photos.png)
 
-## Förhandsgranska {#previewing}
+## Förhandsgranskning {#previewing}
 
 The **[!UICONTROL Preview]** kan du visa hur publikationen återges.
 
@@ -188,9 +188,9 @@ The **[!UICONTROL Preview]** kan du visa hur publikationen återges.
 
 >[!NOTE]
 >
->Förhandsgranskningen kan skilja sig något från den slutliga Facebook-publikationen. Vi rekommenderar starkt att du skickar ett bevis före slutleverans för en exakt återgivning av publikationen. Se [Skicka korrekturet](#sending-the-proof).
+>Förhandsgranskningen kan skilja sig något från den slutliga Facebook-publikationen. Vi rekommenderar starkt att du skickar ett bevis före slutleverans för en exakt återgivning av publikationen. [Läs mer](#sending-the-proof).
 
-## Konfigurerar spårning {#configuring-tracking}
+## Konfigurera spårning {#configuring-tracking}
 
 Spårning kan visas i leveransrapporterna och i **[!UICONTROL Edit > Tracking]** fliken för leveransen och tjänsten.
 
@@ -204,7 +204,7 @@ Spårningskonfigurationen är densamma som för en e-postleverans. Mer informati
 
 ## Skicka korrekturet {#sending-the-proof}
 
-Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att se exakt hur den återges på en privat testsida i Facebook. Mer information om hur du skapar en privat testsida för Facebook finns i [Skapa en testsida för Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Stegen för val av provtryck finns i [Välja korrekturmål](#selecting-the-proof-target).
+Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att se exakt hur den återges på en privat testsida i Facebook. Mer information om hur du skapar en privat testsida för Facebook finns i [den här sidan](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Stegen för val av provtryck finns i [det här avsnittet](#selecting-the-proof-target).
 
 Korrekturleveranser är identiska med e-postleveranser. Se [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 

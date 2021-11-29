@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 5%
+source-wordcount: '923'
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ Skapa en ny leverans baserad på **[!UICONTROL Tweet (twitter)]** leveransmall.
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Välja huvudmål {#selecting-the-main-target}
+### Välj huvudmålet {#selecting-the-main-target}
 
 Markera det eller de konton som du vill skicka tweets till.
 
@@ -54,9 +54,9 @@ Markera det eller de konton som du vill skicka tweets till.
 
    ![](assets/social_twitter_delivery_011.png)
 
-### Välja provtryckets mål {#selecting-the-target-of-the-proof}
+### Välj provtryckets mål {#selecting-the-target-of-the-proof}
 
-The **[!UICONTROL Target of the proofs]** kan du definiera det Twitter-konto som ska användas för testleveranser före den slutliga leveransen. Därför rekommenderar vi att du skapar ett privat Twitter-konto som är dedikerat till att skicka korrektur. Mer information om hur du skapar ett privat Twitter-konto finns i [Skapa ett testkonto på Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för val av korrekturmål är desamma som för val av huvudmål. Se [Skapa ett testkonto på Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
+The **[!UICONTROL Target of the proofs]** kan du definiera det Twitter-konto som ska användas för testleveranser före den slutliga leveransen. Därför rekommenderar vi att du skapar ett privat Twitter-konto som är dedikerat till att skicka korrektur. Mer information om hur du skapar ett privat Twitter-konto finns i [det här avsnittet](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för val av korrekturmål är desamma som för val av huvudmål. Se [det här avsnittet](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
 
 ![](assets/social_twitter_delivery_004.png)
 
@@ -70,7 +70,7 @@ Skriv in innehållet i tweeten i **[!UICONTROL Content]** -fliken.
 
 ![](assets/social_twitter_delivery_005.png)
 
-### Visa förhandsgranskningen {#viewing-the-preview}
+### Förhandsgranska meddelandet {#viewing-the-preview}
 
 The **[!UICONTROL Preview]** kan du visa en återgivning av tweeten.
 
@@ -83,9 +83,9 @@ The **[!UICONTROL Preview]** kan du visa en återgivning av tweeten.
 
 >[!NOTE]
 >
->Förhandsvisningen kan skilja sig något från den slutliga tweeten. Vi rekommenderar starkt att du skickar ett korrektur före slutleverans för att få en exakt återgivning av tweeten. Se [Skicka korrekturet](#sending-the-proof).
+>Förhandsvisningen kan skilja sig något från den slutliga tweeten. Vi rekommenderar starkt att du skickar ett korrektur före slutleverans för att få en exakt återgivning av tweeten. Se [det här avsnittet](#sending-the-proof).
 
-### Konfigurerar spårning {#configuring-tracking}
+### Konfigurera spårning {#configuring-tracking}
 
 Spårning kan visas i leveransrapporterna och i **[!UICONTROL Edit > Tracking]** fliken för leveransen och tjänsten.
 
@@ -95,13 +95,13 @@ Spårningskonfigurationen är densamma som för en e-postleverans. Mer informati
 >
 >I **[!UICONTROL Tweet]** leveransmall, spårning är aktiverat som standard.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Vi kan inte skilja på robotar som analyserar tweets och användare som faktiskt klickar.
 
 ### Skicka korrekturet {#sending-the-proof}
 
-Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att få en exakt återgivning av publikationen på en privat testsida från Twitter. Mer information om hur du skapar ett privat Twitter-konto finns i [Skapa ett testkonto på Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för val av korrekturmål finns i [Välja provtryckets mål](#selecting-the-target-of-the-proof).
+Vi rekommenderar starkt att du skickar ett bevis på din publikation före slutleveransen för att få en exakt återgivning av publikationen på en privat testsida från Twitter. Mer information om hur du skapar ett privat Twitter-konto finns i [det här avsnittet](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Stegen för val av korrekturmål finns i [det här avsnittet](#selecting-the-target-of-the-proof).
 
 Korrekturleveranser är identiska med e-postleveranser. Se [det här avsnittet](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -125,7 +125,7 @@ Korrekturleveranser är identiska med e-postleveranser. Se [det här avsnittet](
 
 ### Verksamhetsprincip {#operating-principle}
 
-The **[!UICONTROL Synchronize Twitter accounts]** arbetsflöde (se [Synkroniserar Twitter-konton](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) återställer listan över Twitter-prenumeranter så att du kan skicka direktmeddelanden till dem. De återskapade följarna lagras i en specifik tabell: besökstabellen. Om du vill visa en lista över Twitter följare går du till **[!UICONTROL Profiles and Targets > Visitors]** nod.
+The **[!UICONTROL Synchronize Twitter accounts]** arbetsflöde (se [Läs mer](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) återställer listan över Twitter-prenumeranter så att du kan skicka direktmeddelanden till dem. De återskapade följarna lagras i en specifik tabell: besökstabellen. Om du vill visa en lista över Twitter följare går du till **[!UICONTROL Profiles and Targets > Visitors]** nod.
 
 ![](assets/social_twitter_visitors_001.png)
 
@@ -158,7 +158,7 @@ Skapa en ny leverans baserad på **[!UICONTROL Tweet (Direct Message)]** leveran
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Välja huvudmål {#selecting-the-main-target-1}
+### Välj huvudmålet {#selecting-the-main-target-1}
 
 Välj de följare som du vill skicka ditt direktmeddelande till.
 
@@ -184,7 +184,7 @@ Välj de följare som du vill skicka ditt direktmeddelande till.
 
       ![](assets/social_twitter_delivery_018.png)
 
-### Välja provtryckets mål {#selecting-the-target-of-the-proof-1}
+### Välj provtryckets mål {#selecting-the-target-of-the-proof-1}
 
 The **[!UICONTROL Target of the proofs]** kan du välja den följare som ska få korrekturet av ditt direktmeddelande. Markeringsprocessen är densamma som för huvudmålet. Se [Välja huvudmål](#selecting-the-main-target).
 
