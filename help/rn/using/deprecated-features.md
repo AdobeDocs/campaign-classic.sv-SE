@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1700'
+ht-degree: 97%
 
 ---
 
@@ -43,6 +43,13 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Funktion</strong></td>
    <td><strong>Ersättning</strong></td>
   </tr>
+  <tr>
+  <td>CentOS 8.x (64 bitar)<br></td>
+   <td><p>CentOS Linux 8 upphör den 31 december 2021. <a href="https://www.centos.org/centos-linux-eol/">Läs mer</a></p>
+   <p>Om du använder det här operativsystemet måste du anpassa implementeringen därefter. CentOS 7.x (64 bitar) och RHEL 8.x/7.x (64 bitar) stöds fortfarande.</p>
+  <p><em>Datum för målborttagning: 31 december 2021.</em></p>
+  </td>
+ </tr>
     <tr>
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Från och med Campaign 21.1.3 är Adobe Analytics Data Connector inaktuell.</p>
