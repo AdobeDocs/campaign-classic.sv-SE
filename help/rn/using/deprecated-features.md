@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1700'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,10 +44,10 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Ersättning</strong></td>
   </tr>
   <tr>
-  <td>CentOS 8.x (64 bitar)<br></td>
-   <td><p>CentOS Linux 8 upphör den 31 december 2021. <a href="https://www.centos.org/centos-linux-eol/">Läs mer</a></p>
-   <p>Om du använder det här operativsystemet måste du anpassa implementeringen därefter. CentOS 7.x (64 bitar) och RHEL 8.x/7.x (64 bitar) stöds fortfarande.</p>
-  <p><em>Datum för målborttagning: 31 december 2021.</em></p>
+  <td>CentOS 8.x (64 bitars)<br></td>
+   <td><p>CentOS Linux 8 når slutet av sin livscykel (EOL) den 31 december 2021. <a href="https://www.centos.org/centos-linux-eol/">Läs mer</a></p>
+   <p>Om du använder det här operativsystemet måste du följaktligen anpassa implementeringen. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.</p>
+  <p><em>Måldatum för borttagning: 31 december 2021.</em></p>
   </td>
  </tr>
     <tr>
