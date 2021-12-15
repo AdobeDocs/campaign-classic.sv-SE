@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 49a98ec82b1d62f3af19260888da8eb24e460938
+source-git-commit: 42717f3ef3bcda4108dad6a4c0ece752ada579a2
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1647'
+ht-degree: 2%
 
 ---
 
@@ -322,7 +322,7 @@ Använd `iconbox` formulärtyp för att visa ikoner till vänster om formuläret
       ```
    Du kan även ta bort `type="frame"` attribut från befintlig `<container>` -element.
 
-### Skapa en `notebook` formulär
+### Skapa ett anteckningsboksformulär
 
 Använd `notebook` formulärtyp om du vill visa flikar högst upp i formuläret, vilket tar användarna till olika sidor.
 
