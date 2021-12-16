@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
+source-git-commit: d8cd7910798f62cbab8aa0d7cfcc31010ed02297
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
@@ -360,10 +360,3 @@ Använd `notebook` formulärtyp om du vill visa flikar högst upp i formuläret,
    ```
 
    Du kan även ta bort `type="frame"` attribut från befintlig `<container>` -element.
-
-### Kapsla formulär {#nest-forms}
-
-Du kan kapsla in formulär i andra formulär. Du kan t.ex. kapsla anteckningsboksformulär i ikonboxformulär.
-
-Nivån för navigering i kapslingskontroller. Användare kan gå ned på djupet i delformulär.
-
