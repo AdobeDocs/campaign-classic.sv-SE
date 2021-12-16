@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
+source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1143'
 ht-degree: 2%
 
 ---
@@ -413,7 +413,6 @@ Så här ändrar du ett fabriksformulär:
    1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
    1. Välj ett dataschema och utöka det. Du kan till exempel lägga till fält. [Läs mer](extending-a-schema.md).
 
-      >[!CAUTION]
-      > Ändra inte originaldata i ett fabriksnamnutrymme, utan utöka dem i ett anpassat namnutrymme. Orsaken är att alla data i fabriksnamnutrymmena skrivs över vid programuppgraderingar. Data i `xtk`, `ncm`och `nms` fabriksnamnutrymmen skrivs över. Data i dina anpassade namnutrymmen ändras inte.
+
 
 
