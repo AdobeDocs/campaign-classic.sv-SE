@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
+source-git-commit: c08a4b3540da6370584e32e13723bee352402914
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -407,12 +407,5 @@ Resultatet blev att **Allmänt** sidan i det yttre formuläret visar **Namn** oc
 ## Ändra ett fabriksinmatningsformulär {#modify-factory-form}
 
 Så här ändrar du ett fabriksformulär:
-
-1. Du kan även utöka det relaterade dataschemat:
-
-   1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
-   1. Välj ett dataschema och utöka det. Du kan till exempel lägga till fält. [Läs mer](extending-a-schema.md).
-
-
 
 
