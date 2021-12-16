@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
+source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1196'
 ht-degree: 2%
 
 ---
@@ -416,11 +416,4 @@ Så här ändrar du ett fabriksformulär:
       >[!CAUTION]
       > Ändra inte originaldata i ett fabriksnamnutrymme, utan utöka dem i ett anpassat namnutrymme. Orsaken är att alla data i fabriksnamnutrymmena skrivs över vid programuppgraderingar. Data i `xtk`, `ncm`och `nms` fabriksnamnutrymmen skrivs över. Data i dina anpassade namnutrymmen ändras inte.
 
-1. Ändra fabriksinmatningsformuläret:
 
-   1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. Markera ett inmatningsformulär och ändra det.
-
-   Du kan utöka fabriksdatamappningar, men du kan inte utöka fabriksinmatningsformulär. Vi rekommenderar att du ändrar fabriksinmatningsformulär direkt utan att återskapa dem. Vid uppgraderingar sammanfogas ändringarna i fabriksinmatningsformulären med uppgraderingarna. Om den automatiska sammanfogningen misslyckas kan du lösa konflikterna. [Läs mer](../../production/using/upgrading.md#resolving-conflicts).
-
-   Om du till exempel utökar ett fabriksschema med ett extra fält kan du lägga till det här fältet i det relaterade fabriksformuläret.
