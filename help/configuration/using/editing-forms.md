@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: df3c833e99caeb94df1978dc8792b86c8634626b
+source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1105'
 ht-degree: 2%
 
 ---
@@ -366,3 +366,40 @@ Använd `notebook` formulärtyp om du vill visa flikar högst upp i formuläret,
 Du kan kapsla in formulär i andra formulär. Du kan t.ex. kapsla anteckningsboksformulär i ikonboxformulär.
 
 Nivån för navigering i kapslingskontroller. Användare kan gå ned på djupet i delformulär.
+
+Om du vill kapsla ett formulär i ett annat formulär infogar du ett `<container>` -element och ange `type` till formulärtypen. För formuläret på den översta nivån kan du ange formulärtypen i en yttre behållare eller i `<form>` -element.
+
+### Exempel
+
+I det här exemplet visas ett komplext formulär:
+
+* Formuläret på den översta nivån är ett ikonformulär. Detta formulär består av två behållare med etiketten **Allmänt** och **Detaljer**.
+
+   Det innebär att det yttre formuläret visar **Allmänt** och **Detaljer** sidor på den översta nivån. Användarna kommer åt dessa sidor genom att klicka på ikonerna till vänster i formuläret.
+
+* Delformuläret är ett anteckningsboksformulär som är kapslat i **Allmänt** behållare. Delformuläret består av två behållare med etiketter **Namn** och **Kontakt**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Resultatet blev att **Allmänt** sidan i det yttre formuläret visar **Namn** och **Kontakt** -tabbar.
+
+![](assets/nested_forms_preview.png)
