@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0dfce3b514fefef490847d669846e515b714d222
+source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,24 @@ I det här exemplet visas ett komplext formulär:
 Resultatet blev att **Allmänt** sidan i det yttre formuläret visar **Namn** och **Kontakt** -tabbar.
 
 ![](assets/nested_forms_preview.png)
+
+## Ändra ett fabriksinmatningsformulär {#modify-factory-form}
+
+Så här ändrar du ett fabriksformulär:
+
+1. Du kan även utöka det relaterade dataschemat:
+
+   1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+   1. Välj ett dataschema och utöka det. Du kan till exempel lägga till fält. [Läs mer](extending-a-schema.md).
+
+      >[!CAUTION]
+      > Ändra inte originaldata i ett fabriksnamnutrymme, utan utöka dem i ett anpassat namnutrymme. Orsaken är att alla data i fabriksnamnutrymmena skrivs över vid programuppgraderingar. Data i `xtk`, `ncm`och `nms` fabriksnamnutrymmen skrivs över. Data i dina anpassade namnutrymmen ändras inte.
+
+1. Ändra fabriksinmatningsformuläret:
+
+   1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Markera ett inmatningsformulär och ändra det.
+
+   Du kan utöka fabriksdatamappningar, men du kan inte utöka fabriksinmatningsformulär. Vi rekommenderar att du ändrar fabriksinmatningsformulär direkt utan att återskapa dem. Vid uppgraderingar sammanfogas ändringarna i fabriksinmatningsformulären med uppgraderingarna. Om den automatiska sammanfogningen misslyckas kan du lösa konflikterna. [Läs mer](../../production/using/upgrading.md#resolving-conflicts).
+
+   Om du till exempel utökar ett fabriksschema med ett extra fält kan du lägga till det här fältet i det relaterade fabriksformuläret.
