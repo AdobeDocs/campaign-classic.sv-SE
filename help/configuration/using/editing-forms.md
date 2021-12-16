@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
+source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,150 @@ I det här exemplet visas ett komplext formulär:
 Resultatet blev att **Allmänt** sidan i det yttre formuläret visar **Namn** och **Kontakt** -tabbar.
 
 ![](assets/nested_forms_preview.png)
+
+Om du vill kapsla ett formulär i ett annat formulär infogar du ett `<container>` -element och ange `type` till formulärtypen. För formuläret på den översta nivån kan du ange formulärtypen i en yttre behållare eller i `<form>` -element.
+
+### Exempel
+
+I det här exemplet visas ett komplext formulär:
+
+* Formuläret på den översta nivån är ett ikonformulär. Detta formulär består av två behållare med etiketten **Allmänt** och **Detaljer**.
+
+   Det innebär att det yttre formuläret visar **Allmänt** och **Detaljer** sidor på den översta nivån. Användarna kommer åt dessa sidor genom att klicka på ikonerna till vänster i formuläret.
+
+* Delformuläret är ett anteckningsboksformulär som är kapslat i **Allmänt** behållare. Delformuläret består av två behållare med etiketter **Namn** och **Kontakt**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Resultatet blev att **Allmänt** sidan i det yttre formuläret visar **Namn** och **Kontakt** -tabbar.
+
+![](assets/nested_forms_preview.png)
+
+
+
+## Ändra ett fabriksinmatningsformulär {#modify-factory-form}
+
+Så här ändrar du ett fabriksformulär:
+
+1. Ändra fabriksinmatningsformuläret:
+
+   1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Markera ett inmatningsformulär och ändra det.
+
+   Du kan utöka fabriksdatamappningar, men du kan inte utöka fabriksinmatningsformulär. Vi rekommenderar att du ändrar fabriksinmatningsformulär direkt utan att återskapa dem. Vid uppgraderingar sammanfogas ändringarna i fabriksinmatningsformulären med uppgraderingarna. Om den automatiska sammanfogningen misslyckas kan du lösa konflikterna. [Läs mer](../../production/using/upgrading.md#resolving-conflicts).
+
+   Om du till exempel utökar ett fabriksschema med ett extra fält kan du lägga till det här fältet i det relaterade fabriksformuläret.
+
+## Validera formulär {#validate-forms}
+
+Du kan inkludera valideringskontroller i formulär.
+
+### Bevilja skrivskyddad åtkomst till fält
+
+Om du vill ge skrivskyddad åtkomst till ett fält använder du `readOnly="true"` -attribut. Du kanske vill visa primärnyckeln för en post, men med skrivskyddad åtkomst. [Läs mer](form-structure.md#non-editable-fields).
+
+I det här exemplet har primärnyckeln (`iRecipientId`) `nms:recipient` schemat visas med skrivskyddad åtkomst:
+
+```xml
+<value xpath="@iRecipientId" readOnly="true"/>
+```
+
+### Kontrollera obligatoriska fält
+
+Du kan kontrollera obligatorisk information:
+
+* Använd `required="true"` för de obligatoriska fälten.
+* Använd `<leave>` för att kontrollera dessa fält och visa felmeddelanden.
+
+I det här exemplet krävs e-postadressen och ett felmeddelande visas om användaren inte har angett den här informationen:
+
+```xml
+<input xpath="@email" required="true"/>
+<leave>
+  <check expr="@email!=''">
+    <error>The email address is required.</error>
+  </check>
+</leave>
+```
+
+Läs mer om [uttrycksfält](form-structure.md#expression-field) och [formulärkontext](form-structure.md#context-of-forms).
+
+### Validera värden
+
+Du kan använda JavaScript SOAP-anrop för att validera formulärdata från konsolen. Använd dessa anrop för komplex validering, till exempel för att kontrollera ett värde mot en lista över godkända värden. [Läs mer](form-structure.md#soap-methods).
+
+1. Skapa en valideringsfunktion i en JS-fil.
+
+   Exempel:
+
+   ```js
+   function nms_recipient_checkValue(value)
+   {
+     logInfo("checking value " + value)
+     if (…)
+     {
+       logError("Value " + value + " is not valid")
+     }
+     return 1
+   }
+   ```
+
+   I det här exemplet heter funktionen `checkValue`. Den här funktionen används för att kontrollera `recipient` datatypen i `nms` namnutrymme. Värdet som kontrolleras loggas. Om värdet inte är giltigt loggas ett felmeddelande. Om värdet är giltigt returneras värdet 1.
+
+   Du kan använda det returnerade värdet för att ändra formuläret.
+
+1. Lägg till `<soapCall>` -element till `<leave>` -element.
+
+   I det här exemplet används ett SOAP-anrop för att validera `@valueToCheck` sträng:
+
+   ```xml
+   <form name="recipient" (…)>
+   (…)
+     <leave>
+       <soapCall name="checkValue" service="nms:recipient">
+         <param exprIn="@valueToCheck" type="string"/>
+       </soapCall>
+     </leave>
+   </form>
+   ```
+
+   I det här exemplet `checkValue` -metoden och `nms:recipient` används:
+
+   * Tjänsten är namnutrymmet och datatypen.
+   * Metoden är funktionsnamnet. Namnet är skiftlägeskänsligt.
+
+   Anropet utförs synkront.
+
+   Alla undantag visas. Om du använder `<leave>` kan användarna inte spara formuläret förrän den angivna informationen har validerats.
+
+I det här exemplet visas hur du kan ringa tjänstanrop inifrån formulär:
+
+```xml
+<enter>
+  <soapCall name="client" service="c4:ybClient">
+    <param exprIn="@id" type="string"/>
+    <param type="boolean" xpathOut="/tmp/@count"/>
+  </soapCall>
+</enter>
+```
+
+I det här exemplet är indata ett ID, som är en primärnyckel. När användarna fyller i formuläret för detta ID görs ett SOAP-anrop med detta ID som indataparameter. Utdata är ett booleskt värde som skrivs till det här fältet: `/tmp/@count`. Du kan använda det här booleska innehållet i formuläret. Läs mer om [formulärkontext](form-structure.md#context-of-forms).
