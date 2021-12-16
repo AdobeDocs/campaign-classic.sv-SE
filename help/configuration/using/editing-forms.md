@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 31cf8dca13d53a3d6c450c04b45f8ed7e32f95b6
+source-git-commit: f35988634f732591abdbed9edc123924c4583f5a
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1105'
 ht-degree: 2%
 
 ---
@@ -404,5 +404,6 @@ Resultatet blev att **Allmänt** sidan i det yttre formuläret visar **Namn** oc
 
 ![](assets/nested_forms_preview.png)
 
-## Ändra ett fabriksinmatningsformulär {#modify-factory-form}
+
+
 
