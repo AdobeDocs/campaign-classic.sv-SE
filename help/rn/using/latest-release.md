@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,10 +28,11 @@ _8 oktober 2021_
 
 **Felkorrigeringar**
 
+* Förbättrade snabbkorrigeringen för faktureringsarbetsflöde i version 9342, som krävde att arbetsflödet startades om manuellt för att korrigeringen skulle kunna tillämpas. Nu startar uppgraderingen om arbetsflödet automatiskt.
+
 * Ett problem har åtgärdats som kunde förhindra en korrekt hantering av erbjudanden när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
 * Korrigerade ett fel: ”Det gick inte att hitta IP-tillhörigheten xxx på mittservern xxx” som kan inträffa vid leverans när mer än en IP-tillhörighet används på en instans med flera källor. (NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _7 september 2021_
 
 **Andra ändringar**
 
+* Korrigerade en regression som introducerades i 21.1.3 med det nya betalningsarbetsflödet. Faktureringsarbetsflödet kördes på fel instanser och kraschade vid försök att skicka faktureringsrapporten som inte genererades. Du måste starta om arbetsflödet manuellt för att korrigeringen ska tillämpas.
 * Tidigare inaktuella Microsoft CRM-anslutningar (Office 365 och lokala distributioner) har tagits bort från gränssnittet. [Läs mer](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Efter migreringen till Tomcat 8 har IIS-installationsskriptet uppdaterats för att åtgärda IIS-integreringsproblem. (NEO-31019)
-* Ett riktlinje har lagts till för att endast tillåta att det [tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) körs på marknadsföringsinstansen.
 * Identifieringen av datakällan har förbättrats på flikarna data och schema i fönstret för arbetsflödesövergångarna **Visa population**.
 * Databasindex som saknas har lagts till i följande scheman för att förhindra problem med databasuppdatering: xtk:rights, nms:dlvExclusion, nms:seedMember och nms:trackingUrl
 
@@ -193,6 +194,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 
 **Andra ändringar**
 
+* Ett riktlinje har lagts till för att endast tillåta att det [tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) körs på marknadsföringsinstansen.
 * Den öppna tredjepartsversionen för Windows har uppdaterats till version 1.1.1h.
 * I Debian-paketbeskrivningen har nlserver ändrats till Adobe Campaign Classic-server.
 
