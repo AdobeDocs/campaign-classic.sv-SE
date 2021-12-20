@@ -5,7 +5,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -30,11 +30,12 @@ Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 
 * Gold Standard 8 till 11. [Läs mer](../../rn/using/gold-standard.md#gs-8)
 * Kampanj 21.1.1 (build 9277) till 21.1.2 (build 9282). [Läs mer](../../rn/using/latest-release.md)
-* Kampanj 20.3.1 (build 9228) till 20.3.3 (build 9234). [Läs mer](../../rn/using/release--20-3.md)
-* Kampanj 20.2.1 (build 9178) till 20.2.4 (build 9187). [Läs mer](../../rn/using/release--20-2.md)
-* Kampanj 20.1.1 (build 9122) till 21.1.3 (build 9124). [Läs mer](../../rn/using/release--20-1.md)
-* Kampanj 19.2.2 (build 9080) till 19.2.3 (build 9081). [Läs mer](../../rn/using/release--19-2.md)
-* Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036). [Läs mer](../../rn/using/release--19-1.md)
+* Kampanj 20.3.1 (build 9228) till 20.3.3 (build 9234). [Läs mer](../../rn/using/release--2020.md#release-20-3)
+* Kampanj 20.2.1 (build 9178) till 20.2.4 (build 9187). [Läs mer](../../rn/using/release--2020.md#release-20-2)
+* Kampanj 20.1.1 (build 9122) till 21.1.3 (build 9124). [Läs mer](../../rn/using/release--2020.md#release-20-1)
+* Kampanj 19.2.2 (build 9080) till 19.2.3 (build 9081). [Läs mer](../../rn/using/release--2019.md#release-19-2)
+* Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036). [Läs mer](../../rn/using/release--2019.md#release-19-1)
+
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

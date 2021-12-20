@@ -3,7 +3,7 @@ product: campaign
 title: Technote - Adobe Campaign-konfigurationsuppdateringar
 description: Adobe Campaign konfigurationsuppdateringar
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 12%
@@ -36,10 +36,10 @@ Om miljön är på en lägre nivå än de som anges nedan påverkas du:
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-* Campaign 20.2.4-utgåvan. [Läs mer](../../rn/using/release--20-2.md)
-* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--20-1.md)
-* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--19-2.md)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
+* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -62,9 +62,9 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 The **nu tillgänglig** Konsolversioner nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
 * Senaste Gold Standard 11 build 9032@10c2709. [Läs mer](../../rn/using/gold-standard.md)
-* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--20-1.md)
-* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--19-2.md)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
+* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
@@ -78,10 +78,10 @@ Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-ad
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--20-2.md)
-* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--20-1.md)
-* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--19-2.md)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
+* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 De här versionerna har ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och Client Console för att kunna ansluta till Campaign efter **30 juni 2021**.
 
@@ -111,8 +111,8 @@ Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--20-2.md)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
+* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

@@ -3,9 +3,9 @@ product: campaign
 title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '587'
 ht-degree: 8%
 
 ---
@@ -40,10 +40,9 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
 
    * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
    * Campaign 21.1.3-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-   * Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--20-2.md)
-   * Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--20-1.md)
-   * Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--19-2.md)
-   * Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--19-1.md)
+   * Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+   * Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+   * Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 
    Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter **30 juni 2021**.
 

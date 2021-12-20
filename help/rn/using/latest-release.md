@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Senaste versionen
-description: Senaste versionsinformationen om Campaign Classic
+description: Versionsinformation om senaste Campaign Classic v7
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2559'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Den här sidan beskriver nya funktioner, förbättringar och korrigeringar som ingår i den **senaste versionen av Campaign Classic**.
+På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i **senaste Campaign Classic v7-utgåvan**. Varje ny version har en status som materialiseras av en färg. Läs mer om byggstatus för Campaign Classic v7 i [den här sidan](rn-overview.md).
 
-Förstå buildstatus för Campaign på [den här sidan](rn-overview.md).
+## Version 7.1 (21.1)
 
+>[!CAUTION]
+>Campaign **[!UICONTROL Help > About...]** kan du kontrollera [version och build-nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Observera dock att för alla byggen mellan 9277 och 9343 som anges på den här sidan är versionsnumret 7.0 i stället för 7.1.
 
-## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
+### ![](assets/do-not-localize/green_2.png) Version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
 
 _8 oktober 2021_
 
@@ -34,7 +36,7 @@ _8 oktober 2021_
 
 * Korrigerade ett fel: ”Det gick inte att hitta IP-tillhörigheten xxx på mittservern xxx” som kan inträffa vid leverans när mer än en IP-tillhörighet används på en instans med flera källor. (NEO-37514)
 
-## ![](assets/do-not-localize/orange_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
+### ![](assets/do-not-localize/orange_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
 
 _7 september 2021_
 
@@ -68,7 +70,7 @@ _7 september 2021_
 * Korrigerade ett problem som förhindrade dig från att använda variabler i arbetsflödesaktiviteten **Berikning** när den inkommande övergången kom från en FDA-datakälla.
 * Korrigerade ett problem som kunde leda till brutna URL:er i e-postmeddelanden.
 
-## ![](assets/do-not-localize/orange_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
+### ![](assets/do-not-localize/orange_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
 
 _5 june 2021_
 
@@ -179,18 +181,18 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 
 **Inaktuella funktioner**
 
-* Från och med Campaign 21.1 är Adobe Analytics Data Connector inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen med den nya kopplingen Adobe Analytics Connector.
-Mer information finns i den [detaljerade dokumentationen](../../technotes/using/aa-connector-migration.md).
-* Stöd för Debian 8 är nu inaktuellt.
-* Efter borttagningen av Oracle CRM i 20.3 har det relaterade externa kontot tagits bort från gränssnittet.
+* ODBC-drivrutiner installeras nu direkt med Adobe Campaign Third Party. Manuella steg krävs inte längre för att installera drivrutinerna.
+* Google Big Query är nu tillgängligt för värdbaserade distributioner.
 
-Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../rn/using/deprecated-features.md).
+[Läs mer](../../installation/using/configure-fda.md)
 
 **Förbättringar**
 
-* Extra kontroller har lagts till när ett arbetsflöde sparas för att säkerställa att aktivitetsnamnen är unika och att övergångar alltid följs av en aktivitet.
-* Det tekniska arbetsflödet **Fakturering (billing)** innehåller nu de uppgifter som ursprungligen utfördes av arbetsflödet **Antal aktiva faktureringsprofiler** (billingActiveContactCount) som har tagits bort. E-postrapporten som skickas varje månad av arbetsflödet innehåller nu information om antalet aktiva profiler för instansen. [Läs mer](../../workflow/using/about-technical-workflows.md).
-* Det nya attributet **_keyOnMData** har lagts till för att kunna använda en nyckel för åtgärder på PM-data.
+* Kritiska korrigeringar har tillämpats för webb-API:t för Microsoft Dynamics Connector:
+   * Korrigerade ett problem som kunde få dataimport från Microsoft CRM att misslyckas eller inte fungera om filtervillkoret innehöll sökfält.
+   * Korrigerade ett problem, under en import som utlöstes av ett arbetsflöde, som gjorde att null-värden för strängtypsfält sparades som null i stället för som tomma värden.
+   * Ett problem som orsakade följande fel vid import eller export av data med webb-API-anrop har korrigerats: &quot;Ogiltig URI: URI-schemat är för långt.&quot;
+   * Korrigerade ett problem under en import från Microsoft Dynamics 365 som förhindrade att data för sökfält importerades.
 
 **Andra ändringar**
 
@@ -224,14 +226,14 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 * Korrigerade ett problem som hindrade dig från att skicka en leverans med en grupp korrektur på grund av en specifik kopplingsmekanism som inte kunde leverera personanpassning. (NEO-14391)
 * Korrigerade ett problem där en avisering inte kunde skickas med aviseringsaktiviteten om en fråga och en berikningsaktivitet var riktade till leveransregistret. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
+### ![](assets/do-not-localize/red_2.png) version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
 
 _15 april 2021_
 
 * Lösenordshanteringen har förbättrats för att optimera säkerheten.
 * Korrigerade ett problem som kunde orsaka MTA-krascher.
 
-## ![](assets/do-not-localize/red_2.png) version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
+### ![](assets/do-not-localize/red_2.png) version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
 
 _22 februari 2021_
 

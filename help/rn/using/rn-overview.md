@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 77%
 
 ---
 
@@ -17,19 +17,17 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign uppdateras regelbundet. I genomsnitt släpps två eller tre mindre versioner varje år med nya funktioner, förbättringar och korrigeringar. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar.
+Adobe Campaign uppdateras regelbundet. En eller två mindre versioner släpps varje år med nya funktioner, förbättringar och korrigeringar. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar.
 
 Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa informationen, hålla miljön säker och förbättra din upplevelse med produkten.
 
-Därför anser vi att det är viktigt att du kör den senaste versionen av Adobe Campaign. Det ser också till att du får en bättre support eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Många problem som du kan råka ut för har redan åtgärdats i de senaste versionerna.
+Det här är anledningen till att vi anser att det är avgörande att du **kör den senaste versionen** Adobe Campaign. Det ser också till att du får en bättre support eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Många problem som du kan råka ut för har redan åtgärdats i de senaste versionerna.
 
 ## Status på versioner{#rn-statuses}
 
-En status är associerad med varje build. Du hittar statuslistan nedan och hur du tolkar dem.
+Varje ny version har en status som materialiseras av en färg.
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
-
-De **senaste GA-versionerna** är: [[!DNL Gold Standard]  version 11](../../rn/using/gold-standard.md#gs-11) och [Campaign version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
@@ -41,9 +39,9 @@ De **senaste GA-versionerna** är: [[!DNL Gold Standard]  version 11](../../rn/u
 
 ## Rekommendationer{#recommendations}
 
-För att säkerställa en stabil konfiguration rekommenderar vi att du installerar samma stabila build på alla servrar som körs på samma klientkonfiguration.
+Vi rekommenderar att du installerar **samma stabila bygge** på alla servrar som körs på samma klientkonfiguration.
 
-Dessutom bör klientkonsolen använda samma version som serverinstansen.
+Dessutom måste klientkonsolen finnas på samma version som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
@@ -62,6 +60,7 @@ Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång
 
 ## Support och andra användbara länkar{#support}
 
+* [Hitta din Campaign-version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Hjälp och support](../../support.md)
 * [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv)
 * [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)

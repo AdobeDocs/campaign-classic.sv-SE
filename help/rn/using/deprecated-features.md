@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '1700'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,12 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   <tr> 
    <td><strong>Område – funktion</strong></td>
    <td><strong>Ersättning</strong></td> 
+  </tr>
+ <tr>  
+   <td>CRM-kopplingar verksamhet<br></td>
+   <td><p> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga.</p>
+   <p>Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system kan du använda CRM-anslutningsaktiviteten.</p>
+   <p><a href="../../workflow/using/crm-connector.md">Läs mer</a></p>
   </tr>
   <tr>  
    <td>Rapportering<br></td>

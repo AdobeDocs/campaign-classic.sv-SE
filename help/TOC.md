@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: ht
-source-wordcount: '2575'
-ht-degree: 100%
+source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+workflow-type: tm+mt
+source-wordcount: '2581'
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,14 @@ ht-degree: 100%
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
-   + [!DNL Gold Standard]-version {#gs-release}
-      + [Vad är [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [Versionsinformation om [!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [Kompatibilitetsmatris för [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
    + Tidigare versioner {#previous-releases}
-      + [Version 20.3](rn/using/release--20-3.md)
-      + [Version 20.2](rn/using/release--20-2.md)
-      + [Version 20.1](rn/using/release--20-1.md)
-      + [Version 19.2](rn/using/release--19-2.md)
-      + [Version 19.1](rn/using/release--19-1.md)
-      + [Version 18.10](rn/using/release--18-10.md)
-      + [Version 18.6](rn/using/release--18-6.md)
-      + [Version 18.4](rn/using/release--18-4.md)
+      + [!DNL Gold Standard]-version {#gs-release}
+         + [Vad är [!DNL Gold Standard]](rn/using/gs-overview.md)
+         + [Versionsinformation om [!DNL Gold Standard]](rn/using/gold-standard.md)
+         + [Kompatibilitetsmatris för [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
+      + [2020](rn/using/release--2020.md)
+      + [2019](rn/using/release--2019.md)
+      + [2018](rn/using/release--2018.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}
@@ -560,7 +555,7 @@ ht-degree: 100%
       + [Ytterligare data](interaction/using/additional-data.md)
       + [Exempel på tillägg](interaction/using/extension-example.md)
       + [Skapa en testmiljö](interaction/using/creating-a-test-environment.md)
-      + [Hookar](interaction/using/hooks.md)
+      + [Ändra standardmotorns beteende](interaction/using/hooks.md)
       + [Distribuerade arkitekturer](interaction/using/distributed-architectures.md)
       + [Konfigurering av databuffert](installation/using/interaction---data-buffer.md)
    + Användningsfall {#case-study}
@@ -849,6 +844,7 @@ ht-degree: 100%
       + [Tekniska anmärkningar](technotes/using/technote.md)
       + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
       + [IMS-uppdateringar](technotes/using/ims-updates.md)
+      + [Stöd för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
    + E-postmeddelanden och push-meddelanden{#technotes-email}
       + [Sekretesskydd för Mail i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Vanliga frågor om sekretesskydd för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)

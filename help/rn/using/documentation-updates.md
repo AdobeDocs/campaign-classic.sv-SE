@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '4560'
 ht-degree: 100%
@@ -170,7 +170,7 @@ Konfiguration av externa konton har flyttats till [det här avsnittet](../../ins
 
 Dokumentationen om federerad dataåtkomst (FDA) i Campaign har förbättrats med information för varje extern databaskonfiguration och flyttats till [det här avsnittet](../../installation/using/about-fda.md).
 
-[Campaign version 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182) har flyttats till Allmän tillgänglighet (GA).
+[Campaign version 20.2.3](../../rn/using/release--2020.md#release-20-2-3-build-9182) har flyttats till Allmän tillgänglighet (GA).
 
 Sektionen om sekretess har flyttats och berikats med två nya sidor: [Sekretesshantering](../../platform/using/privacy-management.md) och [Hantering av förfrågningar om användarens information](../../platform/using/privacy-requests.md).
 
