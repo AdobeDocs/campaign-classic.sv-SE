@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
 workflow-type: tm+mt
-source-wordcount: '4560'
-ht-degree: 100%
+source-wordcount: '4705'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,31 @@ ht-degree: 100%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
+
+## December 2021{#dec-2021}
+
+Versionsinformation om Campaign Classic v7 har omstrukturerats för att förenkla navigeringen. [Läs mer](rn-overview.md)
+
+Dokumentationen om formulärversionen i Campaign har uppdaterats och förbättrats. [Läs mer](../../configuration/using/editing-forms.md)
+
+CentOs 8 har nått slutet av livscykeln och är nu föråldrat i Adobe Campaign Classic. [Läs mer](deprecated-features.md)
+
+## November 2021{#nov-2021}
+
+En begränsning för inkommande SMS (MO) har lagts till. [Läs mer](../../delivery/using/sms-protocol.md#multipart)
+
+Information om migreringsprocessloggar för CRM-anslutningsdistribution har uppdaterats. [Läs mer](../../migration/using/testing-the-migration.md#verification-process)
+
+Ytterligare krav på IMS-behörigheter för att implementera integrering mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-provisioning.md)
+
+Uppdaterat Adobe Analytics Data Connector End-of-Life-datum från 1 mars 2022 till 17 augusti 2022. [Läs mer](deprecated-features.md)
+
+En länk till Adobe Experience Platform mobil-SDK-dokumentation har lagts till för att lära dig hur du konfigurerar Campaign-tillägget i Adobe Launch. [Läs mer](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+
+Lagt till ett avsnitt om hur du använder JavaScript för att beräkna värden, utbyta data och utföra specifika åtgärder med SOAP-anrop.[Läs mer](../../workflow/using/javascript-scripts-and-templates.md)
+
+Lagt till exempel på JavaScript-kodimplementering i arbetsflöden. [Läs mer](../../workflow/using/javascript-in-workflows.md)
+
 
 ## Oktober 2021{#oct-2021}
 
