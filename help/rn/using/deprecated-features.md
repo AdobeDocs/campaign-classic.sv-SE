@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 97%
+source-wordcount: '1744'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><p>Övervakningsrapporten om teknisk levererbarhet är föråldrad från och med Campaign version 21.1.</p>
    <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
    <p>Adobe rekommenderar att du samarbetar med levererbarhetsteamet för att definiera de bästa verktygen för att övervaka instansens levererbarhetsförmåga.</p>
-  <p><em>Måldatum för borttagning: i slutet av 2021</em></p>
+  <p><em>Datum för målborttagning: Tidigt 2022</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
   <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
-  <p><em>Måldatum för borttagning: nov 2021</em></p>
+  <p><em>Datum för målborttagning: 20 oktober 2021. I värdmiljöer kan du utnyttja en förlängning fram till 23 februari 2022. </em></p>
   </td>
   </tr>
  </tbody> 
@@ -179,7 +179,7 @@ Från och med version 21.1.3 är stödet för Debian 8 föråldrat.
 
 Från och med version 19.1 är Adobe Campaign inte längre kompatibelt med följande operativsystem.
 
-* CentOS 6 [Läs mer](https://wiki.centos.org/Download)
+* CentOS 6. [Läs mer](https://wiki.centos.org/Download)
 * Debian 7. [Läs mer](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x [Läs mer](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1163)
