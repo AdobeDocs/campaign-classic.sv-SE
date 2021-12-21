@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ _8 oktober 2021_
 
 **Felkorrigeringar**
 
-* Förbättrade snabbkorrigeringen för faktureringsarbetsflöde i version 9342, som krävde att arbetsflödet startades om manuellt för att korrigeringen skulle kunna tillämpas. Nu startar uppgraderingen om arbetsflödet automatiskt.
+* Förbättrade korrigeringen av faktureringsarbetsflödet som är tillgänglig i version 9342. Den krävde en manuell omstart av arbetsflödet för att korrigeringen skulle tillämpas. Nu startar efteruppgraderingen automatiskt om arbetsflödet.
 
 * Ett problem har åtgärdats som kunde förhindra en korrekt hantering av erbjudanden när du använde modulen **Interaktion** med alternativet [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
@@ -52,7 +52,7 @@ _7 september 2021_
 
 **Andra ändringar**
 
-* Korrigerade en regression som introducerades i 21.1.3 med det nya betalningsarbetsflödet. Faktureringsarbetsflödet kördes på fel instanser och kraschade vid försök att skicka faktureringsrapporten som inte genererades. Du måste starta om arbetsflödet manuellt för att korrigeringen ska tillämpas.
+* Korrigerade en regression som introducerades i 21.1.3 med det nya skyddet för faktureringsarbetsflödet. Faktureringsarbetsflödet kördes på fel instanser och kraschade vid försök att skicka faktureringsrapporten som inte genererades. Du måste starta om arbetsflödet manuellt för att korrigeringen ska tillämpas.
 * Tidigare inaktuella Microsoft CRM-anslutningar (Office 365 och lokala distributioner) har tagits bort från gränssnittet. [Läs mer](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Efter migreringen till Tomcat 8 har IIS-installationsskriptet uppdaterats för att åtgärda IIS-integreringsproblem. (NEO-31019)
 * Identifieringen av datakällan har förbättrats på flikarna data och schema i fönstret för arbetsflödesövergångarna **Visa population**.
@@ -196,7 +196,7 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 
 **Andra ändringar**
 
-* Ett riktlinje har lagts till för att endast tillåta att det [tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) körs på marknadsföringsinstansen.
+* Ett skydd har lagts till för att endast tillåta att det [tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) körs på marknadsföringsinstansen.
 * Den öppna tredjepartsversionen för Windows har uppdaterats till version 1.1.1h.
 * I Debian-paketbeskrivningen har nlserver ändrats till Adobe Campaign Classic-server.
 
