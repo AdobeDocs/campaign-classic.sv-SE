@@ -3,9 +3,9 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 48%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 48%
 
 ## Nyheter
 
-* **[Septemberversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
+* **[Oktober-versionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
 
-* **[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)** och **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Som svar på Apple meddelande om iOS 15 hittar du en första vägledning
+* **[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)** och **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Hitta vägledning som svar på Apple meddelande om iOS 15
 
 * **[Ansluter du via IMS/Adobe ID? Uppgradera till de senaste byggen](technotes/using/ims-updates.md)**<br/> Om du använder IMS för att ansluta till Campaign måste du uppgradera för att kunna ansluta till Campaign efter** 30 juni 2021 **
 

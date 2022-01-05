@@ -5,9 +5,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -95,6 +95,8 @@ Du kan:
 * I [typologi](../../campaign-opt/using/about-campaign-typologies.md) du vill använda **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * När e-postmeddelandet har skickats kontrollerar du huvudet för att verifiera vilken IP-adress som leveransen skickades från. E-postadministratören bör hjälpa dig att få fram rubrikinformationen.
+
+* För SMS-leveranser måste du se till att SMS-kanalen har en dedikerad tillhörighet begränsad till **en** programserverbehållare. [Läs mer](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >

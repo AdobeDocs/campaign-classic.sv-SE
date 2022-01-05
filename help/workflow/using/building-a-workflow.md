@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1625'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,10 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Ikoner för att spåra och starta ett avancerat arbetsflöde för målinriktning beskrivs i det här [section](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Ikoner för förlopp och visning av loggar beskrivs i följande avsnitt:
+
+   * [Visa förlopp](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [Visa loggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Objektjustering**
 
@@ -122,7 +125,7 @@ Om du vill få en bättre förståelse för aktiviteterna och om du vill förbä
 
 ![](assets/example1-comment.png)
 
-## Målarbetsflöden {#targeting-workflows}
+## Arbetsflöden för målinriktning {#targeting-workflows}
 
 Med målarbetsflöden kan du skapa flera leveransmål. Du kan skapa frågor, definiera fackföreningar eller undantag baserat på specifika villkor, lägga till schemaläggning tack vare arbetsflödesaktiviteter. Resultatet av den här målsättningen kan automatiskt överföras till en lista som kan fungera som mål för leveransåtgärder
 
