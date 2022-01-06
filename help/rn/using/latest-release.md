@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 91%
+source-wordcount: '2580'
+ht-degree: 97%
 
 ---
 
@@ -181,18 +181,18 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 
 **Inaktuella funktioner**
 
-* ODBC-drivrutiner installeras nu direkt med Adobe Campaign Third Party. Manuella steg krävs inte längre för att installera drivrutinerna.
-* Google Big Query är nu tillgängligt för värdbaserade distributioner.
+* Från och med Campaign 21.1 är Adobe Analytics Data Connector inaktuell. Om du använder den här kopplingen måste du anpassa implementeringen med den nya kopplingen Adobe Analytics Connector.
+Mer information finns i den [detaljerade dokumentationen](../../technotes/using/aa-connector-migration.md).
+* Stöd för Debian 8 är nu inaktuellt.
+* Efter borttagningen av Oracle CRM i 20.3 har det relaterade externa kontot tagits bort från gränssnittet.
 
-[Läs mer](../../installation/using/configure-fda.md)
+Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../rn/using/deprecated-features.md).
 
 **Förbättringar**
 
-* Kritiska korrigeringar har tillämpats för webb-API:t för Microsoft Dynamics Connector:
-   * Korrigerade ett problem som kunde få dataimport från Microsoft CRM att misslyckas eller inte fungera om filtervillkoret innehöll sökfält.
-   * Korrigerade ett problem, under en import som utlöstes av ett arbetsflöde, som gjorde att null-värden för strängtypsfält sparades som null i stället för som tomma värden.
-   * Ett problem som orsakade följande fel vid import eller export av data med webb-API-anrop har korrigerats: &quot;Ogiltig URI: URI-schemat är för långt.&quot;
-   * Korrigerade ett problem under en import från Microsoft Dynamics 365 som förhindrade att data för sökfält importerades.
+* Extra kontroller har lagts till när ett arbetsflöde sparas för att säkerställa att aktivitetsnamnen är unika och att övergångar alltid följs av en aktivitet.
+* Det tekniska arbetsflödet **Fakturering (billing)** innehåller nu de uppgifter som ursprungligen utfördes av arbetsflödet **Antal aktiva faktureringsprofiler** (billingActiveContactCount) som har tagits bort. E-postrapporten som skickas varje månad av arbetsflödet innehåller nu information om antalet aktiva profiler för instansen. [Läs mer](../../workflow/using/about-technical-workflows.md).
+* Det nya attributet **_keyOnMData** har lagts till för att kunna använda en nyckel för åtgärder på PM-data.
 
 **Andra ändringar**
 

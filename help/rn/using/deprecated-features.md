@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 96%
+source-wordcount: '1707'
+ht-degree: 98%
 
 ---
 
@@ -84,14 +84,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  <tbody>
   <tr> 
    <td><strong>Område – funktion</strong></td>
-   <td><strong>Ersättning</strong></td> 
-  </tr>
- <tr>  
-   <td>CRM-kopplingar verksamhet<br></td>
-   <td><p> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga.</p>
-   <p>Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system kan du använda CRM-anslutningsaktiviteten.</p>
-   <p><a href="../../workflow/using/crm-connector.md">Läs mer</a></p>
-  </tr>
+   <td><strong>Ersättning</strong></td>
   <tr>  
    <td>Rapportering<br></td>
    <td><p>Efter Adobe Flash Player EOL är mätarrapporten och diagramåtergivningsmotorn inte längre tillgängliga. <a href="../../reporting/using/creating-a-new-report.md">Läs mer</a></p>
